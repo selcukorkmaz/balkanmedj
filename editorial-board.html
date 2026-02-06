@@ -32,19 +32,19 @@
        ══════════════════════════════════════════════════════════ -->
   <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm" aria-label="Main navigation">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
+      <div class="flex items-center justify-between h-24">
         <!-- Logo -->
         <a href="index.html" class="flex items-center space-x-2 flex-shrink-0" aria-label="Balkan Medical Journal Home">
-          <img src="images/logo.svg" alt="Balkan Medical Journal" class="h-10 w-auto">
+          <img src="images/logo.png" alt="Balkan Medical Journal" class="h-20 w-auto">
         </a>
 
         <!-- Desktop Nav -->
         <div class="hidden lg:flex items-center space-x-1">
-          <a href="index.html" data-nav-page="index.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Home</a>
+          <a href="index.html" data-nav-page="index.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Home</a>
 
           <!-- About Dropdown -->
           <div class="relative group">
-            <button data-dropdown-trigger class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center">
+            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center">
               About
               <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
@@ -56,7 +56,7 @@
 
           <!-- Issues & Articles Dropdown -->
           <div class="relative group">
-            <button data-dropdown-trigger class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center">
+            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center">
               Issues &amp; Articles
               <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
@@ -67,10 +67,10 @@
             </div>
           </div>
 
-          <a href="for-authors.html" data-nav-page="for-authors.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">For Authors</a>
-          <a href="for-reviewers.html" data-nav-page="for-reviewers.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">For Reviewers</a>
-          <a href="policies.html" data-nav-page="policies.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Policies</a>
-          <a href="contact.html" data-nav-page="contact.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Contact</a>
+          <a href="for-authors.html" data-nav-page="for-authors.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">For Authors</a>
+          <a href="for-reviewers.html" data-nav-page="for-reviewers.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">For Reviewers</a>
+          <a href="policies.html" data-nav-page="policies.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Policies</a>
+          <a href="contact.html" data-nav-page="contact.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Contact</a>
         </div>
 
         <!-- Submit CTA + Mobile toggle -->
@@ -138,9 +138,6 @@
     </div>
   </div>
 
-  <!-- ══════════════════════════════════════════════════════════
-       MAIN CONTENT
-       ══════════════════════════════════════════════════════════ -->
   <main id="main-content">
 
     <!-- ── Breadcrumb ─────────────────────────────────────────── -->
@@ -178,11 +175,17 @@
           <button role="tab" id="tab-eic" aria-selected="true" aria-controls="panel-eic" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap tab-active" tabindex="0">
             Editor-in-Chief
           </button>
+          <button role="tab" id="tab-honorary" aria-selected="false" aria-controls="panel-honorary" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap" tabindex="-1">
+            Honorary Editors
+          </button>
+          <button role="tab" id="tab-deputy" aria-selected="false" aria-controls="panel-deputy" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap" tabindex="-1">
+            Deputy Editors
+          </button>
           <button role="tab" id="tab-assoc" aria-selected="false" aria-controls="panel-assoc" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap" tabindex="-1">
             Associate Editors
           </button>
-          <button role="tab" id="tab-board" aria-selected="false" aria-controls="panel-board" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap" tabindex="-1">
-            Editorial Board
+          <button role="tab" id="tab-assistant" aria-selected="false" aria-controls="panel-assistant" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap" tabindex="-1">
+            Assistant Associate Editors
           </button>
           <button role="tab" id="tab-other" aria-selected="false" aria-controls="panel-other" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap" tabindex="-1">
             Other Editors
@@ -194,11 +197,19 @@
           <!-- Populated by JS -->
         </div>
 
+        <div id="panel-honorary" role="tabpanel" aria-labelledby="tab-honorary" class="hidden" tabindex="0">
+          <!-- Populated by JS -->
+        </div>
+
+        <div id="panel-deputy" role="tabpanel" aria-labelledby="tab-deputy" class="hidden" tabindex="0">
+          <!-- Populated by JS -->
+        </div>
+
         <div id="panel-assoc" role="tabpanel" aria-labelledby="tab-assoc" class="hidden" tabindex="0">
           <!-- Populated by JS -->
         </div>
 
-        <div id="panel-board" role="tabpanel" aria-labelledby="tab-board" class="hidden" tabindex="0">
+        <div id="panel-assistant" role="tabpanel" aria-labelledby="tab-assistant" class="hidden" tabindex="0">
           <!-- Populated by JS -->
         </div>
 
@@ -220,15 +231,15 @@
         <!-- Brand -->
         <div>
           <div class="flex items-center space-x-2 mb-4">
-            <div class="w-10 h-10 bg-teal-700 rounded-lg flex items-center justify-center">
-              <span class="text-xl font-bold text-white">B</span><span class="text-xl font-bold text-teal-300">M</span>
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden">
+              <img src="images/logo.png" alt="Balkan Medical Journal" class="h-12 w-12 object-contain">
             </div>
             <div>
               <div class="font-bold text-lg">Balkan Medical Journal</div>
             </div>
           </div>
           <p class="text-teal-300 text-sm leading-relaxed">
-            Published by Trakya University, Edirne, Turkey.<br>
+            Published by Trakya University, Edirne, Türkiye.<br>
             E-ISSN: 2146-3131<br>
             Publisher: Galenos Publishing House
           </p>
@@ -264,7 +275,7 @@
           <h3 class="font-semibold text-lg mb-4">Contact</h3>
           <div class="text-teal-300 text-sm space-y-2">
             <p>Balkan Medical Journal<br>Trakya University Faculty of Medicine</p>
-            <p>Balkan Yerleşkesi, 22030<br>Edirne, Turkey</p>
+            <p>Balkan Yerleşkesi, 22030<br>Edirne, Türkiye</p>
             <p>
               <a href="mailto:info@balkanmedicaljournal.org" class="hover:text-white transition-colors">info@balkanmedicaljournal.org</a>
             </p>
@@ -313,23 +324,15 @@
             '<div class="flex-1">' +
               '<h3 class="text-xl font-bold text-gray-900">' + member.name + '</h3>' +
               '<p class="text-sm text-teal-700 font-medium">' + member.title + '</p>' +
-              '<p class="text-sm text-gray-600 mt-1">' + member.specialty + '</p>' +
-              '<p class="text-sm text-gray-500">' + member.affiliation + '</p>' +
-              '<p class="text-sm text-gray-500">' + member.country + '</p>' +
-              (member.orcid ? '<a href="https://orcid.org/' + member.orcid + '" target="_blank" rel="noopener" class="inline-flex items-center text-xs text-teal-600 hover:text-teal-800 mt-2 transition-colors">' +
-                '<svg class="w-4 h-4 mr-1" viewBox="0 0 256 256" fill="currentColor"><path d="M256 128c0 70.7-57.3 128-128 128S0 198.7 0 128 57.3 0 128 0s128 57.3 128 128zM70.7 164.3V91.7h13.2v72.6H70.7zm6.6-89.2c-4.8 0-8.1-3.5-8.1-7.8 0-4.4 3.4-7.8 8.2-7.8s8.1 3.4 8.1 7.8c0 4.3-3.3 7.8-8.2 7.8zm35.6 89.2V91.7h35.7c17 0 27.2 10 27.2 24.3 0 14.3-10.3 24.5-27.3 24.5h-22.4v23.8h-13.2zm13.2-36h21.1c10.2 0 15.2-5.8 15.2-13.6 0-7.7-5-13.4-15.2-13.4h-21.1v27z"/></svg>' +
-                'ORCID: ' + member.orcid + '</a>' : '') +
+              '<p class="text-sm text-gray-500 mt-1">' + member.affiliation + '</p>' +
+              (member.email ? '<p class="text-sm text-gray-500 mt-1"><a href="mailto:' + member.email + '" class="text-teal-600 hover:text-teal-800 transition-colors">' + member.email + '</a></p>' : '') +
             '</div>' +
           '</div>';
         } else {
           html += '<h3 class="text-base font-bold text-gray-900">' + member.name + '</h3>' +
             '<p class="text-sm text-teal-700 font-medium mt-1">' + member.title + '</p>' +
-            '<p class="text-sm text-gray-600 mt-1">' + member.specialty + '</p>' +
             '<p class="text-sm text-gray-500 mt-1">' + member.affiliation + '</p>' +
-            '<p class="text-sm text-gray-500">' + member.country + '</p>' +
-            (member.orcid ? '<a href="https://orcid.org/' + member.orcid + '" target="_blank" rel="noopener" class="inline-flex items-center text-xs text-teal-600 hover:text-teal-800 mt-2 transition-colors">' +
-              '<svg class="w-4 h-4 mr-1" viewBox="0 0 256 256" fill="currentColor"><path d="M256 128c0 70.7-57.3 128-128 128S0 198.7 0 128 57.3 0 128 0s128 57.3 128 128zM70.7 164.3V91.7h13.2v72.6H70.7zm6.6-89.2c-4.8 0-8.1-3.5-8.1-7.8 0-4.4 3.4-7.8 8.2-7.8s8.1 3.4 8.1 7.8c0 4.3-3.3 7.8-8.2 7.8zm35.6 89.2V91.7h35.7c17 0 27.2 10 27.2 24.3 0 14.3-10.3 24.5-27.3 24.5h-22.4v23.8h-13.2zm13.2-36h21.1c10.2 0 15.2-5.8 15.2-13.6 0-7.7-5-13.4-15.2-13.4h-21.1v27z"/></svg>' +
-              'ORCID: ' + member.orcid + '</a>' : '');
+            (member.email ? '<p class="text-sm text-gray-500 mt-1"><a href="mailto:' + member.email + '" class="text-teal-600 hover:text-teal-800 transition-colors">' + member.email + '</a></p>' : '');
         }
 
         html += '</div></div>';
@@ -363,34 +366,55 @@
         renderGrid(panelEic, data.editorInChief, true);
       }
 
+      // Honorary Editors
+      var panelHonorary = document.getElementById('panel-honorary');
+      if (panelHonorary && data.honoraryEditors) {
+        renderGrid(panelHonorary, data.honoraryEditors, false);
+      }
+
+      // Deputy Editors
+      var panelDeputy = document.getElementById('panel-deputy');
+      if (panelDeputy && data.deputyEditors) {
+        renderGrid(panelDeputy, data.deputyEditors, false);
+      }
+
       // Associate Editors
       var panelAssoc = document.getElementById('panel-assoc');
       if (panelAssoc && data.associateEditors) {
         renderGrid(panelAssoc, data.associateEditors, false);
       }
 
-      // Editorial Board
-      var panelBoard = document.getElementById('panel-board');
-      if (panelBoard && data.editorialBoard) {
-        renderGrid(panelBoard, data.editorialBoard, false);
+      // Assistant Associate Editors
+      var panelAssistant = document.getElementById('panel-assistant');
+      if (panelAssistant && data.assistantAssociateEditors) {
+        renderGrid(panelAssistant, data.assistantAssociateEditors, false);
       }
 
-      // Other Editors (statistical + language)
+      // Other Editors (biostatistics + ethics + language)
       var panelOther = document.getElementById('panel-other');
       if (panelOther) {
         var otherHtml = '';
 
-        if (data.statisticalEditor) {
-          otherHtml += '<h2 class="text-lg font-semibold text-gray-900 mb-4">Statistical Editor</h2>';
+        if (data.biostatisticsEditor) {
+          otherHtml += '<h2 class="text-lg font-semibold text-gray-900 mb-4">Biostatistics Editor</h2>';
           otherHtml += '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">';
-          otherHtml += buildCard(data.statisticalEditor, false);
+          otherHtml += buildCard(data.biostatisticsEditor, false);
           otherHtml += '</div>';
         }
 
-        if (data.languageEditor) {
-          otherHtml += '<h2 class="text-lg font-semibold text-gray-900 mb-4">Language Editor</h2>';
+        if (data.ethicsEditor) {
+          otherHtml += '<h2 class="text-lg font-semibold text-gray-900 mb-4">Ethics Editor</h2>';
+          otherHtml += '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">';
+          otherHtml += buildCard(data.ethicsEditor, false);
+          otherHtml += '</div>';
+        }
+
+        if (data.languageEditing) {
+          otherHtml += '<h2 class="text-lg font-semibold text-gray-900 mb-4">Language Editing</h2>';
           otherHtml += '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">';
-          otherHtml += buildCard(data.languageEditor, false);
+          otherHtml += '<div><div class="bg-white border-gray-200 rounded-xl border p-5">' +
+            '<h3 class="text-base font-bold text-gray-900">' + data.languageEditing.name + '</h3>' +
+            '</div></div>';
           otherHtml += '</div>';
         }
 

@@ -1,6 +1,6 @@
 /**
  * Balkan Medical Journal — Archive Issues Data
- * Volume/issue listing from 1984 to 2026
+ * Volume/issue listing from 1979 to 2026
  */
 window.ARCHIVE_ISSUES = [
   { year: 2026, volume: 43, issues: [

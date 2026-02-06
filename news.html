@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News — Balkan Medical Journal</title>
+  <meta name="description" content="Latest news, announcements, and updates from Balkan Medical Journal.">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
+    }
+  </script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Skip to Content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ══════════════════════════════════════════════════════════
+       NAVIGATION
+       ══════════════════════════════════════════════════════════ -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-24">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2 flex-shrink-0" aria-label="Balkan Medical Journal Home">
+          <img src="images/logo.png" alt="Balkan Medical Journal" class="h-20 w-auto">
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center space-x-1">
+          <a href="index.html" data-nav-page="index.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Home</a>
+
+          <!-- About Dropdown -->
+          <div class="relative group">
+            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center">
+              About
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="nav-dropdown absolute left-0 mt-1 w-52 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+              <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">About the Journal</a>
+              <a href="editorial-board.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Editorial Board</a>
+            </div>
+          </div>
+
+          <!-- Issues & Articles Dropdown -->
+          <div class="relative group">
+            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center">
+              Issues &amp; Articles
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="nav-dropdown absolute left-0 mt-1 w-52 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+              <a href="current-issue.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Current Issue</a>
+              <a href="articles-in-press.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Articles in Press</a>
+              <a href="archive.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Archive</a>
+            </div>
+          </div>
+
+          <a href="for-authors.html" data-nav-page="for-authors.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">For Authors</a>
+          <a href="for-reviewers.html" data-nav-page="for-reviewers.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">For Reviewers</a>
+          <a href="policies.html" data-nav-page="policies.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Policies</a>
+          <a href="contact.html" data-nav-page="contact.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Contact</a>
+        </div>
+
+        <!-- Submit CTA + Mobile toggle -->
+        <div class="flex items-center space-x-3">
+          <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center px-4 py-2 bg-red-700 text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors shadow-sm">
+            Submit Manuscript
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black/50 z-50" aria-hidden="true"></div>
+
+  <!-- Mobile Menu Panel -->
+  <div id="mobile-menu" class="fixed top-0 right-0 w-80 max-w-full h-full bg-white z-50 shadow-2xl transition-menu mobile-menu-enter overflow-y-auto" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div class="flex items-center justify-between p-4 border-b border-gray-200">
+      <span class="text-lg font-bold text-teal-700">Menu</span>
+      <button id="mobile-menu-close" class="p-2 text-gray-500 hover:text-gray-700 rounded-lg" aria-label="Close menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="p-4 space-y-1">
+      <a href="index.html" class="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium">Home</a>
+
+      <!-- About Section -->
+      <button data-mobile-dropdown="mobile-about" class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium" aria-expanded="false">
+        About
+        <svg class="chevron-icon w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div id="mobile-about" class="hidden pl-4 space-y-1">
+        <a href="about.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-teal-50 rounded-lg">About the Journal</a>
+        <a href="editorial-board.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-teal-50 rounded-lg">Editorial Board</a>
+      </div>
+
+      <!-- Issues Section -->
+      <button data-mobile-dropdown="mobile-issues" class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium" aria-expanded="false">
+        Issues &amp; Articles
+        <svg class="chevron-icon w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div id="mobile-issues" class="hidden pl-4 space-y-1">
+        <a href="current-issue.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-teal-50 rounded-lg">Current Issue</a>
+        <a href="articles-in-press.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-teal-50 rounded-lg">Articles in Press</a>
+        <a href="archive.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-teal-50 rounded-lg">Archive</a>
+      </div>
+
+      <a href="for-authors.html" class="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium">For Authors</a>
+      <a href="for-reviewers.html" class="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium">For Reviewers</a>
+      <a href="policies.html" class="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium">Policies</a>
+      <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium">Contact</a>
+      <a href="news.html" class="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium">News</a>
+      <a href="forms.html" class="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium">Forms</a>
+
+      <div class="pt-4 border-t border-gray-200 mt-4">
+        <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="flex items-center justify-center px-4 py-3 bg-red-700 text-white font-semibold rounded-lg hover:bg-red-800 transition-colors">
+          Submit Manuscript
+          <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <div class="bg-gray-50 border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <nav aria-label="Breadcrumb"><ol class="flex items-center space-x-2 text-sm text-gray-500">
+          <li><a href="index.html" class="hover:text-teal-700">Home</a></li>
+          <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
+          <li aria-current="page" class="text-gray-900 font-medium">News</li>
+        </ol></nav>
+      </div>
+    </div>
+
+    <section class="bg-white border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900">News &amp; Announcements</h1>
+        <p class="mt-2 text-gray-500 text-lg">Stay informed about journal updates, awards, and events.</p>
+      </div>
+    </section>
+
+    <!-- Category Filters -->
+    <section class="bg-gray-50 border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div id="news-filters" class="flex flex-wrap gap-2" role="group" aria-label="Filter by category"></div>
+      </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="py-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div id="news-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        <div class="mt-10 text-center">
+          <button id="news-load-more" class="hidden px-6 py-3 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Load More</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-teal-900 text-white" aria-label="Site footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4"><div class="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden"><img src="images/logo.png" alt="Balkan Medical Journal" class="h-12 w-12 object-contain"></div><div class="font-bold text-lg">Balkan Medical Journal</div></div>
+          <p class="text-teal-300 text-sm leading-relaxed">Published by Trakya University, Edirne, Türkiye.<br>E-ISSN: 2146-3131</p>
+        </div>
+        <div><h3 class="font-semibold text-lg mb-4">Quick Links</h3><ul class="space-y-2 text-teal-300 text-sm"><li><a href="current-issue.html" class="hover:text-white">Current Issue</a></li><li><a href="archive.html" class="hover:text-white">Archive</a></li><li><a href="for-authors.html" class="hover:text-white">For Authors</a></li></ul></div>
+        <div><h3 class="font-semibold text-lg mb-4">About</h3><ul class="space-y-2 text-teal-300 text-sm"><li><a href="about.html" class="hover:text-white">About the Journal</a></li><li><a href="editorial-board.html" class="hover:text-white">Editorial Board</a></li><li><a href="policies.html" class="hover:text-white">Policies</a></li></ul></div>
+        <div><h3 class="font-semibold text-lg mb-4">Contact</h3><div class="text-teal-300 text-sm space-y-2"><p>Trakya University, Edirne, Türkiye</p><p><a href="mailto:info@balkanmedicaljournal.org" class="hover:text-white">info@balkanmedicaljournal.org</a></p></div></div>
+      </div>
+      <div class="border-t border-teal-800 mt-10 pt-8 text-center text-teal-400 text-sm">&copy; 2025 Balkan Medical Journal. Licensed under CC BY-NC-ND 4.0</div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" class="scroll-top-btn fixed bottom-6 right-6 w-12 h-12 bg-teal-700 text-white rounded-full shadow-lg hover:bg-teal-800 transition-colors flex items-center justify-center z-40 no-print" aria-label="Scroll to top">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/data/news.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/news-filter.js"></script>
+</body>
+</html>
