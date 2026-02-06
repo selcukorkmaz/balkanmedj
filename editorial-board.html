@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editorial Board — Balkan Medical Journal</title>
+  <meta name="description" content="Meet the Editorial Board of Balkan Medical Journal. Our editors are leading experts across medical disciplines from the Balkans and beyond.">
+  <meta property="og:title" content="Editorial Board — Balkan Medical Journal">
+  <meta property="og:description" content="Meet the Editorial Board of Balkan Medical Journal.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://balkanmedicaljournal.org/editorial-board.html">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Skip to Content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ══════════════════════════════════════════════════════════
+       NAVIGATION
+       ══════════════════════════════════════════════════════════ -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2 flex-shrink-0" aria-label="Balkan Medical Journal Home">
+          <img src="images/logo.svg" alt="Balkan Medical Journal" class="h-10 w-auto">
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center space-x-1">
+          <a href="index.html" data-nav-page="index.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Home</a>
+
+          <!-- About Dropdown -->
+          <div class="relative group">
+            <button data-dropdown-trigger class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center">
+              About
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="nav-dropdown absolute left-0 mt-1 w-52 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+              <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">About the Journal</a>
+              <a href="editorial-board.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Editorial Board</a>
+            </div>
+          </div>
+
+          <!-- Issues & Articles Dropdown -->
+          <div class="relative group">
+            <button data-dropdown-trigger class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center">
+              Issues &amp; Articles
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="nav-dropdown absolute left-0 mt-1 w-52 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+              <a href="current-issue.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Current Issue</a>
+              <a href="articles-in-press.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Articles in Press</a>
+              <a href="archive.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Archive</a>
+            </div>
+          </div>
+
+          <a href="for-authors.html" data-nav-page="for-authors.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">For Authors</a>
+          <a href="for-reviewers.html" data-nav-page="for-reviewers.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">For Reviewers</a>
+          <a href="policies.html" data-nav-page="policies.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Policies</a>
+          <a href="contact.html" data-nav-page="contact.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Contact</a>
+        </div>
+
+        <!-- Submit CTA + Mobile toggle -->
+        <div class="flex items-center space-x-3">
+          <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center px-4 py-2 bg-red-700 text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors shadow-sm">
+            Submit Manuscript
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black/50 z-50" aria-hidden="true"></div>
+
+  <!-- Mobile Menu Panel -->
+  <div id="mobile-menu" class="fixed top-0 right-0 w-80 max-w-full h-full bg-white z-50 shadow-2xl transition-menu mobile-menu-enter overflow-y-auto" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div class="flex items-center justify-between p-4 border-b border-gray-200">
+      <span class="text-lg font-bold text-teal-700">Menu</span>
+      <button id="mobile-menu-close" class="p-2 text-gray-500 hover:text-gray-700 rounded-lg" aria-label="Close menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="p-4 space-y-1">
+      <a href="index.html" class="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium">Home</a>
+
+      <!-- About Section -->
+      <button data-mobile-dropdown="mobile-about" class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium" aria-expanded="false">
+        About
+        <svg class="chevron-icon w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div id="mobile-about" class="hidden pl-4 space-y-1">
+        <a href="about.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-teal-50 rounded-lg">About the Journal</a>
+        <a href="editorial-board.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-teal-50 rounded-lg">Editorial Board</a>
+      </div>
+
+      <!-- Issues Section -->
+      <button data-mobile-dropdown="mobile-issues" class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium" aria-expanded="false">
+        Issues &amp; Articles
+        <svg class="chevron-icon w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div id="mobile-issues" class="hidden pl-4 space-y-1">
+        <a href="current-issue.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-teal-50 rounded-lg">Current Issue</a>
+        <a href="articles-in-press.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-teal-50 rounded-lg">Articles in Press</a>
+        <a href="archive.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-teal-50 rounded-lg">Archive</a>
+      </div>
+
+      <a href="for-authors.html" class="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium">For Authors</a>
+      <a href="for-reviewers.html" class="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium">For Reviewers</a>
+      <a href="policies.html" class="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium">Policies</a>
+      <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium">Contact</a>
+      <a href="news.html" class="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium">News</a>
+      <a href="forms.html" class="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg font-medium">Forms</a>
+
+      <div class="pt-4 border-t border-gray-200 mt-4">
+        <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="flex items-center justify-center px-4 py-3 bg-red-700 text-white font-semibold rounded-lg hover:bg-red-800 transition-colors">
+          Submit Manuscript
+          <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       MAIN CONTENT
+       ══════════════════════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ── Breadcrumb ─────────────────────────────────────────── -->
+    <nav class="bg-gray-50 border-b border-gray-200" aria-label="Breadcrumb">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <ol class="flex items-center space-x-2 text-sm text-gray-500">
+          <li><a href="index.html" class="hover:text-teal-700 transition-colors">Home</a></li>
+          <li aria-hidden="true">
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </li>
+          <li><span class="text-gray-900 font-medium" aria-current="page">Editorial Board</span></li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- ── Page Header ────────────────────────────────────────── -->
+    <section class="bg-gradient-to-br from-teal-800 via-teal-700 to-teal-900 text-white relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="0.5"/></pattern></defs><rect width="100%" height="100%" fill="url(#grid)"/></svg>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 relative">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">Editorial Board</h1>
+        <p class="mt-4 text-lg text-teal-100 max-w-2xl leading-relaxed">
+          Our editorial team comprises leading researchers and clinicians from across the Balkans and beyond, dedicated to advancing medical science through rigorous peer review.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Tabbed Editorial Board ─────────────────────────────── -->
+    <section class="py-12 md:py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Tab Buttons -->
+        <div role="tablist" aria-label="Editorial Board sections" class="flex flex-wrap gap-1 border-b border-gray-200 mb-10">
+          <button role="tab" id="tab-eic" aria-selected="true" aria-controls="panel-eic" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap tab-active" tabindex="0">
+            Editor-in-Chief
+          </button>
+          <button role="tab" id="tab-assoc" aria-selected="false" aria-controls="panel-assoc" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap" tabindex="-1">
+            Associate Editors
+          </button>
+          <button role="tab" id="tab-board" aria-selected="false" aria-controls="panel-board" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap" tabindex="-1">
+            Editorial Board
+          </button>
+          <button role="tab" id="tab-other" aria-selected="false" aria-controls="panel-other" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap" tabindex="-1">
+            Other Editors
+          </button>
+        </div>
+
+        <!-- Tab Panels -->
+        <div id="panel-eic" role="tabpanel" aria-labelledby="tab-eic" tabindex="0">
+          <!-- Populated by JS -->
+        </div>
+
+        <div id="panel-assoc" role="tabpanel" aria-labelledby="tab-assoc" class="hidden" tabindex="0">
+          <!-- Populated by JS -->
+        </div>
+
+        <div id="panel-board" role="tabpanel" aria-labelledby="tab-board" class="hidden" tabindex="0">
+          <!-- Populated by JS -->
+        </div>
+
+        <div id="panel-other" role="tabpanel" aria-labelledby="tab-other" class="hidden" tabindex="0">
+          <!-- Populated by JS -->
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════════════════════ -->
+  <footer class="bg-teal-900 text-white" aria-label="Site footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-10 h-10 bg-teal-700 rounded-lg flex items-center justify-center">
+              <span class="text-xl font-bold text-white">B</span><span class="text-xl font-bold text-teal-300">M</span>
+            </div>
+            <div>
+              <div class="font-bold text-lg">Balkan Medical Journal</div>
+            </div>
+          </div>
+          <p class="text-teal-300 text-sm leading-relaxed">
+            Published by Trakya University, Edirne, Turkey.<br>
+            E-ISSN: 2146-3131<br>
+            Publisher: Galenos Publishing House
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-teal-300 text-sm">
+            <li><a href="current-issue.html" class="hover:text-white transition-colors">Current Issue</a></li>
+            <li><a href="archive.html" class="hover:text-white transition-colors">Archive</a></li>
+            <li><a href="articles-in-press.html" class="hover:text-white transition-colors">Articles in Press</a></li>
+            <li><a href="for-authors.html" class="hover:text-white transition-colors">For Authors</a></li>
+            <li><a href="for-reviewers.html" class="hover:text-white transition-colors">For Reviewers</a></li>
+            <li><a href="forms.html" class="hover:text-white transition-colors">Forms</a></li>
+          </ul>
+        </div>
+
+        <!-- About -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4">About</h3>
+          <ul class="space-y-2 text-teal-300 text-sm">
+            <li><a href="about.html" class="hover:text-white transition-colors">About the Journal</a></li>
+            <li><a href="editorial-board.html" class="hover:text-white transition-colors">Editorial Board</a></li>
+            <li><a href="policies.html" class="hover:text-white transition-colors">Policies</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+            <li><a href="news.html" class="hover:text-white transition-colors">News</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Contact</h3>
+          <div class="text-teal-300 text-sm space-y-2">
+            <p>Balkan Medical Journal<br>Trakya University Faculty of Medicine</p>
+            <p>Balkan Yerleşkesi, 22030<br>Edirne, Turkey</p>
+            <p>
+              <a href="mailto:info@balkanmedicaljournal.org" class="hover:text-white transition-colors">info@balkanmedicaljournal.org</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-teal-800 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-teal-400 text-sm">&copy; 2025 Balkan Medical Journal. All rights reserved.</p>
+        <div class="flex items-center gap-6 text-teal-400 text-sm">
+          <span>Licensed under CC BY-NC-ND 4.0</span>
+          <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener" class="hover:text-white transition-colors" aria-label="Creative Commons License">
+            <img src="images/icons/cc-by-nc-nd.svg" alt="CC BY-NC-ND 4.0" class="h-6 w-auto opacity-70 hover:opacity-100 transition-opacity">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scroll-top" class="scroll-top-btn fixed bottom-6 right-6 w-12 h-12 bg-teal-700 text-white rounded-full shadow-lg hover:bg-teal-800 transition-colors flex items-center justify-center z-40 no-print" aria-label="Scroll to top">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/data/editorial-board.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function() {
+      var data = window.EDITORIAL_BOARD;
+      if (!data) return;
+
+      // ── Helper: build a single member card ──────────────────
+      function buildCard(member, featured) {
+        var bgClass = featured ? 'bg-teal-50 border-teal-200' : 'bg-white border-gray-200';
+        var sizeClass = featured ? 'md:col-span-2 lg:col-span-3' : '';
+
+        var html = '<div class="' + sizeClass + '">' +
+          '<div class="' + bgClass + ' rounded-xl border p-5">';
+
+        if (featured) {
+          html += '<div class="flex flex-col sm:flex-row sm:items-center gap-4">' +
+            '<div class="flex-shrink-0 w-16 h-16 bg-teal-700 rounded-full flex items-center justify-center">' +
+              '<span class="text-2xl font-bold text-white">' + member.name.split(' ').map(function(n) { return n[0]; }).join('') + '</span>' +
+            '</div>' +
+            '<div class="flex-1">' +
+              '<h3 class="text-xl font-bold text-gray-900">' + member.name + '</h3>' +
+              '<p class="text-sm text-teal-700 font-medium">' + member.title + '</p>' +
+              '<p class="text-sm text-gray-600 mt-1">' + member.specialty + '</p>' +
+              '<p class="text-sm text-gray-500">' + member.affiliation + '</p>' +
+              '<p class="text-sm text-gray-500">' + member.country + '</p>' +
+              (member.orcid ? '<a href="https://orcid.org/' + member.orcid + '" target="_blank" rel="noopener" class="inline-flex items-center text-xs text-teal-600 hover:text-teal-800 mt-2 transition-colors">' +
+                '<svg class="w-4 h-4 mr-1" viewBox="0 0 256 256" fill="currentColor"><path d="M256 128c0 70.7-57.3 128-128 128S0 198.7 0 128 57.3 0 128 0s128 57.3 128 128zM70.7 164.3V91.7h13.2v72.6H70.7zm6.6-89.2c-4.8 0-8.1-3.5-8.1-7.8 0-4.4 3.4-7.8 8.2-7.8s8.1 3.4 8.1 7.8c0 4.3-3.3 7.8-8.2 7.8zm35.6 89.2V91.7h35.7c17 0 27.2 10 27.2 24.3 0 14.3-10.3 24.5-27.3 24.5h-22.4v23.8h-13.2zm13.2-36h21.1c10.2 0 15.2-5.8 15.2-13.6 0-7.7-5-13.4-15.2-13.4h-21.1v27z"/></svg>' +
+                'ORCID: ' + member.orcid + '</a>' : '') +
+            '</div>' +
+          '</div>';
+        } else {
+          html += '<h3 class="text-base font-bold text-gray-900">' + member.name + '</h3>' +
+            '<p class="text-sm text-teal-700 font-medium mt-1">' + member.title + '</p>' +
+            '<p class="text-sm text-gray-600 mt-1">' + member.specialty + '</p>' +
+            '<p class="text-sm text-gray-500 mt-1">' + member.affiliation + '</p>' +
+            '<p class="text-sm text-gray-500">' + member.country + '</p>' +
+            (member.orcid ? '<a href="https://orcid.org/' + member.orcid + '" target="_blank" rel="noopener" class="inline-flex items-center text-xs text-teal-600 hover:text-teal-800 mt-2 transition-colors">' +
+              '<svg class="w-4 h-4 mr-1" viewBox="0 0 256 256" fill="currentColor"><path d="M256 128c0 70.7-57.3 128-128 128S0 198.7 0 128 57.3 0 128 0s128 57.3 128 128zM70.7 164.3V91.7h13.2v72.6H70.7zm6.6-89.2c-4.8 0-8.1-3.5-8.1-7.8 0-4.4 3.4-7.8 8.2-7.8s8.1 3.4 8.1 7.8c0 4.3-3.3 7.8-8.2 7.8zm35.6 89.2V91.7h35.7c17 0 27.2 10 27.2 24.3 0 14.3-10.3 24.5-27.3 24.5h-22.4v23.8h-13.2zm13.2-36h21.1c10.2 0 15.2-5.8 15.2-13.6 0-7.7-5-13.4-15.2-13.4h-21.1v27z"/></svg>' +
+              'ORCID: ' + member.orcid + '</a>' : '');
+        }
+
+        html += '</div></div>';
+        return html;
+      }
+
+      // ── Helper: render a list of members into a grid ────────
+      function renderGrid(container, members, featured) {
+        if (!members || members.length === 0) return;
+
+        var gridClass = featured ? '' : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6';
+        var html = '<div class="' + gridClass + '">';
+
+        if (Array.isArray(members)) {
+          members.forEach(function(member) {
+            html += buildCard(member, false);
+          });
+        } else {
+          html += buildCard(members, featured);
+        }
+
+        html += '</div>';
+        container.innerHTML = html;
+      }
+
+      // ── Render each panel ───────────────────────────────────
+
+      // Editor-in-Chief (featured)
+      var panelEic = document.getElementById('panel-eic');
+      if (panelEic && data.editorInChief) {
+        renderGrid(panelEic, data.editorInChief, true);
+      }
+
+      // Associate Editors
+      var panelAssoc = document.getElementById('panel-assoc');
+      if (panelAssoc && data.associateEditors) {
+        renderGrid(panelAssoc, data.associateEditors, false);
+      }
+
+      // Editorial Board
+      var panelBoard = document.getElementById('panel-board');
+      if (panelBoard && data.editorialBoard) {
+        renderGrid(panelBoard, data.editorialBoard, false);
+      }
+
+      // Other Editors (statistical + language)
+      var panelOther = document.getElementById('panel-other');
+      if (panelOther) {
+        var otherHtml = '';
+
+        if (data.statisticalEditor) {
+          otherHtml += '<h2 class="text-lg font-semibold text-gray-900 mb-4">Statistical Editor</h2>';
+          otherHtml += '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">';
+          otherHtml += buildCard(data.statisticalEditor, false);
+          otherHtml += '</div>';
+        }
+
+        if (data.languageEditor) {
+          otherHtml += '<h2 class="text-lg font-semibold text-gray-900 mb-4">Language Editor</h2>';
+          otherHtml += '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">';
+          otherHtml += buildCard(data.languageEditor, false);
+          otherHtml += '</div>';
+        }
+
+        panelOther.innerHTML = otherHtml;
+      }
+
+      // ── Tab switching logic ─────────────────────────────────
+      var tabs = document.querySelectorAll('[role="tab"]');
+      var panels = document.querySelectorAll('[role="tabpanel"]');
+
+      function activateTab(tab) {
+        // Deactivate all
+        tabs.forEach(function(t) {
+          t.setAttribute('aria-selected', 'false');
+          t.classList.remove('tab-active');
+          t.setAttribute('tabindex', '-1');
+        });
+        panels.forEach(function(p) {
+          p.classList.add('hidden');
+        });
+
+        // Activate selected
+        tab.setAttribute('aria-selected', 'true');
+        tab.classList.add('tab-active');
+        tab.setAttribute('tabindex', '0');
+
+        var panelId = tab.getAttribute('aria-controls');
+        var panel = document.getElementById(panelId);
+        if (panel) {
+          panel.classList.remove('hidden');
+        }
+      }
+
+      tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          activateTab(tab);
+        });
+
+        // Keyboard navigation
+        tab.addEventListener('keydown', function(e) {
+          var tabArray = Array.prototype.slice.call(tabs);
+          var index = tabArray.indexOf(tab);
+
+          if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+            e.preventDefault();
+            var next = tabArray[(index + 1) % tabArray.length];
+            next.focus();
+            activateTab(next);
+          } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+            e.preventDefault();
+            var prev = tabArray[(index - 1 + tabArray.length) % tabArray.length];
+            prev.focus();
+            activateTab(prev);
+          } else if (e.key === 'Home') {
+            e.preventDefault();
+            tabArray[0].focus();
+            activateTab(tabArray[0]);
+          } else if (e.key === 'End') {
+            e.preventDefault();
+            tabArray[tabArray.length - 1].focus();
+            activateTab(tabArray[tabArray.length - 1]);
+          }
+        });
+      });
+
+    })();
+  </script>
+</body>
+</html>
