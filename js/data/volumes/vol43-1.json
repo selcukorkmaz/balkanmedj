@@ -10,7 +10,7 @@
         "orcid": ""
       }
     ],
-    "abstract": "No abstract available.",
+    "abstract": "",
     "keywords": [
       "editorial",
       "publication model",
@@ -28,7 +28,8 @@
     "citations": 0,
     "featured": true,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "previewText": "It is with great pleasure that we announce a significant milestone in the history of the Balkan Medical Journal. Beginning with Volume 43, Issue 1, our journal will transition to monthly publication."
   },
   {
     "id": 2812,
@@ -261,7 +262,8 @@
     "citations": 0,
     "featured": false,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "previewText": "We read with considerable interest the article by Uzun and Elkiran describing the application of the YOLOv11 deep learning model for polycystic ovary syndrome diagnosis."
   },
   {
     "id": 2817,
@@ -292,7 +294,8 @@
     "citations": 0,
     "featured": false,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "previewText": "We appreciate the insightful commentary by Turkmen regarding our study on the YOLOv11 deep learning model for polycystic ovary syndrome diagnosis from ultrasound images."
   },
   {
     "id": 2818,
@@ -322,6 +325,7 @@
     "citations": 0,
     "featured": false,
     "imageCorner": true,
-    "hasFullText": true
+    "hasFullText": true,
+    "previewText": "A 78-year-old woman presented to the emergency department with acute onset lower back pain following a mechanical fall. Physical examination revealed tenderness over the thoracolumbar junction."
   }
 ]

@@ -10,7 +10,7 @@
         "orcid": ""
       }
     ],
-    "abstract": "No abstract available.",
+    "abstract": "",
     "keywords": [
       "cannabinoids",
       "medicine",
@@ -28,7 +28,8 @@
     "citations": 0,
     "featured": false,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "previewText": "Cannabinoids have emerged as one of the most debated topics in contemporary medicine, occupying a unique position at the intersection of therapeutic promise and toxicological concern."
   },
   {
     "id": 2820,
@@ -41,7 +42,7 @@
         "orcid": ""
       }
     ],
-    "abstract": "No abstract available.",
+    "abstract": "",
     "keywords": [
       "factor XI",
       "ischemic stroke",
@@ -59,7 +60,8 @@
     "citations": 0,
     "featured": false,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "previewText": "Ischemic stroke remains a leading cause of disability and death worldwide, with recurrent stroke representing a particularly devastating complication affecting approximately 25% of survivors."
   },
   {
     "id": 2821,
@@ -259,7 +261,8 @@
     "citations": 0,
     "featured": false,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "previewText": "Acute myeloid leukemia (AML) is a heterogeneous group of hematopoietic malignancies characterized by clonal expansion of abnormally differentiated myeloid precursor cells in the bone marrow."
   },
   {
     "id": 2825,
@@ -328,6 +331,7 @@
     "citations": 0,
     "featured": false,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "previewText": "The relationship between sodium-glucose co-transporter 2 (SGLT2) inhibitors and atrial fibrillation (AF) in patients with heart failure with preserved ejection fraction represents an evolving area."
   }
 ]

@@ -357,9 +357,9 @@
 
       // Abstract panel content
       var abstractContent = '';
-      if (!isNoAbstract && article.abstract && article.abstract !== 'No abstract available.') {
+      if (!isNoAbstract && article.abstract) {
         abstractContent = '<div class="text-gray-700 leading-relaxed prose max-w-none">' + article.abstract + '</div>';
-      } else if (!isNoAbstract && article.abstract === 'No abstract available.') {
+      } else if (!isNoAbstract) {
         abstractContent = '<p class="text-gray-500 italic">No abstract available for this article.</p>';
       }
 
@@ -375,7 +375,8 @@
               '<p>Loading full text...</p>' +
             '</div>' +
           '</div>' +
-          (article.keywords && article.keywords.length ? '<section class="mb-8 mt-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Keywords</h2><div class="flex flex-wrap gap-2">' + keywordsHtml + '</div></section>' : '');
+          (article.keywords && article.keywords.length ? '<section class="mb-8 mt-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Keywords</h2><div class="flex flex-wrap gap-2">' + keywordsHtml + '</div></section>' : '') +
+          '<section class="mb-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Authors &amp; Affiliations</h2><div>' + authorsHtml + '</div></section>';
       } else if (hasFullText && !isNoAbstract) {
         // Articles WITH abstract + full text: 3 tab panels
         panelsHtml =

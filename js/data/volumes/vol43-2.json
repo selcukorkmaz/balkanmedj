@@ -10,7 +10,7 @@
         "orcid": ""
       }
     ],
-    "abstract": "No abstract available.",
+    "abstract": "",
     "keywords": [
       "musculoskeletal ultrasound",
       "rehabilitation",
@@ -28,7 +28,8 @@
     "citations": 0,
     "featured": false,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "previewText": "Musculoskeletal ultrasound (MSUS) has undergone a remarkable transformation over the past two decades, evolving from a niche imaging tool primarily used in rheumatology to an indispensable modality..."
   },
   {
     "id": 2802,
@@ -378,7 +379,8 @@
     "citations": 0,
     "featured": false,
     "imageCorner": true,
-    "hasFullText": true
+    "hasFullText": true,
+    "previewText": "A 72-year-old woman presented to the neurosurgery outpatient clinic with a 3-month history of progressive redness, swelling, and proptosis of the left eye."
   },
   {
     "id": 2807,
@@ -423,7 +425,8 @@
     "citations": 0,
     "featured": false,
     "imageCorner": true,
-    "hasFullText": true
+    "hasFullText": true,
+    "previewText": "A 48-year-old male farmer from a rural area in southeastern Anatolia presented to the cardiology department with exertional chest pain and progressive dyspnea over three months."
   },
   {
     "id": 2808,
@@ -464,7 +467,8 @@
     "citations": 0,
     "featured": false,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "previewText": "Secukinumab is a fully human monoclonal antibody that selectively targets interleukin-17A (IL-17A), a key pro-inflammatory cytokine implicated in the pathogenesis of psoriasis."
   },
   {
     "id": 2809,
@@ -515,7 +519,8 @@
     "citations": 0,
     "featured": false,
     "imageCorner": true,
-    "hasFullText": true
+    "hasFullText": true,
+    "previewText": "A 28-year-old woman was referred to the pulmonology department for evaluation of incidental bilateral pulmonary nodules discovered on chest radiography during a routine health examination."
   },
   {
     "id": 2810,
@@ -556,6 +561,7 @@
     "citations": 0,
     "featured": false,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "previewText": "We read with great interest the article by Ke et al. examining the clinical effects of febuxostat in patients with heart failure and hyperuricemia."
   }
 ]

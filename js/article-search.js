@@ -358,13 +358,23 @@
         grouped[a.type].push(a);
       });
 
-      // Order: Editorial, Original Article, Review, Brief Report, Case Report, Letter, Image Corner
-      var typeOrder = ['Editorial', 'Original Article', 'Review', 'Brief Report', 'Case Report', 'Letter to the Editor', 'Image Corner'];
+      // Order: Editorial, Invited Review, Original Article, Systematic Review, Scientific Letter, Clinical Image, Letter to the Editor
+      var typeOrder = ['Editorial', 'Invited Review', 'Original Article', 'Systematic Review', 'Scientific Letter', 'Clinical Image', 'Letter to the Editor'];
+      // Section header plurals
+      var typePlurals = {
+        'Editorial': 'Editorials',
+        'Invited Review': 'Invited Reviews',
+        'Original Article': 'Original Articles',
+        'Systematic Review': 'Systematic Reviews',
+        'Scientific Letter': 'Scientific Letters',
+        'Clinical Image': 'Clinical Images',
+        'Letter to the Editor': 'Letters to the Editor'
+      };
       typeOrder.forEach(function (type) {
         if (!grouped[type]) return;
         var section = document.createElement('div');
         section.className = 'col-span-full';
-        section.innerHTML = '<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-200">' + type + 's</h3>';
+        section.innerHTML = '<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-200">' + (typePlurals[type] || type + 's') + '</h3>';
         container.appendChild(section);
 
         grouped[type].forEach(function (article) {
@@ -403,7 +413,12 @@
         var orcidLink = a.orcid ? ' <a href="https://orcid.org/' + a.orcid + '" target="_blank" rel="noopener" title="ORCID: ' + a.orcid + '" class="inline-flex align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" class="inline-block"><path fill="#A6CE39" d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z"/><path fill="#fff" d="M86.3,186.2H70.9V79.1h15.4v48.4V186.2z"/><path fill="#fff" d="M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z"/><path fill="#fff" d="M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z"/></svg></a>' : '';
         return a.name + orcidLink;
       }).join(', ') + '</p>' +
-      '<p class="text-sm text-gray-400 mb-4 line-clamp-2">' + (article.abstract || '').substring(0, 200) + '...</p>' +
+      (function () {
+        var preview = article.abstract || article.previewText || '';
+        if (!preview || preview === 'No abstract available.') return '';
+        var text = preview.length > 200 ? preview.substring(0, 200) + '...' : preview;
+        return '<p class="text-sm text-gray-400 mb-4 line-clamp-2">' + text + '</p>';
+      })() +
       '<div class="flex items-center justify-between text-xs text-gray-400 pt-4 border-t border-gray-100">' +
         '<div class="flex gap-4">' +
           '<span title="Views"><svg class="inline w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>' + (article.views || 0).toLocaleString() + '</span>' +

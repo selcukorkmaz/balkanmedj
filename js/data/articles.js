@@ -13,7 +13,8 @@ window.ARTICLES = [
         orcid: ""
       }
     ],
-    abstract: "No abstract available.",
+    abstract: "",
+    previewText: "Musculoskeletal ultrasound (MSUS) has undergone a remarkable transformation over the past two decades, evolving from a niche imaging tool primarily used in rheumatology to an indispensable modality...",
     keywords: ["musculoskeletal ultrasound", "rehabilitation", "diagnosis"],
     doi: "10.4274/balkanmedj.galenos.2026.2026.060126",
     received: "",
@@ -247,6 +248,7 @@ window.ARTICLES = [
       }
     ],
     abstract: "",
+    previewText: "A 72-year-old woman presented to the neurosurgery outpatient clinic with a 3-month history of progressive redness, swelling, and proptosis of the left eye.",
     keywords: ["cavernous sinus fistula", "carotid compression"],
     doi: "10.4274/balkanmedj.galenos.2025.2025-5-157",
     received: "",
@@ -289,6 +291,7 @@ window.ARTICLES = [
       }
     ],
     abstract: "",
+    previewText: "A 48-year-old male farmer from a rural area in southeastern Anatolia presented to the cardiology department with exertional chest pain and progressive dyspnea over three months.",
     keywords: ["cardiac hydatid cyst", "angina pectoris"],
     doi: "10.4274/balkanmedj.galenos.2025.2025-7-265",
     received: "",
@@ -326,6 +329,7 @@ window.ARTICLES = [
       }
     ],
     abstract: "",
+    previewText: "Secukinumab is a fully human monoclonal antibody that selectively targets interleukin-17A (IL-17A), a key pro-inflammatory cytokine implicated in the pathogenesis of psoriasis.",
     keywords: ["secukinumab", "interstitial pneumonia", "psoriasis"],
     doi: "10.4274/balkanmedj.galenos.2025.2025-8-43",
     received: "",
@@ -373,6 +377,7 @@ window.ARTICLES = [
       }
     ],
     abstract: "",
+    previewText: "A 28-year-old woman was referred to the pulmonology department for evaluation of incidental bilateral pulmonary nodules discovered on chest radiography during a routine health examination.",
     keywords: ["ameloblastoma", "lung metastasis", "pulmonary nodules"],
     doi: "10.4274/balkanmedj.galenos.2026.2025-8-6",
     received: "",
@@ -410,6 +415,7 @@ window.ARTICLES = [
       }
     ],
     abstract: "",
+    previewText: "We read with great interest the article by Ke et al. examining the clinical effects of febuxostat in patients with heart failure and hyperuricemia.",
     keywords: ["febuxostat", "heart failure", "HFpEF"],
     doi: "10.4274/balkanmedj.galenos.2026.2025-12-198",
     received: "",
@@ -440,7 +446,8 @@ window.ARTICLES = [
         orcid: ""
       }
     ],
-    abstract: "No abstract available.",
+    abstract: "",
+    previewText: "It is with great pleasure that we announce a significant milestone in the history of the Balkan Medical Journal. Beginning with Volume 43, Issue 1, our journal will transition to monthly publication.",
     keywords: ["editorial", "publication model", "monthly journal"],
     doi: "10.4274/balkanmedj.galenos.2025.2025.111125",
     received: "",
@@ -646,6 +653,7 @@ window.ARTICLES = [
       }
     ],
     abstract: "",
+    previewText: "We read with considerable interest the article by Uzun and Elkiran describing the application of the YOLOv11 deep learning model for polycystic ovary syndrome diagnosis.",
     keywords: ["PCOS", "YOLOv11", "artificial intelligence", "diagnosis"],
     doi: "10.4274/balkanmedj.galenos.2025.2025-8-295",
     received: "",
@@ -673,6 +681,7 @@ window.ARTICLES = [
       }
     ],
     abstract: "",
+    previewText: "We appreciate the insightful commentary by Turkmen regarding our study on the YOLOv11 deep learning model for polycystic ovary syndrome diagnosis from ultrasound images.",
     keywords: ["PCOS", "YOLOv11", "artificial intelligence"],
     doi: "10.4274/balkanmedj.galenos.2025.2025-8-295.answer",
     received: "",
@@ -700,6 +709,7 @@ window.ARTICLES = [
       }
     ],
     abstract: "",
+    previewText: "A 78-year-old woman presented to the emergency department with acute onset lower back pain following a mechanical fall. Physical examination revealed tenderness over the thoracolumbar junction.",
     keywords: ["pulmonary embolism", "cement embolism"],
     doi: "10.4274/balkanmedj.galenos.2025.2025-10-141",
     received: "",
@@ -730,7 +740,8 @@ window.ARTICLES = [
         orcid: ""
       }
     ],
-    abstract: "No abstract available.",
+    abstract: "",
+    previewText: "Cannabinoids have emerged as one of the most debated topics in contemporary medicine, occupying a unique position at the intersection of therapeutic promise and toxicological concern.",
     keywords: ["cannabinoids", "medicine", "toxicology"],
     doi: "10.4274/balkanmedj.galenos.2025.2025.290925",
     received: "",
@@ -757,7 +768,8 @@ window.ARTICLES = [
         orcid: ""
       }
     ],
-    abstract: "No abstract available.",
+    abstract: "",
+    previewText: "Ischemic stroke remains a leading cause of disability and death worldwide, with recurrent stroke representing a particularly devastating complication affecting approximately 25% of survivors.",
     keywords: ["factor XI", "ischemic stroke", "anticoagulation"],
     doi: "10.4274/balkanmedj.galenos.2025.2025.160925",
     received: "",
@@ -936,6 +948,7 @@ window.ARTICLES = [
       }
     ],
     abstract: "",
+    previewText: "Acute myeloid leukemia (AML) is a heterogeneous group of hematopoietic malignancies characterized by clonal expansion of abnormally differentiated myeloid precursor cells in the bone marrow.",
     keywords: ["acute myeloid leukemia", "FTO protein", "chemotherapy resistance", "bone marrow mesenchymal stem cells"],
     doi: "10.4274/balkanmedj.galenos.2025.2025-7-150",
     received: "",
@@ -995,6 +1008,7 @@ window.ARTICLES = [
       }
     ],
     abstract: "",
+    previewText: "The relationship between sodium-glucose co-transporter 2 (SGLT2) inhibitors and atrial fibrillation (AF) in patients with heart failure with preserved ejection fraction represents an evolving area.",
     keywords: ["SGLT2 inhibitors", "atrial fibrillation", "HFpEF"],
     doi: "10.4274/balkanmedj.galenos.2025.2025-6-248",
     received: "",
