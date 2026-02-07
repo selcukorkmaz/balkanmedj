@@ -1,430 +1,1013 @@
 window.ARTICLES = [
-    {
-        id: 2413,
-        type: "Original Article",
-        title: "Impact of Left Atrial Strain on Predicting Atrial Fibrillation Recurrence After Catheter Ablation: A Prospective Cohort Study",
-        authors: [
-            { name: "Mehmet Kaya", affiliation: "Department of Cardiology, Istanbul University-Cerrahpasa, Istanbul, Türkiye", orcid: "0000-0002-4781-3209" },
-            { name: "Ayse Demir", affiliation: "Department of Cardiology, Istanbul University-Cerrahpasa, Istanbul, Türkiye", orcid: "0000-0003-5512-7843" },
-            { name: "Dimitar Georgiev", affiliation: "Department of Cardiology, Medical University of Sofia, Sofia, Bulgaria", orcid: "0000-0001-9923-6154" }
-        ],
-        abstract: "Background: Atrial fibrillation recurrence after catheter ablation remains a significant clinical challenge. Left atrial strain parameters assessed by speckle-tracking echocardiography may offer incremental prognostic value. Aims: To evaluate whether pre-procedural left atrial reservoir strain independently predicts atrial fibrillation recurrence within 12 months of catheter ablation. Study Design: Prospective cohort study. Methods: We enrolled 214 consecutive patients with paroxysmal or persistent atrial fibrillation who underwent pulmonary vein isolation at a single tertiary center between January 2022 and June 2023. Left atrial reservoir strain was measured using two-dimensional speckle-tracking echocardiography prior to ablation. The primary endpoint was documented atrial fibrillation recurrence after a 90-day blanking period. Results: During a median follow-up of 14.2 months, atrial fibrillation recurred in 68 patients (31.8%). Patients with recurrence had significantly lower left atrial reservoir strain (15.4% vs. 22.8%, p<0.001). In multivariable Cox regression analysis, left atrial reservoir strain below 18% was independently associated with recurrence (hazard ratio 2.41; 95% confidence interval 1.52-3.83; p<0.001) after adjustment for left atrial volume index, CHA2DS2-VASc score, and atrial fibrillation type. Conclusion: Pre-procedural left atrial reservoir strain is an independent predictor of atrial fibrillation recurrence after catheter ablation and may help refine patient selection for the procedure.",
-        keywords: ["atrial fibrillation", "catheter ablation", "left atrial strain", "speckle-tracking echocardiography", "recurrence"],
-        doi: "10.4274/balkanmedj.galenos.2025.2413",
-        received: "2024-08-12",
-        accepted: "2024-11-28",
-        published: "2025-01-15",
-        volume: 42,
-        issue: 1,
-        pages: "1-8",
-        views: 1842,
-        downloads: 634,
-        citations: 5,
-        featured: true,
-        imageCorner: false
-    },
-    {
-        id: 2414,
-        type: "Original Article",
-        title: "Serum Interleukin-6 and Tumor Necrosis Factor-Alpha Levels as Prognostic Biomarkers in Patients with Non-Small Cell Lung Cancer Receiving Immunotherapy",
-        authors: [
-            { name: "Elif Yilmaz", affiliation: "Department of Medical Oncology, Hacettepe University Faculty of Medicine, Ankara, Türkiye", orcid: "0000-0002-8834-1927" },
-            { name: "Cem Ozturk", affiliation: "Department of Medical Oncology, Hacettepe University Faculty of Medicine, Ankara, Türkiye", orcid: "0000-0003-2290-4561" },
-            { name: "Vesna Popovic", affiliation: "Institute of Oncology and Radiology of Serbia, Belgrade, Serbia", orcid: "0000-0001-6748-3920" },
-            { name: "Selma Hadzic", affiliation: "Clinical Center University of Sarajevo, Sarajevo, Bosnia and Herzegovina", orcid: "0000-0002-1185-4023" }
-        ],
-        abstract: "Background: Immune checkpoint inhibitors have transformed the management of non-small cell lung cancer, yet reliable biomarkers for treatment response remain limited. Aims: To investigate the prognostic significance of baseline and on-treatment serum interleukin-6 and tumor necrosis factor-alpha levels in patients with advanced non-small cell lung cancer receiving pembrolizumab monotherapy. Study Design: Retrospective cohort study. Methods: We analyzed serum samples from 178 patients with stage IIIB-IV non-small cell lung cancer treated with first-line pembrolizumab between March 2021 and December 2023 at three centers across the Balkans. Cytokine levels were measured at baseline and at weeks 6 and 12 of treatment. Progression-free survival and overall survival were assessed using Kaplan-Meier analysis and Cox proportional hazards models. Results: Elevated baseline interleukin-6 (above 12.5 pg/mL) was associated with shorter progression-free survival (median 4.8 vs. 9.3 months; p=0.002) and overall survival (median 11.2 vs. 19.7 months; p<0.001). A greater than 40% reduction in interleukin-6 at week 6 correlated with improved objective response rate (52.3% vs. 21.1%; p<0.001). Tumor necrosis factor-alpha levels did not show independent prognostic value. Conclusion: Serum interleukin-6 may serve as a dynamic biomarker for monitoring immunotherapy response in non-small cell lung cancer.",
-        keywords: ["non-small cell lung cancer", "immunotherapy", "interleukin-6", "tumor necrosis factor-alpha", "biomarker", "pembrolizumab"],
-        doi: "10.4274/balkanmedj.galenos.2025.2414",
-        received: "2024-07-23",
-        accepted: "2024-12-05",
-        published: "2025-01-15",
-        volume: 42,
-        issue: 1,
-        pages: "9-17",
-        views: 2156,
-        downloads: 891,
-        citations: 8,
-        featured: true,
-        imageCorner: false
-    },
-    {
-        id: 2415,
-        type: "Review",
-        title: "Gut Microbiota Alterations in Inflammatory Bowel Disease: From Pathogenesis to Therapeutic Opportunities: A Systematic Review and Meta-Analysis",
-        authors: [
-            { name: "Burak Celik", affiliation: "Department of Gastroenterology, Trakya University Faculty of Medicine, Edirne, Türkiye", orcid: "0000-0002-5678-2341" },
-            { name: "Ivana Stojanovic", affiliation: "Faculty of Medicine, University of Belgrade, Belgrade, Serbia", orcid: "0000-0003-3412-8890" },
-            { name: "Elena Marinova", affiliation: "Department of Gastroenterology, Medical University of Sofia, Sofia, Bulgaria", orcid: "0000-0001-4523-7761" }
-        ],
-        abstract: "Inflammatory bowel disease, encompassing Crohn's disease and ulcerative colitis, affects an increasing number of individuals in the Balkan region and worldwide. Accumulating evidence implicates gut microbiota dysbiosis as a central driver of disease initiation, perpetuation, and relapse. In this systematic review and meta-analysis, we searched PubMed, Scopus, and Web of Science for studies published between January 2015 and June 2024 that characterized gut microbiota composition in inflammatory bowel disease patients compared with healthy controls. Of 2,847 records screened, 62 studies met inclusion criteria comprising 4,318 patients and 3,126 healthy controls. Pooled analyses demonstrated significant reductions in alpha diversity (standardized mean difference -0.74; 95% confidence interval -0.92 to -0.56; p<0.001) and depletion of Faecalibacterium prausnitzii (standardized mean difference -1.12; 95% confidence interval -1.38 to -0.86) in inflammatory bowel disease patients. We further discuss emerging therapeutic strategies including fecal microbiota transplantation, next-generation probiotics, and dietary interventions that target microbial restoration. Current evidence supports microbiota-directed therapies as adjuncts to standard treatment, though long-term efficacy data remain sparse. Future large-scale, well-designed randomized controlled trials are warranted to establish optimal protocols for microbiome-based interventions.",
-        keywords: ["inflammatory bowel disease", "gut microbiota", "dysbiosis", "fecal microbiota transplantation", "systematic review"],
-        doi: "10.4274/balkanmedj.galenos.2025.2415",
-        received: "2024-06-18",
-        accepted: "2024-11-10",
-        published: "2025-01-15",
-        volume: 42,
-        issue: 1,
-        pages: "18-32",
-        views: 3214,
-        downloads: 1487,
-        citations: 12,
-        featured: true,
-        imageCorner: false
-    },
-    {
-        id: 2416,
-        type: "Original Article",
-        title: "Prevalence and Risk Factors of Metabolic Syndrome Among Healthcare Workers: A Multicenter Cross-Sectional Study from the Balkans",
-        authors: [
-            { name: "Hasan Balci", affiliation: "Department of Internal Medicine, Trakya University Faculty of Medicine, Edirne, Türkiye", orcid: "0000-0002-3345-6712" },
-            { name: "Dragana Milic", affiliation: "Faculty of Medicine, University of Nis, Nis, Serbia", orcid: "0000-0001-7823-4019" },
-            { name: "Nikolaos Papadopoulos", affiliation: "Department of Internal Medicine, Democritus University of Thrace, Alexandroupolis, Greece", orcid: "0000-0003-8921-3456" },
-            { name: "Adelina Brahimaj", affiliation: "Faculty of Medicine, University of Tirana, Tirana, Albania", orcid: "0000-0002-6190-5528" }
-        ],
-        abstract: "Background: Healthcare workers face unique occupational stressors including irregular shift patterns and sedentary behavior that may predispose them to metabolic derangements. Aims: To determine the prevalence of metabolic syndrome and identify associated risk factors among healthcare workers across four Balkan countries. Study Design: Multicenter cross-sectional study. Methods: A total of 1,236 healthcare workers from eight hospitals in Türkiye, Serbia, Greece, and Albania were enrolled between September 2023 and March 2024. Metabolic syndrome was defined according to the harmonized International Diabetes Federation criteria. Anthropometric measurements, fasting laboratory values, dietary habits, physical activity levels, and shift work patterns were recorded. Results: The overall prevalence of metabolic syndrome was 28.4% (95% confidence interval 25.9-31.0), with significant variation across countries (range 23.1-34.7%). Night shift work exceeding eight nights per month was independently associated with metabolic syndrome (odds ratio 1.78; 95% confidence interval 1.31-2.42; p<0.001). Physical inactivity, defined as fewer than 150 minutes of moderate exercise per week, was present in 62.3% of participants. Abdominal obesity was the most prevalent individual component (41.2%). Conclusion: Metabolic syndrome is highly prevalent among Balkan healthcare workers, with night shift work emerging as a significant modifiable risk factor. Targeted workplace wellness programs are urgently needed.",
-        keywords: ["metabolic syndrome", "healthcare workers", "shift work", "occupational health", "Balkans"],
-        doi: "10.4274/balkanmedj.galenos.2025.2416",
-        received: "2024-09-05",
-        accepted: "2024-12-14",
-        published: "2025-01-15",
-        volume: 42,
-        issue: 1,
-        pages: "33-41",
-        views: 1523,
-        downloads: 512,
-        citations: 3,
-        featured: false,
-        imageCorner: false
-    },
-    {
-        id: 2417,
-        type: "Case Report",
-        title: "Anti-NMDA Receptor Encephalitis Presenting as Acute Psychosis in an Adolescent Male: A Diagnostic Challenge",
-        authors: [
-            { name: "Selin Aktas", affiliation: "Department of Neurology, Ankara University Faculty of Medicine, Ankara, Türkiye", orcid: "0000-0003-6712-2089" },
-            { name: "Oguz Tanridag", affiliation: "Department of Neurology, Trakya University Faculty of Medicine, Edirne, Türkiye", orcid: "0000-0002-7845-1302" }
-        ],
-        abstract: "Anti-N-methyl-D-aspartate receptor encephalitis is an autoimmune condition that frequently mimics primary psychiatric disorders, leading to diagnostic delays. We report the case of a 16-year-old male who presented to the emergency department with acute-onset auditory hallucinations, disorganized behavior, and agitation over two days. Initial psychiatric evaluation suggested first-episode psychosis, and antipsychotic therapy was initiated. Over the following 72 hours the patient developed new-onset seizures, orofacial dyskinesias, and autonomic instability. Cerebrospinal fluid analysis revealed lymphocytic pleocytosis and the presence of anti-NMDA receptor antibodies. Brain magnetic resonance imaging showed subtle signal abnormalities in the medial temporal lobes bilaterally. Comprehensive tumor screening including testicular ultrasonography and whole-body computed tomography did not reveal an underlying neoplasm. The patient received first-line immunotherapy with intravenous methylprednisolone, intravenous immunoglobulin, and plasma exchange, followed by second-line therapy with rituximab. Over six months, he achieved substantial neurological recovery with mild residual cognitive deficits. This case underscores the importance of considering autoimmune encephalitis in the differential diagnosis of acute psychiatric presentations, particularly when atypical features such as seizures or movement disorders emerge.",
-        keywords: ["anti-NMDA receptor encephalitis", "autoimmune encephalitis", "psychosis", "adolescent", "immunotherapy"],
-        doi: "10.4274/balkanmedj.galenos.2025.2417",
-        received: "2024-10-02",
-        accepted: "2024-12-20",
-        published: "2025-01-15",
-        volume: 42,
-        issue: 1,
-        pages: "42-46",
-        views: 1105,
-        downloads: 378,
-        citations: 2,
-        featured: false,
-        imageCorner: false
-    },
-    {
-        id: 2418,
-        type: "Original Article",
-        title: "Thyroid Dysfunction and Glycemic Control in Patients with Type 2 Diabetes Mellitus: A Population-Based Study",
-        authors: [
-            { name: "Fatma Sahin", affiliation: "Department of Endocrinology and Metabolism, Dokuz Eylul University Faculty of Medicine, Izmir, Türkiye", orcid: "0000-0001-2398-7654" },
-            { name: "Georgi Dimitrov", affiliation: "Department of Endocrinology, Medical University of Plovdiv, Plovdiv, Bulgaria", orcid: "0000-0002-5634-8917" },
-            { name: "Aleksandar Jovanovic", affiliation: "Clinic of Endocrinology, Clinical Center of Serbia, Belgrade, Serbia", orcid: "0000-0003-1245-6780" }
-        ],
-        abstract: "Background: The interplay between thyroid dysfunction and glycemic regulation in type 2 diabetes mellitus remains an area of active investigation. Aims: To assess the prevalence of thyroid dysfunction and its impact on glycemic control in a large population of patients with type 2 diabetes mellitus. Study Design: Population-based cross-sectional study. Methods: We analyzed data from 3,842 adults with type 2 diabetes mellitus registered in three national diabetes registries in Türkiye, Bulgaria, and Serbia between January 2020 and December 2023. Thyroid function was assessed using serum thyroid-stimulating hormone and free thyroxine levels. Glycemic control was evaluated by hemoglobin A1c. Multiple logistic regression was used to identify associations between thyroid status and glycemic parameters. Results: Thyroid dysfunction was identified in 19.7% of the cohort: subclinical hypothyroidism in 12.4%, overt hypothyroidism in 3.8%, subclinical hyperthyroidism in 2.1%, and overt hyperthyroidism in 1.4%. Subclinical hypothyroidism was independently associated with hemoglobin A1c above 8% (odds ratio 1.56; 95% confidence interval 1.22-1.99; p<0.001) and dyslipidemia (odds ratio 1.43; 95% confidence interval 1.11-1.84; p=0.006). Female sex and body mass index above 30 were additional risk factors for concurrent thyroid dysfunction. Conclusion: Thyroid dysfunction, particularly subclinical hypothyroidism, is common among patients with type 2 diabetes and is associated with poorer glycemic control, supporting routine thyroid screening in this population.",
-        keywords: ["type 2 diabetes mellitus", "thyroid dysfunction", "subclinical hypothyroidism", "hemoglobin A1c", "glycemic control"],
-        doi: "10.4274/balkanmedj.galenos.2025.2418",
-        received: "2024-08-30",
-        accepted: "2024-12-02",
-        published: "2025-01-15",
-        volume: 42,
-        issue: 1,
-        pages: "47-55",
-        views: 1378,
-        downloads: 489,
-        citations: 4,
-        featured: false,
-        imageCorner: false
-    },
-    {
-        id: 2419,
-        type: "Brief Report",
-        title: "Rapid Detection of Carbapenem-Resistant Klebsiella pneumoniae in Bloodstream Infections Using a Novel Molecular Assay",
-        authors: [
-            { name: "Murat Acar", affiliation: "Department of Clinical Microbiology, Istanbul University Faculty of Medicine, Istanbul, Türkiye", orcid: "0000-0002-1890-4327" },
-            { name: "Tatjana Trajkovska", affiliation: "Institute of Microbiology and Parasitology, Faculty of Medicine, Ss. Cyril and Methodius University, Skopje, North Macedonia", orcid: "0000-0003-5678-1234" }
-        ],
-        abstract: "Background: Carbapenem-resistant Klebsiella pneumoniae bloodstream infections carry high mortality rates, and rapid identification is critical for timely targeted therapy. Aims: To evaluate the diagnostic performance of a novel multiplex polymerase chain reaction panel for rapid detection of carbapenem resistance determinants directly from positive blood cultures. Methods: We prospectively tested 312 positive blood culture bottles flagged with Gram-negative rods between April and October 2024 at two referral hospitals. The molecular panel targeting blaKPC, blaNDM, blaOXA-48, and blaVIM was compared with conventional culture and antimicrobial susceptibility testing as the reference standard. Results: Carbapenem-resistant Klebsiella pneumoniae was identified in 47 of 312 samples (15.1%). The molecular assay demonstrated overall sensitivity of 97.9% (46/47) and specificity of 99.2% (263/265) with a mean turnaround time of 1.8 hours compared with 48-72 hours for conventional methods. The most prevalent resistance gene was blaOXA-48 (55.3%), followed by blaNDM (29.8%) and blaKPC (14.9%). Conclusion: This rapid molecular assay provides accurate same-day identification of carbapenem resistance mechanisms in Klebsiella pneumoniae bloodstream infections, enabling earlier initiation of appropriate antimicrobial therapy.",
-        keywords: ["carbapenem resistance", "Klebsiella pneumoniae", "molecular diagnostics", "bloodstream infection"],
-        doi: "10.4274/balkanmedj.galenos.2025.2419",
-        received: "2024-10-18",
-        accepted: "2025-01-03",
-        published: "2025-02-01",
-        volume: 42,
-        issue: 1,
-        pages: "56-60",
-        views: 876,
-        downloads: 312,
-        citations: 1,
-        featured: false,
-        imageCorner: false
-    },
-    {
-        id: 2420,
-        type: "Editorial",
-        title: "Advancing Precision Medicine in the Balkans: Challenges, Opportunities, and a Call for Regional Collaboration",
-        authors: [
-            { name: "Ates Kara", affiliation: "Editor-in-Chief, Balkan Medical Journal; Department of Pediatric Infectious Diseases, Hacettepe University Faculty of Medicine, Ankara, Türkiye", orcid: "0000-0002-3256-1283" }
-        ],
-        abstract: "Precision medicine represents a paradigm shift in clinical care, leveraging genomic, proteomic, and metabolomic data to tailor therapeutic strategies to individual patients. While high-income countries have invested substantially in precision medicine infrastructure, the Balkan region faces unique challenges in implementing these approaches, including limited genomic sequencing capacity, fragmented healthcare systems, and inadequate bioinformatics workforce development. However, the Balkans also possess distinct advantages: ethnically diverse populations that can enrich pharmacogenomic databases, strong clinical training traditions, and a growing network of academic collaborations. This editorial discusses the current landscape of precision medicine across Southeastern Europe, highlights successful regional initiatives such as the Balkan Genomics Consortium, and proposes a roadmap for expanding access to genomic testing, building shared biobanks, and harmonizing regulatory frameworks. We argue that collaborative multicenter studies leveraging the region's demographic diversity can generate insights of global relevance while addressing local health priorities. The Balkan Medical Journal is committed to publishing high-quality translational research that bridges the gap between molecular discoveries and clinical application in our region.",
-        keywords: ["precision medicine", "genomics", "Balkans", "translational research"],
-        doi: "10.4274/balkanmedj.galenos.2025.2420",
-        received: "2024-12-01",
-        accepted: "2024-12-15",
-        published: "2025-01-15",
-        volume: 42,
-        issue: 1,
-        pages: "61-63",
-        views: 2890,
-        downloads: 723,
-        citations: 6,
-        featured: true,
-        imageCorner: false
-    },
-    {
-        id: 2421,
-        type: "Original Article",
-        title: "Effectiveness of a Nurse-Led Telemonitoring Program on Heart Failure Readmission Rates: A Randomized Controlled Trial",
-        authors: [
-            { name: "Zeynep Erdogan", affiliation: "Department of Cardiology, Gazi University Faculty of Medicine, Ankara, Türkiye", orcid: "0000-0001-4567-8910" },
-            { name: "Mirjana Lazic", affiliation: "Faculty of Medicine, University of Novi Sad, Novi Sad, Serbia", orcid: "0000-0002-8901-2345" },
-            { name: "Stoyan Petkov", affiliation: "Department of Cardiology, Medical University of Varna, Varna, Bulgaria", orcid: "0000-0003-2345-6789" }
-        ],
-        abstract: "Background: Heart failure readmissions represent a major burden on healthcare systems across the Balkans. Telemonitoring interventions have shown promise in reducing hospitalizations, but evidence from the region is scarce. Aims: To evaluate the effect of a structured nurse-led telemonitoring program on 90-day all-cause readmission rates in patients with heart failure with reduced ejection fraction. Study Design: Multicenter, open-label, randomized controlled trial. Methods: We randomized 326 patients with heart failure (ejection fraction below 40%) discharged from three university hospitals in Türkiye, Serbia, and Bulgaria between January 2023 and September 2024 to either a telemonitoring group (n=163) or standard care (n=163). The intervention included daily remote transmission of body weight, blood pressure, heart rate, and symptom questionnaires, with nurse-led triage and physician escalation protocols. Results: The 90-day all-cause readmission rate was 18.4% in the telemonitoring group versus 31.3% in the standard care group (relative risk 0.59; 95% confidence interval 0.41-0.84; p=0.003). The telemonitoring group also had fewer emergency department visits (0.42 vs. 0.78 per patient; p=0.01) and shorter mean length of stay during readmissions (5.1 vs. 7.8 days; p=0.02). Patient satisfaction scores were significantly higher in the intervention group. Conclusion: Nurse-led telemonitoring significantly reduces heart failure readmissions and may be a cost-effective strategy for the Balkan region.",
-        keywords: ["heart failure", "telemonitoring", "readmission", "randomized controlled trial", "nursing"],
-        doi: "10.4274/balkanmedj.galenos.2025.2421",
-        received: "2024-09-22",
-        accepted: "2025-01-08",
-        published: "2025-02-01",
-        volume: 42,
-        issue: 2,
-        pages: "64-73",
-        views: 1045,
-        downloads: 398,
-        citations: 2,
-        featured: false,
-        imageCorner: false
-    },
-    {
-        id: 2422,
-        type: "Original Article",
-        title: "Association Between Obstructive Sleep Apnea Severity and Pulmonary Hypertension in Patients with Chronic Obstructive Pulmonary Disease",
-        authors: [
-            { name: "Ali Toprak", affiliation: "Department of Pulmonology, Ege University Faculty of Medicine, Izmir, Türkiye", orcid: "0000-0002-7890-1234" },
-            { name: "Emre Sivri", affiliation: "Department of Pulmonology, Ege University Faculty of Medicine, Izmir, Türkiye", orcid: "0000-0001-3456-7890" },
-            { name: "Katerina Zdravkovska", affiliation: "University Clinic of Pulmonology and Allergology, Faculty of Medicine, Ss. Cyril and Methodius University, Skopje, North Macedonia", orcid: "0000-0003-4567-8901" }
-        ],
-        abstract: "Background: The overlap syndrome of obstructive sleep apnea and chronic obstructive pulmonary disease is associated with increased cardiovascular morbidity. Pulmonary hypertension is a known complication of both conditions, yet its relationship with obstructive sleep apnea severity in the overlap population is poorly characterized. Aims: To evaluate the association between obstructive sleep apnea severity as measured by the apnea-hypopnea index and pulmonary arterial pressure in patients with concurrent chronic obstructive pulmonary disease. Study Design: Cross-sectional observational study. Methods: We enrolled 189 patients with established chronic obstructive pulmonary disease (Global Initiative for Chronic Obstructive Lung Disease stages II-IV) who underwent diagnostic polysomnography for suspected obstructive sleep apnea. Pulmonary arterial systolic pressure was estimated by transthoracic echocardiography. Patients were stratified by obstructive sleep apnea severity. Results: Obstructive sleep apnea was confirmed in 142 patients (75.1%): mild in 38, moderate in 51, and severe in 53. Mean pulmonary arterial systolic pressure increased across severity groups (32.4, 37.8, and 44.6 mmHg respectively; p for trend <0.001). In multivariate regression, apnea-hypopnea index was independently associated with pulmonary arterial systolic pressure after adjusting for forced expiratory volume, body mass index, and smoking pack-years. Conclusion: Obstructive sleep apnea severity is independently associated with elevated pulmonary arterial pressure in chronic obstructive pulmonary disease patients, highlighting the importance of systematic sleep evaluation in this population.",
-        keywords: ["obstructive sleep apnea", "chronic obstructive pulmonary disease", "pulmonary hypertension", "overlap syndrome", "polysomnography"],
-        doi: "10.4274/balkanmedj.galenos.2025.2422",
-        received: "2024-09-10",
-        accepted: "2025-01-05",
-        published: "2025-02-01",
-        volume: 42,
-        issue: 2,
-        pages: "74-82",
-        views: 934,
-        downloads: 287,
-        citations: 1,
-        featured: false,
-        imageCorner: false
-    },
-    {
-        id: 2423,
-        type: "Case Report",
-        title: "Successful Treatment of Refractory Immune Thrombocytopenia with Eltrombopag in a Patient with Systemic Lupus Erythematosus: A Case Report and Review of the Literature",
-        authors: [
-            { name: "Deniz Ozen", affiliation: "Department of Rheumatology, Ankara University Faculty of Medicine, Ankara, Türkiye", orcid: "0000-0001-5678-9012" },
-            { name: "Milena Stankovic", affiliation: "Clinic of Rheumatology, Military Medical Academy, Belgrade, Serbia", orcid: "0000-0002-2345-6789" }
-        ],
-        abstract: "Immune thrombocytopenia is a well-recognized hematologic manifestation of systemic lupus erythematosus that can be refractory to standard immunosuppressive therapies. We describe a 34-year-old woman with an eight-year history of systemic lupus erythematosus who developed severe immune thrombocytopenia with a platelet count nadir of 8,000 per microliter. Her thrombocytopenia was refractory to high-dose corticosteroids, intravenous immunoglobulin, azathioprine, mycophenolate mofetil, and rituximab over a 14-month period. She experienced recurrent mucocutaneous bleeding and required multiple platelet transfusions. Eltrombopag, a thrombopoietin receptor agonist, was initiated at 50 mg daily and titrated to 75 mg daily. Within four weeks, her platelet count rose to 87,000 per microliter and stabilized above 100,000 per microliter by week eight. No thromboembolic complications occurred during 18 months of follow-up. Eltrombopag was well tolerated and allowed successful tapering of corticosteroids. We also review the current literature on thrombopoietin receptor agonists in lupus-associated immune thrombocytopenia, summarizing data from 23 published cases. This case supports eltrombopag as a viable option for refractory lupus-associated immune thrombocytopenia when conventional therapies fail.",
-        keywords: ["immune thrombocytopenia", "systemic lupus erythematosus", "eltrombopag", "thrombopoietin receptor agonist", "refractory"],
-        doi: "10.4274/balkanmedj.galenos.2025.2423",
-        received: "2024-10-15",
-        accepted: "2025-01-10",
-        published: "2025-02-01",
-        volume: 42,
-        issue: 2,
-        pages: "83-87",
-        views: 782,
-        downloads: 265,
-        citations: 1,
-        featured: false,
-        imageCorner: false
-    },
-    {
-        id: 2424,
-        type: "Original Article",
-        title: "Vitamin D Deficiency and Its Association with Disease Activity in Pediatric Patients with Juvenile Idiopathic Arthritis",
-        authors: [
-            { name: "Ozge Basaran", affiliation: "Department of Pediatric Rheumatology, Hacettepe University Faculty of Medicine, Ankara, Türkiye", orcid: "0000-0003-8765-4321" },
-            { name: "Nuray Aktay Ayaz", affiliation: "Department of Pediatric Rheumatology, Istanbul University Faculty of Medicine, Istanbul, Türkiye", orcid: "0000-0002-9876-5432" },
-            { name: "Marija Raleva", affiliation: "University Children's Hospital, Faculty of Medicine, Ss. Cyril and Methodius University, Skopje, North Macedonia", orcid: "0000-0001-6543-2109" }
-        ],
-        abstract: "Background: Vitamin D has immunomodulatory properties that may influence autoimmune disease activity, yet its role in juvenile idiopathic arthritis remains unclear. Aims: To investigate the prevalence of vitamin D deficiency and its relationship with disease activity in children with juvenile idiopathic arthritis. Study Design: Multicenter cross-sectional study. Methods: We enrolled 184 patients aged 2-16 years with juvenile idiopathic arthritis and 92 age- and sex-matched healthy controls from three pediatric rheumatology centers in Türkiye and North Macedonia. Serum 25-hydroxyvitamin D levels were measured in all participants. Disease activity was assessed using the Juvenile Arthritis Disease Activity Score (JADAS-27). Vitamin D deficiency was defined as a serum level below 20 ng/mL. Results: Vitamin D deficiency was significantly more prevalent in juvenile idiopathic arthritis patients than controls (58.7% vs. 33.7%; p<0.001). Patients with active disease (JADAS-27 above 10) had lower mean vitamin D levels compared with those in remission (14.2 vs. 23.8 ng/mL; p<0.001). In multivariable analysis, vitamin D deficiency was independently associated with higher JADAS-27 scores after adjusting for age, sex, disease subtype, and treatment. A negative correlation between vitamin D levels and erythrocyte sedimentation rate was observed. Conclusion: Vitamin D deficiency is highly prevalent among children with juvenile idiopathic arthritis and is associated with increased disease activity. Prospective studies are needed to determine whether supplementation improves clinical outcomes.",
-        keywords: ["juvenile idiopathic arthritis", "vitamin D deficiency", "disease activity", "pediatric rheumatology", "immunomodulation"],
-        doi: "10.4274/balkanmedj.galenos.2025.2424",
-        received: "2024-08-20",
-        accepted: "2024-12-28",
-        published: "2025-02-01",
-        volume: 42,
-        issue: 2,
-        pages: "88-96",
-        views: 1210,
-        downloads: 456,
-        citations: 3,
-        featured: false,
-        imageCorner: false
-    },
-    {
-        id: 2425,
-        type: "Review",
-        title: "Advances in Noninvasive Brain Stimulation for Treatment-Resistant Depression: A Narrative Review",
-        authors: [
-            { name: "Baris Metin", affiliation: "Department of Neurology, Erciyes University Faculty of Medicine, Kayseri, Türkiye", orcid: "0000-0002-1357-9024" },
-            { name: "Ivan Dimitrov", affiliation: "Department of Neurology and Neuroscience, Medical University of Varna, Varna, Bulgaria", orcid: "0000-0001-8024-1357" }
-        ],
-        abstract: "Treatment-resistant depression affects approximately one-third of patients with major depressive disorder and is associated with significant morbidity, functional impairment, and increased healthcare utilization. Noninvasive brain stimulation techniques, including repetitive transcranial magnetic stimulation, transcranial direct current stimulation, and theta burst stimulation, have emerged as promising therapeutic modalities for patients who do not respond to pharmacotherapy. This narrative review examines the current evidence base for these techniques, focusing on randomized controlled trials and meta-analyses published between 2018 and 2024. Repetitive transcranial magnetic stimulation applied to the left dorsolateral prefrontal cortex remains the most extensively studied approach, with response rates of 40-55% and remission rates of 25-35% in treatment-resistant populations. Accelerated protocols, particularly Stanford neuromodulation therapy, have demonstrated rapid onset of antidepressant effects with remission rates approaching 80% in initial studies, though replication in larger trials is ongoing. Transcranial direct current stimulation offers advantages of portability and low cost but has shown more modest effect sizes. We discuss optimal stimulation parameters, patient selection strategies, biomarker-guided targeting using neuroimaging, and the integration of brain stimulation with psychotherapy. Limitations of the current literature, including heterogeneous study designs and limited long-term follow-up data, are also addressed. Future directions emphasize personalized stimulation protocols guided by individual brain connectivity profiles.",
-        keywords: ["treatment-resistant depression", "transcranial magnetic stimulation", "brain stimulation", "neuromodulation", "theta burst stimulation"],
-        doi: "10.4274/balkanmedj.galenos.2025.2425",
-        received: "2024-07-15",
-        accepted: "2024-12-18",
-        published: "2025-02-01",
-        volume: 42,
-        issue: 2,
-        pages: "97-112",
-        views: 1672,
-        downloads: 834,
-        citations: 7,
-        featured: false,
-        imageCorner: false
-    },
-    {
-        id: 2426,
-        type: "Original Article",
-        title: "Machine Learning-Based Prediction of Acute Kidney Injury in Critically Ill Patients: A Multicenter Validation Study",
-        authors: [
-            { name: "Serkan Ocal", affiliation: "Department of Internal Medicine, Division of Intensive Care, Hacettepe University Faculty of Medicine, Ankara, Türkiye", orcid: "0000-0003-9012-3456" },
-            { name: "Emina Causevic", affiliation: "Clinic of Nephrology, Clinical Center University of Sarajevo, Sarajevo, Bosnia and Herzegovina", orcid: "0000-0001-2345-8901" },
-            { name: "Petar Nikolov", affiliation: "Department of Nephrology, Alexandrovska University Hospital, Medical University of Sofia, Sofia, Bulgaria", orcid: "0000-0002-5678-0123" },
-            { name: "Arda Guclu", affiliation: "Department of Biomedical Engineering, Middle East Technical University, Ankara, Türkiye", orcid: "0000-0003-7890-4567" }
-        ],
-        abstract: "Background: Acute kidney injury in critically ill patients is associated with prolonged intensive care unit stay and increased mortality. Early prediction may facilitate timely preventive interventions. Aims: To develop and externally validate a machine learning model for predicting acute kidney injury within 48 hours of intensive care unit admission. Study Design: Retrospective multicenter cohort study. Methods: We developed gradient boosting, random forest, and logistic regression models using data from 4,216 intensive care unit admissions at Hacettepe University Hospital (development cohort, 2019-2023). The models incorporated 42 clinical and laboratory variables available within the first six hours of admission. External validation was performed using 1,834 admissions from two hospitals in Bosnia and Herzegovina and Bulgaria. Acute kidney injury was defined using Kidney Disease: Improving Global Outcomes criteria. Results: In the development cohort, the gradient boosting model achieved an area under the receiver operating characteristic curve of 0.891 (95% confidence interval 0.874-0.908), outperforming random forest (0.863) and logistic regression (0.812). In external validation, the gradient boosting model maintained robust performance with an area under the curve of 0.854 (95% confidence interval 0.831-0.877). The top predictive features were baseline serum creatinine, urine output in the first six hours, lactate level, and vasopressor use. Conclusion: A machine learning approach using readily available clinical data can accurately predict acute kidney injury in critically ill patients across diverse Balkan healthcare settings.",
-        keywords: ["acute kidney injury", "machine learning", "intensive care unit", "prediction model", "gradient boosting"],
-        doi: "10.4274/balkanmedj.galenos.2025.2426",
-        received: "2024-09-28",
-        accepted: "2025-01-12",
-        published: "2025-02-01",
-        volume: 42,
-        issue: 2,
-        pages: "113-123",
-        views: 1534,
-        downloads: 621,
-        citations: 4,
-        featured: false,
-        imageCorner: false
-    },
-    {
-        id: 2427,
-        type: "Case Report",
-        title: "Nivolumab-Induced Myasthenia Gravis with Concurrent Myocarditis and Myositis: A Life-Threatening Triad",
-        authors: [
-            { name: "Kerem Erkalp", affiliation: "Department of Medical Oncology, Istanbul University Institute of Oncology, Istanbul, Türkiye", orcid: "0000-0002-4321-8765" },
-            { name: "Biljana Todorovic", affiliation: "Clinic of Neurology, Clinical Center of Serbia, Belgrade, Serbia", orcid: "0000-0001-8765-4321" },
-            { name: "Canan Ersoy", affiliation: "Department of Cardiology, Istanbul University Institute of Oncology, Istanbul, Türkiye", orcid: "0000-0003-5432-1098" }
-        ],
-        abstract: "Immune checkpoint inhibitors have revolutionized cancer treatment but can induce severe immune-related adverse events. The simultaneous occurrence of myasthenia gravis, myocarditis, and myositis, termed the triple M syndrome, is rare but carries a mortality rate exceeding 50%. We present a 62-year-old male with metastatic melanoma who developed progressive ptosis, diplopia, proximal limb weakness, and dyspnea 18 days after the second cycle of nivolumab. Initial evaluation revealed elevated creatine kinase (4,820 U/L) and troponin I (8.4 ng/mL). Electrocardiography showed new-onset atrioventricular block. Electromyography demonstrated a decremental response on repetitive nerve stimulation, and anti-acetylcholine receptor antibodies were positive. Cardiac magnetic resonance imaging confirmed active myocarditis with diffuse late gadolinium enhancement. The patient required mechanical ventilation for respiratory failure. Treatment included high-dose intravenous methylprednisolone, intravenous immunoglobulin, plasmapheresis, and mycophenolate mofetil. Nivolumab was permanently discontinued. After a prolonged 34-day intensive care unit stay, the patient gradually recovered and was discharged with mild residual weakness. At six-month follow-up, cardiac function normalized and myasthenic symptoms resolved. This case illustrates the critical importance of early recognition of this devastating triad in patients receiving immune checkpoint inhibitors.",
-        keywords: ["immune checkpoint inhibitor", "nivolumab", "myasthenia gravis", "myocarditis", "myositis", "immune-related adverse events"],
-        doi: "10.4274/balkanmedj.galenos.2025.2427",
-        received: "2024-11-05",
-        accepted: "2025-01-15",
-        published: "2025-02-01",
-        volume: 42,
-        issue: 2,
-        pages: "124-129",
-        views: 945,
-        downloads: 341,
-        citations: 2,
-        featured: false,
-        imageCorner: false
-    },
-    {
-        id: 2428,
-        type: "Brief Report",
-        title: "Seroprevalence of Hepatitis E Virus Antibodies Among Pregnant Women in Southeastern Türkiye: A Cross-Sectional Study",
-        authors: [
-            { name: "Gulden Sonmez", affiliation: "Department of Infectious Diseases and Clinical Microbiology, Dicle University Faculty of Medicine, Diyarbakir, Türkiye", orcid: "0000-0001-2340-5678" },
-            { name: "Ahmet Uludag", affiliation: "Department of Obstetrics and Gynecology, Dicle University Faculty of Medicine, Diyarbakir, Türkiye", orcid: "0000-0002-6789-0123" }
-        ],
-        abstract: "Background: Hepatitis E virus infection during pregnancy can lead to fulminant hepatic failure with high maternal mortality, particularly in developing regions. Seroprevalence data from southeastern Türkiye remain limited. Aims: To determine the seroprevalence of hepatitis E virus antibodies among pregnant women in Diyarbakir, southeastern Türkiye. Methods: Serum samples from 468 pregnant women attending antenatal clinics at Dicle University Hospital between January and August 2024 were tested for anti-hepatitis E virus immunoglobulin G and immunoglobulin M using enzyme-linked immunosorbent assays. Demographic and clinical data were collected via structured questionnaires. Results: Anti-hepatitis E virus immunoglobulin G was detected in 34 women (7.3%; 95% confidence interval 5.2-10.0). Anti-hepatitis E virus immunoglobulin M, indicating recent or active infection, was positive in 3 women (0.6%). Seroprevalence was significantly higher among women living in rural areas (11.2% vs. 5.4%; p=0.03) and those using untreated water sources (14.8% vs. 5.9%; p=0.008). No significant associations were found with age, parity, or trimester. All three immunoglobulin M-positive women had mildly elevated transaminases but no clinical hepatitis. Conclusion: Hepatitis E virus seroprevalence among pregnant women in southeastern Türkiye is notable and associated with rural residence and untreated water use, underscoring the need for improved water sanitation and potential screening strategies in this vulnerable population.",
-        keywords: ["hepatitis E virus", "seroprevalence", "pregnancy", "southeastern Türkiye"],
-        doi: "10.4274/balkanmedj.galenos.2025.2428",
-        received: "2024-10-25",
-        accepted: "2025-01-18",
-        published: "2025-02-01",
-        volume: 42,
-        issue: 2,
-        pages: "130-134",
-        views: 623,
-        downloads: 198,
-        citations: 0,
-        featured: false,
-        imageCorner: false
-    },
-    {
-        id: 2429,
-        type: "Letter to the Editor",
-        title: "Comment on the Diagnostic Utility of Procalcitonin in Differentiating Bacterial from Viral Meningitis in Children",
-        authors: [
-            { name: "Ilker Devrim", affiliation: "Department of Pediatric Infectious Diseases, Dr. Behcet Uz Children's Hospital, Izmir, Türkiye", orcid: "0000-0002-3456-7891" },
-            { name: "Adem Karbuz", affiliation: "Department of Pediatric Infectious Diseases, Istanbul University-Cerrahpasa Faculty of Medicine, Istanbul, Türkiye", orcid: "0000-0003-4567-8902" }
-        ],
-        abstract: "We read with great interest the recent article by Markovic et al. reporting on the diagnostic accuracy of serum procalcitonin in differentiating bacterial from viral meningitis in children. While the authors should be commended for their well-designed prospective study, we wish to raise several points for further discussion. First, the proposed procalcitonin cutoff of 0.5 ng/mL, while demonstrating high sensitivity (94.2%), may lack sufficient specificity in populations with high rates of concurrent bacterial infections, a common scenario in Balkan pediatric emergency departments during winter months. In our experience at two tertiary pediatric centers in Türkiye, co-existing urinary tract infections and pneumonia elevated procalcitonin levels in 18% of children ultimately diagnosed with viral meningitis. Second, the study excluded children who received antibiotics prior to lumbar puncture, yet in real-world practice up to 40% of children receive empirical antibiotics before cerebrospinal fluid sampling. We suggest that the diagnostic algorithm be validated in a pragmatic cohort that includes pretreated patients. Finally, combining procalcitonin with cerebrospinal fluid lactate may further improve diagnostic accuracy, as our preliminary data suggest an area under the curve of 0.96 for the combined panel.",
-        keywords: ["procalcitonin", "meningitis", "children", "diagnostic biomarker"],
-        doi: "10.4274/balkanmedj.galenos.2025.2429",
-        received: "2024-11-20",
-        accepted: "2025-01-22",
-        published: "2025-02-01",
-        volume: 42,
-        issue: 2,
-        pages: "135-136",
-        views: 412,
-        downloads: 134,
-        citations: 0,
-        featured: false,
-        imageCorner: false
-    },
-    {
-        id: 2430,
-        type: "Image Corner",
-        title: "Calcified Amorphous Tumor of the Heart: A Rare Intracardiac Mass Mimicking Myxoma",
-        authors: [
-            { name: "Tolga Sinan Guvenc", affiliation: "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye", orcid: "0000-0001-7890-2345" },
-            { name: "Gorkem Mungan", affiliation: "Department of Cardiovascular Surgery, Trakya University Faculty of Medicine, Edirne, Türkiye", orcid: "0000-0002-0123-4567" },
-            { name: "Irina Petrova", affiliation: "Department of Pathology, Medical University of Sofia, Sofia, Bulgaria", orcid: "0000-0003-3456-7890" }
-        ],
-        abstract: "A 58-year-old woman presented with recurrent episodes of transient ischemic attack. Transthoracic echocardiography revealed a 2.8 x 1.9 cm mobile, hyperechoic mass attached to the mitral valve annulus, initially suspected to be a left atrial myxoma. Cardiac magnetic resonance imaging demonstrated a non-enhancing, heavily calcified lesion with low signal intensity on both T1- and T2-weighted sequences, atypical for myxoma. The patient underwent successful surgical excision. Gross examination revealed a calcified, amorphous, non-encapsulated mass. Histopathological analysis showed nodular calcium deposits within a fibrinous matrix with scattered chronic inflammatory cells and no evidence of neoplastic tissue, confirming the diagnosis of calcified amorphous tumor. This rare entity accounts for fewer than 1% of primary cardiac tumors and should be considered in the differential diagnosis of intracardiac masses, particularly when imaging reveals heavy calcification. Surgical excision is the treatment of choice given the embolic risk, and recurrence is uncommon.",
-        keywords: ["calcified amorphous tumor", "intracardiac mass", "cardiac myxoma", "echocardiography", "cardiac surgery"],
-        doi: "10.4274/balkanmedj.galenos.2025.2430",
-        received: "2024-11-08",
-        accepted: "2025-01-06",
-        published: "2025-02-01",
-        volume: 42,
-        issue: 2,
-        pages: "137-138",
-        views: 1356,
-        downloads: 423,
-        citations: 1,
-        featured: false,
-        imageCorner: true,
-        image: "images/image-corner/cardiac-mass.svg"
-    }
+  // ============================================================
+  // VOLUME 43, ISSUE 2 (2026) - Published 2026-02-02
+  // ============================================================
+  {
+    id: 2801,
+    type: "Editorial",
+    title: "Musculoskeletal Ultrasound: From Diagnosis to Rehabilitation",
+    authors: [
+      {
+        name: "Deniz Palamar",
+        affiliation: "Department of Physical Therapy and Rehabilitation, Istanbul University-Cerrahpasa, Istanbul, Türkiye",
+        orcid: ""
+      }
+    ],
+    abstract: "No abstract available.",
+    keywords: ["musculoskeletal ultrasound", "rehabilitation", "diagnosis"],
+    doi: "10.4274/balkanmedj.galenos.2026.2026.060126",
+    received: "",
+    accepted: "",
+    published: "2026-02-02",
+    volume: 43,
+    issue: 2,
+    pages: "58-60",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2802,
+    type: "Invited Review",
+    title: "Transabdominal Surgical Management for Pouch Failure",
+    authors: [
+      {
+        name: "Mirac Ajredini",
+        affiliation: "Center for Advanced Inflammatory Bowel Disease Care, Northwell Health, New York, USA",
+        orcid: ""
+      },
+      {
+        name: "Arman Erkan",
+        affiliation: "Center for Advanced Inflammatory Bowel Disease Care, Northwell Health, New York, USA",
+        orcid: ""
+      },
+      {
+        name: "Amishi Desai",
+        affiliation: "Center for Advanced Inflammatory Bowel Disease Care, Northwell Health, New York, USA",
+        orcid: ""
+      },
+      {
+        name: "David Schwartzberg",
+        affiliation: "Center for Advanced Inflammatory Bowel Disease Care, Northwell Health, New York, USA",
+        orcid: ""
+      },
+      {
+        name: "Mehmet Gülmez",
+        affiliation: "Center for Advanced Inflammatory Bowel Disease Care, Northwell Health, New York, USA",
+        orcid: ""
+      },
+      {
+        name: "Feza H. Remzi",
+        affiliation: "Center for Advanced Inflammatory Bowel Disease Care, Northwell Health, New York, USA",
+        orcid: ""
+      }
+    ],
+    abstract: "Following restorative proctocolectomy with ileal pouch-anal anastomosis, 5-15% of patients experience pouch failure, most commonly due to septic, mechanical, or inflammatory complications. This review synthesizes current evidence on transabdominal surgical approaches, emphasizing standardized preoperative evaluation and nomenclature. A unified team for revisional pouch surgery is essential, involving specialized colorectal surgeons, gastroenterologists, radiologists, physician assistants, dietitians, IBD-specialized psychologists, wound-ostomy nurses, and patient support personnel.",
+    keywords: ["pouch failure", "ileal pouch-anal anastomosis", "inflammatory bowel disease", "colorectal surgery"],
+    doi: "10.4274/balkanmedj.galenos.2026.2025-11-230",
+    received: "",
+    accepted: "",
+    published: "2026-02-02",
+    volume: 43,
+    issue: 2,
+    pages: "61-68",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: true,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2803,
+    type: "Original Article",
+    title: "Single-Cell Analysis, Spatial Transcriptomics and Molecular Docking Unveil Potential Therapeutic Targets for Carotid Atherosclerosis",
+    authors: [
+      {
+        name: "Rongxing Qin",
+        affiliation: "Department of Neurology, The First Affiliated Hospital of Guangxi Medical University, Nanning, China",
+        orcid: ""
+      },
+      {
+        name: "Hongyu Xu",
+        affiliation: "Department of Neurology, Affiliated Minzu Hospital of Guangxi Medical University, Nanning, China",
+        orcid: ""
+      },
+      {
+        name: "Qingchun Qin",
+        affiliation: "Department of Neurology, Guangxi Medical University, Nanning, China",
+        orcid: ""
+      },
+      {
+        name: "Wei Xu",
+        affiliation: "Department of Neurology, Guangxi Medical University, Nanning, China",
+        orcid: ""
+      },
+      {
+        name: "Xinyu Lai",
+        affiliation: "First Affiliated Hospital, Guangxi Medical University, Nanning, China",
+        orcid: ""
+      },
+      {
+        name: "Li Chen",
+        affiliation: "First Affiliated Hospital, Guangxi Medical University, Nanning, China",
+        orcid: ""
+      }
+    ],
+    abstract: "Carotid atherosclerosis is a key cause of ischemic stroke strongly associated with increased risks of cardiovascular disease and vascular death. This study performs single-cell sequencing to dissect the cellular subpopulations in carotid atherosclerosis. Single-cell sequencing data were retrieved from the Gene Expression Omnibus. Multiple cellular subpopulations associated with carotid atherosclerosis were identified, engaging in intercellular communication via distinct signaling pathways. Cannabidiol exhibits strong binding affinities for the macrophage, endothelial, and vascular smooth muscle cell markers. Spatial transcriptomics revealed that ACTC1, AKR1C2, and FABP4 exhibit region-specific expression patterns within plaques, offering fresh insights into carotid atherosclerosis therapy.",
+    keywords: ["carotid atherosclerosis", "single-cell analysis", "spatial transcriptomics", "molecular docking"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-8-151",
+    received: "",
+    accepted: "",
+    published: "2026-02-02",
+    volume: 43,
+    issue: 2,
+    pages: "69-82",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: true,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2804,
+    type: "Original Article",
+    title: "Social Determinants of Health and Risk of Mortality in Adults with Gout or Hyperuricemia: Insights from the 1999-2018 NHANES",
+    authors: [
+      {
+        name: "Chongze Lin",
+        affiliation: "Department of Nephrology, Wenzhou TCM Hospital, Zhejiang Chinese Medical University, Wenzhou, China",
+        orcid: ""
+      },
+      {
+        name: "Sisi Shao",
+        affiliation: "Department of Nephrology, Wenzhou TCM Hospital, Wenzhou, China",
+        orcid: ""
+      },
+      {
+        name: "Qianjia Wu",
+        affiliation: "Department of Nephrology, Wenzhou TCM Hospital, Wenzhou, China",
+        orcid: ""
+      },
+      {
+        name: "Yongfu Zhu",
+        affiliation: "Department of Nephrology, Wenzhou TCM Hospital, Wenzhou, China",
+        orcid: ""
+      },
+      {
+        name: "Sisi Lin",
+        affiliation: "Department of Nephrology, Wenzhou TCM Hospital, Wenzhou, China",
+        orcid: ""
+      }
+    ],
+    abstract: "This study examined 6,560 U.S. adults with hyperuricemia and/or gout using 1999-2018 NHANES data. A composite score from eight socioeconomic indicators was developed. Lower socioeconomic scores correlated with increased mortality risk, demonstrating an inverse relationship between social determinants of health and both mortality outcomes, with stronger effects in participants under 60.",
+    keywords: ["gout", "hyperuricemia", "social determinants of health", "mortality", "NHANES"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-6-149",
+    received: "",
+    accepted: "",
+    published: "2026-02-02",
+    volume: 43,
+    issue: 2,
+    pages: "83-91",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: true,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2805,
+    type: "Original Article",
+    title: "Revisiting Wiedemann-Steiner Syndrome: Novel KMT2A Variants and Broadened Clinical Spectrum",
+    authors: [
+      { name: "Zehra Manav Yiğit", affiliation: "Department of Medical Genetics, Aydın Adnan Menderes University Faculty of Medicine, Aydın, Türkiye", orcid: "" },
+      { name: "Aydan Mengübaş Erbaş", affiliation: "Department of Medical Genetics, Aydın Adnan Menderes University Faculty of Medicine, Aydın, Türkiye", orcid: "" },
+      { name: "Ayberk Türkyılmaz", affiliation: "Department of Medical Genetics, Karadeniz Technical University Faculty of Medicine, Trabzon, Türkiye", orcid: "" },
+      { name: "İsmihan Merve Tekin", affiliation: "Genoks Genetic Disease Evaluation Center, Ankara, Türkiye", orcid: "" },
+      { name: "Elif Yılmaz Güleç", affiliation: "Department of Medical Genetics, İstanbul Medeniyet University Faculty of Medicine, İstanbul, Türkiye", orcid: "" },
+      { name: "Gülsüm Kayhan", affiliation: "Department of Medical Genetics, Gazi University Faculty of Medicine, Ankara, Türkiye", orcid: "" },
+      { name: "Aydeniz Aydın Gümüş", affiliation: "Clinic of Medical Genetics, University Health Sciences Türkiye, Başakşehir Çam and Sakura City Hospital, İstanbul, Türkiye", orcid: "" },
+      { name: "Esra Arslan Ateş", affiliation: "Department of Medical Genetics, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye", orcid: "" },
+      { name: "Eyyüp Üçtepe", affiliation: "Acıbadem Labgen Genetic Diagnosis Center, İstanbul, Türkiye", orcid: "" },
+      { name: "Kübra Ateş", affiliation: "Clinic of Medical Genetics, Sakarya Training and Research Hospital, Sakarya, Türkiye", orcid: "" },
+      { name: "Elvin Kazancıoğlu", affiliation: "Clinic of Medical Genetics, Adıyaman Training and Research Hospital, Adıyaman, Türkiye", orcid: "" },
+      { name: "Bülent Uyanık", affiliation: "Department of Medical Genetics, Bezmiâlem Vakıf University Faculty of Medicine, İstanbul, Türkiye", orcid: "" },
+      { name: "Sena Çetin", affiliation: "Department of Medical Genetics, İstanbul Medeniyet University Faculty of Medicine, İstanbul, Türkiye", orcid: "" },
+      { name: "Sahra Açır", affiliation: "Department of Medical Genetics, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye", orcid: "" },
+      { name: "Elif Sobu", affiliation: "Department of Pediatric Endocrinology, Üsküdar University Faculty of Medicine, İstanbul, Türkiye", orcid: "" },
+      { name: "İbrahim Kamer", affiliation: "Zatay Health Pediatric Neurology Clinic, İstanbul, Türkiye", orcid: "" },
+      { name: "Ahmet Yeşilyurt", affiliation: "Acıbadem Labgen Genetic Diagnosis Center, İstanbul, Türkiye", orcid: "" },
+      { name: "Alperhan Çebi", affiliation: "Department of Medical Genetics, Karadeniz Technical University Faculty of Medicine, Trabzon, Türkiye", orcid: "" },
+      { name: "Ahmet Anık", affiliation: "Department of Pediatric Endocrinology, Aydın Adnan Menderes University Faculty of Medicine, Aydın, Türkiye", orcid: "" },
+      { name: "Müge Ayanoğlu", affiliation: "Department of Pediatric Neurology, Aydın Adnan Menderes University Faculty of Medicine, Aydın, Türkiye", orcid: "" },
+      { name: "Gül Ünsel Bolat", affiliation: "Department of Child and Adolescent Psychiatry, Balıkesir University Faculty of Medicine, Balıkesir, Türkiye", orcid: "" },
+      { name: "Gökay Bozkurt", affiliation: "Department of Medical Genetics, Aydın Adnan Menderes University Faculty of Medicine, Aydın, Türkiye", orcid: "" },
+      { name: "Hilmi Bolat", affiliation: "Department of Medical Genetics, Balıkesir University Faculty of Medicine, Balıkesir, Türkiye", orcid: "" }
+    ],
+    abstract: "Wiedemann-Steiner syndrome is a rare autosomal dominant neurodevelopmental disorder caused by heterozygous pathogenic variants in KMT2A. This multicenter Turkish study examined 16 individuals from 15 families, identifying 15 distinct KMT2A variants—nine of which were novel. The research revealed prominent neurodevelopmental involvement including developmental delays, intellectual disability, and behavioral comorbidities. Growth hormone deficiency was documented in approximately half of tested patients. Additional findings encompassed ophthalmologic, cardiac, dental, skeletal, genitourinary, and immunological abnormalities. KMT2A functions as an umbrella gene within the chromatinopathy spectrum.",
+    keywords: ["Wiedemann-Steiner syndrome", "KMT2A", "chromatinopathy", "neurodevelopmental disorder", "rare disease"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-9-81",
+    received: "",
+    accepted: "",
+    published: "2026-02-02",
+    volume: 43,
+    issue: 2,
+    pages: "92-102",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2806,
+    type: "Clinical Image",
+    title: "External Manual Carotid Compression for Cavernous Sinus Fistula",
+    authors: [
+      {
+        name: "Xiao Ji",
+        affiliation: "",
+        orcid: ""
+      },
+      {
+        name: "Wei Su",
+        affiliation: "",
+        orcid: ""
+      },
+      {
+        name: "Shuai Si",
+        affiliation: "",
+        orcid: ""
+      }
+    ],
+    abstract: "",
+    keywords: ["cavernous sinus fistula", "carotid compression"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-5-157",
+    received: "",
+    accepted: "",
+    published: "2026-02-02",
+    volume: 43,
+    issue: 2,
+    pages: "103-104",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: true,
+    hasFullText: true
+  },
+  {
+    id: 2807,
+    type: "Clinical Image",
+    title: "Left Ventricular Cardiac Hydatid Cyst Presenting with Angina Pectoris",
+    authors: [
+      {
+        name: "Ferhat Karahan",
+        affiliation: "",
+        orcid: ""
+      },
+      {
+        name: "Cem Turan",
+        affiliation: "",
+        orcid: ""
+      },
+      {
+        name: "Murat Gök",
+        affiliation: "",
+        orcid: ""
+      },
+      {
+        name: "Atilla Reyhancan",
+        affiliation: "",
+        orcid: ""
+      }
+    ],
+    abstract: "",
+    keywords: ["cardiac hydatid cyst", "angina pectoris"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-7-265",
+    received: "",
+    accepted: "",
+    published: "2026-02-02",
+    volume: 43,
+    issue: 2,
+    pages: "105-106",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: true,
+    hasFullText: true
+  },
+  {
+    id: 2808,
+    type: "Scientific Letter",
+    title: "Secukinumab-Induced Interstitial Pneumonia in a Patient with Psoriasis",
+    authors: [
+      {
+        name: "Song Li",
+        affiliation: "",
+        orcid: ""
+      },
+      {
+        name: "Rong Dai",
+        affiliation: "",
+        orcid: ""
+      },
+      {
+        name: "Qiang Xu",
+        affiliation: "",
+        orcid: ""
+      }
+    ],
+    abstract: "",
+    keywords: ["secukinumab", "interstitial pneumonia", "psoriasis"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-8-43",
+    received: "",
+    accepted: "",
+    published: "2026-02-02",
+    volume: 43,
+    issue: 2,
+    pages: "107-108",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2809,
+    type: "Clinical Image",
+    title: "Lung Metastatic Ameloblastoma: A Hidden Cause of Pulmonary Nodules",
+    authors: [
+      {
+        name: "İlknur Karaman",
+        affiliation: "",
+        orcid: ""
+      },
+      {
+        name: "Buğra Hekimoğlu",
+        affiliation: "",
+        orcid: ""
+      },
+      {
+        name: "Mehmet Ali Çelik",
+        affiliation: "",
+        orcid: ""
+      },
+      {
+        name: "Dilek Erdem",
+        affiliation: "",
+        orcid: ""
+      },
+      {
+        name: "Şevket Özkaya",
+        affiliation: "",
+        orcid: ""
+      }
+    ],
+    abstract: "",
+    keywords: ["ameloblastoma", "lung metastasis", "pulmonary nodules"],
+    doi: "10.4274/balkanmedj.galenos.2026.2025-8-6",
+    received: "",
+    accepted: "",
+    published: "2026-02-02",
+    volume: 43,
+    issue: 2,
+    pages: "109-110",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: true,
+    hasFullText: true
+  },
+  {
+    id: 2810,
+    type: "Letter to the Editor",
+    title: "Clinical Impact of Febuxostat in HFpEF Versus HFrEF: Insights from a Prospective Cohort",
+    authors: [
+      {
+        name: "Farrukh Ahsaan",
+        affiliation: "",
+        orcid: ""
+      },
+      {
+        name: "Bisma Latif",
+        affiliation: "",
+        orcid: ""
+      },
+      {
+        name: "Zia Rehman",
+        affiliation: "",
+        orcid: ""
+      }
+    ],
+    abstract: "",
+    keywords: ["febuxostat", "heart failure", "HFpEF"],
+    doi: "10.4274/balkanmedj.galenos.2026.2025-12-198",
+    received: "",
+    accepted: "",
+    published: "2026-02-02",
+    volume: 43,
+    issue: 2,
+    pages: "111-112",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: false,
+    hasFullText: true
+  },
+
+  // ============================================================
+  // VOLUME 43, ISSUE 1 (2026) - Published 2026-01-02
+  // ============================================================
+  {
+    id: 2811,
+    type: "Editorial",
+    title: "News from the Balkan Medical Journal: Moving to Monthly Publication",
+    authors: [
+      {
+        name: "Servet Altay",
+        affiliation: "Editor-in-Chief, Balkan Medical Journal; Department of Cardiology, Trakya University School of Medicine, Edirne, Türkiye",
+        orcid: ""
+      }
+    ],
+    abstract: "No abstract available.",
+    keywords: ["editorial", "publication model", "monthly journal"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025.111125",
+    received: "",
+    accepted: "",
+    published: "2026-01-02",
+    volume: 43,
+    issue: 1,
+    pages: "1-2",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: true,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2812,
+    type: "Invited Review",
+    title: "Familial Mediterranean Fever: A Comprehensive Review of Pathogenesis, Genetics, and Epigenetic Regulation",
+    authors: [
+      {
+        name: "Serdal Ugurlu",
+        affiliation: "Division of Rheumatology, Department of Internal Medicine, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Ozgur Can Kilinc",
+        affiliation: "Division of Rheumatology, İstanbul University-Cerrahpaşa, İstanbul, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Ilker Karacan",
+        affiliation: "Department of Neurogenetics, Institute of Neurological Sciences, İstanbul University-Cerrahpaşa, İstanbul, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Kerem Parlar",
+        affiliation: "Division of Rheumatology, İstanbul University-Cerrahpaşa, İstanbul, Türkiye",
+        orcid: ""
+      }
+    ],
+    abstract: "Familial Mediterranean Fever (FMF) is the first described and most prevalent monogenic autoinflammatory periodic fever syndrome worldwide. The disease stems from pathogenic variants in the MEFV gene causing dysregulated innate immune responses and persistent hyperinflammation. Emerging research suggests epigenetic mechanisms—including DNA methylation, histone modifications, and microRNA regulation—may influence phenotypic variability, disease severity, and treatment response.",
+    keywords: ["Familial Mediterranean Fever", "MEFV gene", "pyrin inflammasome", "epigenetics", "autoinflammatory disease"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-11-133",
+    received: "",
+    accepted: "",
+    published: "2026-01-02",
+    volume: 43,
+    issue: 1,
+    pages: "3-14",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: true,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2813,
+    type: "Original Article",
+    title: "Depressive Symptoms and Risk of Hearing Loss Among Adults Aged 55 Years and Older: A Population-Based Study",
+    authors: [
+      {
+        name: "Erjie Xie",
+        affiliation: "Department of Otolaryngology-Head and Neck Surgery, West China Hospital, Sichuan University, Sichuan, China",
+        orcid: ""
+      },
+      {
+        name: "Yuedi Tang",
+        affiliation: "Department of Otolaryngology-Head and Neck Surgery, West China Hospital, Sichuan University, Sichuan, China",
+        orcid: ""
+      }
+    ],
+    abstract: "Depression and hearing loss commonly occur in the aging population and may arise from shared mechanisms. Adults aged 55 and older from three nationally representative study cohorts were included: the National Health and Nutrition Examination Survey, the Health and Retirement Study, and the English Longitudinal Study of Ageing. Cross-sectional analyses revealed that depression was significantly associated with higher pure-tone average thresholds. In pooled longitudinal analyses of 6,956 participants, individuals with baseline depression exhibited a higher incidence of hearing loss. Increasing (HR 1.48, 95% CI 1.09-2.21) and fluctuating (HR 1.25, 95% CI 1.12-1.39) depressive symptom trajectories were independent predictors of hearing loss, whereas decreasing trajectories indicated no significant association.",
+    keywords: ["depression", "hearing loss", "longitudinal studies", "aging", "cohort studies"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-6-78",
+    received: "",
+    accepted: "",
+    published: "2026-01-02",
+    volume: 43,
+    issue: 1,
+    pages: "15-24",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: true,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2814,
+    type: "Original Article",
+    title: "A Multimodular AI Algorithm for Automated Assessment of Left Ventricular Function in Ischemic Heart Disease: Ejection Fraction, Wall Motion, and Regional Myocardial Segmentation",
+    authors: [
+      {
+        name: "Sidem Gül",
+        affiliation: "Department of Medicine, Recep Tayyip Erdoğan University, Rize, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Reşit Taşdemir",
+        affiliation: "Software Engineering, Malatya Turgut Özal University, Malatya, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Beyza Açıkgöz",
+        affiliation: "Software Engineering, Malatya Turgut Özal University, Malatya, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Hakan Duman",
+        affiliation: "Department of Cardiology, Recep Tayyip Erdoğan University, Rize, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Hamza Hodzic",
+        affiliation: "Turkish Red Crescent, Kastamonu, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Sena Köker",
+        affiliation: "İstanbul University, İstanbul, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Nazlı Erdemir",
+        affiliation: "Biomedical Engineering, Kocaeli University, Kocaeli, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Mehmet Kıvrak",
+        affiliation: "Department of Biostatistics, Recep Tayyip Erdoğan University, Rize, Türkiye",
+        orcid: ""
+      }
+    ],
+    abstract: "Ischemic heart damage reduces the pumping efficiency of the heart by affecting the left ventricular ejection fraction and causing wall motion abnormality. This study developed an AI algorithm with two modules for automatic LVEF calculation and wall motion abnormality detection from 2D transthoracic echocardiography images. The LVEF module showed strong correlation with cardiologist measurements (r = 0.71, p < 0.001). The wall motion module using ResNet50 achieved 95% accuracy.",
+    keywords: ["artificial intelligence", "echocardiography", "left ventricular ejection fraction", "wall motion abnormality", "deep learning"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-8-160",
+    received: "",
+    accepted: "",
+    published: "2026-01-02",
+    volume: 43,
+    issue: 1,
+    pages: "25-37",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2815,
+    type: "Original Article",
+    title: "Association Between Hemoglobin Glycation Index and Delirium Risk in Sepsis Patients in the Intensive Care Unit",
+    authors: [
+      {
+        name: "Miao Shi",
+        affiliation: "Department of Emergency, Peking University People's Hospital, Beijing, China",
+        orcid: ""
+      },
+      {
+        name: "Hu Sun",
+        affiliation: "Department of Respiratory ICU, First Affiliated Hospital of Xinjiang Medical University, Urumqi, China",
+        orcid: ""
+      },
+      {
+        name: "Yong Ma",
+        affiliation: "Department of Emergency, Peking University People's Hospital, Beijing, China",
+        orcid: ""
+      },
+      {
+        name: "Cheng Chi",
+        affiliation: "Department of Emergency, Peking University People's Hospital, Beijing, China",
+        orcid: ""
+      }
+    ],
+    abstract: "Sepsis-associated encephalopathy is a prevalent complication in the sepsis population, especially in patients in the intensive care unit. The relationship between the hemoglobin glycation index (HGI) and delirium in sepsis patients is not yet clearly established. This retrospective cohort analysis of 3,744 sepsis patients employed logistic regression, Cox proportional hazard models, and restricted cubic spline analyses. Delirium risk in the lowest HGI group was 67.7% higher than in the middle tertile. A U-shaped relationship emerged between HGI and delirium occurrence, with an inflection point at HGI = -0.34, positioning HGI as a potential prognostic biomarker.",
+    keywords: ["hemoglobin glycation index", "delirium", "sepsis", "intensive care unit"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-8-211",
+    received: "",
+    accepted: "",
+    published: "2026-01-02",
+    volume: 43,
+    issue: 1,
+    pages: "38-47",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2816,
+    type: "Letter to the Editor",
+    title: "YOLOv11 Model for PCOS Diagnosis: A Significant Contribution with Clinical Insights",
+    authors: [
+      {
+        name: "Giovanni Mondillo",
+        affiliation: "",
+        orcid: ""
+      }
+    ],
+    abstract: "",
+    keywords: ["PCOS", "YOLOv11", "artificial intelligence", "diagnosis"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-8-295",
+    received: "",
+    accepted: "",
+    published: "2026-01-02",
+    volume: 43,
+    issue: 1,
+    pages: "52-53",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2817,
+    type: "Letter to the Editor",
+    title: "In Response to: YOLOv11 Model for PCOS Diagnosis: A Significant Contribution with Clinical Insights",
+    authors: [
+      {
+        name: "Bolin Zhao",
+        affiliation: "",
+        orcid: ""
+      }
+    ],
+    abstract: "",
+    keywords: ["PCOS", "YOLOv11", "artificial intelligence"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-8-295.answer",
+    received: "",
+    accepted: "",
+    published: "2026-01-02",
+    volume: 43,
+    issue: 1,
+    pages: "54-55",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2818,
+    type: "Clinical Image",
+    title: "Not All Emboli are Thrombotic: The Silent Cement to the Lungs",
+    authors: [
+      {
+        name: "Çağlar Kaya",
+        affiliation: "",
+        orcid: ""
+      }
+    ],
+    abstract: "",
+    keywords: ["pulmonary embolism", "cement embolism"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-10-141",
+    received: "",
+    accepted: "",
+    published: "2026-01-02",
+    volume: 43,
+    issue: 1,
+    pages: "56",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: true,
+    hasFullText: true
+  },
+
+  // ============================================================
+  // VOLUME 42, ISSUE 6 (2025) - Published 2025-10-31
+  // ============================================================
+  {
+    id: 2819,
+    type: "Editorial",
+    title: "Cannabinoids: Medicine or Poison",
+    authors: [
+      {
+        name: "Yasemin Karal",
+        affiliation: "Department of Pediatrics, Trakya University School of Medicine, Edirne, Türkiye",
+        orcid: ""
+      }
+    ],
+    abstract: "No abstract available.",
+    keywords: ["cannabinoids", "medicine", "toxicology"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025.290925",
+    received: "",
+    accepted: "",
+    published: "2025-10-31",
+    volume: 42,
+    issue: 6,
+    pages: "491-492",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2820,
+    type: "Editorial",
+    title: "Factor XI/XIa Inhibitors: Promising Agents for the Secondary Prevention of Ischemic Stroke",
+    authors: [
+      {
+        name: "Murat Mert Atmaca",
+        affiliation: "Clinic of Neurology, Sultan 2. Abdülhamid Han Training and Research Hospital, İstanbul, Türkiye",
+        orcid: ""
+      }
+    ],
+    abstract: "No abstract available.",
+    keywords: ["factor XI", "ischemic stroke", "anticoagulation"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025.160925",
+    received: "",
+    accepted: "",
+    published: "2025-10-31",
+    volume: 42,
+    issue: 6,
+    pages: "493-494",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2821,
+    type: "Original Article",
+    title: "Uric Acid-Lowering Therapy with Febuxostat in Patients with Chronic Heart Failure and Hyperuricemia: A Prospective and Observational Cohort Study",
+    authors: [
+      {
+        name: "Jiahan Ke",
+        affiliation: "Department of Cardiology, Shanghai Ninth People's Hospital, Shanghai Jiaotong University, Shanghai, China",
+        orcid: ""
+      },
+      {
+        name: "Xiaohan Qiu",
+        affiliation: "Department of Cardiology, Shanghai Ninth People's Hospital, Shanghai, China",
+        orcid: ""
+      },
+      {
+        name: "Min Wang",
+        affiliation: "Department of Cardiology, Shanghai Ninth People's Hospital, Shanghai, China",
+        orcid: ""
+      },
+      {
+        name: "Huasu Zeng",
+        affiliation: "Department of Cardiology, Shanghai Ninth People's Hospital, Shanghai, China",
+        orcid: ""
+      },
+      {
+        name: "Changqian Wang",
+        affiliation: "Department of Cardiology, Shanghai Ninth People's Hospital, Shanghai, China",
+        orcid: ""
+      },
+      {
+        name: "Junfeng Zhang",
+        affiliation: "Department of Cardiology, Shanghai Ninth People's Hospital, Shanghai, China",
+        orcid: ""
+      },
+      {
+        name: "Huafang Zhu",
+        affiliation: "Shanghai Huangpu District Geriatric Care Hospital, Shanghai, China",
+        orcid: ""
+      },
+      {
+        name: "Jun Gu",
+        affiliation: "Department of Cardiology, Shanghai Ninth People's Hospital, Shanghai, China",
+        orcid: ""
+      }
+    ],
+    abstract: "Hyperuricemia is associated with poor clinical outcomes in several cardiovascular diseases, including heart failure. This prospective observational cohort study followed 2,005 patients for five years. Febuxostat significantly reduced primary endpoints in HFpEF patients (HR 0.744; 95% CI 0.589-0.939), but showed no benefit in HFrEF/HFmrEF cohorts. Greatest benefits appeared in HFpEF patients with elevated BNP and serum uric acid levels.",
+    keywords: ["febuxostat", "uric acid", "heart failure", "HFpEF", "hyperuricemia"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-6-168",
+    received: "",
+    accepted: "",
+    published: "2025-10-31",
+    volume: 42,
+    issue: 6,
+    pages: "495-505",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: true,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2822,
+    type: "Systematic Review",
+    title: "Epidemiological and Clinical Characteristics of Urogenital System Cystic Echinococcosis: A Systematic Review",
+    authors: [
+      {
+        name: "Habibe Tülin Elmaslar Mert",
+        affiliation: "Department of Infectious Diseases, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Mehmet Solak",
+        affiliation: "Department of Medical Microbiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Pelin Sarı Serin",
+        affiliation: "Department of Medical Microbiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Nermin Şakru",
+        affiliation: "Department of Medical Microbiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        orcid: ""
+      }
+    ],
+    abstract: "Echinococcus granulosus sensu lato is globally distributed and highly prevalent in parts of South America, the Mediterranean, Eastern Europe, the Middle East, Africa, China, and Australia. This systematic review following PRISMA guidelines analyzed 490 studies comprising 698 confirmed cases. Of the cases examined, 80.4% involved the urinary system, 15.8% the female genital system, and 3.9% the male genital system. The kidney was most commonly affected (68.5%), followed by the adrenal gland (9.2%), ovary (7.3%), and uterus (3.4%). Radiological imaging, especially ultrasonography, was the primary diagnostic method. Notably, 134 of 155 surgical patients were initially misdiagnosed with either malignant or benign tumors.",
+    keywords: ["cystic echinococcosis", "urogenital system", "systematic review", "parasitology"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-7-81",
+    received: "",
+    accepted: "",
+    published: "2025-10-31",
+    volume: 42,
+    issue: 6,
+    pages: "506-515",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2823,
+    type: "Original Article",
+    title: "Enhancing Diagnostic Accuracy in Bethesda III Thyroid Nodules: The Predictive Value of Serum IL-17A and Calprotectin",
+    authors: [
+      {
+        name: "Muzaffer Serdar Deniz",
+        affiliation: "Department of Endocrinology, Karabük University Training and Research Hospital, Karabük, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Fatih Karataş",
+        affiliation: "Department of Medical Oncology, Karabük University Training and Research Hospital, Karabük, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Öykü Uludağ",
+        affiliation: "Department of Internal Medicine, Eskişehir Osmangazi University Faculty of Medicine, Eskişehir, Türkiye",
+        orcid: ""
+      }
+    ],
+    abstract: "Thyroid nodules are common in clinical practice, with malignancy detected in about 5% of cases. This study evaluated preoperative serum IL-17A and calprotectin as biomarkers in 76 patients with Bethesda III nodules. Results showed significantly elevated IL-17A and calprotectin in malignant cases (p < 0.001 and p = 0.038). ROC analysis demonstrated IL-17A AUC of 0.733 and calprotectin AUC of 0.639.",
+    keywords: ["thyroid nodules", "Bethesda III", "IL-17A", "calprotectin", "biomarkers"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-7-125",
+    received: "",
+    accepted: "",
+    published: "2025-10-31",
+    volume: 42,
+    issue: 6,
+    pages: "526-537",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2824,
+    type: "Original Article",
+    title: "Fat Mass and Obesity-Associated Protein-Mediated Adipogenic Differentiation of Bone Marrow Mesenchymal Stem Cells Promotes Chemotherapy Resistance in Acute Myeloid Leukemia",
+    authors: [
+      {
+        name: "Peng Zhipeng",
+        affiliation: "",
+        orcid: ""
+      },
+      {
+        name: "Kong Lixia",
+        affiliation: "",
+        orcid: ""
+      },
+      {
+        name: "Cai Ling",
+        affiliation: "",
+        orcid: ""
+      }
+    ],
+    abstract: "",
+    keywords: ["acute myeloid leukemia", "FTO protein", "chemotherapy resistance", "bone marrow mesenchymal stem cells"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-7-150",
+    received: "",
+    accepted: "",
+    published: "2025-10-31",
+    volume: 42,
+    issue: 6,
+    pages: "538-546",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2825,
+    type: "Original Article",
+    title: "Risk Prediction of Low Bone Density in Elderly Patients with Supervised Machine Learning Algorithms",
+    authors: [
+      {
+        name: "Eda Karaismailoğlu",
+        affiliation: "Department of Medical Informatics, University of Health Sciences Türkiye, Gülhane Faculty of Medicine, Ankara, Türkiye",
+        orcid: ""
+      },
+      {
+        name: "Serkan Karaismailoğlu",
+        affiliation: "Department of Physiology, Hacettepe University Faculty of Medicine, Ankara, Türkiye",
+        orcid: ""
+      }
+    ],
+    abstract: "Low bone mineral density is a common age-related condition elevating fracture and mortality risk. This study evaluated eleven machine learning models using NHANES data from 12,108 participants aged 50+. The Extra Trees classifier achieved the best performance with 76.7% accuracy and 0.85 AUC. The 14 most important predictors included sex, age, BMI, race, and serum uric acid.",
+    keywords: ["machine learning", "bone density", "osteoporosis", "risk prediction", "NHANES"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-8-125",
+    received: "",
+    accepted: "",
+    published: "2025-10-31",
+    volume: 42,
+    issue: 6,
+    pages: "547-556",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: false,
+    hasFullText: true
+  },
+  {
+    id: 2826,
+    type: "Letter to the Editor",
+    title: "Can SGLT2 Inhibitors Prevent Atrial Fibrillation in HFpEF?",
+    authors: [
+      {
+        name: "Bülent Özlek",
+        affiliation: "",
+        orcid: ""
+      }
+    ],
+    abstract: "",
+    keywords: ["SGLT2 inhibitors", "atrial fibrillation", "HFpEF"],
+    doi: "10.4274/balkanmedj.galenos.2025.2025-6-248",
+    received: "",
+    accepted: "",
+    published: "2025-10-31",
+    volume: 42,
+    issue: 6,
+    pages: "582-583",
+    views: 0,
+    downloads: 0,
+    citations: 0,
+    featured: false,
+    imageCorner: false,
+    hasFullText: true
+  }
 ];

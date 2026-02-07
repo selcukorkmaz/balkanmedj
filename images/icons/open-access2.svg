@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Open shackle -->
+  <path d="M19 21V12a5 5 0 0 1 10 0v5" stroke="#F97316" stroke-width="3" stroke-linecap="round"/>
+  <!-- Lock body -->
+  <circle cx="24" cy="30" r="10" stroke="#F97316" stroke-width="3"/>
+  <!-- Keyhole (donut shape - transparent center) -->
+  <path fill-rule="evenodd" d="M19.5 30a4.5 4.5 0 0 1 9 0 4.5 4.5 0 0 1-9 0ZM22 30a2 2 0 0 0 4 0 2 2 0 0 0-4 0Z" fill="#F97316"/>
+</svg>

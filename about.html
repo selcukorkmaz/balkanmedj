@@ -12,17 +12,7 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
-        }
-      }
-    }
-  </script>
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-white text-gray-900 font-sans">
 
@@ -181,10 +171,10 @@
               <h2 class="text-2xl font-bold text-gray-900 mb-4">Aims and Scope</h2>
               <div class="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-4">
                 <p>
-                  <strong>Balkan Medical Journal</strong> is a Q1 general medicine journal published by Trakya University, Edirne, Türkiye. Since its founding in 1984, the journal has been committed to advancing medical knowledge and practice across all areas of medicine.
+                  <strong>Balkan Medical Journal</strong> is a Q1 general medicine journal published by Trakya University, Edirne, Türkiye. Since its founding in 1979, the journal has been committed to advancing medical knowledge and practice across all areas of medicine.
                 </p>
                 <p>
-                  The journal covers a broad spectrum of medical disciplines, including but not limited to internal medicine, surgery, pediatrics, obstetrics and gynecology, neurology, cardiology, oncology, infectious diseases, public health, and basic medical sciences. We welcome original research articles, reviews, case reports, editorials, letters to the editor, and image corner submissions.
+                  The journal publishes peer-reviewed research across medical disciplines, emphasizing adherence to the Recommendations for the Conduct, Reporting, Editing and Publication of scholarly work in medical journals. We welcome original articles, brief reports, invited review articles, consensus reports, clinical images, letters to the editor, scientific letters, editorial comments, and health policy articles. The journal does not accept case report type manuscripts.
                 </p>
                 <p>
                   Balkan Medical Journal operates under a rigorous peer-review process, ensuring that all published work meets the highest standards of scientific quality and ethical conduct. Each submission undergoes evaluation by expert reviewers in the relevant field before an editorial decision is reached.
@@ -270,7 +260,11 @@
                   <tbody>
                     <tr class="border-b border-gray-200">
                       <td class="px-6 py-4 font-medium text-gray-900 bg-gray-50 w-1/3">Frequency</td>
-                      <td class="px-6 py-4 text-gray-700">Bimonthly (6 issues per year)</td>
+                      <td class="px-6 py-4 text-gray-700">Monthly (12 issues per year, online-only starting 2026)</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                      <td class="px-6 py-4 font-medium text-gray-900 bg-gray-50 w-1/3">ISSN</td>
+                      <td class="px-6 py-4 text-gray-700">2146-3123</td>
                     </tr>
                     <tr class="border-b border-gray-200">
                       <td class="px-6 py-4 font-medium text-gray-900 bg-gray-50 w-1/3">E-ISSN</td>
@@ -475,5 +469,9 @@
 
   <!-- Scripts -->
   <script src="js/main.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","logo":"https://balkanmedicaljournal.org/images/logo.png","publisher":{"@type":"Organization","name":"Trakya University"},"address":{"@type":"PostalAddress","addressLocality":"Edirne","addressCountry":"TR","streetAddress":"Trakya University Faculty of Medicine, Balkan Yerleşkesi, 22030"}},{"@type":"WebSite","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","potentialAction":{"@type":"SearchAction","target":"https://balkanmedicaljournal.org/current-issue.html?q={search_term_string}","query-input":"required name=search_term_string"}}]}
+</script>
+
 </body>
 </html>

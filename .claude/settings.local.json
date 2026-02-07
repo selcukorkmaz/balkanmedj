@@ -8,7 +8,21 @@
       "Bash(grep:*)",
       "Bash(python3:*)",
       "Bash(py:*)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(xargs:*)",
+      "Bash(wc:*)",
+      "Bash(sips:*)",
+      "Bash(pip3 install:*)",
+      "Bash(npm install:*)",
+      "Bash(curl:*)",
+      "Bash(chmod:*)",
+      "Bash(./tailwindcss:*)",
+      "Bash(rg:*)",
+      "WebFetch(domain:www.balkanmedicaljournal.org)",
+      "WebFetch(domain:pubmed.ncbi.nlm.nih.gov)",
+      "Bash(kill:*)",
+      "Bash(pkill:*)",
+      "mcp__ide__getDiagnostics"
     ]
   }
 }

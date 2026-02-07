@@ -8,13 +8,7 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
-    }
-  </script>
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-white text-gray-900 font-sans">
 
@@ -183,6 +177,7 @@
   </button>
 
   <script src="js/data/articles.js"></script>
+  <script src="js/data-loader.js"></script>
   <script src="js/main.js"></script>
   <script>
     (function () {
@@ -200,11 +195,13 @@
       }
 
       aipArticles.forEach(function (article) {
-        var typeColor = article.type === 'Review' ? 'bg-purple-100 text-purple-700' :
-                        article.type === 'Case Report' ? 'bg-amber-100 text-amber-700' :
+        var typeColor = article.type === 'Review' || article.type === 'Invited Review' ? 'bg-purple-100 text-purple-700' :
+                        article.type === 'Editorial' ? 'bg-blue-100 text-blue-700' :
+                        article.type === 'Systematic Review' ? 'bg-indigo-100 text-indigo-700' :
                         article.type === 'Brief Report' ? 'bg-cyan-100 text-cyan-700' :
                         article.type === 'Letter to the Editor' ? 'bg-pink-100 text-pink-700' :
-                        article.type === 'Image Corner' ? 'bg-indigo-100 text-indigo-700' :
+                        article.type === 'Clinical Image' ? 'bg-amber-100 text-amber-700' :
+                        article.type === 'Scientific Letter' ? 'bg-orange-100 text-orange-700' :
                         'bg-teal-100 text-teal-700';
 
         container.innerHTML += '<article class="article-card bg-white rounded-xl border border-gray-200 p-6">' +
@@ -215,7 +212,10 @@
           '<h3 class="text-lg font-semibold text-gray-900 mb-2 leading-snug">' +
             '<a href="article.html?id=' + article.id + '" class="hover:text-teal-700 transition-colors">' + article.title + '</a>' +
           '</h3>' +
-          '<p class="text-sm text-gray-500 mb-3">' + article.authors.map(function (a) { return a.name; }).join(', ') + '</p>' +
+          '<p class="text-sm text-gray-500 mb-3">' + article.authors.map(function (a) {
+            var orcidLink = a.orcid ? ' <a href="https://orcid.org/' + a.orcid + '" target="_blank" rel="noopener" title="ORCID: ' + a.orcid + '" class="inline-flex align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" class="inline-block"><path fill="#A6CE39" d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z"/><path fill="#fff" d="M86.3,186.2H70.9V79.1h15.4v48.4V186.2z"/><path fill="#fff" d="M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z"/><path fill="#fff" d="M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z"/></svg></a>' : '';
+            return a.name + orcidLink;
+          }).join(', ') + '</p>' +
           '<p class="text-sm text-gray-400 mb-4">' + (article.abstract || '').substring(0, 200) + '...</p>' +
           '<div class="flex items-center justify-between text-xs text-gray-400 pt-4 border-t border-gray-100">' +
             '<span>DOI: <a href="https://doi.org/' + article.doi + '" class="text-teal-700 hover:underline">' + article.doi + '</a></span>' +
@@ -225,5 +225,9 @@
       });
     })();
   </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","logo":"https://balkanmedicaljournal.org/images/logo.png","publisher":{"@type":"Organization","name":"Trakya University"},"address":{"@type":"PostalAddress","addressLocality":"Edirne","addressCountry":"TR","streetAddress":"Trakya University Faculty of Medicine, Balkan Yerleşkesi, 22030"}},{"@type":"WebSite","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","potentialAction":{"@type":"SearchAction","target":"https://balkanmedicaljournal.org/current-issue.html?q={search_term_string}","query-input":"required name=search_term_string"}}]}
+</script>
+
 </body>
 </html>

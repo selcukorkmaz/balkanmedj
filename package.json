@@ -1,0 +1,15 @@
+{
+  "name": "balkan-medical-journal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Balkan Medical Journal website",
+  "scripts": {
+    "build:css": "npx tailwindcss -i css/input.css -o css/style.css --minify",
+    "watch:css": "npx tailwindcss -i css/input.css -o css/style.css --watch",
+    "build:css:standalone": "./tailwindcss -i css/input.css -o css/style.css --minify",
+    "watch:css:standalone": "./tailwindcss -i css/input.css -o css/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

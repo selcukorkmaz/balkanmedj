@@ -1,0 +1,327 @@
+[
+  {
+    "id": 2811,
+    "type": "Editorial",
+    "title": "News from the Balkan Medical Journal: Moving to Monthly Publication",
+    "authors": [
+      {
+        "name": "Servet Altay",
+        "affiliation": "Editor-in-Chief, Balkan Medical Journal; Department of Cardiology, Trakya University School of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "No abstract available.",
+    "keywords": [
+      "editorial",
+      "publication model",
+      "monthly journal"
+    ],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025.111125",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-02",
+    "volume": 43,
+    "issue": 1,
+    "pages": "1-2",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": true,
+    "imageCorner": false,
+    "hasFullText": true
+  },
+  {
+    "id": 2812,
+    "type": "Invited Review",
+    "title": "Familial Mediterranean Fever: A Comprehensive Review of Pathogenesis, Genetics, and Epigenetic Regulation",
+    "authors": [
+      {
+        "name": "Serdal Ugurlu",
+        "affiliation": "Division of Rheumatology, Department of Internal Medicine, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ozgur Can Kilinc",
+        "affiliation": "Division of Rheumatology, İstanbul University-Cerrahpaşa, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ilker Karacan",
+        "affiliation": "Department of Neurogenetics, Institute of Neurological Sciences, İstanbul University-Cerrahpaşa, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Kerem Parlar",
+        "affiliation": "Division of Rheumatology, İstanbul University-Cerrahpaşa, İstanbul, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Familial Mediterranean Fever (FMF) is the first described and most prevalent monogenic autoinflammatory periodic fever syndrome worldwide. The disease stems from pathogenic variants in the MEFV gene causing dysregulated innate immune responses and persistent hyperinflammation. Emerging research suggests epigenetic mechanisms—including DNA methylation, histone modifications, and microRNA regulation—may influence phenotypic variability, disease severity, and treatment response.",
+    "keywords": [
+      "Familial Mediterranean Fever",
+      "MEFV gene",
+      "pyrin inflammasome",
+      "epigenetics",
+      "autoinflammatory disease"
+    ],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-11-133",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-02",
+    "volume": 43,
+    "issue": 1,
+    "pages": "3-14",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": true,
+    "imageCorner": false,
+    "hasFullText": true
+  },
+  {
+    "id": 2813,
+    "type": "Original Article",
+    "title": "Depressive Symptoms and Risk of Hearing Loss Among Adults Aged 55 Years and Older: A Population-Based Study",
+    "authors": [
+      {
+        "name": "Erjie Xie",
+        "affiliation": "Department of Otolaryngology-Head and Neck Surgery, West China Hospital, Sichuan University, Sichuan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yuedi Tang",
+        "affiliation": "Department of Otolaryngology-Head and Neck Surgery, West China Hospital, Sichuan University, Sichuan, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Depression and hearing loss commonly occur in the aging population and may arise from shared mechanisms. Adults aged 55 and older from three nationally representative study cohorts were included: the National Health and Nutrition Examination Survey, the Health and Retirement Study, and the English Longitudinal Study of Ageing. Cross-sectional analyses revealed that depression was significantly associated with higher pure-tone average thresholds. In pooled longitudinal analyses of 6,956 participants, individuals with baseline depression exhibited a higher incidence of hearing loss. Increasing (HR 1.48, 95% CI 1.09-2.21) and fluctuating (HR 1.25, 95% CI 1.12-1.39) depressive symptom trajectories were independent predictors of hearing loss, whereas decreasing trajectories indicated no significant association.",
+    "keywords": [
+      "depression",
+      "hearing loss",
+      "longitudinal studies",
+      "aging",
+      "cohort studies"
+    ],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-6-78",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-02",
+    "volume": 43,
+    "issue": 1,
+    "pages": "15-24",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": true,
+    "imageCorner": false,
+    "hasFullText": true
+  },
+  {
+    "id": 2814,
+    "type": "Original Article",
+    "title": "A Multimodular AI Algorithm for Automated Assessment of Left Ventricular Function in Ischemic Heart Disease: Ejection Fraction, Wall Motion, and Regional Myocardial Segmentation",
+    "authors": [
+      {
+        "name": "Sidem Gül",
+        "affiliation": "Department of Medicine, Recep Tayyip Erdoğan University, Rize, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Reşit Taşdemir",
+        "affiliation": "Software Engineering, Malatya Turgut Özal University, Malatya, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Beyza Açıkgöz",
+        "affiliation": "Software Engineering, Malatya Turgut Özal University, Malatya, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Duman",
+        "affiliation": "Department of Cardiology, Recep Tayyip Erdoğan University, Rize, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Hamza Hodzic",
+        "affiliation": "Turkish Red Crescent, Kastamonu, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Sena Köker",
+        "affiliation": "İstanbul University, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Nazlı Erdemir",
+        "affiliation": "Biomedical Engineering, Kocaeli University, Kocaeli, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Kıvrak",
+        "affiliation": "Department of Biostatistics, Recep Tayyip Erdoğan University, Rize, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Ischemic heart damage reduces the pumping efficiency of the heart by affecting the left ventricular ejection fraction and causing wall motion abnormality. This study developed an AI algorithm with two modules for automatic LVEF calculation and wall motion abnormality detection from 2D transthoracic echocardiography images. The LVEF module showed strong correlation with cardiologist measurements (r = 0.71, p < 0.001). The wall motion module using ResNet50 achieved 95% accuracy.",
+    "keywords": [
+      "artificial intelligence",
+      "echocardiography",
+      "left ventricular ejection fraction",
+      "wall motion abnormality",
+      "deep learning"
+    ],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-8-160",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-02",
+    "volume": 43,
+    "issue": 1,
+    "pages": "25-37",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true
+  },
+  {
+    "id": 2815,
+    "type": "Original Article",
+    "title": "Association Between Hemoglobin Glycation Index and Delirium Risk in Sepsis Patients in the Intensive Care Unit",
+    "authors": [
+      {
+        "name": "Miao Shi",
+        "affiliation": "Department of Emergency, Peking University People's Hospital, Beijing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Hu Sun",
+        "affiliation": "Department of Respiratory ICU, First Affiliated Hospital of Xinjiang Medical University, Urumqi, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yong Ma",
+        "affiliation": "Department of Emergency, Peking University People's Hospital, Beijing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Cheng Chi",
+        "affiliation": "Department of Emergency, Peking University People's Hospital, Beijing, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Sepsis-associated encephalopathy is a prevalent complication in the sepsis population, especially in patients in the intensive care unit. The relationship between the hemoglobin glycation index (HGI) and delirium in sepsis patients is not yet clearly established. This retrospective cohort analysis of 3,744 sepsis patients employed logistic regression, Cox proportional hazard models, and restricted cubic spline analyses. Delirium risk in the lowest HGI group was 67.7% higher than in the middle tertile. A U-shaped relationship emerged between HGI and delirium occurrence, with an inflection point at HGI = -0.34, positioning HGI as a potential prognostic biomarker.",
+    "keywords": [
+      "hemoglobin glycation index",
+      "delirium",
+      "sepsis",
+      "intensive care unit"
+    ],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-8-211",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-02",
+    "volume": 43,
+    "issue": 1,
+    "pages": "38-47",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true
+  },
+  {
+    "id": 2816,
+    "type": "Letter to the Editor",
+    "title": "YOLOv11 Model for PCOS Diagnosis: A Significant Contribution with Clinical Insights",
+    "authors": [
+      {
+        "name": "Giovanni Mondillo",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "keywords": [
+      "PCOS",
+      "YOLOv11",
+      "artificial intelligence",
+      "diagnosis"
+    ],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-8-295",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-02",
+    "volume": 43,
+    "issue": 1,
+    "pages": "52-53",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true
+  },
+  {
+    "id": 2817,
+    "type": "Letter to the Editor",
+    "title": "In Response to: YOLOv11 Model for PCOS Diagnosis: A Significant Contribution with Clinical Insights",
+    "authors": [
+      {
+        "name": "Bolin Zhao",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "keywords": [
+      "PCOS",
+      "YOLOv11",
+      "artificial intelligence"
+    ],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-8-295.answer",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-02",
+    "volume": 43,
+    "issue": 1,
+    "pages": "54-55",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true
+  },
+  {
+    "id": 2818,
+    "type": "Clinical Image",
+    "title": "Not All Emboli are Thrombotic: The Silent Cement to the Lungs",
+    "authors": [
+      {
+        "name": "Çağlar Kaya",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "keywords": [
+      "pulmonary embolism",
+      "cement embolism"
+    ],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-10-141",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-02",
+    "volume": 43,
+    "issue": 1,
+    "pages": "56",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true
+  }
+]

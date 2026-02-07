@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Static Pages -->
+  <url><loc>https://balkanmedicaljournal.org/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/current-issue.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/articles-in-press.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/archive.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/about.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/editorial-board.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/for-authors.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/for-reviewers.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/policies.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/contact.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/news.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/forms.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+  <!-- Articles — Volume 43, Issue 2 (2026) -->
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2801</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2802</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2803</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2804</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2805</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2806</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2807</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2808</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2809</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2810</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Articles — Volume 43, Issue 1 (2026) -->
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2811</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2812</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2813</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2814</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2815</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2816</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2817</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2818</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Articles — Volume 42, Issue 6 (2025) -->
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2819</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2820</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2821</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2822</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2823</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2824</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2825</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://balkanmedicaljournal.org/article.html?id=2826</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>

@@ -9,17 +9,7 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
-        }
-      }
-    }
-  </script>
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-white text-gray-900 font-sans">
 
@@ -157,7 +147,7 @@
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
           <div>
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Current Issue</h1>
-            <p class="mt-2 text-gray-500 text-lg">Volume 43, Issue 1 — January-February 2026</p>
+            <p class="mt-2 text-gray-500 text-lg">Volume 43, Issue 2 — February 2026</p>
           </div>
           <div class="flex items-center gap-2">
             <span id="article-count" class="text-sm text-gray-400"></span>
@@ -171,21 +161,40 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
           <div id="type-filters" class="flex flex-wrap gap-2" role="group" aria-label="Filter by article type"></div>
-          <div class="sm:ml-auto w-full sm:w-64">
-            <label for="article-search" class="sr-only">Search articles</label>
-            <div class="relative">
-              <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-              <input type="search" id="article-search" placeholder="Search articles..." class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500">
+          <div class="flex items-center gap-2 sm:ml-auto">
+            <div class="w-full sm:w-64">
+              <label for="article-search" class="sr-only">Search articles</label>
+              <div class="relative">
+                <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                <input type="search" id="article-search" placeholder="Search articles..." class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500">
+              </div>
             </div>
+            <button id="toggle-advanced" class="flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-600 hover:text-teal-700 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap" aria-expanded="false" aria-controls="advanced-filters">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
+              Filters
+            </button>
           </div>
         </div>
+        <!-- Advanced Filters Panel -->
+        <div id="advanced-filters" class="hidden mt-4 pt-4 border-t border-gray-200"></div>
+        <script>
+          document.getElementById('toggle-advanced').addEventListener('click', function() {
+            var panel = document.getElementById('advanced-filters');
+            var btn = this;
+            var isHidden = panel.classList.contains('hidden');
+            panel.classList.toggle('hidden');
+            btn.setAttribute('aria-expanded', String(isHidden));
+            if (isHidden) btn.classList.add('bg-teal-50', 'text-teal-700', 'border-teal-300');
+            else btn.classList.remove('bg-teal-50', 'text-teal-700', 'border-teal-300');
+          });
+        </script>
       </div>
     </section>
 
     <!-- Articles Container -->
     <section class="py-10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div id="articles-container" class="grid gap-6"></div>
+        <div id="articles-container" class="grid gap-6" data-volume="43" data-issue="2"></div>
       </div>
     </section>
   </main>
@@ -244,7 +253,12 @@
   </button>
 
   <script src="js/data/articles.js"></script>
+  <script src="js/data-loader.js"></script>
   <script src="js/main.js"></script>
   <script src="js/article-search.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","logo":"https://balkanmedicaljournal.org/images/logo.png","publisher":{"@type":"Organization","name":"Trakya University"},"address":{"@type":"PostalAddress","addressLocality":"Edirne","addressCountry":"TR","streetAddress":"Trakya University Faculty of Medicine, Balkan Yerleşkesi, 22030"}},{"@type":"WebSite","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","potentialAction":{"@type":"SearchAction","target":"https://balkanmedicaljournal.org/current-issue.html?q={search_term_string}","query-input":"required name=search_term_string"}}]}
+</script>
+
 </body>
 </html>

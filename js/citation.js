@@ -92,6 +92,83 @@
     },
 
     /**
+     * Generate RIS citation
+     */
+    ris: function (article) {
+      var year = article.published ? new Date(article.published).getFullYear() : '';
+      var pages = article.pages ? article.pages.split('-') : ['', ''];
+      var lines = [
+        'TY  - JOUR',
+        'T1  - ' + article.title
+      ];
+      article.authors.forEach(function (a) {
+        var parts = a.name.split(' ');
+        var last = parts.pop();
+        var first = parts.join(' ');
+        lines.push('AU  - ' + last + ', ' + first);
+      });
+      lines.push('DO  - ' + article.doi);
+      lines.push('JO  - Balkan Medical Journal');
+      lines.push('JA  - Balkan Med J');
+      lines.push('VL  - ' + article.volume);
+      lines.push('IS  - ' + article.issue);
+      lines.push('SP  - ' + pages[0]);
+      if (pages[1]) lines.push('EP  - ' + pages[1]);
+      lines.push('PY  - ' + year);
+      lines.push('SN  - 2146-3131');
+      if (article.keywords) {
+        article.keywords.forEach(function (k) {
+          lines.push('KW  - ' + k);
+        });
+      }
+      if (article.abstract) {
+        lines.push('AB  - ' + article.abstract);
+      }
+      lines.push('ER  - ');
+      return lines.join('\n');
+    },
+
+    /**
+     * Generate EndNote (.enw) citation
+     */
+    endnote: function (article) {
+      var year = article.published ? new Date(article.published).getFullYear() : '';
+      var lines = [
+        '%0 Journal Article',
+        '%T ' + article.title
+      ];
+      article.authors.forEach(function (a) {
+        lines.push('%A ' + a.name);
+      });
+      lines.push('%D ' + year);
+      lines.push('%J Balkan Medical Journal');
+      lines.push('%V ' + article.volume);
+      lines.push('%N ' + article.issue);
+      lines.push('%P ' + article.pages);
+      lines.push('%R ' + article.doi);
+      lines.push('%@ 2146-3131');
+      if (article.abstract) {
+        lines.push('%X ' + article.abstract);
+      }
+      return lines.join('\n');
+    },
+
+    /**
+     * Download text as a file
+     */
+    downloadFile: function (content, filename, mimeType) {
+      var blob = new Blob([content], { type: mimeType || 'text/plain' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    },
+
+    /**
      * Copy text to clipboard
      */
     copyToClipboard: function (text) {

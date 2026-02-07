@@ -1,6 +1,16 @@
 /**
- * Balkan Medical Journal — Contact Form Validation
+ * Balkan Medical Journal — Contact Form Validation & Submission
+ *
+ * FORMSPREE SETUP:
+ * 1. Create a form at https://formspree.io
+ * 2. Copy your form endpoint URL (e.g., https://formspree.io/f/xyzabcde)
+ * 3. Replace the CONTACT_FORM_ENDPOINT value below with your URL
+ * 4. The form will then send real messages to your Formspree inbox
+ *
+ * While CONTACT_FORM_ENDPOINT is empty, the form shows an informational message.
  */
+var CONTACT_FORM_ENDPOINT = ''; // <-- Paste your Formspree endpoint URL here
+
 (function () {
   'use strict';
 
@@ -64,26 +74,63 @@
       return;
     }
 
-    // Simulate form submission
+    // Show loading state
     var btn = form.querySelector('button[type="submit"]');
     var originalText = btn.textContent;
     btn.innerHTML = '<span class="spinner"></span> Sending...';
     btn.disabled = true;
 
-    setTimeout(function () {
+    // Check if endpoint is configured
+    if (!CONTACT_FORM_ENDPOINT) {
+      setTimeout(function () {
+        btn.textContent = originalText;
+        btn.disabled = false;
+        showFieldError(fields.message, 'Contact form endpoint not configured. Please email info@balkanmedicaljournal.org directly.');
+      }, 500);
+      return;
+    }
+
+    // Submit via fetch
+    var formData = new FormData();
+    formData.append('name', fields.name.el.value.trim());
+    formData.append('email', fields.email.el.value.trim());
+    formData.append('_subject', 'Contact Form: ' + fields.subject.el.value.trim());
+    formData.append('message', fields.message.el.value.trim());
+
+    fetch(CONTACT_FORM_ENDPOINT, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function (response) {
       btn.textContent = originalText;
       btn.disabled = false;
-      form.reset();
 
-      if (successMsg) {
-        successMsg.classList.remove('hidden');
-        successMsg.focus();
-      }
+      if (response.ok) {
+        form.reset();
 
-      if (window.showToast) {
-        window.showToast('Message sent successfully!');
+        if (successMsg) {
+          successMsg.classList.remove('hidden');
+          successMsg.focus();
+        }
+
+        if (window.showToast) {
+          window.showToast('Message sent successfully!');
+        }
+      } else {
+        return response.json().then(function (data) {
+          var msg = (data && data.errors && data.errors.length > 0)
+            ? data.errors.map(function (err) { return err.message; }).join(', ')
+            : 'Failed to send message. Please try again later.';
+          showFieldError(fields.message, msg);
+        });
       }
-    }, 1500);
+    })
+    .catch(function () {
+      btn.textContent = originalText;
+      btn.disabled = false;
+      showFieldError(fields.message, 'Network error. Please check your connection and try again.');
+    });
   });
 
   // Real-time validation on blur
