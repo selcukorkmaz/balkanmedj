@@ -12,6 +12,15 @@
   --font-sans: 'Inter', 'system-ui', 'sans-serif';
 }
 
+/* Hide scrollbar but keep scroll */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* Base Styles */
 html {
   scroll-behavior: smooth;
@@ -194,6 +203,7 @@ body {
 
 .article-body section {
   margin-bottom: 1.5rem;
+  scroll-margin-top: 7rem;
 }
 
 .article-body figure {
