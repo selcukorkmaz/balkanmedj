@@ -1,5 +1,5 @@
-/* Google Fonts - Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* Google Fonts - Inter (UI) + Crimson Pro (headings & editorial content) */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap');
 
 @import "tailwindcss";
 
@@ -10,6 +10,7 @@
 /* Custom theme extensions */
 @theme {
   --font-sans: 'Inter', 'system-ui', 'sans-serif';
+  --font-serif: 'Crimson Pro', 'Georgia', 'Times New Roman', 'serif';
 }
 
 /* Hide scrollbar but keep scroll */
@@ -30,6 +31,11 @@ body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Crimson Pro — Headings & editorial content */
+h1, h2, h3, h4 {
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
 }
 
 /* Focus Visible Outlines (Accessibility) */
@@ -102,6 +108,24 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  font-size: 1.1875rem; /* 19px — matches article body */
+  line-height: 1.8;
+}
+
+.accordion-content table {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Tab panel prose content */
+[role="tabpanel"] {
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  font-size: 1.1875rem; /* 19px — matches article body */
+  line-height: 1.8;
+}
+
+[role="tabpanel"] table {
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
 .accordion-content.open {
@@ -162,8 +186,13 @@ body {
 }
 
 /* Article Full Text Body */
+.article-body {
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  font-size: 1.1875rem; /* 19px — compensates for Crimson Pro's smaller x-height */
+}
+
 .article-body h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* 24px — clear section breaks */
   font-weight: 700;
   color: #111827;
   margin-top: 2rem;
@@ -173,7 +202,7 @@ body {
 }
 
 .article-body h4 {
-  font-size: 1.1rem;
+  font-size: 1.3125rem; /* 21px — sub-section headings */
   font-weight: 600;
   color: #1F2937;
   margin-top: 1.5rem;
@@ -182,7 +211,7 @@ body {
 
 .article-body p {
   margin-bottom: 1rem;
-  line-height: 1.75;
+  line-height: 1.8; /* slightly more generous for serif */
   color: #374151;
 }
 
@@ -191,7 +220,7 @@ body {
   margin-bottom: 1rem;
   padding-left: 1.5rem;
   color: #374151;
-  line-height: 1.75;
+  line-height: 1.8;
 }
 
 .article-body ul { list-style-type: disc; }
@@ -223,14 +252,16 @@ body {
 }
 
 .article-body figcaption {
+  font-family: 'Inter', system-ui, sans-serif; /* captions stay sans-serif */
   margin-top: 0.75rem;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   color: #6B7280;
   line-height: 1.5;
   text-align: left;
 }
 
 .article-body table {
+  font-family: 'Inter', system-ui, sans-serif; /* tables stay sans-serif for data clarity */
   width: 100%;
   border-collapse: collapse;
   margin: 1.5rem 0;
@@ -257,9 +288,10 @@ body {
 }
 
 .article-body .references-list {
+  font-family: 'Inter', system-ui, sans-serif; /* references stay sans-serif for DOIs/URLs */
   list-style-type: decimal;
   padding-left: 1.5rem;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   color: #4B5563;
   line-height: 1.6;
 }
@@ -267,6 +299,27 @@ body {
 .article-body .references-list li {
   margin-bottom: 0.5rem;
   padding-left: 0.25rem;
+}
+
+/* Prose content containers use serif (about, news-article, article abstract) */
+.prose {
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.8;
+}
+
+/* Article card titles use serif */
+.article-card h3 {
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  font-size: 1.25rem; /* 20px — prominent but not overpowering in cards */
+  line-height: 1.4;
+}
+
+/* Abstract text uses serif for readability */
+.abstract-text {
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.8;
 }
 
 /* Article Table of Contents */
