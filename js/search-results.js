@@ -6,6 +6,7 @@
 
   var form = document.getElementById('search-page-form');
   var input = document.getElementById('search-page-input');
+  var searchSubmitBtn = form ? form.querySelector('button[type="submit"]') : null;
   var queryLabel = document.getElementById('search-page-query');
   var summaryContainer = document.getElementById('search-page-summary');
   var resultsContainer = document.getElementById('search-page-results');
@@ -44,6 +45,18 @@
 
   function normalize(str) {
     return (str || '').toString().trim().toLowerCase();
+  }
+
+  function syncAdvancedColumnWidth() {
+    if (!searchSubmitBtn || !document.body) return;
+    if (!window.matchMedia('(min-width: 640px)').matches) {
+      document.body.style.removeProperty('--search-side-col-width');
+      return;
+    }
+    var width = searchSubmitBtn.getBoundingClientRect().width;
+    if (width > 0) {
+      document.body.style.setProperty('--search-side-col-width', width + 'px');
+    }
   }
 
   function normalizeArticleTypeFilter(value) {
@@ -511,10 +524,10 @@
       html += '<p class="text-sm text-gray-600 leading-relaxed font-serif">' + searchApi.highlightMatch(escape(summary), query) + '</p>';
     }
 
-    html += '<div class="flex items-center gap-4 text-xs text-gray-400 mt-4 pt-4 border-t border-gray-100">';
+    html += '<div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-gray-400 mt-4 pt-4 border-t border-gray-100">';
     if (article.published) html += '<span>' + escape(article.published) + '</span>';
     if (article.pages) html += '<span>pp. ' + escape(article.pages) + '</span>';
-    if (article.doi) html += '<span>DOI: ' + searchApi.highlightMatch(escape(article.doi), query) + '</span>';
+    if (article.doi) html += '<span style="overflow-wrap:anywhere;word-break:break-word;">DOI: ' + searchApi.highlightMatch(escape(article.doi), query) + '</span>';
     html += '</div>';
     html += '</article>';
 
@@ -733,6 +746,8 @@
     });
   }
 
+  window.addEventListener('resize', syncAdvancedColumnWidth);
+
   window.addEventListener('popstate', function () {
     var params = new URLSearchParams(window.location.search);
     var query = (params.get('q') || '').trim();
@@ -749,6 +764,9 @@
     var params = new URLSearchParams(window.location.search);
     var query = (params.get('q') || '').trim();
     var filters = parseFiltersFromUrl(params);
+
+    syncAdvancedColumnWidth();
+    setTimeout(syncAdvancedColumnWidth, 120);
 
     input.value = query;
     applyFiltersToUi(filters);
