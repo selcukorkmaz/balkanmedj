@@ -592,7 +592,7 @@
     queryLabel.textContent = 'Enter at least 2 characters to begin your search, or use advanced filters.';
     summaryContainer.innerHTML =
       '<div class="bg-white rounded-xl border border-gray-200 p-4 col-span-full">' +
-      '<p class="text-sm text-gray-600">Try terms like <span class="font-semibold text-gray-900">atherosclerosis</span>, <span class="font-semibold text-gray-900">peer review</span>, <span class="font-semibold text-gray-900">DOI</span>, or an author surname.</p>' +
+      '<p class="text-sm text-gray-600">Try terms like <span class="font-semibold text-gray-900">atherosclerosis</span>, <span class="font-semibold text-gray-900">hyperuricemia</span>, <span class="font-semibold text-gray-900">DOI</span>, or an author surname.</p>' +
       '</div>';
 
     resultsContainer.innerHTML =
