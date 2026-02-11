@@ -34,7 +34,9 @@
       "WebFetch(domain:academic.oup.com)",
       "WebFetch(domain:journals.plos.org)",
       "WebFetch(domain:arxiv.org)",
-      "Bash(R --version:*)"
+      "Bash(R --version:*)",
+      "Bash(__NEW_LINE_ffe817067a908b00__ for f in *.html)",
+      "Bash(do)"
     ]
   }
 }

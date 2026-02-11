@@ -417,6 +417,41 @@ h1, h2, h3, h4 {
   }
 }
 
+/* Search overlay */
+#search-overlay {
+  animation: searchFadeIn 0.15s ease-out;
+}
+
+@keyframes searchFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#search-overlay > div {
+  animation: searchSlideIn 0.2s ease-out;
+}
+
+@keyframes searchSlideIn {
+  from { opacity: 0; transform: scale(0.96) translateY(-8px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+#search-input {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#search-input:focus,
+#search-input:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#search-results a:hover,
+#search-results a.search-focused {
+  background: #F9FAFB;
+}
+
 /* Loading spinner */
 .spinner {
   display: inline-block;

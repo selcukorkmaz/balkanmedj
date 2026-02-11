@@ -70,6 +70,9 @@
 
         <!-- Submit CTA + Mobile toggle -->
         <div class="flex items-center space-x-3">
+          <button data-search-toggle class="p-2 text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors" aria-label="Search articles" title="Search (Ctrl+K)">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </button>
           <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center px-4 py-2 bg-red-700 text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors shadow-sm">
             Submit Manuscript
             <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -94,6 +97,10 @@
       </button>
     </div>
     <div class="p-4 space-y-1">
+      <button data-search-toggle id="mobile-search-trigger" class="w-full flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">
+        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        Search Articles
+      </button>
       <a href="index.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">Home</a>
 
       <!-- About Section -->
@@ -106,6 +113,7 @@
         <a href="editorial-board.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg">Editorial Board</a>
         <a href="journal-metrics.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg">Journal Metrics</a>
       </div>
+
 
       <!-- Issues Section -->
       <button data-mobile-dropdown="mobile-issues" class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium" aria-expanded="false">
@@ -133,6 +141,31 @@
       </div>
     </div>
   </div>
+
+  <!-- Search Overlay -->
+  <div id="search-overlay" class="hidden fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm flex items-start justify-center pt-[12vh] sm:pt-[15vh] px-4" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Search articles">
+    <div class="bg-white rounded-2xl shadow-2xl w-full max-w-lg overflow-hidden ring-1 ring-gray-200">
+      <div class="flex items-center gap-3 px-5 py-3 border-b border-gray-100">
+        <svg class="w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input id="search-input" type="search" placeholder="Search articles, authors, keywords..." class="flex-1 text-base text-gray-900 placeholder-gray-400 bg-transparent border-0 p-0 focus:outline-none focus:ring-0" autocomplete="off">
+        <button id="search-close" class="flex-shrink-0 text-gray-400 hover:text-gray-600 transition-colors" aria-label="Close search">
+          <kbd class="hidden sm:inline-block px-2 py-1 text-xs font-medium text-gray-400 bg-gray-100 rounded-md border border-gray-200">ESC</kbd>
+          <svg class="sm:hidden w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div id="search-results" class="max-h-[60vh] overflow-y-auto px-3 py-3">
+        <p class="text-sm text-gray-400 text-center py-8">Search articles, authors, keywords, news, and pages...<br><span class="text-xs mt-1 inline-block">Type at least 2 characters</span></p>
+      </div>
+      <div class="flex items-center justify-between px-5 py-2.5 border-t border-gray-100 bg-gray-50/80 text-xs text-gray-400">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center gap-1"><kbd class="px-1.5 py-0.5 bg-white rounded border border-gray-200 text-[10px] font-medium">&uarr;</kbd><kbd class="px-1.5 py-0.5 bg-white rounded border border-gray-200 text-[10px] font-medium">&darr;</kbd> navigate</span>
+          <span class="inline-flex items-center gap-1"><kbd class="px-1.5 py-0.5 bg-white rounded border border-gray-200 text-[10px] font-medium">&crarr;</kbd> open</span>
+        </div>
+        <span class="inline-flex items-center gap-1"><kbd class="px-1.5 py-0.5 bg-white rounded border border-gray-200 text-[10px] font-medium">esc</kbd> close</span>
+      </div>
+    </div>
+  </div>
+
 
   <main id="main-content">
     <div class="bg-gray-50 border-b border-gray-200">
@@ -190,7 +223,9 @@
   </button>
 
   <script src="js/data/news.js"></script>
+  <script src="js/data/articles.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/search.js"></script>
   <script src="js/news-filter.js"></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","logo":"https://balkanmedicaljournal.org/images/logo.png","publisher":{"@type":"Organization","name":"Trakya University"},"address":{"@type":"PostalAddress","addressLocality":"Edirne","addressCountry":"TR","streetAddress":"Trakya University Faculty of Medicine, Balkan Yerleşkesi, 22030"}},{"@type":"WebSite","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","potentialAction":{"@type":"SearchAction","target":"https://balkanmedicaljournal.org/current-issue.html?q={search_term_string}","query-input":"required name=search_term_string"}}]}
