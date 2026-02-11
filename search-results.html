@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Balkan Medical Journal</title>
-  <meta name="description" content="Contact the editorial office of Balkan Medical Journal at Trakya University.">
-  <meta property="og:title" content="Contact — Balkan Medical Journal">
+  <title>Search Results — Balkan Medical Journal</title>
+  <meta name="description" content="Search across all Balkan Medical Journal content including articles, news, and journal pages.">
+  <meta property="og:title" content="Search Results — Balkan Medical Journal">
   <meta property="og:image" content="https://balkanmedicaljournal.org/images/cover/cover1.jpeg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Contact — Balkan Medical Journal">
-  <meta name="twitter:description" content="Contact the editorial office of Balkan Medical Journal at Trakya University.">
+  <meta name="twitter:title" content="Search Results — Balkan Medical Journal">
+  <meta name="twitter:description" content="Search across articles, news, and journal pages on Balkan Medical Journal.">
   <meta name="twitter:image" content="https://balkanmedicaljournal.org/images/cover/cover1.jpeg">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
@@ -174,144 +174,64 @@
   <main id="main-content">
     <div class="bg-gray-50 border-b border-gray-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-        <nav aria-label="Breadcrumb"><ol class="flex items-center space-x-2 text-sm text-gray-500">
-          <li><a href="index.html" class="hover:text-teal-700">Home</a></li>
-          <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
-          <li aria-current="page" class="text-gray-900 font-medium">Contact</li>
-        </ol></nav>
+        <nav aria-label="Breadcrumb">
+          <ol class="flex items-center space-x-2 text-sm text-gray-500">
+            <li><a href="index.html" class="hover:text-teal-700">Home</a></li>
+            <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
+            <li aria-current="page" class="text-gray-900 font-medium">Search Results</li>
+          </ol>
+        </nav>
       </div>
     </div>
 
     <section class="bg-white border-b border-gray-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Contact Us</h1>
-        <p class="mt-2 text-gray-500 text-lg font-serif">Get in touch with the editorial office of Balkan Medical Journal.</p>
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Search Results</h1>
+        <p class="mt-2 text-gray-500 text-lg font-serif">Explore articles, news, and journal pages in one comprehensive view.</p>
+        <form id="search-page-form" class="mt-6 flex flex-col sm:flex-row gap-3 max-w-3xl" role="search" aria-label="Site search form">
+          <div class="flex-1">
+            <label for="search-page-input" class="sr-only">Search query</label>
+            <input id="search-page-input" type="search" placeholder="Search by title, author, DOI, keyword, topic..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 text-gray-900 placeholder-gray-400" autocomplete="off">
+          </div>
+          <button type="submit" class="px-6 py-3 bg-teal-700 text-white font-semibold rounded-lg hover:bg-teal-800 transition-colors shadow-sm whitespace-nowrap">
+            Search
+          </button>
+        </form>
+        <p id="search-page-query" class="mt-4 text-sm text-gray-500"></p>
       </div>
     </section>
 
-    <section class="py-12">
+    <section class="py-10 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-
-          <!-- Contact Form -->
+        <div id="search-page-summary" class="grid grid-cols-3 gap-4 mb-8"></div>
+        <div class="grid lg:grid-cols-3 gap-8">
           <div class="lg:col-span-2">
-            <div class="bg-white rounded-xl border border-gray-200 p-8">
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">Send a Message</h2>
-
-              <div id="contact-success" class="hidden mb-6 p-4 bg-green-100 border border-gray-200 rounded-lg text-green-700" role="status" tabindex="-1">
-                Your message has been sent successfully. We will get back to you within 2-3 business days.
-              </div>
-
-              <form id="contact-form" novalidate>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label for="contact-name" class="block text-sm font-medium text-gray-700 mb-1">Full Name <span class="text-red-600">*</span></label>
-                    <input type="text" id="contact-name" name="name" required
-                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 text-gray-900 placeholder-gray-400"
-                      placeholder="Your name" aria-describedby="contact-name-error">
-                    <p id="contact-name-error" class="hidden text-sm text-red-600 mt-1" role="alert"></p>
-                  </div>
-                  <div>
-                    <label for="contact-email" class="block text-sm font-medium text-gray-700 mb-1">Email Address <span class="text-red-600">*</span></label>
-                    <input type="email" id="contact-email" name="email" required
-                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 text-gray-900 placeholder-gray-400"
-                      placeholder="your@email.com" aria-describedby="contact-email-error">
-                    <p id="contact-email-error" class="hidden text-sm text-red-600 mt-1" role="alert"></p>
-                  </div>
-                </div>
-
-                <div class="mb-6">
-                  <label for="contact-subject" class="block text-sm font-medium text-gray-700 mb-1">Subject <span class="text-red-600">*</span></label>
-                  <select id="contact-subject" name="subject" required
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 text-gray-900"
-                    aria-describedby="contact-subject-error">
-                    <option value="">Select a subject</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="submission">Submission Question</option>
-                    <option value="review">Review Process</option>
-                    <option value="technical">Technical Issue</option>
-                    <option value="subscription">Subscription</option>
-                    <option value="advertising">Advertising</option>
-                    <option value="other">Other</option>
-                  </select>
-                  <p id="contact-subject-error" class="hidden text-sm text-red-600 mt-1" role="alert"></p>
-                </div>
-
-                <div class="mb-6">
-                  <label for="contact-message" class="block text-sm font-medium text-gray-700 mb-1">Message <span class="text-red-600">*</span></label>
-                  <textarea id="contact-message" name="message" rows="6" required
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 text-gray-900 placeholder-gray-400 resize-y"
-                    placeholder="Your message..." aria-describedby="contact-message-error"></textarea>
-                  <p id="contact-message-error" class="hidden text-sm text-red-600 mt-1" role="alert"></p>
-                </div>
-
-                <button type="submit" class="px-6 py-3 bg-teal-700 text-white font-semibold rounded-lg hover:bg-teal-800 transition-colors shadow-sm">
-                  Send Message
-                </button>
-              </form>
-            </div>
+            <div id="search-page-results" class="space-y-6"></div>
           </div>
-
-          <!-- Sidebar Info -->
-          <div class="space-y-6">
-            <!-- Editorial Office -->
-            <div class="bg-gray-50 rounded-xl p-6">
-              <h3 class="font-semibold text-gray-900 text-lg mb-4">Editorial Office</h3>
-              <div class="space-y-4 text-sm text-gray-600">
-                <div class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-teal-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                  <div>
-                    <p class="font-medium text-gray-900">Address</p>
-                    <p>Balkan Medical Journal<br>Trakya University Faculty of Medicine<br>Balkan Yerleşkesi, 22030<br>Edirne, Türkiye</p>
-                  </div>
+          <aside class="lg:col-span-1">
+            <div class="lg:sticky lg:top-24 space-y-6">
+              <section class="bg-white rounded-xl border border-gray-200 p-6">
+                <h2 class="text-lg font-semibold text-gray-900 mb-3">Search Guide</h2>
+                <p class="text-base text-gray-600 font-serif leading-relaxed mb-3">
+                  Use author names, DOI fragments, manuscript types, or keywords to find relevant content quickly.
+                </p>
+                <ul class="list-disc list-inside space-y-2">
+                  <li class="text-base text-gray-600 font-serif leading-relaxed">Try specific terms such as a disease, method, or institution.</li>
+                  <li class="text-base text-gray-600 font-serif leading-relaxed">Use last names for author-specific lookup.</li>
+                  <li class="text-base text-gray-600 font-serif leading-relaxed">Search by DOI for direct article retrieval.</li>
+                </ul>
+              </section>
+              <section class="bg-white rounded-xl border border-gray-200 p-6">
+                <h2 class="text-lg font-semibold text-gray-900 mb-3">Popular Links</h2>
+                <div class="space-y-2 text-sm">
+                  <a href="current-issue.html" class="block text-teal-700 hover:text-teal-800 transition-colors">Current Issue</a>
+                  <a href="articles-in-press.html" class="block text-teal-700 hover:text-teal-800 transition-colors">Articles in Press</a>
+                  <a href="archive.html" class="block text-teal-700 hover:text-teal-800 transition-colors">Archive</a>
+                  <a href="for-authors.html" class="block text-teal-700 hover:text-teal-800 transition-colors">For Authors</a>
                 </div>
-                <div class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-teal-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                  <div>
-                    <p class="font-medium text-gray-900">Email</p>
-                    <a href="mailto:info@balkanmedicaljournal.org" class="text-teal-700 hover:text-teal-800">info@balkanmedicaljournal.org</a>
-                  </div>
-                </div>
-                <div class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-teal-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                  <div>
-                    <p class="font-medium text-gray-900">Phone</p>
-                    <p>+90 284 235 76 41</p>
-                  </div>
-                </div>
-              </div>
+              </section>
             </div>
-
-            <!-- Editor-in-Chief -->
-            <div class="bg-gray-50 rounded-xl p-6">
-              <h3 class="font-semibold text-gray-900 text-lg mb-4">Editor-in-Chief</h3>
-              <div class="flex items-center gap-3">
-                <div class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center">
-                  <span class="text-lg font-semibold text-teal-700">SA</span>
-                </div>
-                <div>
-                  <p class="font-medium text-gray-900">Servet Altay, MD</p>
-                  <p class="text-sm text-gray-500">Trakya University</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Submission -->
-            <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
-              <h3 class="font-semibold text-gray-900 text-lg mb-2">Submit a Manuscript</h3>
-              <p class="text-sm text-gray-600 mb-4">Use our online submission system for manuscript submissions and tracking.</p>
-              <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 bg-red-700 text-white font-semibold rounded-lg hover:bg-red-800 transition-colors text-sm">
-                Go to Manuscript Manager
-                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-              </a>
-            </div>
-
-            <!-- Response Time -->
-            <div class="bg-gray-50 rounded-xl p-6">
-              <h3 class="font-semibold text-gray-900 text-lg mb-2">Response Time</h3>
-              <p class="text-sm text-gray-600">We typically respond to inquiries within <strong>2-3 business days</strong>. For urgent matters, please indicate this in your subject line.</p>
-            </div>
-          </div>
+          </aside>
         </div>
       </div>
     </section>
@@ -336,13 +256,13 @@
     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
   </button>
 
-  <script src="js/data/articles.js"></script>
   <script src="js/data/news.js"></script>
+  <script src="js/data/articles.js"></script>
   <script src="js/main.js"></script>
   <script src="js/search.js"></script>
-  <script src="js/contact-form.js"></script>
+  <script src="js/search-results.js"></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","logo":"https://balkanmedicaljournal.org/images/logo.png","publisher":{"@type":"Organization","name":"Trakya University"},"address":{"@type":"PostalAddress","addressLocality":"Edirne","addressCountry":"TR","streetAddress":"Trakya University Faculty of Medicine, Balkan Yerleşkesi, 22030"}},{"@type":"WebSite","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","potentialAction":{"@type":"SearchAction","target":"https://balkanmedicaljournal.org/current-issue.html?q={search_term_string}","query-input":"required name=search_term_string"}}]}
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","logo":"https://balkanmedicaljournal.org/images/logo.png","publisher":{"@type":"Organization","name":"Trakya University"},"address":{"@type":"PostalAddress","addressLocality":"Edirne","addressCountry":"TR","streetAddress":"Trakya University Faculty of Medicine, Balkan Yerleşkesi, 22030"}},{"@type":"WebSite","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","potentialAction":{"@type":"SearchAction","target":"https://balkanmedicaljournal.org/search-results.html?q={search_term_string}","query-input":"required name=search_term_string"}}]}
 </script>
 
 </body>

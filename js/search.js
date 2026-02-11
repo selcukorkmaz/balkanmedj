@@ -5,16 +5,6 @@
 (function () {
   'use strict';
 
-  var overlay = document.getElementById('search-overlay');
-  var input = document.getElementById('search-input');
-  var resultsContainer = document.getElementById('search-results');
-  var closeBtn = document.getElementById('search-close');
-  var openBtns = document.querySelectorAll('[data-search-toggle]');
-
-  if (!overlay || !input || !resultsContainer) return;
-
-  var debounceTimer;
-
   // ─── Site pages (always available, no data file needed) ────────
   var SITE_PAGES = [
     { title: 'Home', url: 'index.html', desc: 'Journal homepage with featured articles and latest news' },
@@ -30,67 +20,15 @@
     { title: 'Contact', url: 'contact.html', desc: 'Contact information, editorial office, address, email' },
     { title: 'News', url: 'news.html', desc: 'Latest announcements, journal updates, events' },
     { title: 'Forms', url: 'forms.html', desc: 'Copyright transfer, conflict of interest, author forms, downloads' },
+    { title: 'Search Results', url: 'search-results.html', desc: 'Comprehensive search across articles, news, and site pages' },
     { title: 'Submit Manuscript', url: 'https://balkanmedj.manuscriptmanager.net', desc: 'Online manuscript submission system' }
   ];
-
-  // ─── Open / Close ──────────────────────────────────────────────
-
-  function openSearch() {
-    overlay.classList.remove('hidden');
-    overlay.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-    renderInitial();
-    setTimeout(function () { input.focus(); }, 100);
-  }
-
-  function closeSearch() {
-    overlay.classList.add('hidden');
-    overlay.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-    input.value = '';
-    resultsContainer.innerHTML = '';
-  }
-
-  for (var i = 0; i < openBtns.length; i++) {
-    openBtns[i].addEventListener('click', function (e) {
-      e.preventDefault();
-      var mobileMenu = document.getElementById('mobile-menu');
-      if (mobileMenu && mobileMenu.classList.contains('mobile-menu-active')) {
-        var closeMenuBtn = document.getElementById('mobile-menu-close');
-        if (closeMenuBtn) closeMenuBtn.click();
-      }
-      openSearch();
-    });
-  }
-
-  if (closeBtn) closeBtn.addEventListener('click', closeSearch);
-
-  overlay.addEventListener('click', function (e) {
-    if (e.target === overlay) closeSearch();
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
-      closeSearch();
-    }
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-      e.preventDefault();
-      if (overlay.classList.contains('hidden')) {
-        openSearch();
-      } else {
-        closeSearch();
-      }
-    }
-  });
 
   // ─── Helpers ───────────────────────────────────────────────────
 
   function escapeHtml(str) {
     var div = document.createElement('div');
-    div.appendChild(document.createTextNode(str));
+    div.appendChild(document.createTextNode(str == null ? '' : String(str)));
     return div.innerHTML;
   }
 
@@ -105,6 +43,12 @@
     var tmp = document.createElement('div');
     tmp.innerHTML = html;
     return tmp.textContent || tmp.innerText || '';
+  }
+
+  function getViewAllUrl(query) {
+    var clean = (query || '').trim();
+    if (!clean) return 'search-results.html';
+    return 'search-results.html?q=' + encodeURIComponent(clean);
   }
 
   // ─── Search functions ──────────────────────────────────────────
@@ -181,16 +125,36 @@
     return results;
   }
 
-  // ─── Render ────────────────────────────────────────────────────
+  function searchAll(query) {
+    var cleanQuery = (query || '').trim();
+    var normalized = cleanQuery.toLowerCase();
 
-  function renderInitial() {
-    resultsContainer.innerHTML =
-      '<div class="text-center py-10">' +
-      '<svg class="w-10 h-10 text-gray-200 mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>' +
-      '<p class="text-sm text-gray-400">Search articles, authors, keywords, news, and pages</p>' +
-      '<p class="text-xs text-gray-300 mt-1">Type at least 2 characters to start</p>' +
-      '</div>';
+    if (cleanQuery.length < 2) {
+      return {
+        query: cleanQuery,
+        normalizedQuery: normalized,
+        articleResults: [],
+        newsResults: [],
+        pageResults: [],
+        total: 0
+      };
+    }
+
+    var articleResults = searchArticles(normalized).sort(function (a, b) { return b.score - a.score; });
+    var newsResults = searchNews(normalized).sort(function (a, b) { return b.score - a.score; });
+    var pageResults = searchPages(normalized).sort(function (a, b) { return b.score - a.score; });
+
+    return {
+      query: cleanQuery,
+      normalizedQuery: normalized,
+      articleResults: articleResults,
+      newsResults: newsResults,
+      pageResults: pageResults,
+      total: articleResults.length + newsResults.length + pageResults.length
+    };
   }
+
+  // ─── Result cards (shared with full results page) ─────────────
 
   function renderArticleCard(a, query) {
     var authors = (a.authors || []).map(function (au) { return au.name; }).join(', ');
@@ -239,60 +203,158 @@
     return html;
   }
 
+  // Expose reusable search API for other pages.
+  window.BMJSearch = {
+    SITE_PAGES: SITE_PAGES,
+    escapeHtml: escapeHtml,
+    highlightMatch: highlightMatch,
+    stripHtml: stripHtml,
+    getViewAllUrl: getViewAllUrl,
+    searchAll: searchAll,
+    renderArticleCard: renderArticleCard,
+    renderNewsCard: renderNewsCard,
+    renderPageCard: renderPageCard
+  };
+
+  var overlay = document.getElementById('search-overlay');
+  var input = document.getElementById('search-input');
+  var resultsContainer = document.getElementById('search-results');
+  var closeBtn = document.getElementById('search-close');
+  var openBtns = document.querySelectorAll('[data-search-toggle]');
+
+  if (!overlay || !input || !resultsContainer) return;
+
+  var debounceTimer;
+
+  // ─── Open / Close ──────────────────────────────────────────────
+
+  function openSearch() {
+    overlay.classList.remove('hidden');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    renderInitial();
+    setTimeout(function () { input.focus(); }, 100);
+  }
+
+  function closeSearch() {
+    overlay.classList.add('hidden');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    input.value = '';
+    resultsContainer.innerHTML = '';
+  }
+
+  for (var i = 0; i < openBtns.length; i++) {
+    openBtns[i].addEventListener('click', function (e) {
+      e.preventDefault();
+      var mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu && mobileMenu.classList.contains('mobile-menu-active')) {
+        var closeMenuBtn = document.getElementById('mobile-menu-close');
+        if (closeMenuBtn) closeMenuBtn.click();
+      }
+      openSearch();
+    });
+  }
+
+  if (closeBtn) closeBtn.addEventListener('click', closeSearch);
+
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) closeSearch();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
+      closeSearch();
+    }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+      if (overlay.classList.contains('hidden')) {
+        openSearch();
+      } else {
+        closeSearch();
+      }
+    }
+  });
+
+  // ─── Render ────────────────────────────────────────────────────
+
+  function renderInitial() {
+    resultsContainer.innerHTML =
+      '<div class="text-center py-10">' +
+      '<svg class="w-10 h-10 text-gray-200 mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>' +
+      '<p class="text-sm text-gray-400">Search articles, authors, keywords, news, and pages</p>' +
+      '<p class="text-xs text-gray-300 mt-1">Type at least 2 characters to start</p>' +
+      '</div>';
+  }
+
+  function renderViewAllLink(query) {
+    return '<div class="pt-3 mt-3 border-t border-gray-100">' +
+      '<a href="' + getViewAllUrl(query) + '" class="inline-flex w-full items-center justify-center px-3 py-2 text-sm font-semibold text-teal-700 bg-teal-50 rounded-lg hover:bg-teal-100 transition-colors">' +
+      'View All Results' +
+      '<svg class="ml-1.5 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>' +
+      '</a>' +
+      '</div>';
+  }
+
+  function renderResultsHeader(query, total) {
+    return '<div class="flex items-center justify-between gap-2 mb-3">' +
+      '<p class="text-sm text-gray-500">' + total + ' result' + (total > 1 ? 's' : '') + ' found</p>' +
+      '<a href="' + getViewAllUrl(query) + '" class="inline-flex items-center text-sm font-semibold text-teal-700 hover:text-teal-800 transition-colors whitespace-nowrap">' +
+      'View All Results' +
+      '<svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>' +
+      '</a>' +
+      '</div>';
+  }
+
   function renderResults(query) {
-    if (!query || query.length < 2) {
+    var state = searchAll(query);
+
+    if (!state.query || state.query.length < 2) {
       renderInitial();
       return;
     }
 
-    var q = query.toLowerCase();
-    var articleResults = searchArticles(q);
-    var newsResults = searchNews(q);
-    var pageResults = searchPages(q);
-    var total = articleResults.length + newsResults.length + pageResults.length;
-
-    if (total === 0) {
+    if (state.total === 0) {
       resultsContainer.innerHTML =
         '<div class="text-center py-8">' +
         '<svg class="w-12 h-12 text-gray-300 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>' +
-        '<p class="text-gray-500">No results found for "<strong>' + escapeHtml(query) + '</strong>"</p>' +
+        '<p class="text-gray-500">No results found for "<strong>' + escapeHtml(state.query) + '</strong>"</p>' +
         '<p class="text-xs text-gray-400 mt-1">Try different keywords or check spelling</p>' +
+        renderViewAllLink(state.query) +
         '</div>';
       return;
     }
 
-    var html = '<p class="text-sm text-gray-500 mb-3">' + total + ' result' + (total > 1 ? 's' : '') + ' found</p>';
+    var html = renderResultsHeader(state.query, state.total);
     html += '<div class="space-y-2">';
 
     // Articles first (most important)
-    if (articleResults.length > 0) {
-      articleResults.sort(function (a, b) { return b.score - a.score; });
-      var showArticles = articleResults.slice(0, 8);
-      html += '<p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mt-2 mb-1">Articles (' + articleResults.length + ')</p>';
+    if (state.articleResults.length > 0) {
+      var showArticles = state.articleResults.slice(0, 8);
+      html += '<p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mt-2 mb-1">Articles (' + state.articleResults.length + ')</p>';
       for (var i = 0; i < showArticles.length; i++) {
-        html += renderArticleCard(showArticles[i].item, query);
+        html += renderArticleCard(showArticles[i].item, state.query);
       }
-      if (articleResults.length > 8) {
-        html += '<p class="text-xs text-teal-600 text-center py-1">+ ' + (articleResults.length - 8) + ' more articles</p>';
+      if (state.articleResults.length > 8) {
+        html += '<p class="text-xs text-teal-600 text-center py-1">+ ' + (state.articleResults.length - 8) + ' more articles</p>';
       }
     }
 
-    // News
-    if (newsResults.length > 0) {
-      newsResults.sort(function (a, b) { return b.score - a.score; });
-      var showNews = newsResults.slice(0, 5);
-      html += '<p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mt-3 mb-1">News (' + newsResults.length + ')</p>';
+    if (state.newsResults.length > 0) {
+      var showNews = state.newsResults.slice(0, 5);
+      html += '<p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mt-3 mb-1">News (' + state.newsResults.length + ')</p>';
       for (var j = 0; j < showNews.length; j++) {
-        html += renderNewsCard(showNews[j].item, query);
+        html += renderNewsCard(showNews[j].item, state.query);
       }
     }
 
-    // Pages
-    if (pageResults.length > 0) {
-      pageResults.sort(function (a, b) { return b.score - a.score; });
-      html += '<p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mt-3 mb-1">Pages (' + pageResults.length + ')</p>';
-      for (var k = 0; k < pageResults.length; k++) {
-        html += renderPageCard(pageResults[k].item, query);
+    if (state.pageResults.length > 0) {
+      html += '<p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mt-3 mb-1">Pages (' + state.pageResults.length + ')</p>';
+      for (var k = 0; k < state.pageResults.length; k++) {
+        html += renderPageCard(state.pageResults[k].item, state.query);
       }
     }
 
@@ -339,7 +401,10 @@
     if (current) {
       current.classList.remove('search-focused', 'bg-gray-50');
       for (var i = 0; i < links.length; i++) {
-        if (links[i] === current) { idx = i; break; }
+        if (links[i] === current) {
+          idx = i;
+          break;
+        }
       }
     }
 
