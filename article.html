@@ -749,14 +749,27 @@
       function initAttentionWidgets() {
         if (isCoverPage) return;
 
+        var attentionGrid = document.getElementById('attention-metrics-grid');
         var altmetricWrap = document.getElementById('altmetric-wrapper');
         var plumxWrap = document.getElementById('plumx-wrapper');
         var emptyNote = document.getElementById('attention-unavailable');
         var doi = normalizeDoi(article.doi);
 
+        function syncAttentionLayout() {
+          if (!attentionGrid) return;
+          var altHidden = !altmetricWrap || altmetricWrap.classList.contains('hidden');
+          var plumHidden = !plumxWrap || plumxWrap.classList.contains('hidden');
+          var oneVisible = altHidden !== plumHidden;
+          var noneVisible = altHidden && plumHidden;
+          attentionGrid.classList.toggle('grid-cols-1', oneVisible);
+          attentionGrid.classList.toggle('grid-cols-2', !oneVisible);
+          attentionGrid.classList.toggle('hidden', noneVisible);
+        }
+
         if (!doi) {
           if (altmetricWrap) altmetricWrap.classList.add('hidden');
           if (plumxWrap) plumxWrap.classList.add('hidden');
+          syncAttentionLayout();
           if (emptyNote) {
             emptyNote.classList.remove('hidden');
             emptyNote.textContent = 'Attention metrics are unavailable because DOI is missing.';
@@ -773,6 +786,7 @@
         function maybeShowAttentionUnavailable() {
           var altHidden = !altmetricWrap || altmetricWrap.classList.contains('hidden');
           var plumHidden = !plumxWrap || plumxWrap.classList.contains('hidden');
+          syncAttentionLayout();
           if (altHidden && plumHidden && emptyNote) {
             emptyNote.classList.remove('hidden');
             emptyNote.textContent = 'Attention metrics are currently unavailable for this DOI.';
@@ -1261,11 +1275,13 @@
                 (isCoverPage ? '' :
                   '<div class="bg-gray-50 rounded-xl p-6">' +
                     '<h3 class="font-semibold text-gray-900 mb-4">Research Attention</h3>' +
-                    '<div id="altmetric-wrapper" class="mb-4 min-h-14">' +
-                      '<div id="altmetric-badge" class="altmetric-embed" data-badge-type="donut" data-badge-popover="right" data-hide-no-mentions="true" data-link-target="_blank"></div>' +
-                    '</div>' +
-                    '<div id="plumx-wrapper" class="min-h-10">' +
-                      '<a id="plumx-badge" class="plumx-plum-print-popup" data-popup="right" data-size="medium" data-hide-when-empty="true" data-site="plumx" href="#"></a>' +
+                    '<div id="attention-metrics-grid" class="grid grid-cols-2 gap-3">' +
+                      '<div id="altmetric-wrapper" class="flex items-center justify-center h-24">' +
+                        '<div id="altmetric-badge" class="altmetric-embed" data-badge-type="donut" data-badge-popover="right" data-hide-no-mentions="true" data-link-target="_blank"></div>' +
+                      '</div>' +
+                      '<div id="plumx-wrapper" class="flex items-center justify-center h-24">' +
+                        '<a id="plumx-badge" class="plumx-plum-print-popup inline-block" data-popup="right" data-size="small" data-hide-when-empty="true" data-site="plumx" href="#"></a>' +
+                      '</div>' +
                     '</div>' +
                     '<p id="attention-unavailable" class="hidden text-xs text-gray-400 mt-3">Attention metrics are unavailable for this article.</p>' +
                   '</div>'
