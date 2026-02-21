@@ -47,6 +47,22 @@
     return 'current-issue.html?' + params.toString();
   }
 
+  function resolveIssueArticleCount(issue) {
+    var fallbackCount = typeof issue.articleCount === 'number' ? issue.articleCount : null;
+    if (!Array.isArray(window.ARTICLES)) return fallbackCount;
+    if (issue.volume === null || issue.volume === undefined || issue.issue === null || issue.issue === undefined) return fallbackCount;
+
+    var matches = window.ARTICLES.filter(function (article) {
+      return String(article.volume) === String(issue.volume) && String(article.issue) === String(issue.issue);
+    });
+    if (!matches.length) return fallbackCount;
+
+    var nonCoverCount = matches.filter(function (article) {
+      return String(article.type || '').trim().toLowerCase() !== 'cover page';
+    }).length;
+    return nonCoverCount;
+  }
+
   // Render year grid
   function renderYears() {
     var visibleEntries = showAllYears ? data : data.slice(0, recentYearCount);
@@ -114,12 +130,13 @@
       var card = document.createElement('a');
       card.href = buildIssueUrl(entry, issue);
       card.className = 'article-card block bg-white rounded-xl border border-gray-200 p-6 hover:border-teal-200 hover:shadow-sm transition-all';
+      var displayCount = resolveIssueArticleCount(issue);
       card.innerHTML =
         '<div class="flex items-center justify-between mb-2">' +
           '<h3 class="font-semibold text-gray-900">' + escapeHtml(issue.label || 'Archive Issue') + '</h3>' +
         '</div>' +
         '<div class="flex items-center justify-between text-sm">' +
-          '<span class="text-gray-400">' + (typeof issue.articleCount === 'number' ? issue.articleCount + ' articles' : 'Archive issue') + '</span>' +
+          '<span class="text-gray-400">' + (typeof displayCount === 'number' ? displayCount + ' articles' : 'Archive issue') + '</span>' +
           '<span class="text-teal-700 font-medium">Browse →</span>' +
         '</div>';
       issueList.appendChild(card);

@@ -36,7 +36,14 @@
       "WebFetch(domain:arxiv.org)",
       "Bash(R --version:*)",
       "Bash(__NEW_LINE_ffe817067a908b00__ for f in *.html)",
-      "Bash(do)"
+      "Bash(do)",
+      "WebFetch(domain:www.thelancet.com)",
+      "WebFetch(domain:www.nejm.org)",
+      "WebFetch(domain:www.bmj.com)",
+      "WebFetch(domain:web.archive.org)",
+      "WebFetch(domain:www.thinslices.com)",
+      "WebFetch(domain:marius.systems)",
+      "WebFetch(domain:www.kwglobal.com)"
     ]
   }
 }

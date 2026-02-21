@@ -30,6 +30,10 @@
   var isArchiveContext = Boolean(queryLabel || queryYear || querySourceId);
   var issueContext = String(container.getAttribute('data-issue-context') || '').toLowerCase();
 
+  function isCoverPageArticle(article) {
+    return String((article && article.type) || '').trim().toLowerCase() === 'cover page';
+  }
+
   // Filter by volume/issue if specified on container
   var filterVolume = container.getAttribute('data-volume');
   var filterIssue = container.getAttribute('data-issue');
@@ -593,7 +597,8 @@
     if (fallbackNotice) fallbackNotice.classList.add('hidden');
 
     if (countDisplay) {
-      countDisplay.textContent = filtered.length + ' article' + (filtered.length !== 1 ? 's' : '');
+      var articleOnlyCount = filtered.filter(function (a) { return !isCoverPageArticle(a); }).length;
+      countDisplay.textContent = articleOnlyCount + ' article' + (articleOnlyCount !== 1 ? 's' : '');
     }
 
     if (filtered.length === 0) {

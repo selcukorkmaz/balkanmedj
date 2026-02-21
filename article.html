@@ -15,6 +15,570 @@
   <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .author-popover {
+      position: relative;
+      display: inline-flex;
+      align-items: baseline;
+      vertical-align: baseline;
+    }
+    .author-popover-trigger {
+      border: 0;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      color: #1d4ed8;
+      font-weight: 500;
+      text-align: left;
+    }
+    .author-popover-trigger:hover,
+    .author-popover-trigger:focus-visible {
+      text-decoration: underline;
+      outline: none;
+    }
+    .author-popover-card {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      width: 340px;
+      max-width: min(340px, calc(100vw - 2rem));
+      background: #fff;
+      border: 1px solid #d1d5db;
+      border-radius: 0.75rem;
+      box-shadow: 0 14px 30px rgba(17, 24, 39, 0.18);
+      padding: 0.9rem 1rem;
+      z-index: 30;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(6px);
+      transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+    }
+    .author-popover:hover .author-popover-card,
+    .author-popover:focus-within .author-popover-card {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+    .author-popover-title {
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 0.5rem;
+      line-height: 1.35;
+      font-size: 1.03rem;
+    }
+    .author-popover-line {
+      color: #1f2937;
+      line-height: 1.45;
+      margin-bottom: 0.5rem;
+      font-size: 0.985rem;
+    }
+    .author-popover-meta {
+      color: #4b5563;
+      line-height: 1.45;
+      margin-bottom: 0.5rem;
+      font-size: 0.94rem;
+    }
+    .author-popover-more {
+      display: inline-block;
+      margin-bottom: 0.45rem;
+      color: #1d4ed8;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .author-popover-more:hover {
+      text-decoration: underline;
+    }
+    .author-popover-orcid {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      color: #1d4ed8;
+      text-decoration: none;
+      font-size: 0.92rem;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+    .author-popover-orcid:hover {
+      text-decoration: underline;
+    }
+    .author-corresponding-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0.14rem;
+      color: #0f766e;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .author-corresponding-marker {
+      display: inline-block;
+      margin-left: 0;
+      color: #111827;
+      font-weight: 700;
+      line-height: 1;
+      vertical-align: middle;
+    }
+    .author-separator {
+      color: #6b7280;
+      margin-left: 0.1rem;
+      margin-right: 0.35rem;
+    }
+    .publication-history-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      color: #111827;
+      font-size: inherit;
+      font-weight: 400;
+      line-height: inherit;
+      border: 0;
+      background: transparent;
+      padding: 0;
+    }
+    .publication-history-chevron {
+      width: 1rem;
+      height: 1rem;
+      transition: transform 0.2s ease;
+    }
+    .publication-history-toggle[aria-expanded="true"] .publication-history-chevron {
+      transform: rotate(180deg);
+    }
+    .article-reading-column {
+      max-width: 76ch;
+    }
+    .article-layout-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 2rem;
+    }
+    .article-main {
+      min-width: 0;
+    }
+    .article-sidebar {
+      display: none;
+      align-self: start;
+    }
+    .article-sidebar-inner {
+      display: grid;
+      gap: 1.25rem;
+    }
+    .article-tools-mobile {
+      display: block;
+    }
+    .article-title {
+      font-size: clamp(2rem, 1.55rem + 1.45vw, 3rem);
+      line-height: 1.16;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.1rem;
+    }
+    .article-author-line {
+      color: #334155;
+      font-size: 1.04rem;
+      line-height: 1.75;
+    }
+    .article-meta-card {
+      background: linear-gradient(145deg, #f8fbfb 0%, #f1f6f8 100%);
+      border: 1px solid #e2e8f0;
+      border-radius: 0.95rem;
+      padding: 1rem 1.1rem;
+      margin-bottom: 1.75rem;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+      font-size: 0.96rem;
+    }
+    .article-section-title {
+      font-size: 1.33rem;
+      line-height: 1.3;
+      letter-spacing: 0;
+      margin-bottom: 0.9rem;
+      color: #0f172a;
+    }
+    .article-abstract {
+      color: #334155;
+    }
+    .article-body {
+      font-size: 1.2rem;
+      line-height: 1.88;
+      color: #1f2937;
+    }
+    .article-body p {
+      margin-bottom: 1.05rem;
+    }
+    /* Legacy mirrored content sometimes carries right-edge border artifacts. */
+    .article-body div[style*="text-align:justify"],
+    .article-body div[style*="text-align: justify"],
+    .article-body div[style*="text-align:justify"] > p,
+    .article-body div[style*="text-align: justify"] > p {
+      border-right: 0 !important;
+      border-left: 0 !important;
+      box-shadow: none !important;
+      outline: 0 !important;
+    }
+    .prose {
+      font-size: 1.16rem;
+      line-height: 1.84;
+    }
+    #article-secondary-cards {
+      transition: opacity 0.22s ease, transform 0.22s ease;
+    }
+    #article-secondary-cards.secondary-cards-moving {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    .article-tools-stack {
+      display: grid;
+      gap: 1rem;
+    }
+    .journal-tool-panel {
+      border: 1px solid #d7dee8;
+      border-radius: 1rem;
+      background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+      overflow: hidden;
+      box-shadow: 0 14px 30px -26px rgba(15, 23, 42, 0.5), 0 1px 0 rgba(255, 255, 255, 0.9) inset;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .journal-tool-panel:hover {
+      border-color: #c8d3e0;
+      box-shadow: 0 18px 34px -26px rgba(15, 23, 42, 0.58), 0 1px 0 rgba(255, 255, 255, 0.95) inset;
+      transform: translateY(-1px);
+    }
+    .journal-tool-summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      cursor: pointer;
+      list-style: none;
+      font-size: 0.96rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      color: #0f172a;
+      padding: 0.96rem 1.08rem;
+      background: linear-gradient(180deg, #f8fbff 0%, #f4f8fc 100%);
+      border-bottom: 1px solid transparent;
+      transition: background-color 0.15s ease;
+    }
+    .journal-tool-summary:hover {
+      background: linear-gradient(180deg, #f3f8ff 0%, #edf4fb 100%);
+    }
+    .journal-tool-summary::-webkit-details-marker {
+      display: none;
+    }
+    .journal-tool-chevron {
+      width: 0.92rem;
+      height: 0.92rem;
+      color: #64748b;
+      transition: transform 0.18s ease;
+    }
+    .journal-tool-panel[open] .journal-tool-chevron {
+      transform: rotate(180deg);
+    }
+    .journal-tool-body {
+      padding: 1.02rem 1.08rem 1.1rem;
+      background: linear-gradient(180deg, #ffffff 0%, #fcfdff 100%);
+      border-top: 1px solid #e6ebf1;
+    }
+    .impact-metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.62rem;
+      margin-bottom: 0.9rem;
+    }
+    .impact-metric-tile {
+      border: 1px solid #e3e9f0;
+      border-radius: 0.82rem;
+      background: linear-gradient(160deg, #ffffff 0%, #f7fbff 100%);
+      padding: 0.56rem 0.64rem 0.62rem;
+      min-height: 4.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75) inset;
+    }
+    .impact-metric-label {
+      font-size: 0.64rem;
+      line-height: 1.15;
+      text-transform: uppercase;
+      letter-spacing: 0.085em;
+      color: #64748b;
+      font-weight: 700;
+    }
+    .impact-metric-value {
+      font-size: 1.06rem;
+      line-height: 1.12;
+      color: #0f172a;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .impact-metric-source {
+      margin-top: 0.24rem;
+      font-size: 0.62rem;
+      line-height: 1.25;
+      color: #8b9ab0;
+      font-weight: 500;
+    }
+    .citation-intel-shell {
+      border: 1px solid #e3e9f0;
+      border-radius: 0.85rem;
+      padding: 0.72rem 0.78rem;
+      background: #ffffff;
+    }
+    .citation-intel-title {
+      font-size: 0.7rem;
+      line-height: 1.2;
+      text-transform: uppercase;
+      letter-spacing: 0.095em;
+      color: #56657a;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .citation-tools-stack {
+      display: grid;
+      gap: 0.68rem;
+    }
+    .citation-format-label {
+      display: block;
+      font-size: 0.72rem;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: #5d6b7f;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .citation-format-select {
+      width: 100%;
+      border: 1px solid #c9d4e2;
+      border-radius: 0.72rem;
+      padding: 0.55rem 0.7rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #1f2937;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafd 100%);
+    }
+    .citation-output-surface {
+      background: linear-gradient(180deg, #fbfdff 0%, #f6f9fd 100%);
+      border: 1px solid #d8e1ec;
+      border-radius: 0.72rem;
+      padding: 0.72rem 0.78rem;
+      font-size: 0.74rem;
+      line-height: 1.5;
+      color: #2f3c4d;
+      max-height: 8.7rem;
+      overflow-y: auto;
+    }
+    .citation-output-surface pre {
+      margin: 0;
+      font-size: 0.72rem;
+      line-height: 1.45;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+    .citation-btn-primary {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      padding: 0.56rem 0.8rem;
+      border-radius: 0.72rem;
+      border: 1px solid #0d9488;
+      background: linear-gradient(180deg, #0f766e 0%, #0c6962 100%);
+      color: #ffffff;
+      font-size: 0.82rem;
+      font-weight: 700;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+      box-shadow: 0 8px 16px -12px rgba(13, 148, 136, 0.85);
+    }
+    .citation-btn-primary:hover {
+      filter: brightness(1.03);
+      transform: translateY(-1px);
+    }
+    .citation-btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding: 0.5rem 0.65rem;
+      border-radius: 0.7rem;
+      border: 1px solid #cfd9e6;
+      background: #ffffff;
+      color: #334155;
+      font-size: 0.76rem;
+      font-weight: 600;
+      transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+    }
+    .citation-btn-secondary:hover {
+      border-color: #8ca4bf;
+      background: #f7fbff;
+      color: #0f172a;
+    }
+    .related-list {
+      display: grid;
+      gap: 0.44rem;
+    }
+    .related-entry {
+      display: block;
+      padding: 0.68rem 0.72rem;
+      border: 1px solid transparent;
+      border-radius: 0.74rem;
+      transition: border-color 0.18s ease, background-color 0.18s ease, transform 0.18s ease;
+    }
+    .related-entry:hover {
+      border-color: #d5dfeb;
+      background: #f7fbff;
+      transform: translateY(-1px);
+    }
+    .related-entry-title {
+      font-size: 0.84rem;
+      line-height: 1.35;
+      font-weight: 600;
+      color: #0f172a;
+    }
+    .related-entry-meta {
+      margin-top: 0.24rem;
+      font-size: 0.7rem;
+      line-height: 1.3;
+      color: #7a889b;
+    }
+    #attention-metrics-grid {
+      align-items: center;
+    }
+    #altmetric-wrapper,
+    #plumx-wrapper {
+      border: 1px solid #dce4ef;
+      border-radius: 0.82rem;
+      background: linear-gradient(170deg, #ffffff 0%, #f7fbff 100%);
+      min-height: 6rem;
+    }
+    .journal-side-card {
+      border: 1px solid #e4e7eb;
+      border-radius: 0.95rem;
+      background: #fbfcfd;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+      padding: 1.05rem 1.1rem;
+    }
+    .side-card-label {
+      display: block;
+      margin-bottom: 0.75rem;
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64748b;
+    }
+    #sidebar-toc .article-toc {
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      padding: 0;
+    }
+    #sidebar-toc .article-toc a {
+      color: #334155;
+      padding: 0.62rem 0.4rem 0.62rem 0.78rem;
+      margin: 0;
+      border-left: 2px solid transparent;
+      font-size: 0.88rem;
+      font-weight: 500;
+      line-height: 1.35;
+      text-transform: none;
+      letter-spacing: 0.01em;
+    }
+    #sidebar-toc .article-toc a + a {
+      border-top: 1px solid #eef2f6;
+    }
+    #sidebar-toc .article-toc a:hover {
+      color: #0f766e;
+      background: #f8fbfb;
+      border-left-color: #99d4cd;
+    }
+    #sidebar-toc .article-toc a.active {
+      color: #0f766e;
+      font-weight: 600;
+      background: #f4faf9;
+      border-left-color: #0f766e;
+    }
+    .desktop-access-card {
+      border: 1px solid #e5e7eb;
+      background: #fbfcfd;
+    }
+    .desktop-access-card .access-cta {
+      min-height: 2.7rem;
+      font-size: 1.03rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      border-radius: 0.62rem;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset;
+    }
+    .desktop-access-card .access-meta {
+      margin-top: 0.68rem;
+      text-align: center;
+      font-size: 0.76rem;
+      letter-spacing: 0.035em;
+      color: #8a97a8;
+    }
+    @media (max-width: 480px) {
+      .impact-metric-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .impact-metric-tile--citations {
+        grid-column: 1 / -1;
+      }
+    }
+    .author-corresponding-icon:hover {
+      color: #0b5f58;
+    }
+    .author-corresponding-icon svg {
+      width: 0.95rem;
+      height: 0.95rem;
+      display: block;
+    }
+    @media (max-width: 640px) {
+      .author-popover-card {
+        left: 50%;
+        transform: translate(-50%, 6px);
+      }
+      .author-popover:hover .author-popover-card,
+      .author-popover:focus-within .author-popover-card {
+        transform: translate(-50%, 0);
+      }
+    }
+    @media (max-width: 1023px) {
+      .article-reading-column {
+        max-width: 100%;
+      }
+      .article-title {
+        font-size: clamp(1.82rem, 1.35rem + 2.2vw, 2.25rem);
+      }
+    }
+    @media (min-width: 860px) {
+      .article-layout-grid {
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 320px);
+        gap: 2.5rem;
+        align-items: start;
+        overflow: visible;
+      }
+      .article-sidebar {
+        display: block;
+        align-self: start;
+        position: sticky;
+        top: 7rem;
+        height: max-content;
+        z-index: 2;
+      }
+      .article-sidebar-inner {
+        position: static;
+        max-height: none;
+        overflow: visible;
+        padding-right: 0;
+      }
+      .article-tools-mobile {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-900 font-sans">
 
@@ -232,6 +796,7 @@
   </button>
 
   <script src="js/data/articles.js"></script>
+  <script src="js/data/author-metadata.js"></script>
   <script src="js/data/articles-in-press.js"></script>
   <script src="js/data-loader.js"></script>
   <script src="js/data/news.js"></script>
@@ -315,6 +880,84 @@
         return;
       }
 
+      function getPrecomputedMetadataForArticle() {
+        if (!window.AUTHOR_METADATA) return null;
+        var articleKey = String(article.id || id || '').trim();
+        var sourceKey = String(article.sourceArticleId || '').trim();
+        return window.AUTHOR_METADATA[articleKey] || (sourceKey ? window.AUTHOR_METADATA[sourceKey] : null);
+      }
+
+      function parseFlexibleDate(value) {
+        var raw = String(value || '').trim();
+        if (!raw) return null;
+
+        var isoMatch = raw.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+        if (isoMatch) {
+          return new Date(Number(isoMatch[1]), Number(isoMatch[2]) - 1, Number(isoMatch[3]));
+        }
+
+        var dotMatch = raw.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
+        if (dotMatch) {
+          return new Date(Number(dotMatch[3]), Number(dotMatch[2]) - 1, Number(dotMatch[1]));
+        }
+
+        var dayMonthMatch = raw.match(/^(\d{1,2})\s+([A-Za-z]+),\s*(\d{4})$/);
+        if (dayMonthMatch) {
+          raw = dayMonthMatch[2] + ' ' + dayMonthMatch[1] + ', ' + dayMonthMatch[3];
+        }
+
+        var monthDayMatch = raw.match(/^([A-Za-z]+),\s*(\d{1,2}),\s*(\d{4})$/);
+        if (monthDayMatch) {
+          raw = monthDayMatch[1] + ' ' + monthDayMatch[2] + ', ' + monthDayMatch[3];
+        }
+
+        var parsed = Date.parse(raw);
+        if (isNaN(parsed)) return null;
+        var date = new Date(parsed);
+        if (isNaN(date.getTime())) return null;
+        return date;
+      }
+
+      function dateToIso(value) {
+        var date = parseFlexibleDate(value);
+        if (!date) return '';
+        var yyyy = date.getFullYear();
+        var mm = String(date.getMonth() + 1).padStart(2, '0');
+        var dd = String(date.getDate()).padStart(2, '0');
+        return yyyy + '-' + mm + '-' + dd;
+      }
+
+      function formatDateForDisplay(value) {
+        var raw = String(value || '').trim();
+        if (!raw) return '';
+        var date = parseFlexibleDate(raw);
+        if (!date) return raw;
+        return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+      }
+
+      function applyPrecomputedPublicationMetadataEarly() {
+        var meta = getPrecomputedMetadataForArticle();
+        if (!meta || !meta.publicationHistory) return;
+        var history = meta.publicationHistory;
+
+        var receivedIso = dateToIso(history.received);
+        var acceptedIso = dateToIso(history.accepted);
+        var availableIso = dateToIso(history.availableOnlineDate);
+        var publishedOnlineIso = dateToIso(history.publishedOnline);
+        var publishedInIssueIso = dateToIso(history.publishedInIssue);
+        var publishedIso = dateToIso(history.published);
+
+        if (receivedIso) article.received = receivedIso;
+        if (acceptedIso) article.accepted = acceptedIso;
+
+        var preferredPublished = publishedInIssueIso || publishedOnlineIso || availableIso || publishedIso;
+        if (preferredPublished) {
+          article.published = preferredPublished;
+        }
+      }
+
+      applyPrecomputedPublicationMetadataEarly();
+
       function buildArticleUrl(articleId) {
         var qp = new URLSearchParams();
         qp.set('id', String(articleId));
@@ -332,7 +975,6 @@
       }
 
       var hasFullText = !!article.hasFullText;
-      var fullTextLoaded = false;
       var noAbstractTypes = ['Editorial', 'Clinical Image', 'Scientific Letter', 'Letter to the Editor'];
       var isNoAbstract = noAbstractTypes.indexOf(article.type) !== -1;
       var isCoverPage = article.type === 'Cover Page';
@@ -344,6 +986,13 @@
         return String(value || '')
           .replace(/&/g, '&amp;')
           .replace(/"/g, '&quot;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+      }
+
+      function escapeHtml(value) {
+        return String(value || '')
+          .replace(/&/g, '&amp;')
           .replace(/</g, '&lt;')
           .replace(/>/g, '&gt;');
       }
@@ -749,11 +1398,25 @@
       function initAttentionWidgets() {
         if (isCoverPage) return;
 
+        var attentionPanel = document.querySelector('[data-tool-panel="attention"]');
         var attentionGrid = document.getElementById('attention-metrics-grid');
         var altmetricWrap = document.getElementById('altmetric-wrapper');
         var plumxWrap = document.getElementById('plumx-wrapper');
+        var altBadge = document.getElementById('altmetric-badge');
+        var plumxBadge = document.getElementById('plumx-badge');
         var emptyNote = document.getElementById('attention-unavailable');
         var doi = normalizeDoi(article.doi);
+
+        function hideAttentionPanel() {
+          if (!attentionPanel) return;
+          attentionPanel.classList.add('hidden');
+          attentionPanel.removeAttribute('open');
+        }
+
+        function showAttentionPanel() {
+          if (!attentionPanel) return;
+          attentionPanel.classList.remove('hidden');
+        }
 
         function syncAttentionLayout() {
           if (!attentionGrid) return;
@@ -761,39 +1424,78 @@
           var plumHidden = !plumxWrap || plumxWrap.classList.contains('hidden');
           var oneVisible = altHidden !== plumHidden;
           var noneVisible = altHidden && plumHidden;
-          attentionGrid.classList.toggle('grid-cols-1', oneVisible);
-          attentionGrid.classList.toggle('grid-cols-2', !oneVisible);
+
+          attentionGrid.classList.remove('grid-cols-1');
+          attentionGrid.classList.add('grid-cols-2');
           attentionGrid.classList.toggle('hidden', noneVisible);
+
+          if (altmetricWrap) altmetricWrap.style.gridColumn = '';
+          if (plumxWrap) plumxWrap.style.gridColumn = '';
+
+          if (oneVisible) {
+            if (!altHidden && altmetricWrap) altmetricWrap.style.gridColumn = '2 / 3';
+            if (!plumHidden && plumxWrap) plumxWrap.style.gridColumn = '2 / 3';
+          }
+        }
+
+        function hasRenderableBadge(wrapper, badge) {
+          if (!wrapper || !badge) return false;
+          var wrapperStyle = window.getComputedStyle(wrapper);
+          var badgeStyle = window.getComputedStyle(badge);
+          var hiddenByUi = wrapper.getAttribute('data-attention-hidden-by-ui') === '1';
+
+          var badgeText = String(badge.textContent || '').replace(/\s+/g, '').trim();
+          var hasChildMarkup = !!badge.querySelector('*');
+          var rect = badge.getBoundingClientRect();
+          var hasBadgeSize = rect.width > 8 && rect.height > 8;
+
+          if (!hiddenByUi && (wrapperStyle.display === 'none' || wrapperStyle.visibility === 'hidden')) {
+            return false;
+          }
+          if (!hiddenByUi && (badgeStyle.display === 'none' || badgeStyle.visibility === 'hidden' || badge.getAttribute('aria-hidden') === 'true')) {
+            return false;
+          }
+          return hasChildMarkup || badgeText.length > 0 || hasBadgeSize;
+        }
+
+        function evaluateAttentionPanelVisibility() {
+          var altAvailable = hasRenderableBadge(altmetricWrap, altBadge);
+          var plumAvailable = hasRenderableBadge(plumxWrap, plumxBadge);
+
+          if (altmetricWrap) {
+            altmetricWrap.classList.toggle('hidden', !altAvailable);
+            if (altAvailable) altmetricWrap.removeAttribute('data-attention-hidden-by-ui');
+            else altmetricWrap.setAttribute('data-attention-hidden-by-ui', '1');
+          }
+          if (plumxWrap) {
+            plumxWrap.classList.toggle('hidden', !plumAvailable);
+            if (plumAvailable) plumxWrap.removeAttribute('data-attention-hidden-by-ui');
+            else plumxWrap.setAttribute('data-attention-hidden-by-ui', '1');
+          }
+          syncAttentionLayout();
+
+          if (!altAvailable && !plumAvailable) {
+            hideAttentionPanel();
+            return;
+          }
+
+          showAttentionPanel();
+          if (emptyNote) emptyNote.classList.add('hidden');
         }
 
         if (!doi) {
           if (altmetricWrap) altmetricWrap.classList.add('hidden');
           if (plumxWrap) plumxWrap.classList.add('hidden');
           syncAttentionLayout();
-          if (emptyNote) {
-            emptyNote.classList.remove('hidden');
-            emptyNote.textContent = 'Attention metrics are unavailable because DOI is missing.';
-          }
+          hideAttentionPanel();
           return;
         }
 
-        var altBadge = document.getElementById('altmetric-badge');
         if (altBadge) altBadge.setAttribute('data-doi', doi);
 
-        var plumxBadge = document.getElementById('plumx-badge');
         if (plumxBadge) plumxBadge.href = 'https://plu.mx/plum/a/?doi=' + encodeURIComponent(doi);
 
-        function maybeShowAttentionUnavailable() {
-          var altHidden = !altmetricWrap || altmetricWrap.classList.contains('hidden');
-          var plumHidden = !plumxWrap || plumxWrap.classList.contains('hidden');
-          syncAttentionLayout();
-          if (altHidden && plumHidden && emptyNote) {
-            emptyNote.classList.remove('hidden');
-            emptyNote.textContent = 'Attention metrics are currently unavailable for this DOI.';
-          }
-        }
-
-        loadScriptOnce('altmetric-embed-script', 'https://embed.altmetric.com/assets/embed.js')
+        var altmetricLoad = loadScriptOnce('altmetric-embed-script', 'https://embed.altmetric.com/assets/embed.js')
           .then(function () {
             if (typeof window._altmetric_embed_init === 'function') {
               window._altmetric_embed_init();
@@ -801,14 +1503,18 @@
           })
           .catch(function () {
             if (altmetricWrap) altmetricWrap.classList.add('hidden');
-            maybeShowAttentionUnavailable();
           });
 
-        loadScriptOnce('plumx-widget-script', 'https://cdn.plu.mx/widget-popup.js')
+        var plumxLoad = loadScriptOnce('plumx-widget-script', 'https://cdn.plu.mx/widget-popup.js')
           .catch(function () {
             if (plumxWrap) plumxWrap.classList.add('hidden');
-            maybeShowAttentionUnavailable();
           });
+
+        Promise.all([altmetricLoad, plumxLoad]).then(function () {
+          evaluateAttentionPanelVisibility();
+          setTimeout(evaluateAttentionPanelVisibility, 800);
+          setTimeout(evaluateAttentionPanelVisibility, 2200);
+        });
       }
 
       function stripDuplicateAbstractLabel(rawHtml) {
@@ -925,6 +1631,57 @@
             headingParent.style.minHeight = '';
           }
         }
+
+        // Normalize legacy inline styles from mirrored source HTML.
+        // Some records include editor/debug borders and layout floats that create visual artifacts.
+        var styledNodes = root.querySelectorAll('[style]');
+        Array.prototype.forEach.call(styledNodes, function (node) {
+          if (!node || !node.style) return;
+          var tag = (node.tagName || '').toUpperCase();
+          var isTableNode = tag === 'TABLE' || tag === 'THEAD' || tag === 'TBODY' || tag === 'TR' || tag === 'TH' || tag === 'TD' || tag === 'CAPTION';
+
+          node.style.boxShadow = '';
+          node.style.outline = '';
+
+          if (!isTableNode) {
+            node.style.border = '';
+            node.style.borderLeft = '';
+            node.style.borderRight = '';
+            node.style.borderTop = '';
+            node.style.borderBottom = '';
+          }
+
+          if (tag === 'DIV') {
+            if (node.style.float) node.style.float = '';
+            if (node.style.width === '100%') node.style.width = '';
+            if (node.style.minHeight) node.style.minHeight = '';
+            if (node.style.paddingBottom === '0px') node.style.paddingBottom = '';
+          }
+
+          if (node.style.backgroundImage && /showblocks|ckeditor/i.test(node.style.backgroundImage)) {
+            node.style.backgroundImage = '';
+          }
+        });
+
+        // Some mirrored full-text payloads end with a stray "<" or ">" text artifact.
+        // Remove only isolated single-character angle tokens to avoid touching real content.
+        var textWalker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+        var orphanTextNodes = [];
+        var textNode;
+        while ((textNode = textWalker.nextNode())) {
+          var token = String(textNode.nodeValue || '').replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
+          if (token === '<' || token === '>') orphanTextNodes.push(textNode);
+        }
+        orphanTextNodes.forEach(function (node) {
+          if (node && node.parentNode) node.parentNode.removeChild(node);
+        });
+
+        var orphanElements = root.querySelectorAll('p, div, span, li');
+        Array.prototype.forEach.call(orphanElements, function (el) {
+          if (!el || el.children.length) return;
+          var token = String(el.textContent || '').replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
+          if (token === '<' || token === '>') el.remove();
+        });
 
         return root.innerHTML;
       }
@@ -1049,22 +1806,642 @@
                       'bg-teal-100 text-teal-700';
       var showAheadOfPrintBadge = Boolean(article.aheadOfPrint || sourceContext === 'aip');
 
-      var pubDate = article.published ? new Date(article.published).toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'}) : '';
-      var recDate = article.received ? new Date(article.received).toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'}) : '';
-      var accDate = article.accepted ? new Date(article.accepted).toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'}) : '';
+      var publicationHistoryState = {
+        received: String(article.received || '').trim(),
+        accepted: String(article.accepted || '').trim(),
+        availableOnlineDate: '',
+        publishedOnline: '',
+        publishedInIssue: '',
+        published: String(article.published || '').trim()
+      };
 
-      // Authors HTML
-      var authorsHtml = article.authors.map(function (a, i) {
-        var authorAffiliation = String(a.affiliation || '').trim();
-        return '<div class="flex items-start gap-3 py-3' + (i < article.authors.length - 1 ? ' border-b border-gray-100' : '') + '">' +
-          '<div class="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0"><span class="text-sm font-semibold text-teal-700">' + a.name.charAt(0) + '</span></div>' +
-          '<div>' +
-            '<div class="font-medium text-gray-900">' + a.name + '</div>' +
-            '<div class="text-sm text-gray-500">' + (authorAffiliation || 'Affiliation not listed') + '</div>' +
-            (a.orcid ? '<a href="https://orcid.org/' + a.orcid + '" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-xs text-teal-700 hover:text-teal-700"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256"><path fill="#A6CE39" d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z"/><path fill="#fff" d="M86.3,186.2H70.9V79.1h15.4v48.4V186.2z"/><path fill="#fff" d="M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z"/><path fill="#fff" d="M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z"/></svg>' + a.orcid + '</a>' : '') +
-          '</div>' +
+      function mergePublicationHistory(history) {
+        if (!history) return false;
+        var changed = false;
+        var keys = ['received', 'accepted', 'availableOnlineDate', 'publishedOnline', 'publishedInIssue', 'published'];
+        for (var i = 0; i < keys.length; i++) {
+          var key = keys[i];
+          var incoming = String(history[key] || '').trim();
+          if (incoming && publicationHistoryState[key] !== incoming) {
+            publicationHistoryState[key] = incoming;
+            changed = true;
+          }
+        }
+        return changed;
+      }
+
+      var initialPrecomputedMeta = getPrecomputedMetadataForArticle();
+      if (initialPrecomputedMeta && initialPrecomputedMeta.publicationHistory) {
+        mergePublicationHistory(initialPrecomputedMeta.publicationHistory);
+      }
+
+      var recDate = formatDateForDisplay(publicationHistoryState.received);
+      var accDate = formatDateForDisplay(publicationHistoryState.accepted);
+      var headlinePublishedRaw = publicationHistoryState.publishedInIssue || publicationHistoryState.publishedOnline || publicationHistoryState.availableOnlineDate || publicationHistoryState.published;
+      var pubDate = formatDateForDisplay(headlinePublishedRaw);
+
+      // Build author-affiliation map so each unique affiliation gets a number.
+      var affiliationIndexByKey = {};
+      var affiliationList = [];
+      var rawAuthors = Array.isArray(article.authors) ? article.authors : [];
+
+      function registerAffiliation(value) {
+        var affiliationText = String(value || '').trim();
+        if (!affiliationText) return 0;
+        var key = affiliationText.toLowerCase();
+        if (!affiliationIndexByKey[key]) {
+          affiliationList.push(affiliationText);
+          affiliationIndexByKey[key] = affiliationList.length;
+        }
+        return affiliationIndexByKey[key];
+      }
+
+      var authorEntries = rawAuthors.map(function (a) {
+        var rawName = String(a.name || '').trim();
+        var hasNameAsterisk = /\*$/.test(rawName);
+        var cleanName = rawName.replace(/\*+$/, '').trim();
+        var rawAffiliation = String(a.affiliation || '').trim();
+        var parts = rawAffiliation ? rawAffiliation.split(/\s*;\s*/).map(function (item) {
+          return item.trim();
+        }).filter(Boolean) : [];
+        var indices = [];
+
+        for (var idx = 0; idx < parts.length; idx++) {
+          var part = parts[idx];
+          indices.push(registerAffiliation(part));
+        }
+
+        return {
+          name: cleanName || rawName,
+          orcid: String(a.orcid || '').trim(),
+          affiliationIndices: indices,
+          affiliations: parts,
+          email: String(a.email || a.mail || a.eMail || '').trim(),
+          phone: String(a.phone || a.telephone || '').trim(),
+          isCorresponding: hasNameAsterisk || !!(a.corresponding || a.isCorresponding || a.correspondence)
+        };
+      });
+
+      function renderAffiliationSup(indices) {
+        if (!indices || !indices.length) return '';
+        return '<sup class="ml-1 text-xs text-gray-500">' + indices.join(',') + '</sup>';
+      }
+
+      function normalizeNameKey(name) {
+        return cleanNameForMatching(name)
+          .toLowerCase()
+          .replace(/[^a-z0-9\s]/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim();
+      }
+
+      function cleanNameForMatching(name) {
+        return String(name || '')
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/\[\[[^\]]*\]\]/g, ' ')
+          .replace(/<[^>]*>/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim();
+      }
+
+      function getNameInitials(name) {
+        var variants = getNameInitialVariants(name);
+        return variants.length ? variants[0] : '';
+      }
+
+      function getNameInitialVariants(name) {
+        var cleaned = cleanNameForMatching(name)
+          .replace(/[^A-Za-z0-9\s-]/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim();
+        if (!cleaned) return [];
+
+        var whitespaceTokens = cleaned.split(/\s+/).filter(Boolean);
+        var hyphenTokens = cleaned.split(/[\s-]+/).filter(Boolean);
+        var variants = [];
+
+        function pushVariant(value) {
+          var key = normalizeInitialsKey(value);
+          if (key && variants.indexOf(key) === -1) variants.push(key);
+        }
+
+        pushVariant(whitespaceTokens.map(function (part) { return part.charAt(0); }).join(''));
+        pushVariant(hyphenTokens.map(function (part) { return part.charAt(0); }).join(''));
+        if (whitespaceTokens.length > 1) {
+          pushVariant(whitespaceTokens[0].charAt(0) + whitespaceTokens[whitespaceTokens.length - 1].charAt(0));
+        }
+        if (hyphenTokens.length > 1) {
+          pushVariant(hyphenTokens[0].charAt(0) + hyphenTokens[hyphenTokens.length - 1].charAt(0));
+        }
+        if (whitespaceTokens.length) {
+          pushVariant(whitespaceTokens[0].charAt(0));
+          pushVariant(whitespaceTokens[whitespaceTokens.length - 1].charAt(0));
+        }
+
+        return variants;
+      }
+
+      function normalizeInitialsKey(value) {
+        return String(value || '')
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toUpperCase()
+          .replace(/[^A-Z]/g, '');
+      }
+
+      function decodeCloudflareEmailHash(hash) {
+        var hex = String(hash || '').trim();
+        if (!hex || hex.length < 4) return '';
+        var key = parseInt(hex.slice(0, 2), 16);
+        if (isNaN(key)) return '';
+        var out = '';
+        for (var i = 2; i < hex.length; i += 2) {
+          var code = parseInt(hex.slice(i, i + 2), 16);
+          if (!isNaN(code)) out += String.fromCharCode(code ^ key);
+        }
+        return out;
+      }
+
+      function decodeCloudflareEmailFromHref(href) {
+        var raw = String(href || '');
+        var hashIndex = raw.indexOf('#');
+        if (hashIndex === -1) return '';
+        return decodeCloudflareEmailHash(raw.slice(hashIndex + 1));
+      }
+
+      function extractOriginalPaperMetadata(html) {
+        var meta = {
+          correspondingName: '',
+          correspondingAffiliation: '',
+          email: '',
+          phone: '',
+          orcidByName: {},
+          orcidByInitials: {},
+          publicationHistory: {
+            received: '',
+            accepted: '',
+            availableOnlineDate: '',
+            publishedOnline: '',
+            publishedInIssue: '',
+            published: ''
+          }
+        };
+        if (!html) return meta;
+
+        var doc;
+        try {
+          doc = new DOMParser().parseFromString(String(html), 'text/html');
+        } catch (err) {
+          return meta;
+        }
+        if (!doc || !doc.body) return meta;
+
+        var protectedEmailLink = doc.querySelector('a[href*="/cdn-cgi/l/email-protection#"]');
+        if (protectedEmailLink) {
+          var decoded = decodeCloudflareEmailFromHref(protectedEmailLink.getAttribute('href'));
+          if (decoded) meta.email = decoded;
+        }
+        if (!meta.email) {
+          var protectedEmailNode = doc.querySelector('[data-cfemail]');
+          if (protectedEmailNode) {
+            var decodedDataEmail = decodeCloudflareEmailHash(protectedEmailNode.getAttribute('data-cfemail'));
+            if (decodedDataEmail) meta.email = decodedDataEmail;
+          }
+        }
+
+        if (!meta.email) {
+          var mailtoLink = doc.querySelector('a[href^="mailto:"]');
+          if (mailtoLink) {
+            var mailHref = String(mailtoLink.getAttribute('href') || '').replace(/^mailto:/i, '').trim();
+            if (mailHref) meta.email = mailHref;
+          }
+        }
+
+        var text = doc.body.textContent || '';
+        text = text.replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
+        var headerText = text.slice(0, 10000);
+
+        var corrMatch = text.match(/Correspond(?:ing|ence)\s*author\s*:\s*(.+?)(?=e-?mail\s*:|received\s*:|accepted\s*:|available online date\s*:|doi\s*:|orcid ids? of the authors\s*:|cite this article as\s*:|copyright|$)/i);
+        if (corrMatch) {
+          var corrLine = String(corrMatch[1] || '').trim();
+          if (corrLine) {
+            var corrParts = corrLine.split(/\s*,\s*/).filter(Boolean);
+            if (corrParts.length > 1) {
+              meta.correspondingName = corrParts[0];
+              meta.correspondingAffiliation = corrParts.slice(1).join(', ');
+            } else {
+              meta.correspondingName = corrLine;
+            }
+          }
+        }
+
+        var emailMatch = text.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i);
+        if (!meta.email && emailMatch) meta.email = emailMatch[0];
+
+        var phoneMatch = text.match(/(?:Phone|Tel(?:ephone)?)\s*:\s*([+0-9()\-\/\s]{6,})/i);
+        if (phoneMatch) meta.phone = String(phoneMatch[1] || '').trim();
+
+        function readDateSegment(labelPattern) {
+          var pattern = new RegExp('(?:^|\\s)' + labelPattern + '\\s*:\\s*(.+?)(?=(?:Received|Accepted|Available\\s*Online\\s*Date|Published\\s*online|Published\\s*in\\s*issue|Published|DOI|ORCID|Copyright)\\s*:|$)', 'i');
+          var match = headerText.match(pattern);
+          if (!match) return '';
+          var cleaned = String(match[1] || '').replace(/•/g, ' ').replace(/\s+/g, ' ').trim().replace(/^[,;:. ]+|[,;:. ]+$/g, '');
+          var looksLikeDate = /^\d{1,2}\.\d{1,2}\.\d{4}$/.test(cleaned) ||
+            /^\d{4}-\d{2}-\d{2}$/.test(cleaned) ||
+            (/\b\d{4}\b/.test(cleaned) && /\b(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\b/i.test(cleaned));
+          return looksLikeDate ? cleaned : '';
+        }
+
+        meta.publicationHistory.received = readDateSegment('Received');
+        meta.publicationHistory.accepted = readDateSegment('Accepted');
+        meta.publicationHistory.availableOnlineDate = readDateSegment('Available\\s*Online\\s*Date');
+        meta.publicationHistory.publishedOnline = readDateSegment('Published\\s*online');
+        meta.publicationHistory.publishedInIssue = readDateSegment('Published\\s*in\\s*issue');
+        var genericPublished = readDateSegment('Published');
+        if (genericPublished && !meta.publicationHistory.publishedOnline && !meta.publicationHistory.publishedInIssue) {
+          meta.publicationHistory.published = genericPublished;
+        }
+
+        var orcidScopeMatch = text.match(/ORCID IDs? of the authors?\s*:\s*(.+?)(?=Cite this article as\s*:|Copyright|$)/i);
+        var orcidScope = orcidScopeMatch ? orcidScopeMatch[1] : text;
+        var pairRegex = /([A-Za-z][A-Za-z .-]{0,40})\s+((?:\d{4}-){3}\d{3}[\dX])/g;
+        var pair;
+        while ((pair = pairRegex.exec(orcidScope)) !== null) {
+          var token = String(pair[1] || '').trim();
+          var idToken = String(pair[2] || '').trim();
+          if (!token || !idToken) continue;
+          var initialsToken = normalizeInitialsKey(token);
+          if (token.indexOf('.') !== -1 && initialsToken.length <= 12) {
+            meta.orcidByInitials[initialsToken] = idToken;
+          } else {
+            meta.orcidByName[normalizeNameKey(token)] = idToken;
+          }
+        }
+
+        return meta;
+      }
+
+      function renderCorrespondingEmailIcon(entry) {
+        if (!entry || !entry.isCorresponding) return '';
+        var iconSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>';
+        var marker = '<span class="author-corresponding-marker" aria-hidden="true">*</span>';
+        if (entry.email) {
+          return marker + '<a class="author-corresponding-icon" href="mailto:' + escapeAttr(entry.email) + '" title="Email corresponding author: ' + escapeAttr(entry.email) + '" aria-label="Email corresponding author">' + iconSvg + '</a>';
+        }
+        return marker + '<span class="author-corresponding-icon" title="Corresponding author" aria-label="Corresponding author">' + iconSvg + '</span>';
+      }
+
+      function buildAuthorsDetailsHtml(entries) {
+        return '<div class="space-y-6">' +
+          '<section>' +
+            '<h3 class="text-sm font-semibold uppercase tracking-[0.08em] text-gray-500 mb-3">Authors</h3>' +
+            '<div class="space-y-2">' +
+              entries.map(function (entry, i) {
+                var orcidHtml = entry.orcid
+                  ? '<a href="https://orcid.org/' + escapeAttr(entry.orcid) + '" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-xs text-teal-700 hover:text-teal-700 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256"><path fill="#A6CE39" d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z"/><path fill="#fff" d="M86.3,186.2H70.9V79.1h15.4v48.4V186.2z"/><path fill="#fff" d="M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z"/><path fill="#fff" d="M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z"/></svg>' + escapeHtml(entry.orcid) + '</a>'
+                  : '';
+                return '<div class="py-2' + (i < entries.length - 1 ? ' border-b border-gray-100' : '') + '">' +
+                  '<div class="font-medium text-gray-900">' + escapeHtml(entry.name) + renderAffiliationSup(entry.affiliationIndices) + renderCorrespondingEmailIcon(entry) + '</div>' +
+                  orcidHtml +
+                '</div>';
+              }).join('') +
+            '</div>' +
+          '</section>' +
+          '<section>' +
+            '<h3 class="text-sm font-semibold uppercase tracking-[0.08em] text-gray-500 mb-3">Affiliations</h3>' +
+            (affiliationList.length
+              ? '<ol class="space-y-2">' + affiliationList.map(function (aff, i) {
+                  return '<li class="flex items-start gap-2 text-gray-700"><span class="text-sm font-semibold text-gray-500">' + (i + 1) + '.</span><span>' + escapeHtml(aff) + '</span></li>';
+                }).join('') + '</ol>'
+              : '<p class="text-sm text-gray-500 italic">Affiliations not listed for this article.</p>'
+            ) +
+          '</section>' +
         '</div>';
-      }).join('');
+      }
+
+      function buildInlineAuthorSummaryHtml(entries) {
+        if (!entries.length) return '<span class="text-gray-500">Balkan Medical Journal</span>';
+        return entries.map(function (entry, index) {
+          var hasNextAuthor = index < entries.length - 1;
+          var popupAffiliationsHtml = entry.affiliations.length
+            ? entry.affiliations.map(function (aff) {
+                return '<p class="author-popover-line">' + escapeHtml(aff) + '</p>';
+              }).join('')
+            : '<p class="author-popover-meta">Affiliation not listed.</p>';
+          var popupContactParts = [];
+          if (entry.phone) popupContactParts.push('Phone: ' + escapeHtml(entry.phone));
+          if (entry.email) popupContactParts.push('E-mail: <a href="mailto:' + escapeAttr(entry.email) + '" class="text-blue-700 hover:underline">' + escapeHtml(entry.email) + '</a>');
+          var popupContactHtml = popupContactParts.length
+            ? '<p class="author-popover-meta">' + popupContactParts.join(' | ') + '</p>'
+            : '';
+          var popupOrcidHtml = entry.orcid
+            ? '<a href="https://orcid.org/' + escapeAttr(entry.orcid) + '" target="_blank" rel="noopener" class="author-popover-orcid"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256"><path fill="#A6CE39" d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z"/><path fill="#fff" d="M86.3,186.2H70.9V79.1h15.4v48.4V186.2z"/><path fill="#fff" d="M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z"/><path fill="#fff" d="M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z"/></svg>' + escapeHtml(entry.orcid) + '</a>'
+            : '';
+          var moreByUrl = 'search-results.html?author=' + encodeURIComponent(entry.name);
+          var correspondingBadge = entry.isCorresponding ? '<p class="author-popover-meta"><strong>*Corresponding author</strong></p>' : '';
+          return '<div class="author-popover">' +
+            '<button type="button" class="author-popover-trigger" aria-label="Show details for ' + escapeAttr(entry.name) + '">' + escapeHtml(entry.name) + '</button>' +
+            renderCorrespondingEmailIcon(entry) +
+            (hasNextAuthor ? '<span class="author-separator" aria-hidden="true">,</span>' : '') +
+            '<div class="author-popover-card" role="tooltip">' +
+              '<div class="author-popover-title">' + escapeHtml(entry.name) + '</div>' +
+              correspondingBadge +
+              popupAffiliationsHtml +
+              popupContactHtml +
+              popupOrcidHtml +
+              '<a href="' + escapeAttr(moreByUrl) + '" class="author-popover-more">More by ' + escapeHtml(entry.name) + '</a>' +
+            '</div>' +
+          '</div>';
+        }).join('');
+      }
+
+      function refreshAuthorPopoverContent() {
+        var summaryContent = document.querySelector('#article-authors-inline .author-summary-content');
+        if (summaryContent) summaryContent.innerHTML = buildInlineAuthorSummaryHtml(authorEntries);
+
+        var detailBlocks = document.querySelectorAll('.authors-affiliations-content');
+        if (detailBlocks && detailBlocks.length) {
+          var detailsHtml = buildAuthorsDetailsHtml(authorEntries);
+          for (var i = 0; i < detailBlocks.length; i++) {
+            detailBlocks[i].innerHTML = detailsHtml;
+          }
+        }
+      }
+
+      function mergeOriginalPaperMetadata(meta) {
+        if (!meta) return false;
+        meta.orcidByName = meta.orcidByName || {};
+        meta.orcidByInitials = meta.orcidByInitials || {};
+        var changed = false;
+
+        function findAuthorByNameHint(nameHint) {
+          var hintKey = normalizeNameKey(nameHint);
+          if (!hintKey) return null;
+          for (var i = 0; i < authorEntries.length; i++) {
+            var entryKey = normalizeNameKey(authorEntries[i].name);
+            if (!entryKey) continue;
+            if (entryKey === hintKey || hintKey.indexOf(entryKey) !== -1 || entryKey.indexOf(hintKey) !== -1) {
+              return authorEntries[i];
+            }
+          }
+          return null;
+        }
+
+        var correspondingEntry = null;
+        if (meta.correspondingName) correspondingEntry = findAuthorByNameHint(meta.correspondingName);
+        if (!correspondingEntry) {
+          for (var i = 0; i < authorEntries.length; i++) {
+            if (authorEntries[i].isCorresponding) {
+              correspondingEntry = authorEntries[i];
+              break;
+            }
+          }
+        }
+        if (!correspondingEntry && authorEntries.length === 1 && (meta.email || meta.correspondingName || meta.phone || meta.correspondingAffiliation)) {
+          correspondingEntry = authorEntries[0];
+        }
+
+        if (correspondingEntry && !correspondingEntry.isCorresponding) {
+          correspondingEntry.isCorresponding = true;
+          changed = true;
+        }
+        if (correspondingEntry && meta.email && correspondingEntry.email !== meta.email) {
+          correspondingEntry.email = meta.email;
+          changed = true;
+        }
+        if (correspondingEntry && meta.phone && !correspondingEntry.phone) {
+          correspondingEntry.phone = meta.phone;
+          changed = true;
+        }
+        if (meta.publicationHistory && mergePublicationHistory(meta.publicationHistory)) {
+          changed = true;
+        }
+        if (correspondingEntry && meta.correspondingAffiliation) {
+          var corrAffiliation = String(meta.correspondingAffiliation || '').trim();
+          var hasAffiliation = false;
+          for (var a = 0; a < correspondingEntry.affiliations.length; a++) {
+            if (String(correspondingEntry.affiliations[a] || '').toLowerCase() === corrAffiliation.toLowerCase()) {
+              hasAffiliation = true;
+              break;
+            }
+          }
+          if (corrAffiliation && !hasAffiliation) {
+            correspondingEntry.affiliations.push(corrAffiliation);
+            var corrAffIndex = registerAffiliation(corrAffiliation);
+            if (corrAffIndex && correspondingEntry.affiliationIndices.indexOf(corrAffIndex) === -1) {
+              correspondingEntry.affiliationIndices.push(corrAffIndex);
+              correspondingEntry.affiliationIndices.sort(function (x, y) { return x - y; });
+            }
+            changed = true;
+          }
+        }
+
+        var usedOrcids = {};
+        for (var u = 0; u < authorEntries.length; u++) {
+          var presentOrcid = String(authorEntries[u].orcid || '').trim();
+          if (presentOrcid) usedOrcids[presentOrcid] = true;
+        }
+
+        for (var j = 0; j < authorEntries.length; j++) {
+          var entry = authorEntries[j];
+          var nameOrcid = meta.orcidByName[normalizeNameKey(entry.name)];
+          if (nameOrcid && usedOrcids[nameOrcid]) {
+            nameOrcid = '';
+          }
+          var initialsOrcid = '';
+          var entryInitialVariants = getNameInitialVariants(entry.name);
+          for (var v = 0; v < entryInitialVariants.length; v++) {
+            var candidate = meta.orcidByInitials[entryInitialVariants[v]];
+            if (candidate && !usedOrcids[candidate]) {
+              initialsOrcid = candidate;
+              break;
+            }
+          }
+          var selectedOrcid = nameOrcid || initialsOrcid || '';
+          if (selectedOrcid && !entry.orcid) {
+            entry.orcid = selectedOrcid;
+            usedOrcids[selectedOrcid] = true;
+            changed = true;
+          }
+        }
+
+        // Fallback: if metadata has leftover ORCIDs and enough unmatched authors, fill by order.
+        var remainingOrcidIds = [];
+        function pushRemaining(orcidValue) {
+          var idValue = String(orcidValue || '').trim();
+          if (!idValue || usedOrcids[idValue]) return;
+          if (remainingOrcidIds.indexOf(idValue) === -1) remainingOrcidIds.push(idValue);
+        }
+        for (var nameKey in meta.orcidByName) {
+          pushRemaining(meta.orcidByName[nameKey]);
+        }
+        for (var initialsKey in meta.orcidByInitials) {
+          pushRemaining(meta.orcidByInitials[initialsKey]);
+        }
+
+        if (remainingOrcidIds.length) {
+          var entriesWithoutOrcid = [];
+          for (var e = 0; e < authorEntries.length; e++) {
+            if (!authorEntries[e].orcid) entriesWithoutOrcid.push(authorEntries[e]);
+          }
+          if (remainingOrcidIds.length <= entriesWithoutOrcid.length) {
+            for (var r = 0; r < remainingOrcidIds.length; r++) {
+              entriesWithoutOrcid[r].orcid = remainingOrcidIds[r];
+              changed = true;
+            }
+          }
+        }
+
+        return changed;
+      }
+
+      function fetchSourceHtmlSafely(url) {
+        if (!url) return Promise.resolve('');
+        return fetch(url).then(function (res) {
+          if (!res.ok) return '';
+          return res.text();
+        }).catch(function () {
+          return '';
+        });
+      }
+
+      var pdfJsLoadPromise = null;
+
+      function loadPdfJsLibrary() {
+        if (window.pdfjsLib) return Promise.resolve(window.pdfjsLib);
+        if (pdfJsLoadPromise) return pdfJsLoadPromise;
+
+        pdfJsLoadPromise = new Promise(function (resolve) {
+          var script = document.createElement('script');
+          script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js';
+          script.async = true;
+          script.onload = function () {
+            if (!window.pdfjsLib) {
+              resolve(null);
+              return;
+            }
+            window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+            resolve(window.pdfjsLib);
+          };
+          script.onerror = function () {
+            resolve(null);
+          };
+          document.head.appendChild(script);
+        });
+
+        return pdfJsLoadPromise;
+      }
+
+      function extractPdfTextSafely(url) {
+        if (!url) return Promise.resolve('');
+
+        return loadPdfJsLibrary().then(function (pdfjsLib) {
+          if (!pdfjsLib) return '';
+
+          function readPdfText(pdfDoc) {
+            var maxPages = Math.min(pdfDoc.numPages || 0, 3);
+            if (!maxPages) return Promise.resolve('');
+
+            var pageTasks = [];
+            for (var p = 1; p <= maxPages; p++) {
+              pageTasks.push(
+                pdfDoc.getPage(p).then(function (page) {
+                  return page.getTextContent().then(function (content) {
+                    return content.items.map(function (item) { return item.str; }).join(' ');
+                  });
+                }).catch(function () {
+                  return '';
+                })
+              );
+            }
+
+            return Promise.all(pageTasks).then(function (chunks) {
+              return chunks.join(' ');
+            });
+          }
+
+          function readPdfFromUrlFallback() {
+            return pdfjsLib.getDocument(url).promise.then(readPdfText).catch(function () {
+              return '';
+            });
+          }
+
+          return fetch(url).then(function (res) {
+            if (!res.ok) return null;
+            return res.arrayBuffer();
+          }).then(function (buffer) {
+            if (!buffer) return readPdfFromUrlFallback();
+            return pdfjsLib.getDocument({ data: buffer }).promise.then(readPdfText).catch(function () {
+              return readPdfFromUrlFallback();
+            });
+          }).catch(function () {
+            return readPdfFromUrlFallback();
+          }).catch(function () {
+            return '';
+          });
+        });
+      }
+
+      function enrichAuthorsFromOriginalSources() {
+        if (!authorEntries.length) return;
+        var sourceUrls = [];
+        if (article.sourceTextUrl) sourceUrls.push(article.sourceTextUrl);
+        if (article.sourceAbstractUrl) sourceUrls.push(article.sourceAbstractUrl);
+        var seen = {};
+        sourceUrls = sourceUrls.filter(function (url) {
+          if (!url || seen[url]) return false;
+          seen[url] = true;
+          return true;
+        });
+
+        var tasks = sourceUrls.map(fetchSourceHtmlSafely);
+        if (window.DataLoader && typeof window.DataLoader.loadFullText === 'function') {
+          tasks.push(window.DataLoader.loadFullText(id).catch(function () { return ''; }));
+        }
+        var pdfUrls = [];
+        if (article.localPdfUrl) pdfUrls.push(article.localPdfUrl);
+        if (article.pdfUrl && article.pdfUrl !== article.localPdfUrl) pdfUrls.push(article.pdfUrl);
+        if (article.sourcePdfUrl) pdfUrls.push(article.sourcePdfUrl);
+        var pdfSeen = {};
+        pdfUrls = pdfUrls.filter(function (url) {
+          if (!url || pdfSeen[url]) return false;
+          pdfSeen[url] = true;
+          return true;
+        });
+        var shouldTryPdf = authorEntries.some(function (entry) {
+          return !entry.orcid;
+        }) || !authorEntries.some(function (entry) {
+          return !!entry.email;
+        });
+        if (shouldTryPdf && pdfUrls.length) {
+          tasks = tasks.concat(pdfUrls.map(extractPdfTextSafely));
+        }
+
+        Promise.all(tasks).then(function (htmlPayloads) {
+          var changed = false;
+          for (var i = 0; i < htmlPayloads.length; i++) {
+            var html = htmlPayloads[i];
+            if (!html) continue;
+            if (mergeOriginalPaperMetadata(extractOriginalPaperMetadata(html))) {
+              changed = true;
+            }
+          }
+          if (changed) {
+            refreshAuthorPopoverContent();
+          }
+        });
+      }
+
+      function applyPrecomputedAuthorMetadata() {
+        var meta = getPrecomputedMetadataForArticle();
+        if (!meta) return false;
+        return mergeOriginalPaperMetadata(meta);
+      }
+
+      applyPrecomputedAuthorMetadata();
+
+      var authorSummaryHtml = buildInlineAuthorSummaryHtml(authorEntries);
 
       // Keywords HTML
       var keywordsHtml = (article.keywords || []).map(function (k) {
@@ -1076,24 +2453,39 @@
       var relatedHtml = related.map(function (r) {
         var relatedAuthor = (r.authors && r.authors.length) ? r.authors[0].name : 'Balkan Medical Journal';
         var relatedAuthorSuffix = (r.authors && r.authors.length > 1) ? ' et al.' : '';
-        return '<a href="' + buildArticleUrl(r.id) + '" class="block p-3 rounded-lg hover:bg-gray-50 transition-colors">' +
-          '<div class="text-sm font-medium text-gray-900 hover:text-teal-700 leading-snug">' + r.title + '</div>' +
-          '<div class="text-xs text-gray-400 mt-1">' + relatedAuthor + relatedAuthorSuffix + '</div>' +
+        return '<a href="' + buildArticleUrl(r.id) + '" class="related-entry">' +
+          '<div class="related-entry-title">' + r.title + '</div>' +
+          '<div class="related-entry-meta">' + relatedAuthor + relatedAuthorSuffix + '</div>' +
         '</a>';
       }).join('');
 
-      // Build tabs HTML
-      var tabsHtml = '';
-      if (hasFullText && !isNoAbstract && !isCoverPage) {
-        // Articles WITH abstract: show 3 tabs
-        tabsHtml =
-          '<div class="border-b border-gray-200 mb-8">' +
-            '<nav class="flex gap-0 -mb-px overflow-x-auto" aria-label="Article sections">' +
-              '<button class="article-tab active" data-tab="abstract" type="button">Abstract</button>' +
-              '<button class="article-tab" data-tab="fulltext" type="button">Full Text</button>' +
-              '<button class="article-tab" data-tab="authors" type="button">Authors &amp; Affiliations</button>' +
-            '</nav>' +
+      var publicationHistoryRows = [];
+      if (recDate) publicationHistoryRows.push({ label: 'Received', value: recDate });
+      if (accDate) publicationHistoryRows.push({ label: 'Accepted', value: accDate });
+      var availableOnlineDisplay = formatDateForDisplay(publicationHistoryState.availableOnlineDate);
+      if (availableOnlineDisplay) publicationHistoryRows.push({ label: 'Published online', value: availableOnlineDisplay });
+      var issuePublishedDisplay = formatDateForDisplay(publicationHistoryState.publishedInIssue);
+      if (issuePublishedDisplay) publicationHistoryRows.push({ label: 'Published in issue', value: issuePublishedDisplay });
+
+      var publicationHistoryPanelHtml = '';
+      if (publicationHistoryRows.length) {
+        publicationHistoryPanelHtml =
+          '<div id="publication-history-panel" class="hidden mt-3 rounded-xl border border-gray-200 bg-white p-4">' +
+            '<h3 class="text-lg font-bold text-gray-900 mb-3">Publication History</h3>' +
+            publicationHistoryRows.map(function (row) {
+              return '<div class="flex items-center gap-3 py-1.5 text-gray-800">' +
+                '<svg class="w-5 h-5 text-blue-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" stroke-width="2"></rect><path stroke-width="2" stroke-linecap="round" d="M8 2v4M16 2v4M3 10h18"></path></svg>' +
+                '<span><strong>' + row.label + '</strong> ' + row.value + '</span>' +
+              '</div>';
+            }).join('') +
           '</div>';
+      }
+
+      var publicationHeaderHtml = '';
+      if (pubDate && publicationHistoryRows.length) {
+        publicationHeaderHtml = '<button id="publication-history-toggle" type="button" class="publication-history-toggle" aria-expanded="false"><span class="text-gray-400">Published</span> ' + pubDate + '<svg class="publication-history-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 15l-7-7-7 7"></path></svg></button>';
+      } else if (pubDate) {
+        publicationHeaderHtml = '<div><span class="text-gray-400">Published</span> ' + pubDate + '</div>';
       }
 
       // Abstract panel content
@@ -1108,7 +2500,7 @@
             .replace(/>/g, '&gt;') +
           '</p>'
         );
-        abstractContent = '<div class="text-gray-700 leading-relaxed prose max-w-none">' + abstractBody + '</div>';
+        abstractContent = '<div class="article-abstract prose max-w-none">' + abstractBody + '</div>';
       } else if (!isCoverPage && !isNoAbstract) {
         abstractContent = '<p class="text-gray-500 italic font-serif">No abstract available for this article.</p>';
       }
@@ -1116,284 +2508,294 @@
       // Build main content panels
       var panelsHtml = '';
 
-      if (isNoAbstract && hasFullText) {
-        // No-abstract types: show full text directly (no tabs)
+      if (hasFullText) {
+        // Single continuous flow: abstract/keywords (when available) + full text.
         panelsHtml =
-          '<div id="fulltext-content">' +
-            '<div class="text-center py-12 text-gray-400">' +
-              '<div class="spinner mx-auto mb-4" style="border-color: rgba(15,118,110,0.2); border-top-color: #0F766E; width:32px; height:32px; border-width:3px;"></div>' +
-              '<p>Loading full text...</p>' +
-            '</div>' +
-          '</div>' +
-          (article.keywords && article.keywords.length ? '<section class="mb-8 mt-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Keywords</h2><div class="flex flex-wrap gap-2">' + keywordsHtml + '</div></section>' : '') +
-          '<section class="mb-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Authors &amp; Affiliations</h2><div>' + authorsHtml + '</div></section>';
-      } else if (hasFullText && !isNoAbstract && !isCoverPage) {
-        // Articles WITH abstract + full text: 3 tab panels
-        panelsHtml =
-          '<div id="panel-abstract" class="article-tab-panel">' +
-            (abstractContent ? '<section class="mb-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Abstract</h2>' + abstractContent + '</section>' : '') +
-            (article.keywords && article.keywords.length ? '<section class="mb-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Keywords</h2><div class="flex flex-wrap gap-2">' + keywordsHtml + '</div></section>' : '') +
-          '</div>' +
-          '<div id="panel-fulltext" class="article-tab-panel hidden">' +
+          (!isCoverPage && !isNoAbstract && abstractContent ? '<section class="mb-10"><h2 class="article-section-title font-bold">Abstract</h2>' + abstractContent + '</section>' : '') +
+          (!isCoverPage && !isNoAbstract && article.keywords && article.keywords.length ? '<section class="mb-10"><h2 class="article-section-title font-bold">Keywords</h2><div class="flex flex-wrap gap-2">' + keywordsHtml + '</div></section>' : '') +
+          '<section class="mb-8">' +
             '<div id="fulltext-content">' +
               '<div class="text-center py-12 text-gray-400">' +
                 '<div class="spinner mx-auto mb-4" style="border-color: rgba(15,118,110,0.2); border-top-color: #0F766E; width:32px; height:32px; border-width:3px;"></div>' +
                 '<p>Loading full text...</p>' +
               '</div>' +
             '</div>' +
-          '</div>' +
-          '<div id="panel-authors" class="article-tab-panel hidden">' +
-            '<section><h2 class="text-xl font-bold text-gray-900 mb-4">Authors &amp; Affiliations</h2><div>' + authorsHtml + '</div></section>' +
-          '</div>';
+          '</section>' +
+          (isNoAbstract && article.keywords && article.keywords.length ? '<section class="mb-10"><h2 class="article-section-title font-bold">Keywords</h2><div class="flex flex-wrap gap-2">' + keywordsHtml + '</div></section>' : '');
       } else {
-        // No full text: just abstract + authors
+        // No full text: abstract + keywords
         panelsHtml =
-          '<div id="panel-abstract" class="article-tab-panel">' +
-            (abstractContent ? '<section class="mb-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Abstract</h2>' + abstractContent + '</section>' : '') +
-            (article.keywords && article.keywords.length ? '<section class="mb-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Keywords</h2><div class="flex flex-wrap gap-2">' + keywordsHtml + '</div></section>' : '') +
-            (isCoverPage ? '' : '<section class="mb-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Authors</h2><div>' + authorsHtml + '</div></section>') +
-          '</div>';
+          (abstractContent ? '<section class="mb-10"><h2 class="article-section-title font-bold">Abstract</h2>' + abstractContent + '</section>' : '') +
+          (article.keywords && article.keywords.length ? '<section class="mb-10"><h2 class="article-section-title font-bold">Keywords</h2><div class="flex flex-wrap gap-2">' + keywordsHtml + '</div></section>' : '');
       }
 
       // Sidebar TOC (shows for full text articles)
       var tocHtml = canShowTocCard ?
-        '<div id="sidebar-toc" class="bg-gray-50 rounded-xl p-6 hidden">' +
-          '<h3 class="font-semibold text-gray-900 mb-3">In This Article</h3>' +
+        '<div id="sidebar-toc" class="journal-side-card hidden">' +
+          '<span class="side-card-label">In This Article</span>' +
           '<nav class="article-toc" id="toc-nav" aria-label="Table of contents"></nav>' +
         '</div>' : '';
 
+      var accessCardHtml =
+        '<div class="desktop-access-card journal-side-card">' +
+          '<span class="side-card-label">Access</span>' +
+          (pdfHref
+            ? '<a href="' + escapeAttr(pdfHref) + '" target="_blank" rel="noopener" class="access-cta w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-teal-700 text-white rounded-lg hover:bg-teal-800 transition-colors">' +
+                '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>' +
+                'Download PDF' +
+              '</a>'
+            : '<button type="button" disabled class="access-cta w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-gray-300 text-gray-500 rounded-lg cursor-not-allowed">' +
+                '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>' +
+                'PDF unavailable' +
+              '</button>'
+          ) +
+          '<div class="access-meta">Open Access — Free to Read</div>' +
+        '</div>';
+
+      var utilityCardsHtml =
+        '<div id="article-secondary-cards" class="article-tools-stack">' +
+          '<div class="article-tools-mobile">' + accessCardHtml + '</div>' +
+
+          (isCoverPage ? '' :
+            '<details class="journal-tool-panel" data-tool-panel="impact">' +
+              '<summary class="journal-tool-summary">Impact' +
+                '<svg class="journal-tool-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 15l-7-7-7 7"></path></svg>' +
+              '</summary>' +
+              '<div class="journal-tool-body">' +
+                '<div class="impact-metric-grid">' +
+                  '<div class="impact-metric-tile">' +
+                    '<span class="impact-metric-label">Views</span>' +
+                    '<span class="impact-metric-value">' + (article.views || 0).toLocaleString() + '</span>' +
+                  '</div>' +
+                  '<div class="impact-metric-tile">' +
+                    '<span class="impact-metric-label">Downloads</span>' +
+                    '<span class="impact-metric-value">' + (article.downloads || 0).toLocaleString() + '</span>' +
+                  '</div>' +
+                  '<div class="impact-metric-tile impact-metric-tile--citations">' +
+                    '<span class="impact-metric-label">Citations</span>' +
+                    '<span id="metric-citations" class="impact-metric-value">' + (article.citations || 0) + '</span>' +
+                    '<span id="metric-citations-source" class="impact-metric-source">Source: OpenAlex</span>' +
+                  '</div>' +
+                '</div>' +
+                '<div class="citation-intel-shell">' +
+                  '<h4 class="citation-intel-title">Citation Intelligence</h4>' +
+                  '<p id="citation-intel-loading" class="text-sm text-gray-500">Loading citation intelligence...</p>' +
+                  '<div id="citation-intel-content" class="hidden space-y-4">' +
+                    '<button id="citation-intel-toggle" type="button" aria-expanded="false" class="hidden inline-flex items-center gap-2 text-sm font-medium text-teal-700 hover:text-teal-800 transition-colors">' +
+                      '<span id="citation-intel-toggle-text">Show details</span>' +
+                      '<svg id="citation-intel-toggle-icon" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9 6 6 6-6"/></svg>' +
+                    '</button>' +
+                    '<div id="citation-intel-details" class="hidden space-y-4 pt-1">' +
+                      '<div>' +
+                        '<div class="flex items-center justify-between mb-2">' +
+                          '<span class="text-xs font-semibold uppercase tracking-[0.08em] text-gray-600">Citation Trend</span>' +
+                          '<span id="citation-trend-range" class="text-xs text-gray-500"></span>' +
+                        '</div>' +
+                        '<div id="citation-trend-bars" class="flex items-end gap-1 h-14"></div>' +
+                      '</div>' +
+                      '<div>' +
+                        '<div class="text-xs font-semibold uppercase tracking-[0.08em] text-gray-600 mb-2">Top Citing Journals</div>' +
+                        '<div id="citation-intel-journals" class="flex flex-wrap gap-2"></div>' +
+                      '</div>' +
+                      '<div>' +
+                        '<div class="text-xs font-semibold uppercase tracking-[0.08em] text-gray-600 mb-2">Top Citing Fields</div>' +
+                        '<div id="citation-intel-fields" class="flex flex-wrap gap-2"></div>' +
+                      '</div>' +
+                      '<div>' +
+                        '<div class="text-xs font-semibold uppercase tracking-[0.08em] text-gray-600 mb-2">Top Citing Papers</div>' +
+                        '<div id="citation-intel-papers" class="space-y-2.5"></div>' +
+                      '</div>' +
+                      '<a id="citation-intel-openalex" href="#" target="_blank" rel="noopener" class="inline-flex items-center text-sm font-medium text-teal-700 hover:text-teal-800">View in OpenAlex →</a>' +
+                    '</div>' +
+                  '</div>' +
+                  '<p id="citation-intel-empty" class="hidden text-sm text-gray-500"></p>' +
+                '</div>' +
+              '</div>' +
+            '</details>'
+          ) +
+
+          (isCoverPage ? '' :
+            '<details class="journal-tool-panel" data-tool-panel="attention">' +
+              '<summary class="journal-tool-summary">Research Attention' +
+                '<svg class="journal-tool-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 15l-7-7-7 7"></path></svg>' +
+              '</summary>' +
+              '<div class="journal-tool-body">' +
+                '<div id="attention-metrics-grid" class="grid grid-cols-2 gap-3">' +
+                  '<div id="altmetric-wrapper" class="flex items-center justify-center h-24">' +
+                    '<div id="altmetric-badge" class="altmetric-embed" data-badge-type="donut" data-badge-popover="right" data-hide-no-mentions="true" data-link-target="_blank"></div>' +
+                  '</div>' +
+                  '<div id="plumx-wrapper" class="flex items-center justify-center h-24">' +
+                    '<a id="plumx-badge" class="plumx-plum-print-popup inline-block" data-popup="right" data-size="large" data-hide-when-empty="true" data-site="plumx" style="transform:scale(1.1);transform-origin:center;" href="#"></a>' +
+                  '</div>' +
+                '</div>' +
+                '<p id="attention-unavailable" class="hidden text-xs text-gray-400 mt-3">Attention metrics are unavailable for this article.</p>' +
+              '</div>' +
+            '</details>'
+          ) +
+
+          (isCoverPage ? '' :
+            '<details class="journal-tool-panel" data-tool-panel="cite">' +
+              '<summary class="journal-tool-summary">Cite This Article' +
+                '<svg class="journal-tool-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 15l-7-7-7 7"></path></svg>' +
+              '</summary>' +
+              '<div class="journal-tool-body">' +
+                '<div class="citation-tools-stack" id="citation-tools">' +
+                  '<div>' +
+                    '<label for="citation-format" class="citation-format-label">Format</label>' +
+                    '<select id="citation-format" class="citation-format-select focus:ring-2 focus:ring-teal-500 focus:border-teal-500">' +
+                      '<option value="apa">APA</option>' +
+                      '<option value="mla">MLA</option>' +
+                      '<option value="vancouver">Vancouver</option>' +
+                      '<option value="bibtex">BibTeX</option>' +
+                    '</select>' +
+                  '</div>' +
+                  '<div id="citation-output" class="citation-output-surface"></div>' +
+                  '<button id="copy-citation-btn" class="citation-btn-primary">' +
+                    '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>' +
+                    'Copy Citation' +
+                  '</button>' +
+                  '<div class="grid grid-cols-2 gap-2 mt-2">' +
+                    '<button id="download-ris-btn" class="citation-btn-secondary">' +
+                      '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>' +
+                      'RIS' +
+                    '</button>' +
+                    '<button id="download-enw-btn" class="citation-btn-secondary">' +
+                      '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>' +
+                      'EndNote' +
+                    '</button>' +
+                  '</div>' +
+                '</div>' +
+              '</div>' +
+            '</details>'
+          ) +
+
+          (!isCoverPage && relatedHtml ?
+            '<details class="journal-tool-panel" data-tool-panel="related">' +
+              '<summary class="journal-tool-summary">Related Articles' +
+                '<svg class="journal-tool-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 15l-7-7-7 7"></path></svg>' +
+              '</summary>' +
+              '<div class="journal-tool-body">' +
+                '<div class="related-list">' + relatedHtml + '</div>' +
+              '</div>' +
+            '</details>'
+          : '') +
+        '</div>';
+
       contentEl.innerHTML =
         '<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">' +
-          '<div class="grid grid-cols-1 lg:grid-cols-3 gap-10">' +
+          '<div class="article-layout-grid">' +
             // Main Content
-            '<div class="lg:col-span-2">' +
-              '<div class="mb-4 flex flex-wrap items-center gap-2">' +
+            '<div class="article-main article-reading-column">' +
+              '<div class="mb-3 flex flex-wrap items-center gap-2">' +
                 '<span class="badge ' + typeColor + '">' + article.type + '</span>' +
                 (showAheadOfPrintBadge ? '<span class="badge bg-orange-100 text-orange-700">Ahead of Print</span>' : '') +
                 '<span class="text-sm text-gray-400">Volume ' + article.volume + ', Issue ' + article.issue + ', pp. ' + article.pages + '</span>' +
               '</div>' +
-              '<h1 class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-6">' + article.title + '</h1>' +
+              '<h1 class="article-title font-bold text-gray-900">' + article.title + '</h1>' +
 
               // Authors summary
-              '<div class="mb-6">' +
-                '<p class="text-gray-600">' + article.authors.map(function(a) {
-                  var orcidIcon = a.orcid ? ' <a href="https://orcid.org/' + a.orcid + '" target="_blank" rel="noopener" title="ORCID: ' + a.orcid + '" class="inline-flex align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" class="inline-block"><path fill="#A6CE39" d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z"/><path fill="#fff" d="M86.3,186.2H70.9V79.1h15.4v48.4V186.2z"/><path fill="#fff" d="M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z"/><path fill="#fff" d="M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z"/></svg></a>' : '';
-                  return a.name + orcidIcon;
-                }).join(', ') + '</p>' +
+              '<div class="mb-6" id="article-authors-inline">' +
+                '<div class="author-summary-content article-author-line">' + authorSummaryHtml + '</div>' +
               '</div>' +
 
               // DOI & Dates
               (isCoverPage ? '' :
-                '<div class="bg-gray-50 rounded-xl p-4 mb-8 flex flex-wrap gap-x-6 gap-y-2 text-sm">' +
-                  '<div><span class="text-gray-400">DOI:</span> <a href="https://doi.org/' + article.doi + '" target="_blank" rel="noopener" class="text-teal-700 hover:underline">' + article.doi + '</a></div>' +
-                  (recDate ? '<div><span class="text-gray-400">Received:</span> ' + recDate + '</div>' : '') +
-                  (accDate ? '<div><span class="text-gray-400">Accepted:</span> ' + accDate + '</div>' : '') +
-                  (pubDate ? '<div><span class="text-gray-400">Published:</span> ' + pubDate + '</div>' : '') +
+                '<div class="article-meta-card">' +
+                  '<div class="flex flex-wrap items-center gap-x-6 gap-y-2">' +
+                    '<div><span class="text-gray-500">DOI:</span> <a href="https://doi.org/' + article.doi + '" target="_blank" rel="noopener" class="text-teal-700 hover:underline">' + article.doi + '</a></div>' +
+                    publicationHeaderHtml +
+                  '</div>' +
+                  publicationHistoryPanelHtml +
                 '</div>'
               ) +
 
-              // Tabs
-              tabsHtml +
+              '<div id="article-secondary-slot-mobile" class="mb-10 article-tools-mobile"></div>' +
 
               // Panels
               panelsHtml +
 
+              '<div id="article-secondary-slot-desktop-main" class="mt-12">' + utilityCardsHtml + '</div>' +
+
             '</div>' +
 
             // Sidebar
-            '<div class="lg:col-span-1">' +
-              '<div class="lg:sticky lg:top-28 space-y-6">' +
+            '<div class="article-sidebar">' +
+              '<div class="article-sidebar-inner">' +
                 // TOC (for full text)
                 tocHtml +
-
-                // Download PDF card
-                '<div class="bg-gray-50 rounded-xl p-6">' +
-                  '<h3 class="text-base leading-6 font-semibold text-gray-900 mb-4">Access</h3>' +
-                  (pdfHref
-                    ? '<a href="' + escapeAttr(pdfHref) + '" target="_blank" rel="noopener" class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-teal-700 text-white font-semibold rounded-lg hover:bg-teal-800 transition-colors mb-3">' +
-                        '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>' +
-                        'Download PDF' +
-                      '</a>'
-                    : '<button type="button" disabled class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-gray-300 text-gray-500 font-semibold rounded-lg cursor-not-allowed mb-3">' +
-                        '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>' +
-                        'PDF unavailable' +
-                      '</button>'
-                  ) +
-                  '<div class="text-center text-sm text-gray-400">Open Access — Free to Read</div>' +
-                '</div>' +
-
-                // Impact card (metrics + citation intelligence)
-                (isCoverPage ? '' :
-                  '<div class="bg-gray-50 rounded-xl p-6">' +
-                    '<h3 class="text-base leading-6 font-semibold text-gray-900 mb-4">Impact</h3>' +
-                    '<div class="space-y-3">' +
-                      '<div class="flex items-center justify-between"><span class="text-sm text-gray-500">Views</span><span class="font-semibold text-gray-900">' + (article.views || 0).toLocaleString() + '</span></div>' +
-                      '<div class="flex items-center justify-between"><span class="text-sm text-gray-500">Downloads</span><span class="font-semibold text-gray-900">' + (article.downloads || 0).toLocaleString() + '</span></div>' +
-                    '</div>' +
-                    '<div class="border-t border-gray-200 mt-4 pt-4">' +
-                      '<h4 class="text-base leading-6 font-semibold text-gray-900 mb-3">Citation Intelligence</h4>' +
-                      '<div class="flex items-center justify-between mb-1">' +
-                        '<span class="text-sm text-gray-500">Citations</span>' +
-                        '<span id="metric-citations" class="text-base font-semibold text-gray-900">' + (article.citations || 0) + '</span>' +
-                      '</div>' +
-                      '<p id="metric-citations-source" class="text-xs text-gray-400 mb-3">Source: OpenAlex</p>' +
-                      '<p id="citation-intel-loading" class="text-sm text-gray-500">Loading citation intelligence...</p>' +
-                      '<div id="citation-intel-content" class="hidden space-y-4">' +
-                        '<button id="citation-intel-toggle" type="button" aria-expanded="false" class="hidden inline-flex items-center gap-2 text-sm font-medium text-teal-700 hover:text-teal-800 transition-colors">' +
-                          '<span id="citation-intel-toggle-text">Show details</span>' +
-                          '<svg id="citation-intel-toggle-icon" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9 6 6 6-6"/></svg>' +
-                        '</button>' +
-                        '<div id="citation-intel-details" class="hidden space-y-4 pt-1">' +
-                          '<div>' +
-                          '<div class="flex items-center justify-between mb-2">' +
-                            '<span class="text-xs font-semibold uppercase tracking-[0.08em] text-gray-600">Citation Trend</span>' +
-                            '<span id="citation-trend-range" class="text-xs text-gray-500"></span>' +
-                          '</div>' +
-                          '<div id="citation-trend-bars" class="flex items-end gap-1 h-14"></div>' +
-                        '</div>' +
-                        '<div>' +
-                          '<div class="text-xs font-semibold uppercase tracking-[0.08em] text-gray-600 mb-2">Top Citing Journals</div>' +
-                          '<div id="citation-intel-journals" class="flex flex-wrap gap-2"></div>' +
-                        '</div>' +
-                        '<div>' +
-                          '<div class="text-xs font-semibold uppercase tracking-[0.08em] text-gray-600 mb-2">Top Citing Fields</div>' +
-                          '<div id="citation-intel-fields" class="flex flex-wrap gap-2"></div>' +
-                        '</div>' +
-                        '<div>' +
-                          '<div class="text-xs font-semibold uppercase tracking-[0.08em] text-gray-600 mb-2">Top Citing Papers</div>' +
-                          '<div id="citation-intel-papers" class="space-y-2.5"></div>' +
-                        '</div>' +
-                        '<a id="citation-intel-openalex" href="#" target="_blank" rel="noopener" class="inline-flex items-center text-sm font-medium text-teal-700 hover:text-teal-800">View in OpenAlex →</a>' +
-                        '</div>' +
-                      '</div>' +
-                      '<p id="citation-intel-empty" class="hidden text-sm text-gray-500"></p>' +
-                    '</div>' +
-                  '</div>'
-                ) +
-
-                // Attention metrics card
-                (isCoverPage ? '' :
-                  '<div class="bg-gray-50 rounded-xl p-6">' +
-                    '<h3 class="font-semibold text-gray-900 mb-4">Research Attention</h3>' +
-                    '<div id="attention-metrics-grid" class="grid grid-cols-2 gap-3">' +
-                      '<div id="altmetric-wrapper" class="flex items-center justify-center h-24">' +
-                        '<div id="altmetric-badge" class="altmetric-embed" data-badge-type="donut" data-badge-popover="right" data-hide-no-mentions="true" data-link-target="_blank"></div>' +
-                      '</div>' +
-                      '<div id="plumx-wrapper" class="flex items-center justify-center h-24">' +
-                        '<a id="plumx-badge" class="plumx-plum-print-popup inline-block" data-popup="right" data-size="large" data-hide-when-empty="true" data-site="plumx" style="transform:scale(1.1);transform-origin:center;" href="#"></a>' +
-                      '</div>' +
-                    '</div>' +
-                    '<p id="attention-unavailable" class="hidden text-xs text-gray-400 mt-3">Attention metrics are unavailable for this article.</p>' +
-                  '</div>'
-                ) +
-
-                // Citation tools
-                (isCoverPage ? '' :
-                  '<div class="bg-gray-50 rounded-xl p-6">' +
-                    '<h3 class="font-semibold text-gray-900 mb-4">Cite This Article</h3>' +
-                    '<div class="space-y-2" id="citation-tools">' +
-                      '<div>' +
-                        '<label for="citation-format" class="text-sm text-gray-500 mb-1 block">Format</label>' +
-                        '<select id="citation-format" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500">' +
-                          '<option value="apa">APA</option>' +
-                          '<option value="mla">MLA</option>' +
-                          '<option value="vancouver">Vancouver</option>' +
-                          '<option value="bibtex">BibTeX</option>' +
-                        '</select>' +
-                      '</div>' +
-                      '<div id="citation-output" class="bg-white border border-gray-200 rounded-lg p-3 text-xs text-gray-700 leading-relaxed max-h-40 overflow-y-auto"></div>' +
-                      '<button id="copy-citation-btn" class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors text-sm">' +
-                        '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>' +
-                        'Copy Citation' +
-                      '</button>' +
-                      '<div class="grid grid-cols-2 gap-2 mt-2">' +
-                        '<button id="download-ris-btn" class="flex items-center justify-center gap-1 px-3 py-2 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors text-xs">' +
-                          '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>' +
-                          'RIS' +
-                        '</button>' +
-                        '<button id="download-enw-btn" class="flex items-center justify-center gap-1 px-3 py-2 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors text-xs">' +
-                          '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>' +
-                          'EndNote' +
-                        '</button>' +
-                      '</div>' +
-                    '</div>' +
-                  '</div>'
-                ) +
-
-                // Related articles
-                (!isCoverPage && relatedHtml ? '<div class="bg-gray-50 rounded-xl p-6"><h3 class="font-semibold text-gray-900 mb-4">Related Articles</h3><div class="space-y-1">' + relatedHtml + '</div></div>' : '') +
+                accessCardHtml +
               '</div>' +
             '</div>' +
           '</div>' +
         '</div>';
 
+      (function initPublicationHistoryToggle() {
+        var toggle = document.getElementById('publication-history-toggle');
+        var panel = document.getElementById('publication-history-panel');
+        if (!toggle || !panel) return;
+        toggle.addEventListener('click', function () {
+          var expanded = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          panel.classList.toggle('hidden', expanded);
+        });
+      })();
+
       syncCitationMetric();
+
+      (function initSecondaryCardsPlacement() {
+        var cards = document.getElementById('article-secondary-cards');
+        var mobileSlot = document.getElementById('article-secondary-slot-mobile');
+        var desktopSlot = document.getElementById('article-secondary-slot-desktop-main');
+        if (!cards || !mobileSlot || !desktopSlot) return;
+
+        var mq = window.matchMedia('(max-width: 859px)');
+        function placeCards() {
+          var target = mq.matches ? mobileSlot : desktopSlot;
+          if (cards.parentNode === target) return;
+          cards.classList.add('secondary-cards-moving');
+          target.appendChild(cards);
+          window.requestAnimationFrame(function () {
+            cards.classList.remove('secondary-cards-moving');
+          });
+        }
+
+        placeCards();
+        if (typeof mq.addEventListener === 'function') mq.addEventListener('change', placeCards);
+        else if (typeof mq.addListener === 'function') mq.addListener(placeCards);
+      })();
+
+      (function initUtilityPanels() {
+        var panelNodes = Array.prototype.slice.call(document.querySelectorAll('#article-secondary-cards details.journal-tool-panel'));
+        if (!panelNodes.length) return;
+        var mq = window.matchMedia('(min-width: 1024px)');
+
+        function syncPanels() {
+          panelNodes.forEach(function (panel, idx) {
+            if (idx === 0) panel.setAttribute('open', 'open');
+            else panel.removeAttribute('open');
+          });
+        }
+
+        syncPanels();
+        if (typeof mq.addEventListener === 'function') mq.addEventListener('change', syncPanels);
+        else if (typeof mq.addListener === 'function') mq.addListener(syncPanels);
+      })();
+
       initCitationIntelligence();
       initAttentionWidgets();
+      enrichAuthorsFromOriginalSources();
 
-      // ── Tab switching logic ──
-      if (hasFullText && isNoAbstract) {
-        // No-abstract types: load full text immediately
-        fullTextLoaded = true;
+      // ── Full-text load + hash navigation ──
+      if (hasFullText) {
         loadFullText();
-      } else if (hasFullText && !isNoAbstract) {
-        // Articles with abstract: tab UI
-        var panelAbstract = document.getElementById('panel-abstract');
-        var panelFulltext = document.getElementById('panel-fulltext');
-        var panelAuthors  = document.getElementById('panel-authors');
-        var tocEl = document.getElementById('sidebar-toc');
-        var tocNavEl = document.getElementById('toc-nav');
-        var tabBtns = Array.prototype.slice.call(document.querySelectorAll('.article-tab'));
-        var panelMap = { abstract: panelAbstract, fulltext: panelFulltext, authors: panelAuthors };
-
-        function switchTab(tabName) {
-          for (var i = 0; i < tabBtns.length; i++) {
-            var btn = tabBtns[i];
-            if (btn.getAttribute('data-tab') === tabName) {
-              btn.classList.add('active');
-            } else {
-              btn.classList.remove('active');
-            }
-          }
-          for (var name in panelMap) {
-            if (panelMap[name]) {
-              if (name === tabName) {
-                panelMap[name].classList.remove('hidden');
-              } else {
-                panelMap[name].classList.add('hidden');
-              }
-            }
-          }
-          if (tocEl) {
-            if (tabName !== 'fulltext') {
-              tocEl.classList.add('hidden');
-            } else if (fullTextLoaded && tocNavEl && tocNavEl.children.length > 0) {
-              tocEl.classList.remove('hidden');
-            } else {
-              tocEl.classList.add('hidden');
-            }
-          }
-          if (tabName === 'fulltext' && !fullTextLoaded) {
-            fullTextLoaded = true;
-            loadFullText();
-          }
-        }
-
-        for (var i = 0; i < tabBtns.length; i++) {
-          (function (btn) {
-            btn.addEventListener('click', function () {
-              switchTab(btn.getAttribute('data-tab'));
-            });
-          })(tabBtns[i]);
-        }
-
-        // Hash navigation
-        var hash = window.location.hash.replace('#', '');
-        if (hash === 'fulltext' || hash === 'full-text') {
-          switchTab('fulltext');
-        } else if (hash === 'authors') {
-          switchTab('authors');
-        }
+      }
+      var hash = window.location.hash.replace('#', '').toLowerCase();
+      if (hash === 'fulltext' || hash === 'full-text') {
+        var fullTextContent = document.getElementById('fulltext-content');
+        if (fullTextContent) scrollToArticleTarget(fullTextContent);
+      } else if (hash === 'authors') {
+        var inlineAuthors = document.getElementById('article-authors-inline');
+        if (inlineAuthors) scrollToArticleTarget(inlineAuthors);
       }
 
       // ── Full text loading ──
@@ -1426,7 +2828,7 @@
               container.innerHTML =
                 '<div class="text-center py-12">' +
                   '<p class="text-gray-500">Full text body is not available for this article.</p>' +
-                  '<p class="text-sm text-gray-400 mt-2">The abstract is available in the Abstract tab.</p>' +
+                  '<p class="text-sm text-gray-400 mt-2">Please refer to the PDF for the complete text.</p>' +
                 '</div>';
               return;
             }
@@ -1570,12 +2972,7 @@
 
           targets.forEach(function (item) { observer.observe(item.node); });
         }
-        if (tocCard) {
-          var fulltextPanel = document.getElementById('panel-fulltext');
-          var fulltextVisible = !fulltextPanel || !fulltextPanel.classList.contains('hidden');
-          if (fulltextVisible) tocCard.classList.remove('hidden');
-          else tocCard.classList.add('hidden');
-        }
+        if (tocCard) tocCard.classList.remove('hidden');
         return true;
       }
 

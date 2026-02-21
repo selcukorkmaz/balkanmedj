@@ -411,17 +411,19 @@
       {
         "name": "Wenhan Li",
         "affiliation": "V-Medical Laboratory, Hangzhou, China",
-        "orcid": ""
+        "orcid": "0009-0000-1401-0419",
+        "email": "wenhan.li@ivydx.com",
+        "corresponding": true
       },
       {
         "name": "Qing Huang",
         "affiliation": "V-Medical Laboratory, Hangzhou, China",
-        "orcid": ""
+        "orcid": "0009-0001-2646-9953"
       },
       {
         "name": "Ke Zhan",
         "affiliation": "V-Medical Laboratory, Hangzhou, China",
-        "orcid": ""
+        "orcid": "0009-0009-3652-7887"
       }
     ],
     "abstract": "Abstract Background: Albumin (ALB) and blood urea nitrogen (BUN) are both associated with the prognosis of acute ischemic stroke (AIS). A recent prognostic marker, the BUN/ALB ratio (BAR), has been suggested as a simple and sensitive method to predict certain acute diseases.Aims: To determine the predictive value of BAR in relation to the risk of in-hospital mortality among AIS patients.Study Design: Retrospective cohort study.Methods: Cox regression analysis was employed to assess the relationship between in-hospital mortality and BAR, with hazard ratios (HRs) and 95% confidence intervals. Subgroup analysis of acute pulmonary embolism, acute myocardial infarction (AMI), thrombolysis, thrombectomy, and septic shock was performed to further examine this relationship. The predictive value of BAR and BAR multivariate models for in-hospital mortality was evaluated and compared to BUN, ALB, the Acute Physiology and Chronic Health Evaluation IV (APACHE IV) score, and the Sequential Organ Failure Assessment Score (SOFA).Results: Among the 1,635 eligible patients, 226 (13.81%) died during hospitalization. An elevated serum BAR level was associated with an increased in-hospital mortality risk (HR: 1.3) after covariates were adjusted. Additionally, this positive association was observed in patients without AP, AMI, thrombolysis, history of thrombectomy, or septic shock (all; p < 0.05). The efficacy of the BAR multivariate model in predicting in-hospital mortality among AIS patients was superior to that of both APACHE IV and SOFA, with an area under the curve of 0.87.Conclusion: Serum BAR exhibits the potential to identify AIS patients with high mortality risk, which may contribute to enhanced disease surveillance and risk stratification.",
