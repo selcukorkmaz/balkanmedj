@@ -538,6 +538,32 @@
       }
     }
     @media (max-width: 859px) {
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+      #main-content {
+        overflow-x: hidden;
+      }
+      .article-layout-grid,
+      .article-main,
+      .article-body {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+      .article-body img,
+      .article-body svg,
+      .article-body iframe,
+      .article-body video {
+        max-width: 100%;
+        height: auto;
+      }
+      .article-body table,
+      .article-body pre {
+        max-width: 100%;
+        overflow-x: auto;
+      }
       #article-secondary-cards details[data-tool-panel="related"] {
         display: none !important;
       }
