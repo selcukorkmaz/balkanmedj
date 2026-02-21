@@ -1,0 +1,771 @@
+[
+  {
+    "id": 2075,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "1",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1254",
+    "sourceArticleId": "2075",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2075",
+    "localPdfUrl": "js/data/pdfs/2075.pdf",
+    "pdfUrl": "js/data/pdfs/2075.pdf"
+  },
+  {
+    "id": 2067,
+    "type": "Editorial",
+    "title": "New Online Manuscript Submission System of Balkan Medical Journal",
+    "authors": [
+      {
+        "name": "Zafer Koçak",
+        "affiliation": "Department of Radiation Oncology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Okan Çalıyurt",
+        "affiliation": "Department of Psychiatry, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Immediately after I was appointed as the Editor-in-Chief in the fall of 2016, we had to face with a change in the publishing house. We successfully overcame this difficult process through the great efforts of our editorial team and Galenos publishing house. In 2017, we realized our goal of having a dynamic website that we dreamed of (1). Balkan Medical Journ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2019.1.001",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "1",
+    "pages": "1-2",
+    "views": 9013,
+    "downloads": 9715,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1254",
+    "sourceArticleId": "2067",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2067",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2067",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2067",
+    "localPdfUrl": "js/data/pdfs/2067.pdf",
+    "pdfUrl": "js/data/pdfs/2067.pdf"
+  },
+  {
+    "id": 2025,
+    "type": "Invited Review",
+    "title": "Recent Progress in the Pathology and Genetics of Pilocytic and Pilomyxoid Astrocytomas",
+    "authors": [
+      {
+        "name": "Cristine Ding",
+        "affiliation": "Division of Neuropathology, Department of Pathology, UCSF School of Medicine, California, USA; Department of Pathology, Tan Tock Seng Hospital, Novena, Singapore",
+        "orcid": ""
+      },
+      {
+        "name": "Tarik Tihan",
+        "affiliation": "Division of Neuropathology, Department of Pathology, UCSF School of Medicine, California, USA",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Pilocytic and pilomyxoid astrocytomas are some of the most common gliomas in children and young adults. These gliomas are indolent neoplasms with long overall survival probability. The genetic characteristics of these neoplasms are well known, and our deepened understanding of their associated molecular alterations has led to the development of novel treatment strategies and approaches. Currently, we can account for some of the unusual behavior, such as oncogene-induced senescence, associated spontaneous regression, anaplastic transformation, and cerebrospinal dissemination, of these gliomas. Nevertheless, enigmatic issues continue to surround these chronic tumors. Here, we review the classical and uncommon clinical pathological and genetic features of these indolent gliomas.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p>Pilocytic and pilomyxoid astrocytomas are some of the most common gliomas in children and young adults. These gliomas are indolent neoplasms with long overall survival probability. The genetic characteristics of these neoplasms are well known, and our deepened understanding of their associated molecular alterations has led to the development of novel treatment strategies and approaches. Currently, we can account for some of the unusual behavior, such as oncogene-induced senescence, associated spontaneous regression, anaplastic transformation, and cerebrospinal dissemination, of these gliomas. Nevertheless, enigmatic issues continue to surround these chronic tumors. Here, we review the classical and uncommon clinical pathological and genetic features of these indolent gliomas.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Pilocytic and pilomyxoid astrocytomas are some of the most common gliomas in children and young adults. These gliomas are indolent neoplasms with long overall survival probability. The genetic characteristics of these neoplasms are well known, and our deepened understanding of their associated molecular alterations has led to the development of novel treatment strategies and approaches. Currently, we can account for some of the unusual behavior, such as oncogene-induced senescence, associated spontaneous regression, anaplastic transformation, and cerebrospinal dissemination, of these gliomas. Nevertheless, enigmatic issues continue to surround these chronic tumors. Here, we review the classical and uncommon clinical pathological and genetic features of these indolent gliomas.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.1001",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "1",
+    "pages": "3-11",
+    "views": 6926,
+    "downloads": 3389,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1254",
+    "sourceArticleId": "2025",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2025",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2025",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2025",
+    "localPdfUrl": "js/data/pdfs/2025.pdf",
+    "pdfUrl": "js/data/pdfs/2025.pdf"
+  },
+  {
+    "id": 2030,
+    "type": "Invited Review",
+    "title": "Updates in Clinical and Genetics Aspects of Hypermobile Ehlers Danlos Syndrome",
+    "authors": [
+      {
+        "name": "Irman Forghani",
+        "affiliation": "Clinic of Clinical and Translational Genetics, Dr. John T. Macdonald Foundation Department of Human Genetics, University of Miami, Miller School of Medicine, Miami, USA",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Efforts on recognition, diagnosis, and management of the presumed, most common connective tissue disorder hypermobile Ehlers-Danlos syndrome have been an ongoing challenge, even decades after the description of this condition. A recent international consortium proposed a revised Ehlers-Danlos syndrome classification, an update much needed since Villefranche nosology, in 1998. Hypermobile Ehlers-Danlos syndrome is the only subtype in these groups of syndromes with no known genetic cause(s). This effort brought significant attention to this often underappreciated condition. This review provides an update of the clinical and genetic aspects of hypermobile Ehlers-Danlos syndrome for clinicians and researchers.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p>Efforts on recognition, diagnosis, and management of the presumed, most common connective tissue disorder hypermobile Ehlers-Danlos syndrome have been an ongoing challenge, even decades after the description of this condition. A recent international consortium proposed a revised Ehlers-Danlos syndrome classification, an update much needed since Villefranche nosology, in 1998. Hypermobile Ehlers-Danlos syndrome is the only subtype in these groups of syndromes with no known genetic cause(s). This effort brought significant attention to this often underappreciated condition. This review provides an update of the clinical and genetic aspects of hypermobile Ehlers-Danlos syndrome for clinicians and researchers.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Efforts on recognition, diagnosis, and management of the presumed, most common connective tissue disorder hypermobile Ehlers-Danlos syndrome have been an ongoing challenge, even decades after the description of this condition. A recent international consortium proposed a revised Ehlers-Danlos syndrome classification, an update much needed since Villefranche nosology, in 1998. Hypermobile Ehlers-Danlos syndrome is the only subtype in these groups of syndromes with no known genetic cause(s). This effort brought significant attention to this often underappreciated condition. This review provides an update of the clinical and genetic aspects of hypermobile Ehlers-Danlos syndrome for clinicians and researchers.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.1113",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "1",
+    "pages": "12-16",
+    "views": 8396,
+    "downloads": 4355,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1254",
+    "sourceArticleId": "2030",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2030",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2030",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2030",
+    "localPdfUrl": "js/data/pdfs/2030.pdf",
+    "pdfUrl": "js/data/pdfs/2030.pdf"
+  },
+  {
+    "id": 2031,
+    "type": "Original Article",
+    "title": "The Prevalence and Risks of Inappropriate Combination of Aspirin and Warfarin in Clinical Practice: Results From WARFARIN-TR Study",
+    "authors": [
+      {
+        "name": "Salih Kılıç",
+        "affiliation": "Department of Cardiology, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Çelik",
+        "affiliation": "Department of Cardiology, Mersin University School of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Elif Çekirdekçi",
+        "affiliation": "Clinic of Cardiology, Tekirdağ Çorlu District State Hospital, Tekirdağ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Servet Altay",
+        "affiliation": "Clinic of Cardiology, Edirne Sultan Murat 1. State Hospital, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Deniz Elçik",
+        "affiliation": "Clinic of Cardiology, Ankara Research and Training Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Kadri Akboğa",
+        "affiliation": "Clinic of Cardiology, Türkiye Yüksek İhtisas Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mine Durukan",
+        "affiliation": "Clinic of Cardiology, Mersin City Research and Training Hospital, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Çağrı Yayla",
+        "affiliation": "Clinic of Cardiology, Türkiye Yüksek İhtisas Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehdi Zoghi",
+        "affiliation": "Department of Cardiology, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The use of warfarin and aspirin in combination is restricted to limited patients under relevant guidelines.Aims: To evaluate the prevalence of the inappropriate combination of aspirin and warfarin therapy in daily practice and its risks.Study Design: Cross-sectional study.Methods: The awareness, efficacy, safety, and time in the therapeutic range of warfarin in the Turkish population study is a multi-center observational study that includes 4987 patients using warfarin for any reason between January 1, 2014, and December 31, 2014. To determine the prevalence of inappropriate combination use in daily practice, all patients who had a history of atherosclerotic disease (ischemic heart disease, peripheral artery disease) or cerebrovascular disease (n=1498) were excluded. The data of 3489 patients were analyzed. We defined inappropriate combination as all patients who received aspirin and warfarin regardless of the indication for warfarin use, under the direction of the European Society of Cardiology guideline recommendation.Results: The mean age of patients was 59.2±13.8 years (41.8% male). The prevalence of the inappropriate use of warfarin and aspirin combination was 20.0%. The prevalence of combination therapy in patients with a primary indication for mechanical heart valve, non-valvular atrial fibrillation, and other reasons was 20.5%, 18.7%, and 21.0%, respectively. Multivariate logistic regression analysis revealed that age (odds ratio, 1.009; 95% confidence interval, 1.002-1.015; p=0.010), heart failure (odds ratio, 1.765; 95% confidence interval, 1.448-2.151; p<0.001), smoking (odds ratio, 1.762; 95% confidence interval, 1.441-1.153; p<0.010), chronic kidney disease (odds ratio, 2.057; 95% confidence interval, 1.494-2.833; p<0.001), and deep vein thrombosis (odds ratio, 0.463; 95% confidence interval, 0.229-0.718; p=0.001) were independent predictors of combination therapy (r2=0.66). The mean time in therapeutic range of patients receiving combination therapy was significantly lower than in those on warfarin monotherapy (51.6±27.05 vs. 54.7±23.93; p=0.006). Overall, 19.4% (n=677) of patients had a bleeding event (major bleeding 13.0%, n=88) within a year. Percentages of patients with combination therapy were significantly higher in patients with major bleeding than in patients without major bleeding (29.5% vs. 19.7%; p=0.023).Conclusion: Our study demonstrated that 20.0% of patients taking warfarin use concomitant aspirin inappropriately in daily practice. Patients receiving aspirin with warfarin were demonstrated to have more comorbidities, lower time in therapeutic range levels, and higher bleeding rates.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background</strong>: The use of warfarin and aspirin in combination is restricted to limited patients under relevant guidelines.<br /><strong>Aims</strong>: To evaluate the prevalence of the inappropriate combination of aspirin and warfarin therapy in daily practice and its risks.<br /><strong>Study Design</strong>: Cross-sectional study.<br /><strong>Methods</strong>: The awareness, efficacy, safety, and time in the therapeutic range of warfarin in the Turkish population study is a multi-center observational study that includes 4987 patients using warfarin for any reason between January 1, 2014, and December 31, 2014. To determine the prevalence of inappropriate combination use in daily practice, all patients who had a history of atherosclerotic disease (ischemic heart disease, peripheral artery disease) or cerebrovascular disease (n=1498) were excluded. The data of 3489 patients were analyzed. We defined inappropriate combination as all patients who received aspirin and warfarin regardless of the indication for warfarin use, under the direction of the European Society of Cardiology guideline recommendation.<br /><strong>Results</strong>: The mean age of patients was 59.2&plusmn;13.8 years (41.8% male). The prevalence of the inappropriate use of warfarin and aspirin combination was 20.0%. The prevalence of combination therapy in patients with a primary indication for mechanical heart valve, non-valvular atrial fibrillation, and other reasons was 20.5%, 18.7%, and 21.0%, respectively. Multivariate logistic regression analysis revealed that age (odds ratio, 1.009; 95% confidence interval, 1.002-1.015; p=0.010), heart failure (odds ratio, 1.765; 95% confidence interval, 1.448-2.151; p&lt;0.001), smoking (odds ratio, 1.762; 95% confidence interval, 1.441-1.153; p&lt;0.010), chronic kidney disease (odds ratio, 2.057; 95% confidence interval, 1.494-2.833; p&lt;0.001), and deep vein thrombosis (odds ratio, 0.463; 95% confidence interval, 0.229-0.718; p=0.001) were independent predictors of combination therapy (r2=0.66). The mean time in therapeutic range of patients receiving combination therapy was significantly lower than in those on warfarin monotherapy (51.6&plusmn;27.05 vs. 54.7&plusmn;23.93; p=0.006). Overall, 19.4% (n=677) of patients had a bleeding event (major bleeding 13.0%, n=88) within a year. Percentages of patients with combination therapy were significantly higher in patients with major bleeding than in patients without major bleeding (29.5% vs. 19.7%; p=0.023).<br /><strong>Conclusion</strong>: Our study demonstrated that 20.0% of patients taking warfarin use concomitant aspirin inappropriately in daily practice. Patients receiving aspirin with warfarin were demonstrated to have more comorbidities, lower time in therapeutic range levels, and higher bleeding rates.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The use of warfarin and aspirin in combination is restricted to limited patients under relevant guidelines.Aims: To evaluate the prevalence of the inappropriate combination of aspirin and warfarin therapy in daily practice and its risks.Study Design: Cross-sectional study.Methods: The awareness, efficacy, safety, and time in the therapeutic range of warfarin in the Turkish population study is a multi-center observational study that includes 4987 patients using warfarin for any reason between January 1, 2014, and December 31, 2014. To determine the prevalence of inappropriate combination use in daily practice, all patients who had a history of atherosclerotic disease (ischemic heart disease, peripheral artery disease) or cerebrovascular disease (n=1498) were excluded. The data of 3489 patients were analyzed. We defined inappropriate combination as all patients who received aspirin and warfarin regardless of the indication for warfarin use, under the direction of the European Society of Cardiology guideline recommendation.Results: The mean age of patients was 59.2±13.8 years (41.8% male). The prevalence of the inappropriate use of warfarin and aspirin combination was 20.0%. The prevalence of combination therapy in patients with a primary indication for mechanical heart valve, non-valvular atrial fibrillation, and other reasons was 20.5%, 18.7%, and 21.0%, respectively. Multivariate logistic regression analysis revealed that age (odds ratio, 1.009; 95% confidence interval, 1.002-1.015; p=0.010), heart failure (odds ratio, 1.765; 95% confidence interval, 1.448-2.151; p<0.001), smoking (odds ratio, 1.762; 95% confidence interval, 1.441-1.153; p<0.010), chronic kidney disease (odds ratio, 2.057; 95% confidence interval, 1.494-2.833; p<0.001), and deep vein thrombosis (odds ratio, 0.463; 95% confidence interval, 0.229-0.718; p=0.001) were independent predictors of combination therapy (r2=0.66). The mean time in therapeutic range of patients receiving combination therapy was significantly lower than in those on warfarin monotherapy (51.6±27.05 vs. 54.7±23.93; p=0.006). Overall, 19.4% (n=677) of patients had a bleeding event (major bleeding 13.0%, n=88) within a year. Percentages of patients with combination therapy were significantly higher in patients with major bleeding than in patients without major bleeding (29.5% vs. 19.7%; p=0.023).Conclusion: Our study demonstrated that 20.0% of patients taking warfarin use concomitant aspirin inappropriately in daily practice. Patients receiving aspirin with warfarin were demonstrated to have more comorbidities, lower time in therapeutic range levels, and higher bleeding rates.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.1472",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "1",
+    "pages": "17-22",
+    "views": 7396,
+    "downloads": 10133,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1254",
+    "sourceArticleId": "2031",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2031",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2031",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2031",
+    "localPdfUrl": "js/data/pdfs/2031.pdf",
+    "pdfUrl": "js/data/pdfs/2031.pdf"
+  },
+  {
+    "id": 2032,
+    "type": "Original Article",
+    "title": "Investigation of Gene Expressions of Myeloma Cells in the Bone Marrow of Multiple Myeloma Patients by Transcriptome Analysis",
+    "authors": [
+      {
+        "name": "Melda Sarıman",
+        "affiliation": "Department of Genetics, İstanbul University, Aziz Sancar Experimental Medical Research Institute, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neslihan Abacı",
+        "affiliation": "Department of Genetics, İstanbul University, Aziz Sancar Experimental Medical Research Institute, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sema Sırma Ekmekçi",
+        "affiliation": "Department of Genetics, İstanbul University, Aziz Sancar Experimental Medical Research Institute, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aris Çakiris",
+        "affiliation": "Department of Genetics, İstanbul University, Aziz Sancar Experimental Medical Research Institute, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ferda Perçin Paçal",
+        "affiliation": "Department of Genetics, İstanbul University, Aziz Sancar Experimental Medical Research Institute, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Duran Üstek",
+        "affiliation": "Department of Genetics, İstanbul University, Aziz Sancar Experimental Medical Research Institute, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mesut Ayer",
+        "affiliation": "Clinic of Hematology, İstanbul Haseki Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Nuri Yenerel",
+        "affiliation": "Department of Hematology, İstanbul Universiy İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sevgi Beşışık",
+        "affiliation": "Department of Internal Medicine, İstanbul Universiy İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kıvanç Çefle",
+        "affiliation": "Department of Internal Medicine, Division of Medical Genetics, İstanbul Universiy İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şükrü Palandüz",
+        "affiliation": "Department of Internal Medicine, Division of Medical Genetics, İstanbul Universiy İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şükrü Öztürk",
+        "affiliation": "Department of Internal Medicine, Division of Medical Genetics, İstanbul Universiy İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Multiple myeloma is a plasma cell dyscrasia characterized by transformation of B cells into malignant cells. Although there are data regarding the molecular pathology of multiple myeloma, the molecular mechanisms of the disease have not been fully elucidated.Aims: To investigate the gene expression profiles in bone marrow myeloma cells via RNA-sequencing technology.Study Design: Cell study.Methods: Myeloma cells from four patients with untreated multiple myeloma and B cells from the bone marrow of four healthy donors were sorted using a FACSAria II flow cytometer. The patient pool of myeloma cells and the control pool of B cells were the two comparative groups. A transcriptome analysis was performed and the results were analyzed using bioinformatics tools.Results: In total, 18.806 transcripts (94.4%) were detected in the pooled multiple myeloma patient cells. A total of 992 regions were detected as new exon candidates or alternative splicing regions. In addition, 490 mutations (deletions or insertions), 1.397 single nucleotide variations, 415 fusion transcripts, 132 frameshift mutations, and 983 fusions, which were reported before in the National Center for Biotechnology Information, were detected with unknown functions in patients. A total of 35.268 transcripts were obtained (71%) (25.355 transcripts were defined previously) in the control pool. In this preliminary study, the first 50 genes were analyzed with the MSigDB, Enrichr, and Panther gene set enrichment analysis programs. The molecular functions, cellular components, pathways, and biological processes of the genes were obtained and statistical values were determined using bioinformatics tools and are presented as a supplemental file.Conclusion: EEF1G, ITM2C, FTL, CLPTM1L, and CYBA are identified as possible candidate genes associated with myelomagenesis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background</strong>: Multiple myeloma is a plasma cell dyscrasia characterized by transformation of B cells into malignant cells. Although there are data regarding the molecular pathology of multiple myeloma, the molecular mechanisms of the disease have not been fully elucidated.<br /><strong>Aims</strong>: To investigate the gene expression profiles in bone marrow myeloma cells via RNA-sequencing technology.<br /><strong>Study Design</strong>: Cell study.<br /><strong>Methods</strong>: Myeloma cells from four patients with untreated multiple myeloma and B cells from the bone marrow of four healthy donors were sorted using a FACSAria II flow cytometer. The patient pool of myeloma cells and the control pool of B cells were the two comparative groups. A transcriptome analysis was performed and the results were analyzed using bioinformatics tools.<br /><strong>Results</strong>: In total, 18.806 transcripts (94.4%) were detected in the pooled multiple myeloma patient cells. A total of 992 regions were detected as new exon candidates or alternative splicing regions. In addition, 490 mutations (deletions or insertions), 1.397 single nucleotide variations, 415 fusion transcripts, 132 frameshift mutations, and 983 fusions, which were reported before in the National Center for Biotechnology Information, were detected with unknown functions in patients. A total of 35.268 transcripts were obtained (71%) (25.355 transcripts were defined previously) in the control pool. In this preliminary study, the first 50 genes were analyzed with the MSigDB, Enrichr, and Panther gene set enrichment analysis programs. The molecular functions, cellular components, pathways, and biological processes of the genes were obtained and statistical values were determined using bioinformatics tools and are presented as a supplemental file.<br /><strong>Conclusion</strong>: <em>EEF1G</em>, <em>ITM2C</em>, <em>FTL</em>, <em>CLPTM1L</em>, and C<em>YBA</em> are identified as possible candidate genes associated with myelomagenesis.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Multiple myeloma is a plasma cell dyscrasia characterized by transformation of B cells into malignant cells. Although there are data regarding the molecular pathology of multiple myeloma, the molecular mechanisms of the disease have not been fully elucidated.Aims: To investigate the gene expression profiles in bone marrow myeloma cells via RNA-sequencing technology.Study Design: Cell study.Methods: Myeloma cells from four patients with untreated multiple myeloma and B cells from the bone marrow of four healthy donors were sorted using a FACSAria II flow cytometer. The patient pool of myeloma cells and the control pool of B cells were the two comparative groups. A transcriptome analysis was performed and the results were analyzed using bioinformatics tools.Results: In total, 18.806 transcripts (94.4%) were detected in the pooled multiple myeloma patient cells. A total of 992 regions were detected as new exon candidates or alternative splicing regions. In addition, 490 mutations (deletions or insertions), 1.397 single nucleotide variations, 415 fusion transcripts, 132 frameshift mutations, and 983 fusions, which were reported before in the National Center for Biotechnology Information, were detected with unknown functions in patients. A total of 35.268 transcripts were obtained (71%) (25.355 transcripts were defined previously) in the control pool. In this preliminary study, the first 50 genes were analyzed with the MSigDB, Enrichr, and Panther gene set enrichment analysis programs. The molecular functions, cellular components, pathways, and biological processes of the genes were obtained and statistical values were determined using bioinformatics tools and are presented as a supplemental file.Conclusion: EEF1G, ITM2C, FTL, CLPTM1L, and CYBA are identified as possible candidate genes associated with myelomagenesis.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.0356",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "1",
+    "pages": "23-31",
+    "views": 6774,
+    "downloads": 10242,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1254",
+    "sourceArticleId": "2032",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2032",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2032",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2032",
+    "localPdfUrl": "js/data/pdfs/2032.pdf",
+    "pdfUrl": "js/data/pdfs/2032.pdf"
+  },
+  {
+    "id": 2038,
+    "type": "Original Article",
+    "title": "Comparison of Scoring Systems in Predicting Success of Percutaneous Nephrolithotomy",
+    "authors": [
+      {
+        "name": "Muzaffer Akçay",
+        "affiliation": "Department of Urology, Bezmialem Vakıf University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Muhammed Tosun",
+        "affiliation": "Department of Urology, Bezmialem Vakıf University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Gevher",
+        "affiliation": "Department of Urology, Bezmialem Vakıf University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Senad Kalkan",
+        "affiliation": "Department of Urology, Bezmialem Vakıf University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cevper Ersöz",
+        "affiliation": "Department of Urology, Bezmialem Vakıf University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yunus Kayalı",
+        "affiliation": "Department of Urology, Bezmialem Vakıf University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Abdulkadir Tepeler",
+        "affiliation": "Clinic of Urology, Private Sen Jorj Avusturya Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Scoring systems are useful to inform the patients about the success and complication rates of the operation prior the surgery.Aims: To determine the applicability of the popular scoring systems (Guy’s, stone size, tract length, obstruction, number of involved calices, and essence/stone density and Clinical Research Office of the Endourological Society) by means of examining preoperative data of patients treated with percutaneous nephrolithotomy.Study Design: Cross sectional study.Methods: We retrospectively reviewed files of the patients who had undergone percutaneous nephrolithotomy in our center between 2011 and 2015. Excluded from the study were patients aged <18 years, and those who were not assessed preoperatively with computed tomography. Preoperative computed tomography images of all patients were assessed by a single observer, and patients were graded based on three scoring system. Demographic data were analyzed along with perioperative data (operation, fluoroscopy, length of hospital stay, changes in hematocrit values, location, and number of access sites, stone-free and complication rates).Results: A total of 298 patients who had been treated with 300 procedures were enrolled into the study. Mean age, stone burden, number of stones, and density were 48.1±12.9 years, 663.5±442.8 mm2, 1.8±1.1 and 888.3±273 HU respectively. Scores of the cases based on Guy’s, stone size, tract length, obstruction, number of involved calices, and essence/stone density, and Clinical Research Office of the Endourological Society scoring system were calculated as 2, 7.6, and 222.1 points respectively. 81.6% of the patients were stone-free. Complications were detected in 30 (9.9%) patients. Based on receiver operating characteristic curve analysis a positive correlation was detected between success rate and scoring systems, i.e., Guy’s (p=<0.001, r=-0.309), stone size, tract length, obstruction, number of involved calices, and essence/stone density (p=<0.001, r=-0.295), and Clinical Research Office of the Endourological Society (p=<0.001, r=0.426). The Clinical Research Office of the Endourological Society scoring system had the highest predictive value. The sensitivity rates rates for Guy’s, Clinical Research Office of the Endourological Society and Stone scoring system were as 78.78%, 80% and 82.34% respectively.Conclusion: All of scoring systems predicted correctly the success of the percutaneous nephrolithotomy procedures. The Clinical Research Office of the Endourological Society scoring system had the highest predictive value.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background</strong>: Scoring systems are useful to inform the patients about the success and complication rates of the operation prior the surgery.<br /><strong>Aims</strong>: To determine the applicability of the popular scoring systems (Guy&rsquo;s, stone size, tract length, obstruction, number of involved calices, and essence/stone density and Clinical Research Office of the Endourological Society) by means of examining preoperative data of patients treated with percutaneous nephrolithotomy.<br /><strong>Study Design</strong>: Cross sectional study.<br /><strong>Methods</strong>: We retrospectively reviewed files of the patients who had undergone percutaneous nephrolithotomy in our center between 2011 and 2015. Excluded from the study were patients aged &lt;18 years, and those who were not assessed preoperatively with computed tomography. Preoperative computed tomography images of all patients were assessed by a single observer, and patients were graded based on three scoring system. Demographic data were analyzed along with perioperative data (operation, fluoroscopy, length of hospital stay, changes in hematocrit values, location, and number of access sites, stone-free and complication rates).<br /><strong>Results</strong>: A total of 298 patients who had been treated with 300 procedures were enrolled into the study. Mean age, stone burden, number of stones, and density were 48.1&plusmn;12.9 years, 663.5&plusmn;442.8 mm2, 1.8&plusmn;1.1 and 888.3&plusmn;273 HU respectively. Scores of the cases based on Guy&rsquo;s, stone size, tract length, obstruction, number of involved calices, and essence/stone density, and Clinical Research Office of the Endourological Society scoring system were calculated as 2, 7.6, and 222.1 points respectively. 81.6% of the patients were stone-free. Complications were detected in 30 (9.9%) patients. Based on receiver operating characteristic curve analysis a positive correlation was detected between success rate and scoring systems, i.e., Guy&rsquo;s (p=&lt;0.001, r=-0.309), stone size, tract length, obstruction, number of involved calices, and essence/stone density (p=&lt;0.001, r=-0.295), and Clinical Research Office of the Endourological Society (p=&lt;0.001, r=0.426). The Clinical Research Office of the Endourological Society scoring system had the highest predictive value. The sensitivity rates rates for Guy&rsquo;s, Clinical Research Office of the Endourological Society and Stone scoring system were as 78.78%, 80% and 82.34% respectively.<br /><strong>Conclusion</strong>: All of scoring systems predicted correctly the success of the percutaneous nephrolithotomy procedures. The Clinical Research Office of the Endourological Society scoring system had the highest predictive value.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Scoring systems are useful to inform the patients about the success and complication rates of the operation prior the surgery.Aims: To determine the applicability of the popular scoring systems (Guy’s, stone size, tract length, obstruction, number of involved calices, and essence/stone density and Clinical Research Office of the Endourological Society) by means of examining preoperative data of patients treated with percutaneous nephrolithotomy.Study Design: Cross sectional study.Methods: We retrospectively reviewed files of the patients who had undergone percutaneous nephrolithotomy in our center between 2011 and 2015. Excluded from the study were patients aged <18 years, and those who were not assessed preoperatively with computed tomography. Preoperative computed tomography images of all patients were assessed by a single observer, and patients were graded based on three scoring system. Demographic data were analyzed along with perioperative data (operation, fluoroscopy, length of hospital stay, changes in hematocrit values, location, and number of access sites, stone-free and complication rates).Results: A total of 298 patients who had been treated with 300 procedures were enrolled into the study. Mean age, stone burden, number of stones, and density were 48.1±12.9 years, 663.5±442.8 mm2, 1.8±1.1 and 888.3±273 HU respectively. Scores of the cases based on Guy’s, stone size, tract length, obstruction, number of involved calices, and essence/stone density, and Clinical Research Office of the Endourological Society scoring system were calculated as 2, 7.6, and 222.1 points respectively. 81.6% of the patients were stone-free. Complications were detected in 30 (9.9%) patients. Based on receiver operating characteristic curve analysis a positive correlation was detected between success rate and scoring systems, i.e., Guy’s (p=<0.001, r=-0.309), stone size, tract length, obstruction, number of involved calices, and essence/stone density (p=<0.001, r=-0.295), and Clinical Research Office of the Endourological Society (p=<0.001, r=0.426). The Clinical Research Office of the Endourological Society scoring system had the highest predictive value. The sensitivity rates rates for Guy’s, Clinical Research Office of the Endourological Society and Stone scoring system were as 78.78%, 80% and 82.34% respectively.Conclusion: All of scoring systems predicted correctly the success of the percutaneous nephrolithotomy procedures. The Clinical Research Office of the Endourological Society scoring system had the highest predictive value.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.1631",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "1",
+    "pages": "32-36",
+    "views": 6733,
+    "downloads": 9627,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1254",
+    "sourceArticleId": "2038",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2038",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2038",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2038",
+    "localPdfUrl": "js/data/pdfs/2038.pdf",
+    "pdfUrl": "js/data/pdfs/2038.pdf"
+  },
+  {
+    "id": 2040,
+    "type": "Original Article",
+    "title": "Targeted Next-Generation Sequencing of MLH1, MSH2, and MSH6 Genes in Patients with Endometrial Carcinoma under 50 Years of Age",
+    "authors": [
+      {
+        "name": "Taha Reşid Özdemir",
+        "affiliation": "Genetic Diagnostic Center, Health Sciences University, İzmir Tepecik Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Alan",
+        "affiliation": "Clinic of Gynecology and Gynecologic Oncology, Health Sciences University, İzmir Tepecik Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Muzaffer Sancı",
+        "affiliation": "Clinic of Gynecology and Gynecologic Oncology, Health Sciences University, İzmir Tepecik Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Altuğ Koç",
+        "affiliation": "Genetic Diagnostic Center, Health Sciences University, İzmir Tepecik Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Lynch syndrome is an inherited cancer disorder that causes an increased lifetime risk of various types of cancers. Endometrial cancer is the most common extracolonic cancer in Lynch syndrome. Guidelines recommend that patients with endometrial cancer younger than 50 years of age should be evaluated for Lynch syndrome. Molecular analysis of the mismatch repair genes and EPCAM gene is required for a definitive diagnosis of Lynch syndrome.Aims: To report the mutation analysis of mismatch repair genes using targeted next-generation sequencing in endometrial cancer diagnosed patients <50 years of age.Study Design: Retrospective cross-sectional study.Methods: Seventy-nine endometrial cancer diagnosed patients <50 years of age underwent genetic counseling. They were selected among 1094 consecutive endometrial cancer patients between 2006 and 2017. Molecular analysis of MLH1, MSH2, and MSH6 genes was performed in 79 patients by using next-generation sequencing. Deletion/duplication analysis of mismatch repair genes and EPCAM gene was also performed in 79 patients by using the multiplex ligation-dependent probe amplification method.Results: Germline testing of mismatch repair genes was performed in 79 endometrial cancer patients. Lynch syndrome was confirmed in 4 patients (5%; 4/79). A total of 14 variants (6 in MSH2, 5 in MLH1, 3 in MSH6 genes) were found in 14 patients. Four variants were assessed as pathogenic/likely pathogenic, and 10 variants were assessed as variants of uncertain significance.Conclusion: Lynch syndrome should be investigated in patients diagnosed with endometrial cancer that are less than 50 years of age due to the increased lifetime risk of developing cancer.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background</strong>: Lynch syndrome is an inherited cancer disorder that causes an increased lifetime risk of various types of cancers. Endometrial cancer is the most common extracolonic cancer in Lynch syndrome. Guidelines recommend that patients with endometrial cancer younger than 50 years of age should be evaluated for Lynch syndrome. Molecular analysis of the mismatch repair genes and <em>EPCAM</em> gene is required for a definitive diagnosis of Lynch syndrome.<br /><strong>Aims</strong>: To report the mutation analysis of mismatch repair genes using targeted next-generation sequencing in endometrial cancer diagnosed patients &lt;50 years of age.<br /><strong>Study Design</strong>: Retrospective cross-sectional study.<br /><strong>Methods</strong>: Seventy-nine endometrial cancer diagnosed patients &lt;50 years of age underwent genetic counseling. They were selected among 1094 consecutive endometrial cancer patients between 2006 and 2017. Molecular analysis of <em>MLH1</em>, <em>MSH2</em>, and <em>MSH6</em> genes was performed in 79 patients by using next-generation sequencing. Deletion/duplication analysis of mismatch repair genes and <em>EPCAM</em> gene was also performed in 79 patients by using the multiplex ligation-dependent probe amplification method.<br /><strong>Results</strong>: Germline testing of mismatch repair genes was performed in 79 endometrial cancer patients. Lynch syndrome was confirmed in 4 patients (5%; 4/79). A total of 14 variants (6 in <em>MSH2</em>, 5 in <em>MLH1</em>, 3 in <em>MSH6</em> genes) were found in 14 patients. Four variants were assessed as pathogenic/likely pathogenic, and 10 variants were assessed as variants of uncertain significance.<br /><strong>Conclusion</strong>: Lynch syndrome should be investigated in patients diagnosed with endometrial cancer that are less than 50 years of age due to the increased lifetime risk of developing cancer.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Lynch syndrome is an inherited cancer disorder that causes an increased lifetime risk of various types of cancers. Endometrial cancer is the most common extracolonic cancer in Lynch syndrome. Guidelines recommend that patients with endometrial cancer younger than 50 years of age should be evaluated for Lynch syndrome. Molecular analysis of the mismatch repair genes and EPCAM gene is required for a definitive diagnosis of Lynch syndrome.Aims: To report the mutation analysis of mismatch repair genes using targeted next-generation sequencing in endometrial cancer diagnosed patients <50 years of age.Study Design: Retrospective cross-sectional study.Methods: Seventy-nine endometrial cancer diagnosed patients <50 years of age underwent genetic counseling. They were selected among 1094 consecutive endometrial cancer patients between 2006 and 2017. Molecular analysis of MLH1, MSH2, and MSH6 genes was performed in 79 patients by using next-generation sequencing. Deletion/duplication analysis of mismatch repair genes and EPCAM gene was also performed in 79 patients by using the multiplex ligation-dependent probe amplification method.Results: Germline testing of mismatch repair genes was performed in 79 endometrial cancer patients. Lynch syndrome was confirmed in 4 patients (5%; 4/79). A total of 14 variants (6 in MSH2, 5 in MLH1, 3 in MSH6 genes) were found in 14 patients. Four variants were assessed as pathogenic/likely pathogenic, and 10 variants were assessed as variants of uncertain significance.Conclusion: Lynch syndrome should be investigated in patients diagnosed with endometrial cancer that are less than 50 years of age due to the increased lifetime risk of developing cancer.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.0922",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "1",
+    "pages": "37-42",
+    "views": 6523,
+    "downloads": 10510,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1254",
+    "sourceArticleId": "2040",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2040",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2040",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2040",
+    "localPdfUrl": "js/data/pdfs/2040.pdf",
+    "pdfUrl": "js/data/pdfs/2040.pdf"
+  },
+  {
+    "id": 2042,
+    "type": "Original Article",
+    "title": "The Effect of Chemerin on Cardiac Parameters and Gene Expressions in Isolated Perfused Rat Heart",
+    "authors": [
+      {
+        "name": "Özden Kutlay",
+        "affiliation": "Department of Physiology, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ziya Kaygısız",
+        "affiliation": "Department of Physiology, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bilgin Kaygısız",
+        "affiliation": "Department of Pharmacology, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Chemerin is a novel chemoattractant adipokine expressed in cardiovascular system, and its receptor has been detected in the epicardial adipose tissue.Aims: To determine the effects of chemerin on the cardiac parameters and gene expressions in the isolated perfused rat heart.Study Design: Animal experiment.Methods: The hearts were retrogradely perfused with Langendorff technique to measure the cardiac parameters. The experimental groups were acutely treated with 10, 100, and 1000 nM doses of chemerin. Another group was given 10 μM L-nitric oxide synthase inhibitor for 5 min before 1000 nM chemerin administration. The real-time polymerase chain reaction was performed for detecting the expression of target genes.Results: All doses of chemerin significantly decreased the left ventricular developed pressure (max 35.33 ∆%, p<0.001), and +dP/dtmax (max 31.3 ∆%, p<0.001), which are the indexes of cardiac contractile force. In addition, 1000 nM chemerin reduced the coronary flow (max 31 ∆%, p<0.001). N(W)-nitro-L-arginine methyl ester antagonized the negative inotropic effect of chemerin on contractility. Chemerin induced a 2.16-fold increase in endothelial nitric oxide synthase mRNA and increased the cyclic guanosine monophosphate levels (p<0.001) but decreased the PI3Kγ gene expression (1.8-fold, p<0.001). Furthermore, all doses of chemerin decreased the CaV1.2 gene expression (1.69-fold, p<0.001).Conclusion: Acute chemerin treatment induces a negative inotropic action with the involvement of nitric oxide pathway, CaV1.2, and PI3Kγ on isolated rat heart.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background</strong>: Chemerin is a novel chemoattractant adipokine expressed in cardiovascular system, and its receptor has been detected in the epicardial adipose tissue.<br /><strong>Aims</strong>: To determine the effects of chemerin on the cardiac parameters and gene expressions in the isolated perfused rat heart.<br /><strong>Study Design</strong>: Animal experiment.<br /><strong>Methods</strong>: The hearts were retrogradely perfused with Langendorff technique to measure the cardiac parameters. The experimental groups were acutely treated with 10, 100, and 1000 nM doses of chemerin. Another group was given 10 &mu;M L-nitric oxide synthase inhibitor for 5 min before 1000 nM chemerin administration. The real-time polymerase chain reaction was performed for detecting the expression of target genes.<br /><strong>Results</strong>: All doses of chemerin significantly decreased the left ventricular developed pressure (max 35.33 ∆%, p&lt;0.001), and +dP/dtmax&nbsp;(max 31.3 ∆%, p&lt;0.001), which are the indexes of cardiac contractile force. In addition, 1000 nM chemerin reduced the coronary flow (max 31 ∆%, p&lt;0.001). N(W)-nitro-L-arginine methyl ester antagonized the negative inotropic effect of chemerin on contractility. Chemerin induced a 2.16-fold increase in endothelial nitric oxide synthase mRNA and increased the cyclic guanosine monophosphate levels (p&lt;0.001) but decreased the PI3K&gamma; gene expression (1.8-fold, p&lt;0.001). Furthermore, all doses of chemerin decreased the CaV1.2 gene expression (1.69-fold, p&lt;0.001).<br /><strong>Conclusion</strong>: Acute chemerin treatment induces a negative inotropic action with the involvement of nitric oxide pathway, CaV1.2, and PI3K&gamma; on isolated rat heart.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Chemerin is a novel chemoattractant adipokine expressed in cardiovascular system, and its receptor has been detected in the epicardial adipose tissue.Aims: To determine the effects of chemerin on the cardiac parameters and gene expressions in the isolated perfused rat heart.Study Design: Animal experiment.Methods: The hearts were retrogradely perfused with Langendorff technique to measure the cardiac parameters. The experimental groups were acutely treated with 10, 100, and 1000 nM doses of chemerin. Another group was given 10 μM L-nitric oxide synthase inhibitor for 5 min before 1000 nM chemerin administration. The real-time polymerase chain reaction was performed for detecting the expression of target genes.Results: All doses of chemerin significantly decreased the left ventricular developed pressure (max 35.33 ∆%, p<0.001), and +dP/dtmax (max 31.3 ∆%, p<0.001), which are the indexes of cardiac contractile force. In addition, 1000 nM chemerin reduced the coronary flow (max 31 ∆%, p<0.001). N(W)-nitro-L-arginine methyl ester antagonized the negative inotropic effect of chemerin on contractility. Chemerin induced a 2.16-fold increase in endothelial nitric oxide synthase mRNA and increased the cyclic guanosine monophosphate levels (p<0.001) but decreased the PI3Kγ gene expression (1.8-fold, p<0.001). Furthermore, all doses of chemerin decreased the CaV1.2 gene expression (1.69-fold, p<0.001).Conclusion: Acute chemerin treatment induces a negative inotropic action with the involvement of nitric oxide pathway, CaV1.2, and PI3Kγ on isolated rat heart.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.1787",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "1",
+    "pages": "43-48",
+    "views": 6807,
+    "downloads": 2690,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1254",
+    "sourceArticleId": "2042",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2042",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2042",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2042",
+    "localPdfUrl": "js/data/pdfs/2042.pdf",
+    "pdfUrl": "js/data/pdfs/2042.pdf"
+  },
+  {
+    "id": 2044,
+    "type": "Original Article",
+    "title": "Retronasal Olfaction Test Methods: A Systematic Review",
+    "authors": [
+      {
+        "name": "Hüseyin Özay",
+        "affiliation": "Department of Otorhinolaryngology, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aslı Çakır",
+        "affiliation": "Department of Otorhinolaryngology, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Cenk Ecevit",
+        "affiliation": "Department of Otorhinolaryngology, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: This report produces a bibliographic study of psychophysical tests proposed clinical assessments of retronasal olfaction.Aims: We review how these tests can be utilized and discuss their methodological properties.Study Design: Systematic review.Methods: We undertook a systematic literature review investigating the retronasal olfaction test methods. PubMed, the free online MEDLINE database on biomedical sciences, was searched for the period from 1984 to 2015 using the following relevant key phrases: “retronasal olfaction”, “orthonasal olfaction”, “olfaction disorders”, and “olfaction test”. For each of the selected titles cited in this study, the full manuscript was read and analyzed by each of the three authors of this paper independently before collaborative discussion for summation and analytical reporting. Two reviewers independently read the abstracts and full texts and categorised them into one of three subgroups as follow, suitable, not-suitable, and unsure. Then they cross-checked the results, and a third reviewer decided assigned the group “unsure” to either the suitable group or the not-suitable group. Fifty eight studies revealed as suitable for review by two authors whereas 13 found not suitable for review. The total amount of 60 uncertain (unsure) or differently categorized articles were further examined by the third author which resulted in 41 approvals and 19 rejections. Hence 99 approved articles passed the next step. Exclusion criteria were reviews, case reports, animal studies, and the articles of which methodology was a lack of olfaction tests. By this way excluded 69 papers, and finally, 30 original human research articles were taken as the data.Results: The study found that the three most widely used and accepted retronasal olfaction test methods are the retronasal olfaction test, the candy smell test and odorant presentation containers. All of the three psychophysical retronasal olfaction tests were combined with orthonasal tests in clinical use to examine and understand the smell function of the patient completely. There were two limitations concerning testing: “the lack concentrations and doses of test materials” and “performing measurements within the supra-threshold zone”.Conclusion: The appropriate test agents and optimal concentrations for the retronasal olfaction tests remain unclear and emerge as limitations of the retronasal olfaction test technique. The first step to overcoming these limitations will probably require identification of retronasal olfaction thresholds. Once these are determined, the concept of retronasal olfaction and its testing methods may be thoroughly reviewed.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background</strong>: This report produces a bibliographic study of psychophysical tests proposed clinical assessments of retronasal olfaction.<br /><strong>Aims</strong>: We review how these tests can be utilized and discuss their methodological properties.<br /><strong>Study Design</strong>: Systematic review.<br /><strong>Methods</strong>: We undertook a systematic literature review investigating the retronasal olfaction test methods. PubMed, the free online MEDLINE database on biomedical sciences, was searched for the period from 1984 to 2015 using the following relevant key phrases: &ldquo;retronasal olfaction&rdquo;, &ldquo;orthonasal olfaction&rdquo;, &ldquo;olfaction disorders&rdquo;, and &ldquo;olfaction test&rdquo;. For each of the selected titles cited in this study, the full manuscript was read and analyzed by each of the three authors of this paper independently before collaborative discussion for summation and analytical reporting. Two reviewers independently read the abstracts and full texts and categorised them into one of three subgroups as follow, suitable, not-suitable, and unsure. Then they cross-checked the results, and a third reviewer decided assigned the group &ldquo;unsure&rdquo; to either the suitable group or the not-suitable group. Fifty eight studies revealed as suitable for review by two authors whereas 13 found not suitable for review. The total amount of 60 uncertain (unsure) or differently categorized articles were further examined by the third author which resulted in 41 approvals and 19 rejections. Hence 99 approved articles passed the next step. Exclusion criteria were reviews, case reports, animal studies, and the articles of which methodology was a lack of olfaction tests. By this way excluded 69 papers, and finally, 30 original human research articles were taken as the data.<br /><strong>Results</strong>: The study found that the three most widely used and accepted retronasal olfaction test methods are the retronasal olfaction test, the candy smell test and odorant presentation containers. All of the three psychophysical retronasal olfaction tests were combined with orthonasal tests in clinical use to examine and understand the smell function of the patient completely. There were two limitations concerning testing: &ldquo;the lack concentrations and doses of test materials&rdquo; and &ldquo;performing measurements within the supra-threshold zone&rdquo;.<br /><strong>Conclusion</strong>: The appropriate test agents and optimal concentrations for the retronasal olfaction tests remain unclear and emerge as limitations of the retronasal olfaction test technique. The first step to overcoming these limitations will probably require identification of retronasal olfaction thresholds. Once these are determined, the concept of retronasal olfaction and its testing methods may be thoroughly reviewed.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: This report produces a bibliographic study of psychophysical tests proposed clinical assessments of retronasal olfaction.Aims: We review how these tests can be utilized and discuss their methodological properties.Study Design: Systematic review.Methods: We undertook a systematic literature review investigating the retronasal olfaction test methods. PubMed, the free online MEDLINE database on biomedical sciences, was searched for the period from 1984 to 2015 using the following relevant key phrases: “retronasal olfaction”, “orthonasal olfaction”, “olfaction disorders”, and “olfaction test”. For each of the selected titles cited in this study, the full manuscript was read and analyzed by each of the three authors of this paper independently before collaborative discussion for summation and analytical reporting. Two reviewers independently read the abstracts and full texts and categorised them into one of three subgroups as follow, suitable, not-suitable, and unsure. Then they cross-checked the results, and a third reviewer decided assigned the group “unsure” to either the suitable group or the not-suitable group. Fifty eight studies revealed as suitable for review by two authors whereas 13 found not suitable for review. The total amount of 60 uncertain (unsure) or differently categorized articles were further examined by the third author which resulted in 41 approvals and 19 rejections. Hence 99 approved articles passed the next step. Exclusion criteria were reviews, case reports, animal studies, and the articles of which methodology was a lack of olfaction tests. By this way excluded 69 papers, and finally, 30 original human research articles were taken as the data.Results: The study found that the three most widely used and accepted retronasal olfaction test methods are the retronasal olfaction test, the candy smell test and odorant presentation containers. All of the three psychophysical retronasal olfaction tests were combined with orthonasal tests in clinical use to examine and understand the smell function of the patient completely. There were two limitations concerning testing: “the lack concentrations and doses of test materials” and “performing measurements within the supra-threshold zone”.Conclusion: The appropriate test agents and optimal concentrations for the retronasal olfaction tests remain unclear and emerge as limitations of the retronasal olfaction test technique. The first step to overcoming these limitations will probably require identification of retronasal olfaction thresholds. Once these are determined, the concept of retronasal olfaction and its testing methods may be thoroughly reviewed.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.0052",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "1",
+    "pages": "49-59",
+    "views": 8416,
+    "downloads": 4316,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1254",
+    "sourceArticleId": "2044",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2044",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2044",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2044",
+    "localPdfUrl": "js/data/pdfs/2044.pdf",
+    "pdfUrl": "js/data/pdfs/2044.pdf"
+  },
+  {
+    "id": 2049,
+    "type": "Clinical Image",
+    "title": "Unilateral Type of Macrodystrophia Lipomatosa of the Thumb, Index Finger, and Thenar",
+    "authors": [
+      {
+        "name": "Ivana Kavecan",
+        "affiliation": "University of Novi Sad Faculty of Medicine, Hajduk Veljkova, Novi Sad, Serbia; Institute for Children and Youth Health Care of Vojvodina, Hajduk Veljkova, Novi Sad, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Milan Obrenovic",
+        "affiliation": "Institute for Children and Youth Health Care of Vojvodina, Hajduk Veljkova, Novi Sad, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Boris Privrodski",
+        "affiliation": "Institute for Children and Youth Health Care of Vojvodina, Hajduk Veljkova, Novi Sad, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Djerdji Erdes Kavecan",
+        "affiliation": "Department of Philosophical Scienses, Study group Psychology, State University of Novi Pazar, Novi Pazar, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Zoran Golusin",
+        "affiliation": "University of Novi Sad Faculty of Medicine, Hajduk Veljkova, Novi Sad, Serbia; Department of Dermatology, Clinical Centre of Vojvodina, Hajduk Veljkova, Novi Sad, Serbia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Macrodystrophia lipomatosa, also known as type 1 macrodactyly or isolated macrodactyly, is a rare, benign, congenital, nonhereditary condition, generally unilateral, involving one or more fingers. Affected body parts manifest overgrowth in length and girth due to proliferation of fibroadipose tissue but only until puberty when it usually ceases. It occurs in",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.1322",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "1",
+    "pages": "60-61",
+    "views": 5488,
+    "downloads": 9479,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1254",
+    "sourceArticleId": "2049",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2049",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2049",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2049",
+    "localPdfUrl": "js/data/pdfs/2049.pdf",
+    "pdfUrl": "js/data/pdfs/2049.pdf"
+  },
+  {
+    "id": 2064,
+    "type": "Clinical Image",
+    "title": "Hemophagocytic Lymphohistiocytosis in Dermatomyositis",
+    "authors": [
+      {
+        "name": "Hsien-Tzung Liao",
+        "affiliation": "Department of Internal Medicine, Division of Allergy, Immunology and Rheumatology, Taipei Veterans General Hospital, Taipei, Taiwan; National Yang-Ming University, School of Medicine, College of Medicine, Taipei, Taiwan",
+        "orcid": ""
+      },
+      {
+        "name": "Ching-Fen Yang",
+        "affiliation": "Department of Pathology and Laboratory Medicine, Taipei Veterans General Hospital, Taipei, Taiwan",
+        "orcid": ""
+      },
+      {
+        "name": "Chang-Youh Tsai",
+        "affiliation": "Department of Internal Medicine, Division of Allergy, Immunology and Rheumatology, Taipei Veterans General Hospital, Taipei, Taiwan; National Yang-Ming University, School of Medicine, College of Medicine, Taipei, Taiwan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 58-year-old Asian woman suffered from a high-spiking fever (39.5-40°C), general malaise, and a body weight loss of 6 kg over several months. She presented to our clinic with progressive proximal girdle weakness, scaly erythematous papules on the extensor sides and knuckles of the bilateral metacarpophalangeal/proximal interphalangeal and elbow joints (Gott",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.1339",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "1",
+    "pages": "62-63",
+    "views": 5532,
+    "downloads": 2976,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1254",
+    "sourceArticleId": "2064",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2064",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2064",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2064",
+    "localPdfUrl": "js/data/pdfs/2064.pdf",
+    "pdfUrl": "js/data/pdfs/2064.pdf"
+  },
+  {
+    "id": 2045,
+    "type": "Letter to the Editor",
+    "title": "Myxoma of the Ovary: in Regard to Bedir et al.  (Balkan Med J 2018;35:120-121)",
+    "authors": [
+      {
+        "name": "Nicolas Sterkers",
+        "affiliation": "Department of Cancerology and Gynecology Surgery, Urbain V Clinic, Avignon, France",
+        "orcid": ""
+      },
+      {
+        "name": "Francis Salvat",
+        "affiliation": "Radiology Center, Scanner Clinique Fontvert Urbain V, Sorgues, France",
+        "orcid": ""
+      },
+      {
+        "name": "Philippe Sappa",
+        "affiliation": "Pathology Center, Histosud, Chemin De Faufinette, Valreas, France",
+        "orcid": ""
+      },
+      {
+        "name": "Olivier Donnez",
+        "affiliation": "Department of Cancerology and Gynecology Surgery, Urbain V Clinic, Avignon, France",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, In the January 2018 issue of Balkan Medical Journal, Bedir et al. (1) reported a new case of an ovarian myxoma, an exceedingly rare ovarian tumor. Although ovarian myxoma is a benign tumor that occurs predominantly in young women in whom fertility preservation is a major concern, the authors suggest that total excision of the tumor together wi",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.1454",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "1",
+    "pages": "64-65",
+    "views": 5330,
+    "downloads": 2278,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1254",
+    "sourceArticleId": "2045",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2045",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2045",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2045",
+    "localPdfUrl": "js/data/pdfs/2045.pdf",
+    "pdfUrl": "js/data/pdfs/2045.pdf"
+  },
+  {
+    "id": 2046,
+    "type": "Letter to the Editor",
+    "title": "Laparoscopic Reduction of Intussusception in Children in Restricted Environment: Our Initial Experience Supports Timely Resort to Minimally Invasive Surgery",
+    "authors": [
+      {
+        "name": "Jakov Mihanović",
+        "affiliation": "Department of Surgery, Zadar General Hospital, Zadar, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Robert Karlo",
+        "affiliation": "Department of Surgery, Zadar General Hospital, Zadar, Croatia; Department for Health Studies, University of Zadar, Zadar, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Ivan Bačić",
+        "affiliation": "Department of Surgery, Zadar General Hospital, Zadar, Croatia; Department for Health Studies, University of Zadar, Zadar, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Nataša Skitarelić",
+        "affiliation": "Department for Health Studies, University of Zadar, Zadar, Croatia; Department of Pediatrics, Zadar General Hospital, Zadar, Croatia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, Intussusception is a true pediatric emergency requiring a multidisciplinary approach. Clinical suspicion should lead directly toward an abdominal ultrasound or a contrast enema. As a part of modern point-of-care management, ultrasound has emerged as a readily available diagnostic modality even in rural hospitals. After establishing a diagnosis",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.0627",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "1",
+    "pages": "66-67",
+    "views": 6448,
+    "downloads": 3750,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1254",
+    "sourceArticleId": "2046",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2046",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2046",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2046",
+    "localPdfUrl": "js/data/pdfs/2046.pdf",
+    "pdfUrl": "js/data/pdfs/2046.pdf"
+  },
+  {
+    "id": 2050,
+    "type": "Letter to the Editor",
+    "title": "Undergraduate Internal Medicine Training and Medical University Curriculum in Romania",
+    "authors": [
+      {
+        "name": "Polliana Mihaela Leru",
+        "affiliation": "Carol Davila University of Medicine and Pharmacy, Bucharest, Romania; Colentina Clinical Hospital, Bucharest, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Vlad Florin Anton",
+        "affiliation": "Colentina Clinical Hospital, Bucharest, Romania",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, We refer to an interesting paper published in your journal in 2014 on the important topic of undergraduate medical curriculum in Turkey, evaluated by residents (1), and we intend to add students’ opinion on some aspects of university medical education in our country, focusing on internal medicine. Internal medicine is one of the oldest medical",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.1289",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "1",
+    "pages": "68-69",
+    "views": 5572,
+    "downloads": 1877,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1254",
+    "sourceArticleId": "2050",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2050",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2050",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2050",
+    "localPdfUrl": "js/data/pdfs/2050.pdf",
+    "pdfUrl": "js/data/pdfs/2050.pdf"
+  }
+]

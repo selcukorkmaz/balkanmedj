@@ -1,0 +1,931 @@
+[
+  {
+    "id": 2769,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2769",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2769",
+    "localPdfUrl": "js/data/pdfs/2769.pdf",
+    "pdfUrl": "js/data/pdfs/2769.pdf"
+  },
+  {
+    "id": 2755,
+    "type": "Editorial",
+    "title": "Statistical Rigor and Reproducibility in the AI Era",
+    "authors": [
+      {
+        "name": "Selçuk Korkmaz",
+        "affiliation": "Department of Biostatistics and Medical Informatics, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "In today’s data‑rich biomedical landscape, traditional statistical practices increasingly intersect with powerful artificial intelligence (AI) tools. This convergence presents both opportunities and challenges. AI and machine learning (ML) can reveal patterns that manual analysis might overlook, potentially accelerating discovery. However, their use also hei",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025.040825",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "386-387",
+    "views": 2940,
+    "downloads": 2509,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2755",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2755",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2755",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2755",
+    "localPdfUrl": "js/data/pdfs/2755.pdf",
+    "pdfUrl": "js/data/pdfs/2755.pdf"
+  },
+  {
+    "id": 2759,
+    "type": "Editorial",
+    "title": "Antioxidants: Current Summary",
+    "authors": [
+      {
+        "name": "İlhami Gülçin[[1,2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Free radicals are highly reactive and unstable species-atoms, molecules, or ions-that contain one or more unpaired electrons, enabling them to readily interact with and damage surrounding molecules. In biological systems, they are primarily generated through normal metabolic processes, such as mitochondrial respiration, or from external sources including pol",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025.130825",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "388-392",
+    "views": 2703,
+    "downloads": 2097,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2759",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2759",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2759",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2759",
+    "localPdfUrl": "js/data/pdfs/2759.pdf",
+    "pdfUrl": "js/data/pdfs/2759.pdf"
+  },
+  {
+    "id": 2750,
+    "type": "Invited Review",
+    "title": "Recent Insights into the Epidemiology and Management of Anaphylaxis",
+    "authors": [
+      {
+        "name": "Sakura Sato",
+        "affiliation": "Clinic of Allergy, Clinical Research Center for Allergy and Rheumatology, National Hospital Organization, Sagamihara National Hospital, Kanagawa, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Tsuyoshi Kodachi",
+        "affiliation": "Clinic of Allergy, Clinical Research Center for Allergy and Rheumatology, National Hospital Organization, Sagamihara National Hospital, Kanagawa, Japan; Department of Pediatrics, Jichi Medical University, Tochigi, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Noriyuki Yanagida",
+        "affiliation": "Clinic of Allergy, Clinical Research Center for Allergy and Rheumatology, National Hospital Organization, Sagamihara National Hospital, Kanagawa, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Motohiro Ebisawa",
+        "affiliation": "Clinic of Allergy, Clinical Research Center for Allergy and Rheumatology, National Hospital Organization, Sagamihara National Hospital, Kanagawa, Japan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Anaphylaxis is a severe, rapidly developing systemic hypersensitivity reaction that can be life-threatening if not promptly identified and treated. Its global incidence is on the rise, especially among children, though fatal outcomes remain uncommon. This review summarizes the current understanding of anaphylaxis, covering its epidemiology, triggers, acute management, and strategies for long-term prevention, with emphasis on cases caused by food, medications, and insect stings. The estimated lifetime prevalence of anaphylaxis ranges from 0.05% to 2%. In children, food is the primary trigger, whereas in adults, medications are the most commonly responsible. The main culprits for food-related anaphylaxis differ by region: in Western countries, peanuts and tree nuts predominate; in East Asia, hen’s eggs and cow’s milk are most frequent; and in Southeast Asia, seafood is the leading cause. Drug-induced anaphylaxis-often the main cause of anaphylaxis-related deaths worldwide-is increasing due to the growing use of chemotherapies and biologic agents. Insect stings cause about 10% of all cases and remain the most common cause of fatal anaphylaxis. Intramuscular adrenaline continues to be the primary treatment, yet its administration is often delayed or insufficiently used. Patients should be prescribed adrenaline autoinjectors following an initial reaction, but availability and usage rates differ widely across countries. Education for patients and caregivers and the creation of clear action plans are essential. New alternatives, such as intranasal and sublingual adrenaline devices, are being developed to improve access and minimize hesitation in treatment. For prevention, VIT is well established and highly effective, preventing systemic reactions in over 90% of cases. Drug desensitization enables safe administration of necessary medications despite confirmed allergies, and this approach is suitable for all ages, including children. Oral immunotherapy for food allergens can increase tolerance levels and lower the chance of accidental exposure in selected patients, though safety concerns limit its widespread use. Biologic therapies like omalizumab present new treatment avenues for patients with multiple food or drug allergies. Recent studies have shown that omalizumab can raise the threshold for reactions to peanuts and other allergens in children. Case reports also indicate it may improve safety during drug desensitization, including for chemotherapy. Ongoing progress in diagnosis, emergency readiness, immunotherapies, and biologics continue to broaden the range of options for managing anaphylaxis. Nonetheless, gaps in access, awareness, and supporting evidence-particularly for children and older adults-underscore the need for additional research and health system investment.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Anaphylaxis is a severe, rapidly developing systemic hypersensitivity reaction that can be life-threatening if not promptly identified and treated. Its global incidence is on the rise, especially among children, though fatal outcomes remain uncommon. This review summarizes the current understanding of anaphylaxis, covering its epidemiology, triggers, acute management, and strategies for long-term prevention, with emphasis on cases caused by food, medications, and insect stings.</p>\r\n<p>The estimated lifetime prevalence of anaphylaxis ranges from 0.05% to 2%. In children, food is the primary trigger, whereas in adults, medications are the most commonly responsible. The main culprits for food-related anaphylaxis differ by region: in Western countries, peanuts and tree nuts predominate; in East Asia, hen&rsquo;s eggs and cow&rsquo;s milk are most frequent; and in Southeast Asia, seafood is the leading cause. Drug-induced anaphylaxis-often the main cause of anaphylaxis-related deaths worldwide-is increasing due to the growing use of chemotherapies and biologic agents. Insect stings cause about 10% of all cases and remain the most common cause of fatal anaphylaxis.</p>\r\n<p>Intramuscular adrenaline continues to be the primary treatment, yet its administration is often delayed or insufficiently used. Patients should be prescribed adrenaline autoinjectors following an initial reaction, but availability and usage rates differ widely across countries. Education for patients and caregivers and the creation of clear action plans are essential. New alternatives, such as intranasal and sublingual adrenaline devices, are being developed to improve access and minimize hesitation in treatment.</p>\r\n<p>For prevention, VIT is well established and highly effective, preventing systemic reactions in over 90% of cases. Drug desensitization enables safe administration of necessary medications despite confirmed allergies, and this approach is suitable for all ages, including children. Oral immunotherapy for food allergens can increase tolerance levels and lower the chance of accidental exposure in selected patients, though safety concerns limit its widespread use.</p>\r\n<p>Biologic therapies like omalizumab present new treatment avenues for patients with multiple food or drug allergies. Recent studies have shown that omalizumab can raise the threshold for reactions to peanuts and other allergens in children. Case reports also indicate it may improve safety during drug desensitization, including for chemotherapy.</p>\r\n<p>Ongoing progress in diagnosis, emergency readiness, immunotherapies, and biologics continue to broaden the range of options for managing anaphylaxis. Nonetheless, gaps in access, awareness, and supporting evidence-particularly for children and older adults-underscore the need for additional research and health system investment.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Anaphylaxis is a severe, rapidly developing systemic hypersensitivity reaction that can be life-threatening if not promptly identified and treated. Its global incidence is on the rise, especially among children, though fatal outcomes remain uncommon. This review summarizes the current understanding of anaphylaxis, covering its epidemiology, triggers, acute management, and strategies for long-term prevention, with emphasis on cases caused by food, medications, and insect stings. The estimated lifetime prevalence of anaphylaxis ranges from 0.05% to 2%. In children, food is the primary trigger, whereas in adults, medications are the most commonly responsible. The main culprits for food-related anaphylaxis differ by region: in Western countries, peanuts and tree nuts predominate; in East Asia, hen’s eggs and cow’s milk are most frequent; and in Southeast Asia, seafood is the leading cause. Drug-induced anaphylaxis-often the main cause of anaphylaxis-related deaths worldwide-is increasing due to the growing use of chemotherapies and biologic agents. Insect stings cause about 10% of all cases and remain the most common cause of fatal anaphylaxis. Intramuscular adrenaline continues to be the primary treatment, yet its administration is often delayed or insufficiently used. Patients should be prescribed adrenaline autoinjectors following an initial reaction, but availability and usage rates differ widely across countries. Education for patients and caregivers and the creation of clear action plans are essential. New alternatives, such as intranasal and sublingual adrenaline devices, are being developed to improve access and minimize hesitation in treatment. For prevention, VIT is well established and highly effective, preventing systemic reactions in over 90% of cases. Drug desensitization enables safe administration of necessary medications despite confirmed allergies, and this approach is suitable for all ages, including children. Oral immunotherapy for food allergens can increase tolerance levels and lower the chance of accidental exposure in selected patients, though safety concerns limit its widespread use. Biologic therapies like omalizumab present new treatment avenues for patients with multiple food or drug allergies. Recent studies have shown that omalizumab can raise the threshold for reactions to peanuts and other allergens in children. Case reports also indicate it may improve safety during drug desensitization, including for chemotherapy. Ongoing progress in diagnosis, emergency readiness, immunotherapies, and biologics continue to broaden the range of options for managing anaphylaxis. Nonetheless, gaps in access, awareness, and supporting evidence-particularly for children and older adults-underscore the need for additional research and health system investment.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-5-86",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "393-404",
+    "views": 2850,
+    "downloads": 2783,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2750",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2750",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2750",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2750",
+    "localPdfUrl": "js/data/pdfs/2750.pdf",
+    "pdfUrl": "js/data/pdfs/2750.pdf"
+  },
+  {
+    "id": 2752,
+    "type": "Invited Review",
+    "title": "Postoperative Pulmonary Complications: Clinical and Imaging Insights",
+    "authors": [
+      {
+        "name": "Furkan Ufuk",
+        "affiliation": "Department of Radiology, University of Chicago Medicine, Chicago, United States",
+        "orcid": ""
+      },
+      {
+        "name": "İclal Ocak",
+        "affiliation": "Department of Radiology, University of Chicago Medicine, Chicago, United States",
+        "orcid": ""
+      },
+      {
+        "name": "Lydia Chelala",
+        "affiliation": "Department of Radiology, University of Chicago Medicine, Chicago, United States",
+        "orcid": ""
+      },
+      {
+        "name": "Luis Landeras[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Postoperative pulmonary complications (PPCs) continue to be a major cause of illness and death among surgical patients, affecting recovery and increasing healthcare expenses. This in-depth review examines the wide range of PPCs, covering infectious, inflammatory, mechanical, airway, vascular, lymphatic, and transplant-related issues. It highlights the vital function of imaging-especially computed tomography-in promptly identifying, correctly diagnosing, and managing these problems. Frequent complications like pneumonia, empyema, acute respiratory distress syndrome, atelectasis, and pulmonary embolism are covered, as well as rarer but serious conditions such as lung torsion, bronchopleural fistulas, and pseudoaneurysms. The review describes clinic signs and matches them with imaging characteristics to support diagnosis and treatment planning. It also underscores the value of a team-based approach involving surgeons, radiologists, and critical care experts to enable timely care and better patient results.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Postoperative pulmonary complications (PPCs) continue to be a major cause of illness and death among surgical patients, affecting recovery and increasing healthcare expenses. This in-depth review examines the wide range of PPCs, covering infectious, inflammatory, mechanical, airway, vascular, lymphatic, and transplant-related issues. It highlights the vital function of imaging-especially computed tomography-in promptly identifying, correctly diagnosing, and managing these problems. Frequent complications like pneumonia, empyema, acute respiratory distress syndrome, atelectasis, and pulmonary embolism are covered, as well as rarer but serious conditions such as lung torsion, bronchopleural fistulas, and pseudoaneurysms. The review describes clinic signs and matches them with imaging characteristics to support diagnosis and treatment planning. It also underscores the value of a team-based approach involving surgeons, radiologists, and critical care experts to enable timely care and better patient results.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Postoperative pulmonary complications (PPCs) continue to be a major cause of illness and death among surgical patients, affecting recovery and increasing healthcare expenses. This in-depth review examines the wide range of PPCs, covering infectious, inflammatory, mechanical, airway, vascular, lymphatic, and transplant-related issues. It highlights the vital function of imaging-especially computed tomography-in promptly identifying, correctly diagnosing, and managing these problems. Frequent complications like pneumonia, empyema, acute respiratory distress syndrome, atelectasis, and pulmonary embolism are covered, as well as rarer but serious conditions such as lung torsion, bronchopleural fistulas, and pseudoaneurysms. The review describes clinic signs and matches them with imaging characteristics to support diagnosis and treatment planning. It also underscores the value of a team-based approach involving surgeons, radiologists, and critical care experts to enable timely care and better patient results.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-7.135",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "405-418",
+    "views": 3472,
+    "downloads": 1979,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2752",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2752",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2752",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2752",
+    "localPdfUrl": "js/data/pdfs/2752.pdf",
+    "pdfUrl": "js/data/pdfs/2752.pdf"
+  },
+  {
+    "id": 2754,
+    "type": "Original Article",
+    "title": "A Deep Learning-Based Automatic Recognition Model for Polycystic Ovary Ultrasound Images",
+    "authors": [
+      {
+        "name": "Baihua Zhao",
+        "affiliation": "Department of Ultrasound, Nanfang Hospital, Southern Medical University, Guangdong, China; Department of Ultrasound Diagnosis, The Second Xiangya Hospital, Central South University, Hunan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Lieming Wen",
+        "affiliation": "Department of Ultrasound Diagnosis, The Second Xiangya Hospital, Central South University, Hunan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yunxia Huang",
+        "affiliation": "Department of Ultrasound, The Third Xiangya Hospital, Central South University, Hunan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yaqian Fu",
+        "affiliation": "Health Management Center, The Second Xiangya Hospital, Central South University, Hunan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Shan Zhou",
+        "affiliation": "Health Management Center, The Second Xiangya Hospital, Central South University, Hunan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jieyu Liu",
+        "affiliation": "Department of Ultrasound Diagnosis, The Second Xiangya Hospital, Central South University, Hunan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Minghui Liu",
+        "affiliation": "Department of Ultrasound Diagnosis, The Second Xiangya Hospital, Central South University, Hunan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yingjia Li",
+        "affiliation": "Department of Ultrasound, Nanfang Hospital, Southern Medical University, Guangdong, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Polycystic ovary syndrome (PCOS) has a significant impact on endocrine metabolism, reproductive function, and mental health in women of reproductive age. The accuracy of ultrasound in identifying polycystic ovarian morphology remains variable. Aims: To develop a deep learning model capable of rapidly and accurately identifying PCOS using ovarian ultrasound images. Study Design: Prospective diagnostic accuracy study. Methods: This prospective study included data from 1,751 women with suspected PCOS with clinical and ultrasound information collected and archived. Patients from center 1 were randomly divided into a training set and an internal validation set in a 7:3 ratio, while patients from center 2 served as the external validation set. Using the YOLOv11 deep learning framework, an automated recognition model for ovarian ultrasound images in PCOS cases was constructed, and its diagnostic performance was evaluated. Results: Ultrasound images from 933 patients (781 from center 1 and 152 from center 2) were analyzed. The mean average precision of the YOLOv11 model in detecting the target ovary was 95.7%, 97.6%, and 97.8% for the training, internal validation, and external validation sets, respectively. For diagnostic classification, the model achieved an F1 score of 95.0% in the training set and 96.9% in both validation sets. The area under the curve values were 0.953, 0.973, and 0.967 for the training, internal validation, and external validation sets respectively. The model also demonstrated significantly faster evaluation of a single ovary compared to clinicians (doctor, 5.0 seconds; model, 0.1 seconds; p < 0.01). Conclusion: The YOLOv11-based automatic recognition model for PCOS ovarian ultrasound images exhibits strong target detection and diagnostic performance. This approach can streamline the follicle counting process in conventional ultrasound and enhance the efficiency and generalizability of ultrasound-based PCOS assessment.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Polycystic ovary syndrome (PCOS) has a significant impact on endocrine metabolism, reproductive function, and mental health in women of reproductive age. The accuracy of ultrasound in identifying polycystic ovarian morphology remains variable.</p>\r\n<p><strong>Aims:</strong> To develop a deep learning model capable of rapidly and accurately identifying PCOS using ovarian ultrasound images.</p>\r\n<p><strong>Study Design:</strong> Prospective diagnostic accuracy study.</p>\r\n<p><strong>Methods:</strong> This prospective study included data from 1,751 women with suspected PCOS with clinical and ultrasound information collected and archived. Patients from center 1 were randomly divided into a training set and an internal validation set in a 7:3 ratio, while patients from center 2 served as the external validation set. Using the YOLOv11 deep learning framework, an automated recognition model for ovarian ultrasound images in PCOS cases was constructed, and its diagnostic performance was evaluated.</p>\r\n<p><strong>Results:</strong> Ultrasound images from 933 patients (781 from center 1 and 152 from center 2) were analyzed. The mean average precision of the YOLOv11 model in detecting the target ovary was 95.7%, 97.6%, and 97.8% for the training, internal validation, and external validation sets, respectively. For diagnostic classification, the model achieved an F1 score of 95.0% in the training set and 96.9% in both validation sets. The area under the curve values were 0.953, 0.973, and 0.967 for the training, internal validation, and external validation sets respectively. The model also demonstrated significantly faster evaluation of a single ovary compared to clinicians (doctor, 5.0 seconds; model, 0.1 seconds; <em>p</em> &lt; 0.01).</p>\r\n<p><strong>Conclusion:</strong> The YOLOv11-based automatic recognition model for PCOS ovarian ultrasound images exhibits strong target detection and diagnostic performance. This approach can streamline the follicle counting process in conventional ultrasound and enhance the efficiency and generalizability of ultrasound-based PCOS assessment.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Polycystic ovary syndrome (PCOS) has a significant impact on endocrine metabolism, reproductive function, and mental health in women of reproductive age. The accuracy of ultrasound in identifying polycystic ovarian morphology remains variable. Aims: To develop a deep learning model capable of rapidly and accurately identifying PCOS using ovarian ultrasound images. Study Design: Prospective diagnostic accuracy study. Methods: This prospective study included data from 1,751 women with suspected PCOS with clinical and ultrasound information collected and archived. Patients from center 1 were randomly divided into a training set and an internal validation set in a 7:3 ratio, while patients from center 2 served as the external validation set. Using the YOLOv11 deep learning framework, an automated recognition model for ovarian ultrasound images in PCOS cases was constructed, and its diagnostic performance was evaluated. Results: Ultrasound images from 933 patients (781 from center 1 and 152 from center 2) were analyzed. The mean average precision of the YOLOv11 model in detecting the target ovary was 95.7%, 97.6%, and 97.8% for the training, internal validation, and external validation sets, respectively. For diagnostic classification, the model achieved an F1 score of 95.0% in the training set and 96.9% in both validation sets. The area under the curve values were 0.953, 0.973, and 0.967 for the training, internal validation, and external validation sets respectively. The model also demonstrated significantly faster evaluation of a single ovary compared to clinicians (doctor, 5.0 seconds; model, 0.1 seconds; p < 0.01). Conclusion: The YOLOv11-based automatic recognition model for PCOS ovarian ultrasound images exhibits strong target detection and diagnostic performance. This approach can streamline the follicle counting process in conventional ultrasound and enhance the efficiency and generalizability of ultrasound-based PCOS assessment.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-5-114",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "419-428",
+    "views": 3816,
+    "downloads": 2612,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2754",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2754",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2754",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2754",
+    "localPdfUrl": "js/data/pdfs/2754.pdf",
+    "pdfUrl": "js/data/pdfs/2754.pdf"
+  },
+  {
+    "id": 2761,
+    "type": "Original Article",
+    "title": "Bronchiectasis in Children: A Comparative Analysis of Cystic Fibrosis and Non-Cystic Fibrosis Etiologies Using the Bhalla Score",
+    "authors": [
+      {
+        "name": "Handan Kekeç",
+        "affiliation": "Department of Pediatric Pulmonology, Gazi University Faculty of Medicine, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Tuğba Şişmanlar Eyüboğlu",
+        "affiliation": "Department of Pediatric Pulmonology, Gazi University Faculty of Medicine, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ayse Tana Aslan",
+        "affiliation": "Department of Pediatric Pulmonology, Gazi University Faculty of Medicine, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Yasemin Duman",
+        "affiliation": "Department of Pediatrics, Gazi University Faculty of Medicine, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Volkan Medeni",
+        "affiliation": "Department of Public Health, Gazi University Faculty of Medicine, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Merve Yazol",
+        "affiliation": "Department of Radiology, Gazi University Faculty of Medicine, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Öznur Leman Boyunağa",
+        "affiliation": "Department of Radiology, Gazi University Faculty of Medicine, Ankara, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Childhood bronchiectasis (BE) is a chronic lung condition that remains under recognized, marked by irreversible widening of the bronchi, frequent respiratory infections, a persistent wet cough, and progressive lung damage, often leading to significant health burdens. Aims: To evaluate children with cystic fibrosis (CF) and non-CF BE and to examine the association between clinical presentation and radiological severity of BE using the Bhalla scoring system. Study Design: Retrospective observational study. Methods: Children aged 0-18 years with a CT-confirmed diagnosis of BE were enrolled. Data on demographics, clinical characteristics, and imaging results were collected retrospectively from medical records. The Bhalla score was used to assess BE severity. Patients were categorized into CF-related and non-CF BE groups. The two groups were compared with respect to clinical features, growth z-scores, hospitalization frequency, and pulmonary function test outcomes. Results: A total of 157 patients were analyzed. Among them, CF accounted for 23.6% of cases, and while the leading causes in the non-CF group were post-infectious BE (28%), immunodeficiency (19.8%), and primary ciliary dyskinesia (12.8%). The CF group presented at an earlier age, had a longer follow-up period, and experienced more frequent hospitalizations (p < 0.001). In the CF group, weight, height, and body mass index z-scores significantly improved from the initial to the final assessment (p = 0.010, p = 0.006, and p = 0.026, respectively), whereas no such improvement was observed in the non-CF group. Severe Bhalla scores were more frequently observed in the CF group (p < 0.001). Among CF patients, Bhalla scores showed a strong correlation with forced expiratory volume in one second (FEV1) in univariate analysis (r = 0.846, p < 0.001), though this was not significant in multivariable analysis (p = 0.434). In the non-CF group, there was no correlation between Bhalla scores and final FEV1 values (p = 0.148, r = 0.212). Conclusion: The results underscore distinct clinical trajectories between CF and non-CF BE in children. Improvements in CF patients suggest the effectiveness of structured clinical management, whereas inconsistent outcomes in non-CF patients point to the need for standardized follow-up protocols. While the Bhalla score may indicate the extent of structural lung disease in CF, it does not independently predict lung function, and therefore should be used as a supplementary, not solitary, measure of disease severity.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Childhood bronchiectasis (BE) is a chronic lung condition that remains under recognized, marked by irreversible widening of the bronchi, frequent respiratory infections, a persistent wet cough, and progressive lung damage, often leading to significant health burdens.</p>\r\n<p><strong>Aims:</strong> To evaluate children with cystic fibrosis (CF) and non-CF BE and to examine the association between clinical presentation and radiological severity of BE using the Bhalla scoring system.</p>\r\n<p><strong>Study Design:</strong> Retrospective observational study.</p>\r\n<p><strong>Methods:</strong> Children aged 0-18 years with a CT-confirmed diagnosis of BE were enrolled. Data on demographics, clinical characteristics, and imaging results were collected retrospectively from medical records. The Bhalla score was used to assess BE severity. Patients were categorized into CF-related and non-CF BE groups. The two groups were compared with respect to clinical features, growth z-scores, hospitalization frequency, and pulmonary function test outcomes.</p>\r\n<p><strong>Results:</strong> A total of 157 patients were analyzed. Among them, CF accounted for 23.6% of cases, and while the leading causes in the non-CF group were post-infectious BE (28%), immunodeficiency (19.8%), and primary ciliary dyskinesia (12.8%). The CF group presented at an earlier age, had a longer follow-up period, and experienced more frequent hospitalizations (<em>p</em> &lt; 0.001). In the CF group, weight, height, and body mass index z-scores significantly improved from the initial to the final assessment (<em>p</em> = 0.010, <em>p</em> = 0.006, and <em>p</em> = 0.026, respectively), whereas no such improvement was observed in the non-CF group. Severe Bhalla scores were more frequently observed in the CF group (<em>p</em> &lt; 0.001). Among CF patients, Bhalla scores showed a strong correlation with forced expiratory volume in one second (FEV<sub>1</sub>) in univariate analysis (r = 0.846, <em>p </em>&lt; 0.001), though this was not significant in multivariable analysis (<em>p </em>= 0.434). In the non-CF group, there was no correlation between Bhalla scores and final FEV<sub>1</sub> values (<em>p</em> = 0.148, r = 0.212).</p>\r\n<p><strong>Conclusion:</strong> The results underscore distinct clinical trajectories between CF and non-CF BE in children. Improvements in CF patients suggest the effectiveness of structured clinical management, whereas inconsistent outcomes in non-CF patients point to the need for standardized follow-up protocols. While the Bhalla score may indicate the extent of structural lung disease in CF, it does not independently predict lung function, and therefore should be used as a supplementary, not solitary, measure of disease severity.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Childhood bronchiectasis (BE) is a chronic lung condition that remains under recognized, marked by irreversible widening of the bronchi, frequent respiratory infections, a persistent wet cough, and progressive lung damage, often leading to significant health burdens. Aims: To evaluate children with cystic fibrosis (CF) and non-CF BE and to examine the association between clinical presentation and radiological severity of BE using the Bhalla scoring system. Study Design: Retrospective observational study. Methods: Children aged 0-18 years with a CT-confirmed diagnosis of BE were enrolled. Data on demographics, clinical characteristics, and imaging results were collected retrospectively from medical records. The Bhalla score was used to assess BE severity. Patients were categorized into CF-related and non-CF BE groups. The two groups were compared with respect to clinical features, growth z-scores, hospitalization frequency, and pulmonary function test outcomes. Results: A total of 157 patients were analyzed. Among them, CF accounted for 23.6% of cases, and while the leading causes in the non-CF group were post-infectious BE (28%), immunodeficiency (19.8%), and primary ciliary dyskinesia (12.8%). The CF group presented at an earlier age, had a longer follow-up period, and experienced more frequent hospitalizations (p < 0.001). In the CF group, weight, height, and body mass index z-scores significantly improved from the initial to the final assessment (p = 0.010, p = 0.006, and p = 0.026, respectively), whereas no such improvement was observed in the non-CF group. Severe Bhalla scores were more frequently observed in the CF group (p < 0.001). Among CF patients, Bhalla scores showed a strong correlation with forced expiratory volume in one second (FEV1) in univariate analysis (r = 0.846, p < 0.001), though this was not significant in multivariable analysis (p = 0.434). In the non-CF group, there was no correlation between Bhalla scores and final FEV1 values (p = 0.148, r = 0.212). Conclusion: The results underscore distinct clinical trajectories between CF and non-CF BE in children. Improvements in CF patients suggest the effectiveness of structured clinical management, whereas inconsistent outcomes in non-CF patients point to the need for standardized follow-up protocols. While the Bhalla score may indicate the extent of structural lung disease in CF, it does not independently predict lung function, and therefore should be used as a supplementary, not solitary, measure of disease severity.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-6-247",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "429-439",
+    "views": 3604,
+    "downloads": 2486,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2761",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2761",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2761",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2761",
+    "localPdfUrl": "js/data/pdfs/2761.pdf",
+    "pdfUrl": "js/data/pdfs/2761.pdf"
+  },
+  {
+    "id": 2767,
+    "type": "Original Article",
+    "title": "Inhibition of PI3K and Hedgehog Signaling Pathway Inhibits Hypoxia-Induced Vasculogenic Mimicry Formation in Ovarian Cancer Stem Cells",
+    "authors": [
+      {
+        "name": "Jun Liang",
+        "affiliation": "Department of Obstetrics and Gynecology, Hebei Medical University Third Hospital, Hebei Province, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yun Bai",
+        "affiliation": "Department of Obstetrics and Gynecology, Hebei Medical University Third Hospital, Hebei Province, China",
+        "orcid": ""
+      },
+      {
+        "name": "Huan Zhao",
+        "affiliation": "Department of Obstetrics and Gynecology, Hebei Medical University Third Hospital, Hebei Province, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Inhibition of the Hedgehog and phosphatidylinositol 3-kinase/protein kinase B (PI3K/AKT) signaling pathways has been shown to suppress tumor proliferation and stem cell activity. However, the precise role of these pathways in vasculogenic mimicry (VM) of ovarian cancer stem cells (OCSCs) remains unclear. Aims: To investigate the roles of the PI3K/AKT and Hedgehog signaling pathways in VM formation and the underlying mechanisms in OCSCs. Study Design: In vitro and in vivo experimental model. Methods: OCSCs were induced through serum-free culture of SK-OV-3. Hypoxia-inducible factor-1α (HIF-1α) knockdown was achieved by transfection with sh-HIF-1α. Cells were treated with the PI3K agonist 740 Y-P, the PI3K inhibitor LY294002, the Hedgehog agonist purmorphamine, and the Hedgehog inhibitor cyclopamine under hypoxic conditions. Expression of HIF-1α, epithelial-to-endothelial transition (EET) markers, and components of the PI3K and Hedgehog pathways was analyzed using immunofluorescence and Western blotting. VM capacity was assessed using a Matrigel three-dimensional (3D) culture assay. Cell proliferation and invasion were evaluated by MTS, EdU, and Transwell assays. VM formation was further examined in an OCSC xenograft model. Results: OCSCs accounted for more than 85% of seventh-generation SK-OV-3 cells cultured under serum-free conditions. Hypoxia markedly increased HIF-1α expression, which activated the PI3K and Hedgehog signaling pathways. HIF-1α knockdown suppressed activation of these pathways. Treatment with LY294002 and cyclopamine, as well as HIF-1α knockdown, inhibited hypoxia-induced upregulation of N-cadherin and VE-cadherin, as well as the formation of branching points and 3D channels. Moreover, both LY294002 and cyclopamine significantly reduced cell proliferation, invasion, and VM formation in vitro and in xenografted OCSCs. Conclusion: HIF-1α knockdown inhibits activation of the PI3K and Hedgehog signaling pathways, thereby reducing EET and VM formation in hypoxia-induced OCSCs.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Inhibition of the Hedgehog and phosphatidylinositol 3-kinase/protein kinase B (PI3K/AKT) signaling pathways has been shown to suppress tumor proliferation and stem cell activity. However, the precise role of these pathways in vasculogenic mimicry (VM) of ovarian cancer stem cells (OCSCs) remains unclear.</p>\r\n<p><strong>Aims:</strong> To investigate the roles of the PI3K/AKT and Hedgehog signaling pathways in VM formation and the underlying mechanisms in OCSCs.</p>\r\n<p><strong>Study Design:</strong> <em>In vitro</em> and <em>in vivo </em>experimental model.</p>\r\n<p><strong>Methods:</strong> OCSCs were induced through serum-free culture of SK-OV-3. Hypoxia-inducible factor-1&alpha; (HIF-1&alpha;) knockdown was achieved by transfection with sh-HIF-1&alpha;. Cells were treated with the PI3K agonist 740 Y-P, the PI3K inhibitor LY294002, the Hedgehog agonist purmorphamine, and the Hedgehog inhibitor cyclopamine under hypoxic conditions. Expression of HIF-1&alpha;, epithelial-to-endothelial transition (EET) markers, and components of the PI3K and Hedgehog pathways was analyzed using immunofluorescence and Western blotting. VM capacity was assessed using a Matrigel three-dimensional (3D) culture assay. Cell proliferation and invasion were evaluated by MTS, EdU, and Transwell assays. VM formation was further examined in an OCSC xenograft model.</p>\r\n<p><strong>Results:</strong> OCSCs accounted for more than 85% of seventh-generation SK-OV-3 cells cultured under serum-free conditions. Hypoxia markedly increased HIF-1&alpha; expression, which activated the PI3K and Hedgehog signaling pathways. HIF-1&alpha; knockdown suppressed activation of these pathways. Treatment with LY294002 and cyclopamine, as well as HIF-1&alpha; knockdown, inhibited hypoxia-induced upregulation of N-cadherin and VE-cadherin, as well as the formation of branching points and 3D channels. Moreover, both LY294002 and cyclopamine significantly reduced cell proliferation, invasion, and VM formation in vitro and in xenografted OCSCs.</p>\r\n<p><strong>Conclusion:</strong> HIF-1&alpha; knockdown inhibits activation of the PI3K and Hedgehog signaling pathways, thereby reducing EET and VM formation in hypoxia-induced OCSCs.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Inhibition of the Hedgehog and phosphatidylinositol 3-kinase/protein kinase B (PI3K/AKT) signaling pathways has been shown to suppress tumor proliferation and stem cell activity. However, the precise role of these pathways in vasculogenic mimicry (VM) of ovarian cancer stem cells (OCSCs) remains unclear. Aims: To investigate the roles of the PI3K/AKT and Hedgehog signaling pathways in VM formation and the underlying mechanisms in OCSCs. Study Design: In vitro and in vivo experimental model. Methods: OCSCs were induced through serum-free culture of SK-OV-3. Hypoxia-inducible factor-1α (HIF-1α) knockdown was achieved by transfection with sh-HIF-1α. Cells were treated with the PI3K agonist 740 Y-P, the PI3K inhibitor LY294002, the Hedgehog agonist purmorphamine, and the Hedgehog inhibitor cyclopamine under hypoxic conditions. Expression of HIF-1α, epithelial-to-endothelial transition (EET) markers, and components of the PI3K and Hedgehog pathways was analyzed using immunofluorescence and Western blotting. VM capacity was assessed using a Matrigel three-dimensional (3D) culture assay. Cell proliferation and invasion were evaluated by MTS, EdU, and Transwell assays. VM formation was further examined in an OCSC xenograft model. Results: OCSCs accounted for more than 85% of seventh-generation SK-OV-3 cells cultured under serum-free conditions. Hypoxia markedly increased HIF-1α expression, which activated the PI3K and Hedgehog signaling pathways. HIF-1α knockdown suppressed activation of these pathways. Treatment with LY294002 and cyclopamine, as well as HIF-1α knockdown, inhibited hypoxia-induced upregulation of N-cadherin and VE-cadherin, as well as the formation of branching points and 3D channels. Moreover, both LY294002 and cyclopamine significantly reduced cell proliferation, invasion, and VM formation in vitro and in xenografted OCSCs. Conclusion: HIF-1α knockdown inhibits activation of the PI3K and Hedgehog signaling pathways, thereby reducing EET and VM formation in hypoxia-induced OCSCs.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-7-262",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "440-451",
+    "views": 3603,
+    "downloads": 1988,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2767",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2767",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2767",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2767",
+    "localPdfUrl": "js/data/pdfs/2767.pdf",
+    "pdfUrl": "js/data/pdfs/2767.pdf"
+  },
+  {
+    "id": 2760,
+    "type": "Original Article",
+    "title": "The Associations of Dietary Copper and Magnesium Intake, Geriatric Nutritional Risk Index, and Systemic Inflammation Response Index with Stroke Risk in the Elderly",
+    "authors": [
+      {
+        "name": "Baochun Luo",
+        "affiliation": "The Graduate School, Heilongjiang University of Chinese Medicine, Heilongjiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Sifan Liu",
+        "affiliation": "The Graduate School, Heilongjiang University of Chinese Medicine, Heilongjiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Lei Zheng",
+        "affiliation": "The First Affiliated Hospital of Heilongjiang University of Chinese Medicine, Heilongjiang, China; Molecular Biology Laboratory, Clinical Integration of Traditional Chinese and Western Medicine, Heilongjiang Province, Heilongjiang University of Chinese Medicine, Heilongjiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Baiwen Zhang",
+        "affiliation": "The First Affiliated Hospital of Heilongjiang University of Chinese Medicine, Heilongjiang, China; Molecular Biology Laboratory, Clinical Integration of Traditional Chinese and Western Medicine, Heilongjiang Province, Heilongjiang University of Chinese Medicine, Heilongjiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Wei Zou",
+        "affiliation": "The First Affiliated Hospital of Heilongjiang University of Chinese Medicine, Heilongjiang, China; Molecular Biology Laboratory, Clinical Integration of Traditional Chinese and Western Medicine, Heilongjiang Province, Heilongjiang University of Chinese Medicine, Heilongjiang, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The effects of dietary copper and magnesium intake, the geriatric nutritional risk index (GNRI), and the systemic inflammation response index (SIRI) on stroke risk in the elderly remain unclear. Aims: To examine the relationships between dietary copper and magnesium intake, GNRI, SIRI, and stroke risk in the elderly. Study Design: Cross-sectional study. Methods: Data from 7,157 elderly participants in National Health and Nutrition Examination Survey 2007-2016 were analyzed using multifactorial logistic regression, subgroup analysis, smooth curve fitting, threshold effect analysis, mediation analysis, and sensitivity analysis. Results: Higher dietary copper and magnesium intake were significantly and linearly associated with lower stroke risk. SIRI was positively associated with stroke risk, while GNRI had a stable protective effect. In fully adjusted models, medium- and high-level copper and magnesium intake were positively associated with GNRI and negatively associated with SIRI. GNRI mediated 4.4% and 5.5% of the associations between copper and magnesium intake and stroke risk, respectively; SIRI mediated 3.4% and 2.9%, respectively. Conclusion: Higher dietary copper and magnesium intake are associated with reduced stroke risk in the elderly, with GNRI and SIRI exerting modest mediating effects.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The effects of dietary copper and magnesium intake, the geriatric nutritional risk index (GNRI), and the systemic inflammation response index (SIRI) on stroke risk in the elderly remain unclear.</p>\r\n<p><strong>Aims:</strong> To examine the relationships between dietary copper and magnesium intake, GNRI, SIRI, and stroke risk in the elderly.</p>\r\n<p><strong>Study Design:</strong> Cross-sectional study.</p>\r\n<p><strong>Methods:</strong> Data from 7,157 elderly participants in National Health and Nutrition Examination Survey 2007-2016 were analyzed using multifactorial logistic regression, subgroup analysis, smooth curve fitting, threshold effect analysis, mediation analysis, and sensitivity analysis.</p>\r\n<p><strong>Results:</strong> Higher dietary copper and magnesium intake were significantly and linearly associated with lower stroke risk. SIRI was positively associated with stroke risk, while GNRI had a stable protective effect. In fully adjusted models, medium- and high-level copper and magnesium intake were positively associated with GNRI and negatively associated with SIRI. GNRI mediated 4.4% and 5.5% of the associations between copper and magnesium intake and stroke risk, respectively; SIRI mediated 3.4% and 2.9%, respectively.</p>\r\n<p><strong>Conclusion:</strong> Higher dietary copper and magnesium intake are associated with reduced stroke risk in the elderly, with GNRI and SIRI exerting modest mediating effects.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The effects of dietary copper and magnesium intake, the geriatric nutritional risk index (GNRI), and the systemic inflammation response index (SIRI) on stroke risk in the elderly remain unclear. Aims: To examine the relationships between dietary copper and magnesium intake, GNRI, SIRI, and stroke risk in the elderly. Study Design: Cross-sectional study. Methods: Data from 7,157 elderly participants in National Health and Nutrition Examination Survey 2007-2016 were analyzed using multifactorial logistic regression, subgroup analysis, smooth curve fitting, threshold effect analysis, mediation analysis, and sensitivity analysis. Results: Higher dietary copper and magnesium intake were significantly and linearly associated with lower stroke risk. SIRI was positively associated with stroke risk, while GNRI had a stable protective effect. In fully adjusted models, medium- and high-level copper and magnesium intake were positively associated with GNRI and negatively associated with SIRI. GNRI mediated 4.4% and 5.5% of the associations between copper and magnesium intake and stroke risk, respectively; SIRI mediated 3.4% and 2.9%, respectively. Conclusion: Higher dietary copper and magnesium intake are associated with reduced stroke risk in the elderly, with GNRI and SIRI exerting modest mediating effects.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-7-25",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "452-463",
+    "views": 3560,
+    "downloads": 2130,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2760",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2760",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2760",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2760",
+    "localPdfUrl": "js/data/pdfs/2760.pdf",
+    "pdfUrl": "js/data/pdfs/2760.pdf"
+  },
+  {
+    "id": 2768,
+    "type": "Brief Report",
+    "title": "A Rare TERT Mutation Associated with Idiopathic Pulmonary Fibrosis and COPD in a Chinese Family",
+    "authors": [
+      {
+        "name": "Liang-Liang Fan",
+        "affiliation": "Department of Cardiovascular Medicine, The Third Xiangya Hospital, Central South University, Changsha, China; Department of Cell Biology, School of Life Sciences, Central South University, Changsha, China",
+        "orcid": ""
+      },
+      {
+        "name": "Dong-Cai Feng",
+        "affiliation": "Department of Cardiovascular Medicine, The Third Xiangya Hospital, Central South University, Changsha, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jie-Yi Long",
+        "affiliation": "Department of Cell Biology, School of Life Sciences, Central South University, Changsha, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ai-Qin Zhang",
+        "affiliation": "Department of Obstetrics and Gynecology, Third Xiangya Hospital of Central South University, Changsha, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Idiopathic pulmonary fibrosis (IPF) is a form of interstitial lung disease characterized by progressive lung scarring. It involves destruction of the alveolar architecture, thickening of the basement membrane, abnormal deposition of the extracellular matrix, inflammatory cell infiltration in the interstitial space, and formation of fibroblast foci. Mutations in telomerase reverse transcriptase (TERT) have been reported to be associated with IPF. Aims: To explore the genetic cause of a family affected by IPF and chronic obstructive pulmonary disease. Study Design: Cross-sectional study. Methods: Whole-exome sequencing combined with IPF candidate gene filtering was used to identify the causative mutations. Sanger sequencing was applied to validate the mutation and perform c-segregation analysis. Real-time polymerase chain reaction (PCR) was conducted to analyze the telomere lengths of family members. Results: We identified a rare mutation, c.2669G > A (p. Gly890Asp), in TERT (NM_198253.2) in the proband and another affected family member. Bioinformatics analysis predicted this mutation to be deleterious, and structural modeling suggested that it altered the structure and surface charge distribution of the TERT protein. Additionally, real-time PCR demonstrated that mutation carriers had significantly shorter telomere lengths compared with individuals of the same age. According to American College of Medical Genetics and Genomics guidelines, this rare mutation was classified as likely pathogenic. Conclusions: This is the first reported case of IPF caused by the p. Gly890Asp mutation of TERT in the Chinese population. Our findings support the diagnosis of IPF in the patient and further highlight the role of TERT in the disease.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Idiopathic pulmonary fibrosis (IPF) is a form of interstitial lung disease characterized by progressive lung scarring. It involves destruction of the alveolar architecture, thickening of the basement membrane, abnormal deposition of the extracellular matrix, inflammatory cell infiltration in the interstitial space, and formation of fibroblast foci. Mutations in <em>telomerase reverse transcriptase (TERT)</em> have been reported to be associated with IPF.</p>\r\n<p><strong>Aims:</strong> To explore the genetic cause of a family affected by IPF and chronic obstructive pulmonary disease.</p>\r\n<p><strong>Study Design:</strong> Cross-sectional study.</p>\r\n<p><strong>Methods:</strong> Whole-exome sequencing combined with IPF candidate gene filtering was used to identify the causative mutations. Sanger sequencing was applied to validate the mutation and perform c-segregation analysis. Real-time polymerase chain reaction (PCR) was conducted to analyze the telomere lengths of family members.</p>\r\n<p><strong>Results:</strong> We identified a rare mutation, c.2669G &gt; A (p. Gly890Asp), in <em>TERT</em> (NM_198253.2) in the proband and another affected family member. Bioinformatics analysis predicted this mutation to be deleterious, and structural modeling suggested that it altered the structure and surface charge distribution of the <em>TERT</em> protein. Additionally, real-time PCR demonstrated that mutation carriers had significantly shorter telomere lengths compared with individuals of the same age. According to American College of Medical Genetics and Genomics guidelines, this rare mutation was classified as likely pathogenic.</p>\r\n<p><strong>Conclusions:</strong> This is the first reported case of IPF caused by the p. Gly890Asp mutation of <em>TERT</em> in the Chinese population. Our findings support the diagnosis of IPF in the patient and further highlight the role of <em>TERT</em> in the disease.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Idiopathic pulmonary fibrosis (IPF) is a form of interstitial lung disease characterized by progressive lung scarring. It involves destruction of the alveolar architecture, thickening of the basement membrane, abnormal deposition of the extracellular matrix, inflammatory cell infiltration in the interstitial space, and formation of fibroblast foci. Mutations in telomerase reverse transcriptase (TERT) have been reported to be associated with IPF. Aims: To explore the genetic cause of a family affected by IPF and chronic obstructive pulmonary disease. Study Design: Cross-sectional study. Methods: Whole-exome sequencing combined with IPF candidate gene filtering was used to identify the causative mutations. Sanger sequencing was applied to validate the mutation and perform c-segregation analysis. Real-time polymerase chain reaction (PCR) was conducted to analyze the telomere lengths of family members. Results: We identified a rare mutation, c.2669G > A (p. Gly890Asp), in TERT (NM_198253.2) in the proband and another affected family member. Bioinformatics analysis predicted this mutation to be deleterious, and structural modeling suggested that it altered the structure and surface charge distribution of the TERT protein. Additionally, real-time PCR demonstrated that mutation carriers had significantly shorter telomere lengths compared with individuals of the same age. According to American College of Medical Genetics and Genomics guidelines, this rare mutation was classified as likely pathogenic. Conclusions: This is the first reported case of IPF caused by the p. Gly890Asp mutation of TERT in the Chinese population. Our findings support the diagnosis of IPF in the patient and further highlight the role of TERT in the disease.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-6-142",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "464-468",
+    "views": 2569,
+    "downloads": 1855,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2768",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2768",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2768",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2768",
+    "localPdfUrl": "js/data/pdfs/2768.pdf",
+    "pdfUrl": "js/data/pdfs/2768.pdf"
+  },
+  {
+    "id": 2700,
+    "type": "Clinical Image",
+    "title": "Crystalline Lens Extrusion Secondary to Fungal Keratitis",
+    "authors": [
+      {
+        "name": "Suguru Nakagawa",
+        "affiliation": "Department of Ophthalmology, Saitama Red Cross Hospital, Saitama, Japan; Department of Ophthalmology, Saitama Medical Center, Jichi Medical University, Saitama, Japan; Department of Ophthalmology, Graduate School of Medicine, University of Tokyo, Tokyo, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Takashi Miyai",
+        "affiliation": "Department of Ophthalmology, Graduate School of Medicine, University of Tokyo, Tokyo, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Kiyoshi Ishii",
+        "affiliation": "Department of Ophthalmology, Saitama Red Cross Hospital, Saitama, Japan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 78-year-old Japanese woman presented with hypopyon and a corneal ulcer accompanied by a ring-shaped abscess. She was referred to our department after failing to respond to antibacterial and steroidal eyedrops (Figure 1a). Her visual acuity was reduced to light perception. Risk factors for fungal infection included agricultural work with soil exposure and a",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-1-140",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "469-470",
+    "views": 4071,
+    "downloads": 2409,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2700",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2700",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2700",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2700",
+    "localPdfUrl": "js/data/pdfs/2700.pdf",
+    "pdfUrl": "js/data/pdfs/2700.pdf"
+  },
+  {
+    "id": 2749,
+    "type": "Clinical Image",
+    "title": "Onychopapilloma and Ungual Fibroma Revealing Late-Diagnosed Tuberous Sclerosis",
+    "authors": [
+      {
+        "name": "Buğra Burç Dağtaş",
+        "affiliation": "Clinic of Dermatology, University of Health Sciences Türkiye, İstanbul Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Cem Leblebici",
+        "affiliation": "Clinic of Pathology, University of Health Sciences Türkiye, İstanbul Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 75-year-old woman with a known history of diabetes mellitus and hypertension presented with a long-standing deformity of the right third fingernail. On examination, a distinct longitudinal erythroxanthonychia with an irregular distal subungual keratotic mass was noted (Figures 1a, b). Dermoscopy further characterized the lesion, showing a clearly defined d",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-4-16",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "471-472",
+    "views": 2665,
+    "downloads": 1635,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2749",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2749",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2749",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2749",
+    "localPdfUrl": "js/data/pdfs/2749.pdf",
+    "pdfUrl": "js/data/pdfs/2749.pdf"
+  },
+  {
+    "id": 2741,
+    "type": "Clinical Image",
+    "title": "Differentiating Pectus Excavatum-Related Right Ventricul Dysfunction from ARVD: The Role of Cardiac Imaging",
+    "authors": [
+      {
+        "name": "Özge Özden Kayhan",
+        "affiliation": "Clinic of Cardiology, Bahçelievler Memorial Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Cemre Turgul",
+        "affiliation": "Department of Cardiology, Erciyes University Faculty of Medicine, Kayseri, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Çağla Akçay Ürkmez",
+        "affiliation": "Clinic of Cardiology, Sakarya Training and Research Hospital, Sakarya, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Gökhan Aksan",
+        "affiliation": "Department of Cardiology, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Haşim Tüner",
+        "affiliation": "Clinic of Cardiology, Bahçelievler Memorial Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 19-year-old male presented with intermittent palpitations and shortness of breath that were not associated with physical exertion. He had no documented history of cardiac disease. It is noteworthy that he had undergone surgical repair for pectus excavatum in 2018, followed by bar removal in 2020. The onset of his palpitations was reported to occur after th",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-3-133",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "473-474",
+    "views": 2816,
+    "downloads": 1515,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2741",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2741",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2741",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2741",
+    "localPdfUrl": "js/data/pdfs/2741.pdf",
+    "pdfUrl": "js/data/pdfs/2741.pdf"
+  },
+  {
+    "id": 2722,
+    "type": "Scientific Letter",
+    "title": "Unsuspected Malaria Infection in a Case with Pancytopenia",
+    "authors": [
+      {
+        "name": "Anjali Gupta",
+        "affiliation": "Department of Hematology, Post Graduate Institute of Medical Education and Research, Chandigarh, India",
+        "orcid": ""
+      },
+      {
+        "name": "Shano Naseem",
+        "affiliation": "Department of Hematology, Post Graduate Institute of Medical Education and Research, Chandigarh, India",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "We present the case of a 62-year-old woman who reported experiencing fatigue and bone pain for 2 weeks. Laboratory investigations revealed pancytopenia, with a hemoglobin level of 93 g/L, a total leukocyte count of 2.5 × 109/L, and a platelet count of 16 × 109/L. Given the short duration of symptoms, along with bone pain and pancytopenia, a provisional diagn",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-2-54",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "475-476",
+    "views": 3199,
+    "downloads": 2016,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2722",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2722",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2722",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2722",
+    "localPdfUrl": "js/data/pdfs/2722.pdf",
+    "pdfUrl": "js/data/pdfs/2722.pdf"
+  },
+  {
+    "id": 2719,
+    "type": "Scientific Letter",
+    "title": "Impact of Smoking on SARS-CoV-2 Infection and Outcomes, An Evidence from Enrichment Analysis of Genes Associated with COVID-19 Susceptibility and Outcomes",
+    "authors": [
+      {
+        "name": "Mostafa Saadat",
+        "affiliation": "Department of Biology, School of Science, Shiraz University, Shiraz, Iran",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "During the coronavirus disease-2019 (COVID-19) pandemic, genome-wide association studies (GWAS) were extensively used to identify genes linked to disease outcomes, including susceptibility to infection, hospitalization, severity, and mortality. These studies have produced comprehensive lists of genes associated with different aspects of COVID-19. In this stu",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-1-132",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "477-478",
+    "views": 3381,
+    "downloads": 2232,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2719",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2719",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2719",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2719",
+    "localPdfUrl": "js/data/pdfs/2719.pdf",
+    "pdfUrl": "js/data/pdfs/2719.pdf"
+  },
+  {
+    "id": 2706,
+    "type": "Scientific Letter",
+    "title": "Enhancing Shared Decision-Making in Cardiology with Artificial Intelligence",
+    "authors": [
+      {
+        "name": "Vedat Cicek",
+        "affiliation": "Department of Radiology, Northwestern University, Machine & Hybrid Intelligence Lab, Chicago, IL, United States",
+        "orcid": ""
+      },
+      {
+        "name": "Ulas Bagci",
+        "affiliation": "Department of Radiology, Northwestern University, Machine & Hybrid Intelligence Lab, Chicago, IL, United States",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Shared decision-making (SDM) is a key approach to improving cardiovascular care by fostering patient participation in healthcare decisions, enhancing patient-clinician communication, and promoting patient-centered care. SDM is defined as a collaborative process in which patients and clinicians jointly determine appropriate tests, treatments, and care plans t",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-1-133",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "479-480",
+    "views": 3555,
+    "downloads": 2525,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2706",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2706",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2706",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2706",
+    "localPdfUrl": "js/data/pdfs/2706.pdf",
+    "pdfUrl": "js/data/pdfs/2706.pdf"
+  },
+  {
+    "id": 2753,
+    "type": "Scientific Letter",
+    "title": "Applications of mRNA-Based Therapies in Oncology and Autoimmunity Beyond Vaccination",
+    "authors": [
+      {
+        "name": "Aasiya Shahbaz Sakarwala",
+        "affiliation": "Dow Medical College, Dow University of Health Sciences, Karachi, Pakistan",
+        "orcid": ""
+      },
+      {
+        "name": "Noor Ul Ain Shahzad",
+        "affiliation": "Dow Medical College, Dow University of Health Sciences, Karachi, Pakistan",
+        "orcid": ""
+      },
+      {
+        "name": "Manahil Mubeen",
+        "affiliation": "Dow Medical College, Dow University of Health Sciences, Karachi, Pakistan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "In recent years, mRNA-based therapies have become a powerful approach, reshaping gene therapy and modern treatment methods.1 Compared to recombinant proteins and plasmid DNA, mRNA therapeutics provide important benefits, such as a strong safety profile due to their non-integrating and non-mutagenic characteristics. First demonstrated in vivo by Wolff et al.2",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-4-32",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "481-484",
+    "views": 2650,
+    "downloads": 1499,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2753",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2753",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2753",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2753",
+    "localPdfUrl": "js/data/pdfs/2753.pdf",
+    "pdfUrl": "js/data/pdfs/2753.pdf"
+  },
+  {
+    "id": 2718,
+    "type": "Scientific Letter",
+    "title": "Myocardial Venous Bridge: Images of the First Cases Detected by Conventional Angiography and Venography",
+    "authors": [
+      {
+        "name": "Ercan Akşit",
+        "affiliation": "Department of Cardiology, Çanakkale Onsekiz Mart University Faculty of Medicine, Çanakkale, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Gökay Taylan",
+        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Uğur Küçük",
+        "affiliation": "Department of Cardiology, Çanakkale Onsekiz Mart University Faculty of Medicine, Çanakkale, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Bahadır Kırılmaz",
+        "affiliation": "Department of Cardiology, Çanakkale Onsekiz Mart University Faculty of Medicine, Çanakkale, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A myocardial bridge refers to the partial or complete encasement of coronary arteries by the myocardium.1 In contrast, the myocardial venous bridge is less well-known and has only been identified in cadaver studies.2 Its clinical relevance remains unclear. Watanabe et al.2 described two forms of myocardial bridge: one involving the artery and another involvi",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-2-33",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "485-486",
+    "views": 3166,
+    "downloads": 2182,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2718",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2718",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2718",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2718",
+    "localPdfUrl": "js/data/pdfs/2718.pdf",
+    "pdfUrl": "js/data/pdfs/2718.pdf"
+  },
+  {
+    "id": 2701,
+    "type": "Scientific Letter",
+    "title": "Trends in Healthcare and Laboratory Medicine: A Forward Look into 2025",
+    "authors": [
+      {
+        "name": "Damien Gruson",
+        "affiliation": "Department of Laboratory Medicine, Cliniques Universitaires St-Luc and Université Catholique de Louvain, Brussels, Belgium; Pôle de recherche en Endocrinologie, Diabète et Nutrition, Institut de Recherche Expérimentale et Clinique, Cliniques Universitaires St-Luc and Université Catholique de Louvain, Brussels, Belgium; División de Tecnologías Emergentes de la Federación Internacional de Medicina de Laboratorio (IFCC), Milán, Italia",
+        "orcid": ""
+      },
+      {
+        "name": "Tuğba Kemaloğlu Öz",
+        "affiliation": "Clinic of Cardiology, Alice Spring Hospital, Alice Spring, Australia; School of Medicine, Flinders University - Adelaide, Adelaide, Australia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "The landscape of healthcare and laboratory medicine is undergoing rapid transformation, driven by groundbreaking technological advancements, global health challenges, and a deeper understanding of the intricate connections among genetic factors, environmental factors, and diseases.1,2 From the observations to date, it is evident that emerging technologies, t",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2024-12-133",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "487-488",
+    "views": 3679,
+    "downloads": 2398,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2701",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2701",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2701",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2701",
+    "localPdfUrl": "js/data/pdfs/2701.pdf",
+    "pdfUrl": "js/data/pdfs/2701.pdf"
+  },
+  {
+    "id": 2720,
+    "type": "Letter to the Editor",
+    "title": "Assessment of School Readiness: A Health-Based Multidisciplinary Model for Türkiye",
+    "authors": [
+      {
+        "name": "Gizem Yağmur Değirmenci",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "School readiness (SR) refers to the set of abilities and competencies considered essential for a smooth transition into primary school.1 International organizations such as the Organization for Economic Co-operation and Development2 and the United Nations Children’s Fund3 advocate for SR practices that prioritize early childhood education, including developm",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-2-27",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "5",
+    "pages": "489-490",
+    "views": 3361,
+    "downloads": 2046,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1298",
+    "sourceArticleId": "2720",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2720",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2720",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2720",
+    "localPdfUrl": "js/data/pdfs/2720.pdf",
+    "pdfUrl": "js/data/pdfs/2720.pdf"
+  }
+]

@@ -1,0 +1,838 @@
+[
+  {
+    "id": 2028,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "2028",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2028",
+    "localPdfUrl": "js/data/pdfs/2028.pdf",
+    "pdfUrl": "js/data/pdfs/2028.pdf"
+  },
+  {
+    "id": 2007,
+    "type": "Invited Review",
+    "title": "The Clinicopathologic Spectrum of IgG4-Related Disease",
+    "authors": [
+      {
+        "name": "Ifeyinwa Emmanuela Obiorah",
+        "affiliation": "Department of Pathology, Medstar Georgetown University Hospital, Washington, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Alicia Henao Velasquez",
+        "affiliation": "Department of Pathology, Medstar Georgetown University Hospital, Washington, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Metin Özdemirli",
+        "affiliation": "Department of Pathology, Medstar Georgetown University Hospital, Washington, USA",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Immunoglobulin G4-related disease is a fibroinflammatory systemic disease that is characterized by focal or diffuse organ infiltration by immunoglobulin G4-bearing plasma cells. Immunoglobulin G4-related disease may affect any organ, and a high index of suspicion is necessary for early detection to avoid irreversible fibrosis, organ dysfunction, and death. Tumor-forming lesions are common radiological features of immunoglobulin G4-related disease that need to be differentiated from malignancies. The diagnostic approach requires the integration of clinical, biochemical, and radiographic manifestations with classic histopathologic features, which remain crucial to diagnosis. The histology of immunoglobulin G4-related disease is determined by a dense lymphoplasmacytic infiltrate, storiform fibrosis, and obliterative phlebitis in the presence of increased immunoglobulin G4-positve plasma cells. Although immunoglobulin G4-related disease forms a distinct, clinically independent disease category, many questions and problems remain unanswered, especially on its pathogenesis and the role of immunoglobulin G4. Advances in the understanding of immunoglobulin G4-related disease are likely to change the diagnostic approach in the future and create potential targets for therapeutic purposes. Here we describe the concept of immunoglobulin G4-related disease and the most recent knowledge in the clinico-pathological characteristics on this emerging disease. This study can guide clinicians in early diagnosis and prevent unnecessary surgical resections.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Immunoglobulin G4-related disease is a fibroinflammatory systemic disease that is characterized by focal or diffuse organ infiltration by immunoglobulin G4-bearing plasma cells. Immunoglobulin G4-related disease may affect any organ, and a high index of suspicion is necessary for early detection to avoid irreversible fibrosis, organ dysfunction, and death. Tumor-forming lesions are common radiological features of immunoglobulin G4-related disease that need to be differentiated from malignancies. The diagnostic approach requires the integration of clinical, biochemical, and radiographic manifestations with classic histopathologic features, which remain crucial to diagnosis. The histology of immunoglobulin G4-related disease is determined by a dense lymphoplasmacytic infiltrate, storiform fibrosis, and obliterative phlebitis in the presence of increased immunoglobulin G4-positve plasma cells. Although immunoglobulin G4-related disease forms a distinct, clinically independent disease category, many questions and problems remain unanswered, especially on its pathogenesis and the role of immunoglobulin G4. Advances in the understanding of immunoglobulin G4-related disease are likely to change the diagnostic approach in the future and create potential targets for therapeutic purposes. Here we describe the concept of immunoglobulin G4-related disease and the most recent knowledge in the clinico-pathological characteristics on this emerging disease. This study can guide clinicians in early diagnosis and prevent unnecessary surgical resections.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Immunoglobulin G4-related disease is a fibroinflammatory systemic disease that is characterized by focal or diffuse organ infiltration by immunoglobulin G4-bearing plasma cells. Immunoglobulin G4-related disease may affect any organ, and a high index of suspicion is necessary for early detection to avoid irreversible fibrosis, organ dysfunction, and death. Tumor-forming lesions are common radiological features of immunoglobulin G4-related disease that need to be differentiated from malignancies. The diagnostic approach requires the integration of clinical, biochemical, and radiographic manifestations with classic histopathologic features, which remain crucial to diagnosis. The histology of immunoglobulin G4-related disease is determined by a dense lymphoplasmacytic infiltrate, storiform fibrosis, and obliterative phlebitis in the presence of increased immunoglobulin G4-positve plasma cells. Although immunoglobulin G4-related disease forms a distinct, clinically independent disease category, many questions and problems remain unanswered, especially on its pathogenesis and the role of immunoglobulin G4. Advances in the understanding of immunoglobulin G4-related disease are likely to change the diagnostic approach in the future and create potential targets for therapeutic purposes. Here we describe the concept of immunoglobulin G4-related disease and the most recent knowledge in the clinico-pathological characteristics on this emerging disease. This study can guide clinicians in early diagnosis and prevent unnecessary surgical resections.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.0809",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "292-300",
+    "views": 7166,
+    "downloads": 4207,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "2007",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2007",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2007",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2007",
+    "localPdfUrl": "js/data/pdfs/2007.pdf",
+    "pdfUrl": "js/data/pdfs/2007.pdf"
+  },
+  {
+    "id": 1965,
+    "type": "Original Article",
+    "title": "Intravenous Dexketoprofen versus Intravenous Paracetamol for Dysmenorrhea: A Randomized Controlled Trial",
+    "authors": [
+      {
+        "name": "Mustafa Serinken",
+        "affiliation": "Department of Emergency Medicine, Pamukkale University School of Medicine, Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cenker Eken",
+        "affiliation": "Department of Emergency Medicine, Akdeniz University School of Medicine, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özgür Karcıoğlu",
+        "affiliation": "Clinic of Emergency Medicine, İstanbul Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Dysmenorrhea is one of the most common acute pain disorders among women of reproductive age.Aims: To compare the effects of IV paracetamol with dexketoprofen in patients presenting with primary dysmenorrhea to the emergency department.Study Design: Randomized controlled trial.Methods: Patients over 18 years old presenting with pelvic pain related to menstruation were eligible for the study. Study patients received 1 g paracetamol or 50 mg dexketoprofen in 100 mL normal saline with a 4-5 minute infusion via the intravenous route. Pain intensity was measured by a visual analog scale at 15 and 30 minutes. Patients were randomized and assigned to either of two study arms via sealed envelopes. Study drugs were identical in color, and thus both personnel and patients were blinded to the study drug. The dexketoprofen group comprised 49 patients, and the paracetamol group had 50 patients in the final analysis.Results: The mean age of the study subjects was 20.9±2.5 and the mean duration of the pain was 1.9±1.7 (median: 1, interquartile range: 1 to 2) hours. Both dexketoprofen (median change: 33, 95% CI: 24 to 38) and paracetamol (median change: 21, 95% CI: 12 to 32) effectively reduced the pain at 15 minutes, which was repeated at 30 minutes (median change: 63, 95% CI: 57 to 65 vs 55.5, 95% CI: 50 to 59, respectively). Pain improvement in the dexketoprofen group was better than in the paracetamol group at 15 (median difference: 8, 95% CI: 0 to 16, p=0.048) and 30 (median difference: 6, 95% CI: 1 to 12, p=0.028) minutes, which was statistically significant but not clinically significant.Conclusion: Dexketotoprofen has a better visual analogue scale score that is not clinically relevant compared to paracetamol.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Dysmenorrhea is one of the most common acute pain disorders among women of reproductive age.<br /><strong>Aims:</strong> To compare the effects of IV paracetamol with dexketoprofen in patients presenting with primary dysmenorrhea to the emergency department.<br /><strong>Study Design:</strong> Randomized controlled trial.<br /><strong>Methods:</strong> Patients over 18 years old presenting with pelvic pain related to menstruation were eligible for the study. Study patients received 1 g paracetamol or 50 mg dexketoprofen in 100 mL normal saline with a 4-5 minute infusion via the intravenous route. Pain intensity was measured by a visual analog scale at 15 and 30 minutes. Patients were randomized and assigned to either of two study arms via sealed envelopes. Study drugs were identical in color, and thus both personnel and patients were blinded to the study drug. The dexketoprofen group comprised 49 patients, and the paracetamol group had 50 patients in the final analysis.<br /><strong>Results:</strong> The mean age of the study subjects was 20.9&plusmn;2.5 and the mean duration of the pain was 1.9&plusmn;1.7 (median: 1, interquartile range: 1 to 2) hours. Both dexketoprofen (median change: 33, 95% CI: 24 to 38) and paracetamol (median change: 21, 95% CI: 12 to 32) effectively reduced the pain at 15 minutes, which was repeated at 30 minutes (median change: 63, 95% CI: 57 to 65 vs 55.5, 95% CI: 50 to 59, respectively). Pain improvement in the dexketoprofen group was better than in the paracetamol group at 15 (median difference: 8, 95% CI: 0 to 16, p=0.048) and 30 (median difference: 6, 95% CI: 1 to 12, p=0.028) minutes, which was statistically significant but not clinically significant.<br /><strong>Conclusion:</strong> Dexketotoprofen has a better visual analogue scale score that is not clinically relevant compared to paracetamol.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Dysmenorrhea is one of the most common acute pain disorders among women of reproductive age.Aims: To compare the effects of IV paracetamol with dexketoprofen in patients presenting with primary dysmenorrhea to the emergency department.Study Design: Randomized controlled trial.Methods: Patients over 18 years old presenting with pelvic pain related to menstruation were eligible for the study. Study patients received 1 g paracetamol or 50 mg dexketoprofen in 100 mL normal saline with a 4-5 minute infusion via the intravenous route. Pain intensity was measured by a visual analog scale at 15 and 30 minutes. Patients were randomized and assigned to either of two study arms via sealed envelopes. Study drugs were identical in color, and thus both personnel and patients were blinded to the study drug. The dexketoprofen group comprised 49 patients, and the paracetamol group had 50 patients in the final analysis.Results: The mean age of the study subjects was 20.9±2.5 and the mean duration of the pain was 1.9±1.7 (median: 1, interquartile range: 1 to 2) hours. Both dexketoprofen (median change: 33, 95% CI: 24 to 38) and paracetamol (median change: 21, 95% CI: 12 to 32) effectively reduced the pain at 15 minutes, which was repeated at 30 minutes (median change: 63, 95% CI: 57 to 65 vs 55.5, 95% CI: 50 to 59, respectively). Pain improvement in the dexketoprofen group was better than in the paracetamol group at 15 (median difference: 8, 95% CI: 0 to 16, p=0.048) and 30 (median difference: 6, 95% CI: 1 to 12, p=0.028) minutes, which was statistically significant but not clinically significant.Conclusion: Dexketotoprofen has a better visual analogue scale score that is not clinically relevant compared to paracetamol.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0536",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "301-305",
+    "views": 8900,
+    "downloads": 1936,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "1965",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1965",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1965",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1965",
+    "localPdfUrl": "js/data/pdfs/1965.pdf",
+    "pdfUrl": "js/data/pdfs/1965.pdf"
+  },
+  {
+    "id": 1989,
+    "type": "Original Article",
+    "title": "The Role of Follicular Fluid Thiol/Disulphide Homeostasis in Polycystic Ovary Syndrome",
+    "authors": [
+      {
+        "name": "Esra Nur Tola",
+        "affiliation": "Department of Gynecology and Obstetrics, In Vitro Fertilization Unit, Süleyman Demirel University School of Medicine, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nadiye Köroğlu",
+        "affiliation": "Clinic of Gynecology and Obstetrics, University of Health Sciences, Kanuni Sultan Süleyman Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Merve Ergin",
+        "affiliation": "Clinic of Biochemistry, Gaziantep 25 Aralık State Hospital, Gaziantep, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hilmi Baha Oral",
+        "affiliation": "Department of Gynecology and Obstetrics, In Vitro Fertilization Unit, Süleyman Demirel University School of Medicine, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Abdülkadir Turgut",
+        "affiliation": "Department of Gynecology and Obstetrics, Medeniyet University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özcan Erel",
+        "affiliation": "Department of Biochemistry, Yıldırım Beyazıt University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Oxidative stress has been proposed as a potential trigger in the etiopathogenesis of polycystic ovary syndrome-related infertility. Thiol/disulphide homeostasis, a recently identified oxidative stress marker, is one of the antioxidant mechanism in humans with critical roles in folliculogenesis and ovulation.Aims: To investigate follicular fluid thiol/disulphide homeostasis in the etiopathogenesis of polycystic ovary syndrome and to determine its association with in vitro fertilization outcome. The study procedures were approved by the local ethics committee.Study Design: Cross-sectional study.Methods: Follicular fluid from 22 women with polycystic ovary syndrome and 20 ovulatory controls undergoing in vitro fertilization treatment was sampled. Thiol/disulphide homeostasis was analyzed via a novel spectrophotometric method.Results: Follicular native thiol levels, as well as the native thiol/total thiol ratio, were lower in the polycystic ovary syndrome group than in the non-polycystic ovary syndrome group (p=0.041 and p<0.0001, respectively). Disulphide levels, disulphide/native thiol, and disulphide/total thiol ratios were increased in the polycystic ovary syndrome group (p<0.0001). A positive correlation between the fertilization rate and native thiol (p=0.01, r=0.53) and total thiol (p=0.01, r=0.052) among polycystic ovary syndrome patients was found. A positive predictive effect of native thiol level on the fertilization rate in the polycystic ovary syndrome group was also found (p=0.03, β=0.45, 95% CI= 0.031-0.643).Conclusion: Deterioration of thiol/disulphide homeostasis, especially elevated disulphide levels, could be one of the etiopathogenetic mechanisms in polycystic ovary syndrome. Increased native thiol levels are related to the fertilization rate among polycystic ovary syndrome patients and are positive predictors of the fertilization rate among polycystic ovary syndrome patients. Improvement of thiol/disulphide homeostasis could be important in the treatment of polycystic ovary syndrome to increase in vitro fertilization success.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Oxidative stress has been proposed as a potential trigger in the etiopathogenesis of polycystic ovary syndrome-related infertility. Thiol/disulphide homeostasis, a recently identified oxidative stress marker, is one of the antioxidant mechanism in humans with critical roles in folliculogenesis and ovulation.<br /><strong>Aims:</strong> To investigate follicular fluid thiol/disulphide homeostasis in the etiopathogenesis of polycystic ovary syndrome and to determine its association with in vitro fertilization outcome. The study procedures were approved by the local ethics committee.<br /><strong>Study Design:</strong> Cross-sectional study.<br /><strong>Methods:</strong> Follicular fluid from 22 women with polycystic ovary syndrome and 20 ovulatory controls undergoing in vitro fertilization treatment was sampled. Thiol/disulphide homeostasis was analyzed via a novel spectrophotometric method.<br /><strong>Results:</strong> Follicular native thiol levels, as well as the native thiol/total thiol ratio, were lower in the polycystic ovary syndrome group than in the non-polycystic ovary syndrome group (p=0.041 and p&lt;0.0001, respectively). Disulphide levels, disulphide/native thiol, and disulphide/total thiol ratios were increased in the polycystic ovary syndrome group (p&lt;0.0001). A positive correlation between the fertilization rate and native thiol (p=0.01, r=0.53) and total thiol (p=0.01, r=0.052) among polycystic ovary syndrome patients was found. A positive predictive effect of native thiol level on the fertilization rate in the polycystic ovary syndrome group was also found (p=0.03, &beta;=0.45, 95% CI= 0.031-0.643).<br /><strong>Conclusion:</strong> Deterioration of thiol/disulphide homeostasis, especially elevated disulphide levels, could be one of the etiopathogenetic mechanisms in polycystic ovary syndrome. Increased native thiol levels are related to the fertilization rate among polycystic ovary syndrome patients and are positive predictors of the fertilization rate among polycystic ovary syndrome patients. Improvement of thiol/disulphide homeostasis could be important in the treatment of polycystic ovary syndrome to increase in vitro fertilization success.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Oxidative stress has been proposed as a potential trigger in the etiopathogenesis of polycystic ovary syndrome-related infertility. Thiol/disulphide homeostasis, a recently identified oxidative stress marker, is one of the antioxidant mechanism in humans with critical roles in folliculogenesis and ovulation.Aims: To investigate follicular fluid thiol/disulphide homeostasis in the etiopathogenesis of polycystic ovary syndrome and to determine its association with in vitro fertilization outcome. The study procedures were approved by the local ethics committee.Study Design: Cross-sectional study.Methods: Follicular fluid from 22 women with polycystic ovary syndrome and 20 ovulatory controls undergoing in vitro fertilization treatment was sampled. Thiol/disulphide homeostasis was analyzed via a novel spectrophotometric method.Results: Follicular native thiol levels, as well as the native thiol/total thiol ratio, were lower in the polycystic ovary syndrome group than in the non-polycystic ovary syndrome group (p=0.041 and p<0.0001, respectively). Disulphide levels, disulphide/native thiol, and disulphide/total thiol ratios were increased in the polycystic ovary syndrome group (p<0.0001). A positive correlation between the fertilization rate and native thiol (p=0.01, r=0.53) and total thiol (p=0.01, r=0.052) among polycystic ovary syndrome patients was found. A positive predictive effect of native thiol level on the fertilization rate in the polycystic ovary syndrome group was also found (p=0.03, β=0.45, 95% CI= 0.031-0.643).Conclusion: Deterioration of thiol/disulphide homeostasis, especially elevated disulphide levels, could be one of the etiopathogenetic mechanisms in polycystic ovary syndrome. Increased native thiol levels are related to the fertilization rate among polycystic ovary syndrome patients and are positive predictors of the fertilization rate among polycystic ovary syndrome patients. Improvement of thiol/disulphide homeostasis could be important in the treatment of polycystic ovary syndrome to increase in vitro fertilization success.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.1140",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "306-310",
+    "views": 7169,
+    "downloads": 9841,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "1989",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1989",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1989",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1989",
+    "localPdfUrl": "js/data/pdfs/1989.pdf",
+    "pdfUrl": "js/data/pdfs/1989.pdf"
+  },
+  {
+    "id": 1987,
+    "type": "Original Article",
+    "title": "L-Cysteine Partially Protects Against Acrylamide-Induced  Testicular Toxicity",
+    "authors": [
+      {
+        "name": "Sedat Kaçar",
+        "affiliation": "Department of Histology and Embryology, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Varol Şahintürk",
+        "affiliation": "Department of Histology and Embryology, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Betül Can",
+        "affiliation": "Department of Medical Biochemistry, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Musmul",
+        "affiliation": "Department of Biostatistics, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Acrylamide is a widespread substance with many areas of utilization. Acrylamide also forms a part of high-temperature-processed starchy foods. To date, numerous in vivo and in vitro studies have documented that acrylamide poses toxic effects on various organ systems.Aims: To determine the potential protective effect of L-cysteine on acrylamide-induced testicular toxicity.Study Design: Animal experimentation.Methods: We randomly divided 28 rats into four groups: control (0.9% saline), L-cysteine (150 mg/kg), acrylamide (40 mg/kg), and acrylamide+L-cysteine. After a 10-day intraperitoneal injection period, we euthanized the animals, recorded their body and testis weights, collected blood samples for serum testosterone measurement, and excised the testes for histopathological and morphometric evaluation. Immunohistochemical scoring of proliferating cell nuclear antigen and bax proteins was performed.Results: Acrylamide reduced body (p<0.01) and testis weights (p<0.05), seminiferous tubule diameter (p<0.001), and proliferating cell nuclear antigen expression (p<0.05) but increased bax protein expression (p<0.01) and the percentage of seminiferous tubules containing multinucleated giant cells (p<0.001). However, no significant change was observed in serum testosterone level of the experimental groups when compared with that of controls. L-cysteine administered with acrylamide decreased multinucleated giant cell number (p<0.001) and reversed the reduced proliferating cell nuclear antigen positivity (p<0.001) but showed no effect in restoring other parameters compared with the group treated with acrylamide alone.Conclusion: Considering the dose and duration employed, the present study concluded that L-cysteine partially protects testis against acrylamide-induced toxic effects.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Acrylamide is a widespread substance with many areas of utilization. Acrylamide also forms a part of high-temperature-processed starchy foods. To date, numerous <em>in vivo</em> and <em>in vitro</em> studies have documented that acrylamide poses toxic effects on various organ systems.<br /><strong>Aims:</strong> To determine the potential protective effect of L-cysteine on acrylamide-induced testicular toxicity.<br /><strong>Study Design:</strong> Animal experimentation.<br /><strong>Methods:</strong> We randomly divided 28 rats into four groups: control (0.9% saline), L-cysteine (150 mg/kg), acrylamide (40 mg/kg), and acrylamide+L-cysteine. After a 10-day intraperitoneal injection period, we euthanized the animals, recorded their body and testis weights, collected blood samples for serum testosterone measurement, and excised the testes for histopathological and morphometric evaluation. Immunohistochemical scoring of proliferating cell nuclear antigen and bax proteins was performed.<br /><strong>Results:</strong> Acrylamide reduced body (p&lt;0.01) and testis weights (p&lt;0.05), seminiferous tubule diameter (p&lt;0.001), and proliferating cell nuclear antigen expression (p&lt;0.05) but increased bax protein expression (p&lt;0.01) and the percentage of seminiferous tubules containing multinucleated giant cells (p&lt;0.001). However, no significant change was observed in serum testosterone level of the experimental groups when compared with that of controls. L-cysteine administered with acrylamide decreased multinucleated giant cell number (p&lt;0.001) and reversed the reduced proliferating cell nuclear antigen positivity (p&lt;0.001) but showed no effect in restoring other parameters compared with the group treated with acrylamide alone.<br /><strong>Conclusion:</strong> Considering the dose and duration employed, the present study concluded that L-cysteine partially protects testis against acrylamide-induced toxic effects.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Acrylamide is a widespread substance with many areas of utilization. Acrylamide also forms a part of high-temperature-processed starchy foods. To date, numerous in vivo and in vitro studies have documented that acrylamide poses toxic effects on various organ systems.Aims: To determine the potential protective effect of L-cysteine on acrylamide-induced testicular toxicity.Study Design: Animal experimentation.Methods: We randomly divided 28 rats into four groups: control (0.9% saline), L-cysteine (150 mg/kg), acrylamide (40 mg/kg), and acrylamide+L-cysteine. After a 10-day intraperitoneal injection period, we euthanized the animals, recorded their body and testis weights, collected blood samples for serum testosterone measurement, and excised the testes for histopathological and morphometric evaluation. Immunohistochemical scoring of proliferating cell nuclear antigen and bax proteins was performed.Results: Acrylamide reduced body (p<0.01) and testis weights (p<0.05), seminiferous tubule diameter (p<0.001), and proliferating cell nuclear antigen expression (p<0.05) but increased bax protein expression (p<0.01) and the percentage of seminiferous tubules containing multinucleated giant cells (p<0.001). However, no significant change was observed in serum testosterone level of the experimental groups when compared with that of controls. L-cysteine administered with acrylamide decreased multinucleated giant cell number (p<0.001) and reversed the reduced proliferating cell nuclear antigen positivity (p<0.001) but showed no effect in restoring other parameters compared with the group treated with acrylamide alone.Conclusion: Considering the dose and duration employed, the present study concluded that L-cysteine partially protects testis against acrylamide-induced toxic effects.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0830",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "311-319",
+    "views": 6624,
+    "downloads": 10084,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "1987",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1987",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1987",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1987",
+    "localPdfUrl": "js/data/pdfs/1987.pdf",
+    "pdfUrl": "js/data/pdfs/1987.pdf"
+  },
+  {
+    "id": 1991,
+    "type": "Original Article",
+    "title": "Correlation of Serum CCL3/MIP-1α Levels with Disease Severity in Postmenopausal Osteoporotic Females",
+    "authors": [
+      {
+        "name": "Hui Wan",
+        "affiliation": "Department of Endocrinology, Nanjing Medical University Affiliated Wuxi Second Hospital, Wuxi, China",
+        "orcid": ""
+      },
+      {
+        "name": "Tie-Yong Qian",
+        "affiliation": "Department of Endocrinology, Nanjing Medical University Affiliated Wuxi Second Hospital, Wuxi, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiao-Jing Hu",
+        "affiliation": "Department of Endocrinology, Nanjing Medical University Affiliated Wuxi Second Hospital, Wuxi, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ci-You Huang",
+        "affiliation": "Department of Endocrinology, Nanjing Medical University Affiliated Wuxi Second Hospital, Wuxi, China",
+        "orcid": ""
+      },
+      {
+        "name": "Wei-Feng Yao",
+        "affiliation": "Department of Endocrinology, Nanjing Medical University Affiliated Wuxi Second Hospital, Wuxi, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The pro-inflammatory protein chemokine cytokine ligand 3 is well established as a vital regulator of bone resorption and osteoclast stimulation. Aims: To investigate if serum cytokine ligand 3 levels correlated with disease severity in postmenopausal osteoporotic women.Study Design: Cross-sectional study.Methods: Eighty-two postmenopausal osteoporotic women, 76 postmenopausal non-osteoporotic women, and 80 healthy women of childbearing age were recruited. The total hip, femoral neck, and L1-L4 spine bone mineral density were assessed by dual-energy X-ray absorptiometry. Serum cytokine ligand 3 concentrations were examined using a commercial enzyme-linked immunosorbent assay kit. Serum inflammatory cytokine interleukin-6, tumor necrosis factor-alpha, and the bone metabolic markers, carboxy-terminal crosslinked and tartrate-resistant acid phosphatase 5b were also examined. Scores on both the visual analogue scale and the Oswestry Disability Index were utilized to assess clinical severity.Results: Patients in the postmenopausal osteoporotic group had significantly increased serum cytokine ligand 3 levels compared with those in both the postmenopausal non-osteoporotic group (40.9±15.1 pg/mL vs 24.2±8.7 pg/mL, p<0.001) and control group (40.9±15.1 pg/mL vs 23.9±9.1 pg/mL, p<0.001). Serum cytokine ligand 3 levels negatively correlated with bone mineral density at the total hip (r=-0.345, p=0.002), femoral neck (r=-0.329, p=0.003), and L1-L4 lumbar spine (r=-0.354, p=0.001) and positively correlated with visual analogue scale scores (r=0.413, p<0.001) and the Oswestry Disability Index (r=0.360, p<0.001). Moreover, serum cytokine ligand 3 levels were correlated with increased tumor necrosis factor-alpha (r=0.305, p=0.005), interleukin-6 (r=0.288, p=0.008), terminal crosslinked and tartrate-resistant acid phosphatase 5b (r=0.371, p<0.001), and carboxy-terminal crosslinked (r=0.317, p=0.004) levels. All correlations were still significant after adjusting for both body mass index and age. Conclusion: Chemokine cytokine ligand 3 may be a useful biomarker that can be used to predict disease severity of postmenopausal osteoporosis. Therapies targeting cytokine ligand 3 and its related signaling pathways to inhibit and delay the osteoclastogenesis process deserve further investigation.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The pro-inflammatory protein chemokine cytokine ligand 3 is well established as a vital regulator of bone resorption and osteoclast stimulation. <br /><strong>Aims:</strong> To investigate if serum cytokine ligand 3 levels correlated with disease severity in postmenopausal osteoporotic women.<br /><strong>Study Design:</strong> Cross-sectional study.<br /><strong>Methods:</strong> Eighty-two postmenopausal osteoporotic women, 76 postmenopausal non-osteoporotic women, and 80 healthy women of childbearing age were recruited. The total hip, femoral neck, and L1-L4 spine bone mineral density were assessed by dual-energy X-ray absorptiometry. Serum cytokine ligand 3 concentrations were examined using a commercial enzyme-linked immunosorbent assay kit. Serum inflammatory cytokine interleukin-6, tumor necrosis factor-alpha, and the bone metabolic markers, carboxy-terminal crosslinked and tartrate-resistant acid phosphatase 5b were also examined. Scores on both the visual analogue scale and the Oswestry Disability Index were utilized to assess clinical severity.<br /><strong>Results:</strong> Patients in the postmenopausal osteoporotic group had significantly increased serum cytokine ligand 3 levels compared with those in both the postmenopausal non-osteoporotic group (40.9&plusmn;15.1 pg/mL vs 24.2&plusmn;8.7 pg/mL, p&lt;0.001) and control group (40.9&plusmn;15.1 pg/mL vs 23.9&plusmn;9.1 pg/mL, p&lt;0.001). Serum cytokine ligand 3 levels negatively correlated with bone mineral density at the total hip (r=-0.345, p=0.002), femoral neck (r=-0.329, p=0.003), and L1-L4 lumbar spine (r=-0.354, p=0.001) and positively correlated with visual analogue scale scores (r=0.413, p&lt;0.001) and the Oswestry Disability Index (r=0.360, p&lt;0.001). Moreover, serum cytokine ligand 3 levels were correlated with increased tumor necrosis factor-alpha (r=0.305, p=0.005), interleukin-6 (r=0.288, p=0.008), terminal crosslinked and tartrate-resistant acid phosphatase 5b (r=0.371, p&lt;0.001), and carboxy-terminal crosslinked (r=0.317, p=0.004) levels. All correlations were still significant after adjusting for both body mass index and age. <br /><strong>Conclusion:</strong> Chemokine cytokine ligand 3 may be a useful biomarker that can be used to predict disease severity of postmenopausal osteoporosis. Therapies targeting cytokine ligand 3 and its related signaling pathways to inhibit and delay the osteoclastogenesis process deserve further investigation.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The pro-inflammatory protein chemokine cytokine ligand 3 is well established as a vital regulator of bone resorption and osteoclast stimulation. Aims: To investigate if serum cytokine ligand 3 levels correlated with disease severity in postmenopausal osteoporotic women.Study Design: Cross-sectional study.Methods: Eighty-two postmenopausal osteoporotic women, 76 postmenopausal non-osteoporotic women, and 80 healthy women of childbearing age were recruited. The total hip, femoral neck, and L1-L4 spine bone mineral density were assessed by dual-energy X-ray absorptiometry. Serum cytokine ligand 3 concentrations were examined using a commercial enzyme-linked immunosorbent assay kit. Serum inflammatory cytokine interleukin-6, tumor necrosis factor-alpha, and the bone metabolic markers, carboxy-terminal crosslinked and tartrate-resistant acid phosphatase 5b were also examined. Scores on both the visual analogue scale and the Oswestry Disability Index were utilized to assess clinical severity.Results: Patients in the postmenopausal osteoporotic group had significantly increased serum cytokine ligand 3 levels compared with those in both the postmenopausal non-osteoporotic group (40.9±15.1 pg/mL vs 24.2±8.7 pg/mL, p<0.001) and control group (40.9±15.1 pg/mL vs 23.9±9.1 pg/mL, p<0.001). Serum cytokine ligand 3 levels negatively correlated with bone mineral density at the total hip (r=-0.345, p=0.002), femoral neck (r=-0.329, p=0.003), and L1-L4 lumbar spine (r=-0.354, p=0.001) and positively correlated with visual analogue scale scores (r=0.413, p<0.001) and the Oswestry Disability Index (r=0.360, p<0.001). Moreover, serum cytokine ligand 3 levels were correlated with increased tumor necrosis factor-alpha (r=0.305, p=0.005), interleukin-6 (r=0.288, p=0.008), terminal crosslinked and tartrate-resistant acid phosphatase 5b (r=0.371, p<0.001), and carboxy-terminal crosslinked (r=0.317, p=0.004) levels. All correlations were still significant after adjusting for both body mass index and age. Conclusion: Chemokine cytokine ligand 3 may be a useful biomarker that can be used to predict disease severity of postmenopausal osteoporosis. Therapies targeting cytokine ligand 3 and its related signaling pathways to inhibit and delay the osteoclastogenesis process deserve further investigation.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.1165",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "320-325",
+    "views": 6666,
+    "downloads": 9617,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "1991",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1991",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1991",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1991",
+    "localPdfUrl": "js/data/pdfs/1991.pdf",
+    "pdfUrl": "js/data/pdfs/1991.pdf"
+  },
+  {
+    "id": 1997,
+    "type": "Original Article",
+    "title": "Diagnostic Dilemma for Low Viremia with Significant Fibrosis; is Hepatitis B Virus DNA Threshold Level a Good Indicator for Predicting Liver Damage?",
+    "authors": [
+      {
+        "name": "Ercan Yenilmez",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, İstanbul Sultan Abdulhamid Han Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Rıza Aytaç Çetinkaya",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, İstanbul Sultan Abdulhamid Han Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ersin Tural",
+        "affiliation": "Department of Pediatrics, İstanbul Sultan Abdulhamid Han Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The most important difficulties about management of hepatitis B are still determining the liver damage and the right time to start antiviral therapy. Aims: To reveal the role of hepatitis B virus DNA threshold level for prediction of liver fibrosis and inflammation in young-aged hepatitis B e-antigen negative chronic hepatitis B patients. Study Design: Diagnostic accuracy study. Methods: A total of 273 hepatitis B e-antigen negative young chronic hepatitis B patients with any hepatitis B virus DNA levels between 2008 and 2016, who had liver biopsy after at least 6 months follow up period, enrolled in this retrospective study. We created two groups as case and control, cases with hepatitis B virus DNA levels below 2000 IU/mL and controls with hepatitis B virus DNA levels over 2000 IU/mL. Having histological activity index ≥4 or/and fibrosis scores ≥2 were defined as significant histological abnormality. Then, we analyzed the relationship between these groups. Results: We showed that significant fibrosis may occur in one third of young chronic hepatitis B patients with low viremia (30.2%, n=42/139 in cases, 55.2%, n=74/134 in controls). Among the 42 cases with low viremia and significant fibrosis, 21.4% had alanine aminotransferase level between 40-59 U/L, 42.8% had alanine aminotransferase level between 60-79 U/L, and 35.7% had alanine aminotransferase level over 80 U/L. There was weak correlation between hepatitis B virus DNA threshold level and fibrosis score (p<0.001, rho=0.253). The optimum serum hepatitis B virus DNA threshold level in our study for predicting significant fibrosis was 1293 IU/mL (p<0.001, AUC: 0.657±0.034). The optimum alanine aminotransferase threshold level for predicting significant histological activity index and fibrosis was 64.5 and 59.5 U/L, respectively. The sensitivity and the specificity of 1293 vs 2000 IU/mL hepatitis B virus DNA threshold with 60 U/L alanine aminotransferase threshold level for predicting F≥2 fibrosis score were similar (sensitivity: 0.43 and 0.38, specificity: 0.76 and 0.77, respectively).Conclusion: Significant fibrosis may occur even in young cases with low viremia. It is not possible to define a single threshold hepatitis B virus DNA level for differentiating inactive carriers from patients with hepatitis B e-antigen-negative chronic hepatitis. Diagnostic accuracy of hepatitis B virus DNA with alanine aminotransferase thresholds for the prediction of significant fibrosis is weak.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> The most important difficulties about management of hepatitis B are still determining the liver damage and the right time to start antiviral therapy. <br /><strong>Aims:</strong> To reveal the role of hepatitis B virus DNA threshold level for prediction of liver fibrosis and inflammation in young-aged hepatitis B e-antigen negative chronic hepatitis B patients. <br /><strong>Study Design:</strong> Diagnostic accuracy study. <br /><strong>Methods:</strong> A total of 273 hepatitis B e-antigen negative young chronic hepatitis B patients with any hepatitis B virus DNA levels between 2008 and 2016, who had liver biopsy after at least 6 months follow up period, enrolled in this retrospective study. We created two groups as case and control, cases with hepatitis B virus DNA levels below 2000 IU/mL and controls with hepatitis B virus DNA levels over 2000 IU/mL. Having histological activity index &ge;4 or/and fibrosis scores &ge;2 were defined as significant histological abnormality. Then, we analyzed the relationship between these groups. <br /><strong>Results:</strong> We showed that significant fibrosis may occur in one third of young chronic hepatitis B patients with low viremia (30.2%, n=42/139 in cases, 55.2%, n=74/134 in controls). Among the 42 cases with low viremia and significant fibrosis, 21.4% had alanine aminotransferase level between 40-59 U/L, 42.8% had alanine aminotransferase level between 60-79 U/L, and 35.7% had alanine aminotransferase level over 80 U/L. There was weak correlation between hepatitis B virus DNA threshold level and fibrosis score (p&lt;0.001, rho=0.253). The optimum serum hepatitis B virus DNA threshold level in our study for predicting significant fibrosis was 1293 IU/mL (p&lt;0.001, AUC: 0.657&plusmn;0.034). The optimum alanine aminotransferase threshold level for predicting significant histological activity index and fibrosis was 64.5 and 59.5 U/L, respectively. The sensitivity and the specificity of 1293 vs 2000 IU/mL hepatitis B virus DNA threshold with 60 U/L alanine aminotransferase threshold level for predicting F&ge;2 fibrosis score were similar (sensitivity: 0.43 and 0.38, specificity: 0.76 and 0.77, respectively).<br /><strong>Conclusion:</strong> Significant fibrosis may occur even in young cases with low viremia. It is not possible to define a single threshold hepatitis B virus DNA level for differentiating inactive carriers from patients with hepatitis B e-antigen-negative chronic hepatitis. Diagnostic accuracy of hepatitis B virus DNA with alanine aminotransferase thresholds for the prediction of significant fibrosis is weak.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The most important difficulties about management of hepatitis B are still determining the liver damage and the right time to start antiviral therapy. Aims: To reveal the role of hepatitis B virus DNA threshold level for prediction of liver fibrosis and inflammation in young-aged hepatitis B e-antigen negative chronic hepatitis B patients. Study Design: Diagnostic accuracy study. Methods: A total of 273 hepatitis B e-antigen negative young chronic hepatitis B patients with any hepatitis B virus DNA levels between 2008 and 2016, who had liver biopsy after at least 6 months follow up period, enrolled in this retrospective study. We created two groups as case and control, cases with hepatitis B virus DNA levels below 2000 IU/mL and controls with hepatitis B virus DNA levels over 2000 IU/mL. Having histological activity index ≥4 or/and fibrosis scores ≥2 were defined as significant histological abnormality. Then, we analyzed the relationship between these groups. Results: We showed that significant fibrosis may occur in one third of young chronic hepatitis B patients with low viremia (30.2%, n=42/139 in cases, 55.2%, n=74/134 in controls). Among the 42 cases with low viremia and significant fibrosis, 21.4% had alanine aminotransferase level between 40-59 U/L, 42.8% had alanine aminotransferase level between 60-79 U/L, and 35.7% had alanine aminotransferase level over 80 U/L. There was weak correlation between hepatitis B virus DNA threshold level and fibrosis score (p<0.001, rho=0.253). The optimum serum hepatitis B virus DNA threshold level in our study for predicting significant fibrosis was 1293 IU/mL (p<0.001, AUC: 0.657±0.034). The optimum alanine aminotransferase threshold level for predicting significant histological activity index and fibrosis was 64.5 and 59.5 U/L, respectively. The sensitivity and the specificity of 1293 vs 2000 IU/mL hepatitis B virus DNA threshold with 60 U/L alanine aminotransferase threshold level for predicting F≥2 fibrosis score were similar (sensitivity: 0.43 and 0.38, specificity: 0.76 and 0.77, respectively).Conclusion: Significant fibrosis may occur even in young cases with low viremia. It is not possible to define a single threshold hepatitis B virus DNA level for differentiating inactive carriers from patients with hepatitis B e-antigen-negative chronic hepatitis. Diagnostic accuracy of hepatitis B virus DNA with alanine aminotransferase thresholds for the prediction of significant fibrosis is weak.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0888",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "326-332",
+    "views": 6859,
+    "downloads": 9974,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "1997",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1997",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1997",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1997",
+    "localPdfUrl": "js/data/pdfs/1997.pdf",
+    "pdfUrl": "js/data/pdfs/1997.pdf"
+  },
+  {
+    "id": 1967,
+    "type": "Case Report",
+    "title": "A Rare Colonization in Peritoneum After Blunt Abdominal Trauma: S. putrefaciens and S. cerevisiae",
+    "authors": [
+      {
+        "name": "Oana Bulat",
+        "affiliation": "Department of Surgery, “Sf. Spiridon” Hospital, “Grigore T. Popa” University School of Medicine and Pharmacy, Iasi, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Cristian Bulat",
+        "affiliation": "Department of Surgery, “Sf. Spiridon” Hospital, “Grigore T. Popa” University School of Medicine and Pharmacy, Iasi, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Mihaela Blaj",
+        "affiliation": "Department of Intensive Care Unit, “Sf. Spiridon” Hospital, “Grigore T. Popa” University School of Medicine and Pharmacy, Iasi, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Ioana Lupusoru",
+        "affiliation": "Department of Surgery, “Sf. Spiridon” Hospital, “Grigore T. Popa” University School of Medicine and Pharmacy, Iasi, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Viorel Scripcariu",
+        "affiliation": "Department of Oncology Surgery, Regional Institute of Oncology, “Grigore T. Popa” University School of Medicine and Pharmacy, Iasi, Romania",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Shewanella spp. are gram-negative bacteria, saprophytes, and rarely pathogenic. Saccharomyces cerevisiae is the well-known yeast used for fermentation in industry and molecular biology for research. In humans, it is a very rare pathogen which colonizes the digestive tract, and its utility has been linked to the treatment and prevention of diarrhea associated with Clostridium difficile.Case Report: A 27-year-old male, victim of aggressive, blunt trauma with a 4-day history of symptoms was admitted to our surgery unit. Abdominal sonography revealed peritoneal fluid in all spaces with fibrin. We performed laparotomy and observed perforations on the ileum and general peritonitis with pus. Following surgery, patient was admitted to the intensive care unit with septic shock. The antibiogram from the peritoneal liquid revealed S. putrefaciens and S. cerevisiae.Conclusion: Although very rare, S. putrefaciens and S. cerevisiae may colonize in the peritoneum after blunt abdominal trauma.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> <em>Shewanella</em> spp. are gram-negative bacteria, saprophytes, and rarely pathogenic. <em>Saccharomyces cerevisiae</em> is the well-known yeast used for fermentation in industry and molecular biology for research. In humans, it is a very rare pathogen which colonizes the digestive tract, and its utility has been linked to the treatment and prevention of diarrhea associated with <em>Clostridium difficile</em>.<br /><strong>Case Report:</strong> A 27-year-old male, victim of aggressive, blunt trauma with a 4-day history of symptoms was admitted to our surgery unit. Abdominal sonography revealed peritoneal fluid in all spaces with fibrin. We performed laparotomy and observed perforations on the ileum and general peritonitis with pus. Following surgery, patient was admitted to the intensive care unit with septic shock. The antibiogram from the peritoneal liquid revealed <em>S. putrefaciens</em> and <em>S. cerevisiae</em>.<br /><strong>Conclusion:</strong> Although very rare, <em>S. putrefaciens</em> and <em>S. cerevisiae</em> may colonize in the peritoneum after blunt abdominal trauma.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Shewanella spp. are gram-negative bacteria, saprophytes, and rarely pathogenic. Saccharomyces cerevisiae is the well-known yeast used for fermentation in industry and molecular biology for research. In humans, it is a very rare pathogen which colonizes the digestive tract, and its utility has been linked to the treatment and prevention of diarrhea associated with Clostridium difficile.Case Report: A 27-year-old male, victim of aggressive, blunt trauma with a 4-day history of symptoms was admitted to our surgery unit. Abdominal sonography revealed peritoneal fluid in all spaces with fibrin. We performed laparotomy and observed perforations on the ileum and general peritonitis with pus. Following surgery, patient was admitted to the intensive care unit with septic shock. The antibiogram from the peritoneal liquid revealed S. putrefaciens and S. cerevisiae.Conclusion: Although very rare, S. putrefaciens and S. cerevisiae may colonize in the peritoneum after blunt abdominal trauma.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0773",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "333-335",
+    "views": 6890,
+    "downloads": 9555,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "1967",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1967",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1967",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1967",
+    "localPdfUrl": "js/data/pdfs/1967.pdf",
+    "pdfUrl": "js/data/pdfs/1967.pdf"
+  },
+  {
+    "id": 1979,
+    "type": "Case Report",
+    "title": "Expanding the Phenotype of Homozygous KCNMA1 Mutations; Dyskinesia, Epilepsy, Intellectual Disability, Cerebellar and Corticospinal Tract Atrophy",
+    "authors": [
+      {
+        "name": "Gözde Yeşil",
+        "affiliation": "Department of Medical Genetics, Bezmialem Vakıf University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşe Aralaşmak",
+        "affiliation": "Department of Radiology, Bezmialem Vakıf University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Enes Akyüz",
+        "affiliation": "Department of Medical Genetics, Bezmialem Vakıf University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dilara İçağasıoğlu",
+        "affiliation": "Department of Child Disease and Health, Bezmialem Vakıf University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Türkan Uygur Şahin",
+        "affiliation": "Department of Child Neurology, Bezmialem Vakıf University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yavuz Bayram[[5]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The KCNMA1 gene encodes the α-subunit of the large conductance, voltage, and calcium-sensitive potassium channel (BK channels) that plays a critical role in neuronal excitability. Heterozygous mutations in KCNMA1 were first illustrated in a large family with generalized epilepsy and paroxysmal nonkinesigenic dyskinesia. Recent research has established homozygous KCNMA1 mutations accountable for the phenotype of cerebellar atrophy, developmental delay, and seizures.Case Report: Here, we report the case of a patient with a novel homozygous truncating mutation in KCNMA1 (p.Arg458Ter) presenting with both the loss- and gain-of-function phenotype with paroxysmal dyskinesia, epilepsy, intellectual delay, and corticospinal–cerebellar tract atrophy.Conclusion: This report extends the KNCMA1 mutation phenotype with a patient who carries a novel frameshift variant, presenting with both the gain- and loss-of-function phenotypes along with spinal tract involvement as a novel characteristic.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The <em>KCNMA1</em> gene encodes the &alpha;-subunit of the large conductance, voltage, and calcium-sensitive potassium channel (BK channels) that plays a critical role in neuronal excitability. Heterozygous mutations in <em>KCNMA1</em> were first illustrated in a large family with generalized epilepsy and paroxysmal nonkinesigenic dyskinesia. Recent research has established homozygous <em>KCNMA1</em> mutations accountable for the phenotype of cerebellar atrophy, developmental delay, and seizures.<br /><strong>Case Report:</strong> Here, we report the case of a patient with a novel homozygous truncating mutation in <em>KCNMA1</em> (p.Arg458Ter) presenting with both the loss- and gain-of-function phenotype with paroxysmal dyskinesia, epilepsy, intellectual delay, and corticospinal&ndash;cerebellar tract atrophy.<br /><strong>Conclusion:</strong> This report extends the <em>KNCMA1</em> mutation phenotype with a patient who carries a novel frameshift variant, presenting with both the gain- and loss-of-function phenotypes along with spinal tract involvement as a novel characteristic.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The KCNMA1 gene encodes the α-subunit of the large conductance, voltage, and calcium-sensitive potassium channel (BK channels) that plays a critical role in neuronal excitability. Heterozygous mutations in KCNMA1 were first illustrated in a large family with generalized epilepsy and paroxysmal nonkinesigenic dyskinesia. Recent research has established homozygous KCNMA1 mutations accountable for the phenotype of cerebellar atrophy, developmental delay, and seizures.Case Report: Here, we report the case of a patient with a novel homozygous truncating mutation in KCNMA1 (p.Arg458Ter) presenting with both the loss- and gain-of-function phenotype with paroxysmal dyskinesia, epilepsy, intellectual delay, and corticospinal–cerebellar tract atrophy.Conclusion: This report extends the KNCMA1 mutation phenotype with a patient who carries a novel frameshift variant, presenting with both the gain- and loss-of-function phenotypes along with spinal tract involvement as a novel characteristic.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0986",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "336-339",
+    "views": 7036,
+    "downloads": 10366,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "1979",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1979",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1979",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1979",
+    "localPdfUrl": "js/data/pdfs/1979.pdf",
+    "pdfUrl": "js/data/pdfs/1979.pdf"
+  },
+  {
+    "id": 1981,
+    "type": "Case Report",
+    "title": "Complete Penile Duplication with Structurally Normal Penises: A Case Report",
+    "authors": [
+      {
+        "name": "Ahsen Karagözlü Akgül",
+        "affiliation": "Clinic of Pediatric Urology, University of Health Sciences, Van Training and Research Hospital, Van, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Uçar",
+        "affiliation": "Clinic Pediatric Urology, University of Health Sciences, İzmir Tepecik Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Çelik",
+        "affiliation": "Department of Pediatric Surgery, Uludağ University School of Medicine, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İrfan Kırıştıoğlu",
+        "affiliation": "Department of Pediatric Surgery, Uludağ University School of Medicine, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nizamettin Kılıç[[4]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Diphallia is a very rare anomaly and seen once in every 5.5 million live births. True diphallia with normal penile structures is extremely rare. Surgical management for patients with complete penile duplication without any penile or urethral pathology is challenging. Case Report: A 4-year-old boy presented with diphallia. Initial physical examination revealed first physical examination revealed complete penile duplication, urine flow from both penises, meconium flow from right urethra, and anal atresia. Further evaluations showed double colon and rectum, double bladder, and large recto-vesical fistula. Two cavernous bodies and one spongious body were detected in each penile body. Surgical treatment plan consisted of right total penectomy and end-to-side urethra-urethrostomy. No postoperative complications and no voiding dysfunction were detected during the 18 months follow-up. Conclusion: Penile duplication is a rare anomaly, which presents differently in each patient. Because of this, the treatment should be individualized and end-to-side urethra-urethrostomy may be an alternative to removing posterior urethra. This approach eliminates the risk of damaging prostate gland and sphincter.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Diphallia is a very rare anomaly and seen once in every 5.5 million live births. True diphallia with normal penile structures is extremely rare. Surgical management for patients with complete penile duplication without any penile or urethral pathology is challenging. <br /><strong>Case Report:</strong> A 4-year-old boy presented with diphallia. Initial physical examination revealed first physical examination revealed complete penile duplication, urine flow from both penises, meconium flow from right urethra, and anal atresia. Further evaluations showed double colon and rectum, double bladder, and large recto-vesical fistula. Two cavernous bodies and one spongious body were detected in each penile body. Surgical treatment plan consisted of right total penectomy and end-to-side urethra-urethrostomy. No postoperative complications and no voiding dysfunction were detected during the 18 months follow-up. <br /><strong>Conclusion:</strong> Penile duplication is a rare anomaly, which presents differently in each patient. Because of this, the treatment should be individualized and end-to-side urethra-urethrostomy may be an alternative to removing posterior urethra. This approach eliminates the risk of damaging prostate gland and sphincter.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Diphallia is a very rare anomaly and seen once in every 5.5 million live births. True diphallia with normal penile structures is extremely rare. Surgical management for patients with complete penile duplication without any penile or urethral pathology is challenging. Case Report: A 4-year-old boy presented with diphallia. Initial physical examination revealed first physical examination revealed complete penile duplication, urine flow from both penises, meconium flow from right urethra, and anal atresia. Further evaluations showed double colon and rectum, double bladder, and large recto-vesical fistula. Two cavernous bodies and one spongious body were detected in each penile body. Surgical treatment plan consisted of right total penectomy and end-to-side urethra-urethrostomy. No postoperative complications and no voiding dysfunction were detected during the 18 months follow-up. Conclusion: Penile duplication is a rare anomaly, which presents differently in each patient. Because of this, the treatment should be individualized and end-to-side urethra-urethrostomy may be an alternative to removing posterior urethra. This approach eliminates the risk of damaging prostate gland and sphincter.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.1518",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "340-343",
+    "views": 8268,
+    "downloads": 4210,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "1981",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1981",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1981",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1981",
+    "localPdfUrl": "js/data/pdfs/1981.pdf",
+    "pdfUrl": "js/data/pdfs/1981.pdf"
+  },
+  {
+    "id": 1983,
+    "type": "Clinical Image",
+    "title": "Injury of the Prefrontocaudate Tract in a Patient with a Bilateral Caudate Infarct",
+    "authors": [
+      {
+        "name": "Sung Ho Jang",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Yeungnam University College of Medicine, Gyeongsan, South Korea",
+        "orcid": ""
+      },
+      {
+        "name": "Hyeok Gyu Kwon",
+        "affiliation": "Department of Physical Therapy, College of Health Sciences, Catholic University of Pusan, Busan, South Korea",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 65-year-old female patient underwent graft interposition of the ascending aorta for acute aortic dissection. She was diagnoed with multiple cerebral infarction including bilateral caudate nuclei, bilateral frontotemporal lobes, and left parietal lobe after the operation (Figure 1a). At 4 weeks after onset, she was transferred to the rehabilitation departme",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.0201",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "344-345",
+    "views": 5631,
+    "downloads": 3017,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "1983",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1983",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1983",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1983",
+    "localPdfUrl": "js/data/pdfs/1983.pdf",
+    "pdfUrl": "js/data/pdfs/1983.pdf"
+  },
+  {
+    "id": 1984,
+    "type": "Clinical Image",
+    "title": "A Rare Case of Incidental Common Bile Duct Adenoma-Endoscopic Ultrasound Evaluation",
+    "authors": [
+      {
+        "name": "Yana Valerieva",
+        "affiliation": "Clinical Center of Gastroenterology, University Hospital “Queen Joanna-ISUL” Sofia, Medical University Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Ivan Lutakov",
+        "affiliation": "Clinical Center of Gastroenterology, University Hospital “Queen Joanna-ISUL” Sofia, Medical University Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Branimir Golemanov",
+        "affiliation": "Clinical Center of Gastroenterology, University Hospital “Queen Joanna-ISUL” Sofia, Medical University Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Georgi Jelev",
+        "affiliation": "Clinical Center of Gastroenterology, Department of Surgery, University Hospital “Queen Joanna-ISUL” Sofia, Medical University Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Borislav Vladimirov",
+        "affiliation": "Clinical Center of Gastroenterology, University Hospital “Queen Joanna-ISUL” Sofia, Medical University Sofia, Bulgaria",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "An 81-year-old female patient with rectal bleeding caused due to a 2-cm stalked sigmoid polyp was referred to our center for polypectomy. She had a history of chronic cholecystitis with several episodes of biliary colic without jaundice or fever since the past few years (she refused surgical treatment). Physical examination was insignificant, whereas laborat",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.1485",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "346-347",
+    "views": 5689,
+    "downloads": 9525,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "1984",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1984",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1984",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1984",
+    "localPdfUrl": "js/data/pdfs/1984.pdf",
+    "pdfUrl": "js/data/pdfs/1984.pdf"
+  },
+  {
+    "id": 1985,
+    "type": "Clinical Image",
+    "title": "A Rare Cause of Left Ventricular Mass: Cardiac Hemangioma",
+    "authors": [
+      {
+        "name": "Cihan Altın",
+        "affiliation": "Department of Cardiology, Başkent University of School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Güllü",
+        "affiliation": "Department of Cardiology, Başkent University of School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ziya Gökalp Bilgel",
+        "affiliation": "Department of Cardiology, Başkent University of School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Yılmaz",
+        "affiliation": "Department of Cardiology, Başkent University of School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuba Canpolat",
+        "affiliation": "Department of Pathology, Başkent University of School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Öner Gülcan",
+        "affiliation": "Department of Cardiovascular Surgery, Başkent University of School of Medicine, Adana, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Cardiac hemangiomas are uncommon tumors of the heart and have been primarily documented as isolated case reports in the literature (1-5). Herein, we present a case of a 56-year-old female having an incidentally identified left ventricular mass. She had no history of cardiac or systemic disease and no clinical symptoms other than mild palpitation. Cardiac ima",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.1334",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "348-349",
+    "views": 5854,
+    "downloads": 11953,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "1985",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1985",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1985",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1985",
+    "localPdfUrl": "js/data/pdfs/1985.pdf",
+    "pdfUrl": "js/data/pdfs/1985.pdf"
+  },
+  {
+    "id": 1986,
+    "type": "Clinical Image",
+    "title": "Double Pyramidal Lobe of the Thyroid Gland",
+    "authors": [
+      {
+        "name": "Emin Gürleyik",
+        "affiliation": "Department of Surgery, Düzce University School of Medicine, Düzce, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "The pyramidal lobe is a thyroid tissue of embryologic origin. It is situated in the pretracheal region between the isthmus and the hyoid bone. The high incidence of 65.7% of patients undergoing thyroidectomy suggests that pyramidal lobe is a common component of the thyroid gland rather than an uncommon anatomic variation (1). Double pyramidal lobes that are ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.1581",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "350-351",
+    "views": 5554,
+    "downloads": 3201,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "1986",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1986",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1986",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1986",
+    "localPdfUrl": "js/data/pdfs/1986.pdf",
+    "pdfUrl": "js/data/pdfs/1986.pdf"
+  },
+  {
+    "id": 1988,
+    "type": "Letter to the Editor",
+    "title": "Polypropylene Suture Guided Microdochectomy for Pathologic Nipple Discharge",
+    "authors": [
+      {
+        "name": "Emine Özlem Gür",
+        "affiliation": "Clinic of General Surgery, İzmir Katip Çelebi University, Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serkan Karaisli",
+        "affiliation": "Clinic of General Surgery, İzmir Katip Çelebi University, Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Akif Serhat Gür",
+        "affiliation": "Clinic of General Surgery, Private Tınaztepe Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Hacıyanlı",
+        "affiliation": "Clinic of General Surgery, İzmir Katip Çelebi University, Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, Nipple discharge is a complaint of approximately 5% of women. Pathologic nipple discharge is defined as unilateral, spontaneous discharge from a single duct during the nonlactational period. Benign lesions such as intraductal papilloma and mammary duct ectasia are the reasons for pathologic nipple discharge. The association between pathologic ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.1319",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "352-353",
+    "views": 5612,
+    "downloads": 3598,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "1988",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1988",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1988",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1988",
+    "localPdfUrl": "js/data/pdfs/1988.pdf",
+    "pdfUrl": "js/data/pdfs/1988.pdf"
+  },
+  {
+    "id": 1993,
+    "type": "Letter to the Editor",
+    "title": "In Regard to Bozkurt et al.",
+    "authors": [
+      {
+        "name": "Mete Özkıdık",
+        "affiliation": "Clinic of Urology, Şanlıurfa Training and Research Hospital, Şanlıurfa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Anar İbrahimov[[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, I read the article by Bozkurt and Şahin (1) with great interest. I have some points of concern related to this case report. First, the authors have stated that painful erections lasted for about 1 hours after adding olanzapine 2.5 mg/day. However, there was no comment regarding the number of attacks or the time of attacks. I believe that it is",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.0407",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "354-354",
+    "views": 5470,
+    "downloads": 9268,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "1993",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1993",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1993",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1993",
+    "localPdfUrl": "js/data/pdfs/1993.pdf",
+    "pdfUrl": "js/data/pdfs/1993.pdf"
+  },
+  {
+    "id": 2027,
+    "type": "Letter to the Editor",
+    "title": "In Reply to Özkıdık et al.",
+    "authors": [
+      {
+        "name": "Hasan Bozkurt",
+        "affiliation": "Department of Child and Adolescent Psychiatry, Gaziosmanpaşa University Hospital, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serkan Şahin",
+        "affiliation": "Department of Child and Adolescent Psychiatry, Gaziosmanpaşa University Hospital, Tokat, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, We read the letter that criticizes our previous report published in Balkan Medical Journal. Commentaries to the letter are as noted below respectively (1). Firstly, information regarding the medical and psychiatric history of this child case was taken from mother and we unfortunately did not have the chance to observe the penil erection attack",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.1180",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "4",
+    "pages": "354-355",
+    "views": 5387,
+    "downloads": 3599,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1251",
+    "sourceArticleId": "2027",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2027",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2027",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2027",
+    "localPdfUrl": "js/data/pdfs/2027.pdf",
+    "pdfUrl": "js/data/pdfs/2027.pdf"
+  }
+]

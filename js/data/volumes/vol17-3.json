@@ -1,0 +1,562 @@
+[
+  {
+    "id": 1883,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2000-01-01",
+    "volume": 17,
+    "issue": "3",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1126",
+    "sourceArticleId": "1883",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1883",
+    "localPdfUrl": "js/data/pdfs/1883.pdf",
+    "pdfUrl": "js/data/pdfs/1883.pdf"
+  },
+  {
+    "id": 1540,
+    "type": "Original Article",
+    "title": "Farelerde Morfinin oluşturduğu Analjezik Etkide Santral Histaminerjik Sistemin Rolü",
+    "authors": [
+      {
+        "name": "Turhan Kürüm",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kardiyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Dikmen Dökmeci",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Farmakoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Meryem Akpolat",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Farmakoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Çetin Hakan Karadağ",
+        "affiliation": "Department of Endocrinology and Metabolic Diseases, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Ulugöl",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Farmakoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2000-01-01",
+    "volume": 17,
+    "issue": "3",
+    "pages": "141-147",
+    "views": 5744,
+    "downloads": 1754,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1126",
+    "sourceArticleId": "1540",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1540",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1540",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1540",
+    "localPdfUrl": "js/data/pdfs/1540.pdf",
+    "pdfUrl": "js/data/pdfs/1540.pdf"
+  },
+  {
+    "id": 1547,
+    "type": "Original Article",
+    "title": "Epiglot Rekonstrüksiyonlu Frontal Anterior Lrenjektomi",
+    "authors": [
+      {
+        "name": "Ahmet R. Karasalihoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Cem Uzun",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Kemal Adalı",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Muhsin Koten",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Küçükuğurluoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Recep Yağız",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Abdullah Taş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2000-01-01",
+    "volume": 17,
+    "issue": "3",
+    "pages": "149-154",
+    "views": 5639,
+    "downloads": 1839,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1126",
+    "sourceArticleId": "1547",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1547",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1547",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1547",
+    "localPdfUrl": "js/data/pdfs/1547.pdf",
+    "pdfUrl": "js/data/pdfs/1547.pdf"
+  },
+  {
+    "id": 1549,
+    "type": "Original Article",
+    "title": "Streptomisinin Ototoksisitesinin Transient Evoked Otoakustik Emisyon İle Monitörizasyonu",
+    "authors": [
+      {
+        "name": "Cem Uzun",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Recep Yağız",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa K. Adalı",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Muhsin Koten",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Abdullah Taş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Küçükuğurluoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet R. Karasalihoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2000-01-01",
+    "volume": 17,
+    "issue": "3",
+    "pages": "155-160",
+    "views": 5531,
+    "downloads": 1741,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1126",
+    "sourceArticleId": "1549",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1549",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1549",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1549",
+    "localPdfUrl": "js/data/pdfs/1549.pdf",
+    "pdfUrl": "js/data/pdfs/1549.pdf"
+  },
+  {
+    "id": 1550,
+    "type": "Original Article",
+    "title": "Trakya Üniversitesi Tıp Fakültesi Öğrencilerinde Sigara Alışkanlığı ve İlişkili Faktörler",
+    "authors": [
+      {
+        "name": "Celal Karlıkaya",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sarper Erdoğan",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Halk Sağlığı A. D",
+        "orcid": ""
+      },
+      {
+        "name": "Ebru Çakır",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göğüs Hastalıkları A. D",
+        "orcid": ""
+      },
+      {
+        "name": "Osman N. Hatipoğlu",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emine Dilek",
+        "affiliation": "Trakya Üniversitesinde Tıp",
+        "orcid": ""
+      },
+      {
+        "name": "Vijdan Hacıoğlu",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2000-01-01",
+    "volume": 17,
+    "issue": "3",
+    "pages": "161-169",
+    "views": 5408,
+    "downloads": 1746,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1126",
+    "sourceArticleId": "1550",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1550",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1550",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1550",
+    "localPdfUrl": "js/data/pdfs/1550.pdf",
+    "pdfUrl": "js/data/pdfs/1550.pdf"
+  },
+  {
+    "id": 1551,
+    "type": "Original Article",
+    "title": "Kronik Obstruktif Akciğer Hastalığı (KOAH) Alevlenmelerinin Mevsimsel Özelliği",
+    "authors": [
+      {
+        "name": "Celal Karlıkaya",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mevlüt Türe",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Biyoistatistik Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Erkan Yıldırım",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göğüs Hastalıkları A. D.",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2000-01-01",
+    "volume": 17,
+    "issue": "3",
+    "pages": "171-176",
+    "views": 6360,
+    "downloads": 1831,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1126",
+    "sourceArticleId": "1551",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1551",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1551",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1551",
+    "localPdfUrl": "js/data/pdfs/1551.pdf",
+    "pdfUrl": "js/data/pdfs/1551.pdf"
+  },
+  {
+    "id": 1552,
+    "type": "Original Article",
+    "title": "Merkezimizde Tanı Konulan Mide Kanserlerinde Cerrahi Uygulamalarımız",
+    "authors": [
+      {
+        "name": "Ahmet R. Karasalihoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "Zeki Hoşcoşkun",
+        "affiliation": "Department of General Surgery, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ergün Temiz",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Genel Cerrahi A. D.",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2000-01-01",
+    "volume": 17,
+    "issue": "3",
+    "pages": "177-182",
+    "views": 5608,
+    "downloads": 1704,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1126",
+    "sourceArticleId": "1552",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1552",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1552",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1552",
+    "localPdfUrl": "js/data/pdfs/1552.pdf",
+    "pdfUrl": "js/data/pdfs/1552.pdf"
+  },
+  {
+    "id": 1553,
+    "type": "Case Report",
+    "title": "Küçük Hücreli Akciğer Kanserli Kadın Olgularımız",
+    "authors": [
+      {
+        "name": "Ebru Çakır",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göğüs Hastalıkları A. D.",
+        "orcid": ""
+      },
+      {
+        "name": "Celal Karlıkaya",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ömer Yalçın",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Patoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Gülhan Aktaş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Patoloji A. D.",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2000-01-01",
+    "volume": 17,
+    "issue": "3",
+    "pages": "185-192",
+    "views": 6641,
+    "downloads": 1793,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1126",
+    "sourceArticleId": "1553",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1553",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1553",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1553",
+    "localPdfUrl": "js/data/pdfs/1553.pdf",
+    "pdfUrl": "js/data/pdfs/1553.pdf"
+  },
+  {
+    "id": 1554,
+    "type": "Case Report",
+    "title": "Hipertiroidi İle Birlikte Seyreden Tiroid Kanseri İle İlgili Bir Olgu Sunumu",
+    "authors": [
+      {
+        "name": "Ahmet R. Hatipoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Genel Cerrahi A. D.",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet E. İrfanoğlu",
+        "affiliation": "Prof. Dr. Trakya Üni. Tıp Fakültesi Genel Cerrahi A.B.D.",
+        "orcid": ""
+      },
+      {
+        "name": "Serkan Sarıkaya",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Genel Cerrahi A. D.",
+        "orcid": ""
+      },
+      {
+        "name": "Kemal Karakaya [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2000-01-01",
+    "volume": 17,
+    "issue": "3",
+    "pages": "193-195",
+    "views": 5488,
+    "downloads": 1667,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1126",
+    "sourceArticleId": "1554",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1554",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1554",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1554",
+    "localPdfUrl": "js/data/pdfs/1554.pdf",
+    "pdfUrl": "js/data/pdfs/1554.pdf"
+  },
+  {
+    "id": 1555,
+    "type": "Case Report",
+    "title": "Karaciğerin Mezenkimal Hamartomu",
+    "authors": [
+      {
+        "name": "Latife Candan",
+        "affiliation": "Trakya Üniversitesi Patoloji Hastalıkları, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Ulviye Yalçınkaya",
+        "affiliation": "Trakya Üniversitesi Patoloji Hastalıkları, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Esat Kaya",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Üroloji Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2000-01-01",
+    "volume": 17,
+    "issue": "3",
+    "pages": "197-199",
+    "views": 5220,
+    "downloads": 1729,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1126",
+    "sourceArticleId": "1555",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1555",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1555",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1555",
+    "localPdfUrl": "js/data/pdfs/1555.pdf",
+    "pdfUrl": "js/data/pdfs/1555.pdf"
+  },
+  {
+    "id": 1556,
+    "type": "Review",
+    "title": "'' Radyolojinin Tarihi ve Türk Tıbbında İlk Radyografi Uygulaması ''",
+    "authors": [
+      {
+        "name": "Çetin Algüneş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıbbi Biyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Gökay Bozkurt",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıbbi Biyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2000-01-01",
+    "volume": 17,
+    "issue": "3",
+    "pages": "203-206",
+    "views": 5496,
+    "downloads": 1741,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1126",
+    "sourceArticleId": "1556",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1556",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1556",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1556",
+    "localPdfUrl": "js/data/pdfs/1556.pdf",
+    "pdfUrl": "js/data/pdfs/1556.pdf"
+  }
+]

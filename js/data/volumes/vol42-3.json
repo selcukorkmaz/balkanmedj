@@ -1,0 +1,1065 @@
+[
+  {
+    "id": 2710,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2710",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2710",
+    "localPdfUrl": "js/data/pdfs/2710.pdf",
+    "pdfUrl": "js/data/pdfs/2710.pdf"
+  },
+  {
+    "id": 2707,
+    "type": "Editorial",
+    "title": "The Evolution of Axillary Surgery in Breast Cancer-Towards De-escalation",
+    "authors": [
+      {
+        "name": "Berrin Papila",
+        "affiliation": "Department of General Surgery, İstanbul University Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "The primary goals of axillary surgery in breast cancer are multifactorial and include ensuring accurate staging, guiding adjuvant therapy decisions, predicting recurrence, achieving local control, and, most importantly, improving overall survival. As axillary lymph node status remains a crucial prognostic indicator, there is a constant attempt to balance onc",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025.160425",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "183-184",
+    "views": 3290,
+    "downloads": 1907,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2707",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2707",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2707",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2707",
+    "localPdfUrl": "js/data/pdfs/2707.pdf",
+    "pdfUrl": "js/data/pdfs/2707.pdf"
+  },
+  {
+    "id": 2708,
+    "type": "Editorial",
+    "title": "VEXAS Syndrome: An Overlooked Threat",
+    "authors": [
+      {
+        "name": "Serdal Uğurlu",
+        "affiliation": "Division of Rheumatology, Department of Internal Medicine, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Berkay Kılıç",
+        "affiliation": "Department of Internal Medicine, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Autoinflammatory diseases comprise diverse conditions resulting from innate immune system abnormalities. The term describes a broad range of diseases that may manifest with various symptoms across multiple systems. Although the differential diagnosis is complex, the underlying etiology is not impossible to diagnose since autoinflammatory diseases are frequen",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-170425",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "185-187",
+    "views": 3208,
+    "downloads": 2360,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2708",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2708",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2708",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2708",
+    "localPdfUrl": "js/data/pdfs/2708.pdf",
+    "pdfUrl": "js/data/pdfs/2708.pdf"
+  },
+  {
+    "id": 2709,
+    "type": "Invited Review",
+    "title": "Role and Significance of MicroRNAs in the Relationship Between Obesity and Cancer",
+    "authors": [
+      {
+        "name": "Ahmed S. Doghish",
+        "affiliation": "Department of Biochemistry and Molecular Biology, Al-Azhar University Faculty of Pharmacy, Cairo, Egypt; Department of Biochemistry, Badr University in Cairo Faculty of Pharmacy, Cairo, Egypt",
+        "orcid": ""
+      },
+      {
+        "name": "Reda M. Mansour",
+        "affiliation": "Department of Zoology and Entomology, Helwan University Faculty of Science, Heiwan, Egypt; Department of Molecular Biology and Biotechnology, Badr University in Cairo School of Biotechnology, Cairo, Egypt",
+        "orcid": ""
+      },
+      {
+        "name": "Sherif S. Abdel Mageed",
+        "affiliation": "Department of Pharmacology and Toxicology, Badr University in Cairo Faculty of Pharmacy, Cairo, Egypt",
+        "orcid": ""
+      },
+      {
+        "name": "Hebatallah Ahmed Mohamed Moustafa",
+        "affiliation": "Department of Clinical Pharmacy and Pharmacy Practice, Badr University in Cairo Faculty of Pharmacy, Cairo, Egypt",
+        "orcid": ""
+      },
+      {
+        "name": "Osama A. Mohammed",
+        "affiliation": "Department of Pharmacology, University of Bisha College of Medicine, Bisha, Saudi Arabia",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmed E. Elesawy",
+        "affiliation": "Department of Biochemistry, Badr University in Cairo Faculty of Pharmacy, Cairo, Egypt",
+        "orcid": ""
+      },
+      {
+        "name": "Nehal I. Rizk",
+        "affiliation": "Department of Biochemistry, Egyptian Chinese University Faculty of Pharmacy and Drug Technology, Cairo, Egypt",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract MicroRNAs (miRNAs) are small, noncoding RNAs that are essential for regulating gene expression at the posttranscriptional stage. Recent research shows that miRNAs are crucial in the development of two major global health issues: obesity and cancer, two significant health issues worldwide. This study examines the complex mechanisms by which miRNAs govern vital biological processes, including adipogenesis, cancer, and metabolic dysregulation. We highlight the dual function of miRNAs as oncogenes and tumor suppressors in obesity-related malignancies and investigate their potential as prognostic and diagnostic markers. To demonstrate their varied roles, specific examples of vital miRNAs are underscored, such as miR-21, which promotes adipogenesis and is overexpressed in various cancers, and miR-34a, a tumor suppressor involved in cell cycle arrest and apoptosis. In addition, we examined the recent developments in miRNA-based therapies, which include miRNA inhibitors, mimics, and novel delivery vehicles and have the potential for treating obesity-related malignancies. This review aims to clarify, within the framework of miRNA biology, the therapeutic potential of miRNAs in addressing the interrelation between obesity and cancer.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>MicroRNAs (miRNAs) are small, noncoding RNAs that are essential for regulating gene expression at the posttranscriptional stage. Recent research shows that miRNAs are crucial in the development of two major global health issues: obesity and cancer, two significant health issues worldwide. This study examines the complex mechanisms by which miRNAs govern vital biological processes, including adipogenesis, cancer, and metabolic dysregulation. We highlight the dual function of miRNAs as oncogenes and tumor suppressors in obesity-related malignancies and investigate their potential as prognostic and diagnostic markers. To demonstrate their varied roles, specific examples of vital miRNAs are underscored, such as miR-21, which promotes adipogenesis and is overexpressed in various cancers, and miR-34a, a tumor suppressor involved in cell cycle arrest and apoptosis. In addition, we examined the recent developments in miRNA-based therapies, which include miRNA inhibitors, mimics, and novel delivery vehicles and have the potential for treating obesity-related malignancies. This review aims to clarify, within the framework of miRNA biology, the therapeutic potential of miRNAs in addressing the interrelation between obesity and cancer.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract MicroRNAs (miRNAs) are small, noncoding RNAs that are essential for regulating gene expression at the posttranscriptional stage. Recent research shows that miRNAs are crucial in the development of two major global health issues: obesity and cancer, two significant health issues worldwide. This study examines the complex mechanisms by which miRNAs govern vital biological processes, including adipogenesis, cancer, and metabolic dysregulation. We highlight the dual function of miRNAs as oncogenes and tumor suppressors in obesity-related malignancies and investigate their potential as prognostic and diagnostic markers. To demonstrate their varied roles, specific examples of vital miRNAs are underscored, such as miR-21, which promotes adipogenesis and is overexpressed in various cancers, and miR-34a, a tumor suppressor involved in cell cycle arrest and apoptosis. In addition, we examined the recent developments in miRNA-based therapies, which include miRNA inhibitors, mimics, and novel delivery vehicles and have the potential for treating obesity-related malignancies. This review aims to clarify, within the framework of miRNA biology, the therapeutic potential of miRNAs in addressing the interrelation between obesity and cancer.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-3-60",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "188-200",
+    "views": 4344,
+    "downloads": 1882,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2709",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2709",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2709",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2709",
+    "localPdfUrl": "js/data/pdfs/2709.pdf",
+    "pdfUrl": "js/data/pdfs/2709.pdf"
+  },
+  {
+    "id": 2711,
+    "type": "Meta-Analysis",
+    "title": "The Association Between Serum Pentraxin-3 Level at Admission and the Functional Outcome of Patients After Acute Ischemic Stroke:  A Meta-Analysis",
+    "authors": [
+      {
+        "name": "Yanrong Zhu",
+        "affiliation": "Clinic of Physical Examination Center of the Outpatient, General Hospital of the Western Theater Command of the People’s Liberation Army of China, Chengdu, China",
+        "orcid": ""
+      },
+      {
+        "name": "Kui Fan",
+        "affiliation": "Clinic of Physical Examination Center of the Outpatient, General Hospital of the Western Theater Command of the People’s Liberation Army of China, Chengdu, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xujuan Zhao",
+        "affiliation": "Clinic of Physical Examination Center of the Outpatient, General Hospital of the Western Theater Command of the People’s Liberation Army of China, Chengdu, China",
+        "orcid": ""
+      },
+      {
+        "name": "Kaiwen Hou",
+        "affiliation": "Clinic of Physical Examination Center of the Outpatient, General Hospital of the Western Theater Command of the People’s Liberation Army of China, Chengdu, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Acute ischemic stroke (AIS) remains a leading cause of disability worldwide, placing a significant burden on patients’ quality of life and healthcare systems. Pentraxin-3 (PTX-3), an inflammatory biomarker, may be associated with AIS prognosis; however, existing evidence is inconclusive. Aims: To examine whether serum PTX-3 levels at admission are linked to the likelihood of poor functional outcomes in AIS patients. Study Design: Systematic review and meta-analysis. Methods: A comprehensive search of PubMed, Embase, Web of Science, China National Knowledge Infrastructure (CNKI), and Wanfang databases was conducted to identify studies evaluating PTX-3 levels in AIS patients. Eligible studies included those that measured PTX-3 within 48 h of admission and evaluated outcomes using the modified Rankin Scale, with scores > 2 defined as poor outcomes. A random-effects model was used to calculate pooled odds ratios (ORs) and corresponding 95% confidence intervals (CIs). Results: Ten cohort studies involving1202 AIS patients were included. Higher PTX-3 levels at admission were significantly associated with an increased risk of poor functional outcomes (OR, 2.06; 95% CI, 1.72-2.47; p < 0.001), with no significant heterogeneity (I² = 0%). Meta-regression showed that using higher PTX-3 cutoff values reported stronger associations (p < 0.05). Subgroup analyses confirmed consistent associations across study designs, patient characteristics, and timing of outcome assessment. The association was more pronounced in studies using a PTX-3 cutoff ≥ 3.3 ng/mL compared to those with a cutoff < 3.3 ng/mL. Conclusion: Elevated serum PTX-3 levels at admission may serve as a prognostic biomarker for poor functional outcomes in AIS. Differences in PTX-3 cutoff values and potential residual confounding should also be considered. Further multicenter studies involving diverse populations are necessary to confirm these results and establish PTX-3 as a reliable prognostic indicator in clinical practice.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Acute ischemic stroke (AIS) remains a leading cause of disability worldwide, placing a significant burden on patients&rsquo; quality of life and healthcare systems. Pentraxin-3 (PTX-3), an inflammatory biomarker, may be associated with AIS prognosis; however, existing evidence is inconclusive.</p>\r\n<p><strong>Aims:</strong> To examine whether serum PTX-3 levels at admission are linked to the likelihood of poor functional outcomes in AIS patients.</p>\r\n<p><strong>Study Design:</strong> Systematic review and meta-analysis.</p>\r\n<p><strong>Methods:</strong> A comprehensive search of PubMed, Embase, Web of Science, China National Knowledge Infrastructure (CNKI), and Wanfang databases was conducted to identify studies evaluating PTX-3 levels in AIS patients. Eligible studies included those that measured PTX-3 within 48 h of admission and evaluated outcomes using the modified Rankin Scale, with scores &gt; 2 defined as poor outcomes. A random-effects model was used to calculate pooled odds ratios (ORs) and corresponding 95% confidence intervals (CIs).</p>\r\n<p><strong>Results:</strong> Ten cohort studies involving1202 AIS patients were included. Higher PTX-3 levels at admission were significantly associated with an increased risk of poor functional outcomes (OR, 2.06; 95% CI, 1.72-2.47; <em>p</em> &lt; 0.001), with no significant heterogeneity (I&sup2; = 0%). Meta-regression showed that using higher PTX-3 cutoff values reported stronger associations (<em>p</em> &lt; 0.05). Subgroup analyses confirmed consistent associations across study designs, patient characteristics, and timing of outcome assessment. The association was more pronounced in studies using a PTX-3 cutoff &ge; 3.3 ng/mL compared to those with a cutoff &lt; 3.3 ng/mL.</p>\r\n<p><strong>Conclusion:</strong> Elevated serum PTX-3 levels at admission may serve as a prognostic biomarker for poor functional outcomes in AIS. Differences in PTX-3 cutoff values and potential residual confounding should also be considered. Further multicenter studies involving diverse populations are necessary to confirm these results and establish PTX-3 as a reliable prognostic indicator in clinical practice.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Acute ischemic stroke (AIS) remains a leading cause of disability worldwide, placing a significant burden on patients’ quality of life and healthcare systems. Pentraxin-3 (PTX-3), an inflammatory biomarker, may be associated with AIS prognosis; however, existing evidence is inconclusive. Aims: To examine whether serum PTX-3 levels at admission are linked to the likelihood of poor functional outcomes in AIS patients. Study Design: Systematic review and meta-analysis. Methods: A comprehensive search of PubMed, Embase, Web of Science, China National Knowledge Infrastructure (CNKI), and Wanfang databases was conducted to identify studies evaluating PTX-3 levels in AIS patients. Eligible studies included those that measured PTX-3 within 48 h of admission and evaluated outcomes using the modified Rankin Scale, with scores > 2 defined as poor outcomes. A random-effects model was used to calculate pooled odds ratios (ORs) and corresponding 95% confidence intervals (CIs). Results: Ten cohort studies involving1202 AIS patients were included. Higher PTX-3 levels at admission were significantly associated with an increased risk of poor functional outcomes (OR, 2.06; 95% CI, 1.72-2.47; p < 0.001), with no significant heterogeneity (I² = 0%). Meta-regression showed that using higher PTX-3 cutoff values reported stronger associations (p < 0.05). Subgroup analyses confirmed consistent associations across study designs, patient characteristics, and timing of outcome assessment. The association was more pronounced in studies using a PTX-3 cutoff ≥ 3.3 ng/mL compared to those with a cutoff < 3.3 ng/mL. Conclusion: Elevated serum PTX-3 levels at admission may serve as a prognostic biomarker for poor functional outcomes in AIS. Differences in PTX-3 cutoff values and potential residual confounding should also be considered. Further multicenter studies involving diverse populations are necessary to confirm these results and establish PTX-3 as a reliable prognostic indicator in clinical practice.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-1-36",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "201-211",
+    "views": 3611,
+    "downloads": 2006,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2711",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2711",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2711",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2711",
+    "localPdfUrl": "js/data/pdfs/2711.pdf",
+    "pdfUrl": "js/data/pdfs/2711.pdf"
+  },
+  {
+    "id": 2712,
+    "type": "Original Article",
+    "title": "Etiology of Hematospermia in Turkish Men: Multicentric Study",
+    "authors": [
+      {
+        "name": "Serkan Gönültaş",
+        "affiliation": "Clinic of Urology, University of Health Sciences Türkiye, Gaziosmanpaşa Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Numan Baydilli",
+        "affiliation": "Department of Pediatric Urology, Erciyes University Faculty of Medicine, Kayseri, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Solakhan",
+        "affiliation": "Department of Urology, Bahçeşehir University Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Güzel",
+        "affiliation": "Clinic of Urology, Aydın State Hospital, Aydın, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Sina Kardaş",
+        "affiliation": "Clinic of Urology, University of Health Sciences Türkiye, Gaziosmanpaşa Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Aykut Demirci",
+        "affiliation": "Clinic of Urology, Aksaray University Training and Research Hospital, Aksaray, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Suhejb Sulejman",
+        "affiliation": "Clinic of Urology, Avrupa Şafak Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Serhat Yentür",
+        "affiliation": "Clinic of Urology, University of Health Sciences Türkiye, Bağcılar Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Kemal Ertaş",
+        "affiliation": "Clinic of Urology, Dicle Memorial Hospital, Diyarbakır, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Gökhan Köse",
+        "affiliation": "Clinic of Urology, University of Health Sciences Türkiye, Gaziosmanpaşa Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Berk Bulut",
+        "affiliation": "Clinic of Urology, University of Health Sciences Türkiye, Gaziosmanpaşa Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mücahit Gelmiş",
+        "affiliation": "Clinic of Urology, University of Health Sciences Türkiye, Gaziosmanpaşa Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Bozlu",
+        "affiliation": "Department of Urology, Mersin University Faculty of Medicine, Mersin, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ateş Kadıoğlu",
+        "affiliation": "Department of Urology, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Hematospermia is defined as the presence of blood in the semen. The data regarding its etiology and management is variable across the literature. Aims: To investigate the etiology of hematospermia in Türkiye so as to contribute to the current management strategies for hematospermia. Methods: An online study protocol was published through the Turkish Urology Association communication network, and the centers that met the criteria were included in the study. All patients who presented with hematospermia complaints in the past 1 year were subjected to detailed anamnesis, physical examination, and routine laboratory tests. Based on the results, the patients were assigned to Group 1 (patients aged < 40 years with only one episode of hematospermia in the past 6 months) or Group 2 (patients with concomitant symptoms or ≥ 40 years or ≥ 2 times in the past 6 months). Radiological imaging was performed for the patients in Group 2. Results: A total of 199 patients (Group 1: 44, Group 2: 155; mean age: 43.07 ± 14.73 years; age range: 16-73 years) from across 42 cities and 22 different centers were enrolled in this study. In the etiological classification, inflammation was identified as the most common cause (n = 76, 38.1%). Idiopathic hematospermia was higher in Group 1 than in Group 2 (70.4% vs. 112.2%, respectively), and hematospermia was associated with malignancy in 9 (5.8%) Group 2 patients. Positivity was detected in urine or semen cultures in 20 (12.9%) patients, and hematospermia occurred after COVID-19 infection in 2 patients. A significant correlation was noted between patients showing no-concomitant symptoms and those showing idiopathic hematospermia, inflammation, malignancy, varicocele, and multiple etiological factors (p = 0.004, p = 0.028, p = 0.002, p = 0.001, p = 0.026, p = 0.016). The most common radiological findings were an increase in the prostate volume (n = 48, 30.9%) and changes in the signal intensities of the seminal vesicles (n = 29, 18.7%). Despite the use of different approaches to manage idiopathic hematospermia, the patients’ survey results were generally similar. Conclusion: Hematospermia in all age groups occurs generally due to self-limiting benign causes. Diagnostic imaging should therefore evaluate the elucidate etiology in patients with identified risk factors so as to avoid unnecessary treatments in idiopathic patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Hematospermia is defined as the presence of blood in the semen. The data regarding its etiology and management is variable across the literature.</p>\r\n<p><strong>Aims:</strong> To investigate the etiology of hematospermia in T&uuml;rkiye so as to contribute to the current management strategies for hematospermia.</p>\r\n<p><strong>Methods:</strong> An online study protocol was published through the Turkish Urology Association communication network, and the centers that met the criteria were included in the study. All patients who presented with hematospermia complaints in the past 1 year were subjected to detailed anamnesis, physical examination, and routine laboratory tests. Based on the results, the patients were assigned to Group 1 (patients aged &lt; 40 years with only one episode of hematospermia in the past 6 months) or Group 2 (patients with concomitant symptoms or &ge; 40 years or &ge; 2 times in the past 6 months). Radiological imaging was performed for the patients in Group 2.</p>\r\n<p><strong>Results:</strong> A total of 199 patients (Group 1: 44, Group 2: 155; mean age: 43.07 &plusmn; 14.73 years; age range: 16-73 years) from across 42 cities and 22 different centers were enrolled in this study. In the etiological classification, inflammation was identified as the most common cause (n = 76, 38.1%). Idiopathic hematospermia was higher in Group 1 than in Group 2 (70.4% vs. 112.2%, respectively), and hematospermia was associated with malignancy in 9 (5.8%) Group 2 patients. Positivity was detected in urine or semen cultures in 20 (12.9%) patients, and hematospermia occurred after COVID-19 infection in 2 patients. A significant correlation was noted between patients showing no-concomitant symptoms and those showing idiopathic hematospermia, inflammation, malignancy, varicocele, and multiple etiological factors (<em>p</em> = 0.004, <em>p</em> = 0.028, <em>p</em> = 0.002, <em>p</em> = 0.001, <em>p</em> = 0.026, <em>p</em> = 0.016). The most common radiological findings were an increase in the prostate volume (n = 48, 30.9%) and changes in the signal intensities of the seminal vesicles (n = 29, 18.7%). Despite the use of different approaches to manage idiopathic hematospermia, the patients&rsquo; survey results were generally similar.</p>\r\n<p><strong>Conclusion:</strong> Hematospermia in all age groups occurs generally due to self-limiting benign causes. Diagnostic imaging should therefore evaluate the elucidate etiology in patients with identified risk factors so as to avoid unnecessary treatments in idiopathic patients.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Hematospermia is defined as the presence of blood in the semen. The data regarding its etiology and management is variable across the literature. Aims: To investigate the etiology of hematospermia in Türkiye so as to contribute to the current management strategies for hematospermia. Methods: An online study protocol was published through the Turkish Urology Association communication network, and the centers that met the criteria were included in the study. All patients who presented with hematospermia complaints in the past 1 year were subjected to detailed anamnesis, physical examination, and routine laboratory tests. Based on the results, the patients were assigned to Group 1 (patients aged < 40 years with only one episode of hematospermia in the past 6 months) or Group 2 (patients with concomitant symptoms or ≥ 40 years or ≥ 2 times in the past 6 months). Radiological imaging was performed for the patients in Group 2. Results: A total of 199 patients (Group 1: 44, Group 2: 155; mean age: 43.07 ± 14.73 years; age range: 16-73 years) from across 42 cities and 22 different centers were enrolled in this study. In the etiological classification, inflammation was identified as the most common cause (n = 76, 38.1%). Idiopathic hematospermia was higher in Group 1 than in Group 2 (70.4% vs. 112.2%, respectively), and hematospermia was associated with malignancy in 9 (5.8%) Group 2 patients. Positivity was detected in urine or semen cultures in 20 (12.9%) patients, and hematospermia occurred after COVID-19 infection in 2 patients. A significant correlation was noted between patients showing no-concomitant symptoms and those showing idiopathic hematospermia, inflammation, malignancy, varicocele, and multiple etiological factors (p = 0.004, p = 0.028, p = 0.002, p = 0.001, p = 0.026, p = 0.016). The most common radiological findings were an increase in the prostate volume (n = 48, 30.9%) and changes in the signal intensities of the seminal vesicles (n = 29, 18.7%). Despite the use of different approaches to manage idiopathic hematospermia, the patients’ survey results were generally similar. Conclusion: Hematospermia in all age groups occurs generally due to self-limiting benign causes. Diagnostic imaging should therefore evaluate the elucidate etiology in patients with identified risk factors so as to avoid unnecessary treatments in idiopathic patients.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2024-12-37",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "212-221",
+    "views": 4302,
+    "downloads": 2007,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2712",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2712",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2712",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2712",
+    "localPdfUrl": "js/data/pdfs/2712.pdf",
+    "pdfUrl": "js/data/pdfs/2712.pdf"
+  },
+  {
+    "id": 2713,
+    "type": "Original Article",
+    "title": "Prognostic Significance of Red Blood Cell Distribution Width-to-Albumin Ratio in Predicting 1-Year Mortality for Critically Ill Chronic Obstructive Pulmonary Disease Patients",
+    "authors": [
+      {
+        "name": "Wei Zhao",
+        "affiliation": "Clinic of Pulmonary and Critical Care Medicine, Qilu Hospital of Shandong University, Jinan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yongli Liu",
+        "affiliation": "Clinic of Pulmonary and Critical Care Medicine, Qilu Hospital of Shandong University, Jinan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Chenyang Hu",
+        "affiliation": "Clinic of Pulmonary and Critical Care Medicine, Qilu Hospital of Shandong University, Jinan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yuxin Zhang",
+        "affiliation": "Clinic of Pulmonary and Critical Care Medicine, Qilu Hospital of Shandong University, Jinan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yajie Hu",
+        "affiliation": "Clinic of Pulmonary and Critical Care Medicine, Qilu Hospital of Shandong University, Jinan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yiqing Qu",
+        "affiliation": "Clinic of Pulmonary and Critical Care Medicine, Qilu Hospital of Shandong University, Jinan, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Chronic obstructive pulmonary disease (COPD) is a major global healthcare challenge. To address the gap in existing prognostic research, this study examined the possibility of the red blood cell distribution width-albumin ratio (RAR) as a viable biomarker for predicting COPD outcomes. Aims: To evaluate the relationship between RAR and the one-year mortality risk in COPD patients. Study Design: A retrospective cohort study. Methods: Participants were grouped based on their RAR levels. Multiple interpolations were used to address missing data. The effect of biomarkers on mortality was estimated using Kaplan-Meier survival curves and Cox risk regression models. Stratified analyses were conducted to assess the consistency of the RAR’s predictive value for mortality across different subgroups. RAR was used to build a predictive model and the C-index and time-dependent receiver operating characteristic curves were used to evaluate the model’s performance. Results: This study examined 2,379 patients, dividing them into three groups based on their RAR levels. According to Cox regression, RAR was correlated with the 1-year all-cause mortality of patients [model 3: HR = 1.24 (95% confidence interval 1.19-1.29) p < 0.001], with consistent positive correlations between subgroups. This relationship was shown to be linear via the restricted cubic spline. RAR had been demonstrated to be a potentially more effective biomarker than albumin and red blood cell distribution width for determining the one-year mortality risk in COPD patients. Conclusion: A significant association was found between RAR and the one-year mortality of COPD patients. This result implies that RAR may be an effective instrument for determining the prognosis in COPD patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Chronic obstructive pulmonary disease (COPD) is a major global healthcare challenge. To address the gap in existing prognostic research, this study examined the possibility of the red blood cell distribution width-albumin ratio (RAR) as a viable biomarker for predicting COPD outcomes.</p>\r\n<p><strong>Aims:</strong> To evaluate the relationship between RAR and the one-year mortality risk in COPD patients.</p>\r\n<p><strong>Study Design:</strong> A retrospective cohort study.</p>\r\n<p><strong>Methods:</strong> Participants were grouped based on their RAR levels. Multiple interpolations were used to address missing data. The effect of biomarkers on mortality was estimated using Kaplan-Meier survival curves and Cox risk regression models. Stratified analyses were conducted to assess the consistency of the RAR&rsquo;s predictive value for mortality across different subgroups. RAR was used to build a predictive model and the C-index and time-dependent receiver operating characteristic curves were used to evaluate the model&rsquo;s performance.</p>\r\n<p><strong>Results:</strong> This study examined 2,379 patients, dividing them into three groups based on their RAR levels. According to Cox regression, RAR was correlated with the 1-year all-cause mortality of patients [model 3: HR = 1.24 (95% confidence interval 1.19-1.29) <em>p</em> &lt; 0.001], with consistent positive correlations between subgroups. This relationship was shown to be linear via the restricted cubic spline. RAR had been demonstrated to be a potentially more effective biomarker than albumin and red blood cell distribution width for determining the one-year mortality risk in COPD patients.</p>\r\n<p><strong>Conclusion:</strong> A significant association was found between RAR and the one-year mortality of COPD patients. This result implies that RAR may be an effective instrument for determining the prognosis in COPD patients.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Chronic obstructive pulmonary disease (COPD) is a major global healthcare challenge. To address the gap in existing prognostic research, this study examined the possibility of the red blood cell distribution width-albumin ratio (RAR) as a viable biomarker for predicting COPD outcomes. Aims: To evaluate the relationship between RAR and the one-year mortality risk in COPD patients. Study Design: A retrospective cohort study. Methods: Participants were grouped based on their RAR levels. Multiple interpolations were used to address missing data. The effect of biomarkers on mortality was estimated using Kaplan-Meier survival curves and Cox risk regression models. Stratified analyses were conducted to assess the consistency of the RAR’s predictive value for mortality across different subgroups. RAR was used to build a predictive model and the C-index and time-dependent receiver operating characteristic curves were used to evaluate the model’s performance. Results: This study examined 2,379 patients, dividing them into three groups based on their RAR levels. According to Cox regression, RAR was correlated with the 1-year all-cause mortality of patients [model 3: HR = 1.24 (95% confidence interval 1.19-1.29) p < 0.001], with consistent positive correlations between subgroups. This relationship was shown to be linear via the restricted cubic spline. RAR had been demonstrated to be a potentially more effective biomarker than albumin and red blood cell distribution width for determining the one-year mortality risk in COPD patients. Conclusion: A significant association was found between RAR and the one-year mortality of COPD patients. This result implies that RAR may be an effective instrument for determining the prognosis in COPD patients.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-1-141",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "222-232",
+    "views": 3440,
+    "downloads": 2086,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2713",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2713",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2713",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2713",
+    "localPdfUrl": "js/data/pdfs/2713.pdf",
+    "pdfUrl": "js/data/pdfs/2713.pdf"
+  },
+  {
+    "id": 2714,
+    "type": "Original Article",
+    "title": "Regulating Effect of Weekend Catch-up Sleep on Association of Hepatic Steatosis with Atherosclerotic Cardiovascular Disease",
+    "authors": [
+      {
+        "name": "Yichuan Liu",
+        "affiliation": "Digestive Endoscopy Center, Dongguan Kanghua Hospital, Dongguan, Guangdong, China",
+        "orcid": ""
+      },
+      {
+        "name": "Zongquan Wen",
+        "affiliation": "Digestive Endoscopy Center, Dongguan Kanghua Hospital, Dongguan, Guangdong, China",
+        "orcid": ""
+      },
+      {
+        "name": "Nanrui Zeng",
+        "affiliation": "Digestive Endoscopy Center, Dongguan Kanghua Hospital, Dongguan, Guangdong, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Both insufficient and excessive catch-up sleep durations have been implicated in influencing the risk of cardiovascular diseases (CVDs) and metabolic disorders. However, the specific impact of weekend catch-up sleep (WCS) on the relationship between hepatic steatosis (HS) and atherosclerotic cardiovascular disease (ASCVD) remains unclear. Aims: This cross-sectional study aims to examine the potential regulatory effect of WCS on the association between controlled attenuation parameter (CAP) and ASCVD. Methods: Weighted logistic regression analyses were employed to evaluate the associations of CAP and WCS with ASCVD, expressed in terms of odds ratios (ORs) and 95% confidence intervals (CIs). The study also explored the effect of WCS on the CAP-ASCVD relationship and assessed the potential regulatory role of WCS in subgroups based on age, gender, body mass index, and obesity status. Results: Eligible participants were categorized into two groups: those with an ASCVD risk < 7.5% (n = 1536) and those with an ASCVD risk ≥ 7.5% (n = 1612). After adjusting for covariates, CAP ≥ 274 dB/m was associated with a higher likelihood of ASCVD compared to the CAP < 274 dB/m (OR, 1.84, 95% CI, 1.24-2.73). When compared to a WCS duration of 0-1 hour, WCS ≥ 1 hour was found to increase the potential ASCVD risk associated with CAP (OR, 3.29, 95% CI, 1.41-7.68). Furthermore, among individuals with WCS ≥ 1 hour, CAP ≥ 274 dB/m was linked to a higher ASCVD risk than among those with CAP < 274 dB/m (OR, 3.72, 95% CI, 1.99-6.93). Additionally, in subgroups of participants aged ≥ 60 years, females, non-obese and obese individuals, WCS ≥ 1 hour was associated with an increased ASCVD risk related to CAP (all, p < 0.05). Conclusion: A WCS duration of ≥ 1 hour may be associated with an increased ASCVD risk in adults with HS aged ≥ 40 years. However, further research is necessary to clarify the causal relationships between WCS, HS, and ASCVD.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Both insufficient and excessive catch-up sleep durations have been implicated in influencing the risk of cardiovascular diseases (CVDs) and metabolic disorders. However, the specific impact of weekend catch-up sleep (WCS) on the relationship between hepatic steatosis (HS) and atherosclerotic cardiovascular disease (ASCVD) remains unclear.</p>\r\n<p><strong>Aims:</strong> This cross-sectional study aims to examine the potential regulatory effect of WCS on the association between controlled attenuation parameter (CAP) and ASCVD.</p>\r\n<p><strong>Methods:</strong> Weighted logistic regression analyses were employed to evaluate the associations of CAP and WCS with ASCVD, expressed in terms of odds ratios (ORs) and 95% confidence intervals (CIs). The study also explored the effect of WCS on the CAP-ASCVD relationship and assessed the potential regulatory role of WCS in subgroups based on age, gender, body mass index, and obesity status.</p>\r\n<p><strong>Results:</strong> Eligible participants were categorized into two groups: those with an ASCVD risk &lt; 7.5% (n = 1536) and those with an ASCVD risk &ge; 7.5% (n = 1612). After adjusting for covariates, CAP &ge; 274 dB/m was associated with a higher likelihood of ASCVD compared to the CAP &lt; 274 dB/m (OR, 1.84, 95% CI, 1.24-2.73). When compared to a WCS duration of 0-1 hour, WCS &ge; 1 hour was found to increase the potential ASCVD risk associated with CAP (OR, 3.29, 95% CI, 1.41-7.68). Furthermore, among individuals with WCS &ge; 1 hour, CAP &ge; 274 dB/m was linked to a higher ASCVD risk than among those with CAP &lt; 274 dB/m (OR, 3.72, 95% CI, 1.99-6.93). Additionally, in subgroups of participants aged &ge; 60 years, females, non-obese and obese individuals, WCS &ge; 1 hour was associated with an increased ASCVD risk related to CAP (all, <em>p</em> &lt; 0.05).</p>\r\n<p><strong>Conclusion:</strong> A WCS duration of &ge; 1 hour may be associated with an increased ASCVD risk in adults with HS aged &ge; 40 years. However, further research is necessary to clarify the causal relationships between WCS, HS, and ASCVD.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Both insufficient and excessive catch-up sleep durations have been implicated in influencing the risk of cardiovascular diseases (CVDs) and metabolic disorders. However, the specific impact of weekend catch-up sleep (WCS) on the relationship between hepatic steatosis (HS) and atherosclerotic cardiovascular disease (ASCVD) remains unclear. Aims: This cross-sectional study aims to examine the potential regulatory effect of WCS on the association between controlled attenuation parameter (CAP) and ASCVD. Methods: Weighted logistic regression analyses were employed to evaluate the associations of CAP and WCS with ASCVD, expressed in terms of odds ratios (ORs) and 95% confidence intervals (CIs). The study also explored the effect of WCS on the CAP-ASCVD relationship and assessed the potential regulatory role of WCS in subgroups based on age, gender, body mass index, and obesity status. Results: Eligible participants were categorized into two groups: those with an ASCVD risk < 7.5% (n = 1536) and those with an ASCVD risk ≥ 7.5% (n = 1612). After adjusting for covariates, CAP ≥ 274 dB/m was associated with a higher likelihood of ASCVD compared to the CAP < 274 dB/m (OR, 1.84, 95% CI, 1.24-2.73). When compared to a WCS duration of 0-1 hour, WCS ≥ 1 hour was found to increase the potential ASCVD risk associated with CAP (OR, 3.29, 95% CI, 1.41-7.68). Furthermore, among individuals with WCS ≥ 1 hour, CAP ≥ 274 dB/m was linked to a higher ASCVD risk than among those with CAP < 274 dB/m (OR, 3.72, 95% CI, 1.99-6.93). Additionally, in subgroups of participants aged ≥ 60 years, females, non-obese and obese individuals, WCS ≥ 1 hour was associated with an increased ASCVD risk related to CAP (all, p < 0.05). Conclusion: A WCS duration of ≥ 1 hour may be associated with an increased ASCVD risk in adults with HS aged ≥ 40 years. However, further research is necessary to clarify the causal relationships between WCS, HS, and ASCVD.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-1-87",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "233-241",
+    "views": 3943,
+    "downloads": 1923,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2714",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2714",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2714",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2714",
+    "localPdfUrl": "js/data/pdfs/2714.pdf",
+    "pdfUrl": "js/data/pdfs/2714.pdf"
+  },
+  {
+    "id": 2715,
+    "type": "Original Article",
+    "title": "Potential Roles of Serum Exosomal CD155 and its Impact on NK Cell Immunosuppression in Hepatocellular Carcinoma",
+    "authors": [
+      {
+        "name": "Wenzheng Han",
+        "affiliation": "The First Affiliated Hospital, Wannan Medical College, Anhui, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jinrong Lv",
+        "affiliation": "Institute of Biology and Medical Sciences, Soochow University, Jiangsu, China",
+        "orcid": ""
+      },
+      {
+        "name": "Mintuo Wang",
+        "affiliation": "The First Affiliated Hospital, Wannan Medical College, Anhui, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiaoxin Wu",
+        "affiliation": "State Key Laboratory for Diagnosis and Treatment of Infectious Diseases, National Clinical Research Centre for Infectious Diseases, The First Affiliated Hospital, Zhejiang University School of Medicine, Zhejiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Dongdong Sun",
+        "affiliation": "The First Affiliated Hospital, Wannan Medical College, Anhui, China",
+        "orcid": ""
+      },
+      {
+        "name": "Wenwen Chen",
+        "affiliation": "Institute of Biology and Medical Sciences, Soochow University, Jiangsu, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yingying Wang",
+        "affiliation": "The First Affiliated Hospital, Wannan Medical College, Anhui, China",
+        "orcid": ""
+      },
+      {
+        "name": "Wenjie Zhou",
+        "affiliation": "The First Affiliated Hospital, Wannan Medical College, Anhui, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yuxuan Yang",
+        "affiliation": "The First Affiliated Hospital, Wannan Medical College, Anhui, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jia Bao",
+        "affiliation": "The First Affiliated Hospital, Wannan Medical College, Anhui, China",
+        "orcid": ""
+      },
+      {
+        "name": "Qingzhen Han",
+        "affiliation": "Center of Clinical Laboratory and Translational Medicine, The Fourth Affiliated Hospital of Soochow University, Suzhou Dushu Lake Hospital, Suzhou, Jiangsu, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiaopeng Chen",
+        "affiliation": "The First Affiliated Hospital, Wannan Medical College, Anhui, China",
+        "orcid": ""
+      },
+      {
+        "name": "Fei Guo",
+        "affiliation": "Department of Urology, Changhai Hospital, Naval Medical University, Shanghai, China",
+        "orcid": ""
+      },
+      {
+        "name": "Gang Feng",
+        "affiliation": "The First Affiliated Hospital, Wannan Medical College, Anhui, China",
+        "orcid": ""
+      },
+      {
+        "name": "Min Li",
+        "affiliation": "Institute of Biology and Medical Sciences, Soochow University, Jiangsu, China",
+        "orcid": ""
+      },
+      {
+        "name": "Qing Chen",
+        "affiliation": "The First Affiliated Hospital, Wannan Medical College, Anhui, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Targeted therapies directed at tumor immune checkpoint, like programmed death-ligand (PD-L)1/programmed death (PD)-1, have shown remarkable progress. Nevertheless, treatment efficacy in hepatocellular carcinoma (HCC) is notably compromised due to the intricate immune microenvironment. Exploring alternative checkpoints beyond PD-L1/PD-1, including those not located on the cell surface, may improve our understanding of their roles in areas like diagnostic potential and immune tolerance in HCC. Aims: To explore the roles of serum exosomal CD155 (exo-CD155) in HCC. Study Design: Experimental study. Methods: We separated and analyzed serum exosomes from HCC patients. We quantified the concentrations of serum soluble CD155 (sCD155) and serum exo-CD155, and examined their association with disease progression, hepatitis B surface antigen (HBsAg) presence, and the concentrations of α-fetoprotein fraction L3 (AFP-L3) or alpha-fetoprotein (AFP). Additionally, we assessed the diagnostic effect through the receiver operating characteristic (ROC) curve, and the immune suppressive effect on natural killer (NK) cells of exo-CD155. Results: This study reveal elevated exo-CD155 levels in all HCC patients, with a significant increase in early-stage patients, exhibiting normal AFP/AFP-L3 or HBsAg-positive status. Exo-CD155 is linked to the progression of HCC and shows significant diagnostic effectiveness for the disease. Furthermore, the incubation of NK-92MI with exosomes derived from HCC patients leads to a substantial reduction in immune function, which can be partially counteracted with an antibody that blocks T cell immune receptor immunoglobulin and ITIM domains, (TIGIT)-blocking antibody. Conclusion: These results disclose exo-CD155 shows promise for serving as a biomarker for HCC, especially in early-stage patients or those with normal AFP/AFP-L3 levels. Moreover, serum exosomes from HCC patients suppress NK cell immune functions through the TIGIT/CD155 pathway, contributing to immune tolerance in HCC.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Targeted therapies directed at tumor immune checkpoint, like programmed death-ligand (PD-L)1/programmed death (PD)-1, have shown remarkable progress. Nevertheless, treatment efficacy in hepatocellular carcinoma (HCC) is notably compromised due to the intricate immune microenvironment. Exploring alternative checkpoints beyond PD-L1/PD-1, including those not located on the cell surface, may improve our understanding of their roles in areas like diagnostic potential and immune tolerance in HCC.</p>\r\n<p><strong>Aims:</strong> To explore the roles of serum exosomal CD155 (exo-CD155) in HCC.</p>\r\n<p><strong>Study Design:</strong> Experimental study.</p>\r\n<p><strong>Methods:</strong> We separated and analyzed serum exosomes from HCC patients. We quantified the concentrations of serum soluble CD155 (sCD155) and serum exo-CD155, and examined their association with disease progression, hepatitis B surface antigen (HBsAg) presence, and the concentrations of &alpha;-fetoprotein fraction L3 (AFP-L3) or alpha-fetoprotein (AFP). Additionally, we assessed the diagnostic effect through the receiver operating characteristic (ROC) curve, and the immune suppressive effect on natural killer (NK) cells of exo-CD155.</p>\r\n<p><strong>Results:</strong> This study reveal elevated exo-CD155 levels in all HCC patients, with a significant increase in early-stage patients, exhibiting normal AFP/AFP-L3 or HBsAg-positive status. Exo-CD155 is linked to the progression of HCC and shows significant diagnostic effectiveness for the disease. Furthermore, the incubation of NK-92MI with exosomes derived from HCC patients leads to a substantial reduction in immune function, which can be partially counteracted with an antibody that blocks T cell immune receptor immunoglobulin and ITIM domains, (TIGIT)-blocking antibody.</p>\r\n<p><strong>Conclusion:</strong> These results disclose exo-CD155 shows promise for serving as a biomarker for HCC, especially in early-stage patients or those with normal AFP/AFP-L3 levels. Moreover, serum exosomes from HCC patients suppress NK cell immune functions through the TIGIT/CD155 pathway, contributing to immune tolerance in HCC.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Targeted therapies directed at tumor immune checkpoint, like programmed death-ligand (PD-L)1/programmed death (PD)-1, have shown remarkable progress. Nevertheless, treatment efficacy in hepatocellular carcinoma (HCC) is notably compromised due to the intricate immune microenvironment. Exploring alternative checkpoints beyond PD-L1/PD-1, including those not located on the cell surface, may improve our understanding of their roles in areas like diagnostic potential and immune tolerance in HCC. Aims: To explore the roles of serum exosomal CD155 (exo-CD155) in HCC. Study Design: Experimental study. Methods: We separated and analyzed serum exosomes from HCC patients. We quantified the concentrations of serum soluble CD155 (sCD155) and serum exo-CD155, and examined their association with disease progression, hepatitis B surface antigen (HBsAg) presence, and the concentrations of α-fetoprotein fraction L3 (AFP-L3) or alpha-fetoprotein (AFP). Additionally, we assessed the diagnostic effect through the receiver operating characteristic (ROC) curve, and the immune suppressive effect on natural killer (NK) cells of exo-CD155. Results: This study reveal elevated exo-CD155 levels in all HCC patients, with a significant increase in early-stage patients, exhibiting normal AFP/AFP-L3 or HBsAg-positive status. Exo-CD155 is linked to the progression of HCC and shows significant diagnostic effectiveness for the disease. Furthermore, the incubation of NK-92MI with exosomes derived from HCC patients leads to a substantial reduction in immune function, which can be partially counteracted with an antibody that blocks T cell immune receptor immunoglobulin and ITIM domains, (TIGIT)-blocking antibody. Conclusion: These results disclose exo-CD155 shows promise for serving as a biomarker for HCC, especially in early-stage patients or those with normal AFP/AFP-L3 levels. Moreover, serum exosomes from HCC patients suppress NK cell immune functions through the TIGIT/CD155 pathway, contributing to immune tolerance in HCC.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-1-129",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "242-253",
+    "views": 3767,
+    "downloads": 2417,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2715",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2715",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2715",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2715",
+    "localPdfUrl": "js/data/pdfs/2715.pdf",
+    "pdfUrl": "js/data/pdfs/2715.pdf"
+  },
+  {
+    "id": 2716,
+    "type": "Original Article",
+    "title": "Epidemiology of Parvovirus B19 in Türkiye: A Descriptive Analysis of National Surveillance Data (2020-2024)",
+    "authors": [
+      {
+        "name": "Kamer Kalip",
+        "affiliation": "General Directorate of Public Health, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Melik Toptaş",
+        "affiliation": "General Directorate of Public Health, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Gönül Çulha",
+        "affiliation": "General Directorate of Public Health, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Balcı",
+        "affiliation": "General Directorate of Public Health, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Erdoğan Öz",
+        "affiliation": "General Directorate of Public Health, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Muhammed Emin Demirkol",
+        "affiliation": "General Directorate of Public Health, Ankara, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Parvovirus B19 (B19V) infection occurs worldwide seasonally, especially in school-age children. Due to limited surveillance, clinicians report an increase of cases to identify outbreaks, while labs determine seropositivity rates. In 2024, B19V outbreak occurred in Türkiye and many other countries. Aims: To estimate incidences of B19V infection in Türkiye from 2020 to 2024 using National Infectious Disease Surveillance and Early Warning System (IZCI) and to determine case fatality rate (CFR) during the 2024 outbreak period. Study Design: Retrospective descriptive study. Methods: The number of cases was obtained from the syndromic surveillance of rash diseases in national database. All notifications with International Classification of Diseases, 10th Revision diagnosis code “erythema infectiosum” within the syndromic surveillance were included in the study. All age groups were included in the study and no specific group was excluded. Annual estimated incidences were calculated for past 5 years. The distribution of cumulative incidence for the outbreak by age group and geographical regions was analysed. CFR was calculated for the outbreak period by using the proportion of people who have been diagnosed with B19V. Disease indicators were calculated as crude rates. Results: The estimated incidence in 2024 was 15.24 per 100,000. The peak of the outbreak was in May. The regions with the highest cumulative incidences during the outbreak period were the Black Sea, Marmara, and Central Anatolia. The highest cumulative incidence was 102.64 per 100,000 in 5-9 age group. The CFR was calculated as 0.0184% in the outbreak with 2 deaths out of 10,898 cases. Conclusion: Türkiye has experienced the largest B19V outbreak between February and June 2024. This study showed the unusual scale of B19V post-pandemic, suggesting that such outbreaks can be expected after pandemics. The establishment of syndromic surveillance has proved critical for early outbreak detection and response.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Parvovirus B19 (B19V) infection occurs worldwide seasonally, especially in school-age children. Due to limited surveillance, clinicians report an increase of cases to identify outbreaks, while labs determine seropositivity rates. In 2024, B19V outbreak occurred in T&uuml;rkiye and many other countries.</p>\r\n<p><strong>Aims:</strong> To estimate incidences of B19V infection in T&uuml;rkiye from 2020 to 2024 using National Infectious Disease Surveillance and Early Warning System (IZCI) and to determine case fatality rate (CFR) during the 2024 outbreak period.</p>\r\n<p><strong>Study Design:</strong> Retrospective descriptive study.</p>\r\n<p><strong>Methods:</strong> The number of cases was obtained from the syndromic surveillance of rash diseases in national database. All notifications with International Classification of Diseases, 10<sup>th</sup> Revision diagnosis code &ldquo;erythema infectiosum&rdquo; within the syndromic surveillance were included in the study. All age groups were included in the study and no specific group was excluded. Annual estimated incidences were calculated for past 5 years. The distribution of cumulative incidence for the outbreak by age group and geographical regions was analysed. CFR was calculated for the outbreak period by using the proportion of people who have been diagnosed with B19V. Disease indicators were calculated as crude rates.</p>\r\n<p><strong>Results:</strong> The estimated incidence in 2024 was 15.24 per 100,000. The peak of the outbreak was in May. The regions with the highest cumulative incidences during the outbreak period were the Black Sea, Marmara, and Central Anatolia. The highest cumulative incidence was 102.64 per 100,000 in 5-9 age group. The CFR was calculated as 0.0184% in the outbreak with 2 deaths out of 10,898 cases.</p>\r\n<p><strong>Conclusion:</strong> T&uuml;rkiye has experienced the largest B19V outbreak between February and June 2024. This study showed the unusual scale of B19V post-pandemic, suggesting that such outbreaks can be expected after pandemics. The establishment of syndromic surveillance has proved critical for early outbreak detection and response.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Parvovirus B19 (B19V) infection occurs worldwide seasonally, especially in school-age children. Due to limited surveillance, clinicians report an increase of cases to identify outbreaks, while labs determine seropositivity rates. In 2024, B19V outbreak occurred in Türkiye and many other countries. Aims: To estimate incidences of B19V infection in Türkiye from 2020 to 2024 using National Infectious Disease Surveillance and Early Warning System (IZCI) and to determine case fatality rate (CFR) during the 2024 outbreak period. Study Design: Retrospective descriptive study. Methods: The number of cases was obtained from the syndromic surveillance of rash diseases in national database. All notifications with International Classification of Diseases, 10th Revision diagnosis code “erythema infectiosum” within the syndromic surveillance were included in the study. All age groups were included in the study and no specific group was excluded. Annual estimated incidences were calculated for past 5 years. The distribution of cumulative incidence for the outbreak by age group and geographical regions was analysed. CFR was calculated for the outbreak period by using the proportion of people who have been diagnosed with B19V. Disease indicators were calculated as crude rates. Results: The estimated incidence in 2024 was 15.24 per 100,000. The peak of the outbreak was in May. The regions with the highest cumulative incidences during the outbreak period were the Black Sea, Marmara, and Central Anatolia. The highest cumulative incidence was 102.64 per 100,000 in 5-9 age group. The CFR was calculated as 0.0184% in the outbreak with 2 deaths out of 10,898 cases. Conclusion: Türkiye has experienced the largest B19V outbreak between February and June 2024. This study showed the unusual scale of B19V post-pandemic, suggesting that such outbreaks can be expected after pandemics. The establishment of syndromic surveillance has proved critical for early outbreak detection and response.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-1-50",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "254-261",
+    "views": 4701,
+    "downloads": 1825,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2716",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2716",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2716",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2716",
+    "localPdfUrl": "js/data/pdfs/2716.pdf",
+    "pdfUrl": "js/data/pdfs/2716.pdf"
+  },
+  {
+    "id": 2685,
+    "type": "Clinical Image",
+    "title": "Trans-visceral Migration of Retained Gauze: A Rare Cause of Intestinal Obstruction",
+    "authors": [
+      {
+        "name": "Slobodan Todorovic",
+        "affiliation": "Department of General and Abdominal Surgery, University Hospital Medical Center Bezanijska Kosa, Belgrade, Serbia; Department of General Surgery, Medical Faculty, University of Belgrade, Belgrade, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Nikola Tesic",
+        "affiliation": "Department of General and Abdominal Surgery, University Hospital Medical Center Bezanijska Kosa, Belgrade, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Filip Lukic",
+        "affiliation": "Department of Radiology, University Hospital Medical Center Bezanijska Kosa, Belgrade, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Jasna Gacic",
+        "affiliation": "Department of General Surgery, Medical Faculty, University of Belgrade, Belgrade, Serbia; Department of Emergency Surgery, University Hospital Medical Center Bezanijska Kosa, Belgrade, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Borislav Toskovic",
+        "affiliation": "Department of General and Abdominal Surgery, University Hospital Medical Center Bezanijska Kosa, Belgrade, Serbia; Department of General Surgery, Medical Faculty, University of Belgrade, Belgrade, Serbia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 67-year-old man was admitted to our surgical department with a clinical image of intestinal subocclusion. He complained of abdominal pain in association with episodes of nausea and vomiting for the past 2 days. The patient underwent surgery for an abdominal aortic aneurysm 2 years ago. On clinical examination, abdominal distension and left-sided abdominal ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-12-20",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "262-263",
+    "views": 4195,
+    "downloads": 1856,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2685",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2685",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2685",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2685",
+    "localPdfUrl": "js/data/pdfs/2685.pdf",
+    "pdfUrl": "js/data/pdfs/2685.pdf"
+  },
+  {
+    "id": 2684,
+    "type": "Clinical Image",
+    "title": "Bronchocutaneous Fistula Secondary to Tuberculosis",
+    "authors": [
+      {
+        "name": "Jivtesh Singh",
+        "affiliation": "Department of Internal Medicine, All India Institute of Medical Sciences, Raipur, India",
+        "orcid": ""
+      },
+      {
+        "name": "Shruti Vadali",
+        "affiliation": "Department of Internal Medicine, Gomel State Medical University, Gomel, Belarus",
+        "orcid": ""
+      },
+      {
+        "name": "Prashant Badole",
+        "affiliation": "Department of Internal Medicine, All India Institute of Medical Sciences, Raipur, India",
+        "orcid": ""
+      },
+      {
+        "name": "Sanwal Singh Mehta",
+        "affiliation": "Department of Critical Care Medicine, Jackson Madison County General Hospital, Tennessee, United States of America",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 28-year-old female was referred to the outpatient department for complaints of cough, shortness of breath, and an expansile mass in the upper back and neck that had developed over the previous month. She did not report any comorbidities. The cough had first appeared 4 months ago, and it was associated with yellow sputum, particularly in the morning. Genera",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-10-56",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "264-265",
+    "views": 3619,
+    "downloads": 1912,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2684",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2684",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2684",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2684",
+    "localPdfUrl": "js/data/pdfs/2684.pdf",
+    "pdfUrl": "js/data/pdfs/2684.pdf"
+  },
+  {
+    "id": 2663,
+    "type": "Clinical Image",
+    "title": "A Novel Modified Mini-Crush Technique for Complex Coronary Bifurcation Lesions: Controlled Balloon-Crush",
+    "authors": [
+      {
+        "name": "Fatih Uzun",
+        "affiliation": "Department of Cardiology, Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Güner",
+        "affiliation": "Department of Cardiology, Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Yaşar Çizgici",
+        "affiliation": "Department of Cardiology, Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Koray Çiloğlu",
+        "affiliation": "Department of Cardiology, Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Faruk Aktürk[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 58-year-old male presented to our emergency department with signs and symptoms of non-ST-elevation myocardial infarction. The patient underwent invasive coronary angiography, which revealed non-left main bifurcation disease, involving the left anterior descending (LAD) and first diagonal (D1) arteries, as well as critical stenosis of the left circumflex ar",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-11-80",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "266-268",
+    "views": 3998,
+    "downloads": 2228,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2663",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2663",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2663",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2663",
+    "localPdfUrl": "js/data/pdfs/2663.pdf",
+    "pdfUrl": "js/data/pdfs/2663.pdf"
+  },
+  {
+    "id": 2659,
+    "type": "Scientific Letter",
+    "title": "Perineal Approach for Female Epispadias Repair and Providing Continence",
+    "authors": [
+      {
+        "name": "Dinçer Avlan",
+        "affiliation": "Department of Pediatric Surgery, Division of Pediatric Urology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Sadettin Yıldız",
+        "affiliation": "Department of Pediatric Surgery, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "İrem İnanç[[2]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Female epispadias is a rare congenital urogenital anomaly occurring in one out of every 484,000 female patients. It is anatomically characterized by a short and wide epispadic urethra, an open bladder neck, a bifid clitoris, and typically a small bladder capacity.1 The primary issue for patients is urinary incontinence, resulting from a widely open and incom",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-8-138",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "269-271",
+    "views": 3912,
+    "downloads": 2028,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2659",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2659",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2659",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2659",
+    "localPdfUrl": "js/data/pdfs/2659.pdf",
+    "pdfUrl": "js/data/pdfs/2659.pdf"
+  },
+  {
+    "id": 2677,
+    "type": "Scientific Letter",
+    "title": "Advantages of Introduction of Machine Learning into Patient-Controlled Anesthesia in Chronic Obstructive Pulmonary Disease and Congestive Heart Failure",
+    "authors": [
+      {
+        "name": "Saim Mahmood Khan",
+        "affiliation": "Karachi Medical and Dental College, Karachi, Pakistan",
+        "orcid": ""
+      },
+      {
+        "name": "Syed Ali Hassan",
+        "affiliation": "Dow University of Health Sciences, Karachi, Pakistan",
+        "orcid": ""
+      },
+      {
+        "name": "Faiza Rubab",
+        "affiliation": "Dow University of Health Sciences, Karachi, Pakistan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Chronic obstructive pulmonary disease (COPD) and congestive heart failure (CHF) are significant global health challenges that often coexist in the terminal stages.1 In CHF, the heart fails to deliver sufficient oxygen to tissues for their functioning. In COPD, airway obstruction leads to breathing issues. Atrial fibrillation (AF) is the most prevalent cardia",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-10-64",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "272-273",
+    "views": 3312,
+    "downloads": 1714,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2677",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2677",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2677",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2677",
+    "localPdfUrl": "js/data/pdfs/2677.pdf",
+    "pdfUrl": "js/data/pdfs/2677.pdf"
+  },
+  {
+    "id": 2679,
+    "type": "Scientific Letter",
+    "title": "Is MINOCA Syndrome Causing Fatal Left Ventricular Aneurysms Less Innocent than It Appears?",
+    "authors": [
+      {
+        "name": "Cihan Öztürk",
+        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Gökay Taylan",
+        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Fethi Emre Ustabaşıoğlu",
+        "affiliation": "Department of Radiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Turan Ege",
+        "affiliation": "Department of Cardiovascular Surgery, Private Medikent Hospital, Kırklareli, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Myocardial infarction with non-obstructive coronary arteries (MINOCA) is clinically defined by the universal acute myocardial infarction (AMI) criteria, absence of obstructive coronary artery disease (≥50% stenosis), and no overt cause for the presentation at angiography.1 The underlying causes of MINOCA vary widely. However, excessive focus on determining e",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-7-116",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "274-275",
+    "views": 3414,
+    "downloads": 1968,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2679",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2679",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2679",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2679",
+    "localPdfUrl": "js/data/pdfs/2679.pdf",
+    "pdfUrl": "js/data/pdfs/2679.pdf"
+  },
+  {
+    "id": 2686,
+    "type": "Scientific Letter",
+    "title": "Harnessing the Power of Vitexin as a Vitamin D Receptor Agonist in Colorectal Cancer: A New Frontier",
+    "authors": [
+      {
+        "name": "Manahil Mubeen",
+        "affiliation": "Department of Cardiology, Dow Medical College, Dow University of Health Sciences, Karachi, Pakistan",
+        "orcid": ""
+      },
+      {
+        "name": "Hafsa Ali",
+        "affiliation": "Department of Medicine, Jinnah Sindh Medical University, Karachi, Pakistan",
+        "orcid": ""
+      },
+      {
+        "name": "Syeda Sabika Zehra",
+        "affiliation": "Department of Cardiology, Dow Medical College, Dow University of Health Sciences, Karachi, Pakistan",
+        "orcid": ""
+      },
+      {
+        "name": "Aman Khan",
+        "affiliation": "Department of Cardiology, Dow Medical College, Dow University of Health Sciences, Karachi, Pakistan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Colorectal cancer (CRC) presents an enormous burden on cancer-related deaths and ranks third in cancer-associated mortality in both men and women worldwide.1 CRC develops when stem cells at the base of the colon’s crypts experience genetic and epigenetic alterations. Normal stem cells become cancerous because of these changes, which disrupts the delicate bal",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-10-105",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "276-278",
+    "views": 3494,
+    "downloads": 1958,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2686",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2686",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2686",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2686",
+    "localPdfUrl": "js/data/pdfs/2686.pdf",
+    "pdfUrl": "js/data/pdfs/2686.pdf"
+  },
+  {
+    "id": 2687,
+    "type": "Scientific Letter",
+    "title": "Imiquimod and Lentigo Maligna: Can Severe Inflammation Be the Endpoint in Short-Term Use?",
+    "authors": [
+      {
+        "name": "Seher Bostancı",
+        "affiliation": "Department of Dermatology, Ankara University Faculty of Medicine, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Bengü Nisa Akay",
+        "affiliation": "Department of Dermatology, Ankara University Faculty of Medicine, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Devrim Deniz Kuşçu",
+        "affiliation": "Department of Dermatology, Ankara University Faculty of Medicine, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşe Öktem",
+        "affiliation": "Department of Dermatology, Ankara University Faculty of Medicine, Ankara, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Lentigo maligna (LM), an in situ form of melanoma, predominantly occurs on sun-exposed regions like the head and neck, progresses slowly, and displays variable pigmentation. While surgical excision is the preferred treatment, topical imiquimod has gained attention as an alternative for cases where surgery is not an option.1 Imiquimod functions by activating ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-11-27",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "279-281",
+    "views": 3461,
+    "downloads": 1853,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2687",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2687",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2687",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2687",
+    "localPdfUrl": "js/data/pdfs/2687.pdf",
+    "pdfUrl": "js/data/pdfs/2687.pdf"
+  },
+  {
+    "id": 2703,
+    "type": "Letter to the Editor",
+    "title": "Comment on",
+    "authors": [
+      {
+        "name": "Nosaibah Razaqi",
+        "affiliation": "Afghanistan Center for Epidemiological Studies, Herat, Afghanistan; Faculty of Medicine, Ghalib University, Herat, Afghanistan; Scientific Research Committee, Afghanistan Medical Students Association, Herat, Afghanistan",
+        "orcid": ""
+      },
+      {
+        "name": "Rachana Mehta",
+        "affiliation": "Clinical Microbiology, RDC, Manav Rachna International Institute of Research and Studies, Faridabad, Haryana, India",
+        "orcid": ""
+      },
+      {
+        "name": "Shubham Kumar",
+        "affiliation": "Center for Global Health Research, Saveetha Medical College and Hospital, Saveetha Institute of Medical and Technical Sciences, Saveetha University, Chennai, India",
+        "orcid": ""
+      },
+      {
+        "name": "Ranjana Sah",
+        "affiliation": "Department of Paediatrics, Dr. D. Y. Patil Medical College, Hospital and Research Centre, Dr. D. Y. Patil Vidyapeeth (Deemed-to-be-University), Pimpri, Maharashtra, India; Department of Public Health Dentistry, Dr. D. Y. Patil Medical College, Hospital and Research Centre, Dr. D. Y. Patil Vidyapeeth (Deemed-to-be-University), Pimpri, Maharashtra, India",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "We read with great interest the systematic review and meta-analysis conducted by Cai et al.,1 entitled \"Efficacy and safety of a combination of enteral and parenteral nutrition support in the postoperative period for patients with gastrointestinal cancer,\" which evaluates the impact of different nutritional support methods on patient recovery and outcomes. T",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-1-12",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "3",
+    "pages": "282-283",
+    "views": 3034,
+    "downloads": 1765,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1296",
+    "sourceArticleId": "2703",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2703",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2703",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2703",
+    "localPdfUrl": "js/data/pdfs/2703.pdf",
+    "pdfUrl": "js/data/pdfs/2703.pdf"
+  }
+]

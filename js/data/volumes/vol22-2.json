@@ -1,0 +1,486 @@
+[
+  {
+    "id": 2011,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2005-01-01",
+    "volume": 22,
+    "issue": "2",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1136",
+    "sourceArticleId": "2011",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2011",
+    "localPdfUrl": "js/data/pdfs/2011.pdf",
+    "pdfUrl": "js/data/pdfs/2011.pdf"
+  },
+  {
+    "id": 1520,
+    "type": "Original Article",
+    "title": "The Accuracy of Death Certificates Given at Kocaeli University Hospital",
+    "authors": [
+      {
+        "name": "Nilay Etiler",
+        "affiliation": "Kocaeli Üniversitesi Tıp Fakültesi Halk Sağlığı Anabilim Dalı, Kocaeli",
+        "orcid": ""
+      },
+      {
+        "name": "Başar Çolak",
+        "affiliation": "Kocaeli Üniversitesi Tıp Fakültesi Adli Tıp Anabilim Dalı, Kocaeli",
+        "orcid": ""
+      },
+      {
+        "name": "İlkgün Demirbaş [[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: Registries for the causes of death constitute one of the basic components of health system in all countries. The reliability of the notified causes of death appears to be a common problem. In this study, we compared the information on death certificates routinely sent from the Kocaeli University Hospital to the State Statistics Institute (SSI) with that found on patient records. Study Design: A retrospective review was made on patient records and death certificates sent to the SSI in 2002 and 2003. The causes of death were classified as principal, contributing, and immediate causes according to the WHO criteria. Diagnoses were defined according to the ICD-10 list. Results: Of 744 deaths, records of 665 cases were present in both sources. Certificates of 211 cases (31.7%) included the correct principal death cause, while in 162 cases (24.4%) the deaths were attributed to other disease/conditions such as cardiorespiratory arrest, and in 112 cases, (16.8%), to an immediate cause. An irrelevant cause was found in 105 (15.8%) certificates. We detected a number of mistakes in 210 certificates, the most common being the use of inappropriate abbreviation (59.0%) and disease terms not available in the disease list (34.3%). Conclusion: The accuracy of death certificates may be improved with training programs among physicians. Furthermore, postmortem autopsy examinations are very important to determine the exact cause of death.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: Registries for the causes of death constitute one of the basic components of health system in all countries. The reliability of the notified causes of death appears to be a common problem. In this study, we compared the information on death certificates routinely sent from the Kocaeli University Hospital to the State Statistics Institute (SSI) with that found on patient records.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: A retrospective review was made on patient records and death certificates sent to the SSI in 2002 and 2003. The causes of death were classified as principal, contributing, and immediate causes according to the WHO criteria. Diagnoses were defined according to the ICD-10 list.</p>\r\n<p>\r\n\t<strong>Results</strong>: Of 744 deaths, records of 665 cases were present in both sources. Certificates of 211 cases (31.7%) included the correct principal death cause, while in 162 cases (24.4%) the deaths were attributed to other disease/conditions such as cardiorespiratory arrest, and in 112 cases, (16.8%), to an immediate cause. An irrelevant cause was found in 105 (15.8%) certificates. We detected a number of mistakes in 210 certificates, the most common being the use of inappropriate abbreviation (59.0%) and disease terms not available in the disease list (34.3%).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The accuracy of death certificates may be improved with training programs among physicians. Furthermore, postmortem autopsy examinations are very important to determine the exact cause of death.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: Registries for the causes of death constitute one of the basic components of health system in all countries. The reliability of the notified causes of death appears to be a common problem. In this study, we compared the information on death certificates routinely sent from the Kocaeli University Hospital to the State Statistics Institute (SSI) with that found on patient records. Study Design: A retrospective review was made on patient records and death certificates sent to the SSI in 2002 and 2003. The causes of death were classified as principal, contributing, and immediate causes according to the WHO criteria. Diagnoses were defined according to the ICD-10 list. Results: Of 744 deaths, records of 665 cases were present in both sources. Certificates of 211 cases (31.7%) included the correct principal death cause, while in 162 cases (24.4%) the deaths were attributed to other disease/conditions such as cardiorespiratory arrest, and in 112 cases, (16.8%), to an immediate cause. An irrelevant cause was found in 105 (15.8%) certificates. We detected a number of mistakes in 210 certificates, the most common being the use of inappropriate abbreviation (59.0%) and disease terms not available in the disease list (34.3%). Conclusion: The accuracy of death certificates may be improved with training programs among physicians. Furthermore, postmortem autopsy examinations are very important to determine the exact cause of death.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2005-01-01",
+    "volume": 22,
+    "issue": "2",
+    "pages": "93-101",
+    "views": 6252,
+    "downloads": 1668,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1136",
+    "sourceArticleId": "1520",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1520",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1520",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1520",
+    "localPdfUrl": "js/data/pdfs/1520.pdf",
+    "pdfUrl": "js/data/pdfs/1520.pdf"
+  },
+  {
+    "id": 1524,
+    "type": "Case Report",
+    "title": "A Complication of Venous Cut-Down: Migration of a Catheter That Remained in the Vein",
+    "authors": [
+      {
+        "name": "Mustafa Edis",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Turan Ege",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Enver Duran",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract A 32-year-old male patient who was followed-up with a diagnosis of amyotrophic lateral sclerosis was inserted a catheter into the left arm via cephalic vein cut-down in order to maintain parenteral nutrition and medical treatment. After the treatment, while the catheter was being removed, it was broken and a large part of it remained in the vessel. The catheter was located on a posteroanterior chest radiograph and removed by venotomy of the subclavian vein.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tA 32-year-old male patient who was followed-up with a diagnosis of amyotrophic lateral sclerosis was inserted a catheter into the left arm via cephalic vein cut-down in order to maintain parenteral nutrition and medical treatment. After the treatment, while the catheter was being removed, it was broken and a large part of it remained in the vessel. The catheter was located on a posteroanterior chest radiograph and removed by venotomy of the subclavian vein.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract A 32-year-old male patient who was followed-up with a diagnosis of amyotrophic lateral sclerosis was inserted a catheter into the left arm via cephalic vein cut-down in order to maintain parenteral nutrition and medical treatment. After the treatment, while the catheter was being removed, it was broken and a large part of it remained in the vessel. The catheter was located on a posteroanterior chest radiograph and removed by venotomy of the subclavian vein.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2005-01-01",
+    "volume": 22,
+    "issue": "2",
+    "pages": "102-105",
+    "views": 7123,
+    "downloads": 1828,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1136",
+    "sourceArticleId": "1524",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1524",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1524",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1524",
+    "localPdfUrl": "js/data/pdfs/1524.pdf",
+    "pdfUrl": "js/data/pdfs/1524.pdf"
+  },
+  {
+    "id": 1527,
+    "type": "Case Report",
+    "title": "Laparoscopic Pelvic Lymph Node Dissection in Early-Stage Endometrium Cancer After Incomplete Surgery: A Case Report",
+    "authors": [
+      {
+        "name": "Petek Balkanlı Kaplan",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kadın Hastalıkları ve Doğum Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Güçer",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kadın Hastalıkları ve Doğum Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Laparoscopic surgery has been suggested as a safe and effective alternative to laparotomy for the treatment of early stage endometrial cancer. In this study, we presented a 39-year-old patient who underwent pelvic lymphadenectomy through laparoscopy at our center following incomplete surgery at another center for early stage endometrium cancer. Laparoscopic lymphadenectomy seems to be a safe and reliable method for gynecologic malignancies that require lymph node dissection.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tLaparoscopic surgery has been suggested as a safe and effective alternative to laparotomy for the treatment of early stage endometrial cancer. In this study, we presented a 39-year-old patient who underwent pelvic lymphadenectomy through laparoscopy at our center following incomplete surgery at another center for early stage endometrium cancer. Laparoscopic lymphadenectomy seems to be a safe and reliable method for gynecologic malignancies that require lymph node dissection.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Laparoscopic surgery has been suggested as a safe and effective alternative to laparotomy for the treatment of early stage endometrial cancer. In this study, we presented a 39-year-old patient who underwent pelvic lymphadenectomy through laparoscopy at our center following incomplete surgery at another center for early stage endometrium cancer. Laparoscopic lymphadenectomy seems to be a safe and reliable method for gynecologic malignancies that require lymph node dissection.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2005-01-01",
+    "volume": 22,
+    "issue": "2",
+    "pages": "106-109",
+    "views": 5865,
+    "downloads": 1822,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1136",
+    "sourceArticleId": "1527",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1527",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1527",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1527",
+    "localPdfUrl": "js/data/pdfs/1527.pdf",
+    "pdfUrl": "js/data/pdfs/1527.pdf"
+  },
+  {
+    "id": 1499,
+    "type": "Clinical Image",
+    "title": "Comparison of Recovery Criteria Following Anaesthesia with Sevoflurane and Isoflurane in Geriatric Patients",
+    "authors": [
+      {
+        "name": "Cavidan Arar",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Gaye Kaya",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Beyhan Karamanlıoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşin Alagöl",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ayça Özden",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Zafer Pamukçu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: The aim of this study was to compare the effects of volatile anesthetics, sevoflurane and isoflurane, on recovery criteria in geriatric patients. Study Design: Forty ASA I-II patients at the age of 65 years or above, who were planned for elective urological or gynecological operation were randomized to two groups equal in number. Each group received 0.06 mgkg-1 intramuscular midazolam for premedication, and intravenous 1.5 mgkg-1 propofol, 0.6 mgkg-1 atracurium besylate, and 500 µg alfentanil for induction. Anesthesia was maintained with approximately 1 MAC isoflurane in group I, and 1 MAC sevoflurane in group II, and, when necessary, intravenous 0.1 mgkg-1 atracurium. Recovery criteria included spontaneous eye opening, extubation, verbal response, and orientation times at the end of operation. Results: Compared to the isoflurane group, durations of spontaneous eye opening (p=0.0002), extubation (p=0.0002), verbal response (p=0.0001), and orientation (p=0.0001) were significantly shorter in the sevoflurane group. Conclusion: We concluded that sevoflurane anesthesia is more advantegous over isoflurane in geriatric patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: The aim of this study was to compare the effects of volatile anesthetics, sevoflurane and isoflurane, on recovery criteria in geriatric patients.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Forty ASA I-II patients at the age of 65 years or above, who were planned for elective urological or gynecological operation were randomized to two groups equal in number. Each group received 0.06 mgkg-1 intramuscular midazolam for premedication, and intravenous 1.5 mgkg-1 propofol, 0.6 mgkg-1 atracurium besylate, and 500 &micro;g alfentanil for induction. Anesthesia was maintained with approximately 1 MAC isoflurane in group I, and 1 MAC sevoflurane in group II, and, when necessary, intravenous 0.1 mgkg-1 atracurium. Recovery criteria included spontaneous eye opening, extubation, verbal response, and orientation times at the end of operation.</p>\r\n<p>\r\n\t<strong>Results</strong>: Compared to the isoflurane group, durations of spontaneous eye opening (p=0.0002), extubation (p=0.0002), verbal response (p=0.0001), and orientation (p=0.0001) were significantly shorter in the sevoflurane group.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: We concluded that sevoflurane anesthesia is more advantegous over isoflurane in geriatric patients.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: The aim of this study was to compare the effects of volatile anesthetics, sevoflurane and isoflurane, on recovery criteria in geriatric patients. Study Design: Forty ASA I-II patients at the age of 65 years or above, who were planned for elective urological or gynecological operation were randomized to two groups equal in number. Each group received 0.06 mgkg-1 intramuscular midazolam for premedication, and intravenous 1.5 mgkg-1 propofol, 0.6 mgkg-1 atracurium besylate, and 500 µg alfentanil for induction. Anesthesia was maintained with approximately 1 MAC isoflurane in group I, and 1 MAC sevoflurane in group II, and, when necessary, intravenous 0.1 mgkg-1 atracurium. Recovery criteria included spontaneous eye opening, extubation, verbal response, and orientation times at the end of operation. Results: Compared to the isoflurane group, durations of spontaneous eye opening (p=0.0002), extubation (p=0.0002), verbal response (p=0.0001), and orientation (p=0.0001) were significantly shorter in the sevoflurane group. Conclusion: We concluded that sevoflurane anesthesia is more advantegous over isoflurane in geriatric patients.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2005-01-01",
+    "volume": 22,
+    "issue": "2",
+    "pages": "65-69",
+    "views": 6698,
+    "downloads": 1842,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1136",
+    "sourceArticleId": "1499",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1499",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1499",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1499",
+    "localPdfUrl": "js/data/pdfs/1499.pdf",
+    "pdfUrl": "js/data/pdfs/1499.pdf"
+  },
+  {
+    "id": 1506,
+    "type": "Clinical Image",
+    "title": "The Effect of Neuromuscular Electrical Stimulation on Shoulder Subluxation in Stroke Patients",
+    "authors": [
+      {
+        "name": "Hakan Tuna",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Şebnem Avcı",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Özlem Tükenmez",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Siranuş Kokino",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: In this study we investigated the effect of neuromuscular electrical stimulation (NMES) on shoulder subluxation in stroke patients. Patients and Methods: We included 20 acute and chronic stroke patients (9 females, 11 males; mean age 58.32±11.07 years; range 42 to 78 years) into the study. The mean duration of disease was 5.47±3.17 months (range 2 to 12 months). Neuromuscular electrical stimulation was applied to the shoulders with subluxation for 25 minutes daily for four weeks. Evaluations were made before and after treatment with regard to range of motion of the shoulder, subluxation measured on radiographs, Brunnstrom levels, Ashworth scale, Functional Independence Measure, pain, and patient satisfaction. Results: After the treatment, statistically significant improvements were achieved in active and passive flexion, abduction, external and internal rotation; however, the numeric decrease in subluxation was not statistically significant. Functional Independence Measure scores, personal care levels, Brunnstrom scale scores, and the severity of pain improved significantly. Conclusion: Considering it favorable effects, NMES may be a part of rehabilitation process for shoulder subluxation in stroke patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: In this study we investigated the effect of neuromuscular electrical stimulation (NMES) on shoulder subluxation in stroke patients.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: We included 20 acute and chronic stroke patients (9 females, 11 males; mean age 58.32&plusmn;11.07 years; range 42 to 78 years) into the study. The mean duration of disease was 5.47&plusmn;3.17 months (range 2 to 12 months). Neuromuscular electrical stimulation was applied to the shoulders with subluxation for 25 minutes daily for four weeks. Evaluations were made before and after treatment with regard to range of motion of the shoulder, subluxation measured on radiographs, Brunnstrom levels, Ashworth scale, Functional Independence Measure, pain, and patient satisfaction.</p>\r\n<p>\r\n\t<strong>Results</strong>: After the treatment, statistically significant improvements were achieved in active and passive flexion, abduction, external and internal rotation; however, the numeric decrease in subluxation was not statistically significant. Functional Independence Measure scores, personal care levels, Brunnstrom scale scores, and the severity of pain improved significantly.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Considering it favorable effects, NMES may be a part of rehabilitation process for shoulder subluxation in stroke patients.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: In this study we investigated the effect of neuromuscular electrical stimulation (NMES) on shoulder subluxation in stroke patients. Patients and Methods: We included 20 acute and chronic stroke patients (9 females, 11 males; mean age 58.32±11.07 years; range 42 to 78 years) into the study. The mean duration of disease was 5.47±3.17 months (range 2 to 12 months). Neuromuscular electrical stimulation was applied to the shoulders with subluxation for 25 minutes daily for four weeks. Evaluations were made before and after treatment with regard to range of motion of the shoulder, subluxation measured on radiographs, Brunnstrom levels, Ashworth scale, Functional Independence Measure, pain, and patient satisfaction. Results: After the treatment, statistically significant improvements were achieved in active and passive flexion, abduction, external and internal rotation; however, the numeric decrease in subluxation was not statistically significant. Functional Independence Measure scores, personal care levels, Brunnstrom scale scores, and the severity of pain improved significantly. Conclusion: Considering it favorable effects, NMES may be a part of rehabilitation process for shoulder subluxation in stroke patients.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2005-01-01",
+    "volume": 22,
+    "issue": "2",
+    "pages": "70-75",
+    "views": 7543,
+    "downloads": 1873,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1136",
+    "sourceArticleId": "1506",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1506",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1506",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1506",
+    "localPdfUrl": "js/data/pdfs/1506.pdf",
+    "pdfUrl": "js/data/pdfs/1506.pdf"
+  },
+  {
+    "id": 1508,
+    "type": "Clinical Image",
+    "title": "Erythrocyte Arginase Activity in Lung Cancer Patients",
+    "authors": [
+      {
+        "name": "Selma Süer Gökmen",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Biyokimya Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Reyhan Yıldız",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Biyokimya Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Şendoğan Gülen",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Biyokimya Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Erhan Tabakoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Göğüs Hastalıkları Anabilim Dalı, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gündeniz Altıay",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göğüs Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ebru Yavuz",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Biyoistatistik Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: We investigated blood erythrocyte arginase activity in lung cancer patients and the effect of cell type and extrapulmonary metastasis on this activity. Patients and Methods: The study included 46 lung cancer patients (mean age 63.1 years) and 29 healthy subjects (mean age 57.2 years). Erythrocyte arginase activity was determined with the use of the Geyer-Dabich method. Erythrocyte arginase activity was compared between patients with small cell lung cancer (n=15), non-small cell lung cancer (n=31), extrapulmonary metastases (n=23), and no metastasis (n=23). Results: Compared to healthy controls, erythrocyte arginase activity was significantly increased in all lung cancer patients (p<0.01), and in patient groups with small cell lung cancer (p<0.05), non-small cell lung cancer (p<0.01), extrapulmonary metastases (p<0.01), and no metastasis (p<0.01). On the other hand, erythrocyte arginase activity did not differ significantly between patients with small cell lung cancer and non-small cell lung cancer, and between patients with and without extrapulmonary metastases. Conclusion: Our data suggest that, compared to healthy subjects, erythrocyte arginase activity is significantly increased in lung cancer patients, with no additional effect of cell type or extrapulmonary metastases.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: We investigated blood erythrocyte arginase activity in lung cancer patients and the effect of cell type and extrapulmonary metastasis on this activity.</p>\r\n<p>\r\n\t<strong>Patients</strong> <strong>and Methods</strong>: The study included 46 lung cancer patients (mean age 63.1 years) and 29 healthy subjects (mean age 57.2 years). Erythrocyte arginase activity was determined with the use of the Geyer-Dabich method. Erythrocyte arginase activity was compared between patients with small cell lung cancer (n=15), non-small cell lung cancer (n=31), extrapulmonary metastases (n=23), and no metastasis (n=23).</p>\r\n<p>\r\n\t<strong>Results</strong>: Compared to healthy controls, erythrocyte arginase activity was significantly increased in all lung cancer patients (p&lt;0.01), and in patient groups with small cell lung cancer (p&lt;0.05), non-small cell lung cancer (p&lt;0.01), extrapulmonary metastases (p&lt;0.01), and no metastasis (p&lt;0.01). On the other hand, erythrocyte arginase activity did not differ significantly between patients with small cell lung cancer and non-small cell lung cancer, and between patients with and without extrapulmonary metastases.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Our data suggest that, compared to healthy subjects, erythrocyte arginase activity is significantly increased in lung cancer patients, with no additional effect of cell type or extrapulmonary metastases.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: We investigated blood erythrocyte arginase activity in lung cancer patients and the effect of cell type and extrapulmonary metastasis on this activity. Patients and Methods: The study included 46 lung cancer patients (mean age 63.1 years) and 29 healthy subjects (mean age 57.2 years). Erythrocyte arginase activity was determined with the use of the Geyer-Dabich method. Erythrocyte arginase activity was compared between patients with small cell lung cancer (n=15), non-small cell lung cancer (n=31), extrapulmonary metastases (n=23), and no metastasis (n=23). Results: Compared to healthy controls, erythrocyte arginase activity was significantly increased in all lung cancer patients (p<0.01), and in patient groups with small cell lung cancer (p<0.05), non-small cell lung cancer (p<0.01), extrapulmonary metastases (p<0.01), and no metastasis (p<0.01). On the other hand, erythrocyte arginase activity did not differ significantly between patients with small cell lung cancer and non-small cell lung cancer, and between patients with and without extrapulmonary metastases. Conclusion: Our data suggest that, compared to healthy subjects, erythrocyte arginase activity is significantly increased in lung cancer patients, with no additional effect of cell type or extrapulmonary metastases.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2005-01-01",
+    "volume": 22,
+    "issue": "2",
+    "pages": "76-81",
+    "views": 6683,
+    "downloads": 1760,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1136",
+    "sourceArticleId": "1508",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1508",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1508",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1508",
+    "localPdfUrl": "js/data/pdfs/1508.pdf",
+    "pdfUrl": "js/data/pdfs/1508.pdf"
+  },
+  {
+    "id": 1511,
+    "type": "Clinical Image",
+    "title": "The Prevalence of Pediculus Humanus Capitis and Tinea Capitis Among Elementary School Students in Edirne",
+    "authors": [
+      {
+        "name": "Müşerref Tatman Otkun",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Mikrobiyoloji ve Klinik Mikrobiyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Nermin Şakru",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Mikrobiyoloji ve Klinik Mikrobiyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Metin Otkun",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Mikrobiyoloji ve Klinik Mikrobiyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Muharrem Cidem",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Bağcılar Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burçin Özer",
+        "affiliation": "Trakya Üniversitesi Sağlık Bilimleri Enstitüsü Mikrobiyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Arzu Ertem",
+        "affiliation": "Trakya Üniversitesi Sağlık Bilimleri Enstitüsü Mikrobiyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: In this study, we aimed to determine the prevalences of pediculus humanis capitis and tinea capitis and the causative agents of tinea capitis in elementary school children in Edirne. Materials and Methods: A total of 12,868 students from 34 elementary schools were scanned in April and May 2003. Samples of skin scrapings and hair roots were collected from students with hair and scalp lesions. Specimens were evaluated microscopically by KOH, and were inoculated into agar slants of Sabouraud dextrose agar with cycloheximide. Results: Eggs, nits or adult forms of head lice were detected in 698 (5.4%) students. The prevalence of head lice was significantly higher in girls (10.3%) than in boys (0.9%) (p<0.001). The infestation rate was the lowest below seven years of age (3.4%, p<0.001). Infestation rate was also high in families with low socioeconomic conditions (p<0.001). Tinea capitis was not detected in any of the students. Conclusion: Pediculus humanis capitis was found to continue to be a public health problem in Edirne. The following conclusions were drawn for its eradication: periodic scanning of the students by families, teachers, and health professionals should be implemented; affected children should be properly treated; health facilities should be improved; and continuous education should be given to prevent its spread.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: In this study, we aimed to determine the prevalences of pediculus humanis capitis and tinea capitis and the causative agents of tinea capitis in elementary school children in Edirne.</p>\r\n<p>\r\n\t<strong>Materials and Methods</strong>: A total of 12,868 students from 34 elementary schools were scanned in April and May 2003. Samples of skin scrapings and hair roots were collected from students with hair and scalp lesions. Specimens were evaluated microscopically by KOH, and were inoculated into agar slants of Sabouraud dextrose agar with cycloheximide.</p>\r\n<p>\r\n\t<strong>Results</strong>: Eggs, nits or adult forms of head lice were detected in 698 (5.4%) students. The prevalence of head lice was significantly higher in girls (10.3%) than in boys (0.9%) (p&lt;0.001). The infestation rate was the lowest below seven years of age (3.4%, p&lt;0.001). Infestation rate was also high in families with low socioeconomic conditions (p&lt;0.001). Tinea capitis was not detected in any of the students.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Pediculus humanis capitis was found to continue to be a public health problem in Edirne. The following conclusions were drawn for its eradication: periodic scanning of the students by families, teachers, and health professionals should be implemented; affected children should be properly treated; health facilities should be improved; and continuous education should be given to prevent its spread.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: In this study, we aimed to determine the prevalences of pediculus humanis capitis and tinea capitis and the causative agents of tinea capitis in elementary school children in Edirne. Materials and Methods: A total of 12,868 students from 34 elementary schools were scanned in April and May 2003. Samples of skin scrapings and hair roots were collected from students with hair and scalp lesions. Specimens were evaluated microscopically by KOH, and were inoculated into agar slants of Sabouraud dextrose agar with cycloheximide. Results: Eggs, nits or adult forms of head lice were detected in 698 (5.4%) students. The prevalence of head lice was significantly higher in girls (10.3%) than in boys (0.9%) (p<0.001). The infestation rate was the lowest below seven years of age (3.4%, p<0.001). Infestation rate was also high in families with low socioeconomic conditions (p<0.001). Tinea capitis was not detected in any of the students. Conclusion: Pediculus humanis capitis was found to continue to be a public health problem in Edirne. The following conclusions were drawn for its eradication: periodic scanning of the students by families, teachers, and health professionals should be implemented; affected children should be properly treated; health facilities should be improved; and continuous education should be given to prevent its spread.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2005-01-01",
+    "volume": 22,
+    "issue": "2",
+    "pages": "82-87",
+    "views": 6432,
+    "downloads": 1745,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1136",
+    "sourceArticleId": "1511",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1511",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1511",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1511",
+    "localPdfUrl": "js/data/pdfs/1511.pdf",
+    "pdfUrl": "js/data/pdfs/1511.pdf"
+  },
+  {
+    "id": 1518,
+    "type": "Clinical Image",
+    "title": "Demographic Characteristics of Patients Examined in the Training and Research Center for Mentally and Physically Handicapped Children",
+    "authors": [
+      {
+        "name": "Emine Ahmetoğlu",
+        "affiliation": "Trakya Üniversitesi, Zihin ve Hareket Engelli Çocuklar için Eğitim Araştırma ve Uygulama Merkezi, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Harun Canarslan",
+        "affiliation": "Trakya Üniversitesi, Zihin ve Hareket Engelli Çocuklar için Eğitim Araştırma ve Uygulama Merkezi, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ülfet Vatansever",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Çocuk Sağlığı ve Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Kemal Kutlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Patoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: We evaluated the demographic data of patients who applied to the Training and Research Center for Mentally and Physically Handicapped Children in Trakya University. Study Design: The demographic data of 1167 patients who were examined and monitored in the center between January 1995 and December 2003 were evaluated. Results: The majority of applications were made between 1997 and 1998. Of 1167 patients, there were 476 females (40.8%) and 691 males (59.2%) with a mean age of 4.22±4.00 years. Distribution of diagnoses were as follows: mentally handicapped in 47.1% (n=550), cerebral palsy in 37.5% (n=438), autism in 2.7% (n=32), Down syndrome in 4.2% (n=49), developmental retardation in 8.4% (n=98). Of all the applications, 335 (28.7%) were made from the center of Edirne district. Only 14% of all the cases were found to follow the education program in the center. Conclusion: This study demonstrated the regional distribution of cases and a considerably low attendance rate. Elicitation of more detailed demographic data on handicapped children and their families may contribute nationwide studies on handicapped population.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: We evaluated the demographic data of patients who applied to the Training and Research Center for Mentally and Physically Handicapped Children in Trakya University.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: The demographic data of 1167 patients who were examined and monitored in the center between January 1995 and December 2003 were evaluated.</p>\r\n<p>\r\n\t<strong>Results</strong>: The majority of applications were made between 1997 and 1998. Of 1167 patients, there were 476 females (40.8%) and 691 males (59.2%) with a mean age of 4.22&plusmn;4.00 years. Distribution of diagnoses were as follows: mentally handicapped in 47.1% (n=550), cerebral palsy in 37.5% (n=438), autism in 2.7% (n=32), Down syndrome in 4.2% (n=49), developmental retardation in 8.4% (n=98). Of all the applications, 335 (28.7%) were made from the center of Edirne district. Only 14% of all the cases were found to follow the education program in the center.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: This study demonstrated the regional distribution of cases and a considerably low attendance rate. Elicitation of more detailed demographic data on handicapped children and their families may contribute nationwide studies on handicapped population.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: We evaluated the demographic data of patients who applied to the Training and Research Center for Mentally and Physically Handicapped Children in Trakya University. Study Design: The demographic data of 1167 patients who were examined and monitored in the center between January 1995 and December 2003 were evaluated. Results: The majority of applications were made between 1997 and 1998. Of 1167 patients, there were 476 females (40.8%) and 691 males (59.2%) with a mean age of 4.22±4.00 years. Distribution of diagnoses were as follows: mentally handicapped in 47.1% (n=550), cerebral palsy in 37.5% (n=438), autism in 2.7% (n=32), Down syndrome in 4.2% (n=49), developmental retardation in 8.4% (n=98). Of all the applications, 335 (28.7%) were made from the center of Edirne district. Only 14% of all the cases were found to follow the education program in the center. Conclusion: This study demonstrated the regional distribution of cases and a considerably low attendance rate. Elicitation of more detailed demographic data on handicapped children and their families may contribute nationwide studies on handicapped population.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2005-01-01",
+    "volume": 22,
+    "issue": "2",
+    "pages": "88-92",
+    "views": 6453,
+    "downloads": 1722,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1136",
+    "sourceArticleId": "1518",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1518",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1518",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1518",
+    "localPdfUrl": "js/data/pdfs/1518.pdf",
+    "pdfUrl": "js/data/pdfs/1518.pdf"
+  },
+  {
+    "id": 1531,
+    "type": "Comment",
+    "title": "Spa Therapy Centers of Edirne According to the Edirne Province Yearbooks",
+    "authors": [
+      {
+        "name": "Nilüfer Gökçe",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıp Tarihi ve Deontoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract The Edirne Province Yearbooks published from 1870 to 1901 are important references giving information about Edirne and neighboring divisions. In the yearbooks, Edirne is depicted from various perspectives. Information was given concerning its minerals and sanative waters, their contents, and the illnesses to which they were believed to be beneficial. We learn from these sources that not only the people living in Edirne, but also those living in other regions showed great interest in the thermal springs. When the thermal spring season started, groups of people visited these places by carriages. Later, transportation was also provided by trains.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tThe Edirne Province Yearbooks published from 1870 to 1901 are important references giving information about Edirne and neighboring divisions. In the yearbooks, Edirne is depicted from various perspectives. Information was given concerning its minerals and sanative waters, their contents, and the illnesses to which they were believed to be beneficial. We learn from these sources that not only the people living in Edirne, but also those living in other regions showed great interest in the thermal springs. When the thermal spring season started, groups of people visited these places by carriages. Later, transportation was also provided by trains.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract The Edirne Province Yearbooks published from 1870 to 1901 are important references giving information about Edirne and neighboring divisions. In the yearbooks, Edirne is depicted from various perspectives. Information was given concerning its minerals and sanative waters, their contents, and the illnesses to which they were believed to be beneficial. We learn from these sources that not only the people living in Edirne, but also those living in other regions showed great interest in the thermal springs. When the thermal spring season started, groups of people visited these places by carriages. Later, transportation was also provided by trains.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2005-01-01",
+    "volume": 22,
+    "issue": "2",
+    "pages": "110-116",
+    "views": 6361,
+    "downloads": 1730,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1136",
+    "sourceArticleId": "1531",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1531",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1531",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1531",
+    "localPdfUrl": "js/data/pdfs/1531.pdf",
+    "pdfUrl": "js/data/pdfs/1531.pdf"
+  }
+]

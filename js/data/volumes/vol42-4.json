@@ -1,0 +1,913 @@
+[
+  {
+    "id": 2742,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2742",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2742",
+    "localPdfUrl": "js/data/pdfs/2742.pdf",
+    "pdfUrl": "js/data/pdfs/2742.pdf"
+  },
+  {
+    "id": 2724,
+    "type": "Editorial",
+    "title": "First Q1 Medicine Journal in Türkiye: Balkan Medical Journal",
+    "authors": [
+      {
+        "name": "Servet Altay",
+        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Clarivate published the Journal Citation Reports 2024 update on June 18, 2025.1 This year’s report presents significant developments for both the Balkan Medical Journal and Türkiye. For the first time since its establishment in 1979, the Balkan Medical Journal has been placed in the first quartile (Q1) in the field of general medicine. This milestone represe",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025.110625",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "284-285",
+    "views": 3337,
+    "downloads": 1723,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2724",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2724",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2724",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2724",
+    "localPdfUrl": "js/data/pdfs/2724.pdf",
+    "pdfUrl": "js/data/pdfs/2724.pdf"
+  },
+  {
+    "id": 2725,
+    "type": "Invited Review",
+    "title": "Generative Artificial Intelligence in Prostate Cancer Imaging",
+    "authors": [
+      {
+        "name": "Fahmida Haque",
+        "affiliation": "Molecular Imaging Branch, National Cancer Institute, National Institutes of Health, Bethesda, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Benjamin D. Simon",
+        "affiliation": "Molecular Imaging Branch, National Cancer Institute, National Institutes of Health, Bethesda, USA; University of Oxford, Institute of Biomedical Engineering, Department of Engineering Science, Oxford, UK",
+        "orcid": ""
+      },
+      {
+        "name": "Kutsev B. Özyörük",
+        "affiliation": "Molecular Imaging Branch, National Cancer Institute, National Institutes of Health, Bethesda, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Stephanie A. Harmon",
+        "affiliation": "Molecular Imaging Branch, National Cancer Institute, National Institutes of Health, Bethesda, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Barış Türkbey",
+        "affiliation": "Molecular Imaging Branch, National Cancer Institute, National Institutes of Health, Bethesda, USA",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Prostate cancer (PCa) is the second most common cancer in men and has a significant health and social burden, necessitating advances in early detection, prognosis, and treatment strategies. Improvement in medical imaging has significantly impacted early PCa detection, characterization, and treatment planning. However, with an increasing number of patients with PCa and comparatively fewer PCa imaging experts, interpreting large numbers of imaging data is burdensome, time-consuming, and prone to variability among experts. With the revolutionary advances of artificial intelligence (AI) in medical imaging, image interpretation tasks are becoming easier and exhibit the potential to reduce the workload on physicians. Generative AI (GenAI) is a recently popular sub-domain of AI that creates new data instances, often to resemble patterns and characteristics of the real data. This new field of AI has shown significant potential for generating synthetic medical images with diverse and clinically relevant information. In this narrative review, we discuss the basic concepts of GenAI and cover the recent application of GenAI in the PCa imaging domain. This review will help the readers understand where the PCa research community stands in terms of various medical image applications like generating multi-modal synthetic images, image quality improvement, PCa detection, classification, and digital pathology image generation. We also address the current safety concerns, limitations, and challenges of GenAI for technical and clinical adaptation, as well as the limitations of current literature, potential solutions, and future directions with GenAI for the PCa community.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Prostate cancer (PCa) is the second most common cancer in men and has a significant health and social burden, necessitating advances in early detection, prognosis, and treatment strategies. Improvement in medical imaging has significantly impacted early PCa detection, characterization, and treatment planning. However, with an increasing number of patients with PCa and comparatively fewer PCa imaging experts, interpreting large numbers of imaging data is burdensome, time-consuming, and prone to variability among experts. With the revolutionary advances of artificial intelligence (AI) in medical imaging, image interpretation tasks are becoming easier and exhibit the potential to reduce the workload on physicians.&nbsp; Generative AI (GenAI) is a recently popular sub-domain of AI that creates new data instances, often to resemble patterns and characteristics of the real data. This new field of AI has shown significant potential for generating synthetic medical images with diverse and clinically relevant information. In this narrative review, we discuss the basic concepts of GenAI and cover the recent application of GenAI in the PCa imaging domain. This review will help the readers understand where the PCa research community stands in terms of various medical image applications like generating multi-modal synthetic images, image quality improvement, PCa detection, classification, and digital pathology image generation. We also address the current safety concerns, limitations, and challenges of GenAI for technical and clinical adaptation, as well as the limitations of current literature, potential solutions, and future directions with GenAI for the PCa community.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Prostate cancer (PCa) is the second most common cancer in men and has a significant health and social burden, necessitating advances in early detection, prognosis, and treatment strategies. Improvement in medical imaging has significantly impacted early PCa detection, characterization, and treatment planning. However, with an increasing number of patients with PCa and comparatively fewer PCa imaging experts, interpreting large numbers of imaging data is burdensome, time-consuming, and prone to variability among experts. With the revolutionary advances of artificial intelligence (AI) in medical imaging, image interpretation tasks are becoming easier and exhibit the potential to reduce the workload on physicians. Generative AI (GenAI) is a recently popular sub-domain of AI that creates new data instances, often to resemble patterns and characteristics of the real data. This new field of AI has shown significant potential for generating synthetic medical images with diverse and clinically relevant information. In this narrative review, we discuss the basic concepts of GenAI and cover the recent application of GenAI in the PCa imaging domain. This review will help the readers understand where the PCa research community stands in terms of various medical image applications like generating multi-modal synthetic images, image quality improvement, PCa detection, classification, and digital pathology image generation. We also address the current safety concerns, limitations, and challenges of GenAI for technical and clinical adaptation, as well as the limitations of current literature, potential solutions, and future directions with GenAI for the PCa community.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-4-69",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "286-300",
+    "views": 5261,
+    "downloads": 3388,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2725",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2725",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2725",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2725",
+    "localPdfUrl": "js/data/pdfs/2725.pdf",
+    "pdfUrl": "js/data/pdfs/2725.pdf"
+  },
+  {
+    "id": 2726,
+    "type": "Invited Review",
+    "title": "Current Anti-Myeloma Chimeric Antigen Receptor-T Cells: Novel Targets and Methods",
+    "authors": [
+      {
+        "name": "Ece Vural",
+        "affiliation": "Clinic of Hematology, Ankara Liv Hospital, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Meral Beksaç",
+        "affiliation": "Clinic of Hematology, Ankara Liv Hospital, Ankara, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Multiple myeloma (MM) treatment becomes a major challenge once triple-class or penta-refractoriness develops. Emerging immunotherapies, including bispecific antibodies or chimeric antigen receptor (CAR)-T cell therapy, are promising options for such patients. However, the requirement for specialized expertise and staff under stringent manufacturing conditions results in high costs and restricted production. This article explores the manufacturing and clinical application of CAR T-cells in MM, highlighting their potential, limitations, and strategies to enhance efficacy. CAR-T can be manufactured by pharmaceutical companies or accredited academic centers authorized to produce and market gene-edited cellular products. This process includes sequential steps: T cell apheresis from the patient, selection of the cells, activation, gene transfer, expansion of the produced cells, cryopreservation, and reinfusion of the cells into a lymphodepleted patient. While CD3+ T cells are typically employed for CAR-T production in clinical studies, studies have demonstrated the potential advantages of specific T cell subgroups, such as naive, central memory, and memory stem cells, in enhancing efficacy. Following T cell harvesting, the subsequent phase involves genetic modification. CAR-T cells are frequently produced by applying viral vectors such as g-retrovirus or lentivirus. Although viral vectors are commonly used, non-viral methods-including CRISPR/Cas9 and integrative mRNA transfection methods produced by transposons-are also employed. Five different CAR-T cell generations have been developed. The myeloma-specific targets B-cell maturation antigen (BCMA), signaling lymphocyte activation molecular family 7, and G protein-coupled receptor class C group 5 member D are the most extensively studied in clinical trials. Emerging CAR-T cell targets under investigation include CD138, CD19, kappa light chain, CD56, NY-ESO-1, CD70, TACI, and natural killer G2D. In 2021, idecabtagene vicleucel, a BCMA-targeting agent, became the first CAR-T therapy approved for relapsed/refractory MM, marking a significant milestone in MM treatment. Subsequently, ciltacabtagene autoleucel has also been approved. However, CAR-T resistance is an emerging issue. Resistance mechanisms include T cell exhaustion, antigen escape (loss of BCMA), and tumor microenvironment-related inhibitors. To address these challenges, strategies such as BCMA non-targeted or dual-targeted CAR-T, memory T cells, humanized CAR-T, and rapidly manufactured PHE885 cells have been developed. To enhance specificity, ongoing investigations include bicistronic CAR/co-stimulator receptors, formation of memory-phenotype T cells, combination with immunomodulators or checkpoint inhibitors, armored CAR-T cells, cancer-associated fibroblast inhibitors, and CAR approaches that inhibit exhaustion signals. In conclusion, studies are exploring the use of CAR-T at an earlier stage, including at diagnosis, with an aim to replace ASCT. CAR-T has introduced a new dimension to MM treatment; however, limited efficacy in high-risk MM and the emergence of resistance to CAR-T remain key challenges to be addressed.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Multiple myeloma (MM) treatment becomes a major challenge once triple-class or penta-refractoriness develops. Emerging immunotherapies, including bispecific antibodies or chimeric antigen receptor (CAR)-T cell therapy, are promising options for such patients. However, the requirement for specialized expertise and staff under stringent manufacturing conditions results in high costs and restricted production. This article explores the manufacturing and clinical application of CAR T-cells in MM, highlighting their potential, limitations, and strategies to enhance efficacy.</p>\r\n<p>CAR-T can be manufactured by pharmaceutical companies or accredited academic centers authorized to produce and market gene-edited cellular products. This process includes sequential steps: T cell apheresis from the patient, selection of the cells, activation, gene transfer, expansion of the produced cells, cryopreservation, and reinfusion of the cells into a lymphodepleted patient. While CD3+ T cells are typically employed for CAR-T production in clinical studies, studies have demonstrated the potential advantages of specific T cell subgroups, such as naive, central memory, and memory stem cells, in enhancing efficacy. Following T cell harvesting, the subsequent phase involves genetic modification. CAR-T cells are frequently produced by applying viral vectors such as g-retrovirus or lentivirus. Although viral vectors are commonly used, non-viral methods-including CRISPR/Cas9 and integrative mRNA transfection methods produced by transposons-are also employed. Five different CAR-T cell generations have been developed. The myeloma-specific targets B-cell maturation antigen (BCMA), signaling lymphocyte activation molecular family 7, and G protein-coupled receptor class C group 5 member D are the most extensively studied in clinical trials. Emerging CAR-T cell targets under investigation include CD138, CD19, kappa light chain, CD56, NY-ESO-1, CD70, TACI, and natural killer G2D. In 2021, idecabtagene vicleucel, a BCMA-targeting agent, became the first CAR-T therapy approved for relapsed/refractory MM, marking a significant milestone in MM treatment. Subsequently, ciltacabtagene autoleucel has also been approved. However, CAR-T resistance is an emerging issue. Resistance mechanisms include T cell exhaustion, antigen escape (loss of BCMA), and tumor microenvironment-related inhibitors. To address these challenges, strategies such as BCMA non-targeted or dual-targeted CAR-T, memory T cells, humanized CAR-T, and rapidly manufactured PHE885 cells have been developed. To enhance specificity, ongoing investigations include bicistronic CAR/co-stimulator receptors, formation of memory-phenotype T cells, combination with immunomodulators or checkpoint inhibitors, armored CAR-T cells, cancer-associated fibroblast inhibitors, and CAR approaches that inhibit exhaustion signals.</p>\r\n<p>In conclusion, studies are exploring the use of CAR-T at an earlier stage, including at diagnosis, with an aim to replace ASCT. CAR-T has introduced a new dimension to MM treatment; however, limited efficacy in high-risk MM and the emergence of resistance to CAR-T remain key challenges to be addressed.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Multiple myeloma (MM) treatment becomes a major challenge once triple-class or penta-refractoriness develops. Emerging immunotherapies, including bispecific antibodies or chimeric antigen receptor (CAR)-T cell therapy, are promising options for such patients. However, the requirement for specialized expertise and staff under stringent manufacturing conditions results in high costs and restricted production. This article explores the manufacturing and clinical application of CAR T-cells in MM, highlighting their potential, limitations, and strategies to enhance efficacy. CAR-T can be manufactured by pharmaceutical companies or accredited academic centers authorized to produce and market gene-edited cellular products. This process includes sequential steps: T cell apheresis from the patient, selection of the cells, activation, gene transfer, expansion of the produced cells, cryopreservation, and reinfusion of the cells into a lymphodepleted patient. While CD3+ T cells are typically employed for CAR-T production in clinical studies, studies have demonstrated the potential advantages of specific T cell subgroups, such as naive, central memory, and memory stem cells, in enhancing efficacy. Following T cell harvesting, the subsequent phase involves genetic modification. CAR-T cells are frequently produced by applying viral vectors such as g-retrovirus or lentivirus. Although viral vectors are commonly used, non-viral methods-including CRISPR/Cas9 and integrative mRNA transfection methods produced by transposons-are also employed. Five different CAR-T cell generations have been developed. The myeloma-specific targets B-cell maturation antigen (BCMA), signaling lymphocyte activation molecular family 7, and G protein-coupled receptor class C group 5 member D are the most extensively studied in clinical trials. Emerging CAR-T cell targets under investigation include CD138, CD19, kappa light chain, CD56, NY-ESO-1, CD70, TACI, and natural killer G2D. In 2021, idecabtagene vicleucel, a BCMA-targeting agent, became the first CAR-T therapy approved for relapsed/refractory MM, marking a significant milestone in MM treatment. Subsequently, ciltacabtagene autoleucel has also been approved. However, CAR-T resistance is an emerging issue. Resistance mechanisms include T cell exhaustion, antigen escape (loss of BCMA), and tumor microenvironment-related inhibitors. To address these challenges, strategies such as BCMA non-targeted or dual-targeted CAR-T, memory T cells, humanized CAR-T, and rapidly manufactured PHE885 cells have been developed. To enhance specificity, ongoing investigations include bicistronic CAR/co-stimulator receptors, formation of memory-phenotype T cells, combination with immunomodulators or checkpoint inhibitors, armored CAR-T cells, cancer-associated fibroblast inhibitors, and CAR approaches that inhibit exhaustion signals. In conclusion, studies are exploring the use of CAR-T at an earlier stage, including at diagnosis, with an aim to replace ASCT. CAR-T has introduced a new dimension to MM treatment; however, limited efficacy in high-risk MM and the emergence of resistance to CAR-T remain key challenges to be addressed.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-4-25",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "301-310",
+    "views": 2389,
+    "downloads": 3101,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2726",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2726",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2726",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2726",
+    "localPdfUrl": "js/data/pdfs/2726.pdf",
+    "pdfUrl": "js/data/pdfs/2726.pdf"
+  },
+  {
+    "id": 2727,
+    "type": "Meta-Analysis",
+    "title": "Effectiveness and Safety of Lattice Radiotherapy in Treating Large Volume Tumors: A Systematic Review and Meta-analysis Based on Single-arm Clinical Studies",
+    "authors": [
+      {
+        "name": "Wei Li",
+        "affiliation": "Department of Radiation Oncology, The Third People’s Hospital of Dalian, Dalian Municipal Cancer Hospital, Affiliated Hospital of Dalian Medical University, Dalian, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Meina Piao",
+        "affiliation": "Department of Radiation Oncology, The Third People’s Hospital of Dalian, Dalian Municipal Cancer Hospital, Affiliated Hospital of Dalian Medical University, Dalian, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Lijun Zhai",
+        "affiliation": "Department of Radiation Oncology, The Third People’s Hospital of Dalian, Dalian Municipal Cancer Hospital, Affiliated Hospital of Dalian Medical University, Dalian, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yinju Zhu",
+        "affiliation": "Department of Radiation Oncology, The Third People’s Hospital of Dalian, Dalian Municipal Cancer Hospital, Affiliated Hospital of Dalian Medical University, Dalian, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Fengjun Lou",
+        "affiliation": "Department of Radiation Oncology, The Third People’s Hospital of Dalian, Dalian Municipal Cancer Hospital, Affiliated Hospital of Dalian Medical University, Dalian, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Liang Chen",
+        "affiliation": "Department of Radiation Oncology, The Third People’s Hospital of Dalian, Dalian Municipal Cancer Hospital, Affiliated Hospital of Dalian Medical University, Dalian, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Huankun Wang",
+        "affiliation": "Department of Radiation Oncology, The Third People’s Hospital of Dalian, Dalian Municipal Cancer Hospital, Affiliated Hospital of Dalian Medical University, Dalian, Liaoning, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Lattice radiotherapy (LRT) is a novel spatially fractionated radiotherapy technique specifically designed to treat large tumors more effectively. By alternating high-dose and low-dose regions within the tumor, LRT generates a highly diverse dose distribution. Aims: To review recent literature on LRT to determine its therapeutic efficacy, survival outcomes, and adverse event rates in treating large-volume tumors, thereby strengthening the evidence base for clinical application. Study Design: Systematic review and meta-analysis. Methods: We conducted a meta-analysis of all relevant LRT studies identified in four databases-PubMed, Embase, the Cochrane Library, and Web of Science-from their inception to September 2024. Only full-text articles were considered eligible. This study adhered to the 2020 PRISMA guidelines. Results: The meta-analysis included seven single-arm studies comprising 187 patients. The pooled 3-month complete response rate and partial response rate were 36.67% and 42.49%, respectively, while the three-month progressive disease rate was 7.10%. The tumor volume was reduced by 48.95%. According to survival analysis, the pooled 6-month overall survival rate was 79.27%, with a median response time of 4.25 months. The pooled rates of mild and moderate-to-severe adverse events were 19.40% and 3.37%, respectively. LRT has demonstrated high local control rates and a favorable safety profile in managing large-volume tumors. Conclusion: This is the first systematic meta-analysis examining the efficacy and safety of LRT in treating large-volume tumors. Although further high-quality studies are needed for validation, LRT exhibits encouraging efficiency and safety in patients with large solid tumors exceeding 5 cm in diameter.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Lattice radiotherapy (LRT) is a novel spatially fractionated radiotherapy technique specifically designed to treat large tumors more effectively. By alternating high-dose and low-dose regions within the tumor, LRT generates a highly diverse dose distribution.</p>\r\n<p><strong>Aims:</strong> To review recent literature on LRT to determine its therapeutic efficacy, survival outcomes, and adverse event rates in treating large-volume tumors, thereby strengthening the evidence base for clinical application.</p>\r\n<p><strong>Study Design:</strong> Systematic review and meta-analysis.</p>\r\n<p><strong>Methods:</strong> We conducted a meta-analysis of all relevant LRT studies identified in four databases-PubMed, Embase, the Cochrane Library, and Web of Science-from their inception to September 2024. Only full-text articles were considered eligible. This study adhered to the 2020 PRISMA guidelines.</p>\r\n<p><strong>Results:</strong> The meta-analysis included seven single-arm studies comprising 187 patients. The pooled 3-month complete response rate and partial response rate were 36.67% and 42.49%, respectively, while the three-month progressive disease rate was 7.10%. The tumor volume was reduced by 48.95%. According to survival analysis, the pooled 6-month overall survival rate was 79.27%, with a median response time of 4.25 months. The pooled rates of mild and moderate-to-severe adverse events were 19.40% and 3.37%, respectively. LRT has demonstrated high local control rates and a favorable safety profile in managing large-volume tumors.</p>\r\n<p><strong>Conclusion:</strong> This is the first systematic meta-analysis examining the efficacy and safety of LRT in treating large-volume tumors. Although further high-quality studies are needed for validation, LRT exhibits encouraging efficiency and safety in patients with large solid tumors exceeding 5 cm in diameter.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Lattice radiotherapy (LRT) is a novel spatially fractionated radiotherapy technique specifically designed to treat large tumors more effectively. By alternating high-dose and low-dose regions within the tumor, LRT generates a highly diverse dose distribution. Aims: To review recent literature on LRT to determine its therapeutic efficacy, survival outcomes, and adverse event rates in treating large-volume tumors, thereby strengthening the evidence base for clinical application. Study Design: Systematic review and meta-analysis. Methods: We conducted a meta-analysis of all relevant LRT studies identified in four databases-PubMed, Embase, the Cochrane Library, and Web of Science-from their inception to September 2024. Only full-text articles were considered eligible. This study adhered to the 2020 PRISMA guidelines. Results: The meta-analysis included seven single-arm studies comprising 187 patients. The pooled 3-month complete response rate and partial response rate were 36.67% and 42.49%, respectively, while the three-month progressive disease rate was 7.10%. The tumor volume was reduced by 48.95%. According to survival analysis, the pooled 6-month overall survival rate was 79.27%, with a median response time of 4.25 months. The pooled rates of mild and moderate-to-severe adverse events were 19.40% and 3.37%, respectively. LRT has demonstrated high local control rates and a favorable safety profile in managing large-volume tumors. Conclusion: This is the first systematic meta-analysis examining the efficacy and safety of LRT in treating large-volume tumors. Although further high-quality studies are needed for validation, LRT exhibits encouraging efficiency and safety in patients with large solid tumors exceeding 5 cm in diameter.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-2-129",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "311-320",
+    "views": 4103,
+    "downloads": 1868,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2727",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2727",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2727",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2727",
+    "localPdfUrl": "js/data/pdfs/2727.pdf",
+    "pdfUrl": "js/data/pdfs/2727.pdf"
+  },
+  {
+    "id": 2728,
+    "type": "Original Article",
+    "title": "Ultrasound-Guided Pleural Needle Biopsy Which Needle for Which Patient: A Prospective Randomized Study",
+    "authors": [
+      {
+        "name": "Emre Çelik",
+        "affiliation": "Department of Chest Diseases, Eskişehir Osmangazi University Faculty of Medicine, Eskişehir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Muzaffer Metintaş",
+        "affiliation": "Department of Chest Diseases, Eskişehir Osmangazi University Faculty of Medicine, Eskişehir, Türkiye; Lung and Pleural Cancers Research and Clinical Center, Eskişehir Osmangazi University, Eskişehir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Güntülü Ak",
+        "affiliation": "Department of Chest Diseases, Eskişehir Osmangazi University Faculty of Medicine, Eskişehir, Türkiye; Lung and Pleural Cancers Research and Clinical Center, Eskişehir Osmangazi University, Eskişehir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Hüseyin Yıldırım",
+        "affiliation": "Department of Chest Diseases, Eskişehir Osmangazi University Faculty of Medicine, Eskişehir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Emine Dündar",
+        "affiliation": "Department of Pathology, Eskişehir Osmangazi University Faculty of Medicine, Eskişehir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Nevin Aydın",
+        "affiliation": "Department of Radiology, Eskişehir Osmangazi University Faculty of Medicine, Eskişehir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Selma Metintaş",
+        "affiliation": "Lung and Pleural Cancers Research and Clinical Center, Eskişehir Osmangazi University, Eskişehir, Türkiye; Department of Public Health, Eskişehir Osmangazi University Faculty of Medicine, Eskişehir, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Given the growing incidence of pleural effusions and the limited availability of medical thoracoscopy (MT) in clinical practice, ultrasound (US)-guided pleural needle biopsies using Abrams or cutting needles are increasingly being used for the histopathological diagnosis of pleural diseases. Aims: To assessed the diagnostic yield and safety of US-guided Abrams and cutting needles to determine the optimal needle type for specific clinical situations. Study Design: Prospective randomized study. Methods: The study included 174 patients with undiagnosed pleural effusion requiring histopathological evaluation. Patients were randomized into two arms: those who underwent US-guided cutting needle biopsy (US-CNPB) and those who underwent US-guided Abrams needle biopsy (US-ANPB). Results: The US-CNPB group exhibited a false-negative rate of 36.9% and diagnostic accuracy of 63.0%. compared to 21.3% and 78.7% in the US-ANPB group, with significant differences between the groups (p = 0.036 and 0.045, respectively). In patients with pleural thickening < 1 cm or absent on US, US-CNPB exhibited 55.2% diagnostic accuracy and a negative likelihood ratio (-LR) of 0.57. For US-ANPB, the corresponding rates were 77.3% and 0.32. The difference in diagnostic accuracy between the two groups was significant (p = 0.009). In patients with pleural thickening ≥ 1 cm, the diagnostic accuracy of US-CNPB was 93.3% and 88.9% for US-ANPB, with no significant difference between the groups. The corresponding -LR values were 0.08 and 0.17. In patients with pleural thickening < 1 cm, four major bleeding events (6.9%) occurred in the US-CNPB group. No deaths were reported in this study. Conclusion: US-CNPB should be preferred in patients with pleural thickness ≥ 1 cm on US. MT is recommended for patients with pleural thickening < 1 cm or those presenting with pleural effusion without pleural thickening. However, in the absence of MT, US-ANPB is the preferred alternative because of its superior diagnostic accuracy and procedural safety.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Given the growing incidence of pleural effusions and the limited availability of medical thoracoscopy (MT) in clinical practice, ultrasound (US)-guided pleural needle biopsies using Abrams or cutting needles are increasingly being used for the histopathological diagnosis of pleural diseases.</p>\r\n<p><strong>Aims:</strong> To assessed the diagnostic yield and safety of US-guided Abrams and cutting needles to determine the optimal needle type for specific clinical situations.</p>\r\n<p><strong>Study Design:</strong> Prospective randomized study.</p>\r\n<p><strong>Methods:</strong> The study included 174 patients with undiagnosed pleural effusion requiring histopathological evaluation. Patients were randomized into two arms: those who underwent US-guided cutting needle biopsy (US-CNPB) and those who underwent US-guided Abrams needle biopsy (US-ANPB).</p>\r\n<p><strong>Results:</strong> The US-CNPB group exhibited a false-negative rate of 36.9% and diagnostic accuracy of 63.0%. compared to 21.3% and 78.7% in the US-ANPB group, with significant differences between the groups (<em>p</em> = 0.036 and 0.045, respectively). In patients with pleural thickening &lt; 1 cm or absent on US, US-CNPB exhibited 55.2% diagnostic accuracy and a negative likelihood ratio (-LR) of 0.57. For US-ANPB, the corresponding rates were 77.3% and 0.32. The difference in diagnostic accuracy between the two groups was significant (<em>p</em> = 0.009). In patients with pleural thickening &ge; 1 cm, the diagnostic accuracy of US-CNPB was 93.3% and 88.9% for US-ANPB, with no significant difference between the groups. The corresponding -LR values were 0.08 and 0.17. In patients with pleural thickening &lt; 1 cm, four major bleeding events (6.9%) occurred in the US-CNPB group. No deaths were reported in this study.</p>\r\n<p><strong>Conclusion:</strong> US-CNPB should be preferred in patients with pleural thickness &ge; 1 cm on US. MT is recommended for patients with pleural thickening &lt; 1 cm or those presenting with pleural effusion without pleural thickening. However, in the absence of MT, US-ANPB is the preferred alternative because of its superior diagnostic accuracy and procedural safety.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Given the growing incidence of pleural effusions and the limited availability of medical thoracoscopy (MT) in clinical practice, ultrasound (US)-guided pleural needle biopsies using Abrams or cutting needles are increasingly being used for the histopathological diagnosis of pleural diseases. Aims: To assessed the diagnostic yield and safety of US-guided Abrams and cutting needles to determine the optimal needle type for specific clinical situations. Study Design: Prospective randomized study. Methods: The study included 174 patients with undiagnosed pleural effusion requiring histopathological evaluation. Patients were randomized into two arms: those who underwent US-guided cutting needle biopsy (US-CNPB) and those who underwent US-guided Abrams needle biopsy (US-ANPB). Results: The US-CNPB group exhibited a false-negative rate of 36.9% and diagnostic accuracy of 63.0%. compared to 21.3% and 78.7% in the US-ANPB group, with significant differences between the groups (p = 0.036 and 0.045, respectively). In patients with pleural thickening < 1 cm or absent on US, US-CNPB exhibited 55.2% diagnostic accuracy and a negative likelihood ratio (-LR) of 0.57. For US-ANPB, the corresponding rates were 77.3% and 0.32. The difference in diagnostic accuracy between the two groups was significant (p = 0.009). In patients with pleural thickening ≥ 1 cm, the diagnostic accuracy of US-CNPB was 93.3% and 88.9% for US-ANPB, with no significant difference between the groups. The corresponding -LR values were 0.08 and 0.17. In patients with pleural thickening < 1 cm, four major bleeding events (6.9%) occurred in the US-CNPB group. No deaths were reported in this study. Conclusion: US-CNPB should be preferred in patients with pleural thickness ≥ 1 cm on US. MT is recommended for patients with pleural thickening < 1 cm or those presenting with pleural effusion without pleural thickening. However, in the absence of MT, US-ANPB is the preferred alternative because of its superior diagnostic accuracy and procedural safety.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-4-90",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "321-328",
+    "views": 2518,
+    "downloads": 1443,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2728",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2728",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2728",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2728",
+    "localPdfUrl": "js/data/pdfs/2728.pdf",
+    "pdfUrl": "js/data/pdfs/2728.pdf"
+  },
+  {
+    "id": 2729,
+    "type": "Original Article",
+    "title": "Tau Pathology in the Medial Temporal Lobe and Neocortex: Implications for Cognitive Unimpaired in Cognitively Unimpaired Older Adults",
+    "authors": [
+      {
+        "name": "İdris Demirsoy[[1,2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The accumulation of proteins such as amyloid-beta and tau, which disrupt normal cellular processes, characterizes Alzheimer’s disease (AD). Cognitive decline is strongly linked to tau pathology, which initially manifests in the medial temporal lobe (MTL). Aims: To investigated the association between cognitive performance and regional tau accumulation, as measured by positron emission tomography (PET) imaging, in cognitively normal older adults. Understanding this relationship is critical for early intervention before noticeable cognitive decline emerges. Study Design: Retrospective study. Methods: Tau PET scans were conducted on 440 participants enrolled in the anti-amyloid treatment in asymptomatic Alzheimer’s (A4) study. The participants, aged 65-85, were cognitively unimpaired and had complete demographic and genetic profiles. Tau levels in the MTL and temporal neocortex (NEO) was quantified using composite metrics. Cognitive function was evaluated using the preclinical Alzheimer’s cognitive composite (PACC) and its individual components. Multiple linear regression models were applied to determine the associations between tau burden and cognitive outcomes, including interaction terms to evaluate the moderating roles of sex and apolipoprotein E (APOE)-ε4 genotype. Results: The average participant age was 71.8 years (standard deviation = 4.84), with females comprising 58% of the sample. Greater tau accumulation in both tauMTL and tauNEO regions was significantly associated with lower cognitive scores. Specifically, reduced PACC scores (p < 0.001) corresponded with higher tau levels in both regions, primarily influenced by declines in Delayed Logical Memory and Free and Cued Selective Reminding test scores. Additionally, tauNEO levels were modestly linked to Mini-Mental State Examination scores. The effects of sex and APOE-ε4 status were minimal. Conclusion: Elevated tau deposition in the MTL and NEO is associated with diminished cognitive function, particularly in memory and processing speed domains. Notably, tau accumulation in the MTL showed a strong association with poorer outcomes on memory-related cognitive measures. The limited influence of sex and APOE-ε4 genotype highlights tau pathology as a key contributor to early cognitive decline in preclinical AD.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The accumulation of proteins such as amyloid-beta and tau, which disrupt normal cellular processes, characterizes Alzheimer&rsquo;s disease (AD). Cognitive decline is strongly linked to tau pathology, which initially manifests in the medial temporal lobe (MTL).</p>\r\n<p><strong>Aims:</strong> To investigated the association between cognitive performance and regional tau accumulation, as measured by positron emission tomography (PET) imaging, in cognitively normal older adults. Understanding this relationship is critical for early intervention before noticeable cognitive decline emerges.</p>\r\n<p><strong>Study Design:</strong> Retrospective study.</p>\r\n<p><strong>Methods:</strong> Tau PET scans were conducted on 440 participants enrolled in the anti-amyloid treatment in asymptomatic Alzheimer&rsquo;s (A4) study. The participants, aged 65-85, were cognitively unimpaired and had complete demographic and genetic profiles. Tau levels in the MTL and temporal neocortex (NEO) was quantified using composite metrics. Cognitive function was evaluated using the preclinical Alzheimer&rsquo;s cognitive composite (PACC) and its individual components. Multiple linear regression models were applied to determine the associations between tau burden and cognitive outcomes, including interaction terms to evaluate the moderating roles of sex and apolipoprotein E (APOE)-&epsilon;4 genotype.</p>\r\n<p><strong>Results:</strong> The average participant age was 71.8 years (standard deviation = 4.84), with females comprising 58% of the sample. Greater tau accumulation in both tau<sub>MTL</sub> and tau<sub>NEO</sub> regions was significantly associated with lower cognitive scores. Specifically, reduced PACC scores (<em>p</em> &lt; 0.001) corresponded with higher tau levels in both regions, primarily influenced by declines in Delayed Logical Memory and Free and Cued Selective Reminding test scores. Additionally, tau<sub>NEO</sub> levels were modestly linked to Mini-Mental State Examination scores. The effects of sex and APOE-&epsilon;4 status were minimal.</p>\r\n<p><strong>Conclusion:</strong> Elevated tau deposition in the MTL and NEO is associated with diminished cognitive function, particularly in memory and processing speed domains. Notably, tau accumulation in the MTL showed a strong association with poorer outcomes on memory-related cognitive measures. The limited influence of sex and APOE-&epsilon;4 genotype highlights tau pathology as a key contributor to early cognitive decline in preclinical AD.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The accumulation of proteins such as amyloid-beta and tau, which disrupt normal cellular processes, characterizes Alzheimer’s disease (AD). Cognitive decline is strongly linked to tau pathology, which initially manifests in the medial temporal lobe (MTL). Aims: To investigated the association between cognitive performance and regional tau accumulation, as measured by positron emission tomography (PET) imaging, in cognitively normal older adults. Understanding this relationship is critical for early intervention before noticeable cognitive decline emerges. Study Design: Retrospective study. Methods: Tau PET scans were conducted on 440 participants enrolled in the anti-amyloid treatment in asymptomatic Alzheimer’s (A4) study. The participants, aged 65-85, were cognitively unimpaired and had complete demographic and genetic profiles. Tau levels in the MTL and temporal neocortex (NEO) was quantified using composite metrics. Cognitive function was evaluated using the preclinical Alzheimer’s cognitive composite (PACC) and its individual components. Multiple linear regression models were applied to determine the associations between tau burden and cognitive outcomes, including interaction terms to evaluate the moderating roles of sex and apolipoprotein E (APOE)-ε4 genotype. Results: The average participant age was 71.8 years (standard deviation = 4.84), with females comprising 58% of the sample. Greater tau accumulation in both tauMTL and tauNEO regions was significantly associated with lower cognitive scores. Specifically, reduced PACC scores (p < 0.001) corresponded with higher tau levels in both regions, primarily influenced by declines in Delayed Logical Memory and Free and Cued Selective Reminding test scores. Additionally, tauNEO levels were modestly linked to Mini-Mental State Examination scores. The effects of sex and APOE-ε4 status were minimal. Conclusion: Elevated tau deposition in the MTL and NEO is associated with diminished cognitive function, particularly in memory and processing speed domains. Notably, tau accumulation in the MTL showed a strong association with poorer outcomes on memory-related cognitive measures. The limited influence of sex and APOE-ε4 genotype highlights tau pathology as a key contributor to early cognitive decline in preclinical AD.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-2-93",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "329-338",
+    "views": 2496,
+    "downloads": 2782,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2729",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2729",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2729",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2729",
+    "localPdfUrl": "js/data/pdfs/2729.pdf",
+    "pdfUrl": "js/data/pdfs/2729.pdf"
+  },
+  {
+    "id": 2730,
+    "type": "Original Article",
+    "title": "Triglyceride-Glucose Index Predicts Major Adverse Cardiovascular and Cerebrovascular Events in Non-Diabetic Individuals",
+    "authors": [
+      {
+        "name": "Cangtuo Li",
+        "affiliation": "Department of Vascular and Interventional Radiology, Tangshan Gongren Hospital, Tangshan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Qi Qi",
+        "affiliation": "Hebei Medical University, Shijiazhuang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Wansong Li",
+        "affiliation": "Hebei Medical University, Shijiazhuang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xuechao Zhang",
+        "affiliation": "Department of Cardiology, Tangshan Gongren Hospital, Tangshan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Lei Li",
+        "affiliation": "Department of Cardiology, Tangshan Gongren Hospital, Tangshan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jie Deng",
+        "affiliation": "Department of Cardiology, Tangshan Gongren Hospital, Tangshan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Quanle Han",
+        "affiliation": "Department of Cardiology, Tangshan Gongren Hospital, Tangshan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Shouling Wu",
+        "affiliation": "Department of Cardiology, Kailuan General Hospital, Tangshan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Kangbo Li",
+        "affiliation": "School of Clinical Medicine, North China University of Science and Technology, Tangshan, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The association between the triglyceride-glucose (TyG) index and the occurrence of major adverse cardiovascular and cerebrovascular events (MACCEs) in individuals without diabetes has not been clearly established. Aims: To investigate the potential of the TyG index to predict MACCEs in a non-diabetic population. Study Design: Prospective cohort study. Methods: This study analyzed data from 88,946 participants without diabetes, who were divided into four groups based on their TyG index values. The primary outcome was the occurrence of MACCEs, defined as myocardial infarction (MI) or stroke. Multivariable Cox proportional hazards regression models were used to assess the association between the TyG index and MACCEs. Results: Participants in the higher TyG index quartiles exhibited a greater risk of MACCEs. Moreover, a significant interaction between the TyG index and sex was identified, with a stronger association observed in women than in men. A significant interaction was also found between the TyG index and age in relation to MI risk, indicating a stronger associations in individuals younger than 60 compared to those aged 60 or older. Conclusion: The TyG index may serve as a useful prognostic marker for MACCEs among individuals without diabetes.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The association between the triglyceride-glucose (TyG) index and the occurrence of major adverse cardiovascular and cerebrovascular events (MACCEs) in individuals without diabetes has not been clearly established.</p>\r\n<p><strong>Aims:</strong> To investigate the potential of the TyG index to predict MACCEs in a non-diabetic population.</p>\r\n<p><strong>Study Design:</strong> Prospective cohort study.</p>\r\n<p><strong>Methods:</strong> This study analyzed data from 88,946 participants without diabetes, who were divided into four groups based on their TyG index values. The primary outcome was the occurrence of MACCEs, defined as myocardial infarction (MI) or stroke. Multivariable Cox proportional hazards regression models were used to assess the association between the TyG index and MACCEs.</p>\r\n<p><strong>Results:</strong> Participants in the higher TyG index quartiles exhibited a greater risk of MACCEs. Moreover, a significant interaction between the TyG index and sex was identified, with a stronger association observed in women than in men. A significant interaction was also found between the TyG index and age in relation to MI risk, indicating a stronger associations in individuals younger than 60 compared to those aged 60 or older.</p>\r\n<p><strong>Conclusion:</strong> The TyG index may serve as a useful prognostic marker for MACCEs among individuals without diabetes.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The association between the triglyceride-glucose (TyG) index and the occurrence of major adverse cardiovascular and cerebrovascular events (MACCEs) in individuals without diabetes has not been clearly established. Aims: To investigate the potential of the TyG index to predict MACCEs in a non-diabetic population. Study Design: Prospective cohort study. Methods: This study analyzed data from 88,946 participants without diabetes, who were divided into four groups based on their TyG index values. The primary outcome was the occurrence of MACCEs, defined as myocardial infarction (MI) or stroke. Multivariable Cox proportional hazards regression models were used to assess the association between the TyG index and MACCEs. Results: Participants in the higher TyG index quartiles exhibited a greater risk of MACCEs. Moreover, a significant interaction between the TyG index and sex was identified, with a stronger association observed in women than in men. A significant interaction was also found between the TyG index and age in relation to MI risk, indicating a stronger associations in individuals younger than 60 compared to those aged 60 or older. Conclusion: The TyG index may serve as a useful prognostic marker for MACCEs among individuals without diabetes.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-2-109",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "339-346",
+    "views": 23319,
+    "downloads": 1829,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2730",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2730",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2730",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2730",
+    "localPdfUrl": "js/data/pdfs/2730.pdf",
+    "pdfUrl": "js/data/pdfs/2730.pdf"
+  },
+  {
+    "id": 2731,
+    "type": "Original Article",
+    "title": "Mechanism of Neutrophil p90RSK-Nrf2 Signaling Pathway in Atherosclerosis",
+    "authors": [
+      {
+        "name": "Jiawen Li",
+        "affiliation": "Department of Cardiology, The Fourth Affiliated Hospital of Harbin Medical University, Harbin, China",
+        "orcid": ""
+      },
+      {
+        "name": "Lei Wang",
+        "affiliation": "Department of Cardiology, The Fourth Affiliated Hospital of Harbin Medical University, Harbin, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiao Liang",
+        "affiliation": "Department of Cardiology, The First Affiliated Hospital of Harbin Medical University, Harbin, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiaoxia Li",
+        "affiliation": "Department of Medical Laboratory, The Fourth Affiliated Hospital of Harbin Medical University, Harbin, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: MRP8/14, a calcium-binding protein of the S100 family, is predominantly expressed in myeloid cells and exhibits proinflammatory and prothrombotic properties. Platelet-neutrophil interactions can trigger MRP8/14 release, but their role in atherosclerosis (AS) remains unclear. Aims: To investigate the effect of MRP8/14 on AS progression and the underlying mechanisms involved, focusing on neutrophil activation and the toll-like receptor 4 (TLR4)-ERK1/2-p90RSK and NRF2-ARE pathways. Study Design: Ex vivo and animal study. Methods: Neutrophils isolated from mouse bone marrow were stimulated with P-selectin to induce MRP8/14 release, which was subsequently quantified using ELISA. Neutrophil extracellular traps (NET) formation was induced by phobolol 12-myristate 13-acetate, and Mrp8/14 expression was examined via fluorescence labeling. Cytokine release and CD11b expression were assessed using flow cytometry. An AS mouse model was established by administering a high-fat diet. Atherosclerotic plaque size was analyzed using Oil Red O staining. Proteins from the TLR4-ERK1/2-p90RSK and NRF2-ARE pathways were analyzed by Western blotting. Results: P-selectin induced MRP8/14 release, which was inhibited by P-selectin antagonists. NET formation also contributed to MRP8/14 secretion. hMRP8/14 treatment enhanced CD11b expression, neutrophil adhesion, and proinflammatory cytokine secretion. In AS mice, MRP8/14 secretion was linked to TLR4 upregulation, ERK1/2-p90RSK signaling activation, and NRF2-ARE pathway inhibition. Paquinimod, an MRP8/14 antagonist, mitigated neutrophil activation, inflammation, and arterial plaque formation. Conclusion: MRP8/14 secreted from neutrophils activates the ERK1/2-p90RSK pathway via TLR4 and suppresses the NRF2-ARE pathway, driving inflammation and promoting AS progression.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> MRP8/14, a calcium-binding protein of the S100 family, is predominantly expressed in myeloid cells and exhibits proinflammatory and prothrombotic properties. Platelet-neutrophil interactions can trigger MRP8/14 release, but their role in atherosclerosis (AS) remains unclear.</p>\r\n<p><strong>Aims:</strong> To investigate the effect of MRP8/14 on AS progression and the underlying mechanisms involved, focusing on neutrophil activation and the toll-like receptor 4 (TLR4)-ERK1/2-p90RSK and NRF2-ARE pathways.</p>\r\n<p><strong>Study Design:</strong> Ex vivo and animal study.</p>\r\n<p><strong>Methods:</strong> Neutrophils isolated from mouse bone marrow were stimulated with P-selectin to induce MRP8/14 release, which was subsequently quantified using ELISA. Neutrophil extracellular traps (NET) formation was induced by phobolol 12-myristate 13-acetate, and Mrp8/14 expression was examined via fluorescence labeling. Cytokine release and CD11b expression were assessed using flow cytometry. An AS mouse model was established by administering a high-fat diet. Atherosclerotic plaque size was analyzed using Oil Red O staining. Proteins from the TLR4-ERK1/2-p90RSK and NRF2-ARE pathways were analyzed by Western blotting.</p>\r\n<p><strong>Results:</strong> P-selectin induced MRP8/14 release, which was inhibited by P-selectin antagonists. NET formation also contributed to MRP8/14 secretion. hMRP8/14 treatment enhanced CD11b expression, neutrophil adhesion, and proinflammatory cytokine secretion. In AS mice, MRP8/14 secretion was linked to TLR4 upregulation, ERK1/2-p90RSK signaling activation, and NRF2-ARE pathway inhibition. Paquinimod, an MRP8/14 antagonist, mitigated neutrophil activation, inflammation, and arterial plaque formation.</p>\r\n<p><strong>Conclusion:</strong> MRP8/14 secreted from neutrophils activates the ERK1/2-p90RSK pathway via TLR4 and suppresses the NRF2-ARE pathway, driving inflammation and promoting AS progression.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: MRP8/14, a calcium-binding protein of the S100 family, is predominantly expressed in myeloid cells and exhibits proinflammatory and prothrombotic properties. Platelet-neutrophil interactions can trigger MRP8/14 release, but their role in atherosclerosis (AS) remains unclear. Aims: To investigate the effect of MRP8/14 on AS progression and the underlying mechanisms involved, focusing on neutrophil activation and the toll-like receptor 4 (TLR4)-ERK1/2-p90RSK and NRF2-ARE pathways. Study Design: Ex vivo and animal study. Methods: Neutrophils isolated from mouse bone marrow were stimulated with P-selectin to induce MRP8/14 release, which was subsequently quantified using ELISA. Neutrophil extracellular traps (NET) formation was induced by phobolol 12-myristate 13-acetate, and Mrp8/14 expression was examined via fluorescence labeling. Cytokine release and CD11b expression were assessed using flow cytometry. An AS mouse model was established by administering a high-fat diet. Atherosclerotic plaque size was analyzed using Oil Red O staining. Proteins from the TLR4-ERK1/2-p90RSK and NRF2-ARE pathways were analyzed by Western blotting. Results: P-selectin induced MRP8/14 release, which was inhibited by P-selectin antagonists. NET formation also contributed to MRP8/14 secretion. hMRP8/14 treatment enhanced CD11b expression, neutrophil adhesion, and proinflammatory cytokine secretion. In AS mice, MRP8/14 secretion was linked to TLR4 upregulation, ERK1/2-p90RSK signaling activation, and NRF2-ARE pathway inhibition. Paquinimod, an MRP8/14 antagonist, mitigated neutrophil activation, inflammation, and arterial plaque formation. Conclusion: MRP8/14 secreted from neutrophils activates the ERK1/2-p90RSK pathway via TLR4 and suppresses the NRF2-ARE pathway, driving inflammation and promoting AS progression.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-4-73",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "347-357",
+    "views": 3354,
+    "downloads": 1750,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2731",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2731",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2731",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2731",
+    "localPdfUrl": "js/data/pdfs/2731.pdf",
+    "pdfUrl": "js/data/pdfs/2731.pdf"
+  },
+  {
+    "id": 2732,
+    "type": "Original Article",
+    "title": "Association Between the Glucose-to-Lymphocyte Ratio and 28-Day Mortality in Patients with Mechanical Ventilation",
+    "authors": [
+      {
+        "name": "Mengqi Zhang",
+        "affiliation": "Second Affiliated Hospital of Chongqing Medical University, Department of Respiratory and Critical Care Medicine, Chongqing, China; Key Laboratory of Respiratory Inflammatory Injury and Precision Diagnosis and Treatment, Chongqing Municipal Health and Health Committee, Chongqing, China; Chongqing Key Laboratory of Precision Medicine and Prevention of Major Respiratory Diseases, Chongqing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Daoxin Wang",
+        "affiliation": "Second Affiliated Hospital of Chongqing Medical University, Department of Respiratory and Critical Care Medicine, Chongqing, China; Key Laboratory of Respiratory Inflammatory Injury and Precision Diagnosis and Treatment, Chongqing Municipal Health and Health Committee, Chongqing, China; Chongqing Key Laboratory of Precision Medicine and Prevention of Major Respiratory Diseases, Chongqing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jing He",
+        "affiliation": "Second Affiliated Hospital of Chongqing Medical University, Department of Respiratory and Critical Care Medicine, Chongqing, China; Key Laboratory of Respiratory Inflammatory Injury and Precision Diagnosis and Treatment, Chongqing Municipal Health and Health Committee, Chongqing, China; Chongqing Key Laboratory of Precision Medicine and Prevention of Major Respiratory Diseases, Chongqing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Junnan Peng",
+        "affiliation": "Second Affiliated Hospital of Chongqing Medical University, Department of Respiratory and Critical Care Medicine, Chongqing, China; Key Laboratory of Respiratory Inflammatory Injury and Precision Diagnosis and Treatment, Chongqing Municipal Health and Health Committee, Chongqing, China; Chongqing Key Laboratory of Precision Medicine and Prevention of Major Respiratory Diseases, Chongqing, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The association between the glucose-to-lymphocyte ratio (GLR) and adverse outcomes in intensive care unit patients receiving mechanical ventilation (MV) has not been clearly established. Aims: To examine the link between GLR and 28-day mortality in MV patients and to develop an interpretable machine learning model to predict mortality risk. Study Design: A retrospective study. Methods: Data were obtained from the Medical Information Mart for Intensive Care IV (MIMIC-IV, version 3.1) database. Receiver operating characteristic (ROC) and restricted cubic spline (RCS) curves were employed to assess the relationship between GLR and mortality. Patients were categorized into high and low GLR groups for Kaplan-Meier survival analysis. Subgroup analyses were performed to evaluate the association across different patient populations. Selected variables were used to construct eXtreme Gradient Boosting (XGBoost), support vector machine, Naive Bayes, and k-nearest neighbors models. Model interpretability was assessed using SHapley Additive exPlanations (SHAP) values. Results: A total of 5,738 patients met the inclusion criteria. RCS analysis indicated a nonlinear relationship between GLR and 28-day mortality. Patients with elevated GLR had significantly higher 28-day mortality rates (hazard ratio > 1, p < 0.05). Among the models, XGBoost demonstrated the best performance, achieving an area under the ROC curve of 0.969 and an F1-score of 0.963. SHAP analysis identified Acute Physiology Score III, GLR, and lactate as the three most important predictors. Conclusion: GLR is nonlinearly associated with 28-day mortality in patients undergoing MV and may serve as a valuable prognostic marker. The interpretable XGBoost model confirmed the significant association between GLR and short-term mortality.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The association between the glucose-to-lymphocyte ratio (GLR) and adverse outcomes in intensive care unit patients receiving mechanical ventilation (MV) has not been clearly established.</p>\r\n<p><strong>Aims:</strong> To examine the link between GLR and 28-day mortality in MV patients and to develop an interpretable machine learning model to predict mortality risk.</p>\r\n<p><strong>Study Design:</strong> A retrospective study.</p>\r\n<p><strong>Methods:</strong> Data were obtained from the Medical Information Mart for Intensive Care IV (MIMIC-IV, version 3.1) database. Receiver operating characteristic (ROC) and restricted cubic spline (RCS) curves were employed to assess the relationship between GLR and mortality. Patients were categorized into high and low GLR groups for Kaplan-Meier survival analysis. Subgroup analyses were performed to evaluate the association across different patient populations. Selected variables were used to construct eXtreme Gradient Boosting (XGBoost), support vector machine, Naive Bayes, and k-nearest neighbors models. Model interpretability was assessed using SHapley Additive exPlanations (SHAP) values.</p>\r\n<p><strong>Results:</strong> A total of 5,738 patients met the inclusion criteria. RCS analysis indicated a nonlinear relationship between GLR and 28-day mortality. Patients with elevated GLR had significantly higher 28-day mortality rates (hazard ratio &gt; 1, <em>p</em> &lt; 0.05). Among the models, XGBoost demonstrated the best performance, achieving an area under the ROC curve of 0.969 and an F1-score of 0.963. SHAP analysis identified Acute Physiology Score III, GLR, and lactate as the three most important predictors.</p>\r\n<p><strong>Conclusion:</strong> GLR is nonlinearly associated with 28-day mortality in patients undergoing MV and may serve as a valuable prognostic marker. The interpretable XGBoost model confirmed the significant association between GLR and short-term mortality.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The association between the glucose-to-lymphocyte ratio (GLR) and adverse outcomes in intensive care unit patients receiving mechanical ventilation (MV) has not been clearly established. Aims: To examine the link between GLR and 28-day mortality in MV patients and to develop an interpretable machine learning model to predict mortality risk. Study Design: A retrospective study. Methods: Data were obtained from the Medical Information Mart for Intensive Care IV (MIMIC-IV, version 3.1) database. Receiver operating characteristic (ROC) and restricted cubic spline (RCS) curves were employed to assess the relationship between GLR and mortality. Patients were categorized into high and low GLR groups for Kaplan-Meier survival analysis. Subgroup analyses were performed to evaluate the association across different patient populations. Selected variables were used to construct eXtreme Gradient Boosting (XGBoost), support vector machine, Naive Bayes, and k-nearest neighbors models. Model interpretability was assessed using SHapley Additive exPlanations (SHAP) values. Results: A total of 5,738 patients met the inclusion criteria. RCS analysis indicated a nonlinear relationship between GLR and 28-day mortality. Patients with elevated GLR had significantly higher 28-day mortality rates (hazard ratio > 1, p < 0.05). Among the models, XGBoost demonstrated the best performance, achieving an area under the ROC curve of 0.969 and an F1-score of 0.963. SHAP analysis identified Acute Physiology Score III, GLR, and lactate as the three most important predictors. Conclusion: GLR is nonlinearly associated with 28-day mortality in patients undergoing MV and may serve as a valuable prognostic marker. The interpretable XGBoost model confirmed the significant association between GLR and short-term mortality.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-2-49",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "358-366",
+    "views": 3305,
+    "downloads": 1943,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2732",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2732",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2732",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2732",
+    "localPdfUrl": "js/data/pdfs/2732.pdf",
+    "pdfUrl": "js/data/pdfs/2732.pdf"
+  },
+  {
+    "id": 2733,
+    "type": "Clinical Image",
+    "title": "Effective Management of Buried Bumper Syndrome with the Balloon Dilation Pull Technique",
+    "authors": [
+      {
+        "name": "Sónia Barros",
+        "affiliation": "Department of Gastroenterology, Unidade de Saúde Local do Algarve - Unidade de Faro, Faro, Portugal",
+        "orcid": ""
+      },
+      {
+        "name": "Margarida Portugal",
+        "affiliation": "Department of Gastroenterology, Unidade de Saúde Local do Algarve - Unidade de Faro, Faro, Portugal",
+        "orcid": ""
+      },
+      {
+        "name": "Luís Miguel Relvas",
+        "affiliation": "Department of Gastroenterology, Unidade de Saúde Local do Algarve - Unidade de Faro, Faro, Portugal",
+        "orcid": ""
+      },
+      {
+        "name": "Ana Margarida Vaz",
+        "affiliation": "Department of Gastroenterology, Unidade de Saúde Local do Algarve - Unidade de Faro, Faro, Portugal",
+        "orcid": ""
+      },
+      {
+        "name": "Bruno Peixe",
+        "affiliation": "Department of Gastroenterology, Unidade de Saúde Local do Algarve - Unidade de Faro, Faro, Portugal",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Buried bumper syndrome (BBS) refers to the internal migration of the bumper into the gastric or abdominal wall, a potential complication of percutaneous endoscopic gastrostomy (PEG) placement. Management typically requires endoscopic intervention, with various techniques reported, including dissection methods and the use of innovative devices.1-3 This report",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-9-53",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "367-368",
+    "views": 2392,
+    "downloads": 908,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2733",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2733",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2733",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2733",
+    "localPdfUrl": "js/data/pdfs/2733.pdf",
+    "pdfUrl": "js/data/pdfs/2733.pdf"
+  },
+  {
+    "id": 2734,
+    "type": "Clinical Image",
+    "title": "Rhinoentomophthoromycosis: An Enigma in Itself",
+    "authors": [
+      {
+        "name": "Smrithy Sivadas K",
+        "affiliation": "Department of Oral Medicine and Radiology, Nitte (Deemed to be University), AB Shetty Memorial Institute of Dental Sciences, Mangalore, Karnataka, India",
+        "orcid": ""
+      },
+      {
+        "name": "Renita Lorina Castelino",
+        "affiliation": "Department of Oral Medicine and Radiology, Nitte (Deemed to be University), AB Shetty Memorial Institute of Dental Sciences, Mangalore, Karnataka, India",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A patient aged 35 years visited the outpatient department with swelling in the upper lip and nose since 6 years. The swelling had gradually increased in size, resulting in facial disfigurement and social hinderance. The patient had visited another private hospital in 2018 for the swelling. At that time, a biopsy was obtained, and the sample was subjected to ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2024-12-7",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "369-370",
+    "views": 2334,
+    "downloads": 978,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2734",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2734",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2734",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2734",
+    "localPdfUrl": "js/data/pdfs/2734.pdf",
+    "pdfUrl": "js/data/pdfs/2734.pdf"
+  },
+  {
+    "id": 2735,
+    "type": "Clinical Image",
+    "title": "Strawberry Gingivitis: Rare Early Manifestation of Relapsing Granulomatosis with Polyangiitis",
+    "authors": [
+      {
+        "name": "Daisuke Tsukui",
+        "affiliation": "Department of Internal Medicine, Teikyo University School of Medicine, Tokyo, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Hirotoshi Kikuchi",
+        "affiliation": "Department of Internal Medicine, Teikyo University School of Medicine, Tokyo, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Yuko Sasajima",
+        "affiliation": "Department of Pathology, Teikyo University School of Medicine, Tokyo, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Hajime Kono",
+        "affiliation": "Department of Internal Medicine, Teikyo University School of Medicine, Tokyo, Japan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 38-year-old man was referred to a dentist with strawberry-like gingivitis (Figure 1a). A biopsy of the gingivitis revealed hyperplasia and inflammatory cell infiltration (Figure 1b). The patient had a 6-year history of granulomatosis with polyangiitis (GPA), previously referred to as Wegener’s granulomatosis. Six years prior to the current admission, the p",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2024-12-60",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "371-372",
+    "views": 3430,
+    "downloads": 1204,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2735",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2735",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2735",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2735",
+    "localPdfUrl": "js/data/pdfs/2735.pdf",
+    "pdfUrl": "js/data/pdfs/2735.pdf"
+  },
+  {
+    "id": 2736,
+    "type": "Scientific Letter",
+    "title": "Development of an Artificial Intelligence Algorithm for Colposcopic Recognition of Cervical Features - Introduction of an Annotation Protocol",
+    "authors": [
+      {
+        "name": "Georgi Danielov Prandzhev",
+        "affiliation": "Department of Obstetrics and Gynecology, Medical University - Pleven, Pleven, Bulgaria; Department of Obstetrics and Gynecology, University Hospital Saint Marina - Pleven, Pleven, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Grigor Angelov Gortchev",
+        "affiliation": "Department of Obstetrics and Gynecology, Medical University - Pleven, Pleven, Bulgaria; Department of Obstetrics and Gynecology, University Hospital Saint Marina - Pleven, Pleven, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Dobromir Dimitrov Dimitrov",
+        "affiliation": "Department of Surgical Propaedeutics, Medical University - Pleven, Pleven, Bulgaria; Department of Surgical Oncology, Dr. Georgi Stranski University Hospital, Pleven, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Radoslav Iliev Miltchev",
+        "affiliation": "Faculty of Industrial Technology, Technical University of Sofia, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Slavcho Tomov Tomov",
+        "affiliation": "Department of Obstetrics and Gynecology, Medical University - Pleven, Pleven, Bulgaria; Department of Obstetrics and Gynecology, University Hospital Saint Marina - Pleven, Pleven, Bulgaria",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Cervical cancer, which is largely preventable via effective screening and vaccination, remains the fourth most common cancer among women globally. In 2020, approximately 604,000 new cases and 342,000 cancer-related deaths were reported, with most occurring in low- and middle-income countries due to inadequate access to screening, human papillomavirus (HPV) v",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2024-12-35",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "373-375",
+    "views": 2491,
+    "downloads": 894,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2736",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2736",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2736",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2736",
+    "localPdfUrl": "js/data/pdfs/2736.pdf",
+    "pdfUrl": "js/data/pdfs/2736.pdf"
+  },
+  {
+    "id": 2737,
+    "type": "Scientific Letter",
+    "title": "Who Will Care for Our Children? Understanding the Lower Preference Rates for Pediatrics in Türkiye",
+    "authors": [
+      {
+        "name": "Kaan Can Demirbaş",
+        "affiliation": "Department of Pediatrics, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Cem Çakmak",
+        "affiliation": "Department of Pediatrics, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Seha Saygılı",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Nephrology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Nur Canpolat",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Nephrology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Özgür Kasapçopur",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "“The true measure of a community’s standing is how well it attends to its children-their health and safety, their material security, their education, and their sense of being loved, valued, and included in the families and communities into which they are born”.1 The well-being of children has been defined by several organizations using a variety of domains, ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-10-100",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "376-379",
+    "views": 2430,
+    "downloads": 974,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2737",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2737",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2737",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2737",
+    "localPdfUrl": "js/data/pdfs/2737.pdf",
+    "pdfUrl": "js/data/pdfs/2737.pdf"
+  },
+  {
+    "id": 2738,
+    "type": "Scientific Letter",
+    "title": "Cabozantinib-Associated Posterior Reversible Encephalopathy Syndrome",
+    "authors": [
+      {
+        "name": "Gökhan Öztürk",
+        "affiliation": "Department of Medical Oncology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Aysun Fatma Akkuş",
+        "affiliation": "Department of Medical Oncology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Muhammet Bekir Hacıoğlu",
+        "affiliation": "Department of Medical Oncology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Serdar Solak",
+        "affiliation": "Department of Radiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Elif Nur Çatalbaş",
+        "affiliation": "Department of Internal Medicine, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 68-year-old male patient visited our clinic in July 2024 with left flank pain. An abdominal computed tomography (CT) scan identified an 8.5 cm malignant mass in the upper pole of the left kidney with invasion into the renal vein. A thoracic CT scan revealed multiple bilateral metastatic lung lesions, the largest measuring 2.5 cm in diameter. A tru-cut biop",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2024-12-101",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "380-382",
+    "views": 2420,
+    "downloads": 1036,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2738",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2738",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2738",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2738",
+    "localPdfUrl": "js/data/pdfs/2738.pdf",
+    "pdfUrl": "js/data/pdfs/2738.pdf"
+  },
+  {
+    "id": 2739,
+    "type": "Scientific Letter",
+    "title": "A Novel Approach for the Treatment of Subclavian Steal Syndrome in a Patient Undergoing Coronary Artery Bypass Grafting",
+    "authors": [
+      {
+        "name": "Mesut Engin",
+        "affiliation": "Clinic of Cardiovascular Surgery, University of Health Sciences Türkiye, Bursa Yüksek İhtisas Training and Research Hospital, Bursa, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Yusuf Ata",
+        "affiliation": "Clinic of Cardiovascular Surgery, University of Health Sciences Türkiye, Bursa Yüksek İhtisas Training and Research Hospital, Bursa, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ufuk Aydın",
+        "affiliation": "Clinic of Cardiovascular Surgery, University of Health Sciences Türkiye, Bursa Yüksek İhtisas Training and Research Hospital, Bursa, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Hasan Arı",
+        "affiliation": "Clinic of Cardiology, University of Health Sciences Türkiye, Bursa Yüksek İhtisas Training and Research Hospital, Bursa, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Tamer Türk",
+        "affiliation": "Clinic of Cardiovascular Surgery, VM Medicalpark Bursa Hospital, Bursa, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 59-year-old male was admitted to our clinic for complaints of exercise-induced angina. A coronary angiography and three-vessel coronary artery bypass graft (CABG) surgery was planned (Figure 1a). He reported a medical history of chronic obstructive pulmonary disease (COPD), peripheral arterial disease, and hypertension.A preoperative carotid Doppler ultras",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-11-4",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "383-384",
+    "views": 2398,
+    "downloads": 899,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2739",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2739",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2739",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2739",
+    "localPdfUrl": "js/data/pdfs/2739.pdf",
+    "pdfUrl": "js/data/pdfs/2739.pdf"
+  },
+  {
+    "id": 2740,
+    "type": "Erratum",
+    "title": "Erratum",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274//balkanmedj.galenos.2025.e001",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "4",
+    "pages": "385-385",
+    "views": 2144,
+    "downloads": 907,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1297",
+    "sourceArticleId": "2740",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2740",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2740",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2740",
+    "localPdfUrl": "js/data/pdfs/2740.pdf",
+    "pdfUrl": "js/data/pdfs/2740.pdf"
+  }
+]

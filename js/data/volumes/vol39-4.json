@@ -1,0 +1,751 @@
+[
+  {
+    "id": 2413,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "4",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1278",
+    "sourceArticleId": "2413",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2413",
+    "localPdfUrl": "js/data/pdfs/2413.pdf",
+    "pdfUrl": "js/data/pdfs/2413.pdf"
+  },
+  {
+    "id": 2414,
+    "type": "Editorial",
+    "title": "Being a Q2 Journal",
+    "authors": [
+      {
+        "name": "Zafer Koçak",
+        "affiliation": "Editor in Chief, Balkan Medical Journal Department of Radiation Oncology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "On June 28 2022, Clarivate released the 2022 update to the annual Journal Citation Reports (JCR)™. This year’s JCR report demonstrated the profound effect of the COVID-19 pandemic on scientific publishing.1 Moreover, this year’s announcement heralded the fulfillment of a dream in the 44-year history of the Balkan Medical Journal. The Balkan Medical Journal b",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.21072022",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "4",
+    "pages": "228-229",
+    "views": 7486,
+    "downloads": 6097,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1278",
+    "sourceArticleId": "2414",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2414",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2414",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2414",
+    "localPdfUrl": "js/data/pdfs/2414.pdf",
+    "pdfUrl": "js/data/pdfs/2414.pdf"
+  },
+  {
+    "id": 2406,
+    "type": "Invited Review",
+    "title": "Follicular Growth Pattern Disease on Thyroid Fine-needle Aspiration Biopsy",
+    "authors": [
+      {
+        "name": "Ebru Tastekin",
+        "affiliation": "Department of Pathology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şule Canberk",
+        "affiliation": "Pathology Instituto de Investigação e Inovação em Saúde, University of Porto, Institute of Molecular Pathology and Immunology, Porto, Portugal; 3Institute of Molecular Pathology and Immunology of the University of Porto (Ipatimup), Rua Júlio Amaral de Carvalho, Porto, Portugal; Abel Salazar Biomedical Sciences Institute (ICBAS), University of Porto, Rua Jorge de Viterbo Ferreira, Porto, Portugal",
+        "orcid": ""
+      },
+      {
+        "name": "Fernando C. Schmitt",
+        "affiliation": "Pathology Instituto de Investigação e Inovação em Saúde, University of Porto, Institute of Molecular Pathology and Immunology, Porto, Portugal; Department of Pathology, Faculty of Medicine of the University of Porto (FMUP), Alameda Professor Hernâni Monteiro, Porto, Portugal",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Thyroid nodules are a common worldwide health problem and a diagnostic challenge for clinicians and cytopathologists. Follicular growth pattern constitutes the majority of thyroid lesions. Thyroid nodules can be neoplastic or non-neoplastic, and neoplastic nodules can be classified as benign, malignant, or gray zone. Gray zone lesions include different benign and malignant entities that might be resulted in unnecessary thyroidectomies with risk of morbidity and higher health care costs. Depending on the cellularity, most cases might fall into the follicular neoplasia (FN)/ suspicious for FN (SFN) category or follicular lesion of undetermined significance (FLUS) in The Bethesda System for Reporting Thyroid Cytopathology (TBSRTC). Pathologists must be aware of the relationship between this diagnostic category and follow-up patient management and avoid over-diagnosing by mastering the diagnostic criteria.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>Thyroid nodules are a common worldwide health problem and a diagnostic challenge for clinicians and cytopathologists. Follicular growth pattern constitutes the majority of thyroid lesions. Thyroid nodules can be neoplastic or non-neoplastic, and neoplastic nodules can be classified as benign, malignant, or gray zone. Gray zone lesions include different benign and malignant entities that might be resulted in unnecessary thyroidectomies with risk of morbidity and higher health care costs. Depending on the cellularity, most cases might fall into the follicular neoplasia (FN)/ suspicious for FN (SFN) category or follicular lesion of undetermined significance (FLUS) in The Bethesda System for Reporting Thyroid Cytopathology (TBSRTC). Pathologists must be aware of the relationship between this diagnostic category and follow-up patient management and avoid over-diagnosing by mastering the diagnostic criteria.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Thyroid nodules are a common worldwide health problem and a diagnostic challenge for clinicians and cytopathologists. Follicular growth pattern constitutes the majority of thyroid lesions. Thyroid nodules can be neoplastic or non-neoplastic, and neoplastic nodules can be classified as benign, malignant, or gray zone. Gray zone lesions include different benign and malignant entities that might be resulted in unnecessary thyroidectomies with risk of morbidity and higher health care costs. Depending on the cellularity, most cases might fall into the follicular neoplasia (FN)/ suspicious for FN (SFN) category or follicular lesion of undetermined significance (FLUS) in The Bethesda System for Reporting Thyroid Cytopathology (TBSRTC). Pathologists must be aware of the relationship between this diagnostic category and follow-up patient management and avoid over-diagnosing by mastering the diagnostic criteria.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-5-17",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "4",
+    "pages": "230-238",
+    "views": 8716,
+    "downloads": 4206,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1278",
+    "sourceArticleId": "2406",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2406",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2406",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2406",
+    "localPdfUrl": "js/data/pdfs/2406.pdf",
+    "pdfUrl": "js/data/pdfs/2406.pdf"
+  },
+  {
+    "id": 2401,
+    "type": "Original Article",
+    "title": "Effects of Caudal and Penile Blocks on the Complication Rates of Hypospadias Repair",
+    "authors": [
+      {
+        "name": "Ahsen Karagözlü Akgül",
+        "affiliation": "Department of Pediatric Surgery, Division of Pediatric Urology, Faculty of Medicine Marmara University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Arzu Canmemiş",
+        "affiliation": "Clinic of Pediatric Urology Ministry of Health, Göztepe Prof. Dr. Süleyman Yalçın Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Eyvazov",
+        "affiliation": "Department of Pediatric Surgery, Faculty of Medicine Marmara University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hilal Hürel",
+        "affiliation": "Department of Pediatric Surgery, Faculty of Medicine Marmara University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gürsu Kiyan",
+        "affiliation": "Department of Pediatric Surgery, Faculty of Medicine Marmara University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tümay Umuroğlu",
+        "affiliation": "Department of Anaesthesiology and Reanimation, Faculty of Medicine Marmara University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Halil Tuğtepe",
+        "affiliation": "Department of Pediatric Surgery, Division of Pediatric Urology, Faculty of Medicine Marmara University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: The major influencing factors for complications during hypospadias repair are the original location of the meatus, previous urethral surgery, surgical technique, and surgeon’s experience. While the effect of the technique of regional analgesia on complication rates has been considered in some studies, this issue remains controversial.Aims: To determine the effect of caudal block and penile block on complication rates of hypospadias repair in patients with subcoronal hypospadias.Study Design: Retrospective cross-sectional study.Methods: Data of children who underwent hypospadias repair between 2011 and 2019 in our clinic (n = 770) were reviewed retrospectively. Only patients with subcoronal hypospadias and who underwent tubularized incised plate urethroplasty, performed by the same two experienced surgeons (n = 279), were included in the study. The exclusion criteria were incomplete data and follow-up time shorter than 12 months. Data of 279 patients were analyzed. Patients were divided into two groups according to the analgesia type: caudal block (n = 95) and penile block (n = 184), and complication rates were compared between these groups.Results: The median age was 36 months in the caudal block group and 30 months in the penile block group (P = 0.390). The median follow-up times were 54 and 42.7 months in the caudal and penile block groups, respectively. Total complication rates did not differ significantly between the groups and were determined as 10.5% and 12.5% in the caudal and penile groups, respectively. Urethrocutaneous fistula rates were observed as 2.1% and 4.3% (p=0.50). None of the patients had penile chordee and no penile plication was performed in the whole group.Conclusion: This study shows that there is no increase in post-repair complications in patients with subcoronal hypospadias who underwent caudal block.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> The major influencing factors for complications during hypospadias repair are the original location of the meatus, previous urethral surgery, surgical technique, and surgeon&rsquo;s experience. While the effect of the technique of regional analgesia on complication rates has been considered in some studies, this issue remains controversial.<br /><strong>Aims:</strong> To determine the effect of caudal block and penile block on complication rates of hypospadias repair in patients with subcoronal hypospadias.<br /><strong>Study Design:</strong> Retrospective cross-sectional study.<br /><strong>Methods:</strong> Data of children who underwent hypospadias repair between 2011 and 2019 in our clinic (n = 770) were reviewed retrospectively. Only patients with subcoronal hypospadias and who underwent tubularized incised plate urethroplasty, performed by the same two experienced surgeons (n = 279), were included in the study. The exclusion criteria were incomplete data and follow-up time shorter than 12 months. Data of 279 patients were analyzed. Patients were divided into two groups according to the analgesia type: caudal block (n = 95) and penile block (n = 184), and complication rates were compared between these groups.<br /><strong>Results:</strong> The median age was 36 months in the caudal block group and 30 months in the penile block group (<em>P</em> = 0.390). The median follow-up times were 54 and 42.7 months in the caudal and penile block groups, respectively. Total complication rates did not differ significantly between the groups and were determined as 10.5% and 12.5% in the caudal and penile groups, respectively. Urethrocutaneous fistula rates were observed as 2.1% and 4.3% (p=0.50). None of the patients had penile chordee and no penile plication was performed in the whole group.<br /><strong>Conclusion:</strong> This study shows that there is no increase in post-repair complications in patients with subcoronal hypospadias who underwent caudal block.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: The major influencing factors for complications during hypospadias repair are the original location of the meatus, previous urethral surgery, surgical technique, and surgeon’s experience. While the effect of the technique of regional analgesia on complication rates has been considered in some studies, this issue remains controversial.Aims: To determine the effect of caudal block and penile block on complication rates of hypospadias repair in patients with subcoronal hypospadias.Study Design: Retrospective cross-sectional study.Methods: Data of children who underwent hypospadias repair between 2011 and 2019 in our clinic (n = 770) were reviewed retrospectively. Only patients with subcoronal hypospadias and who underwent tubularized incised plate urethroplasty, performed by the same two experienced surgeons (n = 279), were included in the study. The exclusion criteria were incomplete data and follow-up time shorter than 12 months. Data of 279 patients were analyzed. Patients were divided into two groups according to the analgesia type: caudal block (n = 95) and penile block (n = 184), and complication rates were compared between these groups.Results: The median age was 36 months in the caudal block group and 30 months in the penile block group (P = 0.390). The median follow-up times were 54 and 42.7 months in the caudal and penile block groups, respectively. Total complication rates did not differ significantly between the groups and were determined as 10.5% and 12.5% in the caudal and penile groups, respectively. Urethrocutaneous fistula rates were observed as 2.1% and 4.3% (p=0.50). None of the patients had penile chordee and no penile plication was performed in the whole group.Conclusion: This study shows that there is no increase in post-repair complications in patients with subcoronal hypospadias who underwent caudal block.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-1-62",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "4",
+    "pages": "239-245",
+    "views": 6961,
+    "downloads": 4689,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1278",
+    "sourceArticleId": "2401",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2401",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2401",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2401",
+    "localPdfUrl": "js/data/pdfs/2401.pdf",
+    "pdfUrl": "js/data/pdfs/2401.pdf"
+  },
+  {
+    "id": 2404,
+    "type": "Original Article",
+    "title": "Serum Expression Levels of Certain miRNAs in Predicting Diagnosis, Prognosis, and Response to Chemotherapy in Malignant Pleural Mesothelioma",
+    "authors": [
+      {
+        "name": "Muzaffer Metintaş",
+        "affiliation": "Lung and Pleural Cancers Research and Clinical Center, Eskişehir Osmangazi University Eskişehir, Turkey; Translational Medicine Research and Clinical Center, Eskişehir, Turkey; Department of Chest Diseases, Medical Faculty, Eskişehir Osmangazi University Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Güntülü Ak",
+        "affiliation": "Lung and Pleural Cancers Research and Clinical Center, Eskişehir Osmangazi University Eskişehir, Turkey; Translational Medicine Research and Clinical Center, Eskişehir, Turkey; Department of Chest Diseases, Medical Faculty, Eskişehir Osmangazi University Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cansu Özbayer",
+        "affiliation": "Medical Faculty Department of Medical Biology, Kütahya Health Sciences University Kütahya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Filiz Boğar",
+        "affiliation": "Lung and Pleural Cancers Research and Clinical Center, Eskişehir Osmangazi University Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selma Metintaş",
+        "affiliation": "Lung and Pleural Cancers Research and Clinical Center, Eskişehir Osmangazi University Eskişehir, Turkey; Department of Public Health, Medical Faculty Eskişehir Osmangazi University, Eskişehir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: miRNAs are involved in tumor pathogenesis and can therefore be determined in the primary tumor, plasma and serum, and body fluids. As in various cancers, their role in the diagnosis, prognosis, and treatment of patients with malignant pleural mesothelioma (MPM) may be important.Aims: To analyze the predictive value of miR-16-5p, miR-29c-3p, miR-31-5p, miR-125a-5p, miR-320a, miR-484 and miR-532-5p expressions for diagnosis, prognosis and response to treatment in patients with MPM.Study Design: Prospective case-control study.Methods: In the first phase of the study, blood samples were collected from 101 MPM patients before chemotherapy and from 24 healthy donors (HDs). In the second phase, the blood samples were collected from 74 MPM patients who had received chemotherapy when the best overall response and disease recurrence were determined. A quantitative real-time polymerase chain reaction was undertaken to detect the miRNA expression levels. The miRNA expression profiles of MPM patients were compared with those of HDs. The associations between the expression levels of miRNAs and prognosis and response to treatment were then evaluated.Results: All miRNAs, except miR-31-5p, were expressed differently in MPM relative to that in HDs. The expression level of miR-16-5p decreased when compared with that of HDs, and the expression levels of miR-29c-3p, miR-125a-5p, miR-320a, miR-484, and miR-532-5p increased when compared with that of HDs. The sensitivity and specificity values of miR-29c-3p, miR-125a-5p, miR-320a, miR-484, and miR-532-5p for discriminating MPM from HDs were 85.9% and 59.1%, 95.1% and 62.5%, 87.1% and 79.2%, 82.2% and 58.3%, and 69.3% and 82.6%, respectively. After adjusting for the histological subtype, stage, and treatment, the miR-29c-3p, miR-125a-5p, and miR-484 were associated with longer survival. The miRNA expression levels did not change longitudinally for the determination of chemotherapy response and recurrence.Conclusion: miRNAs may be useful in diagnosing patients with MPM and provides helpful information in determining the prognosis of patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> miRNAs are involved in tumor pathogenesis and can therefore be determined in the primary tumor, plasma and serum, and body fluids. As in various cancers, their role in the diagnosis, prognosis, and treatment of patients with malignant pleural mesothelioma (MPM) may be important.<br /><strong>Aims:</strong> To analyze the predictive value of miR-16-5p, miR-29c-3p, miR-31-5p, miR-125a-5p, miR-320a, miR-484 and miR-532-5p expressions for diagnosis, prognosis and response to treatment in patients with MPM.<br /><strong>Study Design:</strong> Prospective case-control study.<br /><strong>Methods:</strong> In the first phase of the study, blood samples were collected from 101 MPM patients before chemotherapy and from 24 healthy donors (HDs). In the second phase, the blood samples were collected from 74 MPM patients who had received chemotherapy when the best overall response and disease recurrence were determined. A quantitative real-time polymerase chain reaction was undertaken to detect the miRNA expression levels. The miRNA expression profiles of MPM patients were compared with those of HDs. The associations between the expression levels of miRNAs and prognosis and response to treatment were then evaluated.<br /><strong>Results:</strong> All miRNAs, except miR-31-5p, were expressed differently in MPM relative to that in HDs. The expression level of miR-16-5p decreased when compared with that of HDs, and the expression levels of miR-29c-3p, miR-125a-5p, miR-320a, miR-484, and miR-532-5p increased when compared with that of HDs. The sensitivity and specificity values of miR-29c-3p, miR-125a-5p, miR-320a, miR-484, and miR-532-5p for discriminating MPM from HDs were 85.9% and 59.1%, 95.1% and 62.5%, 87.1% and 79.2%, 82.2% and 58.3%, and 69.3% and 82.6%, respectively. After adjusting for the histological subtype, stage, and treatment, the miR-29c-3p, miR-125a-5p, and miR-484 were associated with longer survival. The miRNA expression levels did not change longitudinally for the determination of chemotherapy response and recurrence.<br /><strong>Conclusion:</strong> miRNAs may be useful in diagnosing patients with MPM and provides helpful information in determining the prognosis of patients.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: miRNAs are involved in tumor pathogenesis and can therefore be determined in the primary tumor, plasma and serum, and body fluids. As in various cancers, their role in the diagnosis, prognosis, and treatment of patients with malignant pleural mesothelioma (MPM) may be important.Aims: To analyze the predictive value of miR-16-5p, miR-29c-3p, miR-31-5p, miR-125a-5p, miR-320a, miR-484 and miR-532-5p expressions for diagnosis, prognosis and response to treatment in patients with MPM.Study Design: Prospective case-control study.Methods: In the first phase of the study, blood samples were collected from 101 MPM patients before chemotherapy and from 24 healthy donors (HDs). In the second phase, the blood samples were collected from 74 MPM patients who had received chemotherapy when the best overall response and disease recurrence were determined. A quantitative real-time polymerase chain reaction was undertaken to detect the miRNA expression levels. The miRNA expression profiles of MPM patients were compared with those of HDs. The associations between the expression levels of miRNAs and prognosis and response to treatment were then evaluated.Results: All miRNAs, except miR-31-5p, were expressed differently in MPM relative to that in HDs. The expression level of miR-16-5p decreased when compared with that of HDs, and the expression levels of miR-29c-3p, miR-125a-5p, miR-320a, miR-484, and miR-532-5p increased when compared with that of HDs. The sensitivity and specificity values of miR-29c-3p, miR-125a-5p, miR-320a, miR-484, and miR-532-5p for discriminating MPM from HDs were 85.9% and 59.1%, 95.1% and 62.5%, 87.1% and 79.2%, 82.2% and 58.3%, and 69.3% and 82.6%, respectively. After adjusting for the histological subtype, stage, and treatment, the miR-29c-3p, miR-125a-5p, and miR-484 were associated with longer survival. The miRNA expression levels did not change longitudinally for the determination of chemotherapy response and recurrence.Conclusion: miRNAs may be useful in diagnosing patients with MPM and provides helpful information in determining the prognosis of patients.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-3-26",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "4",
+    "pages": "246-254",
+    "views": 6996,
+    "downloads": 4468,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1278",
+    "sourceArticleId": "2404",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2404",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2404",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2404",
+    "localPdfUrl": "js/data/pdfs/2404.pdf",
+    "pdfUrl": "js/data/pdfs/2404.pdf"
+  },
+  {
+    "id": 2415,
+    "type": "Original Article",
+    "title": "Circ_0010235 Regulates HOXA10 Expression to Promote Malignant Phenotypes and Radioresistance in Non-small Cell Lung Cancer Cells Via Decoying miR-588",
+    "authors": [
+      {
+        "name": "Hongyan Zhu",
+        "affiliation": "Oncology Xiangyang No.1 People’s Hospital, Hubei University of Medicine, Hubei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Wenshu Yang",
+        "affiliation": "Respiratory and Critical Care Medicine Xiangyang Centeral Hospital, Affiliated Hospital of Hubei University of Arts and Science, Hubei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Qingping Cheng",
+        "affiliation": "Respiratory and Critical Care Medicine Xiangyang Centeral Hospital, Affiliated Hospital of Hubei University of Arts and Science, Hubei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Shuai Yang",
+        "affiliation": "Respiratory and Critical Care Medicine Xiangyang Centeral Hospital, Affiliated Hospital of Hubei University of Arts and Science, Hubei, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Circular RNAs (circRNAs) are key modulators in carcinogenesis and radioresistance in multiple kinds of human cancers.Aims: To explore the role of circ_0010235 in non-small cell lung cancer (NSCLC).Study Design: Cell culture study and animal study.Methods: The detection of circ_0010235, microRNA-588 (miR-588), and homeobox protein A10 (HOXA10) was implemented via reverse transcription-quantitative polymerase chain reaction (RT-qPCR). CCK-8, EdU, flow cytometry, transwell, and wound healing assays. These strategies were applied to evaluate cell functions. The western blot technique was employed for protein examination. The colony formation assay was used to determine cell survival after radiation treatment. In vivo research was performed by tumor xenograft assay. The binding analysis was also carried out through dual-luciferase reporter and RNA immunoprecipitation studies.Results: Circ_0010235 had an enhanced expression in NSCLC. Circ_0010235 deficiency inhibited cell proliferation, invasiveness, and migratory ability but promoted apoptosis and radiosensitivity. Downregulation of circ_0010235 decelerated tumor growth and promoted radiation sensitivity in vivo. Circ_0010235 was controlled biologically in NSCLC cells by combining with miR-588 and targeting miR-588. HOXA10 acted as a target of miR-588. MiR-588 upregulation inhibited NSCLC cell malignant phenotypes and elevated radiosensitivity via downregulating HOXA10. Circ_0010235 could regulate the level of HOXA10 by sponging miR-588.Conclusion: Circ_0010235 contributed to the malignant progression of NSCLC, but suppressed the radiation sensitivity via targeting miR-588 to induce HOXA10 upregulation.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> Circular RNAs (circRNAs) are key modulators in carcinogenesis and radioresistance in multiple kinds of human cancers.<br /><strong>Aims:</strong> To explore the role of circ_0010235 in non-small cell lung cancer (NSCLC).<br /><strong>Study Design:</strong> Cell culture study and animal study.<br /><strong>Methods:</strong> The detection of circ_0010235, microRNA-588 (miR-588), and homeobox protein A10 (HOXA10) was implemented via reverse transcription-quantitative polymerase chain reaction (RT-qPCR). CCK-8, EdU, flow cytometry, transwell, and wound healing assays. These strategies were applied to evaluate cell functions. The western blot technique was employed for protein examination. The colony formation assay was used to determine cell survival after radiation treatment. In vivo research was performed by tumor xenograft assay. The binding analysis was also carried out through dual-luciferase reporter and RNA immunoprecipitation studies.<br /><strong>Results:</strong> Circ_0010235 had an enhanced expression in NSCLC. Circ_0010235 deficiency inhibited cell proliferation, invasiveness, and migratory ability but promoted apoptosis and radiosensitivity. Downregulation of circ_0010235 decelerated tumor growth and promoted radiation sensitivity in vivo. Circ_0010235 was controlled biologically in NSCLC cells by combining with miR-588 and targeting miR-588. HOXA10 acted as a target of miR-588. MiR-588 upregulation inhibited NSCLC cell malignant phenotypes and elevated radiosensitivity via downregulating HOXA10. Circ_0010235 could regulate the level of HOXA10 by sponging miR-588.<br /><strong>Conclusion:</strong> Circ_0010235 contributed to the malignant progression of NSCLC, but suppressed the radiation sensitivity via targeting miR-588 to induce HOXA10 upregulation.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Circular RNAs (circRNAs) are key modulators in carcinogenesis and radioresistance in multiple kinds of human cancers.Aims: To explore the role of circ_0010235 in non-small cell lung cancer (NSCLC).Study Design: Cell culture study and animal study.Methods: The detection of circ_0010235, microRNA-588 (miR-588), and homeobox protein A10 (HOXA10) was implemented via reverse transcription-quantitative polymerase chain reaction (RT-qPCR). CCK-8, EdU, flow cytometry, transwell, and wound healing assays. These strategies were applied to evaluate cell functions. The western blot technique was employed for protein examination. The colony formation assay was used to determine cell survival after radiation treatment. In vivo research was performed by tumor xenograft assay. The binding analysis was also carried out through dual-luciferase reporter and RNA immunoprecipitation studies.Results: Circ_0010235 had an enhanced expression in NSCLC. Circ_0010235 deficiency inhibited cell proliferation, invasiveness, and migratory ability but promoted apoptosis and radiosensitivity. Downregulation of circ_0010235 decelerated tumor growth and promoted radiation sensitivity in vivo. Circ_0010235 was controlled biologically in NSCLC cells by combining with miR-588 and targeting miR-588. HOXA10 acted as a target of miR-588. MiR-588 upregulation inhibited NSCLC cell malignant phenotypes and elevated radiosensitivity via downregulating HOXA10. Circ_0010235 could regulate the level of HOXA10 by sponging miR-588.Conclusion: Circ_0010235 contributed to the malignant progression of NSCLC, but suppressed the radiation sensitivity via targeting miR-588 to induce HOXA10 upregulation.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-2-50",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "4",
+    "pages": "255-266",
+    "views": 6852,
+    "downloads": 4163,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1278",
+    "sourceArticleId": "2415",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2415",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2415",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2415",
+    "localPdfUrl": "js/data/pdfs/2415.pdf",
+    "pdfUrl": "js/data/pdfs/2415.pdf"
+  },
+  {
+    "id": 2416,
+    "type": "Original Article",
+    "title": "FLOT2 Promotes the Proliferation and Epithelial-mesenchymal Transition of Cervical Cancer by Activating the MEK/ERK1/2 Pathway",
+    "authors": [
+      {
+        "name": "Yang Li",
+        "affiliation": "Department of Gynecology, The Affiliated Changzhou No.2 People’s Hospital of Nanjing Medical University, China",
+        "orcid": ""
+      },
+      {
+        "name": "Shulan Dou",
+        "affiliation": "Department of Gynecology, The Affiliated Changzhou No.2 People’s Hospital of Nanjing Medical University, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: As prevalent cancer in women, approximately 569,847 cases of cervical cancer occur every year.Aims: This study aimed to explore the role of FLOT2 and its related mechanism in the development of cervical cancer.Study Design: Cell culture study and animal experimentation.Methods: Quantitative reverse-transcription polymerase chain reaction PCR and Western blot analysis were performed to evaluate the expression of FLOT2. Flow cytometry was applied for the evaluation of cell apoptosis. Cell Counting Kit-8 and colony formation were utilized for proliferation measurement. Cervical cancer mice model was employed to measure the role of FLOT2 in vivo.Results: FLOT2 mRNA and protein levels were dramatically elevated (P < 0.001) in cervical cancer cell line HcerEpic cells. The cell viability and proliferation of cervical cancer cells were enhanced (P < 0.01) by overexpression of FLOT2 and reduced (P < 0.01) by FLOT2 downregulation. In addition, FLOT2 overexpression elevated (P < 0.01) the cell migration abilities of cervical cancer cells, whereas its depletion inhibited (P < 0.01) the cell migration abilities. Moreover, the protein expression of epithelial-mesenchymal transition markers including Vimentin, N-cadherin, and E-cadherin were assessed, and the results showed enhanced Vimentin and N-cadherin levels (P < 0.05) by FLOT2 upregulation and declined (P < 0.01) by FLOT2 downregulation. FLOT2 upregulation reduced (P < 0.05) the level of E-cadherin protein, whereas FLOT2 suppression attenuated this effect (P < 0.05). Furthermore, FLOT2 increased (P < 0.05) p-MEK/MEK, p-ERK1/2/ERK1/2, and p-AKT/AKT levels to activate the MEK/ERK1/2 and AKT pathways in cervical cancer. Finally, our results indicated that FLOT2 inhibited (P < 0.001) cervical cancer growth in vivo.Conclusion: FLOT2 aggravates the proliferation and epithelial-mesenchymal transition of cervical cancer by activating the MEK/ERK1/2 and AKT pathways.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> As prevalent cancer in women, approximately 569,847 cases of cervical cancer occur every year.<br /><strong>Aims:</strong> This study aimed to explore the role of FLOT2 and its related mechanism in the development of cervical cancer.<br /><strong>Study Design:</strong> Cell culture study and animal experimentation.<br /><strong>Methods:</strong> Quantitative reverse-transcription polymerase chain reaction PCR and Western blot analysis were performed to evaluate the expression of FLOT2. Flow cytometry was applied for the evaluation of cell apoptosis. Cell Counting Kit-8 and colony formation were utilized for proliferation measurement. Cervical cancer mice model was employed to measure the role of FLOT2 in vivo.<br /><strong>Results:</strong> FLOT2 mRNA and protein levels were dramatically elevated (<em>P</em> &lt; 0.001) in cervical cancer cell line HcerEpic cells. The cell viability and proliferation of cervical cancer cells were enhanced (<em>P </em>&lt; 0.01) by overexpression of FLOT2 and reduced (<em>P </em>&lt; 0.01) by FLOT2 downregulation. In addition, FLOT2 overexpression elevated (<em>P </em>&lt; 0.01) the cell migration abilities of cervical cancer cells, whereas its depletion inhibited (<em>P </em>&lt; 0.01) the cell migration abilities. Moreover, the protein expression of epithelial-mesenchymal transition markers including Vimentin, N-cadherin, and E-cadherin were assessed, and the results showed enhanced Vimentin and N-cadherin levels (<em>P </em>&lt; 0.05) by FLOT2 upregulation and declined (<em>P </em>&lt; 0.01) by FLOT2 downregulation. FLOT2 upregulation reduced (<em>P </em>&lt; 0.05) the level of E-cadherin protein, whereas FLOT2 suppression attenuated this effect (<em>P </em>&lt; 0.05). Furthermore, FLOT2 increased (<em>P </em>&lt; 0.05) p-MEK/MEK, p-ERK1/2/ERK1/2, and p-AKT/AKT levels to activate the MEK/ERK1/2 and AKT pathways in cervical cancer. Finally, our results indicated that FLOT2 inhibited (<em>P </em>&lt; 0.001) cervical cancer growth in vivo.<br /><strong>Conclusion:</strong> FLOT2 aggravates the proliferation and&nbsp; epithelial-mesenchymal transition&nbsp; of cervical cancer by activating the MEK/ERK1/2 and AKT pathways.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: As prevalent cancer in women, approximately 569,847 cases of cervical cancer occur every year.Aims: This study aimed to explore the role of FLOT2 and its related mechanism in the development of cervical cancer.Study Design: Cell culture study and animal experimentation.Methods: Quantitative reverse-transcription polymerase chain reaction PCR and Western blot analysis were performed to evaluate the expression of FLOT2. Flow cytometry was applied for the evaluation of cell apoptosis. Cell Counting Kit-8 and colony formation were utilized for proliferation measurement. Cervical cancer mice model was employed to measure the role of FLOT2 in vivo.Results: FLOT2 mRNA and protein levels were dramatically elevated (P < 0.001) in cervical cancer cell line HcerEpic cells. The cell viability and proliferation of cervical cancer cells were enhanced (P < 0.01) by overexpression of FLOT2 and reduced (P < 0.01) by FLOT2 downregulation. In addition, FLOT2 overexpression elevated (P < 0.01) the cell migration abilities of cervical cancer cells, whereas its depletion inhibited (P < 0.01) the cell migration abilities. Moreover, the protein expression of epithelial-mesenchymal transition markers including Vimentin, N-cadherin, and E-cadherin were assessed, and the results showed enhanced Vimentin and N-cadherin levels (P < 0.05) by FLOT2 upregulation and declined (P < 0.01) by FLOT2 downregulation. FLOT2 upregulation reduced (P < 0.05) the level of E-cadherin protein, whereas FLOT2 suppression attenuated this effect (P < 0.05). Furthermore, FLOT2 increased (P < 0.05) p-MEK/MEK, p-ERK1/2/ERK1/2, and p-AKT/AKT levels to activate the MEK/ERK1/2 and AKT pathways in cervical cancer. Finally, our results indicated that FLOT2 inhibited (P < 0.001) cervical cancer growth in vivo.Conclusion: FLOT2 aggravates the proliferation and epithelial-mesenchymal transition of cervical cancer by activating the MEK/ERK1/2 and AKT pathways.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-3-109",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "4",
+    "pages": "267-274",
+    "views": 5683,
+    "downloads": 3646,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1278",
+    "sourceArticleId": "2416",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2416",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2416",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2416",
+    "localPdfUrl": "js/data/pdfs/2416.pdf",
+    "pdfUrl": "js/data/pdfs/2416.pdf"
+  },
+  {
+    "id": 2417,
+    "type": "Original Article",
+    "title": "The Clinicopathological Characteristics of Pure and Mixed Invasive Micropapillary Breast Carcinomas: A Single Center Experience",
+    "authors": [
+      {
+        "name": "Gülnihan Eren Kupik",
+        "affiliation": "Clinic of Radiation Oncology, Muğla Sıtkı Koçman University Hospital, Muğla, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kadri Altundağ",
+        "affiliation": "Clinic of Medical Oncology, MKA Breast Cancer Clinic, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Invasive micropapillary carcinoma (IMPC) is a rare tumor of the breast. IMPC can be classified as a pure or mixed type based on the extent of micropapillary differentiation.Aims: To evaluate the prognostic importance of the IMPC component in breast cancer through retrospective comparison of the clinicopathological characteristics and clinical outcomes of pure and mixed IMPC patients.Study Design: The data of 147 (2.2%) patients with IMPC among 6648 patients histopathologically diagnosed with invasive breast cancer between January 2000-2022 were retrospectively reviewed. The patients were assigned to two groups: pure IMPC and mixed IMPC.Methods: The clinicopathological features such as age at diagnosis, histological type, grade, size, and components of mixed carcinoma, the numbers of metastatic lymph nodes, presence of lymph vascular invasion, hormone receptor, and the Her-2 status of the tumor, T, N, M stages, and the survival rates were reviewed. The clinicopathologic features, patterns of failures, and survival rates were coded and compared between pure and mixed IMPC patients.Results: A total of 45 patients (30.6%) had pure and 102 patients (69.4%) had mixed IMPC. The median follow-up time was 46 months (3-178). The progesterone receptor positivity rate was significantly lower in the pure group than in the mixed group (66.7% vs. 83.3%, p: 0.024). In the pure and mixed groups, respectively, the 5-year overall survival was 90% and 91% (p: 0.839); progression-free survival was 70% and 77% (p: 0.537); locoregional recurrence-free survival was 86% and 95% (p: 0.043); 5-year distant metastasis-free survival was 88% and 83% (p: 0.066), and the locoregional recurrence rate was 10.3% and 2% (p: 0.052).Conclusion: Compared to the mixed IMPC, pure IMPC appears to have a more aggressive behavior with lower locoregional recurrence-free survival and more locoregional recurrences. This may be due to the low progesterone receptor positivity rate.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> Invasive micropapillary carcinoma (IMPC) is a rare tumor of the breast. IMPC can be classified as a pure or mixed type based on the extent of micropapillary differentiation.<br /><strong>Aims:</strong> To evaluate the prognostic importance of the IMPC component in breast cancer through retrospective comparison of the clinicopathological characteristics and clinical outcomes of pure and mixed IMPC patients.<br /><strong>Study Design:</strong> The data of 147 (2.2%) patients with IMPC among 6648 patients histopathologically diagnosed with invasive breast cancer between January 2000-2022 were retrospectively reviewed. The patients were assigned to two groups: pure IMPC and mixed IMPC.<br /><strong>Methods:</strong> The clinicopathological features such as age at diagnosis, histological type, grade, size, and components of mixed carcinoma, the numbers of metastatic lymph nodes, presence of lymph vascular invasion, hormone receptor, and the Her-2 status of the tumor, T, N, M stages, and the survival rates were reviewed. The clinicopathologic features, patterns of failures, and survival rates were coded and compared between pure and mixed IMPC patients.<br /><strong>Results:</strong> A total of 45 patients (30.6%) had pure and 102 patients (69.4%) had mixed IMPC. The median follow-up time was 46 months (3-178). The progesterone receptor positivity rate was significantly lower in the pure group than in the mixed group (66.7% vs. 83.3%, p: 0.024). In the pure and mixed groups, respectively, the 5-year overall survival was 90% and 91% (p: 0.839); progression-free survival was 70% and 77% (p: 0.537); locoregional recurrence-free survival was 86% and 95% (p: 0.043); 5-year distant metastasis-free survival was 88% and 83% (p: 0.066), and the locoregional recurrence rate was 10.3% and 2% (p: 0.052).<br /><strong>Conclusion:</strong> Compared to the mixed IMPC, pure IMPC appears to have a more aggressive behavior with lower locoregional recurrence-free survival and more locoregional recurrences. This may be due to the low progesterone receptor positivity rate.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Invasive micropapillary carcinoma (IMPC) is a rare tumor of the breast. IMPC can be classified as a pure or mixed type based on the extent of micropapillary differentiation.Aims: To evaluate the prognostic importance of the IMPC component in breast cancer through retrospective comparison of the clinicopathological characteristics and clinical outcomes of pure and mixed IMPC patients.Study Design: The data of 147 (2.2%) patients with IMPC among 6648 patients histopathologically diagnosed with invasive breast cancer between January 2000-2022 were retrospectively reviewed. The patients were assigned to two groups: pure IMPC and mixed IMPC.Methods: The clinicopathological features such as age at diagnosis, histological type, grade, size, and components of mixed carcinoma, the numbers of metastatic lymph nodes, presence of lymph vascular invasion, hormone receptor, and the Her-2 status of the tumor, T, N, M stages, and the survival rates were reviewed. The clinicopathologic features, patterns of failures, and survival rates were coded and compared between pure and mixed IMPC patients.Results: A total of 45 patients (30.6%) had pure and 102 patients (69.4%) had mixed IMPC. The median follow-up time was 46 months (3-178). The progesterone receptor positivity rate was significantly lower in the pure group than in the mixed group (66.7% vs. 83.3%, p: 0.024). In the pure and mixed groups, respectively, the 5-year overall survival was 90% and 91% (p: 0.839); progression-free survival was 70% and 77% (p: 0.537); locoregional recurrence-free survival was 86% and 95% (p: 0.043); 5-year distant metastasis-free survival was 88% and 83% (p: 0.066), and the locoregional recurrence rate was 10.3% and 2% (p: 0.052).Conclusion: Compared to the mixed IMPC, pure IMPC appears to have a more aggressive behavior with lower locoregional recurrence-free survival and more locoregional recurrences. This may be due to the low progesterone receptor positivity rate.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-4-7",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "4",
+    "pages": "275-281",
+    "views": 6071,
+    "downloads": 3658,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1278",
+    "sourceArticleId": "2417",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2417",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2417",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2417",
+    "localPdfUrl": "js/data/pdfs/2417.pdf",
+    "pdfUrl": "js/data/pdfs/2417.pdf"
+  },
+  {
+    "id": 2418,
+    "type": "Original Article",
+    "title": "Cost-of-disease of Heart Failure in Turkey: A Delphi Panel-based Analysis of Direct and Indirect Costs",
+    "authors": [
+      {
+        "name": "Yüksel Çavuşoğlu",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Eskisehir Osmangazi University, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Altay",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Başkent University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dursun Aras",
+        "affiliation": "Clinic of Cardiology University of Health Sciences Turkey, Ankara City Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Çelik",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Mersin University, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Sinan Ertaş",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Ankara University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Barış Kılıçaslan",
+        "affiliation": "Clinic of Cardiology, University of Health Sciences Turkey İzmir Tepecik Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sanem Nalbantgil",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Ege University, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Temizhan",
+        "affiliation": "Clinic of Cardiology University of Health Sciences Turkey, Ankara City Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Ural",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Koç University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özlem Yıldırımtürk",
+        "affiliation": "Clinic of Cardiology, University of Health Sciences Turkey Siyami Ersek Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Birhan Yılmaz",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Dokuz Eylül University, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Heart failure (HF) is considered a significant public health issue with a substantial and growing epidemiologic and economic burden in relation to longer life expectancy and aging global populationAims: To determine cost-of-disease of heart failure (HF) in Turkey from the payer perspective.Study Design: Cross-sectional cost of disease study.Methods: In this cost-of-disease study, annual direct and indirect costs of management of HF were determined based on epidemiological, clinical and lost productivity inputs provided by a Delphi panel consisted of 11 experts in HF with respect to ejection fraction (EF) status (HF patients with reduced EF (HFrEF), mid-range EF (HFmrEF) and preserved EF (HFpEF)) and New York Heart Association (NYHA) classification. Direct medical costs included cost items on outpatient management, inpatient management, medications, and non-pharmaceutical treatments. Indirect cost was calculated based on the lost productivity due to absenteeism and presenteeism.Results: 51.4%, 19.5%, and 29.1% of the patients were estimated to be HFrEF, HFmrEF, and HFpEF patients, respectively. The total annual direct medical cost per patient was $887 and non-pharmaceutical treatments ($373, 42.1%) were the major direct cost driver. Since an estimated nationwide number of HF patients is 1,128,000 in 2021, the total annual national economic burden of HF is estimated to be $1 billion in 2021. The direct medical cost was higher in patients with HFrEF than in those with HFmrEF or HFpEF ($1,147 vs. $555 and $649, respectively). Average indirect cost per patient was calculated to be $3,386 and was similar across HFrEF, HFmrEF and HFpEF groups, but increased with advanced NYHA stage.Conclusion: Our findings confirm the substantial economic burden of HF in terms of both direct and indirect costs and indicate that the non-pharmaceutical cost is the major direct medical cost driver in HF management, regardless of the EF status of HF patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> Heart failure (HF) is considered a significant public health issue with a substantial and growing epidemiologic and economic burden in relation to longer life expectancy and aging global population<br /><strong>Aims:</strong> To determine cost-of-disease of heart failure (HF) in Turkey from the payer perspective.<br /><strong>Study Design:</strong> Cross-sectional cost of disease study.<br /><strong>Methods:</strong> In this cost-of-disease study, annual direct and indirect costs of management of HF were determined based on epidemiological, clinical and lost productivity inputs provided by a Delphi panel consisted of 11 experts in HF with respect to ejection fraction (EF) status (HF patients with reduced EF (HFrEF), mid-range EF (HFmrEF) and preserved EF (HFpEF)) and New York Heart Association (NYHA) classification. Direct medical costs included cost items on outpatient management, inpatient management, medications, and non-pharmaceutical treatments. Indirect cost was calculated based on the lost productivity due to absenteeism and presenteeism.<br /><strong>Results:</strong> 51.4%, 19.5%, and 29.1% of the patients were estimated to be HFrEF, HFmrEF, and HFpEF patients, respectively. The total annual direct medical cost per patient was $887 and non-pharmaceutical treatments ($373, 42.1%) were the major direct cost driver. Since an estimated nationwide number of HF patients is 1,128,000 in 2021, the total annual national economic burden of HF is estimated to be $1 billion in 2021. The direct medical cost was higher in patients with HFrEF than in those with HFmrEF or HFpEF ($1,147 vs. $555 and $649, respectively). Average indirect cost per patient was calculated to be $3,386 and was similar across HFrEF, HFmrEF and HFpEF groups, but increased with advanced NYHA stage.<br /><strong>Conclusion:</strong> Our findings confirm the substantial economic burden of HF in terms of both direct and indirect costs and indicate that the non-pharmaceutical cost is the major direct medical cost driver in HF management, regardless of the EF status of HF patients.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Heart failure (HF) is considered a significant public health issue with a substantial and growing epidemiologic and economic burden in relation to longer life expectancy and aging global populationAims: To determine cost-of-disease of heart failure (HF) in Turkey from the payer perspective.Study Design: Cross-sectional cost of disease study.Methods: In this cost-of-disease study, annual direct and indirect costs of management of HF were determined based on epidemiological, clinical and lost productivity inputs provided by a Delphi panel consisted of 11 experts in HF with respect to ejection fraction (EF) status (HF patients with reduced EF (HFrEF), mid-range EF (HFmrEF) and preserved EF (HFpEF)) and New York Heart Association (NYHA) classification. Direct medical costs included cost items on outpatient management, inpatient management, medications, and non-pharmaceutical treatments. Indirect cost was calculated based on the lost productivity due to absenteeism and presenteeism.Results: 51.4%, 19.5%, and 29.1% of the patients were estimated to be HFrEF, HFmrEF, and HFpEF patients, respectively. The total annual direct medical cost per patient was $887 and non-pharmaceutical treatments ($373, 42.1%) were the major direct cost driver. Since an estimated nationwide number of HF patients is 1,128,000 in 2021, the total annual national economic burden of HF is estimated to be $1 billion in 2021. The direct medical cost was higher in patients with HFrEF than in those with HFmrEF or HFpEF ($1,147 vs. $555 and $649, respectively). Average indirect cost per patient was calculated to be $3,386 and was similar across HFrEF, HFmrEF and HFpEF groups, but increased with advanced NYHA stage.Conclusion: Our findings confirm the substantial economic burden of HF in terms of both direct and indirect costs and indicate that the non-pharmaceutical cost is the major direct medical cost driver in HF management, regardless of the EF status of HF patients.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-3-97",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "4",
+    "pages": "282-289",
+    "views": 10981,
+    "downloads": 3728,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1278",
+    "sourceArticleId": "2418",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2418",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2418",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2418",
+    "localPdfUrl": "js/data/pdfs/2418.pdf",
+    "pdfUrl": "js/data/pdfs/2418.pdf"
+  },
+  {
+    "id": 2407,
+    "type": "Brief Report",
+    "title": "Characterization of 31 Patients with Riboflavin-Responsive Multiple acyl-CoA Dehydrogenase Deficiency",
+    "authors": [
+      {
+        "name": "Jinru Zhang",
+        "affiliation": "Department of Neurology, The Second Hospital of Hebei Medical University, Shijiazhuang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jingzhe Han",
+        "affiliation": "Department of Neurology, Harrison International Peace Hospital, Hengshui, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yaye Wang",
+        "affiliation": "Department of Neurology, The Second Hospital of Hebei Medical University, Shijiazhuang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yue Wu",
+        "affiliation": "Department of Neurology, The Second Hospital of Hebei Medical University, Shijiazhuang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Lixia Ma",
+        "affiliation": "Department of Geriatrics, The Third Hospital of Shijiazhuang, Shijiazhuang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xueqin Song",
+        "affiliation": "Department of Neurology, The Second Hospital of Hebei Medical University, Shijiazhuang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Guang Ji",
+        "affiliation": "Department of Neurology, The Second Hospital of Hebei Medical University, Shijiazhuang, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Aims: To evaluate the clinical, pathological, and genetic features of patients with riboflavin-responsive multiple acyl-CoA dehydrogenase deficiency (RR-MADD).Methods: Thirty-one patients with RR-MADD admitted to our hospital from January 2005 to November 2020 were enrolled, and their clinical data were collected. Pathological characteristics of the muscle tissue and possible pathogenic gene mutations were analyzed.Results: The most common clinical features in all patients were symmetrical proximal muscle weakness. Laboratory examination revealed elevated levels of creatine kinase, homocysteine, and uric acid, acylcarnitines, and organic acid. The muscle biopsy revealed typical pathological changes like lipid deposition. Genetic analysis identified ETFDH mutations in 29 patients, among which one had homozygotes, 19 had compound heterozygotes, 7 had heterozygous mutations, and 2 had heterozygous mutations of both ETFDH and ETFA. Two patients had no pathogenic gene mutations. All patients were treated with riboflavin, and their symptoms improved, which was consistent with the diagnosis of RR-MADD.Conclusion: The clinical manifestations and genetic test results of patients with RR-MADD are heterogeneous. Therefore, a comprehensive analysis of clinical, pathological, and genetic testing is essential for the early diagnosis of RR-MADD.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Aims:</strong> To evaluate the clinical, pathological, and genetic features of patients with riboflavin-responsive multiple acyl-CoA dehydrogenase deficiency (RR-MADD).<br /><strong>Methods:</strong> Thirty-one patients with RR-MADD admitted to our hospital from January 2005 to November 2020 were enrolled, and their clinical data were collected. Pathological characteristics of the muscle tissue and possible pathogenic gene mutations were analyzed.<br /><strong>Results:</strong> The most common clinical features in all patients were symmetrical proximal muscle weakness. Laboratory examination revealed elevated levels of creatine kinase, homocysteine, and uric acid, acylcarnitines, and organic acid. The muscle biopsy revealed typical pathological changes like lipid deposition. Genetic analysis identified ETFDH mutations in 29 patients, among which one had homozygotes, 19 had compound heterozygotes, 7 had heterozygous mutations, and 2 had heterozygous mutations of both ETFDH and ETFA. Two patients had no pathogenic gene mutations. All patients were treated with riboflavin, and their symptoms improved, which was consistent with the diagnosis of RR-MADD.<br /><strong>Conclusion:</strong> The clinical manifestations and genetic test results of patients with RR-MADD are heterogeneous. Therefore, a comprehensive analysis of clinical, pathological, and genetic testing is essential for the early diagnosis of RR-MADD.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Aims: To evaluate the clinical, pathological, and genetic features of patients with riboflavin-responsive multiple acyl-CoA dehydrogenase deficiency (RR-MADD).Methods: Thirty-one patients with RR-MADD admitted to our hospital from January 2005 to November 2020 were enrolled, and their clinical data were collected. Pathological characteristics of the muscle tissue and possible pathogenic gene mutations were analyzed.Results: The most common clinical features in all patients were symmetrical proximal muscle weakness. Laboratory examination revealed elevated levels of creatine kinase, homocysteine, and uric acid, acylcarnitines, and organic acid. The muscle biopsy revealed typical pathological changes like lipid deposition. Genetic analysis identified ETFDH mutations in 29 patients, among which one had homozygotes, 19 had compound heterozygotes, 7 had heterozygous mutations, and 2 had heterozygous mutations of both ETFDH and ETFA. Two patients had no pathogenic gene mutations. All patients were treated with riboflavin, and their symptoms improved, which was consistent with the diagnosis of RR-MADD.Conclusion: The clinical manifestations and genetic test results of patients with RR-MADD are heterogeneous. Therefore, a comprehensive analysis of clinical, pathological, and genetic testing is essential for the early diagnosis of RR-MADD.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-1-127",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "4",
+    "pages": "290-296",
+    "views": 6842,
+    "downloads": 5193,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1278",
+    "sourceArticleId": "2407",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2407",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2407",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2407",
+    "localPdfUrl": "js/data/pdfs/2407.pdf",
+    "pdfUrl": "js/data/pdfs/2407.pdf"
+  },
+  {
+    "id": 2403,
+    "type": "Clinical Image",
+    "title": "Bilateral Necrotizing Polymicrobial Thrombophlebitis",
+    "authors": [
+      {
+        "name": "Philipp Jud",
+        "affiliation": "Clinic of Internal Medicine, Medical University of Graz, Graz, Austria",
+        "orcid": ""
+      },
+      {
+        "name": "Jürgen Prattes",
+        "affiliation": "Clinic of Internal Medicine, Medical University of Graz, Graz, Austria",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 32-year-old male was presented to the emergency department because of ulcers, eschars, and multiple reddish nodules on both arms for five days, which developed after scratching both arms owing to severe pruritus. The patient’s medical history revealed only job-related stress with occasional onychophagia. The patient denied drug abuse, abroad stays, allergi",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-3-60",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "4",
+    "pages": "297-298",
+    "views": 5631,
+    "downloads": 4135,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1278",
+    "sourceArticleId": "2403",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2403",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2403",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2403",
+    "localPdfUrl": "js/data/pdfs/2403.pdf",
+    "pdfUrl": "js/data/pdfs/2403.pdf"
+  },
+  {
+    "id": 2402,
+    "type": "Letter to the Editor",
+    "title": "Hiccups Caused by Fitz-Hugh-Curtis Syndrome",
+    "authors": [
+      {
+        "name": "Toshimasa Yamaguchi",
+        "affiliation": "Primary Care and Advanced Triage Section Osaka City General Hospital, Japan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, A previously healthy 28-year-old woman presented with a 2-week history of abdominal pain in the right upper quadrant and right lower quadrant. Her body temperature was 35.7 °C. On palpation, the patient had right hypochondriac direct tenderness with positive Murphy’s sign. The patient also had hiccups, which started 2 days before consultation.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-3-135",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "4",
+    "pages": "299-300",
+    "views": 6235,
+    "downloads": 3673,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1278",
+    "sourceArticleId": "2402",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2402",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2402",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2402",
+    "localPdfUrl": "js/data/pdfs/2402.pdf",
+    "pdfUrl": "js/data/pdfs/2402.pdf"
+  },
+  {
+    "id": 2405,
+    "type": "Letter to the Editor",
+    "title": "Cytomegalovirus Reactivation in Critically-ill COVID-19 Patients",
+    "authors": [
+      {
+        "name": "Leyla Talan",
+        "affiliation": "Department of Internal Medicine, Faculty of Medicine Ankara University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İrem Akdemir Kalkan",
+        "affiliation": "Department of Infection Disease and Clinical Microbiology, Faculty of Medicine Ankara University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neslihan Defne Altıntaş",
+        "affiliation": "Department of Internal Medicine, Faculty of Medicine Ankara University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fügen Yörük[[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, COVID-19 is an ongoing global pandemic that causes significant morbidity and mortality. Although severe pneumonia and acute respiratory distress syndrome (ARDS) are seen in the foreground, it causes widespread diseases, involving multiple organ systems in severe cases. Various immunosuppressive agents, such as corticosteroids and interleukin a",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-2-2",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "4",
+    "pages": "301-302",
+    "views": 5897,
+    "downloads": 3767,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1278",
+    "sourceArticleId": "2405",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2405",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2405",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2405",
+    "localPdfUrl": "js/data/pdfs/2405.pdf",
+    "pdfUrl": "js/data/pdfs/2405.pdf"
+  },
+  {
+    "id": 2419,
+    "type": "Letter to the Editor",
+    "title": "Post-COVID-19 Condition and İts Recognition in Low- and  Middle-income Countries: Working Notes from the United Kingdom Experience",
+    "authors": [
+      {
+        "name": "Arvind Nune",
+        "affiliation": "Consultant Rheumatologist and General Physician Southport and Ormskirk Hospital NHS Trust, United Kingdom",
+        "orcid": ""
+      },
+      {
+        "name": "Karthikeyan P Iyengar",
+        "affiliation": "Trauma and Orthopaedics Southport and Ormskirk Hospital NHS Trust, United Kingdom",
+        "orcid": ""
+      },
+      {
+        "name": "Bhupen Barman",
+        "affiliation": "General Medicine North Eastern Indira Gandhi Regional Institute of Health and Medical Sciences (NEIGRIHMS), India",
+        "orcid": ""
+      },
+      {
+        "name": "Ciro Manzo",
+        "affiliation": "Rheumatoloy Azienda Sanitaria Locale Napoli, Italy",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor The post-COVID-19 condition, also known as long COVID, threatens to be a pandemic within the pandemic. Affected patients include adults, children, and adolescents who have new or ongoing symptoms ≥4 weeks after the start of acute COVID-19.1 COVID-19 pneumonia at hospital admission, intensive care stay, older age, and female sex are poor prognos",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-5-102",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "4",
+    "pages": "303-304",
+    "views": 5541,
+    "downloads": 3075,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1278",
+    "sourceArticleId": "2419",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2419",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2419",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2419",
+    "localPdfUrl": "js/data/pdfs/2419.pdf",
+    "pdfUrl": "js/data/pdfs/2419.pdf"
+  },
+  {
+    "id": 2420,
+    "type": "Letter to the Editor",
+    "title": "A Rare Adverse Event after CoronaVac® Administration: Neutropenia in a Kidney Transplant Recipient",
+    "authors": [
+      {
+        "name": "Ayşe Serra Artan",
+        "affiliation": "Department of Nephrology, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erol Demir",
+        "affiliation": "Department of Internal Medicine, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurana Güller",
+        "affiliation": "Department of Nephrology, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aydın Türkmen",
+        "affiliation": "Department of Nephrology, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "To the Editor, Vaccination against severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) is critical in kidney transplant recipients due to the risk of developing severe form of the disease. Although the effect of vaccines on the transplant population is few in previous publications, widespread vaccination continues to be applied.1 However, these patients experience adverse events due to vaccination.2 Although transient neutropenia is a known side effect of two SARS-CoV-2 vaccines3, neutropenia associated with inactivated whole-virus SARS-CoV-2 vaccine (CoronaVac® by Sinovac®) has not clearly been elucidated. We, therefore, report the case of a kidney transplant recipient who presented with neutropenia after the second dose of the inactivated whole-virus SARS-CoV-2 vaccine. A 60-year-old female kidney transplant recipient was admitted to the transplant clinic at a routine follow-up visit on the second day after receiving the second dose of CoronaVac®. She underwent deceased donor kidney transplantation four years ago due to autosomal dominant polycystic kidney disease. The posttransplant course was insignificant for four years. The immunosuppressive regimen included tacrolimus, mycophenolate mofetil, and prednisolone. The patient had no complaint, and physical examination was unremarkable. Complete blood count demonstrated white blood cell: 2,700/mm3, neutrophil: 600/mm3, lymphocyte: 1400/mm3, hemoglobin: 15 g/dl, and thrombocyte: 202,000/mm3. Biochemical investigations include serum creatinine: 0.9 mg/dl, lactate dehydrogenase: 150 U/L, C-reactive protein: 2 mg/dl, folate: 13 μg/L, Vitamin B12: 500 pg/ml, ferritin: 100 ng/ml, transferrin saturation: 23%, and tacrolimus level: 6 ng/ml. Mycophenolate mofetil was halted. Polymerase chain reaction (PCR) tests were negative for Cytomegalovirus, Parvovirus, Epstein-Barr virus, and SARS-CoV-2. PCR tests for SARS-CoV-2 were repeated thrice at 48-h intervals. Peripheral blood smear did not reveal atypical cells. A bone marrow biopsy revealed a normocellular marrow with the hyperplastic granulocytic cell line. No signs of dysplasia were detected. Neutropenia resolved spontaneously at the end of two months, and mycophenolate mofetil was reinstated in the immunosuppressive regimen. Currently, the patient is followed up in a good clinical condition. Neutropenia is a common problem in kidney transplant recipients occurring in 10%-30% of such patients. The etiology of neutropenia is often multifactorial and includes drugs, bacterial infections, viral infections, and posttransplant lymphoproliferative diseases.4 It usually occurs at the third month following transplantation. Moreover, prolonged neutropenia predisposes to infections and causes allograft rejections.4 Transient neutropenia after the administration of several vaccines have been reported.5 However, according to a recent report by Sing et al.6, CoronaVac vaccine did not increase the risk of neutropenia. Although the sample for this study was large, immunosuppressed patients with organ transplants were excluded. The concomitant use of mycophenolic acid derivatives or azathioprine predisposes to the occurrence of neutropenia in transplanted patients after vaccine administration. In our case, we detected neutropenia in a regular transplant visit. Bacterial and viral infections were excluded through clinical and serological findings. Moreover, the causative drug was stopped. However, neutropenia persisted, and a bone marrow biopsy was performed to rule out a posttransplant lymphoproliferative disorder. After excluding all other etiologies, neutropenia was linked to CoronaVac®. Transient neutropenia is an adverse event that occurs in the first two weeks after administration of SARS-CoV-2 vaccines. Postvaccination neutropenia is not associated with secondary infections and does not diminish the immunologic response to vaccination. However, neutropenia is a surrogate marker for vaccine response in patients with hematological malignancies.7 In conclusion, kidney transplant recipients must be vaccinated against SARS-CoV-2, though neutropenia could occur in some patients. Clinicians should follow-up these patients with blood counts after excluding other causes such as infections, drugs, and malignancies. Patient Consent for Publication: Written informed was obtained from the patient. Author Contributions: Concept- A.S.A., E.D.; Data Collection or Processing- E.D.; Literature Search- N.G.; Writing- A.S.A.; Critical Review- A.T. Conflict of Interest: No conflict of interest was declared by the authors.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>To the Editor,</p>\r\n<p>Vaccination against severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) is critical in kidney transplant recipients due to the risk of developing severe form of the disease. Although the effect of vaccines on the transplant population is few in previous publications, widespread vaccination continues to be applied.<sup>1</sup> However, these patients experience adverse events due to vaccination.<sup>2</sup> Although transient neutropenia is a known side effect of two SARS-CoV-2 vaccines<sup>3</sup>, neutropenia associated with inactivated whole-virus SARS-CoV-2 vaccine (CoronaVac<sup>&reg;</sup> by Sinovac<sup>&reg;</sup>) has not clearly been elucidated. We, therefore, report the case of a kidney transplant recipient who presented with neutropenia after the second dose of the inactivated whole-virus SARS-CoV-2 vaccine.</p>\r\n<p>A 60-year-old female kidney transplant recipient was admitted to the transplant clinic at a routine follow-up visit on the second day after receiving the second dose of CoronaVac<sup>&reg;</sup>. She underwent deceased donor kidney transplantation four years ago due to autosomal dominant polycystic kidney disease. The posttransplant course was insignificant for four years. The immunosuppressive regimen included tacrolimus, mycophenolate mofetil, and prednisolone. The patient had no complaint, and physical examination was unremarkable. Complete blood count demonstrated white blood cell: 2,700/mm<sup>3</sup>, neutrophil: 600/mm<sup>3</sup>, lymphocyte: 1400/mm<sup>3</sup>, hemoglobin: 15 g/dl, and thrombocyte: 202,000/mm<sup>3</sup>. Biochemical investigations include serum creatinine: 0.9 mg/dl, lactate dehydrogenase: 150 U/L, C-reactive protein: 2 mg/dl, folate: 13 &mu;g/L, Vitamin B12: 500 pg/ml, ferritin: 100 ng/ml, transferrin saturation: 23%, and tacrolimus level: 6 ng/ml.</p>\r\n<p>Mycophenolate mofetil was halted. Polymerase chain reaction (PCR) tests were negative for Cytomegalovirus, Parvovirus, Epstein-Barr virus, and SARS-CoV-2. PCR tests for SARS-CoV-2 were repeated thrice at 48-h intervals. Peripheral blood smear did not reveal atypical cells. A bone marrow biopsy revealed a normocellular marrow with the hyperplastic granulocytic cell line. No signs of dysplasia were detected. Neutropenia resolved spontaneously at the end of two months, and mycophenolate mofetil was reinstated in the immunosuppressive regimen. Currently, the patient is followed up in a good clinical condition.</p>\r\n<p>Neutropenia is a common problem in kidney transplant recipients occurring in 10%-30% of such patients. The etiology of neutropenia is often multifactorial and includes drugs, bacterial infections, viral infections, and posttransplant lymphoproliferative diseases.<sup>4</sup> It usually occurs at the third month following transplantation. Moreover, prolonged neutropenia predisposes to infections and causes allograft rejections.<sup>4 </sup>Transient neutropenia after the administration of several vaccines have been reported.<sup>5 </sup>However, according to a recent report by Sing et al.<sup>6</sup>, CoronaVac vaccine did not increase the risk of neutropenia. Although the sample for this study was large, immunosuppressed patients with organ transplants were excluded. The concomitant use of mycophenolic acid derivatives or azathioprine predisposes to the occurrence of neutropenia in transplanted patients after vaccine administration. In our case, we detected neutropenia in a regular transplant visit. Bacterial and viral infections were excluded through clinical and serological findings. Moreover, the causative drug was stopped. However, neutropenia persisted, and a bone marrow biopsy was performed to rule out a posttransplant lymphoproliferative disorder. After excluding all other etiologies, neutropenia was linked to CoronaVac<sup>&reg;</sup>.</p>\r\n<p>Transient neutropenia is an adverse event that occurs in the first two weeks after administration of SARS-CoV-2 vaccines. Postvaccination neutropenia is not associated with secondary infections and does not diminish the immunologic response to vaccination. However, neutropenia is a surrogate marker for vaccine response in patients with hematological malignancies.<sup>7</sup> In conclusion, kidney transplant recipients must be vaccinated against SARS-CoV-2, though neutropenia could occur in some patients. Clinicians should follow-up these patients with blood counts after excluding other causes such as infections, drugs, and malignancies.</p>\r\n<p><strong>Patient Consent for Publication: </strong>Written informed was obtained from the patient.</p>\r\n<p><strong>Author Contributions:</strong> Concept- A.S.A., E.D.; Data Collection or Processing- E.D.; Literature Search- N.G.; Writing- A.S.A.; Critical Review- A.T.</p>\r\n<p><strong>Conflict of Interest:</strong> No conflict of interest was declared by the authors.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "To the Editor, Vaccination against severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) is critical in kidney transplant recipients due to the risk of developing severe form of the disease. Although the effect of vaccines on the transplant population is few in previous publications, widespread vaccination continues to be applied.1 However, these patients experience adverse events due to vaccination.2 Although transient neutropenia is a known side effect of two SARS-CoV-2 vaccines3, neutropenia associated with inactivated whole-virus SARS-CoV-2 vaccine (CoronaVac® by Sinovac®) has not clearly been elucidated. We, therefore, report the case of a kidney transplant recipient who presented with neutropenia after the second dose of the inactivated whole-virus SARS-CoV-2 vaccine. A 60-year-old female kidney transplant recipient was admitted to the transplant clinic at a routine follow-up visit on the second day after receiving the second dose of CoronaVac®. She underwent deceased donor kidney transplantation four years ago due to autosomal dominant polycystic kidney disease. The posttransplant course was insignificant for four years. The immunosuppressive regimen included tacrolimus, mycophenolate mofetil, and prednisolone. The patient had no complaint, and physical examination was unremarkable. Complete blood count demonstrated white blood cell: 2,700/mm3, neutrophil: 600/mm3, lymphocyte: 1400/mm3, hemoglobin: 15 g/dl, and thrombocyte: 202,000/mm3. Biochemical investigations include serum creatinine: 0.9 mg/dl, lactate dehydrogenase: 150 U/L, C-reactive protein: 2 mg/dl, folate: 13 μg/L, Vitamin B12: 500 pg/ml, ferritin: 100 ng/ml, transferrin saturation: 23%, and tacrolimus level: 6 ng/ml. Mycophenolate mofetil was halted. Polymerase chain reaction (PCR) tests were negative for Cytomegalovirus, Parvovirus, Epstein-Barr virus, and SARS-CoV-2. PCR tests for SARS-CoV-2 were repeated thrice at 48-h intervals. Peripheral blood smear did not reveal atypical cells. A bone marrow biopsy revealed a normocellular marrow with the hyperplastic granulocytic cell line. No signs of dysplasia were detected. Neutropenia resolved spontaneously at the end of two months, and mycophenolate mofetil was reinstated in the immunosuppressive regimen. Currently, the patient is followed up in a good clinical condition. Neutropenia is a common problem in kidney transplant recipients occurring in 10%-30% of such patients. The etiology of neutropenia is often multifactorial and includes drugs, bacterial infections, viral infections, and posttransplant lymphoproliferative diseases.4 It usually occurs at the third month following transplantation. Moreover, prolonged neutropenia predisposes to infections and causes allograft rejections.4 Transient neutropenia after the administration of several vaccines have been reported.5 However, according to a recent report by Sing et al.6, CoronaVac vaccine did not increase the risk of neutropenia. Although the sample for this study was large, immunosuppressed patients with organ transplants were excluded. The concomitant use of mycophenolic acid derivatives or azathioprine predisposes to the occurrence of neutropenia in transplanted patients after vaccine administration. In our case, we detected neutropenia in a regular transplant visit. Bacterial and viral infections were excluded through clinical and serological findings. Moreover, the causative drug was stopped. However, neutropenia persisted, and a bone marrow biopsy was performed to rule out a posttransplant lymphoproliferative disorder. After excluding all other etiologies, neutropenia was linked to CoronaVac®. Transient neutropenia is an adverse event that occurs in the first two weeks after administration of SARS-CoV-2 vaccines. Postvaccination neutropenia is not associated with secondary infections and does not diminish the immunologic response to vaccination. However, neutropenia is a surrogate marker for vaccine response in patients with hematological malignancies.7 In conclusion, kidney transplant recipients must be vaccinated against SARS-CoV-2, though neutropenia could occur in some patients. Clinicians should follow-up these patients with blood counts after excluding other causes such as infections, drugs, and malignancies. Patient Consent for Publication: Written informed was obtained from the patient. Author Contributions: Concept- A.S.A., E.D.; Data Collection or Processing- E.D.; Literature Search- N.G.; Writing- A.S.A.; Critical Review- A.T. Conflict of Interest: No conflict of interest was declared by the authors.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-4-30",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "4",
+    "pages": "305-306",
+    "views": 6763,
+    "downloads": 4036,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1278",
+    "sourceArticleId": "2420",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2420",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2420",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2420",
+    "localPdfUrl": "js/data/pdfs/2420.pdf",
+    "pdfUrl": "js/data/pdfs/2420.pdf"
+  }
+]

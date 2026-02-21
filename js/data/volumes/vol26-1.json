@@ -1,0 +1,949 @@
+[
+  {
+    "id": 1947,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1947",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1947",
+    "localPdfUrl": "js/data/pdfs/1947.pdf",
+    "pdfUrl": "js/data/pdfs/1947.pdf"
+  },
+  {
+    "id": 1099,
+    "type": "Original Article",
+    "title": "The Association of Gene Polymorphisms of the Angiotensin- Converting Enzyme and Angiotensin II Receptor Type 1 with Ischemic Stroke in Turkish Subjects of Trakya Region",
+    "authors": [
+      {
+        "name": "Tammam Sipahi",
+        "affiliation": "Departments of Biophysics, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Metin Budak",
+        "affiliation": "Departments of Biophysics, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Suat Cakina",
+        "affiliation": "Departments of Biophysics, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Babürhan Güldiken",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Sibel Güldiken",
+        "affiliation": "Department of Internal Medicine, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Sedat Üstündağ",
+        "affiliation": "Department of Nephrology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nilda Turgut",
+        "affiliation": "Departments of Neurology, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Hülya Özkan",
+        "affiliation": "Edirne Devlet Hastanesi Nöroloji Kliniği, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Seralp Şener",
+        "affiliation": "Department of Biophysics, Medical Faculty of Trakya Üniversity, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: The aim of this study was to investigate the frequency of ACE insertion/deletion (I/D) and AT1R (A1166C) gene polymorphisms in ischemic stroke patients in Trakya region and the relation between these gene polymorphisms and stroke subtypes and vascular risk factors. Patients and Methods: The study involved 162 patients with ischemic stroke and 146 control subjects. Ischemic stroke patients were divided into large and small vessel disease subgroups according to ORG 10172 in Acute Stroke Treatment TOAST criteria. The ACE I/D polymorphism was investigated using polymerase chain reaction (PCR), and the AT1R (A1166C) polymorphism was identified using PCR and restriction fragment length polymorphism (RFLP) assay. Results: The ACE I/D genotype distribution in patients (DD=34.0%, ID=50.0%, II=16.0%) did not differ from those in controls (DD=34.3%, ID=49.7%, II=16.1%). The AT1R A1166C genotype distribution in patients (AA=58.0%, CA=34.6%, CC=7.4%) did not significantly differ from those in controls (AA=60.1%, CA=35.7%, CC=4.2%). There was also no difference among the stroke subgroups regarding the distribution of ACE I/D and AT1R (A1166C) polymorphisms. Conclusion: Our results show that ACE I/D and AT1R (A1166C) gene polymorphisms were not genetic risk factors for ischemic stroke in subjects in Trakya region.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: The aim of this study was to investigate the frequency of ACE insertion/deletion (I/D) and AT1R (A1166C) gene polymorphisms in ischemic stroke patients in Trakya region and the relation between these gene polymorphisms and stroke subtypes and vascular risk factors.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: The study involved 162 patients with ischemic stroke and 146 control subjects. Ischemic stroke patients were divided into large and small vessel disease subgroups according to ORG 10172 in Acute Stroke Treatment TOAST criteria. The ACE I/D polymorphism was investigated using polymerase chain reaction (PCR), and the AT1R (A1166C) polymorphism was identified using PCR and restriction fragment length polymorphism (RFLP) assay.</p>\r\n<p>\r\n\t<strong>Results</strong>: The ACE I/D genotype distribution in patients (DD=34.0%, ID=50.0%, II=16.0%) did not differ from those in controls (DD=34.3%, ID=49.7%, II=16.1%). The AT1R A1166C genotype distribution in patients (AA=58.0%, CA=34.6%, CC=7.4%) did not significantly differ from those in controls (AA=60.1%, CA=35.7%, CC=4.2%). There was also no difference among the stroke subgroups regarding the distribution of ACE I/D and AT1R (A1166C) polymorphisms.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Our results show that ACE I/D and AT1R (A1166C) gene polymorphisms were not genetic risk factors for ischemic stroke in subjects in Trakya region.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: The aim of this study was to investigate the frequency of ACE insertion/deletion (I/D) and AT1R (A1166C) gene polymorphisms in ischemic stroke patients in Trakya region and the relation between these gene polymorphisms and stroke subtypes and vascular risk factors. Patients and Methods: The study involved 162 patients with ischemic stroke and 146 control subjects. Ischemic stroke patients were divided into large and small vessel disease subgroups according to ORG 10172 in Acute Stroke Treatment TOAST criteria. The ACE I/D polymorphism was investigated using polymerase chain reaction (PCR), and the AT1R (A1166C) polymorphism was identified using PCR and restriction fragment length polymorphism (RFLP) assay. Results: The ACE I/D genotype distribution in patients (DD=34.0%, ID=50.0%, II=16.0%) did not differ from those in controls (DD=34.3%, ID=49.7%, II=16.1%). The AT1R A1166C genotype distribution in patients (AA=58.0%, CA=34.6%, CC=7.4%) did not significantly differ from those in controls (AA=60.1%, CA=35.7%, CC=4.2%). There was also no difference among the stroke subgroups regarding the distribution of ACE I/D and AT1R (A1166C) polymorphisms. Conclusion: Our results show that ACE I/D and AT1R (A1166C) gene polymorphisms were not genetic risk factors for ischemic stroke in subjects in Trakya region.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "1-8",
+    "views": 6761,
+    "downloads": 1898,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1099",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1099",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1099",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1099",
+    "localPdfUrl": "js/data/pdfs/1099.pdf",
+    "pdfUrl": "js/data/pdfs/1099.pdf"
+  },
+  {
+    "id": 1103,
+    "type": "Original Article",
+    "title": "High C-Reactive Protein and Amylase Levels as Prognostic Markers in Non-Pancreatic Severe Sepsis Patients",
+    "authors": [
+      {
+        "name": "Sevtap Hekimoğlu Şahin",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Memiş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Necdet Süt",
+        "affiliation": "Departments of Biostatistics, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: Sepsis in critical illness is associated with the progressive failure of multiple organs. Additional biomarkers in severe sepsis are needed to tackle the challenges of determining a prognosis and optimizing the selection of high-risk patients for therapy. This paper evaluates serum C-reactive protein (CRP) and amylase as prognostic factors for survival in patients with severe sepsis. Patients and Methods: Ninety-five patients (42 males, 53 females) meeting the criteria for severe sepsis were chosen for the study. APACHE II scores, serum levels of CRP and amylase were taken on admission to an intensive care unit, two days later, and on the day of discharge from the intensive care unit or on the day of death. Results: Amylase levels, median CRP levels, and APACHE II scores were significantly higher in the non-survivors than in the surviving patients. Conclusion: Serum amylase and CRP are predictors of survival in patients with severe sepsis. High amylase and CRP levels appear to be a valuable tool for individual risk assessment in severe sepsis patients and for stratification of high-risk patients in future intervention trials.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: Sepsis in critical illness is associated with the progressive failure of multiple organs. Additional biomarkers in severe sepsis are needed to tackle the challenges of determining a prognosis and optimizing the selection of high-risk patients for therapy. This paper evaluates serum C-reactive protein (CRP) and amylase as prognostic factors for survival in patients with severe sepsis.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: Ninety-five patients (42 males, 53 females) meeting the criteria for severe sepsis were chosen for the study. APACHE II scores, serum levels of CRP and amylase were taken on admission to an intensive care unit, two days later, and on the day of discharge from the intensive care unit or on the day of death.</p>\r\n<p>\r\n\t<strong>Results</strong>: Amylase levels, median CRP levels, and APACHE II scores were significantly higher in the non-survivors than in the surviving patients.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Serum amylase and CRP are predictors of survival in patients with severe sepsis. High amylase and CRP levels appear to be a valuable tool for individual risk assessment in severe sepsis patients and for stratification of high-risk patients in future intervention trials.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: Sepsis in critical illness is associated with the progressive failure of multiple organs. Additional biomarkers in severe sepsis are needed to tackle the challenges of determining a prognosis and optimizing the selection of high-risk patients for therapy. This paper evaluates serum C-reactive protein (CRP) and amylase as prognostic factors for survival in patients with severe sepsis. Patients and Methods: Ninety-five patients (42 males, 53 females) meeting the criteria for severe sepsis were chosen for the study. APACHE II scores, serum levels of CRP and amylase were taken on admission to an intensive care unit, two days later, and on the day of discharge from the intensive care unit or on the day of death. Results: Amylase levels, median CRP levels, and APACHE II scores were significantly higher in the non-survivors than in the surviving patients. Conclusion: Serum amylase and CRP are predictors of survival in patients with severe sepsis. High amylase and CRP levels appear to be a valuable tool for individual risk assessment in severe sepsis patients and for stratification of high-risk patients in future intervention trials.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "9-17",
+    "views": 6766,
+    "downloads": 2185,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1103",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1103",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1103",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1103",
+    "localPdfUrl": "js/data/pdfs/1103.pdf",
+    "pdfUrl": "js/data/pdfs/1103.pdf"
+  },
+  {
+    "id": 1108,
+    "type": "Original Article",
+    "title": "Evaluation of Serum Ghrelin and Neuropeptide Y Levels in Epileptic Children Under Valproate Treatment",
+    "authors": [
+      {
+        "name": "Ahmet Güzel",
+        "affiliation": "Department of Pediatrics, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Serap Karasalihoğlu",
+        "affiliation": "Department of Pediatrics, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Esra Sayar",
+        "affiliation": "Department of Pediatrics, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Yasemin Küçükuğurluoğlu",
+        "affiliation": "Department of Pediatrics, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Kunduracılar",
+        "affiliation": "Departments of Clinical Microbiology, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: Weight gain and obesity are also among the side effects of long-term valproate treatment, whose etiology remains unclear. The aim of this study is to investigate the relationship between weight gain, serum neuropeptide Y and ghrelin levels in children taking valproate treatment. Patients and Methods: Our study included 25 epileptic children (14 males, 11 females; mean age 7.7±3.8 years; range 4 to 12 years) who were taking only valproate monotherapy at the outpatient clinics. All study participants were analyzed in terms of body mass index, serum neuropeptide Y and ghrelin levels before treatment and after a follow-up period of one year. Results: At the end of follow-up, the mean body mass index measurements increased, whereas the mean serum neuropeptide Y and ghrelin levels decreased; twelve patients (48%) gained obesity. Conclusion: This study demonstrated low serum ghrelin and neuropeptide Y levels in children receiving valproate treatment. New studies with larger sample sizes and longer follow-up periods are needed to evaluate the mechanism of weight gain due to valproate treatment in this population.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: Weight gain and obesity are also among the side effects of long-term valproate treatment, whose etiology remains unclear. The aim of this study is to investigate the relationship between weight gain, serum neuropeptide Y and ghrelin levels in children taking valproate treatment.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: Our study included 25 epileptic children (14 males, 11 females; mean age 7.7&plusmn;3.8 years; range 4 to 12 years) who were taking only valproate monotherapy at the outpatient clinics. All study participants were analyzed in terms of body mass index, serum neuropeptide Y and ghrelin levels before treatment and after a follow-up period of one year.</p>\r\n<p>\r\n\t<strong>Results</strong>: At the end of follow-up, the mean body mass index measurements increased, whereas the mean serum neuropeptide Y and ghrelin levels decreased; twelve patients (48%) gained obesity.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: This study demonstrated low serum ghrelin and neuropeptide Y levels in children receiving valproate treatment. New studies with larger sample sizes and longer follow-up periods are needed to evaluate the mechanism of weight gain due to valproate treatment in this population.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: Weight gain and obesity are also among the side effects of long-term valproate treatment, whose etiology remains unclear. The aim of this study is to investigate the relationship between weight gain, serum neuropeptide Y and ghrelin levels in children taking valproate treatment. Patients and Methods: Our study included 25 epileptic children (14 males, 11 females; mean age 7.7±3.8 years; range 4 to 12 years) who were taking only valproate monotherapy at the outpatient clinics. All study participants were analyzed in terms of body mass index, serum neuropeptide Y and ghrelin levels before treatment and after a follow-up period of one year. Results: At the end of follow-up, the mean body mass index measurements increased, whereas the mean serum neuropeptide Y and ghrelin levels decreased; twelve patients (48%) gained obesity. Conclusion: This study demonstrated low serum ghrelin and neuropeptide Y levels in children receiving valproate treatment. New studies with larger sample sizes and longer follow-up periods are needed to evaluate the mechanism of weight gain due to valproate treatment in this population.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "18-23",
+    "views": 6870,
+    "downloads": 2100,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1108",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1108",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1108",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1108",
+    "localPdfUrl": "js/data/pdfs/1108.pdf",
+    "pdfUrl": "js/data/pdfs/1108.pdf"
+  },
+  {
+    "id": 1111,
+    "type": "Original Article",
+    "title": "Does Valproate Therapy Decrease the Bone Mineral Density in One-Year Follow-Up in Children?",
+    "authors": [
+      {
+        "name": "Musa Bostancıoğlu",
+        "affiliation": "Departments of Pediatrics Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Serap Karasalihoğlu",
+        "affiliation": "Departments of Pediatrics Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Coşkun Çeltik",
+        "affiliation": "Departments of Pediatrics Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Naci Öner",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Haydarpaşa Training and Research Hospital, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Yasemin Küçükuğurluoğlu",
+        "affiliation": "Department of Pediatrics, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Meryem Kaya",
+        "affiliation": "Departments of Nuclear Medicine, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Nükhet Aladağ",
+        "affiliation": "Departments of Nuclear Medicine, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: Epilepsy is a chronic disease that requires long-term antiepileptic therapy. The aim of this study was to evaluate the side effects of valproate, the most commonly used antiepileptic, on bone mineral metabolism. Patients and Methods: The study comprised of 61 patients (38 girls, 28 boys; mean age 81.2±44.5 months; range 12 to 168 months) who received valproate because of epilepsy or prophylaxis of febrile seizures. All cases were evaluated in terms of bone mineral metabolism disturbances by assessing bone mineral density and biochemistry parameters, before and after 12 months of valproate therapy. Results: At the end of one year of valproate therapy, there were no statistically significant differences in calcium, phosphorus and alkaline phosphatase levels that might show bone mineralization disturbance. Osteoporosis was recorded in two cases (3.3%). Conclusion: The side effects of valproate on bone mineral metabolism are usually contradictory. In order to determine osteopenia signs; bone biochemistry, 25- OH vitamin D3, hormonal parameters and bone mineral density, which are not enough for evaluation alone, have to be evaluated together. Patients taking valproate therapy should have bone mineral density measurements yearly, because mineral changes in bone (defeats) could not be predicted with these biochemical parameters beforehand.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: Epilepsy is a chronic disease that requires long-term antiepileptic therapy. The aim of this study was to evaluate the side effects of valproate, the most commonly used antiepileptic, on bone mineral metabolism.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: The study comprised of 61 patients (38 girls, 28 boys; mean age 81.2&plusmn;44.5 months; range 12 to 168 months) who received valproate because of epilepsy or prophylaxis of febrile seizures. All cases were evaluated in terms of bone mineral metabolism disturbances by assessing bone mineral density and biochemistry parameters, before and after 12 months of valproate therapy.</p>\r\n<p>\r\n\t<strong>Results</strong>: At the end of one year of valproate therapy, there were no statistically significant differences in calcium, phosphorus and alkaline phosphatase levels that might show bone mineralization disturbance. Osteoporosis was recorded in two cases (3.3%).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The side effects of valproate on bone mineral metabolism are usually contradictory. In order to determine osteopenia signs; bone biochemistry, 25- OH vitamin D3, hormonal parameters and bone mineral density, which are not enough for evaluation alone, have to be evaluated together. Patients taking valproate therapy should have bone mineral density measurements yearly, because mineral changes in bone (defeats) could not be predicted with these biochemical parameters beforehand.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: Epilepsy is a chronic disease that requires long-term antiepileptic therapy. The aim of this study was to evaluate the side effects of valproate, the most commonly used antiepileptic, on bone mineral metabolism. Patients and Methods: The study comprised of 61 patients (38 girls, 28 boys; mean age 81.2±44.5 months; range 12 to 168 months) who received valproate because of epilepsy or prophylaxis of febrile seizures. All cases were evaluated in terms of bone mineral metabolism disturbances by assessing bone mineral density and biochemistry parameters, before and after 12 months of valproate therapy. Results: At the end of one year of valproate therapy, there were no statistically significant differences in calcium, phosphorus and alkaline phosphatase levels that might show bone mineralization disturbance. Osteoporosis was recorded in two cases (3.3%). Conclusion: The side effects of valproate on bone mineral metabolism are usually contradictory. In order to determine osteopenia signs; bone biochemistry, 25- OH vitamin D3, hormonal parameters and bone mineral density, which are not enough for evaluation alone, have to be evaluated together. Patients taking valproate therapy should have bone mineral density measurements yearly, because mineral changes in bone (defeats) could not be predicted with these biochemical parameters beforehand.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "24-28",
+    "views": 6542,
+    "downloads": 2161,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1111",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1111",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1111",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1111",
+    "localPdfUrl": "js/data/pdfs/1111.pdf",
+    "pdfUrl": "js/data/pdfs/1111.pdf"
+  },
+  {
+    "id": 1137,
+    "type": "Original Article",
+    "title": "Measurement of Normal Lumbar Spine Range of Motion in the College-Aged Turkish Population Using a 3D Ultrasound-Based Motion Analysis System",
+    "authors": [
+      {
+        "name": "Enis Uluçam",
+        "affiliation": "Department of Anatomy, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Sabri Cığalı",
+        "affiliation": "Department of Anatomy, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: The aim of this study was to determine range of motion values of lumbar spine in Turkish people by using 3D motion analysis method. Patients and Methods: The study included 100 subjects (50 males, 50 females; range 18 to 22 years). The Zebris® 3D Motion Analysis System was used for the measurement. Lateral bending, flexion, extension, pelvic tilt were evaluated in the measurements. Results: The average value for total lateral flexion at lumbar spine was found to be 51.3°±7.5 in males and 52.7°±9.9 in females. Total flexion-extension was 81.0°±11.1 in males and 80.2°±10.2 in females. L4-L5 flexion, L5-S1 extension values were statistically high in women (p<0.05) while L3-L4 total flexion- extension and L1-L2 total lateral flexion values were statistically high in men (p<0.05). The support of pelvic tilt to total lumbosacral flexion was 46.6% in males and 42.1% in females. The support was 36.8% in males and 26.2% in females during extension. Flexion and extension of pelvic tilt values in men were found to be significantly higher than that in women (p<0.05). Conclusion: The normal values of movements of lumbar spine in Turkish people have been determined with 3D motion analysis system",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: The aim of this study was to determine range of motion values of lumbar spine in Turkish people by using 3D motion analysis method.</p>\r\n<p>\r\n\t<strong>Patients and</strong> <strong>Methods</strong>: The study included 100 subjects (50 males, 50 females; range 18 to 22 years). The Zebris&reg; 3D Motion Analysis System was used for the measurement. Lateral bending, flexion, extension, pelvic tilt were evaluated in the measurements.</p>\r\n<p>\r\n\t<strong>Results</strong>: The average value for total lateral flexion at lumbar spine was found to be 51.3&deg;&plusmn;7.5 in males and 52.7&deg;&plusmn;9.9 in females. Total flexion-extension was 81.0&deg;&plusmn;11.1 in males and 80.2&deg;&plusmn;10.2 in females. L4-L5 flexion, L5-S1 extension values were statistically high in women (p&lt;0.05) while L3-L4 total flexion- extension and L1-L2 total lateral flexion values were statistically high in men (p&lt;0.05). The support of pelvic tilt to total lumbosacral flexion was 46.6% in males and 42.1% in females. The support was 36.8% in males and 26.2% in females during extension. Flexion and extension of pelvic tilt values in men were found to be significantly higher than that in women (p&lt;0.05).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The normal values of movements of lumbar spine in Turkish people have been determined with 3D motion analysis system</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: The aim of this study was to determine range of motion values of lumbar spine in Turkish people by using 3D motion analysis method. Patients and Methods: The study included 100 subjects (50 males, 50 females; range 18 to 22 years). The Zebris® 3D Motion Analysis System was used for the measurement. Lateral bending, flexion, extension, pelvic tilt were evaluated in the measurements. Results: The average value for total lateral flexion at lumbar spine was found to be 51.3°±7.5 in males and 52.7°±9.9 in females. Total flexion-extension was 81.0°±11.1 in males and 80.2°±10.2 in females. L4-L5 flexion, L5-S1 extension values were statistically high in women (p<0.05) while L3-L4 total flexion- extension and L1-L2 total lateral flexion values were statistically high in men (p<0.05). The support of pelvic tilt to total lumbosacral flexion was 46.6% in males and 42.1% in females. The support was 36.8% in males and 26.2% in females during extension. Flexion and extension of pelvic tilt values in men were found to be significantly higher than that in women (p<0.05). Conclusion: The normal values of movements of lumbar spine in Turkish people have been determined with 3D motion analysis system",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "29-35",
+    "views": 6897,
+    "downloads": 2225,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1137",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1137",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1137",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1137",
+    "localPdfUrl": "js/data/pdfs/1137.pdf",
+    "pdfUrl": "js/data/pdfs/1137.pdf"
+  },
+  {
+    "id": 1140,
+    "type": "Original Article",
+    "title": "Lumbar Disc and Facet Degeneration: Correlation with Age and Facet Orientation",
+    "authors": [
+      {
+        "name": "Rahmi Çubuk",
+        "affiliation": "Departments of Radiology, Medical Faculty of Maltepe University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Nuri Tasalı",
+        "affiliation": "Departments of Radiology, Medical Faculty of Maltepe University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Levent Çelik",
+        "affiliation": "Departments of Radiology, Medical Faculty of Maltepe University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Meral Kozakçıoğlu",
+        "affiliation": "Departments of Physical Medicine Medical Faculty of Maltepe University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Ayçe Atalay",
+        "affiliation": "Departments of Physical Medicine Medical Faculty of Maltepe University, İstanbul",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: The influence of age on orientation of the facet joint remains controversial. We aimed to examine facet joint degeneration, orientation and their relationships with disc degeneration in a group of patients in different age groups. Patients and Methods: The study included 106 patients with low back pain and/or leg symptoms who had undergone magnetic resonance imaging of L1-S1 lumbar segments. For evaluation of osteoarthritis of the facet joints grading described by Weishaupt et al. and for evaluation of disc degenerations grading by Pfirmann et al. were used. Results: Orientation of the facet joints were similar among age groups. Age was not correlated with facet joint orientation. Facet joint orientation was not correlated with facet or disc degeneration in neither female nor male patients. Age was positively correlated with facet degeneration at all spinal levels. At all levels except L3-4 level, facet joint degeneration was more prominent in male subjects. Conclusion: This study have demonstrated that facet joint orientation is similar among different age groups. The finding of greater prevalence and degree of facet arthrosis in men at all lumbar levels is in accordance with some recent studies. Our study supported the notion that disc degeneration precedes facet arthrosis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: The influence of age on orientation of the facet joint remains controversial. We aimed to examine facet joint degeneration, orientation and their relationships with disc degeneration in a group of patients in different age groups.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: The study included 106 patients with low back pain and/or leg symptoms who had undergone magnetic resonance imaging of L1-S1 lumbar segments. For evaluation of osteoarthritis of the facet joints grading described by Weishaupt et al. and for evaluation of disc degenerations grading by Pfirmann et al. were used.</p>\r\n<p>\r\n\t<strong>Results</strong>: Orientation of the facet joints were similar among age groups. Age was not correlated with facet joint orientation. Facet joint orientation was not correlated with facet or disc degeneration in neither female nor male patients. Age was positively correlated with facet degeneration at all spinal levels. At all levels except L3-4 level, facet joint degeneration was more prominent in male subjects.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: This study have demonstrated that facet joint orientation is similar among different age groups. The finding of greater prevalence and degree of facet arthrosis in men at all lumbar levels is in accordance with some recent studies. Our study supported the notion that disc degeneration precedes facet arthrosis.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: The influence of age on orientation of the facet joint remains controversial. We aimed to examine facet joint degeneration, orientation and their relationships with disc degeneration in a group of patients in different age groups. Patients and Methods: The study included 106 patients with low back pain and/or leg symptoms who had undergone magnetic resonance imaging of L1-S1 lumbar segments. For evaluation of osteoarthritis of the facet joints grading described by Weishaupt et al. and for evaluation of disc degenerations grading by Pfirmann et al. were used. Results: Orientation of the facet joints were similar among age groups. Age was not correlated with facet joint orientation. Facet joint orientation was not correlated with facet or disc degeneration in neither female nor male patients. Age was positively correlated with facet degeneration at all spinal levels. At all levels except L3-4 level, facet joint degeneration was more prominent in male subjects. Conclusion: This study have demonstrated that facet joint orientation is similar among different age groups. The finding of greater prevalence and degree of facet arthrosis in men at all lumbar levels is in accordance with some recent studies. Our study supported the notion that disc degeneration precedes facet arthrosis.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "36-42",
+    "views": 6905,
+    "downloads": 2063,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1140",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1140",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1140",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1140",
+    "localPdfUrl": "js/data/pdfs/1140.pdf",
+    "pdfUrl": "js/data/pdfs/1140.pdf"
+  },
+  {
+    "id": 1145,
+    "type": "Original Article",
+    "title": "Evaluation of Surgical and Histopathologic Results of Patients Operated for Parotid Gland Tumor",
+    "authors": [
+      {
+        "name": "Abdullah Taş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Safiye Giran",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Recep Yağız",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Kemal Adalı",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Karasalihoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ömer Yalçın",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Patoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Muhsin Koten",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kulak Burun Boğaz Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: To investigate the patients with parotid tumors retrospectively and to evaluate the surgical procedure, histopathologic results, incidence, follow-up time and complications. Patients and Methods: The study included 56 patients (38 males, 18 females; mean age 52.7 years; range 7 to 86 years) who presented with a mass below or in front of the ear between January 2000 and May 2008. The data regarding patient age, sex, surgical procedure, postoperative histopathologic results and follow-up time were recorded. Results: One of the male patients underwent operation twice because of the bilateral parotid mass. According to the postoperative histopathologic results, 37 of the cases were benign (64.9%), and 20 of them were malign (35.1%). Pleomorphic adenoma (13 patients) and Whartin tumor (13 patients) incidence were similar. Partial superficial parotidectomy, superficial parotidectomy, and total parotidectomy were performed. In addition, some of the patients underwent neck dissection. The most frequent complication was transient facial nerve paresis. Conclusion: For the management of benign parotid gland tumors, superficial or partial superficial parotidectomy is a sufficient surgery. For malign tumors, superficial or total parotidectomy; in cases with neck masses, neck dissection; and in cases involving the facial nerve, facial nerve resection and reconstruction should be performed. According to the type of tumor, postoperative radiation therapy and chemotherapy should be performed as well.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: To investigate the patients with parotid tumors retrospectively and to evaluate the surgical procedure, histopathologic results, incidence, follow-up time and complications.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: The study included 56 patients (38 males, 18 females; mean age 52.7 years; range 7 to 86 years) who presented with a mass below or in front of the ear between January 2000 and May 2008. The data regarding patient age, sex, surgical procedure, postoperative histopathologic results and follow-up time were recorded.</p>\r\n<p>\r\n\t<strong>Results</strong>: One of the male patients underwent operation twice because of the bilateral parotid mass. According to the postoperative histopathologic results, 37 of the cases were benign (64.9%), and 20 of them were malign (35.1%). Pleomorphic adenoma (13 patients) and Whartin tumor (13 patients) incidence were similar. Partial superficial parotidectomy, superficial parotidectomy, and total parotidectomy were performed. In addition, some of the patients underwent neck dissection. The most frequent complication was transient facial nerve paresis.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: For the management of benign parotid gland tumors, superficial or partial superficial parotidectomy is a sufficient surgery. For malign tumors, superficial or total parotidectomy; in cases with neck masses, neck dissection; and in cases involving the facial nerve, facial nerve resection and reconstruction should be performed. According to the type of tumor, postoperative radiation therapy and chemotherapy should be performed as well.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: To investigate the patients with parotid tumors retrospectively and to evaluate the surgical procedure, histopathologic results, incidence, follow-up time and complications. Patients and Methods: The study included 56 patients (38 males, 18 females; mean age 52.7 years; range 7 to 86 years) who presented with a mass below or in front of the ear between January 2000 and May 2008. The data regarding patient age, sex, surgical procedure, postoperative histopathologic results and follow-up time were recorded. Results: One of the male patients underwent operation twice because of the bilateral parotid mass. According to the postoperative histopathologic results, 37 of the cases were benign (64.9%), and 20 of them were malign (35.1%). Pleomorphic adenoma (13 patients) and Whartin tumor (13 patients) incidence were similar. Partial superficial parotidectomy, superficial parotidectomy, and total parotidectomy were performed. In addition, some of the patients underwent neck dissection. The most frequent complication was transient facial nerve paresis. Conclusion: For the management of benign parotid gland tumors, superficial or partial superficial parotidectomy is a sufficient surgery. For malign tumors, superficial or total parotidectomy; in cases with neck masses, neck dissection; and in cases involving the facial nerve, facial nerve resection and reconstruction should be performed. According to the type of tumor, postoperative radiation therapy and chemotherapy should be performed as well.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "43-48",
+    "views": 6412,
+    "downloads": 2325,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1145",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1145",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1145",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1145",
+    "localPdfUrl": "js/data/pdfs/1145.pdf",
+    "pdfUrl": "js/data/pdfs/1145.pdf"
+  },
+  {
+    "id": 1152,
+    "type": "Original Article",
+    "title": "Some Vertical Proportions of the Face in Turkish Adults",
+    "authors": [
+      {
+        "name": "Oğuz Taşkınalp",
+        "affiliation": "Department of Anatomy, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Nuran Erdem",
+        "affiliation": "Department of Anatomy, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: In this study, we aimed to find the average arithmetical values of some of the vertical proportions of the face in Turkish adult men and women. Patients and Methods: A total of 250 students (125 females, 125 males) participated in this study. The subjects did not have any physical defects. The average age in females and males were 19.4±1.0 years and 20.1±1.4 years respectively. Measurements were made by the same researcher using the same millimetric calipers at the same place and at the same time of day. Results: The height of head, the height of face, the height of superior face and the height of inferior face were measured as 20.0/21.32 cm, 11.15/11.84 cm, 5.09/5.24 cm and 6.21/6.82 cm for females/males respectively. The proportions between these parameters were 55.75%/55.53% for the height of face to the height of head, 25.45%/24.57% for the height of upper face to the height of head, 31.05%/31.98% for the height of lower face to the height of head, 45.65%/44.25% for the height of upper face to the height of face and 55.69%/57.60% for the height of lower face to the height of face, in females/males respectively. Conclusion: We compared the results which are peculiar to Turkish people with the literature. We believe that the results of our study would be useful for other studies on the native Turkish people.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: In this study, we aimed to find the average arithmetical values of some of the vertical proportions of the face in Turkish adult men and women.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: A total of 250 students (125 females, 125 males) participated in this study. The subjects did not have any physical defects. The average age in females and males were 19.4&plusmn;1.0 years and 20.1&plusmn;1.4 years respectively. Measurements were made by the same researcher using the same millimetric calipers at the same place and at the same time of day.</p>\r\n<p>\r\n\t<strong>Results</strong>: The height of head, the height of face, the height of superior face and the height of inferior face were measured as 20.0/21.32 cm, 11.15/11.84 cm, 5.09/5.24 cm and 6.21/6.82 cm for females/males respectively. The proportions between these parameters were 55.75%/55.53% for the height of face to the height of head, 25.45%/24.57% for the height of upper face to the height of head, 31.05%/31.98% for the height of lower face to the height of head, 45.65%/44.25% for the height of upper face to the height of face and 55.69%/57.60% for the height of lower face to the height of face, in females/males respectively.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: We compared the results which are peculiar to Turkish people with the literature. We believe that the results of our study would be useful for other studies on the native Turkish people.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: In this study, we aimed to find the average arithmetical values of some of the vertical proportions of the face in Turkish adult men and women. Patients and Methods: A total of 250 students (125 females, 125 males) participated in this study. The subjects did not have any physical defects. The average age in females and males were 19.4±1.0 years and 20.1±1.4 years respectively. Measurements were made by the same researcher using the same millimetric calipers at the same place and at the same time of day. Results: The height of head, the height of face, the height of superior face and the height of inferior face were measured as 20.0/21.32 cm, 11.15/11.84 cm, 5.09/5.24 cm and 6.21/6.82 cm for females/males respectively. The proportions between these parameters were 55.75%/55.53% for the height of face to the height of head, 25.45%/24.57% for the height of upper face to the height of head, 31.05%/31.98% for the height of lower face to the height of head, 45.65%/44.25% for the height of upper face to the height of face and 55.69%/57.60% for the height of lower face to the height of face, in females/males respectively. Conclusion: We compared the results which are peculiar to Turkish people with the literature. We believe that the results of our study would be useful for other studies on the native Turkish people.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "49-52",
+    "views": 6903,
+    "downloads": 2120,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1152",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1152",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1152",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1152",
+    "localPdfUrl": "js/data/pdfs/1152.pdf",
+    "pdfUrl": "js/data/pdfs/1152.pdf"
+  },
+  {
+    "id": 1156,
+    "type": "Original Article",
+    "title": "Evaluation of Pancreatic Malign Tumours with Mangafodipir Trisodium",
+    "authors": [
+      {
+        "name": "Yasin Argımak",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Alptekin Tosun",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Bilge Çakır",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Osman Temizöz",
+        "affiliation": "Departments of Radiology Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: Our study aimed to assess the diagnostic capabilities of mangafodipir trisodium (Mn-DPDP)- enhanced magnetic resonance imaging for the evaluation of pancreatic malign mass. Patients and Methods: Magnetic resonance images of 17 patients (7 females, 10 males; mean age 63.2±12 years; range 36 to 80 years) suspected of pancreatic tumor by abdominal ultrasonography and computed tomography findings, were examined in terms of signal to noise (S/N) and contrast to noise (C/N) ratios before and after administration of Mn-DPDP using T1 A SE, Fat Sat T1 A SE and GRE T1 A sequences. Results: Before and after administration of Mn-DPDP, the increase in S/N ratios of normal pancreatic parenchyma were found as 22.81%, 32.88% and 20% in T1 A SE, Fat Sat T1 A SE and GRE T1 A sequences, respectively. The increase in C/N ratios obtained from signal intensity values of normal pancreatic tissue and tumor were found as 58.69%, 125.41% and 62.06% in T1 A SE, Fat Sat T1 A SE and GRE T1 A sequences, respectively. Furthermore, in all sequences, before and after contrast medium administration, the increase of C/N ratios were found statistically significant (paired Student's t test, p<0.0001). Conclusion: The differences of C/N ratio using Mn-DPDP as a contrast agent may contribute to the diagnosis of pancreatic malign masses.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: Our study aimed to assess the diagnostic capabilities of mangafodipir trisodium (Mn-DPDP)- enhanced magnetic resonance imaging for the evaluation of pancreatic malign mass.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: Magnetic resonance images of 17 patients (7 females, 10 males; mean age 63.2&plusmn;12 years; range 36 to 80 years) suspected of pancreatic tumor by abdominal ultrasonography and computed tomography findings, were examined in terms of signal to noise (S/N) and contrast to noise (C/N) ratios before and after administration of Mn-DPDP using T1 A SE, Fat Sat T1 A SE and GRE T1 A sequences.</p>\r\n<p>\r\n\t<strong>Results</strong>: Before and after administration of Mn-DPDP, the increase in S/N ratios of normal pancreatic parenchyma were found as 22.81%, 32.88% and 20% in T1 A SE, Fat Sat T1 A SE and GRE T1 A sequences, respectively. The increase in C/N ratios obtained from signal intensity values of normal pancreatic tissue and tumor were found as 58.69%, 125.41% and 62.06% in T1 A SE, Fat Sat T1 A SE and GRE T1 A sequences, respectively. Furthermore, in all sequences, before and after contrast medium administration, the increase of C/N ratios were found statistically significant (paired Student&#39;s t test, p&lt;0.0001).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The differences of C/N ratio using Mn-DPDP as a contrast agent may contribute to the diagnosis of pancreatic malign masses.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: Our study aimed to assess the diagnostic capabilities of mangafodipir trisodium (Mn-DPDP)- enhanced magnetic resonance imaging for the evaluation of pancreatic malign mass. Patients and Methods: Magnetic resonance images of 17 patients (7 females, 10 males; mean age 63.2±12 years; range 36 to 80 years) suspected of pancreatic tumor by abdominal ultrasonography and computed tomography findings, were examined in terms of signal to noise (S/N) and contrast to noise (C/N) ratios before and after administration of Mn-DPDP using T1 A SE, Fat Sat T1 A SE and GRE T1 A sequences. Results: Before and after administration of Mn-DPDP, the increase in S/N ratios of normal pancreatic parenchyma were found as 22.81%, 32.88% and 20% in T1 A SE, Fat Sat T1 A SE and GRE T1 A sequences, respectively. The increase in C/N ratios obtained from signal intensity values of normal pancreatic tissue and tumor were found as 58.69%, 125.41% and 62.06% in T1 A SE, Fat Sat T1 A SE and GRE T1 A sequences, respectively. Furthermore, in all sequences, before and after contrast medium administration, the increase of C/N ratios were found statistically significant (paired Student's t test, p<0.0001). Conclusion: The differences of C/N ratio using Mn-DPDP as a contrast agent may contribute to the diagnosis of pancreatic malign masses.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "53-58",
+    "views": 6696,
+    "downloads": 2125,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1156",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1156",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1156",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1156",
+    "localPdfUrl": "js/data/pdfs/1156.pdf",
+    "pdfUrl": "js/data/pdfs/1156.pdf"
+  },
+  {
+    "id": 1164,
+    "type": "Original Article",
+    "title": "Evaluation of the Nutritional Status of Male Adolescents",
+    "authors": [
+      {
+        "name": "Çağrı Turan",
+        "affiliation": "Department of Pediatrics, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Yasemin Küçükuğurluoğlu",
+        "affiliation": "Department of Pediatrics, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Betül Ucunaş",
+        "affiliation": "Department of Pediatrics, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Naci Öner",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Haydarpaşa Training and Research Hospital, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Muazzez Garipağaoğlu",
+        "affiliation": "Department of Pediatrics, İstanbul Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Burcu Tokuç",
+        "affiliation": "Department of Public Health, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: The aim of this study was to evaluate the nutritional status of adolescent male students in rural and urban areas of Edirne, Turkey. Patients and Methods: In a sample of 1004 male adolescent boys (mean age 14.4±1.7 years; range 12 to 17 years), intake of macronutrients and micronutrients was assessed from three-day self-reported food records. Results: It was observed that energy, calcium, magnesium, vitamin A, E, thiamine, folic acid and fiber intakes of the subjects were below the recommended levels, while protein, riboflavin, vitamin B6 and iron intakes exceeded the target levels. Distribution of macronutrients in daily energy consumption was in agreement with the recommended ratios. Nutritional status did not differ between rural and urban areas (p>0.05). Conclusion: The dietary recommendations and menu samples based on these findings may help the male adolescents living in our region and our country have a more balanced nutritional status than before.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: The aim of this study was to evaluate the nutritional status of adolescent male students in rural and urban areas of Edirne, Turkey.</p>\r\n<p>\r\n\t<strong>Patients </strong>and Methods: In a sample of 1004 male adolescent boys (mean age 14.4&plusmn;1.7 years; range 12 to 17 years), intake of macronutrients and micronutrients was assessed from three-day self-reported food records.</p>\r\n<p>\r\n\t<strong>Results</strong>: It was observed that energy, calcium, magnesium, vitamin A, E, thiamine, folic acid and fiber intakes of the subjects were below the recommended levels, while protein, riboflavin, vitamin B6 and iron intakes exceeded the target levels. Distribution of macronutrients in daily energy consumption was in agreement with the recommended ratios. Nutritional status did not differ between rural and urban areas (p&gt;0.05).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The dietary recommendations and menu samples based on these findings may help the male adolescents living in our region and our country have a more balanced nutritional status than before.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: The aim of this study was to evaluate the nutritional status of adolescent male students in rural and urban areas of Edirne, Turkey. Patients and Methods: In a sample of 1004 male adolescent boys (mean age 14.4±1.7 years; range 12 to 17 years), intake of macronutrients and micronutrients was assessed from three-day self-reported food records. Results: It was observed that energy, calcium, magnesium, vitamin A, E, thiamine, folic acid and fiber intakes of the subjects were below the recommended levels, while protein, riboflavin, vitamin B6 and iron intakes exceeded the target levels. Distribution of macronutrients in daily energy consumption was in agreement with the recommended ratios. Nutritional status did not differ between rural and urban areas (p>0.05). Conclusion: The dietary recommendations and menu samples based on these findings may help the male adolescents living in our region and our country have a more balanced nutritional status than before.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "59-67",
+    "views": 6027,
+    "downloads": 2088,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1164",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1164",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1164",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1164",
+    "localPdfUrl": "js/data/pdfs/1164.pdf",
+    "pdfUrl": "js/data/pdfs/1164.pdf"
+  },
+  {
+    "id": 1170,
+    "type": "Case Report",
+    "title": "Primary Cough Headache Responsive to Topiramate",
+    "authors": [
+      {
+        "name": "Hakan Tekeli",
+        "affiliation": "GATA Haydarpaşa Eğitim Hastanesi, Nöroloji Servisi, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Güney Şenol",
+        "affiliation": "GATA Haydarpaşa Eğitim Hastanesi, Nöroloji Servisi, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Özdağ",
+        "affiliation": "GATA Haydarpaşa Eğitim Hastanesi, Nöroloji Servisi, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Saraçoğlu",
+        "affiliation": "GATA Haydarpaşa Eğitim Hastanesi, Nöroloji Servisi, İstanbul",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Bilateral arcus axillaris was found on a 55-yearold male cadaver in our laboratory of anatomy during routine dissection. This variation which is also called as axillary arch, axillopectoral muscle or axillary arch of Langer could be fibromuscular or muscular. In our case, a fasciculus separating from latissimus dorsi muscle ended at the tendon of pectoralis major muscle after overlying the neurovascular bundle in the axilla. Althought left muscular arch was innervated by intercostobrachial nerves, right muscular arch's nerve was not identified. It might have caused neurovascular symptoms in the hand, arm and forearm.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tBilateral arcus axillaris was found on a 55-yearold male cadaver in our laboratory of anatomy during routine dissection. This variation which is also called as axillary arch, axillopectoral muscle or axillary arch of Langer could be fibromuscular or muscular. In our case, a fasciculus separating from latissimus dorsi muscle ended at the tendon of pectoralis major muscle after overlying the neurovascular bundle in the axilla. Althought left muscular arch was innervated by intercostobrachial nerves, right muscular arch&#39;s nerve was not identified. It might have caused neurovascular symptoms in the hand, arm and forearm.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Bilateral arcus axillaris was found on a 55-yearold male cadaver in our laboratory of anatomy during routine dissection. This variation which is also called as axillary arch, axillopectoral muscle or axillary arch of Langer could be fibromuscular or muscular. In our case, a fasciculus separating from latissimus dorsi muscle ended at the tendon of pectoralis major muscle after overlying the neurovascular bundle in the axilla. Althought left muscular arch was innervated by intercostobrachial nerves, right muscular arch's nerve was not identified. It might have caused neurovascular symptoms in the hand, arm and forearm.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "68-69",
+    "views": 6585,
+    "downloads": 2145,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1170",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1170",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1170",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1170",
+    "localPdfUrl": "js/data/pdfs/1170.pdf",
+    "pdfUrl": "js/data/pdfs/1170.pdf"
+  },
+  {
+    "id": 1174,
+    "type": "Case Report",
+    "title": "Sarcoidosis of the Breast",
+    "authors": [
+      {
+        "name": "Hayrettin Göçmen",
+        "affiliation": "Departments of Pulmonary Diseases Medicine Faculty of Uludağ University, Bursa",
+        "orcid": ""
+      },
+      {
+        "name": "Funda Coşkun",
+        "affiliation": "Departments of Pulmonary Diseases Medicine Faculty of Uludağ University, Bursa",
+        "orcid": ""
+      },
+      {
+        "name": "Esra Uzaslan",
+        "affiliation": "Departments of Pulmonary Diseases Medicine Faculty of Uludağ University, Bursa",
+        "orcid": ""
+      },
+      {
+        "name": "Oktay Gözü",
+        "affiliation": "Departments of Pulmonary Diseases Medicine Faculty of Uludağ University, Bursa",
+        "orcid": ""
+      },
+      {
+        "name": "Şaduman Balaban Adım",
+        "affiliation": "Departments of Pathology, Medicine Faculty of Uludağ University, Bursa",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Sarcoidosis is a granulomatous disease which might affect many systems. Less than 1% of the cases suffer breast involvement. There are about 33 cases involving breast in the literature. In many cases, systemic symptoms mask breast involvement of sarcoidosis, that was generally recognized in result of surgical operation for malignancy. Breast and skin involvement together is rather rare in sarcoidosis. A 49-yearold female patient with mediastinoscopic diagnosis of sarcoidosis has been followed since 1999. Patient was treated with systemic corticosteroid twice due to skin involvement of sarcoidosis in 2002 and 2004. In 2006 macronodular lesions were found in both of her breast. Nodule excision and reduction mammoplasty were performed with pathological result of noncaseous granulomatous sarcoid inflammation. Patient was admitted as pulmonary sarcoidosis stage II with skin and breast involvement. Since lung, breast and skin involvement together is very rare in sarcoidosis we presented this case.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tSarcoidosis is a granulomatous disease which might affect many systems. Less than 1% of the cases suffer breast involvement. There are about 33 cases involving breast in the literature. In many cases, systemic symptoms mask breast involvement of sarcoidosis, that was generally recognized in result of surgical operation for malignancy. Breast and skin involvement together is rather rare in sarcoidosis. A 49-yearold female patient with mediastinoscopic diagnosis of sarcoidosis has been followed since 1999. Patient was treated with systemic corticosteroid twice due to skin involvement of sarcoidosis in 2002 and 2004. In 2006 macronodular lesions were found in both of her breast. Nodule excision and reduction mammoplasty were performed with pathological result of noncaseous granulomatous sarcoid inflammation. Patient was admitted as pulmonary sarcoidosis stage II with skin and breast involvement. Since lung, breast and skin involvement together is very rare in sarcoidosis we presented this case.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Sarcoidosis is a granulomatous disease which might affect many systems. Less than 1% of the cases suffer breast involvement. There are about 33 cases involving breast in the literature. In many cases, systemic symptoms mask breast involvement of sarcoidosis, that was generally recognized in result of surgical operation for malignancy. Breast and skin involvement together is rather rare in sarcoidosis. A 49-yearold female patient with mediastinoscopic diagnosis of sarcoidosis has been followed since 1999. Patient was treated with systemic corticosteroid twice due to skin involvement of sarcoidosis in 2002 and 2004. In 2006 macronodular lesions were found in both of her breast. Nodule excision and reduction mammoplasty were performed with pathological result of noncaseous granulomatous sarcoid inflammation. Patient was admitted as pulmonary sarcoidosis stage II with skin and breast involvement. Since lung, breast and skin involvement together is very rare in sarcoidosis we presented this case.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "70-73",
+    "views": 6241,
+    "downloads": 2012,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1174",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1174",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1174",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1174",
+    "localPdfUrl": "js/data/pdfs/1174.pdf",
+    "pdfUrl": "js/data/pdfs/1174.pdf"
+  },
+  {
+    "id": 1177,
+    "type": "Case Report",
+    "title": "Bilateral Giant Morgagni Hernia Causing Cardiac Shifting",
+    "authors": [
+      {
+        "name": "Alper Avcı",
+        "affiliation": "Departments of Thoracic Surgery Medical Faculty of Dicle University, Diyarbakır",
+        "orcid": ""
+      },
+      {
+        "name": "Serdar Onat",
+        "affiliation": "Departments of Thoracic Surgery Medical Faculty of Dicle University, Diyarbakır",
+        "orcid": ""
+      },
+      {
+        "name": "Sadullah Girgin",
+        "affiliation": "Departments of General Surgery, Medical Faculty of Dicle University, Diyarbakır",
+        "orcid": ""
+      },
+      {
+        "name": "Ercan Gedik",
+        "affiliation": "Departments of General Surgery, Medical Faculty of Dicle University, Diyarbakır",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract A 76-year-old woman weighing 114 kg presented with shortness of breath and worsening chest pain for 2-year duration. There was no history of trauma. Plain and cross-sectional imaging identified a giant anterior diaphragmatic hernia which caused cardiac posterior shifting. She was transferred to general surgery department for further investigations and treatment. Reduction of herniated contents and repairing of bilaterally diaphragmatic defect were performed via laparotomy. Bilateral, giant Morgagni hernia which causes cardiac shifting to the backward is extremely rare.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tA 76-year-old woman weighing 114 kg presented with shortness of breath and worsening chest pain for 2-year duration. There was no history of trauma. Plain and cross-sectional imaging identified a giant anterior diaphragmatic hernia which caused cardiac posterior shifting. She was transferred to general surgery department for further investigations and treatment. Reduction of herniated contents and repairing of bilaterally diaphragmatic defect were performed via laparotomy. Bilateral, giant Morgagni hernia which causes cardiac shifting to the backward is extremely rare.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract A 76-year-old woman weighing 114 kg presented with shortness of breath and worsening chest pain for 2-year duration. There was no history of trauma. Plain and cross-sectional imaging identified a giant anterior diaphragmatic hernia which caused cardiac posterior shifting. She was transferred to general surgery department for further investigations and treatment. Reduction of herniated contents and repairing of bilaterally diaphragmatic defect were performed via laparotomy. Bilateral, giant Morgagni hernia which causes cardiac shifting to the backward is extremely rare.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "74-77",
+    "views": 6309,
+    "downloads": 2015,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1177",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1177",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1177",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1177",
+    "localPdfUrl": "js/data/pdfs/1177.pdf",
+    "pdfUrl": "js/data/pdfs/1177.pdf"
+  },
+  {
+    "id": 1178,
+    "type": "Case Report",
+    "title": "Three Cases of Tinea Incognito",
+    "authors": [
+      {
+        "name": "Özer Arıcan",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Dermatoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Yıldız Gürsel",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Dermatoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract “Tinea incognito” is a dermatophytic infection which modifies typical clinical presentation due to improper use of topical or systemic corticosteroids. In this report, we present three cases who had been treated with topical corticosteroid as a result of incorrect diagnosis. The first case, a 30-year-old male patient complained of localized, erythematous, scaling papules and plaques on his genitocrural crease and umbilical region for four months. The second case, a 40-year-old male patient had generalized, erythematous plaques with papules and pustules, and macular hyperpigmentation for one month. The third case, a 23-year-old male patient had erythematous macules with papules on his malar areas for three months. In all presented cases, direct microscopic examination was positive and, in the first and second cases, the fungal cultures were positive for Trichophyton rubrum. The lesions also showed complete resolution with antimycotic treatment. In this report, we have reviewed the recent medical literature about “tinea incognito”.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t&ldquo;Tinea incognito&rdquo; is a dermatophytic infection which modifies typical clinical presentation due to improper use of topical or systemic corticosteroids. In this report, we present three cases who had been treated with topical corticosteroid as a result of incorrect diagnosis. The first case, a 30-year-old male patient complained of localized, erythematous, scaling papules and plaques on his genitocrural crease and umbilical region for four months. The second case, a 40-year-old male patient had generalized, erythematous plaques with papules and pustules, and macular hyperpigmentation for one month. The third case, a 23-year-old male patient had erythematous macules with papules on his malar areas for three months. In all presented cases, direct microscopic examination was positive and, in the first and second cases, the fungal cultures were positive for Trichophyton rubrum. The lesions also showed complete resolution with antimycotic treatment. In this report, we have reviewed the recent medical literature about &ldquo;tinea incognito&rdquo;.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract “Tinea incognito” is a dermatophytic infection which modifies typical clinical presentation due to improper use of topical or systemic corticosteroids. In this report, we present three cases who had been treated with topical corticosteroid as a result of incorrect diagnosis. The first case, a 30-year-old male patient complained of localized, erythematous, scaling papules and plaques on his genitocrural crease and umbilical region for four months. The second case, a 40-year-old male patient had generalized, erythematous plaques with papules and pustules, and macular hyperpigmentation for one month. The third case, a 23-year-old male patient had erythematous macules with papules on his malar areas for three months. In all presented cases, direct microscopic examination was positive and, in the first and second cases, the fungal cultures were positive for Trichophyton rubrum. The lesions also showed complete resolution with antimycotic treatment. In this report, we have reviewed the recent medical literature about “tinea incognito”.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "78-82",
+    "views": 6305,
+    "downloads": 2085,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1178",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1178",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1178",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1178",
+    "localPdfUrl": "js/data/pdfs/1178.pdf",
+    "pdfUrl": "js/data/pdfs/1178.pdf"
+  },
+  {
+    "id": 1180,
+    "type": "Case Report",
+    "title": "A Severe Complication of Accidental Epidural Administration of Glutaraldehyde",
+    "authors": [
+      {
+        "name": "Alkın Çolak",
+        "affiliation": "Departments of Anesthesiology Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Cavidan Arar",
+        "affiliation": "Departments of Anesthesiology Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Turan Ege",
+        "affiliation": "Departments of Thoracic Surgery, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Volkan Yüksel",
+        "affiliation": "Departments of Thoracic Surgery, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Enver Duran",
+        "affiliation": "Departments of Thoracic Surgery, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract In a patient operated for left femoropopliteal bypass under epidural anesthesia, 3 ml of 3% glutaraldehyde solution was administered through the epidural catheter at the postoperative sixth hour accidentally. Following glutaraldehyde administration, the patient developed paraplegia in addition to systemic symptoms such as hypotension, tachycardia, nausea and vomiting. At the end of the first year, neurologic symptoms didn't improve despite medical treatment and rehabilitation program.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tIn a patient operated for left femoropopliteal bypass under epidural anesthesia, 3 ml of 3% glutaraldehyde solution was administered through the epidural catheter at the postoperative sixth hour accidentally. Following glutaraldehyde administration, the patient developed paraplegia in addition to systemic symptoms such as hypotension, tachycardia, nausea and vomiting. At the end of the first year, neurologic symptoms didn&#39;t improve despite medical treatment and rehabilitation program.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract In a patient operated for left femoropopliteal bypass under epidural anesthesia, 3 ml of 3% glutaraldehyde solution was administered through the epidural catheter at the postoperative sixth hour accidentally. Following glutaraldehyde administration, the patient developed paraplegia in addition to systemic symptoms such as hypotension, tachycardia, nausea and vomiting. At the end of the first year, neurologic symptoms didn't improve despite medical treatment and rehabilitation program.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "83-86",
+    "views": 6263,
+    "downloads": 1967,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1180",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1180",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1180",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1180",
+    "localPdfUrl": "js/data/pdfs/1180.pdf",
+    "pdfUrl": "js/data/pdfs/1180.pdf"
+  },
+  {
+    "id": 1182,
+    "type": "Case Report",
+    "title": "Middle Colic Artery Originating Directly from Aorta as a Middle Mesenteric Artery",
+    "authors": [
+      {
+        "name": "Enis Uluçam",
+        "affiliation": "Department of Anatomy, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Sabri Cıgalı",
+        "affiliation": "Department of Anatomy, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Cüneyt Bozer",
+        "affiliation": "Department of Anatomy, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Levent Elevli",
+        "affiliation": "Department of Anatomy, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Yılmaz",
+        "affiliation": "Departments of Anatomy, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract During abdominal dissection of a 32-year-old Caucasian female cadaver, an anomalous artery originating from the anterior aspect of the abdominal aorta was found. This artery had its origin between the superior mesenteric and inferior mesenteric arteries. It was 2.2 mm in diameter and formed an arch ascending to the left of the midline supplying the transverse colon. It was divided into right and left branches; the former anastomosing with the right colic artery, the latter with the left. During the diagnostic imaging of the abdominal vasculature and the practice of colonic surgery, the possibility of the existence of an anomalous artery must be kept in mind.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tDuring abdominal dissection of a 32-year-old Caucasian female cadaver, an anomalous artery originating from the anterior aspect of the abdominal aorta was found. This artery had its origin between the superior mesenteric and inferior mesenteric arteries. It was 2.2 mm in diameter and formed an arch ascending to the left of the midline supplying the transverse colon. It was divided into right and left branches; the former anastomosing with the right colic artery, the latter with the left. During the diagnostic imaging of the abdominal vasculature and the practice of colonic surgery, the possibility of the existence of an anomalous artery must be kept in mind.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract During abdominal dissection of a 32-year-old Caucasian female cadaver, an anomalous artery originating from the anterior aspect of the abdominal aorta was found. This artery had its origin between the superior mesenteric and inferior mesenteric arteries. It was 2.2 mm in diameter and formed an arch ascending to the left of the midline supplying the transverse colon. It was divided into right and left branches; the former anastomosing with the right colic artery, the latter with the left. During the diagnostic imaging of the abdominal vasculature and the practice of colonic surgery, the possibility of the existence of an anomalous artery must be kept in mind.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "87-89",
+    "views": 6176,
+    "downloads": 1993,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1182",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1182",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1182",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1182",
+    "localPdfUrl": "js/data/pdfs/1182.pdf",
+    "pdfUrl": "js/data/pdfs/1182.pdf"
+  },
+  {
+    "id": 1184,
+    "type": "Case Report",
+    "title": "Bilateral Arcus Axillaris Case",
+    "authors": [
+      {
+        "name": "Ali Yılmaz",
+        "affiliation": "Departments of Anatomy, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Selman Çıkmaz",
+        "affiliation": "Departments of Anatomy, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Tunç Kutoğlu",
+        "affiliation": "Department of Anatomy, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Bilateral arcus axillaris was found on a 55-yearold male cadaver in our laboratory of anatomy during routine dissection. This variation which is also called as axillary arch, axillopectoral muscle or axillary arch of Langer could be fibromuscular or muscular. In our case, a fasciculus separating from latissimus dorsi muscle ended at the tendon of pectoralis major muscle after overlying the neurovascular bundle in the axilla. Althought left muscular arch was innervated by intercostobrachial nerves, right muscular arch's nerve was not identified. It might have caused neurovascular symptoms in the hand, arm and forearm.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tBilateral arcus axillaris was found on a 55-yearold male cadaver in our laboratory of anatomy during routine dissection. This variation which is also called as axillary arch, axillopectoral muscle or axillary arch of Langer could be fibromuscular or muscular. In our case, a fasciculus separating from latissimus dorsi muscle ended at the tendon of pectoralis major muscle after overlying the neurovascular bundle in the axilla. Althought left muscular arch was innervated by intercostobrachial nerves, right muscular arch&#39;s nerve was not identified. It might have caused neurovascular symptoms in the hand, arm and forearm.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Bilateral arcus axillaris was found on a 55-yearold male cadaver in our laboratory of anatomy during routine dissection. This variation which is also called as axillary arch, axillopectoral muscle or axillary arch of Langer could be fibromuscular or muscular. In our case, a fasciculus separating from latissimus dorsi muscle ended at the tendon of pectoralis major muscle after overlying the neurovascular bundle in the axilla. Althought left muscular arch was innervated by intercostobrachial nerves, right muscular arch's nerve was not identified. It might have caused neurovascular symptoms in the hand, arm and forearm.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "1",
+    "pages": "90-94",
+    "views": 7468,
+    "downloads": 1883,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1147",
+    "sourceArticleId": "1184",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1184",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1184",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1184",
+    "localPdfUrl": "js/data/pdfs/1184.pdf",
+    "pdfUrl": "js/data/pdfs/1184.pdf"
+  }
+]

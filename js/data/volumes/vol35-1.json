@@ -1,0 +1,1067 @@
+[
+  {
+    "id": 1964,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1964",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1964",
+    "localPdfUrl": "js/data/pdfs/1964.pdf",
+    "pdfUrl": "js/data/pdfs/1964.pdf"
+  },
+  {
+    "id": 1963,
+    "type": "Editorial",
+    "title": "History of Balkan Medical Journal: Road to High-Impact Journal",
+    "authors": [
+      {
+        "name": "Zafer Koçak",
+        "affiliation": "Department of Radiation Oncology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Ulugöl",
+        "affiliation": "Department of Medical Pharmacology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "The Balkan Medical Journal has now completed 38 years of publication and is well recognized by the international health community. By doing the right thing, especially applying high ethical standards, the Balkan Medical Journal now adheres to the internationally accepted criteria of modern medical journalism and has taken the well-deserved place in the Balkan region and in the World.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\tThe Balkan Medical Journal has now completed 38 years of publication and is well recognized by the international health community. By doing the right thing, especially applying high ethical standards, the Balkan Medical Journal now adheres to the internationally accepted criteria of modern medical journalism and has taken the well-deserved place in the Balkan region and in the World.\r\n<hr size=\"1\" color=\"#f2f2f2\"></hr> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "The Balkan Medical Journal has now completed 38 years of publication and is well recognized by the international health community. By doing the right thing, especially applying high ethical standards, the Balkan Medical Journal now adheres to the internationally accepted criteria of modern medical journalism and has taken the well-deserved place in the Balkan region and in the World.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.1.0001",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "1-7",
+    "views": 6846,
+    "downloads": 9749,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1963",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1963",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1963",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1963",
+    "localPdfUrl": "js/data/pdfs/1963.pdf",
+    "pdfUrl": "js/data/pdfs/1963.pdf"
+  },
+  {
+    "id": 1788,
+    "type": "Invited Review",
+    "title": "Patient Privacy in the Era of Big Data",
+    "authors": [
+      {
+        "name": "Mehmet Kayaalp",
+        "affiliation": "National Library of Medicine, National Institutes of Health, Maryland, ABD",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Protecting patient privacy requires various technical tools. It involves regulations for sharing, de-identifying, securely storing, transmitting and handling protected health information (PHI). It involves privacy laws and legal agreements. It requires establishing rules for monitoring privacy leaks, determining actions when they occur, and handling de-identified clinical narrative reports. Deidentification is one such indispensable instrument in this set of privacy tools.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\tProtecting patient privacy requires various technical tools. It involves regulations for sharing, de-identifying, securely storing, transmitting and handling protected health information (PHI). It involves privacy laws and legal agreements. It requires establishing rules for monitoring privacy leaks, determining actions when they occur, and handling de-identified clinical narrative reports. Deidentification is one such indispensable instrument in this set of privacy tools.\r\n<hr size=\"1\" color=\"#f2f2f2\"></hr> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Protecting patient privacy requires various technical tools. It involves regulations for sharing, de-identifying, securely storing, transmitting and handling protected health information (PHI). It involves privacy laws and legal agreements. It requires establishing rules for monitoring privacy leaks, determining actions when they occur, and handling de-identified clinical narrative reports. Deidentification is one such indispensable instrument in this set of privacy tools.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0966",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "8-17",
+    "views": 13571,
+    "downloads": 16078,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1788",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1788",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1788",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1788",
+    "localPdfUrl": "js/data/pdfs/1788.pdf",
+    "pdfUrl": "js/data/pdfs/1788.pdf"
+  },
+  {
+    "id": 1767,
+    "type": "Invited Review",
+    "title": "General Concepts in Adult Congenital Heart Disease",
+    "authors": [
+      {
+        "name": "Ferit Onur Mutluer",
+        "affiliation": "Department of Cardiovascular Diseases, Koç University Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Alpay Çeliker",
+        "affiliation": "Clinic of Pediatric Cardiology, American Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Congenital heart disease in adults (adult congenital heart disease) is a growing burden for healthcare systems. While infant mortality due to congenital heart disease in the last four decades decreased by almost 3-fold, adult congenital heart disease prevalence increased by more than 2-fold in United States. Adult congenital heart disease prevalence is expected to increase steadily until 2050 in projections. Adult congenital heart disease is a multifaceted problem with many dimensions. This manuscript aims to provide an overview of the common adult congenital heart diseases and summarize important points in management of these diseases with possible problems and complications that the patients and the physicians face.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Congenital heart disease in adults (adult congenital heart disease) is a growing burden for healthcare systems. While infant mortality due to congenital heart disease in the last four decades decreased by almost 3-fold, adult congenital heart disease prevalence increased by more than 2-fold in United States. Adult congenital heart disease prevalence is expected to increase steadily until 2050 in projections. Adult congenital heart disease is a multifaceted problem with many dimensions. This manuscript aims to provide an overview of the common adult congenital heart diseases and summarize important points in management of these diseases with possible problems and complications that the patients and the physicians face.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Congenital heart disease in adults (adult congenital heart disease) is a growing burden for healthcare systems. While infant mortality due to congenital heart disease in the last four decades decreased by almost 3-fold, adult congenital heart disease prevalence increased by more than 2-fold in United States. Adult congenital heart disease prevalence is expected to increase steadily until 2050 in projections. Adult congenital heart disease is a multifaceted problem with many dimensions. This manuscript aims to provide an overview of the common adult congenital heart diseases and summarize important points in management of these diseases with possible problems and complications that the patients and the physicians face.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0910",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "18-29",
+    "views": 7240,
+    "downloads": 2150,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1767",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1767",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1767",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1767",
+    "localPdfUrl": "js/data/pdfs/1767.pdf",
+    "pdfUrl": "js/data/pdfs/1767.pdf"
+  },
+  {
+    "id": 1779,
+    "type": "Original Article",
+    "title": "Tumour Necrosis Factor-alpha and Nuclear Factor-kappa B Gene Variants in Sepsis",
+    "authors": [
+      {
+        "name": "Leyla Acar",
+        "affiliation": "Department of Molecular Medicine, İstanbul University Institute of Experimental Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nazan Atalan",
+        "affiliation": "Clinic of Anesthesia and Reanimation, Siyami Ersek Thoracic Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "E. Hande Karagedik",
+        "affiliation": "Department of Molecular Medicine, İstanbul University Institute of Experimental Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Arzu Ergen",
+        "affiliation": "Department of Molecular Medicine, İstanbul University Institute of Experimental Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The humoral system is activated and various cytokines are released due to infections in tissues and traumatic damage. Nuclear factor-kappa B dimers are encoded by nuclear factor-kappa B genes and regulate transcription of several crucial proteins of inflammation such as tumour necrosis factor-alpha. Aims: To investigate the possible effect of polymorphisms on tumour necrosis factor-alpha serum levels with clinical and prognostic parameters of sepsis by determining the nuclear factor-kappa B-1-94 ins/del ATTG and tumour necrosis factor-alpha (-308 G/A) gene polymorphisms and tumour necrosis factor-alpha serum levels. Study Design: Case-control study. Methods: Seventy-two patients with sepsis and 104 healthy controls were included in the study. In order to determine the polymorphisms of nuclear factor-kappa B-1-94 ins/del ATTG and tumour necrosis factor-alpha (-308 G/A), polymerase chain reaction–restriction fragment length polymorphism analysis was performed and serum tumour necrosis factor-alpha levels were determined using an enzyme-linked immunosorbent assay. Results: We observed no significant differences in tumour necrosis factor-alpha serum levels between the study groups. In the patient group, an increase in the tumour necrosis factor-alpha serum levels in patients carrying the tumour necrosis factor-alpha (-308 G/A) A allele compared to those without the A allele was found to be statistically significant. Additionally, an increase in the tumour necrosis factor-alpha serum levels in patients carrying tumour necrosis factor-alpha (-308 G/A) AA genotype compared with patients carrying the AG or GG genotypes was statistically significant. No significant differences were found in these 2 polymorphisms between the patient and control groups (p>0.05). Conclusion: Our results showed the AA genotype and the A allele of the tumour necrosis factor-alpha (-308 G/A) polymorphism may be used as a predictor of elevated tumour necrosis factor-alpha levels in patients with sepsis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The humoral system is activated and various cytokines are released due to infections in tissues and traumatic damage. Nuclear factor-kappa B dimers are encoded by nuclear factor-kappa B genes and regulate transcription of several crucial proteins of inflammation such as tumour necrosis factor-alpha. <br /><strong>Aims:</strong> To investigate the possible effect of polymorphisms on tumour necrosis factor-alpha serum levels with clinical and prognostic parameters of sepsis by determining the nuclear factor-kappa B-1-94 ins/del ATTG and tumour necrosis factor-alpha (-308 G/A) gene polymorphisms and tumour necrosis factor-alpha serum levels. <br /><strong>Study Design:</strong> Case-control study. <br /><strong>Methods:</strong> Seventy-two patients with sepsis and 104 healthy controls were included in the study. In order to determine the polymorphisms of nuclear factor-kappa B-1-94 ins/del ATTG and tumour necrosis factor-alpha (-308 G/A), polymerase chain reaction&ndash;restriction fragment length polymorphism analysis was performed and serum tumour necrosis factor-alpha levels were determined using an enzyme-linked immunosorbent assay. <br /><strong>Results:</strong> We observed no significant differences in tumour necrosis factor-alpha serum levels between the study groups. In the patient group, an increase in the tumour necrosis factor-alpha serum levels in patients carrying the tumour necrosis factor-alpha (-308 G/A) A allele compared to those without the A allele was found to be statistically significant. Additionally, an increase in the tumour necrosis factor-alpha serum levels in patients carrying tumour necrosis factor-alpha (-308 G/A) AA genotype compared with patients carrying the AG or GG genotypes was statistically significant. No significant differences were found in these 2 polymorphisms between the patient and control groups (p&gt;0.05). <br /><strong>Conclusion:</strong> Our results showed the AA genotype and the A allele of the tumour necrosis factor-alpha (-308 G/A) polymorphism may be used as a predictor of elevated tumour necrosis factor-alpha levels in patients with sepsis.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The humoral system is activated and various cytokines are released due to infections in tissues and traumatic damage. Nuclear factor-kappa B dimers are encoded by nuclear factor-kappa B genes and regulate transcription of several crucial proteins of inflammation such as tumour necrosis factor-alpha. Aims: To investigate the possible effect of polymorphisms on tumour necrosis factor-alpha serum levels with clinical and prognostic parameters of sepsis by determining the nuclear factor-kappa B-1-94 ins/del ATTG and tumour necrosis factor-alpha (-308 G/A) gene polymorphisms and tumour necrosis factor-alpha serum levels. Study Design: Case-control study. Methods: Seventy-two patients with sepsis and 104 healthy controls were included in the study. In order to determine the polymorphisms of nuclear factor-kappa B-1-94 ins/del ATTG and tumour necrosis factor-alpha (-308 G/A), polymerase chain reaction–restriction fragment length polymorphism analysis was performed and serum tumour necrosis factor-alpha levels were determined using an enzyme-linked immunosorbent assay. Results: We observed no significant differences in tumour necrosis factor-alpha serum levels between the study groups. In the patient group, an increase in the tumour necrosis factor-alpha serum levels in patients carrying the tumour necrosis factor-alpha (-308 G/A) A allele compared to those without the A allele was found to be statistically significant. Additionally, an increase in the tumour necrosis factor-alpha serum levels in patients carrying tumour necrosis factor-alpha (-308 G/A) AA genotype compared with patients carrying the AG or GG genotypes was statistically significant. No significant differences were found in these 2 polymorphisms between the patient and control groups (p>0.05). Conclusion: Our results showed the AA genotype and the A allele of the tumour necrosis factor-alpha (-308 G/A) polymorphism may be used as a predictor of elevated tumour necrosis factor-alpha levels in patients with sepsis.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0246",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "30-35",
+    "views": 7328,
+    "downloads": 8136,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1779",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1779",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1779",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1779",
+    "localPdfUrl": "js/data/pdfs/1779.pdf",
+    "pdfUrl": "js/data/pdfs/1779.pdf"
+  },
+  {
+    "id": 1778,
+    "type": "Original Article",
+    "title": "The Value of Preoperative Volumetric Analysis by Computerised Tomography of Retrosternal Goiter to Predict the Need for an Extra-Cervical Approach",
+    "authors": [
+      {
+        "name": "İsmail Cem Sormaz",
+        "affiliation": "Department of General Surgery, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Derya S. Uymaz",
+        "affiliation": "Department of General Surgery, Koç University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Y. İşcan",
+        "affiliation": "Department of General Surgery, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İlker Özgür",
+        "affiliation": "Clinic of General Surgery, Acıbadem International Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Artur Salmaslıoğlu",
+        "affiliation": "Department of Radiology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Tunca",
+        "affiliation": "Department of General Surgery, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yasemin G. Şenyürek",
+        "affiliation": "Department of General Surgery, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tarik Terzioğlu[[5]] </d",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: A thyroidectomy can be performed via a cervical incision in most patients with retrosternal goiter.Aims: To investigate the correlation between the volume of the mediastinal portion of the thyroid gland and the need for an extra-cervical approach for retrosternal goiter.Study Design: Diagnostic accuracy study.Methods: The measurement of craniocaudal length and the volume of the mediastinal component of the thyroid gland on computerised tomography images was performed in 47 patients with retrosternal goiter. Of these 47 patients, 8 (17%) required an extra-cervical approach and were classified as group 1, and 39 (83%) patients that required a cervical incision were classified as group 2. Receiver operating characteristic analysis was performed to determine the cut-off value for the craniocaudal length and the volume of the mediastinal thyroid mass, which significantly correlated with an extra-cervical approach for retrosternal goiter.Results: Reoperative surgery was significantly more frequent in group 1 than in group 2 (50% vs 13%; p=0.03). The craniocaudal length of the mediastinal thyroid gland was significantly longer in group 1 than in group 2 (77±11 mm vs 31±21 mm, respectively; p=0.0001). The volume of the mediastinal component was significantly larger in group 1 compared to group 2 (264±106 cm3 vs 40±41 cm3, respectively; p=0.0001). The receiver operating characteristic curve of craniocaudal length and the volume of the mediastinal component identified ≥66 mm and ≥162 cm3 as the cut-off values with the maximum accuracy, respectively. The craniocaudal length of the thyroid mass below the thoracic inlet ≥66 mm or a volume of the mediastinal portion ≥162 cm3 were significantly associated with an extra-cervical approach (p=0.0001). For predicting an extra-cervical approach, the sensitivity, positive predictive value and negative predictive value of the cut-off value for craniocaudal length was 87.5%, 64% and 97%, respectively. For predicting an extra-cervical approach, the sensitivity, positive predictive value and negative predictive value of the cut-off values for the mediastinal volume were 100%, 89% and 100%, respectively.Conclusion: A thyroid volume of ≥162 cm3 extending below the thoracic inlet was a significant determining factor for an extra-cervical approach, with a negative predictive value for the extra-cervical approach of 100% for retrosternal goiter with smaller volumes. Further studies with an increased number of patients are needed to determine the value of volumetric analysis of retrosternal goiter to predict the need for an extra-cervical approach in retrosternal goiter.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> A thyroidectomy can be performed via a cervical incision in most patients with retrosternal goiter.<br /><strong>Aims:</strong> To investigate the correlation between the volume of the mediastinal portion of the thyroid gland and the need for an extra-cervical approach for retrosternal goiter.<br /><strong>Study Design:</strong> Diagnostic accuracy study.<br /><strong>Methods:</strong> The measurement of craniocaudal length and the volume of the mediastinal component of the thyroid gland on computerised tomography images was performed in 47 patients with retrosternal goiter. Of these 47 patients, 8 (17%) required an extra-cervical approach and were classified as group 1, and 39 (83%) patients that required a cervical incision were classified as group 2. Receiver operating characteristic analysis was performed to determine the cut-off value for the craniocaudal length and the volume of the mediastinal thyroid mass, which significantly correlated with an extra-cervical approach for retrosternal goiter.<br /><strong>Results:</strong> Reoperative surgery was significantly more frequent in group 1 than in group 2 (50% vs 13%; p=0.03). The craniocaudal length of the mediastinal thyroid gland was significantly longer in group 1 than in group 2 (77&plusmn;11 mm vs 31&plusmn;21 mm, respectively; p=0.0001). The volume of the mediastinal component was significantly larger in group 1 compared to group 2 (264&plusmn;106 cm3 vs 40&plusmn;41 cm3, respectively; p=0.0001). The receiver operating characteristic curve of craniocaudal length and the volume of the mediastinal component identified &ge;66 mm and &ge;162 cm3 as the cut-off values with the maximum accuracy, respectively. The craniocaudal length of the thyroid mass below the thoracic inlet &ge;66 mm or a volume of the mediastinal portion &ge;162 cm3 were significantly associated with an extra-cervical approach (p=0.0001). For predicting an extra-cervical approach, the sensitivity, positive predictive value and negative predictive value of the cut-off value for craniocaudal length was 87.5%, 64% and 97%, respectively. For predicting an extra-cervical approach, the sensitivity, positive predictive value and negative predictive value of the cut-off values for the mediastinal volume were 100%, 89% and 100%, respectively.<br /><strong>Conclusion:</strong> A thyroid volume of &ge;162 cm3 extending below the thoracic inlet was a significant determining factor for an extra-cervical approach, with a negative predictive value for the extra-cervical approach of 100% for retrosternal goiter with smaller volumes. Further studies with an increased number of patients are needed to determine the value of volumetric analysis of retrosternal goiter to predict the need for an extra-cervical approach in retrosternal goiter.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: A thyroidectomy can be performed via a cervical incision in most patients with retrosternal goiter.Aims: To investigate the correlation between the volume of the mediastinal portion of the thyroid gland and the need for an extra-cervical approach for retrosternal goiter.Study Design: Diagnostic accuracy study.Methods: The measurement of craniocaudal length and the volume of the mediastinal component of the thyroid gland on computerised tomography images was performed in 47 patients with retrosternal goiter. Of these 47 patients, 8 (17%) required an extra-cervical approach and were classified as group 1, and 39 (83%) patients that required a cervical incision were classified as group 2. Receiver operating characteristic analysis was performed to determine the cut-off value for the craniocaudal length and the volume of the mediastinal thyroid mass, which significantly correlated with an extra-cervical approach for retrosternal goiter.Results: Reoperative surgery was significantly more frequent in group 1 than in group 2 (50% vs 13%; p=0.03). The craniocaudal length of the mediastinal thyroid gland was significantly longer in group 1 than in group 2 (77±11 mm vs 31±21 mm, respectively; p=0.0001). The volume of the mediastinal component was significantly larger in group 1 compared to group 2 (264±106 cm3 vs 40±41 cm3, respectively; p=0.0001). The receiver operating characteristic curve of craniocaudal length and the volume of the mediastinal component identified ≥66 mm and ≥162 cm3 as the cut-off values with the maximum accuracy, respectively. The craniocaudal length of the thyroid mass below the thoracic inlet ≥66 mm or a volume of the mediastinal portion ≥162 cm3 were significantly associated with an extra-cervical approach (p=0.0001). For predicting an extra-cervical approach, the sensitivity, positive predictive value and negative predictive value of the cut-off value for craniocaudal length was 87.5%, 64% and 97%, respectively. For predicting an extra-cervical approach, the sensitivity, positive predictive value and negative predictive value of the cut-off values for the mediastinal volume were 100%, 89% and 100%, respectively.Conclusion: A thyroid volume of ≥162 cm3 extending below the thoracic inlet was a significant determining factor for an extra-cervical approach, with a negative predictive value for the extra-cervical approach of 100% for retrosternal goiter with smaller volumes. Further studies with an increased number of patients are needed to determine the value of volumetric analysis of retrosternal goiter to predict the need for an extra-cervical approach in retrosternal goiter.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0161",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "36-42",
+    "views": 6945,
+    "downloads": 10323,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1778",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1778",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1778",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1778",
+    "localPdfUrl": "js/data/pdfs/1778.pdf",
+    "pdfUrl": "js/data/pdfs/1778.pdf"
+  },
+  {
+    "id": 1782,
+    "type": "Original Article",
+    "title": "GDF9 and BMP15 Expressions and Fine Structure Changes During Folliculogenesis in Polycystic Ovary Syndrome",
+    "authors": [
+      {
+        "name": "Meryem İlkay Karagül",
+        "affiliation": "Department of Histology and Embryology, Mersin University School of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Savaş Aktaş",
+        "affiliation": "Department of Histology and Embryology, Mersin University School of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Banu Coşkun Yılmaz",
+        "affiliation": "Department of Histology and Embryology, Mersin University School of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Yılmaz",
+        "affiliation": "Department of Histology and Embryology, University of Health Sciences, School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gülhan Örekiçi Temel[[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Polycystic ovary syndrome is the most frequently seen endocrine disorder in women of reproductive age with a prevalence of about 10%.Aims: To investigate the efficiency of growth differentiation factor 9 and bone morphogenetic protein 15 during folliculogenesis in a dehydroepiandrosterone-induced mouse Polycystic ovary syndrome model.Study Design: Animal experimentation.Methods: Mice were divided into 3 groups: control, vehicle and Polycystic ovary syndrome. Polycystic ovary syndrome model mice were developed by the injection of dehydroepiandrosterone dissolved in 0.1 mL of sesame oil. Ovarian tissues were examined for growth differentiation factor 9 and bone morphogenetic protein 15 using immunofluorescent labelling and electron microscopic examinations.Results: The immunoreactivity of growth differentiation factor 9 and bone morphogenetic protein 15 proteins decreased (p<0.05) in the Polycystic ovary syndrome group (27.73±8.43 and 24.85±7.03, respectively) compared with the control group (33.72±11.22 and 31.12±11.05, respectively) and vehicle group (33.95±10.75 and 29.99±10.72, respectively). Apoptotic changes were observed in granulosa cells, lipid vacuoles increased in Theca cells and thickening and irregularities were noted in the basal lamina of granulosa cells. An increased electron density in the zona pellucida in some of the multilaminar primary and secondary follicles in the Polycystic ovary syndrome model was also observed at the ultrastructural level.Conclusion: These results suggest that the decrease in the growth differentiation factor 9 and bone morphogenetic protein 15 expression initiated at the primary follicle stage effect the follicle development and zona pellucida structure and may cause subfertility or infertility in Polycystic ovary syndrome.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Polycystic ovary syndrome is the most frequently seen endocrine disorder in women of reproductive age with a prevalence of about 10%.<br /><strong>Aims:</strong> To investigate the efficiency of growth differentiation factor 9 and bone morphogenetic protein 15 during folliculogenesis in a dehydroepiandrosterone-induced mouse Polycystic ovary syndrome model.<br /><strong>Study Design:</strong> Animal experimentation.<br /><strong>Methods:</strong> Mice were divided into 3 groups: control, vehicle and Polycystic ovary syndrome. Polycystic ovary syndrome model mice were developed by the injection of dehydroepiandrosterone dissolved in 0.1 mL of sesame oil. Ovarian tissues were examined for growth differentiation factor 9 and bone morphogenetic protein 15 using immunofluorescent labelling and electron microscopic examinations.<br /><strong>Results:</strong> The immunoreactivity of growth differentiation factor 9 and bone morphogenetic protein 15 proteins decreased (p&lt;0.05) in the Polycystic ovary syndrome group (27.73&plusmn;8.43 and 24.85&plusmn;7.03, respectively) compared with the control group (33.72&plusmn;11.22 and 31.12&plusmn;11.05, respectively) and vehicle group (33.95&plusmn;10.75 and 29.99&plusmn;10.72, respectively). Apoptotic changes were observed in granulosa cells, lipid vacuoles increased in Theca cells and thickening and irregularities were noted in the basal lamina of granulosa cells. An increased electron density in the zona pellucida in some of the multilaminar primary and secondary follicles in the Polycystic ovary syndrome model was also observed at the ultrastructural level.<br /><strong>Conclusion:</strong> These results suggest that the decrease in the growth differentiation factor 9 and bone morphogenetic protein 15 expression initiated at the primary follicle stage effect the follicle development and zona pellucida structure and may cause subfertility or infertility in Polycystic ovary syndrome.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Polycystic ovary syndrome is the most frequently seen endocrine disorder in women of reproductive age with a prevalence of about 10%.Aims: To investigate the efficiency of growth differentiation factor 9 and bone morphogenetic protein 15 during folliculogenesis in a dehydroepiandrosterone-induced mouse Polycystic ovary syndrome model.Study Design: Animal experimentation.Methods: Mice were divided into 3 groups: control, vehicle and Polycystic ovary syndrome. Polycystic ovary syndrome model mice were developed by the injection of dehydroepiandrosterone dissolved in 0.1 mL of sesame oil. Ovarian tissues were examined for growth differentiation factor 9 and bone morphogenetic protein 15 using immunofluorescent labelling and electron microscopic examinations.Results: The immunoreactivity of growth differentiation factor 9 and bone morphogenetic protein 15 proteins decreased (p<0.05) in the Polycystic ovary syndrome group (27.73±8.43 and 24.85±7.03, respectively) compared with the control group (33.72±11.22 and 31.12±11.05, respectively) and vehicle group (33.95±10.75 and 29.99±10.72, respectively). Apoptotic changes were observed in granulosa cells, lipid vacuoles increased in Theca cells and thickening and irregularities were noted in the basal lamina of granulosa cells. An increased electron density in the zona pellucida in some of the multilaminar primary and secondary follicles in the Polycystic ovary syndrome model was also observed at the ultrastructural level.Conclusion: These results suggest that the decrease in the growth differentiation factor 9 and bone morphogenetic protein 15 expression initiated at the primary follicle stage effect the follicle development and zona pellucida structure and may cause subfertility or infertility in Polycystic ovary syndrome.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1110",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "43-54",
+    "views": 7087,
+    "downloads": 4448,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1782",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1782",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1782",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1782",
+    "localPdfUrl": "js/data/pdfs/1782.pdf",
+    "pdfUrl": "js/data/pdfs/1782.pdf"
+  },
+  {
+    "id": 1784,
+    "type": "Original Article",
+    "title": "Serum Angiogenic and Anti-angiogenic Markers in Pregnant Women with Placenta Percreta",
+    "authors": [
+      {
+        "name": "Hacer Uyanıkoğlu",
+        "affiliation": "Department of Obstetrics and Gynecology, Harran University School of Medicine, Şanlıurfa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Adnan İncebıyık",
+        "affiliation": "Department of Obstetrics and Gynecology, Harran University School of Medicine, Şanlıurfa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet B. Turp",
+        "affiliation": "Department of Obstetrics and Gynecology, Harran University School of Medicine, Şanlıurfa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Güler Çakmak",
+        "affiliation": "Department of Obstetrics and Gynecology, Harran University School of Medicine, Şanlıurfa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sibel Sak",
+        "affiliation": "Department of Obstetrics and Gynecology, Harran University School of Medicine, Şanlıurfa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neşe G. Hilali[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Placenta percreta is the morbidly adherent form of all the placental invasion abnormalities. The pathology that underlies placenta percreta is poorly understood.Aims: To compare the levels of circulating vascular endothelial growth factor, placental growth factor and soluble fms-like tyrosine kinase 1 in pregnant women with placenta percreta to a control group.Study Design: Case-control study.Methods: Twenty-two women who underwent caesarean section due to placenta percreta and 22 women who underwent caesarean section for other obstetric reasons were included in this study. The diagnosis of placenta percreta was defined as extreme trophoblastic invasion involving serosa of the uterus. Venous blood samples were collected for biochemical comparison of circulating vascular endothelial growth factor, placental growth factor and soluble fms-like tyrosine kinase 1 from all pregnant women.Results: Women with placenta percreta were significantly older, had higher gravidity, received more frequent antenatal steroids and blood transfusions and delivered at an earlier gestational age when compared to the control group. In women with placenta percreta, preoperative circulating levels of vascular endothelial growth factor, placental growth factor and soluble fms-like tyrosine kinase 1 were lower than the controls (p<0.001, p<0.001 and p<0.05, respectively). While the postoperative levels of vascular endothelial growth factorand soluble fms-like tyrosine kinase 1 levels were higher in placenta percreta (p=0.001 and p<0.001, respectively), placental growth factor levels were similar in both groups.Conclusion: The findings of this study suggest that a decrease in vascular endothelial growth factor, placental growth factor and soluble fms-like tyrosine kinase 1 levels may be related to placenta percreta etiopathogenesis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Placenta percreta is the morbidly adherent form of all the placental invasion abnormalities. The pathology that underlies placenta percreta is poorly understood.<br /><strong>Aims:</strong> To compare the levels of circulating vascular endothelial growth factor, placental growth factor and soluble fms-like tyrosine kinase 1 in pregnant women with placenta percreta to a control group.<br /><strong>Study Design:</strong> Case-control study.<br /><strong>Methods:</strong> Twenty-two women who underwent caesarean section due to placenta percreta and 22 women who underwent caesarean section for other obstetric reasons were included in this study. The diagnosis of placenta percreta was defined as extreme trophoblastic invasion involving serosa of the uterus. Venous blood samples were collected for biochemical comparison of circulating vascular endothelial growth factor, placental growth factor and soluble fms-like tyrosine kinase 1 from all pregnant women.<br /><strong>Results:</strong> Women with placenta percreta were significantly older, had higher gravidity, received more frequent antenatal steroids and blood transfusions and delivered at an earlier gestational age when compared to the control group. In women with placenta percreta, preoperative circulating levels of vascular endothelial growth factor, placental growth factor and soluble fms-like tyrosine kinase 1 were lower than the controls (p&lt;0.001, p&lt;0.001 and p&lt;0.05, respectively). While the postoperative levels of vascular endothelial growth factorand soluble fms-like tyrosine kinase 1 levels were higher in placenta percreta (p=0.001 and p&lt;0.001, respectively), placental growth factor levels were similar in both groups.<br /><strong>Conclusion:</strong> The findings of this study suggest that a decrease in vascular endothelial growth factor, placental growth factor and soluble fms-like tyrosine kinase 1 levels may be related to placenta percreta etiopathogenesis.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Placenta percreta is the morbidly adherent form of all the placental invasion abnormalities. The pathology that underlies placenta percreta is poorly understood.Aims: To compare the levels of circulating vascular endothelial growth factor, placental growth factor and soluble fms-like tyrosine kinase 1 in pregnant women with placenta percreta to a control group.Study Design: Case-control study.Methods: Twenty-two women who underwent caesarean section due to placenta percreta and 22 women who underwent caesarean section for other obstetric reasons were included in this study. The diagnosis of placenta percreta was defined as extreme trophoblastic invasion involving serosa of the uterus. Venous blood samples were collected for biochemical comparison of circulating vascular endothelial growth factor, placental growth factor and soluble fms-like tyrosine kinase 1 from all pregnant women.Results: Women with placenta percreta were significantly older, had higher gravidity, received more frequent antenatal steroids and blood transfusions and delivered at an earlier gestational age when compared to the control group. In women with placenta percreta, preoperative circulating levels of vascular endothelial growth factor, placental growth factor and soluble fms-like tyrosine kinase 1 were lower than the controls (p<0.001, p<0.001 and p<0.05, respectively). While the postoperative levels of vascular endothelial growth factorand soluble fms-like tyrosine kinase 1 levels were higher in placenta percreta (p=0.001 and p<0.001, respectively), placental growth factor levels were similar in both groups.Conclusion: The findings of this study suggest that a decrease in vascular endothelial growth factor, placental growth factor and soluble fms-like tyrosine kinase 1 levels may be related to placenta percreta etiopathogenesis.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1890",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "55-60",
+    "views": 6560,
+    "downloads": 9946,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1784",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1784",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1784",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1784",
+    "localPdfUrl": "js/data/pdfs/1784.pdf",
+    "pdfUrl": "js/data/pdfs/1784.pdf"
+  },
+  {
+    "id": 1781,
+    "type": "Original Article",
+    "title": "Human Parasitic Diseases in Bulgaria in Between 2013-2014",
+    "authors": [
+      {
+        "name": "Iskra Rainova",
+        "affiliation": "Department of Parasitology and Tropical Medicine, National Centre of Infectious and Parasitic Diseases, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Rumen Harizanov",
+        "affiliation": "Department of Parasitology and Tropical Medicine, National Centre of Infectious and Parasitic Diseases, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Iskren Kaftandjiev",
+        "affiliation": "Department of Parasitology and Tropical Medicine, National Centre of Infectious and Parasitic Diseases, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Nina Tsvetkova",
+        "affiliation": "Department of Parasitology and Tropical Medicine, National Centre of Infectious and Parasitic Diseases, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Ognyan Mikov",
+        "affiliation": "Department of Parasitology and Tropical Medicine, National Centre of Infectious and Parasitic Diseases, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Eleonora Kaneva",
+        "affiliation": "Department of Parasitology and Tropical Medicine, National Centre of Infectious and Parasitic Diseases, Sofia, Bulgaria",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Parasitic diseases are a significant part of the overall pathology registered in Bulgaria. It is essential to constantly improve the efficiency of the public health system in order to deal with autochthonous parasitic diseases.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\tParasitic diseases are a significant part of the overall pathology registered in Bulgaria. It is essential to constantly improve the efficiency of the public health system in order to deal with autochthonous parasitic diseases.\r\n<hr size=\"1\" color=\"#f2f2f2\"></hr> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Parasitic diseases are a significant part of the overall pathology registered in Bulgaria. It is essential to constantly improve the efficiency of the public health system in order to deal with autochthonous parasitic diseases.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0167",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "61-67",
+    "views": 6892,
+    "downloads": 9921,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1781",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1781",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1781",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1781",
+    "localPdfUrl": "js/data/pdfs/1781.pdf",
+    "pdfUrl": "js/data/pdfs/1781.pdf"
+  },
+  {
+    "id": 1780,
+    "type": "Original Article",
+    "title": "The Effects of Baicalin on Myoglobinuric Acute Renal Failure in Rats",
+    "authors": [
+      {
+        "name": "Özlem Yalçınkaya Yavuz",
+        "affiliation": "Department of Physiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurettin Aydoğdu",
+        "affiliation": "Department of Physiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ebru Taştekin",
+        "affiliation": "Department of Pathology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Necdet Süt",
+        "affiliation": "Department of Biostatistics, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Myoglobinuric acute kidney injury is a uremic syndrome that develops due to damage of skeletal muscle. Free radicals and nitric oxide play an important role in the pathogenesis of myoglobinuric acute kidney injury. Baicalin has multiple bioactivities, including antimicrobial, anti-inflammatory and antioxidant properties and is a potent free radical scavenger.Aims: To investigate the nephroprotective mechanism of baicalin on myoglobinuric acute kidney injury.Study Design: Animal experimentation.Methods: In our study, male Sprague Dawley rats were divided into 4 groups. Control (n=8), Baicalin (n=8), myoglobinuric acute kidney injury (n=10) and myoglobinuric acute kidney injury + baicalin (n=10). The rats were deprived of water for 24 hours before receiving intramuscular injection. The control and baicalin groups were injected intramuscularly with saline (8 ml/kg), and the myoglobinuric acute kidney injury and myoglobinuric acute kidney injury + baicalin groups were given 50% glycerol 8 ml/kg. One hour later, the control and myoglobinuric acute kidney injury groups received saline intraperitoneally, and the baicalin and myoglobinuric acute kidney injury + baicalin groups were given 200 mg/kg baicalin. Twenty-four hours after the glycerol injection, urine and blood samples were taken, and the kidneys of the rats were harvested under intraperitoneally injections of anaesthesia.Results: We found that the levels of creatinine, urea, nitric oxide, alanine transaminase, aspartate aminotransferase, creatine kinase in serum samples, malondialdehyde, nitric oxide, inducible nitric oxide synthase, and endothelial nitric oxide synthase concentrations in renal tissue were increased in the myoglobinuric acute kidney injury group compared with the control group (p<0.05). The nitric oxide and glutathione levels in the kidney were significantly decreased in the myoglobinuric acute kidney injury + baicalin group compared with the myoglobinuric acute kidney injury group (p<0.05). There were no significant differences between any other parameters.Conclusion: Our results did not show any protective effect of baicalin on myoglobinuric acute kidney injury, possibly because the different effective factors in the pathogenesis of experimental myoglobinuric acute kidney injury used in this experiment deviate from other experimental models. Moreover, detailed studies are needed to clarify the effects of baicalin in different doses and treatment durations in glycerol-induced acute kidney injury model.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Myoglobinuric acute kidney injury is a uremic syndrome that develops due to damage of skeletal muscle. Free radicals and nitric oxide play an important role in the pathogenesis of myoglobinuric acute kidney injury. Baicalin has multiple bioactivities, including antimicrobial, anti-inflammatory and antioxidant properties and is a potent free radical scavenger.<br /><strong>Aims:</strong> To investigate the nephroprotective mechanism of baicalin on myoglobinuric acute kidney injury.<br /><strong>Study Design:</strong> Animal experimentation.<br /><strong>Methods:</strong> In our study, male Sprague Dawley rats were divided into 4 groups. Control (n=8), Baicalin (n=8), myoglobinuric acute kidney injury (n=10) and myoglobinuric acute kidney injury + baicalin (n=10). The rats were deprived of water for 24 hours before receiving intramuscular injection. The control and baicalin groups were injected intramuscularly with saline (8 ml/kg), and the myoglobinuric acute kidney injury and myoglobinuric acute kidney injury + baicalin groups were given 50% glycerol 8 ml/kg. One hour later, the control and myoglobinuric acute kidney injury groups received saline intraperitoneally, and the baicalin and myoglobinuric acute kidney injury + baicalin groups were given 200 mg/kg baicalin. Twenty-four hours after the glycerol injection, urine and blood samples were taken, and the kidneys of the rats were harvested under intraperitoneally injections of anaesthesia.<br /><strong>Results:</strong> We found that the levels of creatinine, urea, nitric oxide, alanine transaminase, aspartate aminotransferase, creatine kinase in serum samples, malondialdehyde, nitric oxide, inducible nitric oxide synthase, and endothelial nitric oxide synthase concentrations in renal tissue were increased in the myoglobinuric acute kidney injury group compared with the control group (p&lt;0.05). The nitric oxide and glutathione levels in the kidney were significantly decreased in the myoglobinuric acute kidney injury + baicalin group compared with the myoglobinuric acute kidney injury group (p&lt;0.05). There were no significant differences between any other parameters.<br /><strong>Conclusion:</strong> Our results did not show any protective effect of baicalin on myoglobinuric acute kidney injury, possibly because the different effective factors in the pathogenesis of experimental myoglobinuric acute kidney injury used in this experiment deviate from other experimental models. Moreover, detailed studies are needed to clarify the effects of baicalin in different doses and treatment durations in glycerol-induced acute kidney injury model.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Myoglobinuric acute kidney injury is a uremic syndrome that develops due to damage of skeletal muscle. Free radicals and nitric oxide play an important role in the pathogenesis of myoglobinuric acute kidney injury. Baicalin has multiple bioactivities, including antimicrobial, anti-inflammatory and antioxidant properties and is a potent free radical scavenger.Aims: To investigate the nephroprotective mechanism of baicalin on myoglobinuric acute kidney injury.Study Design: Animal experimentation.Methods: In our study, male Sprague Dawley rats were divided into 4 groups. Control (n=8), Baicalin (n=8), myoglobinuric acute kidney injury (n=10) and myoglobinuric acute kidney injury + baicalin (n=10). The rats were deprived of water for 24 hours before receiving intramuscular injection. The control and baicalin groups were injected intramuscularly with saline (8 ml/kg), and the myoglobinuric acute kidney injury and myoglobinuric acute kidney injury + baicalin groups were given 50% glycerol 8 ml/kg. One hour later, the control and myoglobinuric acute kidney injury groups received saline intraperitoneally, and the baicalin and myoglobinuric acute kidney injury + baicalin groups were given 200 mg/kg baicalin. Twenty-four hours after the glycerol injection, urine and blood samples were taken, and the kidneys of the rats were harvested under intraperitoneally injections of anaesthesia.Results: We found that the levels of creatinine, urea, nitric oxide, alanine transaminase, aspartate aminotransferase, creatine kinase in serum samples, malondialdehyde, nitric oxide, inducible nitric oxide synthase, and endothelial nitric oxide synthase concentrations in renal tissue were increased in the myoglobinuric acute kidney injury group compared with the control group (p<0.05). The nitric oxide and glutathione levels in the kidney were significantly decreased in the myoglobinuric acute kidney injury + baicalin group compared with the myoglobinuric acute kidney injury group (p<0.05). There were no significant differences between any other parameters.Conclusion: Our results did not show any protective effect of baicalin on myoglobinuric acute kidney injury, possibly because the different effective factors in the pathogenesis of experimental myoglobinuric acute kidney injury used in this experiment deviate from other experimental models. Moreover, detailed studies are needed to clarify the effects of baicalin in different doses and treatment durations in glycerol-induced acute kidney injury model.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0040",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "68-76",
+    "views": 6124,
+    "downloads": 3048,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1780",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1780",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1780",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1780",
+    "localPdfUrl": "js/data/pdfs/1780.pdf",
+    "pdfUrl": "js/data/pdfs/1780.pdf"
+  },
+  {
+    "id": 1783,
+    "type": "Original Article",
+    "title": "Seasonal Influenza Vaccine Effectiveness in Preventing Laboratory Confirmed Influenza in 2014-2015 Season in Turkey: A Test-Negative Case Control Study",
+    "authors": [
+      {
+        "name": "Can Hüseyin Hekimoğlu",
+        "affiliation": "Department of Microbiology Reference Laboratories, Public Health Institute of Turkey, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mestan Emek",
+        "affiliation": "Antalya Public Health Directorate, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emine Avcı",
+        "affiliation": "Department of Infectious Diseases, Public Health Institute of Turkey, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selmur Topal",
+        "affiliation": "Department of Infectious Diseases, Public Health Institute of Turkey, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Demiröz",
+        "affiliation": "Bursa Public Health Directorate, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gül Ergör",
+        "affiliation": "Department of Public Health, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Influenza has an important public health impact worldwide with its considerable annual morbidity among persons with or without risk factors and its serious complications among persons in high-risk groups. The seasonal influenza vaccine is essential for preventing the burden of influenza in a population. Since the vaccine is reformulated each season according to the virus serotypes in circulation, its effectiveness can vary from season to season. Vaccine effectiveness is defined as the relative risk reduction in vaccinated individuals in observational studies.Aims: To calculate influenza vaccine effectiveness in preventing laboratory-confirmed influenza in the Turkish population for the first time using the national sentinel surveillance data in the 2014-2015 influenza season.Study Design: Test-negative case-control study.Methods: We compared vaccination odds of influenza positive cases to influenza negative controls in the national influenza surveillance in Turkey to estimate influenza vaccine effectiveness.Results: The influenza vaccine effectiveness against influenza A (H1N1) (68.4%, 95% CI: -2.9 to 90.3) and B (44.6%, 95% CI: -27.9 to 66.6) were moderate, and the influenza vaccine effectiveness against influenza A (H3N2) (75.0%, 95% CI: -86.1 to 96.7) was relatively high; all had low precision given the low vaccination coverage. Overall, the influenza vaccination coverage rate was 4.2% (95% CI: 3.5 to 5.0), which is not sufficient to control the burden of influenza.Conclusion: In Turkey, national surveillance for influenza should be strengthened and utilised annually for the assessment of influenza vaccine effectiveness with more precision. Annual influenza vaccine effectiveness in Turkey should continue to be monitored as part of the national sentinel influenza surveillance.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Influenza has an important public health impact worldwide with its considerable annual morbidity among persons with or without risk factors and its serious complications among persons in high-risk groups. The seasonal influenza vaccine is essential for preventing the burden of influenza in a population. Since the vaccine is reformulated each season according to the virus serotypes in circulation, its effectiveness can vary from season to season. Vaccine effectiveness is defined as the relative risk reduction in vaccinated individuals in observational studies.<br /><strong>Aims:</strong> To calculate influenza vaccine effectiveness in preventing laboratory-confirmed influenza in the Turkish population for the first time using the national sentinel surveillance data in the 2014-2015 influenza season.<br /><strong>Study Design:</strong> Test-negative case-control study.<br /><strong>Methods:</strong> We compared vaccination odds of influenza positive cases to influenza negative controls in the national influenza surveillance in Turkey to estimate influenza vaccine effectiveness.<br /><strong>Results:</strong> The influenza vaccine effectiveness against influenza A (H1N1) (68.4%, 95% CI: -2.9 to 90.3) and B (44.6%, 95% CI: -27.9 to 66.6) were moderate, and the influenza vaccine effectiveness against influenza A (H3N2) (75.0%, 95% CI: -86.1 to 96.7) was relatively high; all had low precision given the low vaccination coverage. Overall, the influenza vaccination coverage rate was 4.2% (95% CI: 3.5 to 5.0), which is not sufficient to control the burden of influenza.<br /><strong>Conclusion:</strong> In Turkey, national surveillance for influenza should be strengthened and utilised annually for the assessment of influenza vaccine effectiveness with more precision. Annual influenza vaccine effectiveness in Turkey should continue to be monitored as part of the national sentinel influenza surveillance.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Influenza has an important public health impact worldwide with its considerable annual morbidity among persons with or without risk factors and its serious complications among persons in high-risk groups. The seasonal influenza vaccine is essential for preventing the burden of influenza in a population. Since the vaccine is reformulated each season according to the virus serotypes in circulation, its effectiveness can vary from season to season. Vaccine effectiveness is defined as the relative risk reduction in vaccinated individuals in observational studies.Aims: To calculate influenza vaccine effectiveness in preventing laboratory-confirmed influenza in the Turkish population for the first time using the national sentinel surveillance data in the 2014-2015 influenza season.Study Design: Test-negative case-control study.Methods: We compared vaccination odds of influenza positive cases to influenza negative controls in the national influenza surveillance in Turkey to estimate influenza vaccine effectiveness.Results: The influenza vaccine effectiveness against influenza A (H1N1) (68.4%, 95% CI: -2.9 to 90.3) and B (44.6%, 95% CI: -27.9 to 66.6) were moderate, and the influenza vaccine effectiveness against influenza A (H3N2) (75.0%, 95% CI: -86.1 to 96.7) was relatively high; all had low precision given the low vaccination coverage. Overall, the influenza vaccination coverage rate was 4.2% (95% CI: 3.5 to 5.0), which is not sufficient to control the burden of influenza.Conclusion: In Turkey, national surveillance for influenza should be strengthened and utilised annually for the assessment of influenza vaccine effectiveness with more precision. Annual influenza vaccine effectiveness in Turkey should continue to be monitored as part of the national sentinel influenza surveillance.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0487",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "77-83",
+    "views": 7042,
+    "downloads": 9730,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1783",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1783",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1783",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1783",
+    "localPdfUrl": "js/data/pdfs/1783.pdf",
+    "pdfUrl": "js/data/pdfs/1783.pdf"
+  },
+  {
+    "id": 1793,
+    "type": "Original Article",
+    "title": "Favorable Outcome with Close Margins in Patients Undergoing Nipple/Skin Sparing Mastectomy with Immediate Breast Reconstruction: 5-year Follow-up",
+    "authors": [
+      {
+        "name": "Enver Özkurt",
+        "affiliation": "Department of General Surgery, Breast Unit, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Tükenmez",
+        "affiliation": "Department of General Surgery, Breast Unit, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erdem Güven",
+        "affiliation": "Department of Plastic Surgery, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burcu Çelet Özden",
+        "affiliation": "Department of Plastic Surgery, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gizem Öner",
+        "affiliation": "Department of General Surgery, Breast Unit, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mahmut Müslümanoğlu",
+        "affiliation": "Department of General Surgery, Breast Unit, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Abdullah İğci",
+        "affiliation": "Department of General Surgery, Breast Unit, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Vahit Özmen",
+        "affiliation": "Department of General Surgery, Breast Unit, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Seden Küçücük",
+        "affiliation": "Department of Radiation Oncology, İstanbul University İstanbul Institute of Oncology, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neslihan Cabioğlu[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Implant-based breast reconstruction after mastectomy has recently been reported to be the preferred type of surgery among breast-specific surgeons and plastic surgeons. Aims: To explore the significant clinicopathological factors associated with long-term outcome related to local recurrences of the nipple among patients who underwent immediate breast reconstruction with tissue expander or implant after mastectomy. Study Design: Retrospective cohort.Methods: From January 2007 to January 2013, 51 breast cancer patients who underwent immediate breast reconstruction with tissue expander or implant were retrospectively analysed. Patients’ demographic data, clinicopathological characteristics, and clinical outcome by disease-free survival and disease-specific survival analyses were determined. Results: The median follow-up was 64 (31-114) months. Of the 57 mastectomies, 41 were skin sparing mastectomy (72%) and 16 were nipple-areola sparing mastectomy (28%). Immediate breast reconstruction surgery included tissue expander (n=46, 81%) or implant (n=11, 19%) placement. The molecular subgroups of 47 invasive cancers were as follows: luminal A (n=23, 49%), luminal B (n=16, 34%), non-luminal HER2 (n=5, 10.6), triple negative breast cancer (n=3, 6.4%). The 5-years disease-specific survival, disease-free survival, and locoregional recurrence-free survival rates were 96.8%, 90%, and 97.6% respectively. Patients with luminal A cancer were found to have an improved 5-year disease-free survival time than other (luminal A; 100% vs. non-luminal A; 78%; p=0.028). Of the 14 nipple-areola sparing mastectomy, 13 had a close median tumour distance to nipple-areola complex (<20 mm) with a 5-year locoregional recurrence free survival of 100%. Conclusion: Immediate breast reconstruction with implant or tissue expander can be safely applied in patients undergoing skin sparing mastectomy or nipple-areola sparing mastectomy. Patients with luminal-A type show the most favourable outcome. During the 5-year follow-up period, patients even with close margins (<20 mm) to nipple-areola complex with nipple-areola sparing mastectomy have excellent locoregional and overall survival when treated by contemporary multidisciplinary oncological management.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Implant-based breast reconstruction after mastectomy has recently been reported to be the preferred type of surgery among breast-specific surgeons and plastic surgeons. <br /><strong>Aims:</strong> To explore the significant clinicopathological factors associated with long-term outcome related to local recurrences of the nipple among patients who underwent immediate breast reconstruction with tissue expander or implant after mastectomy. <br /><strong>Study Design:</strong> Retrospective cohort.<br /><strong>Methods:</strong> From January 2007 to January 2013, 51 breast cancer patients who underwent immediate breast reconstruction with tissue expander or implant were retrospectively analysed. Patients&rsquo; demographic data, clinicopathological characteristics, and clinical outcome by disease-free survival and disease-specific survival analyses were determined. <br /><strong>Results:</strong> The median follow-up was 64 (31-114) months. Of the 57 mastectomies, 41 were skin sparing mastectomy (72%) and 16 were nipple-areola sparing mastectomy (28%). Immediate breast reconstruction surgery included tissue expander (n=46, 81%) or implant (n=11, 19%) placement. The molecular subgroups of 47 invasive cancers were as follows: luminal A (n=23, 49%), luminal B (n=16, 34%), non-luminal HER2 (n=5, 10.6), triple negative breast cancer (n=3, 6.4%). The 5-years disease-specific survival, disease-free survival, and locoregional recurrence-free survival rates were 96.8%, 90%, and 97.6% respectively. Patients with luminal A cancer were found to have an improved 5-year disease-free survival time than other (luminal A; 100% vs. non-luminal A; 78%; p=0.028). Of the 14 nipple-areola sparing mastectomy, 13 had a close median tumour distance to nipple-areola complex (&lt;20 mm) with a 5-year locoregional recurrence free survival of 100%. <br /><strong>Conclusion:</strong> Immediate breast reconstruction with implant or tissue expander can be safely applied in patients undergoing skin sparing mastectomy or nipple-areola sparing mastectomy. Patients with luminal-A type show the most favourable outcome. During the 5-year follow-up period, patients even with close margins (&lt;20 mm) to nipple-areola complex with nipple-areola sparing mastectomy have excellent locoregional and overall survival when treated by contemporary multidisciplinary oncological management.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Implant-based breast reconstruction after mastectomy has recently been reported to be the preferred type of surgery among breast-specific surgeons and plastic surgeons. Aims: To explore the significant clinicopathological factors associated with long-term outcome related to local recurrences of the nipple among patients who underwent immediate breast reconstruction with tissue expander or implant after mastectomy. Study Design: Retrospective cohort.Methods: From January 2007 to January 2013, 51 breast cancer patients who underwent immediate breast reconstruction with tissue expander or implant were retrospectively analysed. Patients’ demographic data, clinicopathological characteristics, and clinical outcome by disease-free survival and disease-specific survival analyses were determined. Results: The median follow-up was 64 (31-114) months. Of the 57 mastectomies, 41 were skin sparing mastectomy (72%) and 16 were nipple-areola sparing mastectomy (28%). Immediate breast reconstruction surgery included tissue expander (n=46, 81%) or implant (n=11, 19%) placement. The molecular subgroups of 47 invasive cancers were as follows: luminal A (n=23, 49%), luminal B (n=16, 34%), non-luminal HER2 (n=5, 10.6), triple negative breast cancer (n=3, 6.4%). The 5-years disease-specific survival, disease-free survival, and locoregional recurrence-free survival rates were 96.8%, 90%, and 97.6% respectively. Patients with luminal A cancer were found to have an improved 5-year disease-free survival time than other (luminal A; 100% vs. non-luminal A; 78%; p=0.028). Of the 14 nipple-areola sparing mastectomy, 13 had a close median tumour distance to nipple-areola complex (<20 mm) with a 5-year locoregional recurrence free survival of 100%. Conclusion: Immediate breast reconstruction with implant or tissue expander can be safely applied in patients undergoing skin sparing mastectomy or nipple-areola sparing mastectomy. Patients with luminal-A type show the most favourable outcome. During the 5-year follow-up period, patients even with close margins (<20 mm) to nipple-areola complex with nipple-areola sparing mastectomy have excellent locoregional and overall survival when treated by contemporary multidisciplinary oncological management.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0029",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "84-92",
+    "views": 7796,
+    "downloads": 9892,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1793",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1793",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1793",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1793",
+    "localPdfUrl": "js/data/pdfs/1793.pdf",
+    "pdfUrl": "js/data/pdfs/1793.pdf"
+  },
+  {
+    "id": 1852,
+    "type": "Original Article",
+    "title": "Validation of Transition Readiness Assessment Questionaire in Turkish Adolescents with Diabetes",
+    "authors": [
+      {
+        "name": "Evrim Kızıler",
+        "affiliation": "Clinic of Pediatrics, Yıldırım Beyazıt University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Yıldız",
+        "affiliation": "Department of Pediatric Nursing, University of Health Sciences, Gülhane School of Nursing, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Berna Eren Fidancı",
+        "affiliation": "Department of Pediatric Nursing, University of Health Sciences, Gülhane School of Nursing, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Today, more than 90% of adolescents with chronic conditions survive into adulthood and move from pediatric care to adult care for the management of their chronic illness. It is important to grant autonomy and ensure that adolescents/young adults are ready to use the adult health care system prior to the transfer of care. However, the lack of a transition readiness assessment tool that is validated, patient-centered, and appropriate to developmental differences in pediatric care is a major obstacle for the transition of care from pediatric services to adult services. Aims: This study examined the validity and reliability of the Turkish version of the Transition Readiness Assessment Questionnaire, which assesses the readiness for transition from pediatric to adult health care for adolescents/young adults with diabetes mellitus. Study Design: Methodological study. Methods: Participants were 109 adolescents/young adults with type 1 diabetes mellitus aged 14-21 years. After permission was obtained to adapt the Transition Readiness Assessment Questionnaire, the Turkish Transition Readiness Assessment Questionnaire and self-care scale were administered to participants through face-to-face interviews at two pediatric endocrinology clinics. Validity was evaluated by exploratory and confirmatory factor analysis and content-scope validity assessment; reliability was evaluated by item-total score correlation and continuity methods. Internal reliability was assessed by Cronbach’s alpha coefficient and criterion validity assessment. Results: The item analysis, exploratory factor analysis, and confirmatory factor analysis identified five basic dimensions, with high internal consistency (0.89-0.75). The ratio χ2/df and other conformity indices were a good fit to the data. The correlation coefficient in the analyses of test-retest scores was 0.86 for the total scale (p<0.05), and the Cronbach’s alpha coefficient was 0.88 for overall scale. Conclusion: The Turkish Transition Readiness Assessment Questionnaire is a valid and reliable measure of the transition readiness of adolescents/young adults with diabetes mellitus in Turkey. The Transition Readiness Assessment Questionnaire assesses the self-management abilities and health care transition knowledge of adolescents/young adults with diabetes mellitus who need special health care. It can also serve as a guide for health care professionals in detecting the educational fields that are necessary for acquiring self-management and self-care abilities.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Today, more than 90% of adolescents with chronic conditions survive into adulthood and move from pediatric care to adult care for the management of their chronic illness. It is important to grant autonomy and ensure that adolescents/young adults are ready to use the adult health care system prior to the transfer of care. However, the lack of a transition readiness assessment tool that is validated, patient-centered, and appropriate to developmental differences in pediatric care is a major obstacle for the transition of care from pediatric services to adult services. <br /><strong>Aims:</strong> This study examined the validity and reliability of the Turkish version of the Transition Readiness Assessment Questionnaire, which assesses the readiness for transition from pediatric to adult health care for adolescents/young adults with diabetes mellitus. <br /><strong>Study Design:</strong> Methodological study. <br /><strong>Methods:</strong> Participants were 109 adolescents/young adults with type 1 diabetes mellitus aged 14-21 years. After permission was obtained to adapt the Transition Readiness Assessment Questionnaire, the Turkish Transition Readiness Assessment Questionnaire and self-care scale were administered to participants through face-to-face interviews at two pediatric endocrinology clinics. Validity was evaluated by exploratory and confirmatory factor analysis and content-scope validity assessment; reliability was evaluated by item-total score correlation and continuity methods. Internal reliability was assessed by Cronbach&rsquo;s alpha coefficient and criterion validity assessment. <br /><strong>Results:</strong> The item analysis, exploratory factor analysis, and confirmatory factor analysis identified five basic dimensions, with high internal consistency (0.89-0.75). The ratio &chi;<sup>2</sup>/df and other conformity indices were a good fit to the data. The correlation coefficient in the analyses of test-retest scores was 0.86 for the total scale (p&lt;0.05), and the Cronbach&rsquo;s alpha coefficient was 0.88 for overall scale. <br /><strong>Conclusion:</strong> The Turkish Transition Readiness Assessment Questionnaire is a valid and reliable measure of the transition readiness of adolescents/young adults with diabetes mellitus in Turkey. The Transition Readiness Assessment Questionnaire assesses the self-management abilities and health care transition knowledge of adolescents/young adults with diabetes mellitus who need special health care. It can also serve as a guide for health care professionals in detecting the educational fields that are necessary for acquiring self-management and self-care abilities.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Today, more than 90% of adolescents with chronic conditions survive into adulthood and move from pediatric care to adult care for the management of their chronic illness. It is important to grant autonomy and ensure that adolescents/young adults are ready to use the adult health care system prior to the transfer of care. However, the lack of a transition readiness assessment tool that is validated, patient-centered, and appropriate to developmental differences in pediatric care is a major obstacle for the transition of care from pediatric services to adult services. Aims: This study examined the validity and reliability of the Turkish version of the Transition Readiness Assessment Questionnaire, which assesses the readiness for transition from pediatric to adult health care for adolescents/young adults with diabetes mellitus. Study Design: Methodological study. Methods: Participants were 109 adolescents/young adults with type 1 diabetes mellitus aged 14-21 years. After permission was obtained to adapt the Transition Readiness Assessment Questionnaire, the Turkish Transition Readiness Assessment Questionnaire and self-care scale were administered to participants through face-to-face interviews at two pediatric endocrinology clinics. Validity was evaluated by exploratory and confirmatory factor analysis and content-scope validity assessment; reliability was evaluated by item-total score correlation and continuity methods. Internal reliability was assessed by Cronbach’s alpha coefficient and criterion validity assessment. Results: The item analysis, exploratory factor analysis, and confirmatory factor analysis identified five basic dimensions, with high internal consistency (0.89-0.75). The ratio χ2/df and other conformity indices were a good fit to the data. The correlation coefficient in the analyses of test-retest scores was 0.86 for the total scale (p<0.05), and the Cronbach’s alpha coefficient was 0.88 for overall scale. Conclusion: The Turkish Transition Readiness Assessment Questionnaire is a valid and reliable measure of the transition readiness of adolescents/young adults with diabetes mellitus in Turkey. The Transition Readiness Assessment Questionnaire assesses the self-management abilities and health care transition knowledge of adolescents/young adults with diabetes mellitus who need special health care. It can also serve as a guide for health care professionals in detecting the educational fields that are necessary for acquiring self-management and self-care abilities.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1415",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "93-100",
+    "views": 6617,
+    "downloads": 10672,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1852",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1852",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1852",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1852",
+    "localPdfUrl": "js/data/pdfs/1852.pdf",
+    "pdfUrl": "js/data/pdfs/1852.pdf"
+  },
+  {
+    "id": 1764,
+    "type": "Brief Report",
+    "title": "Serrated Polyposis Syndrome in a Single-Center 10-Year Experience",
+    "authors": [
+      {
+        "name": "Hyun Young Kim",
+        "affiliation": "Department of Internal Medicine, Seoul National University Bundang Hospital, Seongnam-si, Korea",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Aims: Serrated polyposis syndrome is a disease that is often missed in the clinical setting and is associated with colorectal cancer. We investigated the prevalence of SPS and the association between colorectal or other cancers in a 10-year, retrospective data analysis. Methods: We reviewed complete colonoscopy data obtained from January 2005 through January 2015 at a health-screening centre. Serrated polyposis syndrome was defined on the basis of the criteria established by the 2010 World Health Organization. Results: Of a total of 53.842 consecutive subjects who underwent complete colonoscopy, 12 (0.022%) patients had serrated polyposis syndrome. All of these cases were under-recognized by the endoscopist or referring physician. The mean patient age was 58.6 years; 67% of the patients were men and 33% were women. No serrated polyposis syndrome patients had a first-degree relative with serrated polyposis syndrome, and no serrated polyposis syndrome patients had colorectal cancer. Two cases (17%) had extra-colonic cancers (prostate cancer and thyroid cancer). Eight cases (67%) had a family history of cancer (stomach, breast, lung, pancreas, prostate and colorectal cancer). Conclusion: Serrated polyposis syndrome was a rare condition in a 10-year database, and it was diagnosed late in all cases. Serrated polyposis syndrome may be associated with an increased risk of extra-colonic cancer.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Aims:</strong> Serrated polyposis syndrome is a disease that is often missed in the clinical setting and is associated with colorectal cancer. We investigated the prevalence of SPS and the association between colorectal or other cancers in a 10-year, retrospective data analysis. <br /><strong>Methods:</strong> We reviewed complete colonoscopy data obtained from January 2005 through January 2015 at a health-screening centre. Serrated polyposis syndrome was defined on the basis of the criteria established by the 2010 World Health Organization. <br /><strong>Results:</strong> Of a total of 53.842 consecutive subjects who underwent complete colonoscopy, 12 (0.022%) patients had serrated polyposis syndrome. All of these cases were under-recognized by the endoscopist or referring physician. The mean patient age was 58.6 years; 67% of the patients were men and 33% were women. No serrated polyposis syndrome patients had a first-degree relative with serrated polyposis syndrome, and no serrated polyposis syndrome patients had colorectal cancer. Two cases (17%) had extra-colonic cancers (prostate cancer and thyroid cancer). Eight cases (67%) had a family history of cancer (stomach, breast, lung, pancreas, prostate and colorectal cancer). <br /><strong>Conclusion:</strong> Serrated polyposis syndrome was a rare condition in a 10-year database, and it was diagnosed late in all cases. Serrated polyposis syndrome may be associated with an increased risk of extra-colonic cancer.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Aims: Serrated polyposis syndrome is a disease that is often missed in the clinical setting and is associated with colorectal cancer. We investigated the prevalence of SPS and the association between colorectal or other cancers in a 10-year, retrospective data analysis. Methods: We reviewed complete colonoscopy data obtained from January 2005 through January 2015 at a health-screening centre. Serrated polyposis syndrome was defined on the basis of the criteria established by the 2010 World Health Organization. Results: Of a total of 53.842 consecutive subjects who underwent complete colonoscopy, 12 (0.022%) patients had serrated polyposis syndrome. All of these cases were under-recognized by the endoscopist or referring physician. The mean patient age was 58.6 years; 67% of the patients were men and 33% were women. No serrated polyposis syndrome patients had a first-degree relative with serrated polyposis syndrome, and no serrated polyposis syndrome patients had colorectal cancer. Two cases (17%) had extra-colonic cancers (prostate cancer and thyroid cancer). Eight cases (67%) had a family history of cancer (stomach, breast, lung, pancreas, prostate and colorectal cancer). Conclusion: Serrated polyposis syndrome was a rare condition in a 10-year database, and it was diagnosed late in all cases. Serrated polyposis syndrome may be associated with an increased risk of extra-colonic cancer.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0322",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "101-104",
+    "views": 6716,
+    "downloads": 3100,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1764",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1764",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1764",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1764",
+    "localPdfUrl": "js/data/pdfs/1764.pdf",
+    "pdfUrl": "js/data/pdfs/1764.pdf"
+  },
+  {
+    "id": 1762,
+    "type": "Case Report",
+    "title": "A Misclassification of Pulmonary Stenosis Using Conventional Echocardiographic Methods",
+    "authors": [
+      {
+        "name": "Tuğba Kemaloğlu Öz",
+        "affiliation": "Clinic of Cardiology, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Eren",
+        "affiliation": "Clinic of Cardiology, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tayfun Gürol",
+        "affiliation": "Department of Cardiology, Bahçeşehir University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özer Soylu",
+        "affiliation": "Department of Cardiology, Bahçeşehir University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bahadır Dağdeviren",
+        "affiliation": "Department of Cardiology, Bahçeşehir University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The classification of pulmonary stenosis (PS) severity based on the transpulmonary pressure gradient, which is affected by flow rate. Case Report: We report the first case of a pregnant patient with atrial septal defect (ASD) and pulmonary stenosis that was misclassified by conventional echocardiographic methods. Most importantly, three-dimensional transoesophageal echocardiographic assessment of pulmonary stenosis changed the entire treatment strategy. Conclusion: The planimetric calculation of the pulmonary valve (PV) opening area using three-dimensional transoesophageal echocardiographic may be helpful, especially in encounters with specialized conditions such as ASD and/or pregnancy, which can cause inaccurate recordings of the transvalvular peak gradient.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The classification of pulmonary stenosis (PS) severity based on the transpulmonary pressure gradient, which is affected by flow rate.&nbsp;<br /><strong>Case Report:</strong> We report the first case of a pregnant patient with atrial septal defect (ASD) and pulmonary stenosis that was misclassified by conventional echocardiographic methods. Most importantly, three-dimensional transoesophageal echocardiographic assessment of pulmonary stenosis changed the entire treatment strategy.&nbsp;<br /><strong>Conclusion:</strong> The planimetric calculation of the pulmonary valve (PV) opening area using three-dimensional transoesophageal echocardiographic may be helpful, especially in encounters with specialized conditions such as ASD and/or pregnancy, which can cause inaccurate recordings of the transvalvular peak gradient.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The classification of pulmonary stenosis (PS) severity based on the transpulmonary pressure gradient, which is affected by flow rate. Case Report: We report the first case of a pregnant patient with atrial septal defect (ASD) and pulmonary stenosis that was misclassified by conventional echocardiographic methods. Most importantly, three-dimensional transoesophageal echocardiographic assessment of pulmonary stenosis changed the entire treatment strategy. Conclusion: The planimetric calculation of the pulmonary valve (PV) opening area using three-dimensional transoesophageal echocardiographic may be helpful, especially in encounters with specialized conditions such as ASD and/or pregnancy, which can cause inaccurate recordings of the transvalvular peak gradient.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0903",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "105-107",
+    "views": 6862,
+    "downloads": 9708,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1762",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1762",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1762",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1762",
+    "localPdfUrl": "js/data/pdfs/1762.pdf",
+    "pdfUrl": "js/data/pdfs/1762.pdf"
+  },
+  {
+    "id": 1775,
+    "type": "Case Report",
+    "title": "Novel Founder Mutation in FANCA Gene (c.3446_3449dupCCCT) Among Romani Patients from the Balkan Region",
+    "authors": [
+      {
+        "name": "Marija Dimishkovska",
+        "affiliation": "Research Centre for Genetic Engineering and Biotechnology “Georgi D. Efremov”, Macedonian Academy of Science and Arts, Skopje, Macedonia",
+        "orcid": ""
+      },
+      {
+        "name": "Vjosa Mulliqi Kotori",
+        "affiliation": "Department of Endocrinology, Pediatric Clinic, University Clinical Center, Prishtina, Republic of Kosovo",
+        "orcid": ""
+      },
+      {
+        "name": "Zoran Gucev",
+        "affiliation": "Department of Pediatrics, St. Cyril and Methodius University, Skopje, Macedonia",
+        "orcid": ""
+      },
+      {
+        "name": "Svetlana Kocheva",
+        "affiliation": "Department of Pediatrics, St. Cyril and Methodius University, Skopje, Macedonia",
+        "orcid": ""
+      },
+      {
+        "name": "Momir Polenakovic",
+        "affiliation": "Research Centre for Genetic Engineering and Biotechnology “Georgi D. Efremov”, Macedonian Academy of Science and Arts, Skopje, Macedonia",
+        "orcid": ""
+      },
+      {
+        "name": "Dijana Plaseska-Karanfilska",
+        "affiliation": "Research Centre for Genetic Engineering and Biotechnology “Georgi D. Efremov”, Macedonian Academy of Science and Arts, Skopje, Macedonia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Fanconi anemia is a rare autosomal recessive or X-linked disorder characterised by clinical and genetic heterogeneity. Most fanconi anemia patients harbour homozygous or double heterozygous mutations in the FANCA (60-65%), FANCC (10-15%), FANCG (~10%) or FANCD2 (3-6%) genes. We have already reported the FANCA variant c.190–256_283+1680del2040dupC as a founder mutation among Macedonian fanconi anemia patients of Gypsy-like ethnic origin. Here, we present a novel FANCA mutation in two patients from Macedonia and Kosovo.Case Report: The novel FANCA mutation c.3446_3449dupCCCT was identified in two fanconi anemia patients with Romany ethnicity; a 2-year-old girl from Macedonia who is a compound heterozygote for a previously reported FANCA c.190-256_283+1680del2040dupC and the novel mutation and a 10-year-old girl from Kosovo who is a homozygote for the novel FANCA c.3446_3449dupCCCT mutation. The novel mutation is located in exon 35 in the FAAP20-binding domain which plays a crucial role in the FANCA-FAAP20 interaction and is required for integrity of the fanconi anemia pathway. Conclusion: The finding of the FANCA c.3446_3449dupCCCT mutation in two unrelated FA patients with Romani ethnicity from Macedonia and Kosovo suggests it is a founder mutation in the Romani population living in the Balkan region.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Fanconi anemia is a rare autosomal recessive or X-linked disorder characterised by clinical and genetic heterogeneity. Most fanconi anemia patients harbour homozygous or double heterozygous mutations in the <em>FANCA</em> (60-65%), <em>FANCC</em> (10-15%), <em>FANCG</em> (~10%) or <em>FANCD2</em> (3-6%) genes. We have already reported the <em>FANCA</em> variant c.190&ndash;256_283+1680del2040dupC as a founder mutation among Macedonian fanconi anemia patients of Gypsy-like ethnic origin. Here, we present a novel <em>FANCA</em> mutation in two patients from Macedonia and Kosovo.<br /><strong>Case Report:</strong> The novel <em>FANCA</em> mutation c.3446_3449dupCCCT was identified in two fanconi anemia patients with Romany ethnicity; a 2-year-old girl from Macedonia who is a compound heterozygote for a previously reported <em>FANCA</em> c.190-256_283+1680del2040dupC and the novel mutation and a 10-year-old girl from Kosovo who is a homozygote for the novel <em>FANCA</em> c.3446_3449dupCCCT mutation. The novel mutation is located in exon 35 in the FAAP20-binding domain which plays a crucial role in the FANCA-FAAP20 interaction and is required for integrity of the fanconi anemia pathway. <br /><strong>Conclusion:</strong> The finding of the <em>FANCA</em> c.3446_3449dupCCCT mutation in two unrelated FA patients with Romani ethnicity from Macedonia and Kosovo suggests it is a founder mutation in the Romani population living in the Balkan region.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Fanconi anemia is a rare autosomal recessive or X-linked disorder characterised by clinical and genetic heterogeneity. Most fanconi anemia patients harbour homozygous or double heterozygous mutations in the FANCA (60-65%), FANCC (10-15%), FANCG (~10%) or FANCD2 (3-6%) genes. We have already reported the FANCA variant c.190–256_283+1680del2040dupC as a founder mutation among Macedonian fanconi anemia patients of Gypsy-like ethnic origin. Here, we present a novel FANCA mutation in two patients from Macedonia and Kosovo.Case Report: The novel FANCA mutation c.3446_3449dupCCCT was identified in two fanconi anemia patients with Romany ethnicity; a 2-year-old girl from Macedonia who is a compound heterozygote for a previously reported FANCA c.190-256_283+1680del2040dupC and the novel mutation and a 10-year-old girl from Kosovo who is a homozygote for the novel FANCA c.3446_3449dupCCCT mutation. The novel mutation is located in exon 35 in the FAAP20-binding domain which plays a crucial role in the FANCA-FAAP20 interaction and is required for integrity of the fanconi anemia pathway. Conclusion: The finding of the FANCA c.3446_3449dupCCCT mutation in two unrelated FA patients with Romani ethnicity from Macedonia and Kosovo suggests it is a founder mutation in the Romani population living in the Balkan region.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0618",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "108-111",
+    "views": 6318,
+    "downloads": 9696,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1775",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1775",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1775",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1775",
+    "localPdfUrl": "js/data/pdfs/1775.pdf",
+    "pdfUrl": "js/data/pdfs/1775.pdf"
+  },
+  {
+    "id": 1786,
+    "type": "Case Report",
+    "title": "Successful Outcome of Severe Intra-cerebral Bleeding Associated with Acquired Factor V Inhibition: Utilization of Multiple Therapeutic Agents",
+    "authors": [
+      {
+        "name": "Panagiotis Andreadis",
+        "affiliation": "Clinic of Internal Medicine, Ippokrateio General Hospital of Thessaloniki, Thessaloniki, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Katerina Kafantari",
+        "affiliation": "Clinic of Internal Medicine, Ippokrateio General Hospital of Thessaloniki, Thessaloniki, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Aleka Agapidou",
+        "affiliation": "Clinic of Hematology, Homerton University Hospital, Homerton Row, London",
+        "orcid": ""
+      },
+      {
+        "name": "Sofia Vakalopoulou",
+        "affiliation": "Clinic of Internal Medicine, Ippokrateio General Hospital of Thessaloniki, Thessaloniki, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Efthymia Vlachaki",
+        "affiliation": "Clinic of Internal Medicine, Ippokrateio General Hospital of Thessaloniki, Thessaloniki, Greece",
+        "orcid": ""
+      }
+    ],
+    "abstract": "A 78-year-old male presented to the emergency department due to repeated episodes of syncope over the last 3 days. Physical examination during admission revealed pallour and extensive ecchymosis in his left hemithorax and left thigh. The rest of the clinical and neurological examination revealed no pathological findings.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\tA 78-year-old male presented to the emergency department due to repeated episodes of syncope over the last 3 days. Physical examination during admission revealed pallour and extensive ecchymosis in his left hemithorax and left thigh. The rest of the clinical and neurological examination revealed no pathological findings.\r\n<hr size=\"1\" color=\"#f2f2f2\"></hr> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "A 78-year-old male presented to the emergency department due to repeated episodes of syncope over the last 3 days. Physical examination during admission revealed pallour and extensive ecchymosis in his left hemithorax and left thigh. The rest of the clinical and neurological examination revealed no pathological findings.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0158",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "112-115",
+    "views": 6214,
+    "downloads": 9701,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1786",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1786",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1786",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1786",
+    "localPdfUrl": "js/data/pdfs/1786.pdf",
+    "pdfUrl": "js/data/pdfs/1786.pdf"
+  },
+  {
+    "id": 1766,
+    "type": "Clinical Image",
+    "title": "Maxillo Ostio Choanal Polyp",
+    "authors": [
+      {
+        "name": "Süha Ertuğrul",
+        "affiliation": "Department of Otorhinolaryngology, Karabük University School of Medicine, Karabük, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serdar Ensari",
+        "affiliation": "Department of Otorhinolaryngology, Karabük University School of Medicine, Karabük, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "A 49-year-old female patient presented to our clinic with symptoms of two-sided nasal congestion, the feeling of a foreign body in the throat and difficulty in swallowing, which had been present for 1 year.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\tA 49-year-old female patient presented to our clinic with symptoms of two-sided nasal congestion, the feeling of a foreign body in the throat and difficulty in swallowing, which had been present for 1 year. \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "A 49-year-old female patient presented to our clinic with symptoms of two-sided nasal congestion, the feeling of a foreign body in the throat and difficulty in swallowing, which had been present for 1 year.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0656",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "116-117",
+    "views": 5386,
+    "downloads": 9766,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1766",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1766",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1766",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1766",
+    "localPdfUrl": "js/data/pdfs/1766.pdf",
+    "pdfUrl": "js/data/pdfs/1766.pdf"
+  },
+  {
+    "id": 1774,
+    "type": "Clinical Image",
+    "title": "Patent Omphalomesenteric Duct with Protruding Bowels through a Ruptured Omphalocele",
+    "authors": [
+      {
+        "name": "Emil Mammadov",
+        "affiliation": "Department of Pediatric Surgery, Near East University School of Medicine, Nicosia, Cyprus",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Persistent omphalomesenteric duct is a rare congenital anomaly and protrusion of the bowel through the duct is the only neonatal emergent clinical entity associated with this condition. The pathogenesis is the lack of intestinal involution by the ninth gestational week. There are several associated anomalies like intestinal malrotation, oesophageal atresia a",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0230",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "118-119",
+    "views": 5425,
+    "downloads": 9647,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1774",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1774",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1774",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1774",
+    "localPdfUrl": "js/data/pdfs/1774.pdf",
+    "pdfUrl": "js/data/pdfs/1774.pdf"
+  },
+  {
+    "id": 1787,
+    "type": "Clinical Image",
+    "title": "Myxoma of the Ovary",
+    "authors": [
+      {
+        "name": "Recep Bedir",
+        "affiliation": "Department of Pathology, Recep Tayyip Erdoğan University School of Medicine, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Rukiye Yılmaz",
+        "affiliation": "Department of Pathology, Recep Tayyip Erdoğan University School of Medicine, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Salih Calapoğlu",
+        "affiliation": "Department of Pediatric Surgery, Recep Tayyip Erdoğan University School of Medicine, Rize, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Myxomas are benign tumors that generally arise from the heart, soft tissues, muscle, skin and bone (1). Herein we present a myxoma case found on the ovary. A 12-year-old girl was under follow-up for menstrual irregularities for 1 year and pelvic ultrasonography revealed bilateral para-ovarian simple semisolid lesions. Pelvic magnetic resonance imaging was pe",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0842",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "120-121",
+    "views": 6757,
+    "downloads": 9841,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1787",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1787",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1787",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1787",
+    "localPdfUrl": "js/data/pdfs/1787.pdf",
+    "pdfUrl": "js/data/pdfs/1787.pdf"
+  },
+  {
+    "id": 1791,
+    "type": "Letter to the Editor",
+    "title": "A Rare Cause of Reversible Splenial Lesion Syndrome: A Case Report with Epilepsy",
+    "authors": [
+      {
+        "name": "Bilge Piri Çınar",
+        "affiliation": "Clinic of Neurology, Health Sciences University, Samsun Training and Research Hospital, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Handan Akar",
+        "affiliation": "Clinic of Neurology, Health Sciences University, Samsun Training and Research Hospital, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Abdullah Taylan",
+        "affiliation": "Clinic of Radiology, Health Sciences University, Samsun Training and Research Hospital, Samsun, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Reversible splenial lesion syndrome is rare but should be considered when lesions are detected in splenium of the corpus callosum in epileptic patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\tReversible splenial lesion syndrome is rare but should be considered when lesions are detected in splenium of the corpus callosum in epileptic patients.\r\n<hr size=\"1\" color=\"#f2f2f2\"></hr> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Reversible splenial lesion syndrome is rare but should be considered when lesions are detected in splenium of the corpus callosum in epileptic patients.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0733",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "1",
+    "pages": "122-123",
+    "views": 5876,
+    "downloads": 9475,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1239",
+    "sourceArticleId": "1791",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1791",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1791",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1791",
+    "localPdfUrl": "js/data/pdfs/1791.pdf",
+    "pdfUrl": "js/data/pdfs/1791.pdf"
+  }
+]

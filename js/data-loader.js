@@ -102,11 +102,10 @@
         if (!res.ok) throw new Error(res.status);
         return res.text();
       }).then(function (html) {
-        if (html && html.indexOf('<section') !== -1) {
-          fullTextCache[id] = html;
-          return html;
-        }
-        return null;
+        var text = String(html || '').trim();
+        if (!text) return null;
+        fullTextCache[id] = text;
+        return text;
       });
     },
 

@@ -1,0 +1,957 @@
+[
+  {
+    "id": 2517,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2517",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2517",
+    "localPdfUrl": "js/data/pdfs/2517.pdf",
+    "pdfUrl": "js/data/pdfs/2517.pdf"
+  },
+  {
+    "id": 2518,
+    "type": "Editorial",
+    "title": "Keeping the Journal in the Second Quarter: What Are We Doing and What Will We Do?",
+    "authors": [
+      {
+        "name": "Servet Altay",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "The yearly Journal Citation Reports (JCR) 2022 update was made available by Clarivate on June 28, 2023. The JCR report for this year revealed a general reduction in the rising impact factor of journals, which was caused by the increased scientific publication of the COVID-19 pandemic.1 Last year, Balkan Medical Journal became a second-quarter journal for the",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.03072023",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "232-233",
+    "views": 5227,
+    "downloads": 3548,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2518",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2518",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2518",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2518",
+    "localPdfUrl": "js/data/pdfs/2518.pdf",
+    "pdfUrl": "js/data/pdfs/2518.pdf"
+  },
+  {
+    "id": 2498,
+    "type": "Editorial",
+    "title": "Lipoprotein (a): A Novel Cardiovascular Risk Factor",
+    "authors": [
+      {
+        "name": "Miriam Kozarova",
+        "affiliation": "4th Department of Internal Medicine, Medical Faculty P.J. Safarik University, Košice, Slovakia",
+        "orcid": ""
+      },
+      {
+        "name": "Antonia Lackova",
+        "affiliation": "Neurologic Department, L. Pasteur University Hospital, Košice, Slovakia",
+        "orcid": ""
+      },
+      {
+        "name": "Zuzana Kozelova",
+        "affiliation": "4th Department of Internal Medicine, Medical Faculty P.J. Safarik University, Košice, Slovakia",
+        "orcid": ""
+      },
+      {
+        "name": "Ladislav Tomco",
+        "affiliation": "Department of Epidemiology, Medical Faculty, P.J. Safarik University, Kosice, Slovakia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Lipoprotein (a) (Lp[a]) was first described by Professor Berg 60 years ago,1 however, the biological function of Lp(a) in humans is still not precisely elucidated. Lp(a) is a low-density lipoprotein (LDL-C)-like particle (Figure 1) produced by the liver in which a single apolipoprotein B100 is covalently linked to a single apolipoprotein (a) in a 1:1 ratio.2",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-4-8",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "234-235",
+    "views": 5802,
+    "downloads": 4921,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2498",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2498",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2498",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2498",
+    "localPdfUrl": "js/data/pdfs/2498.pdf",
+    "pdfUrl": "js/data/pdfs/2498.pdf"
+  },
+  {
+    "id": 2516,
+    "type": "Invited Review",
+    "title": "Current Status and Surgical Technique for Restorative Proctocolectomy with Ileal Pouch Anal Anastomosis",
+    "authors": [
+      {
+        "name": "Melik Kağan Aktaş",
+        "affiliation": "Department of General Surgery, Acıbadem Mehmet Ali Aydınlar University, Atakent Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Gülmez",
+        "affiliation": "Inflammatory Bowel Disease Center, NYU Langone Health, NYU Grossman School of Medicine, New York, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Anıl Sahar",
+        "affiliation": "Department of General Surgery, Acıbadem Mehmet Ali Aydınlar University, Atakent Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Can Saraçoğlu",
+        "affiliation": "Department of General Surgery, Acıbadem Mehmet Ali Aydınlar University, Atakent Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Eren Esen",
+        "affiliation": "Inflammatory Bowel Disease Center, NYU Langone Health, NYU Grossman School of Medicine, New York, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Erman Aytaç",
+        "affiliation": "Department of General Surgery, Acıbadem Mehmet Ali Aydınlar University, Atakent Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Feza H. Remzi",
+        "affiliation": "Inflammatory Bowel Disease Center, NYU Langone Health, NYU Grossman School of Medicine, New York, USA",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Restorative proctocolectomy with ileal pouch-anal anastomosis (RP/IPAA) is the procedure of choice for patients with ulcerative colitis (UC), some patients with colonic Crohn’s disease (CD), and those with familial adenomatous polyposis (FAP); albeit, owing to its complexity, it should be performed by experienced professionals. RP/IPAA is the recommended surgical treatment for UC when the standard medical therapy is ineffective. This procedure has been demonstrated to provide patients with a good quality of life, such as in FAP patients with extensive disease in the rectum. The CD has been associated with higher rates of perianal involvement and disease recurrence, but some patients with CD limited to the large intestine and minimal perianal or ileal disease may also be considered for this operation. First, all patients undergo a detailed preoperative evaluation that includes a review of previous imaging, pathology, and colonoscopy findings, a perianal examination, an evaluation of the anorectal functions, mechanical bowel preparation, and prophylaxis against deep venous thrombosis and infectious complications. A staged approach is the most commonly preferred technique for RP/IPAA, which can be performed in 2 or 3 stages. The IPAA can be performed by laparoscopic, robotic, or open approach. The type of approach is determined based on the patient’s condition, medication used, elective or emergency setting, and the surgeon’s expertise level. A successful IPAA requires tension-free pouch anastomosis. The most common IPAA pouch types are the J or S pouches; alternatively, an H pouch may be created, which is mainly used in redo pouches. In experienced centers, > 95% of the patients become stoma-free in 10 years. IPAA is a complex procedure, and the complications after pouch surgery are pouchitis, pelvic sepsis, pouch failure, or anastomotic stricture. The majority of long-term complications can be prevented in such cases with a comprehensive preoperative evaluation and through the use of appropriate surgical techniques and postoperative care conducted at experienced centers. The techniques for performing RP/IPAA with their long-term outcomes have been reviewed in this article.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Restorative proctocolectomy with ileal pouch-anal anastomosis (RP/IPAA) is the procedure of choice for patients with ulcerative colitis (UC), some patients with colonic Crohn&rsquo;s disease (CD), and those with familial adenomatous polyposis (FAP); albeit, owing to its complexity, it should be performed by experienced professionals. RP/IPAA is the recommended surgical treatment for UC when the standard medical therapy is ineffective. This procedure has been demonstrated to provide patients with a good quality of life, such as in FAP patients with extensive disease in the rectum. The CD has been associated with higher rates of perianal involvement and disease recurrence, but some patients with CD limited to the large intestine and minimal perianal or ileal disease may also be considered for this operation.&nbsp; First, all patients undergo a detailed preoperative evaluation that includes a review of previous imaging, pathology, and colonoscopy findings, a perianal examination, an evaluation of the anorectal functions, mechanical bowel preparation, and prophylaxis against deep venous thrombosis&nbsp; and infectious complications. A staged approach is the most commonly preferred technique for RP/IPAA, which can be performed in 2 or 3 stages. The IPAA can be performed by laparoscopic, robotic, or open approach. The type of approach is determined based on the patient&rsquo;s condition, medication used, elective or emergency setting, and the surgeon&rsquo;s expertise level. A successful IPAA requires tension-free pouch anastomosis. The most common IPAA pouch types are the J or S pouches; alternatively, an H pouch may be created, which is mainly used in redo pouches. In experienced centers, &gt; 95% of the patients become stoma-free in 10 years. IPAA is a complex procedure, and the complications after pouch surgery are pouchitis, pelvic sepsis, pouch failure, or anastomotic stricture. The majority of long-term complications can be prevented in such cases with a comprehensive preoperative evaluation and through the use of appropriate surgical techniques and postoperative care conducted at experienced centers. The techniques for performing RP/IPAA with their long-term outcomes have been reviewed in this article.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Restorative proctocolectomy with ileal pouch-anal anastomosis (RP/IPAA) is the procedure of choice for patients with ulcerative colitis (UC), some patients with colonic Crohn’s disease (CD), and those with familial adenomatous polyposis (FAP); albeit, owing to its complexity, it should be performed by experienced professionals. RP/IPAA is the recommended surgical treatment for UC when the standard medical therapy is ineffective. This procedure has been demonstrated to provide patients with a good quality of life, such as in FAP patients with extensive disease in the rectum. The CD has been associated with higher rates of perianal involvement and disease recurrence, but some patients with CD limited to the large intestine and minimal perianal or ileal disease may also be considered for this operation. First, all patients undergo a detailed preoperative evaluation that includes a review of previous imaging, pathology, and colonoscopy findings, a perianal examination, an evaluation of the anorectal functions, mechanical bowel preparation, and prophylaxis against deep venous thrombosis and infectious complications. A staged approach is the most commonly preferred technique for RP/IPAA, which can be performed in 2 or 3 stages. The IPAA can be performed by laparoscopic, robotic, or open approach. The type of approach is determined based on the patient’s condition, medication used, elective or emergency setting, and the surgeon’s expertise level. A successful IPAA requires tension-free pouch anastomosis. The most common IPAA pouch types are the J or S pouches; alternatively, an H pouch may be created, which is mainly used in redo pouches. In experienced centers, > 95% of the patients become stoma-free in 10 years. IPAA is a complex procedure, and the complications after pouch surgery are pouchitis, pelvic sepsis, pouch failure, or anastomotic stricture. The majority of long-term complications can be prevented in such cases with a comprehensive preoperative evaluation and through the use of appropriate surgical techniques and postoperative care conducted at experienced centers. The techniques for performing RP/IPAA with their long-term outcomes have been reviewed in this article.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-5-12",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "236-243",
+    "views": 7418,
+    "downloads": 6427,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2516",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2516",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2516",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2516",
+    "localPdfUrl": "js/data/pdfs/2516.pdf",
+    "pdfUrl": "js/data/pdfs/2516.pdf"
+  },
+  {
+    "id": 2511,
+    "type": "Original Article",
+    "title": "Sepsis-induced Coagulopathy Subphenotype Identification by Latent Class Analysis",
+    "authors": [
+      {
+        "name": "Dan Cai",
+        "affiliation": "Department of Critical Care Medicine, West China Hospital, Sichuan University, Sichuan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Massimiliano Greco",
+        "affiliation": "Biomedical Sciences, Humanitas University, Pieve Emanuele, Italy; Department of Anesthesia and Intensive Care, IRCCS Humanitas Research Hospital, Milan, Italy",
+        "orcid": ""
+      },
+      {
+        "name": "Qin Wu",
+        "affiliation": "Department of Critical Care Medicine, West China Hospital, Sichuan University, Sichuan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yisong Cheng",
+        "affiliation": "Department of Critical Care Medicine, West China Hospital, Sichuan University, Sichuan, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Recent studies have shown that anticoagulant therapy has heterogeneous treatment effects on patients with sepsis-induced coagulopathy (SIC).Aims: To identify the latent phenotypes of patients with SIC.Study design: Retrospective cohort study.Methods: We obtained data of patients with SIC from the Medical Information Mart for Intensive Care IV database. SIC subphenotypes were identified by latent class analysis (LCA) and K-means clustering. Clinical and laboratory variables were obtained in patients who met the diagnostic criteria for SIC. The baseline characteristics of the patients and the association between the heterogeneity of anticoagulant therapy and clinical outcomes (28-day and in-hospital mortality) were compared between the subphenotypes.Results: We identified 4,993 patients with SIC. The LCA and K-means clustering analysis robustly identified three subphenotypes of SIC. Class 1 patients (n = 1,808) had the lowest blood cell counts (leukocytes, erythrocytes, and platelets). Class 2 patients (n = 1,157) had severe coagulopathy with a high prothrombin time and international normalized ratio, multiple-organ dysfunction, high lactate, sequential organ failure assessment score, and mortality. Class 3 (n = 2,028) were older, had more comorbidities, a higher fibrinogen concentration, and lower plasma and platelet infusion rates. After variable adjustments, heparin therapy reduced the 28-day mortality (odds ratio [OR] 0.39, 0.30-0.49, p < 0.001) and in-hospital mortality (OR 0.42, 0.33-0.53, p < 0.001) only in class 2.Conclusion: Three SIC subphenotypes were defined using clinical findings and laboratory variables. The effects of heparin treatment differ between the subphenotypes. This finding will facilitate the identification of target patients with SIC who should receive anticoagulant therapy.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Recent studies have shown that anticoagulant therapy has heterogeneous treatment effects on patients with sepsis-induced coagulopathy (SIC).<br /><strong>Aims:</strong> To identify the latent phenotypes of patients with SIC.<br /><strong>Study design:</strong> Retrospective cohort study.<br /><strong>Methods:</strong> We obtained data of patients with SIC from the Medical Information Mart for Intensive Care IV database. SIC subphenotypes were identified by latent class analysis (LCA) and K-means clustering. Clinical and laboratory variables were obtained in patients who met the diagnostic criteria for SIC. The baseline characteristics of the patients and the association between the heterogeneity of anticoagulant therapy and clinical outcomes (28-day and in-hospital mortality) were compared between the subphenotypes.<br /><strong>Results:</strong> We identified 4,993 patients with SIC. The LCA and K-means clustering analysis robustly identified three subphenotypes of SIC. Class 1 patients (n = 1,808) had the lowest blood cell counts (leukocytes, erythrocytes, and platelets). Class 2 patients (n = 1,157) had severe coagulopathy with a high prothrombin time and international normalized ratio, multiple-organ dysfunction, high lactate, sequential organ failure assessment score, and mortality. Class 3 (n = 2,028) were older, had more comorbidities, a higher fibrinogen concentration, and lower plasma and platelet infusion rates. After variable adjustments, heparin therapy reduced the 28-day mortality (odds ratio [OR] 0.39, 0.30-0.49, <em>p</em> &lt; 0.001) and in-hospital mortality (OR 0.42, 0.33-0.53, <em>p</em> &lt; 0.001) only in class 2.<br /><strong>Conclusion:</strong> Three SIC subphenotypes were defined using clinical findings and laboratory variables. The effects of heparin treatment differ between the subphenotypes. This finding will facilitate the identification of target patients with SIC who should receive anticoagulant therapy.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Recent studies have shown that anticoagulant therapy has heterogeneous treatment effects on patients with sepsis-induced coagulopathy (SIC).Aims: To identify the latent phenotypes of patients with SIC.Study design: Retrospective cohort study.Methods: We obtained data of patients with SIC from the Medical Information Mart for Intensive Care IV database. SIC subphenotypes were identified by latent class analysis (LCA) and K-means clustering. Clinical and laboratory variables were obtained in patients who met the diagnostic criteria for SIC. The baseline characteristics of the patients and the association between the heterogeneity of anticoagulant therapy and clinical outcomes (28-day and in-hospital mortality) were compared between the subphenotypes.Results: We identified 4,993 patients with SIC. The LCA and K-means clustering analysis robustly identified three subphenotypes of SIC. Class 1 patients (n = 1,808) had the lowest blood cell counts (leukocytes, erythrocytes, and platelets). Class 2 patients (n = 1,157) had severe coagulopathy with a high prothrombin time and international normalized ratio, multiple-organ dysfunction, high lactate, sequential organ failure assessment score, and mortality. Class 3 (n = 2,028) were older, had more comorbidities, a higher fibrinogen concentration, and lower plasma and platelet infusion rates. After variable adjustments, heparin therapy reduced the 28-day mortality (odds ratio [OR] 0.39, 0.30-0.49, p < 0.001) and in-hospital mortality (OR 0.42, 0.33-0.53, p < 0.001) only in class 2.Conclusion: Three SIC subphenotypes were defined using clinical findings and laboratory variables. The effects of heparin treatment differ between the subphenotypes. This finding will facilitate the identification of target patients with SIC who should receive anticoagulant therapy.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-4-6",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "244-251",
+    "views": 7061,
+    "downloads": 6668,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2511",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2511",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2511",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2511",
+    "localPdfUrl": "js/data/pdfs/2511.pdf",
+    "pdfUrl": "js/data/pdfs/2511.pdf"
+  },
+  {
+    "id": 2492,
+    "type": "Original Article",
+    "title": "Mutational Spectrum and Genotype-phenotype Correlations in Neurofibromatosis Type 1 Patients from North Macedonia: Identification of Ten Novel NF1 Pathogenic Variants",
+    "authors": [
+      {
+        "name": "Marija Gjorgjievska",
+        "affiliation": "Research Centre for Genetic Engineering and Biotechnology “Georgi D. Efremov”, Macedonian Academy of Science and Arts, Skopje, North Macedonia",
+        "orcid": ""
+      },
+      {
+        "name": "Gjorgji Bozhinovski",
+        "affiliation": "Research Centre for Genetic Engineering and Biotechnology “Georgi D. Efremov”, Macedonian Academy of Science and Arts, Skopje, North Macedonia",
+        "orcid": ""
+      },
+      {
+        "name": "Elena Sukarova-Angelovska",
+        "affiliation": "Medical Faculty, University Ss. Cyril and Methodius Skopje, University Children’s Hospital, Skopje, North Macedonia",
+        "orcid": ""
+      },
+      {
+        "name": "Mirjana Kocova",
+        "affiliation": "Medical Faculty, University Ss. Cyril and Methodius Skopje, University Children’s Hospital, Skopje, North Macedonia",
+        "orcid": ""
+      },
+      {
+        "name": "Lejla Muaremoska Kanzoska",
+        "affiliation": "Medical Faculty, University Ss. Cyril and Methodius Skopje, University Children’s Hospital, Skopje, North Macedonia",
+        "orcid": ""
+      },
+      {
+        "name": "Dijana Plaseska-Karanfilska",
+        "affiliation": "Research Centre for Genetic Engineering and Biotechnology “Georgi D. Efremov”, Macedonian Academy of Science and Arts, Skopje, North Macedonia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Neurofibromatosis type 1 (NF1) is an autosomal dominant neurocutaneous disorder, characterized by multiple café-au-lait macules, axillary and inguinal freckling, tumors of the nervous system, and iris hamartomas. More than 3,100 different pathogenic variants have been reported in the NF1 gene, including missense, nonsense, frameshift, in-frame, splicing, and large deletions.Aims: To determine the NF1 mutational spectrum in patients with NF1 from the Republic of North Macedonia.Study Design: A cohort study.Methods: Molecular analyses included reverse transcription and cDNA sequencing of the NF1 gene and next-generation sequencing using the TruSight Cancer panel, along with the multiple ligation probe amplification method to detect single nucleotide variants and copy number variations. Direct DNA sequencing was also used for the family member analysis.Results: Our 9-year study of patients suspected of having NF1 in the Republic of North Macedonia encompassed molecular characterization of 30 cases of the disease. We identified 28 unique pathogenic NF1 variants (NM_001042492.3), of which ten were novel: c.208delA; c.341_364del; c.1480_1481delTT; c.2325+1G>C; c.2495_2496dupAC; c.2533_2541del; c.4517delC; c.5844C>G; c.6971delA; c.7605_7606delGAinsAT. In addition to the variant spectrum analysis, our research revealed two positive genotype-phenotype correlations. One between the clinical manifestation of cognitive impairment and gross deletions in the NF1 gene, and the other between cognitive impairment and truncating variants located in the RAS-GAP functional domain.Conclusion: This is the first study of NF1 patients in the Republic of North Macedonia, and it contributes ten novel variants to the global spectrum of pathogenic NF1 variants. It also corroborates the crucial importance of NF1 genetic testing for a prompt and precise diagnosis, particularly in younger patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Neurofibromatosis type 1 (NF1) is an autosomal dominant neurocutaneous disorder, characterized by multiple caf&eacute;-au-lait macules, axillary and inguinal freckling, tumors of the nervous system, and iris hamartomas. More than 3,100 different pathogenic variants have been reported in the <em>NF1</em> gene, including missense, nonsense, frameshift, in-frame, splicing, and large deletions.<br /><strong>Aims:</strong> To determine the <em>NF1</em> mutational spectrum in patients with NF1 from the Republic of North Macedonia.<br /><strong>Study Design:</strong> A cohort study.<br /><strong>Methods:</strong> Molecular analyses included reverse transcription and cDNA sequencing of the <em>NF1</em> gene and next-generation sequencing using the TruSight Cancer panel, along with the multiple ligation probe amplification method to detect single nucleotide variants and copy number variations. Direct DNA sequencing was also used for the family member analysis.<br /><strong>Results:</strong> Our 9-year study of patients suspected of having NF1 in the Republic of North Macedonia encompassed molecular characterization of 30 cases of the disease. We identified 28 unique pathogenic <em>NF1</em> variants (NM_001042492.3), of which ten were novel: c.208delA; c.341_364del; c.1480_1481delTT; c.2325+1G&gt;C; c.2495_2496dupAC; c.2533_2541del; c.4517delC; c.5844C&gt;G; c.6971delA; c.7605_7606delGAinsAT. In addition to the variant spectrum analysis, our research revealed two positive genotype-phenotype correlations. One between the clinical manifestation of cognitive impairment and gross deletions in the <em>NF1</em> gene, and the other between cognitive impairment and truncating variants located in the RAS-GAP functional domain.<br /><strong>Conclusion:</strong> This is the first study of NF1 patients in the Republic of North Macedonia, and it contributes ten novel variants to the global spectrum of pathogenic <em>NF1</em> variants. It also corroborates the crucial importance of <em>NF1</em> genetic testing for a prompt and precise diagnosis, particularly in younger patients.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Neurofibromatosis type 1 (NF1) is an autosomal dominant neurocutaneous disorder, characterized by multiple café-au-lait macules, axillary and inguinal freckling, tumors of the nervous system, and iris hamartomas. More than 3,100 different pathogenic variants have been reported in the NF1 gene, including missense, nonsense, frameshift, in-frame, splicing, and large deletions.Aims: To determine the NF1 mutational spectrum in patients with NF1 from the Republic of North Macedonia.Study Design: A cohort study.Methods: Molecular analyses included reverse transcription and cDNA sequencing of the NF1 gene and next-generation sequencing using the TruSight Cancer panel, along with the multiple ligation probe amplification method to detect single nucleotide variants and copy number variations. Direct DNA sequencing was also used for the family member analysis.Results: Our 9-year study of patients suspected of having NF1 in the Republic of North Macedonia encompassed molecular characterization of 30 cases of the disease. We identified 28 unique pathogenic NF1 variants (NM_001042492.3), of which ten were novel: c.208delA; c.341_364del; c.1480_1481delTT; c.2325+1G>C; c.2495_2496dupAC; c.2533_2541del; c.4517delC; c.5844C>G; c.6971delA; c.7605_7606delGAinsAT. In addition to the variant spectrum analysis, our research revealed two positive genotype-phenotype correlations. One between the clinical manifestation of cognitive impairment and gross deletions in the NF1 gene, and the other between cognitive impairment and truncating variants located in the RAS-GAP functional domain.Conclusion: This is the first study of NF1 patients in the Republic of North Macedonia, and it contributes ten novel variants to the global spectrum of pathogenic NF1 variants. It also corroborates the crucial importance of NF1 genetic testing for a prompt and precise diagnosis, particularly in younger patients.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2022-12-28",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "252-261",
+    "views": 7525,
+    "downloads": 4930,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2492",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2492",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2492",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2492",
+    "localPdfUrl": "js/data/pdfs/2492.pdf",
+    "pdfUrl": "js/data/pdfs/2492.pdf"
+  },
+  {
+    "id": 2493,
+    "type": "Original Article",
+    "title": "Perceived Need for Mental Health Services Among Healthcare Workers During the Coronavirus Disease-19 Pandemic in Turkey: A Multicenter Cross-sectional Study",
+    "authors": [
+      {
+        "name": "Abdulsamet Sandal",
+        "affiliation": "Clinic of Occupational Diseases, Ankara Gazi Mustafa Kemal Occupational and Environmental Diseases Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Karadoğan",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Recep Tayyip Erdoğan University, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tahsin Gökhan Telatar",
+        "affiliation": "Department of Public Health, Faculty of Medicine, Recep Tayyip Erdoğan University, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Abdurrahman Kotan",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Recep Tayyip Erdoğan University, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Esin Bilgin Konyalıhatipoğlu",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Recep Tayyip Erdoğan University, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Merve Yumrukuz Şenel",
+        "affiliation": "Clinic of Chest Diseases, Balıkesir State Hospital, Balıkesir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Damla Karadeniz Güven",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Khurshud Hüseynova",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burcu Yalçın",
+        "affiliation": "Clinic of Chest Diseases, Amasya Merzifon Karamustafa Paşa State Hospital, Amasya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pelin Asfuroğlu",
+        "affiliation": "Department of Pediatric Pulmonology, Faculty of Medicine, Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuğba Ramaslı Gürsoy",
+        "affiliation": "Department of Pediatric Pulmonology, Faculty of Medicine, Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuğba Şişmanlar Eyüboğlu",
+        "affiliation": "Department of Pediatric Pulmonology, Faculty of Medicine, Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatma Gülsüm Karakaş",
+        "affiliation": "Department of Chest Diseases, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neslihan Köse",
+        "affiliation": "Clinic of Chest Diseases, Bilecik Training and Research Hospital, Bilecik, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kaan Kara",
+        "affiliation": "Clinic of Chest Diseases, Yedikule Chest Diseases and Thoracic Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selman Çelik",
+        "affiliation": "Department of Nursing, Faculty of Health Sciences, Yeditepe University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ceren İlgar",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Ufuk University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aycan Yüksel",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Ufuk University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neşe Merve Güner Zırıh",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Recep Tayyip Erdoğan University, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İnci Selimoğlu",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Recep Tayyip Erdoğan University, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pınar Yıldız Gülhan",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Düzce University, Düzce, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Merve Erçelik",
+        "affiliation": "Clinic of Chest Diseases, Afyonkarahisar Dinar State Hospital, Afyonkarahisar, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahu Cerit Çakır",
+        "affiliation": "Clinic of Chest Diseases, İstanbul Bahçelievler State Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nazlı Çetin",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Pamukkale University, Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İlknur Kaya",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Kütahya Health Sciences University, Kütahya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selen Karaoğlanoğlu",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Ordu University, Ordu, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Feride Marım",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Kütahya Health Sciences University, Kütahya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ümran Özden Sertçelik",
+        "affiliation": "Clinic of Chest Diseases, Ankara City Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kübra Uyar Er",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Recep Tayyip Erdoğan University, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neslihan Özçelik",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Recep Tayyip Erdoğan University, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özlem Ataoğlu",
+        "affiliation": "Clinic of Chest Diseases, Düzce Atatürk State Hospital, Düzce, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ökkeş Gültekin",
+        "affiliation": "Clinic of Chest Diseases, Erzurum Oltu State Hospital, Erzurum, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aslıhan Banu Er",
+        "affiliation": "Clinic of Chest Diseases, Uşak University Training and Research Hospital, Uşak, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Metin Akgün[[23,24]] </d",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The coronavirus disease-2019 pandemic has contributed to work-related psychosocial risks in healthcare workers.Aims: To evaluate the perceived need for mental health services and related factors in Turkish healthcare workers practicing in pandemic hospitals.Study Design: Cross-sectional study.Methods: Data were collected from face-to-face interviews with healthcare workers at 19 pandemic hospitals in 13 provinces between September and November 2021. The study survey included the evaluation of the perceived need for and utilization of mental health services in the previous year, as well as sociodemographic, health-related, and work-related characteristics, the General Health Questionnaire-12, the World Health Organization Quality of Life-BREF (WHOQoL-BREF) questionnaire, and the Fear of coronavirus disease-2019 scale (FCV-19S).Results: Of 1,556 participants, 522 (33.5%) reported a perceived need for mental health services, but only 133 (8.5%) reported receiving these services. Multiple logistic regression analysis of the perceived need for mental health services revealed significant relationships with lower age, female sex, being a current smoker, having a chronic disease, having a mental disorder, coronavirus disease-2019 contact within the last three months in settings other than the home or workplace, a positive coronavirus disease-2019 vaccination history, being a physician, being a non-physician healthcare professional, and coronavirus disease-2019 contact within the last three months at work. After adjustment for these characteristics, higher General Health Questionnaire-12 and FCV-19S scores and lower WHOQoL-BREF domain scores were related to the perceived need for mental health services in logistic regression analyses.Conclusion: The findings indicate a substantial need for mental health services amongst Turkish healthcare workers during the pandemic and outline participants’ characteristics regarding high-priority groups for the intervention. Future research may focus on developing actions and evaluating their efficiency.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The coronavirus disease-2019 pandemic has contributed to work-related psychosocial risks in healthcare workers.<br /><strong>Aims:</strong> To evaluate the perceived need for mental health services and related factors in Turkish healthcare workers&nbsp; practicing in pandemic hospitals.<br /><strong>Study Design:</strong> Cross-sectional study.<br /><strong>Methods:</strong> Data were collected from face-to-face interviews with healthcare workers at 19 pandemic hospitals in 13 provinces between September and November 2021. The study survey included the evaluation of the perceived need for and utilization of mental health services in the previous year, as well as sociodemographic, health-related, and work-related characteristics, the General Health Questionnaire-12, the World Health Organization Quality of Life-BREF (WHOQoL-BREF) questionnaire, and the Fear of coronavirus disease-2019 scale (FCV-19S).<br /><strong>Results:</strong> Of 1,556 participants, 522 (33.5%) reported a perceived need for mental health services, but only 133 (8.5%) reported receiving these services. Multiple logistic regression analysis of the perceived need for mental health services revealed significant relationships with lower age, female sex, being a current smoker, having a chronic disease, having a mental disorder, coronavirus disease-2019 contact within the last three months in settings other than the home or workplace, a positive coronavirus disease-2019 vaccination history, being a physician, being a non-physician healthcare professional, and coronavirus disease-2019 contact within the last three months at work. After adjustment for these characteristics, higher General Health Questionnaire-12 and FCV-19S scores and lower WHOQoL-BREF domain scores were related to the perceived need for mental health services in logistic regression analyses.<br /><strong>Conclusion:</strong> The findings indicate a substantial need for mental health services amongst Turkish healthcare workers during the pandemic and outline participants&rsquo; characteristics regarding high-priority groups for the intervention. Future research may focus on developing actions and evaluating their efficiency.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The coronavirus disease-2019 pandemic has contributed to work-related psychosocial risks in healthcare workers.Aims: To evaluate the perceived need for mental health services and related factors in Turkish healthcare workers practicing in pandemic hospitals.Study Design: Cross-sectional study.Methods: Data were collected from face-to-face interviews with healthcare workers at 19 pandemic hospitals in 13 provinces between September and November 2021. The study survey included the evaluation of the perceived need for and utilization of mental health services in the previous year, as well as sociodemographic, health-related, and work-related characteristics, the General Health Questionnaire-12, the World Health Organization Quality of Life-BREF (WHOQoL-BREF) questionnaire, and the Fear of coronavirus disease-2019 scale (FCV-19S).Results: Of 1,556 participants, 522 (33.5%) reported a perceived need for mental health services, but only 133 (8.5%) reported receiving these services. Multiple logistic regression analysis of the perceived need for mental health services revealed significant relationships with lower age, female sex, being a current smoker, having a chronic disease, having a mental disorder, coronavirus disease-2019 contact within the last three months in settings other than the home or workplace, a positive coronavirus disease-2019 vaccination history, being a physician, being a non-physician healthcare professional, and coronavirus disease-2019 contact within the last three months at work. After adjustment for these characteristics, higher General Health Questionnaire-12 and FCV-19S scores and lower WHOQoL-BREF domain scores were related to the perceived need for mental health services in logistic regression analyses.Conclusion: The findings indicate a substantial need for mental health services amongst Turkish healthcare workers during the pandemic and outline participants’ characteristics regarding high-priority groups for the intervention. Future research may focus on developing actions and evaluating their efficiency.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2022-12-5",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "262-270",
+    "views": 6126,
+    "downloads": 4129,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2493",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2493",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2493",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2493",
+    "localPdfUrl": "js/data/pdfs/2493.pdf",
+    "pdfUrl": "js/data/pdfs/2493.pdf"
+  },
+  {
+    "id": 2507,
+    "type": "Original Article",
+    "title": "Body Mass Index Growth Curves for Birth to 24 Months Children in Ankara with RefCurv Software",
+    "authors": [
+      {
+        "name": "Eda Çakmak",
+        "affiliation": "Department of Audiology, Faculty of Health Sciences Başkent University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serhat Kılıç",
+        "affiliation": "Department of Pediatrics, Faculty of Medicine, Başkent University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pınar Özdemir",
+        "affiliation": "Department of Biostatistics, Faculty of Medicine, Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ergun Karaağaoğlu",
+        "affiliation": "Department of Biostatistics, Faculty of Medicine, Lokman Hekim University, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: It is important to monitor the development of infants and children during their growth period. Various anthropometric parameters of children are measured at regular intervals after birth, and their general health and nutrition and physiological needs are assessed based on these measurements.Aims: To construct the current body mass index (BMI) percentiles and compare them with the literature reports and World Health Organisation (WHO) data.Study Design: Cross-sectional study.Methods: This study is a cross-sectional research on 1,345 boys and 1,364 girls of age ranging from 0 to 24 months; their BMIs were measured at the Başkent University Hospital from January 2018-December 2021. The BMI growth curves for either gender were constructed according to the LMS method by using RefCurv 0.4.2. software. The “gamlss” package was employed for the selection of model parameters in fitting the BMI growth curves, and the model performance was evaluated with reference to the generalized Akaike information criterion (GAIC).Results: According to gender, smoothed BMI growth curves were constructed in the 3rd-97th percentiles. The model adequacy of the fitted growth curves was evaluated with the worm plot. The fit of the BMI model to the data was found to be sufficient, with 95% of the BMI values occurring between two elliptic curves.Conclusion: The study shows a slight increase in BMI percentile values obtained by gender compared to WHO standards.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> It is important to monitor the development of infants and children during their growth period. Various anthropometric parameters of children are measured at regular intervals after birth, and their general health and nutrition and physiological needs are assessed based on these measurements.<br /><strong>Aims:</strong> To construct the current body mass index (BMI) percentiles and compare them with the literature reports and World Health Organisation (WHO) data.<br /><strong>Study Design:</strong> Cross-sectional study.<br /><strong>Methods:</strong> This study is a cross-sectional research on 1,345 boys and 1,364 girls of age ranging from 0 to 24 months; their BMIs were measured at the Başkent University Hospital from January 2018-December 2021. The BMI growth curves for either gender were constructed according to the LMS method by using RefCurv 0.4.2. software. The &ldquo;<em>gamlss</em>&rdquo; package was employed for the selection of model parameters in fitting the BMI growth curves, and the model performance was evaluated with reference to the generalized Akaike information criterion (GAIC).<br /><strong>Results:</strong> According to gender, smoothed BMI growth curves were constructed in the 3<sup>rd</sup>-97<sup>th</sup> percentiles. The model adequacy of the fitted growth curves was evaluated with the worm plot. The fit of the BMI model to the data was found to be sufficient, with 95% of the BMI values occurring between two elliptic curves.<br /><strong>Conclusion:</strong> The study shows a slight increase in BMI percentile values obtained by gender compared to WHO standards.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: It is important to monitor the development of infants and children during their growth period. Various anthropometric parameters of children are measured at regular intervals after birth, and their general health and nutrition and physiological needs are assessed based on these measurements.Aims: To construct the current body mass index (BMI) percentiles and compare them with the literature reports and World Health Organisation (WHO) data.Study Design: Cross-sectional study.Methods: This study is a cross-sectional research on 1,345 boys and 1,364 girls of age ranging from 0 to 24 months; their BMIs were measured at the Başkent University Hospital from January 2018-December 2021. The BMI growth curves for either gender were constructed according to the LMS method by using RefCurv 0.4.2. software. The “gamlss” package was employed for the selection of model parameters in fitting the BMI growth curves, and the model performance was evaluated with reference to the generalized Akaike information criterion (GAIC).Results: According to gender, smoothed BMI growth curves were constructed in the 3rd-97th percentiles. The model adequacy of the fitted growth curves was evaluated with the worm plot. The fit of the BMI model to the data was found to be sufficient, with 95% of the BMI values occurring between two elliptic curves.Conclusion: The study shows a slight increase in BMI percentile values obtained by gender compared to WHO standards.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-3-31",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "271-278",
+    "views": 7063,
+    "downloads": 4534,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2507",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2507",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2507",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2507",
+    "localPdfUrl": "js/data/pdfs/2507.pdf",
+    "pdfUrl": "js/data/pdfs/2507.pdf"
+  },
+  {
+    "id": 2502,
+    "type": "Original Article",
+    "title": "Cord Blood Hematological Parameters of Fetuses Detected Different Thalassemia Genotypes in the Second Trimester of Pregnancy",
+    "authors": [
+      {
+        "name": "Ebru Dündar Yenilmez",
+        "affiliation": "Department of Medical Biochemistry, Faculty of Medicine, Çukurova University, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Abdullah Tuli",
+        "affiliation": "Department of Medical Biochemistry, Faculty of Medicine, Çukurova University, Adana, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Hemoglobinopathies are the most common inherited diseases in humans resulting from impaired globin chain synthesis of hemoglobin. The progression of thalassemia rates is prevented with prenatal screening methods.Aims: To evaluate the hematological parameters of α- and β-thalassemia and normal fetuses aged 17-25 weeks of gestation.Study Design: A cross-sectional study.Methods: Pregnant women who underwent cordocentesis in the second trimester because of the risk of having a baby with thalassemia were included in the study. Hematological indices and molecular DNA methods were analyzed from the cord blood samples of 129 women who were 17-25 weeks into pregnancy. The HPLC method was used for Hb fraction analysis. Amplification refractory mutation system, restriction enzyme analysis, multiplex polymerase chain reaction, and sequencing methods were used for the molecular analysis. Maternal contamination was eliminated by the short tandem repeat method.Results: In total, 112 of the fetuses carry α- and β-thalassemia heterozygous or homozygous (α: 37, β: 58, mixed: 17) and 17 fetuses had a normal genotype for thalassemia. Significant differences in adult hemoglobin (HbA), fetal hemoglobin (HbF), Hb Barts, MCV, MCH, and RDW were detected in three groups compared with the normal group (p < 0.001, except for RBC, Hb, HCT, and MCHC). Differences in HbF, Hb Barts, MCV, MCH, and RDW were observed in the α-thalassemia groups compared with the normal group (p < 0.001). Among the five β-thalassemia subgroups, only HbA and RDW were different from the normal group (p < 0.001).Conclusion: This study could be a good reference for future studies and prenatal diagnostic applications in emphasizing the importance of changes in the blood parameters of fetuses before molecular genotyping. These hematological data give valuable information to clinicians about the fetus to enlighten families in making appropriate decisions during prenatal diagnosis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Hemoglobinopathies are the most common inherited diseases in humans resulting from impaired globin chain synthesis of hemoglobin. The progression of thalassemia rates is prevented with prenatal screening methods.<br /><strong>Aims:</strong> To evaluate the hematological parameters of &alpha;- and &beta;-thalassemia and normal fetuses aged 17-25 weeks of gestation.<br /><strong>Study Design:</strong> A cross-sectional study.<br /><strong>Methods:</strong> Pregnant women who underwent cordocentesis in the second trimester because of the risk of having a baby with thalassemia were included in the study. Hematological indices and molecular DNA methods were analyzed from the cord blood samples of 129 women who were 17-25 weeks into pregnancy. The HPLC method was used for Hb fraction analysis. Amplification refractory mutation system, restriction enzyme analysis, multiplex polymerase chain reaction, and sequencing methods were used for the molecular analysis. Maternal contamination was eliminated by the short tandem repeat method.<br /><strong>Results:</strong> In total, 112 of the fetuses carry &alpha;- and &beta;-thalassemia heterozygous or homozygous (&alpha;: 37, &beta;: 58, mixed: 17)&nbsp;&nbsp; and 17 fetuses had a normal genotype for thalassemia. Significant differences in adult hemoglobin (HbA), fetal hemoglobin (HbF), Hb Barts, MCV, MCH, and RDW were detected in three groups compared with the normal group (p &lt; 0.001, except for RBC, Hb, HCT, and MCHC). Differences in HbF, Hb Barts, MCV, MCH, and RDW were observed in the &alpha;-thalassemia groups compared with the normal group (p &lt; 0.001). Among the five &beta;-thalassemia subgroups, only HbA and RDW were different from the normal group (p &lt; 0.001).<br /><strong>Conclusion:</strong> This study could be a good reference for future studies and prenatal diagnostic applications in emphasizing the importance of changes in the blood parameters of fetuses before molecular genotyping. These hematological data give valuable information to clinicians about the fetus to enlighten families in making appropriate decisions during prenatal diagnosis.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Hemoglobinopathies are the most common inherited diseases in humans resulting from impaired globin chain synthesis of hemoglobin. The progression of thalassemia rates is prevented with prenatal screening methods.Aims: To evaluate the hematological parameters of α- and β-thalassemia and normal fetuses aged 17-25 weeks of gestation.Study Design: A cross-sectional study.Methods: Pregnant women who underwent cordocentesis in the second trimester because of the risk of having a baby with thalassemia were included in the study. Hematological indices and molecular DNA methods were analyzed from the cord blood samples of 129 women who were 17-25 weeks into pregnancy. The HPLC method was used for Hb fraction analysis. Amplification refractory mutation system, restriction enzyme analysis, multiplex polymerase chain reaction, and sequencing methods were used for the molecular analysis. Maternal contamination was eliminated by the short tandem repeat method.Results: In total, 112 of the fetuses carry α- and β-thalassemia heterozygous or homozygous (α: 37, β: 58, mixed: 17) and 17 fetuses had a normal genotype for thalassemia. Significant differences in adult hemoglobin (HbA), fetal hemoglobin (HbF), Hb Barts, MCV, MCH, and RDW were detected in three groups compared with the normal group (p < 0.001, except for RBC, Hb, HCT, and MCHC). Differences in HbF, Hb Barts, MCV, MCH, and RDW were observed in the α-thalassemia groups compared with the normal group (p < 0.001). Among the five β-thalassemia subgroups, only HbA and RDW were different from the normal group (p < 0.001).Conclusion: This study could be a good reference for future studies and prenatal diagnostic applications in emphasizing the importance of changes in the blood parameters of fetuses before molecular genotyping. These hematological data give valuable information to clinicians about the fetus to enlighten families in making appropriate decisions during prenatal diagnosis.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-1-86",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "279-286",
+    "views": 6228,
+    "downloads": 3987,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2502",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2502",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2502",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2502",
+    "localPdfUrl": "js/data/pdfs/2502.pdf",
+    "pdfUrl": "js/data/pdfs/2502.pdf"
+  },
+  {
+    "id": 2510,
+    "type": "Original Article",
+    "title": "Combination of Rituximab and Low-dose Tacrolimus in the Treatment of Refractory Membranous Nephropathy: A Retrospective Cohort Study",
+    "authors": [
+      {
+        "name": "Xian Chen",
+        "affiliation": "Department of Nephrology, The Second Hospital of Hebei Medical University, Shijiazhuang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Sumin Jiao",
+        "affiliation": "Department of Nephrology, The Second Hospital of Hebei Medical University, Shijiazhuang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Shaomei Li",
+        "affiliation": "Department of Nephrology, The Second Hospital of Hebei Medical University, Shijiazhuang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Juan Li",
+        "affiliation": "Department of Nephrology, The Second Hospital of Hebei Medical University, Shijiazhuang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Pei Li",
+        "affiliation": "Department of Nephrology, The Second Hospital of Hebei Medical University, Shijiazhuang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Fang Song",
+        "affiliation": "Department of Nephrology, The Second Hospital of Hebei Medical University, Shijiazhuang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Zhe Yan",
+        "affiliation": "Department of Nephrology, The Second Hospital of Hebei Medical University, Shijiazhuang, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Conventional regimens for refractory idiopathic membranous nephropathy (IMN) still have limitations. Rituximab (RTX) has a good effect in the treatment of refractory IMN. However, whether RTX single or combined with immunosuppressive therapy is more effective and whether adverse events will increase are still inconclusive.Aims: To investigate the efficacy and safety of RTX combined with low-dose tacrolimus (TAC) versus RTX alone in the treatment of refractory IMN.Study Design: A retrospective cohort study.Methods: We retrospectively studied 91 cases of refractory IMN diagnosed between January 2018 and June 2021, all of which immunosuppressive regimens had failed. Thirty-four patients received RTX combined with TAC (RTX + TAC group), and 57 patients were treated with RTX alone (RTX group). The RTX + TAC group was given RTX 1 g once every 2 weeks, two times, and TAC 0.03 mg/kg/day orally. In the RTX group, RTX was given at the same dosage as the RTX + TAC group. Clinical data were collected at 12 months of follow-up to compare the complete and partial remission rates and the incidence of adverse reactions between the two groups.Results: The overall effectiveness rate of RTX + TAC in the treatment of refractory IMN was 87.14%, of which the partial and complete remission rates were 50.01% and 37.13%, respectively, and the median time to complete remission was 9 (interquartile range [IQR] 6.0, 12.0) months. The overall effectiveness rate of RTX was 65.87%, of which the partial and complete remission rates were 39.48% and 26.39%, respectively, and the median time to complete remission was 10.5 (IQR 6.0, 12.0) months. Adverse events occurred in 6 (17.65%) patients in the RTX + TAC group and in 11 (19.30%) in the RTX group (P = 0.473). Proteinuria and high titer of PLA2R are risk factors for non-remission.Conclusion: The complete and partial remission rates of RTX combined with low-dose TAC in the treatment of refractory IMN are higher than those of RTX alone, and no significant increase in adverse events was noted.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Conventional regimens for refractory idiopathic membranous nephropathy (IMN) still have limitations. Rituximab (RTX) has a good effect in the treatment of refractory IMN. However, whether RTX single or combined with immunosuppressive therapy is more effective and whether adverse events will increase are still inconclusive.<br /><strong>Aims:</strong> To investigate the efficacy and safety of RTX combined with low-dose tacrolimus (TAC) versus RTX alone in the treatment of refractory IMN.<br /><strong>Study Design:</strong> A retrospective cohort study.<br /><strong>Methods:</strong> We retrospectively studied 91 cases of refractory IMN diagnosed between January 2018 and June 2021, all of which immunosuppressive regimens had failed. Thirty-four patients received RTX combined with TAC (RTX + TAC group), and 57 patients were treated with RTX alone (RTX group). The RTX + TAC group was given RTX 1 g once every 2 weeks, two times, and TAC 0.03 mg/kg/day orally. In the RTX group, RTX was given at the same dosage as the RTX + TAC group. Clinical data were collected at 12 months of follow-up to compare the complete and partial remission rates and the incidence of adverse reactions between the two groups.<br /><strong>Results:</strong> The overall effectiveness rate of RTX + TAC in the treatment of refractory IMN was 87.14%, of which the partial and complete remission rates were 50.01% and 37.13%, respectively, and the median time to complete remission was 9 (interquartile range [IQR] 6.0, 12.0) months. The overall effectiveness rate of RTX was 65.87%, of which the partial and complete remission rates were 39.48% and 26.39%, respectively, and the median time to complete remission was 10.5 (IQR 6.0, 12.0) months. Adverse events occurred in 6 (17.65%) patients in the RTX + TAC group and in 11 (19.30%) in the RTX group (<em>P</em> = 0.473). Proteinuria and high titer of PLA2R are risk factors for non-remission.<br /><strong>Conclusion:</strong> The complete and partial remission rates of RTX combined with low-dose TAC in the treatment of refractory IMN are higher than those of RTX alone, and no significant increase in adverse events was noted.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Conventional regimens for refractory idiopathic membranous nephropathy (IMN) still have limitations. Rituximab (RTX) has a good effect in the treatment of refractory IMN. However, whether RTX single or combined with immunosuppressive therapy is more effective and whether adverse events will increase are still inconclusive.Aims: To investigate the efficacy and safety of RTX combined with low-dose tacrolimus (TAC) versus RTX alone in the treatment of refractory IMN.Study Design: A retrospective cohort study.Methods: We retrospectively studied 91 cases of refractory IMN diagnosed between January 2018 and June 2021, all of which immunosuppressive regimens had failed. Thirty-four patients received RTX combined with TAC (RTX + TAC group), and 57 patients were treated with RTX alone (RTX group). The RTX + TAC group was given RTX 1 g once every 2 weeks, two times, and TAC 0.03 mg/kg/day orally. In the RTX group, RTX was given at the same dosage as the RTX + TAC group. Clinical data were collected at 12 months of follow-up to compare the complete and partial remission rates and the incidence of adverse reactions between the two groups.Results: The overall effectiveness rate of RTX + TAC in the treatment of refractory IMN was 87.14%, of which the partial and complete remission rates were 50.01% and 37.13%, respectively, and the median time to complete remission was 9 (interquartile range [IQR] 6.0, 12.0) months. The overall effectiveness rate of RTX was 65.87%, of which the partial and complete remission rates were 39.48% and 26.39%, respectively, and the median time to complete remission was 10.5 (IQR 6.0, 12.0) months. Adverse events occurred in 6 (17.65%) patients in the RTX + TAC group and in 11 (19.30%) in the RTX group (P = 0.473). Proteinuria and high titer of PLA2R are risk factors for non-remission.Conclusion: The complete and partial remission rates of RTX combined with low-dose TAC in the treatment of refractory IMN are higher than those of RTX alone, and no significant increase in adverse events was noted.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2022-9-7",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "287-293",
+    "views": 6901,
+    "downloads": 5036,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2510",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2510",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2510",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2510",
+    "localPdfUrl": "js/data/pdfs/2510.pdf",
+    "pdfUrl": "js/data/pdfs/2510.pdf"
+  },
+  {
+    "id": 2494,
+    "type": "Clinical Image",
+    "title": "Hairy Esophagus",
+    "authors": [
+      {
+        "name": "İdris Kurt[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 77-year-old male patient who had a history of hypertension, ischemic heart disease, Alzheimer’s disease, partial gastrectomy secondary to gastric ulcer, and total laryngectomy was admitted to the gastroenterology department for melena. Previously, he was hospitalized in another healthcare facility because of non-ST elevated myocardial infarction. Coronary ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-2-86",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "294-295",
+    "views": 5909,
+    "downloads": 3081,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2494",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2494",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2494",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2494",
+    "localPdfUrl": "js/data/pdfs/2494.pdf",
+    "pdfUrl": "js/data/pdfs/2494.pdf"
+  },
+  {
+    "id": 2503,
+    "type": "Clinical Image",
+    "title": "Solitary Metachronous Chest Wall Metastasis of a Clear-cell Renal Cell Carcinoma 13 Years after Radical Nephrectomy",
+    "authors": [
+      {
+        "name": "Chendong He",
+        "affiliation": "Department of Radiology, The First Affiliated Hospital of Bengbu Medical College, Anhui, China; Graduate School of Bengbu Medical College, Anhui, China",
+        "orcid": ""
+      },
+      {
+        "name": "Wei Yang",
+        "affiliation": "Department of Radiology, Jiangsu Province Hospital of Chinese Medicine & Affiliated Hospital of Nanjing University of Chinese Medicine, Jiangsu, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 64-year-old woman was presented with a 1-month history of abnormal vaginal bleeding. The pathological examination confirmed cervical squamous cell carcinoma. The patient had a medical history of right nephrectomy for clear-cell renal carcinoma (ccRCC) 13 years ago, with no evidence of metastasis at the time. In the intervening years, the patient underwent ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-4-46",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "296-297",
+    "views": 5467,
+    "downloads": 3840,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2503",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2503",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2503",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2503",
+    "localPdfUrl": "js/data/pdfs/2503.pdf",
+    "pdfUrl": "js/data/pdfs/2503.pdf"
+  },
+  {
+    "id": 2506,
+    "type": "Clinical Image",
+    "title": "Germinoma Misdiagnosed as Lymphocytic Hypophysitis",
+    "authors": [
+      {
+        "name": "Serdar Şahin",
+        "affiliation": "Department of Endocrinology and Metabolism, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ozan Başkurt",
+        "affiliation": "Department of Neurosurgery, İstinye University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nil Çomunoğlu",
+        "affiliation": "Department of Pathology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pınar Kadıoğlu",
+        "affiliation": "Department of Endocrinology and Metabolism, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurperi Gazioğlu",
+        "affiliation": "Department of Neurosurgery, İstinye University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 34-year-old male patient with decreased libido, visual disturbance, and intermittent severe headache was referred to our Pituitary Center. Endocrinological evaluation at presentation revealed panhypopituitarism and hyperprolactinemia (Table 1). Despite appropriate hormone replacement therapy, his symptoms persisted. Ophthalmologic examination revealed decr",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-3-60",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "298-299",
+    "views": 5260,
+    "downloads": 4038,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2506",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2506",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2506",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2506",
+    "localPdfUrl": "js/data/pdfs/2506.pdf",
+    "pdfUrl": "js/data/pdfs/2506.pdf"
+  },
+  {
+    "id": 2499,
+    "type": "Scientific Letter",
+    "title": "Epithelioid Osteoblastoma Combined with Aneurysmal Bone Cyst Originating from the Right Temporal Bone and the Greater Wing of the Sphenoid Bone",
+    "authors": [
+      {
+        "name": "Peng An",
+        "affiliation": "Department of Radiology, Xiangyang No. 1 People’s Hospital, Hubei University of Medicine, Xiangyang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ping Gao",
+        "affiliation": "Department of Radiology, Xiangyang No. 1 People’s Hospital, Hubei University of Medicine, Xiangyang, China; Depatment of Radiology, Hubei Clinical Research Center of Parkinson’s Disease, Xiangyang Key Laboratory of Movement Disorders, Xiangyang No. 1 People’s Hospital, Hubei University of Medicine, Hubei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jiaozhi Liu",
+        "affiliation": "Department of Radiology, Xiangyang No. 1 People’s Hospital, Hubei University of Medicine, Xiangyang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Guoyan Feng",
+        "affiliation": "Department of Internal Medicine, Xiangyang No. 1 People’s Hospital, Hubei University of Medicine, Xiangyang, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 16-year-old girl was presented to our hospital for neurosurgical treatment because of headache and dizziness. These symptoms developed spontaneously and worsened within 2 weeks without prior trauma. Physical examination and the patient’s medical history were otherwise unremarkable. The initial laboratory testing was normal. Further diagnostic workup reveal",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-4-2",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "300-302",
+    "views": 5668,
+    "downloads": 4392,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2499",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2499",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2499",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2499",
+    "localPdfUrl": "js/data/pdfs/2499.pdf",
+    "pdfUrl": "js/data/pdfs/2499.pdf"
+  },
+  {
+    "id": 2509,
+    "type": "Letter to the Editor",
+    "title": "Comment on",
+    "authors": [
+      {
+        "name": "Aritra Goswami",
+        "affiliation": "Department of Anesthesiology, Pain Medicine and Critical Care Medicine, R. G. Kar Medical College and Hospital, West Bengal, India",
+        "orcid": ""
+      },
+      {
+        "name": "Dipasri Bhattacharya",
+        "affiliation": "Department of Anesthesiology, Pain Medicine and Critical Care Medicine, R. G. Kar Medical College and Hospital, West Bengal, India",
+        "orcid": ""
+      },
+      {
+        "name": "Mohanchandra Mandal",
+        "affiliation": "Department of Anesthesiology, Institute of Post Graduate Medical Education and Research, West Bengal, India",
+        "orcid": ""
+      },
+      {
+        "name": "Antonio Esquinas Rodriguez",
+        "affiliation": "Intensive Care Unit, Hospital Morales, Murcia, Spain",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the editor, We have read with much enthusiasm the article of Hancı et al.1 who have analyzed respiratory rate oxygenation (ROX) index dynamics in patients receiving high-flow nasal oxygen (HFNO) for the treatment of acute respiratory failure in the background of severe acute respiratory syndrome-coronavirus-2 infection. While congratulating the authors fo",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-4-52",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "303-304",
+    "views": 5256,
+    "downloads": 3143,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2509",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2509",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2509",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2509",
+    "localPdfUrl": "js/data/pdfs/2509.pdf",
+    "pdfUrl": "js/data/pdfs/2509.pdf"
+  },
+  {
+    "id": 2508,
+    "type": "Letter to the Editor",
+    "title": "In Response to",
+    "authors": [
+      {
+        "name": "Pervin Hancı",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, We would like to express our gratitude to the author of the letter for their insightful comments and valuable suggestions regarding our article titled ROX index Dynamics According to High Flow Nasal Cannula Success in Intensive Care Unit Patients with COVID-19 Related Acute Respiratory Failure.1 We appreciate the opportunity to address the rai",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-4-52.response",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "305-306",
+    "views": 5293,
+    "downloads": 3386,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2508",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2508",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2508",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2508",
+    "localPdfUrl": "js/data/pdfs/2508.pdf",
+    "pdfUrl": "js/data/pdfs/2508.pdf"
+  },
+  {
+    "id": 2519,
+    "type": "Erratum",
+    "title": "Erratum",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "The ethical committee information was not included during the publication process in the article titled \"A Digital Opportunity for Patients to Manage Their Health: Turkey National Personal Health Record System (The e-Nabız)\" by Şuayip Birinci, which was published in the May 2023 issue of the Balkan Medical Journal (Balkan Med J.; 2023; 40(3):215-21, DOI: 10.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.0706",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "4",
+    "pages": "307-307",
+    "views": 4636,
+    "downloads": 3303,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1285",
+    "sourceArticleId": "2519",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2519",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2519",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2519",
+    "localPdfUrl": "js/data/pdfs/2519.pdf",
+    "pdfUrl": "js/data/pdfs/2519.pdf"
+  }
+]

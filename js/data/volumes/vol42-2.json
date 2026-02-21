@@ -1,0 +1,980 @@
+[
+  {
+    "id": 2699,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2699",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2699",
+    "localPdfUrl": "js/data/pdfs/2699.pdf",
+    "pdfUrl": "js/data/pdfs/2699.pdf"
+  },
+  {
+    "id": 2690,
+    "type": "Editorial",
+    "title": "Advances and the Future of Skull Base Surgery",
+    "authors": [
+      {
+        "name": "Alperen Vural",
+        "affiliation": "Department of Otolaryngology-Head and Neck Surgery, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Marco Ferrari",
+        "affiliation": "Department of Neurosciences, Division of Otolaryngology-Head and Neck Surgery, University of Padova, Padova, Italy; Department of Otorhinolaryngology-Head and Neck Surgery, Azienda Ospedale-Università Padova, Padova, Italy",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Skull base surgery is a specialized field dedicated to managing complex lesions at the skull base, including tumors, inflammatory conditions, vascular malformations, and traumatic injuries. The intricate anatomy of this region, which contains essential neurovascular structures and delicate cranial nerves, presents significant surgical challenges.1 In recent ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025.180225",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "90-91",
+    "views": 4026,
+    "downloads": 1688,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2690",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2690",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2690",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2690",
+    "localPdfUrl": "js/data/pdfs/2690.pdf",
+    "pdfUrl": "js/data/pdfs/2690.pdf"
+  },
+  {
+    "id": 2691,
+    "type": "Editorial",
+    "title": "The Importance of Genetic Diagnosis in Rare Diseases",
+    "authors": [
+      {
+        "name": "Hakan Gürkan",
+        "affiliation": "Department of Medical Genetics, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Nihan Bilge Satkın",
+        "affiliation": "Department of Medical Genetics, Trakya University Faculty of Medicine, Edirne, Türkiye; Department of Genetics and Bioengineering, Trakya University Faculty of Engineering, Edirne, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Keywords : Hakan Gürkan",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<b>Keywords :</b>\t\tHakan Gürkan \t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Keywords : Hakan Gürkan",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-270125",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "92-93",
+    "views": 3630,
+    "downloads": 1972,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2691",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2691",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2691",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2691",
+    "localPdfUrl": "js/data/pdfs/2691.pdf",
+    "pdfUrl": "js/data/pdfs/2691.pdf"
+  },
+  {
+    "id": 2692,
+    "type": "Consensus Report",
+    "title": "Guideline for the Use of Natriuretic Peptides in the Early Diagnosis and Management of Heart Failure in Primary Care (Joint Consensus Report by the Eurasian Society of Heart Failure and the Turkish Association of Family Medicine)",
+    "authors": [
+      {
+        "name": "Ahmet Çelik",
+        "affiliation": "Department of Cardiology, Mersin University Faculty of Medicine, Mersin, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Güzin Zeren Öztürk",
+        "affiliation": "Clinic of Family Medicine, University of Health Sciences Türkiye, Şişli Hamidiye Etfal Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Yüksel Çavuşoğlu",
+        "affiliation": "Department of Cardiology, Osmangazi University Faculty of Medicine, Eskişehir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Cüneyt Ardıç",
+        "affiliation": "Department of Family Medicine, Recep Tayyip Erdoğan University Faculty of Medicine, Rize, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Sanem Nalbantgil",
+        "affiliation": "Department of Cardiology, Ege University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Seçil Arıca",
+        "affiliation": "Clinic of Family Medicine, University of Health Sciences Türkiye, Prof. Dr. Cemil Tascıoğlu City Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Temizhan",
+        "affiliation": "University of Health Sciences Türkiye, Ankara Bilkent City Hospital, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Altay",
+        "affiliation": "Department of Cardiology, Başkent University Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Birhan Yılmaz",
+        "affiliation": "Department of Cardiology, Dokuz Eylül University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Haluk Özsarı",
+        "affiliation": "0Department of Healthcare Management, İstanbul University-Cerrahpaşa Faculty of Health Sciences, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Ural",
+        "affiliation": "Department of Cardiology, Koç University Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Heart failure (HF) is a complex clinical condition associated with significant morbidity and mortality. Early diagnosis and effective management at the primary care level are essential for improving patient outcomes and reducing the burden on the healthcare systems. The Eurasian Society of HF and the Turkish Association of Family Medicine developed a guideline that underscores the critical role of natriuretic peptides (NPs) in the early detection, diagnosis, and management of HF. NPs, particularly the N-terminal pro-B-type NP, are a reliable biomarker for identifying HF, guiding treatment decisions, and monitoring disease progression. This guideline emphasizes the importance of measuring the levels of these peptides in primary care so as to detect individuals at risk, confirm the diagnosis of HF in symptomatic patients, and evaluate the treatment response. The recommended thresholds for NP levels account for variations arising from factors such as age, gender, and the presence of other health conditions. B-type natriuretic peptides (BNP) levels ≥ 35 pg/ml or N-terminus-proBNP levels ≥ 125 pg/ml are used to confirm the likelihood of HF in symptomatic patients, enabling timely diagnosis and appropriate intervention. Incorporating NP testing into routine clinical practice enables timely referrals and ensures appropriate management at all stages of HF. Beyond diagnosis, the measurement of NPs provides valuable information about treatment effectiveness and prognosis, allowing clinicians to individualize the treatment. By integrating NP testing into primary care, healthcare providers can facilitate early detection, optimize treatment strategies, and improve the quality of life for patients with or at risk of HF. Thus, this guideline highlights the essential role of primary care physicians in addressing the growing challenges of HF through the effective and evidence-based use of NPs.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Heart failure (HF) is a complex clinical condition associated with significant morbidity and mortality. Early diagnosis and effective management at the primary care level are essential for improving patient outcomes and reducing the burden on the healthcare systems. The Eurasian Society of HF and the Turkish Association of Family Medicine developed a guideline that underscores the critical role of natriuretic peptides (NPs) in the early detection, diagnosis, and management of HF. NPs, particularly the N-terminal pro-B-type NP, are a reliable biomarker for identifying HF, guiding treatment decisions, and monitoring disease progression. This guideline emphasizes the importance of measuring the levels of these peptides in primary care so as to detect individuals at risk, confirm the diagnosis of HF in symptomatic patients, and evaluate the treatment response. The recommended thresholds for NP levels account for variations arising from factors such as age, gender, and the presence of other health conditions. B-type natriuretic peptides (BNP) levels &ge; 35 pg/ml or N-terminus-proBNP levels &ge; 125 pg/ml are used to confirm the likelihood of HF in symptomatic patients, enabling timely diagnosis and appropriate intervention. Incorporating NP testing into routine clinical practice enables timely referrals and ensures appropriate management at all stages of HF. Beyond diagnosis, the measurement of NPs provides valuable information about treatment effectiveness and prognosis, allowing clinicians to individualize the treatment. By integrating NP testing into primary care, healthcare providers can facilitate early detection, optimize treatment strategies, and improve the quality of life for patients with or at risk of HF. Thus, this guideline highlights the essential role of primary care physicians in addressing the growing challenges of HF through the effective and evidence-based use of NPs.</p>\r\n<hr size=\"1\" color=\"#f2f2f2\"> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Heart failure (HF) is a complex clinical condition associated with significant morbidity and mortality. Early diagnosis and effective management at the primary care level are essential for improving patient outcomes and reducing the burden on the healthcare systems. The Eurasian Society of HF and the Turkish Association of Family Medicine developed a guideline that underscores the critical role of natriuretic peptides (NPs) in the early detection, diagnosis, and management of HF. NPs, particularly the N-terminal pro-B-type NP, are a reliable biomarker for identifying HF, guiding treatment decisions, and monitoring disease progression. This guideline emphasizes the importance of measuring the levels of these peptides in primary care so as to detect individuals at risk, confirm the diagnosis of HF in symptomatic patients, and evaluate the treatment response. The recommended thresholds for NP levels account for variations arising from factors such as age, gender, and the presence of other health conditions. B-type natriuretic peptides (BNP) levels ≥ 35 pg/ml or N-terminus-proBNP levels ≥ 125 pg/ml are used to confirm the likelihood of HF in symptomatic patients, enabling timely diagnosis and appropriate intervention. Incorporating NP testing into routine clinical practice enables timely referrals and ensures appropriate management at all stages of HF. Beyond diagnosis, the measurement of NPs provides valuable information about treatment effectiveness and prognosis, allowing clinicians to individualize the treatment. By integrating NP testing into primary care, healthcare providers can facilitate early detection, optimize treatment strategies, and improve the quality of life for patients with or at risk of HF. Thus, this guideline highlights the essential role of primary care physicians in addressing the growing challenges of HF through the effective and evidence-based use of NPs.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2024-12-110",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "94-107",
+    "views": 9702,
+    "downloads": 2465,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2692",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2692",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2692",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2692",
+    "localPdfUrl": "js/data/pdfs/2692.pdf",
+    "pdfUrl": "js/data/pdfs/2692.pdf"
+  },
+  {
+    "id": 2689,
+    "type": "Original Article",
+    "title": "Neurodevelopmental Impairments as Long-term Effects of Iron Deficiency in Early Childhood: A Systematic Review",
+    "authors": [
+      {
+        "name": "Jason Theola",
+        "affiliation": "Universitas Indonesia Faculty of Medicine, Jakarta, Indonesia",
+        "orcid": ""
+      },
+      {
+        "name": "Murti Andriastuti",
+        "affiliation": "Department of Child Health, Universitas Indonesia, Cipto Mangunkusumo Hospital, Jakarta, Indonesia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Numerous studies have reported neurodevelopmental disorders in children with a history of early-life iron deficiency (ID), though findings vary. Aims: To evaluate the long-term impact of early childhood ID on neurodevelopmental outcomes. Study Design: Systematic review. Methods: A literature search was conducted across five electronic databases (PubMed, Cochrane, Scopus, Sage, and Embase) using the keywords “iron deficiency anemia” and “infant.” The JBI critical appraisal tool for cohort studies was used to evaluate study quality. Results: Seventeen relevant cohort studies were identified through the systematic search. Of these, 14 were rated as high quality, while 3 were classified as moderate quality. The neurodevelopmental domains assessed included cognitive deficits (seven studies), motor deficits (four studies), verbal deficits (seven studies), behavioral deficits (nine studies), auditory function (one study), and neuroendocrine function (two studies). Conclusion: Early-life ID disrupts neurodevelopment, leading to persistent cognitive, motor, behavioral, and neuroendocrine impairments. Children with a history of early childhood ID demonstrate poorer cognitive, motor, and behavioral outcomes compared with their non-ID counterparts. Preventing ID within the first 1,000 days of life is essential to mitigate irreversible deficits in motor, cognitive, and behavioral functions.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Numerous studies have reported neurodevelopmental disorders in children with a history of early-life iron deficiency (ID), though findings vary.</p>\r\n<p><strong>Aims:</strong> To evaluate the long-term impact of early childhood ID on neurodevelopmental outcomes.</p>\r\n<p><strong>Study Design:</strong> Systematic review.</p>\r\n<p><strong>Methods:</strong> A literature search was conducted across five electronic databases (PubMed, Cochrane, Scopus, Sage, and Embase) using the keywords &ldquo;iron deficiency anemia&rdquo; and &ldquo;infant.&rdquo; The JBI critical appraisal tool for cohort studies was used to evaluate study quality.</p>\r\n<p><strong>Results:</strong> Seventeen relevant cohort studies were identified through the systematic search. Of these, 14 were rated as high quality, while 3 were classified as moderate quality. The neurodevelopmental domains assessed included cognitive deficits (seven studies), motor deficits (four studies), verbal deficits (seven studies), behavioral deficits (nine studies), auditory function (one study), and neuroendocrine function (two studies).</p>\r\n<p><strong>Conclusion:</strong> Early-life ID disrupts neurodevelopment, leading to persistent cognitive, motor, behavioral, and neuroendocrine impairments. Children with a history of early childhood ID demonstrate poorer cognitive, motor, and behavioral outcomes compared with their non-ID counterparts. Preventing ID within the first 1,000 days of life is essential to mitigate irreversible deficits in motor, cognitive, and behavioral functions.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Numerous studies have reported neurodevelopmental disorders in children with a history of early-life iron deficiency (ID), though findings vary. Aims: To evaluate the long-term impact of early childhood ID on neurodevelopmental outcomes. Study Design: Systematic review. Methods: A literature search was conducted across five electronic databases (PubMed, Cochrane, Scopus, Sage, and Embase) using the keywords “iron deficiency anemia” and “infant.” The JBI critical appraisal tool for cohort studies was used to evaluate study quality. Results: Seventeen relevant cohort studies were identified through the systematic search. Of these, 14 were rated as high quality, while 3 were classified as moderate quality. The neurodevelopmental domains assessed included cognitive deficits (seven studies), motor deficits (four studies), verbal deficits (seven studies), behavioral deficits (nine studies), auditory function (one study), and neuroendocrine function (two studies). Conclusion: Early-life ID disrupts neurodevelopment, leading to persistent cognitive, motor, behavioral, and neuroendocrine impairments. Children with a history of early childhood ID demonstrate poorer cognitive, motor, and behavioral outcomes compared with their non-ID counterparts. Preventing ID within the first 1,000 days of life is essential to mitigate irreversible deficits in motor, cognitive, and behavioral functions.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2024-11-24",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "108-120",
+    "views": 5845,
+    "downloads": 4810,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2689",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2689",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2689",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2689",
+    "localPdfUrl": "js/data/pdfs/2689.pdf",
+    "pdfUrl": "js/data/pdfs/2689.pdf"
+  },
+  {
+    "id": 2693,
+    "type": "Original Article",
+    "title": "Burden of Diseases Attributable to Low Physical Activity in the Middle East and North Africa: an Analysis Based on Global Burden of  Disease Study",
+    "authors": [
+      {
+        "name": "Mohsen Farrokhpour",
+        "affiliation": "Firouzgar Hospital, Department of Internal Medicine, School of Medicine, Iran University of Medical Sciences, Tehran, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Bijan Forogh",
+        "affiliation": "Neuromusculoskeletal Research Center, Department of Physical Medicine and Rehabilitation, School of Medicine, Iran University of Medical Sciences, Tehran, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Golsa Gholampour",
+        "affiliation": "School of Medicine, Hamadan University of Medical Sciences, Hamadan, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Seyed Aria Nejadghaderi",
+        "affiliation": "HIV/STI Surveillance Research Center, and WHO Collaborating Center for HIV Surveillance, Institute for Futures Studies in Health, Kerman University of Medical Sciences, Kerman, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Amirhossein Habibzadeh",
+        "affiliation": "School of Medicine, Tehran University of Medical Sciences, Tehran, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Amin Nakhostin-Ansari",
+        "affiliation": "Neuromusculoskeletal Research Center, Department of Physical Medicine and Rehabilitation, School of Medicine, Iran University of Medical Sciences, Tehran, Iran; School of Medicine, Tehran University of Medical Sciences, Tehran, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Homa Seyedmirzaei",
+        "affiliation": "Neuromusculoskeletal Research Center, Department of Physical Medicine and Rehabilitation, School of Medicine, Iran University of Medical Sciences, Tehran, Iran; Occupational Sleep Research Center, Baharloo Hospital, Tehran University of Medical Sciences, Tehran, Iran",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Research on low physical activity (LPA) in the Middle East and North Africa (MENA) region remains limited. Aims: To assess the disease burden associated with LPA using data from the Global Burden of Disease (GBD) study. Study Design: Longitudinal epidemiological study. Methods: GBD 2021 data were used to extract information on the burden of eight LPA-related conditions-breast cancer, chronic kidney disease, colorectal cancer, diabetes mellitus (DM), ischemic heart disease, lower extremity peripheral arterial disease, stroke, and tuberculosis-analyzed by age group, sex, country within MENA, and year (1990-2021). Results: The age-standardized disability-adjusted life year (DALY) rate for LPA-related diseases in MENA declined by 8.62%, from 431.84 per 100,000 people in 1990 to 394.64 per 100,000 in 2021. In 2021, Sudan (846.47 per 100,000), Iraq (630.29 per 100,000), and Afghanistan (626.88 per 100,000) recorded the highest age-standardized DALY rates. Across all age groups, females had higher DALY rates than males in both 1990 and 2021. Conclusion: Despite a recent decline, the MENA region continues to experience a greater LPA-attributable disease burden than the global average. The increasing contribution of DM and breast cancer highlights evolving trends, emphasizing the need for targeted interventions such as lifestyle promotion and improved access to health facilities.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Research on low physical activity (LPA) in the Middle East and North Africa (MENA) region remains limited.</p>\r\n<p><strong>Aims:</strong> To assess the disease burden associated with LPA using data from the Global Burden of Disease (GBD) study.</p>\r\n<p><strong>Study Design:</strong> Longitudinal epidemiological study.</p>\r\n<p><strong>Methods:</strong> GBD 2021 data were used to extract information on the burden of eight LPA-related conditions-breast cancer, chronic kidney disease, colorectal cancer, diabetes mellitus (DM), ischemic heart disease, lower extremity peripheral arterial disease, stroke, and tuberculosis-analyzed by age group, sex, country within MENA, and year (1990-2021).</p>\r\n<p><strong>Results:</strong> The age-standardized disability-adjusted life year (DALY) rate for LPA-related diseases in MENA declined by 8.62%, from 431.84 per 100,000 people in 1990 to 394.64 per 100,000 in 2021. In 2021, Sudan (846.47 per 100,000), Iraq (630.29 per 100,000), and Afghanistan (626.88 per 100,000) recorded the highest age-standardized DALY rates. Across all age groups, females had higher DALY rates than males in both 1990 and 2021.</p>\r\n<p><strong>Conclusion:</strong> Despite a recent decline, the MENA region continues to experience a greater LPA-attributable disease burden than the global average. The increasing contribution of DM and breast cancer highlights evolving trends, emphasizing the need for targeted interventions such as lifestyle promotion and improved access to health facilities.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Research on low physical activity (LPA) in the Middle East and North Africa (MENA) region remains limited. Aims: To assess the disease burden associated with LPA using data from the Global Burden of Disease (GBD) study. Study Design: Longitudinal epidemiological study. Methods: GBD 2021 data were used to extract information on the burden of eight LPA-related conditions-breast cancer, chronic kidney disease, colorectal cancer, diabetes mellitus (DM), ischemic heart disease, lower extremity peripheral arterial disease, stroke, and tuberculosis-analyzed by age group, sex, country within MENA, and year (1990-2021). Results: The age-standardized disability-adjusted life year (DALY) rate for LPA-related diseases in MENA declined by 8.62%, from 431.84 per 100,000 people in 1990 to 394.64 per 100,000 in 2021. In 2021, Sudan (846.47 per 100,000), Iraq (630.29 per 100,000), and Afghanistan (626.88 per 100,000) recorded the highest age-standardized DALY rates. Across all age groups, females had higher DALY rates than males in both 1990 and 2021. Conclusion: Despite a recent decline, the MENA region continues to experience a greater LPA-attributable disease burden than the global average. The increasing contribution of DM and breast cancer highlights evolving trends, emphasizing the need for targeted interventions such as lifestyle promotion and improved access to health facilities.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-1-20",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "121-129",
+    "views": 5380,
+    "downloads": 5017,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2693",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2693",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2693",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2693",
+    "localPdfUrl": "js/data/pdfs/2693.pdf",
+    "pdfUrl": "js/data/pdfs/2693.pdf"
+  },
+  {
+    "id": 2694,
+    "type": "Original Article",
+    "title": "Excess Mortality in Türkiye during 2020-2022: Regional and Time-Based Analysis",
+    "authors": [
+      {
+        "name": "Salih Keskin",
+        "affiliation": "Balıkesir Karesi Provincial Directorate of Health, Balıkesir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Gül Ergör",
+        "affiliation": "Department of Public Health, Dokuz Eylül University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The coronavirus disease-2019 (COVID-19) pandemic significantly impacted global mortality, albeit Türkiye has been largely excluded from mortality studies owing to delayed data release and a lack of nationwide analyses. Aims: To identify the excess mortality rates in Türkiye between 2020 and 2022, analyze the temporal trends and regional differences, and determine factors associated with excess deaths at the regional level. Study Design: A cross-sectional ecological analysis. Methods: We analyzed all-cause mortality data from the Turkish Statistical Institute from January 2015 to December 2022. The projected deaths during 2020-2022 were derived from Quasi-Poisson Regression models applied to the 2015-2019 provincial mortality data, adjusting for seasonal trends, population offsets, and overdispersion. The results were aggregated to national and socioeconomic levels for comparative analyses. Excess deaths were calculated as the difference between observed and projected deaths. P-scores and excess mortality per 100,000 inhabitants were utilized as standardized metrics. Socioeconomic disparities were examined using the Socioeconomic Development Ranking of Provinces and Regions (SEGE-2017). We assessed the associations between excess mortality and vaccination coverage, elderly population ratio, intensive care unit beds per 100,000 population, and population per family physician. Results: Türkiye experienced 247,640 excess deaths [95% confidence interval (CI): 176,405-315,204] from 2020 to 2022. Excess mortality peaked in 2021 with 121,426 excess deaths (27.2% P-score, 143.5 per 100,000 population). Lower vaccination coverage [estimate: -0.51, 95% CI: (-0.81, -0.20), p = 0.001] and higher population per family physician [estimate: 0.01, 95% CI: (0.00, 0.02), p = 0.005] were significantly associated with higher excess mortality. A higher elderly population ratio was positively associated with excess deaths [estimate: 1.41, 95% CI: (0.50, 2.32), p = 0.003]. Socioeconomically less developed regions (SEGE 5 and SEGE 6) exhibited higher P-scores (21.3% and 20.2%, respectively), indicating greater relative increases in mortality when compared with the relatively more developed regions. Conclusion: Excess mortality in Türkiye during the COVID-19 pandemic was substantial, particularly in 2021, and was influenced by regional socioeconomic disparities, vaccination coverage, and healthcare access. These findings underscore the importance of addressing sociodemographic factors and strengthening primary healthcare services in pandemic responses.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The coronavirus disease-2019 (COVID-19) pandemic significantly impacted global mortality, albeit T&uuml;rkiye has been largely excluded from mortality studies owing to delayed data release and a lack of nationwide analyses.</p>\r\n<p><strong>Aims:</strong> To identify the excess mortality rates in T&uuml;rkiye between 2020 and 2022, analyze the temporal trends and regional differences, and determine factors associated with excess deaths at the regional level.</p>\r\n<p><strong>Study Design:</strong> A cross-sectional ecological analysis.</p>\r\n<p><strong>Methods:</strong> We analyzed all-cause mortality data from the Turkish Statistical Institute from January 2015 to December 2022. The projected deaths during 2020-2022 were derived from Quasi-Poisson Regression models applied to the 2015-2019 provincial mortality data, adjusting for seasonal trends, population offsets, and overdispersion. The results were aggregated to national and socioeconomic levels for comparative analyses. Excess deaths were calculated as the difference between observed and projected deaths. P-scores and excess mortality per 100,000 inhabitants were utilized as standardized metrics. Socioeconomic disparities were examined using the Socioeconomic Development Ranking of Provinces and Regions (SEGE-2017). We assessed the associations between excess mortality and vaccination coverage, elderly population ratio, intensive care unit beds per 100,000 population, and population per family physician.</p>\r\n<p><strong>Results:</strong> T&uuml;rkiye experienced 247,640 excess deaths [95% confidence interval (CI): 176,405-315,204] from 2020 to 2022. Excess mortality peaked in 2021 with 121,426 excess deaths (27.2% P-score, 143.5 per 100,000 population). Lower vaccination coverage [estimate: -0.51, 95% CI: (-0.81, -0.20), <em>p</em> = 0.001] and higher population per family physician [estimate: 0.01, 95% CI: (0.00, 0.02), <em>p</em> = 0.005] were significantly associated with higher excess mortality. A higher elderly population ratio was positively associated with excess deaths [estimate: 1.41, 95% CI: (0.50, 2.32), <em>p</em> = 0.003]. Socioeconomically less developed regions (SEGE 5 and SEGE 6) exhibited higher P-scores (21.3% and 20.2%, respectively), indicating greater relative increases in mortality when compared with the relatively more developed regions.</p>\r\n<p><strong>Conclusion:</strong> Excess mortality in T&uuml;rkiye during the COVID-19 pandemic was substantial, particularly in 2021, and was influenced by regional socioeconomic disparities, vaccination coverage, and healthcare access. These findings underscore the importance of addressing sociodemographic factors and strengthening primary healthcare services in pandemic responses.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The coronavirus disease-2019 (COVID-19) pandemic significantly impacted global mortality, albeit Türkiye has been largely excluded from mortality studies owing to delayed data release and a lack of nationwide analyses. Aims: To identify the excess mortality rates in Türkiye between 2020 and 2022, analyze the temporal trends and regional differences, and determine factors associated with excess deaths at the regional level. Study Design: A cross-sectional ecological analysis. Methods: We analyzed all-cause mortality data from the Turkish Statistical Institute from January 2015 to December 2022. The projected deaths during 2020-2022 were derived from Quasi-Poisson Regression models applied to the 2015-2019 provincial mortality data, adjusting for seasonal trends, population offsets, and overdispersion. The results were aggregated to national and socioeconomic levels for comparative analyses. Excess deaths were calculated as the difference between observed and projected deaths. P-scores and excess mortality per 100,000 inhabitants were utilized as standardized metrics. Socioeconomic disparities were examined using the Socioeconomic Development Ranking of Provinces and Regions (SEGE-2017). We assessed the associations between excess mortality and vaccination coverage, elderly population ratio, intensive care unit beds per 100,000 population, and population per family physician. Results: Türkiye experienced 247,640 excess deaths [95% confidence interval (CI): 176,405-315,204] from 2020 to 2022. Excess mortality peaked in 2021 with 121,426 excess deaths (27.2% P-score, 143.5 per 100,000 population). Lower vaccination coverage [estimate: -0.51, 95% CI: (-0.81, -0.20), p = 0.001] and higher population per family physician [estimate: 0.01, 95% CI: (0.00, 0.02), p = 0.005] were significantly associated with higher excess mortality. A higher elderly population ratio was positively associated with excess deaths [estimate: 1.41, 95% CI: (0.50, 2.32), p = 0.003]. Socioeconomically less developed regions (SEGE 5 and SEGE 6) exhibited higher P-scores (21.3% and 20.2%, respectively), indicating greater relative increases in mortality when compared with the relatively more developed regions. Conclusion: Excess mortality in Türkiye during the COVID-19 pandemic was substantial, particularly in 2021, and was influenced by regional socioeconomic disparities, vaccination coverage, and healthcare access. These findings underscore the importance of addressing sociodemographic factors and strengthening primary healthcare services in pandemic responses.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-1-91",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "130-137",
+    "views": 4658,
+    "downloads": 2003,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2694",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2694",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2694",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2694",
+    "localPdfUrl": "js/data/pdfs/2694.pdf",
+    "pdfUrl": "js/data/pdfs/2694.pdf"
+  },
+  {
+    "id": 2695,
+    "type": "Original Article",
+    "title": "Burden of Substance Use Disorders in the Middle East and North Africa from 1990 to 2019",
+    "authors": [
+      {
+        "name": "Seyed Reza Darijani",
+        "affiliation": "School of Medicine, Tehran University of Medical Sciences, Tehran, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Homa Seyedmirzaei",
+        "affiliation": "Occupational Sleep Research Center, Baharloo Hospital, Tehran University of Medical Sciences, Tehran, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Amin Nakhostin-Ansari",
+        "affiliation": "Neuromusculoskeletal Research Center, Iran University of Medical Sciences, Tehran, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Iman Menbari-Oskouie",
+        "affiliation": "Urology Research Center, Tehran University of Medical Sciences, Tehran, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Amirhossein Ghaseminejad-Raeini",
+        "affiliation": "School of Medicine, Tehran University of Medical Sciences, Tehran, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Hadis Nasoori",
+        "affiliation": "Faculty of Pharmacy, Tehran University of Medical Sciences, Islamic Azad University, Tehran, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Amir Hossein Memari",
+        "affiliation": "Sport Medicine Research Center, Neuroscience Institute, Tehran University of Medical Sciences, Tehran, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Shahin Akhondzadeh",
+        "affiliation": "Research Center for War-affected People, Tehran University of Medical Sciences, Tehran, Iran; Psychiatric Research Center, Roozbeh Psychiatric Hospital, Tehran University of Medical Sciences, Tehran, Iran",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Studies on the burden and epidemiological aspects of substance-use disorders in the Middle East and North Africa (MENA) are limited. Aims: To evaluate the burden and epidemiology of substance-use disorders in MENA countries during 1990-2019. Study Design: Ecological study. Methods: Data from the global burden of disease study were used in the current study. The incidence, prevalence, mortality, years of life lost from mortality, years of healthy life lost due to disability, and disability-adjusted life years (DALY) rates attributable to each group of disorders across age groups, genders, years, and countries were retrieved along with their corresponding age-standardized values. Age-standardized DALYs rates of alcohol-use disorders, drug-use disorders, and substance-use disorders associated with sociodemographic index across MENA countries and over 30 years were examined. Results: The age-standardized DALY rate of substance-use disorders in MENA had risen from 190.1 in 1990 to 234.93 per 100,000 in 2019, indicating a 23.57% increase. In both genders, the DALY rate was highest in the 25-29-years age group in 2019 (440.81 per 100,000 in females and 645.97 per 100,000 in males). In addition, in 2019, age-standardized DALY rates of alcohol-use disorder were the highest in the United Arab Emirates (77.08 per 100,000), Afghanistan (67.77 per 100,000), and Bahrain (60.35 per 100,000). In almost all these countries, opioid-use disorder had the highest age-standardized DALY rate in 2019. Conclusion: The burden of substance-use disorders has increased from 1990 to 2019 in the MENA region in contrast to the global trend. This study findings highlight that the current interventions and laws implemented in this region to address drug trafficking and substance-use disorders may be insufficient and ineffective, warranting further international collaboration and implementation of more effective strategies to reduce the overall burden of substance-use disorders.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Studies on the burden and epidemiological aspects of substance-use disorders in the Middle East and North Africa (MENA) are limited.</p>\r\n<p><strong>Aims:</strong> To evaluate the burden and epidemiology of substance-use disorders in MENA countries during 1990-2019.</p>\r\n<p><strong>Study Design:</strong> Ecological study.</p>\r\n<p><strong>Methods:</strong> Data from the global burden of disease study were used in the current study. The incidence, prevalence, mortality, years of life lost from mortality, years of healthy life lost due to disability, and disability-adjusted life years (DALY) rates attributable to each group of disorders across age groups, genders, years, and countries were retrieved along with their corresponding age-standardized values. Age-standardized DALYs rates of alcohol-use disorders, drug-use disorders, and substance-use disorders associated with sociodemographic index across MENA countries and over 30 years were examined.</p>\r\n<p><strong>Results:</strong> The age-standardized DALY rate of substance-use disorders in MENA had risen from 190.1 in 1990 to 234.93 per 100,000 in 2019, indicating a 23.57% increase. In both genders, the DALY rate was highest in the 25-29-years age group in 2019 (440.81 per 100,000 in females and 645.97 per 100,000 in males). In addition, in 2019, age-standardized DALY rates of alcohol-use disorder were the highest in the United Arab Emirates (77.08 per 100,000), Afghanistan (67.77 per 100,000), and Bahrain (60.35 per 100,000). In almost all these countries, opioid-use disorder had the highest age-standardized DALY rate in 2019.</p>\r\n<p><strong>Conclusion:</strong> The burden of substance-use disorders has increased from 1990 to 2019 in the MENA region in contrast to the global trend. This study findings highlight that the current interventions and laws implemented in this region to address drug trafficking and substance-use disorders may be insufficient and ineffective, warranting further international collaboration and implementation of more effective strategies to reduce the overall burden of substance-use disorders.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Studies on the burden and epidemiological aspects of substance-use disorders in the Middle East and North Africa (MENA) are limited. Aims: To evaluate the burden and epidemiology of substance-use disorders in MENA countries during 1990-2019. Study Design: Ecological study. Methods: Data from the global burden of disease study were used in the current study. The incidence, prevalence, mortality, years of life lost from mortality, years of healthy life lost due to disability, and disability-adjusted life years (DALY) rates attributable to each group of disorders across age groups, genders, years, and countries were retrieved along with their corresponding age-standardized values. Age-standardized DALYs rates of alcohol-use disorders, drug-use disorders, and substance-use disorders associated with sociodemographic index across MENA countries and over 30 years were examined. Results: The age-standardized DALY rate of substance-use disorders in MENA had risen from 190.1 in 1990 to 234.93 per 100,000 in 2019, indicating a 23.57% increase. In both genders, the DALY rate was highest in the 25-29-years age group in 2019 (440.81 per 100,000 in females and 645.97 per 100,000 in males). In addition, in 2019, age-standardized DALY rates of alcohol-use disorder were the highest in the United Arab Emirates (77.08 per 100,000), Afghanistan (67.77 per 100,000), and Bahrain (60.35 per 100,000). In almost all these countries, opioid-use disorder had the highest age-standardized DALY rate in 2019. Conclusion: The burden of substance-use disorders has increased from 1990 to 2019 in the MENA region in contrast to the global trend. This study findings highlight that the current interventions and laws implemented in this region to address drug trafficking and substance-use disorders may be insufficient and ineffective, warranting further international collaboration and implementation of more effective strategies to reduce the overall burden of substance-use disorders.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2024-11-61",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "138-149",
+    "views": 8855,
+    "downloads": 2052,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2695",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2695",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2695",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2695",
+    "localPdfUrl": "js/data/pdfs/2695.pdf",
+    "pdfUrl": "js/data/pdfs/2695.pdf"
+  },
+  {
+    "id": 2696,
+    "type": "Original Article",
+    "title": "Upregulation of miR-99b-5p Modulates ESR1 Expression as an Adaptive Mechanism to Circumvent Drug Response via Facilitating ER/HER2 Crosstalk",
+    "authors": [
+      {
+        "name": "Senem Noyan",
+        "affiliation": "Biotechnology Institute, Ankara University, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Bala Gür Dedeoğlu",
+        "affiliation": "Biotechnology Institute, Ankara University, Ankara, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Endocrine resistance remains a significant therapeutic challenge in estrogen receptor-positive (ER+) breast cancer, the most common subtype, contributing to increased morbidity and mortality. The interaction between ER and HER family receptors, particularly HER2 and epidermal growth factor receptor (EGFR), drives resistance to standard therapies such as tamoxifen and trastuzumab by activating key signaling pathways, including PI3K/AKT and RAS/MAPK. Dysregulated miRNAs, which are non-coding gene expression regulators, have been linked to therapy response. Aims: To investigate the role of miR-99b-5p in ER-HER2/EGFR crosstalk in BT-474 cells. Study Design: Experimental study. Methods: The expression profile and prognostic significance of miR-99b-5p in breast cancer were analyzed using The Cancer Genome Atlas (TCGA) database. BT-474 cells were transfected with miR-99b-5p mimics and inhibitors, followed by treatment with tamoxifen and trastuzumab to assess their impact on cell proliferation and ER-HER2/EGFR crosstalk. Western blotting was performed to quantify EGFR, HER2, and ESR1 protein levels. Real-time proliferation analysis evaluated changes in cell growth following miRNA transfection and drug treatment. Results: The study revealed that miR-99b-5p is significantly overexpressed in tumors compared to normal tissues and is associated with poor patient survival and enhanced ER signaling. Transfection with miR-99b-5p mimics increased ESR1 expression and cell proliferation, even in the presence of tamoxifen or trastuzumab, indicating that miR-99b-5p contributes to therapy resistance through receptor crosstalk. Conversely, miR-99b-5p inhibition significantly restored drug sensitivity, reducing proliferation and enhancing the effectiveness of tamoxifen and trastuzumab. Conclusion: These findings establish miR-99b-5p as a key regulator of endocrine and HER2-targeted therapy resistance. Targeting miR-99b-5p could represent a potential therapeutic strategy to improve treatment outcomes in ER+/HER2+ breast cancer. Further research is needed to clarify the underlying molecular mechanisms and validate the therapeutic potential of miR-99b-5p inhibition in clinical applications.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Endocrine resistance remains a significant therapeutic challenge in estrogen receptor-positive (ER+) breast cancer, the most common subtype, contributing to increased morbidity and mortality. The interaction between ER and HER family receptors, particularly HER2 and epidermal growth factor receptor (EGFR), drives resistance to standard therapies such as tamoxifen and trastuzumab by activating key signaling pathways, including PI3K/AKT and RAS/MAPK. Dysregulated miRNAs, which are non-coding gene expression regulators, have been linked to therapy response.</p>\r\n<p><strong>Aims:</strong> To investigate the role of miR-99b-5p in ER-HER2/EGFR crosstalk in BT-474 cells.</p>\r\n<p><strong>Study Design:</strong> Experimental study.</p>\r\n<p><strong>Methods:</strong> The expression profile and prognostic significance of miR-99b-5p in breast cancer were analyzed using The Cancer Genome Atlas (TCGA) database. BT-474 cells were transfected with miR-99b-5p mimics and inhibitors, followed by treatment with tamoxifen and trastuzumab to assess their impact on cell proliferation and ER-HER2/EGFR crosstalk. Western blotting was performed to quantify EGFR, HER2, and ESR1 protein levels. Real-time proliferation analysis evaluated changes in cell growth following miRNA transfection and drug treatment.</p>\r\n<p><strong>Results:</strong> The study revealed that miR-99b-5p is significantly overexpressed in tumors compared to normal tissues and is associated with poor patient survival and enhanced ER signaling. Transfection with miR-99b-5p mimics increased ESR1 expression and cell proliferation, even in the presence of tamoxifen or trastuzumab, indicating that miR-99b-5p contributes to therapy resistance through receptor crosstalk. Conversely, miR-99b-5p inhibition significantly restored drug sensitivity, reducing proliferation and enhancing the effectiveness of tamoxifen and trastuzumab.</p>\r\n<p><strong>Conclusion:</strong> These findings establish miR-99b-5p as a key regulator of endocrine and HER2-targeted therapy resistance. Targeting miR-99b-5p could represent a potential therapeutic strategy to improve treatment outcomes in ER+/HER2+ breast cancer. Further research is needed to clarify the underlying molecular mechanisms and validate the therapeutic potential of miR-99b-5p inhibition in clinical applications.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Endocrine resistance remains a significant therapeutic challenge in estrogen receptor-positive (ER+) breast cancer, the most common subtype, contributing to increased morbidity and mortality. The interaction between ER and HER family receptors, particularly HER2 and epidermal growth factor receptor (EGFR), drives resistance to standard therapies such as tamoxifen and trastuzumab by activating key signaling pathways, including PI3K/AKT and RAS/MAPK. Dysregulated miRNAs, which are non-coding gene expression regulators, have been linked to therapy response. Aims: To investigate the role of miR-99b-5p in ER-HER2/EGFR crosstalk in BT-474 cells. Study Design: Experimental study. Methods: The expression profile and prognostic significance of miR-99b-5p in breast cancer were analyzed using The Cancer Genome Atlas (TCGA) database. BT-474 cells were transfected with miR-99b-5p mimics and inhibitors, followed by treatment with tamoxifen and trastuzumab to assess their impact on cell proliferation and ER-HER2/EGFR crosstalk. Western blotting was performed to quantify EGFR, HER2, and ESR1 protein levels. Real-time proliferation analysis evaluated changes in cell growth following miRNA transfection and drug treatment. Results: The study revealed that miR-99b-5p is significantly overexpressed in tumors compared to normal tissues and is associated with poor patient survival and enhanced ER signaling. Transfection with miR-99b-5p mimics increased ESR1 expression and cell proliferation, even in the presence of tamoxifen or trastuzumab, indicating that miR-99b-5p contributes to therapy resistance through receptor crosstalk. Conversely, miR-99b-5p inhibition significantly restored drug sensitivity, reducing proliferation and enhancing the effectiveness of tamoxifen and trastuzumab. Conclusion: These findings establish miR-99b-5p as a key regulator of endocrine and HER2-targeted therapy resistance. Targeting miR-99b-5p could represent a potential therapeutic strategy to improve treatment outcomes in ER+/HER2+ breast cancer. Further research is needed to clarify the underlying molecular mechanisms and validate the therapeutic potential of miR-99b-5p inhibition in clinical applications.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2024-12-47",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "150-156",
+    "views": 3965,
+    "downloads": 2389,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2696",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2696",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2696",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2696",
+    "localPdfUrl": "js/data/pdfs/2696.pdf",
+    "pdfUrl": "js/data/pdfs/2696.pdf"
+  },
+  {
+    "id": 2697,
+    "type": "Original Article",
+    "title": "Clinical Characteristics of Nail Unit Melanoma in Türkiye: The Experience of Two Tertiary Dermatology Centers",
+    "authors": [
+      {
+        "name": "Tuğba Atcı",
+        "affiliation": "Department of Dermatology and Venereology, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Muhammed Burak Günay",
+        "affiliation": "Department of Dermatology and Venereology, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Şirin Yaşar",
+        "affiliation": "Clinic of Dermatology and Venereology, University of Health Sciences Türkiye, Haydarpaşa Numune Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Nesimi Büyükbabani",
+        "affiliation": "Department of Pathology, Koç University School of Medicine, İstanbul, Türkiye; Department of Pathology, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Pembegül Güneş",
+        "affiliation": "Clinic of Pathology, University of Health Sciences Türkiye, Haydarpaşa Numune Training and Research Hospital, İstanbul, Türkiye; Private Pathology Practice, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Şule Öztürk Sarı",
+        "affiliation": "Department of Pathology, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Zuhal Kuş Silav",
+        "affiliation": "Clinic of Pathology, University of Health Sciences Türkiye, Haydarpaşa Numune Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Can Baykal",
+        "affiliation": "Department of Dermatology and Venereology, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Göktay",
+        "affiliation": "Clinic of Dermatology and Venereology, University of Health Sciences Türkiye, Haydarpaşa Numune Training and Research Hospital, İstanbul, Türkiye; Private Dermatology Practice, İstanbul, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The literature on the clinical presentations of nail unit melanoma (NUM) in different countries is limited. Aims: To assess the specific clinical characteristics of NUM in Türkiye. Study Design: A retrospective cross sectional study. Methods: Patients with NUM in two centers were retrospectively evaluated for their clinicopathological features, including the location, laterality, destruction of the nail plate, erosion or ulceration, presence of longitudinal melanonychia (LM), Hutchinson’s sign (HS), and the absence of pigmentation and Breslow thickness. These variables were compared in terms of the main location of the NUMs (fingernail versus toenail). Results: A total of 37 patients (54.1% female) of mean age 61.9 ± 14.8 years were enrolled. In most cases, NUMs were located in the fingernails (62.2%), with the most common location being the thumbnails (45.9%), followed by the big toenails (32.4%). Five cases had in situ melanoma presenting with LM. The mean Breslow thickness of invasive NUM lesions (n = 26) was 4.7 ± 4.1 mm (median: 3). Although all in situ NUMs were located on the hands, no statistically significant difference was noted in the Breslow thickness of invasive NUMs on the toenails and fingernails. NUMs were hypomelanotic/amelanotic in 10 (27%) patients. LM was clinically evident in 40.5% of the patients and was significantly more frequently observed on fingernails. The HS of the nail folds was noted in 40.5% of the patients, with the proximal (73.3%) and distal (73.3%) nail folds being most commonly involved. Total or partial destruction of the nail plate was recorded in 24.3% and 51.4% of the patients, respectively. Erosion and/or ulceration on the surface of the NUM was clinically present in most (75.7%) cases. Invasive NUMs associated with LM (n = 10) displayed partial destruction of the nail plate (n = 9), erosion and/or ulceration on the tumor surface (n = 7), and HS (n = 6). Conclusion: The clinical characteristics of patients with NUM, such as more common localization on the hands, a high rate of preference for thumbnail and big toe, and the ratio of HS, were similar to the studies reported from diverse countries. Partial destruction of the nail plate is an important clinical feature of NUM. Furthermore, LM is more frequently observed in NUMs on the fingernails.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The literature on the clinical presentations of nail unit melanoma (NUM) in different countries is limited.</p>\r\n<p><strong>Aims:</strong> To assess the specific clinical characteristics of NUM in T&uuml;rkiye.</p>\r\n<p><strong>Study Design:</strong> A retrospective cross sectional study.</p>\r\n<p><strong>Methods:</strong> Patients with NUM in two centers were retrospectively evaluated for their clinicopathological features, including the location, laterality, destruction of the nail plate, erosion or ulceration, presence of longitudinal melanonychia (LM), Hutchinson&rsquo;s sign (HS), and the absence of pigmentation and Breslow thickness. These variables were compared in terms of the main location of the NUMs (fingernail versus toenail).</p>\r\n<p><strong>Results:</strong> A total of 37 patients (54.1% female) of mean age 61.9 &plusmn; 14.8 years were enrolled. In most cases, NUMs were located in the fingernails (62.2%), with the most common location being the thumbnails (45.9%), followed by the big toenails (32.4%). Five cases had in situ melanoma presenting with LM. The mean Breslow thickness of invasive NUM lesions (n = 26) was 4.7 &plusmn; 4.1 mm (median: 3). Although all in situ NUMs were located on the hands, no statistically significant difference was noted in the Breslow thickness of invasive NUMs on the toenails and fingernails. NUMs were hypomelanotic/amelanotic in 10 (27%) patients. LM was clinically evident in 40.5% of the patients and was significantly more frequently observed on fingernails. The HS of the nail folds was noted in 40.5% of the patients, with the proximal (73.3%) and distal (73.3%) nail folds being most commonly involved. Total or partial destruction of the nail plate was recorded in 24.3% and 51.4% of the patients, respectively. Erosion and/or ulceration on the surface of the NUM was clinically present in most (75.7%) cases. Invasive NUMs associated with LM (n = 10) displayed partial destruction of the nail plate (n = 9), erosion and/or ulceration on the tumor surface (n = 7), and HS (n = 6).</p>\r\n<p><strong>Conclusion:</strong> The clinical characteristics of patients with NUM, such as more common localization on the hands, a high rate of preference for thumbnail and big toe, and the ratio of HS, were similar to the studies reported from diverse countries. Partial destruction of the nail plate is an important clinical feature of NUM. Furthermore, LM is more frequently observed in NUMs on the fingernails.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The literature on the clinical presentations of nail unit melanoma (NUM) in different countries is limited. Aims: To assess the specific clinical characteristics of NUM in Türkiye. Study Design: A retrospective cross sectional study. Methods: Patients with NUM in two centers were retrospectively evaluated for their clinicopathological features, including the location, laterality, destruction of the nail plate, erosion or ulceration, presence of longitudinal melanonychia (LM), Hutchinson’s sign (HS), and the absence of pigmentation and Breslow thickness. These variables were compared in terms of the main location of the NUMs (fingernail versus toenail). Results: A total of 37 patients (54.1% female) of mean age 61.9 ± 14.8 years were enrolled. In most cases, NUMs were located in the fingernails (62.2%), with the most common location being the thumbnails (45.9%), followed by the big toenails (32.4%). Five cases had in situ melanoma presenting with LM. The mean Breslow thickness of invasive NUM lesions (n = 26) was 4.7 ± 4.1 mm (median: 3). Although all in situ NUMs were located on the hands, no statistically significant difference was noted in the Breslow thickness of invasive NUMs on the toenails and fingernails. NUMs were hypomelanotic/amelanotic in 10 (27%) patients. LM was clinically evident in 40.5% of the patients and was significantly more frequently observed on fingernails. The HS of the nail folds was noted in 40.5% of the patients, with the proximal (73.3%) and distal (73.3%) nail folds being most commonly involved. Total or partial destruction of the nail plate was recorded in 24.3% and 51.4% of the patients, respectively. Erosion and/or ulceration on the surface of the NUM was clinically present in most (75.7%) cases. Invasive NUMs associated with LM (n = 10) displayed partial destruction of the nail plate (n = 9), erosion and/or ulceration on the tumor surface (n = 7), and HS (n = 6). Conclusion: The clinical characteristics of patients with NUM, such as more common localization on the hands, a high rate of preference for thumbnail and big toe, and the ratio of HS, were similar to the studies reported from diverse countries. Partial destruction of the nail plate is an important clinical feature of NUM. Furthermore, LM is more frequently observed in NUMs on the fingernails.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2024-12-52",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "157-163",
+    "views": 4424,
+    "downloads": 2143,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2697",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2697",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2697",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2697",
+    "localPdfUrl": "js/data/pdfs/2697.pdf",
+    "pdfUrl": "js/data/pdfs/2697.pdf"
+  },
+  {
+    "id": 2682,
+    "type": "Clinical Image",
+    "title": "Multimodality Imaging Assessment of a Multi-Organ Hydatid Cyst",
+    "authors": [
+      {
+        "name": "Leizhi Ku",
+        "affiliation": "Department of Radiology, Wuhan Asia Heart Hospital, Wuhan University of Science and Technology, Wuhan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiaojing Ma",
+        "affiliation": "Department of Echocardiography, Wuhan Asia Heart Hospital, Wuhan University of Science and Technology, Wuhan, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 63-year-old woman presented with complaints of chest tightness and shortness of breath for one month following physical activity. The physical examination and routine laboratory test results were unremarkable. Electrocardiogram demonstrated negative T waves in the II, III, and aVF leads and intraventricular conduction delay with QRS duration of 160 ms. Lef",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-11-137",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "164-165",
+    "views": 3945,
+    "downloads": 1739,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2682",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2682",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2682",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2682",
+    "localPdfUrl": "js/data/pdfs/2682.pdf",
+    "pdfUrl": "js/data/pdfs/2682.pdf"
+  },
+  {
+    "id": 2662,
+    "type": "Clinical Image",
+    "title": "Identifying Paget",
+    "authors": [
+      {
+        "name": "Arun Kumar",
+        "affiliation": "Department of Geriatric Medicine, Banaras Hindu University, Institute of Medical Sciences, Varanasi, Uttar Pradesh, India",
+        "orcid": ""
+      },
+      {
+        "name": "Ashish Verma",
+        "affiliation": "Department of Radiodiagnosis and Imaging, Banaras Hindu University, Institute of Medical Sciences, Varanasi, Uttar Pradesh, India",
+        "orcid": ""
+      },
+      {
+        "name": "Upinder Kaur",
+        "affiliation": "Department of Pharmacology, Banaras Hindu University, Institute of Medical Sciences, Varanasi, Uttar Pradesh, India",
+        "orcid": ""
+      },
+      {
+        "name": "Sankha Shubhra Chakrabarti",
+        "affiliation": "Department of Geriatric Medicine, Banaras Hindu University, Institute of Medical Sciences, Varanasi, Uttar Pradesh, India",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "An 81-year-old man with type 2 diabetes, hypertension, coronary artery disease, a 4-year history of forgetfulness, 2-year low backache, and an in situ pacemaker was admitted to the geriatric service with cellulitis and sepsis-induced delirium. Following successful sepsis management, he continued to report significant low backache and showed discomfort upon h",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-10-31",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "166-167",
+    "views": 5224,
+    "downloads": 2055,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2662",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2662",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2662",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2662",
+    "localPdfUrl": "js/data/pdfs/2662.pdf",
+    "pdfUrl": "js/data/pdfs/2662.pdf"
+  },
+  {
+    "id": 2681,
+    "type": "Clinical Image",
+    "title": "Supernumerary Testis (Polyorchidism)",
+    "authors": [
+      {
+        "name": "Şenay Bengin Ertem",
+        "affiliation": "Department of Radiology, Çanakkale Onsekiz Mart University Faculty of Medicine, Çanakkale, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Reşorlu",
+        "affiliation": "Department of Radiology, Çanakkale Onsekiz Mart University Faculty of Medicine, Çanakkale, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Koray Öz",
+        "affiliation": "Clinic of Radiology, Defne State Hospital, Hatay Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 32-year-old man presented to our hospital’s urology department with intermittent pain and a palpable mass in the left testis. Physical examination revealed a painless, palpable mass in the left scrotum. However, there were no indications of such as local warmth or erythema. Blood tests, including tumor markers, were normal. The urine test was normal, and t",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-10-81",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "168-169",
+    "views": 4188,
+    "downloads": 1854,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2681",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2681",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2681",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2681",
+    "localPdfUrl": "js/data/pdfs/2681.pdf",
+    "pdfUrl": "js/data/pdfs/2681.pdf"
+  },
+  {
+    "id": 2658,
+    "type": "Scientific Letter",
+    "title": "Scorching Heat and Fragile Hearts: Hidden Cardiovascular Risks",
+    "authors": [
+      {
+        "name": "Saim Mahmood Khan",
+        "affiliation": "Karachi Medical and Dental College, Karachi, Pakistan",
+        "orcid": ""
+      },
+      {
+        "name": "Mahnoor Ishaque",
+        "affiliation": "Jinnah Sindh Medical University, Karachi, Pakistan",
+        "orcid": ""
+      },
+      {
+        "name": "Muhammad Affan Abid",
+        "affiliation": "Dow University of Health Sciences, Karachi, Pakistan",
+        "orcid": ""
+      },
+      {
+        "name": "Ashmat Naqvi",
+        "affiliation": "Dow University of Health Sciences, Karachi, Pakistan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Rising summer temperatures lead to a surge in heat stroke cases in emergency rooms, typically marked by body temperatures of 40.5 °C or higher.1 This spike in body temperature triggers the body’s heat dissipation mechanisms, with the cardiovascular system playing a critical role by boosting cardiac output and peripheral blood flow. However, extreme heat inte",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-9-1",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "170-171",
+    "views": 4464,
+    "downloads": 2093,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2658",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2658",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2658",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2658",
+    "localPdfUrl": "js/data/pdfs/2658.pdf",
+    "pdfUrl": "js/data/pdfs/2658.pdf"
+  },
+  {
+    "id": 2661,
+    "type": "Scientific Letter",
+    "title": "A Multidirectional Interrelationship: Iron Deficiency Anemia Begets Angular Cheilitis and Atrial Fibrillation, Atrial Fibrillation Begets Heart Failure and Heart Failure Begets Atrial Fibrillation and Anemia",
+    "authors": [
+      {
+        "name": "Nicholas G. Kounis",
+        "affiliation": "Department of Cardiology, Patras University Hospital, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Virginia Mplani",
+        "affiliation": "Intensive Care Unit, Patras University Hospital, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Alexandr Ceasovschih",
+        "affiliation": "Department of Internal Medicine, Grigore T. Popa University of Medicine and Pharmacy Faculty of Medicine, Iasi, Romania; Department of Second Internal Medicine, Sf. Spiridon Clinical Emergency Hospital, Iasi, Romania",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Angular cheilitis is a specific type of cheilitis characterized by inflammatory affecting the vermilion and surrounding skin of the lips. Various systemic conditions that cause stress, lower immunity, and increase mucosal susceptibility to infection can contribute to the development of angular cheilitis. One significant factor is iron deficiency, which resul",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-9-89",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "172-173",
+    "views": 4925,
+    "downloads": 2328,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2661",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2661",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2661",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2661",
+    "localPdfUrl": "js/data/pdfs/2661.pdf",
+    "pdfUrl": "js/data/pdfs/2661.pdf"
+  },
+  {
+    "id": 2654,
+    "type": "Scientific Letter",
+    "title": "Reflections on the",
+    "authors": [
+      {
+        "name": "Perihan Elif Ekmekçi",
+        "affiliation": "Department of History of Medicine and Ethics, TOBB ETÜ Faculty of Medicine, Ankara, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Artificial intelligence (AI) is a disruptive technology with immense innovation and dissemination potential. Scientific research and publishing are among the domains in which AI has significant avenues for application. The most common applications of AI in scientific research and publishing include translation, proofreading, and grammar checks. The introduct",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-6-72",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "174-175",
+    "views": 4222,
+    "downloads": 2101,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2654",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2654",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2654",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2654",
+    "localPdfUrl": "js/data/pdfs/2654.pdf",
+    "pdfUrl": "js/data/pdfs/2654.pdf"
+  },
+  {
+    "id": 2683,
+    "type": "Scientific Letter",
+    "title": "Baricitinib for the Treatment of Moderate-to-Severe Alopecia Areata",
+    "authors": [
+      {
+        "name": "Güllü Gencebay",
+        "affiliation": "Department of Dermatology, Bezmialem University Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Anıl Gülsel Bahalı",
+        "affiliation": "Clinic of Dermatology, Liv Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Didem Dizman",
+        "affiliation": "Department of Dermatology, Bezmialem University Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Melisa Özay",
+        "affiliation": "Department of Dermatology, Bezmialem University Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Özlem Su Küçük",
+        "affiliation": "Department of Dermatology, Bezmialem University Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Alopecia areata (AA) is an autoimmune, relapsing, non-scarring condition that causes hair loss, resulting in bald patches on the scalp, beard, eyebrows, eyelashes, and, in some cases, the entire body. AA is one of the most common dermatological disorders, affecting up to 2% of the general population.1 The pathology is yet unknown, but a common theory is the ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2024-9-31",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "176-179",
+    "views": 4765,
+    "downloads": 2036,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2683",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2683",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2683",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2683",
+    "localPdfUrl": "js/data/pdfs/2683.pdf",
+    "pdfUrl": "js/data/pdfs/2683.pdf"
+  },
+  {
+    "id": 2676,
+    "type": "Letter to the Editor",
+    "title": "The Importance of Age Standardisation in Comparing Regional Inequalities",
+    "authors": [
+      {
+        "name": "Mestan Emek",
+        "affiliation": "Department of Public Health, Akdeniz University Faculty of Medicine, Antalya, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "I read the article by Şahin et al.1 with great interest. In my opinion, health inequality is a pressing challenge and more studies are required from Türkiye. Health inequalities were defined by the World Health Organization in 1990 as “systematic differences in health status between different socioeconomic groups. These inequities are socially produced (and ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-10-40",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "180-180",
+    "views": 4003,
+    "downloads": 1725,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2676",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2676",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2676",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2676",
+    "localPdfUrl": "js/data/pdfs/2676.pdf",
+    "pdfUrl": "js/data/pdfs/2676.pdf"
+  },
+  {
+    "id": 2698,
+    "type": "Letter to the Editor",
+    "title": "In Response to",
+    "authors": [
+      {
+        "name": "Anıl Şahin",
+        "affiliation": "Department of Cardiology, Sivas Cumhuriyet University Faculty of Medicine, Sivas, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Tuğçe Çöllüoğlu",
+        "affiliation": "Department of Cardiology, Karabük University Faculty of Medicine, Karabük, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Çelik",
+        "affiliation": "Department of Cardiology, Mersin University Faculty of Medicine, Mersin, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Naim Ata",
+        "affiliation": "General Directorate of Health Information Systems, Ministry of Health, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Birhan Yılmaz",
+        "affiliation": "Department of Cardiology, Dokuz Eylül University Faculty of Medicine, İzmir, Türki",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Ural",
+        "affiliation": "Department of Cardiology, Koç University School of Medicine, Mersin, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Arzu Kanık",
+        "affiliation": "Department of Biostatistics and Medical Informatics, Mersin University Faculty of Medicine, Mersin, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Okan Ayvalı",
+        "affiliation": "General Directorate of Health Information Systems, Ministry of Health, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Mahir Ülgü",
+        "affiliation": "General Directorate of Health Information Systems, Ministry of Health, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Şuayip Birinci",
+        "affiliation": "Republic of Türkiye Ministry of Health, Ankara, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "We thank the author of the letter for their interest in our article, “Exploring Regional Disparities in Heart Failure Epidemiology and Outcomes: A Comprehensive Study Across Geographical Regions in Türkiye”.1 The feedback provides an opportunity to address methodological considerations and future directions in heart failure (HF) research. The letter raises t",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-10-40.response",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "2",
+    "pages": "181-182",
+    "views": 3466,
+    "downloads": 1498,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1295",
+    "sourceArticleId": "2698",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2698",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2698",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2698",
+    "localPdfUrl": "js/data/pdfs/2698.pdf",
+    "pdfUrl": "js/data/pdfs/2698.pdf"
+  }
+]

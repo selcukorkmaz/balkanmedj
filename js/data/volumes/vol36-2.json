@@ -1,0 +1,762 @@
+[
+  {
+    "id": 2084,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2084",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2084",
+    "localPdfUrl": "js/data/pdfs/2084.pdf",
+    "pdfUrl": "js/data/pdfs/2084.pdf"
+  },
+  {
+    "id": 2082,
+    "type": "Editorial",
+    "title": "Data Sharing Policy for Balkan Medical Journal",
+    "authors": [
+      {
+        "name": "Okan Çalıyurt",
+        "affiliation": "Department of Psychiatry, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zafer Koçak",
+        "affiliation": "Department of Radiation Oncology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "In 2004, the International Committee of Medical Journal Editors (ICMJE) announced a statement on clinical trial registration (1). According to the statement, a clinical trial is defined as any research project that prospectively assigns human subjects to intervention or comparison groups to study the cause-and-effect relationship between a medical interventi",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.2.001",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "70-70",
+    "views": 5860,
+    "downloads": 9534,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2082",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2082",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2082",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2082",
+    "localPdfUrl": "js/data/pdfs/2082.pdf",
+    "pdfUrl": "js/data/pdfs/2082.pdf"
+  },
+  {
+    "id": 2083,
+    "type": "Editorial",
+    "title": "Balkan Medical Journal and Legal Regulation",
+    "authors": [
+      {
+        "name": "Mustafa İnan",
+        "affiliation": "Department of Pediatric Surgery, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Erbaş",
+        "affiliation": "Department of Biochemistry, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zafer Koçak",
+        "affiliation": "Department of Radiation Oncology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cem Uzun[[4]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Balkan Medical Journal, the official university/academic journal of Trakya University Faculty of Medicine, is under the ownership of the deanery of the faculty and aims to propagate the current medical scientific knowledge in the Balkan region. The rectorate of Trakya University logistically supports the journal. On the other hand, the editor-in-chief is sci",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.2.002",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "71-77",
+    "views": 6776,
+    "downloads": 9785,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2083",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2083",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2083",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2083",
+    "localPdfUrl": "js/data/pdfs/2083.pdf",
+    "pdfUrl": "js/data/pdfs/2083.pdf"
+  },
+  {
+    "id": 2043,
+    "type": "Invited Review",
+    "title": "The Progress of Next Generation Sequencing in the Assessment of Myeloid Malignancies",
+    "authors": [
+      {
+        "name": "Fulya Öz Puyan",
+        "affiliation": "Department of Pathology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serhan Alkan",
+        "affiliation": "Department of Pathology and Laboratory Medicine, Cedars-Sinai Medical Center, California, USA",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract The introduction and advances on next-generation sequencing have led to novel ways to integrate simultaneous assessment of multiple target genes in routine laboratory analysis. Assessment of myeloid neoplasms with targeted next-generation sequencing panels shows evidence to improve diagnosis, assist therapeutic decisions, provide better information about prognosis, and better detection of minimal residual disease. Herein, we provide information for application and utilization of next-generation sequencing studies with a focus on the most important mutations in acute myeloid leukemia, myelodysplastic syndrome, myeloproliferative neoplasms, and other myelodysplastic/myeloproliferative neoplasms in order to integrate them into the daily clinical practice.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p>The introduction and advances on next-generation sequencing have led to novel ways to integrate simultaneous assessment of multiple target genes in routine laboratory analysis. Assessment of myeloid neoplasms with targeted next-generation sequencing panels shows evidence to improve diagnosis, assist therapeutic decisions, provide better information about prognosis, and better detection of minimal residual disease. Herein, we provide information for application and utilization of next-generation sequencing studies with a focus on the most important mutations in acute myeloid leukemia, myelodysplastic syndrome, myeloproliferative neoplasms, and other myelodysplastic/myeloproliferative neoplasms in order to integrate them into the daily clinical practice.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract The introduction and advances on next-generation sequencing have led to novel ways to integrate simultaneous assessment of multiple target genes in routine laboratory analysis. Assessment of myeloid neoplasms with targeted next-generation sequencing panels shows evidence to improve diagnosis, assist therapeutic decisions, provide better information about prognosis, and better detection of minimal residual disease. Herein, we provide information for application and utilization of next-generation sequencing studies with a focus on the most important mutations in acute myeloid leukemia, myelodysplastic syndrome, myeloproliferative neoplasms, and other myelodysplastic/myeloproliferative neoplasms in order to integrate them into the daily clinical practice.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2018.1195",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "78-87",
+    "views": 7380,
+    "downloads": 17813,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2043",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2043",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2043",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2043",
+    "localPdfUrl": "js/data/pdfs/2043.pdf",
+    "pdfUrl": "js/data/pdfs/2043.pdf"
+  },
+  {
+    "id": 2048,
+    "type": "Original Article",
+    "title": "Evaluating the Effects of a Topical Preparation with Dexpanthenol, Silbiol, Undecylenic Acid, and Lidocaine on Palatal Mucosa Wound Healing in a Rat Model",
+    "authors": [
+      {
+        "name": "Yasemin Sezgin",
+        "affiliation": "Department of Periodontology, Başkent University School of Dentistry, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehtap Bilgin Çetin",
+        "affiliation": "Department of Periodontology, Başkent University School of Dentistry, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şule Bulut",
+        "affiliation": "Department of Periodontology, Başkent University School of Dentistry, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nilgün Özlem Alptekin",
+        "affiliation": "Department of Periodontology, Başkent University School of Dentistry, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pelin Börçek",
+        "affiliation": "Department of Pathology, Başkent University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Postoperative complications occur after periodontal plastic surgeries, but an ideal treatment to overcome them has not been found yet.Aims: To evaluate the effects of topically applied Oral-norm gel on the healing of excisional wounds.Study Design: Animal experiment.Methods: Excisional wounds with a diameter of 3 mm were made in the center of the palatal mucosa of 63 Sprague Dawley rats. Seven animals were sacrificed at time 0. The remaining rats were divided into two groups: a test group in which the topical Oral-norm gel was applied three times a day and a control group in which nothing was applied. Seven animals in each group were sacrificed at 3, 7, 14, and 21 days. Mean wound surface area was measured photographically, while wound healing and width were evaluated microscopically. Results: The mean wound surface area decreased significantly after 3 days in both groups (p<0.001). Between days 3 and 7, the mean wound surface area decreased from 6.62 (2.85) to 0.83 (1.62) mm2 in the control group and 5.07 (0.88) to 1.42 (1.67) mm2 in the test group. The wound width decreased significantly on day 7 in both groups (p<0.001), with no further changes by day 14. Both groups had a significant increase in inflammation and vascularization on day 3 (p<0.001), with a reduction thereafter. No significant differences in macroscopic and microscopic measurements were observed between the groups at any time point (p>0.05).Conclusion: The Oral-norm gel has no positive healing effects in the palatal mucosa of rats.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Postoperative complications occur after periodontal plastic surgeries, but an ideal treatment to overcome them has not been found yet.<br /><strong>Aims:</strong> To evaluate the effects of topically applied Oral-norm gel on the healing of excisional wounds.<br /><strong>Study Design:</strong> Animal experiment.<br /><strong>Methods:</strong> Excisional wounds with a diameter of 3 mm were made in the center of the palatal mucosa of 63 Sprague Dawley rats. Seven animals were sacrificed at time 0. The remaining rats were divided into two groups: a test group in which the topical Oral-norm gel was applied three times a day and a control group in which nothing was applied. Seven animals in each group were sacrificed at 3, 7, 14, and 21 days. Mean wound surface area was measured photographically, while wound healing and width were evaluated microscopically. <br /><strong>Results:</strong> The mean wound surface area decreased significantly after 3 days in both groups (p&lt;0.001). Between days 3 and 7, the mean wound surface area decreased from 6.62 (2.85) to 0.83 (1.62) mm<sup>2</sup> in the control group and 5.07 (0.88) to 1.42 (1.67) mm<sup>2</sup> in the test group. The wound width decreased significantly on day 7 in both groups (p&lt;0.001), with no further changes by day 14. Both groups had a significant increase in inflammation and vascularization on day 3 (p&lt;0.001), with a reduction thereafter. No significant differences in macroscopic and microscopic measurements were observed between the groups at any time point (p&gt;0.05).<br /><strong>Conclusion:</strong> The Oral-norm gel has no positive healing effects in the palatal mucosa of rats.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Postoperative complications occur after periodontal plastic surgeries, but an ideal treatment to overcome them has not been found yet.Aims: To evaluate the effects of topically applied Oral-norm gel on the healing of excisional wounds.Study Design: Animal experiment.Methods: Excisional wounds with a diameter of 3 mm were made in the center of the palatal mucosa of 63 Sprague Dawley rats. Seven animals were sacrificed at time 0. The remaining rats were divided into two groups: a test group in which the topical Oral-norm gel was applied three times a day and a control group in which nothing was applied. Seven animals in each group were sacrificed at 3, 7, 14, and 21 days. Mean wound surface area was measured photographically, while wound healing and width were evaluated microscopically. Results: The mean wound surface area decreased significantly after 3 days in both groups (p<0.001). Between days 3 and 7, the mean wound surface area decreased from 6.62 (2.85) to 0.83 (1.62) mm2 in the control group and 5.07 (0.88) to 1.42 (1.67) mm2 in the test group. The wound width decreased significantly on day 7 in both groups (p<0.001), with no further changes by day 14. Both groups had a significant increase in inflammation and vascularization on day 3 (p<0.001), with a reduction thereafter. No significant differences in macroscopic and microscopic measurements were observed between the groups at any time point (p>0.05).Conclusion: The Oral-norm gel has no positive healing effects in the palatal mucosa of rats.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2018.0167",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "88-95",
+    "views": 8616,
+    "downloads": 9858,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2048",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2048",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2048",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2048",
+    "localPdfUrl": "js/data/pdfs/2048.pdf",
+    "pdfUrl": "js/data/pdfs/2048.pdf"
+  },
+  {
+    "id": 2052,
+    "type": "Original Article",
+    "title": "Cytotoxic Effects of Some Flavonoids and Imatinib on the K562 Chronic Myeloid Leukemia Cell Line: Data Analysis Using the Combination Index Method",
+    "authors": [
+      {
+        "name": "Ferdane Danışman Kalındemirtaş",
+        "affiliation": "Department of Physiology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hüsniye Birman",
+        "affiliation": "Department of Physiology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Eda Candöken",
+        "affiliation": "Department of Biochemistry, İstanbul University İstanbul School of Pharmacy, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sema Bilgiş Gazioğlu",
+        "affiliation": "Department of Immunology, İstanbul University Institute of Experimental Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gülay Melikoğlu",
+        "affiliation": "Department of Pharmacognosy, İstanbul University İstanbul School of Pharmacy, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serap Kuruca",
+        "affiliation": "Department of Physiology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Flavonoids are natural compounds with antioxidant, anticarcinogenic, and anti-inflammatory effects.Aims: To determine the cytotoxic effects of flavonoids and drug resistance related to P-gp on K562 human chronic myeloid leukemia cells. We also aimed to evaluate the therapeutic potential of imatinib and flavonoid combinations.Study Design: Cell culture study.Methods: In this study, K562 cells were treated with apigenin, luteolin, 5-desmethyl sinensetin and the anticancer drug imatinib mesylate. The effect of flavonoids on K562 cell proliferation was detected using the 3-(4,5-dimethylthiazolyl)2,5‑diphenyl‑tetrazolium bromide assay. Concentrations of apigenin, luteolin, and 5-desmethyl sinensetin ranging from 25 to 200 μM and of imatinib from 5 to 50 μM administered for 72 h were studied. Apoptosis/necrosis and P-gp activity were measured using flow cytometry. The combined effects of different concentrations of flavonoids with imatinib were evaluated according to combination index values calculated using CompuSyn software.Results: In our study, the IC50 values for apigenin, luteolin, and 5-desmethyl sinensetin were found to be 140 μM, 100 μM, and >200 μM, respectively. Luteolin (100 μM) had the highest cytotoxic activity of these flavonoids. These results were statistically significant (p<0.05). Among the flavonoids studied, the combination of luteolin and imatinib was the most effective and is therefore recommended for its cytotoxic activity in the K562 cell line. After 72 h of incubation at their respective IC50 concentrations, all flavonoids were associated with an apoptosis rate of approximately 50%. P-glycoprotein activity was increased in all groups. Combination treatment may provide better outcomes in terms of cytotoxicity and thus reduce the dosages of imatinib used. Conclusion: The combination of some flavonoids and imatinib mesylate may increase the cytotoxic effect; However, the antagonistic effect should be considered in combined use on k562 cells.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Flavonoids are natural compounds with antioxidant, anticarcinogenic, and anti-inflammatory effects.<br /><strong>Aims:</strong> To determine the cytotoxic effects of flavonoids and drug resistance related to P-gp on K562 human chronic myeloid leukemia cells. We also aimed to evaluate the therapeutic potential of imatinib and flavonoid combinations.<br /><strong>Study Design:</strong> Cell culture study.<br /><strong>Methods:</strong> In this study, K562 cells were treated with apigenin, luteolin, 5-desmethyl sinensetin and the anticancer drug imatinib mesylate. The effect of flavonoids on K562 cell proliferation was detected using the 3-(4,5-dimethylthiazolyl)2,5‑diphenyl‑tetrazolium bromide assay. Concentrations of apigenin, luteolin, and 5-desmethyl sinensetin ranging from 25 to 200 &mu;M and of imatinib from 5 to 50 &mu;M administered for 72 h were studied. Apoptosis/necrosis and P-gp activity were measured using flow cytometry. The combined effects of different concentrations of flavonoids with imatinib were evaluated according to combination index values calculated using CompuSyn software.<br /><strong>Results:</strong> In our study, the IC<sub>50</sub> values for apigenin, luteolin, and 5-desmethyl sinensetin were found to be 140 &mu;M, 100 &mu;M, and &gt;200 &mu;M, respectively. Luteolin (100 &mu;M) had the highest cytotoxic activity of these flavonoids. These results were statistically significant (p&lt;0.05). Among the flavonoids studied, the combination of luteolin and imatinib was the most effective and is therefore recommended for its cytotoxic activity in the K562 cell line. After 72 h of incubation at their respective IC<sub>50</sub> concentrations, all flavonoids were associated with an apoptosis rate of approximately 50%. P-glycoprotein activity was increased in all groups. Combination treatment may provide better outcomes in terms of cytotoxicity and thus reduce the dosages of imatinib used. <br /><strong>Conclusion:</strong> The combination of some flavonoids and imatinib mesylate may increase the cytotoxic effect; However, the antagonistic effect should be considered in combined use on k562 cells.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Flavonoids are natural compounds with antioxidant, anticarcinogenic, and anti-inflammatory effects.Aims: To determine the cytotoxic effects of flavonoids and drug resistance related to P-gp on K562 human chronic myeloid leukemia cells. We also aimed to evaluate the therapeutic potential of imatinib and flavonoid combinations.Study Design: Cell culture study.Methods: In this study, K562 cells were treated with apigenin, luteolin, 5-desmethyl sinensetin and the anticancer drug imatinib mesylate. The effect of flavonoids on K562 cell proliferation was detected using the 3-(4,5-dimethylthiazolyl)2,5‑diphenyl‑tetrazolium bromide assay. Concentrations of apigenin, luteolin, and 5-desmethyl sinensetin ranging from 25 to 200 μM and of imatinib from 5 to 50 μM administered for 72 h were studied. Apoptosis/necrosis and P-gp activity were measured using flow cytometry. The combined effects of different concentrations of flavonoids with imatinib were evaluated according to combination index values calculated using CompuSyn software.Results: In our study, the IC50 values for apigenin, luteolin, and 5-desmethyl sinensetin were found to be 140 μM, 100 μM, and >200 μM, respectively. Luteolin (100 μM) had the highest cytotoxic activity of these flavonoids. These results were statistically significant (p<0.05). Among the flavonoids studied, the combination of luteolin and imatinib was the most effective and is therefore recommended for its cytotoxic activity in the K562 cell line. After 72 h of incubation at their respective IC50 concentrations, all flavonoids were associated with an apoptosis rate of approximately 50%. P-glycoprotein activity was increased in all groups. Combination treatment may provide better outcomes in terms of cytotoxicity and thus reduce the dosages of imatinib used. Conclusion: The combination of some flavonoids and imatinib mesylate may increase the cytotoxic effect; However, the antagonistic effect should be considered in combined use on k562 cells.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2017.1244",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "96-105",
+    "views": 7993,
+    "downloads": 10644,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2052",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2052",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2052",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2052",
+    "localPdfUrl": "js/data/pdfs/2052.pdf",
+    "pdfUrl": "js/data/pdfs/2052.pdf"
+  },
+  {
+    "id": 2051,
+    "type": "Original Article",
+    "title": "Evaluation of Cerebral Blood Flow Alterations and Acute Neuronal  Damage due to Water-Pipe Smoking",
+    "authors": [
+      {
+        "name": "Onur Karakayalı",
+        "affiliation": "Department of Emergency Medicine, University of Health Sciences, Derince Training and Research Hospital, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Uygar Utku",
+        "affiliation": "Department of Neurology, İstinye University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serkan Yılmaz",
+        "affiliation": "Department of Emergency Medicine, University of Health Sciences, Derince Training and Research Hospital, Kocaeli, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Although water-pipe smoking is a great public health problem, data regarding the acute and chronic effects and the degree of toxin exposure are limited. While water pipe-related malignancy, pulmonary, infectious, cardiac effects, infertility, and biological effects have been described in a meta-analysis, there are no studies in the literature about its neurologic effects.Aims: To evaluate water pipe-related acute neurological effects and cerebral blood flow through transcranial Doppler ultrasonography and serum S100 calcium binding protein calcium binding protein level measurements. Study Design: Prospective observational study.Methods: Vital signs and baseline carboxyhemoglobin and S100 calcium binding protein levels, cerebral flood changes with transcranial Doppler ultrasound were evaluated and recorded before and after water-pipe smoking.Results: The mean age of the 31 volunteers was 30.61 (±5.67) years, and 24 of them (77.42%) were male. A statistically significant difference was determined in heart rate, oxygen saturation, systolic and diastolic arterial pressure values before and after water-pipe smoking (p<0.001, p=0.035, p=0.009, p=0.021, respectively). Mean carboxyhemoglobin level was 2.68% (±1.68) before, 14.97% (±4.83) after water-pipe smoking (p<0.001). The S100 calcium binding protein level was 25.05 μ/mL (±8.34) at the beginning, 40.71 μ/mL (±14.06) after water-pipe smoking (p<0.001). An increase was determined in peak, and median middle, anterior and posterior cerebral artery blood flow rates, and a decrease was determined in both the pulsatility index and resistivity index values after water-pipe smoking using transcranial Doppler ultrasound.Conclusion: Cerebral vasodilation develops due to the increase in cerebral blood flow rate and the decrease in pulsatility index, resistivity index values, and the elevation in carboxyhemoglobin, S100 calcium binding protein level indicates that water-pipe smoking leads to neuronal damage in the acute period.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Although water-pipe smoking is a great public health problem, data regarding the acute and chronic effects and the degree of toxin exposure are limited. While water pipe-related malignancy, pulmonary, infectious, cardiac effects, infertility, and biological effects have been described in a meta-analysis, there are no studies in the literature about its neurologic effects.<br /><strong>Aims:</strong> To evaluate water pipe-related acute neurological effects and cerebral blood flow through transcranial Doppler ultrasonography and serum S100 calcium binding protein calcium binding protein level measurements. <br /><strong>Study Design:</strong> Prospective observational study.<br /><strong>Methods:</strong> Vital signs and baseline carboxyhemoglobin and S100 calcium binding protein levels, cerebral flood changes with transcranial Doppler ultrasound were evaluated and recorded before and after water-pipe smoking.<br /><strong>Results:</strong> The mean age of the 31 volunteers was 30.61 (&plusmn;5.67) years, and 24 of them (77.42%) were male. A statistically significant difference was determined in heart rate, oxygen saturation, systolic and diastolic arterial pressure values before and after water-pipe smoking (p&lt;0.001, p=0.035, p=0.009, p=0.021, respectively). Mean carboxyhemoglobin level was 2.68% (&plusmn;1.68) before, 14.97% (&plusmn;4.83) after water-pipe smoking (p&lt;0.001). The S100 calcium binding protein level was 25.05 &mu;/mL (&plusmn;8.34) at the beginning, 40.71 &mu;/mL (&plusmn;14.06) after water-pipe smoking (p&lt;0.001). An increase was determined in peak, and median middle, anterior and posterior cerebral artery blood flow rates, and a decrease was determined in both the pulsatility index and resistivity index values after water-pipe smoking using transcranial Doppler ultrasound.<br /><strong>Conclusion:</strong> Cerebral vasodilation develops due to the increase in cerebral blood flow rate and the decrease in pulsatility index, resistivity index values, and the elevation in carboxyhemoglobin, S100 calcium binding protein level indicates that water-pipe smoking leads to neuronal damage in the acute period.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Although water-pipe smoking is a great public health problem, data regarding the acute and chronic effects and the degree of toxin exposure are limited. While water pipe-related malignancy, pulmonary, infectious, cardiac effects, infertility, and biological effects have been described in a meta-analysis, there are no studies in the literature about its neurologic effects.Aims: To evaluate water pipe-related acute neurological effects and cerebral blood flow through transcranial Doppler ultrasonography and serum S100 calcium binding protein calcium binding protein level measurements. Study Design: Prospective observational study.Methods: Vital signs and baseline carboxyhemoglobin and S100 calcium binding protein levels, cerebral flood changes with transcranial Doppler ultrasound were evaluated and recorded before and after water-pipe smoking.Results: The mean age of the 31 volunteers was 30.61 (±5.67) years, and 24 of them (77.42%) were male. A statistically significant difference was determined in heart rate, oxygen saturation, systolic and diastolic arterial pressure values before and after water-pipe smoking (p<0.001, p=0.035, p=0.009, p=0.021, respectively). Mean carboxyhemoglobin level was 2.68% (±1.68) before, 14.97% (±4.83) after water-pipe smoking (p<0.001). The S100 calcium binding protein level was 25.05 μ/mL (±8.34) at the beginning, 40.71 μ/mL (±14.06) after water-pipe smoking (p<0.001). An increase was determined in peak, and median middle, anterior and posterior cerebral artery blood flow rates, and a decrease was determined in both the pulsatility index and resistivity index values after water-pipe smoking using transcranial Doppler ultrasound.Conclusion: Cerebral vasodilation develops due to the increase in cerebral blood flow rate and the decrease in pulsatility index, resistivity index values, and the elevation in carboxyhemoglobin, S100 calcium binding protein level indicates that water-pipe smoking leads to neuronal damage in the acute period.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2018.0704",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "106-112",
+    "views": 7495,
+    "downloads": 9813,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2051",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2051",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2051",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2051",
+    "localPdfUrl": "js/data/pdfs/2051.pdf",
+    "pdfUrl": "js/data/pdfs/2051.pdf"
+  },
+  {
+    "id": 2055,
+    "type": "Original Article",
+    "title": "Validation of the",
+    "authors": [
+      {
+        "name": "Evrim Kızıler",
+        "affiliation": "Department of Pediatric Nursing, Ankara Yıldırım Beyazıt University Faculty of Health Sciences, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Yıldız",
+        "affiliation": "Department of Pediatric Nursing, Health Sciences University Faculty of Nursing, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Berna Eren Fidancı",
+        "affiliation": "Department of Pediatric Nursing, Health Sciences University Faculty of Nursing, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: At present, more than 90% of adolescents with chronic conditions survive into adulthood as health care users and move pediatric to adult care with their chronic illness. Therefore, the need satisfaction scale focuses specifically on transitional care and reflect the increasing expectations among youth and their parents.Aims: To examine the validity and reliability of the Turkish version of Mind the Gap scale.Study Design: Methodological study.Methods: The Turkish versions of Mind the Gap scale and Patient Assessment of Choronic Illness Care scale were applied to the participants in two tertiary hospitals in Ankara. The validity was evaluated with factor analyses and content-scope validity; the reliability was evaluated with item-total score correlation, internal consistency, and continuity methods.Results: A total of 109 adolescents and 157 parents completed the questionaire. The content validity was confirmed. Exploratory factor analysis was used to determine the factor structure of the scale. Both adolescent and parent scales formed three sub-dimensions and explained 71% and 73% of the variation, respectively. The Cronbach’s alpha reliability coefficient of Mind the Gap scale 1 and Mind the Gap scale 2 were 0.89 and 0.87, respectively, with internal consistencies of the parent’s scales reaching 0.92 and 0.90. The test-retest reliability coefficients totalled 0.88 and 0.85 for the adolescents and parents, respectively. The suitability of the model was examined with confirmatory factor analysis. Conformity indices and x2/df value of the model were in good fit to data.Conclusion: The Turkish version of the Mind the Gap scale is a valid and reliable scale for evaluating the needs, expectations, and satisfaction of adolescents and their parents in terms of health care.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> At present, more than 90% of adolescents with chronic conditions survive into adulthood as health care users and move pediatric to adult care with their chronic illness. Therefore, the need satisfaction scale focuses specifically on transitional care and reflect the increasing expectations among youth and their parents.<br /><strong>Aims:</strong> To examine the validity and reliability of the Turkish version of Mind the Gap scale.<br /><strong>Study Design:</strong> Methodological study.<br /><strong>Methods:</strong> The Turkish versions of Mind the Gap scale and Patient Assessment of Choronic Illness Care scale were applied to the participants in two tertiary hospitals in Ankara. The validity was evaluated with factor analyses and content-scope validity; the reliability was evaluated with item-total score correlation, internal consistency, and continuity methods.<br /><strong>Results:</strong> A total of 109 adolescents and 157 parents completed the questionaire. The content validity was confirmed. Exploratory factor analysis was used to determine the factor structure of the scale. Both adolescent and parent scales formed three sub-dimensions and explained 71% and 73% of the variation, respectively. The Cronbach&rsquo;s alpha reliability coefficient of Mind the Gap scale 1 and Mind the Gap scale 2 were 0.89 and 0.87, respectively, with internal consistencies of the parent&rsquo;s scales reaching 0.92 and 0.90. The test-retest reliability coefficients totalled 0.88 and 0.85 for the adolescents and parents, respectively. The suitability of the model was examined with confirmatory factor analysis. Conformity indices and x<sup>2</sup>/df value of the model were in good fit to data.<br /><strong>Conclusion:</strong> The Turkish version of the Mind the Gap scale is a valid and reliable scale for evaluating the needs, expectations, and satisfaction of adolescents and their parents in terms of health care.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: At present, more than 90% of adolescents with chronic conditions survive into adulthood as health care users and move pediatric to adult care with their chronic illness. Therefore, the need satisfaction scale focuses specifically on transitional care and reflect the increasing expectations among youth and their parents.Aims: To examine the validity and reliability of the Turkish version of Mind the Gap scale.Study Design: Methodological study.Methods: The Turkish versions of Mind the Gap scale and Patient Assessment of Choronic Illness Care scale were applied to the participants in two tertiary hospitals in Ankara. The validity was evaluated with factor analyses and content-scope validity; the reliability was evaluated with item-total score correlation, internal consistency, and continuity methods.Results: A total of 109 adolescents and 157 parents completed the questionaire. The content validity was confirmed. Exploratory factor analysis was used to determine the factor structure of the scale. Both adolescent and parent scales formed three sub-dimensions and explained 71% and 73% of the variation, respectively. The Cronbach’s alpha reliability coefficient of Mind the Gap scale 1 and Mind the Gap scale 2 were 0.89 and 0.87, respectively, with internal consistencies of the parent’s scales reaching 0.92 and 0.90. The test-retest reliability coefficients totalled 0.88 and 0.85 for the adolescents and parents, respectively. The suitability of the model was examined with confirmatory factor analysis. Conformity indices and x2/df value of the model were in good fit to data.Conclusion: The Turkish version of the Mind the Gap scale is a valid and reliable scale for evaluating the needs, expectations, and satisfaction of adolescents and their parents in terms of health care.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2017.0168",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "113-120",
+    "views": 14450,
+    "downloads": 9944,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2055",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2055",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2055",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2055",
+    "localPdfUrl": "js/data/pdfs/2055.pdf",
+    "pdfUrl": "js/data/pdfs/2055.pdf"
+  },
+  {
+    "id": 2054,
+    "type": "Original Article",
+    "title": "Neutrophil Gelatinase-associated Lipocalin Significantly Correlates with Ischemic Damage in Patients Undergoing Laparoscopic Partial Nephrectomy",
+    "authors": [
+      {
+        "name": "Meltem Savran Karadeniz",
+        "affiliation": "Department of Anesthesiology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Isbara Alp Enişte",
+        "affiliation": "Clinic of Anesthesiology, Grup Florence Nightingale Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hayriye Şentürk Çiftçi",
+        "affiliation": "Department of Medical Biology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sebahat Usta",
+        "affiliation": "Department of Medical Biology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tzevat Tefik",
+        "affiliation": "Department of Urology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Öner Şanlı",
+        "affiliation": "Department of Urology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kamil Pembeci",
+        "affiliation": "Department of Anesthesiology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kamil Mehmet Tuğrul",
+        "affiliation": "Department of Anesthesiology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Laparoscopic partial nephrectomy, which minimizes renal function loss due to its nephron sparing nature, has become a standard technique among many experienced centers worldwide for surgical treatment of localized kidney tumors. Although partial nephrectomy will remain the gold standard, we need to improve perioperative management and surgical method to prevent postoperative acute kidney injury. Aims: To demonstrate the frequency of the development of postoperative acute kidney injury following laparoscopic partial nephrectomy in patients with healthy contralateral kidney and determine the early predictive effects of serum neutrophil gelatinase-associated lipocalin on ischemia-reperfusion injury and its association with warm ischemia time.Study Design: Cross-sectional study.Methods: Eighty patients were included. We analyzed tumor size, operating time, duration of anesthesia, and warm ischemia time. Serum samples were obtained for measurement of serum creatinine, estimated glomerular filtration rate, and neutrophil gelatinase-associated lipocalin level preoperatively, at the postoperative 2nd hour, and on postoperative days 1 and 2. We used receiver operating characteristic curve for determining the cut-off point of neutrophil gelatinase-associated lipocalin to detect postoperative acute kidney injury. Correlation analysis was performed using Spearman’s test.Results: Twenty-seven patients developed acute kidney injury on postoperative day 2, and the neutrophil gelatinase-associated lipocalin level increased significantly at the postoperative 2nd hour in the acute kidney injury group (p=0.048). For a cut-off of 129.375 ng/mL neutrophil gelatinase-associated lipocalin, the test showed 70.0% sensitivity and 68.3% specificity for the detection of acute kidney injury at the postoperative 2nd hour. For a cut-off of 184.300 ng/mL neutrophil gelatinase-associated lipocalin, the test exhibited 73.3% sensitivity and 63.3% specificity for the detection of acute kidney injury on postoperative day 1. A significant correlation was found between warm ischemia time and neutrophil gelatinase-associated lipocalin level at the postoperative 2nd hour (r=0.398, p=0.003). The creatinine values were significantly higher and the estimated glomerular filtration rates were significantly lower on postoperative days 1 and 2 in the acute kidney injury group compared with those in the non-acute kidney injury group (p<0.001).Conclusion: The neutrophil gelatinase-associated lipocalin may be used as an alternative biomarker to serum creatinine in differentiation of ischemic damage in patients undergoing laparoscopic partial nephrectomy.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Laparoscopic partial nephrectomy, which minimizes renal function loss due to its nephron sparing nature, has become a standard technique among many experienced centers worldwide for surgical treatment of localized kidney tumors. Although partial nephrectomy will remain the gold standard, we need to improve perioperative management and surgical method to prevent postoperative acute kidney injury. <br /><strong>Aims:</strong> To demonstrate the frequency of the development of postoperative acute kidney injury following laparoscopic partial nephrectomy in patients with healthy contralateral kidney and determine the early predictive effects of serum neutrophil gelatinase-associated lipocalin on ischemia-reperfusion injury and its association with warm ischemia time.<br /><strong>Study Design:</strong> Cross-sectional study.<br /><strong>Methods:</strong> Eighty patients were included. We analyzed tumor size, operating time, duration of anesthesia, and warm ischemia time. Serum samples were obtained for measurement of serum creatinine, estimated glomerular filtration rate, and neutrophil gelatinase-associated lipocalin level preoperatively, at the postoperative 2<sup>nd</sup> hour, and on postoperative days 1 and 2. We used receiver operating characteristic curve for determining the cut-off point of neutrophil gelatinase-associated lipocalin to detect postoperative acute kidney injury. Correlation analysis was performed using Spearman&rsquo;s test.<br /><strong>Results:</strong> Twenty-seven patients developed acute kidney injury on postoperative day 2, and the neutrophil gelatinase-associated lipocalin level increased significantly at the postoperative 2<sup>nd</sup> hour in the acute kidney injury group (p=0.048). For a cut-off of 129.375 ng/mL neutrophil gelatinase-associated lipocalin, the test showed 70.0% sensitivity and 68.3% specificity for the detection of acute kidney injury at the postoperative 2<sup>nd</sup> hour. For a cut-off of 184.300 ng/mL neutrophil gelatinase-associated lipocalin, the test exhibited 73.3% sensitivity and 63.3% specificity for the detection of acute kidney injury on postoperative day 1. A significant correlation was found between warm ischemia time and neutrophil gelatinase-associated lipocalin level at the postoperative 2<sup>nd</sup> hour (r=0.398, p=0.003). The creatinine values were significantly higher and the estimated glomerular filtration rates were significantly lower on postoperative days 1 and 2 in the acute kidney injury group compared with those in the non-acute kidney injury group (p&lt;0.001).<br /><strong>Conclusion:</strong> The neutrophil gelatinase-associated lipocalin may be used as an alternative biomarker to serum creatinine in differentiation of ischemic damage in patients undergoing laparoscopic partial nephrectomy.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Laparoscopic partial nephrectomy, which minimizes renal function loss due to its nephron sparing nature, has become a standard technique among many experienced centers worldwide for surgical treatment of localized kidney tumors. Although partial nephrectomy will remain the gold standard, we need to improve perioperative management and surgical method to prevent postoperative acute kidney injury. Aims: To demonstrate the frequency of the development of postoperative acute kidney injury following laparoscopic partial nephrectomy in patients with healthy contralateral kidney and determine the early predictive effects of serum neutrophil gelatinase-associated lipocalin on ischemia-reperfusion injury and its association with warm ischemia time.Study Design: Cross-sectional study.Methods: Eighty patients were included. We analyzed tumor size, operating time, duration of anesthesia, and warm ischemia time. Serum samples were obtained for measurement of serum creatinine, estimated glomerular filtration rate, and neutrophil gelatinase-associated lipocalin level preoperatively, at the postoperative 2nd hour, and on postoperative days 1 and 2. We used receiver operating characteristic curve for determining the cut-off point of neutrophil gelatinase-associated lipocalin to detect postoperative acute kidney injury. Correlation analysis was performed using Spearman’s test.Results: Twenty-seven patients developed acute kidney injury on postoperative day 2, and the neutrophil gelatinase-associated lipocalin level increased significantly at the postoperative 2nd hour in the acute kidney injury group (p=0.048). For a cut-off of 129.375 ng/mL neutrophil gelatinase-associated lipocalin, the test showed 70.0% sensitivity and 68.3% specificity for the detection of acute kidney injury at the postoperative 2nd hour. For a cut-off of 184.300 ng/mL neutrophil gelatinase-associated lipocalin, the test exhibited 73.3% sensitivity and 63.3% specificity for the detection of acute kidney injury on postoperative day 1. A significant correlation was found between warm ischemia time and neutrophil gelatinase-associated lipocalin level at the postoperative 2nd hour (r=0.398, p=0.003). The creatinine values were significantly higher and the estimated glomerular filtration rates were significantly lower on postoperative days 1 and 2 in the acute kidney injury group compared with those in the non-acute kidney injury group (p<0.001).Conclusion: The neutrophil gelatinase-associated lipocalin may be used as an alternative biomarker to serum creatinine in differentiation of ischemic damage in patients undergoing laparoscopic partial nephrectomy.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2018.0852",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "121-128",
+    "views": 14410,
+    "downloads": 2987,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2054",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2054",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2054",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2054",
+    "localPdfUrl": "js/data/pdfs/2054.pdf",
+    "pdfUrl": "js/data/pdfs/2054.pdf"
+  },
+  {
+    "id": 2053,
+    "type": "Original Article",
+    "title": "The Turkish Version of the Rhinoplasty Outcomes Evaluation Questionnaire: Validation and Clinical Application",
+    "authors": [
+      {
+        "name": "Mustafa Çelik",
+        "affiliation": "Department of Otorhinolaryngology, Head and Neck Surgery, Kafkas University School of Medicine, Kars, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Altıntaş",
+        "affiliation": "Clinic of Otorhinolaryngology, Head and Neck Surgery, Fatih Medical Park Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: An assessment of rhinoplasty from the patient’s perspective, in terms of satisfaction and quality of life, is quite important because these are the predominant factors indicating the success of rhinoplasty.Aims: To translate the Rhinoplasty Outcomes Evaluation into Turkish and then validate the new version for use in Turkish patients.Study Design: Validation study.Methods: We enrolled 30 participants who were able to read and write Turkish and underwent primary rhinoplasty. The control group consisted of 58 healthy volunteers with no need for aesthetic or functional nasal surgery. The reliability of the Rhinoplasty Outcomes Evaluation-T was analyzed according to its internal consistency and test-retest reproducibility. Discriminant validity was calculated by comparing the Rhinoplasty Outcomes Evaluation-T scores between the patient and control groups. Responsiveness and sensitivity to changes in rhinoplasty outcomes were analyzed by comparing the patients’ pre- and postoperative Rhinoplasty Outcomes Evaluation-T scores.Results: The scores for questions 1-6 of the Rhinoplasty Outcomes Evaluation-T, as well as the total scores, were significantly lower in the patient group than in the control group (all p<0.05). In the patient group, the scores for questions 1-6 of the Rhinoplasty Outcomes Evaluation-T, as well as the total scores, were higher postoperatively than preoperatively (all p<0.05). The scores for each Rhinoplasty Outcomes Evaluation-T question, as well as the total scores, did not differ significantly with respect to test-retest reproducibility (all p>0.05). The internal consistency of the Rhinoplasty Outcomes Evaluation-T was high, as evidenced by Cronbach’s α values of 0.887 preoperatively and 0.798 postoperatively.Conclusion: The Rhinoplasty Outcomes Evaluation-T constitutes a validated instrument with which to measure rhinoplasty outcomes among Turkish patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> An assessment of rhinoplasty from the patient&rsquo;s perspective, in terms of satisfaction and quality of life, is quite important because these are the predominant factors indicating the success of rhinoplasty.<br /><strong>Aims:</strong> To translate the Rhinoplasty Outcomes Evaluation into Turkish and then validate the new version for use in Turkish patients.<br /><strong>Study Design:</strong> Validation study.<br /><strong>Methods:</strong> We enrolled 30 participants who were able to read and write Turkish and underwent primary rhinoplasty. The control group consisted of 58 healthy volunteers with no need for aesthetic or functional nasal surgery. The reliability of the Rhinoplasty Outcomes Evaluation-T was analyzed according to its internal consistency and test-retest reproducibility. Discriminant validity was calculated by comparing the Rhinoplasty Outcomes Evaluation-T scores between the patient and control groups. Responsiveness and sensitivity to changes in rhinoplasty outcomes were analyzed by comparing the patients&rsquo; pre- and postoperative Rhinoplasty Outcomes Evaluation-T scores.<br /><strong>Results:</strong> The scores for questions 1-6 of the Rhinoplasty Outcomes Evaluation-T, as well as the total scores, were significantly lower in the patient group than in the control group (all p&lt;0.05). In the patient group, the scores for questions 1-6 of the Rhinoplasty Outcomes Evaluation-T, as well as the total scores, were higher postoperatively than preoperatively (all p&lt;0.05). The scores for each Rhinoplasty Outcomes Evaluation-T question, as well as the total scores, did not differ significantly with respect to test-retest reproducibility (all p&gt;0.05). The internal consistency of the Rhinoplasty Outcomes Evaluation-T was high, as evidenced by Cronbach&rsquo;s &alpha; values of 0.887 preoperatively and 0.798 postoperatively.<br /><strong>Conclusion:</strong> The Rhinoplasty Outcomes Evaluation-T constitutes a validated instrument with which to measure rhinoplasty outcomes among Turkish patients.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: An assessment of rhinoplasty from the patient’s perspective, in terms of satisfaction and quality of life, is quite important because these are the predominant factors indicating the success of rhinoplasty.Aims: To translate the Rhinoplasty Outcomes Evaluation into Turkish and then validate the new version for use in Turkish patients.Study Design: Validation study.Methods: We enrolled 30 participants who were able to read and write Turkish and underwent primary rhinoplasty. The control group consisted of 58 healthy volunteers with no need for aesthetic or functional nasal surgery. The reliability of the Rhinoplasty Outcomes Evaluation-T was analyzed according to its internal consistency and test-retest reproducibility. Discriminant validity was calculated by comparing the Rhinoplasty Outcomes Evaluation-T scores between the patient and control groups. Responsiveness and sensitivity to changes in rhinoplasty outcomes were analyzed by comparing the patients’ pre- and postoperative Rhinoplasty Outcomes Evaluation-T scores.Results: The scores for questions 1-6 of the Rhinoplasty Outcomes Evaluation-T, as well as the total scores, were significantly lower in the patient group than in the control group (all p<0.05). In the patient group, the scores for questions 1-6 of the Rhinoplasty Outcomes Evaluation-T, as well as the total scores, were higher postoperatively than preoperatively (all p<0.05). The scores for each Rhinoplasty Outcomes Evaluation-T question, as well as the total scores, did not differ significantly with respect to test-retest reproducibility (all p>0.05). The internal consistency of the Rhinoplasty Outcomes Evaluation-T was high, as evidenced by Cronbach’s α values of 0.887 preoperatively and 0.798 postoperatively.Conclusion: The Rhinoplasty Outcomes Evaluation-T constitutes a validated instrument with which to measure rhinoplasty outcomes among Turkish patients.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2018.1129",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "129-133",
+    "views": 13389,
+    "downloads": 10384,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2053",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2053",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2053",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2053",
+    "localPdfUrl": "js/data/pdfs/2053.pdf",
+    "pdfUrl": "js/data/pdfs/2053.pdf"
+  },
+  {
+    "id": 2047,
+    "type": "Brief Report",
+    "title": "Effectiveness of Percutaneous Intradiscal Decompression Therapy in Thoracic Disc Herniation",
+    "authors": [
+      {
+        "name": "Ayşegül Ceylan",
+        "affiliation": "Department of Anesthesiology and Reanimation, University of Health Sciences, Gülhane Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Güngör Enver Özgencil",
+        "affiliation": "Department of Anesthesiology and Reanimation, Ankara University Faculty of Medicine Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burak Erken",
+        "affiliation": "Department of Anesthesiology and Reanimation, Ankara University Faculty of Medicine Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Aşık[[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Aims: Although there have been many studies about lumbar and cervical ablation procedures, few studies have been performed in the thoracic region. To evaluate the clinical results of a percutaneous disc decompression device in patients with radicular symptoms and/or dorsal pain due to thoracic disc herniation.Methods: Eleven patients with thoracic disc herniation and/or degenerative discs (all in T10-T11, or T11-T12 levels) who did not respond to conservative treatments were undergoing ablation and compression procedures. Pain and radicular symptoms consistent with the thoracolumbar region were confirmed via abnormal magnetic resonance imaging findings after detailed anamnesis and physical examination. All patients were evaluated before and 1, 3, 6, and 12 months after treatment using the visual analog scale score. The patient satisfaction scale was used to evaluate the level of patient satisfaction at the end of the treatment at 12 months. Results: The median visual analog scale score was 7.00±0.45 points before treatment and 2.73±0.65 points at 12 months post-procedure and were statistically significant (p<0.001). The results of pairwise comparisons using the Bonferroni Corrected Wilcoxon Signed-Rank test showed that there were statistically significant differences. The mean visual analog scale score at the beginning (7.00±0.45) was significantly higher than the mean score of other months. Postoperative improvement was significant with a 99% confidence interval. No complications that may cause permanent damage occurred.Conclusion: Percutaneous disc decompression is an effective and safe procedure to treat pain caused by lower thoracic intervertebral disc disease, which did not respond to conservative treatments.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Aims:</strong> Although there have been many studies about lumbar and cervical ablation procedures, few studies have been performed in the thoracic region. To evaluate the clinical results of a percutaneous disc decompression device in patients with radicular symptoms and/or dorsal pain due to thoracic disc herniation.<br /><strong>Methods:</strong> Eleven patients with thoracic disc herniation and/or degenerative discs (all in T10-T11, or T11-T12 levels) who did not respond to conservative treatments were undergoing ablation and compression procedures. Pain and radicular symptoms consistent with the thoracolumbar region were confirmed via abnormal magnetic resonance imaging findings after detailed anamnesis and physical examination. All patients were evaluated before and 1, 3, 6, and 12 months after treatment using the visual analog scale score. The patient satisfaction scale was used to evaluate the level of patient satisfaction at the end of the treatment at 12 months. <br /><strong>Results:</strong> The median visual analog scale score was 7.00&plusmn;0.45 points before treatment and 2.73&plusmn;0.65 points at 12 months post-procedure and were statistically significant (p&lt;0.001). The results of pairwise comparisons using the Bonferroni Corrected Wilcoxon Signed-Rank test showed that there were statistically significant differences. The mean visual analog scale score at the beginning (7.00&plusmn;0.45) was significantly higher than the mean score of other months. Postoperative improvement was significant with a 99% confidence interval. No complications that may cause permanent damage occurred.<br /><strong>Conclusion:</strong> Percutaneous disc decompression is an effective and safe procedure to treat pain caused by lower thoracic intervertebral disc disease, which did not respond to conservative treatments.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Aims: Although there have been many studies about lumbar and cervical ablation procedures, few studies have been performed in the thoracic region. To evaluate the clinical results of a percutaneous disc decompression device in patients with radicular symptoms and/or dorsal pain due to thoracic disc herniation.Methods: Eleven patients with thoracic disc herniation and/or degenerative discs (all in T10-T11, or T11-T12 levels) who did not respond to conservative treatments were undergoing ablation and compression procedures. Pain and radicular symptoms consistent with the thoracolumbar region were confirmed via abnormal magnetic resonance imaging findings after detailed anamnesis and physical examination. All patients were evaluated before and 1, 3, 6, and 12 months after treatment using the visual analog scale score. The patient satisfaction scale was used to evaluate the level of patient satisfaction at the end of the treatment at 12 months. Results: The median visual analog scale score was 7.00±0.45 points before treatment and 2.73±0.65 points at 12 months post-procedure and were statistically significant (p<0.001). The results of pairwise comparisons using the Bonferroni Corrected Wilcoxon Signed-Rank test showed that there were statistically significant differences. The mean visual analog scale score at the beginning (7.00±0.45) was significantly higher than the mean score of other months. Postoperative improvement was significant with a 99% confidence interval. No complications that may cause permanent damage occurred.Conclusion: Percutaneous disc decompression is an effective and safe procedure to treat pain caused by lower thoracic intervertebral disc disease, which did not respond to conservative treatments.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2018.0188",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "134-138",
+    "views": 8429,
+    "downloads": 4134,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2047",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2047",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2047",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2047",
+    "localPdfUrl": "js/data/pdfs/2047.pdf",
+    "pdfUrl": "js/data/pdfs/2047.pdf"
+  },
+  {
+    "id": 2061,
+    "type": "Clinical Image",
+    "title": "Bull`s Head Sign in a Patient with SAPHO Syndrome",
+    "authors": [
+      {
+        "name": "Ufuk İlgen",
+        "affiliation": "Department of Rheumatology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sezin Turan",
+        "affiliation": "Department of Rheumatology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Emmungil[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 53-year-old male was evaluated for upper chest pain lasting 3 years. The pain was continuous, bilateral, progressive, and worse when the patient lay on his sides and during hyperabduction of the arms, radiating to the shoulders. Initially, it was responsive to non-steroidal anti-inflammatory drugs, but full daily doses of combined long- and short-acting no",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2018.1630",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "139-140",
+    "views": 5241,
+    "downloads": 9398,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2061",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2061",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2061",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2061",
+    "localPdfUrl": "js/data/pdfs/2061.pdf",
+    "pdfUrl": "js/data/pdfs/2061.pdf"
+  },
+  {
+    "id": 2063,
+    "type": "Clinical Image",
+    "title": "Congenital Superior Sternal Cleft Repair Using Primary Closure",
+    "authors": [
+      {
+        "name": "Yekta Altemur Karamustafaoğlu",
+        "affiliation": "Department of Thoracic Surgery, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fazlı Yanık",
+        "affiliation": "Department of Thoracic Surgery, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yener Yörük",
+        "affiliation": "Department of Thoracic Surgery, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ümit Nusret Başaran",
+        "affiliation": "Department of Pediatric Surgery, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Sternal cleft is a rare congenital chest malformation with an incidence of <0.15% and is predominant in girls (1). It is most commonly diagnosed in the neonatal period and often associated with other congenital anomalies. However, an isolated sternal cleft with no associated abnormality is uncommon. Sternal cleft can be partial or complete, and the partial d",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2018.0955",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "141-142",
+    "views": 13030,
+    "downloads": 9560,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2063",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2063",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2063",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2063",
+    "localPdfUrl": "js/data/pdfs/2063.pdf",
+    "pdfUrl": "js/data/pdfs/2063.pdf"
+  },
+  {
+    "id": 2069,
+    "type": "Clinical Image",
+    "title": "Detection of Ascaris lumbricoides by Capsule Endoscopy",
+    "authors": [
+      {
+        "name": "Pavel P. Poliakov",
+        "affiliation": "Department of Pathophysiology, Kuban State Medical University, Krasnodar, Russia",
+        "orcid": ""
+      },
+      {
+        "name": "Anar Y. Alimetov",
+        "affiliation": "Department of Postgraduate Surgery, Kuban State Medical University, Krasnodar, Russia",
+        "orcid": ""
+      },
+      {
+        "name": "Alexandr V. Onopriev",
+        "affiliation": "Department of Postgraduate Surgery, Kuban State Medical University, Krasnodar, Russia",
+        "orcid": ""
+      },
+      {
+        "name": "Andrey V. Avakimyan",
+        "affiliation": "Klinika-A OOO (Limited Liability Company), Krasnodar, Russia",
+        "orcid": ""
+      },
+      {
+        "name": "Azamat Kh. Kade",
+        "affiliation": "Department of Pathophysiology, Kuban State Medical University, Krasnodar, Russia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 47-year-old Caucasian woman complained of abdominal discomfort and general weakness. Her medical history indicated travels to ascariasis-endemic areas. Her hemoglobin level was 7.6 g/dL. Esophagogastroduodenoscopy revealed no evidence of active bleeding and colonoscopy revealed no pathology. Capsule endoscopy revealed a live helminth in the terminal ileum,",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2018.1548",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "143-144",
+    "views": 5458,
+    "downloads": 10825,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2069",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2069",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2069",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2069",
+    "localPdfUrl": "js/data/pdfs/2069.pdf",
+    "pdfUrl": "js/data/pdfs/2069.pdf"
+  },
+  {
+    "id": 2068,
+    "type": "Letter to the Editor",
+    "title": "No Family Clustering in Behçet`s Syndrome",
+    "authors": [
+      {
+        "name": "Mehmet Engin Tezcan",
+        "affiliation": "Clinic of Rheumatology, İstanbul Kartal Dr. Lütfi Kırdar Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, Behçet’s syndrome is considered as a syndrome because of its diverse clinical expressions. Patients with Behçet disease have been subclassified into various clusters on the basis of clinical expressions (1). The reason for the existence of different types of clusters in Behçet syndrome is currently unknown. Similar to that of most diseases, ge",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2018.1723",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "145-146",
+    "views": 5241,
+    "downloads": 9888,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2068",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2068",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2068",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2068",
+    "localPdfUrl": "js/data/pdfs/2068.pdf",
+    "pdfUrl": "js/data/pdfs/2068.pdf"
+  },
+  {
+    "id": 2076,
+    "type": "Miscellaneous",
+    "title": "A Short History of Trakya University Faculty of Medicine",
+    "authors": [
+      {
+        "name": "Recep Mesut",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Trakya University Faculty of Medicine, located in the west and Turkey’s European territory of Edirne (old Adrianopolis), has been operating in the city. It is 220 km west of İstanbul, 22 km from the Bulgarian border, and 7 km from the Greek border. It was founded by the Roman Emperor Hadrianus in 130 A.D. at the strategic point where the Balkan peninsula mee",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2.0001",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "2",
+    "pages": "147-151",
+    "views": 7015,
+    "downloads": 9371,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1255",
+    "sourceArticleId": "2076",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2076",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2076",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2076",
+    "localPdfUrl": "js/data/pdfs/2076.pdf",
+    "pdfUrl": "js/data/pdfs/2076.pdf"
+  }
+]

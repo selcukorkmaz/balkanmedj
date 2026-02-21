@@ -1,0 +1,1034 @@
+[
+  {
+    "id": 1804,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1804",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1804",
+    "localPdfUrl": "js/data/pdfs/1804.pdf",
+    "pdfUrl": "js/data/pdfs/1804.pdf"
+  },
+  {
+    "id": 1719,
+    "type": "Invited Review",
+    "title": "Medicine in Balkans during the Roman Period",
+    "authors": [
+      {
+        "name": "Daniş Baykan",
+        "affiliation": "Department of Archeology, Trakya University School of Letters, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "The aim of this study is to investigate the archaeological finds to enlighten the medical methods of treatments and operations applied in Balkans during Roman Period. Some independent local and regional find groups, taken from existing publications will be grouped together and a holistic point-of-view will be taken against medicine in Balkan Geography during Roman Period. Due to basic differences it contained, the data before Roman Period are excluded. Most of Greece and Aegean Islands are also excluded since the topic selected is “Medicine of Roman Period.” Greece and Aegean Islands should be evaluated in another study in connection with West Anatolia which is closer than the Balkan Geography in terms of social relations. The spread of medical tools in Balkans during Roman Period is concentrated around military garrisons, and in settlements built around military pathways, and in settlements containing an amphitheater associated with gladiators. This spread is verified by the studies on Bulgaria in general. The data is also compatible with the assertion suggesting that the amount of application of pharmaceutical treatment increases when one moves away from the military centres.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\tThe aim of this study is to investigate the archaeological finds to enlighten the medical methods of treatments and operations applied in Balkans during Roman Period. Some independent local and regional find groups, taken from existing publications will be grouped together and a holistic point-of-view will be taken against medicine in Balkan Geography during Roman Period. Due to basic differences it contained, the data before Roman Period are excluded. Most of Greece and Aegean Islands are also excluded since the topic selected is &ldquo;Medicine of Roman Period.&rdquo; Greece and Aegean Islands should be evaluated in another study in connection with West Anatolia which is closer than the Balkan Geography in terms of social relations. The spread of medical tools in Balkans during Roman Period is concentrated around military garrisons, and in settlements built around military pathways, and in settlements containing an amphitheater associated with gladiators. This spread is verified by the studies on Bulgaria in general. The data is also compatible with the assertion suggesting that the amount of application of pharmaceutical treatment increases when one moves away from the military centres.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "The aim of this study is to investigate the archaeological finds to enlighten the medical methods of treatments and operations applied in Balkans during Roman Period. Some independent local and regional find groups, taken from existing publications will be grouped together and a holistic point-of-view will be taken against medicine in Balkan Geography during Roman Period. Due to basic differences it contained, the data before Roman Period are excluded. Most of Greece and Aegean Islands are also excluded since the topic selected is “Medicine of Roman Period.” Greece and Aegean Islands should be evaluated in another study in connection with West Anatolia which is closer than the Balkan Geography in terms of social relations. The spread of medical tools in Balkans during Roman Period is concentrated around military garrisons, and in settlements built around military pathways, and in settlements containing an amphitheater associated with gladiators. This spread is verified by the studies on Bulgaria in general. The data is also compatible with the assertion suggesting that the amount of application of pharmaceutical treatment increases when one moves away from the military centres.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0474",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "295-300",
+    "views": 6131,
+    "downloads": 10131,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1719",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1719",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1719",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1719",
+    "localPdfUrl": "js/data/pdfs/1719.pdf",
+    "pdfUrl": "js/data/pdfs/1719.pdf"
+  },
+  {
+    "id": 1720,
+    "type": "Original Article",
+    "title": "Management of Forgotten Ureteral Stents: Relationship Between Indwelling Time and Required Treatment Approaches",
+    "authors": [
+      {
+        "name": "Hacı Polat",
+        "affiliation": "Department of Urology, Adıyaman University School of Medicine, Adıyaman, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Özgür Yücel",
+        "affiliation": "Department of Urology, Adıyaman University School of Medicine, Adıyaman, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet M. Utangaç",
+        "affiliation": "Department of Urology, Dicle University School of Medicine, Diyarbakır, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Can Benlioğlu",
+        "affiliation": "Department of Urology, Adıyaman University School of Medicine, Adıyaman, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Alper Gök",
+        "affiliation": "Department of Urology, Adıyaman University School of Medicine, Adıyaman, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Çift",
+        "affiliation": "Department of Urology, Adıyaman University School of Medicine, Adıyaman, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bedreddin Kalyenci",
+        "affiliation": "Department of Urology, Adıyaman University School of Medicine, Adıyaman, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Uğur Lök",
+        "affiliation": "Department of Emergency, Adıyaman University School of Medicine, Adıyaman, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Umut Gülaçtı",
+        "affiliation": "Department of Emergency, Adıyaman University School of Medicine, Adıyaman, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Double-J stents are widely used in urology practice, and removal of these stents can sometimes be forgotten. Aims: To investigate whether indwelling time of double-J stent can predict which treatment modality is required for removal of the stent from the body. Study Design: A multicentre, retrospective observational study. Methods: The data of 57 patients who were treated for forgotten ureteral stents between January 2007 and December 2014 were evaluated retrospectively. Patients were classified into four groups according to indwelling time of the stents: 6-12 months, 13-24 months, 25-36 months, and >36 months. Encrustation and associated stone burden of the stents were evaluated with non-contrast stone protocol computerised tomography. Results: Patients were classified according to their duration of the stent indwelling time. Simple cystoscopic stent retrieval was performed in 71.4% of patients in the 6-12 months group, 44% of patients in the 13-24 months group, 6.2% of patients in the 25-36 months group, and 11.1% of patients in the >36 months group. A percutaneous or open surgery was required in no patients with an indwelling time of double-J stent shorter than 30 months. Conclusion: Transurethral and/or percutaneous combined endo-urological approaches are usually sufficient for the removal of forgotten double-J stents. Transurethral procedures are sufficient for the treatment of patients with double-J stent indwelling times less than 30 months.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background</strong>: Double-J stents are widely used in urology practice, and removal of these stents can sometimes be forgotten.<br />\r\n\t<strong>Aims</strong>: To investigate whether indwelling time of double-J stent can predict which treatment modality is required for removal of the stent from the body.<br />\r\n\t<strong>Study Design</strong>: A multicentre, retrospective observational study.<br />\r\n\t<strong>Methods</strong>: The data of 57 patients who were treated for forgotten ureteral stents between January 2007 and December 2014 were evaluated retrospectively. Patients were classified into four groups according to indwelling time of the stents: 6-12 months, 13-24 months, 25-36 months, and &gt;36 months. Encrustation and associated stone burden of the stents were evaluated with non-contrast stone protocol computerised tomography.<br />\r\n\t<strong>Results</strong>: Patients were classified according to their duration of the stent indwelling time. Simple cystoscopic stent retrieval was performed in 71.4% of patients in the 6-12 months group, 44% of patients in the 13-24 months group, 6.2% of patients in the 25-36 months group, and 11.1% of patients in the &gt;36 months group. A percutaneous or open surgery was required in no patients with an indwelling time of double-J stent shorter than 30 months.<br />\r\n\t<strong>Conclusion</strong>: Transurethral and/or percutaneous combined endo-urological approaches are usually sufficient for the removal of forgotten double-J stents. Transurethral procedures are sufficient for the treatment of patients with double-J stent indwelling times less than 30 months.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Double-J stents are widely used in urology practice, and removal of these stents can sometimes be forgotten. Aims: To investigate whether indwelling time of double-J stent can predict which treatment modality is required for removal of the stent from the body. Study Design: A multicentre, retrospective observational study. Methods: The data of 57 patients who were treated for forgotten ureteral stents between January 2007 and December 2014 were evaluated retrospectively. Patients were classified into four groups according to indwelling time of the stents: 6-12 months, 13-24 months, 25-36 months, and >36 months. Encrustation and associated stone burden of the stents were evaluated with non-contrast stone protocol computerised tomography. Results: Patients were classified according to their duration of the stent indwelling time. Simple cystoscopic stent retrieval was performed in 71.4% of patients in the 6-12 months group, 44% of patients in the 13-24 months group, 6.2% of patients in the 25-36 months group, and 11.1% of patients in the >36 months group. A percutaneous or open surgery was required in no patients with an indwelling time of double-J stent shorter than 30 months. Conclusion: Transurethral and/or percutaneous combined endo-urological approaches are usually sufficient for the removal of forgotten double-J stents. Transurethral procedures are sufficient for the treatment of patients with double-J stent indwelling times less than 30 months.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1562",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "301-307",
+    "views": 6349,
+    "downloads": 3854,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1720",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1720",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1720",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1720",
+    "localPdfUrl": "js/data/pdfs/1720.pdf",
+    "pdfUrl": "js/data/pdfs/1720.pdf"
+  },
+  {
+    "id": 1721,
+    "type": "Original Article",
+    "title": "Atypical Chemokine Receptor 1 Polymorphism can not Affect Susceptibility to Hepatitis C Virus",
+    "authors": [
+      {
+        "name": "Shu-Ting Zhang",
+        "affiliation": "Dalian Blood Center, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ming Shi",
+        "affiliation": "Dalian University School of Medicine, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Lin-Nan Shao",
+        "affiliation": "Dalian Blood Center, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Shi-Hang Zhou",
+        "affiliation": "Dalian Blood Center, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Wei-Jian Yu",
+        "affiliation": "Dalian Blood Center, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Mei Chen",
+        "affiliation": "Dalian Blood Center, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Nan Xiao",
+        "affiliation": "Dalian Blood Center, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ying Duan",
+        "affiliation": "Dalian Blood Center, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ling-Zi Pan",
+        "affiliation": "Dalian Blood Center, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ni Wang",
+        "affiliation": "Dalian Blood Center, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Wen-Qian Song",
+        "affiliation": "Dalian Blood Center, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yue-Xin Xia",
+        "affiliation": "Dalian Blood Center, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Li Zhang",
+        "affiliation": "Dalian Blood Center, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ning Qi",
+        "affiliation": "Dalian Blood Center, Liaoning, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ming Liu",
+        "affiliation": "Department of Cell Biology, Dalian Medical University, Liaoning, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Hepatitis C virus has infected 130 to 150 million individuals globally. Atypical chemokine receptor 1 has become a focus of research because of its diverse roles in different diseases. However, little is known regarding the association of atypical chemokine receptor 1 polymorphism with susceptibility to hepatitis C virus. Aims: To determine the association of an atypical chemokine receptor 1 polymorphism (rs12075) with hepatitis C virus susceptibility. Study Design: Case-control study. Methods: We collected blood samples from 231 patients infected with hepatitis C virus and 239 blood donors as control subjects. Genotyping of atypical chemokine receptor 1 was performed using a 5ˊ-nuclease assay with TaqMan-minor groove binding probes. Comparisons between hepatitis C virus-infected patients and control subjects were assessed using Fisher’s exact test. Results: The genotype frequencies of FY*A/FY*A, FY*A/FY*B and FY*B/FY*B were 86.1%, 13.9% and 0% in the patient group, and 86.2%, 13.4% and 0.4% in the control group, respectively. The difference in atypical chemokine receptor 1 genotype frequencies between hepatitis C virus-infected patients and control group was not significant (p=1.00, OR=1.004, 95% CI=0.594-1.695). FY*A and FY*B allele frequencies were 93.1% and 6.9% in the patient group, and 92.9% and 7.1% in the control group, respectively. The difference in atypical chemokine receptor 1 allele frequencies between hepatitis C virus-infected patients and the control group was not significant (p=1.00, OR=0.972, 95% CI=0.589-1.603). Conclusion: Our result indicates that atypical chemokine receptor 1 polymorphism (rs12075) does not affect susceptibility to hepatitis C virus.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background</strong>: Hepatitis C virus has infected 130 to 150 million individuals globally. Atypical chemokine receptor 1 has become a focus of research because of its diverse roles in different diseases. However, little is known regarding the association of atypical chemokine receptor 1 polymorphism with susceptibility to hepatitis C virus.<br />\r\n\t<strong>Aims</strong>: To determine the association of an atypical chemokine receptor 1 polymorphism (rs12075) with hepatitis C virus susceptibility.<br />\r\n\t<strong>Study Design</strong>: Case-control study.<br />\r\n\t<strong>Methods</strong>: We collected blood samples from 231 patients infected with hepatitis C virus and 239 blood donors as control subjects. Genotyping of atypical chemokine receptor 1 was performed using a 5ˊ-nuclease assay with TaqMan-minor groove binding probes. Comparisons between hepatitis C virus-infected patients and control subjects were assessed using Fisher&rsquo;s exact test.<br />\r\n\t<strong>Results</strong>: The genotype frequencies of FY*A/FY*A, FY*A/FY*B and FY*B/FY*B were 86.1%, 13.9% and 0% in the patient group, and 86.2%, 13.4% and 0.4% in the control group, respectively. The difference in atypical chemokine receptor 1 genotype frequencies between hepatitis C virus-infected patients and control group was not significant (p=1.00, OR=1.004, 95% CI=0.594-1.695). FY*A and FY*B allele frequencies were 93.1% and 6.9% in the patient group, and 92.9% and 7.1% in the control group, respectively. The difference in atypical chemokine receptor 1 allele frequencies between hepatitis C virus-infected patients and the control group was not significant (p=1.00, OR=0.972, 95% CI=0.589-1.603).<br />\r\n\t<strong>Conclusion</strong>: Our result indicates that atypical chemokine receptor 1 polymorphism (rs12075) does not affect susceptibility to hepatitis C virus.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Hepatitis C virus has infected 130 to 150 million individuals globally. Atypical chemokine receptor 1 has become a focus of research because of its diverse roles in different diseases. However, little is known regarding the association of atypical chemokine receptor 1 polymorphism with susceptibility to hepatitis C virus. Aims: To determine the association of an atypical chemokine receptor 1 polymorphism (rs12075) with hepatitis C virus susceptibility. Study Design: Case-control study. Methods: We collected blood samples from 231 patients infected with hepatitis C virus and 239 blood donors as control subjects. Genotyping of atypical chemokine receptor 1 was performed using a 5ˊ-nuclease assay with TaqMan-minor groove binding probes. Comparisons between hepatitis C virus-infected patients and control subjects were assessed using Fisher’s exact test. Results: The genotype frequencies of FY*A/FY*A, FY*A/FY*B and FY*B/FY*B were 86.1%, 13.9% and 0% in the patient group, and 86.2%, 13.4% and 0.4% in the control group, respectively. The difference in atypical chemokine receptor 1 genotype frequencies between hepatitis C virus-infected patients and control group was not significant (p=1.00, OR=1.004, 95% CI=0.594-1.695). FY*A and FY*B allele frequencies were 93.1% and 6.9% in the patient group, and 92.9% and 7.1% in the control group, respectively. The difference in atypical chemokine receptor 1 allele frequencies between hepatitis C virus-infected patients and the control group was not significant (p=1.00, OR=0.972, 95% CI=0.589-1.603). Conclusion: Our result indicates that atypical chemokine receptor 1 polymorphism (rs12075) does not affect susceptibility to hepatitis C virus.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0766",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "308-312",
+    "views": 6513,
+    "downloads": 9864,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1721",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1721",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1721",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1721",
+    "localPdfUrl": "js/data/pdfs/1721.pdf",
+    "pdfUrl": "js/data/pdfs/1721.pdf"
+  },
+  {
+    "id": 1722,
+    "type": "Original Article",
+    "title": "Is the Diagnosis of Celiac Disease Possible Without Intestinal Biopsy?",
+    "authors": [
+      {
+        "name": "Maha Shomaf",
+        "affiliation": "Department of Pathology, Jordan University School of Medicine, Amman, Jordan",
+        "orcid": ""
+      },
+      {
+        "name": "Mohammad Rashid",
+        "affiliation": "Department of Internal Medicine, Jordan University School of Medicine, Amman, Jordan",
+        "orcid": ""
+      },
+      {
+        "name": "Dana Faydi",
+        "affiliation": "Jordan University School of Medicine, Amman, Jordan",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmad Halawa",
+        "affiliation": "Department of Internal Medicine, Jordan University School of Medicine, Amman, Jordan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Coeliac disease is defined as a state of immune-mediated hyper-responsiveness to dietary gluten from wheat, barley, or rye in genetically predisposed individuals that results in tissue damage. The diagnosis is made by microscopic examination of a small intestinal biopsy, although serological testing for antibodies against tissue transglutaminase and deamidated gliadin peptide can be of great advantage. It has been suggested that duodenal biopsy can be avoided in patients with high levels of the tissue transglutaminase antibody, since a relationship has been found to be present between tissue transglutaminase antibody titres and coeliac disease. Aims: To study the correlation between tissue transglutaminase titre and small intestinal biopsy findings in patients with coeliac disease. Study Design: Diagnostic accuracy study. Methods: Ninety-five cases of patients diagnosed with coeliac disease and with positive serum tissue transglutaminase titres were retrieved from the Jordan University Hospital archives between December 2014 and December 2015. All the cases were classified according to the Marsh classification. Results: Ninety-five cases with a positive titre for the antibody were included in this study, 73 (76.8%) of them were females and 22 cases (23.2%) were males. The age of the patients ranged between 4 and 75 years with a mean age ± standard deviation of 32.3±14.7. The sensitivity was the highest in Marsh IIIC and lowest in Marsh IIIA (95% versus 68% respectively). The specificity was moderate (76%) for all subtypes of Marsh III. Conclusion: This study showed a positive correlation between the tissue transglutaminase titre and the degree of duodenal damage (Marsh IIIC) in patients with coeliac disease. In the presence of high tissue transglutaminase levels, duodenal biopsy might not be always necessary for diagnosis, particularly in symptomatic patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background</strong>: Coeliac disease is defined as a state of immune-mediated hyper-responsiveness to dietary gluten from wheat, barley, or rye in genetically predisposed individuals that results in tissue damage. The diagnosis is made by microscopic examination of a small intestinal biopsy, although serological testing for antibodies against tissue transglutaminase and deamidated gliadin peptide can be of great advantage. It has been suggested that duodenal biopsy can be avoided in patients with high levels of the tissue transglutaminase antibody, since a relationship has been found to be present between tissue transglutaminase antibody titres and coeliac disease.<br />\r\n\t<strong>Aims</strong>: To study the correlation between tissue transglutaminase titre and small intestinal biopsy findings in patients with coeliac disease.<br />\r\n\t<strong>Study Design</strong>: Diagnostic accuracy study.<br />\r\n\t<strong>Methods</strong>: Ninety-five cases of patients diagnosed with coeliac disease and with positive serum tissue transglutaminase titres were retrieved from the Jordan University Hospital archives between December 2014 and December 2015. All the cases were classified according to the Marsh classification.<br />\r\n\t<strong>Results</strong>: Ninety-five cases with a positive titre for the antibody were included in this study, 73 (76.8%) of them were females and 22 cases (23.2%) were males. The age of the patients ranged between 4 and 75 years with a mean age &plusmn; standard deviation of 32.3&plusmn;14.7. The sensitivity was the highest in Marsh IIIC and lowest in Marsh IIIA (95% versus 68% respectively). The specificity was moderate (76%) for all subtypes of Marsh III.<br />\r\n\t<strong>Conclusion</strong>: This study showed a positive correlation between the tissue transglutaminase titre and the degree of duodenal damage (Marsh IIIC) in patients with coeliac disease. In the presence of high tissue transglutaminase levels, duodenal biopsy might not be always necessary for diagnosis, particularly in symptomatic patients.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Coeliac disease is defined as a state of immune-mediated hyper-responsiveness to dietary gluten from wheat, barley, or rye in genetically predisposed individuals that results in tissue damage. The diagnosis is made by microscopic examination of a small intestinal biopsy, although serological testing for antibodies against tissue transglutaminase and deamidated gliadin peptide can be of great advantage. It has been suggested that duodenal biopsy can be avoided in patients with high levels of the tissue transglutaminase antibody, since a relationship has been found to be present between tissue transglutaminase antibody titres and coeliac disease. Aims: To study the correlation between tissue transglutaminase titre and small intestinal biopsy findings in patients with coeliac disease. Study Design: Diagnostic accuracy study. Methods: Ninety-five cases of patients diagnosed with coeliac disease and with positive serum tissue transglutaminase titres were retrieved from the Jordan University Hospital archives between December 2014 and December 2015. All the cases were classified according to the Marsh classification. Results: Ninety-five cases with a positive titre for the antibody were included in this study, 73 (76.8%) of them were females and 22 cases (23.2%) were males. The age of the patients ranged between 4 and 75 years with a mean age ± standard deviation of 32.3±14.7. The sensitivity was the highest in Marsh IIIC and lowest in Marsh IIIA (95% versus 68% respectively). The specificity was moderate (76%) for all subtypes of Marsh III. Conclusion: This study showed a positive correlation between the tissue transglutaminase titre and the degree of duodenal damage (Marsh IIIC) in patients with coeliac disease. In the presence of high tissue transglutaminase levels, duodenal biopsy might not be always necessary for diagnosis, particularly in symptomatic patients.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1258",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "313-317",
+    "views": 6612,
+    "downloads": 9794,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1722",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1722",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1722",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1722",
+    "localPdfUrl": "js/data/pdfs/1722.pdf",
+    "pdfUrl": "js/data/pdfs/1722.pdf"
+  },
+  {
+    "id": 1723,
+    "type": "Original Article",
+    "title": "Evaluation of Inferior Turbinate Stroma with Ultrasound Elastography in Allergic Rhinitis Patients",
+    "authors": [
+      {
+        "name": "Göksel Turhal",
+        "affiliation": "Department of Otolaryngology, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sercan Göde",
+        "affiliation": "Department of Otolaryngology, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ceyda Tunakan Dalgıç",
+        "affiliation": "Department of Allergy and Immunology, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aytül Zerrin Sin",
+        "affiliation": "Department of Allergy and Immunology, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erkan Kısmalı",
+        "affiliation": "Department of Radiology, Ege University School of Medinice, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İsa Kaya",
+        "affiliation": "Department of Otolaryngology, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Arın Öztürk",
+        "affiliation": "Department of Otolaryngology, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özlem Göksel",
+        "affiliation": "Department of Pulmonology, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Raşit Midilli",
+        "affiliation": "Department of Otolaryngology, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kerem Öztürk",
+        "affiliation": "Department of Otolaryngology, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Karcı [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Diagnosis of allergic rhinitis is primarily based on history, physical examination and allergy testing. A technique that noninvasively evaluates the soft tissue changes in the nasal mucosa of allergic rhinitis patients has not been defined. Aims: To assess nasal mucosal changes and measure the submucosal fibrosis in allergic rhinitis patients with sonoelastography. Study Design: Case control study. Methods: Eighty-eight turbinates of 44 patients were included in the study. There were 23 prick test positive allergic rhinitis patients. The control group constituted 21 patients. The rhinitis quality of life questionnaire and the visual analogue scale were applied to the allergic rhinitis patients. A higher visual analogue scale score indicated more severe allergic rhinitis symptoms. Sonoelastographic measurements were made from the lateral nasal wall. The propagation speed of sound waves was recorded in m/s. The presence of asthma and the type of allergic rhinitis (seasonal or perennial) was noted. Results: Ten patients had seasonal allergic rhinitis and thirteen patients had perennial allergic rhinitis. Six patients (26.1%) had accompanying asthma along with allergic rhinitis. The median visual analogue scale score was 7 (3-9) in allergic rhinitis patients. The median symptom duration was 7 (1-24) months. The median quality of life questionnaire score was 3.39 (1.68-5.43) points. The median sonoelastography scores of allergic rhinitis patients and healthy subjects were 2.38 m/s (0.9-4.47) and 2.42 m/s (1.62-3.50), respectively. Sonoelastographic measurements of seasonal and perennial allergic rhinitis patients did not differ significantly (p>0.05). The presence of asthma did not have a significant impact on the elastography measurements (p>0.05). However, regression analysis revealed a significant inverse correlation (coefficients: B=0.005, standard error=0.097, beta 0=0.008) between the visual analogue scale and sonoelastography scores (p<0.05). Conclusion: Sonoelastography was not suitable as a diagnostic tool in allergic rhinitis. Reduced sonoelastography scores were measured in more symptomatic patients. Higher visual analogue scale scores could be an indicator of disease severity.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background</strong>: Diagnosis of allergic rhinitis is primarily based on history, physical examination and allergy testing. A technique that noninvasively evaluates the soft tissue changes in the nasal mucosa of allergic rhinitis patients has not been defined.<br />\r\n\t<strong>Aims</strong>: To assess nasal mucosal changes and measure the submucosal fibrosis in allergic rhinitis patients with sonoelastography.<br />\r\n\t<strong>Study Design</strong>: Case control study.<br />\r\n\t<strong>Methods</strong>: Eighty-eight turbinates of 44 patients were included in the study. There were 23 prick test positive allergic rhinitis patients. The control group constituted 21 patients. The rhinitis quality of life questionnaire and the visual analogue scale were applied to the allergic rhinitis patients. A higher visual analogue scale score indicated more severe allergic rhinitis symptoms. Sonoelastographic measurements were made from the lateral nasal wall. The propagation speed of sound waves was recorded in m/s. The presence of asthma and the type of allergic rhinitis (seasonal or perennial) was noted.<br />\r\n\t<strong>Results</strong>: Ten patients had seasonal allergic rhinitis and thirteen patients had perennial allergic rhinitis. Six patients (26.1%) had accompanying asthma along with allergic rhinitis. The median visual analogue scale score was 7 (3-9) in allergic rhinitis patients. The median symptom duration was 7 (1-24) months. The median quality of life questionnaire score was 3.39 (1.68-5.43) points. The median sonoelastography scores of allergic rhinitis patients and healthy subjects were 2.38 m/s (0.9-4.47) and 2.42 m/s (1.62-3.50), respectively. Sonoelastographic measurements of seasonal and perennial allergic rhinitis patients did not differ significantly (p&gt;0.05). The presence of asthma did not have a significant impact on the elastography measurements (p&gt;0.05). However, regression analysis revealed a significant inverse correlation (coefficients: B=0.005, standard error=0.097, beta 0=0.008) between the visual analogue scale and sonoelastography scores (p&lt;0.05).<br />\r\n\t<strong>Conclusion</strong>: Sonoelastography was not suitable as a diagnostic tool in allergic rhinitis. Reduced sonoelastography scores were measured in more symptomatic patients. Higher visual analogue scale scores could be an indicator of disease severity.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Diagnosis of allergic rhinitis is primarily based on history, physical examination and allergy testing. A technique that noninvasively evaluates the soft tissue changes in the nasal mucosa of allergic rhinitis patients has not been defined. Aims: To assess nasal mucosal changes and measure the submucosal fibrosis in allergic rhinitis patients with sonoelastography. Study Design: Case control study. Methods: Eighty-eight turbinates of 44 patients were included in the study. There were 23 prick test positive allergic rhinitis patients. The control group constituted 21 patients. The rhinitis quality of life questionnaire and the visual analogue scale were applied to the allergic rhinitis patients. A higher visual analogue scale score indicated more severe allergic rhinitis symptoms. Sonoelastographic measurements were made from the lateral nasal wall. The propagation speed of sound waves was recorded in m/s. The presence of asthma and the type of allergic rhinitis (seasonal or perennial) was noted. Results: Ten patients had seasonal allergic rhinitis and thirteen patients had perennial allergic rhinitis. Six patients (26.1%) had accompanying asthma along with allergic rhinitis. The median visual analogue scale score was 7 (3-9) in allergic rhinitis patients. The median symptom duration was 7 (1-24) months. The median quality of life questionnaire score was 3.39 (1.68-5.43) points. The median sonoelastography scores of allergic rhinitis patients and healthy subjects were 2.38 m/s (0.9-4.47) and 2.42 m/s (1.62-3.50), respectively. Sonoelastographic measurements of seasonal and perennial allergic rhinitis patients did not differ significantly (p>0.05). The presence of asthma did not have a significant impact on the elastography measurements (p>0.05). However, regression analysis revealed a significant inverse correlation (coefficients: B=0.005, standard error=0.097, beta 0=0.008) between the visual analogue scale and sonoelastography scores (p<0.05). Conclusion: Sonoelastography was not suitable as a diagnostic tool in allergic rhinitis. Reduced sonoelastography scores were measured in more symptomatic patients. Higher visual analogue scale scores could be an indicator of disease severity.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1339",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "318-322",
+    "views": 6600,
+    "downloads": 9800,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1723",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1723",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1723",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1723",
+    "localPdfUrl": "js/data/pdfs/1723.pdf",
+    "pdfUrl": "js/data/pdfs/1723.pdf"
+  },
+  {
+    "id": 1724,
+    "type": "Original Article",
+    "title": "Turkey’s Epidemiological and Demographic Transitions: 1931-2013",
+    "authors": [
+      {
+        "name": "Coşkun Bakar",
+        "affiliation": "Department of Public Health, Çanakkale Onsekiz Mart University School of Medicine, Çanakkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sibel Oymak",
+        "affiliation": "Department of Public Health, Çanakkale Onsekiz Mart University School of Medicine, Çanakkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Işıl Maral",
+        "affiliation": "Department of Public Health, İstanbul Medeniyet University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: The causes of death have changed with regard to the epidemiological and demographic events in society. There is no evidence of prior research into the epidemiological transition in Turkey. This transition in Turkey should be observed starting with the Ottoman Empire period (19th to early 20th century). However, information about the Ottoman Empire is quite limited. Aims: To discuss the epidemiological and demographic transitions in Turkey, using demographic, educational and urbanization data in our present study. Study Design: A descriptive archive study. Methods: Mortality statistics dating from 1931 and published by the Turkish Statistical Institute were analysed, and the causes of death were coded and classified according to ICD-10. Other data were obtained from the published reports and studies regarding the issue. Results: In the 1930s, Turkey’s life expectancy was low (aged 40 years), fertility and mortality rates were high (respectively 45% and 31%), and the main causes of death were infectious diseases. Nowadays, life expectancy is close to 80 years, the total fertility rate has dropped to 2.1 per woman, and the main causes of death are chronic diseases and cancer. The population rate in the urban areas has increased steadily from 24.2% in 1927 to 77.3% in 2012. level of education has also increased during this period. In 1935, less than 10% of women were literate, and in 2013 90% were literate. Qualitative and quantitative increase have been observed in the presentation and access of healthcare services compared to the early years of the Republic. Conclusion: Turkey has been undergoing a modernization period in the last 200 years, and it is believed that the epidemiological and demographic transitions result from this period. This process has led to urbanization and an increase in the level of education, as well as a decrease in premature deaths, lower fertility rates, and an increase in the elderly population and chronic diseases. It is therefore our conclusion that Turkey needs policies regarding the elderly population and the management of chronic diseases.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background</strong>: The causes of death have changed with regard to the epidemiological and demographic events in society. There is no evidence of prior research into the epidemiological transition in Turkey. This transition in Turkey should be observed starting with the Ottoman Empire period (19<sup>th</sup> to early 20<sup>th</sup> century). However, information about the Ottoman Empire is quite limited.<br />\r\n\t<strong>Aims</strong>: To discuss the epidemiological and demographic transitions in Turkey, using demographic, educational and urbanization data in our present study.<br />\r\n\t<strong>Study Design</strong>: A descriptive archive study.<br />\r\n\t<strong>Methods</strong>: Mortality statistics dating from 1931 and published by the Turkish Statistical Institute were analysed, and the causes of death were coded and classified according to ICD-10. Other data were obtained from the published reports and studies regarding the issue.<br />\r\n\t<strong>Results</strong>: In the 1930s, Turkey&rsquo;s life expectancy was low (aged 40 years), fertility and mortality rates were high (respectively 45% and 31%), and the main causes of death were infectious diseases. Nowadays, life expectancy is close to 80 years, the total fertility rate has dropped to 2.1 per woman, and the main causes of death are chronic diseases and cancer. The population rate in the urban areas has increased steadily from 24.2% in 1927 to 77.3% in 2012. level of education has also increased during this period. In 1935, less than 10% of women were literate, and in 2013 90% were literate. Qualitative and quantitative increase have been observed in the presentation and access of healthcare services compared to the early years of the Republic.<br />\r\n\t<strong>Conclusion</strong>: Turkey has been undergoing a modernization period in the last 200 years, and it is believed that the epidemiological and demographic transitions result from this period. This process has led to urbanization and an increase in the level of education, as well as a decrease in premature deaths, lower fertility rates, and an increase in the elderly population and chronic diseases. It is therefore our conclusion that Turkey needs policies regarding the elderly population and the management of chronic diseases.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: The causes of death have changed with regard to the epidemiological and demographic events in society. There is no evidence of prior research into the epidemiological transition in Turkey. This transition in Turkey should be observed starting with the Ottoman Empire period (19th to early 20th century). However, information about the Ottoman Empire is quite limited. Aims: To discuss the epidemiological and demographic transitions in Turkey, using demographic, educational and urbanization data in our present study. Study Design: A descriptive archive study. Methods: Mortality statistics dating from 1931 and published by the Turkish Statistical Institute were analysed, and the causes of death were coded and classified according to ICD-10. Other data were obtained from the published reports and studies regarding the issue. Results: In the 1930s, Turkey’s life expectancy was low (aged 40 years), fertility and mortality rates were high (respectively 45% and 31%), and the main causes of death were infectious diseases. Nowadays, life expectancy is close to 80 years, the total fertility rate has dropped to 2.1 per woman, and the main causes of death are chronic diseases and cancer. The population rate in the urban areas has increased steadily from 24.2% in 1927 to 77.3% in 2012. level of education has also increased during this period. In 1935, less than 10% of women were literate, and in 2013 90% were literate. Qualitative and quantitative increase have been observed in the presentation and access of healthcare services compared to the early years of the Republic. Conclusion: Turkey has been undergoing a modernization period in the last 200 years, and it is believed that the epidemiological and demographic transitions result from this period. This process has led to urbanization and an increase in the level of education, as well as a decrease in premature deaths, lower fertility rates, and an increase in the elderly population and chronic diseases. It is therefore our conclusion that Turkey needs policies regarding the elderly population and the management of chronic diseases.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0960",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "323-334",
+    "views": 6850,
+    "downloads": 10473,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1724",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1724",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1724",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1724",
+    "localPdfUrl": "js/data/pdfs/1724.pdf",
+    "pdfUrl": "js/data/pdfs/1724.pdf"
+  },
+  {
+    "id": 1725,
+    "type": "Original Article",
+    "title": "Parents’ Attitudes and Adherence to Unintentional Injury Prevention Measures in Ankara, Turkey",
+    "authors": [
+      {
+        "name": "Tolga İnce",
+        "affiliation": "Department of Pediatrics, Social Pediatrics Unit, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Songül Yalçın",
+        "affiliation": "Department of Pediatrics, Social Pediatrics Unit, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kadriye Yurdakök [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Childhood unintentional injuries are perceived as a leading public health issue since they are one of the preventable causes of paediatric mortality and morbidity. Whether and how parental factors are related to childhood injury has been researched insufficiently. Aims: To investigate parents’ attitudes to preventive measures of unintentional childhood injury, and the parental adherence to these measures. Study Design: Cross-sectional, descriptive study. Methods: The data were collected from the parents of children younger than ten years of age admitted to university hospital outpatient clinics for any reason and who agreed to be involved in the study. The first part of the questionnaire included sociodemographic profiles of participating children. Serious injuries were considered to be any injury that requires hospital admission. The second part of the questionnaire was prepared to evaluate parents’ adherence to injury prevention rules. A total score calculation about the adherence of the parents to the injury prevention rules was worked out the addition of the scores of each answer given in each age group. Answers for each item given by the parents were scored as wrong (0), sometimes (1) or correct (2). The score for each item was added and the result normalized to 100 points. Only complete questionnaires were used for analysis. Results: A total of 1126 children and parent pairs agreed to participate in the survey. It was found that 13.8% of the participating children had experienced at least one serious injury. Although three-quarters of the parents had received information about injury prevention, the overall injury prevention scores were found to be low. As children’s age increased, the total injury prevention scores of parents decreased significantly. Injury prevention scores were shown to increase significantly with high education and maternal occupation. However, scores were shown to decrease significantly with increased child age and family size. Conclusion: Our study shows that parental adherence to the child safety measures aimed at decreasing the unintentional injury risk of children is not satisfactory in Turkey. In particular, parents of 5-9-year-old children, big families (more than five people), parents with less than 8 years of education and non-working mothers should be the main target groups for intervention strategies according to our study results.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background</strong>: Childhood unintentional injuries are perceived as a leading public health issue since they are one of the preventable causes of paediatric mortality and morbidity. Whether and how parental factors are related to childhood injury has been researched insufficiently.<br />\r\n\t<strong>Aims</strong>: To investigate parents&rsquo; attitudes to preventive measures of unintentional childhood injury, and the parental adherence to these measures.<br />\r\n\t<strong>Study Design</strong>: Cross-sectional, descriptive study.<br />\r\n\t<strong>Methods</strong>: The data were collected from the parents of children younger than ten years of age admitted to university hospital outpatient clinics for any reason and who agreed to be involved in the study. The first part of the questionnaire included sociodemographic profiles of participating children. Serious injuries were considered to be any injury that requires hospital admission. The second part of the questionnaire was prepared to evaluate parents&rsquo; adherence to injury prevention rules. A total score calculation about the adherence of the parents to the injury prevention rules was worked out the addition of the scores of each answer given in each age group. Answers for each item given by the parents were scored as wrong (0), sometimes (1) or correct (2). The score for each item was added and the result normalized to 100 points. Only complete questionnaires were used for analysis.<br />\r\n\t<strong>Results</strong>: A total of 1126 children and parent pairs agreed to participate in the survey. It was found that 13.8% of the participating children had experienced at least one serious injury. Although three-quarters of the parents had received information about injury prevention, the overall injury prevention scores were found to be low. As children&rsquo;s age increased, the total injury prevention scores of parents decreased significantly. Injury prevention scores were shown to increase significantly with high education and maternal occupation. However, scores were shown to decrease significantly with increased child age and family size.<br />\r\n\t<strong>Conclusion</strong>: Our study shows that parental adherence to the child safety measures aimed at decreasing the unintentional injury risk of children is not satisfactory in Turkey. In particular, parents of 5-9-year-old children, big families (more than five people), parents with less than 8 years of education and non-working mothers should be the main target groups for intervention strategies according to our study results.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Childhood unintentional injuries are perceived as a leading public health issue since they are one of the preventable causes of paediatric mortality and morbidity. Whether and how parental factors are related to childhood injury has been researched insufficiently. Aims: To investigate parents’ attitudes to preventive measures of unintentional childhood injury, and the parental adherence to these measures. Study Design: Cross-sectional, descriptive study. Methods: The data were collected from the parents of children younger than ten years of age admitted to university hospital outpatient clinics for any reason and who agreed to be involved in the study. The first part of the questionnaire included sociodemographic profiles of participating children. Serious injuries were considered to be any injury that requires hospital admission. The second part of the questionnaire was prepared to evaluate parents’ adherence to injury prevention rules. A total score calculation about the adherence of the parents to the injury prevention rules was worked out the addition of the scores of each answer given in each age group. Answers for each item given by the parents were scored as wrong (0), sometimes (1) or correct (2). The score for each item was added and the result normalized to 100 points. Only complete questionnaires were used for analysis. Results: A total of 1126 children and parent pairs agreed to participate in the survey. It was found that 13.8% of the participating children had experienced at least one serious injury. Although three-quarters of the parents had received information about injury prevention, the overall injury prevention scores were found to be low. As children’s age increased, the total injury prevention scores of parents decreased significantly. Injury prevention scores were shown to increase significantly with high education and maternal occupation. However, scores were shown to decrease significantly with increased child age and family size. Conclusion: Our study shows that parental adherence to the child safety measures aimed at decreasing the unintentional injury risk of children is not satisfactory in Turkey. In particular, parents of 5-9-year-old children, big families (more than five people), parents with less than 8 years of education and non-working mothers should be the main target groups for intervention strategies according to our study results.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1776",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "335-342",
+    "views": 6814,
+    "downloads": 10123,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1725",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1725",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1725",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1725",
+    "localPdfUrl": "js/data/pdfs/1725.pdf",
+    "pdfUrl": "js/data/pdfs/1725.pdf"
+  },
+  {
+    "id": 1726,
+    "type": "Original Article",
+    "title": "Role of Trace Elements for Oxidative Status and Quality of \r\nHuman Sperm",
+    "authors": [
+      {
+        "name": "Galina Nenkova",
+        "affiliation": "Laboratory of Free Radical Processes, Institute of Neurobiology, Bulgarian Academy of Science, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Lubomir Petrov",
+        "affiliation": "Department of Physiology and Biochemistry, National Sports Academy, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Albena Alexandrova",
+        "affiliation": "Department of Physiology and Biochemistry, National Sports Academy, Sofia, Bulgaria",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Oxidative stress affects sperm quality negatively. To maintain the pro/antioxidant balance, some metal ions (e.g. copper, zink, iron, selenium), which are co-factors of the antioxidant enzymes, are essential. However, iron and copper could act as prooxidants inducing oxidative damage of spermatozoa. Aims: To reveal a possible correlation between the concentrations of some metal ions (iron, copper, zinc, and selenium) in human seminal plasma, oxidative stress, assessed by malondialdehyde and total glutathione levels, and semen quality, assessed by the parameters count, motility, and morphology. Study Design: Descriptive study. Methods: The semen analysis for volume, count, and motility was performed according to World Health Organization (2010) guidelines, using computer-assisted semen analysis. For the determination of spermatozoa morphology, a SpermBlue staining method was applied. Depending on their parameters, the sperm samples were categorized into normozoospermic, teratozoospermic, asthenoteratozoospermic, and oligoteratozoospermic. The seminal plasma content of iron, copper, zinc, and selenium was estimated by atomic absorption spectroscopy. The malondialdehyde and total glutathione levels were quantified spectrophotometrically. Results: In the groups with poor sperm quality, the levels of Fe were higher, whereas those of Zn and Se were significantly lower than in the normozoospermic group. In all groups with poor sperm quality, increased levels of malondialdehyde and decreased glutathione levels were detected as evidence of oxidative stress occurrence. All these differences are most pronounced in the asthenoteratozoospermic group where values differ nearly twice as much compared to the normozoospermic group. The Fe concentration correlated positively with the malondialdehyde (r=0.666, p=0.018), whereas it showed a negative correlation with the level of total glutathione (r=-0.689, p=0.013). The total glutathione level correlated positively with the sperm motility (r=0.589, p=0.044). Conclusion: The elevated levels of Fe and the reduced Se levels are associated with sperm damage. The changes in the concentrations of the trace elements in human seminal plasma may be related to sperm quality since they are involved in the maintenance of the pro-/antioxidative balance in ejaculate.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background</strong>: Oxidative stress affects sperm quality negatively. To maintain the pro/antioxidant balance, some metal ions (e.g. copper, zink, iron, selenium), which are co-factors of the antioxidant enzymes, are essential. However, iron and copper could act as prooxidants inducing oxidative damage of spermatozoa.<br />\r\n\t<strong>Aims</strong>: To reveal a possible correlation between the concentrations of some metal ions (iron, copper, zinc, and selenium) in human seminal plasma, oxidative stress, assessed by malondialdehyde and total glutathione levels, and semen quality, assessed by the parameters count, motility, and morphology.<br />\r\n\t<strong>Study Design: </strong>Descriptive study.<br />\r\n\t<strong>Methods</strong>: The semen analysis for volume, count, and motility was performed according to World Health Organization (2010) guidelines, using computer-assisted semen analysis. For the determination of spermatozoa morphology, a SpermBlue staining method was applied. Depending on their parameters, the sperm samples were categorized into normozoospermic, teratozoospermic, asthenoteratozoospermic, and oligoteratozoospermic. The seminal plasma content of iron, copper, zinc, and selenium was estimated by atomic absorption spectroscopy. The malondialdehyde and total glutathione levels were quantified spectrophotometrically.<br />\r\n\t<strong>Results</strong>: In the groups with poor sperm quality, the levels of Fe were higher, whereas those of Zn and Se were significantly lower than in the normozoospermic group. In all groups with poor sperm quality, increased levels of malondialdehyde and decreased glutathione levels were detected as evidence of oxidative stress occurrence. All these differences are most pronounced in the asthenoteratozoospermic group where values differ nearly twice as much compared to the normozoospermic group. The Fe concentration correlated positively with the malondialdehyde (r=0.666, p=0.018), whereas it showed a negative correlation with the level of total glutathione (r=-0.689, p=0.013). The total glutathione level correlated positively with the sperm motility (r=0.589, p=0.044).<br />\r\n\t<strong>Conclusion</strong>: The elevated levels of Fe and the reduced Se levels are associated with sperm damage. The changes in the concentrations of the trace elements in human seminal plasma may be related to sperm quality since they are involved in the maintenance of the pro-/antioxidative balance in ejaculate.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Oxidative stress affects sperm quality negatively. To maintain the pro/antioxidant balance, some metal ions (e.g. copper, zink, iron, selenium), which are co-factors of the antioxidant enzymes, are essential. However, iron and copper could act as prooxidants inducing oxidative damage of spermatozoa. Aims: To reveal a possible correlation between the concentrations of some metal ions (iron, copper, zinc, and selenium) in human seminal plasma, oxidative stress, assessed by malondialdehyde and total glutathione levels, and semen quality, assessed by the parameters count, motility, and morphology. Study Design: Descriptive study. Methods: The semen analysis for volume, count, and motility was performed according to World Health Organization (2010) guidelines, using computer-assisted semen analysis. For the determination of spermatozoa morphology, a SpermBlue staining method was applied. Depending on their parameters, the sperm samples were categorized into normozoospermic, teratozoospermic, asthenoteratozoospermic, and oligoteratozoospermic. The seminal plasma content of iron, copper, zinc, and selenium was estimated by atomic absorption spectroscopy. The malondialdehyde and total glutathione levels were quantified spectrophotometrically. Results: In the groups with poor sperm quality, the levels of Fe were higher, whereas those of Zn and Se were significantly lower than in the normozoospermic group. In all groups with poor sperm quality, increased levels of malondialdehyde and decreased glutathione levels were detected as evidence of oxidative stress occurrence. All these differences are most pronounced in the asthenoteratozoospermic group where values differ nearly twice as much compared to the normozoospermic group. The Fe concentration correlated positively with the malondialdehyde (r=0.666, p=0.018), whereas it showed a negative correlation with the level of total glutathione (r=-0.689, p=0.013). The total glutathione level correlated positively with the sperm motility (r=0.589, p=0.044). Conclusion: The elevated levels of Fe and the reduced Se levels are associated with sperm damage. The changes in the concentrations of the trace elements in human seminal plasma may be related to sperm quality since they are involved in the maintenance of the pro-/antioxidative balance in ejaculate.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0147",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "343-348",
+    "views": 6608,
+    "downloads": 10556,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1726",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1726",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1726",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1726",
+    "localPdfUrl": "js/data/pdfs/1726.pdf",
+    "pdfUrl": "js/data/pdfs/1726.pdf"
+  },
+  {
+    "id": 1727,
+    "type": "Original Article",
+    "title": "The Time in Therapeutic Range and Bleeding Complications of Warfarin in Different Geographic Regions of Turkey: A Subgroup Analysis of WARFARIN-TR Study",
+    "authors": [
+      {
+        "name": "Salih Kılıç",
+        "affiliation": "Department of Cardiology, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Çelik",
+        "affiliation": "Department of Cardiology, Mersin University School of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hüseyin Altuğ Çakmak",
+        "affiliation": "Clinic of Cardiology, Kaçkar State Hospital, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Abdülmecit Afşin",
+        "affiliation": "Department of Cardiology, İnönü University School of Medicine, Malatya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet İlker Tekkeşin",
+        "affiliation": "Clinic of Cardiology, Siyami Ersek Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gönül Açıksarı",
+        "affiliation": "Clinic of Cardiology, İstinye State Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Erdem Memetoğlu",
+        "affiliation": "Clinic of Cardiovascular Surgery, Siyami Ersek Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatma Özpamuk Karadeniz",
+        "affiliation": "Clinic of Cardiology, Balıklıgöl State Hospital, Şanlıurfa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ekrem Şahan",
+        "affiliation": "Clinic of Cardiology, Atatürk Chest Disease and Chest Surgery Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Hayri Alıcı",
+        "affiliation": "Clinic of Cardiology, 25 Aralık State Hospital, Gaziantep, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yüksel Dereli",
+        "affiliation": "Department of Cardiovascular Surgery, Necmettin Erbakan University Meram School of Medicine, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ümit Yaşar Sinan",
+        "affiliation": "Department of Cardiology, İstanbul University Institute of Cardiology, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehdi Zoghi [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: The time in therapeutic range values may vary between different geographical regions of Turkey in patients vitamin K antagonist therapy. Aims: To evaluate the time in therapeutic range percentages, efficacy, safety and awareness of warfarin according to the different geographical regions in patients who participated in the WARFARIN-TR study (The Awareness, Efficacy, Safety and Time in Therapeutic Range of Warfarin in the Turkish population) in Turkey. Study Design: Cross-sectional study. Methods: The WARFARIN-TR study includes 4987 patients using warfarin and involved regular international normalized ratio monitoring between January 1, 2014 and December 31, 2014. Patients attended follow-ups for 12 months. The sample size calculations were analysed according to the density of the regional population and according to Turkish Statistical Institute data. The time in therapeutic range was calculated according to F.R. Roosendaal’s algorithm. Awareness was evaluated based on the patients’ knowledge of the effect of warfarin and food-drug interactions with simple questions developed based on a literature review. Results: The Turkey-wide time in therapeutic range was reported as 49.5%±22.9 in the WARFARIN-TR study. There were statistically significant differences between regions in terms of time in therapeutic range (p<0.001). The highest rate was reported in the Marmara region (54.99%±20.91) and the lowest was in the South-eastern Anatolia region (41.95±24.15) (p<0.001). Bleeding events were most frequently seen in Eastern Anatolia (41.6%), with major bleeding in the Aegean region (5.11%) and South-eastern Anatolia (5.36%). There were statistically significant differences between the regions in terms of awareness (p<0.001). Conclusion: Statistically significant differences were observed in terms of the efficacy, safety and awareness of warfarin therapy according to different geographical regions in Turkey.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background</strong>: The time in therapeutic range values may vary between different geographical regions of Turkey in patients vitamin K antagonist therapy.<br />\r\n\t<strong>Aims</strong>: To evaluate the time in therapeutic range percentages, efficacy, safety and awareness of warfarin according to the different geographical regions in patients who participated in the WARFARIN-TR study (The Awareness, Efficacy, Safety and Time in Therapeutic Range of Warfarin in the Turkish population) in Turkey.<br />\r\n\t<strong>Study Design</strong>: Cross-sectional study.<br />\r\n\t<strong>Methods</strong>: The WARFARIN-TR study includes 4987 patients using warfarin and involved regular international normalized ratio monitoring between January 1, 2014 and December 31, 2014. Patients attended follow-ups for 12 months. The sample size calculations were analysed according to the density of the regional population and according to Turkish Statistical Institute data. The time in therapeutic range was calculated according to F.R. Roosendaal&rsquo;s algorithm. Awareness was evaluated based on the patients&rsquo; knowledge of the effect of warfarin and food-drug interactions with simple questions developed based on a literature review.<br />\r\n\t<strong>Results</strong>: The Turkey-wide time in therapeutic range was reported as 49.5%&plusmn;22.9 in the WARFARIN-TR study. There were statistically significant differences between regions in terms of time in therapeutic range (p&lt;0.001). The highest rate was reported in the Marmara region (54.99%&plusmn;20.91) and the lowest was in the South-eastern Anatolia region (41.95&plusmn;24.15) (p&lt;0.001). Bleeding events were most frequently seen in Eastern Anatolia (41.6%), with major bleeding in the Aegean region (5.11%) and South-eastern Anatolia (5.36%). There were statistically significant differences between the regions in terms of awareness (p&lt;0.001).<br />\r\n\t<strong>Conclusion</strong>: Statistically significant differences were observed in terms of the efficacy, safety and awareness of warfarin therapy according to different geographical regions in Turkey.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: The time in therapeutic range values may vary between different geographical regions of Turkey in patients vitamin K antagonist therapy. Aims: To evaluate the time in therapeutic range percentages, efficacy, safety and awareness of warfarin according to the different geographical regions in patients who participated in the WARFARIN-TR study (The Awareness, Efficacy, Safety and Time in Therapeutic Range of Warfarin in the Turkish population) in Turkey. Study Design: Cross-sectional study. Methods: The WARFARIN-TR study includes 4987 patients using warfarin and involved regular international normalized ratio monitoring between January 1, 2014 and December 31, 2014. Patients attended follow-ups for 12 months. The sample size calculations were analysed according to the density of the regional population and according to Turkish Statistical Institute data. The time in therapeutic range was calculated according to F.R. Roosendaal’s algorithm. Awareness was evaluated based on the patients’ knowledge of the effect of warfarin and food-drug interactions with simple questions developed based on a literature review. Results: The Turkey-wide time in therapeutic range was reported as 49.5%±22.9 in the WARFARIN-TR study. There were statistically significant differences between regions in terms of time in therapeutic range (p<0.001). The highest rate was reported in the Marmara region (54.99%±20.91) and the lowest was in the South-eastern Anatolia region (41.95±24.15) (p<0.001). Bleeding events were most frequently seen in Eastern Anatolia (41.6%), with major bleeding in the Aegean region (5.11%) and South-eastern Anatolia (5.36%). There were statistically significant differences between the regions in terms of awareness (p<0.001). Conclusion: Statistically significant differences were observed in terms of the efficacy, safety and awareness of warfarin therapy according to different geographical regions in Turkey.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1617",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "349-355",
+    "views": 6139,
+    "downloads": 9866,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1727",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1727",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1727",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1727",
+    "localPdfUrl": "js/data/pdfs/1727.pdf",
+    "pdfUrl": "js/data/pdfs/1727.pdf"
+  },
+  {
+    "id": 1728,
+    "type": "Original Article",
+    "title": "Evaluation of the Diagnostic Role of Bedside Lung Ultrasonography in Patients with Suspected Pulmonary Embolism in the Emergency Department",
+    "authors": [
+      {
+        "name": "Hüseyin Acar",
+        "affiliation": "Clinic of Emergency, Tunceli State Hospital, Tunceli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serkan Yılmaz",
+        "affiliation": "Department of Emergency, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Elif Yaka",
+        "affiliation": "Department of Emergency, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurettin Özgür Doğan",
+        "affiliation": "Department of Emergency, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Asım Enes Özbek",
+        "affiliation": "Clinic of Emergency, Derince Training and Research Hospital, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Pekdemir",
+        "affiliation": "Department of Emergency, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Despite the existence of detailed consensus guidelines, challenges remain regarding efficient, appropriate, and safe imaging methods for the diagnosis of suspected pulmonary embolism. Aims: To investigate the role of the wedge sign, B-lines, and pleural effusion seen on bedside lung ultrasound in the diagnosis of pulmonary embolism. Study Design: Diagnostic accuracy study. Methods: During the first evaluation of patients with suspected pulmonary embolism, bedside lung ultrasound was performed, and the B-lines, wedge sign, and pleural effusion were investigated. Computed tomography angiography was used as a confirmatory test and was compared with the lung ultrasound findings. Results: Pulmonary embolism was detected in 38 (38%) patients. In the comparison of bedside lung ultrasound results, statistically significant differences were found between the groups in terms of the B-lines and wedge sign (p=0.005 and p<0.001, respectively). There were no significant differences in terms of effusion (p=0.234). Comparison of these findings with computed tomography angiography of the chest showed weak negative correlations between the groups in terms of B-lines (r=-0297) and a moderately positive correlation in terms of the wedge sign (r=0.523). The sensitivity, specificity, and positive and negative predictive values of lung ultrasound findings alone were low. In the logistic regression analysis, the wedge sign (p<0.01, OR=69.45, 95% CI=6.94-695.17) and B-line (p=0.033, OR=1.96, 95% CI=0.41-8.40) were found to be effective in the diagnosis of pulmonary embolism. Conclusion: Although the role of lung ultrasound has been increasing in the management of critically ill patients, its value is limited and cannot replace the gold standard tests in the diagnosis of pulmonary embolism.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background</strong>: Despite the existence of detailed consensus guidelines, challenges remain regarding efficient, appropriate, and safe imaging methods for the diagnosis of suspected pulmonary embolism.<br />\r\n\t<strong>Aims</strong>: To investigate the role of the wedge sign, B-lines, and pleural effusion seen on bedside lung ultrasound in the diagnosis of pulmonary embolism.<br />\r\n\t<strong>Study Design</strong>: Diagnostic accuracy study.<br />\r\n\t<strong>Methods</strong>: During the first evaluation of patients with suspected pulmonary embolism, bedside lung ultrasound was performed, and the B-lines, wedge sign, and pleural effusion were investigated. Computed tomography angiography was used as a confirmatory test and was compared with the lung ultrasound findings.<br />\r\n\t<strong>Results</strong>: Pulmonary embolism was detected in 38 (38%) patients. In the comparison of bedside lung ultrasound results, statistically significant differences were found between the groups in terms of the B-lines and wedge sign (p=0.005 and p&lt;0.001, respectively). There were no significant differences in terms of effusion (p=0.234). Comparison of these findings with computed tomography angiography of the chest showed weak negative correlations between the groups in terms of B-lines (r=-0297) and a moderately positive correlation in terms of the wedge sign (r=0.523). The sensitivity, specificity, and positive and negative predictive values of lung ultrasound findings alone were low. In the logistic regression analysis, the wedge sign (p&lt;0.01, OR=69.45, 95% CI=6.94-695.17) and B-line (p=0.033, OR=1.96, 95% CI=0.41-8.40) were found to be effective in the diagnosis of pulmonary embolism.<br />\r\n\t<strong>Conclusion</strong>: Although the role of lung ultrasound has been increasing in the management of critically ill patients, its value is limited and cannot replace the gold standard tests in the diagnosis of pulmonary embolism.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Despite the existence of detailed consensus guidelines, challenges remain regarding efficient, appropriate, and safe imaging methods for the diagnosis of suspected pulmonary embolism. Aims: To investigate the role of the wedge sign, B-lines, and pleural effusion seen on bedside lung ultrasound in the diagnosis of pulmonary embolism. Study Design: Diagnostic accuracy study. Methods: During the first evaluation of patients with suspected pulmonary embolism, bedside lung ultrasound was performed, and the B-lines, wedge sign, and pleural effusion were investigated. Computed tomography angiography was used as a confirmatory test and was compared with the lung ultrasound findings. Results: Pulmonary embolism was detected in 38 (38%) patients. In the comparison of bedside lung ultrasound results, statistically significant differences were found between the groups in terms of the B-lines and wedge sign (p=0.005 and p<0.001, respectively). There were no significant differences in terms of effusion (p=0.234). Comparison of these findings with computed tomography angiography of the chest showed weak negative correlations between the groups in terms of B-lines (r=-0297) and a moderately positive correlation in terms of the wedge sign (r=0.523). The sensitivity, specificity, and positive and negative predictive values of lung ultrasound findings alone were low. In the logistic regression analysis, the wedge sign (p<0.01, OR=69.45, 95% CI=6.94-695.17) and B-line (p=0.033, OR=1.96, 95% CI=0.41-8.40) were found to be effective in the diagnosis of pulmonary embolism. Conclusion: Although the role of lung ultrasound has been increasing in the management of critically ill patients, its value is limited and cannot replace the gold standard tests in the diagnosis of pulmonary embolism.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1181",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "356-361",
+    "views": 6968,
+    "downloads": 10011,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1728",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1728",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1728",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1728",
+    "localPdfUrl": "js/data/pdfs/1728.pdf",
+    "pdfUrl": "js/data/pdfs/1728.pdf"
+  },
+  {
+    "id": 1729,
+    "type": "Brief Report",
+    "title": "Pneumococcal Nasopharyngeal Carriage in Young Healthy Children After Pneumococcal Conjugate Vaccine in Turkey",
+    "authors": [
+      {
+        "name": "Ahmet Arvas",
+        "affiliation": "Department of Paediatrics, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Haluk Çokuğraş",
+        "affiliation": "Department of Paediatrics, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emel Gür",
+        "affiliation": "Department of Paediatrics, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nevriye Gönüllü",
+        "affiliation": "Department of Medical Microbiology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zeynep Taner",
+        "affiliation": "Department of Medical Microbiology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hrisi Bahar Tokman",
+        "affiliation": "Department of Medical Microbiology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Aims: To determine the prevalence of nasopharyngeal carriage of Streptococcus pneumoniae in healthy children aged 0-6 years who were vaccinated with pneumococcal conjugate vaccine. Methods: This cross-sectional study was conducted on 150 healthy Turkish children between 1 month and 6 years of age. Serotyping was performed and risk factors of carriage were evaluated. Results: The overall carriage rate was 14%. Vaccine type serotypes were determined in 17 (12.6%) children who received full-dose PCV13 vaccine. The highest carriage rate was observed among children younger than 24 months (76.2%). In multivariate analysis, respiratory infection in recent months, age, attendance at a day-care center and antibiotic usage were not statistically significant risk factors for carriage. Overall, S. pneumoniae strains were considered as penicillin susceptible and antimicrobial resistance was limited. Conclusion: We observed a low rate of pneumococcal carriage in children after PCV13 implementation compared with that of children receiving PCV7. Although it was reduced, vaccine serotype colonization in PCV13-vaccinated children remains persistent.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Aims</strong>: To determine the prevalence of nasopharyngeal carriage of <em>Streptococcus pneumoniae</em> in healthy children aged 0-6 years who were vaccinated with pneumococcal conjugate vaccine.<br />\r\n\t<strong>Methods</strong>: This cross-sectional study was conducted on 150 healthy Turkish children between 1 month and 6 years of age. Serotyping was performed and risk factors of carriage were evaluated.<br />\r\n\t<strong>Results</strong>: The overall carriage rate was 14%. Vaccine type serotypes were determined in 17 (12.6%) children who received full-dose PCV13 vaccine. The highest carriage rate was observed among children younger than 24 months (76.2%). In multivariate analysis, respiratory infection in recent months, age, attendance at a day-care center and antibiotic usage were not statistically significant risk factors for carriage. Overall, <em>S. pneumoniae</em> strains were considered as penicillin susceptible and antimicrobial resistance was limited.<br />\r\n\t<strong>Conclusion</strong>: We observed a low rate of pneumococcal carriage in children after PCV13 implementation compared with that of children receiving PCV7. Although it was reduced, vaccine serotype colonization in PCV13-vaccinated children remains persistent.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Aims: To determine the prevalence of nasopharyngeal carriage of Streptococcus pneumoniae in healthy children aged 0-6 years who were vaccinated with pneumococcal conjugate vaccine. Methods: This cross-sectional study was conducted on 150 healthy Turkish children between 1 month and 6 years of age. Serotyping was performed and risk factors of carriage were evaluated. Results: The overall carriage rate was 14%. Vaccine type serotypes were determined in 17 (12.6%) children who received full-dose PCV13 vaccine. The highest carriage rate was observed among children younger than 24 months (76.2%). In multivariate analysis, respiratory infection in recent months, age, attendance at a day-care center and antibiotic usage were not statistically significant risk factors for carriage. Overall, S. pneumoniae strains were considered as penicillin susceptible and antimicrobial resistance was limited. Conclusion: We observed a low rate of pneumococcal carriage in children after PCV13 implementation compared with that of children receiving PCV7. Although it was reduced, vaccine serotype colonization in PCV13-vaccinated children remains persistent.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1256",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "362-366",
+    "views": 6941,
+    "downloads": 10284,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1729",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1729",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1729",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1729",
+    "localPdfUrl": "js/data/pdfs/1729.pdf",
+    "pdfUrl": "js/data/pdfs/1729.pdf"
+  },
+  {
+    "id": 3,
+    "type": "Case Report",
+    "title": "The Compartment Syndrome Associated with Deep Vein Thrombosis due to Rattlesnake Bite: A Case Report",
+    "authors": [
+      {
+        "name": "Radu Ciprian Tincu",
+        "affiliation": "Toxicology-Intensive Care Unit, Bucharest Clinical Emergency Hospital, Bucharest, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Zoie Ghiorghiu",
+        "affiliation": "Toxicology-Intensive Care Unit, Bucharest Clinical Emergency Hospital, Bucharest, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Dana Tomescu",
+        "affiliation": "Anesthesiology Intensive Care Unit, Fundeni Clinical Institute, Bucharest, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Radu Alexandru Macovei",
+        "affiliation": "Toxicology-Intensive Care Unit, Bucharest Clinical Emergency",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Keywords : Snakebite, developed deep vein thrombosis, compartment syndrome",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<b>Keywords :</b>\t\tSnakebite, developed deep vein thrombosis, compartment syndrome \t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Keywords : Snakebite, developed deep vein thrombosis, compartment syndrome",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0218",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "367-370",
+    "views": 7712,
+    "downloads": 10417,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "3",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=3",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=3",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=3",
+    "localPdfUrl": "js/data/pdfs/3.pdf",
+    "pdfUrl": "js/data/pdfs/3.pdf"
+  },
+  {
+    "id": 1731,
+    "type": "Case Report",
+    "title": "Retrograde Cerebral Air Embolism in a Patient with Intestinal Necrosis: A Case Report",
+    "authors": [
+      {
+        "name": "Onur Taydaş",
+        "affiliation": "Department of Radiology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Ruhi Onur",
+        "affiliation": "Department of Radiology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erhan Akpınar",
+        "affiliation": "Department of Radiology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Cerebral venous air embolism is a severe clinical condition related to an unfavourable outcome in patients with neurological impairment. Cerebral venous air embolism may occur secondarily to arterial or venous interventions. A rare mechanism of cerebral venous air embolism is retrograde embolism, which is characterized by gas flow in a direction that is opposite to that of the normal blood flow. Case Report: A 69-year-old female was admitted to our hospital with shortness of breath and abdominal pain. Abdominal computed tomography revealed intramural gas in the bowel and free gas in the mesenteric veins and portal vein. Cranial computed tomography, which was performed due to impaired consciousness, demonstrated cerebral air embolism with the appearance of a gyriform pattern. A bedside echocardiography and chest computed tomography revealed no evidence of right-to-left shunt. Conclusion: Cerebral venous air embolism may occur after pneumatosis intestinalis by a retrograde flow of air from the mesenteric veins and portal vein. Low cardiac output and supine position are contributing factors for a retrograde flow of air bubbles into the venous circulation of the brain.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background</strong>: Cerebral venous air embolism is a severe clinical condition related to an unfavourable outcome in patients with neurological impairment. Cerebral venous air embolism may occur secondarily to arterial or venous interventions. A rare mechanism of cerebral venous air embolism is retrograde embolism, which is characterized by gas flow in a direction that is opposite to that of the normal blood flow.<br />\r\n\t<strong>Case Report</strong>: A 69-year-old female was admitted to our hospital with shortness of breath and abdominal pain. Abdominal computed tomography revealed intramural gas in the bowel and free gas in the mesenteric veins and portal vein. Cranial computed tomography, which was performed due to impaired consciousness, demonstrated cerebral air embolism with the appearance of a gyriform pattern. A bedside echocardiography and chest computed tomography revealed no evidence of right-to-left shunt.<br />\r\n\t<strong>Conclusion</strong>: Cerebral venous air embolism may occur after pneumatosis intestinalis by a retrograde flow of air from the mesenteric veins and portal vein. Low cardiac output and supine position are contributing factors for a retrograde flow of air bubbles into the venous circulation of the brain.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Cerebral venous air embolism is a severe clinical condition related to an unfavourable outcome in patients with neurological impairment. Cerebral venous air embolism may occur secondarily to arterial or venous interventions. A rare mechanism of cerebral venous air embolism is retrograde embolism, which is characterized by gas flow in a direction that is opposite to that of the normal blood flow. Case Report: A 69-year-old female was admitted to our hospital with shortness of breath and abdominal pain. Abdominal computed tomography revealed intramural gas in the bowel and free gas in the mesenteric veins and portal vein. Cranial computed tomography, which was performed due to impaired consciousness, demonstrated cerebral air embolism with the appearance of a gyriform pattern. A bedside echocardiography and chest computed tomography revealed no evidence of right-to-left shunt. Conclusion: Cerebral venous air embolism may occur after pneumatosis intestinalis by a retrograde flow of air from the mesenteric veins and portal vein. Low cardiac output and supine position are contributing factors for a retrograde flow of air bubbles into the venous circulation of the brain.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0292",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "371-373",
+    "views": 6111,
+    "downloads": 4164,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1731",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1731",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1731",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1731",
+    "localPdfUrl": "js/data/pdfs/1731.pdf",
+    "pdfUrl": "js/data/pdfs/1731.pdf"
+  },
+  {
+    "id": 1732,
+    "type": "Case Report",
+    "title": "Amyopathic Dermatomyositis Associated with Histopathological Findings of Organizing Pneumonia and Pulmonary Vasculitis",
+    "authors": [
+      {
+        "name": "Jeong Uk Lim",
+        "affiliation": "Division of Allergy and Pulmonology, Department of Internal Medicine, Bucheon St. Mary’s Hospital, The Catholic University of Korea School of Medicine, Seoul, South Korea",
+        "orcid": ""
+      },
+      {
+        "name": "Hye Seon Kang",
+        "affiliation": "Division of Allergy and Pulmonology, Department of Internal Medicine, Bucheon St. Mary’s Hospital, The Catholic University of Korea School of Medicine, Seoul, South Korea",
+        "orcid": ""
+      },
+      {
+        "name": "Yong Hyun Kim",
+        "affiliation": "Division of Allergy and Pulmonology, Department of Internal Medicine, Bucheon St. Mary’s Hospital, The Catholic University of Korea School of Medicine, Seoul, South Korea",
+        "orcid": ""
+      },
+      {
+        "name": "Tae-Jung Kim",
+        "affiliation": "Department of Hospital Pathology, The Catholic University of Korea School of Medicine, Seoul, South Korea",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Clinically, amyopathic dermatomyositis is a clinically distinct subgroup of dermatomyositis characterised by unique dermatological manifestations without muscle involvement. Clinically, amyopathic dermatomyositis is frequently associated with interstitial lung disease, which usually has a rapidly progressive, fatal clinical course. Although clinically, amyopathic dermatomyositis-related interstitial lung disease is well described, data on the histopathology of clinically, amyopathic dermatomyositis-interstitial lung disease are limited. Organising pneumonia and pulmonary vasculitis have rarely been reported. Case Report: A 54-year-old Korean woman presented with exertional dyspnoea and a dry cough. Chest computed tomography revealed subpleural ground-glass opacities suggesting interstitial lung disease, which was later pathologically confirmed to be a combination of organising pneumonia and pulmonary vasculitis. The patient improved markedly with prednisone treatment and has remained stable for a long time. Conclusion: We hereby report a rare combination of organising pneumonia and pulmonary vasculitis in a patient with amyopathic dermatomyositis-interstitial lung disease.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background</strong>: Clinically, amyopathic dermatomyositis is a clinically distinct subgroup of dermatomyositis characterised by unique dermatological manifestations without muscle involvement. Clinically, amyopathic dermatomyositis is frequently associated with interstitial lung disease, which usually has a rapidly progressive, fatal clinical course. Although clinically, amyopathic dermatomyositis-related interstitial lung disease is well described, data on the histopathology of clinically, amyopathic dermatomyositis-interstitial lung disease are limited. Organising pneumonia and pulmonary vasculitis have rarely been reported.<br />\r\n\t<strong>Case Report</strong>: A 54-year-old Korean woman presented with exertional dyspnoea and a dry cough. Chest computed tomography revealed subpleural ground-glass opacities suggesting interstitial lung disease, which was later pathologically confirmed to be a combination of organising pneumonia and pulmonary vasculitis. The patient improved markedly with prednisone treatment and has remained stable for a long time.<br />\r\n\t<strong>Conclusion</strong>: We hereby report a rare combination of organising pneumonia and pulmonary vasculitis in a patient with amyopathic dermatomyositis-interstitial lung disease.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Clinically, amyopathic dermatomyositis is a clinically distinct subgroup of dermatomyositis characterised by unique dermatological manifestations without muscle involvement. Clinically, amyopathic dermatomyositis is frequently associated with interstitial lung disease, which usually has a rapidly progressive, fatal clinical course. Although clinically, amyopathic dermatomyositis-related interstitial lung disease is well described, data on the histopathology of clinically, amyopathic dermatomyositis-interstitial lung disease are limited. Organising pneumonia and pulmonary vasculitis have rarely been reported. Case Report: A 54-year-old Korean woman presented with exertional dyspnoea and a dry cough. Chest computed tomography revealed subpleural ground-glass opacities suggesting interstitial lung disease, which was later pathologically confirmed to be a combination of organising pneumonia and pulmonary vasculitis. The patient improved markedly with prednisone treatment and has remained stable for a long time. Conclusion: We hereby report a rare combination of organising pneumonia and pulmonary vasculitis in a patient with amyopathic dermatomyositis-interstitial lung disease.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1061",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "374-377",
+    "views": 8210,
+    "downloads": 9885,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1732",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1732",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1732",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1732",
+    "localPdfUrl": "js/data/pdfs/1732.pdf",
+    "pdfUrl": "js/data/pdfs/1732.pdf"
+  },
+  {
+    "id": 1733,
+    "type": "Clinical Image",
+    "title": "Abdominal Challenging Image in an Elderly Woman",
+    "authors": [
+      {
+        "name": "Vitorino Modesto dos Santos",
+        "affiliation": "Catholic University Medical Course, Brasilia-DF, Brazil",
+        "orcid": ""
+      },
+      {
+        "name": "Filipe Emanuel Fonseca Menezes",
+        "affiliation": "Armed Forces Hospital, Brasilia-DF, Brazil",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1364",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "378-379",
+    "views": 5329,
+    "downloads": 9598,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1733",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1733",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1733",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1733",
+    "localPdfUrl": "js/data/pdfs/1733.pdf",
+    "pdfUrl": "js/data/pdfs/1733.pdf"
+  },
+  {
+    "id": 1734,
+    "type": "Letter to the Editor",
+    "title": "Comment on Pancreatitis in Type 1 Tyrosinemia",
+    "authors": [
+      {
+        "name": "Hakim Rahmoune",
+        "affiliation": "Department of Pediatrics, Setif University Hospital, Setif, Algeria",
+        "orcid": ""
+      },
+      {
+        "name": "Nada Boutrid",
+        "affiliation": "Department of Pediatrics, Setif University Hospital, Setif, Algeria",
+        "orcid": ""
+      },
+      {
+        "name": "Mounira Amrane",
+        "affiliation": "Department of Biochemistry, Setif University Hospital, Setif, Algeria",
+        "orcid": ""
+      },
+      {
+        "name": "Belkacem Bioud",
+        "affiliation": "Department of Pediatrics, Setif University Hospital, Setif, Algeria",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1209",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "380-381",
+    "views": 5970,
+    "downloads": 9525,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1734",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1734",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1734",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1734",
+    "localPdfUrl": "js/data/pdfs/1734.pdf",
+    "pdfUrl": "js/data/pdfs/1734.pdf"
+  },
+  {
+    "id": 1735,
+    "type": "Letter to the Editor",
+    "title": "New Insights on the “DC Shock-Reperfusion” in ST Elevation Myocardial Infarction: Killing Two Birds with One Stone?",
+    "authors": [
+      {
+        "name": "Ümran Özdamar",
+        "affiliation": "Clinic of Cardiology, Türkiye Yüksek İhtisas Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Kadri Akboğa",
+        "affiliation": "Clinic of Cardiology, Türkiye Yüksek İhtisas Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Muhammed Fatih Bayraktar",
+        "affiliation": "Clinic of Cardiology, Türkiye Yüksek İhtisas Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özcan Özeke",
+        "affiliation": "Clinic of Cardiology, Türkiye Yüksek İhtisas Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0447",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "4",
+    "pages": "382-383",
+    "views": 5376,
+    "downloads": 3216,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1235",
+    "sourceArticleId": "1735",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1735",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1735",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1735",
+    "localPdfUrl": "js/data/pdfs/1735.pdf",
+    "pdfUrl": "js/data/pdfs/1735.pdf"
+  }
+]

@@ -1,0 +1,573 @@
+[
+  {
+    "id": 1950,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2002-01-01",
+    "volume": 19,
+    "issue": "2",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1131",
+    "sourceArticleId": "1950",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1950",
+    "localPdfUrl": "js/data/pdfs/1950.pdf",
+    "pdfUrl": "js/data/pdfs/1950.pdf"
+  },
+  {
+    "id": 1617,
+    "type": "Original Article",
+    "title": "Increased Serum Total and Lipid-Bound Sialic Acid Levels in Lung Cancers and its Association with Metastasis",
+    "authors": [
+      {
+        "name": "Şebnem Selen İşbilir",
+        "affiliation": "Trakya Üniversitesi, Fen-Edebiyat Fakültesi Kimya Bölümü, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Selma Süer Gökmen",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Biyokimya Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Şendoğan Gülen",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Biyokimya Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Tuncay Çağlar",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göğüs Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "O. Nuri Hatipoğlu [[4]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Özet Amaç: Akciğer kanserli hastalarda total ve lipide bağlı sialik asit düzeylerinin, metastazı olan ve olmayan olguları birbirinden ayırmada bir belirteç olup olmayacağı araştırıldı. Hastalar ve Yöntemler: Ekstrapulmoner metastazı olan (n=26; yaş dağılımı 44-79; 13 epidermoid karsinom, 7 adenokarsinom, 6 küçük hücreli akciğer kanseri) ve olmayan (n=61; yaş dağılımı 40-80; 27 adenokarsinom, 34 epidermoid karsinom) akciğer kanserli hastalarda serum total ve lipide bağlı sialik asit düzeyleri incelendi. Bulunan değerler sağlıklı 32 kişiden oluşan kontrol grubu ile karşılaştırıldı. Total sialik asit düzeyleri Warren yöntemi ile, lipide bağlı sialik asit düzeyleri Katopodis yöntemi ile belirlendi. Bulgular: Her iki hasta grubunun total ve lipide bağlı sialik asit düzeyleri kontrol grubuna göre anlamlı derecede yüksek bulundu (p<0.001). Ekstrapulmoner metastazı olan akciğer kanserli hastalarda lipide bağlı sialik asit düzeyi, metastaz bulunmayan adenokarsinomlu (p<0.05) ve epidermoid karsinomlu (p<0.01) hastalara göre; total sialik asit düzeyi ise, epidermoid karsinomlu (p<0.05) hastalara göre anlamlı derecede daha yüksekti. Sonuç: Serum lipide bağlı sialik asit düzeylerinin, metastazı olmayan epidermoid veya adenokarsinomlu hastaları ayırmada; total sialik asit düzeylerinin ise metastazı olmayan epidermoid karsinomlu hastaları ayırmada yardımcı olabileceğini söyleyebiliriz.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\t&Ouml;zet</h3>\r\n<p>\r\n\t<strong>Ama&ccedil;</strong>: Akciğer kanserli hastalarda total ve lipide bağlı sialik asit d&uuml;zeylerinin, metastazı olan ve olmayan olguları birbirinden ayırmada bir belirte&ccedil; olup olmayacağı araştırıldı.</p>\r\n<p>\r\n\t<strong>Hastalar ve Y&ouml;ntemler</strong>: Ekstrapulmoner metastazı olan (n=26; yaş dağılımı 44-79; 13 epidermoid karsinom, 7 adenokarsinom, 6 k&uuml;&ccedil;&uuml;k h&uuml;creli akciğer kanseri) ve olmayan (n=61; yaş dağılımı 40-80; 27 adenokarsinom, 34 epidermoid karsinom) akciğer kanserli hastalarda serum total ve lipide bağlı sialik asit d&uuml;zeyleri incelendi. Bulunan değerler sağlıklı 32 kişiden oluşan kontrol grubu ile karşılaştırıldı. Total sialik asit d&uuml;zeyleri Warren y&ouml;ntemi ile, lipide bağlı sialik asit d&uuml;zeyleri Katopodis y&ouml;ntemi ile belirlendi.</p>\r\n<p>\r\n\t<strong>Bulgular</strong>: Her iki hasta grubunun total ve lipide bağlı sialik asit d&uuml;zeyleri kontrol grubuna g&ouml;re anlamlı derecede y&uuml;ksek bulundu (p&lt;0.001). Ekstrapulmoner metastazı olan akciğer kanserli hastalarda lipide bağlı sialik asit d&uuml;zeyi, metastaz bulunmayan adenokarsinomlu (p&lt;0.05) ve epidermoid karsinomlu (p&lt;0.01) hastalara g&ouml;re; total sialik asit d&uuml;zeyi ise, epidermoid karsinomlu (p&lt;0.05) hastalara g&ouml;re anlamlı derecede daha y&uuml;ksekti.</p>\r\n<p>\r\n\t<strong>Sonu&ccedil;</strong>: Serum lipide bağlı sialik asit d&uuml;zeylerinin, metastazı olmayan epidermoid veya adenokarsinomlu hastaları ayırmada; total sialik asit d&uuml;zeylerinin ise metastazı olmayan epidermoid karsinomlu hastaları ayırmada yardımcı olabileceğini s&ouml;yleyebiliriz.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Özet Amaç: Akciğer kanserli hastalarda total ve lipide bağlı sialik asit düzeylerinin, metastazı olan ve olmayan olguları birbirinden ayırmada bir belirteç olup olmayacağı araştırıldı. Hastalar ve Yöntemler: Ekstrapulmoner metastazı olan (n=26; yaş dağılımı 44-79; 13 epidermoid karsinom, 7 adenokarsinom, 6 küçük hücreli akciğer kanseri) ve olmayan (n=61; yaş dağılımı 40-80; 27 adenokarsinom, 34 epidermoid karsinom) akciğer kanserli hastalarda serum total ve lipide bağlı sialik asit düzeyleri incelendi. Bulunan değerler sağlıklı 32 kişiden oluşan kontrol grubu ile karşılaştırıldı. Total sialik asit düzeyleri Warren yöntemi ile, lipide bağlı sialik asit düzeyleri Katopodis yöntemi ile belirlendi. Bulgular: Her iki hasta grubunun total ve lipide bağlı sialik asit düzeyleri kontrol grubuna göre anlamlı derecede yüksek bulundu (p<0.001). Ekstrapulmoner metastazı olan akciğer kanserli hastalarda lipide bağlı sialik asit düzeyi, metastaz bulunmayan adenokarsinomlu (p<0.05) ve epidermoid karsinomlu (p<0.01) hastalara göre; total sialik asit düzeyi ise, epidermoid karsinomlu (p<0.05) hastalara göre anlamlı derecede daha yüksekti. Sonuç: Serum lipide bağlı sialik asit düzeylerinin, metastazı olmayan epidermoid veya adenokarsinomlu hastaları ayırmada; total sialik asit düzeylerinin ise metastazı olmayan epidermoid karsinomlu hastaları ayırmada yardımcı olabileceğini söyleyebiliriz.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2002-01-01",
+    "volume": 19,
+    "issue": "2",
+    "pages": "75-79",
+    "views": 6473,
+    "downloads": 2048,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1131",
+    "sourceArticleId": "1617",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1617",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1617",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1617",
+    "localPdfUrl": "js/data/pdfs/1617.pdf",
+    "pdfUrl": "js/data/pdfs/1617.pdf"
+  },
+  {
+    "id": 1618,
+    "type": "Original Article",
+    "title": "The Range of Motion of Abduction and Opposition of the Thumb",
+    "authors": [
+      {
+        "name": "Hülya Gürbüz",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anatomi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Oğuz Taşkınalp",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anatomi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Recep Mesut",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anatomi Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: The range of motion (ROM) of the carpometacarpal joint of the thumb on abduction and opposition were studied in normal individuals. Study Design: The study included 40 volunteer medical students (20 males, 20 females; mean age 22.5 years). The range of motion of the carpometacarpal joint of the thumb was measured with the use of a digital inclinometer on abduction and opposition. The highest value obtained from three measurements was taken into account. Dominant and non-dominant thumbs were compared by the Mann-Whitney U-test. Results: The mean range of motion of the carpometacarpal joint of the thumb was found as 52.6 degrees on abduction, and 37.6 degrees on opposition. No significant differences were found between dominant and non-dominant thumbs in both sexes. Conclusion: The range of motion of the thumb in Turkish individuals was found consistent with average ranges reported in the literature.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: The range of motion (ROM) of the carpometacarpal joint of the thumb on abduction and opposition were studied in normal individuals.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: The study included 40 volunteer medical students (20 males, 20 females; mean age 22.5 years). The range of motion of the carpometacarpal joint of the thumb was measured with the use of a digital inclinometer on abduction and opposition. The highest value obtained from three measurements was taken into account. Dominant and non-dominant thumbs were compared by the Mann-Whitney U-test.</p>\r\n<p>\r\n\t<strong>Results</strong>: The mean range of motion of the carpometacarpal joint of the thumb was found as 52.6 degrees on abduction, and 37.6 degrees on opposition. No significant differences were found between dominant and non-dominant thumbs in both sexes.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The range of motion of the thumb in Turkish individuals was found consistent with average ranges reported in the literature.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: The range of motion (ROM) of the carpometacarpal joint of the thumb on abduction and opposition were studied in normal individuals. Study Design: The study included 40 volunteer medical students (20 males, 20 females; mean age 22.5 years). The range of motion of the carpometacarpal joint of the thumb was measured with the use of a digital inclinometer on abduction and opposition. The highest value obtained from three measurements was taken into account. Dominant and non-dominant thumbs were compared by the Mann-Whitney U-test. Results: The mean range of motion of the carpometacarpal joint of the thumb was found as 52.6 degrees on abduction, and 37.6 degrees on opposition. No significant differences were found between dominant and non-dominant thumbs in both sexes. Conclusion: The range of motion of the thumb in Turkish individuals was found consistent with average ranges reported in the literature.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2002-01-01",
+    "volume": 19,
+    "issue": "2",
+    "pages": "80-83",
+    "views": 8121,
+    "downloads": 2022,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1131",
+    "sourceArticleId": "1618",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1618",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1618",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1618",
+    "localPdfUrl": "js/data/pdfs/1618.pdf",
+    "pdfUrl": "js/data/pdfs/1618.pdf"
+  },
+  {
+    "id": 1619,
+    "type": "Original Article",
+    "title": "The Effect of Coronary Risk Factors on Restenosis after Transluminal Coronary Angioplasty and Stenting",
+    "authors": [
+      {
+        "name": "Çetin Gül",
+        "affiliation": "Başkent Üniversitesi Tıp Fakültesi Hastanesi İç Hastalıkları Anabilim Dalı, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Yıldız",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kardiyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ersan Tatlı",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kardiyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Özçelik",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kardiyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: We investigated the relationship between coronary risk factors (age, gender, smoking, diabetes mellitus, hypertension, family history, and hypercholesterolemia) and the development of restenosis after percutaneous transluminal coronary interventions. Patients and Methods: A total of 162 patients underwent successful percutaneous transluminal coronary angioplasty with or without stenting. Follow-up coronary angiograms were performed in 107 patients (15 females, 92 males; mean age 55.5 years, range 39 to 77 years) after a mean of 184 days. Logistic regression was used for the analysis of the associations between the variables and restenosis. Results: Restenosis was detected in 47 patients (39%). Age, gender, smoking, hypertension, hypercholesterolemia, family history, a history of previous myocardial infarction, ejection fraction, and the degree and location of stenosis were not found as significant variables in the development of restenosis. However, restenosis was significantly correlated with diabetes mellitus (-2 log likelihood 28.28, p=0.0002). The rate of restenosis was significantly lower in the stent group (n=56, 52%) (p<0.01). Conclusion: Diabetes mellitus presents as the most significant risk factor in the development of restenosis after coronary angioplasty and stenting.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: We investigated the relationship between coronary risk factors (age, gender, smoking, diabetes mellitus, hypertension, family history, and hypercholesterolemia) and the development of restenosis after percutaneous transluminal coronary interventions.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: A total of 162 patients underwent successful percutaneous transluminal coronary angioplasty with or without stenting. Follow-up coronary angiograms were performed in 107 patients (15 females, 92 males; mean age 55.5 years, range 39 to 77 years) after a mean of 184 days. Logistic regression was used for the analysis of the associations between the variables and restenosis.</p>\r\n<p>\r\n\t<strong>Results</strong>: Restenosis was detected in 47 patients (39%). Age, gender, smoking, hypertension, hypercholesterolemia, family history, a history of previous myocardial infarction, ejection fraction, and the degree and location of stenosis were not found as significant variables in the development of restenosis. However, restenosis was significantly correlated with diabetes mellitus (-2 log likelihood 28.28, p=0.0002). The rate of restenosis was significantly lower in the stent group (n=56, 52%) (p&lt;0.01).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Diabetes mellitus presents as the most significant risk factor in the development of restenosis after coronary angioplasty and stenting.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: We investigated the relationship between coronary risk factors (age, gender, smoking, diabetes mellitus, hypertension, family history, and hypercholesterolemia) and the development of restenosis after percutaneous transluminal coronary interventions. Patients and Methods: A total of 162 patients underwent successful percutaneous transluminal coronary angioplasty with or without stenting. Follow-up coronary angiograms were performed in 107 patients (15 females, 92 males; mean age 55.5 years, range 39 to 77 years) after a mean of 184 days. Logistic regression was used for the analysis of the associations between the variables and restenosis. Results: Restenosis was detected in 47 patients (39%). Age, gender, smoking, hypertension, hypercholesterolemia, family history, a history of previous myocardial infarction, ejection fraction, and the degree and location of stenosis were not found as significant variables in the development of restenosis. However, restenosis was significantly correlated with diabetes mellitus (-2 log likelihood 28.28, p=0.0002). The rate of restenosis was significantly lower in the stent group (n=56, 52%) (p<0.01). Conclusion: Diabetes mellitus presents as the most significant risk factor in the development of restenosis after coronary angioplasty and stenting.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2002-01-01",
+    "volume": 19,
+    "issue": "2",
+    "pages": "84-88",
+    "views": 6762,
+    "downloads": 2183,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1131",
+    "sourceArticleId": "1619",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1619",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1619",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1619",
+    "localPdfUrl": "js/data/pdfs/1619.pdf",
+    "pdfUrl": "js/data/pdfs/1619.pdf"
+  },
+  {
+    "id": 1620,
+    "type": "Original Article",
+    "title": "Surgical Treatment for Acute Arterial Occlusion",
+    "authors": [
+      {
+        "name": "Turan Ege",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Suat Canbaz",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Hasan Sunar",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Çıkırıkçıoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ümit Halıcı",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Enver Duran",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: We evaluated surgical treatment of patients with acute arterial occlusion. Patients and Methods: A total of 142 patients who underwent surgical treatment for acute arterial occlusion was retrospectively evaluated in three groups according to the etiology, that is, peripheral arterial embolism (62 patients; 19 men, 43 women; mean age 62 years), peripheral arterial thrombosis (60 patients; 32 men, 28 women; mean age 68 years), and graft thrombosis (20 men, mean age 55 years). Results: The cause of arterial occlusion was embolism in 44% and thrombosis in 56% (42% native vessel thrombosis, 14% graft thrombosis). The most frequent anatomic location of occlusion was the femoral artery (52% in embolism, 84% in thrombosis). Malignancy was detected in five and two patients with peripheral arterial embolism and thrombosis, respectively. Nine patients (6%) required amputation, of whom two had embolism, four had thrombosis, and three had graft thrombosis. The mortality rate was 4% (n=6). Conclusion: Malignancies and graft thrombosis are becoming more common among the etiologic factors of acute arterial occlusion.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: We evaluated surgical treatment of patients with acute arterial occlusion.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: A total of 142 patients who underwent surgical treatment for acute arterial occlusion was retrospectively evaluated in three groups according to the etiology, that is, peripheral arterial embolism (62 patients; 19 men, 43 women; mean age 62 years), peripheral arterial thrombosis (60 patients; 32 men, 28 women; mean age 68 years), and graft thrombosis (20 men, mean age 55 years).</p>\r\n<p>\r\n\t<strong>Results</strong>: The cause of arterial occlusion was embolism in 44% and thrombosis in 56% (42% native vessel thrombosis, 14% graft thrombosis). The most frequent anatomic location of occlusion was the femoral artery (52% in embolism, 84% in thrombosis). Malignancy was detected in five and two patients with peripheral arterial embolism and thrombosis, respectively. Nine patients (6%) required amputation, of whom two had embolism, four had thrombosis, and three had graft thrombosis. The mortality rate was 4% (n=6).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Malignancies and graft thrombosis are becoming more common among the etiologic factors of acute arterial occlusion.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: We evaluated surgical treatment of patients with acute arterial occlusion. Patients and Methods: A total of 142 patients who underwent surgical treatment for acute arterial occlusion was retrospectively evaluated in three groups according to the etiology, that is, peripheral arterial embolism (62 patients; 19 men, 43 women; mean age 62 years), peripheral arterial thrombosis (60 patients; 32 men, 28 women; mean age 68 years), and graft thrombosis (20 men, mean age 55 years). Results: The cause of arterial occlusion was embolism in 44% and thrombosis in 56% (42% native vessel thrombosis, 14% graft thrombosis). The most frequent anatomic location of occlusion was the femoral artery (52% in embolism, 84% in thrombosis). Malignancy was detected in five and two patients with peripheral arterial embolism and thrombosis, respectively. Nine patients (6%) required amputation, of whom two had embolism, four had thrombosis, and three had graft thrombosis. The mortality rate was 4% (n=6). Conclusion: Malignancies and graft thrombosis are becoming more common among the etiologic factors of acute arterial occlusion.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2002-01-01",
+    "volume": 19,
+    "issue": "2",
+    "pages": "89-95",
+    "views": 6878,
+    "downloads": 2135,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1131",
+    "sourceArticleId": "1620",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1620",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1620",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1620",
+    "localPdfUrl": "js/data/pdfs/1620.pdf",
+    "pdfUrl": "js/data/pdfs/1620.pdf"
+  },
+  {
+    "id": 1621,
+    "type": "Original Article",
+    "title": "Monitoring of Heparin Treatment in Patients with Acute Myocardial Infarction",
+    "authors": [
+      {
+        "name": "Krassimir KARASTANEV",
+        "affiliation": "Departments of Cardiology Medical University of Plovdiv",
+        "orcid": ""
+      },
+      {
+        "name": "Kostadin KICHUKOV",
+        "affiliation": "Departments of Cardiology Medical University of Plovdiv",
+        "orcid": ""
+      },
+      {
+        "name": "Okan Alıman",
+        "affiliation": "Departments of Cardiology Medical University of Plovdiv",
+        "orcid": ""
+      },
+      {
+        "name": "Ilija LEDGEV",
+        "affiliation": "Departments of Clinical Laboratory, Medical University of Plovdiv",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: We evaluated the effectiveness of monitoring coagulation parameters and plasma heparin levels in patients receiving heparin treatment for acute myocardial infarction (AMI). Patients and Methods: The study included 30 AMI patients (19 males, 11 females; range 39 to 76 years) who were admitted to the intensive care unit. All patients received standard heparin with a bolus dosage (5,000 IU) followed by continuous intravenous infusion (1,000 IU/h) for 72 hours. Thrombolytic therapy was not applied because of contraindications. Coagulation parameters (aPTT, TT, and AT III) were monitored on coagulometer ACL 2000 at baseline and 24 hours after the initiation of heparin therapy together with plasma heparin levels. Statistical analyses were made using one-sample Kolmogorov-Smirnov test, and paired-samples t-test. Results: Fifteen patients had below-therapeutic heparin levels during treatment, which were associated with significantly increased aPTT and decreased AT III values (p<0.001). The remaining patients with therapeutic heparin levels exhibited the same trend with regard to aPTT and AT III. However, increase in TT values was significant only in the latter group (p<0.001). Conclusion: The two methods, plasma heparin monitoring and standard coagulograms seem to be equally effective for control over heparin therapy, and their combined use enhances the efficacy and safety of heparin treatment.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: We evaluated the effectiveness of monitoring coagulation parameters and plasma heparin levels in patients receiving heparin treatment for acute myocardial infarction (AMI).</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: The study included 30 AMI patients (19 males, 11 females; range 39 to 76 years) who were admitted to the intensive care unit. All patients received standard heparin with a bolus dosage (5,000 IU) followed by continuous intravenous infusion (1,000 IU/h) for 72 hours. Thrombolytic therapy was not applied because of contraindications. Coagulation parameters (aPTT, TT, and AT III) were monitored on coagulometer ACL 2000 at baseline and 24 hours after the initiation of heparin therapy together with plasma heparin levels. Statistical analyses were made using one-sample Kolmogorov-Smirnov test, and paired-samples t-test.</p>\r\n<p>\r\n\t<strong>Results</strong>: Fifteen patients had below-therapeutic heparin levels during treatment, which were associated with significantly increased aPTT and decreased AT III values (p&lt;0.001). The remaining patients with therapeutic heparin levels exhibited the same trend with regard to aPTT and AT III. However, increase in TT values was significant only in the latter group (p&lt;0.001).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The two methods, plasma heparin monitoring and standard coagulograms seem to be equally effective for control over heparin therapy, and their combined use enhances the efficacy and safety of heparin treatment.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: We evaluated the effectiveness of monitoring coagulation parameters and plasma heparin levels in patients receiving heparin treatment for acute myocardial infarction (AMI). Patients and Methods: The study included 30 AMI patients (19 males, 11 females; range 39 to 76 years) who were admitted to the intensive care unit. All patients received standard heparin with a bolus dosage (5,000 IU) followed by continuous intravenous infusion (1,000 IU/h) for 72 hours. Thrombolytic therapy was not applied because of contraindications. Coagulation parameters (aPTT, TT, and AT III) were monitored on coagulometer ACL 2000 at baseline and 24 hours after the initiation of heparin therapy together with plasma heparin levels. Statistical analyses were made using one-sample Kolmogorov-Smirnov test, and paired-samples t-test. Results: Fifteen patients had below-therapeutic heparin levels during treatment, which were associated with significantly increased aPTT and decreased AT III values (p<0.001). The remaining patients with therapeutic heparin levels exhibited the same trend with regard to aPTT and AT III. However, increase in TT values was significant only in the latter group (p<0.001). Conclusion: The two methods, plasma heparin monitoring and standard coagulograms seem to be equally effective for control over heparin therapy, and their combined use enhances the efficacy and safety of heparin treatment.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2002-01-01",
+    "volume": 19,
+    "issue": "2",
+    "pages": "96-99",
+    "views": 7145,
+    "downloads": 2062,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1131",
+    "sourceArticleId": "1621",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1621",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1621",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1621",
+    "localPdfUrl": "js/data/pdfs/1621.pdf",
+    "pdfUrl": "js/data/pdfs/1621.pdf"
+  },
+  {
+    "id": 1622,
+    "type": "Original Article",
+    "title": "The Effects of Transdermal Nitroglycerin on Regional Intravenous Anesthesia",
+    "authors": [
+      {
+        "name": "Alparslan Turan",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Beyhan Karamanlıoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Gaye Kaya",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Zafer Pamukçu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: We investigated the effects of transdermal nitroglycerin (TNG) on the onset and recovery times of sensory and motor blocks, quality and hemodynamics of anesthesia, and on side effects in intravenous regional anesthesia (IVRA). Patients and Methods: Thirty ASA I-II patients undergoing elective surgery of the upper limb were randomly divided into two groups equal in size. Two hours before surgery, a pre-emptied TNG tape and a TNG tape of 50 mg were applied on the back of operative hands in group I and II, respectively, and IVRA was performed. All patients received 2% prilocaine of 3 mg/kg diluted in 40 ml of serum saline. The onset and recovery times of sensory and motor blocks, quality of anesthesia, dryness of the operation field, heart rates, mean arterial pressures, and oxygen saturation were recorded after 1, 5, 10, 20, and 40 minutes of local anesthetic injection. Results: The onset of sensory block was significantly shorter and motor block recovery time was significantly longer in group II (p<0.05). No significant differences were found between the two groups with respect to quality of anesthesia, dryness of the operation field, heart rates, mean arterial pressures, and oxygen saturation (p>0.05). Conclusion: Our data show that transdermal nitroglycerin exerts beneficial effects on sensory and motor blocks in IVRA.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: We investigated the effects of transdermal nitroglycerin (TNG) on the onset and recovery times of sensory and motor blocks, quality and hemodynamics of anesthesia, and on side effects in intravenous regional anesthesia (IVRA).</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: Thirty ASA I-II patients undergoing elective surgery of the upper limb were randomly divided into two groups equal in size. Two hours before surgery, a pre-emptied TNG tape and a TNG tape of 50 mg were applied on the back of operative hands in group I and II, respectively, and IVRA was performed. All patients received 2% prilocaine of 3 mg/kg diluted in 40 ml of serum saline. The onset and recovery times of sensory and motor blocks, quality of anesthesia, dryness of the operation field, heart rates, mean arterial pressures, and oxygen saturation were recorded after 1, 5, 10, 20, and 40 minutes of local anesthetic injection.</p>\r\n<p>\r\n\t<strong>Results</strong>: The onset of sensory block was significantly shorter and motor block recovery time was significantly longer in group II (p&lt;0.05). No significant differences were found between the two groups with respect to quality of anesthesia, dryness of the operation field, heart rates, mean arterial pressures, and oxygen saturation (p&gt;0.05).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Our data show that transdermal nitroglycerin exerts beneficial effects on sensory and motor blocks in IVRA.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: We investigated the effects of transdermal nitroglycerin (TNG) on the onset and recovery times of sensory and motor blocks, quality and hemodynamics of anesthesia, and on side effects in intravenous regional anesthesia (IVRA). Patients and Methods: Thirty ASA I-II patients undergoing elective surgery of the upper limb were randomly divided into two groups equal in size. Two hours before surgery, a pre-emptied TNG tape and a TNG tape of 50 mg were applied on the back of operative hands in group I and II, respectively, and IVRA was performed. All patients received 2% prilocaine of 3 mg/kg diluted in 40 ml of serum saline. The onset and recovery times of sensory and motor blocks, quality of anesthesia, dryness of the operation field, heart rates, mean arterial pressures, and oxygen saturation were recorded after 1, 5, 10, 20, and 40 minutes of local anesthetic injection. Results: The onset of sensory block was significantly shorter and motor block recovery time was significantly longer in group II (p<0.05). No significant differences were found between the two groups with respect to quality of anesthesia, dryness of the operation field, heart rates, mean arterial pressures, and oxygen saturation (p>0.05). Conclusion: Our data show that transdermal nitroglycerin exerts beneficial effects on sensory and motor blocks in IVRA.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2002-01-01",
+    "volume": 19,
+    "issue": "2",
+    "pages": "100-105",
+    "views": 6257,
+    "downloads": 2148,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1131",
+    "sourceArticleId": "1622",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1622",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1622",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1622",
+    "localPdfUrl": "js/data/pdfs/1622.pdf",
+    "pdfUrl": "js/data/pdfs/1622.pdf"
+  },
+  {
+    "id": 1623,
+    "type": "Case Report",
+    "title": "A Case of Bilateral Superficial Brachial Artery",
+    "authors": [
+      {
+        "name": "Hülya Gürbüz",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anatomi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Tunç Kutoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anatomi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Yılmaz",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anatomi Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract The superficial brachial artery, an anatomical variation of the brachial artery, is usually located anterior to the aponeurosis of the biceps muscle in the forearm. Since it may be mistaken for the cubital vein, it may pose severe problems on intravenous injections. This case report illustrates findings of the superficial brachial artery encountered in the cadaver forearms of a 65-year-old male, that ran superficially along the median nerve.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tThe superficial brachial artery, an anatomical variation of the brachial artery, is usually located anterior to the aponeurosis of the biceps muscle in the forearm. Since it may be mistaken for the cubital vein, it may pose severe problems on intravenous injections. This case report illustrates findings of the superficial brachial artery encountered in the cadaver forearms of a 65-year-old male, that ran superficially along the median nerve.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract The superficial brachial artery, an anatomical variation of the brachial artery, is usually located anterior to the aponeurosis of the biceps muscle in the forearm. Since it may be mistaken for the cubital vein, it may pose severe problems on intravenous injections. This case report illustrates findings of the superficial brachial artery encountered in the cadaver forearms of a 65-year-old male, that ran superficially along the median nerve.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2002-01-01",
+    "volume": 19,
+    "issue": "2",
+    "pages": "106-109",
+    "views": 6242,
+    "downloads": 2277,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1131",
+    "sourceArticleId": "1623",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1623",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1623",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1623",
+    "localPdfUrl": "js/data/pdfs/1623.pdf",
+    "pdfUrl": "js/data/pdfs/1623.pdf"
+  },
+  {
+    "id": 1624,
+    "type": "Case Report",
+    "title": "Anesthesia-Associated Difficulties in an Infant with Apert Syndrome",
+    "authors": [
+      {
+        "name": "M. Cavidan Arar",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşin Alagöl",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Gaye Kaya",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Beyhan Karamanlıoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Zafer Pamukçu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract A twenty-two-month-old infant who had a diagnosis of Apert syndrome during the neonatal period underwent surgery for inguinal hernia. The possibility of difficult intubation was considered and necessary measures were taken. Ventilation via a facemask was difficult due to face abnormalities. The patient was intubated successfully after induction with 3% isoflurane and intravenous 0.25 mg mivacurium. A detailed physical examination with regard to difficult intubation followed by implementation of necessary preparations may enable a successful intubation in patients with Apert syndrome.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tA twenty-two-month-old infant who had a diagnosis of Apert syndrome during the neonatal period underwent surgery for inguinal hernia. The possibility of difficult intubation was considered and necessary measures were taken. Ventilation via a facemask was difficult due to face abnormalities. The patient was intubated successfully after induction with 3% isoflurane and intravenous 0.25 mg mivacurium. A detailed physical examination with regard to difficult intubation followed by implementation of necessary preparations may enable a successful intubation in patients with Apert syndrome.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract A twenty-two-month-old infant who had a diagnosis of Apert syndrome during the neonatal period underwent surgery for inguinal hernia. The possibility of difficult intubation was considered and necessary measures were taken. Ventilation via a facemask was difficult due to face abnormalities. The patient was intubated successfully after induction with 3% isoflurane and intravenous 0.25 mg mivacurium. A detailed physical examination with regard to difficult intubation followed by implementation of necessary preparations may enable a successful intubation in patients with Apert syndrome.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2002-01-01",
+    "volume": 19,
+    "issue": "2",
+    "pages": "110-112",
+    "views": 6827,
+    "downloads": 2138,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1131",
+    "sourceArticleId": "1624",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1624",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1624",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1624",
+    "localPdfUrl": "js/data/pdfs/1624.pdf",
+    "pdfUrl": "js/data/pdfs/1624.pdf"
+  },
+  {
+    "id": 1625,
+    "type": "Reviews",
+    "title": "Diabetic Nephropathy",
+    "authors": [
+      {
+        "name": "Armağan Tuğrul",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları Anabilim Dalı Endokrinoloji Bilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Diabetic nephropathy is an important cause of endstage renal disease. Its incidence is closely correlated with the duration of diabetes mellitus. Hyperglycemia, hypertension, smoking, advanced age, insulin resistance, male gender, high protein intake, and genetic factors have been implicated in the development of diabetic nephropathy. It has been shown that non-enzymatic protein glycation, enhanced polyol pathway, increased protein kinase C activity, glucose toxicity, biochemical defects in the extracellular matrix, and genetic factors play role in its pathogenesis. Treatment of diabetic nephropathy includes good blood glucose regulation with insulin, treatment of hypertension and microalbuminuria with ACE inhibitors, and decreased protein intake.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tDiabetic nephropathy is an important cause of endstage renal disease. Its incidence is closely correlated with the duration of diabetes mellitus. Hyperglycemia, hypertension, smoking, advanced age, insulin resistance, male gender, high protein intake, and genetic factors have been implicated in the development of diabetic nephropathy. It has been shown that non-enzymatic protein glycation, enhanced polyol pathway, increased protein kinase C activity, glucose toxicity, biochemical defects in the extracellular matrix, and genetic factors play role in its pathogenesis. Treatment of diabetic nephropathy includes good blood glucose regulation with insulin, treatment of hypertension and microalbuminuria with ACE inhibitors, and decreased protein intake.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Diabetic nephropathy is an important cause of endstage renal disease. Its incidence is closely correlated with the duration of diabetes mellitus. Hyperglycemia, hypertension, smoking, advanced age, insulin resistance, male gender, high protein intake, and genetic factors have been implicated in the development of diabetic nephropathy. It has been shown that non-enzymatic protein glycation, enhanced polyol pathway, increased protein kinase C activity, glucose toxicity, biochemical defects in the extracellular matrix, and genetic factors play role in its pathogenesis. Treatment of diabetic nephropathy includes good blood glucose regulation with insulin, treatment of hypertension and microalbuminuria with ACE inhibitors, and decreased protein intake.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2002-01-01",
+    "volume": 19,
+    "issue": "2",
+    "pages": "113-121",
+    "views": 6728,
+    "downloads": 2295,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1131",
+    "sourceArticleId": "1625",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1625",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1625",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1625",
+    "localPdfUrl": "js/data/pdfs/1625.pdf",
+    "pdfUrl": "js/data/pdfs/1625.pdf"
+  },
+  {
+    "id": 1626,
+    "type": "Reviews",
+    "title": "Intractable Hiccup: Etiology and Treatment",
+    "authors": [
+      {
+        "name": "Cumhur Kılınçer",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroşirürji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Özsüer",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroşirürji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Sebahattin Çobanoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroşirürji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Hiccup is a characteristic noise caused by a sudden closure of the glottis following repeated, involuntary, spasmodic contraction of the diaphragm and the auxiliary respiratory muscles. It is usually a physiological entity when it is transitory and of short duration; however, it may become a pathological sign when its duration exceeds a certain length of time and it is unresponsive to simple measures. This situation is defined as intractable hiccup and may be associated with serious complications unless it is properly dealt with. Persistent hiccups are usually evoked by diseases of the gastrointestinal , thoracicmediastinal and central nervous systems, toxicmetabolic conditions, and the use of certain drugs. In addition to symptomatic treatment, a systematic evaluation is required to uncover the underlying cause. This article reviews the mechanisms, causes, evaluation, and treatment of intractable hiccups.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tHiccup is a characteristic noise caused by a sudden closure of the glottis following repeated, involuntary, spasmodic contraction of the diaphragm and the auxiliary respiratory muscles. It is usually a physiological entity when it is transitory and of short duration; however, it may become a pathological sign when its duration exceeds a certain length of time and it is unresponsive to simple measures. This situation is defined as intractable hiccup and may be associated with serious complications unless it is properly dealt with. Persistent hiccups are usually evoked by diseases of the gastrointestinal , thoracicmediastinal and central nervous systems, toxicmetabolic conditions, and the use of certain drugs. In addition to symptomatic treatment, a systematic evaluation is required to uncover the underlying cause. This article reviews the mechanisms, causes, evaluation, and treatment of intractable hiccups.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Hiccup is a characteristic noise caused by a sudden closure of the glottis following repeated, involuntary, spasmodic contraction of the diaphragm and the auxiliary respiratory muscles. It is usually a physiological entity when it is transitory and of short duration; however, it may become a pathological sign when its duration exceeds a certain length of time and it is unresponsive to simple measures. This situation is defined as intractable hiccup and may be associated with serious complications unless it is properly dealt with. Persistent hiccups are usually evoked by diseases of the gastrointestinal , thoracicmediastinal and central nervous systems, toxicmetabolic conditions, and the use of certain drugs. In addition to symptomatic treatment, a systematic evaluation is required to uncover the underlying cause. This article reviews the mechanisms, causes, evaluation, and treatment of intractable hiccups.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2002-01-01",
+    "volume": 19,
+    "issue": "2",
+    "pages": "122-127",
+    "views": 6779,
+    "downloads": 1932,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1131",
+    "sourceArticleId": "1626",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1626",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1626",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1626",
+    "localPdfUrl": "js/data/pdfs/1626.pdf",
+    "pdfUrl": "js/data/pdfs/1626.pdf"
+  },
+  {
+    "id": 1627,
+    "type": "Reviews",
+    "title": "Manual Therapy",
+    "authors": [
+      {
+        "name": "Aral Hakgüder",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Siranuş Kokino",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Manual therapy has been used in the treatment of pain and dysfunction of spinal and peripheral joints for more than a hundred years. Manual medicine includes manipulation, mobilization, and postisometric relaxation techniques. The aim of manual therapy is to enhance restricted movement caused by blockage of joints keeping postural balance, restore function and maintain optimal body mechanics. Anatomic, biomechanical, and neurophysiological evaluations of the leucomotor system is essential for safe and effective applications of manual therapy. Serious complications may occur unless manipulation techniques are performed by licensed and specialized physicians who are competent in identifying indications and contraindications, and in choosing the proper technique. In this review, the concept of manual medicine and applications of manual therapy are revisited.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tManual therapy has been used in the treatment of pain and dysfunction of spinal and peripheral joints for more than a hundred years. Manual medicine includes manipulation, mobilization, and postisometric relaxation techniques. The aim of manual therapy is to enhance restricted movement caused by blockage of joints keeping postural balance, restore function and maintain optimal body mechanics. Anatomic, biomechanical, and neurophysiological evaluations of the leucomotor system is essential for safe and effective applications of manual therapy. Serious complications may occur unless manipulation techniques are performed by licensed and specialized physicians who are competent in identifying indications and contraindications, and in choosing the proper technique. In this review, the concept of manual medicine and applications of manual therapy are revisited.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Manual therapy has been used in the treatment of pain and dysfunction of spinal and peripheral joints for more than a hundred years. Manual medicine includes manipulation, mobilization, and postisometric relaxation techniques. The aim of manual therapy is to enhance restricted movement caused by blockage of joints keeping postural balance, restore function and maintain optimal body mechanics. Anatomic, biomechanical, and neurophysiological evaluations of the leucomotor system is essential for safe and effective applications of manual therapy. Serious complications may occur unless manipulation techniques are performed by licensed and specialized physicians who are competent in identifying indications and contraindications, and in choosing the proper technique. In this review, the concept of manual medicine and applications of manual therapy are revisited.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2002-01-01",
+    "volume": 19,
+    "issue": "2",
+    "pages": "128-136",
+    "views": 6558,
+    "downloads": 2205,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1131",
+    "sourceArticleId": "1627",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1627",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1627",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1627",
+    "localPdfUrl": "js/data/pdfs/1627.pdf",
+    "pdfUrl": "js/data/pdfs/1627.pdf"
+  }
+]

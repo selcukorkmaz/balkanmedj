@@ -1,0 +1,901 @@
+[
+  {
+    "id": 2150,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2150",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2150",
+    "localPdfUrl": "js/data/pdfs/2150.pdf",
+    "pdfUrl": "js/data/pdfs/2150.pdf"
+  },
+  {
+    "id": 2147,
+    "type": "Obituary",
+    "title": "In Memory of Professor Ayhan Okçuoğlu Çavdar",
+    "authors": [
+      {
+        "name": "Sevgi Gözdaşoğlu",
+        "affiliation": "Retired Professor of Pediatrics, Hematology and Oncology, Ankara University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Prof. Dr. Ayhan Okçuoğlu Çavdar passed away on June 24, 2019 at Ankara. She served as a researcher and mentor in the Department of Pediatric Hematology and Oncology at Ankara University School of Medicine for over 40 years. After her education at Erenköy Kız Lisesi, Prof. Çavdar graduated from Ankara University School of Medicine in 1953 and completed pediat",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.6.0001",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "300-300",
+    "views": 5825,
+    "downloads": 9452,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2147",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2147",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2147",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2147",
+    "localPdfUrl": "js/data/pdfs/2147.pdf",
+    "pdfUrl": "js/data/pdfs/2147.pdf"
+  },
+  {
+    "id": 2149,
+    "type": "Invited Review",
+    "title": "Step-by-Step Cardioneuroablation Approach in Two Patients with Functional Atrioventricular Block",
+    "authors": [
+      {
+        "name": "Tolga Aksu",
+        "affiliation": "Clinic of Cardiology, University of Health Sciences, Derince Training and Research Hospital, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tümer Erdem Güler",
+        "affiliation": "Clinic of Cardiology, University of Health Sciences, Derince Training and Research Hospital, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kıvanç Yalın",
+        "affiliation": "Department of Cardiology, Uşak University School of Medicine, Uşak, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Parasympathetic overactivity may cause functional atrioventricular block episodes and necessitate pacemaker implantation in symptomatic cases and those refractory to conventional therapies. In these patients, if it can be clearly demonstrated that there is no structural damage in the conduction system, elimination of the vagal activity based on radiofrequency catheter ablation of main ganglionated plexi around the heart, which is called as cardioneuroablation, might be a rational approach. In this review article, we try to discuss patient selection and procedural steps suitable for cardioneuroablation based on two patients with functional atrioventricular block.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p>Parasympathetic overactivity may cause functional atrioventricular block episodes and necessitate pacemaker implantation in symptomatic cases and those refractory to conventional therapies. In these patients, if it can be clearly demonstrated that there is no structural damage in the conduction system, elimination of the vagal activity based on radiofrequency catheter ablation of main ganglionated plexi around the heart, which is called as cardioneuroablation, might be a rational approach. In this review article, we try to discuss patient selection and procedural steps suitable for cardioneuroablation based on two patients with functional atrioventricular block.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Parasympathetic overactivity may cause functional atrioventricular block episodes and necessitate pacemaker implantation in symptomatic cases and those refractory to conventional therapies. In these patients, if it can be clearly demonstrated that there is no structural damage in the conduction system, elimination of the vagal activity based on radiofrequency catheter ablation of main ganglionated plexi around the heart, which is called as cardioneuroablation, might be a rational approach. In this review article, we try to discuss patient selection and procedural steps suitable for cardioneuroablation based on two patients with functional atrioventricular block.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.9.47",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "301-310",
+    "views": 7225,
+    "downloads": 10026,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2149",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2149",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2149",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2149",
+    "localPdfUrl": "js/data/pdfs/2149.pdf",
+    "pdfUrl": "js/data/pdfs/2149.pdf"
+  },
+  {
+    "id": 2125,
+    "type": "Original Article",
+    "title": "Alveolar Bone Density Reduction in Rats Caused by Unilateral Nasal Obstruction",
+    "authors": [
+      {
+        "name": "Xue Wang",
+        "affiliation": "Department of Biochemistry, School of Basic Medical Sciences, Wenzhou Medical University, Wenzhou, Zhejiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yongge Cao",
+        "affiliation": "Haiyuan College, Kunming Medical University, Kunming, Yunnan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Zhenhua Liu",
+        "affiliation": "Department of Biochemistry, School of Basic Medical Sciences, Wenzhou Medical University, Wenzhou, Zhejiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Zihan Wang",
+        "affiliation": "School of Stomatology, Wenzhou Medical University, Wenzhou, Zhejiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiaoying Chu",
+        "affiliation": "Department of Biochemistry, School of Basic Medical Sciences, Wenzhou Medical University, Wenzhou, Zhejiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Lei Wang",
+        "affiliation": "School of the Second Clinical Medical Sciences, Wenzhou Medical University, Wenzhou, Zhejiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xuanxuan Hu",
+        "affiliation": "Department of Biochemistry, School of Basic Medical Sciences, Wenzhou Medical University, Wenzhou, Zhejiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Han Zhao",
+        "affiliation": "School of the Second Clinical Medical Sciences, Wenzhou Medical University, Wenzhou, Zhejiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Zhanqiu Diao",
+        "affiliation": "School of Stomatology, Wenzhou Medical University, Wenzhou, Zhejiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Fengting Peng",
+        "affiliation": "School of Stomatology, Wenzhou Medical University, Wenzhou, Zhejiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Hui Ye",
+        "affiliation": "Department of Biochemistry, School of Basic Medical Sciences, Wenzhou Medical University, Wenzhou, Zhejiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Zhensheng Cao",
+        "affiliation": "School of Stomatology, Wenzhou Medical University, Wenzhou, Zhejiang, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Oral breathing can cause morphological changes in the oral and maxillofacial regions.Aims: To investigate whether oral breathing affected structural changes in bone tissues.Study Design: Animal experimentation.Methods: A total of 48 8-day-old male Sprague−Dawley rats were divided into two groups: a breathing group and a sham (control) group. All Sprague−Dawley rats were killed at 7 weeks after unilateral nostril obstruction modeling. Then, structural changes in bone tissues were detected by micro-computed tomography, and the expression levels of receptor activator of nuclear factor-κB, osteoprotegerin, and receptor activator of nuclear factor-κB ligand in the signal pathway of bone metabolism within the local alveolar bone and serum of rats were detected by reverse transcription-quantitative polymerase chain reaction and Western blotting.Results: The results showed that receptor activator of nuclear factor-κB ligand and receptor activator of nuclear factor-κB levels in bone tissues and serum in the oral breathing group were higher than those in the control group [Maxillary alveolar bone: receptor activator of nuclear factor-κB ligand (pRNA=0.009, pprotein=0.008), receptor activator of nuclear factor-κB (pRNA=0.008, pprotein=0.009); Mandibular alveolar bone: receptor activator of nuclear factor-κB ligand (pRNA=0.047, pprotein=0.042), receptor activator of nuclear factor-κB (pRNA=0.041, pprotein=0.007); Serum: receptor activator of nuclear factor-κB ligand (pRNA<0.001, pprotein<0.001), receptor activator of nuclear factor-κB (pRNA<0.001, pprotein<0.001)], along with decreased osteoprotegerin expression (Maxillary alveolar bone: pRNA=0.038, pprotein=0.048; Mandibular alveolar bone: pRNA<0.001, pprotein<0.001; Serum: pRNA=0.009, pprotein=0.006) and elevated receptor activator of nuclear factor-κB ligand/osteoprotegerin. Micro-computed tomography analysis indicated a significant difference in the level of bone volume fraction, as well as trabecular thickness in maxillary alveolar bone between the experimental and control groups (p=0.049, p=0.047). Meanwhile, trabecular thickness, and cortical thickness levels in mandibular alveolar bone also differed significantly between the experimental and control groups (p=0.043, p=0.024).Conclusion: Structural changes of the respiratory system affect the alveolar bone structure and unilateral nasal obstruction may lead to a change in regional specific bone density.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Oral breathing can cause morphological changes in the oral and maxillofacial regions.<br /><strong>Aims:</strong> To investigate whether oral breathing affected structural changes in bone tissues.<br /><strong>Study Design:</strong> Animal experimentation.<br /><strong>Methods:</strong> A total of 48 8-day-old male Sprague&minus;Dawley rats were divided into two groups: a breathing group and a sham (control) group. All Sprague&minus;Dawley rats were killed at 7 weeks after unilateral nostril obstruction modeling. Then, structural changes in bone tissues were detected by micro-computed tomography, and the expression levels of receptor activator of nuclear factor-&kappa;B, osteoprotegerin, and receptor activator of nuclear factor-&kappa;B ligand in the signal pathway of bone metabolism within the local alveolar bone and serum of rats were detected by reverse transcription-quantitative polymerase chain reaction and Western blotting.<br /><strong>Results:</strong> The results showed that receptor activator of nuclear factor-&kappa;B ligand and receptor activator of nuclear factor-&kappa;B levels in bone tissues and serum in the oral breathing group were higher than those in the control group [Maxillary alveolar bone: receptor activator of nuclear factor-&kappa;B ligand (pRNA=0.009, pprotein=0.008), receptor activator of nuclear factor-&kappa;B (pRNA=0.008, pprotein=0.009); Mandibular alveolar bone: receptor activator of nuclear factor-&kappa;B ligand (pRNA=0.047, pprotein=0.042), receptor activator of nuclear factor-&kappa;B (pRNA=0.041, pprotein=0.007); Serum: receptor activator of nuclear factor-&kappa;B ligand (pRNA&lt;0.001, pprotein&lt;0.001), receptor activator of nuclear factor-&kappa;B (pRNA&lt;0.001, pprotein&lt;0.001)], along with decreased osteoprotegerin expression (Maxillary alveolar bone: pRNA=0.038, pprotein=0.048; Mandibular alveolar bone: pRNA&lt;0.001, pprotein&lt;0.001; Serum: pRNA=0.009, pprotein=0.006) and elevated receptor activator of nuclear factor-&kappa;B ligand/osteoprotegerin. Micro-computed tomography analysis indicated a significant difference in the level of bone volume fraction, as well as trabecular thickness in maxillary alveolar bone between the experimental and control groups (p=0.049, p=0.047). Meanwhile, trabecular thickness, and cortical thickness levels in mandibular alveolar bone also differed significantly between the experimental and control groups (p=0.043, p=0.024).<br /><strong>Conclusion:</strong> Structural changes of the respiratory system affect the alveolar bone structure and unilateral nasal obstruction may lead to a change in regional specific bone density.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Oral breathing can cause morphological changes in the oral and maxillofacial regions.Aims: To investigate whether oral breathing affected structural changes in bone tissues.Study Design: Animal experimentation.Methods: A total of 48 8-day-old male Sprague−Dawley rats were divided into two groups: a breathing group and a sham (control) group. All Sprague−Dawley rats were killed at 7 weeks after unilateral nostril obstruction modeling. Then, structural changes in bone tissues were detected by micro-computed tomography, and the expression levels of receptor activator of nuclear factor-κB, osteoprotegerin, and receptor activator of nuclear factor-κB ligand in the signal pathway of bone metabolism within the local alveolar bone and serum of rats were detected by reverse transcription-quantitative polymerase chain reaction and Western blotting.Results: The results showed that receptor activator of nuclear factor-κB ligand and receptor activator of nuclear factor-κB levels in bone tissues and serum in the oral breathing group were higher than those in the control group [Maxillary alveolar bone: receptor activator of nuclear factor-κB ligand (pRNA=0.009, pprotein=0.008), receptor activator of nuclear factor-κB (pRNA=0.008, pprotein=0.009); Mandibular alveolar bone: receptor activator of nuclear factor-κB ligand (pRNA=0.047, pprotein=0.042), receptor activator of nuclear factor-κB (pRNA=0.041, pprotein=0.007); Serum: receptor activator of nuclear factor-κB ligand (pRNA<0.001, pprotein<0.001), receptor activator of nuclear factor-κB (pRNA<0.001, pprotein<0.001)], along with decreased osteoprotegerin expression (Maxillary alveolar bone: pRNA=0.038, pprotein=0.048; Mandibular alveolar bone: pRNA<0.001, pprotein<0.001; Serum: pRNA=0.009, pprotein=0.006) and elevated receptor activator of nuclear factor-κB ligand/osteoprotegerin. Micro-computed tomography analysis indicated a significant difference in the level of bone volume fraction, as well as trabecular thickness in maxillary alveolar bone between the experimental and control groups (p=0.049, p=0.047). Meanwhile, trabecular thickness, and cortical thickness levels in mandibular alveolar bone also differed significantly between the experimental and control groups (p=0.043, p=0.024).Conclusion: Structural changes of the respiratory system affect the alveolar bone structure and unilateral nasal obstruction may lead to a change in regional specific bone density.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2018.12.11",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "311-319",
+    "views": 7056,
+    "downloads": 2551,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2125",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2125",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2125",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2125",
+    "localPdfUrl": "js/data/pdfs/2125.pdf",
+    "pdfUrl": "js/data/pdfs/2125.pdf"
+  },
+  {
+    "id": 2129,
+    "type": "Original Article",
+    "title": "Limited Vitrectomy in Patients with Idiopathic Macular Hole",
+    "authors": [
+      {
+        "name": "Berna Özkan",
+        "affiliation": "Department of Ophthalmology, Acıbadem Mehmet Ali Aydınlar University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Veysel Levent Karabaş",
+        "affiliation": "Department of Ophthalmology, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Büşra Yılmaz Tuğan",
+        "affiliation": "Clinic of Ophthalmology, İzmit Seka State Hospital, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özgül Altıntaş",
+        "affiliation": "Department of Ophthalmology, Acıbadem Mehmet Ali Aydınlar University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Partial posterior hyaloidectomy is suggested to minimize traction on the vitreous base and thus reduce the risk of iatrogenic breaks in patients with macular hole and epiretinal membrane.Aims: To evaluate the safety and efficacy of limited vitrectomy in patients with macular hole.Study Design: Retrospective cohort study.Methods: Fifty-two consecutive patients who underwent macular hole surgery without complete peripheral vitreous removal were included in the study. The improvement in visual acuity, the incidence of retinal breaks and detachment, anatomical results, and intraoperative and postoperative complications of this technique were evaluated.Results: The median visual acuity was 0.2 (0.1-0.4) before surgery and 0.5 (0.3-0.6) after surgery (p<0.001). None of the patients had retinal breaks or detachments. A sulfur hexafluoride was used in 24 patients (46.2%), and perfluoropropane was used in 28 patients (53.8%). Three patients (5.76%) had revision surgery because of recurrence of the macular hole. We did not observe proliferative vitreoretinopathy or surgery-related major complications in any patient during the follow-up period.Conclusion: Limited vitrectomy without removal of the peripheral vitreous seems to be effective and safe with minimal risk of peripheral retinal breaks and detachment.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Partial posterior hyaloidectomy is suggested to minimize traction on the vitreous base and thus reduce the risk of iatrogenic breaks in patients with macular hole and epiretinal membrane.<br /><strong>Aims:</strong> To evaluate the safety and efficacy of limited vitrectomy in patients with macular hole.<br /><strong>Study Design:</strong> Retrospective cohort study.<br /><strong>Methods:</strong> Fifty-two consecutive patients who underwent macular hole surgery without complete peripheral vitreous removal were included in the study. The improvement in visual acuity, the incidence of retinal breaks and detachment, anatomical results, and intraoperative and postoperative complications of this technique were evaluated.<br /><strong>Results:</strong> The median visual acuity was 0.2 (0.1-0.4) before surgery and 0.5 (0.3-0.6) after surgery (p&lt;0.001). None of the patients had retinal breaks or detachments. A sulfur hexafluoride was used in 24 patients (46.2%), and perfluoropropane was used in 28 patients (53.8%). Three patients (5.76%) had revision surgery because of recurrence of the macular hole. We did not observe proliferative vitreoretinopathy or surgery-related major complications in any patient during the follow-up period.<br /><strong>Conclusion:</strong> Limited vitrectomy without removal of the peripheral vitreous seems to be effective and safe with minimal risk of peripheral retinal breaks and detachment.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Partial posterior hyaloidectomy is suggested to minimize traction on the vitreous base and thus reduce the risk of iatrogenic breaks in patients with macular hole and epiretinal membrane.Aims: To evaluate the safety and efficacy of limited vitrectomy in patients with macular hole.Study Design: Retrospective cohort study.Methods: Fifty-two consecutive patients who underwent macular hole surgery without complete peripheral vitreous removal were included in the study. The improvement in visual acuity, the incidence of retinal breaks and detachment, anatomical results, and intraoperative and postoperative complications of this technique were evaluated.Results: The median visual acuity was 0.2 (0.1-0.4) before surgery and 0.5 (0.3-0.6) after surgery (p<0.001). None of the patients had retinal breaks or detachments. A sulfur hexafluoride was used in 24 patients (46.2%), and perfluoropropane was used in 28 patients (53.8%). Three patients (5.76%) had revision surgery because of recurrence of the macular hole. We did not observe proliferative vitreoretinopathy or surgery-related major complications in any patient during the follow-up period.Conclusion: Limited vitrectomy without removal of the peripheral vitreous seems to be effective and safe with minimal risk of peripheral retinal breaks and detachment.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2018.12.103",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "320-323",
+    "views": 6540,
+    "downloads": 2151,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2129",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2129",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2129",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2129",
+    "localPdfUrl": "js/data/pdfs/2129.pdf",
+    "pdfUrl": "js/data/pdfs/2129.pdf"
+  },
+  {
+    "id": 2130,
+    "type": "Original Article",
+    "title": "Effect of Echocardiographic Epicardial Adipose Tissue Thickness on Success Rates of Premature Ventricular Contraction Ablation",
+    "authors": [
+      {
+        "name": "Selçuk Kanat",
+        "affiliation": "Clinic of Cardiology, Bursa Yüksek İhtisas Training and Research Hospital, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bilge Duran Karaduman",
+        "affiliation": "Clinic of Cardiology, Ankara Atatürk Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Tütüncü",
+        "affiliation": "Clinic of Cardiology, Bursa Yüksek İhtisas Training and Research Hospital, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erhan Tenekecioğlu",
+        "affiliation": "Clinic of Cardiology, Bursa Yüksek İhtisas Training and Research Hospital, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ferit Onur Mutluer",
+        "affiliation": "Department of Cardiology, Koç University Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nihal Akar Bayram",
+        "affiliation": "Department of Cardiology, Yıldırım Beyazıt University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Idiopathic premature ventricular contractions are frequently detected ventricular arrhythmias, and radiofrequency ablation is an effectively treatment for improving symptoms and eliminating premature ventricular contractions. Studies have reported a relationship between an elevated epicardial adipose tissue thickness and myocardial structural pathologies. However, the association between epicardial adipose tissue thickness and success rates of premature ventricular contraction ablation has not yet been investigated.Aims: To assess the relationship between epicardial adipose tissue thickness and success rates of premature ventricular contraction ablation.Study Design: Retrospective case-control study.Methods: This study enrolled a total of 106 consecutive patients who have had a high premature ventricular contraction burden of >10,000/24-h assessed using ambulatory Holter monitorization and underwent catheter ablation. A frequency of premature ventricular contractions of more than 10,000/day was defined as frequent premature ventricular contraction. Epicardial adipose tissue thickness was measured using 2D transthoracic echocardiography. A successful ablation was defined as >80% decrease in pre-procedural premature ventricular contraction attacks with the same morphology during 24-h Holter monitorization after a 1-month follow-up visit from an ablation procedure.Results: Successful premature ventricular contraction ablation was achieved in 87 (82.1%) patients. Epicardial adipose tissue thickness was significantly higher in patients with unsuccessful ablation (p<0.001). Procedure time, total fluoroscopy time, and radiofrequency ablation time were statistically higher in the unsuccessful group (p<0.001). Stepwise multivariate logistic regression analysis showed that epicardial adipose tissue thickness and pseudo-delta wave time were independently associated with procedural success (both p values <0.001). In the receiver-operating curve analysis, epicardial adipose tissue thickness was found to be an important predictor for procedural success (area under the receiver-operating characteristic curve= 0.85, p=0.001), with a cutoff value of 7.7 mm, a sensitivity of 92%, and a specificity of 68%.Conclusion: Epicardial adipose tissue thickness is higher in patients with premature ventricular contraction ablation failure, which may be indicative of procedural success.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Idiopathic premature ventricular contractions are frequently detected ventricular arrhythmias, and radiofrequency ablation is an effectively treatment for improving symptoms and eliminating premature ventricular contractions. Studies have reported a relationship between an elevated epicardial adipose tissue thickness and myocardial structural pathologies. However, the association between epicardial adipose tissue thickness and success rates of premature ventricular contraction ablation has not yet been investigated.<br /><strong>Aims:</strong> To assess the relationship between epicardial adipose tissue thickness and success rates of premature ventricular contraction ablation.<br /><strong>Study Design:</strong> Retrospective case-control study.<br /><strong>Methods:</strong> This study enrolled a total of 106 consecutive patients who have had a high premature ventricular contraction burden of &gt;10,000/24-h assessed using ambulatory Holter monitorization and underwent catheter ablation. A frequency of premature ventricular contractions of more than 10,000/day was defined as frequent premature ventricular contraction. Epicardial adipose tissue thickness was measured using 2D transthoracic echocardiography. A successful ablation was defined as &gt;80% decrease in pre-procedural premature ventricular contraction attacks with the same morphology during 24-h Holter monitorization after a 1-month follow-up visit from an ablation procedure.<br /><strong>Results:</strong> Successful premature ventricular contraction ablation was achieved in 87 (82.1%) patients. Epicardial adipose tissue thickness was significantly higher in patients with unsuccessful ablation (p&lt;0.001). Procedure time, total fluoroscopy time, and radiofrequency ablation time were statistically higher in the unsuccessful group (p&lt;0.001). Stepwise multivariate logistic regression analysis showed that epicardial adipose tissue thickness and pseudo-delta wave time were independently associated with procedural success (both p values &lt;0.001). In the receiver-operating curve analysis, epicardial adipose tissue thickness was found to be an important predictor for procedural success (area under the receiver-operating characteristic curve= 0.85, p=0.001), with a cutoff value of 7.7 mm, a sensitivity of 92%, and a specificity of 68%.<br /><strong>Conclusion:</strong> Epicardial adipose tissue thickness is higher in patients with premature ventricular contraction ablation failure, which may be indicative of procedural success.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Idiopathic premature ventricular contractions are frequently detected ventricular arrhythmias, and radiofrequency ablation is an effectively treatment for improving symptoms and eliminating premature ventricular contractions. Studies have reported a relationship between an elevated epicardial adipose tissue thickness and myocardial structural pathologies. However, the association between epicardial adipose tissue thickness and success rates of premature ventricular contraction ablation has not yet been investigated.Aims: To assess the relationship between epicardial adipose tissue thickness and success rates of premature ventricular contraction ablation.Study Design: Retrospective case-control study.Methods: This study enrolled a total of 106 consecutive patients who have had a high premature ventricular contraction burden of >10,000/24-h assessed using ambulatory Holter monitorization and underwent catheter ablation. A frequency of premature ventricular contractions of more than 10,000/day was defined as frequent premature ventricular contraction. Epicardial adipose tissue thickness was measured using 2D transthoracic echocardiography. A successful ablation was defined as >80% decrease in pre-procedural premature ventricular contraction attacks with the same morphology during 24-h Holter monitorization after a 1-month follow-up visit from an ablation procedure.Results: Successful premature ventricular contraction ablation was achieved in 87 (82.1%) patients. Epicardial adipose tissue thickness was significantly higher in patients with unsuccessful ablation (p<0.001). Procedure time, total fluoroscopy time, and radiofrequency ablation time were statistically higher in the unsuccessful group (p<0.001). Stepwise multivariate logistic regression analysis showed that epicardial adipose tissue thickness and pseudo-delta wave time were independently associated with procedural success (both p values <0.001). In the receiver-operating curve analysis, epicardial adipose tissue thickness was found to be an important predictor for procedural success (area under the receiver-operating characteristic curve= 0.85, p=0.001), with a cutoff value of 7.7 mm, a sensitivity of 92%, and a specificity of 68%.Conclusion: Epicardial adipose tissue thickness is higher in patients with premature ventricular contraction ablation failure, which may be indicative of procedural success.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.4.88",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "324-330",
+    "views": 6400,
+    "downloads": 3793,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2130",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2130",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2130",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2130",
+    "localPdfUrl": "js/data/pdfs/2130.pdf",
+    "pdfUrl": "js/data/pdfs/2130.pdf"
+  },
+  {
+    "id": 2138,
+    "type": "Original Article",
+    "title": "Elevated Serum Levels of Monocyte Chemotactic Protein-1/Chemokine C-C Motif Ligand 2 are Linked to Disease Severity in Patients with Fibromyalgia Syndrome",
+    "authors": [
+      {
+        "name": "Yuan-Chuang Zhao",
+        "affiliation": "Department of Rehabilitation and Physiotherapy, Guangdong Provincial Corps Hospital of Chinese People’s Armed Police Forces, Guangzhou Medical University, Guang Dong Province, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ting-Hu",
+        "affiliation": "Beijing International Travel Healthcare Center, Beijing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yan-Chen",
+        "affiliation": "Department of Rehabilitation, Chenzhou NO.1 People’s Hospital, Chenzhou, Hunan Province, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ke-Tao Du",
+        "affiliation": "Department of Rehabilitation, Chenzhou NO.1 People’s Hospital, Chenzhou, Hunan Province, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Elevated levels of monocyte chemotactic protein-1/chemokine C-C motif ligand 2 have been identified in fibromyalgia patients.Aims: To examine the potential association among serum levels of monocyte chemotactic protein-1/chemokine C-C motif ligand 2 with disease severity of fibromyalgia.Study Design: Cross-sectional study.Methods: Seventy-nine female patients with fibromyalgia and 75 healthy normal controls were included in our study. Serum levels of monocyte chemotactic protein-1/chemokine C-C motif ligand 2 were detected by enzyme-linked immune sorbent assays. The existence of tender points was evaluated based on the standardized manual tender point examination. Pressure pain thresholds at the knees, and bilateral trapezius muscles were measured with an algometer. A visual analog scale and the Revised Fibromyalgia Impact Questionnaire were utilized to assess the degree of pain and functional abilities. Results: Serum levels of monocyte chemotactic protein-1/chemokine C-C motif ligand 2 were significantly greater in patients with fibromyalgia compared with healthy controls (151.6±31.9 pg/mL vs 103.3±25.2 pg/mL, p<0.001). Patients with severe fibromyalgia had significantly higher serum levels of chemokine C-C motif ligand 2 than patients with mild and moderate fibromyalgia (173.1±21.9 pg/mL vs 151.0.0±35.1 pg/mL, p=0.01). Patients with moderate fibromyalgia revealed markedly augmented serum levels of chemokine C-C motif ligand 2 compared with patients with mild fibromyalgia (151.0±35.1 pg/mL vs 133.3±23.9 pg/mL, p=0.03). Serum levels of chemokine C-C motif ligand 2 were positively associated with tender point scores (r=0.455, p<0.001). In addition, serum levels of chemokine C-C motif ligand 2 were positively associated with pressure pain thresholds in both knees and bilateral trapezius muscles (knees: r=-0.349, p=0.002; trapezius muscles: r=-0.318, p=0.004). Finally, we found elevated serum levels of chemokine C-C motif ligand were also positively associated with the visual analog scale (r=0.368, p=0.001), and the Fibromyalgia Impact Questionnaire score (r=0.401, p<0.001).Conclusion: Elevated serum levels of monocyte chemotactic protein-1/chemokine C-C motif ligand 2 are linked to disease severity of fibromyalgia. Therapeutic interventions inhibiting monocyte chemotactic protein-1/chemokine C-C motif ligand 2 in fibromyalgia deserve additional studies.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Elevated levels of monocyte chemotactic protein-1/chemokine C-C motif ligand 2 have been identified in fibromyalgia patients.<br /><strong>Aims:</strong> To examine the potential association among serum levels of monocyte chemotactic protein-1/chemokine C-C motif ligand 2 with disease severity of fibromyalgia.<br />Study Design: Cross-sectional study.<br /><strong>Methods:</strong> Seventy-nine female patients with fibromyalgia and 75 healthy normal controls were included in our study. Serum levels of monocyte chemotactic protein-1/chemokine C-C motif ligand 2 were detected by enzyme-linked immune sorbent assays. The existence of tender points was evaluated based on the standardized manual tender point examination. Pressure pain thresholds at the knees, and bilateral trapezius muscles were measured with an algometer. A visual analog scale and the Revised Fibromyalgia Impact Questionnaire were utilized to assess the degree of pain and functional abilities. <br /><strong>Results:</strong> Serum levels of monocyte chemotactic protein-1/chemokine C-C motif ligand 2 were significantly greater in patients with fibromyalgia compared with healthy controls (151.6&plusmn;31.9 pg/mL vs 103.3&plusmn;25.2 pg/mL, p&lt;0.001). Patients with severe fibromyalgia had significantly higher serum levels of chemokine C-C motif ligand 2 than patients with mild and moderate fibromyalgia (173.1&plusmn;21.9 pg/mL vs 151.0.0&plusmn;35.1 pg/mL, p=0.01). Patients with moderate fibromyalgia revealed markedly augmented serum levels of chemokine C-C motif ligand 2 compared with patients with mild fibromyalgia (151.0&plusmn;35.1 pg/mL vs 133.3&plusmn;23.9 pg/mL, p=0.03). Serum levels of chemokine C-C motif ligand 2 were positively associated with tender point scores (r=0.455, p&lt;0.001). In addition, serum levels of chemokine C-C motif ligand 2 were positively associated with pressure pain thresholds in both knees and bilateral trapezius muscles (knees: r=-0.349, p=0.002; trapezius muscles: r=-0.318, p=0.004). Finally, we found elevated serum levels of chemokine C-C motif ligand were also positively associated with the visual analog scale (r=0.368, p=0.001), and the Fibromyalgia Impact Questionnaire score (r=0.401, p&lt;0.001).<br /><strong>Conclusion:</strong> Elevated serum levels of monocyte chemotactic protein-1/chemokine C-C motif ligand 2 are linked to disease severity of fibromyalgia. Therapeutic interventions inhibiting monocyte chemotactic protein-1/chemokine C-C motif ligand 2 in fibromyalgia deserve additional studies.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Elevated levels of monocyte chemotactic protein-1/chemokine C-C motif ligand 2 have been identified in fibromyalgia patients.Aims: To examine the potential association among serum levels of monocyte chemotactic protein-1/chemokine C-C motif ligand 2 with disease severity of fibromyalgia.Study Design: Cross-sectional study.Methods: Seventy-nine female patients with fibromyalgia and 75 healthy normal controls were included in our study. Serum levels of monocyte chemotactic protein-1/chemokine C-C motif ligand 2 were detected by enzyme-linked immune sorbent assays. The existence of tender points was evaluated based on the standardized manual tender point examination. Pressure pain thresholds at the knees, and bilateral trapezius muscles were measured with an algometer. A visual analog scale and the Revised Fibromyalgia Impact Questionnaire were utilized to assess the degree of pain and functional abilities. Results: Serum levels of monocyte chemotactic protein-1/chemokine C-C motif ligand 2 were significantly greater in patients with fibromyalgia compared with healthy controls (151.6±31.9 pg/mL vs 103.3±25.2 pg/mL, p<0.001). Patients with severe fibromyalgia had significantly higher serum levels of chemokine C-C motif ligand 2 than patients with mild and moderate fibromyalgia (173.1±21.9 pg/mL vs 151.0.0±35.1 pg/mL, p=0.01). Patients with moderate fibromyalgia revealed markedly augmented serum levels of chemokine C-C motif ligand 2 compared with patients with mild fibromyalgia (151.0±35.1 pg/mL vs 133.3±23.9 pg/mL, p=0.03). Serum levels of chemokine C-C motif ligand 2 were positively associated with tender point scores (r=0.455, p<0.001). In addition, serum levels of chemokine C-C motif ligand 2 were positively associated with pressure pain thresholds in both knees and bilateral trapezius muscles (knees: r=-0.349, p=0.002; trapezius muscles: r=-0.318, p=0.004). Finally, we found elevated serum levels of chemokine C-C motif ligand were also positively associated with the visual analog scale (r=0.368, p=0.001), and the Fibromyalgia Impact Questionnaire score (r=0.401, p<0.001).Conclusion: Elevated serum levels of monocyte chemotactic protein-1/chemokine C-C motif ligand 2 are linked to disease severity of fibromyalgia. Therapeutic interventions inhibiting monocyte chemotactic protein-1/chemokine C-C motif ligand 2 in fibromyalgia deserve additional studies.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.6.47",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "331-336",
+    "views": 6580,
+    "downloads": 3384,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2138",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2138",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2138",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2138",
+    "localPdfUrl": "js/data/pdfs/2138.pdf",
+    "pdfUrl": "js/data/pdfs/2138.pdf"
+  },
+  {
+    "id": 2137,
+    "type": "Original Article",
+    "title": "The Effects of Irisin on Nω-Nitro-L-arginine Methyl Ester Hydrochloride-Induced Hypertension in Rats",
+    "authors": [
+      {
+        "name": "Nurettin Aydoğdu",
+        "affiliation": "Department of Physiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özlem Yalçınkaya Yavuz",
+        "affiliation": "Department of Physiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ebru Taştekin",
+        "affiliation": "Department of Pathology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pınar Tayfur",
+        "affiliation": "Department of Physiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Oktay Kaya",
+        "affiliation": "Department of Physiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nihayet Kandemir",
+        "affiliation": "Department of Physiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The cause of about 95% of hypertension, an important public health problem, is unknown. Intensive studies are underway to understand the physiopathology of hypertension. Irisin, a newly discovered hormone, has been reported to dilate vascular smooth muscle and lower blood pressure acutely.Aims: To investigate the effects of chronic irisin treatment on blood pressure and renal functions in a hypertension model established by nitric oxide synthase inhibition by treatment with Nω-nitro-L-arginine methyl ester hydrochloride.Study Design: Animal experimentation.Methods: Male Sprague−Dawley rats were divided into four groups (n=8). Control and irisin groups received an intravenous saline injection, hypertension and hypertension + irisin (hypertension + irisin) groups received 1.5 mg/100 g Nω-nitro-L-arginine methyl ester hydrochloride. Nω-nitro-L-arginine methyl ester hydrochloride (150 mg/L) was added to the drinking water of rats in groups hypertension and hypertension + irisin for three weeks. In the second week of the experiment, irisin (50 nmol/day) was given to rats in groups irisin and hypertension + irisin, and saline was administered to rats in groups control and hypertension for two weeks through subcutaneously placed osmotic minipumps. Blood pressure was measured by the tail-cuff plethysmography method. On the twenty-first day of the experiment, 24-hour urine, blood, and both kidneys of the rats were collected. Results: The hypertension group had elevated systolic, diastolic, and mean arterial blood pressure values compared with the control group, with decreased glutathione levels in tissue and serum, but an increase in serum oxidized glutathione level (p<0.05). Histopathologically, increased tubular injury, cast formation, glomerular sclerosis, and peritubular fibrosis levels were observed (p<0.05). Irisin treatment did not cause any significant change in blood pressure, renal functions, and injury scores. However, renal nitric oxide levels significantly increased, and endothelial nitric oxide synthase immunoreactivity was determined to be reduced (p<0.05).Conclusion: Treatment with chronic irisin at a physiological dose does not reduce blood pressure in an experimental model of hypertension. In different models of experimental hypertension, the effects of irisin administration at different doses and at different periods should be thoroughly investigated.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> The cause of about 95% of hypertension, an important public health problem, is unknown. Intensive studies are underway to understand the physiopathology of hypertension. Irisin, a newly discovered hormone, has been reported to dilate vascular smooth muscle and lower blood pressure acutely.<br /><strong>Aims:</strong> To investigate the effects of chronic irisin treatment on blood pressure and renal functions in a hypertension model established by nitric oxide synthase inhibition by treatment with N&omega;-nitro-L-arginine methyl ester hydrochloride.<br /><strong>Study Design:</strong> Animal experimentation.<br /><strong>Methods:</strong> Male Sprague&minus;Dawley rats were divided into four groups (n=8). Control and irisin groups received an intravenous saline injection, hypertension and hypertension + irisin (hypertension + irisin) groups received 1.5 mg/100 g N&omega;-nitro-L-arginine methyl ester hydrochloride. N&omega;-nitro-L-arginine methyl ester hydrochloride (150 mg/L) was added to the drinking water of rats in groups hypertension and hypertension + irisin for three weeks. In the second week of the experiment, irisin (50 nmol/day) was given to rats in groups irisin and hypertension + irisin, and saline was administered to rats in groups control and hypertension for two weeks through subcutaneously placed osmotic minipumps. Blood pressure was measured by the tail-cuff plethysmography method. On the twenty-first day of the experiment, 24-hour urine, blood, and both kidneys of the rats were collected. <br /><strong>Results:</strong> The hypertension group had elevated systolic, diastolic, and mean arterial blood pressure values compared with the control group, with decreased glutathione levels in tissue and serum, but an increase in serum oxidized glutathione level (p&lt;0.05). Histopathologically, increased tubular injury, cast formation, glomerular sclerosis, and peritubular fibrosis levels were observed (p&lt;0.05). Irisin treatment did not cause any significant change in blood pressure, renal functions, and injury scores. However, renal nitric oxide levels significantly increased, and endothelial nitric oxide synthase immunoreactivity was determined to be reduced (p&lt;0.05).<br /><strong>Conclusion:</strong> Treatment with chronic irisin at a physiological dose does not reduce blood pressure in an experimental model of hypertension. In different models of experimental hypertension, the effects of irisin administration at different doses and at different periods should be thoroughly investigated.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The cause of about 95% of hypertension, an important public health problem, is unknown. Intensive studies are underway to understand the physiopathology of hypertension. Irisin, a newly discovered hormone, has been reported to dilate vascular smooth muscle and lower blood pressure acutely.Aims: To investigate the effects of chronic irisin treatment on blood pressure and renal functions in a hypertension model established by nitric oxide synthase inhibition by treatment with Nω-nitro-L-arginine methyl ester hydrochloride.Study Design: Animal experimentation.Methods: Male Sprague−Dawley rats were divided into four groups (n=8). Control and irisin groups received an intravenous saline injection, hypertension and hypertension + irisin (hypertension + irisin) groups received 1.5 mg/100 g Nω-nitro-L-arginine methyl ester hydrochloride. Nω-nitro-L-arginine methyl ester hydrochloride (150 mg/L) was added to the drinking water of rats in groups hypertension and hypertension + irisin for three weeks. In the second week of the experiment, irisin (50 nmol/day) was given to rats in groups irisin and hypertension + irisin, and saline was administered to rats in groups control and hypertension for two weeks through subcutaneously placed osmotic minipumps. Blood pressure was measured by the tail-cuff plethysmography method. On the twenty-first day of the experiment, 24-hour urine, blood, and both kidneys of the rats were collected. Results: The hypertension group had elevated systolic, diastolic, and mean arterial blood pressure values compared with the control group, with decreased glutathione levels in tissue and serum, but an increase in serum oxidized glutathione level (p<0.05). Histopathologically, increased tubular injury, cast formation, glomerular sclerosis, and peritubular fibrosis levels were observed (p<0.05). Irisin treatment did not cause any significant change in blood pressure, renal functions, and injury scores. However, renal nitric oxide levels significantly increased, and endothelial nitric oxide synthase immunoreactivity was determined to be reduced (p<0.05).Conclusion: Treatment with chronic irisin at a physiological dose does not reduce blood pressure in an experimental model of hypertension. In different models of experimental hypertension, the effects of irisin administration at different doses and at different periods should be thoroughly investigated.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.5.113",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "337-346",
+    "views": 6730,
+    "downloads": 10132,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2137",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2137",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2137",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2137",
+    "localPdfUrl": "js/data/pdfs/2137.pdf",
+    "pdfUrl": "js/data/pdfs/2137.pdf"
+  },
+  {
+    "id": 2139,
+    "type": "Original Article",
+    "title": "Prognostic Effects of Predominant Histologic Subtypes in Resected Pulmonary Adenocarcinomas",
+    "authors": [
+      {
+        "name": "Demet Yaldız",
+        "affiliation": "Department of Thoracic Surgery, Celal Bayar University School of Medicine, Manisa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şeyda Örs Kaya",
+        "affiliation": "Clinic of Thoracic Surgery, University of Health Sciences, İzmir Dr. Suat Seren Chest Diseases and Thoracic Surgery Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kenan Can Ceylan",
+        "affiliation": "Clinic of Thoracic Surgery, University of Health Sciences, İzmir Dr. Suat Seren Chest Diseases and Thoracic Surgery Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Arkın Acar",
+        "affiliation": "Clinic of Thoracic Surgery, University of Health Sciences, İzmir Dr. Suat Seren Chest Diseases and Thoracic Surgery Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zekiye Aydoğdu",
+        "affiliation": "Clinic of Pathology, University of Health Sciences, İzmir Dr. Suat Seren Chest Diseases and Thoracic Surgery Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Soner Gürsoy",
+        "affiliation": "Clinic of Thoracic Surgery, University of Health Sciences, İzmir Dr. Suat Seren Chest Diseases and Thoracic Surgery Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sadık Yaldız",
+        "affiliation": "Department of Thoracic Surgery, Celal Bayar University School of Medicine, Manisa, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Predominant histologic subtypes have been reported as predictors of survival of patients with pulmonary adenocarcinoma.Aims: To evaluate the predictive value of histologic classification in resected lung adenocarcinoma using the classification systems proposed by the International Association for the Study of Lung Cancer, American Thoracic Society, European Respiratory Society, and World Health Organization (2015).Study Design: Cross-sectional study.Methods: The histologic classification of a large cohort of 491 patients with resected lung adenocarcinoma (stages I-III) was retrospectively analyzed. The tumors were classified according to their predominant component (lepidic, acinar, papillary, solid, micropapillary, and mucinous), and their predictive values were assessed for clinicopathologic characteristics and overall survival.Results: The patient cohort comprised 158 (32.2%) patients with solid predominant, 150 (30.5%) with acinar predominant, 80 (16.3%) with papillary predominant, 75 (15.3%) with lepidic predominant, 22 (4.5%) with mucinous, and 5 (1.0%) with micropapillary subtype, and 1 (0.2%) with adenocarcinoma in situ. Overall 5-year survival of 491 patients was found to be 51.8%. Patients with lepidic, acinar, and mucinous adenocarcinoma had 70.9%, 59.0%, and 66.6% 5-year survival, respectively, and there was no statistically significant difference between them. Whereas patients with solid, papillary, and micropapillary predominant adenocarcinoma had 41.0%, 40.5%, and 0.0% 5-year survival, respectively. Compared to other histologic subtypes, patients with solid and papillary predominant adenocarcinoma had significantly lower survival than those with lepidic (p<0.001, p=0.002), acinar (p<0.001, p=0.008), and mucinous (p=0.048, p=0.048) subtypes, respectively. The survival difference between patients with solid subtype and those with papillary subtype was not statistically significant (p=0.67).Conclusion: Solid and papillary histologic subtypes are poor prognostic factors in resected invasive lung adenocarcinoma.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Predominant histologic subtypes have been reported as predictors of survival of patients with pulmonary adenocarcinoma.<br /><strong>Aims:</strong> To evaluate the predictive value of histologic classification in resected lung adenocarcinoma using the classification systems proposed by the International Association for the Study of Lung Cancer, American Thoracic Society, European Respiratory Society, and World Health Organization (2015).<br /><strong>Study Design:</strong> Cross-sectional study.<br /><strong>Methods:</strong> The histologic classification of a large cohort of 491 patients with resected lung adenocarcinoma (stages I-III) was retrospectively analyzed. The tumors were classified according to their predominant component (lepidic, acinar, papillary, solid, micropapillary, and mucinous), and their predictive values were assessed for clinicopathologic characteristics and overall survival.<br /><strong>Results:</strong> The patient cohort comprised 158 (32.2%) patients with solid predominant, 150 (30.5%) with acinar predominant, 80 (16.3%) with papillary predominant, 75 (15.3%) with lepidic predominant, 22 (4.5%) with mucinous, and 5 (1.0%) with micropapillary subtype, and 1 (0.2%) with adenocarcinoma in situ. Overall 5-year survival of 491 patients was found to be 51.8%. Patients with lepidic, acinar, and mucinous adenocarcinoma had 70.9%, 59.0%, and 66.6% 5-year survival, respectively, and there was no statistically significant difference between them. Whereas patients with solid, papillary, and micropapillary predominant adenocarcinoma had 41.0%, 40.5%, and 0.0% 5-year survival, respectively. Compared to other histologic subtypes, patients with solid and papillary predominant adenocarcinoma had significantly lower survival than those with lepidic (p&lt;0.001, p=0.002), acinar (p&lt;0.001, p=0.008), and mucinous (p=0.048, p=0.048) subtypes, respectively. The survival difference between patients with solid subtype and those with papillary subtype was not statistically significant (p=0.67).<br /><strong>Conclusion:</strong> Solid and papillary histologic subtypes are poor prognostic factors in resected invasive lung adenocarcinoma.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Predominant histologic subtypes have been reported as predictors of survival of patients with pulmonary adenocarcinoma.Aims: To evaluate the predictive value of histologic classification in resected lung adenocarcinoma using the classification systems proposed by the International Association for the Study of Lung Cancer, American Thoracic Society, European Respiratory Society, and World Health Organization (2015).Study Design: Cross-sectional study.Methods: The histologic classification of a large cohort of 491 patients with resected lung adenocarcinoma (stages I-III) was retrospectively analyzed. The tumors were classified according to their predominant component (lepidic, acinar, papillary, solid, micropapillary, and mucinous), and their predictive values were assessed for clinicopathologic characteristics and overall survival.Results: The patient cohort comprised 158 (32.2%) patients with solid predominant, 150 (30.5%) with acinar predominant, 80 (16.3%) with papillary predominant, 75 (15.3%) with lepidic predominant, 22 (4.5%) with mucinous, and 5 (1.0%) with micropapillary subtype, and 1 (0.2%) with adenocarcinoma in situ. Overall 5-year survival of 491 patients was found to be 51.8%. Patients with lepidic, acinar, and mucinous adenocarcinoma had 70.9%, 59.0%, and 66.6% 5-year survival, respectively, and there was no statistically significant difference between them. Whereas patients with solid, papillary, and micropapillary predominant adenocarcinoma had 41.0%, 40.5%, and 0.0% 5-year survival, respectively. Compared to other histologic subtypes, patients with solid and papillary predominant adenocarcinoma had significantly lower survival than those with lepidic (p<0.001, p=0.002), acinar (p<0.001, p=0.008), and mucinous (p=0.048, p=0.048) subtypes, respectively. The survival difference between patients with solid subtype and those with papillary subtype was not statistically significant (p=0.67).Conclusion: Solid and papillary histologic subtypes are poor prognostic factors in resected invasive lung adenocarcinoma.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.1.130",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "347-353",
+    "views": 6700,
+    "downloads": 3399,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2139",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2139",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2139",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2139",
+    "localPdfUrl": "js/data/pdfs/2139.pdf",
+    "pdfUrl": "js/data/pdfs/2139.pdf"
+  },
+  {
+    "id": 2135,
+    "type": "Brief Report",
+    "title": "The Prevalence of Fabry Disease Among Turkish Patients with Non-Obstructive Hypertrophic Cardiomyopathy: Insights from a Screening Study",
+    "authors": [
+      {
+        "name": "Hasan Ali Barman",
+        "affiliation": "Clinic of Cardiology, İstanbul Okmeydanı Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Barış İkitimur",
+        "affiliation": "Department of Cardiology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burçak Kılıçkıran Avcı",
+        "affiliation": "Department of Cardiology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Eser Durmaz",
+        "affiliation": "Department of Cardiology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Adem Atıcı",
+        "affiliation": "Clinic of Cardiology, İstanbul Taksim Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serkan Aslan",
+        "affiliation": "Clinic of Cardiology, İstanbul Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serdar Ceylaner",
+        "affiliation": "Intergen Genetic Center, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Karpuz[[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Aims: Fabry disease is an X-linked lysosomal storage disorder due to a deficiency of the α-galactosidase A enzyme. Cardiac involvement is present in over 60% of adult cases of Fabry disease. Hypertrophic cardiomyopathy without left ventricular outflow tract obstruction is the most common phenotype. The aim of the study was to screen adult patients with hypertrophic cardiomyopathy without left ventricular outflow tract.Methods: A total of 80 patients between the ages of 18 and 65 years old, were referred to a tertiary center for trans-thoracic echocardiography for various clinical indications. They were investigated for the presence of idiopathic left ventricular hypertrophy without resting or dynamic left ventricular outflow tract obstruction. Plasma α-galactosidase A enzyme activity and α-galactosidase GLA gene mutations were investigated.Results: The mean age was 41.5±12.7 years and 66.25% of patients were males. The mean echocardiographic parameters were as follows: left ventricular ejection fraction 60.7±7.4%, interventricular septum thickness 18.2±4.4 mm, left ventricular posterior wall 13.5±2.1 mm, left ventricular end-diastolic diameter 47.4±6.2 mm, left ventricular end-systolic diameter 27.8±6.5 mm, and left ventricular mass index 171.05±48.5 g/m². Hemizygous mutations associated with Fabry disease were detected in two male patients (2.50% of the screened population): NM_000169.2:c.334C>T(p.Arg112Cys), NM_000169.2:c.902G>A(p.Arg301Gln).Conclusion: Fabry disease should be considered in the differential diagnosis in a highly selected patient population with unexplained left ventricular hypertrophy. The cardiologist may play an important role in the screening and diagnosis of the disease.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Aims:</strong> Fabry disease is an X-linked lysosomal storage disorder due to a deficiency of the &alpha;-galactosidase A enzyme. Cardiac involvement is present in over 60% of adult cases of Fabry disease. Hypertrophic cardiomyopathy without left ventricular outflow tract obstruction is the most common phenotype. The aim of the study was to screen adult patients with hypertrophic cardiomyopathy without left ventricular outflow tract.<br /><strong>Methods:</strong> A total of 80 patients between the ages of 18 and 65 years old, were referred to a tertiary center for trans-thoracic echocardiography for various clinical indications. They were investigated for the presence of idiopathic left ventricular hypertrophy without resting or dynamic left ventricular outflow tract obstruction. Plasma &alpha;-galactosidase A enzyme activity and &alpha;-galactosidase GLA gene mutations were investigated.<br /><strong>Results:</strong> The mean age was 41.5&plusmn;12.7 years and 66.25% of patients were males. The mean echocardiographic parameters were as follows: left ventricular ejection fraction 60.7&plusmn;7.4%, interventricular septum thickness 18.2&plusmn;4.4 mm, left ventricular posterior wall 13.5&plusmn;2.1 mm, left ventricular end-diastolic diameter 47.4&plusmn;6.2 mm, left ventricular end-systolic diameter 27.8&plusmn;6.5 mm, and left ventricular mass index 171.05&plusmn;48.5 g/m&sup2;. Hemizygous mutations associated with Fabry disease were detected in two male patients (2.50% of the screened population): NM_000169.2:c.334C&gt;T(p.Arg112Cys), NM_000169.2:c.902G&gt;A(p.Arg301Gln).<br /><strong>Conclusion:</strong> Fabry disease should be considered in the differential diagnosis in a highly selected patient population with unexplained left ventricular hypertrophy. The cardiologist may play an important role in the screening and diagnosis of the disease.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Aims: Fabry disease is an X-linked lysosomal storage disorder due to a deficiency of the α-galactosidase A enzyme. Cardiac involvement is present in over 60% of adult cases of Fabry disease. Hypertrophic cardiomyopathy without left ventricular outflow tract obstruction is the most common phenotype. The aim of the study was to screen adult patients with hypertrophic cardiomyopathy without left ventricular outflow tract.Methods: A total of 80 patients between the ages of 18 and 65 years old, were referred to a tertiary center for trans-thoracic echocardiography for various clinical indications. They were investigated for the presence of idiopathic left ventricular hypertrophy without resting or dynamic left ventricular outflow tract obstruction. Plasma α-galactosidase A enzyme activity and α-galactosidase GLA gene mutations were investigated.Results: The mean age was 41.5±12.7 years and 66.25% of patients were males. The mean echocardiographic parameters were as follows: left ventricular ejection fraction 60.7±7.4%, interventricular septum thickness 18.2±4.4 mm, left ventricular posterior wall 13.5±2.1 mm, left ventricular end-diastolic diameter 47.4±6.2 mm, left ventricular end-systolic diameter 27.8±6.5 mm, and left ventricular mass index 171.05±48.5 g/m². Hemizygous mutations associated with Fabry disease were detected in two male patients (2.50% of the screened population): NM_000169.2:c.334C>T(p.Arg112Cys), NM_000169.2:c.902G>A(p.Arg301Gln).Conclusion: Fabry disease should be considered in the differential diagnosis in a highly selected patient population with unexplained left ventricular hypertrophy. The cardiologist may play an important role in the screening and diagnosis of the disease.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.5.125",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "354-358",
+    "views": 7038,
+    "downloads": 3447,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2135",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2135",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2135",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2135",
+    "localPdfUrl": "js/data/pdfs/2135.pdf",
+    "pdfUrl": "js/data/pdfs/2135.pdf"
+  },
+  {
+    "id": 2131,
+    "type": "Clinical Image",
+    "title": "Bilateral Adrenal Histoplasmosis",
+    "authors": [
+      {
+        "name": "Thachanun Porntharukchareon",
+        "affiliation": "Department of Medicine, Chulabhorn Medical Center, Bangkok, Thailand; Department of Medicine, Faculty of Medicine, Chulalongkorn University, Bangkok, Thailand",
+        "orcid": ""
+      },
+      {
+        "name": "Sarin Khahakaew",
+        "affiliation": "Department of Medicine, Faculty of Medicine, Chulalongkorn University, Bangkok, Thailand; Department of Medicine, Wetchakarunrasm Hospital, Bangkok, Thailand",
+        "orcid": ""
+      },
+      {
+        "name": "Thitiwat Sriprasart",
+        "affiliation": "Department of Medicine, Faculty of Medicine, Chulalongkorn University, Bangkok, Thailand",
+        "orcid": ""
+      },
+      {
+        "name": "Leilani Paitoonpong",
+        "affiliation": "Department of Medicine, Faculty of Medicine, Chulalongkorn University, Bangkok, Thailand",
+        "orcid": ""
+      },
+      {
+        "name": "Thiti Snabboon",
+        "affiliation": "Department of Medicine, Faculty of Medicine, Chulalongkorn University, Bangkok, Thailand; Excellent Center in Diabetes, Hormone and Metabolism, King Chulalongkorn Memorial Hospital, Thai Red Cross Society, Bangkok, Thailand",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "An 85-year-old man presented with a 4 kg weight loss and anorexia for 3 months. He had no history of tuberculosis or other major illness. Physical examination revealed no fever or hyperpigmentation. In addition, chest X-ray was normal. A computed tomography scan of the abdomen revealed bilateral adrenal masses: a 2.0×2.9 cm mass in the right adrenal gland an",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.4.104",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "359-360",
+    "views": 5583,
+    "downloads": 2053,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2131",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2131",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2131",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2131",
+    "localPdfUrl": "js/data/pdfs/2131.pdf",
+    "pdfUrl": "js/data/pdfs/2131.pdf"
+  },
+  {
+    "id": 2132,
+    "type": "Clinical Image",
+    "title": "Functional Aerophagia in a Pediatric Patient with Abdominal Distension",
+    "authors": [
+      {
+        "name": "İrem İnanç",
+        "affiliation": "Department of Pediatric Surgery, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ümit Nusret Başaran[[1]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 4-year-old girl was brought to our pediatric emergency department with abdominal distention. She had no complaints of constipation, vomiting, loss of appetite, or abdominal pain. Physical examination revealed an immensely distended abdomen with normoactive bowel sounds. No tenderness, guarding, muscular rigidity, hepatosplenomegaly, or mass was noted on pa",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.6.66",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "361-362",
+    "views": 5487,
+    "downloads": 3842,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2132",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2132",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2132",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2132",
+    "localPdfUrl": "js/data/pdfs/2132.pdf",
+    "pdfUrl": "js/data/pdfs/2132.pdf"
+  },
+  {
+    "id": 2136,
+    "type": "Letter to the Editor",
+    "title": "Acute Unilateral Swelling of Parotid Gland After General Anesthesia: Anesthesia Mumps",
+    "authors": [
+      {
+        "name": "Erhan Özyurt",
+        "affiliation": "Clinic of Anesthesiology and Reanimation, University of Health Sciences, Antalya Training and Research Hospital, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gülsüm Ekin Sarı",
+        "affiliation": "Clinic of Obstetrics and Gynecology, University of Health Sciences, Antalya Training and Research Hospital, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selen Doğan",
+        "affiliation": "Clinic of Obstetrics and Gynecology, University of Health Sciences, Antalya Training and Research Hospital, Antalya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, Anesthesia mumps is a unilateral or bilateral acute swelling of the parotid glands that develops after a surgery (1-4). It was first described in 1960, and the incidence is reported to be 0.16%-0.2% (5). However, the mechanisms that lead to anesthesia mumps have not yet been elucidated. We aimed to raise awareness of a rare case of anesthesia ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.6.103",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "363-363",
+    "views": 5785,
+    "downloads": 3229,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2136",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2136",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2136",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2136",
+    "localPdfUrl": "js/data/pdfs/2136.pdf",
+    "pdfUrl": "js/data/pdfs/2136.pdf"
+  },
+  {
+    "id": 2134,
+    "type": "Letter to the Editor",
+    "title": "Multiple Thick Nodular Melanoma: Differentiating Multiple Primaries from the Metastasis of a Previous Single Melanoma",
+    "authors": [
+      {
+        "name": "Albert Alhatem",
+        "affiliation": "Department of Pathology, Immunology and Laboratory Medicine, Rutgers New Jersey Medical School, New Jersey, USA",
+        "orcid": ""
+      },
+      {
+        "name": "W. Clark Lambert",
+        "affiliation": "Department of Pathology, Immunology and Laboratory Medicine, Rutgers New Jersey Medical School, New Jersey, USA; Department of Dermatology, Rutgers New Jersey Medical School, New Jersey, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Robert A. Schwartz",
+        "affiliation": "Department of Pathology, Immunology and Laboratory Medicine, Rutgers New Jersey Medical School, New Jersey, USA; Department of Dermatology, Rutgers New Jersey Medical School, New Jersey, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Ravi J. Chokshi",
+        "affiliation": "Department of Surgery, Division of Surgical Oncology, Rutgers Cancer Institute of New Jersey, New Jersey, USA",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, The incidence rates of invasive melanoma have been increasing for the past few decades, with an estimated 96480 new cases of melanoma in the United States and 7230 deaths from the disease in 2019 (1). Nodular melanoma is the second most common type of melanoma after the superficial spreading type. The term “thick melanoma” is reserved for a la",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.4.115",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "364-365",
+    "views": 5951,
+    "downloads": 1967,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2134",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2134",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2134",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2134",
+    "localPdfUrl": "js/data/pdfs/2134.pdf",
+    "pdfUrl": "js/data/pdfs/2134.pdf"
+  },
+  {
+    "id": 2148,
+    "type": "Letter to the Editor",
+    "title": "Congenital Heart Disease in Asymptomatic Neonates with Extra-Cardiac Malformations and Genetic Disorders",
+    "authors": [
+      {
+        "name": "Ageliki A. Karatza",
+        "affiliation": "Department of Pediatrics, University of Patras Medical School, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Olga Panagiotopoulou",
+        "affiliation": "Department of Pediatrics, University of Patras Medical School, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Despoina Gkentzi",
+        "affiliation": "Department of Pediatrics, University of Patras Medical School, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Gabriel Dimitriou",
+        "affiliation": "Department of Pediatrics, University of Patras Medical School, Patras, Greece",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, The incidence of congenital heart disease is fairly high in neonates with heart murmurs, ranging from 22% to 86% across studies (1). Therefore, low threshold of referral is recommended in this patient population. A cardiac murmur is identified in approximately 2% of routine neonatal examinations (2). The absence of a murmur does not preclude c",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.9.104",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "366-366",
+    "views": 6202,
+    "downloads": 9428,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2148",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2148",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2148",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2148",
+    "localPdfUrl": "js/data/pdfs/2148.pdf",
+    "pdfUrl": "js/data/pdfs/2148.pdf"
+  },
+  {
+    "id": 2151,
+    "type": "Other",
+    "title": "2019 Referee Index",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "",
+    "views": 5094,
+    "downloads": 1605,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2151",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2151",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2151",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2151",
+    "localPdfUrl": "js/data/pdfs/2151.pdf",
+    "pdfUrl": "js/data/pdfs/2151.pdf"
+  },
+  {
+    "id": 2152,
+    "type": "Other",
+    "title": "2019 Subject Index",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "",
+    "views": 5194,
+    "downloads": 1528,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2152",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2152",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2152",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2152",
+    "localPdfUrl": "js/data/pdfs/2152.pdf",
+    "pdfUrl": "js/data/pdfs/2152.pdf"
+  },
+  {
+    "id": 2153,
+    "type": "Other",
+    "title": "2019 Author Index",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "6",
+    "pages": "",
+    "views": 5084,
+    "downloads": 1686,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1259",
+    "sourceArticleId": "2153",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2153",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2153",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2153",
+    "localPdfUrl": "js/data/pdfs/2153.pdf",
+    "pdfUrl": "js/data/pdfs/2153.pdf"
+  }
+]

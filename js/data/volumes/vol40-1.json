@@ -1,0 +1,744 @@
+[
+  {
+    "id": 2464,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "1",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1282",
+    "sourceArticleId": "2464",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2464",
+    "localPdfUrl": "js/data/pdfs/2464.pdf",
+    "pdfUrl": "js/data/pdfs/2464.pdf"
+  },
+  {
+    "id": 2465,
+    "type": "Editorial",
+    "title": "Time to Hand Over the Flag to Shape the Future",
+    "authors": [
+      {
+        "name": "Zafer Koçak",
+        "affiliation": "Department of Radiation Oncology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "I was appointed as the Editor-in-Chief of the Balkan Medical Journal on September 27, 2016, which has been one of the greatest honors of my professional life. Before taking on this important task, I was a member of the editorial board for seven years. After six challenging years, I realized the time had come to hand over the flag to shape the Journal’s futur",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.16012023",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "1",
+    "pages": "1-2",
+    "views": 6510,
+    "downloads": 3914,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1282",
+    "sourceArticleId": "2465",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2465",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2465",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2465",
+    "localPdfUrl": "js/data/pdfs/2465.pdf",
+    "pdfUrl": "js/data/pdfs/2465.pdf"
+  },
+  {
+    "id": 2461,
+    "type": "Invited Review",
+    "title": "Must-have Qualities of Clinical Research on Artificial Intelligence and Machine Learning",
+    "authors": [
+      {
+        "name": "Burak Koçak",
+        "affiliation": "Clinic of Radiology, University of Health Sciences Turkey, Başakşehir Çam and Sakura City Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Renato Cuocolo",
+        "affiliation": "Department of Medicine, Surgery and Dentistry, University of Salerno, Baronissi, Italy",
+        "orcid": ""
+      },
+      {
+        "name": "Daniel Pinto dos Santos",
+        "affiliation": "Department of Radiology, University Hospital of Cologne, Cologne, Germany; Department of Radiology, University Hospital of Frankfurt, Frankfurt, Germany",
+        "orcid": ""
+      },
+      {
+        "name": "Arnaldo Stanzione",
+        "affiliation": "Department of Advanced Biomedical Sciences, University of Naples “Federico II”, Napoli, Italy",
+        "orcid": ""
+      },
+      {
+        "name": "Lorenzo Ugga",
+        "affiliation": "Department of Advanced Biomedical Sciences, University of Naples “Federico II”, Napoli, Italy",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract In the field of computer science, known as artificial intelligence, algorithms imitate reasoning tasks that are typically performed by humans. The techniques that allow machines to learn and get better at tasks such as recognition and prediction, which form the basis of clinical practice, are referred to as machine learning, which is a subfield of artificial intelligence. The number of artificial intelligence- and machine learnings-related publications in clinical journals has grown exponentially, driven by recent developments in computation and the accessibility of simple tools. However, clinicians are often not included in data science teams, which may limit the clinical relevance, explanability, workflow compatibility, and quality improvement of artificial intelligence solutions. Thus, this results in the language barrier between clinicians and artificial intelligence developers. Healthcare practitioners sometimes lack a basic understanding of artificial intelligence research because the approach is difficult for non-specialists to understand. Furthermore, many editors and reviewers of medical publications might not be familiar with the fundamental ideas behind these technologies, which may prevent journals from publishing high-quality artificial intelligence studies or, worse still, could allow for the publication of low-quality works. In this review, we aim to improve readers’ artificial intelligence literacy and critical thinking. As a result, we concentrated on what we consider the 10 most important qualities of artificial intelligence research: valid scientific purpose, high-quality data set, robust reference standard, robust input, no information leakage, optimal bias-variance tradeoff, proper model evaluation, proven clinical utility, transparent reporting, and open science. Before designing a study, one should have defined a sound scientific purpose. Then, it should be backed by a high-quality data set, robust input, and a solid reference standard. The artificial intelligence development pipeline should prevent information leakage. For the models, optimal bias-variance tradeoff should be achieved, and generalizability assessment must be adequately performed. The clinical value of the final models must also be established. After the study, thought should be given to transparency in publishing the process and results as well as open science for sharing data, code, and models. We hope this work may improve the artificial intelligence literacy and mindset of the readers.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>In the field of computer science, known as artificial intelligence, algorithms imitate reasoning tasks that are typically performed by humans. The techniques that allow machines to learn and get better at tasks such as recognition and prediction, which form the basis of clinical practice, are referred to as machine learning, which is a subfield of artificial intelligence. The number of artificial intelligence- and machine learnings-related publications in clinical journals has grown exponentially, driven by recent developments in computation and the accessibility of simple tools. However, clinicians are often not included in data science teams, which may limit the clinical relevance, explanability, workflow compatibility, and quality improvement of artificial intelligence solutions. Thus, this results in the language barrier between clinicians and artificial intelligence developers. Healthcare practitioners sometimes lack a basic understanding of artificial intelligence research because the approach is difficult for non-specialists to understand. Furthermore, many editors and reviewers of medical publications might not be familiar with the fundamental ideas behind these technologies, which may prevent journals from publishing high-quality artificial intelligence studies or, worse still, could allow for the publication of low-quality works. In this review, we aim to improve readers&rsquo; artificial intelligence literacy and critical thinking. As a result, we concentrated on what we consider the 10 most important qualities of artificial intelligence research: valid scientific purpose, high-quality data set, robust reference standard, robust input, no information leakage, optimal bias-variance tradeoff, proper model evaluation, proven clinical utility, transparent reporting, and open science. Before designing a study, one should have defined a sound scientific purpose. Then, it should be backed by a high-quality data set, robust input, and a solid reference standard. The artificial intelligence development pipeline should prevent information leakage. For the models, optimal bias-variance tradeoff should be achieved, and generalizability assessment must be adequately performed. The clinical value of the final models must also be established. After the study, thought should be given to transparency in publishing the process and results as well as open science for sharing data, code, and models. We hope this work may improve the artificial intelligence literacy and mindset of the readers.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract In the field of computer science, known as artificial intelligence, algorithms imitate reasoning tasks that are typically performed by humans. The techniques that allow machines to learn and get better at tasks such as recognition and prediction, which form the basis of clinical practice, are referred to as machine learning, which is a subfield of artificial intelligence. The number of artificial intelligence- and machine learnings-related publications in clinical journals has grown exponentially, driven by recent developments in computation and the accessibility of simple tools. However, clinicians are often not included in data science teams, which may limit the clinical relevance, explanability, workflow compatibility, and quality improvement of artificial intelligence solutions. Thus, this results in the language barrier between clinicians and artificial intelligence developers. Healthcare practitioners sometimes lack a basic understanding of artificial intelligence research because the approach is difficult for non-specialists to understand. Furthermore, many editors and reviewers of medical publications might not be familiar with the fundamental ideas behind these technologies, which may prevent journals from publishing high-quality artificial intelligence studies or, worse still, could allow for the publication of low-quality works. In this review, we aim to improve readers’ artificial intelligence literacy and critical thinking. As a result, we concentrated on what we consider the 10 most important qualities of artificial intelligence research: valid scientific purpose, high-quality data set, robust reference standard, robust input, no information leakage, optimal bias-variance tradeoff, proper model evaluation, proven clinical utility, transparent reporting, and open science. Before designing a study, one should have defined a sound scientific purpose. Then, it should be backed by a high-quality data set, robust input, and a solid reference standard. The artificial intelligence development pipeline should prevent information leakage. For the models, optimal bias-variance tradeoff should be achieved, and generalizability assessment must be adequately performed. The clinical value of the final models must also be established. After the study, thought should be given to transparency in publishing the process and results as well as open science for sharing data, code, and models. We hope this work may improve the artificial intelligence literacy and mindset of the readers.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-11-51",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "1",
+    "pages": "3-12",
+    "views": 12089,
+    "downloads": 8570,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1282",
+    "sourceArticleId": "2461",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2461",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2461",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2461",
+    "localPdfUrl": "js/data/pdfs/2461.pdf",
+    "pdfUrl": "js/data/pdfs/2461.pdf"
+  },
+  {
+    "id": 2451,
+    "type": "Original Article",
+    "title": "Investigation of the Genetic Etiology in Idiopathic Generalized Epileptic Disorders by Targeted Next-generation Sequencing Technique",
+    "authors": [
+      {
+        "name": "Engin Atlı",
+        "affiliation": "Department of Medical Genetics, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Gürkan",
+        "affiliation": "Department of Medical Genetics, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Babürhan Güldiken",
+        "affiliation": "Department of Medical Genetics, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Damla Eker",
+        "affiliation": "Department of Medical Genetics, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sinem Yalçıntepe",
+        "affiliation": "Department of Medical Genetics, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selma Demir",
+        "affiliation": "Department of Medical Genetics, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emine İkbal Atlı[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Idiopathic generalized epilepsy is the most common group of epilepsy disorders in children and adolescents. Various types of genetic abnormality were identified among the hereditary factors that explain epilepsy.Aims: To determine the variations in the etiopathogenesis, treatment protocol planning, and prognosis of idiopathic generalized epilepsy using the next-generation sequencing method.Study Design: A cross-sectional study.Methods: This study included 32 patients with idiopathic generalized epilepsy. Genomic DNA was obtained from peripheral venous blood samples taken from the patients. A total of 18 genes encoding ion channel subunits that are involved in monogenic disorders and are associated with idiopathic generalized epilepsy were included. The targeted custom next-generation sequencing panel was designed to cover all coding exons and all exon/intron splice site regions of 18 genes.Results: We detected 9 (28%) variations, including 1 likely pathogenic (a variant in the SCN1A gene) and 8 of unknown clinical significance (2 in the CLCN2 genes, GABBR2, SCN1B, SLC2A1, SLC4A10 genes, and 2 in the TBC1D24 gene).Conclusion: Study results should be supported by functional advanced studies, with increased existing knowledge in the relevant variations.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Idiopathic generalized epilepsy is the most common group of epilepsy disorders in children and adolescents. Various types of genetic abnormality were identified among the hereditary factors that explain epilepsy.<br /><strong>Aims:</strong> To determine the variations in the etiopathogenesis, treatment protocol planning, and prognosis of idiopathic generalized epilepsy using the next-generation sequencing method.<br /><strong>Study Design:</strong> A cross-sectional study.<br /><strong>Methods:</strong> This study included 32 patients with idiopathic generalized epilepsy. Genomic DNA was obtained from peripheral venous blood samples taken from the patients. A total of 18 genes encoding ion channel subunits that are involved in monogenic disorders and are associated with idiopathic generalized epilepsy were included. The targeted custom next-generation sequencing panel was designed to cover all coding exons and all exon/intron splice site regions of 18 genes.<br /><strong>Results:</strong> We detected 9 (28%) variations, including 1 likely pathogenic (a variant in the <em>SCN1A</em> gene) and 8 of unknown clinical significance (2 in the <em>CLCN2</em> genes, <em>GABBR2</em>, <em>SCN1B</em>, <em>SLC2A1</em>, <em>SLC4A10</em> genes, and 2 in the <em>TBC1D24</em> gene).<br /><strong>Conclusion:</strong> Study results should be supported by functional advanced studies, with increased existing knowledge in the relevant variations.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Idiopathic generalized epilepsy is the most common group of epilepsy disorders in children and adolescents. Various types of genetic abnormality were identified among the hereditary factors that explain epilepsy.Aims: To determine the variations in the etiopathogenesis, treatment protocol planning, and prognosis of idiopathic generalized epilepsy using the next-generation sequencing method.Study Design: A cross-sectional study.Methods: This study included 32 patients with idiopathic generalized epilepsy. Genomic DNA was obtained from peripheral venous blood samples taken from the patients. A total of 18 genes encoding ion channel subunits that are involved in monogenic disorders and are associated with idiopathic generalized epilepsy were included. The targeted custom next-generation sequencing panel was designed to cover all coding exons and all exon/intron splice site regions of 18 genes.Results: We detected 9 (28%) variations, including 1 likely pathogenic (a variant in the SCN1A gene) and 8 of unknown clinical significance (2 in the CLCN2 genes, GABBR2, SCN1B, SLC2A1, SLC4A10 genes, and 2 in the TBC1D24 gene).Conclusion: Study results should be supported by functional advanced studies, with increased existing knowledge in the relevant variations.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-7-55",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "1",
+    "pages": "13-20",
+    "views": 7316,
+    "downloads": 4490,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1282",
+    "sourceArticleId": "2451",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2451",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2451",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2451",
+    "localPdfUrl": "js/data/pdfs/2451.pdf",
+    "pdfUrl": "js/data/pdfs/2451.pdf"
+  },
+  {
+    "id": 2452,
+    "type": "Original Article",
+    "title": "Hypoxia-induced Circular RNA hsa_circ_0006508 Promotes the Warburg Effect in Colorectal Cancer Cells",
+    "authors": [
+      {
+        "name": "Yugang Xu",
+        "affiliation": "Department of General Surgery, The Affiliated Taian City Central Hospital of Qingdao University, Qingdao, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ying Zhang",
+        "affiliation": "Department of Hepatobiliary Surgery, The Affiliated Taian City Central Hospital of Qingdao University, Taian, China",
+        "orcid": ""
+      },
+      {
+        "name": "Wenli Hao",
+        "affiliation": "Department of General Surgery, The Affiliated Taian City Central Hospital of Qingdao University, Qingdao, China",
+        "orcid": ""
+      },
+      {
+        "name": "Wen Zhao",
+        "affiliation": "Department of General Surgery, The Second People’s Hospital of Daiyue District, Taian, China",
+        "orcid": ""
+      },
+      {
+        "name": "Guang Yang",
+        "affiliation": "Department of General Surgery, The Affiliated Taian City Central Hospital of Qingdao University, Qingdao, China",
+        "orcid": ""
+      },
+      {
+        "name": "Changqing Jing",
+        "affiliation": "Department of General Surgery, Shandong Provincial Hospital, Shandong, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The hypoxia-induced Warburg effect promotes colorectal cancer malignancy with altered circular RNA (circRNA) expression.Aims: To investigate the association with the Warburg effect in colorectal cancer and whether has_circ_0006508 can be induced by hypoxia.Study design: In vitro cell lines and human-sample study.Methods: The biological functions of circ_0006508 and miR-1272 in the viability, colony formation, and glycolysis under hypoxic conditions were determined by loss-of-function and gain-of-function experiments. The chromatin immunoprecipitation assay was used to demonstrate the direct binding between circ_0006508 promoters and hypoxia-inducible factor 1α (HIF-1α). Transcription activity was subjected to the Luciferase reporter assay. The correlation of circ_0006508 and miR-1272 with overall survival was determined with the Kaplan-Meier analysis.Results: Upregulated circ_0006508 and downregulated miR-1272 were observed in colorectal cancer samples, which was associated with the TNM stage and overall survival. Functional assays demonstrated that the hypoxia-induced upregulated circ_0006508 and downregulated miR-1272 promoted the viability and Warburg effect of colorectal cancer in vitro. Mechanistically, HIF-1α-induced circ_0006508 could directly sponge miR-1272, which played a suppressive role in glycolysis.Conclusion: Circ_0006508-mediated miR-1272 inhibition could promote the malignant behaviors of colorectal cancer with an upregulated Warburg effect.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The hypoxia-induced Warburg effect promotes colorectal cancer malignancy with altered circular RNA (circRNA) expression.<br /><strong>Aims:</strong> To investigate the association with the Warburg effect in colorectal cancer and whether has_circ_0006508 can be induced by hypoxia.<br /><strong>Study design:</strong> In vitro cell lines and human-sample study.<br /><strong>Methods:</strong> The biological functions of circ_0006508 and miR-1272 in the viability, colony formation, and glycolysis under hypoxic conditions were determined by loss-of-function and gain-of-function experiments. The chromatin immunoprecipitation assay was used to demonstrate the direct binding between circ_0006508 promoters and hypoxia-inducible factor 1&alpha; (HIF-1&alpha;). Transcription activity was subjected to the Luciferase reporter assay. The correlation of circ_0006508 and miR-1272 with overall survival was determined with the Kaplan-Meier analysis.<br /><strong>Results:</strong> Upregulated circ_0006508 and downregulated miR-1272 were observed in colorectal cancer samples, which was associated with the TNM stage and overall survival. Functional assays demonstrated that the hypoxia-induced upregulated circ_0006508 and downregulated miR-1272 promoted the viability and Warburg effect of colorectal cancer in vitro. Mechanistically, HIF-1&alpha;-induced circ_0006508 could directly sponge miR-1272, which played a suppressive role in glycolysis.<br /><strong>Conclusion:</strong> Circ_0006508-mediated miR-1272 inhibition could promote the malignant behaviors of colorectal cancer with an upregulated Warburg effect.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The hypoxia-induced Warburg effect promotes colorectal cancer malignancy with altered circular RNA (circRNA) expression.Aims: To investigate the association with the Warburg effect in colorectal cancer and whether has_circ_0006508 can be induced by hypoxia.Study design: In vitro cell lines and human-sample study.Methods: The biological functions of circ_0006508 and miR-1272 in the viability, colony formation, and glycolysis under hypoxic conditions were determined by loss-of-function and gain-of-function experiments. The chromatin immunoprecipitation assay was used to demonstrate the direct binding between circ_0006508 promoters and hypoxia-inducible factor 1α (HIF-1α). Transcription activity was subjected to the Luciferase reporter assay. The correlation of circ_0006508 and miR-1272 with overall survival was determined with the Kaplan-Meier analysis.Results: Upregulated circ_0006508 and downregulated miR-1272 were observed in colorectal cancer samples, which was associated with the TNM stage and overall survival. Functional assays demonstrated that the hypoxia-induced upregulated circ_0006508 and downregulated miR-1272 promoted the viability and Warburg effect of colorectal cancer in vitro. Mechanistically, HIF-1α-induced circ_0006508 could directly sponge miR-1272, which played a suppressive role in glycolysis.Conclusion: Circ_0006508-mediated miR-1272 inhibition could promote the malignant behaviors of colorectal cancer with an upregulated Warburg effect.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-7-80",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "1",
+    "pages": "21-27",
+    "views": 5783,
+    "downloads": 4102,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1282",
+    "sourceArticleId": "2452",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2452",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2452",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2452",
+    "localPdfUrl": "js/data/pdfs/2452.pdf",
+    "pdfUrl": "js/data/pdfs/2452.pdf"
+  },
+  {
+    "id": 2454,
+    "type": "Original Article",
+    "title": "Unilateral Axillary Lymphadenopathy after the Inactivated SARS-COV-2 (CoronaVac) Vaccine: Ultrasonographic Imaging",
+    "authors": [
+      {
+        "name": "Eda Elverici",
+        "affiliation": "Clinic of Radiology, University of Health Sciences Turkey Ankara City Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Arzu Özsoy",
+        "affiliation": "Clinic of Radiology, University of Health Sciences Turkey Ankara City Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bige Sayın",
+        "affiliation": "Clinic of Radiology, University of Health Sciences Turkey Ankara City Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Muhammet Batuhan Gökhan",
+        "affiliation": "Clinic of Radiology, University of Health Sciences Turkey Ankara City Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erdem Özkan",
+        "affiliation": "Clinic of Radiology, Ankara Numune Training and Research Hospital, Health Application and Research Center, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Currently, unilateral clinical and subclinical axillary adenopathy cases associated with the Pfizer-BioNTech and Moderna vaccines are increasingly reported. However, only one study on axillary adenopathy due to the CoronaVac vaccine is published.Aims: To present the incidence, severity, and ultrasonographic findings of axillary adenopathy that developed in healthcare professionals in Turkey after they were vaccinated with CoronaVac against coronavirus disease-19.Study Design: A prospective study.Methods: In Turkey, the first dose of the CoronaVac vaccine for coronavirus disease-19 was administered to healthcare professionals on January 14, 2021, and the second dose on February 11, 2021. This study covered the period from January 21, 2021 (1 week after the first dose), and April 15, 2021 (9 weeks after the second dose). Individuals who had a history of COVID-19 more than 3 weeks after vaccine doses, systemic disease, and diagnosis and treatment history of breast cancer were excluded. The axillary lymph nodes of the vaccinated and contralateral arms were evaluated in 101 volunteer healthcare professionals using axillary ultrasonography.Results: A significant difference was found in the cortical thicknesses of the lymph nodes between the vaccinated and contralateral axilla after both the first (*p < 0.01) and second (*p < 0.01) doses. Accordingly, the rates of subclinical lymphatic hyperplasia on the vaccinated side were 25.7% (n = 26/101) after the first and 31.1% (n = 28/90) after the second dose. Lymph nodes with pathological appearance based on a reduced echogenic hilum with marked cortical thickening were found only in 2.2%. Among the 39 cases in which antibodies (immunoglobulin G and immunoglobulin M) were measured, the antibody level was classified as <10 and ≥10. No statistically significant difference was found in the cortical thickness of the axillary lymph nodes between patients with high antibody levels (≥10) and those with low antibody levels (<10) (p > 0.05).Conclusion: In this study, clinical signs of axillary lymph node hyperplasia were not detected after vaccination with CoronaVac. Mild and diffuse thickening of the CoronaVac vaccine-induced lymph nodes was more common than pathological and palpable lymph nodes.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Currently, unilateral clinical and subclinical axillary adenopathy cases associated with the Pfizer-BioNTech and Moderna vaccines are increasingly reported. However, only one study on axillary adenopathy due to the CoronaVac vaccine is published.<br /><strong>Aims:</strong> To present the incidence, severity, and ultrasonographic findings of axillary adenopathy that developed in healthcare professionals in Turkey after they were vaccinated with CoronaVac against coronavirus disease-19.<br /><strong>Study Design:</strong> A prospective study.<br /><strong>Methods:</strong> In Turkey, the first dose of the CoronaVac vaccine for coronavirus disease-19 was administered to healthcare professionals on January 14, 2021, and the second dose on February 11, 2021. This study covered the period from January 21, 2021 (1 week after the first dose), and April 15, 2021 (9 weeks after the second dose). Individuals who had a history of COVID-19 more than 3 weeks after vaccine doses, systemic disease, and diagnosis and treatment history of breast cancer were excluded. The axillary lymph nodes of the vaccinated and contralateral arms were evaluated in 101 volunteer healthcare professionals using axillary ultrasonography.<br /><strong>Results:</strong> A significant difference was found in the cortical thicknesses of the lymph nodes between the vaccinated and contralateral axilla after both the first <em>(*p &lt; 0.01)</em> and second <em>(*p &lt; 0.01)</em> doses. Accordingly, the rates of subclinical lymphatic hyperplasia on the vaccinated side were 25.7% (n = 26/101) after the first and 31.1% (n = 28/90) after the second dose. Lymph nodes with pathological appearance based on a reduced echogenic hilum with marked cortical thickening were found only in 2.2%. Among the 39 cases in which antibodies (immunoglobulin G and immunoglobulin M) were measured, the antibody level was classified as &lt;10 and &ge;10. No statistically significant difference was found in the cortical thickness of the axillary lymph nodes between patients with high antibody levels (&ge;10) and those with low antibody levels (&lt;10) <em>(p &gt; 0.05)</em>.<br /><strong>Conclusion:</strong> In this study, clinical signs of axillary lymph node hyperplasia were not detected after vaccination with CoronaVac. Mild and diffuse thickening of the CoronaVac vaccine-induced lymph nodes was more common than pathological and palpable lymph nodes.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Currently, unilateral clinical and subclinical axillary adenopathy cases associated with the Pfizer-BioNTech and Moderna vaccines are increasingly reported. However, only one study on axillary adenopathy due to the CoronaVac vaccine is published.Aims: To present the incidence, severity, and ultrasonographic findings of axillary adenopathy that developed in healthcare professionals in Turkey after they were vaccinated with CoronaVac against coronavirus disease-19.Study Design: A prospective study.Methods: In Turkey, the first dose of the CoronaVac vaccine for coronavirus disease-19 was administered to healthcare professionals on January 14, 2021, and the second dose on February 11, 2021. This study covered the period from January 21, 2021 (1 week after the first dose), and April 15, 2021 (9 weeks after the second dose). Individuals who had a history of COVID-19 more than 3 weeks after vaccine doses, systemic disease, and diagnosis and treatment history of breast cancer were excluded. The axillary lymph nodes of the vaccinated and contralateral arms were evaluated in 101 volunteer healthcare professionals using axillary ultrasonography.Results: A significant difference was found in the cortical thicknesses of the lymph nodes between the vaccinated and contralateral axilla after both the first (*p < 0.01) and second (*p < 0.01) doses. Accordingly, the rates of subclinical lymphatic hyperplasia on the vaccinated side were 25.7% (n = 26/101) after the first and 31.1% (n = 28/90) after the second dose. Lymph nodes with pathological appearance based on a reduced echogenic hilum with marked cortical thickening were found only in 2.2%. Among the 39 cases in which antibodies (immunoglobulin G and immunoglobulin M) were measured, the antibody level was classified as <10 and ≥10. No statistically significant difference was found in the cortical thickness of the axillary lymph nodes between patients with high antibody levels (≥10) and those with low antibody levels (<10) (p > 0.05).Conclusion: In this study, clinical signs of axillary lymph node hyperplasia were not detected after vaccination with CoronaVac. Mild and diffuse thickening of the CoronaVac vaccine-induced lymph nodes was more common than pathological and palpable lymph nodes.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-4-107",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "1",
+    "pages": "28-33",
+    "views": 6405,
+    "downloads": 3550,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1282",
+    "sourceArticleId": "2454",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2454",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2454",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2454",
+    "localPdfUrl": "js/data/pdfs/2454.pdf",
+    "pdfUrl": "js/data/pdfs/2454.pdf"
+  },
+  {
+    "id": 2458,
+    "type": "Original Article",
+    "title": "Humoral and Cellular Immunity to Severe Acute Respiratory Syndrome Coronavirus-2 Vaccination in Patients with Sarcoidosis",
+    "authors": [
+      {
+        "name": "Ersan Atahan",
+        "affiliation": "Department of Pulmonary Diseases, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Buket Çalışkaner Öztürk",
+        "affiliation": "Department of Pulmonary Diseases, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Rüveyda Akçin",
+        "affiliation": "Department of Medical Microbiology, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Suat Sarıbaş",
+        "affiliation": "Department of Medical Microbiology, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bekir Kocazeybek",
+        "affiliation": "Department of Medical Microbiology, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The coronavirus disease 2019 vaccine induces both antibody and T-cell immune responses and has been proven to be effective in preventing coronavirus disease 2019, including its severe disease form, in healthy individuals. However, the details of severe acute respiratory syndrome coronavirus-2 immunoglobulin-G antibody responses and severe acute respiratory syndrome coronavirus-2 specific T-cell responses in patients with sarcoidosis are unknown.Aim: To measure and compare antibody responses and T cell responses using enzyme-linked immunosorbent assays and interferon-gamma release assay in sarcoidosis patients infected with coronavirus disease 2019 and vaccinated with CoronaVac.Study Design: A prospective cohort study.Methods: A total of 28 coronavirus disease 2019 polymerase chain reaction test-positive sarcoidosis patients who were infected with severe acute respiratory syndrome coronavirus-2 in the past 6 months and did not have coronavirus disease 2019 vaccination and 28 sarcoidosis patients who were administered with 2 doses of CoronaVac and never had coronavirus disease 2019 were included in this study. The immune response levels of patients were determined by measuring the severe acute respiratory syndrome coronavirus-2 immunglobulinG and interferon-gamma levels in the blood of the patients by the enzyme-linked immunosorbent assays method and interferon-gamma release assay tests, respectively.Results: The mean age of the patients in the COVID-infected group was 48.1 ± 11.3, while the mean age of the patients in the vaccinated group was 55.6 ± 9.32. The mean time elapsed after infection was 97.32 ± 42.1 days, while 61.3 ± 28.7 days had passed since the second vaccination dose. In the COVID-infected group, immunoglobulin-G and interferon-gamma release tests were positive in 64.3% and 89.3% of the patients, respectively. In the vaccinated group, immunoglobulin-G was positive in 10.7% of the patients, and interferon-gamma release test was positive in 14.3%.Conclusion: Innate immune responses are better than adaptive immune responses in patients with sarcoidosis. The coronaVac vaccine is insufficient to generate humoral and cellular immunities in patients with sarcoidosis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The coronavirus disease 2019 vaccine induces both antibody and T-cell immune responses and has been proven to be effective in preventing coronavirus disease 2019, including its severe disease form, in healthy individuals. However, the details of severe acute respiratory syndrome coronavirus-2 immunoglobulin-G antibody responses and severe acute respiratory syndrome coronavirus-2 specific T-cell responses in patients with sarcoidosis are unknown.<br /><strong>Aim:</strong> To measure and compare antibody responses and T cell responses using enzyme-linked immunosorbent assays and interferon-gamma release assay in sarcoidosis patients infected with coronavirus disease 2019 and vaccinated with CoronaVac.<br /><strong>Study Design:</strong> A prospective cohort study.<br /><strong>Methods:</strong> A total of 28 coronavirus disease 2019 polymerase chain reaction test-positive sarcoidosis patients who were infected with severe acute respiratory syndrome coronavirus-2 in the past 6 months and did not have coronavirus disease 2019 vaccination and 28 sarcoidosis patients who were administered with 2 doses of CoronaVac and never had coronavirus disease 2019 were included in this study. The immune response levels of patients were determined by measuring the severe acute respiratory syndrome coronavirus-2 immunglobulinG and interferon-gamma levels in the blood of the patients by the enzyme-linked immunosorbent assays method and interferon-gamma release assay tests, respectively.<br /><strong>Results:</strong> The mean age of the patients in the COVID-infected group was 48.1 &plusmn; 11.3, while the mean age of the patients in the vaccinated group was 55.6 &plusmn; 9.32. The mean time elapsed after infection was 97.32 &plusmn; 42.1 days, while 61.3 &plusmn; 28.7 days had passed since the second vaccination dose. In the COVID-infected group, immunoglobulin-G and interferon-gamma release tests were positive in 64.3% and 89.3% of the patients, respectively. In the vaccinated group, immunoglobulin-G was positive in 10.7% of the patients, and interferon-gamma release test was positive in 14.3%.<br /><strong>Conclusion:</strong> Innate immune responses are better than adaptive immune responses in patients with sarcoidosis. The coronaVac vaccine is insufficient to generate humoral and cellular immunities in patients with sarcoidosis.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The coronavirus disease 2019 vaccine induces both antibody and T-cell immune responses and has been proven to be effective in preventing coronavirus disease 2019, including its severe disease form, in healthy individuals. However, the details of severe acute respiratory syndrome coronavirus-2 immunoglobulin-G antibody responses and severe acute respiratory syndrome coronavirus-2 specific T-cell responses in patients with sarcoidosis are unknown.Aim: To measure and compare antibody responses and T cell responses using enzyme-linked immunosorbent assays and interferon-gamma release assay in sarcoidosis patients infected with coronavirus disease 2019 and vaccinated with CoronaVac.Study Design: A prospective cohort study.Methods: A total of 28 coronavirus disease 2019 polymerase chain reaction test-positive sarcoidosis patients who were infected with severe acute respiratory syndrome coronavirus-2 in the past 6 months and did not have coronavirus disease 2019 vaccination and 28 sarcoidosis patients who were administered with 2 doses of CoronaVac and never had coronavirus disease 2019 were included in this study. The immune response levels of patients were determined by measuring the severe acute respiratory syndrome coronavirus-2 immunglobulinG and interferon-gamma levels in the blood of the patients by the enzyme-linked immunosorbent assays method and interferon-gamma release assay tests, respectively.Results: The mean age of the patients in the COVID-infected group was 48.1 ± 11.3, while the mean age of the patients in the vaccinated group was 55.6 ± 9.32. The mean time elapsed after infection was 97.32 ± 42.1 days, while 61.3 ± 28.7 days had passed since the second vaccination dose. In the COVID-infected group, immunoglobulin-G and interferon-gamma release tests were positive in 64.3% and 89.3% of the patients, respectively. In the vaccinated group, immunoglobulin-G was positive in 10.7% of the patients, and interferon-gamma release test was positive in 14.3%.Conclusion: Innate immune responses are better than adaptive immune responses in patients with sarcoidosis. The coronaVac vaccine is insufficient to generate humoral and cellular immunities in patients with sarcoidosis.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-8-64",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "1",
+    "pages": "34-39",
+    "views": 6260,
+    "downloads": 3820,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1282",
+    "sourceArticleId": "2458",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2458",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2458",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2458",
+    "localPdfUrl": "js/data/pdfs/2458.pdf",
+    "pdfUrl": "js/data/pdfs/2458.pdf"
+  },
+  {
+    "id": 2455,
+    "type": "Original Article",
+    "title": "Preoperative Risk Factors for Predicting Postoperative Human Serum Albumin Infusion after Hip Fracture Surgery: Development and Validation of a Nomogram",
+    "authors": [
+      {
+        "name": "Xiao Chen",
+        "affiliation": "Department of Orthopaedics, Suzhou Hospital of Anhui Medical University, Suzhou city, Anhui province, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xin Liu",
+        "affiliation": "Department of Gastroenterology, The Affiliated Hospital of Qingdao University, Qingdao, Shandong province, China",
+        "orcid": ""
+      },
+      {
+        "name": "Junpeng Pan",
+        "affiliation": "Department of Spinal Surgery, The Affiliated Hospital of Qingdao University, Qingdao, Shandong province, China",
+        "orcid": ""
+      },
+      {
+        "name": "Penzhou You",
+        "affiliation": "Department of Orthopaedics, Suzhou Hospital of Anhui Medical University, Suzhou city, Anhui province, China",
+        "orcid": ""
+      },
+      {
+        "name": "Sijun Ren",
+        "affiliation": "Department of Orthopaedics, Suzhou Hospital of Anhui Medical University, Suzhou city, Anhui province, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: As one of the adverse events after hip fracture surgery, hypoalbuminemia is usually treated using human serum albumin infusion. However, the application of human serum albumin may cause complications such as postsurgical infection and increased mortality.Aims: To examine the preoperative risk factors of human serum albumin infusion after hip fracture surgery, establish a nomogram prediction model, and verify its accuracy.Study Design: A retrospective cross-sectional study.Methods: Eligible patients who underwent hip fracture surgery were divided into the infusion and non-infusion groups according to whether human serum albumin was infused or not. All patients were divided randomly into a training set and a testing set in line with the ratio of 7:3. In the training set, independent risk factors of postoperative human serum albumin infusion were determined by univariate logistic regression analysis, LASSO regression, and multivariate logistic regression analysis. Then, a nomogram model was established. Furthermore, the receiver operating characteristic curve and calibration curve were plotted, and decision curve analysis was performed for the training and testing sets to assess the predictability, discriminative ability, and clinical usefulness of the model.Results: This study included a total of 1,339 eligible patients, 141 of whom were injected with human serum albumin postoperatively. Altogether, the training set incorporated 939 patients, and the testing set included 400 patients. Multivariate logistic analysis indicated five independent risk factors, including chronic lung disease (odds ratio, 95% confidence interval, 2.618, 1.413-4.849, p = 0.002), (albumin; odds ratio, 95% confidence interval, 0.842, 0.787-0.900, p < 0.001), prothrombin time (odds ratio, 95% confidence interval, 1.252, 1.071-1.463, p = 0.005), red blood cells (odds ratio, 95% confidence interval, 0.370, 0.228-0.602, p < 0.001), and type of anesthesia (odds ratio, 95% confidence interval, 0.553, 0.327-0.937, p = 0.028). Fracture type, a clinically significant factor, was also considered. Finally, the nomogram model was built based on these seven predictors. The areas under the curve of the nomogram were 0.854 (95% confidence interval, 0.811-0.898) and 0.767 (95% confidence interval, 0.686-0.847) in the training and testing sets separately. As shown in the calibration curve, the predicted result was consistent with the observed one. The decision curve analysis indicated that the nomogram has good clinical value.Conclusion: Low preoperative serum albumin levels, low preoperative red blood cell counts, prolonged preoperative prothrombin time, history of chronic lung disease, and general anesthesia were independent risk factors for postoperative human serum albumin infusion. Besides, the fracture type, clinically significant factor, was also included. The nomogram that combined these six predictors could accurately predict the risk of postoperative human serum albumin infusion.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> As one of the adverse events after hip fracture surgery, hypoalbuminemia is usually treated using human serum albumin infusion. However, the application of human serum albumin may cause complications such as postsurgical infection and increased mortality.<br /><strong>Aims:</strong> To examine the preoperative risk factors of human serum albumin infusion after hip fracture surgery, establish a nomogram prediction model, and verify its accuracy.<br /><strong>Study Design:</strong> A retrospective cross-sectional study.<br /><strong>Methods:</strong> Eligible patients who underwent hip fracture surgery were divided into the infusion and non-infusion groups according to whether human serum albumin was infused or not. All patients were divided randomly into a training set and a testing set in line with the ratio of 7:3. In the training set, independent risk factors of postoperative human serum albumin infusion were determined by univariate logistic regression analysis, LASSO regression, and multivariate logistic regression analysis. Then, a nomogram model was established. Furthermore, the receiver operating characteristic curve and calibration curve were plotted, and decision curve analysis was performed for the training and testing sets to assess the predictability, discriminative ability, and clinical usefulness of the model.<br /><strong>Results:</strong> This study included a total of 1,339 eligible patients, 141 of whom were injected with human serum albumin postoperatively. Altogether, the training set incorporated 939 patients, and the testing set included 400 patients. Multivariate logistic analysis indicated five independent risk factors, including chronic lung disease (odds ratio, 95% confidence interval, 2.618, 1.413-4.849, <em>p</em> = 0.002), (albumin; odds ratio, 95% confidence interval, 0.842, 0.787-0.900, <em>p</em> &lt; 0.001), prothrombin time (odds ratio, 95% confidence interval, 1.252, 1.071-1.463, <em>p</em> = 0.005), red blood cells (odds ratio, 95% confidence interval, 0.370, 0.228-0.602, <em>p</em> &lt; 0.001), and type of anesthesia (odds ratio, 95% confidence interval, 0.553, 0.327-0.937, <em>p</em> = 0.028). Fracture type, a clinically significant factor, was also considered. Finally, the nomogram model was built based on these seven predictors. The areas under the curve of the nomogram were 0.854 (95% confidence interval, 0.811-0.898) and 0.767 (95% confidence interval, 0.686-0.847) in the training and testing sets separately. As shown in the calibration curve, the predicted result was consistent with the observed one. The decision curve analysis indicated that the nomogram has good clinical value.<br /><strong>Conclusion:</strong> Low preoperative serum albumin levels, low preoperative red blood cell counts, prolonged preoperative prothrombin time, history of chronic lung disease, and general anesthesia were independent risk factors for postoperative human serum albumin infusion. Besides, the fracture type, clinically significant factor, was also included. The nomogram that combined these six predictors could accurately predict the risk of postoperative human serum albumin infusion.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: As one of the adverse events after hip fracture surgery, hypoalbuminemia is usually treated using human serum albumin infusion. However, the application of human serum albumin may cause complications such as postsurgical infection and increased mortality.Aims: To examine the preoperative risk factors of human serum albumin infusion after hip fracture surgery, establish a nomogram prediction model, and verify its accuracy.Study Design: A retrospective cross-sectional study.Methods: Eligible patients who underwent hip fracture surgery were divided into the infusion and non-infusion groups according to whether human serum albumin was infused or not. All patients were divided randomly into a training set and a testing set in line with the ratio of 7:3. In the training set, independent risk factors of postoperative human serum albumin infusion were determined by univariate logistic regression analysis, LASSO regression, and multivariate logistic regression analysis. Then, a nomogram model was established. Furthermore, the receiver operating characteristic curve and calibration curve were plotted, and decision curve analysis was performed for the training and testing sets to assess the predictability, discriminative ability, and clinical usefulness of the model.Results: This study included a total of 1,339 eligible patients, 141 of whom were injected with human serum albumin postoperatively. Altogether, the training set incorporated 939 patients, and the testing set included 400 patients. Multivariate logistic analysis indicated five independent risk factors, including chronic lung disease (odds ratio, 95% confidence interval, 2.618, 1.413-4.849, p = 0.002), (albumin; odds ratio, 95% confidence interval, 0.842, 0.787-0.900, p < 0.001), prothrombin time (odds ratio, 95% confidence interval, 1.252, 1.071-1.463, p = 0.005), red blood cells (odds ratio, 95% confidence interval, 0.370, 0.228-0.602, p < 0.001), and type of anesthesia (odds ratio, 95% confidence interval, 0.553, 0.327-0.937, p = 0.028). Fracture type, a clinically significant factor, was also considered. Finally, the nomogram model was built based on these seven predictors. The areas under the curve of the nomogram were 0.854 (95% confidence interval, 0.811-0.898) and 0.767 (95% confidence interval, 0.686-0.847) in the training and testing sets separately. As shown in the calibration curve, the predicted result was consistent with the observed one. The decision curve analysis indicated that the nomogram has good clinical value.Conclusion: Low preoperative serum albumin levels, low preoperative red blood cell counts, prolonged preoperative prothrombin time, history of chronic lung disease, and general anesthesia were independent risk factors for postoperative human serum albumin infusion. Besides, the fracture type, clinically significant factor, was also included. The nomogram that combined these six predictors could accurately predict the risk of postoperative human serum albumin infusion.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-7-26",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "1",
+    "pages": "40-50",
+    "views": 7291,
+    "downloads": 5408,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1282",
+    "sourceArticleId": "2455",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2455",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2455",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2455",
+    "localPdfUrl": "js/data/pdfs/2455.pdf",
+    "pdfUrl": "js/data/pdfs/2455.pdf"
+  },
+  {
+    "id": 2460,
+    "type": "Original Article",
+    "title": "Eltrombopag for the Treatment of Poor Graft Function Following Haematopoietic Cell Transplantation: Real-Life Data",
+    "authors": [
+      {
+        "name": "Ekin Kırcalı",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Güldane Cengiz Seval",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cemaleddin Öztürk",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hülya Yılmaz",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Derya Koyun",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sinem Civriz Bozdağ",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selami Koçak Toprak",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pervin Topçuoğlu",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Önder Arslan",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Muhit Özcan",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Taner Demirer",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Osman İlhan",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Günhan Gürman",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Meral Beksaç",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Meltem Kurt Yüksel[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Eltrombopag has an off-label indication for haematopoietic cell transplantation in patients experiencing delayed thrombocyte recovery and/or thrombocytopaenia.Aims: To present our centre’s experience of using this agent not only for post- haematopoietic cell transplantation thrombocytopaenia but also for poor graft functioning in the post-haematopoietic cell transplantation setting.Study Design: Retrospective cross-sectional study.Methods: Thirty-nine patients who had persistent cytopaenia following haematopoietic cell transplantation and treated with eltrombopag at our centre between October 2011 and December 2021 were retrospectively identified. During this period, 9 (23.1%) and 30 (76.9%) patients who underwent allogeneic transplantations, respectively, received eltrombopag.Results: The female-to-male ratio was 12:27, and the median transplant age was 49 (18-70) years. Eight (20.5%) patients had isolated thrombocytopaenia, 19 (49.4%) had bi-lineage cytopaenia and 12 (30.1%) had pancytopaenia. Patients received a median of 50 mg/day (25-150 mg/day) of eltrombopagfor a median duration of 82 (24-386) days. Nine (23.1%) patients had autologous haematopoietic cell transplantation, and 30 (76.9%) had allogeneic haematopoietic cell transplantation (14 unrelated, 9 sibling and 7 haploidentical). The median donor age was 32 (20-67) years. The median follow-up was 16.4 (1.8-84.3) months. The median pre-treatment platelet count was 11x109/l (1-23), which increased to 41x109/l (6-150). The median platelet count increment was 29.5x109/l (p = 0.001). The pre-treatment median neutrophil count was 1.19x109/l (0.39-5.1), which increased to 2.35 x109/l (0.1-5.33) (p = 0.05), and the pre-treatment median haemoglobin was 8.3 (6.2-14) g/dl, which increased to 10 (6.2-14) g/dl (p = 0.001) with eltrombopag. No eltrombopag-related hepatotoxicity occurred; however, 1 (2.6%) patient failed to continue treatment because of two consecutive episodes of deep venous thrombosis. Six (15.4%) patients were unresponsive to eltrombopag and dependent on blood product transfusions. After a median time of 82 days, 61.5% of the patients discontinued eltrombopag successfully.Conclusion: The results confirmed that eltrombopag could provide a rapid, sustained response in patients with poor graft functioning after haematopoietic cell transplantation. This finding is essential given the high rate of non-relapse mortality caused by poor graft functioning after haematopoietic cell transplantation.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Eltrombopag has an off-label indication for haematopoietic cell transplantation in patients experiencing delayed thrombocyte recovery and/or thrombocytopaenia.<br /><strong>Aims:</strong> To present our centre&rsquo;s experience of using this agent not only for post- haematopoietic cell transplantation thrombocytopaenia but also for poor graft functioning in the post-haematopoietic cell transplantation setting.<br /><strong>Study Design:</strong> Retrospective cross-sectional study.<br /><strong>Methods:</strong> Thirty-nine patients who had persistent cytopaenia following haematopoietic cell transplantation and treated with eltrombopag at our centre between October 2011 and December 2021 were retrospectively identified. During this period, 9 (23.1%) and 30 (76.9%) patients who underwent allogeneic transplantations, respectively, received eltrombopag.<br /><strong>Results:</strong> The female-to-male ratio was 12:27, and the median transplant age was 49 (18-70) years. Eight (20.5%) patients had isolated thrombocytopaenia, 19 (49.4%) had bi-lineage cytopaenia and 12 (30.1%) had pancytopaenia. Patients received a median of 50 mg/day (25-150 mg/day) of eltrombopagfor a median duration of 82 (24-386) days. Nine (23.1%) patients had autologous haematopoietic cell transplantation, and 30 (76.9%) had allogeneic haematopoietic cell transplantation (14 unrelated, 9 sibling and 7 haploidentical). The median donor age was 32 (20-67) years. The median follow-up was 16.4 (1.8-84.3) months. The median pre-treatment platelet count was 11x10<sup>9</sup>/l (1-23), which increased to 41x10<sup>9</sup>/l (6-150). The median platelet count increment was 29.5x10<sup>9</sup>/l (<em>p</em> = 0.001). The pre-treatment median neutrophil count was 1.19x10<sup>9</sup>/l (0.39-5.1), which increased to 2.35 x10<sup>9</sup>/l (0.1-5.33) (<em>p</em> = 0.05), and the pre-treatment median haemoglobin was 8.3 (6.2-14) g/dl, which increased to 10 (6.2-14) g/dl (<em>p</em> = 0.001) with eltrombopag. No eltrombopag-related hepatotoxicity occurred; however, 1 (2.6%) patient failed to continue treatment because of two consecutive episodes of deep venous thrombosis. Six (15.4%) patients were unresponsive to eltrombopag and dependent on blood product transfusions. After a median time of 82 days, 61.5% of the patients discontinued eltrombopag successfully.<br /><strong>Conclusion:</strong> The results confirmed that eltrombopag could provide a rapid, sustained response in patients with poor graft functioning after haematopoietic cell transplantation. This finding is essential given the high rate of non-relapse mortality caused by poor graft functioning after haematopoietic cell transplantation.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Eltrombopag has an off-label indication for haematopoietic cell transplantation in patients experiencing delayed thrombocyte recovery and/or thrombocytopaenia.Aims: To present our centre’s experience of using this agent not only for post- haematopoietic cell transplantation thrombocytopaenia but also for poor graft functioning in the post-haematopoietic cell transplantation setting.Study Design: Retrospective cross-sectional study.Methods: Thirty-nine patients who had persistent cytopaenia following haematopoietic cell transplantation and treated with eltrombopag at our centre between October 2011 and December 2021 were retrospectively identified. During this period, 9 (23.1%) and 30 (76.9%) patients who underwent allogeneic transplantations, respectively, received eltrombopag.Results: The female-to-male ratio was 12:27, and the median transplant age was 49 (18-70) years. Eight (20.5%) patients had isolated thrombocytopaenia, 19 (49.4%) had bi-lineage cytopaenia and 12 (30.1%) had pancytopaenia. Patients received a median of 50 mg/day (25-150 mg/day) of eltrombopagfor a median duration of 82 (24-386) days. Nine (23.1%) patients had autologous haematopoietic cell transplantation, and 30 (76.9%) had allogeneic haematopoietic cell transplantation (14 unrelated, 9 sibling and 7 haploidentical). The median donor age was 32 (20-67) years. The median follow-up was 16.4 (1.8-84.3) months. The median pre-treatment platelet count was 11x109/l (1-23), which increased to 41x109/l (6-150). The median platelet count increment was 29.5x109/l (p = 0.001). The pre-treatment median neutrophil count was 1.19x109/l (0.39-5.1), which increased to 2.35 x109/l (0.1-5.33) (p = 0.05), and the pre-treatment median haemoglobin was 8.3 (6.2-14) g/dl, which increased to 10 (6.2-14) g/dl (p = 0.001) with eltrombopag. No eltrombopag-related hepatotoxicity occurred; however, 1 (2.6%) patient failed to continue treatment because of two consecutive episodes of deep venous thrombosis. Six (15.4%) patients were unresponsive to eltrombopag and dependent on blood product transfusions. After a median time of 82 days, 61.5% of the patients discontinued eltrombopag successfully.Conclusion: The results confirmed that eltrombopag could provide a rapid, sustained response in patients with poor graft functioning after haematopoietic cell transplantation. This finding is essential given the high rate of non-relapse mortality caused by poor graft functioning after haematopoietic cell transplantation.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-2-48",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "1",
+    "pages": "51-56",
+    "views": 6921,
+    "downloads": 5343,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1282",
+    "sourceArticleId": "2460",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2460",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2460",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2460",
+    "localPdfUrl": "js/data/pdfs/2460.pdf",
+    "pdfUrl": "js/data/pdfs/2460.pdf"
+  },
+  {
+    "id": 2459,
+    "type": "Original Article",
+    "title": "Silencing SOX11 Alleviates Allergic Rhinitis by Inhibiting Epithelial-Derived Cytokines",
+    "authors": [
+      {
+        "name": "Li Jiang",
+        "affiliation": "Department of Otolaryngology Head and Neck Surgery, The First Affiliated Hospital of Harbin Medical University, Heilongjiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Chunrui Wang",
+        "affiliation": "Department of Otolaryngology Head and Neck Surgery, The First Affiliated Hospital of Harbin Medical University, Heilongjiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Rui Zhao",
+        "affiliation": "Department of Otolaryngology Head and Neck Surgery, The Second Affiliated Hospital of Harbin Medical University, Heilongjiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jing Cao",
+        "affiliation": "Department of Otolaryngology Head and Neck Surgery, The Second Affiliated Hospital of Harbin Medical University, Heilongjiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yaohui Liu",
+        "affiliation": "Department of Otolaryngology Head and Neck Surgery, The Second Affiliated Hospital of Harbin Medical University, Heilongjiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Linli Tian",
+        "affiliation": "Department of Otolaryngology Head and Neck Surgery, The Second Affiliated Hospital of Harbin Medical University, Heilongjiang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ming Liu",
+        "affiliation": "Department of Otolaryngology Head and Neck Surgery, The Second Affiliated Hospital of Harbin Medical University, Heilongjiang, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Allergic rhinitis is a chronic inflammatory disease of the nasal mucosa affecting the quality of life of patients. SRY-box transcription factor 11 (SOX11) was reported to play important roles in inflammatory responses, but its role in AR is poorly understood.Aims: To explore the role of SOX11 in the development of allergic rhinitis.Study Design: Cell culture and animal study.Methods: An in vivo murine allergic rhinitis model was established using ovalbumin treatment in female mice. Interleukin-13-stimulated human nasal mucosa epithelial cells were used for in vitro studies. Expression levels of SOX11, epithelial-derived cytokines, and mucin were determined in both modesls.Results: SOX11 was highly expressed in allergic rhinitis mice. Allergy symptoms, serum ovalbumin-specific IgE, histamine, eosinophils, goblet cells, and type 2 cytokine secretion were increased in ovalbumin-treated mice. Furthermore, allergic rhinitis mice exhibited overproduction of epithelial-derived cytokines (thymic stromal lymphopoietin, interleukin-25, interleukin-33), C-C motif chemokine ligand 26 (CCL26), and mucin 5 AC (MUC5AC). Silencing SOX11 alleviated the behavioral symptoms and upregulation of epithelial-derived cytokines, CCL26, and MUC5AC. In human nasal mucosa epithelial cells, interleukin-13 enhanced SOX11 expression in a time-dependent manner, and signal transducer and activator of transcription 6 (STAT6) was involved in the interleukin-13-mediated expression of SOX11 by regulating transcription. Knockdown of SOX11 reduced epithelial-derived cytokine expression and MUC5AC levels in interleukin-13-treated human nasal mucosa epithelial cells.Conclusion: SOX11 plays a critical role in allergic rhinitis development by regulating epithelial-derived cytokines and might be a new therapeutic target for allergic rhinitis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Allergic rhinitis is a chronic inflammatory disease of the nasal mucosa affecting the quality of life of patients. SRY-box transcription factor 11 (SOX11) was reported to play important roles in inflammatory responses, but its role in AR is poorly understood.<br /><strong>Aims:</strong> To explore the role of SOX11 in the development of allergic rhinitis.<br /><strong>Study Design:</strong> Cell culture and animal study.<br /><strong>Methods:</strong> An in vivo murine allergic rhinitis model was established using ovalbumin treatment in female mice. Interleukin-13-stimulated human nasal mucosa epithelial cells were used for in vitro studies. Expression levels of SOX11, epithelial-derived cytokines, and mucin were determined in both modesls.<br /><strong>Results:</strong> SOX11 was highly expressed in allergic rhinitis mice. Allergy symptoms, serum ovalbumin-specific IgE, histamine, eosinophils, goblet cells, and type 2 cytokine secretion were increased in ovalbumin-treated mice. Furthermore, allergic rhinitis mice exhibited overproduction of epithelial-derived cytokines (thymic stromal lymphopoietin, interleukin-25, interleukin-33), C-C motif chemokine ligand 26 (CCL26), and mucin 5 AC (MUC5AC). Silencing SOX11 alleviated the behavioral symptoms and upregulation of epithelial-derived cytokines, CCL26, and MUC5AC. In human nasal mucosa epithelial cells, interleukin-13 enhanced SOX11 expression in a time-dependent manner, and signal transducer and activator of transcription 6 (STAT6) was involved in the interleukin-13-mediated expression of SOX11 by regulating transcription. Knockdown of SOX11 reduced epithelial-derived cytokine expression and MUC5AC levels in interleukin-13-treated human nasal mucosa epithelial cells.<br /><strong>Conclusion:</strong> SOX11 plays a critical role in allergic rhinitis development by regulating epithelial-derived cytokines and might be a new therapeutic target for allergic rhinitis.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Allergic rhinitis is a chronic inflammatory disease of the nasal mucosa affecting the quality of life of patients. SRY-box transcription factor 11 (SOX11) was reported to play important roles in inflammatory responses, but its role in AR is poorly understood.Aims: To explore the role of SOX11 in the development of allergic rhinitis.Study Design: Cell culture and animal study.Methods: An in vivo murine allergic rhinitis model was established using ovalbumin treatment in female mice. Interleukin-13-stimulated human nasal mucosa epithelial cells were used for in vitro studies. Expression levels of SOX11, epithelial-derived cytokines, and mucin were determined in both modesls.Results: SOX11 was highly expressed in allergic rhinitis mice. Allergy symptoms, serum ovalbumin-specific IgE, histamine, eosinophils, goblet cells, and type 2 cytokine secretion were increased in ovalbumin-treated mice. Furthermore, allergic rhinitis mice exhibited overproduction of epithelial-derived cytokines (thymic stromal lymphopoietin, interleukin-25, interleukin-33), C-C motif chemokine ligand 26 (CCL26), and mucin 5 AC (MUC5AC). Silencing SOX11 alleviated the behavioral symptoms and upregulation of epithelial-derived cytokines, CCL26, and MUC5AC. In human nasal mucosa epithelial cells, interleukin-13 enhanced SOX11 expression in a time-dependent manner, and signal transducer and activator of transcription 6 (STAT6) was involved in the interleukin-13-mediated expression of SOX11 by regulating transcription. Knockdown of SOX11 reduced epithelial-derived cytokine expression and MUC5AC levels in interleukin-13-treated human nasal mucosa epithelial cells.Conclusion: SOX11 plays a critical role in allergic rhinitis development by regulating epithelial-derived cytokines and might be a new therapeutic target for allergic rhinitis.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-9-31",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "1",
+    "pages": "57-65",
+    "views": 5771,
+    "downloads": 4182,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1282",
+    "sourceArticleId": "2459",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2459",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2459",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2459",
+    "localPdfUrl": "js/data/pdfs/2459.pdf",
+    "pdfUrl": "js/data/pdfs/2459.pdf"
+  },
+  {
+    "id": 2456,
+    "type": "Clinical Image",
+    "title": "Co-Existence of Non-ossifying Fibroma and Osteoblastoma of the Tibia",
+    "authors": [
+      {
+        "name": "Aykut Alkan",
+        "affiliation": "Department of Radiology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fethi Emre Ustabaşıoğlu",
+        "affiliation": "Department of Radiology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ufuk Usta",
+        "affiliation": "Department of Pathology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mert Çiftdemir",
+        "affiliation": "Department of Orthopaedics and Traumatology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Funda Üstün",
+        "affiliation": "Department of Nuclear Medicine, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 17-year-old male without previous trauma was admitted to the orthopedic outpatient clinic with the complaint of pain in the right knee. Plain radiography indicated a lobule-shaped, lytic lesion with a sclerotic rim in the proximal metaphyseal part of the tibia. Computed tomography (CT) revealed a soft tissue lesion measuring 46x17 mm at the diaphyseometaph",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-10-34",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "1",
+    "pages": "66-67",
+    "views": 5764,
+    "downloads": 4593,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1282",
+    "sourceArticleId": "2456",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2456",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2456",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2456",
+    "localPdfUrl": "js/data/pdfs/2456.pdf",
+    "pdfUrl": "js/data/pdfs/2456.pdf"
+  },
+  {
+    "id": 2462,
+    "type": "Clinical Image",
+    "title": "Digital Necrosis in Granulomatosis with Polyangiitis",
+    "authors": [
+      {
+        "name": "Philipp Jud",
+        "affiliation": "Department of Internal Medicine, Medical University of Graz, Graz, Austria",
+        "orcid": ""
+      },
+      {
+        "name": "Philipp Bosch",
+        "affiliation": "Department of Internal Medicine, Medical University of Graz, Graz, Austria",
+        "orcid": ""
+      },
+      {
+        "name": "Oleksiy Tsybrovskyy",
+        "affiliation": "Department of Pathology, Medical University of Graz, Graz, Austria",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 73-year-old woman has necrotic lesions on her fingers that developed spontaneously within two weeks with no prior trauma (Figure 1). The physical examination and patient history were otherwise unremarkable. Initial laboratory testing revealed leucocytosis (12.31 109/l), neutrophilia (10.2 109/l), elevated CRP (101.2 mg/l), creatinine (2.12 mg/dl), and PR3 ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-10-78",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "1",
+    "pages": "68-69",
+    "views": 5304,
+    "downloads": 4035,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1282",
+    "sourceArticleId": "2462",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2462",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2462",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2462",
+    "localPdfUrl": "js/data/pdfs/2462.pdf",
+    "pdfUrl": "js/data/pdfs/2462.pdf"
+  },
+  {
+    "id": 2453,
+    "type": "Letter to the Editor",
+    "title": "Long-term Follow-up Results of Tinnitus and Dizziness Disorders in Patients after SARS-CoV-2 Infection Based on a Questionnaire",
+    "authors": [
+      {
+        "name": "Aynur Aliyeva",
+        "affiliation": "Department of Otorhinolaryngology-Head and Neck Surgery The Catholic University of The Korea, College of Medicine, Seoul St. Mary’s Hospital, Seul, South Korea",
+        "orcid": ""
+      },
+      {
+        "name": "Jae Sang Han",
+        "affiliation": "Department of Otorhinolaryngology-Head and Neck Surgery The Catholic University of The Korea, College of Medicine, Seoul St. Mary’s Hospital, Seul, South Korea",
+        "orcid": ""
+      },
+      {
+        "name": "Shi Nae Park",
+        "affiliation": "Department of Otorhinolaryngology-Head and Neck Surgery The Catholic University of The Korea, College of Medicine, Seoul St. Mary’s Hospital, Seul, South Korea",
+        "orcid": ""
+      },
+      {
+        "name": "Levent Olgun",
+        "affiliation": "ENT Başkent University Hospital, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, The effects and pathological changes of severe acute respiratory syndrome-coronavirus 2 (SARS-CoV-2) on hearing and balance are still under investigation. However, only a few studies have reported neurological findings such as impaired headache, consciousness, and dizziness.1 This study aimed to investigate the association of dizziness and sub",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-7-8",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "1",
+    "pages": "70-71",
+    "views": 6370,
+    "downloads": 4432,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1282",
+    "sourceArticleId": "2453",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2453",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2453",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2453",
+    "localPdfUrl": "js/data/pdfs/2453.pdf",
+    "pdfUrl": "js/data/pdfs/2453.pdf"
+  }
+]

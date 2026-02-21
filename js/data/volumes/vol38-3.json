@@ -1,0 +1,760 @@
+[
+  {
+    "id": 2291,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "3",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1269",
+    "sourceArticleId": "2291",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2291",
+    "localPdfUrl": "js/data/pdfs/2291.pdf",
+    "pdfUrl": "js/data/pdfs/2291.pdf"
+  },
+  {
+    "id": 2292,
+    "type": "Editorial",
+    "title": "COVID-19 and Kounis Syndrome: Deciphering Their Relationship",
+    "authors": [
+      {
+        "name": "Nicholas G. Kounis",
+        "affiliation": "Department of Cardiology, Patras University School of Medicine, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Ioanna Koniari",
+        "affiliation": "Department of Cardiology, University Hospital of South Manchester NHS Foundation Trust, Manchester, UK",
+        "orcid": ""
+      },
+      {
+        "name": "Cesare de Gregorio",
+        "affiliation": "Department of Clinical and Experimental Medicine, University of Messina Medical School, Messina, Italy",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2021.21097",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "3",
+    "pages": "145-149",
+    "views": 6473,
+    "downloads": 10293,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1269",
+    "sourceArticleId": "2292",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2292",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2292",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2292",
+    "localPdfUrl": "js/data/pdfs/2292.pdf",
+    "pdfUrl": "js/data/pdfs/2292.pdf"
+  },
+  {
+    "id": 2293,
+    "type": "Invited Review",
+    "title": "Coronavirus Disease 2019 and Antibiotic Stewardship—Antibiotic Usage in Adult Patients: Is It Necessary? When Should It be Concerned?",
+    "authors": [
+      {
+        "name": "Uğur Önal",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Uludağ University School of Medicine, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Halis Akalın",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Uludağ University School of Medicine, Bursa, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Antibiotic consumption rates were quite high in number, although the bacterial coinfection rates were low in coronavirus disease 2019 pneumonia. Generally, empirical antibiotic treatment is not recommended for uncomplicated coronavirus disease 2019 mild to moderate pneumonia cases. On the other hand, antibiotic treatment and de-escalation are recommended for intubated intensive care unit patients or critical patients with sepsis, septic shock, or acute respiratory distress syndrome. The presentation of patients with severe coronavirus disease 2019 pneumonia can direct the clinicians to use antibiotics. We believe that wait and watch strategy can be preferred in such cases without sepsis, secondary bacterial infection findings, or procalcitonin < 0.5 ng/mL. We think that a new wave of resistance will occur inevitably if we cannot perform the antibiotic stewardship properly.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>Antibiotic consumption rates were quite high in number, although the bacterial coinfection rates were low in coronavirus disease 2019 pneumonia. Generally, empirical antibiotic treatment is not recommended for uncomplicated coronavirus disease 2019 mild to moderate pneumonia cases. On the other hand, antibiotic treatment and de-escalation are recommended for intubated intensive care unit patients or critical patients with sepsis, septic shock, or acute respiratory distress syndrome. The presentation of patients with severe coronavirus disease 2019 pneumonia can direct the clinicians to use antibiotics. We believe that wait and watch strategy can be preferred in such cases without sepsis, secondary bacterial infection findings, or procalcitonin &lt; 0.5 ng/mL. We think that a new wave of resistance will occur inevitably if we cannot perform the antibiotic stewardship properly.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Antibiotic consumption rates were quite high in number, although the bacterial coinfection rates were low in coronavirus disease 2019 pneumonia. Generally, empirical antibiotic treatment is not recommended for uncomplicated coronavirus disease 2019 mild to moderate pneumonia cases. On the other hand, antibiotic treatment and de-escalation are recommended for intubated intensive care unit patients or critical patients with sepsis, septic shock, or acute respiratory distress syndrome. The presentation of patients with severe coronavirus disease 2019 pneumonia can direct the clinicians to use antibiotics. We believe that wait and watch strategy can be preferred in such cases without sepsis, secondary bacterial infection findings, or procalcitonin < 0.5 ng/mL. We think that a new wave of resistance will occur inevitably if we cannot perform the antibiotic stewardship properly.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2021.20197",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "3",
+    "pages": "150-155",
+    "views": 5833,
+    "downloads": 9988,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1269",
+    "sourceArticleId": "2293",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2293",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2293",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2293",
+    "localPdfUrl": "js/data/pdfs/2293.pdf",
+    "pdfUrl": "js/data/pdfs/2293.pdf"
+  },
+  {
+    "id": 2294,
+    "type": "Original Article",
+    "title": "The Role of Dexmedetomidine as an Additive to Intravenous Regional Anesthesia: A Systematic Review and Meta-analysis",
+    "authors": [
+      {
+        "name": "Iosifina Karmaniolou",
+        "affiliation": "Department of Anaesthesia, Guy’s and St Thomas’ NHS Foundation Trust, London, UK",
+        "orcid": ""
+      },
+      {
+        "name": "Chryssoula Staikou",
+        "affiliation": "Department of Anaesthesia, Aretaieio Hospital, National and Kapodistrian University of Athens, Athens, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Pavol Surda",
+        "affiliation": "Department of ENT (ear, nose, and throat), Guy’s and St Thomas’ NHS Foundation Trust, London, UK",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Intravenous Regional Anesthesia (IVRA) is a reliable and cost-effective anesthetic method for minor surgical procedures to the extremities. Limitations of this block include tourniquet discomfort, short duration of anesthesia, and absence of postoperative analgesia. Dexmedetomidine has been used as an adjuvant to minimize these negative characteristics with inconclusive results.Aim: To perform a systematic review of the existing evidence on the role of dexmedetomidine as an additive to intravenous regional anesthesia in upper limb surgery.Study Design: Systematic Review and Meta-analysis.Methods: The databases searched were MEDLINE, Embase, PubMed, CINAHL, Cochrane Database of Systematic Reviews, Cochrane Central Register of Controlled Trials databases, and clinicaltrials. gov (1990-2019). Seven randomized controlled trials (RCTs) were included. We analyzed the duration of analgesia, onset time of sensory and motor block, intraoperative tourniquet pain scores, the incidence of tourniquet pain, need for rescue analgesia, intraoperative rescue analgesia consumption, sedation scores, postoperative pain scores, and anesthesia quality.Results: Intraoperative analgesia duration (MD 11.08 min; 95% CI 5.42, 16.75; P < .0001) was longer and sensory block onset time (MD −2.10 min; 95% CI −3.345, −0.86; P = .00009) was shorter in the dexmedetomidine group. Anesthesia quality scores (MD 0.58; 95% CI 0.47, 0.70; P < .00001) and postoperative sedation scores (MD 1.03; 95% CI 0.88, 1.24; P < .00001) were significantly higher. There was a significant reduction in intraoperative rescue analgesia consumption (MD −19.70 mg; 95% CI −24.15, −15.26; P < .00001) in the dexmedetomidine group. The risk of tourniquet pain as well as postoperative pain scores were lower in favor of dexmedetomidine. The addition of dexmedetomidine to IVRA slightly increased the risk of sedation. A limitation of our study is that some of the interesting outcomes derive from a small number of RCTs.Conclusion: The addition of dexmedetomidine to IVRA ameliorates the block’s characteristics and carries a low risk of potential side effects.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> Intravenous Regional Anesthesia (IVRA) is a reliable and cost-effective anesthetic method for minor surgical procedures to the extremities. Limitations of this block include tourniquet discomfort, short duration of anesthesia, and absence of postoperative analgesia. Dexmedetomidine has been used as an adjuvant to minimize these negative characteristics with inconclusive results.<br /><strong>Aim:</strong> To perform a systematic review of the existing evidence on the role of dexmedetomidine as an additive to intravenous regional anesthesia in upper limb surgery.<br /><strong>Study Design:</strong> Systematic Review and Meta-analysis.<br /><strong>Methods:</strong> The databases searched were MEDLINE, Embase, PubMed, CINAHL, Cochrane Database of Systematic Reviews, Cochrane Central Register of Controlled Trials databases, and clinicaltrials. gov (1990-2019). Seven randomized controlled trials (RCTs) were included. We analyzed the duration of analgesia, onset time of sensory and motor block, intraoperative tourniquet pain scores, the incidence of tourniquet pain, need for rescue analgesia, intraoperative rescue analgesia consumption, sedation scores, postoperative pain scores, and anesthesia quality.<br /><strong>Results:</strong> Intraoperative analgesia duration (MD 11.08 min; 95% CI 5.42, 16.75; P &lt; .0001) was longer and sensory block onset time (MD &minus;2.10 min; 95% CI &minus;3.345, &minus;0.86; P = .00009) was shorter in the dexmedetomidine group. Anesthesia quality scores (MD 0.58; 95% CI 0.47, 0.70; P &lt; .00001) and postoperative sedation scores (MD 1.03; 95% CI 0.88, 1.24; P &lt; .00001) were significantly higher. There was a significant reduction in intraoperative rescue analgesia consumption (MD &minus;19.70 mg; 95% CI &minus;24.15, &minus;15.26; P &lt; .00001) in the dexmedetomidine group. The risk of tourniquet pain as well as postoperative pain scores were lower in favor of dexmedetomidine. The addition of dexmedetomidine to IVRA slightly increased the risk of sedation. A limitation of our study is that some of the interesting outcomes derive from a small number of RCTs.<br /><strong>Conclusion:</strong> The addition of dexmedetomidine to IVRA ameliorates the block&rsquo;s characteristics and carries a low risk of potential side effects.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Intravenous Regional Anesthesia (IVRA) is a reliable and cost-effective anesthetic method for minor surgical procedures to the extremities. Limitations of this block include tourniquet discomfort, short duration of anesthesia, and absence of postoperative analgesia. Dexmedetomidine has been used as an adjuvant to minimize these negative characteristics with inconclusive results.Aim: To perform a systematic review of the existing evidence on the role of dexmedetomidine as an additive to intravenous regional anesthesia in upper limb surgery.Study Design: Systematic Review and Meta-analysis.Methods: The databases searched were MEDLINE, Embase, PubMed, CINAHL, Cochrane Database of Systematic Reviews, Cochrane Central Register of Controlled Trials databases, and clinicaltrials. gov (1990-2019). Seven randomized controlled trials (RCTs) were included. We analyzed the duration of analgesia, onset time of sensory and motor block, intraoperative tourniquet pain scores, the incidence of tourniquet pain, need for rescue analgesia, intraoperative rescue analgesia consumption, sedation scores, postoperative pain scores, and anesthesia quality.Results: Intraoperative analgesia duration (MD 11.08 min; 95% CI 5.42, 16.75; P < .0001) was longer and sensory block onset time (MD −2.10 min; 95% CI −3.345, −0.86; P = .00009) was shorter in the dexmedetomidine group. Anesthesia quality scores (MD 0.58; 95% CI 0.47, 0.70; P < .00001) and postoperative sedation scores (MD 1.03; 95% CI 0.88, 1.24; P < .00001) were significantly higher. There was a significant reduction in intraoperative rescue analgesia consumption (MD −19.70 mg; 95% CI −24.15, −15.26; P < .00001) in the dexmedetomidine group. The risk of tourniquet pain as well as postoperative pain scores were lower in favor of dexmedetomidine. The addition of dexmedetomidine to IVRA slightly increased the risk of sedation. A limitation of our study is that some of the interesting outcomes derive from a small number of RCTs.Conclusion: The addition of dexmedetomidine to IVRA ameliorates the block’s characteristics and carries a low risk of potential side effects.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2021.20076",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "3",
+    "pages": "156-164",
+    "views": 6343,
+    "downloads": 10687,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1269",
+    "sourceArticleId": "2294",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2294",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2294",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2294",
+    "localPdfUrl": "js/data/pdfs/2294.pdf",
+    "pdfUrl": "js/data/pdfs/2294.pdf"
+  },
+  {
+    "id": 2295,
+    "type": "Original Article",
+    "title": "Effects of Oral pH Changes on Smoking Desire",
+    "authors": [
+      {
+        "name": "Gökçen Ömeroğlu Şimşek",
+        "affiliation": "Department of Chest Diseases, Dokuz Eylül University, School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gülser Kılınç",
+        "affiliation": "Department of Oral and Dental Health, Dokuz Eylül University Vocational School of Health Services, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Begüm Ergan",
+        "affiliation": "Department of Chest Diseases, Dokuz Eylül University, School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Oğuz Kılınç",
+        "affiliation": "Department of Chest Diseases, Dokuz Eylül University, School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Nicotine addiction is associated with nicotine absorption from the buccal mucosa, and it is stated that the main factor that determines nicotine absorption is saliva pH. In the literature, the effects of changes in saliva pH values after eating and drinking on smoking desire in smokers were not questioned.Aim: To show the effect of saliva pH changes on smoking desire. The secondary aim was to show the impact of coffee and water drinking on saliva pH and smoking on oral-dental health (oral hygiene and gingival bleeding).Study Design: Case–control study.Methods: A questionnaire was administered that included “Sociodemographic Data Form” and smoking history and Fagerström Test for Nicotine Dependence (FTND). Oral and dental examinations were performed with mirror sonds and using oral hygiene standard Silness and Leöe plaque index and DMFT Index (Index of Decayed Missing or Filled Teeth). Untreated saliva samples were taken, and baseline saliva flow rate and pH values were measured. To assess pH changes, saliva pH was remeasured after sugar-free instant coffee and water consumption. Smoking desire was evaluated with the Visual Analog Scale (VAS).Results: In this study, 24 (55.8%) females and 19 (44.2%) males were among the 43 smoking and 39 nonsmoking cases. Smoking was significantly associated with poor oral hygiene (in smokers 4.71 (±1.40), in non-smokers 2.30 (±1.59); P < .01). DMFT index was higher in smokers than in non-smokers (in smokers 6.45 (±3.69), in non-smokers 3.87 (±2.67); P < .01). Gingival bleeding was more prevalent in smokers (0.68 (±0.76)) than non-smokers (1.20 (±0.90); P = .009). Salivary flow rates were lower in smokers (in smokers 2.56 (±1.34), in non-smokers 3.00 (±1.22), P = .06). In both groups, pH values increased after coffee consumption and decreased after water; in smokers basal: 6.67 (±0.41), pH coffee: 6.93 (±0.36), pH water: 6.85 (±0.33); in non-smokers pH basal: 6.84 (±0.37), pH coffee: 7.02 (±0.37), pH water: 6.97 (±0.31), P < .01. The VAS values of smokers at basal 4.73 (±3.21); P < 0.01, after coffee consumption 4.91 (±3.08); P < .01, and after water 3.15 (±2.72); P < .01.Conclusion: The saliva pH increased after coffee consumption and decreased after drinking water. Besides, VAS values decreased significantly after drinking water. The results suggest that a simple behavior such as drinking water may be used in conjunction with behavioral and cognitive therapies to pursue smoking cessation.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> Nicotine addiction is associated with nicotine absorption from the buccal mucosa, and it is stated that the main factor that determines nicotine absorption is saliva pH. In the literature, the effects of changes in saliva pH values after eating and drinking on smoking desire in smokers were not questioned.<br /><strong>Aim:</strong> To show the effect of saliva pH changes on smoking desire. The secondary aim was to show the impact of coffee and water drinking on saliva pH and smoking on oral-dental health (oral hygiene and gingival bleeding).<br /><strong>Study Design:</strong> Case&ndash;control study.<br /><strong>Methods:</strong> A questionnaire was administered that included &ldquo;Sociodemographic Data Form&rdquo; and smoking history and Fagerstr&ouml;m Test for Nicotine Dependence (FTND). Oral and dental examinations were performed with mirror sonds and using oral hygiene standard Silness and Le&ouml;e plaque index and DMFT Index (Index of Decayed Missing or Filled Teeth). Untreated saliva samples were taken, and baseline saliva flow rate and pH values were measured. To assess pH changes, saliva pH was remeasured after sugar-free instant coffee and water consumption. Smoking desire was evaluated with the Visual Analog Scale (VAS).<br /><strong>Results:</strong> In this study, 24 (55.8%) females and 19 (44.2%) males were among the 43 smoking and 39 nonsmoking cases. Smoking was significantly associated with poor oral hygiene (in smokers 4.71 (&plusmn;1.40), in non-smokers 2.30 (&plusmn;1.59); P &lt; .01). DMFT index was higher in smokers than in non-smokers (in smokers 6.45 (&plusmn;3.69), in non-smokers 3.87 (&plusmn;2.67); P &lt; .01). Gingival bleeding was more prevalent in smokers (0.68 (&plusmn;0.76)) than non-smokers (1.20 (&plusmn;0.90); P = .009). Salivary flow rates were lower in smokers (in smokers 2.56 (&plusmn;1.34), in non-smokers 3.00 (&plusmn;1.22), P = .06). In both groups, pH values increased after coffee consumption and decreased after water; in smokers basal: 6.67 (&plusmn;0.41), pH coffee: 6.93 (&plusmn;0.36), pH water: 6.85 (&plusmn;0.33); in non-smokers pH basal: 6.84 (&plusmn;0.37), pH coffee: 7.02 (&plusmn;0.37), pH water: 6.97 (&plusmn;0.31), P &lt; .01. The VAS values of smokers at basal 4.73 (&plusmn;3.21); P &lt; 0.01, after coffee consumption 4.91 (&plusmn;3.08); P &lt; .01, and after water 3.15 (&plusmn;2.72); P &lt; .01.<br /><strong>Conclusion:</strong> The saliva pH increased after coffee consumption and decreased after drinking water. Besides, VAS values decreased significantly after drinking water. The results suggest that a simple behavior such as drinking water may be used in conjunction with behavioral and cognitive therapies to pursue smoking cessation.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Nicotine addiction is associated with nicotine absorption from the buccal mucosa, and it is stated that the main factor that determines nicotine absorption is saliva pH. In the literature, the effects of changes in saliva pH values after eating and drinking on smoking desire in smokers were not questioned.Aim: To show the effect of saliva pH changes on smoking desire. The secondary aim was to show the impact of coffee and water drinking on saliva pH and smoking on oral-dental health (oral hygiene and gingival bleeding).Study Design: Case–control study.Methods: A questionnaire was administered that included “Sociodemographic Data Form” and smoking history and Fagerström Test for Nicotine Dependence (FTND). Oral and dental examinations were performed with mirror sonds and using oral hygiene standard Silness and Leöe plaque index and DMFT Index (Index of Decayed Missing or Filled Teeth). Untreated saliva samples were taken, and baseline saliva flow rate and pH values were measured. To assess pH changes, saliva pH was remeasured after sugar-free instant coffee and water consumption. Smoking desire was evaluated with the Visual Analog Scale (VAS).Results: In this study, 24 (55.8%) females and 19 (44.2%) males were among the 43 smoking and 39 nonsmoking cases. Smoking was significantly associated with poor oral hygiene (in smokers 4.71 (±1.40), in non-smokers 2.30 (±1.59); P < .01). DMFT index was higher in smokers than in non-smokers (in smokers 6.45 (±3.69), in non-smokers 3.87 (±2.67); P < .01). Gingival bleeding was more prevalent in smokers (0.68 (±0.76)) than non-smokers (1.20 (±0.90); P = .009). Salivary flow rates were lower in smokers (in smokers 2.56 (±1.34), in non-smokers 3.00 (±1.22), P = .06). In both groups, pH values increased after coffee consumption and decreased after water; in smokers basal: 6.67 (±0.41), pH coffee: 6.93 (±0.36), pH water: 6.85 (±0.33); in non-smokers pH basal: 6.84 (±0.37), pH coffee: 7.02 (±0.37), pH water: 6.97 (±0.31), P < .01. The VAS values of smokers at basal 4.73 (±3.21); P < 0.01, after coffee consumption 4.91 (±3.08); P < .01, and after water 3.15 (±2.72); P < .01.Conclusion: The saliva pH increased after coffee consumption and decreased after drinking water. Besides, VAS values decreased significantly after drinking water. The results suggest that a simple behavior such as drinking water may be used in conjunction with behavioral and cognitive therapies to pursue smoking cessation.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2021.20125",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "3",
+    "pages": "165-170",
+    "views": 5991,
+    "downloads": 10266,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1269",
+    "sourceArticleId": "2295",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2295",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2295",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2295",
+    "localPdfUrl": "js/data/pdfs/2295.pdf",
+    "pdfUrl": "js/data/pdfs/2295.pdf"
+  },
+  {
+    "id": 2277,
+    "type": "Original Article",
+    "title": "Inhibition of YBX1 by miR-216a Suppresses Proliferation and Invasion of Diffuse Large B-Cell Lymphoma",
+    "authors": [
+      {
+        "name": "Yan Li",
+        "affiliation": "Clinical Laboratory, Liaoning Cancer Hospital & Institute, Shenyang City, Liaoning Province, China",
+        "orcid": ""
+      },
+      {
+        "name": "Juan Qian",
+        "affiliation": "Department of Hematology, Affiliated Hospital of Nantong University, Nantong City, Jiangsu Province, China",
+        "orcid": ""
+      },
+      {
+        "name": "Li Yang",
+        "affiliation": "Department of Hematology, Affiliated Hospital of Nantong University, Nantong City, Jiangsu Province, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: MicroRNAs (miRNAs) could be implicated in tumorigenesis of diffuse large B-cell lymphoma (DLBCL).Aims: To determine the role of MiR-216a in DLBCL.Study Design: Cell culture study.Methods: Expression of miR-216a in DLBCL cells was examined by qRT-PCR. Cell counting kit-8, bromodeoxyuridine staining and transwell assays were performed to evaluate role of miR-216a on DLBCL cell growth. Target gene of miR-216a was verified by luciferase reporter assay.Results: MiR-216a was dramatically reduced in DLBCL cells compared to the normal B-cell line (P < .01). MiR-216a reduced the viability and retarded DLBCL cell proliferation. The invasion of DLBCL was suppressed by miR-216a. Y box binding protein 1 (YBX1) was validated as a target of miR-216a. Its expression was reduced by miR-216a mimic and enhanced by miR-216a inhibitor in DB and SU-DHL-10 cells. Knockdown of YBX1 reduced cell viability, proliferation, and invasion of DB and SU-DHL-10 cells.Conclusion: MiR-216a exerted tumor-suppressive effects on DLBCL cells through inhibition of YBX1, providing a new strategy for DLBCL.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> MicroRNAs (miRNAs) could be implicated in tumorigenesis of diffuse large B-cell lymphoma (DLBCL).<br /><strong>Aims:</strong> To determine the role of MiR-216a in DLBCL.<br /><strong>Study Design:</strong> Cell culture study.<br /><strong>Methods:</strong> Expression of miR-216a in DLBCL cells was examined by qRT-PCR. Cell counting kit-8, bromodeoxyuridine staining and transwell assays were performed to evaluate role of miR-216a on DLBCL cell growth. Target gene of miR-216a was verified by luciferase reporter assay.<br /><strong>Results:</strong> MiR-216a was dramatically reduced in DLBCL cells compared to the normal B-cell line (P &lt; .01). MiR-216a reduced the viability and retarded DLBCL cell proliferation. The invasion of DLBCL was suppressed by miR-216a. Y box binding protein 1 (YBX1) was validated as a target of miR-216a. Its expression was reduced by miR-216a mimic and enhanced by miR-216a inhibitor in DB and SU-DHL-10 cells. Knockdown of YBX1 reduced cell viability, proliferation, and invasion of DB and SU-DHL-10 cells.<br /><strong>Conclusion:</strong> MiR-216a exerted tumor-suppressive effects on DLBCL cells through inhibition of YBX1, providing a new strategy for DLBCL.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: MicroRNAs (miRNAs) could be implicated in tumorigenesis of diffuse large B-cell lymphoma (DLBCL).Aims: To determine the role of MiR-216a in DLBCL.Study Design: Cell culture study.Methods: Expression of miR-216a in DLBCL cells was examined by qRT-PCR. Cell counting kit-8, bromodeoxyuridine staining and transwell assays were performed to evaluate role of miR-216a on DLBCL cell growth. Target gene of miR-216a was verified by luciferase reporter assay.Results: MiR-216a was dramatically reduced in DLBCL cells compared to the normal B-cell line (P < .01). MiR-216a reduced the viability and retarded DLBCL cell proliferation. The invasion of DLBCL was suppressed by miR-216a. Y box binding protein 1 (YBX1) was validated as a target of miR-216a. Its expression was reduced by miR-216a mimic and enhanced by miR-216a inhibitor in DB and SU-DHL-10 cells. Knockdown of YBX1 reduced cell viability, proliferation, and invasion of DB and SU-DHL-10 cells.Conclusion: MiR-216a exerted tumor-suppressive effects on DLBCL cells through inhibition of YBX1, providing a new strategy for DLBCL.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.8-23",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "3",
+    "pages": "171-176",
+    "views": 5785,
+    "downloads": 10171,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1269",
+    "sourceArticleId": "2277",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2277",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2277",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2277",
+    "localPdfUrl": "js/data/pdfs/2277.pdf",
+    "pdfUrl": "js/data/pdfs/2277.pdf"
+  },
+  {
+    "id": 2296,
+    "type": "Original Article",
+    "title": "miR-509-3p Suppresses Migration, Invasion, and Epithelial–Mesenchymal Transition in Melanoma Cells by Targeting Collagen Triple Helix Repeat Containing 1",
+    "authors": [
+      {
+        "name": "Keyu Yuan",
+        "affiliation": "Department of Plastic Surgery, Zhuji People’s Hospital, Shaoxing City, Zhejiang Province, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yi Sun",
+        "affiliation": "Department of Plastic Surgery, Zhejiang Provincial People’s Hospital, Hangzhou City, Zhejiang Province, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yu Ji",
+        "affiliation": "Department of Plastic Surgery, Zhejiang Provincial People’s Hospital, Hangzhou City, Zhejiang Province, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: microRNAs (miRNAs) are ubiquitously dysregulated in numerous tumor cell types, including melanoma cells. The anti-tumor effect of miR-509-3p was widely evaluated in various cancers.Aims: To determine the functional role of miR-509-3p in melanoma.Study Design: Cell culture study.Methods: Expression of miR-509-3p in melanoma cell models were assessed by qRT-PCR. Cell migration and invasion were analyzed by wound healing and transwell assays, respectively. Expression levels of biomarkers of epithelial–mesenchymal transition were determined by Western blot. Luciferase vectors containing wildtype or mutant miR-509-3p binding site were constructed, and then dual-luciferase reporter assay.Results: Dysregulated miR-509-3p level was found in melanoma cells. Elevated miR-509-3p expression suppressed melanoma cell migration (P < .001) and invasion (P < .001) capacities. Epithelial–mesenchymal transition of melanoma cells was repressed by miR-509-3p, along with increased α-catenin/E-cadherin (P < .001) and decreased vimentin/fibronectin (P < .001). CTHRC1 (collagen triple helix repeat containing 1) contained a potential binding site for miR-509-3p, and miR-509-3p decreased protein expression of CTHRC1 in melanoma cells (P < .001). CTHRC1 promoted melanoma cell migration and invasion (P < .001), as well as contributed to epithelial–mesenchymal transition. Increased CTHRC1 expression attenuated miR-509-3p-induced inhibition of melanoma cell migration (P < .001), invasion, and epithelial–mesenchymal transition.Conclusion: miR-509-3p suppressed the biological function of melanoma cells through negatively regulating CTHRC1, shedding light on miR-509-3p as a potential candidate for melanoma therapeutics and treatments.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> microRNAs (miRNAs) are ubiquitously dysregulated in numerous tumor cell types, including melanoma cells. The anti-tumor effect of miR-509-3p was widely evaluated in various cancers.<br /><strong>Aims:</strong> To determine the functional role of miR-509-3p in melanoma.<br /><strong>Study Design:</strong> Cell culture study.<br /><strong>Methods:</strong> Expression of miR-509-3p in melanoma cell models were assessed by qRT-PCR. Cell migration and invasion were analyzed by wound healing and transwell assays, respectively. Expression levels of biomarkers of epithelial&ndash;mesenchymal transition were determined by Western blot. Luciferase vectors containing wildtype or mutant miR-509-3p binding site were constructed, and then dual-luciferase reporter assay.<br /><strong>Results:</strong> Dysregulated miR-509-3p level was found in melanoma cells. Elevated miR-509-3p expression suppressed melanoma cell migration (P &lt; .001) and invasion (P &lt; .001) capacities. Epithelial&ndash;mesenchymal transition of melanoma cells was repressed by miR-509-3p, along with increased &alpha;-catenin/E-cadherin (P &lt; .001) and decreased vimentin/fibronectin (P &lt; .001). CTHRC1 (collagen triple helix repeat containing 1) contained a potential binding site for miR-509-3p, and miR-509-3p decreased protein expression of CTHRC1 in melanoma cells (P &lt; .001). CTHRC1 promoted melanoma cell migration and invasion (P &lt; .001), as well as contributed to epithelial&ndash;mesenchymal transition. Increased CTHRC1 expression attenuated miR-509-3p-induced inhibition of melanoma cell migration (P &lt; .001), invasion, and epithelial&ndash;mesenchymal transition.<br /><strong>Conclusion:</strong> miR-509-3p suppressed the biological function of melanoma cells through negatively regulating CTHRC1, shedding light on miR-509-3p as a potential candidate for melanoma therapeutics and treatments.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: microRNAs (miRNAs) are ubiquitously dysregulated in numerous tumor cell types, including melanoma cells. The anti-tumor effect of miR-509-3p was widely evaluated in various cancers.Aims: To determine the functional role of miR-509-3p in melanoma.Study Design: Cell culture study.Methods: Expression of miR-509-3p in melanoma cell models were assessed by qRT-PCR. Cell migration and invasion were analyzed by wound healing and transwell assays, respectively. Expression levels of biomarkers of epithelial–mesenchymal transition were determined by Western blot. Luciferase vectors containing wildtype or mutant miR-509-3p binding site were constructed, and then dual-luciferase reporter assay.Results: Dysregulated miR-509-3p level was found in melanoma cells. Elevated miR-509-3p expression suppressed melanoma cell migration (P < .001) and invasion (P < .001) capacities. Epithelial–mesenchymal transition of melanoma cells was repressed by miR-509-3p, along with increased α-catenin/E-cadherin (P < .001) and decreased vimentin/fibronectin (P < .001). CTHRC1 (collagen triple helix repeat containing 1) contained a potential binding site for miR-509-3p, and miR-509-3p decreased protein expression of CTHRC1 in melanoma cells (P < .001). CTHRC1 promoted melanoma cell migration and invasion (P < .001), as well as contributed to epithelial–mesenchymal transition. Increased CTHRC1 expression attenuated miR-509-3p-induced inhibition of melanoma cell migration (P < .001), invasion, and epithelial–mesenchymal transition.Conclusion: miR-509-3p suppressed the biological function of melanoma cells through negatively regulating CTHRC1, shedding light on miR-509-3p as a potential candidate for melanoma therapeutics and treatments.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2021.20049",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "3",
+    "pages": "177-182",
+    "views": 5896,
+    "downloads": 10093,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1269",
+    "sourceArticleId": "2296",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2296",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2296",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2296",
+    "localPdfUrl": "js/data/pdfs/2296.pdf",
+    "pdfUrl": "js/data/pdfs/2296.pdf"
+  },
+  {
+    "id": 2297,
+    "type": "Original Article",
+    "title": "Inappropriate Use of Aspirin in Real-Life Cardiology Practice: Results from the Appropriateness of Aspirin Use in Medical Outpatients: A Multicenter, Observational Study (ASSOS) Study",
+    "authors": [
+      {
+        "name": "Oğuzhan Çelik",
+        "affiliation": "Department of Cardiology, Muğla Sıtkı Koçman University School of Medicine, Muğla, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cem Çil",
+        "affiliation": "Department of Cardiology, Muğla Sıtkı Koçman University School of Medicine, Muğla, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özcan Başaran",
+        "affiliation": "Department of Cardiology, Muğla Sıtkı Koçman University School of Medicine, Muğla, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erkan Demirci",
+        "affiliation": "Clinic of Cardiology, Kayseri City Hospital, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Veysel Ozan Tanık",
+        "affiliation": "Department of Cardiology, Ankara Dışkapı Yıldırım Beyazıt Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emine Altuntaş",
+        "affiliation": "Department of Cardiology, Sancaktepe Şehit Prof. Dr. İlhan Varank Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kadriye Memiç Sancar",
+        "affiliation": "Department of Cardiology, Mehmet Akif Ersoy Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özcan Örsçelik",
+        "affiliation": "Department of Cardiology, Mersin University School of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mücahit Yetim",
+        "affiliation": "Department of Cardiology, Hitit University Çorum Erol Olçok Training and Research Hospital, Çorum, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Lütfü Bekar",
+        "affiliation": "Department of Cardiology, Hitit University Çorum Erol Olçok Training and Research Hospital, Çorum, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Osman Karaarslan",
+        "affiliation": "Department of Cardiology, Hitit University Çorum Erol Olçok Training and Research Hospital, Çorum, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Özlek",
+        "affiliation": "Department of Cardiology, Muğla Sıtkı Koçman University School of Medicine, Muğla, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Eda Özlek",
+        "affiliation": "Department of Cardiology, Muğla Sıtkı Koçman University School of Medicine, Muğla, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aysel Gökçek",
+        "affiliation": "Department of Cardiology, Muğla Sıtkı Koçman University School of Medicine, Muğla, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tolga Doğan",
+        "affiliation": "Department of Cardiology, University of Health Sciences, Bursa Yüksek İhtisas Training and Research Hospital, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mubariz Murat Resulzade",
+        "affiliation": "Clinic of Cardiology, Private Hospitalpark Darıca Hospital, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Çağlar Kaya",
+        "affiliation": "Department of Cardiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emrah Küçük",
+        "affiliation": "Clinic of Cardiology, Kızıltepe State Hospital, Mardin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuncay Kırış",
+        "affiliation": "Department of Cardiology, İzmir Katip Çelebi University, Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Abdullah Orhan Demirtaş",
+        "affiliation": "Clinic of Cardiology, Adana City Hospital, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Civan",
+        "affiliation": "Department of Cardiology, Bahçelievler Vital Private Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ramazan Asoğlu",
+        "affiliation": "Department of Cardiology, Adıyaman University School of Medicine, Adıyaman, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Volkan Doğan",
+        "affiliation": "Department of Cardiology, Muğla Sıtkı Koçman University School of Medicine, Muğla, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Biteker",
+        "affiliation": "Department of Cardiology, Muğla Sıtkı Koçman University School of Medicine, Muğla, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Indications and appropriateness of aspirin use have not been well investigated in Turkey.Aims: To investigate the prescription patterns and appropriateness of aspirin in a real-world clinical setting.Study Design: Cross-sectional study.Methods: The Appropriateness of Aspirin Use in Medical Outpatients: A Multicenter, Observational Study (ASSOS) is a cross-sectional and multicenter study that included 5007 consecutive patients aged 18 or over who presented to 30 different cardiology outpatient clinics from 14 cities throughout Turkey. Only patients using aspirin (80-325 mg) were included. The study population was divided into 2 groups regarding the use of aspirin: primary prevention (PP) group and secondary prevention (SP) group. The indication of aspirin use was evaluated following the 2016 European Society of Cardiology (ESC) and the 2016 United States Preventative Services Task Force (USPTF) guidelines in the PP group.Results: A total of 5007 patients (mean age 62.15 ± 11.05, 39% female) were enrolled. The PP group included 1132 (22.6%) patients, and the SP group included 3875 (77.4%) patients. Of the 1132 patients, inappropriate use of aspirin was determined in 100% of the patients according to the ESC guidelines, and 71% of the patients according to the USPTF guidelines. Multivariate logistic regression analysis showed age OR: 0.98 CI (0.97-0.99) P = .037, smoking OR: 0.60 CI (0.44-0.82) P = .001, heart failure OR: 2.11 CI (1.14-3.92) P = .017, hypertension OR: 0.51 CI (0.36-0.74) P < .001, diabetes mellitus OR: 0.34 CI (0.25-0.47) P < .001, oral anticoagulant use OR: 3.01 CI (1.10-8.25) P = .032, and female sex OR: 2.73 CI (1.96-3.80) P < .001 were independent predictors of inappropriate aspirin use in PP patients.Conclusion: Although there are considerable differences between the USPTF and the ESC guidelines with respect to recommendations for aspirin use in PP, inappropriate use of aspirin in Turkey is frequent in real-world practice for both guidelines. Besides, heart failure, oral anticoagulant use, and the female sex of the patients were independent predictors of inappropriate use of aspirin.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> Indications and appropriateness of aspirin use have not been well investigated in Turkey.<br /><strong>Aims:</strong> To investigate the prescription patterns and appropriateness of aspirin in a real-world clinical setting.<br /><strong>Study Design:</strong> Cross-sectional study.<br /><strong>Methods:</strong> The Appropriateness of Aspirin Use in Medical Outpatients: A Multicenter, Observational Study (ASSOS) is a cross-sectional and multicenter study that included 5007 consecutive patients aged 18 or over who presented to 30 different cardiology outpatient clinics from 14 cities throughout Turkey. Only patients using aspirin (80-325 mg) were included. The study population was divided into 2 groups regarding the use of aspirin: primary prevention (PP) group and secondary prevention (SP) group. The indication of aspirin use was evaluated following the 2016 European Society of Cardiology (ESC) and the 2016 United States&nbsp; Preventative Services Task Force (USPTF) guidelines in the PP group.<br /><strong>Results:</strong> A total of 5007 patients (mean age 62.15 &plusmn; 11.05, 39% female) were enrolled. The PP group included 1132 (22.6%) patients, and the SP group included 3875 (77.4%) patients. Of the 1132 patients, inappropriate use of aspirin was determined in 100% of the patients according to the ESC guidelines, and 71% of the patients according to the USPTF guidelines. Multivariate logistic regression analysis showed age OR: 0.98 CI (0.97-0.99) P = .037, smoking OR: 0.60 CI (0.44-0.82) P = .001, heart failure OR: 2.11 CI (1.14-3.92) P = .017, hypertension OR: 0.51 CI (0.36-0.74) P &lt; .001, diabetes mellitus OR: 0.34 CI (0.25-0.47) P &lt; .001, oral anticoagulant use OR: 3.01 CI (1.10-8.25) P = .032, and female sex OR: 2.73 CI (1.96-3.80) P &lt; .001 were independent predictors of inappropriate aspirin use in PP patients.<br /><strong>Conclusion:</strong> Although there are considerable differences between the USPTF and the ESC guidelines with respect to recommendations for aspirin use in PP, inappropriate use of aspirin in Turkey is frequent in real-world practice for both guidelines. Besides, heart failure, oral anticoagulant use, and the female sex of the patients were independent predictors of inappropriate use of aspirin.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Indications and appropriateness of aspirin use have not been well investigated in Turkey.Aims: To investigate the prescription patterns and appropriateness of aspirin in a real-world clinical setting.Study Design: Cross-sectional study.Methods: The Appropriateness of Aspirin Use in Medical Outpatients: A Multicenter, Observational Study (ASSOS) is a cross-sectional and multicenter study that included 5007 consecutive patients aged 18 or over who presented to 30 different cardiology outpatient clinics from 14 cities throughout Turkey. Only patients using aspirin (80-325 mg) were included. The study population was divided into 2 groups regarding the use of aspirin: primary prevention (PP) group and secondary prevention (SP) group. The indication of aspirin use was evaluated following the 2016 European Society of Cardiology (ESC) and the 2016 United States Preventative Services Task Force (USPTF) guidelines in the PP group.Results: A total of 5007 patients (mean age 62.15 ± 11.05, 39% female) were enrolled. The PP group included 1132 (22.6%) patients, and the SP group included 3875 (77.4%) patients. Of the 1132 patients, inappropriate use of aspirin was determined in 100% of the patients according to the ESC guidelines, and 71% of the patients according to the USPTF guidelines. Multivariate logistic regression analysis showed age OR: 0.98 CI (0.97-0.99) P = .037, smoking OR: 0.60 CI (0.44-0.82) P = .001, heart failure OR: 2.11 CI (1.14-3.92) P = .017, hypertension OR: 0.51 CI (0.36-0.74) P < .001, diabetes mellitus OR: 0.34 CI (0.25-0.47) P < .001, oral anticoagulant use OR: 3.01 CI (1.10-8.25) P = .032, and female sex OR: 2.73 CI (1.96-3.80) P < .001 were independent predictors of inappropriate aspirin use in PP patients.Conclusion: Although there are considerable differences between the USPTF and the ESC guidelines with respect to recommendations for aspirin use in PP, inappropriate use of aspirin in Turkey is frequent in real-world practice for both guidelines. Besides, heart failure, oral anticoagulant use, and the female sex of the patients were independent predictors of inappropriate use of aspirin.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2021.21143",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "3",
+    "pages": "183-189",
+    "views": 6012,
+    "downloads": 9988,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1269",
+    "sourceArticleId": "2297",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2297",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2297",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2297",
+    "localPdfUrl": "js/data/pdfs/2297.pdf",
+    "pdfUrl": "js/data/pdfs/2297.pdf"
+  },
+  {
+    "id": 2298,
+    "type": "Clinical Image",
+    "title": "Myoid Angioendothelioma: A Rare Benign Splenic Tumor",
+    "authors": [
+      {
+        "name": "Vladimir Milosavljevic",
+        "affiliation": "Gracia Medica Polyclinic, Belgrade, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Boris Tadic",
+        "affiliation": "Department for HPB Surgery, Clinic for Digestive Surgery, Clinical Centre of Serbia, Belgrade, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Mauricio Gonzalez-Urquijo",
+        "affiliation": "Tecnologico de Monterrey, School of Medicine and Health Sciences, Mexico",
+        "orcid": ""
+      },
+      {
+        "name": "Djordje Knezevic",
+        "affiliation": "Department for HPB Surgery, Clinic for Digestive Surgery, Clinical Centre of Serbia, Belgrade, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Nikola Grubor",
+        "affiliation": "Department for HPB Surgery, Clinic for Digestive Surgery, Clinical Centre of Serbia, Belgrade, Serbia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2021.20100",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "3",
+    "pages": "190-191",
+    "views": 5601,
+    "downloads": 9546,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1269",
+    "sourceArticleId": "2298",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2298",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2298",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2298",
+    "localPdfUrl": "js/data/pdfs/2298.pdf",
+    "pdfUrl": "js/data/pdfs/2298.pdf"
+  },
+  {
+    "id": 2299,
+    "type": "Clinical Image",
+    "title": "Spontaneous Pneumomediastinum in a Critically Ill Patient with Influenza A (H1N1) Virus",
+    "authors": [
+      {
+        "name": "Faten May",
+        "affiliation": "Service de Réanimation Polyvalente, Centre Hospitalier d’Albi, France",
+        "orcid": ""
+      },
+      {
+        "name": "Héla Maamouri",
+        "affiliation": "Service de Réanimation Polyvalente, Centre Hospitalier d’Albi, France",
+        "orcid": ""
+      },
+      {
+        "name": "Christophe Henry",
+        "affiliation": "Service de Réanimation Polyvalente, Centre Hospitalier d’Albi, France",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2021.20061",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "3",
+    "pages": "192-193",
+    "views": 5209,
+    "downloads": 9403,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1269",
+    "sourceArticleId": "2299",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2299",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2299",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2299",
+    "localPdfUrl": "js/data/pdfs/2299.pdf",
+    "pdfUrl": "js/data/pdfs/2299.pdf"
+  },
+  {
+    "id": 2300,
+    "type": "Clinical Image",
+    "title": "Massive Platelet Clumping on Peripheral Blood Smear and Pseudothrombocytopenia in a Patient with COVID-19",
+    "authors": [
+      {
+        "name": "Ferda Can",
+        "affiliation": "Clinic of Hematology, Ministry of Health, Ankara City Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Derda Gökçe",
+        "affiliation": "Department of Hematology, Yıldırım Beyazıt University, Ankara City Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tekin Güney",
+        "affiliation": "Clinic of Hematology, University of Health Sciences, Ankara City Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sema Akıncı",
+        "affiliation": "Clinic of Hematology, Ministry of Health, Ankara City Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İmdat Dilek[[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2021.20229",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "3",
+    "pages": "194",
+    "views": 5440,
+    "downloads": 9624,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1269",
+    "sourceArticleId": "2300",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2300",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2300",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2300",
+    "localPdfUrl": "js/data/pdfs/2300.pdf",
+    "pdfUrl": "js/data/pdfs/2300.pdf"
+  },
+  {
+    "id": 2301,
+    "type": "Letter to the Editor",
+    "title": "An Unusual Cardiac Mass Associated with Severe Tricuspid Valve Regurgitation: Bloodcyst",
+    "authors": [
+      {
+        "name": "Gökay Taylan",
+        "affiliation": "Department of Cardiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fethi Emre Ustabaşıoğlu",
+        "affiliation": "Department of Radiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Busem Binboğa",
+        "affiliation": "Department of Pathology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Manav",
+        "affiliation": "Clinic of Cardiology, Luleburgaz State Hospital, Kırklareli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Volkan Yüksel",
+        "affiliation": "Department of Cardiovascular Surgery, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2021.20107",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "3",
+    "pages": "195-197",
+    "views": 5198,
+    "downloads": 9657,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1269",
+    "sourceArticleId": "2301",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2301",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2301",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2301",
+    "localPdfUrl": "js/data/pdfs/2301.pdf",
+    "pdfUrl": "js/data/pdfs/2301.pdf"
+  },
+  {
+    "id": 2302,
+    "type": "Letter to the Editor",
+    "title": "Importance of Surveillance Studies on Tularemia in Thrace Region of Turkey",
+    "authors": [
+      {
+        "name": "Şaban Gürcan",
+        "affiliation": "Department of Medical Microbiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2021.20201",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "3",
+    "pages": "198-200",
+    "views": 5346,
+    "downloads": 9547,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1269",
+    "sourceArticleId": "2302",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2302",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2302",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2302",
+    "localPdfUrl": "js/data/pdfs/2302.pdf",
+    "pdfUrl": "js/data/pdfs/2302.pdf"
+  },
+  {
+    "id": 2303,
+    "type": "Letter to the Editor",
+    "title": "Lymphoproliferative and Subsequent Myeloproliferative Disorder – A One Way Street?",
+    "authors": [
+      {
+        "name": "Pawina Subedi",
+        "affiliation": "Department of Internal Medicine, Saint Vincent Hospital, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Yugandhara Kate",
+        "affiliation": "Department of Internal Medicine, Saint Vincent Hospital, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Masood Pasha Syed",
+        "affiliation": "Department of Internal Medicine, Saint Vincent Hospital, USA",
+        "orcid": ""
+      },
+      {
+        "name": "A. Daniyal Siddiqui",
+        "affiliation": "Department of Hematology/Oncology, Saint Vincent Hospital, USA",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2021.21010",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "3",
+    "pages": "201-202",
+    "views": 5498,
+    "downloads": 4063,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1269",
+    "sourceArticleId": "2303",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2303",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2303",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2303",
+    "localPdfUrl": "js/data/pdfs/2303.pdf",
+    "pdfUrl": "js/data/pdfs/2303.pdf"
+  }
+]

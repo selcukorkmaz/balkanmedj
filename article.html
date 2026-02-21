@@ -179,7 +179,7 @@
           <ol id="article-breadcrumb" class="flex items-center space-x-2 text-sm text-gray-500">
             <li><a href="index.html" class="hover:text-teal-700">Home</a></li>
             <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
-            <li><a href="current-issue.html" class="hover:text-teal-700">Current Issue</a></li>
+            <li><a id="breadcrumb-section-link" href="current-issue.html" class="hover:text-teal-700">Current Issue</a></li>
             <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
             <li id="breadcrumb-title" aria-current="page" class="text-gray-900 font-medium truncate max-w-xs">Article</li>
           </ol>
@@ -232,6 +232,7 @@
   </button>
 
   <script src="js/data/articles.js"></script>
+  <script src="js/data/articles-in-press.js"></script>
   <script src="js/data-loader.js"></script>
   <script src="js/data/news.js"></script>
   <script src="js/main.js"></script>
@@ -244,28 +245,703 @@
       var contentEl = document.getElementById('article-content');
       var notFoundEl = document.getElementById('article-not-found');
       var breadcrumbTitle = document.getElementById('breadcrumb-title');
+      var breadcrumbSectionLink = document.getElementById('breadcrumb-section-link');
+      var sourceContext = String(params.get('source') || '').toLowerCase();
+      var contextYear = params.get('year');
+      var contextLabel = params.get('label');
+      var contextSourceId = params.get('sourceId');
+      var contextVolume = params.get('volume');
+      var contextIssue = params.get('issue');
 
-      if (!id || !window.ARTICLES) {
+      if (!sourceContext && (contextYear || contextLabel || contextSourceId)) {
+        sourceContext = 'archive';
+      }
+      if (sourceContext === 'articles-in-press' || sourceContext === 'press') {
+        sourceContext = 'aip';
+      }
+
+      if (!id) {
         contentEl.classList.add('hidden');
         notFoundEl.classList.remove('hidden');
         return;
       }
 
-      var article = window.ARTICLES.find(function (a) { return a.id === id; });
+      var article = null;
+      if (Array.isArray(window.ARTICLES)) {
+        article = window.ARTICLES.find(function (a) { return a.id === id; }) || null;
+      }
+
+      // Fallback for AIP entries that are not yet present in local ARTICLES index.
+      if (!article && sourceContext === 'aip' && Array.isArray(window.ARTICLES_IN_PRESS)) {
+        var aipArticle = window.ARTICLES_IN_PRESS.find(function (a) { return Number(a.id) === id; });
+        if (aipArticle) {
+          article = {
+            id: Number(aipArticle.id),
+            type: aipArticle.type || 'Article',
+            title: aipArticle.title || '',
+            authors: Array.isArray(aipArticle.authors) ? aipArticle.authors : [],
+            abstract: aipArticle.abstract || '',
+            abstractHtml: aipArticle.abstractHtml || '',
+            previewText: aipArticle.previewText || aipArticle.abstract || '',
+            keywords: Array.isArray(aipArticle.keywords) ? aipArticle.keywords : [],
+            doi: aipArticle.doi || '',
+            received: '',
+            accepted: '',
+            published: aipArticle.published || new Date().toISOString().slice(0, 10),
+            volume: aipArticle.volume || '',
+            issue: aipArticle.issue || '',
+            pages: aipArticle.pages || '',
+            views: Number(aipArticle.views || 0),
+            downloads: Number(aipArticle.downloads || 0),
+            citations: 0,
+            featured: false,
+            imageCorner: false,
+            hasFullText: Boolean(aipArticle.hasFullText),
+            sourceIssueId: '46',
+            sourceArticleId: String(aipArticle.id),
+            sourceAbstractUrl: aipArticle.sourceAbstractUrl || '',
+            sourceTextUrl: aipArticle.sourceTextUrl || '',
+            sourcePdfUrl: aipArticle.sourcePdfUrl || '',
+            localPdfUrl: '',
+            pdfUrl: aipArticle.sourcePdfUrl || '',
+            aheadOfPrint: true
+          };
+        }
+      }
+
       if (!article) {
         contentEl.classList.add('hidden');
         notFoundEl.classList.remove('hidden');
         return;
       }
 
+      function buildArticleUrl(articleId) {
+        var qp = new URLSearchParams();
+        qp.set('id', String(articleId));
+        if (sourceContext === 'archive') {
+          qp.set('source', 'archive');
+          if (contextYear) qp.set('year', contextYear);
+          if (contextLabel) qp.set('label', contextLabel);
+          if (contextSourceId) qp.set('sourceId', contextSourceId);
+          if (contextVolume) qp.set('volume', contextVolume);
+          if (contextIssue) qp.set('issue', contextIssue);
+        } else if (sourceContext === 'aip') {
+          qp.set('source', 'aip');
+        }
+        return 'article.html?' + qp.toString();
+      }
+
       var hasFullText = !!article.hasFullText;
       var fullTextLoaded = false;
       var noAbstractTypes = ['Editorial', 'Clinical Image', 'Scientific Letter', 'Letter to the Editor'];
       var isNoAbstract = noAbstractTypes.indexOf(article.type) !== -1;
+      var isCoverPage = article.type === 'Cover Page';
+      var tocAllowedTypes = ['Invited Review', 'Original Article', 'Brief Report'];
+      var canShowTocCard = hasFullText && tocAllowedTypes.indexOf(article.type) !== -1;
+      var pdfHref = article.pdfUrl || article.localPdfUrl || article.sourcePdfUrl || '';
+
+      function escapeAttr(value) {
+        return String(value || '')
+          .replace(/&/g, '&amp;')
+          .replace(/"/g, '&quot;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+      }
+
+      function normalizeDoi(value) {
+        var doi = String(value || '').trim();
+        if (!doi) return '';
+        doi = doi.replace(/^https?:\/\/(dx\.)?doi\.org\//i, '');
+        doi = doi.replace(/^doi:\s*/i, '');
+        return doi.trim();
+      }
+
+      function loadScriptOnce(id, src) {
+        return new Promise(function (resolve, reject) {
+          var existing = document.getElementById(id);
+          if (existing) {
+            if (existing.getAttribute('data-loaded') === 'true') resolve();
+            else existing.addEventListener('load', function () { resolve(); }, { once: true });
+            return;
+          }
+          var script = document.createElement('script');
+          script.id = id;
+          script.src = src;
+          script.async = true;
+          script.onload = function () {
+            script.setAttribute('data-loaded', 'true');
+            resolve();
+          };
+          script.onerror = reject;
+          document.head.appendChild(script);
+        });
+      }
+
+      function toAbsoluteOpenAlexUrl(idOrUrl) {
+        var value = String(idOrUrl || '').trim();
+        if (!value) return '';
+        if (/^https?:\/\//i.test(value)) return value;
+        var match = value.match(/W\d+/i);
+        return match ? ('https://openalex.org/' + match[0].toUpperCase()) : '';
+      }
+
+      function extractOpenAlexWorkId(idOrUrl) {
+        var match = String(idOrUrl || '').match(/W\d+/i);
+        return match ? match[0].toUpperCase() : '';
+      }
+
+      function aggregateTopLabels(labels, limit) {
+        var map = {};
+        (labels || []).forEach(function (label) {
+          var key = String(label || '').trim();
+          if (!key) return;
+          map[key] = (map[key] || 0) + 1;
+        });
+        return Object.keys(map)
+          .map(function (label) { return { label: label, count: map[label] }; })
+          .sort(function (a, b) {
+            if (b.count !== a.count) return b.count - a.count;
+            return a.label.localeCompare(b.label);
+          })
+          .slice(0, limit || 4);
+      }
+
+      function renderCountBadges(container, items, emptyText) {
+        if (!container) return;
+        container.innerHTML = '';
+        if (!items || !items.length) {
+          var empty = document.createElement('span');
+          empty.className = 'text-sm text-gray-500';
+          empty.textContent = emptyText;
+          container.appendChild(empty);
+          return;
+        }
+        items.forEach(function (item) {
+          var chip = document.createElement('span');
+          chip.className = 'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-gray-200 text-xs leading-5 text-gray-700';
+          chip.textContent = item.label + ' (' + item.count + ')';
+          container.appendChild(chip);
+        });
+      }
+
+      function renderLabelBadges(container, labels, emptyText) {
+        if (!container) return;
+        container.innerHTML = '';
+        if (!labels || !labels.length) {
+          var empty = document.createElement('span');
+          empty.className = 'text-sm text-gray-500';
+          empty.textContent = emptyText;
+          container.appendChild(empty);
+          return;
+        }
+        labels.forEach(function (label) {
+          var chip = document.createElement('span');
+          chip.className = 'inline-flex items-center px-2.5 py-1 rounded-full bg-white border border-gray-200 text-xs leading-5 text-gray-700';
+          chip.textContent = label;
+          container.appendChild(chip);
+        });
+      }
+
+      function renderTopCitingPapers(container, works) {
+        if (!container) return;
+        container.innerHTML = '';
+        if (!works || !works.length) {
+          var empty = document.createElement('p');
+          empty.className = 'text-sm text-gray-500';
+          empty.textContent = 'No citing paper data available.';
+          container.appendChild(empty);
+          return;
+        }
+
+        var sorted = works.slice().sort(function (a, b) {
+          var bc = Number(b && b.cited_by_count || 0);
+          var ac = Number(a && a.cited_by_count || 0);
+          if (bc !== ac) return bc - ac;
+          return Number(b && b.publication_year || 0) - Number(a && a.publication_year || 0);
+        }).slice(0, 3);
+
+        sorted.forEach(function (work) {
+          var href = toAbsoluteOpenAlexUrl(work && work.id);
+          var row = document.createElement(href ? 'a' : 'div');
+          row.className = 'block p-3 rounded-lg bg-white border border-gray-200 hover:border-teal-200 hover:bg-teal-50/40 transition-colors';
+          if (href) {
+            row.href = href;
+            row.target = '_blank';
+            row.rel = 'noopener';
+          }
+
+          var title = document.createElement('div');
+          title.className = 'text-sm font-medium text-gray-800 leading-snug';
+          title.textContent = String(work && work.display_name || 'Untitled citing work');
+
+          var year = work && work.publication_year ? String(work.publication_year) : 'n.d.';
+          var citedBy = Number(work && work.cited_by_count || 0).toLocaleString();
+          var meta = document.createElement('div');
+          meta.className = 'text-xs text-gray-500 mt-1';
+          meta.textContent = year + ' • Cited by ' + citedBy;
+
+          row.appendChild(title);
+          row.appendChild(meta);
+          container.appendChild(row);
+        });
+      }
+
+      function renderCitationTrend(countsByYear) {
+        var barsEl = document.getElementById('citation-trend-bars');
+        var rangeEl = document.getElementById('citation-trend-range');
+        if (!barsEl) return;
+        barsEl.innerHTML = '';
+
+        var currentYear = new Date().getFullYear();
+        var years = [];
+        for (var y = currentYear - 5; y <= currentYear; y++) years.push(y);
+        if (rangeEl) rangeEl.textContent = years[0] + '-' + years[years.length - 1];
+
+        var map = {};
+        (countsByYear || []).forEach(function (item) {
+          if (!item || typeof item.year !== 'number') return;
+          map[item.year] = Number(item.cited_by_count || 0);
+        });
+
+        var values = years.map(function (year) { return map[year] || 0; });
+        var max = Math.max.apply(null, values.concat([1]));
+
+        years.forEach(function (year, index) {
+          var value = values[index];
+          var col = document.createElement('div');
+          col.className = 'flex-1 h-full rounded-sm bg-teal-100/70 relative overflow-hidden';
+          col.title = year + ': ' + value + ' citations';
+
+          var fill = document.createElement('div');
+          fill.className = 'absolute inset-x-0 bottom-0 bg-teal-700';
+          fill.style.height = (value <= 0 ? 4 : Math.max(8, Math.round((value / max) * 100))) + '%';
+
+          col.appendChild(fill);
+          barsEl.appendChild(col);
+        });
+      }
+
+      function fetchOpenAlexWorkByDoi(doi) {
+        var url = 'https://api.openalex.org/works?filter=doi:' + encodeURIComponent(doi) + '&per-page=1&select=id,cited_by_count,counts_by_year,concepts';
+        return fetch(url).then(function (res) {
+          if (!res.ok) throw new Error('OpenAlex response ' + res.status);
+          return res.json();
+        }).then(function (json) {
+          var work = json && json.results && json.results[0];
+          if (!work) throw new Error('OpenAlex work not found');
+          return work;
+        });
+      }
+
+      function fetchTopCitingWorks(openAlexWorkId) {
+        if (!openAlexWorkId) return Promise.resolve([]);
+        var url = 'https://api.openalex.org/works?filter=cites:' + encodeURIComponent(openAlexWorkId) + '&per-page=25&sort=cited_by_count:desc&select=id,display_name,publication_year,primary_location,primary_topic,cited_by_count';
+        return fetch(url).then(function (res) {
+          if (!res.ok) throw new Error('OpenAlex citing-works response ' + res.status);
+          return res.json();
+        }).then(function (json) {
+          return json && Array.isArray(json.results) ? json.results : [];
+        });
+      }
+
+      var openAlexWorkPromise = null;
+      function getOpenAlexWork(doi) {
+        if (!doi) return Promise.reject(new Error('Missing DOI'));
+        if (!openAlexWorkPromise) {
+          openAlexWorkPromise = fetchOpenAlexWorkByDoi(doi);
+        }
+        return openAlexWorkPromise;
+      }
+
+      function setCitationMetric(count, sourceText) {
+        var countEl = document.getElementById('metric-citations');
+        var sourceEl = document.getElementById('metric-citations-source');
+        if (countEl) {
+          var numeric = Number(count);
+          countEl.textContent = isNaN(numeric) ? '0' : numeric.toLocaleString();
+        }
+        if (sourceEl) sourceEl.textContent = sourceText || '';
+      }
+
+      function fetchOpenAlexCitationCount(doi) {
+        return getOpenAlexWork(doi).then(function (work) {
+          var count = work && work.cited_by_count;
+          if (typeof count === 'number') return count;
+          throw new Error('No OpenAlex citation count');
+        });
+      }
+
+      function fetchCrossrefCitationCount(doi) {
+        var url = 'https://api.crossref.org/works/' + encodeURIComponent(doi);
+        return fetch(url).then(function (res) {
+          if (!res.ok) throw new Error('Crossref response ' + res.status);
+          return res.json();
+        }).then(function (json) {
+          var count = json && json.message && json.message['is-referenced-by-count'];
+          if (typeof count === 'number') return count;
+          throw new Error('No Crossref citation count');
+        });
+      }
+
+      function syncCitationMetric() {
+        if (isCoverPage) return;
+        var localCount = Number(article.citations || 0);
+        var doi = normalizeDoi(article.doi);
+        setCitationMetric(localCount, doi ? 'Source: OpenAlex' : 'Source: local dataset');
+
+        if (!doi || typeof fetch !== 'function') return;
+
+        fetchOpenAlexCitationCount(doi).then(function (count) {
+          article.citations = count;
+          setCitationMetric(count, 'Source: OpenAlex');
+        }).catch(function () {
+          setCitationMetric(localCount, 'Source: OpenAlex unavailable');
+        });
+      }
+
+      function initCitationIntelligence() {
+        if (isCoverPage) return;
+
+        var loadingEl = document.getElementById('citation-intel-loading');
+        var contentWrap = document.getElementById('citation-intel-content');
+        var emptyEl = document.getElementById('citation-intel-empty');
+        var toggleBtn = document.getElementById('citation-intel-toggle');
+        var toggleText = document.getElementById('citation-intel-toggle-text');
+        var toggleIcon = document.getElementById('citation-intel-toggle-icon');
+        var detailsWrap = document.getElementById('citation-intel-details');
+        var openAlexLink = document.getElementById('citation-intel-openalex');
+        var journalsEl = document.getElementById('citation-intel-journals');
+        var fieldsEl = document.getElementById('citation-intel-fields');
+        var papersEl = document.getElementById('citation-intel-papers');
+        if (!loadingEl || !contentWrap || !emptyEl) return;
+        var detailsExpanded = false;
+
+        function setDetailsExpanded(expanded) {
+          detailsExpanded = !!expanded;
+          if (detailsWrap) {
+            detailsWrap.classList.toggle('hidden', !detailsExpanded);
+          }
+          if (toggleBtn) toggleBtn.setAttribute('aria-expanded', detailsExpanded ? 'true' : 'false');
+          if (toggleText) toggleText.textContent = detailsExpanded ? 'Hide details' : 'Show details';
+          if (toggleIcon) toggleIcon.style.transform = detailsExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+
+        if (toggleBtn) {
+          toggleBtn.addEventListener('click', function () {
+            setDetailsExpanded(!detailsExpanded);
+          });
+          setDetailsExpanded(false);
+        }
+
+        function showLoading(text) {
+          loadingEl.textContent = text || 'Loading citation intelligence...';
+          loadingEl.classList.remove('hidden');
+          contentWrap.classList.add('hidden');
+          emptyEl.classList.add('hidden');
+          if (toggleBtn) toggleBtn.classList.add('hidden');
+          if (detailsWrap) detailsWrap.classList.add('hidden');
+        }
+
+        function showEmpty(text) {
+          emptyEl.textContent = text;
+          emptyEl.classList.remove('hidden');
+          loadingEl.classList.add('hidden');
+          contentWrap.classList.add('hidden');
+          if (toggleBtn) toggleBtn.classList.add('hidden');
+          if (detailsWrap) detailsWrap.classList.add('hidden');
+        }
+
+        function showContent() {
+          contentWrap.classList.remove('hidden');
+          loadingEl.classList.add('hidden');
+          emptyEl.classList.add('hidden');
+          if (toggleBtn) toggleBtn.classList.remove('hidden');
+          setDetailsExpanded(false);
+        }
+
+        var doi = normalizeDoi(article.doi);
+        if (!doi) {
+          showEmpty('Citation intelligence requires DOI.');
+          return;
+        }
+
+        showLoading('Loading citation intelligence...');
+
+        getOpenAlexWork(doi).then(function (work) {
+          var total = Number(work && work.cited_by_count || 0);
+          var noCitingFieldsMessage = 'No citing field data available.';
+          setCitationMetric(total, 'Source: OpenAlex');
+          renderCitationTrend(work && work.counts_by_year || []);
+
+          if (openAlexLink) {
+            var absoluteOpenAlexUrl = toAbsoluteOpenAlexUrl(work && work.id);
+            openAlexLink.href = absoluteOpenAlexUrl || ('https://openalex.org/works?filter=doi:' + encodeURIComponent(doi));
+          }
+
+          var openAlexId = extractOpenAlexWorkId(work && work.id);
+          if (!openAlexId) {
+            renderCountBadges(journalsEl, [], 'No journal data available.');
+            if (total <= 0) {
+              renderCountBadges(fieldsEl, [], noCitingFieldsMessage);
+            } else {
+              var fallbackTopics = (work && Array.isArray(work.concepts) ? work.concepts : [])
+                .slice()
+                .sort(function (a, b) { return Number(b && b.score || 0) - Number(a && a.score || 0); })
+                .slice(0, 4)
+                .map(function (c) { return c && c.display_name; })
+                .filter(Boolean);
+              renderLabelBadges(fieldsEl, fallbackTopics, 'No field data available.');
+            }
+            renderTopCitingPapers(papersEl, []);
+            showContent();
+            return null;
+          }
+
+          return fetchTopCitingWorks(openAlexId).then(function (citingWorks) {
+            var journals = aggregateTopLabels(citingWorks.map(function (w) {
+              return w && w.primary_location && w.primary_location.source && w.primary_location.source.display_name;
+            }), 4);
+
+            var fields = aggregateTopLabels(citingWorks.map(function (w) {
+              return w && w.primary_topic && w.primary_topic.display_name;
+            }), 4);
+
+            renderCountBadges(journalsEl, journals, 'No journal data available.');
+            if (total <= 0) {
+              renderCountBadges(fieldsEl, [], noCitingFieldsMessage);
+            } else if (fields.length > 0) {
+              renderCountBadges(fieldsEl, fields, 'No field data available.');
+            } else {
+              var topics = (work && Array.isArray(work.concepts) ? work.concepts : [])
+                .slice()
+                .sort(function (a, b) { return Number(b && b.score || 0) - Number(a && a.score || 0); })
+                .slice(0, 4)
+                .map(function (c) { return c && c.display_name; })
+                .filter(Boolean);
+              renderLabelBadges(fieldsEl, topics, 'No field data available.');
+            }
+
+            renderTopCitingPapers(papersEl, citingWorks);
+            showContent();
+            return null;
+          }).catch(function () {
+            renderCountBadges(journalsEl, [], 'No journal data available.');
+            if (total <= 0) {
+              renderCountBadges(fieldsEl, [], noCitingFieldsMessage);
+            } else {
+              var fallbackTopics = (work && Array.isArray(work.concepts) ? work.concepts : [])
+                .slice()
+                .sort(function (a, b) { return Number(b && b.score || 0) - Number(a && a.score || 0); })
+                .slice(0, 4)
+                .map(function (c) { return c && c.display_name; })
+                .filter(Boolean);
+              renderLabelBadges(fieldsEl, fallbackTopics, 'No field data available.');
+            }
+            renderTopCitingPapers(papersEl, []);
+            showContent();
+            return null;
+          });
+        }).catch(function () {
+          showEmpty('Citation intelligence is currently unavailable for this DOI.');
+        });
+      }
+
+      function initAttentionWidgets() {
+        if (isCoverPage) return;
+
+        var altmetricWrap = document.getElementById('altmetric-wrapper');
+        var plumxWrap = document.getElementById('plumx-wrapper');
+        var emptyNote = document.getElementById('attention-unavailable');
+        var doi = normalizeDoi(article.doi);
+
+        if (!doi) {
+          if (altmetricWrap) altmetricWrap.classList.add('hidden');
+          if (plumxWrap) plumxWrap.classList.add('hidden');
+          if (emptyNote) {
+            emptyNote.classList.remove('hidden');
+            emptyNote.textContent = 'Attention metrics are unavailable because DOI is missing.';
+          }
+          return;
+        }
+
+        var altBadge = document.getElementById('altmetric-badge');
+        if (altBadge) altBadge.setAttribute('data-doi', doi);
+
+        var plumxBadge = document.getElementById('plumx-badge');
+        if (plumxBadge) plumxBadge.href = 'https://plu.mx/plum/a/?doi=' + encodeURIComponent(doi);
+
+        function maybeShowAttentionUnavailable() {
+          var altHidden = !altmetricWrap || altmetricWrap.classList.contains('hidden');
+          var plumHidden = !plumxWrap || plumxWrap.classList.contains('hidden');
+          if (altHidden && plumHidden && emptyNote) {
+            emptyNote.classList.remove('hidden');
+            emptyNote.textContent = 'Attention metrics are currently unavailable for this DOI.';
+          }
+        }
+
+        loadScriptOnce('altmetric-embed-script', 'https://embed.altmetric.com/assets/embed.js')
+          .then(function () {
+            if (typeof window._altmetric_embed_init === 'function') {
+              window._altmetric_embed_init();
+            }
+          })
+          .catch(function () {
+            if (altmetricWrap) altmetricWrap.classList.add('hidden');
+            maybeShowAttentionUnavailable();
+          });
+
+        loadScriptOnce('plumx-widget-script', 'https://cdn.plu.mx/widget-popup.js')
+          .catch(function () {
+            if (plumxWrap) plumxWrap.classList.add('hidden');
+            maybeShowAttentionUnavailable();
+          });
+      }
+
+      function stripDuplicateAbstractLabel(rawHtml) {
+        if (!rawHtml) return '';
+        var root = document.createElement('div');
+        root.innerHTML = String(rawHtml);
+
+        function removeLeadingAbstract(container) {
+          if (!container || !container.firstElementChild) return;
+          var first = container.firstElementChild;
+          while (first && !first.textContent.trim() && first.nextElementSibling) {
+            first = first.nextElementSibling;
+          }
+          if (!first) return;
+
+          var label = first.textContent.replace(/\s+/g, ' ').trim().toLowerCase().replace(/[:\-]+$/, '');
+          if (label === 'abstract') {
+            first.remove();
+          }
+        }
+
+        removeLeadingAbstract(root);
+        if (root.children.length === 1) {
+          removeLeadingAbstract(root.firstElementChild);
+        }
+        return root.innerHTML;
+      }
+
+      function stripAbstractFromFullText(rawHtml) {
+        if (!rawHtml) return '';
+        var root = document.createElement('div');
+        root.innerHTML = String(rawHtml);
+
+        function normalizeLabel(value) {
+          return String(value || '')
+            .replace(/\s+/g, ' ')
+            .trim()
+            .toLowerCase()
+            .replace(/[:\-]+$/, '');
+        }
+
+        function hasIntroMarker(node) {
+          if (!node) return false;
+          if (node.querySelector('a[name="introduction"], a[name="methods"], a[name="materials-methods"], a[name="conclusion"], a[name="reference"]')) {
+            return true;
+          }
+          var h = node.querySelector('h1, h2, h3, h4, h5, h6');
+          if (!h) return false;
+          var label = normalizeLabel(h.textContent);
+          return label === 'introduction' || label === 'methods' || label === 'materials and methods' || label === 'conclusion' || label === 'references';
+        }
+
+        function removeSummarySection(anchor) {
+          if (!anchor) return false;
+          var block = anchor;
+          while (block && block.parentElement && block.parentElement !== root) {
+            if (block.nextElementSibling && hasIntroMarker(block.nextElementSibling)) {
+              block.remove();
+              return true;
+            }
+            block = block.parentElement;
+          }
+          return false;
+        }
+
+        var summaryAnchor = root.querySelector('a[name="summary_en"], a[name="summary"], a[name="abstract"]');
+        removeSummarySection(summaryAnchor);
+
+        var firstHeading = root.querySelector('h1, h2, h3, h4, h5, h6');
+        if (firstHeading && normalizeLabel(firstHeading.textContent) === 'abstract') {
+          var cursor = firstHeading;
+          while (cursor) {
+            var next = cursor.nextElementSibling;
+            cursor.remove();
+            if (!next) break;
+            if (/^H[1-6]$/.test(next.tagName) && normalizeLabel(next.textContent) !== 'abstract') {
+              break;
+            }
+            cursor = next;
+          }
+        }
+
+        // Source full text often inserts an <hr> right before "Introduction".
+        // Remove that divider to avoid an extra horizontal line at the top.
+        var dividers = root.querySelectorAll('hr');
+        Array.prototype.forEach.call(dividers, function (hr) {
+          var next = hr.nextElementSibling;
+          while (next && next.tagName === 'A' && !next.textContent.trim()) {
+            next = next.nextElementSibling;
+          }
+          if (next && /^H[1-6]$/.test(next.tagName) && normalizeLabel(next.textContent) === 'introduction') {
+            hr.remove();
+          }
+        });
+
+        // Tighten top spacing for the first visible heading in full text.
+        var firstContentHeading = root.querySelector('h1, h2, h3, h4, h5, h6');
+        if (firstContentHeading) {
+          var prev = firstContentHeading.previousElementSibling;
+          while (prev) {
+            var keep = true;
+            if (prev.tagName === 'BR') keep = false;
+            if (prev.tagName === 'A' && !prev.textContent.trim() && !prev.getAttribute('href')) keep = false;
+            if (prev.tagName === 'P' && !prev.textContent.trim()) keep = false;
+            if (keep) break;
+            var older = prev.previousElementSibling;
+            prev.remove();
+            prev = older;
+          }
+          firstContentHeading.style.marginTop = '0';
+
+          var headingParent = firstContentHeading.parentElement;
+          if (headingParent && headingParent.style && headingParent.style.minHeight) {
+            headingParent.style.minHeight = '';
+          }
+        }
+
+        return root.innerHTML;
+      }
+
+      function getStickyHeaderOffset() {
+        var nav = document.querySelector('nav[aria-label="Main navigation"]');
+        var navHeight = nav ? nav.getBoundingClientRect().height : 0;
+        return Math.max(96, Math.round(navHeight + 16));
+      }
+
+      function scrollToArticleTarget(node) {
+        if (!node) return;
+        var top = node.getBoundingClientRect().top + window.pageYOffset - getStickyHeaderOffset();
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+      }
 
       // Update page title
       document.title = article.title + ' — Balkan Medical Journal';
       if (breadcrumbTitle) breadcrumbTitle.textContent = article.title;
+      if (breadcrumbSectionLink) {
+        if (sourceContext === 'archive') {
+          breadcrumbSectionLink.textContent = 'Archive';
+          breadcrumbSectionLink.href = 'archive.html';
+        } else if (sourceContext === 'aip') {
+          breadcrumbSectionLink.textContent = 'Articles in Press';
+          breadcrumbSectionLink.href = 'articles-in-press.html';
+        } else {
+          breadcrumbSectionLink.textContent = 'Current Issue';
+          breadcrumbSectionLink.href = 'current-issue.html';
+        }
+      }
 
       // Update meta description
       var metaDesc = document.querySelector('meta[name="description"]');
@@ -357,6 +1033,7 @@
                       article.type === 'Letter to the Editor' ? 'bg-purple-100 text-purple-700' :
                       article.type === 'Image Corner' ? 'bg-indigo-100 text-indigo-700' :
                       'bg-teal-100 text-teal-700';
+      var showAheadOfPrintBadge = Boolean(article.aheadOfPrint || sourceContext === 'aip');
 
       var pubDate = article.published ? new Date(article.published).toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'}) : '';
       var recDate = article.received ? new Date(article.received).toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'}) : '';
@@ -364,11 +1041,12 @@
 
       // Authors HTML
       var authorsHtml = article.authors.map(function (a, i) {
+        var authorAffiliation = String(a.affiliation || '').trim();
         return '<div class="flex items-start gap-3 py-3' + (i < article.authors.length - 1 ? ' border-b border-gray-100' : '') + '">' +
           '<div class="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0"><span class="text-sm font-semibold text-teal-700">' + a.name.charAt(0) + '</span></div>' +
           '<div>' +
             '<div class="font-medium text-gray-900">' + a.name + '</div>' +
-            '<div class="text-sm text-gray-500">' + a.affiliation + '</div>' +
+            '<div class="text-sm text-gray-500">' + (authorAffiliation || 'Affiliation not listed') + '</div>' +
             (a.orcid ? '<a href="https://orcid.org/' + a.orcid + '" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-xs text-teal-700 hover:text-teal-700"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256"><path fill="#A6CE39" d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z"/><path fill="#fff" d="M86.3,186.2H70.9V79.1h15.4v48.4V186.2z"/><path fill="#fff" d="M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z"/><path fill="#fff" d="M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z"/></svg>' + a.orcid + '</a>' : '') +
           '</div>' +
         '</div>';
@@ -382,15 +1060,17 @@
       // Related articles
       var related = window.ARTICLES.filter(function (a) { return a.id !== article.id && a.type === article.type; }).slice(0, 3);
       var relatedHtml = related.map(function (r) {
-        return '<a href="article.html?id=' + r.id + '" class="block p-3 rounded-lg hover:bg-gray-50 transition-colors">' +
+        var relatedAuthor = (r.authors && r.authors.length) ? r.authors[0].name : 'Balkan Medical Journal';
+        var relatedAuthorSuffix = (r.authors && r.authors.length > 1) ? ' et al.' : '';
+        return '<a href="' + buildArticleUrl(r.id) + '" class="block p-3 rounded-lg hover:bg-gray-50 transition-colors">' +
           '<div class="text-sm font-medium text-gray-900 hover:text-teal-700 leading-snug">' + r.title + '</div>' +
-          '<div class="text-xs text-gray-400 mt-1">' + r.authors[0].name + (r.authors.length > 1 ? ' et al.' : '') + '</div>' +
+          '<div class="text-xs text-gray-400 mt-1">' + relatedAuthor + relatedAuthorSuffix + '</div>' +
         '</a>';
       }).join('');
 
       // Build tabs HTML
       var tabsHtml = '';
-      if (hasFullText && !isNoAbstract) {
+      if (hasFullText && !isNoAbstract && !isCoverPage) {
         // Articles WITH abstract: show 3 tabs
         tabsHtml =
           '<div class="border-b border-gray-200 mb-8">' +
@@ -404,9 +1084,18 @@
 
       // Abstract panel content
       var abstractContent = '';
-      if (!isNoAbstract && article.abstract) {
-        abstractContent = '<div class="text-gray-700 leading-relaxed prose max-w-none">' + article.abstract + '</div>';
-      } else if (!isNoAbstract) {
+      if (!isCoverPage && !isNoAbstract && (article.abstractHtml || article.abstract)) {
+        var cleanedAbstractHtml = stripDuplicateAbstractLabel(article.abstractHtml || '');
+        var abstractBody = cleanedAbstractHtml || (
+          '<p>' +
+          String(article.abstract || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;') +
+          '</p>'
+        );
+        abstractContent = '<div class="text-gray-700 leading-relaxed prose max-w-none">' + abstractBody + '</div>';
+      } else if (!isCoverPage && !isNoAbstract) {
         abstractContent = '<p class="text-gray-500 italic font-serif">No abstract available for this article.</p>';
       }
 
@@ -424,7 +1113,7 @@
           '</div>' +
           (article.keywords && article.keywords.length ? '<section class="mb-8 mt-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Keywords</h2><div class="flex flex-wrap gap-2">' + keywordsHtml + '</div></section>' : '') +
           '<section class="mb-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Authors &amp; Affiliations</h2><div>' + authorsHtml + '</div></section>';
-      } else if (hasFullText && !isNoAbstract) {
+      } else if (hasFullText && !isNoAbstract && !isCoverPage) {
         // Articles WITH abstract + full text: 3 tab panels
         panelsHtml =
           '<div id="panel-abstract" class="article-tab-panel">' +
@@ -448,13 +1137,13 @@
           '<div id="panel-abstract" class="article-tab-panel">' +
             (abstractContent ? '<section class="mb-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Abstract</h2>' + abstractContent + '</section>' : '') +
             (article.keywords && article.keywords.length ? '<section class="mb-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Keywords</h2><div class="flex flex-wrap gap-2">' + keywordsHtml + '</div></section>' : '') +
-            '<section class="mb-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Authors</h2><div>' + authorsHtml + '</div></section>' +
+            (isCoverPage ? '' : '<section class="mb-8"><h2 class="text-xl font-bold text-gray-900 mb-4">Authors</h2><div>' + authorsHtml + '</div></section>') +
           '</div>';
       }
 
       // Sidebar TOC (shows for full text articles)
-      var tocHtml = hasFullText ?
-        '<div id="sidebar-toc" class="bg-gray-50 rounded-xl p-6' + (isNoAbstract ? '' : ' hidden') + '">' +
+      var tocHtml = canShowTocCard ?
+        '<div id="sidebar-toc" class="bg-gray-50 rounded-xl p-6 hidden">' +
           '<h3 class="font-semibold text-gray-900 mb-3">In This Article</h3>' +
           '<nav class="article-toc" id="toc-nav" aria-label="Table of contents"></nav>' +
         '</div>' : '';
@@ -466,6 +1155,7 @@
             '<div class="lg:col-span-2">' +
               '<div class="mb-4 flex flex-wrap items-center gap-2">' +
                 '<span class="badge ' + typeColor + '">' + article.type + '</span>' +
+                (showAheadOfPrintBadge ? '<span class="badge bg-orange-100 text-orange-700">Ahead of Print</span>' : '') +
                 '<span class="text-sm text-gray-400">Volume ' + article.volume + ', Issue ' + article.issue + ', pp. ' + article.pages + '</span>' +
               '</div>' +
               '<h1 class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-6">' + article.title + '</h1>' +
@@ -479,12 +1169,14 @@
               '</div>' +
 
               // DOI & Dates
-              '<div class="bg-gray-50 rounded-xl p-4 mb-8 flex flex-wrap gap-x-6 gap-y-2 text-sm">' +
-                '<div><span class="text-gray-400">DOI:</span> <a href="https://doi.org/' + article.doi + '" target="_blank" rel="noopener" class="text-teal-700 hover:underline">' + article.doi + '</a></div>' +
-                (recDate ? '<div><span class="text-gray-400">Received:</span> ' + recDate + '</div>' : '') +
-                (accDate ? '<div><span class="text-gray-400">Accepted:</span> ' + accDate + '</div>' : '') +
-                (pubDate ? '<div><span class="text-gray-400">Published:</span> ' + pubDate + '</div>' : '') +
-              '</div>' +
+              (isCoverPage ? '' :
+                '<div class="bg-gray-50 rounded-xl p-4 mb-8 flex flex-wrap gap-x-6 gap-y-2 text-sm">' +
+                  '<div><span class="text-gray-400">DOI:</span> <a href="https://doi.org/' + article.doi + '" target="_blank" rel="noopener" class="text-teal-700 hover:underline">' + article.doi + '</a></div>' +
+                  (recDate ? '<div><span class="text-gray-400">Received:</span> ' + recDate + '</div>' : '') +
+                  (accDate ? '<div><span class="text-gray-400">Accepted:</span> ' + accDate + '</div>' : '') +
+                  (pubDate ? '<div><span class="text-gray-400">Published:</span> ' + pubDate + '</div>' : '') +
+                '</div>'
+              ) +
 
               // Tabs
               tabsHtml +
@@ -502,61 +1194,126 @@
 
                 // Download PDF card
                 '<div class="bg-gray-50 rounded-xl p-6">' +
-                  '<h3 class="font-semibold text-gray-900 mb-4">Access</h3>' +
-                  '<button onclick="showToast(\'PDF download is a demo feature\')" class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-teal-700 text-white font-semibold rounded-lg hover:bg-teal-800 transition-colors mb-3">' +
-                    '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>' +
-                    'Download PDF' +
-                  '</button>' +
+                  '<h3 class="text-base leading-6 font-semibold text-gray-900 mb-4">Access</h3>' +
+                  (pdfHref
+                    ? '<a href="' + escapeAttr(pdfHref) + '" target="_blank" rel="noopener" class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-teal-700 text-white font-semibold rounded-lg hover:bg-teal-800 transition-colors mb-3">' +
+                        '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>' +
+                        'Download PDF' +
+                      '</a>'
+                    : '<button type="button" disabled class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-gray-300 text-gray-500 font-semibold rounded-lg cursor-not-allowed mb-3">' +
+                        '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>' +
+                        'PDF unavailable' +
+                      '</button>'
+                  ) +
                   '<div class="text-center text-sm text-gray-400">Open Access — Free to Read</div>' +
                 '</div>' +
 
-                // Metrics card
-                '<div class="bg-gray-50 rounded-xl p-6">' +
-                  '<h3 class="font-semibold text-gray-900 mb-4">Metrics</h3>' +
-                  '<div class="space-y-3">' +
-                    '<div class="flex items-center justify-between"><span class="text-sm text-gray-500">Views</span><span class="font-semibold text-gray-900">' + (article.views || 0).toLocaleString() + '</span></div>' +
-                    '<div class="flex items-center justify-between"><span class="text-sm text-gray-500">Downloads</span><span class="font-semibold text-gray-900">' + (article.downloads || 0).toLocaleString() + '</span></div>' +
-                    '<div class="flex items-center justify-between"><span class="text-sm text-gray-500">Citations</span><span class="font-semibold text-gray-900">' + (article.citations || 0) + '</span></div>' +
-                  '</div>' +
-                '</div>' +
+                // Impact card (metrics + citation intelligence)
+                (isCoverPage ? '' :
+                  '<div class="bg-gray-50 rounded-xl p-6">' +
+                    '<h3 class="text-base leading-6 font-semibold text-gray-900 mb-4">Impact</h3>' +
+                    '<div class="space-y-3">' +
+                      '<div class="flex items-center justify-between"><span class="text-sm text-gray-500">Views</span><span class="font-semibold text-gray-900">' + (article.views || 0).toLocaleString() + '</span></div>' +
+                      '<div class="flex items-center justify-between"><span class="text-sm text-gray-500">Downloads</span><span class="font-semibold text-gray-900">' + (article.downloads || 0).toLocaleString() + '</span></div>' +
+                    '</div>' +
+                    '<div class="border-t border-gray-200 mt-4 pt-4">' +
+                      '<h4 class="text-base leading-6 font-semibold text-gray-900 mb-3">Citation Intelligence</h4>' +
+                      '<div class="flex items-center justify-between mb-1">' +
+                        '<span class="text-sm text-gray-500">Citations</span>' +
+                        '<span id="metric-citations" class="text-base font-semibold text-gray-900">' + (article.citations || 0) + '</span>' +
+                      '</div>' +
+                      '<p id="metric-citations-source" class="text-xs text-gray-400 mb-3">Source: OpenAlex</p>' +
+                      '<p id="citation-intel-loading" class="text-sm text-gray-500">Loading citation intelligence...</p>' +
+                      '<div id="citation-intel-content" class="hidden space-y-4">' +
+                        '<button id="citation-intel-toggle" type="button" aria-expanded="false" class="hidden inline-flex items-center gap-2 text-sm font-medium text-teal-700 hover:text-teal-800 transition-colors">' +
+                          '<span id="citation-intel-toggle-text">Show details</span>' +
+                          '<svg id="citation-intel-toggle-icon" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9 6 6 6-6"/></svg>' +
+                        '</button>' +
+                        '<div id="citation-intel-details" class="hidden space-y-4 pt-1">' +
+                          '<div>' +
+                          '<div class="flex items-center justify-between mb-2">' +
+                            '<span class="text-xs font-semibold uppercase tracking-[0.08em] text-gray-600">Citation Trend</span>' +
+                            '<span id="citation-trend-range" class="text-xs text-gray-500"></span>' +
+                          '</div>' +
+                          '<div id="citation-trend-bars" class="flex items-end gap-1 h-14"></div>' +
+                        '</div>' +
+                        '<div>' +
+                          '<div class="text-xs font-semibold uppercase tracking-[0.08em] text-gray-600 mb-2">Top Citing Journals</div>' +
+                          '<div id="citation-intel-journals" class="flex flex-wrap gap-2"></div>' +
+                        '</div>' +
+                        '<div>' +
+                          '<div class="text-xs font-semibold uppercase tracking-[0.08em] text-gray-600 mb-2">Top Citing Fields</div>' +
+                          '<div id="citation-intel-fields" class="flex flex-wrap gap-2"></div>' +
+                        '</div>' +
+                        '<div>' +
+                          '<div class="text-xs font-semibold uppercase tracking-[0.08em] text-gray-600 mb-2">Top Citing Papers</div>' +
+                          '<div id="citation-intel-papers" class="space-y-2.5"></div>' +
+                        '</div>' +
+                        '<a id="citation-intel-openalex" href="#" target="_blank" rel="noopener" class="inline-flex items-center text-sm font-medium text-teal-700 hover:text-teal-800">View in OpenAlex →</a>' +
+                        '</div>' +
+                      '</div>' +
+                      '<p id="citation-intel-empty" class="hidden text-sm text-gray-500"></p>' +
+                    '</div>' +
+                  '</div>'
+                ) +
+
+                // Attention metrics card
+                (isCoverPage ? '' :
+                  '<div class="bg-gray-50 rounded-xl p-6">' +
+                    '<h3 class="font-semibold text-gray-900 mb-4">Research Attention</h3>' +
+                    '<div id="altmetric-wrapper" class="mb-4 min-h-14">' +
+                      '<div id="altmetric-badge" class="altmetric-embed" data-badge-type="donut" data-badge-popover="right" data-hide-no-mentions="true" data-link-target="_blank"></div>' +
+                    '</div>' +
+                    '<div id="plumx-wrapper" class="min-h-10">' +
+                      '<a id="plumx-badge" class="plumx-plum-print-popup" data-popup="right" data-size="medium" data-hide-when-empty="true" data-site="plumx" href="#"></a>' +
+                    '</div>' +
+                    '<p id="attention-unavailable" class="hidden text-xs text-gray-400 mt-3">Attention metrics are unavailable for this article.</p>' +
+                  '</div>'
+                ) +
 
                 // Citation tools
-                '<div class="bg-gray-50 rounded-xl p-6">' +
-                  '<h3 class="font-semibold text-gray-900 mb-4">Cite This Article</h3>' +
-                  '<div class="space-y-2" id="citation-tools">' +
-                    '<div>' +
-                      '<label for="citation-format" class="text-sm text-gray-500 mb-1 block">Format</label>' +
-                      '<select id="citation-format" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500">' +
-                        '<option value="apa">APA</option>' +
-                        '<option value="mla">MLA</option>' +
-                        '<option value="vancouver">Vancouver</option>' +
-                        '<option value="bibtex">BibTeX</option>' +
-                      '</select>' +
-                    '</div>' +
-                    '<div id="citation-output" class="bg-white border border-gray-200 rounded-lg p-3 text-xs text-gray-700 leading-relaxed max-h-40 overflow-y-auto"></div>' +
-                    '<button id="copy-citation-btn" class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors text-sm">' +
-                      '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>' +
-                      'Copy Citation' +
-                    '</button>' +
-                    '<div class="grid grid-cols-2 gap-2 mt-2">' +
-                      '<button id="download-ris-btn" class="flex items-center justify-center gap-1 px-3 py-2 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors text-xs">' +
-                        '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>' +
-                        'RIS' +
+                (isCoverPage ? '' :
+                  '<div class="bg-gray-50 rounded-xl p-6">' +
+                    '<h3 class="font-semibold text-gray-900 mb-4">Cite This Article</h3>' +
+                    '<div class="space-y-2" id="citation-tools">' +
+                      '<div>' +
+                        '<label for="citation-format" class="text-sm text-gray-500 mb-1 block">Format</label>' +
+                        '<select id="citation-format" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500">' +
+                          '<option value="apa">APA</option>' +
+                          '<option value="mla">MLA</option>' +
+                          '<option value="vancouver">Vancouver</option>' +
+                          '<option value="bibtex">BibTeX</option>' +
+                        '</select>' +
+                      '</div>' +
+                      '<div id="citation-output" class="bg-white border border-gray-200 rounded-lg p-3 text-xs text-gray-700 leading-relaxed max-h-40 overflow-y-auto"></div>' +
+                      '<button id="copy-citation-btn" class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors text-sm">' +
+                        '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>' +
+                        'Copy Citation' +
                       '</button>' +
-                      '<button id="download-enw-btn" class="flex items-center justify-center gap-1 px-3 py-2 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors text-xs">' +
-                        '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>' +
-                        'EndNote' +
-                      '</button>' +
+                      '<div class="grid grid-cols-2 gap-2 mt-2">' +
+                        '<button id="download-ris-btn" class="flex items-center justify-center gap-1 px-3 py-2 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors text-xs">' +
+                          '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>' +
+                          'RIS' +
+                        '</button>' +
+                        '<button id="download-enw-btn" class="flex items-center justify-center gap-1 px-3 py-2 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors text-xs">' +
+                          '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>' +
+                          'EndNote' +
+                        '</button>' +
+                      '</div>' +
                     '</div>' +
-                  '</div>' +
-                '</div>' +
+                  '</div>'
+                ) +
 
                 // Related articles
-                (relatedHtml ? '<div class="bg-gray-50 rounded-xl p-6"><h3 class="font-semibold text-gray-900 mb-4">Related Articles</h3><div class="space-y-1">' + relatedHtml + '</div></div>' : '') +
+                (!isCoverPage && relatedHtml ? '<div class="bg-gray-50 rounded-xl p-6"><h3 class="font-semibold text-gray-900 mb-4">Related Articles</h3><div class="space-y-1">' + relatedHtml + '</div></div>' : '') +
               '</div>' +
             '</div>' +
           '</div>' +
         '</div>';
+
+      syncCitationMetric();
+      initCitationIntelligence();
+      initAttentionWidgets();
 
       // ── Tab switching logic ──
       if (hasFullText && isNoAbstract) {
@@ -569,6 +1326,7 @@
         var panelFulltext = document.getElementById('panel-fulltext');
         var panelAuthors  = document.getElementById('panel-authors');
         var tocEl = document.getElementById('sidebar-toc');
+        var tocNavEl = document.getElementById('toc-nav');
         var tabBtns = Array.prototype.slice.call(document.querySelectorAll('.article-tab'));
         var panelMap = { abstract: panelAbstract, fulltext: panelFulltext, authors: panelAuthors };
 
@@ -591,8 +1349,13 @@
             }
           }
           if (tocEl) {
-            if (tabName === 'fulltext') { tocEl.classList.remove('hidden'); }
-            else { tocEl.classList.add('hidden'); }
+            if (tabName !== 'fulltext') {
+              tocEl.classList.add('hidden');
+            } else if (fullTextLoaded && tocNavEl && tocNavEl.children.length > 0) {
+              tocEl.classList.remove('hidden');
+            } else {
+              tocEl.classList.add('hidden');
+            }
           }
           if (tabName === 'fulltext' && !fullTextLoaded) {
             fullTextLoaded = true;
@@ -619,12 +1382,16 @@
 
       // ── Full text loading ──
       function loadFullText() {
+        var tocCard = document.getElementById('sidebar-toc');
+        var tocNav = document.getElementById('toc-nav');
         try {
           DataLoader.loadFullText(id).then(function (html) {
             var container = document.getElementById('fulltext-content');
             if (!container) return;
 
             if (!html) {
+              if (tocNav) tocNav.innerHTML = '';
+              if (tocCard) tocCard.classList.add('hidden');
               container.innerHTML =
                 '<div class="text-center py-12">' +
                   '<p class="text-gray-500">Full text is not yet available for this article.</p>' +
@@ -633,10 +1400,27 @@
               return;
             }
 
-            container.innerHTML = '<div class="article-body">' + html + '</div>';
+            var cleanedFullTextHtml = stripAbstractFromFullText(html);
+            var probe = document.createElement('div');
+            probe.innerHTML = cleanedFullTextHtml;
+            var hasContent = probe.textContent.replace(/\s+/g, ' ').trim().length > 0 || !!probe.querySelector('img, table, figure, video, iframe');
+            if (!hasContent) {
+              if (tocNav) tocNav.innerHTML = '';
+              if (tocCard) tocCard.classList.add('hidden');
+              container.innerHTML =
+                '<div class="text-center py-12">' +
+                  '<p class="text-gray-500">Full text body is not available for this article.</p>' +
+                  '<p class="text-sm text-gray-400 mt-2">The abstract is available in the Abstract tab.</p>' +
+                '</div>';
+              return;
+            }
+
+            container.innerHTML = '<div class="article-body">' + cleanedFullTextHtml + '</div>';
             buildTOC();
           }).catch(function () {
             var container = document.getElementById('fulltext-content');
+            if (tocNav) tocNav.innerHTML = '';
+            if (tocCard) tocCard.classList.add('hidden');
             if (container) {
               container.innerHTML =
                 '<div class="text-center py-12">' +
@@ -647,6 +1431,8 @@
           });
         } catch (e) {
           var container = document.getElementById('fulltext-content');
+          if (tocNav) tocNav.innerHTML = '';
+          if (tocCard) tocCard.classList.add('hidden');
           if (container) {
             container.innerHTML =
               '<div class="text-center py-12">' +
@@ -659,23 +1445,93 @@
 
       // ── Build table of contents from sections ──
       function buildTOC() {
+        var tocCard = document.getElementById('sidebar-toc');
         var tocNav = document.getElementById('toc-nav');
-        if (!tocNav) return;
+        if (!tocNav) return false;
+        tocNav.innerHTML = '';
 
-        var sections = document.querySelectorAll('.article-body section[id]');
-        if (sections.length === 0) return;
+        var body = document.querySelector('.article-body');
+        if (!body) {
+          if (tocCard) tocCard.classList.add('hidden');
+          return false;
+        }
+
+        function normalizeLabel(value) {
+          return String(value || '').replace(/\s+/g, ' ').trim();
+        }
+
+        function slugify(value) {
+          var slug = normalizeLabel(value)
+            .toLowerCase()
+            .replace(/[^a-z0-9\s-]/g, '')
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-')
+            .replace(/^-|-$/g, '');
+          return slug;
+        }
+
+        var usedIds = {};
+        var targets = [];
+
+        // Prefer explicit section anchors if the source has them.
+        var sections = Array.prototype.slice.call(body.querySelectorAll('section[id]'));
+        sections.forEach(function (sec) {
+          var heading = sec.querySelector('h2, h3, h4');
+          var label = heading ? normalizeLabel(heading.textContent) : '';
+          if (!label) return;
+          usedIds[sec.id] = true;
+          targets.push({ id: sec.id, label: label, node: sec });
+        });
+
+        // Fallback: build TOC from headings directly (common in mirrored source HTML).
+        if (targets.length === 0) {
+          var headings = Array.prototype.slice.call(body.querySelectorAll('h2, h3'));
+          headings.forEach(function (heading, idx) {
+            var label = normalizeLabel(heading.textContent);
+            if (!label) return;
+            if (label.toLowerCase().replace(/[:\-]+$/, '') === 'abstract') return;
+
+            var id = heading.id;
+            if (!id) {
+              var anchorName = '';
+              var prev = heading.previousElementSibling;
+              var hops = 0;
+              while (prev && hops < 6) {
+                if (prev.tagName === 'A' && prev.getAttribute('name')) {
+                  anchorName = prev.getAttribute('name');
+                  break;
+                }
+                if (/^H[1-6]$/.test(prev.tagName)) break;
+                prev = prev.previousElementSibling;
+                hops += 1;
+              }
+              var base = slugify(anchorName || label) || ('section-' + (idx + 1));
+              id = base;
+              var suffix = 2;
+              while (usedIds[id] || (document.getElementById(id) && document.getElementById(id) !== heading)) {
+                id = base + '-' + suffix;
+                suffix += 1;
+              }
+              heading.id = id;
+            }
+            usedIds[id] = true;
+            targets.push({ id: id, label: label, node: heading });
+          });
+        }
+
+        if (targets.length === 0) {
+          if (tocCard) tocCard.classList.add('hidden');
+          return false;
+        }
 
         var tocLinks = [];
-        sections.forEach(function (sec) {
-          var heading = sec.querySelector('h3');
-          if (!heading) return;
+        targets.forEach(function (item) {
           var link = document.createElement('a');
-          link.href = '#' + sec.id;
-          link.textContent = heading.textContent;
+          link.href = '#' + item.id;
+          link.textContent = item.label;
           link.addEventListener('click', function (e) {
             e.preventDefault();
-            sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            // Update active state
+            scrollToArticleTarget(item.node);
             tocLinks.forEach(function (l) { l.classList.remove('active'); });
             link.classList.add('active');
           });
@@ -696,8 +1552,15 @@
             });
           }, { rootMargin: '-80px 0px -60% 0px', threshold: 0 });
 
-          sections.forEach(function (sec) { observer.observe(sec); });
+          targets.forEach(function (item) { observer.observe(item.node); });
         }
+        if (tocCard) {
+          var fulltextPanel = document.getElementById('panel-fulltext');
+          var fulltextVisible = !fulltextPanel || !fulltextPanel.classList.contains('hidden');
+          if (fulltextVisible) tocCard.classList.remove('hidden');
+          else tocCard.classList.add('hidden');
+        }
+        return true;
       }
 
       // ── Citation tools interactivity ──
@@ -737,7 +1600,8 @@
       if (risBtn) {
         risBtn.addEventListener('click', function () {
           var ris = CitationHelper.ris(article);
-          var firstAuthor = article.authors[0].name.split(' ').pop();
+          var firstAuthorName = (article.authors && article.authors.length) ? article.authors[0].name : 'Balkan Medical Journal';
+          var firstAuthor = firstAuthorName.split(' ').pop();
           var year = article.published ? new Date(article.published).getFullYear() : '';
           CitationHelper.downloadFile(ris, firstAuthor + '_' + year + '.ris', 'application/x-research-info-systems');
           if (window.showToast) window.showToast('RIS file downloaded');
@@ -749,7 +1613,8 @@
       if (enwBtn) {
         enwBtn.addEventListener('click', function () {
           var enw = CitationHelper.endnote(article);
-          var firstAuthor = article.authors[0].name.split(' ').pop();
+          var firstAuthorName = (article.authors && article.authors.length) ? article.authors[0].name : 'Balkan Medical Journal';
+          var firstAuthor = firstAuthorName.split(' ').pop();
           var year = article.published ? new Date(article.published).getFullYear() : '';
           CitationHelper.downloadFile(enw, firstAuthor + '_' + year + '.enw', 'application/x-endnote-refer');
           if (window.showToast) window.showToast('EndNote file downloaded');

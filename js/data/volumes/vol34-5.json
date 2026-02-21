@@ -1,0 +1,1011 @@
+[
+  {
+    "id": 1836,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1836",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1836",
+    "localPdfUrl": "js/data/pdfs/1836.pdf",
+    "pdfUrl": "js/data/pdfs/1836.pdf"
+  },
+  {
+    "id": 1803,
+    "type": "Editorial",
+    "title": "Announcing the New Website of Balkan Medical Journal",
+    "authors": [
+      {
+        "name": "Zafer Koçak",
+        "affiliation": "Department of Radiation Oncology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Çetin Hakan Karadağ",
+        "affiliation": "Department of Pharmacology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "At the end of the last year, we, editorial team, decided to redesign our website to better serve our readers, reviewers and authors. After much hard work, we are excited to officially announce the new and improved Balkan Medical Journal website. You can now reach us at http://balkanmedicaljournal.org/ We thought that it was important to renew the website to ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.5.0002",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "384-384",
+    "views": 6158,
+    "downloads": 9548,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1803",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1803",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1803",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1803",
+    "localPdfUrl": "js/data/pdfs/1803.pdf",
+    "pdfUrl": "js/data/pdfs/1803.pdf"
+  },
+  {
+    "id": 1768,
+    "type": "Editorial",
+    "title": "Development and Progress of Balkan Medical Journal",
+    "authors": [
+      {
+        "name": "Zafer Koçak",
+        "affiliation": "Department of Radiation Oncology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Necdet Süt",
+        "affiliation": "Department of Biostatistics, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Asan",
+        "affiliation": "Department of Biology, Trakya University Faculty of Sciences, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Between January 2016 and May 3, 2017, Balkan Medical Journal had been cited 338 times by 275 journals from 32 countries. Among these; 70% are original articles, 19% are invited reviews, 7% are letters, 3% are editorial materials and remaining 1% are the others. As a summary, 89% of cited-articles consist of original articles and invited reviews",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p class=\"yazi\">Between January 2016 and May 3, 2017, Balkan Medical Journal had been cited 338 times by 275 journals from 32 countries. Among these; 70% are original articles, 19% are invited reviews, 7% are letters, 3% are editorial materials and remaining 1% are the others. As a summary, 89% of cited-articles consist of original articles and invited reviews</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Between January 2016 and May 3, 2017, Balkan Medical Journal had been cited 338 times by 275 journals from 32 countries. Among these; 70% are original articles, 19% are invited reviews, 7% are letters, 3% are editorial materials and remaining 1% are the others. As a summary, 89% of cited-articles consist of original articles and invited reviews",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.5.0001",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "385-387",
+    "views": 5836,
+    "downloads": 3825,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1768",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1768",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1768",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1768",
+    "localPdfUrl": "js/data/pdfs/1768.pdf",
+    "pdfUrl": "js/data/pdfs/1768.pdf"
+  },
+  {
+    "id": 1769,
+    "type": "Invited Review",
+    "title": "Multiparametric Magnetic Resonance Imaging for Active Surveillance of Prostate Cancer",
+    "authors": [
+      {
+        "name": "Julie Y. An",
+        "affiliation": "Center for Interventional Oncology, NIH Clinical Center and National Cancer Institute, National Institutes of Health, Maryland, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Abhinav Sidana",
+        "affiliation": "Urologic Oncology Branch, National Cancer Institute, National Institutes of Health, Maryland, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Peter L. Choyke",
+        "affiliation": "Molecular Imaging Program, National Cancer Institute, National Institutes of Health, Maryland, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Bradford J. Wood",
+        "affiliation": "Center for Interventional Oncology, NIH Clinical Center and National Cancer Institute, National Institutes of Health, Maryland, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Peter A. Pinto",
+        "affiliation": "Urologic Oncology Branch, National Cancer Institute, National Institutes of Health, Maryland, USA",
+        "orcid": ""
+      },
+      {
+        "name": "İsmail Barış Türkbey[[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "There is great a potential for mpMRI to improve outcomes and quality of treatment. The major roles of MRI will continue to expand and its emerging use in standard of care approaches becomes more clearly defined and supported by increasing levels of data. Active surveillance has gained popularity as an acceptable management option for men with low-risk prostate cancer. Successful utilization of this strategy can delay or prevent unnecessary interventions - thereby reducing morbidity associated with overtreatment. The usefulness of active surveillance primarily depends on correct identification of patients with low-risk disease. However, current population-wide algorithms and tools do not adequately exclude high-risk disease, thereby limiting the confidence of clinicians and patients to go on active surveillance. Novel imaging tools such as mpMRI provide information about the size and location of potential cancers enabling more informed treatment decisions. The term \"multiparametric\" in prostate mpMRI refers to the summation of several MRI series into one examination whose initial goal is to identify potential clinically-significant lesions suitable for targeted biopsy. The main advantages of MRI are its superior anatomic resolution and the lack of ionizing radiation. Recently, the Prostate Imaging-Reporting and Data System has been instituted as an international standard for unifying mpMRI results. The imaging sequences in mpMRI defined by Prostate Imaging Reporting and Data System version 2 includes: T2-weighted MRI, diffusion-weighted MRI, derived apparent-diffusion coefficient from diffusion-weighted MRI, and dynamic contrast-enhanced MRI. The use of mpMRI prior to starting active surveillance could prevent those with missed, high-grade lesions from going on active surveillance, and reassure those with minimal disease who may be hesitant to take part in active surveillance. Although larger validation studies are still necessary, preliminary results suggest mpMRI has a role in selecting patients for active surveillance. Less certain is the role of mpMRI in monitoring patients on active surveillance, as data on this will take a long time to mature. The biggest obstacles to routine use of prostate MRI are quality control, cost, reproducibility, and access. Nevertheless, there is great a potential for mpMRI to improve outcomes and quality of treatment. The major roles of MRI will continue to expand and its emerging use in standard of care approaches becomes more clearly defined and supported by increasing levels of data.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p class=\"yazi\">\r\nThere is great a potential for mpMRI to improve outcomes and quality of treatment. The major roles of MRI will continue to expand and its emerging use in standard of care approaches becomes more clearly defined and supported by increasing levels of data.\r\n</p>\r\n<p>\r\nActive surveillance has gained popularity as an acceptable management option for men with low-risk prostate cancer. Successful utilization of this strategy can delay or prevent unnecessary interventions - thereby reducing morbidity associated with overtreatment. The usefulness of active surveillance primarily depends on correct identification of patients with low-risk disease. However, current population-wide algorithms and tools do not adequately exclude high-risk disease, thereby limiting the confidence of clinicians and patients to go on active surveillance. Novel imaging tools such as mpMRI provide information about the size and location of potential cancers enabling more informed treatment decisions. The term \"multiparametric\" in prostate mpMRI refers to the summation of several MRI series into one examination whose initial goal is to identify potential clinically-significant lesions suitable for targeted biopsy. The main advantages of MRI are its superior anatomic resolution and the lack of ionizing radiation. Recently, the Prostate Imaging-Reporting and Data System has been instituted as an international standard for unifying mpMRI results. The imaging sequences in mpMRI defined by Prostate Imaging Reporting and Data System version 2 includes: T2-weighted MRI, diffusion-weighted MRI, derived apparent-diffusion coefficient from diffusion-weighted MRI, and dynamic contrast-enhanced MRI. The use of mpMRI prior to starting active surveillance could prevent those with missed, high-grade lesions from going on active surveillance, and reassure those with minimal disease who may be hesitant to take part in active surveillance. Although larger validation studies are still necessary, preliminary results suggest mpMRI has a role in selecting patients for active surveillance. Less certain is the role of mpMRI in monitoring patients on active surveillance, as data on this will take a long time to mature. The biggest obstacles to routine use of prostate MRI are quality control, cost, reproducibility, and access. Nevertheless, there is great a potential for mpMRI to improve outcomes and quality of treatment. The major roles of MRI will continue to expand and its emerging use in standard of care approaches becomes more clearly defined and supported by increasing levels of data.\r\n</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "There is great a potential for mpMRI to improve outcomes and quality of treatment. The major roles of MRI will continue to expand and its emerging use in standard of care approaches becomes more clearly defined and supported by increasing levels of data. Active surveillance has gained popularity as an acceptable management option for men with low-risk prostate cancer. Successful utilization of this strategy can delay or prevent unnecessary interventions - thereby reducing morbidity associated with overtreatment. The usefulness of active surveillance primarily depends on correct identification of patients with low-risk disease. However, current population-wide algorithms and tools do not adequately exclude high-risk disease, thereby limiting the confidence of clinicians and patients to go on active surveillance. Novel imaging tools such as mpMRI provide information about the size and location of potential cancers enabling more informed treatment decisions. The term \"multiparametric\" in prostate mpMRI refers to the summation of several MRI series into one examination whose initial goal is to identify potential clinically-significant lesions suitable for targeted biopsy. The main advantages of MRI are its superior anatomic resolution and the lack of ionizing radiation. Recently, the Prostate Imaging-Reporting and Data System has been instituted as an international standard for unifying mpMRI results. The imaging sequences in mpMRI defined by Prostate Imaging Reporting and Data System version 2 includes: T2-weighted MRI, diffusion-weighted MRI, derived apparent-diffusion coefficient from diffusion-weighted MRI, and dynamic contrast-enhanced MRI. The use of mpMRI prior to starting active surveillance could prevent those with missed, high-grade lesions from going on active surveillance, and reassure those with minimal disease who may be hesitant to take part in active surveillance. Although larger validation studies are still necessary, preliminary results suggest mpMRI has a role in selecting patients for active surveillance. Less certain is the role of mpMRI in monitoring patients on active surveillance, as data on this will take a long time to mature. The biggest obstacles to routine use of prostate MRI are quality control, cost, reproducibility, and access. Nevertheless, there is great a potential for mpMRI to improve outcomes and quality of treatment. The major roles of MRI will continue to expand and its emerging use in standard of care approaches becomes more clearly defined and supported by increasing levels of data.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0708",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "388-396",
+    "views": 7205,
+    "downloads": 10297,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1769",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1769",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1769",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1769",
+    "localPdfUrl": "js/data/pdfs/1769.pdf",
+    "pdfUrl": "js/data/pdfs/1769.pdf"
+  },
+  {
+    "id": 1789,
+    "type": "Invited Review",
+    "title": "Classification and Current Management of Inner Ear Malformations",
+    "authors": [
+      {
+        "name": "Levent Sennaroğlu",
+        "affiliation": "Department of Otolaryngology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Münir Demir Bajin",
+        "affiliation": "Department of Otolaryngology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Morphologically congenital sensorineural hearing loss can be investigated under two categories. Majority of the congenital hearing loss (80%) are membranous malformations. Here the pathology involves inner ear hair cells. There is no gross bony abnormality and therefore, in these cases, high resolution computerized tomography and MRI of the temporal bone reveal normal findings. Remaining 20% have various malformations involving the bony labyrinth and therefore, can be radiologically demonstrated by CT and MRI. The latter group involves surgical challenges as well as problems in decision making. Some cases may be managed by hearing aid, some need cochlear implantation while some cases are candidates for an auditory brainstem implantation. During cochlear implantation, there may be facial nerve abnormalities, cerebrospinal fluid leakage, electrode misplacement or difficulty in finding the cochlea itself. During the surgery for inner ear malformations, surgeon must be ready to modify the surgical approach or choose special electrodes for surgery. In the present review article inner ear malformations are classified according to the differences observed in the cochlea. Hearing and language outcome after various implantation methods is closely related to the status of cochlear nerve and a practical classification of the cochlear nerve deficiency is also provided. Total Times Cited: 30 (Updated on May. 10 2020 - WoS)",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>Morphologically congenital sensorineural hearing loss can be investigated under two categories. Majority of the congenital hearing loss (80%) are membranous malformations. Here the pathology involves inner ear hair cells. There is no gross bony abnormality and therefore, in these cases, high resolution computerized tomography and MRI of the temporal bone reveal normal findings. Remaining 20% have various malformations involving the bony labyrinth and therefore, can be radiologically demonstrated by CT and MRI. The latter group involves surgical challenges as well as problems in decision making. Some cases may be managed by hearing aid, some need cochlear implantation while some cases are candidates for an auditory brainstem implantation. During cochlear implantation, there may be facial nerve abnormalities, cerebrospinal fluid leakage, electrode misplacement or difficulty in finding the cochlea itself. During the surgery for inner ear malformations, surgeon must be ready to modify the surgical approach or choose special electrodes for surgery. In the present review article inner ear malformations are classified according to the differences observed in the cochlea. Hearing and language outcome after various implantation methods is closely related to the status of cochlear nerve and a practical classification of the cochlear nerve deficiency is also provided.</p>\r\n<p><strong>Total Times Cited: 30</strong> (Updated on May. 10 2020 - WoS)</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Morphologically congenital sensorineural hearing loss can be investigated under two categories. Majority of the congenital hearing loss (80%) are membranous malformations. Here the pathology involves inner ear hair cells. There is no gross bony abnormality and therefore, in these cases, high resolution computerized tomography and MRI of the temporal bone reveal normal findings. Remaining 20% have various malformations involving the bony labyrinth and therefore, can be radiologically demonstrated by CT and MRI. The latter group involves surgical challenges as well as problems in decision making. Some cases may be managed by hearing aid, some need cochlear implantation while some cases are candidates for an auditory brainstem implantation. During cochlear implantation, there may be facial nerve abnormalities, cerebrospinal fluid leakage, electrode misplacement or difficulty in finding the cochlea itself. During the surgery for inner ear malformations, surgeon must be ready to modify the surgical approach or choose special electrodes for surgery. In the present review article inner ear malformations are classified according to the differences observed in the cochlea. Hearing and language outcome after various implantation methods is closely related to the status of cochlear nerve and a practical classification of the cochlear nerve deficiency is also provided. Total Times Cited: 30 (Updated on May. 10 2020 - WoS)",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0367",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "397-411",
+    "views": 8301,
+    "downloads": 16250,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1789",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1789",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1789",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1789",
+    "localPdfUrl": "js/data/pdfs/1789.pdf",
+    "pdfUrl": "js/data/pdfs/1789.pdf"
+  },
+  {
+    "id": 1753,
+    "type": "Original Article",
+    "title": "Comparison of the T2-star Values of Placentas Obtained from Pre-eclamptic Patients with Those of a Control Group: an Ex-vivo Magnetic Resonance Imaging Study",
+    "authors": [
+      {
+        "name": "Nursel Yurttutan",
+        "affiliation": "Department of Radiology, Kahramanmaraş Sütçü İmam University School of Medicine, Kahramanmaraş, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Bakacak",
+        "affiliation": "Department of Obstetrics and Gynecology, Kahramanmaraş Sütçü İmam University School of Medicine, Kahramanmaraş, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Betül Kızıldağ",
+        "affiliation": "Department of Radiology, Kahramanmaraş Sütçü İmam University School of Medicine, Kahramanmaraş, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Endotel dysfunction, vasoconstriction, and oxidative stress are described in the pathophysiology of pre-eclampsia, but its aetiology has not been revealed clearly. Aims: To examine whether there is a difference between the placentas of pre-eclamptic pregnant women and those of a control group in terms of their T2 star values. Study Design: Case-control study. Methods: Twenty patients diagnosed with pre-eclampsia and 22 healthy controls were included in this study. The placentas obtained after births performed via Caesarean section were taken into the magnetic resonance imaging area in plastic bags within the first postnatal hour, and imaging was performed via modified DIXON-Quant sequence. Average values were obtained by performing T2 star measurements from four localisations on the placentas. Results: T2 star values measured in the placentas of the control group were found to be significantly lower than those in the pre-eclampsia group (p<0.01). While the mean T2 star value in the pre-eclamptic group was found to be 37.48 ms (standard deviation ± 11.3), this value was 28.74 (standard deviation ± 8.08) in the control group. The cut-off value for the T2 star value, maximising the accuracy of diagnosis, was 28.59 ms (area under curve: 0.741; 95% confidence interval: 0.592-0.890); sensitivity and specificity were 70% and 63.6%, respectively. Conclusion: This study, the T2 star value, which is an indicator of iron amount, was found to be significantly lower in the control group than in the pre-eclampsia group. This may be related to the reduction in blood flow to the placenta due to endothelial dysfunction and vasoconstriction, which are important in pre-eclampsia pathophysiology.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background</strong>: Endotel dysfunction, vasoconstriction, and oxidative stress are described in the pathophysiology of pre-eclampsia, but its aetiology has not been revealed clearly. <br /><br />\r\n<strong>Aims</strong>: To examine whether there is a difference between the placentas of pre-eclamptic pregnant women and those of a control group in terms of their T2 star values. <br /><br />\r\n<strong>Study Design</strong>: Case-control study.<br /><br />\r\n<strong>Methods</strong>: Twenty patients diagnosed with pre-eclampsia and 22 healthy controls were included in this study. The placentas obtained after births performed via Caesarean section were taken into the magnetic resonance imaging area in plastic bags within the first postnatal hour, and imaging was performed via modified DIXON-Quant sequence. Average values were obtained by performing T2 star measurements from four localisations on the placentas. <br /><br />\r\n<strong>Results</strong>: T2 star values measured in the placentas of the control group were found to be significantly lower than those in the pre-eclampsia group (p&lt;0.01). While the mean T2 star value in the pre-eclamptic group was found to be 37.48 ms (standard deviation ± 11.3), this value was 28.74 (standard deviation ± 8.08) in the control group. The cut-off value for the T2 star value, maximising the accuracy of diagnosis, was 28.59 ms (area under curve: 0.741; 95% confidence interval: 0.592-0.890); sensitivity and specificity were 70% and 63.6%, respectively. <br /><br />\r\n<strong>Conclusion</strong>: This study, the T2 star value, which is an indicator of iron amount, was found to be significantly lower in the control group than in the pre-eclampsia group. This may be related to the reduction in blood flow to the placenta due to endothelial dysfunction and vasoconstriction, which are important in pre-eclampsia pathophysiology.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Endotel dysfunction, vasoconstriction, and oxidative stress are described in the pathophysiology of pre-eclampsia, but its aetiology has not been revealed clearly. Aims: To examine whether there is a difference between the placentas of pre-eclamptic pregnant women and those of a control group in terms of their T2 star values. Study Design: Case-control study. Methods: Twenty patients diagnosed with pre-eclampsia and 22 healthy controls were included in this study. The placentas obtained after births performed via Caesarean section were taken into the magnetic resonance imaging area in plastic bags within the first postnatal hour, and imaging was performed via modified DIXON-Quant sequence. Average values were obtained by performing T2 star measurements from four localisations on the placentas. Results: T2 star values measured in the placentas of the control group were found to be significantly lower than those in the pre-eclampsia group (p<0.01). While the mean T2 star value in the pre-eclamptic group was found to be 37.48 ms (standard deviation ± 11.3), this value was 28.74 (standard deviation ± 8.08) in the control group. The cut-off value for the T2 star value, maximising the accuracy of diagnosis, was 28.59 ms (area under curve: 0.741; 95% confidence interval: 0.592-0.890); sensitivity and specificity were 70% and 63.6%, respectively. Conclusion: This study, the T2 star value, which is an indicator of iron amount, was found to be significantly lower in the control group than in the pre-eclampsia group. This may be related to the reduction in blood flow to the placenta due to endothelial dysfunction and vasoconstriction, which are important in pre-eclampsia pathophysiology.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1472",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "412-416",
+    "views": 8087,
+    "downloads": 10061,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1753",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1753",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1753",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1753",
+    "localPdfUrl": "js/data/pdfs/1753.pdf",
+    "pdfUrl": "js/data/pdfs/1753.pdf"
+  },
+  {
+    "id": 1741,
+    "type": "Original Article",
+    "title": "Diastolic Electrocardiographic Parameters Predict Implantable Device Detected Asymptomatic Atrial Fibrillation",
+    "authors": [
+      {
+        "name": "Ahmet İlker Tekkeşin",
+        "affiliation": "Department of Cardiology, University of Healty Sciences, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yalçın Velibey",
+        "affiliation": "Department of Cardiology, University of Healty Sciences, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ceyhan Türkkan",
+        "affiliation": "Department of Cardiology, University of Healty Sciences, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Taha Alper",
+        "affiliation": "Department of Cardiology, University of Healty Sciences, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yasin Çakıllı",
+        "affiliation": "Department of Cardiology, University of Healty Sciences, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tolga Sinan Güvenç",
+        "affiliation": "Department of Cardiology, University of Healty Sciences, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ozan Tanık",
+        "affiliation": "Department of Cardiology, University of Healty Sciences, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Adnan Kaya",
+        "affiliation": "Department of Cardiology, University of Healty Sciences, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özlem Yıldırımtürk",
+        "affiliation": "Department of Cardiology, University of Healty Sciences, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nazmiye Özbilgin",
+        "affiliation": "Department of Cardiology, University of Healty Sciences, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özge Güzelburç",
+        "affiliation": "Department of Cardiology, University of Healty Sciences, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Öz",
+        "affiliation": "Department of Cardiology, University of Healty Sciences, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Regayip Zehir",
+        "affiliation": "Department of Cardiology, University of Healty Sciences, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kadir Gürkan[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Atrial fibrillation is the most common clinically significant arrhythmia. It is now established that atrial high-rate episodes are highly correlated with atrial fibrillation. Aims: To investigate the relation between diastolic electrocardiographic parameters and subclinical atrial fibrillation detected by cardiac implantable electronic devices. Study Design: Ccross-sectional study. Methods: A total of 203 patients who had a dual-chamber, rate-modulated pacing pacemaker implanted due to sinus node dysfunction were prospectively enrolled in this study. Atrial high-rate episodes were defined as any lasting more than 5 min with an atrial rate of ≥220 beats per minute during the previous year. Patient groups were categorized on the basis of pacemaker interrogation as the absence of atrial high-rate episodes [atrial high-rate episodes (-)] and the presence of atrial high-rate episodes [atrial high-rate episodes (+)]. Episodes related to atrial over sensing were excluded. Twelve-lead surface electrocardiography was independently analyzed by two experienced readers for the measurement of diastolic electrocardiography parameters. Results: Among 203 patients (mean age: 67.5±9.1, 60.1% male), 51 (25.1%) with atrial high-rate episodes were defined as group 1 and 152 (74.9%) without atrial high-rate episodes were defined as group 2. Both groups were similar in terms of demographic characteristics and cardiovascular risk factors. Tend-Q and Tend-P were significantly longer in group 2. PQ interval was statistically longer in group 1. Corrected QT interval was significantly longer in group 1. Diastolic electrocardiography index, heart rate and PQ and QT intervals were the only independent predictors of atrial high-rate episodes in patients with dual pacemakers in multivariate analysis. Conclusion: Abnormal diastolic electrocardiography parameters are powerful predisposing factors for the initiation of incident atrial fibrillation. Diastolic electrocardiography parameters and a novel diastolic index predict atrial high-rate episodes. Evaluating these parameters enables clinicians to identify patients who are at high risk and who may benefit from prophylactic treatment.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background</strong>: Atrial fibrillation is the most common clinically significant arrhythmia. It is now established that atrial high-rate episodes are highly correlated with atrial fibrillation. <br><br>\r\n<strong>Aims</strong>: To investigate the relation between diastolic electrocardiographic parameters and subclinical atrial fibrillation detected by cardiac implantable electronic devices. <br><br>\r\n<strong>Study</strong> Design: Ccross-sectional study. <br><br>\r\n<strong>Methods</strong>: A total of 203 patients who had a dual-chamber, rate-modulated pacing pacemaker implanted due to sinus node dysfunction were prospectively enrolled in this study. Atrial high-rate episodes were defined as any lasting more than 5 min with an atrial rate of ≥220 beats per minute during the previous year. Patient groups were categorized on the basis of pacemaker interrogation as the absence of atrial high-rate episodes [atrial high-rate episodes (-)] and the presence of atrial high-rate episodes [atrial high-rate episodes (+)]. Episodes related to atrial over sensing were excluded. Twelve-lead surface electrocardiography was independently analyzed by two experienced readers for the measurement of diastolic electrocardiography parameters. <br><br>\r\n<strong>Results</strong>: Among 203 patients (mean age: 67.5±9.1, 60.1% male), 51 (25.1%) with atrial high-rate episodes were defined as group 1 and 152 (74.9%) without atrial high-rate episodes were defined as group 2. Both groups were similar in terms of demographic characteristics and cardiovascular risk factors. Tend-Q and Tend-P were significantly longer in group 2. PQ interval was statistically longer in group 1. Corrected QT interval was significantly longer in group 1. Diastolic electrocardiography index, heart rate and PQ and QT intervals were the only independent predictors of atrial high-rate episodes in patients with dual pacemakers in multivariate analysis. <br><br>\r\n<strong>Conclusion</strong>: Abnormal diastolic electrocardiography parameters are powerful predisposing factors for the initiation of incident atrial fibrillation. Diastolic electrocardiography parameters and a novel diastolic index predict atrial high-rate episodes. Evaluating these parameters enables clinicians to identify patients who are at high risk and who may benefit from prophylactic treatment.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Atrial fibrillation is the most common clinically significant arrhythmia. It is now established that atrial high-rate episodes are highly correlated with atrial fibrillation. Aims: To investigate the relation between diastolic electrocardiographic parameters and subclinical atrial fibrillation detected by cardiac implantable electronic devices. Study Design: Ccross-sectional study. Methods: A total of 203 patients who had a dual-chamber, rate-modulated pacing pacemaker implanted due to sinus node dysfunction were prospectively enrolled in this study. Atrial high-rate episodes were defined as any lasting more than 5 min with an atrial rate of ≥220 beats per minute during the previous year. Patient groups were categorized on the basis of pacemaker interrogation as the absence of atrial high-rate episodes [atrial high-rate episodes (-)] and the presence of atrial high-rate episodes [atrial high-rate episodes (+)]. Episodes related to atrial over sensing were excluded. Twelve-lead surface electrocardiography was independently analyzed by two experienced readers for the measurement of diastolic electrocardiography parameters. Results: Among 203 patients (mean age: 67.5±9.1, 60.1% male), 51 (25.1%) with atrial high-rate episodes were defined as group 1 and 152 (74.9%) without atrial high-rate episodes were defined as group 2. Both groups were similar in terms of demographic characteristics and cardiovascular risk factors. Tend-Q and Tend-P were significantly longer in group 2. PQ interval was statistically longer in group 1. Corrected QT interval was significantly longer in group 1. Diastolic electrocardiography index, heart rate and PQ and QT intervals were the only independent predictors of atrial high-rate episodes in patients with dual pacemakers in multivariate analysis. Conclusion: Abnormal diastolic electrocardiography parameters are powerful predisposing factors for the initiation of incident atrial fibrillation. Diastolic electrocardiography parameters and a novel diastolic index predict atrial high-rate episodes. Evaluating these parameters enables clinicians to identify patients who are at high risk and who may benefit from prophylactic treatment.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0246",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "417-424",
+    "views": 7977,
+    "downloads": 10273,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1741",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1741",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1741",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1741",
+    "localPdfUrl": "js/data/pdfs/1741.pdf",
+    "pdfUrl": "js/data/pdfs/1741.pdf"
+  },
+  {
+    "id": 1744,
+    "type": "Original Article",
+    "title": "Numerical Optimization of the Position in Femoral Head of Proximal Locking Screws of Proximal Femoral Nail System; Biomechanical Study",
+    "authors": [
+      {
+        "name": "Mehmet Nuri Konya",
+        "affiliation": "Department of Orthopeadics and Traumatology, Afyon Kocatepe University School of Medicine, Afyon, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özgür Verim",
+        "affiliation": "Department of Mechanics, Afyon Kocatepe University School of Engineering, Afyon, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Proximal femoral fracture rates are increasing due to osteoporosis and traffic accidents. Proximal femoral nails are routinely used in the treatment of these fractures in the proximal femur. Aims: To compare various combinations and to determine the ideal proximal lag screw position in pertrochanteric fractures (Arbeitsgemeinschaft für Osteosynthesefragen classification 31-A1) of the femur by using optimized finite element analysis. Study Design: Biomechanical study. Methods: Computed tomography images of patients\" right femurs were processed with Mimics. Afterwards a solid femur model was created with SolidWorks 2015 and transferred to ANSYS Workbench 16.0 for response surface optimization analysis which was carried out according to anterior-posterior (-10°<anterior-posterior<10°), inferior-superior (-6°<inferior-superior<7°) and tip-apex distance (10 mm<tip-apex distance<30 mm) proximal lag screw positions in the fracture region. The optimum position of the proximal lag screw was determined based on the von Mises stress values occurring on the fracture line. Initial analysis of the system was realized under the surgeon\"s normal positioning conditions (anterior-posterior, inferior-superior=0°; tip-apex distance=12 mm). Results: The maximum and minimum (compression) von Mises stresses were found to be 438 MPa and 0.003 MPa, respectively, and risky stresses for the system occurred in the regions where the proximal lag screw passes through the proximal femoral nail hole, the small diameter portion of stem joints with a large diameter and lag screw mounts to the stem. The most suitable position of the proximal lag screw was found at the middle position of the tip-apex distance (20 mm) and femoral neck (anterior-posterior, inferior-superior=0°), according to von Mises compression stress values occurring on the fracture line. Conclusion: In our study, we couldn\"t find any correlation between proximal lag screw movement and tip-apex distance on stresses of the fracture surfaces, but the proximal lag screw position in the inferior (inferior-superior<0)-superior (inferior-superior>0) and posterior-anterior directions of the femur neck significantly increased these stresses. The most suitable position of the proximal lag screw was confirmed as the middle of the femoral neck by using optimized finite element analysis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background: </strong>Proximal femoral fracture rates are increasing due to osteoporosis and traffic accidents. Proximal femoral nails are routinely used in the treatment of these fractures in the proximal femur. <br><br>\r\n  <strong>Aims</strong>: To compare various combinations and to determine the ideal proximal lag screw position in pertrochanteric fractures (Arbeitsgemeinschaft für Osteosynthesefragen classification 31-A1) of the femur by using optimized finite element analysis.<br><br>\r\n<strong>Study Design:</strong> Biomechanical study.<br><br>\r\n<strong>Methods</strong>: Computed tomography images of patients\" right femurs were processed with Mimics. Afterwards a solid femur model was created with SolidWorks 2015 and transferred to ANSYS Workbench 16.0 for response surface optimization analysis which was carried out according to anterior-posterior (-10°&lt;anterior-posterior&lt;10°), inferior-superior (-6°&lt;inferior-superior&lt;7°) and tip-apex distance (10 mm&lt;tip-apex distance&lt;30 mm) proximal lag screw positions in the fracture region. The optimum position of the proximal lag screw was determined based on the von Mises stress values occurring on the fracture line. Initial analysis of the system was realized under the surgeon\"s normal positioning conditions (anterior-posterior, inferior-superior=0°; tip-apex distance=12 mm).<br><br>\r\n<strong>Results</strong>: The maximum and minimum (compression) von Mises stresses were found to be 438 MPa and 0.003 MPa, respectively, and risky stresses for the system occurred in the regions where the proximal lag screw passes through the proximal femoral nail hole, the small diameter portion of stem joints with a large diameter and lag screw mounts to the stem. The most suitable position of the proximal lag screw was found at the middle position of the tip-apex distance (20 mm) and femoral neck (anterior-posterior, inferior-superior=0°), according to von Mises compression stress values occurring on the fracture line.<br><br>\r\n<strong>Conclusion</strong>: In our study, we couldn\"t find any correlation between proximal lag screw movement and tip-apex distance on stresses of the fracture surfaces, but the proximal lag screw position in the inferior (inferior-superior&lt;0)-superior (inferior-superior&gt;0) and posterior-anterior directions of the femur neck significantly increased these stresses. The most suitable position of the proximal lag screw was confirmed as the middle of the femoral neck by using optimized finite element analysis.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Proximal femoral fracture rates are increasing due to osteoporosis and traffic accidents. Proximal femoral nails are routinely used in the treatment of these fractures in the proximal femur. Aims: To compare various combinations and to determine the ideal proximal lag screw position in pertrochanteric fractures (Arbeitsgemeinschaft für Osteosynthesefragen classification 31-A1) of the femur by using optimized finite element analysis. Study Design: Biomechanical study. Methods: Computed tomography images of patients\" right femurs were processed with Mimics. Afterwards a solid femur model was created with SolidWorks 2015 and transferred to ANSYS Workbench 16.0 for response surface optimization analysis which was carried out according to anterior-posterior (-10°<anterior-posterior<10°), inferior-superior (-6°<inferior-superior<7°) and tip-apex distance (10 mm<tip-apex distance<30 mm) proximal lag screw positions in the fracture region. The optimum position of the proximal lag screw was determined based on the von Mises stress values occurring on the fracture line. Initial analysis of the system was realized under the surgeon\"s normal positioning conditions (anterior-posterior, inferior-superior=0°; tip-apex distance=12 mm). Results: The maximum and minimum (compression) von Mises stresses were found to be 438 MPa and 0.003 MPa, respectively, and risky stresses for the system occurred in the regions where the proximal lag screw passes through the proximal femoral nail hole, the small diameter portion of stem joints with a large diameter and lag screw mounts to the stem. The most suitable position of the proximal lag screw was found at the middle position of the tip-apex distance (20 mm) and femoral neck (anterior-posterior, inferior-superior=0°), according to von Mises compression stress values occurring on the fracture line. Conclusion: In our study, we couldn\"t find any correlation between proximal lag screw movement and tip-apex distance on stresses of the fracture surfaces, but the proximal lag screw position in the inferior (inferior-superior<0)-superior (inferior-superior>0) and posterior-anterior directions of the femur neck significantly increased these stresses. The most suitable position of the proximal lag screw was confirmed as the middle of the femoral neck by using optimized finite element analysis.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0732",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "425-431",
+    "views": 7484,
+    "downloads": 10419,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1744",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1744",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1744",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1744",
+    "localPdfUrl": "js/data/pdfs/1744.pdf",
+    "pdfUrl": "js/data/pdfs/1744.pdf"
+  },
+  {
+    "id": 1743,
+    "type": "Original Article",
+    "title": "Changes in Bacterial Resistance Patterns of Pediatric Urinary Tract Infections and Rationale for Empirical Antibiotic Therapy",
+    "authors": [
+      {
+        "name": "İbrahim Gökçe",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Nephrology, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neslihan Çiçek",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Nephrology, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serçin Güven",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Nephrology, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ülger Altuntaş",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Nephrology, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neşe Bıyıklı",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Nephrology, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurdan Yıldız",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Nephrology, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Harika Alpay[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: The causative agent spectrum and resistance patterns of urinary tract infections in children are affected by many factors. Aims: To demonstrate antibiotic resistance in urinary tract infections and changing ratio in antibiotic resistance by years. Study Design: Retrospective cross-sectional study. Methods: We analysed antibiotic resistance patterns of isolated Gram (-) bacteria during the years 2011-2014 (study period 2) in children with urinary tract infections. We compared these findings with data collected in the same centre in 2001-2003 (study period 1). Results: Four hundred and sixty-five uncomplicated community-acquired Gram (-) urinary tract infections were analysed from 2001-2003 and 400 from 2011-2014. Sixty-one percent of patients were female (1.5 girls : 1 boy). The mean age of children included in the study was 3 years and 9 months. Escherichia coli was the predominant bacteria isolated during both periods of the study (60% in study period 1 and 73% in study period 2). Bacteria other than E. coli demonstrated a higher level of resistance to all of the antimicrobials except trimethoprim-sulfamethoxazole than E. coli bacteria during the years 2011-2014. In our study, we found increasing resistance trends of urinary pathogens for cefixime (from 1% to 15%, p<0.05), amikacin (from 0% to 4%, p<0.05) and ciprofloxacin (from 0% to 3%, p<0.05) between the two periods. Urinary pathogens showed a decreasing trend for nitrofurantoin (from 17% to 7%, p=0.0001). No significant trends were detected for ampicillin (from 69% to 71%), amoxicillin-clavulanate (from 44% to 43%), cefazolin (from 39% to 32%), trimethoprim-sulfamethoxazole (from 32% to 31%), cefuroxime (from 21% to 18%) and ceftriaxone (from 10% to 14%) between the two periods (p>0.05). Conclusion: In childhood urinary tract infections, antibiotic resistance should be evaluated periodically and empiric antimicrobial therapy should be decided according to antibiotic sensitivity results.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background: </strong>The causative agent spectrum and resistance patterns of urinary tract infections in children are affected by many factors. <br><br>\r\n<strong>Aims</strong>: To demonstrate antibiotic resistance in urinary tract infections and changing ratio in antibiotic resistance by years. <br><br>\r\n<strong>Study Design: </strong>Retrospective cross-sectional study. <br><br>\r\n<strong>Methods</strong>: We analysed antibiotic resistance patterns of isolated Gram (-) bacteria during the years 2011-2014 (study period 2) in children with urinary tract infections. We compared these findings with data collected in the same centre in 2001-2003 (study period 1). <br><br>\r\n<strong>Results</strong>: Four hundred and sixty-five uncomplicated community-acquired Gram (-) urinary tract infections were analysed from 2001-2003 and 400 from 2011-2014. Sixty-one percent of patients were female (1.5 girls : 1 boy). The mean age of children included in the study was 3 years and 9 months. Escherichia coli was the predominant bacteria isolated during both periods of the study (60% in study period 1 and 73% in study period 2). Bacteria other than E. coli demonstrated a higher level of resistance to all of the antimicrobials except trimethoprim-sulfamethoxazole than E. coli bacteria during the years 2011-2014. In our study, we found increasing resistance trends of urinary pathogens for cefixime (from 1% to 15%, p&lt;0.05), amikacin (from 0% to 4%, p&lt;0.05) and ciprofloxacin (from 0% to 3%, p&lt;0.05) between the two periods. Urinary pathogens showed a decreasing trend for nitrofurantoin (from 17% to 7%, p=0.0001). No significant trends were detected for ampicillin (from 69% to 71%), amoxicillin-clavulanate (from 44% to 43%), cefazolin (from 39% to 32%), trimethoprim-sulfamethoxazole (from 32% to 31%), cefuroxime (from 21% to 18%) and ceftriaxone (from 10% to 14%) between the two periods (p&gt;0.05). <br><br>\r\n<strong>Conclusion</strong>: In childhood urinary tract infections, antibiotic resistance should be evaluated periodically and empiric antimicrobial therapy should be decided according to antibiotic sensitivity results.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: The causative agent spectrum and resistance patterns of urinary tract infections in children are affected by many factors. Aims: To demonstrate antibiotic resistance in urinary tract infections and changing ratio in antibiotic resistance by years. Study Design: Retrospective cross-sectional study. Methods: We analysed antibiotic resistance patterns of isolated Gram (-) bacteria during the years 2011-2014 (study period 2) in children with urinary tract infections. We compared these findings with data collected in the same centre in 2001-2003 (study period 1). Results: Four hundred and sixty-five uncomplicated community-acquired Gram (-) urinary tract infections were analysed from 2001-2003 and 400 from 2011-2014. Sixty-one percent of patients were female (1.5 girls : 1 boy). The mean age of children included in the study was 3 years and 9 months. Escherichia coli was the predominant bacteria isolated during both periods of the study (60% in study period 1 and 73% in study period 2). Bacteria other than E. coli demonstrated a higher level of resistance to all of the antimicrobials except trimethoprim-sulfamethoxazole than E. coli bacteria during the years 2011-2014. In our study, we found increasing resistance trends of urinary pathogens for cefixime (from 1% to 15%, p<0.05), amikacin (from 0% to 4%, p<0.05) and ciprofloxacin (from 0% to 3%, p<0.05) between the two periods. Urinary pathogens showed a decreasing trend for nitrofurantoin (from 17% to 7%, p=0.0001). No significant trends were detected for ampicillin (from 69% to 71%), amoxicillin-clavulanate (from 44% to 43%), cefazolin (from 39% to 32%), trimethoprim-sulfamethoxazole (from 32% to 31%), cefuroxime (from 21% to 18%) and ceftriaxone (from 10% to 14%) between the two periods (p>0.05). Conclusion: In childhood urinary tract infections, antibiotic resistance should be evaluated periodically and empiric antimicrobial therapy should be decided according to antibiotic sensitivity results.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1809",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "432-435",
+    "views": 7657,
+    "downloads": 9992,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1743",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1743",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1743",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1743",
+    "localPdfUrl": "js/data/pdfs/1743.pdf",
+    "pdfUrl": "js/data/pdfs/1743.pdf"
+  },
+  {
+    "id": 1746,
+    "type": "Original Article",
+    "title": "Determining the Efficiency of Different Preoperative Difficult Intubation Tests on Patients Undergoing Caesarean Section",
+    "authors": [
+      {
+        "name": "İlker Yıldırım",
+        "affiliation": "Clinic of Anesthesiology, Uzunköprü Public Hospital, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Turan İnal",
+        "affiliation": "Department of Anesthesiology and Reanimation, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Memiş",
+        "affiliation": "Department of Anesthesiology and Reanimation, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "F. Nesrin Turan[[3]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Pregnancy-induced anatomical and physiological changes in the airway make airway management difficult in obstetric patients; thus, preoperative evaluation of the airway is important for obstetric patients. Aims: To determine the effectiveness of the modified Mallampati test; the interincisor, sternomental and thyromental distances and the upper limb bite test. The second aim was to assess the effectiveness of the combination of the upper limb bite test with the other tests in obstetric patients. Study Design: Cross-sectional study. Methods: Pregnant women (n=250) scheduled for caesarean section were analysed. The patients\" ages, heights and weights were collected. Preoperative airway evaluation was done by using a modified version of the Mallampati test. The interincisor, sternomental and thyromental distances were measured, and the upper limb bite test was performed. The laryngoscopy difficulty was evaluated by using Cormack-Lehane classification. Results: No statistically significant differences were found between groups in age, height or weight (p>0.05). The modified Mallampati test and interincisor, sternomental and thyromental distances revealed a lower number of easy intubations than that determined by the Cormack-Lehane classification and a higher number of difficult intubations than the actual number of cases (p<0.05). The sensitivity and specificity of the modified Mallampati test, the upper limb bite test, the interincisor distance test and the sternomental and thyromental distance tests were found to be 73.08, 57.69, 84.62, 80.77 and 88.46 and 90.62, 99.11, 83.04, 84.37 and 87.05, respectively. When the combinations were examined, the sensitivity and specificity of the combination of the upper limb bite test with the modified Mallampati test were found to be 57.69 and 100, respectively. When the upper limb bite test was combined with the interincisor distance, the sensitivity and specificity were 46.15 and 100, respectively. We found a sensitivity and specificity of 93.75 and 95.30, respectively, for the combination of the upper limb bite test with the thyromental distance test. The sensitivity and specificity of the combination of the upper limb bite test with the modified Mallampati test and interincisor distance test were found to be 46.15 and 100, respectively. For combination of all the tests, the sensitivity and specificity was 42.31 and 100, respectively. Conclusion: When all combinations are evaluated in the decision of difficult intubation, the combination of the upper limb bite test and thyromental distance test is superior to the use of other methods alone to predict difficult intubation in pregnant women.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background</strong>: Pregnancy-induced anatomical and physiological changes in the airway make airway management difficult in obstetric patients; thus, preoperative evaluation of the airway is important for obstetric patients. <br>\r\n<strong>Aims</strong>: To determine the effectiveness of the modified Mallampati test; the interincisor, sternomental and thyromental distances and the upper limb bite test. The second aim was to assess the effectiveness of the combination of the upper limb bite test with the other tests in obstetric patients. <br>\r\n<strong>Study Design</strong>: Cross-sectional study. <br>\r\n<strong>Methods</strong>: Pregnant women (n=250) scheduled for caesarean section were analysed. The patients\" ages, heights and weights were collected. Preoperative airway evaluation was done by using a modified version of the Mallampati test. The interincisor, sternomental and thyromental distances were measured, and the upper limb bite test was performed. The laryngoscopy difficulty was evaluated by using Cormack-Lehane classification. <br>\r\n<strong>Results</strong>: No statistically significant differences were found between groups in age, height or weight (p&gt;0.05). The modified Mallampati test and interincisor, sternomental and thyromental distances revealed a lower number of easy intubations than that determined by the Cormack-Lehane classification and a higher number of difficult intubations than the actual number of cases (p&lt;0.05). The sensitivity and specificity of the modified Mallampati test, the upper limb bite test, the interincisor distance test and the sternomental and thyromental distance tests were found to be 73.08, 57.69, 84.62, 80.77 and 88.46 and 90.62, 99.11, 83.04, 84.37 and 87.05, respectively. When the combinations were examined, the sensitivity and specificity of the combination of the upper limb bite test with the modified Mallampati test were found to be 57.69 and 100, respectively. When the upper limb bite test was combined with the interincisor distance, the sensitivity and specificity were 46.15 and 100, respectively. We found a sensitivity and specificity of 93.75 and 95.30, respectively, for the combination of the upper limb bite test with the thyromental distance test. The sensitivity and specificity of the combination of the upper limb bite test with the modified Mallampati test and interincisor distance test were found to be 46.15 and 100, respectively. For combination of all the tests, the sensitivity and specificity was 42.31 and 100, respectively. <br>\r\n<strong>Conclusion</strong>: When all combinations are evaluated in the decision of difficult intubation, the combination of the upper limb bite test and thyromental distance test is superior to the use of other methods alone to predict difficult intubation in pregnant women.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Pregnancy-induced anatomical and physiological changes in the airway make airway management difficult in obstetric patients; thus, preoperative evaluation of the airway is important for obstetric patients. Aims: To determine the effectiveness of the modified Mallampati test; the interincisor, sternomental and thyromental distances and the upper limb bite test. The second aim was to assess the effectiveness of the combination of the upper limb bite test with the other tests in obstetric patients. Study Design: Cross-sectional study. Methods: Pregnant women (n=250) scheduled for caesarean section were analysed. The patients\" ages, heights and weights were collected. Preoperative airway evaluation was done by using a modified version of the Mallampati test. The interincisor, sternomental and thyromental distances were measured, and the upper limb bite test was performed. The laryngoscopy difficulty was evaluated by using Cormack-Lehane classification. Results: No statistically significant differences were found between groups in age, height or weight (p>0.05). The modified Mallampati test and interincisor, sternomental and thyromental distances revealed a lower number of easy intubations than that determined by the Cormack-Lehane classification and a higher number of difficult intubations than the actual number of cases (p<0.05). The sensitivity and specificity of the modified Mallampati test, the upper limb bite test, the interincisor distance test and the sternomental and thyromental distance tests were found to be 73.08, 57.69, 84.62, 80.77 and 88.46 and 90.62, 99.11, 83.04, 84.37 and 87.05, respectively. When the combinations were examined, the sensitivity and specificity of the combination of the upper limb bite test with the modified Mallampati test were found to be 57.69 and 100, respectively. When the upper limb bite test was combined with the interincisor distance, the sensitivity and specificity were 46.15 and 100, respectively. We found a sensitivity and specificity of 93.75 and 95.30, respectively, for the combination of the upper limb bite test with the thyromental distance test. The sensitivity and specificity of the combination of the upper limb bite test with the modified Mallampati test and interincisor distance test were found to be 46.15 and 100, respectively. For combination of all the tests, the sensitivity and specificity was 42.31 and 100, respectively. Conclusion: When all combinations are evaluated in the decision of difficult intubation, the combination of the upper limb bite test and thyromental distance test is superior to the use of other methods alone to predict difficult intubation in pregnant women.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0877",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "436-443",
+    "views": 7381,
+    "downloads": 11128,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1746",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1746",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1746",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1746",
+    "localPdfUrl": "js/data/pdfs/1746.pdf",
+    "pdfUrl": "js/data/pdfs/1746.pdf"
+  },
+  {
+    "id": 1747,
+    "type": "Original Article",
+    "title": "Effects of Apigenin on Experimental Ischemia/Reperfusion Injury in the Rat Ovary",
+    "authors": [
+      {
+        "name": "Zeynep Soyman",
+        "affiliation": "Clinic of Obstetrics and Gynecology, University of Health Sciences, İstanbul Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sefa Kelekçi",
+        "affiliation": "Department of Obstetrics and Gynecology, İzmir Katip Çelebi University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Veysel Sal",
+        "affiliation": "Department of Obstetrics and Gynecology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Osman Şevket",
+        "affiliation": "Department of Obstetrics and Gynecology, Bezmialem Vakıf University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nihan Bayındır",
+        "affiliation": "Department of Histology and Embryology, Bezmialem Vakıf University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hafize Uzun",
+        "affiliation": "Department of Biochemistry, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Apigenin is a plant-derived compound belonging to the flavone class, which possess antioxidant, free-radical-scavenging and anti-inflammatory properties. Administration of apigenin has no significant protective effect on ovarian reserve and tissue damage in ovarian ischemia/reperfusion injury Background: Apigenin is a plant-derived compound belonging to the flavone class, which possess antioxidant, free-radical-scavenging and anti-inflammatory properties. Aims: To address the effects of apigenin on serum anti-mullerian hormone levels, tissue oxidative stress parameters and histopathological changes in ovarian ischemia/reperfusion injury. Study Design: Animal experiment. Methods: Twenty-eight female Wistar albino rats were randomly separated into four sections: Sham operation (group 1), ischemia/reperfusion plus saline (group 2), ischemia/reperfusion plus dimethyl sulfoxide (group 3) and ischemia/reperfusion plus apigenin (group 4). In all ischemia/reperfusion groups, a bilateral adnexal 3-h period of ischemia was performed, followed by 3-h of reperfusion. A single dose of 15 mg/kg apigenin was given intraperitoneally 60 min before reperfusion in group 4. After 3-h of reperfusion, both ovaries were removed, and blood samples were collected. The main outcome measures were serum anti-mullerian hormone levels, ovarian tissue malondialdehyde, total nitric oxide, Cu/Zn superoxide dismutase, catalase and glutathione levels and histopathological damage scores. Results: The ovarian tissue nitric oxide level was significantly lower, and the glutathione level was significantly higher in group 4 compared with groups 2 and 3. There was no significant difference in anti-mullerian hormone levels among the three ischemia/reperfusion groups. The histopathological damage score was lower in group 4 than in groups 2 and 3 (p>0.05). Conclusion: Administration of apigenin has no significant protective effect on ovarian reserve and tissue damage in ovarian ischemia/reperfusion injury.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p class=\"yazi\">\r\nApigenin is a plant-derived compound belonging to the flavone class, which possess antioxidant, free-radical-scavenging and anti-inflammatory properties. Administration of apigenin has no significant protective effect on ovarian reserve and tissue damage in ovarian ischemia/reperfusion injury\r\n</p>\r\n<p><b>Background:</b> Apigenin is a plant-derived compound belonging to the flavone class, which possess antioxidant, free-radical-scavenging and anti-inflammatory properties.<br>\r\n<b>Aims:</b> To address the effects of apigenin on serum anti-mullerian hormone levels, tissue oxidative stress parameters and histopathological changes in ovarian ischemia/reperfusion injury.<br>\r\n<b>Study Design:</b> Animal experiment.<br>\r\n<b>Methods:</b> Twenty-eight female Wistar albino rats were randomly separated into four sections: Sham operation (group 1), ischemia/reperfusion plus saline (group 2), ischemia/reperfusion plus dimethyl sulfoxide (group 3) and ischemia/reperfusion plus apigenin (group 4). In all ischemia/reperfusion groups, a bilateral adnexal 3-h period of ischemia was performed, followed by 3-h of reperfusion. A single dose of 15 mg/kg apigenin was given intraperitoneally 60 min before reperfusion in group 4. After 3-h of reperfusion, both ovaries were removed, and blood samples were collected. The main outcome measures were serum anti-mullerian hormone levels, ovarian tissue malondialdehyde, total nitric oxide, Cu/Zn superoxide dismutase, catalase and glutathione levels and histopathological damage scores.<br>\r\n<b>Results:</b> The ovarian tissue nitric oxide level was significantly lower, and the glutathione level was significantly higher in group 4 compared with groups 2 and 3. There was no significant difference in anti-mullerian hormone levels among the three ischemia/reperfusion groups. The histopathological damage score was lower in group 4 than in groups 2 and 3 (p>0.05).<br>\r\n<b>Conclusion:</b> Administration of apigenin has no significant protective effect on ovarian reserve and tissue damage in ovarian ischemia/reperfusion injury.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Apigenin is a plant-derived compound belonging to the flavone class, which possess antioxidant, free-radical-scavenging and anti-inflammatory properties. Administration of apigenin has no significant protective effect on ovarian reserve and tissue damage in ovarian ischemia/reperfusion injury Background: Apigenin is a plant-derived compound belonging to the flavone class, which possess antioxidant, free-radical-scavenging and anti-inflammatory properties. Aims: To address the effects of apigenin on serum anti-mullerian hormone levels, tissue oxidative stress parameters and histopathological changes in ovarian ischemia/reperfusion injury. Study Design: Animal experiment. Methods: Twenty-eight female Wistar albino rats were randomly separated into four sections: Sham operation (group 1), ischemia/reperfusion plus saline (group 2), ischemia/reperfusion plus dimethyl sulfoxide (group 3) and ischemia/reperfusion plus apigenin (group 4). In all ischemia/reperfusion groups, a bilateral adnexal 3-h period of ischemia was performed, followed by 3-h of reperfusion. A single dose of 15 mg/kg apigenin was given intraperitoneally 60 min before reperfusion in group 4. After 3-h of reperfusion, both ovaries were removed, and blood samples were collected. The main outcome measures were serum anti-mullerian hormone levels, ovarian tissue malondialdehyde, total nitric oxide, Cu/Zn superoxide dismutase, catalase and glutathione levels and histopathological damage scores. Results: The ovarian tissue nitric oxide level was significantly lower, and the glutathione level was significantly higher in group 4 compared with groups 2 and 3. There was no significant difference in anti-mullerian hormone levels among the three ischemia/reperfusion groups. The histopathological damage score was lower in group 4 than in groups 2 and 3 (p>0.05). Conclusion: Administration of apigenin has no significant protective effect on ovarian reserve and tissue damage in ovarian ischemia/reperfusion injury.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1386",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "444-449",
+    "views": 7317,
+    "downloads": 10037,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1747",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1747",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1747",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1747",
+    "localPdfUrl": "js/data/pdfs/1747.pdf",
+    "pdfUrl": "js/data/pdfs/1747.pdf"
+  },
+  {
+    "id": 1749,
+    "type": "Original Article",
+    "title": "Value of Post-transfer Day-12 Beta Human Chorionic Gonadotropin Levels for Pregnancy Outcome Prediction of Intracytoplasmic Sperm Injection Cycles",
+    "authors": [
+      {
+        "name": "İnci Kahyaoğlu",
+        "affiliation": "Department of Obstetrics and Gynecology, University of Health Sciences, Ankara Etlik Zübeyde Hanım Women’s Health Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Berfu Demir",
+        "affiliation": "Department of Obstetrics and Gynecology, University of Health Sciences, Ankara Etlik Zübeyde Hanım Women’s Health Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sezin Ertürk Aksakal",
+        "affiliation": "Department of Obstetrics and Gynecology, University of Health Sciences, Ankara Etlik Zübeyde Hanım Women’s Health Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İskender Kaplanoğlu",
+        "affiliation": "Center of Assisted Reproduction, University of Health Sciences, Ankara Etlik Zübeyde Hanım Women’s Health Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Leyla Mollamahmutoğlu[[1]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Several markers were studied previously in order to predict the pregnancy outcome of assisted reproductive techniques; however, serum beta human chorionic gonadotropin was found to be the most predictive marker. Aims: To evaluate the value of serum beta human chorionic gonadotropin levels in discriminating biochemical and clinical pregnancies 12 days after embryo transfer, while determining the factors predicting ongoing pregnancy was established as the secondary aim. Study Design: Retrospective cross-sectional study. Methods: A total of 445 pregnant cycles were retrospectively analysed in 2359 embryo transfer cycles. Patients were divided into two groups according to the outcome of pregnancy: biochemical and clinical. Results: The cut-off value of beta human chorionic gonadotropin levels on day 12 in predicting clinical pregnancies was 86.8 IU/mL with 65.1% sensitivity and 74.7% specificity [CI: 0.76 (0.71-0.81). Receiver operating characteristic curve analysis revealed different cut-off values for embryo transfer days (57 mIU/mL for day 3 embryo transfer CI: 0.59-0.79 and 87 mIU/mL for day 5 embryo transfer, CI: 0.74-0.86). Subgroup analysis of clinical pregnancies revealed a significant difference between ongoing pregnancies and early fetal losses regarding duration of infertility (81.3±54.4 vs. 100.2±62.2 months), serum oestradiol on hCG day (2667.4±1276.4 vs. 2094.6±1260.5 pg/mL), number of transferred embryos (1.9±0.8 vs. 1.5±0.7) and the prevalence of diminished ovarian reserve as an indication (2.3% vs 12.2%). Conclusion: Beta human chorionic gonadotropin levels on day 12 following embryo transfer provide an important parameter for the prediction of clinical pregnancy; however, other stimulation parameters are indicated in the prediction of ongoing pregnancies.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background</strong>: Several markers were studied previously in order to predict the pregnancy outcome of assisted reproductive techniques; however, serum beta human chorionic gonadotropin was found to be the most predictive marker. <br>\r\n<strong>Aims</strong>: To evaluate the value of serum beta human chorionic gonadotropin levels in discriminating biochemical and clinical pregnancies 12 days after embryo transfer, while determining the factors predicting ongoing pregnancy was established as the secondary aim. <br>\r\n<strong>Study Design</strong>: Retrospective cross-sectional study. <br>\r\n<strong>Methods</strong>: A total of 445 pregnant cycles were retrospectively analysed in 2359 embryo transfer cycles. Patients were divided into two groups according to the outcome of pregnancy: biochemical and clinical. <br>\r\n<strong>Results</strong>: The cut-off value of beta human chorionic gonadotropin levels on day 12 in predicting clinical pregnancies was 86.8 IU/mL with 65.1% sensitivity and 74.7% specificity [CI: 0.76 (0.71-0.81). Receiver operating characteristic curve analysis revealed different cut-off values for embryo transfer days (57 mIU/mL for day 3 embryo transfer CI: 0.59-0.79 and 87 mIU/mL for day 5 embryo transfer, CI: 0.74-0.86). Subgroup analysis of clinical pregnancies revealed a significant difference between ongoing pregnancies and early fetal losses regarding duration of infertility (81.3±54.4 vs. 100.2±62.2 months), serum oestradiol on hCG day (2667.4±1276.4 vs. 2094.6±1260.5 pg/mL), number of transferred embryos (1.9±0.8 vs. 1.5±0.7) and the prevalence of diminished ovarian reserve as an indication (2.3% vs 12.2%). <br>\r\n<strong>Conclusion</strong>: Beta human chorionic gonadotropin levels on day 12 following embryo transfer provide an important parameter for the prediction of clinical pregnancy; however, other stimulation parameters are indicated in the prediction of ongoing pregnancies.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Several markers were studied previously in order to predict the pregnancy outcome of assisted reproductive techniques; however, serum beta human chorionic gonadotropin was found to be the most predictive marker. Aims: To evaluate the value of serum beta human chorionic gonadotropin levels in discriminating biochemical and clinical pregnancies 12 days after embryo transfer, while determining the factors predicting ongoing pregnancy was established as the secondary aim. Study Design: Retrospective cross-sectional study. Methods: A total of 445 pregnant cycles were retrospectively analysed in 2359 embryo transfer cycles. Patients were divided into two groups according to the outcome of pregnancy: biochemical and clinical. Results: The cut-off value of beta human chorionic gonadotropin levels on day 12 in predicting clinical pregnancies was 86.8 IU/mL with 65.1% sensitivity and 74.7% specificity [CI: 0.76 (0.71-0.81). Receiver operating characteristic curve analysis revealed different cut-off values for embryo transfer days (57 mIU/mL for day 3 embryo transfer CI: 0.59-0.79 and 87 mIU/mL for day 5 embryo transfer, CI: 0.74-0.86). Subgroup analysis of clinical pregnancies revealed a significant difference between ongoing pregnancies and early fetal losses regarding duration of infertility (81.3±54.4 vs. 100.2±62.2 months), serum oestradiol on hCG day (2667.4±1276.4 vs. 2094.6±1260.5 pg/mL), number of transferred embryos (1.9±0.8 vs. 1.5±0.7) and the prevalence of diminished ovarian reserve as an indication (2.3% vs 12.2%). Conclusion: Beta human chorionic gonadotropin levels on day 12 following embryo transfer provide an important parameter for the prediction of clinical pregnancy; however, other stimulation parameters are indicated in the prediction of ongoing pregnancies.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1769",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "450-457",
+    "views": 7750,
+    "downloads": 19626,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1749",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1749",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1749",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1749",
+    "localPdfUrl": "js/data/pdfs/1749.pdf",
+    "pdfUrl": "js/data/pdfs/1749.pdf"
+  },
+  {
+    "id": 1750,
+    "type": "Original Article",
+    "title": "Shrinkage of Nasal Mucosa and Cartilage during Formalin Fixation",
+    "authors": [
+      {
+        "name": "Leyla Kansu",
+        "affiliation": "Departments of Otolaryngology-Head and Neck Surgery, Başkent University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erdinç Aydın",
+        "affiliation": "Departments of Otolaryngology-Head and Neck Surgery, Başkent University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hampar Akkaya",
+        "affiliation": "Departments of Pathology, Başkent University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Suat Avcı",
+        "affiliation": "Departments of Otolaryngology-Head and Neck Surgery, Başkent University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nalan Akalın",
+        "affiliation": "Departments of Biochemistry, Başkent University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background:After resection, specimens are subjected to formalin fixation during histologic processing. This procedure can result in tissue shrinkage, with amount of shrinkage related to tissue composition and tissue type. Aims: In this study,we aimed to evaluated shrinkage of nasal mucosa and cartilage tissue and compared differences in shrinkage after resection, after formalin fixation, and during microscopic examination to understand differences in rate of shrinkage with different tissue types. Study Design:Animal experimentation. Methods:Fresh sheep nasal septa were excised (10 mm diameter in 40 sheep and 20 mm diameter in 40 sheep). The mucosa was separated from 1 side of the cartilage, with the contralateral mucosa remaining attached to the cartilage. Specimen diameters were measured in situ, after resection, after fixation for 6 or 24 hours (10% formalin), and during microscopic examination. Results:We found no significant changes in specimen diameters (both 10 mm and 20 mm) between in situ and resected tissue. Shrinkage was noted in all fixated specimens, and further shrinkage was noted after microscopic examination. We found p=0.004 for free mucosa, p=0.005 for mucosa attached to cartilage, and p=0.008 for cartilage in 10 mm, and p=0.007 for free mucosa, p=0.004 for mucosa attached to cartilage, and p=0.01 for cartilage in 20 mm specimen diameter. Tissue shrinkage was greatest in free mucosal tissue and least in cartilage. Conclusion: We found that tissue shrinkage was greatest in free mucosal tissue, less in mucosa attached to cartilage, and least in cartilage. These results should be considered when evaluating patients undergoing surgical procedures fornasal cavity and paranasal sinus malignancies. Surgical margins should be measured before fixation or evaluated if possible before fixation and shrinkage.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background:</strong>After resection, specimens are subjected to formalin fixation during histologic processing. This procedure can result in tissue shrinkage, with amount of shrinkage related to tissue composition and tissue type.<br />\r\n\t<strong>Aims: </strong>In this study,we aimed to evaluated shrinkage of nasal mucosa and cartilage tissue and compared differences in shrinkage after resection, after formalin fixation, and during microscopic examination to understand differences in rate of shrinkage with different tissue types.<br />\r\n\t<strong>Study Design:</strong>Animal experimentation.<br />\r\n\t<strong>Methods:</strong>Fresh sheep nasal septa were excised (10 mm diameter in 40 sheep and 20 mm diameter in 40 sheep). The mucosa was separated from 1 side of the cartilage, with the contralateral mucosa remaining attached to the cartilage. Specimen diameters were measured in situ, after resection, after fixation for 6 or 24 hours (10% formalin), and during microscopic examination.<br />\r\n\t<strong>Results:</strong>We found no significant changes in specimen diameters (both 10 mm and 20 mm) between in situ and resected tissue. Shrinkage was noted in all fixated specimens, and further shrinkage was noted after microscopic examination. We found p=0.004 for free mucosa, p=0.005 for mucosa attached to cartilage, and p=0.008 for cartilage in 10 mm, and p=0.007 for free mucosa, p=0.004 for mucosa attached to cartilage, and p=0.01 for cartilage in 20 mm specimen diameter. Tissue shrinkage was greatest in free mucosal tissue and least in cartilage.<br />\r\n\t<strong>Conclusion: </strong>We found that tissue shrinkage was greatest in free mucosal tissue, less in mucosa attached to cartilage, and least in cartilage. These results should be considered when evaluating patients undergoing surgical procedures fornasal cavity and paranasal sinus malignancies. Surgical margins should be measured before fixation or evaluated if possible before fixation and shrinkage.</p>\r\n<p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background:After resection, specimens are subjected to formalin fixation during histologic processing. This procedure can result in tissue shrinkage, with amount of shrinkage related to tissue composition and tissue type. Aims: In this study,we aimed to evaluated shrinkage of nasal mucosa and cartilage tissue and compared differences in shrinkage after resection, after formalin fixation, and during microscopic examination to understand differences in rate of shrinkage with different tissue types. Study Design:Animal experimentation. Methods:Fresh sheep nasal septa were excised (10 mm diameter in 40 sheep and 20 mm diameter in 40 sheep). The mucosa was separated from 1 side of the cartilage, with the contralateral mucosa remaining attached to the cartilage. Specimen diameters were measured in situ, after resection, after fixation for 6 or 24 hours (10% formalin), and during microscopic examination. Results:We found no significant changes in specimen diameters (both 10 mm and 20 mm) between in situ and resected tissue. Shrinkage was noted in all fixated specimens, and further shrinkage was noted after microscopic examination. We found p=0.004 for free mucosa, p=0.005 for mucosa attached to cartilage, and p=0.008 for cartilage in 10 mm, and p=0.007 for free mucosa, p=0.004 for mucosa attached to cartilage, and p=0.01 for cartilage in 20 mm specimen diameter. Tissue shrinkage was greatest in free mucosal tissue and least in cartilage. Conclusion: We found that tissue shrinkage was greatest in free mucosal tissue, less in mucosa attached to cartilage, and least in cartilage. These results should be considered when evaluating patients undergoing surgical procedures fornasal cavity and paranasal sinus malignancies. Surgical margins should be measured before fixation or evaluated if possible before fixation and shrinkage.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1470",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "458-463",
+    "views": 6701,
+    "downloads": 10067,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1750",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1750",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1750",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1750",
+    "localPdfUrl": "js/data/pdfs/1750.pdf",
+    "pdfUrl": "js/data/pdfs/1750.pdf"
+  },
+  {
+    "id": 1760,
+    "type": "Brief Report",
+    "title": "The Influence of Inverted Growth Pattern on Recurrence for Patients with Non-Invasive Low Grade Papillary Urothelial Carcinoma of Bladder",
+    "authors": [
+      {
+        "name": "Sehbal Arslankoz",
+        "affiliation": "Department of Pathology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Kulaç",
+        "affiliation": "Clinic of Pathology, Mardin State Hospital, Mardin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Ertoy Baydar[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Aims: To evaluate the impact of a histologically inverted pattern on recurrence in patients with newly diagnosed non-invasive, low-grade papillary urothelial carcinoma of the urinary bladder. Methods: A total of 81 patients with primary bladder non-invasive, low-grade papillary urothelial carcinoma diagnosed in a single tertiary-care centre who had at least 1-year follow-up after an initial resection were included. All slides from each case were reviewed to determine the growth pattern (exophytic versus endophytic, i.e. inverted) and other histological parameters. Clinical data were retrieved from hospital records. Results: Disease recurrence occurred in 41 (50.6%) patients. Cases with an inverted pattern showed a lower recurrence rate than those with pure exophytic tumours (37.5% versus 52.1%), a longer time to first recurrence (mean 34 versus 21.5 months) and fewer recurrence episodes (p=0.482, 0.564 and 0.051, respectively). All recurring inverted cases recurred only once during follow-up. No tumour with >80% inverted architecture recurred. Conclusion: Our results suggest that non-invasive, low-grade papillary urothelial carcinoma of the bladder tends to have a better outcome in terms of disease recurrence if it shows an inverted growth pattern. To indicate the presence and percentage of the inverted pattern in low-grade urothelial carcinomas in the pathology report might be considered as an adjunct to help long-term patient management.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Aims:</strong> To evaluate the impact of a histologically inverted pattern on recurrence in patients with newly diagnosed non-invasive, low-grade papillary urothelial carcinoma of the urinary bladder.<br />\r\n<strong>Methods:</strong> A total of 81 patients with primary bladder non-invasive, low-grade papillary urothelial carcinoma diagnosed in a single tertiary-care centre who had at least 1-year follow-up after an initial resection were included. All slides from each case were reviewed to determine the growth pattern (exophytic versus endophytic, i.e. inverted) and other histological parameters. Clinical data were retrieved from hospital records. <br />\r\n<strong>Results: </strong>Disease recurrence occurred in 41 (50.6%) patients. Cases with an inverted pattern showed a lower recurrence rate than those with pure exophytic tumours (37.5% versus 52.1%), a longer time to first recurrence (mean 34 versus 21.5 months) and fewer recurrence episodes (p=0.482, 0.564 and 0.051, respectively). All recurring inverted cases recurred only once during follow-up. No tumour with &gt;80% inverted architecture recurred.<br />\r\n<strong>Conclusion:</strong> Our results suggest that non-invasive, low-grade papillary urothelial carcinoma of the bladder tends to have a better outcome in terms of disease recurrence if it shows an inverted growth pattern. To indicate the presence and percentage of the inverted pattern in low-grade urothelial carcinomas in the pathology report might be considered as an adjunct to help long-term patient management.\r\n</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Aims: To evaluate the impact of a histologically inverted pattern on recurrence in patients with newly diagnosed non-invasive, low-grade papillary urothelial carcinoma of the urinary bladder. Methods: A total of 81 patients with primary bladder non-invasive, low-grade papillary urothelial carcinoma diagnosed in a single tertiary-care centre who had at least 1-year follow-up after an initial resection were included. All slides from each case were reviewed to determine the growth pattern (exophytic versus endophytic, i.e. inverted) and other histological parameters. Clinical data were retrieved from hospital records. Results: Disease recurrence occurred in 41 (50.6%) patients. Cases with an inverted pattern showed a lower recurrence rate than those with pure exophytic tumours (37.5% versus 52.1%), a longer time to first recurrence (mean 34 versus 21.5 months) and fewer recurrence episodes (p=0.482, 0.564 and 0.051, respectively). All recurring inverted cases recurred only once during follow-up. No tumour with >80% inverted architecture recurred. Conclusion: Our results suggest that non-invasive, low-grade papillary urothelial carcinoma of the bladder tends to have a better outcome in terms of disease recurrence if it shows an inverted growth pattern. To indicate the presence and percentage of the inverted pattern in low-grade urothelial carcinomas in the pathology report might be considered as an adjunct to help long-term patient management.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0081",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "464-468",
+    "views": 7416,
+    "downloads": 9967,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1760",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1760",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1760",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1760",
+    "localPdfUrl": "js/data/pdfs/1760.pdf",
+    "pdfUrl": "js/data/pdfs/1760.pdf"
+  },
+  {
+    "id": 1739,
+    "type": "Case Report",
+    "title": "Salmonella enterica Serovar Enteritidis Liver Abscess after Blunt Abdominal Trauma",
+    "authors": [
+      {
+        "name": "Agata Ladic",
+        "affiliation": "Division of Gastroenterology and Hepatology, Zagreb University Hospital Centre, Zagreb, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Igor Petrovic",
+        "affiliation": "Division of Abdominal Surgery, Zagreb University Hospital Centre, Zagreb, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Ante Gojevic",
+        "affiliation": "Division of Abdominal Surgery, Zagreb University Hospital Centre, Zagreb, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Emil Kinda",
+        "affiliation": "Division of Abdominal Surgery, Zagreb University Hospital Centre, Zagreb, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Ivo Coza",
+        "affiliation": "Department Abdominal Surgery, Zadar General Hospital, Zadar, Croatia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Salmonella enterica serovar Enteritidis is among the most reported serotypes of Salmonella species worldwide, but is rarely reported as the causative agent of a liver abscess. Case Report: We present a patient with an abdominal blunt trauma. An initial abdominal computed tomography scan revealed a rupture of the right kidney and of the liver. Two days later, his physical state deteriorated and a new computed tomography scan was obtained. An extremely large 8-centimetre liver abscess was verified. Due to the unsatisfying response to antibiotic therapy and percutaneous drainage, we operated on the patient. An appendectomy, cholecystectomy and bisegmental liver resection were performed. An intraoperative swab from the abscess was positive for Salmonella enterica serovar Enteritidis. The patient was given intravenous ciprofloxacine. The post-operative course was complicated by a Coagulase-negative Staphylococcus infection of the wound, which improved with antibiotic therapy. Conclusion: Blunt abdominal trauma may initiate an unpredictable course of the disease in chronic Salmonella carriers.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background</strong>: Salmonella enterica serovar Enteritidis is among the most reported serotypes of Salmonella species worldwide, but is rarely reported as the causative agent of a liver abscess. <br>\r\n<strong>Case Report:</strong> We present a patient with an abdominal blunt trauma. An initial abdominal computed tomography scan revealed a rupture of the right kidney and of the liver. Two days later, his physical state deteriorated and a new computed tomography scan was obtained. An extremely large 8-centimetre liver abscess was verified. Due to the unsatisfying response to antibiotic therapy and percutaneous drainage, we operated on the patient. An appendectomy, cholecystectomy and bisegmental liver resection were performed. An intraoperative swab from the abscess was positive for Salmonella enterica serovar Enteritidis. The patient was given intravenous ciprofloxacine. The post-operative course was complicated by a Coagulase-negative Staphylococcus infection of the wound, which improved with antibiotic therapy. <br>\r\n<strong>Conclusion</strong>: Blunt abdominal trauma may initiate an unpredictable course of the disease in chronic Salmonella carriers.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Salmonella enterica serovar Enteritidis is among the most reported serotypes of Salmonella species worldwide, but is rarely reported as the causative agent of a liver abscess. Case Report: We present a patient with an abdominal blunt trauma. An initial abdominal computed tomography scan revealed a rupture of the right kidney and of the liver. Two days later, his physical state deteriorated and a new computed tomography scan was obtained. An extremely large 8-centimetre liver abscess was verified. Due to the unsatisfying response to antibiotic therapy and percutaneous drainage, we operated on the patient. An appendectomy, cholecystectomy and bisegmental liver resection were performed. An intraoperative swab from the abscess was positive for Salmonella enterica serovar Enteritidis. The patient was given intravenous ciprofloxacine. The post-operative course was complicated by a Coagulase-negative Staphylococcus infection of the wound, which improved with antibiotic therapy. Conclusion: Blunt abdominal trauma may initiate an unpredictable course of the disease in chronic Salmonella carriers.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1199",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "469-472",
+    "views": 6579,
+    "downloads": 3228,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1739",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1739",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1739",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1739",
+    "localPdfUrl": "js/data/pdfs/1739.pdf",
+    "pdfUrl": "js/data/pdfs/1739.pdf"
+  },
+  {
+    "id": 1745,
+    "type": "Case Report",
+    "title": "Brugada-Phenocopy Induced by Propafenone Overdose and Successful Treatment: A Case Report",
+    "authors": [
+      {
+        "name": "Mehmet Emre Arı",
+        "affiliation": "Departments of Pediatric Cardiology, Ankara Children’s Hematology and Oncology Research and Training Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Filiz Ekici",
+        "affiliation": "Departments of Pediatric Cardiology, Ankara Children’s Hematology and Oncology Research and Training Hospital, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "15-year-old girl having a seizure was brought to the emergency room. She took 1.5 g propafenone for suicidal intention. She had metabolic acidosis. Long QRS interval and ST elevation in leads V1 through V3 were seen on electrocardiography. Background: Brugada syndrome is an inherited arrhythmogenic disease that may cause sudden cardiac death due to ventricular fibrillation in young adults. Brugada syndrome caused by propafenone intoxication has been noted rarely in the literature. We report a rare case, Brugada phenocopy due to propafenone intoxication and its treatment. Case Report: A 15-year-old girl having a seizure was brought to the emergency room. She took 1.5 g propafenone (Rythmol, Abbott, Chicago, IL, USA) for suicidal intention. She had metabolic acidosis. Long QRS interval and ST elevation in leads V1 through V3 were seen on electrocardiography. After bicarbonate infusion for 4 hours, haemodynamic and neurologic findings were recovered, and all electrocardiography abnormalities disappeared. The Brugada-like electrocardiography pattern was not recognized in her surface and 24-hour Holter electrocardiography at follow-up. Ajmaline challenge test was negative 2 weeks later. Conclusion: Absence of symptoms and documented ventricular tachycardia, negative challenge test, and a negative family history demonstrated that the Brugada phenocopy was a transient finding in this case and related to propafenone intoxication.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p class=\"yazi\">15-year-old girl having a seizure was brought to the emergency room. She took 1.5 g propafenone for suicidal intention. She had metabolic acidosis. Long QRS interval and ST elevation in leads V1 through V3 were seen on electrocardiography.\r\n</p>\r\n<p><strong>Background:</strong> Brugada syndrome is an inherited arrhythmogenic disease that may cause sudden cardiac death due to ventricular fibrillation in young adults. Brugada syndrome caused by propafenone intoxication has been noted rarely in the literature. We report a rare case, Brugada phenocopy due to propafenone intoxication and its treatment.<br />\r\n  <strong>Case Report:</strong> A 15-year-old girl having a seizure was brought to the emergency room. She took 1.5 g propafenone (Rythmol, Abbott, Chicago, IL, USA) for suicidal intention. She had metabolic acidosis. Long QRS interval and ST elevation in leads V1 through V3 were seen on electrocardiography. After bicarbonate infusion for 4 hours, haemodynamic and neurologic findings were recovered, and all electrocardiography abnormalities disappeared. The Brugada-like electrocardiography pattern was not recognized in her surface and 24-hour Holter electrocardiography at follow-up. Ajmaline challenge test was negative 2 weeks later.<br />\r\n<strong>Conclusion</strong>: Absence of symptoms and documented ventricular tachycardia, negative challenge test, and a negative family history demonstrated that the Brugada phenocopy was a transient finding in this case and related to propafenone intoxication.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "15-year-old girl having a seizure was brought to the emergency room. She took 1.5 g propafenone for suicidal intention. She had metabolic acidosis. Long QRS interval and ST elevation in leads V1 through V3 were seen on electrocardiography. Background: Brugada syndrome is an inherited arrhythmogenic disease that may cause sudden cardiac death due to ventricular fibrillation in young adults. Brugada syndrome caused by propafenone intoxication has been noted rarely in the literature. We report a rare case, Brugada phenocopy due to propafenone intoxication and its treatment. Case Report: A 15-year-old girl having a seizure was brought to the emergency room. She took 1.5 g propafenone (Rythmol, Abbott, Chicago, IL, USA) for suicidal intention. She had metabolic acidosis. Long QRS interval and ST elevation in leads V1 through V3 were seen on electrocardiography. After bicarbonate infusion for 4 hours, haemodynamic and neurologic findings were recovered, and all electrocardiography abnormalities disappeared. The Brugada-like electrocardiography pattern was not recognized in her surface and 24-hour Holter electrocardiography at follow-up. Ajmaline challenge test was negative 2 weeks later. Conclusion: Absence of symptoms and documented ventricular tachycardia, negative challenge test, and a negative family history demonstrated that the Brugada phenocopy was a transient finding in this case and related to propafenone intoxication.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1185",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "473-475",
+    "views": 7122,
+    "downloads": 3274,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1745",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1745",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1745",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1745",
+    "localPdfUrl": "js/data/pdfs/1745.pdf",
+    "pdfUrl": "js/data/pdfs/1745.pdf"
+  },
+  {
+    "id": 1772,
+    "type": "Clinical Image",
+    "title": "Giant Bilateral Adrenal Myelolipoma",
+    "authors": [
+      {
+        "name": "Sushilkumar Satish Gupta",
+        "affiliation": "Department of Medicine, Maimonides Medical Center, New York, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Yizhak Kupfer",
+        "affiliation": "Department of Pulmonary and Critical Care Medicine, Maimonides Medical Center, New York, USA",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 36-year-old Hispanic female diagnosed with non-classical congenital adrenal hyperplasia and salt wasting disorder on chronic exogenous steroids presented to our emergency department with excruciating bilateral flank pain, 10/10 in intensity, associated with nausea, vomiting, and generalised weakness. On examination, the patient was in hypovolemic shock wit",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1749",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "476-477",
+    "views": 5648,
+    "downloads": 9535,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1772",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1772",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1772",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1772",
+    "localPdfUrl": "js/data/pdfs/1772.pdf",
+    "pdfUrl": "js/data/pdfs/1772.pdf"
+  },
+  {
+    "id": 1752,
+    "type": "Clinical Image",
+    "title": "Beyond Urticaria: Schnitzler Syndrome",
+    "authors": [
+      {
+        "name": "Ricardo Ruiz-Villaverde",
+        "affiliation": "Clinic of Dermatology, Granada Hospital, Granada, Spain",
+        "orcid": ""
+      },
+      {
+        "name": "Ahinoa Bueno-Rodriguez",
+        "affiliation": "Clinic of Dermatology, Granada Hospital, Granada, Spain",
+        "orcid": ""
+      },
+      {
+        "name": "Daniel Sánchez-Cano",
+        "affiliation": "Clinic of Internal Medicine, Granada Hospital, Granada, Spain",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 48-year-old male was admitted to our outpatient dermatological clinic complaining of a 2 year-evolution of recurrent urticarial rash and arthralgia on knees and elbows. Physical examination showed evanescent hives in the upper third of the chest and back without associated angioedema (Figure 1a). The patient reported intermittent fever (>38.5 °C) in the ou",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0259",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "478-479",
+    "views": 5613,
+    "downloads": 10084,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1752",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1752",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1752",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1752",
+    "localPdfUrl": "js/data/pdfs/1752.pdf",
+    "pdfUrl": "js/data/pdfs/1752.pdf"
+  },
+  {
+    "id": 1742,
+    "type": "Letter to the Editor",
+    "title": "Aretaeus of Cappadocia and Pulmonary Tuberculosis",
+    "authors": [
+      {
+        "name": "Konstantinos Laios",
+        "affiliation": "Department of Ophthalmology, Medical School, National and Kapodistrian University of Athens, Athens, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "George Androutsos",
+        "affiliation": "Biomedical Research Foundation, Academy of Athens, Athens, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Marilita M. Moschos",
+        "affiliation": "Department of Ophthalmology, Medical School, National and Kapodistrian University of Athens, Athens, Greece",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Aretaeus of Cappadocia is a controversial figure in the history of ancient Greek medicine. No one denied that he was a physician who formed the most accurate descriptions of diseases in antiquity. Such an example is his to the point analysis about phthisis, which, according to modern medicine, can be identified as pulmonary tuberculosis in Chapter VIII of his First Book on Chronic Diseases.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p class=\"yazi\">Aretaeus of Cappadocia is a controversial figure in the history of ancient Greek medicine.  No one denied that he was a physician who formed the most accurate descriptions of diseases in antiquity. Such an example is his to the point analysis about phthisis, which, according to modern medicine, can be identified as pulmonary tuberculosis in Chapter VIII of his First Book on Chronic Diseases.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Aretaeus of Cappadocia is a controversial figure in the history of ancient Greek medicine. No one denied that he was a physician who formed the most accurate descriptions of diseases in antiquity. Such an example is his to the point analysis about phthisis, which, according to modern medicine, can be identified as pulmonary tuberculosis in Chapter VIII of his First Book on Chronic Diseases.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1847",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "480-480",
+    "views": 5830,
+    "downloads": 9718,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1742",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1742",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1742",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1742",
+    "localPdfUrl": "js/data/pdfs/1742.pdf",
+    "pdfUrl": "js/data/pdfs/1742.pdf"
+  },
+  {
+    "id": 1755,
+    "type": "Letter to the Editor",
+    "title": "Letter to the Editor concerning",
+    "authors": [
+      {
+        "name": "Feridun Çilli",
+        "affiliation": "Department of Orthopaedic Surgery, Acıbadem University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, I have read the paper with interest \"Altered Chondrocyte Apoptosis Status in Developmental Dysplasia in Rabbits\" by Wei et al. (1) in the current issue of the Balkan Medical Journal. Wei et al. (1) concluded that \"prolonged immobilisation of a rabbit\"s hip caused chondrocyte apoptosis, but that a reduction of the hip joint may avoid apoptosis,",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1876",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "5",
+    "pages": "481-481",
+    "views": 5524,
+    "downloads": 9420,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1236",
+    "sourceArticleId": "1755",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1755",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1755",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1755",
+    "localPdfUrl": "js/data/pdfs/1755.pdf",
+    "pdfUrl": "js/data/pdfs/1755.pdf"
+  }
+]

@@ -1,0 +1,558 @@
+[
+  {
+    "id": 1857,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "1",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1103",
+    "sourceArticleId": "1857",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1857",
+    "localPdfUrl": "js/data/pdfs/1857.pdf",
+    "pdfUrl": "js/data/pdfs/1857.pdf"
+  },
+  {
+    "id": 96,
+    "type": "Original Article",
+    "title": "Miyokard İnfarktüsünde QRS Skoru ile CPK Enzim Aktiviteleri",
+    "authors": [
+      {
+        "name": "G. Özbay",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları ve Biokimya Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "A. Tuğrul",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları ve Biokimya Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "S. Turan",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları ve Biokimya Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "İ. Bezcioğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları ve Biokimya Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "A. Sefer",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları ve Biokimya Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "F. Kavak",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları ve Biokimya Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "H. Sarıkahya [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "1",
+    "pages": "3-14",
+    "views": 6158,
+    "downloads": 1733,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1103",
+    "sourceArticleId": "96",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=96",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=96",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=96",
+    "localPdfUrl": "js/data/pdfs/96.pdf",
+    "pdfUrl": "js/data/pdfs/96.pdf"
+  },
+  {
+    "id": 1,
+    "type": "Original Article",
+    "title": "Lomber Miyelografide Lohexol Kullanımı",
+    "authors": [
+      {
+        "name": "B. Uçar",
+        "affiliation": "Edirne Devlet Hastanesi",
+        "orcid": ""
+      },
+      {
+        "name": "S. Çobanoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Nöroşirorji Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "A.F. Soran",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroşirorji Anabilim Dalı",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "1",
+    "pages": "15-19",
+    "views": 7380,
+    "downloads": 1942,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1103",
+    "sourceArticleId": "1",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1",
+    "localPdfUrl": "js/data/pdfs/1.pdf",
+    "pdfUrl": "js/data/pdfs/1.pdf"
+  },
+  {
+    "id": 99,
+    "type": "Original Article",
+    "title": "Böbrek Arterlerinin Sayısal Anomalileri",
+    "authors": [
+      {
+        "name": "Recep Mesut",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Morfoloji Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Canbaz",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Morfoloji Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "İhsan Taşçı",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Morfoloji Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Yıldırım [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "1",
+    "pages": "20-30",
+    "views": 6233,
+    "downloads": 1951,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1103",
+    "sourceArticleId": "99",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=99",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=99",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=99",
+    "localPdfUrl": "js/data/pdfs/99.pdf",
+    "pdfUrl": "js/data/pdfs/99.pdf"
+  },
+  {
+    "id": 101,
+    "type": "Original Article",
+    "title": "Üç Vak",
+    "authors": [
+      {
+        "name": "Neşe Şenol",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göz Hastaıkları Ana Bilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "Sait Erda",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göz Hastaıkları Ana Bilim Dalı",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "1",
+    "pages": "33-43",
+    "views": 6226,
+    "downloads": 1647,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1103",
+    "sourceArticleId": "101",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=101",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=101",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=101",
+    "localPdfUrl": "js/data/pdfs/101.pdf",
+    "pdfUrl": "js/data/pdfs/101.pdf"
+  },
+  {
+    "id": 514,
+    "type": "Original Article",
+    "title": "Anestetik Gazlara Sürekli Maruz Kalmanın Gebelik Üzerinde Oluşturduğu Zararlı Etkiler",
+    "authors": [
+      {
+        "name": "O. Şengönül",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "M. Karamehmetoğlu",
+        "affiliation": "Hacettepe Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "G. Arslan",
+        "affiliation": "Hacettepe Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "S. Özgen",
+        "affiliation": "Hacettepe Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "1",
+    "pages": "44-47",
+    "views": 6351,
+    "downloads": 1720,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1103",
+    "sourceArticleId": "514",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=514",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=514",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=514",
+    "localPdfUrl": "js/data/pdfs/514.pdf",
+    "pdfUrl": "js/data/pdfs/514.pdf"
+  },
+  {
+    "id": 516,
+    "type": "Original Article",
+    "title": "Bir Özofagus Atrezisi ve Trakeoözofageal Fistül Olgusu",
+    "authors": [
+      {
+        "name": "Z.A. Medeni",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Pediatri Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "H. Yener",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Pediatri Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "A. Üğdül",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Pediatri Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "O. Sarıoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Radyoloji Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "İ. Tatlısu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Radyoloji Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "S. Karasalihoğlu [[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "1",
+    "pages": "48-54",
+    "views": 6124,
+    "downloads": 1812,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1103",
+    "sourceArticleId": "516",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=516",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=516",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=516",
+    "localPdfUrl": "js/data/pdfs/516.pdf",
+    "pdfUrl": "js/data/pdfs/516.pdf"
+  },
+  {
+    "id": 517,
+    "type": "Original Article",
+    "title": "Kafa Travmalarının Teşhis, Bakım ve Tedavisindeki Gelişmeler",
+    "authors": [
+      {
+        "name": "S. Çobanoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Nöroşirorji Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "N. Demircan",
+        "affiliation": "GATA-Hayardarpaşa Askeri Hastanesi, Nöroşirürji Kliniği",
+        "orcid": ""
+      },
+      {
+        "name": "B. Uçar",
+        "affiliation": "Edirne Devlet Hastanesi Nöroşirürji Servisi - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "C. Kuday",
+        "affiliation": "Cerrahpaşa Tıp Fakültesi, Nöroşürji Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "F. Soran",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroşirorji Anabilim Dalı",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "1",
+    "pages": "57-76",
+    "views": 5892,
+    "downloads": 1949,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1103",
+    "sourceArticleId": "517",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=517",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=517",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=517",
+    "localPdfUrl": "js/data/pdfs/517.pdf",
+    "pdfUrl": "js/data/pdfs/517.pdf"
+  },
+  {
+    "id": 519,
+    "type": "Original Article",
+    "title": "Irvine - Gas - Norton Sendromu",
+    "authors": [
+      {
+        "name": "S. Erda",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göz Hastaıkları Ana Bilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "N. Şenol",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göz Hastaıkları Ana Bilim Dalı",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "1",
+    "pages": "77-84",
+    "views": 5743,
+    "downloads": 1635,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1103",
+    "sourceArticleId": "519",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=519",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=519",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=519",
+    "localPdfUrl": "js/data/pdfs/519.pdf",
+    "pdfUrl": "js/data/pdfs/519.pdf"
+  },
+  {
+    "id": 520,
+    "type": "Original Article",
+    "title": "Normal Kalça Eklemi Biyomekaniği",
+    "authors": [
+      {
+        "name": "Osman Uğur Çalpur",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Ortopedi ve Travmatoloji Anabilim Dalı",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "1",
+    "pages": "85-92",
+    "views": 6154,
+    "downloads": 1666,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1103",
+    "sourceArticleId": "520",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=520",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=520",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=520",
+    "localPdfUrl": "js/data/pdfs/520.pdf",
+    "pdfUrl": "js/data/pdfs/520.pdf"
+  },
+  {
+    "id": 521,
+    "type": "Original Article",
+    "title": "Çağdaş Psiko - Cerrahi Endikasyonları",
+    "authors": [
+      {
+        "name": "Esat Oğuz Göktepe",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Psikiyatri Anabilim Dalı",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "1",
+    "pages": "93-99",
+    "views": 5675,
+    "downloads": 1569,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1103",
+    "sourceArticleId": "521",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=521",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=521",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=521",
+    "localPdfUrl": "js/data/pdfs/521.pdf",
+    "pdfUrl": "js/data/pdfs/521.pdf"
+  },
+  {
+    "id": 522,
+    "type": "Original Article",
+    "title": "Trakeotomi Tarihçesi ve Türkiye",
+    "authors": [
+      {
+        "name": "İlham Sarıkaya",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi K.B.B. Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Karasalihoğlu [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "1",
+    "pages": "103-107",
+    "views": 5681,
+    "downloads": 1623,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1103",
+    "sourceArticleId": "522",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=522",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=522",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=522",
+    "localPdfUrl": "js/data/pdfs/522.pdf",
+    "pdfUrl": "js/data/pdfs/522.pdf"
+  }
+]

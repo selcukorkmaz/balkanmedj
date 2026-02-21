@@ -1,0 +1,1084 @@
+[
+  {
+    "id": 2649,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2649",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2649",
+    "localPdfUrl": "js/data/pdfs/2649.pdf",
+    "pdfUrl": "js/data/pdfs/2649.pdf"
+  },
+  {
+    "id": 2650,
+    "type": "Editorial",
+    "title": "The Mpox 2024 Outbreak: The Main Challenges",
+    "authors": [
+      {
+        "name": "Şiran Keske",
+        "affiliation": "Koc University İşbank Center for Infectious Diseases (KUISCID), İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Hüseyin Güdücüoğlu",
+        "affiliation": "Department of Medical Microbiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Önder Ergönül",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Koç University School of Medicine, İstanbul, Türkiye; Koc University İşbank Center for Infectious Diseases (KUISCID), İstanbul, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "The rising incidence of Mpox cases in Africa led the World Health Organization to declare a public health emergency of international concern on 14 August 2024.1 Despite efforts to decrease the spread of Mpox, its control presents significant challenges due to complex epidemiology, evolving virological features, and variable clinical presentation. This paper ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-240924",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "416-418",
+    "views": 4411,
+    "downloads": 1789,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2650",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2650",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2650",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2650",
+    "localPdfUrl": "js/data/pdfs/2650.pdf",
+    "pdfUrl": "js/data/pdfs/2650.pdf"
+  },
+  {
+    "id": 2651,
+    "type": "Editorial",
+    "title": "Integration of Artificial Intelligence and Genome Editing System for Determining the Treatment of Genetic Disorders",
+    "authors": [
+      {
+        "name": "Suat Erdoğan",
+        "affiliation": "Department of Medical Biology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Genome editing technologies have demonstrated significant potential for treating diseases caused by various molecular changes. These include cancer, cystic fibrosis, diabetes, sickle cell anemia, heart diseases, and rare genetic disorders.1,2 Genome editing technologies also offer potential solutions for neurodegenerative diseases such as Alzheimer’s and Huntington’s disease and neuromuscular disorders such as Duchenne’s muscular dystrophy, spinal muscular atrophy, and amyotrophic lateral sclerosis. The leading genome editing technologies are zinc-finger nucleases, transcription activatorlike effector nucleases, and clustered regularly interspaced short palindromic repeats (CRISPR)/CRISPR-associated protein 9 (Cas9). Among these technologies, CRISPR/Cas9 is the most widely used due to its versatility, effectiveness, efficiency, and ease of application.3 This groundbreaking genome manipulation tool is revolutionizing scientific research, medical diagnostics, and therapeutic applications. Major advancements in editing efficacy have propelled genome editing strategies to phase 3 human clinical trials. However, the CRISPR technology is associated with some challenges such as high costs, ineffective delivery methods for specific targets, and poor efficiency of the genome editing processes, particularly due to offtarget effects.3,4 The CRISPR-Cas9 system employs a single guide RNA (sgRNA) sequence and the Cas9 endonuclease. The sgRNA is formed by combining the CRISPR RNA (crRNA) and trans-activating CRISPR RNA (tracrRNA), which subsequently directs the sgRNA/Cas9 ribonucleoprotein complex to a specific DNA sequence. Once the target DNA is identified, Cas9 induces double-stranded breaks at the target site. These breaks can be repaired via insertions, deletions, additions or inversions. The DNA repair process can either rely on the cell’s natural repair mechanisms or utilize custom-designed DNA sequences.2 However, the system can be inefficient and imprecise, often resulting in small insertions or deletions, as well as unintended large deletions and complex rearrangements.5 Artificial intelligence (AI) tools are increasingly being used across all areas of science and technology. The integration of AI with genome editing systems offers unparalleled precision and efficiency, which could potentially revolutionize the treatment of mutational diseases and oncology.6 AI-based machine and deep learning tools have been employed to design sgRNAs for the CRISPR-Cas systems.7 Off-target effects are primarily influenced by sgRNAs. Thus, the sgRNAs should be carefully designed to maximize the efficiency of the CRISPR-Cas9 gene-editing technology.2,8 Tools such as DeepCRISPR, CRISTA, and DeepHF can predict the most effective sgRNAs for a given target sequence.3 These methods use algorithms that are based on the globally reported growing gene-editing datasets, and they help predict CRISPR sgRNA activity and specificity scores.9,10 AI models design and optimize genome editing techniques, which helps predict editing efficiency, specificity, and outcomes. The deep learning algorithm, which uses endogenous factors and sequence information from genomic datasets, can accurately predict base editing outcomes. It serves as a computational tool for selecting optimal sgRNAs for base editing applications.11 For example, AI can help select the best editing method (base, prime, or epigenome) for specific target sequences by considering genomic context and potential off-target effects. Furthermore, it can optimize the distribution and expression of editing components such as Cas proteins, sgRNAs, and epigenetic modifiers.3 AI can solve complex problems beyond human capability and is applicable in the screening, early diagnosis, treatment, and prognosis prediction of critical diseases such as cancer.12,13 Precision oncology, a tailored approach to cancer treatment, relies on detailed tumor information, including biomarkers, to inform treatment decisions. This method frequently necessitates the analysis of vast datasets using advanced computational techniques. AI can accurately identify genomic profile mutations from multiple clones in heterogeneous tumor biopsies. This capability is essential because detecting cancer stem cells, which are linked to treatment resistance and recurrence, could significantly improve therapeutic strategies.14,15 Therefore, AI could play a significant role in targeting these specific cells. Moreover, AI models can provide a quantitative framework for examining the relationship between network features and cancer, enabling the identification of potential anticancer targets and the discovery of new drug candidates. Despite its potential, there are still numerous challenges to overcome when applying AI to mutational diseases. These challenges include ensuring data privacy, obtaining diverse and representative datasets, and reducing algorithmic bias. Therefore, the ethical, reliable, and effective application of AI tools in healthcare requires collaboration among technologists, clinicians, and policymakers. The ongoing evolution of technology, particularly the integration of AI with genome editing, could transform genetics, biomedicine, and healthcare. This could offer new opportunities for significant advancements in human health through enhanced data analysis and tailored treatments.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>Genome editing technologies have demonstrated significant potential for treating diseases caused by various molecular changes. These include cancer, cystic fibrosis, diabetes, sickle cell anemia, heart diseases, and rare genetic disorders.<sup>1,2</sup> Genome editing technologies also offer potential solutions for neurodegenerative diseases such as Alzheimer&rsquo;s and Huntington&rsquo;s disease and neuromuscular disorders such as Duchenne&rsquo;s muscular dystrophy, spinal muscular atrophy, and amyotrophic lateral sclerosis. The leading genome editing technologies are zinc-finger nucleases, transcription activatorlike effector nucleases, and clustered regularly interspaced short palindromic repeats (CRISPR)/CRISPR-associated protein 9 (Cas9). Among these technologies, CRISPR/Cas9 is the most widely used due to its versatility, effectiveness, efficiency, and ease of application.<sup>3</sup> This groundbreaking genome manipulation tool is revolutionizing scientific research, medical diagnostics, and therapeutic applications. Major advancements in editing efficacy have propelled genome editing strategies to phase 3 human clinical trials. However, the CRISPR technology is associated with some challenges such as high costs, ineffective delivery methods for specific targets, and poor efficiency of the genome editing processes, particularly due to offtarget effects.<sup>3,4</sup></p>\r\n<p>The CRISPR-Cas9 system employs a single guide RNA (sgRNA) sequence and the Cas9 endonuclease. The sgRNA is formed by combining the CRISPR RNA (crRNA) and trans-activating CRISPR RNA (tracrRNA), which subsequently directs the sgRNA/Cas9 ribonucleoprotein complex to a specific DNA sequence. Once the target DNA is identified, Cas9 induces double-stranded breaks at the target site. These breaks can be repaired via insertions, deletions, additions or inversions. The DNA repair process can either rely on the cell&rsquo;s natural repair mechanisms or utilize custom-designed DNA sequences.<sup>2</sup> However, the system can be inefficient and imprecise, often resulting in small insertions or deletions, as well as unintended large deletions and complex rearrangements.<sup>5</sup> Artificial intelligence (AI) tools are increasingly being used across all areas of science and technology. The integration of AI with genome editing systems offers unparalleled precision and efficiency, which could potentially revolutionize the treatment of mutational diseases and oncology.<sup>6</sup></p>\r\n<p>AI-based machine and deep learning tools have been employed to design sgRNAs for the CRISPR-Cas systems.<sup>7</sup> Off-target effects are primarily influenced by sgRNAs. Thus, the sgRNAs should be carefully designed to maximize the efficiency of the CRISPR-Cas9 gene-editing technology.<sup>2,8</sup> Tools such as DeepCRISPR, CRISTA, and DeepHF can predict the most effective sgRNAs for a given target sequence.<sup>3</sup> These methods use algorithms that are based on the globally reported growing gene-editing datasets, and they help predict CRISPR sgRNA activity and specificity scores.<sup>9,10</sup> AI models design and optimize genome editing techniques, which helps predict editing efficiency, specificity, and outcomes. The deep learning algorithm, which uses endogenous factors and sequence information from genomic datasets, can accurately predict base editing outcomes. It serves as a computational tool for selecting optimal sgRNAs for base editing applications.<sup>11</sup> For example, AI can help select the best editing method (base, prime, or epigenome) for specific target sequences by considering genomic context and potential off-target effects. Furthermore, it can optimize the distribution and expression of editing components such as Cas proteins, sgRNAs, and epigenetic modifiers.<sup>3</sup></p>\r\n<p>AI can solve complex problems beyond human capability and is applicable in the screening, early diagnosis, treatment, and prognosis prediction of critical diseases such as cancer.<sup>12,13</sup> Precision oncology, a tailored approach to cancer treatment, relies on detailed tumor information, including biomarkers, to inform treatment decisions. This method frequently necessitates the analysis of vast datasets using advanced computational techniques. AI can accurately identify genomic profile mutations from multiple clones in heterogeneous tumor biopsies. This capability is essential because detecting cancer stem cells, which are linked to treatment resistance and recurrence, could significantly improve therapeutic strategies.<sup>14,15</sup> Therefore, AI could play a significant role in targeting these specific cells. Moreover, AI models can provide a quantitative framework for examining the relationship between network features and cancer, enabling the identification of potential anticancer targets and the discovery of new drug candidates. Despite its potential, there are still numerous challenges to overcome when applying AI to mutational diseases. These challenges include ensuring data privacy, obtaining diverse and representative datasets, and reducing algorithmic bias. Therefore, the ethical, reliable, and effective application of AI tools in healthcare requires collaboration among technologists, clinicians, and policymakers.</p>\r\n<p>The ongoing evolution of technology, particularly the integration of AI with genome editing, could transform genetics, biomedicine, and healthcare. This could offer new opportunities for significant advancements in human health through enhanced data analysis and tailored treatments.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Genome editing technologies have demonstrated significant potential for treating diseases caused by various molecular changes. These include cancer, cystic fibrosis, diabetes, sickle cell anemia, heart diseases, and rare genetic disorders.1,2 Genome editing technologies also offer potential solutions for neurodegenerative diseases such as Alzheimer’s and Huntington’s disease and neuromuscular disorders such as Duchenne’s muscular dystrophy, spinal muscular atrophy, and amyotrophic lateral sclerosis. The leading genome editing technologies are zinc-finger nucleases, transcription activatorlike effector nucleases, and clustered regularly interspaced short palindromic repeats (CRISPR)/CRISPR-associated protein 9 (Cas9). Among these technologies, CRISPR/Cas9 is the most widely used due to its versatility, effectiveness, efficiency, and ease of application.3 This groundbreaking genome manipulation tool is revolutionizing scientific research, medical diagnostics, and therapeutic applications. Major advancements in editing efficacy have propelled genome editing strategies to phase 3 human clinical trials. However, the CRISPR technology is associated with some challenges such as high costs, ineffective delivery methods for specific targets, and poor efficiency of the genome editing processes, particularly due to offtarget effects.3,4 The CRISPR-Cas9 system employs a single guide RNA (sgRNA) sequence and the Cas9 endonuclease. The sgRNA is formed by combining the CRISPR RNA (crRNA) and trans-activating CRISPR RNA (tracrRNA), which subsequently directs the sgRNA/Cas9 ribonucleoprotein complex to a specific DNA sequence. Once the target DNA is identified, Cas9 induces double-stranded breaks at the target site. These breaks can be repaired via insertions, deletions, additions or inversions. The DNA repair process can either rely on the cell’s natural repair mechanisms or utilize custom-designed DNA sequences.2 However, the system can be inefficient and imprecise, often resulting in small insertions or deletions, as well as unintended large deletions and complex rearrangements.5 Artificial intelligence (AI) tools are increasingly being used across all areas of science and technology. The integration of AI with genome editing systems offers unparalleled precision and efficiency, which could potentially revolutionize the treatment of mutational diseases and oncology.6 AI-based machine and deep learning tools have been employed to design sgRNAs for the CRISPR-Cas systems.7 Off-target effects are primarily influenced by sgRNAs. Thus, the sgRNAs should be carefully designed to maximize the efficiency of the CRISPR-Cas9 gene-editing technology.2,8 Tools such as DeepCRISPR, CRISTA, and DeepHF can predict the most effective sgRNAs for a given target sequence.3 These methods use algorithms that are based on the globally reported growing gene-editing datasets, and they help predict CRISPR sgRNA activity and specificity scores.9,10 AI models design and optimize genome editing techniques, which helps predict editing efficiency, specificity, and outcomes. The deep learning algorithm, which uses endogenous factors and sequence information from genomic datasets, can accurately predict base editing outcomes. It serves as a computational tool for selecting optimal sgRNAs for base editing applications.11 For example, AI can help select the best editing method (base, prime, or epigenome) for specific target sequences by considering genomic context and potential off-target effects. Furthermore, it can optimize the distribution and expression of editing components such as Cas proteins, sgRNAs, and epigenetic modifiers.3 AI can solve complex problems beyond human capability and is applicable in the screening, early diagnosis, treatment, and prognosis prediction of critical diseases such as cancer.12,13 Precision oncology, a tailored approach to cancer treatment, relies on detailed tumor information, including biomarkers, to inform treatment decisions. This method frequently necessitates the analysis of vast datasets using advanced computational techniques. AI can accurately identify genomic profile mutations from multiple clones in heterogeneous tumor biopsies. This capability is essential because detecting cancer stem cells, which are linked to treatment resistance and recurrence, could significantly improve therapeutic strategies.14,15 Therefore, AI could play a significant role in targeting these specific cells. Moreover, AI models can provide a quantitative framework for examining the relationship between network features and cancer, enabling the identification of potential anticancer targets and the discovery of new drug candidates. Despite its potential, there are still numerous challenges to overcome when applying AI to mutational diseases. These challenges include ensuring data privacy, obtaining diverse and representative datasets, and reducing algorithmic bias. Therefore, the ethical, reliable, and effective application of AI tools in healthcare requires collaboration among technologists, clinicians, and policymakers. The ongoing evolution of technology, particularly the integration of AI with genome editing, could transform genetics, biomedicine, and healthcare. This could offer new opportunities for significant advancements in human health through enhanced data analysis and tailored treatments.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-080824",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "419-420",
+    "views": 4513,
+    "downloads": 1897,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2651",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2651",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2651",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2651",
+    "localPdfUrl": "js/data/pdfs/2651.pdf",
+    "pdfUrl": "js/data/pdfs/2651.pdf"
+  },
+  {
+    "id": 2647,
+    "type": "Consensus Report",
+    "title": "Takotsubo Syndrome: An International Expert Consensus Report on Practical Challenges and Specific Conditions (Part-1: Diagnostic and Therapeutic Challenges)",
+    "authors": [
+      {
+        "name": "Kenan Yalta",
+        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "John E Madias",
+        "affiliation": "Department of Cardiology, Icahn School of Medicine at Mount Sinai, Elmhurst Hospital Center, Elmhurst, NY, United States of America",
+        "orcid": ""
+      },
+      {
+        "name": "Nicholas G Kounis",
+        "affiliation": "Department of Cardiology, University of Patras Medical School, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Shams Y-Hassan",
+        "affiliation": "Coronary Artery Disease Area, Heart and Vascular Theme, Karolinska Institutet and Karolinska University Hospital, Stockholm, Sweden",
+        "orcid": ""
+      },
+      {
+        "name": "Marija Polovina",
+        "affiliation": "Department of Cardiology, University of Belgrade, University Clinical Centre of Serbia, Belgrade, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Servet Altay",
+        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Alexandre Mebazaa",
+        "affiliation": "University Paris Cite, Department of Anesthesia-Burn-Critical Care, Université de Paris, UMR Inserm MASCOT; APHP Saint Louis Lariboisière University Hospitals, Paris, France",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Birhan Yilmaz",
+        "affiliation": "Department of Cardiology, Dokuz Eylül University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Yuri Lopatin",
+        "affiliation": "Department of Cardiology, Volgograd State Medical University, Regional Cardiology Centre, Volgograd, Russia",
+        "orcid": ""
+      },
+      {
+        "name": "Mamas A Mamas",
+        "affiliation": "Department of Cardiology, Centre for Prognosis Research, Keele University, Stoke-on-Trent, United Kingdom",
+        "orcid": ""
+      },
+      {
+        "name": "Robert J Gil",
+        "affiliation": "Department of Cardiology, National Medical Institute of the Ministry of Internal Affairs and Administration, Warsaw, Poland",
+        "orcid": ""
+      },
+      {
+        "name": "Ritu Thamman",
+        "affiliation": "Department of Cardiology, University of Pittsburgh School of Medicine, Pittsburgh, United States of America",
+        "orcid": ""
+      },
+      {
+        "name": "Abdallah Almaghraby",
+        "affiliation": "Department of Cardiology, Ibrahim Bin Hamad Obaidallah Hospital, EHS, Ras Al Khaimah, United Arab Emirates",
+        "orcid": ""
+      },
+      {
+        "name": "Biykem Bozkurt",
+        "affiliation": "Department of Cardiology, Baylor College of Medicine, Houston TX, United States of America",
+        "orcid": ""
+      },
+      {
+        "name": "Gani Bajraktari",
+        "affiliation": "Department of Cardiology, University Clinical Centre of Kosova, Prishtina, Kosovo; University of Prishtina Faculty of Medicine, Prishtina, Kosovo; Department of Public Health and Clinical Medicine, Umeå University, Umeå, Sweden",
+        "orcid": ""
+      },
+      {
+        "name": "Thomas Fink",
+        "affiliation": "Department of Cardiology, Division of Electrophysiology, Herz- und Diabeteszentrum NRW, Ruhr-University Bochum, Bad Oeynhausen, Germany",
+        "orcid": ""
+      },
+      {
+        "name": "Vassil Traykov",
+        "affiliation": "Department of Cardiology, Division of Invasive Electrophysiology, Acıbadem City Clinic Tokuda University Hospital, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Stephane Manzo-Silberman",
+        "affiliation": "Department of Cardiology, Pitié-Salpêtrière Hospital, Institute of Cardiology, ACTION Study Group, Sorbonne University, Paris, France",
+        "orcid": ""
+      },
+      {
+        "name": "Ulvi Mirzoyev",
+        "affiliation": "Medical Center of The Ministry of Emergency Situations of Azerbaijan; President of Azerbaijan Society of Cardiology, Baku, Azerbaijan",
+        "orcid": ""
+      },
+      {
+        "name": "Sekib Sokolovic",
+        "affiliation": "Department of Cardiology, Cardiology and Rheumatology Hospital, Sarajevo University Clinical Center, Sarajevo, Bosnia Herzegovina",
+        "orcid": ""
+      },
+      {
+        "name": "Zviad V Kipiani",
+        "affiliation": "Department of Cardiology, New Hospital, Tbilisi, Georgia",
+        "orcid": ""
+      },
+      {
+        "name": "Cecilia Linde",
+        "affiliation": "Department of Cardiology, Karolinska Institutet, Stockholm, Sweden; Heart and Vascular Theme, Karolinska University Hospital, Stockholm, Sweden",
+        "orcid": ""
+      },
+      {
+        "name": "Petar M Seferovic",
+        "affiliation": "Department of Cardiology, Serbian Academy of Sciences and Arts and Faculty of Medicine, University of Belgrade, Belgrade, Serbia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract In the recent years, there has been a burgeoning interest in Takotsubo syndrome (TTS), which is renowned as a specific form of reversible myocardial dysfunction. Despite the extensive literature available on TTS, clinicians still face several practical challenges associated with the diagnosis and management of this phenomenon. This potentially results in the underdiagnosis and improper management of TTS in clinical practice. The present paper, the first part (part-1) of the consensus report, aims to cover diagnostic and therapeutic challenges associated with TTS along with certain recommendations to combat these challenges.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>In the recent years, there has been a burgeoning interest in Takotsubo syndrome (TTS), which is renowned as a specific form of reversible myocardial dysfunction. Despite the extensive literature available on TTS, clinicians still face several practical challenges associated with the diagnosis and management of this phenomenon. This potentially results in the underdiagnosis and improper management of TTS in clinical practice. The present paper, the first part (part-1) of the consensus report, aims to cover diagnostic and therapeutic challenges associated with TTS along with certain recommendations to combat these challenges.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract In the recent years, there has been a burgeoning interest in Takotsubo syndrome (TTS), which is renowned as a specific form of reversible myocardial dysfunction. Despite the extensive literature available on TTS, clinicians still face several practical challenges associated with the diagnosis and management of this phenomenon. This potentially results in the underdiagnosis and improper management of TTS in clinical practice. The present paper, the first part (part-1) of the consensus report, aims to cover diagnostic and therapeutic challenges associated with TTS along with certain recommendations to combat these challenges.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-9-98",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "421-441",
+    "views": 12095,
+    "downloads": 3874,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2647",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2647",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2647",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2647",
+    "localPdfUrl": "js/data/pdfs/2647.pdf",
+    "pdfUrl": "js/data/pdfs/2647.pdf"
+  },
+  {
+    "id": 2648,
+    "type": "Consensus Report",
+    "title": "Takotsubo Syndrome: An International Expert Consensus Report on Practical Challenges and Specific Conditions (Part-2: Specific Entities, Risk Stratification and Challenges After Recovery)",
+    "authors": [
+      {
+        "name": "Kenan Yalta",
+        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "John E Madias",
+        "affiliation": "Department of Cardiology, Icahn School of Medicine at Mount Sinai, Elmhurst Hospital Center, Elmhurst, NY, United States of America",
+        "orcid": ""
+      },
+      {
+        "name": "Nicholas G Kounis",
+        "affiliation": "Department of Cardiology, University of Patras Medical School, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Shams Y-Hassan",
+        "affiliation": "Coronary Artery Disease Area, Heart and Vascular Theme, Karolinska Institutet and Karolinska University Hospital, Stockholm, Sweden",
+        "orcid": ""
+      },
+      {
+        "name": "Marija Polovina",
+        "affiliation": "Department of Cardiology, University of Belgrade, University Clinical Centre of Serbia, Belgrade, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Servet Altay",
+        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Alexandre Mebazaa",
+        "affiliation": "University Paris Cite, Department of Anesthesia-Burn-Critical Care, Université de Paris, UMR Inserm MASCOT; APHP Saint Louis Lariboisière University Hospitals, Paris, France",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Birhan Yilmaz",
+        "affiliation": "Department of Cardiology, Dokuz Eylül University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Yuri Lopatin",
+        "affiliation": "Department of Cardiology, Volgograd State Medical University, Regional Cardiology Centre, Volgograd, Russia",
+        "orcid": ""
+      },
+      {
+        "name": "Mamas A Mamas",
+        "affiliation": "Department of Cardiology, Centre for Prognosis Research, Keele University, Stoke-on-Trent, United Kingdom",
+        "orcid": ""
+      },
+      {
+        "name": "Robert J Gil",
+        "affiliation": "Department of Cardiology, National Medical Institute of the Ministry of Internal Affairs and Administration, Warsaw, Poland",
+        "orcid": ""
+      },
+      {
+        "name": "Ritu Thamman",
+        "affiliation": "Department of Cardiology, University of Pittsburgh School of Medicine, Pittsburgh, United States of America",
+        "orcid": ""
+      },
+      {
+        "name": "Abdallah Almaghraby",
+        "affiliation": "Department of Cardiology, Ibrahim Bin Hamad Obaidallah Hospital, EHS, Ras Al Khaimah, United Arab Emirates",
+        "orcid": ""
+      },
+      {
+        "name": "Biykem Bozkurt",
+        "affiliation": "Department of Cardiology, Baylor College of Medicine, Houston TX, United States of America",
+        "orcid": ""
+      },
+      {
+        "name": "Gani Bajraktari",
+        "affiliation": "Department of Cardiology, University Clinical Centre of Kosova, Prishtina, Kosovo; University of Prishtina Faculty of Medicine, Prishtina, Kosovo; Department of Public Health and Clinical Medicine, Umeå University, Umeå, Sweden",
+        "orcid": ""
+      },
+      {
+        "name": "Thomas Fink",
+        "affiliation": "Department of Cardiology, Division of Electrophysiology, Herz- und Diabeteszentrum NRW, Ruhr-University Bochum, Bad Oeynhausen, Germany",
+        "orcid": ""
+      },
+      {
+        "name": "Vassil Traykov",
+        "affiliation": "Department of Cardiology, Division of Invasive Electrophysiology, Acıbadem City Clinic Tokuda University Hospital, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Stephane Manzo-Silberman",
+        "affiliation": "Department of Cardiology, Pitié-Salpêtrière Hospital, Institute of Cardiology, ACTION Study Group, Sorbonne University, Paris, France",
+        "orcid": ""
+      },
+      {
+        "name": "Ulvi Mirzoyev",
+        "affiliation": "Medical Center of The Ministry of Emergency Situations of Azerbaijan; President of Azerbaijan Society of Cardiology, Baku, Azerbaijan",
+        "orcid": ""
+      },
+      {
+        "name": "Sekib Sokolovic",
+        "affiliation": "Department of Cardiology, Cardiology and Rheumatology Hospital, Sarajevo University Clinical Center, Sarajevo, Bosnia Herzegovina",
+        "orcid": ""
+      },
+      {
+        "name": "Zviad V Kipiani",
+        "affiliation": "Department of Cardiology, New Hospital, Tbilisi, Georgia",
+        "orcid": ""
+      },
+      {
+        "name": "Cecilia Linde",
+        "affiliation": "Department of Cardiology, Karolinska Institutet, Stockholm, Sweden; Heart and Vascular Theme, Karolinska University Hospital, Stockholm, Sweden",
+        "orcid": ""
+      },
+      {
+        "name": "Petar M Seferovic",
+        "affiliation": "Department of Cardiology, Serbian Academy of Sciences and Arts and Faculty of Medicine, University of Belgrade, Belgrade, Serbia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Takotsubo syndrome (TTS) still remains as an enigmatic phenomenon. In particular, long-term challenges (including clinical recurrence and persistent symptoms) and specific entities in the setting of TTS have been the evolving areas of interest. On the other hand, a significant gap still exists regarding the proper risk-stratification of this phenomenon in the short and long terms. The present paper, the second part (part-2) of the consensus report, aims to discuss less well-known aspects of TTS including specific entities, challenges after recovery and risk-stratification.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Takotsubo syndrome (TTS) still remains as an enigmatic phenomenon. In particular, long-term challenges (including clinical recurrence and persistent symptoms) and specific entities in the setting of TTS have been the evolving areas of interest. On the other hand, a significant gap still exists regarding the proper risk-stratification of this phenomenon in the short and long terms. The present paper, the second part (part-2) of the consensus report, aims to discuss less well-known aspects of TTS including specific entities, challenges after recovery and risk-stratification.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Takotsubo syndrome (TTS) still remains as an enigmatic phenomenon. In particular, long-term challenges (including clinical recurrence and persistent symptoms) and specific entities in the setting of TTS have been the evolving areas of interest. On the other hand, a significant gap still exists regarding the proper risk-stratification of this phenomenon in the short and long terms. The present paper, the second part (part-2) of the consensus report, aims to discuss less well-known aspects of TTS including specific entities, challenges after recovery and risk-stratification.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-9-99",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "442-457",
+    "views": 5145,
+    "downloads": 2551,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2648",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2648",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2648",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2648",
+    "localPdfUrl": "js/data/pdfs/2648.pdf",
+    "pdfUrl": "js/data/pdfs/2648.pdf"
+  },
+  {
+    "id": 2646,
+    "type": "Original Article",
+    "title": "Association of Serum Blood Urea Nitrogen to Albumin Ratio with in-Hospital Mortality in Patients with Acute Ischemic Stroke: A Retrospective Cohort Study of the eICU Database",
+    "authors": [
+      {
+        "name": "Wenhan Li",
+        "affiliation": "V-Medical Laboratory, Hangzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Qing Huang",
+        "affiliation": "V-Medical Laboratory, Hangzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ke Zhan",
+        "affiliation": "V-Medical Laboratory, Hangzhou, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Albumin (ALB) and blood urea nitrogen (BUN) are both associated with the prognosis of acute ischemic stroke (AIS). A recent prognostic marker, the BUN/ALB ratio (BAR), has been suggested as a simple and sensitive method to predict certain acute diseases.Aims: To determine the predictive value of BAR in relation to the risk of in-hospital mortality among AIS patients.Study Design: Retrospective cohort study.Methods: Cox regression analysis was employed to assess the relationship between in-hospital mortality and BAR, with hazard ratios (HRs) and 95% confidence intervals. Subgroup analysis of acute pulmonary embolism, acute myocardial infarction (AMI), thrombolysis, thrombectomy, and septic shock was performed to further examine this relationship. The predictive value of BAR and BAR multivariate models for in-hospital mortality was evaluated and compared to BUN, ALB, the Acute Physiology and Chronic Health Evaluation IV (APACHE IV) score, and the Sequential Organ Failure Assessment Score (SOFA).Results: Among the 1,635 eligible patients, 226 (13.81%) died during hospitalization. An elevated serum BAR level was associated with an increased in-hospital mortality risk (HR: 1.3) after covariates were adjusted. Additionally, this positive association was observed in patients without AP, AMI, thrombolysis, history of thrombectomy, or septic shock (all; p < 0.05). The efficacy of the BAR multivariate model in predicting in-hospital mortality among AIS patients was superior to that of both APACHE IV and SOFA, with an area under the curve of 0.87.Conclusion: Serum BAR exhibits the potential to identify AIS patients with high mortality risk, which may contribute to enhanced disease surveillance and risk stratification.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Albumin (ALB) and blood urea nitrogen (BUN) are both associated with the prognosis of acute ischemic stroke (AIS). A recent prognostic marker, the BUN/ALB ratio (BAR), has been suggested as a simple and sensitive method to predict certain acute diseases.<br /><strong>Aims:</strong> To determine the predictive value of BAR in relation to the risk of in-hospital mortality among AIS patients.<br /><strong>Study Design:</strong> Retrospective cohort study.<br /><strong>Methods:</strong> Cox regression analysis was employed to assess the relationship between in-hospital mortality and BAR, with hazard ratios (HRs) and 95% confidence intervals. Subgroup analysis of acute pulmonary embolism, acute myocardial infarction (AMI), thrombolysis, thrombectomy, and septic shock was performed to further examine this relationship. The predictive value of BAR and BAR multivariate models for in-hospital mortality was evaluated and compared to BUN, ALB, the Acute Physiology and Chronic Health Evaluation IV (APACHE IV) score, and the Sequential Organ Failure Assessment Score (SOFA).<br /><strong>Results:</strong> Among the 1,635 eligible patients, 226 (13.81%) died during hospitalization. An elevated serum BAR level was associated with an increased in-hospital mortality risk (HR: 1.3) after covariates were adjusted. Additionally, this positive association was observed in patients without AP, AMI, thrombolysis, history of thrombectomy, or septic shock (all; <em>p</em> &lt; 0.05). The efficacy of the BAR multivariate model in predicting in-hospital mortality among AIS patients was superior to that of both APACHE IV and SOFA, with an area under the curve of 0.87.<br /><strong>Conclusion:</strong> Serum BAR exhibits the potential to identify AIS patients with high mortality risk, which may contribute to enhanced disease surveillance and risk stratification.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Albumin (ALB) and blood urea nitrogen (BUN) are both associated with the prognosis of acute ischemic stroke (AIS). A recent prognostic marker, the BUN/ALB ratio (BAR), has been suggested as a simple and sensitive method to predict certain acute diseases.Aims: To determine the predictive value of BAR in relation to the risk of in-hospital mortality among AIS patients.Study Design: Retrospective cohort study.Methods: Cox regression analysis was employed to assess the relationship between in-hospital mortality and BAR, with hazard ratios (HRs) and 95% confidence intervals. Subgroup analysis of acute pulmonary embolism, acute myocardial infarction (AMI), thrombolysis, thrombectomy, and septic shock was performed to further examine this relationship. The predictive value of BAR and BAR multivariate models for in-hospital mortality was evaluated and compared to BUN, ALB, the Acute Physiology and Chronic Health Evaluation IV (APACHE IV) score, and the Sequential Organ Failure Assessment Score (SOFA).Results: Among the 1,635 eligible patients, 226 (13.81%) died during hospitalization. An elevated serum BAR level was associated with an increased in-hospital mortality risk (HR: 1.3) after covariates were adjusted. Additionally, this positive association was observed in patients without AP, AMI, thrombolysis, history of thrombectomy, or septic shock (all; p < 0.05). The efficacy of the BAR multivariate model in predicting in-hospital mortality among AIS patients was superior to that of both APACHE IV and SOFA, with an area under the curve of 0.87.Conclusion: Serum BAR exhibits the potential to identify AIS patients with high mortality risk, which may contribute to enhanced disease surveillance and risk stratification.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-8-77",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "458-468",
+    "views": 5823,
+    "downloads": 3095,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2646",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2646",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2646",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2646",
+    "localPdfUrl": "js/data/pdfs/2646.pdf",
+    "pdfUrl": "js/data/pdfs/2646.pdf"
+  },
+  {
+    "id": 2645,
+    "type": "Original Article",
+    "title": "Role of Ultrasonographic and Clinicopathological Characteristics in Assessing Stromal Tumor-Infiltrating Lymphocyte Density in Triple-Negative Breast Cancer",
+    "authors": [
+      {
+        "name": "Lian Li",
+        "affiliation": "Department of Ultrasound, Nanfang Hospital, Southern Medical University, Guangzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yingjia Li",
+        "affiliation": "Department of Ultrasound, Nanfang Hospital, Southern Medical University, Guangzhou, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: A high density of stromal tumor-infiltrating lymphocytes (sTILs) is positively correlated with the pathological complete response rate and favorable survival in patients with triple-negative breast cancer (TNBC). Heterogeneity in stromal lymphocyte distribution and limited tumor sampling may affect the accuracy of sTIL quantification in biopsy samples from patients receiving neoadjuvant therapy. Thus, identifying additional biomarkers to complement sTIL evaluation is essential.Aims: To identify biomarkers that could be used to complement sTILs evaluation.Study Design: Retrospective cohort study.Methods: A total of 162 patients with invasive TNBC were enrolled in the study. The following data were gathered: sTIL density, Ki67, nuclear grades of cancer cells, lymphovascular invasion status, the American Joint Committee on Cancer stage, axillary lymph node metastasis status, and ultrasonographic parameters of the tumor (size, shape, orientation, margin, internal echo pattern, posterior feature, and vascularity). The relationship between sTIL density and ultrasonographic or clinicopathological characteristics was investigated using both continuous and categorical analyses.Results: Posterior features of the primary tumors was associated with sTIL density (p = 0.038). Additionally, the Ki67 levels and nuclear grades were also associated with sTIL density (p < 0.001 and p = 0.024, respectively). When stratified according to a 20% cut-off of sTIL density, the posterior features of primary tumors, Ki67 levels, and nuclear grades significantly differed between the high and low sTIL density tumors. Tumors with high Ki67 levels were more likely to exhibit high sTIL density than low sTIL density [odds ratio (OR): 2.75, p = 0.021]. Furthermore, nuclear grade III tumors demonstrated significantly higher sTIL density than nuclear grade I-II tumors (OR: 2.49, p = 0.014). Additionally, tumors with posterior enhancement or no posterior features were more likely to exhibit high sTIL density than tumors with acoustic shadows (OR: 2.91, p = 0.028; OR: 2.74, p = 0.022, respectively).Conclusion: Low sTIL density is frequently observed in tumors exhibiting acoustic shadows on ultrasound. However, high sTIL density is more common in tumors with posterior enhancement or no posterior features. Furthermore, high Ki67 levels (> 40%) and high nuclear grades are positively correlated with high sTIL density. This study findings highlight the need for closer surveillance of these biomarkers to complement sTIL evaluation in TNBC.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> A high density of stromal tumor-infiltrating lymphocytes (sTILs) is positively correlated with the pathological complete response rate and favorable survival in patients with triple-negative breast cancer (TNBC). Heterogeneity in stromal lymphocyte distribution and limited tumor sampling may affect the accuracy of sTIL quantification in biopsy samples from patients receiving neoadjuvant therapy. Thus, identifying additional biomarkers to complement sTIL evaluation is essential.<br /><strong>Aims:</strong> To identify biomarkers that could be used to complement sTILs evaluation.<br /><strong>Study Design:</strong> Retrospective cohort study.<br /><strong>Methods:</strong> A total of 162 patients with invasive TNBC were enrolled in the study. The following data were gathered: sTIL density, Ki67, nuclear grades of cancer cells, lymphovascular invasion status, the American Joint Committee on Cancer stage, axillary lymph node metastasis status, and ultrasonographic parameters of the tumor (size, shape, orientation, margin, internal echo pattern, posterior feature, and vascularity). The relationship between sTIL density and ultrasonographic or clinicopathological characteristics was investigated using both continuous and categorical analyses.<br /><strong>Results:</strong> Posterior features of the primary tumors was associated with sTIL density (<em>p</em> = 0.038). Additionally, the Ki67 levels and nuclear grades were also associated with sTIL density (<em>p</em> &lt; 0.001 and <em>p</em> = 0.024, respectively). When stratified according to a 20% cut-off of sTIL density, the posterior features of primary tumors, Ki67 levels, and nuclear grades significantly differed between the high and low sTIL density tumors. Tumors with high Ki67 levels were more likely to exhibit high sTIL density than low sTIL density [odds ratio (OR): 2.75, <em>p</em> = 0.021]. Furthermore, nuclear grade III tumors demonstrated significantly higher sTIL density than nuclear grade I-II tumors (OR: 2.49, <em>p</em> = 0.014). Additionally, tumors with posterior enhancement or no posterior features were more likely to exhibit high sTIL density than tumors with acoustic shadows (OR: 2.91, <em>p</em> = 0.028; OR: 2.74, <em>p</em> = 0.022, respectively).<br /><strong>Conclusion:</strong> Low sTIL density is frequently observed in tumors exhibiting acoustic shadows on ultrasound. However, high sTIL density is more common in tumors with posterior enhancement or no posterior features. Furthermore, high Ki67 levels (&gt; 40%) and high nuclear grades are positively correlated with high sTIL density. This study findings highlight the need for closer surveillance of these biomarkers to complement sTIL evaluation in TNBC.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: A high density of stromal tumor-infiltrating lymphocytes (sTILs) is positively correlated with the pathological complete response rate and favorable survival in patients with triple-negative breast cancer (TNBC). Heterogeneity in stromal lymphocyte distribution and limited tumor sampling may affect the accuracy of sTIL quantification in biopsy samples from patients receiving neoadjuvant therapy. Thus, identifying additional biomarkers to complement sTIL evaluation is essential.Aims: To identify biomarkers that could be used to complement sTILs evaluation.Study Design: Retrospective cohort study.Methods: A total of 162 patients with invasive TNBC were enrolled in the study. The following data were gathered: sTIL density, Ki67, nuclear grades of cancer cells, lymphovascular invasion status, the American Joint Committee on Cancer stage, axillary lymph node metastasis status, and ultrasonographic parameters of the tumor (size, shape, orientation, margin, internal echo pattern, posterior feature, and vascularity). The relationship between sTIL density and ultrasonographic or clinicopathological characteristics was investigated using both continuous and categorical analyses.Results: Posterior features of the primary tumors was associated with sTIL density (p = 0.038). Additionally, the Ki67 levels and nuclear grades were also associated with sTIL density (p < 0.001 and p = 0.024, respectively). When stratified according to a 20% cut-off of sTIL density, the posterior features of primary tumors, Ki67 levels, and nuclear grades significantly differed between the high and low sTIL density tumors. Tumors with high Ki67 levels were more likely to exhibit high sTIL density than low sTIL density [odds ratio (OR): 2.75, p = 0.021]. Furthermore, nuclear grade III tumors demonstrated significantly higher sTIL density than nuclear grade I-II tumors (OR: 2.49, p = 0.014). Additionally, tumors with posterior enhancement or no posterior features were more likely to exhibit high sTIL density than tumors with acoustic shadows (OR: 2.91, p = 0.028; OR: 2.74, p = 0.022, respectively).Conclusion: Low sTIL density is frequently observed in tumors exhibiting acoustic shadows on ultrasound. However, high sTIL density is more common in tumors with posterior enhancement or no posterior features. Furthermore, high Ki67 levels (> 40%) and high nuclear grades are positively correlated with high sTIL density. This study findings highlight the need for closer surveillance of these biomarkers to complement sTIL evaluation in TNBC.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-7-26",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "469-475",
+    "views": 4844,
+    "downloads": 2349,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2645",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2645",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2645",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2645",
+    "localPdfUrl": "js/data/pdfs/2645.pdf",
+    "pdfUrl": "js/data/pdfs/2645.pdf"
+  },
+  {
+    "id": 2643,
+    "type": "Original Article",
+    "title": "Chronic Nasal Administration of Kisspeptin-54 Regulates Mood-Related Disorders Via Amygdaloid GABA in Hemi-Parkinsonian Rats",
+    "authors": [
+      {
+        "name": "Osman Sinen",
+        "affiliation": "Department of Physiology, Akdeniz University Faculty of Medicine, Antalya, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşegül Gemici Sinen",
+        "affiliation": "Department of Biophysics, Akdeniz University Faculty of Medicine, Antalya, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Narin Derin",
+        "affiliation": "Department of Biophysics, Akdeniz University Faculty of Medicine, Antalya, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mutay Aydın Aslan",
+        "affiliation": "Department of Medical Biochemistry, Akdeniz University Faculty of Medicine, Antalya, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Depression and anxiety, the most prevalent neuropsychiatric manifestations in Parkinson’s disease (PD), negatively impact their quality of life.Aims: To determine whether the chronic nasal administration of kisspeptin-54 (KP-54) could. Alleviate symptoms of anxiety and depression in hemi-Parkinsonian rats.Study Design: Experimental study.Methods: This study included adult Sprague Dawley male rats who were administered either a vehicle (artificial cerebrospinal fluid) or 6-hydroxydopamine (6-OHDA) unilaterally into the medial forebrain bundle. The vehicle, or KP-54 (3 nmol/kg, applied topically to the rhinarium), was administered daily for a seven-day period. The sucrose preference test (SPT), elevated plus maze test (EPMT), and open field test (OFT) were implemented to evaluate depression- and anxiety-like behaviors, respectively, seven days following the lesion surgery. Gamma-aminobutyric acid (GABA) concentrations in the amygdala were quantified using mass spectrometry. Tyrosine hydroxylase in substantia nigra was analyzed using immunohistochemistry.Results: The nasal delivery of KP-54 significantly reduced depression- and anxiety-like behaviors that were induced by 6-OHDA, as indicated by the results of the SPT, OFT, and EPMT. Moreover, it was observed that nasal KP-54 effectively mitigated 6-OHDA-induced motor deficits and the loss of nigral dopaminergic neurons. The nasal administration of KP-54 augmented the decline in GABA levels in the amygdala induced by 6-OHDA. Furthermore, effective correlations were established between GABA concentrations and behavioral parameters.Conclusion: The nasal delivery of KP-54 could function as a viable therapeutic alternative for treating mood-related disorders in PD.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Depression and anxiety, the most prevalent neuropsychiatric manifestations in Parkinson&rsquo;s disease (PD), negatively impact their quality of life.<br /><strong>Aims:</strong> To determine whether the chronic nasal administration of kisspeptin-54 (KP-54) could. Alleviate symptoms of anxiety and depression in hemi-Parkinsonian rats.<br /><strong>Study Design:</strong> Experimental study.<br /><strong>Methods:</strong> This study included adult Sprague Dawley male rats who were administered either a vehicle (artificial cerebrospinal fluid) or 6-hydroxydopamine (6-OHDA) unilaterally into the medial forebrain bundle. The vehicle, or KP-54 (3 nmol/kg, applied topically to the rhinarium), was administered daily for a seven-day period. The sucrose preference test (SPT), elevated plus maze test (EPMT), and open field test (OFT) were implemented to evaluate depression- and anxiety-like behaviors, respectively, seven days following the lesion surgery. Gamma-aminobutyric acid (GABA) concentrations in the amygdala were quantified using mass spectrometry. Tyrosine hydroxylase in substantia nigra was analyzed using immunohistochemistry.<br /><strong>Results:</strong> The nasal delivery of KP-54 significantly reduced depression- and anxiety-like behaviors that were induced by 6-OHDA, as indicated by the results of the SPT, OFT, and EPMT. Moreover, it was observed that nasal KP-54 effectively mitigated 6-OHDA-induced motor deficits and the loss of nigral dopaminergic neurons. The nasal administration of KP-54 augmented the decline in GABA levels in the amygdala induced by 6-OHDA. Furthermore, effective correlations were established between GABA concentrations and behavioral parameters.<br /><strong>Conclusion:</strong> The nasal delivery of KP-54 could function as a viable therapeutic alternative for treating mood-related disorders in PD.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Depression and anxiety, the most prevalent neuropsychiatric manifestations in Parkinson’s disease (PD), negatively impact their quality of life.Aims: To determine whether the chronic nasal administration of kisspeptin-54 (KP-54) could. Alleviate symptoms of anxiety and depression in hemi-Parkinsonian rats.Study Design: Experimental study.Methods: This study included adult Sprague Dawley male rats who were administered either a vehicle (artificial cerebrospinal fluid) or 6-hydroxydopamine (6-OHDA) unilaterally into the medial forebrain bundle. The vehicle, or KP-54 (3 nmol/kg, applied topically to the rhinarium), was administered daily for a seven-day period. The sucrose preference test (SPT), elevated plus maze test (EPMT), and open field test (OFT) were implemented to evaluate depression- and anxiety-like behaviors, respectively, seven days following the lesion surgery. Gamma-aminobutyric acid (GABA) concentrations in the amygdala were quantified using mass spectrometry. Tyrosine hydroxylase in substantia nigra was analyzed using immunohistochemistry.Results: The nasal delivery of KP-54 significantly reduced depression- and anxiety-like behaviors that were induced by 6-OHDA, as indicated by the results of the SPT, OFT, and EPMT. Moreover, it was observed that nasal KP-54 effectively mitigated 6-OHDA-induced motor deficits and the loss of nigral dopaminergic neurons. The nasal administration of KP-54 augmented the decline in GABA levels in the amygdala induced by 6-OHDA. Furthermore, effective correlations were established between GABA concentrations and behavioral parameters.Conclusion: The nasal delivery of KP-54 could function as a viable therapeutic alternative for treating mood-related disorders in PD.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-7-46",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "476-483",
+    "views": 5059,
+    "downloads": 2944,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2643",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2643",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2643",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2643",
+    "localPdfUrl": "js/data/pdfs/2643.pdf",
+    "pdfUrl": "js/data/pdfs/2643.pdf"
+  },
+  {
+    "id": 2642,
+    "type": "Original Article",
+    "title": "Different Effect of Dienogest on Endometrium Mesenchymal Stem Cells Derived from Healthy and Endometriosis Tissues",
+    "authors": [
+      {
+        "name": "Hayal Uzelli Şimşek",
+        "affiliation": "Department of Obstetrics and Gynecology, Kocaeli University Faculty of Medicine, Kocaeli, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Turgay Şimşek",
+        "affiliation": "Department of General Surgery, Kocaeli University Faculty of Medicine, Kocaeli, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Gökhan Duruksu",
+        "affiliation": "Center for Stem Cell and Gene Therapies Research and Practice, Kocaeli University, Kocaeli, Türkiye; Department of Histology and Embryology, Kocaeli University Faculty of Medicine, Kocaeli, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Selenay Furat Rençber",
+        "affiliation": "Center for Stem Cell and Gene Therapies Research and Practice, Kocaeli University, Kocaeli, Türkiye; Department of Histology and Embryology, Kocaeli University Faculty of Medicine, Kocaeli, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Yusufhan Yazır",
+        "affiliation": "Center for Stem Cell and Gene Therapies Research and Practice, Kocaeli University, Kocaeli, Türkiye; Department of Histology and Embryology, Kocaeli University Faculty of Medicine, Kocaeli, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Endometriosis (EM) is an inflammatory condition in which the endometrium is observed to develop outside the uterine cavity. Endometrium has conventionally been recognized as a rich source of endometrial mesenchymal stem cells (E-MSCs). The influence of dienogest, a medication frequently prescribed for EM, on E-MSCs has not been extensively investigated.Aims: To explore effects of dienogest on the E-MSCs derived from healthy (E-MSCs-control) and diseased (E-MSCs-endometriosis) endometrial tissue samples in vitro.Study Design: In vitro study.Methods: We collected samples from healthy and diseased endometrial tissues. E-MSCs were derived from both healthy and EM tissues. The effect of dienogest (VISANNE) on E-MSCs was assessed by examining cell proliferation, telomerase activity, cell migration, and estrogen secretion levels after the isolation and characterization of E-MSCs.Results: We discovered that cellular proliferation rate was higher in the E-MSCs derived from EM tissues compared to those derived from healthy tissue. The proliferation rate and telomerase activity were both suppressed by dienogest treatment, particularly in E-MSCs-endometriosis. The drug treatment also resulted in a decrease in the migration capacity of E-MSCs-endometriosis, from 60.4% to 59.2%. The expression of CXCL12, Ki67, and beta-catenin was analyzed in both E-MSCs-endometriosis and E-MSCs-control. The CXCL12 and Ki67 expressions were quite elevated in the E-MSCs-endometriosis without drug treatment compared to the E-MSCs-control. Following the treatment, these levels declined drastically to the levels close to E-MSCs-control. Similarly, this decrease in gene expression was accompanied by a decrease in estrogen secretion into the medium.Conclusion: This research demonstrates that dienogest exerts a substantial impact on both stromal and stem cells, as it effectively controls the disease by reversing EM markers, despite the absence of progesterone receptors on endometrial stem cells.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Endometriosis (EM) is an inflammatory condition in which the endometrium is observed to develop outside the uterine cavity. Endometrium has conventionally been recognized as a rich source of endometrial mesenchymal stem cells (E-MSCs). The influence of dienogest, a medication frequently prescribed for EM, on E-MSCs has not been extensively investigated.<br /><strong>Aims:</strong> To explore effects of dienogest on the E-MSCs derived from healthy (E-MSCs-control) and diseased (E-MSCs-endometriosis) endometrial tissue samples in vitro.<br /><strong>Study Design:</strong> In vitro study.<br /><strong>Methods:</strong> We collected samples from healthy and diseased endometrial tissues. E-MSCs were derived from both healthy and EM tissues. The effect of dienogest (VISANNE) on E-MSCs was assessed by examining cell proliferation, telomerase activity, cell migration, and estrogen secretion levels after the isolation and characterization of E-MSCs.<br /><strong>Results:</strong> We discovered that cellular proliferation rate was higher in the E-MSCs derived from EM tissues compared to those derived from healthy tissue. The proliferation rate and telomerase activity were both suppressed by dienogest treatment, particularly in E-MSCs-endometriosis. The drug treatment also resulted in a decrease in the migration capacity of E-MSCs-endometriosis, from 60.4% to 59.2%. The expression of CXCL12, Ki67, and beta-catenin was analyzed in both E-MSCs-endometriosis and E-MSCs-control. The CXCL12 and Ki67 expressions were quite elevated in the E-MSCs-endometriosis without drug treatment compared to the E-MSCs-control. Following the treatment, these levels declined drastically to the levels close to E-MSCs-control. Similarly, this decrease in gene expression was accompanied by a decrease in estrogen secretion into the medium.<br /><strong>Conclusion:</strong> This research demonstrates that dienogest exerts a substantial impact on both stromal and stem cells, as it effectively controls the disease by reversing EM markers, despite the absence of progesterone receptors on endometrial stem cells.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Endometriosis (EM) is an inflammatory condition in which the endometrium is observed to develop outside the uterine cavity. Endometrium has conventionally been recognized as a rich source of endometrial mesenchymal stem cells (E-MSCs). The influence of dienogest, a medication frequently prescribed for EM, on E-MSCs has not been extensively investigated.Aims: To explore effects of dienogest on the E-MSCs derived from healthy (E-MSCs-control) and diseased (E-MSCs-endometriosis) endometrial tissue samples in vitro.Study Design: In vitro study.Methods: We collected samples from healthy and diseased endometrial tissues. E-MSCs were derived from both healthy and EM tissues. The effect of dienogest (VISANNE) on E-MSCs was assessed by examining cell proliferation, telomerase activity, cell migration, and estrogen secretion levels after the isolation and characterization of E-MSCs.Results: We discovered that cellular proliferation rate was higher in the E-MSCs derived from EM tissues compared to those derived from healthy tissue. The proliferation rate and telomerase activity were both suppressed by dienogest treatment, particularly in E-MSCs-endometriosis. The drug treatment also resulted in a decrease in the migration capacity of E-MSCs-endometriosis, from 60.4% to 59.2%. The expression of CXCL12, Ki67, and beta-catenin was analyzed in both E-MSCs-endometriosis and E-MSCs-control. The CXCL12 and Ki67 expressions were quite elevated in the E-MSCs-endometriosis without drug treatment compared to the E-MSCs-control. Following the treatment, these levels declined drastically to the levels close to E-MSCs-control. Similarly, this decrease in gene expression was accompanied by a decrease in estrogen secretion into the medium.Conclusion: This research demonstrates that dienogest exerts a substantial impact on both stromal and stem cells, as it effectively controls the disease by reversing EM markers, despite the absence of progesterone receptors on endometrial stem cells.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-6-95",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "484-490",
+    "views": 4779,
+    "downloads": 2269,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2642",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2642",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2642",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2642",
+    "localPdfUrl": "js/data/pdfs/2642.pdf",
+    "pdfUrl": "js/data/pdfs/2642.pdf"
+  },
+  {
+    "id": 2644,
+    "type": "Original Article",
+    "title": "Exploring the Effect of Fidgetin-Like 1 on Colorectal Cancer Through Tissue Chip and In Vitro Experiments",
+    "authors": [
+      {
+        "name": "Yunxing Xu",
+        "affiliation": "Clinic of Central Laboratory, Hai’an City People’s Hospital of Jiangsu Province, Hai’an Hospital Affiliated to Nantong University, Nantong, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yucheng Shen",
+        "affiliation": "Clinic of Central Laboratory, Hai’an City People’s Hospital of Jiangsu Province, Hai’an Hospital Affiliated to Nantong University, Nantong, China",
+        "orcid": ""
+      },
+      {
+        "name": "Chen Zhang",
+        "affiliation": "Clinic of Central Laboratory, Hai’an City People’s Hospital of Jiangsu Province, Hai’an Hospital Affiliated to Nantong University, Nantong, China",
+        "orcid": ""
+      },
+      {
+        "name": "Liangfeng Zheng",
+        "affiliation": "Clinic of Central Laboratory, Hai’an City People’s Hospital of Jiangsu Province, Hai’an Hospital Affiliated to Nantong University, Nantong, China",
+        "orcid": ""
+      },
+      {
+        "name": "Feiyue Ji",
+        "affiliation": "Clinic of Central Laboratory, Hai’an City People’s Hospital of Jiangsu Province, Hai’an Hospital Affiliated to Nantong University, Nantong, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jin Chen",
+        "affiliation": "Clinic of Central Laboratory, Hai’an City People’s Hospital of Jiangsu Province, Hai’an Hospital Affiliated to Nantong University, Nantong, China",
+        "orcid": ""
+      },
+      {
+        "name": "Shouliang Cheng",
+        "affiliation": "Clinic of Central Laboratory, Hai’an City People’s Hospital of Jiangsu Province, Hai’an Hospital Affiliated to Nantong University, Nantong, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yu Zheng",
+        "affiliation": "Clinic of Central Laboratory, Hai’an City People’s Hospital of Jiangsu Province, Hai’an Hospital Affiliated to Nantong University, Nantong, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Fidgetin-like 1 (FIGNL1) is extensively overexpressed in a variety of cancers. It facilitates non‑small cell lung cancer tumor cell proliferation and hepatocellular carcinoma formation due to abnormal DNA repair. Clinically relevant data indicates that its high expression is linked with the poor prognosis of patients with renal clear-cell carcinoma, low-grade gliomas, and hepatocellular carcinoma. Nevertheless, the scope of FIGNL1’s involvement in cancer, particularly colorectal cancer (CRC), remains unclear.Aims: To investigate the function of FIGNL1 in CRC.Study Design: Cell culture studyMethods: The TCGA database and immunohistochemistry analysis were employed to investigate FIGNL1 expression in CRC tissue. A cell viability assay was performed using the Cell Counting Kit-8. The cell migration and invasion were evaluated using the transwell assay. Small interfering RNA (siRNA) transfection was conducted to knockdown FIGNL1 expression. Infection with FIGNL1 overexpression lentivirus was performed to promote FIGNL1 overexpression. The STRING database was employed for predicting protein interaction.Results: FIGNL1 was substantially upregulated in human CRC tissues and was associated with TNM stages and lymph node metastasis in patients. The inhibition of CRC cell proliferation, migration, and invasion in Caco-2 cells was achieved by silencing FIGNL1 using siRNA. Additional investigations suggested that FIGNL1 overexpression could promote CRC cell proliferation, migration, and invasion via P38 signaling pathway activation in Colo-205 cells. Subsequent experiments demonstrated that FIGNL1-mediated P38 phosphorylation was contingent upon SPIDR interaction.Conclusion: These results implied that FIGNL1 was a potential anticancer drug target, which also offered a novel strategy for future CRC treatment.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Fidgetin-like 1 (FIGNL1) is extensively overexpressed in a variety of cancers. It facilitates non‑small cell lung cancer tumor cell proliferation and hepatocellular carcinoma formation due to abnormal DNA repair. Clinically relevant data indicates that its high expression is linked with the poor prognosis of patients with renal clear-cell carcinoma, low-grade gliomas, and hepatocellular carcinoma. Nevertheless, the scope of FIGNL1&rsquo;s involvement in cancer, particularly colorectal cancer (CRC), remains unclear.<br /><strong>Aims:</strong> To investigate the function of FIGNL1 in CRC.<br /><strong>Study Design:</strong> Cell culture study<br /><strong>Methods:</strong> The TCGA database and immunohistochemistry analysis were employed to investigate FIGNL1 expression in CRC tissue. A cell viability assay was performed using the Cell Counting Kit-8. The cell migration and invasion were evaluated using the transwell assay. Small interfering RNA (siRNA) transfection was conducted to knockdown FIGNL1 expression. Infection with FIGNL1 overexpression lentivirus was performed to promote FIGNL1 overexpression. The STRING database was employed for predicting protein interaction.<br /><strong>Results:</strong> FIGNL1 was substantially upregulated in human CRC tissues and was associated with TNM stages and lymph node metastasis in patients. The inhibition of CRC cell proliferation, migration, and invasion in Caco-2 cells was achieved by silencing FIGNL1 using siRNA. Additional investigations suggested that FIGNL1 overexpression could promote CRC cell proliferation, migration, and invasion via P38 signaling pathway activation in Colo-205 cells. Subsequent experiments demonstrated that FIGNL1-mediated P38 phosphorylation was contingent upon SPIDR interaction.<br /><strong>Conclusion:</strong> These results implied that FIGNL1 was a potential anticancer drug target, which also offered a novel strategy for future CRC treatment.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Fidgetin-like 1 (FIGNL1) is extensively overexpressed in a variety of cancers. It facilitates non‑small cell lung cancer tumor cell proliferation and hepatocellular carcinoma formation due to abnormal DNA repair. Clinically relevant data indicates that its high expression is linked with the poor prognosis of patients with renal clear-cell carcinoma, low-grade gliomas, and hepatocellular carcinoma. Nevertheless, the scope of FIGNL1’s involvement in cancer, particularly colorectal cancer (CRC), remains unclear.Aims: To investigate the function of FIGNL1 in CRC.Study Design: Cell culture studyMethods: The TCGA database and immunohistochemistry analysis were employed to investigate FIGNL1 expression in CRC tissue. A cell viability assay was performed using the Cell Counting Kit-8. The cell migration and invasion were evaluated using the transwell assay. Small interfering RNA (siRNA) transfection was conducted to knockdown FIGNL1 expression. Infection with FIGNL1 overexpression lentivirus was performed to promote FIGNL1 overexpression. The STRING database was employed for predicting protein interaction.Results: FIGNL1 was substantially upregulated in human CRC tissues and was associated with TNM stages and lymph node metastasis in patients. The inhibition of CRC cell proliferation, migration, and invasion in Caco-2 cells was achieved by silencing FIGNL1 using siRNA. Additional investigations suggested that FIGNL1 overexpression could promote CRC cell proliferation, migration, and invasion via P38 signaling pathway activation in Colo-205 cells. Subsequent experiments demonstrated that FIGNL1-mediated P38 phosphorylation was contingent upon SPIDR interaction.Conclusion: These results implied that FIGNL1 was a potential anticancer drug target, which also offered a novel strategy for future CRC treatment.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-7-9",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "491-498",
+    "views": 5020,
+    "downloads": 2593,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2644",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2644",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2644",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2644",
+    "localPdfUrl": "js/data/pdfs/2644.pdf",
+    "pdfUrl": "js/data/pdfs/2644.pdf"
+  },
+  {
+    "id": 2626,
+    "type": "Clinical Image",
+    "title": "Tenosynovial Giant Cell Tumor in the Gruberi Bursa",
+    "authors": [
+      {
+        "name": "Fábio Ferreira",
+        "affiliation": "Department of Radiology, Centro Hospitalar e Universitário de São João, Porto, Portugal",
+        "orcid": ""
+      },
+      {
+        "name": "Diana Baptista",
+        "affiliation": "Department of Pathology, Centro Hospitalar e Universitário de São João, Porto, Portugal",
+        "orcid": ""
+      },
+      {
+        "name": "Miguel Castro",
+        "affiliation": "Department of Radiology, Centro Hospitalar e Universitário de São João, Porto, Portugal",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 34-year-old man presented with a three-month history of persistent right ankle swelling. The patient also reported mild pain and stiffness in the morning. There was no history of trauma or any systemic symptoms. Physical examination revealed a soft, mobile, non-tender swelling on the lateral aspect of the right ankle. No signs of local inflammation or skin",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-4-120",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "499-500",
+    "views": 4528,
+    "downloads": 1975,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2626",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2626",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2626",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2626",
+    "localPdfUrl": "js/data/pdfs/2626.pdf",
+    "pdfUrl": "js/data/pdfs/2626.pdf"
+  },
+  {
+    "id": 2621,
+    "type": "Clinical Image",
+    "title": "Detection of Scabies Mites with a Handheld Magnifier and Portable Microscope",
+    "authors": [
+      {
+        "name": "Masahiro Kaneko",
+        "affiliation": "Department of Internal Medicine, Tarumi Hospital, Hyogo, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Jun Ohnishi",
+        "affiliation": "Department of Internal Medicine, Ohnishi Medical Clinic, Hyogo, Japan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "The patient was a 67-year-old man who presented with a worsening maculopapular rash on his body, arms, hands, and thighs. He was hospitalized for two weeks to participate in an inpatient abstinence program for alcohol use disorder. The primary psychiatrist consulted the author (M.K.), who observed several burrows and a “delta-jet-sign”1 at the tip of the bur",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-4-36",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "501-502",
+    "views": 5799,
+    "downloads": 2009,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2621",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2621",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2621",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2621",
+    "localPdfUrl": "js/data/pdfs/2621.pdf",
+    "pdfUrl": "js/data/pdfs/2621.pdf"
+  },
+  {
+    "id": 2631,
+    "type": "Clinical Image",
+    "title": "Mesencephalic Developmental Venous Anomaly Causing Obstructive Hydrocephalus Due to Aqueductal Stenosis",
+    "authors": [
+      {
+        "name": "Gökhan Aytekin",
+        "affiliation": "Department of Radiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Merve Tuna",
+        "affiliation": "Department of Radiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Serdar Solak",
+        "affiliation": "Department of Radiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 29-year-old man presented with complaints of persistent headaches for the past six months. He did not experience any accompanying symptoms, such as nausea, vomiting, or visual disturbance. A magnetic resonance imaging revealed dilatation of both the lateral ventricles and the third ventricle. However, the fourth ventricle appeared normal in size (Figure 1a",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-7-37",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "503-504",
+    "views": 4471,
+    "downloads": 1654,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2631",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2631",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2631",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2631",
+    "localPdfUrl": "js/data/pdfs/2631.pdf",
+    "pdfUrl": "js/data/pdfs/2631.pdf"
+  },
+  {
+    "id": 2619,
+    "type": "Clinical Image",
+    "title": "Acute Appendicitis Secondary to the Ingestion of a Toothpick",
+    "authors": [
+      {
+        "name": "Marco Antonio Alves Braun",
+        "affiliation": "Department of General Surgery, Centro Universitário São Camilo, São Paulo, SP, Brazil",
+        "orcid": ""
+      },
+      {
+        "name": "Isabella Alves Braun",
+        "affiliation": "Department of Internal Medicine, Faculdade de Ciências Médicas da Santa Casa de São Paulo, São Paulo, SP, Brazil",
+        "orcid": ""
+      },
+      {
+        "name": "Márcio Luís Duarte",
+        "affiliation": "Department of Radiology, Universidade de Ribeirão Preto - Campus Guarujá, São Paulo, SP, Brazil",
+        "orcid": ""
+      },
+      {
+        "name": "Bruno Fernandes Barros Brehme de Abreu",
+        "affiliation": "Department of Radiology, WEBIMAGEM Telerradiologia, São Paulo, SP, Brazil",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 17-year-old female presented with a 3-day history of abdominal pain following physical exertion, which was subsequently localized to her right iliac region. She experienced severe pain in her right iliac region, exacerbated by coughing, sneezing, or any physical activity, accompanied by nausea and chills. With rest, the symptoms abated. She denied vomiting",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-5-34",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "505-506",
+    "views": 4917,
+    "downloads": 1665,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2619",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2619",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2619",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2619",
+    "localPdfUrl": "js/data/pdfs/2619.pdf",
+    "pdfUrl": "js/data/pdfs/2619.pdf"
+  },
+  {
+    "id": 2623,
+    "type": "Scientific Letter",
+    "title": "Convulsive Status Epilepticus in Indonesia",
+    "authors": [
+      {
+        "name": "Machlusil Husna",
+        "affiliation": "Department of Neurology, Faculty of Medicine Universitas Brawijaya - Saiful Anwar General Hospital, Malang, East Java Province, Indonesia",
+        "orcid": ""
+      },
+      {
+        "name": "Siti Nurlaela",
+        "affiliation": "Department of Neurology, Hermina Tangkuban Perahu General Hospital, Malang, East Java Province, Indonesia",
+        "orcid": ""
+      },
+      {
+        "name": "Benny Arie Pradana",
+        "affiliation": "Department of Neurology, Faculty of Medicine Universitas Brawijaya - Saiful Anwar General Hospital, Malang, East Java Province, Indonesia",
+        "orcid": ""
+      },
+      {
+        "name": "Firda Aushi",
+        "affiliation": "Department of Neurology, Faculty of Medicine Universitas Brawijaya - Saiful Anwar General Hospital, Malang, East Java Province, Indonesia",
+        "orcid": ""
+      },
+      {
+        "name": "Priyo Atdisuramad",
+        "affiliation": "Department of Neurology, Faculty of Medicine Universitas Brawijaya - Saiful Anwar General Hospital, Malang, East Java Province, Indonesia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Status epilepticus (SE) is a neurological emergency that is associated with significant mortality and morbidity. SE is classified as convulsive status epilepticus (CSE) when accompanied by motor contractions.1 In adults, acute stroke is the most frequent etiology of SE. The other causes are metabolic disorders, hypoxia, and low levels of antiseizure medicati",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-3-8",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "507-510",
+    "views": 4860,
+    "downloads": 1711,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2623",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2623",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2623",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2623",
+    "localPdfUrl": "js/data/pdfs/2623.pdf",
+    "pdfUrl": "js/data/pdfs/2623.pdf"
+  },
+  {
+    "id": 2652,
+    "type": "Scientific Letter",
+    "title": "Neuroinvasive West Nile Virus Infections in the Trakya Region of Türkiye",
+    "authors": [
+      {
+        "name": "Habibe Tülin Elmaslar Mert",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Zerrin Yuluğkural",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ezgi Kula",
+        "affiliation": "Department of Neurology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Betül Yüzügüldü",
+        "affiliation": "Department of Microbiology Reference Laboratories and Biological Products, Public Health General Directorate of Türkiye, National Virology Reference Laboratory, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Figen Kuloğlu",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "In August 2024, we detected an unusual outbreak of acute meningoencephalitis. When clinicians were cautioned by the national associations of Infectious Diseases and the National Arboviruses and Viral Zoonoses Reference Laboratory (Ankara, Türkiye) detected West Nile virus (WNV) in serum and/or urine samples employing the polymerase chain reaction (PCR) techn",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-9-72",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "511-513",
+    "views": 4521,
+    "downloads": 1563,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2652",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2652",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2652",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2652",
+    "localPdfUrl": "js/data/pdfs/2652.pdf",
+    "pdfUrl": "js/data/pdfs/2652.pdf"
+  },
+  {
+    "id": 2629,
+    "type": "Scientific Letter",
+    "title": "Congenital Hypofibrinogenemia is a Potential Risk Factor for Ischemic Stroke",
+    "authors": [
+      {
+        "name": "Demet Bölükbaşı",
+        "affiliation": "Clinic of Anesthesiology and Reanimation, Intensive Care Unit, Ankara Bilkent City Hospital, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Şerife Gökbulut Bektaş",
+        "affiliation": "Clinic of Anesthesiology and Reanimation, Intensive Care Unit, Ankara Bilkent City Hospital, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Duygu Kayar Çalılı",
+        "affiliation": "Clinic of Anesthesiology and Reanimation, Intensive Care Unit, Yıldırım Beyazıt University, Ankara Bilkent City Hospital, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Şeval İzdeş[[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Fibrinogen plays an important role in hemostasis. Although acquired fibrinogen deficiency is relatively common, congenital hypofibrinogenemia is rare.1,2 This rarity may lead to its underdiagnosis, particularly in cases of mild congenital hypofibrinogenemia. Bleeding is the hallmark manifestation in these patients.1-3 However, we propose that ischemic events",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-6-9",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "514-515",
+    "views": 4507,
+    "downloads": 1529,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2629",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2629",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2629",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2629",
+    "localPdfUrl": "js/data/pdfs/2629.pdf",
+    "pdfUrl": "js/data/pdfs/2629.pdf"
+  },
+  {
+    "id": 2634,
+    "type": "Letter to the Editor",
+    "title": "Comment on",
+    "authors": [
+      {
+        "name": "Levent Pay",
+        "affiliation": "Department of Cardiology, University of Health Sciences Türkiye, Haseki Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "I read the original article by Şahin et al.1 with considerable interest, which revealed geographic disparities in heart failure (HF) characteristics, including decreased mortality rates in socioeconomically impoverished areas of Türkiye. I would like to commend the authors for their comprehensive analysis as well as share our insights to enhance the understa",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-7-96",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "516-517",
+    "views": 4416,
+    "downloads": 1570,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2634",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2634",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2634",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2634",
+    "localPdfUrl": "js/data/pdfs/2634.pdf",
+    "pdfUrl": "js/data/pdfs/2634.pdf"
+  },
+  {
+    "id": 2653,
+    "type": "Other",
+    "title": "REVIEWER LIST",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "6",
+    "pages": "",
+    "views": 4001,
+    "downloads": 1065,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1293",
+    "sourceArticleId": "2653",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2653",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2653",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2653",
+    "localPdfUrl": "js/data/pdfs/2653.pdf",
+    "pdfUrl": "js/data/pdfs/2653.pdf"
+  }
+]

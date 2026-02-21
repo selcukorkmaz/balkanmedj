@@ -1,0 +1,699 @@
+[
+  {
+    "id": 2092,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "3",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1256",
+    "sourceArticleId": "2092",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2092",
+    "localPdfUrl": "js/data/pdfs/2092.pdf",
+    "pdfUrl": "js/data/pdfs/2092.pdf"
+  },
+  {
+    "id": 2086,
+    "type": "Editorial",
+    "title": "Which Threats to Global Health Pose a Problem for Turkey",
+    "authors": [
+      {
+        "name": "Burcu Tokuç",
+        "affiliation": "Department of Public Health, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "The world today faces multiple health challenges. The World Health Organization (WHO) recently published a list of ten threats to global health in the year 2019. These include outbreaks of vaccine-preventable diseases, increased reports of drug-resistant pathogens, increased rates of obesity and physical inactivity, health effects of climate change and envir",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.3.001",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "3",
+    "pages": "152-154",
+    "views": 6455,
+    "downloads": 10065,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1256",
+    "sourceArticleId": "2086",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2086",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2086",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2086",
+    "localPdfUrl": "js/data/pdfs/2086.pdf",
+    "pdfUrl": "js/data/pdfs/2086.pdf"
+  },
+  {
+    "id": 2062,
+    "type": "Original Article",
+    "title": "The Adipokine Profile and the Cardiometabolic Risk in Non-Obese Young Adults",
+    "authors": [
+      {
+        "name": "Marina Ruxandra Otelea",
+        "affiliation": "Carol Davila University of Medicine and Pharmacy, Bucharest, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Adrian Streinu-Cercel",
+        "affiliation": "Carol Davila University of Medicine and Pharmacy, Bucharest, Romania; Institute for Infectious Diseases ‘Matei Bals’, Bucharest, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Cristian Băicus",
+        "affiliation": "Carol Davila University of Medicine and Pharmacy, Bucharest, Romania; Clinical Hospital Colentina, Bucharest, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Maria Nitescu",
+        "affiliation": "Carol Davila University of Medicine and Pharmacy, Bucharest, Romania; Institute for Infectious Diseases ‘Matei Bals’, Bucharest, Romania",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Young, non-obese adults are considered at low risk for cardiometabolic diseases, although markers of an unhealthy metabolic state are not uncommon findings in this population. Adipose tissue dysfunction, evaluated by the adipokine profile, significantly influences lipid and glucose metabolism and low-grade systemic inflammation.Aims: To determine the relation between adipose tissue dysfunction and the already confirmed cardiometabolic risk indicators, including the atherogenic index of plasma, lipid accumulation product, homeostatic model assessment of insulin resistance, and the low-grade inflammation markers, namely, interleukin 6 and high-sensitivity C-reactive protein. Study Design: Cross-sectional study.Methods: We recruited 93 non-obese, healthy young adults. Anthropometric, lipid profile, inflammatory markers, and adipokines were measured. An abnormal adipokine profile (high leptin-to-adiponectin ratio) was considered as a marker of a dysfunctional adipose tissue. The correlation between the leptin-to-adiponectin ratio and the anthropometric measurements, atherogenic index of plasma, lipid accumulation product, homeostatic model assessment of insulin resistance, interleukin 6, and high-sensitivity C-reactive protein was determined. Results: We found a direct correlation between the abnormal adipokine profile and the cardiometabolic risk indicators mentioned above, except for the low-grade inflammatory markers. In the regression model derived from our data, the leptin-to-adiponectin ratio was best correlated with the unfavorable plasma lipid profile, as estimated by the atherogenic index of plasma (r=0.097, confidence interval=0.015-0.180, p=0.021). A significantly higher leptin-to-adiponectin ratio was found in the insulin-resistant group (p=0.012) and in the highest lipid accumulation product quartile (p=0.032).Conclusion: In a non-obese young population, the high rate of leptin-adiponectin may be a good predictor of cardiovascular and metabolic risk assessment.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Young, non-obese adults are considered at low risk for cardiometabolic diseases, although markers of an unhealthy metabolic state are not uncommon findings in this population. Adipose tissue dysfunction, evaluated by the adipokine profile, significantly influences lipid and glucose metabolism and low-grade systemic inflammation.<br /><strong>Aims:</strong> To determine the relation between adipose tissue dysfunction and the already confirmed cardiometabolic risk indicators, including the atherogenic index of plasma, lipid accumulation product, homeostatic model assessment of insulin resistance, and the low-grade inflammation markers, namely, interleukin 6 and high-sensitivity C-reactive protein. <br /><strong>Study Design:</strong> Cross-sectional study.<br /><strong>Methods:</strong> We recruited 93 non-obese, healthy young adults. Anthropometric, lipid profile, inflammatory markers, and adipokines were measured. An abnormal adipokine profile (high leptin-to-adiponectin ratio) was considered as a marker of a dysfunctional adipose tissue. The correlation between the leptin-to-adiponectin ratio and the anthropometric measurements, atherogenic index of plasma, lipid accumulation product, homeostatic model assessment of insulin resistance, interleukin 6, and high-sensitivity C-reactive protein was determined. <br /><strong>Results:</strong> We found a direct correlation between the abnormal adipokine profile and the cardiometabolic risk indicators mentioned above, except for the low-grade inflammatory markers. In the regression model derived from our data, the leptin-to-adiponectin ratio was best correlated with the unfavorable plasma lipid profile, as estimated by the atherogenic index of plasma (r=0.097, confidence interval=0.015-0.180, p=0.021). A significantly higher leptin-to-adiponectin ratio was found in the insulin-resistant group (p=0.012) and in the highest lipid accumulation product quartile (p=0.032).<br /><strong>Conclusion:</strong> In a non-obese young population, the high rate of leptin-adiponectin may be a good predictor of cardiovascular and metabolic risk assessment.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Young, non-obese adults are considered at low risk for cardiometabolic diseases, although markers of an unhealthy metabolic state are not uncommon findings in this population. Adipose tissue dysfunction, evaluated by the adipokine profile, significantly influences lipid and glucose metabolism and low-grade systemic inflammation.Aims: To determine the relation between adipose tissue dysfunction and the already confirmed cardiometabolic risk indicators, including the atherogenic index of plasma, lipid accumulation product, homeostatic model assessment of insulin resistance, and the low-grade inflammation markers, namely, interleukin 6 and high-sensitivity C-reactive protein. Study Design: Cross-sectional study.Methods: We recruited 93 non-obese, healthy young adults. Anthropometric, lipid profile, inflammatory markers, and adipokines were measured. An abnormal adipokine profile (high leptin-to-adiponectin ratio) was considered as a marker of a dysfunctional adipose tissue. The correlation between the leptin-to-adiponectin ratio and the anthropometric measurements, atherogenic index of plasma, lipid accumulation product, homeostatic model assessment of insulin resistance, interleukin 6, and high-sensitivity C-reactive protein was determined. Results: We found a direct correlation between the abnormal adipokine profile and the cardiometabolic risk indicators mentioned above, except for the low-grade inflammatory markers. In the regression model derived from our data, the leptin-to-adiponectin ratio was best correlated with the unfavorable plasma lipid profile, as estimated by the atherogenic index of plasma (r=0.097, confidence interval=0.015-0.180, p=0.021). A significantly higher leptin-to-adiponectin ratio was found in the insulin-resistant group (p=0.012) and in the highest lipid accumulation product quartile (p=0.032).Conclusion: In a non-obese young population, the high rate of leptin-adiponectin may be a good predictor of cardiovascular and metabolic risk assessment.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2018.0789",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "3",
+    "pages": "155-161",
+    "views": 15650,
+    "downloads": 9696,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1256",
+    "sourceArticleId": "2062",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2062",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2062",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2062",
+    "localPdfUrl": "js/data/pdfs/2062.pdf",
+    "pdfUrl": "js/data/pdfs/2062.pdf"
+  },
+  {
+    "id": 2065,
+    "type": "Original Article",
+    "title": "Higher Income for Male Physicians: Findings About Salary Differences Between Male and Female Iranian Physicians",
+    "authors": [
+      {
+        "name": "Enayatollah Homaie Rad",
+        "affiliation": "Social Determinants of Health Research Center, Guilan University of Medical Sciences, Rasht, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Elham Ehsani-Chimeh",
+        "affiliation": "National Institute for Health Research, Tehran University of Medical Sciences, Tehran, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Masoumeh Najafi Gharebehlagh",
+        "affiliation": "School of Public Health, Tehran University of Medical Sciences, Tehran, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Fatemeh Kokabisaghi",
+        "affiliation": "Erasmus School of Health Policy and Management, Erasmus University Rotterdam, Rotterdam, Netherlands",
+        "orcid": ""
+      },
+      {
+        "name": "Satar Rezaei",
+        "affiliation": "Research Center for Environmental Determinants of Health, Health Institute, Kermanshah University of Medical Sciences, Kermanshah, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Maryam Yaghoubi",
+        "affiliation": "Health Management Research Center, Baqiyatallah University of Medical Sciences, Tehran, Iran",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: In recent decades, the role of women in the organizations of developed and less developed countries has increased, but little is known about gender gap in salaries of Iranian physicians.Aims: To analyze the gender gap in the salary of physicians working in public health sector of Iran and its predicting factors in 2016.Study Design: Cross sectional study.Methods: Thirty thousand eight hundred and twenty four records about characteristics of study population were extracted from national human resources for health database. Nearest neighborhood matching technique was used to find adjusted differences of salary between male and female physicians. In addition, by using Oaxaca decomposition method, the reasons for the differences were found.Results: The results showed that there was a difference of 117 dollars in monthly salaries of male and female physicians in favor of men. Differences in male and female salaries could be predicted by place of work and residency, type of specialty, type of employment and marital status.Conclusion: Gender gap in physicians’ salaries exists in public health sector of Iran. The payment methods of salaries for men and women should be revised in order to remove the inequalities.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> In recent decades, the role of women in the organizations of developed and less developed countries has increased, but little is known about gender gap in salaries of Iranian physicians.<br /><strong>Aims:</strong> To analyze the gender gap in the salary of physicians working in public health sector of Iran and its predicting factors in 2016.<br /><strong>Study Design:</strong> Cross sectional study.<br /><strong>Methods:</strong> Thirty thousand eight hundred and twenty four records about characteristics of study population were extracted from national human resources for health database. Nearest neighborhood matching technique was used to find adjusted differences of salary between male and female physicians. In addition, by using Oaxaca decomposition method, the reasons for the differences were found.<br /><strong>Results:</strong> The results showed that there was a difference of 117 dollars in monthly salaries of male and female physicians in favor of men. Differences in male and female salaries could be predicted by place of work and residency, type of specialty, type of employment and marital status.<br /><strong>Conclusion:</strong> Gender gap in physicians&rsquo; salaries exists in public health sector of Iran. The payment methods of salaries for men and women should be revised in order to remove the inequalities.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: In recent decades, the role of women in the organizations of developed and less developed countries has increased, but little is known about gender gap in salaries of Iranian physicians.Aims: To analyze the gender gap in the salary of physicians working in public health sector of Iran and its predicting factors in 2016.Study Design: Cross sectional study.Methods: Thirty thousand eight hundred and twenty four records about characteristics of study population were extracted from national human resources for health database. Nearest neighborhood matching technique was used to find adjusted differences of salary between male and female physicians. In addition, by using Oaxaca decomposition method, the reasons for the differences were found.Results: The results showed that there was a difference of 117 dollars in monthly salaries of male and female physicians in favor of men. Differences in male and female salaries could be predicted by place of work and residency, type of specialty, type of employment and marital status.Conclusion: Gender gap in physicians’ salaries exists in public health sector of Iran. The payment methods of salaries for men and women should be revised in order to remove the inequalities.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2018.1082",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "3",
+    "pages": "162-168",
+    "views": 16187,
+    "downloads": 17701,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1256",
+    "sourceArticleId": "2065",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2065",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2065",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2065",
+    "localPdfUrl": "js/data/pdfs/2065.pdf",
+    "pdfUrl": "js/data/pdfs/2065.pdf"
+  },
+  {
+    "id": 2066,
+    "type": "Original Article",
+    "title": "Association Between Erosive Esophagitis and the Anthropometric Index in the General Korean Population",
+    "authors": [
+      {
+        "name": "Hyun Young Kim",
+        "affiliation": "Department of Internal Medicine, Seoul National University Bundang Hospital, Seongnam-si, Korea",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: An association between obesity and gastroesophageal reflux disease has been reported. However, previous studies have focused on obesity or central obesity.Aims: To investigate the association of the anthropometric index and endoscopic erosive esophagitis in health checkups of Koreans.Study Design: Case-control study.Methods: A total of 1.207 consecutive subjects (aged 40-80 years) during health checkups underwent upper endoscopy and bioelectrical impedance analysis. We collected anthropometric data by bioelectrical impedance analysis, which consisted of body mass index, percent body fat, muscle mass, and fat mass.Results: Of 1.207 subjects who underwent upper gastrointestinal endoscopy (mean age, 50.55±9 years), 239 (19.8%) had endoscopic erosive esophagitis. In a univariate analysis, the endoscopic erosive esophagitis group was more likely to be a male and had a higher body mass index, muscle mass and fat mass. In logistic regression analysis, only muscle mass remained an independent risk factor for EE after adjustment for both age and gender. Higher muscle mass was associated with increased EE risk (rate ratio: 1.354, 95% confidence interval: 1.206-1.405, p= 0.027).Conclusion: High muscle mass, but body mass index, is an independent risk factor for erosive esophagitis in a population over 40 years of age.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> An association between obesity and gastroesophageal reflux disease has been reported. However, previous studies have focused on obesity or central obesity.<br /><strong>Aims:</strong> To investigate the association of the anthropometric index and endoscopic erosive esophagitis in health checkups of Koreans.<br /><strong>Study Design:</strong> Case-control study.<br /><strong>Methods:</strong> A total of 1.207 consecutive subjects (aged 40-80 years) during health checkups underwent upper endoscopy and bioelectrical impedance analysis. We collected anthropometric data by bioelectrical impedance analysis, which consisted of body mass index, percent body fat, muscle mass, and fat mass.<br /><strong>Results:</strong> Of 1.207 subjects who underwent upper gastrointestinal endoscopy (mean age, 50.55&plusmn;9 years), 239 (19.8%) had endoscopic erosive esophagitis. In a univariate analysis, the endoscopic erosive esophagitis group was more likely to be a male and had a higher body mass index, muscle mass and fat mass. In logistic regression analysis, only muscle mass remained an independent risk factor for EE after adjustment for both age and gender. Higher muscle mass was associated with increased EE risk (rate ratio: 1.354, 95% confidence interval: 1.206-1.405, p= 0.027).<br /><strong>Conclusion:</strong> High muscle mass, but body mass index, is an independent risk factor for erosive esophagitis in a population over 40 years of age.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: An association between obesity and gastroesophageal reflux disease has been reported. However, previous studies have focused on obesity or central obesity.Aims: To investigate the association of the anthropometric index and endoscopic erosive esophagitis in health checkups of Koreans.Study Design: Case-control study.Methods: A total of 1.207 consecutive subjects (aged 40-80 years) during health checkups underwent upper endoscopy and bioelectrical impedance analysis. We collected anthropometric data by bioelectrical impedance analysis, which consisted of body mass index, percent body fat, muscle mass, and fat mass.Results: Of 1.207 subjects who underwent upper gastrointestinal endoscopy (mean age, 50.55±9 years), 239 (19.8%) had endoscopic erosive esophagitis. In a univariate analysis, the endoscopic erosive esophagitis group was more likely to be a male and had a higher body mass index, muscle mass and fat mass. In logistic regression analysis, only muscle mass remained an independent risk factor for EE after adjustment for both age and gender. Higher muscle mass was associated with increased EE risk (rate ratio: 1.354, 95% confidence interval: 1.206-1.405, p= 0.027).Conclusion: High muscle mass, but body mass index, is an independent risk factor for erosive esophagitis in a population over 40 years of age.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2018.0523",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "3",
+    "pages": "169-173",
+    "views": 7282,
+    "downloads": 16899,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1256",
+    "sourceArticleId": "2066",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2066",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2066",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2066",
+    "localPdfUrl": "js/data/pdfs/2066.pdf",
+    "pdfUrl": "js/data/pdfs/2066.pdf"
+  },
+  {
+    "id": 2070,
+    "type": "Original Article",
+    "title": "Novel SNARE Complex Polymorphisms Associated with Multiple Sclerosis: Signs of Synaptopathy in Multiple Sclerosis",
+    "authors": [
+      {
+        "name": "Osman Özgür Yalın",
+        "affiliation": "Clinic of Neurology, İstanbul Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuba Gökdoğan Edgünlü",
+        "affiliation": "Department of Medical Biology, Muğla Sıtkı Koçman University School of Medicine, Muğla, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sevim Karakaş Çelik",
+        "affiliation": "Department of Molecular Biology and Genetic, Zonguldak Bülent Ecevit University Faculty of Science, Zonguldak, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ufuk Emre",
+        "affiliation": "Clinic of Neurology, İstanbul Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Taşkın Güneş",
+        "affiliation": "Clinic of Neurology, İstanbul Bahçelievler State Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yüksel Erdal",
+        "affiliation": "Clinic of Neurology, İstanbul Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aysun Eroğlu Ünal",
+        "affiliation": "Department of Neurology, Tekirdağ Namık Kemal University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: It is well known that axonal degeneration plays a role in disability in patients with multiple sclerosis, and synaptopathy has recently become an important issue.Aims: To investigate the possible roles of selected synaptic and presynaptic membrane protein genetic polymorphisms (VAMP2, SNAP-25, synaptotagmin, and syntaxin 1A) in patients with multiple sclerosis.Study Design: Case-control study.Methods: A total of 123 patients with multiple sclerosis and 192 healthy controls were included. The functional polymorphisms of specific SNARE complex proteins (VAMP2, synaptotagmin XI, syntaxin 1A, and SNAP-25) were analyzed by polymerase chain reaction.Results: Significant differences were detected in the genotype and allele distribution of 26-bp Ins/Del polymorphisms of VAMP2 between patients with multiple sclerosis and control subjects; Del/Del genotype and Del allele of VAMP2 were more frequent in patients with multiple sclerosis (p=0.011 and p=0.004, respectively). Similarly, Ddel polymorphism of SNAP-25 gene C/C genotype (p=0.059), syntaxin 1A T/C and C/C genotypes (p=0.005), and synaptotagmin XI gene C allele (p=0.001) were observed more frequently in patients with multiple sclerosis. CC, syntaxin rs1569061 1A gene for 33-bp promoter region TC haplotypes, and synaptotagmin XI gene were found to be associated with an increased risk for multiple sclerosis (p=0.012). Similarly, GC haplotype for rs3746544 of SNAP-25 gene and rs1051312 of SNAP-25 gene were associated with an increased risk for multiple sclerosis (p=0.022).Conclusion: Genetic polymorphisms of SNARE complex proteins, which have critical roles in synaptic structure and communication, may play a role in the development of multiple sclerosis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> It is well known that axonal degeneration plays a role in disability in patients with multiple sclerosis, and synaptopathy has recently become an important issue.<br /><strong>Aims:</strong> To investigate the possible roles of selected synaptic and presynaptic membrane protein genetic polymorphisms (VAMP2, SNAP-25, synaptotagmin, and syntaxin 1A) in patients with multiple sclerosis.<br /><strong>Study Design:</strong> Case-control study.<br /><strong>Methods:</strong> A total of 123 patients with multiple sclerosis and 192 healthy controls were included. The functional polymorphisms of specific SNARE complex proteins (VAMP2, synaptotagmin XI, syntaxin 1A, and SNAP-25) were analyzed by polymerase chain reaction.<br /><strong>Results:</strong> Significant differences were detected in the genotype and allele distribution of 26-bp Ins/Del polymorphisms of VAMP2 between patients with multiple sclerosis and control subjects; Del/Del genotype and Del allele of VAMP2 were more frequent in patients with multiple sclerosis (p=0.011 and p=0.004, respectively). Similarly, Ddel polymorphism of SNAP-25 gene C/C genotype (p=0.059), syntaxin 1A T/C and C/C genotypes (p=0.005), and synaptotagmin XI gene C allele (p=0.001) were observed more frequently in patients with multiple sclerosis. CC, syntaxin rs1569061 1A gene for 33-bp promoter region TC haplotypes, and synaptotagmin XI gene were found to be associated with an increased risk for multiple sclerosis (p=0.012). Similarly, GC haplotype for rs3746544 of SNAP-25 gene and rs1051312 of SNAP-25 gene were associated with an increased risk for multiple sclerosis (p=0.022).<br /><strong>Conclusion:</strong> Genetic polymorphisms of SNARE complex proteins, which have critical roles in synaptic structure and communication, may play a role in the development of multiple sclerosis.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: It is well known that axonal degeneration plays a role in disability in patients with multiple sclerosis, and synaptopathy has recently become an important issue.Aims: To investigate the possible roles of selected synaptic and presynaptic membrane protein genetic polymorphisms (VAMP2, SNAP-25, synaptotagmin, and syntaxin 1A) in patients with multiple sclerosis.Study Design: Case-control study.Methods: A total of 123 patients with multiple sclerosis and 192 healthy controls were included. The functional polymorphisms of specific SNARE complex proteins (VAMP2, synaptotagmin XI, syntaxin 1A, and SNAP-25) were analyzed by polymerase chain reaction.Results: Significant differences were detected in the genotype and allele distribution of 26-bp Ins/Del polymorphisms of VAMP2 between patients with multiple sclerosis and control subjects; Del/Del genotype and Del allele of VAMP2 were more frequent in patients with multiple sclerosis (p=0.011 and p=0.004, respectively). Similarly, Ddel polymorphism of SNAP-25 gene C/C genotype (p=0.059), syntaxin 1A T/C and C/C genotypes (p=0.005), and synaptotagmin XI gene C allele (p=0.001) were observed more frequently in patients with multiple sclerosis. CC, syntaxin rs1569061 1A gene for 33-bp promoter region TC haplotypes, and synaptotagmin XI gene were found to be associated with an increased risk for multiple sclerosis (p=0.012). Similarly, GC haplotype for rs3746544 of SNAP-25 gene and rs1051312 of SNAP-25 gene were associated with an increased risk for multiple sclerosis (p=0.022).Conclusion: Genetic polymorphisms of SNARE complex proteins, which have critical roles in synaptic structure and communication, may play a role in the development of multiple sclerosis.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2017.1034",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "3",
+    "pages": "174-178",
+    "views": 6682,
+    "downloads": 10784,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1256",
+    "sourceArticleId": "2070",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2070",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2070",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2070",
+    "localPdfUrl": "js/data/pdfs/2070.pdf",
+    "pdfUrl": "js/data/pdfs/2070.pdf"
+  },
+  {
+    "id": 2071,
+    "type": "Original Article",
+    "title": "The Incidence of Cystic Fibrosis in the Central Region of Anatolia in Turkey Between 2015 and 2016",
+    "authors": [
+      {
+        "name": "Melih Hangül",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Pulmonology, Erciyes University School of Medicine, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sevgi Pekcan",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Pulmonology, Necmettin Erbakan University Meram Faculty of Medicine, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Köse",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Pulmonology, Erciyes University School of Medicine, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Deniz Acıcan",
+        "affiliation": "Department of Child and Adolescent, Public Health General Directorate, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuba Esra Şahlar",
+        "affiliation": "Konya Provincial Public Health Directorate, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Erdoğan",
+        "affiliation": "Clinic of Genetics, Kayseri City Hospital, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Kendirci",
+        "affiliation": "Departman of Pediatrics, Division of Pediatric Nutrition and Metabolism, Erciyes University School of Medicine, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Deniz Güney",
+        "affiliation": "Kayseri Provincial Public Health Directorate, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hasan Öznavruz",
+        "affiliation": "Konya Provincial Public Health Directorate, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Osman Demir",
+        "affiliation": "Kayseri Provincial Public Health Directorate, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ömür Ercan",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Pulmonology, Necmettin Erbakan University Meram Faculty of Medicine, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatma Göçlü",
+        "affiliation": "Kayseri Provincial Public Health Directorate, Kayseri, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Cystic fibrosis is the most common metabolic chronic disease among European Caucasian children. Cystic fibrosis incidence in Northern Europeans countries is approximately 1 in 3000 births while the worldwide prevalence varies considerably. Aims: To determine the incidence of cystic fibrosis in the central region of Anatolia in Turkey using the newborn screening program data.Study Design: Cross-sectional study. Methods: We used the records of the newborn screening program which is implemented by the Konya and Kayseri Provincial Health Directories. Between January 2015 and December 2016, there were a total of 119006 live births in Konya and Kayseri. The newborn screening test was applied to all these babies.Results: During this period, there were 22 live born babies diagnosed with cystic fibrosis in Konya with an incidence of 2.9 per 10000 live births and 13 live born babies diagnosed with cystic fibrosis in Kayseri with an incidence of 2.8 per 10000 live births. In genetic of 30 patients, fifteen patients were homozygous, and 15 patients were a compound heterozygote. Twenty-one different gene variants were detected and the most common mutation was F508del (17/30)Conclusion: We found the incidence of cystic fibrosis in central Anatolia similar to northern European countries.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Cystic fibrosis is the most common metabolic chronic disease among European Caucasian children. Cystic fibrosis incidence in Northern Europeans countries is approximately 1 in 3000 births while the worldwide prevalence varies considerably. <br /><strong>Aims:</strong> To determine the incidence of cystic fibrosis in the central region of Anatolia in Turkey using the newborn screening program data.<br /><strong>Study Design:</strong> Cross-sectional study. <br /><strong>Methods:</strong> We used the records of the newborn screening program which is implemented by the Konya and Kayseri Provincial Health Directories. Between January 2015 and December 2016, there were a total of 119006 live births in Konya and Kayseri. The newborn screening test was applied to all these babies.<br /><strong>Results:</strong> During this period, there were 22 live born babies diagnosed with cystic fibrosis in Konya with an incidence of 2.9 per 10000 live births and 13 live born babies diagnosed with cystic fibrosis in Kayseri with an incidence of 2.8 per 10000 live births. In genetic of 30 patients, fifteen patients were homozygous, and 15 patients were a compound heterozygote. Twenty-one different gene variants were detected and the most common mutation was F508del (17/30)<br /><strong>Conclusion:</strong> We found the incidence of cystic fibrosis in central Anatolia similar to northern European countries.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Cystic fibrosis is the most common metabolic chronic disease among European Caucasian children. Cystic fibrosis incidence in Northern Europeans countries is approximately 1 in 3000 births while the worldwide prevalence varies considerably. Aims: To determine the incidence of cystic fibrosis in the central region of Anatolia in Turkey using the newborn screening program data.Study Design: Cross-sectional study. Methods: We used the records of the newborn screening program which is implemented by the Konya and Kayseri Provincial Health Directories. Between January 2015 and December 2016, there were a total of 119006 live births in Konya and Kayseri. The newborn screening test was applied to all these babies.Results: During this period, there were 22 live born babies diagnosed with cystic fibrosis in Konya with an incidence of 2.9 per 10000 live births and 13 live born babies diagnosed with cystic fibrosis in Kayseri with an incidence of 2.8 per 10000 live births. In genetic of 30 patients, fifteen patients were homozygous, and 15 patients were a compound heterozygote. Twenty-one different gene variants were detected and the most common mutation was F508del (17/30)Conclusion: We found the incidence of cystic fibrosis in central Anatolia similar to northern European countries.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2018.1332",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "3",
+    "pages": "179-183",
+    "views": 6713,
+    "downloads": 11535,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1256",
+    "sourceArticleId": "2071",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2071",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2071",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2071",
+    "localPdfUrl": "js/data/pdfs/2071.pdf",
+    "pdfUrl": "js/data/pdfs/2071.pdf"
+  },
+  {
+    "id": 2073,
+    "type": "Original Article",
+    "title": "Programmed Death-Ligand-1 Expression in Non-Small Cell Lung Cancer and Prognosis",
+    "authors": [
+      {
+        "name": "Songül Şahin",
+        "affiliation": "Pathology Laboratory, Çankırı State Hospital, Çankırı, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şebnem Batur",
+        "affiliation": "Department of Pathology, İstanbul University-Cerrahpaşa, Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Övgü Aydın",
+        "affiliation": "Department of Pathology, İstanbul University-Cerrahpaşa, Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tülin Öztürk",
+        "affiliation": "Department of Pathology, İstanbul University-Cerrahpaşa, Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Akif Turna",
+        "affiliation": "Department of Thoracic Surgery, İstanbul University-Cerrahpaşa, Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Büge Öz",
+        "affiliation": "Department of Pathology, İstanbul University-Cerrahpaşa, Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Prognostic significance of the programmed death-ligand-1 status in non-small cell lung carcinoma remains controversial. Aims: To show the programmed death-ligand-1 expression status in patients with non-small cell lung carcinoma and its effect on the prognosis and the relationship with clinicopathologic data. Study Design: Retrospective cross-sectional study.Methods: The study included 208 cases who were diagnosed with NSCLC and who underwent surgical resection between 2001 and 2012. Programmed death-ligand-1 (SP142 clone) was applied to the histological sections acquired from the microarray paraffin blocks with immunohistochemistry. Staining intensity was scored as weak (+, 1), moderate (++, 2), and strong (+++, 3). Percentage (0%-100%) was multiplied by staining intensity (1-2-3) to calculate the H score. Four different cut-off values were used; 1: ≥1% (independent of intensity), 2: ≥5% (independent of intensity), 3: ≥5% moderate/strong staining (except for weak staining), 4: H score ≥30 values were considered positive. In this study, staining a single cell at any intensity was considered positive. Results: Thirty-four out 208 cases (16.3%) had PDL-1 positive staining. PDL-1 expression was observed in patients with non-small cell lung carcinoma independent of the histological type or subtype (range; 0-25%). When the cut-off level was set to ≥5% with moderate and strong staining, the median overall survival was 45 months for the PD-L1 positive group and not reached for the PD-L1 negative group (p-value 0.024). PD-L1 positivity was significantly higher in patients over the age of 60 years and in cases with a tumor diameter of more than 5 cm (p=0.023 and 0.025, respectively).Conclusion: PD-L1 expression is positive in 16.3% of patients with non-small cell lung cancer and may have a negative prognostic value.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Prognostic significance of the programmed death-ligand-1 status in non-small cell lung carcinoma remains controversial. <br /><strong>Aims:</strong> To show the programmed death-ligand-1 expression status in patients with non-small cell lung carcinoma and its effect on the prognosis and the relationship with clinicopathologic data. <br /><strong>Study Design:</strong> Retrospective cross-sectional study.<br /><strong>Methods:</strong> The study included 208 cases who were diagnosed with NSCLC and who underwent surgical resection between 2001 and 2012. Programmed death-ligand-1 (SP142 clone) was applied to the histological sections acquired from the microarray paraffin blocks with immunohistochemistry. Staining intensity was scored as weak (+, 1), moderate (++, 2), and strong (+++, 3). Percentage (0%-100%) was multiplied by staining intensity (1-2-3) to calculate the H score. Four different cut-off values were used; 1: &ge;1% (independent of intensity), 2: &ge;5% (independent of intensity), 3: &ge;5% moderate/strong staining (except for weak staining), 4: H score &ge;30 values were considered positive. In this study, staining a single cell at any intensity was considered positive. <br /><strong>Results:</strong> Thirty-four out 208 cases (16.3%) had PDL-1 positive staining. PDL-1 expression was observed in patients with non-small cell lung carcinoma independent of the histological type or subtype (range; 0-25%). When the cut-off level was set to &ge;5% with moderate and strong staining, the median overall survival was 45 months for the PD-L1 positive group and not reached for the PD-L1 negative group (p-value 0.024). PD-L1 positivity was significantly higher in patients over the age of 60 years and in cases with a tumor diameter of more than 5 cm (p=0.023 and 0.025, respectively).<br /><strong>Conclusion:</strong> PD-L1 expression is positive in 16.3% of patients with non-small cell lung cancer and may have a negative prognostic value.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Prognostic significance of the programmed death-ligand-1 status in non-small cell lung carcinoma remains controversial. Aims: To show the programmed death-ligand-1 expression status in patients with non-small cell lung carcinoma and its effect on the prognosis and the relationship with clinicopathologic data. Study Design: Retrospective cross-sectional study.Methods: The study included 208 cases who were diagnosed with NSCLC and who underwent surgical resection between 2001 and 2012. Programmed death-ligand-1 (SP142 clone) was applied to the histological sections acquired from the microarray paraffin blocks with immunohistochemistry. Staining intensity was scored as weak (+, 1), moderate (++, 2), and strong (+++, 3). Percentage (0%-100%) was multiplied by staining intensity (1-2-3) to calculate the H score. Four different cut-off values were used; 1: ≥1% (independent of intensity), 2: ≥5% (independent of intensity), 3: ≥5% moderate/strong staining (except for weak staining), 4: H score ≥30 values were considered positive. In this study, staining a single cell at any intensity was considered positive. Results: Thirty-four out 208 cases (16.3%) had PDL-1 positive staining. PDL-1 expression was observed in patients with non-small cell lung carcinoma independent of the histological type or subtype (range; 0-25%). When the cut-off level was set to ≥5% with moderate and strong staining, the median overall survival was 45 months for the PD-L1 positive group and not reached for the PD-L1 negative group (p-value 0.024). PD-L1 positivity was significantly higher in patients over the age of 60 years and in cases with a tumor diameter of more than 5 cm (p=0.023 and 0.025, respectively).Conclusion: PD-L1 expression is positive in 16.3% of patients with non-small cell lung cancer and may have a negative prognostic value.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2018.2018.0392",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "3",
+    "pages": "184-189",
+    "views": 6440,
+    "downloads": 17294,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1256",
+    "sourceArticleId": "2073",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2073",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2073",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2073",
+    "localPdfUrl": "js/data/pdfs/2073.pdf",
+    "pdfUrl": "js/data/pdfs/2073.pdf"
+  },
+  {
+    "id": 2085,
+    "type": "Clinical Image",
+    "title": "Flexion-Induced Cervical Cord Compression: Hirayama Disease",
+    "authors": [
+      {
+        "name": "Sena Tolu",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Medipol University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fikret Aysal",
+        "affiliation": "Department of Neurology, Medipol University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuğrul Örmeci",
+        "affiliation": "Department of Radiology, Medipol University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Ethem Kirez",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Medipol University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurbanu Hindioğlu[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 15-year-old man was presented with progressive weakness and amyotrophy of the right distal arm and hand muscles, which had been present for the last 3 months. The patient had no comorbid diseases and a history of cervical trauma. His family members had no neuromuscular disorders. A clinical examination showed weakness of the right interosseous muscles (gra",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.1.16",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "3",
+    "pages": "190-191",
+    "views": 5851,
+    "downloads": 9412,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1256",
+    "sourceArticleId": "2085",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2085",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2085",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2085",
+    "localPdfUrl": "js/data/pdfs/2085.pdf",
+    "pdfUrl": "js/data/pdfs/2085.pdf"
+  },
+  {
+    "id": 2088,
+    "type": "Clinical Image",
+    "title": "Possible Holt-Oram Syndrome: Missed Prenatal Diagnosis and Sub-Optimal Management in a Poor-Resourced Hospital",
+    "authors": [
+      {
+        "name": "Ayokunle Osonuga",
+        "affiliation": "Department of Internal Medicine, Babcock University Teaching Hospital, Ilishan, Nigeria",
+        "orcid": ""
+      },
+      {
+        "name": "Jeffrey K. Arhin",
+        "affiliation": "Department of Pediatrics, Nadowli District Hospital, Upper West Region, Ghana",
+        "orcid": ""
+      },
+      {
+        "name": "Gloria C. Okoye",
+        "affiliation": "School of Medical Sciences, Kwame Nkrumah University of Science and Technology, Kumasi, Ghana",
+        "orcid": ""
+      },
+      {
+        "name": "Adebayo Da’Costa",
+        "affiliation": "Department of Emergency Medicine, Medway NHS Foundation Trust, Kent, United Kingdom",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Holt–Oram syndrome is a rare autosomal dominant condition resulting from a gene mutation on 12q24.1 (TBX5) and causes anomalies in bony segment of the upper limbs and the cardiovascular system (1). This syndrome is the most common among the six Heart–hand syndromes (2). Other differentials to be considered include Fanconi anemia, TAR syndrome, Baller Gerold ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2018.12.48",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "3",
+    "pages": "192-193",
+    "views": 5673,
+    "downloads": 9392,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1256",
+    "sourceArticleId": "2088",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2088",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2088",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2088",
+    "localPdfUrl": "js/data/pdfs/2088.pdf",
+    "pdfUrl": "js/data/pdfs/2088.pdf"
+  },
+  {
+    "id": 2090,
+    "type": "Clinical Image",
+    "title": "Prenatal Detection of Esophageal Atresia with Transposition of Great Arteries",
+    "authors": [
+      {
+        "name": "Peng An",
+        "affiliation": "Department of Ultrasound, Xiangyang No. 1 People’s Hospital Affiliated to Hubei University of Medicine, Xiangyang Key Laboratory of Maternal-Fetal Medicine in Fetal Heart Disease, Hubei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Weichao Liu",
+        "affiliation": "Department of Ultrasound, Xiangyang No. 1 People’s Hospital Affiliated to Hubei University of Medicine, Xiangyang Key Laboratory of Maternal-Fetal Medicine in Fetal Heart Disease, Hubei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yuxin Ning",
+        "affiliation": "Department of Ultrasound, Xiangyang No. 1 People’s Hospital Affiliated to Hubei University of Medicine, Xiangyang Key Laboratory of Maternal-Fetal Medicine in Fetal Heart Disease, Hubei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yingjian Ye",
+        "affiliation": "Department of Ultrasound, Xiangyang No. 1 People’s Hospital Affiliated to Hubei University of Medicine, Xiangyang Key Laboratory of Maternal-Fetal Medicine in Fetal Heart Disease, Hubei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yu Wang",
+        "affiliation": "Department of Ultrasound, Xiangyang No. 1 People’s Hospital Affiliated to Hubei University of Medicine, Xiangyang Key Laboratory of Maternal-Fetal Medicine in Fetal Heart Disease, Hubei, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 31-year-old singleton pregnant woman (gravida 2, para 1) was admitted to the Maternal–Fetal Medical Center of the Xiangyang First People's Hospital Affiliated to Hubei Medical University on July 5, 2018, at 30 + 1 weeks of gestation, with a suspicion of fetal congenital heart disease. The nuchal translucency was 1.1 mm at 12 + 2 weeks of gestation. However",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.1.80",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "3",
+    "pages": "194-195",
+    "views": 5590,
+    "downloads": 3063,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1256",
+    "sourceArticleId": "2090",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2090",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2090",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2090",
+    "localPdfUrl": "js/data/pdfs/2090.pdf",
+    "pdfUrl": "js/data/pdfs/2090.pdf"
+  },
+  {
+    "id": 2077,
+    "type": "Letter to the Editor",
+    "title": "Cutaneous Anthrax Outbreak in the Trakya Region of Turkey",
+    "authors": [
+      {
+        "name": "Figen Kuloğlu",
+        "affiliation": "Department of Infectious Diseases, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Alper Akın Gözübüyük",
+        "affiliation": "Department of Infectious Diseases, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Kara",
+        "affiliation": "Department of Infectious Diseases, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Filiz Akata",
+        "affiliation": "Department of Infectious Diseases, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, A 34-year-old female presented to our hospital with high fever (39.5 °C), a dark brown lesion on the dorsal side of her right hand, erythema on the medial side of her right arm extending from her right hand to axilla, right axillary lymphadenopathy, and pain in her right arm. She had a history of contact dermatitis on her hands for many years ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2018.12.19",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "3",
+    "pages": "196-197",
+    "views": 5806,
+    "downloads": 9388,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1256",
+    "sourceArticleId": "2077",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2077",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2077",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2077",
+    "localPdfUrl": "js/data/pdfs/2077.pdf",
+    "pdfUrl": "js/data/pdfs/2077.pdf"
+  },
+  {
+    "id": 2081,
+    "type": "Letter to the Editor",
+    "title": "Intestinal Obstruction Secondary to Ventral Hernia",
+    "authors": [
+      {
+        "name": "Kamal Kant Sahu",
+        "affiliation": "Clinic of Internal Medicine, Saint Vincent Hospital, Worcester, United States",
+        "orcid": ""
+      },
+      {
+        "name": "Akil Adrian Sherif",
+        "affiliation": "Clinic of Internal Medicine, Saint Vincent Hospital, Worcester, United States",
+        "orcid": ""
+      },
+      {
+        "name": "Ajay Mishra",
+        "affiliation": "Clinic of Internal Medicine, Saint Vincent Hospital, Worcester, United States",
+        "orcid": ""
+      },
+      {
+        "name": "Sunita Vyas",
+        "affiliation": "Clinic of Internal Medicine, Saint Vincent Hospital, Worcester, United States",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, Zheng et al. (1) reported regarding bowel obstruction secondary to obturator hernia, and this study describes our similar experience. We aimed to add to the knowledge bank of Balkan Medical Journal readers regarding abdominal hernias, their spectrum of presentation (subacute intestinal obstruction, strangulation, etc.), and management strategi",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2018.12.47",
+    "received": "",
+    "accepted": "",
+    "published": "2019-01-01",
+    "volume": 36,
+    "issue": "3",
+    "pages": "198-198",
+    "views": 5623,
+    "downloads": 3723,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1256",
+    "sourceArticleId": "2081",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2081",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2081",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2081",
+    "localPdfUrl": "js/data/pdfs/2081.pdf",
+    "pdfUrl": "js/data/pdfs/2081.pdf"
+  }
+]

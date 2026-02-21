@@ -1,0 +1,710 @@
+[
+  {
+    "id": 1875,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "1",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1115",
+    "sourceArticleId": "1875",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1875",
+    "localPdfUrl": "js/data/pdfs/1875.pdf",
+    "pdfUrl": "js/data/pdfs/1875.pdf"
+  },
+  {
+    "id": 1311,
+    "type": "Original Article",
+    "title": "Streptozocin İle Oluşturulan Diabetik Sıçanlarda, Diabetin Eritrosit Çapı, Hemoglobin Düzeyi ve Eritrosit Ozmotik Frajilitesine Etkisi",
+    "authors": [
+      {
+        "name": "Gülizar Atmaca",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Fizyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Kadir Kaymak",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Fizyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Şentürk Çiftçi",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Fizyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "1",
+    "pages": "1-6",
+    "views": 5598,
+    "downloads": 1486,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1115",
+    "sourceArticleId": "1311",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1311",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1311",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1311",
+    "localPdfUrl": "js/data/pdfs/1311.pdf",
+    "pdfUrl": "js/data/pdfs/1311.pdf"
+  },
+  {
+    "id": 1312,
+    "type": "Original Article",
+    "title": "Comparison Between Tc99m MIBI And Tc99m HM-PAO Imaging For The Muscle Perfusion In Patients With Diabetes Mellitus",
+    "authors": [
+      {
+        "name": "Ali Sarıkaya",
+        "affiliation": "Departments of Nuclear Medicine, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Meryem Kaya",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Nükleer Tıp Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Gülay Altun",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Nükleer Tıp Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "İsmet Sarıkaya",
+        "affiliation": "Kocaeli Üniversitesi, Tıp Fakültesi, Nükleer Tıp Anabilim Dalı, Kocaeli",
+        "orcid": ""
+      },
+      {
+        "name": "Nermin Erkmen",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Nükleer Tıp Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşe Alemdar",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Nükleer Tıp Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "F. Gül Gümüşer",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Nükleer Tıp Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "T. Fikret Çermik",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Nükleer Tıp Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Armağan Tuğrul",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları Anabilim Dalı.",
+        "orcid": ""
+      },
+      {
+        "name": "Gökhan Pekindil [[5]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "1",
+    "pages": "7-9",
+    "views": 5528,
+    "downloads": 1530,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1115",
+    "sourceArticleId": "1312",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1312",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1312",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1312",
+    "localPdfUrl": "js/data/pdfs/1312.pdf",
+    "pdfUrl": "js/data/pdfs/1312.pdf"
+  },
+  {
+    "id": 1314,
+    "type": "Original Article",
+    "title": "Diffuz İnfiltratif Akciğer Hastalıklarında Yüksek Rezolüsyonlu Bilgisayarlı Tomografinin Tanıya Katkısı",
+    "authors": [
+      {
+        "name": "Bilge Çakır",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyodiagnostik Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Önder Sayınbaş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyodiagnostik Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ogün Kaymak",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyodiagnostik Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Özer",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyodiagnostik Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ercüment Şener",
+        "affiliation": "Celal Bayar Üniversitesi Tıp Fakültesi Üroloji A. D.",
+        "orcid": ""
+      },
+      {
+        "name": "Ladan Denesh",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyodiagnostik Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "1",
+    "pages": "11-17",
+    "views": 5534,
+    "downloads": 1515,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1115",
+    "sourceArticleId": "1314",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1314",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1314",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1314",
+    "localPdfUrl": "js/data/pdfs/1314.pdf",
+    "pdfUrl": "js/data/pdfs/1314.pdf"
+  },
+  {
+    "id": 1316,
+    "type": "Original Article",
+    "title": "Fibröz Displazinin Yüksek Rezolüsyonlu Bilgisayarlı Tomografi Bulguları",
+    "authors": [
+      {
+        "name": "Önder Sayınbaş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyodiagnostik Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ogün Kaymak",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyodiagnostik Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ercüment Ünlü",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyodiagnostik Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Nuri Tasalı",
+        "affiliation": "Departments of Radiology, Medical Faculty of Maltepe University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Ladan Denesh",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyodiagnostik Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Bilge Çakır",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyodiagnostik Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "1",
+    "pages": "19-24",
+    "views": 5405,
+    "downloads": 1502,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1115",
+    "sourceArticleId": "1316",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1316",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1316",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1316",
+    "localPdfUrl": "js/data/pdfs/1316.pdf",
+    "pdfUrl": "js/data/pdfs/1316.pdf"
+  },
+  {
+    "id": 1318,
+    "type": "Original Article",
+    "title": "Mandibula Fraktürlerinin Tedavisi: 2 Yıllık Deneylerimiz",
+    "authors": [
+      {
+        "name": "Ragıp Onat",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Plastik ve Rekonstrüktif Cerrahi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "A. Cemal Aygıt",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Plastik ve Rekonstrüktif Cerrahi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "H. Nazmi Bayçın",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Plastik ve Rekonstrüktif Cerrahi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "M. Semih Ayhan",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Plastik ve Rekonstrüktif Cerrahi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Akın Demiralay",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Plastik ve Rekonstrüktif Cerrahi Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "1",
+    "pages": "25-31",
+    "views": 5286,
+    "downloads": 1438,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1115",
+    "sourceArticleId": "1318",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1318",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1318",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1318",
+    "localPdfUrl": "js/data/pdfs/1318.pdf",
+    "pdfUrl": "js/data/pdfs/1318.pdf"
+  },
+  {
+    "id": 1319,
+    "type": "Original Article",
+    "title": "Topcon Ct-20 Pnömotik Tonometrenin Klinik Değerlendirilmesi",
+    "authors": [
+      {
+        "name": "Seha Özden",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Göz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "M. Levent Alimgil",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Göz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Haluk Esgin",
+        "affiliation": "Department of Ophtalmology, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sait Erda",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Göz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "1",
+    "pages": "33-37",
+    "views": 5647,
+    "downloads": 1559,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1115",
+    "sourceArticleId": "1319",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1319",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1319",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1319",
+    "localPdfUrl": "js/data/pdfs/1319.pdf",
+    "pdfUrl": "js/data/pdfs/1319.pdf"
+  },
+  {
+    "id": 1321,
+    "type": "Original Article",
+    "title": "Hipertansif Olgularla Kalsiyum Antagonistleri ve Anjiotensin Konverting Enzim İnhibitörlerinin Oküler Pulsatil Kan Akımı Üzerine Etkileri",
+    "authors": [
+      {
+        "name": "Murat Levent Alimgil",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Sait Erda",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Haluk Esgin",
+        "affiliation": "Department of Ophtalmology, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "1",
+    "pages": "39-43",
+    "views": 5795,
+    "downloads": 1508,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1115",
+    "sourceArticleId": "1321",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1321",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1321",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1321",
+    "localPdfUrl": "js/data/pdfs/1321.pdf",
+    "pdfUrl": "js/data/pdfs/1321.pdf"
+  },
+  {
+    "id": 1322,
+    "type": "Original Article",
+    "title": "Diz Protezlerinde İki Ayrı Rehabilitasyon Programının Etkinliğinin Karşılaştırılması",
+    "authors": [
+      {
+        "name": "Halil Koyuncu",
+        "affiliation": "İ. Ü. Cerrahpaşa Tıp Fakültesi Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı, İSTANBUL",
+        "orcid": ""
+      },
+      {
+        "name": "Şafak Sahir Karamehmetoğlu",
+        "affiliation": "İ. Ü. Cerrahpaşa Tıp Fakültesi Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı, İSTANBUL",
+        "orcid": ""
+      },
+      {
+        "name": "Fahri Erdoğan",
+        "affiliation": "İ. Ü. Cerrahpaşa Tıp Fakültesi Ortopedive Travmatoloji Anabilim Dalı. İSTANBUL",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Çalış",
+        "affiliation": "İ. Ü. Cerrahpaşa Tıp Fakültesi Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı, İSTANBUL",
+        "orcid": ""
+      },
+      {
+        "name": "Kenan Akgün",
+        "affiliation": "İ. Ü. Cerrahpaşa Tıp Fakültesi Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı, İSTANBUL",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Anter",
+        "affiliation": "İ. Ü. Cerrahpaşa Tıp Fakültesi Ortopedive Travmatoloji Anabilim Dalı. İSTANBUL",
+        "orcid": ""
+      },
+      {
+        "name": "Fikret Tüzün",
+        "affiliation": "İ. Ü. Cerrahpaşa Tıp Fakültesi Fiziksel Tıp ve Rehabilitasyon Anabilim Dalı, İSTANBUL",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "1",
+    "pages": "45-48",
+    "views": 5465,
+    "downloads": 1476,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1115",
+    "sourceArticleId": "1322",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1322",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1322",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1322",
+    "localPdfUrl": "js/data/pdfs/1322.pdf",
+    "pdfUrl": "js/data/pdfs/1322.pdf"
+  },
+  {
+    "id": 1324,
+    "type": "Case Report",
+    "title": "Tıp Deantoloji ve Hukuk",
+    "authors": [
+      {
+        "name": "İbrahim Başağaoğlu [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "1",
+    "pages": "49-52",
+    "views": 5276,
+    "downloads": 1459,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1115",
+    "sourceArticleId": "1324",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1324",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1324",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1324",
+    "localPdfUrl": "js/data/pdfs/1324.pdf",
+    "pdfUrl": "js/data/pdfs/1324.pdf"
+  },
+  {
+    "id": 1325,
+    "type": "Case Report",
+    "title": "Eritrosit Metabolizmasına ve Eritrosit Membran Yapısına Diabetin Etkisi",
+    "authors": [
+      {
+        "name": "Gülizar Atmaca",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Fizyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Kadir Kaymak",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Fizyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "1",
+    "pages": "53-58",
+    "views": 5632,
+    "downloads": 1450,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1115",
+    "sourceArticleId": "1325",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1325",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1325",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1325",
+    "localPdfUrl": "js/data/pdfs/1325.pdf",
+    "pdfUrl": "js/data/pdfs/1325.pdf"
+  },
+  {
+    "id": 1327,
+    "type": "Case Report",
+    "title": "Retinotopik Organizasyon",
+    "authors": [
+      {
+        "name": "Rezzan Gürün",
+        "affiliation": "İ. Ü. Cerrahpaşa Tıp Fakültesi Anatomi Anabilim Dalı, İSTANBUL",
+        "orcid": ""
+      },
+      {
+        "name": "Tania Mamur",
+        "affiliation": "İ. Ü. Cerrahpaşa Tıp Fakültesi Anatomi Anabilim Dalı, İSTANBUL",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "1",
+    "pages": "59-65",
+    "views": 5247,
+    "downloads": 1576,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1115",
+    "sourceArticleId": "1327",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1327",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1327",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1327",
+    "localPdfUrl": "js/data/pdfs/1327.pdf",
+    "pdfUrl": "js/data/pdfs/1327.pdf"
+  },
+  {
+    "id": 1328,
+    "type": "Case Report",
+    "title": "Spinal Kord Travmalı Hastalarda Seksuel Disfonksiyonlar ve Tedavi Alternatifleri",
+    "authors": [
+      {
+        "name": "Saffet Tüzgen",
+        "affiliation": "Nöroşirürji Uzmanı, Cerrahpaşa Tıp Fakültesi Nöroşirürji Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "Ali İhsan Taşçı [[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "1",
+    "pages": "67-72",
+    "views": 5215,
+    "downloads": 1535,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1115",
+    "sourceArticleId": "1328",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1328",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1328",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1328",
+    "localPdfUrl": "js/data/pdfs/1328.pdf",
+    "pdfUrl": "js/data/pdfs/1328.pdf"
+  },
+  {
+    "id": 1330,
+    "type": "Case Report",
+    "title": "Donör - Alıcının Seçimi ve Takibi Yönüyle Kalp Transplantasyonu",
+    "authors": [
+      {
+        "name": "Mustafa Çıkırıkçıoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Stj. Dr. / EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Özbaran",
+        "affiliation": "Ege Üniversitesi Tıp Fakültesi Kalp Damar Cerrahi Anabilim Dalı, Bornova, İZMİR",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Posacıoğlu",
+        "affiliation": "Ege Üniversitesi Tıp Fakültesi Kalp Damar Cerrahi Anabilim Dalı, Bornova, İZMİR",
+        "orcid": ""
+      },
+      {
+        "name": "İsa Durmaz [[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "1",
+    "pages": "73-82",
+    "views": 5570,
+    "downloads": 1541,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1115",
+    "sourceArticleId": "1330",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1330",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1330",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1330",
+    "localPdfUrl": "js/data/pdfs/1330.pdf",
+    "pdfUrl": "js/data/pdfs/1330.pdf"
+  }
+]

@@ -1,0 +1,605 @@
+[
+  {
+    "id": 1858,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "2",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1104",
+    "sourceArticleId": "1858",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1858",
+    "localPdfUrl": "js/data/pdfs/1858.pdf",
+    "pdfUrl": "js/data/pdfs/1858.pdf"
+  },
+  {
+    "id": 523,
+    "type": "Original Article",
+    "title": "The Role of Mast Cell Depletion On the Acute Toxicity of Morphia In Mice",
+    "authors": [
+      {
+        "name": "İ. Dökmeci",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Farmakoloji Anabilim Dalı - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "A. Akcasu [[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "2",
+    "pages": "3-11",
+    "views": 5666,
+    "downloads": 1707,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1104",
+    "sourceArticleId": "523",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=523",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=523",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=523",
+    "localPdfUrl": "js/data/pdfs/523.pdf",
+    "pdfUrl": "js/data/pdfs/523.pdf"
+  },
+  {
+    "id": 525,
+    "type": "Original Article",
+    "title": "Normal Orta Kulaklı Kişilerde Statik Komplias Değerlerine Yaş ve Cinsiyetin Etkileri",
+    "authors": [
+      {
+        "name": "Ahmet Karasalihoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi T.B.B. Anabilim Dalı - Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "2",
+    "pages": "12-19",
+    "views": 5974,
+    "downloads": 1683,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1104",
+    "sourceArticleId": "525",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=525",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=525",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=525",
+    "localPdfUrl": "js/data/pdfs/525.pdf",
+    "pdfUrl": "js/data/pdfs/525.pdf"
+  },
+  {
+    "id": 526,
+    "type": "Original Article",
+    "title": "Hipertiroidide Serum Kalsiyum ve Serum Fosfor Düzeyleri, Klirensleri ve Tubuler Geri Emilmelerinin İncelenmesi",
+    "authors": [
+      {
+        "name": "G. Özbay",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları Anabilim Dalı - Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "2",
+    "pages": "20-34",
+    "views": 5664,
+    "downloads": 1587,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1104",
+    "sourceArticleId": "526",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=526",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=526",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=526",
+    "localPdfUrl": "js/data/pdfs/526.pdf",
+    "pdfUrl": "js/data/pdfs/526.pdf"
+  },
+  {
+    "id": 527,
+    "type": "Original Article",
+    "title": "Oral Tripotassium Dicitrato Bismuthate (TDB) un Duodenal Ülserli Hastalarda Kullanımı ve Gastrin Seviyeleri",
+    "authors": [
+      {
+        "name": "S. Turan",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları Anabilim Dalı - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "G. Özbay",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları Anabilim Dalı - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "A. Tuğrul",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları Anabilim Dalı - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "H. Sur",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları Anabilim Dalı - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "İ. Bezcioğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları Anabilim Dalı - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ş. Berkarda [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "2",
+    "pages": "35-44",
+    "views": 5936,
+    "downloads": 1595,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1104",
+    "sourceArticleId": "527",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=527",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=527",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=527",
+    "localPdfUrl": "js/data/pdfs/527.pdf",
+    "pdfUrl": "js/data/pdfs/527.pdf"
+  },
+  {
+    "id": 528,
+    "type": "Original Article",
+    "title": "Yetişkin Türk Kadın ve Erkeklerinde Ayak (Pes) Ölçüleri",
+    "authors": [
+      {
+        "name": "M. Yıldırım",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları Anatomi Bilim Dalı - Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "2",
+    "pages": "45-58",
+    "views": 6169,
+    "downloads": 1674,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1104",
+    "sourceArticleId": "528",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=528",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=528",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=528",
+    "localPdfUrl": "js/data/pdfs/528.pdf",
+    "pdfUrl": "js/data/pdfs/528.pdf"
+  },
+  {
+    "id": 529,
+    "type": "Original Article",
+    "title": "Kafatası Kırıklığı Olmaksızın Travmatik Gelişen Ekstradural Hematomlar",
+    "authors": [
+      {
+        "name": "Sabahattin Çobanoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroşirorji Anabilim Dalı - Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "2",
+    "pages": "59-67",
+    "views": 5832,
+    "downloads": 1681,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1104",
+    "sourceArticleId": "529",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=529",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=529",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=529",
+    "localPdfUrl": "js/data/pdfs/529.pdf",
+    "pdfUrl": "js/data/pdfs/529.pdf"
+  },
+  {
+    "id": 531,
+    "type": "Original Article",
+    "title": "Radyolojik Olarak Normal Bulunan Pediatrik Travmatik Parapleji Olgusu",
+    "authors": [
+      {
+        "name": "B. Uçar",
+        "affiliation": "Edirne Devlet Hastanesi Nöroşirürji Servisi - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "S. Çobanoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroşirorji Anabilim Dalı - Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "2",
+    "pages": "71-74",
+    "views": 5582,
+    "downloads": 1594,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1104",
+    "sourceArticleId": "531",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=531",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=531",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=531",
+    "localPdfUrl": "js/data/pdfs/531.pdf",
+    "pdfUrl": "js/data/pdfs/531.pdf"
+  },
+  {
+    "id": 532,
+    "type": "Original Article",
+    "title": "Bir Paranoid Sendrom Gelişmesinde İatrojen Etkileri",
+    "authors": [
+      {
+        "name": "G. Koptagel İlal",
+        "affiliation": "İ.Ü. Cerrahpaşa Tıp Fakültesi Farmakoloji Anabilim Dalı - İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "G. Enbiyaoğlu",
+        "affiliation": "İ.Ü. Cerrahpaşa Tıp Fakültesi Farmakoloji Anabilim Dalı - İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "İ. Muhtar",
+        "affiliation": "İ.Ü. Cerrahpaşa Tıp Fakültesi Farmakoloji Anabilim Dalı - İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "E. O. Göktepe [[2]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "2",
+    "pages": "75-79",
+    "views": 5646,
+    "downloads": 1626,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1104",
+    "sourceArticleId": "532",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=532",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=532",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=532",
+    "localPdfUrl": "js/data/pdfs/532.pdf",
+    "pdfUrl": "js/data/pdfs/532.pdf"
+  },
+  {
+    "id": 534,
+    "type": "Original Article",
+    "title": "Akut İnferior Miyokard İnfarktüsünde Prekordiyal ST Segment Düşüklüklerinde Sağ Ventrikül Miyokard İnfarktüsünün Etkisi",
+    "authors": [
+      {
+        "name": "Gültaç Özbay",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, İç Hastalıkları Anabilim Dalı ve Trakya Üniversitesi Fen ve Edebiyat Fakültesi, Matematik Bölümü - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "İhsan Bezcioğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, İç Hastalıkları Anabilim Dalı ve Trakya Üniversitesi Fen ve Edebiyat Fakültesi, Matematik Bölümü - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Sungur Turan",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, İç Hastalıkları Anabilim Dalı ve Trakya Üniversitesi Fen ve Edebiyat Fakültesi, Matematik Bölümü - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Yılmaz Yücel",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, İç Hastalıkları Anabilim Dalı ve Trakya Üniversitesi Fen ve Edebiyat Fakültesi, Matematik Bölümü - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Aslan Sefer",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, İç Hastalıkları Anabilim Dalı ve Trakya Üniversitesi Fen ve Edebiyat Fakültesi, Matematik Bölümü - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Armağan Tuğrul",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, İç Hastalıkları Anabilim Dalı ve Trakya Üniversitesi Fen ve Edebiyat Fakültesi, Matematik Bölümü - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Faruk Kavak",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, İç Hastalıkları Anabilim Dalı ve Trakya Üniversitesi Fen ve Edebiyat Fakültesi, Matematik Bölümü - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Hulusi Sur [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "2",
+    "pages": "80-91",
+    "views": 6299,
+    "downloads": 1690,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1104",
+    "sourceArticleId": "534",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=534",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=534",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=534",
+    "localPdfUrl": "js/data/pdfs/534.pdf",
+    "pdfUrl": "js/data/pdfs/534.pdf"
+  },
+  {
+    "id": 535,
+    "type": "Original Article",
+    "title": "Kafa Travmalarının Teşhis, Bakım ve Tedavisindeki Gelişmeler",
+    "authors": [
+      {
+        "name": "S. Çobanoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroşirorji Anabilim Dalı - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "N. Demircan",
+        "affiliation": "GATA-Hayardarpaşa Askeri Hastanesi, Nöroşirürji Kliniği",
+        "orcid": ""
+      },
+      {
+        "name": "B. Uçar",
+        "affiliation": "Edirne Devlet Hastanesi Nöroşirürji Servisi - Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "C. Kuday",
+        "affiliation": "İ.Ü. Cerrahpaşa Tıp Fakültesi, Nöroşirürji Anabilim Dalı - İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "A.F. Soran",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Nöroşirorji Anabilim Dalı - Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "2",
+    "pages": "95-113",
+    "views": 5660,
+    "downloads": 1764,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1104",
+    "sourceArticleId": "535",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=535",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=535",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=535",
+    "localPdfUrl": "js/data/pdfs/535.pdf",
+    "pdfUrl": "js/data/pdfs/535.pdf"
+  },
+  {
+    "id": 537,
+    "type": "Original Article",
+    "title": "Yeni Doğan Sepsisinin Erken Tanısı",
+    "authors": [
+      {
+        "name": "Zerrin Abban Medeni",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Pediatri Anabilim Dalı",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "2",
+    "pages": "114-120",
+    "views": 5455,
+    "downloads": 1596,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1104",
+    "sourceArticleId": "537",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=537",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=537",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=537",
+    "localPdfUrl": "js/data/pdfs/537.pdf",
+    "pdfUrl": "js/data/pdfs/537.pdf"
+  },
+  {
+    "id": 538,
+    "type": "Original Article",
+    "title": "Eritrositlerde Glükoz Utilizasyonunun Radyoaktif C-14 Glocose İle İncelenmesi",
+    "authors": [
+      {
+        "name": "Ömer N. Yiğitbaşı",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Nükleer Tıp Anabilim Dalı",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "2",
+    "pages": "121-134",
+    "views": 5770,
+    "downloads": 1644,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1104",
+    "sourceArticleId": "538",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=538",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=538",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=538",
+    "localPdfUrl": "js/data/pdfs/538.pdf",
+    "pdfUrl": "js/data/pdfs/538.pdf"
+  },
+  {
+    "id": 539,
+    "type": "Original Article",
+    "title": "Szasz, Laing ve Anti - Psikiyatri",
+    "authors": [
+      {
+        "name": "Esat Oğuz Göktepe",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Psikiyatri Anabilim Dalı",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1986-01-01",
+    "volume": 3,
+    "issue": "2",
+    "pages": "135-144",
+    "views": 5665,
+    "downloads": 1644,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1104",
+    "sourceArticleId": "539",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=539",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=539",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=539",
+    "localPdfUrl": "js/data/pdfs/539.pdf",
+    "pdfUrl": "js/data/pdfs/539.pdf"
+  }
+]

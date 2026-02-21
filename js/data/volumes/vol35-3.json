@@ -1,0 +1,873 @@
+[
+  {
+    "id": 2001,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "2001",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2001",
+    "localPdfUrl": "js/data/pdfs/2001.pdf",
+    "pdfUrl": "js/data/pdfs/2001.pdf"
+  },
+  {
+    "id": 2000,
+    "type": "Editorial",
+    "title": "Contribution of Balkan Medical Journal to the development and dissemination of medical science in the Balkans",
+    "authors": [
+      {
+        "name": "Zafer Koçak",
+        "affiliation": "Department of Radiation Oncology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Necdet Süt",
+        "affiliation": "Department of Biostatistics and Informatics, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa İnan[[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Balkan Medical Journal is an institutional initiative designed to disseminate scientific knowledge produced by long-established human communities residing in the Balkan Peninsula. In this editorial, we aimed to analyze the relationship of Balkan Medical Journal with its scientific partners from the Balkans. A 5.5-fold increase in the number of articles submitted from the Balkans is a favorable indication for the future. Notably, the acceptance rate of articles from the Balkans has now reached 10.68%, however the citation rate of these articles highlights the importance of increasing the quality of research. Overall, our findings indicate the need to gain broader recognition especially in the Balkans and also other countries.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<em>Balkan Medical Journal</em> is an institutional initiative designed to disseminate scientific knowledge produced by long-established human communities residing in the Balkan Peninsula. In this editorial, we aimed to analyze the relationship of <em>Balkan Medical Journal</em>  with its scientific partners from the Balkans. A 5.5-fold increase in the number of articles submitted from the Balkans is a favorable indication for the future. Notably, the acceptance rate of articles from the Balkans has now reached 10.68%, however the citation rate of these articles highlights the importance of increasing the quality of research. Overall, our findings indicate the need to gain broader recognition especially in the Balkans and also other countries. \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Balkan Medical Journal is an institutional initiative designed to disseminate scientific knowledge produced by long-established human communities residing in the Balkan Peninsula. In this editorial, we aimed to analyze the relationship of Balkan Medical Journal with its scientific partners from the Balkans. A 5.5-fold increase in the number of articles submitted from the Balkans is a favorable indication for the future. Notably, the acceptance rate of articles from the Balkans has now reached 10.68%, however the citation rate of these articles highlights the importance of increasing the quality of research. Overall, our findings indicate the need to gain broader recognition especially in the Balkans and also other countries.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.3.0001",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "223-224",
+    "views": 6048,
+    "downloads": 4520,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "2000",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2000",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2000",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2000",
+    "localPdfUrl": "js/data/pdfs/2000.pdf",
+    "pdfUrl": "js/data/pdfs/2000.pdf"
+  },
+  {
+    "id": 1996,
+    "type": "Invited Review",
+    "title": "The Role of Osteoprotegerin as a Cardioprotective Versus Reactive Inflammatory Marker: the Chicken or the Egg Paradox",
+    "authors": [
+      {
+        "name": "Flora Özkalaycı",
+        "affiliation": "Department of Cardiology, Başkent University İstanbul Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Öykü Gülmez",
+        "affiliation": "Department of Cardiology, Başkent University İstanbul Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Betül Uğur-Altun",
+        "affiliation": "Department of Endocrinology and Metabolism, Başkent University İstanbul Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Seithikurippu Ratnas Pandi-Perumal",
+        "affiliation": "Somnogen Canada Inc., College Street, Toronto, Canada",
+        "orcid": ""
+      },
+      {
+        "name": "Armağan Altun",
+        "affiliation": "Department of Cardiology, Başkent University İstanbul Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Recently, the role of receptor activator of nuclear factor kappa B, receptor activator of nuclear factor kappa B ligand, and the osteoprotegerin system has been recognized as more important in the pathogenesis of cardiovascular disease. No consensus is yet available on the function of osteoprotegerin, but all these studies have concluded that osteoprotegerin is a promising biomarker for coronary artery disease, regardless of whether it plays a protective role against atherosclerosis or causes atherosclerosis with its proatherogenic features. Abstract Cardiovascular disease is one of the most frequent causes of mortality and morbidity worldwide. Several variables have been identified as risk factors for cardiovascular disease. Recently, the role of receptor activator of nuclear factor kappa B, receptor activator of nuclear factor kappa B ligand, and the osteoprotegerin system has been recognized as more important in the pathogenesis of cardiovascular disease. Besides their roles in the regulation of bone resorption, these molecules have been reported to be associated with the pathophysiology of cardiovascular disease. There are conflicting data regarding the impact of osteoprotegerin, a glycoprotein with a regulatory role in the cardiovascular system. The aim of this review is to discuss the current knowledge and the role of osteoprotegerin in cardiovascular disease.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\tRecently, the role of receptor activator of nuclear factor kappa B, receptor activator of nuclear factor kappa B ligand, and the osteoprotegerin system has been recognized as more important in the pathogenesis of cardiovascular disease. No consensus is yet available on the function of osteoprotegerin, but all these studies have concluded that osteoprotegerin is a promising biomarker for coronary artery disease, regardless of whether it plays a protective role against atherosclerosis or causes atherosclerosis with its proatherogenic features.\r\n</br></br>\r\n<h4>Abstract</h4>\r\n<p>Cardiovascular disease is one of the most frequent causes of mortality and morbidity worldwide. Several variables have been identified as risk factors for cardiovascular disease. Recently, the role of receptor activator of nuclear factor kappa B, receptor activator of nuclear factor kappa B ligand, and the osteoprotegerin system has been recognized as more important in the pathogenesis of cardiovascular disease. Besides their roles in the regulation of bone resorption, these molecules have been reported to be associated with the pathophysiology of cardiovascular disease. There are conflicting data regarding the impact of osteoprotegerin, a glycoprotein with a regulatory role in the cardiovascular system. The aim of this review is to discuss the current knowledge and the role of osteoprotegerin in cardiovascular disease.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Recently, the role of receptor activator of nuclear factor kappa B, receptor activator of nuclear factor kappa B ligand, and the osteoprotegerin system has been recognized as more important in the pathogenesis of cardiovascular disease. No consensus is yet available on the function of osteoprotegerin, but all these studies have concluded that osteoprotegerin is a promising biomarker for coronary artery disease, regardless of whether it plays a protective role against atherosclerosis or causes atherosclerosis with its proatherogenic features. Abstract Cardiovascular disease is one of the most frequent causes of mortality and morbidity worldwide. Several variables have been identified as risk factors for cardiovascular disease. Recently, the role of receptor activator of nuclear factor kappa B, receptor activator of nuclear factor kappa B ligand, and the osteoprotegerin system has been recognized as more important in the pathogenesis of cardiovascular disease. Besides their roles in the regulation of bone resorption, these molecules have been reported to be associated with the pathophysiology of cardiovascular disease. There are conflicting data regarding the impact of osteoprotegerin, a glycoprotein with a regulatory role in the cardiovascular system. The aim of this review is to discuss the current knowledge and the role of osteoprotegerin in cardiovascular disease.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.0579",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "225-232",
+    "views": 6596,
+    "downloads": 4074,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "1996",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1996",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1996",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1996",
+    "localPdfUrl": "js/data/pdfs/1996.pdf",
+    "pdfUrl": "js/data/pdfs/1996.pdf"
+  },
+  {
+    "id": 1961,
+    "type": "Original Article",
+    "title": "Pericardial Effusion in Obstructive Sleep Apnea without Pulmonary Arterial Hypertension and Daily Hypoxemia - is it Unusual?",
+    "authors": [
+      {
+        "name": "Emil Ivanov Manov",
+        "affiliation": "Department of Internal Diseases “Prof. St. Kirkovich”, Medical University of Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Ventsislava Pencheva Pencheva",
+        "affiliation": "Department of Internal Diseases “Prof. St. Kirkovich”, Medical University of Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Nikolay Margaritov Runev",
+        "affiliation": "Department of Internal Diseases “Prof. St. Kirkovich”, Medical University of Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Stefan Naydenov Naydenov",
+        "affiliation": "Department of Internal Diseases “Prof. St. Kirkovich”, Medical University of Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Daniela Stoychkova Petrova",
+        "affiliation": "Department of Internal Diseases “Prof. St. Kirkovich”, Medical University of Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Ognian Borisov Georgiev",
+        "affiliation": "Department of Internal Diseases “Prof. St. Kirkovich”, Medical University of Sofia, Bulgaria",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Pericardial effusion in chronic hypoxemic lung diseases, such as Obstructive Sleep Apnea syndrome, usually occurs after the development of severe pulmonary arterial hypertension. However, data about the frequency of pericardial effusions in Obstructive Sleep Apnea syndrome without pulmonary arterial hypertension and/or daytime hypoxemia are still scarce, and their pathogenesis is unclear.Aims: To assess the prevalence of pericardial effusions and their volume and location in patients with obesity and Obstructive Sleep Apnea syndrome without pulmonary arterial hypertension and/or hypoxemia.Study Design: Cross-sectional study. Methods: We included 279 consecutive patients (162 males) with newly diagnosed Obstructive Sleep Apnea syndrome having a mean age of 42.8±12.4 years and a mean body mass index of 37.3±7.8 kg/m2. Obstructive Sleep Apnea syndrome was confirmed by polysomnography. Main exclusion criteria were concomitant inflammatory diseases, thyroid dysfunction, daytime hypoxemia, nephrotic syndrome, left ventricular systolic dysfunction and pulmonary arterial hypertension.Results: Pericardial effusion was found in 102 (36.56%) -all of them with moderate to severe obstructive Sleep Apnea syndrome. The mean effusion volume was mild to moderate (up to 250 mL). In 36 patients (35.3%) the pericardial effusion was diffuse, in 42 (41.2%), the pericardial effusion was located in front of the right atrium and the right ventricle, and in 24 (23.5%) the pericardial effusion was situated in front of the right cardiac cavities and the left atrium. We found a significant positive correlation between the presence of pericardial effusion and apnea-hypopnea index (r=0.374, p<0.001), body mass index (r=0.473, p<0.001), and desaturation time during sleep (r=0.289, p<0.001).Conclusion: Pericardial effusion in patients with obesity and moderate to severe Obstructive Sleep Apnea syndrome without daily hypoxemia and/or pulmonary hypertension is a relatively common finding. The occurrence of pericardial effusions is dependent mostly on the grade of Obstructive Sleep Apnea syndrome, degree of obesity, and duration of sleep desaturation.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Pericardial effusion in chronic hypoxemic lung diseases, such as Obstructive Sleep Apnea syndrome, usually occurs after the development of severe pulmonary arterial hypertension. However, data about the frequency of pericardial effusions in Obstructive Sleep Apnea syndrome without pulmonary arterial hypertension and/or daytime hypoxemia are still scarce, and their pathogenesis is unclear.<br /><strong>Aims:</strong> To assess the prevalence of pericardial effusions and their volume and location in patients with obesity and Obstructive Sleep Apnea syndrome without pulmonary arterial hypertension and/or hypoxemia.<br /><strong>Study Design:</strong> Cross-sectional study. <br /><strong>Methods:</strong> We included 279 consecutive patients (162 males) with newly diagnosed Obstructive Sleep Apnea syndrome having a mean age of 42.8&plusmn;12.4 years and a mean body mass index of 37.3&plusmn;7.8 kg/m<sup>2</sup>. Obstructive Sleep Apnea syndrome was confirmed by polysomnography. Main exclusion criteria were concomitant inflammatory diseases, thyroid dysfunction, daytime hypoxemia, nephrotic syndrome, left ventricular systolic dysfunction and pulmonary arterial hypertension.<br /><strong>Results:</strong> Pericardial effusion was found in 102 (36.56%) -all of them with moderate to severe obstructive Sleep Apnea syndrome. The mean effusion volume was mild to moderate (up to 250 mL). In 36 patients (35.3%) the pericardial effusion was diffuse, in 42 (41.2%), the pericardial effusion was located in front of the right atrium and the right ventricle, and in 24 (23.5%) the pericardial effusion was situated in front of the right cardiac cavities and the left atrium. We found a significant positive correlation between the presence of pericardial effusion and apnea-hypopnea index (r=0.374, p&lt;0.001), body mass index (r=0.473, p&lt;0.001), and desaturation time during sleep (r=0.289, p&lt;0.001).<br /><strong>Conclusion:</strong> Pericardial effusion in patients with obesity and moderate to severe Obstructive Sleep Apnea syndrome without daily hypoxemia and/or pulmonary hypertension is a relatively common finding. The occurrence of pericardial effusions is dependent mostly on the grade of Obstructive Sleep Apnea syndrome, degree of obesity, and duration of sleep desaturation.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Pericardial effusion in chronic hypoxemic lung diseases, such as Obstructive Sleep Apnea syndrome, usually occurs after the development of severe pulmonary arterial hypertension. However, data about the frequency of pericardial effusions in Obstructive Sleep Apnea syndrome without pulmonary arterial hypertension and/or daytime hypoxemia are still scarce, and their pathogenesis is unclear.Aims: To assess the prevalence of pericardial effusions and their volume and location in patients with obesity and Obstructive Sleep Apnea syndrome without pulmonary arterial hypertension and/or hypoxemia.Study Design: Cross-sectional study. Methods: We included 279 consecutive patients (162 males) with newly diagnosed Obstructive Sleep Apnea syndrome having a mean age of 42.8±12.4 years and a mean body mass index of 37.3±7.8 kg/m2. Obstructive Sleep Apnea syndrome was confirmed by polysomnography. Main exclusion criteria were concomitant inflammatory diseases, thyroid dysfunction, daytime hypoxemia, nephrotic syndrome, left ventricular systolic dysfunction and pulmonary arterial hypertension.Results: Pericardial effusion was found in 102 (36.56%) -all of them with moderate to severe obstructive Sleep Apnea syndrome. The mean effusion volume was mild to moderate (up to 250 mL). In 36 patients (35.3%) the pericardial effusion was diffuse, in 42 (41.2%), the pericardial effusion was located in front of the right atrium and the right ventricle, and in 24 (23.5%) the pericardial effusion was situated in front of the right cardiac cavities and the left atrium. We found a significant positive correlation between the presence of pericardial effusion and apnea-hypopnea index (r=0.374, p<0.001), body mass index (r=0.473, p<0.001), and desaturation time during sleep (r=0.289, p<0.001).Conclusion: Pericardial effusion in patients with obesity and moderate to severe Obstructive Sleep Apnea syndrome without daily hypoxemia and/or pulmonary hypertension is a relatively common finding. The occurrence of pericardial effusions is dependent mostly on the grade of Obstructive Sleep Apnea syndrome, degree of obesity, and duration of sleep desaturation.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0580",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "233-237",
+    "views": 7059,
+    "downloads": 3655,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "1961",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1961",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1961",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1961",
+    "localPdfUrl": "js/data/pdfs/1961.pdf",
+    "pdfUrl": "js/data/pdfs/1961.pdf"
+  },
+  {
+    "id": 1966,
+    "type": "Original Article",
+    "title": "Validity and Reliability of the Turkish Chronic Pain Acceptance Questionnaire",
+    "authors": [
+      {
+        "name": "Hazel Ekin Akmaz",
+        "affiliation": "Clinic of Anesthesiology and Reanimation, Manisa State Hospital, Manisa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Meltem Uyar",
+        "affiliation": "Department of Algology, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yasemin Kuzeyli Yıldırım",
+        "affiliation": "Ege University School of Nursing, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Esra Akın Korhan",
+        "affiliation": "Department of Nursing, İzmir Katip Çelebi University School of Health Science, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Pain acceptance is the process of giving up the struggle with pain and learning to live a worthwhile life despite it. In assessing patients with chronic pain in Turkey, making a diagnosis and tracking the effectiveness of treatment is done with scales that have been translated into Turkish. However, there is as yet no valid and reliable scale in Turkish to assess the acceptance of pain.Aims: To validate a Turkish version of the Chronic Pain Acceptance Questionnaire developed by McCracken and colleagues. Study Design: Methodological and cross sectional study.Methods: A simple randomized sampling method was used in selecting the study sample. The sample was composed of 201 patients, more than 10 times the number of items examined for validity and reliability in the study, which totaled 20. A patient identification form, the Chronic Pain Acceptance Questionnaire, and the Brief Pain Inventory were used to collect data. Data were collected by face-to-face interviews. In the validity testing, the content validity index was used to evaluate linguistic equivalence, content validity, construct validity, and expert views. In reliability testing of the scale, Cronbach’s α coefficient was calculated, and item analysis and split-test reliability methods were used. Principal component analysis and varimax rotation were used in factor analysis and to examine factor structure for construct concept validity.Results: The item analysis established that the scale, all items, and item-total correlations were satisfactory. The mean total score of the scale was 21.78. The internal consistency coefficient was 0.94, and the correlation between the two halves of the scale was 0.89.Conclusion: The Chronic Pain Acceptance Questionnaire, which is intended to be used in Turkey upon confirmation of its validity and reliability, is an evaluation instrument with sufficient validity and reliability, and it can be reliably used to examine patients’ acceptance of chronic pain.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Pain acceptance is the process of giving up the struggle with pain and learning to live a worthwhile life despite it. In assessing patients with chronic pain in Turkey, making a diagnosis and tracking the effectiveness of treatment is done with scales that have been translated into Turkish. However, there is as yet no valid and reliable scale in Turkish to assess the acceptance of pain.<br /><strong>Aims:</strong> To validate a Turkish version of the Chronic Pain Acceptance Questionnaire developed by McCracken and colleagues. <br /><strong>Study Design:</strong> Methodological and cross sectional study.<br /><strong>Methods:</strong> A simple randomized sampling method was used in selecting the study sample. The sample was composed of 201 patients, more than 10 times the number of items examined for validity and reliability in the study, which totaled 20. A patient identification form, the Chronic Pain Acceptance Questionnaire, and the Brief Pain Inventory were used to collect data. Data were collected by face-to-face interviews. In the validity testing, the content validity index was used to evaluate linguistic equivalence, content validity, construct validity, and expert views. In reliability testing of the scale, Cronbach&rsquo;s &alpha; coefficient was calculated, and item analysis and split-test reliability methods were used. Principal component analysis and varimax rotation were used in factor analysis and to examine factor structure for construct concept validity.<br /><strong>Results:</strong> The item analysis established that the scale, all items, and item-total correlations were satisfactory. The mean total score of the scale was 21.78. The internal consistency coefficient was 0.94, and the correlation between the two halves of the scale was 0.89.<br /><strong>Conclusion:</strong> The Chronic Pain Acceptance Questionnaire, which is intended to be used in Turkey upon confirmation of its validity and reliability, is an evaluation instrument with sufficient validity and reliability, and it can be reliably used to examine patients&rsquo; acceptance of chronic pain.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Pain acceptance is the process of giving up the struggle with pain and learning to live a worthwhile life despite it. In assessing patients with chronic pain in Turkey, making a diagnosis and tracking the effectiveness of treatment is done with scales that have been translated into Turkish. However, there is as yet no valid and reliable scale in Turkish to assess the acceptance of pain.Aims: To validate a Turkish version of the Chronic Pain Acceptance Questionnaire developed by McCracken and colleagues. Study Design: Methodological and cross sectional study.Methods: A simple randomized sampling method was used in selecting the study sample. The sample was composed of 201 patients, more than 10 times the number of items examined for validity and reliability in the study, which totaled 20. A patient identification form, the Chronic Pain Acceptance Questionnaire, and the Brief Pain Inventory were used to collect data. Data were collected by face-to-face interviews. In the validity testing, the content validity index was used to evaluate linguistic equivalence, content validity, construct validity, and expert views. In reliability testing of the scale, Cronbach’s α coefficient was calculated, and item analysis and split-test reliability methods were used. Principal component analysis and varimax rotation were used in factor analysis and to examine factor structure for construct concept validity.Results: The item analysis established that the scale, all items, and item-total correlations were satisfactory. The mean total score of the scale was 21.78. The internal consistency coefficient was 0.94, and the correlation between the two halves of the scale was 0.89.Conclusion: The Chronic Pain Acceptance Questionnaire, which is intended to be used in Turkey upon confirmation of its validity and reliability, is an evaluation instrument with sufficient validity and reliability, and it can be reliably used to examine patients’ acceptance of chronic pain.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1998",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "238-244",
+    "views": 6845,
+    "downloads": 10142,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "1966",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1966",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1966",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1966",
+    "localPdfUrl": "js/data/pdfs/1966.pdf",
+    "pdfUrl": "js/data/pdfs/1966.pdf"
+  },
+  {
+    "id": 1968,
+    "type": "Original Article",
+    "title": "The Effects of Bougie Diameters on Tissue Oxygen Levels After Sleeve Gastrectomy: A Randomized Experimental Trial",
+    "authors": [
+      {
+        "name": "Can Konca",
+        "affiliation": "Department of Surgery, Ankara University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Abbas Yılmaz",
+        "affiliation": "Department of Anesthesiology and Reanimation, Ankara University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Süleyman Utku Çelik",
+        "affiliation": "Department of Surgery, Ankara University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selami Ilgaz Kayılıoğlu",
+        "affiliation": "Department of Surgery, University of Health Sciences, Ankara Numune Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özge Tuğçe Paşaoğlu",
+        "affiliation": "Department of Medical Biochemistry, Gazi University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Halil Arda Ceylan",
+        "affiliation": "Department of Internal Medicine, Ankara University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Volkan Genç",
+        "affiliation": "Department of Surgery, Ankara University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Staple line leak is one of the most frequent and serious complications of laparoscopic sleeve gastrectomy. This study aims to evaluate the effects of different bougie diameters on tissue oxygen partial pressure (PtO2) at the esophagogastric junction after sleeve gastrectomy. The use of narrower bougie along with fibrin sealant has not had a negative effect on tissue perfusion and wound healing. Abstract Background: Staple-line leak is the most frightening complication of laparoscopic sleeve gastrectomy and several predisposing factors such as using improper staple sizes regardless of gastric wall thickness, narrower bougie diameter and ischemia of the staple line are asserted. Aims: To evaluate the effects of different bougie diameters on tissue oxygen partial pressure at the esophagogastric junction after sleeve gastrectomy. Study Design: A randomized and controlled animal experiment with 1:1:1:1 allocation ratio. Methods: Thirty-two male Wistar Albino rats were randomly divided into 4 groups of 8 each. While 12-Fr bougies were used in groups 1 and 3, 8-Fr bougies were used in groups 2 and 4. Fibrin sealant application was also carried out around the gastrectomy line after sleeve gastrectomy in groups 3 and 4. Burst pressure of gastrectomy line, tissue oxygen partial pressure and hydroxyproline levels at the esophagogastric junction were measured and compared among groups. Results: Mortality was detected in 2 out of 32 rats (6.25%) and one of them was in group 2 and the cause of this mortality was gastric leak. Gastric leak was detected in 2 out of 32 rats (6.25%). There was no significant difference in terms of burst pressures, tissue oxygen partial pressure and tissue hydroxyproline levels among the 4 groups. Conclusion: The use of narrower bougie along with fibrin sealant has not had a negative effect on tissue perfusion and wound healing.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\tStaple line leak is one of the most frequent and serious complications of laparoscopic sleeve gastrectomy. This study aims to evaluate the effects of different bougie diameters on tissue oxygen partial pressure (PtO<sub>2</sub>) at the esophagogastric junction after sleeve gastrectomy. The use of narrower bougie along with fibrin sealant has not had a negative effect on tissue perfusion and wound healing.\r\n</br></br>\r\n<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Staple-line leak is the most frightening complication of laparoscopic sleeve gastrectomy and several predisposing factors such as using improper staple sizes regardless of gastric wall thickness, narrower bougie diameter and ischemia of the staple line are asserted. <br /><strong>Aims:</strong> To evaluate the effects of different bougie diameters on tissue oxygen partial pressure at the esophagogastric junction after sleeve gastrectomy. <br /><strong>Study Design:</strong> A randomized and controlled animal experiment with 1:1:1:1 allocation ratio. <br /><strong>Methods:</strong> Thirty-two male Wistar Albino rats were randomly divided into 4 groups of 8 each. While 12-Fr bougies were used in groups 1 and 3, 8-Fr bougies were used in groups 2 and 4. Fibrin sealant application was also carried out around the gastrectomy line after sleeve gastrectomy in groups 3 and 4. Burst pressure of gastrectomy line, tissue oxygen partial pressure and hydroxyproline levels at the esophagogastric junction were measured and compared among groups. <br /><strong>Results:</strong> Mortality was detected in 2 out of 32 rats (6.25%) and one of them was in group 2 and the cause of this mortality was gastric leak. Gastric leak was detected in 2 out of 32 rats (6.25%). There was no significant difference in terms of burst pressures, tissue oxygen partial pressure and tissue hydroxyproline levels among the 4 groups. <br />Conclusion: The use of narrower bougie along with fibrin sealant has not had a negative effect on tissue perfusion and wound healing.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Staple line leak is one of the most frequent and serious complications of laparoscopic sleeve gastrectomy. This study aims to evaluate the effects of different bougie diameters on tissue oxygen partial pressure (PtO2) at the esophagogastric junction after sleeve gastrectomy. The use of narrower bougie along with fibrin sealant has not had a negative effect on tissue perfusion and wound healing. Abstract Background: Staple-line leak is the most frightening complication of laparoscopic sleeve gastrectomy and several predisposing factors such as using improper staple sizes regardless of gastric wall thickness, narrower bougie diameter and ischemia of the staple line are asserted. Aims: To evaluate the effects of different bougie diameters on tissue oxygen partial pressure at the esophagogastric junction after sleeve gastrectomy. Study Design: A randomized and controlled animal experiment with 1:1:1:1 allocation ratio. Methods: Thirty-two male Wistar Albino rats were randomly divided into 4 groups of 8 each. While 12-Fr bougies were used in groups 1 and 3, 8-Fr bougies were used in groups 2 and 4. Fibrin sealant application was also carried out around the gastrectomy line after sleeve gastrectomy in groups 3 and 4. Burst pressure of gastrectomy line, tissue oxygen partial pressure and hydroxyproline levels at the esophagogastric junction were measured and compared among groups. Results: Mortality was detected in 2 out of 32 rats (6.25%) and one of them was in group 2 and the cause of this mortality was gastric leak. Gastric leak was detected in 2 out of 32 rats (6.25%). There was no significant difference in terms of burst pressures, tissue oxygen partial pressure and tissue hydroxyproline levels among the 4 groups. Conclusion: The use of narrower bougie along with fibrin sealant has not had a negative effect on tissue perfusion and wound healing.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0484",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "245-249",
+    "views": 6785,
+    "downloads": 9583,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "1968",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1968",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1968",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1968",
+    "localPdfUrl": "js/data/pdfs/1968.pdf",
+    "pdfUrl": "js/data/pdfs/1968.pdf"
+  },
+  {
+    "id": 1971,
+    "type": "Original Article",
+    "title": "Increased Expression of Interleukin-18 mRNA is Associated with Carotid Artery Stenosis",
+    "authors": [
+      {
+        "name": "Berk Arapi",
+        "affiliation": "Department of Cardiovascular Surgery, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burcu Bayoğlu",
+        "affiliation": "Department of Medical Biology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Müjgan Cengiz",
+        "affiliation": "Department of Medical Biology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Dirican",
+        "affiliation": "Department of Biostatistics and Medical Informatics, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serkan Burç Deser",
+        "affiliation": "Department of Cardiovascular Surgery, Ondokuz Mayıs University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yerik Junusbekov",
+        "affiliation": "Department of Cardiovascular Surgery, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Caner Arslan",
+        "affiliation": "Department of Cardiovascular Surgery, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Carotid artery stenosis is the atherosclerotic narrowing of the proximal internal carotid artery and one of the primary causes of stroke. Elevated expression of the pleiotropic proinflammatory cytokine interleukin-18 has been demonstrated in human atherosclerotic plaques.Aims: To investigate whether the mRNA expression levels of interleukin-18 and interleukin-18-binding protein and interleukin-18 −137 G/C (rs187238) variants are associated with carotid artery stenosis development.Study Design: Case-control study.Methods: The mRNA expression levels of interleukin-18 and interleukin-18-binding protein and interleukin-18 rs187238 variants were evaluated by quantitative real-time polymerase chain reaction and real-time polymerase chain reaction, respectively, in the peripheral blood mononuclear cells of 70 patients with carotid artery stenosis (36 symptomatic, 34 asymptomatic) and 75 healthy controls.Results: Interleukin-18 mRNA expression was significantly increased in carotid artery stenosis patients compared to that in healthy controls (p=0.01). However, no significant difference was observed between interleukin-18-binding protein mRNA expression levels in patients with carotid artery stenosis and those in controls (p=0.101). Internal carotid artery stenosis severity was significantly higher in symptomatic patients than that in asymptomatic patients (p<0.001). A significant relationship was identified between interleukin-18 expression and internal carotid artery stenosis severity in patients with carotid artery stenosis (p=0.051). Interleukin-18 rs187238 polymorphism genotype frequencies did not significantly differ between patients with carotid artery stenosis and controls (p=0.246). A significant difference was identified between interleukin-18-binding protein gene expression and symptomatic and asymptomatic patients (p=0.026), but there was no difference in interleukin-18 expression between the symptomatic and asymptomatic subgroups (p=0.397).Conclusion: Interleukin-18 mRNA expression may affect carotid artery stenosis etiopathogenesis and internal carotid artery stenosis severity and also may play a mechanistic role in the pathogenesis of carotid artery stenosis, influencing the appearance of symptoms.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Carotid artery stenosis is the atherosclerotic narrowing of the proximal internal carotid artery and one of the primary causes of stroke. Elevated expression of the pleiotropic proinflammatory cytokine interleukin-18 has been demonstrated in human atherosclerotic plaques.<br /><strong>Aims:</strong> To investigate whether the mRNA expression levels of interleukin-18 and interleukin-18-binding protein and interleukin-18 &minus;137 G/C (rs187238) variants are associated with carotid artery stenosis development.<br /><strong>Study Design:</strong> Case-control study.<br /><strong>Methods:</strong> The mRNA expression levels of interleukin-18 and interleukin-18-binding protein and interleukin-18 rs187238 variants were evaluated by quantitative real-time polymerase chain reaction and real-time polymerase chain reaction, respectively, in the peripheral blood mononuclear cells of 70 patients with carotid artery stenosis (36 symptomatic, 34 asymptomatic) and 75 healthy controls.<br /><strong>Results:</strong> Interleukin-18 mRNA expression was significantly increased in carotid artery stenosis patients compared to that in healthy controls (p=0.01). However, no significant difference was observed between interleukin-18-binding protein mRNA expression levels in patients with carotid artery stenosis and those in controls (p=0.101). Internal carotid artery stenosis severity was significantly higher in symptomatic patients than that in asymptomatic patients (p&lt;0.001). A significant relationship was identified between interleukin-18 expression and internal carotid artery stenosis severity in patients with carotid artery stenosis (p=0.051). Interleukin-18 rs187238 polymorphism genotype frequencies did not significantly differ between patients with carotid artery stenosis and controls (p=0.246). A significant difference was identified between interleukin-18-binding protein gene expression and symptomatic and asymptomatic patients (p=0.026), but there was no difference in interleukin-18 expression between the symptomatic and asymptomatic subgroups (p=0.397).<br /><strong>Conclusion:</strong> Interleukin-18 mRNA expression may affect carotid artery stenosis etiopathogenesis and internal carotid artery stenosis severity and also may play a mechanistic role in the pathogenesis of carotid artery stenosis, influencing the appearance of symptoms.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Carotid artery stenosis is the atherosclerotic narrowing of the proximal internal carotid artery and one of the primary causes of stroke. Elevated expression of the pleiotropic proinflammatory cytokine interleukin-18 has been demonstrated in human atherosclerotic plaques.Aims: To investigate whether the mRNA expression levels of interleukin-18 and interleukin-18-binding protein and interleukin-18 −137 G/C (rs187238) variants are associated with carotid artery stenosis development.Study Design: Case-control study.Methods: The mRNA expression levels of interleukin-18 and interleukin-18-binding protein and interleukin-18 rs187238 variants were evaluated by quantitative real-time polymerase chain reaction and real-time polymerase chain reaction, respectively, in the peripheral blood mononuclear cells of 70 patients with carotid artery stenosis (36 symptomatic, 34 asymptomatic) and 75 healthy controls.Results: Interleukin-18 mRNA expression was significantly increased in carotid artery stenosis patients compared to that in healthy controls (p=0.01). However, no significant difference was observed between interleukin-18-binding protein mRNA expression levels in patients with carotid artery stenosis and those in controls (p=0.101). Internal carotid artery stenosis severity was significantly higher in symptomatic patients than that in asymptomatic patients (p<0.001). A significant relationship was identified between interleukin-18 expression and internal carotid artery stenosis severity in patients with carotid artery stenosis (p=0.051). Interleukin-18 rs187238 polymorphism genotype frequencies did not significantly differ between patients with carotid artery stenosis and controls (p=0.246). A significant difference was identified between interleukin-18-binding protein gene expression and symptomatic and asymptomatic patients (p=0.026), but there was no difference in interleukin-18 expression between the symptomatic and asymptomatic subgroups (p=0.397).Conclusion: Interleukin-18 mRNA expression may affect carotid artery stenosis etiopathogenesis and internal carotid artery stenosis severity and also may play a mechanistic role in the pathogenesis of carotid artery stenosis, influencing the appearance of symptoms.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0323",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "250-255",
+    "views": 6438,
+    "downloads": 9613,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "1971",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1971",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1971",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1971",
+    "localPdfUrl": "js/data/pdfs/1971.pdf",
+    "pdfUrl": "js/data/pdfs/1971.pdf"
+  },
+  {
+    "id": 1969,
+    "type": "Original Article",
+    "title": "Evaluation of the Cytotoxic and Autophagic Effects of Atorvastatin on MCF-7 Breast Cancer Cells",
+    "authors": [
+      {
+        "name": "Tuğba Alarcon Martinez",
+        "affiliation": "Department of Histology and Embryology, Hacettepe University School of Medicine, Ankara, Turkey; Department of Pediatrics, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Naciye Dilara Zeybek",
+        "affiliation": "Department of Histology and Embryology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sevda Müftüoğlu",
+        "affiliation": "Department of Histology and Embryology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Recently, cytotoxic effects of statins on breast cancer cells have been reported. However, the mechanism of anti-proliferative effects is currently unknown. Autophagy is non-apoptotic programmed cell death, which is characterized by degradation of cytoplasmic components and as having a role in cancer pathogenesis.Aims: To investigate the anti-proliferative effects of atorvastatin on MCF-7 human breast adenocarcinoma cells with respect to both autophagy and apoptosis.Study Design: Cell culture study.Methods: Cell viability was analyzed using WST-1 cell proliferation assay. Apoptosis was determined by the TUNEL method, whereas autophagy was assessed by Beclin-1 and LC3B immunofluorescence staining. Ultrastructural analysis of cells was performed by electron microscopy.Results: Atorvastatin reduced MCF-7 cell proliferation in a dose- and time-dependent manner inducing TUNEL-, Beclin-1-, and LC3B-positive cells. Moreover, ultrastructural analysis showed apoptotic, autophagic, and necrotic morphological changes in treatment groups. A statistically significant increase in the apoptotic index was detected with higher concentrations of atorvastatin at 24 h and 48 h (p<0.05).Conclusion: The anti-proliferative effects of atorvastatin on breast cancer cells is mediated by the induction of both apoptosis and autophagy which shows statins as a potential treatment option for breast cancer.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Recently, cytotoxic effects of statins on breast cancer cells have been reported. However, the mechanism of anti-proliferative effects is currently unknown. Autophagy is non-apoptotic programmed cell death, which is characterized by degradation of cytoplasmic components and as having a role in cancer pathogenesis.<br /><strong>Aims:</strong> To investigate the anti-proliferative effects of atorvastatin on MCF-7 human breast adenocarcinoma cells with respect to both autophagy and apoptosis.<br /><strong>Study Design:</strong> Cell culture study.<br /><strong>Methods:</strong> Cell viability was analyzed using WST-1 cell proliferation assay. Apoptosis was determined by the TUNEL method, whereas autophagy was assessed by Beclin-1 and LC3B immunofluorescence staining. Ultrastructural analysis of cells was performed by electron microscopy.<br /><strong>Results:</strong> Atorvastatin reduced MCF-7 cell proliferation in a dose- and time-dependent manner inducing TUNEL-, Beclin-1-, and LC3B-positive cells. Moreover, ultrastructural analysis showed apoptotic, autophagic, and necrotic morphological changes in treatment groups. A statistically significant increase in the apoptotic index was detected with higher concentrations of atorvastatin at 24 h and 48 h (p&lt;0.05).<br /><strong>Conclusion:</strong> The anti-proliferative effects of atorvastatin on breast cancer cells is mediated by the induction of both apoptosis and autophagy which shows statins as a potential treatment option for breast cancer.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Recently, cytotoxic effects of statins on breast cancer cells have been reported. However, the mechanism of anti-proliferative effects is currently unknown. Autophagy is non-apoptotic programmed cell death, which is characterized by degradation of cytoplasmic components and as having a role in cancer pathogenesis.Aims: To investigate the anti-proliferative effects of atorvastatin on MCF-7 human breast adenocarcinoma cells with respect to both autophagy and apoptosis.Study Design: Cell culture study.Methods: Cell viability was analyzed using WST-1 cell proliferation assay. Apoptosis was determined by the TUNEL method, whereas autophagy was assessed by Beclin-1 and LC3B immunofluorescence staining. Ultrastructural analysis of cells was performed by electron microscopy.Results: Atorvastatin reduced MCF-7 cell proliferation in a dose- and time-dependent manner inducing TUNEL-, Beclin-1-, and LC3B-positive cells. Moreover, ultrastructural analysis showed apoptotic, autophagic, and necrotic morphological changes in treatment groups. A statistically significant increase in the apoptotic index was detected with higher concentrations of atorvastatin at 24 h and 48 h (p<0.05).Conclusion: The anti-proliferative effects of atorvastatin on breast cancer cells is mediated by the induction of both apoptosis and autophagy which shows statins as a potential treatment option for breast cancer.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0604",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "256-262",
+    "views": 7040,
+    "downloads": 10529,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "1969",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1969",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1969",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1969",
+    "localPdfUrl": "js/data/pdfs/1969.pdf",
+    "pdfUrl": "js/data/pdfs/1969.pdf"
+  },
+  {
+    "id": 1926,
+    "type": "Brief Report",
+    "title": "Mixed Adeno-Neuroendocrine Carcinoma; Case Series of Ten Patients with Review of the Literature",
+    "authors": [
+      {
+        "name": "Yiğit Düzköylü",
+        "affiliation": "Clinic of Gastroenterological Surgery, Türkiye Yüksek İhtisas Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Orhan Aras",
+        "affiliation": "Clinic of Gastroenterological Surgery, Türkiye Yüksek İhtisas Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erdal Birol Bostancı",
+        "affiliation": "Clinic of Gastroenterological Surgery, Türkiye Yüksek İhtisas Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tülay Keklik Temuçin",
+        "affiliation": "Clinic of Pathology, Türkiye Yüksek İhtisas Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Ulaş",
+        "affiliation": "Clinic of Gastroenterological Surgery, Türkiye Yüksek İhtisas Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Aims: Mixed adeno-neuroendocrine carcinoma is a rare entity, diagnosed with immunohistochemical studies. Literature mainly includes case reports and series which are very few. In our study, we aimed to report a case series from a tertiary hospital with demographics of the patients, detailed tumor and clinical findings and follow-up plus survival conditions.Methods: Pathology database was explored for patients with the pathological diagnosis of ‘mixed adeno-neuroendocrine carcinoma’ and patients were identified retrospectively and evaluated in means of demographics, histopathological examination, tumor properties.Results: Ten patients had been diagnosed with mixed adeno-neuroendocrine carcinoma in our center, diagnosed at a mean age of 64.7. Stomach was found to be the most common localization. Five patients (50%) were diagnosed as grade 3. Following surgery, median follow-up was 15 months with a median survival time of 20.6 months.Conclusion: This case series may contribute to the literature on the pathological and clinical aspects of the mixed adenoneuroendocrine carcinoma of the gastrointestinal system.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Aims:</strong> Mixed adeno-neuroendocrine carcinoma is a rare entity, diagnosed with immunohistochemical studies. Literature mainly includes case reports and series which are very few. In our study, we aimed to report a case series from a tertiary hospital with demographics of the patients, detailed tumor and clinical findings and follow-up plus survival conditions.<br /><strong>Methods:</strong> Pathology database was explored for patients with the pathological diagnosis of &lsquo;mixed adeno-neuroendocrine carcinoma&rsquo; and patients were identified retrospectively and evaluated in means of demographics, histopathological examination, tumor properties.Results:&nbsp; Ten patients had been diagnosed with mixed adeno-neuroendocrine carcinoma in our center, diagnosed at a mean age of 64.7.&nbsp; Stomach was found to be the most common localization. Five patients (50%) were diagnosed as grade 3. Following surgery, median follow-up was 15 months with a median survival time of 20.6 months.<br /><strong>Conclusion:</strong> This case series may contribute to the literature on the pathological and clinical aspects of the mixed adenoneuroendocrine carcinoma of the gastrointestinal system.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Aims: Mixed adeno-neuroendocrine carcinoma is a rare entity, diagnosed with immunohistochemical studies. Literature mainly includes case reports and series which are very few. In our study, we aimed to report a case series from a tertiary hospital with demographics of the patients, detailed tumor and clinical findings and follow-up plus survival conditions.Methods: Pathology database was explored for patients with the pathological diagnosis of ‘mixed adeno-neuroendocrine carcinoma’ and patients were identified retrospectively and evaluated in means of demographics, histopathological examination, tumor properties.Results: Ten patients had been diagnosed with mixed adeno-neuroendocrine carcinoma in our center, diagnosed at a mean age of 64.7. Stomach was found to be the most common localization. Five patients (50%) were diagnosed as grade 3. Following surgery, median follow-up was 15 months with a median survival time of 20.6 months.Conclusion: This case series may contribute to the literature on the pathological and clinical aspects of the mixed adenoneuroendocrine carcinoma of the gastrointestinal system.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.1471",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "263-267",
+    "views": 6422,
+    "downloads": 9857,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "1926",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1926",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1926",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1926",
+    "localPdfUrl": "js/data/pdfs/1926.pdf",
+    "pdfUrl": "js/data/pdfs/1926.pdf"
+  },
+  {
+    "id": 1872,
+    "type": "Case Report",
+    "title": "Urothelial Carcinoma of the Bladder in Pediatric Patient: Four Case Series and Review of the Literature",
+    "authors": [
+      {
+        "name": "Murat Uçar",
+        "affiliation": "Division of Pediatric Urology, Department of Pediatric Surgery, Uludağ University School of Medicine, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Metin Demirkaya",
+        "affiliation": "Division of Pediatric Oncology, Department of Pediatrics, Uludağ University School of Medicine, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Berna Aytaç Vuruşkan",
+        "affiliation": "Department of Pathology, Uludağ University School of Medicine, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emin Balkan",
+        "affiliation": "Division of Pediatric Urology, Department of Pediatric Surgery, Uludağ University School of Medicine, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nizamettin Kılıç",
+        "affiliation": "Division of Pediatric Urology, Department of Pediatric Surgery, Uludağ University School of Medicine, Bursa, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Urothelial carcinoma of the bladder is a rare condition in children, and most cases in this age group are noninvasive and low-grade. However, no follow-up protocol has been defined for this patient group. The objective of this study was to draw attention to bladder tumors in children and focus on the current recommendations for postoperative follow-up along with a case study of four patients.Case Report: Four patients aged <18 years with urothelial carcinoma who were treated in our clinics between 2001 and 2015 were retrospectively evaluated. The results were compared with those of published pediatric case series in the literature. No abnormalities were found in the patients’ physical examinations and laboratory analyses, except hematuria (microscopic or macroscopic). Ultrasonography was used in all the patients to detect lesions in the bladder. Surgical resections were performed endoscopically, except in one patient. Histopathological evaluations revealed low-grade superficial urothelial carcinoma. No recurrence or complication was observed for all patients.Conclusion: Although rarely encountered during childhood, urothelial carcinoma should be considered as a differential diagnosis in pediatric patients with hematuria.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Urothelial carcinoma of the bladder is a rare condition in children, and most cases in this age group are noninvasive and low-grade. However, no follow-up protocol has been defined for this patient group. The objective of this study was to draw attention to bladder tumors in children and focus on the current recommendations for postoperative follow-up along with a case study of four patients.<br /><strong>Case Report:</strong> Four patients aged &lt;18 years with urothelial carcinoma who were treated in our clinics between 2001 and 2015 were retrospectively evaluated. The results were compared with those of published pediatric case series in the literature. No abnormalities were found in the patients&rsquo; physical examinations and laboratory analyses, except hematuria (microscopic or macroscopic). Ultrasonography was used in all the patients to detect lesions in the bladder. Surgical resections were performed endoscopically, except in one patient. Histopathological evaluations revealed low-grade superficial urothelial carcinoma. No recurrence or complication was observed for all patients.<br /><strong>Conclusion:</strong> Although rarely encountered during childhood, urothelial carcinoma should be considered as a differential diagnosis in pediatric patients with hematuria.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Urothelial carcinoma of the bladder is a rare condition in children, and most cases in this age group are noninvasive and low-grade. However, no follow-up protocol has been defined for this patient group. The objective of this study was to draw attention to bladder tumors in children and focus on the current recommendations for postoperative follow-up along with a case study of four patients.Case Report: Four patients aged <18 years with urothelial carcinoma who were treated in our clinics between 2001 and 2015 were retrospectively evaluated. The results were compared with those of published pediatric case series in the literature. No abnormalities were found in the patients’ physical examinations and laboratory analyses, except hematuria (microscopic or macroscopic). Ultrasonography was used in all the patients to detect lesions in the bladder. Surgical resections were performed endoscopically, except in one patient. Histopathological evaluations revealed low-grade superficial urothelial carcinoma. No recurrence or complication was observed for all patients.Conclusion: Although rarely encountered during childhood, urothelial carcinoma should be considered as a differential diagnosis in pediatric patients with hematuria.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.1292",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "268-271",
+    "views": 6783,
+    "downloads": 9883,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "1872",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1872",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1872",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1872",
+    "localPdfUrl": "js/data/pdfs/1872.pdf",
+    "pdfUrl": "js/data/pdfs/1872.pdf"
+  },
+  {
+    "id": 1919,
+    "type": "Case Report",
+    "title": "Haploinsufficiency of the DMRT Gene Cluster in a Case with 46,XY Ovotesticular Disorder of Sexual Development",
+    "authors": [
+      {
+        "name": "Metin Eser",
+        "affiliation": "Clinic of Medical Genetics, Aydın State Hospital, Aydın, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Akif Ayaz",
+        "affiliation": "Clinic of Medical Genetics, University of Health Sciences, Kanuni Sultan Süleyman Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Ovotesticular disorder is an extremely rare cause of disorder of sexual development, once known as true hermaphroditism. Herein, we report a 3-month-old phenotypically female baby in whom differentiated tissues of both Müllerian and Wolffian ducts were detected on pathological analysis of laparoscopic biopsy material. Chromosomal analysis observed 46,XY, der(9)t(3;9)(p25;p24) with deletion of 9p24.3p23 including the DMRT gene cluster and duplication of 3p26.3p24.3 on array comparative genomic hybridisation. Abstract Background: Ovotesticular disorder is characterized by the presence of testicular and ovarian tissues in the same individual. Single gene mutations in SRY, SOX9, DMRT1 and DAX1 can lead to ovotesticular disorder of sexual development.Case Report: Herein, we report a 3-month-old phenotypically female baby in whom differentiated tissues of both Müllerian and Wolffian ducts were detected on pathological analysis of laparoscopic biopsy material. Chromosomal analysis observed 46,XY, der(9)t(3;9)(p25;p24) with deletion of 9p24.3p23 including the DMRT gene cluster and duplication of 3p26.3p24.3 on array comparative genomic hybridisation.Conclusion: In support of previous literature, we found that haploinsufficiency of the DMRT gene cluster leads to ovotesticular disorder of sexual development. In addition, we emphasize that array comparative genomic hybridisation is an important technique in the molecular diagnosis of ovotesticular disorder of sexual.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\tOvotesticular disorder is an extremely rare cause of disorder of sexual development, once known as true hermaphroditism.  Herein, we report a 3-month-old phenotypically female baby in whom differentiated tissues of both Müllerian and Wolffian ducts were detected on pathological analysis of laparoscopic biopsy material. Chromosomal analysis observed 46,XY, der(9)t(3;9)(p25;p24) with deletion of 9p24.3p23 including the <em>DMRT</em> gene cluster and duplication of 3p26.3p24.3 on array comparative genomic hybridisation.\r\n</br></br>\r\n<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Ovotesticular disorder is characterized by the presence of testicular and ovarian tissues in the same individual. Single gene mutations in <em>SRY, SOX9, DMRT1</em> and <em>DAX1</em> can lead to ovotesticular disorder of sexual development.<br /><strong>Case Report:</strong> Herein, we report a 3-month-old phenotypically female baby in whom differentiated tissues of both M&uuml;llerian and Wolffian ducts were detected on pathological analysis of laparoscopic biopsy material. Chromosomal analysis observed 46,XY, der(9)t(3;9)(p25;p24) with deletion of 9p24.3p23 including the <em>DMRT</em> gene cluster and duplication of 3p26.3p24.3 on array comparative genomic hybridisation.<br /><strong>Conclusion:</strong> In support of previous literature, we found that haploinsufficiency of the <em>DMRT</em> gene cluster leads to ovotesticular disorder of sexual development. In addition, we emphasize that array comparative genomic hybridisation is an important technique in the molecular diagnosis of ovotesticular disorder of sexual.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Ovotesticular disorder is an extremely rare cause of disorder of sexual development, once known as true hermaphroditism. Herein, we report a 3-month-old phenotypically female baby in whom differentiated tissues of both Müllerian and Wolffian ducts were detected on pathological analysis of laparoscopic biopsy material. Chromosomal analysis observed 46,XY, der(9)t(3;9)(p25;p24) with deletion of 9p24.3p23 including the DMRT gene cluster and duplication of 3p26.3p24.3 on array comparative genomic hybridisation. Abstract Background: Ovotesticular disorder is characterized by the presence of testicular and ovarian tissues in the same individual. Single gene mutations in SRY, SOX9, DMRT1 and DAX1 can lead to ovotesticular disorder of sexual development.Case Report: Herein, we report a 3-month-old phenotypically female baby in whom differentiated tissues of both Müllerian and Wolffian ducts were detected on pathological analysis of laparoscopic biopsy material. Chromosomal analysis observed 46,XY, der(9)t(3;9)(p25;p24) with deletion of 9p24.3p23 including the DMRT gene cluster and duplication of 3p26.3p24.3 on array comparative genomic hybridisation.Conclusion: In support of previous literature, we found that haploinsufficiency of the DMRT gene cluster leads to ovotesticular disorder of sexual development. In addition, we emphasize that array comparative genomic hybridisation is an important technique in the molecular diagnosis of ovotesticular disorder of sexual.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0378",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "272-274",
+    "views": 6732,
+    "downloads": 3476,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "1919",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1919",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1919",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1919",
+    "localPdfUrl": "js/data/pdfs/1919.pdf",
+    "pdfUrl": "js/data/pdfs/1919.pdf"
+  },
+  {
+    "id": 1925,
+    "type": "Case Report",
+    "title": "Rare Fibroepithelial Polyp Extending Along the Ureter: A Case Report",
+    "authors": [
+      {
+        "name": "Hakan Akdere",
+        "affiliation": "Department of Urology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gökhan Çevik",
+        "affiliation": "Department of Urology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Fibroepithelial polyps of the urinary tract are rare tumors, and their occurrence in the upper urinary tract is highly unusual.Case Report: This study reports a 9-year-old boy who presented to our clinic with complaints of unilateral flank pain and macroscopic hematuria. The direct urinary system graph did not show stone formation; therefore, magnetic resonance urography was performed. This revealed a filling defect in the left proximal ureter. On cystoscopy, a polyp was seen in the orifice of the left ureter, extending along the ureter. The polyp was resected by laser ablation and removed from the ureter. Histopathologic examination revealed a fibroepithelial polyp comprising fibrovascular stroma covered with transitional epithelium.Conclusion: Although extremely rare, a fibroepithelial polyp should be considered in the differential diagnosis when a young patient presents with flank pain and macroscopic hematuria. Endoscopic procedures may be the treatment of choice for polyps located in the upper ureter.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Fibroepithelial polyps of the urinary tract are rare tumors, and their occurrence in the upper urinary tract is highly unusual.<br /><strong>Case Report:</strong> This study reports a 9-year-old boy who presented to our clinic with complaints of unilateral flank pain and macroscopic hematuria. The direct urinary system graph did not show stone formation; therefore, magnetic resonance urography was performed. This revealed a filling defect in the left proximal ureter. On cystoscopy, a polyp was seen in the orifice of the left ureter, extending along the ureter. The polyp was resected by laser ablation and removed from the ureter. Histopathologic examination revealed a fibroepithelial polyp comprising fibrovascular stroma covered with transitional epithelium.<br /><strong>Conclusion:</strong> Although extremely rare, a fibroepithelial polyp should be considered in the differential diagnosis when a young patient presents with flank pain and macroscopic hematuria. Endoscopic procedures may be the treatment of choice for polyps located in the upper ureter.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Fibroepithelial polyps of the urinary tract are rare tumors, and their occurrence in the upper urinary tract is highly unusual.Case Report: This study reports a 9-year-old boy who presented to our clinic with complaints of unilateral flank pain and macroscopic hematuria. The direct urinary system graph did not show stone formation; therefore, magnetic resonance urography was performed. This revealed a filling defect in the left proximal ureter. On cystoscopy, a polyp was seen in the orifice of the left ureter, extending along the ureter. The polyp was resected by laser ablation and removed from the ureter. Histopathologic examination revealed a fibroepithelial polyp comprising fibrovascular stroma covered with transitional epithelium.Conclusion: Although extremely rare, a fibroepithelial polyp should be considered in the differential diagnosis when a young patient presents with flank pain and macroscopic hematuria. Endoscopic procedures may be the treatment of choice for polyps located in the upper ureter.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.1537",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "275-277",
+    "views": 7217,
+    "downloads": 9692,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "1925",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1925",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1925",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1925",
+    "localPdfUrl": "js/data/pdfs/1925.pdf",
+    "pdfUrl": "js/data/pdfs/1925.pdf"
+  },
+  {
+    "id": 1960,
+    "type": "Case Report",
+    "title": "Successful Management of Aggressive Fibromatosis of the Neck:  A Case Report",
+    "authors": [
+      {
+        "name": "Özgür Mehmet Avinçsal",
+        "affiliation": "Department of Otolaryngology-Head and Neck Surgery, Kobe University Graduate School of Medicine, Kobe, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Hirotaka Shinomiya",
+        "affiliation": "Department of Otolaryngology-Head and Neck Surgery, Kobe University Graduate School of Medicine, Kobe, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Naoki Otsuki",
+        "affiliation": "Department of Otolaryngology-Head and Neck Surgery, Kobe University Graduate School of Medicine, Kobe, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Ryohei Sasaki",
+        "affiliation": "Department of Internal Medicine, Division of Radiation Oncology, Kobe University Graduate School of Medicine, Kobe, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Ken-ichi Nibu",
+        "affiliation": "Department of Otolaryngology-Head and Neck Surgery, Kobe University Graduate School of Medicine, Kobe, Japan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Aggressive fibromatoses are histologically benign fibrous neoplasms originating from musculoaponeurotic structures throughout the body. They are locally invasive and erode adjacent vital structures. The head and neck region constitutes 7-25% of all extra-abdominal cases.Case Report: Here, we report the case of a patient with aggressive fibromatosis in the left side of the neck. While the tumor deeply invaded the scalene muscles, the lesion was successfully treated by surgery followed by radiotherapy. The patient has been disease free for the last 7 years following treatment.Conclusion: Due to its unusual location in the head and neck region, aggressive fibromatosis should be considered in the differential diagnosis of invading lesions of the neck.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Aggressive fibromatoses are histologically benign fibrous neoplasms originating from musculoaponeurotic structures throughout the body. They are locally invasive and erode adjacent vital structures. The head and neck region constitutes 7-25% of all extra-abdominal cases.<br /><strong>Case Report:</strong> Here, we report the case of a patient with aggressive fibromatosis in the left side of the neck. While the tumor deeply invaded the scalene muscles, the lesion was successfully treated by surgery followed by radiotherapy. The patient has been disease free for the last 7 years following treatment.<br /><strong>Conclusion:</strong> Due to its unusual location in the head and neck region, aggressive fibromatosis should be considered in the differential diagnosis of invading lesions of the neck.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Aggressive fibromatoses are histologically benign fibrous neoplasms originating from musculoaponeurotic structures throughout the body. They are locally invasive and erode adjacent vital structures. The head and neck region constitutes 7-25% of all extra-abdominal cases.Case Report: Here, we report the case of a patient with aggressive fibromatosis in the left side of the neck. While the tumor deeply invaded the scalene muscles, the lesion was successfully treated by surgery followed by radiotherapy. The patient has been disease free for the last 7 years following treatment.Conclusion: Due to its unusual location in the head and neck region, aggressive fibromatosis should be considered in the differential diagnosis of invading lesions of the neck.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0509",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "278-281",
+    "views": 6806,
+    "downloads": 4094,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "1960",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1960",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1960",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1960",
+    "localPdfUrl": "js/data/pdfs/1960.pdf",
+    "pdfUrl": "js/data/pdfs/1960.pdf"
+  },
+  {
+    "id": 1920,
+    "type": "Clinical Image",
+    "title": "Uterine Mass and Menorrhagia: A Rare Presentation of Acute Myeloid Leukemia with Arduous Clinical Course",
+    "authors": [
+      {
+        "name": "Kundan Mishra",
+        "affiliation": "Department of Internal Medicine, Postgraduate Institute of Medical Training and Research, Chandigarh, India",
+        "orcid": ""
+      },
+      {
+        "name": "Chandrasekaran Muralidaran",
+        "affiliation": "Department of Pathology, Postgraduate Institute of Medical Training and Research, Chandigarh, India",
+        "orcid": ""
+      },
+      {
+        "name": "Aditya Jandial",
+        "affiliation": "Department of Internal Medicine, Postgraduate Institute of Medical Training and Research, Chandigarh, India",
+        "orcid": ""
+      },
+      {
+        "name": "B.R. Mittal",
+        "affiliation": "Department of Nuclear Medicine, Postgraduate Institute of Medical Training and Research, Chandigarh, India",
+        "orcid": ""
+      },
+      {
+        "name": "Subhash Varma",
+        "affiliation": "Department of Internal Medicine, Postgraduate Institute of Medical Training and Research, Chandigarh, India",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 36-year-old multiparous lady presented with complaints of menorrhagia and fatigue for three months. There was no history of bleeding from any other site, fever, lower abdominal pain, or abdominal distension. She was diagnosed with primary hypothyroidism five years back, and since then she had regularly been on a stable thyroxine dose (125 μg per day); ther",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0941",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "282-284",
+    "views": 5848,
+    "downloads": 9383,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "1920",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1920",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1920",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1920",
+    "localPdfUrl": "js/data/pdfs/1920.pdf",
+    "pdfUrl": "js/data/pdfs/1920.pdf"
+  },
+  {
+    "id": 1924,
+    "type": "Clinical Image",
+    "title": "Multiple Loops of External and Internal Carotid Arteries Vulnerable in Surgical and Radiological Procedures",
+    "authors": [
+      {
+        "name": "Satheesha Nayak",
+        "affiliation": "Department of Anatomy, Melaka Manipal Medical College, Manipal Campus, Manipal Academy of Higher Education, Manipal, Karnataka, India",
+        "orcid": ""
+      },
+      {
+        "name": "Naveen Kumar",
+        "affiliation": "Department of Anatomy, Melaka Manipal Medical College, Manipal Campus, Manipal Academy of Higher Education, Manipal, Karnataka, India",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Carotid arterial system tortuosity is comparatively less common than its variations in branching patterns and termination. Tortuous common carotid artery is often associated with risk of injury during surgical procedures in the neck region, and such injuries usually occur during tracheotomy (1). Looping or tortuosity of internal carotid arteries can also be ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.1179",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "285-286",
+    "views": 5951,
+    "downloads": 3166,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "1924",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1924",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1924",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1924",
+    "localPdfUrl": "js/data/pdfs/1924.pdf",
+    "pdfUrl": "js/data/pdfs/1924.pdf"
+  },
+  {
+    "id": 1970,
+    "type": "Letter to the Editor",
+    "title": "Practice Patterns in Diagnosis and Treatment of Lower Urinary Tract Symptoms due to Benign Prostatic Hyperplasia among General Practitioners: Lessons Learnt from a Greek Survey",
+    "authors": [
+      {
+        "name": "Michael Samarinas",
+        "affiliation": "Department of Urology, University of Thessaly School of Medicine, Larissa, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Kyriakos Moysidis",
+        "affiliation": "Department of Urology, Aristotle University of Thessaloniki School of Medicine, Thessaloniki, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Pigi Perdikaki",
+        "affiliation": "Chair of the Hellenic College of General Practitioners, Health Center of Astros, Astros, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Stavros Gravas",
+        "affiliation": "Department of Urology, University of Thessaly School of Medicine, Larissa, Greece",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, Male lower urinary tract symptoms, which are prevalent and directly related to aging process, are a concern and impair the quality of life (1). The role of general practitioners is crucial for the management of male lower urinary tract symptoms to improve healthcare and reduce the associated costs. Recording the practice patterns for the diagn",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.1659",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "287-288",
+    "views": 5734,
+    "downloads": 9305,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "1970",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1970",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1970",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1970",
+    "localPdfUrl": "js/data/pdfs/1970.pdf",
+    "pdfUrl": "js/data/pdfs/1970.pdf"
+  },
+  {
+    "id": 1982,
+    "type": "Letter to the Editor",
+    "title": "New Hypothesis and Alternative Approach for Imaging Neuronal Function and Metabolic Activity Based on Redox-Status",
+    "authors": [
+      {
+        "name": "Plamen Getsov",
+        "affiliation": "Department of Radiology, Sofia University “St. Kliment Ohridski” School of Medicine, Sofia, Bulgaria; Department of Radiology, “Tsaritsa Yoanna-ISUL” University Hospital, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Zhivko Zhelev",
+        "affiliation": "Trakia University School of Medicine, Stara Zagora, Bulgaria; Institute of Biophysics and Biomedical Engineering, Bulgarian Academy of Sciences, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Ichio Aoki",
+        "affiliation": "Department of Molecular Imaging and Theranostics National Institute of Radiological Sciences, QST, Chiba, Japan; Group of Quantum-state Controlled MRI, National Institute of Radiological Sciences, Chiba, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Rumiana Bakalova",
+        "affiliation": "Department of Radiology, Sofia University “St. Kliment Ohridski” School of Medicine, Sofia, Bulgaria; Department of Molecular Imaging and Theranostics National Institute of Radiological Sciences, QST, Chiba, Japan; Group of Quantum-state Controlled MRI, National Institute of Radiological Sciences, Chiba, Japan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "This article is intended to bring about a change in the way of thinking about the molecular nature of functional magnetic resonance imaging (fMRI). The underlying assumption in our hypothesis is that fMRI may report mitochondrial activity in the synaptic area of the activated neuron, as well as an increased nitric oxide synthase activity at the same locus. The hypothesis is based on the uniqueness of the structure and functioning of the activated synapse and the major biochemical consequences of this structural–functional phenomenon. To the Editor, This article is intended to bring about a change in the way of thinking about the molecular nature of functional magnetic resonance imaging (fMRI) (1). The underlying assumption in our hypothesis is that fMRI may report mitochondrial activity in the synaptic area of the activated neuron, as well as an increased nitric oxide synthase activity at the same locus. The hypothesis is based on the uniqueness of the structure and functioning of the activated synapse and the major biochemical consequences of this structural–functional phenomenon. The synapse is the primary energy source in the neuron, and the secret of fMRI might be hidden in the processes occurring in this locus. What is unique in the synapse? It contains a large amount of neurotransmitter vesicles, as well as a large amount of mitochondria due to the huge energy demand in this part of the neuron. In the synaptic mitochondria, 34-38 molecules of adenosine triphosphate (ATP) per molecule of glucose are synthesized based on glucose metabolism in the tricarboxylic acid (TCA) cycle (Figure 1) (2,3). It must be emphasized that “activity-driven ATP synthesis” in the synapse occurs for a short time in a very limited space – only in the area of the activated neuron. What are the consequences of the “activity-driven ATP synthesis” in the synaptic mitochondria? Electrons are derived through the mitochondrial electron transport chain (ETC), and a proton gradient is established across the inner mitochondrial membrane as an energy source for ATP synthesis. The most important biochemical event, associated with this process, is the production of a large amount of superoxide in the activated synapse for a very short time, due to the large amount of metabolically active mitochondria in this locus (Figure 2a). It must be clarified that this is not a permanent hyperproduction of superoxide, which can cause oxidative stress in the neuron. This is just a momentary event, which is precisely controlled by various factors (ETC complexes, antioxidant enzymes, uncoupling proteins, etc.) (3,4). Superoxide radicals are paramagnetic species that are detectable directly by imaging techniques such as MRI (5). Moreover, hyperproduction of superoxide in metabolically active synaptic mitochondria may affect either T1 and/or T2 relaxation times of the surrounding protons. This will change the 1H MRI contrast in the activated synapse for a very short time – a well-known principle of enhancement of MRI contrast by other radicals (e.g., nitroxides) (6). Тo clarify the role of superoxide in the relaxivity of water molecules, we performed a very simple MRI experiment in a pure chemical system, deionized water (DIW) plus potassium superoxide. Potassium superoxide rapidly decomposes into superoxide radicals in water, which is accompanied by enhancement of T1 and T2 MRI contrast (Figure 2b). Superoxide is also an intermediate involved in the paramagnetic or diamagnetic transformations of hemoglobin during the transport of oxygen in the activated neuron (7). The hemoglobin transformations are considered as the primary factors for BOLD signals in fMRI measurements. It is interesting to note that nitric oxide (NO), derived from NO adducts (as nitroglycerine or NOC9) in DIW, also increased T1 and T2 MRI contrast. However, the enhancement disappeared very rapidly, and it was difficult to obtain reproducible data due to the time required for MRI setting (data are not shown). NO is one of the major mediators of neurovascular coupling, and its local concentration in the activated synaptic area must also be high (8). The hyperproduction of NO and superoxide is spatially separated – production of superoxide occurs in the synaptic mitochondria, whereas that of NO occurs in the vascular endothelium. This eliminates the possibility of interaction between NO and superoxide with the formation of toxic peroxynitrite. The described data suggest that local and relatively long-lasting hyperproduction of superoxide by “activity-driven mitochondria” and NO in the synaptic area may be a major factor, changing proton relaxivity, and a root cause of the fMRI signals. Therefore, fMRI can be used not only as a tool for detecting neural activity but also for detecting other metabolically active cells and tissues (e.g., cancer). We believe that the hypothesis could be proved theoretically and experimentally using Overhauser-enhanced MRI (OMRI) based on proton–electron cross-relaxation phenomenon (9). However, the OMRI hybrid instruments are still “home-made,” expensive, and not available on the market. In addition, the experimental verification of the hypothesis requires a unique team of specialists – neurophysiologists, biochemists, biophysicists, specialists in molecular imaging, and mathematicians. This article aims to provoke the creation of such teams and to set their efforts in a direction that can open new trends in the concept of “functional imaging.” The described hypothesis could have a significant impact in all areas of molecular and functional imaging using MRI, positron emission tomography, optical, etc. Acknowledgements: We would like to thank Mr. Yoshikazu Ozawa from the National Institute for Radiological Sciences, QST/NIRS, Chiba, Japan, for his assistance during MRI experiment. Conflict of Interest: No conflict of interest was declared by the authors. Financial Disclosure: No financial disclosure was declared by the authors.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\tThis article is intended to bring about a change in the way of thinking about the molecular nature of functional magnetic resonance imaging (fMRI). The underlying assumption in our hypothesis is that fMRI may report mitochondrial activity in the synaptic area of the activated neuron, as well as an increased nitric oxide synthase activity at the same locus. The hypothesis is based on the uniqueness of the structure and functioning of the activated synapse and the major biochemical consequences of this structural–functional phenomenon.\r\n</br>\r\n<hr size=\"1\" color=\"#f2f2f2\">\r\n<p>To the Editor,</p>\r\n<p>This article is intended to bring about a change in the way of thinking about the molecular nature of functional magnetic resonance imaging (fMRI) (1). The underlying assumption in our hypothesis is that fMRI may report mitochondrial activity in the synaptic area of the activated neuron, as well as an increased nitric oxide synthase activity at the same locus. The hypothesis is based on the uniqueness of the structure and functioning of the activated synapse and the major biochemical consequences of this structural&ndash;functional phenomenon.</p>\r\n<p>The synapse is the primary energy source in the neuron, and the secret of fMRI might be hidden in the processes occurring in this locus.</p>\r\n<p><strong><em>What is unique in the synapse?</em></strong> It contains a large amount of neurotransmitter vesicles, as well as a large amount of mitochondria due to the huge energy demand in this part of the neuron. In the synaptic mitochondria, 34-38 molecules of adenosine triphosphate (ATP) per molecule of glucose are synthesized based on glucose metabolism in the tricarboxylic acid (TCA) cycle (<ffigure1>Figure 1</ffigure1>) (2,3). It must be emphasized that &ldquo;activity-driven ATP synthesis&rdquo; in the synapse occurs for a short time in a very limited space &ndash; only in the area of the activated neuron.</p>\r\n<p><strong><em>What are the consequences of the &ldquo;activity-driven ATP synthesis&rdquo; in the synaptic mitochondria?</em></strong> Electrons are derived through the mitochondrial electron transport chain (ETC), and a proton gradient is established across the inner mitochondrial membrane as an energy source for ATP synthesis. The most important biochemical event, associated with this process, is the production of a large amount of superoxide in the activated synapse for a very short time, due to the large amount of metabolically active mitochondria in this locus (<ffigure2>Figure 2a</ffigure2>). It must be clarified that this is not a permanent hyperproduction of superoxide, which can cause oxidative stress in the neuron. This is just a momentary event, which is precisely controlled by various factors (ETC complexes, antioxidant enzymes, uncoupling proteins, etc.) (3,4).</p>\r\n<p>Superoxide radicals are paramagnetic species that are detectable directly by imaging techniques such as MRI (5). Moreover, hyperproduction of superoxide in metabolically active synaptic mitochondria may affect either T<sub>1</sub>&nbsp;and/or T<sub>2</sub>&nbsp;relaxation times of the surrounding protons. This will change the <sup>1</sup>H MRI contrast in the activated synapse for a very short time &ndash; a well-known principle of enhancement of MRI contrast by other radicals (e.g., nitroxides) (6).</p>\r\n<p>Тo clarify the role of superoxide in the relaxivity of water molecules, we performed a very simple MRI experiment in a pure chemical system, deionized water (DIW) plus potassium superoxide. Potassium superoxide rapidly decomposes into superoxide radicals in water, which is accompanied by enhancement of T<sub>1</sub>&nbsp;and T<sub>2</sub>&nbsp;MRI contrast (<ffigure2>Figure 2b</ffigure2>).</p>\r\n<p>Superoxide is also an intermediate involved in the paramagnetic or diamagnetic transformations of hemoglobin during the transport of oxygen in the activated neuron (7). The hemoglobin transformations are considered as the primary factors for BOLD signals in fMRI measurements.</p>\r\n<p>It is interesting to note that nitric oxide (NO), derived from NO adducts (as nitroglycerine or NOC9) in DIW, also increased T<sub>1</sub> and T<sub>2</sub>&nbsp;MRI contrast. However, the enhancement disappeared very rapidly, and it was difficult to obtain reproducible data due to the time required for MRI setting (data are not shown). NO is one of the major mediators of neurovascular coupling, and its local concentration in the activated synaptic area must also be high (8). The hyperproduction of NO and superoxide is spatially separated &ndash; production of superoxide occurs in the synaptic mitochondria, whereas that of NO occurs in the vascular endothelium. This eliminates the possibility of interaction between NO and superoxide with the formation of toxic peroxynitrite.</p>\r\n<p><em>The described data suggest that local and relatively long-lasting hyperproduction of superoxide by &ldquo;activity-driven mitochondria&rdquo; and NO in the synaptic area may be a major factor, changing proton relaxivity, and a root cause of the fMRI signals.</em> Therefore, fMRI can be used not only as a tool for detecting neural activity but also for detecting other metabolically active cells and tissues (e.g., cancer).</p>\r\n<p>We believe that the hypothesis could be proved theoretically and experimentally using Overhauser-enhanced MRI (OMRI) based on proton&ndash;electron cross-relaxation phenomenon (9). However, the OMRI hybrid instruments are still &ldquo;home-made,&rdquo; expensive, and not available on the market. In addition, the experimental verification of the hypothesis requires a unique team of specialists &ndash; neurophysiologists, biochemists, biophysicists, specialists in molecular imaging, and mathematicians. This article aims to provoke the creation of such teams and to set their efforts in a direction that can open new trends in the concept of &ldquo;functional imaging.&rdquo; The described hypothesis could have a significant impact in all areas of molecular and functional imaging using MRI, positron emission tomography, optical, etc.</p>\r\n<p><strong>Acknowledgements: </strong>We would like to thank Mr. Yoshikazu Ozawa from the National Institute for Radiological Sciences, QST/NIRS, Chiba, Japan, for his assistance during MRI experiment.</p>\r\n<p><strong>Conflict of Interest: </strong>No conflict of interest was declared by the authors.</p>\r\n<p><strong>Financial Disclosure: </strong>No financial disclosure was declared by the authors.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "This article is intended to bring about a change in the way of thinking about the molecular nature of functional magnetic resonance imaging (fMRI). The underlying assumption in our hypothesis is that fMRI may report mitochondrial activity in the synaptic area of the activated neuron, as well as an increased nitric oxide synthase activity at the same locus. The hypothesis is based on the uniqueness of the structure and functioning of the activated synapse and the major biochemical consequences of this structural–functional phenomenon. To the Editor, This article is intended to bring about a change in the way of thinking about the molecular nature of functional magnetic resonance imaging (fMRI) (1). The underlying assumption in our hypothesis is that fMRI may report mitochondrial activity in the synaptic area of the activated neuron, as well as an increased nitric oxide synthase activity at the same locus. The hypothesis is based on the uniqueness of the structure and functioning of the activated synapse and the major biochemical consequences of this structural–functional phenomenon. The synapse is the primary energy source in the neuron, and the secret of fMRI might be hidden in the processes occurring in this locus. What is unique in the synapse? It contains a large amount of neurotransmitter vesicles, as well as a large amount of mitochondria due to the huge energy demand in this part of the neuron. In the synaptic mitochondria, 34-38 molecules of adenosine triphosphate (ATP) per molecule of glucose are synthesized based on glucose metabolism in the tricarboxylic acid (TCA) cycle (Figure 1) (2,3). It must be emphasized that “activity-driven ATP synthesis” in the synapse occurs for a short time in a very limited space – only in the area of the activated neuron. What are the consequences of the “activity-driven ATP synthesis” in the synaptic mitochondria? Electrons are derived through the mitochondrial electron transport chain (ETC), and a proton gradient is established across the inner mitochondrial membrane as an energy source for ATP synthesis. The most important biochemical event, associated with this process, is the production of a large amount of superoxide in the activated synapse for a very short time, due to the large amount of metabolically active mitochondria in this locus (Figure 2a). It must be clarified that this is not a permanent hyperproduction of superoxide, which can cause oxidative stress in the neuron. This is just a momentary event, which is precisely controlled by various factors (ETC complexes, antioxidant enzymes, uncoupling proteins, etc.) (3,4). Superoxide radicals are paramagnetic species that are detectable directly by imaging techniques such as MRI (5). Moreover, hyperproduction of superoxide in metabolically active synaptic mitochondria may affect either T1 and/or T2 relaxation times of the surrounding protons. This will change the 1H MRI contrast in the activated synapse for a very short time – a well-known principle of enhancement of MRI contrast by other radicals (e.g., nitroxides) (6). Тo clarify the role of superoxide in the relaxivity of water molecules, we performed a very simple MRI experiment in a pure chemical system, deionized water (DIW) plus potassium superoxide. Potassium superoxide rapidly decomposes into superoxide radicals in water, which is accompanied by enhancement of T1 and T2 MRI contrast (Figure 2b). Superoxide is also an intermediate involved in the paramagnetic or diamagnetic transformations of hemoglobin during the transport of oxygen in the activated neuron (7). The hemoglobin transformations are considered as the primary factors for BOLD signals in fMRI measurements. It is interesting to note that nitric oxide (NO), derived from NO adducts (as nitroglycerine or NOC9) in DIW, also increased T1 and T2 MRI contrast. However, the enhancement disappeared very rapidly, and it was difficult to obtain reproducible data due to the time required for MRI setting (data are not shown). NO is one of the major mediators of neurovascular coupling, and its local concentration in the activated synaptic area must also be high (8). The hyperproduction of NO and superoxide is spatially separated – production of superoxide occurs in the synaptic mitochondria, whereas that of NO occurs in the vascular endothelium. This eliminates the possibility of interaction between NO and superoxide with the formation of toxic peroxynitrite. The described data suggest that local and relatively long-lasting hyperproduction of superoxide by “activity-driven mitochondria” and NO in the synaptic area may be a major factor, changing proton relaxivity, and a root cause of the fMRI signals. Therefore, fMRI can be used not only as a tool for detecting neural activity but also for detecting other metabolically active cells and tissues (e.g., cancer). We believe that the hypothesis could be proved theoretically and experimentally using Overhauser-enhanced MRI (OMRI) based on proton–electron cross-relaxation phenomenon (9). However, the OMRI hybrid instruments are still “home-made,” expensive, and not available on the market. In addition, the experimental verification of the hypothesis requires a unique team of specialists – neurophysiologists, biochemists, biophysicists, specialists in molecular imaging, and mathematicians. This article aims to provoke the creation of such teams and to set their efforts in a direction that can open new trends in the concept of “functional imaging.” The described hypothesis could have a significant impact in all areas of molecular and functional imaging using MRI, positron emission tomography, optical, etc. Acknowledgements: We would like to thank Mr. Yoshikazu Ozawa from the National Institute for Radiological Sciences, QST/NIRS, Chiba, Japan, for his assistance during MRI experiment. Conflict of Interest: No conflict of interest was declared by the authors. Financial Disclosure: No financial disclosure was declared by the authors.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2018.0286",
+    "received": "",
+    "accepted": "",
+    "published": "2018-01-01",
+    "volume": 35,
+    "issue": "3",
+    "pages": "289-291",
+    "views": 6849,
+    "downloads": 9468,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1244",
+    "sourceArticleId": "1982",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1982",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1982",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1982",
+    "localPdfUrl": "js/data/pdfs/1982.pdf",
+    "pdfUrl": "js/data/pdfs/1982.pdf"
+  }
+]

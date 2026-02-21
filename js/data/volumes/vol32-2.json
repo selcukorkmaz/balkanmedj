@@ -1,0 +1,1097 @@
+[
+  {
+    "id": 1816,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "1816",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1816",
+    "localPdfUrl": "js/data/pdfs/1816.pdf",
+    "pdfUrl": "js/data/pdfs/1816.pdf"
+  },
+  {
+    "id": 217,
+    "type": "Invited Review",
+    "title": "Clinical Implications of Nasal Septal Deformities",
+    "authors": [
+      {
+        "name": "Ranko Mladina",
+        "affiliation": "Department of Otolaryngology Head and Neck Surgery, Clinical Hospital Center Zagreb, University of Zagreb Faculty of Medicine, Zagreb, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Neven Skitarelić",
+        "affiliation": "Department of Otolaryngology Head and Neck Surgery, General Hospital Zadar, Medical High School, University of Zadar, Zadar, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Gorazd Poje",
+        "affiliation": "Department of Otolaryngology Head and Neck Surgery, Clinical Hospital Center Zagreb, University of Zagreb Faculty of Medicine, Zagreb, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Marin Šubarić",
+        "affiliation": "Department of Otolaryngology Head and Neck Surgery, Clinical Hospital Dubrava, Zagreb, Croatia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract The first attempts to systematize septal distortions have been given by Cottle who defined four groups of septal deformities: subluxation, large spurs, caudal deflection and tension septum. Fortunately, the variations of the septal deformities show a certain order, thus enabling more precise classification. Mladina was the first to make user-friendly classification of septal deformities in six basic types. He also described the seventh type, named “Passali deformity”, which presents individually, but is always a well-defined combination between some of the previous six types. Mladina types of septal deformities (SD) are divided in two main groups: so called “vertical” deformities (types 1, 2, 3 and 4), and “horizontal” ones (types 5 and 6). This classification was immediately well accepted by rhinologists worldwide and started to be cited from the very beginning. Since then it has been continuously cited increasingly more often, thus making Mladina classification a gold standard whenever clinical researches on nasal septum are concerned. More than forty clinical studies based on this classification have been performed to date. It is extremely important to make a strict distinction between the types of SD since all of them play some specific role in the nasal and general physiology in man.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tThe first attempts to systematize septal distortions have been given by Cottle who defined four groups of septal deformities: subluxation, large spurs, caudal deflection and tension septum. Fortunately, the variations of the septal deformities show a certain order, thus enabling more precise classification. Mladina was the first to make user-friendly classification of septal deformities in six basic types. He also described the seventh type, named &ldquo;Passali deformity&rdquo;, which presents individually, but is always a well-defined combination between some of the previous six types. Mladina types of septal deformities (SD) are divided in two main groups: so called &ldquo;vertical&rdquo; deformities (types 1, 2, 3 and 4), and &ldquo;horizontal&rdquo; ones (types 5 and 6). This classification was immediately well accepted by rhinologists worldwide and started to be cited from the very beginning. Since then it has been continuously cited increasingly more often, thus making Mladina classification a gold standard whenever clinical researches on nasal septum are concerned. More than forty clinical studies based on this classification have been performed to date. It is extremely important to make a strict distinction between the types of SD since all of them play some specific role in the nasal and general physiology in man.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract The first attempts to systematize septal distortions have been given by Cottle who defined four groups of septal deformities: subluxation, large spurs, caudal deflection and tension septum. Fortunately, the variations of the septal deformities show a certain order, thus enabling more precise classification. Mladina was the first to make user-friendly classification of septal deformities in six basic types. He also described the seventh type, named “Passali deformity”, which presents individually, but is always a well-defined combination between some of the previous six types. Mladina types of septal deformities (SD) are divided in two main groups: so called “vertical” deformities (types 1, 2, 3 and 4), and “horizontal” ones (types 5 and 6). This classification was immediately well accepted by rhinologists worldwide and started to be cited from the very beginning. Since then it has been continuously cited increasingly more often, thus making Mladina classification a gold standard whenever clinical researches on nasal septum are concerned. More than forty clinical studies based on this classification have been performed to date. It is extremely important to make a strict distinction between the types of SD since all of them play some specific role in the nasal and general physiology in man.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.159957",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "137-146",
+    "views": 7263,
+    "downloads": 11263,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "217",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=217",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=217",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=217",
+    "localPdfUrl": "js/data/pdfs/217.pdf",
+    "pdfUrl": "js/data/pdfs/217.pdf"
+  },
+  {
+    "id": 218,
+    "type": "Original Article",
+    "title": "Characterization of the Interleukin-28B Gene rs12979860 C/T Polymorphism in Turkish Chronic Hepatitis C Patients and Healthy Individuals",
+    "authors": [
+      {
+        "name": "Serpil Taheri",
+        "affiliation": "Department of Medical Biology, Erciyes University Faculty of Medicine, Kayseri, Turkey; Betül - Ziya Eren Genome and Stem Cell Center, Erciyes University, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Halit Canatan",
+        "affiliation": "Department of Medical Biology, Erciyes University Faculty of Medicine, Kayseri, Turkey; Betül - Ziya Eren Genome and Stem Cell Center, Erciyes University, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bilgehan Aygen",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Erciyes University Faculty of Medicine, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Orhan Yıldız",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Erciyes University Faculty of Medicine, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Keziban Korkmaz",
+        "affiliation": "Betül-Ziya Eren Genome and Stem Cell Center, Erciyes University, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gökmen Zararsız",
+        "affiliation": "Department of Biostatistics, Erciyes University Faculty of Medicine, Kayseri, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Host genetic factors can affect the progress of hepatitis-C virus (HCV) infection. Interleukin-28B (IL28B) single nucleotide polymorphisms may play an important role in the clearance of HCV spontaneously or with treatment. Aims: The aim of our study was to evaluate the rate of IL28B genotypes in patients with Chronic Hepatitis-C (CHC) and healthy control subjects and to examine the characteristics of patients in each IL28B subgroup. Study Design: Case-control study. Methods: IL28B polymorphisms were genotyped by Polymerase Chain Reaction and Restriction Fragment Length Polymorphism (PCR-RFLP) in all subjects. Results: The mean age was 52.3±10.9 years (33% female) in the CHC patients and 52.5±11.5 years (39.1% female) in the healthy controls. The percentage of patients with a high baseline viral load (≥400,000 IU/mL) was higher in the CT group (69.8%) compared to the C/C (44.4%) and T/T (50%) groups (p=0.021). There was no significant difference in liver fibrosis and liver necroinflammation distribution among the CC, CT and TT genotypes with mild, moderate and severe groups (p=0.058 and p=0.791, respectively). Mean age, gender ratio, body mass index, viral load at baseline, rate of HCV genotypes, baseline ALT levels were not significantly different among the three IL28B subgroups (p>0.05). A significant increase was observed in the frequencies of IL28B rs12979860 TT genotypes in the CHC patients (20.6%) compared to the healthy control group (8.7%) (p=0.033). Conclusion: In the patients with chronic HCV-genotype 1b and 4 infections, the IL28B rs12979860 (C>T) gene polymorphism frequency of the TT genotype and T allele was higher than in healthy control subjects. This result indicates that the TT genotype may be more effective in the progression of HCV infection than other genotypes.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Host genetic factors can affect the progress of hepatitis-C virus (HCV) infection. Interleukin-28B (IL28B) single nucleotide polymorphisms may play an important role in the clearance of HCV spontaneously or with treatment.</p>\r\n<p>\r\n\t<strong>Aims</strong>: The aim of our study was to evaluate the rate of IL28B genotypes in patients with Chronic Hepatitis-C (CHC) and healthy control subjects and to examine the characteristics of patients in each IL28B subgroup.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Case-control study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: IL28B polymorphisms were genotyped by Polymerase Chain Reaction and Restriction Fragment Length Polymorphism (PCR-RFLP) in all subjects.</p>\r\n<p>\r\n\t<strong>Results</strong>: The mean age was 52.3&plusmn;10.9 years (33% female) in the CHC patients and 52.5&plusmn;11.5 years (39.1% female) in the healthy controls. The percentage of patients with a high baseline viral load (&ge;400,000 IU/mL) was higher in the CT group (69.8%) compared to the C/C (44.4%) and T/T (50%) groups (p=0.021). There was no significant difference in liver fibrosis and liver necroinflammation distribution among the CC, CT and TT genotypes with mild, moderate and severe groups (p=0.058 and p=0.791, respectively). Mean age, gender ratio, body mass index, viral load at baseline, rate of HCV genotypes, baseline ALT levels were not significantly different among the three IL28B subgroups (p&gt;0.05). A significant increase was observed in the frequencies of IL28B rs12979860 TT genotypes in the CHC patients (20.6%) compared to the healthy control group (8.7%) (p=0.033).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: In the patients with chronic HCV-genotype 1b and 4 infections, the IL28B rs12979860 (C&gt;T) gene polymorphism frequency of the TT genotype and T allele was higher than in healthy control subjects. This result indicates that the TT genotype may be more effective in the progression of HCV infection than other genotypes.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Host genetic factors can affect the progress of hepatitis-C virus (HCV) infection. Interleukin-28B (IL28B) single nucleotide polymorphisms may play an important role in the clearance of HCV spontaneously or with treatment. Aims: The aim of our study was to evaluate the rate of IL28B genotypes in patients with Chronic Hepatitis-C (CHC) and healthy control subjects and to examine the characteristics of patients in each IL28B subgroup. Study Design: Case-control study. Methods: IL28B polymorphisms were genotyped by Polymerase Chain Reaction and Restriction Fragment Length Polymorphism (PCR-RFLP) in all subjects. Results: The mean age was 52.3±10.9 years (33% female) in the CHC patients and 52.5±11.5 years (39.1% female) in the healthy controls. The percentage of patients with a high baseline viral load (≥400,000 IU/mL) was higher in the CT group (69.8%) compared to the C/C (44.4%) and T/T (50%) groups (p=0.021). There was no significant difference in liver fibrosis and liver necroinflammation distribution among the CC, CT and TT genotypes with mild, moderate and severe groups (p=0.058 and p=0.791, respectively). Mean age, gender ratio, body mass index, viral load at baseline, rate of HCV genotypes, baseline ALT levels were not significantly different among the three IL28B subgroups (p>0.05). A significant increase was observed in the frequencies of IL28B rs12979860 TT genotypes in the CHC patients (20.6%) compared to the healthy control group (8.7%) (p=0.033). Conclusion: In the patients with chronic HCV-genotype 1b and 4 infections, the IL28B rs12979860 (C>T) gene polymorphism frequency of the TT genotype and T allele was higher than in healthy control subjects. This result indicates that the TT genotype may be more effective in the progression of HCV infection than other genotypes.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15156",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "147-155",
+    "views": 7140,
+    "downloads": 9912,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "218",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=218",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=218",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=218",
+    "localPdfUrl": "js/data/pdfs/218.pdf",
+    "pdfUrl": "js/data/pdfs/218.pdf"
+  },
+  {
+    "id": 219,
+    "type": "Original Article",
+    "title": "BRAFV600E Mutation, RET/PTC1 and PAX8-PPAR Gamma Rearrangements in Follicular Epithelium Derived Thyroid Lesions - Institutional Experience and Literature Review",
+    "authors": [
+      {
+        "name": "Ahmet Şahpaz",
+        "affiliation": "Department of Pathology & Cytology, Ankara Dışkapı Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Binnur Önal",
+        "affiliation": "Department of Pathology & Cytology, Ankara Dışkapı Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Yeşilyurt",
+        "affiliation": "Genetic Diagnosis Center, Ankara Dışkapı Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ünsal Han",
+        "affiliation": "Department of Pathology & Cytology, Ankara Dışkapı Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuncay Delibaşı",
+        "affiliation": "Department of Endocrinology and Metabolism, Ankara Dışkapı Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Thyroid cancers are the most frequently occurring endocrine malignancy worldwide. In Turkey, thyroid cancers are ranked 2nd on the incidence list in women, with a rate of 16.2%, but they are not included among the top 10 cancer types in men. Aims: To identify the contribution of the BRAFV600E mutation, and the RET/PTC1 and PAX8-PPARγ rearrangements in the diagnosis and differential diagnosis of follicular epithelial-derived thyroid lesions. Study Design: Retrospective clinical and molecular genetic study. Methods: A total of 86 thyroid cases diagnosed between 2001 and 2012 at the Department of Pathology were included in the retrospective study group. Samples best representing the lesion and comprising capsules were chosen in the selection of paraffin blocks pertaining to the cases. The BRAFV600E mutation, and the RET/PTC1 and PAX8-PPARγ rearrangements were investigated in all cases. Results: The BRAFV600E mutation was observed in 12 out of 37 papillary carcinoma cases (32.4%), in 1 out of 15 follicular carcinoma cases (6.6%), and in 1 out of 7 undifferentiated carcinoma cases (14.3%). No mutation was detected in benign lesions. The RET/PTC1 rearrangement was detected in 2 out of 7 undifferentiated carcinoma cases (28.6%), and in 1 out of 15 follicular carcinoma cases (6.6%). No gene rearrangement was detected in benign lesions. The PAX8-PPARγ rearrangement was detected in 5 out of 15 follicular thyroid carcinoma cases (33.3%) and in 1 out of 15 follicular adenoma cases (6.6%). Conclusion: The BRAFV600E mutation and RET/PTC1 rearrangement were effective in distinguishing the follicular epithelium-derived benign and malignant lesions of the thyroid in the resection materials. The BRAFV600E mutation was rather specific to papillary carcinoma in the thyroid, and in cases where the BRAFV600E mutation was detected, multi-centricity, lymph node metastasis and capsular invasion findings were observed more frequently compared to cases in which no mutation was observed. The PAX8-PPARγ rearrangement was observed to be more effective in the differentiation of adenomas and carcinomas in follicular neoplasms of the thyroid, whereas the RET/PTC1 analysis contributed to the differential diagnosis of papillary carcinoma histogenesis at a frequency of 29% in undifferentiated thyroid carcinomas.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Thyroid cancers are the most frequently occurring endocrine malignancy worldwide. In Turkey, thyroid cancers are ranked 2nd on the incidence list in women, with a rate of 16.2%, but they are not included among the top 10 cancer types in men.</p>\r\n<p>\r\n\t<strong>Aims</strong>: To identify the contribution of the BRAFV600E mutation, and the RET/PTC1 and PAX8-PPAR&gamma; rearrangements in the diagnosis and differential diagnosis of follicular epithelial-derived thyroid lesions.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Retrospective clinical and molecular genetic study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: A total of 86 thyroid cases diagnosed between 2001 and 2012 at the Department of Pathology were included in the retrospective study group. Samples best representing the lesion and comprising capsules were chosen in the selection of paraffin blocks pertaining to the cases. The BRAFV600E mutation, and the RET/PTC1 and PAX8-PPAR&gamma; rearrangements were investigated in all cases.</p>\r\n<p>\r\n\t<strong>Results</strong>: The BRAFV600E mutation was observed in 12 out of 37 papillary carcinoma cases (32.4%), in 1 out of 15 follicular carcinoma cases (6.6%), and in 1 out of 7 undifferentiated carcinoma cases (14.3%). No mutation was detected in benign lesions.&nbsp;The RET/PTC1 rearrangement was detected in 2 out of 7 undifferentiated carcinoma cases (28.6%), and in 1 out of 15 follicular carcinoma cases (6.6%). No gene rearrangement was detected in benign lesions.&nbsp;The PAX8-PPAR&gamma; rearrangement was detected in 5 out of 15 follicular thyroid carcinoma cases (33.3%) and in 1 out of 15 follicular adenoma cases (6.6%).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The BRAFV600E mutation and RET/PTC1 rearrangement were effective in distinguishing the follicular epithelium-derived benign and malignant lesions of the thyroid in the resection materials. The BRAFV600E mutation was rather specific to papillary carcinoma in the thyroid, and in cases where the BRAFV600E mutation was detected, multi-centricity, lymph node metastasis and capsular invasion findings were observed more frequently compared to cases in which no mutation was observed. The PAX8-PPAR&gamma; rearrangement was observed to be more effective in the differentiation of adenomas and carcinomas in follicular neoplasms of the thyroid, whereas the RET/PTC1 analysis contributed to the differential diagnosis of papillary carcinoma histogenesis at a frequency of 29% in undifferentiated thyroid carcinomas.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Thyroid cancers are the most frequently occurring endocrine malignancy worldwide. In Turkey, thyroid cancers are ranked 2nd on the incidence list in women, with a rate of 16.2%, but they are not included among the top 10 cancer types in men. Aims: To identify the contribution of the BRAFV600E mutation, and the RET/PTC1 and PAX8-PPARγ rearrangements in the diagnosis and differential diagnosis of follicular epithelial-derived thyroid lesions. Study Design: Retrospective clinical and molecular genetic study. Methods: A total of 86 thyroid cases diagnosed between 2001 and 2012 at the Department of Pathology were included in the retrospective study group. Samples best representing the lesion and comprising capsules were chosen in the selection of paraffin blocks pertaining to the cases. The BRAFV600E mutation, and the RET/PTC1 and PAX8-PPARγ rearrangements were investigated in all cases. Results: The BRAFV600E mutation was observed in 12 out of 37 papillary carcinoma cases (32.4%), in 1 out of 15 follicular carcinoma cases (6.6%), and in 1 out of 7 undifferentiated carcinoma cases (14.3%). No mutation was detected in benign lesions. The RET/PTC1 rearrangement was detected in 2 out of 7 undifferentiated carcinoma cases (28.6%), and in 1 out of 15 follicular carcinoma cases (6.6%). No gene rearrangement was detected in benign lesions. The PAX8-PPARγ rearrangement was detected in 5 out of 15 follicular thyroid carcinoma cases (33.3%) and in 1 out of 15 follicular adenoma cases (6.6%). Conclusion: The BRAFV600E mutation and RET/PTC1 rearrangement were effective in distinguishing the follicular epithelium-derived benign and malignant lesions of the thyroid in the resection materials. The BRAFV600E mutation was rather specific to papillary carcinoma in the thyroid, and in cases where the BRAFV600E mutation was detected, multi-centricity, lymph node metastasis and capsular invasion findings were observed more frequently compared to cases in which no mutation was observed. The PAX8-PPARγ rearrangement was observed to be more effective in the differentiation of adenomas and carcinomas in follicular neoplasms of the thyroid, whereas the RET/PTC1 analysis contributed to the differential diagnosis of papillary carcinoma histogenesis at a frequency of 29% in undifferentiated thyroid carcinomas.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15101",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "156-166",
+    "views": 6962,
+    "downloads": 10042,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "219",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=219",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=219",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=219",
+    "localPdfUrl": "js/data/pdfs/219.pdf",
+    "pdfUrl": "js/data/pdfs/219.pdf"
+  },
+  {
+    "id": 220,
+    "type": "Original Article",
+    "title": "New Predictive Parameters of Bell",
+    "authors": [
+      {
+        "name": "Doğan Atan",
+        "affiliation": "Department of Otorhinolaryngology, Head and Neck Surgery, Ankara Numune Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aykut İkincioğulları",
+        "affiliation": "Department of Otorhinolaryngology, Head and Neck Surgery, Ankara Numune Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kürşat Murat Özcan",
+        "affiliation": "Department of Otorhinolaryngology, Head and Neck Surgery, Ankara Numune Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sabri Köseoğlu[[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Bell’s palsy is the most frequent cause of unilateral facial paralysis. Inflammation is thought to play an important role in the pathogenesis of Bell’s palsy. Aims: Neutrophil to lymphocyte ratio (NLR) and platelet to lymphocyte ratio (PLR) are simple and inexpensive tests which are indicative of inflammation and can be calculated by all physicians. The aim of this study was to reveal correlations of Bell’s palsy and degree of paralysis with NLR and PLR. Study Design: Case-control study. Methods: The retrospective study was performed January 2010 and December 2013. Ninety-nine patients diagnosed as Bell’s palsy were included in the Bell’s palsy group and ninety-nine healthy individuals with the same demographic characteristics as the Bell’s palsy group were included in the control group. As a result of analyses, NLR and PLR were calculated. Results: The mean NLR was 4.37 in the Bell’s palsy group and 1.89 in the control group with a statistically significant difference (p<0.001). The mean PLR was 137.5 in the Bell’s palsy group and 113.75 in the control group with a statistically significant difference (p=0.008). No statistically significant relation was detected between the degree of facial paralysis and NLR and PLR. Conclusion: The NLR and the PLR were significantly higher in patients with Bell’s palsy. This is the first study to reveal a relation between Bell’s palsy and PLR. NLR and PLR can be used as auxiliary parameters in the diagnosis of Bell’s palsy. JEL code: I180 Health",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Bell&rsquo;s palsy is the most frequent cause of unilateral facial paralysis. Inflammation is thought to play an important role in the pathogenesis of Bell&rsquo;s palsy.</p>\r\n<p>\r\n\t<strong>Aims</strong>: Neutrophil to lymphocyte ratio (NLR) and platelet to lymphocyte ratio (PLR) are simple and inexpensive tests which are indicative of inflammation and can be calculated by all physicians. The aim of this study was to reveal correlations of Bell&rsquo;s palsy and degree of paralysis with NLR and PLR.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Case-control study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: The retrospective study was performed January 2010 and December 2013. Ninety-nine patients diagnosed as Bell&rsquo;s palsy were included in the Bell&rsquo;s palsy group and ninety-nine healthy individuals with the same demographic characteristics as the Bell&rsquo;s palsy group were included in the control group. As a result of analyses, NLR and PLR were calculated.</p>\r\n<p>\r\n\t<strong>Results</strong>: The mean NLR was 4.37 in the Bell&rsquo;s palsy group and 1.89 in the control group with a statistically significant difference (p&lt;0.001). The mean PLR was 137.5 in the Bell&rsquo;s palsy group and 113.75 in the control group with a statistically significant difference (p=0.008). No statistically significant relation was detected between the degree of facial paralysis and NLR and PLR.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The NLR and the PLR were significantly higher in patients with Bell&rsquo;s palsy. This is the first study to reveal a relation between Bell&rsquo;s palsy and PLR. NLR and PLR can be used as auxiliary parameters in the diagnosis of Bell&rsquo;s palsy.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>JEL code</strong>: I180 Health</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Bell’s palsy is the most frequent cause of unilateral facial paralysis. Inflammation is thought to play an important role in the pathogenesis of Bell’s palsy. Aims: Neutrophil to lymphocyte ratio (NLR) and platelet to lymphocyte ratio (PLR) are simple and inexpensive tests which are indicative of inflammation and can be calculated by all physicians. The aim of this study was to reveal correlations of Bell’s palsy and degree of paralysis with NLR and PLR. Study Design: Case-control study. Methods: The retrospective study was performed January 2010 and December 2013. Ninety-nine patients diagnosed as Bell’s palsy were included in the Bell’s palsy group and ninety-nine healthy individuals with the same demographic characteristics as the Bell’s palsy group were included in the control group. As a result of analyses, NLR and PLR were calculated. Results: The mean NLR was 4.37 in the Bell’s palsy group and 1.89 in the control group with a statistically significant difference (p<0.001). The mean PLR was 137.5 in the Bell’s palsy group and 113.75 in the control group with a statistically significant difference (p=0.008). No statistically significant relation was detected between the degree of facial paralysis and NLR and PLR. Conclusion: The NLR and the PLR were significantly higher in patients with Bell’s palsy. This is the first study to reveal a relation between Bell’s palsy and PLR. NLR and PLR can be used as auxiliary parameters in the diagnosis of Bell’s palsy. JEL code: I180 Health",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15456",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "167-170",
+    "views": 7391,
+    "downloads": 10136,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "220",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=220",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=220",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=220",
+    "localPdfUrl": "js/data/pdfs/220.pdf",
+    "pdfUrl": "js/data/pdfs/220.pdf"
+  },
+  {
+    "id": 221,
+    "type": "Original Article",
+    "title": "Detection of Methicillin Resistance and Various Virulence Factors in Staphylococcus aureus Strains Isolated from Nasal Carriers",
+    "authors": [
+      {
+        "name": "Hatice Türk Dağı",
+        "affiliation": "Department of Microbiology, Selçuk University Faculty of Medicine, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Duygu Fındık",
+        "affiliation": "Department of Microbiology, Selçuk University Faculty of Medicine, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gamze Demirel",
+        "affiliation": "Department of Microbiology, Selçuk University Faculty of Medicine, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Uğur Arslan",
+        "affiliation": "Department of Microbiology, Selçuk University Faculty of Medicine, Konya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Staphylococus aureus can be found as a commensal on skin and nasal flora or it may cause local and invasive infections. S. aureus has a large number of virulence factors. Aims: To investigate the methicillin resistance and frequency of various virulence factors in S. aureus nasal isolates. Study Design: Descriptive study. Methods: Nasal samples collected from university students were cultured in media. S. aureus was identified by conventional methods and the Staphyloslide latex test (Becton Dickinson, Sparks, USA). Antibiotic susceptibility tests were conducted, and the methicillin resistance was determined. The mecA, nuc, pvl and staphylococcal toxin genes were examined by polymerase chain reaction (PCR). Results: S. aureus was isolated in 104 of 600 (17.3%) nasal samples. In total, 101 (97.1%) S. aureus isolates were methicillin-sensitive and the remaining 3 (2.9%) were methicillin-resistant. Furthermore, all but five isolates carried at least one staphylococcal enterotoxin gene, with seg being predominant. The tst and eta genes were determined in 29 (27.9%), and 3 (2.9%) isolates, respectively. None of the S. aureus isolates harbored see, etb, and pvl genes. Conclusion: A moderate rate of S. aureus carriage and low frequency of MRSA were detected in healthy students. S. aureus isolates had a high prevalence of staphylococcal enterotoxin genes and the tst gene. In this study, a large number of virulence factors were examined in S. aureus nasal isolates, and the data obtained from this study can be used for monitoring the prevalence of virulence genes in S. aureus strains isolated from nasal carriers.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Staphylococus aureus can be found as a commensal on skin and nasal flora or it may cause local and invasive infections. S. aureus has a large number of virulence factors.</p>\r\n<p>\r\n\t<strong>Aims</strong>: To investigate the methicillin resistance and frequency of various virulence factors in S. aureus nasal isolates.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Descriptive study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Nasal samples collected from university students were cultured in media. S. aureus was identified by conventional methods and the Staphyloslide latex test (Becton Dickinson, Sparks, USA). Antibiotic susceptibility tests were conducted, and the methicillin resistance was determined. The mecA, nuc, pvl and staphylococcal toxin genes were examined by polymerase chain reaction (PCR).</p>\r\n<p>\r\n\t<strong>Results</strong>: S. aureus was isolated in 104 of 600 (17.3%) nasal samples. In total, 101 (97.1%) S. aureus isolates were methicillin-sensitive and the remaining 3 (2.9%) were methicillin-resistant. Furthermore, all but five isolates carried at least one staphylococcal enterotoxin gene, with seg being predominant. The tst and eta genes were determined in 29 (27.9%), and 3 (2.9%) isolates, &nbsp;respectively. None of the S. aureus isolates harbored see, etb, and pvl genes.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: A moderate rate of S. aureus carriage and low frequency of MRSA were detected in healthy students. S. aureus isolates had a high prevalence of staphylococcal enterotoxin genes and the tst gene. In this study, a large number of virulence factors were examined in S. aureus nasal isolates, and the data obtained from this study can be used for monitoring the prevalence of virulence genes in S. aureus strains isolated from nasal carriers.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Staphylococus aureus can be found as a commensal on skin and nasal flora or it may cause local and invasive infections. S. aureus has a large number of virulence factors. Aims: To investigate the methicillin resistance and frequency of various virulence factors in S. aureus nasal isolates. Study Design: Descriptive study. Methods: Nasal samples collected from university students were cultured in media. S. aureus was identified by conventional methods and the Staphyloslide latex test (Becton Dickinson, Sparks, USA). Antibiotic susceptibility tests were conducted, and the methicillin resistance was determined. The mecA, nuc, pvl and staphylococcal toxin genes were examined by polymerase chain reaction (PCR). Results: S. aureus was isolated in 104 of 600 (17.3%) nasal samples. In total, 101 (97.1%) S. aureus isolates were methicillin-sensitive and the remaining 3 (2.9%) were methicillin-resistant. Furthermore, all but five isolates carried at least one staphylococcal enterotoxin gene, with seg being predominant. The tst and eta genes were determined in 29 (27.9%), and 3 (2.9%) isolates, respectively. None of the S. aureus isolates harbored see, etb, and pvl genes. Conclusion: A moderate rate of S. aureus carriage and low frequency of MRSA were detected in healthy students. S. aureus isolates had a high prevalence of staphylococcal enterotoxin genes and the tst gene. In this study, a large number of virulence factors were examined in S. aureus nasal isolates, and the data obtained from this study can be used for monitoring the prevalence of virulence genes in S. aureus strains isolated from nasal carriers.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.150186",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "171-175",
+    "views": 7114,
+    "downloads": 9475,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "221",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=221",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=221",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=221",
+    "localPdfUrl": "js/data/pdfs/221.pdf",
+    "pdfUrl": "js/data/pdfs/221.pdf"
+  },
+  {
+    "id": 222,
+    "type": "Original Article",
+    "title": "A Comparison of the Effects of Different Types of Laryngoscope on the Cervical Motions: Randomized Clinical Trial",
+    "authors": [
+      {
+        "name": "Alkin Çolak",
+        "affiliation": "Department of Anesthesiology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Elif Çopuroğlu",
+        "affiliation": "Department of Anesthesiology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sevtap Hekimoğlu Şahin",
+        "affiliation": "Department of Anesthesiology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Yılmaz",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anatomi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Nesrin Turan",
+        "affiliation": "Department of Biostatistics, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The rate of cervical injury among all trauma patients is 3.1%. The most important point during intubation of those patients is not to increase the cervical injury. Aims: In this study, we hypothesize that there will be a minimal cervical extension during a laryngoscopy with the use of optical view laryngoscopes. Study Design: Prospective, randomized clinical trial. Methods: One hundred and fifty adult patients with ASA physical status I to III were enrolled in our study. After routine anesthesia induction, we randomly assigned the patients into three groups according to the type of laryngoscope. Macintosh type, Truview EVO2® type and Airtraq® type laryngoscopes were used in Group DL (n=50), Group TW (n=50) and Group ATQ (n=50), respectively. After applying general anesthesia induction and mask ventilation, all of the patients were positioned in the neutral position. An inclinometer was placed on the forehead of the patients. Then, the extension angle during intubation and the Cormack-Lehane Score were measured and the time to intubation was recorded. Results: One of the 50 patients in the DL Group, 2 of the 50 patients in the TW Group, and 4 of the 50 patients in the ATQ Group were excluded from the study because of the failure of intubation at defined times. The angle of cervical extension during laryngoscopy was found to be 27.24±6.71, 18.08±7.53, and 14.54±4.09 degrees in the Groups DL, TV and ATQ, respectively; these differences also had statistical significance (p=0.000). The duration of intubation was found to be 13.59±5.49, 23.60±15.23, and 29.80±13.82 seconds in Groups DL, TV and ATQ, respectively (p=0.000). Conclusion: A minimal cervical motion was obtained during tracheal intubation with the use of Truview EVO2® and Airtraq® types of laryngoscope compared with the Macintosh laryngoscope.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: The rate of cervical injury among all trauma patients is 3.1%. The most important point during intubation of those patients is not to increase the cervical injury.</p>\r\n<p>\r\n\t<strong>Aims</strong>: In this study, we hypothesize that there will be a minimal cervical extension during a laryngoscopy with the use of optical view laryngoscopes.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Prospective, randomized clinical trial.</p>\r\n<p>\r\n\t<strong>Methods</strong>: One hundred and fifty adult patients with ASA physical status I to III were enrolled in our study. After routine anesthesia induction, we randomly assigned the patients into three groups according to the type of laryngoscope. Macintosh type, Truview EVO2&reg; type and Airtraq&reg; type laryngoscopes were used in Group DL (n=50), Group TW (n=50) and Group ATQ (n=50), respectively. After applying general anesthesia induction and mask ventilation, all of the patients were positioned in the neutral position. An inclinometer was placed on the forehead of the patients. Then, the extension angle during intubation and the Cormack-Lehane Score were measured and the time to intubation was recorded.</p>\r\n<p>\r\n\t<strong>Results</strong>: One of the 50 patients in the DL Group, 2 of the 50 patients in the TW Group, and 4 of the 50 patients in the ATQ Group were excluded from the study because of the failure of intubation at defined times. The angle of cervical extension during laryngoscopy was found to be 27.24&plusmn;6.71, 18.08&plusmn;7.53, and 14.54&plusmn;4.09 degrees in the Groups DL, TV and ATQ, respectively; these differences also had statistical significance (p=0.000). The duration of intubation was found to be 13.59&plusmn;5.49, 23.60&plusmn;15.23, and 29.80&plusmn;13.82 seconds in Groups DL, TV and ATQ, respectively (p=0.000).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: A minimal cervical motion was obtained during tracheal intubation with the use of Truview EVO2&reg; and Airtraq&reg; types of laryngoscope compared with the Macintosh laryngoscope.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The rate of cervical injury among all trauma patients is 3.1%. The most important point during intubation of those patients is not to increase the cervical injury. Aims: In this study, we hypothesize that there will be a minimal cervical extension during a laryngoscopy with the use of optical view laryngoscopes. Study Design: Prospective, randomized clinical trial. Methods: One hundred and fifty adult patients with ASA physical status I to III were enrolled in our study. After routine anesthesia induction, we randomly assigned the patients into three groups according to the type of laryngoscope. Macintosh type, Truview EVO2® type and Airtraq® type laryngoscopes were used in Group DL (n=50), Group TW (n=50) and Group ATQ (n=50), respectively. After applying general anesthesia induction and mask ventilation, all of the patients were positioned in the neutral position. An inclinometer was placed on the forehead of the patients. Then, the extension angle during intubation and the Cormack-Lehane Score were measured and the time to intubation was recorded. Results: One of the 50 patients in the DL Group, 2 of the 50 patients in the TW Group, and 4 of the 50 patients in the ATQ Group were excluded from the study because of the failure of intubation at defined times. The angle of cervical extension during laryngoscopy was found to be 27.24±6.71, 18.08±7.53, and 14.54±4.09 degrees in the Groups DL, TV and ATQ, respectively; these differences also had statistical significance (p=0.000). The duration of intubation was found to be 13.59±5.49, 23.60±15.23, and 29.80±13.82 seconds in Groups DL, TV and ATQ, respectively (p=0.000). Conclusion: A minimal cervical motion was obtained during tracheal intubation with the use of Truview EVO2® and Airtraq® types of laryngoscope compared with the Macintosh laryngoscope.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15335",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "176-182",
+    "views": 7239,
+    "downloads": 9838,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "222",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=222",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=222",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=222",
+    "localPdfUrl": "js/data/pdfs/222.pdf",
+    "pdfUrl": "js/data/pdfs/222.pdf"
+  },
+  {
+    "id": 223,
+    "type": "Original Article",
+    "title": "Paraoxonase 1 Activity and Survival in Sepsis Patients",
+    "authors": [
+      {
+        "name": "Volkan İnal",
+        "affiliation": "Department of Critical Care, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Levent Yamanel",
+        "affiliation": "Department of Critical Care, Gülhane Military Academy of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gürhan Taşkın",
+        "affiliation": "Department of Critical Care, Gülhane Military Academy of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serkan Tepen",
+        "affiliation": "Department of Biochemistry, Gülhane Military Academy of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bilgin Cömert [[4]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Sepsis is a state of augmented oxidative stress and diminished antioxidant capacity. High density lipoprotein (HDL) particles were shown to possess antioxidant and anti-inflammatory properties, as well as Paraoxonase 1 (PON1), which is an enzyme that is also protective against HDL oxidation. Previous studies suggested a possible role of decreased PON1 activity or HDL levels in sepsis patients. Aims: The present study was designed to test a hypothesis that higher PON1 activity and HDL-cholesterol levels could predict a better survival in sepsis patients. Study Design: Observational study. Methods: Venous blood samples were collected from sepsis patients for HDL-cholesterol levels, PON1 activity and cytokine assays (TNF-α and IL-6) and Acute Physiologic and Chronic Health Evaluation II (APACHE II) scores were calculated in order to weight patients’ disease severity on the day of sepsis diagnosis. Patients were followed-up until the 28th day for any cause intra-hospital mortality. Data were statistically analyzed for effects of study parameters on patients’ survival. Results: In total, 85 patients with sepsis were included in the study. The mean age was 65.2±17.9 years and 48 were male; at the end of the 28-day follow-up period, 46 survived. TNF-α (86.9±10.5 vs 118.6±16.4) and IL-6 levels (906.7±82.7 vs 1323.1±54.3) were significantly higher in non-survivors, while PON1 activity (140.7±42.3 vs 66.7±46.6) and HDL-cholesterol levels (43.6±8.1 vs 34.5±8.9) were significantly higher in survivors (p<0.001 for all). TNF-α (r=-0.763) and IL-6 levels (r=-0.947) showed strong negative correlations, PON1 activity (r=0.644) and HDL-cholesterol levels (r=0.477) showed positive correlations with patient survival (p<0.001 for all). Survival estimates significantly favored TNF-α (Log Rank 59.5, p<0.001) and IL-6 levels (Log Rank 53.2, p<0.001) according to PON1 activity (Log Rank 5.4, p<0.03) and HDL-cholesterol levels (Log Rank 8.3, p<0.005). Regression analyses for relative contributions of parameters to survival showed that higher IL-6 levels (t:-16.489, p<0.001) were the most significant negative factor for survival, and TNF-α levels (t:-4.417, p<0.001), whereas PON1 activity had a positive effect (t:3.210, p<0.003). Conclusion: The present study showed that although low PON1 activity and HDL-cholesterol levels were related to mortality, higher levels were not found to be as predictive as cytokine levels for survival.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Sepsis is a state of augmented oxidative stress and diminished antioxidant capacity. High density lipoprotein (HDL) particles were shown to possess antioxidant and anti-inflammatory properties, as well as Paraoxonase 1 (PON1), which is an enzyme that is also protective against HDL oxidation. Previous studies suggested a possible role of decreased PON1 activity or HDL levels in sepsis patients.</p>\r\n<p>\r\n\t<strong>Aims</strong>: The present study was designed to test a hypothesis that higher PON1 activity and HDL-cholesterol levels could predict a better survival in sepsis patients.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Observational study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Venous blood samples were collected from sepsis patients for HDL-cholesterol levels, PON1 activity and cytokine assays (TNF-&alpha; and IL-6) and Acute Physiologic and Chronic Health Evaluation II (APACHE II) scores were calculated in order to weight patients&rsquo; disease severity on the day of sepsis diagnosis. Patients were followed-up until the 28th day for any cause intra-hospital mortality. Data were statistically analyzed for effects of study parameters on patients&rsquo; survival.</p>\r\n<p>\r\n\t<strong>Results</strong>: In total, 85 patients with sepsis were included in the study. The mean age was 65.2&plusmn;17.9 years and 48 were male; at the end of the 28-day follow-up period, 46 survived. TNF-&alpha; (86.9&plusmn;10.5 vs 118.6&plusmn;16.4) and IL-6 levels (906.7&plusmn;82.7 vs 1323.1&plusmn;54.3) were significantly higher in non-survivors, while PON1 activity (140.7&plusmn;42.3 vs 66.7&plusmn;46.6) and HDL-cholesterol levels (43.6&plusmn;8.1 vs 34.5&plusmn;8.9) were significantly higher in survivors (p&lt;0.001 for all). TNF-&alpha; (r=-0.763) and IL-6 levels (r=-0.947) showed strong negative correlations, PON1 activity (r=0.644) and HDL-cholesterol levels (r=0.477) showed positive correlations with patient survival (p&lt;0.001 for all). Survival estimates significantly favored TNF-&alpha; (Log Rank 59.5, p&lt;0.001) and IL-6 levels (Log Rank 53.2, p&lt;0.001) according to PON1 activity (Log Rank 5.4, p&lt;0.03) and HDL-cholesterol levels (Log Rank 8.3, p&lt;0.005). Regression analyses for relative contributions of parameters to survival showed that higher IL-6 levels (t:-16.489, p&lt;0.001) were the most significant negative factor for survival, and TNF-&alpha; levels (t:-4.417, p&lt;0.001), whereas PON1 activity had a positive effect (t:3.210, p&lt;0.003).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The present study showed that although low PON1 activity and HDL-cholesterol levels were related to mortality, higher levels were not found to be as predictive as cytokine levels for survival.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Sepsis is a state of augmented oxidative stress and diminished antioxidant capacity. High density lipoprotein (HDL) particles were shown to possess antioxidant and anti-inflammatory properties, as well as Paraoxonase 1 (PON1), which is an enzyme that is also protective against HDL oxidation. Previous studies suggested a possible role of decreased PON1 activity or HDL levels in sepsis patients. Aims: The present study was designed to test a hypothesis that higher PON1 activity and HDL-cholesterol levels could predict a better survival in sepsis patients. Study Design: Observational study. Methods: Venous blood samples were collected from sepsis patients for HDL-cholesterol levels, PON1 activity and cytokine assays (TNF-α and IL-6) and Acute Physiologic and Chronic Health Evaluation II (APACHE II) scores were calculated in order to weight patients’ disease severity on the day of sepsis diagnosis. Patients were followed-up until the 28th day for any cause intra-hospital mortality. Data were statistically analyzed for effects of study parameters on patients’ survival. Results: In total, 85 patients with sepsis were included in the study. The mean age was 65.2±17.9 years and 48 were male; at the end of the 28-day follow-up period, 46 survived. TNF-α (86.9±10.5 vs 118.6±16.4) and IL-6 levels (906.7±82.7 vs 1323.1±54.3) were significantly higher in non-survivors, while PON1 activity (140.7±42.3 vs 66.7±46.6) and HDL-cholesterol levels (43.6±8.1 vs 34.5±8.9) were significantly higher in survivors (p<0.001 for all). TNF-α (r=-0.763) and IL-6 levels (r=-0.947) showed strong negative correlations, PON1 activity (r=0.644) and HDL-cholesterol levels (r=0.477) showed positive correlations with patient survival (p<0.001 for all). Survival estimates significantly favored TNF-α (Log Rank 59.5, p<0.001) and IL-6 levels (Log Rank 53.2, p<0.001) according to PON1 activity (Log Rank 5.4, p<0.03) and HDL-cholesterol levels (Log Rank 8.3, p<0.005). Regression analyses for relative contributions of parameters to survival showed that higher IL-6 levels (t:-16.489, p<0.001) were the most significant negative factor for survival, and TNF-α levels (t:-4.417, p<0.001), whereas PON1 activity had a positive effect (t:3.210, p<0.003). Conclusion: The present study showed that although low PON1 activity and HDL-cholesterol levels were related to mortality, higher levels were not found to be as predictive as cytokine levels for survival.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15674",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "183-188",
+    "views": 6989,
+    "downloads": 9628,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "223",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=223",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=223",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=223",
+    "localPdfUrl": "js/data/pdfs/223.pdf",
+    "pdfUrl": "js/data/pdfs/223.pdf"
+  },
+  {
+    "id": 224,
+    "type": "Original Article",
+    "title": "Inferior Phrenic Arteries and Their Branches, Their Anatomy and Possible Clinical Importance: An Experimental Cadaver Study",
+    "authors": [
+      {
+        "name": "İlke Ali Gürses",
+        "affiliation": "Department of Anatomy, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özcan Gayretli",
+        "affiliation": "Department of Anatomy, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşin Kale",
+        "affiliation": "Department of Anatomy, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Adnan Öztürk",
+        "affiliation": "Department of Anatomy, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Usta [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Transcatheter arterial chemoembolization is a common treatment for patients with inoperable hepatocellular carcinoma. If the carcinoma is advanced or the main arterial supply, the hepatic artery, is occluded, extrahepatic collateral arteries may develop. Both, right and left inferior phrenic arteries (RIPA and LIPA) are the most frequent and important among these collaterals. However, the topographic anatomy of these arteries has not been described in detail in anatomy textbooks, atlases and most previous reports. Aims: To investigate the anatomy and branching patterns of RIPA and LIPA on cadavers and compare our results with the literature. Study Design: Descriptive study. Methods: We bilaterally dissected 24 male and 2 female cadavers aged between 49 and 88 years for this study. Results: The RIPA and LIPA originated as a common trunk in 5 cadavers. The RIPA originated from the abdominal aorta in 13 sides, the renal artery in 2 sides, the coeliac trunk in 1 side and the left gastric artery in 1 side. The LIPA originated from the abdominal aorta in 9 sides and the coeliac trunk in 6 sides. In 6 cadavers, the ascending and posterior branches of the LIPA had different sources of origin. Conclusion: As both the RIPA and LIPA represent the half of all extrahepatic arterial collaterals to hepatocellular carcinomas, their anatomy gains importance not only for anatomists but interventional radiologists as well.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Transcatheter arterial chemoembolization is a common treatment for patients with inoperable hepatocellular carcinoma. If the carcinoma is advanced or the main arterial supply, the hepatic artery, is occluded, extrahepatic collateral arteries may develop. Both, right and left inferior phrenic arteries (RIPA and LIPA) are the most frequent and important among these collaterals. However, the topographic anatomy of these arteries has not been described in detail in anatomy textbooks, atlases and most previous reports.</p>\r\n<p>\r\n\t<strong>Aims</strong>: To investigate the anatomy and branching patterns of RIPA and LIPA on cadavers and compare our results with the literature.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Descriptive study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: We bilaterally dissected 24 male and 2 female cadavers aged between 49 and 88 years for this study.</p>\r\n<p>\r\n\t<strong>Results</strong>: The RIPA and LIPA originated as a common trunk in 5 cadavers. The RIPA originated from the abdominal aorta in 13 sides, the renal artery in 2 sides, the coeliac trunk in 1 side and the left gastric artery in 1 side. The LIPA originated from the abdominal aorta in 9 sides and the coeliac trunk in 6 sides. In 6 cadavers, the ascending and posterior branches of the LIPA had different sources of origin.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: As both the RIPA and LIPA represent the half of all extrahepatic arterial collaterals to hepatocellular carcinomas, their anatomy gains importance not only for anatomists but interventional radiologists as well.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Transcatheter arterial chemoembolization is a common treatment for patients with inoperable hepatocellular carcinoma. If the carcinoma is advanced or the main arterial supply, the hepatic artery, is occluded, extrahepatic collateral arteries may develop. Both, right and left inferior phrenic arteries (RIPA and LIPA) are the most frequent and important among these collaterals. However, the topographic anatomy of these arteries has not been described in detail in anatomy textbooks, atlases and most previous reports. Aims: To investigate the anatomy and branching patterns of RIPA and LIPA on cadavers and compare our results with the literature. Study Design: Descriptive study. Methods: We bilaterally dissected 24 male and 2 female cadavers aged between 49 and 88 years for this study. Results: The RIPA and LIPA originated as a common trunk in 5 cadavers. The RIPA originated from the abdominal aorta in 13 sides, the renal artery in 2 sides, the coeliac trunk in 1 side and the left gastric artery in 1 side. The LIPA originated from the abdominal aorta in 9 sides and the coeliac trunk in 6 sides. In 6 cadavers, the ascending and posterior branches of the LIPA had different sources of origin. Conclusion: As both the RIPA and LIPA represent the half of all extrahepatic arterial collaterals to hepatocellular carcinomas, their anatomy gains importance not only for anatomists but interventional radiologists as well.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.150052",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "189-195",
+    "views": 7129,
+    "downloads": 9878,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "224",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=224",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=224",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=224",
+    "localPdfUrl": "js/data/pdfs/224.pdf",
+    "pdfUrl": "js/data/pdfs/224.pdf"
+  },
+  {
+    "id": 225,
+    "type": "Original Article",
+    "title": "Protective Effect of Alpha Lipoic Acid on Rat Sciatic Nerve Ischemia Reperfusion Damage",
+    "authors": [
+      {
+        "name": "Ozan Turamanlar",
+        "affiliation": "Department of Anatomy, Faculty of Medicine, Afyon Kocatepe University, Afyonkarahisar, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Songur",
+        "affiliation": "Department of Anatomy, Faculty of Medicine, Afyon Kocatepe University, Afyonkarahisar, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Oğuz Aslan Özen",
+        "affiliation": "Department of Anatomy, Namık Kemal University Faculty of Medicine, Tekirdağ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Yağmurca",
+        "affiliation": "Department of Histology and Embriology, Turgut Özal University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cevat Aktaş",
+        "affiliation": "Department of Histology and Embriology, Turgut Özal University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sezer Akçer",
+        "affiliation": "Department of Anatomy, Dumlupınar University Faculty of Medicine, Kütahya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Mollaoğlu",
+        "affiliation": "Department of Physiology, Şifa University Faculty of Medicine, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Alpha lipoic acid is a potent antioxidant that plays numerous roles in human health. This study examined the effect of ALA on rat sciatic nerve ischemia reperfusion damage. Aims: Protective effect of alpha lipoic acid (ALA) on sciatic nerve following ischemia-reperfusion in rats was investigated by using light microscopy and biochemical methods. Provided that the protective effect of ALA on sciatic nerve is proven, we think the damage to the sciatic nerve that has already occurred or might occur in patients for various reasons maybe prevented or stopped by giving ALA in convenient doses. Study Design: Animal experiment. Methods: Forty-two adult male Sprague-Dawley rats (250-300 grams) were used in this study. Rats were randomly divided into six groups including one control (Group 1), one sham (Group 2), two ischemia-reperfusion (Groups 3 and 4) and two treatment groups (Groups5 and 6). Doses of 60 and 100 mg/kg ALA were given (Group 5 and 6) intra peritoneally twice, 1 and 24 hours before the ischemia to each treatment group. Ischemia was carried out the abdominal aorta starting from the distal part of the renal vein for two hours followed by reperfusion for three hours. In immunohistochemical methods, fibronectin immunoreactivity was analyzed. For biochemical analyses, the tissues were taken in eppendorf microtubes and superoxide dismutase (SOD) and glutathione peroxidase (GSHPx) enzyme activities as well as malondialdehyde (MDA) and nitricoxide (NO) levels were measured. Results: Fibronectin was observed to have increased significantly in the ischemia group; on the other hand, it was observed to have decreased in parallel to the doses in the ALA groups. Biochemical studies showed that SOD and GSHPx declined with ischemia-reperfusion, but the activities of these enzymes were increased in the treatment groups in parallel with the dose. It was found that increased MDA levels with ischemia-reperfusion were decreased in parallel with ALA dose. There were no statistically significant changes in NO. Conclusion: Increased fibronectin observed after ischemia/reperfusion of rat sciatic nerve is reduced after the administration of ALA. This indicates that the function of fibronectin, to reconnect cut nerve segments and regenerate nerves, is more prominent than its function in tissue healing after ischemia. ALA administered before ischemia decreases MDA and increases SOD and GSHPx. We think that ALA may protect against the pathological changes in ischemic nerve and may be used to devise more efficient treatments.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Alpha lipoic acid is a potent antioxidant that plays numerous roles in human health. This study examined the effect of ALA on rat sciatic nerve ischemia reperfusion damage.</p>\r\n<p>\r\n\t<strong>Aims</strong>: Protective effect of alpha lipoic acid (ALA) on sciatic nerve following ischemia-reperfusion in rats was investigated by using light microscopy and biochemical methods. Provided that the protective effect of ALA on sciatic nerve is proven, we think the damage to the sciatic nerve that has already occurred or might occur in patients for various reasons maybe prevented or stopped by giving ALA in convenient doses.</p>\r\n<p>\r\n\t<strong>Study</strong> <strong>Design</strong>: Animal experiment.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Forty-two adult male Sprague-Dawley rats (250-300 grams) were used in this study. Rats were randomly divided into six groups including one control (Group 1), one sham (Group 2), two ischemia-reperfusion (Groups 3 and 4) and two treatment groups (Groups5 and 6). Doses of 60 and 100 mg/kg ALA were given (Group 5 and 6) intra peritoneally twice, 1 and 24 hours before the ischemia to each treatment group. Ischemia was carried out the abdominal aorta starting from the distal part of the renal vein for two hours followed by reperfusion for three hours. In immunohistochemical methods, fibronectin immunoreactivity was analyzed. For biochemical analyses, the tissues were taken in eppendorf microtubes and superoxide dismutase (SOD) and glutathione peroxidase (GSHPx) enzyme activities as well as malondialdehyde (MDA) and nitricoxide (NO) levels were measured.</p>\r\n<p>\r\n\t<strong>Results</strong>: Fibronectin was observed to have increased significantly in the ischemia group; on the other hand, it was observed to have decreased in parallel to the doses in the ALA groups. Biochemical studies showed that SOD and GSHPx declined with ischemia-reperfusion, but the activities of these enzymes were increased in the treatment groups in parallel with the dose. It was found that increased MDA levels with ischemia-reperfusion were decreased in parallel with ALA dose. There were no statistically significant changes in NO.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Increased fibronectin observed after ischemia/reperfusion of rat sciatic nerve is reduced after the administration of ALA. This indicates that the function of fibronectin, to reconnect cut nerve segments and regenerate nerves, is more prominent than its function in tissue healing after ischemia. ALA administered before ischemia decreases MDA and increases SOD and GSHPx. We think that ALA may protect against the pathological changes in ischemic nerve and may be used to devise more efficient treatments.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Alpha lipoic acid is a potent antioxidant that plays numerous roles in human health. This study examined the effect of ALA on rat sciatic nerve ischemia reperfusion damage. Aims: Protective effect of alpha lipoic acid (ALA) on sciatic nerve following ischemia-reperfusion in rats was investigated by using light microscopy and biochemical methods. Provided that the protective effect of ALA on sciatic nerve is proven, we think the damage to the sciatic nerve that has already occurred or might occur in patients for various reasons maybe prevented or stopped by giving ALA in convenient doses. Study Design: Animal experiment. Methods: Forty-two adult male Sprague-Dawley rats (250-300 grams) were used in this study. Rats were randomly divided into six groups including one control (Group 1), one sham (Group 2), two ischemia-reperfusion (Groups 3 and 4) and two treatment groups (Groups5 and 6). Doses of 60 and 100 mg/kg ALA were given (Group 5 and 6) intra peritoneally twice, 1 and 24 hours before the ischemia to each treatment group. Ischemia was carried out the abdominal aorta starting from the distal part of the renal vein for two hours followed by reperfusion for three hours. In immunohistochemical methods, fibronectin immunoreactivity was analyzed. For biochemical analyses, the tissues were taken in eppendorf microtubes and superoxide dismutase (SOD) and glutathione peroxidase (GSHPx) enzyme activities as well as malondialdehyde (MDA) and nitricoxide (NO) levels were measured. Results: Fibronectin was observed to have increased significantly in the ischemia group; on the other hand, it was observed to have decreased in parallel to the doses in the ALA groups. Biochemical studies showed that SOD and GSHPx declined with ischemia-reperfusion, but the activities of these enzymes were increased in the treatment groups in parallel with the dose. It was found that increased MDA levels with ischemia-reperfusion were decreased in parallel with ALA dose. There were no statistically significant changes in NO. Conclusion: Increased fibronectin observed after ischemia/reperfusion of rat sciatic nerve is reduced after the administration of ALA. This indicates that the function of fibronectin, to reconnect cut nerve segments and regenerate nerves, is more prominent than its function in tissue healing after ischemia. ALA administered before ischemia decreases MDA and increases SOD and GSHPx. We think that ALA may protect against the pathological changes in ischemic nerve and may be used to devise more efficient treatments.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15619",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "196-202",
+    "views": 7338,
+    "downloads": 9650,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "225",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=225",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=225",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=225",
+    "localPdfUrl": "js/data/pdfs/225.pdf",
+    "pdfUrl": "js/data/pdfs/225.pdf"
+  },
+  {
+    "id": 226,
+    "type": "Original Article",
+    "title": "The Effects of Sugammadex on Progesterone Levels in Pregnant Rats",
+    "authors": [
+      {
+        "name": "Tayfun Et",
+        "affiliation": "Department of Anaesthesiology and Reanimation, Necmettin Erbakan University Meram Faculty of Medicine, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Topal",
+        "affiliation": "Department of Anaesthesiology and Reanimation, Necmettin Erbakan University Meram Faculty of Medicine, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Atilla Erol",
+        "affiliation": "Department of Anaesthesiology and Reanimation, Necmettin Erbakan University Meram Faculty of Medicine, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aybars Tavlan",
+        "affiliation": "Department of Anaesthesiology and Reanimation, Necmettin Erbakan University Meram Faculty of Medicine, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Alper Kılıçaslan",
+        "affiliation": "Department of Anaesthesiology and Reanimation, Necmettin Erbakan University Meram Faculty of Medicine, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sema Tuncer Uzun",
+        "affiliation": "Department of Anaesthesiology and Reanimation, Necmettin Erbakan University Meram Faculty of Medicine, Konya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Sugammadex has been shown to decrease the efficiency of progesterone-containing oral contraceptive drugs which possess a steroid structure. Aims: The aim of the present study was to evaluate the effects of sugammadex on progesterone levels in pregnant rats as well as on the physiological course of the pregnancy. Study Design: Animal experiment. Methods: This study was approved by the Selçuk University Ethical Committee for Experimental Animal Research. Pregnant Winster Albino rats (n=26) were divided into three groups and administered with various intravenous injections on the 7th day of pregnancy. The control group (Group K, n=6) received 1.5 mL serum physiologic, the sugammadex group (Group S, n=10) received 30 mg/kg sugammadex and the sugammadex + rocuronium group (Group SR, n=10) received 30 mg/kg sugammadex and 3.5 mg/kg rocuronium. Progesterone levels were measured and the offspring were monitored for morphologic status. Results: Mean progesterone levels were 94.16±15.54 ng/mL in Group K, 87.86±12.48 ng/mL in Group S, and 94.53±16.10 ng/mL in Group SR (p>0.05). No stillbirth or miscarriage was observed in the rats. The mean number of offspring was 6.8±1.47 in Group K, 6.5±1.35 in Group S, and 6.4±1.17 in Group SR. The offspring appeared macroscopically normal. Conclusion: Sugammadex does not appear to affect the progesterone levels in pregnant rats in the first trimester and the clinical course. Successful completion of pregnancy and the absence of stillbirth or miscarriage will guide future studies about the use of sugammadex, particularly in the first trimester of the pregnancy.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Sugammadex has been shown to decrease the efficiency of progesterone-containing oral contraceptive drugs which possess a steroid structure.</p>\r\n<p>\r\n\t<strong>Aims</strong>: The aim of the present study was to evaluate the effects of sugammadex on progesterone levels in pregnant rats as well as on the physiological course of the pregnancy.</p>\r\n<p>\r\n\t<strong>Study</strong> <strong>Design</strong>: Animal experiment.</p>\r\n<p>\r\n\t<strong>Methods</strong>: This study was approved by the Sel&ccedil;uk University Ethical Committee for Experimental Animal Research. Pregnant Winster Albino rats (n=26) were divided into three groups and administered with various intravenous injections on the 7th day of pregnancy. The control group (Group K, n=6) received 1.5 mL serum physiologic, the sugammadex group (Group S, n=10) received 30 mg/kg sugammadex and the sugammadex + rocuronium group (Group SR, n=10) received 30 mg/kg sugammadex and 3.5 mg/kg rocuronium. Progesterone levels were measured and the offspring were monitored for morphologic status.</p>\r\n<p>\r\n\t<strong>Results</strong>: Mean progesterone levels were 94.16&plusmn;15.54 ng/mL in Group K, 87.86&plusmn;12.48 ng/mL in Group S, and 94.53&plusmn;16.10 ng/mL in Group SR (p&gt;0.05). No stillbirth or miscarriage was observed in the rats. The mean number of offspring was 6.8&plusmn;1.47 in Group K, 6.5&plusmn;1.35 in Group S, and 6.4&plusmn;1.17 in Group SR. The offspring appeared macroscopically normal.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Sugammadex does not appear to affect the progesterone levels in pregnant rats in the first trimester and the clinical course. Successful completion of pregnancy and the absence of stillbirth or miscarriage will guide future studies about the use of sugammadex, particularly in the first trimester of the pregnancy.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Sugammadex has been shown to decrease the efficiency of progesterone-containing oral contraceptive drugs which possess a steroid structure. Aims: The aim of the present study was to evaluate the effects of sugammadex on progesterone levels in pregnant rats as well as on the physiological course of the pregnancy. Study Design: Animal experiment. Methods: This study was approved by the Selçuk University Ethical Committee for Experimental Animal Research. Pregnant Winster Albino rats (n=26) were divided into three groups and administered with various intravenous injections on the 7th day of pregnancy. The control group (Group K, n=6) received 1.5 mL serum physiologic, the sugammadex group (Group S, n=10) received 30 mg/kg sugammadex and the sugammadex + rocuronium group (Group SR, n=10) received 30 mg/kg sugammadex and 3.5 mg/kg rocuronium. Progesterone levels were measured and the offspring were monitored for morphologic status. Results: Mean progesterone levels were 94.16±15.54 ng/mL in Group K, 87.86±12.48 ng/mL in Group S, and 94.53±16.10 ng/mL in Group SR (p>0.05). No stillbirth or miscarriage was observed in the rats. The mean number of offspring was 6.8±1.47 in Group K, 6.5±1.35 in Group S, and 6.4±1.17 in Group SR. The offspring appeared macroscopically normal. Conclusion: Sugammadex does not appear to affect the progesterone levels in pregnant rats in the first trimester and the clinical course. Successful completion of pregnancy and the absence of stillbirth or miscarriage will guide future studies about the use of sugammadex, particularly in the first trimester of the pregnancy.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15502",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "203-207",
+    "views": 7371,
+    "downloads": 4372,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "226",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=226",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=226",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=226",
+    "localPdfUrl": "js/data/pdfs/226.pdf",
+    "pdfUrl": "js/data/pdfs/226.pdf"
+  },
+  {
+    "id": 227,
+    "type": "Case Report",
+    "title": "Cochlear Implantation in Extraordinary Cases",
+    "authors": [
+      {
+        "name": "Fatih Çelenk",
+        "affiliation": "Department of Otorhinolaryngology, Gaziantep University Faculty of Medicine, Gaziantep, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Raşit Cevizci",
+        "affiliation": "Department of Otorhinolaryngology, Medipol University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yıldırım Ahmet Bayazıt",
+        "affiliation": "Department of Otorhinolaryngology, Medipol University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şenay Altınyay",
+        "affiliation": "Audiology Unit, Gazi University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Although cochlear implantation has been almost a standard otological procedure worldwide, it may still create a dilemma for the surgeon in some unusual instances such as Seckel syndrome, aural atresia and posterior fossa arachnoid cyst. Case Report: Three extraordinary cases of cochlear implantation were reported. The first case was a case of Seckel syndrome with a cardiac pacemaker due to complete atrioventricular block. The second case had posterior fossa arachnoid cyst that had retrosigmoid cyst removal and cochlear implantation simultaneously. The last case had cochlear implantation in the ear with congenital aural atresia. All cases could be implanted successfully with full electrode insertion and good audiological outcome. Delayed facial paralysis that occurred in the patient with arachnoid cyst resolved spontaneously. Conclusion: This study addressed the efficiency of cochlear implantation in cases of Seckel syndrome, complete atrioventricular block managed with cardiac pacemaker, congenital aural atresia and posterior fossa arachnoid cyst. In addition, the retrosigmoid approach and cochlear implantation can be performed simultaneously.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Although cochlear implantation has been almost a standard otological procedure worldwide, it may still create a dilemma for the surgeon in some unusual instances such as Seckel syndrome, aural atresia and posterior fossa arachnoid cyst.</p>\r\n<p>\r\n\t<strong>Case Report</strong>: Three extraordinary cases of cochlear implantation were reported. The first case was a case of Seckel syndrome with a cardiac pacemaker due to complete atrioventricular block. The second case had posterior fossa arachnoid cyst that had retrosigmoid cyst removal and cochlear implantation simultaneously. The last case had cochlear implantation in the ear with congenital aural atresia. All cases could be implanted successfully with full electrode insertion and good audiological outcome. Delayed facial paralysis that occurred in the patient with arachnoid cyst resolved spontaneously.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: This study addressed the efficiency of cochlear implantation in cases of Seckel syndrome, complete atrioventricular block managed with cardiac pacemaker, congenital aural atresia and posterior fossa arachnoid cyst. In addition, the retrosigmoid approach and cochlear implantation can be performed simultaneously.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Although cochlear implantation has been almost a standard otological procedure worldwide, it may still create a dilemma for the surgeon in some unusual instances such as Seckel syndrome, aural atresia and posterior fossa arachnoid cyst. Case Report: Three extraordinary cases of cochlear implantation were reported. The first case was a case of Seckel syndrome with a cardiac pacemaker due to complete atrioventricular block. The second case had posterior fossa arachnoid cyst that had retrosigmoid cyst removal and cochlear implantation simultaneously. The last case had cochlear implantation in the ear with congenital aural atresia. All cases could be implanted successfully with full electrode insertion and good audiological outcome. Delayed facial paralysis that occurred in the patient with arachnoid cyst resolved spontaneously. Conclusion: This study addressed the efficiency of cochlear implantation in cases of Seckel syndrome, complete atrioventricular block managed with cardiac pacemaker, congenital aural atresia and posterior fossa arachnoid cyst. In addition, the retrosigmoid approach and cochlear implantation can be performed simultaneously.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15937",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "208-213",
+    "views": 6833,
+    "downloads": 9701,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "227",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=227",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=227",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=227",
+    "localPdfUrl": "js/data/pdfs/227.pdf",
+    "pdfUrl": "js/data/pdfs/227.pdf"
+  },
+  {
+    "id": 228,
+    "type": "Case Report",
+    "title": "Superior Mesenteric Arteriovenous Fistula Presenting with Massive Lethal Upper Gastrointestinal Bleeding 14 Years after Small Bowel Resection",
+    "authors": [
+      {
+        "name": "Dušan Grujić",
+        "affiliation": "Department of Internal Medicine, Emergency Center, Clinical Center of Vojvodina, Novi Sad, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Aleksandar Knežević",
+        "affiliation": "Department of Internal Medicine, Emergency Center, Clinical Center of Vojvodina, Novi Sad, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Svetlana Vojvodić",
+        "affiliation": "Department of Laboratory Diagnostics, Institute for Blood Transfusion of Vojvodina, University of Novi Sad Faculty of Medicine, Novi Sad, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Bojana Grujić",
+        "affiliation": "Department of Anesthesia and Intensive Therapy, Emergency Center, Clinical Center of Vojvodina, Novi Sad, Serbia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Arteriovenous fistulas (AVFs) of the superior mesenteric vasculature are rarely encountered. We present a case of an iatrogenic superior mesenteric AVF in a patient who had undergone a small bowel resection 14 years previously. Case Report: The 45-year-old male was admitted with bloody diarrhea, fatigue, weight loss and moderate ascites. On the fifth hospital day, while being evaluated for suspected liver cirrhosis, the patient developed severe gastrointestinal (GI) bleeding. An upper GI endoscopy revealed bleeding, esophago-gastric varices. A thorough clinical examination pointed to a paraumbilical murmur and thrill, while a contrast enhanced computerized tomography (CT) scan of the abdomen revealed the presence of cystic dilatation of the superior mesenteric vein (SMV), hepatomegaly and ascites. Duplex ultrasonography and 3D-computed tomography angiography (3D-CTA) confirmed the existence of AVF between the superior mesenteric artery (SMA) and SMV, which was the cause of portal hypertension and variceal bleeding. Despite the fact that AVF was ultimately recognized, uncontrollable hypovolemic shock caused by hematemesis, precluded the probable efficiency of further therapeutic attempts. Conclusion: Successful management of mesenteric blood vessel AVFs involves timely and the accurate diagnosis and early treatment in order to prevent the development of life threatening complications.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Arteriovenous fistulas (AVFs) of the superior mesenteric vasculature are rarely encountered. We present a case of an iatrogenic superior mesenteric AVF in a patient who had undergone a small bowel resection 14 years previously.</p>\r\n<p>\r\n\t<strong>Case Report</strong>: The 45-year-old male was admitted with bloody diarrhea, fatigue, weight loss and moderate ascites. On the fifth hospital day, while being evaluated for suspected liver cirrhosis, the patient developed severe gastrointestinal (GI) bleeding. An upper GI endoscopy revealed bleeding, esophago-gastric varices. A thorough clinical examination pointed to a paraumbilical murmur and thrill, while a contrast enhanced computerized tomography (CT) scan of the abdomen revealed the presence of cystic dilatation of the superior mesenteric vein (SMV), hepatomegaly and ascites. Duplex ultrasonography and 3D-computed tomography angiography (3D-CTA) confirmed the existence of AVF between the superior mesenteric artery (SMA) and SMV, which was the cause of portal hypertension and variceal bleeding. Despite the fact that AVF was ultimately recognized, uncontrollable hypovolemic shock caused by hematemesis, precluded the probable efficiency of further therapeutic attempts.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Successful management of mesenteric blood vessel AVFs involves timely and the accurate diagnosis and early treatment in order to prevent the development of life threatening complications.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Arteriovenous fistulas (AVFs) of the superior mesenteric vasculature are rarely encountered. We present a case of an iatrogenic superior mesenteric AVF in a patient who had undergone a small bowel resection 14 years previously. Case Report: The 45-year-old male was admitted with bloody diarrhea, fatigue, weight loss and moderate ascites. On the fifth hospital day, while being evaluated for suspected liver cirrhosis, the patient developed severe gastrointestinal (GI) bleeding. An upper GI endoscopy revealed bleeding, esophago-gastric varices. A thorough clinical examination pointed to a paraumbilical murmur and thrill, while a contrast enhanced computerized tomography (CT) scan of the abdomen revealed the presence of cystic dilatation of the superior mesenteric vein (SMV), hepatomegaly and ascites. Duplex ultrasonography and 3D-computed tomography angiography (3D-CTA) confirmed the existence of AVF between the superior mesenteric artery (SMA) and SMV, which was the cause of portal hypertension and variceal bleeding. Despite the fact that AVF was ultimately recognized, uncontrollable hypovolemic shock caused by hematemesis, precluded the probable efficiency of further therapeutic attempts. Conclusion: Successful management of mesenteric blood vessel AVFs involves timely and the accurate diagnosis and early treatment in order to prevent the development of life threatening complications.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15608",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "214-217",
+    "views": 7055,
+    "downloads": 9840,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "228",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=228",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=228",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=228",
+    "localPdfUrl": "js/data/pdfs/228.pdf",
+    "pdfUrl": "js/data/pdfs/228.pdf"
+  },
+  {
+    "id": 229,
+    "type": "Case Report",
+    "title": "Successful Treatment of Refractory Gastrointestinal Bleeding by Systemic (Oral) Ankaferd Blood Stopper in a Patient with Glanzmann Thrombasthenia",
+    "authors": [
+      {
+        "name": "Sibel Kabukçu Hacıoğlu",
+        "affiliation": "Department of Hematology, Pamukkale University Faculty of Medicine, Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Hilmi Doğu",
+        "affiliation": "Department of Hematology, Pamukkale University Faculty of Medicine, Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İsmail Sarı",
+        "affiliation": "Department of Hematology, Pamukkale University Faculty of Medicine, Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Keskin [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Glanzmann Thrombasthenia (GT) is a genetic platelet dysfunction and a life threatening disease. Ankaferd Blood Stopper (ABS) is a topical hemostatic agent of herbal origin which has been recently made available for clinical use. Its hemostatic effect is independent from blood clotting factors and occurs as a result of the aggregation of focal red blood cells by an encapsulated protein web. Case Report: In this paper, a patient with GT is presented in whom 3 months of gastrointestinal bleeding refractory to all medical therapies was controlled within a short time of using oral ABS. Conclusion: The difference between this patient and other cases presented in the medical literature is the oral use of ABS. Thus, this patient may contribute to the medical community in showing the safety and efficacy of systemic (oral) ABS in patients with disorders of coagulation. However, there is a need for more patient experiences.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Glanzmann Thrombasthenia (GT) is a genetic platelet dysfunction and a life threatening disease. Ankaferd Blood Stopper (ABS) is a topical hemostatic agent of herbal origin which has been recently made available for clinical use. Its hemostatic effect is independent from blood clotting factors and occurs as a result of the aggregation of focal red blood cells by an encapsulated protein web.</p>\r\n<p>\r\n\t<strong>Case Report</strong>: In this paper, a patient with GT is presented in whom 3 months of gastrointestinal bleeding refractory to all medical therapies was controlled within a short time of using oral ABS.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The difference between this patient and other cases presented in the medical literature is the oral use of ABS. Thus, this patient may contribute to the medical community in showing the safety and efficacy of systemic (oral) ABS in patients with disorders of coagulation. However, there is a need for more patient experiences.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Glanzmann Thrombasthenia (GT) is a genetic platelet dysfunction and a life threatening disease. Ankaferd Blood Stopper (ABS) is a topical hemostatic agent of herbal origin which has been recently made available for clinical use. Its hemostatic effect is independent from blood clotting factors and occurs as a result of the aggregation of focal red blood cells by an encapsulated protein web. Case Report: In this paper, a patient with GT is presented in whom 3 months of gastrointestinal bleeding refractory to all medical therapies was controlled within a short time of using oral ABS. Conclusion: The difference between this patient and other cases presented in the medical literature is the oral use of ABS. Thus, this patient may contribute to the medical community in showing the safety and efficacy of systemic (oral) ABS in patients with disorders of coagulation. However, there is a need for more patient experiences.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15734",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "218-220",
+    "views": 7138,
+    "downloads": 4697,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "229",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=229",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=229",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=229",
+    "localPdfUrl": "js/data/pdfs/229.pdf",
+    "pdfUrl": "js/data/pdfs/229.pdf"
+  },
+  {
+    "id": 230,
+    "type": "Case Report",
+    "title": "Fetal Oropharyngeal and Neck Tumors: Determination of the Need for Ex-Utero Intrapartum Treatment Procedure",
+    "authors": [
+      {
+        "name": "Fatma Tuncay Özgünen",
+        "affiliation": "Department of Obstetrics and Gynecology, Çukurova University Faculty of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ümran Küçükgöz Güleç",
+        "affiliation": "Department of Obstetrics and Gynecology, Çukurova University Faculty of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ümran Küçükgöz Güleç",
+        "affiliation": "Department of Obstetrics and Gynecology, Çukurova University Faculty of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İsmail Cüneyt Evrüke",
+        "affiliation": "Department of Obstetrics and Gynecology, Çukurova University Faculty of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Süleyman Cansun Demir",
+        "affiliation": "Department of Obstetrics and Gynecology, Çukurova University Faculty of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selim Büyükkurt",
+        "affiliation": "Department of Obstetrics and Gynecology, Çukurova University Faculty of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hacer Yapıcıoğlu",
+        "affiliation": "Department of Pediatrics Neonatalogy Unit, Çukurova University Faculty of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serdar İskit [[3]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The aim of this study was to assess the ex-utero intrapartum therapy (EXIT) applied to 3 of the 7 cases with oropharyngeal or neck masses and review the indicators of the need for an EXIT procedure. Case Report: Prenatal presentation, size and localization of the masses, existence of fetal hydrops and associated findings such as polyhydramnios, intraoperative managements, complications, and maternal and neonatal outcomes were evaluated through a retrospective analysis. Four cases had neck masses and three cases had oropharyngeal masses. Prenatal sonography was used as the main diagnostic tool for all patients. The median gestational age was 34.5 weeks at the time of diagnosis and 36 weeks at delivery. Polyhydramnios was observed in three of the seven cases and they were delivered prematurely. Interventions such as endotracheal intubation or tracheostomy were performed to provide patency of the airway during delivery by the EXIT procedure in three cases. Hemangioma was found in two cases, teratoma in two cases, lymphangioma in two cases and hamartoma in one case following pathological examination of the masses. Conclusion: The localization of mass, its characteristics, invasion (if it exists), and relation to the airway are the main factors used to determine the need for EXIT. The presence of polyhydramnios may be an important indicator to predict both the need for EXIT and fetal outcomes.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: The aim of this study was to assess the ex-utero intrapartum therapy (EXIT) applied to 3 of the 7 cases with oropharyngeal or neck masses and review the indicators of the need for an EXIT procedure.</p>\r\n<p>\r\n\t<strong>Case Report</strong>: Prenatal presentation, size and localization of the masses, existence of fetal hydrops and associated findings such as polyhydramnios, intraoperative managements, complications, and maternal and neonatal outcomes were evaluated through a retrospective analysis. Four cases had neck masses and three cases had oropharyngeal masses. Prenatal sonography was used as the main diagnostic tool for all patients. The median gestational age was 34.5 weeks at the time of diagnosis and 36 weeks at delivery. Polyhydramnios was observed in three of the seven cases and they were delivered prematurely. Interventions such as endotracheal intubation or tracheostomy were performed to provide patency of the airway during delivery by the EXIT procedure in three cases. Hemangioma was found in two cases, teratoma in two cases, lymphangioma in two cases and hamartoma in one case following pathological examination of the masses.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The localization of mass, its characteristics, invasion (if it exists), and relation to the airway are the main factors used to determine the need for EXIT. The presence of polyhydramnios may be an important indicator to predict both the need for EXIT and fetal outcomes.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The aim of this study was to assess the ex-utero intrapartum therapy (EXIT) applied to 3 of the 7 cases with oropharyngeal or neck masses and review the indicators of the need for an EXIT procedure. Case Report: Prenatal presentation, size and localization of the masses, existence of fetal hydrops and associated findings such as polyhydramnios, intraoperative managements, complications, and maternal and neonatal outcomes were evaluated through a retrospective analysis. Four cases had neck masses and three cases had oropharyngeal masses. Prenatal sonography was used as the main diagnostic tool for all patients. The median gestational age was 34.5 weeks at the time of diagnosis and 36 weeks at delivery. Polyhydramnios was observed in three of the seven cases and they were delivered prematurely. Interventions such as endotracheal intubation or tracheostomy were performed to provide patency of the airway during delivery by the EXIT procedure in three cases. Hemangioma was found in two cases, teratoma in two cases, lymphangioma in two cases and hamartoma in one case following pathological examination of the masses. Conclusion: The localization of mass, its characteristics, invasion (if it exists), and relation to the airway are the main factors used to determine the need for EXIT. The presence of polyhydramnios may be an important indicator to predict both the need for EXIT and fetal outcomes.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.150096",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "221-225",
+    "views": 7286,
+    "downloads": 9795,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "230",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=230",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=230",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=230",
+    "localPdfUrl": "js/data/pdfs/230.pdf",
+    "pdfUrl": "js/data/pdfs/230.pdf"
+  },
+  {
+    "id": 231,
+    "type": "Case Report",
+    "title": "Detection of Human Bocavirus DNA by Multiplex PCR Analysis: Postmortem Case Report",
+    "authors": [
+      {
+        "name": "Nihan Ziyade",
+        "affiliation": "Postmortem Microbiology Laboratory, Council of Forensic Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neval Elgörmüş",
+        "affiliation": "Postmortem Microbiology Laboratory, Council of Forensic Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gözde Şirin",
+        "affiliation": "Autopsy Unit, Mortuary Office, Council of Forensic Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Taner Daş",
+        "affiliation": "Histopathology Unit, Mortuary Office, Council of Forensic Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Human bocavirus (HBoV) is a virus belonging to the Parvoviridae family, which has been newly discovered to be associated with respiratory tract infections in children. There are many reports worldwide on the endemicity of this virus. Since it is relatively new, it is not routinely detected in clinical laboratory investigations. Case Report: We demonstrated that HBoV infection caused the death of a 5-month-old girl with a history of high fever and wheezing. Human bocavirus (HBoV 1/2/3/4) was found in a nasopharyngeal swab, paraffin-embedded lung tissue and stool samples by multiplex PCR methods using postmortem microbiological analysis. Conclusion: This case suggests that lower respiratory tract infections due to HBoV may cause severe and life-threatening diseases. Postmortem microbiology is useful in both clinical and forensic autopsies, and allows a suspected infection to be confirmed. To our knowledge, this report is the first document of a HBoV postmortem case in Turkey.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Human bocavirus (HBoV) is a virus belonging to the Parvoviridae family, which has been newly discovered to be associated with respiratory tract infections in children. There are many reports worldwide on the endemicity of this virus. Since it is relatively new, it is not routinely detected in clinical laboratory investigations.</p>\r\n<p>\r\n\t<strong>Case Report</strong>: We demonstrated that HBoV infection caused the death of a 5-month-old girl with a history of high fever and wheezing. Human bocavirus (HBoV 1/2/3/4) was found in a nasopharyngeal swab, paraffin-embedded lung tissue and stool samples by multiplex PCR methods using postmortem microbiological analysis.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: This case suggests that lower respiratory tract infections due to HBoV may cause severe and life-threatening diseases. Postmortem microbiology is useful in both clinical and forensic autopsies, and allows a suspected infection to be confirmed. To our knowledge, this report is the first document of a HBoV postmortem case in Turkey.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Human bocavirus (HBoV) is a virus belonging to the Parvoviridae family, which has been newly discovered to be associated with respiratory tract infections in children. There are many reports worldwide on the endemicity of this virus. Since it is relatively new, it is not routinely detected in clinical laboratory investigations. Case Report: We demonstrated that HBoV infection caused the death of a 5-month-old girl with a history of high fever and wheezing. Human bocavirus (HBoV 1/2/3/4) was found in a nasopharyngeal swab, paraffin-embedded lung tissue and stool samples by multiplex PCR methods using postmortem microbiological analysis. Conclusion: This case suggests that lower respiratory tract infections due to HBoV may cause severe and life-threatening diseases. Postmortem microbiology is useful in both clinical and forensic autopsies, and allows a suspected infection to be confirmed. To our knowledge, this report is the first document of a HBoV postmortem case in Turkey.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15254",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "226-229",
+    "views": 7151,
+    "downloads": 9674,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "231",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=231",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=231",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=231",
+    "localPdfUrl": "js/data/pdfs/231.pdf",
+    "pdfUrl": "js/data/pdfs/231.pdf"
+  },
+  {
+    "id": 232,
+    "type": "Case Report",
+    "title": "Aripiprazole Induced Acute Transient Bilateral Myopia: A Case Report",
+    "authors": [
+      {
+        "name": "Hasan Karadağ",
+        "affiliation": "Department of Psychiatry, Ankara Dışkapı Yıldırım Beyazıt Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kadir Özdel",
+        "affiliation": "Department of Psychiatry, Ankara Dışkapı Yıldırım Beyazıt Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mutlu Acar",
+        "affiliation": "Department of Ophthalmology, Ankara Dışkapı Yıldırım Beyazıt Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Aripiprazole is an atypical antipsychotic drug. Acute transient myopia is a rare response to systemic medication. Unspecified ocular side effects of aripiprazole have rarely been reported. To the best of our knowledge, only 3 cases of aripiprazole induced myopia and diplopia have been reported in the literature. The aim of this article is to present a case of aripiprazole-induced acute transient myopia. Case Report: A 30 year-old woman underwent treatment for 5 days with aripiprazole and presented with bilateral painless blurred vision. The patient’s uncorrected visual acuity was 2/10 in both eyes and her best corrected visual acuity was 10/10 in both eyes with a refractive error of -3.00 diopters using a standard Snellen chart. Adding 2 mgs of biperiden a day to her treatment regimen decreased her blurred vision symptoms. After discontinuation of aripiprazole treatment and cross-switching to Paliperidon palmitate (75 mg/month) her blurred vision completely resolved. The same side effect did not re-occur when checked on her 6-month follow up. Conclusion: Ophthalmologists as well as psychiatrists must be aware of this myopic shift and should also ask these patients about medicine usage, especially aripiprazole. Ophthalmologists should consult the prescribing psychiatrist and stop the drug immediately to reverse this temporary condition.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Aripiprazole is an atypical antipsychotic drug. Acute transient myopia is a rare response to systemic medication. Unspecified ocular side effects of aripiprazole have rarely been reported. To the best of our knowledge, only 3 cases of aripiprazole induced myopia and diplopia have been reported in the literature. The aim of this article is to present a case of aripiprazole-induced acute transient myopia.</p>\r\n<p>\r\n\t<strong>Case Report</strong>: A 30 year-old woman underwent treatment for 5 days with aripiprazole and presented with bilateral painless blurred vision. The patient&rsquo;s uncorrected visual acuity was 2/10 in both eyes and her best corrected visual acuity was 10/10 in both eyes with a refractive error of -3.00 diopters using a standard Snellen chart. Adding 2 mgs of biperiden a day to her treatment regimen decreased her blurred vision symptoms. After discontinuation of aripiprazole treatment and cross-switching to Paliperidon palmitate (75 mg/month) her blurred vision completely resolved. The same side effect did not re-occur when checked on her 6-month follow up.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Ophthalmologists as well as psychiatrists must be aware of this myopic shift and should also ask these patients about medicine usage, especially aripiprazole. Ophthalmologists should consult the prescribing psychiatrist and stop the drug immediately to reverse this temporary condition.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Aripiprazole is an atypical antipsychotic drug. Acute transient myopia is a rare response to systemic medication. Unspecified ocular side effects of aripiprazole have rarely been reported. To the best of our knowledge, only 3 cases of aripiprazole induced myopia and diplopia have been reported in the literature. The aim of this article is to present a case of aripiprazole-induced acute transient myopia. Case Report: A 30 year-old woman underwent treatment for 5 days with aripiprazole and presented with bilateral painless blurred vision. The patient’s uncorrected visual acuity was 2/10 in both eyes and her best corrected visual acuity was 10/10 in both eyes with a refractive error of -3.00 diopters using a standard Snellen chart. Adding 2 mgs of biperiden a day to her treatment regimen decreased her blurred vision symptoms. After discontinuation of aripiprazole treatment and cross-switching to Paliperidon palmitate (75 mg/month) her blurred vision completely resolved. The same side effect did not re-occur when checked on her 6-month follow up. Conclusion: Ophthalmologists as well as psychiatrists must be aware of this myopic shift and should also ask these patients about medicine usage, especially aripiprazole. Ophthalmologists should consult the prescribing psychiatrist and stop the drug immediately to reverse this temporary condition.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15292",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "230-232",
+    "views": 7753,
+    "downloads": 3585,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "232",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=232",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=232",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=232",
+    "localPdfUrl": "js/data/pdfs/232.pdf",
+    "pdfUrl": "js/data/pdfs/232.pdf"
+  },
+  {
+    "id": 2410,
+    "type": "Clinical Image",
+    "title": "Circumferential Intimal Intussusception in a Case of Stanford Type-A Dissection",
+    "authors": [
+      {
+        "name": "Uğur Göcen",
+        "affiliation": "Department of Cardiovascular Surgery, Çukurova University Faculty of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Atakan Atalay",
+        "affiliation": "Department of Cardiovascular Surgery, Çukurova University Faculty of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yüksel Baştürk",
+        "affiliation": "Department of Cardiovascular Surgery, Çukurova University Faculty of Medicine, Adana, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.150804",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "233-234",
+    "views": 4762,
+    "downloads": 1708,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "2410",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2410",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2410",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2410",
+    "localPdfUrl": "js/data/pdfs/2410.pdf",
+    "pdfUrl": "js/data/pdfs/2410.pdf"
+  },
+  {
+    "id": 235,
+    "type": "Miscellaneous",
+    "title": "Alcohol is not Safe even at Light Amounts",
+    "authors": [
+      {
+        "name": "Aslı Ceren Tahan",
+        "affiliation": "College of Science, University of Iowa, Iowa City, Iowa, United States",
+        "orcid": ""
+      },
+      {
+        "name": "Veysel Tahan",
+        "affiliation": "Department of Gastroenterology, University of Iowa Hospitals and Clinics, Iowa City, Iowa, United States",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Keywords :",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<b>Keywords :</b>\t\t\r\n \t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Keywords :",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.150853",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "239-239",
+    "views": 5990,
+    "downloads": 9552,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "235",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=235",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=235",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=235",
+    "localPdfUrl": "js/data/pdfs/235.pdf",
+    "pdfUrl": "js/data/pdfs/235.pdf"
+  },
+  {
+    "id": 233,
+    "type": "Letter",
+    "title": "Association of Serum Uric Acid with Family History of Coronary Artery Disease in a Pakistani Population",
+    "authors": [
+      {
+        "name": "Sabir Hussain",
+        "affiliation": "Department of Biosciences, COMSATS Institute of Information Technology, Islamabad, Pakistan",
+        "orcid": ""
+      },
+      {
+        "name": "Tahir Iqbal",
+        "affiliation": "Department of Internal Medicine, Shifa College of Medicine, Shifa International Hospital, Islamabad, Pakistan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Keywords :",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<b>Keywords :</b>\t\t\r\n \t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Keywords :",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.0729",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "235-236",
+    "views": 5687,
+    "downloads": 9304,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "233",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=233",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=233",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=233",
+    "localPdfUrl": "js/data/pdfs/233.pdf",
+    "pdfUrl": "js/data/pdfs/233.pdf"
+  },
+  {
+    "id": 234,
+    "type": "Letter",
+    "title": "The Reflection of Plication Surgery for Diaphragm Eventration to Respiratory Function Test",
+    "authors": [
+      {
+        "name": "Serdar Özkan",
+        "affiliation": "Department of Thoracic Surgery, Siirt State Hospital, Siirt, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ülkü Yazıcı",
+        "affiliation": "Department of Thoracic Surgery, Dışkapı Yıldırım Bayezit Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurettin Karaoğlanoğlu",
+        "affiliation": "Department of Thoracic Surgery, Dışkapı Yıldırım Bayezit Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ertan Aydın",
+        "affiliation": "Department of Thoracic Surgery, Koru Hospitals, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Keywords :",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<b>Keywords :</b>\t\t\r\n \t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Keywords :",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15728",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "2",
+    "pages": "237-238",
+    "views": 5699,
+    "downloads": 9322,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1173",
+    "sourceArticleId": "234",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=234",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=234",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=234",
+    "localPdfUrl": "js/data/pdfs/234.pdf",
+    "pdfUrl": "js/data/pdfs/234.pdf"
+  }
+]

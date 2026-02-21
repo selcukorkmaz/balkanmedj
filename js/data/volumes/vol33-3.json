@@ -1,0 +1,1314 @@
+[
+  {
+    "id": 1811,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "1811",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1811",
+    "localPdfUrl": "js/data/pdfs/1811.pdf",
+    "pdfUrl": "js/data/pdfs/1811.pdf"
+  },
+  {
+    "id": 117,
+    "type": "Original Article",
+    "title": "Evaluation of Postoperative Anti-nociceptive Efficacy of Intrathecal Dexketoprofen in Rats",
+    "authors": [
+      {
+        "name": "Birol Muhammet Er",
+        "affiliation": "Department of Anesthesiology, Ondokuz Mayıs University School of Medicine, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İsmail Serhat Kocamanoğlu",
+        "affiliation": "Department of Anesthesiology, Ondokuz Mayıs University School of Medicine, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayhan Bozkurt",
+        "affiliation": "Department of Physiology, Ondokuz Mayıs University School of Medicine, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sırrı Bilge",
+        "affiliation": "Department of Pharmacology, Ondokuz Mayıs University School of Medicine, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erhan Çetin Çetinoğlu [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Some studies have suggested that the intrathecal use of cyclooxygenase enzyme inhibitors provides an anti-nociceptive effect. Therefore, the occurrence of side effects seen in systemic usage can be eliminated. Aims: The primary objective of this experimental, randomized, controlled trial was to test the hypothesis asserting that intrathecal dexketoprofen trometamol would demonstrate an analgesic effect during postoperative period. Study Design: Animal experimentation. Methods: Forty rats were randomized into 4 groups 7 days after intrathecal catheterization; the following drugs were given through catheter lumens: Group Lidocaine (Group L): Lidocaine 20 μg; Group Lidocaine-Morphine (Group LM): Lidocaine 20 μg and morphine 0.5 μgr; Group Lidocaine-Dexketoprofen (Group LD): Lidocaine 20 μg and dexketoprofen trometamol 100 μg; and Group Dexketoprofen (Group D): Dexketoprofen trometamol 100 μg. Paw incision was achieved under ether inhalation. To measure analgesic potential, hot plate and tail immersion tests were used as nociceptive tests during the postoperative period. Results: The mean reaction times detected in groups during hot plate and tail immersion tests were shortest in Group L at 15, 30, 45, 60, 75, 90, 105, and 120 minutes after start of surgery (p<0.01, all others). In the groups using dexketoprofen, as in the morphine group, longer reaction times were detected than in the lidocaine group at all measurement times except 120 minutes (p<0.01). Conclusion: Intrathecal dexketoprofen in the optimal perioperative pain management is effective, and can be administered as an adjuvant in clinics after neurotoxicity studies in animals, and effective dose studies in volunteers.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Some studies have suggested that the intrathecal use of cyclooxygenase enzyme inhibitors provides an anti-nociceptive effect. Therefore, the occurrence of side effects seen in systemic usage can be eliminated.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: The primary objective of this experimental, randomized, controlled trial was to test the hypothesis asserting that intrathecal dexketoprofen trometamol would demonstrate an analgesic effect during postoperative period.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design</strong>: Animal experimentation.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Forty rats were randomized into 4 groups 7 days after intrathecal catheterization; the following drugs were given through catheter lumens: Group Lidocaine (Group L): Lidocaine 20 &mu;g; Group Lidocaine-Morphine (Group LM): Lidocaine 20 &mu;g and morphine 0.5 &mu;gr; Group Lidocaine-Dexketoprofen (Group LD): Lidocaine 20 &mu;g and dexketoprofen trometamol 100 &mu;g; and Group Dexketoprofen (Group D): Dexketoprofen trometamol 100 &mu;g. Paw incision was achieved under ether inhalation. To measure analgesic potential, hot plate and tail immersion tests were used as nociceptive tests during the postoperative period.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: The mean reaction times detected in groups during hot plate and tail immersion tests were shortest in Group L at 15, 30, 45, 60, 75, 90, 105, and 120 minutes after start of surgery (p&lt;0.01, all others). In the groups using dexketoprofen, as in the morphine group, longer reaction times were detected than in the lidocaine group at all measurement times except 120 minutes (p&lt;0.01).</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Intrathecal dexketoprofen in the optimal perioperative pain management is effective, and can be administered as an adjuvant in clinics after neurotoxicity studies in animals, and effective dose studies in volunteers.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Some studies have suggested that the intrathecal use of cyclooxygenase enzyme inhibitors provides an anti-nociceptive effect. Therefore, the occurrence of side effects seen in systemic usage can be eliminated. Aims: The primary objective of this experimental, randomized, controlled trial was to test the hypothesis asserting that intrathecal dexketoprofen trometamol would demonstrate an analgesic effect during postoperative period. Study Design: Animal experimentation. Methods: Forty rats were randomized into 4 groups 7 days after intrathecal catheterization; the following drugs were given through catheter lumens: Group Lidocaine (Group L): Lidocaine 20 μg; Group Lidocaine-Morphine (Group LM): Lidocaine 20 μg and morphine 0.5 μgr; Group Lidocaine-Dexketoprofen (Group LD): Lidocaine 20 μg and dexketoprofen trometamol 100 μg; and Group Dexketoprofen (Group D): Dexketoprofen trometamol 100 μg. Paw incision was achieved under ether inhalation. To measure analgesic potential, hot plate and tail immersion tests were used as nociceptive tests during the postoperative period. Results: The mean reaction times detected in groups during hot plate and tail immersion tests were shortest in Group L at 15, 30, 45, 60, 75, 90, 105, and 120 minutes after start of surgery (p<0.01, all others). In the groups using dexketoprofen, as in the morphine group, longer reaction times were detected than in the lidocaine group at all measurement times except 120 minutes (p<0.01). Conclusion: Intrathecal dexketoprofen in the optimal perioperative pain management is effective, and can be administered as an adjuvant in clinics after neurotoxicity studies in animals, and effective dose studies in volunteers.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.140986",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "245-251",
+    "views": 7172,
+    "downloads": 10321,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "117",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=117",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=117",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=117",
+    "localPdfUrl": "js/data/pdfs/117.pdf",
+    "pdfUrl": "js/data/pdfs/117.pdf"
+  },
+  {
+    "id": 118,
+    "type": "Original Article",
+    "title": "Curcumin Attenuates Hepatotoxicity Induced by Zinc Oxide Nanoparticles in Rats",
+    "authors": [
+      {
+        "name": "Layasadat Khorsandi",
+        "affiliation": "Cell & Molecular Research Center, Ahvaz Jundishapur University of Medical Sciences School of Medicine, Ahvaz, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Esrafil Mansouri",
+        "affiliation": "Cell & Molecular Research Center, Ahvaz Jundishapur University of Medical Sciences School of Medicine, Ahvaz, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Mahmoud Orazizadeh",
+        "affiliation": "Cell & Molecular Research Center, Ahvaz Jundishapur University of Medical Sciences School of Medicine, Ahvaz, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Zahra Jozi",
+        "affiliation": "Department of Anatomical Sciences, Ahvaz Jundishapur University of Medical Sciences School of Medicine, Ahvaz, Iran",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Zinc oxide nanoparticles (NZnO) are increasingly used in modern life. Most metal nanoparticles have adverse effects on the liver. Aims: To explore the protective action of curcumin (Cur) against hepatotoxicity induced by NZnO in rats. Study Design: Animal experimentation. Methods: Control group animals received normal saline, while the Cur group animals were treated with 200 mg/kg of Cur orally for 21 days. NZnO-intoxicated rats received 50 mg/kg of NZnO for 14 days by gavage method. In the NZnO+Cur group, rats were pretreated with Cur for 7 days before NZnO administration. Plasma activities of Alanine aminotransferase (ALT), aspartate aminotransferase (AST) and alkaline phosphatase (ALP) were measured as biomarkers of hepatotoxicity. Hepatic levels of malondialdehyde (MDA) and superoxide dismutase (SOD) and glutathione peroxidase (GPx) activities were measured for detection of oxidative stress in liver tissue. Histological changes and apoptosis in liver tissue were studied by using Hematoxylin-eosin staining and the transferase dUTP nick end labeling (TUNEL) method. Results: NZnO induced a significant increase in plasma AST (2.8-fold), ALT (2.7-fold) and ALP (1.97-fold) activity in comparison to the control group (p<0.01). NZnO increased MDA content and reduced SOD and GPx activities. NZnO caused liver damage including centrilobular necrosis and microvesicular steatosis. The percentage of apoptosis in hepatocytes was increased in NZnO-treated rats (p<0.01). Pre-treatment of Cur significantly reduced lipid peroxidation (39%), increased SOD (156%) and GPx (26%) activities, and attenuated ALT (47%), AST (41%) and ALP (30%) activities. Pre-treatment with Cur also decreased the histology changes and apoptotic index of hepatocytes (p<0.05). Conclusion: These findings indicate that Cur effectively protects against NZnO-induced hepatotoxicity in rats. However, future studies are required to propose Cur as a potential protective agent against hepatotoxicity induced by metal nanoparticles.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Zinc oxide nanoparticles (NZnO) are increasingly used in modern life. Most metal nanoparticles have adverse effects on the liver.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: To explore the protective action of curcumin (Cur) against hepatotoxicity induced by NZnO in rats.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design</strong>: Animal experimentation.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Control group animals received normal saline, while the Cur group animals were treated with 200 mg/kg of Cur orally for 21 days. NZnO-intoxicated rats received 50 mg/kg of NZnO for 14 days by gavage method. In the NZnO+Cur group, rats were pretreated with Cur for 7 days before NZnO administration. Plasma activities of Alanine aminotransferase (ALT), aspartate aminotransferase (AST) and alkaline phosphatase (ALP) were measured as biomarkers of hepatotoxicity. Hepatic levels of malondialdehyde (MDA) and superoxide dismutase (SOD) and glutathione peroxidase (GPx) activities were measured for detection of oxidative stress in liver tissue. Histological changes and apoptosis in liver tissue were studied by using Hematoxylin-eosin staining and the transferase dUTP nick end labeling (TUNEL) method.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: NZnO induced a significant increase in plasma AST (2.8-fold), ALT (2.7-fold) and ALP (1.97-fold) activity in comparison to the control group (p&lt;0.01). NZnO increased MDA content and reduced SOD and GPx activities. NZnO caused liver damage including centrilobular necrosis and microvesicular steatosis. The percentage of apoptosis in hepatocytes was increased in NZnO-treated rats (p&lt;0.01). Pre-treatment of Cur significantly reduced lipid peroxidation (39%), increased SOD (156%) and GPx (26%) activities, and attenuated ALT (47%), AST (41%) and ALP (30%) activities. Pre-treatment with Cur also decreased the histology changes and apoptotic index of hepatocytes (p&lt;0.05).</p>\r\n<p style=\"font-size: 12px;\">\r\n\tConclusion: These findings indicate that Cur effectively protects against NZnO-induced hepatotoxicity in rats. However, future studies are required to propose Cur as a potential protective agent against hepatotoxicity induced by metal nanoparticles.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Zinc oxide nanoparticles (NZnO) are increasingly used in modern life. Most metal nanoparticles have adverse effects on the liver. Aims: To explore the protective action of curcumin (Cur) against hepatotoxicity induced by NZnO in rats. Study Design: Animal experimentation. Methods: Control group animals received normal saline, while the Cur group animals were treated with 200 mg/kg of Cur orally for 21 days. NZnO-intoxicated rats received 50 mg/kg of NZnO for 14 days by gavage method. In the NZnO+Cur group, rats were pretreated with Cur for 7 days before NZnO administration. Plasma activities of Alanine aminotransferase (ALT), aspartate aminotransferase (AST) and alkaline phosphatase (ALP) were measured as biomarkers of hepatotoxicity. Hepatic levels of malondialdehyde (MDA) and superoxide dismutase (SOD) and glutathione peroxidase (GPx) activities were measured for detection of oxidative stress in liver tissue. Histological changes and apoptosis in liver tissue were studied by using Hematoxylin-eosin staining and the transferase dUTP nick end labeling (TUNEL) method. Results: NZnO induced a significant increase in plasma AST (2.8-fold), ALT (2.7-fold) and ALP (1.97-fold) activity in comparison to the control group (p<0.01). NZnO increased MDA content and reduced SOD and GPx activities. NZnO caused liver damage including centrilobular necrosis and microvesicular steatosis. The percentage of apoptosis in hepatocytes was increased in NZnO-treated rats (p<0.01). Pre-treatment of Cur significantly reduced lipid peroxidation (39%), increased SOD (156%) and GPx (26%) activities, and attenuated ALT (47%), AST (41%) and ALP (30%) activities. Pre-treatment with Cur also decreased the histology changes and apoptotic index of hepatocytes (p<0.05). Conclusion: These findings indicate that Cur effectively protects against NZnO-induced hepatotoxicity in rats. However, future studies are required to propose Cur as a potential protective agent against hepatotoxicity induced by metal nanoparticles.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.150017",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "252-257",
+    "views": 6965,
+    "downloads": 10258,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "118",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=118",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=118",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=118",
+    "localPdfUrl": "js/data/pdfs/118.pdf",
+    "pdfUrl": "js/data/pdfs/118.pdf"
+  },
+  {
+    "id": 119,
+    "type": "Original Article",
+    "title": "The Effect of Sodium Hyaluronate plus Sodium Chondroitin Sulfate Solution on Peritendinous Adhesion and Tendon Healing: An Experimental Study",
+    "authors": [
+      {
+        "name": "Hacı Bayram Tosun",
+        "affiliation": "Department of Orthopaedics and Traumatology, Adıyaman University School of Medicine, Adıyaman, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Seyit Ali Gümüştaş",
+        "affiliation": "Department of Orthopaedics and Traumatology, Adıyaman University School of Medicine, Adıyaman, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Abuzer Uludağ",
+        "affiliation": "Department of Orthopaedics and Traumatology, Adıyaman University School of Medicine, Adıyaman, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sancar Serbest",
+        "affiliation": "Department of Orthopaedic Surgery, İnegöl State Hospital, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yesari Eröksüz",
+        "affiliation": "Department of Pathology, Fırat University School of Veterinary Medicine, Elazığ, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Adhesion formation following tendon injury is a serious clinical problem. Aims: In this experimental study, the effects of the combination of sodium hyaluronate (HA) and chondroitin sulfate (CS) on peritendinous adhesion and tendon healing were evaluated. Study Design: Animal experimentation. Methods: Twenty-one mature Sprague Dawley male rats were randomly divided into three equal groups. The rats’ Achilles tendons were cut and repaired with a modified Kessler technique. About 0.25 and 0.50 mL of the HA and CS (HA+CS) combination were injected subcutaneously into the repair site of the rats in groups 1 and 2, respectively, on days 0, 3, 7, and 10. The subjects in group 3 were used as the control group. At 6 weeks, all rats were euthanized. The tenotomy site was examined macroscopically in all animal subjects. Four samples were assigned to the histopathological examination group, and the others were assigned to the biomechanical assessment group. Results: Inflammation and adhesion in both treatment groups were observed at a lower rate than in the control group. The collagen filaments in both treatment groups were regular and the number was low when compared to the control group. However, there was no statistically significant difference between group 1 and the control group. The quantity, quality, and grade of the adhesions were statistically significantly lower in group 2 when compared with the other groups. The mean maximum stress strength in group 2 was statistically significantly higher than that in group 1 and the control group. Conclusion: Local administration of the HA+CS combination solution is a valid tool for preventing peritendinous adhesion after extrasynovial tendon repair such as Achilles tendon, and is a treatment option in such cases.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Adhesion formation following tendon injury is a serious clinical problem.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: In this experimental study, the effects of the combination of sodium hyaluronate (HA) and chondroitin sulfate (CS) on peritendinous adhesion and tendon healing were evaluated.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design</strong>: Animal experimentation.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Twenty-one mature Sprague Dawley male rats were randomly divided into three equal groups. The rats&rsquo; Achilles tendons were cut and repaired with a modified Kessler technique. About 0.25 and 0.50 mL of the HA and CS (HA+CS) combination were injected subcutaneously into the repair site of the rats in groups 1 and 2, respectively, on days 0, 3, 7, and 10. The subjects in group 3 were used as the control group. At 6 weeks, all rats were euthanized. The tenotomy site was examined macroscopically in all animal subjects. Four samples were assigned to the histopathological examination group, and the others were assigned to the biomechanical assessment group.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: Inflammation and adhesion in both treatment groups were observed at a lower rate than in the control group. The collagen filaments in both treatment groups were regular and the number was low when compared to the control group. However, there was no statistically significant difference between group 1 and the control group. The quantity, quality, and grade of the adhesions were statistically significantly lower in group 2 when compared with the other groups. The mean maximum stress strength in group 2 was statistically significantly higher than that in group 1 and the control group.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Local administration of the HA+CS combination solution is a valid tool for preventing peritendinous adhesion after extrasynovial tendon repair such as Achilles tendon, and is a treatment option in such cases.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Adhesion formation following tendon injury is a serious clinical problem. Aims: In this experimental study, the effects of the combination of sodium hyaluronate (HA) and chondroitin sulfate (CS) on peritendinous adhesion and tendon healing were evaluated. Study Design: Animal experimentation. Methods: Twenty-one mature Sprague Dawley male rats were randomly divided into three equal groups. The rats’ Achilles tendons were cut and repaired with a modified Kessler technique. About 0.25 and 0.50 mL of the HA and CS (HA+CS) combination were injected subcutaneously into the repair site of the rats in groups 1 and 2, respectively, on days 0, 3, 7, and 10. The subjects in group 3 were used as the control group. At 6 weeks, all rats were euthanized. The tenotomy site was examined macroscopically in all animal subjects. Four samples were assigned to the histopathological examination group, and the others were assigned to the biomechanical assessment group. Results: Inflammation and adhesion in both treatment groups were observed at a lower rate than in the control group. The collagen filaments in both treatment groups were regular and the number was low when compared to the control group. However, there was no statistically significant difference between group 1 and the control group. The quantity, quality, and grade of the adhesions were statistically significantly lower in group 2 when compared with the other groups. The mean maximum stress strength in group 2 was statistically significantly higher than that in group 1 and the control group. Conclusion: Local administration of the HA+CS combination solution is a valid tool for preventing peritendinous adhesion after extrasynovial tendon repair such as Achilles tendon, and is a treatment option in such cases.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.140172",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "258-266",
+    "views": 7420,
+    "downloads": 10130,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "119",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=119",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=119",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=119",
+    "localPdfUrl": "js/data/pdfs/119.pdf",
+    "pdfUrl": "js/data/pdfs/119.pdf"
+  },
+  {
+    "id": 120,
+    "type": "Original Article",
+    "title": "Neuromuscular Dysfunction in Experimental Sepsis and Glutamine",
+    "authors": [
+      {
+        "name": "İlkin Çankayalı",
+        "affiliation": "Department of Anesthesiology and Intensive Care, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özden Boyacılar",
+        "affiliation": "Department of Anesthesiology and Intensive Care, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kubilay Demirağ",
+        "affiliation": "Department of Anesthesiology and Intensive Care, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Uyar",
+        "affiliation": "Department of Anesthesiology and Intensive Care, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Reşat Moral [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Electrophysiological studies show that critical illness polyneuromyopathy appears in the early stage of sepsis before the manifestation of clinical findings. The metabolic response observed during sepsis causes glutamine to become a relative essential amino acid. Aims: We aimed to assess the changes in neuromuscular transmission in the early stage of sepsis after glutamine supplementation. Study Design: Animal experimentation. Methods: Twenty male Sprague-Dawley rats were randomized into two groups. Rats in both groups were given normal feeding for one week. In the study group, 1 g/kg/day glutamine was added to normal feeding by feeding tube for one week. Cecal ligation and perforation (CLP) surgery was performed at the end of one week. Before and 24 hours after CLP, compound muscle action potentials were recorded from the gastrocnemius muscle. Results: Latency measurements before and 24 hours after CLP were 0.68±0.05 ms and 0.80±0.09 ms in the control group and 0.69±0.07 ms and 0.73±0.07 ms in the study group (p<0.05). Conclusion: Since enteral glutamine prevented compound muscle action potentials (CMAP) latency prolongation in the early phase of sepsis, it was concluded that enteral glutamine replacement might be promising in the prevention of neuromuscular dysfunction in sepsis; however, further studies are required.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Electrophysiological studies show that critical illness polyneuromyopathy appears in the early stage of sepsis before the manifestation of clinical findings. The metabolic response observed during sepsis causes glutamine to become a relative essential amino acid.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: We aimed to assess the changes in neuromuscular transmission in the early stage of sepsis after glutamine supplementation.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design</strong>: Animal experimentation.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Twenty male Sprague-Dawley rats were randomized into two groups. Rats in both groups were given normal feeding for one week. In the study group, 1 g/kg/day glutamine was added to normal feeding by feeding tube for one week. Cecal ligation and perforation (CLP) surgery was performed at the end of one week. Before and 24 hours after CLP, compound muscle action potentials were recorded from the gastrocnemius muscle.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: Latency measurements before and 24 hours after CLP were 0.68&plusmn;0.05 ms and 0.80&plusmn;0.09 ms in the control group and 0.69&plusmn;0.07 ms and 0.73&plusmn;0.07 ms in the study group (p&lt;0.05).</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Since enteral glutamine prevented compound muscle action potentials (CMAP) latency prolongation in the early phase of sepsis, it was concluded that enteral glutamine replacement might be promising in the prevention of neuromuscular dysfunction in sepsis; however, further studies are required.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Electrophysiological studies show that critical illness polyneuromyopathy appears in the early stage of sepsis before the manifestation of clinical findings. The metabolic response observed during sepsis causes glutamine to become a relative essential amino acid. Aims: We aimed to assess the changes in neuromuscular transmission in the early stage of sepsis after glutamine supplementation. Study Design: Animal experimentation. Methods: Twenty male Sprague-Dawley rats were randomized into two groups. Rats in both groups were given normal feeding for one week. In the study group, 1 g/kg/day glutamine was added to normal feeding by feeding tube for one week. Cecal ligation and perforation (CLP) surgery was performed at the end of one week. Before and 24 hours after CLP, compound muscle action potentials were recorded from the gastrocnemius muscle. Results: Latency measurements before and 24 hours after CLP were 0.68±0.05 ms and 0.80±0.09 ms in the control group and 0.69±0.07 ms and 0.73±0.07 ms in the study group (p<0.05). Conclusion: Since enteral glutamine prevented compound muscle action potentials (CMAP) latency prolongation in the early phase of sepsis, it was concluded that enteral glutamine replacement might be promising in the prevention of neuromuscular dysfunction in sepsis; however, further studies are required.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.140483",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "267-274",
+    "views": 7000,
+    "downloads": 9670,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "120",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=120",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=120",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=120",
+    "localPdfUrl": "js/data/pdfs/120.pdf",
+    "pdfUrl": "js/data/pdfs/120.pdf"
+  },
+  {
+    "id": 121,
+    "type": "Original Article",
+    "title": "The Impact of Gd-Eob-Dtpa-Enhanced MR Cholangiography in Biliary Diseases: Comparison with T2-Weighted MR Cholangiopancreatography",
+    "authors": [
+      {
+        "name": "Evrim Özmen",
+        "affiliation": "Department of Radiology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Oktay Algın",
+        "affiliation": "Department of Radiology, Atatürk Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şehnaz Evrimler",
+        "affiliation": "Department of Radiology, Atatürk Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Halil Arslan",
+        "affiliation": "Department of Radiology, Atatürk Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Contrast enhanced magnetic resonance cholangiography is a novel technique and promising method in demonstrating biliary tree anatomy and evaluating biliary disorders. However, to date, there are a limited number of studies that have focused on the impact of this technique. Aims: We aimed to evaluate the additional role of contrast enhanced MR cholangiography (MRC) and compare contrast enhanced MRC with T2-weighted (w) magnetic resonance cholangiopancreatography (MRCP) in the diagnosis of biliary disorders. Study Design: Diagnostic accuracy study. Methods: The T2w-MRCP and contrast enhanced MRC sequences of 31 patients whose gold standard test results were available were scored visually for the existence of pathological findings with regard to any of the biliary diseases. Gadolinium ethoxybenzyl diethylenetriamine pentaacetic acid (Gd-EOB-DTPA) was used as the contrast agent. The correlation values were determined according to the statistical analysis made from those scores and the sensitivity, specificity and accuracy values of each sequence were detected as well. Results: We detected that the correlation values with gold standard methods of contrast enhanced MRC sequences were significantly higher than the ones of T2w-MRCP sequences. The correlation ratios of T2w-MRCP sequences were between 26 and 34%, while those for contrast enhanced MRC sequences were between 81 and 83% for the first reader and the correlation ratios of T2w-MRCP sequences were between 10 and 61%, whereas those of contrast enhanced MRC were between 79 and 81% for the second reader The mean sensitivity, specificity and accuracy values of T2w-MRCP sequences were 14.3-42.5%, 85-89.2% and 59.3-72.5%, respectively, while the mean sensitivity, specificity and accuracy values of contrast enhanced MRC sequences were 100%, 86.7% and 93.2-93.3%, respectively. Conclusion: We suggest that obtaining of contrast enhanced MRC sequences in addition to the T2w-MRCP can be useful in the diagnosis of many diseases in relation with biliary tree.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Contrast enhanced magnetic resonance cholangiography is a novel technique and promising method in demonstrating biliary tree anatomy and evaluating biliary disorders. However, to date, there are a limited number of studies that have focused on the impact of this technique.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: We aimed to evaluate the additional role of contrast enhanced MR cholangiography (MRC) and compare contrast enhanced MRC with T2-weighted (w) magnetic resonance cholangiopancreatography (MRCP) in the diagnosis of biliary disorders.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design</strong>: Diagnostic accuracy study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: The T2w-MRCP and contrast enhanced MRC sequences of 31 patients whose gold standard test results were available were scored visually for the existence of pathological findings with regard to any of the biliary diseases. Gadolinium ethoxybenzyl diethylenetriamine pentaacetic acid (Gd-EOB-DTPA) was used as the contrast agent. The correlation values were determined according to the statistical analysis made from those scores and the sensitivity, specificity and accuracy values of each sequence were detected as well.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: We detected that the correlation values with gold standard methods of contrast enhanced MRC sequences were significantly higher than the ones of T2w-MRCP sequences. The correlation ratios of T2w-MRCP sequences were between 26 and 34%, while those for contrast enhanced MRC sequences were between 81 and 83% for the first reader and the correlation ratios of T2w-MRCP sequences were between 10 and 61%, whereas those of contrast enhanced MRC were between 79 and 81% for the second reader The mean sensitivity, specificity and accuracy values of T2w-MRCP sequences were 14.3-42.5%, 85-89.2% and 59.3-72.5%, respectively, while the mean sensitivity, specificity and accuracy values of contrast enhanced MRC sequences were 100%, 86.7% and 93.2-93.3%, respectively.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: We suggest that obtaining of contrast enhanced MRC sequences in addition to the T2w-MRCP can be useful in the diagnosis of many diseases in relation with biliary tree.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Contrast enhanced magnetic resonance cholangiography is a novel technique and promising method in demonstrating biliary tree anatomy and evaluating biliary disorders. However, to date, there are a limited number of studies that have focused on the impact of this technique. Aims: We aimed to evaluate the additional role of contrast enhanced MR cholangiography (MRC) and compare contrast enhanced MRC with T2-weighted (w) magnetic resonance cholangiopancreatography (MRCP) in the diagnosis of biliary disorders. Study Design: Diagnostic accuracy study. Methods: The T2w-MRCP and contrast enhanced MRC sequences of 31 patients whose gold standard test results were available were scored visually for the existence of pathological findings with regard to any of the biliary diseases. Gadolinium ethoxybenzyl diethylenetriamine pentaacetic acid (Gd-EOB-DTPA) was used as the contrast agent. The correlation values were determined according to the statistical analysis made from those scores and the sensitivity, specificity and accuracy values of each sequence were detected as well. Results: We detected that the correlation values with gold standard methods of contrast enhanced MRC sequences were significantly higher than the ones of T2w-MRCP sequences. The correlation ratios of T2w-MRCP sequences were between 26 and 34%, while those for contrast enhanced MRC sequences were between 81 and 83% for the first reader and the correlation ratios of T2w-MRCP sequences were between 10 and 61%, whereas those of contrast enhanced MRC were between 79 and 81% for the second reader The mean sensitivity, specificity and accuracy values of T2w-MRCP sequences were 14.3-42.5%, 85-89.2% and 59.3-72.5%, respectively, while the mean sensitivity, specificity and accuracy values of contrast enhanced MRC sequences were 100%, 86.7% and 93.2-93.3%, respectively. Conclusion: We suggest that obtaining of contrast enhanced MRC sequences in addition to the T2w-MRCP can be useful in the diagnosis of many diseases in relation with biliary tree.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.140872",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "275-282",
+    "views": 6904,
+    "downloads": 9868,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "121",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=121",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=121",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=121",
+    "localPdfUrl": "js/data/pdfs/121.pdf",
+    "pdfUrl": "js/data/pdfs/121.pdf"
+  },
+  {
+    "id": 122,
+    "type": "Original Article",
+    "title": "Effectiveness of Using Dual-source CT and the Upshot it creates on Both Heart Rate and Image Quality",
+    "authors": [
+      {
+        "name": "Tuba Selçuk",
+        "affiliation": "Department of Radiology, Haseki Training and Research Hospital, İstanbul, Turkey; Department of Medical Imaging Techniques, İstanbul Gelişim University Vocational School of Health Services",
+        "orcid": ""
+      },
+      {
+        "name": "Hafize Otçu",
+        "affiliation": "Department of Radiology, Halkalı Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zeyneb Yüceler",
+        "affiliation": "Department of Radiology, Şereflikoçhisar Government Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Çiğdem Bilgili",
+        "affiliation": "Department of Radiology, Haseki Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mesut Bulakçı",
+        "affiliation": "Department of Radiology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yıldıray Savaş",
+        "affiliation": "Department of Radiology, Haseki Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ömer Çelik",
+        "affiliation": "Department of Cardiology, Halkalı Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Early detection of coronary artery disease (CAD) is important because of the high morbidity and mortality rates. As invasive coronary angiography (ICA) is an invasive procedure, an alternative diagnostic method; coronary computed tomography angiography (CTA), has become more widely used by the improvements in detector technology. Aims: In this study, we aimed to examine the accuracy and image quality of high-pitch 128-slice dual-source CTA taking the ICA as reference technique. We also aimed to compare the accuracy and image quality between different heart rate groups of >70 beates per minute (bpm) and ≤70 bpm. Study Design: Retrospective cross-sectional study. Methods: Among 450 patients who underwent coronary CTA with the FLASH spiral technique, performed with a second generation dual-source computed tomography device with a pitch value of 3.2, 102 patients without stent and/or bypass surgery history and clinically suspected coronary artery disease who underwent ICA within 15 days were enrolled. Image quality was assessed by two independent radiologists using a 4-point scale (1=absence of any artifacts- 4=non-evaluable). A stenosis >50% was considered significant on a per-segment, per-vessel, and per-patient basis and ICA was considered the reference method. Radiation doses were determined using dose length product (DLP) values detected by the computed tomography (CT) device. In addition, patients were classified into two groups according to their heart rates as ≤70 bpm (73 patients) and >70 bpm (29 patients). The relation between the diagnostic accuracy and heart rate groups were evaluated. Results: Overall, 1495 (98%) coronary segments were diagnostic in 102 patients (32 male, 70 female, mean heart rate: 65 bpm). There was a significant correlation between image quality and mean heart rate in the right coronary artery (RCA) segments. The effective radiation dose was 0.98±0.09 mili Sievert (mSv). On a per-patient basis, sensitivity, specificity, and positive and negative predictive values were 93.8%, 88.8%, 93.8% and 88.8%, respectively. These values were also similar in per-vessel and per-segment basis. Two different groups categorized by mean heart rate had almost similar results in terms of the diagnostic power of dual-source CTA. Conclusion: CTA with a high pitch value is a reliable, non-invasive diagnostic method that can CAD with low radiation doses not only in patients with a heart rate below 70 bpm, but also in patients with higher heart rates.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Early detection of coronary artery disease (CAD) is important because of the high morbidity and mortality rates. As invasive coronary angiography (ICA) is an invasive procedure, an alternative diagnostic method; coronary computed tomography angiography (CTA), has become more widely used by the improvements in detector technology.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: In this study, we aimed to examine the accuracy and image quality of high-pitch 128-slice dual-source CTA taking the ICA as reference technique. We also aimed to compare the accuracy and image quality between different heart rate groups of &gt;70 beates per minute (bpm) and &le;70 bpm.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design:</strong>&nbsp;Retrospective cross-sectional study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Among 450 patients who underwent coronary CTA with the FLASH spiral technique, performed with a second generation dual-source computed tomography device with a pitch value of 3.2, 102 patients without stent and/or bypass surgery history and clinically suspected coronary artery disease who underwent ICA within 15 days were enrolled. Image quality was assessed by two independent radiologists using a 4-point scale (1=absence of any artifacts- 4=non-evaluable). A stenosis &gt;50% was considered significant on a per-segment, per-vessel, and per-patient basis and ICA was considered the reference method. Radiation doses were determined using dose length product (DLP) values detected by the computed tomography (CT) device. In addition, patients were classified into two groups according to their heart rates as &le;70 bpm (73 patients) and &gt;70 bpm (29 patients). The relation between the diagnostic accuracy and heart rate groups were evaluated.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: Overall, 1495 (98%) coronary segments were diagnostic in 102 patients (32 male, 70 female, mean heart rate: 65 bpm). There was a significant correlation between image quality and mean heart rate in the right coronary artery (RCA) segments. The effective radiation dose was 0.98&plusmn;0.09 mili Sievert (mSv). On a per-patient basis, sensitivity, specificity, and positive and negative predictive values were 93.8%, 88.8%, 93.8% and 88.8%, respectively. These values were also similar in per-vessel and per-segment basis. Two different groups categorized by mean heart rate had almost similar results in terms of the diagnostic power of dual-source CTA.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: CTA with a high pitch value is a reliable, non-invasive diagnostic method that can CAD with low radiation doses not only in patients with a heart rate below 70 bpm, but also in patients with higher heart rates.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Early detection of coronary artery disease (CAD) is important because of the high morbidity and mortality rates. As invasive coronary angiography (ICA) is an invasive procedure, an alternative diagnostic method; coronary computed tomography angiography (CTA), has become more widely used by the improvements in detector technology. Aims: In this study, we aimed to examine the accuracy and image quality of high-pitch 128-slice dual-source CTA taking the ICA as reference technique. We also aimed to compare the accuracy and image quality between different heart rate groups of >70 beates per minute (bpm) and ≤70 bpm. Study Design: Retrospective cross-sectional study. Methods: Among 450 patients who underwent coronary CTA with the FLASH spiral technique, performed with a second generation dual-source computed tomography device with a pitch value of 3.2, 102 patients without stent and/or bypass surgery history and clinically suspected coronary artery disease who underwent ICA within 15 days were enrolled. Image quality was assessed by two independent radiologists using a 4-point scale (1=absence of any artifacts- 4=non-evaluable). A stenosis >50% was considered significant on a per-segment, per-vessel, and per-patient basis and ICA was considered the reference method. Radiation doses were determined using dose length product (DLP) values detected by the computed tomography (CT) device. In addition, patients were classified into two groups according to their heart rates as ≤70 bpm (73 patients) and >70 bpm (29 patients). The relation between the diagnostic accuracy and heart rate groups were evaluated. Results: Overall, 1495 (98%) coronary segments were diagnostic in 102 patients (32 male, 70 female, mean heart rate: 65 bpm). There was a significant correlation between image quality and mean heart rate in the right coronary artery (RCA) segments. The effective radiation dose was 0.98±0.09 mili Sievert (mSv). On a per-patient basis, sensitivity, specificity, and positive and negative predictive values were 93.8%, 88.8%, 93.8% and 88.8%, respectively. These values were also similar in per-vessel and per-segment basis. Two different groups categorized by mean heart rate had almost similar results in terms of the diagnostic power of dual-source CTA. Conclusion: CTA with a high pitch value is a reliable, non-invasive diagnostic method that can CAD with low radiation doses not only in patients with a heart rate below 70 bpm, but also in patients with higher heart rates.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.16220",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "283-293",
+    "views": 7233,
+    "downloads": 10197,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "122",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=122",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=122",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=122",
+    "localPdfUrl": "js/data/pdfs/122.pdf",
+    "pdfUrl": "js/data/pdfs/122.pdf"
+  },
+  {
+    "id": 123,
+    "type": "Original Article",
+    "title": "Value of Apparent Diffusion Coefficient Values in Differentiating Malignant and Benign Breast Lesions",
+    "authors": [
+      {
+        "name": "Tuğba Bostan Bozkurt",
+        "affiliation": "Department of Radiology, İzmir Kâtip Çelebi University Atatürk Training and Research Hospital",
+        "orcid": ""
+      },
+      {
+        "name": "Gonca Koç",
+        "affiliation": "Department of Radiology, İzmir Kâtip Çelebi University Atatürk Training and Research Hospital",
+        "orcid": ""
+      },
+      {
+        "name": "Gülten Sezgin",
+        "affiliation": "Department of Radiology, İzmir Kâtip Çelebi University Atatürk Training and Research Hospital",
+        "orcid": ""
+      },
+      {
+        "name": "Canan Altay",
+        "affiliation": "Department of Radiology, İzmir Kâtip Çelebi University Atatürk Training and Research Hospital",
+        "orcid": ""
+      },
+      {
+        "name": "M. Fazıl Gelal",
+        "affiliation": "Department of Radiology, İzmir Kâtip Çelebi University Atatürk Training and Research Hospital",
+        "orcid": ""
+      },
+      {
+        "name": "Orhan Oyar",
+        "affiliation": "Department of Radiology, İzmir Kâtip Çelebi University Atatürk Training and Research Hospital",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Magnetic resonance imaging (MRI) has become a diagnostic and problem solving method for the breast examinations in addition to conventional breast examination methods. Diffusion-weighted imaging (DWI) adds valuable information to conventional MRI. Aims: Our aim was to show the impact of apparent diffusion coefficient (ADC) values acquired with DWI to differentiate benign and malignant breast lesions. Study Design: Diagnostic accuracy study. Methods: Forty-six women with 58 breast masses (35 malignant, 23 benign) were examined on a 1.5 T clinical MRI scanner. The morphologic characteristics of the lesions on conventional MRI sequences and contrast uptake pattern were assessed. ADC values of both lesions and normal breast parenchyma were measured. The ADC values obtained were statistically compared with the histopathologic results using Paired Samples t-Test. Results: Multiple lesions were detected in 12 (26%) of the patients, while only one lesion was detected in 34 (74%). Overall, 35 lesions out of 58 were histopathologically proven to be malignant. In the dynamic contrast-enhanced series, 5 of the malignant lesions were type 1, while 8 benign lesions revealed either type 2 or 3 time signal intensity curves (85% sensitivity, 56% spesifity). Mean ADC values were significantly different in malignant vs. benign lesions. (1.04±0.29x10-3 cm2/sec vs. 1.61±0.50x10-3 cm2/sec for the malignant and benign lesions, respectively, p=0.03). A cut-off value of 1.30x10-3 mm2/sec for ADC detected with receiver operating characteristic analysis yielded 89.1% sensitivity and 100% specificity for the differentiation between benign and malignant lesions. Conclusion: ADC values improve the diagnostic accuracy of solid breast lesions when evaluated with the conventional MRI sequences. Therefore, DWI should be incorporated to routine breast MRI protocol.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Magnetic resonance imaging (MRI) has become a diagnostic and problem solving method for the breast examinations in addition to conventional breast examination methods. Diffusion-weighted imaging (DWI) adds valuable information to conventional MRI.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: Our aim was to show the impact of apparent diffusion coefficient (ADC) values acquired with DWI to differentiate benign and malignant breast lesions.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design:</strong>&nbsp;Diagnostic accuracy study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Forty-six women with 58 breast masses (35 malignant, 23 benign) were examined on a 1.5 T clinical MRI scanner. The morphologic characteristics of the lesions on conventional MRI sequences and contrast uptake pattern were assessed. ADC values of both lesions and normal breast parenchyma were measured. The ADC values obtained were statistically compared with the histopathologic results using Paired Samples t-Test.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: Multiple lesions were detected in 12 (26%) of the patients, while only one lesion was detected in 34 (74%). Overall, 35 lesions out of 58 were histopathologically proven to be malignant. In the dynamic contrast-enhanced series, 5 of the malignant lesions were type 1, while 8 benign lesions revealed either type 2 or 3 time signal intensity curves (85% sensitivity, 56% spesifity). Mean ADC values were significantly different in malignant vs. benign lesions. (1.04&plusmn;0.29x10-3 cm2/sec vs. 1.61&plusmn;0.50x10-3 cm2/sec for the malignant and benign lesions, respectively, p=0.03). A cut-off value of 1.30x10-3 mm2/sec for ADC detected with receiver operating characteristic analysis yielded 89.1% sensitivity and 100% specificity for the differentiation between benign and malignant lesions.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: ADC values improve the diagnostic accuracy of solid breast lesions when evaluated with the conventional MRI sequences. Therefore, DWI should be incorporated to routine breast MRI protocol.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Magnetic resonance imaging (MRI) has become a diagnostic and problem solving method for the breast examinations in addition to conventional breast examination methods. Diffusion-weighted imaging (DWI) adds valuable information to conventional MRI. Aims: Our aim was to show the impact of apparent diffusion coefficient (ADC) values acquired with DWI to differentiate benign and malignant breast lesions. Study Design: Diagnostic accuracy study. Methods: Forty-six women with 58 breast masses (35 malignant, 23 benign) were examined on a 1.5 T clinical MRI scanner. The morphologic characteristics of the lesions on conventional MRI sequences and contrast uptake pattern were assessed. ADC values of both lesions and normal breast parenchyma were measured. The ADC values obtained were statistically compared with the histopathologic results using Paired Samples t-Test. Results: Multiple lesions were detected in 12 (26%) of the patients, while only one lesion was detected in 34 (74%). Overall, 35 lesions out of 58 were histopathologically proven to be malignant. In the dynamic contrast-enhanced series, 5 of the malignant lesions were type 1, while 8 benign lesions revealed either type 2 or 3 time signal intensity curves (85% sensitivity, 56% spesifity). Mean ADC values were significantly different in malignant vs. benign lesions. (1.04±0.29x10-3 cm2/sec vs. 1.61±0.50x10-3 cm2/sec for the malignant and benign lesions, respectively, p=0.03). A cut-off value of 1.30x10-3 mm2/sec for ADC detected with receiver operating characteristic analysis yielded 89.1% sensitivity and 100% specificity for the differentiation between benign and malignant lesions. Conclusion: ADC values improve the diagnostic accuracy of solid breast lesions when evaluated with the conventional MRI sequences. Therefore, DWI should be incorporated to routine breast MRI protocol.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.141007",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "294-300",
+    "views": 7602,
+    "downloads": 4119,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "123",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=123",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=123",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=123",
+    "localPdfUrl": "js/data/pdfs/123.pdf",
+    "pdfUrl": "js/data/pdfs/123.pdf"
+  },
+  {
+    "id": 124,
+    "type": "Original Article",
+    "title": "Diffusion Weighted MR Imaging of Breast and Correlation of Prognostic Factors in Breast Cancer",
+    "authors": [
+      {
+        "name": "İnci Kızıldağ Yırgın",
+        "affiliation": "Department of Radiology, Hendek State Hospital, Sakarya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gözde Arslan",
+        "affiliation": "Department of Radiology, Maltepe University School of Medicine, Istanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Enis Öztürk",
+        "affiliation": "Department of Radiology, Bakırkoy Dr. Sadi Konuk Training and Research Hospital, Istanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Yırgın",
+        "affiliation": "Department of Surgery, Hendek State Hospital, Sakarya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nihat Taşdemir",
+        "affiliation": "Department of Radiology, Gebze Medical Park Private Hospital, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşegül Akdoğan Gemici",
+        "affiliation": "Department of Radiology, Kagıthane State Hospital, Istanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatma Çelik Kabul",
+        "affiliation": "Department of Radiology, Bakırkoy Dr. Sadi Konuk Training and Research Hospital, Istanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Eyüp Kaya [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Through Diffusion Weighted Imaging (DWI), information related to early molecular changes, changes in the permeability of cell membranes, and early morphologic and physiologic changes such as cell swelling can be obtained. Aims: We investigated the correlation between the prognostic factors of breast cancer and apparent diffusion coefficient (ADC) in DWI sequences of malignant lesions. Study Design: Retrospective cross-sectional study. Methods: Patients who were referred to our clinic between September 2012 and September 2013, who underwent dynamic breast MRI before or after biopsy and whose biopsy results were determined as malignant, were included in our study. Before the dynamic analysis, DWI sequences were taken. ADC relationship with all prognostic factors was investigated. Pearson correlation test was used to compare the numerical data, while Spearman correlation and Fisher exact tests were used to compare the categorical data. The advanced relationships were evaluated with linear regression analysis and univariate analysis. The efficiency of the parameters was evaluated using ROC analysis. The significance level (P) was accepted as 0.05. Results: In total, 41 female patients with an average age of 49.4 years (age interval 21-77) and 44 lesions were included into the study. In the Pearson correlation test, no statistically significant difference was determined between ADC and the patient’s age and tumor size. In the Spearman correlation test, a statistically significant difference was determined between nuclear grade (NG) and ADC (r=-0.424, p=0.04); no statistically significant correlation was observed between the other prognostic factors with each other and ADC values. In the linear regression analysis, the relationship of NG with ADC was found to be more significant alone than when comparing all parameters (corrected r2=0.196, p=0.005). Further evaluations between the NG and ADC correlation were carried out with ROC analysis. A statistically significant difference was determined when NG 1 separately was compared with NG 2 and 3 (p=0.03). A statistically significant difference was also determined (p=0.05) in the comparison of NG 1 with only NG 3. No statistically significant difference was determined when NG 2 separately was compared with NG 1 and NG 3 and when NG 3 separately was compared with NG 1 and 2 (p=0.431, p=0.097), Conclusion: We found that ADC values obtained by breast DWI showed a higher correlation with the NG of breast cancer, which is an important factor in the patient’s treatment. Predictions can be made about NG by analyzing the ADC values. Additional studies are needed, however, and the ADC value of the lesion can be used as a prognostic factor proving the aggressiveness.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Through Diffusion Weighted Imaging (DWI), information related to early molecular changes, changes in the permeability of cell membranes, and early morphologic and physiologic changes such as cell swelling can be obtained.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: We investigated the correlation between the prognostic factors of breast cancer and apparent diffusion coefficient (ADC) in DWI sequences of malignant lesions.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design:</strong>&nbsp;Retrospective cross-sectional study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Patients who were referred to our clinic between September 2012 and September 2013, who underwent dynamic breast MRI before or after biopsy and whose biopsy results were determined as malignant, were included in our study. Before the dynamic analysis, DWI sequences were taken. ADC relationship with all prognostic factors was investigated. Pearson correlation test was used to compare the numerical data, while Spearman correlation and Fisher exact tests were used to compare the categorical data. The advanced relationships were evaluated with linear regression analysis and univariate analysis. The efficiency of the parameters was evaluated using ROC analysis. The significance level (P) was accepted as 0.05.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: In total, 41 female patients with an average age of 49.4 years (age interval 21-77) and 44 lesions were included into the study. In the Pearson correlation test, no statistically significant difference was determined between ADC and the patient&rsquo;s age and tumor size. In the Spearman correlation test, a statistically significant difference was determined between nuclear grade (NG) and ADC (r=-0.424, p=0.04); no statistically significant correlation was observed between the other prognostic factors with each other and ADC values. In the linear regression analysis, the relationship of NG with ADC was found to be more significant alone than when comparing all parameters (corrected r2=0.196, p=0.005). Further evaluations between the NG and ADC correlation were carried out with ROC analysis. A statistically significant difference was determined when NG 1 separately was compared with NG 2 and 3 (p=0.03). A statistically significant difference was also determined (p=0.05) in the comparison of NG 1 with only NG 3. No statistically significant difference was determined when NG 2 separately was compared with NG 1 and NG 3 and when NG 3 separately was compared with NG 1 and 2 (p=0.431, p=0.097),</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: We found that ADC values obtained by breast DWI showed a higher correlation with the NG of breast cancer, which is an important factor in the patient&rsquo;s treatment. Predictions can be made about NG by analyzing the ADC values. Additional studies are needed, however, and the ADC value of the lesion can be used as a prognostic factor proving the aggressiveness.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Through Diffusion Weighted Imaging (DWI), information related to early molecular changes, changes in the permeability of cell membranes, and early morphologic and physiologic changes such as cell swelling can be obtained. Aims: We investigated the correlation between the prognostic factors of breast cancer and apparent diffusion coefficient (ADC) in DWI sequences of malignant lesions. Study Design: Retrospective cross-sectional study. Methods: Patients who were referred to our clinic between September 2012 and September 2013, who underwent dynamic breast MRI before or after biopsy and whose biopsy results were determined as malignant, were included in our study. Before the dynamic analysis, DWI sequences were taken. ADC relationship with all prognostic factors was investigated. Pearson correlation test was used to compare the numerical data, while Spearman correlation and Fisher exact tests were used to compare the categorical data. The advanced relationships were evaluated with linear regression analysis and univariate analysis. The efficiency of the parameters was evaluated using ROC analysis. The significance level (P) was accepted as 0.05. Results: In total, 41 female patients with an average age of 49.4 years (age interval 21-77) and 44 lesions were included into the study. In the Pearson correlation test, no statistically significant difference was determined between ADC and the patient’s age and tumor size. In the Spearman correlation test, a statistically significant difference was determined between nuclear grade (NG) and ADC (r=-0.424, p=0.04); no statistically significant correlation was observed between the other prognostic factors with each other and ADC values. In the linear regression analysis, the relationship of NG with ADC was found to be more significant alone than when comparing all parameters (corrected r2=0.196, p=0.005). Further evaluations between the NG and ADC correlation were carried out with ROC analysis. A statistically significant difference was determined when NG 1 separately was compared with NG 2 and 3 (p=0.03). A statistically significant difference was also determined (p=0.05) in the comparison of NG 1 with only NG 3. No statistically significant difference was determined when NG 2 separately was compared with NG 1 and NG 3 and when NG 3 separately was compared with NG 1 and 2 (p=0.431, p=0.097), Conclusion: We found that ADC values obtained by breast DWI showed a higher correlation with the NG of breast cancer, which is an important factor in the patient’s treatment. Predictions can be made about NG by analyzing the ADC values. Additional studies are needed, however, and the ADC value of the lesion can be used as a prognostic factor proving the aggressiveness.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.140555",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "301-307",
+    "views": 7052,
+    "downloads": 9968,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "124",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=124",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=124",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=124",
+    "localPdfUrl": "js/data/pdfs/124.pdf",
+    "pdfUrl": "js/data/pdfs/124.pdf"
+  },
+  {
+    "id": 125,
+    "type": "Original Article",
+    "title": "Interobserver and Intraobserver Variability among Measurements of FDG PET/CT Parameters in Pulmonary Tumors",
+    "authors": [
+      {
+        "name": "Gülgün Büyükdereli",
+        "affiliation": "Department of Nuclear Medicine, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehtap Güler",
+        "affiliation": "Department of Nuclear Medicine, State Hospital, Niğde, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gülşah Şeydaoğlu",
+        "affiliation": "Department of Biostatistics, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: 18F-fluorodeoxyglucose (FDG) positron emission tomography computed tomography (PET/CT) provides information about metabolic and morphologic status of malignancies. Tumor size and standardized uptake value (SUV) measurements are crucial for cancer treatment monitoring.: 18F-fluorodeoxyglucose (FDG) positron emission tomography computed tomography (PET/CT) provides information about metabolic and morphologic status of malignancies. Tumor size and standardized uptake value (SUV) measurements are crucial for cancer treatment monitoring. Aims: The purpose of our study was to assess the variability of these measurements performed by observers evaluating lung tumors. Study Design: Retrospective cross-sectional study. Methods: FDG PET/CT images of 97 patients with pulmonary tumors were independently evaluated by two experienced nuclear medicine physicians. Primary tumor size (UDCT), maximum SUV (SUVmax), mean SUV (SUVmean) and maximum SUV normalized to liver mean SUV (SUVnliv max) were measured by each observer at two different times with an interval of at least 2 weeks. Interobserver and intraobserver variabilities of measurements were evaluated through statistical methods. Results: Size of the lesions varied from 0.81 to 13.6 cm (mean 4.29±2.24 cm). Very good agreement was shown with correlation, Bland-Altman and regression analysis for all measured PET/CT parameters. In the interobserver and intraobserver variability analysis, the Pearson correlation coefficients were greater than 0.96 and 0.98, respectively. Conclusion: Semi-quantitative measurements of pulmonary tumors were highly reproducible when determined by experienced physicians with clinically available software for routine FDG PET/CT evaluation. Consistency may be improved if the same observer performs serial measurements for any one patient.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong style=\"font-size: 12px;\">Background</strong><span style=\"font-size: 12px;\">: 18F-fluorodeoxyglucose (FDG) positron emission tomography computed tomography (PET/CT) provides information about metabolic and morphologic status of malignancies. Tumor size and standardized uptake value (SUV) measurements are crucial for cancer treatment monitoring.: 18F-fluorodeoxyglucose (FDG) positron emission tomography computed tomography (PET/CT) provides information about metabolic and morphologic status of malignancies. Tumor size and standardized uptake value (SUV) measurements are crucial for cancer treatment monitoring.</span></p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: The purpose of our study was to assess the variability of these measurements performed by observers evaluating lung tumors.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design</strong>: Retrospective cross-sectional study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: FDG PET/CT images of 97 patients with pulmonary tumors were independently evaluated by two experienced nuclear medicine physicians. Primary tumor size (UDCT), maximum SUV (SUVmax), mean SUV (SUVmean) and maximum SUV normalized to liver mean SUV (SUVnliv max) were measured by each observer at two different times with an interval of at least 2 weeks. Interobserver and intraobserver variabilities of measurements were evaluated through statistical methods.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: Size of the lesions varied from 0.81 to 13.6 cm (mean 4.29&plusmn;2.24 cm). Very good agreement was shown with correlation, Bland-Altman and regression analysis for all measured PET/CT parameters. In the interobserver and intraobserver variability analysis, the Pearson correlation coefficients were greater than 0.96 and 0.98, respectively.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Semi-quantitative measurements of pulmonary tumors were highly reproducible when determined by experienced physicians with clinically available software for routine FDG PET/CT evaluation. Consistency may be improved if the same observer performs serial measurements for any one patient.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: 18F-fluorodeoxyglucose (FDG) positron emission tomography computed tomography (PET/CT) provides information about metabolic and morphologic status of malignancies. Tumor size and standardized uptake value (SUV) measurements are crucial for cancer treatment monitoring.: 18F-fluorodeoxyglucose (FDG) positron emission tomography computed tomography (PET/CT) provides information about metabolic and morphologic status of malignancies. Tumor size and standardized uptake value (SUV) measurements are crucial for cancer treatment monitoring. Aims: The purpose of our study was to assess the variability of these measurements performed by observers evaluating lung tumors. Study Design: Retrospective cross-sectional study. Methods: FDG PET/CT images of 97 patients with pulmonary tumors were independently evaluated by two experienced nuclear medicine physicians. Primary tumor size (UDCT), maximum SUV (SUVmax), mean SUV (SUVmean) and maximum SUV normalized to liver mean SUV (SUVnliv max) were measured by each observer at two different times with an interval of at least 2 weeks. Interobserver and intraobserver variabilities of measurements were evaluated through statistical methods. Results: Size of the lesions varied from 0.81 to 13.6 cm (mean 4.29±2.24 cm). Very good agreement was shown with correlation, Bland-Altman and regression analysis for all measured PET/CT parameters. In the interobserver and intraobserver variability analysis, the Pearson correlation coefficients were greater than 0.96 and 0.98, respectively. Conclusion: Semi-quantitative measurements of pulmonary tumors were highly reproducible when determined by experienced physicians with clinically available software for routine FDG PET/CT evaluation. Consistency may be improved if the same observer performs serial measurements for any one patient.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.140530",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "308-315",
+    "views": 7196,
+    "downloads": 3461,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "125",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=125",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=125",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=125",
+    "localPdfUrl": "js/data/pdfs/125.pdf",
+    "pdfUrl": "js/data/pdfs/125.pdf"
+  },
+  {
+    "id": 126,
+    "type": "Original Article",
+    "title": "The Role of Radiotherapy in the Treatment of Primary or Recurrent Desmoid Tumors and Long-Term Results",
+    "authors": [
+      {
+        "name": "Şefika Arzu Ergen",
+        "affiliation": "Department of Radiation Oncology, Istanbul University Cerrahpasa School of Medicine, Istanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Elif Eda Tiken",
+        "affiliation": "Department of Radiation Oncology, Istanbul University Cerrahpasa School of Medicine, Istanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Didem Çolpan Öksüz",
+        "affiliation": "Department of Radiation Oncology, Istanbul University Cerrahpasa School of Medicine, Istanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fazilet Öner Dinçbaş",
+        "affiliation": "Department of Radiation Oncology, Istanbul University Cerrahpasa School of Medicine, Istanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sergülen Dervişoğlu",
+        "affiliation": "Department of Pathology, Istanbul University Cerrahpasa School of Medicine, Istanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nil Molinas Mendel",
+        "affiliation": "Department of Medical Oncology, Istanbul University Cerrahpasa School of Medicine, Istanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Hız",
+        "affiliation": "Department of Orthopedic Surgery, Istanbul University Cerrahpasa School of Medicine, Istanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sedat Koca",
+        "affiliation": "Department of Radiation Oncology, Istanbul University Cerrahpasa School of Medicine, Istanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Desmoid tumors are uncommon and benign mesenchymal neoplasms. The optimal treatment of patients with desmoid tumors is still controversial. Surgery is the primary treatment for locally invasive or recurrent desmoid tumors. Also, radiotherapy is a treatment option for patients at high risk for local failure such as those with positive margins or recurrent and unresectable tumors. Aims: To report our institutional experience and long-term results of patients with desmoid tumors who received radiotherapy. Study Design: Retrospective cross-sectional study. Methods: Between 1980 and 2009, 20 patients who received radiotherapy (RT) in our institution were analyzed. The majority of patients (80%) were referred with a recurrent tumor after previous surgery. Thirteen patients underwent marginal resection, 4 had wide local excision and 3 patients had only biopsy. Resection margin was positive in 15 (75%) patients. All patients received radiation therapy. The median prescribed dose was 60 Gy. Five patients received less than 54 Gy. Results: The median follow-up time was 77.5 months (28-283 months). Nine patients developed local recurrence after RT. Seven local failures (78%) were in field. Time to local recurrence ranged from 3-165 months (median 33 months). The 2-5 year local control (LC) rates were 80% and 69%, respectively. On univariate analysis, the 5 year local control rate was significantly better in the patients treated with ≥54 Gy than in patients who received <54 Gy (p=0.023). The most common acute side effect was grade 1-2 skin toxicity. As a late side effect of radiotherapy, soft tissue fibrosis was detected in 10 patients and lymphangitis was seen in 1 patient. One patient developed radiation-induced sarcoma. Conclusion: According to our results, radiotherapy is especially effective in recurrent disease and provides a high local control rate in the patients received more than 54 Gy.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Desmoid tumors are uncommon and benign mesenchymal neoplasms. The optimal treatment of patients with desmoid tumors is still controversial. Surgery is the primary treatment for locally invasive or recurrent desmoid tumors. Also, radiotherapy is a treatment option for patients at high risk for local failure such as those with positive margins or recurrent and unresectable tumors.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: To report our institutional experience and long-term results of patients with desmoid tumors who received radiotherapy.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design</strong>: Retrospective cross-sectional study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Between 1980 and 2009, 20 patients who received radiotherapy (RT) in our institution were analyzed. The majority of patients (80%) were referred with a recurrent tumor after previous surgery. Thirteen patients underwent marginal resection, 4 had wide local excision and 3 patients had only biopsy. Resection margin was positive in 15 (75%) patients. All patients received radiation therapy. The median prescribed dose was 60 Gy. Five patients received less than 54 Gy.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: The median follow-up time was 77.5 months (28-283 months). Nine patients developed local recurrence after RT. Seven local failures (78%) were in field. Time to local recurrence ranged from 3-165 months (median 33 months). The 2-5 year local control (LC) rates were 80% and 69%, respectively. On univariate analysis, the 5 year local control rate was significantly better in the patients treated with &ge;54 Gy than in patients who received &lt;54 Gy (p=0.023). The most common acute side effect was grade 1-2 skin toxicity. As a late side effect of radiotherapy, soft tissue fibrosis was detected in 10 patients and lymphangitis was seen in 1 patient. One patient developed radiation-induced sarcoma.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: According to our results, radiotherapy is especially effective in recurrent disease and provides a high local control rate in the patients received more than 54 Gy.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Desmoid tumors are uncommon and benign mesenchymal neoplasms. The optimal treatment of patients with desmoid tumors is still controversial. Surgery is the primary treatment for locally invasive or recurrent desmoid tumors. Also, radiotherapy is a treatment option for patients at high risk for local failure such as those with positive margins or recurrent and unresectable tumors. Aims: To report our institutional experience and long-term results of patients with desmoid tumors who received radiotherapy. Study Design: Retrospective cross-sectional study. Methods: Between 1980 and 2009, 20 patients who received radiotherapy (RT) in our institution were analyzed. The majority of patients (80%) were referred with a recurrent tumor after previous surgery. Thirteen patients underwent marginal resection, 4 had wide local excision and 3 patients had only biopsy. Resection margin was positive in 15 (75%) patients. All patients received radiation therapy. The median prescribed dose was 60 Gy. Five patients received less than 54 Gy. Results: The median follow-up time was 77.5 months (28-283 months). Nine patients developed local recurrence after RT. Seven local failures (78%) were in field. Time to local recurrence ranged from 3-165 months (median 33 months). The 2-5 year local control (LC) rates were 80% and 69%, respectively. On univariate analysis, the 5 year local control rate was significantly better in the patients treated with ≥54 Gy than in patients who received <54 Gy (p=0.023). The most common acute side effect was grade 1-2 skin toxicity. As a late side effect of radiotherapy, soft tissue fibrosis was detected in 10 patients and lymphangitis was seen in 1 patient. One patient developed radiation-induced sarcoma. Conclusion: According to our results, radiotherapy is especially effective in recurrent disease and provides a high local control rate in the patients received more than 54 Gy.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.140560",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "316-321",
+    "views": 6971,
+    "downloads": 10034,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "126",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=126",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=126",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=126",
+    "localPdfUrl": "js/data/pdfs/126.pdf",
+    "pdfUrl": "js/data/pdfs/126.pdf"
+  },
+  {
+    "id": 127,
+    "type": "Original Article",
+    "title": "Subcutaneous C.E.R.A. for the Treatment of Chronic Renal Anemia in Predialysis Patients",
+    "authors": [
+      {
+        "name": "Sedat Üstündağ",
+        "affiliation": "Department of Internal Medicine, Division of Nephrology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ekrem Doğan",
+        "affiliation": "Selahaddin Eyyubi University Faculty of Health Sciences, Diyarbakır, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Duranay",
+        "affiliation": "Clinic of Nephrology, Ankara Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Rümeyza Kazancıoğlu",
+        "affiliation": "Clinic of Nephrology, Haseki Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Vedat Çelik",
+        "affiliation": "Clinic of Nephrology, Okmeydanı Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Abdülkadir Ünsal",
+        "affiliation": "Clinic of Nephrology, Sişli Etfal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Lütfullah Altıntepe",
+        "affiliation": "Clinic of Nephrology, Konya Training and Research Hospital, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Belda Dursun",
+        "affiliation": "Department of Internal Medicine, Division of Nephrology, Pamukkale University School of Medicine, Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ertuğrul Akbaş",
+        "affiliation": "Roche Pharmaceuticals, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Alaattin Yıldız",
+        "affiliation": "Department of Internal Medicine, Division of Nephrology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: We investigated the efficacy, safety and tolerability of once-monthly administration of C.E.R.A. in erythropoiesis stimulating agents (ESAs) naive predialysis patients with CKD for anemia treatment Study Design: Single arm, open label study. Methods: A total of 75 patients (mean (SD) age was 52.8 (16.4) years, 76.0% were female) were included in this study conducted between 12 August 2008 and 30 October 2009 in 9 centers across Turkey. The mean change in Hb concentration (g/dL) between baseline (week 0) and the efficacy evaluation period (EEP) was the primary efficacy parameter evaluated in three consecutive periods including a dose titration period (DTP; with initial 1.2 μg/kg dose of C.E.R.A., subcutaneously, 28 weeks), EEP (8 weeks) and a long-term safety period (16 weeks). Results: Our analysis revealed an improvement in Hb levels from baseline value of 9.4 (0.4) g/dL to time adjusted average level of 11.4 (0.7) g/dL in EEP in the per protocol (PP) population and from 9.3 (0.5) g/dL to 11.1 (1.0) g/dL in intent-to-treat (ITT) population. Mean (SD) change in Hb levels from baseline to EEP was 2.0 (0.7) g/dl in the PP population (primary endpoint) and 1.7 (1.1) g/dL in the ITT population. The percentage of patients whose Hb concentrations remained within the target range of 10.0-12.0 g/dL throughout the EEP was 43.9% (95% CI: 28.5-60.3%) in the PP population and 38.7% (95% CI: 27.6% to 50.6%) in the ITP population. A total of 206 adverse events (AE) were reported in 77.0% of patients with hypertension (20%) as the most frequent AE. Conclusion: Once-monthly subcutaneous C.E.R.A. administration is effective and safe in the treatment of anemia in pre-dialysis patients with CKD, who are not currently treated with ESAs.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: We investigated the efficacy, safety and tolerability of once-monthly administration of C.E.R.A. in erythropoiesis stimulating agents (ESAs) naive predialysis patients with CKD for anemia treatment</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design</strong>: Single arm, open label study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: A total of 75 patients (mean (SD) age was 52.8 (16.4) years, 76.0% were female) were included in this study conducted between 12 August 2008 and 30 October 2009 in 9 centers across Turkey. The mean change in Hb concentration (g/dL) between baseline (week 0) and the efficacy evaluation period (EEP) was the primary efficacy parameter evaluated in three consecutive periods including a dose titration period (DTP; with initial 1.2 &mu;g/kg dose of C.E.R.A., subcutaneously, 28 weeks), EEP (8 weeks) and a long-term safety period (16 weeks).</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: Our analysis revealed an improvement in Hb levels from baseline value of 9.4 (0.4) g/dL to time adjusted average level of 11.4 (0.7) g/dL in EEP in the per protocol (PP) population and from 9.3 (0.5) g/dL to 11.1 (1.0) g/dL in intent-to-treat (ITT) population. Mean (SD) change in Hb levels from baseline to EEP was 2.0 (0.7) g/dl in the PP population (primary endpoint) and 1.7 (1.1) g/dL in the ITT population. The percentage of patients whose Hb concentrations remained within the target range of 10.0-12.0 g/dL throughout the EEP was 43.9% (95% CI: 28.5-60.3%) in the PP population and 38.7% (95% CI: 27.6% to 50.6%) in the ITP population. A total of 206 adverse events (AE) were reported in 77.0% of patients with hypertension (20%) as the most frequent AE.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Once-monthly subcutaneous C.E.R.A. administration is effective and safe in the treatment of anemia in pre-dialysis patients with CKD, who are not currently treated with ESAs.&nbsp;</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: We investigated the efficacy, safety and tolerability of once-monthly administration of C.E.R.A. in erythropoiesis stimulating agents (ESAs) naive predialysis patients with CKD for anemia treatment Study Design: Single arm, open label study. Methods: A total of 75 patients (mean (SD) age was 52.8 (16.4) years, 76.0% were female) were included in this study conducted between 12 August 2008 and 30 October 2009 in 9 centers across Turkey. The mean change in Hb concentration (g/dL) between baseline (week 0) and the efficacy evaluation period (EEP) was the primary efficacy parameter evaluated in three consecutive periods including a dose titration period (DTP; with initial 1.2 μg/kg dose of C.E.R.A., subcutaneously, 28 weeks), EEP (8 weeks) and a long-term safety period (16 weeks). Results: Our analysis revealed an improvement in Hb levels from baseline value of 9.4 (0.4) g/dL to time adjusted average level of 11.4 (0.7) g/dL in EEP in the per protocol (PP) population and from 9.3 (0.5) g/dL to 11.1 (1.0) g/dL in intent-to-treat (ITT) population. Mean (SD) change in Hb levels from baseline to EEP was 2.0 (0.7) g/dl in the PP population (primary endpoint) and 1.7 (1.1) g/dL in the ITT population. The percentage of patients whose Hb concentrations remained within the target range of 10.0-12.0 g/dL throughout the EEP was 43.9% (95% CI: 28.5-60.3%) in the PP population and 38.7% (95% CI: 27.6% to 50.6%) in the ITP population. A total of 206 adverse events (AE) were reported in 77.0% of patients with hypertension (20%) as the most frequent AE. Conclusion: Once-monthly subcutaneous C.E.R.A. administration is effective and safe in the treatment of anemia in pre-dialysis patients with CKD, who are not currently treated with ESAs.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.141173",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "322-330",
+    "views": 7087,
+    "downloads": 3500,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "127",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=127",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=127",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=127",
+    "localPdfUrl": "js/data/pdfs/127.pdf",
+    "pdfUrl": "js/data/pdfs/127.pdf"
+  },
+  {
+    "id": 128,
+    "type": "Original Article",
+    "title": "Prevalence of Metabolic Syndrome and Affecting Factors among Individuals Aged 30 and over in Balçova District of İzmir",
+    "authors": [
+      {
+        "name": "Ahmet Soysal",
+        "affiliation": "Department of Public Health, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hatice Şimşek",
+        "affiliation": "Department of Public Health, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Türkan Günay",
+        "affiliation": "Department of Public Health, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sinem Doğanay",
+        "affiliation": "Gaziemir Community Health Center, Ministry of Health, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The studies have shown that metabolic syndrome (MetS) leads to an increase twice as much in cardiovascular diseases (CVD) and four times as much in diabetes mellitus (DM) prevalence since the second half of the 20th century. Aims: This study aims to determine and discuss the prevalence of the MetS and co- factors among individuals at the age of 30 and over in Balcova district of İzmir province according to the American National Cholesterol Education Program - Adult Treatment Panel III (NCEP ATP III) and InternationalDiabetes Federation (IDF) criteria. Study Design: Cross-sectional study. Methods: Data obtained from the Balcova Heart Project in İzmir were used in the study. The dependent variable of the study is MetS existence. The independent variables were socio-demographic characteristics (age, gender, education level, and marital status), self-perceived economic status, physical activity, smoking status, healthy nutrition and body mass index (BMI). Results: The prevalence of MetS was 36.9% according to the diagnostic criteria of IDF, while it was 27.4% according to ATP III criteria. According to the both criteria, increasing age, low education, poor economic status perception, physical inactivity, and obesity increase the risk of MetS. Apart from the IDF criteria, being female and a current smoker increase the risk of the MetS in the NCEP-ATP III. Conclusion: Compared to educational studies of MetS as of today, which are community and health-oriented studies, it is challenging that the prevalence of MetS was found to be high for both criteria in our study. Therefore, in particular, primary health care doctors must be prompted to protect the public against DM and CVD in particular. </",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: The studies have shown that metabolic syndrome (MetS) leads to an increase twice as much in cardiovascular diseases (CVD) and four times as much in diabetes mellitus (DM) prevalence since the second half of the 20th century.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: This study aims to determine and discuss the prevalence of the MetS and co- factors among individuals at the age of 30 and over in Balcova district of İzmir province according to the American National Cholesterol Education Program - Adult Treatment Panel III (NCEP ATP III) and InternationalDiabetes Federation (IDF) criteria.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design</strong>: Cross-sectional study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Data obtained from the Balcova Heart Project in İzmir were used in the study. The dependent variable of the study is MetS existence. The independent variables were socio-demographic characteristics (age, gender, education level, and marital status), self-perceived economic status, physical activity, smoking status, healthy nutrition and body mass index (BMI).</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: The prevalence of MetS was 36.9% according to the diagnostic criteria of IDF, while it was 27.4% according to ATP III criteria. According to the both criteria, increasing age, low education, poor economic status perception, physical inactivity, and obesity increase the risk of MetS. Apart from the IDF criteria, being female and a current smoker increase the risk of the MetS in the NCEP-ATP III.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Compared to educational studies of MetS as of today, which are community and health-oriented studies, it is challenging that the prevalence of MetS was found to be high for both criteria in our study. Therefore, in particular, primary health care doctors must be prompted to protect the public against DM and CVD in particular.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>\n\t\t</",
+    "previewText": "Abstract Background: The studies have shown that metabolic syndrome (MetS) leads to an increase twice as much in cardiovascular diseases (CVD) and four times as much in diabetes mellitus (DM) prevalence since the second half of the 20th century. Aims: This study aims to determine and discuss the prevalence of the MetS and co- factors among individuals at the age of 30 and over in Balcova district of İzmir province according to the American National Cholesterol Education Program - Adult Treatment Panel III (NCEP ATP III) and InternationalDiabetes Federation (IDF) criteria. Study Design: Cross-sectional study. Methods: Data obtained from the Balcova Heart Project in İzmir were used in the study. The dependent variable of the study is MetS existence. The independent variables were socio-demographic characteristics (age, gender, education level, and marital status), self-perceived economic status, physical activity, smoking status, healthy nutrition and body mass index (BMI). Results: The prevalence of MetS was 36.9% according to the diagnostic criteria of IDF, while it was 27.4% according to ATP III criteria. According to the both criteria, increasing age, low education, poor economic status perception, physical inactivity, and obesity increase the risk of MetS. Apart from the IDF criteria, being female and a current smoker increase the risk of the MetS in the NCEP-ATP III. Conclusion: Compared to educational studies of MetS as of today, which are community and health-oriented studies, it is challenging that the prevalence of MetS was found to be high for both criteria in our study. Therefore, in particular, primary health care doctors must be prompted to protect the public against DM and CVD in particular. </",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.141033",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "331-338",
+    "views": 7059,
+    "downloads": 4134,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "128",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=128",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=128",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=128",
+    "localPdfUrl": "js/data/pdfs/128.pdf",
+    "pdfUrl": "js/data/pdfs/128.pdf"
+  },
+  {
+    "id": 129,
+    "type": "Original Article",
+    "title": "Linguistic Validation of the Turkish Version of the M.D. Anderson Symptom Inventory - Head and Neck Cancer Module",
+    "authors": [
+      {
+        "name": "G. Brandon Gunn",
+        "affiliation": "Department of Radiation Oncology, The University of Texas MD Anderson Cancer Center, Texas, USA",
+        "orcid": ""
+      },
+      {
+        "name": "David I. Rosenthal",
+        "affiliation": "Department of Radiation Oncology, The University of Texas MD Anderson Cancer Center, Texas, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Banu Atalar",
+        "affiliation": "Department of Radiation Oncology, Acıbadem University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Enis Özyar",
+        "affiliation": "Department of Radiation Oncology, Acıbadem University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tito R. Mendoza",
+        "affiliation": "Department of Symptom Research, The University of Texas MD Anderson Cancer Center, Texas, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Charles S. Cleeland",
+        "affiliation": "DepartmenCleelandt of Symptom Research, The University of Texas MD Anderson Cancer Center, Texas, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Uğur Selek",
+        "affiliation": "Department of Radiation Oncology, The University of Texas MD Anderson Cancer Center, Texas, USA; Department of Radiation Oncology, Koç University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The use of patient symptom reports with frequent symptom assessment may be preferred over the more commonly used health-related quality of life questionnaires. Aims: We sought to linguistically validate the Turkish version of the M.D. Anderson Symptom Inventory-Head and Neck module (MDASI-HN) patient reported outcome questionnaire. Study Design: Validation study. Methods: Following standard forward and backward translation of the original and previously validated English MDASI-HN into a Turkish version (T-MDASI-HN), it was administered to patients with head and neck cancer able to read and understand Turkish. Patients were then cognitively debriefed to evaluate their understanding and comprehension of the T-MDASI-HN. Individual and group responses are presented using descriptive statistics. Results: Twenty-six participants with head and neck cancer completed the T-MDASIHN and accompanying cognitive debriefing. Overall, 97 percent of the individual TMDASI-HN items were completed. Average recorded time to complete the 28 item TMDASI-HN questionnaire was 5.4 minutes (range 2-10). Average overall ease of completion, understandability, and acceptability were favorably rated at 1.0, 1.1, and 0.2, respectively, on scales from 0 to 10. Only 5 of the 26 of participants reported trouble completing any single questionnaire items, namely the “difficulty remembering” item for 3 individuals. Conclusion: The T-MDASI-HN is linguistically valid with ease of completion, relevance, comprehensibility, and applicability and it can be a useful clinical and research tool.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: The use of patient symptom reports with frequent symptom assessment may be preferred over the more commonly used health-related quality of life questionnaires.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: We sought to linguistically validate the Turkish version of the M.D. Anderson Symptom Inventory-Head and Neck module (MDASI-HN) patient reported outcome questionnaire.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Validation study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Following standard forward and backward translation of the original and previously validated English MDASI-HN into a Turkish version (T-MDASI-HN), it was administered to patients with head and neck cancer able to read and understand Turkish. Patients were then cognitively debriefed to evaluate their understanding and comprehension of the T-MDASI-HN. Individual and group responses are presented using descriptive statistics.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: Twenty-six participants with head and neck cancer completed the T-MDASIHN and accompanying cognitive debriefing. Overall, 97 percent of the individual TMDASI-HN items were completed. Average recorded time to complete the 28 item TMDASI-HN questionnaire was 5.4 minutes (range 2-10). Average overall ease of completion, understandability, and acceptability were favorably rated at 1.0, 1.1, and 0.2, respectively, on scales from 0 to 10. Only 5 of the 26 of participants reported trouble completing any single questionnaire items, namely the &ldquo;difficulty remembering&rdquo; item for 3 individuals.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: The T-MDASI-HN is linguistically valid with ease of completion, relevance, comprehensibility, and applicability and it can be a useful clinical and research tool.&nbsp;</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The use of patient symptom reports with frequent symptom assessment may be preferred over the more commonly used health-related quality of life questionnaires. Aims: We sought to linguistically validate the Turkish version of the M.D. Anderson Symptom Inventory-Head and Neck module (MDASI-HN) patient reported outcome questionnaire. Study Design: Validation study. Methods: Following standard forward and backward translation of the original and previously validated English MDASI-HN into a Turkish version (T-MDASI-HN), it was administered to patients with head and neck cancer able to read and understand Turkish. Patients were then cognitively debriefed to evaluate their understanding and comprehension of the T-MDASI-HN. Individual and group responses are presented using descriptive statistics. Results: Twenty-six participants with head and neck cancer completed the T-MDASIHN and accompanying cognitive debriefing. Overall, 97 percent of the individual TMDASI-HN items were completed. Average recorded time to complete the 28 item TMDASI-HN questionnaire was 5.4 minutes (range 2-10). Average overall ease of completion, understandability, and acceptability were favorably rated at 1.0, 1.1, and 0.2, respectively, on scales from 0 to 10. Only 5 of the 26 of participants reported trouble completing any single questionnaire items, namely the “difficulty remembering” item for 3 individuals. Conclusion: The T-MDASI-HN is linguistically valid with ease of completion, relevance, comprehensibility, and applicability and it can be a useful clinical and research tool.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.150148",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "339-343",
+    "views": 7357,
+    "downloads": 9792,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "129",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=129",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=129",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=129",
+    "localPdfUrl": "js/data/pdfs/129.pdf",
+    "pdfUrl": "js/data/pdfs/129.pdf"
+  },
+  {
+    "id": 130,
+    "type": "Original Article",
+    "title": "Effect of Young Maternal Age on Obstetric and Perinatal Outcomes: Results from the Tertiary Center in Turkey",
+    "authors": [
+      {
+        "name": "Oya Demirci",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ertuğrul Yılmaz",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özgür Tosun",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pınar Kumru",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Arzu Arınkan",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Didar Mahmutoğlu",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selçuk Selçuk",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zehra Nihal Dolgun",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Resul Arısoy",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emre Erdoğdu",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nazan Tarhan",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Young maternal age is variously defined in studies of its effect on obstetrics and perinatal outcomes. Also, pregnancy has been reported as the leading cause of death in adolescent girls in low- and middle-income countries. Aims: The aim of the study was to evaluate whether young maternal age was associated with an increased risk of obstetrics and perinatal adverse outcomes. Study Design: Case-control study. Methods: This case-control study was derived from a database of the medical records between January 2008 and December 2012. In the present study, 1374 teenage pregnancy and 1294 adult pregnancy cases were included. After restriction of analyses to singleton primiparous women, 1282 teenage pregnancy and 735 adult pregnancy cases were analyzed. Maternal age was separated into three groups: 15 and less, 16-19, and 20-34 years. Adjusted odds ratios (ORs) were derived through logistic regression models for the potential confounding factors. Results: Adolescents aged 15 years and younger had higher risks of preterm delivery, early preterm delivery, intrauterine fetal death and neonatal death compared with women aged 20 to 34 years after adjustment for confounding factors. In addition, both groups of adolescents had higher risks for anemia and episiotomy and lower risk of cesarean delivery. The rates of preeclampsia, gestational diabetes, chronic diseases, intrauterine growth restriction (IUGR) were higher in the adult group. Conclusion: Younger maternal age was correlated with increased risks of preterm delivery, fetal and neonatal death and anemia.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Young maternal age is variously defined in studies of its effect on obstetrics and perinatal outcomes. Also, pregnancy has been reported as the leading cause of death in adolescent girls in low- and middle-income countries.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: The aim of the study was to evaluate whether young maternal age was associated with an increased risk of obstetrics and perinatal adverse outcomes.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design:</strong>&nbsp;Case-control study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: This case-control study was derived from a database of the medical records between January 2008 and December 2012. In the present study, 1374 teenage pregnancy and 1294 adult pregnancy cases were included. After restriction of analyses to singleton primiparous women, 1282 teenage pregnancy and 735 adult pregnancy cases were analyzed. Maternal age was separated into three groups: 15 and less, 16-19, and 20-34 years. Adjusted odds ratios (ORs) were derived through logistic regression models for the potential confounding factors.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: Adolescents aged 15 years and younger had higher risks of preterm delivery, early preterm delivery, intrauterine fetal death and neonatal death compared with women aged 20 to 34 years after adjustment for confounding factors. In addition, both groups of adolescents had higher risks for anemia and episiotomy and lower risk of cesarean delivery. The rates of preeclampsia, gestational diabetes, chronic diseases, intrauterine growth restriction (IUGR) were higher in the adult group.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Younger maternal age was correlated with increased risks of preterm delivery, fetal and neonatal death and anemia.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Young maternal age is variously defined in studies of its effect on obstetrics and perinatal outcomes. Also, pregnancy has been reported as the leading cause of death in adolescent girls in low- and middle-income countries. Aims: The aim of the study was to evaluate whether young maternal age was associated with an increased risk of obstetrics and perinatal adverse outcomes. Study Design: Case-control study. Methods: This case-control study was derived from a database of the medical records between January 2008 and December 2012. In the present study, 1374 teenage pregnancy and 1294 adult pregnancy cases were included. After restriction of analyses to singleton primiparous women, 1282 teenage pregnancy and 735 adult pregnancy cases were analyzed. Maternal age was separated into three groups: 15 and less, 16-19, and 20-34 years. Adjusted odds ratios (ORs) were derived through logistic regression models for the potential confounding factors. Results: Adolescents aged 15 years and younger had higher risks of preterm delivery, early preterm delivery, intrauterine fetal death and neonatal death compared with women aged 20 to 34 years after adjustment for confounding factors. In addition, both groups of adolescents had higher risks for anemia and episiotomy and lower risk of cesarean delivery. The rates of preeclampsia, gestational diabetes, chronic diseases, intrauterine growth restriction (IUGR) were higher in the adult group. Conclusion: Younger maternal age was correlated with increased risks of preterm delivery, fetal and neonatal death and anemia.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.150364",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "344-349",
+    "views": 7359,
+    "downloads": 3945,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "130",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=130",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=130",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=130",
+    "localPdfUrl": "js/data/pdfs/130.pdf",
+    "pdfUrl": "js/data/pdfs/130.pdf"
+  },
+  {
+    "id": 131,
+    "type": "Case Report",
+    "title": "Domestically Acquired Legionnaires’ Disease: Two Case Reports and a Review of the Pertinent Literature",
+    "authors": [
+      {
+        "name": "Haluk Erdoğan",
+        "affiliation": "Department of Infectious Disease and Clinical Microbiology, Başkent University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hande Arslan",
+        "affiliation": "Department of Infectious Disease and Clinical Microbiology, Başkent University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Legionella species may colonize in home water systems and cause Legionnaires’ disease (LD). We herein report two cases of sporadic LD associated with the solar energy-heated hot water systems of the patients’ houses. Case Report: A 60-year-old woman with chronic bronchitis and diabetes mellitus presented with a high fever, abdominal pain, and diarrhea. Physical examination revealed rales, and her chest radiograph showed a homogeneous density in the left lung. The Legionella urinary antigen test was positive, and an indirect fluorescent antibody test revealed a serum antibody titer of 1/520 for L. pneumophila serogroup 1. In the second case, a 66-year-old man with diabetes mellitus was treated for pneumonia at another hospital. After the patient’s general condition worsened and he required mechanical ventilation, he was referred to our hospital. The Legionella urinary antigen test was positive. Neither of the patients had been hospitalized or travelled within the previous month. Both patients used hot water storage tanks heated by solar energy; both also used an electrical device in the bathroom to heat the water when solar energy alone was insufficient. The hot water samples from the residences of both patients were positive for L. pneumophila serogroup 1. Conclusion: These cases show that domestic hot water systems heated by solar energy must be considered a possible source of community-acquired LD.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Legionella species may colonize in home water systems and cause Legionnaires&rsquo; disease (LD). We herein report two cases of sporadic LD associated with the solar energy-heated hot water systems of the patients&rsquo; houses.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Case Report:</strong>&nbsp;A 60-year-old woman with chronic bronchitis and diabetes mellitus presented with a high fever, abdominal pain, and diarrhea. Physical examination revealed rales, and her chest radiograph showed a homogeneous density in the left lung. The Legionella urinary antigen test was positive, and an indirect fluorescent antibody test revealed a serum antibody titer of 1/520 for L. pneumophila serogroup 1. In the second case, a 66-year-old man with diabetes mellitus was treated for pneumonia at another hospital. After the patient&rsquo;s general condition worsened and he required mechanical ventilation, he was referred to our hospital. The Legionella urinary antigen test was positive. Neither of the patients had been hospitalized or travelled within the previous month. Both patients used hot water storage tanks heated by solar energy; both also used an electrical device in the bathroom to heat the water when solar energy alone was insufficient. The hot water samples from the residences of both patients were positive for L. pneumophila serogroup 1.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: These cases show that domestic hot water systems heated by solar energy must be considered a possible source of community-acquired LD.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Legionella species may colonize in home water systems and cause Legionnaires’ disease (LD). We herein report two cases of sporadic LD associated with the solar energy-heated hot water systems of the patients’ houses. Case Report: A 60-year-old woman with chronic bronchitis and diabetes mellitus presented with a high fever, abdominal pain, and diarrhea. Physical examination revealed rales, and her chest radiograph showed a homogeneous density in the left lung. The Legionella urinary antigen test was positive, and an indirect fluorescent antibody test revealed a serum antibody titer of 1/520 for L. pneumophila serogroup 1. In the second case, a 66-year-old man with diabetes mellitus was treated for pneumonia at another hospital. After the patient’s general condition worsened and he required mechanical ventilation, he was referred to our hospital. The Legionella urinary antigen test was positive. Neither of the patients had been hospitalized or travelled within the previous month. Both patients used hot water storage tanks heated by solar energy; both also used an electrical device in the bathroom to heat the water when solar energy alone was insufficient. The hot water samples from the residences of both patients were positive for L. pneumophila serogroup 1. Conclusion: These cases show that domestic hot water systems heated by solar energy must be considered a possible source of community-acquired LD.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.150529",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "350-353",
+    "views": 7144,
+    "downloads": 9807,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "131",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=131",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=131",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=131",
+    "localPdfUrl": "js/data/pdfs/131.pdf",
+    "pdfUrl": "js/data/pdfs/131.pdf"
+  },
+  {
+    "id": 132,
+    "type": "Case Report",
+    "title": "One of the Rare Causes of Acute Abdomen Leading to Subileus: Jejunal Diverticulitis",
+    "authors": [
+      {
+        "name": "Elçin Aydın",
+        "affiliation": "Department of Radiology, Başkent University Zübeyde Hanım Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hasan Yerli",
+        "affiliation": "Department of Radiology, Başkent University Zübeyde Hanım Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tevfik Avcı",
+        "affiliation": "Department of General Surgery, Başkent University Zübeyde Hanım Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuğbahan Yılmaz",
+        "affiliation": "Department of General Surgery, Başkent University Zübeyde Hanım Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hüseyin Gülay",
+        "affiliation": "Department of General Surgery, Başkent University Zübeyde Hanım Hospital, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Jejunal diverticulitis is one of the rare causes of acute abdomen generally seen in the elderly. Jejunal diverticulosis was defined as the herniation of the mucosa and the submucosa from the inside of the muscular layer of the bowel wall on the mesenteric side of the intestine. Case Report: We presented the intraoperative and pathological findings of a 69-year-old male patient who had presented with complaints about abdominal pain, nausea, and vomiting and been operated upon due to subileus and peritonitis induced by large-sized jejunal diverticulitis, along with his computed tomography (CT) findings. Conclusion: Jejunal diverticulitis is uncommon and may be a disease which might be difficult to diagnose when it develops on the basis of the large-sized diverticula resembling intestinal ansae. To the best of our knowledge, the computed tomography and intraoperative findings of a case in which partial resection is applied to the jejunum due to subileus have not been previously presented in the literature.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Jejunal diverticulitis is one of the rare causes of acute abdomen generally seen in the elderly. Jejunal diverticulosis was defined as the herniation of the mucosa and the submucosa from the inside of the muscular layer of the bowel wall on the mesenteric side of the intestine.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Case Report</strong>: We presented the intraoperative and pathological findings of a 69-year-old male patient who had presented with complaints about abdominal pain, nausea, and vomiting and been operated upon due to subileus and peritonitis induced by large-sized jejunal diverticulitis, along with his computed tomography (CT) findings.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Jejunal diverticulitis is uncommon and may be a disease which might be difficult to diagnose when it develops on the basis of the large-sized diverticula resembling intestinal ansae. To the best of our knowledge, the computed tomography and intraoperative findings of a case in which partial resection is applied to the jejunum due to subileus have not been previously presented in the literature.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Jejunal diverticulitis is one of the rare causes of acute abdomen generally seen in the elderly. Jejunal diverticulosis was defined as the herniation of the mucosa and the submucosa from the inside of the muscular layer of the bowel wall on the mesenteric side of the intestine. Case Report: We presented the intraoperative and pathological findings of a 69-year-old male patient who had presented with complaints about abdominal pain, nausea, and vomiting and been operated upon due to subileus and peritonitis induced by large-sized jejunal diverticulitis, along with his computed tomography (CT) findings. Conclusion: Jejunal diverticulitis is uncommon and may be a disease which might be difficult to diagnose when it develops on the basis of the large-sized diverticula resembling intestinal ansae. To the best of our knowledge, the computed tomography and intraoperative findings of a case in which partial resection is applied to the jejunum due to subileus have not been previously presented in the literature.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.141244",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "354-356",
+    "views": 6658,
+    "downloads": 4070,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "132",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=132",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=132",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=132",
+    "localPdfUrl": "js/data/pdfs/132.pdf",
+    "pdfUrl": "js/data/pdfs/132.pdf"
+  },
+  {
+    "id": 133,
+    "type": "Case Report",
+    "title": "TAVI in a Patient with Single Coronary Artery: The Choice of Self-Expandable Valve may be Reasonable",
+    "authors": [
+      {
+        "name": "Hüseyin Dursun",
+        "affiliation": "Department of Cardiology, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Jale Zeynep Gönençer",
+        "affiliation": "Department of Cardiology, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dayimi Kaya",
+        "affiliation": "Department of Cardiology, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özalp Karabay",
+        "affiliation": "Department of Cardiovascular Surgery, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Abidin Cenk Erdal",
+        "affiliation": "Department of Cardiovascular Surgery, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Single coronary artery is a rare congenital coronary artery anomaly with the incidence of approximately 0.03%-0.05%. Its coexistence with severe aortic stenosis (AS) is even rarer. Patients who undergo transcatheter aortic valve implantation (TAVI) have a risk of coronary obstruction (1%) which will be more lethal when the origin of the coronary artery is single. Case Report: An 81 year-old female was referred to our institution for severe AS. Her coronary angiography revealed a single coronary artery originating from right sinus of valsalva. Since the patient had a high risk for aortic valve surgery, the cardiac team decided to perform transfemoral TAVI with a self-expandable valve. Conclusion: We presented a successful case of TAVI with Medtronic CoreValve (Medtronic; Minnesota, USA) in a patient with single coronary artery after discussing the base of our strategy for preferring self-expandable valve. To the best of our knowledge, this is the second case of CoreValve implantation in such a patient in the literature. We suggest that the self-expandable valve may be the first choice in these patients because of its recapturable design.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Single coronary artery is a rare congenital coronary artery anomaly with the incidence of approximately 0.03%-0.05%. Its coexistence with severe aortic stenosis (AS) is even rarer. Patients who undergo transcatheter aortic valve implantation (TAVI) have a risk of coronary obstruction (1%) which will be more lethal when the origin of the coronary artery is single.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Case Report:</strong>&nbsp;An 81 year-old female was referred to our institution for severe AS. Her coronary angiography revealed a single coronary artery originating from right sinus of valsalva. Since the patient had a high risk for aortic valve surgery, the cardiac team decided to perform transfemoral TAVI with a self-expandable valve.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion:</strong>&nbsp;We presented a successful case of TAVI with Medtronic CoreValve (Medtronic; Minnesota, USA) in a patient with single coronary artery after discussing the base of our strategy for preferring self-expandable valve. To the best of our knowledge, this is the second case of CoreValve implantation in such a patient in the literature. We suggest that the self-expandable valve may be the first choice in these patients because of its recapturable design.&nbsp;</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Single coronary artery is a rare congenital coronary artery anomaly with the incidence of approximately 0.03%-0.05%. Its coexistence with severe aortic stenosis (AS) is even rarer. Patients who undergo transcatheter aortic valve implantation (TAVI) have a risk of coronary obstruction (1%) which will be more lethal when the origin of the coronary artery is single. Case Report: An 81 year-old female was referred to our institution for severe AS. Her coronary angiography revealed a single coronary artery originating from right sinus of valsalva. Since the patient had a high risk for aortic valve surgery, the cardiac team decided to perform transfemoral TAVI with a self-expandable valve. Conclusion: We presented a successful case of TAVI with Medtronic CoreValve (Medtronic; Minnesota, USA) in a patient with single coronary artery after discussing the base of our strategy for preferring self-expandable valve. To the best of our knowledge, this is the second case of CoreValve implantation in such a patient in the literature. We suggest that the self-expandable valve may be the first choice in these patients because of its recapturable design.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.150601",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "357-359",
+    "views": 6773,
+    "downloads": 9601,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "133",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=133",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=133",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=133",
+    "localPdfUrl": "js/data/pdfs/133.pdf",
+    "pdfUrl": "js/data/pdfs/133.pdf"
+  },
+  {
+    "id": 134,
+    "type": "Case Report",
+    "title": "Lumbar Swelling as the Unusual Presentation of Henoch-Schonlein Purpura in a Child",
+    "authors": [
+      {
+        "name": "Mehmet Ali Duman",
+        "affiliation": "Department of Pediatrics, Haseki Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nilgün Selçuk Duru",
+        "affiliation": "Department of Pediatrics, Haseki Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bahar Çalışkan",
+        "affiliation": "Department of Pediatrics, Haseki Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hale Sandıkçı",
+        "affiliation": "Department of Pediatrics, Haseki Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ferhat Çengel",
+        "affiliation": "Department of Radiology, Haseki Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Henoch-Schönlein Purpura (HSP) is a systemic hypersensitivity disease of unknown cause that is characterized by a purpuric rash and systemic manifestations, such as colicky abdominal pain, polyarthralgia, and acute glomerulonephritis. Common complications of HSP that lead to surgical intervention include intussusception, perforation, necrosis, and massive gastrointestinal bleeding. Unusual clinical manifestations of HSP may include edema of the scrotum and eyes. Lumbar swelling is rarely seen as a complication of HSP. Case Report: A four-year-old boy was admitted to our emergency room with a 7 day history of increasing abdominal pain. Within 48 hours of admission, erythematous macules and palpable purpuric lesions developed on the lower extremities. On the third day of hospitalization, sudden onset of severe back pain, swelling on the lumbar region and refusal to walk were seen. On the fifth day, lumbosacral edema and pain resolved but facial edema developed. He was diagnosed clinically with HSP. Conclusion: To the best of our knowledge, only a few cases of HSP with lumbar edema have been reported so far. If the first clinical symptoms of HSP are atypical, clinical progress can be atypical, too.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Henoch-Sch&ouml;nlein Purpura (HSP) is a systemic hypersensitivity disease of unknown cause that is characterized by a purpuric rash and systemic manifestations, such as colicky abdominal pain, polyarthralgia, and acute glomerulonephritis. Common complications of HSP that lead to surgical intervention include intussusception, perforation, necrosis, and massive gastrointestinal bleeding. Unusual clinical manifestations of HSP may include edema of the scrotum and eyes. Lumbar swelling is rarely seen as a complication of HSP.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Case Report</strong>: A four-year-old boy was admitted to our emergency room with a 7 day history of increasing abdominal pain. Within 48 hours of admission, erythematous macules and palpable purpuric lesions developed on the lower extremities. On the third day of hospitalization, sudden onset of severe back pain, swelling on the lumbar region and refusal to walk were seen. On the fifth day, lumbosacral edema and pain resolved but facial edema developed. He was diagnosed clinically with HSP.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: To the best of our knowledge, only a few cases of HSP with lumbar edema have been reported so far. If the first clinical symptoms of HSP are atypical, clinical progress can be atypical, too.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Henoch-Schönlein Purpura (HSP) is a systemic hypersensitivity disease of unknown cause that is characterized by a purpuric rash and systemic manifestations, such as colicky abdominal pain, polyarthralgia, and acute glomerulonephritis. Common complications of HSP that lead to surgical intervention include intussusception, perforation, necrosis, and massive gastrointestinal bleeding. Unusual clinical manifestations of HSP may include edema of the scrotum and eyes. Lumbar swelling is rarely seen as a complication of HSP. Case Report: A four-year-old boy was admitted to our emergency room with a 7 day history of increasing abdominal pain. Within 48 hours of admission, erythematous macules and palpable purpuric lesions developed on the lower extremities. On the third day of hospitalization, sudden onset of severe back pain, swelling on the lumbar region and refusal to walk were seen. On the fifth day, lumbosacral edema and pain resolved but facial edema developed. He was diagnosed clinically with HSP. Conclusion: To the best of our knowledge, only a few cases of HSP with lumbar edema have been reported so far. If the first clinical symptoms of HSP are atypical, clinical progress can be atypical, too.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.150208",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "360-362",
+    "views": 7367,
+    "downloads": 4093,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "134",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=134",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=134",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=134",
+    "localPdfUrl": "js/data/pdfs/134.pdf",
+    "pdfUrl": "js/data/pdfs/134.pdf"
+  },
+  {
+    "id": 135,
+    "type": "Case Report",
+    "title": "Papilledema Due to Mirtazapine",
+    "authors": [
+      {
+        "name": "Mehmet Emin Ceylan",
+        "affiliation": "Department of Psychology, Üsküdar University School of Humanities and Social Sciences, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Alper Evrensel",
+        "affiliation": "Department of Psychology, Üsküdar University School of Humanities and Social Sciences, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gökçe Cömert",
+        "affiliation": "Department of Psychology, Üsküdar University School of Humanities and Social Sciences, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Mirtazapine is a tetracyclic antidepressant that enhances both noradrenergic and serotonergic transmission. The most common cause of papilledema is increased intracranial pressure due to brain tumor. Also it may occur as a result of idiopathic intracranial hypertension (IIH, pseudo tumor cerebri). Moreover, papilledema may also develop due to retinitis, vasculitis, Graves’ disease, hypertension, leukemia, lymphoma, diabetes mellitus and radiation. Case Report: In this article, a patient who developed papilledema while under treatment with mirtazapine (30 mg/day) for two years and recovered with termination of mirtazapine treatment was discussed to draw the attention of clinicians to this side effect of mirtazapine. Conclusion: Idiopathic intracranial hypertension and papilledema due to psychotropic drugs has been reported in the literature. Mirtazapine may rarely cause peripheral edema. However, papilledema due to mirtazapine has not been previously reported. Although papilledema is a very rare side effect of an antidepressant treatment, fundoscopic examinations of patients must be performed regularly.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Mirtazapine is a tetracyclic antidepressant that enhances both noradrenergic and serotonergic transmission. The most common cause of papilledema is increased intracranial pressure due to brain tumor. Also it may occur as a result of idiopathic intracranial hypertension (IIH, pseudo tumor cerebri). Moreover, papilledema may also develop due to retinitis, vasculitis, Graves&rsquo; disease, hypertension, leukemia, lymphoma, diabetes mellitus and radiation.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Case&nbsp;Report</strong>: In this article, a patient who developed papilledema while under treatment with mirtazapine (30 mg/day) for two years and recovered with termination of mirtazapine treatment was discussed to draw the attention of clinicians to this side effect of mirtazapine.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Idiopathic intracranial hypertension and papilledema due to psychotropic drugs has been reported in the literature. Mirtazapine may rarely cause peripheral edema. However, papilledema due to mirtazapine has not been previously reported. Although papilledema is a very rare side effect of an antidepressant treatment, fundoscopic examinations of patients must be performed regularly.&nbsp;</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Mirtazapine is a tetracyclic antidepressant that enhances both noradrenergic and serotonergic transmission. The most common cause of papilledema is increased intracranial pressure due to brain tumor. Also it may occur as a result of idiopathic intracranial hypertension (IIH, pseudo tumor cerebri). Moreover, papilledema may also develop due to retinitis, vasculitis, Graves’ disease, hypertension, leukemia, lymphoma, diabetes mellitus and radiation. Case Report: In this article, a patient who developed papilledema while under treatment with mirtazapine (30 mg/day) for two years and recovered with termination of mirtazapine treatment was discussed to draw the attention of clinicians to this side effect of mirtazapine. Conclusion: Idiopathic intracranial hypertension and papilledema due to psychotropic drugs has been reported in the literature. Mirtazapine may rarely cause peripheral edema. However, papilledema due to mirtazapine has not been previously reported. Although papilledema is a very rare side effect of an antidepressant treatment, fundoscopic examinations of patients must be performed regularly.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.150151",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "363-365",
+    "views": 7051,
+    "downloads": 10145,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "135",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=135",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=135",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=135",
+    "localPdfUrl": "js/data/pdfs/135.pdf",
+    "pdfUrl": "js/data/pdfs/135.pdf"
+  },
+  {
+    "id": 136,
+    "type": "Case Report",
+    "title": "Acute Disseminated Encephalomyelitis after Oral Therapy with Herbal Extracts: A Case Report",
+    "authors": [
+      {
+        "name": "Bahar Kaymakamzade",
+        "affiliation": "Department of Neurology, Near East University School of Medicine, Nicosia, Cyprus",
+        "orcid": ""
+      },
+      {
+        "name": "Rana Karabudak",
+        "affiliation": "Department of Neurology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aslı Tuncer Kurne",
+        "affiliation": "Department of Neurology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gülay Nurlu",
+        "affiliation": "Department of Neurology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Acute disseminated encephalomyelitis (ADEM) is a rare demyelinating disease of the central nervous system, commonly attributed to infections or vaccinations. Toxic or allergenic compounds can also trigger a response in the immune system and may cause demyelination. We present a case with ADEM after using oral herbal medications. Case Report: A 25 year-old male developed bilateral central facial palsy and severe quadriparesis after taking herbal drugs (containing echinacea and many other herbal ingredients) for two weeks. He had used the extract to increase his potency and reproductivity. He had no past history of recent immunization or viral infection. The clinical findings, cerebrospinal fluid (CSF) analysis and brain magnetic resonance imaging (MRI) were compatible with ADEM. The neurological findings were improved after seven doses of pulse methylprednisolone treatment. To our knowledge, this is the third report in the literature that links herbal therapy and demyelinating disease. Conclusion: Most of the ADEM cases related to herbal therapy in the literature similarly used echinacea. It is our opinion that other ingredients of the herbal extract used by our case, besides echinacea, could have the potential to cause a trigger in the immune system. Further studies are needed to clarify the immunological effects of different kinds of herbal compounds, as well as the effects of different parts of the plants and the results of various dosages. Moreover, ingredients should also be tested for toxicity, adverse effects and drug interactions.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Acute disseminated encephalomyelitis (ADEM) is a rare demyelinating disease of the central nervous system, commonly attributed to infections or vaccinations. Toxic or allergenic compounds can also trigger a response in the immune system and may cause demyelination. We present a case with ADEM after using oral herbal medications.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Case&nbsp;Report</strong>: A 25 year-old male developed bilateral central facial palsy and severe quadriparesis after taking herbal drugs (containing echinacea and many other herbal ingredients) for two weeks. He had used the extract to increase his potency and reproductivity. He had no past history of recent immunization or viral infection. The clinical findings, cerebrospinal fluid (CSF) analysis and brain magnetic resonance imaging (MRI) were compatible with ADEM. The neurological findings were improved after seven doses of pulse methylprednisolone treatment. To our knowledge, this is the third report in the literature that links herbal therapy and demyelinating disease.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Most of the ADEM cases related to herbal therapy in the literature similarly used echinacea. It is our opinion that other ingredients of the herbal extract used by our case, besides echinacea, could have the potential to cause a trigger in the immune system. Further studies are needed to clarify the immunological effects of different kinds of herbal compounds, as well as the effects of different parts of the plants and the results of various dosages. Moreover, ingredients should also be tested for toxicity, adverse effects and drug interactions.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Acute disseminated encephalomyelitis (ADEM) is a rare demyelinating disease of the central nervous system, commonly attributed to infections or vaccinations. Toxic or allergenic compounds can also trigger a response in the immune system and may cause demyelination. We present a case with ADEM after using oral herbal medications. Case Report: A 25 year-old male developed bilateral central facial palsy and severe quadriparesis after taking herbal drugs (containing echinacea and many other herbal ingredients) for two weeks. He had used the extract to increase his potency and reproductivity. He had no past history of recent immunization or viral infection. The clinical findings, cerebrospinal fluid (CSF) analysis and brain magnetic resonance imaging (MRI) were compatible with ADEM. The neurological findings were improved after seven doses of pulse methylprednisolone treatment. To our knowledge, this is the third report in the literature that links herbal therapy and demyelinating disease. Conclusion: Most of the ADEM cases related to herbal therapy in the literature similarly used echinacea. It is our opinion that other ingredients of the herbal extract used by our case, besides echinacea, could have the potential to cause a trigger in the immune system. Further studies are needed to clarify the immunological effects of different kinds of herbal compounds, as well as the effects of different parts of the plants and the results of various dosages. Moreover, ingredients should also be tested for toxicity, adverse effects and drug interactions.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.140420",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "366-369",
+    "views": 7063,
+    "downloads": 3354,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "136",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=136",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=136",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=136",
+    "localPdfUrl": "js/data/pdfs/136.pdf",
+    "pdfUrl": "js/data/pdfs/136.pdf"
+  },
+  {
+    "id": 137,
+    "type": "Case Report",
+    "title": "A Case Report of a Very Rare Association of Tyrosinemia type I and Pancreatitis Mimicking Neurologic Crisis of Tyrosinemia Type I",
+    "authors": [
+      {
+        "name": "Habibe Koç Uçar",
+        "affiliation": "Department of Pediatrics, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gökhan Tümgör",
+        "affiliation": "Department of Pediatrics, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Deniz Kör",
+        "affiliation": "Department of Pediatrics, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neslihan Önenli Mungan",
+        "affiliation": "Department of Pediatrics, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Kardaş",
+        "affiliation": "Department of Pediatrics, Erciyes University School of Medicine, Kayseri, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Tyrosinemia type I is an autosomal recessively inherited metabolic disease of tyrosine metabolism due to the deficiency of fumarylacetoacetate hydrolase. Clinical manifestations include hepatic failure, cirrhosis, hepatocellular carcinoma, renal fanconi syndrome, and neurologic crisis. With the introduction of 2-(2-nitro-4-trifluoro-methylbenzyol)-1.3 cyclohexanedione (NTBC) treatment, the prognosis improved with reduced rate of complications. Case Report: Here, we report a 6-year-old girl with tyrosinemia type I who discontinued NTBC treatment six months prior to admission, presenting with complaints of abdominal pain, vomiting, anorexia, weakness, and restlessness, suggesting the clinical status of neurologic crisis. Further laboratory and radiologic evaluation revealed that indeed this is a pancreatitis. Conclusion: We report this case as tyrosinemia type I and pancreatitis was reported only in one case in the literature, emphasizing confusing clinical signs of neurological crisis, and pancreatitis in tyrosinemia type I.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Tyrosinemia type I is an autosomal recessively inherited metabolic disease of tyrosine metabolism due to the deficiency of fumarylacetoacetate hydrolase. Clinical manifestations include hepatic failure, cirrhosis, hepatocellular carcinoma, renal fanconi syndrome, and neurologic crisis. With the introduction of 2-(2-nitro-4-trifluoro-methylbenzyol)-1.3 cyclohexanedione (NTBC) treatment, the prognosis improved with reduced rate of complications.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Case&nbsp;Report</strong>: Here, we report a 6-year-old girl with tyrosinemia type I who discontinued NTBC treatment six months prior to admission, presenting with complaints of abdominal pain, vomiting, anorexia, weakness, and restlessness, suggesting the clinical status of neurologic crisis. Further laboratory and radiologic evaluation revealed that indeed this is a pancreatitis.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: We report this case as tyrosinemia type I and pancreatitis was reported only in one case in the literature, emphasizing confusing clinical signs of neurological crisis, and pancreatitis in tyrosinemia type I.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Tyrosinemia type I is an autosomal recessively inherited metabolic disease of tyrosine metabolism due to the deficiency of fumarylacetoacetate hydrolase. Clinical manifestations include hepatic failure, cirrhosis, hepatocellular carcinoma, renal fanconi syndrome, and neurologic crisis. With the introduction of 2-(2-nitro-4-trifluoro-methylbenzyol)-1.3 cyclohexanedione (NTBC) treatment, the prognosis improved with reduced rate of complications. Case Report: Here, we report a 6-year-old girl with tyrosinemia type I who discontinued NTBC treatment six months prior to admission, presenting with complaints of abdominal pain, vomiting, anorexia, weakness, and restlessness, suggesting the clinical status of neurologic crisis. Further laboratory and radiologic evaluation revealed that indeed this is a pancreatitis. Conclusion: We report this case as tyrosinemia type I and pancreatitis was reported only in one case in the literature, emphasizing confusing clinical signs of neurological crisis, and pancreatitis in tyrosinemia type I.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.141074",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "370-372",
+    "views": 6873,
+    "downloads": 9864,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "137",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=137",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=137",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=137",
+    "localPdfUrl": "js/data/pdfs/137.pdf",
+    "pdfUrl": "js/data/pdfs/137.pdf"
+  },
+  {
+    "id": 138,
+    "type": "Case Report",
+    "title": "Rapid Spontaneous Resolution of Acute Epidural Hematoma: A Case Report and Review of the Literature",
+    "authors": [
+      {
+        "name": "Fatih Aydemir",
+        "affiliation": "Department of Neurosurgery, Başkent University School of Medicine, Adana Practice and Research Center, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Melih Çekinmez",
+        "affiliation": "Department of Neurosurgery, Başkent University School of Medicine, Adana Practice and Research Center, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özgür Kardeş",
+        "affiliation": "Department of Neurosurgery, Başkent University School of Medicine, Adana Practice and Research Center, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Feyzi Birol Sarıca",
+        "affiliation": "Department of Neurosurgery, Başkent University School of Medicine, Adana Practice and Research Center, Adana, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Epidural hematomas (EDH) are pathologies in which the early diagnosis and treatment are important. Resolution under 24 hours is very rare. Case Report: An 11-month-old male patient was brought to the emergency department with head trauma from falling out of bed onto his back. There were no neurological deficits, except for the patient being somnolent. Computed tomography (CT) of the patient revealed subgaleal edema in the right parietal region, linear fracture and image consistent with EDH with a thickness of about 9 mm underneath fracture. A control CT was performed after 3 hours as somnolence continued in follow-up of the patient. Hematoma in the epidural region was observed to completely resolve and edema in the subgaleal region was observed to gain hemorrhagic characteristics. Conclusion: In total, 15 cases have been reported, including our case, in the literature with resolution less than 24 hours. Our case has the fourth fastest resolution ever reported in the English literature. We think that the most important factor in the rapid spontaneous resolution is the presence of a connection between the epidural and epicranial space, either through a fracture or cranial sutures.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Epidural hematomas (EDH) are pathologies in which the early diagnosis and treatment are important. Resolution under 24 hours is very rare.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Case&nbsp;Report</strong>: An 11-month-old male patient was brought to the emergency department with head trauma from falling out of bed onto his back. There were no neurological deficits, except for the patient being somnolent. Computed tomography (CT) of the patient revealed subgaleal edema in the right parietal region, linear fracture and image consistent with EDH with a thickness of about 9 mm underneath fracture. A control CT was performed after 3 hours as somnolence continued in follow-up of the patient. Hematoma in the epidural region was observed to completely resolve and edema in the subgaleal region was observed to gain hemorrhagic characteristics.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: In total, 15 cases have been reported, including our case, in the literature with resolution less than 24 hours. Our case has the fourth fastest resolution ever reported in the English literature. We think that the most important factor in the rapid spontaneous resolution is the presence of a connection between the epidural and epicranial space, either through a fracture or cranial sutures.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Epidural hematomas (EDH) are pathologies in which the early diagnosis and treatment are important. Resolution under 24 hours is very rare. Case Report: An 11-month-old male patient was brought to the emergency department with head trauma from falling out of bed onto his back. There were no neurological deficits, except for the patient being somnolent. Computed tomography (CT) of the patient revealed subgaleal edema in the right parietal region, linear fracture and image consistent with EDH with a thickness of about 9 mm underneath fracture. A control CT was performed after 3 hours as somnolence continued in follow-up of the patient. Hematoma in the epidural region was observed to completely resolve and edema in the subgaleal region was observed to gain hemorrhagic characteristics. Conclusion: In total, 15 cases have been reported, including our case, in the literature with resolution less than 24 hours. Our case has the fourth fastest resolution ever reported in the English literature. We think that the most important factor in the rapid spontaneous resolution is the presence of a connection between the epidural and epicranial space, either through a fracture or cranial sutures.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.141020",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "3",
+    "pages": "373-376",
+    "views": 7041,
+    "downloads": 9735,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1178",
+    "sourceArticleId": "138",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=138",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=138",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=138",
+    "localPdfUrl": "js/data/pdfs/138.pdf",
+    "pdfUrl": "js/data/pdfs/138.pdf"
+  }
+]

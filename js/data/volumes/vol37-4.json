@@ -1,0 +1,828 @@
+[
+  {
+    "id": 2220,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2220",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2220",
+    "localPdfUrl": "js/data/pdfs/2220.pdf",
+    "pdfUrl": "js/data/pdfs/2220.pdf"
+  },
+  {
+    "id": 2207,
+    "type": "Editorial",
+    "title": "Editor Responsibility and Scientific Integrity During the COVID-19 Outbreak",
+    "authors": [
+      {
+        "name": "Zafer Koçak",
+        "affiliation": "Department of Radiation Oncology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cem Uzun",
+        "affiliation": "Department of Otolaryngology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "The COVID-19 outbreak has led to a speedy publication of many academic articles about the new coronavirus. Scientists and editors are under immense pressure to share their findings quickly because of the pandemic. These circumstances are bound to affect the scientific integrity adversely if the publishing activities do not comply with the universal standards",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.4.001",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "176-177",
+    "views": 7888,
+    "downloads": 3374,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2207",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2207",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2207",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2207",
+    "localPdfUrl": "js/data/pdfs/2207.pdf",
+    "pdfUrl": "js/data/pdfs/2207.pdf"
+  },
+  {
+    "id": 2216,
+    "type": "Editorial",
+    "title": "We Need to Rethink on Medical Education for Pandemic Preparedness: Lessons Learnt From COVID-19",
+    "authors": [
+      {
+        "name": "Dilek Aslan",
+        "affiliation": "Department of Public Health, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İskender Sayek[[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Novel coronavirus disease (COVID-19) is a pandemic and the efficiency of public health measures is being questioned, as the vaccine and specific treatment have not been found yet. Globalization and its impact on the determinants of health deepen the inequalities and this makes the situation more difficult to overcome. Questioning the missing points is not ra",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.4.002",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "178-179",
+    "views": 8325,
+    "downloads": 3996,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2216",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2216",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2216",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2216",
+    "localPdfUrl": "js/data/pdfs/2216.pdf",
+    "pdfUrl": "js/data/pdfs/2216.pdf"
+  },
+  {
+    "id": 2213,
+    "type": "Editorial",
+    "title": "Medical Education in Turkey in Time of COVID-19",
+    "authors": [
+      {
+        "name": "Burcu Tokuç",
+        "affiliation": "Department of Public Health, Tekirdağ Namık Kemal University School of Medicine, Tekirdağ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gamze Varol",
+        "affiliation": "Department of Public Health, Tekirdağ Namık Kemal University School of Medicine, Tekirdağ, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "We are living in rare and unprecedented times. As the coronavirus disease 2019 (COVID-19) pandemic interrupted many things in the world, it also disrupted medical education. Although the main priority of medical educators, who are also healthcare workers, is to prevent an epidemic and provide patient care, medical education also requires intense attention du",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.4.003",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "180-181",
+    "views": 8662,
+    "downloads": 4495,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2213",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2213",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2213",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2213",
+    "localPdfUrl": "js/data/pdfs/2213.pdf",
+    "pdfUrl": "js/data/pdfs/2213.pdf"
+  },
+  {
+    "id": 2198,
+    "type": "Editorial Comment",
+    "title": "A Novel Embolization Technique to Stem Hemorrhage Complications and Cancer",
+    "authors": [
+      {
+        "name": "Undurti N Das",
+        "affiliation": "R&D, UND Life Sciences, WA, United States; Department of Medicine, GVP Medical College and Hospital, BioScience Research Centrer, India",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Transcatheter coil or medical glue embolization is one of the most effective treatment options for various bleeding complications that may occur during various transcatheter procedures, such as coronary artery catheterization and bleeding that occur during percutaneous nephrolithotomy (PCNL) treatment. Various other materials that could be used in embolizati",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.3.109",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "182-183",
+    "views": 6606,
+    "downloads": 3165,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2198",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2198",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2198",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2198",
+    "localPdfUrl": "js/data/pdfs/2198.pdf",
+    "pdfUrl": "js/data/pdfs/2198.pdf"
+  },
+  {
+    "id": 2199,
+    "type": "Invited Review",
+    "title": "Childhood Rheumatic Diseases and COVID-19 Pandemic: An Intriguing Linkage and a New Horizon",
+    "authors": [
+      {
+        "name": "Fatih Haşlak",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Yıldız",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Amra Adrovic",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kenan Barut",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özgür Kasapçopur",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract As it is known, we are all in a pandemic situation due to a novel coronavirus, officially named “Severe Acute Respiratory Syndrome Coronavirus 2” and the disease caused by the virus named “Coronavirus disease-2019”. The virus seems to has propensity to infect older male individuals with underlying disease. The clinical features were on a large scale that varies from being an asymptomatic carrier to acute respiratory distress syndrome and multiorgan dysfunction. Fever, dry cough and fatigue are the most common symptoms. Not only, the disease seems to be rare and have a milder course in pediatric age but also respiratory failure, multiorgan dysfunction, and death are extremely rare. Although several comorbidities such as hypertension, diabetes and cardiovascular diseases are defined as a risk factor for developing the acute respiratory syndrome and need for intensive care; immune-compromised situations such as rheumatic disease which require immunosuppressive treatment strikingly are not found to be a risk factor for more severe disease course. However, there is a lack of data regarding the effects of “Coronavirus disease-2019” on pediatric patients with rheumatic diseases. Additionally, there are three controversial circumstances that patients with rheumatic diseases are believed to be more likely to have viral infections like “Severe Acute Respiratory Syndrome Coronavirus 2”, on the other hand, antirheumatic drugs may have a protective and therapeutic role in Coronavirus disease-2019 and children are more unlikely to have serious disease course. Therefore, we aimed to have a contributor role for explaining this conundrum and present a bird’s eye view regarding this equivocal issue in this review.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>As it is known, we are all in a pandemic situation due to a novel coronavirus, officially named &ldquo;Severe Acute Respiratory Syndrome Coronavirus 2&rdquo; and the disease caused by the virus named &ldquo;Coronavirus disease-2019&rdquo;. The virus seems to has propensity to infect older male individuals with underlying disease. The clinical features were on a large scale that varies from being an asymptomatic carrier to acute respiratory distress syndrome and multiorgan dysfunction. Fever, dry cough and fatigue are the most common symptoms. Not only, the disease seems to be rare and have a milder course in pediatric age but also respiratory failure, multiorgan dysfunction, and death are extremely rare. Although several comorbidities such as hypertension, diabetes and cardiovascular diseases are defined as a risk factor for developing the acute respiratory syndrome and need for intensive care; immune-compromised situations such as rheumatic disease which require immunosuppressive treatment strikingly are not found to be a risk factor for more severe disease course. However, there is a lack of data regarding the effects of &ldquo;Coronavirus disease-2019&rdquo; on pediatric patients with rheumatic diseases. Additionally, there are three controversial circumstances that patients with rheumatic diseases are believed to be more likely to have viral infections like &ldquo;Severe Acute Respiratory Syndrome Coronavirus 2&rdquo;, on the other hand, antirheumatic drugs may have a protective and therapeutic role in Coronavirus disease-2019 and children are more unlikely to have serious disease course. Therefore, we aimed to have a contributor role for explaining this conundrum and present a bird&rsquo;s eye view regarding this equivocal issue in this review.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract As it is known, we are all in a pandemic situation due to a novel coronavirus, officially named “Severe Acute Respiratory Syndrome Coronavirus 2” and the disease caused by the virus named “Coronavirus disease-2019”. The virus seems to has propensity to infect older male individuals with underlying disease. The clinical features were on a large scale that varies from being an asymptomatic carrier to acute respiratory distress syndrome and multiorgan dysfunction. Fever, dry cough and fatigue are the most common symptoms. Not only, the disease seems to be rare and have a milder course in pediatric age but also respiratory failure, multiorgan dysfunction, and death are extremely rare. Although several comorbidities such as hypertension, diabetes and cardiovascular diseases are defined as a risk factor for developing the acute respiratory syndrome and need for intensive care; immune-compromised situations such as rheumatic disease which require immunosuppressive treatment strikingly are not found to be a risk factor for more severe disease course. However, there is a lack of data regarding the effects of “Coronavirus disease-2019” on pediatric patients with rheumatic diseases. Additionally, there are three controversial circumstances that patients with rheumatic diseases are believed to be more likely to have viral infections like “Severe Acute Respiratory Syndrome Coronavirus 2”, on the other hand, antirheumatic drugs may have a protective and therapeutic role in Coronavirus disease-2019 and children are more unlikely to have serious disease course. Therefore, we aimed to have a contributor role for explaining this conundrum and present a bird’s eye view regarding this equivocal issue in this review.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.4.43",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "184-188",
+    "views": 9781,
+    "downloads": 5026,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2199",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2199",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2199",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2199",
+    "localPdfUrl": "js/data/pdfs/2199.pdf",
+    "pdfUrl": "js/data/pdfs/2199.pdf"
+  },
+  {
+    "id": 2191,
+    "type": "Original Article",
+    "title": "Antinociceptive Action of Moringa peregrina is Mediated by an Interaction with α2-Adrenergic Receptor",
+    "authors": [
+      {
+        "name": "Sahar M. Jaffal",
+        "affiliation": "Department of Biological Sciences, Jordan University School of Science, Amman, Jordan",
+        "orcid": ""
+      },
+      {
+        "name": "Belal O. Al-Najjar",
+        "affiliation": "Department of Pharmaceutical Sciences, Al-Ahliyya Amman University School of Pharmacy, Amman, Jordan",
+        "orcid": ""
+      },
+      {
+        "name": "Manal A. Abbas",
+        "affiliation": "Department of Medical Laboratory Sciences, School of Allied Medical Sciences, Al-Ahliyya Amman University, Amman, Jordan",
+        "orcid": ""
+      },
+      {
+        "name": "Sawsan A. Oran",
+        "affiliation": "Department of Biological Sciences, Jordan University School of Science, Amman, Jordan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Moringa peregrina (M. peregrina) is an edible, drought-resistant tree that is native to semi-arid countries. It is used as a painkiller in folk medicine.Aims: To study the antinociceptive effects of the leaf extract of M. peregrina in mice.Study Design: Animal experimentation.Methods: We employed thermal (hot plate and tail-immersion tests) and chemical (writhing and formalin tests) pain models in male BALB/c mice (eight animals per group) to investigate the mechanisms involved in the antinociceptive actions of M. peregrina. Additionally, we identified the chemical constituents present in the extract of M. peregrina by using liquid chromatography-mass spectrometry analysis, and predicted the possible active constituents that interact with the receptor based on molecular docking simulations.Results: In the writhing test, 200 mg/kg of M. peregrina extract restricted abdominal cramps by up to 55.97% (p<0.001). Further, it reduced the time of paw-licking in the early and late phases of formalin test by up to 56.8% and 65.5%, respectively, as compared to the percentage inhibitions of 50.5% and 48.4% produced by 30 mg/kg diclofenac sodium in the early and late phases, respectively (p<0.05). This effect was abrogated by yohimbine (1 mg/kg, intraperitoneally), but not by methysergide (5 mg/kg, intraperitoneally), in the late phase only, which indicates that the action of M. peregrina in formalin test is not mediated by 5-HT2 serotonin receptors, but rather via α2-adrenergic receptors. In the hot plate test, but not on tail-immersion test, the high dose (400 mg/kg) of the extract increased the latency time after 30 minutes of its administration. Yohimbine antagonized the action of M. peregrina in the hot plate test. Based on LC-MS analysis, the major constituents found in M. peregrina methanolic extract were chrysoeriol 7-O-diglucoside, lupeol acetate, quercetin, and rutin. Depending on the molecular docking results, the activity of M. peregrina extract could be due to the binding of chrysoeriol 7-O-diglucoside, quercetin, and rutin to the α2-adrenergic receptor.Conclusion: Interaction with the α2-adrenergic receptor serves as a possible mechanism of the M. peregrina analgesic effect.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> <em>Moringa peregrina (M. peregrina)</em> is an edible, drought-resistant tree that is native to semi-arid countries. It is used as a painkiller in folk medicine.<br /><strong>Aims:</strong> To study the antinociceptive effects of the leaf extract of <em>M. peregrina</em> in mice.<br /><strong>Study Design:</strong> Animal experimentation.<br /><strong>Methods:</strong> We employed thermal (hot plate and tail-immersion tests) and chemical (writhing and formalin tests) pain models in male BALB/c mice (eight animals per group) to investigate the mechanisms involved in the antinociceptive actions of <em>M. peregrina</em>. Additionally, we identified the chemical constituents present in the extract of <em>M. peregrina</em> by using liquid chromatography-mass spectrometry analysis, and predicted the possible active constituents that interact with the receptor based on molecular docking simulations.<br /><strong>Results:</strong> In the writhing test, 200 mg/kg of <em>M. peregrina</em> extract restricted abdominal cramps by up to 55.97% (p&lt;0.001). Further, it reduced the time of paw-licking in the early and late phases of formalin test by up to 56.8% and 65.5%, respectively, as compared to the percentage inhibitions of 50.5% and 48.4% produced by 30 mg/kg diclofenac sodium in the early and late phases, respectively (p&lt;0.05). This effect was abrogated by yohimbine (1 mg/kg, intraperitoneally), but not by methysergide (5 mg/kg, intraperitoneally), in the late phase only, which indicates that the action of <em>M. peregrina</em> in formalin test is not mediated by 5-HT2 serotonin receptors, but rather via &alpha;<sub>2</sub>-adrenergic receptors. In the hot plate test, but not on tail-immersion test, the high dose (400 mg/kg) of the extract increased the latency time after 30 minutes of its administration. Yohimbine antagonized the action of <em>M. peregrina</em> in the hot plate test. Based on LC-MS analysis, the major constituents found in <em>M. peregrina</em> methanolic extract were chrysoeriol 7-O-diglucoside, lupeol acetate, quercetin, and rutin. Depending on the molecular docking results, the activity of <em>M. peregrina</em> extract could be due to the binding of chrysoeriol 7-O-diglucoside, quercetin, and rutin to the &alpha;<sub>2</sub>-adrenergic receptor.<br /><strong>Conclusion:</strong> Interaction with the &alpha;<sub>2</sub>-adrenergic receptor serves as a possible mechanism of the <em>M. peregrina</em> analgesic effect.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Moringa peregrina (M. peregrina) is an edible, drought-resistant tree that is native to semi-arid countries. It is used as a painkiller in folk medicine.Aims: To study the antinociceptive effects of the leaf extract of M. peregrina in mice.Study Design: Animal experimentation.Methods: We employed thermal (hot plate and tail-immersion tests) and chemical (writhing and formalin tests) pain models in male BALB/c mice (eight animals per group) to investigate the mechanisms involved in the antinociceptive actions of M. peregrina. Additionally, we identified the chemical constituents present in the extract of M. peregrina by using liquid chromatography-mass spectrometry analysis, and predicted the possible active constituents that interact with the receptor based on molecular docking simulations.Results: In the writhing test, 200 mg/kg of M. peregrina extract restricted abdominal cramps by up to 55.97% (p<0.001). Further, it reduced the time of paw-licking in the early and late phases of formalin test by up to 56.8% and 65.5%, respectively, as compared to the percentage inhibitions of 50.5% and 48.4% produced by 30 mg/kg diclofenac sodium in the early and late phases, respectively (p<0.05). This effect was abrogated by yohimbine (1 mg/kg, intraperitoneally), but not by methysergide (5 mg/kg, intraperitoneally), in the late phase only, which indicates that the action of M. peregrina in formalin test is not mediated by 5-HT2 serotonin receptors, but rather via α2-adrenergic receptors. In the hot plate test, but not on tail-immersion test, the high dose (400 mg/kg) of the extract increased the latency time after 30 minutes of its administration. Yohimbine antagonized the action of M. peregrina in the hot plate test. Based on LC-MS analysis, the major constituents found in M. peregrina methanolic extract were chrysoeriol 7-O-diglucoside, lupeol acetate, quercetin, and rutin. Depending on the molecular docking results, the activity of M. peregrina extract could be due to the binding of chrysoeriol 7-O-diglucoside, quercetin, and rutin to the α2-adrenergic receptor.Conclusion: Interaction with the α2-adrenergic receptor serves as a possible mechanism of the M. peregrina analgesic effect.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2019.11.14",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "189-195",
+    "views": 7028,
+    "downloads": 3189,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2191",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2191",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2191",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2191",
+    "localPdfUrl": "js/data/pdfs/2191.pdf",
+    "pdfUrl": "js/data/pdfs/2191.pdf"
+  },
+  {
+    "id": 2204,
+    "type": "Original Article",
+    "title": "Metformin Attenuates Ischemia-reperfusion Injury of Fatty Liver in Rats Through Inhibition of the TLR4/NF-κB Axis",
+    "authors": [
+      {
+        "name": "Xiaohua Li",
+        "affiliation": "Department of General Surgery, Affiliated Hospital of Jiujiang University Jiangxi, China",
+        "orcid": ""
+      },
+      {
+        "name": "Liangliang Wang",
+        "affiliation": "Department of Pathology, Affiliated Hospital of Jiujiang University, Jiangxi, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiaoguang Yang",
+        "affiliation": "Department of Ultrasonic, Affiliated Hospital of Jiujiang University, Jiangxi, China",
+        "orcid": ""
+      },
+      {
+        "name": "Chunyan Huang",
+        "affiliation": "Department of Hospitality, Affiliated Hospital of Jiujiang University, Jiangxi, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Donor organs for liver transplantation may often have fatty liver disease, which confers a higher sensitivity to ischemia/reperfusion injury. At present, there is no effective treatment for the condition. Evidence has suggested that metformin, the first-line medication for diabetes, has protective effects against many disorders. However, the potential role of metformin in ischemia/reperfusion injury in fatty liver disease remains unclear.Aims: To examine the effect of metformin treatment during ischemia/reperfusion injury in fatty liver and determine the possible mechanisms.Study Design: Animal experimentation.Methods: Sprague-Dawley male rats were fed a high-fat diet (520 kcal/100 g) for 14 weeks and then were subjected to the orthotopic autologous liver transplantation model. Sections of liver tissue were stained with hematoxylin and eosin to visualize the damage. Blood and liver samples were used to analyze the related proteins and components involved in the inﬂammatory signaling pathway.Results: We found that metformin significantly ameliorated the ischemia/reperfusion injury of the fatty liver through a reduction in alanine aminotransferase/aspartate aminotransferase concentrations in the serum and a decrease in dead cells, as shown by the terminal deoxynucleotidyl transferase-mediated dUTP nick-end labeling assay (p<0.05). In addition, metformin significantly attenuated interleukin (IL)-6, IL-1β, and tumor necrosis factor-α production and increased the expression of active caspase-3 and Bax in the liver (p<0.05). Mechanistically, metformin suppressed the activation of toll-like receptor 4 (TLR4)/NF-κB signaling (p<0.05), resulting in a decreased inflammatory response and apoptosis.Conclusion: Our findings demonstrated that metformin attenuated ischemia/reperfusion injury in fatty liver disease via the TLR4/NF-κB axis, suggesting that metformin could have potential therapeutic applications in ischemia/reperfusion injury associated with liver transplantation.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Donor organs for liver transplantation may often have fatty liver disease, which confers a higher sensitivity to ischemia/reperfusion injury. At present, there is no effective treatment for the condition. Evidence has suggested that metformin, the first-line medication for diabetes, has protective effects against many disorders. However, the potential role of metformin in ischemia/reperfusion injury in fatty liver disease remains unclear.<br /><strong>Aims:</strong> To examine the effect of metformin treatment during ischemia/reperfusion injury in fatty liver and determine the possible mechanisms.<br /><strong>Study Design:</strong> Animal experimentation.<br /><strong>Methods:</strong> Sprague-Dawley male rats were fed a high-fat diet (520 kcal/100 g) for 14 weeks and then were subjected to the orthotopic autologous liver transplantation model. Sections of liver tissue were stained with hematoxylin and eosin to visualize the damage. Blood and liver samples were used to analyze the related proteins and components involved in the inﬂammatory signaling pathway.<br /><strong>Results:</strong> We found that metformin significantly ameliorated the ischemia/reperfusion injury of the fatty liver through a reduction in alanine aminotransferase/aspartate aminotransferase concentrations in the serum and a decrease in dead cells, as shown by the terminal deoxynucleotidyl transferase-mediated dUTP nick-end labeling assay (p&lt;0.05). In addition, metformin significantly attenuated interleukin (IL)-6, IL-1&beta;, and tumor necrosis factor-&alpha; production and increased the expression of active caspase-3 and Bax in the liver (p&lt;0.05). Mechanistically, metformin suppressed the activation of toll-like receptor 4 (TLR4)/NF-&kappa;B signaling (p&lt;0.05), resulting in a decreased inflammatory response and apoptosis.<br /><strong>Conclusion:</strong> Our findings demonstrated that metformin attenuated ischemia/reperfusion injury in fatty liver disease via the TLR4/NF-&kappa;B axis, suggesting that metformin could have potential therapeutic applications in ischemia/reperfusion injury associated with liver transplantation.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Donor organs for liver transplantation may often have fatty liver disease, which confers a higher sensitivity to ischemia/reperfusion injury. At present, there is no effective treatment for the condition. Evidence has suggested that metformin, the first-line medication for diabetes, has protective effects against many disorders. However, the potential role of metformin in ischemia/reperfusion injury in fatty liver disease remains unclear.Aims: To examine the effect of metformin treatment during ischemia/reperfusion injury in fatty liver and determine the possible mechanisms.Study Design: Animal experimentation.Methods: Sprague-Dawley male rats were fed a high-fat diet (520 kcal/100 g) for 14 weeks and then were subjected to the orthotopic autologous liver transplantation model. Sections of liver tissue were stained with hematoxylin and eosin to visualize the damage. Blood and liver samples were used to analyze the related proteins and components involved in the inﬂammatory signaling pathway.Results: We found that metformin significantly ameliorated the ischemia/reperfusion injury of the fatty liver through a reduction in alanine aminotransferase/aspartate aminotransferase concentrations in the serum and a decrease in dead cells, as shown by the terminal deoxynucleotidyl transferase-mediated dUTP nick-end labeling assay (p<0.05). In addition, metformin significantly attenuated interleukin (IL)-6, IL-1β, and tumor necrosis factor-α production and increased the expression of active caspase-3 and Bax in the liver (p<0.05). Mechanistically, metformin suppressed the activation of toll-like receptor 4 (TLR4)/NF-κB signaling (p<0.05), resulting in a decreased inflammatory response and apoptosis.Conclusion: Our findings demonstrated that metformin attenuated ischemia/reperfusion injury in fatty liver disease via the TLR4/NF-κB axis, suggesting that metformin could have potential therapeutic applications in ischemia/reperfusion injury associated with liver transplantation.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2019.9.31",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "196-202",
+    "views": 7276,
+    "downloads": 10590,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2204",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2204",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2204",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2204",
+    "localPdfUrl": "js/data/pdfs/2204.pdf",
+    "pdfUrl": "js/data/pdfs/2204.pdf"
+  },
+  {
+    "id": 2202,
+    "type": "Original Article",
+    "title": "Quantitative Assessment of Salivary Gland Parenchymal Vascularization Using Power Doppler Ultrasound and Superb Microvascular Imaging: A Potential Tool in the Diagnosis of Sjögren",
+    "authors": [
+      {
+        "name": "Fethi Emre Ustabaşıoğlu",
+        "affiliation": "Department of Radiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selçuk Korkmaz",
+        "affiliation": "Department of Biostatistics and Medical Informatics, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ufuk İlgen",
+        "affiliation": "Department of Rheumatology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serdar Solak",
+        "affiliation": "Department of Radiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Osman Kula",
+        "affiliation": "Department of Radiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sezin Turan",
+        "affiliation": "Department of Rheumatology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Emmüngil[[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Primary Sjögren’s syndrome is a chronic inflammatory autoimmune disease. Minor salivary gland biopsy is the gold standard for the diagnosis of primary Sjögren’s syndrome. Superb microvascular imaging, power Doppler ultrasound, and color Doppler of the salivary glands represent non-invasive, non-irradiating modality for evaluating the vascularity of the salivary glands in the diagnosis and follow-up of primary Sjögren’s syndrome.Aims: To evaluate the efficacy of superb microvascular imaging and vascularity index in salivary glands for the sonographic diagnosis of primary Sjögren’s syndrome.Study Design: Prospective case-control study.Methods: Twenty participants with primary Sjögren’s syndrome and 20 healthy subjects were included in the study. Both parotid glands and submandibular glands were evaluated by superb microvascular imaging, power Doppler ultrasound, and color Doppler. The diagnostic accuracy of superb microvascular imaging was compared using these techniques.Results: In the patient group, the vascularity index values of superb microvascular imaging in parotid glands and submandibular glands were 3.5±1.66, 5.06±1.94, respectively. While the same values were 1.0±0.98 and 2.44±1.34 in the control group (p≤0.001). In the patient group, the vascularity index values of power Doppler ultrasound in parotid glands and submandibular glands were 1.3±1.20 and 2.59±1.82, respectively. While the same values were 0.3±0.32 and 0.85±0.68 in the control group (p≤0.001). The superb microvascular imaging vascularity index cut-off value for the diagnosis of primary Sjögren’s syndrome in parotid glands that maximizes the accuracy was 1.85 (area under the curve: 0.906; 95% confidence interval: 0.844, 0.968), and its sensitivity and specificity were 87.5% and 72.5%, respectively. While the superb microvascular imaging vascularity index cut-off value for the diagnosis of primary Sjögren’s syndrome in submandibular gland that maximizes the accuracy was 3.35 (area under the curve: 0.873; 95% confidence interval: 0.800, 0.946), its sensitivity and specificity were 82.5% and 70%, respectively.Conclusion: Superb microvascular imaging with high reproducibility of the vascularity index has a higher sensitivity and specificity than the power Doppler ultrasound in the diagnosis of primary Sjögren’s syndrome. It can be a noninvasive technique in the diagnosis of primary Sjögren’s syndrome when used with clinical, laboratory and other imaging methods.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Primary Sj&ouml;gren&rsquo;s syndrome is a chronic inflammatory autoimmune disease. Minor salivary gland biopsy is the gold standard for the diagnosis of primary Sj&ouml;gren&rsquo;s syndrome. Superb microvascular imaging, power Doppler ultrasound, and color Doppler of the salivary glands represent non-invasive, non-irradiating modality for evaluating the vascularity of the salivary glands in the diagnosis and follow-up of primary Sj&ouml;gren&rsquo;s syndrome.<br /><strong>Aims:</strong> To evaluate the efficacy of superb microvascular imaging and vascularity index in salivary glands for the sonographic diagnosis of primary Sj&ouml;gren&rsquo;s syndrome.<br /><strong>Study Design:</strong> Prospective case-control study.<br /><strong>Methods:</strong> Twenty participants with primary Sj&ouml;gren&rsquo;s syndrome and 20 healthy subjects were included in the study. Both parotid glands and submandibular glands were evaluated by superb microvascular imaging, power Doppler ultrasound, and color Doppler. The diagnostic accuracy of superb microvascular imaging was compared using these techniques.<br /><strong>Results:</strong> In the patient group, the vascularity index values of superb microvascular imaging in parotid glands and submandibular glands were 3.5&plusmn;1.66, 5.06&plusmn;1.94, respectively. While the same values were 1.0&plusmn;0.98 and 2.44&plusmn;1.34 in the control group (p&le;0.001). In the patient group, the vascularity index values of power Doppler ultrasound in parotid glands and submandibular glands were 1.3&plusmn;1.20 and 2.59&plusmn;1.82, respectively. While the same values were 0.3&plusmn;0.32 and 0.85&plusmn;0.68 in the control group (p&le;0.001). The superb microvascular imaging vascularity index cut-off value for the diagnosis of primary Sj&ouml;gren&rsquo;s syndrome in parotid glands that maximizes the accuracy was 1.85 (area under the curve: 0.906; 95% confidence interval: 0.844, 0.968), and its sensitivity and specificity were 87.5% and 72.5%, respectively. While the superb microvascular imaging vascularity index cut-off value for the diagnosis of primary Sj&ouml;gren&rsquo;s syndrome in submandibular gland that maximizes the accuracy was 3.35 (area under the curve: 0.873; 95% confidence interval: 0.800, 0.946), its sensitivity and specificity were 82.5% and 70%, respectively.<br /><strong>Conclusion:</strong> Superb microvascular imaging with high reproducibility of the vascularity index has a higher sensitivity and specificity than the power Doppler ultrasound in the diagnosis of primary Sj&ouml;gren&rsquo;s syndrome. It can be a noninvasive technique in the diagnosis of primary Sj&ouml;gren&rsquo;s syndrome when used with clinical, laboratory and other imaging methods.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Primary Sjögren’s syndrome is a chronic inflammatory autoimmune disease. Minor salivary gland biopsy is the gold standard for the diagnosis of primary Sjögren’s syndrome. Superb microvascular imaging, power Doppler ultrasound, and color Doppler of the salivary glands represent non-invasive, non-irradiating modality for evaluating the vascularity of the salivary glands in the diagnosis and follow-up of primary Sjögren’s syndrome.Aims: To evaluate the efficacy of superb microvascular imaging and vascularity index in salivary glands for the sonographic diagnosis of primary Sjögren’s syndrome.Study Design: Prospective case-control study.Methods: Twenty participants with primary Sjögren’s syndrome and 20 healthy subjects were included in the study. Both parotid glands and submandibular glands were evaluated by superb microvascular imaging, power Doppler ultrasound, and color Doppler. The diagnostic accuracy of superb microvascular imaging was compared using these techniques.Results: In the patient group, the vascularity index values of superb microvascular imaging in parotid glands and submandibular glands were 3.5±1.66, 5.06±1.94, respectively. While the same values were 1.0±0.98 and 2.44±1.34 in the control group (p≤0.001). In the patient group, the vascularity index values of power Doppler ultrasound in parotid glands and submandibular glands were 1.3±1.20 and 2.59±1.82, respectively. While the same values were 0.3±0.32 and 0.85±0.68 in the control group (p≤0.001). The superb microvascular imaging vascularity index cut-off value for the diagnosis of primary Sjögren’s syndrome in parotid glands that maximizes the accuracy was 1.85 (area under the curve: 0.906; 95% confidence interval: 0.844, 0.968), and its sensitivity and specificity were 87.5% and 72.5%, respectively. While the superb microvascular imaging vascularity index cut-off value for the diagnosis of primary Sjögren’s syndrome in submandibular gland that maximizes the accuracy was 3.35 (area under the curve: 0.873; 95% confidence interval: 0.800, 0.946), its sensitivity and specificity were 82.5% and 70%, respectively.Conclusion: Superb microvascular imaging with high reproducibility of the vascularity index has a higher sensitivity and specificity than the power Doppler ultrasound in the diagnosis of primary Sjögren’s syndrome. It can be a noninvasive technique in the diagnosis of primary Sjögren’s syndrome when used with clinical, laboratory and other imaging methods.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2019.11.91",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "203-207",
+    "views": 13274,
+    "downloads": 10670,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2202",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2202",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2202",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2202",
+    "localPdfUrl": "js/data/pdfs/2202.pdf",
+    "pdfUrl": "js/data/pdfs/2202.pdf"
+  },
+  {
+    "id": 2201,
+    "type": "Original Article",
+    "title": "Hsa-miR-217 Inhibits the Proliferation, Migration, and Invasion in Non-small Cell Lung Cancer Cells Via Targeting SIRT1 and P53/KAI1 Signaling",
+    "authors": [
+      {
+        "name": "Wenxia Jiang",
+        "affiliation": "Department of Pathology and Pathophysiology, Tongji University School of Medicine, Shanghai, China; Experimental Centre of Medicine and Life Science, Tongji University, Shanghai, China",
+        "orcid": ""
+      },
+      {
+        "name": "Likun Hou",
+        "affiliation": "Department of Pathology, Shanghai Pulmonary Hospital, Tongji University, Shanghai, China",
+        "orcid": ""
+      },
+      {
+        "name": "Juan Wei",
+        "affiliation": "Department of Pathology and Pathophysiology, Tongji University School of Medicine, Shanghai, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yifeng Du",
+        "affiliation": "Experimental Centre of Medicine and Life Science, Tongji University, Shanghai, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yan Zhao",
+        "affiliation": "Experimental Centre of Medicine and Life Science, Tongji University, Shanghai, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xue Deng",
+        "affiliation": "Tongji University School of Medicine, Shanghai, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiangdong Lin",
+        "affiliation": "Tongji University School of Medicine, Shanghai, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Brain metastasis is a major cause of cancer death in patients with lung cancer. Sirtuin 1 and hsa-miR-217 have been identified to mediate the development of non-small cell lung cancer.Aims: To investigate the roles of hsa-miR-217, its target sirtuin 1, and the P53/KAI1 axis in the brain metastasis from non-small cell lung cancer.Study Design: Cell culture study.Methods: Human pulmonary adenocarcinoma brain metastasis cell line PC-14/B were incubated and treated with constructed lentiviral plasmids expressing miR-217 and/or sirtuin 1. BEAS-2B cell line was used as a control. The targeted regulation of miR-217 to sirtuin 1was examined using a dual-luciferase reporter assay. Cell proliferation, migration, invasion, and related protein expression were detected to examine the effect of the miR-217/sirtuin 1 expression on metastasis.Results: PC-14/B cells expressed higher sirtuin 1 and lower P53 and KAI1 compared with BEAS-2B control cells (p<0.05). Sirtuin 1 was a direct target of miR-217. MiR-217 expression suppressed PC-14/B cell invasion (p=0.004), migration (p=0.001), and proliferation (p<0.05), whereas sirtuin 1 overexpression reversed all processes. sirtuin 1 expression inhibited P53, KAI1/CD82, matrix metalloproteinase-9, and β-catenin but upregulated E-cadherin protein. MiR-217 overexpression induced reverse changes.Conclusion: Hsa-miR-217 and its target sirtuin 1 acted as metastasis suppressor and promoter gene in non-small cell lung cancer, respectively. The hsa-miR-217/sirtuin 1/P53/KAI1 metastasis regulatory pathway showed novel and crucial roles in brain metastasis from non-small cell lung cancer. This axis might be a potential target for the treatment of brain metastasis of lung cancer.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Brain metastasis is a major cause of cancer death in patients with lung cancer. Sirtuin 1 and hsa-miR-217 have been identified to mediate the development of non-small cell lung cancer.<br /><strong>Aims:</strong> To investigate the roles of hsa-miR-217, its target sirtuin 1, and the P53/KAI1 axis in the brain metastasis from non-small cell lung cancer.<br /><strong>Study Design:</strong> Cell culture study.<br /><strong>Methods:</strong> Human pulmonary adenocarcinoma brain metastasis cell line PC-14/B were incubated and treated with constructed lentiviral plasmids expressing miR-217 and/or sirtuin 1. BEAS-2B cell line was used as a control. The targeted regulation of miR-217 to sirtuin 1was examined using a dual-luciferase reporter assay. Cell proliferation, migration, invasion, and related protein expression were detected to examine the effect of the miR-217/sirtuin 1 expression on metastasis.<br /><strong>Results:</strong> PC-14/B cells expressed higher sirtuin 1 and lower P53 and KAI1 compared with BEAS-2B control cells (p&lt;0.05). Sirtuin 1 was a direct target of miR-217. MiR-217 expression suppressed PC-14/B cell invasion (p=0.004), migration (p=0.001), and proliferation (p&lt;0.05), whereas sirtuin 1 overexpression reversed all processes. sirtuin 1 expression inhibited P53, KAI1/CD82, matrix metalloproteinase-9, and &beta;-catenin but upregulated E-cadherin protein. MiR-217 overexpression induced reverse changes.<br /><strong>Conclusion:</strong> Hsa-miR-217 and its target sirtuin 1 acted as metastasis suppressor and promoter gene in non-small cell lung cancer, respectively. The hsa-miR-217/sirtuin 1/P53/KAI1 metastasis regulatory pathway showed novel and crucial roles in brain metastasis from non-small cell lung cancer. This axis might be a potential target for the treatment of brain metastasis of lung cancer.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Brain metastasis is a major cause of cancer death in patients with lung cancer. Sirtuin 1 and hsa-miR-217 have been identified to mediate the development of non-small cell lung cancer.Aims: To investigate the roles of hsa-miR-217, its target sirtuin 1, and the P53/KAI1 axis in the brain metastasis from non-small cell lung cancer.Study Design: Cell culture study.Methods: Human pulmonary adenocarcinoma brain metastasis cell line PC-14/B were incubated and treated with constructed lentiviral plasmids expressing miR-217 and/or sirtuin 1. BEAS-2B cell line was used as a control. The targeted regulation of miR-217 to sirtuin 1was examined using a dual-luciferase reporter assay. Cell proliferation, migration, invasion, and related protein expression were detected to examine the effect of the miR-217/sirtuin 1 expression on metastasis.Results: PC-14/B cells expressed higher sirtuin 1 and lower P53 and KAI1 compared with BEAS-2B control cells (p<0.05). Sirtuin 1 was a direct target of miR-217. MiR-217 expression suppressed PC-14/B cell invasion (p=0.004), migration (p=0.001), and proliferation (p<0.05), whereas sirtuin 1 overexpression reversed all processes. sirtuin 1 expression inhibited P53, KAI1/CD82, matrix metalloproteinase-9, and β-catenin but upregulated E-cadherin protein. MiR-217 overexpression induced reverse changes.Conclusion: Hsa-miR-217 and its target sirtuin 1 acted as metastasis suppressor and promoter gene in non-small cell lung cancer, respectively. The hsa-miR-217/sirtuin 1/P53/KAI1 metastasis regulatory pathway showed novel and crucial roles in brain metastasis from non-small cell lung cancer. This axis might be a potential target for the treatment of brain metastasis of lung cancer.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2019.9.91",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "208-214",
+    "views": 7258,
+    "downloads": 10769,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2201",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2201",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2201",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2201",
+    "localPdfUrl": "js/data/pdfs/2201.pdf",
+    "pdfUrl": "js/data/pdfs/2201.pdf"
+  },
+  {
+    "id": 2203,
+    "type": "Original Article",
+    "title": "Detection of sasX Gene and Distribution of SCCmec Types in Invasive and Non-invasive Coagulase-negative Staphylococci",
+    "authors": [
+      {
+        "name": "Alper Tekeli",
+        "affiliation": "Department of Medical Microbiology, Ankara University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Duygu Nilüfer Öcal",
+        "affiliation": "Department of Medical Microbiology, Ankara University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İştar Dolapçı[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Coagulase-negative staphylococci, which belong to the normal microbiota of the skin and mucous membranes, are opportunistic pathogens. sasX, a newly described protein, is thought to play an important role in nasal colonization and methicillin-resistant Staphylococcus aureus virulence, and it may be acquired from coagulase-negative staphylococci by horizontal gene transfer. It has been considered that understanding the function of sasX gene may help clarify the relevance of the different adhesion mechanisms in the pathogenesis of infections associated with biofilm.Aims: To investigate the sasX gene presence, staphylococcal cassette chromosome mec types, and antimicrobial resistance patterns of invasive and noninvasive coagulase-negative staphylococci isolates.Study Design: Cross-sectional study.Methods: The study included a total of 180 coagulase-negative staphylococci strains. Non-invasive isolates (n=91) were obtained from the hands of healthy volunteers who do not work at the hospital (n=30), the nasal vestibule of healthy volunteer hospital workers (n=26), and central venous catheter (n=35). Invasive isolates (n=89) were isolated from peripheral blood cultures of inpatients who do not have catheters. All isolates were identified by conventional microbiological methods, automated systems, and, if needed, with matrix-assisted laser desorption/ionization-time of flight. Staphylococcal cassette chromosome mec typing, sasX and mec gene detection, antibiotic susceptibility, and sasX gene sequence analysis were performed.Results: Peripheral blood, central venous catheter colonization, and nasal vestibule isolates were positive for the sasX gene, whereas hand isolates were negative. sasX gene was present in 17 isolates, and no statistical significance was found between invasive and noninvasive isolates (p=0.173). Sequence analysis of the sasX genes showed high homology to related proteins of Staphylococcus phage SPbeta-like and Staphylococcus epidermidis RP62A. staphylococcal cassette chromosome mec type V was the most prevalent regardless of species. staphylococcal cassette chromosome mec type II was more frequent in invasive isolates and found to be statistically important for invasive and noninvasive S. epidermidis isolates (p=0.029). Staphylococcus haemolyticus isolates had the overall highest resistance rates. Resistance to ciprofloxacin, trimethoprim-sulfamethoxazole, and erythromycin was found to be higher in isolates from catheter and blood culture. Staphylococcus hominis isolates had the highest rate for inducible clindamycin resistance. None of the isolates were resistant to vancomycin, teicoplanin, and linezolid.Conclusion: The sasX gene is detected in 9.44% of the isolates. There is no statistical difference between the sasX-positive and -negative isolates in terms of antibacterial resistance and the presence of sasX and SCCmec types. Further studies about the role of sasX at virulence in coagulase-negative staphylococci, especially from clinical samples such as tracheal aspirate and abscess isolates, and distribution of staphylococcal cassette chromosome mec types are needed.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background</strong>: Coagulase-negative staphylococci, which belong to the normal microbiota of the skin and mucous membranes, are opportunistic pathogens. <em>sasX</em>, a newly described protein, is thought to play an important role in nasal colonization and methicillin-resistant <em>Staphylococcus aureus </em>virulence, and it may be acquired from coagulase-negative staphylococci by horizontal gene transfer. It has been considered that understanding the function of <em>sasX</em> gene may help clarify the relevance of the different adhesion mechanisms in the pathogenesis of infections associated with biofilm.<br /><strong>Aims</strong>: To investigate the <em>sasX</em> gene presence, staphylococcal cassette chromosome <em>mec</em> types, and antimicrobial resistance patterns of invasive and noninvasive coagulase-negative staphylococci isolates.<br /><strong>Study Design</strong>: Cross-sectional study.<br /><strong>Methods</strong>: The study included a total of 180 coagulase-negative staphylococci strains. Non-invasive isolates (n=91) were obtained from the hands of healthy volunteers who do not work at the hospital (n=30), the nasal vestibule of healthy volunteer hospital workers (n=26), and central venous catheter (n=35). Invasive isolates (n=89) were isolated from peripheral blood cultures of inpatients who do not have catheters. All isolates were identified by conventional microbiological methods, automated systems, and, if needed, with matrix-assisted laser desorption/ionization-time of flight. Staphylococcal cassette chromosome <em>mec</em> typing, <em>sasX</em> and <em>mec</em> gene detection, antibiotic susceptibility, and <em>sasX</em> gene sequence analysis were performed.<br /><strong>Results</strong>: Peripheral blood, central venous catheter colonization, and nasal vestibule isolates were positive for the <em>sasX</em> gene, whereas hand isolates were negative. <em>sasX </em>gene was present in 17 isolates, and no statistical significance was found between invasive and noninvasive isolates (p=0.173). Sequence analysis of the <em>sasX </em>genes showed high homology to related proteins of <em>Staphylococcus</em> phage SPbeta-like and <em>Staphylococcus epidermidis</em> RP62A. staphylococcal cassette chromosome <em>mec</em> type V was the most prevalent regardless of species. staphylococcal cassette chromosome <em>mec</em> type II was more frequent in invasive isolates and found to be statistically important for invasive and noninvasive <em>S. epidermidis</em> isolates (p=0.029). <em>Staphylococcus haemolyticus</em> isolates had the overall highest resistance rates. Resistance to ciprofloxacin, trimethoprim-sulfamethoxazole, and erythromycin was found to be higher in isolates from catheter and blood culture.<em> Staphylococcus hominis</em> isolates had the highest rate for inducible clindamycin resistance. None of the isolates were resistant to vancomycin, teicoplanin, and linezolid.<br /><strong>Conclusion</strong>: The <em>sasX</em> gene is detected in 9.44%&nbsp; of the isolates. There is no statistical difference between the <em>sasX</em>-positive and -negative isolates in terms of antibacterial resistance and the presence of <em>sasX </em>and SCC<em>mec</em> types. Further studies about the role of <em>sasX</em> at virulence in coagulase-negative staphylococci, especially from clinical samples such as tracheal aspirate and abscess isolates, and distribution of staphylococcal cassette chromosome <em>mec</em> types are needed.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Coagulase-negative staphylococci, which belong to the normal microbiota of the skin and mucous membranes, are opportunistic pathogens. sasX, a newly described protein, is thought to play an important role in nasal colonization and methicillin-resistant Staphylococcus aureus virulence, and it may be acquired from coagulase-negative staphylococci by horizontal gene transfer. It has been considered that understanding the function of sasX gene may help clarify the relevance of the different adhesion mechanisms in the pathogenesis of infections associated with biofilm.Aims: To investigate the sasX gene presence, staphylococcal cassette chromosome mec types, and antimicrobial resistance patterns of invasive and noninvasive coagulase-negative staphylococci isolates.Study Design: Cross-sectional study.Methods: The study included a total of 180 coagulase-negative staphylococci strains. Non-invasive isolates (n=91) were obtained from the hands of healthy volunteers who do not work at the hospital (n=30), the nasal vestibule of healthy volunteer hospital workers (n=26), and central venous catheter (n=35). Invasive isolates (n=89) were isolated from peripheral blood cultures of inpatients who do not have catheters. All isolates were identified by conventional microbiological methods, automated systems, and, if needed, with matrix-assisted laser desorption/ionization-time of flight. Staphylococcal cassette chromosome mec typing, sasX and mec gene detection, antibiotic susceptibility, and sasX gene sequence analysis were performed.Results: Peripheral blood, central venous catheter colonization, and nasal vestibule isolates were positive for the sasX gene, whereas hand isolates were negative. sasX gene was present in 17 isolates, and no statistical significance was found between invasive and noninvasive isolates (p=0.173). Sequence analysis of the sasX genes showed high homology to related proteins of Staphylococcus phage SPbeta-like and Staphylococcus epidermidis RP62A. staphylococcal cassette chromosome mec type V was the most prevalent regardless of species. staphylococcal cassette chromosome mec type II was more frequent in invasive isolates and found to be statistically important for invasive and noninvasive S. epidermidis isolates (p=0.029). Staphylococcus haemolyticus isolates had the overall highest resistance rates. Resistance to ciprofloxacin, trimethoprim-sulfamethoxazole, and erythromycin was found to be higher in isolates from catheter and blood culture. Staphylococcus hominis isolates had the highest rate for inducible clindamycin resistance. None of the isolates were resistant to vancomycin, teicoplanin, and linezolid.Conclusion: The sasX gene is detected in 9.44% of the isolates. There is no statistical difference between the sasX-positive and -negative isolates in terms of antibacterial resistance and the presence of sasX and SCCmec types. Further studies about the role of sasX at virulence in coagulase-negative staphylococci, especially from clinical samples such as tracheal aspirate and abscess isolates, and distribution of staphylococcal cassette chromosome mec types are needed.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2019.8.21",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "215-221",
+    "views": 6978,
+    "downloads": 10285,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2203",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2203",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2203",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2203",
+    "localPdfUrl": "js/data/pdfs/2203.pdf",
+    "pdfUrl": "js/data/pdfs/2203.pdf"
+  },
+  {
+    "id": 2190,
+    "type": "Clinical Image",
+    "title": "Cardiac Involvement of Rosai-Dorfman Disease Causing an Aesthetic Problem in a Young Woman",
+    "authors": [
+      {
+        "name": "Remzi Tınazlı",
+        "affiliation": "Department of Otorhinolaryngology-head and Neck Surgery, Near East University School of Medicine, Nicosia, Cyprus",
+        "orcid": ""
+      },
+      {
+        "name": "Pınar Tunçbilek Özmanevra",
+        "affiliation": "Department of Otorhinolaryngology-head and Neck Surgery, Kyrenia University School of Medicine, Kyrenia, Cyprus",
+        "orcid": ""
+      },
+      {
+        "name": "Eda Tuna Yalçınozan",
+        "affiliation": "Department of Otorhinolaryngology-head and Neck Surgery, Near East University School of Medicine, Nicosia, Cyprus",
+        "orcid": ""
+      },
+      {
+        "name": "Ferhat Erişir",
+        "affiliation": "Department of Otorhinolaryngology-head and Neck Surgery, Near East University School of Medicine, Nicosia, Cyprus",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 32-year-old woman was referred to our ENT clinics for the evaluation of multiple symmetrical swellings in her neck. In the patient’s family history, there was cross-cousin marriage between her grandparents. The patient and her sister had severe hearing loss and type 1 diabetes mellitus since their childhood. The patient also had symmetric hyperpigmented an",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2019.12.14",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "222-223",
+    "views": 5719,
+    "downloads": 3263,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2190",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2190",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2190",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2190",
+    "localPdfUrl": "js/data/pdfs/2190.pdf",
+    "pdfUrl": "js/data/pdfs/2190.pdf"
+  },
+  {
+    "id": 2197,
+    "type": "Clinical Image",
+    "title": "Malignant Astroblastoma",
+    "authors": [
+      {
+        "name": "Binnaz Sarper",
+        "affiliation": "Department of Radiation Oncology, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Büşra Yaprak Bayrak",
+        "affiliation": "Department of Pathology, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hatice Halis",
+        "affiliation": "Clinic of Radiation Oncology, Sakarya University Training and Resaerch Hospital, Sakarya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burcu Alparslan",
+        "affiliation": "Department of Radiology, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hülya Yeni Bayraktar",
+        "affiliation": "Clinic of Pathology, Ass. Prof. Dr. Mustafa Kemal Tavşanlı Government Hospital, Kütahya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "In February 2013, a 23-year-old man was admitted to the hospital with headache. Cranial magnetic resonance imaging (MRI) showed a homogeneous, well-demarcated, hyperintense mass on T2-weighted imaging and peritumoral hyperintensity due to edema. The mass showed no enhancement on T1-weighted imaging with contrast (Figure 1A). Surgical resection was recommende",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2019.11.39",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "224-225",
+    "views": 6219,
+    "downloads": 2653,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2197",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2197",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2197",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2197",
+    "localPdfUrl": "js/data/pdfs/2197.pdf",
+    "pdfUrl": "js/data/pdfs/2197.pdf"
+  },
+  {
+    "id": 2196,
+    "type": "Letter to the Editor",
+    "title": "Chest CT Findings in a Pregnant Patient with 2019 Novel Coronavirus Disease",
+    "authors": [
+      {
+        "name": "Xinggui Liao",
+        "affiliation": "Clinic of Obstetrics and Gynecology, Chongqing Three Gorges Central Hospital, Chongqing, China; Chongqing University Three Gorges Hospital, Chongqing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Huan Yang",
+        "affiliation": "Clinic of Obstetrics and Gynecology, Chongqing Three Gorges Central Hospital, Chongqing, China; Chongqing University Three Gorges Hospital, Chongqing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Junfeng Kong",
+        "affiliation": "Chongqing University Three Gorges Hospital, Chongqing, China; Clinic of Radiology, Chongqing Three Gorges Central Hospital, Chongqing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Hongbing Yang",
+        "affiliation": "Clinic of Obstetrics and Gynecology, Chongqing Three Gorges Central Hospital, Chongqing, China; Chongqing University Three Gorges Hospital, Chongqing, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, With the ongoing outbreak of 2019 novel coronavirus (COVID-19) in December 2019, the diagnosis and treatment of this disease are critically important to clinicians. Presently, chest computed tomography (CT) and nucleic acid test are still the two most important auxiliary examinations in the COVID-19 diagnosis, according to the constantly updat",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.3.89",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "226-228",
+    "views": 7607,
+    "downloads": 4431,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2196",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2196",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2196",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2196",
+    "localPdfUrl": "js/data/pdfs/2196.pdf",
+    "pdfUrl": "js/data/pdfs/2196.pdf"
+  },
+  {
+    "id": 2206,
+    "type": "Letter to the Editor",
+    "title": "Asymptomatic Patients with Novel Coronavirus Disease (COVID-19)",
+    "authors": [
+      {
+        "name": "Peng An",
+        "affiliation": "Department of Radiology, Xiangyang Xiangyang No. 1 People’s Hospital Affiliated to Hubei University of Medicine, Xiangyang, China; Department of Infectious Diseases, Xiangyang No. 1 People’s Hospital Affiliated to Hubei University of Medicine, Xiangyang, China; An and Song contributed equally to this work.",
+        "orcid": ""
+      },
+      {
+        "name": "Ping Song",
+        "affiliation": "Department of Radiology, Xiangyang Xiangyang No. 1 People’s Hospital Affiliated to Hubei University of Medicine, Xiangyang, China; Department of Public Health, Xiangyang No. 1 People’s Hospital Affiliated to Hubei University of Medicine, Xiangyang, Hubei, China; An and Song contributed equally to this work.",
+        "orcid": ""
+      },
+      {
+        "name": "Yong Wang",
+        "affiliation": "Department of Respiratory and Critical Care Discipline, Xiangyang No. 1 People’s Hospital Affiliated to Hubei University of Medicine, Xiangyang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Bo Liu",
+        "affiliation": "Department of Infectious Diseases, Xiangyang No. 1 People’s Hospital Affiliated to Hubei University of Medicine, Xiangyang, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, Since the outbreak of the new coronavirus in Wuhan in December 2019, it has now spread to more than 100 countries around the world. The cumulative number of confirmed cases is as high as 1.1 million, with 58,000 deaths, bringing huge challenges to the people world-wide. The Chinese government has curbed the rising epidemic situation in China t",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.4.20",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "229-230",
+    "views": 7198,
+    "downloads": 4301,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2206",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2206",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2206",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2206",
+    "localPdfUrl": "js/data/pdfs/2206.pdf",
+    "pdfUrl": "js/data/pdfs/2206.pdf"
+  },
+  {
+    "id": 2208,
+    "type": "Letter to the Editor",
+    "title": "Features and Limitations of LitCovid Hub for Quick Access to Literature About COVID-19",
+    "authors": [
+      {
+        "name": "Morteza Arab-Zozani",
+        "affiliation": "Social Determinants of Health Research Center, Birjand University of Medical Sciences, Birjand, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Soheil Hassanipour",
+        "affiliation": "Gastrointestinal and Liver Diseases Research Center, Guilan University of Medical Sciences, Rasht, Iran",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, In mid-December 2019, an outbreak of severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2), which began in Wuhan, China, has spread throughout the country and COVID-19 was announced as a pandemic disease (1). Obtaining the right evidence in the shortest possible time has always been a concern for researchers, policymakers, and decision-",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.4.67",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "231-232",
+    "views": 6903,
+    "downloads": 3060,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2208",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2208",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2208",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2208",
+    "localPdfUrl": "js/data/pdfs/2208.pdf",
+    "pdfUrl": "js/data/pdfs/2208.pdf"
+  },
+  {
+    "id": 2210,
+    "type": "Letter to the Editor",
+    "title": "Ticagrelor Can Be an Important Agent in the Treatment of Severe COVID-19 Patients with Myocardial Infarction",
+    "authors": [
+      {
+        "name": "Ercan Akşit",
+        "affiliation": "Department of Cardiology, Çanakkale Onsekiz Mart University School of Medicine, Çanakkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bahadır Kırılmaz",
+        "affiliation": "Department of Cardiology, Çanakkale Onsekiz Mart University School of Medicine, Çanakkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emine Gazi",
+        "affiliation": "Department of Cardiology, Çanakkale Onsekiz Mart University School of Medicine, Çanakkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Aydın",
+        "affiliation": "Clinic of Cardiology, Eskisehir City Hospital, Eskişehir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, In cases of pneumonia developing due to coronavirus disease 2019 (COVID-19), it has been shown that 71.4% of non-survivors and 0.6% of survivors had disseminated intravascular coagulation (DIC), and the majority of non-survivors had increased D-dimer level (1). TNF-α and IL-6 variants are also known to be risk factors for pneumonia-induced sep",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.4.100",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "4",
+    "pages": "233-233",
+    "views": 5947,
+    "downloads": 3586,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1263",
+    "sourceArticleId": "2210",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2210",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2210",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2210",
+    "localPdfUrl": "js/data/pdfs/2210.pdf",
+    "pdfUrl": "js/data/pdfs/2210.pdf"
+  }
+]

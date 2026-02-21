@@ -1,0 +1,1329 @@
+[
+  {
+    "id": 1812,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "1812",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1812",
+    "localPdfUrl": "js/data/pdfs/1812.pdf",
+    "pdfUrl": "js/data/pdfs/1812.pdf"
+  },
+  {
+    "id": 139,
+    "type": "Original Article",
+    "title": "The Role of p16, p21, p27, p53 and Ki-67 Expression in the Differential Diagnosis of Cutaneous Squamous Cell Carcinomas and Keratoacanthomas: An Immunohistochemical Study",
+    "authors": [
+      {
+        "name": "Recep Bedir",
+        "affiliation": "Department of Pathology, Recep Tayyip Erdoğan University School of Medicine, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hasan Güçer",
+        "affiliation": "Department of Pathology, Recep Tayyip Erdoğan University School of Medicine, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Şehitoğlu",
+        "affiliation": "Department of Pathology, Recep Tayyip Erdoğan University School of Medicine, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cüneyt Yurdakul",
+        "affiliation": "Department of Pathology, Recep Tayyip Erdoğan University School of Medicine, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pelin Bağcı",
+        "affiliation": "Department of Pathology, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pelin Üstüner [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Distinguishing squamous cell carcinoma (SCC) from keratoacanthoma (KA) by histopathological features may not be sufficient for a differential diagnosis, as KAs may, in some cases, imitate well-differentiated SCCs. Aims: In this study, we investigated whether the expression of the p16, p21, p27, p53 genes and a Ki-67 proliferation index are useful in distinguishing between these two tumors. Study Design: Cross-sectional study. Methods: Immunohistochemistry was used to investigate the expression of the p16, p21, p27, p53 genes and the Ki-67 proliferation index was investigated in well-differentiated SCC with KA-like features (n=40) and KA (n=30). Results: The results of all of the examined markers, except for p27 (p16, p21, p53, and Ki-67) were found to be significantly different between the SCC and KA samples (p<0.05). Conclusion: In well-differentiated SCC with KA-like features and KA cases where the differential diagnosis is difficult from a histopathological perspective, the use of p16, p21, p53 expression and a Ki-67 proliferation index can be useful for the differential diagnosis of SCCs and KAs.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Distinguishing squamous cell carcinoma (SCC) from keratoacanthoma (KA) by histopathological features may not be sufficient for a differential diagnosis, as KAs may, in some cases, imitate well-differentiated SCCs.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: In this study, we investigated whether the expression of the p16, p21, p27, p53 genes and a Ki-67 proliferation index are useful in distinguishing between these two tumors.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Cross-sectional study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Immunohistochemistry was used to investigate the expression of the p16, p21, p27, p53 genes and the Ki-67 proliferation index was investigated in well-differentiated SCC with KA-like features (n=40) and KA (n=30).</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: The results of all of the examined markers, except for p27 (p16, p21, p53, and Ki-67) were found to be significantly different between the SCC and KA samples (p&lt;0.05).&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: In well-differentiated SCC with KA-like features and KA cases where the differential diagnosis is difficult from a histopathological perspective, the use of p16, p21, p53 expression and a Ki-67 proliferation index can be useful for the differential diagnosis of SCCs and KAs.&nbsp;</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Distinguishing squamous cell carcinoma (SCC) from keratoacanthoma (KA) by histopathological features may not be sufficient for a differential diagnosis, as KAs may, in some cases, imitate well-differentiated SCCs. Aims: In this study, we investigated whether the expression of the p16, p21, p27, p53 genes and a Ki-67 proliferation index are useful in distinguishing between these two tumors. Study Design: Cross-sectional study. Methods: Immunohistochemistry was used to investigate the expression of the p16, p21, p27, p53 genes and the Ki-67 proliferation index was investigated in well-differentiated SCC with KA-like features (n=40) and KA (n=30). Results: The results of all of the examined markers, except for p27 (p16, p21, p53, and Ki-67) were found to be significantly different between the SCC and KA samples (p<0.05). Conclusion: In well-differentiated SCC with KA-like features and KA cases where the differential diagnosis is difficult from a histopathological perspective, the use of p16, p21, p53 expression and a Ki-67 proliferation index can be useful for the differential diagnosis of SCCs and KAs.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.16442",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "121-127",
+    "views": 7518,
+    "downloads": 9982,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "139",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=139",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=139",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=139",
+    "localPdfUrl": "js/data/pdfs/139.pdf",
+    "pdfUrl": "js/data/pdfs/139.pdf"
+  },
+  {
+    "id": 140,
+    "type": "Original Article",
+    "title": "eNOS Glu298Asp Polymorphism and Endothelial Dysfunction in Patients with and without End-stage Renal Disease",
+    "authors": [
+      {
+        "name": "Nevin İlhan",
+        "affiliation": "Department of Medical Biochemistry, Fırat University School of Medicine, Elazığ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kadir Ateş",
+        "affiliation": "Department of Medical Biochemistry, Fırat University School of Medicine, Elazığ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Necip İlhan",
+        "affiliation": "Department of Medical Biochemistry, Fırat University School of Medicine, Elazığ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dilara Kaman",
+        "affiliation": "Department of Medical Biochemistry, Fırat University School of Medicine, Elazığ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hüseyin Çeliker",
+        "affiliation": "Department of Medical Biochemistry, Fırat University School of Medicine, Elazığ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hüseyin Çeliker [[2]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Chronic kidney diseases are known to influence nitric oxide metabolites (NOx) and asymmetric dimethylarginine (ADMA), though the exact mechanism is still poorly understood. Aims: The purpose of the present study was to examine eNOS Glu298Asp gene polymorphism, plasma NOx and ADMA concentration in subjects with and without End-stage Renal Disease. Study Design: Case-control study. Methods: In this study, genotype distributions of Glu298Asp in exon 7 of the eNOS gene polymorphisms in 130 hemodialysis and 64 peritoneal dialysis patients were compared with 92 controls. NOx was measured by using the Griess reaction while arginine, ADMA and SDMA measurements were performed by HPLC. Genotyping for eNOS Glu298Asp polymorphism was detected with the polymerase chain reaction and/or polymerase chain reaction-restriction fragment length polymorphism (PCR-RFLP) technique. Results: When the genotype frequencies of TT and GT genes were compared between both groups, there was no detected statistically important difference, eventhough a TT genotype frequency was 27 (20.8%) versus 17 (26.6%), GT heterozygote genotype frequency was 52 (40%) versus 22 (34.4%), and GG homozygote genotype frequency was 51 (39.2%) versus 25 (39.1%), respectively (p>0.05). NOx, SDMA and ADMA concentrations were significantly elevated in subjects with hemodialysis patients as compared to their corresponding controls. Whereas nitrite was found to be significantly decreased in the patient with peritoneal dialysis. Conclusion: Not observed any connection between the Glu298Asp polymorphism in the eNOS gene and end-stage Renal Diseases in our study population under different dialysis treatments. However, higher ADMA and SDMA concentrations in subjects with ESRD support the existing hypothesis that NOx overproduction affects endothelial dysfunction. Thus, the reduction of ADMA and SDMA concentrations might play a protective role in ESRD patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Chronic kidney diseases are known to influence nitric oxide metabolites (NOx) and asymmetric dimethylarginine (ADMA), though the exact mechanism is still poorly understood.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: The purpose of the present study was to examine eNOS Glu298Asp gene polymorphism, plasma NOx and ADMA concentration in subjects with and without End-stage Renal Disease.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Case-control study.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: In this study, genotype distributions of Glu298Asp in exon 7 of the eNOS gene polymorphisms in 130 hemodialysis and 64 peritoneal dialysis patients were compared with 92 controls. NOx was measured by using the Griess reaction while arginine, ADMA and SDMA measurements were performed by HPLC. Genotyping for eNOS Glu298Asp polymorphism was detected with the polymerase chain reaction and/or polymerase chain reaction-restriction fragment length polymorphism (PCR-RFLP) technique.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: When the genotype frequencies of TT and GT genes were compared between both groups, there was no detected statistically important difference, eventhough a TT genotype frequency was 27 (20.8%) versus 17 (26.6%), GT heterozygote genotype frequency was 52 (40%) versus 22 (34.4%), and GG homozygote genotype frequency was 51 (39.2%) versus 25 (39.1%), respectively (p&gt;0.05). NOx, SDMA and ADMA concentrations were significantly elevated in subjects with hemodialysis patients as compared to their corresponding controls. Whereas nitrite was found to be significantly decreased in the patient with peritoneal dialysis.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Not observed any connection between the Glu298Asp polymorphism in the eNOS gene and end-stage Renal Diseases in our study population under different dialysis treatments. However, higher ADMA and SDMA concentrations in subjects with ESRD support the existing hypothesis that NOx overproduction affects endothelial dysfunction. Thus, the reduction of ADMA and SDMA concentrations might play a protective role in ESRD patients.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Chronic kidney diseases are known to influence nitric oxide metabolites (NOx) and asymmetric dimethylarginine (ADMA), though the exact mechanism is still poorly understood. Aims: The purpose of the present study was to examine eNOS Glu298Asp gene polymorphism, plasma NOx and ADMA concentration in subjects with and without End-stage Renal Disease. Study Design: Case-control study. Methods: In this study, genotype distributions of Glu298Asp in exon 7 of the eNOS gene polymorphisms in 130 hemodialysis and 64 peritoneal dialysis patients were compared with 92 controls. NOx was measured by using the Griess reaction while arginine, ADMA and SDMA measurements were performed by HPLC. Genotyping for eNOS Glu298Asp polymorphism was detected with the polymerase chain reaction and/or polymerase chain reaction-restriction fragment length polymorphism (PCR-RFLP) technique. Results: When the genotype frequencies of TT and GT genes were compared between both groups, there was no detected statistically important difference, eventhough a TT genotype frequency was 27 (20.8%) versus 17 (26.6%), GT heterozygote genotype frequency was 52 (40%) versus 22 (34.4%), and GG homozygote genotype frequency was 51 (39.2%) versus 25 (39.1%), respectively (p>0.05). NOx, SDMA and ADMA concentrations were significantly elevated in subjects with hemodialysis patients as compared to their corresponding controls. Whereas nitrite was found to be significantly decreased in the patient with peritoneal dialysis. Conclusion: Not observed any connection between the Glu298Asp polymorphism in the eNOS gene and end-stage Renal Diseases in our study population under different dialysis treatments. However, higher ADMA and SDMA concentrations in subjects with ESRD support the existing hypothesis that NOx overproduction affects endothelial dysfunction. Thus, the reduction of ADMA and SDMA concentrations might play a protective role in ESRD patients.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.16566",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "128-137",
+    "views": 6861,
+    "downloads": 9915,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "140",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=140",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=140",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=140",
+    "localPdfUrl": "js/data/pdfs/140.pdf",
+    "pdfUrl": "js/data/pdfs/140.pdf"
+  },
+  {
+    "id": 141,
+    "type": "Original Article",
+    "title": "Resveratrol Prevented Lipopolysaccharide-Induced Endothelial Dysfunction in Rat Thoracic Aorta Through Increased eNOS Expression",
+    "authors": [
+      {
+        "name": "Seda Sultan Uğurel",
+        "affiliation": "Department of Pharmacology, Akdeniz University School of Medicine, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selvinaz Dalaklıoğlu",
+        "affiliation": "Department of Pharmacology, Akdeniz University School of Medicine, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Arda Taşatargil",
+        "affiliation": "Department of Pharmacology, Akdeniz University School of Medicine, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nilay Kuşçu",
+        "affiliation": "Department of Histology and Embryology, Akdeniz University School of Medicine, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Çiler Çelik Özenci",
+        "affiliation": "Department of Histology and Embryology, Akdeniz University School of Medicine, Antalya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The cardiovascular benefits of Resveratrol (RVT) have been well established by previous experimental and clinical studies. Aims: The goal of this study was to test the effectiveness of RVT administration on the impaired endothelial function induced by lipopolysaccharide (LPS), and to elucidate the role of endothelial nitric oxide synthase (eNOS)/Sirtuin 1 (SIRT1) pathway. Study Design: Animal experiment. Methods: Endotoxemia was induced by intraperitoneal injection of 10 mg/kg LPS, and the thoracic aorta was isolated six hours later. RVT was injected intraperitoneally 15 minutes before LPS administration. Six hours after LPS injection, potassium chloride (KCl), phenylephrine (Phe), acetylcholine (ACh), and sodium nitroprusside (SNP) were used to examine to vascular reactivity and endothelial function. eNOS, phospho-eNOS (p-eNOS) (Ser 1177), and SIRT1 expressions in thoracic aorta were evaluated by Western blot. Results: LPS administration significantly inhibited the relaxation response induced by ACh, while the relaxation to SNP was not significantly altered. Phe- and KCl-induced contractile responses in the thoracic aorta significantly decreased in LPS-injected group. eNOS and p-eNOS expression decreased significantly in arteries obtained from LPS group rats. The impaired vasoreactivity as well as decreased expressions of eNOS, p-eNOS, and SIRT1 in vessels from LPS-injected rats were improved by RVT treatment. Conclusion: The endothelium-dependent vasodilatation of the thoracic aorta was significantly inhibited by LPS administration, and RVT treatment may improve vascular endothelial function. The protective effect of RVT might be associated with increased eNOS expression and activity.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: The cardiovascular benefits of Resveratrol (RVT) have been well established by previous experimental and clinical studies.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: The goal of this study was to test the effectiveness of RVT administration on the impaired endothelial function induced by lipopolysaccharide (LPS), and to elucidate the role of endothelial nitric oxide synthase (eNOS)/Sirtuin 1 (SIRT1) pathway.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Animal experiment.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Endotoxemia was induced by intraperitoneal injection of 10&thinsp;mg/kg LPS, and the thoracic aorta was isolated six hours later. RVT was injected intraperitoneally 15 minutes before LPS administration. Six hours after LPS injection, potassium chloride (KCl), phenylephrine (Phe), acetylcholine (ACh), and sodium nitroprusside (SNP) were used to examine to vascular reactivity and endothelial function. eNOS, phospho-eNOS (p-eNOS) (Ser 1177), and SIRT1 expressions in thoracic aorta were evaluated by Western blot.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: LPS administration significantly inhibited the relaxation response induced by ACh, while the relaxation to SNP was not significantly altered. Phe- and KCl-induced contractile responses in the thoracic aorta significantly decreased in LPS-injected group. eNOS and p-eNOS expression decreased significantly in arteries obtained from LPS group rats. The impaired vasoreactivity as well as decreased expressions of eNOS, p-eNOS, and SIRT1 in vessels from LPS-injected rats were improved by RVT treatment. &nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: The endothelium-dependent vasodilatation of the thoracic aorta was significantly inhibited by LPS administration, and RVT treatment may improve vascular endothelial function. The protective effect of RVT might be associated with increased eNOS expression and activity.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The cardiovascular benefits of Resveratrol (RVT) have been well established by previous experimental and clinical studies. Aims: The goal of this study was to test the effectiveness of RVT administration on the impaired endothelial function induced by lipopolysaccharide (LPS), and to elucidate the role of endothelial nitric oxide synthase (eNOS)/Sirtuin 1 (SIRT1) pathway. Study Design: Animal experiment. Methods: Endotoxemia was induced by intraperitoneal injection of 10 mg/kg LPS, and the thoracic aorta was isolated six hours later. RVT was injected intraperitoneally 15 minutes before LPS administration. Six hours after LPS injection, potassium chloride (KCl), phenylephrine (Phe), acetylcholine (ACh), and sodium nitroprusside (SNP) were used to examine to vascular reactivity and endothelial function. eNOS, phospho-eNOS (p-eNOS) (Ser 1177), and SIRT1 expressions in thoracic aorta were evaluated by Western blot. Results: LPS administration significantly inhibited the relaxation response induced by ACh, while the relaxation to SNP was not significantly altered. Phe- and KCl-induced contractile responses in the thoracic aorta significantly decreased in LPS-injected group. eNOS and p-eNOS expression decreased significantly in arteries obtained from LPS group rats. The impaired vasoreactivity as well as decreased expressions of eNOS, p-eNOS, and SIRT1 in vessels from LPS-injected rats were improved by RVT treatment. Conclusion: The endothelium-dependent vasodilatation of the thoracic aorta was significantly inhibited by LPS administration, and RVT treatment may improve vascular endothelial function. The protective effect of RVT might be associated with increased eNOS expression and activity.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.16879",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "138-143",
+    "views": 6958,
+    "downloads": 3091,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "141",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=141",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=141",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=141",
+    "localPdfUrl": "js/data/pdfs/141.pdf",
+    "pdfUrl": "js/data/pdfs/141.pdf"
+  },
+  {
+    "id": 142,
+    "type": "Original Article",
+    "title": "Evaluation of Cisplatin Neurotoxicity in Cultured Rat Dorsal Root Ganglia via Cytosolic Calcium Accumulation",
+    "authors": [
+      {
+        "name": "Kevser Erol",
+        "affiliation": "Department of Pharmacology, Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Semra Yiğitaslan",
+        "affiliation": "Department of Pharmacology, Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Çiğdem Ünel",
+        "affiliation": "Department of Pharmacology, Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bilgin Kaygısız",
+        "affiliation": "Department of Pharmacology, Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Engin Yıldırım",
+        "affiliation": "Department of Pharmacology, Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Calcium homeostasis is considered to be important in antineoplastic as well as in neurotoxic adverse effects of cisplatin. Aims: This study aimed to investigate the role of Ca2+ in cisplatin neurotoxicity in cultured rat dorsal root ganglia (DRG) cells. Study Design: Cell culture study. Methods: DRG cells prepared from 1-day old Sprague-Dawley rats were used to determine the role of Ca2+ in the cisplatin (10-600 μM) neurotoxicity. The cells were incubated with cisplatin plus nimodipine (1-3 μM), dizocilpine (MK-801) (1-3 μM) or thapsigargin (100-300 nM). Toxicity of cisplatinon DRG cells was determined by the MTT assay. Results: The neurotoxicity of cisplatin was significant when used in high concentrations (100-600 μM). Nimodipine (1 μM) but not MK-801 or thapsigargin prevented the neurotoxic effects of 200 μM of cisplatin. Conclusion: Voltage-dependent calcium channels may play a role in cisplatin neurotoxicity.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Calcium homeostasis is considered to be important in antineoplastic as well as in neurotoxic adverse effects of cisplatin.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: This study aimed to investigate the role of Ca2+ in cisplatin neurotoxicity in cultured rat dorsal root ganglia (DRG) cells.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Cell culture study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: DRG cells prepared from 1-day old Sprague-Dawley rats were used to determine the role of Ca2+ in the cisplatin (10-600 &mu;M) neurotoxicity. The cells were incubated with cisplatin plus nimodipine (1-3 &mu;M), dizocilpine (MK-801) (1-3 &mu;M) or thapsigargin (100-300 nM). Toxicity of cisplatinon DRG cells was determined by the MTT assay.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: The neurotoxicity of cisplatin was significant when used in high concentrations (100-600 &mu;M). Nimodipine (1 &mu;M) but not MK-801 or thapsigargin prevented the neurotoxic effects of 200 &mu;M of cisplatin.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Voltage-dependent calcium channels may play a role in cisplatin neurotoxicity.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Calcium homeostasis is considered to be important in antineoplastic as well as in neurotoxic adverse effects of cisplatin. Aims: This study aimed to investigate the role of Ca2+ in cisplatin neurotoxicity in cultured rat dorsal root ganglia (DRG) cells. Study Design: Cell culture study. Methods: DRG cells prepared from 1-day old Sprague-Dawley rats were used to determine the role of Ca2+ in the cisplatin (10-600 μM) neurotoxicity. The cells were incubated with cisplatin plus nimodipine (1-3 μM), dizocilpine (MK-801) (1-3 μM) or thapsigargin (100-300 nM). Toxicity of cisplatinon DRG cells was determined by the MTT assay. Results: The neurotoxicity of cisplatin was significant when used in high concentrations (100-600 μM). Nimodipine (1 μM) but not MK-801 or thapsigargin prevented the neurotoxic effects of 200 μM of cisplatin. Conclusion: Voltage-dependent calcium channels may play a role in cisplatin neurotoxicity.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.161110",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "144-151",
+    "views": 6860,
+    "downloads": 9665,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "142",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=142",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=142",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=142",
+    "localPdfUrl": "js/data/pdfs/142.pdf",
+    "pdfUrl": "js/data/pdfs/142.pdf"
+  },
+  {
+    "id": 143,
+    "type": "Original Article",
+    "title": "Perceived Social Support and Its Impact on Mental Fatigue in Patients with Mild Traumatic Brain Injury",
+    "authors": [
+      {
+        "name": "En quan Zeng",
+        "affiliation": "North Shichuan Medical College, Nanchong, Sichuan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Bing Du",
+        "affiliation": "North Shichuan Medical College, Nanchong, Sichuan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiao bing Tian",
+        "affiliation": "North Shichuan Medical College, Nanchong, Sichuan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ben qiang Zeng",
+        "affiliation": "People's Hospital of Wenjiang, Chengdu, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jing lun Tian",
+        "affiliation": "People's Hospital of Wenjiang, Chengdu, China",
+        "orcid": ""
+      },
+      {
+        "name": "Hong Chen",
+        "affiliation": "Affiliated Hospital of North Sichuan Medical College, Nanchong, Sichuan, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Although mental fatigue was well-recognized as one of the long-term consequences following mild traumatic brain injury (MTBI) that required ongoing support, evidences for the optimal management remained inadequate. Aims: To investigate the temporal profile of mental fatigue during the first year after MTBI and examine the impact of perceived social support on the recovery from post-MTBI fatigue. Study Design: Observational case-control study. Methods: This study was conducted among post-MTBI patients admitted to the emergency department in a tertiary-care hospital in Sichuan, China. During four waves of assessments at 1 week, 3, 6 and 12 months, mental fatigue was assessed through Mental Fatigue Scale (MFS) whereas social support was assessed by the Multidimensional Scale of Perceived Social Support (MSPSS). Results: There were 65.1%, 37.1%, 34.8% and 32.5% individuals being identified as those with mental fatigue at 1 week, 3, 6 and 12 months, respectively. The scores of MFS didn’t change substantially since 3 months post-injury. Compared to non-fatigued MTBI patients, those with long-lasting post- MTBI fatigue reported extremely lower level of perceived social support. Moreover, improved social support at 1 week was negatively associated with the occurrence of long-lasting fatigue. Conclusion: Sufficient social support could significantly decrease the occurrence of long-lasting mental fatigue among MTBI cases. It seemed of great importance to modify the emphasis of rehabilitation to include assessment and improvement of perceived social support at earlier stages after injury.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Although mental fatigue was well-recognized as one of the long-term consequences following mild traumatic brain injury (MTBI) that required ongoing support, evidences for the optimal management remained inadequate.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: To investigate the temporal profile of mental fatigue during the first year after MTBI and examine the impact of perceived social support on the recovery from post-MTBI fatigue.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Observational case-control study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: This study was conducted among post-MTBI patients admitted to the emergency department in a tertiary-care hospital in Sichuan, China. During four waves of assessments at 1 week, 3, 6 and 12 months, mental fatigue was assessed through Mental Fatigue Scale (MFS) whereas social support was assessed by the Multidimensional Scale of Perceived Social Support (MSPSS).</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: There were 65.1%, 37.1%, 34.8% and 32.5% individuals being identified as those with mental fatigue at 1 week, 3, 6 and 12 months, respectively. The scores of MFS didn&rsquo;t change substantially since 3 months post-injury. Compared to non-fatigued MTBI patients, those with long-lasting post- MTBI fatigue reported extremely lower level of perceived social support. Moreover, improved social support at 1 week was negatively associated with the occurrence of long-lasting fatigue.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Sufficient social support could significantly decrease the occurrence of long-lasting mental fatigue among MTBI cases. It seemed of great importance to modify the emphasis of rehabilitation to include assessment and improvement of perceived social support at earlier stages after injury.&nbsp;</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Although mental fatigue was well-recognized as one of the long-term consequences following mild traumatic brain injury (MTBI) that required ongoing support, evidences for the optimal management remained inadequate. Aims: To investigate the temporal profile of mental fatigue during the first year after MTBI and examine the impact of perceived social support on the recovery from post-MTBI fatigue. Study Design: Observational case-control study. Methods: This study was conducted among post-MTBI patients admitted to the emergency department in a tertiary-care hospital in Sichuan, China. During four waves of assessments at 1 week, 3, 6 and 12 months, mental fatigue was assessed through Mental Fatigue Scale (MFS) whereas social support was assessed by the Multidimensional Scale of Perceived Social Support (MSPSS). Results: There were 65.1%, 37.1%, 34.8% and 32.5% individuals being identified as those with mental fatigue at 1 week, 3, 6 and 12 months, respectively. The scores of MFS didn’t change substantially since 3 months post-injury. Compared to non-fatigued MTBI patients, those with long-lasting post- MTBI fatigue reported extremely lower level of perceived social support. Moreover, improved social support at 1 week was negatively associated with the occurrence of long-lasting fatigue. Conclusion: Sufficient social support could significantly decrease the occurrence of long-lasting mental fatigue among MTBI cases. It seemed of great importance to modify the emphasis of rehabilitation to include assessment and improvement of perceived social support at earlier stages after injury.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.15701",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "152-157",
+    "views": 7071,
+    "downloads": 10232,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "143",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=143",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=143",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=143",
+    "localPdfUrl": "js/data/pdfs/143.pdf",
+    "pdfUrl": "js/data/pdfs/143.pdf"
+  },
+  {
+    "id": 144,
+    "type": "Original Article",
+    "title": "Investigating the Impacts of Preoperative Steroid Treatment on Tumor Necrosis Factor-Alpha and Duration of Extubation Time underwent Ventricular Septal Defect Surgery",
+    "authors": [
+      {
+        "name": "H.Hakan Poyrazoğlu",
+        "affiliation": "Department of Cardiovascular Surgery, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zeynel Duman",
+        "affiliation": "Department of Cardiovascular Surgery, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şerafettin Demir",
+        "affiliation": "Department of Cardiovascular Surgery, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Atakan Atalay",
+        "affiliation": "Department of Cardiovascular Surgery, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bahattin Çiftçi",
+        "affiliation": "Department of Cardiovascular Surgery, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İhsan Bayraktar",
+        "affiliation": "Department of Cardiovascular Surgery, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Funda Tor",
+        "affiliation": "Department of Cardiovascular Surgery, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şerafettin Demir",
+        "affiliation": "Department of Cardiology, Adana State Hospital, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "M.Kemal Avşar [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Cardiopulmonary bypass is known to cause inflammatory events. Inflammation occurs due to many known important biological processes. Numerous mechanisms are known to be responsible for the development of inflammatory processes. Currently, there are many defined mediators as a tumor necrosis factor-α (TNF-α) playing an active role in this process. Aims: This research was to investigate the effects of preoperative steroid use on inflammatory mediator TNF-α and on time to extubation postoperatively in ventricular septal defect patients undergoing cardiopulmonary bypass surgery. Study Design: Controlled clinical study. Methods: This study included 30 patients. These patients were assigned into two groups, each containing 15 patients. 5 micrograms/kg methylprednisolone was injected intravenously 2 hours before the surgery to Group I, whereas there was no application to the patients in Group II. TNF-α (pg/mL) level was measured in arterial blood samples obtained at four periods including: the preoperative period (Pre TNF); at the 5th minute of cross-clamping (Per TNF); 2 hours after termination of cardiopulmonary bypass (Post TNF); and at the postoperative 24th hours in cardiovascular surgery intensive care unit (Post 24 h TNF). Results: The mean cross-clamp time was 66±40 and 55±27 minutes in Group I and Group II respectively. No significant difference was found between the groups in terms of cross-clamp time (p>0.05). The mean time to extubation was 6.1±2.3 hours in Group I and 10.6±3.4 hours in Group II. Group I extubation time was significantly shorter than Group II. Group I TNF-α levels at Post TNF and Post24h TNF was lower than Group II. These differences are also statistically significant (p<0.05). Conclusion: There is a strong indication that preoperative steroid treatment reduced the TNF-α level together with shortens duration of postoperative intubation and positively contributes to extubation in ventricular septal defect patients operated in cardiac surgery with cardiopulmonary bypass. (ClinicalTrials.gov Identifier: TCTR20150930001)",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Cardiopulmonary bypass is known to cause inflammatory events. Inflammation occurs due to many known important biological processes. Numerous mechanisms are known to be responsible for the development of inflammatory processes. Currently, there are many defined mediators as a tumor necrosis factor-&alpha; (TNF-&alpha;) playing an active role in this process.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: This research was to investigate the effects of preoperative steroid use on inflammatory mediator TNF-&alpha; and on time to extubation postoperatively in ventricular septal defect patients undergoing cardiopulmonary bypass surgery.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design</strong>: Controlled clinical study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: This study included 30 patients. These patients were assigned into two groups, each containing 15 patients. 5 micrograms/kg methylprednisolone was injected intravenously 2 hours before the surgery to Group I, whereas there was no application to the patients in Group II. TNF-&alpha; (pg/mL) level was measured in arterial blood samples obtained at four periods including: the preoperative period (Pre TNF); at the 5th minute of cross-clamping (Per TNF); 2 hours after termination of cardiopulmonary bypass (Post TNF); and at the postoperative 24th hours in cardiovascular surgery intensive care unit (Post 24 h TNF).&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: The mean cross-clamp time was 66&plusmn;40 and 55&plusmn;27 minutes in Group I and Group II respectively. No significant difference was found between the groups in terms of cross-clamp time (p&gt;0.05). The mean time to extubation was 6.1&plusmn;2.3 hours in Group I and 10.6&plusmn;3.4 hours in Group II. Group I extubation time was significantly shorter than Group II. Group I TNF-&alpha; levels at Post TNF and Post24h TNF was lower than Group II. These differences are also statistically significant (p&lt;0.05).&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: There is a strong indication that preoperative steroid treatment reduced the TNF-&alpha; level together with shortens duration of postoperative intubation and positively contributes to extubation in ventricular septal defect patients operated in cardiac surgery with cardiopulmonary bypass. (ClinicalTrials.gov Identifier: TCTR20150930001)&nbsp;</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Cardiopulmonary bypass is known to cause inflammatory events. Inflammation occurs due to many known important biological processes. Numerous mechanisms are known to be responsible for the development of inflammatory processes. Currently, there are many defined mediators as a tumor necrosis factor-α (TNF-α) playing an active role in this process. Aims: This research was to investigate the effects of preoperative steroid use on inflammatory mediator TNF-α and on time to extubation postoperatively in ventricular septal defect patients undergoing cardiopulmonary bypass surgery. Study Design: Controlled clinical study. Methods: This study included 30 patients. These patients were assigned into two groups, each containing 15 patients. 5 micrograms/kg methylprednisolone was injected intravenously 2 hours before the surgery to Group I, whereas there was no application to the patients in Group II. TNF-α (pg/mL) level was measured in arterial blood samples obtained at four periods including: the preoperative period (Pre TNF); at the 5th minute of cross-clamping (Per TNF); 2 hours after termination of cardiopulmonary bypass (Post TNF); and at the postoperative 24th hours in cardiovascular surgery intensive care unit (Post 24 h TNF). Results: The mean cross-clamp time was 66±40 and 55±27 minutes in Group I and Group II respectively. No significant difference was found between the groups in terms of cross-clamp time (p>0.05). The mean time to extubation was 6.1±2.3 hours in Group I and 10.6±3.4 hours in Group II. Group I extubation time was significantly shorter than Group II. Group I TNF-α levels at Post TNF and Post24h TNF was lower than Group II. These differences are also statistically significant (p<0.05). Conclusion: There is a strong indication that preoperative steroid treatment reduced the TNF-α level together with shortens duration of postoperative intubation and positively contributes to extubation in ventricular septal defect patients operated in cardiac surgery with cardiopulmonary bypass. (ClinicalTrials.gov Identifier: TCTR20150930001)",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.16379",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "158-163",
+    "views": 7036,
+    "downloads": 10307,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "144",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=144",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=144",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=144",
+    "localPdfUrl": "js/data/pdfs/144.pdf",
+    "pdfUrl": "js/data/pdfs/144.pdf"
+  },
+  {
+    "id": 145,
+    "type": "Original Article",
+    "title": "Oral Health, Obesity Status and Nutritional Habits in Turkish Children and Adolescents: An Epidemiological Study",
+    "authors": [
+      {
+        "name": "Servet Kesim",
+        "affiliation": "Department of Periodontology, Erciyes University School of Dentistry, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Betül Çiçek",
+        "affiliation": "Department of Nutrition and Dietetics, Erciyes University School of Health Sciences, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cüneyt Asım Aral",
+        "affiliation": "Department of Periodontology, Şifa University School of Dentistry, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Öztürk",
+        "affiliation": "Department of Biostatistics and Medical Informatics, Erciyes University School of Medicine, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mümtaz Mustafa Mazıcıoğlu",
+        "affiliation": "Department of Family Medicine, Erciyes University School of Medicine, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selim Kurtoğlu",
+        "affiliation": "Department of Pediatrics, Division of Neonatology, Erciyes University School of Medicine, Kayseri, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Studies evaluating the relationship between oral health status and obesity have provided conflicting data. Therefore, there is a great need to investigate and clarify the possible connection in a comprehensive sample. Aims: To assess the relationship of obesity and oral health status among children and adolescents aged 6 to 17 years-old. Study Design: Cross-sectional study. Methods: Data were obtained from 4,534 children and adolescents (2,018 boys and 2,516 girls). Questionnaires were sent home prior to examination; afterwards, anthropometric and dental data were collected from participants. Community Periodontal Index (CPI) and number of decayed, missing, and filled teeth in the permanent dentition (DMFT), and deciduous dentition (dmft) index were used to measure oral health status. Height, body weight, body mass index (BMI), waist circumference (WC), and body fat percentage were analyzed. Results: For DMFT scores, healthy (score=0) girls and boys had significantly higher BMI and WC values than unhealthy (score>1) girls and boys (p<0.05). Healthy girls had higher fat percentage values than unhealthy girls (p<0.05). In terms of CPI scores, healthy boys had lower BMI and WC values than unhealthy boys (p<0.05). According to multiple binary logistic regression results for model 1, BMI predicted DMFT scores in both genders but CPI scores only in boys. No beverage consumption predicted DMFT scores in boys, while milk consumption predicted DMFT scores in girls. No meal skipping predicted CPI scores in boys. For model 2, WC predicted DMFT scores in both genders and CPI scores only in boys. Milk consumption predicted DMFT scores only in girls. No meal skipping predicted CPI scores for both gender (p<0.05). According to DMFT, there were significant differences between the frequencies of the BMI groups (normal weight, overweight and obese) at the age of 7 (girls only), 9, 10, and 16 (boys only) years and overall (only girls) (p<0.05). According to CPI, significant differences between the frequencies of the BMI groups at the age of 16 (boys only) and 17 (girls only) were seen (p<0.05). Conclusion: Periodontal and dental status appears to correlate with nutritional habits and obesity. Obesity and dental/periodontal diseases are multifactorial diseases that follow similar risk patterns and develop from an interaction between chronic conditions originating early in life. It is important for all health professionals to educate patients at risk about the progression of periodontal and dental diseases and the importance of proper oral hygiene.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Studies evaluating the relationship between oral health status and obesity have provided conflicting data. Therefore, there is a great need to investigate and clarify the possible connection in a comprehensive sample.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: To assess the relationship of obesity and oral health status among children and adolescents aged 6 to 17 years-old.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Cross-sectional study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Data were obtained from 4,534 children and adolescents (2,018 boys and 2,516 girls). Questionnaires were sent home prior to examination; afterwards, anthropometric and dental data were collected from participants. Community Periodontal Index (CPI) and number of decayed, missing, and filled teeth in the permanent dentition (DMFT), and deciduous dentition (dmft) index were used to measure oral health status. Height, body weight, body mass index (BMI), waist circumference (WC), and body fat percentage were analyzed. &nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: For DMFT scores, healthy (score=0) girls and boys had significantly higher BMI and WC values than unhealthy (score&gt;1) girls and boys (p&lt;0.05). Healthy girls had higher fat percentage values than unhealthy girls (p&lt;0.05). In terms of CPI scores, healthy boys had lower BMI and WC values than unhealthy boys (p&lt;0.05). According to multiple binary logistic regression results for model 1, BMI predicted DMFT scores in both genders but CPI scores only in boys. No beverage consumption predicted DMFT scores in boys, while milk consumption predicted DMFT scores in girls. No meal skipping predicted CPI scores in boys. For model 2, WC predicted DMFT scores in both genders and CPI scores only in boys. Milk consumption predicted DMFT scores only in girls. No meal skipping predicted CPI scores for both gender (p&lt;0.05). According to DMFT, there were significant differences between the frequencies of the BMI groups (normal weight, overweight and obese) at the age of 7 (girls only), 9, 10, and 16 (boys only) years and overall (only girls) (p&lt;0.05). According to CPI, significant differences between the frequencies of the BMI groups at the age of 16 (boys only) and 17 (girls only) were seen (p&lt;0.05).&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Periodontal and dental status appears to correlate with nutritional habits and obesity. Obesity and dental/periodontal diseases are multifactorial diseases that follow similar risk patterns and develop from an interaction between chronic conditions originating early in life. It is important for all health professionals to educate patients at risk about the progression of periodontal and dental diseases and the importance of proper oral hygiene.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Studies evaluating the relationship between oral health status and obesity have provided conflicting data. Therefore, there is a great need to investigate and clarify the possible connection in a comprehensive sample. Aims: To assess the relationship of obesity and oral health status among children and adolescents aged 6 to 17 years-old. Study Design: Cross-sectional study. Methods: Data were obtained from 4,534 children and adolescents (2,018 boys and 2,516 girls). Questionnaires were sent home prior to examination; afterwards, anthropometric and dental data were collected from participants. Community Periodontal Index (CPI) and number of decayed, missing, and filled teeth in the permanent dentition (DMFT), and deciduous dentition (dmft) index were used to measure oral health status. Height, body weight, body mass index (BMI), waist circumference (WC), and body fat percentage were analyzed. Results: For DMFT scores, healthy (score=0) girls and boys had significantly higher BMI and WC values than unhealthy (score>1) girls and boys (p<0.05). Healthy girls had higher fat percentage values than unhealthy girls (p<0.05). In terms of CPI scores, healthy boys had lower BMI and WC values than unhealthy boys (p<0.05). According to multiple binary logistic regression results for model 1, BMI predicted DMFT scores in both genders but CPI scores only in boys. No beverage consumption predicted DMFT scores in boys, while milk consumption predicted DMFT scores in girls. No meal skipping predicted CPI scores in boys. For model 2, WC predicted DMFT scores in both genders and CPI scores only in boys. Milk consumption predicted DMFT scores only in girls. No meal skipping predicted CPI scores for both gender (p<0.05). According to DMFT, there were significant differences between the frequencies of the BMI groups (normal weight, overweight and obese) at the age of 7 (girls only), 9, 10, and 16 (boys only) years and overall (only girls) (p<0.05). According to CPI, significant differences between the frequencies of the BMI groups at the age of 16 (boys only) and 17 (girls only) were seen (p<0.05). Conclusion: Periodontal and dental status appears to correlate with nutritional habits and obesity. Obesity and dental/periodontal diseases are multifactorial diseases that follow similar risk patterns and develop from an interaction between chronic conditions originating early in life. It is important for all health professionals to educate patients at risk about the progression of periodontal and dental diseases and the importance of proper oral hygiene.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.16699",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "164-172",
+    "views": 7613,
+    "downloads": 10115,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "145",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=145",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=145",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=145",
+    "localPdfUrl": "js/data/pdfs/145.pdf",
+    "pdfUrl": "js/data/pdfs/145.pdf"
+  },
+  {
+    "id": 146,
+    "type": "Original Article",
+    "title": "Marmara University Medical Students’ Perception on Sexual Violence against Women and Induced Abortion in Turkey",
+    "authors": [
+      {
+        "name": "Nimet Emel Lüleci",
+        "affiliation": "Department of Public Health, Marmara University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Eda Kaya",
+        "affiliation": "İstanbul University Cerrahpaşa Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ece Aslan",
+        "affiliation": "Marmara University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ece Söylem Şenkal",
+        "affiliation": "Marmara University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zehra Nadide Çiçek",
+        "affiliation": "Marmara University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Historically, sexual assault is a common issue in Turkey. As doctors are one of the steps to help sexually assaulted women, medical students should have basic knowledge of and sensitivity regarding this subject. Another common women’s public health issue is induced abortion. In countries where access to abortion is restricted, there is a tendency towards unhealthy abortion. Aims: The aims of this study are: (1) to determine the attitudes and opinions of Marmara University Medical Faculty students about sexual assault against women and induced abortion and (2) to propose an educational program for medical students about sexual assault and abortion. Study Design: Cross-sectional study. Methods: The questionnaires were self-administered and the data were analyzed using SPSS v.15.0. First, the descriptive statistics were analyzed, followed by Chi-square for contingency tests assessing differences in attitudes toward sexual assault and induced abortion by factors such as gender and educational term. Differences were considered statistically significant at p<0.05. Results: About 89.6% of the participants (n=266) reported that they had never been sexually assaulted and about 11.5% of the women (n=19) had been sexually assaulted. There was no significant relationship between previous sexual assault and gender (p>0.05). Although there was no significant difference regarding the extent of punishment by victim’s status as a virgin, 21.3% (n=63) agreed that punishment should be more severe when the victim was a virgin. About 40.7% (n=120) agreed that the legal period of abortion in Turkey (10 weeks) should be longer. The majority (86.1%, n=255) agreed that legally prohibiting abortions causes an increase in unhealthy abortions. Conclusion: An educational program on these issues should be developed for medical students.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\tBackground: Historically, sexual assault is a common issue in Turkey. As doctors are one of the steps to help sexually assaulted women, medical students should have basic knowledge of and sensitivity regarding this subject. Another common women&rsquo;s public health issue is induced abortion. In countries where access to abortion is restricted, there is a tendency towards unhealthy abortion.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: The aims of this study are: (1) to determine the attitudes and opinions of Marmara University Medical Faculty students about sexual assault against women and induced abortion and (2) to propose an educational program for medical students about sexual assault and abortion.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Cross-sectional study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: The questionnaires were self-administered and the data were analyzed using SPSS v.15.0. First, the descriptive statistics were analyzed, followed by Chi-square for contingency tests assessing differences in attitudes toward sexual assault and induced abortion by factors such as gender and educational term. Differences were considered statistically significant at p&lt;0.05.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: About 89.6% of the participants (n=266) reported that they had never been sexually assaulted and about 11.5% of the women (n=19) had been sexually assaulted. There was no significant relationship between previous sexual assault and gender (p&gt;0.05). Although there was no significant difference regarding the extent of punishment by victim&rsquo;s status as a virgin, 21.3% (n=63) agreed that punishment should be more severe when the victim was a virgin. About 40.7% (n=120) agreed that the legal period of abortion in Turkey (10 weeks) should be longer. The majority (86.1%, n=255) agreed that legally prohibiting abortions causes an increase in unhealthy abortions.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: An educational program on these issues should be developed for medical students.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Historically, sexual assault is a common issue in Turkey. As doctors are one of the steps to help sexually assaulted women, medical students should have basic knowledge of and sensitivity regarding this subject. Another common women’s public health issue is induced abortion. In countries where access to abortion is restricted, there is a tendency towards unhealthy abortion. Aims: The aims of this study are: (1) to determine the attitudes and opinions of Marmara University Medical Faculty students about sexual assault against women and induced abortion and (2) to propose an educational program for medical students about sexual assault and abortion. Study Design: Cross-sectional study. Methods: The questionnaires were self-administered and the data were analyzed using SPSS v.15.0. First, the descriptive statistics were analyzed, followed by Chi-square for contingency tests assessing differences in attitudes toward sexual assault and induced abortion by factors such as gender and educational term. Differences were considered statistically significant at p<0.05. Results: About 89.6% of the participants (n=266) reported that they had never been sexually assaulted and about 11.5% of the women (n=19) had been sexually assaulted. There was no significant relationship between previous sexual assault and gender (p>0.05). Although there was no significant difference regarding the extent of punishment by victim’s status as a virgin, 21.3% (n=63) agreed that punishment should be more severe when the victim was a virgin. About 40.7% (n=120) agreed that the legal period of abortion in Turkey (10 weeks) should be longer. The majority (86.1%, n=255) agreed that legally prohibiting abortions causes an increase in unhealthy abortions. Conclusion: An educational program on these issues should be developed for medical students.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15230",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "173-180",
+    "views": 6864,
+    "downloads": 9939,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "146",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=146",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=146",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=146",
+    "localPdfUrl": "js/data/pdfs/146.pdf",
+    "pdfUrl": "js/data/pdfs/146.pdf"
+  },
+  {
+    "id": 147,
+    "type": "Original Article",
+    "title": "A Comparision of the Effect of Sugammadex on the Recovery Period and Postoperative Residual Block in Young Elderly and Middle-Aged Elderly Patients",
+    "authors": [
+      {
+        "name": "Emine Yazar",
+        "affiliation": "Department of Anesthesiology and Reanimation, Şırnak State Hospital, Şırnak, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Canan Yılmaz",
+        "affiliation": "Department of Anesthesiology and Reanimation, Bursa Şevket Yılmaz Training and Research Hospital, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Derya Karasu",
+        "affiliation": "Department of Anesthesiology and Reanimation, Bursa Şevket Yılmaz Training and Research Hospital, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yılmaz Apaydın",
+        "affiliation": "Department of Anesthesiology and Reanimation, Bursa Şevket Yılmaz Training and Research Hospital, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Halil Erkan Sayan",
+        "affiliation": "Department of Anesthesiology and Reanimation, Bursa Şevket Yılmaz Training and Research Hospital, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hülya Bilgin",
+        "affiliation": "Department of Anesthesiology and Reanimation, Uludağ University School of Medicine, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selcan Bayraktar",
+        "affiliation": "Department of Anesthesiology and Reanimation, Uludağ University School of Medicine, Bursa, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The importance of the characteristics of anesthesia and postoperative residual curarization (PORC) in the elderly population should be a growing concern in this century. Aims: To investigate the effect of sugammadex on the duration of the recovery from neuromuscular blocking agents and postoperative residual curarization in the young elderly and middle-aged elderly patients who underwent elective laparoscopic cholecystectomy, followed by a train of four (TOF) watch monitorization. Study Design: Prospective clinical trial study. Methods: Sixty patients over the age of 65 with American Society of Anesthesiologists I-III were divided into two groups according to their age (65-74 years old and ≥75 years old). Patients received sugammadex (2.0 mg/kg iv) at the reappearance of the second twitch of the TOF as an agent for reversal of neuromuscular blockage at the end of surgery. Patients were extubated at the time of TOF ≥0.9. The patients’ TOF responses were evaluated with regards to PORC in at the 5th minute and were followed up for one hour in the recovery room. Reintubation was applied for those patients who developed PORC and had peripheric oxygen saturation <90% despite being given 6 L oxygen per min with a face mask. Results: The onset time of neuromuscular blocking agent and time from T2 to achieve TOF ratio 90% (the duration of sugammadex effect) or over were found to be longer in the middle-aged elderly group than in the young elderly group. A statistically significant relationship was found between age and the duration of TOF ratio to reach 0.9 in the same direction. The PORC incidence and rate of reintubation were found to be 1.7% in all patients. Conclusion: In our opinion, it is necessary to remember that the duration of sugammadex effect on the recovery period is prolonged for patients who are aged ≥75 years compared to patients aged between 65-74 years. (ClinicalTrials.gov Identifier: ACTRN12615000758505)",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: The importance of the characteristics of anesthesia and postoperative residual curarization (PORC) in the elderly population should be a growing concern in this century.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: To investigate the effect of sugammadex on the duration of the recovery from neuromuscular blocking agents and postoperative residual curarization in the young elderly and middle-aged elderly patients who underwent elective laparoscopic cholecystectomy, followed by a train of four (TOF) watch monitorization.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Prospective clinical trial study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Sixty patients over the age of 65 with American Society of Anesthesiologists I-III were divided into two groups according to their age (65-74 years old and &ge;75 years old). Patients received sugammadex (2.0 mg/kg iv) at the reappearance of the second twitch of the TOF as an agent for reversal of neuromuscular blockage at the end of surgery. &nbsp;Patients were extubated at the time of TOF &ge;0.9. The patients&rsquo; TOF responses were evaluated with regards to PORC in at the 5th minute and were followed up for one hour in the recovery room. Reintubation was applied for those patients who developed PORC and had peripheric oxygen saturation &lt;90% despite being given 6 L oxygen per min with a face mask.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: The onset time of neuromuscular blocking agent and time from T2 to achieve TOF ratio 90% (the duration of sugammadex effect) or over were found to be longer in the middle-aged elderly group than in the young elderly group. A statistically significant relationship was found between age and the duration of TOF ratio to reach 0.9 in the same direction. The PORC incidence and rate of reintubation were found to be 1.7% in all patients.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: In our opinion, it is necessary to remember that the duration of sugammadex effect on the recovery period is prolonged for patients who are aged &ge;75 years compared to patients aged between 65-74 years. (ClinicalTrials.gov Identifier: ACTRN12615000758505)</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The importance of the characteristics of anesthesia and postoperative residual curarization (PORC) in the elderly population should be a growing concern in this century. Aims: To investigate the effect of sugammadex on the duration of the recovery from neuromuscular blocking agents and postoperative residual curarization in the young elderly and middle-aged elderly patients who underwent elective laparoscopic cholecystectomy, followed by a train of four (TOF) watch monitorization. Study Design: Prospective clinical trial study. Methods: Sixty patients over the age of 65 with American Society of Anesthesiologists I-III were divided into two groups according to their age (65-74 years old and ≥75 years old). Patients received sugammadex (2.0 mg/kg iv) at the reappearance of the second twitch of the TOF as an agent for reversal of neuromuscular blockage at the end of surgery. Patients were extubated at the time of TOF ≥0.9. The patients’ TOF responses were evaluated with regards to PORC in at the 5th minute and were followed up for one hour in the recovery room. Reintubation was applied for those patients who developed PORC and had peripheric oxygen saturation <90% despite being given 6 L oxygen per min with a face mask. Results: The onset time of neuromuscular blocking agent and time from T2 to achieve TOF ratio 90% (the duration of sugammadex effect) or over were found to be longer in the middle-aged elderly group than in the young elderly group. A statistically significant relationship was found between age and the duration of TOF ratio to reach 0.9 in the same direction. The PORC incidence and rate of reintubation were found to be 1.7% in all patients. Conclusion: In our opinion, it is necessary to remember that the duration of sugammadex effect on the recovery period is prolonged for patients who are aged ≥75 years compared to patients aged between 65-74 years. (ClinicalTrials.gov Identifier: ACTRN12615000758505)",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.16383",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "181-187",
+    "views": 7424,
+    "downloads": 9921,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "147",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=147",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=147",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=147",
+    "localPdfUrl": "js/data/pdfs/147.pdf",
+    "pdfUrl": "js/data/pdfs/147.pdf"
+  },
+  {
+    "id": 148,
+    "type": "Original Article",
+    "title": "Oxidative Stress Biomarkers and Adenosine Deaminase over the Alopecic Area of the Patients with Alopecia Areata",
+    "authors": [
+      {
+        "name": "Perihan Öztürk",
+        "affiliation": "Department of Dermatology, Kahramanmaraş Sütçüimam University School of Medicine, Kahramanmaraş, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kamil Mülayim",
+        "affiliation": "Department of Dermatology, Kahramanmaraş Sütçüimam University School of Medicine, Kahramanmaraş, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özer Arıcan",
+        "affiliation": "Department of Dermatology, Fatih University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ergül Belge Kurutaş",
+        "affiliation": "Department of Biochemistry, Kahramanmaraş Sütçüimam University School of Medicine, Kahramanmaraş, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Alopecia areata (AA) is an autoimmune, T-cell mediated, and chronic inflammatory disorder. The pathological mechanisms of disease are unclear, but oxidative stress may be involved. To our knowledge, no studies have examined the oxidative stress levels or biomarkers within the lesional area and skin surface in patients with AA. Similarly, adenosine deaminase (ADA) has not been characterized in AA. Aims: Therefore, we aimed to define ADA levels and the factors involved in oxidative stress from scalp-scrapes of patients with AA. Study Design: Case-control study. Method: A total of 60 patients (30 diagnosed AA patients and 30 healthy controls) were included in the study. ADA as well as oxidative stress factors, including malondialdehyde (MDA), reduced glutathione (GSH), superoxide dismutase (SOD) and catalase (CAT) were analyzed from scalp-scrapes in both groups and quantified by spectrophotometry. Results: Activities of SOD (p=0.000), CAT (p=0.033), and ADA (p=0.004) as well as levels of GSH (p=0.000) and MDA (p=0.032) in patients with AA were higher than the controls statistically significant. Conclusion: Based on these results, factors associated with oxidative stress were elevated in AA patient scalp-scrapes compared to controls and may have a defined role the disease pathogenesis. Alterations in the activities of antioxidant enzymes from AA patient scraping samples may be a local effect of elevated oxidative stress levels. In this disease, oxidative stress may affect not only hair follicle but also any layers of the skin.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Alopecia areata (AA) is an autoimmune, T-cell mediated, and chronic inflammatory disorder. The pathological mechanisms of disease are unclear, but oxidative stress may be involved. To our knowledge, no studies have examined the oxidative stress levels or biomarkers within the lesional area and skin surface in patients with AA. Similarly, adenosine deaminase (ADA) has not been characterized in AA.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: Therefore, we aimed to define ADA levels and the factors involved in oxidative stress from scalp-scrapes of patients with AA.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Case-control study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Method</strong>: A total of 60 patients (30 diagnosed AA patients and 30 healthy controls) were included in the study. ADA as well as oxidative stress factors, including malondialdehyde (MDA), reduced glutathione (GSH), superoxide dismutase (SOD) and catalase (CAT) were analyzed from scalp-scrapes in both groups and quantified by spectrophotometry.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: Activities of SOD (p=0.000), CAT (p=0.033), and ADA (p=0.004) as well as levels of GSH (p=0.000) and MDA (p=0.032) in patients with AA were higher than the controls statistically significant.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Based on these results, factors associated with oxidative stress were elevated in AA patient scalp-scrapes compared to controls and may have a defined role the disease pathogenesis. &nbsp;Alterations in the activities of antioxidant enzymes from AA patient scraping samples may be a local effect of elevated oxidative stress levels. In this disease, oxidative stress may affect not only hair follicle but also any layers of the skin.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Alopecia areata (AA) is an autoimmune, T-cell mediated, and chronic inflammatory disorder. The pathological mechanisms of disease are unclear, but oxidative stress may be involved. To our knowledge, no studies have examined the oxidative stress levels or biomarkers within the lesional area and skin surface in patients with AA. Similarly, adenosine deaminase (ADA) has not been characterized in AA. Aims: Therefore, we aimed to define ADA levels and the factors involved in oxidative stress from scalp-scrapes of patients with AA. Study Design: Case-control study. Method: A total of 60 patients (30 diagnosed AA patients and 30 healthy controls) were included in the study. ADA as well as oxidative stress factors, including malondialdehyde (MDA), reduced glutathione (GSH), superoxide dismutase (SOD) and catalase (CAT) were analyzed from scalp-scrapes in both groups and quantified by spectrophotometry. Results: Activities of SOD (p=0.000), CAT (p=0.033), and ADA (p=0.004) as well as levels of GSH (p=0.000) and MDA (p=0.032) in patients with AA were higher than the controls statistically significant. Conclusion: Based on these results, factors associated with oxidative stress were elevated in AA patient scalp-scrapes compared to controls and may have a defined role the disease pathogenesis. Alterations in the activities of antioxidant enzymes from AA patient scraping samples may be a local effect of elevated oxidative stress levels. In this disease, oxidative stress may affect not only hair follicle but also any layers of the skin.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.16190",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "188-192",
+    "views": 7393,
+    "downloads": 10268,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "148",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=148",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=148",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=148",
+    "localPdfUrl": "js/data/pdfs/148.pdf",
+    "pdfUrl": "js/data/pdfs/148.pdf"
+  },
+  {
+    "id": 149,
+    "type": "Original Article",
+    "title": "Comparing the Efficacy of 7o/o ,   3o/o  and 09o/o Saline in Moderate to\r\nSevere Bronchiolitis in Infants",
+    "authors": [
+      {
+        "name": "Seçil Köse",
+        "affiliation": "Department of Pediatrics, Kayseri Training and Research Hospital, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Şehriyaroğlu",
+        "affiliation": "Department of Pediatrics, Kayseri Training and Research Hospital, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Feyza Esen",
+        "affiliation": "Department of Pediatrics, Kayseri Training and Research Hospital, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Özdemir",
+        "affiliation": "Department of Pediatrics, Kayseri Training and Research Hospital, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zehra Kardaş",
+        "affiliation": "Department of Pediatrics, Kayseri Training and Research Hospital, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Umut Altuğ",
+        "affiliation": "Department of Pediatrics, Kayseri Training and Research Hospital, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Esef Karakuş",
+        "affiliation": "Department of Pediatrics, Kayseri Training and Research Hospital, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Alper Özcan",
+        "affiliation": "Department of Pediatrics, Kayseri Training and Research Hospital, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Fatih Kısaarslan",
+        "affiliation": "Department of Pediatrics, Kayseri Training and Research Hospital, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yasemin Altuner Torun",
+        "affiliation": "Department of Pediatrics, Kayseri Training and Research Hospital, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ferhat Elmalı",
+        "affiliation": "Departments of Biostatistics and Bioinformatics, Erciyes University School of Medicine, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Köse",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Pulmonology Unit, Erciyes University School of Medicine, Kayseri, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: There is no standard treatment option in acute bronchiolitis. 3-7% hypertonic saline (HS) seems to be the effective treatment choice for reducing the hospitalization day. Aims: To compare the effect of nebulized 7% HS/salbutamol and 3% HS/salbutamol to 0.9% saline/salbutamol. The primary outcome measure was the effect of study drugs on the length of hospital stay (LOS). Secondary outcome measures were safety and efficacy in reducing the clinical severity score (CSS) at the 24 hours of the study. Study Design: Prospective, double-blinded randomized clinical study. Methods: The study consists of 104 infants. Groups were constituted according to the treatment they received: These are, group A – 0.9% saline/salbutamol, group B -3% HS/salbutamol and group C-7% HS/salbutamol. Heart beat, Bronchiolitis CSS and oxygen saturation of the patients were determined before and after nebulization. The patients were monitored for adverse reactions. Results: Length of hospital stay in group A, B and C were as follows; 72.0 (20-288) hours in group A, 64.0 (12-168) hours in group B and 60.0 (12-264) hours in group C. No significant differences was observed among three groups (p>0.05). Conclusion: 7% HS and 3% HS does not have any effect to decrease LOS for infants with bronchiolitis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: There is no standard treatment option in acute bronchiolitis. 3-7% hypertonic saline (HS) seems to be the effective treatment choice for reducing the hospitalization day.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: To compare the effect of nebulized 7% HS/salbutamol and 3% HS/salbutamol to 0.9% saline/salbutamol. The primary outcome measure was the effect of study drugs on the length of hospital stay (LOS). Secondary outcome measures were safety and efficacy in reducing the clinical severity score (CSS) at the 24 hours of the study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Prospective, double-blinded randomized clinical study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: The study consists of 104 infants. Groups were constituted according to the treatment they received: These are, group A &ndash; 0.9% saline/salbutamol, group B -3% HS/salbutamol and group C-7% HS/salbutamol. Heart beat, Bronchiolitis CSS and oxygen saturation of the patients were determined before and after nebulization. The patients were monitored for adverse reactions.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: Length of hospital stay in group A, B and C were as follows; 72.0 (20-288) hours in group A, 64.0 (12-168) hours in group B and 60.0 (12-264) hours in group C. No significant differences was observed among three groups (p&gt;0.05).</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: 7% HS and 3% HS does not have any effect to decrease LOS for infants with bronchiolitis.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: There is no standard treatment option in acute bronchiolitis. 3-7% hypertonic saline (HS) seems to be the effective treatment choice for reducing the hospitalization day. Aims: To compare the effect of nebulized 7% HS/salbutamol and 3% HS/salbutamol to 0.9% saline/salbutamol. The primary outcome measure was the effect of study drugs on the length of hospital stay (LOS). Secondary outcome measures were safety and efficacy in reducing the clinical severity score (CSS) at the 24 hours of the study. Study Design: Prospective, double-blinded randomized clinical study. Methods: The study consists of 104 infants. Groups were constituted according to the treatment they received: These are, group A – 0.9% saline/salbutamol, group B -3% HS/salbutamol and group C-7% HS/salbutamol. Heart beat, Bronchiolitis CSS and oxygen saturation of the patients were determined before and after nebulization. The patients were monitored for adverse reactions. Results: Length of hospital stay in group A, B and C were as follows; 72.0 (20-288) hours in group A, 64.0 (12-168) hours in group B and 60.0 (12-264) hours in group C. No significant differences was observed among three groups (p>0.05). Conclusion: 7% HS and 3% HS does not have any effect to decrease LOS for infants with bronchiolitis.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.16840",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "193-197",
+    "views": 7423,
+    "downloads": 10683,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "149",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=149",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=149",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=149",
+    "localPdfUrl": "js/data/pdfs/149.pdf",
+    "pdfUrl": "js/data/pdfs/149.pdf"
+  },
+  {
+    "id": 150,
+    "type": "Original Article",
+    "title": "Short-Term Outcomes and Mortality of Late Preterm Infants",
+    "authors": [
+      {
+        "name": "Cahide Bulut",
+        "affiliation": "Neonatal Intensive Care Unit, Zeynep Kamil Maternity and Children’s Diseases Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuğba Gürsoy",
+        "affiliation": "Neonatal Intensive Care Unit, Zeynep Kamil Maternity and Children’s Diseases Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fahri Ovalı",
+        "affiliation": "Neonatal Intensive Care Unit, Zeynep Kamil Maternity and Children’s Diseases Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Late preterm infants have increased rates of morbidity and mortality compared to term infants. Determining the risk factors in these infants leads to more comprehensive preventive and treatment strategies. Aims: Our aim was to analyse the morbidity rates such as respiratory system diseases, infections, congenital anomalies, hypoglycemia and hematologic abnormalities and mortality rates in a large group of patients at a referral center. Study Design: Retrospective cross-sectional study. Methods: Medical records of late preterm and term infants who were managed at the referral center were analysed. Results: 41752 births were analysed in 3 years. 71.9% of all births were between 37-42 gestational weeks (i.e. term) and 16.1% were between 34-37 weeks (i.e. late preterm). Compared to term infants, late preterm infants had increased rates of short-term problems. The rate of mortality increased with decreased gestational age. The duration of hospitalization was significantly higher in the smallest late preterm infants. Conclusion: This study demonstrated the need that late preterm infants who have higher risk for morbidity and mortality, compared to term infants require close monitoring. The rate of mortality and hospitalization increased with decreased gestational age.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Late preterm infants have increased rates of morbidity and mortality compared to term infants. Determining the risk factors in these infants leads to more comprehensive preventive and treatment strategies.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: Our aim was to analyse the morbidity rates such as respiratory system diseases, infections, congenital anomalies, hypoglycemia and hematologic abnormalities and mortality rates in a large group of patients at a referral center.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Retrospective cross-sectional study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Medical records of late preterm and term infants who were managed at the referral center were analysed.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: 41752 births were analysed in 3 years. 71.9% of all births were between 37-42 gestational weeks (i.e. term) and 16.1% were between 34-37 weeks (i.e. late preterm). Compared to term infants, late preterm infants had increased rates of short-term problems. The rate of mortality increased with decreased gestational age. The duration of hospitalization was significantly higher in the smallest late preterm infants.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: This study demonstrated the need that late preterm infants who have higher risk for morbidity and mortality, compared to term infants require close monitoring. The rate of mortality and hospitalization increased with decreased gestational age.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Late preterm infants have increased rates of morbidity and mortality compared to term infants. Determining the risk factors in these infants leads to more comprehensive preventive and treatment strategies. Aims: Our aim was to analyse the morbidity rates such as respiratory system diseases, infections, congenital anomalies, hypoglycemia and hematologic abnormalities and mortality rates in a large group of patients at a referral center. Study Design: Retrospective cross-sectional study. Methods: Medical records of late preterm and term infants who were managed at the referral center were analysed. Results: 41752 births were analysed in 3 years. 71.9% of all births were between 37-42 gestational weeks (i.e. term) and 16.1% were between 34-37 weeks (i.e. late preterm). Compared to term infants, late preterm infants had increased rates of short-term problems. The rate of mortality increased with decreased gestational age. The duration of hospitalization was significantly higher in the smallest late preterm infants. Conclusion: This study demonstrated the need that late preterm infants who have higher risk for morbidity and mortality, compared to term infants require close monitoring. The rate of mortality and hospitalization increased with decreased gestational age.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.16721",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "198-203",
+    "views": 6976,
+    "downloads": 9948,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "150",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=150",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=150",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=150",
+    "localPdfUrl": "js/data/pdfs/150.pdf",
+    "pdfUrl": "js/data/pdfs/150.pdf"
+  },
+  {
+    "id": 151,
+    "type": "Original Article",
+    "title": "The Effect of Sildenafil on Recuperation from Sciatic Nerve Injury in Rats",
+    "authors": [
+      {
+        "name": "Mehmet Fatih Korkmaz",
+        "affiliation": "Department of Orthopaedics and Traumatology, İnönü University School of Medicine, Malatya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Fethi Ceylan",
+        "affiliation": "Department of Orthopaedics and Traumatology, İnönü University School of Medicine, Malatya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Parlakpınar",
+        "affiliation": "Department of Pharmacology, İnönü University School of Medicine, Malatya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Sağır",
+        "affiliation": "Department of Pharmacology, İnönü University School of Medicine, Malatya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Levent Ediz",
+        "affiliation": "Department of Physical Therapy and Rehabilitation, Van Yüzüncü Yıl University School of Medicine, Van, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emine Şamdancı",
+        "affiliation": "Department of Pathology, İnönü University School of Medicine, Malatya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ersoy Kekilli",
+        "affiliation": "Department of Nuclear Medicine, İnönü University School of Medicine, Malatya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Severe functional and anatomical defects can be detected after the peripheral nerve injury. Pharmacological approaches are preferred rather than surgical treatment in the treatment of nerve injuries. Aims: The aim of this study is to perform histopathological, functional and bone densitometry examinations of the effects of sildenafil on nerve regeneration in a rat model of peripheral nerve crush injury. Study Design: Animal experiment. Methods: The study included a total of thirty adult Sprague-Dawley rats that were divided into three groups of ten rats each. In all rats, a crush injury was created by clamping the right sciatic nerve for one minute. One day before the procedure, rats in group 1 were started on a 28-day treatment consisting of a daily dose of 20 mg/kg body weight sildenafil citrate given orally via a nasogastric tube, while the rats in group 2 were started on an every-other-day dose of 10 mg/kg body weight sildenafil citrate. Rats from group 3 were not administered any drugs. Forty-two days after the nerve damage was created, functional and histopathological examination of both sciatic nerves and bone densitometric evaluation of the extremities were conducted. Results: During the rotarod test, rats from group 3 spent the least amount of time on the rod compared to the drug treatment groups at speeds of 20 rpm, 30 rpm and 40 rpm. In addition, the duration for which each animal could stay on the rod throughout the accelerod test significantly reduced in rats from group 3 compared to rats from groups 1 and 2 in the 4-min test. For the hot-plate latency time, there were no differences among the groups in either the basal level or after sciatic nerve injury. Moreover, there was no significant difference between the groups in terms of the static sciatic index (SSI) on the 42nd day (p=0.147). The amplitude was better evaluated in group 1 compared to the other two groups (p<0.05). Under microscopic evaluation, we observed the greatest amount of nerve regeneration in group 1 and the lowest in group 3. However, this difference was not statistically significant. Moreover, there was no significant difference in the bone mineral density (BMD) levels among the groups. Conclusion: We believe that a daily single dose of sildenafil plays an important role in the treatment of sciatic nerve damage and bone healing and thus can be used as supportive clinical treatment.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Severe functional and anatomical defects can be detected after the peripheral nerve injury. Pharmacological approaches are preferred rather than surgical treatment in the treatment of nerve injuries.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: The aim of this study is to perform histopathological, functional and bone densitometry examinations of the effects of sildenafil on nerve regeneration in a rat model of peripheral nerve crush injury.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design</strong>: Animal experiment.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: The study included a total of thirty adult Sprague-Dawley rats that were divided into three groups of ten rats each. In all rats, a crush injury was created by clamping the right sciatic nerve for one minute. One day before the procedure, rats in group 1 were started on a 28-day treatment consisting of a daily dose of 20 mg/kg body weight sildenafil citrate given orally via a nasogastric tube, while the rats in group 2 were started on an every-other-day dose of 10 mg/kg body weight sildenafil citrate. Rats from group 3 were not administered any drugs. Forty-two days after the nerve damage was created, functional and histopathological examination of both sciatic nerves and bone densitometric evaluation of the extremities were conducted.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: During the rotarod test, rats from group 3 spent the least amount of time on the rod compared to the drug treatment groups at speeds of 20 rpm, 30 rpm and 40 rpm. In addition, the duration for which each animal could stay on the rod throughout the accelerod test significantly reduced in rats from group 3 compared to rats from groups 1 and 2 in the 4-min test. For the hot-plate latency time, there were no differences among the groups in either the basal level or after sciatic nerve injury. Moreover, there was no significant difference between the groups in terms of the static sciatic index (SSI) on the 42nd day (p=0.147). The amplitude was better evaluated in group 1 compared to the other two groups (p&lt;0.05). Under microscopic evaluation, we observed the greatest amount of nerve regeneration in group 1 and the lowest in group 3. However, this difference was not statistically significant. Moreover, there was no significant difference in the bone mineral density (BMD) levels among the groups.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: We believe that a daily single dose of sildenafil plays an important role in the treatment of sciatic nerve damage and bone healing and thus can be used as supportive clinical treatment.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Severe functional and anatomical defects can be detected after the peripheral nerve injury. Pharmacological approaches are preferred rather than surgical treatment in the treatment of nerve injuries. Aims: The aim of this study is to perform histopathological, functional and bone densitometry examinations of the effects of sildenafil on nerve regeneration in a rat model of peripheral nerve crush injury. Study Design: Animal experiment. Methods: The study included a total of thirty adult Sprague-Dawley rats that were divided into three groups of ten rats each. In all rats, a crush injury was created by clamping the right sciatic nerve for one minute. One day before the procedure, rats in group 1 were started on a 28-day treatment consisting of a daily dose of 20 mg/kg body weight sildenafil citrate given orally via a nasogastric tube, while the rats in group 2 were started on an every-other-day dose of 10 mg/kg body weight sildenafil citrate. Rats from group 3 were not administered any drugs. Forty-two days after the nerve damage was created, functional and histopathological examination of both sciatic nerves and bone densitometric evaluation of the extremities were conducted. Results: During the rotarod test, rats from group 3 spent the least amount of time on the rod compared to the drug treatment groups at speeds of 20 rpm, 30 rpm and 40 rpm. In addition, the duration for which each animal could stay on the rod throughout the accelerod test significantly reduced in rats from group 3 compared to rats from groups 1 and 2 in the 4-min test. For the hot-plate latency time, there were no differences among the groups in either the basal level or after sciatic nerve injury. Moreover, there was no significant difference between the groups in terms of the static sciatic index (SSI) on the 42nd day (p=0.147). The amplitude was better evaluated in group 1 compared to the other two groups (p<0.05). Under microscopic evaluation, we observed the greatest amount of nerve regeneration in group 1 and the lowest in group 3. However, this difference was not statistically significant. Moreover, there was no significant difference in the bone mineral density (BMD) levels among the groups. Conclusion: We believe that a daily single dose of sildenafil plays an important role in the treatment of sciatic nerve damage and bone healing and thus can be used as supportive clinical treatment.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.14701",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "204-211",
+    "views": 7034,
+    "downloads": 10039,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "151",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=151",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=151",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=151",
+    "localPdfUrl": "js/data/pdfs/151.pdf",
+    "pdfUrl": "js/data/pdfs/151.pdf"
+  },
+  {
+    "id": 152,
+    "type": "Original Article",
+    "title": "Nasal Bacterial Colonization in Pediatric Epistaxis: The Role of Topical Antibacterial Treatment",
+    "authors": [
+      {
+        "name": "Mukaddder Korkmaz",
+        "affiliation": "Department of Otorhinolaryngology, Ordu University School of Medicine, Ordu, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Korkmaz",
+        "affiliation": "Department of Otorhinolaryngology, Ordu University School of Medicine, Ordu, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yeliz Çetinkol",
+        "affiliation": "Department of Microbiology, Ordu University School of Medicine, Ordu, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Timur Batmaz",
+        "affiliation": "Clinic of Otorhinolaryngology, Ordu University Training and Research Hospital, Ordu, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Epistaxis is a common problem in childhood. It has been shown that children with recurrent epistaxis are more likely to have nasal colonization with Staphylococcus aureus. It has been suggested that low-grade inflammation, crusting and increased vascularity due to bacterial colonization contributes to the development of epistaxis in children. Aims: This study aimed to investigate the nasal colonization and treatment outcome in pediatric epistaxis patients. Study Design: Retrospective cross-sectional study. Methods: Charts of the pediatric patients referred to our university hospital otolaryngology outpatient clinics for the evaluation of epistaxis were reviewed. The patients whose nasal cultures had been taken at the first clinical visit comprised the study group. Results: Staphylococcus aureus was the most common bacteria grown. The presence of crusting and hypervascularity was not dependent on the type of bacterial growth and there was no relation between hypervascularity and crusting of the nasal mucosa. Thirty-six patients were evaluated for the outcome analysis. Resolution of bleeding was not dependent on nasal colonization; in patients with colonization, there was no difference between topical antibacterial and non-antibacterial treatments. Conclusion: Despite the high colonization rates, topical antibacterial treatment was not found superior to non-antibacterial treatment. Our study does not support the belief that bacterial colonization results in hypervascularity of the septal mucosa causing epistaxis since no relation was found between nasal colonization, hypervascularity and crusting. The role of bacterial colonization in pediatric epistaxis need to be further investigated and treatment protocols must be determined accordingly.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Epistaxis is a common problem in childhood. It has been shown that children with recurrent epistaxis are more likely to have nasal colonization with Staphylococcus aureus. It has been suggested that low-grade inflammation, crusting and increased vascularity due to bacterial colonization contributes to the development of epistaxis in children.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: This study aimed to investigate the nasal colonization and treatment outcome in pediatric epistaxis patients.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Retrospective cross-sectional study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Charts of the pediatric patients referred to our university hospital otolaryngology outpatient clinics for the evaluation of epistaxis were reviewed. The patients whose nasal cultures had been taken at the first clinical visit comprised the study group. &nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: Staphylococcus aureus was the most common bacteria grown. The presence of crusting and hypervascularity was not dependent on the type of bacterial growth and there was no relation between hypervascularity and crusting of the nasal mucosa. Thirty-six patients were evaluated for the outcome analysis. Resolution of bleeding was not dependent on nasal colonization; in patients with colonization, there was no difference between topical antibacterial and non-antibacterial treatments.&nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Despite the high colonization rates, topical antibacterial treatment was not found superior to non-antibacterial treatment. Our study does not support the belief that bacterial colonization results in hypervascularity of the septal mucosa causing epistaxis since no relation was found between nasal colonization, hypervascularity and crusting. The role of bacterial colonization in pediatric epistaxis need to be further investigated and treatment protocols must be determined accordingly.&nbsp;</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Epistaxis is a common problem in childhood. It has been shown that children with recurrent epistaxis are more likely to have nasal colonization with Staphylococcus aureus. It has been suggested that low-grade inflammation, crusting and increased vascularity due to bacterial colonization contributes to the development of epistaxis in children. Aims: This study aimed to investigate the nasal colonization and treatment outcome in pediatric epistaxis patients. Study Design: Retrospective cross-sectional study. Methods: Charts of the pediatric patients referred to our university hospital otolaryngology outpatient clinics for the evaluation of epistaxis were reviewed. The patients whose nasal cultures had been taken at the first clinical visit comprised the study group. Results: Staphylococcus aureus was the most common bacteria grown. The presence of crusting and hypervascularity was not dependent on the type of bacterial growth and there was no relation between hypervascularity and crusting of the nasal mucosa. Thirty-six patients were evaluated for the outcome analysis. Resolution of bleeding was not dependent on nasal colonization; in patients with colonization, there was no difference between topical antibacterial and non-antibacterial treatments. Conclusion: Despite the high colonization rates, topical antibacterial treatment was not found superior to non-antibacterial treatment. Our study does not support the belief that bacterial colonization results in hypervascularity of the septal mucosa causing epistaxis since no relation was found between nasal colonization, hypervascularity and crusting. The role of bacterial colonization in pediatric epistaxis need to be further investigated and treatment protocols must be determined accordingly.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.151239",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "212-215",
+    "views": 7191,
+    "downloads": 9939,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "152",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=152",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=152",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=152",
+    "localPdfUrl": "js/data/pdfs/152.pdf",
+    "pdfUrl": "js/data/pdfs/152.pdf"
+  },
+  {
+    "id": 153,
+    "type": "Original Article",
+    "title": "Autologous Blood Injection Works for Recalcitrant Lateral Epicondylitis",
+    "authors": [
+      {
+        "name": "Bora Bostan",
+        "affiliation": "Department of Orthopaedics and Traumatology, Gaziosmanpaşa University School of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Orhan Balta",
+        "affiliation": "Department of Orthopaedics and Traumatology, Gaziosmanpaşa University School of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Aşçı",
+        "affiliation": "Department of Orthopaedics and Traumatology, Gaziosmanpaşa University School of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kürşad Aytekin",
+        "affiliation": "Department of Orthopaedics and Traumatology, Giresun University School of Medicine, Giresun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Enes Eser",
+        "affiliation": "Department of Orthopaedics and Traumatology, Turhal State Hospital, Tokat, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Recalcitrant lateral epicondylitis may be a disabling condition. Treatment of this condition is still controversial. Aims: In the present prospective study, we evaluated the long-term results of autologous blood injection for the treatment of recalcitrant lateral epicondylitis. Study Design: Prospective clinical study. Methods: A total of 42 elbows of 40 consecutive patients (28 female, 12 male) were enrolled in this prospective study. Seven patients left the study (3 patients moved to another city, 1 patient died in the second week due to a heart condition, 1 patient quit the study because of the resolution of pain in the fourth week and 2 patients did not agree to the second injection). Thirteen patients were lost to third year follow-up. Therefore, a total of 21 elbows of 20 patients with 3 years of follow-up were included in this study. The mean age of the patients was 47.25 years (range, 20-68 years). Results: Visual analogue scale (VAS), Nirschl score and grip strength were significantly improved after injections when compared to before treatment. The best improvement in terms of grip strength, Nirschl score and VAS score was detected at the one year follow-up. The improvement in Nirschl and VAS score sustained until the third year. Conclusion: We suggest that autologous blood injection for the treatment of recalcitrant lateral epicondylitis is an effective, safe and successful procedure in the long-term.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Recalcitrant lateral epicondylitis may be a disabling condition. Treatment of this condition is still controversial.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: In the present prospective study, we evaluated the long-term results of autologous blood injection for the treatment of recalcitrant lateral epicondylitis.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Prospective clinical study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: A total of 42 elbows of 40 consecutive patients (28 female, 12 male) were enrolled in this prospective study. Seven patients left the study (3 patients moved to another city, 1 patient died in the second week due to a heart condition, 1 patient quit the study because of the resolution of pain in the fourth week and 2 patients did not agree to the second injection). Thirteen patients were lost to third year follow-up. Therefore, a total of 21 elbows of 20 patients with 3 years of follow-up were included in this study. The mean age of the patients was 47.25 years (range, 20-68 years). &nbsp;</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: Visual analogue scale (VAS), Nirschl score and grip strength were significantly improved after injections when compared to before treatment. The best improvement in terms of grip strength, Nirschl score and VAS score was detected at the one year follow-up. The improvement in Nirschl and VAS score sustained until the third year.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: We suggest that autologous blood injection for the treatment of recalcitrant lateral epicondylitis is an effective, safe and successful procedure in the long-term.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Recalcitrant lateral epicondylitis may be a disabling condition. Treatment of this condition is still controversial. Aims: In the present prospective study, we evaluated the long-term results of autologous blood injection for the treatment of recalcitrant lateral epicondylitis. Study Design: Prospective clinical study. Methods: A total of 42 elbows of 40 consecutive patients (28 female, 12 male) were enrolled in this prospective study. Seven patients left the study (3 patients moved to another city, 1 patient died in the second week due to a heart condition, 1 patient quit the study because of the resolution of pain in the fourth week and 2 patients did not agree to the second injection). Thirteen patients were lost to third year follow-up. Therefore, a total of 21 elbows of 20 patients with 3 years of follow-up were included in this study. The mean age of the patients was 47.25 years (range, 20-68 years). Results: Visual analogue scale (VAS), Nirschl score and grip strength were significantly improved after injections when compared to before treatment. The best improvement in terms of grip strength, Nirschl score and VAS score was detected at the one year follow-up. The improvement in Nirschl and VAS score sustained until the third year. Conclusion: We suggest that autologous blood injection for the treatment of recalcitrant lateral epicondylitis is an effective, safe and successful procedure in the long-term.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.16807",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "216-220",
+    "views": 6591,
+    "downloads": 9506,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "153",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=153",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=153",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=153",
+    "localPdfUrl": "js/data/pdfs/153.pdf",
+    "pdfUrl": "js/data/pdfs/153.pdf"
+  },
+  {
+    "id": 154,
+    "type": "Original Article",
+    "title": "Neuroprotective Effects of Pregabalin on Cerebral Ischemia and Reperfusion",
+    "authors": [
+      {
+        "name": "Sanem Aşçı",
+        "affiliation": "Neurology Service, Gülkent State Hospital, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serpil Demirci",
+        "affiliation": "Department of Neurology, Süleyman Demirel University School of Medicine, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Halil Aşçı",
+        "affiliation": "Department of Pharmacology, Süleyman Demirel University School of Medicine, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Duygu Kumbul Doğuç",
+        "affiliation": "Department of Biochemistry, Süleyman Demirel University School of Medicine, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Onaran [[5]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Stroke is one of the most common causes of death and the leading cause of disability in adults. Cerebral ischemia/reperfusion injury causes cerebral edema, hemorrhage, and neuronal death. Aims: In post-ischemic reperfusion, free radical production causes brain tissue damage by oxidative stress. Pregabalin, an antiepileptic agent was shown to have antioxidant effects. The aim of this study was to evaluate the neuroprotective and antioxidant effects of pregabalin on ischemia and reperfusion in rat brain injury. Study Design: Animal experimentation. Methods: Male Wistar rats weighing (250–300 g) were randomly divided into six groups, each consisting of 6 rats: control (C), pregabalin (P), ischemia (I), pregabalin + ischemia (PI), ischemia + reperfusion (IR) and ischemia + reperfusion + pregabalin (PIR). Rats were initially pre-treated with 50 mg/kg/d pregabalin orally for two days. Then, animals that applied ischemia in I, PI, IR and PIR groups were exposed to carotid clamping for 30 minutes and 20 minutes reperfusion was performed in the relevant reperfusion groups. Results: NR2B receptor levels were significantly lower in the PIR group in comparison to the IR group. In the PIR group, Thiobarbituric acid reactive substance (TBARS) level had statistically significant decrease compared with IR group. Glutathione peroxidase (GSH-PX) levels were also significantly increased in the PIR group compared with I, IR and control groups. In the PI and PIR groups, catalase (CAT) levels were also significantly increased compared with I and IR groups (p=0.03 and p=0.07, respectively). Conclusion: Pregabalin may protect the damage of oxidative stress after ischemia + reperfusion. This result would illuminate clinical studies in the future.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Stroke is one of the most common causes of death and the leading cause of disability in adults. Cerebral ischemia/reperfusion injury causes cerebral edema, hemorrhage, and neuronal death.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: In post-ischemic reperfusion, free radical production causes brain tissue damage by oxidative stress. Pregabalin, an antiepileptic agent was shown to have antioxidant effects. The aim of this study was to evaluate the neuroprotective and antioxidant effects of pregabalin on ischemia and reperfusion in rat brain injury.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Animal experimentation.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Male Wistar rats weighing (250&ndash;300 g) were randomly divided into six groups, each consisting of 6 rats: control (C), pregabalin (P), ischemia (I), pregabalin + ischemia (PI), ischemia + reperfusion (IR) and ischemia + reperfusion + pregabalin (PIR). Rats were initially pre-treated with 50 mg/kg/d pregabalin orally for two days. Then, animals that applied ischemia in I, PI, IR and PIR groups were exposed to carotid clamping for 30 minutes and 20 minutes reperfusion was performed in the relevant reperfusion groups.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: NR2B receptor levels were significantly lower in the PIR group in comparison to the IR group. In the PIR group, Thiobarbituric acid reactive substance (TBARS) level had statistically significant decrease compared with IR group. Glutathione peroxidase (GSH-PX) levels were also significantly increased in the PIR group compared with I, IR and control groups. In the PI and PIR groups, catalase (CAT) levels were also significantly increased compared with I and IR groups (p=0.03 and p=0.07, respectively).</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Pregabalin may protect the damage of oxidative stress after ischemia + reperfusion. This result would illuminate clinical studies in the future.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Stroke is one of the most common causes of death and the leading cause of disability in adults. Cerebral ischemia/reperfusion injury causes cerebral edema, hemorrhage, and neuronal death. Aims: In post-ischemic reperfusion, free radical production causes brain tissue damage by oxidative stress. Pregabalin, an antiepileptic agent was shown to have antioxidant effects. The aim of this study was to evaluate the neuroprotective and antioxidant effects of pregabalin on ischemia and reperfusion in rat brain injury. Study Design: Animal experimentation. Methods: Male Wistar rats weighing (250–300 g) were randomly divided into six groups, each consisting of 6 rats: control (C), pregabalin (P), ischemia (I), pregabalin + ischemia (PI), ischemia + reperfusion (IR) and ischemia + reperfusion + pregabalin (PIR). Rats were initially pre-treated with 50 mg/kg/d pregabalin orally for two days. Then, animals that applied ischemia in I, PI, IR and PIR groups were exposed to carotid clamping for 30 minutes and 20 minutes reperfusion was performed in the relevant reperfusion groups. Results: NR2B receptor levels were significantly lower in the PIR group in comparison to the IR group. In the PIR group, Thiobarbituric acid reactive substance (TBARS) level had statistically significant decrease compared with IR group. Glutathione peroxidase (GSH-PX) levels were also significantly increased in the PIR group compared with I, IR and control groups. In the PI and PIR groups, catalase (CAT) levels were also significantly increased compared with I and IR groups (p=0.03 and p=0.07, respectively). Conclusion: Pregabalin may protect the damage of oxidative stress after ischemia + reperfusion. This result would illuminate clinical studies in the future.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15742",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "221-227",
+    "views": 7041,
+    "downloads": 10102,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "154",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=154",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=154",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=154",
+    "localPdfUrl": "js/data/pdfs/154.pdf",
+    "pdfUrl": "js/data/pdfs/154.pdf"
+  },
+  {
+    "id": 155,
+    "type": "Case Report",
+    "title": "Idiopathic Granulomatous Mastitis Associated with Erythema Nodosum",
+    "authors": [
+      {
+        "name": "Tuğba Özlem Kalaycı",
+        "affiliation": "Department of Radiology, İzmir Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Melike Bedel Koruyucu",
+        "affiliation": "Department of Radiology, İzmir Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Melda Apaydın",
+        "affiliation": "Department of Radiology, İzmir Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Makbule Varer",
+        "affiliation": "Department of Radiology, İzmir Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Demet Etit",
+        "affiliation": "Department of Pathology, İzmir Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Idiopathic granulomatous mastitis (IGM) is an uncommon benign chronic inflammatory breast disease, and erythema nodosum (EN) is an extremely rare systemic manifestation of IGM. Here, we report a rare case of IGM accompanied by EN. Case Report: A 32-year-old patient was admitted to our clinic with a history of a tender mass in the right breast. On physical examination, the right breast contained a hard, tender mass in the lower half with in-drawing of the nipple. She had florid EN affecting both legs. She was evaluated with mammography, ultrasound, power Doppler ultrasound, non-enhancing magnetic resonance imaging (MRI), dynamic contrast-enhanced MRI, fine needle aspiration biopsy (FNAB) and excisional biopsy. Time-intensity curves showed a type II pattern on dynamic contrast-enhanced MRI, which has an intermediate probability for malignancy. The FNAB reported a benign cytology suggestive of a granulomatous inflammation, which was also supported by the histopathological findings. A partial mastectomy was performed following medical treatment. There was no recurrence at 1-year follow-up. Conclusion: IGM should be considered in the differential diagnosis of EN. Although histopathological examination remains the only method for the definite diagnosis of IGM, MRI can be helpful in the diagnosis or differentiation of benign lesions from malignant ones.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Idiopathic granulomatous mastitis (IGM) is an uncommon benign chronic inflammatory breast disease, and erythema nodosum (EN) is an extremely rare systemic manifestation of IGM. Here, we report a rare case of IGM accompanied by EN.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Case&nbsp;Report</strong>: A 32-year-old patient was admitted to our clinic with a history of a tender mass in the right breast. On physical examination, the right breast contained a hard, tender mass in the lower half with in-drawing of the nipple. She had florid EN affecting both legs. She was evaluated with mammography, ultrasound, power Doppler ultrasound, non-enhancing magnetic resonance imaging (MRI), dynamic contrast-enhanced MRI, fine needle aspiration biopsy (FNAB) and excisional biopsy. Time-intensity curves showed a type II pattern on dynamic contrast-enhanced MRI, which has an intermediate probability for malignancy. The FNAB reported a benign cytology suggestive of a granulomatous inflammation, which was also supported by the histopathological findings. A partial mastectomy was performed following medical treatment. There was no recurrence at 1-year follow-up.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: IGM should be considered in the differential diagnosis of EN. Although histopathological examination remains the only method for the definite diagnosis of IGM, MRI can be helpful in the diagnosis or differentiation of benign lesions from malignant ones.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Idiopathic granulomatous mastitis (IGM) is an uncommon benign chronic inflammatory breast disease, and erythema nodosum (EN) is an extremely rare systemic manifestation of IGM. Here, we report a rare case of IGM accompanied by EN. Case Report: A 32-year-old patient was admitted to our clinic with a history of a tender mass in the right breast. On physical examination, the right breast contained a hard, tender mass in the lower half with in-drawing of the nipple. She had florid EN affecting both legs. She was evaluated with mammography, ultrasound, power Doppler ultrasound, non-enhancing magnetic resonance imaging (MRI), dynamic contrast-enhanced MRI, fine needle aspiration biopsy (FNAB) and excisional biopsy. Time-intensity curves showed a type II pattern on dynamic contrast-enhanced MRI, which has an intermediate probability for malignancy. The FNAB reported a benign cytology suggestive of a granulomatous inflammation, which was also supported by the histopathological findings. A partial mastectomy was performed following medical treatment. There was no recurrence at 1-year follow-up. Conclusion: IGM should be considered in the differential diagnosis of EN. Although histopathological examination remains the only method for the definite diagnosis of IGM, MRI can be helpful in the diagnosis or differentiation of benign lesions from malignant ones.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.150089",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "228-231",
+    "views": 7291,
+    "downloads": 9999,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "155",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=155",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=155",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=155",
+    "localPdfUrl": "js/data/pdfs/155.pdf",
+    "pdfUrl": "js/data/pdfs/155.pdf"
+  },
+  {
+    "id": 156,
+    "type": "Case Report",
+    "title": "Benign Cystic Mesothelioma in a Child: Case Report and Review of the Literature",
+    "authors": [
+      {
+        "name": "Ahmet Ali Tuncer",
+        "affiliation": "Department of Pediatric Surgery, Yüksekova State Hospital, Hakkari, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Adnan Narcı",
+        "affiliation": "Department of Pediatric Surgery, Şifa University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatma Hüsniye Dilek",
+        "affiliation": "Department of Pathology, Sakarya University Training and Research Hospital, Sakarya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Didem Baskın Embleton",
+        "affiliation": "Department of Pediatric Surgery, Afyon Kocatepe University School of Medicine, Afyonkarahisar, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Salih Çetinkurşun",
+        "affiliation": "Department of Pediatric Surgery, Afyon Kocatepe University School of Medicine, Afyonkarahisar, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Benign cystic mesothelioma (BCM) is a rare tumor with benign characteristic. There are only 8 child cases reported in the English literature. In this report, we present this rare entity a brief review of the literature. Case Report: A two year-old boy presenting with abdominal swelling was hospitalized. Physical examination revealed a mass filling the abdomen. Laboratory findings were not specific. Abdominal computerized tomography showed a 15x13x11 cm cystic mass extending from the bladder to the liver with no solid components and no infiltration to adjacent organs. Operation revealed a cystic mass filled with yellow-green serous fluid which was attached to the right lobe of the liver with a 1 cm thick peduncle. Total excision of the mass was performed by clamping and cutting the narrow attachment. Recovery was uneventful. Pathology revealed multiple cysts lined with mesothelial cells. No recurrence was seen after 5 years of follow-up Conclusion: BCM should be kept in mind as a rare cause of the abdominal mass in children, as it may lead to confusion in preoperative diagnosis. Although rare, patients should be followed throughout life because of the risk of recurrence and malignant degeneration.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Benign cystic mesothelioma (BCM) is a rare tumor with benign characteristic. There are only 8 child cases reported in the English literature. In this report, we present this rare entity a brief review of the literature.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Case&nbsp;Report</strong>: A two year-old boy presenting with abdominal swelling was hospitalized. Physical examination revealed a mass filling the abdomen. Laboratory findings were not specific. Abdominal computerized tomography showed a 15x13x11 cm cystic mass extending from the bladder to the liver with no solid components and no infiltration to adjacent organs. Operation revealed a cystic mass filled with yellow-green serous fluid which was attached to the right lobe of the liver with a 1 cm thick peduncle. Total excision of the mass was performed by clamping and cutting the narrow attachment. Recovery was uneventful. Pathology revealed multiple cysts lined with mesothelial cells. No recurrence was seen after 5 years of follow-up</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: BCM should be kept in mind as a rare cause of the abdominal mass in children, as it may lead to confusion in preoperative diagnosis. Although rare, patients should be followed throughout life because of the risk of recurrence and malignant degeneration.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Benign cystic mesothelioma (BCM) is a rare tumor with benign characteristic. There are only 8 child cases reported in the English literature. In this report, we present this rare entity a brief review of the literature. Case Report: A two year-old boy presenting with abdominal swelling was hospitalized. Physical examination revealed a mass filling the abdomen. Laboratory findings were not specific. Abdominal computerized tomography showed a 15x13x11 cm cystic mass extending from the bladder to the liver with no solid components and no infiltration to adjacent organs. Operation revealed a cystic mass filled with yellow-green serous fluid which was attached to the right lobe of the liver with a 1 cm thick peduncle. Total excision of the mass was performed by clamping and cutting the narrow attachment. Recovery was uneventful. Pathology revealed multiple cysts lined with mesothelial cells. No recurrence was seen after 5 years of follow-up Conclusion: BCM should be kept in mind as a rare cause of the abdominal mass in children, as it may lead to confusion in preoperative diagnosis. Although rare, patients should be followed throughout life because of the risk of recurrence and malignant degeneration.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15886",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "232-234",
+    "views": 7211,
+    "downloads": 4098,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "156",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=156",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=156",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=156",
+    "localPdfUrl": "js/data/pdfs/156.pdf",
+    "pdfUrl": "js/data/pdfs/156.pdf"
+  },
+  {
+    "id": 157,
+    "type": "Case Report",
+    "title": "Uterine Cervix Metastasis of Myxopapillary Ependymoma Originated from the Spinal Cord",
+    "authors": [
+      {
+        "name": "Kadir Güzin",
+        "affiliation": "Department of Obstetrics and Gynecology, İstanbul Medeniyet University Göztepe Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Halenur Bozdağ",
+        "affiliation": "Department of Obstetrics and Gynecology, İstanbul Medeniyet University Göztepe Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Abdullah Aydın",
+        "affiliation": "Department of Pathology, İstanbul Medeniyet University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şeyma Özkanlı",
+        "affiliation": "Department of Pathology, İstanbul Medeniyet University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sadık Şahin",
+        "affiliation": "Departmenf of Obstetrics and Gynecology, Zeynep Kamil Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Myxopapillary ependymomas are well differentiated low-grade tumors which have been documented to local or distant metastasis. In the literature, this is a unique case of myxopapillary ependymoma with metastasis to the uterine cervix. Here, we present a rare case of extra neural metastasis of spinal ependymoma that developed over a long period. Case Report: A 34-year-old woman was referred to our hospital for pelvic mass. A mass (110x100 mm) localized between the sacrococcygeal region and the uterus was detected by magnetic resonance imaging. In 2004, she had been operated upon for myxopapillary ependymoma seated in the sacrococcygeal region for the first time. She underwent tumor resection eight times due to the recurrence of spinal tumor in the same region in nine years. Under the diagnosis of uterine neoplasm, we carried out radical hysterectomy, omentectomy and pelvic lymphadenectomy as the surgical procedure. The pathological findings were reported as myxopapillary ependymoma. Immunohistochemically, the myxopapillary ependymal cells showed strong positivity for glial fibrillary acidic protein, whereas they were negative for low molecular weight cytokeratin. The Ki-67 labeling index was about 2-3%. The patient had an uneventful postoperative period. She has remained free of symptoms in the year since surgery. Conclusion: Extra-spinal myxopapillary ependymoma is very rare, but it must be considered in the differential diagnosis of pelvic mass lesions.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Myxopapillary ependymomas are well differentiated low-grade tumors which have been documented to local or distant metastasis. In the literature, this is a unique case of myxopapillary ependymoma with metastasis to the uterine cervix. Here, we present a rare case of extra neural metastasis of spinal ependymoma that developed over a long period.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Case&nbsp;Report</strong>: A 34-year-old woman was referred to our hospital for pelvic mass. A mass (110x100 mm) localized between the sacrococcygeal region and the uterus was detected by magnetic resonance imaging. In 2004, she had been operated upon for myxopapillary ependymoma seated in the sacrococcygeal region for the first time. She underwent tumor resection eight times due to the recurrence of spinal tumor in the same region in nine years. Under the diagnosis of uterine neoplasm, we carried out radical hysterectomy, omentectomy and pelvic lymphadenectomy as the surgical procedure. The pathological findings were reported as myxopapillary ependymoma. Immunohistochemically, the myxopapillary ependymal cells showed strong positivity for glial fibrillary acidic protein, whereas they were negative for low molecular weight cytokeratin. The Ki-67 labeling index was about 2-3%. The patient had an uneventful postoperative period. She has remained free of symptoms in the year since surgery.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Extra-spinal myxopapillary ependymoma is very rare, but it must be considered in the differential diagnosis of pelvic mass lesions.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Myxopapillary ependymomas are well differentiated low-grade tumors which have been documented to local or distant metastasis. In the literature, this is a unique case of myxopapillary ependymoma with metastasis to the uterine cervix. Here, we present a rare case of extra neural metastasis of spinal ependymoma that developed over a long period. Case Report: A 34-year-old woman was referred to our hospital for pelvic mass. A mass (110x100 mm) localized between the sacrococcygeal region and the uterus was detected by magnetic resonance imaging. In 2004, she had been operated upon for myxopapillary ependymoma seated in the sacrococcygeal region for the first time. She underwent tumor resection eight times due to the recurrence of spinal tumor in the same region in nine years. Under the diagnosis of uterine neoplasm, we carried out radical hysterectomy, omentectomy and pelvic lymphadenectomy as the surgical procedure. The pathological findings were reported as myxopapillary ependymoma. Immunohistochemically, the myxopapillary ependymal cells showed strong positivity for glial fibrillary acidic protein, whereas they were negative for low molecular weight cytokeratin. The Ki-67 labeling index was about 2-3%. The patient had an uneventful postoperative period. She has remained free of symptoms in the year since surgery. Conclusion: Extra-spinal myxopapillary ependymoma is very rare, but it must be considered in the differential diagnosis of pelvic mass lesions.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.151101",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "235-238",
+    "views": 8216,
+    "downloads": 9913,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "157",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=157",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=157",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=157",
+    "localPdfUrl": "js/data/pdfs/157.pdf",
+    "pdfUrl": "js/data/pdfs/157.pdf"
+  },
+  {
+    "id": 158,
+    "type": "Letter to the Editor",
+    "title": "The Investigation of Cortical Auditory Evoked Potentials Responses in Young Adults Having Musical Education",
+    "authors": [
+      {
+        "name": "Hanna Garnier",
+        "affiliation": "Department of Surgery and Urology for Children and Adolescents, Medical University of Gdansk, Gdansk, Poland",
+        "orcid": ""
+      },
+      {
+        "name": "Jakub Wisniewski",
+        "affiliation": "Department of Surgery and Urology for Children and Adolescents, Medical University of Gdansk, Gdansk, Poland",
+        "orcid": ""
+      },
+      {
+        "name": "Przemyslaw Waszak",
+        "affiliation": "Department of Neurosurgery, Medical University of Gdansk, Gdansk, Poland",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15160",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "239-240",
+    "views": 5737,
+    "downloads": 9425,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "158",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=158",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=158",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=158",
+    "localPdfUrl": "js/data/pdfs/158.pdf",
+    "pdfUrl": "js/data/pdfs/158.pdf"
+  },
+  {
+    "id": 159,
+    "type": "Letter to the Editor",
+    "title": "Load Dependency of Left Ventricular Diastolic Dysfunction Parameters",
+    "authors": [
+      {
+        "name": "Mihaela Opris",
+        "affiliation": "Department of Internal Medicine V, University of Medicine and Pharmacy of Targu Mures, Targu Mures, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Dan Octavian Nistor",
+        "affiliation": "Department of Internal Medicine V, University of Medicine and Pharmacy of Targu Mures, Targu Mures, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Corina Roxana Cimpean",
+        "affiliation": "Department of Internal Medicine V, University of Medicine and Pharmacy of Targu Mures, Targu Mures, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Voichita Ileana Sirbu",
+        "affiliation": "Department of Internal Medicine V, University of Medicine and Pharmacy of Targu Mures, Targu Mures, Romania",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15231",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "241-242",
+    "views": 5781,
+    "downloads": 3178,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "159",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=159",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=159",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=159",
+    "localPdfUrl": "js/data/pdfs/159.pdf",
+    "pdfUrl": "js/data/pdfs/159.pdf"
+  },
+  {
+    "id": 160,
+    "type": "Letter to the Editor",
+    "title": "Chondroid Syringoma of the Hypothenar Region",
+    "authors": [
+      {
+        "name": "Fatma Markoç",
+        "affiliation": "Department of Pathology, Gaziosmanpaşa University School of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bora Bostan",
+        "affiliation": "Department of Pathology, Gaziosmanpaşa University School of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "R.Doğan Köseoğlu",
+        "affiliation": "Department of Pathology, Gaziosmanpaşa University School of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "A.Burcu Arıkan",
+        "affiliation": "Department of Pathology, Gaziosmanpaşa University School of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bora Bostan",
+        "affiliation": "Department of Orthopaedics and Traumatology, Gaziosmanpaşa University School of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Aşçı",
+        "affiliation": "Department of Orthopedics and Traumatology, Gaziosmanpaşa University School of Medicine, Tokat, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Keywords :",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<b>Keywords :</b>\t\t\r\n \t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Keywords :",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.151027",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "2",
+    "pages": "243-244",
+    "views": 5845,
+    "downloads": 9314,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1177",
+    "sourceArticleId": "160",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=160",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=160",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=160",
+    "localPdfUrl": "js/data/pdfs/160.pdf",
+    "pdfUrl": "js/data/pdfs/160.pdf"
+  }
+]

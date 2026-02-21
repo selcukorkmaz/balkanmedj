@@ -1,0 +1,964 @@
+[
+  {
+    "id": 2675,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2675",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2675",
+    "localPdfUrl": "js/data/pdfs/2675.pdf",
+    "pdfUrl": "js/data/pdfs/2675.pdf"
+  },
+  {
+    "id": 2664,
+    "type": "Editorial",
+    "title": "Unlocking the Potential of Three-Dimensional Echocardiography for Diagnosing Pulmonary Valve Diseases",
+    "authors": [
+      {
+        "name": "Tuğba Kemaloğlu Öz",
+        "affiliation": "Clinic of Cardiology, Alice Springs Hospital, Alice Springs, Australia; Department of Cardiology, Flinders University Faculty of Medicine, Adelaide, South Australia",
+        "orcid": ""
+      },
+      {
+        "name": "Luigi P. Badano",
+        "affiliation": "Department of Medicine and Surgery, University of Milano-Bicocca, Milan, Italy; Department of Cardiology, Istituto Auxologico Italiano, IRCCS, San Luca Hospital, Milan, Italy",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Recently, there has been a significant evolution in cardiac imaging techniques, with three-dimensional (3D) three-dimensional echocardiography (3DE) emerging as a promising tool for diagnosing pulmonary valve (PV) diseases. This editorial explores the potential of 3DE in revolutionizing the diagnosis and management of PV disorders. 3DE offers unparalleled in",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-5-125",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "1-2",
+    "views": 3767,
+    "downloads": 1998,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2664",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2664",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2664",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2664",
+    "localPdfUrl": "js/data/pdfs/2664.pdf",
+    "pdfUrl": "js/data/pdfs/2664.pdf"
+  },
+  {
+    "id": 2665,
+    "type": "Editorial",
+    "title": "Transdermal Drug Delivery: An Overview of the Evolving Field",
+    "authors": [
+      {
+        "name": "Gözde Aktürk",
+        "affiliation": "Department of Medical Pharmacology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Özgür Gündüz",
+        "affiliation": "Department of Medical Pharmacology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "The skin acts as a barrier against infections and external agents. The transdermal drug delivery system (TDDS) is an innovative technological method to deliver drug molecules through the skin into the systemic circulation at an effective and protected rate. Although topical therapy plays an important role in the treatment of skin diseases, TDDSs differ in th",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-111224",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "3-4",
+    "views": 4652,
+    "downloads": 2126,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2665",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2665",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2665",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2665",
+    "localPdfUrl": "js/data/pdfs/2665.pdf",
+    "pdfUrl": "js/data/pdfs/2665.pdf"
+  },
+  {
+    "id": 2666,
+    "type": "Invited Review",
+    "title": "Autoinflammatory Bone Diseases",
+    "authors": [
+      {
+        "name": "Fatih Haşlak",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Nergis Akay",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ümit Gül",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Aybüke Günalp",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Elif Kılıç Könte",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Sezgin Şahin",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Özgür Kasapçopur",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Autoinflammatory bone diseases (AIBDs) constitute a recently identified subset of autoinflammatory diseases. These conditions are characterized by an exaggerated inflammatory response in the bones without any apparent etiology. Inflammatory bone lesions associated with AIBDs exhibit chronic inflammation, are typically culture-negative, and do not exhibit discernible microorganisms on histopathological examination. The most common and representative AIBD is chronic non-bacterial osteomyelitis (CNO), which is also known as chronic recurrent multifocal osteomyelitis. Another variant of CNO, which is typically observed in older teenagers or adults, is known as synovitis, acne, hyperostosis, pustulosis, osteitis syndrome. This condition is distinguished by its notable skin manifestations. Advancements in genetic research have led to the identification of three novel monogenic subtypes within the category of AIBDs. These include Majeed syndrome, pyogenic arthritis, pyoderma gangrenosum, and acne syndrome, and interleukin-1 receptor antagonist deficiency syndrome. Another monogenic AIBD, called cherubism, affects only the maxilla and mandible. Data on the diagnosis and treatment of these rare diseases are extremely limited. However, if not diagnosed and treated promptly, it can result in significant complications, including severe disability and mortality. Thus, it is imperative to maintain a high level of clinical awareness of these diseases. These rare diagnoses should be considered in patients with musculoskeletal complaints in whom no specific etiology can be identified or in patients with systemic manifestations such as cutaneous and gastrointestinal symptoms or fever. In such patients, the diagnostic process, which encompasses imaging and genetic studies, should be initiated promptly.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Autoinflammatory bone diseases (AIBDs) constitute a recently identified subset of autoinflammatory diseases. These conditions are characterized by an exaggerated inflammatory response in the bones without any apparent etiology. Inflammatory bone lesions associated with AIBDs exhibit chronic inflammation, are typically culture-negative, and do not exhibit discernible microorganisms on histopathological examination. The most common and representative AIBD is chronic non-bacterial osteomyelitis (CNO), which is also known as chronic recurrent multifocal osteomyelitis. Another variant of CNO, which is typically observed in older teenagers or adults, is known as synovitis, acne, hyperostosis, pustulosis, osteitis syndrome. This condition is distinguished by its notable skin manifestations. Advancements in genetic research have led to the identification of three novel monogenic subtypes within the category of AIBDs. These include Majeed syndrome, pyogenic arthritis, pyoderma gangrenosum, and acne syndrome, and interleukin-1 receptor antagonist deficiency syndrome. Another monogenic AIBD, called cherubism, affects only the maxilla and mandible. Data on the diagnosis and treatment of these rare diseases are extremely limited. However, if not diagnosed and treated promptly, it can result in significant complications, including severe disability and mortality. Thus, it is imperative to maintain a high level of clinical awareness of these diseases. These rare diagnoses should be considered in patients with musculoskeletal complaints in whom no specific etiology can be identified or in patients with systemic manifestations such as cutaneous and gastrointestinal symptoms or fever. In such patients, the diagnostic process, which encompasses imaging and genetic studies, should be initiated promptly.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Autoinflammatory bone diseases (AIBDs) constitute a recently identified subset of autoinflammatory diseases. These conditions are characterized by an exaggerated inflammatory response in the bones without any apparent etiology. Inflammatory bone lesions associated with AIBDs exhibit chronic inflammation, are typically culture-negative, and do not exhibit discernible microorganisms on histopathological examination. The most common and representative AIBD is chronic non-bacterial osteomyelitis (CNO), which is also known as chronic recurrent multifocal osteomyelitis. Another variant of CNO, which is typically observed in older teenagers or adults, is known as synovitis, acne, hyperostosis, pustulosis, osteitis syndrome. This condition is distinguished by its notable skin manifestations. Advancements in genetic research have led to the identification of three novel monogenic subtypes within the category of AIBDs. These include Majeed syndrome, pyogenic arthritis, pyoderma gangrenosum, and acne syndrome, and interleukin-1 receptor antagonist deficiency syndrome. Another monogenic AIBD, called cherubism, affects only the maxilla and mandible. Data on the diagnosis and treatment of these rare diseases are extremely limited. However, if not diagnosed and treated promptly, it can result in significant complications, including severe disability and mortality. Thus, it is imperative to maintain a high level of clinical awareness of these diseases. These rare diagnoses should be considered in patients with musculoskeletal complaints in whom no specific etiology can be identified or in patients with systemic manifestations such as cutaneous and gastrointestinal symptoms or fever. In such patients, the diagnostic process, which encompasses imaging and genetic studies, should be initiated promptly.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-11-129",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "5-13",
+    "views": 4964,
+    "downloads": 4369,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2666",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2666",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2666",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2666",
+    "localPdfUrl": "js/data/pdfs/2666.pdf",
+    "pdfUrl": "js/data/pdfs/2666.pdf"
+  },
+  {
+    "id": 2667,
+    "type": "Meta-Analysis",
+    "title": "Efficacy and Safety of a Combination of Enteral and Parenteral Nutrition Support in the Postoperative Period for Patients with Gastrointestinal Cancer: A Systematic Review and Meta-Analysis",
+    "authors": [
+      {
+        "name": "Meixiang Cai",
+        "affiliation": "Department of Nursing, Changzhou Maternal and Child Health Care Hospital, Changzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Bo Yang",
+        "affiliation": "Department of Urology and Hepatobiliary Surgery, Changzhou Maternal and Child Health Care Hospital, Changzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yaping Zheng",
+        "affiliation": "Department of Oncology, Liyang People’s Hospital, Changzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Lei Ding",
+        "affiliation": "Department of Gastrointestinal Surgery, Changzhou Maternal and Child Health Care Hospital, Changzhou, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Postoperative nutritional support in gastrointestinal cancer, including enteral nutrition (EN), parenteral nutrition (PN), and combined nutrition strategies, is vital for enhancing recovery and patient outcomes. Aims: We aimed to comprehensively evaluate the impact of postoperative EN, PN, and EN + PN in patients with gastrointestinal cancer. Methods: PubMed, Embase, Cochrane Library, Web of Science, CNKI, Wan Fang, and VIP were searched from conception until January 2, 2024. Randomized controlled trials (RCTs) that compared different postoperative nutritional support (EN, PN, or EN + PN) in patients with gastrointestinal cancer were included. The Cochrane Risk of Bias Assessment tool was used to assess the quality of the RCTs. Fixed- and random-effects models were chosen according to the heterogeneity of variables for the synthesis of results. Continuous and categorical variables were analyzed using the weighted mean difference or relative risk (RR) and 95% confidence interval (CI). Results: In this meta-analysis, 11 RCTs were included. The PN + EN group exhibited significantly improved postoperative recovery, nutritional function, and immune indicators than the PN and EN groups (p < 0.05). Additionally, a higher incidence of postoperative complications such as abdominal distension (RR: 2.53; 95% CI: 1.17-5.49), nausea/vomiting (RR: 2.01; 95% CI: 1.09-3.71), and diarrhea (RR: 3.17; 95% CI: 1.41-7.10) was observed in the EN group than in the PN + EN group. Conclusion: Combining supplemental PN with enteral support improves energy intake and prognosis in gastrointestinal cancer, though limited studies restrict publication bias evaluation.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Postoperative nutritional support in gastrointestinal cancer, including enteral nutrition (EN), parenteral nutrition (PN), and combined nutrition strategies, is vital for enhancing recovery and patient outcomes.</p>\r\n<p><strong>Aims:</strong> We aimed to comprehensively evaluate the impact of postoperative EN, PN, and EN + PN in patients with gastrointestinal cancer.</p>\r\n<p><strong>Methods:</strong> PubMed, Embase, Cochrane Library, Web of Science, CNKI, Wan Fang, and VIP were searched from conception until January 2, 2024. Randomized controlled trials (RCTs) that compared different postoperative nutritional support (EN, PN, or EN + PN) in patients with gastrointestinal cancer were included. The Cochrane Risk of Bias Assessment tool was used to assess the quality of the RCTs. Fixed- and random-effects models were chosen according to the heterogeneity of variables for the synthesis of results. Continuous and categorical variables were analyzed using the weighted mean difference or relative risk (RR) and 95% confidence interval (CI).</p>\r\n<p><strong>Results:</strong> In this meta-analysis, 11 RCTs were included. The PN + EN group exhibited significantly improved postoperative recovery, nutritional function, and immune indicators than the PN and EN groups (<em>p</em> &lt; 0.05). Additionally, a higher incidence of postoperative complications such as abdominal distension (RR: 2.53; 95% CI: 1.17-5.49), nausea/vomiting (RR: 2.01; 95% CI: 1.09-3.71), and diarrhea (RR: 3.17; 95% CI: 1.41-7.10) was observed in the EN group than in the PN + EN group.</p>\r\n<p><strong>Conclusion:</strong> Combining supplemental PN with enteral support improves energy intake and prognosis in gastrointestinal cancer, though limited studies restrict publication bias evaluation.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Postoperative nutritional support in gastrointestinal cancer, including enteral nutrition (EN), parenteral nutrition (PN), and combined nutrition strategies, is vital for enhancing recovery and patient outcomes. Aims: We aimed to comprehensively evaluate the impact of postoperative EN, PN, and EN + PN in patients with gastrointestinal cancer. Methods: PubMed, Embase, Cochrane Library, Web of Science, CNKI, Wan Fang, and VIP were searched from conception until January 2, 2024. Randomized controlled trials (RCTs) that compared different postoperative nutritional support (EN, PN, or EN + PN) in patients with gastrointestinal cancer were included. The Cochrane Risk of Bias Assessment tool was used to assess the quality of the RCTs. Fixed- and random-effects models were chosen according to the heterogeneity of variables for the synthesis of results. Continuous and categorical variables were analyzed using the weighted mean difference or relative risk (RR) and 95% confidence interval (CI). Results: In this meta-analysis, 11 RCTs were included. The PN + EN group exhibited significantly improved postoperative recovery, nutritional function, and immune indicators than the PN and EN groups (p < 0.05). Additionally, a higher incidence of postoperative complications such as abdominal distension (RR: 2.53; 95% CI: 1.17-5.49), nausea/vomiting (RR: 2.01; 95% CI: 1.09-3.71), and diarrhea (RR: 3.17; 95% CI: 1.41-7.10) was observed in the EN group than in the PN + EN group. Conclusion: Combining supplemental PN with enteral support improves energy intake and prognosis in gastrointestinal cancer, though limited studies restrict publication bias evaluation.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-10-65",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "14-26",
+    "views": 5259,
+    "downloads": 3069,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2667",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2667",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2667",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2667",
+    "localPdfUrl": "js/data/pdfs/2667.pdf",
+    "pdfUrl": "js/data/pdfs/2667.pdf"
+  },
+  {
+    "id": 2668,
+    "type": "Original Article",
+    "title": "Quercetin Alleviates Hyperglycemic-Generated Endoplasmic Reticulum Stress-Contacted Apoptosis of Rat Nucleus Pulposus Cells",
+    "authors": [
+      {
+        "name": "Zhen Yu",
+        "affiliation": "Department of Articular Orthopaedics, The Third Affiliated Hospital of Soochow University, Changzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xianfeng Wang",
+        "affiliation": "Department of Orthopedic Surgery, Beijing Jishuitan Hospital Guizhou Hospital, Guiyang, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yusen Hu",
+        "affiliation": "Department of Spine Surgery, The Third Affiliated Hospital of Soochow University, Changzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xinfa Wang",
+        "affiliation": "Department of Spine Surgery, The Third Affiliated Hospital of Soochow University, Changzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Zhenghuan Zhu",
+        "affiliation": "Department of Spine Surgery, The Third Affiliated Hospital of Soochow University, Changzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xu Xu",
+        "affiliation": "Department of Spine Surgery, The Third Affiliated Hospital of Soochow University, Changzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yiming Wang",
+        "affiliation": "Department of Articular Orthopaedics, The Third Affiliated Hospital of Soochow University, Changzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ailiang Zhang",
+        "affiliation": "Department of Spine Surgery, The Third Affiliated Hospital of Soochow University, Changzhou, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Previous research has shown that apoptosis of nucleus pulposus (NP) cells contributes to intervertebral disc degeneration (IDD) progression. Endoplasmic reticulum (ER) stress is a reaction to diverse stimuli in eukaryotes and is tightly contacted with apoptosis. Quercetin, a naturally occurring flavonoid, exerts protective effects against degenerative diseases via ER stress. However, the effect of quercetin on NP cell apoptosis remains unclear. Aims: To investigate the influences of quercetin on apoptosis and ER stress in a high-glucose-generated primary NP cell model. Study Design: In vivo animal experimental study. Methods: To investigate the influence of quercetin in a high-glucose-generated NP cell apoptosis model, control, glucose, and glucose + quercetin groups adopted with Sprague-Dawley rats primary NP cells. In the glucose group, cell apoptosis was generated by 200 mm high glucose. In the glucose + quercetin group, 60 µm quercetin was pretreated with NP cells for 2 h before glucose administration. In this research, we examined the change effect of quercetin on NP cell apoptosis, ER stress, and the protein kinase R-like ER kinase (PERK)-eukaryotic translation initiation element 2α (eIF2α)-activating transcription element 4 (ATF4). Results: High glucose decreased the viability and induced ER stress-related apoptosis in NP cells. Quercetin modulated ER stress through the PERK-eIF2α-ATF4 pathway, thereby alleviating the apoptosis rank in NP cells. Conclusion: Quercetin exerts antiapoptotic effects on NP cells, probably through ER stress, thereby showcasing potential as a therapeutic method for treating IDD.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Previous research has shown that apoptosis of nucleus pulposus (NP) cells contributes to intervertebral disc degeneration (IDD) progression. Endoplasmic reticulum (ER) stress is a reaction to diverse stimuli in eukaryotes and is tightly contacted with apoptosis. Quercetin, a naturally occurring flavonoid, exerts protective effects against degenerative diseases via ER stress. However, the effect of quercetin on NP cell apoptosis remains unclear.</p>\r\n<p><strong>Aims:</strong> To investigate the influences of quercetin on apoptosis and ER stress in a high-glucose-generated primary NP cell model.</p>\r\n<p><strong>Study Design:</strong> In vivo animal experimental study.</p>\r\n<p><strong>Methods:</strong> To investigate the influence of quercetin in a high-glucose-generated NP cell apoptosis model, control, glucose, and glucose + quercetin groups adopted with Sprague-Dawley rats primary NP cells. In the glucose group, cell apoptosis was generated by 200 mm high glucose. In the glucose + quercetin group, 60 &micro;m quercetin was pretreated with NP cells for 2 h before glucose administration. In this research, we examined the change effect of quercetin on NP cell apoptosis, ER stress, and the protein kinase R-like ER kinase (PERK)-eukaryotic translation initiation element 2&alpha; (eIF2&alpha;)-activating transcription element 4 (ATF4).</p>\r\n<p><strong>Results:</strong> High glucose decreased the viability and induced ER stress-related apoptosis in NP cells. Quercetin modulated ER stress through the PERK-eIF2&alpha;-ATF4 pathway, thereby alleviating the apoptosis rank in NP cells.</p>\r\n<p><strong>Conclusion:</strong> Quercetin exerts antiapoptotic effects on NP cells, probably through ER stress, thereby showcasing potential as a therapeutic method for treating IDD.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Previous research has shown that apoptosis of nucleus pulposus (NP) cells contributes to intervertebral disc degeneration (IDD) progression. Endoplasmic reticulum (ER) stress is a reaction to diverse stimuli in eukaryotes and is tightly contacted with apoptosis. Quercetin, a naturally occurring flavonoid, exerts protective effects against degenerative diseases via ER stress. However, the effect of quercetin on NP cell apoptosis remains unclear. Aims: To investigate the influences of quercetin on apoptosis and ER stress in a high-glucose-generated primary NP cell model. Study Design: In vivo animal experimental study. Methods: To investigate the influence of quercetin in a high-glucose-generated NP cell apoptosis model, control, glucose, and glucose + quercetin groups adopted with Sprague-Dawley rats primary NP cells. In the glucose group, cell apoptosis was generated by 200 mm high glucose. In the glucose + quercetin group, 60 µm quercetin was pretreated with NP cells for 2 h before glucose administration. In this research, we examined the change effect of quercetin on NP cell apoptosis, ER stress, and the protein kinase R-like ER kinase (PERK)-eukaryotic translation initiation element 2α (eIF2α)-activating transcription element 4 (ATF4). Results: High glucose decreased the viability and induced ER stress-related apoptosis in NP cells. Quercetin modulated ER stress through the PERK-eIF2α-ATF4 pathway, thereby alleviating the apoptosis rank in NP cells. Conclusion: Quercetin exerts antiapoptotic effects on NP cells, probably through ER stress, thereby showcasing potential as a therapeutic method for treating IDD.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-7-92",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "27-36",
+    "views": 4872,
+    "downloads": 2730,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2668",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2668",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2668",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2668",
+    "localPdfUrl": "js/data/pdfs/2668.pdf",
+    "pdfUrl": "js/data/pdfs/2668.pdf"
+  },
+  {
+    "id": 2669,
+    "type": "Original Article",
+    "title": "How Uremic Toxins Alter Atorvastatin Disposition: Molecular Mechanisms of Inhibition of the Enzyme CYP3A4",
+    "authors": [
+      {
+        "name": "Ashna Asim",
+        "affiliation": "Department of Clinical Pharmacy, China Pharmaceutical University, School of Basic Medicine and Clinical Pharmacy, Nanjing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Fen Wang",
+        "affiliation": "Department of Clinical Pharmacy, China Pharmaceutical University, School of Basic Medicine and Clinical Pharmacy, Nanjing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Dong Pu",
+        "affiliation": "Department of Clinical Pharmacy, China Pharmaceutical University, School of Basic Medicine and Clinical Pharmacy, Nanjing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Sisi Wang",
+        "affiliation": "Department of Clinical Pharmacy, China Pharmaceutical University, School of Basic Medicine and Clinical Pharmacy, Nanjing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Dian Wang",
+        "affiliation": "Department of Clinical Pharmacy, China Pharmaceutical University, School of Basic Medicine and Clinical Pharmacy, Nanjing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Wenwen Li",
+        "affiliation": "Department of Clinical Pharmacy, Yifu Hospital, Nanjing Medical University, Nanjing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Feng Yu",
+        "affiliation": "Department of Clinical Pharmacy, China Pharmaceutical University, School of Basic Medicine and Clinical Pharmacy, Nanjing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Li Ji",
+        "affiliation": "Department of Clinical Pharmacy, China Pharmaceutical University, School of Basic Medicine and Clinical Pharmacy, Nanjing, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: In uremic patients, the accumulation of gut-derived protein-bound uremic toxins (PBUTs) induces changes in the microenvironment of the patients, leading to changes in the elimination pattern of drugs. Aims: To assess ways in which PBUTs alter the CYP450 enzymes in hepatocytes as well as the possible effects of specific PBUTs on the metabolism and excretion of atorvastatin (ATV). Study Design: An experimental study. Methods: The experimental group was treated with long-term MHD for > 3 months, estimated-glomerular filtration rate (e-GFR) < 15 ml/min, normal Alb level (35.0-55.0 g/l), and no urine; the control group was not treated with hemodialysis, e-GFR < 60 ml/min, normal Alb level, and normal urinary excretion function. A suitable UPLC-MS/MS method was developed for detecting the concentration of 4-hydroxy ATV. Fresh primary hepatocytes were isolated from rats, and the uptake of ATV was tested in the uremic serum (US) group, IS group, and HA group and compared with that in the normal serum group. The metabolic status of ATV in the US group, IS group, and HA group was compared with that in the ATV group. RLM were extracted, and the metabolic experiment of ATV was performed in a human CYP3A4 model. The influence of UTs on pregnane X receptor (PXR)/nuclear factor kappa B (NF-κB) mRNA and the protein expression was also detected. Results: IS and HA inhibited the ATV metabolism to varying degrees, wherein IS was the most potent inhibitor, producing > 50% inhibition. Meanwhile, the protein expression of CYP3A4 was downregulated after incubation with US, IS, and HA (p < 0.01). The excretion of ATV was also inhibited by 59.24% and 71.95% after incubation with IS and HA, respectively. The effects of uremic toxins on PXR/NF-κB mRNA and protein expression elucidated that PBUTs can inhibit ATV uptake and metabolism by exerting inhibitory effects on CYP3A4 through the PXR/NF-κB signaling pathway. Conclusion: ATV metabolism could be significantly altered in the presence of uremic toxins, suggesting a downregulated effect on the ATV uptake, possibly through Oatp1b1, and also on the activity of CYP3A4 through the PXR/NF-κB signaling pathway.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> In uremic patients, the accumulation of gut-derived protein-bound uremic toxins (PBUTs) induces changes in the microenvironment of the patients, leading to changes in the elimination pattern of drugs.</p>\r\n<p><strong>Aims:</strong> To assess ways in which PBUTs alter the CYP450 enzymes in hepatocytes as well as the possible effects of specific PBUTs on the metabolism and excretion of atorvastatin (ATV).</p>\r\n<p><strong>Study Design:</strong> An experimental study.</p>\r\n<p><strong>Methods:</strong> The experimental group was treated with long-term MHD for &gt; 3 months, estimated-glomerular filtration rate (e-GFR) &lt; 15 ml/min, normal Alb level (35.0-55.0 g/l), and no urine; the control group was not treated with hemodialysis, e-GFR &lt; 60 ml/min, normal Alb level, and normal urinary excretion function. A suitable UPLC-MS/MS method was developed for detecting the concentration of 4-hydroxy ATV. Fresh primary hepatocytes were isolated from rats, and the uptake of ATV was tested in the uremic serum (US) group, IS group, and HA group and compared with that in the normal serum group. The metabolic status of ATV in the US group, IS group, and HA group was compared with that in the ATV group. RLM were extracted, and the metabolic experiment of ATV was performed in a human CYP3A4 model. The influence of UTs on pregnane X receptor (PXR)/nuclear factor kappa B (NF-&kappa;B) mRNA and the protein expression was also detected.</p>\r\n<p><strong>Results:</strong> IS and HA inhibited the ATV metabolism to varying degrees, wherein IS was the most potent inhibitor, producing &gt; 50% inhibition. Meanwhile, the protein expression of CYP3A4 was downregulated after incubation with US, IS, and HA (<em>p </em>&lt; 0.01). The excretion of ATV was also inhibited by 59.24% and 71.95% after incubation with IS and HA, respectively. The effects of uremic toxins on PXR/NF-&kappa;B mRNA and protein expression elucidated that PBUTs can inhibit ATV uptake and metabolism by exerting inhibitory effects on CYP3A4 through the PXR/NF-&kappa;B signaling pathway.</p>\r\n<p><strong>Conclusion:</strong> ATV metabolism could be significantly altered in the presence of uremic toxins, suggesting a downregulated effect on the ATV uptake, possibly through Oatp1b1, and also on the activity of CYP3A4 through the PXR/NF-&kappa;B signaling pathway.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: In uremic patients, the accumulation of gut-derived protein-bound uremic toxins (PBUTs) induces changes in the microenvironment of the patients, leading to changes in the elimination pattern of drugs. Aims: To assess ways in which PBUTs alter the CYP450 enzymes in hepatocytes as well as the possible effects of specific PBUTs on the metabolism and excretion of atorvastatin (ATV). Study Design: An experimental study. Methods: The experimental group was treated with long-term MHD for > 3 months, estimated-glomerular filtration rate (e-GFR) < 15 ml/min, normal Alb level (35.0-55.0 g/l), and no urine; the control group was not treated with hemodialysis, e-GFR < 60 ml/min, normal Alb level, and normal urinary excretion function. A suitable UPLC-MS/MS method was developed for detecting the concentration of 4-hydroxy ATV. Fresh primary hepatocytes were isolated from rats, and the uptake of ATV was tested in the uremic serum (US) group, IS group, and HA group and compared with that in the normal serum group. The metabolic status of ATV in the US group, IS group, and HA group was compared with that in the ATV group. RLM were extracted, and the metabolic experiment of ATV was performed in a human CYP3A4 model. The influence of UTs on pregnane X receptor (PXR)/nuclear factor kappa B (NF-κB) mRNA and the protein expression was also detected. Results: IS and HA inhibited the ATV metabolism to varying degrees, wherein IS was the most potent inhibitor, producing > 50% inhibition. Meanwhile, the protein expression of CYP3A4 was downregulated after incubation with US, IS, and HA (p < 0.01). The excretion of ATV was also inhibited by 59.24% and 71.95% after incubation with IS and HA, respectively. The effects of uremic toxins on PXR/NF-κB mRNA and protein expression elucidated that PBUTs can inhibit ATV uptake and metabolism by exerting inhibitory effects on CYP3A4 through the PXR/NF-κB signaling pathway. Conclusion: ATV metabolism could be significantly altered in the presence of uremic toxins, suggesting a downregulated effect on the ATV uptake, possibly through Oatp1b1, and also on the activity of CYP3A4 through the PXR/NF-κB signaling pathway.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-9-12",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "37-44",
+    "views": 4849,
+    "downloads": 2636,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2669",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2669",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2669",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2669",
+    "localPdfUrl": "js/data/pdfs/2669.pdf",
+    "pdfUrl": "js/data/pdfs/2669.pdf"
+  },
+  {
+    "id": 2655,
+    "type": "Original Article",
+    "title": "Newborn Screening Program for Cystic Fibrosis in Türkiye: Experiences from False-Negative Tests and Requirement for Optimization",
+    "authors": [
+      {
+        "name": "Fevziye Çoksüer",
+        "affiliation": "Department of Pediatric Pulmonology, Ege University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Gökçen Kartal Öztürk",
+        "affiliation": "Department of Pediatric Pulmonology, Ege University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Handan Duman Şenol",
+        "affiliation": "Department of Pediatric Allergy and Clinical Immunology, Ege University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Meral Barlık",
+        "affiliation": "Department of Pediatric Pulmonology, Ege University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Mustafa Özaslan",
+        "affiliation": "Department of Pediatric Pulmonology, Ege University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Bahar Girgin Dindar",
+        "affiliation": "Department of Pediatric Pulmonology, Ege University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ece Ocak",
+        "affiliation": "Department of Pediatric Pulmonology, Ege University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ece Halis",
+        "affiliation": "Department of Pediatric Pulmonology, Ege University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Şükrü Atacan Öğütcü",
+        "affiliation": "Department of Pediatric Pulmonology, Ege University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Figen Gülen",
+        "affiliation": "Department of Pediatric Pulmonology, Ege University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Esen Demir",
+        "affiliation": "Department of Pediatric Pulmonology, Ege University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Since January 2015, the Cystic Fibrosis National Newborn Bloodspot Screening (CF-NBS) program has been implemented in Türkiye with two samples of immune reactive trypsinogen (IRT-1/IRT-2) testing. Aims: To evaluate the Turkish national CF screening program, which included patients referred to a tertiary pediatric pulmonology center, to ascertain the optimal cut-off values for IRT-1/IRT-2 and to identify alternative strategies for mitigating the number of late-diagnosed false-negative patients (FNPs) who initially exhibited screen negative results but were diagnosed subsequently based on clinical suspicion. The study also compared NBS-positive patients to FNPs to determine the influence of delayed diagnosis. Study Design: A retrospective cohort study. Methods: Screening for CF was conducted in accordance with the national CF-NBS program within 48-72 hours of birth by collecting a few drops of heel blood on Guthrie paper. A cut-off value of 90 µg/l was accepted for the first IRT, while 70 µg/l was accepted for the second sample. Infants with elevated IRT values in both samples were referred to the CF centers for a sweat test (ST). Based on the diagnosis, the NBS-positive infants referred to our CF center for ST analysis were divided into three groups: CF; cystic fibrosis-related metabolic syndrome/cystic fibrosis screen positive, inconclusive diagnosis (CRMS/CFSPID); and false-positive NBS. In addition, the study included NBS-negative patients who initially received negative screen results but were subsequently diagnosed with CF based on clinical suspicion. Results: Of the 227 NBS-positive infants referred within the study period, 53 (23.34%) were diagnosed with CF (true-positive NBS), 11 were classified as CRMS/CFSPID (4.84%), and 163 were classified as false-positive NBS (71.8%). CF was diagnosed in 66 infants, 53 (80.3%) of whom were confirmed using the NBS test, while the 13 (19.7%) patients who were missed on the NBS test were diagnosed based on clinical suspicion (FNP). The study findings indicate that the IRT/IRT approach exhibited a sensitivity of 80.3% and a positive predictive value (PPV) of 23.3%. Conclusion: The current study is the first to analyze the NBS program for CF using data from the Western Anatolian Region of Türkiye. Due to the low sensitivity and PPV of the IRT/IRT protocol and the high proportion of false-positive infants and FNPs, the current national program is not practicable for Türkiye. False-negative results significantly delay the diagnosis and invalidate the screening objectives. It is essential to establish optimal cut-off values for IRT-1/IRT-2 or revise existing strategies to reduce the number of FNPs missed by the screening program.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Since January 2015, the Cystic Fibrosis National Newborn Bloodspot Screening (CF-NBS) program has been implemented in T&uuml;rkiye with two samples of immune reactive trypsinogen (IRT-1/IRT-2) testing.</p>\r\n<p><strong>Aims:</strong> To evaluate the Turkish national CF screening program, which included patients referred to a tertiary pediatric pulmonology center, to ascertain the optimal cut-off values for IRT-1/IRT-2 and to identify alternative strategies for mitigating the number of late-diagnosed false-negative patients (FNPs) who initially exhibited screen negative results but were diagnosed subsequently based on clinical suspicion. The study also compared NBS-positive patients to FNPs to determine the influence of delayed diagnosis.</p>\r\n<p><strong>Study Design:</strong> A retrospective cohort study.</p>\r\n<p><strong>Methods:</strong> Screening for CF was conducted in accordance with the national CF-NBS program within 48-72 hours of birth by collecting a few drops of heel blood on Guthrie paper. A cut-off value of 90 &micro;g/l was accepted for the first IRT, while 70 &micro;g/l was accepted for the second sample. Infants with elevated IRT values in both samples were referred to the CF centers for a sweat test (ST). Based on the diagnosis, the NBS-positive infants referred to our CF center for ST analysis were divided into three groups: CF; cystic fibrosis-related metabolic syndrome/cystic fibrosis screen positive, inconclusive diagnosis (CRMS/CFSPID); and false-positive NBS. In addition, the study included NBS-negative patients who initially received negative screen results but were subsequently diagnosed with CF based on clinical suspicion.</p>\r\n<p><strong>Results:</strong> Of the 227 NBS-positive infants referred within the study period, 53 (23.34%) were diagnosed with CF (true-positive NBS), 11 were classified as CRMS/CFSPID (4.84%), and 163 were classified as false-positive NBS (71.8%). CF was diagnosed in 66 infants, 53 (80.3%) of whom were confirmed using the NBS test, while the 13 (19.7%) patients who were missed on the NBS test were diagnosed based on clinical suspicion (FNP). The study findings indicate that the IRT/IRT approach exhibited a sensitivity of 80.3% and a positive predictive value (PPV) of 23.3%.</p>\r\n<p><strong>Conclusion:</strong> The current study is the first to analyze the NBS program for CF using data from the Western Anatolian Region of T&uuml;rkiye. Due to the low sensitivity and PPV of the IRT/IRT protocol and the high proportion of false-positive infants and FNPs, the current national program is not practicable for T&uuml;rkiye. False-negative results significantly delay the diagnosis and invalidate the screening objectives. It is essential to establish optimal cut-off values for IRT-1/IRT-2 or revise existing strategies to reduce the number of FNPs missed by the screening program.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Since January 2015, the Cystic Fibrosis National Newborn Bloodspot Screening (CF-NBS) program has been implemented in Türkiye with two samples of immune reactive trypsinogen (IRT-1/IRT-2) testing. Aims: To evaluate the Turkish national CF screening program, which included patients referred to a tertiary pediatric pulmonology center, to ascertain the optimal cut-off values for IRT-1/IRT-2 and to identify alternative strategies for mitigating the number of late-diagnosed false-negative patients (FNPs) who initially exhibited screen negative results but were diagnosed subsequently based on clinical suspicion. The study also compared NBS-positive patients to FNPs to determine the influence of delayed diagnosis. Study Design: A retrospective cohort study. Methods: Screening for CF was conducted in accordance with the national CF-NBS program within 48-72 hours of birth by collecting a few drops of heel blood on Guthrie paper. A cut-off value of 90 µg/l was accepted for the first IRT, while 70 µg/l was accepted for the second sample. Infants with elevated IRT values in both samples were referred to the CF centers for a sweat test (ST). Based on the diagnosis, the NBS-positive infants referred to our CF center for ST analysis were divided into three groups: CF; cystic fibrosis-related metabolic syndrome/cystic fibrosis screen positive, inconclusive diagnosis (CRMS/CFSPID); and false-positive NBS. In addition, the study included NBS-negative patients who initially received negative screen results but were subsequently diagnosed with CF based on clinical suspicion. Results: Of the 227 NBS-positive infants referred within the study period, 53 (23.34%) were diagnosed with CF (true-positive NBS), 11 were classified as CRMS/CFSPID (4.84%), and 163 were classified as false-positive NBS (71.8%). CF was diagnosed in 66 infants, 53 (80.3%) of whom were confirmed using the NBS test, while the 13 (19.7%) patients who were missed on the NBS test were diagnosed based on clinical suspicion (FNP). The study findings indicate that the IRT/IRT approach exhibited a sensitivity of 80.3% and a positive predictive value (PPV) of 23.3%. Conclusion: The current study is the first to analyze the NBS program for CF using data from the Western Anatolian Region of Türkiye. Due to the low sensitivity and PPV of the IRT/IRT protocol and the high proportion of false-positive infants and FNPs, the current national program is not practicable for Türkiye. False-negative results significantly delay the diagnosis and invalidate the screening objectives. It is essential to establish optimal cut-off values for IRT-1/IRT-2 or revise existing strategies to reduce the number of FNPs missed by the screening program.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-7-144",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "45-53",
+    "views": 4339,
+    "downloads": 1793,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2655",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2655",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2655",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2655",
+    "localPdfUrl": "js/data/pdfs/2655.pdf",
+    "pdfUrl": "js/data/pdfs/2655.pdf"
+  },
+  {
+    "id": 2670,
+    "type": "Original Article",
+    "title": "Matrine Inhibits Breast Cancer Cell Proliferation and Epithelial-Mesenchymal Transition Through Regulating the LINC01116/miR-9-5p/ITGB1 Axis",
+    "authors": [
+      {
+        "name": "Lili Ren",
+        "affiliation": "Department of Integration of Traditional Chinese and Western Medicine, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Medical Sciences, Hangzhou, Zhejiang 310022, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ziru Fang",
+        "affiliation": "Department of Medical Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Hangzhou, Zhejiang 310022, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jiaojiao Xu",
+        "affiliation": "Department of Medical Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Hangzhou, Zhejiang 310022, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiaoxiao Wu",
+        "affiliation": "Department of Pathology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Hangzhou, Zhejiang 310022, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yongjun Zhang",
+        "affiliation": "Department of Integration of Traditional Chinese and Western Medicine, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Medical Sciences, Hangzhou, Zhejiang 310022, China",
+        "orcid": ""
+      },
+      {
+        "name": "Hu Cai",
+        "affiliation": "Department of Integration of Traditional Chinese and Western Medicine, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Medical Sciences, Hangzhou, Zhejiang 310022, China",
+        "orcid": ""
+      },
+      {
+        "name": "Zhicun Han",
+        "affiliation": "Department of Acupuncture, Tongde Hospital of Zhejiang Province, Hangzhou, Zhejiang 310022, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Breast cancer (BC) is the most prevalent solid cancer affecting women’s health globally. Matrine (MAT), a traditional Chinese herb, has exhibited antitumor effects against BC. However, its mechanism of action, particularly whether it involves the control of cell proliferation and epithelial-mesenchymal transition (EMT), remains unknown. Aims: To explore MAT’s role in BC and its regulatory mechanisms, as well as to identify targets for the development of novel medicines and improvement of BC treatment modalities. Study Design: Experimental study. Methods: The UALCAN and Lnc2Cancer 3.0 databases were used to predict the expression of LINC01116 in BC. The BC cells (MDA-MB-231 and MCF-7) were treated with various concentrations of MAT, and the optimal dose and timing of MAT action were determined using CCK-8 and quantitative real-time polymerase chain reaction assays. Functional assays such as CCK-8, EdU, Transwell, Western blot, and flow cytometry assays were performed on the BC cells, and the impacts of LINC01116, miR-9-5p, and ITGB1 expression levels on MAT’s mechanism of action were assessed. The association between LINC01116, miR-9-5p, and ITGB1 was evaluated using dual luciferase and RNA immunoprecipitation assays. Furthermore, the size and weight of the subcutaneous tumors in mice model were assessed. The effect of LINC01116 overexpression on the in vivo action of MAT and histopathological staining (TUNEL immunofluorescence, hematoxylin & eosin staining, immunohistochemistry staining for Ki67 and Bax) were also assessed. Results: The optimal dose and duration of MAT administration were 8 µm and 24 h, respectively. MAT effectively inhibited BC cell proliferation, EMT progression, and biological functions, while promoting BC cell apoptosis. The animal model experiments also demonstrated that MAT inhibited BC tumor growth in vivo. Furthermore, MAT inhibited LINC01116, which acted as a sponge for miR-9-5p, increasing the ITGB1 level. Conclusion: MAT suppresses BC cell and EMT proliferation via the LINC01116/miR-9-5p/ITGB1 pathway. Thus, MAT may be a promising target for adjuvant anti-BC therapy.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Breast cancer (BC) is the most prevalent solid cancer affecting women&rsquo;s health globally. Matrine (MAT), a traditional Chinese herb, has exhibited antitumor effects against BC. However, its mechanism of action, particularly whether it involves the control of cell proliferation and epithelial-mesenchymal transition (EMT), remains unknown.</p>\r\n<p><strong>Aims:</strong> To explore MAT&rsquo;s role in BC and its regulatory mechanisms, as well as to identify targets for the development of novel medicines and improvement of BC treatment modalities.</p>\r\n<p><strong>Study Design:</strong> Experimental study.</p>\r\n<p><strong>Methods:</strong> The UALCAN and Lnc2Cancer 3.0 databases were used to predict the expression of LINC01116 in BC. The BC cells (MDA-MB-231 and MCF-7) were treated with various concentrations of MAT, and the optimal dose and timing of MAT action were determined using CCK-8 and quantitative real-time polymerase chain reaction assays. Functional assays such as CCK-8, EdU, Transwell, Western blot, and flow cytometry assays were performed on the BC cells, and the impacts of LINC01116, miR-9-5p, and ITGB1 expression levels on MAT&rsquo;s mechanism of action were assessed. The association between LINC01116, miR-9-5p, and ITGB1 was evaluated using dual luciferase and RNA immunoprecipitation assays. Furthermore, the size and weight of the subcutaneous tumors in mice model were assessed. The effect of LINC01116 overexpression on the in vivo action of MAT and histopathological staining (TUNEL immunofluorescence, hematoxylin &amp; eosin staining, immunohistochemistry staining for Ki67 and Bax) were also assessed.</p>\r\n<p><strong>Results:</strong> The optimal dose and duration of MAT administration were 8 &micro;m and 24 h, respectively. MAT effectively inhibited BC cell proliferation, EMT progression, and biological functions, while promoting BC cell apoptosis. The animal model experiments also demonstrated that MAT inhibited BC tumor growth in vivo. Furthermore, MAT inhibited LINC01116, which acted as a sponge for miR-9-5p, increasing the ITGB1 level.</p>\r\n<p><strong>Conclusion:</strong> MAT suppresses BC cell and EMT proliferation via the LINC01116/miR-9-5p/ITGB1 pathway. Thus, MAT may be a promising target for adjuvant anti-BC therapy.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Breast cancer (BC) is the most prevalent solid cancer affecting women’s health globally. Matrine (MAT), a traditional Chinese herb, has exhibited antitumor effects against BC. However, its mechanism of action, particularly whether it involves the control of cell proliferation and epithelial-mesenchymal transition (EMT), remains unknown. Aims: To explore MAT’s role in BC and its regulatory mechanisms, as well as to identify targets for the development of novel medicines and improvement of BC treatment modalities. Study Design: Experimental study. Methods: The UALCAN and Lnc2Cancer 3.0 databases were used to predict the expression of LINC01116 in BC. The BC cells (MDA-MB-231 and MCF-7) were treated with various concentrations of MAT, and the optimal dose and timing of MAT action were determined using CCK-8 and quantitative real-time polymerase chain reaction assays. Functional assays such as CCK-8, EdU, Transwell, Western blot, and flow cytometry assays were performed on the BC cells, and the impacts of LINC01116, miR-9-5p, and ITGB1 expression levels on MAT’s mechanism of action were assessed. The association between LINC01116, miR-9-5p, and ITGB1 was evaluated using dual luciferase and RNA immunoprecipitation assays. Furthermore, the size and weight of the subcutaneous tumors in mice model were assessed. The effect of LINC01116 overexpression on the in vivo action of MAT and histopathological staining (TUNEL immunofluorescence, hematoxylin & eosin staining, immunohistochemistry staining for Ki67 and Bax) were also assessed. Results: The optimal dose and duration of MAT administration were 8 µm and 24 h, respectively. MAT effectively inhibited BC cell proliferation, EMT progression, and biological functions, while promoting BC cell apoptosis. The animal model experiments also demonstrated that MAT inhibited BC tumor growth in vivo. Furthermore, MAT inhibited LINC01116, which acted as a sponge for miR-9-5p, increasing the ITGB1 level. Conclusion: MAT suppresses BC cell and EMT proliferation via the LINC01116/miR-9-5p/ITGB1 pathway. Thus, MAT may be a promising target for adjuvant anti-BC therapy.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-8-49",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "54-65",
+    "views": 4386,
+    "downloads": 2851,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2670",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2670",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2670",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2670",
+    "localPdfUrl": "js/data/pdfs/2670.pdf",
+    "pdfUrl": "js/data/pdfs/2670.pdf"
+  },
+  {
+    "id": 2671,
+    "type": "Original Article",
+    "title": "Association Between Platelet-Albumin-Bilirubin Grade and the 30-Day Mortality in Patients with Acute Respiratory Distress Syndrome: Evidence from the MIMIC-IV Database",
+    "authors": [
+      {
+        "name": "Dandan Ye",
+        "affiliation": "Department of Emergency, Wuhu Hospital, East China Normal University, the Second People’s Hospital, Wuhu, China",
+        "orcid": ""
+      },
+      {
+        "name": "Wei Jiang",
+        "affiliation": "Department of Emergency, Wuhu Hospital, East China Normal University, the Second People’s Hospital, Wuhu, China",
+        "orcid": ""
+      },
+      {
+        "name": "Deming Gu",
+        "affiliation": "Department of Emergency, Wuhu Hospital, East China Normal University, the Second People’s Hospital, Wuhu, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The platelet-albumin-bilirubin (PALBI) grade is a comprehensive assessment index of liver function. Liver dysfunction is a key determinant of the pathogenesis and resolution of acute respiratory distress syndrome (ARDS), which affects the prognosis of patients. Aims: To evaluate the association of PALBI grade with the risk of 30-day mortality in patients with ARDS. Study Design: Retrospective cohort study. Methods: Univariate and multivariate Cox proportional hazards models were used to evaluate the association between PALBI grade and the 30-day mortality in patients with ARDS; results were described as hazard ratios (HRs) and 95% confidence intervals (CIs). This association was further assessed by subgroup analyses stratified based on age, sex, and complications. Results: A total of 2,841 patients with ARDS were included, of whom, 703 (24.74%) died within 30 days. After adjusting all covariates, a higher PALBI grade was associated with higher odds of 30-day mortality (HR: 1.55, 95% CI: 1.05-2.29). High PALBI grade was related to higher odds of 30-day mortality in patients with ARDS aged ≥ 65 years (HR: 2.30, 95% CI: 1.06-5.01), males (HR: 2.10, 95% CI: 1.29-3.44), without sepsis (HR: 1.71, 95% CI: 1.11-2.64), without pneumonia (HR: 1.86, 95% CI: 1.19-2.91), and without any history of chronic obstructive pulmonary disease (HR: 1.93, 95% CI: 1.28-2.91). Conclusion: The PALBI grade was positively associated with 30-day mortality in patients with ARDS. The present study provides a reference for risk stratification management of patients with ARDS to improve short-term prognosis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The platelet-albumin-bilirubin (PALBI) grade is a comprehensive assessment index of liver function. Liver dysfunction is a key determinant of the pathogenesis and resolution of acute respiratory distress syndrome (ARDS), which affects the prognosis of patients.</p>\r\n<p><strong>Aims:</strong> To evaluate the association of PALBI grade with the risk of 30-day mortality in patients with ARDS.</p>\r\n<p><strong>Study Design:</strong> Retrospective cohort study.</p>\r\n<p><strong>Methods:</strong> Univariate and multivariate Cox proportional hazards models were used to evaluate the association between PALBI grade and the 30-day mortality in patients with ARDS; results were described as hazard ratios (HRs) and 95% confidence intervals (CIs). This association was further assessed by subgroup analyses stratified based on age, sex, and complications.</p>\r\n<p><strong>Results:</strong> A total of 2,841 patients with ARDS were included, of whom, 703 (24.74%) died within 30 days. After adjusting all covariates, a higher PALBI grade was associated with higher odds of 30-day mortality (HR: 1.55, 95% CI: 1.05-2.29). High PALBI grade was related to higher odds of 30-day mortality in patients with ARDS aged &ge; 65 years (HR: 2.30, 95% CI: 1.06-5.01), males (HR: 2.10, 95% CI: 1.29-3.44), without sepsis (HR: 1.71, 95% CI: 1.11-2.64), without pneumonia (HR: 1.86, 95% CI: 1.19-2.91), and without any history of chronic obstructive pulmonary disease (HR: 1.93, 95% CI: 1.28-2.91).</p>\r\n<p><strong>Conclusion:</strong> The PALBI grade was positively associated with 30-day mortality in patients with ARDS. The present study provides a reference for risk stratification management of patients with ARDS to improve short-term prognosis.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The platelet-albumin-bilirubin (PALBI) grade is a comprehensive assessment index of liver function. Liver dysfunction is a key determinant of the pathogenesis and resolution of acute respiratory distress syndrome (ARDS), which affects the prognosis of patients. Aims: To evaluate the association of PALBI grade with the risk of 30-day mortality in patients with ARDS. Study Design: Retrospective cohort study. Methods: Univariate and multivariate Cox proportional hazards models were used to evaluate the association between PALBI grade and the 30-day mortality in patients with ARDS; results were described as hazard ratios (HRs) and 95% confidence intervals (CIs). This association was further assessed by subgroup analyses stratified based on age, sex, and complications. Results: A total of 2,841 patients with ARDS were included, of whom, 703 (24.74%) died within 30 days. After adjusting all covariates, a higher PALBI grade was associated with higher odds of 30-day mortality (HR: 1.55, 95% CI: 1.05-2.29). High PALBI grade was related to higher odds of 30-day mortality in patients with ARDS aged ≥ 65 years (HR: 2.30, 95% CI: 1.06-5.01), males (HR: 2.10, 95% CI: 1.29-3.44), without sepsis (HR: 1.71, 95% CI: 1.11-2.64), without pneumonia (HR: 1.86, 95% CI: 1.19-2.91), and without any history of chronic obstructive pulmonary disease (HR: 1.93, 95% CI: 1.28-2.91). Conclusion: The PALBI grade was positively associated with 30-day mortality in patients with ARDS. The present study provides a reference for risk stratification management of patients with ARDS to improve short-term prognosis.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-8-7",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "66-74",
+    "views": 4528,
+    "downloads": 3013,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2671",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2671",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2671",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2671",
+    "localPdfUrl": "js/data/pdfs/2671.pdf",
+    "pdfUrl": "js/data/pdfs/2671.pdf"
+  },
+  {
+    "id": 2635,
+    "type": "Clinical Image",
+    "title": "Intraventricular Peritoneal Shunt for Obstructive Hydrocephalus Caused by Cavernous Hemangioma of the Aqueduct of Sylvius",
+    "authors": [
+      {
+        "name": "Wei Yang",
+        "affiliation": "Department of Radiology, Jiangsu Province Hospital of Chinese Medicine and Affiliated Hospital of Nanjing University of Chinese Medicine, Nanjing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Chendong He",
+        "affiliation": "Department of Radiology, Nanjing Hospital of Chinese Medicine, Nanjing, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 74-year-old female presented with unresponsiveness, lethargy, nausea, and vomiting of unknown etiology. There was no discernible limb movement disorder or twitching. The patient had a history of diabetes for 20 years and hypertension for 5 years, with a blood pressure of 168/82 mmHg. A head computed tomography demonstrated hydrocephalus, and a dense nodule",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-5-86",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "75-76",
+    "views": 4592,
+    "downloads": 2119,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2635",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2635",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2635",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2635",
+    "localPdfUrl": "js/data/pdfs/2635.pdf",
+    "pdfUrl": "js/data/pdfs/2635.pdf"
+  },
+  {
+    "id": 2657,
+    "type": "Clinical Image",
+    "title": "Orbital Myositis as a Paradoxical Reaction to Anti-Tuberculosis Treatment",
+    "authors": [
+      {
+        "name": "Koichi Yano",
+        "affiliation": "Department of Internal Medicine, Tokyo Metropolitan Matsuzawa Hospital, Setagaya, Tokyo, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Kyoko Yokosuka",
+        "affiliation": "Department of Internal Medicine, Tokyo Metropolitan Matsuzawa Hospital, Setagaya, Tokyo, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Kiyomi Amemiya",
+        "affiliation": "Department of Radiology, Tokyo Metropolitan Matsuzawa Hospital, Setagaya, Tokyo, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Kentaro Sakashita",
+        "affiliation": "Department of Internal Medicine, Tokyo Metropolitan Matsuzawa Hospital, Setagaya, Tokyo, Japan; Department of Pulmonary Medicine, Takayama Red Cross Hospital, Takayama, Gifu, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Takuto Ishida",
+        "affiliation": "Department of Internal Medicine, Tokyo Metropolitan Matsuzawa Hospital, Setagaya, Tokyo, Japan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 66-year-old female with pulmonary tuberculosis presented with ocular pain and blurred vision eight weeks after commencing anti-tuberculosis treatment, which consisted of isoniazid 200 mg, rifampicin 450 mg, ethambutol 750 mg, and pyrazinamide 1000 mg. The physical examination revealed bilateral eyelid edema, chemosis, and conjunctival congestion (v). Diplo",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-7-10",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "77-78",
+    "views": 4411,
+    "downloads": 2003,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2657",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2657",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2657",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2657",
+    "localPdfUrl": "js/data/pdfs/2657.pdf",
+    "pdfUrl": "js/data/pdfs/2657.pdf"
+  },
+  {
+    "id": 2660,
+    "type": "Scientific Letter",
+    "title": "High-Voltage Electrical Lung Injury",
+    "authors": [
+      {
+        "name": "Branko Čampar",
+        "affiliation": "Department of Thoracic Surgery, Clinical Center of Montenegro, Podgorica, Montenegro; Department of Cardiology, University of Montenegro Faculty of Medicine, Podgorica, Montenegro",
+        "orcid": ""
+      },
+      {
+        "name": "Blagoje Babić",
+        "affiliation": "Department of Cardiology, University of Montenegro Faculty of Medicine, Podgorica, Montenegro; Department of Cardiology, Clinical Center of Montenegro, Podgorica, Montenegro",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 23-year-old male was admitted to the intensive care unit (ICU) with high-voltage electrical injuries. During construction work, he touched a cable carrying 20,000 V and lost consciousness. He was brought to the ICU intubated, unconscious, with a Glasgow Coma Scale of 7-8, hypotensive, in cardiogenic shock, and presented massive hemoptysis. Vital signs indi",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-9-73",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "79-80",
+    "views": 4019,
+    "downloads": 1885,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2660",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2660",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2660",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2660",
+    "localPdfUrl": "js/data/pdfs/2660.pdf",
+    "pdfUrl": "js/data/pdfs/2660.pdf"
+  },
+  {
+    "id": 2641,
+    "type": "Scientific Letter",
+    "title": "Trachelectomy After Supracervical Hysterectomy",
+    "authors": [
+      {
+        "name": "Tihomir Pankov Totev",
+        "affiliation": "Department of Obstetrics and Gynecology, Medical University - Pleven, Pleven, Bulgaria; Department of Obstetrics and Gynecology, University Hospital Saint Marina - Pleven, Pleven, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Georgi Danielov Prandzhev",
+        "affiliation": "Department of Obstetrics and Gynecology, Medical University - Pleven, Pleven, Bulgaria; Department of Obstetrics and Gynecology, University Hospital Saint Marina - Pleven, Pleven, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Slavcho Tomov Tomov",
+        "affiliation": "Department of Obstetrics and Gynecology, Medical University - Pleven, Pleven, Bulgaria; Department of Obstetrics and Gynecology, University Hospital Saint Marina - Pleven, Pleven, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Nadezhda Hristova Hinkova",
+        "affiliation": "Department of Obstetrics and Gynecology, Medical University - Pleven, Pleven, Bulgaria; Department of Obstetrics and Gynecology, University Hospital Saint Marina - Pleven, Pleven, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Grigor Angelov Gortchev",
+        "affiliation": "Department of Obstetrics and Gynecology, Medical University - Pleven, Pleven, Bulgaria; Department of Obstetrics and Gynecology, University Hospital Saint Marina - Pleven, Pleven, Bulgaria",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Trachelectomy involves the surgical excision of the cervical stump, which may be employed to remove the residual portion of the cervix from a prior supracervical hysterectomy (SCH) or as a fertility-sparing standalone procedure. Subtotal hysterectomy is an alternative treatment option for benign gynecological conditions as well as life-threatening obstetric ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-6-30",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "81-82",
+    "views": 4545,
+    "downloads": 1875,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2641",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2641",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2641",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2641",
+    "localPdfUrl": "js/data/pdfs/2641.pdf",
+    "pdfUrl": "js/data/pdfs/2641.pdf"
+  },
+  {
+    "id": 2656,
+    "type": "Scientific Letter",
+    "title": "FAVA Syndrome with Unique Synovial Localisation Mimicking Diffuse Pigmented Villonodular Synovitis",
+    "authors": [
+      {
+        "name": "Ufuk Usta",
+        "affiliation": "Department of Pathology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Meltem Ayyıldız Mercan",
+        "affiliation": "Department of Pathology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Gülşah Burgazdere",
+        "affiliation": "Department of Radiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Fethi Emre Ustabaşıoğlu",
+        "affiliation": "Department of Radiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mert Çiftdemir",
+        "affiliation": "Department of Orthopaedics and Traumatology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "In 2014, Alomari et al.1 have described a novel clinical, radiologic, and histopathologic entity known as “fibroadipose vascular anomaly (FAVA)” that comprises a fibroadipose lesion associated with venectasia and presents with pain. Since then, 143 cases have been published in the English literature as case reports or case series, spanning the ages of newbor",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-7-12",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "83-85",
+    "views": 4124,
+    "downloads": 2032,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2656",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2656",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2656",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2656",
+    "localPdfUrl": "js/data/pdfs/2656.pdf",
+    "pdfUrl": "js/data/pdfs/2656.pdf"
+  },
+  {
+    "id": 2672,
+    "type": "Letter to the Editor",
+    "title": "Artificial Intelligence in Pediatric Nail Diseases: Limitations and Prospects",
+    "authors": [
+      {
+        "name": "Gianluca Mondillo",
+        "affiliation": "Department of Woman, Child and of General and Specialized Surgery, Università degli Studi della Campania “Luigi Vanvitelli”, Naples, Italy",
+        "orcid": ""
+      },
+      {
+        "name": "Vittoria Frattolillo",
+        "affiliation": "Department of Woman, Child and of General and Specialized Surgery, Università degli Studi della Campania “Luigi Vanvitelli”, Naples, Italy",
+        "orcid": ""
+      },
+      {
+        "name": "Simone Colosimo",
+        "affiliation": "Department of Woman, Child and of General and Specialized Surgery, Università degli Studi della Campania “Luigi Vanvitelli”, Naples, Italy",
+        "orcid": ""
+      },
+      {
+        "name": "Alessandra Perrotta",
+        "affiliation": "Department of Woman, Child and of General and Specialized Surgery, Università degli Studi della Campania “Luigi Vanvitelli”, Naples, Italy",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "We are writing in response to your recent editorial, which was published in the Balkan Medical Journal, regarding the promising application of artificial intelligence (AI) in nail diseases.1 Although the advancements in AI for diagnosing conditions such as onychomycosis and nail psoriasis are indeed encouraging, I would like to emphasize two critical limitat",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-8-122",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "86-86",
+    "views": 3840,
+    "downloads": 1862,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2672",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2672",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2672",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2672",
+    "localPdfUrl": "js/data/pdfs/2672.pdf",
+    "pdfUrl": "js/data/pdfs/2672.pdf"
+  },
+  {
+    "id": 2673,
+    "type": "Letter to the Editor",
+    "title": "Constrictive Pericarditis Associated with COVID-19 or Vaccination",
+    "authors": [
+      {
+        "name": "Vitorino Modesto Dos Santos",
+        "affiliation": "Department of Internal Medicine, Armed Forces Hospital, Brasília-DF, Brazil; Catholic University of Brasília, Brasília-DF, Brazil",
+        "orcid": ""
+      },
+      {
+        "name": "Andressa Plaça Tedeschi",
+        "affiliation": "Faculty of the Américas (FAM), São Paulo-SP, Brazil",
+        "orcid": ""
+      },
+      {
+        "name": "Laura Campos Modesto",
+        "affiliation": "University Center (UNICEUB), Brasília-DF, Brazil",
+        "orcid": ""
+      },
+      {
+        "name": "Julia Campos Modesto",
+        "affiliation": "Catholic University of Brasília, Brasília-DF, Brazil",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Pericarditis and myocarditis have been increasingly associated with coronavirus disease-2019 (COVID-19) infection or vaccination, although the occurrence of the voluminous pericardial effusion or constrictive pericarditis (CP) is exceedingly rare.1-7 Up to 49% of CPs result from idiopathic or viral pericarditis; up to 37% are postsurgical; up to 31% are post",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-9-3",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "87-88",
+    "views": 4012,
+    "downloads": 1974,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2673",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2673",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2673",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2673",
+    "localPdfUrl": "js/data/pdfs/2673.pdf",
+    "pdfUrl": "js/data/pdfs/2673.pdf"
+  },
+  {
+    "id": 2674,
+    "type": "Letter to the Editor",
+    "title": "In response to",
+    "authors": [
+      {
+        "name": "Çağlar Kaya",
+        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Kenan Yalta",
+        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "We highly appreciate the comments of the authors regarding our recently published report Dos Santos et al.1 The surgical management of constrictive pericarditis (CP) is associated with a relatively higher risk of mortality and morbidity than other cardiovascular interventions, particularly in long-standing cases.2 Thus, we strongly agree with the authors Dos",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2024.2024-9-3.response",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "1",
+    "pages": "89-89",
+    "views": 3665,
+    "downloads": 1947,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1294",
+    "sourceArticleId": "2674",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2674",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2674",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2674",
+    "localPdfUrl": "js/data/pdfs/2674.pdf",
+    "pdfUrl": "js/data/pdfs/2674.pdf"
+  }
+]

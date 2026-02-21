@@ -1,0 +1,1479 @@
+[
+  {
+    "id": 1826,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "1826",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1826",
+    "localPdfUrl": "js/data/pdfs/1826.pdf",
+    "pdfUrl": "js/data/pdfs/1826.pdf"
+  },
+  {
+    "id": 443,
+    "type": "Original Article",
+    "title": "Comparative and Mixture Effect of Cynodon Dactylon, ElectroMagnetic Field and Insulin on Diabetic Mouse",
+    "authors": [
+      {
+        "name": "Saeid Nafisi",
+        "affiliation": "Faculty of Veterinary Medicine, Urmia University, Urmia, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Mohammad Hossein Asghari",
+        "affiliation": "Faculty of Veterinary Medicine, Urmia University, Urmia, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Mohammad Ali Mohammad Nezhady",
+        "affiliation": "Faculty of Science, Islamic Azad University, Urmia Branch, Urmia, Iran",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: New investigations are in progress to find some alternative treatments for diabetes mellitus. Herbs are some of the interesting medications in this regard. Cynodon dactylon (C.d) is a potential plant to be considered as a new medication. On the other hand, the effect of the Electromagnetic Field (EMF) on bio organisms is becoming clearer. In this study, the effect of C.d, EMF and insulin have been investigated on the diabetic mouse. Material and Methods: Diabetes was induced by a combination of ketamine (60 mg/Kg) and xylazine (10 mg/Kg) which induces a sustained hyperglycemia. Mice were divided into 12 groups: 1) control, 2) normal saline, 3 and 4) 50mg/Kg C.d, 5 and 6) 100 mg/Kg C.d, 7) insulin, 8) insulin and C.d, 9) EMF (110 KHz, 700±20 mG), 10) insulin and EMF, 11) EMF plus C.d and 12) insulin plus C.d and EMF. Blood glucose level was measured after 5 and 60 minutes in C.d administrated groups, and 5 minutes in the other groups by a glucometer set. The data were analyzed by ANOVA and different means were compared by Tukey and Bonferroni tests (p<0.05). Results: According to results, both dosages of C.d had significant lowering effect on blood glucose level. The first dose was more effective than the second, and its impact was just like insulin. The 6th, 9th and 10th groups were significant, also . However, they did not show a higher effect than insulin or C.d. The application of EMF had a significant effect compared to the second group, but it did not reduce the glucose level to the normal range. The effect of the 8th group was very impressive and the mean glucose levels in this group were lower than the control group. Conclusion: Considering the data, C.d is a good alternative medication for diabetes mellitus.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: New investigations are in progress to find some alternative treatments for diabetes mellitus. Herbs are some of the interesting medications in this regard. Cynodon dactylon (C.d) is a potential plant to be considered as a new medication. On the other hand, the effect of the Electromagnetic Field (EMF) on bio organisms is becoming clearer. In this study, the effect of C.d, EMF and insulin have been investigated on the diabetic mouse.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Diabetes was induced by a combination of ketamine (60 mg/Kg) and xylazine (10 mg/Kg) which induces a sustained hyperglycemia. Mice were divided into 12 groups: 1) control, 2) normal saline, 3 and 4) 50mg/Kg C.d, 5 and 6) 100 mg/Kg C.d, 7) insulin, 8) insulin and C.d, 9) EMF (110 KHz, 700&plusmn;20 mG), 10) insulin and EMF, 11) EMF plus C.d and 12) insulin plus C.d and EMF. Blood glucose level was measured after 5 and 60 minutes in C.d administrated groups, and 5 minutes in the other groups by a glucometer set. The data were analyzed by ANOVA and different means were compared by Tukey and Bonferroni tests (p&lt;0.05).</p>\r\n<p>\r\n\t<strong>Results</strong>: According to results, both dosages of C.d had significant lowering effect on blood glucose level. The first dose was more effective than the second, and its impact was just like insulin. The 6th, 9th and 10th groups were significant, also . However, they did not show a higher effect than insulin or C.d. The application of EMF had a significant effect compared to the second group, but it did not reduce the glucose level to the normal range. The effect of the 8th group was very impressive and the mean glucose levels in this group were lower than the control group.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Considering the data, C.d is a good alternative medication for diabetes mellitus.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: New investigations are in progress to find some alternative treatments for diabetes mellitus. Herbs are some of the interesting medications in this regard. Cynodon dactylon (C.d) is a potential plant to be considered as a new medication. On the other hand, the effect of the Electromagnetic Field (EMF) on bio organisms is becoming clearer. In this study, the effect of C.d, EMF and insulin have been investigated on the diabetic mouse. Material and Methods: Diabetes was induced by a combination of ketamine (60 mg/Kg) and xylazine (10 mg/Kg) which induces a sustained hyperglycemia. Mice were divided into 12 groups: 1) control, 2) normal saline, 3 and 4) 50mg/Kg C.d, 5 and 6) 100 mg/Kg C.d, 7) insulin, 8) insulin and C.d, 9) EMF (110 KHz, 700±20 mG), 10) insulin and EMF, 11) EMF plus C.d and 12) insulin plus C.d and EMF. Blood glucose level was measured after 5 and 60 minutes in C.d administrated groups, and 5 minutes in the other groups by a glucometer set. The data were analyzed by ANOVA and different means were compared by Tukey and Bonferroni tests (p<0.05). Results: According to results, both dosages of C.d had significant lowering effect on blood glucose level. The first dose was more effective than the second, and its impact was just like insulin. The 6th, 9th and 10th groups were significant, also . However, they did not show a higher effect than insulin or C.d. The application of EMF had a significant effect compared to the second group, but it did not reduce the glucose level to the normal range. The effect of the 8th group was very impressive and the mean glucose levels in this group were lower than the control group. Conclusion: Considering the data, C.d is a good alternative medication for diabetes mellitus.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.091",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "345-348",
+    "views": 7094,
+    "downloads": 9531,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "443",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=443",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=443",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=443",
+    "localPdfUrl": "js/data/pdfs/443.pdf",
+    "pdfUrl": "js/data/pdfs/443.pdf"
+  },
+  {
+    "id": 444,
+    "type": "Original Article",
+    "title": "Aquaporin-1 and Aquaporin-3 Expressions in the Intervertebral Disc of Rats with Aging",
+    "authors": [
+      {
+        "name": "Ufuk Taş",
+        "affiliation": "Department of Anatomy, Faculty of Medicine, Gaziosmanpaşa University, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Birsen Özyurt",
+        "affiliation": "Department of Anatomy, Faculty of Medicine, Gaziosmanpaşa University, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sevil Çaylı",
+        "affiliation": "Department of Histology and Embryology, Faculty of Medicine, Gaziosmanpaşa University, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Seda Ocaklı",
+        "affiliation": "Department of Histology and Embryology, Faculty of Medicine, Gaziosmanpaşa University, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zafer İsmail Karaca",
+        "affiliation": "Department of Histology and Embryology, Faculty of Medicine, Gaziosmanpaşa University, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet İnanır",
+        "affiliation": "Department of Physical Therapy and Rehabilitation, Faculty of Medicine, Gaziosmanpaşa University, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Sarsılmaz[[4]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The intervertebral disc (IVD) undergoes biochemical and morphologic degenerative changes during the process of aging. Aquaporins (AQPs) are a family of water channel proteins that facilitate water and small solute movement in tissues and may have a potential role in the aging degeneration of IVDs. One of the important problems in understanding disc degeneration is to find cellular molecules which contribute to the pathogenesis of IVDs. XThe aim of this study was to demonstrate the expression of aquaporin 1 and 3 in nucleus pulposus (NP), annulus fibrosus (AF) cells of rat lumbar intervertebral discs from both young and aged animals using immunohistochemistry. Material and Methods: Twenty Wistar-albino rats were included in the study. The rats were separated into two groups: 2-month-old rats (n=10) as the young group, 18-month-old rats (n=10) as the old group. The intervertebral disc tissues obtained from the lumbar spine (L1–L4, 4 discs) were used for immunohistochemical staining of AQP-1 and 3. Results: This study demonstrated that AQP-1 and AQP-3 immunoreactivity significantly decreased in NP and AF of aged rats compared to the young rats. Conclusion: We suggest that AQP-1 and 3 may contribute to the age related degeneration of the intervertebral disc.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The intervertebral disc (IVD) undergoes biochemical and morphologic degenerative changes during the process of aging. Aquaporins (AQPs) are a family of water channel proteins that facilitate water and small solute movement in tissues and may have a potential role in the aging degeneration of IVDs. One of the important problems in understanding disc degeneration is to find cellular molecules which contribute to the pathogenesis of IVDs. XThe aim of this study was to demonstrate the expression of aquaporin 1 and 3 in nucleus pulposus (NP), annulus fibrosus (AF) cells of rat lumbar intervertebral discs from both young and aged animals using immunohistochemistry.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Twenty Wistar-albino rats were included in the study. The rats were separated into two groups: 2-month-old rats (n=10) as the young group, 18-month-old rats (n=10) as the old group. The intervertebral disc tissues obtained from the lumbar spine (L1&ndash;L4, 4 discs) were used for immunohistochemical staining of AQP-1 and 3.</p>\r\n<p>\r\n\t<strong>Results</strong>: This study demonstrated that AQP-1 and AQP-3 immunoreactivity significantly decreased in NP and AF of aged rats compared to the young rats.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: We suggest that AQP-1 and 3 may contribute to the age related degeneration of the intervertebral disc.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The intervertebral disc (IVD) undergoes biochemical and morphologic degenerative changes during the process of aging. Aquaporins (AQPs) are a family of water channel proteins that facilitate water and small solute movement in tissues and may have a potential role in the aging degeneration of IVDs. One of the important problems in understanding disc degeneration is to find cellular molecules which contribute to the pathogenesis of IVDs. XThe aim of this study was to demonstrate the expression of aquaporin 1 and 3 in nucleus pulposus (NP), annulus fibrosus (AF) cells of rat lumbar intervertebral discs from both young and aged animals using immunohistochemistry. Material and Methods: Twenty Wistar-albino rats were included in the study. The rats were separated into two groups: 2-month-old rats (n=10) as the young group, 18-month-old rats (n=10) as the old group. The intervertebral disc tissues obtained from the lumbar spine (L1–L4, 4 discs) were used for immunohistochemical staining of AQP-1 and 3. Results: This study demonstrated that AQP-1 and AQP-3 immunoreactivity significantly decreased in NP and AF of aged rats compared to the young rats. Conclusion: We suggest that AQP-1 and 3 may contribute to the age related degeneration of the intervertebral disc.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.079",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "349-353",
+    "views": 6881,
+    "downloads": 43310,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "444",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=444",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=444",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=444",
+    "localPdfUrl": "js/data/pdfs/444.pdf",
+    "pdfUrl": "js/data/pdfs/444.pdf"
+  },
+  {
+    "id": 445,
+    "type": "Original Article",
+    "title": "Evaluation of Antinociceptive and Neurotoxic Effects of Intrathecal Dexmedetomidine in Rats",
+    "authors": [
+      {
+        "name": "Özgü İşgüzar",
+        "affiliation": "Department of Anesthesiology, Faculty of Medicine, Ondokuz Mayıs University, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hatice Türe",
+        "affiliation": "Department of Anesthesiology, Faculty of Medicine, Ondokuz Mayıs University, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sibel Barış",
+        "affiliation": "Department of Anesthesiology and Reanimation, Ondokuz Mayıs University Faculty of Medicine, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayhan Bozkurt",
+        "affiliation": "Department of Physiology, Ondokuz Mayıs University Faculty of Medicine, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bilge Can",
+        "affiliation": "Department of Pathology, Ondokuz Mayıs University Faculty of Medicine, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sırrı Bilge [[5]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Dexmedetomidine has been reported to produce analgesia after intrathecal administration. In the present study the α2-adrenoceptor agonist dexmedetomidine was evaluated for its potential spinal neurotoxic effects. Material and Methods: Three days after intrathecal cannulation, rats were administered either dexmedetomidine (3 μg/30 μL, i.t.) or saline (30 μL, i.t.). Antinociceptive, sedative and motor effects of intrathecal administrations of dexmedetomidine or saline were evaluated during 90 min. The tail-flick and hot plate tests were used to assess the thermal nociceptive threshold. Seven days after drug administration, animals were sacrified and spinal cords were evaluated for histopathological changes by light microscopy. Results: Dexmedetomidine administered intrathecally produced antinociception. Antinociception was accompanied by immediate sedation and loss of placing-stepping reflexes that lasted over 40 min in all dexmedetomidine administered rats. In all rats, microscopic examination revealed mild gliosis and minimal infiltration of inflamatory r cells in posterior white matter. Mild (total score 4-6) histopathologic lesions were seen in four animals in dexmedetomidine adminisered rats, but there was no statistically significant difference when compared with the saline administered rats. Conclusion: We observed that intrathecal injections of dexmedetomidine at the dose of 3 μg/30 μL produce antinociception but did not cause any histopathological sign of injury in the spinal cord.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Dexmedetomidine has been reported to produce analgesia after intrathecal administration. In the present study the &alpha;2-adrenoceptor agonist dexmedetomidine was evaluated for its potential spinal neurotoxic effects.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Three days after intrathecal cannulation, rats were administered either dexmedetomidine (3 &mu;g/30 &mu;L, i.t.) or saline (30 &mu;L, i.t.). Antinociceptive, sedative and motor effects of intrathecal administrations of dexmedetomidine or saline were evaluated during 90 min. The tail-flick and hot plate tests were used to assess the thermal nociceptive threshold. Seven days after drug administration, animals were sacrified and spinal cords were evaluated for histopathological changes by light microscopy.</p>\r\n<p>\r\n\t<strong>Results</strong>: Dexmedetomidine administered intrathecally produced antinociception. Antinociception was accompanied by immediate sedation and loss of placing-stepping reflexes that lasted over 40 min in all dexmedetomidine administered rats. In all rats, microscopic examination revealed mild gliosis and minimal infiltration of inflamatory r cells in posterior white matter. Mild (total score 4-6) histopathologic lesions were seen in four animals in dexmedetomidine adminisered rats, but there was no statistically significant difference when compared with the saline administered rats.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: We observed that intrathecal injections of dexmedetomidine at the dose of 3 &mu;g/30 &mu;L produce antinociception but did not cause any histopathological sign of injury in the spinal cord.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Dexmedetomidine has been reported to produce analgesia after intrathecal administration. In the present study the α2-adrenoceptor agonist dexmedetomidine was evaluated for its potential spinal neurotoxic effects. Material and Methods: Three days after intrathecal cannulation, rats were administered either dexmedetomidine (3 μg/30 μL, i.t.) or saline (30 μL, i.t.). Antinociceptive, sedative and motor effects of intrathecal administrations of dexmedetomidine or saline were evaluated during 90 min. The tail-flick and hot plate tests were used to assess the thermal nociceptive threshold. Seven days after drug administration, animals were sacrified and spinal cords were evaluated for histopathological changes by light microscopy. Results: Dexmedetomidine administered intrathecally produced antinociception. Antinociception was accompanied by immediate sedation and loss of placing-stepping reflexes that lasted over 40 min in all dexmedetomidine administered rats. In all rats, microscopic examination revealed mild gliosis and minimal infiltration of inflamatory r cells in posterior white matter. Mild (total score 4-6) histopathologic lesions were seen in four animals in dexmedetomidine adminisered rats, but there was no statistically significant difference when compared with the saline administered rats. Conclusion: We observed that intrathecal injections of dexmedetomidine at the dose of 3 μg/30 μL produce antinociception but did not cause any histopathological sign of injury in the spinal cord.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.034",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "354-357",
+    "views": 6762,
+    "downloads": 3398,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "445",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=445",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=445",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=445",
+    "localPdfUrl": "js/data/pdfs/445.pdf",
+    "pdfUrl": "js/data/pdfs/445.pdf"
+  },
+  {
+    "id": 446,
+    "type": "Original Article",
+    "title": "The Protective Effect of Curcumin on Ionizing Radiation-induced Cataractogenesis in Rats",
+    "authors": [
+      {
+        "name": "Seher Çimen Özgen",
+        "affiliation": "Department of Pharmacology, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dikmen Dökmeci",
+        "affiliation": "Department of Pharmacology, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Çetin Hakan Karadağ",
+        "affiliation": "Department of Pharmacology, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özgür Gündüz",
+        "affiliation": "Department of Pharmacology, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Meryem Akpolat",
+        "affiliation": "Department of Histology and Embryology, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Erbaş",
+        "affiliation": "Department of Biochemistry, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ömer Benian",
+        "affiliation": "Department of Ophtalmology, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cem Uzal",
+        "affiliation": "Department of Radiation Oncology, Faculty of Medicine, Trakya University, , Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatma Nesrin Turan",
+        "affiliation": "Department of Biostatistics, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The aim of the study was to determine the protective effect of curcumin against ionizing radiation-induced cataract in the lens of rats. Material and Methods: Rats were divided into six groups. Group 1: Control, Group 2: Dimethyl sulfoxide (DMSO), Group 3: DMSO+curcumin, Group 4: Irradiation, Group 5: Irradiation+DMSO, Group 6: Irradiation+DMSO+curcumin. A 15 Gy total dose was given to 4, 5, 6 groups for radiation damage. Curcumin (100 mg/kg) was dissolved in DMSO and given by intragastric intubation for 28 days. At the end of the experiment, lenses were graded and enucleated. The lenticular activity of the antioxidant enzymes, total antioxidant and glutathione peroxidase (GSH-Px), and the malondialdehyde (MDA) were measured. Results: 100% Cataract was seen in the irradiation group. Cataract rate fell to 40% and was limited at grade 1 and 2 in the curcumin group. In the irradiation group, antioxidant enzyme levels were decreased, MDA levels were increased. There was an increase in antioxidant enzyme levels and a significant decrease in MDA in the group which was given curcumin. Conclusion: Curcumin has antioxidant and radioprotective properties and is likely to be a valuable agent for protection against ionizing radiation. Hence, it may be used as an antioxidant and radioprotector against radiation-induced cataractogenesis. JEL code: I180 Health Total Times Cited: 11 (Updated on Sep. 2018- WoS)",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The aim of the study was to determine the protective effect of curcumin against ionizing radiation-induced cataract in the lens of rats.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Rats were divided into six groups. Group 1: Control, Group 2: Dimethyl sulfoxide (DMSO), Group 3: DMSO+curcumin, Group 4: Irradiation, Group 5: Irradiation+DMSO, Group 6: Irradiation+DMSO+curcumin. A 15 Gy total dose was given to 4, 5, 6 groups for radiation damage. Curcumin (100 mg/kg) was dissolved in DMSO and given by intragastric intubation for 28 days. At the end of the experiment, lenses were graded and enucleated. The lenticular activity of the antioxidant enzymes, total antioxidant and glutathione peroxidase (GSH-Px), and the malondialdehyde (MDA) were measured.</p>\r\n<p>\r\n\t<strong>Results</strong>: 100% Cataract was seen in the irradiation group. Cataract rate fell to 40% and was limited at grade 1 and 2 in the curcumin group. In the irradiation group, antioxidant enzyme levels were decreased, MDA levels were increased. There was an increase in antioxidant enzyme levels and a significant decrease in MDA in the group which was given curcumin.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Curcumin has antioxidant and radioprotective properties and is likely to be a valuable agent for protection against ionizing radiation. Hence, it may be used as an antioxidant and radioprotector against radiation-induced cataractogenesis.</p> \r\n<p style=\"font-size: 12px;\">\r\n\t<strong>JEL code</strong>: I180 Health</p>\r\n<p><strong>Total Times Cited: 11</strong> (Updated on Sep. 2018- WoS) </p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The aim of the study was to determine the protective effect of curcumin against ionizing radiation-induced cataract in the lens of rats. Material and Methods: Rats were divided into six groups. Group 1: Control, Group 2: Dimethyl sulfoxide (DMSO), Group 3: DMSO+curcumin, Group 4: Irradiation, Group 5: Irradiation+DMSO, Group 6: Irradiation+DMSO+curcumin. A 15 Gy total dose was given to 4, 5, 6 groups for radiation damage. Curcumin (100 mg/kg) was dissolved in DMSO and given by intragastric intubation for 28 days. At the end of the experiment, lenses were graded and enucleated. The lenticular activity of the antioxidant enzymes, total antioxidant and glutathione peroxidase (GSH-Px), and the malondialdehyde (MDA) were measured. Results: 100% Cataract was seen in the irradiation group. Cataract rate fell to 40% and was limited at grade 1 and 2 in the curcumin group. In the irradiation group, antioxidant enzyme levels were decreased, MDA levels were increased. There was an increase in antioxidant enzyme levels and a significant decrease in MDA in the group which was given curcumin. Conclusion: Curcumin has antioxidant and radioprotective properties and is likely to be a valuable agent for protection against ionizing radiation. Hence, it may be used as an antioxidant and radioprotector against radiation-induced cataractogenesis. JEL code: I180 Health Total Times Cited: 11 (Updated on Sep. 2018- WoS)",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.038",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "358-363",
+    "views": 6905,
+    "downloads": 10210,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "446",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=446",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=446",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=446",
+    "localPdfUrl": "js/data/pdfs/446.pdf",
+    "pdfUrl": "js/data/pdfs/446.pdf"
+  },
+  {
+    "id": 447,
+    "type": "Original Article",
+    "title": "Kinetic Analysis of the Amino Terminal End of Active Site Loop of Lactate Deyhdrogenase from Plasmodium Vivax",
+    "authors": [
+      {
+        "name": "Özal Mutlu",
+        "affiliation": "Department of Biology, Faculty of Arts and Sciences, Marmara University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Turgut Balık",
+        "affiliation": "Department of Bioengineering, Faculty of Chemical and Metallurgical Engineering, Yıldız Technical University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: In this study, kinetic analysis was performed to understand the functional importance of the amino terminal of the active site of previously mutated Plasmodium vivax Lactate Dehydrogenase enzyme by mimicking Toxoplasma gondii I, II, Eimeria acervulina and Eimeria tenella LDH's. Material and Methods: Mutant LDH genes were amplified by PCR and 6xHistag was added to the C-terminal of the enzymes. Then LDH enzymes are overproduced as recombinant in E. coli cells, purified by Ni-NTA agarose matrix and kinetic properties were analysed. Results: Observing increase of Km values of mutant enzymes showed that mutations in this place caused decreasing affinity of enzyme for its substrate. However kcat values were about the same throughout all mutant proteins. Conclusion: Sensitivity of the studied region emphasizes the significance of this site for drug design studies for both Plasmodium and some other Apicomplexans.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: In this study, kinetic analysis was performed to understand the functional importance of the amino terminal of the active site of previously mutated Plasmodium vivax Lactate Dehydrogenase enzyme by mimicking Toxoplasma gondii I, II, Eimeria acervulina and Eimeria tenella LDH&#39;s.</p>\r\n<p>\r\n\t<strong>Material and</strong> <strong>Methods</strong>: Mutant LDH genes were amplified by PCR and 6xHistag was added to the C-terminal of the enzymes. Then LDH enzymes are overproduced as recombinant in E. coli cells, purified by Ni-NTA agarose matrix and kinetic properties were analysed.</p>\r\n<p>\r\n\t<strong>Results</strong>: Observing increase of Km values of mutant enzymes showed that mutations in this place caused decreasing affinity of enzyme for its substrate. However kcat values were about the same throughout all mutant proteins.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Sensitivity of the studied region emphasizes the significance of this site for drug design studies for both Plasmodium and some other Apicomplexans.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: In this study, kinetic analysis was performed to understand the functional importance of the amino terminal of the active site of previously mutated Plasmodium vivax Lactate Dehydrogenase enzyme by mimicking Toxoplasma gondii I, II, Eimeria acervulina and Eimeria tenella LDH's. Material and Methods: Mutant LDH genes were amplified by PCR and 6xHistag was added to the C-terminal of the enzymes. Then LDH enzymes are overproduced as recombinant in E. coli cells, purified by Ni-NTA agarose matrix and kinetic properties were analysed. Results: Observing increase of Km values of mutant enzymes showed that mutations in this place caused decreasing affinity of enzyme for its substrate. However kcat values were about the same throughout all mutant proteins. Conclusion: Sensitivity of the studied region emphasizes the significance of this site for drug design studies for both Plasmodium and some other Apicomplexans.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.047",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "364-369",
+    "views": 6585,
+    "downloads": 9549,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "447",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=447",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=447",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=447",
+    "localPdfUrl": "js/data/pdfs/447.pdf",
+    "pdfUrl": "js/data/pdfs/447.pdf"
+  },
+  {
+    "id": 448,
+    "type": "Original Article",
+    "title": "Surface Alteration in Aging of Rat Tubae Uterinae Epithelium",
+    "authors": [
+      {
+        "name": "Şule Şahin",
+        "affiliation": "Department of Histology and Embryology, Faculty of Medicine, Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gülnur Take Kaplanoğlu",
+        "affiliation": "Department of Histology and Embryology, Faculty of Medicine, Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mahmud Bağırzade",
+        "affiliation": "Department of Histology and Embryology, Faculty of Medicine, Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Deniz Erdoğan",
+        "affiliation": "Department of Histology and Embriyology, Gazi University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zekiye Suludere",
+        "affiliation": "Department of Biology, Faculty of Science, Gazi University, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Aim of the study was evaluating arrangement of apical surface differentiation in cross-sections of tuba uterinae in different age groups by scanning electron microscope. Material and Methods: Six groups were created with 36 Wistar rat; 1st group: neonate (1th day) (n=6), 2nd group: young (22nd day) (n=6), 3rd group: prepubertal (4-6 week) (n=6), 4th group: adult (10 week) (n=6), 5th group: premenopausal (8 month) (n=6), 6th group: old (18-20 month) (n=6). Tissue samples examined with scanning electron microscope. Results: When surface differentiations of epithelial cells in tubae uterinae from birth to menopause were considered, it was determined that the cell with microvilli are first maturing cells and degenerated by ages first. It was observed that the ciliated cells are last maturing cells and subsisting as a mature cell during the postmenopausal period. Conclusion: Towards the menopause degeneration in microvillous cells together with lack of secretion may affect sperm nutrition adversely. The increase of ciliated cells in aging may be a physiological result related to the active role of cilia movement in the sperm and early embryo transport against a probable decrease in muscle contraction in aging.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Aim of the study was evaluating arrangement of apical surface differentiation in cross-sections of tuba uterinae in different age groups by scanning electron microscope.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Six groups were created with 36 Wistar rat; 1st group: neonate (1th day) (n=6), 2nd group: young (22nd day) (n=6), 3rd group: prepubertal (4-6 week) (n=6), 4th group: adult (10 week) (n=6), 5th group: premenopausal (8 month) (n=6), 6th group: old (18-20 month) (n=6). Tissue samples examined with scanning electron microscope.</p>\r\n<p>\r\n\t<strong>Results</strong>: When surface differentiations of epithelial cells in tubae uterinae from birth to menopause were considered, it was determined that the cell with microvilli are first maturing cells and degenerated by ages first. It was observed that the ciliated cells are last maturing cells and subsisting as a mature cell during the postmenopausal period.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Towards the menopause degeneration in microvillous cells together with lack of secretion may affect sperm nutrition adversely. The increase of ciliated cells in aging may be a physiological result related to the active role of cilia movement in the sperm and early embryo transport against a probable decrease in muscle contraction in aging.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Aim of the study was evaluating arrangement of apical surface differentiation in cross-sections of tuba uterinae in different age groups by scanning electron microscope. Material and Methods: Six groups were created with 36 Wistar rat; 1st group: neonate (1th day) (n=6), 2nd group: young (22nd day) (n=6), 3rd group: prepubertal (4-6 week) (n=6), 4th group: adult (10 week) (n=6), 5th group: premenopausal (8 month) (n=6), 6th group: old (18-20 month) (n=6). Tissue samples examined with scanning electron microscope. Results: When surface differentiations of epithelial cells in tubae uterinae from birth to menopause were considered, it was determined that the cell with microvilli are first maturing cells and degenerated by ages first. It was observed that the ciliated cells are last maturing cells and subsisting as a mature cell during the postmenopausal period. Conclusion: Towards the menopause degeneration in microvillous cells together with lack of secretion may affect sperm nutrition adversely. The increase of ciliated cells in aging may be a physiological result related to the active role of cilia movement in the sperm and early embryo transport against a probable decrease in muscle contraction in aging.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.052",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "370-375",
+    "views": 6322,
+    "downloads": 9550,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "448",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=448",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=448",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=448",
+    "localPdfUrl": "js/data/pdfs/448.pdf",
+    "pdfUrl": "js/data/pdfs/448.pdf"
+  },
+  {
+    "id": 449,
+    "type": "Original Article",
+    "title": "Effects of Restraint Stress and Nitric Oxide Synthase Inhibition on Learning and Strategy Preference in Young Adult Male Rats",
+    "authors": [
+      {
+        "name": "Melih Dağdeviren",
+        "affiliation": "Department of Biology, Faculty of Science, Ege University, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yusuf Hakan Doğan",
+        "affiliation": "Gazikent Family Health Center, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Lütfiye Kanıt",
+        "affiliation": "Department of Physiology, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The aim of this study was to investigate the effects of restraint stress and nitric oxide synthase (NOS) inhibition by NωNitro-L-Arginine (LNA) on learning and strategy preference. Material and Methods: Rats were randomly divided into four groups (Saline, Saline+Stress, LNA, LNA+Stress). Stress was applied for one hour in glass cylinders during 13 days. One hour after this stress application, water maze experiments were started. Injections (saline 1 ml/kg or 50 mg/kg LNA) were given 10 minutes before each experiment. The platform was kept visible or hidden (on the 4th, 8th, 12th days) at the same position. On the 13th day the platform was located on the opposite quadrant. Results: Saline groups exhibited significantly better performances (F(1.31)=174.038 p<0.05) at the beginning compared to the NOS inhibited groups. For initial hidden platform days; stress was determined as an impairment factor (F(1.31)=5.190 p=0.012). At the end, acquisition occurred on both visible and hidden platform days for all groups. There was no significant strategy preference difference between the groups.Development of the stress and NOS inhibition impairments were seen, particularly at different periods of the acquisition. Conclusion: NOS inhibition did not worsen restraint stress-induced learning impairments in rats. Lack of effect may be explained by the antidepressive consequences of NOS inhibition.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The aim of this study was to investigate the effects of restraint stress and nitric oxide synthase (NOS) inhibition by N&omega;Nitro-L-Arginine (LNA) on learning and strategy preference.</p>\r\n<p>\r\n\t<strong>Material and Methods: </strong>Rats were randomly divided into four groups (Saline, Saline+Stress, LNA, LNA+Stress). Stress was applied for one hour in glass cylinders during 13 days. One hour after this stress application, water maze experiments were started. Injections (saline 1 ml/kg or 50 mg/kg LNA) were given 10 minutes before each experiment. The platform was kept visible or hidden (on the 4th, 8th, 12th days) at the same position. On the 13th day the platform was located on the opposite quadrant.</p>\r\n<p>\r\n\t<strong>Results</strong>: Saline groups exhibited significantly better performances (F(1.31)=174.038 p&lt;0.05) at the beginning compared to the NOS inhibited groups. For initial hidden platform days; stress was determined as an impairment factor (F(1.31)=5.190 p=0.012). At the end, acquisition occurred on both visible and hidden platform days for all groups. There was no significant strategy preference difference between the groups.Development of the stress and NOS inhibition impairments were seen, particularly at different periods of the acquisition.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: NOS inhibition did not worsen restraint stress-induced learning impairments in rats. Lack of effect may be explained by the antidepressive consequences of NOS inhibition.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The aim of this study was to investigate the effects of restraint stress and nitric oxide synthase (NOS) inhibition by NωNitro-L-Arginine (LNA) on learning and strategy preference. Material and Methods: Rats were randomly divided into four groups (Saline, Saline+Stress, LNA, LNA+Stress). Stress was applied for one hour in glass cylinders during 13 days. One hour after this stress application, water maze experiments were started. Injections (saline 1 ml/kg or 50 mg/kg LNA) were given 10 minutes before each experiment. The platform was kept visible or hidden (on the 4th, 8th, 12th days) at the same position. On the 13th day the platform was located on the opposite quadrant. Results: Saline groups exhibited significantly better performances (F(1.31)=174.038 p<0.05) at the beginning compared to the NOS inhibited groups. For initial hidden platform days; stress was determined as an impairment factor (F(1.31)=5.190 p=0.012). At the end, acquisition occurred on both visible and hidden platform days for all groups. There was no significant strategy preference difference between the groups.Development of the stress and NOS inhibition impairments were seen, particularly at different periods of the acquisition. Conclusion: NOS inhibition did not worsen restraint stress-induced learning impairments in rats. Lack of effect may be explained by the antidepressive consequences of NOS inhibition.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.100",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "376-380",
+    "views": 7909,
+    "downloads": 9636,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "449",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=449",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=449",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=449",
+    "localPdfUrl": "js/data/pdfs/449.pdf",
+    "pdfUrl": "js/data/pdfs/449.pdf"
+  },
+  {
+    "id": 450,
+    "type": "Original Article",
+    "title": "Evaluation of Patients with Delirium in the Emergency Department",
+    "authors": [
+      {
+        "name": "Latif Duran",
+        "affiliation": "Department of Emergency Emergency Medicine, Ondokuz Mayıs University, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dursun Aygün",
+        "affiliation": "Department of Emergency Emergency Medicine, Ondokuz Mayıs University, Samsun, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Delirium is a neuropsychiatric syndrome characterized by acute onset and a fluctuating course of globally altered mental status. It has been reported that the frequency of delirium among patients hospitalized with any disorder ranges from 2 to 30%. However, in the literature, few studies have evaluated the frequency of delirium in hospitalized patients, including those older than 65 years. According to our knowledge, this is the first study on adult patients in all age groups in an emergency department. We aimed to classify delirium according to its etiological causes and to compare the age groups for frequency and these causes. Material and Methods: Forty-three patients were included in the study; they had been diagnosed with delirium according to the Diagnostic and Statistical Manual of Mental Disorders (DSM)-IV in an emergency department from December 2002 to December 2003. The patients were divided into two groups (group I: age <65 years, group II: age ≥65 years). Following a detailed history, each patient underwent a physical and neurological examination. Additionally, the Mini-Mental State Examination was administered. Radiological and hematological examinations were conducted on all patients who had indications for such testing. Results: Of the patients with delirium, 18 were female and 25 were male. Mean age was 61.18 years (range 18 to 90 years). Of the 43 patients, 21 were in group I and 22 were in group II. The most common causes of delirium were metabolic disorders. There was no significant difference between group I and II for the frequency or etiological causes of delirium. Conclusion: In emergency departments, all patients with delirium should be evaluated for etiological factors, especially metabolic disorders, as treatment of the underlying cause is essential in delirium.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Delirium is a neuropsychiatric syndrome characterized by acute onset and a fluctuating course of globally altered mental status. It has been reported that the frequency of delirium among patients hospitalized with any disorder ranges from 2 to 30%. However, in the literature, few studies have evaluated the frequency of delirium in hospitalized patients, including those older than 65 years. According to our knowledge, this is the first study on adult patients in all age groups in an emergency department. We aimed to classify delirium according to its etiological causes and to compare the age groups for frequency and these causes.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Forty-three patients were included in the study; they had been diagnosed with delirium according to the Diagnostic and Statistical Manual of Mental Disorders (DSM)-IV in an emergency department from December 2002 to December 2003. The patients were divided into two groups (group I: age &lt;65 years, group II: age &ge;65 years). Following a detailed history, each patient underwent a physical and neurological examination. Additionally, the Mini-Mental State Examination was administered. Radiological and hematological examinations were conducted on all patients who had indications for such testing.</p>\r\n<p>\r\n\t<strong>Results</strong>: Of the patients with delirium, 18 were female and 25 were male. Mean age was 61.18 years (range 18 to 90 years). Of the 43 patients, 21 were in group I and 22 were in group II. The most common causes of delirium were metabolic disorders. There was no significant difference between group I and II for the frequency or etiological causes of delirium.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: In emergency departments, all patients with delirium should be evaluated for etiological factors, especially metabolic disorders, as treatment of the underlying cause is essential in delirium.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Delirium is a neuropsychiatric syndrome characterized by acute onset and a fluctuating course of globally altered mental status. It has been reported that the frequency of delirium among patients hospitalized with any disorder ranges from 2 to 30%. However, in the literature, few studies have evaluated the frequency of delirium in hospitalized patients, including those older than 65 years. According to our knowledge, this is the first study on adult patients in all age groups in an emergency department. We aimed to classify delirium according to its etiological causes and to compare the age groups for frequency and these causes. Material and Methods: Forty-three patients were included in the study; they had been diagnosed with delirium according to the Diagnostic and Statistical Manual of Mental Disorders (DSM)-IV in an emergency department from December 2002 to December 2003. The patients were divided into two groups (group I: age <65 years, group II: age ≥65 years). Following a detailed history, each patient underwent a physical and neurological examination. Additionally, the Mini-Mental State Examination was administered. Radiological and hematological examinations were conducted on all patients who had indications for such testing. Results: Of the patients with delirium, 18 were female and 25 were male. Mean age was 61.18 years (range 18 to 90 years). Of the 43 patients, 21 were in group I and 22 were in group II. The most common causes of delirium were metabolic disorders. There was no significant difference between group I and II for the frequency or etiological causes of delirium. Conclusion: In emergency departments, all patients with delirium should be evaluated for etiological factors, especially metabolic disorders, as treatment of the underlying cause is essential in delirium.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.023",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "381-385",
+    "views": 6667,
+    "downloads": 9912,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "450",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=450",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=450",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=450",
+    "localPdfUrl": "js/data/pdfs/450.pdf",
+    "pdfUrl": "js/data/pdfs/450.pdf"
+  },
+  {
+    "id": 451,
+    "type": "Original Article",
+    "title": "Mapping the Tobacco Retailers in Edirne, Turkey",
+    "authors": [
+      {
+        "name": "Celal Karlıkaya",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hüseyin İnce",
+        "affiliation": "Department of Architecture and City Planning, Technical Sciences Vocational School of Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurcan Özkan [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The youth smoking rate is on the rise in Turkey. Although many marketing bans have been effectively implemented, regulations related to retail tobacco outlets have gone unnoticed and have not been effectively supervised. In this study, we aimed to show the lack of legal regulation related to the high retail tobacco outlet density with displays. Material and Methods: In the center of Edirne, the marketing environment, numbers and geographical distribution of retail tobacco outlets were documented and mapped with geographical positions. Results: There were 569 retail tobacco points of sale in 520 stores. We calculated one tobacco retail outlet per 270 people. This retail outlet density rate is above the national average and about four times higher than the density in Istanbul. Products especially attracting children, such as chocolate, sweet candy and chewing gum, were set up near the tobacco stands and were easy for children to recognize and reach. It can be seen on the city map that 47% of retail tobacco outlets are within 100 m of education, health or sport facilities. Conclusion: We concluded that one of the reasons for the increasing prevalence of cigarette use, especially among adolescents in Turkey, is deregulation of the retail tobacco marketing industry as a result of the privatization process of the national tobacco monopoly. Using mapping techniques can be useful in terms of controlling the retail marketing environment.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The youth smoking rate is on the rise in Turkey. Although many marketing bans have been effectively implemented, regulations related to retail tobacco outlets have gone unnoticed and have not been effectively supervised. In this study, we aimed to show the lack of legal regulation related to the high retail tobacco outlet density with displays.</p>\r\n<p>\r\n\t<strong>Material</strong> <strong>and Methods</strong>: In the center of Edirne, the marketing environment, numbers and geographical distribution of retail tobacco outlets were documented and mapped with geographical positions.</p>\r\n<p>\r\n\t<strong>Results</strong>: There were 569 retail tobacco points of sale in 520 stores. We calculated one tobacco retail outlet per 270 people. This retail outlet density rate is above the national average and about four times higher than the density in Istanbul. Products especially attracting children, such as chocolate, sweet candy and chewing gum, were set up near the tobacco stands and were easy for children to recognize and reach. It can be seen on the city map that 47% of retail tobacco outlets are within 100 m of education, health or sport facilities.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: We concluded that one of the reasons for the increasing prevalence of cigarette use, especially among adolescents in Turkey, is deregulation of the retail tobacco marketing industry as a result of the privatization process of the national tobacco monopoly. Using mapping techniques can be useful in terms of controlling the retail marketing environment.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The youth smoking rate is on the rise in Turkey. Although many marketing bans have been effectively implemented, regulations related to retail tobacco outlets have gone unnoticed and have not been effectively supervised. In this study, we aimed to show the lack of legal regulation related to the high retail tobacco outlet density with displays. Material and Methods: In the center of Edirne, the marketing environment, numbers and geographical distribution of retail tobacco outlets were documented and mapped with geographical positions. Results: There were 569 retail tobacco points of sale in 520 stores. We calculated one tobacco retail outlet per 270 people. This retail outlet density rate is above the national average and about four times higher than the density in Istanbul. Products especially attracting children, such as chocolate, sweet candy and chewing gum, were set up near the tobacco stands and were easy for children to recognize and reach. It can be seen on the city map that 47% of retail tobacco outlets are within 100 m of education, health or sport facilities. Conclusion: We concluded that one of the reasons for the increasing prevalence of cigarette use, especially among adolescents in Turkey, is deregulation of the retail tobacco marketing industry as a result of the privatization process of the national tobacco monopoly. Using mapping techniques can be useful in terms of controlling the retail marketing environment.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.024",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "386-390",
+    "views": 6806,
+    "downloads": 9966,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "451",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=451",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=451",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=451",
+    "localPdfUrl": "js/data/pdfs/451.pdf",
+    "pdfUrl": "js/data/pdfs/451.pdf"
+  },
+  {
+    "id": 452,
+    "type": "Original Article",
+    "title": "The Effects of Tramadol and Levobupivacaine Infiltration on Postoperative Analgesia in Functional Endoscopic Sinus Surgery and Septorhinoplasty",
+    "authors": [
+      {
+        "name": "Muhammet Hilmi Koputan",
+        "affiliation": "Department of Anesthesiology and Reanimation, Faculty of Medicine, Kırıkkale University, Kırıkkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Alparslan Apan",
+        "affiliation": "Department of Anesthesiology and Reanimation, Faculty of Medicine, Kırıkkale University, Kırıkkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gökşen Öz",
+        "affiliation": "Department of Anesthesiology and Reanimation, Faculty of Medicine, Kırıkkale University, Kırıkkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emine Arzu Köse",
+        "affiliation": "Department of Anesthesiology and Reanimation, Faculty of Medicine, Kırıkkale University, Kırıkkale, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The aim of this prospective, randomized, double-blind study was to investigate the postoperative analgesic effects of levobupivacaine or tramadol infiltration administered prior to surgery in septorhinoplasty (SRP) or endoscopic sinus surgery (ESS). Material and Methods: Sixty ASA class I-III adult patients electively undergoing SRP or ESC were included the study. Induction of anesthesia was performed with propofol 2-2.5 mg/kg, rocuronium bromide 0.6 mg/kg and fentanyl 1 μg/kg i.v. Sevoflurane 2% with an N2O/O2 mixture (FiO2: 35%) was used for maintenance. Tramadol 0.5 mg/kg (Group T: n=20), levobupivacaine 0.25% (Group L: n=20) and lidocaine 1% (Group C: n=20) in a 1/200,000 adrenaline solution was infiltrated into the surgical area 10 min before the operation (5 mL for ESS and 10 mL for SRP). All patients received fentanyl (bolus dose: 15 μg and lockout interval: 10 min) with a patient-controlled analgesia device during the postoperative period. Pain was assessed using an 11-point visual analogue scale (VAS) every 4 h for the first 24 h. Analgesic requirements, opioid consumption and side effects in the postoperative period were recorded. Results: There was a statistically significant decrease in postoperative fentanyl demand and consumption in patients receiving tramadol. Fentanyl doses in the 24 h period were 345.2±168.8 μg, 221.1±120.6 μg and 184.1±130.3 μg (p=0.002) for the Groups C, L and T, respectively. There were statistically significant differences in fentanyl requirements between the tramadol and control groups at the 16, 20 and 24 h time points (p=0.012, p=0.004 and p=0.002, respectively). The side effect profiles were similar. Conclusions: Our study indicates that the preemptive tramadol infiltration technique is an efficient, practical and safe alternative to levobupivacaine in ESS or SRP operations.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The aim of this prospective, randomized, double-blind study was to investigate the postoperative analgesic effects of levobupivacaine or tramadol infiltration administered prior to surgery in septorhinoplasty (SRP) or endoscopic sinus surgery (ESS).</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Sixty ASA class I-III adult patients electively undergoing SRP or ESC were included the study. Induction of anesthesia was performed with propofol 2-2.5 mg/kg, rocuronium bromide 0.6 mg/kg and fentanyl 1 &mu;g/kg i.v. Sevoflurane 2% with an N2O/O2 mixture (FiO2: 35%) was used for maintenance. Tramadol 0.5 mg/kg (Group T: n=20), levobupivacaine 0.25% (Group L: n=20) and lidocaine 1% (Group C: n=20) in a 1/200,000 adrenaline solution was infiltrated into the surgical area 10 min before the operation (5 mL for ESS and 10 mL for SRP). All patients received fentanyl (bolus dose: 15 &mu;g and lockout interval: 10 min) with a patient-controlled analgesia device during the postoperative period. Pain was assessed using an 11-point visual analogue scale (VAS) every 4 h for the first 24 h. Analgesic requirements, opioid consumption and side effects in the postoperative period were recorded.</p>\r\n<p>\r\n\t<strong>Results</strong>: There was a statistically significant decrease in postoperative fentanyl demand and consumption in patients receiving tramadol. Fentanyl doses in the 24 h period were 345.2&plusmn;168.8 &mu;g, 221.1&plusmn;120.6 &mu;g and 184.1&plusmn;130.3 &mu;g (p=0.002) for the Groups C, L and T, respectively. There were statistically significant differences in fentanyl requirements between the tramadol and control groups at the 16, 20 and 24 h time points (p=0.012, p=0.004 and p=0.002, respectively). The side effect profiles were similar.</p>\r\n<p>\r\n\t<strong>Conclusions</strong>: Our study indicates that the preemptive tramadol infiltration technique is an efficient, practical and safe alternative to levobupivacaine in ESS or SRP operations.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The aim of this prospective, randomized, double-blind study was to investigate the postoperative analgesic effects of levobupivacaine or tramadol infiltration administered prior to surgery in septorhinoplasty (SRP) or endoscopic sinus surgery (ESS). Material and Methods: Sixty ASA class I-III adult patients electively undergoing SRP or ESC were included the study. Induction of anesthesia was performed with propofol 2-2.5 mg/kg, rocuronium bromide 0.6 mg/kg and fentanyl 1 μg/kg i.v. Sevoflurane 2% with an N2O/O2 mixture (FiO2: 35%) was used for maintenance. Tramadol 0.5 mg/kg (Group T: n=20), levobupivacaine 0.25% (Group L: n=20) and lidocaine 1% (Group C: n=20) in a 1/200,000 adrenaline solution was infiltrated into the surgical area 10 min before the operation (5 mL for ESS and 10 mL for SRP). All patients received fentanyl (bolus dose: 15 μg and lockout interval: 10 min) with a patient-controlled analgesia device during the postoperative period. Pain was assessed using an 11-point visual analogue scale (VAS) every 4 h for the first 24 h. Analgesic requirements, opioid consumption and side effects in the postoperative period were recorded. Results: There was a statistically significant decrease in postoperative fentanyl demand and consumption in patients receiving tramadol. Fentanyl doses in the 24 h period were 345.2±168.8 μg, 221.1±120.6 μg and 184.1±130.3 μg (p=0.002) for the Groups C, L and T, respectively. There were statistically significant differences in fentanyl requirements between the tramadol and control groups at the 16, 20 and 24 h time points (p=0.012, p=0.004 and p=0.002, respectively). The side effect profiles were similar. Conclusions: Our study indicates that the preemptive tramadol infiltration technique is an efficient, practical and safe alternative to levobupivacaine in ESS or SRP operations.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.027",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "391-394",
+    "views": 6805,
+    "downloads": 2570,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "452",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=452",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=452",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=452",
+    "localPdfUrl": "js/data/pdfs/452.pdf",
+    "pdfUrl": "js/data/pdfs/452.pdf"
+  },
+  {
+    "id": 453,
+    "type": "Original Article",
+    "title": "Classification and Localization of the Adductor Hiatus: A Cadaver Study",
+    "authors": [
+      {
+        "name": "Aysin Kale",
+        "affiliation": "Department of Anatomy, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Adnan Öztürk",
+        "affiliation": "Department of Anatomy, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İlke Ali Gürses",
+        "affiliation": "Department of Anatomy, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Usta",
+        "affiliation": "Department of Anatomy, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kayıhan Şahinoğlu",
+        "affiliation": "Department of Anatomy, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özcan Gayretli",
+        "affiliation": "İstanbul Üniversitesi İstanbul Tıp Fakültesi, Anatomi Anabilim Dalı, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Dikici [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: To determine not only the vertical but also horizontal localization of the adductor hiatus (AH) and classify its shape and structure macroscopically. Material and Methods: Forty lower extremities were dissected to expose the AH. Its shape and structure were macroscopically noted, and the AH was classified into four types. For determining the localization, measurements were made with digital calipers. Results: Twenty-four oval fibrous types, 12 oval muscular types, 2 bridging fibrous types and 2 bridging muscular types of AH were determined. For the horizontal localization of AH, the apex of the AH was determined to be located medial to the vertical line between the midpoint of the interepicondylar distance and the line which was drawn transversely from the apex of the AH, in all of the cadavers. For the vertical one, the apex of the AH was located in the middle third of the femur length in 14 thighs, and in the remaining 26 ones, the apex of the AH was located in the distal third of the femur length. Conclusion: Adductor hiatus was classified according to its shape and structure for the first time. Moreover, the localization of the AH was practically defined, in order not to harm the popliteal artery and vein.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: To determine not only the vertical but also horizontal localization of the adductor hiatus (AH) and classify its shape and structure macroscopically.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Forty lower extremities were dissected to expose the AH. Its shape and structure were macroscopically noted, and the AH was classified into four types. For determining the localization, measurements were made with digital calipers.</p>\r\n<p>\r\n\t<strong>Results</strong>: Twenty-four oval fibrous types, 12 oval muscular types, 2 bridging fibrous types and 2 bridging muscular types of AH were determined. For the horizontal localization of AH, the apex of the AH was determined to be located medial to the vertical line between the midpoint of the interepicondylar distance and the line which was drawn transversely from the apex of the AH, in all of the cadavers. For the vertical one, the apex of the AH was located in the middle third of the femur length in 14 thighs, and in the remaining 26 ones, the apex of the AH was located in the distal third of the femur length.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Adductor hiatus was classified according to its shape and structure for the first time. Moreover, the localization of the AH was practically defined, in order not to harm the popliteal artery and vein.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: To determine not only the vertical but also horizontal localization of the adductor hiatus (AH) and classify its shape and structure macroscopically. Material and Methods: Forty lower extremities were dissected to expose the AH. Its shape and structure were macroscopically noted, and the AH was classified into four types. For determining the localization, measurements were made with digital calipers. Results: Twenty-four oval fibrous types, 12 oval muscular types, 2 bridging fibrous types and 2 bridging muscular types of AH were determined. For the horizontal localization of AH, the apex of the AH was determined to be located medial to the vertical line between the midpoint of the interepicondylar distance and the line which was drawn transversely from the apex of the AH, in all of the cadavers. For the vertical one, the apex of the AH was located in the middle third of the femur length in 14 thighs, and in the remaining 26 ones, the apex of the AH was located in the distal third of the femur length. Conclusion: Adductor hiatus was classified according to its shape and structure for the first time. Moreover, the localization of the AH was practically defined, in order not to harm the popliteal artery and vein.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.030",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "395-400",
+    "views": 6528,
+    "downloads": 10534,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "453",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=453",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=453",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=453",
+    "localPdfUrl": "js/data/pdfs/453.pdf",
+    "pdfUrl": "js/data/pdfs/453.pdf"
+  },
+  {
+    "id": 454,
+    "type": "Original Article",
+    "title": "Comparison of SHR Mode IPL System with Alexandrite and Nd: YAG Lasers For Leg Hair Reduction",
+    "authors": [
+      {
+        "name": "Şemsettin Karaca",
+        "affiliation": "Department of Dermatology, Faculty of Medicine, Afyon Kocatepe University, Afyonkarahisar, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Seval Doğruk Kaçar",
+        "affiliation": "Department of Dermatology, Faculty of Medicine, Afyon Kocatepe University, Afyonkarahisar, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pınar Ozuğuz",
+        "affiliation": "Department of Dermatology, Faculty of Medicine, Afyon Kocatepe University, Afyonkarahisar, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Multiple lasers and light sources are currently available for hair removal and many studies comparing efficacy and safety exist. SHR mode IPL is a technique that gives the total energy in divided doses with fewer side effects. We compared a SHR mode IPL system with alexandrite and Nd: YAG lasers for leg hair reduction Material and Methods: Twenty-five female participants with skin types II–IV, underwent treatment of unwanted hair on the cruris. Three selected areas were randomly treated with the SHR mode IPL system, Alexandrite laser and Nd: YAG laser in three sessions. Hair reduction was evaluated with digital photography by a blinded assessor every 6 weeks and 6 months after the last session. Pain severity, side effects and patient satisfaction analysis were also investigated. Results: Twenty-one participants completed the trial. The mean hair reductions in 6 weeks after the last treatment were 50% for the IPL system, 53% for Alexandrite and 39% for the Nd: YAG lasers. However after 6 months; 40%, 49% and 34% hair reduction was observed, respectively. The Alexandrite laser was the least painful system. Conclusion: Although there is no obvious advantage of one laser system over the others in terms of treatment outcome, the Alexandrite laser is still the most efficient and reliable way of hair removal in fair skinned individuals.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Multiple lasers and light sources are currently available for hair removal and many studies comparing efficacy and safety exist. SHR mode IPL is a technique that gives the total energy in divided doses with fewer side effects. We compared a SHR mode IPL system with alexandrite and Nd: YAG lasers for leg hair reduction</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Twenty-five female participants with skin types II&ndash;IV, underwent treatment of unwanted hair on the cruris. Three selected areas were randomly treated with the SHR mode IPL system, Alexandrite laser and Nd: YAG laser in three sessions. Hair reduction was evaluated with digital photography by a blinded assessor every 6 weeks and 6 months after the last session. Pain severity, side effects and patient satisfaction analysis were also investigated.</p>\r\n<p>\r\n\t<strong>Results</strong>: Twenty-one participants completed the trial. The mean hair reductions in 6 weeks after the last treatment were 50% for the IPL system, 53% for Alexandrite and 39% for the Nd: YAG lasers. However after 6 months; 40%, 49% and 34% hair reduction was observed, respectively. The Alexandrite laser was the least painful system.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Although there is no obvious advantage of one laser system over the others in terms of treatment outcome, the Alexandrite laser is still the most efficient and reliable way of hair removal in fair skinned individuals.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Multiple lasers and light sources are currently available for hair removal and many studies comparing efficacy and safety exist. SHR mode IPL is a technique that gives the total energy in divided doses with fewer side effects. We compared a SHR mode IPL system with alexandrite and Nd: YAG lasers for leg hair reduction Material and Methods: Twenty-five female participants with skin types II–IV, underwent treatment of unwanted hair on the cruris. Three selected areas were randomly treated with the SHR mode IPL system, Alexandrite laser and Nd: YAG laser in three sessions. Hair reduction was evaluated with digital photography by a blinded assessor every 6 weeks and 6 months after the last session. Pain severity, side effects and patient satisfaction analysis were also investigated. Results: Twenty-one participants completed the trial. The mean hair reductions in 6 weeks after the last treatment were 50% for the IPL system, 53% for Alexandrite and 39% for the Nd: YAG lasers. However after 6 months; 40%, 49% and 34% hair reduction was observed, respectively. The Alexandrite laser was the least painful system. Conclusion: Although there is no obvious advantage of one laser system over the others in terms of treatment outcome, the Alexandrite laser is still the most efficient and reliable way of hair removal in fair skinned individuals.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.033",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "401-405",
+    "views": 5913,
+    "downloads": 4244,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "454",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=454",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=454",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=454",
+    "localPdfUrl": "js/data/pdfs/454.pdf",
+    "pdfUrl": "js/data/pdfs/454.pdf"
+  },
+  {
+    "id": 455,
+    "type": "Original Article",
+    "title": "Comparison of the Calcaneal Pitch Angle and Modified Projection Area Per Length Squared Method for Medial Longitudinal Arch Evaluation of the Foot",
+    "authors": [
+      {
+        "name": "Ilgaz Akdoğan",
+        "affiliation": "Department of Anatomy, Faculty of Medicine, Pamukkale University, Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Semih Akkaya",
+        "affiliation": "Department of Orthopedics and Traumatology, Faculty of Medicine, Pamukkale University, Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Esat Kıter",
+        "affiliation": "Department of Orthopedics and Traumatology, Faculty of Medicine, Pamukkale University, Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nuray Akkaya",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Faculty of Medicine, Pamukkale University, Denizli, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: To compare the calcaneal pitch angle (CPA) values measured on direct lateral radiographs of feet, and the modified projection area per length squared (PAL), which was calculated as a new method for the evaluation of the medial longitudinal arch (MLA) of the foot. Material and Methods: Direct lateral radiographs of patients who had weightbearing feet radiographies for any reason except trauma were retrospectively obtained from the archives. Direct lateral radiographs of the feet were printed and a transparent sheet was placed on it. A straight line was drawn between the most plantar process of the calcaneus and the head of the first metatarsal bone for the calculation of the PAL of the MLA. Two semilunar arcs were drawn upon this straight line. PAL1 and PAL2 were estimated using a point-counting technique. The CPA, lateral talo-calcaneal angles (LTCA), and talo-first metatarsal angles (TFMA) were measured. The correlations between PAL1, PAL2 of right and left feet and CPA, LTCA, and TFMA were explored. Results: Fifty patients (27 females, 23 males) with a mean age of 40.12 (4-78) years were evaluated. Significant correlations were detected between PAL1, PAL2 and CPA, and TFMA for both right and left feet (p<0.05). Conclusion: A significant correlation was detected between the modified PAL method as a new technique and the standard CPA method for MLA evaluation. The PAL method is suggested as a simple and practical method for MLA evaluation.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: To compare the calcaneal pitch angle (CPA) values measured on direct lateral radiographs of feet, and the modified projection area per length squared (PAL), which was calculated as a new method for the evaluation of the medial longitudinal arch (MLA) of the foot.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Direct lateral radiographs of patients who had weightbearing feet radiographies for any reason except trauma were retrospectively obtained from the archives. Direct lateral radiographs of the feet were printed and a transparent sheet was placed on it. A straight line was drawn between the most plantar process of the calcaneus and the head of the first metatarsal bone for the calculation of the PAL of the MLA. Two semilunar arcs were drawn upon this straight line. PAL1 and PAL2 were estimated using a point-counting technique. The CPA, lateral talo-calcaneal angles (LTCA), and talo-first metatarsal angles (TFMA) were measured. The correlations between PAL1, PAL2 of right and left feet and CPA, LTCA, and TFMA were explored.</p>\r\n<p>\r\n\t<strong>Results</strong>: Fifty patients (27 females, 23 males) with a mean age of 40.12 (4-78) years were evaluated. Significant correlations were detected between PAL1, PAL2 and CPA, and TFMA for both right and left feet (p&lt;0.05).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: A significant correlation was detected between the modified PAL method as a new technique and the standard CPA method for MLA evaluation. The PAL method is suggested as a simple and practical method for MLA evaluation.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: To compare the calcaneal pitch angle (CPA) values measured on direct lateral radiographs of feet, and the modified projection area per length squared (PAL), which was calculated as a new method for the evaluation of the medial longitudinal arch (MLA) of the foot. Material and Methods: Direct lateral radiographs of patients who had weightbearing feet radiographies for any reason except trauma were retrospectively obtained from the archives. Direct lateral radiographs of the feet were printed and a transparent sheet was placed on it. A straight line was drawn between the most plantar process of the calcaneus and the head of the first metatarsal bone for the calculation of the PAL of the MLA. Two semilunar arcs were drawn upon this straight line. PAL1 and PAL2 were estimated using a point-counting technique. The CPA, lateral talo-calcaneal angles (LTCA), and talo-first metatarsal angles (TFMA) were measured. The correlations between PAL1, PAL2 of right and left feet and CPA, LTCA, and TFMA were explored. Results: Fifty patients (27 females, 23 males) with a mean age of 40.12 (4-78) years were evaluated. Significant correlations were detected between PAL1, PAL2 and CPA, and TFMA for both right and left feet (p<0.05). Conclusion: A significant correlation was detected between the modified PAL method as a new technique and the standard CPA method for MLA evaluation. The PAL method is suggested as a simple and practical method for MLA evaluation.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.036",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "406-409",
+    "views": 6591,
+    "downloads": 10036,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "455",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=455",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=455",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=455",
+    "localPdfUrl": "js/data/pdfs/455.pdf",
+    "pdfUrl": "js/data/pdfs/455.pdf"
+  },
+  {
+    "id": 456,
+    "type": "Original Article",
+    "title": "Uterine Junctional Zone Thickness, Cervical Length and Bioelectrical Impedance Analysis of Body Composition in Women with Endometriosis",
+    "authors": [
+      {
+        "name": "Selçuk Ayas",
+        "affiliation": "Department of Gynecology and Obstetrics, Zeynep Kamil Maternity and Pediatric Research and Training Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mesut Bayraktar",
+        "affiliation": "Department of Gynecology and Obstetrics, Zeynep Kamil Maternity and Pediatric Research and Training Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşe Gürbüz",
+        "affiliation": "Department of Gynecology and Obstetrics, Zeynep Kamil Maternity and Pediatric Research and Training Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Akif Alkan",
+        "affiliation": "Department of Gynecology and Obstetrics, Zeynep Kamil Maternity and Pediatric Research and Training Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sadiye Eren",
+        "affiliation": "Department of Gynecology and Obstetrics, Zeynep Kamil Maternity and Pediatric Research and Training Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: We aimed to evaluate uterine junctional zone thickness, cervical length and bioelectrical impedance analysis of body composition in women with endometriosis. Material and Methods: This is a prospective study conducted in a tertiary teaching hospital. A total of 73 patients were included in the study. Endometriosis was surgically diagnosed in 36 patients (study group). The control group included 37 patients. Main outcome measure(s): Bioelectrical impedance analysis was used to measure body composition. Uterine junctional zone thickness and cervical length were measured by transvaginal ultrasonography. Results: Patients' characteristics (age, gravida, parity, live baby, age of menarche, lengths of menstrual cycle , percentage of patients with dysmenorrhea, positive family history), body mass index (BMI) (kg/m2), amount of body fat (kg), percentage of body fat were not statistically different between the two groups (p>0.05). The length of menstruation and cervical length were longer in women with endometriosis. Similarly, the inner myometrium was thicker in women with endometriosis than the control group. Conclusion: The relation between endometriosis and demographic features such as age, gravida, parity, gravida, BMI, lengths of the menstrual cycle, age of menarche are controversial. Longer cervical length and thicker inner myometrial layer may be important in the etiopathogenesis of endometriosis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: We aimed to evaluate uterine junctional zone thickness, cervical length and bioelectrical impedance analysis of body composition in women with endometriosis.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: This is a prospective study conducted in a tertiary teaching hospital. A total of 73 patients were included in the study. Endometriosis was surgically diagnosed in 36 patients (study group). The control group included 37 patients. Main outcome measure(s): Bioelectrical impedance analysis was used to measure body composition. Uterine junctional zone thickness and cervical length were measured by transvaginal ultrasonography.</p>\r\n<p>\r\n\t<strong>Results</strong>: Patients&#39; characteristics (age, gravida, parity, live baby, age of menarche, lengths of menstrual cycle , percentage of patients with dysmenorrhea, positive family history), body mass index (BMI) (kg/m2), amount of body fat (kg), percentage of body fat were not statistically different between the two groups (p&gt;0.05). The length of menstruation and cervical length were longer in women with endometriosis. Similarly, the inner myometrium was thicker in women with endometriosis than the control group.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The relation between endometriosis and demographic features such as age, gravida, parity, gravida, BMI, lengths of the menstrual cycle, age of menarche are controversial. Longer cervical length and thicker inner myometrial layer may be important in the etiopathogenesis of endometriosis.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: We aimed to evaluate uterine junctional zone thickness, cervical length and bioelectrical impedance analysis of body composition in women with endometriosis. Material and Methods: This is a prospective study conducted in a tertiary teaching hospital. A total of 73 patients were included in the study. Endometriosis was surgically diagnosed in 36 patients (study group). The control group included 37 patients. Main outcome measure(s): Bioelectrical impedance analysis was used to measure body composition. Uterine junctional zone thickness and cervical length were measured by transvaginal ultrasonography. Results: Patients' characteristics (age, gravida, parity, live baby, age of menarche, lengths of menstrual cycle , percentage of patients with dysmenorrhea, positive family history), body mass index (BMI) (kg/m2), amount of body fat (kg), percentage of body fat were not statistically different between the two groups (p>0.05). The length of menstruation and cervical length were longer in women with endometriosis. Similarly, the inner myometrium was thicker in women with endometriosis than the control group. Conclusion: The relation between endometriosis and demographic features such as age, gravida, parity, gravida, BMI, lengths of the menstrual cycle, age of menarche are controversial. Longer cervical length and thicker inner myometrial layer may be important in the etiopathogenesis of endometriosis.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.042",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "410-413",
+    "views": 6949,
+    "downloads": 9543,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "456",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=456",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=456",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=456",
+    "localPdfUrl": "js/data/pdfs/456.pdf",
+    "pdfUrl": "js/data/pdfs/456.pdf"
+  },
+  {
+    "id": 457,
+    "type": "Original Article",
+    "title": "Glutamine Supplemented Parenteral Nutrition to Prevent Ventilator-Associated Pneumonia in the Intensive Care Unit",
+    "authors": [
+      {
+        "name": "Meltem Türkay Aydoğmuş",
+        "affiliation": "Department of Anesthesiology and Reanimation, Faculty of Medicine, Yüzüncü Yıl University, Van, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İsmail Katı",
+        "affiliation": "Department of Anesthesiology and Reanimation, Faculty of Medicine, Yüzüncü Yıl University, Van, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ürfettin Hüseyinoğlu",
+        "affiliation": "Department of Anesthesiology and Reanimation, Faculty of Medicine, Yüzüncü Yıl University, Van, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yakup Tomak",
+        "affiliation": "Department of Anesthesiology and Reanimation, Faculty of Medicine, Rize University, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Tekin [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Ventilator-associated pneumonia (VAP) is a form of nosocomial pneumonia that increases patient morbidity and mortality, length of hospital stay, and healthcare costs. Glutamine preserves the intestinal mucosal structure, increases immune function, and reduces harmful changes in gut permeability in patients receiving total parenteral nutrition (TPN). We hypothesized that TPN supplemented by glutamine might prevent the development of VAP in patients on mechanical ventilator support in the intensive care unit (ICU). Material and Methods: With the approval of the ethics committee and informed consent from relatives, 60 patients who were followed in the ICU with mechanical ventilator support were included in our study. Patients were divided into three groups. The first group received enteral nutrition (n=20), and the second was prescribed TPN (n=20) while the third group was given glutamine-supplemented TPN (n=20). C-reactive protein (CRP), sedimentation rate, body temperature, development of purulent secretions, increase in the amount of secretions, changes in the characteristics of secretions and an increase in requirement of deep tracheal aspiration were monitored for seven days by daily examination and radiographs. Results: No statistically significant difference was found among groups in terms of development of VAP (p=0.622). Conclusion: Although VAP developed at a lower rate in the glutamine-supplemented TPN group, no statistically significant difference was found among any of the groups. Glutamine-supplemented TPN may have no superiority over unsupplemented enteral and TPN in preventing VAP.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Ventilator-associated pneumonia (VAP) is a form of nosocomial pneumonia that increases patient morbidity and mortality, length of hospital stay, and healthcare costs. Glutamine preserves the intestinal mucosal structure, increases immune function, and reduces harmful changes in gut permeability in patients receiving total parenteral nutrition (TPN). We hypothesized that TPN supplemented by glutamine might prevent the development of VAP in patients on mechanical ventilator support in the intensive care unit (ICU).</p>\r\n<p>\r\n\t<strong>Material</strong> <strong>and</strong> <strong>Methods</strong>: With the approval of the ethics committee and informed consent from relatives, 60 patients who were followed in the ICU with mechanical ventilator support were included in our study. Patients were divided into three groups. The first group received enteral nutrition (n=20), and the second was prescribed TPN (n=20) while the third group was given glutamine-supplemented TPN (n=20). C-reactive protein (CRP), sedimentation rate, body temperature, development of purulent secretions, increase in the amount of secretions, changes in the characteristics of secretions and an increase in requirement of deep tracheal aspiration were monitored for seven days by daily examination and radiographs.</p>\r\n<p>\r\n\t<strong>Results</strong>: No statistically significant difference was found among groups in terms of development of VAP (p=0.622).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Although VAP developed at a lower rate in the glutamine-supplemented TPN group, no statistically significant difference was found among any of the groups. Glutamine-supplemented TPN may have no superiority over unsupplemented enteral and TPN in preventing VAP.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Ventilator-associated pneumonia (VAP) is a form of nosocomial pneumonia that increases patient morbidity and mortality, length of hospital stay, and healthcare costs. Glutamine preserves the intestinal mucosal structure, increases immune function, and reduces harmful changes in gut permeability in patients receiving total parenteral nutrition (TPN). We hypothesized that TPN supplemented by glutamine might prevent the development of VAP in patients on mechanical ventilator support in the intensive care unit (ICU). Material and Methods: With the approval of the ethics committee and informed consent from relatives, 60 patients who were followed in the ICU with mechanical ventilator support were included in our study. Patients were divided into three groups. The first group received enteral nutrition (n=20), and the second was prescribed TPN (n=20) while the third group was given glutamine-supplemented TPN (n=20). C-reactive protein (CRP), sedimentation rate, body temperature, development of purulent secretions, increase in the amount of secretions, changes in the characteristics of secretions and an increase in requirement of deep tracheal aspiration were monitored for seven days by daily examination and radiographs. Results: No statistically significant difference was found among groups in terms of development of VAP (p=0.622). Conclusion: Although VAP developed at a lower rate in the glutamine-supplemented TPN group, no statistically significant difference was found among any of the groups. Glutamine-supplemented TPN may have no superiority over unsupplemented enteral and TPN in preventing VAP.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.043",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "414-418",
+    "views": 6720,
+    "downloads": 3185,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "457",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=457",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=457",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=457",
+    "localPdfUrl": "js/data/pdfs/457.pdf",
+    "pdfUrl": "js/data/pdfs/457.pdf"
+  },
+  {
+    "id": 458,
+    "type": "Original Article",
+    "title": "Are Hepatic Portal Venous System Components Distributed Equally in the Liver? A Multidetector Computerized Tomography Study",
+    "authors": [
+      {
+        "name": "Mehmet İncedayı",
+        "affiliation": "Department of Radiology, Gülhane Military Medical Academy, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serkan Arıbal",
+        "affiliation": "Department of Radiology, Gülhane Military Medical Academy, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Kemal Sivrioğlu",
+        "affiliation": "Department of Radiology, Gülhane Military Medical Academy, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Güner Sönmez",
+        "affiliation": "Department of Radiology, Gülhane Military Medical Academy, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ersin Öztürk",
+        "affiliation": "Department of Radiology, Gülhane Military Medical Academy, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cihad Çınar Başekim",
+        "affiliation": "Department of Radiology, Gülhane Military Medical Academy, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Yalçın [[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Ventilator-associated pneumonia (VAP) is a form of nosocomial pneumonia that increases patient morbidity and mortality, length of hospital stay, and healthcare costs. Glutamine preserves the intestinal mucosal structure, increases immune function, and reduces harmful changes in gut permeability in patients receiving total parenteral nutrition (TPN). We hypothesized that TPN supplemented by glutamine might prevent the development of VAP in patients on mechanical ventilator support in the intensive care unit (ICU). Material and Methods: With the approval of the ethics committee and informed consent from relatives, 60 patients who were followed in the ICU with mechanical ventilator support were included in our study. Patients were divided into three groups. The first group received enteral nutrition (n=20), and the second was prescribed TPN (n=20) while the third group was given glutamine-supplemented TPN (n=20). C-reactive protein (CRP), sedimentation rate, body temperature, development of purulent secretions, increase in the amount of secretions, changes in the characteristics of secretions and an increase in requirement of deep tracheal aspiration were monitored for seven days by daily examination and radiographs. Results: No statistically significant difference was found among groups in terms of development of VAP (p=0.622). Conclusion: Although VAP developed at a lower rate in the glutamine-supplemented TPN group, no statistically significant difference was found among any of the groups. Glutamine-supplemented TPN may have no superiority over unsupplemented enteral and TPN in preventing VAP.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Ventilator-associated pneumonia (VAP) is a form of nosocomial pneumonia that increases patient morbidity and mortality, length of hospital stay, and healthcare costs. Glutamine preserves the intestinal mucosal structure, increases immune function, and reduces harmful changes in gut permeability in patients receiving total parenteral nutrition (TPN). We hypothesized that TPN supplemented by glutamine might prevent the development of VAP in patients on mechanical ventilator support in the intensive care unit (ICU).</p>\r\n<p>\r\n\t<strong>Material</strong> <strong>and</strong> <strong>Methods</strong>: With the approval of the ethics committee and informed consent from relatives, 60 patients who were followed in the ICU with mechanical ventilator support were included in our study. Patients were divided into three groups. The first group received enteral nutrition (n=20), and the second was prescribed TPN (n=20) while the third group was given glutamine-supplemented TPN (n=20). C-reactive protein (CRP), sedimentation rate, body temperature, development of purulent secretions, increase in the amount of secretions, changes in the characteristics of secretions and an increase in requirement of deep tracheal aspiration were monitored for seven days by daily examination and radiographs.</p>\r\n<p>\r\n\t<strong>Results</strong>: No statistically significant difference was found among groups in terms of development of VAP (p=0.622).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Although VAP developed at a lower rate in the glutamine-supplemented TPN group, no statistically significant difference was found among any of the groups. Glutamine-supplemented TPN may have no superiority over unsupplemented enteral and TPN in preventing VAP.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Ventilator-associated pneumonia (VAP) is a form of nosocomial pneumonia that increases patient morbidity and mortality, length of hospital stay, and healthcare costs. Glutamine preserves the intestinal mucosal structure, increases immune function, and reduces harmful changes in gut permeability in patients receiving total parenteral nutrition (TPN). We hypothesized that TPN supplemented by glutamine might prevent the development of VAP in patients on mechanical ventilator support in the intensive care unit (ICU). Material and Methods: With the approval of the ethics committee and informed consent from relatives, 60 patients who were followed in the ICU with mechanical ventilator support were included in our study. Patients were divided into three groups. The first group received enteral nutrition (n=20), and the second was prescribed TPN (n=20) while the third group was given glutamine-supplemented TPN (n=20). C-reactive protein (CRP), sedimentation rate, body temperature, development of purulent secretions, increase in the amount of secretions, changes in the characteristics of secretions and an increase in requirement of deep tracheal aspiration were monitored for seven days by daily examination and radiographs. Results: No statistically significant difference was found among groups in terms of development of VAP (p=0.622). Conclusion: Although VAP developed at a lower rate in the glutamine-supplemented TPN group, no statistically significant difference was found among any of the groups. Glutamine-supplemented TPN may have no superiority over unsupplemented enteral and TPN in preventing VAP.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.050",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "419-423",
+    "views": 5972,
+    "downloads": 9461,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "458",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=458",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=458",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=458",
+    "localPdfUrl": "js/data/pdfs/458.pdf",
+    "pdfUrl": "js/data/pdfs/458.pdf"
+  },
+  {
+    "id": 459,
+    "type": "Original Article",
+    "title": "Prevalence of Obesity in Elementary Schools in Mardin, South-Eastern of Turkey: A Preliminary Study",
+    "authors": [
+      {
+        "name": "Betül Battaloğlu İnanç",
+        "affiliation": "Health Higher School, Mardin Artuklu University, Mardin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Deniz Say Şahin",
+        "affiliation": "Health Higher School, Mardin Artuklu University, Mardin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşe Ferdane Oğuzöncül",
+        "affiliation": "Department of Public Health, Faculty of Medicine, Fırat University, Elazığ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Feride Mungan",
+        "affiliation": "Health Higher School, Mardin Artuklu University, Mardin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Recep Bindak [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: This research determines the frequency of obesity among primary school-aged children and evaluates the relationship between obesity and family and environmental factors. Material and Methods: Three thousand four hundred sixty students, aged 6-15 years in three primary schools in Mardin city center were taken into the study. Information about eating habits and family-environmental factors were obtained by questionnaire. For each student we calculated the body mass index (BMI) and the ≥97 percentile was defined as obese, and between 85-97th percentile as overweight. These values were calculated with the SPSS statistical program. Chi-square and t-tests were used for analysis. p<0.05 was considered statistically significant. Results: 48.2% of the students were female. In the assessment of body mass index (BMI) the overweight rate for children was 15.78%, the obese rate was 10.57%. The prevalence of obesity according to gender was 9.05% for girls and 11.97% for boys (p<0.01). The mean BMI of the girls in the age group 13-15 is higher than in males of the same age. Those in the higher socio-economic group had a higher prevalence of obesity (p<0.01). Paternal obesity affected child obesity (p<0.01). Children who eat irregular meals (p=0.05), watch more than 2 hours per day TV (p=0.03), were breastfed for less than 6 months (p<0.05) and the mothers' obesity (p<0.05) were found to have a significantly higher prevalence of obesity. Conclusion: Obesity is increasing throughout the world as a health problem. Being obese in childhood and having obese parent(s) are two of the risk factors of being obese in adulthood. Persistence of obesity into adulthood is the most serious aspect of the problem. The therapeutic success rate in obesity is unfortunately not high. Therefore, a preventive strategy involving early identification of those at risk by incorporating body mass assessments to routine childhood growth assessment appears to be the most prudent strategy.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: This research determines the frequency of obesity among primary school-aged children and evaluates the relationship between obesity and family and environmental factors.</p>\r\n<p>\r\n\t<strong>Material</strong> <strong>and</strong> <strong>Methods</strong>: Three thousand four hundred sixty students, aged 6-15 years in three primary schools in Mardin city center were taken into the study. Information about eating habits and family-environmental factors were obtained by questionnaire. For each student we calculated the body mass index (BMI) and the &ge;97 percentile was defined as obese, and between 85-97th percentile as overweight. These values were calculated with the SPSS statistical program. Chi-square and t-tests were used for analysis. p&lt;0.05 was considered statistically significant.</p>\r\n<p>\r\n\t<strong>Results</strong>: 48.2% of the students were female. In the assessment of body mass index (BMI) the overweight rate for children was 15.78%, the obese rate was 10.57%. The prevalence of obesity according to gender was 9.05% for girls and 11.97% for boys (p&lt;0.01). The mean BMI of the girls in the age group 13-15 is higher than in males of the same age. Those in the higher socio-economic group had a higher prevalence of obesity (p&lt;0.01). Paternal obesity affected child obesity (p&lt;0.01). Children who eat irregular meals (p=0.05), watch more than 2 hours per day TV (p=0.03), were breastfed for less than 6 months (p&lt;0.05) and the mothers&#39; obesity (p&lt;0.05) were found to have a significantly higher prevalence of obesity.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Obesity is increasing throughout the world as a health problem. Being obese in childhood and having obese parent(s) are two of the risk factors of being obese in adulthood. Persistence of obesity into adulthood is the most serious aspect of the problem. The therapeutic success rate in obesity is unfortunately not high. Therefore, a preventive strategy involving early identification of those at risk by incorporating body mass assessments to routine childhood growth assessment appears to be the most prudent strategy.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: This research determines the frequency of obesity among primary school-aged children and evaluates the relationship between obesity and family and environmental factors. Material and Methods: Three thousand four hundred sixty students, aged 6-15 years in three primary schools in Mardin city center were taken into the study. Information about eating habits and family-environmental factors were obtained by questionnaire. For each student we calculated the body mass index (BMI) and the ≥97 percentile was defined as obese, and between 85-97th percentile as overweight. These values were calculated with the SPSS statistical program. Chi-square and t-tests were used for analysis. p<0.05 was considered statistically significant. Results: 48.2% of the students were female. In the assessment of body mass index (BMI) the overweight rate for children was 15.78%, the obese rate was 10.57%. The prevalence of obesity according to gender was 9.05% for girls and 11.97% for boys (p<0.01). The mean BMI of the girls in the age group 13-15 is higher than in males of the same age. Those in the higher socio-economic group had a higher prevalence of obesity (p<0.01). Paternal obesity affected child obesity (p<0.01). Children who eat irregular meals (p=0.05), watch more than 2 hours per day TV (p=0.03), were breastfed for less than 6 months (p<0.05) and the mothers' obesity (p<0.05) were found to have a significantly higher prevalence of obesity. Conclusion: Obesity is increasing throughout the world as a health problem. Being obese in childhood and having obese parent(s) are two of the risk factors of being obese in adulthood. Persistence of obesity into adulthood is the most serious aspect of the problem. The therapeutic success rate in obesity is unfortunately not high. Therefore, a preventive strategy involving early identification of those at risk by incorporating body mass assessments to routine childhood growth assessment appears to be the most prudent strategy.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.051",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "424-430",
+    "views": 7136,
+    "downloads": 3010,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "459",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=459",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=459",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=459",
+    "localPdfUrl": "js/data/pdfs/459.pdf",
+    "pdfUrl": "js/data/pdfs/459.pdf"
+  },
+  {
+    "id": 460,
+    "type": "Original Article",
+    "title": "Autoimmune Pancreatitis and Treatment Approaches with Case Reports",
+    "authors": [
+      {
+        "name": "Ömer Ünalp",
+        "affiliation": "Department of General Surgery, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Varlık Erol",
+        "affiliation": "Department of General Surgery, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Levent Yeniay",
+        "affiliation": "Department of General Surgery, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şafak Öztürk",
+        "affiliation": "Department of General Surgery, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Çoker",
+        "affiliation": "Department of General Surgery, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: In this study, we aimed to review retrospectively the data of 10 patient who were treated and followed-up in our clinic and to review the current approaches in the diagnosis and treatment of autoimmune pancreatitis (AIP). Material and Methods: We reviewed 10 patients retrospectively who were operated on and had the diagnosis of AIP histopathologically in the Ege University School of Medicine Department of General Surgery. Results: Between June 2001-November 2010, 10 patients who were diagnosed as AIP were examined retrospectively. Radiologically, a pancreatic mass was found in the pancreatic head with ultrasound in 7 (70%) of 10 patients and suspicious lesions were identified in the head of the pancreas in 3 (30%) patients. All patients were operated on in our clinic with the preliminary diagnosis of pancreatic head tumor; 8 patients underwent Whipple's procedure, 1 patient underwent pylorus preserving pancreaticoduodenectomy, and in 1 patient an exploratory pancreatic biopsy (frozen section) was carried out. Conclusion: Autoimmune pancreatitis is a disease with increasing incidence and characterized by lymphoplasmocytic cell infiltration and fibrosis. Patients with a pancreatic mass, if there is an autoimmune disease or chronic pancreatitis suspected in the detailed history, it is necessary to evaluate patients in terms of AIP serologically to protect the patients from an incoorectng diagnosis and morbidity of surgery.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: In this study, we aimed to review retrospectively the data of 10 patient who were treated and followed-up in our clinic and to review the current approaches in the diagnosis and treatment of autoimmune pancreatitis (AIP).</p>\r\n<p>\r\n\t<strong>Material</strong> <strong>and</strong> <strong>Methods</strong>: We reviewed 10 patients retrospectively who were operated on and had the diagnosis of AIP histopathologically in the Ege University School of Medicine Department of General Surgery.</p>\r\n<p>\r\n\t<strong>Results</strong>: Between June 2001-November 2010, 10 patients who were diagnosed as AIP were examined retrospectively. Radiologically, a pancreatic mass was found in the pancreatic head with ultrasound in 7 (70%) of 10 patients and suspicious lesions were identified in the head of the pancreas in 3 (30%) patients. All patients were operated on in our clinic with the preliminary diagnosis of pancreatic head tumor; 8 patients underwent Whipple&#39;s procedure, 1 patient underwent pylorus preserving pancreaticoduodenectomy, and in 1 patient an exploratory pancreatic biopsy (frozen section) was carried out.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Autoimmune pancreatitis is a disease with increasing incidence and characterized by lymphoplasmocytic cell infiltration and fibrosis. Patients with a pancreatic mass, if there is an autoimmune disease or chronic pancreatitis suspected in the detailed history, it is necessary to evaluate patients in terms of AIP serologically to protect the patients from an incoorectng diagnosis and morbidity of surgery.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: In this study, we aimed to review retrospectively the data of 10 patient who were treated and followed-up in our clinic and to review the current approaches in the diagnosis and treatment of autoimmune pancreatitis (AIP). Material and Methods: We reviewed 10 patients retrospectively who were operated on and had the diagnosis of AIP histopathologically in the Ege University School of Medicine Department of General Surgery. Results: Between June 2001-November 2010, 10 patients who were diagnosed as AIP were examined retrospectively. Radiologically, a pancreatic mass was found in the pancreatic head with ultrasound in 7 (70%) of 10 patients and suspicious lesions were identified in the head of the pancreas in 3 (30%) patients. All patients were operated on in our clinic with the preliminary diagnosis of pancreatic head tumor; 8 patients underwent Whipple's procedure, 1 patient underwent pylorus preserving pancreaticoduodenectomy, and in 1 patient an exploratory pancreatic biopsy (frozen section) was carried out. Conclusion: Autoimmune pancreatitis is a disease with increasing incidence and characterized by lymphoplasmocytic cell infiltration and fibrosis. Patients with a pancreatic mass, if there is an autoimmune disease or chronic pancreatitis suspected in the detailed history, it is necessary to evaluate patients in terms of AIP serologically to protect the patients from an incoorectng diagnosis and morbidity of surgery.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.065",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "431-433",
+    "views": 7535,
+    "downloads": 9751,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "460",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=460",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=460",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=460",
+    "localPdfUrl": "js/data/pdfs/460.pdf",
+    "pdfUrl": "js/data/pdfs/460.pdf"
+  },
+  {
+    "id": 461,
+    "type": "Original Article",
+    "title": "The Rate of Seasonal Influenza Vaccination in Diabetic Children, the Effect of Recommendation and the Factors Influencing the Acceptance of Recommendation: An Interventional Study",
+    "authors": [
+      {
+        "name": "Mahmut Orhun Çamurdan",
+        "affiliation": "Department of Pediatric Endocrinology, Faculty of Medicine, Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aysun Bideci",
+        "affiliation": "Department of Pediatric Endocrinology, Faculty of Medicine, Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aysu Duyan Çamurdan",
+        "affiliation": "Department of Social Pediatrics, Faculty of Medicine, Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ufuk Beyazova",
+        "affiliation": "Department of Social Pediatrics, Faculty of Medicine, Gazi University, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: To investigate the vaccination rate of influenza in diabetic children and the effect of recommendation and other factors on vaccination rate. Material and Methods: On July 2011, 144 diabetic children and their families were informed about and were recommended to receive the influenza vaccine every year, in September. On December 2011, parents were questioned about the vaccination. Results: Influenza vaccination rate of the previous season (28.3%) increased to 50.0% (p<0.05). Receiving the vaccine in 2010 was the only contributing factor to the recommendation success. The reasons given by the non-receivers were; forgetting (50.0%), fear of adverse-effects (26.4%), not believing in usefulness (15.2%), rejection by the child (4.2%) and effects of media (4.2%). 88.9% of those who forgot declared that they would receive if they were reminded at the beginning of the season. Conclusion: The rate of influenza vaccination was low. The majority of those who didn't recieve the vaccination declared that they would if they were reminded at the beginning of the season and the fact that “receiving the vaccine in 2010” was the only factor influencing the recommendation success indicate that recommending isn't enough but that reminding and giving detailed information about the vaccine will increase vaccination rates independent of other factors.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: To investigate the vaccination rate of influenza in diabetic children and the effect of recommendation and other factors on vaccination rate.</p>\r\n<p>\r\n\t<strong>Material</strong> <strong>and</strong> <strong>Methods</strong>: On July 2011, 144 diabetic children and their families were informed about and were recommended to receive the influenza vaccine every year, in September. On December 2011, parents were questioned about the vaccination.</p>\r\n<p>\r\n\t<strong>Results</strong>: Influenza vaccination rate of the previous season (28.3%) increased to 50.0% (p&lt;0.05). Receiving the vaccine in 2010 was the only contributing factor to the recommendation success. The reasons given by the non-receivers were; forgetting (50.0%), fear of adverse-effects (26.4%), not believing in usefulness (15.2%), rejection by the child (4.2%) and effects of media (4.2%). 88.9% of those who forgot declared that they would receive if they were reminded at the beginning of the season.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The rate of influenza vaccination was low. The majority of those who didn&#39;t recieve the vaccination declared that they would if they were reminded at the beginning of the season and the fact that &ldquo;receiving the vaccine in 2010&rdquo; was the only factor influencing the recommendation success indicate that recommending isn&#39;t enough but that reminding and giving detailed information about the vaccine will increase vaccination rates independent of other factors.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: To investigate the vaccination rate of influenza in diabetic children and the effect of recommendation and other factors on vaccination rate. Material and Methods: On July 2011, 144 diabetic children and their families were informed about and were recommended to receive the influenza vaccine every year, in September. On December 2011, parents were questioned about the vaccination. Results: Influenza vaccination rate of the previous season (28.3%) increased to 50.0% (p<0.05). Receiving the vaccine in 2010 was the only contributing factor to the recommendation success. The reasons given by the non-receivers were; forgetting (50.0%), fear of adverse-effects (26.4%), not believing in usefulness (15.2%), rejection by the child (4.2%) and effects of media (4.2%). 88.9% of those who forgot declared that they would receive if they were reminded at the beginning of the season. Conclusion: The rate of influenza vaccination was low. The majority of those who didn't recieve the vaccination declared that they would if they were reminded at the beginning of the season and the fact that “receiving the vaccine in 2010” was the only factor influencing the recommendation success indicate that recommending isn't enough but that reminding and giving detailed information about the vaccine will increase vaccination rates independent of other factors.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.066",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "434-439",
+    "views": 6563,
+    "downloads": 9723,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "461",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=461",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=461",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=461",
+    "localPdfUrl": "js/data/pdfs/461.pdf",
+    "pdfUrl": "js/data/pdfs/461.pdf"
+  },
+  {
+    "id": 462,
+    "type": "Case Report",
+    "title": "Double Primary Tumors-Renal Cell Carcinoma and Duodenal Mucinous Adenocarcinoma",
+    "authors": [
+      {
+        "name": "Nada Vuckovic",
+        "affiliation": "Clinical Center of Vojvodina, Centre for Pathology and Histology, Novi Sad, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Matilda Djolai",
+        "affiliation": "Clinical Center of Vojvodina, Centre for Pathology and Histology, Novi Sad, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Bojana Andrejic",
+        "affiliation": "Department of Histology and Embryology, Faculty of Medicine, Novi Sad, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Srdjan Zivojinov",
+        "affiliation": "Clinic for Urology, Clinical Center of Vojvodina, Novi Sad, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Katarina Sarcev",
+        "affiliation": "Clinic for Abdominal, Endocrine and Transplantation Surgery, Clinical Center of Vojvodina, Novi Sad, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Dejan Vuckovic",
+        "affiliation": "Department of Pathology, Faculty of Medicine, Novi Sad, Serbia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract A 59-year old patient was admited to the Gastroenterology Clinic with the signs of gastrointestinal bleeding. Computerized tomography (CT) and a barium-meal radiography revealed a circumferential nodular wall narrowing and incomplete stricture at the D2 part of the duodenum. CT also showed a poorly demarcated mass in the upper and lower poles of the left kidney. During the operation, the whole kidney together with the tumor was removed and also a part of the duodenum. Morphological features of both tumors were typical and distinctive enough to set the diagnosis of two independent primary tumors. The possibility of one being the metastasis of the other was excluded. The diagnosis of double primary malignant neoplasms - renal cell carcinoma and duodenal mucinous adenocarcinoma was made.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tA 59-year old patient was admited to the Gastroenterology Clinic with the signs of gastrointestinal bleeding. Computerized tomography (CT) and a barium-meal radiography revealed a circumferential nodular wall narrowing and incomplete stricture at the D2 part of the duodenum. CT also showed a poorly demarcated mass in the upper and lower poles of the left kidney. During the operation, the whole kidney together with the tumor was removed and &nbsp;also a part of the duodenum. Morphological features of both tumors were typical and distinctive enough to set the diagnosis of two independent primary tumors. The possibility of one being the metastasis of the other was excluded. The diagnosis of double primary malignant neoplasms - renal cell carcinoma and duodenal mucinous adenocarcinoma was made.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract A 59-year old patient was admited to the Gastroenterology Clinic with the signs of gastrointestinal bleeding. Computerized tomography (CT) and a barium-meal radiography revealed a circumferential nodular wall narrowing and incomplete stricture at the D2 part of the duodenum. CT also showed a poorly demarcated mass in the upper and lower poles of the left kidney. During the operation, the whole kidney together with the tumor was removed and also a part of the duodenum. Morphological features of both tumors were typical and distinctive enough to set the diagnosis of two independent primary tumors. The possibility of one being the metastasis of the other was excluded. The diagnosis of double primary malignant neoplasms - renal cell carcinoma and duodenal mucinous adenocarcinoma was made.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.076",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "440-443",
+    "views": 6556,
+    "downloads": 1989,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "462",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=462",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=462",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=462",
+    "localPdfUrl": "js/data/pdfs/462.pdf",
+    "pdfUrl": "js/data/pdfs/462.pdf"
+  },
+  {
+    "id": 463,
+    "type": "Case Report",
+    "title": "Severe Valvular Regurgitation: An Unexpected Complication During Transapical Aortic Valve Implantation Treated Successfully with the “Valve-in-Valve” Procedure",
+    "authors": [
+      {
+        "name": "Ethem Kavukcu",
+        "affiliation": "Department of Family Medicine, Sports Medicine, Akdeniz University, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Erdoğan",
+        "affiliation": "Department of Family Medicine, Sports Medicine, Akdeniz University, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Rıdvan Chasan",
+        "affiliation": "Department of Cardiology and Angiology, JL-University of Giessen, Giessen, Germany ; Department of Internal Medicine and Angiology, Medical and Research Center Wuppertal, Wuppertal, Germany",
+        "orcid": ""
+      },
+      {
+        "name": "Ethem Kavukçu",
+        "affiliation": "Department of Internal Medicine, Medical Center Wuppertal, Wuppertal, Germany",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Bilgin",
+        "affiliation": "Department of Radiology, Faculty of Medicine, Bezmialem Vakıf University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Severe symptomatic aortic stenosis (AS) in a multimorbid 77 year old female was treated with transapical aortic valve implantation with a 23 mm Edwards Sapien valve. Severe valvular regurgitation following implantation, probably due to structural valve failure, was treated successfully with a second valve-in- valve implantation. During a follow-up time of 2,5 years no further problems occurred.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tSevere symptomatic aortic stenosis (AS) in a multimorbid 77 year old female was treated with transapical aortic valve implantation with a 23 mm Edwards Sapien valve. Severe valvular regurgitation following implantation, probably due to structural valve failure, was treated successfully with a second valve-in- valve implantation. During a follow-up time of 2,5 years no further problems occurred.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Severe symptomatic aortic stenosis (AS) in a multimorbid 77 year old female was treated with transapical aortic valve implantation with a 23 mm Edwards Sapien valve. Severe valvular regurgitation following implantation, probably due to structural valve failure, was treated successfully with a second valve-in- valve implantation. During a follow-up time of 2,5 years no further problems occurred.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.040",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "444-446",
+    "views": 6362,
+    "downloads": 3755,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "463",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=463",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=463",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=463",
+    "localPdfUrl": "js/data/pdfs/463.pdf",
+    "pdfUrl": "js/data/pdfs/463.pdf"
+  },
+  {
+    "id": 464,
+    "type": "Case Report",
+    "title": "Delayed and Incidental Diagnosis of Transverse Testicular Ectopia",
+    "authors": [
+      {
+        "name": "Süleyman Cüneyt Karakuş",
+        "affiliation": "Department of Pediatric Surgery, Gaziantep Children Hospital, Gaziantep, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İdris Ertaşkın",
+        "affiliation": "Department of Pediatric Surgery, Gaziantep Children Hospital, Gaziantep, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Naim Koku",
+        "affiliation": "Department of Pediatric Surgery, Gaziantep Children Hospital, Gaziantep, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hüseyin Kılınçaslan",
+        "affiliation": "Department of Pediatric Surgery, Faculty of Medicine, Bezmialem Vakıf University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hasan Deliağa [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Transverse testicular ectopia is a rare malformation in which both testes are placed in the same inguinal region. Most of the patients are diagnosed incidentally during inguinal exploration. We here report three cases of transverse testicular ectopia and discuss the causes of delayed and incidental diagnosis of this infrequent malformation. Although the mean age at presentation was reported as 4 years, the mean age of our patients was 7.7 months. We detected the contralateral testis in the inguinal canal in all of our patients preoperatively. The most important diagnostic criteria are to be aware of this rare malformation and getting suspicious in patients with one side inguinal hernia and an empty hemiscrotum on the other side. It is essential to perform an ultrasound scan in patients with such a clinical presentation.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tTransverse testicular ectopia is a rare malformation in which both testes are placed in the same inguinal region. Most of the patients are diagnosed incidentally during inguinal exploration. We here report three cases of transverse testicular ectopia and discuss the causes of delayed and incidental diagnosis of this infrequent malformation. Although the mean age at presentation was reported as 4 years, the mean age of our patients was 7.7 months. &nbsp;We detected the contralateral testis in the inguinal canal in all of our patients preoperatively. The most important diagnostic criteria are to be aware of this rare malformation and getting suspicious in patients with one side inguinal hernia and an &nbsp;empty hemiscrotum on the other side. It is essential to perform an ultrasound scan in patients with such a clinical presentation.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Transverse testicular ectopia is a rare malformation in which both testes are placed in the same inguinal region. Most of the patients are diagnosed incidentally during inguinal exploration. We here report three cases of transverse testicular ectopia and discuss the causes of delayed and incidental diagnosis of this infrequent malformation. Although the mean age at presentation was reported as 4 years, the mean age of our patients was 7.7 months. We detected the contralateral testis in the inguinal canal in all of our patients preoperatively. The most important diagnostic criteria are to be aware of this rare malformation and getting suspicious in patients with one side inguinal hernia and an empty hemiscrotum on the other side. It is essential to perform an ultrasound scan in patients with such a clinical presentation.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.080",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "447-449",
+    "views": 6808,
+    "downloads": 2994,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "464",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=464",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=464",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=464",
+    "localPdfUrl": "js/data/pdfs/464.pdf",
+    "pdfUrl": "js/data/pdfs/464.pdf"
+  },
+  {
+    "id": 465,
+    "type": "Case Report",
+    "title": "Synchronous Bilateral Multiple Typical Pulmonary Carcinoid Tumors: A Unique Case with 10 Typical Carcinoids",
+    "authors": [
+      {
+        "name": "Alkın Yazıcıoğlu",
+        "affiliation": "Department of Thoracic Surgery, Atatürk Chest Disease and Thoracic Surgery Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erdal Yekeler",
+        "affiliation": "Department of Thoracic Surgery, Atatürk Chest Disease and Thoracic Surgery Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pınar Bıcakcıoğlu",
+        "affiliation": "Department of Thoracic Surgery, Atatürk Chest Disease and Thoracic Surgery Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurettin Karaoğlanoğlu",
+        "affiliation": "Department of Thoracic Surgery, Atatürk Chest Disease and Thoracic Surgery Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Esra Özaydın",
+        "affiliation": "Department of Pathology, Atatürk Chest Disease Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Bilateral multiple typical carcinoid tumors of the lung are uncommon malignancies. We discuss the case of a 64 year-old female with a nonproductive cough as the initial symptom. Thoracic computed tomography revealed multiple nodular lesions on both sides, which were initially misdiagnosed as multiple metastases of the lung with an unknown primary. After resection of nodules in the right hemithorax, pathologic examination revealed a typical carcinoid tumor. Bilateral sequential thoracotomy was performed and all ten nodules, (six on the right side and four on the left side), were treated by sublobar resection due to poor respiratory function. Pathological examination revealed all nodules to be typical carcinoid tumors. Following the resections, the patient has remained disease-free for ten months.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tBilateral multiple typical carcinoid tumors of the lung are uncommon malignancies. We discuss the case of a 64 year-old female with a nonproductive cough as the &nbsp;initial symptom. Thoracic computed tomography revealed multiple nodular lesions on both sides, which were initially misdiagnosed as multiple metastases of the lung with an unknown primary. After resection of nodules in the right hemithorax, pathologic examination revealed a typical carcinoid tumor. Bilateral sequential thoracotomy was performed and all ten nodules, (six on the right side and four on the left side), were treated by sublobar resection due to poor respiratory function. Pathological examination revealed all nodules to be typical carcinoid tumors. Following the resections, the patient has remained disease-free for ten months.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Bilateral multiple typical carcinoid tumors of the lung are uncommon malignancies. We discuss the case of a 64 year-old female with a nonproductive cough as the initial symptom. Thoracic computed tomography revealed multiple nodular lesions on both sides, which were initially misdiagnosed as multiple metastases of the lung with an unknown primary. After resection of nodules in the right hemithorax, pathologic examination revealed a typical carcinoid tumor. Bilateral sequential thoracotomy was performed and all ten nodules, (six on the right side and four on the left side), were treated by sublobar resection due to poor respiratory function. Pathological examination revealed all nodules to be typical carcinoid tumors. Following the resections, the patient has remained disease-free for ten months.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.081",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "450-452",
+    "views": 6090,
+    "downloads": 9504,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "465",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=465",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=465",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=465",
+    "localPdfUrl": "js/data/pdfs/465.pdf",
+    "pdfUrl": "js/data/pdfs/465.pdf"
+  },
+  {
+    "id": 466,
+    "type": "Case Report",
+    "title": "Cervical Adenoid Basal Carcinoma: A Case Report",
+    "authors": [
+      {
+        "name": "Asuman Argon",
+        "affiliation": "Clinic of Medical Pathology, Ministry of Health İzmir Bozyaka Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Alper Şener",
+        "affiliation": "Department of Pathology, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Osman Zekioğlu",
+        "affiliation": "Department of Pathology, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Necmettin Özdemir",
+        "affiliation": "Department of Pathology, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Coşan Terek Coşan Terek",
+        "affiliation": "Department of Gynecology and Obstetrics, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Adenoid basal carcinoma (ABC) is a rare epithelial tumor of the cervix. It makes up approximately 1% of all cervical adenocarcinomas. Rare cases have been associated with common cervical epithelial tumors. We present a case of ABC associated with typical squamous cell carcinoma. A 54-year-old postmenopausal woman underwent D&C for vaginal bleeding. Histologically, the tumor was characterized by small cells with a narrow cytoplasm, making up islands and cords. Peripheral palissading in the cells surrounding the cystic areas that contained central cellular debris and keratin was noted. The patient underwent total hysterectomy, bilateral salpingo-oophorectomy, pelvic lymphadenectomy and omentectomy. Large cell keratinized type squamous cell carcinoma areas in the cervix were noted besides the limited ABC areas. After surgery, the patient was treated with radiation therapy. A retroperitoneal metastasis was found on the first year and chemotherapy was administered. The patient has no evidence of disease 27 months after the first diagnosis. ABC makes up quite a rare group of cervical cancers and should be kept in mind during the evaluation so that a differentiation can be made with tumors with similar morphology as it can show various histological patterns, and can be seen together with more aggressive cancers.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tAdenoid basal carcinoma (ABC) is a rare epithelial tumor of the cervix. It makes up approximately 1% of all cervical adenocarcinomas. Rare cases have been associated with common cervical epithelial tumors. We present a case of ABC associated with typical squamous cell carcinoma. A 54-year-old postmenopausal woman underwent D&amp;C for vaginal bleeding. Histologically, the tumor was characterized by small cells with a narrow cytoplasm, making up islands and cords. Peripheral palissading in the cells surrounding the cystic areas that contained central cellular debris and keratin was noted. The patient underwent total hysterectomy, bilateral salpingo-oophorectomy, pelvic lymphadenectomy and omentectomy. Large cell keratinized type squamous cell carcinoma areas in the cervix were noted besides the limited ABC areas. After surgery, the patient was treated with radiation therapy. A retroperitoneal metastasis was found on the first year and chemotherapy was administered. The patient has no evidence of disease 27 months after the first diagnosis. ABC makes up quite a rare group of cervical cancers and should be kept in mind during the evaluation so that a differentiation can be made with tumors with similar morphology as it can show various histological patterns, and can be seen together with more aggressive cancers.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Adenoid basal carcinoma (ABC) is a rare epithelial tumor of the cervix. It makes up approximately 1% of all cervical adenocarcinomas. Rare cases have been associated with common cervical epithelial tumors. We present a case of ABC associated with typical squamous cell carcinoma. A 54-year-old postmenopausal woman underwent D&C for vaginal bleeding. Histologically, the tumor was characterized by small cells with a narrow cytoplasm, making up islands and cords. Peripheral palissading in the cells surrounding the cystic areas that contained central cellular debris and keratin was noted. The patient underwent total hysterectomy, bilateral salpingo-oophorectomy, pelvic lymphadenectomy and omentectomy. Large cell keratinized type squamous cell carcinoma areas in the cervix were noted besides the limited ABC areas. After surgery, the patient was treated with radiation therapy. A retroperitoneal metastasis was found on the first year and chemotherapy was administered. The patient has no evidence of disease 27 months after the first diagnosis. ABC makes up quite a rare group of cervical cancers and should be kept in mind during the evaluation so that a differentiation can be made with tumors with similar morphology as it can show various histological patterns, and can be seen together with more aggressive cancers.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.088",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "453-456",
+    "views": 6910,
+    "downloads": 9679,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "466",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=466",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=466",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=466",
+    "localPdfUrl": "js/data/pdfs/466.pdf",
+    "pdfUrl": "js/data/pdfs/466.pdf"
+  },
+  {
+    "id": 468,
+    "type": "Clinical Image",
+    "title": "A Rare Cardiac Malformation in a Patient Presenting with Transient Ischemic Attack: Isolated Left Ventricular Diverticulum",
+    "authors": [
+      {
+        "name": "Emir Karacağlar",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Hospital, Baskent University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tansel Erol",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Hospital, Baskent University, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Haldun Müderrisoğlu",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Hospital, Baskent University, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Left ventricular diverticulum is a rare congenital malformation consisting of a localized protrusion of the endocardium and myocardium from the free wall of the left ventricle (LV). The prevalence of the disease is 0.26% in nonselected patients who underwent cardiac catheterization. It is believed that the etiology is an intrinsic abnormality developing during embryogenesis. It often does not cause any symptoms. We report a case of isolated left ventricular diverticulum with complaints of transient ischemic attack.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tLeft ventricular diverticulum is a rare congenital malformation consisting of a localized protrusion of the endocardium and myocardium from the free wall of the left ventricle (LV). The prevalence of the disease is 0.26% in nonselected patients who underwent cardiac catheterization. It is believed that the etiology is an intrinsic abnormality developing during embryogenesis. It often does not cause any symptoms. We report a case of isolated left ventricular diverticulum with complaints of transient ischemic attack.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Left ventricular diverticulum is a rare congenital malformation consisting of a localized protrusion of the endocardium and myocardium from the free wall of the left ventricle (LV). The prevalence of the disease is 0.26% in nonselected patients who underwent cardiac catheterization. It is believed that the etiology is an intrinsic abnormality developing during embryogenesis. It often does not cause any symptoms. We report a case of isolated left ventricular diverticulum with complaints of transient ischemic attack.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.112",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "458-459",
+    "views": 6278,
+    "downloads": 9460,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "468",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=468",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=468",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=468",
+    "localPdfUrl": "js/data/pdfs/468.pdf",
+    "pdfUrl": "js/data/pdfs/468.pdf"
+  },
+  {
+    "id": 467,
+    "type": "Letter",
+    "title": "A Rare Case of Schwannoma Arising From a Diverticulum in the First Portion of Duodenum",
+    "authors": [
+      {
+        "name": "Osman Temizöz",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Gençhellaç",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03852.1",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "457-457",
+    "views": 5574,
+    "downloads": 9400,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "467",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=467",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=467",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=467",
+    "localPdfUrl": "js/data/pdfs/467.pdf",
+    "pdfUrl": "js/data/pdfs/467.pdf"
+  },
+  {
+    "id": 469,
+    "type": "Retraction Notice",
+    "title": "Retraction Notice - Comparison of Nerve Stimulator and Ultrasonography Application for Brachial Plexus Anesthesia.",
+    "authors": [
+      {
+        "name": "Beyazıt Zencirci",
+        "affiliation": "Faculty of Medicine, Kahramanmaraş Sütçü İmam University, Kahramanmaraş, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hafize Öksüz",
+        "affiliation": "Faculty of Medicine, Kahramanmaraş Sütçü İmam University, Kahramanmaraş, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2012.116",
+    "received": "",
+    "accepted": "",
+    "published": "2012-01-01",
+    "volume": 29,
+    "issue": "4",
+    "pages": "460-460",
+    "views": 5572,
+    "downloads": 9268,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1163",
+    "sourceArticleId": "469",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=469",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=469",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=469",
+    "localPdfUrl": "js/data/pdfs/469.pdf",
+    "pdfUrl": "js/data/pdfs/469.pdf"
+  }
+]

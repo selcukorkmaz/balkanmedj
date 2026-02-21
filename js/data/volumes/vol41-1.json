@@ -1,0 +1,898 @@
+[
+  {
+    "id": 2562,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2562",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2562",
+    "localPdfUrl": "js/data/pdfs/2562.pdf",
+    "pdfUrl": "js/data/pdfs/2562.pdf"
+  },
+  {
+    "id": 2563,
+    "type": "Editorial",
+    "title": "A Radiologist",
+    "authors": [
+      {
+        "name": "Fethi Ustabaşıoğlu",
+        "affiliation": "Department of Radiology, Trakya University School of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A multidisciplinary team (MDT) is described as a gathering of individuals from diverse healthcare fields who convene at a specified time to deliberate on a specific patient.1 Each participant can independently contribute to the patient’s diagnostic and treatment decisions. It’s a collaborative approach that brings together various perspectives for comprehens",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-14122023",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "1-3",
+    "views": 4498,
+    "downloads": 2259,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2563",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2563",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2563",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2563",
+    "localPdfUrl": "js/data/pdfs/2563.pdf",
+    "pdfUrl": "js/data/pdfs/2563.pdf"
+  },
+  {
+    "id": 2533,
+    "type": "Editorial",
+    "title": "Current Trends in Hemoadsorption Treatment for Critically Ill Patients: are We Moving Forward?",
+    "authors": [
+      {
+        "name": "Fethi Gül",
+        "affiliation": "Department of Anesthesiology and Reanimation, Division of Critical Care, Marmara University Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Claudio Ronco",
+        "affiliation": "Department of Medicine, University of Padova, Padua, Italy; International Renal Research Institute of Vicenza (IRRV), Vicenza, Italy; Department of Nephrology, San Bortolo Hospital, Vicenza, Italy",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Hemoadsorption is an extracorporeal therapy that uses specialized adsorptive filters to eliminate harmful substances, such as cytokines and toxins, selectively or non-selectively from a patient’s bloodstream. In doing so, it aims to mitigate the systemic effects of severe inflammatory conditions. It represents a groundbreaking advancement in critical care me",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-14082023",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "4-6",
+    "views": 5853,
+    "downloads": 2970,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2533",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2533",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2533",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2533",
+    "localPdfUrl": "js/data/pdfs/2533.pdf",
+    "pdfUrl": "js/data/pdfs/2533.pdf"
+  },
+  {
+    "id": 2564,
+    "type": "Invited Review",
+    "title": "\"When,\" \"Where,\" and \"How\" of SARS-CoV-2 Infection Affects the Human Cardiovascular System: A Narrative Review",
+    "authors": [
+      {
+        "name": "Nicholas G. Kounis",
+        "affiliation": "Department of Cardiology, University of Patras Medical School, Rio, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Christos Gogos",
+        "affiliation": "Clinic of Cardiology, COVID-19 Unit, Papageorgiou General Hospital, Pavlos Melas, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Cesare de Gregorio",
+        "affiliation": "Department of Clinical and Experimental Medicine, University of Messina Medical School, Messina, Italy",
+        "orcid": ""
+      },
+      {
+        "name": "Ming-Yow Hung",
+        "affiliation": "Division of Cardiology, Department of Internal Medicine, Shuang Ho Hospital, Taipei Medical University, Taipei, Taiwan",
+        "orcid": ""
+      },
+      {
+        "name": "Sophia N. Kounis",
+        "affiliation": "Speech Therapy Practice, Rio, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Efthymios P. Tsounis",
+        "affiliation": "Division of Gastroenterology, Department of Internal Medicine, Medical School, University Hospital of Patras, Rio, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Stelios F. Assimakopoulos",
+        "affiliation": "Department of Internal Medicine, Division of Infectious Diseases, University of Patras Medical School, Rio, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Soheila Pourmasumi",
+        "affiliation": "Social Determinants of Health Research Center, Rafsanjan University of Medical Sciences, Rafsanjan, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Virginia Mplani",
+        "affiliation": "Intensive Care Unit, Patras University Hospital, Rio, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "George Servos",
+        "affiliation": "Pediatric Cardiology Unit, “P. & A. Kyriakou” Children’s Hospital, Athina, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Periklis Dousdampanis",
+        "affiliation": "Department of Nephrology, Saint Andrews State General Hospital, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Panagiotis Plotas",
+        "affiliation": "Department of Cardiology, University of Patras Medical School, Rio, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Marina A. Michalaki",
+        "affiliation": "Department of Internal Medicine, Division of Endocrinology, University of Patras, School of Health Sciences, Rio, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Grigorios Tsigkas",
+        "affiliation": "Department of Cardiology, University of Patras Medical School, Rio, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Gerasimos Grammatikopoulos",
+        "affiliation": "Private Practice Neuroncenter, Neuron Neurology Center, Rio, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Dimitrios Velissaris",
+        "affiliation": "Department of Internal Medicine, University of Patras Medical School, Rio, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Ioanna Koniar",
+        "affiliation": "Electrophysiology and Device Department, University Hospital of South Manchester NHS Foundation Trust, Manchester, United Kingdom",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Coronavirus disease 2019 (COVID-19) is caused by the novel severe acute respiratory coronavirus-2 (SARS-CoV-2). Several explanations for the development of cardiovascular complications during and after acute COVID-19 infection have been hypothesized. The COVID-19 pandemic, caused by SARS-CoV-2, has emerged as one of the deadliest pandemics in modern history. The myocardial injury in COVID-19 patients has been associated with coronary spasm, microthrombi formation, plaque rupture, hypoxic injury, or cytokine storm, which have the same pathophysiology as the three clinical variants of Kounis syndrome. The angiotensin-converting enzyme 2 (ACE2), renin-aldosterone system (RAAS), and kinin-kallikrein system are the main proposed mechanisms contributing to cardiovascular complications with the COVID-19 infection. ACE receptors can be found in the heart, blood vessels, endothelium, lungs, intestines, testes, neurons, and other human body parts. SARS-CoV-2 directly invades the endothelial cells with ACE2 receptors and constitutes the main pathway through which the virus enters the endothelial cells. This causes angiotensin II accumulation downregulation of the ACE2 receptors, resulting in prothrombotic effects, such as hemostatic imbalance via activation of the coagulation cascade, impaired fibrinolysis, thrombin generation, vasoconstriction, endothelial and platelet activation, and pro-inflammatory cytokine release. The KKS system typically causes vasodilation and regulates tissue repair, inflammation, cell proliferation, and platelet aggregation, but SARS-CoV-2 infection impairs such counterbalancing effects. This cascade results in cardiac arrhythmias, cardiac arrest, cardiomyopathy, cytokine storm, heart failure, ischemic myocardial injuries, microvascular disease, Kounis syndrome, prolonged COVID, myocardial fibrosis, myocarditis, new-onset hypertension, pericarditis, postural orthostatic tachycardia syndrome, pulmonary hypertension, stroke, Takotsubo syndrome, venous thromboembolism, and thrombocytopenia. In this narrative review, we describe and elucidate when, where, and how COVID-19 affects the human cardiovascular system in various parts of the human body that are vulnerable in every patient category, including children and athletes.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Coronavirus disease 2019 (COVID-19) is caused by the novel severe acute respiratory coronavirus-2 (SARS-CoV-2). Several explanations for the development of cardiovascular complications during and after acute COVID-19 infection have been hypothesized. The COVID-19 pandemic, caused by SARS-CoV-2, has emerged as one of the deadliest pandemics in modern history. The myocardial injury in COVID-19 patients has been associated with coronary spasm, microthrombi formation, plaque rupture, hypoxic injury, or cytokine storm, which have the same pathophysiology as the three clinical variants of Kounis syndrome. The angiotensin-converting enzyme 2 (ACE2), renin-aldosterone system (RAAS), and kinin-kallikrein system are the main proposed mechanisms contributing to cardiovascular complications with the COVID-19 infection. ACE receptors can be found in the heart, blood vessels, endothelium, lungs, intestines, testes, neurons, and other human body parts. SARS-CoV-2 directly invades the endothelial cells with ACE2 receptors and constitutes the main pathway through which the virus enters the endothelial cells. This causes angiotensin II accumulation downregulation of the ACE2 receptors, resulting in prothrombotic effects, such as hemostatic imbalance via activation of the coagulation cascade, impaired fibrinolysis, thrombin generation, vasoconstriction, endothelial and platelet activation, and pro-inflammatory cytokine release. The KKS system typically causes vasodilation and regulates tissue repair, inflammation, cell proliferation, and platelet aggregation, but SARS-CoV-2 infection impairs such counterbalancing effects. This cascade results in cardiac arrhythmias, cardiac arrest, cardiomyopathy, cytokine storm, heart failure, ischemic myocardial injuries, microvascular disease, Kounis syndrome, prolonged COVID, myocardial fibrosis, myocarditis, new-onset hypertension, pericarditis, postural orthostatic tachycardia syndrome, pulmonary hypertension, stroke, Takotsubo syndrome, venous thromboembolism, and thrombocytopenia. In this narrative review, we describe and elucidate when, where, and how COVID-19 affects the human cardiovascular system in various parts of the human body that are vulnerable in every patient category, including children and athletes.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Coronavirus disease 2019 (COVID-19) is caused by the novel severe acute respiratory coronavirus-2 (SARS-CoV-2). Several explanations for the development of cardiovascular complications during and after acute COVID-19 infection have been hypothesized. The COVID-19 pandemic, caused by SARS-CoV-2, has emerged as one of the deadliest pandemics in modern history. The myocardial injury in COVID-19 patients has been associated with coronary spasm, microthrombi formation, plaque rupture, hypoxic injury, or cytokine storm, which have the same pathophysiology as the three clinical variants of Kounis syndrome. The angiotensin-converting enzyme 2 (ACE2), renin-aldosterone system (RAAS), and kinin-kallikrein system are the main proposed mechanisms contributing to cardiovascular complications with the COVID-19 infection. ACE receptors can be found in the heart, blood vessels, endothelium, lungs, intestines, testes, neurons, and other human body parts. SARS-CoV-2 directly invades the endothelial cells with ACE2 receptors and constitutes the main pathway through which the virus enters the endothelial cells. This causes angiotensin II accumulation downregulation of the ACE2 receptors, resulting in prothrombotic effects, such as hemostatic imbalance via activation of the coagulation cascade, impaired fibrinolysis, thrombin generation, vasoconstriction, endothelial and platelet activation, and pro-inflammatory cytokine release. The KKS system typically causes vasodilation and regulates tissue repair, inflammation, cell proliferation, and platelet aggregation, but SARS-CoV-2 infection impairs such counterbalancing effects. This cascade results in cardiac arrhythmias, cardiac arrest, cardiomyopathy, cytokine storm, heart failure, ischemic myocardial injuries, microvascular disease, Kounis syndrome, prolonged COVID, myocardial fibrosis, myocarditis, new-onset hypertension, pericarditis, postural orthostatic tachycardia syndrome, pulmonary hypertension, stroke, Takotsubo syndrome, venous thromboembolism, and thrombocytopenia. In this narrative review, we describe and elucidate when, where, and how COVID-19 affects the human cardiovascular system in various parts of the human body that are vulnerable in every patient category, including children and athletes.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-10-25",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "7-22",
+    "views": 6663,
+    "downloads": 7232,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2564",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2564",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2564",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2564",
+    "localPdfUrl": "js/data/pdfs/2564.pdf",
+    "pdfUrl": "js/data/pdfs/2564.pdf"
+  },
+  {
+    "id": 2558,
+    "type": "Original Article",
+    "title": "Asiaticoside Down-Regulates HIF-1α to Inhibit Proliferation, Migration, and Angiogenesis in Thyroid Cancer Cells",
+    "authors": [
+      {
+        "name": "Yi Zhang",
+        "affiliation": "Department of Neck Surgery, The Second Affiliated Hospital of Wenzhou Medical University, Wenzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yifan Han",
+        "affiliation": "Department of Neck Surgery, The Second Affiliated Hospital of Wenzhou Medical University, Wenzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jianda Dong",
+        "affiliation": "Department of Neck Surgery, The Second Affiliated Hospital of Wenzhou Medical University, Wenzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Feilei Li",
+        "affiliation": "Department of Neck Surgery, The Second Affiliated Hospital of Wenzhou Medical University, Wenzhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yihan Sun",
+        "affiliation": "Department of Neck Surgery, The Second Affiliated Hospital of Wenzhou Medical University, Wenzhou, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Thyroid cancer (TC), the most prevalent endocrine malignancy, has been subjected to various treatment methods. However, the efficacy of asiaticoside (AC) for treating TC remains uncertain.Aims: To explore the impact of AC on TC and determine its potential mechanisms of action.Study Design: In vitro and in vivo cell line study.Methods: We evaluated the effects of AC on human TC cell lines, namely TPC-1 and FTC-133. Both in vitro and in vivo experimental validations were conducted.Results: AC significantly diminished the viability and proliferation of TC cells based on the CCK-8 assay and Edu staining findings. Migration and invasion assays revealed that AC effectively curtailed the migration and invasiveness of TC cells. The tube formation assay demonstrated that AC substantially impeded TC cell-induced angiogenesis. Western blot assay revealed that AC significantly reduced the expression levels of TRAF6, HIF-1α, and VEGFA, indicating that AC could potentially exert its anticancer effect by inhibiting the TRAF6/HIF1α pathway. Our in vivo experiments, which involved administering AC to BALB/c nude mice injected with TPC-1 cells, demonstrated significant inhibition of tumor growth and reduction in the expression of Ki-67, TRAF6, HIF-1α, and VEGFA.Conclusion: Our study highlights the significant inhibitory effect of AC on TC, offering fresh insights and potential drug candidates for TC treatment.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Thyroid cancer (TC), the most prevalent endocrine malignancy, has been subjected to various treatment methods. However, the efficacy of asiaticoside (AC) for treating TC remains uncertain.<br /><strong>Aims:</strong> To explore the impact of AC on TC and determine its potential mechanisms of action.<br /><strong>Study Design:</strong> In vitro and in vivo cell line study.<br /><strong>Methods:</strong> We evaluated the effects of AC on human TC cell lines, namely TPC-1 and FTC-133. Both in vitro and in vivo experimental validations were conducted.<br /><strong>Results:</strong> AC significantly diminished the viability and proliferation of TC cells based on the CCK-8 assay and Edu staining findings. Migration and invasion assays revealed that AC effectively curtailed the migration and invasiveness of TC cells. The tube formation assay demonstrated that AC substantially impeded TC cell-induced angiogenesis. Western blot assay revealed that AC significantly reduced the expression levels of TRAF6, HIF-1&alpha;, and VEGFA, indicating that AC could potentially exert its anticancer effect by inhibiting the TRAF6/HIF1&alpha; pathway. Our in vivo experiments, which involved administering AC to BALB/c nude mice injected with TPC-1 cells, demonstrated significant inhibition of tumor growth and reduction in the expression of Ki-67, TRAF6, HIF-1&alpha;, and VEGFA.<br /><strong>Conclusion:</strong> Our study highlights the significant inhibitory effect of AC on TC, offering fresh insights and potential drug candidates for TC treatment.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Thyroid cancer (TC), the most prevalent endocrine malignancy, has been subjected to various treatment methods. However, the efficacy of asiaticoside (AC) for treating TC remains uncertain.Aims: To explore the impact of AC on TC and determine its potential mechanisms of action.Study Design: In vitro and in vivo cell line study.Methods: We evaluated the effects of AC on human TC cell lines, namely TPC-1 and FTC-133. Both in vitro and in vivo experimental validations were conducted.Results: AC significantly diminished the viability and proliferation of TC cells based on the CCK-8 assay and Edu staining findings. Migration and invasion assays revealed that AC effectively curtailed the migration and invasiveness of TC cells. The tube formation assay demonstrated that AC substantially impeded TC cell-induced angiogenesis. Western blot assay revealed that AC significantly reduced the expression levels of TRAF6, HIF-1α, and VEGFA, indicating that AC could potentially exert its anticancer effect by inhibiting the TRAF6/HIF1α pathway. Our in vivo experiments, which involved administering AC to BALB/c nude mice injected with TPC-1 cells, demonstrated significant inhibition of tumor growth and reduction in the expression of Ki-67, TRAF6, HIF-1α, and VEGFA.Conclusion: Our study highlights the significant inhibitory effect of AC on TC, offering fresh insights and potential drug candidates for TC treatment.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-7-123",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "23-29",
+    "views": 7100,
+    "downloads": 3396,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2558",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2558",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2558",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2558",
+    "localPdfUrl": "js/data/pdfs/2558.pdf",
+    "pdfUrl": "js/data/pdfs/2558.pdf"
+  },
+  {
+    "id": 2565,
+    "type": "Original Article",
+    "title": "Quercetin Attenuates Endoplasmic Reticulum Stress and Apoptosis in TNBS-Induced Colitis by Inhibiting the Glucose Regulatory Protein 78 Activation",
+    "authors": [
+      {
+        "name": "Yeter Topçu-Tarladaçalışır",
+        "affiliation": "Department of Histology and Embryology Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Melike Sapmaz-Metin",
+        "affiliation": "Department of Histology and Embryology Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Zeynep Mercan",
+        "affiliation": "Department of Histology and Embryology Gaziantep University Faculty of Medicine, Gaziantep, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Deniz Erçetin",
+        "affiliation": "Department of Histology and Embryology Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The inflammatory bowel diseases (IBD) are significantly influenced by apoptosis and endoplasmic reticulum (ER) stress.Aims: To investigate the effects of quercetin on ER stress-mediated apoptosis in a trinitrobenzene sulfonic acid (TNBS) induced experimental IBD model.Study Design: In vivo animal experimental study.Methods: To demonstrate the effect of quercetin in an experimental colitis model, Control, TNBS, and TNBS+quercetin groups were created with 24 Wistar Albino rats. Colitis was induced by intrarectal administration of 25 mg TNBS. In the TNBS+quercetin group, intragastrically 100 mg/kg quercetin was given for 7 days, immediately after colitis induction. In the TNBS-induced experimental IBD model, we evaluated the effects of quercetin on colonic epithelial cell apoptosis, oxidative stress, ER stress, the mitogen-activated protein kinase c-Jun N-terminal kinase, and the nuclear factor kappa B immunoreactivities, the levels of myeloperoxidase and tumor necrosis factor-α, the disease activity index with colonic histopathologic changes.Results: TNBS administration induced an elevated level of disease activity and oxidative stress indices, inflammation markers, and an increase in the immunoreactivities of nuclear factor kappa B and the mitogen-activated protein kinase c-Jun N-terminal kinase in the colon of the colitis group. Glucose regulatory protein 78, caspase-12 immunoreactivities, and epithelial cell apoptosis also were shown in the colon. However, quercetin improved TNBS-induced histopathological alterations, apoptosis, inflammation, oxidative stress, and ER stress.Conclusion: This study suggests that quercetin has a regulatory effect on ER stress-mediated apoptosis, and thus may be beneficial in treating IBD.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The inflammatory bowel diseases (IBD) are significantly influenced by apoptosis and endoplasmic reticulum (ER) stress.<br /><strong>Aims:</strong> To investigate the effects of quercetin on ER stress-mediated apoptosis in a trinitrobenzene sulfonic acid (TNBS) induced experimental IBD model.<br /><strong>Study Design:</strong> In vivo animal experimental study.<br /><strong>Methods:</strong> To demonstrate the effect of quercetin in an experimental colitis model, Control, TNBS, and TNBS+quercetin groups were created with 24 Wistar Albino rats. Colitis was induced by intrarectal administration of 25 mg TNBS. In the TNBS+quercetin group, intragastrically 100 mg/kg quercetin was given for 7 days, immediately after colitis induction. In the TNBS-induced experimental IBD model, we evaluated the effects of quercetin on colonic epithelial cell apoptosis, oxidative stress, ER stress, the mitogen-activated protein kinase c-Jun N-terminal kinase, and the nuclear factor kappa B immunoreactivities, the levels of myeloperoxidase and tumor necrosis factor-&alpha;, the disease activity index with colonic histopathologic changes.<br /><strong>Results:</strong> TNBS administration induced an elevated level of disease activity and oxidative stress indices, inflammation markers, and an increase in the immunoreactivities of nuclear factor kappa B and the mitogen-activated protein kinase c-Jun N-terminal kinase in the colon of the colitis group. Glucose regulatory protein 78, caspase-12 immunoreactivities, and epithelial cell apoptosis also were shown in the colon. However, quercetin improved TNBS-induced histopathological alterations, apoptosis, inflammation, oxidative stress, and ER stress.<br /><strong>Conclusion:</strong> This study suggests that quercetin has a regulatory effect on ER stress-mediated apoptosis, and thus may be beneficial in treating IBD.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The inflammatory bowel diseases (IBD) are significantly influenced by apoptosis and endoplasmic reticulum (ER) stress.Aims: To investigate the effects of quercetin on ER stress-mediated apoptosis in a trinitrobenzene sulfonic acid (TNBS) induced experimental IBD model.Study Design: In vivo animal experimental study.Methods: To demonstrate the effect of quercetin in an experimental colitis model, Control, TNBS, and TNBS+quercetin groups were created with 24 Wistar Albino rats. Colitis was induced by intrarectal administration of 25 mg TNBS. In the TNBS+quercetin group, intragastrically 100 mg/kg quercetin was given for 7 days, immediately after colitis induction. In the TNBS-induced experimental IBD model, we evaluated the effects of quercetin on colonic epithelial cell apoptosis, oxidative stress, ER stress, the mitogen-activated protein kinase c-Jun N-terminal kinase, and the nuclear factor kappa B immunoreactivities, the levels of myeloperoxidase and tumor necrosis factor-α, the disease activity index with colonic histopathologic changes.Results: TNBS administration induced an elevated level of disease activity and oxidative stress indices, inflammation markers, and an increase in the immunoreactivities of nuclear factor kappa B and the mitogen-activated protein kinase c-Jun N-terminal kinase in the colon of the colitis group. Glucose regulatory protein 78, caspase-12 immunoreactivities, and epithelial cell apoptosis also were shown in the colon. However, quercetin improved TNBS-induced histopathological alterations, apoptosis, inflammation, oxidative stress, and ER stress.Conclusion: This study suggests that quercetin has a regulatory effect on ER stress-mediated apoptosis, and thus may be beneficial in treating IBD.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-10-9",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "30-37",
+    "views": 6399,
+    "downloads": 4064,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2565",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2565",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2565",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2565",
+    "localPdfUrl": "js/data/pdfs/2565.pdf",
+    "pdfUrl": "js/data/pdfs/2565.pdf"
+  },
+  {
+    "id": 2555,
+    "type": "Original Article",
+    "title": "Analysis of Forensic Death Statistics From 2013 to 2022 and Autopsy Practices in Türkiye",
+    "authors": [
+      {
+        "name": "Cemil Çelik",
+        "affiliation": "Forensic Medicine, Council of Forensic Medicine, Kahramanmaraş, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Uğur Ata",
+        "affiliation": "Forensic Medicine, Council of Forensic Medicine, Kahramanmaraş, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Naile Esra Saka",
+        "affiliation": "Forensic Medicine, Tekirdağ Namık Kemal University, Tekirdağ, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Autopsy rates are significantly lower that what they should be worldwide. Additionally, autopsy practices vary between countries.Aims: To examine the autopsy rates, the distribution and temporal changes of forensic autopsy cases, so as to identify the areas in the death investigation system that require improvement in Türkiye.Study Design: Cross-sectional study.Methods: “Forensic Death Examination Statistics” of the Council of Forensic Medicine (CFM) and “Death Statistics” of the Turkish Statistical Institute were compared and analyzed for the years 2013-2022 in Türkiye.Results: The number of forensic death cases sent to the CFM has increased over time. For all causes of deaths, the autopsy rate is approximately 3.6-4.8%. The cause-specific mortality rates for deaths due to sharp instrument trauma, blunt trauma, occupational accident, undetermined, and poisoning have increased over the years. “The percentage of “undetermined” deaths, which are important to demonstrate negative autopsies, was 14.2% in 2021.Conclusion: Although the autopsy rates have slightly increased in a volatile trend over time in Türkiye, they are still not at the desired level. Thus, it is essential to further raise awareness among all professionals involved in death investigations about the importance of autopsies.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Autopsy rates are significantly lower that what they should be worldwide. Additionally, autopsy practices vary between countries.<br /><strong>Aims:</strong> To examine the autopsy rates, the distribution and temporal changes of forensic autopsy cases, so as to identify the areas in the death investigation system that require improvement in T&uuml;rkiye.<br /><strong>Study Design:</strong> Cross-sectional study.<br /><strong>Methods:</strong> &ldquo;Forensic Death Examination Statistics&rdquo; of the Council of Forensic Medicine (CFM) and &ldquo;Death Statistics&rdquo; of the Turkish Statistical Institute were compared and analyzed for the years 2013-2022 in T&uuml;rkiye.<br /><strong>Results:</strong> The number of forensic death cases sent to the CFM has increased over time. For all causes of deaths, the autopsy rate is approximately 3.6-4.8%. The cause-specific mortality rates for deaths due to sharp instrument trauma, blunt trauma, occupational accident, undetermined, and poisoning have increased over the years. &ldquo;The percentage of &ldquo;undetermined&rdquo; deaths, which are important to demonstrate negative autopsies, was 14.2% in 2021.<br /><strong>Conclusion:</strong> Although the autopsy rates have slightly increased in a volatile trend over time in T&uuml;rkiye, they are still not at the desired level. Thus, it is essential to further raise awareness among all professionals involved in death investigations about the importance of autopsies.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Autopsy rates are significantly lower that what they should be worldwide. Additionally, autopsy practices vary between countries.Aims: To examine the autopsy rates, the distribution and temporal changes of forensic autopsy cases, so as to identify the areas in the death investigation system that require improvement in Türkiye.Study Design: Cross-sectional study.Methods: “Forensic Death Examination Statistics” of the Council of Forensic Medicine (CFM) and “Death Statistics” of the Turkish Statistical Institute were compared and analyzed for the years 2013-2022 in Türkiye.Results: The number of forensic death cases sent to the CFM has increased over time. For all causes of deaths, the autopsy rate is approximately 3.6-4.8%. The cause-specific mortality rates for deaths due to sharp instrument trauma, blunt trauma, occupational accident, undetermined, and poisoning have increased over the years. “The percentage of “undetermined” deaths, which are important to demonstrate negative autopsies, was 14.2% in 2021.Conclusion: Although the autopsy rates have slightly increased in a volatile trend over time in Türkiye, they are still not at the desired level. Thus, it is essential to further raise awareness among all professionals involved in death investigations about the importance of autopsies.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-9-10",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "38-46",
+    "views": 6882,
+    "downloads": 2988,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2555",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2555",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2555",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2555",
+    "localPdfUrl": "js/data/pdfs/2555.pdf",
+    "pdfUrl": "js/data/pdfs/2555.pdf"
+  },
+  {
+    "id": 2566,
+    "type": "Original Article",
+    "title": "Exploring Regional Disparities in Heart Failure Epidemiology and Outcomes: A Comprehensive Study Across Geographical Regions in Türkiye",
+    "authors": [
+      {
+        "name": "Anıl Şahin",
+        "affiliation": "Department of Cardiology, Sivas Cumhuriyet University Faculty of Medicine, Sivas, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Tuğçe Çöllüoğlu",
+        "affiliation": "Department of Cardiology, Karabük University Faculty of Medicine, Karabük, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Çelik",
+        "affiliation": "Department of Cardiology, Mersin University Faculty of Medicine, Mersin, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Naim Ata",
+        "affiliation": "General Directorate of Health Information Systems, Ministry of Health, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Birhan Yılmaz",
+        "affiliation": "Department of Cardiology, Dokuz Eylül University Faculty of Medicine, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Ural",
+        "affiliation": "Department of Cardiology, Koç University Faculty of Medicine, Mersin, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Arzu Kanık",
+        "affiliation": "Department of Biostatistics and Medical Informatics, Mersin University Faculty of Medicine, Mersin, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Okan Ayvalı",
+        "affiliation": "General Directorate of Health Information Systems, Ministry of Health, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Mahir Ülgü",
+        "affiliation": "General Directorate of Health Information Systems, Ministry of Health, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Şuayip Birinci",
+        "affiliation": "Republic of Türkiye Ministry of Health, Ankara, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Heart failure (HF) is a common condition that affects 1-3% of the general population. Its prevalence exhibits notable international and intranational disparities, partly explained by socioeconomic status, religion, ethnic diversity, and geographic factors. A comprehensive understanding of the epidemiological symptoms of HF in different regions of Türkiye has yet to be revealed.Aims: To examine epidemiological data from 2016 to 2022, focusing on crucial patient characteristics and geographical regions, to determine the incidence and prevalence of HF in Türkiye across seven diverse geographical regions.Study Design: A nationwide population-based retrospective cohort study.Methods: The comprehensive National Electronic Database of the Turkish Ministry of Health was used in this study to obtain data that covers the whole Turkish population from January 1, 2016, to December 31, 2022. The International Classification of Diseases-10 (ICD-10) codes were used to identify adults with HF (n = 2,701,099) and associated comorbidities. Türkiye is divided into seven geographically distinct regions. Epidemiological characteristics and survival data of these regions were analyzed separately. All-cause mortality was set as the primary outcome.Results: In , the total estimated prevalence of adult patients with HF is 2.939%, ranging from 2.442% in Southeastern Anatolia to 4.382% in the Black Sea Region. Except for the Eastern Anatolia Region, the three most often reported comorbidities were hypertension, dyslipidemia, and anxiety disorders. The rates of prescribing guideline-directed medical therapy (GDMT) for HF and other medications varied significantly. GDMT prescription rates were lowest in the Eastern Anatolia Region (82.6% for beta-blockers, 48.7% for RASi, 31.8% for mineralocorticoid receptor antagonists, and 9.4% for SGLT2i). The Mediterranean and Aegean regions had the highest median N-terminal brain natriuretic peptide (NT-proBNP) levels of 1,990,0 pg/ml (518.0-6,636,0) and 1,441,0 pg/ml (363.0-5,000,0), respectively. From 2016 to 2022, 915,897 (33.9%) of 2,701,099 patients died. The Eastern Anatolia Region had the lowest all-cause mortality rate of 26.5%, whereas the Black Sea Region had the highest all-cause mortality rate of 35.3%.Conclusion: Our real-world analysis revealed geographic disparities in HF characteristics, such as decreased mortality in socioeconomically challenged regions. Higher stress susceptibility in developed regions may increase the likelihood of adverse outcomes.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Heart failure (HF) is a common condition that affects 1-3% of the general population. Its prevalence exhibits notable international and intranational disparities, partly explained by socioeconomic status, religion, ethnic diversity, and geographic factors. A comprehensive understanding of the epidemiological symptoms of HF in different regions of T&uuml;rkiye has yet to be revealed.<br /><strong>Aims:</strong> To examine epidemiological data from 2016 to 2022, focusing on crucial patient characteristics and geographical regions, to determine the incidence and prevalence of HF in T&uuml;rkiye across seven diverse geographical regions.<br /><strong>Study Design:</strong> A nationwide population-based retrospective cohort study.<br /><strong>Methods:</strong> The comprehensive National Electronic Database of the Turkish Ministry of Health was used in this study to obtain data that covers the whole Turkish population from January 1, 2016, to December 31, 2022. The International Classification of Diseases-10 (ICD-10) codes were used to identify adults with HF (n = 2,701,099) and associated comorbidities. T&uuml;rkiye is divided into seven geographically distinct regions. Epidemiological characteristics and survival data of these regions were analyzed separately. All-cause mortality was set as the primary outcome.<br /><strong>Results:</strong> In , the total estimated prevalence of adult patients with HF is 2.939%, ranging from 2.442% in Southeastern Anatolia to 4.382% in the Black Sea Region. Except for the Eastern Anatolia Region, the three most often reported comorbidities were hypertension, dyslipidemia, and anxiety disorders. The rates of prescribing guideline-directed medical therapy (GDMT) for HF and other medications varied significantly. GDMT prescription rates were lowest in the Eastern Anatolia Region (82.6% for beta-blockers, 48.7% for RASi, 31.8% for mineralocorticoid receptor antagonists, and 9.4% for SGLT2i). The Mediterranean and Aegean regions had the highest median N-terminal brain natriuretic peptide (NT-proBNP) levels of 1,990,0 pg/ml (518.0-6,636,0) and 1,441,0 pg/ml (363.0-5,000,0), respectively. From 2016 to 2022, 915,897 (33.9%) of 2,701,099 patients died. The Eastern Anatolia Region had the lowest all-cause mortality rate of 26.5%, whereas the Black Sea Region had the highest all-cause mortality rate of 35.3%.<br /><strong>Conclusion:</strong> Our real-world analysis revealed geographic disparities in HF characteristics, such as decreased mortality in socioeconomically challenged regions. Higher stress susceptibility in developed regions may increase the likelihood of adverse outcomes.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Heart failure (HF) is a common condition that affects 1-3% of the general population. Its prevalence exhibits notable international and intranational disparities, partly explained by socioeconomic status, religion, ethnic diversity, and geographic factors. A comprehensive understanding of the epidemiological symptoms of HF in different regions of Türkiye has yet to be revealed.Aims: To examine epidemiological data from 2016 to 2022, focusing on crucial patient characteristics and geographical regions, to determine the incidence and prevalence of HF in Türkiye across seven diverse geographical regions.Study Design: A nationwide population-based retrospective cohort study.Methods: The comprehensive National Electronic Database of the Turkish Ministry of Health was used in this study to obtain data that covers the whole Turkish population from January 1, 2016, to December 31, 2022. The International Classification of Diseases-10 (ICD-10) codes were used to identify adults with HF (n = 2,701,099) and associated comorbidities. Türkiye is divided into seven geographically distinct regions. Epidemiological characteristics and survival data of these regions were analyzed separately. All-cause mortality was set as the primary outcome.Results: In , the total estimated prevalence of adult patients with HF is 2.939%, ranging from 2.442% in Southeastern Anatolia to 4.382% in the Black Sea Region. Except for the Eastern Anatolia Region, the three most often reported comorbidities were hypertension, dyslipidemia, and anxiety disorders. The rates of prescribing guideline-directed medical therapy (GDMT) for HF and other medications varied significantly. GDMT prescription rates were lowest in the Eastern Anatolia Region (82.6% for beta-blockers, 48.7% for RASi, 31.8% for mineralocorticoid receptor antagonists, and 9.4% for SGLT2i). The Mediterranean and Aegean regions had the highest median N-terminal brain natriuretic peptide (NT-proBNP) levels of 1,990,0 pg/ml (518.0-6,636,0) and 1,441,0 pg/ml (363.0-5,000,0), respectively. From 2016 to 2022, 915,897 (33.9%) of 2,701,099 patients died. The Eastern Anatolia Region had the lowest all-cause mortality rate of 26.5%, whereas the Black Sea Region had the highest all-cause mortality rate of 35.3%.Conclusion: Our real-world analysis revealed geographic disparities in HF characteristics, such as decreased mortality in socioeconomically challenged regions. Higher stress susceptibility in developed regions may increase the likelihood of adverse outcomes.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-10-5",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "47-53",
+    "views": 6659,
+    "downloads": 3680,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2566",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2566",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2566",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2566",
+    "localPdfUrl": "js/data/pdfs/2566.pdf",
+    "pdfUrl": "js/data/pdfs/2566.pdf"
+  },
+  {
+    "id": 2550,
+    "type": "Original Article",
+    "title": "The Key Role of Liraglutide in Preventing Autophagy of Vascular Smooth Muscle Cells in High Glucose Conditions",
+    "authors": [
+      {
+        "name": "Lili Shi",
+        "affiliation": "Department of Cadre Ward, The First Affiliated Hospital of Harbin Medical University, Harbin, China",
+        "orcid": ""
+      },
+      {
+        "name": "Ming Hao",
+        "affiliation": "Department of Endocrinology, The First Affiliated Hospital of Harbin Medical University, Harbin, China",
+        "orcid": ""
+      },
+      {
+        "name": "Guangjing Qu",
+        "affiliation": "Department of Cadre Ward, The First Affiliated Hospital of Harbin Medical University, Harbin, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yingying Xu",
+        "affiliation": "Department of Cadre Ward, The First Affiliated Hospital of Harbin Medical University, Harbin, China",
+        "orcid": ""
+      },
+      {
+        "name": "Zhe Cui",
+        "affiliation": "Department of Cadre Ward, The First Affiliated Hospital of Harbin Medical University, Harbin, China",
+        "orcid": ""
+      },
+      {
+        "name": "Lin Geng",
+        "affiliation": "Department of Cadre Ward, The First Affiliated Hospital of Harbin Medical University, Harbin, China",
+        "orcid": ""
+      },
+      {
+        "name": "Hongyu Kuang",
+        "affiliation": "Department of Endocrinology, The First Affiliated Hospital of Harbin Medical University, Harbin, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The glucagon-like peptide-1 (GLP-1) receptor agonist liraglutide (LIRA) is a potential hypoglycemic drug with anti-atherosclerosis (AS) effects. Autophagy in the vascular smooth muscle cells (VSMCs) facilitates AS. However, the role of autophagy in the anti-AS mechanism of LIRA remains unclear.Aims: To examine the role and mechanisms of autophagy in LIRA’s improvement of the biological characteristics of VSMCs in high glucose conditions.Study Design: Experimental animal study.Methods: VSMCs isolated from the thoracic aorta of male SD rats were subjected to a high glucose (HG) condition (25 mM) in Dulbecco’s Modified Eagle’s Medium with or without LIRA, the GLP-1 receptor antagonist exendin9-39 (Exe9-39), a phosphatidylinositol 3-kinase (PI3K) inhibitor (LY294002), and autophagy inhibitors (3-methyladenine [3-MA] and bafilomycin A1 [Baf A1]). Acridine orange staining, western blotting, transmission electron microscopy, and mCherry-GFP-LC3 transfection were performed to evaluate the autophagy flux. Additionally, VSMC migration, calcification, proliferation, and apoptosis in HG conditions were observed.Results: Addition of LIRA alone or in combination with autophagy inhibitors significantly downregulated Beclin, increased the LC3-II/LC3-I ratio, and upregulated p62 in VSMCs in HG conditions. Furthermore, autophagolysosome formation was markedly curbed after treatment with LIRA and/or autophagy inhibitors. Inhibition of autophagy by LIRA and/or the autophagy inhibitors attenuated VSMC phenotype conversion, proliferation, migration, and calcification and promoted VSMC apoptosis in HG conditions. This protective role of LIRA was augmented by LY294002, but inhibited by Exe9-39.Conclusion: LIRA plays a significant role in the improvement of the biological features of VSMCs in HG conditions.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The glucagon-like peptide-1 (GLP-1) receptor agonist liraglutide (LIRA) is a potential hypoglycemic drug with anti-atherosclerosis (AS) effects. Autophagy in the vascular smooth muscle cells (VSMCs) facilitates AS. However, the role of autophagy in the anti-AS mechanism of LIRA remains unclear.<br /><strong>Aims:</strong> To examine the role and mechanisms of autophagy in LIRA&rsquo;s improvement of the biological characteristics of VSMCs in high glucose conditions.<br /><strong>Study Design:</strong> Experimental animal study.<br /><strong>Methods:</strong> VSMCs isolated from the thoracic aorta of male SD rats were subjected to a high glucose (HG) condition (25 mM) in Dulbecco&rsquo;s Modified Eagle&rsquo;s Medium with or without LIRA, the GLP-1 receptor antagonist exendin9-39 (Exe9-39), a phosphatidylinositol 3-kinase (PI3K) inhibitor (LY294002), and autophagy inhibitors (3-methyladenine [3-MA] and bafilomycin A1 [Baf A1]). Acridine orange staining, western blotting, transmission electron microscopy, and mCherry-GFP-LC3 transfection were performed to evaluate the autophagy flux. Additionally, VSMC migration, calcification, proliferation, and apoptosis in HG conditions were observed.<br /><strong>Results:</strong> Addition of LIRA alone or in combination with autophagy inhibitors significantly downregulated Beclin, increased the LC3-II/LC3-I ratio, and upregulated p62 in VSMCs in HG conditions. Furthermore, autophagolysosome formation was markedly curbed after treatment with LIRA and/or autophagy inhibitors. Inhibition of autophagy by LIRA and/or the autophagy inhibitors attenuated VSMC phenotype conversion, proliferation, migration, and calcification and promoted VSMC apoptosis in HG conditions. This protective role of LIRA was augmented by LY294002, but inhibited by Exe9-39.<br /><strong>Conclusion:</strong> LIRA plays a significant role in the improvement of the biological features of VSMCs in HG conditions.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The glucagon-like peptide-1 (GLP-1) receptor agonist liraglutide (LIRA) is a potential hypoglycemic drug with anti-atherosclerosis (AS) effects. Autophagy in the vascular smooth muscle cells (VSMCs) facilitates AS. However, the role of autophagy in the anti-AS mechanism of LIRA remains unclear.Aims: To examine the role and mechanisms of autophagy in LIRA’s improvement of the biological characteristics of VSMCs in high glucose conditions.Study Design: Experimental animal study.Methods: VSMCs isolated from the thoracic aorta of male SD rats were subjected to a high glucose (HG) condition (25 mM) in Dulbecco’s Modified Eagle’s Medium with or without LIRA, the GLP-1 receptor antagonist exendin9-39 (Exe9-39), a phosphatidylinositol 3-kinase (PI3K) inhibitor (LY294002), and autophagy inhibitors (3-methyladenine [3-MA] and bafilomycin A1 [Baf A1]). Acridine orange staining, western blotting, transmission electron microscopy, and mCherry-GFP-LC3 transfection were performed to evaluate the autophagy flux. Additionally, VSMC migration, calcification, proliferation, and apoptosis in HG conditions were observed.Results: Addition of LIRA alone or in combination with autophagy inhibitors significantly downregulated Beclin, increased the LC3-II/LC3-I ratio, and upregulated p62 in VSMCs in HG conditions. Furthermore, autophagolysosome formation was markedly curbed after treatment with LIRA and/or autophagy inhibitors. Inhibition of autophagy by LIRA and/or the autophagy inhibitors attenuated VSMC phenotype conversion, proliferation, migration, and calcification and promoted VSMC apoptosis in HG conditions. This protective role of LIRA was augmented by LY294002, but inhibited by Exe9-39.Conclusion: LIRA plays a significant role in the improvement of the biological features of VSMCs in HG conditions.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-8-44",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "54-63",
+    "views": 6697,
+    "downloads": 4114,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2550",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2550",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2550",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2550",
+    "localPdfUrl": "js/data/pdfs/2550.pdf",
+    "pdfUrl": "js/data/pdfs/2550.pdf"
+  },
+  {
+    "id": 2567,
+    "type": "Original Article",
+    "title": "Incidence of Motoric Cognitive Risk Syndrome and Associated Factors in Older Adults in Türkiye",
+    "authors": [
+      {
+        "name": "Senem Demirdel",
+        "affiliation": "Gülhane Faculty of Physiotherapy and Rehabilitation, University of Health Sciences Türkiye, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Sultan Keskin Demircan",
+        "affiliation": "Department of Geriatrics, University of Health Sciences Türkiye, Gülhane Training and Research Hospital, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet İlkin Naharcı[[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Motoric cognitive risk syndrome (MCRS) is characterized by slow gait and subjective cognitive decline. It is a predementia syndrome associated with an increased risk of dementia and mortality.Aims: To investigate the incidence of MCRS and its associated factors in older adults in Türkiye.Study Design: A retrospective study.Methods: This study enrolled community-dwelling older adults admitted to the geriatric outpatient clinic. Participants were assessed for MCRS according to previously described criteria. Logistic regression analysis was conducted to evaluate the association among MCRS and demographic features, clinical status, and geriatric syndromes.Results: Of the 1,352 older adults examined, 577 met the inclusion criteria, and the mean age was 75.2 years. The overall incidence of MCRS was 7.8%. The MCRS group was predominantly older, female, and unmarried, with polypharmacy and higher Deyo-Charlson comorbidity index and Yesavage geriatric depression scale scores than the non-MCRS group. In the multivariate model, significant associations were found between MCRS and age and polypharmacy [odds ratios (OR), 2.22; 95% confidence interval (CI), 1.04-4.71, p = 0.039; OR, 2.02; 95% CI, 1.02-3.99, p = 0.043, respectively].Conclusion: The overall incidence of MCRS was found in 7.8% of older adults. Advanced age and polypharmacy are risk factors associated with MCRS.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Motoric cognitive risk syndrome (MCRS) is characterized by slow gait and subjective cognitive decline. It is a predementia syndrome associated with an increased risk of dementia and mortality.<br /><strong>Aims:</strong> To investigate the incidence of MCRS and its associated factors in older adults in T&uuml;rkiye.<br /><strong>Study Design:</strong> A retrospective study.<br /><strong>Methods:</strong> This study enrolled community-dwelling older adults admitted to the geriatric outpatient clinic. Participants were assessed for MCRS according to previously described criteria. Logistic regression analysis was conducted to evaluate the association among MCRS and demographic features, clinical status, and geriatric syndromes.<br /><strong>Results:</strong> Of the 1,352 older adults examined, 577 met the inclusion criteria, and the mean age was 75.2 years. The overall incidence of MCRS was 7.8%. The MCRS group was predominantly older, female, and unmarried, with polypharmacy and higher Deyo-Charlson comorbidity index and Yesavage geriatric depression scale scores than the non-MCRS group. In the multivariate model, significant associations were found between MCRS and age and polypharmacy [odds ratios (OR), 2.22; 95% confidence interval (CI), 1.04-4.71, <em>p</em> = 0.039; OR, 2.02; 95% CI, 1.02-3.99, <em>p</em> = 0.043, respectively].<br /><strong>Conclusion:</strong> The overall incidence of MCRS was found in 7.8% of older adults. Advanced age and polypharmacy are risk factors associated with MCRS.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Motoric cognitive risk syndrome (MCRS) is characterized by slow gait and subjective cognitive decline. It is a predementia syndrome associated with an increased risk of dementia and mortality.Aims: To investigate the incidence of MCRS and its associated factors in older adults in Türkiye.Study Design: A retrospective study.Methods: This study enrolled community-dwelling older adults admitted to the geriatric outpatient clinic. Participants were assessed for MCRS according to previously described criteria. Logistic regression analysis was conducted to evaluate the association among MCRS and demographic features, clinical status, and geriatric syndromes.Results: Of the 1,352 older adults examined, 577 met the inclusion criteria, and the mean age was 75.2 years. The overall incidence of MCRS was 7.8%. The MCRS group was predominantly older, female, and unmarried, with polypharmacy and higher Deyo-Charlson comorbidity index and Yesavage geriatric depression scale scores than the non-MCRS group. In the multivariate model, significant associations were found between MCRS and age and polypharmacy [odds ratios (OR), 2.22; 95% confidence interval (CI), 1.04-4.71, p = 0.039; OR, 2.02; 95% CI, 1.02-3.99, p = 0.043, respectively].Conclusion: The overall incidence of MCRS was found in 7.8% of older adults. Advanced age and polypharmacy are risk factors associated with MCRS.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-9-41",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "64-69",
+    "views": 4765,
+    "downloads": 3062,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2567",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2567",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2567",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2567",
+    "localPdfUrl": "js/data/pdfs/2567.pdf",
+    "pdfUrl": "js/data/pdfs/2567.pdf"
+  },
+  {
+    "id": 2557,
+    "type": "Clinical Image",
+    "title": "Coincidence of Asymptomatic Aorto-left Atrial Fistula and Aneurysmatic Aberrant Right Subclavian Artery: The Relevance of Multidetector Computed Tomography Angiography",
+    "authors": [
+      {
+        "name": "Mustafa Kemal Demir",
+        "affiliation": "Clinic of Radiology, Bahçeşehir University, Göztepe Medical Park Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Güler",
+        "affiliation": "Clinic of Cardiovascular Surgery, Bahçeşehir University Faculty of Medicine, Göztepe Medical Park Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Özge Ecertaştan",
+        "affiliation": "Intern Medical Student, Bahçeşehir University Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Okan Akıncı",
+        "affiliation": "Clinic of Radiology, University of Health Sciences Türkiye, Haydarpaşa Numune Training and Research Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Vedat Eyiişler",
+        "affiliation": "Clinic of Radiology, Bahçeşehir University, Göztepe Medical Park Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 64-year-old female presented to the emergency room complaining of chest pain. An unenhanced thorax computed tomography scan was normal, except for an incidental aneurysmal aberrant right subclavian artery (ARSA). A physical examination indicated that the patient had a blood pressure of 120/80 mmHg and a heart rate of 77 beats/min. The results of routine la",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-9-69",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "70-71",
+    "views": 4938,
+    "downloads": 1963,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2557",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2557",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2557",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2557",
+    "localPdfUrl": "js/data/pdfs/2557.pdf",
+    "pdfUrl": "js/data/pdfs/2557.pdf"
+  },
+  {
+    "id": 2539,
+    "type": "Clinical Image",
+    "title": "Pulmonary Artery Intimal Sarcoma Treated as Chronic Pulmonary Thromboembolism",
+    "authors": [
+      {
+        "name": "Thiago Vieira Santos",
+        "affiliation": "Department of Pathology, Federal University of Maranhão, Maranhão, Brazil",
+        "orcid": ""
+      },
+      {
+        "name": "Marcos Adriano Garcia Campos",
+        "affiliation": "Department of Internal Medicine, São Paulo State University, São Paulo, Brazil",
+        "orcid": ""
+      },
+      {
+        "name": "Laisson de Moura Feitoza",
+        "affiliation": "Department of Radiology, Hospital de Clínicas da Unicamp, São Paulo, Brazil",
+        "orcid": ""
+      },
+      {
+        "name": "Gyl Eanes Barros Silva",
+        "affiliation": "Department of Pathology, Federal University of Maranhão, Maranhão, Brazil",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 72-year-old woman was hospitalized for suspected chronic pulmonary thromboembolism (CPTE) with complaints of tachycardia and tachypnea; her blood pressure was stable and she had 90% oxygen saturation in room air. She reported a history of dyspnea, which started 3 years ago, along with weight loss of approximately 25 kg. Throughout this period, she was trea",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-7-3",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "72-73",
+    "views": 5493,
+    "downloads": 2756,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2539",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2539",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2539",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2539",
+    "localPdfUrl": "js/data/pdfs/2539.pdf",
+    "pdfUrl": "js/data/pdfs/2539.pdf"
+  },
+  {
+    "id": 2568,
+    "type": "Clinical Image",
+    "title": "Disseminated Cryptococcosis Mimicking Miliary Tuberculosis",
+    "authors": [
+      {
+        "name": "Takuya Suda",
+        "affiliation": "Department of Internal Medicine, Wajima Municipal Hospital, Ishikawa, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Miwako Asakawa",
+        "affiliation": "Department of Neurology, Ishikawa Prefectural Central Hospital, Ishikawa, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Yoshinori Takahashi",
+        "affiliation": "Department of Rheumatology, Kanazawa University Graduate School of Medical Sciences, Ishikawa, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Yusaku Kajihara",
+        "affiliation": "Department of Gastroenterology, Fuyoukai Murakami Hospital, Aomori, Japan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 65-year-old woman presented to the emergency department with a 3-week history of fever, anorexia, and headache. She was consuming abatacept (125 mg/week), tacrolimus (3 mg/day), and prednisolone (2 mg/day) for rheumatoid arthritis. Upon initial presentation, no impaired consciousness was observed. Her body temperature was 38.6 °C, respiratory rate was 16 b",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-11-24",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "74-75",
+    "views": 4419,
+    "downloads": 2594,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2568",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2568",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2568",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2568",
+    "localPdfUrl": "js/data/pdfs/2568.pdf",
+    "pdfUrl": "js/data/pdfs/2568.pdf"
+  },
+  {
+    "id": 2540,
+    "type": "Clinical Image",
+    "title": "Klebsiella-caused Bilateral Emphysematous Pyelonephritis and Emphysematous Cystitis in a Patient with Type 2 Diabetes",
+    "authors": [
+      {
+        "name": "Wei Yang",
+        "affiliation": "Department of Radiology, Jiangsu Province Hospital of Chinese Medicine, Affiliated Hospital of Nanjing University of Chinese Medicine, Nanjing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Chendong He",
+        "affiliation": "Department of Radiology, The First Affiliated Hospital of Bengbu Medical College, Bengbu, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "An 84-year-old female presented with a week-long sudden fever and the peak temperature of 38.5 °C, accompanied by brick-red, sticky phlegm upon coughing. Further, a scanty, amber-colored urine was noted. The patient had been diagnosed with type 2 diabetes for 10 years, for which she received long-acting insulin injections. Arterial blood gas analysis reveale",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-8-77",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "76-77",
+    "views": 5514,
+    "downloads": 2612,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2540",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2540",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2540",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2540",
+    "localPdfUrl": "js/data/pdfs/2540.pdf",
+    "pdfUrl": "js/data/pdfs/2540.pdf"
+  },
+  {
+    "id": 2556,
+    "type": "Scientific Letter",
+    "title": "Should Bioprosthetic Valves be Implanted in Patients with Aortic Stenosis having a Low Surgical Risk? A Perspective with Pros and Cons",
+    "authors": [
+      {
+        "name": "Uğur Özkan",
+        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Muhammet Gürdoğan",
+        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Çağlar Kaya",
+        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Hasan Arı",
+        "affiliation": "Clinic of Cardiology, Bursa İhtisas Training and Research Hospital, Bursa, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Aortic valve stenosis (AS) presents as a disease of advanced age in clinical practice. It often occurs due to degeneration or calcification and is accompanied by frailty and multiple comorbidities in individuals. In the last decade, transcatheter aortic valve implantation (TAVI) has become an important treatment alternative to surgical aortic valve replaceme",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-9-84",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "78-79",
+    "views": 4960,
+    "downloads": 2269,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2556",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2556",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2556",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2556",
+    "localPdfUrl": "js/data/pdfs/2556.pdf",
+    "pdfUrl": "js/data/pdfs/2556.pdf"
+  },
+  {
+    "id": 2569,
+    "type": "Scientific Letter",
+    "title": "Vaginismus: Diagnostic Challenges and Proposed Diagnostic Criteria",
+    "authors": [
+      {
+        "name": "Arkiath Veettil Raveendran",
+        "affiliation": "Clinic of Internal Medicine, Badr Al Samaa Hospital, Muscat, Oman",
+        "orcid": ""
+      },
+      {
+        "name": "Peedikakkal Rajini",
+        "affiliation": "Clinic of Obstetrics and Gynaecology, Badr Al Samaa Hospital, Muscat, Oman",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Female sexual dysfunction (FSD) is a widespread condition that is least addressed in clinical practice worldwide. Vaginismus is a relatively rare FSD with a low prevalence in society but a higher reported clinical prevalence rate of 5-7%.1 The term vaginismus was coined by James Marion Sims in 1862.2 Vaginismus was defined by DSM IV-TR as “a recurrent or per",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2022-9-62",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "80-82",
+    "views": 5807,
+    "downloads": 3488,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2569",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2569",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2569",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2569",
+    "localPdfUrl": "js/data/pdfs/2569.pdf",
+    "pdfUrl": "js/data/pdfs/2569.pdf"
+  },
+  {
+    "id": 2551,
+    "type": "Letter to the Editor",
+    "title": "Comment on",
+    "authors": [
+      {
+        "name": "Levent Pay",
+        "affiliation": "Clinic of Cardiology, Ardahan State Hospital, Ardahan, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor I have read the meta-analysis by Birdal et al.1 with great interest; the study compared the effectiveness of lipid-lowering agents in patients with venous thromboembolism (VTE) and examined the evidence in literature regarding reducing the risk of VTE. They demonstrated that compared with a placebo, rosuvastatin significantly reduced the risk o",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-10-17",
+    "received": "",
+    "accepted": "",
+    "published": "2024-01-01",
+    "volume": 41,
+    "issue": "1",
+    "pages": "83-84",
+    "views": 4988,
+    "downloads": 2368,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1288",
+    "sourceArticleId": "2551",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2551",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2551",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2551",
+    "localPdfUrl": "js/data/pdfs/2551.pdf",
+    "pdfUrl": "js/data/pdfs/2551.pdf"
+  }
+]

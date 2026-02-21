@@ -1,38 +1,72 @@
 [
   {
-    "id": 2811,
+    "id": 2810,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-01",
+    "volume": 43,
+    "issue": "1",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1300",
+    "sourceArticleId": "2810",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2810",
+    "localPdfUrl": "js/data/pdfs/2810.pdf",
+    "pdfUrl": "js/data/pdfs/2810.pdf"
+  },
+  {
+    "id": 2804,
     "type": "Editorial",
     "title": "News from the Balkan Medical Journal: Moving to Monthly Publication",
     "authors": [
       {
         "name": "Servet Altay",
-        "affiliation": "Editor-in-Chief, Balkan Medical Journal; Department of Cardiology, Trakya University School of Medicine, Edirne, Türkiye",
+        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
         "orcid": ""
       }
     ],
     "abstract": "",
-    "keywords": [
-      "editorial",
-      "publication model",
-      "monthly journal"
-    ],
+    "abstractHtml": "",
+    "previewText": "According to the Journal Citation Reports 2024 data released on June 18, 2025, the Balkan Medical Journal achieved an impact factor of 3.8, the highest in its 46-year history.1 Having entered the SCI-Expanded index in 2008, the Balkan Medical Journal was ranked Q4 between 2007 and 2015, Q3 between 2016 and 2020, and became Türkiye’s first Q2 general medicine",
+    "keywords": [],
     "doi": "10.4274/balkanmedj.galenos.2025.2025.111125",
     "received": "",
     "accepted": "",
-    "published": "2026-01-02",
+    "published": "2026-01-01",
     "volume": 43,
-    "issue": 1,
+    "issue": "1",
     "pages": "1-2",
-    "views": 0,
-    "downloads": 0,
+    "views": 653,
+    "downloads": 414,
     "citations": 0,
-    "featured": true,
+    "featured": false,
     "imageCorner": false,
     "hasFullText": true,
-    "previewText": "It is with great pleasure that we announce a significant milestone in the history of the Balkan Medical Journal. Beginning with Volume 43, Issue 1, our journal will transition to monthly publication."
+    "sourceIssueId": "1300",
+    "sourceArticleId": "2804",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2804",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2804",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2804",
+    "localPdfUrl": "js/data/pdfs/2804.pdf",
+    "pdfUrl": "js/data/pdfs/2804.pdf"
   },
   {
-    "id": 2812,
+    "id": 2805,
     "type": "Invited Review",
     "title": "Familial Mediterranean Fever: A Comprehensive Review of Pathogenesis, Genetics, and Epigenetic Regulation",
     "authors": [
@@ -43,7 +77,7 @@
       },
       {
         "name": "Ozgur Can Kilinc",
-        "affiliation": "Division of Rheumatology, İstanbul University-Cerrahpaşa, İstanbul, Türkiye",
+        "affiliation": "Division of Rheumatology, Department of Internal Medicine, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Türkiye",
         "orcid": ""
       },
       {
@@ -53,34 +87,37 @@
       },
       {
         "name": "Kerem Parlar",
-        "affiliation": "Division of Rheumatology, İstanbul University-Cerrahpaşa, İstanbul, Türkiye",
+        "affiliation": "Division of Rheumatology, Department of Internal Medicine, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Türkiye",
         "orcid": ""
       }
     ],
-    "abstract": "Familial Mediterranean Fever (FMF) is the first described and most prevalent monogenic autoinflammatory periodic fever syndrome worldwide. The disease stems from pathogenic variants in the MEFV gene causing dysregulated innate immune responses and persistent hyperinflammation. Emerging research suggests epigenetic mechanisms—including DNA methylation, histone modifications, and microRNA regulation—may influence phenotypic variability, disease severity, and treatment response.",
-    "keywords": [
-      "Familial Mediterranean Fever",
-      "MEFV gene",
-      "pyrin inflammasome",
-      "epigenetics",
-      "autoinflammatory disease"
-    ],
+    "abstract": "Abstract Familial Mediterranean Fever (FMF) is the first described and most prevalent monogenic autoinflammatory periodic fever syndrome worldwide. The disease is caused by pathogenic variants in the MEFV (Mediterranean fever) gene, which lead to dysregulated innate immune responses and a persistent hyperinflammatory state. Despite extensive genetic characterization, the molecular mechanisms linking MEFV mutations to aberrant inflammation remain incompletely understood. Moreover, substantial clinical heterogeneity—manifested as incomplete penetrance, variable expressivity, and modulation by additional autoinflammatory genes—indicates that FMF pathogenesis extends beyond classical Mendelian inheritance. Emerging evidence suggests that epigenetic mechanisms, including DNA methylation, histone modifications, and microRNA regulation, may contribute to phenotypic variability, disease severity, and therapeutic response; however, available data are limited and occasionally conflicting. This review provides a comprehensive and up-to-date overview of the genetic, molecular, and epigenetic factors implicated in FMF, highlights unresolved controversies, and proposes future research priorities aimed at elucidating disease mechanisms and improving clinical management.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Familial Mediterranean Fever (FMF) is the first described and most prevalent monogenic autoinflammatory periodic fever syndrome worldwide. The disease is caused by pathogenic variants in the <em>MEFV</em> (Mediterranean fever) gene, which lead to dysregulated innate immune responses and a persistent hyperinflammatory state. Despite extensive genetic characterization, the molecular mechanisms linking <em>MEFV</em> mutations to aberrant inflammation remain incompletely understood. Moreover, substantial clinical heterogeneity&mdash;manifested as incomplete penetrance, variable expressivity, and modulation by additional autoinflammatory genes&mdash;indicates that FMF pathogenesis extends beyond classical Mendelian inheritance. Emerging evidence suggests that epigenetic mechanisms, including DNA methylation, histone modifications, and microRNA regulation, may contribute to phenotypic variability, disease severity, and therapeutic response; however, available data are limited and occasionally conflicting. This review provides a comprehensive and up-to-date overview of the genetic, molecular, and epigenetic factors implicated in FMF, highlights unresolved controversies, and proposes future research priorities aimed at elucidating disease mechanisms and improving clinical management.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Familial Mediterranean Fever (FMF) is the first described and most prevalent monogenic autoinflammatory periodic fever syndrome worldwide. The disease is caused by pathogenic variants in the MEFV (Mediterranean fever) gene, which lead to dysregulated innate immune responses and a persistent hyperinflammatory state. Despite extensive genetic characterization, the molecular mechanisms linking MEFV mutations to aberrant inflammation remain incompletely understood. Moreover, substantial clinical heterogeneity—manifested as incomplete penetrance, variable expressivity, and modulation by additional autoinflammatory genes—indicates that FMF pathogenesis extends beyond classical Mendelian inheritance. Emerging evidence suggests that epigenetic mechanisms, including DNA methylation, histone modifications, and microRNA regulation, may contribute to phenotypic variability, disease severity, and therapeutic response; however, available data are limited and occasionally conflicting. This review provides a comprehensive and up-to-date overview of the genetic, molecular, and epigenetic factors implicated in FMF, highlights unresolved controversies, and proposes future research priorities aimed at elucidating disease mechanisms and improving clinical management.",
+    "keywords": [],
     "doi": "10.4274/balkanmedj.galenos.2025.2025-11-133",
-    "received": "2025-10-09",
-    "accepted": "2025-12-20",
-    "published": "2026-01-02",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-01",
     "volume": 43,
-    "issue": 1,
+    "issue": "1",
     "pages": "3-14",
-    "views": 0,
-    "downloads": 0,
+    "views": 843,
+    "downloads": 617,
     "citations": 0,
-    "featured": true,
+    "featured": false,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "sourceIssueId": "1300",
+    "sourceArticleId": "2805",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2805",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2805",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2805",
+    "localPdfUrl": "js/data/pdfs/2805.pdf",
+    "pdfUrl": "js/data/pdfs/2805.pdf"
   },
   {
-    "id": 2813,
+    "id": 2779,
     "type": "Original Article",
     "title": "Depressive Symptoms and Risk of Hearing Loss Among Adults Aged 55 Years and Older: A Population-Based Study",
     "authors": [
@@ -95,237 +132,386 @@
         "orcid": ""
       }
     ],
-    "abstract": "Depression and hearing loss commonly occur in the aging population and may arise from shared mechanisms. Adults aged 55 and older from three nationally representative study cohorts were included: the National Health and Nutrition Examination Survey, the Health and Retirement Study, and the English Longitudinal Study of Ageing. Cross-sectional analyses revealed that depression was significantly associated with higher pure-tone average thresholds. In pooled longitudinal analyses of 6,956 participants, individuals with baseline depression exhibited a higher incidence of hearing loss. Increasing (HR 1.48, 95% CI 1.09-2.21) and fluctuating (HR 1.25, 95% CI 1.12-1.39) depressive symptom trajectories were independent predictors of hearing loss, whereas decreasing trajectories indicated no significant association.",
-    "keywords": [
-      "depression",
-      "hearing loss",
-      "longitudinal studies",
-      "aging",
-      "cohort studies"
-    ],
+    "abstract": "Abstract Background: Depression and hearing loss (HL) commonly occur in the aging population and may arise from shared mechanisms. Aims: To investigate the observational associations between depression and HL. Study Design: Observational study. Methods: Adults aged ≥ 55 years from three nationally representative study cohorts were included: the National Health and Nutrition Examination Survey, the Health and Retirement Study, and the English Longitudinal Study of Ageing. Multiple linear regression was applied to examine the association between depressive severity and audiometric thresholds. Cox regression models were applied to evaluate the associations between depressive symptoms and HL. Results: Cross-sectional analyses revealed that depression was significantly associated with higher pure-tone average thresholds. In pooled longitudinal analyses of 6,956 participants, individuals with baseline depression exhibited a higher incidence of HL when compared to their non-depressed counterparts. Longitudinal trajectory analyses identified three significant patterns: increasing [hazard ratio (HR) 1.48, 95% confidence interval (CI) 1.09-2.21] and fluctuating (HR 1.25, 95% CI 1.12-1.39) depressive symptom trajectories as independent predictors of HL, whereas decreasing trajectories indicated no significant association. Conclusion: Depression and specific longitudinal trajectories are associated with elevated risk of HL. To further understand this association, integrated care models that synergistically address depression and HL in older adults are warranted.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Depression and hearing loss (HL) commonly occur in the aging population and may arise from shared mechanisms.</p>\r\n<p><strong>Aims:</strong> To investigate the observational associations between depression and HL.</p>\r\n<p><strong>Study Design:</strong> Observational study.</p>\r\n<p><strong>Methods:</strong> Adults aged &ge; 55 years from three nationally representative study cohorts were included: the National Health and Nutrition Examination Survey, the Health and Retirement Study, and the English Longitudinal Study of Ageing. Multiple linear regression was applied to examine the association between depressive severity and audiometric thresholds. Cox regression models were applied to evaluate the associations between depressive symptoms and HL.</p>\r\n<p><strong>Results:</strong> Cross-sectional analyses revealed that depression was significantly associated with higher pure-tone average thresholds. In pooled longitudinal analyses of 6,956 participants, individuals with baseline depression exhibited a higher incidence of HL when compared to their non-depressed counterparts. Longitudinal trajectory analyses identified three significant patterns: increasing [hazard ratio (HR) 1.48, 95% confidence interval (CI) 1.09-2.21] and fluctuating (HR 1.25, 95% CI 1.12-1.39) depressive symptom trajectories as independent predictors of HL, whereas decreasing trajectories indicated no significant association.</p>\r\n<p><strong>Conclusion:</strong> Depression and specific longitudinal trajectories are associated with elevated risk of HL. To further understand this association, integrated care models that synergistically address depression and HL in older adults are warranted.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Depression and hearing loss (HL) commonly occur in the aging population and may arise from shared mechanisms. Aims: To investigate the observational associations between depression and HL. Study Design: Observational study. Methods: Adults aged ≥ 55 years from three nationally representative study cohorts were included: the National Health and Nutrition Examination Survey, the Health and Retirement Study, and the English Longitudinal Study of Ageing. Multiple linear regression was applied to examine the association between depressive severity and audiometric thresholds. Cox regression models were applied to evaluate the associations between depressive symptoms and HL. Results: Cross-sectional analyses revealed that depression was significantly associated with higher pure-tone average thresholds. In pooled longitudinal analyses of 6,956 participants, individuals with baseline depression exhibited a higher incidence of HL when compared to their non-depressed counterparts. Longitudinal trajectory analyses identified three significant patterns: increasing [hazard ratio (HR) 1.48, 95% confidence interval (CI) 1.09-2.21] and fluctuating (HR 1.25, 95% CI 1.12-1.39) depressive symptom trajectories as independent predictors of HL, whereas decreasing trajectories indicated no significant association. Conclusion: Depression and specific longitudinal trajectories are associated with elevated risk of HL. To further understand this association, integrated care models that synergistically address depression and HL in older adults are warranted.",
+    "keywords": [],
     "doi": "10.4274/balkanmedj.galenos.2025.2025-6-78",
-    "received": "2025-10-15",
-    "accepted": "2025-12-20",
-    "published": "2026-01-02",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-01",
     "volume": 43,
-    "issue": 1,
+    "issue": "1",
     "pages": "15-24",
-    "views": 0,
-    "downloads": 0,
+    "views": 2273,
+    "downloads": 1587,
     "citations": 0,
-    "featured": true,
+    "featured": false,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "sourceIssueId": "1300",
+    "sourceArticleId": "2779",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2779",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2779",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2779",
+    "localPdfUrl": "js/data/pdfs/2779.pdf",
+    "pdfUrl": "js/data/pdfs/2779.pdf"
   },
   {
-    "id": 2814,
+    "id": 2790,
     "type": "Original Article",
     "title": "A Multimodular AI Algorithm for Automated Assessment of Left Ventricular Function in Ischemic Heart Disease: Ejection Fraction, Wall Motion, and Regional Myocardial Segmentation",
     "authors": [
       {
         "name": "Sidem Gül",
-        "affiliation": "Department of Medicine, Recep Tayyip Erdoğan University, Rize, Türkiye",
+        "affiliation": "Department of Medicine, Recep Tayyip Erdoğan University Faculty of Medicine, Rize, Türkiye",
         "orcid": ""
       },
       {
         "name": "Reşit Taşdemir",
-        "affiliation": "Software Engineering, Malatya Turgut Özal University, Malatya, Türkiye",
+        "affiliation": "Department of Software Engineering, Malatya Turgut Özal University Faculty of Engineering and Natural Sciences, Malatya, Türkiye",
         "orcid": ""
       },
       {
         "name": "Beyza Açıkgöz",
-        "affiliation": "Software Engineering, Malatya Turgut Özal University, Malatya, Türkiye",
+        "affiliation": "Department of Software Engineering, Malatya Turgut Özal University Faculty of Engineering and Natural Sciences, Malatya, Türkiye",
         "orcid": ""
       },
       {
         "name": "Hakan Duman",
-        "affiliation": "Department of Cardiology, Recep Tayyip Erdoğan University, Rize, Türkiye",
+        "affiliation": "Department of Cardiology, Recep Tayyip Erdoğan University Faculty of Medicine, Rize, Türkiye",
         "orcid": ""
       },
       {
         "name": "Hamza Hodzic",
-        "affiliation": "Turkish Red Crescent, Kastamonu, Türkiye",
+        "affiliation": "Turkish Red Crescent Blood Donation Center, Kastamonu, Türkiye",
         "orcid": ""
       },
       {
         "name": "Sena Köker",
-        "affiliation": "İstanbul University, İstanbul, Türkiye",
+        "affiliation": "Department of Medicine, İstanbul University Faculty of Medicine, İstanbul, Türkiye",
         "orcid": ""
       },
       {
         "name": "Nazlı Erdemir",
-        "affiliation": "Biomedical Engineering, Kocaeli University, Kocaeli, Türkiye",
+        "affiliation": "Department of Biomedical Engineering, Kocaeli University Faculty of Technology, Kocaeli, Türkiye",
         "orcid": ""
       },
       {
         "name": "Mehmet Kıvrak",
-        "affiliation": "Department of Biostatistics, Recep Tayyip Erdoğan University, Rize, Türkiye",
+        "affiliation": "Department of Biostatistics and Medical Infıormatics, Recep Tayyip Erdoğan University Faculty of Medicine, Rize, Türkiye",
         "orcid": ""
       }
     ],
-    "abstract": "Ischemic heart damage reduces the pumping efficiency of the heart by affecting the left ventricular ejection fraction and causing wall motion abnormality. This study developed an AI algorithm with two modules for automatic LVEF calculation and wall motion abnormality detection from 2D transthoracic echocardiography images. The LVEF module showed strong correlation with cardiologist measurements (r = 0.71, p < 0.001). The wall motion module using ResNet50 achieved 95% accuracy.",
-    "keywords": [
-      "artificial intelligence",
-      "echocardiography",
-      "left ventricular ejection fraction",
-      "wall motion abnormality",
-      "deep learning"
-    ],
+    "abstract": "Abstract Background: Ischemic heart damage reduces the pumping efficiency of the heart by affecting the left ventricular ejection fraction (LVEF) and causing wall motion abnormality (WMA). In daily clinical practice, these parameters are interpreted by physicians using two dimensional transthoracic echocardiography (2D-TTE). Because 2D-TTE reports rely on visual evaluations, they are subject to experience-based limitations and exhibit low reproducibility. Aims: To develop an artificial intelligence algorithm composed of two modules that enable automatic LVEF calculation and WMA detection for analyzing 2D-TTE images. Study Design: Diagnostic accuracy study. Methods: A total of 600 adult patients were retrospectively included. The model combined static frame segmentation with dynamic tracking using a hybrid Simpson’s method applied to apical 2- and 4-chamber views. Model performance was assessed against cardiologist measurements using Bland-Altman analysis. The YOLOv8 and ResNet50 models were employed for the wall motion module. Performance metrics, including accuracy, precision, F1 score, and area under the curve, were evaluated. Results: In the Bland-Altman analysis, the mean bias between the LVEF module and cardiologist measurements was -4, with limits of agreement ranging from -15 to -3. Regression analysis demonstrated a strong correlation between the LVEF module and cardiologist measurements (r = 0.71, p < 0.001). In the wall motion module, the YOLOv8 segmentation model exhibited high accuracy, while ResNet50 achieved superior performance with an accuracy of 95%. The algorithm’s color coding contributed to standardized interpretation among operators, enhancing consistency. Conclusion: This is the first study to integrate automated EF calculation and WMA detection within a single workflow. SafeHeart offers accurate, reproducible, and rapid analysis, with the potential to support routine echocardiography practice. Color-coded region segmentation can facilitate more standardized and reliable results.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Ischemic heart damage reduces the pumping efficiency of the heart by affecting the left ventricular ejection fraction (LVEF) and causing wall motion abnormality (WMA). In daily clinical practice, these parameters are interpreted by physicians using two dimensional transthoracic echocardiography (2D-TTE). Because 2D-TTE reports rely on visual evaluations, they are subject to experience-based limitations and exhibit low reproducibility.</p>\r\n<p><strong>Aims:</strong> To develop an artificial intelligence algorithm composed of two modules that enable automatic LVEF calculation and WMA detection for analyzing 2D-TTE images.</p>\r\n<p><strong>Study Design:</strong> Diagnostic accuracy study.</p>\r\n<p><strong>Methods:</strong> A total of 600 adult patients were retrospectively included. The model combined static frame segmentation with dynamic tracking using a hybrid Simpson&rsquo;s method applied to apical 2- and 4-chamber views. Model performance was assessed against cardiologist measurements using Bland-Altman analysis. The YOLOv8 and ResNet50 models were employed for the wall motion module. Performance metrics, including accuracy, precision, F1 score, and area under the curve, were evaluated.</p>\r\n<p><strong>Results:</strong> In the Bland-Altman analysis, the mean bias between the LVEF module and cardiologist measurements was -4, with limits of agreement ranging from -15 to -3. Regression analysis demonstrated a strong correlation between the LVEF module and cardiologist measurements (r = 0.71, <em>p</em> &lt; 0.001). In the wall motion module, the YOLOv8 segmentation model exhibited high accuracy, while ResNet50 achieved superior performance with an accuracy of 95%. The algorithm&rsquo;s color coding contributed to standardized interpretation among operators, enhancing consistency.</p>\r\n<p><strong>Conclusion:</strong> This is the first study to integrate automated EF calculation and WMA detection within a single workflow. SafeHeart offers accurate, reproducible, and rapid analysis, with the potential to support routine echocardiography practice. Color-coded region segmentation can facilitate more standardized and reliable results.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Ischemic heart damage reduces the pumping efficiency of the heart by affecting the left ventricular ejection fraction (LVEF) and causing wall motion abnormality (WMA). In daily clinical practice, these parameters are interpreted by physicians using two dimensional transthoracic echocardiography (2D-TTE). Because 2D-TTE reports rely on visual evaluations, they are subject to experience-based limitations and exhibit low reproducibility. Aims: To develop an artificial intelligence algorithm composed of two modules that enable automatic LVEF calculation and WMA detection for analyzing 2D-TTE images. Study Design: Diagnostic accuracy study. Methods: A total of 600 adult patients were retrospectively included. The model combined static frame segmentation with dynamic tracking using a hybrid Simpson’s method applied to apical 2- and 4-chamber views. Model performance was assessed against cardiologist measurements using Bland-Altman analysis. The YOLOv8 and ResNet50 models were employed for the wall motion module. Performance metrics, including accuracy, precision, F1 score, and area under the curve, were evaluated. Results: In the Bland-Altman analysis, the mean bias between the LVEF module and cardiologist measurements was -4, with limits of agreement ranging from -15 to -3. Regression analysis demonstrated a strong correlation between the LVEF module and cardiologist measurements (r = 0.71, p < 0.001). In the wall motion module, the YOLOv8 segmentation model exhibited high accuracy, while ResNet50 achieved superior performance with an accuracy of 95%. The algorithm’s color coding contributed to standardized interpretation among operators, enhancing consistency. Conclusion: This is the first study to integrate automated EF calculation and WMA detection within a single workflow. SafeHeart offers accurate, reproducible, and rapid analysis, with the potential to support routine echocardiography practice. Color-coded region segmentation can facilitate more standardized and reliable results.",
+    "keywords": [],
     "doi": "10.4274/balkanmedj.galenos.2025.2025-8-160",
-    "received": "2025-10-18",
-    "accepted": "2025-12-25",
-    "published": "2026-01-02",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-01",
     "volume": 43,
-    "issue": 1,
+    "issue": "1",
     "pages": "25-37",
-    "views": 0,
-    "downloads": 0,
+    "views": 1508,
+    "downloads": 912,
     "citations": 0,
     "featured": false,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "sourceIssueId": "1300",
+    "sourceArticleId": "2790",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2790",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2790",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2790",
+    "localPdfUrl": "js/data/pdfs/2790.pdf",
+    "pdfUrl": "js/data/pdfs/2790.pdf"
   },
   {
-    "id": 2815,
+    "id": 2792,
     "type": "Original Article",
     "title": "Association Between Hemoglobin Glycation Index and Delirium Risk in Sepsis Patients in the Intensive Care Unit",
     "authors": [
       {
         "name": "Miao Shi",
-        "affiliation": "Department of Emergency, Peking University People's Hospital, Beijing, China",
+        "affiliation": "Department of Emergency, Peking University People’s Hospital, Beijing, China",
         "orcid": ""
       },
       {
         "name": "Hu Sun",
-        "affiliation": "Department of Respiratory ICU, First Affiliated Hospital of Xinjiang Medical University, Urumqi, China",
+        "affiliation": "Department of Respiratory Intensive Care Unit, The First Affiliated Hospital of Xinjiang Medical University, Urumqi, China",
         "orcid": ""
       },
       {
         "name": "Yong Ma",
-        "affiliation": "Department of Emergency, Peking University People's Hospital, Beijing, China",
+        "affiliation": "Department of Emergency, Peking University People’s Hospital, Beijing, China",
         "orcid": ""
       },
       {
         "name": "Cheng Chi",
-        "affiliation": "Department of Emergency, Peking University People's Hospital, Beijing, China",
+        "affiliation": "Department of Emergency, Peking University People’s Hospital, Beijing, China",
         "orcid": ""
       }
     ],
-    "abstract": "Sepsis-associated encephalopathy is a prevalent complication in the sepsis population, especially in patients in the intensive care unit. The relationship between the hemoglobin glycation index (HGI) and delirium in sepsis patients is not yet clearly established. This retrospective cohort analysis of 3,744 sepsis patients employed logistic regression, Cox proportional hazard models, and restricted cubic spline analyses. Delirium risk in the lowest HGI group was 67.7% higher than in the middle tertile. A U-shaped relationship emerged between HGI and delirium occurrence, with an inflection point at HGI = -0.34, positioning HGI as a potential prognostic biomarker.",
-    "keywords": [
-      "hemoglobin glycation index",
-      "delirium",
-      "sepsis",
-      "intensive care unit"
-    ],
+    "abstract": "Abstract Background: Sepsis-associated encephalopathy is a prevalent complication in the sepsis population, especially in patients in the intensive care unit (ICU). The relationship between the hemoglobin glycation index (HGI) and delirium in sepsis patients in the ICU is not yet clearly established. Aims: To investigate the relationship between HGI and delirium risk in sepsis patients admitted to the ICU. Study Design: Retrospective cohort study. Methods: The data were extracted from the Medical Information Mart for Intensive Care IV 3.1 for the sepsis population in the ICU. The primary outcome was delirium occurrence in the ICU, whereas the secondary outcome was 30-day all-cause mortality (ACM) after ICU admission. The patients were stratified into tertiles according to HGI levels: T1 (HGI < -0.612), T2 (-0.612 ≤ HGI < 0.008), and T3 (HGI ≥ 0.008). The link of HGI to clinical outcomes in ICU patients was examined through logistic regression (LR), Cox proportional hazard models, and restricted cubic spline (RCS) and threshold effect analyses. The robustness of our findings was rated through subgroup analyses and interaction tests. Results: In total, 3,744 patients were encompassed in the final analysis. The LR model showed that delirium risk in the T1 group was 67.7% higher than that in the T2 group [odds ratio (OR) = 1.677, 95% confidence interval (CI): 1.414, 1.992], while that in the T3 group was 24.8% higher than that in the T2 group (OR = 1.248, 95% CI: 1.048, 1.487). The Cox proportional hazard model indicated a 36.2% higher risk of 30-day ACM in T1 compared to T2 (hazard ratio = 1.362; 95% CI: 1.041-1.782). The RCS curve demonstrated an approximately U-shaped relation of HGI to delirium risk. The threshold effect analysis revealed an inflection point at HGI = -0.34. When HGI ≤ -0.34, each one-unit increase in HGI lowered the delirium risk by 36.2% (95% CI: 0.527-0.768). Conclusion: This study suggested an independent association between HGI and both delirium risk and short-term prognosis in particularly in patients admitted to the ICU. HGI may be used as a prognostic risk stratification biomarker.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Sepsis-associated encephalopathy is a prevalent complication in the sepsis population, especially in patients in the intensive care unit (ICU). The relationship between the hemoglobin glycation index (HGI) and delirium in sepsis patients in the ICU is not yet clearly established.</p>\r\n<p><strong>Aims:</strong> To investigate the relationship between HGI and delirium risk in sepsis patients admitted to the ICU.</p>\r\n<p><strong>Study Design:</strong> Retrospective cohort study.</p>\r\n<p><strong>Methods:</strong> The data were extracted from the Medical Information Mart for Intensive Care IV 3.1 for the sepsis population in the ICU. The primary outcome was delirium occurrence in the ICU, whereas the secondary outcome was 30-day all-cause mortality (ACM) after ICU admission. The patients were stratified into tertiles according to HGI levels: T1 (HGI &lt; -0.612), T2 (-0.612 &le; HGI &lt; 0.008), and T3 (HGI &ge; 0.008). The link of HGI to clinical outcomes in ICU patients was examined through logistic regression (LR), Cox proportional hazard models, and restricted cubic spline (RCS) and threshold effect analyses. The robustness of our findings was rated through subgroup analyses and interaction tests.</p>\r\n<p><strong>Results:</strong> In total, 3,744 patients were encompassed in the final analysis. The LR model showed that delirium risk in the T1 group was 67.7% higher than that in the T2 group [odds ratio (OR) = 1.677, 95% confidence interval (CI): 1.414, 1.992], while that in the T3 group was 24.8% higher than that in the T2 group (OR = 1.248, 95% CI: 1.048, 1.487). The Cox proportional hazard model indicated a 36.2% higher risk of 30-day ACM in T1 compared to T2 (hazard ratio = 1.362; 95% CI: 1.041-1.782). The RCS curve demonstrated an approximately U-shaped relation of HGI to delirium risk. The threshold effect analysis revealed an inflection point at HGI = -0.34. When HGI &le; -0.34, each one-unit increase in HGI lowered the delirium risk by 36.2% (95% CI: 0.527-0.768).</p>\r\n<p><strong>Conclusion:</strong> This study suggested an independent association between HGI and both delirium risk and short-term prognosis in particularly in patients admitted to the ICU. HGI may be used as a prognostic risk stratification biomarker.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Sepsis-associated encephalopathy is a prevalent complication in the sepsis population, especially in patients in the intensive care unit (ICU). The relationship between the hemoglobin glycation index (HGI) and delirium in sepsis patients in the ICU is not yet clearly established. Aims: To investigate the relationship between HGI and delirium risk in sepsis patients admitted to the ICU. Study Design: Retrospective cohort study. Methods: The data were extracted from the Medical Information Mart for Intensive Care IV 3.1 for the sepsis population in the ICU. The primary outcome was delirium occurrence in the ICU, whereas the secondary outcome was 30-day all-cause mortality (ACM) after ICU admission. The patients were stratified into tertiles according to HGI levels: T1 (HGI < -0.612), T2 (-0.612 ≤ HGI < 0.008), and T3 (HGI ≥ 0.008). The link of HGI to clinical outcomes in ICU patients was examined through logistic regression (LR), Cox proportional hazard models, and restricted cubic spline (RCS) and threshold effect analyses. The robustness of our findings was rated through subgroup analyses and interaction tests. Results: In total, 3,744 patients were encompassed in the final analysis. The LR model showed that delirium risk in the T1 group was 67.7% higher than that in the T2 group [odds ratio (OR) = 1.677, 95% confidence interval (CI): 1.414, 1.992], while that in the T3 group was 24.8% higher than that in the T2 group (OR = 1.248, 95% CI: 1.048, 1.487). The Cox proportional hazard model indicated a 36.2% higher risk of 30-day ACM in T1 compared to T2 (hazard ratio = 1.362; 95% CI: 1.041-1.782). The RCS curve demonstrated an approximately U-shaped relation of HGI to delirium risk. The threshold effect analysis revealed an inflection point at HGI = -0.34. When HGI ≤ -0.34, each one-unit increase in HGI lowered the delirium risk by 36.2% (95% CI: 0.527-0.768). Conclusion: This study suggested an independent association between HGI and both delirium risk and short-term prognosis in particularly in patients admitted to the ICU. HGI may be used as a prognostic risk stratification biomarker.",
+    "keywords": [],
     "doi": "10.4274/balkanmedj.galenos.2025.2025-8-211",
-    "received": "2025-10-23",
-    "accepted": "2025-12-19",
-    "published": "2026-01-02",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-01",
     "volume": 43,
-    "issue": 1,
+    "issue": "1",
     "pages": "38-47",
-    "views": 0,
-    "downloads": 0,
-    "citations": 0,
-    "featured": false,
-    "imageCorner": false,
-    "hasFullText": true
-  },
-  {
-    "id": 2816,
-    "type": "Letter to the Editor",
-    "title": "YOLOv11 Model for PCOS Diagnosis: A Significant Contribution with Clinical Insights",
-    "authors": [
-      {
-        "name": "Giovanni Mondillo",
-        "affiliation": "",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "keywords": [
-      "PCOS",
-      "YOLOv11",
-      "artificial intelligence",
-      "diagnosis"
-    ],
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-8-295",
-    "received": "2025-12-08",
-    "accepted": "2025-12-28",
-    "published": "2026-01-02",
-    "volume": 43,
-    "issue": 1,
-    "pages": "52-53",
-    "views": 0,
-    "downloads": 0,
+    "views": 1614,
+    "downloads": 1283,
     "citations": 0,
     "featured": false,
     "imageCorner": false,
     "hasFullText": true,
-    "previewText": "We read with considerable interest the article by Uzun and Elkiran describing the application of the YOLOv11 deep learning model for polycystic ovary syndrome diagnosis."
+    "sourceIssueId": "1300",
+    "sourceArticleId": "2792",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2792",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2792",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2792",
+    "localPdfUrl": "js/data/pdfs/2792.pdf",
+    "pdfUrl": "js/data/pdfs/2792.pdf"
   },
   {
-    "id": 2817,
-    "type": "Letter to the Editor",
-    "title": "In Response to: YOLOv11 Model for PCOS Diagnosis: A Significant Contribution with Clinical Insights",
-    "authors": [
-      {
-        "name": "Bolin Zhao",
-        "affiliation": "",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "keywords": [
-      "PCOS",
-      "YOLOv11",
-      "artificial intelligence"
-    ],
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-8-295.answer",
-    "received": "2025-11-27",
-    "accepted": "2025-12-22",
-    "published": "2026-01-02",
-    "volume": 43,
-    "issue": 1,
-    "pages": "54-55",
-    "views": 0,
-    "downloads": 0,
-    "citations": 0,
-    "featured": false,
-    "imageCorner": false,
-    "hasFullText": true,
-    "previewText": "We appreciate the insightful commentary by Turkmen regarding our study on the YOLOv11 deep learning model for polycystic ovary syndrome diagnosis from ultrasound images."
-  },
-  {
-    "id": 2818,
+    "id": 2758,
     "type": "Clinical Image",
-    "title": "Not All Emboli are Thrombotic: The Silent Cement to the Lungs",
+    "title": "Gorlin-Goltz Syndrome with PTCH1 Gene Mutation in a Family Presenting with Odontogenic Keratocysts",
     "authors": [
       {
-        "name": "Çağlar Kaya",
-        "affiliation": "",
+        "name": "Muharrem Ergün Dudak",
+        "affiliation": "Department of Oral and Maxillofacial Surgery, Ege University Faculty of Dentistry, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mert Kırdemir",
+        "affiliation": "Department of Oral and Maxillofacial Surgery, Ege University Faculty of Dentistry, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Burak Borlu",
+        "affiliation": "Department of Oral and Maxillofacial Surgery, Ege University Faculty of Dentistry, İzmir, Türkiye",
         "orcid": ""
       }
     ],
     "abstract": "",
-    "keywords": [
-      "pulmonary embolism",
-      "cement embolism"
-    ],
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-10-141",
-    "received": "2025-11-30",
-    "accepted": "2025-12-24",
-    "published": "2026-01-02",
+    "abstractHtml": "",
+    "previewText": "A 19-year-old female presented with mandibular swelling and mild spontaneous pain. Panoramic radiography revealed cystic lesions extending from the right mandibular ramus to tooth 36, as well as an additional lesion at tooth 28 (Figure 1a). Cone-beam computed tomography (CBCT) showed multilocular radiolucencies with cortical destruction and internal septa in",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-7-88",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-01",
     "volume": 43,
-    "issue": 1,
-    "pages": "56",
-    "views": 0,
-    "downloads": 0,
+    "issue": "1",
+    "pages": "48-49",
+    "views": 2677,
+    "downloads": 1574,
     "citations": 0,
     "featured": false,
     "imageCorner": true,
     "hasFullText": true,
-    "previewText": "A 78-year-old woman presented to the emergency department with acute onset lower back pain following a mechanical fall. Physical examination revealed tenderness over the thoracolumbar junction."
+    "sourceIssueId": "1300",
+    "sourceArticleId": "2758",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2758",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2758",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2758",
+    "localPdfUrl": "js/data/pdfs/2758.pdf",
+    "pdfUrl": "js/data/pdfs/2758.pdf"
+  },
+  {
+    "id": 2762,
+    "type": "Scientific Letter",
+    "title": "Rare but Critical: Indomethacin-Responsive Headache with Long- Lasting Autonomic Symptoms",
+    "authors": [
+      {
+        "name": "Tural Talibov",
+        "affiliation": "Department of Neurology, İstanbul Health and Technology University Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Meltem İnci",
+        "affiliation": "Department of Neurology, İstanbul University Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Esme Ekizoğlu",
+        "affiliation": "Department of Neurology, İstanbul University Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Betül Baykan[[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Hemicrania with long-lasting autonomic symptoms (LASH), first described in by Rozen1, is an extremely rare headache disorder thought to be part of the trigeminal autonomic cephalalgia (TAC) spectrum. However, it is not included in the current International Classification of Headache Disorders, 3rd Edition (ICHD-3).2 Notably, patients with LASH typically resp",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-7-40",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-01",
+    "volume": 43,
+    "issue": "1",
+    "pages": "50-51",
+    "views": 2284,
+    "downloads": 1989,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1300",
+    "sourceArticleId": "2762",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2762",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2762",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2762",
+    "localPdfUrl": "js/data/pdfs/2762.pdf",
+    "pdfUrl": "js/data/pdfs/2762.pdf"
+  },
+  {
+    "id": 2806,
+    "type": "Letter to the Editor",
+    "title": "YOLOv11 Model for PCOS Diagnosis: A Significant Contribution with Clinical Insights",
+    "authors": [
+      {
+        "name": "Gianluca Mondillo",
+        "affiliation": "Department of Woman, Child and of General and Specialized Surgery, Università degli Studi della Campania “Luigi Vanvitelli”, Naples, Italy",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "I read with great interest the work of Zhao et al.1 on the YOLOv11 model for the automatic recognition of ovarian ultrasound images in polycystic ovary syndrome (PCOS). The authors made a noteworthy contribution by conducting the first large-scale prospective study in women from East Asia, demonstrating excellent performance with an average training accuracy",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-8-295",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-01",
+    "volume": 43,
+    "issue": "1",
+    "pages": "52-53",
+    "views": 536,
+    "downloads": 308,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1300",
+    "sourceArticleId": "2806",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2806",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2806",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2806",
+    "localPdfUrl": "js/data/pdfs/2806.pdf",
+    "pdfUrl": "js/data/pdfs/2806.pdf"
+  },
+  {
+    "id": 2807,
+    "type": "Letter to the Editor",
+    "title": "In Response to: YOLOv11 Model for PCOS Diagnosis: A Significant Contribution with Clinical Insights",
+    "authors": [
+      {
+        "name": "Baihua Zhao",
+        "affiliation": "Department of Ultrasound Diagnosis, The Second Xiangya Hospital, Central South University, Hunan, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "We thank the author for recognizing our research. We appreciate the opportunity to engage in scholarly dialogue regarding the questions and suggestions raised by the author. First, we would like to emphasize that our inclusion and exclusion criteria reflect the thoroughness of sample processing in our study.1 We established five exclusion criteria and strict",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-8-295.answer",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-01",
+    "volume": 43,
+    "issue": "1",
+    "pages": "54-55",
+    "views": 492,
+    "downloads": 270,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1300",
+    "sourceArticleId": "2807",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2807",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2807",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2807",
+    "localPdfUrl": "js/data/pdfs/2807.pdf",
+    "pdfUrl": "js/data/pdfs/2807.pdf"
+  },
+  {
+    "id": 2808,
+    "type": "Letter to the Editor",
+    "title": "Not All Emboli are Thrombotic: The Silent Cement to the Lungs",
+    "authors": [
+      {
+        "name": "Çağlar Kaya",
+        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "I read with great interest the article by Ufuk et al.1 titled, “Postoperative Pulmonary Complications: Clinical and Imaging Insights”. The review provides a detailed overview of postoperative pulmonary complications and emphasizes the key role of imaging. However, one important entity, that is, pulmonary cement embolism (PCE), was not mentioned among the vas",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-10-141",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-01",
+    "volume": 43,
+    "issue": "1",
+    "pages": "56-56",
+    "views": 599,
+    "downloads": 331,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1300",
+    "sourceArticleId": "2808",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2808",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2808",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2808",
+    "localPdfUrl": "js/data/pdfs/2808.pdf",
+    "pdfUrl": "js/data/pdfs/2808.pdf"
+  },
+  {
+    "id": 2809,
+    "type": "Erratum",
+    "title": "Erratum",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274//balkanmedj.galenos.2026.e001",
+    "received": "",
+    "accepted": "",
+    "published": "2026-01-01",
+    "volume": 43,
+    "issue": "1",
+    "pages": "57-57",
+    "views": 555,
+    "downloads": 238,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1300",
+    "sourceArticleId": "2809",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2809",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2809",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2809",
+    "localPdfUrl": "js/data/pdfs/2809.pdf",
+    "pdfUrl": "js/data/pdfs/2809.pdf"
   }
 ]

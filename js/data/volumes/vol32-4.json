@@ -1,0 +1,907 @@
+[
+  {
+    "id": 1814,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "1814",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1814",
+    "localPdfUrl": "js/data/pdfs/1814.pdf",
+    "pdfUrl": "js/data/pdfs/1814.pdf"
+  },
+  {
+    "id": 2411,
+    "type": "Invited Review",
+    "title": "Checklists in Neurosurgery to Decrease Preventable Medical Errors: A Review",
+    "authors": [
+      {
+        "name": "Yavor Enchev",
+        "affiliation": "Department of Neurosurgery, Medical University of Varna, St. Marina University Hospital, Varna, Bulgaria",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Neurosurgery represents a zero tolerance environment for medical errors, especially preventable ones like all types of wrong site surgery, complications due to the incorrect positioning of patients for neurosurgical interventions and complications due to failure of the devices required for the specific procedure. Following the excellent and encouraging results of the safety checklists in intensive care medicine and in other surgical areas, the checklist was naturally introduced in neurosurgery. To date, the reported world experience with neurosurgical checklists is limited to 15 series with fewer than 20,000 cases in various neurosurgical areas. The purpose of this review was to study the reported neurosurgical checklists according to the following parameters: year of publication; country of origin; area of neurosurgery; type of neurosurgical procedureelective or emergency; person in charge of the checklist completion; participants involved in completion; whether they prevented incorrect site surgery; whether they prevented complications due to incorrect positioning of the patients for neurosurgical interventions; whether they prevented complications due to failure of the devices required for the specific procedure; their specific aims; educational preparation and training; the time needed for checklist completion; study duration and phases; number of cases included; barriers to implementation; efforts to implementation; team appreciation; and safety outcomes. Based on this analysis, it could be concluded that neurosurgical checklists represent an efficient, reliable, cost-effective and time-saving tool for increasing patient safety and elevating the neurosurgeons’ self-confidence. Every neurosurgical department must develop its own neurosurgical checklist or adopt and modify an existing one according to its specific features and needs in an attempt to establish or develop its safety culture. The world, continental, regional and national neurosurgical societies could promote safety checklists and their benefits.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>Neurosurgery represents a zero tolerance environment for medical errors, especially preventable ones like all types of wrong site surgery, complications due to the incorrect positioning of patients for neurosurgical interventions and complications due to failure of the devices required for the specific procedure.</p>\r\n<p>Following the excellent and encouraging results of the safety checklists in intensive care medicine and in other surgical areas, the checklist was naturally introduced in neurosurgery. To date, the reported world experience with neurosurgical checklists is limited to 15 series with fewer than 20,000 cases in various neurosurgical areas.</p>\r\n<p>The purpose of this review was to study the reported neurosurgical checklists according to the following parameters: year of publication; country of origin; area of neurosurgery; type of neurosurgical procedureelective or emergency; person in charge of the checklist completion; participants involved in completion; whether they prevented incorrect site surgery; whether they prevented complications due to incorrect positioning of the patients for neurosurgical interventions; whether they prevented complications due to failure of the devices required for the specific procedure; their specific aims; educational preparation and training; the time needed for checklist completion; study duration and phases; number of cases included; barriers to implementation; efforts to implementation; team appreciation; and safety outcomes.</p>\r\n<p>Based on this analysis, it could be concluded that neurosurgical checklists represent an efficient, reliable, cost-effective and time-saving tool for increasing patient safety and elevating the neurosurgeons&rsquo; self-confidence. Every neurosurgical department must develop its own neurosurgical checklist or adopt and modify an existing one according to its specific features and needs in an attempt to establish or develop its safety culture. The world, continental, regional and national neurosurgical societies could promote safety checklists and their benefits.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Neurosurgery represents a zero tolerance environment for medical errors, especially preventable ones like all types of wrong site surgery, complications due to the incorrect positioning of patients for neurosurgical interventions and complications due to failure of the devices required for the specific procedure. Following the excellent and encouraging results of the safety checklists in intensive care medicine and in other surgical areas, the checklist was naturally introduced in neurosurgery. To date, the reported world experience with neurosurgical checklists is limited to 15 series with fewer than 20,000 cases in various neurosurgical areas. The purpose of this review was to study the reported neurosurgical checklists according to the following parameters: year of publication; country of origin; area of neurosurgery; type of neurosurgical procedureelective or emergency; person in charge of the checklist completion; participants involved in completion; whether they prevented incorrect site surgery; whether they prevented complications due to incorrect positioning of the patients for neurosurgical interventions; whether they prevented complications due to failure of the devices required for the specific procedure; their specific aims; educational preparation and training; the time needed for checklist completion; study duration and phases; number of cases included; barriers to implementation; efforts to implementation; team appreciation; and safety outcomes. Based on this analysis, it could be concluded that neurosurgical checklists represent an efficient, reliable, cost-effective and time-saving tool for increasing patient safety and elevating the neurosurgeons’ self-confidence. Every neurosurgical department must develop its own neurosurgical checklist or adopt and modify an existing one according to its specific features and needs in an attempt to establish or develop its safety culture. The world, continental, regional and national neurosurgical societies could promote safety checklists and their benefits.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15481",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "337-346",
+    "views": 5876,
+    "downloads": 2454,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "2411",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2411",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2411",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2411",
+    "localPdfUrl": "js/data/pdfs/2411.pdf",
+    "pdfUrl": "js/data/pdfs/2411.pdf"
+  },
+  {
+    "id": 182,
+    "type": "Original Article",
+    "title": "Seasonal Association of Immune Thrombocytopenia in Adults",
+    "authors": [
+      {
+        "name": "Anıl Tombak",
+        "affiliation": "Department of Hematology, Mersin University Faculty of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Naci Tiftik",
+        "affiliation": "Department of Hematology, Mersin University Faculty of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burcu Boztepe",
+        "affiliation": "Department of Internal Medicine, Mersin University Faculty of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Melda Cömert",
+        "affiliation": "Department of Hematology, Ege University Faculty of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Güray Saydam",
+        "affiliation": "Department of Hematology, Ege University Faculty of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ozan Salim",
+        "affiliation": "Department of Hematology, Akdeniz University Faculty of Medicine, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emel Gürkan",
+        "affiliation": "Department of Hematology, Akdeniz University Faculty of Medicine, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kaniye Aydın",
+        "affiliation": "Department of Internal Medicine, Çukurova University Faculty of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emel Gürkan",
+        "affiliation": "Department of Hematology, Çukurova University Faculty of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Ali Sungur",
+        "affiliation": "Department of Biostatistics, Düzce University Faculty of Medicine, Düzce, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Immune thrombocytopenia (ITP) is an autoimmune disorder. It is characterized by thrombocytopenia due to thrombocyte destruction mediated by autoantibodies; however, cytotoxic and defective regulatory T-lymphocytes play an important role in its pathogenesis. While childhood ITP is usually acute, self-limiting and generally seasonal in nature, ITP in adults is usually chronic; its relation with seasons has not been studied. Aims: We investigated whether months and/or seasons have triggering roles in adults with ITP. Study Design: Descriptive study. Methods: A retrospective case review of adult patients with primary ITP diagnosed at various University Hospitals in cities where Mediterranean climate is seen was performed. Demographic data, date of referral and treatments were recorded. Corticosteroid-resistant, chronic and refractory cases were determined. Relation between sex, corticosteroid-resistant, chronic and refractory ITP with the seasons was also investigated. Results: The study included 165 patients (124 female, mean age=42.8±16.6). Most cases of primary ITP were diagnosed in the spring (p=0.015). Rates of patients diagnosed according to the seasons were as follows: 35.8% in spring, 23% in summer, 20.6% in fall, and 20.6% in winter. With respect to months, the majority of cases occurred in May (18.2%). Time of diagnosis according to the seasons did not differ between genders (p=0.699). First-line treatment was corticosteroids in 97.3%, but 35% of the cases were corticosteroid-resistant. Steroid-resistant patients were mostly diagnosed in the spring (52.1%) (p=0.001). ITP was chronic in 52.7% of the patients and they were also diagnosed mostly in the spring (62.7%) (p=0.149). Conclusion: This is the first study showing seasonal association of ITP in adults and we have observed that ITP in adults is mostly diagnosed in the spring. The reason why more patients are diagnosed in the spring may be due to the existence of atmospheric pollens reaching maximum levels in the spring in places where a Mediterranean climate is seen.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Immune thrombocytopenia (ITP) is an autoimmune disorder. It is characterized by thrombocytopenia due to thrombocyte destruction mediated by autoantibodies; however, cytotoxic and defective regulatory T-lymphocytes play an important role in its pathogenesis. While childhood ITP is usually acute, self-limiting and generally seasonal in nature, ITP in adults is usually chronic; its relation with seasons has not been studied.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: We investigated whether months and/or seasons have triggering roles in adults with ITP.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study&nbsp;Design</strong>: Descriptive study.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: A retrospective case review of adult patients with primary ITP diagnosed at various University Hospitals in cities where Mediterranean climate is seen was performed. Demographic data, date of referral and treatments were recorded. Corticosteroid-resistant, chronic and refractory cases were determined. Relation between sex, corticosteroid-resistant, chronic and refractory ITP with the seasons was also investigated.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: The study included 165 patients (124 female, mean age=42.8&plusmn;16.6). Most cases of primary ITP were diagnosed in the spring (p=0.015). Rates of patients diagnosed according to the seasons were as follows: 35.8% in spring, 23% in summer, 20.6% in fall, and 20.6% in winter. With respect to months, the majority of cases occurred in May (18.2%). Time of diagnosis according to the seasons did not differ between genders (p=0.699). First-line treatment was corticosteroids in 97.3%, but 35% of the cases were corticosteroid-resistant. Steroid-resistant patients were mostly diagnosed in the spring (52.1%) (p=0.001). ITP was chronic in 52.7% of the patients and they were also diagnosed mostly in the spring (62.7%) (p=0.149).</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: This is the first study showing seasonal association of ITP in adults and we have observed that ITP in adults is mostly diagnosed in the spring. The reason why more patients are diagnosed in the spring may be due to the existence of atmospheric pollens reaching maximum levels in the spring in places where a Mediterranean climate is seen.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Immune thrombocytopenia (ITP) is an autoimmune disorder. It is characterized by thrombocytopenia due to thrombocyte destruction mediated by autoantibodies; however, cytotoxic and defective regulatory T-lymphocytes play an important role in its pathogenesis. While childhood ITP is usually acute, self-limiting and generally seasonal in nature, ITP in adults is usually chronic; its relation with seasons has not been studied. Aims: We investigated whether months and/or seasons have triggering roles in adults with ITP. Study Design: Descriptive study. Methods: A retrospective case review of adult patients with primary ITP diagnosed at various University Hospitals in cities where Mediterranean climate is seen was performed. Demographic data, date of referral and treatments were recorded. Corticosteroid-resistant, chronic and refractory cases were determined. Relation between sex, corticosteroid-resistant, chronic and refractory ITP with the seasons was also investigated. Results: The study included 165 patients (124 female, mean age=42.8±16.6). Most cases of primary ITP were diagnosed in the spring (p=0.015). Rates of patients diagnosed according to the seasons were as follows: 35.8% in spring, 23% in summer, 20.6% in fall, and 20.6% in winter. With respect to months, the majority of cases occurred in May (18.2%). Time of diagnosis according to the seasons did not differ between genders (p=0.699). First-line treatment was corticosteroids in 97.3%, but 35% of the cases were corticosteroid-resistant. Steroid-resistant patients were mostly diagnosed in the spring (52.1%) (p=0.001). ITP was chronic in 52.7% of the patients and they were also diagnosed mostly in the spring (62.7%) (p=0.149). Conclusion: This is the first study showing seasonal association of ITP in adults and we have observed that ITP in adults is mostly diagnosed in the spring. The reason why more patients are diagnosed in the spring may be due to the existence of atmospheric pollens reaching maximum levels in the spring in places where a Mediterranean climate is seen.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.151223",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "347-351",
+    "views": 6782,
+    "downloads": 10141,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "182",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=182",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=182",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=182",
+    "localPdfUrl": "js/data/pdfs/182.pdf",
+    "pdfUrl": "js/data/pdfs/182.pdf"
+  },
+  {
+    "id": 183,
+    "type": "Original Article",
+    "title": "In Vivo Anti-Inflammatory Effect of H1 Antihistamines in Allergic Rhinitis: A Randomized Clinical Trial",
+    "authors": [
+      {
+        "name": "Corina I. Bocşan",
+        "affiliation": "Department of Clinical Pharmacology, Iuliu Haţieganu University of Medicine and Pharmacy, Cluj Napoca, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Ştefan C. Vesa",
+        "affiliation": "Department of Clinical Pharmacology, Iuliu Haţieganu University of Medicine and Pharmacy, Cluj Napoca, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Adriana I. Bujor",
+        "affiliation": "Department of Allergology, Iuliu Haţieganu University of Medicine and Pharmacy, Cluj Napoca, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Nicolae Miron",
+        "affiliation": "Department of Allergology, Iuliu Haţieganu University of Medicine and Pharmacy, Cluj Napoca, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Diana Deleanu",
+        "affiliation": "Department of Allergology, Iuliu Haţieganu University of Medicine and Pharmacy, Cluj Napoca, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Anca D. Buzoianu",
+        "affiliation": "Department of Allergology, Iuliu Haţieganu University of Medicine and Pharmacy, Cluj Napoca, Romania",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Allergic rhinitis is characterized by a chronic inflammation of nasal mucosa and represents a risk factor for asthma occurrence. H1 antihistamines reduce the symptoms of rhinitis, but some compounds may have anti-inflammatory properties. Aims: We evaluated the plasma level of some cytokines in patients with persistent allergic rhinitis (PAR) and their evolution after a 4-week treatment with H1 antihistamines, as well as the risk of asthma after 1.5 years. Study Design: Randomized clinical trial. Methods: Eighty-five patients with PAR and 30 healthy volunteers were included in the study. The patients with PAR were randomly divided into 2 groups: 41 patients treated with 5 mg/day desloratadine and 44 patients under 5 mg/day levocetirizine for 4 weeks. The clinical and biological evaluations were performed before and after treatment and included rhinitis symptoms and total symptoms score, type of sensitization, and plasmatic levels of total IgE, IL-1β, IL-6, IL-8 and TNF-α. Results: IL-8 and TNF-α were significantly increased in patients with PAR compared to healthy volunteers (5.85 vs 3.12, p<0.001 and 2.32 vs 1.06, p<0.001, respectively). Both H1 antihistamines reduce all symptoms of allergic rhinitis, including nasal congestion and the plasmatic level of IL-1β, IL-6, IL-8 and TNF-α, after 4 weeks of treatment. The reduction of cytokine levels was not influenced by patients’ age, sex, duration or severity of rhinitis, or type of sensitization. Levocetirizine has a superior effect compared to desloratadine in reducing the rhinitis symptoms and cytokines’ level. Twenty eight (32.9%) of the patients presented asthma symptoms after 1.5 years. The occurrence of asthma was influenced by house dust sensitization (OR-14.6; CI 95% 1.8-116.3; p=0.01), but baseline values of cytokines were not predictive factors for its appearance. Conclusion: Levocetirizine and desloratadine as a prolonged therapy reduce plasmatic levels of some pro-inflammatory cytokines in patients with PAR. Levocetirizine has a better effect on decreasing the symptoms and plasmatic levels of IL-1β and IL-8. (ClinicalTrials.gov Identifier: NCT02507635) Founding: POSDRU and University of Medicine and Pharmacy, Iuliu Haţieganu, Cluj Napoca.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Background</strong>: Allergic rhinitis is characterized by a chronic inflammation of nasal mucosa and represents a risk factor for asthma occurrence. H1 antihistamines reduce the symptoms of rhinitis, but some compounds may have anti-inflammatory properties.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Aims</strong>: We evaluated the plasma level of some cytokines in patients with persistent allergic rhinitis (PAR) and their evolution after a 4-week treatment with H1 antihistamines, as well as the risk of asthma after 1.5 years.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Study Design</strong>: Randomized clinical trial.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Methods</strong>: Eighty-five patients with PAR and 30 healthy volunteers were included in the study. The patients with PAR were randomly divided into 2 groups: 41 patients treated with 5 mg/day desloratadine and 44 patients under 5 mg/day levocetirizine for 4 weeks. The clinical and biological evaluations were performed before and after treatment and included rhinitis symptoms and total symptoms score, type of sensitization, and plasmatic levels of total IgE, IL-1&beta;, IL-6, IL-8 and TNF-&alpha;.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Results</strong>: IL-8 and TNF-&alpha; were significantly increased in patients with PAR compared to healthy volunteers (5.85 vs 3.12, p&lt;0.001 and 2.32 vs 1.06, p&lt;0.001, respectively). Both H1 antihistamines reduce all symptoms of allergic rhinitis, including nasal congestion and the plasmatic level of IL-1&beta;, IL-6, IL-8 and TNF-&alpha;, after 4 weeks of treatment. The reduction of cytokine levels was not influenced by patients&rsquo; age, sex, duration or severity of rhinitis, or type of sensitization. Levocetirizine has a superior effect compared to desloratadine in reducing the rhinitis symptoms and cytokines&rsquo; level. Twenty eight (32.9%) of the patients presented asthma symptoms after 1.5 years. The occurrence of asthma was influenced by house dust sensitization (OR-14.6; CI 95% 1.8-116.3; p=0.01), but baseline values of cytokines were not predictive factors for its appearance.</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Conclusion</strong>: Levocetirizine and desloratadine as a prolonged therapy reduce plasmatic levels of some pro-inflammatory cytokines in patients with PAR. Levocetirizine has a better effect on decreasing the symptoms and plasmatic levels of IL-1&beta; and IL-8. (ClinicalTrials.gov Identifier: NCT02507635)</p>\r\n<p style=\"font-size: 12px;\">\r\n\t<strong>Founding</strong>: POSDRU and University of Medicine and Pharmacy, Iuliu Haţieganu, Cluj Napoca.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Allergic rhinitis is characterized by a chronic inflammation of nasal mucosa and represents a risk factor for asthma occurrence. H1 antihistamines reduce the symptoms of rhinitis, but some compounds may have anti-inflammatory properties. Aims: We evaluated the plasma level of some cytokines in patients with persistent allergic rhinitis (PAR) and their evolution after a 4-week treatment with H1 antihistamines, as well as the risk of asthma after 1.5 years. Study Design: Randomized clinical trial. Methods: Eighty-five patients with PAR and 30 healthy volunteers were included in the study. The patients with PAR were randomly divided into 2 groups: 41 patients treated with 5 mg/day desloratadine and 44 patients under 5 mg/day levocetirizine for 4 weeks. The clinical and biological evaluations were performed before and after treatment and included rhinitis symptoms and total symptoms score, type of sensitization, and plasmatic levels of total IgE, IL-1β, IL-6, IL-8 and TNF-α. Results: IL-8 and TNF-α were significantly increased in patients with PAR compared to healthy volunteers (5.85 vs 3.12, p<0.001 and 2.32 vs 1.06, p<0.001, respectively). Both H1 antihistamines reduce all symptoms of allergic rhinitis, including nasal congestion and the plasmatic level of IL-1β, IL-6, IL-8 and TNF-α, after 4 weeks of treatment. The reduction of cytokine levels was not influenced by patients’ age, sex, duration or severity of rhinitis, or type of sensitization. Levocetirizine has a superior effect compared to desloratadine in reducing the rhinitis symptoms and cytokines’ level. Twenty eight (32.9%) of the patients presented asthma symptoms after 1.5 years. The occurrence of asthma was influenced by house dust sensitization (OR-14.6; CI 95% 1.8-116.3; p=0.01), but baseline values of cytokines were not predictive factors for its appearance. Conclusion: Levocetirizine and desloratadine as a prolonged therapy reduce plasmatic levels of some pro-inflammatory cytokines in patients with PAR. Levocetirizine has a better effect on decreasing the symptoms and plasmatic levels of IL-1β and IL-8. (ClinicalTrials.gov Identifier: NCT02507635) Founding: POSDRU and University of Medicine and Pharmacy, Iuliu Haţieganu, Cluj Napoca.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15884",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "352-358",
+    "views": 7160,
+    "downloads": 9792,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "183",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=183",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=183",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=183",
+    "localPdfUrl": "js/data/pdfs/183.pdf",
+    "pdfUrl": "js/data/pdfs/183.pdf"
+  },
+  {
+    "id": 184,
+    "type": "Original Article",
+    "title": "Severe Preeclampsia versus HELLP Syndrome: Maternal and Perinatal Outcomes at",
+    "authors": [
+      {
+        "name": "Tuğba Kınay",
+        "affiliation": "Department of Obstetrics and Gynecology, Etlik Zübeyde Hanım Women’s Health Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fulya Kayıkçıoğlu",
+        "affiliation": "Department of Obstetrics and Gynecology, Etlik Zübeyde Hanım Women’s Health Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Canan Küçük",
+        "affiliation": "Department of Anesthesiology and Reanimation, Etlik Zübeyde Hanım Women’s Health Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Jale Karakaya",
+        "affiliation": "Department of Biostatistics, Hacettepe University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Preeclampsia and Hemolysis, Elevated Liver enzymes, Low Platelet (HELLP) syndrome are important disorders affecting the health of both the mother and fetus. Prediction of the maternal and perinatal outcomes at early and late gestational age is important for the management of both disorders. Aims: The purpose of the study was to investigate adverse maternal and perinatal outcomes in severe preeclampsia and HELLP syndrome cases according to gestational age. Study Design: Retrospective cross-sectional study. Methods: One hundred and ninety-seven pregnancies with severe preeclampsia and 56 pregnancies with HELLP syndrome were included the study. Clinical characteristics and adverse maternal and perinatal outcomes were noted from medical records. Participants were divided into two groups at <34 and ≥34 weeks’ gestation: the severe preeclampsia group and the HELLP syndrome group. The differences between the outcomes in the groups were investigated. Statistical analysis was performed using the Student t test, Fisher Exact test and Yates’ Chi-square test. Results: Eclampsia was more common in HELLP syndrome cases at <34 weeks’ gestation (p 0.028). However, eclampsia rates were statistically similar between groups at ≥34 weeks’ gestation. The requirement for blood products transfusion was higher in the HELLP group at all gestational weeks. No statistical difference was found in perinatal outcomes between severe preeclampsia and HELLP groups at less than and more than 34 weeks’ gestation. Conclusion: Eclampsia risk increases in HELLP syndrome, especially at gestations less than 34 weeks. Perinatal morbidity at less than 34 weeks’ gestation and mortality were similar in severe preeclampsia and HELLP syndrome cases at the same gestational age.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Preeclampsia and Hemolysis, Elevated Liver enzymes, Low Platelet (HELLP) syndrome are important disorders affecting the health of both the mother and fetus. Prediction of the maternal and perinatal outcomes at early and late gestational age is important for the management of both disorders.</p>\r\n<p>\r\n\t<strong>Aims</strong>: The purpose of the study was to investigate adverse maternal and perinatal outcomes in severe preeclampsia and HELLP syndrome cases according to gestational age.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Retrospective cross-sectional study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: One hundred and ninety-seven pregnancies with severe preeclampsia and 56 pregnancies with HELLP syndrome were included the study. Clinical characteristics and adverse maternal and perinatal outcomes were noted from medical records. Participants were divided into two groups at &lt;34 and &ge;34 weeks&rsquo; gestation: the severe preeclampsia group and the HELLP syndrome group. The differences between the outcomes in the groups were investigated. Statistical analysis was performed using the Student t test, Fisher Exact test and Yates&rsquo; Chi-square test.</p>\r\n<p>\r\n\t<strong>Results</strong>: Eclampsia was more common in HELLP syndrome cases at &lt;34 weeks&rsquo; gestation (p 0.028). However, eclampsia rates were statistically similar between groups at &ge;34 weeks&rsquo; gestation. The requirement for blood products transfusion was higher in the HELLP group at all gestational weeks. No statistical difference was found in perinatal outcomes between severe preeclampsia and HELLP groups at less than and more than 34 weeks&rsquo; gestation.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Eclampsia risk increases in HELLP syndrome, especially at gestations less than 34 weeks. Perinatal morbidity at less than 34 weeks&rsquo; gestation and mortality were similar in severe preeclampsia and HELLP syndrome cases at the same gestational age.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Preeclampsia and Hemolysis, Elevated Liver enzymes, Low Platelet (HELLP) syndrome are important disorders affecting the health of both the mother and fetus. Prediction of the maternal and perinatal outcomes at early and late gestational age is important for the management of both disorders. Aims: The purpose of the study was to investigate adverse maternal and perinatal outcomes in severe preeclampsia and HELLP syndrome cases according to gestational age. Study Design: Retrospective cross-sectional study. Methods: One hundred and ninety-seven pregnancies with severe preeclampsia and 56 pregnancies with HELLP syndrome were included the study. Clinical characteristics and adverse maternal and perinatal outcomes were noted from medical records. Participants were divided into two groups at <34 and ≥34 weeks’ gestation: the severe preeclampsia group and the HELLP syndrome group. The differences between the outcomes in the groups were investigated. Statistical analysis was performed using the Student t test, Fisher Exact test and Yates’ Chi-square test. Results: Eclampsia was more common in HELLP syndrome cases at <34 weeks’ gestation (p 0.028). However, eclampsia rates were statistically similar between groups at ≥34 weeks’ gestation. The requirement for blood products transfusion was higher in the HELLP group at all gestational weeks. No statistical difference was found in perinatal outcomes between severe preeclampsia and HELLP groups at less than and more than 34 weeks’ gestation. Conclusion: Eclampsia risk increases in HELLP syndrome, especially at gestations less than 34 weeks. Perinatal morbidity at less than 34 weeks’ gestation and mortality were similar in severe preeclampsia and HELLP syndrome cases at the same gestational age.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15777",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "359-363",
+    "views": 7530,
+    "downloads": 10539,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "184",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=184",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=184",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=184",
+    "localPdfUrl": "js/data/pdfs/184.pdf",
+    "pdfUrl": "js/data/pdfs/184.pdf"
+  },
+  {
+    "id": 185,
+    "type": "Original Article",
+    "title": "Local Effect of Neurotrophin-3 in Neuronal Inflammation of Allergic Rhinitis: Preliminary Report",
+    "authors": [
+      {
+        "name": "Onur İsmi",
+        "affiliation": "Department of Otorhinolaryngology, Mersin University Faculty of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cengiz Özcan",
+        "affiliation": "Department of Otorhinolaryngology, Mersin University Faculty of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yusuf Vayisoğlu",
+        "affiliation": "Department of Otorhinolaryngology, Mersin University Faculty of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kemal Görür",
+        "affiliation": "Department of Otorhinolaryngology, Mersin University Faculty of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuba Karabacak",
+        "affiliation": "Department of Pathology, Mersin University Faculty of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gürbüz Polat",
+        "affiliation": "Department of Medical Biochemistry, Mersin University Faculty of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Taylan Güçlütürk [[4]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Allergic rhinitis is a common inflammatory nasal mucosal disease characterized by sneezing, watery nasal discharge, nasal obstruction and itching. Although allergen-specific antibodies play a main role in the allergic airway inflammation, neuronal inflammation may also contribute to the symptoms of allergic rhinitis. Neuronal inflammation is primarily caused by the stimulation of sensory nerve endings with histamine. It has been shown that neurotrophins may also have a role in allergic reactions and neuronal inflammation. Nerve growth factor, neurotrophin 3 (NT-3), neurotrophin 4/5 and brain-derived neurotrophic factor are members of the neurotrophin family. Although nerve growth factor and brain-derived neurotrophic factor are well studied in allergic rhinitis patients, the exact role of Neurotrophin-3 is not known. Aims: To investigate the possible roles of neurotrophin-3 in allergic rhinitis patients. Study Design: Case-control study. Methods: Neurotrophin-3 levels were studied in the inferior turbinate and serum samples of 20 allergic rhinitis and 13 control patients. Neurotrophin-3 staining of nasal tissues was evaluated by immunohistochemistry and ELISA was used for the determination of serum Neurotrophin-3 levels. Results: Neurotrophin-3 staining scores were statistically higher in the study group than in the control patients (p=0.001). Regarding serum Neurotrophin-3 levels, no statistically significant difference could be determined between allergic rhinitis and control patients (p=0.156). When comparing the serum NT-3 levels with tissue staining scores, there were no statistically significant differences in the allergic rhinitis and control groups (p=0.254 for allergic rhinitis and p=0.624 for control groups). Conclusion: We suggest that Neurotrophin-3 might affect the nasal mucosa locally without being released into the systemic circulation in allergic rhinitis patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Allergic rhinitis is a common inflammatory nasal mucosal disease characterized by sneezing, watery nasal discharge, nasal obstruction and itching. Although allergen-specific antibodies play a main role in the allergic airway inflammation, neuronal inflammation may also contribute to the symptoms of allergic rhinitis. Neuronal inflammation is primarily caused by the stimulation of sensory nerve endings with histamine. It has been shown that neurotrophins may also have a role in allergic reactions and neuronal inflammation. Nerve growth factor, neurotrophin 3 (NT-3), neurotrophin 4/5 and brain-derived neurotrophic factor are members of the neurotrophin family. Although nerve growth factor and brain-derived neurotrophic factor are well studied in allergic rhinitis patients, the exact role of Neurotrophin-3 is not known.</p>\r\n<p>\r\n\t<strong>Aims</strong>: To investigate the possible roles of neurotrophin-3 in allergic rhinitis patients.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Case-control study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Neurotrophin-3 levels were studied in the inferior turbinate and serum samples of 20 allergic rhinitis and 13 control patients. Neurotrophin-3 staining of nasal tissues was evaluated by immunohistochemistry and ELISA was used for the determination of serum Neurotrophin-3 levels.</p>\r\n<p>\r\n\t<strong>Results</strong>: Neurotrophin-3 staining scores were statistically higher in the study group than in the control patients (p=0.001). Regarding serum Neurotrophin-3 levels, no statistically significant difference could be determined between allergic rhinitis and control patients (p=0.156). When comparing the serum NT-3 levels with tissue staining scores, there were no statistically significant differences in the allergic rhinitis and control groups (p=0.254 for allergic rhinitis and p=0.624 for control groups).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: We suggest that Neurotrophin-3 might affect the nasal mucosa locally without being released into the systemic circulation in allergic rhinitis patients.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Allergic rhinitis is a common inflammatory nasal mucosal disease characterized by sneezing, watery nasal discharge, nasal obstruction and itching. Although allergen-specific antibodies play a main role in the allergic airway inflammation, neuronal inflammation may also contribute to the symptoms of allergic rhinitis. Neuronal inflammation is primarily caused by the stimulation of sensory nerve endings with histamine. It has been shown that neurotrophins may also have a role in allergic reactions and neuronal inflammation. Nerve growth factor, neurotrophin 3 (NT-3), neurotrophin 4/5 and brain-derived neurotrophic factor are members of the neurotrophin family. Although nerve growth factor and brain-derived neurotrophic factor are well studied in allergic rhinitis patients, the exact role of Neurotrophin-3 is not known. Aims: To investigate the possible roles of neurotrophin-3 in allergic rhinitis patients. Study Design: Case-control study. Methods: Neurotrophin-3 levels were studied in the inferior turbinate and serum samples of 20 allergic rhinitis and 13 control patients. Neurotrophin-3 staining of nasal tissues was evaluated by immunohistochemistry and ELISA was used for the determination of serum Neurotrophin-3 levels. Results: Neurotrophin-3 staining scores were statistically higher in the study group than in the control patients (p=0.001). Regarding serum Neurotrophin-3 levels, no statistically significant difference could be determined between allergic rhinitis and control patients (p=0.156). When comparing the serum NT-3 levels with tissue staining scores, there were no statistically significant differences in the allergic rhinitis and control groups (p=0.254 for allergic rhinitis and p=0.624 for control groups). Conclusion: We suggest that Neurotrophin-3 might affect the nasal mucosa locally without being released into the systemic circulation in allergic rhinitis patients.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.151028",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "364-370",
+    "views": 7121,
+    "downloads": 9819,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "185",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=185",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=185",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=185",
+    "localPdfUrl": "js/data/pdfs/185.pdf",
+    "pdfUrl": "js/data/pdfs/185.pdf"
+  },
+  {
+    "id": 186,
+    "type": "Original Article",
+    "title": "Usefulness of Neutrophil to Lymphocyte Ratio in Prediction of Coronary Artery Lesions in Patients with Kawasaki Disease",
+    "authors": [
+      {
+        "name": "Fikri Demir",
+        "affiliation": "Department of Pediatric Cardiology, Dicle University Faculty of Medicine, Diyarbakır, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cem Karadeniz",
+        "affiliation": "Department of Pediatric Cardiology, Behçet Uz Children’s Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Rahmi Özdemir",
+        "affiliation": "Department of Pediatric Cardiology, Behçet Uz Children’s Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yılmaz Yozgat",
+        "affiliation": "Department of Pediatric Cardiology, Behçet Uz Children’s Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kübra Çelegen",
+        "affiliation": "Department of Pediatrics, Behçet Uz Children’s Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Utku Karaaslan",
+        "affiliation": "Department of Pediatrics, Behçet Uz Children’s Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Demirol",
+        "affiliation": "Department of Pediatric Cardiology, Behçet Uz Children’s Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Timur Meşe",
+        "affiliation": "Department of Pediatric Cardiology, Behçet Uz Children’s Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurettin Ünal",
+        "affiliation": "Department of Pediatric Cardiology, Behçet Uz Children’s Hospital, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Kawasaki disease is an inflammatory condition. Neutrophil to lymphocyte ratio is a marker reflecting inflammation. Aims: The aim of the study is to evaluate usefulness of neutrophil to lymphocyte ratio in diagnosis of Kawasaki disease and in prediction of coronary artery lesions. Study Design: Retrospective cross-sectional study. Methods: Seventy-five children with Kawasaki disease and 66 controls were retrospectively enrolled. Their leukocyte, neutrophil, and lymphocyte counts were recorded. Abnormally distributed data were shown as median (interquartile range). Cases having coronary artery diameter two standard deviation above mean were diagnosed to have coronary artery lesions. Results: Median age of Kawasaki disease patients was 34 months. Twentyfive of those (33.33%) had incomplete Kawasaki disease and twenty-six (34.66%) had coronary artery lesions. Leukocyte [12.61 (6.09)x103/µL vs. 8.48 (5.58)x103/µL], neutrophil [6.73 (4.10)x103/µL vs. 4.62 (5.47)x103/µL], and lymphocyte [4.04 (2.91)x103/µL vs. 3.02 (2.57)x103/µL] counts were significantly higher in Kawasaki disease patients compared to controls (all p values <0.01). However, there was not significant difference between patients and controls regarding neutrophil to lymphocyte ratio [1.72 (1.22) vs. 1.71 (1.88)]. Findings of Kawasaki disease and incomplete Kawasaki disease cases did not differ, while comparison of patients with and without coronary artery lesions revealed significantly higher neutrophil to lymphocyte ratio values in former group [2.02 (1.63) vs. 1.50 (1.28), p=0.01]. The cut-off neutrophil to lymphocyte ratio value for prediction of coronary artery lesions was determined as 1.32. Conclusion: Neutrophil to lymphocyte ratio values in Kawasaki patients with coronary lesions were significantly higher than the ones without and values greater than 1.32 were useful in prediction of coronary lesions.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Kawasaki disease is an inflammatory condition. Neutrophil to lymphocyte ratio is a marker reflecting inflammation.</p>\r\n<p>\r\n\t<strong>Aims</strong>: The aim of the study is to evaluate usefulness of neutrophil to lymphocyte ratio in diagnosis of Kawasaki disease and in prediction of coronary artery lesions.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Retrospective cross-sectional study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Seventy-five children with Kawasaki disease and 66 controls were retrospectively enrolled. Their leukocyte, neutrophil, and lymphocyte counts were recorded. Abnormally distributed data were shown as median (interquartile range). Cases having coronary artery diameter two standard deviation above mean were diagnosed to have coronary artery lesions.</p>\r\n<p>\r\n\t<strong>Results</strong>: Median age of Kawasaki disease patients was 34 months. Twentyfive of those (33.33%) had incomplete Kawasaki disease and twenty-six (34.66%) had coronary artery lesions. Leukocyte [12.61 (6.09)x103/&micro;L vs. 8.48 (5.58)x103/&micro;L], neutrophil [6.73 (4.10)x103/&micro;L vs. 4.62 (5.47)x103/&micro;L], and lymphocyte [4.04 (2.91)x103/&micro;L vs. 3.02 (2.57)x103/&micro;L] counts were significantly higher in Kawasaki disease patients compared to controls (all p values &lt;0.01). However, there was not significant difference between patients and controls regarding neutrophil to lymphocyte ratio [1.72 (1.22) vs. 1.71 (1.88)]. Findings of Kawasaki disease and incomplete Kawasaki disease cases did not differ, while comparison of patients with and without coronary artery lesions revealed significantly higher neutrophil to lymphocyte ratio values in former group [2.02 (1.63) vs. 1.50 (1.28), p=0.01]. The cut-off neutrophil to lymphocyte ratio value for prediction of coronary artery lesions was determined as 1.32.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Neutrophil to lymphocyte ratio values in Kawasaki patients with coronary lesions were significantly higher than the ones without and values greater than 1.32 were useful in prediction of coronary lesions.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Kawasaki disease is an inflammatory condition. Neutrophil to lymphocyte ratio is a marker reflecting inflammation. Aims: The aim of the study is to evaluate usefulness of neutrophil to lymphocyte ratio in diagnosis of Kawasaki disease and in prediction of coronary artery lesions. Study Design: Retrospective cross-sectional study. Methods: Seventy-five children with Kawasaki disease and 66 controls were retrospectively enrolled. Their leukocyte, neutrophil, and lymphocyte counts were recorded. Abnormally distributed data were shown as median (interquartile range). Cases having coronary artery diameter two standard deviation above mean were diagnosed to have coronary artery lesions. Results: Median age of Kawasaki disease patients was 34 months. Twentyfive of those (33.33%) had incomplete Kawasaki disease and twenty-six (34.66%) had coronary artery lesions. Leukocyte [12.61 (6.09)x103/µL vs. 8.48 (5.58)x103/µL], neutrophil [6.73 (4.10)x103/µL vs. 4.62 (5.47)x103/µL], and lymphocyte [4.04 (2.91)x103/µL vs. 3.02 (2.57)x103/µL] counts were significantly higher in Kawasaki disease patients compared to controls (all p values <0.01). However, there was not significant difference between patients and controls regarding neutrophil to lymphocyte ratio [1.72 (1.22) vs. 1.71 (1.88)]. Findings of Kawasaki disease and incomplete Kawasaki disease cases did not differ, while comparison of patients with and without coronary artery lesions revealed significantly higher neutrophil to lymphocyte ratio values in former group [2.02 (1.63) vs. 1.50 (1.28), p=0.01]. The cut-off neutrophil to lymphocyte ratio value for prediction of coronary artery lesions was determined as 1.32. Conclusion: Neutrophil to lymphocyte ratio values in Kawasaki patients with coronary lesions were significantly higher than the ones without and values greater than 1.32 were useful in prediction of coronary lesions.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.151108",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "371-376",
+    "views": 6992,
+    "downloads": 4032,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "186",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=186",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=186",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=186",
+    "localPdfUrl": "js/data/pdfs/186.pdf",
+    "pdfUrl": "js/data/pdfs/186.pdf"
+  },
+  {
+    "id": 187,
+    "type": "Original Article",
+    "title": "The Relationship between Proliferative Scars and Endothelial Function in Surgically Revascularized Patients",
+    "authors": [
+      {
+        "name": "Murat Ziyrek",
+        "affiliation": "Department of Cardiology, Karadeniz Hospital, Trabzon, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sinan Şahin",
+        "affiliation": "Department of Cardiology, Kanuni Training and Research Hospital, Trabzon, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zeydin Acar",
+        "affiliation": "Department of Cardiology, Karadeniz Hospital, Trabzon, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Onur Şen",
+        "affiliation": "Department of Cardiovascular Surgery, Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Proliferative scars are benign fibrotic proliferations which demonstrate abnormal wound healing in response to skin injuries. As postulated in the “response to injury hypothesis”, atherosclerosis is also triggered by an endothelial injury. Keloid and atherosclerotic processes have many pathophysiological and cytological features in common. Aims: In this study, we investigated the relationship between proliferative scars and endothelial function in surgically revascularized patients. We aimed to test the hypothesis that atherosclerosis is a wound healing abnormality. Study Design: Cross-sectional study. Methods: Consecutive patients who were admitted to the cardiology outpatient clinic with a history of coronary artery bypass grafting operation were evaluated. Thirty-three patients with proliferative scars at the median sternotomy site formed the keloid group, and 36 age- and sex-matched patients with no proliferative scar at the median sternotomy site formed the control group. Endothelial function was evaluated by flow-mediated vasodilatation of the brachial artery via ultrasonograhic examination. Results: There is no signicant difference according to the demographic data, biochemical parameters, clinical parameters and number of grafts between keloid and control groups. Endothelial-dependent vasodilatory response was lower in the keloid group than the control group (9.30±3.5 and 18.68±8.2, respectively; p=0.001). Conclusion: This study showed that endothalial dysfunction, which is strongly correlated with atherosclerosis, was more prominent in patients with proliferative scars. As proliferative scars and atherosclerosis have many features in common, we might conclude that atherosclerosis is a wound healing abnormality.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Proliferative scars are benign fibrotic proliferations which demonstrate abnormal wound healing in response to skin injuries. As postulated in the &ldquo;response to injury hypothesis&rdquo;, atherosclerosis is also triggered by an endothelial injury. Keloid and atherosclerotic processes have many pathophysiological and cytological features in common.</p>\r\n<p>\r\n\t<strong>Aims</strong>: In this study, we investigated the relationship between proliferative scars and endothelial function in surgically revascularized patients. We aimed to test the hypothesis that atherosclerosis is a wound healing abnormality.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Cross-sectional study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Consecutive patients who were admitted to the cardiology outpatient clinic with a history of coronary artery bypass grafting operation were evaluated. Thirty-three patients with proliferative scars at the median sternotomy site formed the keloid group, and 36 age- and sex-matched patients with no proliferative scar at the median sternotomy site formed the control group. Endothelial function was evaluated by flow-mediated vasodilatation of the brachial artery via ultrasonograhic examination.</p>\r\n<p>\r\n\t<strong>Results</strong>: There is no signicant difference according to the demographic data, biochemical parameters, clinical parameters and number of grafts between keloid and control groups. Endothelial-dependent vasodilatory response was lower in the keloid group than the control group (9.30&plusmn;3.5 and 18.68&plusmn;8.2, respectively; p=0.001).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: This study showed that endothalial dysfunction, which is strongly correlated with atherosclerosis, was more prominent in patients with proliferative scars. As proliferative scars and atherosclerosis have many features in common, we might conclude that atherosclerosis is a wound healing abnormality.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Proliferative scars are benign fibrotic proliferations which demonstrate abnormal wound healing in response to skin injuries. As postulated in the “response to injury hypothesis”, atherosclerosis is also triggered by an endothelial injury. Keloid and atherosclerotic processes have many pathophysiological and cytological features in common. Aims: In this study, we investigated the relationship between proliferative scars and endothelial function in surgically revascularized patients. We aimed to test the hypothesis that atherosclerosis is a wound healing abnormality. Study Design: Cross-sectional study. Methods: Consecutive patients who were admitted to the cardiology outpatient clinic with a history of coronary artery bypass grafting operation were evaluated. Thirty-three patients with proliferative scars at the median sternotomy site formed the keloid group, and 36 age- and sex-matched patients with no proliferative scar at the median sternotomy site formed the control group. Endothelial function was evaluated by flow-mediated vasodilatation of the brachial artery via ultrasonograhic examination. Results: There is no signicant difference according to the demographic data, biochemical parameters, clinical parameters and number of grafts between keloid and control groups. Endothelial-dependent vasodilatory response was lower in the keloid group than the control group (9.30±3.5 and 18.68±8.2, respectively; p=0.001). Conclusion: This study showed that endothalial dysfunction, which is strongly correlated with atherosclerosis, was more prominent in patients with proliferative scars. As proliferative scars and atherosclerosis have many features in common, we might conclude that atherosclerosis is a wound healing abnormality.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15707",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "377-381",
+    "views": 7195,
+    "downloads": 3119,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "187",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=187",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=187",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=187",
+    "localPdfUrl": "js/data/pdfs/187.pdf",
+    "pdfUrl": "js/data/pdfs/187.pdf"
+  },
+  {
+    "id": 188,
+    "type": "Original Article",
+    "title": "Neutrophil-to-Lymphocyte Ratio as a Marker in Patients with Non-arteritic Anterior Ischemic Optic Neuropathy",
+    "authors": [
+      {
+        "name": "Onur Polat",
+        "affiliation": "Department of Ophthalmology, Afyon Kocatepe University Faculty of Medicine, Afyonkarahisar, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Güliz Fatma Yavaş",
+        "affiliation": "Department of Ophthalmology, Afyon Kocatepe University Faculty of Medicine, Afyonkarahisar, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sibel İnan",
+        "affiliation": "Department of Ophthalmology, Afyon Kocatepe University Faculty of Medicine, Afyonkarahisar, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ümit Übeyt İnan [[1]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Non-arteritic anterior ischemic optic neuropathy (NAION) is the most common acute optic neuropathy in patients over the age of 50 and is the second most common cause of permanent optic nerve-related visual loss in adults after glaucoma. Although the precise cause of NAION remains elusive, the etiology of NAION is believed to be multifactorial. Aims: To evaluate the utility of neutrophil-to-lymphocyte ratio (NLR) as a simple and readily available prognostic factor for clinical disease activity in patients with NAION. Study Design: Case-control study. Methods: Forty-five patients with the diagnosis of NAION and 50 age- and sex-matched controls with/without any systemic or ocular diseases except cataract were retrospectively enrolled in the study. Demographic characteristics and laboratory findings including complete blood count of all patients and control subjects were obtained from the electronic medical record. The neutrophil and lymphocyte counts were recorded and the NLR was calculated. Results: White blood cell, neutrophil, NLR and platelet values of the NAION patients were significantly higher than those of the controls (p<0.001, p<0.001, p=0.004, p=0.037, respectively). Initial NLR values were negatively correlated with initial and the third month best corrected visual acuity levels in the study group. The optimum NLR cut-off point for NAION was 1.94. Conclusion: NLR could be considered as a new inflammatory marker for assessment of the severity of inflammation in NAION patients with its quick, cheap, easily measurable property with routine complete blood count analysis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Non-arteritic anterior ischemic optic neuropathy (NAION) is the most common acute optic neuropathy in patients over the age of 50 and is the second most common cause of permanent optic nerve-related visual loss in adults after glaucoma. Although the precise cause of NAION remains elusive, the etiology of NAION is believed to be multifactorial.</p>\r\n<p>\r\n\t<strong>Aims</strong>: To evaluate the utility of neutrophil-to-lymphocyte ratio (NLR) as a simple and readily available prognostic factor for clinical disease activity in patients with NAION.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Case-control study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Forty-five patients with the diagnosis of NAION and 50 age- and sex-matched controls with/without any systemic or ocular diseases except cataract were retrospectively enrolled in the study. Demographic characteristics and laboratory findings including complete blood count of all patients and control subjects were obtained from the electronic medical record. The neutrophil and lymphocyte counts were recorded and the NLR was calculated.</p>\r\n<p>\r\n\t<strong>Results</strong>: White blood cell, neutrophil, NLR and platelet values of the NAION patients were significantly higher than those of the controls (p&lt;0.001, p&lt;0.001, p=0.004, p=0.037, respectively). Initial NLR values were negatively correlated with initial and the third month best corrected visual acuity levels in the study group. The optimum NLR cut-off point for NAION was 1.94.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: NLR could be considered as a new inflammatory marker for assessment of the severity of inflammation in NAION patients with its quick, cheap, easily measurable property with routine complete blood count analysis.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Non-arteritic anterior ischemic optic neuropathy (NAION) is the most common acute optic neuropathy in patients over the age of 50 and is the second most common cause of permanent optic nerve-related visual loss in adults after glaucoma. Although the precise cause of NAION remains elusive, the etiology of NAION is believed to be multifactorial. Aims: To evaluate the utility of neutrophil-to-lymphocyte ratio (NLR) as a simple and readily available prognostic factor for clinical disease activity in patients with NAION. Study Design: Case-control study. Methods: Forty-five patients with the diagnosis of NAION and 50 age- and sex-matched controls with/without any systemic or ocular diseases except cataract were retrospectively enrolled in the study. Demographic characteristics and laboratory findings including complete blood count of all patients and control subjects were obtained from the electronic medical record. The neutrophil and lymphocyte counts were recorded and the NLR was calculated. Results: White blood cell, neutrophil, NLR and platelet values of the NAION patients were significantly higher than those of the controls (p<0.001, p<0.001, p=0.004, p=0.037, respectively). Initial NLR values were negatively correlated with initial and the third month best corrected visual acuity levels in the study group. The optimum NLR cut-off point for NAION was 1.94. Conclusion: NLR could be considered as a new inflammatory marker for assessment of the severity of inflammation in NAION patients with its quick, cheap, easily measurable property with routine complete blood count analysis.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15689",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "382-387",
+    "views": 7120,
+    "downloads": 9813,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "188",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=188",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=188",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=188",
+    "localPdfUrl": "js/data/pdfs/188.pdf",
+    "pdfUrl": "js/data/pdfs/188.pdf"
+  },
+  {
+    "id": 189,
+    "type": "Original Article",
+    "title": "Histopathological Features of Gastrointestinal Stromal Tumors and the Contribution of DOG1 Expression to the Diagnosis",
+    "authors": [
+      {
+        "name": "Beril Güler",
+        "affiliation": "Department of Pathology, Bezmialem Vakıf University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Filiz Özyılmaz",
+        "affiliation": "Department of Pathology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nuray Can",
+        "affiliation": "Department of Pathology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ebru Taştekin",
+        "affiliation": "Department of Pathology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burcu Tokuç",
+        "affiliation": "Department of Public Health, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Gastrointestinal stromal tumors (GIST) have KIT or platelet-derived growth factor receptor α (PDGFRα) mutations affecting receptor tyrosine kinase activity and do not benefit from classic treatment regimens. Aims: The aim of this study was to review the algorithm that may be followed for the diagnosis and differential diagnosis in GISTs by investigating the histomorphological parameters and expression characteristics of classical immunohistochemical antibodies used in routine tests in addition to DOG1 expression. Study Design: Diagnostic accuracy study. Methods: We reevaluated the histological and immunohistochemical parameters of 37 GISTs. The standard immunohistochemical diagnosis and differential diagnosis panel antibodies (CD117, PDGFRα, CD34, vimentin, desmin, SMA, S-100, and Ki67) were studied on the tumor sections. We also used the popular marker DOG1 antibody with accepted sensitivity for GISTs in recent years and the PDGFRα immune marker for which the benefit in routine practice is discussed. Results: Classification according to progressive disease risk groups of the 37 cases revealed that 54% were in the high risk, 19% in the moderate risk, 16% in the low risk, 8% in the very low risk and 8% in the no risk group.Cytological atypia, necrosis, mucosal invasion and the Ki67 index were found to be related to the progressive disease risk groups of the tumors (p<0.05).Positive immunoreaction was observed with CD117 and PDGFRα in all GISTs in the study (100%). Positivity with the DOG1 antibody was found in 33 (89%) cases. CD34 was positive in 62% (23) of the cases. Conclusion: The CD117 antibody still plays a key role in GIST diagnosis. However, the use of DOG1 and PDGFRα antibodies combined with CD117 as sensitive markers can be beneficial.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Gastrointestinal stromal tumors (GIST) have KIT or platelet-derived growth factor receptor &alpha; (PDGFR&alpha;) mutations affecting receptor tyrosine kinase activity and do not benefit from classic treatment regimens.</p>\r\n<p>\r\n\t<strong>Aims</strong>: The aim of this study was to review the algorithm that may be followed for the diagnosis and differential diagnosis in GISTs by investigating the histomorphological parameters and expression characteristics of classical immunohistochemical antibodies used in routine tests in addition to DOG1 expression.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Diagnostic accuracy study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: We reevaluated the histological and immunohistochemical parameters of 37 GISTs. The standard immunohistochemical diagnosis and differential diagnosis panel antibodies (CD117, PDGFR&alpha;, CD34, vimentin, desmin, SMA, S-100, and Ki67) were studied on the tumor sections. We also used the popular marker DOG1 antibody with accepted sensitivity for GISTs in recent years and the PDGFR&alpha; immune marker for which the benefit in routine practice is discussed.</p>\r\n<p>\r\n\t<strong>Results</strong>: Classification according to progressive disease risk groups of the 37 cases revealed that 54% were in the high risk, 19% in the moderate risk, 16% in the low risk, 8% in the very low risk and 8% in the no risk group.Cytological atypia, necrosis, mucosal invasion and the Ki67 index were found to be related to the progressive disease risk groups of the tumors (p&lt;0.05).Positive immunoreaction was observed with CD117 and PDGFR&alpha; in all GISTs in the study (100%). Positivity with the DOG1 antibody was found in 33 (89%) cases. CD34 was positive in 62% (23) of the cases.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The CD117 antibody still plays a key role in GIST diagnosis. However, the use of DOG1 and PDGFR&alpha; antibodies combined with CD117 as sensitive markers can be beneficial.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Gastrointestinal stromal tumors (GIST) have KIT or platelet-derived growth factor receptor α (PDGFRα) mutations affecting receptor tyrosine kinase activity and do not benefit from classic treatment regimens. Aims: The aim of this study was to review the algorithm that may be followed for the diagnosis and differential diagnosis in GISTs by investigating the histomorphological parameters and expression characteristics of classical immunohistochemical antibodies used in routine tests in addition to DOG1 expression. Study Design: Diagnostic accuracy study. Methods: We reevaluated the histological and immunohistochemical parameters of 37 GISTs. The standard immunohistochemical diagnosis and differential diagnosis panel antibodies (CD117, PDGFRα, CD34, vimentin, desmin, SMA, S-100, and Ki67) were studied on the tumor sections. We also used the popular marker DOG1 antibody with accepted sensitivity for GISTs in recent years and the PDGFRα immune marker for which the benefit in routine practice is discussed. Results: Classification according to progressive disease risk groups of the 37 cases revealed that 54% were in the high risk, 19% in the moderate risk, 16% in the low risk, 8% in the very low risk and 8% in the no risk group.Cytological atypia, necrosis, mucosal invasion and the Ki67 index were found to be related to the progressive disease risk groups of the tumors (p<0.05).Positive immunoreaction was observed with CD117 and PDGFRα in all GISTs in the study (100%). Positivity with the DOG1 antibody was found in 33 (89%) cases. CD34 was positive in 62% (23) of the cases. Conclusion: The CD117 antibody still plays a key role in GIST diagnosis. However, the use of DOG1 and PDGFRα antibodies combined with CD117 as sensitive markers can be beneficial.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15912",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "388-396",
+    "views": 7319,
+    "downloads": 10547,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "189",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=189",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=189",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=189",
+    "localPdfUrl": "js/data/pdfs/189.pdf",
+    "pdfUrl": "js/data/pdfs/189.pdf"
+  },
+  {
+    "id": 190,
+    "type": "Original Article",
+    "title": "Analyses of C-Reactive Protein, Endothelial Nitric Oxide Synthase and Interleukin-6 Gene Polymorphisms in Adolescents with a Family History of Premature Coronary Artery Disease: A Pilot Study",
+    "authors": [
+      {
+        "name": "Ataç Çelik",
+        "affiliation": "Department of Cardiology, Gaziosmanpaşa University Faculty of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Altunkaş",
+        "affiliation": "Department of Cardiology, Gaziosmanpaşa University Faculty of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kayıhan Karaman",
+        "affiliation": "Department of Cardiology, Gaziosmanpaşa University Faculty of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Metin Karayakalı",
+        "affiliation": "Department of Cardiology, Gaziosmanpaşa University Faculty of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Köksal Ceyhan",
+        "affiliation": "Department of Cardiology, Gaziosmanpaşa University Faculty of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Özçetin",
+        "affiliation": "Department of Pediactics, Süleymaniye Obstetrics and Gynecology Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ömer Ateş",
+        "affiliation": "Department of Medical Biology, Gaziosmanpaşa University Faculty of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İlker Akar",
+        "affiliation": "Department of Cardiovascular Surgery, Gaziosmanpaşa University Faculty of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İlker İnce",
+        "affiliation": "Department of Cardiovascular Surgery, Gaziosmanpaşa University Faculty of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Yalçın",
+        "affiliation": "Department of Cardiology, GATA Haydarpaşa Military Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Koç [[6]] </d",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Family history of premature atherosclerosis imposes a high risk to people. The relationship between atherosclerosis and gene polymorphisms of various biomarkers such as Endothelial Nitric Oxide Synthase (eNOS), C-Reactive Protein (CRP), and Interleukin-6 (IL-6) has shown in previous studies. Aims: The major aim of the study was to evaluate the CRP, eNOS, and IL-6 gene polymorphisms in a group of adolescents who have a parental history of early coronary artery disease (CAD). Study Design: Case-control study. Methods: Thirty-six volunteers with a father with obstructive CAD during the first four decades and 46 subjects with a father with normal coronary arteries documented with coronary angiography were included in the study. Polymerase chain reaction-restriction fragment length polymorphism techniques were used to analyze CRP, eNOS, and IL-6 polymorphisms. Results: We did not find any differences between the two groups with regard to age, sex, body mass index, renal functions, systolic and diastolic blood pressures, lipid profile, and fasting glucose, hemoglobin, and high sensitivity CRP. A significant difference was only observed in IL-6-572 G/C genotype distribution and allele frequency between two groups (Pc=0.036 OR=3.48 CI (95%) 1.17-10.32). Conclusion: The present study showed a significant association between the IL-6-572 G/C gene polymorphism (presence of C allele) and adolescents with a parental history of premature CAD.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Family history of premature atherosclerosis imposes a high risk to people. The relationship between atherosclerosis and gene polymorphisms of various biomarkers such as Endothelial Nitric Oxide Synthase (eNOS), C-Reactive Protein (CRP), and Interleukin-6 (IL-6) has shown in previous studies.</p>\r\n<p>\r\n\t<strong>Aims</strong>: The major aim of the study was to evaluate the CRP, eNOS, and IL-6 gene polymorphisms in a group of adolescents who have a parental history of early coronary artery disease (CAD).</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Case-control study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Thirty-six volunteers with a father with obstructive CAD during the first four decades and 46 subjects with a father with normal coronary arteries documented with coronary angiography were included in the study. Polymerase chain reaction-restriction fragment length polymorphism techniques were used to analyze CRP, eNOS, and IL-6 polymorphisms.</p>\r\n<p>\r\n\t<strong>Results</strong>: We did not find any differences between the two groups with regard to age, sex, body mass index, renal functions, systolic and diastolic blood pressures, lipid profile, and fasting glucose, hemoglobin, and high sensitivity CRP. A significant difference was only observed in IL-6-572 G/C genotype distribution and allele frequency between two groups (Pc=0.036 OR=3.48 CI (95%) 1.17-10.32).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The present study showed a significant association between the IL-6-572 G/C gene polymorphism (presence of C allele) and adolescents with a parental history of premature CAD.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Family history of premature atherosclerosis imposes a high risk to people. The relationship between atherosclerosis and gene polymorphisms of various biomarkers such as Endothelial Nitric Oxide Synthase (eNOS), C-Reactive Protein (CRP), and Interleukin-6 (IL-6) has shown in previous studies. Aims: The major aim of the study was to evaluate the CRP, eNOS, and IL-6 gene polymorphisms in a group of adolescents who have a parental history of early coronary artery disease (CAD). Study Design: Case-control study. Methods: Thirty-six volunteers with a father with obstructive CAD during the first four decades and 46 subjects with a father with normal coronary arteries documented with coronary angiography were included in the study. Polymerase chain reaction-restriction fragment length polymorphism techniques were used to analyze CRP, eNOS, and IL-6 polymorphisms. Results: We did not find any differences between the two groups with regard to age, sex, body mass index, renal functions, systolic and diastolic blood pressures, lipid profile, and fasting glucose, hemoglobin, and high sensitivity CRP. A significant difference was only observed in IL-6-572 G/C genotype distribution and allele frequency between two groups (Pc=0.036 OR=3.48 CI (95%) 1.17-10.32). Conclusion: The present study showed a significant association between the IL-6-572 G/C gene polymorphism (presence of C allele) and adolescents with a parental history of premature CAD.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.151190",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "397-402",
+    "views": 7287,
+    "downloads": 9702,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "190",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=190",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=190",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=190",
+    "localPdfUrl": "js/data/pdfs/190.pdf",
+    "pdfUrl": "js/data/pdfs/190.pdf"
+  },
+  {
+    "id": 191,
+    "type": "Original Article",
+    "title": "Diffusion Weighted Magnetic Resonance Imaging for the Characterization of Solitary Pulmonary Lesions",
+    "authors": [
+      {
+        "name": "Çağlayan Çakır",
+        "affiliation": "Department of Radiology, Kocaeli Derince Training and Research Hospital, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Gençhellaç",
+        "affiliation": "Department of Radiology, Trakya University Hospital, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Gençhellaç",
+        "affiliation": "Department of Radiology, Trakya University Hospital, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Osman Temizöz",
+        "affiliation": "Department of Radiology, Selçuk University Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Polat",
+        "affiliation": "Department of Radiology, Edirne State Hospital, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ersin Şengül",
+        "affiliation": "Department of Radiology, Trakya University Hospital, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gökhan Uğurlu",
+        "affiliation": "Department of Radiology, İzmir Katip Çelebi University Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: We evaluated the differential diagnosis of solitary pulmonary lesions on magnetic resonance imaging. Aims: To investigate the value of diffusion weighted imaging on the differential diagnosis of solitary pulmonary lesions. Study Design: Randomized prospective study. Methods: This prospective study included 48 solitary pulmonary nodules and masses (18 benign, 30 malignant). Single shot echo planar spin echo diffusion weighted imaging (DWI) was performed with two b factors (0 and 1000 s/mm2). Apparent diffusion coefficients (ADCs) were calculated. On diffusion weighted (DW) trace images, the signal intensities (SI) of the lesions were visually compared to the SI of the thoracic spinal cord using a 5-point scale: 1: hypointense, 2: moderately hypointense, 3: isointense, 4: moderately hyperintense, 5: significantly hyperintense. For the quantitative evaluation, the lesion to thoracic spinal signal intensity ratios and the ADCs of the lesions were compared between groups. Results: On visual evaluation, taking the density of the spinal cord as a reference, most benign lesions were found to be hypointense, while most of the malignant lesions were evaluated as hyperintense on DWI with a b factor of 1000 s/mm2. In contrast, on T2 weighted images, it was seen that the distinction of malignant lesions from benign lesions was not statistically significant. The ADCs of the malignant lesions were significantly lower than those of benign lesions (mean ADC was 2.02×10-3 mm2/s for malignant lesions, and 1.195×10-3±0.3 mm2/s for benign lesions). Setting the cut-off value at 1.5×10-3, ADC had a sensitivity of 86.7% and a specificity of 88.9% for the differentiation of benign lesions from malignant lesions. Conclusion: DWI may aid in the differential diagnosis of solitary pulmonary lesions.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: We evaluated the differential diagnosis of solitary pulmonary lesions on magnetic resonance imaging.</p>\r\n<p>\r\n\t<strong>Aims</strong>: To investigate the value of diffusion weighted imaging on the differential diagnosis of solitary pulmonary lesions.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Randomized prospective study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: This prospective study included 48 solitary pulmonary nodules and masses (18 benign, 30 malignant). Single shot echo planar spin echo diffusion weighted imaging (DWI) was performed with two b factors (0 and 1000 s/mm2). Apparent diffusion coefficients (ADCs) were calculated. On diffusion weighted (DW) trace images, the signal intensities (SI) of the lesions were visually compared to the SI of the thoracic spinal cord using a 5-point scale: 1: hypointense, 2: moderately hypointense, 3: isointense, 4: moderately hyperintense, 5: significantly hyperintense. For the quantitative evaluation, the lesion to thoracic spinal signal intensity ratios and the ADCs of the lesions were compared between groups.</p>\r\n<p>\r\n\t<strong>Results</strong>: On visual evaluation, taking the density of the spinal cord as a reference, most benign lesions were found to be hypointense, while most of the malignant lesions were evaluated as hyperintense on DWI with a b factor of 1000 s/mm2. In contrast, on T2 weighted images, it was seen that the distinction of malignant lesions from benign lesions was not statistically significant. The ADCs of the malignant lesions were significantly lower than those of benign lesions (mean ADC was 2.02&times;10-3 mm2/s for malignant lesions, and 1.195&times;10-3&plusmn;0.3 mm2/s for benign lesions). Setting the cut-off value at 1.5&times;10-3, ADC had a sensitivity of 86.7% and a specificity of 88.9% for the differentiation of benign lesions from malignant lesions.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: DWI may aid in the differential diagnosis of solitary pulmonary lesions.&nbsp;</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: We evaluated the differential diagnosis of solitary pulmonary lesions on magnetic resonance imaging. Aims: To investigate the value of diffusion weighted imaging on the differential diagnosis of solitary pulmonary lesions. Study Design: Randomized prospective study. Methods: This prospective study included 48 solitary pulmonary nodules and masses (18 benign, 30 malignant). Single shot echo planar spin echo diffusion weighted imaging (DWI) was performed with two b factors (0 and 1000 s/mm2). Apparent diffusion coefficients (ADCs) were calculated. On diffusion weighted (DW) trace images, the signal intensities (SI) of the lesions were visually compared to the SI of the thoracic spinal cord using a 5-point scale: 1: hypointense, 2: moderately hypointense, 3: isointense, 4: moderately hyperintense, 5: significantly hyperintense. For the quantitative evaluation, the lesion to thoracic spinal signal intensity ratios and the ADCs of the lesions were compared between groups. Results: On visual evaluation, taking the density of the spinal cord as a reference, most benign lesions were found to be hypointense, while most of the malignant lesions were evaluated as hyperintense on DWI with a b factor of 1000 s/mm2. In contrast, on T2 weighted images, it was seen that the distinction of malignant lesions from benign lesions was not statistically significant. The ADCs of the malignant lesions were significantly lower than those of benign lesions (mean ADC was 2.02×10-3 mm2/s for malignant lesions, and 1.195×10-3±0.3 mm2/s for benign lesions). Setting the cut-off value at 1.5×10-3, ADC had a sensitivity of 86.7% and a specificity of 88.9% for the differentiation of benign lesions from malignant lesions. Conclusion: DWI may aid in the differential diagnosis of solitary pulmonary lesions.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15663",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "403-409",
+    "views": 7193,
+    "downloads": 9676,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "191",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=191",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=191",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=191",
+    "localPdfUrl": "js/data/pdfs/191.pdf",
+    "pdfUrl": "js/data/pdfs/191.pdf"
+  },
+  {
+    "id": 192,
+    "type": "Original Article",
+    "title": "Mean Platelet Volume in Early Diagnosis of Adnexal Torsion",
+    "authors": [
+      {
+        "name": "Işıl Köleli",
+        "affiliation": "Department of Gynecology and Obstetrics, İnönü University Faculty of Medicine, Malatya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Adnexal torsion (AT) is among the gynecological emergencies; more common in reproductive age, if diagnosed late, this can cause ovarian failure and infertility, but rarely thrombophlebitis and peritonitis. Despite these severe complications, preoperative diagnostic tests are not enough for early diagnosis. There are certain pieces of literature on the subject that reveal changes in mean platelet volume (MPV) values occur in inflammatory and ischemic diseases and that these changes have diagnostic and prognostic significance. However, there are no studies investigating this relationship with adnexal torsion. Aims: The aim of the study is to investigate the diagnostic and prognostic significance of the mean platelet volume value in the early diagnosis of patients with adnexal torsion. Study Design: Case-control study. Methods: Pre-operative demographic data, MPV, leukocyte count and neutrophils to lymphocytes (N/L) ratio in the blood samples of 51 patients, who were operated on preliminary adnexal torsion and diagnosed as adnexal torsion with a benign ovarian cyst (AT group) were retrospectively compared with those of 50 patients who were operated upon because of benign ovarian cysts and without torsion (control group) at this hospital between 2006 and 2014. Results: The mean MPV level was found to be 8.1 (7.1-10.7) fL in the AT group and 7.9 (6.6-10.2) fL in the control group; no statistically significant difference was found between the groups (p>0.05).Leukocyte count and N/L ratio in the AT group were, on average, 12x103/mm3 and 82% respectively and in control group; they were, on average, 7.2x103/mm3 and 59%, respectively. A statistically significant increase was found in the leukocyte count and N/L ratio of the AT group compared to the control group (p<0.001). The platelet count in the AT group was, on average, 253x103/mm3 and in the control group it was, on average, 280x103/mm3; no statistically significant difference was detected between these two groups (p>0.05). No correlation was detected between the MPV, platelet and leukocyte counts. The sensitivity of the leukocytosis to the AT cases was found to be 66.7%, and selectivity was 94%. Conclusion: The AT diagnostic and prognostic importance of MPV value has not been determined in this study.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Adnexal torsion (AT) is among the gynecological emergencies; more common in reproductive age, if diagnosed late, this can cause ovarian failure and infertility, but rarely thrombophlebitis and peritonitis. Despite these severe complications, preoperative diagnostic tests are not enough for early diagnosis. There are certain pieces of literature on the subject that reveal changes in mean platelet volume (MPV) values occur in inflammatory and ischemic diseases and that these changes have diagnostic and prognostic significance. However, there are no studies investigating this relationship with adnexal torsion.</p>\r\n<p>\r\n\t<strong>Aims</strong>: The aim of the study is to investigate the diagnostic and prognostic significance of the mean platelet volume value in the early diagnosis of patients with adnexal torsion.</p>\r\n<p>\r\n\t<strong>Study</strong> <strong>Design</strong>: Case-control study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Pre-operative demographic data, MPV, leukocyte count and neutrophils to lymphocytes (N/L) ratio in the blood samples of 51 patients, who were operated on preliminary adnexal torsion and diagnosed as adnexal torsion with a benign ovarian cyst (AT group) were retrospectively compared with those of 50 patients who were operated upon because of benign ovarian cysts and without torsion (control group) at this hospital between 2006 and 2014.</p>\r\n<p>\r\n\t<strong>Results</strong>: The mean MPV level was found to be 8.1 (7.1-10.7) fL in the AT group and 7.9 (6.6-10.2) fL in the control group; no statistically significant difference was found between the groups (p&gt;0.05).Leukocyte count and N/L ratio in the AT group were, on average, 12x103/mm3 and 82% respectively and in control group; they were, on average, 7.2x103/mm3 and 59%, respectively. A statistically significant increase was found in the leukocyte count and N/L ratio of the AT group compared to the control group (p&lt;0.001). The platelet count in the AT group was, on average, 253x103/mm3 and in the control group it was, on average, 280x103/mm3; no statistically significant difference was detected between these two groups (p&gt;0.05). No correlation was detected between the MPV, platelet and leukocyte counts. The sensitivity of the leukocytosis to the AT cases was found to be 66.7%, and selectivity was 94%.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The AT diagnostic and prognostic importance of MPV value has not been determined in this study.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Adnexal torsion (AT) is among the gynecological emergencies; more common in reproductive age, if diagnosed late, this can cause ovarian failure and infertility, but rarely thrombophlebitis and peritonitis. Despite these severe complications, preoperative diagnostic tests are not enough for early diagnosis. There are certain pieces of literature on the subject that reveal changes in mean platelet volume (MPV) values occur in inflammatory and ischemic diseases and that these changes have diagnostic and prognostic significance. However, there are no studies investigating this relationship with adnexal torsion. Aims: The aim of the study is to investigate the diagnostic and prognostic significance of the mean platelet volume value in the early diagnosis of patients with adnexal torsion. Study Design: Case-control study. Methods: Pre-operative demographic data, MPV, leukocyte count and neutrophils to lymphocytes (N/L) ratio in the blood samples of 51 patients, who were operated on preliminary adnexal torsion and diagnosed as adnexal torsion with a benign ovarian cyst (AT group) were retrospectively compared with those of 50 patients who were operated upon because of benign ovarian cysts and without torsion (control group) at this hospital between 2006 and 2014. Results: The mean MPV level was found to be 8.1 (7.1-10.7) fL in the AT group and 7.9 (6.6-10.2) fL in the control group; no statistically significant difference was found between the groups (p>0.05).Leukocyte count and N/L ratio in the AT group were, on average, 12x103/mm3 and 82% respectively and in control group; they were, on average, 7.2x103/mm3 and 59%, respectively. A statistically significant increase was found in the leukocyte count and N/L ratio of the AT group compared to the control group (p<0.001). The platelet count in the AT group was, on average, 253x103/mm3 and in the control group it was, on average, 280x103/mm3; no statistically significant difference was detected between these two groups (p>0.05). No correlation was detected between the MPV, platelet and leukocyte counts. The sensitivity of the leukocytosis to the AT cases was found to be 66.7%, and selectivity was 94%. Conclusion: The AT diagnostic and prognostic importance of MPV value has not been determined in this study.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.151092",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "410-413",
+    "views": 7037,
+    "downloads": 9940,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "192",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=192",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=192",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=192",
+    "localPdfUrl": "js/data/pdfs/192.pdf",
+    "pdfUrl": "js/data/pdfs/192.pdf"
+  },
+  {
+    "id": 193,
+    "type": "Original Article",
+    "title": "Indices of Central and Peripheral Obesity; Anthropometric Measurements and Laboratory Parameters of Metabolic Syndrome and Thyroid Function",
+    "authors": [
+      {
+        "name": "Şükrü Aras",
+        "affiliation": "Department of Nutrition and Dietetics, Şifa University Faculty of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Seyfettin Üstünsoy",
+        "affiliation": "Department of Biochemistry, Fatih University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ferah Armutçu",
+        "affiliation": "Department of Biochemistry, Cerrahpaşa Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Metabolic syndrome (MetS) and obesity are serious health problems in the World, including Turkey. Contemporary studies have suggested a meaningful association between insulin resistance (IR), MetS parameters, and thyroid function tests. Aims: We aimed to elucidate the impact of fat distribution on the anthropometric and laboratory parameters, especially indices of MetS, IR and thyroid function, in obese women. Study Design: Cross-sectional study. Methods: Anthropometric measurements of all participants and biochemical tests in their serum samples were performed. Results: Weight, waist circumference (WC), body mass index (BMI), and other parameters of fat distribution were significantly increased in all obese compared to control subjects; but there was no significant difference between central and peripheral obese groups. The central obese group had significantly higher insulin levels, components of MetS, the ratio free triiodothyronine (fT3) to free thyroxin fT4, and fT4 than those of peripheral obese and control groups. Conclusion: Elevated triglyceride, glucose and insulin levels may be associated with increased IR, which in turn is related to MetS. Body fat composition may affect thyroid tests in the obese; the changes in fT3/fT4 could be the consequence of fat distribution.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Metabolic syndrome (MetS) and obesity are serious health problems in the World, including Turkey. Contemporary studies have suggested a meaningful association between insulin resistance (IR), MetS parameters, and thyroid function tests.</p>\r\n<p>\r\n\t<strong>Aims</strong>: We aimed to elucidate the impact of fat distribution on the anthropometric and laboratory parameters, especially indices of MetS, IR and thyroid function, in obese women.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Cross-sectional study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Anthropometric measurements of all participants and biochemical tests in their serum samples were performed.</p>\r\n<p>\r\n\t<strong>Results</strong>: Weight, waist circumference (WC), body mass index (BMI), and other parameters of fat distribution were significantly increased in all obese compared to control subjects; but there was no significant difference between central and peripheral obese groups. The central obese group had significantly higher insulin levels, components of MetS, the ratio free triiodothyronine (fT3) to free thyroxin fT4, and fT4 than those of peripheral obese and control groups.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Elevated triglyceride, glucose and insulin levels may be associated with increased IR, which in turn is related to MetS. Body fat composition may affect thyroid tests in the obese; the changes in fT3/fT4 could be the consequence of fat distribution.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Metabolic syndrome (MetS) and obesity are serious health problems in the World, including Turkey. Contemporary studies have suggested a meaningful association between insulin resistance (IR), MetS parameters, and thyroid function tests. Aims: We aimed to elucidate the impact of fat distribution on the anthropometric and laboratory parameters, especially indices of MetS, IR and thyroid function, in obese women. Study Design: Cross-sectional study. Methods: Anthropometric measurements of all participants and biochemical tests in their serum samples were performed. Results: Weight, waist circumference (WC), body mass index (BMI), and other parameters of fat distribution were significantly increased in all obese compared to control subjects; but there was no significant difference between central and peripheral obese groups. The central obese group had significantly higher insulin levels, components of MetS, the ratio free triiodothyronine (fT3) to free thyroxin fT4, and fT4 than those of peripheral obese and control groups. Conclusion: Elevated triglyceride, glucose and insulin levels may be associated with increased IR, which in turn is related to MetS. Body fat composition may affect thyroid tests in the obese; the changes in fT3/fT4 could be the consequence of fat distribution.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.151218",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "414-420",
+    "views": 7259,
+    "downloads": 10440,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "193",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=193",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=193",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=193",
+    "localPdfUrl": "js/data/pdfs/193.pdf",
+    "pdfUrl": "js/data/pdfs/193.pdf"
+  },
+  {
+    "id": 194,
+    "type": "Case Report",
+    "title": "Reversible Posterior Leukoencephalopathy Syndrome Due to Carboplatin and Paclitaxel Therapy",
+    "authors": [
+      {
+        "name": "Melek Kandemir",
+        "affiliation": "Department of Neurology, Bayındır Hospital İçerenköy, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Belgin Küçükkaya",
+        "affiliation": "Department of Internal Medicine, Bayındır Hospital İçerenköy, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Muzaffer Savaş Tepe",
+        "affiliation": "Department of Radiology, Bayındır Hospital İçerenköy, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zehra Betül Yalçıner",
+        "affiliation": "Department of Neurology, Bayındır Hospital İçerenköy, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nedret Taflan Salepçi",
+        "affiliation": "Department of Oncology, Italian Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Reversible posterior leukoencephalopathy syndrome (RPLS) is a clinicoradiologic syndrome characterized by headache, decreased alertness, seizures, visual abnormalities, and white matter changes indicative of cerebral edema. Although the pathogenesis remains poorly understood, several etiological causes have been described. RPLS is a common complication of chemotherapeutics because of its toxic effect on the central nervous system. This syndrome is frequently associated with seizures but rarely seen with status epilepticus and periodic lateralized epileptiform discharges (PLEDs). Case Report: We present a case with metastatic lung cancer that developed RPLS after carboplatin and paclitaxel therapy. Our case was admitted to the hospital with status epilepticus and her electroencephalography showed PLEDs. Conclusion: It is important to closely monitor blood pressure and electrolyte levels in patients who take chemotherapeutic agents, especially when there is no previous history of hypertension. It should be kept in mind that RPLS is a causative factor of status epilepticus and PLEDs.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Reversible posterior leukoencephalopathy syndrome (RPLS) is a clinicoradiologic syndrome characterized by headache, decreased alertness, seizures, visual abnormalities, and white matter changes indicative of cerebral edema. Although the pathogenesis remains poorly understood, several etiological causes have been described. RPLS is a common complication of chemotherapeutics because of its toxic effect on the central nervous system. This syndrome is frequently associated with seizures but rarely seen with status epilepticus and periodic lateralized epileptiform discharges (PLEDs).</p>\r\n<p>\r\n\t<strong>Case Report</strong>: We present a case with metastatic lung cancer that developed RPLS after carboplatin and paclitaxel therapy. Our case was admitted to the hospital with status epilepticus and her electroencephalography showed PLEDs.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: It is important to closely monitor blood pressure and electrolyte levels in patients who take chemotherapeutic agents, especially when there is no previous history of hypertension. It should be kept in mind that RPLS is a causative factor of status epilepticus and PLEDs.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Reversible posterior leukoencephalopathy syndrome (RPLS) is a clinicoradiologic syndrome characterized by headache, decreased alertness, seizures, visual abnormalities, and white matter changes indicative of cerebral edema. Although the pathogenesis remains poorly understood, several etiological causes have been described. RPLS is a common complication of chemotherapeutics because of its toxic effect on the central nervous system. This syndrome is frequently associated with seizures but rarely seen with status epilepticus and periodic lateralized epileptiform discharges (PLEDs). Case Report: We present a case with metastatic lung cancer that developed RPLS after carboplatin and paclitaxel therapy. Our case was admitted to the hospital with status epilepticus and her electroencephalography showed PLEDs. Conclusion: It is important to closely monitor blood pressure and electrolyte levels in patients who take chemotherapeutic agents, especially when there is no previous history of hypertension. It should be kept in mind that RPLS is a causative factor of status epilepticus and PLEDs.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15487",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "421-425",
+    "views": 7037,
+    "downloads": 9781,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "194",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=194",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=194",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=194",
+    "localPdfUrl": "js/data/pdfs/194.pdf",
+    "pdfUrl": "js/data/pdfs/194.pdf"
+  },
+  {
+    "id": 195,
+    "type": "Case Report",
+    "title": "Utero-cutaneous Fistula after Multiple Abdominal Myomectomies: A Case Report",
+    "authors": [
+      {
+        "name": "Mehmet Özgür Akkurt",
+        "affiliation": "Department of Gynecology and Obstetrics, Süleyman Demirel University Faculty of Medicine, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "And Yavuz",
+        "affiliation": "Department of Gynecology and Obstetrics, Süleyman Demirel University Faculty of Medicine, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burak Tatar",
+        "affiliation": "Department of Gynecology and Obstetrics, Süleyman Demirel University Faculty of Medicine, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Okan Özkaya",
+        "affiliation": "Department of Gynecology and Obstetrics, Süleyman Demirel University Faculty of Medicine, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Elif İlknur Ekici [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Utero-cutaneous fistula (UCF) is an extremely rare entity and only a few case reports have been published. Most UCFs develop secondary to postpartum or postoperative complications. Case Report: A 42 year-old woman began to complain from bleeding and malodorous discharge through her abdominal incision scar. The fistula tract with a thickness of 8 mm was observed between the uterus and wound using magnetic resonance imaging (MRI). The risks and benefits of conservative treatment have been discussed; the patient demanded definitive treatment, so hysterectomy and excision of the fistulous tract was performed. Histopathology of the fistulous tract showed endometrial epithelization of the tract lined by granulation. Conclusion: There are many causes of such an extremely rare entity. Patients should be counseled for medical or surgical treatment considering their age, accompanied uterine pathologies such as fibroids and fertility expectations.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Utero-cutaneous fistula (UCF) is an extremely rare entity and only a few case reports have been published. Most UCFs develop secondary to postpartum or postoperative complications.</p>\r\n<p>\r\n\t<strong>Case</strong> <strong>Report</strong>: A 42 year-old woman began to complain from bleeding and malodorous discharge through her abdominal incision scar. The fistula tract with a thickness of 8 mm was observed between the uterus and wound using magnetic resonance imaging (MRI). The risks and benefits of conservative treatment have been discussed; the patient demanded definitive treatment, so hysterectomy and excision of the fistulous tract was performed. Histopathology of the fistulous tract showed endometrial epithelization of the tract lined by granulation.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: There are many causes of such an extremely rare entity. Patients should be counseled for medical or surgical treatment considering their age, accompanied uterine pathologies such as fibroids and fertility expectations.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Utero-cutaneous fistula (UCF) is an extremely rare entity and only a few case reports have been published. Most UCFs develop secondary to postpartum or postoperative complications. Case Report: A 42 year-old woman began to complain from bleeding and malodorous discharge through her abdominal incision scar. The fistula tract with a thickness of 8 mm was observed between the uterus and wound using magnetic resonance imaging (MRI). The risks and benefits of conservative treatment have been discussed; the patient demanded definitive treatment, so hysterectomy and excision of the fistulous tract was performed. Histopathology of the fistulous tract showed endometrial epithelization of the tract lined by granulation. Conclusion: There are many causes of such an extremely rare entity. Patients should be counseled for medical or surgical treatment considering their age, accompanied uterine pathologies such as fibroids and fertility expectations.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.151206",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "4",
+    "pages": "426-428",
+    "views": 7131,
+    "downloads": 11261,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1175",
+    "sourceArticleId": "195",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=195",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=195",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=195",
+    "localPdfUrl": "js/data/pdfs/195.pdf",
+    "pdfUrl": "js/data/pdfs/195.pdf"
+  }
+]

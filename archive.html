@@ -195,14 +195,42 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Year Grid -->
         <div class="mb-10">
-          <h2 class="text-lg font-semibold text-gray-900 mb-4">Select Year</h2>
-          <div id="archive-year-grid" class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2"></div>
+          <div class="rounded-2xl border border-gray-200 bg-gradient-to-br from-white via-white to-teal-50/60 p-5 sm:p-6 shadow-sm">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+              <div>
+                <h2 class="text-lg font-semibold text-gray-900">Select Year</h2>
+                <p class="text-sm text-gray-500 mt-1">Browse recent issues quickly, then expand for the full archive.</p>
+              </div>
+              <div class="flex flex-wrap items-center gap-2">
+                <span id="archive-year-count" class="inline-flex items-center px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-xs font-medium border border-teal-100 w-fit"></span>
+                <span id="archive-year-hint" class="inline-flex items-center px-3 py-1 rounded-full bg-white text-gray-600 text-xs font-medium border border-gray-200 w-fit"></span>
+              </div>
+            </div>
+
+            <div id="archive-year-grid" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-2 sm:gap-3"></div>
+
+            <div class="mt-4 flex items-center justify-center sm:justify-end">
+              <button
+                id="archive-year-toggle"
+                type="button"
+                class="hidden inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-teal-700 bg-teal-700 text-sm font-semibold text-white hover:bg-teal-800 hover:border-teal-800 transition-colors shadow-sm"
+                aria-expanded="false"
+              >
+                <span id="archive-year-toggle-text">View older years</span>
+                <svg id="archive-year-toggle-icon" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </button>
+            </div>
+          </div>
         </div>
 
         <!-- Issues Panel -->
-        <div id="archive-issues" class="hidden">
-          <div class="flex items-center justify-between mb-6">
-            <h2 id="archive-issue-title" class="text-xl font-bold text-gray-900"></h2>
+        <div id="archive-issues" class="hidden rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
+            <div>
+              <h2 id="archive-issue-title" class="text-xl font-bold text-gray-900"></h2>
+              <p id="archive-issue-meta" class="text-sm text-gray-500 mt-1"></p>
+            </div>
+            <span class="inline-flex items-center px-3 py-1 rounded-full bg-gray-50 text-gray-600 text-xs font-medium border border-gray-200 w-fit">Available Issues</span>
           </div>
           <div id="archive-issue-list" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
         </div>

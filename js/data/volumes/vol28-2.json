@@ -1,0 +1,1453 @@
+[
+  {
+    "id": 1832,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "1832",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1832",
+    "localPdfUrl": "js/data/pdfs/1832.pdf",
+    "pdfUrl": "js/data/pdfs/1832.pdf"
+  },
+  {
+    "id": 792,
+    "type": "Original Article",
+    "title": "Investigation of Panton-Valentine Leukocidin Presence in the Clinical Strains of Staphylococcus aureus",
+    "authors": [
+      {
+        "name": "Osman Sezer Cirit",
+        "affiliation": "Ondokuz Mayıs Üniversitesi Tıp Fakültesi, Mikrobiyoloji ve Klinik Mikrobiyoloji Anabilim Dalı, Samsun, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Yılmaz Çoban",
+        "affiliation": "Ondokuz Mayıs Üniversitesi Tıp Fakültesi, Mikrobiyoloji ve Klinik Mikrobiyoloji Anabilim Dalı, Samsun, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Tuba Yıldırım",
+        "affiliation": "Department of Biology, Faculty of Arts and Sciences, Amasya University, Amasya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: In this study, the presence of Panton-Valentine Leukocidin (PVL) was investigated in the Staphylococcus aureus clinical isolates by PCR. Material and Methods: In this study, 130 MRSA and 20 methicillin-susceptible S. aureus (MSSA) isolates were tested among various clinical samples between February 2006 and June 2008. Confi rmation of S. aureus isolates and the methicillin resistance of these isolates were made by multiplex PCR. The presence of PVL was tested by both multiplex PCR and single target PCR. Results: The presence of PVL was determined in 3 isolates. Two of the isolates were from MRSA isolates, one was from MSSA isolates. One of the PVL positive MRSA isolate was recovered from a wound specimen, the other was from blood culture. PVL positive MSSA isolate was recovered from an urine specimen. All of the three PVL positive isolates were resistant to tetracycline. One of the PVL positive MRSA isolates which was recovered from blood culture was resistant to gentamicin and ciprofl oxacin, while the other PVL positive isolate was susceptible. Conclusion: Further studies are needed to determine the prevalence and genetic characteristics of PVL positive isolates and to prevent dissemination of PVL positive isolates both in the hospital environment and the community.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: In this study, the presence of Panton-Valentine Leukocidin (PVL) was investigated in the Staphylococcus aureus clinical isolates by PCR.&nbsp;</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: In this study, 130 MRSA and 20 methicillin-susceptible S. aureus (MSSA) isolates were tested among various clinical samples between February 2006 and June 2008. Confi rmation of S. aureus isolates and the methicillin resistance of these isolates were made by multiplex PCR. The presence of PVL was tested by both multiplex PCR and single target PCR.&nbsp;</p>\r\n<p>\r\n\t<strong>Results</strong>: The presence of PVL was determined in 3 isolates. Two of the isolates were from MRSA isolates, one was from MSSA isolates. One of the PVL positive MRSA isolate was recovered from a wound specimen, the other was from blood culture. PVL positive MSSA isolate was recovered from an urine specimen. All of the three PVL positive isolates were resistant to tetracycline. One of the PVL positive MRSA isolates which was recovered from blood culture was resistant to gentamicin and ciprofl oxacin, while the other PVL positive isolate was susceptible.&nbsp;</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Further studies are needed to determine the prevalence and genetic characteristics of PVL positive isolates and to prevent dissemination of PVL positive isolates both in the hospital environment and the community.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: In this study, the presence of Panton-Valentine Leukocidin (PVL) was investigated in the Staphylococcus aureus clinical isolates by PCR. Material and Methods: In this study, 130 MRSA and 20 methicillin-susceptible S. aureus (MSSA) isolates were tested among various clinical samples between February 2006 and June 2008. Confi rmation of S. aureus isolates and the methicillin resistance of these isolates were made by multiplex PCR. The presence of PVL was tested by both multiplex PCR and single target PCR. Results: The presence of PVL was determined in 3 isolates. Two of the isolates were from MRSA isolates, one was from MSSA isolates. One of the PVL positive MRSA isolate was recovered from a wound specimen, the other was from blood culture. PVL positive MSSA isolate was recovered from an urine specimen. All of the three PVL positive isolates were resistant to tetracycline. One of the PVL positive MRSA isolates which was recovered from blood culture was resistant to gentamicin and ciprofl oxacin, while the other PVL positive isolate was susceptible. Conclusion: Further studies are needed to determine the prevalence and genetic characteristics of PVL positive isolates and to prevent dissemination of PVL positive isolates both in the hospital environment and the community.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02621.3",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "119-124",
+    "views": 6649,
+    "downloads": 2557,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "792",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=792",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=792",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=792",
+    "localPdfUrl": "js/data/pdfs/792.pdf",
+    "pdfUrl": "js/data/pdfs/792.pdf"
+  },
+  {
+    "id": 794,
+    "type": "Original Article",
+    "title": "Is There A Correlation Between the Grip Strength and the Interosseous Muscles/Intermetacarpal Fat Pads of the Hand?: An Ultrasonographic Study",
+    "authors": [
+      {
+        "name": "Selma Uysal Ramadan",
+        "affiliation": "Department of Radiology, Ankara Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Işıl Tunçbilek",
+        "affiliation": "Department of Radiology, Ankara Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mahmut Kaçar",
+        "affiliation": "Department of Radiology, Ankara Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Gökharman",
+        "affiliation": "Department of Radiology, Ankara Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pınar Koşar",
+        "affiliation": "Department of Radiology, Ankara Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Uğur Koşar",
+        "affiliation": "Department of Radiology, Ankara Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zuhal Özeri",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Ankara Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: To investigate the correlation of the grip strength with sonographic measurement of interosseous muscles (IM) and the intermetacarpal fat pads (IMFP) of the hand. Material and Methods: A total of 40 healthy volunteers (mean age: 39±12 years, all female) were examined. Hand strength was assessed by the Jamar hand dynamometer. IM and IMFP thickness and width for both hands (n:80) were measured sonographically at four levels (1th, 2nd, 3rd and 4th intermetacarpal; palmar side for IM) and at three levels (2nd, 3rd and 4th intermetacarpal; dorsal side for IMFP). Results: The mean grip strength was 40±12 pounds (range: 20-67). Mean values (thickness x width) for IM were 20.7±2.1×9.9±1.2 mm, 9.0±1×10.3±0.9 mm, 7.3±1.0×9.9±1.0 mm, 8.5±1×9.5±0.9 mm at four levels, respectively. Mean values (thickness x width) for IMFP were 9.9±1.2×5.3±0.7 mm, 8.5±0.9×5.4±0.7 mm and 9.0±1.2×4.7±0.7 mm at three levels, respectively. There was a positive correlation between the grip strength and the dimensions of IM and IMFP (p<0.05). Conclusions: To our knowledge, this is the first study evaluating the correlation of grip strength and the sonographic IM-IMFP measurements. Further research in study groups affected by clinical situations involving the hand, is necessary to reveal the role of IM and IMFP studies in evaluating the pathologies.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: To investigate the correlation of the grip strength with sonographic measurement of interosseous muscles (IM) and the intermetacarpal fat pads (IMFP) of the hand.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: A total of 40 healthy volunteers (mean age: 39&plusmn;12 years, all female) were examined. Hand strength was assessed by the Jamar hand dynamometer. IM and IMFP thickness and width for both hands (n:80) were measured sonographically at four levels (1th, 2nd, 3rd and 4th intermetacarpal; palmar side for IM) and at three levels (2nd, 3rd and 4th intermetacarpal; dorsal side for IMFP).</p>\r\n<p>\r\n\t<strong>Results</strong>: The mean grip strength was 40&plusmn;12 pounds (range: 20-67). Mean values (thickness x width) for IM were 20.7&plusmn;2.1&times;9.9&plusmn;1.2 mm, 9.0&plusmn;1&times;10.3&plusmn;0.9 mm, 7.3&plusmn;1.0&times;9.9&plusmn;1.0 mm, 8.5&plusmn;1&times;9.5&plusmn;0.9 mm at four levels, respectively. Mean values (thickness x width) for IMFP were 9.9&plusmn;1.2&times;5.3&plusmn;0.7 mm, 8.5&plusmn;0.9&times;5.4&plusmn;0.7 mm and 9.0&plusmn;1.2&times;4.7&plusmn;0.7 mm at three levels, respectively. There was a positive correlation between the grip strength and the dimensions of IM and IMFP (p&lt;0.05).</p>\r\n<p>\r\n\t<strong>Conclusions</strong>: To our knowledge, this is the first study evaluating the correlation of grip strength and the sonographic IM-IMFP measurements. Further research in study groups affected by clinical situations involving the hand, is necessary to reveal the role of IM and IMFP studies in evaluating the pathologies.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: To investigate the correlation of the grip strength with sonographic measurement of interosseous muscles (IM) and the intermetacarpal fat pads (IMFP) of the hand. Material and Methods: A total of 40 healthy volunteers (mean age: 39±12 years, all female) were examined. Hand strength was assessed by the Jamar hand dynamometer. IM and IMFP thickness and width for both hands (n:80) were measured sonographically at four levels (1th, 2nd, 3rd and 4th intermetacarpal; palmar side for IM) and at three levels (2nd, 3rd and 4th intermetacarpal; dorsal side for IMFP). Results: The mean grip strength was 40±12 pounds (range: 20-67). Mean values (thickness x width) for IM were 20.7±2.1×9.9±1.2 mm, 9.0±1×10.3±0.9 mm, 7.3±1.0×9.9±1.0 mm, 8.5±1×9.5±0.9 mm at four levels, respectively. Mean values (thickness x width) for IMFP were 9.9±1.2×5.3±0.7 mm, 8.5±0.9×5.4±0.7 mm and 9.0±1.2×4.7±0.7 mm at three levels, respectively. There was a positive correlation between the grip strength and the dimensions of IM and IMFP (p<0.05). Conclusions: To our knowledge, this is the first study evaluating the correlation of grip strength and the sonographic IM-IMFP measurements. Further research in study groups affected by clinical situations involving the hand, is necessary to reveal the role of IM and IMFP studies in evaluating the pathologies.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02813.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "125-128",
+    "views": 6025,
+    "downloads": 2718,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "794",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=794",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=794",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=794",
+    "localPdfUrl": "js/data/pdfs/794.pdf",
+    "pdfUrl": "js/data/pdfs/794.pdf"
+  },
+  {
+    "id": 796,
+    "type": "Original Article",
+    "title": "Single Incision Laparoscopic Splenectomy: Our First Experiences",
+    "authors": [
+      {
+        "name": "Umut Barbaros",
+        "affiliation": "Department of General Surgery, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burçin Batman",
+        "affiliation": "Department of General Surgery, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selçuk Mercan",
+        "affiliation": "Department of General Surgery, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Rıdvan Seven",
+        "affiliation": "Department of General Surgery, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Budak Demir",
+        "affiliation": "Department of General Surgery, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aziz Sümer",
+        "affiliation": "Department of General Surgery, Kaş State Hospital, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Dinççağ",
+        "affiliation": "Department of General Surgery, Kaş State Hospital, Antalya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Most laparoscopic surgeons have attempted to reduce incisional morbidity and improve cosmetic outcomes by using less and smaller trocars. Single incision laparoscopic splenectomy is a new laparoscopic procedure. Herein we would like to present our experiences. Material and Methods: Between January 2009 and June 2009, data of the 7 patients who underwent single incision laparoscopic splenectomy were evaluated retrospectively. Results: There were 7 patients (5 females and 2 males) with a mean age of 29.9 years. The most common splenectomy indication was idiopathic thrombocytopenic purpura. Single incision laparoscopic splenectomy was performed successfully in 6 patients. In one patient the operation was converted to an open procedure. Conclusion: With surgeons experienced in minimally invasive surgery, single incision laparoscopic splenectomy could be performed successfully. However, in order to demonstrate the differneces between standard laparoscopic splenectomy and SILS splenetomy, prospective randomized comparative studies are required.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Most laparoscopic surgeons have attempted to reduce incisional morbidity and improve cosmetic outcomes by using less and smaller trocars. Single incision laparoscopic splenectomy is a new laparoscopic procedure. Herein we would like to present our experiences.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Between January 2009 and June 2009, data of the 7 patients who underwent single incision laparoscopic splenectomy were evaluated retrospectively.</p>\r\n<p>\r\n\t<strong>Results</strong>: There were 7 patients (5 females and 2 males) with a mean age of 29.9 years. The most common splenectomy indication was idiopathic thrombocytopenic purpura. Single incision laparoscopic splenectomy was performed successfully in 6 patients. In one patient the operation was converted to an open procedure.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: With surgeons experienced in minimally invasive surgery, single incision laparoscopic splenectomy could be performed successfully. However, in order to demonstrate the differneces between standard laparoscopic splenectomy and SILS splenetomy, prospective randomized comparative studies are required.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Most laparoscopic surgeons have attempted to reduce incisional morbidity and improve cosmetic outcomes by using less and smaller trocars. Single incision laparoscopic splenectomy is a new laparoscopic procedure. Herein we would like to present our experiences. Material and Methods: Between January 2009 and June 2009, data of the 7 patients who underwent single incision laparoscopic splenectomy were evaluated retrospectively. Results: There were 7 patients (5 females and 2 males) with a mean age of 29.9 years. The most common splenectomy indication was idiopathic thrombocytopenic purpura. Single incision laparoscopic splenectomy was performed successfully in 6 patients. In one patient the operation was converted to an open procedure. Conclusion: With surgeons experienced in minimally invasive surgery, single incision laparoscopic splenectomy could be performed successfully. However, in order to demonstrate the differneces between standard laparoscopic splenectomy and SILS splenetomy, prospective randomized comparative studies are required.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02985.4",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "129-132",
+    "views": 6177,
+    "downloads": 3316,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "796",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=796",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=796",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=796",
+    "localPdfUrl": "js/data/pdfs/796.pdf",
+    "pdfUrl": "js/data/pdfs/796.pdf"
+  },
+  {
+    "id": 803,
+    "type": "Original Article",
+    "title": "The Impact of FDG-PET for the Preoperative Management of Patients with Colorectal Cancer",
+    "authors": [
+      {
+        "name": "Zafer Kılbaş",
+        "affiliation": "Gülhane Askeri Tıp Akademisi, Genel Cerrahi Anabilim Dalı, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Taner Yiğit",
+        "affiliation": "Gülhane Askeri Tıp Akademisi, Genel Cerrahi Anabilim Dalı, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Köksal Öner",
+        "affiliation": "Gülhane Askeri Tıp Akademisi, Genel Cerrahi Anabilim Dalı, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Orhan Kozak",
+        "affiliation": "Gülhane Askeri Tıp Akademisi, Genel Cerrahi Anabilim Dalı, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Seyfettin Ilgan",
+        "affiliation": "Gülhane Askeri Tıp Akademisi, Nükleer Tıp Anabilim Dalı, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Seyfettin Ilgan",
+        "affiliation": "Gülhane Askeri Tıp Akademisi, Nükleer Tıp Anabilim Dalı, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Nuri Arslan",
+        "affiliation": "Gülhane Askeri Tıp Akademisi, Nükleer Tıp Anabilim Dalı, Ankara, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Öner Menteş",
+        "affiliation": "Departments of General Surgery, Gülhane Military Medical School, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Turgut Tufan",
+        "affiliation": "Departments of Anesthesiology, Gülhane Military Medical School, Ankara",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Whole-body fluorodeoxyglucose-positron emission tomography (FDG-PET) has proved effective in the diagnosis of recurrent colorectal cancer (CRC) and in the monitoring of cancer therapy. However there have been limited studies considering the effect of FDG-PET in the initial evaluation of CRC. We analysed how FDG-PET affects the management of patients with CRC preoperatively. Material and Methods: A prospective study of 26 consecutive patients with known or suspected CRC was undertaken. The patients were evaluated by computed tomography (CT) and FDG-PET. FDG-PET results were compared with those of CT and correlated with histopathologic findings or with clinical course. Results: FDG-PET had a sensitivity of 96% and positive predictive value of 100% for the diagnosis of primary cancer, while CT had values of 68% and 95%, respectively. FDG-PET was superior to CT in detecting additional metastatic disease with a sensitivity of 89%, while CT had 33%. FDG-PET resulted in altered management for 8 patients of whom three avoided inappropriate surgery. Conclusion: It is concluded that FDG-PET is highly sensitive for the diagnosis and staging of patients with CRC. Its use in conjunction with CT results in a more accurate selection of patients for surgical treatment with curative intent.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Whole-body fluorodeoxyglucose-positron emission tomography (FDG-PET) has proved effective in the diagnosis of recurrent colorectal cancer (CRC) and in the monitoring of cancer therapy. However there have been limited studies considering the effect of FDG-PET in the initial evaluation of CRC. We analysed how FDG-PET affects the management of patients with CRC preoperatively.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: A prospective study of 26 consecutive patients with known or suspected CRC was undertaken. The patients were evaluated by computed tomography (CT) and FDG-PET. FDG-PET results were compared with those of CT and correlated with histopathologic findings or with clinical course.</p>\r\n<p>\r\n\t<strong>Results</strong>: FDG-PET had a sensitivity of 96% and positive predictive value of 100% for the diagnosis of primary cancer, while CT had values of 68% and 95%, respectively. FDG-PET was superior to CT in detecting additional metastatic disease with a sensitivity of 89%, while CT had 33%. FDG-PET resulted in altered management for 8 patients of whom three avoided inappropriate surgery.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: It is concluded that FDG-PET is highly sensitive for the diagnosis and staging of patients with CRC. Its use in conjunction with CT results in a more accurate selection of patients for surgical treatment with curative intent.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Whole-body fluorodeoxyglucose-positron emission tomography (FDG-PET) has proved effective in the diagnosis of recurrent colorectal cancer (CRC) and in the monitoring of cancer therapy. However there have been limited studies considering the effect of FDG-PET in the initial evaluation of CRC. We analysed how FDG-PET affects the management of patients with CRC preoperatively. Material and Methods: A prospective study of 26 consecutive patients with known or suspected CRC was undertaken. The patients were evaluated by computed tomography (CT) and FDG-PET. FDG-PET results were compared with those of CT and correlated with histopathologic findings or with clinical course. Results: FDG-PET had a sensitivity of 96% and positive predictive value of 100% for the diagnosis of primary cancer, while CT had values of 68% and 95%, respectively. FDG-PET was superior to CT in detecting additional metastatic disease with a sensitivity of 89%, while CT had 33%. FDG-PET resulted in altered management for 8 patients of whom three avoided inappropriate surgery. Conclusion: It is concluded that FDG-PET is highly sensitive for the diagnosis and staging of patients with CRC. Its use in conjunction with CT results in a more accurate selection of patients for surgical treatment with curative intent.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02767.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "133-137",
+    "views": 6500,
+    "downloads": 2101,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "803",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=803",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=803",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=803",
+    "localPdfUrl": "js/data/pdfs/803.pdf",
+    "pdfUrl": "js/data/pdfs/803.pdf"
+  },
+  {
+    "id": 807,
+    "type": "Original Article",
+    "title": "Breast Conserving Surgery and Sentinel Lymph Node Biopsy in Locally Advanced Breast Cancer: Single Center Experience",
+    "authors": [
+      {
+        "name": "Atakan Sezer",
+        "affiliation": "Department of General Surgery, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ruşen Coşar Alas",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Radyasyon Onkolojisi Anabilim Dalı, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "İrfan Cicin",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Medikal Onkoloji Anabilim Dalı, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Zeki Hoşcoşkun",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Genel Cerrahi Anabilim Dalı, Edirne, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Nermin Tunçbilek [[5]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Patients with locally advanced breast cancer may undergo breast conserving surgery after neoadjuvant chemotherapy. The aim of the study is to evaluate the results of locally advanced breast cancer patients who underwent breast conserving surgery, axillary dissection and sentinel lymph node biopsy in a single center. Material and Methods: 12 patients with locally advanced breast cancer stage IIIA/IIIB were included in the study between 2002-2009. The patients were given anthracycline-based regimen before surgery. Patients underwent breast conserving surgery, axillary dissection, and sentinel lymph node biopsy followed by radiotherapy. Results: There were five patients in stage IIIA, six in stage IIIB, and one in stage IIIC. Patients had received 3-6 regimen of FAC/FEC. Eight had partial and four had complete response. Five positive axilla were detected. The median value of the lymph nodes was 12 (n:8-19). Five patients underwent sentinel lymph node biopsy. The biopsy has failed in one patient and the median value of dissected sentinel node was 3.5 (n:3-4). Locoregional recurrence was not observed in any patients. The mean follow-up of the patients was 29.8 months and median time was 16 (n:2-80) months. Of the 12 patients 10 are alive and 2 were deceased. Conclusion: In selected locally advanced patients, breast conserving surgery and sentinel lymph node biopsy may be applied by a multidisciplinary approach, and excellent success may be achieved in those patients as in early breast cancer patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Patients with locally advanced breast cancer may undergo breast conserving surgery after neoadjuvant chemotherapy. The aim of the study is to evaluate the results of locally advanced breast cancer patients who underwent breast conserving surgery, axillary dissection and sentinel lymph node biopsy in a single center.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: 12 patients with locally advanced breast cancer stage IIIA/IIIB were included in the study between 2002-2009. The patients were given anthracycline-based regimen before surgery. Patients underwent breast conserving surgery, axillary dissection, and sentinel lymph node biopsy followed by radiotherapy.</p>\r\n<p>\r\n\t<strong>Results</strong>: There were five patients in stage IIIA, six in stage IIIB, and one in stage IIIC. Patients had received 3-6 regimen of FAC/FEC. Eight had partial and four had complete response. Five positive axilla were detected. The median value of the lymph nodes was 12 (n:8-19). Five patients underwent sentinel lymph node biopsy. The biopsy has failed in one patient and the median value of dissected sentinel node was 3.5 (n:3-4). Locoregional recurrence was not observed in any patients. The mean follow-up of the patients was 29.8 months and median time was 16 (n:2-80) months. Of the 12 patients 10 are alive and 2 were deceased.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: In selected locally advanced patients, breast conserving surgery and sentinel lymph node biopsy may be applied by a multidisciplinary approach, and excellent success may be achieved in those patients as in early breast cancer patients.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Patients with locally advanced breast cancer may undergo breast conserving surgery after neoadjuvant chemotherapy. The aim of the study is to evaluate the results of locally advanced breast cancer patients who underwent breast conserving surgery, axillary dissection and sentinel lymph node biopsy in a single center. Material and Methods: 12 patients with locally advanced breast cancer stage IIIA/IIIB were included in the study between 2002-2009. The patients were given anthracycline-based regimen before surgery. Patients underwent breast conserving surgery, axillary dissection, and sentinel lymph node biopsy followed by radiotherapy. Results: There were five patients in stage IIIA, six in stage IIIB, and one in stage IIIC. Patients had received 3-6 regimen of FAC/FEC. Eight had partial and four had complete response. Five positive axilla were detected. The median value of the lymph nodes was 12 (n:8-19). Five patients underwent sentinel lymph node biopsy. The biopsy has failed in one patient and the median value of dissected sentinel node was 3.5 (n:3-4). Locoregional recurrence was not observed in any patients. The mean follow-up of the patients was 29.8 months and median time was 16 (n:2-80) months. Of the 12 patients 10 are alive and 2 were deceased. Conclusion: In selected locally advanced patients, breast conserving surgery and sentinel lymph node biopsy may be applied by a multidisciplinary approach, and excellent success may be achieved in those patients as in early breast cancer patients.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03298.1",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "138-142",
+    "views": 6467,
+    "downloads": 9822,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "807",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=807",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=807",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=807",
+    "localPdfUrl": "js/data/pdfs/807.pdf",
+    "pdfUrl": "js/data/pdfs/807.pdf"
+  },
+  {
+    "id": 812,
+    "type": "Original Article",
+    "title": "Comparison of Log-Linear Analysis and Correspondence Analysis in Two-Way Contingency Tables: A Medical Application",
+    "authors": [
+      {
+        "name": "Ersin Öğüş",
+        "affiliation": "Department of Biostatistics, Medical Faculty of Başkent University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşe Canan Yazıcı",
+        "affiliation": "Department of Biostatistics, Medical Faculty of Başkent University, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The aim of the study was to examine log-linear analysis and correspondence analysis by an application with regard to advantages and disadvantages of the two methods. Material and Method: In this study, we used an artificial data set, which is expanded without changing its nature, from a study conducted in Medical Faculty of Baskent University, Infectious Disease and Clinical Microbiology Department. Relations and interactions between variables and among subcategories have been investigated with log linear and correspondence analysis. Results: It has been shown that when the assumptions of log-linear analysis were not available, better understanding of the data set could be obtained by correspondence analysis (CA). However, conclusions about the data may not be generalized in a confidence interval to the population by CA. In addition, in log-linear analysis, it is possible to make inferences about the population on the basis of sample data. The other important result obtained from the study was that some of the relations between the same variable categories could be detected by CA, which is not possible with log-linear analysis. Conclusion: As a result, we suggest the complementary use of log-linear analysis and correspondence analysis for detailed results.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The aim of the study was to examine log-linear analysis and correspondence analysis by an application with regard to advantages and disadvantages of the two methods.</p>\r\n<p>\r\n\t<strong>Material and Method</strong>: In this study, we used an artificial data set, which is expanded without changing its nature, from a study conducted in Medical Faculty of Baskent University, Infectious Disease and Clinical Microbiology Department. Relations and interactions between variables and among subcategories have been investigated with log linear and correspondence analysis.</p>\r\n<p>\r\n\t<strong>Results</strong>: It has been shown that when the assumptions of log-linear analysis were not available, better understanding of the data set could be obtained by correspondence analysis (CA). However, conclusions about the data may not be generalized in a confidence interval to the population by CA. In addition, in log-linear analysis, it is possible to make inferences about the population on the basis of sample data. The other important result obtained from the study was that some of the relations between the same variable categories could be detected by CA, which is not possible with log-linear analysis.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: As a result, we suggest the complementary use of log-linear analysis and correspondence analysis for detailed results.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The aim of the study was to examine log-linear analysis and correspondence analysis by an application with regard to advantages and disadvantages of the two methods. Material and Method: In this study, we used an artificial data set, which is expanded without changing its nature, from a study conducted in Medical Faculty of Baskent University, Infectious Disease and Clinical Microbiology Department. Relations and interactions between variables and among subcategories have been investigated with log linear and correspondence analysis. Results: It has been shown that when the assumptions of log-linear analysis were not available, better understanding of the data set could be obtained by correspondence analysis (CA). However, conclusions about the data may not be generalized in a confidence interval to the population by CA. In addition, in log-linear analysis, it is possible to make inferences about the population on the basis of sample data. The other important result obtained from the study was that some of the relations between the same variable categories could be detected by CA, which is not possible with log-linear analysis. Conclusion: As a result, we suggest the complementary use of log-linear analysis and correspondence analysis for detailed results.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.03375.1",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "143-147",
+    "views": 6406,
+    "downloads": 2506,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "812",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=812",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=812",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=812",
+    "localPdfUrl": "js/data/pdfs/812.pdf",
+    "pdfUrl": "js/data/pdfs/812.pdf"
+  },
+  {
+    "id": 816,
+    "type": "Original Article",
+    "title": "Spectral and Time-Domain Analyses of Heart-Rate Variability in Children with Severe Upper Airway Obstruction",
+    "authors": [
+      {
+        "name": "Berna Şaylan",
+        "affiliation": "Department of Pediatric Cardiology, Dışkapı Children's Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayhan Çevik",
+        "affiliation": "Department of Pediatric Cardiology, Faculty of Medicine, Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Vedide Tavlı",
+        "affiliation": "Department of Pediatric Cardiology, Faculty of Medicine, Yeditepe University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayça Vitrinel",
+        "affiliation": "Department of Pediatrics, Faculty of Medicine, Yeditepe University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Heart rate variability (HRV) is a noninvasive index of neural activity of the heart. This study assessed the heart-rate variability response in children with severe upper airway obstruction. Material and Methods: A prospective trial was carried out in 15 children with severe adenoid and/or tonsil hypertrophy, compared to 15 age matched healthy children in order to attempt to relate such changes. Frequency domain measurements of the high and low frequency bands and the ratio low frequency/high frequency were derived from Holter electrocardiography recordings and computed by Fast Fourier analysis for five minute intervals. Time domain measurements were derived from 24 hour Holter recordings. Results: All spectral analysis of heart rate variability was altered in both preoperative and postoperative (three months after the operation) recordings compared to the control group. In both groups, time domain indices were significantly lower compared to the control group. Mean R-R values were signifi cantly reduced in pre and postoperative groups compared with control group, with the night time mean R-R values being significantly lower (p<0.05). These results indicate the increased frequency domain parameters in two groups. Conclusion: In this study, patients demonstrated altered volume loads and autonomic response. Further studies are needed to assess when such cardiac findings normalize upon relief of the upper airway obstruction.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Heart rate variability (HRV) is a noninvasive index of neural activity of the heart. This study assessed the heart-rate variability response in children with severe upper airway obstruction.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: A prospective trial was carried out in 15 children with severe adenoid and/or tonsil hypertrophy, compared to 15 age matched healthy children in order to attempt to relate such changes. Frequency domain measurements of the high and low frequency bands and the ratio low frequency/high frequency were derived from Holter electrocardiography recordings and computed by Fast Fourier analysis for five minute intervals. Time domain measurements were derived from 24 hour Holter recordings.</p>\r\n<p>\r\n\t<strong>Results</strong>: All spectral analysis of heart rate variability was altered in both preoperative and postoperative (three months after the operation) recordings compared to the control group. In both groups, time domain indices were significantly lower compared to the control group. Mean R-R values were signifi cantly reduced in pre and postoperative groups compared with control group, with the night time mean R-R values being significantly lower (p&lt;0.05). These results indicate the increased frequency domain parameters in two groups.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: In this study, patients demonstrated altered volume loads and autonomic response. Further studies are needed to assess when such cardiac findings normalize upon relief of the upper airway obstruction.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Heart rate variability (HRV) is a noninvasive index of neural activity of the heart. This study assessed the heart-rate variability response in children with severe upper airway obstruction. Material and Methods: A prospective trial was carried out in 15 children with severe adenoid and/or tonsil hypertrophy, compared to 15 age matched healthy children in order to attempt to relate such changes. Frequency domain measurements of the high and low frequency bands and the ratio low frequency/high frequency were derived from Holter electrocardiography recordings and computed by Fast Fourier analysis for five minute intervals. Time domain measurements were derived from 24 hour Holter recordings. Results: All spectral analysis of heart rate variability was altered in both preoperative and postoperative (three months after the operation) recordings compared to the control group. In both groups, time domain indices were significantly lower compared to the control group. Mean R-R values were signifi cantly reduced in pre and postoperative groups compared with control group, with the night time mean R-R values being significantly lower (p<0.05). These results indicate the increased frequency domain parameters in two groups. Conclusion: In this study, patients demonstrated altered volume loads and autonomic response. Further studies are needed to assess when such cardiac findings normalize upon relief of the upper airway obstruction.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.03323.4",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "148-150",
+    "views": 6806,
+    "downloads": 3291,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "816",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=816",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=816",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=816",
+    "localPdfUrl": "js/data/pdfs/816.pdf",
+    "pdfUrl": "js/data/pdfs/816.pdf"
+  },
+  {
+    "id": 819,
+    "type": "Original Article",
+    "title": "Ultrastructural Alterations in the Epidermis of Patients with Tinea Pedis",
+    "authors": [
+      {
+        "name": "Yurdagül Canberk",
+        "affiliation": "Department Histology and Embryology, Çapa Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Ahıshalı",
+        "affiliation": "Department of Histology and Embryology, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Funda Durmaz Onar",
+        "affiliation": "Department of Histology and Embryology, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ebru Karabulut",
+        "affiliation": "Department of Histology and Embryology, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Tinea pedis is the most common superficial fungal infection of the foot. Although light microscopic characteristics of tinea pedis have already been described and are well known, electron microscopic data is still lacking. In this study, we aimed to examine the ultrastructural changes in the epidermis of patients diagnosed with tinea pedis. Material and Methods: Biopsies were taken from the lesions between the toes of patients with untreated tinea pedis and from healthy volunteers with no fungal infections. The materials obtained were prepared for electron microscopy and examined by transmission electron microscope. Results: The ultrastructural examination revealed the following changes: (1) Disturbances in the form and organization of keratinocytes; (2) Irregular distribution and interlacing of tonofilament bundles in keratinocytes; (3) Disruption of desmosomes and detachment of adjoining keratinocytes; (4) Excessive widening of intercellular spaces between keratinocytes; (5) Dilatation of intercellular spaces between basal cells; (6) Degranulation of melanocytes in the stratum basale; (7) Migration of lymphocytes and polymorphonuclear leukocytes between keratinocytes in the stratum spinosum; (8) Degradation of basal lamina; (9) Pericapillary edema in the apillary dermis. Conclusion: The ultrastructural findings in tinea pedis are described and related to the clinical symptoms and histopathologic features of the disease.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Tinea pedis is the most common superficial fungal infection of the foot. Although light microscopic characteristics of tinea pedis have already been described and are well known, electron microscopic data is still lacking. In this study, we aimed to examine the ultrastructural changes in the epidermis of patients diagnosed with tinea pedis.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Biopsies were taken from the lesions between the toes of patients with untreated tinea pedis and from healthy volunteers with no fungal infections. The materials obtained were prepared for electron microscopy and examined by transmission electron microscope.</p>\r\n<p>\r\n\t<strong>Results</strong>: The ultrastructural examination revealed the following changes: (1) Disturbances in the form and organization of keratinocytes; (2) Irregular distribution and interlacing of tonofilament bundles in keratinocytes; (3) Disruption of desmosomes and detachment of adjoining keratinocytes; (4) Excessive widening of intercellular spaces between keratinocytes; (5) Dilatation of intercellular spaces between basal cells; (6) Degranulation of melanocytes in the stratum basale; (7) Migration of lymphocytes and polymorphonuclear leukocytes between keratinocytes in the stratum spinosum; (8) Degradation of basal lamina; (9) Pericapillary edema in the apillary dermis.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The ultrastructural findings in tinea pedis are described and related to the clinical symptoms and histopathologic features of the disease.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Tinea pedis is the most common superficial fungal infection of the foot. Although light microscopic characteristics of tinea pedis have already been described and are well known, electron microscopic data is still lacking. In this study, we aimed to examine the ultrastructural changes in the epidermis of patients diagnosed with tinea pedis. Material and Methods: Biopsies were taken from the lesions between the toes of patients with untreated tinea pedis and from healthy volunteers with no fungal infections. The materials obtained were prepared for electron microscopy and examined by transmission electron microscope. Results: The ultrastructural examination revealed the following changes: (1) Disturbances in the form and organization of keratinocytes; (2) Irregular distribution and interlacing of tonofilament bundles in keratinocytes; (3) Disruption of desmosomes and detachment of adjoining keratinocytes; (4) Excessive widening of intercellular spaces between keratinocytes; (5) Dilatation of intercellular spaces between basal cells; (6) Degranulation of melanocytes in the stratum basale; (7) Migration of lymphocytes and polymorphonuclear leukocytes between keratinocytes in the stratum spinosum; (8) Degradation of basal lamina; (9) Pericapillary edema in the apillary dermis. Conclusion: The ultrastructural findings in tinea pedis are described and related to the clinical symptoms and histopathologic features of the disease.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.03515.3",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "151-156",
+    "views": 7000,
+    "downloads": 2602,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "819",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=819",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=819",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=819",
+    "localPdfUrl": "js/data/pdfs/819.pdf",
+    "pdfUrl": "js/data/pdfs/819.pdf"
+  },
+  {
+    "id": 821,
+    "type": "Original Article",
+    "title": "A Comparison of Cormeck-Lehane and Mallampati Tests with Mandibular and Neck Measurements for Predicting Difficult Intubation",
+    "authors": [
+      {
+        "name": "Niyazi Acer",
+        "affiliation": "Department of Anatomy, Faculty of Medicine, Erciyes University, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Akcan Akkaya",
+        "affiliation": "Muğla Devlet Hastanesi, Anastezi Bölümü, Muğla, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Baki Umut Tuğay",
+        "affiliation": "Muğla Üniversitesi, Muğla Sağlık Yüksekokulu, Fizyoterapi ve Rehabilitasyon Bölümü, Muğla, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Öztürk",
+        "affiliation": "Department of Hematology, Haydarpaşa Training Hospital, Gülhane Military Medical School, İstanbul",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Various prediction tests were formulated to forecast difficult intubation. The Mallampati test, Wilson score, Cormack-Lehane test and thyromental distance are the most commonly used tests pre-operatively to assess the airway. The objective of the present study was to investigate whether a combination of the Mallampati and Cormack-Lehane's classification to predict difficult intubation compared with sternomental and thyromental distances, mandibular length, width and neck length and circumference. Material and Methods: Two hundred twenty seven cases between 17 and 70 years old undergoing elective surgery were included in the study. Age, gender, body weight, body height and BMI were noted preoperatively. The pharyngeal structures were examined before the operation. At the time of intubation, laryngoscopic evaluation was performed according to the Cormack-Lehane's laryngoscopic classification. Results: For analysis, Mallampati and Cormack-Lehane's laryngoscopic classification were grouped as difficult (grades III and IV) or easy (grades I and II). Whereas Mallampati scoring were class 1 and 2 (easy) in 72.7% cases, Cormack-Lehane's laryngoscopic scoring 90.7% of the cases were in class 1 and 2. The combination of the Cormeck-Lehane classification with neck circumference had the highest sensitivity (94.74%), but this combination decreased the positive predictive value. The combination of the Mallampati classification with neck length had the highest sensitivity (67.86%), but this combination decreased the positive predictive value. Conclusion: The findings suggest that the Mallampati and Cormeck-Lehane classification by itself is insufficient for predicting difficult intubation so should be used in conjunction with measurement of neck circumference and Cormeck-lehane test. Mallampati test with sternomental and thyromental distances in addition with neck length may be useful in routine test for preoperative prediction of difficult intubation.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Various prediction tests were formulated to forecast difficult intubation. The Mallampati test, Wilson score, Cormack-Lehane test and thyromental distance are the most commonly used tests pre-operatively to assess the airway. The objective of the present study was to investigate whether a combination of the Mallampati and Cormack-Lehane&#39;s classification to predict difficult intubation compared with sternomental and thyromental distances, mandibular length, width and neck length and circumference.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Two hundred twenty seven cases between 17 and 70 years old undergoing elective surgery were included in the study. Age, gender, body weight, body height and BMI were noted preoperatively. The pharyngeal structures were examined before the operation. At the time of intubation, laryngoscopic evaluation was performed according to the Cormack-Lehane&#39;s laryngoscopic classification.</p>\r\n<p>\r\n\t<strong>Results</strong>: For analysis, Mallampati and Cormack-Lehane&#39;s laryngoscopic classification were grouped as difficult (grades III and IV) or easy (grades I and II). Whereas Mallampati scoring were class 1 and 2 (easy) in 72.7% cases, Cormack-Lehane&#39;s laryngoscopic scoring 90.7% of the cases were in class 1 and 2. The combination of the Cormeck-Lehane classification with neck circumference had the highest sensitivity (94.74%), but this combination decreased the positive predictive value. The combination of the Mallampati classification with neck length had the highest sensitivity (67.86%), but this combination decreased the positive predictive value.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The findings suggest that the Mallampati and Cormeck-Lehane classification by itself is insufficient for predicting difficult intubation so should be used in conjunction with measurement of neck circumference and Cormeck-lehane test. Mallampati test with sternomental and thyromental distances in addition with neck length may be useful in routine test for preoperative prediction of difficult intubation.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Various prediction tests were formulated to forecast difficult intubation. The Mallampati test, Wilson score, Cormack-Lehane test and thyromental distance are the most commonly used tests pre-operatively to assess the airway. The objective of the present study was to investigate whether a combination of the Mallampati and Cormack-Lehane's classification to predict difficult intubation compared with sternomental and thyromental distances, mandibular length, width and neck length and circumference. Material and Methods: Two hundred twenty seven cases between 17 and 70 years old undergoing elective surgery were included in the study. Age, gender, body weight, body height and BMI were noted preoperatively. The pharyngeal structures were examined before the operation. At the time of intubation, laryngoscopic evaluation was performed according to the Cormack-Lehane's laryngoscopic classification. Results: For analysis, Mallampati and Cormack-Lehane's laryngoscopic classification were grouped as difficult (grades III and IV) or easy (grades I and II). Whereas Mallampati scoring were class 1 and 2 (easy) in 72.7% cases, Cormack-Lehane's laryngoscopic scoring 90.7% of the cases were in class 1 and 2. The combination of the Cormeck-Lehane classification with neck circumference had the highest sensitivity (94.74%), but this combination decreased the positive predictive value. The combination of the Mallampati classification with neck length had the highest sensitivity (67.86%), but this combination decreased the positive predictive value. Conclusion: The findings suggest that the Mallampati and Cormeck-Lehane classification by itself is insufficient for predicting difficult intubation so should be used in conjunction with measurement of neck circumference and Cormeck-lehane test. Mallampati test with sternomental and thyromental distances in addition with neck length may be useful in routine test for preoperative prediction of difficult intubation.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03475.1",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "157-163",
+    "views": 8447,
+    "downloads": 3671,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "821",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=821",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=821",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=821",
+    "localPdfUrl": "js/data/pdfs/821.pdf",
+    "pdfUrl": "js/data/pdfs/821.pdf"
+  },
+  {
+    "id": 822,
+    "type": "Original Article",
+    "title": "In Vitro Vasoactive Effects of Levobupivacaine and Ropivacaine on the Isolated Human Umbilical Artery and Vein",
+    "authors": [
+      {
+        "name": "Alper Kılıçaslan",
+        "affiliation": "Dr. Faruk Sükan Kadın Doğum ve Çocuk Hastanesi, Anesteziyoloji ve Reanimasyon Kliniği, Konya, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ateş Duman",
+        "affiliation": "Selçuk Üniversitesi Meram Tıp Fakültesi, Anesteziyoloji ve Reanimasyon Anabilim Dalı, Konya, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşe Saide Şahin",
+        "affiliation": "Selçuk Üniversitesi Meram Tıp Fakültesi, Farmakoloji Anabilim Dalı, Konya, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: In this in vitro study, we investigated the vasoactive effects of levobupivacaine and ropivacaine on vascular smooth muscle derived from human umbilical arteries and veins. Material and Methods: The strips were mounted in tissue baths at 37°C continuously gassed with 5% CO2 in oxygen for isometric recording of contractile activity on a polygraph. The endothelium of some tissues was mechanically removed to assess the influence of the endothelium on contractility. The strips were precontracted with serotonin (10-6 M 5-HT; n=7). After obtaining the maximal contraction, responses obtained by adding levobupivacaine and ropivacaine (10-9-10-4 M; n=7) cumulatively were recorded. Contractions were expressed as the (% of 5HT maximal response) percentage of 5 HT's maximal response. Results: Both levobupivacaine and ropivacaine induce a concentrationdependent contraction in the smooth muscle cells of umbilical arteries and veins. Maximum contractile response (Emax) of levobupivacaine (79.2±2.5, 71.1±2.6) was higher than ropivacaine (68.4±2, 36.2±2.8) on both umbilical arteries and veins. There were no statistically significant differences between contraction responses of endothelium-intact and endothelium-denuded tissues. Conclusion: The results suggest that, in high concentrations, levobupivacaine and ropivacaine may affect umbilical blood flow by contracting the umbilical artery and vein, thus reducing fetal blood flow.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: In this in vitro study, we investigated the vasoactive effects of levobupivacaine and ropivacaine on vascular smooth muscle derived from human umbilical arteries and veins.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: The strips were mounted in tissue baths at 37&deg;C continuously gassed with 5% CO2 in oxygen for isometric recording of contractile activity on a polygraph. The endothelium of some tissues was mechanically removed to assess the influence of the endothelium on contractility. The strips were precontracted with serotonin (10-6 M 5-HT; n=7). After obtaining the maximal contraction, responses obtained by adding levobupivacaine and ropivacaine (10-9-10-4 M; n=7) cumulatively were recorded. Contractions were expressed as the (% of 5HT maximal response) percentage of 5 HT&#39;s maximal response.</p>\r\n<p>\r\n\t<strong>Results</strong>: Both levobupivacaine and ropivacaine induce a concentrationdependent contraction in the smooth muscle cells of umbilical arteries and veins. Maximum contractile response (Emax) of levobupivacaine (79.2&plusmn;2.5, 71.1&plusmn;2.6) was higher than ropivacaine (68.4&plusmn;2, 36.2&plusmn;2.8) on both umbilical arteries and veins. There were no statistically significant differences between contraction responses of endothelium-intact and endothelium-denuded tissues.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The results suggest that, in high concentrations, levobupivacaine and ropivacaine may affect umbilical blood flow by contracting the umbilical artery and vein, thus reducing fetal blood flow.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: In this in vitro study, we investigated the vasoactive effects of levobupivacaine and ropivacaine on vascular smooth muscle derived from human umbilical arteries and veins. Material and Methods: The strips were mounted in tissue baths at 37°C continuously gassed with 5% CO2 in oxygen for isometric recording of contractile activity on a polygraph. The endothelium of some tissues was mechanically removed to assess the influence of the endothelium on contractility. The strips were precontracted with serotonin (10-6 M 5-HT; n=7). After obtaining the maximal contraction, responses obtained by adding levobupivacaine and ropivacaine (10-9-10-4 M; n=7) cumulatively were recorded. Contractions were expressed as the (% of 5HT maximal response) percentage of 5 HT's maximal response. Results: Both levobupivacaine and ropivacaine induce a concentrationdependent contraction in the smooth muscle cells of umbilical arteries and veins. Maximum contractile response (Emax) of levobupivacaine (79.2±2.5, 71.1±2.6) was higher than ropivacaine (68.4±2, 36.2±2.8) on both umbilical arteries and veins. There were no statistically significant differences between contraction responses of endothelium-intact and endothelium-denuded tissues. Conclusion: The results suggest that, in high concentrations, levobupivacaine and ropivacaine may affect umbilical blood flow by contracting the umbilical artery and vein, thus reducing fetal blood flow.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03324.3",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "164-168",
+    "views": 6593,
+    "downloads": 3887,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "822",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=822",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=822",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=822",
+    "localPdfUrl": "js/data/pdfs/822.pdf",
+    "pdfUrl": "js/data/pdfs/822.pdf"
+  },
+  {
+    "id": 823,
+    "type": "Original Article",
+    "title": "The Evaluation of Protein C Activity and Some Infl ammatory Markers in Synovia of Patients Undergoing Total Knee Arthroplasty",
+    "authors": [
+      {
+        "name": "Ahmet Ata Alturfan",
+        "affiliation": "Department of Medical Laboratory, Cerrahpaşa School of Medicine, Health Services Vocational, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Remzi Tözün",
+        "affiliation": "Department of Orthopedics and Traumatology, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nesrin Emekli",
+        "affiliation": "Department of Biochemistry, Faculty of Dentistry, Marmara University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Total knee arthroplasty (TKA) is a major risk factor for thrombosis in patients over 40 years of age and this risk persists for several weeks after the surgery. Since inflammatory mechanisms affect coagulation and the natural anticoagulant system, we aimed to investigate protein C activities and inflammatory markers in patients undergoing TKA surgery. Material and Methods: We included 20 osteoarthritis patients and 20 healthy controls. Protein C activity and tumor necrosis factor-α (TNF-α) levels in plasma and synovia were evaluated by ELISA technique. Results: In the patient group, protein C activities decreased and TNF-α levels increased significantly both in synovia and plasma when compared with the controls. Erythrocyte sedimentation rate of the patient group was found to be significantly elevated in comparison to the controls. On the other hand, serum C reactive protein values increased insignificantly when compared to controls. Conclusion: The decreased activity of protein C and increased levels of inflammatory markers in preoperative plasma and synovia of the patient group may enhance the risk for developing thrombosis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Total knee arthroplasty (TKA) is a major risk factor for thrombosis in patients over 40 years of age and this risk persists for several weeks after the surgery. Since inflammatory mechanisms affect coagulation and the natural anticoagulant system, we aimed to investigate protein C activities and inflammatory markers in patients undergoing TKA surgery.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: We included 20 osteoarthritis patients and 20 healthy controls. Protein C activity and tumor necrosis factor-&alpha; (TNF-&alpha;) levels in plasma and synovia were evaluated by ELISA technique.</p>\r\n<p>\r\n\t<strong>Results</strong>: In the patient group, protein C activities decreased and TNF-&alpha; levels increased significantly both in synovia and plasma when compared with the controls. Erythrocyte sedimentation rate of the patient group was found to be significantly elevated in comparison to the controls. On the other hand, serum C reactive protein values increased insignificantly when compared to controls.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The decreased activity of protein C and increased levels of inflammatory markers in preoperative plasma and synovia of the patient group may enhance the risk for developing thrombosis.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Total knee arthroplasty (TKA) is a major risk factor for thrombosis in patients over 40 years of age and this risk persists for several weeks after the surgery. Since inflammatory mechanisms affect coagulation and the natural anticoagulant system, we aimed to investigate protein C activities and inflammatory markers in patients undergoing TKA surgery. Material and Methods: We included 20 osteoarthritis patients and 20 healthy controls. Protein C activity and tumor necrosis factor-α (TNF-α) levels in plasma and synovia were evaluated by ELISA technique. Results: In the patient group, protein C activities decreased and TNF-α levels increased significantly both in synovia and plasma when compared with the controls. Erythrocyte sedimentation rate of the patient group was found to be significantly elevated in comparison to the controls. On the other hand, serum C reactive protein values increased insignificantly when compared to controls. Conclusion: The decreased activity of protein C and increased levels of inflammatory markers in preoperative plasma and synovia of the patient group may enhance the risk for developing thrombosis.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03468.1",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "169-172",
+    "views": 5466,
+    "downloads": 2050,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "823",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=823",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=823",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=823",
+    "localPdfUrl": "js/data/pdfs/823.pdf",
+    "pdfUrl": "js/data/pdfs/823.pdf"
+  },
+  {
+    "id": 825,
+    "type": "Original Article",
+    "title": "Views of Emergency Physicians Working in University Hospitals in Turkey Regarding Use of Analgesics in Patients with Acute Abdominal Pain and Factors Affecting Use of Analgesics",
+    "authors": [
+      {
+        "name": "Selahattin Kıyan",
+        "affiliation": "Department of Emergency Medicine, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ersin Aksay",
+        "affiliation": "Department of Emergency Medicine, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Ersel",
+        "affiliation": "Department of Emergency Medicine, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Özsaraç",
+        "affiliation": "Department of Emergency Medicine, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aslıhan Yürüktümen",
+        "affiliation": "Department of Emergency Medicine, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gül Kitapçıoğlu",
+        "affiliation": "Department of Biostatistics, Faculty of Medicine, Ege University, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The objective is to investigate factors affecting the frequency and use of analgesics in patients with acute abdominal pain by emergency physicians in Turkey. Material and Methods: The cross-sectional analytic study was performed between June and September 2006. The population of the study included the attending emergency physicians and residents at university hospitals in Turkey. The surveys were returned by mail after having been filled out by twenty-four departments participating in the study. Results: Two hundred sixty three of 322 emergency physicians completed the survey (coverage rate: 81.6%). Twenty five percent (n=66) of 263 physicians were emergency medicine specialists. Fifty four percent (n=143) of the participants stated that the use of analgesics “repressed the physical examination findings”. Rates in analgesic use also increased in parallel with increases in physicians' ages and were found statistically significant. Moreover, a regional difference among rates of analgesic use was observed (p<0.05). Conclusion: Rates of administering analgesics for patients with acute abdominal pain by university emergency physicians in Turkey are quite low. Physicians' ages, regional location of the hospitals, physical examination findings, radiological examination results, quality and level of pain and received diagnosis are the factors affecting the decision-making process in administering analgesics.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The objective is to investigate factors affecting the frequency and use of analgesics in patients with acute abdominal pain by emergency physicians in Turkey.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: The cross-sectional analytic study was performed between June and September 2006. The population of the study included the attending emergency physicians and residents at university hospitals in Turkey. The surveys were returned by mail after having been filled out by twenty-four departments participating in the study.</p>\r\n<p>\r\n\t<strong>Results</strong>: Two hundred sixty three of 322 emergency physicians completed the survey (coverage rate: 81.6%). Twenty five percent (n=66) of 263 physicians were emergency medicine specialists. Fifty four percent (n=143) of the participants stated that the use of analgesics &ldquo;repressed the physical examination findings&rdquo;. Rates in analgesic use also increased in parallel with increases in physicians&#39; ages and were found statistically significant. Moreover, a regional difference among rates of analgesic use was observed (p&lt;0.05).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Rates of administering analgesics for patients with acute abdominal pain by university emergency physicians in Turkey are quite low. Physicians&#39; ages, regional location of the hospitals, physical examination findings, radiological examination results, quality and level of pain and received diagnosis are the factors affecting the decision-making process in administering analgesics.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The objective is to investigate factors affecting the frequency and use of analgesics in patients with acute abdominal pain by emergency physicians in Turkey. Material and Methods: The cross-sectional analytic study was performed between June and September 2006. The population of the study included the attending emergency physicians and residents at university hospitals in Turkey. The surveys were returned by mail after having been filled out by twenty-four departments participating in the study. Results: Two hundred sixty three of 322 emergency physicians completed the survey (coverage rate: 81.6%). Twenty five percent (n=66) of 263 physicians were emergency medicine specialists. Fifty four percent (n=143) of the participants stated that the use of analgesics “repressed the physical examination findings”. Rates in analgesic use also increased in parallel with increases in physicians' ages and were found statistically significant. Moreover, a regional difference among rates of analgesic use was observed (p<0.05). Conclusion: Rates of administering analgesics for patients with acute abdominal pain by university emergency physicians in Turkey are quite low. Physicians' ages, regional location of the hospitals, physical examination findings, radiological examination results, quality and level of pain and received diagnosis are the factors affecting the decision-making process in administering analgesics.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03404.3",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "173-178",
+    "views": 6426,
+    "downloads": 1985,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "825",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=825",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=825",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=825",
+    "localPdfUrl": "js/data/pdfs/825.pdf",
+    "pdfUrl": "js/data/pdfs/825.pdf"
+  },
+  {
+    "id": 829,
+    "type": "Original Article",
+    "title": "Preemptive Analgesic Effect of Ketamine in Children with Lower Abdominal Surgery",
+    "authors": [
+      {
+        "name": "Serbülent Gökhan Beyaz",
+        "affiliation": "Sakarya Üniversitesi Tıp Fakültesi, Anesteziyoloji ve Reanimasyon Anabilim Dalı, Sakarya, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Preemptive analgesic effect of low dose ketamine has been supported by clinical studies in adults. The aim of this study was to evaluate the analgesic effect of ketamine applied at different times in children who underwent lower abdominal surgery. Material and Methods: A total of 90 children having ASAI-II physical status between 3 and 12 was randomly divided into three groups as pre, int and post groups. Ketamine were given to these groups in the following manner respectively; 1mg/kg intravenous ketamine before incision (preincisional); the same dose ketamine 10 minutes following the first incision (intraoperative); and ketamine at the end of the surgical operation (postoperative). The pain of patients was assessed by postoperative pain scale (CHIPPS) in children and infants; the sedation status of children was assessed by Ramsey's sedation scale. The first analgesic requirement time was recorded. Results: No significant difference was found in demographic characteristics of the three groups (p>0.05). Lower CHIPPS scores were found in Group Post throughout all measurement periods (p<0.05). Group Post was found to have significantly higher sedation levels compared with the other two groups (p=0.003). Conclusion: No analgesic effect was obtained using by pre-incisional and intraoperative i.v.1mg/kg ketamine, during lower abdominal surgery in children. Further studies with different drugs are needed to clarify this topic.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Preemptive analgesic effect of low dose ketamine has been supported by clinical studies in adults. The aim of this study was to evaluate the analgesic effect of ketamine applied at different times in children who underwent lower abdominal surgery.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: A total of 90 children having ASAI-II physical status between 3 and 12 was randomly divided into three groups as pre, int and post groups. Ketamine were given to these groups in the following manner respectively; 1mg/kg intravenous ketamine before incision (preincisional); the same dose ketamine 10 minutes following the first incision (intraoperative); and ketamine at the end of the surgical operation (postoperative). The pain of patients was assessed by postoperative pain scale (CHIPPS) in children and infants; the sedation status of children was assessed by Ramsey&#39;s sedation scale. The first analgesic requirement time was recorded.</p>\r\n<p>\r\n\t<strong>Results</strong>: No significant difference was found in demographic characteristics of the three groups (p&gt;0.05). Lower CHIPPS scores were found in Group Post throughout all measurement periods (p&lt;0.05). Group Post was found to have significantly higher sedation levels compared with the other two groups (p=0.003).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: No analgesic effect was obtained using by pre-incisional and intraoperative i.v.1mg/kg ketamine, during lower abdominal surgery in children. Further studies with different drugs are needed to clarify this topic.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Preemptive analgesic effect of low dose ketamine has been supported by clinical studies in adults. The aim of this study was to evaluate the analgesic effect of ketamine applied at different times in children who underwent lower abdominal surgery. Material and Methods: A total of 90 children having ASAI-II physical status between 3 and 12 was randomly divided into three groups as pre, int and post groups. Ketamine were given to these groups in the following manner respectively; 1mg/kg intravenous ketamine before incision (preincisional); the same dose ketamine 10 minutes following the first incision (intraoperative); and ketamine at the end of the surgical operation (postoperative). The pain of patients was assessed by postoperative pain scale (CHIPPS) in children and infants; the sedation status of children was assessed by Ramsey's sedation scale. The first analgesic requirement time was recorded. Results: No significant difference was found in demographic characteristics of the three groups (p>0.05). Lower CHIPPS scores were found in Group Post throughout all measurement periods (p<0.05). Group Post was found to have significantly higher sedation levels compared with the other two groups (p=0.003). Conclusion: No analgesic effect was obtained using by pre-incisional and intraoperative i.v.1mg/kg ketamine, during lower abdominal surgery in children. Further studies with different drugs are needed to clarify this topic.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03431.4",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "179-183",
+    "views": 6461,
+    "downloads": 9527,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "829",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=829",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=829",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=829",
+    "localPdfUrl": "js/data/pdfs/829.pdf",
+    "pdfUrl": "js/data/pdfs/829.pdf"
+  },
+  {
+    "id": 834,
+    "type": "Original Article",
+    "title": "Estimation of the Eyeball and Orbital Volume Using the Cavalieri Principle on Computed Tomography Images",
+    "authors": [
+      {
+        "name": "Niyazi Acer",
+        "affiliation": "Department of Anatomy, Faculty of Medicine, Erciyes University, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Demir",
+        "affiliation": "Health Services Vocational School, December 7 University, Kilis, Turke",
+        "orcid": ""
+      },
+      {
+        "name": "Tolga Uçar",
+        "affiliation": "Department of Eye Diseases, Muğla State Hospital, Muğla, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hıdır Pekmez",
+        "affiliation": "School of Health Sciences, Nursing Department, , Fırat University Elazığ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Atilla Göktaş",
+        "affiliation": "Department of Statistics, Faculty of Arts and Sciences, Muğla University, Muğla, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The volumes of the eyeball and orbit have been the subject of a few studies, yet none of them have used stereological methods to estimate the volume. In the present study, we estimated the volumes of the eyeball and orbita in normal healthy men and women using the stereological method. Material and Methods: We estimated the volume of the eyeball (VE) and the volume of the orbit (VO) in normal men and women using the Cavalieri principle as a combination of a point-counting technique. We used computed tomography scans taken from 31 subjects (12 men and 19 women). Results: The mean (±SD) VO in the female subjects was 18.47±2.52 cm3 on the right side and 18.16±2.52 cm3 on the left side. The VE was 7.45±1.19 cm3 and 7.45±1.25 cm3 on the right and left sides, respectively. The mean (±SD) VO in the male subjects was 22.35±3.05 cm3 on the right side and 22.71±2.80 cm3 on the left side. The VE was 7.32±0.74 cm3 and 7.61±1.04 cm3 on the right and left sides, respectively. Conclusion: Measurement by the technique described is an easy, and quick method of assessing the volumes of the eyeball and orbit.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The volumes of the eyeball and orbit have been the subject of a few studies, yet none of them have used stereological methods to estimate the volume. In the present study, we estimated the volumes of the eyeball and orbita in normal healthy men and women using the stereological method.</p>\r\n<p>\r\n\t<strong>Material</strong> <strong>and Methods</strong>: We estimated the volume of the eyeball (VE) and the volume of the orbit (VO) in normal men and women using the Cavalieri principle as a combination of a point-counting technique. We used computed tomography scans taken from 31 subjects (12 men and 19 women).</p>\r\n<p>\r\n\t<strong>Results</strong>: The mean (&plusmn;SD) VO in the female subjects was 18.47&plusmn;2.52 cm3 on the right side and 18.16&plusmn;2.52 cm3 on the left side. The VE was 7.45&plusmn;1.19 cm3 and 7.45&plusmn;1.25 cm3 on the right and left sides, respectively. The mean (&plusmn;SD) VO in the male subjects was 22.35&plusmn;3.05 cm3 on the right side and 22.71&plusmn;2.80 cm3 on the left side. The VE was 7.32&plusmn;0.74 cm3 and 7.61&plusmn;1.04 cm3 on the right and left sides, respectively.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Measurement by the technique described is an easy, and quick method of assessing the volumes of the eyeball and orbit.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The volumes of the eyeball and orbit have been the subject of a few studies, yet none of them have used stereological methods to estimate the volume. In the present study, we estimated the volumes of the eyeball and orbita in normal healthy men and women using the stereological method. Material and Methods: We estimated the volume of the eyeball (VE) and the volume of the orbit (VO) in normal men and women using the Cavalieri principle as a combination of a point-counting technique. We used computed tomography scans taken from 31 subjects (12 men and 19 women). Results: The mean (±SD) VO in the female subjects was 18.47±2.52 cm3 on the right side and 18.16±2.52 cm3 on the left side. The VE was 7.45±1.19 cm3 and 7.45±1.25 cm3 on the right and left sides, respectively. The mean (±SD) VO in the male subjects was 22.35±3.05 cm3 on the right side and 22.71±2.80 cm3 on the left side. The VE was 7.32±0.74 cm3 and 7.61±1.04 cm3 on the right and left sides, respectively. Conclusion: Measurement by the technique described is an easy, and quick method of assessing the volumes of the eyeball and orbit.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03473.3",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "184-188",
+    "views": 6153,
+    "downloads": 9906,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "834",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=834",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=834",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=834",
+    "localPdfUrl": "js/data/pdfs/834.pdf",
+    "pdfUrl": "js/data/pdfs/834.pdf"
+  },
+  {
+    "id": 837,
+    "type": "Original Article",
+    "title": "Comparison of a Vessel Sealing System with a Conventional Technique in Hemorrhoidectomy",
+    "authors": [
+      {
+        "name": "Serkan Teksöz",
+        "affiliation": "Department of General Surgery, Cerrahpaşa Medical Faculty, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nihat Yavuz",
+        "affiliation": "Department of General Surgery, Cerrahpaşa Medical Faculty, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Osman Baran Tortum",
+        "affiliation": "Department of General Surgery, Cerrahpaşa Medical Faculty, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Özcan",
+        "affiliation": "Department of General Surgery, Cerrahpaşa Medical Faculty, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yusuf Bükey",
+        "affiliation": "Department of General Surgery, Cerrahpaşa Medical Faculty, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erman Aytaç",
+        "affiliation": "Departments of General Surgery, Cerrahpaşa Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Milligan-Morgan, Park and Ferguson hemorrhoidectomy procedures are the ones most frequently used for the surgical treatment of hemorrhoidal disease. Attempts to modify these conventional approaches are made by using different techniques or tools to decrease blood loss, and reduce operating time and postoperative analgesic requirement. In this prospective randomized trial, the conventional Ferguson hemorrhoidectomy method is compared with the LigaSure® hemorrhoidectomy according to various criteria. Material and Methods: Forty patients who had grade 3-4 hemorrhoidal disease were randomly divided into two equal groups: the Ferguson Hemorrhoidectomy (n=20) and the LigaSure® hemorrhoidectomy (n=20). Operating time, demographic data, intraoperative and postoperative complications, postoperative pain, return of bowel movements and postoperative hospital stay were evaluated. The visual analogue score was used for the evaluation of pain on the first postoperative day. The patients have been followed up for at least 19 months. Results: The pain score, blood loss and operating time were significantly reduced in the LigaSure® hemorrhoidectomy group. Conclusion: LigaSure® hemorrhoidectomy is safe and feasible for the surgeon, and more comfortable than classical surgery for the patient.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Milligan-Morgan, Park and Ferguson hemorrhoidectomy procedures are the ones most frequently used for the surgical treatment of hemorrhoidal disease. Attempts to modify these conventional approaches are made by using different techniques or tools to decrease blood loss, and reduce operating time and postoperative analgesic requirement. In this prospective randomized trial, the conventional Ferguson hemorrhoidectomy method is compared with the LigaSure&reg; hemorrhoidectomy according to various criteria.</p>\r\n<p>\r\n\t<strong>Material</strong> <strong>and</strong> <strong>Methods</strong>: Forty patients who had grade 3-4 hemorrhoidal disease were randomly divided into two equal groups: the Ferguson Hemorrhoidectomy (n=20) and the LigaSure&reg; hemorrhoidectomy (n=20). Operating time, demographic data, intraoperative and postoperative complications, postoperative pain, return of bowel movements and postoperative hospital stay were evaluated. The visual analogue score was used for the evaluation of pain on the first postoperative day. The patients have been followed up for at least 19 months.</p>\r\n<p>\r\n\t<strong>Results</strong>: The pain score, blood loss and operating time were significantly reduced in the LigaSure&reg; hemorrhoidectomy group.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: LigaSure&reg; hemorrhoidectomy is safe and feasible for the surgeon, and more comfortable than classical surgery for the patient.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Milligan-Morgan, Park and Ferguson hemorrhoidectomy procedures are the ones most frequently used for the surgical treatment of hemorrhoidal disease. Attempts to modify these conventional approaches are made by using different techniques or tools to decrease blood loss, and reduce operating time and postoperative analgesic requirement. In this prospective randomized trial, the conventional Ferguson hemorrhoidectomy method is compared with the LigaSure® hemorrhoidectomy according to various criteria. Material and Methods: Forty patients who had grade 3-4 hemorrhoidal disease were randomly divided into two equal groups: the Ferguson Hemorrhoidectomy (n=20) and the LigaSure® hemorrhoidectomy (n=20). Operating time, demographic data, intraoperative and postoperative complications, postoperative pain, return of bowel movements and postoperative hospital stay were evaluated. The visual analogue score was used for the evaluation of pain on the first postoperative day. The patients have been followed up for at least 19 months. Results: The pain score, blood loss and operating time were significantly reduced in the LigaSure® hemorrhoidectomy group. Conclusion: LigaSure® hemorrhoidectomy is safe and feasible for the surgeon, and more comfortable than classical surgery for the patient.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03074.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "189-192",
+    "views": 6253,
+    "downloads": 2721,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "837",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=837",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=837",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=837",
+    "localPdfUrl": "js/data/pdfs/837.pdf",
+    "pdfUrl": "js/data/pdfs/837.pdf"
+  },
+  {
+    "id": 841,
+    "type": "Original Article",
+    "title": "Prevalence of Multiple Sclerosis in the Metropolitan Area of Edirne City, Turkey",
+    "authors": [
+      {
+        "name": "Yahya Çelik",
+        "affiliation": "Departments of Neurology, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Özlem Birgili",
+        "affiliation": "Department of Neurology, Edirne State Hospital, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Yılmaz",
+        "affiliation": "Department of Neurology, Edirne State Hospital, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aslı Kiyat",
+        "affiliation": "Cerrahpaşa Medical Faculty, Department of Neurology, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sebahattin Saip",
+        "affiliation": "Cerrahpaşa Medical Faculty, Department of Neurology, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aksel Siva",
+        "affiliation": "Cerrahpaşa Medical Faculty, Department of Neurology, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Baburhan Güldiken",
+        "affiliation": "Department of Neurology, School of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hülya Özkan",
+        "affiliation": "Edirne Devlet Hastanesi Nöroloji Kliniği, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Kuşçu",
+        "affiliation": "Department of Neurology, Bakırköy State Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nevin Sütlas",
+        "affiliation": "Department of Neurology, Bakırköy State Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Jale Ağaoğlu",
+        "affiliation": "Department of Neurology, Okmeyadanı State Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ufuk Utku",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The prevalence and incidence of multiple sclerosis may vary according to the influence of the altitude of a geographical area as well as the genetic and environmental factors. This study ained to determine the incidence and prevalence of multiple sclerosis in Edirne population. Material and Methods: Patients with a definite diagnosis of MS according to McDonald's criteria, admitted to one of the three MS clinics in Edirne, were included in this two-stage study. Also the records of hospitals in İstanbul serving patients from Edirne, have been evaluated. Results: The prevalence rate of confirmed MS patients was 33.9/100000 (95% CI: 32-36) in 2003. The mean annual incidence was 3.48/100000 (95% CI: 2.90-4.00). Mean age of the patients was 36.5±9.6 years. Mean age at onset was 29.2±8.5 years. Mean duration of disease was 6.9±5.2 years. Overall, 69.2% had a relapsing-remitting course, 20.5% had a primary progressive course and 10.3% had a secondary progressive course. Mean Expanded Disability Status Scale score was 3.04±2.18. The prevalence and annual incidence after one year was 36.5 per 100000 (95% CI: 33.2-38.6) and 2.60 per 100000 (95% CI: 2.1-3.8), respectively. Conclusion: This is the first city-based MS prevalence study performed in Turkey. The MS prevalence in Edirne is similar to that of Greece and Bulgaria but lower than that of European countries. <",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The prevalence and incidence of multiple sclerosis may vary according to the influence of the altitude of a geographical area as well as the genetic and environmental factors. This study ained to determine the incidence and prevalence of multiple sclerosis in Edirne population.</p>\r\n<p>\r\n\t<strong>Material and</strong> <strong>Methods</strong>: Patients with a definite diagnosis of MS according to McDonald&#39;s criteria, admitted to one of the three MS clinics in Edirne, were included in this two-stage study. Also the records of hospitals in İstanbul serving patients from Edirne, have been evaluated.</p>\r\n<p>\r\n\t<strong>Results</strong>: The prevalence rate of confirmed MS patients was 33.9/100000 (95% CI: 32-36) in 2003. The mean annual incidence was 3.48/100000 (95% CI: 2.90-4.00). Mean age of the patients was 36.5&plusmn;9.6 years. Mean age at onset was 29.2&plusmn;8.5 years. Mean duration of disease was 6.9&plusmn;5.2 years. Overall, 69.2% had a relapsing-remitting course, 20.5% had a primary progressive course and 10.3% had a secondary progressive course. Mean Expanded Disability Status Scale score was 3.04&plusmn;2.18. The prevalence and annual incidence after one year was 36.5 per 100000 (95% CI: 33.2-38.6) and 2.60 per 100000 (95% CI: 2.1-3.8), respectively.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: This is the first city-based MS prevalence study performed in Turkey. The MS prevalence in Edirne is similar to that of Greece and Bulgaria but lower than that of European countries.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>\n\t\t<",
+    "previewText": "Abstract Objective: The prevalence and incidence of multiple sclerosis may vary according to the influence of the altitude of a geographical area as well as the genetic and environmental factors. This study ained to determine the incidence and prevalence of multiple sclerosis in Edirne population. Material and Methods: Patients with a definite diagnosis of MS according to McDonald's criteria, admitted to one of the three MS clinics in Edirne, were included in this two-stage study. Also the records of hospitals in İstanbul serving patients from Edirne, have been evaluated. Results: The prevalence rate of confirmed MS patients was 33.9/100000 (95% CI: 32-36) in 2003. The mean annual incidence was 3.48/100000 (95% CI: 2.90-4.00). Mean age of the patients was 36.5±9.6 years. Mean age at onset was 29.2±8.5 years. Mean duration of disease was 6.9±5.2 years. Overall, 69.2% had a relapsing-remitting course, 20.5% had a primary progressive course and 10.3% had a secondary progressive course. Mean Expanded Disability Status Scale score was 3.04±2.18. The prevalence and annual incidence after one year was 36.5 per 100000 (95% CI: 33.2-38.6) and 2.60 per 100000 (95% CI: 2.1-3.8), respectively. Conclusion: This is the first city-based MS prevalence study performed in Turkey. The MS prevalence in Edirne is similar to that of Greece and Bulgaria but lower than that of European countries. <",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.04089.0",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "193-196",
+    "views": 6924,
+    "downloads": 3474,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "841",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=841",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=841",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=841",
+    "localPdfUrl": "js/data/pdfs/841.pdf",
+    "pdfUrl": "js/data/pdfs/841.pdf"
+  },
+  {
+    "id": 846,
+    "type": "Original Article",
+    "title": "3D Motion Analysis of Hip, Knee and Ankle Joints of Children Aged Between 7-11 Years During Gait",
+    "authors": [
+      {
+        "name": "Bülent Sabri Cigali",
+        "affiliation": "Department of Anatomy, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Enis Uluçam",
+        "affiliation": "Department of Anatomy, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The purpose of this study is to constitute a normative walking kinematic database and to investigate the differences between 7-11 aged children and between the left and right sides of those age groups. Materials and Methods: Fifty children between the 7 and 11 years old (10 from each age group) participated in this study. The measurements were made with Zebris© CMS 70 P 3D motion analysis system. Flexion- extension, abduction-adduction angles of the hip joint, the flexion-extension of the knee and ankle joints and foot rotations for each age group for both sides were recorded. Results: Even all the groups' gait patterns were similar with the literature, 9 years old group has lower knee flexion and higher ankle extensions (p<0.05). Eight and 9 years old groups have higher maximum ankle extension values when compared with the other age groups (p<0.05). Conclusion: Kinematic analysis results of 7 to 11 years old children suggests adult-like gait patterns especially for the hip and knee. These findings stress the importance of age-matched normative data for the kinematic gait analysis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The purpose of this study is to constitute a normative walking kinematic database and to investigate the differences between 7-11 aged children and between the left and right sides of those age groups.</p>\r\n<p>\r\n\t<strong>Materials and Methods</strong>: Fifty children between the 7 and 11 years old (10 from each age group) participated in this study. The measurements were made with Zebris&copy; CMS 70 P 3D motion analysis system. Flexion- extension, abduction-adduction angles of the hip joint, the flexion-extension of the knee and ankle joints and foot rotations for each age group for both sides were recorded.</p>\r\n<p>\r\n\t<strong>Results</strong>: Even all the groups&#39; gait patterns were similar with the literature, 9 years old group has lower knee flexion and higher ankle extensions (p&lt;0.05). Eight and 9 years old groups have higher maximum ankle extension values when compared with the other age groups (p&lt;0.05).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Kinematic analysis results of 7 to 11 years old children suggests adult-like gait patterns especially for the hip and knee. These findings stress the importance of age-matched normative data for the kinematic gait analysis.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The purpose of this study is to constitute a normative walking kinematic database and to investigate the differences between 7-11 aged children and between the left and right sides of those age groups. Materials and Methods: Fifty children between the 7 and 11 years old (10 from each age group) participated in this study. The measurements were made with Zebris© CMS 70 P 3D motion analysis system. Flexion- extension, abduction-adduction angles of the hip joint, the flexion-extension of the knee and ankle joints and foot rotations for each age group for both sides were recorded. Results: Even all the groups' gait patterns were similar with the literature, 9 years old group has lower knee flexion and higher ankle extensions (p<0.05). Eight and 9 years old groups have higher maximum ankle extension values when compared with the other age groups (p<0.05). Conclusion: Kinematic analysis results of 7 to 11 years old children suggests adult-like gait patterns especially for the hip and knee. These findings stress the importance of age-matched normative data for the kinematic gait analysis.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.04199.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "197-201",
+    "views": 6740,
+    "downloads": 3122,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "846",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=846",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=846",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=846",
+    "localPdfUrl": "js/data/pdfs/846.pdf",
+    "pdfUrl": "js/data/pdfs/846.pdf"
+  },
+  {
+    "id": 848,
+    "type": "Case Report",
+    "title": "A Rare Complication of Diagnostic Angiography in a Child with Vertebro-Venous Fistula: Transient Total Cortical Blindness",
+    "authors": [
+      {
+        "name": "Abdullah Erdem",
+        "affiliation": "Department of Pediatric Cardiology, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Celal Akdeniz",
+        "affiliation": "Department of Pediatric Cardiology, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Çelebi",
+        "affiliation": "Department of Pediatric Cardiology, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Transient cortical blindness is a rare and dramatic complication after coronary angiocardiography in adulthood. This potential complication of transcatheter procedures which are widely used in the diagnosis and treatment of congential heart disease has not been reported during childhood. Although the exact mechanism is not fully understood, the direct idiosyncratic neurotoxicity is the most reasonable explanation. In this manuscript, we present a nine-year-old child who developed transient cortical blindness following diagnostic angiography with vertebro- venous fistula (VVF) which might be the cause of this complication. In regard to this case, the pathogenetic mechanisms and management of this rare complication were also discussed.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tTransient cortical blindness is a rare and dramatic complication after coronary angiocardiography in adulthood. This potential complication of transcatheter procedures which are widely used in the diagnosis and treatment of congential heart disease has not been reported during childhood. Although the exact mechanism is not fully understood, the direct idiosyncratic neurotoxicity is the most reasonable explanation. In this manuscript, we present a nine-year-old child who developed transient cortical blindness following diagnostic angiography with vertebro- venous fistula (VVF) which might be the cause of this complication. In regard to this case, the pathogenetic mechanisms and management of this rare complication were also discussed.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Transient cortical blindness is a rare and dramatic complication after coronary angiocardiography in adulthood. This potential complication of transcatheter procedures which are widely used in the diagnosis and treatment of congential heart disease has not been reported during childhood. Although the exact mechanism is not fully understood, the direct idiosyncratic neurotoxicity is the most reasonable explanation. In this manuscript, we present a nine-year-old child who developed transient cortical blindness following diagnostic angiography with vertebro- venous fistula (VVF) which might be the cause of this complication. In regard to this case, the pathogenetic mechanisms and management of this rare complication were also discussed.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02713.0",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "202-204",
+    "views": 6771,
+    "downloads": 2044,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "848",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=848",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=848",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=848",
+    "localPdfUrl": "js/data/pdfs/848.pdf",
+    "pdfUrl": "js/data/pdfs/848.pdf"
+  },
+  {
+    "id": 851,
+    "type": "Case Report",
+    "title": "Spontaneous Gastrosplenic Fistula Resulting From Primary Gastric Lymphoma: Case Report and Review of the Literature",
+    "authors": [
+      {
+        "name": "Münevver Moran",
+        "affiliation": "Department of General Surgery, Ankara Numune Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İsmail Bilgiç",
+        "affiliation": "Department of General Surgery, Ankara Numune Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hayrettin Dizen",
+        "affiliation": "Department of General Surgery, Ankara Numune Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Evren Dilektaşlı",
+        "affiliation": "Department of General Surgery, Ankara Numune Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Mahir Özmen",
+        "affiliation": "Department of General Surgery, Ankara Numune Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tankut Köseoğlu [[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract A fistulous tract between the stomach and the spleen is a rare manifestation. Spontaneous gastrosplenic fistula formation resulting from primary gastric lymphoma is extremely rare and should be managed as an emergency. To date, four gastrosplenic fistulas originating from gastric lymphoma have been reported, of which three were spontaneous and one occurred following chemotherapy. We report a case of spontaneous gastrosplenic fistula in a 35 years-old-man with gastric malignant B-cell non-Hodgkin's lymphoma who was diagnosed by computed tomography and endoscopically, followed by successful treatment with total gastrectomy and splenectomy.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tA fistulous tract between the stomach and the spleen is a rare manifestation. Spontaneous gastrosplenic fistula formation resulting from primary gastric lymphoma is extremely rare and should be managed as an emergency. To date, four gastrosplenic fistulas originating from gastric lymphoma have been reported, of which three were spontaneous and one occurred following chemotherapy. We report a case of spontaneous gastrosplenic fistula in a 35 years-old-man with gastric malignant B-cell non-Hodgkin&#39;s lymphoma who was diagnosed by computed tomography and endoscopically, followed by successful treatment with total gastrectomy and splenectomy.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract A fistulous tract between the stomach and the spleen is a rare manifestation. Spontaneous gastrosplenic fistula formation resulting from primary gastric lymphoma is extremely rare and should be managed as an emergency. To date, four gastrosplenic fistulas originating from gastric lymphoma have been reported, of which three were spontaneous and one occurred following chemotherapy. We report a case of spontaneous gastrosplenic fistula in a 35 years-old-man with gastric malignant B-cell non-Hodgkin's lymphoma who was diagnosed by computed tomography and endoscopically, followed by successful treatment with total gastrectomy and splenectomy.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02645.1",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "205-208",
+    "views": 6321,
+    "downloads": 1953,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "851",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=851",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=851",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=851",
+    "localPdfUrl": "js/data/pdfs/851.pdf",
+    "pdfUrl": "js/data/pdfs/851.pdf"
+  },
+  {
+    "id": 856,
+    "type": "Case Report",
+    "title": "Primary Hydatid Cyst of the Axillary Region: A Case Report",
+    "authors": [
+      {
+        "name": "Haluk Recai Ünalp",
+        "affiliation": "Department of 4th General Surgery, İzmir Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erdinç Kamer",
+        "affiliation": "Department of 4th General Surgery, İzmir Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özgür Kılıç",
+        "affiliation": "Department of 4th General Surgery, İzmir Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Ali Önal",
+        "affiliation": "Department of 4th General Surgery, İzmir Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Türkan Rezanko",
+        "affiliation": "Department of Pathology İzmir Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mine Tunakan",
+        "affiliation": "Department of Pathology İzmir Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Hydatid disease, which is caused by Echinococcus granulosus, is a common public health problem worldwide. The hydatid cysts may take many years to produce clinical symptoms. The liver is the organ most commonly affected. Diagnosis is made by a combination of clinical, imaging, serological and molecular techniques. Primary axillary hydatid disease is extremely rare and only 9 cases have been reported up to now. Herein, we reported a 48-yearold case with primary isolated hydatid disease in the axilla in whom total cystectomy was performed.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tHydatid disease, which is caused by Echinococcus granulosus, is a common public health problem worldwide. The hydatid cysts may take many years to produce clinical symptoms. The liver is the organ most commonly affected. Diagnosis is made by a combination of clinical, imaging, serological and molecular techniques. Primary axillary hydatid disease is extremely rare and only 9 cases have been reported up to now. Herein, we reported a 48-yearold case with primary isolated hydatid disease in the axilla in whom total cystectomy was performed.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Hydatid disease, which is caused by Echinococcus granulosus, is a common public health problem worldwide. The hydatid cysts may take many years to produce clinical symptoms. The liver is the organ most commonly affected. Diagnosis is made by a combination of clinical, imaging, serological and molecular techniques. Primary axillary hydatid disease is extremely rare and only 9 cases have been reported up to now. Herein, we reported a 48-yearold case with primary isolated hydatid disease in the axilla in whom total cystectomy was performed.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02663.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "209-211",
+    "views": 5933,
+    "downloads": 2061,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "856",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=856",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=856",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=856",
+    "localPdfUrl": "js/data/pdfs/856.pdf",
+    "pdfUrl": "js/data/pdfs/856.pdf"
+  },
+  {
+    "id": 859,
+    "type": "Case Report",
+    "title": "Benzalkonium Chloride Intoxication Mimicking Herpes Zoster Encephalitis",
+    "authors": [
+      {
+        "name": "Ekrem Güler",
+        "affiliation": "Department of Pediatrics, Faculty of Medicine, Kahramanmaraş Sutcu İmam University, Kahramanmaraş, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şeref Olgar",
+        "affiliation": "Department of Pediatrics, Faculty of Medicine, Kahramanmaraş Sutcu İmam University, Kahramanmaraş, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Davutoğlu",
+        "affiliation": "Department of Pediatrics, Faculty of Medicine, Kahramanmaraş Sutcu İmam University, Kahramanmaraş, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mesut Garipardıç",
+        "affiliation": "Department of Pediatrics, Faculty of Medicine, Kahramanmaraş Sutcu İmam University, Kahramanmaraş, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hamza Karabiber",
+        "affiliation": "Department of Pediatrics, Faculty of Medicine, Kahramanmaraş Sutcu İmam University, Kahramanmaraş, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Benzalkonium chloride (BAC) is a frequently used disinfectant and its most well-known side effect is contact dermatitis. In this report, two children who had vesicular dermatitis, headache, lethargy, fever and encephalopathy mimicking Herpes zoster encephalitis were presented. Their consciousness level improved on the second day. From the medical history it was understood that the mother had applied 20% BAC solution to the scalps of two children. The aim of the presentation of this report is to draw attention to the fact that BAC application to the scalp for treating pediculosis capitis may resemble the herpes encephalitis clinical picture.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tBenzalkonium chloride (BAC) is a frequently used disinfectant and its most well-known side effect is contact dermatitis. In this report, two children who had vesicular dermatitis, headache, lethargy, fever and encephalopathy mimicking Herpes zoster encephalitis were presented. Their consciousness level improved on the second day. From the medical history it was understood that the mother had applied 20% BAC solution to the scalps of two children. The aim of the presentation of this report is to draw attention to the fact that BAC application to the scalp for treating pediculosis capitis may resemble the herpes encephalitis clinical picture.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Benzalkonium chloride (BAC) is a frequently used disinfectant and its most well-known side effect is contact dermatitis. In this report, two children who had vesicular dermatitis, headache, lethargy, fever and encephalopathy mimicking Herpes zoster encephalitis were presented. Their consciousness level improved on the second day. From the medical history it was understood that the mother had applied 20% BAC solution to the scalps of two children. The aim of the presentation of this report is to draw attention to the fact that BAC application to the scalp for treating pediculosis capitis may resemble the herpes encephalitis clinical picture.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02691.1",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "212-213",
+    "views": 7456,
+    "downloads": 3592,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "859",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=859",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=859",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=859",
+    "localPdfUrl": "js/data/pdfs/859.pdf",
+    "pdfUrl": "js/data/pdfs/859.pdf"
+  },
+  {
+    "id": 862,
+    "type": "Case Report",
+    "title": "Self Cannibalism of Fingers in an Alzheimer Patient",
+    "authors": [
+      {
+        "name": "Özgür Sunay",
+        "affiliation": "Dokuz Eylül Üniversitesi Tıp Fakültesi, Plastik Rekonstrüktif ve Estetik Cerrahi Anabilim Dalı, İzmir, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Adnan Menderes",
+        "affiliation": "Dokuz Eylül Üniversitesi Tıp Fakültesi, Plastik Rekonstrüktif ve Estetik Cerrahi Anabilim Dalı, İzmir, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract In society, the instinct to eat one's own tissues is rare. However it is generally limited to reported cases concerning soft tissue. A patient who was admitted to our department had eaten the distal and middle phalangeal soft tissue along with bone tissue.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tIn society, the instinct to eat one&#39;s own tissues is rare. However it is generally limited to reported cases concerning soft tissue. A patient who was admitted to our department had eaten the distal and middle phalangeal soft tissue along with bone tissue.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract In society, the instinct to eat one's own tissues is rare. However it is generally limited to reported cases concerning soft tissue. A patient who was admitted to our department had eaten the distal and middle phalangeal soft tissue along with bone tissue.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02743.3",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "214-215",
+    "views": 6119,
+    "downloads": 2119,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "862",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=862",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=862",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=862",
+    "localPdfUrl": "js/data/pdfs/862.pdf",
+    "pdfUrl": "js/data/pdfs/862.pdf"
+  },
+  {
+    "id": 863,
+    "type": "Case Report",
+    "title": "Nosocomial Leuconostoc Pseudomesenteroides Meningitis: A Case Report and Review of the Literature",
+    "authors": [
+      {
+        "name": "Özlem Taşkapılıoğlu",
+        "affiliation": "Department of Neurology, School of Medicine, Uludağ University, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aslı Bahar",
+        "affiliation": "Department of Neurology, School of Medicine, Uludağ University, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Bakar",
+        "affiliation": "Department of Neurology, School of Medicine, Uludağ University, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emel Yılmaz",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, School of Medicine,Uludağ University, Bursa, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Leuconostoc spp, a member of the Streptococci family, was found to cause infection in humans in 1985. These infections have been reported in patients who had received vancomycin to treat their underlying diseases. Nosocomial meningitis caused by Leuconostoc spp. was diagnosed in our patient. An extraventricular drainage system catheter was used due to the presence of a thalamic hematoma with ventricular extension. Central nervous system infections due to Leuconostoc spp. are rare. To our knowledge, our case is the sixth case worldwide and the second case reported from Turkey. This case is reported here to draw attention to a rare infectious agent with a high mortality risk.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tLeuconostoc spp, a member of the Streptococci family, was found to cause infection in humans in 1985. These infections have been reported in patients who had received vancomycin to treat their underlying diseases.</p>\r\n<p>\r\n\tNosocomial meningitis caused by Leuconostoc spp. was diagnosed in our patient. An extraventricular drainage system catheter was used due to the presence of a thalamic hematoma with ventricular extension. Central nervous system infections due to Leuconostoc spp. are rare. To our knowledge, our case is the sixth case worldwide and the second case reported from Turkey. This case is reported here to draw attention to a rare infectious agent with a high mortality risk.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Leuconostoc spp, a member of the Streptococci family, was found to cause infection in humans in 1985. These infections have been reported in patients who had received vancomycin to treat their underlying diseases. Nosocomial meningitis caused by Leuconostoc spp. was diagnosed in our patient. An extraventricular drainage system catheter was used due to the presence of a thalamic hematoma with ventricular extension. Central nervous system infections due to Leuconostoc spp. are rare. To our knowledge, our case is the sixth case worldwide and the second case reported from Turkey. This case is reported here to draw attention to a rare infectious agent with a high mortality risk.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02362.4",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "216-218",
+    "views": 5971,
+    "downloads": 9669,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "863",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=863",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=863",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=863",
+    "localPdfUrl": "js/data/pdfs/863.pdf",
+    "pdfUrl": "js/data/pdfs/863.pdf"
+  },
+  {
+    "id": 864,
+    "type": "Case Report",
+    "title": "Dandy-Walker Variant in A Fetus of an ICSI Twin Gestation: A Case Report",
+    "authors": [
+      {
+        "name": "Banu Kumbak",
+        "affiliation": "Umut IVF Center, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Meltem Bor",
+        "affiliation": "Department of Pediatrics, Cerrahpaşa Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Bahçeci",
+        "affiliation": "German Hospital, IVF Unit, Istanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Keywords : Assisted reproductive treatment, congenital anomaly, Dandy-Walker variant, intracytoplasmic sperm injection (ICSI), partial trisomy 9",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<b>Keywords :</b>\t\tAssisted reproductive treatment, congenital anomaly, Dandy-Walker variant, intracytoplasmic sperm injection (ICSI), partial trisomy 9 \t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Keywords : Assisted reproductive treatment, congenital anomaly, Dandy-Walker variant, intracytoplasmic sperm injection (ICSI), partial trisomy 9",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02788.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "219-221",
+    "views": 6624,
+    "downloads": 4023,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "864",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=864",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=864",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=864",
+    "localPdfUrl": "js/data/pdfs/864.pdf",
+    "pdfUrl": "js/data/pdfs/864.pdf"
+  },
+  {
+    "id": 865,
+    "type": "Case Report",
+    "title": "Protracted Febrile Myalgia in a Child as the Presenting Sign of Familial Mediterranean Fever: Case Report and Review of the Literature",
+    "authors": [
+      {
+        "name": "İbrahim Gökçe",
+        "affiliation": "Department of Pediatric Nephrology, Gülhane Military Medical Academy, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erkan Demirkaya",
+        "affiliation": "Department of Pediatric Nephrology, Gülhane Military Medical Academy, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Faysal Gök [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Protracted febrile myalgia (PFM) is a rare form of vasculitic disease which is an uncommon dramatic manifestation of familial Mediterranean fever (FMF), characterized by severe crippling myalgia and high fever. We describe a 14-year-old boy who presented with fever, abdominal pain and severe myalgia in all his muscles for 5 days. The diagnosis of PFM was considered based on the presence of fever, paralyzing myalgia with normal CPK, elevated CRP and ESR. Thus, we started prednisolone treatment and his symptoms disappeared and acute-phase reactants declined rapidly. Mutational analysis of the MEFV gene demonstrated homozygote M694V mutation. Thus, he was diagnosed as PFM and FMF. In this report, we present a child with PFM as the sole feature preceding the diagnosis of FMF, and draw attention to the PFM for the diagnosis of FMF even the patient does not fulfill the criteria for the clinical diagnosis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tProtracted febrile myalgia (PFM) is a rare form of vasculitic disease which is an uncommon dramatic manifestation of familial Mediterranean fever (FMF), characterized by severe crippling myalgia and high fever. We describe a 14-year-old boy who presented with fever, abdominal pain and severe myalgia in all his muscles for 5 days. The diagnosis of PFM was considered based on the presence of fever, paralyzing myalgia with normal CPK, elevated CRP and ESR. Thus, we started prednisolone treatment and his symptoms disappeared and acute-phase reactants declined rapidly. Mutational analysis of the MEFV gene demonstrated homozygote M694V mutation. Thus, he was diagnosed as PFM and FMF. In this report, we present a child with PFM as the sole feature preceding the diagnosis of FMF, and draw attention to the PFM for the diagnosis of FMF even the patient does not fulfill the criteria for the clinical diagnosis.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Protracted febrile myalgia (PFM) is a rare form of vasculitic disease which is an uncommon dramatic manifestation of familial Mediterranean fever (FMF), characterized by severe crippling myalgia and high fever. We describe a 14-year-old boy who presented with fever, abdominal pain and severe myalgia in all his muscles for 5 days. The diagnosis of PFM was considered based on the presence of fever, paralyzing myalgia with normal CPK, elevated CRP and ESR. Thus, we started prednisolone treatment and his symptoms disappeared and acute-phase reactants declined rapidly. Mutational analysis of the MEFV gene demonstrated homozygote M694V mutation. Thus, he was diagnosed as PFM and FMF. In this report, we present a child with PFM as the sole feature preceding the diagnosis of FMF, and draw attention to the PFM for the diagnosis of FMF even the patient does not fulfill the criteria for the clinical diagnosis.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02972.3",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "222-223",
+    "views": 6856,
+    "downloads": 9598,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "865",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=865",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=865",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=865",
+    "localPdfUrl": "js/data/pdfs/865.pdf",
+    "pdfUrl": "js/data/pdfs/865.pdf"
+  },
+  {
+    "id": 866,
+    "type": "Case Report",
+    "title": "Positive Mixed lymphocyte Culture Test Result Due to HLA-DP Mismatch",
+    "authors": [
+      {
+        "name": "Tülay Kılıçaslan Ayna",
+        "affiliation": "Department of Medical Biology, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Gürkan",
+        "affiliation": "Department of Medical Biology, Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hilmi Tozkır",
+        "affiliation": "İstanbul Üniversitesi İstanbul Tıp Fakültesi, Tıbbi Biyoloji Anabilim Dalı, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Hayriye Şentürk Çiftçi",
+        "affiliation": "İstanbul Üniversitesi İstanbul Tıp Fakültesi, Tıbbi Biyoloji Anabilim Dalı, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Gürtekin",
+        "affiliation": "İstanbul Üniversitesi İstanbul Tıp Fakültesi, Tıbbi Biyoloji Anabilim Dalı, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Emre Tekgündüz",
+        "affiliation": "Department of Hematology, Haydarpaşa Training Hospital, Gülhane Military Medical School, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Çetin Algüneş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıbbi Biyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Mahmut Çarin",
+        "affiliation": "Departments of Gastroenterohepatology, İstanbul Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Graft Versus Host Disease (GVHD) remains a major cause of morbidity and mortality in allogeneic stem cell transplantation (SCT). The MLC assay has been generally accepted as a standard test for determining HLA-D region compatibility. In this study, the MLC test has been carried out on the related recipient-donor couple who were prepared for allogeneic SCT and were found to be matched for HLA-A, -B, -Cw, DR, DQ but not for -DP. The result of the MLC test was positive. We observed that HLA-DP mismatch was responsible for the increased proliferation values in MLC test.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tGraft Versus Host Disease (GVHD) remains a major cause of morbidity and mortality in allogeneic stem cell transplantation (SCT). The MLC assay has been generally accepted as a standard test for determining HLA-D region compatibility. In this study, the MLC test has been carried out on the related recipient-donor couple who were prepared for allogeneic SCT and were found to be matched for HLA-A, -B, -Cw, DR, DQ but not for -DP. The result of the MLC test was positive. We observed that HLA-DP mismatch was responsible for the increased proliferation values in MLC test.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Graft Versus Host Disease (GVHD) remains a major cause of morbidity and mortality in allogeneic stem cell transplantation (SCT). The MLC assay has been generally accepted as a standard test for determining HLA-D region compatibility. In this study, the MLC test has been carried out on the related recipient-donor couple who were prepared for allogeneic SCT and were found to be matched for HLA-A, -B, -Cw, DR, DQ but not for -DP. The result of the MLC test was positive. We observed that HLA-DP mismatch was responsible for the increased proliferation values in MLC test.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02852.1",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "2",
+    "pages": "224-226",
+    "views": 6462,
+    "downloads": 2743,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1157",
+    "sourceArticleId": "866",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=866",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=866",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=866",
+    "localPdfUrl": "js/data/pdfs/866.pdf",
+    "pdfUrl": "js/data/pdfs/866.pdf"
+  }
+]

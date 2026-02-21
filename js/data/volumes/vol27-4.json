@@ -1,0 +1,1494 @@
+[
+  {
+    "id": 1834,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "1834",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1834",
+    "localPdfUrl": "js/data/pdfs/1834.pdf",
+    "pdfUrl": "js/data/pdfs/1834.pdf"
+  },
+  {
+    "id": 894,
+    "type": "Original Article",
+    "title": "Evaluation of Terbinafine Activity on Pneumocystis carinii in the Rat Model",
+    "authors": [
+      {
+        "name": "Müge Oğuzkaya ARTAN",
+        "affiliation": "Erciyes Üniversitesi, Sağlık Hizmetleri Meslek Yüksekokulu, Kayseri",
+        "orcid": ""
+      },
+      {
+        "name": "Nedret Koç",
+        "affiliation": "Erciyes Üniversitesi, Tıp Fakültesi Mikrobiyoloji Anabilim Dalı, 3Biyoistatistik Anabilim Dalı, Kayseri",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Öztürk",
+        "affiliation": "Department of Hematology, Haydarpaşa Training Hospital, Gülhane Military Medical School, İstanbul",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The purpose of this study was to test the hypothesis thThis study was planned to investigate the antipneumocystis activity of terbinafine in a rat model. Material and Methods: Rats were obtained from the Hakan Çetinsaya Experimental and Clinical Research Institutions, Erciyes University, Kayseri, Turkey. Terbinafine administered orally in doses of 40, 80, 120 and 160 mg/kg/day after nine weeks of immunosuppression with dexamethasone to facilitate the development of acute Pneumocystis carinii penumoniae (PCP). Results: Untreated animals showed P. carinii infection levels with a mean (±standard deviation) log number of cysts per gram of lung tissue of 4.6±1.6 at the end of the experiment. Terbinafine administered at a dose of 160 mg/kg/day significantly reduced the log number of cysts per gram to 2.2±1.5. The therapeutic efficacy of terbinafine administered at 160 mg/kg/day (log 2.2±1.5 cysts/lung) was similar to that obtained with trimethoprim-sulfamethoxazole (TMP-SMX), 50/250 mg/kg/day (p<0.001). A reduction in the number of cysts was also observed in infected animals treated with 80, and 120 mg of terbinafine/kg/day, although the results were not statistically significant (p>0.05). Conclusion: In our model, the efficacy of terbinafine in PCP has been found to be dose dependent.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The purpose of this study was to test the hypothesis thThis study was planned to investigate the antipneumocystis activity of terbinafine in a rat model.</p>\r\n<p>\r\n\t<strong>Material and</strong> <strong>Methods</strong>: Rats were obtained from the Hakan &Ccedil;etinsaya Experimental and Clinical Research Institutions, Erciyes University, Kayseri, Turkey. Terbinafine administered orally in doses of 40, 80, 120 and 160 mg/kg/day after nine weeks of immunosuppression with dexamethasone to facilitate the development of acute Pneumocystis carinii penumoniae (PCP).</p>\r\n<p>\r\n\t<strong>Results</strong>: Untreated animals showed P. carinii infection levels with a mean (&plusmn;standard deviation) log number of cysts per gram of lung tissue of 4.6&plusmn;1.6 at the end of the experiment. Terbinafine administered at a dose of 160 mg/kg/day significantly reduced the log number of cysts per gram to 2.2&plusmn;1.5. The therapeutic efficacy of terbinafine administered at 160 mg/kg/day (log 2.2&plusmn;1.5 cysts/lung) was similar to that obtained with trimethoprim-sulfamethoxazole (TMP-SMX), 50/250 mg/kg/day (p&lt;0.001). A reduction in the number of cysts was also observed in infected animals treated with 80, and 120 mg of terbinafine/kg/day, although the results were not statistically significant (p&gt;0.05).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: In our model, the efficacy of terbinafine in PCP has been found to be dose dependent.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The purpose of this study was to test the hypothesis thThis study was planned to investigate the antipneumocystis activity of terbinafine in a rat model. Material and Methods: Rats were obtained from the Hakan Çetinsaya Experimental and Clinical Research Institutions, Erciyes University, Kayseri, Turkey. Terbinafine administered orally in doses of 40, 80, 120 and 160 mg/kg/day after nine weeks of immunosuppression with dexamethasone to facilitate the development of acute Pneumocystis carinii penumoniae (PCP). Results: Untreated animals showed P. carinii infection levels with a mean (±standard deviation) log number of cysts per gram of lung tissue of 4.6±1.6 at the end of the experiment. Terbinafine administered at a dose of 160 mg/kg/day significantly reduced the log number of cysts per gram to 2.2±1.5. The therapeutic efficacy of terbinafine administered at 160 mg/kg/day (log 2.2±1.5 cysts/lung) was similar to that obtained with trimethoprim-sulfamethoxazole (TMP-SMX), 50/250 mg/kg/day (p<0.001). A reduction in the number of cysts was also observed in infected animals treated with 80, and 120 mg of terbinafine/kg/day, although the results were not statistically significant (p>0.05). Conclusion: In our model, the efficacy of terbinafine in PCP has been found to be dose dependent.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.01682.2",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "331-333",
+    "views": 6586,
+    "downloads": 1891,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "894",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=894",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=894",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=894",
+    "localPdfUrl": "js/data/pdfs/894.pdf",
+    "pdfUrl": "js/data/pdfs/894.pdf"
+  },
+  {
+    "id": 895,
+    "type": "Original Article",
+    "title": "The Effect of Combinations of Antimycotics on Systemic Candidiasis in a Mouse Model",
+    "authors": [
+      {
+        "name": "Cem Artan",
+        "affiliation": "Nuh Naci Yazgan Göğüs Hastanesi, Mikrobiyoloji Laboratuarı, Kayseri",
+        "orcid": ""
+      },
+      {
+        "name": "Nedret Koç",
+        "affiliation": "Erciyes Üniversitesi, Tıp Fakültesi Mikrobiyoloji Anabilim Dalı, 3Biyoistatistik Anabilim Dalı, Kayseri",
+        "orcid": ""
+      },
+      {
+        "name": "Müge Oğuzkaya Artan",
+        "affiliation": "Erciyes Üniversitesi, Sağlık Hizmetleri Meslek Yüksekokulu, Kayseri",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The purpose of this study was to test the hypothesis thThis study was planned to investigate the antipneumocystis activity of terbinafine in a rat model. Material and Methods: Rats were obtained from the Hakan Çetinsaya Experimental and Clinical Research Institutions, Erciyes University, Kayseri, Turkey. Terbinafine administered orally in doses of 40, 80, 120 and 160 mg/kg/day after nine weeks of immunosuppression with dexamethasone to facilitate the development of acute Pneumocystis carinii penumoniae (PCP). Results: Untreated animals showed P. carinii infection levels with a mean (±standard deviation) log number of cysts per gram of lung tissue of 4.6±1.6 at the end of the experiment. Terbinafine administered at a dose of 160 mg/kg/day significantly reduced the log number of cysts per gram to 2.2±1.5. The therapeutic efficacy of terbinafine administered at 160 mg/kg/day (log 2.2±1.5 cysts/lung) was similar to that obtained with trimethoprim-sulfamethoxazole (TMP-SMX), 50/250 mg/kg/day (p<0.001). A reduction in the number of cysts was also observed in infected animals treated with 80, and 120 mg of terbinafine/kg/day, although the results were not statistically significant (p>0.05). Conclusion: In our model, the efficacy of terbinafine in PCP has been found to be dose dependent.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The purpose of this study was to test the hypothesis thThis study was planned to investigate the antipneumocystis activity of terbinafine in a rat model.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Rats were obtained from the Hakan &Ccedil;etinsaya Experimental and Clinical Research Institutions, Erciyes University, Kayseri, Turkey. Terbinafine administered orally in doses of 40, 80, 120 and 160 mg/kg/day after nine weeks of immunosuppression with dexamethasone to facilitate the development of acute Pneumocystis carinii penumoniae (PCP).</p>\r\n<p>\r\n\t<strong>Results</strong>: Untreated animals showed P. carinii infection levels with a mean (&plusmn;standard deviation) log number of cysts per gram of lung tissue of 4.6&plusmn;1.6 at the end of the experiment. Terbinafine administered at a dose of 160 mg/kg/day significantly reduced the log number of cysts per gram to 2.2&plusmn;1.5. The therapeutic efficacy of terbinafine administered at 160 mg/kg/day (log 2.2&plusmn;1.5 cysts/lung) was similar to that obtained with trimethoprim-sulfamethoxazole (TMP-SMX), 50/250 mg/kg/day (p&lt;0.001). A reduction in the number of cysts was also observed in infected animals treated with 80, and 120 mg of terbinafine/kg/day, although the results were not statistically significant (p&gt;0.05).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: In our model, the efficacy of terbinafine in PCP has been found to be dose dependent.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The purpose of this study was to test the hypothesis thThis study was planned to investigate the antipneumocystis activity of terbinafine in a rat model. Material and Methods: Rats were obtained from the Hakan Çetinsaya Experimental and Clinical Research Institutions, Erciyes University, Kayseri, Turkey. Terbinafine administered orally in doses of 40, 80, 120 and 160 mg/kg/day after nine weeks of immunosuppression with dexamethasone to facilitate the development of acute Pneumocystis carinii penumoniae (PCP). Results: Untreated animals showed P. carinii infection levels with a mean (±standard deviation) log number of cysts per gram of lung tissue of 4.6±1.6 at the end of the experiment. Terbinafine administered at a dose of 160 mg/kg/day significantly reduced the log number of cysts per gram to 2.2±1.5. The therapeutic efficacy of terbinafine administered at 160 mg/kg/day (log 2.2±1.5 cysts/lung) was similar to that obtained with trimethoprim-sulfamethoxazole (TMP-SMX), 50/250 mg/kg/day (p<0.001). A reduction in the number of cysts was also observed in infected animals treated with 80, and 120 mg of terbinafine/kg/day, although the results were not statistically significant (p>0.05). Conclusion: In our model, the efficacy of terbinafine in PCP has been found to be dose dependent.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02272.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "334-337",
+    "views": 6094,
+    "downloads": 2049,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "895",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=895",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=895",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=895",
+    "localPdfUrl": "js/data/pdfs/895.pdf",
+    "pdfUrl": "js/data/pdfs/895.pdf"
+  },
+  {
+    "id": 896,
+    "type": "Original Article",
+    "title": "Autologous Serum for Expansion of Human Bone Marrow Derivated Mesenchymal Stem Cell",
+    "authors": [
+      {
+        "name": "İlknur Kozanoğlu",
+        "affiliation": "Başkent Üniversitesi Tıp Fakültesi Fizyoloji Anabilim Dalı, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Can Boğa",
+        "affiliation": "Başkent Üniversitesi Tıp Fakültesi Hematoloji Bilim Dalı, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Erkan Maytalman",
+        "affiliation": "Başkent Üniversitesi Adana Uygulama ve Araştırma Hastanesi, Hematoloji Araştırma Labaratuvarı, Adana",
+        "orcid": ""
+      },
+      {
+        "name": "Oktay Sözer [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Mesenchymal stem cells (MSC), mostly derivated from bone marrow, are capable of differentiating into many tissues. In the culture medium consisting of 10% fetal bovine serum (FBS), MSCs can grown easily. To obtain insights into their ex-vivo expansion, the role of the autologous serum (OS) on growth and differentiation capacity of human bone marrow MSCs in comparison to cells grown in FBS was studied. Material and Methods: MSCs were cultured by using a RPMI-1640 medium consisting of 10% FBS, and OS 10%, 5%, 3% and 1%. Equally, 1x106/mL cells were incubated into each flask. Cell count, viability, and flow cytometry studies were done at every passage after completing detachment in the cultures. Results: 10% OS group was found to be superior compared to the other study groups as regard to cell count and isolation. In addition, it has been observed that similar resuts were found in 5% OS and 10% FBS groups. Immunophenotyping analysis of the cells revealed no statistical difference between the groups. MSCs isolated from all study groups were successfully differentiated into adipogenic lineages except 3% and 1% OS groups. Conclusion: The expansion potency from bone marrow-derived MSCs was maintained in culture media using 10% and 5% OS.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Mesenchymal stem cells (MSC), mostly derivated from bone marrow, are capable of differentiating into many tissues. In the culture medium consisting of 10% fetal bovine serum (FBS), MSCs can grown easily. To obtain insights into their ex-vivo expansion, the role of the autologous serum (OS) on growth and differentiation capacity of human bone marrow MSCs in comparison to cells grown in FBS was studied.</p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Material and Methods</strong>: MSCs were cultured by using a RPMI-1640 medium consisting of 10% FBS, and OS 10%, 5%, 3% and 1%. Equally, 1x106/mL cells were incubated into each flask. Cell count, viability, and flow cytometry studies were done at every passage after completing detachment in the cultures.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Results</strong>: 10% OS group was found to be superior compared to the other study groups as regard to cell count and isolation. In addition, it has been observed that similar resuts were found in 5% OS and 10% FBS groups. Immunophenotyping analysis of the cells revealed no statistical difference between the groups. MSCs isolated from all study groups were successfully differentiated into adipogenic lineages except 3% and 1% OS groups.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Conclusion</strong>: The expansion potency from bone marrow-derived MSCs was maintained in culture media using 10% and 5% OS.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Mesenchymal stem cells (MSC), mostly derivated from bone marrow, are capable of differentiating into many tissues. In the culture medium consisting of 10% fetal bovine serum (FBS), MSCs can grown easily. To obtain insights into their ex-vivo expansion, the role of the autologous serum (OS) on growth and differentiation capacity of human bone marrow MSCs in comparison to cells grown in FBS was studied. Material and Methods: MSCs were cultured by using a RPMI-1640 medium consisting of 10% FBS, and OS 10%, 5%, 3% and 1%. Equally, 1x106/mL cells were incubated into each flask. Cell count, viability, and flow cytometry studies were done at every passage after completing detachment in the cultures. Results: 10% OS group was found to be superior compared to the other study groups as regard to cell count and isolation. In addition, it has been observed that similar resuts were found in 5% OS and 10% FBS groups. Immunophenotyping analysis of the cells revealed no statistical difference between the groups. MSCs isolated from all study groups were successfully differentiated into adipogenic lineages except 3% and 1% OS groups. Conclusion: The expansion potency from bone marrow-derived MSCs was maintained in culture media using 10% and 5% OS.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.01730.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "338-343",
+    "views": 6550,
+    "downloads": 2412,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "896",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=896",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=896",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=896",
+    "localPdfUrl": "js/data/pdfs/896.pdf",
+    "pdfUrl": "js/data/pdfs/896.pdf"
+  },
+  {
+    "id": 897,
+    "type": "Original Article",
+    "title": "In Vitro Effects of Dopamine on Internal Thoracic Artery Graft Used in Coronary Artery Bypass Surger",
+    "authors": [
+      {
+        "name": "Ümit Halıcı",
+        "affiliation": "Erzurum Bölge Eğitim ve Araştırma Hastanesi, Kalp Damar Cerrahisi, Erzurum",
+        "orcid": ""
+      },
+      {
+        "name": "Turan Ege",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Enver Duran",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Çetin Hakan Karadağ",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Farmakoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The aim of this study was to investigate in vitro effects of dopamine on internal thoracic artery (ITA) graft. Material and Methods: Between December 2003- June 2005, 32 patients (2 women and 30 men, mean age; 59.26±8.34, range 37-75 years old) who were subjected to coronary artery bypass grafting (CABG) operation in our clinic were enrolled in this study. ITA remnants were suspended in an isolated organ bath. Constrictor or relaxant responses to dopamine were recorded isometrically. Results: Dopamine in the concentration range of 10-9 M-10-7 M produced a mild relaxant effect on phenylephrine-precontracted ITA, and at higher concentrations than 10-7 M it produced a constrictor response. Ther relaxant effect of dopamine was partially antagonized by L-NAME (nitric oxide synthase inhibitor, 10-6 M), propranolol (10-6 M), and cis-α-flupenthixol (dopaminergic receptor antagonist, 10-6 M), but not by metoclopramide (D2-dopaminergic receptor antagonist). The constrictor effect of dopamine was partially antagonized by phentolamine, prazosin and, yohimbine. Conclusion: It was concluded that, while dopamine produces a vasodilator response at the lower concentrations, it causes a constrictor effect on ITA at the higher concentrations. Both a β-adrenergic and a nitric oxide mediated mechanism (via D1-dopaminergic receptor) may play a role in the relaxant effect of dopamine on ITA at the lower concentrations. Constrictor response to dopamine at the higher concentrations on ITA may be produced by the activation of α1- and α2-adrenergic receptors.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The aim of this study was to investigate in vitro effects of dopamine on internal thoracic artery (ITA) graft.</p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Material</strong> <strong>and Methods</strong>: Between December 2003- June 2005, 32 patients (2 women and 30 men, mean age; 59.26&plusmn;8.34, range 37-75 years old) who were subjected to coronary artery bypass grafting (CABG) operation in our clinic were enrolled in this study. ITA remnants were suspended in an isolated organ bath. Constrictor or relaxant responses to dopamine were recorded isometrically.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Results</strong>: Dopamine in the concentration range of 10-9 M-10-7 M produced a mild relaxant effect on phenylephrine-precontracted ITA, and at higher concentrations than 10-7 M it produced a constrictor response. Ther relaxant effect of dopamine was partially antagonized by L-NAME (nitric oxide synthase inhibitor, 10-6 M), propranolol (10-6 M), and cis-&alpha;-flupenthixol (dopaminergic receptor antagonist, 10-6 M), but not by metoclopramide (D2-dopaminergic receptor antagonist). The constrictor effect of dopamine was partially antagonized by phentolamine, prazosin and, yohimbine.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Conclusion</strong>: It was concluded that, while dopamine produces a vasodilator response at the lower concentrations, it causes a constrictor effect on ITA at the higher concentrations. Both a &beta;-adrenergic and a nitric oxide mediated mechanism (via D1-dopaminergic receptor) may play a role in the relaxant effect of dopamine on ITA at the lower concentrations. Constrictor response to dopamine at the higher concentrations on ITA may be produced by the activation of &alpha;1- and &alpha;2-adrenergic receptors.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The aim of this study was to investigate in vitro effects of dopamine on internal thoracic artery (ITA) graft. Material and Methods: Between December 2003- June 2005, 32 patients (2 women and 30 men, mean age; 59.26±8.34, range 37-75 years old) who were subjected to coronary artery bypass grafting (CABG) operation in our clinic were enrolled in this study. ITA remnants were suspended in an isolated organ bath. Constrictor or relaxant responses to dopamine were recorded isometrically. Results: Dopamine in the concentration range of 10-9 M-10-7 M produced a mild relaxant effect on phenylephrine-precontracted ITA, and at higher concentrations than 10-7 M it produced a constrictor response. Ther relaxant effect of dopamine was partially antagonized by L-NAME (nitric oxide synthase inhibitor, 10-6 M), propranolol (10-6 M), and cis-α-flupenthixol (dopaminergic receptor antagonist, 10-6 M), but not by metoclopramide (D2-dopaminergic receptor antagonist). The constrictor effect of dopamine was partially antagonized by phentolamine, prazosin and, yohimbine. Conclusion: It was concluded that, while dopamine produces a vasodilator response at the lower concentrations, it causes a constrictor effect on ITA at the higher concentrations. Both a β-adrenergic and a nitric oxide mediated mechanism (via D1-dopaminergic receptor) may play a role in the relaxant effect of dopamine on ITA at the lower concentrations. Constrictor response to dopamine at the higher concentrations on ITA may be produced by the activation of α1- and α2-adrenergic receptors.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.01869.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "344-350",
+    "views": 6257,
+    "downloads": 9383,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "897",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=897",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=897",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=897",
+    "localPdfUrl": "js/data/pdfs/897.pdf",
+    "pdfUrl": "js/data/pdfs/897.pdf"
+  },
+  {
+    "id": 898,
+    "type": "Original Article",
+    "title": "Vitamin B12 Deficiency and Epilepsy in Children",
+    "authors": [
+      {
+        "name": "Faruk İncecik",
+        "affiliation": "Çukurova Üniversitesi Tıp Fakültesi Hastanesi, Pediatrik Nöroloji Bilim Dalı, Adana",
+        "orcid": ""
+      },
+      {
+        "name": "Mihriban Özlem Hergüner",
+        "affiliation": "Çukurova Üniversitesi Tıp Fakültesi Hastanesi, Pediatrik Nöroloji Bilim Dalı, Adana",
+        "orcid": ""
+      },
+      {
+        "name": "Şakir Altunabaşak [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The abstract presents 7 striking cases who presented with the complaint of seizures showing concomitance of B12 vitamin deficiency. Material and Methods: Participant patients were those who presented at our hospital with seizures caused by B12 vitamin deficiency. Evaluation was based on clinical, physical and neurological signs of the patients. Complete hemogram, peripheral blood view, vitamin B12 level and folic acid level measurements were performed. Cerebral magnetic resonance scans and interictal EEG were performed on all patients. Results: The participant patients were 5 males (66.7%) and 2 females (33.3%) consecutively. The types of seizures were generalized tonic clonic in 4, generalized tonic in one and partial in 2 of the cases. 2 of 3 patient had generalized epileptic activity and the other had focal activity on EEG examination. One of the participants presented with status epilepticus. The median vitamin B12 levels of the cases and their mothers were 59.14±22.04 (30-96) and 140.43±23.89 (119-170) pg/mL consecutively at laboratory findings. Conclusions: Vitamin B12 deficiency may present with either megaloblastic anemia or severe neurological signs and seizures. In childhood seizures and epilepsy, vitamin B12 deficiency must be considered.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The abstract presents 7 striking cases who presented with the complaint of seizures showing concomitance of B12 vitamin deficiency.</p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Material</strong> <strong>and</strong> <strong>Methods</strong>: Participant patients were those who presented at our hospital with seizures caused by B12 vitamin deficiency. Evaluation was based on clinical, physical and neurological signs of the patients. Complete hemogram, peripheral blood view, vitamin B12 level and folic acid level measurements were performed. Cerebral magnetic resonance scans and interictal EEG were performed on all patients.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Results</strong>: The participant patients were 5 males (66.7%) and 2 females (33.3%) consecutively. The types of seizures were generalized tonic clonic in 4, generalized tonic in one and partial in 2 of the cases. 2 of 3 patient had generalized epileptic activity and the other had focal activity on EEG examination. One of the participants presented with status epilepticus. The median vitamin B12 levels of the cases and their mothers were 59.14&plusmn;22.04 (30-96) and 140.43&plusmn;23.89 (119-170) pg/mL consecutively at laboratory findings.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Conclusions</strong>: Vitamin B12 deficiency may present with either megaloblastic anemia or severe neurological signs and seizures. In childhood seizures and epilepsy, vitamin B12 deficiency must be considered.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The abstract presents 7 striking cases who presented with the complaint of seizures showing concomitance of B12 vitamin deficiency. Material and Methods: Participant patients were those who presented at our hospital with seizures caused by B12 vitamin deficiency. Evaluation was based on clinical, physical and neurological signs of the patients. Complete hemogram, peripheral blood view, vitamin B12 level and folic acid level measurements were performed. Cerebral magnetic resonance scans and interictal EEG were performed on all patients. Results: The participant patients were 5 males (66.7%) and 2 females (33.3%) consecutively. The types of seizures were generalized tonic clonic in 4, generalized tonic in one and partial in 2 of the cases. 2 of 3 patient had generalized epileptic activity and the other had focal activity on EEG examination. One of the participants presented with status epilepticus. The median vitamin B12 levels of the cases and their mothers were 59.14±22.04 (30-96) and 140.43±23.89 (119-170) pg/mL consecutively at laboratory findings. Conclusions: Vitamin B12 deficiency may present with either megaloblastic anemia or severe neurological signs and seizures. In childhood seizures and epilepsy, vitamin B12 deficiency must be considered.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.01718.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "351-353",
+    "views": 7809,
+    "downloads": 3325,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "898",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=898",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=898",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=898",
+    "localPdfUrl": "js/data/pdfs/898.pdf",
+    "pdfUrl": "js/data/pdfs/898.pdf"
+  },
+  {
+    "id": 899,
+    "type": "Original Article",
+    "title": "The Skin and Plasma Antioxidant Enzyme Activities in Patients With Vitiligo",
+    "authors": [
+      {
+        "name": "Kadir Batçıoğlu",
+        "affiliation": "Department of Biochemistry, Faculty of Pharmacy, İnönü University, Malatya",
+        "orcid": ""
+      },
+      {
+        "name": "Ersoy Hazneci",
+        "affiliation": "Acibadem Hospital, Dermatology Department, Bursa",
+        "orcid": ""
+      },
+      {
+        "name": "Neşe Karadağ",
+        "affiliation": "Inonu University, Faculty of Medicine, Department of Pathology, Malatya",
+        "orcid": ""
+      },
+      {
+        "name": "Çetin Öztürk",
+        "affiliation": "Inonu University, Faculty of Medicine, Department of Biochemistry, Malatya",
+        "orcid": ""
+      },
+      {
+        "name": "Aysun Bay Karabulut",
+        "affiliation": "Inonu University, Faculty of Medicine, Department of Biochemistry, Malatya",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: It is known that oxidative stress could be an important factor in the pathogenesis of vitiligo disease. We aimed to investigate the possible relationship between vitiligo pathogenesis and the change of antioxidant capacity of skin and plasma in patients with vitiligo. Material and Methods: In this study we have examined normal and vitiliginous skin and plasma GPx, SOD and CAT activities by spectrophotometric methods in 40 vitiligo patients and 15 controls. Results: Results of tissue enzyme activities (as U/mg prt and Mean±SD); were 0.64±0.09; 0.89±0.15; 0.41±0.57 for SOD enzyme, 170.98±12.35; 182.13±13.48; 121.91+16.03 for GPx enzyme and 78.92±10.34; 94.99±10+47; 55.95±7.24 for CAT enzyme in involved skin, uninvolved skin and control groups respectively. Plasma levels of these enzymes were 37.19±1.53; 39.53±3.32 SOD enzyme, 381.57±12.67; 346.13±21.90 for GPx and 66.72±8.86; 61.24±6.32 for CAT enzyme in vitiligo and control groups respectively. Conclusion: There is no correlation between skin and plasma antioxidant enzyme activities in vitiligo patients, or in healthy controls. High glutathione peroxidase and catalase activities in vitiligous skin (p<0.05) especially might be a result of anti oxidative stress response against oxidative stress via peroxides.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: It is known that oxidative stress could be an important factor in the pathogenesis of vitiligo disease. We aimed to investigate the possible relationship between vitiligo pathogenesis and the change of antioxidant capacity of skin and plasma in patients with vitiligo.</p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Material and Methods</strong>: In this study we have examined normal and vitiliginous skin and plasma GPx, SOD and CAT activities by spectrophotometric methods in 40 vitiligo patients and 15 controls.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Results</strong>: Results of tissue enzyme activities (as U/mg prt and Mean&plusmn;SD); were 0.64&plusmn;0.09; 0.89&plusmn;0.15; 0.41&plusmn;0.57 for SOD enzyme, 170.98&plusmn;12.35; 182.13&plusmn;13.48; 121.91+16.03 for GPx enzyme and 78.92&plusmn;10.34; 94.99&plusmn;10+47; 55.95&plusmn;7.24 for CAT enzyme in involved skin, uninvolved skin and control groups respectively. Plasma levels of these enzymes were 37.19&plusmn;1.53; 39.53&plusmn;3.32 SOD enzyme, 381.57&plusmn;12.67; 346.13&plusmn;21.90 for GPx and 66.72&plusmn;8.86; 61.24&plusmn;6.32 for CAT enzyme in vitiligo and control groups respectively.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Conclusion</strong>: There is no correlation between skin and plasma antioxidant enzyme activities in vitiligo patients, or in healthy controls. High glutathione peroxidase and catalase activities in vitiligous skin (p&lt;0.05) especially might be a result of anti oxidative stress response against oxidative stress via peroxides.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: It is known that oxidative stress could be an important factor in the pathogenesis of vitiligo disease. We aimed to investigate the possible relationship between vitiligo pathogenesis and the change of antioxidant capacity of skin and plasma in patients with vitiligo. Material and Methods: In this study we have examined normal and vitiliginous skin and plasma GPx, SOD and CAT activities by spectrophotometric methods in 40 vitiligo patients and 15 controls. Results: Results of tissue enzyme activities (as U/mg prt and Mean±SD); were 0.64±0.09; 0.89±0.15; 0.41±0.57 for SOD enzyme, 170.98±12.35; 182.13±13.48; 121.91+16.03 for GPx enzyme and 78.92±10.34; 94.99±10+47; 55.95±7.24 for CAT enzyme in involved skin, uninvolved skin and control groups respectively. Plasma levels of these enzymes were 37.19±1.53; 39.53±3.32 SOD enzyme, 381.57±12.67; 346.13±21.90 for GPx and 66.72±8.86; 61.24±6.32 for CAT enzyme in vitiligo and control groups respectively. Conclusion: There is no correlation between skin and plasma antioxidant enzyme activities in vitiligo patients, or in healthy controls. High glutathione peroxidase and catalase activities in vitiligous skin (p<0.05) especially might be a result of anti oxidative stress response against oxidative stress via peroxides.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.01829.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "354-357",
+    "views": 6560,
+    "downloads": 2061,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "899",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=899",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=899",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=899",
+    "localPdfUrl": "js/data/pdfs/899.pdf",
+    "pdfUrl": "js/data/pdfs/899.pdf"
+  },
+  {
+    "id": 900,
+    "type": "Original Article",
+    "title": "Oxidative Status and Plasma Prolidase Activity in Patients with Gallstones",
+    "authors": [
+      {
+        "name": "Alpaslan Terzi",
+        "affiliation": "Harran Üniversitesi Tıp Fakültesi, Genel Cerrahi Anabilim Dalı, Şanlıurfa",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Kaya",
+        "affiliation": "Harran Üniversitesi Tıp Fakültesi, Genel Cerrahi Anabilim Dalı, Şanlıurfa",
+        "orcid": ""
+      },
+      {
+        "name": "Sacit Çoban",
+        "affiliation": "Gaziantep Üniversitesi Tıp Fakültesi, Genel Cerrahi Anabilim Dalı, Gaziantep",
+        "orcid": ""
+      },
+      {
+        "name": "Fahrettin Yıldız",
+        "affiliation": "Department of General Surgery, Medical Faculty of Harran University, Şanlıurfa",
+        "orcid": ""
+      },
+      {
+        "name": "Taşkın Abdullah",
+        "affiliation": "Harran Üniversitesi Tıp Fakültesi, Klinik Biyokimya Anabilim Dalı, Şanlıurfa",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The aim of our study was to investigate the oxidative and antioxidative status of plasma and plasma prolidase enzyme activity on gallstone disease. Material and Methods: The study group included 35 patient with gallstone disease and 30 healthy volunteers as control subjects. Plasma prolidase activity and oxidative-antioxidative parameters were measured. Antioxidative status of plasma was evaluated by measuring total antioxidant capacity. To determine oxidative status; total oxidant status and oxidative stress index were deermied. Results: Total antioxidant capacity levels of plasma were lower in the patients with gallstone disease than in controls (p<0.001). In contrast, total oxidant status levels and oxidative stress index values were higher in the patients than in controls (p<0.05 and p<0.001, respectively). Beside these, plasma prolidase activity was significantly lower in the patients than controls (p<0.001). Conclusions: The present results indicated that the oxidant parameters increased and antioxidant parameters decreased in patients with gallstones, and that these patients were exposed to oxidative stress.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The aim of our study was to investigate the oxidative and antioxidative status of plasma and plasma prolidase enzyme activity on gallstone disease.</p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Material and Methods</strong>: The study group included 35 patient with gallstone disease and 30 healthy volunteers as control subjects. Plasma prolidase activity and oxidative-antioxidative parameters were measured. Antioxidative status of plasma was evaluated by measuring total antioxidant capacity. To determine oxidative status; total oxidant status and oxidative stress index were deermied.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Results</strong>: Total antioxidant capacity levels of plasma were lower in the patients with gallstone disease than in controls (p&lt;0.001). In contrast, total oxidant status levels and oxidative stress index values were higher in the patients than in controls (p&lt;0.05 and p&lt;0.001, respectively). Beside these, plasma prolidase activity was significantly lower in the patients than controls (p&lt;0.001).</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Conclusions</strong>: The present results indicated that the oxidant parameters increased and antioxidant parameters decreased in patients with gallstones, and that these patients were exposed to oxidative stress.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The aim of our study was to investigate the oxidative and antioxidative status of plasma and plasma prolidase enzyme activity on gallstone disease. Material and Methods: The study group included 35 patient with gallstone disease and 30 healthy volunteers as control subjects. Plasma prolidase activity and oxidative-antioxidative parameters were measured. Antioxidative status of plasma was evaluated by measuring total antioxidant capacity. To determine oxidative status; total oxidant status and oxidative stress index were deermied. Results: Total antioxidant capacity levels of plasma were lower in the patients with gallstone disease than in controls (p<0.001). In contrast, total oxidant status levels and oxidative stress index values were higher in the patients than in controls (p<0.05 and p<0.001, respectively). Beside these, plasma prolidase activity was significantly lower in the patients than controls (p<0.001). Conclusions: The present results indicated that the oxidant parameters increased and antioxidant parameters decreased in patients with gallstones, and that these patients were exposed to oxidative stress.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02243.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "358-362",
+    "views": 6610,
+    "downloads": 2031,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "900",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=900",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=900",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=900",
+    "localPdfUrl": "js/data/pdfs/900.pdf",
+    "pdfUrl": "js/data/pdfs/900.pdf"
+  },
+  {
+    "id": 901,
+    "type": "Original Article",
+    "title": "Serum Interleukin-6 Levels in the Differential Diagnosis of Sepsis and Transient Tachypnea of Newborn",
+    "authors": [
+      {
+        "name": "Nurdan Uraş",
+        "affiliation": "Fatih Üniversitesi Tıp Fakültesi, Çocuk Sağlığı ve Hastalıkları Anabilim Dalı, Neonatoloji Bilim Dalı, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Emin Mete",
+        "affiliation": "Department of Pediatrics, Medical Faculty of Fatih University, both in Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Semra Kara",
+        "affiliation": "Department of Neonatology Division, Medical Faculty of Fatih University, both in Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Mansur Tatlı",
+        "affiliation": "Department of Neonatology Division, Medical Faculty of Fatih University, both in Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Müsemma Karabel",
+        "affiliation": "Fatih Üniversitesi Tıp Fakültesi, Çocuk Sağlığı ve Hastalıkları Anabilim Dalı, Ankara",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The aim of this study was to evaluate the role of serum interleukin-6 (IL-6) levels in the differentiation of neonatal bacterial sepsis and TTN. Material and Methods: The hospital records of 58 newborn infants with respiratory distress who were above 35 weeks of gestational age were investigated. Patients were divided into two groups. The infection group consisted of patients with proven sepsis and clinical sepsis and the other was the TTN group. Clinical findings and white blood cell count, serum C-reactive protein (CRP), IL-6 levels and the ratio of immature neutrophils to total neutrophils count (I/T) were recorded and compared between the two groups. Results: Serum CRP and IL-6 levels were found higher than the normal limits in both of the groups. However there was no significant difference between them. Duration of respiratory distress was longer and I/T ratio significantly higher in the infection group than the TTN group. The combination of IL-6 and I/T ratio yielded a sensitivity of 80%, a specificity of 48%, a positive predictive value of 44.7%, and a negative predictive value of 80% Conclusion: The I/T ratio and IL-6 may contribute to the early diagnosis of sepsis with respiratory symptoms in newborn infants but IL-6 alone cannot distinguish between TTN and sepsis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The aim of this study was to evaluate the role of serum interleukin-6 (IL-6) levels in the differentiation of neonatal bacterial sepsis and TTN.</p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Material and Methods</strong>: The hospital records of 58 newborn infants with respiratory distress who were above 35 weeks of gestational age were investigated. Patients were divided into two groups. The infection group consisted of patients with proven sepsis and clinical sepsis and the other was the TTN group. Clinical findings and white blood cell count, serum C-reactive protein (CRP), IL-6 levels and the ratio of immature neutrophils to total neutrophils count (I/T) were recorded and compared between the two groups.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Results</strong>: Serum CRP and IL-6 levels were found higher than the normal limits in both of the groups. However there was no significant difference between them. Duration of respiratory distress was longer and I/T ratio significantly higher in the infection group than the TTN group. The combination of IL-6 and I/T ratio yielded a sensitivity of 80%, a specificity of 48%, a positive predictive value of 44.7%, and a negative predictive value of 80%</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Conclusion</strong>: The I/T ratio and IL-6 may contribute to the early diagnosis of sepsis with respiratory symptoms in newborn infants but IL-6 alone cannot distinguish between TTN and sepsis.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The aim of this study was to evaluate the role of serum interleukin-6 (IL-6) levels in the differentiation of neonatal bacterial sepsis and TTN. Material and Methods: The hospital records of 58 newborn infants with respiratory distress who were above 35 weeks of gestational age were investigated. Patients were divided into two groups. The infection group consisted of patients with proven sepsis and clinical sepsis and the other was the TTN group. Clinical findings and white blood cell count, serum C-reactive protein (CRP), IL-6 levels and the ratio of immature neutrophils to total neutrophils count (I/T) were recorded and compared between the two groups. Results: Serum CRP and IL-6 levels were found higher than the normal limits in both of the groups. However there was no significant difference between them. Duration of respiratory distress was longer and I/T ratio significantly higher in the infection group than the TTN group. The combination of IL-6 and I/T ratio yielded a sensitivity of 80%, a specificity of 48%, a positive predictive value of 44.7%, and a negative predictive value of 80% Conclusion: The I/T ratio and IL-6 may contribute to the early diagnosis of sepsis with respiratory symptoms in newborn infants but IL-6 alone cannot distinguish between TTN and sepsis.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.01548.2",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "363-366",
+    "views": 7079,
+    "downloads": 2011,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "901",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=901",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=901",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=901",
+    "localPdfUrl": "js/data/pdfs/901.pdf",
+    "pdfUrl": "js/data/pdfs/901.pdf"
+  },
+  {
+    "id": 902,
+    "type": "Original Article",
+    "title": "Hepatitis B and Hepatitis C Seroprevalence in the Center of Sanliurfa Province From Southeastern Anatolia Region and Related Risk Factors",
+    "authors": [
+      {
+        "name": "Süda Tekin Koruk",
+        "affiliation": "Harran University School of Medicine, Department of 1Infectious Diseases and Clinical Microbiology, Sanliurfa",
+        "orcid": ""
+      },
+      {
+        "name": "Bensu Gürsoy",
+        "affiliation": "Harran University School of Medicine, Department of 1Infectious Diseases and Clinical Microbiology, Sanliurfa",
+        "orcid": ""
+      },
+      {
+        "name": "Celal Çalışır",
+        "affiliation": "Harran University School of Medicine, Department of 1Infectious Diseases and Clinical Microbiology, Sanliurfa",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Koruk",
+        "affiliation": "Harran University School of Medicine, Department of Public Health, Sanliurfa",
+        "orcid": ""
+      },
+      {
+        "name": "Zeynep Şimşek",
+        "affiliation": "Harran University School of Medicine, Department of Public Health, Sanliurfa",
+        "orcid": ""
+      },
+      {
+        "name": "Fehmi Yüksel",
+        "affiliation": "Harran University School of Medicine, Department of Microbiology and Clinical Microbiology,Sanliurfa",
+        "orcid": ""
+      },
+      {
+        "name": "Fadile Yıldız Seyrek [[4]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The aim of this study was to evaluate the seroprevalence of HBV and HCV and related risk factors in Sanliurfa, a province of southeastern Anatolia. Material and Methods: This cross-sectional study was conducted between April and May, 2008 in Sanliurfa's city center. A community-based representative sample (N=1070) was randomly selected using cluster sampling from the catchment areas served by 19 different primary healthcare centers. A questionnaire evaluating demographic information and probable risk factors for HBV and HCV was administered, and HBsAg and anti-HCV markers were analyzed from blood samples. Results: Among the 1070 individuals who participated in the study, 33.1% were male (n=354) and 66.9% female (n=716). The average age was 35.4±13.5 (15-90) years. The seroprevalence of HBsAg positivity was 4.2% (n=45), while anti-HCV seropositivity was found to be 1.0% (n=11). Among participants who previously suffered a known hepatitis infection or who reported a family history of hepatitis, the HBsAg positivity was found to be higher (p<0.05). There was no statistically significant difference between HCV transmission risk factors and anti-HCV positivity. Conclusion: This is the first hepatitis seroprevalence study in central Sanliurfa and demonstrated moderate HBV infection endemicity.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The aim of this study was to evaluate the seroprevalence of HBV and HCV and related risk factors in Sanliurfa, a province of southeastern Anatolia.</p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Material and Methods</strong>: This cross-sectional study was conducted between April and May, 2008 in Sanliurfa&#39;s city center. A community-based representative sample (N=1070) was randomly selected using cluster sampling from the catchment areas served by 19 different primary healthcare centers. A questionnaire evaluating demographic information and probable risk factors for HBV and HCV was administered, and HBsAg and anti-HCV markers were analyzed from blood samples.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Results</strong>: Among the 1070 individuals who participated in the study, 33.1% were male (n=354) and 66.9% female (n=716). The average age was 35.4&plusmn;13.5 (15-90) years. The seroprevalence of HBsAg positivity was 4.2% (n=45), while anti-HCV seropositivity was found to be 1.0% (n=11). Among participants who previously suffered a known hepatitis infection or who reported a family history of hepatitis, the HBsAg positivity was found to be higher (p&lt;0.05). There was no statistically significant difference between HCV transmission risk factors and anti-HCV positivity.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Conclusion</strong>: This is the first hepatitis seroprevalence study in central Sanliurfa and demonstrated moderate HBV infection endemicity.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The aim of this study was to evaluate the seroprevalence of HBV and HCV and related risk factors in Sanliurfa, a province of southeastern Anatolia. Material and Methods: This cross-sectional study was conducted between April and May, 2008 in Sanliurfa's city center. A community-based representative sample (N=1070) was randomly selected using cluster sampling from the catchment areas served by 19 different primary healthcare centers. A questionnaire evaluating demographic information and probable risk factors for HBV and HCV was administered, and HBsAg and anti-HCV markers were analyzed from blood samples. Results: Among the 1070 individuals who participated in the study, 33.1% were male (n=354) and 66.9% female (n=716). The average age was 35.4±13.5 (15-90) years. The seroprevalence of HBsAg positivity was 4.2% (n=45), while anti-HCV seropositivity was found to be 1.0% (n=11). Among participants who previously suffered a known hepatitis infection or who reported a family history of hepatitis, the HBsAg positivity was found to be higher (p<0.05). There was no statistically significant difference between HCV transmission risk factors and anti-HCV positivity. Conclusion: This is the first hepatitis seroprevalence study in central Sanliurfa and demonstrated moderate HBV infection endemicity.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02533.0",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "367-372",
+    "views": 6665,
+    "downloads": 2156,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "902",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=902",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=902",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=902",
+    "localPdfUrl": "js/data/pdfs/902.pdf",
+    "pdfUrl": "js/data/pdfs/902.pdf"
+  },
+  {
+    "id": 903,
+    "type": "Original Article",
+    "title": "Association of Prion Protein with the Stage of Liver Fibrosis in Chronic Viral Hepatitis",
+    "authors": [
+      {
+        "name": "Muhammet Cemil Savaş",
+        "affiliation": "Gaziantep Üniversitesi Tıp Fakültesi, Gastroenteroloji Bilim Dalı, Gaziantep",
+        "orcid": ""
+      },
+      {
+        "name": "İrfan Koruk",
+        "affiliation": "Gaziantep Üniversitesi Tıp Fakültesi, Gastroenteroloji Bilim Dalı, Gaziantep",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Koruk",
+        "affiliation": "Gaziantep Üniversitesi Tıp Fakültesi, Gastroenteroloji Bilim Dalı, Gaziantep",
+        "orcid": ""
+      },
+      {
+        "name": "Abdurrahman Kadayıfçı",
+        "affiliation": "Gaziantep Üniversitesi Tıp Fakültesi, Gastroenteroloji Bilim Dalı, Gaziantep",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Sarı [[2]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Prion protein (PrP) expresion has previously been demonstrated in activated hepatic stellate cells (HSC), which play a key role in the development of liver fibrosis. In this study, we aimed to investigate the correlation between PrP expression and hepatic inflammation/fibrosis in patients with chronic viral hepatitis (CVH). Material and Methods: Liver specimens of 40 patients with CVH and 10 patients with metastatic liver disease having a normal liver architecture as a control group were evaluated. ThePrP staining index was calculated by counting PrP positive cells per microscopic field after immunostaining. Hepatic inflammatory activity and fibrosis scores were evaluated and compared with the number of PrP positive HSC. Results: Varying degrees of PrP expression were detected in histologic samples of the liver in patients with CVH, whereas no staining was observed in control specimens. It was also detected that the grade of inflammatory activity and stage of liver fibrosis were significantly correlated with PrP staining index (p=0.0001 for inflammation and p=0.005 for fibrosis). Conclusions: PrP is a good marker of activated HSC and correlates well with the inflammatory activity and stage of fibrosis in CVH.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Prion protein (PrP) expresion has previously been demonstrated in activated hepatic stellate cells (HSC), which play a key role in the development of liver fibrosis. In this study, we aimed to investigate the correlation between PrP expression and hepatic inflammation/fibrosis in patients with chronic viral hepatitis (CVH).</p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Material and Methods</strong>: Liver specimens of 40 patients with CVH and 10 patients with metastatic liver disease having a normal liver architecture as a control group were evaluated. ThePrP staining index was calculated by counting PrP positive cells per microscopic field after immunostaining. Hepatic inflammatory activity and fibrosis scores were evaluated and compared with the number of PrP positive HSC.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Results</strong>: Varying degrees of PrP expression were detected in histologic samples of the liver in patients with CVH, whereas no staining was observed in control specimens. It was also detected that the grade of inflammatory activity and stage of liver fibrosis were significantly correlated with PrP staining index (p=0.0001 for inflammation and p=0.005 for fibrosis).</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Conclusions</strong>: PrP is a good marker of activated HSC and correlates well with the inflammatory activity and stage of fibrosis in CVH.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Prion protein (PrP) expresion has previously been demonstrated in activated hepatic stellate cells (HSC), which play a key role in the development of liver fibrosis. In this study, we aimed to investigate the correlation between PrP expression and hepatic inflammation/fibrosis in patients with chronic viral hepatitis (CVH). Material and Methods: Liver specimens of 40 patients with CVH and 10 patients with metastatic liver disease having a normal liver architecture as a control group were evaluated. ThePrP staining index was calculated by counting PrP positive cells per microscopic field after immunostaining. Hepatic inflammatory activity and fibrosis scores were evaluated and compared with the number of PrP positive HSC. Results: Varying degrees of PrP expression were detected in histologic samples of the liver in patients with CVH, whereas no staining was observed in control specimens. It was also detected that the grade of inflammatory activity and stage of liver fibrosis were significantly correlated with PrP staining index (p=0.0001 for inflammation and p=0.005 for fibrosis). Conclusions: PrP is a good marker of activated HSC and correlates well with the inflammatory activity and stage of fibrosis in CVH.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02284.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "373-377",
+    "views": 6133,
+    "downloads": 3818,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "903",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=903",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=903",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=903",
+    "localPdfUrl": "js/data/pdfs/903.pdf",
+    "pdfUrl": "js/data/pdfs/903.pdf"
+  },
+  {
+    "id": 904,
+    "type": "Original Article",
+    "title": "Morphometric Assessment of Corpus Callosum and Cerebral Hemispheres with Magnetic Resonance Imaging",
+    "authors": [
+      {
+        "name": "Necdet Kocabıyık",
+        "affiliation": "Gülhane Askeri Tıp Akademisi, Anatomi Anabilim Dalı, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Hasan Ozan",
+        "affiliation": "Gülhane Askeri Tıp Akademisi, Anatomi Anabilim Dalı, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Barış Baykal",
+        "affiliation": "Gülhane Askeri Tıp Akademisi, Tıbbi Histoloji-Embriyoloji Anabilim Dalı, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Selçuk Tunalı",
+        "affiliation": "Hacettepe Üniversitesi Tıp Fakültesi, Anatomi Anabilim Dalı, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Yalçın",
+        "affiliation": "Department of Anatomy, Gülhane Military Medical Academy, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nail Bulakbaşı",
+        "affiliation": "Gülhane Askeri Tıp Akademisi, Radyoloji Anabilim Dalı, Ankara",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: In this study, our purpose was to assess the relationship between handedness, footedness and the morphological differences of certain intracranial structures on MR images. Material and Methods: 63 healthy male and 52 healthy female individuals were included in the study. In each subject, 16 measurements of intracranial structures were taken on MR images. Area of corpus callosum, also left and right cerebral hemispheres, length of CC, width of genu (r1), truncus (r2), isthmus (r3) and splenium of CC (r4) and width of corresponding cerebral hemisphere were measured. Results: There was a statistically significant difference in R3 (width of the corresponding cerebral hemisphere to r3) distance between those using their right feet and those using their left feet. Angle of genu in right-handed people was greater in males than in females. Angle of genu in cases using the left foot was greater in females than in males for standing on one leg. Conclusion: Morphometric assessment of CC with MR imaging related to handedness and footedness may be useful in demonstrating the relationship between callosal morphology, gender differences and extremity preference in neuroscience.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: In this study, our purpose was to assess the relationship between handedness, footedness and the morphological differences of certain intracranial structures on MR images.</p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Material and Methods</strong>: 63 healthy male and 52 healthy female individuals were included in the study. In each subject, 16 measurements of intracranial structures were taken on MR images. Area of corpus callosum, also left and right cerebral hemispheres, length of CC, width of genu (r1), truncus (r2), isthmus (r3) and splenium of CC (r4) and width of corresponding cerebral hemisphere were measured.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Results</strong>: There was a statistically significant difference in R3 (width of the corresponding cerebral hemisphere to r3) distance between those using their right feet and those using their left feet. Angle of genu in right-handed people was greater in males than in females. Angle of genu in cases using the left foot was greater in females than in males for standing on one leg.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Conclusion</strong>: Morphometric assessment of CC with MR imaging related to handedness and footedness may be useful in demonstrating the relationship between callosal morphology, gender differences and extremity preference in neuroscience.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: In this study, our purpose was to assess the relationship between handedness, footedness and the morphological differences of certain intracranial structures on MR images. Material and Methods: 63 healthy male and 52 healthy female individuals were included in the study. In each subject, 16 measurements of intracranial structures were taken on MR images. Area of corpus callosum, also left and right cerebral hemispheres, length of CC, width of genu (r1), truncus (r2), isthmus (r3) and splenium of CC (r4) and width of corresponding cerebral hemisphere were measured. Results: There was a statistically significant difference in R3 (width of the corresponding cerebral hemisphere to r3) distance between those using their right feet and those using their left feet. Angle of genu in right-handed people was greater in males than in females. Angle of genu in cases using the left foot was greater in females than in males for standing on one leg. Conclusion: Morphometric assessment of CC with MR imaging related to handedness and footedness may be useful in demonstrating the relationship between callosal morphology, gender differences and extremity preference in neuroscience.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.01514.2",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "378-384",
+    "views": 6631,
+    "downloads": 9423,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "904",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=904",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=904",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=904",
+    "localPdfUrl": "js/data/pdfs/904.pdf",
+    "pdfUrl": "js/data/pdfs/904.pdf"
+  },
+  {
+    "id": 905,
+    "type": "Original Article",
+    "title": "The Agreement Between Radiographic and Surgical Measurements of Intervertebral Disc Height: A Cadaveric Study",
+    "authors": [
+      {
+        "name": "Tunç Kutoğlu",
+        "affiliation": "Department of Anatomy, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Cumhur Kılınçer",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Beyin ve Sinir Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Kemal Hamamcıoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Beyin ve Sinir Cerrahisi Anabilim Dalı, Edirnen",
+        "orcid": ""
+      },
+      {
+        "name": "Sebahattin Çobanoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Beyin ve Sinir Cerrahisi Anabilim Dalı, Edirnen",
+        "orcid": ""
+      },
+      {
+        "name": "Nermin Tunçbilek",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Radyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ömür Ökten",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Radyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Recep Mesut",
+        "affiliation": "Departments of Anatomy, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Keywords : Intervertebral disc; measurement; roentgenography; surgery; cadaver",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<b>Keywords :</b>\t\tIntervertebral disc; measurement; roentgenography; surgery; cadaver \t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Keywords : Intervertebral disc; measurement; roentgenography; surgery; cadaver",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.04082.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "385-390",
+    "views": 7178,
+    "downloads": 12,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "905",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=905",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=905",
+    "sourcePdfUrl": "",
+    "localPdfUrl": "",
+    "pdfUrl": ""
+  },
+  {
+    "id": 906,
+    "type": "Original Article",
+    "title": "Intensive Care Cost Analysis of Patients with Acute Exacerbations of Chronic Obstructive Pulmonary Diseases from Two University Hospitals",
+    "authors": [
+      {
+        "name": "Mehmet Turan İnal",
+        "affiliation": "Etimesgut Asker Hastanesi, Anesteziyoloji ve Reanimasyon Kliniği, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Memiş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Birgül Büyükkıran Yelken",
+        "affiliation": "Osmangazi Üniversitesi Tıp Fakültesi, Anesteziyoloji ve Reanimasyon Anabilim Dalı, Eskişehir",
+        "orcid": ""
+      },
+      {
+        "name": "Necdet Süt [[4]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Chronic Obstructive Pulmonary Disease (COPD) is a leading cause of death worldwide with a continued rising mortality rate, and it represents a major socioeconomic burden. The aim of this study was to examine the costs of acute exacerbation of COPD patients admitted to two different university hospital intensive care units. Material and Methods: We analyzed 156 patients (128 male and 28 female) who were admitted for treatment of acute exacerbations of COPD from January 1, 2005 to June 15, 2008. Results: The mean age of the patients was 68.2 years. The mean length of hospitalisation stay was 10.4 days. The costs were different between survivors and non-survivors. There was a statistically significant difference between survivors and non-survivors groups in all costs except bed costs, laboratory costs, radiology costs and consultation costs. Conclusion: These results suggest that the cost of patients with acute exacerbations of COPD represents a considerable economic burden for the health care system in Turkey.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Chronic Obstructive Pulmonary Disease (COPD) is a leading cause of death worldwide with a continued rising mortality rate, and it represents a major socioeconomic burden. The aim of this study was to examine the costs of acute exacerbation of COPD patients admitted to two different university hospital intensive care units.</p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Material and Methods</strong>: We analyzed 156 patients (128 male and 28 female) who were admitted for treatment of acute exacerbations of COPD from January 1, 2005 to June 15, 2008.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Results</strong>: The mean age of the patients was 68.2 years. The mean length of hospitalisation stay was 10.4 days. The costs were different between survivors and non-survivors. There was a statistically significant difference between survivors and non-survivors groups in all costs except bed costs, laboratory costs, radiology costs and consultation costs.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Conclusion</strong>: These results suggest that the cost of patients with acute exacerbations of COPD represents a considerable economic burden for the health care system in Turkey.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Chronic Obstructive Pulmonary Disease (COPD) is a leading cause of death worldwide with a continued rising mortality rate, and it represents a major socioeconomic burden. The aim of this study was to examine the costs of acute exacerbation of COPD patients admitted to two different university hospital intensive care units. Material and Methods: We analyzed 156 patients (128 male and 28 female) who were admitted for treatment of acute exacerbations of COPD from January 1, 2005 to June 15, 2008. Results: The mean age of the patients was 68.2 years. The mean length of hospitalisation stay was 10.4 days. The costs were different between survivors and non-survivors. There was a statistically significant difference between survivors and non-survivors groups in all costs except bed costs, laboratory costs, radiology costs and consultation costs. Conclusion: These results suggest that the cost of patients with acute exacerbations of COPD represents a considerable economic burden for the health care system in Turkey.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02156.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "391-394",
+    "views": 6492,
+    "downloads": 3245,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "906",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=906",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=906",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=906",
+    "localPdfUrl": "js/data/pdfs/906.pdf",
+    "pdfUrl": "js/data/pdfs/906.pdf"
+  },
+  {
+    "id": 907,
+    "type": "Original Article",
+    "title": "Breast Cyst Fluid Free Amino Acid Profile",
+    "authors": [
+      {
+        "name": "Aynur Dağlar",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Biyokimya Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Erbaş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Biyokimya Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Şendoğan Gülen",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Biyokimya Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Gross cystic breast disease (GCBD) is the most common benign breast disease. There are two types of breast cyst; lined by apocrine epithelium (Na/K<3) or flattened epithelium (Na/K>3). Several studies have shown that women with palpable breast cysts may have 1.7-7.5 times higher risk of developing breast cancer. Patients with malignant disease usually show abnormal amino acid profiles in the peripheral circulation. Changes in amino acid profile diagnostically correlate with organ sites of malignancy. The aim of this study was to investigate the levels of amino acids in two cyst groups and possible mechanisms involved in the development of breast cancer. Material and Methods: The breast cyst fluid aspirated from women with GCBD were analysed. Breast cyst fluid amino acid levels were determined with HPLC. Results: Aspartic acid, glutamic acid, hydroxyproline, serine, glycine, threonine, alanine, proline, tyrosine, methionine, isoleucine, leucine, phenylalanine and tryptophan levels were significantly higher, and lysine levels were lower in the apocrine epithelial cysts. Conclusion: In this study, higher concentrations of amino acids in apocrine cysts, which are also known to have a higher risk of developing breast cancer, may indicate the possible role(s) of amino acids in the mechanism of breast cancer development.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Gross cystic breast disease (GCBD) is the most common benign breast disease. There are two types of breast cyst; lined by apocrine epithelium (Na/K&lt;3) or flattened epithelium (Na/K&gt;3). Several studies have shown that women with palpable breast cysts may have 1.7-7.5 times higher risk of developing breast cancer. Patients with malignant disease usually show abnormal amino acid profiles in the peripheral circulation. Changes in amino acid profile diagnostically correlate with organ sites of malignancy. The aim of this study was to investigate the levels of amino acids in two cyst groups and possible mechanisms involved in the development of breast cancer.</p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Material</strong> <strong>and Methods</strong>: The breast cyst fluid aspirated from women with GCBD were analysed. Breast cyst fluid amino acid levels were determined with HPLC.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Results</strong>: Aspartic acid, glutamic acid, hydroxyproline, serine, glycine, threonine, alanine, proline, tyrosine, methionine, isoleucine, leucine, phenylalanine and tryptophan levels were significantly higher, and lysine levels were lower in the apocrine epithelial cysts.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Conclusion</strong>: In this study, higher concentrations of amino acids in apocrine cysts, which are also known to have a higher risk of developing breast cancer, may indicate the possible role(s) of amino acids in the mechanism of breast cancer development.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Gross cystic breast disease (GCBD) is the most common benign breast disease. There are two types of breast cyst; lined by apocrine epithelium (Na/K<3) or flattened epithelium (Na/K>3). Several studies have shown that women with palpable breast cysts may have 1.7-7.5 times higher risk of developing breast cancer. Patients with malignant disease usually show abnormal amino acid profiles in the peripheral circulation. Changes in amino acid profile diagnostically correlate with organ sites of malignancy. The aim of this study was to investigate the levels of amino acids in two cyst groups and possible mechanisms involved in the development of breast cancer. Material and Methods: The breast cyst fluid aspirated from women with GCBD were analysed. Breast cyst fluid amino acid levels were determined with HPLC. Results: Aspartic acid, glutamic acid, hydroxyproline, serine, glycine, threonine, alanine, proline, tyrosine, methionine, isoleucine, leucine, phenylalanine and tryptophan levels were significantly higher, and lysine levels were lower in the apocrine epithelial cysts. Conclusion: In this study, higher concentrations of amino acids in apocrine cysts, which are also known to have a higher risk of developing breast cancer, may indicate the possible role(s) of amino acids in the mechanism of breast cancer development.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02378.2",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "395-399",
+    "views": 6753,
+    "downloads": 3440,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "907",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=907",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=907",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=907",
+    "localPdfUrl": "js/data/pdfs/907.pdf",
+    "pdfUrl": "js/data/pdfs/907.pdf"
+  },
+  {
+    "id": 908,
+    "type": "Original Article",
+    "title": "Helicobacter Pylori Infection and Benign Gastroduodenal Diseases, Data from the Trakya Region",
+    "authors": [
+      {
+        "name": "Hasan Ümit",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Gastroenteroloji Bilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Gülbin Ünsal",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Gastroenteroloji Bilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Tezel",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Gastroenteroloji Bilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Rıza Soylu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Gastroenteroloji Bilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Helicobacter pylori (H. pylori) is implicated in the etiology of gastric and duodenal ulcer, non-ulcer dyspepsia, atrophic gastritis, gastric adenocarcinoma and mucosa associated lymphoid tissue lymphoma (MALToma). The aim of our study is to evaluate the prevalance of H. pylori infection in patients with benign gastroduodenal diseases. Material and Methods: H. pylori infection was evaluated retrospectively with the urease test in 4714 patients with benign gastroduodenal disorders who applied to the endoscopy unit of Trakya University Hospital, the only University hospital in the Trakya region, between November 2003 and October 2007 with dyspeptic complaints. Results: Overall, the rapid urease test was positive in 52.8% of cases. Helicobacter pylori was positive in 65% of the bulbar ulcer, 61% of the erosive bulbitis, 60.2% of the gastric ulcer and, 48.4% of the gastritis patients. (p<0.001). H. pylori positivity was 52% in Trakya born patients, 56.3% in immigrants from Anatolia and 48.7% in immigrants from Europe (p=0.02). H. pylori positivity frequencies in women and men were 52.2% and 53.2%, respectively (p=0.52). Urease test positivity was significantly more frequent in patients 30-60 years of age compared to the groups younger than 30 or older than 60. Conclusion: The epidemiologic characteristics of H. pylori infection shows features of both Turkey and neighbouring countries of Europe",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Helicobacter pylori (H. pylori) is implicated in the etiology of gastric and duodenal ulcer, non-ulcer dyspepsia, atrophic gastritis, gastric adenocarcinoma and mucosa associated lymphoid tissue lymphoma (MALToma). The aim of our study is to evaluate the prevalance of H. pylori infection in patients with benign gastroduodenal diseases.</p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Material and Methods</strong>: H. pylori infection was evaluated retrospectively with the urease test in 4714 patients with benign gastroduodenal disorders who applied to the endoscopy unit of Trakya University Hospital, the only University hospital in the Trakya region, between November 2003 and October 2007 with dyspeptic complaints.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Results</strong>: Overall, the rapid urease test was positive in 52.8% of cases. Helicobacter pylori was positive in 65% of the bulbar ulcer, 61% of the erosive bulbitis, 60.2% of the gastric ulcer and, 48.4% of the gastritis patients. (p&lt;0.001). H. pylori positivity was 52% in Trakya born patients, 56.3% in immigrants from Anatolia and 48.7% in immigrants from Europe (p=0.02). H. pylori positivity frequencies in women and men were 52.2% and 53.2%, respectively (p=0.52). Urease test positivity was significantly more frequent in patients 30-60 years of age compared to the groups younger than 30 or older than 60.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Conclusion</strong>: The epidemiologic characteristics of H. pylori infection shows features of both Turkey and neighbouring countries of Europe</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Helicobacter pylori (H. pylori) is implicated in the etiology of gastric and duodenal ulcer, non-ulcer dyspepsia, atrophic gastritis, gastric adenocarcinoma and mucosa associated lymphoid tissue lymphoma (MALToma). The aim of our study is to evaluate the prevalance of H. pylori infection in patients with benign gastroduodenal diseases. Material and Methods: H. pylori infection was evaluated retrospectively with the urease test in 4714 patients with benign gastroduodenal disorders who applied to the endoscopy unit of Trakya University Hospital, the only University hospital in the Trakya region, between November 2003 and October 2007 with dyspeptic complaints. Results: Overall, the rapid urease test was positive in 52.8% of cases. Helicobacter pylori was positive in 65% of the bulbar ulcer, 61% of the erosive bulbitis, 60.2% of the gastric ulcer and, 48.4% of the gastritis patients. (p<0.001). H. pylori positivity was 52% in Trakya born patients, 56.3% in immigrants from Anatolia and 48.7% in immigrants from Europe (p=0.02). H. pylori positivity frequencies in women and men were 52.2% and 53.2%, respectively (p=0.52). Urease test positivity was significantly more frequent in patients 30-60 years of age compared to the groups younger than 30 or older than 60. Conclusion: The epidemiologic characteristics of H. pylori infection shows features of both Turkey and neighbouring countries of Europe",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02159.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "400-403",
+    "views": 6814,
+    "downloads": 2779,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "908",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=908",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=908",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=908",
+    "localPdfUrl": "js/data/pdfs/908.pdf",
+    "pdfUrl": "js/data/pdfs/908.pdf"
+  },
+  {
+    "id": 909,
+    "type": "Original Article",
+    "title": "The Effects of Enteral Immunonutrient Products and Total Parenteral Nutrition in Patients Who Underwent Major Abdominal Surgery",
+    "authors": [
+      {
+        "name": "Abdulhamit Gencer",
+        "affiliation": "Sarıkamış Asker Hastanesi, Genel Cerrahi Bölümü, Kars",
+        "orcid": ""
+      },
+      {
+        "name": "Yavuz Özdemir",
+        "affiliation": "Gülhane Askeri Tıp Akademisi Haydarpaşa Eğitim Hastanesi, Genel Cerrahi Bölümü, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Ergün Yücel",
+        "affiliation": "Gülhane Askeri Tıp Akademisi Haydarpaşa Eğitim Hastanesi, Genel Cerrahi Bölümü, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "M.Levhi Akın",
+        "affiliation": "Gülhane Askeri Tıp Akademisi Haydarpaşa Eğitim Hastanesi, Genel Cerrahi Bölümü, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "İlker Sücüllü",
+        "affiliation": "Gülhane Askeri Tıp Akademisi Haydarpaşa Eğitim Hastanesi, Genel Cerrahi Kliniği, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Ali İlker Filiz",
+        "affiliation": "Gülhane Askeri Tıp Akademisi Haydarpaşa Eğitim Hastanesi, Genel Cerrahi Kliniği, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Yıldız [[4]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: We aimed to investigate the effects of enteral immunonutrition and Total Parenteral Nutrition (TPN) on the immune system and acute inflammatory response of patients who underwent major abdominal surgery. Material and Methods: Sixty gastric or colorectal cancer patients were randomized into two groups. Enteral immunonutrition was given to the first group and TPN was given to the second group. Albumin, prealbumin, retinol binding globulin (RBP), transferrin, IL-2, IL-6, CRP and T-Lymphocyte levels were determined for nutritional state and immunologic evaluation. Also, postoperative complications, postoperative intensive care unit (ICU) and hospital stays were compared between the two groups. Results: All nutritional parameters were significantly decreased on the postoperative first day in both groups. RBP and prealbumin levels significantly increased in Group I on postoperative day 5. IL-6 and CRP levels increased significantly in both groups. IL-2 levels increased significantly in Group I, T-lymphocyte percentage decreased significantly in Group II on postoperative day 1 and 5. The length of ICU and hospital stays were longer and postoperative infection rate was less in Group II. Conclusion: Decrease in severity of acute inflammatory response and postoperative infection rate, augmentation in cellular immunity, decrease in the length of ICU and hospital stay were observed in the enteral immunonutrition group after major abdominal surgery.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: We aimed to investigate the effects of enteral immunonutrition and Total Parenteral Nutrition (TPN) on the immune system and acute inflammatory response of patients who underwent major abdominal surgery.</p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Material</strong> <strong>and</strong> <strong>Methods</strong>: Sixty gastric or colorectal cancer patients were randomized into two groups. Enteral immunonutrition was given to the first group and TPN was given to the second group. Albumin, prealbumin, retinol binding globulin (RBP), transferrin, IL-2, IL-6, CRP and T-Lymphocyte levels were determined for nutritional state and immunologic evaluation. Also, postoperative complications, postoperative intensive care unit (ICU) and hospital stays were compared between the two groups.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Results</strong>: All nutritional parameters were significantly decreased on the postoperative first day in both groups. RBP and prealbumin levels significantly increased in Group I on postoperative day 5. IL-6 and CRP levels increased significantly in both groups. IL-2 levels increased significantly in Group I, T-lymphocyte percentage decreased significantly in Group II on postoperative day 1 and 5. The length of ICU and hospital stays were longer and postoperative infection rate was less in Group II.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Conclusion</strong>: Decrease in severity of acute inflammatory response and postoperative infection rate, augmentation in cellular immunity, decrease in the length of ICU and hospital stay were observed in the enteral immunonutrition group after major abdominal surgery.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: We aimed to investigate the effects of enteral immunonutrition and Total Parenteral Nutrition (TPN) on the immune system and acute inflammatory response of patients who underwent major abdominal surgery. Material and Methods: Sixty gastric or colorectal cancer patients were randomized into two groups. Enteral immunonutrition was given to the first group and TPN was given to the second group. Albumin, prealbumin, retinol binding globulin (RBP), transferrin, IL-2, IL-6, CRP and T-Lymphocyte levels were determined for nutritional state and immunologic evaluation. Also, postoperative complications, postoperative intensive care unit (ICU) and hospital stays were compared between the two groups. Results: All nutritional parameters were significantly decreased on the postoperative first day in both groups. RBP and prealbumin levels significantly increased in Group I on postoperative day 5. IL-6 and CRP levels increased significantly in both groups. IL-2 levels increased significantly in Group I, T-lymphocyte percentage decreased significantly in Group II on postoperative day 1 and 5. The length of ICU and hospital stays were longer and postoperative infection rate was less in Group II. Conclusion: Decrease in severity of acute inflammatory response and postoperative infection rate, augmentation in cellular immunity, decrease in the length of ICU and hospital stay were observed in the enteral immunonutrition group after major abdominal surgery.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02426.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "404-410",
+    "views": 6990,
+    "downloads": 2286,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "909",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=909",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=909",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=909",
+    "localPdfUrl": "js/data/pdfs/909.pdf",
+    "pdfUrl": "js/data/pdfs/909.pdf"
+  },
+  {
+    "id": 910,
+    "type": "Original Article",
+    "title": "The Evaluation of Arterial and Venous Grafts with Intraoperative Flowmeter Techniques in Coronary Artery Bypass Grafting Operations",
+    "authors": [
+      {
+        "name": "Suat Canbaz",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Selçuk Ünal",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Dikmengil",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Enver Duran",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The purpose of this study was to evaluate the coronary artery bypass grafts with Transit Time Flowmeter (TTFM). Material and Methods: Fifty-nine patients who were scheduled for coronary artery bypass graft (CABG) surgery were included in the study. Coronary artery bypass anastomoses were performed using the left internal mammary artery (LIMA) and saphenous vein. At the end of the cardiopulmonary bypass, graft flow (ml/min), pulsatility index (PI), flow curve and diastolic filling percentage (DF%) of each graft were assessed with TTFM. Results: Mean graft number of the patients was 3.25±0.8. We assessed the patency of a total of 187 grafts using TTFM. Highest mean flow was 55.5 ml/min in aorta-RCA grafts and lowest mean flow was 37.6 ml/min in aorta-diagonal grafts. Revision was required for two grafts (3.38%) in two patients based on inadequate TTFM findings. Conclusion: Transit time flowmeter is an important technique that provides the detection of technical errors during surgery. With the detection of graft failure intraoperatively, revision of the graft and restoration of blood flow could be performed.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The purpose of this study was to evaluate the coronary artery bypass grafts with Transit Time Flowmeter (TTFM).</p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Material and Methods</strong>: Fifty-nine patients who were scheduled for coronary artery bypass graft (CABG) surgery were included in the study. Coronary artery bypass anastomoses were performed using the left internal mammary artery (LIMA) and saphenous vein. At the end of the cardiopulmonary bypass, graft flow (ml/min), pulsatility index (PI), flow curve and diastolic filling percentage (DF%) of each graft were assessed with TTFM.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Results</strong>: Mean graft number of the patients was 3.25&plusmn;0.8. We assessed the patency of a total of 187 grafts using TTFM. Highest mean flow was 55.5 ml/min in aorta-RCA grafts and lowest mean flow was 37.6 ml/min in aorta-diagonal grafts. Revision was required for two grafts (3.38%) in two patients based on inadequate TTFM findings.</span></p>\r\n<p>\r\n\t<span style=\"font-size: 12px;\"><strong>Conclusion</strong>: Transit time flowmeter is an important technique that provides the detection of technical errors during surgery. With the detection of graft failure intraoperatively, revision of the graft and restoration of blood flow could be performed.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The purpose of this study was to evaluate the coronary artery bypass grafts with Transit Time Flowmeter (TTFM). Material and Methods: Fifty-nine patients who were scheduled for coronary artery bypass graft (CABG) surgery were included in the study. Coronary artery bypass anastomoses were performed using the left internal mammary artery (LIMA) and saphenous vein. At the end of the cardiopulmonary bypass, graft flow (ml/min), pulsatility index (PI), flow curve and diastolic filling percentage (DF%) of each graft were assessed with TTFM. Results: Mean graft number of the patients was 3.25±0.8. We assessed the patency of a total of 187 grafts using TTFM. Highest mean flow was 55.5 ml/min in aorta-RCA grafts and lowest mean flow was 37.6 ml/min in aorta-diagonal grafts. Revision was required for two grafts (3.38%) in two patients based on inadequate TTFM findings. Conclusion: Transit time flowmeter is an important technique that provides the detection of technical errors during surgery. With the detection of graft failure intraoperatively, revision of the graft and restoration of blood flow could be performed.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03767.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "411-416",
+    "views": 6746,
+    "downloads": 9461,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "910",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=910",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=910",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=910",
+    "localPdfUrl": "js/data/pdfs/910.pdf",
+    "pdfUrl": "js/data/pdfs/910.pdf"
+  },
+  {
+    "id": 911,
+    "type": "Case Report",
+    "title": "Laryngeal Osteoma: A Rare Cause of Laryngeal Obstruction",
+    "authors": [
+      {
+        "name": "Ahmet Rıfat Karasalihoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Recep Yağız",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ömer Yalçın",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Koçyiğit",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kulak Burun Boğaz Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Abdullah Taş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kulak Burun Boğaz Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Muhsin Koten",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kulak Burun Boğaz Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ömer Yalçın",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Patoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Osteomas are benign, typically slow-growing tumors composed of densely sclerotic, well circumscribed bone. Laryngeal osteomas are extremely rare. We report an extremely rare case of laryngeal osteoma. The patient had complaints ofdysphonia for 3 years and, dyspnea for 1 month. There was a supraglottic mass filling the laryngeal lumen on indirect laryngoscopic examination. Mass was completely excised using microlaryngoscopic instruments. After the operation, the patient's complaints were completely resolved. Case reports and a review of the world literature concerning laryngeal osteoma and treatment are presented.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tOsteomas are benign, typically slow-growing tumors composed of densely sclerotic, well circumscribed bone. Laryngeal osteomas are extremely rare. We report an extremely rare case of laryngeal osteoma. The patient had complaints ofdysphonia for 3 years and, dyspnea for 1 month. There was a supraglottic mass filling the laryngeal lumen on indirect laryngoscopic examination. Mass was completely excised using microlaryngoscopic instruments. After the operation, the patient&#39;s complaints were completely resolved. Case reports and a review of the world literature concerning laryngeal osteoma and treatment are presented.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Osteomas are benign, typically slow-growing tumors composed of densely sclerotic, well circumscribed bone. Laryngeal osteomas are extremely rare. We report an extremely rare case of laryngeal osteoma. The patient had complaints ofdysphonia for 3 years and, dyspnea for 1 month. There was a supraglottic mass filling the laryngeal lumen on indirect laryngoscopic examination. Mass was completely excised using microlaryngoscopic instruments. After the operation, the patient's complaints were completely resolved. Case reports and a review of the world literature concerning laryngeal osteoma and treatment are presented.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2008.01075.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "417-419",
+    "views": 6478,
+    "downloads": 3168,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "911",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=911",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=911",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=911",
+    "localPdfUrl": "js/data/pdfs/911.pdf",
+    "pdfUrl": "js/data/pdfs/911.pdf"
+  },
+  {
+    "id": 912,
+    "type": "Case Report",
+    "title": "Multivariations of the Left Gastric Artery: A Case Report",
+    "authors": [
+      {
+        "name": "Özcan Gayretli",
+        "affiliation": "İstanbul Üniversitesi İstanbul Tıp Fakültesi, Anatomi Anabilim Dalı, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşin Çetiner Kale",
+        "affiliation": "İstanbul Üniversitesi İstanbul Tıp Fakültesi, Anatomi Anabilim Dalı, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Necdet Kocabıyık",
+        "affiliation": "Gülhane Askeri Tıp Akademisi, Anatomi Anabilim Dalı, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Hasan Ozan",
+        "affiliation": "Gülhane Askeri Tıp Akademisi, Anatomi Anabilim Dalı, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Yalçın",
+        "affiliation": "Department of Anatomy, Gülhane Military Medical Academy, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract The left gastric artery, which is the smallest branch of the coeliac trunk, travels along the lesser curvature of the stomach. During routine abdominal dissections, we encountered multivariations of the left gastric artery in a 65 year old male cadaver. The left gastric artery arose from the coeliac trunk as the first branch, afterwards it divided into two branches. The branch which passed to the right side gave three branches; to the left lobe of the liver (an accessory hepatic artery), to the fundus of the stomach and oesophagus, respectively. The branch which passed to the left side divided into two main trunks. The anterior trunk supplied the fundus and anterior wall of the stomach and the posterior trunk supplied the fundus and the posterior wall of the stomach. Consequently the posterior wall of the stomach was supplied by the posterior trunk instead of the posterior gastric artery of the splenic artery. Knowledge of the different anatomical variations of the arterial supply of the liver and stomach is of great importance in hepatobiliary and gastric surgical procedures. Therefore we believe our case will facilitate clinical aproaches related to this region.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tThe left gastric artery, which is the smallest branch of the coeliac trunk, travels along the lesser curvature of the stomach. During routine abdominal dissections, we encountered multivariations of the left gastric artery in a 65 year old male cadaver. The left gastric artery arose from the coeliac trunk as the first branch, afterwards it divided into two branches. The branch which passed to the right side gave three branches; to the left lobe of the liver (an accessory hepatic artery), to the fundus of the stomach and oesophagus, respectively. The branch which passed to the left side divided into two main trunks. The anterior trunk supplied the fundus and anterior wall of the stomach and the posterior trunk supplied the fundus and the posterior wall of the stomach. Consequently the posterior wall of the stomach was supplied by the posterior trunk instead of the posterior gastric artery of the splenic artery. Knowledge of the different anatomical variations of the arterial supply of the liver and stomach is of great importance in hepatobiliary and gastric surgical procedures. Therefore we believe our case will facilitate clinical aproaches related to this region.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract The left gastric artery, which is the smallest branch of the coeliac trunk, travels along the lesser curvature of the stomach. During routine abdominal dissections, we encountered multivariations of the left gastric artery in a 65 year old male cadaver. The left gastric artery arose from the coeliac trunk as the first branch, afterwards it divided into two branches. The branch which passed to the right side gave three branches; to the left lobe of the liver (an accessory hepatic artery), to the fundus of the stomach and oesophagus, respectively. The branch which passed to the left side divided into two main trunks. The anterior trunk supplied the fundus and anterior wall of the stomach and the posterior trunk supplied the fundus and the posterior wall of the stomach. Consequently the posterior wall of the stomach was supplied by the posterior trunk instead of the posterior gastric artery of the splenic artery. Knowledge of the different anatomical variations of the arterial supply of the liver and stomach is of great importance in hepatobiliary and gastric surgical procedures. Therefore we believe our case will facilitate clinical aproaches related to this region.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2008.01431.0",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "420-423",
+    "views": 6293,
+    "downloads": 2719,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "912",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=912",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=912",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=912",
+    "localPdfUrl": "js/data/pdfs/912.pdf",
+    "pdfUrl": "js/data/pdfs/912.pdf"
+  },
+  {
+    "id": 913,
+    "type": "Case Report",
+    "title": "Pseudoepitheliomatous Hyperplasia in Mycosis Fungoides",
+    "authors": [
+      {
+        "name": "Dilek Bayramgürler",
+        "affiliation": "Kocaeli Üniversitesi Tıp Fakültesi, Dermatoloji Anabilim Dalı, Kocaeli",
+        "orcid": ""
+      },
+      {
+        "name": "Evren Odyakmaz Demirsoy",
+        "affiliation": "Kocaeli Üniversitesi Tıp Fakültesi, Dermatoloji Anabilim Dalı, Kocaeli",
+        "orcid": ""
+      },
+      {
+        "name": "Kürşat Yıldız",
+        "affiliation": "Departments of Pathology, Medical Faculty of Kocaeli University, Kocaeli",
+        "orcid": ""
+      },
+      {
+        "name": "Cengiz Erçin",
+        "affiliation": "Kocaeli Üniversitesi Tıp Fakültesi, Patoloji Anabilim Dalı, Kocaeli",
+        "orcid": ""
+      },
+      {
+        "name": "Rebiay Kıran",
+        "affiliation": "Departments of Dermatology, Medical Faculty of Kocaeli University, Kocaeli",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Pseudoepitheliomatous hyperplasia (PEH) is down-growth proliferation of the epidermis and of the adnexal structures into the dermis, mimicking a well-differentiated squamous cell carcinoma. It might be associated with many different conditions, mostly benign but rarely with some malignant conditions. Association of PEH with cutaneous lymphomas has occasionally been reported in the literature. Here, we report a 70-year-old man who presented with vegetative nodules clinically appearing as a tumor stage of mycosis fungoides,besides typical plaques of the disease. Histopathological examination of the tumor lesion revealed that the bulk of the tumor was due to PEH. During the follow-up period lymph node involvement was determined. We considered that mycosis fungoides cases associated with PEH should be followed up closely.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tPseudoepitheliomatous hyperplasia (PEH) is down-growth proliferation of the epidermis and of the adnexal structures into the dermis, mimicking a well-differentiated squamous cell carcinoma. It might be associated with many different conditions, mostly benign but rarely with some malignant conditions. Association of PEH with cutaneous lymphomas has occasionally been reported in the literature. Here, we report a 70-year-old man who presented with vegetative nodules clinically appearing as a tumor stage of mycosis fungoides,besides typical plaques of the disease. Histopathological examination of the tumor lesion revealed that the bulk of the tumor was due to PEH. During the follow-up period lymph node involvement was determined. We considered that mycosis fungoides cases associated with PEH should be followed up closely.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Pseudoepitheliomatous hyperplasia (PEH) is down-growth proliferation of the epidermis and of the adnexal structures into the dermis, mimicking a well-differentiated squamous cell carcinoma. It might be associated with many different conditions, mostly benign but rarely with some malignant conditions. Association of PEH with cutaneous lymphomas has occasionally been reported in the literature. Here, we report a 70-year-old man who presented with vegetative nodules clinically appearing as a tumor stage of mycosis fungoides,besides typical plaques of the disease. Histopathological examination of the tumor lesion revealed that the bulk of the tumor was due to PEH. During the follow-up period lymph node involvement was determined. We considered that mycosis fungoides cases associated with PEH should be followed up closely.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2008.00917.2",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "424-427",
+    "views": 6276,
+    "downloads": 9354,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "913",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=913",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=913",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=913",
+    "localPdfUrl": "js/data/pdfs/913.pdf",
+    "pdfUrl": "js/data/pdfs/913.pdf"
+  },
+  {
+    "id": 914,
+    "type": "Case Report",
+    "title": "Renal Cell Carcinoma Manifesting After Extracorporeal Shockwave Lithotripsy, Percutaneous Nephrolithotomy and Open Surgery For Cystine Calculus",
+    "authors": [
+      {
+        "name": "Mustafa Kaplan",
+        "affiliation": "Departments of Urology, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Eric Klein",
+        "affiliation": "Department of Urology, Cleveland Clinic Foundation, Cleveland",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Several studies have linked nephrolithiasis with an increased risk of renal pelvis cancer but an association between nephrolithiasis and risk of renal cell carcinoma (RCC) has not been apparent, as only a few cases of RCC developing with nephrolithiasis have been reported. Herein, we report a case of bilateral RCC, which developed in a patient who had bilateral renal calculus, which was previously managed by extracorporeal shock wave lithotripsy, percutaneous nephrolithotripsy, and open surgery. All patients with a long standing history of urolithiasis should undergo close scrutiny of the parenchyma for the possibility an occult renal cancer by using appropriate investigations.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tSeveral studies have linked nephrolithiasis with an increased risk of renal pelvis cancer but an association between nephrolithiasis and risk of renal cell carcinoma (RCC) has not been apparent, as only a few cases of RCC developing with nephrolithiasis have been reported. Herein, we report a case of bilateral RCC, which developed in a patient who had bilateral renal calculus, which was previously managed by extracorporeal shock wave lithotripsy, percutaneous nephrolithotripsy, and open surgery. All patients with a long standing history of urolithiasis should undergo close scrutiny of the parenchyma for the possibility an occult renal cancer by using appropriate investigations.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Several studies have linked nephrolithiasis with an increased risk of renal pelvis cancer but an association between nephrolithiasis and risk of renal cell carcinoma (RCC) has not been apparent, as only a few cases of RCC developing with nephrolithiasis have been reported. Herein, we report a case of bilateral RCC, which developed in a patient who had bilateral renal calculus, which was previously managed by extracorporeal shock wave lithotripsy, percutaneous nephrolithotripsy, and open surgery. All patients with a long standing history of urolithiasis should undergo close scrutiny of the parenchyma for the possibility an occult renal cancer by using appropriate investigations.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2008.00979.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "428-430",
+    "views": 6583,
+    "downloads": 2549,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "914",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=914",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=914",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=914",
+    "localPdfUrl": "js/data/pdfs/914.pdf",
+    "pdfUrl": "js/data/pdfs/914.pdf"
+  },
+  {
+    "id": 915,
+    "type": "Case Report",
+    "title": "Isoniazid Intoxication: Three Case Reports",
+    "authors": [
+      {
+        "name": "Tülin Dede",
+        "affiliation": "Çukurova Üniversitesi Tıp Fakültesi, Çocuk Sağlığı ve Hastalıkları Anabilim Dalı, Adana",
+        "orcid": ""
+      },
+      {
+        "name": "Şehnaz Aydemir",
+        "affiliation": "Çukurova Üniversitesi Tıp Fakültesi, Çocuk Sağlığı ve Hastalıkları Anabilim Dalı, Adana",
+        "orcid": ""
+      },
+      {
+        "name": "Hayri Levent Yılmaz",
+        "affiliation": "Çukurova Üniversitesi Tıp Fakültesi, Çocuk Acil Tıp Birimi, Adana",
+        "orcid": ""
+      },
+      {
+        "name": "Dinçer Rıza Yıldıztaş",
+        "affiliation": "Çukurova Üniversitesi Tıp Fakültesi, Çocuk Yoğun Bakım Bilim Dalı, Adana",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Tuberculosis is still an important health problem in our country as its prevalence has increased in recent years. Isoniazid is one of the most commonly used antituberculous drugs because it is cheap and efficacious. When administered at high doses; it can cause convulsions, metabolic acidosis, lactic acidosis, rhabdomyolisis, coma, and even death. The basis of therapy consists of parenteral pyridoxine administration in a dose equivalent to that of the ingested isoniazid. Here we reported three cases of acute isoniazid intoxication presenting with convulsions and aimed to discuss the clinical signs, pathophysiology, and treatment of isoniazid intoxication.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tTuberculosis is still an important health problem in our country as its prevalence has increased in recent years. Isoniazid is one of the most commonly used antituberculous drugs because it is cheap and efficacious. When administered at high doses; it can cause convulsions, metabolic acidosis, lactic acidosis, rhabdomyolisis, coma, and even death. The basis of therapy consists of parenteral pyridoxine administration in a dose equivalent to that of the ingested isoniazid. Here we reported three cases of acute isoniazid intoxication presenting with convulsions and aimed to discuss the clinical signs, pathophysiology, and treatment of isoniazid intoxication.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Tuberculosis is still an important health problem in our country as its prevalence has increased in recent years. Isoniazid is one of the most commonly used antituberculous drugs because it is cheap and efficacious. When administered at high doses; it can cause convulsions, metabolic acidosis, lactic acidosis, rhabdomyolisis, coma, and even death. The basis of therapy consists of parenteral pyridoxine administration in a dose equivalent to that of the ingested isoniazid. Here we reported three cases of acute isoniazid intoxication presenting with convulsions and aimed to discuss the clinical signs, pathophysiology, and treatment of isoniazid intoxication.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.01027.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "431-434",
+    "views": 6818,
+    "downloads": 2311,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "915",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=915",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=915",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=915",
+    "localPdfUrl": "js/data/pdfs/915.pdf",
+    "pdfUrl": "js/data/pdfs/915.pdf"
+  },
+  {
+    "id": 916,
+    "type": "Case Report",
+    "title": "Behçet",
+    "authors": [
+      {
+        "name": "Hayriye Sarıcaoğlu",
+        "affiliation": "Uludağ Üniversitesi Tıp Fakültesi, Dermatoloji Anabilim Dalı, Multidisipliner Behçet Merkezi, Bursa",
+        "orcid": ""
+      },
+      {
+        "name": "Hatice Erdem",
+        "affiliation": "Uludağ Üniversitesi Tıp Fakültesi, Dermatoloji Anabilim Dalı, Multidisipliner Behçet Merkezi, Bursa",
+        "orcid": ""
+      },
+      {
+        "name": "Şükran Tunalı",
+        "affiliation": "Uludağ Üniversitesi Tıp Fakültesi, Dermatoloji Anabilim Dalı, Multidisipliner Behçet Merkezi, Bursa",
+        "orcid": ""
+      },
+      {
+        "name": "Serap Köran Karadoğan",
+        "affiliation": "İzmir Büyükşehir Belediyesi Eşrefpaşa Hastanesi, Dermatoloji Birimi, İzmir",
+        "orcid": ""
+      },
+      {
+        "name": "Cüneyt Erdoğan",
+        "affiliation": "Uludağ Üniversitesi Tıp Fakültesi, Radyoloji Anabilim Dalı, Multidisipliner Behçet Merkezi, Bursa",
+        "orcid": ""
+      },
+      {
+        "name": "Davit Saba",
+        "affiliation": "Uludağ Üniversitesi Tıp Fakültesi, Göğüs ve Kalp Damar Cerrahisi Anabilim Dalı, Multidisipliner Behçet Merkezi, Bursa",
+        "orcid": ""
+      },
+      {
+        "name": "Kamil Dilek",
+        "affiliation": "Uludağ Üniversitesi Tıp Fakültesi, İç Hastalıkları, Nefroloji-Romatoloji Anabilim Dalı, Multidisipliner Behçet Merkezi, Bursa",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Bilateral multiple pulmonary arterial aneurysms are rare presentations of pulmonary involvement in Behçet's disease (BD), affecting particularly young men. BD has also been well documented as a risk factor for cerebral venous thrombosis, which may present as superior sagittal sinus thrombosis. We present a male patient presenting with both pulmonary arterial aneurysms and superior sagittal sinus thrombosis. This patient is presented since coexistence of sagittal sinus thrombosis and multiple pulmonary arterial aneurysms in BD is rarely observed.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tBilateral multiple pulmonary arterial aneurysms are rare presentations of pulmonary involvement in Beh&ccedil;et&#39;s disease (BD), affecting particularly young men. BD has also been well documented as a risk factor for cerebral venous thrombosis, which may present as superior sagittal sinus thrombosis. We present a male patient presenting with both pulmonary arterial aneurysms and superior sagittal sinus thrombosis. This patient is presented since coexistence of sagittal sinus thrombosis and multiple pulmonary arterial aneurysms in BD is rarely observed.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Bilateral multiple pulmonary arterial aneurysms are rare presentations of pulmonary involvement in Behçet's disease (BD), affecting particularly young men. BD has also been well documented as a risk factor for cerebral venous thrombosis, which may present as superior sagittal sinus thrombosis. We present a male patient presenting with both pulmonary arterial aneurysms and superior sagittal sinus thrombosis. This patient is presented since coexistence of sagittal sinus thrombosis and multiple pulmonary arterial aneurysms in BD is rarely observed.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.01347.2",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "435-437",
+    "views": 6297,
+    "downloads": 1871,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "916",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=916",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=916",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=916",
+    "localPdfUrl": "js/data/pdfs/916.pdf",
+    "pdfUrl": "js/data/pdfs/916.pdf"
+  },
+  {
+    "id": 917,
+    "type": "Case Report",
+    "title": "Thyroid Abscess Due To Brucellosis: Case Report",
+    "authors": [
+      {
+        "name": "Rezan Harman",
+        "affiliation": "Akdeniz Üniversitesi Tıp Fakültesi, İnfeksiyon Hastalıkları ve Klinik Mikrobiyoloji Anabilim Dalı, Antalya",
+        "orcid": ""
+      },
+      {
+        "name": "Dilara İnan",
+        "affiliation": "Akdeniz Üniversitesi Tıp Fakültesi, İnfeksiyon Hastalıkları ve Klinik Mikrobiyoloji Anabilim Dalı, Antalya",
+        "orcid": ""
+      },
+      {
+        "name": "Özge Turhan",
+        "affiliation": "Akdeniz Üniversitesi Tıp Fakültesi, İnfeksiyon Hastalıkları ve Klinik Mikrobiyoloji Anabilim Dalı, Antalya",
+        "orcid": ""
+      },
+      {
+        "name": "Filiz Günseren",
+        "affiliation": "Akdeniz Üniversitesi Tıp Fakültesi, İnfeksiyon Hastalıkları ve Klinik Mikrobiyoloji Anabilim Dalı, Antalya",
+        "orcid": ""
+      },
+      {
+        "name": "Betil Özhak Baysan [[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Brucellosis is primarily seen in endemic regions and is also common worldwide.The range of clinical features of brucellosis is wide. According to our knowledge, a thyroid abscess caused by Brucella spp. has not previously been reported in Turkey. In this study, we reported a 20 year old man who had a thyroid abscess caused by Brucella spp.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tBrucellosis is primarily seen in endemic regions and is also common worldwide.The range of clinical features of brucellosis is wide. According to our knowledge, a thyroid abscess caused by Brucella spp. has not previously been reported in Turkey. In this study, we reported a 20 year old man who had a thyroid abscess caused by Brucella spp.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Brucellosis is primarily seen in endemic regions and is also common worldwide.The range of clinical features of brucellosis is wide. According to our knowledge, a thyroid abscess caused by Brucella spp. has not previously been reported in Turkey. In this study, we reported a 20 year old man who had a thyroid abscess caused by Brucella spp.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2008.01342.2",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "438-439",
+    "views": 7000,
+    "downloads": 9441,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "917",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=917",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=917",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=917",
+    "localPdfUrl": "js/data/pdfs/917.pdf",
+    "pdfUrl": "js/data/pdfs/917.pdf"
+  },
+  {
+    "id": 918,
+    "type": "Case Report",
+    "title": "Disseminated Leptomeningeal Carcinomatosis (Lc); Presenting with Cauda Equina-Conus Syndrome",
+    "authors": [
+      {
+        "name": "Ayşegül Sarsılmaz",
+        "affiliation": "İzmir Atatürk Eğitim ve Araştırma Hastanesi, Radyoloji Bölümü, İzmir",
+        "orcid": ""
+      },
+      {
+        "name": "Melda Apaydın",
+        "affiliation": "İzmir Atatürk Eğitim ve Araştırma Hastanesi, Radyoloji Bölümü, İzmir",
+        "orcid": ""
+      },
+      {
+        "name": "Makbule Varer",
+        "affiliation": "İzmir Atatürk Eğitim ve Araştırma Hastanesi, Radyoloji Bölümü, İzmir",
+        "orcid": ""
+      },
+      {
+        "name": "Engin Uluç",
+        "affiliation": "İzmir Atatürk Eğitim ve Araştırma Hastanesi, Radyoloji Bölümü, İzmir",
+        "orcid": ""
+      },
+      {
+        "name": "Vermi Değerli",
+        "affiliation": "İzmir Atatürk Eğitim ve Araştırma Hastanesi, Acil Tıp Bölümü, İzmir",
+        "orcid": ""
+      },
+      {
+        "name": "Funda Karbek Akarca",
+        "affiliation": "İzmir Atatürk Eğitim ve Araştırma Hastanesi, Acil Tıp Bölümü, İzmir",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Keywords : Leptomeningeal carcinomatosis; cauda equina-conus syndrome; lung cancer; magnetic resonance imaging",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<b>Keywords :</b>\t\tLeptomeningeal carcinomatosis; cauda equina-conus syndrome; lung cancer; magnetic resonance imaging \t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Keywords : Leptomeningeal carcinomatosis; cauda equina-conus syndrome; lung cancer; magnetic resonance imaging",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.01595.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "440-444",
+    "views": 6461,
+    "downloads": 1867,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "918",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=918",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=918",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=918",
+    "localPdfUrl": "js/data/pdfs/918.pdf",
+    "pdfUrl": "js/data/pdfs/918.pdf"
+  },
+  {
+    "id": 919,
+    "type": "Case Report",
+    "title": "A Neglected Giant Sialolith As a Cause of Deep Neck Infection: a Case Report",
+    "authors": [
+      {
+        "name": "Ahmet Eyibilen",
+        "affiliation": "Departments of Otorhinolaryngology, Medical Faculty of Gaziosmanpaşa University, Tokat",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Aladağ",
+        "affiliation": "Departments of Otorhinolaryngology, Medical Faculty of Gaziosmanpaşa University, Tokat",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Turan",
+        "affiliation": "Gaziosmanpaşa Üniversitesi Tıp Fakültesi, Kulak Burun Boğaz Baş-Boyun Cerrahisi Anabilim Dalı, Tokat",
+        "orcid": ""
+      },
+      {
+        "name": "Nilüfer Özkan [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Salivary gland stones most frequently arise from the submandibular salivary gland. A giant stone is not common, since its diagnosis and treatment is usually performed before the lesion becomes enlarged. A male patient referred to our clinic with complaints of painful neck swelling, trismus and dysphasia. The patient was hospitalized with the diagnosis of deep neck infection, and antibiotherapy was initiated. Computerized tomographic evaluation showed an opacity in the first neck region. The patient was operated on under general anesthesia, and the cause of the opacity was a sialolith that reached dimensions of4x2x1.5 cm, leading to extreme dilatation of Wharton's duct.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tSalivary gland stones most frequently arise from the submandibular salivary gland. A giant stone is not common, since its diagnosis and treatment is usually performed before the lesion becomes enlarged. A male patient referred to our clinic with complaints of painful neck swelling, trismus and dysphasia. The patient was hospitalized with the diagnosis of deep neck infection, and antibiotherapy was initiated. Computerized tomographic evaluation showed an opacity in the first neck region. The patient was operated on under general anesthesia, and the cause of the opacity was a sialolith that reached dimensions of4x2x1.5 cm, leading to extreme dilatation of Wharton&#39;s duct.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Salivary gland stones most frequently arise from the submandibular salivary gland. A giant stone is not common, since its diagnosis and treatment is usually performed before the lesion becomes enlarged. A male patient referred to our clinic with complaints of painful neck swelling, trismus and dysphasia. The patient was hospitalized with the diagnosis of deep neck infection, and antibiotherapy was initiated. Computerized tomographic evaluation showed an opacity in the first neck region. The patient was operated on under general anesthesia, and the cause of the opacity was a sialolith that reached dimensions of4x2x1.5 cm, leading to extreme dilatation of Wharton's duct.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.01580.2",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "445-447",
+    "views": 6407,
+    "downloads": 1932,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "919",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=919",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=919",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=919",
+    "localPdfUrl": "js/data/pdfs/919.pdf",
+    "pdfUrl": "js/data/pdfs/919.pdf"
+  },
+  {
+    "id": 920,
+    "type": "Letter",
+    "title": "Giant Hairy Nevi Excision Defect Repair with Perforator Flap",
+    "authors": [
+      {
+        "name": "Yakup Çil",
+        "affiliation": "Eskişehir Asker Hastanesi, Plastik Cerrahi Bölümü, Eskişehir",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2008.01468.1",
+    "received": "",
+    "accepted": "",
+    "published": "2010-01-01",
+    "volume": 27,
+    "issue": "4",
+    "pages": "448-449",
+    "views": 5598,
+    "downloads": 9217,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1155",
+    "sourceArticleId": "920",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=920",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=920",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=920",
+    "localPdfUrl": "js/data/pdfs/920.pdf",
+    "pdfUrl": "js/data/pdfs/920.pdf"
+  }
+]

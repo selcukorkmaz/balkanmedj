@@ -1,0 +1,834 @@
+[
+  {
+    "id": 2400,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "3",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1277",
+    "sourceArticleId": "2400",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2400",
+    "localPdfUrl": "js/data/pdfs/2400.pdf",
+    "pdfUrl": "js/data/pdfs/2400.pdf"
+  },
+  {
+    "id": 2388,
+    "type": "Original Article",
+    "title": "Efficacy of Noble Metal–alloy Endotracheal Tubes in Ventilator-associated Pneumonia Prevention: a Randomized Clinical Trial",
+    "authors": [
+      {
+        "name": "Radu Ciprian Tincu",
+        "affiliation": "Toxicology and Intensive Care Unit, Clinical Emergency Hospital Bucharest, Bucharest, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Cristian Cobilinschi",
+        "affiliation": "Anestesiology and Intensive Care Clinical, Emergency Hospital Bucharest, Bucharest, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Iulia Florentina Tincu",
+        "affiliation": "Gastroenterology Department, “Dr Victor Gomoiu” Clinical Children Hospital, Bucharest, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Radu Alexandru Macovei",
+        "affiliation": "Gastroenterology Department, “Dr Victor Gomoiu” Clinical Children Hospital, Bucharest, Romania",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Endotracheal tube (ETT) is an important risk factor for the development of Ventilator-associated pneumonia (VAP), as it acts as a reservoir for infectious microorganisms and bypasses the host’s defenses. One of the preventive measures for VAP is endotracheal tube composition. It has been reported that biofilm formation is reduced by using ETTs coated with pure silver or silver compounds. However, noble metal-alloy ETTs have not been adequately studied.Aims: To evaluate the efficacy of noble metal alloy ETT (coated Bactiguard Infection Protection ETTs) in preventing VAP compared to standard non-coated ETTs in patients requiring ≥ 48 hours of mechanical ventilation and presenting for coma due to drug intoxication.Study Design: Randomized controlled study.Methods: Participants were randomized using sealed envelopes with a concealed 1:1 allocation to either the intervention group or the control group. The intervention group used a noble metal–alloy ETT, while the control group received standard ETT. The primary outcomes were the incidence of VAP (per ventilated patients) and the duration of mechanical ventilation.Results: Initially, a total of 188 patients were assessed for eligibility, and the final allocation group consisted of 180 patients, who were subsequently randomized into the intervention group (n = 97) and control group (n = 83). The incidence of VAP in the intervention and control groups was 27.83% and 43.16% (P = 0.03), and the VAP ratio per 1000 ventilation days was 51.26/1000 and 83.38/1000 (P = 0.01), respectively. The mean durations of mechanical ventilation were 3.2 ± 0.78 in the intervention group and 5.03 ± 1.88 in the control group (P = 0.22). There was no statistically significant difference between groups in terms of mortality and duration of hospital stay.Conclusion: Noble metal-alloy ETT reduces the incidence of VAP, ventilation days, and ICU stay for patients in mechanical ventilation.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Endotracheal tube (ETT) is an important risk factor for the development of Ventilator-associated pneumonia (VAP), as it acts as a reservoir for infectious microorganisms and bypasses the host&rsquo;s defenses. One of the preventive measures for VAP is endotracheal tube composition. It has been reported that biofilm formation is reduced by using ETTs coated with pure silver or silver compounds. However, noble metal-alloy ETTs have not been adequately studied.<br /><strong>Aims:</strong> To evaluate the efficacy of noble metal alloy ETT (coated Bactiguard Infection Protection ETTs) in preventing VAP compared to standard non-coated ETTs in patients requiring &ge; 48 hours of mechanical ventilation and presenting for coma due to drug intoxication.<br /><strong>Study Design:</strong> Randomized controlled study.<br /><strong>Methods:</strong> Participants were randomized using sealed envelopes with a concealed 1:1 allocation to either the intervention group or the control group. The intervention group used a noble metal&ndash;alloy ETT, while the control group received standard ETT. The primary outcomes were the incidence of VAP (per ventilated patients) and the duration of mechanical ventilation.<br /><strong>Results:</strong> Initially, a total of 188 patients were assessed for eligibility, and the final allocation group consisted of 180 patients, who were subsequently randomized into the intervention group (n = 97) and control group (n = 83). The incidence of VAP in the intervention and control groups was 27.83% and 43.16% (<em>P</em> = 0.03), and the VAP ratio per 1000 ventilation days was 51.26/1000 and 83.38/1000 (<em>P</em> = 0.01), respectively. The mean durations of mechanical ventilation were <br />3.2 &plusmn; 0.78 in the intervention group and 5.03 &plusmn; 1.88 in the control group <br />(<em>P</em> = 0.22). There was no statistically significant difference between groups in terms of mortality and duration of hospital stay.<br /><strong>Conclusion:</strong> Noble metal-alloy ETT reduces the incidence of VAP, ventilation days, and ICU stay for patients in mechanical ventilation.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Endotracheal tube (ETT) is an important risk factor for the development of Ventilator-associated pneumonia (VAP), as it acts as a reservoir for infectious microorganisms and bypasses the host’s defenses. One of the preventive measures for VAP is endotracheal tube composition. It has been reported that biofilm formation is reduced by using ETTs coated with pure silver or silver compounds. However, noble metal-alloy ETTs have not been adequately studied.Aims: To evaluate the efficacy of noble metal alloy ETT (coated Bactiguard Infection Protection ETTs) in preventing VAP compared to standard non-coated ETTs in patients requiring ≥ 48 hours of mechanical ventilation and presenting for coma due to drug intoxication.Study Design: Randomized controlled study.Methods: Participants were randomized using sealed envelopes with a concealed 1:1 allocation to either the intervention group or the control group. The intervention group used a noble metal–alloy ETT, while the control group received standard ETT. The primary outcomes were the incidence of VAP (per ventilated patients) and the duration of mechanical ventilation.Results: Initially, a total of 188 patients were assessed for eligibility, and the final allocation group consisted of 180 patients, who were subsequently randomized into the intervention group (n = 97) and control group (n = 83). The incidence of VAP in the intervention and control groups was 27.83% and 43.16% (P = 0.03), and the VAP ratio per 1000 ventilation days was 51.26/1000 and 83.38/1000 (P = 0.01), respectively. The mean durations of mechanical ventilation were 3.2 ± 0.78 in the intervention group and 5.03 ± 1.88 in the control group (P = 0.22). There was no statistically significant difference between groups in terms of mortality and duration of hospital stay.Conclusion: Noble metal-alloy ETT reduces the incidence of VAP, ventilation days, and ICU stay for patients in mechanical ventilation.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2021.2021-7-86",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "3",
+    "pages": "167-171",
+    "views": 8141,
+    "downloads": 5514,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1277",
+    "sourceArticleId": "2388",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2388",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2388",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2388",
+    "localPdfUrl": "js/data/pdfs/2388.pdf",
+    "pdfUrl": "js/data/pdfs/2388.pdf"
+  },
+  {
+    "id": 2393,
+    "type": "Original Article",
+    "title": "Anti-SARS-CoV-2 IgG and Neutralizing Antibody Levels in Patients with Past COVID-19 Infection: A Longitudinal Study",
+    "authors": [
+      {
+        "name": "Harika Öykü Dinç",
+        "affiliation": "Department of Pharmaceutical Microbiology, Pharmacy Faculty, Bezmialem Vakıf University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Demirci",
+        "affiliation": "Department of Medical Microbiology Faculty, of Medicine, Kırklareli University, Kırklareli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yusuf Emre Özdemir",
+        "affiliation": "Specialist of Infectious Diseases and Clinical Microbiology, University of Health Sciences Turkey Bakırköy Sadi Konuk Training Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serhat Sirekbasan",
+        "affiliation": "Department of Medical Laboratory, Techniques Çankırı Karatekin University, Eldivan Vocational School of Health Services, Çankırı, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayse Nur Aktaş",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Cerrahpasa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Rıdvan Karaali",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Cerrahpasa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yeşim Tuyji Tok",
+        "affiliation": "Department of Medical Microbiology, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Doğukan Özbey",
+        "affiliation": "Department of Medical Microbiology, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Rüveyda Akçin",
+        "affiliation": "Department of Medical Microbiology, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nesrin Gareayaghi",
+        "affiliation": "Blood Center İstanbul Şişli Hamidiye Etfal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mert Ahmet Kuşkucu",
+        "affiliation": "Blood Center İstanbul Şişli Hamidiye Etfal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kenan Midilli",
+        "affiliation": "Department of Medical Microbiology, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gökhan Aygün",
+        "affiliation": "Department of Medical Microbiology, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Suat Sarıbaş",
+        "affiliation": "Department of Medical Microbiology, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bekir Kocazeybek",
+        "affiliation": "Department of Medical Microbiology, Cerrahpaşa Faculty of Medicine, İstanbul University-Cerrahpaşa, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Monitoring the longevity of immunoglobulin G (IgG) responses following severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) infections is vital to understanding the role of antibodies in preventing infection.Aims: To determine the quantitative IgG responses specific to the Spike-S1 (S1) receptor-binding domain (S1/RBD) region of the virus in serum samples taken between 4 weeks and 7 months after polymerase chain reaction (PCR) positivity in patients who are diagnosed with coronavirus disease-2019 (COVID-19).Study Design: A longitudinal study.Methods: This study included 113 patients with a clinical and molecular diagnosis of COVID-19. The first and second serum samples were taken 1 and 7 months, respectively, after the PCR positivity. S1/RBD-specific IgG antibody response was assayed using anti-SARS-CoV-2 QuantiVac ELISA (IgG) kit (Euroimmun, Lübeck, Germany). The neutralizing antibodies were investigated in 57 patients whose IgG test results were above the cut-off value.Results: In 57 patients with SARS-CoV-2 IgG, the anti-SARS-CoV-2 IgG quantitative antibody levels significantly decreased after 7 months (Z = −2.197, p = 0.028). A correlation was detected between the anti-SARS-CoV-2 IgG and nAb percent inhibition (IH%) levels detected in 1 month (rs = 0.496, p < 0.001), but without significant correlation in serum samples taken on 7 months. The nAb IH% levels of the first and second were compared for COVID-19 severity and revealed no statistical difference (p = 0.256). In the second serum sample, the nAb IH%s of patients with moderate COVID-19 showed a statistically significant difference from patients with mild COVID-19 (p = 0.018), but without significant differences between severe and moderate or mild COVID-19.Conclusion: SARS-CoV-2 quantitative IgG antibody titers are significantly reduced at long-term follow-up (> 6 months). Due to the limited information on seroconversion, comprehensive studies should be conducted for long-term follow-up of the immune response against SARS-CoV-2.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Monitoring the longevity of immunoglobulin G (IgG) responses following severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) infections is vital to understanding the role of antibodies in preventing infection.<br /><strong>Aims:</strong> To determine the quantitative IgG responses specific to the Spike-S1 (S1) receptor-binding domain (S1/RBD) region of the virus in serum samples taken between 4 weeks and 7 months after polymerase chain reaction (PCR) positivity in patients who are diagnosed with coronavirus disease-2019 (COVID-19).<br /><strong>Study Design:</strong> A longitudinal study.<br /><strong>Methods:</strong> This study included 113 patients with a clinical and molecular diagnosis of COVID-19. The first and second serum samples were taken 1 and 7 months, respectively, after the PCR positivity. S1/RBD-specific IgG antibody response was assayed using anti-SARS-CoV-2 QuantiVac ELISA (IgG) kit (Euroimmun, L&uuml;beck, Germany). The neutralizing antibodies were investigated in 57 patients whose IgG test results were above the cut-off value.<br /><strong>Results:</strong> In 57 patients with SARS-CoV-2 IgG, the anti-SARS-CoV-2 IgG quantitative antibody levels significantly decreased after 7 months (<em>Z</em> = &minus;2.197, <em>p</em> = 0.028). A correlation was detected between the anti-SARS-CoV-2 IgG and nAb percent inhibition (IH%) levels detected in 1 month (rs = 0.496, <em>p</em> &lt; 0.001), but without significant correlation in serum samples taken on 7 months. The nAb IH% levels of the first and second were compared for COVID-19 severity and revealed no statistical difference (<em>p</em> = 0.256). In the second serum sample, the nAb IH%s of patients with moderate COVID-19 showed a statistically significant difference from patients with mild COVID-19 (<em>p</em> = 0.018), but without significant differences between severe and moderate or mild COVID-19.<br /><strong>Conclusion:</strong> SARS-CoV-2 quantitative IgG antibody titers are significantly reduced at long-term follow-up (&gt; 6 months). Due to the limited information on seroconversion, comprehensive studies should be conducted for long-term follow-up of the immune response against SARS-CoV-2.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Monitoring the longevity of immunoglobulin G (IgG) responses following severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) infections is vital to understanding the role of antibodies in preventing infection.Aims: To determine the quantitative IgG responses specific to the Spike-S1 (S1) receptor-binding domain (S1/RBD) region of the virus in serum samples taken between 4 weeks and 7 months after polymerase chain reaction (PCR) positivity in patients who are diagnosed with coronavirus disease-2019 (COVID-19).Study Design: A longitudinal study.Methods: This study included 113 patients with a clinical and molecular diagnosis of COVID-19. The first and second serum samples were taken 1 and 7 months, respectively, after the PCR positivity. S1/RBD-specific IgG antibody response was assayed using anti-SARS-CoV-2 QuantiVac ELISA (IgG) kit (Euroimmun, Lübeck, Germany). The neutralizing antibodies were investigated in 57 patients whose IgG test results were above the cut-off value.Results: In 57 patients with SARS-CoV-2 IgG, the anti-SARS-CoV-2 IgG quantitative antibody levels significantly decreased after 7 months (Z = −2.197, p = 0.028). A correlation was detected between the anti-SARS-CoV-2 IgG and nAb percent inhibition (IH%) levels detected in 1 month (rs = 0.496, p < 0.001), but without significant correlation in serum samples taken on 7 months. The nAb IH% levels of the first and second were compared for COVID-19 severity and revealed no statistical difference (p = 0.256). In the second serum sample, the nAb IH%s of patients with moderate COVID-19 showed a statistically significant difference from patients with mild COVID-19 (p = 0.018), but without significant differences between severe and moderate or mild COVID-19.Conclusion: SARS-CoV-2 quantitative IgG antibody titers are significantly reduced at long-term follow-up (> 6 months). Due to the limited information on seroconversion, comprehensive studies should be conducted for long-term follow-up of the immune response against SARS-CoV-2.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2021-8-131",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "3",
+    "pages": "172-177",
+    "views": 7997,
+    "downloads": 5420,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1277",
+    "sourceArticleId": "2393",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2393",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2393",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2393",
+    "localPdfUrl": "js/data/pdfs/2393.pdf",
+    "pdfUrl": "js/data/pdfs/2393.pdf"
+  },
+  {
+    "id": 2390,
+    "type": "Original Article",
+    "title": "Biomimetic Nanosystems for the Synergistic Delivery of miR-144/451a for Oral Squamous Cell Carcinoma",
+    "authors": [
+      {
+        "name": "Kunshan Li",
+        "affiliation": "Department of Stomatology, Fourth Affiliated Hospital, Hebei Medical University, Hebei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yongle Qiu",
+        "affiliation": "Department of Stomatology, Fourth Affiliated Hospital, Hebei Medical University, Hebei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xin Liu",
+        "affiliation": "Department of Stomatology, Fourth Affiliated Hospital, Hebei Medical University, Hebei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Fang Huang",
+        "affiliation": "Department of Medical Oncology, Fourth Affiliated Hospital, Hebei Medical University, Hebei, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The miR-144/451a cluster acts as a tumor suppressor in various tumors by synergistically inhibiting the proliferation, migration, and invasion of oral squamous cell carcinoma (OSCC).Aims: To achieve the synergistic delivery of the miR-144/451a cluster for OSCC treatment by constructing chitosan nanoparticles (CAs) camouflaged with macrophage membranes.Study Design: A cell-culture study.Methods: CAs were prepared using the ionic cross-linking method, and biomimetic nanoparticles coloaded with the miR-144/451a cluster (miR-144-source of macrophage-derived exosomes [MEXO]/CA-miR-451a) were prepared using the uptake–efflux method. The MEXO was detected by a bicinchoninic acid assay. The as-prepared biomimetic nanoparticles were then characterized to determine their protective effects on microRNAs (miRNAs). Moreover, the influence of the miR-144-MEXO/CA-miR-451a nanoparticles on the proliferation, migration, and invasion of OSCCs was evaluated. Finally, the effects of the biomimetic system on the expression of calcium-binding protein 39 (CAB39) and migration inhibitory factor (MIF) were detected using the real-time polymerase chain reaction and Western blot.Results: After coating the CAs with MEXO, their particle size increased from 113.1 ± 3.4 nm to 143.2 ± 14 nm, and their surface potential decreased from 26.34 ± 0.4 mV to −10.3 ± 1.6 mV. The expression of the MEXO marker protein was also observed on the biomimetic nanoparticles’ surface. The system can protect miRNAs from RNase A degradation. Compared with the CAs cotransfected with free miR-144/451a cluster, CAs that are coloaded with miR-144-MEXO/CA-miR-451a nanoparticles substantially reduced the viability (p < 0.001), migration (p = 0.023), and invasion (p = 0.004) of OSCC. These findings revealed the successful construction of biomimetic nanoparticles coloaded with the miR-144/451a cluster. CAB39 and MIF expression in OSCC treated with miR-144-MEXO/CA-miR-451a nanoparticles have significantly decreased compared with the miR-144/451a group (p < 0.05). Thus, the nanoparticles can effectively improve the inhibitory effects of the miR-144/451a cluster on OSCC.Conclusion: This study provided a new idea for the application of gene cotransfection to tumor treatment.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> The miR-144/451a cluster acts as a tumor suppressor in various tumors by synergistically inhibiting the proliferation, migration, and invasion of oral squamous cell carcinoma (OSCC).<br /><strong>Aims:</strong> To achieve the synergistic delivery of the miR-144/451a cluster for OSCC treatment by constructing chitosan nanoparticles (CAs) camouflaged with macrophage membranes.<br /><strong>Study Design:</strong> A cell-culture study.<br /><strong>Methods:</strong> CAs were prepared using the ionic cross-linking method, and biomimetic nanoparticles coloaded with the miR-144/451a cluster (miR-144-source of macrophage-derived exosomes [MEXO]/CA-miR-451a) were prepared using the uptake&ndash;efflux method. The MEXO was detected by a bicinchoninic acid assay. The as-prepared biomimetic nanoparticles were then characterized to determine their protective effects on microRNAs (miRNAs). Moreover, the influence of the miR-144-MEXO/CA-miR-451a nanoparticles on the proliferation, migration, and invasion of OSCCs was evaluated. Finally, the effects of the biomimetic system on the expression of calcium-binding protein 39 (CAB39) and migration inhibitory factor (MIF) were detected using the real-time polymerase chain reaction and Western blot.<br /><strong>Results:</strong> After coating the CAs with MEXO, their particle size increased from 113.1 &plusmn; 3.4 nm to 143.2 &plusmn; 14 nm, and their surface potential decreased from 26.34 &plusmn; 0.4 mV to &minus;10.3 &plusmn; 1.6 mV. The expression of the MEXO marker protein was also observed on the biomimetic nanoparticles&rsquo; surface. The system can protect miRNAs from RNase A degradation. Compared with the CAs cotransfected with free miR-144/451a cluster, CAs that are coloaded with miR-144-MEXO/CA-miR-451a nanoparticles substantially reduced the viability (<em>p</em> &lt; 0.001), migration (<em>p</em> = 0.023), and invasion (<em>p</em> = 0.004) of OSCC. These findings revealed the successful construction of biomimetic nanoparticles coloaded with the miR-144/451a cluster. CAB39 and MIF expression in OSCC treated with miR-144-MEXO/CA-miR-451a nanoparticles have significantly decreased compared with the miR-144/451a group (<em>p</em> &lt; 0.05). Thus, the nanoparticles can effectively improve the inhibitory effects of the miR-144/451a cluster on OSCC.<br /><strong>Conclusion:</strong> This study provided a new idea for the application of gene cotransfection to tumor treatment.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The miR-144/451a cluster acts as a tumor suppressor in various tumors by synergistically inhibiting the proliferation, migration, and invasion of oral squamous cell carcinoma (OSCC).Aims: To achieve the synergistic delivery of the miR-144/451a cluster for OSCC treatment by constructing chitosan nanoparticles (CAs) camouflaged with macrophage membranes.Study Design: A cell-culture study.Methods: CAs were prepared using the ionic cross-linking method, and biomimetic nanoparticles coloaded with the miR-144/451a cluster (miR-144-source of macrophage-derived exosomes [MEXO]/CA-miR-451a) were prepared using the uptake–efflux method. The MEXO was detected by a bicinchoninic acid assay. The as-prepared biomimetic nanoparticles were then characterized to determine their protective effects on microRNAs (miRNAs). Moreover, the influence of the miR-144-MEXO/CA-miR-451a nanoparticles on the proliferation, migration, and invasion of OSCCs was evaluated. Finally, the effects of the biomimetic system on the expression of calcium-binding protein 39 (CAB39) and migration inhibitory factor (MIF) were detected using the real-time polymerase chain reaction and Western blot.Results: After coating the CAs with MEXO, their particle size increased from 113.1 ± 3.4 nm to 143.2 ± 14 nm, and their surface potential decreased from 26.34 ± 0.4 mV to −10.3 ± 1.6 mV. The expression of the MEXO marker protein was also observed on the biomimetic nanoparticles’ surface. The system can protect miRNAs from RNase A degradation. Compared with the CAs cotransfected with free miR-144/451a cluster, CAs that are coloaded with miR-144-MEXO/CA-miR-451a nanoparticles substantially reduced the viability (p < 0.001), migration (p = 0.023), and invasion (p = 0.004) of OSCC. These findings revealed the successful construction of biomimetic nanoparticles coloaded with the miR-144/451a cluster. CAB39 and MIF expression in OSCC treated with miR-144-MEXO/CA-miR-451a nanoparticles have significantly decreased compared with the miR-144/451a group (p < 0.05). Thus, the nanoparticles can effectively improve the inhibitory effects of the miR-144/451a cluster on OSCC.Conclusion: This study provided a new idea for the application of gene cotransfection to tumor treatment.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2021-11-1",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "3",
+    "pages": "178-186",
+    "views": 7328,
+    "downloads": 5286,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1277",
+    "sourceArticleId": "2390",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2390",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2390",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2390",
+    "localPdfUrl": "js/data/pdfs/2390.pdf",
+    "pdfUrl": "js/data/pdfs/2390.pdf"
+  },
+  {
+    "id": 2392,
+    "type": "Original Article",
+    "title": "Identification and Validation of a Novel Nomogram Predicting 7-day Death in Patients with Intracerebral Hemorrhage",
+    "authors": [
+      {
+        "name": "Qian Han",
+        "affiliation": "North China University of Science and Technology Affiliated Hospital North China University of Science and Technology Affiliated Hospital, Hebei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Zhengyao Zuo",
+        "affiliation": "North China University of Science and Technology Affiliated Hospital North China University of Science and Technology Affiliated Hospital, Hebei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Dongpo Su",
+        "affiliation": "North China University of Science and Technology Affiliated Hospital North China University of Science and Technology Affiliated Hospital, Hebei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiaozhuo Liu",
+        "affiliation": "North China University of Science and Technology Affiliated Hospital North China University of Science and Technology Affiliated Hospital, Hebei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Mingming Fan",
+        "affiliation": "North China University of Science and Technology Affiliated Hospital North China University of Science and Technology Affiliated Hospital, Hebei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Qing Wang",
+        "affiliation": "North China University of Science and Technology Affiliated Hospital North China University of Science and Technology Affiliated Hospital, Hebei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Mei Li",
+        "affiliation": "North China University of Science and Technology Affiliated Hospital North China University of Science and Technology Affiliated Hospital, Hebei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Tong Chen",
+        "affiliation": "North China University of Science and Technology Affiliated Hospital North China University of Science and Technology Affiliated Hospital, Hebei, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Intracerebral hemorrhage (ICH) is a serious brain condition with high mortality and disability rates. In recent decades, several risk factors related to death risk have been identified, with several models predicting mortality, but rarely used and accepted in daily clinical practice.Aims: To establish and validate a predictive nomogram of spontaneous ICH death that can be used to predict patient death within 7 days.Study Design: Cohort study.Methods: A cohort of 449 patients with ICH, diagnosed clinically from January 2015 to December 2017, were identified as the model training cohort. Univariate analysis and least absolute contraction and selection operator (Lasso) regression were used to determine the most powerful predictors of patients with ICH. Discrimination, calibration, and clinical applicability were used to assess the function of the new nomogram. In external validation, we also evaluated the nomogram in another 148 subjects (validation cohort) examined between January and December 2018.Results: We observed no significant differences in patient baseline characteristics in the training and validation cohorts, including sex, age, Glasgow coma scale (GCS) score, and one-week mortality rates. The model included three predictive variables from univariate and multivariate analysis, including GCS scores, hematoma volume, and brainstem hemorrhage (BSH). Internal validation revealed that the nomogram had a good discrimination, the area under the receiver operating characteristic curve (AUC) was 0.935, and calibration was good (U = -0.004, P = 0.801). Similarly, this nomogram also showed good differentiation ability (AUC = 0.925) and good accuracy (U = -0.007, P = 0.241) in the validation cohort data. Decision curve analysis indicated that the new prediction model was helpful.Conclusion: At the early stages of the condition, our prediction model accurately predicts the death of patients with ICH.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Intracerebral hemorrhage (ICH) is a serious brain condition with high mortality and disability rates. In recent decades, several risk factors related to death risk have been identified, with several models predicting mortality, but rarely used and accepted in daily clinical practice.<br /><strong>Aims:</strong> To establish and validate a predictive nomogram of spontaneous ICH death that can be used to predict patient death within 7 days.<br /><strong>Study Design:</strong> Cohort study.<br /><strong>Methods:</strong> A cohort of 449 patients with ICH, diagnosed clinically from January 2015 to December 2017, were identified as the model training cohort. Univariate analysis and least absolute contraction and selection operator (Lasso) regression were used to determine the most powerful predictors of patients with ICH. Discrimination, calibration, and clinical applicability were used to assess the function of the new nomogram. In external validation, we also evaluated the nomogram in another 148 subjects (validation cohort) examined between January and December 2018.<br /><strong>Results:</strong> We observed no significant differences in patient baseline characteristics in the training and validation cohorts, including sex, age, Glasgow coma scale (GCS) score, and one-week mortality rates. The model included three predictive variables from univariate and multivariate analysis, including GCS scores, hematoma volume, and brainstem hemorrhage (BSH). Internal validation revealed that the nomogram had a good discrimination, the area under the receiver operating characteristic curve (AUC) was 0.935, and calibration was good (U = -0.004, <em>P</em> = 0.801). Similarly, this nomogram also showed good differentiation ability (AUC = 0.925) and good accuracy (U = -0.007, <em>P</em> = 0.241) in the validation cohort data. Decision curve analysis indicated that the new prediction model was helpful.<br /><strong>Conclusion:</strong> At the early stages of the condition, our prediction model accurately predicts the death of patients with ICH.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Intracerebral hemorrhage (ICH) is a serious brain condition with high mortality and disability rates. In recent decades, several risk factors related to death risk have been identified, with several models predicting mortality, but rarely used and accepted in daily clinical practice.Aims: To establish and validate a predictive nomogram of spontaneous ICH death that can be used to predict patient death within 7 days.Study Design: Cohort study.Methods: A cohort of 449 patients with ICH, diagnosed clinically from January 2015 to December 2017, were identified as the model training cohort. Univariate analysis and least absolute contraction and selection operator (Lasso) regression were used to determine the most powerful predictors of patients with ICH. Discrimination, calibration, and clinical applicability were used to assess the function of the new nomogram. In external validation, we also evaluated the nomogram in another 148 subjects (validation cohort) examined between January and December 2018.Results: We observed no significant differences in patient baseline characteristics in the training and validation cohorts, including sex, age, Glasgow coma scale (GCS) score, and one-week mortality rates. The model included three predictive variables from univariate and multivariate analysis, including GCS scores, hematoma volume, and brainstem hemorrhage (BSH). Internal validation revealed that the nomogram had a good discrimination, the area under the receiver operating characteristic curve (AUC) was 0.935, and calibration was good (U = -0.004, P = 0.801). Similarly, this nomogram also showed good differentiation ability (AUC = 0.925) and good accuracy (U = -0.007, P = 0.241) in the validation cohort data. Decision curve analysis indicated that the new prediction model was helpful.Conclusion: At the early stages of the condition, our prediction model accurately predicts the death of patients with ICH.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2021-10-113",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "3",
+    "pages": "187-192",
+    "views": 7255,
+    "downloads": 4870,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1277",
+    "sourceArticleId": "2392",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2392",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2392",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2392",
+    "localPdfUrl": "js/data/pdfs/2392.pdf",
+    "pdfUrl": "js/data/pdfs/2392.pdf"
+  },
+  {
+    "id": 2394,
+    "type": "Original Article",
+    "title": "Safety of an Inactivated SARS-CoV-2 Vaccine Among Healthcare Workers in Turkey: An Online Survey",
+    "authors": [
+      {
+        "name": "Oya Baydar",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine Çukurova University, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şennur Özen",
+        "affiliation": "Clinic of Chest Diseaases, Delta Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burcu Öztürk Şahin",
+        "affiliation": "Department of Chest Diseases Faculty of Medicine Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurdan Köktürk",
+        "affiliation": "Department of Chest Diseases Faculty of Medicine Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Tevfik Kitapçı",
+        "affiliation": "Department of Nuclear medicine, Integra Medical Center, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: As vaccination against coronavirus disase-19 (COVID-19) evolves, hesitancy has become a problematic issue that has gradually spread worldwide. The main reason for vaccine hesitancy is uncertainties about vaccine side effects.Aims: To evaluate the safety of an inactivated COVID-19 vaccine, CoronaVac, and determine the risk factors of emergence of side effects.Study Design: Cross-sectional study.Methods: An online questionnaire was administered via the internet to healthcare workers who received one or two doses of CoronaVac. The online survey consisted of three sections detailing sociodemographic data, COVID-19 history, and post-vaccine side effects. Side effects that occurred in the period starting from immediately after the first vaccination to the end of the 14th day after the second vaccination were recorded.Results: A total of 1628 healthcare workers responded to the online survey. Of these, 24.3% had a side effect either after the first or second dose of CoronaVac. Redness and/or pain at the inoculation site, headache, muscle and joint pains, palpitations, and dizziness were the most common side effects. Female sex, age <50 years, and thyroid disorder in the pre-vaccine period were found to be risk factors for the emergence of side effects. Blood pressure control could not be achieved in 2.2% of participants despite medication use, and permanent medication was needed in 2.5% of participants for blood pressure control.Conclusion: Almost a quarter of healthcare workers have at least one side effect after the first or second dose of CoronaVac. Female gender, age <50 years, and thyroid disorder appear to be risk factors for the occurrence of side effects.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> As vaccination against coronavirus disase-19 (COVID-19) evolves, hesitancy has become a problematic issue that has gradually spread worldwide. The main reason for vaccine hesitancy is uncertainties about vaccine side effects.<br /><strong>Aims:</strong> To evaluate the safety of an inactivated COVID-19 vaccine, CoronaVac, and determine the risk factors of emergence of side effects.<br /><strong>Study Design:</strong> Cross-sectional study.<br /><strong>Methods:</strong> An online questionnaire was administered via the internet to healthcare workers who received one or two doses of CoronaVac. The online survey consisted of three sections detailing sociodemographic data, COVID-19 history, and post-vaccine side effects. Side effects that occurred in the period starting from immediately after the first vaccination to the end of the 14<sup>th</sup> day after the second vaccination were recorded.<br /><strong>Results:</strong> A total of 1628 healthcare workers responded to the online survey. Of these, 24.3% had a side effect either after the first or second dose of CoronaVac. Redness and/or pain at the inoculation site, headache, muscle and joint pains, palpitations, and dizziness were the most common side effects. Female sex, age &lt;50 years, and thyroid disorder in the pre-vaccine period were found to be risk factors for the emergence of side effects. Blood pressure control could not be achieved in 2.2% of participants despite medication use, and permanent medication was needed in 2.5% of participants for blood pressure control.<br /><strong>Conclusion:</strong> Almost a quarter of healthcare workers have at least one side effect after the first or second dose of CoronaVac. Female gender, age &lt;50 years, and thyroid disorder appear to be risk factors for the occurrence of side effects.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: As vaccination against coronavirus disase-19 (COVID-19) evolves, hesitancy has become a problematic issue that has gradually spread worldwide. The main reason for vaccine hesitancy is uncertainties about vaccine side effects.Aims: To evaluate the safety of an inactivated COVID-19 vaccine, CoronaVac, and determine the risk factors of emergence of side effects.Study Design: Cross-sectional study.Methods: An online questionnaire was administered via the internet to healthcare workers who received one or two doses of CoronaVac. The online survey consisted of three sections detailing sociodemographic data, COVID-19 history, and post-vaccine side effects. Side effects that occurred in the period starting from immediately after the first vaccination to the end of the 14th day after the second vaccination were recorded.Results: A total of 1628 healthcare workers responded to the online survey. Of these, 24.3% had a side effect either after the first or second dose of CoronaVac. Redness and/or pain at the inoculation site, headache, muscle and joint pains, palpitations, and dizziness were the most common side effects. Female sex, age <50 years, and thyroid disorder in the pre-vaccine period were found to be risk factors for the emergence of side effects. Blood pressure control could not be achieved in 2.2% of participants despite medication use, and permanent medication was needed in 2.5% of participants for blood pressure control.Conclusion: Almost a quarter of healthcare workers have at least one side effect after the first or second dose of CoronaVac. Female gender, age <50 years, and thyroid disorder appear to be risk factors for the occurrence of side effects.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2021-11-25",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "3",
+    "pages": "193-198",
+    "views": 6989,
+    "downloads": 3561,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1277",
+    "sourceArticleId": "2394",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2394",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2394",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2394",
+    "localPdfUrl": "js/data/pdfs/2394.pdf",
+    "pdfUrl": "js/data/pdfs/2394.pdf"
+  },
+  {
+    "id": 2396,
+    "type": "Original Article",
+    "title": "The Significance of Tumor Budding and Immunohistochemical Axl Expression in Gallbladder Adenocarcinomas",
+    "authors": [
+      {
+        "name": "Özden Öz",
+        "affiliation": "Clinic of Pathology, University of Health Sciences Turkey, İzmir Bozyaka Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Asuman Argon",
+        "affiliation": "Clinic of Pathology, University of Health Sciences Turkey, İzmir Bozyaka Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tulu Kebat",
+        "affiliation": "Clinic of Pathology, University of Health Sciences Turkey, İzmir Bozyaka Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Çisem Namlı Akıncı",
+        "affiliation": "Clinic of Pathology, University of Health Sciences Turkey, İzmir Bozyaka Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özlem Özdemir",
+        "affiliation": "Clinic of Oncology, University of Health Sciences Turkey, İzmir Bozyaka Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Tumor budding is a histopathological finding that is accepted as an indicator of epithelial-mesenchymal transformation in many solid tumors. Axl is a Receptor Tyrosine Kinase (RTK) family member and contributes to epithelial-mesenchymal transformation. It has been reported that its overexpression in various solid cancer cells is associated with a poor prognosis. It is claimed that Axl RTK may be the targeted molecule in treating some cancers due to its location in the cell membrane.Aims: To investigate the relationship between immunohistochemical (IHC) Axl expression with tumor budding on the histopathological level and their prognostic significance in patients with gallbladder carcinoma. Thus, it is aimed to contribute to the emergence of a molecular option for targeted, personalized therapy in these patients.Study Design: A retrospective cross-sectional study.Methods: Thirty-eight gallbladder cancer patients who underwent surgery between 2000 and 2017 were included in the study. The expressions of Axl RTK in tumor tissues were evaluated by the IHC method. Demographic data (age, sex) of patients, histopathological features (size, growth pattern), tumor differentiation, pathological T staging, lymphovascular invasion, perineural and serosal invasion, surgical margin, tumor infiltrated lymphocyte, and tumor budding were examined. The tumor budding of the tumor was made according to the International Tumor Budding Consensus Conference and was classified as low (0-4 buds), intermediate (5-9 buds), high (≥ 10 buds). The relationship between clinical pathologic features, the survival rate, and Axl expression was analyzed with Person’s chi-square, Cox regression tests, and the Kaplan-Meier method.Results: Tumor budding was determined as low in 12, intermediate in 10, and high in 16 cases. The increased degree of tumor budding was associated with focal-diffuse Axl expression (p = 0.018), infiltrative growth patterns (p = 0.031), poor differentiation (p = 0.006), advanced pathological stage (p = 0.002), and serosal (p = 0.040), perineural (p = 0.008), and lymphovascular invasion (p < 0.0001). Overall survival time was shorter in patients with intermediate to high tumor budding compared with those with low tumor budding (p = 0.011).Conclusion: Axl expression appears to be associated with tumor budding capacity, which may be a poor prognostic criterion for patients with gallbladder cancer. It may be a good target to prevent tumor budding to reduce tumor invasion and metastasis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Tumor budding is a histopathological finding that is accepted as an indicator of epithelial-mesenchymal transformation in many solid tumors. Axl is a Receptor Tyrosine Kinase (RTK) family member and contributes to epithelial-mesenchymal transformation. It has been reported that its overexpression in various solid cancer cells is associated with a poor prognosis. It is claimed that Axl RTK may be the targeted molecule in treating some cancers due to its location in the cell membrane.<br /><strong>Aims:</strong> To investigate the relationship between immunohistochemical (IHC) Axl expression with tumor budding on the histopathological level and their prognostic significance in patients with gallbladder carcinoma. Thus, it is aimed to contribute to the emergence of a molecular option for targeted, personalized therapy in these patients.<br /><strong>Study Design:</strong> A retrospective cross-sectional study.<br /><strong>Methods:</strong> Thirty-eight gallbladder cancer patients who underwent surgery between 2000 and 2017 were included in the study. The expressions of Axl RTK in tumor tissues were evaluated by the IHC method. Demographic data (age, sex) of patients, histopathological features (size, growth pattern), tumor differentiation, pathological T staging, lymphovascular invasion, perineural and serosal invasion, surgical margin, tumor infiltrated lymphocyte, and tumor budding were examined. The tumor budding of the tumor was made according to the International Tumor Budding Consensus Conference and was classified as low (0-4 buds), intermediate (5-9 buds), high (&ge; 10 buds). The relationship between clinical pathologic features, the survival rate, and Axl expression was analyzed with Person&rsquo;s chi-square, Cox regression tests, and the Kaplan-Meier method.<br /><strong>Results:</strong> Tumor budding was determined as low in 12, intermediate in 10, and high in 16 cases. The increased degree of tumor budding was associated with focal-diffuse Axl expression (<em>p </em>= 0.018), infiltrative growth patterns (<em>p</em> = 0.031), poor differentiation (<em>p</em> = 0.006), advanced pathological stage (<em>p </em>= 0.002), and serosal (<em>p </em>= 0.040), perineural (<em>p </em>= 0.008), and lymphovascular invasion (<em>p</em> &lt; 0.0001).&nbsp; Overall survival time was shorter in patients with intermediate to high tumor budding compared with those with low tumor budding (<em>p</em> = 0.011).<br /><strong>Conclusion:</strong> Axl expression appears to be associated with tumor budding capacity, which may be a poor prognostic criterion for patients with gallbladder cancer. It may be a good target to prevent tumor budding to reduce tumor invasion and metastasis.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Tumor budding is a histopathological finding that is accepted as an indicator of epithelial-mesenchymal transformation in many solid tumors. Axl is a Receptor Tyrosine Kinase (RTK) family member and contributes to epithelial-mesenchymal transformation. It has been reported that its overexpression in various solid cancer cells is associated with a poor prognosis. It is claimed that Axl RTK may be the targeted molecule in treating some cancers due to its location in the cell membrane.Aims: To investigate the relationship between immunohistochemical (IHC) Axl expression with tumor budding on the histopathological level and their prognostic significance in patients with gallbladder carcinoma. Thus, it is aimed to contribute to the emergence of a molecular option for targeted, personalized therapy in these patients.Study Design: A retrospective cross-sectional study.Methods: Thirty-eight gallbladder cancer patients who underwent surgery between 2000 and 2017 were included in the study. The expressions of Axl RTK in tumor tissues were evaluated by the IHC method. Demographic data (age, sex) of patients, histopathological features (size, growth pattern), tumor differentiation, pathological T staging, lymphovascular invasion, perineural and serosal invasion, surgical margin, tumor infiltrated lymphocyte, and tumor budding were examined. The tumor budding of the tumor was made according to the International Tumor Budding Consensus Conference and was classified as low (0-4 buds), intermediate (5-9 buds), high (≥ 10 buds). The relationship between clinical pathologic features, the survival rate, and Axl expression was analyzed with Person’s chi-square, Cox regression tests, and the Kaplan-Meier method.Results: Tumor budding was determined as low in 12, intermediate in 10, and high in 16 cases. The increased degree of tumor budding was associated with focal-diffuse Axl expression (p = 0.018), infiltrative growth patterns (p = 0.031), poor differentiation (p = 0.006), advanced pathological stage (p = 0.002), and serosal (p = 0.040), perineural (p = 0.008), and lymphovascular invasion (p < 0.0001). Overall survival time was shorter in patients with intermediate to high tumor budding compared with those with low tumor budding (p = 0.011).Conclusion: Axl expression appears to be associated with tumor budding capacity, which may be a poor prognostic criterion for patients with gallbladder cancer. It may be a good target to prevent tumor budding to reduce tumor invasion and metastasis.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2021-9-37",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "3",
+    "pages": "199-208",
+    "views": 6573,
+    "downloads": 4153,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1277",
+    "sourceArticleId": "2396",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2396",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2396",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2396",
+    "localPdfUrl": "js/data/pdfs/2396.pdf",
+    "pdfUrl": "js/data/pdfs/2396.pdf"
+  },
+  {
+    "id": 2399,
+    "type": "Original Article",
+    "title": "Antibiotic use and Influencing Factors Among Hospitalized Patients with COVID-19: A Multicenter Point-Prevalence Study from Turkey",
+    "authors": [
+      {
+        "name": "İrfan Şencan",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, University of Health Sciences, Dışkapı Yıldırım Beyazıt Health Practice and Research Center, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yasemin Çağ",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, İstanbul Medeniyet University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Oğuz Karabay",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Sakarya University Faculty of Medicine, Sakarya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Behice Kurtaran",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Çukurova University, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ertuğrul Güçlü",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Sakarya University Faculty of Medicine, Sakarya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aziz Öğütlü",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Sakarya University Faculty of Medicine, Sakarya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zehra Demirbaş",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Elbistan State Hospital, Kahramanmaraş, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Bulut",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Van Training and Research Hospital, Van, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gülden Eser Karlıdağ",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, University of Health Sciences Turkey, Elazığ City Hospital, Elazığ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Merve Sefa Sayar",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Van Training and Research Hospital, Van, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ezgi Gizem Şibar",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, University of Health Sciences, Dışkapı Yıldırım Beyazıt Health Practice and Research Center, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Oya Özlem Eren Kutsoylu",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, University of Health Sciences Turkey, Elazığ City Hospital, Elazığ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gülnur Kul",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Dörtyol State Hospital, Hatay, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serpil Erol",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, University of Health Sciences Turkey, Haydarpaşa Training and Research Hospital Health Practice and Research Center, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Begüm Bektaş",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, İstanbul Medeniyet University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tülay Ünver Ulusoy",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, University of Health Sciences, Dışkapı Yıldırım Beyazıt Health Practice and Research Center, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Semanur Kuzi",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Ünye State Hospital, Ordu, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Meltem Tasbakan",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Ege University Faculty of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özge Yiğit",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Ünye State Hospital, Ordu, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurgül Ceran",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, University of Health Sciences Turkey, Haydarpaşa Training and Research Hospital Health Practice and Research Center, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşe Seza İnal",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Çukurova University, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pınar Ergen",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, İstanbul Medeniyet University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tansu Yamazhan",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Ege University Faculty of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hanife Uzar",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Viranşehir State Hospital, Şanlıurfa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Canan Ağalar[[14]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Broad-spectrum empirical antimicrobials are frequently prescribed for patients with coronavirus disease 2019 (COVID-19) despite the lack of evidence for bacterial coinfection.Aims: We aimed to cross-sectionally determine the frequency of antibiotics use, type of antibiotics prescribed, and the factors influencing antibiotics use in hospitalized patients with COVID-19 confirmed by polymerase chain reaction.Study Design: The study was a national, multicenter, retrospective, and single-day point prevalence study.Methods: This was a national, multicenter, retrospective, and single-day point-prevalence study, conducted in the 24-h period between 00:00 and 24:00 on November 18, 2020, during the start of the second COVID-19 peak in Turkey.Results: A total of 1500 patients hospitalized with a diagnosis of COVID-19 were included in the study. The mean age ± standard deviation of the patients was 65.0 ± 15.5, and 56.2% (n = 843) of these patients were men. Of these hospitalized patients, 11.9% (n = 178) were undergoing invasive mechanical ventilation or ECMO. It was observed that 1118 (74.5%) patients were receiving antibiotics, of which 416 (37.2%) were prescribed a combination of antibiotics. In total, 71.2% of the patients had neither a clinical diagnosis nor microbiological evidence for prescribing antibiotics. In the multivariate logistic regression analysis, hospitalization in a state hospital (p < 0.001), requiring any supplemental oxygen (p = 0.005), presence of moderate/diffuse lung involvement (p < 0.001), C-reactive protein > 10 ULT coefficient (p < 0.001), lymphocyte count < 800 (p = 0.007), and clinical diagnosis and/or confirmation by culture (p < 0.001) were found to be independent factors associated with increased antibiotic use.Conclusion: The necessity of empirical antibiotics use in patients with COVID-19 should be reconsidered according to their clinical, imaging, and laboratory findings.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Broad-spectrum empirical antimicrobials are frequently prescribed for patients with coronavirus disease 2019 (COVID-19) despite the lack of evidence for bacterial coinfection.<br /><strong>Aims:</strong> We aimed to cross-sectionally determine the frequency of antibiotics use, type of antibiotics prescribed, and the factors influencing antibiotics use in hospitalized patients with COVID-19 confirmed by polymerase chain reaction.<br /><strong>Study Design:</strong> The study was a national, multicenter, retrospective, and single-day point prevalence study.<br /><strong>Methods:</strong> This was a national, multicenter, retrospective, and single-day point-prevalence study, conducted in the 24-h period between 00:00 and 24:00 on November 18, 2020, during the start of the second COVID-19 peak in Turkey.<br /><strong>Results:</strong> A total of 1500 patients hospitalized with a diagnosis of COVID-19 were included in the study. The mean age &plusmn; standard deviation of the patients was 65.0 &plusmn; 15.5, and 56.2% (n = 843) of these patients were men. Of these hospitalized patients, 11.9% (n = 178) were undergoing invasive mechanical ventilation or ECMO. It was observed that 1118 (74.5%) patients were receiving antibiotics, of which 416 (37.2%) were prescribed a combination of antibiotics. In total, 71.2% of the patients had neither a clinical diagnosis nor microbiological evidence for prescribing antibiotics. In the multivariate logistic regression analysis, hospitalization in a state hospital (<em>p</em> &lt; 0.001), requiring any supplemental oxygen (<em>p</em> = 0.005), presence of moderate/diffuse lung involvement (<em>p</em> &lt; 0.001), C-reactive protein &gt; 10 ULT coefficient (<em>p</em> &lt; 0.001), lymphocyte count &lt; 800 (<em>p</em> = 0.007), and clinical diagnosis and/or confirmation by culture (<em>p</em> &lt; 0.001) were found to be independent factors associated with increased antibiotic use.<br /><strong>Conclusion:</strong> The necessity of empirical antibiotics use in patients with COVID-19 should be reconsidered according to their clinical, imaging, and laboratory findings.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Broad-spectrum empirical antimicrobials are frequently prescribed for patients with coronavirus disease 2019 (COVID-19) despite the lack of evidence for bacterial coinfection.Aims: We aimed to cross-sectionally determine the frequency of antibiotics use, type of antibiotics prescribed, and the factors influencing antibiotics use in hospitalized patients with COVID-19 confirmed by polymerase chain reaction.Study Design: The study was a national, multicenter, retrospective, and single-day point prevalence study.Methods: This was a national, multicenter, retrospective, and single-day point-prevalence study, conducted in the 24-h period between 00:00 and 24:00 on November 18, 2020, during the start of the second COVID-19 peak in Turkey.Results: A total of 1500 patients hospitalized with a diagnosis of COVID-19 were included in the study. The mean age ± standard deviation of the patients was 65.0 ± 15.5, and 56.2% (n = 843) of these patients were men. Of these hospitalized patients, 11.9% (n = 178) were undergoing invasive mechanical ventilation or ECMO. It was observed that 1118 (74.5%) patients were receiving antibiotics, of which 416 (37.2%) were prescribed a combination of antibiotics. In total, 71.2% of the patients had neither a clinical diagnosis nor microbiological evidence for prescribing antibiotics. In the multivariate logistic regression analysis, hospitalization in a state hospital (p < 0.001), requiring any supplemental oxygen (p = 0.005), presence of moderate/diffuse lung involvement (p < 0.001), C-reactive protein > 10 ULT coefficient (p < 0.001), lymphocyte count < 800 (p = 0.007), and clinical diagnosis and/or confirmation by culture (p < 0.001) were found to be independent factors associated with increased antibiotic use.Conclusion: The necessity of empirical antibiotics use in patients with COVID-19 should be reconsidered according to their clinical, imaging, and laboratory findings.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2021-11-62",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "3",
+    "pages": "209-217",
+    "views": 6666,
+    "downloads": 3085,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1277",
+    "sourceArticleId": "2399",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2399",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2399",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2399",
+    "localPdfUrl": "js/data/pdfs/2399.pdf",
+    "pdfUrl": "js/data/pdfs/2399.pdf"
+  },
+  {
+    "id": 2397,
+    "type": "Clinical Image",
+    "title": "Lobular Carcinoma In Situ Incidentally Detected by Dual-Energy Computed Tomography",
+    "authors": [
+      {
+        "name": "Ahmet Gürkan Erdemir",
+        "affiliation": "Department of Radiology, Faculty of Medicine Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gamze Durhan",
+        "affiliation": "Department of Radiology, Faculty of Medicine Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erhan Akpınar",
+        "affiliation": "Department of Radiology, Faculty of Medicine Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 44-year-old woman was admitted to the emergency department with thoracic trauma. To evaluate possible thoracic injury, she underwent contrast-enhanced computed tomography (CT) in a dual-energy CT scanner, which is the main tomography appliance for all patients with trauma who presented to our emergency radiology department. Through virtual monoenergetic im",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-2-30",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "3",
+    "pages": "218-219",
+    "views": 6473,
+    "downloads": 3819,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1277",
+    "sourceArticleId": "2397",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2397",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2397",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2397",
+    "localPdfUrl": "js/data/pdfs/2397.pdf",
+    "pdfUrl": "js/data/pdfs/2397.pdf"
+  },
+  {
+    "id": 2398,
+    "type": "Clinical Image",
+    "title": "Natural Evolution of Morquio A Syndrome Caused by Two Heterozygous Mutations of the GALNS Gene",
+    "authors": [
+      {
+        "name": "Milos D Pajic",
+        "affiliation": "Pediatric Surgery Clinic, Faculty of Medicine University of Novi Sad, Novi Sad, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Ivana I Kavecan",
+        "affiliation": "Department of Pediatrics, Faculty of Medicine University of Novi Sad, Novi Sad, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Jadranka M Maksimovic",
+        "affiliation": "Institute of Epidemiology Faculty of Medicine University of Belgrade, Belgrade, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Sinisa S Babovic",
+        "affiliation": "Department of Anatomy, Faculty of Medicine University of Novi Sad, Novi Sad, Serbia",
+        "orcid": ""
+      },
+      {
+        "name": "Biljana T Bojadzieva Stojanoska",
+        "affiliation": "Institute of Anatomy, Faculty of Medicine Ss. Cyril and Methodius University in Skopje, Republic of North Macedonia, Macedonia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 21-month-old boy (Figure 1a; Figure 1b) presented to the surgery department with foot and spine deformity. He was born after a full-term pregnancy with no complications. His parents were healthy and nonconsanguineous. Birth anthropometric parameters were within the normal standard range. His birth weight was 3310 g (46th percentile), birth height was 50 cm",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-1-72",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "3",
+    "pages": "220-221",
+    "views": 6202,
+    "downloads": 2511,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1277",
+    "sourceArticleId": "2398",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2398",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2398",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2398",
+    "localPdfUrl": "js/data/pdfs/2398.pdf",
+    "pdfUrl": "js/data/pdfs/2398.pdf"
+  },
+  {
+    "id": 2391,
+    "type": "Letter to the Editor",
+    "title": "MORC2 p.R252W Mutant Axonal Charcot–Marie–Tooth Disease Causes Peripheral Neuropathies and Pathological Myofiber Destruction",
+    "authors": [
+      {
+        "name": "Yaye Wang",
+        "affiliation": "Department of Neurology The Second Hospital of Hebei Medical University, Hebei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jingzhe Han",
+        "affiliation": "Department of Neurology Harrison International Peace Hospital, Hengshui, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jinru Zhang",
+        "affiliation": "Department of Neurology The Second Hospital of Hebei Medical University, Hebei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yue Wu",
+        "affiliation": "Department of Neurology The Second Hospital of Hebei Medical University, Hebei, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xueqin Song",
+        "affiliation": "Department of Neurology The Second Hospital of Hebei Medical University, Hebei, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor We present a case of a 32-year-old woman who presented with lower extremity weakness ongoing for 7 years. Her father had similar symptoms. The patient’s physical examination reports showed atrophy and weakness of the distal limb muscles, and electromyography results suggested neurogenic damage. A biopsy of the patient’s left sural nerve tissue ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2021-12-97",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "3",
+    "pages": "222-223",
+    "views": 6381,
+    "downloads": 3976,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1277",
+    "sourceArticleId": "2391",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2391",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2391",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2391",
+    "localPdfUrl": "js/data/pdfs/2391.pdf",
+    "pdfUrl": "js/data/pdfs/2391.pdf"
+  },
+  {
+    "id": 2389,
+    "type": "Letter to the Editor",
+    "title": "Esophageal Injury Due to Long-term Use of Dabigatran",
+    "authors": [
+      {
+        "name": "Akihiro Maeda",
+        "affiliation": "Department of Internal Medicine Suwa Central Hospital, Nagano, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Hirohisa Fujikawa",
+        "affiliation": "Department of Internal Medicine Suwa Central Hospital, Nagano, Japan; Department of Medical Education Studies, International Research Center for Medical Education, Graduate School of Medicine, The University of Tokyo, Tokyo, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Tadamasa Wakabayashi",
+        "affiliation": "Department of Internal Medicine Suwa Central Hospital, Nagano, Japan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor A 79-year-old man visited the emergency department complaining of a 3-day history of dysphagia. The patient had been taking dabigatran (220 mg/day) for his permanent atrial fibrillation for the past eight years. His physical examination revealed no pathology. A chest computed tomography (CT) revealed esophageal wall thickening (Figure 1a), and ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2021-12-145",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "3",
+    "pages": "224-225",
+    "views": 6329,
+    "downloads": 3751,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1277",
+    "sourceArticleId": "2389",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2389",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2389",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2389",
+    "localPdfUrl": "js/data/pdfs/2389.pdf",
+    "pdfUrl": "js/data/pdfs/2389.pdf"
+  },
+  {
+    "id": 2395,
+    "type": "Letter to the Editor",
+    "title": "A Challenging Diagnosis: A Case of Multisystem Inflammatory Syndrome Following COVID-19 Vaccination",
+    "authors": [
+      {
+        "name": "Reşit Yıldırım",
+        "affiliation": "Department of Internal Medicine, Division of Rheumatology, Faculty of Medicine Eskişehir Osmangazi University, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Dinler",
+        "affiliation": "Department of Internal Medicine, Division of Rheumatology, Faculty of Medicine Eskişehir Osmangazi University, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nazife Şule Yaşar Bilge",
+        "affiliation": "Department of Internal Medicine, Division of Rheumatology, Faculty of Medicine Eskişehir Osmangazi University, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Timuçin Kaşifoğlu",
+        "affiliation": "Department of Internal Medicine, Division of Rheumatology, Faculty of Medicine Eskişehir Osmangazi University, Eskişehir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor mRNA vaccine-linked rheumatic disease flares and/or unveiling autoimmune disorders have been increasingly published in the literature.1-3 The multisystem inflammtory syndrome in adult (MIS-A) was firstly described in patients following the severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) infection, typically characterized by persist",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-3-21",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "3",
+    "pages": "226-227",
+    "views": 6104,
+    "downloads": 3552,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1277",
+    "sourceArticleId": "2395",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2395",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2395",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2395",
+    "localPdfUrl": "js/data/pdfs/2395.pdf",
+    "pdfUrl": "js/data/pdfs/2395.pdf"
+  }
+]

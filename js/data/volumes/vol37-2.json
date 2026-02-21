@@ -1,0 +1,841 @@
+[
+  {
+    "id": 2189,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "2",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1261",
+    "sourceArticleId": "2189",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2189",
+    "localPdfUrl": "js/data/pdfs/2189.pdf",
+    "pdfUrl": "js/data/pdfs/2189.pdf"
+  },
+  {
+    "id": 2172,
+    "type": "Editorial",
+    "title": "Is There Any Room for Women in Medical Research? Bioethical Concerns",
+    "authors": [
+      {
+        "name": "Berna Arda",
+        "affiliation": "Department of History of Medicine and Ethics, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Have you ever seen a female figure in Rembrand’s famous Dr. Tulp’s anatomy lesson? Neither the professor who teaches, nor the surroundings, nor the cadaver is a woman. This painting from 1632 is, in fact, quite compatible with reflecting the realities of traditional medicine, successfully representing a medical environment in which women have not found a pla",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.2.001",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "2",
+    "pages": "58-59",
+    "views": 7586,
+    "downloads": 9580,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1261",
+    "sourceArticleId": "2172",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2172",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2172",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2172",
+    "localPdfUrl": "js/data/pdfs/2172.pdf",
+    "pdfUrl": "js/data/pdfs/2172.pdf"
+  },
+  {
+    "id": 2182,
+    "type": "Invited Review",
+    "title": "MicroRNA and Cardiovascular Diseases",
+    "authors": [
+      {
+        "name": "Hüseyin Altuğ Çakmak",
+        "affiliation": "Clinic of Cardiology, Mustafakemalpaşa State Hospital, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Demir",
+        "affiliation": "Department of Cardiology, University of Health Sciences, Bursa Yüksek İhtisas Research and Training Hospital, Bursa, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Cardiovascular diseases are one of the most common causes of death in both developing and developed countries worldwide. Even though there have been improvements in primary prevention, the prevalence of cardiovascular diseases continues to increase in recent years. Hence, it is crucial to both investigate the molecular pathophysiology of cardiovascular diseases in-depth and find novel biomarkers regarding the early and proper prevention and diagnosis of these diseases. MicroRNAs, or miRNAs, are endogenous, conserved, single-stranded non-coding RNAs of 21-25 nucleotides in length. miRNAs have important roles in various cellular events such as embryogenesis, proliferation, vasculogenesis, apoptosis, cell growth, differentiation, and tumorigenesis. They also have potential roles in the cardiovascular system, including angiogenesis, cardiac cell contractility, control of lipid metabolism, plaque formation, the arrangement of cardiac rhythm, and cardiac cell growth. Circulating miRNAs are promising novel biomarkers for purposes of the diagnosis and prognosis of cardiovascular diseases. Cell or tissue specificity, stability in serum or plasma, resistance to degradative factors such as freeze-thaw cycles or enzymes in the blood, and fast-release kinetics, provide the potential for miRNAs to be surrogate markers for the early and accurate diagnosis of disease and for predicting middle- or long-term prognosis. Moreover, it may be a logical approach to combine miRNAs with traditional biomarkers to improve risk stratification and long-term prognosis. In addition to their efficacy in both diagnosis and prognosis, miRNA-based therapeutics may be beneficial for treating cardiovascular diseases using novel platforms and computational tools and in combination with traditional methods of analysis. microRNAs are promising, novel therapeutic agents, which can affect multiple genes using different signaling pathways. miRNAs therapeutic modulation techniques have been used in the settings of atherosclerosis, acute myocardial infarction, restenosis, vascular remodeling, arrhythmias, hypertrophy and fibrosis, angiogenesis and cardiogenesis, aortic aneurysm, pulmonary hypertension, and ischemic injury. This review presents detailed information about miRNAs regarding structure and biogenesis, stages of synthesis and functions, expression profiles in serum/plasma of living organisms, diagnostic and prognostic potential as novel biomarkers, and therapeutic applications in various diseases.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p>Cardiovascular diseases are one of the most common causes of death in both developing and developed countries worldwide. Even though there have been improvements in primary prevention, the prevalence of cardiovascular diseases continues to increase in recent years. Hence, it is crucial to both investigate the molecular pathophysiology of cardiovascular diseases in-depth and find novel biomarkers regarding the early and proper prevention and diagnosis of these diseases. MicroRNAs, or miRNAs, are endogenous, conserved, single-stranded non-coding RNAs of 21-25 nucleotides in length. miRNAs have important roles in various cellular events such as embryogenesis, proliferation, vasculogenesis, apoptosis, cell growth, differentiation, and tumorigenesis. They also have potential roles in the cardiovascular system, including angiogenesis, cardiac cell contractility, control of lipid metabolism, plaque formation, the arrangement of cardiac rhythm, and cardiac cell growth. Circulating miRNAs are promising novel biomarkers for purposes of the diagnosis and prognosis of cardiovascular diseases. Cell or tissue specificity, stability in serum or plasma, resistance to degradative factors such as freeze-thaw cycles or enzymes in the blood, and fast-release kinetics, provide the potential for miRNAs to be surrogate markers for the early and accurate diagnosis of disease and for predicting middle- or long-term prognosis. Moreover, it may be a logical approach to combine miRNAs with traditional biomarkers to improve risk stratification and long-term prognosis. In addition to their efficacy in both diagnosis and prognosis, miRNA-based therapeutics may be beneficial for treating cardiovascular diseases using novel platforms and computational tools and in combination with traditional methods of analysis. microRNAs are promising, novel therapeutic agents, which can affect multiple genes using different signaling pathways. miRNAs therapeutic modulation techniques have been used in the settings of atherosclerosis, acute myocardial infarction, restenosis, vascular remodeling, arrhythmias, hypertrophy and fibrosis, angiogenesis and cardiogenesis, aortic aneurysm, pulmonary hypertension, and ischemic injury. This review presents detailed information about miRNAs regarding structure and biogenesis, stages of synthesis and functions, expression profiles in serum/plasma of living organisms, diagnostic and prognostic potential as novel biomarkers, and therapeutic applications in various diseases.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Cardiovascular diseases are one of the most common causes of death in both developing and developed countries worldwide. Even though there have been improvements in primary prevention, the prevalence of cardiovascular diseases continues to increase in recent years. Hence, it is crucial to both investigate the molecular pathophysiology of cardiovascular diseases in-depth and find novel biomarkers regarding the early and proper prevention and diagnosis of these diseases. MicroRNAs, or miRNAs, are endogenous, conserved, single-stranded non-coding RNAs of 21-25 nucleotides in length. miRNAs have important roles in various cellular events such as embryogenesis, proliferation, vasculogenesis, apoptosis, cell growth, differentiation, and tumorigenesis. They also have potential roles in the cardiovascular system, including angiogenesis, cardiac cell contractility, control of lipid metabolism, plaque formation, the arrangement of cardiac rhythm, and cardiac cell growth. Circulating miRNAs are promising novel biomarkers for purposes of the diagnosis and prognosis of cardiovascular diseases. Cell or tissue specificity, stability in serum or plasma, resistance to degradative factors such as freeze-thaw cycles or enzymes in the blood, and fast-release kinetics, provide the potential for miRNAs to be surrogate markers for the early and accurate diagnosis of disease and for predicting middle- or long-term prognosis. Moreover, it may be a logical approach to combine miRNAs with traditional biomarkers to improve risk stratification and long-term prognosis. In addition to their efficacy in both diagnosis and prognosis, miRNA-based therapeutics may be beneficial for treating cardiovascular diseases using novel platforms and computational tools and in combination with traditional methods of analysis. microRNAs are promising, novel therapeutic agents, which can affect multiple genes using different signaling pathways. miRNAs therapeutic modulation techniques have been used in the settings of atherosclerosis, acute myocardial infarction, restenosis, vascular remodeling, arrhythmias, hypertrophy and fibrosis, angiogenesis and cardiogenesis, aortic aneurysm, pulmonary hypertension, and ischemic injury. This review presents detailed information about miRNAs regarding structure and biogenesis, stages of synthesis and functions, expression profiles in serum/plasma of living organisms, diagnostic and prognostic potential as novel biomarkers, and therapeutic applications in various diseases.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.1.94",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "2",
+    "pages": "60-71",
+    "views": 7948,
+    "downloads": 8502,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1261",
+    "sourceArticleId": "2182",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2182",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2182",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2182",
+    "localPdfUrl": "js/data/pdfs/2182.pdf",
+    "pdfUrl": "js/data/pdfs/2182.pdf"
+  },
+  {
+    "id": 2155,
+    "type": "Original Article",
+    "title": "Elevated Plasma Histone H4 Levels Are an Important Risk Factor in the Development of Septic Cardiomyopathy",
+    "authors": [
+      {
+        "name": "Nian-Fang Lu",
+        "affiliation": "Clinic of Critical Care Medicine, Beijing Electric Power Hospital, Beijing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Li Jiang",
+        "affiliation": "Department of Critical Care Medicine, Capital Medical University Fuxing Hospital, Beijing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Bo Zhu",
+        "affiliation": "Department of Critical Care Medicine, Capital Medical University Fuxing Hospital, Beijing, China",
+        "orcid": ""
+      },
+      {
+        "name": "De-Gang Yang",
+        "affiliation": "Department of Spinal and Neural Functional Reconstruction, China Rehabilitation Research Center, School of Rehabilitation Medicine, Capital Medical University, Beijing, China",
+        "orcid": ""
+      },
+      {
+        "name": "Rui-Qiang Zheng",
+        "affiliation": "Clinic of Critical Care Medicine, Subei People’s Hospital of Jiangsu Province, Jiangsu, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jun Shao",
+        "affiliation": "Clinic of Critical Care Medicine, Subei People’s Hospital of Jiangsu Province, Jiangsu, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jing Yuan",
+        "affiliation": "Clinic of Cardiac Function Tests, Subei People’s Hospital of Jiangsu Province, Jiangsu, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiu-Ming Xi",
+        "affiliation": "Department of Critical Care Medicine, Capital Medical University Fuxing Hospital, Beijing, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Myocardial impairment is a major complication and an important prognostic predictor of sepsis. Therefore, early and accurate diagnosis as well as timely management of septic cardiomyopathy is critical to achieve favorable outcomes.Aims: To investigate the risk factors of septic cardiomyopathy.Study Design: Cross-sectional study.Methods: This study performed between May 2016 and June 2018 recruited 93 septic patients from the intensive care unit. All patients received standardized treatments. Septic patients were divided into two groups: non cardiomyopathy (n=45) and septic cardiomyopathy group (n=48). Blood samples were collected and transthoracic echocardiography was performed within 24 hours of intensive care unit admission. Septic patients with one ultrasound abnormality but no history of heart disease were diagnosed as having septic cardiomyopathy. Plasma histones, cardiac troponin I, and N-terminal pro-brain natriuretic peptide were measured using ELISA. Sequential Organ Failure Assessment scores, vasopressor use, and the outcomes of intensive care unit stay were analyzed. Spearman rank analysis was used to determine the correlation between plasma histone H4 and other parameters. Binary logistic regression and receiver operating characteristic curve analysis were used to determine the risk factors for septic cardiomyopathy.Results: Compared with the non-cardiomyopathy group, the septic cardiomyopathy group had significantly higher plasma H4 and cardiac troponin I levels, a higher Sequential Organ Failure Assessment score, more frequent vasopressor use, and a higher mortality rate (p<0.05). Plasma histone H4 levels positively correlated with cardiac troponin I (r=0.577, p<0.001), N-terminal pro-brain natriuretic peptide (r=0.349, p=0.001), and Sequential Organ Failure Assessment scores (r=0.469, p<0.001). Binary logistic regression and receiver operating characteristic curve analyses revealed that elevated plasma histone H4 levels and vasopressor use were important risk factors for septic cardiomyopathy (p<0.05).Conclusion: Elevated plasma histone H4 levels could be used to predict septic cardiomyopathy in patients with sepsis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Myocardial impairment is a major complication and an important prognostic predictor of sepsis. Therefore, early and accurate diagnosis as well as timely management of septic cardiomyopathy is critical to achieve favorable outcomes.<br /><strong>Aims:</strong> To investigate the risk factors of septic cardiomyopathy.<br /><strong>Study Design:</strong> Cross-sectional study.<br /><strong>Methods:</strong> This study performed between May 2016 and June 2018 recruited 93 septic patients from the intensive care unit. All patients received standardized treatments. Septic patients were divided into two groups: non cardiomyopathy (n=45) and septic cardiomyopathy group (n=48). Blood samples were collected and transthoracic echocardiography was performed within 24 hours of intensive care unit admission. Septic patients with one ultrasound abnormality but no history of heart disease were diagnosed as having septic cardiomyopathy. Plasma histones, cardiac troponin I, and N-terminal pro-brain natriuretic peptide were measured using ELISA. Sequential Organ Failure Assessment scores, vasopressor use, and the outcomes of intensive care unit stay were analyzed. Spearman rank analysis was used to determine the correlation between plasma histone H4 and other parameters. Binary logistic regression and receiver operating characteristic curve analysis were used to determine the risk factors for septic cardiomyopathy.<br /><strong>Results:</strong> Compared with the non-cardiomyopathy group, the septic cardiomyopathy group had significantly higher plasma H4 and cardiac troponin I levels, a higher Sequential Organ Failure Assessment score, more frequent vasopressor use, and a higher mortality rate (p&lt;0.05). Plasma histone H4 levels positively correlated with cardiac troponin I (r=0.577, p&lt;0.001), N-terminal pro-brain natriuretic peptide (r=0.349, p=0.001), and Sequential Organ Failure Assessment scores (r=0.469, p&lt;0.001). Binary logistic regression and receiver operating characteristic curve analyses revealed that elevated plasma histone H4 levels and vasopressor use were important risk factors for septic cardiomyopathy (p&lt;0.05).<br /><strong>Conclusion:</strong> Elevated plasma histone H4 levels could be used to predict septic cardiomyopathy in patients with sepsis.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Myocardial impairment is a major complication and an important prognostic predictor of sepsis. Therefore, early and accurate diagnosis as well as timely management of septic cardiomyopathy is critical to achieve favorable outcomes.Aims: To investigate the risk factors of septic cardiomyopathy.Study Design: Cross-sectional study.Methods: This study performed between May 2016 and June 2018 recruited 93 septic patients from the intensive care unit. All patients received standardized treatments. Septic patients were divided into two groups: non cardiomyopathy (n=45) and septic cardiomyopathy group (n=48). Blood samples were collected and transthoracic echocardiography was performed within 24 hours of intensive care unit admission. Septic patients with one ultrasound abnormality but no history of heart disease were diagnosed as having septic cardiomyopathy. Plasma histones, cardiac troponin I, and N-terminal pro-brain natriuretic peptide were measured using ELISA. Sequential Organ Failure Assessment scores, vasopressor use, and the outcomes of intensive care unit stay were analyzed. Spearman rank analysis was used to determine the correlation between plasma histone H4 and other parameters. Binary logistic regression and receiver operating characteristic curve analysis were used to determine the risk factors for septic cardiomyopathy.Results: Compared with the non-cardiomyopathy group, the septic cardiomyopathy group had significantly higher plasma H4 and cardiac troponin I levels, a higher Sequential Organ Failure Assessment score, more frequent vasopressor use, and a higher mortality rate (p<0.05). Plasma histone H4 levels positively correlated with cardiac troponin I (r=0.577, p<0.001), N-terminal pro-brain natriuretic peptide (r=0.349, p=0.001), and Sequential Organ Failure Assessment scores (r=0.469, p<0.001). Binary logistic regression and receiver operating characteristic curve analyses revealed that elevated plasma histone H4 levels and vasopressor use were important risk factors for septic cardiomyopathy (p<0.05).Conclusion: Elevated plasma histone H4 levels could be used to predict septic cardiomyopathy in patients with sepsis.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.8.40",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "2",
+    "pages": "72-78",
+    "views": 7071,
+    "downloads": 4608,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1261",
+    "sourceArticleId": "2155",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2155",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2155",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2155",
+    "localPdfUrl": "js/data/pdfs/2155.pdf",
+    "pdfUrl": "js/data/pdfs/2155.pdf"
+  },
+  {
+    "id": 2160,
+    "type": "Original Article",
+    "title": "The Role of Cardiac Ganglia in the Prevention of Coronary Atherosclerosis: An Analytical Examination of Cholesterol-fed Rabbits",
+    "authors": [
+      {
+        "name": "Yavuzer Koza",
+        "affiliation": "Department of Cardiology, Atatürk University School of Medicine, Erzurum, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Dumlu Aydın",
+        "affiliation": "Department of Neurosurgery, Atatürk University School of Medicine, Erzurum, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ednan Bayram",
+        "affiliation": "Department of Cardiology, Atatürk University School of Medicine, Erzurum, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sare Sipal",
+        "affiliation": "Department of Pathology, Atatürk University School of Medicine, Erzurum, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ender Altaş",
+        "affiliation": "Clinic of Cardiology, Erzurum Training and Research Hospital, Erzurum, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Celaleddin Soyalp",
+        "affiliation": "Department of Anesthesiology, 100. Yıl University School of Medicine, Van, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Enise Armağan Koza",
+        "affiliation": "Clinic of Anesthesiology, Erzurum Training and Research Hospital, Erzurum, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The heart is innervated by the autonomic nervous system, which contributes to the control of the heart’s rhythm and coronary circulation. It has been suggested that the cardiac fibers of the vagus nerve play important roles in controlling circulatory functions and in protecting against atherosclerotic pathologies in coronary arteries.Aims: To investigate the presence of atherosclerotic differences in the coronary arteries of cholesterol-fed rabbits by measuring the density of cardiac ganglia neurons.Study Design: Animal experiment.Methods: This study was conducted using 45 male rabbits. Over a period of 16 weeks, they were kept on an atherogenic diet of water ad libitum and high fat (8.6%) containing saturated fatty acids with 205 mg/kg of cholesterol (1%) per day. Then, their hearts were removed and examined by histopathological methods. Atherosclerotic plaques of the main coronary arteries were examined using the Cavalieri method. Atherosclerosis index values (AIVs) were estimated as the wall surface area/plaque surface area, and the results were analyzed with the Kruskal-Wallis and Mann-Whitney U tests.Results: While the average atherosclerosis index value was estimated to be ≤8% in 21 animals, the atherosclerosis index value was 9-20% in animals with minor plaque detection (n=11) and ≥20% in animals with major plaque detection (n=10). Increased atherosclerosis index values were more common in animals with low neuron densities than in animals with high neuron densities (p<0.017).Conclusion: The low neuron density of the cardiac ganglia in cholesterol-fed rabbits is associated with an increased atherosclerotic plaque incidence and volume.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> The heart is innervated by the autonomic nervous system, which contributes to the control of the heart&rsquo;s rhythm and coronary circulation. It has been suggested that the cardiac fibers of the vagus nerve play important roles in controlling circulatory functions and in protecting against atherosclerotic pathologies in coronary arteries.<br /><strong>Aims:</strong> To investigate the presence of atherosclerotic differences in the coronary arteries of cholesterol-fed rabbits by measuring the density of cardiac ganglia neurons.<br /><strong>Study Design:</strong> Animal experiment.<br /><strong>Methods:</strong> This study was conducted using 45 male rabbits. Over a period of 16 weeks, they were kept on an atherogenic diet of water ad libitum and high fat (8.6%) containing saturated fatty acids with 205 mg/kg of cholesterol (1%) per day. Then, their hearts were removed and examined by histopathological methods. Atherosclerotic plaques of the main coronary arteries were examined using the Cavalieri method. Atherosclerosis index values (AIVs) were estimated as the wall surface area/plaque surface area, and the results were analyzed with the Kruskal-Wallis and Mann-Whitney U tests.<br /><strong>Results:</strong> While the average atherosclerosis index value was estimated to be &le;8% in 21 animals, the atherosclerosis index value was 9-20% in animals with minor plaque detection (n=11) and &ge;20% in animals with major plaque detection (n=10). Increased atherosclerosis index values were more common in animals with low neuron densities than in animals with high neuron densities (p&lt;0.017).<br /><strong>Conclusion:</strong> The low neuron density of the cardiac ganglia in cholesterol-fed rabbits is associated with an increased atherosclerotic plaque incidence and volume.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The heart is innervated by the autonomic nervous system, which contributes to the control of the heart’s rhythm and coronary circulation. It has been suggested that the cardiac fibers of the vagus nerve play important roles in controlling circulatory functions and in protecting against atherosclerotic pathologies in coronary arteries.Aims: To investigate the presence of atherosclerotic differences in the coronary arteries of cholesterol-fed rabbits by measuring the density of cardiac ganglia neurons.Study Design: Animal experiment.Methods: This study was conducted using 45 male rabbits. Over a period of 16 weeks, they were kept on an atherogenic diet of water ad libitum and high fat (8.6%) containing saturated fatty acids with 205 mg/kg of cholesterol (1%) per day. Then, their hearts were removed and examined by histopathological methods. Atherosclerotic plaques of the main coronary arteries were examined using the Cavalieri method. Atherosclerosis index values (AIVs) were estimated as the wall surface area/plaque surface area, and the results were analyzed with the Kruskal-Wallis and Mann-Whitney U tests.Results: While the average atherosclerosis index value was estimated to be ≤8% in 21 animals, the atherosclerosis index value was 9-20% in animals with minor plaque detection (n=11) and ≥20% in animals with major plaque detection (n=10). Increased atherosclerosis index values were more common in animals with low neuron densities than in animals with high neuron densities (p<0.017).Conclusion: The low neuron density of the cardiac ganglia in cholesterol-fed rabbits is associated with an increased atherosclerotic plaque incidence and volume.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.8.97",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "2",
+    "pages": "79-83",
+    "views": 6447,
+    "downloads": 1945,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1261",
+    "sourceArticleId": "2160",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2160",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2160",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2160",
+    "localPdfUrl": "js/data/pdfs/2160.pdf",
+    "pdfUrl": "js/data/pdfs/2160.pdf"
+  },
+  {
+    "id": 2163,
+    "type": "Original Article",
+    "title": "Effect of Botulinum Toxin-A Injected to Muscle Tissue on Perfusion and Survival of Fasciocutaneous Single Perforator-pedicled Propeller Flap in Rats",
+    "authors": [
+      {
+        "name": "Umut Zereyak",
+        "affiliation": "Clinic of Plastic Reconstructive Aesthetic Surgery, Sivas Numune Hospital, Sivas, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neşe Kurt Özkaya",
+        "affiliation": "Department of Plastic Reconstructive Aesthetic Surgery, Cumhuriyet University School of Medicine, Sivas, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zekiye Hasbek",
+        "affiliation": "Department of Nuclear Medicine, Cumhuriyet University School of Medicine, Sivas, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: In plastic surgery practice, fasciocutaneous single-perforator-pedicled propeller flap is a preferred procedure; however, its survival rate is below than expected, especially in flaps with a big rotation arc. When botulinum toxin-A is injected into the muscle tissue that the perforator pedicle is arisen, the tonus of pertinent muscle can reduce and the blood flow of its perforator pedicle can increase. Therefore this procedure can improve the survival rate of single-perforator-pedicled propeller flap.Aims: To evaluate the effect of botulinum toxin-A injected with ultrasonographic guidance into the muscle tissue that the perforator pedicle is arisen from one month ago on the perfusion of flap scintigraphically and the survival rate of single-perforator-pedicled propeller flap in a rat model.Study Design: Animal experiment.Methods: Three study groups were receiving botulinum toxin-A (16 IU-0.4 mL), normal saline (0.4 mL), and no study drug one month ago before flap surgery. Injections were performed under ultrasonography guidance. Flaps were elevated fasciocutaneously over the right 2nd perforator pedicle, under the corneous, with a surgical loupe and microsurgery tool and were rotated clockwise 180°. Then the scintigraphic measurements were obtained after flap elevations in the study groups, including the whole-body and flap perfusions in the study rats. The involvement rate presents the ratio of flap perfusion to whole-body perfusion. Flaps were sutured back to the abdominal wall at the latest twisting angles. With standard photographs taken in all the groups on day 8 after the operation, whole and necrotic flap areas were calculated.Results: Scintigraphically the involvement rate (the ratio of flap perfusion to whole-body perfusion) of the flaps in the botulinum toxin-A group were found significantly higher than those in the other groups (p<0.05). The area of a flap in the botulinum toxin-A group on day 8 post flap suturing was found to be significantly higher than those in the other groups (p<0.05). The area of a necrosis and the percentage of necrosis on day 8 post flap suturing in the botulinum toxin-A group was found significantly lower than those of the sham and null groups (p<0.05).Conclusion: In a rat model, if with the ultrasonographic guidance, botulinum toxin-A is injected to the muscle which perforator of the prospective single-perforator-pedicled propeller flap originated and flap surgery is performed one month later after this injection, the perfusion of single-perforator-pedicled propeller flap increases scintigraphically and this improves flap survival and reduces its necrosis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> In plastic surgery practice, fasciocutaneous single-perforator-pedicled propeller flap is a preferred procedure; however, its survival rate is below than expected, especially in flaps with a big rotation arc. When botulinum toxin-A is injected into the muscle tissue that the perforator pedicle is arisen, the tonus of pertinent muscle can reduce and the blood flow of its perforator pedicle can increase. Therefore this procedure can improve the survival rate of single-perforator-pedicled propeller flap.<br /><strong>Aims:</strong> To evaluate the effect of botulinum toxin-A injected with ultrasonographic guidance into the muscle tissue that the perforator pedicle is arisen from one month ago on the perfusion of flap scintigraphically and the survival rate of single-perforator-pedicled propeller flap in a rat model.<br /><strong>Study Design:</strong> Animal experiment.<br /><strong>Methods:</strong> Three study groups were receiving botulinum toxin-A (16 IU-0.4 mL), normal saline (0.4 mL), and no study drug one month ago before flap surgery. Injections were performed under ultrasonography guidance. Flaps were elevated fasciocutaneously over the right 2<sup>nd</sup>&nbsp;perforator pedicle, under the corneous, with a surgical loupe and microsurgery tool and were rotated clockwise 180&deg;. Then the scintigraphic measurements were obtained after flap elevations in the study groups, including the whole-body and flap perfusions in the study rats. The involvement rate presents the ratio of flap perfusion to whole-body perfusion. Flaps were sutured back to the abdominal wall at the latest twisting angles. With standard photographs taken in all the groups on day 8 after the operation, whole and necrotic flap areas were calculated.<br /><strong>Results:</strong> Scintigraphically the involvement rate (the ratio of flap perfusion to whole-body perfusion) of the flaps in the botulinum toxin-A group were found significantly higher than those in the other groups (p&lt;0.05). The area of a flap in the botulinum toxin-A group on day 8 post flap suturing was found to be significantly higher than those in the other groups (p&lt;0.05). The area of a necrosis and the percentage of necrosis on day 8 post flap suturing in the botulinum toxin-A group was found significantly lower than those of the sham and null groups (p&lt;0.05).<br /><strong>Conclusion:</strong> In a rat model, if with the ultrasonographic guidance, botulinum toxin-A is injected to the muscle which perforator of the prospective single-perforator-pedicled propeller flap originated and flap surgery is performed one month later after this injection, the perfusion of single-perforator-pedicled propeller flap increases scintigraphically and this improves flap survival and reduces its necrosis.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: In plastic surgery practice, fasciocutaneous single-perforator-pedicled propeller flap is a preferred procedure; however, its survival rate is below than expected, especially in flaps with a big rotation arc. When botulinum toxin-A is injected into the muscle tissue that the perforator pedicle is arisen, the tonus of pertinent muscle can reduce and the blood flow of its perforator pedicle can increase. Therefore this procedure can improve the survival rate of single-perforator-pedicled propeller flap.Aims: To evaluate the effect of botulinum toxin-A injected with ultrasonographic guidance into the muscle tissue that the perforator pedicle is arisen from one month ago on the perfusion of flap scintigraphically and the survival rate of single-perforator-pedicled propeller flap in a rat model.Study Design: Animal experiment.Methods: Three study groups were receiving botulinum toxin-A (16 IU-0.4 mL), normal saline (0.4 mL), and no study drug one month ago before flap surgery. Injections were performed under ultrasonography guidance. Flaps were elevated fasciocutaneously over the right 2nd perforator pedicle, under the corneous, with a surgical loupe and microsurgery tool and were rotated clockwise 180°. Then the scintigraphic measurements were obtained after flap elevations in the study groups, including the whole-body and flap perfusions in the study rats. The involvement rate presents the ratio of flap perfusion to whole-body perfusion. Flaps were sutured back to the abdominal wall at the latest twisting angles. With standard photographs taken in all the groups on day 8 after the operation, whole and necrotic flap areas were calculated.Results: Scintigraphically the involvement rate (the ratio of flap perfusion to whole-body perfusion) of the flaps in the botulinum toxin-A group were found significantly higher than those in the other groups (p<0.05). The area of a flap in the botulinum toxin-A group on day 8 post flap suturing was found to be significantly higher than those in the other groups (p<0.05). The area of a necrosis and the percentage of necrosis on day 8 post flap suturing in the botulinum toxin-A group was found significantly lower than those of the sham and null groups (p<0.05).Conclusion: In a rat model, if with the ultrasonographic guidance, botulinum toxin-A is injected to the muscle which perforator of the prospective single-perforator-pedicled propeller flap originated and flap surgery is performed one month later after this injection, the perfusion of single-perforator-pedicled propeller flap increases scintigraphically and this improves flap survival and reduces its necrosis.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.9.44",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "2",
+    "pages": "84-90",
+    "views": 6600,
+    "downloads": 11124,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1261",
+    "sourceArticleId": "2163",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2163",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2163",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2163",
+    "localPdfUrl": "js/data/pdfs/2163.pdf",
+    "pdfUrl": "js/data/pdfs/2163.pdf"
+  },
+  {
+    "id": 2164,
+    "type": "Original Article",
+    "title": "PTK-7 Expression in Gastric Cancer: A Prognostic Determinant",
+    "authors": [
+      {
+        "name": "Melike Özçelik",
+        "affiliation": "Clinic of Medical Oncology, University of Health Sciences, İstanbul Ümraniye Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özlem Ercelep",
+        "affiliation": "Clinic of Medical Oncology, Dr. Lütfi Kırdar Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sevinç Keser",
+        "affiliation": "Clinic of Pathology, Dr. Lütfi Kırdar Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nagehan Özdemir Barışık",
+        "affiliation": "Clinic of Pathology, Dr. Lütfi Kırdar Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Merve Başar",
+        "affiliation": "Clinic of Pathology, Dr. Lütfi Kırdar Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hatice Odabaş",
+        "affiliation": "Clinic of Medical Oncology, Dr. Lütfi Kırdar Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Abdilkerim Oyman",
+        "affiliation": "Clinic of Medical Oncology, Dr. Lütfi Kırdar Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selver Işık",
+        "affiliation": "Clinic of Medical Oncology, Dr. Lütfi Kırdar Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serhat Özçelik",
+        "affiliation": "Clinic of Endocrinology and Metabolism, Dr. Lütfi Kırdar Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Aliustaoğlu",
+        "affiliation": "Clinic of Medical Oncology, Dr. Lütfi Kırdar Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Protein tyrosine kinase-7, a regulatory protein in the Wnt signaling pathway, was highly overexpressed in various cancer types and assumed to be related to prognosis.Aims: The purpose of this study is to assess whether protein tyrosine kinase-7 expression status in curatively resected gastric carcinoma would independently identify patients with a high risk of recurrence and death.Study Design: Retrospective cohort study.Methods: We included patients who were at least 18 years of age and diagnosed with gastric cancer. The exclusion criterion was a metastatic disease at the time of diagnosis or operation. Data on clinicopathological prognostic determinants and clinical courses, including the date of disease relapse and survival status, were collected with the use of medical records. Surgically removed tumor tissue specimens were examined by two independent pathologists at the pathology department of our institution. Protein tyrosine kinase-7 expression status was assessed with immunohistochemical processing and stratified on a scale ranging from 0 to +3 according to the extent of stained tumor cells. It was then further categorized into two groups, one being + (positive), including +1, +2, and +3 scores, another was-(negative), including-and +/− scores.Results: A total of 114 patients were analyzed. Protein tyrosine kinase-7 expression was present in 66.7% of the surgical tumor specimens. There was no statistically significant difference in almost all relevant parameters between the protein tyrosine kinase-7 positive and negative groups. The estimated median survival in the protein tyrosine kinase-7 positive group was significantly better than the protein tyrosine kinase-7 negative group (60 vs 22 months, p<0.001). Disease-free survival was found to be 55 months in the protein tyrosine kinase-7 positive group, whereas it was 21 months in the negative group (p=0.015). In the multivariate analysis, along with negative protein tyrosine kinase-7 expression, poor performance status, and advanced stage were significantly associated with the risk of death (p<0.001 for each).Conclusion: Compared to patients with negative PTK-7 expression, patients with positive PTK-7 expression have better disease-free survival and overall survival rates. Efforts should be made to enhance this finding and translate it into clinical practice.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Protein tyrosine kinase-7, a regulatory protein in the Wnt signaling pathway, was highly overexpressed in various cancer types and assumed to be related to prognosis.<br /><strong>Aims:</strong> The purpose of this study is to assess whether protein tyrosine kinase-7 expression status in curatively resected gastric carcinoma would independently identify patients with a high risk of recurrence and death.<br /><strong>Study Design:</strong> Retrospective cohort study.<br /><strong>Methods:</strong> We included patients who were at least 18 years of age and diagnosed with gastric cancer. The exclusion criterion was a metastatic disease at the time of diagnosis or operation. Data on clinicopathological prognostic determinants and clinical courses, including the date of disease relapse and survival status, were collected with the use of medical records. Surgically removed tumor tissue specimens were examined by two independent pathologists at the pathology department of our institution. Protein tyrosine kinase-7 expression status was assessed with immunohistochemical processing and stratified on a scale ranging from 0 to +3 according to the extent of stained tumor cells. It was then further categorized into two groups, one being + (positive), including +1, +2, and +3 scores, another was-(negative), including-and +/&minus; scores.<br /><strong>Results:</strong> A total of 114 patients were analyzed. Protein tyrosine kinase-7 expression was present in 66.7% of the surgical tumor specimens. There was no statistically significant difference in almost all relevant parameters between the protein tyrosine kinase-7 positive and negative groups. The estimated median survival in the protein tyrosine kinase-7 positive group was significantly better than the protein tyrosine kinase-7 negative group (60 vs 22 months, p&lt;0.001). Disease-free survival was found to be 55 months in the protein tyrosine kinase-7 positive group, whereas it was 21 months in the negative group (p=0.015). In the multivariate analysis, along with negative protein tyrosine kinase-7 expression, poor performance status, and advanced stage were significantly associated with the risk of death (p&lt;0.001 for each).<br /><strong>Conclusion:</strong> Compared to patients with negative PTK-7 expression, patients with positive PTK-7 expression have better disease-free survival and overall survival rates. Efforts should be made to enhance this finding and translate it into clinical practice.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Protein tyrosine kinase-7, a regulatory protein in the Wnt signaling pathway, was highly overexpressed in various cancer types and assumed to be related to prognosis.Aims: The purpose of this study is to assess whether protein tyrosine kinase-7 expression status in curatively resected gastric carcinoma would independently identify patients with a high risk of recurrence and death.Study Design: Retrospective cohort study.Methods: We included patients who were at least 18 years of age and diagnosed with gastric cancer. The exclusion criterion was a metastatic disease at the time of diagnosis or operation. Data on clinicopathological prognostic determinants and clinical courses, including the date of disease relapse and survival status, were collected with the use of medical records. Surgically removed tumor tissue specimens were examined by two independent pathologists at the pathology department of our institution. Protein tyrosine kinase-7 expression status was assessed with immunohistochemical processing and stratified on a scale ranging from 0 to +3 according to the extent of stained tumor cells. It was then further categorized into two groups, one being + (positive), including +1, +2, and +3 scores, another was-(negative), including-and +/− scores.Results: A total of 114 patients were analyzed. Protein tyrosine kinase-7 expression was present in 66.7% of the surgical tumor specimens. There was no statistically significant difference in almost all relevant parameters between the protein tyrosine kinase-7 positive and negative groups. The estimated median survival in the protein tyrosine kinase-7 positive group was significantly better than the protein tyrosine kinase-7 negative group (60 vs 22 months, p<0.001). Disease-free survival was found to be 55 months in the protein tyrosine kinase-7 positive group, whereas it was 21 months in the negative group (p=0.015). In the multivariate analysis, along with negative protein tyrosine kinase-7 expression, poor performance status, and advanced stage were significantly associated with the risk of death (p<0.001 for each).Conclusion: Compared to patients with negative PTK-7 expression, patients with positive PTK-7 expression have better disease-free survival and overall survival rates. Efforts should be made to enhance this finding and translate it into clinical practice.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.8.12",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "2",
+    "pages": "91-97",
+    "views": 6707,
+    "downloads": 3639,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1261",
+    "sourceArticleId": "2164",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2164",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2164",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2164",
+    "localPdfUrl": "js/data/pdfs/2164.pdf",
+    "pdfUrl": "js/data/pdfs/2164.pdf"
+  },
+  {
+    "id": 2176,
+    "type": "Original Article",
+    "title": "R-(-)-carvone Attenuated Doxorubicin Induced Cardiotoxicity In Vivo and Potentiated Its Anticancer Toxicity In Vitro",
+    "authors": [
+      {
+        "name": "Manal Mohammad Abbas",
+        "affiliation": "School of Allied Medical Sciences, Al-Ahliyya Amman University, Amman, Jordan",
+        "orcid": ""
+      },
+      {
+        "name": "Yasser İbrahim Kandil",
+        "affiliation": "School of Pharmacy, Al-Ahliyya Amman University, Amman, Jordan; School of Pharmacy, Al-Azhar University, Cairo, Egypt",
+        "orcid": ""
+      },
+      {
+        "name": "Manal Ahmad Abbas[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Doxorubicin is one of the most potent broad-spectrum antitumor and chemotherapeutic agents. However, it produces cardiotoxicity.Aims: To investigate whether R-(-)-carvone exerts a cardioprotective effect against doxorubicin toxicity in vivo and in vitro.Study Design: Cell culture and animal experiment.Methods: The synergistic effect of R-(-)-carvone with doxorubicin was evaluated in the MCF 7 cancer cell line while its protective effect against doxorubicin toxicity was evaluated in the normal heart cell line (H9C2) and in vivo. Furthermore, the mechanism of its cardioprotective effect was studied.Results: R-(-)-carvone exerted cytotoxic action on the MCF 7 cancer cell line with an IC50 value of 14.22 µM and potentiated the cytotoxic action of doxorubicin, while it decreased the toxicity of doxorubicin on a normal heart cell line. In BALB/c mice, R-(-)-carvone protected the heart from the toxic action of doxorubicin, as was evident by biochemical and histological studies. The protective effect of R-(-)-carvone on the H9C2 heart cell line and on heart in vivo was due to an increase in catalase activity.Conclusion: R-(-)-carvone has synergistic anticancer action with doxorubicin on the MCF 7 cell line while decreasing its cardiotoxicity.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Doxorubicin is one of the most potent broad-spectrum antitumor and chemotherapeutic agents. However, it produces cardiotoxicity.<br /><strong>Aims:</strong> To investigate whether R-(-)-carvone exerts a cardioprotective effect against doxorubicin toxicity <em>in vivo</em> and <em>in vitro</em>.<br /><strong>Study Design:</strong> Cell culture and animal experiment.<br /><strong>Methods:</strong> The synergistic effect of R-(-)-carvone with doxorubicin was evaluated in the MCF 7 cancer cell line while its protective effect against doxorubicin toxicity was evaluated in the normal heart cell line (H9C2) and <em>in vivo</em>. Furthermore, the mechanism of its cardioprotective effect was studied.<br /><strong>Results:</strong> R-(-)-carvone exerted cytotoxic action on the MCF 7 cancer cell line with an IC<sub>50</sub> value of 14.22 &micro;M and potentiated the cytotoxic action of doxorubicin, while it decreased the toxicity of doxorubicin on a normal heart cell line. In BALB/c mice, R-(-)-carvone protected the heart from the toxic action of doxorubicin, as was evident by biochemical and histological studies. The protective effect of R-(-)-carvone on the H9C2 heart cell line and on heart <em>in vivo</em> was due to an increase in catalase activity.<br /><strong>Conclusion:</strong> R-(-)-carvone has synergistic anticancer action with doxorubicin on the MCF 7 cell line while decreasing its cardiotoxicity.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Doxorubicin is one of the most potent broad-spectrum antitumor and chemotherapeutic agents. However, it produces cardiotoxicity.Aims: To investigate whether R-(-)-carvone exerts a cardioprotective effect against doxorubicin toxicity in vivo and in vitro.Study Design: Cell culture and animal experiment.Methods: The synergistic effect of R-(-)-carvone with doxorubicin was evaluated in the MCF 7 cancer cell line while its protective effect against doxorubicin toxicity was evaluated in the normal heart cell line (H9C2) and in vivo. Furthermore, the mechanism of its cardioprotective effect was studied.Results: R-(-)-carvone exerted cytotoxic action on the MCF 7 cancer cell line with an IC50 value of 14.22 µM and potentiated the cytotoxic action of doxorubicin, while it decreased the toxicity of doxorubicin on a normal heart cell line. In BALB/c mice, R-(-)-carvone protected the heart from the toxic action of doxorubicin, as was evident by biochemical and histological studies. The protective effect of R-(-)-carvone on the H9C2 heart cell line and on heart in vivo was due to an increase in catalase activity.Conclusion: R-(-)-carvone has synergistic anticancer action with doxorubicin on the MCF 7 cell line while decreasing its cardiotoxicity.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.7.117",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "2",
+    "pages": "98-103",
+    "views": 6569,
+    "downloads": 11194,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1261",
+    "sourceArticleId": "2176",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2176",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2176",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2176",
+    "localPdfUrl": "js/data/pdfs/2176.pdf",
+    "pdfUrl": "js/data/pdfs/2176.pdf"
+  },
+  {
+    "id": 2179,
+    "type": "Original Article",
+    "title": "Efficacy of Palbociclib and Endocrine Treatment in Heavily Pretreated Hormone Receptor-positive/HER2-negative Advanced Breast Cancer: Retrospective Multicenter Trial",
+    "authors": [
+      {
+        "name": "Atakan Demir",
+        "affiliation": "Department of Medical Oncology, Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nil Molinas Mandel",
+        "affiliation": "Clinic of Oncology, American Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Semra Paydas",
+        "affiliation": "Department of Medical Oncology, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gökhan Demir",
+        "affiliation": "Department of Medical Oncology, Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özlem Er",
+        "affiliation": "Department of Medical Oncology, Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nazım Serdal Turhal",
+        "affiliation": "Clinic of Oncology, Anadolu Medical Center Hospital, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sevil Bavbek",
+        "affiliation": "Self-employed, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yeşim Eralp",
+        "affiliation": "Department of Medical Oncology, Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pınar Mualla Saip",
+        "affiliation": "Department of Medical Oncology, İstanbul University Oncology Institute, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emine Nilüfer Güler",
+        "affiliation": "Department of Medical Oncology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Adnan Aydıner",
+        "affiliation": "Department of Medical Oncology, İstanbul University Oncology Institute, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Başak Oyan Uluç",
+        "affiliation": "Department of Medical Oncology, Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sadettin Kılıçkap",
+        "affiliation": "Department of Medical Oncology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Necdet Üskent",
+        "affiliation": "Clinic of Oncology, Anadolu Medical Center Hospital, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nuri Karadurmuş",
+        "affiliation": "Clinic of Medical Oncology T.C. Ministry of Health Gülhane Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Ali Kaplan",
+        "affiliation": "Department of Medical Oncology, Dicle University School of Medicine, Diyarbakır, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Teoman Yanmaz",
+        "affiliation": "Şişli Memorial Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hacer Demir",
+        "affiliation": "Department of Medical Oncology Afyon Kocatepe University School of Medicine, Afyon, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özkan Alan",
+        "affiliation": "Tekirdağ State Hospital, Tekirdağ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Taner Korkmaz",
+        "affiliation": "Department of Medical Oncology, Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Polat Olgun",
+        "affiliation": "Near East University Hospital, Lefkoşa, TRNC",
+        "orcid": ""
+      },
+      {
+        "name": "Özlem Sönmez Uysal",
+        "affiliation": "Department of Medical Oncology, Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kadri Altundağ",
+        "affiliation": "Self-employed, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şeyda Gündüz",
+        "affiliation": "Antalya Memorial Hospital, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Meral Günaldı",
+        "affiliation": "Clinic of Medical Oncology, Florya Medical Park Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Sarı",
+        "affiliation": "Self-employed, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İsmail Beypınar",
+        "affiliation": "Department of Medical Oncology Afyon Kocatepe University School of Medicine, Afyon, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gül Başaran[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The synthesis of CDK4/6 inhibitors with endocrine treatment in two series of treatment has been widely accepted as the standard for patients with estrogen receptor-positive metastatic breast cancer. In spite of this, the activity of CDK4/6 inhibitors in patients with metastatic breast cancer who have progressed despite receiving multiple lines of treatment is not well understood.Aims: To report the activity and safety of a CDK4/6 inhibitor (palbociclib) in patients in whom at least three lines of treatment for ER+ metastatic breast cancer had failed.Study Design: Multicenter retrospective observational cohort study.Methods: In this retrospective observational cohort study, we included 43 patients who received palbociclib after at least three lines of systemic treatment for ER+/HER2− metastatic breast cancer.Results: The median progression-free survival in our population was 7 months (25th-75th percentile, 4-10), and the median overall survival was 11 months (25th-75th percentile, 6-19). Although there were some adverse events, palbociclib was generally well tolerated, so dose reduction was needed for only six patients (14%).Conclusion: The efficacy of palbociclib among heavily treated hormone receptor-positive/HER2− patients with advanced breast cancer was acceptable in terms of clinical benefit, and it was generally well tolerated among this population.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> The synthesis of CDK4/6 inhibitors with endocrine treatment in two series of treatment has been widely accepted as the standard for patients with estrogen receptor-positive metastatic breast cancer. In spite of this, the activity of CDK4/6 inhibitors in patients with metastatic breast cancer who have progressed despite receiving multiple lines of treatment is not well understood.<br /><strong>Aims:</strong> To report the activity and safety of a CDK4/6 inhibitor (palbociclib) in patients in whom at least three lines of treatment for ER+ metastatic breast cancer had failed.<br /><strong>Study Design:</strong> Multicenter retrospective observational cohort study.<br /><strong>Methods:</strong> In this retrospective observational cohort study, we included 43 patients who received palbociclib after at least three lines of systemic treatment for ER+/HER2&minus; metastatic breast cancer.<br /><strong>Results:</strong> The median progression-free survival in our population was 7 months (25<sup>th</sup>-75<sup>th</sup> percentile, 4-10), and the median overall survival was 11 months (25<sup>th</sup>-75<sup>th</sup> percentile, 6-19). Although there were some adverse events, palbociclib was generally well tolerated, so dose reduction was needed for only six patients (14%).<br /><strong>Conclusion:</strong> The efficacy of palbociclib among heavily treated hormone receptor-positive/HER2&minus; patients with advanced breast cancer was acceptable in terms of clinical benefit, and it was generally well tolerated among this population.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The synthesis of CDK4/6 inhibitors with endocrine treatment in two series of treatment has been widely accepted as the standard for patients with estrogen receptor-positive metastatic breast cancer. In spite of this, the activity of CDK4/6 inhibitors in patients with metastatic breast cancer who have progressed despite receiving multiple lines of treatment is not well understood.Aims: To report the activity and safety of a CDK4/6 inhibitor (palbociclib) in patients in whom at least three lines of treatment for ER+ metastatic breast cancer had failed.Study Design: Multicenter retrospective observational cohort study.Methods: In this retrospective observational cohort study, we included 43 patients who received palbociclib after at least three lines of systemic treatment for ER+/HER2− metastatic breast cancer.Results: The median progression-free survival in our population was 7 months (25th-75th percentile, 4-10), and the median overall survival was 11 months (25th-75th percentile, 6-19). Although there were some adverse events, palbociclib was generally well tolerated, so dose reduction was needed for only six patients (14%).Conclusion: The efficacy of palbociclib among heavily treated hormone receptor-positive/HER2− patients with advanced breast cancer was acceptable in terms of clinical benefit, and it was generally well tolerated among this population.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2019.11.143",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "2",
+    "pages": "104-107",
+    "views": 7256,
+    "downloads": 17681,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1261",
+    "sourceArticleId": "2179",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2179",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2179",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2179",
+    "localPdfUrl": "js/data/pdfs/2179.pdf",
+    "pdfUrl": "js/data/pdfs/2179.pdf"
+  },
+  {
+    "id": 2158,
+    "type": "Technical Note",
+    "title": "A Novel Embolization Technique for Renal Hemorrhage Complication by Autologous Fat Tissue",
+    "authors": [
+      {
+        "name": "Hasan Arı",
+        "affiliation": "Clinic of Cardiology, Bursa Postgraduate Hospital, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selma Arı",
+        "affiliation": "Clinic of Cardiology, Bursa Postgraduate Hospital, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Veysi Can",
+        "affiliation": "Clinic of Cardiology, Bursa Postgraduate Hospital, Bursa, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract The percutaneous nephrolithotomy method is the most used treatment option for urinary stone disease. Bleeding is the most feared complication of this method. Transcatheter coil or medical glue embolization is currently the used treatment option for this bleeding complication. The aim of this report to show the novel subcutaneous fat tissue embolization technique for percutaneous nephrolithotomy related bleeding complications. In these two cases, we treated the percutaneous nephrolithotomy related bleeding complication with subcutaneous fat tissue. Subcutaneous fat tissue was taken with subcutaneous fascia from the femoral site by 1 cm incision. This tissue to be used for embolization was passed on the 0.014 guidewire from the back end of this guidewire (like shish kebab). The fat tissue passed on the 0.014 wire was sent to the bleeding site through the guiding catheter and guideliner, over the 0.014 guidewire with the monorail balloon (as a pusher) placed behind this fat tissue. The subcutaneous fat tissue with subcutaneous fascia embolization was completely stopped the bleeding and fistula. We have successfully used a novel embolization technique for fat tissue embolization to the bleeding site (Ari technique). Subcutaneous fat tissue embolization with the novel embolization technique for percutaneous nephrolithotomy related bleeding is a safe and reliable treatment option.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>The percutaneous nephrolithotomy method is the most used treatment option for urinary stone disease. Bleeding is the most feared complication of this method. Transcatheter coil or medical glue embolization is currently the used treatment option for this bleeding complication. The aim of this report to show the novel subcutaneous fat tissue embolization technique for percutaneous nephrolithotomy related bleeding complications. In these two cases, we treated the percutaneous nephrolithotomy related bleeding complication with subcutaneous fat tissue. Subcutaneous fat tissue was taken with subcutaneous fascia from the femoral site by 1 cm incision. This tissue to be used for embolization was passed on the 0.014 guidewire from the back end of this guidewire (like shish kebab). The fat tissue passed on the 0.014 wire was sent to the bleeding site through the guiding catheter and guideliner, over the 0.014 guidewire with the monorail balloon (as a pusher) placed behind this fat tissue. The subcutaneous fat tissue with subcutaneous fascia embolization was completely stopped the bleeding and fistula. We have successfully used a novel embolization technique for fat tissue embolization to the bleeding site (Ari technique). Subcutaneous fat tissue embolization with the novel embolization technique for percutaneous nephrolithotomy related bleeding is a safe and reliable treatment option.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract The percutaneous nephrolithotomy method is the most used treatment option for urinary stone disease. Bleeding is the most feared complication of this method. Transcatheter coil or medical glue embolization is currently the used treatment option for this bleeding complication. The aim of this report to show the novel subcutaneous fat tissue embolization technique for percutaneous nephrolithotomy related bleeding complications. In these two cases, we treated the percutaneous nephrolithotomy related bleeding complication with subcutaneous fat tissue. Subcutaneous fat tissue was taken with subcutaneous fascia from the femoral site by 1 cm incision. This tissue to be used for embolization was passed on the 0.014 guidewire from the back end of this guidewire (like shish kebab). The fat tissue passed on the 0.014 wire was sent to the bleeding site through the guiding catheter and guideliner, over the 0.014 guidewire with the monorail balloon (as a pusher) placed behind this fat tissue. The subcutaneous fat tissue with subcutaneous fascia embolization was completely stopped the bleeding and fistula. We have successfully used a novel embolization technique for fat tissue embolization to the bleeding site (Ari technique). Subcutaneous fat tissue embolization with the novel embolization technique for percutaneous nephrolithotomy related bleeding is a safe and reliable treatment option.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.10.23",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "2",
+    "pages": "108-111",
+    "views": 5994,
+    "downloads": 9693,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1261",
+    "sourceArticleId": "2158",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2158",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2158",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2158",
+    "localPdfUrl": "js/data/pdfs/2158.pdf",
+    "pdfUrl": "js/data/pdfs/2158.pdf"
+  },
+  {
+    "id": 2166,
+    "type": "Clinical Image",
+    "title": "A Spider in the Spider",
+    "authors": [
+      {
+        "name": "Servet Altay",
+        "affiliation": "Department of Cardiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Muhammet Gürdoğan",
+        "affiliation": "Department of Cardiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Adem Yılmaztepe",
+        "affiliation": "Department of Cardiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 47-year-old man with a history of Behçet’s disease was admitted to the cardiology clinic with exertional dyspnea of three months’ duration. His physical examination revealed a blood pressure and heart rate of 120/70 mmHg and 81 bpm, respectively, with normal heart and pulmonary auscultation. Blood biochemical parameters, including troponin I and D-dimer te",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2019.12.7",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "2",
+    "pages": "112-112",
+    "views": 5584,
+    "downloads": 10493,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1261",
+    "sourceArticleId": "2166",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2166",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2166",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2166",
+    "localPdfUrl": "js/data/pdfs/2166.pdf",
+    "pdfUrl": "js/data/pdfs/2166.pdf"
+  },
+  {
+    "id": 2168,
+    "type": "Clinical Image",
+    "title": "A Case of Doxycyclin-induced Photo-onycholysis with Dermoscopic Features",
+    "authors": [
+      {
+        "name": "Ömer Faruk Elmas",
+        "affiliation": "Department of Dermatology, Ahi Evran University School of Medicine, Kırşehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Necmettin Akdeniz",
+        "affiliation": "Department of Dermatology, İstanbul Medeniyet University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 16-year-old boy was referred to us with asymptomatic nail discoloration affecting his fingernails. The patient was receiving treatment with 200 mg/day oral doxycycline administration for six weeks due to brucellosis. His remaining medical history was unremarkable except for intense sun exposure. The dermatological examination revealed a distal black and br",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.11.22",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "2",
+    "pages": "113-113",
+    "views": 6443,
+    "downloads": 17409,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1261",
+    "sourceArticleId": "2168",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2168",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2168",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2168",
+    "localPdfUrl": "js/data/pdfs/2168.pdf",
+    "pdfUrl": "js/data/pdfs/2168.pdf"
+  },
+  {
+    "id": 2165,
+    "type": "Letter to the Editor",
+    "title": "Are Female Patients More Overlooked in the Diagnosis of Fabry Disease?",
+    "authors": [
+      {
+        "name": "Muhammet Gürdoğan",
+        "affiliation": "Department of Cardiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ömer Ferudun Akkuş",
+        "affiliation": "Department of Cardiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, We have read the article by Barman et al. (1) titled, “The Prevalence of Fabry disease Among Turkish Patients with non-obstructive Hypertrophic Cardiomyopathy: Insights from a Screening Study” with interest. In their descriptive study, the researchers found that the frequency of Fabry disease was 2.5% by screening 80 patients (53 males) diagno",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.11.148",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "2",
+    "pages": "114-114",
+    "views": 5753,
+    "downloads": 2325,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1261",
+    "sourceArticleId": "2165",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2165",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2165",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2165",
+    "localPdfUrl": "js/data/pdfs/2165.pdf",
+    "pdfUrl": "js/data/pdfs/2165.pdf"
+  },
+  {
+    "id": 2167,
+    "type": "Letter to the Editor",
+    "title": "In Response to Gürdoğan and Akkuş",
+    "authors": [
+      {
+        "name": "Hasan Ali Barman",
+        "affiliation": "Clinic of Cardiology, İstanbul Okmeydanı Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, We would like to thank the authors for their interest in our paper (1) and their valuable comments. In the authors’ letter to the editor, they mentioned potential concerns regarding the diagnosis of Fabry disease in female patients. The main aim of our study (1) was to screen adult patients with hypertrophic cardiomyopathy without left ventric",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.11.148-response",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "2",
+    "pages": "115-115",
+    "views": 5585,
+    "downloads": 1858,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1261",
+    "sourceArticleId": "2167",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2167",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2167",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2167",
+    "localPdfUrl": "js/data/pdfs/2167.pdf",
+    "pdfUrl": "js/data/pdfs/2167.pdf"
+  },
+  {
+    "id": 2169,
+    "type": "Letter to the Editor",
+    "title": "Dermoscopic Findings of Nevus of Ota",
+    "authors": [
+      {
+        "name": "Ömer Faruk Elmas",
+        "affiliation": "Department of Dermatology, Kırşehir Ahi Evran University School of Medicine, Kırşehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Asuman Kilitçi",
+        "affiliation": "Department of Pathology, Kırşehir Ahi Evran University School of Medicine, Kırşehir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, Nevus of Ota, also known as oculodermal melanocytosis, is characterized by a macular pigmentation usually localized on the forehead and periocular region. It typically shows a dermatomal distribution and the dermatomes of the first two branches of trigeminal nerve are typically involved (1,2). The diagnosis is usually based on the clinical app",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.11.46",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "2",
+    "pages": "116-118",
+    "views": 6714,
+    "downloads": 17788,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1261",
+    "sourceArticleId": "2169",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2169",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2169",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2169",
+    "localPdfUrl": "js/data/pdfs/2169.pdf",
+    "pdfUrl": "js/data/pdfs/2169.pdf"
+  }
+]

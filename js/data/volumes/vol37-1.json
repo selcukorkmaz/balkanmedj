@@ -1,0 +1,730 @@
+[
+  {
+    "id": 2170,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "1",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1260",
+    "sourceArticleId": "2170",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2170",
+    "localPdfUrl": "js/data/pdfs/2170.pdf",
+    "pdfUrl": "js/data/pdfs/2170.pdf"
+  },
+  {
+    "id": 2161,
+    "type": "Editorial",
+    "title": "Precise and Immediate Action against Predatory Conferences",
+    "authors": [
+      {
+        "name": "Zafer Koçak",
+        "affiliation": "Department of Radiation Oncology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "There is a strong possibility that many of us receive unsolicited spam emails offering publication in predatory journals or presentation opportunities at predatory conferences. As a young researcher, one can imagine the prestige of being invited to speak at an international conference. The question, “Does it look too good to be true?” needs to be asked. In r",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.1.001",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "1",
+    "pages": "1-2",
+    "views": 6223,
+    "downloads": 9917,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1260",
+    "sourceArticleId": "2161",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2161",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2161",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2161",
+    "localPdfUrl": "js/data/pdfs/2161.pdf",
+    "pdfUrl": "js/data/pdfs/2161.pdf"
+  },
+  {
+    "id": 2140,
+    "type": "Original Article",
+    "title": "Focused Assessment with Sonography in Trauma for Assessment of Injury in Military Settings: A Meta-analysis",
+    "authors": [
+      {
+        "name": "Xingshun Qi",
+        "affiliation": "Military Medical Research Group, General Hospital of Northern Theater Command Shenyang, Liaoning Province, China; Meta-Analysis Interest Group, Department of Gastroenterology, General Hospital of Northern Theater Command, Shenyang, Liaoning Province, China; Co-first authors.; Co-corresponding authors.",
+        "orcid": ""
+      },
+      {
+        "name": "Jing Tian",
+        "affiliation": "Military Medical Research Group, General Hospital of Northern Theater Command Shenyang, Liaoning Province, China; Co-first authors.",
+        "orcid": ""
+      },
+      {
+        "name": "Rui Sun",
+        "affiliation": "Military Medical Research Group, General Hospital of Northern Theater Command Shenyang, Liaoning Province, China",
+        "orcid": ""
+      },
+      {
+        "name": "He Zhang",
+        "affiliation": "Military Medical Research Group, General Hospital of Northern Theater Command Shenyang, Liaoning Province, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jinsong Han",
+        "affiliation": "Military Medical Research Group, General Hospital of Northern Theater Command Shenyang, Liaoning Province, China",
+        "orcid": ""
+      },
+      {
+        "name": "Hai Jin",
+        "affiliation": "Military Medical Research Group, General Hospital of Northern Theater Command Shenyang, Liaoning Province, China",
+        "orcid": ""
+      },
+      {
+        "name": "Hui Lu",
+        "affiliation": "Military Medical Research Group, General Hospital of Northern Theater Command Shenyang, Liaoning Province, China; Co-corresponding authors.",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Non-invasive, rapid, and precise assessment of injury in the military settings is extremely important, yet difficult. Focused assessment with sonography in trauma (FAST) is being increasingly employed for assessing the location and severity of injury and guiding further treatment strategy. However, the evidence regarding the utility of FAST in the military settings is scattered.Aims: To evaluate the diagnostic performance of FAST in the assessment of injury in the military settings.Study Design: Meta-analysis.Methods: We identified all relevant papers via the PubMed, EMBASE, and Cochrane Library databases. We evaluated the quality of included studies by the Quality Assessment of Diagnostic Accuracy Studies-2 tool. We pooled the area under the curve (AUC), sensitivity, specificity, positive and negative likelihood ratios, and diagnostic odds ratio as the effect sizes, followed by evaluating the heterogeneity among the studies by p value and I2.Results: Among the 39 papers, a total of six papers were included. The sample size ranged from 15 to 396. The AUC of FAST for assessing the injury was 0.85. The pooled sensitivity, specificity, positive and negative likelihood ratios, and diagnostic odds ratio were 0.66, 0.98, 33.1, 0.34, and 97, respectively. The heterogeneity among the studies was statistically significant (p=0.006, I2=78%).Conclusion: FAST is potentially valuable for assessing injury in the military settings. Due to its high specificity, FAST may be appropriate to rule in significant injury. However, because of its poor sensitivity, the ability of FAST to rule out injury cannot be relied upon.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Non-invasive, rapid, and precise assessment of injury in the military settings is extremely important, yet difficult. Focused assessment with sonography in trauma (FAST) is being increasingly employed for assessing the location and severity of injury and guiding further treatment strategy. However, the evidence regarding the utility of FAST in the military settings is scattered.<br /><strong>Aims:</strong> To evaluate the diagnostic performance of FAST in the assessment of injury in the military settings.<br /><strong>Study Design:</strong> Meta-analysis.<br /><strong>Methods:</strong> We identified all relevant papers via the PubMed, EMBASE, and Cochrane Library databases. We evaluated the quality of included studies by the Quality Assessment of Diagnostic Accuracy Studies-2 tool. We pooled the area under the curve (AUC), sensitivity, specificity, positive and negative likelihood ratios, and diagnostic odds ratio as the effect sizes, followed by evaluating the heterogeneity among the studies by p value and I<sup>2</sup>.<br /><strong>Results:</strong> Among the 39 papers, a total of six papers were included. The sample size ranged from 15 to 396. The AUC of FAST for assessing the injury was 0.85. The pooled sensitivity, specificity, positive and negative likelihood ratios, and diagnostic odds ratio were 0.66, 0.98, 33.1, 0.34, and 97, respectively. The heterogeneity among the studies was statistically significant (p=0.006, I<sup>2</sup>=78%).<br /><strong>Conclusion:</strong> FAST is potentially valuable for assessing injury in the military settings. Due to its high specificity, FAST may be appropriate to rule in significant injury. However, because of its poor sensitivity, the ability of FAST to rule out injury cannot be relied upon.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Non-invasive, rapid, and precise assessment of injury in the military settings is extremely important, yet difficult. Focused assessment with sonography in trauma (FAST) is being increasingly employed for assessing the location and severity of injury and guiding further treatment strategy. However, the evidence regarding the utility of FAST in the military settings is scattered.Aims: To evaluate the diagnostic performance of FAST in the assessment of injury in the military settings.Study Design: Meta-analysis.Methods: We identified all relevant papers via the PubMed, EMBASE, and Cochrane Library databases. We evaluated the quality of included studies by the Quality Assessment of Diagnostic Accuracy Studies-2 tool. We pooled the area under the curve (AUC), sensitivity, specificity, positive and negative likelihood ratios, and diagnostic odds ratio as the effect sizes, followed by evaluating the heterogeneity among the studies by p value and I2.Results: Among the 39 papers, a total of six papers were included. The sample size ranged from 15 to 396. The AUC of FAST for assessing the injury was 0.85. The pooled sensitivity, specificity, positive and negative likelihood ratios, and diagnostic odds ratio were 0.66, 0.98, 33.1, 0.34, and 97, respectively. The heterogeneity among the studies was statistically significant (p=0.006, I2=78%).Conclusion: FAST is potentially valuable for assessing injury in the military settings. Due to its high specificity, FAST may be appropriate to rule in significant injury. However, because of its poor sensitivity, the ability of FAST to rule out injury cannot be relied upon.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.8.79",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "1",
+    "pages": "3-8",
+    "views": 7126,
+    "downloads": 10319,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1260",
+    "sourceArticleId": "2140",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2140",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2140",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2140",
+    "localPdfUrl": "js/data/pdfs/2140.pdf",
+    "pdfUrl": "js/data/pdfs/2140.pdf"
+  },
+  {
+    "id": 2144,
+    "type": "Original Article",
+    "title": "Retinal and Choroidal Vascular Changes in Eyes with Pseudoexfoliation Syndrome: A Comparative Study Using Optical Coherence Tomography Angiography",
+    "authors": [
+      {
+        "name": "Esat Çınar",
+        "affiliation": "Clinic of Ophthalmology, Ekol Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Berna Yüce",
+        "affiliation": "Clinic of Ophthalmology, İzmir University of Health Sciences, Tepecik Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Aslan",
+        "affiliation": "Clinic of Ophthalmology, Alaaddin Keykubat University Training and Research Hospital, Alanya, Antalya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Optical coherence tomography angiography allows a detailed evaluation of retinal and choroidal microvascular structures without the need for a contrast agent. Pseudoexfoliation syndrome is a condition that leads to anatomical and functional losses due to accumulation of degraded abnormal fibrillar material in the intraocular and extraocular tissues. Histopathological studies have shown that the accumulation of Pseudoexfoliation syndrome material in the vascular structures may play a role in different ocular pathologies such as retinal vein occlusion, iris hypoperfusion, anterior segment hypoxia, retinal arterial occlusion, and neovascular glaucoma.Aims: To evaluate and compare flow and vascular density in the retina and choroid in eyes with Pseudoexfoliation syndrome, fellow eyes without Pseudoexfoliation syndrome, and healthy eyes using optical coherence tomography angiography.Study Design: Case control study.Methods: The study included 35 eyes with Pseudoexfoliation syndrome of 35 Pseudoexfoliation syndrome patients, 32 fellow eyes without Pseudoexfoliation syndrome of 32 unilateral Pseudoexfoliation syndrome patients, and 35 eyes of healthy control subjects. Flow area and vascular density in the superficial capillary plexus and deep capillary plexus were measured by optical coherence tomography angiography as three separate parameters: total, parafoveal, and foveal. Choroidal thickness and foveal avascular zone area were measured for each patient.Results: There were significant differences between the Pseudoexfoliation syndrome eyes and control eyes in total, parafoveal, and foveal flow and vascular density in the superficial capillary plexus (p<0.05 for all), while there were no significant differences between these groups in any of the flow or vascular density values in the deep capillary plexus (p>0.05). None of the superficial capillary plexus and deep capillary plexus flow and vascular density values showed significant differences between Pseudoexfoliation syndrome eyes and non-Pseudoexfoliation syndrome fellow eyes or between the non-Pseudoexfoliation syndrome fellow eyes and control eyes (p>0.05). Choroidal thickness was significantly lower in Pseudoexfoliation syndrome eyes compared to control eyes. Foveal avascular zone area was significantly enlarged in Pseudoexfoliation syndrome eyes compared to control eyes in both the superficial and deep layers (p<0.05).Conclusion: Pseudoexfoliation syndrome eyes exhibit significant damage to the retinal and choroidal vascular structures.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Optical coherence tomography angiography allows a detailed evaluation of retinal and choroidal microvascular structures without the need for a contrast agent. Pseudoexfoliation syndrome is a condition that leads to anatomical and functional losses due to accumulation of degraded abnormal fibrillar material in the intraocular and extraocular tissues. Histopathological studies have shown that the accumulation of Pseudoexfoliation syndrome material in the vascular structures may play a role in different ocular pathologies such as retinal vein occlusion, iris hypoperfusion, anterior segment hypoxia, retinal arterial occlusion, and neovascular glaucoma.<br /><strong>Aims:</strong> To evaluate and compare flow and vascular density in the retina and choroid in eyes with Pseudoexfoliation syndrome, fellow eyes without Pseudoexfoliation syndrome, and healthy eyes using optical coherence tomography angiography.<br /><strong>Study Design:</strong> Case control study.<br /><strong>Methods:</strong> The study included 35 eyes with Pseudoexfoliation syndrome of 35 Pseudoexfoliation syndrome patients, 32 fellow eyes without Pseudoexfoliation syndrome of 32 unilateral Pseudoexfoliation syndrome patients, and 35 eyes of healthy control subjects. Flow area and vascular density in the superficial capillary plexus and deep capillary plexus were measured by optical coherence tomography angiography as three separate parameters: total, parafoveal, and foveal. Choroidal thickness and foveal avascular zone area were measured for each patient.<br /><strong>Results:</strong> There were significant differences between the Pseudoexfoliation syndrome eyes and control eyes in total, parafoveal, and foveal flow and vascular density in the superficial capillary plexus (p&lt;0.05 for all), while there were no significant differences between these groups in any of the flow or vascular density values in the deep capillary plexus (p&gt;0.05). None of the superficial capillary plexus and deep capillary plexus flow and vascular density values showed significant differences between Pseudoexfoliation syndrome eyes and non-Pseudoexfoliation syndrome fellow eyes or between the non-Pseudoexfoliation syndrome fellow eyes and control eyes (p&gt;0.05). Choroidal thickness was significantly lower in Pseudoexfoliation syndrome eyes compared to control eyes. Foveal avascular zone area was significantly enlarged in Pseudoexfoliation syndrome eyes compared to control eyes in both the superficial and deep layers (p&lt;0.05).<br /><strong>Conclusion:</strong> Pseudoexfoliation syndrome eyes exhibit significant damage to the retinal and choroidal vascular structures.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Optical coherence tomography angiography allows a detailed evaluation of retinal and choroidal microvascular structures without the need for a contrast agent. Pseudoexfoliation syndrome is a condition that leads to anatomical and functional losses due to accumulation of degraded abnormal fibrillar material in the intraocular and extraocular tissues. Histopathological studies have shown that the accumulation of Pseudoexfoliation syndrome material in the vascular structures may play a role in different ocular pathologies such as retinal vein occlusion, iris hypoperfusion, anterior segment hypoxia, retinal arterial occlusion, and neovascular glaucoma.Aims: To evaluate and compare flow and vascular density in the retina and choroid in eyes with Pseudoexfoliation syndrome, fellow eyes without Pseudoexfoliation syndrome, and healthy eyes using optical coherence tomography angiography.Study Design: Case control study.Methods: The study included 35 eyes with Pseudoexfoliation syndrome of 35 Pseudoexfoliation syndrome patients, 32 fellow eyes without Pseudoexfoliation syndrome of 32 unilateral Pseudoexfoliation syndrome patients, and 35 eyes of healthy control subjects. Flow area and vascular density in the superficial capillary plexus and deep capillary plexus were measured by optical coherence tomography angiography as three separate parameters: total, parafoveal, and foveal. Choroidal thickness and foveal avascular zone area were measured for each patient.Results: There were significant differences between the Pseudoexfoliation syndrome eyes and control eyes in total, parafoveal, and foveal flow and vascular density in the superficial capillary plexus (p<0.05 for all), while there were no significant differences between these groups in any of the flow or vascular density values in the deep capillary plexus (p>0.05). None of the superficial capillary plexus and deep capillary plexus flow and vascular density values showed significant differences between Pseudoexfoliation syndrome eyes and non-Pseudoexfoliation syndrome fellow eyes or between the non-Pseudoexfoliation syndrome fellow eyes and control eyes (p>0.05). Choroidal thickness was significantly lower in Pseudoexfoliation syndrome eyes compared to control eyes. Foveal avascular zone area was significantly enlarged in Pseudoexfoliation syndrome eyes compared to control eyes in both the superficial and deep layers (p<0.05).Conclusion: Pseudoexfoliation syndrome eyes exhibit significant damage to the retinal and choroidal vascular structures.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.5.5",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "1",
+    "pages": "9-14",
+    "views": 6597,
+    "downloads": 10045,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1260",
+    "sourceArticleId": "2144",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2144",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2144",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2144",
+    "localPdfUrl": "js/data/pdfs/2144.pdf",
+    "pdfUrl": "js/data/pdfs/2144.pdf"
+  },
+  {
+    "id": 2146,
+    "type": "Original Article",
+    "title": "Hypoxic Gene Signature of Primary and Metastatic Melanoma Cell Lines: Focusing on HIF-1β and NDRG-1",
+    "authors": [
+      {
+        "name": "Mustafa Emre Ercin",
+        "affiliation": "Department of Pathology, Karadeniz Technical University School of Medicine, Trabzon, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Önder Bozdoğan",
+        "affiliation": "Clinic of Pathology, University of Health Sciences, Ankara Numune Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tarık Çavuşoğlu",
+        "affiliation": "Private Practice",
+        "orcid": ""
+      },
+      {
+        "name": "Nazan Bozdoğan",
+        "affiliation": "Clinic of Pathology, University of Health Sciences, Dr. Abdurrahman Yurtaslan Ankara Oncology Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pınar Atasoy",
+        "affiliation": "Department of Pathology, Kırıkkale University School of Medicine, Kırıkkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mukadder Koçak",
+        "affiliation": "Clinic of Dermatology, LÖSEV-LÖSANTE Children and Adult Hospital, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Hypoxia is an important microenvironmental factor significantly affecting tumor proliferation and progression. The importance of hypoxia is, however, not well known in oncogenesis of malignant melanoma.Aims: To evaluate the difference of hypoxic gene expression signatures in primary melanoma cell lines and metastatic melanoma cell lines and to find the expression changes of hypoxia-related genes in primary melanoma cell lines at experimental hypoxic conditionsStudy Design: Cell study.Methods: The mRNA expression levels of hypoxia-related genes in primary melanoma cell lines and metastatic melanoma cell lines and at experimental hypoxic conditions in primary melanoma cell lines were evaluated by using real-time polymerase chain reaction. Depending on the experimental data, we focused on two genes/proteins, the hypoxia-inducible factor-1 beta and the N-myc downstream regulated gene-1. The expression levels of the two proteins were investigated by immunohistochemistry methods in 16 primary and metastatic melanomas, 10 intradermal nevi, and a commercial tissue array comprised of 208 cores including 192 primary and metastatic malignant melanomas.Results: The real-time polymerase chain reaction study showed that hypoxic gene expression signature was different between metastatic melanoma cell lines and primary melanoma cell lines. Hypoxic experimental conditions significantly affected the hypoxic gene expression signature. In immunohistochemical study, N-myc downstream regulated gene-1 expression was found to be lower in primary cutaneous melanoma compared to in intradermal nevi (p=0.001). In contrast, the cytoplasmic expression of hypoxia-inducible factor-1 beta was higher in primary cutaneous melanoma than in intradermal nevi (p=0.001). We also detected medium/strong significant correlations between the two proteins studied in the study groups.Conclusion: Hypoxic response consists of closely related proteins in more complex pathways. These findings will shed light on hypoxic processes in melanoma and unlock a Pandora’s box for development of new therapeutic strategies.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Hypoxia is an important microenvironmental factor significantly affecting tumor proliferation and progression. The importance of hypoxia is, however, not well known in oncogenesis of malignant melanoma.<br /><strong>Aims:</strong> To evaluate the difference of hypoxic gene expression signatures in primary melanoma cell lines and metastatic melanoma cell lines and to find the expression changes of hypoxia-related genes in primary melanoma cell lines at experimental hypoxic conditions<br /><strong>Study Design:</strong> Cell study.<br /><strong>Methods:</strong> The mRNA expression levels of hypoxia-related genes in primary melanoma cell lines and metastatic melanoma cell lines and at experimental hypoxic conditions in primary melanoma cell lines were evaluated by using real-time polymerase chain reaction. Depending on the experimental data, we focused on two genes/proteins, the hypoxia-inducible factor-1 beta and the N-myc downstream regulated gene-1. The expression levels of the two proteins were investigated by immunohistochemistry methods in 16 primary and metastatic melanomas, 10 intradermal nevi, and a commercial tissue array comprised of 208 cores including 192 primary and metastatic malignant melanomas.<br /><strong>Results:</strong> The real-time polymerase chain reaction study showed that hypoxic gene expression signature was different between metastatic melanoma cell lines and primary melanoma cell lines. Hypoxic experimental conditions significantly affected the hypoxic gene expression signature. In immunohistochemical study, N-myc downstream regulated gene-1 expression was found to be lower in primary cutaneous melanoma compared to in intradermal nevi (p=0.001). In contrast, the cytoplasmic expression of hypoxia-inducible factor-1 beta was higher in primary cutaneous melanoma than in intradermal nevi (p=0.001). We also detected medium/strong significant correlations between the two proteins studied in the study groups.<br /><strong>Conclusion:</strong> Hypoxic response consists of closely related proteins in more complex pathways. These findings will shed light on hypoxic processes in melanoma and unlock a Pandora&rsquo;s box for development of new therapeutic strategies.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Hypoxia is an important microenvironmental factor significantly affecting tumor proliferation and progression. The importance of hypoxia is, however, not well known in oncogenesis of malignant melanoma.Aims: To evaluate the difference of hypoxic gene expression signatures in primary melanoma cell lines and metastatic melanoma cell lines and to find the expression changes of hypoxia-related genes in primary melanoma cell lines at experimental hypoxic conditionsStudy Design: Cell study.Methods: The mRNA expression levels of hypoxia-related genes in primary melanoma cell lines and metastatic melanoma cell lines and at experimental hypoxic conditions in primary melanoma cell lines were evaluated by using real-time polymerase chain reaction. Depending on the experimental data, we focused on two genes/proteins, the hypoxia-inducible factor-1 beta and the N-myc downstream regulated gene-1. The expression levels of the two proteins were investigated by immunohistochemistry methods in 16 primary and metastatic melanomas, 10 intradermal nevi, and a commercial tissue array comprised of 208 cores including 192 primary and metastatic malignant melanomas.Results: The real-time polymerase chain reaction study showed that hypoxic gene expression signature was different between metastatic melanoma cell lines and primary melanoma cell lines. Hypoxic experimental conditions significantly affected the hypoxic gene expression signature. In immunohistochemical study, N-myc downstream regulated gene-1 expression was found to be lower in primary cutaneous melanoma compared to in intradermal nevi (p=0.001). In contrast, the cytoplasmic expression of hypoxia-inducible factor-1 beta was higher in primary cutaneous melanoma than in intradermal nevi (p=0.001). We also detected medium/strong significant correlations between the two proteins studied in the study groups.Conclusion: Hypoxic response consists of closely related proteins in more complex pathways. These findings will shed light on hypoxic processes in melanoma and unlock a Pandora’s box for development of new therapeutic strategies.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.3.145",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "1",
+    "pages": "15-23",
+    "views": 6712,
+    "downloads": 2990,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1260",
+    "sourceArticleId": "2146",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2146",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2146",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2146",
+    "localPdfUrl": "js/data/pdfs/2146.pdf",
+    "pdfUrl": "js/data/pdfs/2146.pdf"
+  },
+  {
+    "id": 2145,
+    "type": "Original Article",
+    "title": "Pathological Yawning in Patients with Acute Middle Cerebral Artery Infarction: Prognostic Significance and Association with the Infarct Location",
+    "authors": [
+      {
+        "name": "Aslı Aksoy Gündoğdu",
+        "affiliation": "Department of Neurology, Tekirdağ Namık Kemal University School of Medicine, Tekirdağ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Atilla Özcan Özdemir",
+        "affiliation": "Department of Neurology, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serhat Özkan",
+        "affiliation": "Department of Neurology, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Pathological yawning is a compulsive, frequent, repetitive yawning triggered by a specific reason besides fatigue or boredom. It may be related to iatrogenic, neurologic, psychiatric, gastrointestinal, or metabolic disorders. Moreover, it could also be seen in the course of an ischemic stroke.Aims: To determine whether pathological yawning is a prognostic marker of middle cerebral artery stroke and evaluate its relationship with the infarct location.Study Design: Cross-sectional study.Methods: We examined 161 patients with acute middle cerebral artery stroke, consecutively admitted to emergency department. Demographic information, stroke risk factors, stroke type according to Trial of Org 10172 in Acute Stroke Treatment classification, blood oxygen saturation, body temperature, blood pressure, heart rate, glucose levels, daytime of stroke onset, National Institutes of Health Stroke Scale score (National Institutes of Health Stroke Scale score, at admission and 24 h), modified Rankin scale (at 3 months), and infarct locations were documented. Pathological yawning was defined as ≥3 yawns/15 min. All patients were observed for 6 hours to detect pathological yawning. National Institutes of Health Stroke Scale score >10 was determined as severe stroke. The correlation between the presence of pathological yawning and stroke severity, infarct location, and the short- and long-term outcomes of the patients were evaluated.Results: Sixty-nine (42.9%) patients had pathological yawning and 112 (69.6%) had cortical infarcts. Insular and opercular infarcts were detected in 65 (40.4%) and 54 (33.5%) patients, respectively. Pathological yawning was more frequently observed in patients with cortical, insular, and opercular infarcts (p<0.05). Pathological yawning was related to higher National Institutes of Health Stroke Scale scores. Patients with severe stroke (National Institutes of Health Stroke Scale score ≥10) presented with more pathological yawning than those with mild to moderate strokes (p<0.05). The clinical outcomes and mortality rates showed no significant relationship with the occurrence of pathological yawning.Conclusion: Pathological yawning in middle cerebral artery stroke was associated with stroke severity, presence of cortical involvement, and insular and opercular infarcts. However, no association was found with long-term outcome and mortality.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Pathological yawning is a compulsive, frequent, repetitive yawning triggered by a specific reason besides fatigue or boredom. It may be related to iatrogenic, neurologic, psychiatric, gastrointestinal, or metabolic disorders. Moreover, it could also be seen in the course of an ischemic stroke.<br /><strong>Aims:</strong> To determine whether pathological yawning is a prognostic marker of middle cerebral artery stroke and evaluate its relationship with the infarct location.<br /><strong>Study Design:</strong> Cross-sectional study.<br /><strong>Methods:</strong> We examined 161 patients with acute middle cerebral artery stroke, consecutively admitted to emergency department. Demographic information, stroke risk factors, stroke type according to Trial of Org 10172 in Acute Stroke Treatment classification, blood oxygen saturation, body temperature, blood pressure, heart rate, glucose levels, daytime of stroke onset, National Institutes of Health Stroke Scale score (National Institutes of Health Stroke Scale score, at admission and 24 h), modified Rankin scale (at 3 months), and infarct locations were documented. Pathological yawning was defined as &ge;3 yawns/15 min. All patients were observed for 6 hours to detect pathological yawning. National Institutes of Health Stroke Scale score &gt;10 was determined as severe stroke. The correlation between the presence of pathological yawning and stroke severity, infarct location, and the short- and long-term outcomes of the patients were evaluated.<br /><strong>Results:</strong> Sixty-nine (42.9%) patients had pathological yawning and 112 (69.6%) had cortical infarcts. Insular and opercular infarcts were detected in 65 (40.4%) and 54 (33.5%) patients, respectively. Pathological yawning was more frequently observed in patients with cortical, insular, and opercular infarcts (p&lt;0.05). Pathological yawning was related to higher National Institutes of Health Stroke Scale scores. Patients with severe stroke (National Institutes of Health Stroke Scale score &ge;10) presented with more pathological yawning than those with mild to moderate strokes (p&lt;0.05). The clinical outcomes and mortality rates showed no significant relationship with the occurrence of pathological yawning.<br /><strong>Conclusion:</strong> Pathological yawning in middle cerebral artery stroke was associated with stroke severity, presence of cortical involvement, and insular and opercular infarcts. However, no association was found with long-term outcome and mortality.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Pathological yawning is a compulsive, frequent, repetitive yawning triggered by a specific reason besides fatigue or boredom. It may be related to iatrogenic, neurologic, psychiatric, gastrointestinal, or metabolic disorders. Moreover, it could also be seen in the course of an ischemic stroke.Aims: To determine whether pathological yawning is a prognostic marker of middle cerebral artery stroke and evaluate its relationship with the infarct location.Study Design: Cross-sectional study.Methods: We examined 161 patients with acute middle cerebral artery stroke, consecutively admitted to emergency department. Demographic information, stroke risk factors, stroke type according to Trial of Org 10172 in Acute Stroke Treatment classification, blood oxygen saturation, body temperature, blood pressure, heart rate, glucose levels, daytime of stroke onset, National Institutes of Health Stroke Scale score (National Institutes of Health Stroke Scale score, at admission and 24 h), modified Rankin scale (at 3 months), and infarct locations were documented. Pathological yawning was defined as ≥3 yawns/15 min. All patients were observed for 6 hours to detect pathological yawning. National Institutes of Health Stroke Scale score >10 was determined as severe stroke. The correlation between the presence of pathological yawning and stroke severity, infarct location, and the short- and long-term outcomes of the patients were evaluated.Results: Sixty-nine (42.9%) patients had pathological yawning and 112 (69.6%) had cortical infarcts. Insular and opercular infarcts were detected in 65 (40.4%) and 54 (33.5%) patients, respectively. Pathological yawning was more frequently observed in patients with cortical, insular, and opercular infarcts (p<0.05). Pathological yawning was related to higher National Institutes of Health Stroke Scale scores. Patients with severe stroke (National Institutes of Health Stroke Scale score ≥10) presented with more pathological yawning than those with mild to moderate strokes (p<0.05). The clinical outcomes and mortality rates showed no significant relationship with the occurrence of pathological yawning.Conclusion: Pathological yawning in middle cerebral artery stroke was associated with stroke severity, presence of cortical involvement, and insular and opercular infarcts. However, no association was found with long-term outcome and mortality.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.7.49",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "1",
+    "pages": "24-28",
+    "views": 11919,
+    "downloads": 10007,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1260",
+    "sourceArticleId": "2145",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2145",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2145",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2145",
+    "localPdfUrl": "js/data/pdfs/2145.pdf",
+    "pdfUrl": "js/data/pdfs/2145.pdf"
+  },
+  {
+    "id": 2142,
+    "type": "Original Article",
+    "title": "Inhibition of Lung Cancer Proliferation by Wogonin is Associated with Activation of Apoptosis and Generation of Reactive Oxygen Species",
+    "authors": [
+      {
+        "name": "Chengyang Wang",
+        "affiliation": "Department of Radiology, The Ninth Hospital of Xi’an Affiliated Hospital of Xi’an Jiaotong University, Xi’an, Shaanxi, China",
+        "orcid": ""
+      },
+      {
+        "name": "Chuangcheng Cui",
+        "affiliation": "Department of Radiology, The Ninth Hospital of Xi’an Affiliated Hospital of Xi’an Jiaotong University, Xi’an, Shaanxi, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Lung cancer has a very high incidence rate and is one of the commonly diagnosed tumors in developed countries.Aims: To investigate the effect of wogonin on A549 and A427 lung cancer cells and explore the mechanism involved.Study Design: Cell study.Methods: The cytotoxicity effect of wogonin on A549 and A427 lung cancer and BEAS-2B cells was assessed by MTT assay. The onset of apoptosis was assessed by flow cytometry using Annexin V FITC/PI staining. Western blotting was used for the determination of changes in apoptotic protein expression.Results: Wogonin treatment exhibited cytotoxicity effect selectively on A549 and A427 cells without affecting BEAS-2B normal lung cells. The viability of A549 and A427 cells was reduced to 31% and 34%, respectively, on treatment with 50 µM of wogonin; however, there was no significant reduction in BEAS-2B cell viability on treatment with the same concentration of it. Moreover, the percentage of apoptotic A427 cells showed a significant (p<0.049) increase on treatment with wogonin. Furthermore, the treatment led to a marked increase in the activation of caspase 3/8/9 and the generation of reactive oxygen species (ROS) at 72 h in A427 cells. Digital tomosynthesis studies showed a marked reduction in tumor development on treatment with wogonin.Conclusion: Wogonin treatment specifically exhibits a cytotoxic effect on lung cancer cells and this effect is associated with activation of apoptosis and generation of reactive oxygen species.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Lung cancer has a very high incidence rate and is one of the commonly diagnosed tumors in developed countries.<br />Aims: To investigate the effect of wogonin on A549 and A427 lung cancer cells and explore the mechanism involved.<br /><strong>Study Design:</strong> Cell study.<br /><strong>Methods:</strong> The cytotoxicity effect of wogonin on A549 and A427 lung cancer and BEAS-2B cells was assessed by MTT assay. The onset of apoptosis was assessed by flow cytometry using Annexin V FITC/PI staining. Western blotting was used for the determination of changes in apoptotic protein expression.<br /><strong>Results:</strong> Wogonin treatment exhibited cytotoxicity effect selectively on A549 and A427 cells without affecting BEAS-2B normal lung cells. The viability of A549 and A427 cells was reduced to 31% and 34%, respectively, on treatment with 50 &micro;M of wogonin; however, there was no significant reduction in BEAS-2B cell viability on treatment with the same concentration of it. Moreover, the percentage of apoptotic A427 cells showed a significant (p&lt;0.049) increase on treatment with wogonin. Furthermore, the treatment led to a marked increase in the activation of caspase 3/8/9 and the generation of reactive oxygen species (ROS) at 72 h in A427 cells. Digital tomosynthesis studies showed a marked reduction in tumor development on treatment with wogonin.<br /><strong>Conclusion:</strong> Wogonin treatment specifically exhibits a cytotoxic effect on lung cancer cells and this effect is associated with activation of apoptosis and generation of reactive oxygen species.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Lung cancer has a very high incidence rate and is one of the commonly diagnosed tumors in developed countries.Aims: To investigate the effect of wogonin on A549 and A427 lung cancer cells and explore the mechanism involved.Study Design: Cell study.Methods: The cytotoxicity effect of wogonin on A549 and A427 lung cancer and BEAS-2B cells was assessed by MTT assay. The onset of apoptosis was assessed by flow cytometry using Annexin V FITC/PI staining. Western blotting was used for the determination of changes in apoptotic protein expression.Results: Wogonin treatment exhibited cytotoxicity effect selectively on A549 and A427 cells without affecting BEAS-2B normal lung cells. The viability of A549 and A427 cells was reduced to 31% and 34%, respectively, on treatment with 50 µM of wogonin; however, there was no significant reduction in BEAS-2B cell viability on treatment with the same concentration of it. Moreover, the percentage of apoptotic A427 cells showed a significant (p<0.049) increase on treatment with wogonin. Furthermore, the treatment led to a marked increase in the activation of caspase 3/8/9 and the generation of reactive oxygen species (ROS) at 72 h in A427 cells. Digital tomosynthesis studies showed a marked reduction in tumor development on treatment with wogonin.Conclusion: Wogonin treatment specifically exhibits a cytotoxic effect on lung cancer cells and this effect is associated with activation of apoptosis and generation of reactive oxygen species.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.7.75",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "1",
+    "pages": "29-33",
+    "views": 8043,
+    "downloads": 3124,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1260",
+    "sourceArticleId": "2142",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2142",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2142",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2142",
+    "localPdfUrl": "js/data/pdfs/2142.pdf",
+    "pdfUrl": "js/data/pdfs/2142.pdf"
+  },
+  {
+    "id": 2154,
+    "type": "Original Article",
+    "title": "Quality-of-life Evaluation of Healthy Siblings of Children with Chronic Illness",
+    "authors": [
+      {
+        "name": "Meltem Dinleyici",
+        "affiliation": "Department of Social Pediatrics, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kürşat Bora Çarman",
+        "affiliation": "Department of Pediatric Neurology, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Canan Özdemir",
+        "affiliation": "Department of Pediatric Hematology and Oncology, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Koray Harmancı",
+        "affiliation": "Department of Pediatric Allergy and Immunology, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Makbule Eren",
+        "affiliation": "Department of Pediatric Gastroenterology and Hepatology, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Birgül Kirel",
+        "affiliation": "Department of Pediatric Endocrinology, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Enver Şimşek",
+        "affiliation": "Department of Pediatric Endocrinology, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Coşkun Yarar",
+        "affiliation": "Department of Pediatric Neurology, Eskişehir Osmangazi University School of Medicine, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aysu Duyan Çamurdan",
+        "affiliation": "Department of Social Pediatrics, Gazi University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Figen Şahin Dağlı",
+        "affiliation": "Department of Social Pediatrics, Gazi University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Chronic disease of children can cause changes in the health-related quality of life (HrQoL) of the family members.Aims: To evaluate the HrQoL of healthy siblings of children with chronic disease.Study Design: Cross-sectional study.Methods: The study included healthy sibling of children with chronic disease (cerebral palsy, epilepsy, diabetes, celiac disease, hematologic/oncologic disease, or asthma) and healthy sibling of healthy children to evaluate the quality of life. We used the Pediatric Quality of Life Inventory questionnaire; the physical health and psychosocial health scores were calculated using the responses of the sibling and parent. The primary endpoint was the comparison of HrQoL scores of healthy siblings of children with chronic disease and that of healthy siblings of healthy children.Results: This study included a respective healthy sibling of 191 children with chronic disease and healthy sibling of 100 healthy children. The physical health, psychosocial health, and total health scores of healthy siblings of children with chronic disease were significantly lower than that of healthy siblings of healthy children (p<0.001). Among the healthy siblings of children with chronic disease, the lowest psychosocial health score was found in the siblings of children with cerebral palsy, hematologic/oncologic disease, and asthma (p<0.001). The global impact on the quality of life for healthy siblings of children with chronic disease was significantly higher in the self-report of the children than that of the parents (30.4% versus 15.1%, p<0.05).Conclusion: Most healthy siblings of children with chronic disease are physically and psychosocially affected and there is low parental awareness of this condition. This can increase the risk of emotional neglect and abuse of these children. Therefore, special support programs are needed for the families of children with chronic diseases.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Chronic disease of children can cause changes in the health-related quality of life (HrQoL) of the family members.<br /><strong>Aims:</strong> To evaluate the HrQoL of healthy siblings of children with chronic disease.<br /><strong>Study Design:</strong> Cross-sectional study.<br /><strong>Methods:</strong> The study included healthy sibling of children with chronic disease (cerebral palsy, epilepsy, diabetes, celiac disease, hematologic/oncologic disease, or asthma) and healthy sibling of healthy children to evaluate the quality of life. We used the Pediatric Quality of Life Inventory questionnaire; the physical health and psychosocial health scores were calculated using the responses of the sibling and parent. The primary endpoint was the comparison of HrQoL scores of healthy siblings of children with chronic disease and that of healthy siblings of healthy children.<br /><strong>Results:</strong> This study included a respective healthy sibling of 191 children with chronic disease and healthy sibling of 100 healthy children. The physical health, psychosocial health, and total health scores of healthy siblings of children with chronic disease were significantly lower than that of healthy siblings of healthy children (p&lt;0.001). Among the healthy siblings of children with chronic disease, the lowest psychosocial health score was found in the siblings of children with cerebral palsy, hematologic/oncologic disease, and asthma (p&lt;0.001). The global impact on the quality of life for healthy siblings of children with chronic disease was significantly higher in the self-report of the children than that of the parents (30.4% versus 15.1%, p&lt;0.05).<br /><strong>Conclusion:</strong> Most healthy siblings of children with chronic disease are physically and psychosocially affected and there is low parental awareness of this condition. This can increase the risk of emotional neglect and abuse of these children. Therefore, special support programs are needed for the families of children with chronic diseases.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Chronic disease of children can cause changes in the health-related quality of life (HrQoL) of the family members.Aims: To evaluate the HrQoL of healthy siblings of children with chronic disease.Study Design: Cross-sectional study.Methods: The study included healthy sibling of children with chronic disease (cerebral palsy, epilepsy, diabetes, celiac disease, hematologic/oncologic disease, or asthma) and healthy sibling of healthy children to evaluate the quality of life. We used the Pediatric Quality of Life Inventory questionnaire; the physical health and psychosocial health scores were calculated using the responses of the sibling and parent. The primary endpoint was the comparison of HrQoL scores of healthy siblings of children with chronic disease and that of healthy siblings of healthy children.Results: This study included a respective healthy sibling of 191 children with chronic disease and healthy sibling of 100 healthy children. The physical health, psychosocial health, and total health scores of healthy siblings of children with chronic disease were significantly lower than that of healthy siblings of healthy children (p<0.001). Among the healthy siblings of children with chronic disease, the lowest psychosocial health score was found in the siblings of children with cerebral palsy, hematologic/oncologic disease, and asthma (p<0.001). The global impact on the quality of life for healthy siblings of children with chronic disease was significantly higher in the self-report of the children than that of the parents (30.4% versus 15.1%, p<0.05).Conclusion: Most healthy siblings of children with chronic disease are physically and psychosocially affected and there is low parental awareness of this condition. This can increase the risk of emotional neglect and abuse of these children. Therefore, special support programs are needed for the families of children with chronic diseases.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.7.142",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "1",
+    "pages": "34-42",
+    "views": 7344,
+    "downloads": 6189,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1260",
+    "sourceArticleId": "2154",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2154",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2154",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2154",
+    "localPdfUrl": "js/data/pdfs/2154.pdf",
+    "pdfUrl": "js/data/pdfs/2154.pdf"
+  },
+  {
+    "id": 2141,
+    "type": "Brief Report",
+    "title": "Genetic Diagnosis of Hereditary Hemorrhagic Telangiectasia: Four Novel Pathogenic Variations in Turkish Patients",
+    "authors": [
+      {
+        "name": "Mehmet Baysal",
+        "affiliation": "Department of Hematology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selma Demir",
+        "affiliation": "Department of Medical Genetics, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Elif G. Ümit",
+        "affiliation": "Department of Hematology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Gürkan",
+        "affiliation": "Department of Medical Genetics, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Volkan Baş",
+        "affiliation": "Department of Hematology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sedanur Karaman Gülsaran",
+        "affiliation": "Department of Hematology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ufuk Demirci",
+        "affiliation": "Department of Medical Genetics, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakkı Onur Kırkızlar",
+        "affiliation": "Department of Hematology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Muzaffer Demir",
+        "affiliation": "Department of Hematology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Aims: Hereditary hemorrhagic telangiectasia is an autosomal dominant disorder characterized by telangiectasia, epistaxis, and vascular malformations. Pathogenic mutations were found in ENG, AVCRL1, SMAD4, and GDF genes. In this study, we present our database of patients with hereditary hemorrhagic telangiectasia regarding the phenotype-genotype relations and discuss two novel ENG gene pathogenic variations in two unrelated families.Methods: Next Generation Sequencing analysis was performed on the peripheral blood of nine patients with hereditary hemorrhagic telangiectasia in four unrelated families. All patients were diagnosed with hereditary hemorrhagic telangiectasia according to the Curaçao criteria. Data on treatment and screenings of visceral involvement were recorded from files.Results: We have found a pathogenic variation in either the ENG or ACVRL1 gene in each family. Two novel pathogenic variations in the ENG gene, including NM_000118.3 (ENG): c.416delC (p.P139fs*24) and NM_000118.3(ENG): c.1139dupT (p.Leu380PhefsTer16), were found in the same family. The NM_000020.2(ACVRL1): c.1298C>T (p.Pro433Leu) pathogenic variation in the ACVRL1 gene in our first family and a novel heterozygous likely pathogenic NM_000020.2(ACVRL1): c.95T>C (p.Val32Ala) variation was found in our second family. Seven of the nine patients were treated with thalidomide for controlling bleeding episodes. All patients responded to thalidomide. In one patient, the response to thalidomide was lost and switched to bevacizumab.Conclusion: In hereditary hemorrhagic telangiectasia, certain types of mutations correlate with disease phenotypes and with next generation sequencing methods. New pathogenic variations can be revealed, which might help manage patients with hereditary hemorrhagic telangiectasia.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Aims:</strong> Hereditary hemorrhagic telangiectasia is an autosomal dominant disorder characterized by telangiectasia, epistaxis, and vascular malformations. Pathogenic mutations were found in <em>ENG, AVCRL1, SMAD4</em>, and <em>GDF</em> genes. In this study, we present our database of patients with hereditary hemorrhagic telangiectasia regarding the phenotype-genotype relations and discuss two novel ENG gene pathogenic variations in two unrelated families.<br /><strong>Methods:</strong> Next Generation Sequencing analysis was performed on the peripheral blood of nine patients with hereditary hemorrhagic telangiectasia in four unrelated families. All patients were diagnosed with hereditary hemorrhagic telangiectasia according to the Cura&ccedil;ao criteria. Data on treatment and screenings of visceral involvement were recorded from files.<br /><strong>Results:</strong> We have found a pathogenic variation in either the <em>ENG</em> or <em>ACVRL1</em> gene in each family. Two novel pathogenic variations in the <em>ENG</em> gene, including NM_000118.3 (ENG): c.416delC (p.P139fs*24) and NM_000118.3(ENG): c.1139dupT (p.Leu380PhefsTer16), were found in the same family. The NM_000020.2(ACVRL1): c.1298C&gt;T (p.Pro433Leu) pathogenic variation in the ACVRL1 gene in our first family and a novel heterozygous likely pathogenic NM_000020.2(ACVRL1): c.95T&gt;C (p.Val32Ala) variation was found in our second family. Seven of the nine patients were treated with thalidomide for controlling bleeding episodes. All patients responded to thalidomide. In one patient, the response to thalidomide was lost and switched to bevacizumab.<br /><strong>Conclusion:</strong> In hereditary hemorrhagic telangiectasia, certain types of mutations correlate with disease phenotypes and with next generation sequencing methods. New pathogenic variations can be revealed, which might help manage patients with hereditary hemorrhagic telangiectasia.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Aims: Hereditary hemorrhagic telangiectasia is an autosomal dominant disorder characterized by telangiectasia, epistaxis, and vascular malformations. Pathogenic mutations were found in ENG, AVCRL1, SMAD4, and GDF genes. In this study, we present our database of patients with hereditary hemorrhagic telangiectasia regarding the phenotype-genotype relations and discuss two novel ENG gene pathogenic variations in two unrelated families.Methods: Next Generation Sequencing analysis was performed on the peripheral blood of nine patients with hereditary hemorrhagic telangiectasia in four unrelated families. All patients were diagnosed with hereditary hemorrhagic telangiectasia according to the Curaçao criteria. Data on treatment and screenings of visceral involvement were recorded from files.Results: We have found a pathogenic variation in either the ENG or ACVRL1 gene in each family. Two novel pathogenic variations in the ENG gene, including NM_000118.3 (ENG): c.416delC (p.P139fs*24) and NM_000118.3(ENG): c.1139dupT (p.Leu380PhefsTer16), were found in the same family. The NM_000020.2(ACVRL1): c.1298C>T (p.Pro433Leu) pathogenic variation in the ACVRL1 gene in our first family and a novel heterozygous likely pathogenic NM_000020.2(ACVRL1): c.95T>C (p.Val32Ala) variation was found in our second family. Seven of the nine patients were treated with thalidomide for controlling bleeding episodes. All patients responded to thalidomide. In one patient, the response to thalidomide was lost and switched to bevacizumab.Conclusion: In hereditary hemorrhagic telangiectasia, certain types of mutations correlate with disease phenotypes and with next generation sequencing methods. New pathogenic variations can be revealed, which might help manage patients with hereditary hemorrhagic telangiectasia.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.7.2",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "1",
+    "pages": "43-46",
+    "views": 6512,
+    "downloads": 9798,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1260",
+    "sourceArticleId": "2141",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2141",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2141",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2141",
+    "localPdfUrl": "js/data/pdfs/2141.pdf",
+    "pdfUrl": "js/data/pdfs/2141.pdf"
+  },
+  {
+    "id": 2162,
+    "type": "Case Report",
+    "title": "Acquired Tracheoesophageal Fistula After Esophageal Atresia Repair",
+    "authors": [
+      {
+        "name": "Özlem Boybeyi Türer",
+        "affiliation": "Department of Pediatric Surgery, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Feridun Cahit Tanyel",
+        "affiliation": "Department of Pediatric Surgery, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tutku Soyer",
+        "affiliation": "Department of Pediatric Surgery, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Recurrence of tracheoesophageal fistula is a frequent complication after esophageal atresia repair. Acquired tracheoesophageal fistulas are long new fistulas that are localized at sites that are not typical of the congenital tracheoesophageal fistula. We present four cases to discuss the diagnostic and management challenges concerning various acquired tracheoesophageal fistula localizations.Case Report: We retrospectively evaluated the medical records of patients admitted with acquired tracheoesophageal fistula in the last 5 years. Among the 16 postoperative tracheoesophageal fistulas, 4 were classified as acquired tracheoesophageal fistula. Patients’ admission age ranged from 1 to 8 years. The female to male ratio was 2:2. The presented cases were admitted with recurrent respiratory tract infections, choking, and coughing. The acquired tracheoesophageal fistulas were observed between the esophagus and cervical trachea, between the esophagus and the right bronchus passing through intrathoracic abscess cavity, in the right bronchus, and between the colon conduit and trachea. One of the acquired tracheoesophageal fistulas healed spontaneously, whereas others required surgical ligation.Conclusion: Acquired tracheoesophageal fistula most often occurs secondary to local or diffuse mediastinitis. Acquired tracheoesophageal fistula may appear at unusual sites not typical of congenital tracheoesophageal fistula, such as esophagus-to-right bronchus and conduit to trachea. Therefore, the unusual locations of acquired tracheoesophageal fistula should be borne in mind, and patients evaluated and managed more comprehensively.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t</hr><h4>Abstract</h4>\r\n<p><strong>Background:</strong> Recurrence of tracheoesophageal fistula is a frequent complication after esophageal atresia repair. Acquired tracheoesophageal fistulas are long new fistulas that are localized at sites that are not typical of the congenital tracheoesophageal fistula. We present four cases to discuss the diagnostic and management challenges concerning various acquired tracheoesophageal fistula localizations.<br /><strong>Case Report:</strong> We retrospectively evaluated the medical records of patients admitted with acquired tracheoesophageal fistula in the last 5 years. Among the 16 postoperative tracheoesophageal fistulas, 4 were classified as acquired tracheoesophageal fistula. Patients&rsquo; admission age ranged from 1 to 8 years. The female to male ratio was 2:2. The presented cases were admitted with recurrent respiratory tract infections, choking, and coughing. The acquired tracheoesophageal fistulas were observed between the esophagus and cervical trachea, between the esophagus and the right bronchus passing through intrathoracic abscess cavity, in the right bronchus, and between the colon conduit and trachea. One of the acquired tracheoesophageal fistulas healed spontaneously, whereas others required surgical ligation.<br /><strong>Conclusion:</strong> Acquired tracheoesophageal fistula most often occurs secondary to local or diffuse mediastinitis. Acquired tracheoesophageal fistula may appear at unusual sites not typical of congenital tracheoesophageal fistula, such as esophagus-to-right bronchus and conduit to trachea. Therefore, the unusual locations of acquired tracheoesophageal fistula should be borne in mind, and patients evaluated and managed more comprehensively.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Recurrence of tracheoesophageal fistula is a frequent complication after esophageal atresia repair. Acquired tracheoesophageal fistulas are long new fistulas that are localized at sites that are not typical of the congenital tracheoesophageal fistula. We present four cases to discuss the diagnostic and management challenges concerning various acquired tracheoesophageal fistula localizations.Case Report: We retrospectively evaluated the medical records of patients admitted with acquired tracheoesophageal fistula in the last 5 years. Among the 16 postoperative tracheoesophageal fistulas, 4 were classified as acquired tracheoesophageal fistula. Patients’ admission age ranged from 1 to 8 years. The female to male ratio was 2:2. The presented cases were admitted with recurrent respiratory tract infections, choking, and coughing. The acquired tracheoesophageal fistulas were observed between the esophagus and cervical trachea, between the esophagus and the right bronchus passing through intrathoracic abscess cavity, in the right bronchus, and between the colon conduit and trachea. One of the acquired tracheoesophageal fistulas healed spontaneously, whereas others required surgical ligation.Conclusion: Acquired tracheoesophageal fistula most often occurs secondary to local or diffuse mediastinitis. Acquired tracheoesophageal fistula may appear at unusual sites not typical of congenital tracheoesophageal fistula, such as esophagus-to-right bronchus and conduit to trachea. Therefore, the unusual locations of acquired tracheoesophageal fistula should be borne in mind, and patients evaluated and managed more comprehensively.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.8.60",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "1",
+    "pages": "47-49",
+    "views": 7460,
+    "downloads": 2411,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1260",
+    "sourceArticleId": "2162",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2162",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2162",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2162",
+    "localPdfUrl": "js/data/pdfs/2162.pdf",
+    "pdfUrl": "js/data/pdfs/2162.pdf"
+  },
+  {
+    "id": 2157,
+    "type": "Clinical Image",
+    "title": "Gastrointestinal Involvement in a Patient with Chronic Lymphocytic Leukemia",
+    "authors": [
+      {
+        "name": "Devrim Çabuk",
+        "affiliation": "Department of Internal Medicine, Kocaeli University School of Medicine, Division of Medical Oncology, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Ballı",
+        "affiliation": "Department of Internal Medicine, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yasin Yılmaz",
+        "affiliation": "Department of Pediatrics, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Erkan Duman",
+        "affiliation": "Department of Internal Medicine, Kocaeli University School of Medicine, Division of Gastroenterology, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kazım Uygun",
+        "affiliation": "Department of Internal Medicine, Kocaeli University School of Medicine, Division of Medical Oncology, Kocaeli, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 70-year-old man was admitted to the hospital with symptoms of fatigue and dyspnea. A total blood count showed leukocytosis with an increased lymphocyte count. In a short time, his white blood cell (WBC) count had increased to 200 000 (WBC: 217.00×109/L, lym: 175.00×109/L, and neu: 22.30×109/L) and flow cytometry revealed a phenotype that was positive for C",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.9.51",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "1",
+    "pages": "50-51",
+    "views": 5563,
+    "downloads": 4097,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1260",
+    "sourceArticleId": "2157",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2157",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2157",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2157",
+    "localPdfUrl": "js/data/pdfs/2157.pdf",
+    "pdfUrl": "js/data/pdfs/2157.pdf"
+  },
+  {
+    "id": 2159,
+    "type": "Clinical Image",
+    "title": "Incidental Cutaneous Microcystic/Reticular Schwannoma in Pilonidal Sinus",
+    "authors": [
+      {
+        "name": "Recep Bedir",
+        "affiliation": "Department of Pathology, Recep Tayyip Erdoğan University School of Medicine, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Orhan Semerci",
+        "affiliation": "Department of Pathology, Recep Tayyip Erdoğan University School of Medicine, Rize, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gülname Fındık Güvendi",
+        "affiliation": "Department of Pathology, Recep Tayyip Erdoğan University School of Medicine, Rize, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Schwannoma, a non-malign peripheral nerve sheath tumor, develops slowly and is usually clinically inapparent. It usually arises after the fourth decade of life in the subcutaneous tissue of the extremities and in the head and neck region of patients, with no gender bias. Microcystic/reticular schwannoma (MRS) is a rare histological form of schwannoma, first ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.7.126",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "1",
+    "pages": "52-53",
+    "views": 5464,
+    "downloads": 2069,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1260",
+    "sourceArticleId": "2159",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2159",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2159",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2159",
+    "localPdfUrl": "js/data/pdfs/2159.pdf",
+    "pdfUrl": "js/data/pdfs/2159.pdf"
+  },
+  {
+    "id": 2143,
+    "type": "Letter to the Editor",
+    "title": "Influence of Protein Intake during Complementary Feeding on Body Size and IGF-I Levels in Twelve-month-old Infants",
+    "authors": [
+      {
+        "name": "Iulia Florentina Ţincu",
+        "affiliation": "“Carol Davila” University of Medicine and Pharmacy, Bucharest, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Daniela Păcurar",
+        "affiliation": "“Carol Davila” University of Medicine and Pharmacy, Bucharest, Romania; Department of Pediatrics, “Grigore Alexandrescu” Emergency Children’s Hospital, Bucharest, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Radu Ciprian Ţincu",
+        "affiliation": "“Carol Davila” University of Medicine and Pharmacy, Bucharest, Romania; Critical Care Toxicology Unit, Bucharest Clinical Emergency Hospital, Bucharest, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Cristina Becheanu",
+        "affiliation": "“Carol Davila” University of Medicine and Pharmacy, Bucharest, Romania; Department of Pediatrics, “Grigore Alexandrescu” Emergency Children’s Hospital, Bucharest, Romania",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, Our understanding of postnatal growth and later influence on childhood obesity by early nutrition is furnished with a growing evidence worldwide. Early dietary risk factors should be considered to prevent later obesity (1). Few epidemiological trials have investigated the role of protein intake during the weaning period in stimulating the endo",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.6.5",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "1",
+    "pages": "54-55",
+    "views": 5963,
+    "downloads": 3839,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1260",
+    "sourceArticleId": "2143",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2143",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2143",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2143",
+    "localPdfUrl": "js/data/pdfs/2143.pdf",
+    "pdfUrl": "js/data/pdfs/2143.pdf"
+  },
+  {
+    "id": 2156,
+    "type": "Letter to the Editor",
+    "title": "Superior Thyroid Artery of MLS-preserved Cadavers: A New Microsurgery Training Model",
+    "authors": [
+      {
+        "name": "Mehmet Emre Yeğin",
+        "affiliation": "Clinic of Plastic Surgery, Elazığ Fethi Sekin City Hospital, Elazığ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Servet Çelik",
+        "affiliation": "Department of Anatomy, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Okan Bilge",
+        "affiliation": "Department of Anatomy, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, Microsurgery is a specialized area of surgery that demands training and research at every step. As a useful material for training, experimental methods are important for this purpose. However, ethical and economic considerations have forced scientists to seek alternative training materials. Therefore, in this study we aimed to use embalmed hum",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2019.2019.8.47",
+    "received": "",
+    "accepted": "",
+    "published": "2020-01-01",
+    "volume": 37,
+    "issue": "1",
+    "pages": "56-57",
+    "views": 5641,
+    "downloads": 3974,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1260",
+    "sourceArticleId": "2156",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2156",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2156",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2156",
+    "localPdfUrl": "js/data/pdfs/2156.pdf",
+    "pdfUrl": "js/data/pdfs/2156.pdf"
+  }
+]

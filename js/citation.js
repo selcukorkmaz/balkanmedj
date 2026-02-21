@@ -5,12 +5,20 @@
 (function () {
   'use strict';
 
+  function normalizeAuthors(article) {
+    if (article && Array.isArray(article.authors) && article.authors.length) {
+      return article.authors;
+    }
+    return [{ name: 'Balkan Medical Journal' }];
+  }
+
   window.CitationHelper = {
     /**
      * Generate APA citation
      */
     apa: function (article) {
-      var authorStr = article.authors.map(function (a) {
+      var authors = normalizeAuthors(article);
+      var authorStr = authors.map(function (a) {
         var parts = a.name.split(' ');
         var last = parts.pop();
         var initials = parts.map(function (p) { return p.charAt(0) + '.'; }).join(' ');
@@ -19,7 +27,7 @@
 
       // Replace last comma with &
       var lastComma = authorStr.lastIndexOf(', ');
-      if (article.authors.length > 1 && lastComma > -1) {
+      if (authors.length > 1 && lastComma > -1) {
         authorStr = authorStr.substring(0, lastComma) + ', & ' + authorStr.substring(lastComma + 2);
       }
 
@@ -31,17 +39,18 @@
      * Generate MLA citation
      */
     mla: function (article) {
+      var authors = normalizeAuthors(article);
       var authorStr;
-      if (article.authors.length === 1) {
-        var parts = article.authors[0].name.split(' ');
+      if (authors.length === 1) {
+        var parts = authors[0].name.split(' ');
         var last = parts.pop();
         authorStr = last + ', ' + parts.join(' ');
-      } else if (article.authors.length === 2) {
-        var p1 = article.authors[0].name.split(' ');
+      } else if (authors.length === 2) {
+        var p1 = authors[0].name.split(' ');
         var last1 = p1.pop();
-        authorStr = last1 + ', ' + p1.join(' ') + ', and ' + article.authors[1].name;
+        authorStr = last1 + ', ' + p1.join(' ') + ', and ' + authors[1].name;
       } else {
-        var p0 = article.authors[0].name.split(' ');
+        var p0 = authors[0].name.split(' ');
         var last0 = p0.pop();
         authorStr = last0 + ', ' + p0.join(' ') + ', et al.';
       }
@@ -54,13 +63,14 @@
      * Generate Vancouver citation
      */
     vancouver: function (article) {
-      var authorStr = article.authors.slice(0, 6).map(function (a) {
+      var authors = normalizeAuthors(article);
+      var authorStr = authors.slice(0, 6).map(function (a) {
         var parts = a.name.split(' ');
         var last = parts.pop();
         var initials = parts.map(function (p) { return p.charAt(0); }).join('');
         return last + ' ' + initials;
       }).join(', ');
-      if (article.authors.length > 6) authorStr += ', et al';
+      if (authors.length > 6) authorStr += ', et al';
 
       var pubDate = article.published ? new Date(article.published) : null;
       var year = pubDate ? pubDate.getFullYear() : '';
@@ -72,15 +82,16 @@
      * Generate BibTeX citation
      */
     bibtex: function (article) {
-      var firstAuthor = article.authors[0].name.split(' ').pop().toLowerCase();
+      var authors = normalizeAuthors(article);
+      var firstAuthor = authors[0].name.split(' ').pop().toLowerCase();
       var year = article.published ? new Date(article.published).getFullYear() : '';
       var key = firstAuthor + year;
 
-      var authors = article.authors.map(function (a) { return a.name; }).join(' and ');
+      var authorStr = authors.map(function (a) { return a.name; }).join(' and ');
 
       return '@article{' + key + ',\n' +
         '  title     = {' + article.title + '},\n' +
-        '  author    = {' + authors + '},\n' +
+        '  author    = {' + authorStr + '},\n' +
         '  journal   = {Balkan Medical Journal},\n' +
         '  year      = {' + year + '},\n' +
         '  volume    = {' + article.volume + '},\n' +
@@ -95,13 +106,14 @@
      * Generate RIS citation
      */
     ris: function (article) {
+      var authors = normalizeAuthors(article);
       var year = article.published ? new Date(article.published).getFullYear() : '';
       var pages = article.pages ? article.pages.split('-') : ['', ''];
       var lines = [
         'TY  - JOUR',
         'T1  - ' + article.title
       ];
-      article.authors.forEach(function (a) {
+      authors.forEach(function (a) {
         var parts = a.name.split(' ');
         var last = parts.pop();
         var first = parts.join(' ');
@@ -132,12 +144,13 @@
      * Generate EndNote (.enw) citation
      */
     endnote: function (article) {
+      var authors = normalizeAuthors(article);
       var year = article.published ? new Date(article.published).getFullYear() : '';
       var lines = [
         '%0 Journal Article',
         '%T ' + article.title
       ];
-      article.authors.forEach(function (a) {
+      authors.forEach(function (a) {
         lines.push('%A ' + a.name);
       });
       lines.push('%D ' + year);

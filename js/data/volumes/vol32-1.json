@@ -1,0 +1,1429 @@
+[
+  {
+    "id": 1817,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "1817",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1817",
+    "localPdfUrl": "js/data/pdfs/1817.pdf",
+    "pdfUrl": "js/data/pdfs/1817.pdf"
+  },
+  {
+    "id": 257,
+    "type": "Invited Review",
+    "title": "Neoadjuvant Radiotherapy/Chemoradiotherapy in Locally Advanced Non-Small Cell Lung Cancer",
+    "authors": [
+      {
+        "name": "Deniz Yalman",
+        "affiliation": "Department of Radiation Oncology, Ege University Faculty of Medicine, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Locally advanced non-small cell lung cancer (NSCLC) consists of a heterogeneous group of patients, and the optimal treatment is still controversial. The current standard of care is concurrent chemoradiotherapy. The prognosis is still poor, with high rates of local and distant failure despite multimodality treatment. One of the efforts to improve outcomes in these patients is to use neoadjuvant treatment to improve resectability, and downstaging the nodal disease, which has a clear impact on prognosis. Radiotherapy as the sole neoadjuvant modality has been used historically without any survival benefit, but with increased toxicity. After the demonstrating a survival benefit by combining radiotherapy and chemotherapy, phase II studies were started to determine the neoadjuvant administration of these two modalities together. Although the results of these studies revealed a heterogeneous postinduction pathologic complete response, tumor and nodal downstaging can be achieved at the cost of a slightly higher morbidity and mortality. Subsequent phase III trials also failed to show a survival benefit to surgery, but indicated that there may be a subset of patients with locally advanced disease who can benefit from resection unless pneumonectomy is not provided. In order to increase the efficacy of radiotherapy, hyperfractionated-accelerated schedules have been used with promising complete pathologic response rates, which might improve prognosis. Recently, studies applying high radiotherapy doses in the neoadjuvant setting demonstrated the safety of resection after radiotherapy, with high nodal clearance rates and encouraging long-term survival results. In conclusion, neoadjuvant treatment of locally advanced NSCLC is one of the most challenging issues in the treatment of this disease, but it can be offered to appropriately selected patients, and should be done by a multidisciplinary team. Individual risk profiles, definite role of radiotherapy with optimal timing, and dose need to be clarified by carefully designed clinical trials.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tLocally advanced non-small cell lung cancer (NSCLC) consists of a heterogeneous group of patients, and the optimal treatment is still controversial. The current standard of care is concurrent chemoradiotherapy. The prognosis is still poor, with high rates of local and distant failure despite multimodality treatment. One of the efforts to improve outcomes in these patients is to use neoadjuvant treatment to improve resectability, and downstaging the nodal disease, which has a clear impact on prognosis. Radiotherapy as the sole neoadjuvant modality has been used historically without any survival benefit, but with increased toxicity. After the demonstrating a survival benefit by combining radiotherapy and chemotherapy, phase II studies were started to determine the neoadjuvant administration of these two modalities together. Although the results of these studies revealed a heterogeneous postinduction pathologic complete response, tumor and nodal downstaging can be achieved at the cost of a slightly higher morbidity and mortality. Subsequent phase III trials also failed to show a survival benefit to surgery, but indicated that there may be a subset of patients with locally advanced disease who can benefit from resection unless pneumonectomy is not provided. In order to increase the efficacy of radiotherapy, hyperfractionated-accelerated schedules have been used with promising complete pathologic response rates, which might improve prognosis. Recently, studies applying high radiotherapy doses in the neoadjuvant setting demonstrated the safety of resection after radiotherapy, with high nodal clearance rates and encouraging long-term survival results.</p>\r\n<p>\r\n\tIn conclusion, neoadjuvant treatment of locally advanced NSCLC is one of the most challenging issues in the treatment of this disease, but it can be offered to appropriately selected patients, and should be done by a multidisciplinary team. Individual risk profiles, definite role of radiotherapy with optimal timing, and dose need to be clarified by carefully designed clinical trials.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Locally advanced non-small cell lung cancer (NSCLC) consists of a heterogeneous group of patients, and the optimal treatment is still controversial. The current standard of care is concurrent chemoradiotherapy. The prognosis is still poor, with high rates of local and distant failure despite multimodality treatment. One of the efforts to improve outcomes in these patients is to use neoadjuvant treatment to improve resectability, and downstaging the nodal disease, which has a clear impact on prognosis. Radiotherapy as the sole neoadjuvant modality has been used historically without any survival benefit, but with increased toxicity. After the demonstrating a survival benefit by combining radiotherapy and chemotherapy, phase II studies were started to determine the neoadjuvant administration of these two modalities together. Although the results of these studies revealed a heterogeneous postinduction pathologic complete response, tumor and nodal downstaging can be achieved at the cost of a slightly higher morbidity and mortality. Subsequent phase III trials also failed to show a survival benefit to surgery, but indicated that there may be a subset of patients with locally advanced disease who can benefit from resection unless pneumonectomy is not provided. In order to increase the efficacy of radiotherapy, hyperfractionated-accelerated schedules have been used with promising complete pathologic response rates, which might improve prognosis. Recently, studies applying high radiotherapy doses in the neoadjuvant setting demonstrated the safety of resection after radiotherapy, with high nodal clearance rates and encouraging long-term survival results. In conclusion, neoadjuvant treatment of locally advanced NSCLC is one of the most challenging issues in the treatment of this disease, but it can be offered to appropriately selected patients, and should be done by a multidisciplinary team. Individual risk profiles, definite role of radiotherapy with optimal timing, and dose need to be clarified by carefully designed clinical trials.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2014.14573",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "1-7",
+    "views": 6984,
+    "downloads": 10366,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "257",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=257",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=257",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=257",
+    "localPdfUrl": "js/data/pdfs/257.pdf",
+    "pdfUrl": "js/data/pdfs/257.pdf"
+  },
+  {
+    "id": 258,
+    "type": "Invited Review",
+    "title": "Treatment of Early Stage Non-Small Cell Lung Cancer: Surgery or Stereotactic Ablative Radiotherapy?",
+    "authors": [
+      {
+        "name": "Esengül Koçak Uzel",
+        "affiliation": "Department of Radiation Oncology, Neolife Medical Center, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ufuk Abacıoğlu",
+        "affiliation": "Department of Radiation Oncology, Neolife Medical Center, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract The management of early-stage Non-small Cell Lung Cancer (NSCLC) has improved recently due to advances in surgical and radiation modalities. Minimally-invasive procedures like Video-assisted thoracoscopic surgery (VATS) lobectomy decreases the morbidity of surgery, while the numerous methods of staging the mediastinum such as endobronchial and endoscopic ultrasound-guided biopsies are helping to achieve the objectives much more effectively. Stereotactic Ablative Radiotherapy (SABR) has become the frontrunner as the standard of care in medically inoperable early stage NSCLC patients, and has also been branded as tolerable and highly effective. Ongoing researches using SABR are continuously validating the optimal dosing and fractionation schemes, while at the same time instituting its role for both inoperable and operable patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tThe management of early-stage Non-small Cell Lung Cancer (NSCLC) has improved recently due to advances in surgical and radiation modalities. Minimally-invasive procedures like Video-assisted thoracoscopic surgery (VATS) lobectomy decreases the morbidity of surgery, while the numerous methods of staging the mediastinum such as endobronchial and endoscopic ultrasound-guided biopsies are helping to achieve the objectives much more effectively. Stereotactic Ablative Radiotherapy (SABR) has become the frontrunner as the standard of care in medically inoperable early stage NSCLC patients, and has also been branded as tolerable and highly effective. Ongoing researches using SABR are continuously validating the optimal dosing and fractionation schemes, while at the same time instituting its role for both inoperable and operable patients.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract The management of early-stage Non-small Cell Lung Cancer (NSCLC) has improved recently due to advances in surgical and radiation modalities. Minimally-invasive procedures like Video-assisted thoracoscopic surgery (VATS) lobectomy decreases the morbidity of surgery, while the numerous methods of staging the mediastinum such as endobronchial and endoscopic ultrasound-guided biopsies are helping to achieve the objectives much more effectively. Stereotactic Ablative Radiotherapy (SABR) has become the frontrunner as the standard of care in medically inoperable early stage NSCLC patients, and has also been branded as tolerable and highly effective. Ongoing researches using SABR are continuously validating the optimal dosing and fractionation schemes, while at the same time instituting its role for both inoperable and operable patients.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15553",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "8-16",
+    "views": 6753,
+    "downloads": 9869,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "258",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=258",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=258",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=258",
+    "localPdfUrl": "js/data/pdfs/258.pdf",
+    "pdfUrl": "js/data/pdfs/258.pdf"
+  },
+  {
+    "id": 236,
+    "type": "Original Article",
+    "title": "For What Reasons Do Patients File a Complaint? A Retrospective Study on Patient Rights Units’ Registries",
+    "authors": [
+      {
+        "name": "Gülsüm Önal",
+        "affiliation": "Clinical Research Ethics Committee, Şişli Etfal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "M. Murat Civaner",
+        "affiliation": "Department of Medical Ethics, Uludağ University Faculty of Medicine, Bursa, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: In 2004, Patient Rights Units were established in all public hospitals in Turkey to allow patients to voice their complaints about services. Aims: To determine what violations are reflected into the complaint mechanism, the pattern over time, and patients’ expectations of the services. Study Design: Descriptive study. Methods: A retrospective study performed using the complaint database of the Istanbul Health Directorate, from 2005 to 2011. Results: The results indicate that people who are older than 40 years, women, and those with less than high school education are the most common patients in these units. A total of 218,186 complaints were filed. Each year, the number of complaints increased compared to the previous year, and nearly half of the applications were made in 2010 and 2011 (48.9%). The three most frequent complaints were “not benefiting from services in general” (35.4%), “not being treated in a respectable manner and in comfortable conditions” (17.8%), and “not being properly informed” (13.5%). Two-thirds of the overall applications were found in favour of the patients (63.3%), and but this rate has decreased over the years. Conclusion: Patients would like to be treated in a manner that respects their human dignity. Educating healthcare workers on communication skills might be a useful initiative. More importantly, health policies and the organisation of services should prioritise patient rights. It is only then would be possible to exercise patient rights in reality.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: In 2004, Patient Rights Units were established in all public hospitals in Turkey to allow patients to voice their complaints about services.</p>\r\n<p>\r\n\t<strong>Aims</strong>: To determine what violations are reflected into the complaint mechanism, the pattern over time, and patients&rsquo; expectations of the services.</p>\r\n<p>\r\n\t<strong>Study</strong> <strong>Design</strong>: Descriptive study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: A retrospective study performed using the complaint database of the Istanbul Health Directorate, from 2005 to 2011.</p>\r\n<p>\r\n\t<strong>Results</strong>: The results indicate that people who are older than 40 years, women, and those with less than high school education are the most common patients in these units. A total of 218,186 complaints were filed. Each year, the number of complaints increased compared to the previous year, and nearly half of the applications were made in 2010 and 2011 (48.9%). The three most frequent complaints were &ldquo;not benefiting from services in general&rdquo; (35.4%), &ldquo;not being treated in a respectable manner and in comfortable conditions&rdquo; (17.8%), and &ldquo;not being properly informed&rdquo; (13.5%). Two-thirds of the overall applications were found in favour of the patients (63.3%), and but this rate has decreased over the years.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Patients would like to be treated in a manner that respects their human dignity. Educating healthcare workers on communication skills might be a useful initiative. More importantly, health policies and the organisation of services should prioritise patient rights. It is only then would be possible to exercise patient rights in reality.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: In 2004, Patient Rights Units were established in all public hospitals in Turkey to allow patients to voice their complaints about services. Aims: To determine what violations are reflected into the complaint mechanism, the pattern over time, and patients’ expectations of the services. Study Design: Descriptive study. Methods: A retrospective study performed using the complaint database of the Istanbul Health Directorate, from 2005 to 2011. Results: The results indicate that people who are older than 40 years, women, and those with less than high school education are the most common patients in these units. A total of 218,186 complaints were filed. Each year, the number of complaints increased compared to the previous year, and nearly half of the applications were made in 2010 and 2011 (48.9%). The three most frequent complaints were “not benefiting from services in general” (35.4%), “not being treated in a respectable manner and in comfortable conditions” (17.8%), and “not being properly informed” (13.5%). Two-thirds of the overall applications were found in favour of the patients (63.3%), and but this rate has decreased over the years. Conclusion: Patients would like to be treated in a manner that respects their human dignity. Educating healthcare workers on communication skills might be a useful initiative. More importantly, health policies and the organisation of services should prioritise patient rights. It is only then would be possible to exercise patient rights in reality.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15433",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "17-22",
+    "views": 7385,
+    "downloads": 4416,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "236",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=236",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=236",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=236",
+    "localPdfUrl": "js/data/pdfs/236.pdf",
+    "pdfUrl": "js/data/pdfs/236.pdf"
+  },
+  {
+    "id": 237,
+    "type": "Original Article",
+    "title": "Evaluation on Shear Bond Strength of Different Glass Ionomer and Hydroxy Apatite Cements Used in Ossiculoplasty",
+    "authors": [
+      {
+        "name": "M. Tayyar Kalcıoğlu",
+        "affiliation": "Department of Otorhinolaryngology, İstanbul Medeniyet University Faculty of Medicine, Göztepe Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İsmail Hakkı Uzun",
+        "affiliation": "Department of Prosthodontics, İnönü University Faculty of Dentistry, Malatya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Meral Arslan Malkoç",
+        "affiliation": "Department of Prosthodontics, İnönü University Faculty of Dentistry, Malatya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Muhammet Yalçın",
+        "affiliation": "Department of Restorative Dentistry, İnönü University Faculty of Dentistry, Malatya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Mehmet Hanege",
+        "affiliation": "Department of Otorhinolaryngology, İstanbul Medeniyet University, Goztepe Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşe Tuba Öğreten [[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Glass ionomer cements (GIC) have been widely used in dentistry for many years. In recent years, GIC have also been used for ossiculoplasty. The bond strength of GIC used in ossiculoplasty and the way they may change over the years in the cementation area are being questioned. The bonding strength of the substance may be of importance for long-term outcomes. Aims: The aim of this study was to investigate the bond strength of different GIC on ossicles. Study Design: In vitro study. Methods: Twenty ossicles were obtained from patients who had undergone ear surgery. All specimens were randomly divided into four subgroups. All specimens were inserted into a specially designed apparatus for shear bond strength (SBS) testing. The tested materials [Aqua Meron (AM), Aqua Cem (AC), Ketac Cem (KC), and Otomimix CPB (OH)] were prepared and applied according to the manufacturer’s instructions. The SBS was tested using a universal testing machine at a crosshead speed of 0.5 mm/min. Results: The mean SBSs were found to be 13.28 MPa, 23.43 MPa, 8.51MPa, and 1.78 MPa for AM, AC, KC, and OH, respectively. AC had the highest SBS, which was statistically significantly different from that of KC and OH (p<0.05). Both AM and KC had higher SBS than OH (p<0.05). Conclusion: The results obtained in this study by investigating the bone-bonding strength of cements widely used in ossiculoplasty demonstrate that some of these substances have a greater ability to bond to ossicles compared to others. Further clinical investigations are needed to test different parameters.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Glass ionomer cements (GIC) have been widely used in dentistry for many years. In recent years, GIC have also been used for ossiculoplasty. The bond strength of GIC used in ossiculoplasty and the way they may change over the years in the cementation area are being questioned. The bonding strength of the substance may be of importance for long-term outcomes.</p>\r\n<p>\r\n\t<strong>Aims</strong>: The aim of this study was to investigate the bond strength of different GIC on ossicles.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: In vitro study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Twenty ossicles were obtained from patients who had undergone ear surgery. All specimens were randomly divided into four subgroups. All specimens were inserted into a specially designed apparatus for shear bond strength (SBS) testing. The tested materials [Aqua Meron (AM), Aqua Cem (AC), Ketac Cem (KC), and Otomimix CPB (OH)] were prepared and applied according to the manufacturer&rsquo;s instructions. The SBS was tested using a universal testing machine at a crosshead speed of 0.5 mm/min.</p>\r\n<p>\r\n\t<strong>Results</strong>: The mean SBSs were found to be 13.28 MPa, 23.43 MPa, 8.51MPa, and 1.78 MPa for AM, AC, KC, and OH, respectively. AC had the highest SBS, which was statistically significantly different from that of KC and OH (p&lt;0.05). Both AM and KC had higher SBS than OH (p&lt;0.05).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The results obtained in this study by investigating the bone-bonding strength of cements widely used in ossiculoplasty demonstrate that some of these substances have a greater ability to bond to ossicles compared to others. Further clinical investigations are needed to test different parameters.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Glass ionomer cements (GIC) have been widely used in dentistry for many years. In recent years, GIC have also been used for ossiculoplasty. The bond strength of GIC used in ossiculoplasty and the way they may change over the years in the cementation area are being questioned. The bonding strength of the substance may be of importance for long-term outcomes. Aims: The aim of this study was to investigate the bond strength of different GIC on ossicles. Study Design: In vitro study. Methods: Twenty ossicles were obtained from patients who had undergone ear surgery. All specimens were randomly divided into four subgroups. All specimens were inserted into a specially designed apparatus for shear bond strength (SBS) testing. The tested materials [Aqua Meron (AM), Aqua Cem (AC), Ketac Cem (KC), and Otomimix CPB (OH)] were prepared and applied according to the manufacturer’s instructions. The SBS was tested using a universal testing machine at a crosshead speed of 0.5 mm/min. Results: The mean SBSs were found to be 13.28 MPa, 23.43 MPa, 8.51MPa, and 1.78 MPa for AM, AC, KC, and OH, respectively. AC had the highest SBS, which was statistically significantly different from that of KC and OH (p<0.05). Both AM and KC had higher SBS than OH (p<0.05). Conclusion: The results obtained in this study by investigating the bone-bonding strength of cements widely used in ossiculoplasty demonstrate that some of these substances have a greater ability to bond to ossicles compared to others. Further clinical investigations are needed to test different parameters.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15829",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "23-29",
+    "views": 6846,
+    "downloads": 10081,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "237",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=237",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=237",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=237",
+    "localPdfUrl": "js/data/pdfs/237.pdf",
+    "pdfUrl": "js/data/pdfs/237.pdf"
+  },
+  {
+    "id": 238,
+    "type": "Original Article",
+    "title": "Imp3 Expression in Benign and Malignant Thyroid Tumors and Hyperplastic Nodules",
+    "authors": [
+      {
+        "name": "Sezer Kulaçoğlu",
+        "affiliation": "Department of Pathology, Ankara Numune Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gamze Erkılınç",
+        "affiliation": "Department of Pathology, Ankara Numune Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: IMP3, a member of insulin-like growth factor II m RNA binding protein family, seems to be promising in the diagnosis of carcinomas of many organs as well as malignant melanomas and some sarcomas. It is postulated that it might be a marker of malignancy. The results of the few prior studies indicate that IMP3 has the potential to be useful in distinguishing benign and malignant tumors of thyroid. Aims: We aimed to evaluate the immunohistochemical expression of IMP3 in non-neoplastic nodules and benign and malignant tumors of the thyroid. Study Design: Diagnostic accuracy study. Methods: Overall, 92 thyroid lesions, including 22 nodular hyperplasia (NH), 14 follicular adenoma (FA), 9 follicular carcinoma (FC), 37 papillary carcinoma (PC) (15 follicular variant), 3 well differentiated carcinoma-not otherwise specified (WDC-NOS), 4 poorly differentiated carcinoma (PDC) and anaplastic carcinoma (AC) were included. Immunohistochemically, cytoplasmic expression of IMP3 was evaluated in terms of extent and intensity of the staining semi-quantitatively and an immunohistochemical score (IHS) was obtained for each case. A score higher than 2 was considered positive staining. Results: In contrast with previous studies, we observed positive staining in benign lesions, especially in benign tumors. For identifying malignant tumors, the sensitivity of IMP3 was 82.1%, specificity was 33.3%, positive predictive value (PPV) was 65.7% and negative predictive value (NPV) was 54.5%. In distinguishing neoplastic and hyperplastic lesions, the sensitivity was 50%, specificity was 15.7%, PPV was 15.7% and NPV was 50%. The IMP3 expression was similar for FA and well differentiated carcinomas (p=0.434), but there was a significant difference between hyperplastic nodules and FA (p=0.011). Conclusion: Our data suggest that IMP3 is effective in discriminating hyperplastic and neoplastic lesions but not useful in differentiating benign tumors from malignant tumors.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: IMP3, a member of insulin-like growth factor II m RNA binding protein family, seems to be promising in the diagnosis of carcinomas of many organs as well as malignant melanomas and some sarcomas. It is postulated that it might be a marker of malignancy. The results of the few prior studies indicate that IMP3 has the potential to be useful in distinguishing benign and malignant tumors of thyroid.</p>\r\n<p>\r\n\t<strong>Aims</strong>: We aimed to evaluate the immunohistochemical expression of IMP3 in non-neoplastic nodules and benign and malignant tumors of the thyroid.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Diagnostic accuracy study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Overall, 92 thyroid lesions, including 22 nodular hyperplasia (NH), 14 follicular adenoma (FA), 9 follicular carcinoma (FC), 37 papillary carcinoma (PC) (15 follicular variant), 3 well differentiated carcinoma-not otherwise specified (WDC-NOS), 4 poorly differentiated carcinoma (PDC) and anaplastic carcinoma (AC) were included. Immunohistochemically, cytoplasmic expression of IMP3 was evaluated in terms of extent and intensity of the staining semi-quantitatively and an immunohistochemical score (IHS) was obtained for each case. A score higher than 2 was considered positive staining.</p>\r\n<p>\r\n\t<strong>Results</strong>: In contrast with previous studies, we observed positive staining in benign lesions, especially in benign tumors. For identifying malignant tumors, the sensitivity of IMP3 was 82.1%, specificity was 33.3%, positive predictive value (PPV) was 65.7% and negative predictive value (NPV) was 54.5%. In distinguishing neoplastic and hyperplastic lesions, the sensitivity was 50%, specificity was 15.7%, PPV was 15.7% and NPV was 50%. The IMP3 expression was similar for FA and well differentiated carcinomas (p=0.434), but there was a significant difference between hyperplastic nodules and FA (p=0.011).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Our data suggest that IMP3 is effective in discriminating hyperplastic and neoplastic lesions but not useful in differentiating benign tumors from malignant tumors.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: IMP3, a member of insulin-like growth factor II m RNA binding protein family, seems to be promising in the diagnosis of carcinomas of many organs as well as malignant melanomas and some sarcomas. It is postulated that it might be a marker of malignancy. The results of the few prior studies indicate that IMP3 has the potential to be useful in distinguishing benign and malignant tumors of thyroid. Aims: We aimed to evaluate the immunohistochemical expression of IMP3 in non-neoplastic nodules and benign and malignant tumors of the thyroid. Study Design: Diagnostic accuracy study. Methods: Overall, 92 thyroid lesions, including 22 nodular hyperplasia (NH), 14 follicular adenoma (FA), 9 follicular carcinoma (FC), 37 papillary carcinoma (PC) (15 follicular variant), 3 well differentiated carcinoma-not otherwise specified (WDC-NOS), 4 poorly differentiated carcinoma (PDC) and anaplastic carcinoma (AC) were included. Immunohistochemically, cytoplasmic expression of IMP3 was evaluated in terms of extent and intensity of the staining semi-quantitatively and an immunohistochemical score (IHS) was obtained for each case. A score higher than 2 was considered positive staining. Results: In contrast with previous studies, we observed positive staining in benign lesions, especially in benign tumors. For identifying malignant tumors, the sensitivity of IMP3 was 82.1%, specificity was 33.3%, positive predictive value (PPV) was 65.7% and negative predictive value (NPV) was 54.5%. In distinguishing neoplastic and hyperplastic lesions, the sensitivity was 50%, specificity was 15.7%, PPV was 15.7% and NPV was 50%. The IMP3 expression was similar for FA and well differentiated carcinomas (p=0.434), but there was a significant difference between hyperplastic nodules and FA (p=0.011). Conclusion: Our data suggest that IMP3 is effective in discriminating hyperplastic and neoplastic lesions but not useful in differentiating benign tumors from malignant tumors.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15547",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "30-37",
+    "views": 7321,
+    "downloads": 9983,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "238",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=238",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=238",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=238",
+    "localPdfUrl": "js/data/pdfs/238.pdf",
+    "pdfUrl": "js/data/pdfs/238.pdf"
+  },
+  {
+    "id": 239,
+    "type": "Original Article",
+    "title": "Outcomes after Transhiatal Esophagectomies in an Eastern-European Low-Volume Center",
+    "authors": [
+      {
+        "name": "Radu Neagoe",
+        "affiliation": "Second Department of General Surgery, Emergency Mureş County Hospital, University of Medicine and Pharmacy, Târgu Mureş, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Daniela Tatiana Sala",
+        "affiliation": "Second Department of General Surgery, Emergency Mureş County Hospital, University of Medicine and Pharmacy, Târgu Mureş, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Serban Bancu",
+        "affiliation": "Second Department of General Surgery, Emergency Mureş County Hospital, University of Medicine and Pharmacy, Târgu Mureş, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Septimu Voidazan",
+        "affiliation": "Department of Epidemiology, University of Medicine and Pharmacy, Târgu Mureş, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Mihaly Szocs",
+        "affiliation": "Department of ENT Surgery, Emergency Mureş County Hospital, University of Medicine and Pharmacy, Târgu Mureş, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Gheorghe Mulhfay",
+        "affiliation": "Department of ENT Surgery, Emergency Mureş County Hospital, University of Medicine and Pharmacy, Târgu Mureş, Romania",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The present study proposes to analyze the results obtained after transhiatal esophagectomies (THE), from the perspective of an Eastern European surgical center with low esophageal resection volume (LV). Aims: Our analysis, which to the authors’ knowledge is the first of its kind in Romania, has the purpose of comparing our results with those obtained in higher or similar volume centers, in order to derive conclusions regarding the quality of therapeutic management for patients diagnosed with esophageal cancer in Romania. Study Design: Retrospective observational study. Methods: In total, 70 patients were included, in whom THE was performed during the period 1997-2013 by six senior surgeons. The majority of our patients had esophageal cancers (n=66; 94.3%); we also performed 4 THE procedures for benign conditions (n=3; 4.27%) and esophageal perforation (n=1; 1.42%). Results: The majority of cancer-group patients had T3/N+ tumors. The nodal involvement in the T2, T3 and T4 categories was 9.9%, 21.6% and 35.1%, respectively. Complications were identified in 45 patients (68.2%), with the majority being represented by pulmonary complications (16 patients; 24.3%) and cervical leaks (15 cases; 22.7%). In-hospital mortality was 9.09%. We found a one-year overall survival rate of 58.7% (95%CI: 51.7-65.7%), 27.2% at 2 years (95%CI: 21.2-36.2%) and 10.5% at 3 years (95%CI: 6.5-14.5%). The median survival rate was estimated to be 16 months. Conclusion: Morbidity and in-hospital mortality after THE was performed in low-volume centers, despite being significantly higher than reported in HV centers, could be kept at reasonable rates. In our opinion, the measures which have the potential to raise the standard of care for patients diagnosed with esophageal cancer in Romania are represented by the standardization of therapeutic and diagnostic protocols for esophageal cancer and the centralization of these major oncologic interventions in surgical excellence centers.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: The present study proposes to analyze the results obtained after transhiatal esophagectomies (THE), from the perspective of an Eastern European surgical center with low esophageal resection volume (LV).</p>\r\n<p>\r\n\t<strong>Aims</strong>: Our analysis, which to the authors&rsquo; knowledge is the first of its kind in Romania, has the purpose of comparing our results with those obtained in higher or similar volume centers, in order to derive conclusions regarding the quality of therapeutic management for patients diagnosed with esophageal cancer in Romania.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Retrospective observational study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: In total, 70 patients were included, in whom THE was performed during the period 1997-2013 by six senior surgeons. The majority of our patients had esophageal cancers (n=66; 94.3%); we also performed 4 THE procedures for benign conditions (n=3; 4.27%) and esophageal perforation (n=1; 1.42%).</p>\r\n<p>\r\n\t<strong>Results</strong>: The majority of cancer-group patients had T3/N+ tumors. The nodal involvement in the T2, T3 and T4 categories was 9.9%, 21.6% and 35.1%, respectively. Complications were identified in 45 patients (68.2%), with the majority being represented by pulmonary complications (16 patients; 24.3%) and cervical leaks (15 cases; 22.7%). In-hospital mortality was 9.09%. We found a one-year overall survival rate of 58.7% (95%CI: 51.7-65.7%), 27.2% at 2 years (95%CI: 21.2-36.2%) and 10.5% at 3 years (95%CI: 6.5-14.5%). The median survival rate was estimated to be 16 months.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Morbidity and in-hospital mortality after THE was performed in low-volume centers, despite being significantly higher than reported in HV centers, could be kept at reasonable rates. In our opinion, the measures which have the potential to raise the standard of care for patients diagnosed with esophageal cancer in Romania are represented by the standardization of therapeutic and diagnostic protocols for esophageal cancer and the centralization of these major oncologic interventions in surgical excellence centers.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The present study proposes to analyze the results obtained after transhiatal esophagectomies (THE), from the perspective of an Eastern European surgical center with low esophageal resection volume (LV). Aims: Our analysis, which to the authors’ knowledge is the first of its kind in Romania, has the purpose of comparing our results with those obtained in higher or similar volume centers, in order to derive conclusions regarding the quality of therapeutic management for patients diagnosed with esophageal cancer in Romania. Study Design: Retrospective observational study. Methods: In total, 70 patients were included, in whom THE was performed during the period 1997-2013 by six senior surgeons. The majority of our patients had esophageal cancers (n=66; 94.3%); we also performed 4 THE procedures for benign conditions (n=3; 4.27%) and esophageal perforation (n=1; 1.42%). Results: The majority of cancer-group patients had T3/N+ tumors. The nodal involvement in the T2, T3 and T4 categories was 9.9%, 21.6% and 35.1%, respectively. Complications were identified in 45 patients (68.2%), with the majority being represented by pulmonary complications (16 patients; 24.3%) and cervical leaks (15 cases; 22.7%). In-hospital mortality was 9.09%. We found a one-year overall survival rate of 58.7% (95%CI: 51.7-65.7%), 27.2% at 2 years (95%CI: 21.2-36.2%) and 10.5% at 3 years (95%CI: 6.5-14.5%). The median survival rate was estimated to be 16 months. Conclusion: Morbidity and in-hospital mortality after THE was performed in low-volume centers, despite being significantly higher than reported in HV centers, could be kept at reasonable rates. In our opinion, the measures which have the potential to raise the standard of care for patients diagnosed with esophageal cancer in Romania are represented by the standardization of therapeutic and diagnostic protocols for esophageal cancer and the centralization of these major oncologic interventions in surgical excellence centers.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15514",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "38-45",
+    "views": 6923,
+    "downloads": 9721,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "239",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=239",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=239",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=239",
+    "localPdfUrl": "js/data/pdfs/239.pdf",
+    "pdfUrl": "js/data/pdfs/239.pdf"
+  },
+  {
+    "id": 240,
+    "type": "Original Article",
+    "title": "Immunoserologic Pepsin Detection in The Saliva as a Non-Invasive Rapid Diagnostic Test for Laryngopharyngeal Reflux",
+    "authors": [
+      {
+        "name": "Emre Ocak",
+        "affiliation": "Department of Otolaryngology-Head and Neck Surgery, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gözde Kubat",
+        "affiliation": "Department of Otolaryngology-Head and Neck Surgery, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İrfan Yorulmaz[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The most common tool for the diagnosis of laryngopharyngeal reflux (LPR) is still 24-hours esophageal pH monitoring; there is lack of non-invasive, less expensive and accurate diagnostic tools for this frequent disease. Aims: To evaluate the accuracy of immunoserologic pepsin detection in the saliva for the diagnosis of LPR. Study Design: Cross-sectional study. Methods: A two channeled 24-hour esophageal pH monitoring catheter was placed in patients with a suspicion of LPR. During the 24-hour period, each patient gave one sample of sputum for the immunoserologic pepsin detection test. Pathologic gastroesophageal reflux (GER) findings, LPR findings, pH score in the proximal and distal probes when the sputum sample was given were recorded. The sensitivity, specificity, positive and negative predictive values of the pepsin detection test were analyzed and compared to pH monitoring scores. Results: The study group consisted of 20 patients who met the criteria. A positive pepsin detection test was elicited from 6 patients. The sensitivity and specificity of the pepsin detection test was 33% and 100%, respectively. A positive predictive value of 100% was recorded. When the pH results of the pepsin positive patients (PPP) and the rest of the study group in the proximal probe at the sample time were compared, the PPP had an apparent acidic pH value compared to the pepsin negative patients (pH: 3.26 for the PPP, pH: 6.81 for the pepsin negative patients). Conclusion: Pepsin detection in the saliva is a recent method and becoming increasingly popular. Because of the benefits and ease of application, a positive salivary pepsin test in a patient suspected of having LPR can be a cost effective, accurate and alternative diagnostic method. Increasing the daily number of sputum samples may increase the sensitivity of the test. Total Times Cited: 10 (Updated on Sep. 2018- WoS)",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: The most common tool for the diagnosis of laryngopharyngeal reflux (LPR) is still 24-hours esophageal pH monitoring; there is lack of non-invasive, less expensive and accurate diagnostic tools for this frequent disease.</p>\r\n<p>\r\n\t<strong>Aims</strong>: To evaluate the accuracy of immunoserologic pepsin detection in the saliva for the diagnosis of LPR.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Cross-sectional study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: A two channeled 24-hour esophageal pH monitoring catheter was placed in patients with a suspicion of LPR. During the 24-hour period, each patient gave one sample of sputum for the immunoserologic pepsin detection test. Pathologic gastroesophageal reflux (GER) findings, LPR findings, pH score in the proximal and distal probes when the sputum sample was given were recorded. The sensitivity, specificity, positive and negative predictive values of the pepsin detection test were analyzed and compared to pH monitoring scores.</p>\r\n<p>\r\n\t<strong>Results</strong>: The study group consisted of 20 patients who met the criteria. A positive pepsin detection test was elicited from 6 patients. The sensitivity and specificity of the pepsin detection test was 33% and 100%, respectively. A positive predictive value of 100% was recorded. When the pH results of the pepsin positive patients (PPP) and the rest of the study group in the proximal probe at the sample time were compared, the PPP had an apparent acidic pH value compared to the pepsin negative patients (pH: 3.26 for the PPP, pH: 6.81 for the pepsin negative patients).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Pepsin detection in the saliva is a recent method and becoming increasingly popular. Because of the benefits and ease of application, a positive salivary pepsin test in a patient suspected of having LPR can be a cost effective, accurate and alternative diagnostic method. Increasing the daily number of sputum samples may increase the sensitivity of the test.</p>\r\n\r\n<p><strong>Total Times Cited: 10</strong> (Updated on Sep. 2018- WoS) </p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The most common tool for the diagnosis of laryngopharyngeal reflux (LPR) is still 24-hours esophageal pH monitoring; there is lack of non-invasive, less expensive and accurate diagnostic tools for this frequent disease. Aims: To evaluate the accuracy of immunoserologic pepsin detection in the saliva for the diagnosis of LPR. Study Design: Cross-sectional study. Methods: A two channeled 24-hour esophageal pH monitoring catheter was placed in patients with a suspicion of LPR. During the 24-hour period, each patient gave one sample of sputum for the immunoserologic pepsin detection test. Pathologic gastroesophageal reflux (GER) findings, LPR findings, pH score in the proximal and distal probes when the sputum sample was given were recorded. The sensitivity, specificity, positive and negative predictive values of the pepsin detection test were analyzed and compared to pH monitoring scores. Results: The study group consisted of 20 patients who met the criteria. A positive pepsin detection test was elicited from 6 patients. The sensitivity and specificity of the pepsin detection test was 33% and 100%, respectively. A positive predictive value of 100% was recorded. When the pH results of the pepsin positive patients (PPP) and the rest of the study group in the proximal probe at the sample time were compared, the PPP had an apparent acidic pH value compared to the pepsin negative patients (pH: 3.26 for the PPP, pH: 6.81 for the pepsin negative patients). Conclusion: Pepsin detection in the saliva is a recent method and becoming increasingly popular. Because of the benefits and ease of application, a positive salivary pepsin test in a patient suspected of having LPR can be a cost effective, accurate and alternative diagnostic method. Increasing the daily number of sputum samples may increase the sensitivity of the test. Total Times Cited: 10 (Updated on Sep. 2018- WoS)",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15824",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "46-50",
+    "views": 6825,
+    "downloads": 10721,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "240",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=240",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=240",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=240",
+    "localPdfUrl": "js/data/pdfs/240.pdf",
+    "pdfUrl": "js/data/pdfs/240.pdf"
+  },
+  {
+    "id": 241,
+    "type": "Original Article",
+    "title": "Spot Protein/Creatinine Ratio in Preeclampsia as an Alternative for 24-Hour Urine Protein",
+    "authors": [
+      {
+        "name": "Oya Demirci",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pınar Kumru",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Arzu Arınkan",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cem Ardıç",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Resul Arısoy",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Elif Tozkır",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Tandoğan",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Habibe Ayvacı",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet S. Tuğrul",
+        "affiliation": "Department of Perinatology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Proteinuria is a major component of preeclampsia. Urine protein measurement after 24-hour urine collection is the traditional standard method for the detection of proteinuria. It is time-consuming. As an alternative, random spot sampling for a urine protein to creatinine (P/C) ratio has been investigated. Aims: The aim of the study was to determine the diagnostic accuracy of the protein to creatinine ratio (P/C) compared with 24-hour urine collection for the detection of remarkable proteinuria and to evaluate the P/C ratio for different proteinuria ranges in patients with preeclampsia. Study Design: Case-control study. Methods: Two hundred and eleven pregnant women who met the criteria of preeclampsia comprised the study group and fifty three pregnant women were taken as the control group. Spot urine specimens for measuring P/C ratio were obtained taken immediately before 24-hour urine collection. The correlation between the P/C ratio in the spot urine samples and urinary protein excretion in the 24-hour collections was examined using the Spearman correlation test. Results: It was found a good positive correlation between the P/C ratio and 24-hour protein excretion, with a correlation coefficient (r) of 0.758. The best cut-off which gave the maximum area under the curve was 0.45 for 300 mg, 0.9 for 1000 mg, 1.16 for 2000 mg, 1.49 for 3000 mg, 2.28 for 4000 mg and 2.63 for 5000 mg per 24h. A P/C ratio above 0.9 strongly predicts significant proteinuria for more than 1 gram (AUC 0.97, 95% CI: 0.94-0.99 and sensitivity, specificity, positive and negative predictive value of 91%, 95.4%, 95.2%, and 91.2%, respectively). Conclusion: The P/C ratio can be used as a screening test as a good predictor for remarkable proteinuria. The P/C ratio seems to be highly predictive for diagnosis to detect proteinuria over one gram and it could be used as a rapid alternative test in preeclamptic patients not to delay implementation treatment.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Proteinuria is a major component of preeclampsia. Urine protein measurement after 24-hour urine collection is the traditional standard method for the detection of proteinuria. It is time-consuming. As an alternative, random spot sampling for a urine protein to creatinine (P/C) ratio has been investigated.</p>\r\n<p>\r\n\t<strong>Aims</strong>: The aim of the study was to determine the diagnostic accuracy of the protein to creatinine ratio (P/C) compared with 24-hour urine collection for the detection of remarkable proteinuria and to evaluate the P/C ratio for different proteinuria ranges in patients with preeclampsia.</p>\r\n<p>\r\n\t<strong>Study</strong> <strong>Design</strong>: Case-control study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Two hundred and eleven pregnant women who met the criteria of preeclampsia comprised the study group and fifty three pregnant women were taken as the control group. Spot urine specimens for measuring P/C ratio were obtained taken immediately before 24-hour urine collection. The correlation between the P/C ratio in the spot urine samples and urinary protein excretion in the 24-hour collections was examined &nbsp;using the Spearman correlation test.</p>\r\n<p>\r\n\t<strong>Results</strong>: It was found a good positive correlation between the P/C ratio and 24-hour protein excretion, with a correlation coefficient (r) of 0.758. The best cut-off which gave the maximum area under the curve was 0.45 for 300 mg, 0.9 for 1000 mg, 1.16 for 2000 mg, 1.49 for 3000 mg, 2.28 for 4000 mg and 2.63 for 5000 mg per 24h. A P/C ratio above 0.9 strongly predicts significant proteinuria for more than 1 gram (AUC 0.97, 95% CI: 0.94-0.99 and sensitivity, specificity, positive and negative predictive value of 91%, 95.4%, 95.2%, and 91.2%, respectively).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The P/C ratio can be used as a screening test as a good predictor for remarkable proteinuria. The P/C ratio seems to be highly predictive for diagnosis to detect proteinuria over one gram and it could be used as a rapid alternative test in preeclamptic patients not to delay implementation treatment.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Proteinuria is a major component of preeclampsia. Urine protein measurement after 24-hour urine collection is the traditional standard method for the detection of proteinuria. It is time-consuming. As an alternative, random spot sampling for a urine protein to creatinine (P/C) ratio has been investigated. Aims: The aim of the study was to determine the diagnostic accuracy of the protein to creatinine ratio (P/C) compared with 24-hour urine collection for the detection of remarkable proteinuria and to evaluate the P/C ratio for different proteinuria ranges in patients with preeclampsia. Study Design: Case-control study. Methods: Two hundred and eleven pregnant women who met the criteria of preeclampsia comprised the study group and fifty three pregnant women were taken as the control group. Spot urine specimens for measuring P/C ratio were obtained taken immediately before 24-hour urine collection. The correlation between the P/C ratio in the spot urine samples and urinary protein excretion in the 24-hour collections was examined using the Spearman correlation test. Results: It was found a good positive correlation between the P/C ratio and 24-hour protein excretion, with a correlation coefficient (r) of 0.758. The best cut-off which gave the maximum area under the curve was 0.45 for 300 mg, 0.9 for 1000 mg, 1.16 for 2000 mg, 1.49 for 3000 mg, 2.28 for 4000 mg and 2.63 for 5000 mg per 24h. A P/C ratio above 0.9 strongly predicts significant proteinuria for more than 1 gram (AUC 0.97, 95% CI: 0.94-0.99 and sensitivity, specificity, positive and negative predictive value of 91%, 95.4%, 95.2%, and 91.2%, respectively). Conclusion: The P/C ratio can be used as a screening test as a good predictor for remarkable proteinuria. The P/C ratio seems to be highly predictive for diagnosis to detect proteinuria over one gram and it could be used as a rapid alternative test in preeclamptic patients not to delay implementation treatment.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15447",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "51-55",
+    "views": 7645,
+    "downloads": 10278,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "241",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=241",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=241",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=241",
+    "localPdfUrl": "js/data/pdfs/241.pdf",
+    "pdfUrl": "js/data/pdfs/241.pdf"
+  },
+  {
+    "id": 242,
+    "type": "Original Article",
+    "title": "Effect of Obesity on Left Ventricular Longitudinal Myocardial Strain by Speckle Tracking Echocardiography in Children and Adolescents",
+    "authors": [
+      {
+        "name": "Ayşe Esin Kibar",
+        "affiliation": "Department of Pediatric Cardiology, Mersin Women's and Children's Hospital, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Feyza Ayşenur Pac",
+        "affiliation": "Department of Pediatric Cardiology, Türkiye Yüksek İhtisas Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Ece",
+        "affiliation": "Department of Pediatric Cardiology, Yüzüncü Yıl University Faculty of Medicine, Van, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Burhan Oflaz",
+        "affiliation": "Department of Pediatric Cardiology, Cumhuriyet University Faculty of Medicine, Sivas, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şevket Ballı",
+        "affiliation": "Department of Pediatric Cardiology, Balıkesir Hospital, Balıkesir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Veysel Nejat Bas",
+        "affiliation": "Department of Pediatric Endocrinology, Dr Sami Ulus Obstetrics and Gynecology, Children's Health and Disease Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zehra Aycan [[6]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Impaired subclinical ventricular function may contribute to the risk of cardiovascular disease in obesity. Aims: The aim of this study was to determine the influence of obesity on left ventricular (LV) longitudinal myocardial function in normotensive obese children using two-dimensional (2D) speckle tracking echocardiography (STE). Study Design: Case-control study. Methods: Sixty normotensive obese children aged 10-16 years (mean age, 13.9±2.3 years) were compared with 50 normal-weight controls. Obese participants had a body mass index (BMI)≥95th percentile. Regional strain/strain rate (SR) values were compared with left ventricular (LV) parameters. The correlation was studied by linear regression analysis. Results: Obese subjects exhibited a significantly higher LV end-diastolic diameter, left atrium/aortic diameter ratio, and LV mass/index when compared to controls (p<0.001). Left ventricular ejection fraction and regional systolic myocardial velocities were similar in the obese and control groups. By 2D STE, regional strain of both the septal wall (average strain: -16.0±3.9% vs-21.9±2.4%, p<0.001) and lateral wall (average strain: -15.6±2.3% vs -22.9±3.5%, p<0.001); regional SR of both the septal wall (average SRsys: -0.7±0.22 s-1 vs -1.3±0.32 s-1, p<0.001) and lateral wall (average SRsys: -0.67±0.19 s-1 vs-1.33±0.31 s-1, p<0.001); regional SRE/A of both the septal wall (average SRE/A: 1.8±0.83 vs. 2.2±0.91, p: 0.004) and lateral wall (average SRE/A: 1.4±0.43 vs. 2.4±1.21, p<0.001); and global strain (-14.6±7.34% vs -20.9±3.24%, p<0.001) were lower in the obese group compared with the controls. These strain imaging parameters appear to be related to the severity of obesity and can contribute to increased BMI. Left ventricular mass was found to be correlated with a decrease in global LV strain. Conclusion: Our study showed that childhood obesity is associated with an alteration in the longitudinal LV function. Segmental analysis of the LV can provide subtle markers for the emergence of future obesity-related cardiac disease.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Impaired subclinical ventricular function may contribute to the risk of cardiovascular disease in obesity.</p>\r\n<p>\r\n\t<strong>Aims</strong>: The aim of this study was to determine the influence of obesity on left ventricular (LV) longitudinal myocardial function in normotensive obese children using two-dimensional (2D) speckle tracking echocardiography (STE).</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Case-control study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Sixty normotensive obese children aged 10-16 years (mean age, 13.9&plusmn;2.3 years) were compared with 50 normal-weight controls. Obese participants had a body mass index (BMI)&ge;95th percentile. Regional strain/strain rate (SR) values were compared with left ventricular (LV) parameters. The correlation was studied by linear regression analysis.</p>\r\n<p>\r\n\t<strong>Results</strong>: Obese subjects exhibited a significantly higher LV end-diastolic diameter, left atrium/aortic diameter ratio, and LV mass/index when compared to controls (p&lt;0.001). Left ventricular ejection fraction and regional systolic myocardial velocities were similar in the obese and control groups. By 2D STE, regional strain of both the septal wall (average strain: -16.0&plusmn;3.9% vs-21.9&plusmn;2.4%, p&lt;0.001) and lateral wall (average strain: -15.6&plusmn;2.3% vs -22.9&plusmn;3.5%, p&lt;0.001); regional SR of both the septal wall (average SRsys: -0.7&plusmn;0.22 s-1 vs -1.3&plusmn;0.32 s-1, p&lt;0.001) and lateral wall (average SRsys: -0.67&plusmn;0.19 s-1 vs-1.33&plusmn;0.31 s-1, p&lt;0.001); regional SRE/A of both the septal wall (average SRE/A: 1.8&plusmn;0.83 vs. 2.2&plusmn;0.91, p: 0.004) and lateral wall (average SRE/A: 1.4&plusmn;0.43 vs. 2.4&plusmn;1.21, p&lt;0.001); and global strain (-14.6&plusmn;7.34% vs -20.9&plusmn;3.24%, p&lt;0.001) were lower in the obese group compared with the controls. These strain imaging parameters appear to be related to the severity of obesity and can contribute to increased BMI. Left ventricular mass was found to be correlated with a decrease in global LV strain.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Our study showed that childhood obesity is associated with an alteration in the longitudinal LV function. Segmental analysis of the LV can provide subtle markers for the emergence of future obesity-related cardiac disease.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Impaired subclinical ventricular function may contribute to the risk of cardiovascular disease in obesity. Aims: The aim of this study was to determine the influence of obesity on left ventricular (LV) longitudinal myocardial function in normotensive obese children using two-dimensional (2D) speckle tracking echocardiography (STE). Study Design: Case-control study. Methods: Sixty normotensive obese children aged 10-16 years (mean age, 13.9±2.3 years) were compared with 50 normal-weight controls. Obese participants had a body mass index (BMI)≥95th percentile. Regional strain/strain rate (SR) values were compared with left ventricular (LV) parameters. The correlation was studied by linear regression analysis. Results: Obese subjects exhibited a significantly higher LV end-diastolic diameter, left atrium/aortic diameter ratio, and LV mass/index when compared to controls (p<0.001). Left ventricular ejection fraction and regional systolic myocardial velocities were similar in the obese and control groups. By 2D STE, regional strain of both the septal wall (average strain: -16.0±3.9% vs-21.9±2.4%, p<0.001) and lateral wall (average strain: -15.6±2.3% vs -22.9±3.5%, p<0.001); regional SR of both the septal wall (average SRsys: -0.7±0.22 s-1 vs -1.3±0.32 s-1, p<0.001) and lateral wall (average SRsys: -0.67±0.19 s-1 vs-1.33±0.31 s-1, p<0.001); regional SRE/A of both the septal wall (average SRE/A: 1.8±0.83 vs. 2.2±0.91, p: 0.004) and lateral wall (average SRE/A: 1.4±0.43 vs. 2.4±1.21, p<0.001); and global strain (-14.6±7.34% vs -20.9±3.24%, p<0.001) were lower in the obese group compared with the controls. These strain imaging parameters appear to be related to the severity of obesity and can contribute to increased BMI. Left ventricular mass was found to be correlated with a decrease in global LV strain. Conclusion: Our study showed that childhood obesity is associated with an alteration in the longitudinal LV function. Segmental analysis of the LV can provide subtle markers for the emergence of future obesity-related cardiac disease.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15136",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "56-63",
+    "views": 7045,
+    "downloads": 10189,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "242",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=242",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=242",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=242",
+    "localPdfUrl": "js/data/pdfs/242.pdf",
+    "pdfUrl": "js/data/pdfs/242.pdf"
+  },
+  {
+    "id": 243,
+    "type": "Original Article",
+    "title": "Evaluation of Pneumatization in the Articular Eminence and Roof of the Glenoid Fossa with Cone-Beam Computed Tomography",
+    "authors": [
+      {
+        "name": "Mehmet İlgüy",
+        "affiliation": "Department of Dentomaxillofacial Radiology, Yeditepe University Faculty of Dentistry, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Semanur Dölekoğlu",
+        "affiliation": "Department of Dentomaxillofacial Radiology, Yeditepe University Faculty of Dentistry, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erdoğan Fişekçioğlu",
+        "affiliation": "Department of Dentomaxillofacial Radiology, Yeditepe University Faculty of Dentistry, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nilüfer Ersan",
+        "affiliation": "Department of Dentomaxillofacial Radiology, Yeditepe University Faculty of Dentistry, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dilhan İlgüy [[1]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Detection of air cavities, so called pneumatizations, nearby to the temporomandibular joint (TMJ) area is important, as they represent sites of minimal resistance and facilitate the spread of various pathologies into the joint as inflammation, tumor or fractures and serve as a possible complicating factor in TMJ surgery. Aims: To determine the prevalence of pneumatization of the articular eminence (PAT) and roof of the glenoid fossa (PRGF) using cone-beam computed tomography (CBCT). Study Design: Cross-sectional study. Methods: Acquired images of 111 patients (222 TMJs) were evaluated. The presence of pneumatization was recorded at the articular eminence and roof of the glenoid fossa. Age and gender were recorded for all patients and type (unilocular or multilocular) and laterality were noted for the cases of pneumatization. Results: The mean age of the study group was 48.86±18.31 years. Among all the patients, 73 (65.8%) had PAT, while 13 (11.7%) had PRGF. Forty-two (37.8%) of the patients had PAT bilaterally; whereas 3 of them (2.7%) presented PRGF bilaterally. The percentage of PAT was higher for females (73.6%) than males (51.3%) (p<0.05). Conclusion: CBCT images are an accurate and reliable means of detection of the exact size and type of pneumatization and the relationship of pneumatization to the adjacent tissues. This is especially significant before a surgical intervention is planned in this region, in order to make a sound diagnosis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Detection of air cavities, so called pneumatizations, nearby to the temporomandibular joint (TMJ) area is important, as they represent sites of minimal resistance and facilitate the spread of various pathologies into the joint as inflammation, tumor or fractures and serve as a possible complicating factor in TMJ surgery.</p>\r\n<p>\r\n\t<strong>Aims</strong>: To determine the prevalence of pneumatization of the articular eminence (PAT) and roof of the glenoid fossa (PRGF) using cone-beam computed tomography (CBCT).</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Cross-sectional study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Acquired images of 111 patients (222 TMJs) were evaluated. The presence of pneumatization was recorded at the articular eminence and roof of the glenoid fossa. Age and gender were recorded for all patients and type (unilocular or multilocular) and laterality were noted for the cases of pneumatization.</p>\r\n<p>\r\n\t<strong>Results</strong>: The mean age of the study group was 48.86&plusmn;18.31 years. Among all the patients, 73 (65.8%) had PAT, while 13 (11.7%) had PRGF. Forty-two (37.8%) of the patients had PAT bilaterally; whereas 3 of them (2.7%) presented PRGF bilaterally. The percentage of PAT was higher for females (73.6%) than males (51.3%) (p&lt;0.05).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: CBCT images are an accurate and reliable means of detection of the exact size and type of pneumatization and the relationship of pneumatization to the adjacent tissues. This is especially significant before a surgical intervention is planned in this region, in order to make a sound diagnosis.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Detection of air cavities, so called pneumatizations, nearby to the temporomandibular joint (TMJ) area is important, as they represent sites of minimal resistance and facilitate the spread of various pathologies into the joint as inflammation, tumor or fractures and serve as a possible complicating factor in TMJ surgery. Aims: To determine the prevalence of pneumatization of the articular eminence (PAT) and roof of the glenoid fossa (PRGF) using cone-beam computed tomography (CBCT). Study Design: Cross-sectional study. Methods: Acquired images of 111 patients (222 TMJs) were evaluated. The presence of pneumatization was recorded at the articular eminence and roof of the glenoid fossa. Age and gender were recorded for all patients and type (unilocular or multilocular) and laterality were noted for the cases of pneumatization. Results: The mean age of the study group was 48.86±18.31 years. Among all the patients, 73 (65.8%) had PAT, while 13 (11.7%) had PRGF. Forty-two (37.8%) of the patients had PAT bilaterally; whereas 3 of them (2.7%) presented PRGF bilaterally. The percentage of PAT was higher for females (73.6%) than males (51.3%) (p<0.05). Conclusion: CBCT images are an accurate and reliable means of detection of the exact size and type of pneumatization and the relationship of pneumatization to the adjacent tissues. This is especially significant before a surgical intervention is planned in this region, in order to make a sound diagnosis.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15193",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "64-68",
+    "views": 6594,
+    "downloads": 9977,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "243",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=243",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=243",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=243",
+    "localPdfUrl": "js/data/pdfs/243.pdf",
+    "pdfUrl": "js/data/pdfs/243.pdf"
+  },
+  {
+    "id": 244,
+    "type": "Original Article",
+    "title": "Differences between Solution and Membrane Forms of Chitosan on the In Vitro Activity of Fibroblasts",
+    "authors": [
+      {
+        "name": "Bahar Uslu",
+        "affiliation": "Department of In Vitro Fertilization, Zeynep Kamil Gynecologic and Pediatric Teaching & Research Hospital, İstanbul, Turkey; Department of OB/GYN, Yale School of Medicine, New Haven CT, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Burcu Biltekin",
+        "affiliation": "Department of Histology&Embryology, İstanbul University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Seçnur Denir",
+        "affiliation": "Department of Histology&Embryology, İstanbul University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayhan Bilir",
+        "affiliation": "Department of Histology&Embryology, İstanbul University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Suna Özbaş Turan",
+        "affiliation": "Department of Biotechnology, Marmara University Faculty of Pharmacy, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Jülide Akbuğa",
+        "affiliation": "Department of Biotechnology, Marmara University Faculty of Pharmacy, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serap Arbak",
+        "affiliation": "Department of Histology&Embryology, Acıbadem University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Chitosan, a linear polysaccharide, has been recently used in biomedical applications. In vitro studies have demonstrated its effect on cellular growth and its stimulatory action on cellular layer formation. Aims: The present study aims to compare the proliferative effects of chitosan in two forms, membranous and solution forms, on Swiss 3T3 mouse embryonic fibroblasts. Study Design: In vitro study. Methods: Three experimental groups were formed: cells were cultured in a normal medium without chitosan (Control Group); cells were cultured either in a medium containing 2.0% chitosan in membranous form (Membrane Group) or chitosan solution at a concentration of 2.0% (Solution Group).Two different methods were used in the experiments: cells cultured on the medium containing chitosan in solution or membranous forms (method 1); and chitosan solution or membranous forms were added into the medium containing previously cultured cells (method 2). Results: Scanning electron microscopic investigations of the experimental groups revealed cells with well-defined cellular projections, intact cellular membranes and tight intercellular junctions. They were especially prominent in the membrane group of method 1 and in the membrane and solution groups of method 2. Mouse monoclonal anti-collagen 1 primary antibody was used to indicate collagen synthesis. Prominent collagen synthesis was detected in the membrane groups on the 10th day of culture for both methods. Bromodeoxyuridine (BrdU) and MTT assays were performed in order to assess cellular proliferation and viability, respectively. BrdU labelling tests indicated a higher proliferation index in the membrane group of method 1 on the 5th and 10th days. For the second method, the membranous form on the 10th day and solution form on the 5th day were the most effective groups in terms of cellular proliferation. MTT results reflected a high cellular viability in method 1 on the 5th day of treatment with the membranous form, whereas cellular viability was highest in the solution form of method 2 on the 5th day. Conclusion: The membranous form of chitosan induced a significant proliferative effect and increased the ratio of cell-to-cell junctions of Swiss 3T3 mouse embryonic fibroblasts. Conveniently, the solution form also resulted in enhanced cell proliferation and viability compared to the control group. As the solution form is easy to prepare and apply to cells compared to the membrane form, the application of Chitosan directly to media appears to be a convenient alternative for tissue engineering approaches.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Chitosan, a linear polysaccharide, has been recently used in biomedical applications. In vitro studies have demonstrated its effect on cellular growth and its stimulatory action on cellular layer formation.</p>\r\n<p>\r\n\t<strong>Aims</strong>: The present study aims to compare the proliferative effects of chitosan in two forms, membranous and solution forms, on Swiss 3T3 mouse embryonic fibroblasts.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: In vitro study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Three experimental groups were formed: cells were cultured in a normal medium without chitosan (Control Group); cells were cultured either in a medium containing 2.0% chitosan in membranous form (Membrane Group) or chitosan solution at a concentration of 2.0% (Solution Group).Two different methods were used in the experiments: cells cultured on the medium containing chitosan in solution or membranous forms (method 1); and chitosan solution or membranous forms were added into the medium containing previously cultured cells (method 2).</p>\r\n<p>\r\n\t<strong>Results</strong>: Scanning electron microscopic investigations of the experimental groups revealed cells with well-defined cellular projections, intact cellular membranes and tight intercellular junctions. They were especially prominent in the membrane group of method 1 and in the membrane and solution groups of method 2. Mouse monoclonal anti-collagen 1 primary antibody was used to indicate collagen synthesis. Prominent collagen synthesis was detected in the membrane groups on the 10th day of culture for both methods. Bromodeoxyuridine (BrdU) and MTT assays were performed in order to assess cellular proliferation and viability, respectively. BrdU labelling tests indicated a higher proliferation index in the membrane group of method 1 on the 5th and 10th days. For the second method, the membranous form on the 10th day and solution form on the 5th day were the most effective groups in terms of cellular proliferation. MTT results reflected a high cellular viability in method 1 on the 5th day of treatment with the membranous form, whereas cellular viability was highest in the solution form of method 2 on the 5th day.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The membranous form of chitosan induced a significant proliferative effect and increased the ratio of cell-to-cell junctions of Swiss 3T3 mouse embryonic fibroblasts. Conveniently, the solution form also resulted in enhanced cell proliferation and viability compared to the control group. As the solution form is easy to prepare and apply to cells compared to the membrane form, the application of Chitosan directly to media appears to be a convenient alternative for tissue engineering approaches.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Chitosan, a linear polysaccharide, has been recently used in biomedical applications. In vitro studies have demonstrated its effect on cellular growth and its stimulatory action on cellular layer formation. Aims: The present study aims to compare the proliferative effects of chitosan in two forms, membranous and solution forms, on Swiss 3T3 mouse embryonic fibroblasts. Study Design: In vitro study. Methods: Three experimental groups were formed: cells were cultured in a normal medium without chitosan (Control Group); cells were cultured either in a medium containing 2.0% chitosan in membranous form (Membrane Group) or chitosan solution at a concentration of 2.0% (Solution Group).Two different methods were used in the experiments: cells cultured on the medium containing chitosan in solution or membranous forms (method 1); and chitosan solution or membranous forms were added into the medium containing previously cultured cells (method 2). Results: Scanning electron microscopic investigations of the experimental groups revealed cells with well-defined cellular projections, intact cellular membranes and tight intercellular junctions. They were especially prominent in the membrane group of method 1 and in the membrane and solution groups of method 2. Mouse monoclonal anti-collagen 1 primary antibody was used to indicate collagen synthesis. Prominent collagen synthesis was detected in the membrane groups on the 10th day of culture for both methods. Bromodeoxyuridine (BrdU) and MTT assays were performed in order to assess cellular proliferation and viability, respectively. BrdU labelling tests indicated a higher proliferation index in the membrane group of method 1 on the 5th and 10th days. For the second method, the membranous form on the 10th day and solution form on the 5th day were the most effective groups in terms of cellular proliferation. MTT results reflected a high cellular viability in method 1 on the 5th day of treatment with the membranous form, whereas cellular viability was highest in the solution form of method 2 on the 5th day. Conclusion: The membranous form of chitosan induced a significant proliferative effect and increased the ratio of cell-to-cell junctions of Swiss 3T3 mouse embryonic fibroblasts. Conveniently, the solution form also resulted in enhanced cell proliferation and viability compared to the control group. As the solution form is easy to prepare and apply to cells compared to the membrane form, the application of Chitosan directly to media appears to be a convenient alternative for tissue engineering approaches.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15102",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "69-78",
+    "views": 7187,
+    "downloads": 10071,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "244",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=244",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=244",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=244",
+    "localPdfUrl": "js/data/pdfs/244.pdf",
+    "pdfUrl": "js/data/pdfs/244.pdf"
+  },
+  {
+    "id": 245,
+    "type": "Original Article",
+    "title": "Investigation of Metallo Beta Lactamases and Oxacilinases in Carbapenem Resistant Acinetobacter baumannii Strains Isolated from Inpatients",
+    "authors": [
+      {
+        "name": "M. Duygu Aksoy",
+        "affiliation": "Yozgat Public Health Laboratory, Yozgat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şaban Çavuşlu",
+        "affiliation": "Department of Medical Microbiology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "H. Murat Tuğrul",
+        "affiliation": "Department of Medical Microbiology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Resistance to beta-lactam antibiotics is widespread among Acinetobacter strains. Plasmid-mediated metallo beta lactamases (MBL) are responsible for carbapenem resistance, as are oxacillinases (OXA). In recent years, MBL producing carbapenem-resistant strains have been reported in the world and in Turkey in increasing rates. In our country, besides the OXA 51-like enzyme which is inherent in A. baumannii strains, OXA 58-like and OXA 23-like carbapenemases producing strains have also been widely detected. In addition, Verona Imipenemase (VIM) and (IMP)-type MBL have been reported in some centers. Aims: The aim of our study was to investigate the presence of carbapenemases in Acinetobacter strains isolated from hospitalized patients in Edirne. Study Design: Cross-sectional study. Methods: A total of 52 imipenem-resistant A. baumannii strains isolated between January and March 2013 were investigated. The presence of MBL was described phenotypically by the combined disk diffusion test (CDDT), double disk synergy test (DDST), MBL E-test (only performed in 28 strains) and modified Hodge test. blaIMP, blaVIM, blaGIM, blaSIM, blaSPM genes and blaOXA-23, blaOXA-51, blaOXA-40, blaOXA-58 genes were investigated by multiplex polymerase chain reaction (PCR). The blaNDM-1 gene was determined by PCR. Results: By modified Hodge test, 50 strains (96%) were found to be MBL positive. Positivity of MBL was 21% by both CDDT (0.1 M EDTA) and DDST. Twenty-four of 28 strains (85.7%) were positive by MBL E-test. OXA 23-like and OXA 51-like carbapenemases were detected in all strains, but OXA 58-like and OXA 40-like carbapenemases-producing A. baumannii were not detected. Also, MBL genes were not detected by genotypic methods. Conclusion: Only OXA 23-like carbapenemase was responsible for carbapenem resistance in carbapenem-resistant Acinetobacter strains in Edirne. The MBL-producing Acinetobacter strain is not yet a problem in our hospital. MBL resistance was found by phenotyping tests, which must be confirmed by genotypic methods; multiplex PCR tests can be easily used for screening MBL.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Resistance to beta-lactam antibiotics is widespread among Acinetobacter strains. Plasmid-mediated metallo beta lactamases (MBL) are responsible for carbapenem resistance, as are oxacillinases (OXA). In recent years, MBL producing carbapenem-resistant strains have been reported in the world and in Turkey in increasing rates. In our country, besides the OXA 51-like enzyme which is inherent in A. baumannii strains, OXA 58-like and OXA 23-like carbapenemases producing strains have also been widely detected. In addition, Verona Imipenemase (VIM) and (IMP)-type MBL have been reported in some centers.</p>\r\n<p>\r\n\t<strong>Aims</strong>: The aim of our study was to investigate the presence of carbapenemases in Acinetobacter strains isolated from hospitalized patients in Edirne.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Cross-sectional study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: A total of 52 imipenem-resistant A. baumannii strains isolated between January and March 2013 were investigated. The presence of MBL was described phenotypically by the combined disk diffusion test (CDDT), double disk synergy test (DDST), MBL E-test (only performed in 28 strains) and modified Hodge test. blaIMP, blaVIM, blaGIM, blaSIM, blaSPM genes and blaOXA-23, blaOXA-51, blaOXA-40, blaOXA-58 genes were investigated by multiplex polymerase chain reaction (PCR). The blaNDM-1 gene was determined by PCR.</p>\r\n<p>\r\n\t<strong>Results</strong>: By modified Hodge test, 50 strains (96%) were found to be MBL positive. Positivity of MBL was 21% by both CDDT (0.1 M EDTA) and DDST. Twenty-four of 28 strains (85.7%) were positive by MBL E-test. OXA 23-like and OXA 51-like carbapenemases were detected in all strains, but OXA 58-like and OXA 40-like carbapenemases-producing A. baumannii were not detected. Also, MBL genes were not detected by genotypic methods.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Only OXA 23-like carbapenemase was responsible for carbapenem resistance in carbapenem-resistant Acinetobacter strains in Edirne. The MBL-producing Acinetobacter strain is not yet a problem in our hospital. MBL resistance was found by phenotyping tests, which must be confirmed by genotypic methods; multiplex PCR tests can be easily used for screening MBL.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Resistance to beta-lactam antibiotics is widespread among Acinetobacter strains. Plasmid-mediated metallo beta lactamases (MBL) are responsible for carbapenem resistance, as are oxacillinases (OXA). In recent years, MBL producing carbapenem-resistant strains have been reported in the world and in Turkey in increasing rates. In our country, besides the OXA 51-like enzyme which is inherent in A. baumannii strains, OXA 58-like and OXA 23-like carbapenemases producing strains have also been widely detected. In addition, Verona Imipenemase (VIM) and (IMP)-type MBL have been reported in some centers. Aims: The aim of our study was to investigate the presence of carbapenemases in Acinetobacter strains isolated from hospitalized patients in Edirne. Study Design: Cross-sectional study. Methods: A total of 52 imipenem-resistant A. baumannii strains isolated between January and March 2013 were investigated. The presence of MBL was described phenotypically by the combined disk diffusion test (CDDT), double disk synergy test (DDST), MBL E-test (only performed in 28 strains) and modified Hodge test. blaIMP, blaVIM, blaGIM, blaSIM, blaSPM genes and blaOXA-23, blaOXA-51, blaOXA-40, blaOXA-58 genes were investigated by multiplex polymerase chain reaction (PCR). The blaNDM-1 gene was determined by PCR. Results: By modified Hodge test, 50 strains (96%) were found to be MBL positive. Positivity of MBL was 21% by both CDDT (0.1 M EDTA) and DDST. Twenty-four of 28 strains (85.7%) were positive by MBL E-test. OXA 23-like and OXA 51-like carbapenemases were detected in all strains, but OXA 58-like and OXA 40-like carbapenemases-producing A. baumannii were not detected. Also, MBL genes were not detected by genotypic methods. Conclusion: Only OXA 23-like carbapenemase was responsible for carbapenem resistance in carbapenem-resistant Acinetobacter strains in Edirne. The MBL-producing Acinetobacter strain is not yet a problem in our hospital. MBL resistance was found by phenotyping tests, which must be confirmed by genotypic methods; multiplex PCR tests can be easily used for screening MBL.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15302",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "79-83",
+    "views": 6741,
+    "downloads": 3514,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "245",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=245",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=245",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=245",
+    "localPdfUrl": "js/data/pdfs/245.pdf",
+    "pdfUrl": "js/data/pdfs/245.pdf"
+  },
+  {
+    "id": 246,
+    "type": "Original Article",
+    "title": "Phenotypes and Genotypes of Macrolide-Resistant Streptococcus Pneumoniae",
+    "authors": [
+      {
+        "name": "Leyla Sirekbasan",
+        "affiliation": "Department of Microbiology and Clinical Microbiology, Cerrahpaşa Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nevriye Gönüllü",
+        "affiliation": "Department of Microbiology and Clinical Microbiology, Cerrahpaşa Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serhat Sirekbasan",
+        "affiliation": "Department of Microbiology and Clinical Microbiology, Cerrahpaşa Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mert Kuşkucu",
+        "affiliation": "Department of Microbiology and Clinical Microbiology, Cerrahpaşa Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kenan Midilli",
+        "affiliation": "Department of Microbiology and Clinical Microbiology, Cerrahpaşa Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Macrolide resistance in Streptococcus pneumoniae (S. pneumoniae) is a worldwide problem. Aims: The aim of this work was to analyze the phenotypes, genotypes, and clonal relatedness among macrolide-resistant S. pneumoniae strains isolated from various clinical specimens in our hospital. Study Design: Cross-sectional study. Methods: 80 non-duplicate S. pneumoniae strains were analyzed by polymerase chain reaction for both the erm (B) and mef (A) genes. Results: Macrolide resistance was observed in 22.5% (18 strains) of strains. Two (11.2%) isolates possessed mef (A), eight possessed erm (B) (44.4%) and eight strains (44.4%) were positive for both erm (B) and mef (A) genes. Although BOX-PCR of 18 macrolide-resistant strains revealed 11 band patterns, they clustered as seven clones with a genetic distance >10% to each other. Eight isolates possessed both erm (B) and mef (A) genes and belonged to a single clone (44.44% of all macrolide-resistant strains). Conclusion: Increased positivity rates for both resistance genes have also been reported from other hospitals in Turkey, but this is the first study from Turkey showing the clonal dissemination of both resistance genes.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Macrolide resistance in Streptococcus pneumoniae (S. pneumoniae) is a worldwide problem.</p>\r\n<p>\r\n\t<strong>Aims</strong>: The aim of this work was to analyze the phenotypes, genotypes, and clonal relatedness among macrolide-resistant S. pneumoniae strains isolated from various clinical specimens in our hospital.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Cross-sectional study.</p>\r\n<p>\r\n\t<strong>Methods</strong>: 80 non-duplicate S. pneumoniae strains were analyzed by polymerase chain reaction for both the erm (B) and mef (A) genes.</p>\r\n<p>\r\n\t<strong>Results</strong>: Macrolide resistance was observed in 22.5% (18 strains) of strains. Two (11.2%) isolates possessed mef (A), eight possessed erm (B) (44.4%) and eight strains (44.4%) were positive for both erm (B) and mef (A) genes. Although BOX-PCR of 18 macrolide-resistant strains revealed 11 band patterns, they clustered as seven clones with a genetic distance &gt;10% to each other. Eight isolates possessed both erm (B) and mef (A) genes and belonged to a single clone (44.44% of all macrolide-resistant strains).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Increased positivity rates for both resistance genes have also been reported from other hospitals in Turkey, but this is the first study from Turkey showing the clonal dissemination of both resistance genes.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Macrolide resistance in Streptococcus pneumoniae (S. pneumoniae) is a worldwide problem. Aims: The aim of this work was to analyze the phenotypes, genotypes, and clonal relatedness among macrolide-resistant S. pneumoniae strains isolated from various clinical specimens in our hospital. Study Design: Cross-sectional study. Methods: 80 non-duplicate S. pneumoniae strains were analyzed by polymerase chain reaction for both the erm (B) and mef (A) genes. Results: Macrolide resistance was observed in 22.5% (18 strains) of strains. Two (11.2%) isolates possessed mef (A), eight possessed erm (B) (44.4%) and eight strains (44.4%) were positive for both erm (B) and mef (A) genes. Although BOX-PCR of 18 macrolide-resistant strains revealed 11 band patterns, they clustered as seven clones with a genetic distance >10% to each other. Eight isolates possessed both erm (B) and mef (A) genes and belonged to a single clone (44.44% of all macrolide-resistant strains). Conclusion: Increased positivity rates for both resistance genes have also been reported from other hospitals in Turkey, but this is the first study from Turkey showing the clonal dissemination of both resistance genes.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15169",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "84-88",
+    "views": 7725,
+    "downloads": 10182,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "246",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=246",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=246",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=246",
+    "localPdfUrl": "js/data/pdfs/246.pdf",
+    "pdfUrl": "js/data/pdfs/246.pdf"
+  },
+  {
+    "id": 247,
+    "type": "Original Article",
+    "title": "Effect of Rosuvastatin on Arginase Enzyme Activity and Polyamine Production in Experimental Breast Cancer",
+    "authors": [
+      {
+        "name": "Hakan Erbaş",
+        "affiliation": "Department of Medical Biochemistry, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Oğuz Bal",
+        "affiliation": "Department of Medical Biochemistry, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erol Çakır",
+        "affiliation": "Department of Medical Biochemistry, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Breast cancer is the most common malignant tumour of women around the world. As a key enzyme of the urea cycle, arginase leads to the formation of urea and ornithine from L-arginine. In the patients with several different cancers, arginase has been found to be higher and reported to be a useful biological marker. Aims: The aim of this study was to investigate the effect of rosuvastatin on serum and cancer tissue arginase enzyme activity, and ornithine and polyamine (putrescine, spermidine, spermine) levels. Study Design: Animal experiment. Methods: In this study, 50 male Balb/c mice were used. Erchlich acid tumour cells were injected into the subcutaneous part of their left foot. The mice were divided into five groups: healthy control group, healthy treatment, tumour control, treatment 1 and treatment 2. Then, 1 mg/kg and 20 mg/kg doses of rosuvastatin were given intraperitoneally. Serum and tissue arginase enzyme activities and tissue ornithine levels were determined spectrophotometrically. HPLC measurement of polyamines were applied. Results: Increased serum arginase activity and polyamine levels were significantly decreased with rosuvastatin treatment. In the tumour tissue, arginase activity and ornithine levels were significantly decreased in treatment groups compared to the tumour group. Tissue polyamine levels also decreased with rosuvastatin treatment. Conclusion: We suggest that rosuvastatin may have some protective effects on breast cancer development as it inhibits arginase enzyme activity and ornithine levels, precursors of polyamines, and also polyamine levels. This protective effect may be through the induction of nitric oxide (NO) production via nitric oxide synthase (NOS). As a promising anticancer agent, the net effects of rosuvastatin in this mechanism should be supported with more advanced studies and new parameters.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Breast cancer is the most common malignant tumour of women around the world. As a key enzyme of the urea cycle, arginase leads to the formation of urea and ornithine from L-arginine. In the patients with several different cancers, arginase has been found to be higher and reported to be a useful biological marker.</p>\r\n<p>\r\n\t<strong>Aims</strong>: The aim of this study was to investigate the effect of rosuvastatin on serum and cancer tissue arginase enzyme activity, and ornithine and polyamine (putrescine, spermidine, spermine) levels.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Animal experiment.</p>\r\n<p>\r\n\t<strong>Methods</strong>: In this study, 50 male Balb/c mice were used. Erchlich acid tumour cells were injected into the subcutaneous part of their left foot. The mice were divided into five groups: healthy control group, healthy treatment, tumour control, treatment 1 and treatment 2. Then, 1 mg/kg and 20 mg/kg doses of rosuvastatin were given intraperitoneally. Serum and tissue arginase enzyme activities and tissue ornithine levels were determined spectrophotometrically. HPLC measurement of polyamines were applied.</p>\r\n<p>\r\n\t<strong>Results</strong>: Increased serum arginase activity and polyamine levels were significantly decreased with rosuvastatin treatment. In the tumour tissue, arginase activity and ornithine levels were significantly decreased in treatment groups compared to the tumour group. Tissue polyamine levels also decreased with rosuvastatin treatment.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: We suggest that rosuvastatin may have some protective effects on breast cancer development as it inhibits arginase enzyme activity and ornithine levels, precursors of polyamines, and also polyamine levels. This protective effect may be through the induction of nitric oxide (NO) production via nitric oxide synthase (NOS). As a promising anticancer agent, the net effects of rosuvastatin in this mechanism should be supported with more advanced studies and new parameters.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Breast cancer is the most common malignant tumour of women around the world. As a key enzyme of the urea cycle, arginase leads to the formation of urea and ornithine from L-arginine. In the patients with several different cancers, arginase has been found to be higher and reported to be a useful biological marker. Aims: The aim of this study was to investigate the effect of rosuvastatin on serum and cancer tissue arginase enzyme activity, and ornithine and polyamine (putrescine, spermidine, spermine) levels. Study Design: Animal experiment. Methods: In this study, 50 male Balb/c mice were used. Erchlich acid tumour cells were injected into the subcutaneous part of their left foot. The mice were divided into five groups: healthy control group, healthy treatment, tumour control, treatment 1 and treatment 2. Then, 1 mg/kg and 20 mg/kg doses of rosuvastatin were given intraperitoneally. Serum and tissue arginase enzyme activities and tissue ornithine levels were determined spectrophotometrically. HPLC measurement of polyamines were applied. Results: Increased serum arginase activity and polyamine levels were significantly decreased with rosuvastatin treatment. In the tumour tissue, arginase activity and ornithine levels were significantly decreased in treatment groups compared to the tumour group. Tissue polyamine levels also decreased with rosuvastatin treatment. Conclusion: We suggest that rosuvastatin may have some protective effects on breast cancer development as it inhibits arginase enzyme activity and ornithine levels, precursors of polyamines, and also polyamine levels. This protective effect may be through the induction of nitric oxide (NO) production via nitric oxide synthase (NOS). As a promising anticancer agent, the net effects of rosuvastatin in this mechanism should be supported with more advanced studies and new parameters.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15611",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "89-95",
+    "views": 6904,
+    "downloads": 10310,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "247",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=247",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=247",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=247",
+    "localPdfUrl": "js/data/pdfs/247.pdf",
+    "pdfUrl": "js/data/pdfs/247.pdf"
+  },
+  {
+    "id": 248,
+    "type": "Original Article",
+    "title": "The Effects of Ankaferd Blood Stopper on the Recovery Process in an Experimental Oesophageal Perforation Model",
+    "authors": [
+      {
+        "name": "Necla Gürbüz Sarıkaş",
+        "affiliation": "Department of Pediatric Surgery, Derince Training and Research Hospital, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tanzer Korkmaz",
+        "affiliation": "Department of Emergency Medicine, Abant İzzet Baysal University Faculty of Medicine, Bolu, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurettin Kahramansoy",
+        "affiliation": "Department of General Surgery, Abant İzzet Baysal University Faculty of Medicine, Bolu, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Kılıçgün",
+        "affiliation": "Department of Thoracic Surgery, Abant İzzet Baysal University Faculty of Medicine, Bolu, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Çetin Boran",
+        "affiliation": "Department of Pathology, Abant İzzet Baysal University Faculty of Medicine, Bolu, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Güledal Boztaş",
+        "affiliation": "Province Health Office, Bolu, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Oesophageal perforation is a life-threatening pathology that is generally treated conservatively; however, surgical procedures are frequently performed. A topical haemostatic agent, Ankaferd Blood Stopper (ABS), also has beneficial wound-healing effects. Aims: This study aimed to determine the effects of ABS following experimental oesophageal perforations. Study Design: Animal experiment. Methods: The experimental rats were classified into 6 groups (with 7 rats in each group). Pairs of groups (primary repair alone and primary repair + ABS) were terminated in the 1st, 2nd, and 3rd weeks following injury. The oesophageal perforations, which were 8-10 mm in length, were created using a nasogastric tube. The perforation sites were repaired with a 6-0 polyglactine thread in the primary repair groups. Additionally, ABS was sprayed over the perforation site in the treatment groups. Each oesophagus was evaluated histopathologically. Results: There were fewer microabscesses and areas of necrosis in the ABS groups compared with the primary repair groups. The histopathological evaluation revealed that the ABS groups had less inflammation and more re-epithelisation compared to the primary repair groups (p=0.002 and p=0.003, respectively). Fibrosis in the ABS groups was moderate in the 2nd week and mild in the 3rd week. Comparing the groups with respect to the time intervals, only the 1st week groups showed a significant difference in terms of re-epithelialisation (p=0.044). Conclusion: Topical ABS application on the repaired experimental oesophageal perforation regions led to positive wound-healing effects compared with the rats that were administered the primary repair alone.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Oesophageal perforation is a life-threatening pathology that is generally treated conservatively; however, surgical procedures are frequently performed. A topical haemostatic agent, Ankaferd Blood Stopper (ABS), also has beneficial wound-healing effects.</p>\r\n<p>\r\n\t<strong>Aims</strong>: This study aimed to determine the effects of ABS following experimental oesophageal perforations.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Animal experiment.</p>\r\n<p>\r\n\t<strong>Methods</strong>: The experimental rats were classified into 6 groups (with 7 rats in each group). Pairs of groups (primary repair alone and primary repair + ABS) were terminated in the 1st, 2nd, and 3rd weeks following injury. The oesophageal perforations, which were 8-10 mm in length, were created using a nasogastric tube. The perforation sites were repaired with a 6-0 polyglactine thread in the primary repair groups. Additionally, ABS was sprayed over the perforation site in the treatment groups. Each oesophagus was evaluated histopathologically.</p>\r\n<p>\r\n\t<strong>Results</strong>: There were fewer microabscesses and areas of necrosis in the ABS groups compared with the primary repair groups. The histopathological evaluation revealed that the ABS groups had less inflammation and more re-epithelisation compared to the primary repair groups (p=0.002 and p=0.003, respectively). Fibrosis in the ABS groups was moderate in the 2nd week and mild in the 3rd week. Comparing the groups with respect to the time intervals, only the 1st week groups showed a significant difference in terms of re-epithelialisation (p=0.044).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Topical ABS application on the repaired experimental oesophageal perforation regions led to positive wound-healing effects compared with the rats that were administered the primary repair alone.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Oesophageal perforation is a life-threatening pathology that is generally treated conservatively; however, surgical procedures are frequently performed. A topical haemostatic agent, Ankaferd Blood Stopper (ABS), also has beneficial wound-healing effects. Aims: This study aimed to determine the effects of ABS following experimental oesophageal perforations. Study Design: Animal experiment. Methods: The experimental rats were classified into 6 groups (with 7 rats in each group). Pairs of groups (primary repair alone and primary repair + ABS) were terminated in the 1st, 2nd, and 3rd weeks following injury. The oesophageal perforations, which were 8-10 mm in length, were created using a nasogastric tube. The perforation sites were repaired with a 6-0 polyglactine thread in the primary repair groups. Additionally, ABS was sprayed over the perforation site in the treatment groups. Each oesophagus was evaluated histopathologically. Results: There were fewer microabscesses and areas of necrosis in the ABS groups compared with the primary repair groups. The histopathological evaluation revealed that the ABS groups had less inflammation and more re-epithelisation compared to the primary repair groups (p=0.002 and p=0.003, respectively). Fibrosis in the ABS groups was moderate in the 2nd week and mild in the 3rd week. Comparing the groups with respect to the time intervals, only the 1st week groups showed a significant difference in terms of re-epithelialisation (p=0.044). Conclusion: Topical ABS application on the repaired experimental oesophageal perforation regions led to positive wound-healing effects compared with the rats that were administered the primary repair alone.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15459",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "96-100",
+    "views": 7351,
+    "downloads": 10215,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "248",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=248",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=248",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=248",
+    "localPdfUrl": "js/data/pdfs/248.pdf",
+    "pdfUrl": "js/data/pdfs/248.pdf"
+  },
+  {
+    "id": 249,
+    "type": "Original Article",
+    "title": "Comparison of Sirolimus and Colchicine Treatment on the Development of Peritoneal Fibrozis in Rats Having Peritoneal Dialysis",
+    "authors": [
+      {
+        "name": "Tamer Sağıroğlu",
+        "affiliation": "Deptartment of General Surgery, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serhat Oğuz",
+        "affiliation": "Deptartment of General Surgery, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Burak Sayhan",
+        "affiliation": "Deparment of Emergency Medicine, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet A. Yağcı",
+        "affiliation": "Department of General Surgery, İnönü University Faculty of Medicine, Malatya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tülin Yalta",
+        "affiliation": "Department of Pathology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gönül Sağıroğlu",
+        "affiliation": "Department of Pathology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Elif Çopuroğlu",
+        "affiliation": "Department of Anesthesiology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Continuous ambulatory peritoneal dialysis is a successful treatment modality for patients with end-stage renal disease. Peritoneal fibrosis (PF) is the most critical complication of long-term peritoneal dialysis (PD). Aims: In our study, we aimed to compare the effects of colchicine and sirolimus on PF induced by hypertonic peritoneal dialysis solutions in rats. Study Design: Animal experiment. Methods: Twenty-four rats were randomly divided into three groups. The control group received an intraperitoneal injection (ip) of saline. The sirolimus group received the PD solution, plus 1.0 mg/kg/day Rapamune®. The colchicine group received the PD solution ip plus 1.0 mg/kg/day of colchicine. Blood samples were taken to measure the serum levels of VEGF, TGF-β, and TNF-α. Peritoneal tissue samples were taken for histopathological evaluation. Results: TGF-β and TNF-α values in the sirolimus group were found to be statistically significantly lower than in the control and colchicine groups, but the differences between the control and colchicine groups were not statistically significant. No statistically significant differences were found between the groups regarding the VEGF values. Vascular neogenesis and peritoneal thickness were compared; the values in the sirolimus group were statistically reduced compared to the values in the control group. Mild fibrosis developed in 75% of all animals in the sirolimus group; there was no moderate or severe fibrosis observed. Fibrosis developed to varying degrees in 100% of the animals in the control and colchicine groups. Conclusion: The present study demonstrates that sirolimus might be beneficial for preventing or delaying the progression of PF and neoangiogenesis. These alterations in the peritoneal membrane may be connected with reduced TNF-α and TGF-β levels.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Continuous ambulatory peritoneal dialysis is a successful treatment modality for patients with end-stage renal disease. Peritoneal fibrosis (PF) is the most critical complication of long-term peritoneal dialysis (PD).</p>\r\n<p>\r\n\t<strong>Aims</strong>: In our study, we aimed to compare the effects of colchicine and sirolimus on PF induced by hypertonic peritoneal dialysis solutions in rats.</p>\r\n<p>\r\n\t<strong>Study Design</strong>: Animal experiment.</p>\r\n<p>\r\n\t<strong>Methods</strong>: Twenty-four rats were randomly divided into three groups. The control group received an intraperitoneal injection (ip) of saline. The sirolimus group received the PD solution, plus 1.0 mg/kg/day Rapamune&reg;. The colchicine group received the PD solution ip plus 1.0 mg/kg/day of colchicine. Blood samples were taken to measure the serum levels of VEGF, TGF-&beta;, and TNF-&alpha;. Peritoneal tissue samples were taken for histopathological evaluation.</p>\r\n<p>\r\n\t<strong>Results</strong>: TGF-&beta; and TNF-&alpha; values in the sirolimus group were found to be statistically significantly lower than in the control and colchicine groups, but the differences between the control and colchicine groups were not statistically significant. No statistically significant differences were found between the groups regarding the VEGF values. Vascular neogenesis and peritoneal thickness were compared; the values in the sirolimus group were statistically reduced compared to the values in the control group. Mild fibrosis developed in 75% of all animals in the sirolimus group; there was no moderate or severe fibrosis observed. Fibrosis developed to varying degrees in 100% of the animals in the control and colchicine groups.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The present study demonstrates that sirolimus might be beneficial for preventing or delaying the progression of PF and neoangiogenesis. These alterations in the peritoneal membrane may be connected with reduced TNF-&alpha; and TGF-&beta; levels.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Continuous ambulatory peritoneal dialysis is a successful treatment modality for patients with end-stage renal disease. Peritoneal fibrosis (PF) is the most critical complication of long-term peritoneal dialysis (PD). Aims: In our study, we aimed to compare the effects of colchicine and sirolimus on PF induced by hypertonic peritoneal dialysis solutions in rats. Study Design: Animal experiment. Methods: Twenty-four rats were randomly divided into three groups. The control group received an intraperitoneal injection (ip) of saline. The sirolimus group received the PD solution, plus 1.0 mg/kg/day Rapamune®. The colchicine group received the PD solution ip plus 1.0 mg/kg/day of colchicine. Blood samples were taken to measure the serum levels of VEGF, TGF-β, and TNF-α. Peritoneal tissue samples were taken for histopathological evaluation. Results: TGF-β and TNF-α values in the sirolimus group were found to be statistically significantly lower than in the control and colchicine groups, but the differences between the control and colchicine groups were not statistically significant. No statistically significant differences were found between the groups regarding the VEGF values. Vascular neogenesis and peritoneal thickness were compared; the values in the sirolimus group were statistically reduced compared to the values in the control group. Mild fibrosis developed in 75% of all animals in the sirolimus group; there was no moderate or severe fibrosis observed. Fibrosis developed to varying degrees in 100% of the animals in the control and colchicine groups. Conclusion: The present study demonstrates that sirolimus might be beneficial for preventing or delaying the progression of PF and neoangiogenesis. These alterations in the peritoneal membrane may be connected with reduced TNF-α and TGF-β levels.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15183",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "101-106",
+    "views": 6781,
+    "downloads": 9756,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "249",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=249",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=249",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=249",
+    "localPdfUrl": "js/data/pdfs/249.pdf",
+    "pdfUrl": "js/data/pdfs/249.pdf"
+  },
+  {
+    "id": 250,
+    "type": "Case Report",
+    "title": "Intramuscular Chondroid Lipoma: Magnetic Resonance Imaging Diagnosis by ‘Fat Ring Sign’",
+    "authors": [
+      {
+        "name": "Adalet Elçin Yıldız",
+        "affiliation": "Department of Radiology, Hacettepe University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Üstün Aydıngöz",
+        "affiliation": "Department of Radiology, Hacettepe University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Muşturay Karçaaltıncaba",
+        "affiliation": "Department of Radiology, Hacettepe University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cenk Sökmensüer",
+        "affiliation": "Department of Pathology, Hacettepe University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Chondroid lipoma is an extremely rare variant of benign lipomatous lesions that is composed of lipoblasts, mature fat, and chondroid matrix. Although benign lipomatous lesions are the most common soft tissue tumors and imaging findings are often pathognomonic, there have been few reports describing the imaging features of chondroid lipoma. Case Report: We present magnetic resonance imaging (MRI) findings of a pelvic intramuscular chondroid lipoma in a 59 year-old man and describe a “fat ring sign” that may be useful to diagnose this rare tumor radiologically. Conclusion: Magnetic resonance imaging findings of a chondroid lipoma may be heterogenous according to the distribution of the fatty and chondroid tissue. However, in the presence of “fat ring sign,” radiologists should consider a diagnosis of chondroid lipoma preoperatively.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Chondroid lipoma is an extremely rare variant of benign lipomatous lesions that is composed of lipoblasts, mature fat, and chondroid matrix. Although benign lipomatous lesions are the most common soft tissue tumors and imaging findings are often pathognomonic, there have been few reports describing the imaging features of chondroid lipoma.</p>\r\n<p>\r\n\t<strong>Case Report</strong>: We present magnetic resonance imaging (MRI) findings of a pelvic intramuscular chondroid lipoma in a 59 year-old man and describe a &ldquo;fat ring sign&rdquo; that may be useful to diagnose this rare tumor radiologically.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Magnetic resonance imaging findings of a chondroid lipoma may be heterogenous according to the distribution of the fatty and chondroid tissue. However, in the presence of &ldquo;fat ring sign,&rdquo; radiologists should consider a diagnosis of chondroid lipoma preoperatively.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Chondroid lipoma is an extremely rare variant of benign lipomatous lesions that is composed of lipoblasts, mature fat, and chondroid matrix. Although benign lipomatous lesions are the most common soft tissue tumors and imaging findings are often pathognomonic, there have been few reports describing the imaging features of chondroid lipoma. Case Report: We present magnetic resonance imaging (MRI) findings of a pelvic intramuscular chondroid lipoma in a 59 year-old man and describe a “fat ring sign” that may be useful to diagnose this rare tumor radiologically. Conclusion: Magnetic resonance imaging findings of a chondroid lipoma may be heterogenous according to the distribution of the fatty and chondroid tissue. However, in the presence of “fat ring sign,” radiologists should consider a diagnosis of chondroid lipoma preoperatively.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2014.14035",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "107-110",
+    "views": 6455,
+    "downloads": 10003,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "250",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=250",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=250",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=250",
+    "localPdfUrl": "js/data/pdfs/250.pdf",
+    "pdfUrl": "js/data/pdfs/250.pdf"
+  },
+  {
+    "id": 251,
+    "type": "Case Report",
+    "title": "Aberrant Carotid Artery in the Middle Ear",
+    "authors": [
+      {
+        "name": "Sertaç Yetişer",
+        "affiliation": "Department of Otorhinolaryngology, Head and Neck Surgery, Anadolu Medical Center, Kocaeli, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Carotid artery abnormality in the middle ear is a rare clinical condition. Recognition of the problems related with this abnormality is important since it may mimic vascular tumors. Any intervention with incomplete evaluation can be fatal. Case Report: A 23-year-old girl with carotid abnormality and sensorineural hearing loss, unsteadiness and tinnitus is presented. She was followed for 2 months elsewhere assuming that she had Meniere’s disease and had previously received some medication for otitis media with effusion. Conclusion: Tomography and magnetic resonance imaging of the temporal bone are very helpful for visualization of an aberrant carotid in the middle ear. Radiological presentations are the reduced caliber of the aberrant carotid, an absence of cranial opening of carotid canal, tubular coursing along the medial wall of the middle ear in continuity with the horizontal carotid canal, dehiscence of the lateral carotid plate and enlargement of the tympanic canalicus.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Carotid artery abnormality in the middle ear is a rare clinical condition. Recognition of the problems related with this abnormality is important since it may mimic vascular tumors. Any intervention with incomplete evaluation can be fatal.</p>\r\n<p>\r\n\t<strong>Case Report</strong>: A 23-year-old girl with carotid abnormality and sensorineural hearing loss, unsteadiness and tinnitus is presented. She was followed for 2 months elsewhere assuming that she had Meniere&rsquo;s disease and had previously received some medication for otitis media with effusion.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Tomography and magnetic resonance imaging of the temporal bone are very helpful for visualization of an aberrant carotid in the middle ear. Radiological presentations are the reduced caliber of the aberrant carotid, an absence of cranial opening of carotid canal, tubular coursing along the medial wall of the middle ear in continuity with the horizontal carotid canal, dehiscence of the lateral carotid plate and enlargement of the tympanic canalicus.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Carotid artery abnormality in the middle ear is a rare clinical condition. Recognition of the problems related with this abnormality is important since it may mimic vascular tumors. Any intervention with incomplete evaluation can be fatal. Case Report: A 23-year-old girl with carotid abnormality and sensorineural hearing loss, unsteadiness and tinnitus is presented. She was followed for 2 months elsewhere assuming that she had Meniere’s disease and had previously received some medication for otitis media with effusion. Conclusion: Tomography and magnetic resonance imaging of the temporal bone are very helpful for visualization of an aberrant carotid in the middle ear. Radiological presentations are the reduced caliber of the aberrant carotid, an absence of cranial opening of carotid canal, tubular coursing along the medial wall of the middle ear in continuity with the horizontal carotid canal, dehiscence of the lateral carotid plate and enlargement of the tympanic canalicus.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15268",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "111-113",
+    "views": 6847,
+    "downloads": 9811,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "251",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=251",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=251",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=251",
+    "localPdfUrl": "js/data/pdfs/251.pdf",
+    "pdfUrl": "js/data/pdfs/251.pdf"
+  },
+  {
+    "id": 252,
+    "type": "Case Report",
+    "title": "A Case of Urachal Malacoplakia that Seems Like Urachal Cancer",
+    "authors": [
+      {
+        "name": "Osman İnci",
+        "affiliation": "Department of Urology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özcan Arabacı",
+        "affiliation": "Department of Urology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İrfan Hüseyin Atakan",
+        "affiliation": "Department of Urology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ebru Taştekin",
+        "affiliation": "Department of Pathology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Gençhellaç [[3]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Urachal masses observed in adults should be considered malignant unless they are confuted. It is very difficult to differentiate between malignant or benign lesions, including especially calcified foci and solid areas. Case Report: Our case was a 63-year-old male patient who was diagnosed as Behçet’s Disease 26 years ago. Upon clinical examination, he was also diagnosed with adenocarcinoma of prostate. He was examined by computerized tomography to define the stage of prostatic adenocarcinoma. The existence of a hypodense multiseptated cystic lesion with irregular margins and solid areas located between anterosuperior of bladder and umbilicus was reported. Hence, the lesion was evaluated as urachal carcinoma and locally advanced prostate cancer by the urooncology council. Resection of the mass, partial cystectomy and pelvic lymphadenectomy were performed as one of the surgical approach options in urachal carcinoma. After pathological examination, the mass was diagnosed as malakoplakia and metastasis of prostate adenocarcinoma was also detected in the right obdurator lymph nodule. In the literature, case reports of urachal malakoplakia are extremely rare. It is also interesting to note the absence of specific clinical symptoms for the urachal mass and the existence of concomitant adenocarcinoma in our case. Conclusion: Malakoplakia can only be diagnosed by pathological examination. Particularly, urachal malakoplakia should also be taken into consideration in the differential diagnosis of lesions which include solid areas and are located in the urachus.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Urachal masses observed in adults should be considered malignant unless they are confuted. It is very difficult to differentiate between malignant or benign lesions, including especially calcified foci and solid areas.</p>\r\n<p>\r\n\t<strong>Case Report</strong>: Our case was a 63-year-old male patient who was diagnosed as Beh&ccedil;et&rsquo;s Disease 26 years ago. Upon clinical examination, he was also diagnosed with adenocarcinoma of prostate. He was examined by computerized tomography to define the stage of prostatic adenocarcinoma. The existence of a hypodense multiseptated cystic lesion with irregular margins and solid areas located between anterosuperior of bladder and umbilicus was reported. Hence, the lesion was evaluated as urachal carcinoma and locally advanced prostate cancer by the urooncology council. Resection of the mass, partial cystectomy and pelvic lymphadenectomy were performed as one of the surgical approach options in urachal carcinoma. After pathological examination, the mass was diagnosed as malakoplakia and metastasis of prostate adenocarcinoma was also detected in the right obdurator lymph nodule. In the literature, case reports of urachal malakoplakia are extremely rare. It is also interesting to note the absence of specific clinical symptoms for the urachal mass and the existence of concomitant adenocarcinoma in our case.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Malakoplakia can only be diagnosed by pathological examination. Particularly, urachal malakoplakia should also be taken into consideration in the differential diagnosis of lesions which include solid areas and are located in the urachus.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Urachal masses observed in adults should be considered malignant unless they are confuted. It is very difficult to differentiate between malignant or benign lesions, including especially calcified foci and solid areas. Case Report: Our case was a 63-year-old male patient who was diagnosed as Behçet’s Disease 26 years ago. Upon clinical examination, he was also diagnosed with adenocarcinoma of prostate. He was examined by computerized tomography to define the stage of prostatic adenocarcinoma. The existence of a hypodense multiseptated cystic lesion with irregular margins and solid areas located between anterosuperior of bladder and umbilicus was reported. Hence, the lesion was evaluated as urachal carcinoma and locally advanced prostate cancer by the urooncology council. Resection of the mass, partial cystectomy and pelvic lymphadenectomy were performed as one of the surgical approach options in urachal carcinoma. After pathological examination, the mass was diagnosed as malakoplakia and metastasis of prostate adenocarcinoma was also detected in the right obdurator lymph nodule. In the literature, case reports of urachal malakoplakia are extremely rare. It is also interesting to note the absence of specific clinical symptoms for the urachal mass and the existence of concomitant adenocarcinoma in our case. Conclusion: Malakoplakia can only be diagnosed by pathological examination. Particularly, urachal malakoplakia should also be taken into consideration in the differential diagnosis of lesions which include solid areas and are located in the urachus.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15053",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "114-117",
+    "views": 6436,
+    "downloads": 9839,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "252",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=252",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=252",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=252",
+    "localPdfUrl": "js/data/pdfs/252.pdf",
+    "pdfUrl": "js/data/pdfs/252.pdf"
+  },
+  {
+    "id": 253,
+    "type": "Case Report",
+    "title": "Management of Pleomorphic Adenoma in the Nasopharynx: A Case Report",
+    "authors": [
+      {
+        "name": "Zahide Mine Yazıcı",
+        "affiliation": "Department of Otorhinolaryngology, Bakirkoy Dr.Sadi Konuk Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yakup Yeğin",
+        "affiliation": "Department of Otorhinolaryngology, Bakirkoy Dr.Sadi Konuk Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Çelik",
+        "affiliation": "Department of Otorhinolaryngology, Bakirkoy Dr.Sadi Konuk Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatma Tülin Kayhan",
+        "affiliation": "Department of Otorhinolaryngology, Bakirkoy Dr.Sadi Konuk Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ömer Erdur",
+        "affiliation": "Department of Otorhinolaryngology, Selcuk University Faculty of Medicine, Konya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Pleomorphic adenomas (PAs) are the most common type of benign salivary gland tumours and usually originate from the major salivary glands. PA originating from the nasopharynx has rarely been reported in the literature. Case Report: A 62 year-old male presented with right aural fullness and subjective hearing loss. Otoscopic examination revealed an opaque and bulging tympanic membrane. Nasal endoscopic examination revealed a smooth mass arising from the right wall of the nasopharynx, obstructing the opening of the right Eustachian tube. The MRI showed a 1.3x2x1.3 cm sharply outlined and lobar mass in the right lateral wall of the nasopharynx. The tumour was meticulously detached from its attachment site and excised via the transnasal route under endoscopic visualisation. Conclusion: We reported pleomorphic adenoma in the nasopharynx in a patient who presented with serous otitis media that successfully resected with transnasal endoscopic surgery and discussed the treatment methods.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Pleomorphic adenomas (PAs) are the most common type of benign salivary gland tumours and usually originate from the major salivary glands. PA originating from the nasopharynx has rarely been reported in the literature.</p>\r\n<p>\r\n\t<strong>Case Report</strong>: A 62 year-old male presented with right aural fullness and subjective hearing loss. Otoscopic examination revealed an opaque and bulging tympanic membrane. Nasal endoscopic examination revealed a smooth mass arising from the right wall of the nasopharynx, obstructing the opening of the right Eustachian tube. The MRI showed a 1.3x2x1.3 cm sharply outlined and lobar mass in the right lateral wall of the nasopharynx. The tumour was meticulously detached from its attachment site and excised via the transnasal route under endoscopic visualisation.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: We reported pleomorphic adenoma in the nasopharynx in a patient who presented with serous otitis media that successfully resected with transnasal endoscopic surgery and discussed the treatment methods.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Pleomorphic adenomas (PAs) are the most common type of benign salivary gland tumours and usually originate from the major salivary glands. PA originating from the nasopharynx has rarely been reported in the literature. Case Report: A 62 year-old male presented with right aural fullness and subjective hearing loss. Otoscopic examination revealed an opaque and bulging tympanic membrane. Nasal endoscopic examination revealed a smooth mass arising from the right wall of the nasopharynx, obstructing the opening of the right Eustachian tube. The MRI showed a 1.3x2x1.3 cm sharply outlined and lobar mass in the right lateral wall of the nasopharynx. The tumour was meticulously detached from its attachment site and excised via the transnasal route under endoscopic visualisation. Conclusion: We reported pleomorphic adenoma in the nasopharynx in a patient who presented with serous otitis media that successfully resected with transnasal endoscopic surgery and discussed the treatment methods.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15503",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "118-120",
+    "views": 6476,
+    "downloads": 9770,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "253",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=253",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=253",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=253",
+    "localPdfUrl": "js/data/pdfs/253.pdf",
+    "pdfUrl": "js/data/pdfs/253.pdf"
+  },
+  {
+    "id": 254,
+    "type": "Case Report",
+    "title": "Relapsing Polychondritis: Inflamed Joints and Ears",
+    "authors": [
+      {
+        "name": "Meltem Alkan Melikoğlu",
+        "affiliation": "Department of Rheumatology, Atatürk University Faculty of Medicine, Erzurum, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kazım Şenel",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Atatürk University Faculty of Medicine, Erzurum, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Relapsing polychondritis (RP) is an episodic and progressive inflammatory disease of the cartilaginous structures, including elastic cartilage of the ear and nose, hyaline cartilage of the peripheral joints, fibrocartilage at axial sites, and cartilage of the tracheobronchial tree. The spectrum of its presentations may vary from intermittent mild episodes of chondritis to occasional organ involvement or even life-threatening manifestations. Case Report: We presented a 64 year-old male patient with bilaterally knee arthritis and discoloration of pinna. Conclusion: There is lack of awareness about this disease due to its rarity. With this case presentation, our goal was to draw attention to this disease, which could be delayed for the diagnosis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Relapsing polychondritis (RP) is an episodic and progressive inflammatory disease of the cartilaginous structures, including elastic cartilage of the ear and nose, hyaline cartilage of the peripheral joints, fibrocartilage at axial sites, and cartilage of the tracheobronchial tree. The spectrum of its presentations may vary from intermittent mild episodes of chondritis to occasional organ involvement or even life-threatening manifestations.</p>\r\n<p>\r\n\t<strong>Case Report</strong>: We presented a 64 year-old male patient with bilaterally knee arthritis and discoloration of pinna.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: There is lack of awareness about this disease due to its rarity. With this case presentation, our goal was to draw attention to this disease, which could be delayed for the diagnosis.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Relapsing polychondritis (RP) is an episodic and progressive inflammatory disease of the cartilaginous structures, including elastic cartilage of the ear and nose, hyaline cartilage of the peripheral joints, fibrocartilage at axial sites, and cartilage of the tracheobronchial tree. The spectrum of its presentations may vary from intermittent mild episodes of chondritis to occasional organ involvement or even life-threatening manifestations. Case Report: We presented a 64 year-old male patient with bilaterally knee arthritis and discoloration of pinna. Conclusion: There is lack of awareness about this disease due to its rarity. With this case presentation, our goal was to draw attention to this disease, which could be delayed for the diagnosis.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2014.14144",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "121-123",
+    "views": 6117,
+    "downloads": 9884,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "254",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=254",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=254",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=254",
+    "localPdfUrl": "js/data/pdfs/254.pdf",
+    "pdfUrl": "js/data/pdfs/254.pdf"
+  },
+  {
+    "id": 255,
+    "type": "Case Report",
+    "title": "Atypical Diabetic Ketoacidosis: Case Report",
+    "authors": [
+      {
+        "name": "Hüseyin Demirci",
+        "affiliation": "Division of Endocrinology and Metabolic Disorders, Department of Internal Medicine, Turgut Özal University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ramazan Coşar",
+        "affiliation": "Department of Internal Medicine, Kırıkkale University Faculty of Medicine, Kırıkkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Işılay Kalan Sarı",
+        "affiliation": "Division of Endocrinology and Metabolic Disorders, Department of Internal Medicine, Kırıkkale University Faculty of Medicine, Kırıkkale, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Diabetic ketoacidosis (DKA) is a potentially life-threatening complication of diabetes mellitus and can lead to death if untreated. It is a complex metabolic state characterised by hyperglycaemia, acidosis and ketonuria. Bonsai is one of the herbal incense products that contains synthetic cannabinoid and can be easily accessible via the internet in many countries. It cannot be detected in blood and urine studies using conventional methods. Synthetic cannabinoid abuse is associated with severe side effects, including tachycardia, high blood pressure, acidosis, excess sedation and coma. Case Report: A 17-year-old male patient was brought to the emergency department with sudden onset of dyspnoea. Laboratory investigations revealed hyperglycaemia, acidosis and ketonuria. He was admitted to the intensive care unit with a diagnosis of diabetic ketoacidosis. He was not considered a typical case of diabetic ketoacidosis because of the tendency to hypokalaemia, persistent tachycardia and bronchoscopic findings. We learned from his friends that he had used cannabis for a week and used bonzai on the day that he was brought to the emergency service. Conclusion: Diabetic ketoacidosis with prolonged acidosis and tendency to hypokalaemia are investigated for the consumption of synthetic cannabinoids.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: Diabetic ketoacidosis (DKA) is a potentially life-threatening complication of diabetes mellitus and can lead to death if untreated. It is a complex metabolic state characterised by hyperglycaemia, acidosis and ketonuria. Bonsai is one of the herbal incense products that contains synthetic cannabinoid and can be easily accessible via the internet in many countries. It cannot be detected in blood and urine studies using conventional methods. Synthetic cannabinoid abuse is associated with severe side effects, including tachycardia, high blood pressure, acidosis, excess sedation and coma.</p>\r\n<p>\r\n\t<strong>Case Report</strong>: A 17-year-old male patient was brought to the emergency department with sudden onset of dyspnoea. Laboratory investigations revealed hyperglycaemia, acidosis and ketonuria. He was admitted to the intensive care unit with a diagnosis of diabetic ketoacidosis. He was not considered a typical case of diabetic ketoacidosis because of the tendency to hypokalaemia, persistent tachycardia and bronchoscopic findings. We learned from his friends that he had used cannabis for a week and used bonzai on the day that he was brought to the emergency service.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Diabetic ketoacidosis with prolonged acidosis and tendency to hypokalaemia are investigated for the consumption of synthetic cannabinoids.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Diabetic ketoacidosis (DKA) is a potentially life-threatening complication of diabetes mellitus and can lead to death if untreated. It is a complex metabolic state characterised by hyperglycaemia, acidosis and ketonuria. Bonsai is one of the herbal incense products that contains synthetic cannabinoid and can be easily accessible via the internet in many countries. It cannot be detected in blood and urine studies using conventional methods. Synthetic cannabinoid abuse is associated with severe side effects, including tachycardia, high blood pressure, acidosis, excess sedation and coma. Case Report: A 17-year-old male patient was brought to the emergency department with sudden onset of dyspnoea. Laboratory investigations revealed hyperglycaemia, acidosis and ketonuria. He was admitted to the intensive care unit with a diagnosis of diabetic ketoacidosis. He was not considered a typical case of diabetic ketoacidosis because of the tendency to hypokalaemia, persistent tachycardia and bronchoscopic findings. We learned from his friends that he had used cannabis for a week and used bonzai on the day that he was brought to the emergency service. Conclusion: Diabetic ketoacidosis with prolonged acidosis and tendency to hypokalaemia are investigated for the consumption of synthetic cannabinoids.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15123",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "124-126",
+    "views": 7417,
+    "downloads": 2898,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "255",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=255",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=255",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=255",
+    "localPdfUrl": "js/data/pdfs/255.pdf",
+    "pdfUrl": "js/data/pdfs/255.pdf"
+  },
+  {
+    "id": 256,
+    "type": "Case Report",
+    "title": "Re-emergent Tongue Tremor as the Presenting Symptom of Parkinson’s Disease",
+    "authors": [
+      {
+        "name": "Şakir Delil",
+        "affiliation": "Department of Neurology, Cerrahpaşa Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Feray Bölükbaşı",
+        "affiliation": "Department of Neurology, Cerrahpaşa Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Naz Yeni",
+        "affiliation": "Department of Neurology, Cerrahpaşa Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Güneş Kızıltan",
+        "affiliation": "Department of Neurology, Cerrahpaşa Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The most common symptom of Parkinson’s disease is the unilateral, typically resting tremor in body parts, most commonly in the upper extremities. However, this finding can spread to the other parts of the body like lips, chin, jaw and tongue during the course of the disease. Nevertheless, we have not come across any Parkinson’s disease case presenting with tongue tremor in the literature. Case Report: Here, we present a 58 year-old man with Parkinson’s disease presenting with tongue tremor, his striking response to the levodopa test and his follow-up data. Conclusion: The topography of motor symptoms at onset in Parkinson’s disease is presumably determined by the severity of the Lewy body neuronal degeneration in distinct parts of the substantia nigra. Therefore, patterns of somatic symptom progression in Parkinson’s disease indicate that involvement of the cranial structures always follows the development of symptoms in the extremities. However, in our case, cranial structures seem to precede the involvement of extremity-related areas.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background</strong>: The most common symptom of Parkinson&rsquo;s disease is the unilateral, typically resting tremor in body parts, most commonly in the upper extremities. However, this finding can spread to the other parts of the body like lips, chin, jaw and tongue during the course of the disease. Nevertheless, we have not come across any Parkinson&rsquo;s disease case presenting with tongue tremor in the literature.</p>\r\n<p>\r\n\t<strong>Case Report</strong>: Here, we present a 58 year-old man with Parkinson&rsquo;s disease presenting with tongue tremor, his striking response to the levodopa test and his follow-up data.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The topography of motor symptoms at onset in Parkinson&rsquo;s disease is presumably determined by the severity of the Lewy body neuronal degeneration in distinct parts of the substantia nigra. Therefore, patterns of somatic symptom progression in Parkinson&rsquo;s disease indicate that involvement of the cranial structures always follows the development of symptoms in the extremities. However, in our case, cranial structures seem to precede the involvement of extremity-related areas.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The most common symptom of Parkinson’s disease is the unilateral, typically resting tremor in body parts, most commonly in the upper extremities. However, this finding can spread to the other parts of the body like lips, chin, jaw and tongue during the course of the disease. Nevertheless, we have not come across any Parkinson’s disease case presenting with tongue tremor in the literature. Case Report: Here, we present a 58 year-old man with Parkinson’s disease presenting with tongue tremor, his striking response to the levodopa test and his follow-up data. Conclusion: The topography of motor symptoms at onset in Parkinson’s disease is presumably determined by the severity of the Lewy body neuronal degeneration in distinct parts of the substantia nigra. Therefore, patterns of somatic symptom progression in Parkinson’s disease indicate that involvement of the cranial structures always follows the development of symptoms in the extremities. However, in our case, cranial structures seem to precede the involvement of extremity-related areas.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15008",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "127-128",
+    "views": 7473,
+    "downloads": 3083,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "256",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=256",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=256",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=256",
+    "localPdfUrl": "js/data/pdfs/256.pdf",
+    "pdfUrl": "js/data/pdfs/256.pdf"
+  },
+  {
+    "id": 259,
+    "type": "Clinical Image",
+    "title": "A Neonatal Case of Phacomatosis Pigmentovascularis Type IIa",
+    "authors": [
+      {
+        "name": "Ezgi Ünlü",
+        "affiliation": "Department of Dermatology, Zekai Tahir Burak Women’s Health Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tijen Şahin",
+        "affiliation": "Department of Dermatology, Zekai Tahir Burak Women’s Health Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15448",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "129-130",
+    "views": 5622,
+    "downloads": 2443,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "259",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=259",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=259",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=259",
+    "localPdfUrl": "js/data/pdfs/259.pdf",
+    "pdfUrl": "js/data/pdfs/259.pdf"
+  },
+  {
+    "id": 260,
+    "type": "Clinical Image",
+    "title": "The Inevitable Outcome of Chronic Recurring Actinomyces Osteomyelitis of The Hand",
+    "authors": [
+      {
+        "name": "Umut Hatay Gölge",
+        "affiliation": "Department of Orthopaedics and Traumatology, Çanakkale Onsekiz Mart University Faculty of Medicine, Çanakkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ferdi Göksel",
+        "affiliation": "Department of Orthopaedics and Traumatology, Çanakkale Onsekiz Mart University Faculty of Medicine, Çanakkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erkam Kömürcü",
+        "affiliation": "Department of Orthopaedics and Traumatology, Çanakkale Onsekiz Mart University Faculty of Medicine, Çanakkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burak Kaymaz",
+        "affiliation": "Department of Orthopaedics and Traumatology, Çanakkale Onsekiz Mart University Faculty of Medicine, Çanakkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nihal Kılınç",
+        "affiliation": "Department of Patology, Çanakkale Onsekiz Mart University Faculty of Medicine, Çanakkale, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Keywords :",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<b>Keywords :</b>\t\t\r\n \t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Keywords :",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15198",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "131-132",
+    "views": 7015,
+    "downloads": 9595,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "260",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=260",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=260",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=260",
+    "localPdfUrl": "js/data/pdfs/260.pdf",
+    "pdfUrl": "js/data/pdfs/260.pdf"
+  },
+  {
+    "id": 261,
+    "type": "Letter",
+    "title": "Daily Melatonin Levels in Women with Systemic Lupus Erythematosus",
+    "authors": [
+      {
+        "name": "Mehmet Ağıllı",
+        "affiliation": "Department of Biochemistry, Ağrı Military Hospital, Ağrı, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Aydın",
+        "affiliation": "Department of Biochemistry, Sarıkamış Military Hospital, Sarıkamış, Kars, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fevzi Nuri Aydın [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15286",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "133-134",
+    "views": 5764,
+    "downloads": 4116,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "261",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=261",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=261",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=261",
+    "localPdfUrl": "js/data/pdfs/261.pdf",
+    "pdfUrl": "js/data/pdfs/261.pdf"
+  },
+  {
+    "id": 262,
+    "type": "Letter",
+    "title": "Spontaneous Isolated Pericardial Tamponade Associated with Warfarin",
+    "authors": [
+      {
+        "name": "Recep Akgedik",
+        "affiliation": "Department of Pulmonary Medicine, Ordu University Faculty of Medicine, Ordu, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zeki Yüksel Günaydın",
+        "affiliation": "Department of Cardiology, Ordu University Faculty of Medicine, Ordu, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Deniz Kızılırmak",
+        "affiliation": "Department of Pulmonary Medicine, Fatih University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yusuf Emre Gürel",
+        "affiliation": "Department of Cardiology, Ordu University Faculty of Medicine, Ordu, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2015.15395",
+    "received": "",
+    "accepted": "",
+    "published": "2015-01-01",
+    "volume": 32,
+    "issue": "1",
+    "pages": "135-136",
+    "views": 5656,
+    "downloads": 2570,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1172",
+    "sourceArticleId": "262",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=262",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=262",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=262",
+    "localPdfUrl": "js/data/pdfs/262.pdf",
+    "pdfUrl": "js/data/pdfs/262.pdf"
+  }
+]

@@ -1,0 +1,654 @@
+[
+  {
+    "id": 1885,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1998-01-01",
+    "volume": 15,
+    "issue": "3",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1120",
+    "sourceArticleId": "1885",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1885",
+    "localPdfUrl": "js/data/pdfs/1885.pdf",
+    "pdfUrl": "js/data/pdfs/1885.pdf"
+  },
+  {
+    "id": 1461,
+    "type": "Original Article",
+    "title": "Normo - Hiperglisemik Sıçanlarda İskemi",
+    "authors": [
+      {
+        "name": "Safinaz Albayrak Yıldız",
+        "affiliation": "İstanbul Üniversitesi Tıp Fakültesi Fizyoloji A. D.",
+        "orcid": ""
+      },
+      {
+        "name": "Seyhun Solakoğlu",
+        "affiliation": "İstanbul Üniversitesi İstanbul Tıp Fakültesi Histoloji ve Embriyoloji A. D.",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1998-01-01",
+    "volume": 15,
+    "issue": "3",
+    "pages": "141-147",
+    "views": 5684,
+    "downloads": 1530,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1120",
+    "sourceArticleId": "1461",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1461",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1461",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1461",
+    "localPdfUrl": "js/data/pdfs/1461.pdf",
+    "pdfUrl": "js/data/pdfs/1461.pdf"
+  },
+  {
+    "id": 1462,
+    "type": "Original Article",
+    "title": "Hipotiroidili ve Hipertiroidili Hastalarda Serum Lipid-Lipoprotein ve ApoA-I, ApoB Düzeyleri",
+    "authors": [
+      {
+        "name": "Erol Çakır",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Biyokimya Anabilim Dalı EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Selvan D. Özkan",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Biyokimya Anabilim Dalı EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Birol Özkan",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kardiyoloji A.B.D. Edirne - TÜRKİYE",
+        "orcid": ""
+      },
+      {
+        "name": "Şentürk Çiftçi",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Biyokimya Anabilim Dalı EDİRNE",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1998-01-01",
+    "volume": 15,
+    "issue": "3",
+    "pages": "149-153",
+    "views": 5554,
+    "downloads": 1457,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1120",
+    "sourceArticleId": "1462",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1462",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1462",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1462",
+    "localPdfUrl": "js/data/pdfs/1462.pdf",
+    "pdfUrl": "js/data/pdfs/1462.pdf"
+  },
+  {
+    "id": 1463,
+    "type": "Original Article",
+    "title": "Edirne ve Çevre İllerdeki Trakya Üniversitesi Tıp Fakültesi Göz Hastalıkları Anabilim Dalı Polikliniğine Başvuran Hastalarda Glokom Klinik Tiplerinin Görülme Oranları",
+    "authors": [
+      {
+        "name": "M. Levent Alimgil",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göz Hastalıkları Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Bayram Yapıcı",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göz Hastalıkları Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Soykan Özgür",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göz Hastalıkları Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Sait Erda",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göz Hastalıkları Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1998-01-01",
+    "volume": 15,
+    "issue": "3",
+    "pages": "155-161",
+    "views": 5666,
+    "downloads": 1625,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1120",
+    "sourceArticleId": "1463",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1463",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1463",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1463",
+    "localPdfUrl": "js/data/pdfs/1463.pdf",
+    "pdfUrl": "js/data/pdfs/1463.pdf"
+  },
+  {
+    "id": 1464,
+    "type": "Original Article",
+    "title": "Parafin Emdirilmiş Larenks Tümör Dokularında P53 Protein Değerlendirilmesi",
+    "authors": [
+      {
+        "name": "Muhsin Koten",
+        "affiliation": "T. Ü. Tıp Fakültesi KBB Anabilim Dalı EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Vehbi Şeker",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Patoloji Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Kemal Adalı",
+        "affiliation": "T. Ü. Tıp Fakültesi KBB Anabilim Dalı EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Karasalihoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi K.B.B. Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "Cem Uzun",
+        "affiliation": "Department of Otolaryngology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kemal Kutlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Patoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1998-01-01",
+    "volume": 15,
+    "issue": "3",
+    "pages": "163-169",
+    "views": 5455,
+    "downloads": 1576,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1120",
+    "sourceArticleId": "1464",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1464",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1464",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1464",
+    "localPdfUrl": "js/data/pdfs/1464.pdf",
+    "pdfUrl": "js/data/pdfs/1464.pdf"
+  },
+  {
+    "id": 1465,
+    "type": "Original Article",
+    "title": "16 Kranial Subdural Ampiyemli Olgunun Retrospektif DeğerlendirilmesiQ",
+    "authors": [
+      {
+        "name": "Cumhur Kılınçer",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroşirürji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "M. Kemal Hamamcıoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroşirürji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Aykut Karasu",
+        "affiliation": "Bakırköy Ruh ve sinir Hastalıkları Hastanesi II. Nöroşirürji Kliniği",
+        "orcid": ""
+      },
+      {
+        "name": "Kemal T. Hepgül",
+        "affiliation": "İstanbul Üniversitesi İstanbul Tıp Fakültesi Nöroşirürji Anabilim Dalı, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Bekir Özeren",
+        "affiliation": "İstanbul Üniversitesi İstanbul Tıp Fakültesi Nöroşirürji Anabilim Dalı, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Canbolat",
+        "affiliation": "İstanbul Üniversitesi İstanbul Tıp Fakültesi Nöroşirürji Anabilim Dalı, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Nail İzgi [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1998-01-01",
+    "volume": 15,
+    "issue": "3",
+    "pages": "171-174",
+    "views": 5372,
+    "downloads": 1568,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1120",
+    "sourceArticleId": "1465",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1465",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1465",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1465",
+    "localPdfUrl": "js/data/pdfs/1465.pdf",
+    "pdfUrl": "js/data/pdfs/1465.pdf"
+  },
+  {
+    "id": 1466,
+    "type": "Original Article",
+    "title": "İskemisi Olmayan Olgularla Tc99m MIBI Kavite - Duvar Oranı İle Sol Ventrikül Morfolojisine Yaklaşım",
+    "authors": [
+      {
+        "name": "Gülay Durmuş Altun",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi , Nükleer Tıp Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Sarıkaya",
+        "affiliation": "Departments of Nuclear Medicine, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Armağan Altun",
+        "affiliation": "Department of Cardiology, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Meryem Kaya",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi , Nükleer Tıp Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Şakir Berkarda",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi , Nükleer Tıp Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1998-01-01",
+    "volume": 15,
+    "issue": "3",
+    "pages": "175-179",
+    "views": 6624,
+    "downloads": 1658,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1120",
+    "sourceArticleId": "1466",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1466",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1466",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1466",
+    "localPdfUrl": "js/data/pdfs/1466.pdf",
+    "pdfUrl": "js/data/pdfs/1466.pdf"
+  },
+  {
+    "id": 1467,
+    "type": "Original Article",
+    "title": "Tc-99m- MIBI",
+    "authors": [
+      {
+        "name": "Alev Ergülen",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Nükleer Tıp Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Gülay Durmuş Altun",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Nükleer Tıp Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Mahmut Yüksel",
+        "affiliation": "Department of Nuclear Medicine, Medicine Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "T. Fikret Çermik",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Nükleer Tıp Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "N. Ömer Yiğitbaşı",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Nükleer Tıp Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1998-01-01",
+    "volume": 15,
+    "issue": "3",
+    "pages": "181-186",
+    "views": 5393,
+    "downloads": 1530,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1120",
+    "sourceArticleId": "1467",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1467",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1467",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1467",
+    "localPdfUrl": "js/data/pdfs/1467.pdf",
+    "pdfUrl": "js/data/pdfs/1467.pdf"
+  },
+  {
+    "id": 1469,
+    "type": "Original Article",
+    "title": "Kesici - Delici Alet Yaralanmasına Bağlı Ölümler",
+    "authors": [
+      {
+        "name": "Gürcan Altun",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Adli Tıp Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Derya Azmak",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Adli Tıp Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Yılmaz",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Adli Tıp Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1998-01-01",
+    "volume": 15,
+    "issue": "3",
+    "pages": "187-190",
+    "views": 5391,
+    "downloads": 1544,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1120",
+    "sourceArticleId": "1469",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1469",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1469",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1469",
+    "localPdfUrl": "js/data/pdfs/1469.pdf",
+    "pdfUrl": "js/data/pdfs/1469.pdf"
+  },
+  {
+    "id": 1470,
+    "type": "Case Report",
+    "title": "Yaşayan Olgularla Kesici - Delici Alet Yaralanmaları",
+    "authors": [
+      {
+        "name": "Gürcan Altun",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Adli Tıp Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Derya Azmak",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Adli Tıp Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Yılmaz",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Adli Tıp Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1998-01-01",
+    "volume": 15,
+    "issue": "3",
+    "pages": "191-195",
+    "views": 5400,
+    "downloads": 1582,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1120",
+    "sourceArticleId": "1470",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1470",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1470",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1470",
+    "localPdfUrl": "js/data/pdfs/1470.pdf",
+    "pdfUrl": "js/data/pdfs/1470.pdf"
+  },
+  {
+    "id": 1471,
+    "type": "Case Report",
+    "title": "Servikotorakal Bölgeye Yaklaşım Yolları",
+    "authors": [
+      {
+        "name": "M. Kemal Hamamcıoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroşirürji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Cumhur Kılınçer",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroşirürji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Yener Yörük",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göğüs Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Muzaffer Memiş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroşirürji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Sebahattin Çobanoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroşirürji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1998-01-01",
+    "volume": 15,
+    "issue": "3",
+    "pages": "199-203",
+    "views": 5436,
+    "downloads": 1499,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1120",
+    "sourceArticleId": "1471",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1471",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1471",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1471",
+    "localPdfUrl": "js/data/pdfs/1471.pdf",
+    "pdfUrl": "js/data/pdfs/1471.pdf"
+  },
+  {
+    "id": 1472,
+    "type": "Case Report",
+    "title": "Aynı Olguda Farklı Bölgelerde Yerleşmiş İki Metastatik Spinal Tümörün Tedavisi İçin İki Farklı Cerrahi Girişim Gerekli mi ?",
+    "authors": [
+      {
+        "name": "Murat Kutlay",
+        "affiliation": "GATA Hayardarpaşa Eğitim Hastanesi Nöroşirürji Kliniği Uzman Dr.",
+        "orcid": ""
+      },
+      {
+        "name": "Nusret Demircan",
+        "affiliation": "GATA-Hayardarpaşa Eğt. Hast. Nöroşirürji Kl. Yard. Doç. Tbp. Bnb.",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Gedik",
+        "affiliation": "GATA Haydarpaşa Eğitim Hastanesi Nöroşirürji Kliniği",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1998-01-01",
+    "volume": 15,
+    "issue": "3",
+    "pages": "205-210",
+    "views": 5434,
+    "downloads": 1540,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1120",
+    "sourceArticleId": "1472",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1472",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1472",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1472",
+    "localPdfUrl": "js/data/pdfs/1472.pdf",
+    "pdfUrl": "js/data/pdfs/1472.pdf"
+  },
+  {
+    "id": 1473,
+    "type": "Case Report",
+    "title": "Hemiparezisiz Global Afazili Bir Olguda Lokalizasyon ve Etyoloji",
+    "authors": [
+      {
+        "name": "Nurgül Aygın",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroloji Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Aynur Yılmaz",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroloji Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Ümit Sönmez",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Nöroloji Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1998-01-01",
+    "volume": 15,
+    "issue": "3",
+    "pages": "211-213",
+    "views": 4920,
+    "downloads": 1515,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1120",
+    "sourceArticleId": "1473",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1473",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1473",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1473",
+    "localPdfUrl": "js/data/pdfs/1473.pdf",
+    "pdfUrl": "js/data/pdfs/1473.pdf"
+  }
+]

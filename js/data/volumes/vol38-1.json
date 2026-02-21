@@ -1,0 +1,918 @@
+[
+  {
+    "id": 2278,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2278",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2278",
+    "localPdfUrl": "js/data/pdfs/2278.pdf",
+    "pdfUrl": "js/data/pdfs/2278.pdf"
+  },
+  {
+    "id": 2279,
+    "type": "Systematic Review",
+    "title": "Hirschsprung",
+    "authors": [
+      {
+        "name": "Ufuk Uylas",
+        "affiliation": "Department of Gastroenterology Surgery, İnönü University School of Medicine, Malatya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Orgun Gunes",
+        "affiliation": "Department of Gastroenterology Surgery, İnönü University School of Medicine, Malatya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cuneyt Kayaalp",
+        "affiliation": "Department of Gastroenterology Surgery, İnönü University School of Medicine, Malatya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Hirschsprung’s disease and sigmoid volvulus can sometimes be seen in the same patient.Aims: To investigate the presence of Hirschsprung's disease in patients with sigmoid volvulus and to discuss the diagnosis and treatment methods.Study Design: Systematic review.Methods: This systematic review has been reported in line with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses and the methodological quality of systematic reviews guidelines. The PubMed and Scopus databases were scanned using the keywords “Hirschsprung* volvulus*” and “congenital aganglionic megacolon volvulus*”. The reference list of the selected studies was reviewed for cross-checking. Two reviewers independently screened the available literature. Only the Hirschsprung’s disease cases involving sigmoid volvulus were included, and cases of patients with volvulus in other sites was excluded. There was no restriction with respect to the publication language and type of writing. The primary outcome was morbidity and mortality.Results: A total of 31 cases were analyzed in 22 articles; 97% of the patients were under the age of 40, 90% were male. There was a statistically significant difference in the necessity for relaparotomy between patients who were scheduled for sigmoid volvulus therapy with the suspicion of Hirschsprung’s disease and patients who were treated without suspicion of Hirschsprung’s disease (0% vs 37.5%, p=0.02). While there was no postoperative death in cases with suspected Hirschsprung disease, this mortality rate was 25% in cases without suspicion (p = 0.08).Conclusion: Hirschsprung's disease should be excluded with rectal biopsy if a patient with sigmoid volvulus is under 40 years of age and has complaints of constipation from childhood.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> Hirschsprung&rsquo;s disease and sigmoid volvulus can sometimes be seen in the same patient.<br /><strong>Aims:</strong> To investigate the presence of Hirschsprung's disease in patients with sigmoid volvulus and to discuss the diagnosis and treatment methods.<br /><strong>Study Design:</strong> Systematic review.<br /><strong>Methods:</strong> This systematic review has been reported in line with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses and the methodological quality of systematic reviews guidelines. The PubMed and Scopus databases were scanned using the keywords &ldquo;Hirschsprung* volvulus*&rdquo; and &ldquo;congenital aganglionic megacolon volvulus*&rdquo;. The reference list of the selected studies was reviewed for cross-checking. Two reviewers independently screened the available literature. Only the Hirschsprung&rsquo;s disease cases involving sigmoid volvulus were included, and cases of patients with volvulus in other sites was excluded. There was no restriction with respect to the publication language and type of writing. The primary outcome was morbidity and mortality.<br /><strong>Results:</strong> A total of 31 cases were analyzed in 22 articles; 97% of the patients were under the age of 40, 90% were male. There was a statistically significant difference in the necessity for relaparotomy between patients who were scheduled for sigmoid volvulus therapy with the suspicion of Hirschsprung&rsquo;s disease and patients who were treated without suspicion of Hirschsprung&rsquo;s disease (0% vs 37.5%, p=0.02). While there was no postoperative death in cases with suspected Hirschsprung disease, this mortality rate was 25% in cases without suspicion (p = 0.08).<br /><strong>Conclusion:</strong> Hirschsprung's disease should be excluded with rectal biopsy if a patient with sigmoid volvulus is under 40 years of age and has complaints of constipation from childhood.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Hirschsprung’s disease and sigmoid volvulus can sometimes be seen in the same patient.Aims: To investigate the presence of Hirschsprung's disease in patients with sigmoid volvulus and to discuss the diagnosis and treatment methods.Study Design: Systematic review.Methods: This systematic review has been reported in line with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses and the methodological quality of systematic reviews guidelines. The PubMed and Scopus databases were scanned using the keywords “Hirschsprung* volvulus*” and “congenital aganglionic megacolon volvulus*”. The reference list of the selected studies was reviewed for cross-checking. Two reviewers independently screened the available literature. Only the Hirschsprung’s disease cases involving sigmoid volvulus were included, and cases of patients with volvulus in other sites was excluded. There was no restriction with respect to the publication language and type of writing. The primary outcome was morbidity and mortality.Results: A total of 31 cases were analyzed in 22 articles; 97% of the patients were under the age of 40, 90% were male. There was a statistically significant difference in the necessity for relaparotomy between patients who were scheduled for sigmoid volvulus therapy with the suspicion of Hirschsprung’s disease and patients who were treated without suspicion of Hirschsprung’s disease (0% vs 37.5%, p=0.02). While there was no postoperative death in cases with suspected Hirschsprung disease, this mortality rate was 25% in cases without suspicion (p = 0.08).Conclusion: Hirschsprung's disease should be excluded with rectal biopsy if a patient with sigmoid volvulus is under 40 years of age and has complaints of constipation from childhood.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.4.131",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "1-6",
+    "views": 6753,
+    "downloads": 4727,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2279",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2279",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2279",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2279",
+    "localPdfUrl": "js/data/pdfs/2279.pdf",
+    "pdfUrl": "js/data/pdfs/2279.pdf"
+  },
+  {
+    "id": 2280,
+    "type": "Systematic Review & Meta-analysis",
+    "title": "Efficacy and Safety of Bevacizumab-Combined Chemotherapy for Advanced and Recurrent Endometrial Cancer: A Systematic Review and Meta-analysis",
+    "authors": [
+      {
+        "name": "Hui Chen",
+        "affiliation": "Department of Obstetrics and Gynecology, Union Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Minglin Liang",
+        "affiliation": "Department of Obstetrics and Gynecology, Union Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Jie Min",
+        "affiliation": "Department of Obstetrics and Gynecology, Union Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Bevacizumab-combined chemotherapy is a new regimen for advanced/recurrent endometrial cancer.Aims: To evaluate the efficacy and safety of bevacizumab-combined chemotherapy in advanced/recurrent endometrial cancer.Study design: Systematic review and meta-analysis.Methods: Eligible studies were retrieved from Embase, PubMed, and Cochrane Library. The data of primary outcomes including progression-free survival and overall survival and secondary outcomes including overall survival, response rate, and adverse events (grade ≥2) were extracted, pooled, and used for the meta-analysis to compare the efficacy and safety of bevacizumab-combined chemotherapy with other treatments in patients with advanced/recurrent endometrial cancer.Results: Notably, 2 randomized-controlled and 5 single-arm trials of bevacizumab-combined chemotherapy or bevacizumab single-agent therapy for endometrial cancer were included. Meta-analysis indicated that bevacizumab-combined chemotherapy significantly increased the progression-free survival rate (hazard ratio=0.82, 95% confidence interval=0.70, 0.97) and overall survival rate (hazard ratio=0.83, 95% confidence interval=0.70, 0.98) compared with chemotherapy alone. The rates of overall, complete, and partial response to bevacizumab-combined chemotherapy were 76%, 22%, and 21%, respectively. The 6 and 12-month disease-free progression rates after bevacizumab-combined chemotherapy were 79% and 62%, respectively. Anemia (23%), leukopenia (46%), neutropenia (51%), hypertension (16%), and fatigue (24%) were the general adverse events after bevacizumab-combined chemotherapy.Conclusion: Bevacizumab-combined chemotherapy may have a higher efficacy in improving the overall and progression-free survival in patients with advanced/recurrent endometrial cancers compared with chemotherapy alone.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> Bevacizumab-combined chemotherapy is a new regimen for advanced/recurrent endometrial cancer.<br /><strong>Aims:</strong> To evaluate the efficacy and safety of bevacizumab-combined chemotherapy in advanced/recurrent endometrial cancer.<br /><strong>Study design:</strong> Systematic review and meta-analysis.<br /><strong>Methods:</strong> Eligible studies were retrieved from Embase, PubMed, and Cochrane Library. The data of primary outcomes including progression-free survival and overall survival and secondary outcomes including overall survival, response rate, and adverse events (grade &ge;2) were extracted, pooled, and used for the meta-analysis to compare the efficacy and safety of bevacizumab-combined chemotherapy with other treatments in patients with advanced/recurrent endometrial cancer.<br /><strong>Results:</strong> Notably, 2 randomized-controlled and 5 single-arm trials of bevacizumab-combined chemotherapy or bevacizumab single-agent therapy for endometrial cancer were included. Meta-analysis indicated that bevacizumab-combined chemotherapy significantly increased the progression-free survival rate (hazard ratio=0.82, 95% confidence interval=0.70, 0.97) and overall survival rate (hazard ratio=0.83, 95% confidence interval=0.70, 0.98) compared with chemotherapy alone. The rates of overall, complete, and partial response to bevacizumab-combined chemotherapy were 76%, 22%, and 21%, respectively. The 6 and 12-month disease-free progression rates after bevacizumab-combined chemotherapy were 79% and 62%, respectively. Anemia (23%), leukopenia (46%), neutropenia (51%), hypertension (16%), and fatigue (24%) were the general adverse events after bevacizumab-combined chemotherapy.<br /><strong>Conclusion</strong>: Bevacizumab-combined chemotherapy may have a higher efficacy in improving the overall and progression-free survival in patients with advanced/recurrent endometrial cancers compared with chemotherapy alone.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Bevacizumab-combined chemotherapy is a new regimen for advanced/recurrent endometrial cancer.Aims: To evaluate the efficacy and safety of bevacizumab-combined chemotherapy in advanced/recurrent endometrial cancer.Study design: Systematic review and meta-analysis.Methods: Eligible studies were retrieved from Embase, PubMed, and Cochrane Library. The data of primary outcomes including progression-free survival and overall survival and secondary outcomes including overall survival, response rate, and adverse events (grade ≥2) were extracted, pooled, and used for the meta-analysis to compare the efficacy and safety of bevacizumab-combined chemotherapy with other treatments in patients with advanced/recurrent endometrial cancer.Results: Notably, 2 randomized-controlled and 5 single-arm trials of bevacizumab-combined chemotherapy or bevacizumab single-agent therapy for endometrial cancer were included. Meta-analysis indicated that bevacizumab-combined chemotherapy significantly increased the progression-free survival rate (hazard ratio=0.82, 95% confidence interval=0.70, 0.97) and overall survival rate (hazard ratio=0.83, 95% confidence interval=0.70, 0.98) compared with chemotherapy alone. The rates of overall, complete, and partial response to bevacizumab-combined chemotherapy were 76%, 22%, and 21%, respectively. The 6 and 12-month disease-free progression rates after bevacizumab-combined chemotherapy were 79% and 62%, respectively. Anemia (23%), leukopenia (46%), neutropenia (51%), hypertension (16%), and fatigue (24%) were the general adverse events after bevacizumab-combined chemotherapy.Conclusion: Bevacizumab-combined chemotherapy may have a higher efficacy in improving the overall and progression-free survival in patients with advanced/recurrent endometrial cancers compared with chemotherapy alone.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2021.20121",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "7-12",
+    "views": 5861,
+    "downloads": 12638,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2280",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2280",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2280",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2280",
+    "localPdfUrl": "js/data/pdfs/2280.pdf",
+    "pdfUrl": "js/data/pdfs/2280.pdf"
+  },
+  {
+    "id": 2281,
+    "type": "Original Article",
+    "title": "Role of Plasma Soluble Lectin-Like Oxidized Low-Density Lipoprotein Receptor-1 and microRNA-98 in Severity and Risk of Coronary Artery Disease",
+    "authors": [
+      {
+        "name": "Md Sayed Ali Sheikh",
+        "affiliation": "Department of Internal Medicine, Cardiology, College of Medicine, Jouf University, Sakaka, Aljouf, Kingdom of Saudi Arabia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Coronary artery diseases are the most important cause of premature death, and these diseases are predominantly related to atherosclerosis. Soluble lectin-like oxidized low-density lipoprotein receptor-1 and microRNAs are closely associated with atherosclerotic coronary heart diseases.Aims: To investigate the relationship between the severity and risk of coronary artery disease and plasma soluble lectin-like oxidized low-density lipoprotein receptor-1 and miR-98.Study Design: Case-control study.Methods: Angiographically documented patients with 38 single-vessel, 75 double-vessel, and 62 multi-vessel coronary artery disease; 62 healthy control participants; and 24-hour hypoxic (1% oxygen) human umbilical vein endothelial cells were included in this study. Circulating soluble lectin-like oxidized low-density lipoprotein receptor-1 concentrations were determined through enzyme-linked immunosorbent assays, and miR-98 expressions were measured by quantitative real-time polymerase chain reaction.Results: The expressions of plasma soluble lectin-like oxidized low-density lipoprotein receptor-1 levels were progressively and significantly higher in patients with single-vessel, double-vessel, and multi-vessel coronary artery disease than in healthy controls (p<0.001). Circulating soluble lectin-like oxidized low-density lipoprotein receptor-1 concentrations in female patients with multi-vessel, double-vessel, and single-vessel coronary artery disease had evidently elevated compared with that in male patients (p<0.001). Plasma soluble lectin-like oxidized low-density lipoprotein receptor-1 levels were remarkably increased in females with coronary artery disease in different age groups compared with the males in the same age groups (p<0.001). Patients with single-vessel (areas under the curve=0.879), double-vessel (area under the curve=0.928), and multi-vessel (area under the curve=0.943) coronary artery disease have been clearly differentiated from healthy participants with respect to high sensitivity and specificity. The expression of miR-98 was noticeably downregulated in patients with single-, double- and multi-vessel occluded coronary artery disease and in hypoxic human umbilical vein endothelial cell compared with controls (p<0.001). Significantly elevated lectin-like oxidized low-density lipoprotein receptor-1 and caspase-3 activity and remarkably decreased cellular viability in hypoxic injured human umbilical vein endothelial cell. On the contrary, mimic of miR-98 markedly reduced caspase-3 and lectin-like oxidized low-density lipoprotein receptor-1 levels and highly increased cellular viability.Conclusion: Elevated circulating plasma soluble lectin-like oxidized low-density lipoprotein receptor-1 levels have a potential impact to identify the severity of coronary artery disease and have a strong correlation with aging as well as the female gender. Reduced plasma miR-98 level is possibly considered a risk factor for coronary artery disease, and agomiR-98 prevents atherosclerosis and cellular injury by targeting lectin-like oxidized low-density lipoprotein receptor-1.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> Coronary artery diseases are the most important cause of premature death, and these diseases are predominantly related to atherosclerosis. Soluble lectin-like oxidized low-density lipoprotein receptor-1 and microRNAs are closely associated with atherosclerotic coronary heart diseases.<br /><strong>Aims:</strong> To investigate the relationship between the severity and risk of coronary artery disease and plasma soluble lectin-like oxidized low-density lipoprotein receptor-1 and miR-98.<br /><strong>Study Design:</strong> Case-control study.<br /><strong>Methods:</strong> Angiographically documented patients with 38 single-vessel, 75 double-vessel, and 62 multi-vessel coronary artery disease; 62 healthy control participants; and 24-hour hypoxic (1% oxygen) human umbilical vein endothelial cells were included in this study. Circulating soluble lectin-like oxidized low-density lipoprotein receptor-1 concentrations were determined through enzyme-linked immunosorbent assays, and miR-98 expressions were measured by quantitative real-time polymerase chain reaction.<br /><strong>Results:</strong> The expressions of plasma soluble lectin-like oxidized low-density lipoprotein receptor-1 levels were progressively and significantly higher in patients with single-vessel, double-vessel, and multi-vessel coronary artery disease than in healthy controls (p&lt;0.001). Circulating soluble lectin-like oxidized low-density lipoprotein receptor-1 concentrations in female patients with multi-vessel, double-vessel, and single-vessel coronary artery disease had evidently elevated compared with that in male patients (p&lt;0.001). Plasma soluble lectin-like oxidized low-density lipoprotein receptor-1 levels were remarkably increased in females with coronary artery disease in different age groups compared with the males in the same age groups (p&lt;0.001). Patients with single-vessel (areas under the curve=0.879), double-vessel (area under the curve=0.928), and multi-vessel (area under the curve=0.943) coronary artery disease have been clearly differentiated from healthy participants with respect to high sensitivity and specificity. The expression of miR-98 was noticeably downregulated in patients with single-, double- and multi-vessel occluded coronary artery disease and in hypoxic human umbilical vein endothelial cell compared with controls (p&lt;0.001). Significantly elevated lectin-like oxidized low-density lipoprotein receptor-1 and caspase-3 activity and remarkably decreased cellular viability in hypoxic injured human umbilical vein endothelial cell. On the contrary, mimic of miR-98 markedly reduced caspase-3 and lectin-like oxidized low-density lipoprotein receptor-1 levels and highly increased cellular viability.<br /><strong>Conclusion:</strong> Elevated circulating plasma soluble lectin-like oxidized low-density lipoprotein receptor-1 levels have a potential impact to identify the severity of coronary artery disease and have a strong correlation with aging as well as the female gender. Reduced plasma miR-98 level is possibly considered a risk factor for coronary artery disease, and agomiR-98 prevents atherosclerosis and cellular injury by targeting lectin-like oxidized low-density lipoprotein receptor-1.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Coronary artery diseases are the most important cause of premature death, and these diseases are predominantly related to atherosclerosis. Soluble lectin-like oxidized low-density lipoprotein receptor-1 and microRNAs are closely associated with atherosclerotic coronary heart diseases.Aims: To investigate the relationship between the severity and risk of coronary artery disease and plasma soluble lectin-like oxidized low-density lipoprotein receptor-1 and miR-98.Study Design: Case-control study.Methods: Angiographically documented patients with 38 single-vessel, 75 double-vessel, and 62 multi-vessel coronary artery disease; 62 healthy control participants; and 24-hour hypoxic (1% oxygen) human umbilical vein endothelial cells were included in this study. Circulating soluble lectin-like oxidized low-density lipoprotein receptor-1 concentrations were determined through enzyme-linked immunosorbent assays, and miR-98 expressions were measured by quantitative real-time polymerase chain reaction.Results: The expressions of plasma soluble lectin-like oxidized low-density lipoprotein receptor-1 levels were progressively and significantly higher in patients with single-vessel, double-vessel, and multi-vessel coronary artery disease than in healthy controls (p<0.001). Circulating soluble lectin-like oxidized low-density lipoprotein receptor-1 concentrations in female patients with multi-vessel, double-vessel, and single-vessel coronary artery disease had evidently elevated compared with that in male patients (p<0.001). Plasma soluble lectin-like oxidized low-density lipoprotein receptor-1 levels were remarkably increased in females with coronary artery disease in different age groups compared with the males in the same age groups (p<0.001). Patients with single-vessel (areas under the curve=0.879), double-vessel (area under the curve=0.928), and multi-vessel (area under the curve=0.943) coronary artery disease have been clearly differentiated from healthy participants with respect to high sensitivity and specificity. The expression of miR-98 was noticeably downregulated in patients with single-, double- and multi-vessel occluded coronary artery disease and in hypoxic human umbilical vein endothelial cell compared with controls (p<0.001). Significantly elevated lectin-like oxidized low-density lipoprotein receptor-1 and caspase-3 activity and remarkably decreased cellular viability in hypoxic injured human umbilical vein endothelial cell. On the contrary, mimic of miR-98 markedly reduced caspase-3 and lectin-like oxidized low-density lipoprotein receptor-1 levels and highly increased cellular viability.Conclusion: Elevated circulating plasma soluble lectin-like oxidized low-density lipoprotein receptor-1 levels have a potential impact to identify the severity of coronary artery disease and have a strong correlation with aging as well as the female gender. Reduced plasma miR-98 level is possibly considered a risk factor for coronary artery disease, and agomiR-98 prevents atherosclerosis and cellular injury by targeting lectin-like oxidized low-density lipoprotein receptor-1.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2021.20243",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "13-22",
+    "views": 6376,
+    "downloads": 10264,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2281",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2281",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2281",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2281",
+    "localPdfUrl": "js/data/pdfs/2281.pdf",
+    "pdfUrl": "js/data/pdfs/2281.pdf"
+  },
+  {
+    "id": 2282,
+    "type": "Original Article",
+    "title": "Early Detection and Control of Methicillin resistant Staphylococcus aureus Outbreak in an Intensive Care Unit",
+    "authors": [
+      {
+        "name": "Banu Bayraktar",
+        "affiliation": "Department of Clinical Microbiology, University of Health Sciences Şişli Hamidiye Etfal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Alper Gündüz",
+        "affiliation": "Department of Clinical Microbiology, University of Health Sciences Şişli Hamidiye Etfal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erman Oryaşın",
+        "affiliation": "REDPROM Ctr., Adnan Menderes University, Aydın, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Duygu Erdemir",
+        "affiliation": "Department of Clinical Microbiology, University of Health Sciences Şişli Hamidiye Etfal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Leyla Teke",
+        "affiliation": "Department of Clinical Microbiology, University of Health Sciences Şişli Hamidiye Etfal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Elif Aktaş",
+        "affiliation": "Department of Clinical Microbiology, University of Health Sciences Şişli Hamidiye Etfal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Rıza Durmaz",
+        "affiliation": "Microbiology Reference Laboratories, Public Health Agency of Turkey, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selma Şen",
+        "affiliation": "Department of Clinical Microbiology, University of Health Sciences Şişli Hamidiye Etfal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nuray Uzun",
+        "affiliation": "Department of Clinical Microbiology, University of Health Sciences Şişli Hamidiye Etfal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Bozdoğan",
+        "affiliation": "REDPROM Ctr., Adnan Menderes University, Aydın, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Although Methicillin resistant Staphylococcus aureus (MRSA) is one of the major pathogens of healthcare associated infections, we had only sporadic cases in our intensive care unit (ICU) for years.Aims: To investigate the sudden increase in the number of MRSA cases in ICU.Study design: Descriptive study.Methods: From the 5th December 2016 to 26th January 2017, we detected 11 new MRSA cases in ICU. Screening of 73 ICU healthcare workers (HCWs) and screening of 13 patients was performed for outbreak investigation. Nine clinical isolates available in stocks and eight screening MRSA isolates were included in molecular studies. PFGE, spa-mecA-mecC-PVL in-house multiplex PCR assay and spa typing, SCCmec typing were performed for all isolates. Sequence type of the representative strain was determined by Multi-Locus Sequence typing (MLST).Results: All strains were mecA positive, PVL negative, and have the same antimicrobial susceptibility pattern except for two strains. All clinical, two patient screening and three nasal isolates of HCWs showed the same pulsotype, named clone A. The spa type of outbreak isolates is t030 and the SCCmec type is SCCmecIII; the MLST type of representative strain is ST239 (PFGE pulsotype A, ST239-SCCmecIII-t030). Unrelated three isolates had PFGE pulsotype B-SCCmecI-t030, PFGE pulsotype C-SCCmecIII-t459, PFGE pulsotype D-SCCmecIII.Conclusion: Molecular typing techniques are the cornerstones for the investigation of outbreaks. Infection control measures, such as enhancing cleaning procedures, promoting hand hygiene, should be enforced in the ICU unit. All patients, including those who have already been discharged to other departments, must be put on contact isolation. HCWs carrying the MRSA strains could be offered decolonization.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> Although Methicillin resistant Staphylococcus aureus (MRSA) is one of the major pathogens of healthcare associated infections, we had only sporadic cases in our intensive care unit (ICU) for years.<br /><strong>Aims:</strong> To investigate the sudden increase in the number of MRSA cases in ICU.<br /><strong>Study design:</strong> Descriptive study.<br /><strong>Methods:</strong> From the 5th December 2016 to 26th January 2017, we detected 11 new MRSA cases in ICU. Screening of 73 ICU healthcare workers (HCWs) and screening of 13 patients was performed for outbreak investigation. Nine clinical isolates available in stocks and eight screening MRSA isolates were included in molecular studies. PFGE, spa-mecA-mecC-PVL in-house multiplex PCR assay and spa typing, SCCmec typing were performed for all isolates. Sequence type of the representative strain was determined by Multi-Locus Sequence typing (MLST).<br /><strong>Results:</strong> All strains were mecA positive, PVL negative, and have the same antimicrobial susceptibility pattern except for two strains. All clinical, two patient screening and three nasal isolates of HCWs showed the same pulsotype, named clone A. The spa type of outbreak isolates is t030 and the SCCmec type is SCCmecIII; the MLST type of representative strain is ST239 (PFGE pulsotype A, ST239-SCCmecIII-t030). Unrelated three isolates had PFGE pulsotype B-SCCmecI-t030, PFGE pulsotype C-SCCmecIII-t459, PFGE pulsotype D-SCCmecIII.<br /><strong>Conclusion:</strong> Molecular typing techniques are the cornerstones for the investigation of outbreaks. Infection control measures, such as enhancing cleaning procedures, promoting hand hygiene, should be enforced in the ICU unit. All patients, including those who have already been discharged to other departments, must be put on contact isolation. HCWs carrying the MRSA strains could be offered decolonization.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Although Methicillin resistant Staphylococcus aureus (MRSA) is one of the major pathogens of healthcare associated infections, we had only sporadic cases in our intensive care unit (ICU) for years.Aims: To investigate the sudden increase in the number of MRSA cases in ICU.Study design: Descriptive study.Methods: From the 5th December 2016 to 26th January 2017, we detected 11 new MRSA cases in ICU. Screening of 73 ICU healthcare workers (HCWs) and screening of 13 patients was performed for outbreak investigation. Nine clinical isolates available in stocks and eight screening MRSA isolates were included in molecular studies. PFGE, spa-mecA-mecC-PVL in-house multiplex PCR assay and spa typing, SCCmec typing were performed for all isolates. Sequence type of the representative strain was determined by Multi-Locus Sequence typing (MLST).Results: All strains were mecA positive, PVL negative, and have the same antimicrobial susceptibility pattern except for two strains. All clinical, two patient screening and three nasal isolates of HCWs showed the same pulsotype, named clone A. The spa type of outbreak isolates is t030 and the SCCmec type is SCCmecIII; the MLST type of representative strain is ST239 (PFGE pulsotype A, ST239-SCCmecIII-t030). Unrelated three isolates had PFGE pulsotype B-SCCmecI-t030, PFGE pulsotype C-SCCmecIII-t459, PFGE pulsotype D-SCCmecIII.Conclusion: Molecular typing techniques are the cornerstones for the investigation of outbreaks. Infection control measures, such as enhancing cleaning procedures, promoting hand hygiene, should be enforced in the ICU unit. All patients, including those who have already been discharged to other departments, must be put on contact isolation. HCWs carrying the MRSA strains could be offered decolonization.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.2.153",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "23.28.",
+    "views": 5880,
+    "downloads": 3243,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2282",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2282",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2282",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2282",
+    "localPdfUrl": "js/data/pdfs/2282.pdf",
+    "pdfUrl": "js/data/pdfs/2282.pdf"
+  },
+  {
+    "id": 2283,
+    "type": "Original Article",
+    "title": "Comparison of Different Pharmaceutical Preparations of Colchicine in Children with Familial Mediterranean Fever: Is Colchicine Opocalcium a Good Alternative?",
+    "authors": [
+      {
+        "name": "Serkan Türkuçar",
+        "affiliation": "Department of Pediatric Rheumatology, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gülçin Otar Yener",
+        "affiliation": "Department of Pediatric Rheumatology, Şanlıurfa Training and Research Hospital, Şanlıurfa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hatice Adıgüzel Dundar",
+        "affiliation": "Department of Pediatric Rheumatology, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ceyhun Acari",
+        "affiliation": "Department of Pediatric Rheumatology, Malatya Training and Research Hospital, Malatya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Balahan Makay",
+        "affiliation": "Department of Pediatric Rheumatology, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selçuk Yüksel",
+        "affiliation": "Department of Pediatric Rheumatology, Pamukkale University School of Medicine, Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erbil Ünsal",
+        "affiliation": "Department of Pediatric Rheumatology, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Colchicine is an anti-inflammatory agent used for preventing familial Mediterranean fever (FMF) attacks and amyloidosis. A significant number of patients are non-responsive or intolerant to the domestic drug colchicum dispert.Aims: To compare the efficacy and side effects of colchicum dispert and colchicine opocalcium in children with FMF.Study Design: Cross-sectional study.Methods: A total of 29 children with FMF who used colchicum dispert for at least 6 months initially and colchicine opocalcium for another consecutive 6 months were included. Sex and gender equity in research was considered. Clinical features, visual analog scale for pain scores, exercise-induced leg pain, and FMF severity scores with laboratory parameters were evaluated for both the treatment periods. Bristol stool chart and number of stools per 24 hours were recorded to compare the gastrointestinal side effects.Results: The major indication was non-responsiveness in 18 patients (62%) and intolerance in 11 patients (38%). Usage of colchicine opocalcium (significantly higher dosage than colchicum dispert) showed statistically significant beneficial effects on the number and duration of attacks, visual analog scale for pain, exercise-induced leg pain scores, and FMF severity scores (p<0.05 for each parameter). Bristol stool chart questionnaire scores decreased from 5.62±1.56 to 4.15±1.73 points, and the scores of daily stool number decreased from 0.46±0.894 to 0.03±0.118 points (p<0.05). There were 12 patients who benefited from the switch without a change in dosage, and the clinical features were significantly better with the colchicine opocalcium treatment.Conclusion: Pediatric patients with FMF, who have active disease and/or gastrointestinal complaints during the use of colchicum dispert, may benefit from colchicine opocalcium.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> Colchicine is an anti-inflammatory agent used for preventing familial Mediterranean fever (FMF) attacks and amyloidosis. A significant number of patients are non-responsive or intolerant to the domestic drug colchicum dispert.<br /><strong>Aims:</strong> To compare the efficacy and side effects of colchicum dispert and colchicine opocalcium in children with FMF.<br /><strong>Study Design:</strong> Cross-sectional study.<br /><strong>Methods:</strong> A total of 29 children with FMF who used colchicum dispert for at least 6 months initially and colchicine opocalcium for another consecutive 6 months were included. Sex and gender equity in research was considered. Clinical features, visual analog scale for pain scores, exercise-induced leg pain, and FMF severity scores with laboratory parameters were evaluated for both the treatment periods. Bristol stool chart and number of stools per 24 hours were recorded to compare the gastrointestinal side effects.<br /><strong>Results:</strong> The major indication was non-responsiveness in 18 patients (62%) and intolerance in 11 patients (38%). Usage of colchicine opocalcium (significantly higher dosage than colchicum dispert) showed statistically significant beneficial effects on the number and duration of attacks, visual analog scale for pain, exercise-induced leg pain scores, and FMF severity scores (p&lt;0.05 for each parameter). Bristol stool chart questionnaire scores decreased from 5.62&plusmn;1.56 to 4.15&plusmn;1.73 points, and the scores of daily stool number decreased from 0.46&plusmn;0.894 to 0.03&plusmn;0.118 points (p&lt;0.05). There were 12 patients who benefited from the switch without a change in dosage, and the clinical features were significantly better with the colchicine opocalcium treatment.<br /><strong>Conclusion:</strong> Pediatric patients with FMF, who have active disease and/or gastrointestinal complaints during the use of colchicum dispert, may benefit from colchicine opocalcium.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Colchicine is an anti-inflammatory agent used for preventing familial Mediterranean fever (FMF) attacks and amyloidosis. A significant number of patients are non-responsive or intolerant to the domestic drug colchicum dispert.Aims: To compare the efficacy and side effects of colchicum dispert and colchicine opocalcium in children with FMF.Study Design: Cross-sectional study.Methods: A total of 29 children with FMF who used colchicum dispert for at least 6 months initially and colchicine opocalcium for another consecutive 6 months were included. Sex and gender equity in research was considered. Clinical features, visual analog scale for pain scores, exercise-induced leg pain, and FMF severity scores with laboratory parameters were evaluated for both the treatment periods. Bristol stool chart and number of stools per 24 hours were recorded to compare the gastrointestinal side effects.Results: The major indication was non-responsiveness in 18 patients (62%) and intolerance in 11 patients (38%). Usage of colchicine opocalcium (significantly higher dosage than colchicum dispert) showed statistically significant beneficial effects on the number and duration of attacks, visual analog scale for pain, exercise-induced leg pain scores, and FMF severity scores (p<0.05 for each parameter). Bristol stool chart questionnaire scores decreased from 5.62±1.56 to 4.15±1.73 points, and the scores of daily stool number decreased from 0.46±0.894 to 0.03±0.118 points (p<0.05). There were 12 patients who benefited from the switch without a change in dosage, and the clinical features were significantly better with the colchicine opocalcium treatment.Conclusion: Pediatric patients with FMF, who have active disease and/or gastrointestinal complaints during the use of colchicum dispert, may benefit from colchicine opocalcium.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.5.2205.220",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "29-33",
+    "views": 5993,
+    "downloads": 10667,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2283",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2283",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2283",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2283",
+    "localPdfUrl": "js/data/pdfs/2283.pdf",
+    "pdfUrl": "js/data/pdfs/2283.pdf"
+  },
+  {
+    "id": 2257,
+    "type": "Original Article",
+    "title": "New Psychoactive Substance 5-MeO-MiPT In vivo Acute Toxicity and Hystotoxicological Study",
+    "authors": [
+      {
+        "name": "Yusuf Ali Altuncı",
+        "affiliation": "Department of Emergency, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Melike Aydoğdu",
+        "affiliation": "Department of Addiction Toxicology, Ege University Institute on Drug Abuse, Toxicology and Pharmaceutical Sciences, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Eda Açıkgöz",
+        "affiliation": "Department of Histology and Embryology, Yüzüncü Yıl University School of Medicine, Van, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ümmü Güven",
+        "affiliation": "Department of Stem Cell, Ege University Health Science Institute, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fahriye Düzağaç",
+        "affiliation": "Department of Stem Cell, Ege University Health Science Institute, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aslı Atasoy",
+        "affiliation": "Department of Forensic Science, Çukurova University, Institute on Addiction and Forensic Science, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nebile Dağlıoğlu",
+        "affiliation": "Department of Forensic Medicine, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serap Annette Akgür",
+        "affiliation": "Department of Addiction Toxicology, Ege University Institute on Drug Abuse, Toxicology and Pharmaceutical Sciences, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: The hallucinogenic tryptamine analog 5-methoxy-N-methyl-N-isopropyltryptamine (5-MeO-MiPT) causes social problems worldwide. There are several studies on the metabolism; however, not more studies were found in the literature on acute toxicity.Aims: To report the acute toxicity of 5-MeO-MiPT in mice, followed by quantitative toxicological analysis of blood and organs, hystotoxicological and immunohistochemical analysis of tissues and cells.Study design: Animal experimentMethods: In vivo experiments were performed using CD1 adult female mice (n=26). Animals were caged in 4 groups randomly. First group was a control (n=3). Second group was vehicle control (n=3) and injected 150 μL of blank solution (50% dimethyl sulfoxide in saline /0.9% of NaCl). While for acute toxicity experiments, 5-MeO-MiPT was added to a blank solution in order to obtain a dose of 0.27 mg/kg in 150 μL injection (n=10) and the last group were injected 2.7 mg/kg 5-MeO-MiPT in a 150 μL injection (n=10). Quantitative toxicological analysis, hystotoxicological and immunohistochemical analysis were performed.Results: In the toxicological analysis, 5-MeO-MiPT was found negative in biological samples which were control, vehicle control, and 0.27 mg/kg dose mice groups. 5-MeO-MiPT was found 2.7-13.4 ng/mL in blood, 11-29 ng/g in kidney, 15.2-108.3 ng/g in liver, and 1.5-40.6 ng/g in the brain in 2,7 mg/kg injected group. In a low dose of the 5-MeO-MiPT liver section, compared with normal tissues, the difference in staining was statistically significant (p<0.0001). In high-dose of 5-MeO-MiPT, H-score showed that the increase in the number of Caspase-3 positive cells was significant compared to the control (p<0.05). In high-dose of 5-MeO-MiPT, intense Caspase-3 immunoreactivity was observed and the increase in the number of Caspase-3 positive cells compared to the control was statistically significant (p<0.05). In brain section, the statistics of the results obtained from the H-score showed that the increase in the number of Caspase-3 positive cells was significant compared to the control (p=0.0183). In vehicle control liver section, there were few Caspase-8 positive cells characterized by a light brown appearance (p=0.0117). In the high-dose 5-MeO-MiPT group, the numbers of positive cells at low and high doses of 5-MeO-MiPT group were statistically significant compared to the control (p<0.05). In the high-dose 5-MeO-MiPT group, Caspase-8 immunoreactivity was detected in the glomerular structures. Compared to control, the increase in Caspase-8 immunoreactivity was found to be statistically significant (p<0.05).Conclusion: Low-dose 5-MeO-MiPT did not cause any serious histopathological effects on the liver, kidney, and brain. High doses induce apoptotic cell death through caspase activity.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> The hallucinogenic tryptamine analog 5-methoxy-N-methyl-N-isopropyltryptamine (5-MeO-MiPT) causes social problems worldwide. There are several studies on the metabolism; however, not more studies were found in the literature on acute toxicity.<br /><strong>Aims:</strong> To report the acute toxicity of 5-MeO-MiPT in mice, followed by quantitative toxicological analysis of blood and organs, hystotoxicological and immunohistochemical analysis of tissues and cells.<br /><strong>Study design:</strong> Animal experiment<br /><strong>Methods:</strong> In vivo experiments were performed using CD1 adult female mice (n=26). Animals were caged in 4 groups randomly. First group was a control (n=3). Second group was vehicle control (n=3) and injected 150 &mu;L of blank solution (50% dimethyl sulfoxide in saline /0.9% of NaCl). While for acute toxicity experiments, 5-MeO-MiPT was added to a blank solution in order to obtain a dose of 0.27 mg/kg in 150 &mu;L injection (n=10) and the last group were injected 2.7 mg/kg 5-MeO-MiPT in a 150 &mu;L injection (n=10). Quantitative toxicological analysis, hystotoxicological and immunohistochemical analysis were performed.<br /><strong>Results:</strong> In the toxicological analysis, 5-MeO-MiPT was found negative in biological samples which were control, vehicle control, and 0.27 mg/kg dose mice groups. 5-MeO-MiPT was found 2.7-13.4 ng/mL in blood, 11-29 ng/g in kidney, 15.2-108.3 ng/g in liver, and 1.5-40.6 ng/g in the brain in 2,7 mg/kg injected group. In a low dose of the 5-MeO-MiPT liver section, compared with normal tissues, the difference in staining was statistically significant (p&lt;0.0001). In high-dose of 5-MeO-MiPT, H-score showed that the increase in the number of Caspase-3 positive cells was significant compared to the control (p&lt;0.05). In high-dose of 5-MeO-MiPT, intense Caspase-3 immunoreactivity was observed and the increase in the number of Caspase-3 positive cells compared to the control was statistically significant (p&lt;0.05). In brain section, the statistics of the results obtained from the H-score showed that the increase in the number of Caspase-3 positive cells was significant compared to the control (p=0.0183). In vehicle control liver section, there were few Caspase-8 positive cells characterized by a light brown appearance (p=0.0117). In the high-dose 5-MeO-MiPT group, the numbers of positive cells at low and high doses of 5-MeO-MiPT group were statistically significant compared to the control (p&lt;0.05). In the high-dose 5-MeO-MiPT group, Caspase-8 immunoreactivity was detected in the glomerular structures. Compared to control, the increase in Caspase-8 immunoreactivity was found to be statistically significant (p&lt;0.05).<br /><strong>Conclusion:</strong> Low-dose 5-MeO-MiPT did not cause any serious histopathological effects on the liver, kidney, and brain. High doses induce apoptotic cell death through caspase activity.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: The hallucinogenic tryptamine analog 5-methoxy-N-methyl-N-isopropyltryptamine (5-MeO-MiPT) causes social problems worldwide. There are several studies on the metabolism; however, not more studies were found in the literature on acute toxicity.Aims: To report the acute toxicity of 5-MeO-MiPT in mice, followed by quantitative toxicological analysis of blood and organs, hystotoxicological and immunohistochemical analysis of tissues and cells.Study design: Animal experimentMethods: In vivo experiments were performed using CD1 adult female mice (n=26). Animals were caged in 4 groups randomly. First group was a control (n=3). Second group was vehicle control (n=3) and injected 150 μL of blank solution (50% dimethyl sulfoxide in saline /0.9% of NaCl). While for acute toxicity experiments, 5-MeO-MiPT was added to a blank solution in order to obtain a dose of 0.27 mg/kg in 150 μL injection (n=10) and the last group were injected 2.7 mg/kg 5-MeO-MiPT in a 150 μL injection (n=10). Quantitative toxicological analysis, hystotoxicological and immunohistochemical analysis were performed.Results: In the toxicological analysis, 5-MeO-MiPT was found negative in biological samples which were control, vehicle control, and 0.27 mg/kg dose mice groups. 5-MeO-MiPT was found 2.7-13.4 ng/mL in blood, 11-29 ng/g in kidney, 15.2-108.3 ng/g in liver, and 1.5-40.6 ng/g in the brain in 2,7 mg/kg injected group. In a low dose of the 5-MeO-MiPT liver section, compared with normal tissues, the difference in staining was statistically significant (p<0.0001). In high-dose of 5-MeO-MiPT, H-score showed that the increase in the number of Caspase-3 positive cells was significant compared to the control (p<0.05). In high-dose of 5-MeO-MiPT, intense Caspase-3 immunoreactivity was observed and the increase in the number of Caspase-3 positive cells compared to the control was statistically significant (p<0.05). In brain section, the statistics of the results obtained from the H-score showed that the increase in the number of Caspase-3 positive cells was significant compared to the control (p=0.0183). In vehicle control liver section, there were few Caspase-8 positive cells characterized by a light brown appearance (p=0.0117). In the high-dose 5-MeO-MiPT group, the numbers of positive cells at low and high doses of 5-MeO-MiPT group were statistically significant compared to the control (p<0.05). In the high-dose 5-MeO-MiPT group, Caspase-8 immunoreactivity was detected in the glomerular structures. Compared to control, the increase in Caspase-8 immunoreactivity was found to be statistically significant (p<0.05).Conclusion: Low-dose 5-MeO-MiPT did not cause any serious histopathological effects on the liver, kidney, and brain. High doses induce apoptotic cell death through caspase activity.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2019.11.68",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "34-42",
+    "views": 7094,
+    "downloads": 10309,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2257",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2257",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2257",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2257",
+    "localPdfUrl": "js/data/pdfs/2257.pdf",
+    "pdfUrl": "js/data/pdfs/2257.pdf"
+  },
+  {
+    "id": 2284,
+    "type": "Original Article",
+    "title": "miR-19a-3p Functions as an Oncogene by Regulating FBXO32 Expression in Multiple Myeloma",
+    "authors": [
+      {
+        "name": "Ying Li",
+        "affiliation": "Department of Hematology, Jinshan Hospital of Fudan University, Jinshan, Shanghai, PR China",
+        "orcid": ""
+      },
+      {
+        "name": "Song Gao",
+        "affiliation": "Department of Hematology, Jinshan Hospital of Fudan University, Jinshan, Shanghai, PR China",
+        "orcid": ""
+      },
+      {
+        "name": "Wenjing Xue",
+        "affiliation": "Department of Hematology, Jinshan Hospital of Fudan University, Jinshan, Shanghai, PR China",
+        "orcid": ""
+      },
+      {
+        "name": "Yanna Ma",
+        "affiliation": "Department of Hematology, Jinshan Hospital of Fudan University, Jinshan, Shanghai, PR China",
+        "orcid": ""
+      },
+      {
+        "name": "Yuesheng Meng",
+        "affiliation": "Department of Hematology, Jinshan Hospital of Fudan University, Jinshan, Shanghai, PR China",
+        "orcid": ""
+      },
+      {
+        "name": "Dawei Zhang",
+        "affiliation": "Department of General Surgery, Jinshan Hospital of Fudan University, Jinshan, Shanghai, PR China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Multiple myeloma remains a virtually incurable hematologic malignancy, which is featured with the aberrant growth of malignant plasma cells.Aims: To elucidate the functions of miR-19a-3p in multiple myeloma.Study Design: Cell study.Methods: Cell counting kit-8 assay was performed to detect cell viability, and flow cytometry was conducted to detect cell apoptosis. Bioinformatics analysis predicted miR-19a-3p-associated biological function, pathway, core regulatory network, and target genes. Luciferase reporter assay verified the target sequence of miR-19a-3p regulating FBXO32.Results: miR-19a-3p is upregulated in multiple myeloma cells (p<0.01) and patients with multiple myeloma (p<0.001). Overexpressed miR-19a-3p significantly increased cell viability (p<0.05) and inhibited cell apoptosis (p<0.01). FBXO32 is a target gene of miR-19a-3p (p<0.01). Moreover, FBXO32 is downregulated in MM, and it significantly decreased cell viability (p<0.05) and promoted cell apoptosis (p<0.01).FBXO32 significantly rescued the influence of miR-19a-3p-inhibiting cell apoptosis (p<0.05).Conclusion: miR-19a-3p promoted cell proliferation and inhibited cell apoptosis by degrading the target FBXO32 mRNA in multiple myeloma.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background:</strong> Multiple myeloma remains a virtually incurable hematologic malignancy, which is featured with the aberrant growth of malignant plasma cells.<br /><strong>Aims:</strong> To elucidate the functions of miR-19a-3p in multiple myeloma.<br /><strong>Study Design:</strong> Cell study.<br /><strong>Methods:</strong> Cell counting kit-8 assay was performed to detect cell viability, and flow cytometry was conducted to detect cell apoptosis. Bioinformatics analysis predicted miR-19a-3p-associated biological function, pathway, core regulatory network, and target genes. Luciferase reporter assay verified the target sequence of miR-19a-3p regulating FBXO32.<br /><strong>Results:</strong> miR-19a-3p is upregulated in multiple myeloma cells (p&lt;0.01) and patients with multiple myeloma (p&lt;0.001). Overexpressed miR-19a-3p significantly increased cell viability (p&lt;0.05) and inhibited cell apoptosis (p&lt;0.01). FBXO32 is a target gene of miR-19a-3p (p&lt;0.01). Moreover, FBXO32 is downregulated in MM, and it significantly decreased cell viability (p&lt;0.05) and promoted cell apoptosis (p&lt;0.01).<br />FBXO32 significantly rescued the influence of miR-19a-3p-inhibiting cell apoptosis (p&lt;0.05).<br /><strong>Conclusion:</strong> miR-19a-3p promoted cell proliferation and inhibited cell apoptosis by degrading the target FBXO32 mRNA in multiple myeloma.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Multiple myeloma remains a virtually incurable hematologic malignancy, which is featured with the aberrant growth of malignant plasma cells.Aims: To elucidate the functions of miR-19a-3p in multiple myeloma.Study Design: Cell study.Methods: Cell counting kit-8 assay was performed to detect cell viability, and flow cytometry was conducted to detect cell apoptosis. Bioinformatics analysis predicted miR-19a-3p-associated biological function, pathway, core regulatory network, and target genes. Luciferase reporter assay verified the target sequence of miR-19a-3p regulating FBXO32.Results: miR-19a-3p is upregulated in multiple myeloma cells (p<0.01) and patients with multiple myeloma (p<0.001). Overexpressed miR-19a-3p significantly increased cell viability (p<0.05) and inhibited cell apoptosis (p<0.01). FBXO32 is a target gene of miR-19a-3p (p<0.01). Moreover, FBXO32 is downregulated in MM, and it significantly decreased cell viability (p<0.05) and promoted cell apoptosis (p<0.01).FBXO32 significantly rescued the influence of miR-19a-3p-inhibiting cell apoptosis (p<0.05).Conclusion: miR-19a-3p promoted cell proliferation and inhibited cell apoptosis by degrading the target FBXO32 mRNA in multiple myeloma.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.3.121",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "43-49",
+    "views": 6148,
+    "downloads": 10125,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2284",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2284",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2284",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2284",
+    "localPdfUrl": "js/data/pdfs/2284.pdf",
+    "pdfUrl": "js/data/pdfs/2284.pdf"
+  },
+  {
+    "id": 2231,
+    "type": "Clinical Image",
+    "title": "An Uncommon Variant of Wilms Tumor: Botryoid Intrapelvic Renal Mass",
+    "authors": [
+      {
+        "name": "Onur Telli",
+        "affiliation": "Department of Pediatric Urology, Lütfi Kırdar Kartal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nuran Küçük",
+        "affiliation": "Department of Pediatric Nephrology, Lütfi Kırdar Kartal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burcu Hancı",
+        "affiliation": "Department of Urology, Lütfi Kırdar Kartal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şükran Sarıkaya",
+        "affiliation": "Department of Pathology, Lütfi Kırdar Kartal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Oktay Akça",
+        "affiliation": "Department of Urology, Lütfi Kırdar Kartal Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.3.59",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "50-52",
+    "views": 5694,
+    "downloads": 9740,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2231",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2231",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2231",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2231",
+    "localPdfUrl": "js/data/pdfs/2231.pdf",
+    "pdfUrl": "js/data/pdfs/2231.pdf"
+  },
+  {
+    "id": 2352,
+    "type": "Clinical Image",
+    "title": "Pneumatosis Cystoides Intestinalis in the Setting of Clindamycin Use: An Association or a Coincidence?",
+    "authors": [
+      {
+        "name": "Masood Pasha Syed",
+        "affiliation": "Clinic of Internal Medicine, Saint Vincent Hospital, Worcester, Massachusetts",
+        "orcid": ""
+      },
+      {
+        "name": "Simant Thapa",
+        "affiliation": "Clinic of Pulmonary Critical Care and Sleep Medicine, SUNY Upstate Medical University, Syracuse, NY",
+        "orcid": ""
+      },
+      {
+        "name": "Yugandhara Kate",
+        "affiliation": "Clinic of Internal Medicine, Saint Vincent Hospital, Worcester, Massachusetts",
+        "orcid": ""
+      },
+      {
+        "name": "Pawina Subedi",
+        "affiliation": "Clinic of Internal Medicine, Saint Vincent Hospital, Worcester, Massachusetts",
+        "orcid": ""
+      },
+      {
+        "name": "Annie Chemmanur",
+        "affiliation": "Clinic of Gastroenterology, Saint Vincent Hospital, Worcester, Massachusetts",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.3.69",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "53-54",
+    "views": 5450,
+    "downloads": 2983,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2352",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2352",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2352",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2352",
+    "localPdfUrl": "js/data/pdfs/2352.pdf",
+    "pdfUrl": "js/data/pdfs/2352.pdf"
+  },
+  {
+    "id": 2236,
+    "type": "Clinical Image",
+    "title": "A Double Whammy of Mycotic Aneurysms and Acquired Dysfibrinogenemia in a Patient with Septicemia",
+    "authors": [
+      {
+        "name": "Chun Yang Sim",
+        "affiliation": "Faculty of Medicine and Health Sciences, Universiti Sarawak Malaysia, Sarawak, Malaysia",
+        "orcid": ""
+      },
+      {
+        "name": "Ching Soong Khoo",
+        "affiliation": "Department of Medicine, Universiti Kebangsaan Malaysia Medical Centre, Kuala Lumpur, Malaysia",
+        "orcid": ""
+      },
+      {
+        "name": "Ruslinda Mustafar",
+        "affiliation": "Department of Medicine, Universiti Kebangsaan Malaysia Medical Centre, Kuala Lumpur, Malaysia",
+        "orcid": ""
+      },
+      {
+        "name": "Jia Ning Chai",
+        "affiliation": "Department of Radiology, Universiti Kebangsaan Malaysia Medical Centre, Kuala Lumpur, Malaysia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.5.208",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "55-56",
+    "views": 5456,
+    "downloads": 2022,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2236",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2236",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2236",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2236",
+    "localPdfUrl": "js/data/pdfs/2236.pdf",
+    "pdfUrl": "js/data/pdfs/2236.pdf"
+  },
+  {
+    "id": 2250,
+    "type": "Clinical Image",
+    "title": "Nora",
+    "authors": [
+      {
+        "name": "Marco Colangeli",
+        "affiliation": "Department of Musculo-Skeletal Oncology, IRCCS - Istituto Ortopedico Rizzoli, Bologna, Italy",
+        "orcid": ""
+      },
+      {
+        "name": "Paolo Spinnato",
+        "affiliation": "Department of Diagnostic and Interventional Radiology, IRCCS - Istituto Ortopedico Rizzoli, Bologna, Italy",
+        "orcid": ""
+      },
+      {
+        "name": "Paola Zarantonello",
+        "affiliation": "Department of Pediatric Orthopedics and Traumatology, IRCCS - Istituto Ortopedico Rizzoli, Bologna, Italy",
+        "orcid": ""
+      },
+      {
+        "name": "Barbara Bendandi",
+        "affiliation": "ediatric Emergency Unit, Medical and Surgical Sciences Department, S.Orsola-Malpighi Hospital, University of Bologna, Bologna, Italy",
+        "orcid": ""
+      },
+      {
+        "name": "Davide Maria Donati",
+        "affiliation": "Department of Musculo-Skeletal Oncology, IRCCS - Istituto Ortopedico Rizzoli, Bologna, Italy",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.7.224",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "57-58",
+    "views": 5383,
+    "downloads": 2405,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2250",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2250",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2250",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2250",
+    "localPdfUrl": "js/data/pdfs/2250.pdf",
+    "pdfUrl": "js/data/pdfs/2250.pdf"
+  },
+  {
+    "id": 2238,
+    "type": "Letter to the Editor",
+    "title": "Perceptions and Attitudes of Parents Toward Vaccination of Children in Western Balkan Countries: Trust in the Function of Improving Public Health",
+    "authors": [
+      {
+        "name": "Boban Melovic",
+        "affiliation": "Faculty of Economics, University of Montenegro, Podgorica, Montenegro",
+        "orcid": ""
+      },
+      {
+        "name": "Andjela Jaksic Stojanovic",
+        "affiliation": "Faculty of Economics, University of Donja Gorica, Podgorica, Montenegro",
+        "orcid": ""
+      },
+      {
+        "name": "Tamara Backovic Vulic",
+        "affiliation": "Faculty of Economics, University of Montenegro, Podgorica, Montenegro",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Emin Baynazoğlu",
+        "affiliation": "Business Information Management, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.7.110",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "59-60",
+    "views": 5749,
+    "downloads": 3045,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2238",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2238",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2238",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2238",
+    "localPdfUrl": "js/data/pdfs/2238.pdf",
+    "pdfUrl": "js/data/pdfs/2238.pdf"
+  },
+  {
+    "id": 2235,
+    "type": "Letter to the Editor",
+    "title": "Considerations on Medical Education During the Coronavirus Disease 2019 Pandemic and Beyond",
+    "authors": [
+      {
+        "name": "Xenophon Sinopidis",
+        "affiliation": "Department of Pediatric Surgery, University Hospital of Patras, University of Patras School of Medicine, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Despoina Gkentzi",
+        "affiliation": "Department of Pediatrics, University Hospital of Patras, University of Patras School of Medicine, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Ageliki Karatza",
+        "affiliation": "Department of Pediatrics, University Hospital of Patras, University of Patras School of Medicine, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Sotirios Fouzas",
+        "affiliation": "Department of Pediatrics, University Hospital of Patras, University of Patras School of Medicine, Patras, Greece",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.6.183",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "61",
+    "views": 5308,
+    "downloads": 3199,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2235",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2235",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2235",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2235",
+    "localPdfUrl": "js/data/pdfs/2235.pdf",
+    "pdfUrl": "js/data/pdfs/2235.pdf"
+  },
+  {
+    "id": 2244,
+    "type": "Letter to the Editor",
+    "title": "Investigation of the Main and Residual Risk Factors in the Success Rates of Premature Ventricular Contraction Ablation",
+    "authors": [
+      {
+        "name": "Muhammed Keskin",
+        "affiliation": "Department of Cardiology, Sultan Abdulhamid Han Training and Research Hospital, Health Science University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Süha Asal",
+        "affiliation": "Department of Cardiology, Sultan Abdulhamid Han Training and Research Hospital, Health Science University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selami Doğan",
+        "affiliation": "Department of Cardiology, Sultan Abdulhamid Han Training and Research Hospital, Health Science University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tufan Çınar",
+        "affiliation": "Department of Cardiology, Sultan Abdulhamid Han Training and Research Hospital, Health Science University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Selçuk",
+        "affiliation": "Department of Cardiology, Sultan Abdulhamid Han Training and Research Hospital, Health Science University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.7.149",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "62",
+    "views": 5296,
+    "downloads": 2540,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2244",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2244",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2244",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2244",
+    "localPdfUrl": "js/data/pdfs/2244.pdf",
+    "pdfUrl": "js/data/pdfs/2244.pdf"
+  },
+  {
+    "id": 2246,
+    "type": "Letter to the Editor",
+    "title": "Cement or Calcitonin for Coccyx Fractures",
+    "authors": [
+      {
+        "name": "Patrick M. Foye",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Coccyx Pain Center, Rutgers New Jersey Medical School, New Jersey, United States of America",
+        "orcid": ""
+      },
+      {
+        "name": "Harrison R. Massey",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Coccyx Pain Center, Rutgers New Jersey Medical School, New Jersey, United States of America",
+        "orcid": ""
+      },
+      {
+        "name": "Teresa J. Koger",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Coccyx Pain Center, Rutgers New Jersey Medical School, New Jersey, United States of America",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.8.34",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "63",
+    "views": 5266,
+    "downloads": 9567,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2246",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2246",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2246",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2246",
+    "localPdfUrl": "js/data/pdfs/2246.pdf",
+    "pdfUrl": "js/data/pdfs/2246.pdf"
+  },
+  {
+    "id": 2247,
+    "type": "Letter to the Editor",
+    "title": "In response to:",
+    "authors": [
+      {
+        "name": "Ezgi Akar",
+        "affiliation": "Department of Neurosurgery, Haydarpaşa Numune Training and Research Hospital, Istanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Orkun Koban",
+        "affiliation": "Department of Neurosurgery, Okan University School of Medicine, Istanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Öğrenci",
+        "affiliation": "Department of Neurosurgery, Okan University School of Medicine, Istanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mesut Yılmaz",
+        "affiliation": "Department of Neurosurgery, Neurospinal Academia, Istanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sedat Dalbayrak",
+        "affiliation": "Department of Neurosurgery, Okan University School of Medicine, Istanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2020.2020.8.34-reply",
+    "received": "",
+    "accepted": "",
+    "published": "2021-01-01",
+    "volume": 38,
+    "issue": "1",
+    "pages": "64",
+    "views": 5311,
+    "downloads": 2044,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1266",
+    "sourceArticleId": "2247",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2247",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2247",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2247",
+    "localPdfUrl": "js/data/pdfs/2247.pdf",
+    "pdfUrl": "js/data/pdfs/2247.pdf"
+  }
+]

@@ -1,0 +1,1619 @@
+[
+  {
+    "id": 1808,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "1808",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1808",
+    "localPdfUrl": "js/data/pdfs/1808.pdf",
+    "pdfUrl": "js/data/pdfs/1808.pdf"
+  },
+  {
+    "id": 1800,
+    "type": "Original Article",
+    "title": "Assessment of Ten-Year-Long Results of Kidney Biopsies Performed on Children in the Thrace Region of Turkey",
+    "authors": [
+      {
+        "name": "Neşe Özkayın",
+        "affiliation": "Department of Pediatric Nephrology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gökçe Çıplak",
+        "affiliation": "Department of Pediatric Nephrology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ufuk Usta",
+        "affiliation": "Department of Pathology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Gençhellaç",
+        "affiliation": "Department of Pediatric Radiology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Osman Temizöz",
+        "affiliation": "Department of Radiology, Selcuk University School of Medicine, Konya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Many children with kidney diseases can be diagnosed and treated without a biopsy. However, biopsy is a valuable method for the diagnostic and prognostic evaluation of children with kidney diseases. Aims: To evaluate the clinical and pathological profiles of the kidney biopsies in our department to provide epidemiological data for clinical practice. Study Design: Retrospective cross-sectional study. Methods: Kidney biopsies and patient\"s charts in pediatric patients performed between May 2005 and February 2015 at the Pediatric Nephrology Department, Trakya University School of Medicine were assessed retrospectively. Results: A total of 100 patients were examined. Their mean age was 9.62±4.26 years (range: 1-17 years); 54% of the patients were girls and 46% were boys. The most frequent indication for kidney biopsy was nephrotic syndrome (33%). The most common kidney disease was primary glomerulonephritis, which was observed in 65% of cases. IgA nephropathy (24%) was the most frequently observed subtype in primary glomerulonephritis groups. Secondary glomerulonephritis was diagnosed in 35% of cases. Systemic lupus erythematosus (51%) was the most frequently observed subtype in the secondary glomerulonephritis groups. Conclusion: IgA nephropathy and systemic lupus erythematosus were the most frequent primary and secondary glomerulonephritis in our region among children, respectively.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<b>Background: </b>Many children with kidney diseases can be diagnosed and treated without a biopsy. However, biopsy is a valuable method for the diagnostic and prognostic evaluation of children with kidney diseases.<br>\r\n<b>Aims: </b>To evaluate the clinical and pathological profiles of the kidney biopsies in our department to provide epidemiological data for clinical practice.<br>\r\n<b>Study Design:</b> Retrospective cross-sectional study.<br>\r\n<b>Methods:</b> Kidney biopsies and patient\"s charts in pediatric patients performed between May 2005 and February 2015 at the Pediatric Nephrology Department, Trakya University School of Medicine were assessed retrospectively.<br>\r\n<b>Results: </b>A total of 100 patients were examined. Their mean age was 9.62±4.26 years (range: 1-17 years); 54% of the patients were girls and 46% were boys. The most frequent indication for kidney biopsy was nephrotic syndrome (33%). The most common kidney disease was primary glomerulonephritis, which was observed in 65% of cases. IgA nephropathy (24%) was the most frequently observed subtype in primary glomerulonephritis groups. Secondary glomerulonephritis was diagnosed in 35% of cases. Systemic lupus erythematosus (51%) was the most frequently observed subtype in the secondary glomerulonephritis groups.<br>\r\n<b>Conclusion: </b>IgA nephropathy and systemic lupus erythematosus were the most frequent primary and secondary glomerulonephritis in our region among children, respectively. \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Many children with kidney diseases can be diagnosed and treated without a biopsy. However, biopsy is a valuable method for the diagnostic and prognostic evaluation of children with kidney diseases. Aims: To evaluate the clinical and pathological profiles of the kidney biopsies in our department to provide epidemiological data for clinical practice. Study Design: Retrospective cross-sectional study. Methods: Kidney biopsies and patient\"s charts in pediatric patients performed between May 2005 and February 2015 at the Pediatric Nephrology Department, Trakya University School of Medicine were assessed retrospectively. Results: A total of 100 patients were examined. Their mean age was 9.62±4.26 years (range: 1-17 years); 54% of the patients were girls and 46% were boys. The most frequent indication for kidney biopsy was nephrotic syndrome (33%). The most common kidney disease was primary glomerulonephritis, which was observed in 65% of cases. IgA nephropathy (24%) was the most frequently observed subtype in primary glomerulonephritis groups. Secondary glomerulonephritis was diagnosed in 35% of cases. Systemic lupus erythematosus (51%) was the most frequently observed subtype in the secondary glomerulonephritis groups. Conclusion: IgA nephropathy and systemic lupus erythematosus were the most frequent primary and secondary glomerulonephritis in our region among children, respectively.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.150506",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "589-593",
+    "views": 6477,
+    "downloads": 3518,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "1800",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1800",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1800",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1800",
+    "localPdfUrl": "js/data/pdfs/1800.pdf",
+    "pdfUrl": "js/data/pdfs/1800.pdf"
+  },
+  {
+    "id": 9,
+    "type": "Original Article",
+    "title": "Resveratrol Protects Sepsis-Induced Oxidative DNA Damage in Liver and Kidney of Rats",
+    "authors": [
+      {
+        "name": "Sevtap Aydın",
+        "affiliation": "Department of Pharmaceutical Toxicology, Hacettepe University School of Pharmacy, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tevfik Tolga Şahin",
+        "affiliation": "Department of Surgery, Kastamonu University School of Medicine, Kastamonu, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Merve Bacanlı",
+        "affiliation": "Department of Pharmaceutical Toxicology, Hacettepe University School of Pharmacy, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gökçe Taner",
+        "affiliation": "Department of Bioengineering, Bursa Technical University School of Natural Sciences, Architecture and Engineering, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Arif Ahmet Başaran",
+        "affiliation": "Department of Pharmacognosy, Hacettepe University School of Pharmacy, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehtap Aydın",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Başkent University School of Medicine, İstanbul Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurşen Başaran",
+        "affiliation": "Department of Pharmaceutical Toxicology, Hacettepe University School of Pharmacy, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The increases of free radicals have been proposed to be involved in the pathogenesis of sepsis, which leads to multiple-organ dysfunction syndromes. The uses of antioxidants as a complementary tool in the medical care of oxidative stress-related diseases have attracted attention of researchers. Resveratrol (RV) has suggested being antioxidant, anti-proliferative, and anti-inflammatory effects in various experimental models and clinical settings. Aims: This study was undertaken to evaluate the protective effects of RV on oxidative DNA damage induced by sepsis in the liver and kidney tissues of Wistar albino rats. Study Design: Animal experimentation. Methods: Four experimental groups consisting of eight animals for each was created using a total of thirty-two male Wistar albino rats. Sham group was given 0.5 mL of saline intra-peritoneal (ip) only following laparatomy. Sepsis group was given 0.5 mL saline ip only following the induction of sepsis. RV-treated group was given a dose of 100 mg/kg ip RV in 0.5 mL saline following laparatomy. RV-treated sepsis group was given 100 mg/kg ip RV in 0.5 mL saline following the induction of sepsis. A model of sepsis was created by cecal ligation and puncture technique. In the liver and kidney tissues, oxidative stress parameters (malondialdehyde (MDA), reduced glutathione (GSH), superoxide dismutase (SOD), glutathione peroxidase (GPX)) and a proinflammatory cytokine (tumor necrosis factor alpha (TNF-alpha)), were evaluated spectrophotometrically and DNA damage was determined by the alkaline single cell gel electrophoresis (comet assay) technique using formamidopyrimidine DNA glycosylase protein. Results: In the RV-treated sepsis group, the levels of MDA and TNF-alpha were lower and GSH levels, SOD and GPX activities were higher than in the septic rats (p<0.05). RV treatment significantly reduced the sepsis-induced oxidative DNA damage in the liver and kidney cells (p<0.05). Conclusion: It is suggested that RV treatment might reduce the sepsis-induced oxidative DNA damages in sepsis-related diseases; however, there is a need for more studies to clear up the protective mechanisms of RV against sepsis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background:&nbsp;</strong>The increases of free radicals have been proposed to be involved in the pathogenesis of sepsis, which leads to multiple-organ dysfunction syndromes. The uses of antioxidants as a complementary tool in the medical care of oxidative stress-related diseases have attracted attention of researchers. Resveratrol (RV) has suggested being antioxidant, anti-proliferative, and anti-inflammatory effects in various experimental models and clinical settings.</p>\r\n<p>\r\n\t<strong>Aims:</strong>&nbsp;This study was undertaken to evaluate the protective effects of RV on oxidative DNA damage induced by sepsis in the liver and kidney tissues of Wistar albino rats.</p>\r\n<p>\r\n\t<strong>Study Design:</strong>&nbsp;Animal experimentation.</p>\r\n<p>\r\n\t<strong>Methods:</strong>&nbsp;Four experimental groups consisting of eight animals for each was created using a total of thirty-two male Wistar albino rats. Sham group was given 0.5 mL of saline intra-peritoneal (ip) only following laparatomy. Sepsis group was given 0.5 mL saline ip only following the induction of sepsis. RV-treated group was given a dose of 100 mg/kg ip RV in 0.5 mL saline following laparatomy. RV-treated sepsis group was given 100 mg/kg ip RV in 0.5 mL saline following the induction of sepsis. A model of sepsis was created by cecal ligation and puncture technique. In the liver and kidney tissues, oxidative stress parameters (malondialdehyde (MDA), reduced glutathione (GSH), superoxide dismutase (SOD), glutathione peroxidase (GPX)) and a proinflammatory cytokine (tumor necrosis factor alpha (TNF-alpha)), were evaluated spectrophotometrically and DNA damage was determined by the alkaline single cell gel electrophoresis (comet assay) technique using formamidopyrimidine DNA glycosylase protein.</p>\r\n<p>\r\n\t<strong>Results:</strong>&nbsp;In the RV-treated sepsis group, the levels of MDA and TNF-alpha were lower and GSH levels, SOD and GPX activities were higher than in the septic rats (p&lt;0.05). RV treatment significantly reduced the sepsis-induced oxidative DNA damage in the liver and kidney cells (p&lt;0.05).</p>\r\n<p>\r\n\t<strong>Conclusion:&nbsp;</strong>It is suggested that RV treatment might reduce the sepsis-induced oxidative DNA damages in sepsis-related diseases; however, there is a need for more studies to clear up the protective mechanisms of RV against sepsis.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The increases of free radicals have been proposed to be involved in the pathogenesis of sepsis, which leads to multiple-organ dysfunction syndromes. The uses of antioxidants as a complementary tool in the medical care of oxidative stress-related diseases have attracted attention of researchers. Resveratrol (RV) has suggested being antioxidant, anti-proliferative, and anti-inflammatory effects in various experimental models and clinical settings. Aims: This study was undertaken to evaluate the protective effects of RV on oxidative DNA damage induced by sepsis in the liver and kidney tissues of Wistar albino rats. Study Design: Animal experimentation. Methods: Four experimental groups consisting of eight animals for each was created using a total of thirty-two male Wistar albino rats. Sham group was given 0.5 mL of saline intra-peritoneal (ip) only following laparatomy. Sepsis group was given 0.5 mL saline ip only following the induction of sepsis. RV-treated group was given a dose of 100 mg/kg ip RV in 0.5 mL saline following laparatomy. RV-treated sepsis group was given 100 mg/kg ip RV in 0.5 mL saline following the induction of sepsis. A model of sepsis was created by cecal ligation and puncture technique. In the liver and kidney tissues, oxidative stress parameters (malondialdehyde (MDA), reduced glutathione (GSH), superoxide dismutase (SOD), glutathione peroxidase (GPX)) and a proinflammatory cytokine (tumor necrosis factor alpha (TNF-alpha)), were evaluated spectrophotometrically and DNA damage was determined by the alkaline single cell gel electrophoresis (comet assay) technique using formamidopyrimidine DNA glycosylase protein. Results: In the RV-treated sepsis group, the levels of MDA and TNF-alpha were lower and GSH levels, SOD and GPX activities were higher than in the septic rats (p<0.05). RV treatment significantly reduced the sepsis-induced oxidative DNA damage in the liver and kidney cells (p<0.05). Conclusion: It is suggested that RV treatment might reduce the sepsis-induced oxidative DNA damages in sepsis-related diseases; however, there is a need for more studies to clear up the protective mechanisms of RV against sepsis.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.15516",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "594-601",
+    "views": 7821,
+    "downloads": 10649,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "9",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=9",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=9",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=9",
+    "localPdfUrl": "js/data/pdfs/9.pdf",
+    "pdfUrl": "js/data/pdfs/9.pdf"
+  },
+  {
+    "id": 11,
+    "type": "Original Article",
+    "title": "Liver Apparent Diffusion Coefficient Changes during Telaprevir-Based Therapy for Chronic Hepatitis C",
+    "authors": [
+      {
+        "name": "Nagihan İnan Gürcan",
+        "affiliation": "Department of Radiology, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zakir Sakçı",
+        "affiliation": "Department of Radiology, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sıla Akhan",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Elif Sargın Altunok",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aynur Aynıoğlu",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yeşim Gürbüz",
+        "affiliation": "Department of Pathology, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hasan Tahsin Sarisoy",
+        "affiliation": "Department of Radiology, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gür Akansel [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Diffusion-weighted imaging (DWI) has become an established diagnostic modality for the evaluation of liver parenchymal changes in diseases such as diffuse liver fibrosis. Aims: To evaluate the parenchymal apparent diffusion coefficient value (ADC) changes using diffusion-weighted imaging (DWI) during telaprevir-based triple therapy. Study Design: Diagnostic accuracy study. Methods: Seventeen patients with chronic hepatitis C virus (HCV) virus and twenty-five normal volunteers were included. All of the patients took 12-weeks of telaprevir-based triple therapy followed by 12-weeks of PEGylated interferon and ribavirin therapy. They were examined before treatment (BT), as well as 12-weeks (W12) and 24-weeks (W24) after treatment by 3 Tesla magnetic resonance imaging (MRI). DWI was obtained using a breath-hold single-shot echo-planar spin echo sequence. Histopathologically, liver fibrosis was classified in accordance with the modified Knodell score described by Ishak. Quantitatively, liver ADCs were compared between patients and normal volunteers to detect the contribution of DWI in the detection of fibrosis. In addition, liver ADCs were compared during the therapy to analyze the effect of antiviral medication on liver parenchyma. Results: The liver ADC values of fibrotic liver parenchyma were significantly lower than those of the healthy liver parenchyma (p<0.001). However, we were not able to reach a sufficiently discriminative threshold value. The ADC values showed a declining trend with increasing fibrotic stage. No statistically significant correlation (p=0.204) was observed. Compared with those before treatment, the liver ADC values after telaprevir-based triple therapy were significantly decreased at W12. A significant increase in the liver ADC values was also observed after the cessation of telaprevir therapy at W24 with a return to initial values. Conclusion: Liver ADC values appear to indicate the present but not the stage of liver fibrosis. DWI may be a helpful research tool for the assessment of antiviral drug effects.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background:&nbsp;</strong>Diffusion-weighted imaging (DWI) has become an established diagnostic modality for the evaluation of liver parenchymal changes in diseases such as diffuse liver fibrosis.&nbsp;</p>\r\n<p>\r\n\t<strong>Aims:&nbsp;</strong>To evaluate the parenchymal apparent diffusion coefficient value (ADC) changes using diffusion-weighted imaging (DWI) during telaprevir-based triple therapy.</p>\r\n<p>\r\n\t<strong>Study Design:</strong>&nbsp;Diagnostic accuracy study.</p>\r\n<p>\r\n\t<strong>Methods:&nbsp;</strong>Seventeen patients with chronic hepatitis C virus (HCV) virus and twenty-five normal volunteers were included. All of the patients took 12-weeks of telaprevir-based triple therapy followed by 12-weeks of PEGylated interferon and ribavirin therapy. They were examined before treatment (BT), as well as 12-weeks (W12) and 24-weeks (W24) after treatment by 3 Tesla magnetic resonance imaging (MRI). DWI was obtained using a breath-hold single-shot echo-planar spin echo sequence. Histopathologically, liver fibrosis was classified in accordance with the modified Knodell score described by Ishak. Quantitatively, liver ADCs were compared between patients and normal volunteers to detect the contribution of DWI in the detection of fibrosis. In addition, liver ADCs were compared during the therapy to analyze the effect of antiviral medication on liver parenchyma.&nbsp;</p>\r\n<p>\r\n\t<strong>Results:</strong>&nbsp;The liver ADC values of fibrotic liver parenchyma were significantly lower than those of the healthy liver parenchyma (p&lt;0.001). However, we were not able to reach a sufficiently discriminative threshold value. The ADC values showed a declining trend with increasing fibrotic stage. No statistically significant correlation (p=0.204) was observed. Compared with those before treatment, the liver ADC values after telaprevir-based triple therapy were significantly decreased at W12. A significant increase in the liver ADC values was also observed after the cessation of telaprevir therapy at W24 with a return to initial values.</p>\r\n<p>\r\n\t<strong>Conclusion:</strong>&nbsp;Liver ADC values appear to indicate the present but not the stage of liver fibrosis. DWI may be a helpful research tool for the assessment of antiviral drug effects.&nbsp;</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Diffusion-weighted imaging (DWI) has become an established diagnostic modality for the evaluation of liver parenchymal changes in diseases such as diffuse liver fibrosis. Aims: To evaluate the parenchymal apparent diffusion coefficient value (ADC) changes using diffusion-weighted imaging (DWI) during telaprevir-based triple therapy. Study Design: Diagnostic accuracy study. Methods: Seventeen patients with chronic hepatitis C virus (HCV) virus and twenty-five normal volunteers were included. All of the patients took 12-weeks of telaprevir-based triple therapy followed by 12-weeks of PEGylated interferon and ribavirin therapy. They were examined before treatment (BT), as well as 12-weeks (W12) and 24-weeks (W24) after treatment by 3 Tesla magnetic resonance imaging (MRI). DWI was obtained using a breath-hold single-shot echo-planar spin echo sequence. Histopathologically, liver fibrosis was classified in accordance with the modified Knodell score described by Ishak. Quantitatively, liver ADCs were compared between patients and normal volunteers to detect the contribution of DWI in the detection of fibrosis. In addition, liver ADCs were compared during the therapy to analyze the effect of antiviral medication on liver parenchyma. Results: The liver ADC values of fibrotic liver parenchyma were significantly lower than those of the healthy liver parenchyma (p<0.001). However, we were not able to reach a sufficiently discriminative threshold value. The ADC values showed a declining trend with increasing fibrotic stage. No statistically significant correlation (p=0.204) was observed. Compared with those before treatment, the liver ADC values after telaprevir-based triple therapy were significantly decreased at W12. A significant increase in the liver ADC values was also observed after the cessation of telaprevir therapy at W24 with a return to initial values. Conclusion: Liver ADC values appear to indicate the present but not the stage of liver fibrosis. DWI may be a helpful research tool for the assessment of antiviral drug effects.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.151082",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "602-606",
+    "views": 7853,
+    "downloads": 9885,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "11",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=11",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=11",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=11",
+    "localPdfUrl": "js/data/pdfs/11.pdf",
+    "pdfUrl": "js/data/pdfs/11.pdf"
+  },
+  {
+    "id": 13,
+    "type": "Original Article",
+    "title": "Diffusion Tensor Imaging of the Uterine Zones Related to the Menstrual Cycle and Menopausal Status at 3 Tesla MRI",
+    "authors": [
+      {
+        "name": "Özgür Kılıçkesmez",
+        "affiliation": "Department of Diagnostic and Interventional Radiology, İstanbul Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zeynep Fırat",
+        "affiliation": "Department of Radiology, Yeditepe University Medical School, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşegül Oygen",
+        "affiliation": "Department of Radiology, Yeditepe University Medical School, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Duygu Kara Bozkurt",
+        "affiliation": "Department of Radiology, Yeditepe University Medical School, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tevfik Güzelbey",
+        "affiliation": "Department of Radiology, Yeditepe University Medical School, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bengi Gürses",
+        "affiliation": "Department of Radiology, Yeditepe University Medical School, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neslihan Taşdelen",
+        "affiliation": "Department of Radiology, Yeditepe University Medical School, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Diffusion and diffusion tensor imaging techniques (DTI) are widely available and used both in central nervous system and body imaging, including gynecological diseases. Aims: The aims of this study were to assess the capability of DTI of uterine zones in relation to the menstrual cycle and ascertain the normal apparent diffusion coefficient and fractional anisotropy values at 3T magnetic resonance imaging (MRI). Study Design: Prospective clinical study. Methods: A total of 13 young reproductive and 12 postmenopausal healthy volunteers were included in the study. MRI examination included sagittal T2-weighted and single-shot echo planar imaging DTI obtained under free breathing. Fractional anisotropy (FA) values of the endometrium, junctional zone, and myometrium were determined. Results: The median (minimum-maximum) FA of the endometrium, myometrium, and junctional zone of the reproductive group were 0.31 (0.260-0.465), 0.42 (0.302-0.664), and 0.58 (0.420-0.745), respectively, in the proliferative phase and 0.26 (0.180-0.413), 0.48 (0.357-0.656), and 0.59 (0.490-0.675)], respectively, in the secretory phase. In the postmenopausal group, the FA values of the endometrium, myometrium, and junctional zone were 0.275 (0.136-0.425), 0.255 (0.191-0.553), and 0.27 (0.129-0.397), respectively. Apparent diffusion coefficient (ADC) values of the endometrium, myometrium, and junctional zone of the reproductive group were 1.25±0.254 (0.970-1.463), 1.67 (1.213-1.854), and 1.23 (0.853-1.301), respectively, in the proliferative phase and 1.32±0.283 (1.165-1.706), 1.55 (1.360-1.791), and 1.17 (1.163-1.705), respectively, in the secretory phase. In the postmenopausal group, the ADC values of the endometrium, myometrium, and junctional zone were measured as 1.100±0.192 (0.850-1.302), 1.14 (0.864-1.283), and 1.09 (0.912-1.291). The FA values of the endometrium and myometrium were lower in the secretory phase of the reproductive group, while ADC values were higher. However, both the FA and ADC values were lower in the postmenopausal group. Conclusion: The present study showed that uterine DTI is feasible when used quantitatively. While FA values tend to decrease, ADC values increase significantly in all zones in the secretory phase except the junctional zone. Zonal FA and ADC values of postmenopausal women are lower in comparison to those in young women.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Background</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Diffusion and diffusion tensor imaging techniques (DTI) are widely available and used both in central nervous system and body imaging, including gynecological diseases.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Aims</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The aims of this study were to assess the capability of DTI of uterine zones in relation to the menstrual cycle and ascertain the normal apparent diffusion coefficient and fractional anisotropy values at 3T magnetic resonance imaging (MRI).</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Study Design</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Prospective clinical study.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Methods</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: A total of 13 young reproductive and 12 postmenopausal healthy volunteers were included in the study. MRI examination included sagittal T2-weighted and single-shot echo planar imaging DTI obtained under free breathing. Fractional anisotropy (FA) values of the endometrium, junctional zone, and myometrium were determined.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Results</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The median (minimum-maximum) FA of the endometrium, myometrium, and junctional zone of the reproductive group were 0.31 (0.260-0.465), 0.42 (0.302-0.664), and 0.58 (0.420-0.745), respectively, in the proliferative phase and 0.26 (0.180-0.413), 0.48 (0.357-0.656), and 0.59 (0.490-0.675)], respectively, in the secretory phase. In the postmenopausal group, the FA values of the endometrium, myometrium, and junctional zone were 0.275 (0.136-0.425), 0.255 (0.191-0.553), and 0.27 (0.129-0.397), respectively. Apparent diffusion coefficient (ADC) values of the endometrium, myometrium, and junctional zone of the reproductive group were 1.25&plusmn;0.254 (0.970-1.463), 1.67 (1.213-1.854), and 1.23 (0.853-1.301), respectively, in the proliferative phase and 1.32&plusmn;0.283 (1.165-1.706), 1.55 (1.360-1.791), and 1.17 (1.163-1.705), respectively, in the secretory phase. In the postmenopausal group, the ADC values of the endometrium, myometrium, and junctional zone were measured as 1.100&plusmn;0.192 (0.850-1.302), 1.14 (0.864-1.283), and 1.09 (0.912-1.291). The FA values of the endometrium and myometrium were lower in the secretory phase of the reproductive group, while ADC values were higher. However, both the FA and ADC values were lower in the postmenopausal group.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Conclusion</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The present study showed that uterine DTI is feasible when used quantitatively. While FA values tend to decrease, ADC values increase significantly in all zones in the secretory phase except the junctional zone. Zonal FA and ADC values of postmenopausal women are lower in comparison to those in young women.</span></p>\r\n<div>\r\n</div>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Diffusion and diffusion tensor imaging techniques (DTI) are widely available and used both in central nervous system and body imaging, including gynecological diseases. Aims: The aims of this study were to assess the capability of DTI of uterine zones in relation to the menstrual cycle and ascertain the normal apparent diffusion coefficient and fractional anisotropy values at 3T magnetic resonance imaging (MRI). Study Design: Prospective clinical study. Methods: A total of 13 young reproductive and 12 postmenopausal healthy volunteers were included in the study. MRI examination included sagittal T2-weighted and single-shot echo planar imaging DTI obtained under free breathing. Fractional anisotropy (FA) values of the endometrium, junctional zone, and myometrium were determined. Results: The median (minimum-maximum) FA of the endometrium, myometrium, and junctional zone of the reproductive group were 0.31 (0.260-0.465), 0.42 (0.302-0.664), and 0.58 (0.420-0.745), respectively, in the proliferative phase and 0.26 (0.180-0.413), 0.48 (0.357-0.656), and 0.59 (0.490-0.675)], respectively, in the secretory phase. In the postmenopausal group, the FA values of the endometrium, myometrium, and junctional zone were 0.275 (0.136-0.425), 0.255 (0.191-0.553), and 0.27 (0.129-0.397), respectively. Apparent diffusion coefficient (ADC) values of the endometrium, myometrium, and junctional zone of the reproductive group were 1.25±0.254 (0.970-1.463), 1.67 (1.213-1.854), and 1.23 (0.853-1.301), respectively, in the proliferative phase and 1.32±0.283 (1.165-1.706), 1.55 (1.360-1.791), and 1.17 (1.163-1.705), respectively, in the secretory phase. In the postmenopausal group, the ADC values of the endometrium, myometrium, and junctional zone were measured as 1.100±0.192 (0.850-1.302), 1.14 (0.864-1.283), and 1.09 (0.912-1.291). The FA values of the endometrium and myometrium were lower in the secretory phase of the reproductive group, while ADC values were higher. However, both the FA and ADC values were lower in the postmenopausal group. Conclusion: The present study showed that uterine DTI is feasible when used quantitatively. While FA values tend to decrease, ADC values increase significantly in all zones in the secretory phase except the junctional zone. Zonal FA and ADC values of postmenopausal women are lower in comparison to those in young women.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.151638",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "607-613",
+    "views": 7210,
+    "downloads": 9880,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "13",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=13",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=13",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=13",
+    "localPdfUrl": "js/data/pdfs/13.pdf",
+    "pdfUrl": "js/data/pdfs/13.pdf"
+  },
+  {
+    "id": 14,
+    "type": "Original Article",
+    "title": "Evaluation of MIF -173 G/C Polymorphism in Turkish Patients with Ankylosing Spondylitis",
+    "authors": [
+      {
+        "name": "Çevik Gürel",
+        "affiliation": "Department of Medical Biology, Gaziosmanpaşa University School of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet İnanır",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Gaziosmanpaşa University School of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşe Feyda Nursal",
+        "affiliation": "Department of Medical Genetics, Giresun University, School of Medicine, Giresun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Akın Tekcan",
+        "affiliation": "Ahi Evran University School of Health, Kırşehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aydın Rüstemoğlu",
+        "affiliation": "Department of Medical Biology, Gaziosmanpaşa University School of Medicine, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serbülent Yiğit [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Ankylosing spondylitis (AS) is a chronic inflammatory disease mainly affecting the spine and sacroiliac joints. Macrophage migration inhibitory (MIF) factor is a regulatory cytokine that inhibits random immune cell migration. MIF gene promoter polymorphisms play a role in the progression of several inflammatory disorders. Aims: To investigate the relationship between the MIF gene -173 G/C single-nucleotide polymorphism (SNP) and AS. Study Design: Cross-sectional study. Methods: In this study, a total of 161 AS and 194 normal controls were recruited. The MIF gene -173 G/C SNP was analyzed by polymerase chain reaction using the restriction fragment length polymorphism method. Results: There was no significant difference between groups in terms of genotype distribution (p>0.05). When wild-type G/G and G/C+C/C genotypes are compared in terms of clinical characteristics, there is a significant difference between the average age and the duration of disease in AS patients (p<0.05). Conclusion: No significant relationship between AS disease and MIF -173 G/C polymorphism was found. MIF -173 G/C polymorphism (C allele) may affect the time of onset and the duration of disease in AS patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Background</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Ankylosing spondylitis (AS) is a chronic inflammatory disease mainly affecting the spine and sacroiliac joints. Macrophage migration inhibitory (MIF) factor is a regulatory cytokine that inhibits random immune cell migration. MIF gene promoter polymorphisms play a role in the progression of several inflammatory disorders.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Aims</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: To investigate the relationship between the MIF gene -173 G/C single-nucleotide polymorphism (SNP) and AS.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Study Design</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Cross-sectional study.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Methods</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: In this study, a total of 161 AS and 194 normal controls were recruited. The MIF gene -173 G/C SNP was analyzed by polymerase chain reaction using the restriction fragment length polymorphism method.&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Results</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: There was no significant difference between groups in terms of genotype distribution (p&gt;0.05). When wild-type G/G and G/C+C/C genotypes are compared in terms of clinical characteristics, there is a significant difference between the average age and the duration of disease in AS patients (p&lt;0.05).&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Conclusion</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: No significant relationship between AS disease and MIF -173 G/C polymorphism was found. MIF -173 G/C polymorphism (C allele) may affect the time of onset and the duration of disease in AS patients.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Ankylosing spondylitis (AS) is a chronic inflammatory disease mainly affecting the spine and sacroiliac joints. Macrophage migration inhibitory (MIF) factor is a regulatory cytokine that inhibits random immune cell migration. MIF gene promoter polymorphisms play a role in the progression of several inflammatory disorders. Aims: To investigate the relationship between the MIF gene -173 G/C single-nucleotide polymorphism (SNP) and AS. Study Design: Cross-sectional study. Methods: In this study, a total of 161 AS and 194 normal controls were recruited. The MIF gene -173 G/C SNP was analyzed by polymerase chain reaction using the restriction fragment length polymorphism method. Results: There was no significant difference between groups in terms of genotype distribution (p>0.05). When wild-type G/G and G/C+C/C genotypes are compared in terms of clinical characteristics, there is a significant difference between the average age and the duration of disease in AS patients (p<0.05). Conclusion: No significant relationship between AS disease and MIF -173 G/C polymorphism was found. MIF -173 G/C polymorphism (C allele) may affect the time of onset and the duration of disease in AS patients.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.141103",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "614-619",
+    "views": 7463,
+    "downloads": 3920,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "14",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=14",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=14",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=14",
+    "localPdfUrl": "js/data/pdfs/14.pdf",
+    "pdfUrl": "js/data/pdfs/14.pdf"
+  },
+  {
+    "id": 15,
+    "type": "Original Article",
+    "title": "Inhibitory Effect of Pycnogenol® on Airway Inflammation in Ovalbumin-Induced Allergic Rhinitis",
+    "authors": [
+      {
+        "name": "Ceren Günel",
+        "affiliation": "Department of Otolaryngology Head and Neck Surgery, Adnan Menderes University School of Medicine, Aydın, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Buket Demirci",
+        "affiliation": "Department of Medical Pharmacology, Adnan Menderes University School of Medicine, Aydın, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aylin Eryılmaz",
+        "affiliation": "Department of Otolaryngology Head and Neck Surgery, Adnan Menderes University School of Medicine, Aydın, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Yılmaz",
+        "affiliation": "Department of Biochemistry, Adnan Menderes University School of Medicine, Aydın, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Meteoğlu",
+        "affiliation": "Department of Medical Pathology, Adnan Menderes University School of Medicine, Aydın, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İmran Kurt Ömürlü",
+        "affiliation": "Department of Biostatistic, Adnan Menderes University School of Medicine, Aydın,Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yeşim Başal [[1]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The supplement Pycnogenol® (PYC) has been used for the treatment of several chronic diseases including allergic rhinitis (AR). However, the in vivo effects on allergic inflammation have not been identified to date. Aims: To investigate the treatment results of PYC on allergic inflammation in a rat model of allergic rhinitis. Study Design: Animal experimentation. Methods: Allergic rhinitis was stimulated in 42 rats by intraperitoneal sensitization and intranasal challenge with Ovalbumin. The animals were divided into six subgroups: healthy controls, AR group, AR group treated with corticosteroid (dexamethasone 1 mg/kg; CS+AR), healthy rats group that were given only PYC of 10 mg/kg (PYC10), AR group treated with PYC of 3mg/kg (PYC3+AR), and AR group treated with PYC of 10 mg/kg (PYC10+AR). Interferon-γ (IFN-γ), interleukin-4 (IL-4), interleukin-10 (IL-10), and OVA-specific immunoglobulin E (Ig-E) levels of serum were measured. Histopathological changes in nasal mucosa and expression of tumor necrosis factor-α (TNF-α) and IL-1β were evaluated. Results: The levels of the IL-4 were significantly decreased in the PYC3+AR, PYC10+AR and CS+AR groups compared with the AR group (p=0.002, p<0.001, p=0.006). The production of the IFN-γ was significantly decreased in the PYC3+AR and PYC10+AR groups compared with the AR group (p=0.013, p=0.001). The administration of PYC to allergic rats suppressed the elevated IL-10 production, especially in the PYC3+AR group (p=0.006). Mucosal edema was significantly decreased respectively after treatment at dose 3 mg/kg and 10 mg/kg PYC (both, p<0.001). The mucosal expression of TNF-α has significantly decreased in the PYC3+AR and PYC10+AR groups (p=0.005, p<0.001), while the IL-1β expression significantly decreased in the CS+AR, PYC3+AR, and PYC10+AR groups (p<0.001, p=0.003, p=0.001). Conclusion: PYC has multiple suppressive effects on allergic response. Thus, PYC may be used as a supplementary agent in allergic response.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Background</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The supplement Pycnogenol&reg; (PYC) has been used for the treatment of several chronic diseases including allergic rhinitis (AR). However, the in vivo effects on allergic inflammation have not been identified to date.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Aims</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: To investigate the treatment results of PYC on allergic inflammation in a rat model of allergic rhinitis.&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Study Design</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Animal experimentation.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Methods</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Allergic rhinitis was stimulated in 42 rats by intraperitoneal sensitization and intranasal challenge with Ovalbumin. The animals were divided into six subgroups: healthy controls, AR group, AR group treated with corticosteroid (dexamethasone 1 mg/kg; CS+AR), healthy rats group that were given only PYC of 10 mg/kg (PYC10), AR group treated with PYC of 3mg/kg (PYC3+AR), and AR group treated with PYC of 10 mg/kg (PYC10+AR). Interferon-&gamma; (IFN-&gamma;), interleukin-4 (IL-4), interleukin-10 (IL-10), and OVA-specific immunoglobulin E (Ig-E) levels of serum were measured. Histopathological changes in nasal mucosa and expression of tumor necrosis factor-&alpha; (TNF-&alpha;) and IL-1&beta; were evaluated.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Results</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The levels of the IL-4 were significantly decreased in the PYC3+AR, PYC10+AR&nbsp; and CS+AR&nbsp; groups compared with the AR group (p=0.002, p&lt;0.001, p=0.006). The production of the IFN-&gamma; was significantly decreased in the PYC3+AR&nbsp; and PYC10+AR groups compared with the AR group (p=0.013, p=0.001). The administration of PYC to allergic rats suppressed the elevated IL-10 production, especially in the PYC3+AR group (p=0.006). Mucosal edema was significantly decreased respectively after treatment at dose 3 mg/kg and 10 mg/kg PYC (both, p&lt;0.001). The mucosal expression of TNF-&alpha; has significantly decreased in the PYC3+AR and PYC10+AR groups (p=0.005, p&lt;0.001), while the IL-1&beta; expression significantly decreased in the CS+AR, PYC3+AR, and PYC10+AR groups (p&lt;0.001, p=0.003, p=0.001).</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Conclusion</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: PYC has multiple suppressive effects on allergic response. Thus, PYC may be used as a supplementary agent in allergic response.&nbsp;</span></p>\r\n<div>\r\n</div>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The supplement Pycnogenol® (PYC) has been used for the treatment of several chronic diseases including allergic rhinitis (AR). However, the in vivo effects on allergic inflammation have not been identified to date. Aims: To investigate the treatment results of PYC on allergic inflammation in a rat model of allergic rhinitis. Study Design: Animal experimentation. Methods: Allergic rhinitis was stimulated in 42 rats by intraperitoneal sensitization and intranasal challenge with Ovalbumin. The animals were divided into six subgroups: healthy controls, AR group, AR group treated with corticosteroid (dexamethasone 1 mg/kg; CS+AR), healthy rats group that were given only PYC of 10 mg/kg (PYC10), AR group treated with PYC of 3mg/kg (PYC3+AR), and AR group treated with PYC of 10 mg/kg (PYC10+AR). Interferon-γ (IFN-γ), interleukin-4 (IL-4), interleukin-10 (IL-10), and OVA-specific immunoglobulin E (Ig-E) levels of serum were measured. Histopathological changes in nasal mucosa and expression of tumor necrosis factor-α (TNF-α) and IL-1β were evaluated. Results: The levels of the IL-4 were significantly decreased in the PYC3+AR, PYC10+AR and CS+AR groups compared with the AR group (p=0.002, p<0.001, p=0.006). The production of the IFN-γ was significantly decreased in the PYC3+AR and PYC10+AR groups compared with the AR group (p=0.013, p=0.001). The administration of PYC to allergic rats suppressed the elevated IL-10 production, especially in the PYC3+AR group (p=0.006). Mucosal edema was significantly decreased respectively after treatment at dose 3 mg/kg and 10 mg/kg PYC (both, p<0.001). The mucosal expression of TNF-α has significantly decreased in the PYC3+AR and PYC10+AR groups (p=0.005, p<0.001), while the IL-1β expression significantly decreased in the CS+AR, PYC3+AR, and PYC10+AR groups (p<0.001, p=0.003, p=0.001). Conclusion: PYC has multiple suppressive effects on allergic response. Thus, PYC may be used as a supplementary agent in allergic response.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.150057",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "620-626",
+    "views": 7611,
+    "downloads": 3528,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "15",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=15",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=15",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=15",
+    "localPdfUrl": "js/data/pdfs/15.pdf",
+    "pdfUrl": "js/data/pdfs/15.pdf"
+  },
+  {
+    "id": 16,
+    "type": "Original Article",
+    "title": "Intravenous Colistin Use for Multidrug-Resistant Gram-Negative Infections in Pediatric Patients",
+    "authors": [
+      {
+        "name": "Ayşe Karaaslan",
+        "affiliation": "Department of Pediatric Infectious Diseases, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Eren Çağan",
+        "affiliation": "Department of Pediatric Infectious Diseases, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Eda Kepenekli Kadayifci",
+        "affiliation": "Department of Pediatric Infectious Diseases, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serkan Atıcı",
+        "affiliation": "Department of Pediatric Infectious Diseases, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gülşen Akkoç",
+        "affiliation": "Department of Pediatric Infectious Diseases, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurhayat Yakut",
+        "affiliation": "Department of Pediatric Infectious Diseases, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sevliya Öcal Demir",
+        "affiliation": "Department of Pediatric Infectious Diseases, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Soysal",
+        "affiliation": "Department of Pediatric Infectious Diseases, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Bakır",
+        "affiliation": "Department of Pediatric Infectious Diseases, Marmara University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The emergence of infections due to multidrug-resistant Gram-negative bacilli (MDR-GNB) has led to the resurrection of colistin use. The data on colistin use and drug-related adverse effects in children are scarce. Aims: In this study, we aimed to evaluate the clinical efficacy and safety of colistin use in critically ill pediatric patients. Study Design: This study has a retrospective study design. Methods: Sixty-one critically ill children were identified through the department’s patient files archive during the period from January 2011 to November 2014. Results: Twenty-nine females and thirty-two males with a mean±standard deviation (SD) age of 61±9 months (range 0-216, median 12 months) received IV colistin due to MDR-GNB infections. Bacteremia (n=23, 37.7%) was the leading diagnosis, followed by pneumonia (n=19, 31%), clinical sepsis (n=7, 11.4%), wound infection (n=6, 9.8%), urinary tract infection (n=5, 8.1%) and meningitis (n=1, 1.6%). All of the isolates were resistant to carbapenems; however, all were susceptible to colistin. The isolated microorganisms in decreasing order of frequency were: Acinetobacter baumanni (n=27, 44.2%), Pseudomonas aeruginosa (n=17, 27.8%), Klebsiella pneumoniae (n=6, 9.8%), K. pneumoniae and Stenotrophomonas maltophilia (n=1, 1.6%), K. pneumoniae and A. baumanni (n=1, 1.6%), K. oxytoca (n=1, 1.6%) and Enterobacter cloacae (n=1, 1.6%). In seven patients, no microorganisms were detected; however, five of these patients were colonized by carbapenem-resistant K. pneumoniae. The mean duration of colistin therapy was 12 days (range 3-45). Colistin was administered concomitantly with one of the following antibiotics: carbapenem (n=50, %82), ampicillin-sulbactam (n=5, 8%), quinolones (n=5, 8%), rifampicin (n=1, 1.6%). Carbapenem was the most frequently used antibiotic. Nephrotoxicity was observed in only 1 patient, and we did not observe neurotoxicity in this study. All the patients received intravenous colistin (colisthimethate) at a dosage of 5 mg/kg daily by dividing it in three equal doses. Seven (11.4%) patients died during the study period. Conclusion: Colistin appears to be a safe and efficacious drug for treating MDR-GNB infections in children.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Background</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The emergence of infections due to multidrug-resistant Gram-negative bacilli (MDR-GNB) has led to the resurrection of colistin use. The data on colistin use and drug-related adverse effects in children are scarce.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Aims</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: In this study, we aimed to evaluate the clinical efficacy and safety of colistin use in critically ill pediatric patients.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Study Design</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: This study has a retrospective study design.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Methods</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Sixty-one critically ill children were identified through the department&rsquo;s patient files archive during the period from January 2011 to November 2014.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Results</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Twenty-nine females and thirty-two males with a mean&plusmn;standard deviation (SD) age of 61&plusmn;9 months (range 0-216, median 12 months) received IV colistin due to MDR-GNB infections. Bacteremia (n=23, 37.7%) was the leading diagnosis, followed by pneumonia (n=19, 31%), clinical sepsis (n=7, 11.4%), wound infection (n=6, 9.8%), urinary tract infection (n=5, 8.1%) and meningitis (n=1, 1.6%). All of the isolates were resistant to carbapenems; however, all were susceptible to colistin. The isolated microorganisms in decreasing order of frequency were: Acinetobacter baumanni (n=27, 44.2%), Pseudomonas aeruginosa (n=17, 27.8%), Klebsiella pneumoniae (n=6, 9.8%), K. pneumoniae and Stenotrophomonas maltophilia (n=1, 1.6%), K. pneumoniae and A. baumanni (n=1, 1.6%), K. oxytoca (n=1, 1.6%) and Enterobacter cloacae (n=1, 1.6%). In seven patients, no microorganisms were detected; however, five of these patients were colonized by carbapenem-resistant K. pneumoniae. The mean duration of colistin therapy was 12 days (range 3-45). Colistin was administered concomitantly with one of the following antibiotics: carbapenem (n=50, %82), ampicillin-sulbactam (n=5, 8%), quinolones (n=5, 8%), rifampicin (n=1, 1.6%). Carbapenem was the most frequently used antibiotic. Nephrotoxicity was observed in only 1 patient, and we did not observe neurotoxicity in this study. All the patients received intravenous colistin (colisthimethate)&nbsp; at a dosage of 5 mg/kg daily by dividing it in three equal doses. Seven (11.4%) patients died during the study period.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Conclusion</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Colistin appears to be a safe and efficacious drug for treating MDR-GNB infections in children.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The emergence of infections due to multidrug-resistant Gram-negative bacilli (MDR-GNB) has led to the resurrection of colistin use. The data on colistin use and drug-related adverse effects in children are scarce. Aims: In this study, we aimed to evaluate the clinical efficacy and safety of colistin use in critically ill pediatric patients. Study Design: This study has a retrospective study design. Methods: Sixty-one critically ill children were identified through the department’s patient files archive during the period from January 2011 to November 2014. Results: Twenty-nine females and thirty-two males with a mean±standard deviation (SD) age of 61±9 months (range 0-216, median 12 months) received IV colistin due to MDR-GNB infections. Bacteremia (n=23, 37.7%) was the leading diagnosis, followed by pneumonia (n=19, 31%), clinical sepsis (n=7, 11.4%), wound infection (n=6, 9.8%), urinary tract infection (n=5, 8.1%) and meningitis (n=1, 1.6%). All of the isolates were resistant to carbapenems; however, all were susceptible to colistin. The isolated microorganisms in decreasing order of frequency were: Acinetobacter baumanni (n=27, 44.2%), Pseudomonas aeruginosa (n=17, 27.8%), Klebsiella pneumoniae (n=6, 9.8%), K. pneumoniae and Stenotrophomonas maltophilia (n=1, 1.6%), K. pneumoniae and A. baumanni (n=1, 1.6%), K. oxytoca (n=1, 1.6%) and Enterobacter cloacae (n=1, 1.6%). In seven patients, no microorganisms were detected; however, five of these patients were colonized by carbapenem-resistant K. pneumoniae. The mean duration of colistin therapy was 12 days (range 3-45). Colistin was administered concomitantly with one of the following antibiotics: carbapenem (n=50, %82), ampicillin-sulbactam (n=5, 8%), quinolones (n=5, 8%), rifampicin (n=1, 1.6%). Carbapenem was the most frequently used antibiotic. Nephrotoxicity was observed in only 1 patient, and we did not observe neurotoxicity in this study. All the patients received intravenous colistin (colisthimethate) at a dosage of 5 mg/kg daily by dividing it in three equal doses. Seven (11.4%) patients died during the study period. Conclusion: Colistin appears to be a safe and efficacious drug for treating MDR-GNB infections in children.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.16210",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "627-632",
+    "views": 7584,
+    "downloads": 10483,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "16",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=16",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=16",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=16",
+    "localPdfUrl": "js/data/pdfs/16.pdf",
+    "pdfUrl": "js/data/pdfs/16.pdf"
+  },
+  {
+    "id": 17,
+    "type": "Original Article",
+    "title": "MyD 88 Polymorphisms in Children Diagnosed with Sepsis",
+    "authors": [
+      {
+        "name": "Sinem Sarı Gökay",
+        "affiliation": "Deparment of Pediatrics, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Rıza Dinçer Yıldızdaş",
+        "affiliation": "Deparment of Pediatric Intensive Care, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Yılmaz",
+        "affiliation": "Deparment of Pediatrics, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kıymet Aksoy",
+        "affiliation": "Department of Biochemistry, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Erdinç Yalın",
+        "affiliation": "Department of Biochemistry, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yaşar Sertdemir",
+        "affiliation": "Department of Biostatistics, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gülsüm Uçar",
+        "affiliation": "Department of Pediatric Immunology Laboratory, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özden Özgür Horoz",
+        "affiliation": "Deparment of Pediatric Intensive Care, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatma Derya Özduran",
+        "affiliation": "Deparment of Pediatrics, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hayri Levent Yılmaz",
+        "affiliation": "Deparment of Pediatrics, Çukurova University School of Medicine, Adana, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Myeloid differentiation primary response gene 88 (MyD 88) is an intracellular adapter protein that mediates the early immune response to pathogens. Toll-like receptors (except TLR-3) induce the immune response through a MyD 88-dependent signal pathway. Aims: We aimed to investigate the MyD 88 polymorphisms that play important roles in the immune response in septic children and to evaluate whether or not they were risk factors in the development of sepsis. Study Design: Case-control study. Methods: Sixty-five patients diagnosed with sepsis in the Pediatric Intensive Care Unit during the period from April 2010 to January 2012 were included as the study group. Sixty-five children without sepsis were included as controls. After DNA was obtained from blood samples in the study and control groups, MyD 88 polymorphisms were analyzed. According to the genotype and allele frequencies, the distributions of MyD 88 polymorphisms [Single nucleotide polymorphism (SNP) - 938 C/A (rs4988453), MyD 88 SNP 1944 C/G (rs4988457)] were analyzed in both the study and control groups. Results: The C/C genotype of MyD 88 SNP -938 was significantly more common than the C/A genotype in the patient group (p=0.002). No statistically significant difference in the frequency of the MyD 88 SNP 1944 genotype was found between the study and control groups (p=0.272). Conclusion: Gene polymorphism studies could elucidate our understanding of sepsis in terms of prevalence and the managementof treatment. It was shown in this study that children with the MyD 88 SNP -938 C/C genotype had a greater tendency toward sepsis. However, additional studies should be performed.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Background</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Myeloid differentiation primary response gene 88 (MyD 88) is an intracellular adapter protein that mediates the early immune response to pathogens. Toll-like receptors (except TLR-3) induce the immune response through a MyD 88-dependent signal pathway.&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Aims</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: We aimed to investigate the MyD 88 polymorphisms that play important roles in the immune response in septic children and to evaluate whether or not they were risk factors in the development of sepsis.&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Study Design</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Case-control study.&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Methods</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Sixty-five patients diagnosed with sepsis in the Pediatric Intensive Care Unit during the period from April 2010 to January 2012 were included as the study group. Sixty-five children without sepsis were included as controls. After DNA was obtained from blood samples in the study and control groups, MyD 88 polymorphisms were analyzed. According to the genotype and allele frequencies, the distributions of MyD 88 polymorphisms [Single nucleotide polymorphism (SNP) - 938 C/A (rs4988453), MyD 88 SNP 1944 C/G (rs4988457)] were analyzed in both the study and control groups.&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Results</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The C/C genotype of MyD 88 SNP -938 was significantly more common than the C/A genotype in the patient group (p=0.002). No statistically significant difference in the frequency of the MyD 88 SNP 1944 genotype was found between the study and control groups (p=0.272).&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Conclusion</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Gene polymorphism studies could elucidate our understanding of sepsis in terms of prevalence and the managementof treatment. It was shown in this study that children with the MyD 88 SNP -938 C/C genotype had a greater tendency toward sepsis. However, additional studies should be performed.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Myeloid differentiation primary response gene 88 (MyD 88) is an intracellular adapter protein that mediates the early immune response to pathogens. Toll-like receptors (except TLR-3) induce the immune response through a MyD 88-dependent signal pathway. Aims: We aimed to investigate the MyD 88 polymorphisms that play important roles in the immune response in septic children and to evaluate whether or not they were risk factors in the development of sepsis. Study Design: Case-control study. Methods: Sixty-five patients diagnosed with sepsis in the Pediatric Intensive Care Unit during the period from April 2010 to January 2012 were included as the study group. Sixty-five children without sepsis were included as controls. After DNA was obtained from blood samples in the study and control groups, MyD 88 polymorphisms were analyzed. According to the genotype and allele frequencies, the distributions of MyD 88 polymorphisms [Single nucleotide polymorphism (SNP) - 938 C/A (rs4988453), MyD 88 SNP 1944 C/G (rs4988457)] were analyzed in both the study and control groups. Results: The C/C genotype of MyD 88 SNP -938 was significantly more common than the C/A genotype in the patient group (p=0.002). No statistically significant difference in the frequency of the MyD 88 SNP 1944 genotype was found between the study and control groups (p=0.272). Conclusion: Gene polymorphism studies could elucidate our understanding of sepsis in terms of prevalence and the managementof treatment. It was shown in this study that children with the MyD 88 SNP -938 C/C genotype had a greater tendency toward sepsis. However, additional studies should be performed.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.150436",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "633-638",
+    "views": 7397,
+    "downloads": 4229,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "17",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=17",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=17",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=17",
+    "localPdfUrl": "js/data/pdfs/17.pdf",
+    "pdfUrl": "js/data/pdfs/17.pdf"
+  },
+  {
+    "id": 18,
+    "type": "Original Article",
+    "title": "Altered Chondrocyte Apoptosis Status in Developmental Hip Dysplasia in Rabbits",
+    "authors": [
+      {
+        "name": "Yi-Shan Wei",
+        "affiliation": "Department of Orthopedics, First Affiliated Hospital, Chongqing Medical University Chongqing, China; Department of Orthopedics, The Second Affiliated Hospital of Inner Mongolia Medical University, Hohhot, China",
+        "orcid": ""
+      },
+      {
+        "name": "Dai-He Li",
+        "affiliation": "Department of Orthopedics, The Second Affiliated Hospital of Inner Mongolia Medical University, Hohhot, China.",
+        "orcid": ""
+      },
+      {
+        "name": "Wan-Lin Liu",
+        "affiliation": "Department of Orthopedics, The Second Affiliated Hospital of Inner Mongolia Medical University, Hohhot, China.",
+        "orcid": ""
+      },
+      {
+        "name": "Dian-Ming Jiang",
+        "affiliation": "Department of Orthopedics, First Affiliated Hospital, Chongqing Medical University Chongqing, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Developmental dysplasia of the hip (DDH) is an important factor leading to early adult osteoarthritis. Chondrocyte apoptosis has been proven to be an important factor causing osteoarthritis. Aims: The current study aims to explore whether a rabbit model of developmental dysplasia of the hip through cast immobilization in the legs results in chondrocyte apoptosis. Study Design: Animal experimentation. Methods: Thirty-two New Zealand white rabbits were divided in three groups with cast plaster-induced dislocation at 2, 4 and 6 weeks. The contralateral hip joint was utilized as a control group. Ten rabbits in each group were sacrificed, and hip specimens were obtained. Bcl-2/Bax, cleaved caspase-3 and cleaved caspase-8 expression were examined by western blot analysis. Chondrocyte apoptosis was analyzed through transmission electron microscopy (TEM) and TUNEL analysis. All experiments were repeated at least three times. Results: In the experimental group, Bcl-2/Bax, cleaved caspase-3 and cleaved caspase-8 expression were significantly altered. The Bcl-2/Bax ratio decreased with time (all p<0.01), whereas levels of cleaved caspase-3 (p<0.01 and p<0.05) and cleaved caspase-8 (all p<0.05) gradually increased. Chondrocyte apoptosis was observed through transmission electron microscopy (TEM) and TUNEL analysis (p<0.05 at 4 weeks and p<0.01 at 6 weeks). Conclusion: Prolonged immobilization of rabbit hip caused chondrocyte apoptosis. Reduction of the hip joint may protect chondrocytes from apoptosis, thus preventing secondary osteoarthritis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Background</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Developmental dysplasia of the hip (DDH) is an important factor leading to early adult osteoarthritis. Chondrocyte apoptosis has been proven to be an important factor causing osteoarthritis.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Aims</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The current study aims to explore whether a rabbit model of developmental dysplasia of the hip through cast immobilization in the legs results in chondrocyte apoptosis.&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Study Design</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Animal experimentation.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Methods</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Thirty-two New Zealand white rabbits were divided in three groups with cast plaster-induced dislocation at 2, 4 and 6 weeks. The contralateral hip joint was utilized as a control group. Ten rabbits in each group were sacrificed, and hip specimens were obtained. Bcl-2/Bax, cleaved caspase-3 and cleaved caspase-8 expression were examined by western blot analysis. Chondrocyte apoptosis was analyzed through transmission electron microscopy (TEM) and TUNEL analysis. All experiments were repeated at least three times.&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Results</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: In the experimental group, Bcl-2/Bax, cleaved caspase-3 and cleaved caspase-8 expression were significantly altered. The Bcl-2/Bax ratio decreased with time (all p&lt;0.01), whereas levels of cleaved caspase-3 (p&lt;0.01 and p&lt;0.05) and cleaved caspase-8 (all p&lt;0.05) gradually increased. Chondrocyte apoptosis was observed through transmission electron microscopy (TEM) and TUNEL analysis (p&lt;0.05 at 4 weeks and p&lt;0.01 at 6 weeks).&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Conclusion</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Prolonged immobilization of rabbit hip caused chondrocyte apoptosis. Reduction of the hip joint may protect chondrocytes from apoptosis, thus preventing secondary osteoarthritis.&nbsp;</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Developmental dysplasia of the hip (DDH) is an important factor leading to early adult osteoarthritis. Chondrocyte apoptosis has been proven to be an important factor causing osteoarthritis. Aims: The current study aims to explore whether a rabbit model of developmental dysplasia of the hip through cast immobilization in the legs results in chondrocyte apoptosis. Study Design: Animal experimentation. Methods: Thirty-two New Zealand white rabbits were divided in three groups with cast plaster-induced dislocation at 2, 4 and 6 weeks. The contralateral hip joint was utilized as a control group. Ten rabbits in each group were sacrificed, and hip specimens were obtained. Bcl-2/Bax, cleaved caspase-3 and cleaved caspase-8 expression were examined by western blot analysis. Chondrocyte apoptosis was analyzed through transmission electron microscopy (TEM) and TUNEL analysis. All experiments were repeated at least three times. Results: In the experimental group, Bcl-2/Bax, cleaved caspase-3 and cleaved caspase-8 expression were significantly altered. The Bcl-2/Bax ratio decreased with time (all p<0.01), whereas levels of cleaved caspase-3 (p<0.01 and p<0.05) and cleaved caspase-8 (all p<0.05) gradually increased. Chondrocyte apoptosis was observed through transmission electron microscopy (TEM) and TUNEL analysis (p<0.05 at 4 weeks and p<0.01 at 6 weeks). Conclusion: Prolonged immobilization of rabbit hip caused chondrocyte apoptosis. Reduction of the hip joint may protect chondrocytes from apoptosis, thus preventing secondary osteoarthritis.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.150557",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "639-644",
+    "views": 7305,
+    "downloads": 10055,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "18",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=18",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=18",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=18",
+    "localPdfUrl": "js/data/pdfs/18.pdf",
+    "pdfUrl": "js/data/pdfs/18.pdf"
+  },
+  {
+    "id": 19,
+    "type": "Original Article",
+    "title": "Use of Systemic Rosmarinus Officinalis to Enhance the Survival of Random-Pattern Skin Flaps",
+    "authors": [
+      {
+        "name": "Bilsev İnce",
+        "affiliation": "Department of Plastic, Reconstructive and Aesthetic Surgery, Necmettin Erbakan University Meram School of Medicine, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatma Bilgen",
+        "affiliation": "Plastic, Reconstructive and Aesthetic Surgery Clinic, Elbistan State Hospital, Kahramanmaraş, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşe Özlem Gündeşlioğlu",
+        "affiliation": "Department of Plastic, Reconstructive and Aesthetic Surgery, Necmettin Erbakan University Meram School of Medicine, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Dadacı",
+        "affiliation": "Department of Plastic, Reconstructive and Aesthetic Surgery, Necmettin Erbakan University Meram School of Medicine, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sümeyye Kozacıoğlu [[4]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Skin flaps are commonly used in soft-tissue reconstruction; however, necrosis can be a frequent complication. Several systemic and local agents have been used in attempts to improve skin flap survival, but none that can prevent flap necrosis have been identified. Aims: This study aims to determine whether the use of systemic Rosmarinus officinalis (R. officinalis) extract can prevent flap necrosis and improve skin flap recovery. Study Design: Animal experimentation. Methods: Thirty-five Wistar albino rats were divided in five groups. A rectangular random-pattern flaps measuring 8×2 cm was elevated from the back of each rat. Group I was the control group. In Group II, 0.2 ml of R. officinalis oil was given orally 2h before surgery. R. officinalis oil was then applied orally twice a day for a week. In Group III, R. officinalis oil was given orally twice a day for one week before surgery. At the end of the week, 0.2 mL of R. officinalis oil was given orally 2 h before surgery. In Group IV, 0.2 mL of R. officinalis oil was injected subcutaneously 2 h before surgery. After the surgery, 0.2 mL R. officinalis oil was injected subcutaneously twice a day for one week. In Group V, 0.2 mL R. officinalis oil was injected subcutaneously twice a day for one week prior to surgery. At the end of the week, one last 0.2 mL R. officinalis oil injection was administered subcutaneously 2 h before surgery. After the surgery, 0.2 mL R. officinalis oil was injected subcutaneously twice a day for one week. Results: The mean percentage of viable surface area was significantly greater (p<0.05) in Groups II, III, IV, and V as compared to Group I. Mean vessel diameter was significantly greater (p<0.05) in Groups II, III, IV, and V as compared to Group I. Conclusion: We have determined that, in addition to its anti-inflammatory and anti-oxidant effects, R. officinalis has vasodilatory effects that contribute to increased skin flap survival.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Background</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Skin flaps are commonly used in soft-tissue reconstruction; however, necrosis can be a frequent complication. Several systemic and local agents have been used in attempts to improve skin flap survival, but none that can prevent flap necrosis have been identified.&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Aims</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: This study aims to determine whether the use of systemic Rosmarinus officinalis (R. officinalis) extract can prevent flap necrosis and improve skin flap recovery.&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Study Design</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Animal experimentation.&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Methods</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Thirty-five Wistar albino rats were divided in five groups. A rectangular random-pattern flaps measuring 8&times;2 cm was elevated from the back of each rat. Group I was the control group. In Group II, 0.2 ml of R. officinalis oil was given orally 2h before surgery. R. officinalis oil was then applied orally twice a day for a week. In Group III, R. officinalis oil was given orally twice a day for one week before surgery. At the end of the week, 0.2 mL of R. officinalis oil was given orally 2 h before surgery. In Group IV, 0.2 mL of R. officinalis oil was injected subcutaneously 2 h before surgery. After the surgery, 0.2 mL R. officinalis oil was injected subcutaneously twice a day for one week. In Group V, 0.2 mL R. officinalis oil was injected subcutaneously twice a day for one week prior to surgery. At the end of the week, one last 0.2 mL&nbsp; R. officinalis oil injection was administered subcutaneously 2 h before surgery. After the surgery, 0.2 mL R. officinalis oil was injected subcutaneously twice a day for one week.&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Results</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The mean percentage of viable surface area was significantly greater (p&lt;0.05) in Groups II, III, IV, and V as compared to Group I. Mean vessel diameter was significantly greater (p&lt;0.05) in Groups II, III, IV, and V as compared to Group I.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Conclusion</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: We have determined that, in addition to its anti-inflammatory and anti-oxidant effects, R. officinalis has vasodilatory effects that contribute to increased skin flap survival.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Skin flaps are commonly used in soft-tissue reconstruction; however, necrosis can be a frequent complication. Several systemic and local agents have been used in attempts to improve skin flap survival, but none that can prevent flap necrosis have been identified. Aims: This study aims to determine whether the use of systemic Rosmarinus officinalis (R. officinalis) extract can prevent flap necrosis and improve skin flap recovery. Study Design: Animal experimentation. Methods: Thirty-five Wistar albino rats were divided in five groups. A rectangular random-pattern flaps measuring 8×2 cm was elevated from the back of each rat. Group I was the control group. In Group II, 0.2 ml of R. officinalis oil was given orally 2h before surgery. R. officinalis oil was then applied orally twice a day for a week. In Group III, R. officinalis oil was given orally twice a day for one week before surgery. At the end of the week, 0.2 mL of R. officinalis oil was given orally 2 h before surgery. In Group IV, 0.2 mL of R. officinalis oil was injected subcutaneously 2 h before surgery. After the surgery, 0.2 mL R. officinalis oil was injected subcutaneously twice a day for one week. In Group V, 0.2 mL R. officinalis oil was injected subcutaneously twice a day for one week prior to surgery. At the end of the week, one last 0.2 mL R. officinalis oil injection was administered subcutaneously 2 h before surgery. After the surgery, 0.2 mL R. officinalis oil was injected subcutaneously twice a day for one week. Results: The mean percentage of viable surface area was significantly greater (p<0.05) in Groups II, III, IV, and V as compared to Group I. Mean vessel diameter was significantly greater (p<0.05) in Groups II, III, IV, and V as compared to Group I. Conclusion: We have determined that, in addition to its anti-inflammatory and anti-oxidant effects, R. officinalis has vasodilatory effects that contribute to increased skin flap survival.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.150981",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "645-651",
+    "views": 7050,
+    "downloads": 9955,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "19",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=19",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=19",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=19",
+    "localPdfUrl": "js/data/pdfs/19.pdf",
+    "pdfUrl": "js/data/pdfs/19.pdf"
+  },
+  {
+    "id": 20,
+    "type": "Original Article",
+    "title": "Frequency of Nerve Root Sleeve Cysts in Autosomal Dominant Polycystic Kidney Disease",
+    "authors": [
+      {
+        "name": "Murat Aşık",
+        "affiliation": "Department of Radiology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Tufan",
+        "affiliation": "Department of Internal Medicine, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Timur Selçuk Akpınar",
+        "affiliation": "Department of Internal Medicine, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nilgül Akalın",
+        "affiliation": "Department of Internal Medicine, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Elvan Ceyhan",
+        "affiliation": "Department of Mathematics, Koç University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Necmeddin Tunç",
+        "affiliation": "Department of Radiology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zehra Işık Hasıloğlu",
+        "affiliation": "Department of Radiology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Rıza Altıparmak",
+        "affiliation": "Department of Internal Medicine, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tevfik Ecder",
+        "affiliation": "Department of Internal Medicine, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sait Albayram",
+        "affiliation": "Department of Radiology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: There is sporadic data about the occurrence of spinal meningeal cysts in patients with autosomal dominant polycystic kidney disease (ADPKD). We suggest that there is a relationship with the frequency and size of spinal meningeal cysts and headache, intracranial aneurysms, and cerebrospinal fluid leakage in patients with ADPKD. Aim: To investigate the relationship with spinal meningeal cyst, cerebrospinal fluid leakage, and headache in patients with ADPKD. Study Design: Cross-sectional study. Methods: We enrolled 50 patients with ADPKD and 37 healthy volunteers. This cross-sectional study included patients with ADPKD and matched healthy volunteers. Magnetic resonance imaging myelography was performed using the 3D-T2 HASTE technique in an MRI scanner. We questioned our subjects regarding presence of headache and evaluated headache severity using a visual analog scale. The relationship between the number and size of spinal meningeal cysts with headache, intracranial aneurysms, and liver cysts was also investigated. Results: Spinal meningeal cysts were more numerous and larger in patients than in controls (14.8±11.6 vs. 6.4±4.6 cysts respectively, p<0.001, 68.3±49.3 vs. 25.4±20.1 mm, p<0.001, respectively). Spinal cyst number and size were similar in APDKD patients with or without intracranial aneurysms. Headache score was correlated with the size and number of spinal meningeal cysts. This was valid only in patients with ADPKD. Conclusion: Abnormality involving the vessel wall in ADPKD may explain the increased number of spinal meningeal cysts in ADPKD. Moreover, leakage of cerebrospinal fluid secondary to spinal meningeal cyst may be responsible for recurrent severe headache by causing spontaneous intracranial hypotension in these patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Background</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: There is sporadic data about the occurrence of spinal meningeal cysts in patients with autosomal dominant polycystic kidney disease (ADPKD). We suggest that there is a relationship with the frequency and size of spinal meningeal cysts and headache, intracranial aneurysms, and cerebrospinal fluid leakage in patients with ADPKD.&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Aim</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: To investigate the relationship with spinal meningeal cyst, cerebrospinal fluid leakage, and headache in patients with ADPKD.&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Study Design</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Cross-sectional study.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Methods</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: We enrolled 50 patients with ADPKD and 37 healthy volunteers. This cross-sectional study included patients with ADPKD and matched healthy volunteers. Magnetic resonance imaging myelography was performed using the 3D-T2 HASTE technique in an MRI scanner. We questioned our subjects regarding presence of headache and evaluated headache severity using a visual analog scale. The relationship between the number and size of spinal meningeal cysts with headache, intracranial aneurysms, and liver cysts was also investigated.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Results</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Spinal meningeal cysts were more numerous and larger in patients than in controls (14.8&plusmn;11.6 vs. 6.4&plusmn;4.6 cysts respectively, p&lt;0.001, 68.3&plusmn;49.3 vs. 25.4&plusmn;20.1 mm, p&lt;0.001, respectively). Spinal cyst number and size were similar in APDKD patients with or without intracranial aneurysms. Headache score was correlated with the size and number of spinal meningeal cysts. This was valid only in patients with ADPKD.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Conclusion</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Abnormality involving the vessel wall in ADPKD may explain the increased number of spinal meningeal cysts in ADPKD. Moreover, leakage of cerebrospinal fluid secondary to spinal meningeal cyst may be responsible for recurrent severe headache by causing spontaneous intracranial hypotension in these patients.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: There is sporadic data about the occurrence of spinal meningeal cysts in patients with autosomal dominant polycystic kidney disease (ADPKD). We suggest that there is a relationship with the frequency and size of spinal meningeal cysts and headache, intracranial aneurysms, and cerebrospinal fluid leakage in patients with ADPKD. Aim: To investigate the relationship with spinal meningeal cyst, cerebrospinal fluid leakage, and headache in patients with ADPKD. Study Design: Cross-sectional study. Methods: We enrolled 50 patients with ADPKD and 37 healthy volunteers. This cross-sectional study included patients with ADPKD and matched healthy volunteers. Magnetic resonance imaging myelography was performed using the 3D-T2 HASTE technique in an MRI scanner. We questioned our subjects regarding presence of headache and evaluated headache severity using a visual analog scale. The relationship between the number and size of spinal meningeal cysts with headache, intracranial aneurysms, and liver cysts was also investigated. Results: Spinal meningeal cysts were more numerous and larger in patients than in controls (14.8±11.6 vs. 6.4±4.6 cysts respectively, p<0.001, 68.3±49.3 vs. 25.4±20.1 mm, p<0.001, respectively). Spinal cyst number and size were similar in APDKD patients with or without intracranial aneurysms. Headache score was correlated with the size and number of spinal meningeal cysts. This was valid only in patients with ADPKD. Conclusion: Abnormality involving the vessel wall in ADPKD may explain the increased number of spinal meningeal cysts in ADPKD. Moreover, leakage of cerebrospinal fluid secondary to spinal meningeal cyst may be responsible for recurrent severe headache by causing spontaneous intracranial hypotension in these patients.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.151093",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "652-656",
+    "views": 7346,
+    "downloads": 10011,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "20",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=20",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=20",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=20",
+    "localPdfUrl": "js/data/pdfs/20.pdf",
+    "pdfUrl": "js/data/pdfs/20.pdf"
+  },
+  {
+    "id": 31,
+    "type": "Original Article",
+    "title": "Does Preoperative Diagnosis of Endometrial Hyperplasia Necessitate Intraoperative Frozen Section Consultation?",
+    "authors": [
+      {
+        "name": "Gokhan Boyraz",
+        "affiliation": "Division of Gynecologic Oncology, Department of Obstetrics and Gynecology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Derman Başaran",
+        "affiliation": "Division of Gynecologic Oncology, Department of Obstetrics and Gynecology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet C. Salman",
+        "affiliation": "Division of Gynecologic Oncology, Department of Obstetrics and Gynecology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nejat Özgül",
+        "affiliation": "Division of Gynecologic Oncology, Department of Obstetrics and Gynecology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kunter Yüce",
+        "affiliation": "Division of Gynecologic Oncology, Department of Obstetrics and Gynecology, Hacettepe University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: In women with endometrial hyperplasia, there is a risk for co-existent endometrial cancer when patients are subjected to immediate surgical treatment. Aims: The aim of this study was to investigate the frequency of endometrial cancer and the accuracy of frozen section analysis at the time of hysterectomy among patients with endometrial hyperplasia, to reveal whether or not a preoperative diagnosis of endometrial hyperplasia necessitates frozen section consultation. Study Design: Retrospective cross-sectional study. Methods: A department database review was performed to identify patients who were subjected to hysterectomy with a preoperative diagnosis of endometrial hyperplasia, during the period from 2007 to 2014. Results: The study group included 189 cases. The final pathological examination revealed endometrial cancer in 16 women (8.4%). The risk of cancer in patients with endometrial hyperplasia was 1 of 125 (0.8%) in simple hyperplasia without atypia, 1 of 21 (4.8%) in complex hyperplasia without atypia and 14 of 43 (32.5%) in atypical hyperplasia. Of women with cancer, 2 of 16 (12.5%) had high-risk features. Frozen section analysis was requested in 46 cases. Frozen sections helped to identify six out of 11 cases of endometrial cancer (54.5%). The sensitivity, specificity and positive and negative predictive values of frozen section analysis for the detection of endometrial cancer among women with endometrial hyperplasia were 54.4%, 97.2%, 85.7% and 87.5%, respectively. Conclusion: Although a significant proportion of patients with atypical endometrial hyperplasia are diagnosed with endometrial cancer following hysterectomy, most of these cases have low-risk features and do not require surgical staging. Additionally, intraoperative frozen section analysis if not helpful for diagnosing concurrent endometrial cancer in patients with endometrial hyperplasia. Therefore, it seems that patients with endometrial hyperplasia can be operated upon in settings with no available method for obtaining frozen sections intraoperatively.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Background</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: In women with endometrial hyperplasia, there is a risk for co-existent endometrial cancer when patients are subjected to immediate surgical treatment.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Aims</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The aim of this study was to investigate the frequency of endometrial cancer and the accuracy of frozen section analysis at the time of hysterectomy among patients with endometrial hyperplasia, to reveal whether or not a preoperative diagnosis of endometrial hyperplasia necessitates frozen section consultation.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Study Design</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Retrospective cross-sectional study.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Methods</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: A department database review was performed to identify patients who were subjected to hysterectomy with a preoperative diagnosis of endometrial hyperplasia, during the period from 2007 to 2014.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Results</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The study group included 189 cases. The final pathological examination revealed endometrial cancer in 16 women (8.4%). The risk of cancer in patients with endometrial hyperplasia was 1 of 125 (0.8%) in simple hyperplasia without atypia, 1 of 21 (4.8%) in complex hyperplasia without atypia and 14 of 43 (32.5%) in atypical hyperplasia. Of women with cancer, 2 of 16 (12.5%) had high-risk features. Frozen section analysis was requested in 46 cases. Frozen sections helped to identify six out of 11 cases of endometrial cancer (54.5%). The sensitivity, specificity and positive and negative predictive values of frozen section analysis for the detection of endometrial cancer among women with endometrial hyperplasia were 54.4%, 97.2%, 85.7% and 87.5%, respectively.&nbsp;</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Conclusion</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Although a significant proportion of patients with atypical endometrial hyperplasia are diagnosed with endometrial cancer following hysterectomy, most of these cases have low-risk features and do not require surgical staging. Additionally, intraoperative frozen section analysis if not helpful for diagnosing concurrent endometrial cancer in patients with endometrial hyperplasia. Therefore, it seems that patients with endometrial hyperplasia can be operated upon in settings with no available method for obtaining frozen sections intraoperatively.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: In women with endometrial hyperplasia, there is a risk for co-existent endometrial cancer when patients are subjected to immediate surgical treatment. Aims: The aim of this study was to investigate the frequency of endometrial cancer and the accuracy of frozen section analysis at the time of hysterectomy among patients with endometrial hyperplasia, to reveal whether or not a preoperative diagnosis of endometrial hyperplasia necessitates frozen section consultation. Study Design: Retrospective cross-sectional study. Methods: A department database review was performed to identify patients who were subjected to hysterectomy with a preoperative diagnosis of endometrial hyperplasia, during the period from 2007 to 2014. Results: The study group included 189 cases. The final pathological examination revealed endometrial cancer in 16 women (8.4%). The risk of cancer in patients with endometrial hyperplasia was 1 of 125 (0.8%) in simple hyperplasia without atypia, 1 of 21 (4.8%) in complex hyperplasia without atypia and 14 of 43 (32.5%) in atypical hyperplasia. Of women with cancer, 2 of 16 (12.5%) had high-risk features. Frozen section analysis was requested in 46 cases. Frozen sections helped to identify six out of 11 cases of endometrial cancer (54.5%). The sensitivity, specificity and positive and negative predictive values of frozen section analysis for the detection of endometrial cancer among women with endometrial hyperplasia were 54.4%, 97.2%, 85.7% and 87.5%, respectively. Conclusion: Although a significant proportion of patients with atypical endometrial hyperplasia are diagnosed with endometrial cancer following hysterectomy, most of these cases have low-risk features and do not require surgical staging. Additionally, intraoperative frozen section analysis if not helpful for diagnosing concurrent endometrial cancer in patients with endometrial hyperplasia. Therefore, it seems that patients with endometrial hyperplasia can be operated upon in settings with no available method for obtaining frozen sections intraoperatively.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.151232",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "657-661",
+    "views": 6289,
+    "downloads": 9761,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "31",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=31",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=31",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=31",
+    "localPdfUrl": "js/data/pdfs/31.pdf",
+    "pdfUrl": "js/data/pdfs/31.pdf"
+  },
+  {
+    "id": 32,
+    "type": "Original Article",
+    "title": "The Burden of Premature Mortality in Turkey in 2001 and 2008",
+    "authors": [
+      {
+        "name": "Burcu Tokuç",
+        "affiliation": "Department of Public Health, Trakya University School of Medicine Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serap Ayhan",
+        "affiliation": "Department of Public Health, Trakya University School of Medicine Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gamze Varol Saraçoğlu",
+        "affiliation": "Department of Public Health, Trakya University School of Medicine Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Standard expected years of life lost (SEYLL) is a measure that is used to evaluate losses due to premature deaths. Aims: The present study provides an analysis of premature mortality in Turkey for the years 2001 and 2008 and supplies evidence for making policies and setting health agendas over the long term. Study Design: Cross-sectional study. Methods: This study calculated SEYLL by gender, age group and causes of death in Turkey in 2014. The SEYLL measure counts the years lost in a population as a result of premature mortality and is computed by multiplying the number of deaths and standard life expectancy at the age at which death occurs. Results: The burden of premature mortality in Turkey was calculated as 4 104 253 SEYLL and 4 472 443 SEYLL in 2001 and 2008, respectively. Among these 42.7% and 43.9% of SEYLL were in females in 2001 and 2008, respectively. The leading five causes of premature mortality in the Turkish population in 2001 were cardiovascular system diseases (34.72%), perinatal conditions (12.69%), neoplasms (12.51%), external causes of injury (7.66%), and infections and parasitic diseases (6.57%). In 2008, the major causes were cardiovascular diseases (41.17%), neoplasms (14.63%), respiratory system diseases (9.81%), perinatal conditions (5.59%), and external causes of injury (5.29%). Conclusion: The majority of the burden of premature mortality in Turkey is attributable to non-communicable diseases. While premature deaths from infections and parasitic diseases, perinatal conditions and congenital anomalies decreased between 2001 and 2008, deaths from cardiovascular diseases, neoplasms and respiratory system diseases increased dramatically. Coordinated efforts for effective national prevention programs (such as regular monitoring of adults for early diagnosis of cardiovascular diseases and for malignancies by family physicians) should be developed by policy makers to decrease preventable and premature deaths from non-communicable diseases.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Background</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Standard expected years of life lost (SEYLL) is a measure that is used to evaluate losses due to premature deaths.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Aims</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The present study provides an analysis of premature mortality in Turkey for the years 2001 and 2008 and supplies evidence for making policies and setting health agendas over the long term.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Study Design</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Cross-sectional study.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Methods</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: This study calculated SEYLL by gender, age group and causes of death in Turkey in 2014. The SEYLL measure counts the years lost in a population as a result of premature mortality and is computed by multiplying the number of deaths and standard life expectancy at the age at which death occurs.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Results</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The burden of premature mortality in Turkey was calculated as 4 104 253 SEYLL and 4 472 443 SEYLL in 2001 and 2008, respectively. Among these 42.7% and 43.9% of SEYLL were in females in 2001 and 2008, respectively. The leading five causes of premature mortality in the Turkish population in 2001 were cardiovascular system diseases (34.72%), perinatal conditions (12.69%), neoplasms (12.51%), external causes of injury (7.66%), and infections and parasitic diseases (6.57%). In 2008, the major causes were cardiovascular diseases (41.17%), neoplasms (14.63%), respiratory system diseases (9.81%), perinatal conditions (5.59%), and external causes of injury (5.29%).</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Conclusion</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The majority of the burden of premature mortality in Turkey is attributable to non-communicable diseases. While premature deaths from infections and parasitic diseases, perinatal conditions and congenital anomalies decreased between 2001 and 2008, deaths from cardiovascular diseases, neoplasms and respiratory system diseases increased dramatically. Coordinated efforts for effective national prevention programs (such as regular monitoring of adults for early diagnosis of cardiovascular diseases and for malignancies by family physicians) should be developed by policy makers to decrease preventable and premature deaths from non-communicable diseases.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Standard expected years of life lost (SEYLL) is a measure that is used to evaluate losses due to premature deaths. Aims: The present study provides an analysis of premature mortality in Turkey for the years 2001 and 2008 and supplies evidence for making policies and setting health agendas over the long term. Study Design: Cross-sectional study. Methods: This study calculated SEYLL by gender, age group and causes of death in Turkey in 2014. The SEYLL measure counts the years lost in a population as a result of premature mortality and is computed by multiplying the number of deaths and standard life expectancy at the age at which death occurs. Results: The burden of premature mortality in Turkey was calculated as 4 104 253 SEYLL and 4 472 443 SEYLL in 2001 and 2008, respectively. Among these 42.7% and 43.9% of SEYLL were in females in 2001 and 2008, respectively. The leading five causes of premature mortality in the Turkish population in 2001 were cardiovascular system diseases (34.72%), perinatal conditions (12.69%), neoplasms (12.51%), external causes of injury (7.66%), and infections and parasitic diseases (6.57%). In 2008, the major causes were cardiovascular diseases (41.17%), neoplasms (14.63%), respiratory system diseases (9.81%), perinatal conditions (5.59%), and external causes of injury (5.29%). Conclusion: The majority of the burden of premature mortality in Turkey is attributable to non-communicable diseases. While premature deaths from infections and parasitic diseases, perinatal conditions and congenital anomalies decreased between 2001 and 2008, deaths from cardiovascular diseases, neoplasms and respiratory system diseases increased dramatically. Coordinated efforts for effective national prevention programs (such as regular monitoring of adults for early diagnosis of cardiovascular diseases and for malignancies by family physicians) should be developed by policy makers to decrease preventable and premature deaths from non-communicable diseases.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.151277",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "662-667",
+    "views": 6956,
+    "downloads": 3294,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "32",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=32",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=32",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=32",
+    "localPdfUrl": "js/data/pdfs/32.pdf",
+    "pdfUrl": "js/data/pdfs/32.pdf"
+  },
+  {
+    "id": 33,
+    "type": "Original Article",
+    "title": "Diagnostic and Prognostic Value of Presepsin for Subclinical Chorioamnionitis in Pregnancies between 23-28 Week with Preterm Premature Rupture of the Membranes",
+    "authors": [
+      {
+        "name": "Erbil Çakar",
+        "affiliation": "Department of Obstetrics and Gynecology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şule Eren Çakar",
+        "affiliation": "Deparment of Infectious Diseases, Ümraniye Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Habibe Ayvacı Taşan",
+        "affiliation": "Department of Obstetrics and Gynecology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Deniz Karçaaltıncaba",
+        "affiliation": "Department of Obstetrics and Gynecology, Gazi University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Baki Şentürk",
+        "affiliation": "Department of Obstetrics and Gynecology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nermin Koç",
+        "affiliation": "Department of Pathology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ramazan Uluhan",
+        "affiliation": "Department of Clinical Microbiology, Zeynep Kamil Gynecologic and Pediatric Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Presepsin is an inflammatory marker released from monocytes and macrophages as an acute reaction to microbial infection. We hypothesized that it may be useful in pregnancies with preterm premature rupture of the membranes (PPROM) for early diagnosis of subclinical chorioamnionitis. Aims: To determine whether the plasma presepsin level has any diagnostic or prognostic value for subclinical chorioamnionitis in pregnancies complicated with PPROM. Study Design: Prospective cohort study. Methods: Fifty-three singleton pregnancies between 23 and 28 weeks of gestation diagnosed with PPROM were prospectively included in the study. Venous blood samples were collected at admission, at the 48th hour of admission, and at the time of delivery to determine presepsin and C-reactive Protein (CRP) levels and white blood cell (WBC) counts. Chorioamnionitis was diagnosed by microscopic examination of the placenta and cords. Results: Of the 53 PPROM cases included in the study, 41 (77.4%) had histologically confirmed chorioamnionitis. Neonatal sepsis developed in 24 (45.3%) of the newborns. The median presepsin level at admission was 135.0 pg/mL for pregnancies with subclinical chorioamnionitis and 113.5pg/mL for pregnancies without chorioamnionitis (p=0.573). There was also no significant difference between subclinical chorioamnionitis (+) and (−) cases in terms presepsin levels at the 48th hour and at delivery. However, chorioamnionitis (+) cases showed a significant decrease in both presepsin level and WBC count at the 48th hour after the administration of antibiotics, which increased significantly at delivery (p<0.001 and p=0.011, respectively). Conclusion: The striking fluctuations in presepsin level after the diagnosis of PPROM can be used to predict subclinical chorioamnionitis and determine the optimal timing of delivery before the clinical signs of chorioamnionitis are established. However, presepsin level itself was neither diagnostic nor prognostic for neonatal sepsis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Background</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Presepsin is an inflammatory marker released from monocytes and macrophages as an acute reaction to microbial infection. We hypothesized that it may be useful in pregnancies with preterm premature rupture of the membranes (PPROM) for early diagnosis of subclinical chorioamnionitis.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Aims</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: To determine whether the plasma presepsin level has any diagnostic or prognostic value for subclinical chorioamnionitis in pregnancies complicated with PPROM.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Study Design</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Prospective cohort study.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Methods</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Fifty-three singleton pregnancies between 23 and 28 weeks of gestation diagnosed with PPROM were prospectively included in the study. Venous blood samples were collected at admission, at the 48th hour of admission, and at the time of delivery to determine presepsin and C-reactive Protein (CRP) levels and white blood cell (WBC) counts. Chorioamnionitis was diagnosed by microscopic examination of the placenta and cords.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Results</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Of the 53 PPROM cases included in the study, 41 (77.4%) had histologically confirmed chorioamnionitis. Neonatal sepsis developed in 24 (45.3%) of the newborns. The median presepsin level at admission was 135.0 pg/mL for pregnancies with subclinical chorioamnionitis and 113.5pg/mL for pregnancies without chorioamnionitis (p=0.573). There was also no significant difference between subclinical chorioamnionitis (+) and (&minus;) cases in terms presepsin levels at the 48th hour and at delivery. However, chorioamnionitis (+) cases showed a significant decrease in both presepsin level and WBC count at the 48th hour after the administration of antibiotics, which increased significantly at delivery (p&lt;0.001 and p=0.011, respectively).</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Conclusion</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The striking fluctuations in presepsin level after the diagnosis of PPROM can be used to predict subclinical chorioamnionitis and determine the optimal timing of delivery before the clinical signs of chorioamnionitis are established. However, presepsin level itself was neither diagnostic nor prognostic for neonatal sepsis.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Presepsin is an inflammatory marker released from monocytes and macrophages as an acute reaction to microbial infection. We hypothesized that it may be useful in pregnancies with preterm premature rupture of the membranes (PPROM) for early diagnosis of subclinical chorioamnionitis. Aims: To determine whether the plasma presepsin level has any diagnostic or prognostic value for subclinical chorioamnionitis in pregnancies complicated with PPROM. Study Design: Prospective cohort study. Methods: Fifty-three singleton pregnancies between 23 and 28 weeks of gestation diagnosed with PPROM were prospectively included in the study. Venous blood samples were collected at admission, at the 48th hour of admission, and at the time of delivery to determine presepsin and C-reactive Protein (CRP) levels and white blood cell (WBC) counts. Chorioamnionitis was diagnosed by microscopic examination of the placenta and cords. Results: Of the 53 PPROM cases included in the study, 41 (77.4%) had histologically confirmed chorioamnionitis. Neonatal sepsis developed in 24 (45.3%) of the newborns. The median presepsin level at admission was 135.0 pg/mL for pregnancies with subclinical chorioamnionitis and 113.5pg/mL for pregnancies without chorioamnionitis (p=0.573). There was also no significant difference between subclinical chorioamnionitis (+) and (−) cases in terms presepsin levels at the 48th hour and at delivery. However, chorioamnionitis (+) cases showed a significant decrease in both presepsin level and WBC count at the 48th hour after the administration of antibiotics, which increased significantly at delivery (p<0.001 and p=0.011, respectively). Conclusion: The striking fluctuations in presepsin level after the diagnosis of PPROM can be used to predict subclinical chorioamnionitis and determine the optimal timing of delivery before the clinical signs of chorioamnionitis are established. However, presepsin level itself was neither diagnostic nor prognostic for neonatal sepsis.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.160293",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "668-674",
+    "views": 6972,
+    "downloads": 4511,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "33",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=33",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=33",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=33",
+    "localPdfUrl": "js/data/pdfs/33.pdf",
+    "pdfUrl": "js/data/pdfs/33.pdf"
+  },
+  {
+    "id": 36,
+    "type": "Original Article",
+    "title": "Microbiological Features of Upper Respiratory Tract Infections in Bulgarian Children for the Period 1998-2014",
+    "authors": [
+      {
+        "name": "Raina Tzvetanova Gergova",
+        "affiliation": "Department of Medical Microbiology, Medical University of Sofia School of Medicine, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Guergana Petrova",
+        "affiliation": "Pediatric Cilinic, UMHAT “Alexandrovska” Medical University of Sofia, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Stefan Gergov",
+        "affiliation": "Department of Otolaryngology, National Medical Center of Oncology, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Petko Minchev",
+        "affiliation": "Pediatric Pulmonogy Clinic, USHATLD “Sveta Sofia”, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Ivan Mitov",
+        "affiliation": "Department of Medical Microbiology, Medical University of Sofia School of Medicine, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Tanya Strateva",
+        "affiliation": "Department of Medical Microbiology, Medical University of Sofia School of Medicine, Sofia, Bulgaria",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Across the globe, upper respiratory tract infections (URTIs) are the most prevalent cause of morbidity in childhood. Aims: The aim of our study is to analyze the incidence and etiology of bacterial URTIs in Bulgarian children, as well as the increasing antimicrobial resistance to the most common etiologic agents over a period of 17 years. Study Design: Retrospective study. Methods: The study material comprised the data from 4768 patients (aged 1-16 years) with URTI during the period from 1998-2014. Specific microbiology agent detection was performed by culture examination. Susceptibilities to the investigated pathogens were determined by the disk diffusion method and minimal inhibitory concentration according to the criteria of the Clinical and Laboratory Standards Institute (CLSI). Polymerase chain reaction was used to detect the presence of β-lactam resistance genes. Results: We identified the following as the most common URTI bacterial pathogens: Streptococcus pneumoniae (40.94%), Streptococcus pyogenes (34.16%), Haemophilus influenzae (44.23%), Moraxella catarrhalis (39.19%) and Staphylococcus aureus (23.88%). In more than 70% of cases, a polymicrobial etiology was found. The most commonly affected individuals were pre-school-aged children, which accounted for more than 36% of all patients. During the study period, a dramatic increase in resistance to antibiotic agents was observed. The most frequent types of resistance were the enzymatic inactivation of penicillins and cephalosporins (close to 100% in staphylococci and moraxellae) and inducible macrolide-lincozamide resistance (about 20% of Gram-positive cocci). Conclusion: Due to mandatory immunization against pneumococci and H. influenzae in Bulgaria and the vast expanding resistance to the most popular antimicrobial agents changes in the etiology of URTI have recently been noted. Regular analysis of this etiological dynamic and the antimicrobial resistance of respiratory pathogens is important for choosing the correct therapy and successful treatment.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Background</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Across the globe, upper respiratory tract infections (URTIs) are the most prevalent cause of morbidity in childhood.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Aims</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The aim of our study is to analyze the incidence and etiology of bacterial URTIs in Bulgarian children, as well as the increasing antimicrobial resistance to the most common etiologic agents over a period of 17 years.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Study Design</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Retrospective study.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Methods</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: The study material comprised the data from 4768 patients (aged 1-16 years) with URTI during the period from 1998-2014. Specific microbiology agent detection was performed by culture examination. Susceptibilities to the investigated pathogens were determined by the disk diffusion method and minimal inhibitory concentration according to the criteria of the Clinical and Laboratory Standards Institute (CLSI). Polymerase chain reaction was used to detect the presence of &beta;-lactam resistance genes.</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Results</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: We identified the following as the most common URTI bacterial pathogens: Streptococcus pneumoniae (40.94%), Streptococcus pyogenes (34.16%), Haemophilus influenzae (44.23%), Moraxella catarrhalis (39.19%) and Staphylococcus aureus (23.88%). In more than 70% of cases, a polymicrobial etiology was found. The most commonly affected individuals were pre-school-aged children, which accounted for more than 36% of all patients. During the study period, a dramatic increase in resistance to antibiotic agents was observed. The most frequent types of resistance were the enzymatic inactivation of penicillins and cephalosporins (close to 100% in staphylococci and moraxellae) and inducible macrolide-lincozamide resistance (about 20% of Gram-positive cocci).</span></p>\r\n<p>\r\n\t<strong style=\"font-family: Tahoma; margin: 0px; padding: 0px; line-height: 1.3; color: rgb(50, 50, 50); text-align: justify;\">Conclusion</strong><span style=\"color: rgb(50, 50, 50); font-family: Tahoma; text-align: justify;\">: Due to mandatory immunization against pneumococci and H. influenzae in Bulgaria and the vast expanding resistance to the most popular antimicrobial agents changes in the etiology of URTI have recently been noted. Regular analysis of this etiological dynamic and the antimicrobial resistance of respiratory pathogens is important for choosing the correct therapy and successful treatment.</span></p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Across the globe, upper respiratory tract infections (URTIs) are the most prevalent cause of morbidity in childhood. Aims: The aim of our study is to analyze the incidence and etiology of bacterial URTIs in Bulgarian children, as well as the increasing antimicrobial resistance to the most common etiologic agents over a period of 17 years. Study Design: Retrospective study. Methods: The study material comprised the data from 4768 patients (aged 1-16 years) with URTI during the period from 1998-2014. Specific microbiology agent detection was performed by culture examination. Susceptibilities to the investigated pathogens were determined by the disk diffusion method and minimal inhibitory concentration according to the criteria of the Clinical and Laboratory Standards Institute (CLSI). Polymerase chain reaction was used to detect the presence of β-lactam resistance genes. Results: We identified the following as the most common URTI bacterial pathogens: Streptococcus pneumoniae (40.94%), Streptococcus pyogenes (34.16%), Haemophilus influenzae (44.23%), Moraxella catarrhalis (39.19%) and Staphylococcus aureus (23.88%). In more than 70% of cases, a polymicrobial etiology was found. The most commonly affected individuals were pre-school-aged children, which accounted for more than 36% of all patients. During the study period, a dramatic increase in resistance to antibiotic agents was observed. The most frequent types of resistance were the enzymatic inactivation of penicillins and cephalosporins (close to 100% in staphylococci and moraxellae) and inducible macrolide-lincozamide resistance (about 20% of Gram-positive cocci). Conclusion: Due to mandatory immunization against pneumococci and H. influenzae in Bulgaria and the vast expanding resistance to the most popular antimicrobial agents changes in the etiology of URTI have recently been noted. Regular analysis of this etiological dynamic and the antimicrobial resistance of respiratory pathogens is important for choosing the correct therapy and successful treatment.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.150116",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "675-680",
+    "views": 7174,
+    "downloads": 3048,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "36",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=36",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=36",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=36",
+    "localPdfUrl": "js/data/pdfs/36.pdf",
+    "pdfUrl": "js/data/pdfs/36.pdf"
+  },
+  {
+    "id": 28,
+    "type": "Original Article",
+    "title": "Correlation between Amitriptyline-Induced Cardiotoxic Effects and Cardiac S100b Protein in Isolated Rat Hearts",
+    "authors": [
+      {
+        "name": "Nil Hocaoğlu",
+        "affiliation": "Division of Clinical Toxicology, Department of Pharmacology, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nergis Murat",
+        "affiliation": "Department of Pharmacology, Dokuz Eylül University School of Medicine, İzmir, Turkey.",
+        "orcid": ""
+      },
+      {
+        "name": "Serap Cilaker Mıcılı",
+        "affiliation": "Deparment of Histology and Embryology, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burç Aydın",
+        "affiliation": "Department of Pharmacology, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bekir Uğur Ergür",
+        "affiliation": "Deparment of Histology and Embryology, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şule Kalkan",
+        "affiliation": "Division of Clinical Toxicology, Department of Pharmacology, Dokuz Eylül University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Amitriptyline is an important cause of mortality due to its cardiovascular toxicity. Aims: To investigate the changes in levels of cardiac S100b protein on amitriptyline-induced cardiotoxicity and also to examine the correlation between amitriptyline-induced cardiotoxic effects and cardiac S100b protein in an isolated rat heart model. Study Design: Animal experimentation, isolated heart model. Methods: After a stabilization period, isolated hearts were randomized to two groups (n=5 and n=7). In the control group, isolated hearts were subjected to an infusion of 5% dextrose for 60 minutes. In the amitriptyline group, 5.5×10-5 M amitriptyline was infused for 60 minutes to achieve amitriptyline toxicity. After the infusion period, heart tissues were removed for histological examination. Results: In comparison to control treatment, amitriptyline infusion decreased left ventricular developed pressure (LVDP), dp/dtmax and heart rate (HR) and significantly prolonged QRS duration (p<0.05). The semiquantitative scores for S100b protein levels in amitriptyline-infused hearts were higher than in the control group (p<0.01). At the end of the experiment, in the amitriptyline-infused group, significant correlations were found between LVDP and S100b protein scores (r=-0.807, p=0.003) and between QRS duration and S100b protein scores (r=0.859, p=0.001). Conclusion: Our results indicate that the S100b protein may be a helpful indicator or biomarker in studying the cardiotoxic effects of amitriptyline.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background:&nbsp;</strong>Amitriptyline is an important cause of mortality due to its cardiovascular toxicity.</p>\r\n<p>\r\n\t<strong>Aims:</strong>&nbsp;To investigate the changes in levels of cardiac S100b protein on amitriptyline-induced cardiotoxicity and also to examine the correlation between amitriptyline-induced cardiotoxic effects and cardiac S100b protein in an isolated rat heart model.</p>\r\n<p>\r\n\t<strong>Study Design:</strong>&nbsp;Animal experimentation, isolated heart model.</p>\r\n<p>\r\n\t<strong>Methods:&nbsp;</strong>After a stabilization period, isolated hearts were randomized to two groups (n=5 and n=7). In the control group, isolated hearts were subjected to an infusion of 5% dextrose for 60 minutes. In the amitriptyline group, 5.5&times;10-5 M amitriptyline was infused for 60 minutes to achieve amitriptyline toxicity. After the infusion period, heart tissues were removed for histological examination.</p>\r\n<p>\r\n\t<strong>Results:</strong>&nbsp;In comparison to control treatment, amitriptyline infusion decreased left ventricular developed pressure (LVDP), dp/dtmax and heart rate (HR) and significantly prolonged QRS duration (p&lt;0.05). The semiquantitative scores for S100b protein levels in amitriptyline-infused hearts were higher than in the control group (p&lt;0.01). At the end of the experiment, in the amitriptyline-infused group, significant correlations were found between LVDP and S100b protein scores (r=-0.807, p=0.003) and between QRS duration and S100b protein scores (r=0.859, p=0.001).</p>\r\n<p>\r\n\t<strong>Conclusion:</strong>&nbsp;Our results indicate that the S100b protein may be a helpful indicator or biomarker in studying the cardiotoxic effects of amitriptyline.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Amitriptyline is an important cause of mortality due to its cardiovascular toxicity. Aims: To investigate the changes in levels of cardiac S100b protein on amitriptyline-induced cardiotoxicity and also to examine the correlation between amitriptyline-induced cardiotoxic effects and cardiac S100b protein in an isolated rat heart model. Study Design: Animal experimentation, isolated heart model. Methods: After a stabilization period, isolated hearts were randomized to two groups (n=5 and n=7). In the control group, isolated hearts were subjected to an infusion of 5% dextrose for 60 minutes. In the amitriptyline group, 5.5×10-5 M amitriptyline was infused for 60 minutes to achieve amitriptyline toxicity. After the infusion period, heart tissues were removed for histological examination. Results: In comparison to control treatment, amitriptyline infusion decreased left ventricular developed pressure (LVDP), dp/dtmax and heart rate (HR) and significantly prolonged QRS duration (p<0.05). The semiquantitative scores for S100b protein levels in amitriptyline-infused hearts were higher than in the control group (p<0.01). At the end of the experiment, in the amitriptyline-infused group, significant correlations were found between LVDP and S100b protein scores (r=-0.807, p=0.003) and between QRS duration and S100b protein scores (r=0.859, p=0.001). Conclusion: Our results indicate that the S100b protein may be a helpful indicator or biomarker in studying the cardiotoxic effects of amitriptyline.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.150435",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "681-687",
+    "views": 7185,
+    "downloads": 10256,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "28",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=28",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=28",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=28",
+    "localPdfUrl": "js/data/pdfs/28.pdf",
+    "pdfUrl": "js/data/pdfs/28.pdf"
+  },
+  {
+    "id": 35,
+    "type": "Case Report",
+    "title": "Acute Eosinophilic Pneumonia with Respiratory Failure Induced by Synthetic Cannabinoid Inhalation",
+    "authors": [
+      {
+        "name": "Nesrin Öcal",
+        "affiliation": "Department of Chest Diseases, Gülhane Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Deniz Doğan",
+        "affiliation": "Department of Chest Diseases, Gülhane Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Fuat Çiçek",
+        "affiliation": "Department of Pathology, Gülhane Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Orhan Yücel",
+        "affiliation": "Department of Chest Diseases, Gülhane Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ergun Tozkoparan",
+        "affiliation": "Department of Chest Diseases, Gülhane Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: In recent days, synthetic cannabinoid derivatives have become life threatening for young people. Here, we want to share a case of acute eosinophilic pneumonia triggered by inhalation of synthetic cannabinoid, new side effects of which are being detected day by day. Case Report: A 21-year-old male, who had no history of pulmonary diseases, was admitted to the clinic with shortness of breath. His oxygen saturation was measured as 85-86% in room air. Common irregular ground-glass opacities were observed in thorax radiology. His peripheral blood eosinophil count was 1100 cell/mm³ with a leukocyte differential of 12%. Sputum eosinophilia was also observed. The patient was diagnosed with acute eosinophilic pneumonia in terms of current clinical, radiological and laboratory findings. Rapid remission was achieved with corticosteroid therapy. Conclusion: This is the first reported case of acute eosinophilic pneumonia induced by synthetic cannabinoid inhalation.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background:&nbsp;</strong>In recent days, synthetic cannabinoid derivatives have become life threatening for young people. Here, we want to share a case of acute eosinophilic pneumonia triggered by inhalation of synthetic cannabinoid, new side effects of which are being detected day by day.&nbsp;</p>\r\n<p>\r\n\t<strong>Case Report:</strong>&nbsp;A 21-year-old male, who had no history of pulmonary diseases, was admitted to the clinic with shortness of breath. His oxygen saturation was measured as 85-86% in room air. Common irregular ground-glass opacities were observed in thorax radiology. His peripheral blood eosinophil count was 1100 cell/mm&sup3; with a leukocyte differential of 12%. Sputum eosinophilia was also observed. The patient was diagnosed with acute eosinophilic pneumonia in terms of current clinical, radiological and laboratory findings. Rapid remission was achieved with corticosteroid therapy.&nbsp;</p>\r\n<p>\r\n\t<strong>Conclusion:</strong>&nbsp;This is the first reported case of acute eosinophilic pneumonia induced by synthetic cannabinoid inhalation.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: In recent days, synthetic cannabinoid derivatives have become life threatening for young people. Here, we want to share a case of acute eosinophilic pneumonia triggered by inhalation of synthetic cannabinoid, new side effects of which are being detected day by day. Case Report: A 21-year-old male, who had no history of pulmonary diseases, was admitted to the clinic with shortness of breath. His oxygen saturation was measured as 85-86% in room air. Common irregular ground-glass opacities were observed in thorax radiology. His peripheral blood eosinophil count was 1100 cell/mm³ with a leukocyte differential of 12%. Sputum eosinophilia was also observed. The patient was diagnosed with acute eosinophilic pneumonia in terms of current clinical, radiological and laboratory findings. Rapid remission was achieved with corticosteroid therapy. Conclusion: This is the first reported case of acute eosinophilic pneumonia induced by synthetic cannabinoid inhalation.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.151145",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "688-690",
+    "views": 7760,
+    "downloads": 3654,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "35",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=35",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=35",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=35",
+    "localPdfUrl": "js/data/pdfs/35.pdf",
+    "pdfUrl": "js/data/pdfs/35.pdf"
+  },
+  {
+    "id": 38,
+    "type": "Case Report",
+    "title": "Intraarticular Giant Size Angiolipoma of the Knee Causing Lateral Patellar Dislocation",
+    "authors": [
+      {
+        "name": "Gökhan İlyas",
+        "affiliation": "Department of Orthopaedics and Traumatology, Tepecik Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Turgut",
+        "affiliation": "Department of Orthopaedics and Traumatology, Tepecik Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Duygu Ayaz",
+        "affiliation": "Department of Pathology, Tepecik Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Önder Kalenderer [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Angiolipomas are benign tumors usually seen in patients during their 2nd and 3rd decades. The subcutaneous region of the trunk, neck and extremities are the places where they generally settle. There is only one case report on angiolipoma in the knee joint that was resected by arthroscopic procedure in the English literature. Case Report: We present a case of a giant-size multilobular non-infiltrating angiolipoma, extending outside of the right knee joint and causing lateral patellar dislocation in a thirteen-year-old boy. A large encapsulated mass with fatty and soft-tissue components on magnetic resonance imaging was suggestive of a liposarcoma. However, the diagnosis after the tru-cut biopsy was angiolipoma. The Quadriceps angle was 25°. Complete resection of the tumoral mass and repair of the medial retinaculum were performed with open surgery. Patellofemoral alignment was provided by transferring the tibial tuberosity medially. One year after the surgery, there was no evidence of recurrence. Conclusion: Intra-articular angiolipomas are rarely seen masses in the knee joint. To our knowledge, this case report is the first to demonstrate that angiolipoma causes patellar dislocation.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background:</strong>&nbsp;Angiolipomas are benign tumors usually seen in patients during their 2nd and 3rd decades. The subcutaneous region of the trunk, neck and extremities are the places where they generally settle. There is only one case report on angiolipoma in the knee joint that was resected by arthroscopic procedure in the English literature.</p>\r\n<p>\r\n\t<strong>Case Report:&nbsp;</strong>We present a case of a giant-size multilobular non-infiltrating angiolipoma, extending outside of the right knee joint and causing lateral patellar dislocation in a thirteen-year-old boy. A large encapsulated mass with fatty and soft-tissue components on magnetic resonance imaging was suggestive of a liposarcoma. However, the diagnosis after the tru-cut biopsy was angiolipoma. The Quadriceps angle was 25&deg;. Complete resection of the tumoral mass and repair of the medial retinaculum were performed with open surgery. Patellofemoral alignment was provided by transferring the tibial tuberosity medially. One year after the surgery, there was no evidence of recurrence.</p>\r\n<p>\r\n\t<strong>Conclusion:</strong>&nbsp;Intra-articular angiolipomas are rarely seen masses in the knee joint. To our knowledge, this case report is the first to demonstrate that angiolipoma causes patellar dislocation.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Angiolipomas are benign tumors usually seen in patients during their 2nd and 3rd decades. The subcutaneous region of the trunk, neck and extremities are the places where they generally settle. There is only one case report on angiolipoma in the knee joint that was resected by arthroscopic procedure in the English literature. Case Report: We present a case of a giant-size multilobular non-infiltrating angiolipoma, extending outside of the right knee joint and causing lateral patellar dislocation in a thirteen-year-old boy. A large encapsulated mass with fatty and soft-tissue components on magnetic resonance imaging was suggestive of a liposarcoma. However, the diagnosis after the tru-cut biopsy was angiolipoma. The Quadriceps angle was 25°. Complete resection of the tumoral mass and repair of the medial retinaculum were performed with open surgery. Patellofemoral alignment was provided by transferring the tibial tuberosity medially. One year after the surgery, there was no evidence of recurrence. Conclusion: Intra-articular angiolipomas are rarely seen masses in the knee joint. To our knowledge, this case report is the first to demonstrate that angiolipoma causes patellar dislocation.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.141269",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "691-694",
+    "views": 6978,
+    "downloads": 3548,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "38",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=38",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=38",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=38",
+    "localPdfUrl": "js/data/pdfs/38.pdf",
+    "pdfUrl": "js/data/pdfs/38.pdf"
+  },
+  {
+    "id": 41,
+    "type": "Case Report",
+    "title": "An Unusual Neck Mass: Ingested Chicken Bone",
+    "authors": [
+      {
+        "name": "Erhan Demirhan",
+        "affiliation": "Department of Otorhinolaryngology Head and Neck Surgery, Tepecik Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Metin İber",
+        "affiliation": "Department of Otorhinolaryngology Head and Neck Surgery, Tepecik Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özlem Yağız",
+        "affiliation": "Department of Otorhinolaryngology Head and Neck Surgery, Tepecik Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tolga Kandoğan",
+        "affiliation": "Department of Otorhinolaryngology Head and Neck Surgery, Tepecik Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Çukurova [[2]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Foreign bodies in the upper aerodigestive tract are frequently seen in otolaryngological practice, but migration of an ingested foreign body to the neck is a very rare condition. Case Report: We present a 66-year-old woman admitted to our outpatient department with a painful neck mass. She had a history of emergency department admission 4 months prior with odynophagia after eating chicken meal. A physical examination revealed a painful and hyperemic mass on the left neck. Antibiotherapy did not relieve the patient’s symptoms and signs. A 3-cm linear foreign body was observed in X-ray and computed tomography scans. The symptoms of the patient were relieved after excision of the foreign body. Conclusion: Although it is a rare situation, migration of a foreign body ingested through the aerodigestive tract to the neck should be kept in mind in the differential diagnosis of patients who present with neck masses.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background:</strong>&nbsp;Foreign bodies in the upper aerodigestive tract are frequently seen in otolaryngological practice, but migration of an ingested foreign body to the neck is a very rare condition.&nbsp;</p>\r\n<p>\r\n\t<strong>Case Report:</strong>&nbsp;We present a 66-year-old woman admitted to our outpatient department with a painful neck mass. She had a history of emergency department admission 4 months prior with odynophagia after eating chicken meal. A physical examination revealed a painful and hyperemic mass on the left neck. Antibiotherapy did not relieve the patient&rsquo;s symptoms and signs. A 3-cm linear foreign body was observed in X-ray and computed tomography scans. The symptoms of the patient were relieved after excision of the foreign body.&nbsp;</p>\r\n<p>\r\n\t<strong>Conclusion:&nbsp;</strong>Although it is a rare situation, migration of a foreign body ingested through the aerodigestive tract to the neck should be kept in mind in the differential diagnosis of patients who present with neck masses.&nbsp;</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Foreign bodies in the upper aerodigestive tract are frequently seen in otolaryngological practice, but migration of an ingested foreign body to the neck is a very rare condition. Case Report: We present a 66-year-old woman admitted to our outpatient department with a painful neck mass. She had a history of emergency department admission 4 months prior with odynophagia after eating chicken meal. A physical examination revealed a painful and hyperemic mass on the left neck. Antibiotherapy did not relieve the patient’s symptoms and signs. A 3-cm linear foreign body was observed in X-ray and computed tomography scans. The symptoms of the patient were relieved after excision of the foreign body. Conclusion: Although it is a rare situation, migration of a foreign body ingested through the aerodigestive tract to the neck should be kept in mind in the differential diagnosis of patients who present with neck masses.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.150779",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "695-697",
+    "views": 7172,
+    "downloads": 9858,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "41",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=41",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=41",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=41",
+    "localPdfUrl": "js/data/pdfs/41.pdf",
+    "pdfUrl": "js/data/pdfs/41.pdf"
+  },
+  {
+    "id": 45,
+    "type": "Case Report",
+    "title": "A Solitary Fibrous Tumor of the Subglottic Larynx: Case Report and Literature Review",
+    "authors": [
+      {
+        "name": "Sung-Joon Park",
+        "affiliation": "Department of Radiology, Korea University Ansan Hospital, Ansan, Korea",
+        "orcid": ""
+      },
+      {
+        "name": "Young Hen Lee",
+        "affiliation": "Department of Radiology, Korea University Ansan Hospital, Ansan, Korea",
+        "orcid": ""
+      },
+      {
+        "name": "Ki Yeol Lee",
+        "affiliation": "Department of Radiology, Korea University Ansan Hospital, Ansan, Korea",
+        "orcid": ""
+      },
+      {
+        "name": "Kyoung Ho Oh",
+        "affiliation": "Department of Otorhinolaryngology-Head and Neck Surgery, Korea University Ansan Hospital, Ansan, Korea",
+        "orcid": ""
+      },
+      {
+        "name": "Younghye Kim",
+        "affiliation": "Department of Pathology, Korea University Ansan Hospital, Ansan, Korea",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Solitary fibrous tumors (SFT) arising from the larynx are extremely rare; most occur in the supraglottic larynx. Case Report: Herein, we detail a new case of a subglottic SFT presenting as a well-encapsulated soft-tissue tumor with hoarseness. It showed isoattenuation, similar to the adjacent muscle on pre-contrast computed tomography (CT) images, and strong, heterogeneous enhancement following contrast material administration, which may reflect hypervascularity. On pathological examination, it consisted of spindle cells, squeezed between abundant collagen, and focally prominent vascularity in a staghorn feature. The tumor cells were immunoreactive for CD34, BCL2 and CD99. Based on the combination of architectural and immunohistochemical criteria, we ultimately diagnosed this case as an SFT. Conclusion: Until now, only 14 cases of laryngeal SFT have been described in the literature: 13 located in the supraglottic areas and only one located in the subglottic/tracheal area. Therefore the present case is the second case of a subglottic SFT reported. Although rare, SFT should be included in the differential diagnosis of a well-marginated laryngeal mass with highly intense contrast enhancement, which suggests rich tumor vascularity.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background:</strong>&nbsp;Solitary fibrous tumors (SFT) arising from the larynx are extremely rare; most occur in the supraglottic larynx.</p>\r\n<p>\r\n\t<strong>Case Report:</strong>&nbsp;Herein, we detail a new case of a subglottic SFT presenting as a well-encapsulated soft-tissue tumor with hoarseness. It showed isoattenuation, similar to the adjacent muscle on pre-contrast computed tomography (CT) images, and strong, heterogeneous enhancement following contrast material administration, which may reflect hypervascularity. On pathological examination, it consisted of spindle cells, squeezed between abundant collagen, and focally prominent vascularity in a staghorn feature. The tumor cells were immunoreactive for CD34, BCL2 and CD99. Based on the combination of architectural and immunohistochemical criteria, we ultimately diagnosed this case as an SFT.</p>\r\n<p>\r\n\t<strong>Conclusion:</strong>&nbsp;Until now, only 14 cases of laryngeal SFT have been described in the literature: 13 located in the supraglottic areas and only one located in the subglottic/tracheal area. Therefore the present case is the second case of a subglottic SFT reported. Although rare, SFT should be included in the differential diagnosis of a well-marginated laryngeal mass with highly intense contrast enhancement, which suggests rich tumor vascularity.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Solitary fibrous tumors (SFT) arising from the larynx are extremely rare; most occur in the supraglottic larynx. Case Report: Herein, we detail a new case of a subglottic SFT presenting as a well-encapsulated soft-tissue tumor with hoarseness. It showed isoattenuation, similar to the adjacent muscle on pre-contrast computed tomography (CT) images, and strong, heterogeneous enhancement following contrast material administration, which may reflect hypervascularity. On pathological examination, it consisted of spindle cells, squeezed between abundant collagen, and focally prominent vascularity in a staghorn feature. The tumor cells were immunoreactive for CD34, BCL2 and CD99. Based on the combination of architectural and immunohistochemical criteria, we ultimately diagnosed this case as an SFT. Conclusion: Until now, only 14 cases of laryngeal SFT have been described in the literature: 13 located in the supraglottic areas and only one located in the subglottic/tracheal area. Therefore the present case is the second case of a subglottic SFT reported. Although rare, SFT should be included in the differential diagnosis of a well-marginated laryngeal mass with highly intense contrast enhancement, which suggests rich tumor vascularity.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.151069",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "698-700",
+    "views": 6722,
+    "downloads": 3174,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "45",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=45",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=45",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=45",
+    "localPdfUrl": "js/data/pdfs/45.pdf",
+    "pdfUrl": "js/data/pdfs/45.pdf"
+  },
+  {
+    "id": 48,
+    "type": "Case Report",
+    "title": "Multimodality Imaging Findings of a Renal Aspergilloma",
+    "authors": [
+      {
+        "name": "Mesut Bulakçı",
+        "affiliation": "Department of Radiology, İstanbul University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Merve Gülbiz Kartal",
+        "affiliation": "Department of Radiology, İstanbul University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erhan Çelenk",
+        "affiliation": "Department of Radiology, İstanbul University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sena Tunçer",
+        "affiliation": "Department of Radiology, İstanbul University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Işın Kılıçaslan",
+        "affiliation": "Department of Pathology, İstanbul University School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Renal aspergillosis is a rare infection that usually occurs in persons with a predisposition for this condition. Its differential diagnosis includes primary and metastatic renal malignancies, pyelonephritis and secondary abscess formation, granulomatous disorders, and renal infarction. We aim to stress the role of multimodality imaging and percutaneous biopsy in the diagnosis of this condition. Case Report: We present diffusion weighted imaging (DWI) and positron emission tomography-computed tomography (PET-CT) findings in addition to conventional imaging modalities in a 55-year-old man with secondary renal aspergilloma. Conclusion: Radiological imaging methods are an integral part of diagnostic workup for renal aspergillosis. A definitive diagnosis is made by histopathological and/or microbiological examination of the material obtained via percutaneous biopsy under guidance of imaging methods.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background:</strong>&nbsp;Renal aspergillosis is a rare infection that usually occurs in persons with a predisposition for this condition. Its differential diagnosis includes primary and metastatic renal malignancies, pyelonephritis and secondary abscess formation, granulomatous disorders, and renal infarction. We aim to stress the role of multimodality imaging and percutaneous biopsy in the diagnosis of this condition.</p>\r\n<p>\r\n\t<strong>Case Report:</strong>&nbsp;We present diffusion weighted imaging (DWI) and positron emission tomography-computed tomography (PET-CT) findings in addition to conventional imaging modalities in a 55-year-old man with secondary renal aspergilloma.</p>\r\n<p>\r\n\t<strong>Conclusion:</strong>&nbsp;Radiological imaging methods are an integral part of diagnostic workup for renal aspergillosis. A definitive diagnosis is made by histopathological and/or microbiological examination of the material obtained via percutaneous biopsy under guidance of imaging methods.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Renal aspergillosis is a rare infection that usually occurs in persons with a predisposition for this condition. Its differential diagnosis includes primary and metastatic renal malignancies, pyelonephritis and secondary abscess formation, granulomatous disorders, and renal infarction. We aim to stress the role of multimodality imaging and percutaneous biopsy in the diagnosis of this condition. Case Report: We present diffusion weighted imaging (DWI) and positron emission tomography-computed tomography (PET-CT) findings in addition to conventional imaging modalities in a 55-year-old man with secondary renal aspergilloma. Conclusion: Radiological imaging methods are an integral part of diagnostic workup for renal aspergillosis. A definitive diagnosis is made by histopathological and/or microbiological examination of the material obtained via percutaneous biopsy under guidance of imaging methods.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.15880",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "701-705",
+    "views": 6854,
+    "downloads": 9793,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "48",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=48",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=48",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=48",
+    "localPdfUrl": "js/data/pdfs/48.pdf",
+    "pdfUrl": "js/data/pdfs/48.pdf"
+  },
+  {
+    "id": 55,
+    "type": "Case Report",
+    "title": "Cortisol and Hippocampal Volume as Predictors of Active Suicidal Behavior in Major Depressive Disorder: Case Report",
+    "authors": [
+      {
+        "name": "Theodor Moica",
+        "affiliation": "First Clinic of Psychiatry, University of Medicine and Pharmacy of Tîrgu Mureş, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Iosif Gabos Grecu",
+        "affiliation": "First Clinic of Psychiatry, University of Medicine and Pharmacy of Tîrgu Mureş, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Sorina Moica",
+        "affiliation": "Department of Industrial Engineering and Management, Petru Maior University of Tîrgu Mureş, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Marieta Gabos Grecu",
+        "affiliation": "First Clinic of Psychiatry, University of Medicine and Pharmacy of Tîrgu Mureş, Romania",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Suicide is frequently encountered in patients suffering from major depressive disorder (MDD). Since only a third of treated depressed patients are able to achieve remission, in the last few years, new theories have been proposed to better understand the mechanism of this illness. Our paper analyzes the interrelation between cortisol as a marker of neuroendocrine theory as a response to stress, and hippocampal volume subfields in depression as a marker of neurogenesis and neuroplasticity theory. Case Report: Here we present the case of a 52-year-old male patient with known history of MDD, who died as a result of completed suicide by hanging. The patient had been recently discharged from a psychiatric clinic, after being hospitalized for a major depressive episode (MDE). The result of the autopsy, medical records, laboratory analysis and a magnetic resonance image (MRI) of the patient were analyzed. Both the right and left volumes of the hippocampus were found to be smaller when compared to normal values reported in the literature. The morning level of cortisol was higher than the normal value. Conclusion: In a depressed patient with an acute stressful event, high levels of cortisol associated with decreased volume of the hippocampus could represent predictors for an increased risk of suicide.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Background:</strong>&nbsp;Suicide is frequently encountered in patients suffering from major depressive disorder (MDD). Since only a third of treated depressed patients are able to achieve remission, in the last few years, new theories have been proposed to better understand the mechanism of this illness. Our paper analyzes the interrelation between cortisol as a marker of neuroendocrine theory as a response to stress, and hippocampal volume subfields in depression as a marker of neurogenesis and neuroplasticity theory.&nbsp;</p>\r\n<p>\r\n\t<strong>Case Report:&nbsp;</strong>Here we present the case of a 52-year-old male patient with known history of MDD, who died as a result of completed suicide by hanging. The patient had been recently discharged from a psychiatric clinic, after being hospitalized for a major depressive episode (MDE). The result of the autopsy, medical records, laboratory analysis and a magnetic resonance image (MRI) of the patient were analyzed. Both the right and left volumes of the hippocampus were found to be smaller when compared to normal values reported in the literature. The morning level of cortisol was higher than the normal value.</p>\r\n<p>\r\n\t<strong>Conclusion:</strong>&nbsp;In a depressed patient with an acute stressful event, high levels of cortisol associated with decreased volume of the hippocampus could represent predictors for an increased risk of suicide.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Suicide is frequently encountered in patients suffering from major depressive disorder (MDD). Since only a third of treated depressed patients are able to achieve remission, in the last few years, new theories have been proposed to better understand the mechanism of this illness. Our paper analyzes the interrelation between cortisol as a marker of neuroendocrine theory as a response to stress, and hippocampal volume subfields in depression as a marker of neurogenesis and neuroplasticity theory. Case Report: Here we present the case of a 52-year-old male patient with known history of MDD, who died as a result of completed suicide by hanging. The patient had been recently discharged from a psychiatric clinic, after being hospitalized for a major depressive episode (MDE). The result of the autopsy, medical records, laboratory analysis and a magnetic resonance image (MRI) of the patient were analyzed. Both the right and left volumes of the hippocampus were found to be smaller when compared to normal values reported in the literature. The morning level of cortisol was higher than the normal value. Conclusion: In a depressed patient with an acute stressful event, high levels of cortisol associated with decreased volume of the hippocampus could represent predictors for an increased risk of suicide.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.150842",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "706-709",
+    "views": 6952,
+    "downloads": 9940,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "55",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=55",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=55",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=55",
+    "localPdfUrl": "js/data/pdfs/55.pdf",
+    "pdfUrl": "js/data/pdfs/55.pdf"
+  },
+  {
+    "id": 71,
+    "type": "Clinical Image",
+    "title": "Purple Urine Bag Syndrome in a Male Patient with Chronic Hemodialysis",
+    "authors": [
+      {
+        "name": "Hakan Koçoğlu",
+        "affiliation": "Department of Internal Medicine, Bakırköy Dr. Sadi Konuk Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Betül Yıldırım",
+        "affiliation": "Department of Internal Medicine, Bakırköy Dr. Sadi Konuk Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yıldız Okuturlar",
+        "affiliation": "Department of Internal Medicine, Bakırköy Dr. Sadi Konuk Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Hurşitoğlu",
+        "affiliation": "Department of Internal Medicine, Bakırköy Dr. Sadi Konuk Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özlem Harmankaya",
+        "affiliation": "Department of Internal Medicine, Bakırköy Dr. Sadi Konuk Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.151140",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "717-718",
+    "views": 5972,
+    "downloads": 9472,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "71",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=71",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=71",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=71",
+    "localPdfUrl": "js/data/pdfs/71.pdf",
+    "pdfUrl": "js/data/pdfs/71.pdf"
+  },
+  {
+    "id": 73,
+    "type": "Clinical Image",
+    "title": "Diffuse Alveolar Hemorrhage after Clopidogrel Use",
+    "authors": [
+      {
+        "name": "Tolga Onuk",
+        "affiliation": "Department of Cardiology, Dr. Siyami Ersek Cardiothoracic and Vascular Surgery Center, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Göktürk İpek",
+        "affiliation": "Department of Cardiology, Dr. Siyami Ersek Cardiothoracic and Vascular Surgery Center, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Baran Karataş",
+        "affiliation": "Department of Cardiology, Dr. Siyami Ersek Cardiothoracic and Vascular Surgery Center, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Recep Hacı",
+        "affiliation": "Department of Cardiology, Dr. Siyami Ersek Cardiothoracic and Vascular Surgery Center, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neşe Çam [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.151545",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "719-720",
+    "views": 6177,
+    "downloads": 9847,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "73",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=73",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=73",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=73",
+    "localPdfUrl": "js/data/pdfs/73.pdf",
+    "pdfUrl": "js/data/pdfs/73.pdf"
+  },
+  {
+    "id": 61,
+    "type": "Letter to the Editor",
+    "title": "Letter to the Editor concerning “New Predictive Parameters of Bell’s Palsy: Neutrophil to Lymphocyte Ratio and Platelet to Lymphocyte Ratio”",
+    "authors": [
+      {
+        "name": "Elif Gülsüm Ümit",
+        "affiliation": "Department of Hematology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.150748",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "710-711",
+    "views": 5810,
+    "downloads": 9680,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "61",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=61",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=61",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=61",
+    "localPdfUrl": "js/data/pdfs/61.pdf",
+    "pdfUrl": "js/data/pdfs/61.pdf"
+  },
+  {
+    "id": 64,
+    "type": "Letter to the Editor",
+    "title": "Prothrombin Complex Concentrates in Life-Threatening Bleeding",
+    "authors": [
+      {
+        "name": "Mustafa Burak Sayhan",
+        "affiliation": "Department of Emergency Medicine, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ömer Salt",
+        "affiliation": "Department of Emergency Medicine, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Muzaffer Demir",
+        "affiliation": "Department of Internal Medicine /Hematology, Trakya University University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.151625",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "712-713",
+    "views": 6115,
+    "downloads": 9664,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "64",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=64",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=64",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=64",
+    "localPdfUrl": "js/data/pdfs/64.pdf",
+    "pdfUrl": "js/data/pdfs/64.pdf"
+  },
+  {
+    "id": 67,
+    "type": "Letter to the Editor",
+    "title": "Another Reason to Omit Induction Radiotherapy: Save It for Last",
+    "authors": [
+      {
+        "name": "Çağatay Tezel",
+        "affiliation": "Department of Thoracic Surgery, Süreyyapaşa Chest Diseases and Throracic Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serdar Evman",
+        "affiliation": "Department of Thoracic Surgery, Süreyyapaşa Chest Diseases and Throracic Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Talha Doğruyol",
+        "affiliation": "Department of Thoracic Surgery, Süreyyapaşa Chest Diseases and Throracic Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2016.160898",
+    "received": "",
+    "accepted": "",
+    "published": "2016-01-01",
+    "volume": 33,
+    "issue": "6",
+    "pages": "714-716",
+    "views": 5639,
+    "downloads": 2945,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1181",
+    "sourceArticleId": "67",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=67",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=67",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=67",
+    "localPdfUrl": "js/data/pdfs/67.pdf",
+    "pdfUrl": "js/data/pdfs/67.pdf"
+  }
+]

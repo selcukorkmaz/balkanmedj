@@ -1,0 +1,573 @@
+[
+  {
+    "id": 1886,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2001-01-01",
+    "volume": 18,
+    "issue": "2",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1127",
+    "sourceArticleId": "1886",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1886",
+    "localPdfUrl": "js/data/pdfs/1886.pdf",
+    "pdfUrl": "js/data/pdfs/1886.pdf"
+  },
+  {
+    "id": 1557,
+    "type": "Original Article",
+    "title": "Metil Parathionun İzole Kurbağa Siyatik Siniri Üzerine Etkileri",
+    "authors": [
+      {
+        "name": "Ülkü Çömelekoğlu",
+        "affiliation": "Mersin Üniversitesi Tıp Fakültesi Biyofizik A. D., MERSİN",
+        "orcid": ""
+      },
+      {
+        "name": "Belgin Büyükakıllı",
+        "affiliation": "Mersin Üniversitesi Tıp Fakültesi Biyofizik A. D., MERSİN",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2001-01-01",
+    "volume": 18,
+    "issue": "2",
+    "pages": "75-78",
+    "views": 5745,
+    "downloads": 1815,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1127",
+    "sourceArticleId": "1557",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1557",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1557",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1557",
+    "localPdfUrl": "js/data/pdfs/1557.pdf",
+    "pdfUrl": "js/data/pdfs/1557.pdf"
+  },
+  {
+    "id": 1558,
+    "type": "Original Article",
+    "title": "Perfüzyon Tekniği İle Vasküler Doku Kültürü",
+    "authors": [
+      {
+        "name": "Gökay Bozkurt",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıbbi Biyoloji A. D.",
+        "orcid": ""
+      },
+      {
+        "name": "Hasan Sunar",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kalp Damar Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ömer Yalçın",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Patoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Çetin Algüneş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıbbi Biyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2001-01-01",
+    "volume": 18,
+    "issue": "2",
+    "pages": "79-85",
+    "views": 5381,
+    "downloads": 1864,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1127",
+    "sourceArticleId": "1558",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1558",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1558",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1558",
+    "localPdfUrl": "js/data/pdfs/1558.pdf",
+    "pdfUrl": "js/data/pdfs/1558.pdf"
+  },
+  {
+    "id": 1562,
+    "type": "Original Article",
+    "title": "Salmon Kalsitoninin Antinosiseptif Etkisinde Histamin Reseptörlerinin Rolü",
+    "authors": [
+      {
+        "name": "Dikmen Dökmeci",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Farmakoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Meryem Akpolat",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Farmakoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Turhan Dost",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Farmakoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Alev Tuncer",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Farmakoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "İsmet Dökmeci [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2001-01-01",
+    "volume": 18,
+    "issue": "2",
+    "pages": "87-91",
+    "views": 5628,
+    "downloads": 1752,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1127",
+    "sourceArticleId": "1562",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1562",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1562",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1562",
+    "localPdfUrl": "js/data/pdfs/1562.pdf",
+    "pdfUrl": "js/data/pdfs/1562.pdf"
+  },
+  {
+    "id": 1563,
+    "type": "Original Article",
+    "title": "Larenks Kanserinin İmmünogenetik Orijini",
+    "authors": [
+      {
+        "name": "Özlem Dalgıç",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıbbi Biyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Gökay Bozkurt",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıbbi Biyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Nuran Ekici",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıbbi Biyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Çetin Algüneş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıbbi Biyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2001-01-01",
+    "volume": 18,
+    "issue": "2",
+    "pages": "93-99",
+    "views": 5483,
+    "downloads": 1796,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1127",
+    "sourceArticleId": "1563",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1563",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1563",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1563",
+    "localPdfUrl": "js/data/pdfs/1563.pdf",
+    "pdfUrl": "js/data/pdfs/1563.pdf"
+  },
+  {
+    "id": 1564,
+    "type": "Original Article",
+    "title": "Alt Dudak Kanserlerinin Tedavisininde Cerrahi Yaklaşım",
+    "authors": [
+      {
+        "name": "H. Nazmi Bayçın",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Plastik ve Rekonstrüktif Cerrahi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "A. Cemal Aygıt",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Plastik ve Rekonstrüktif Cerrahi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Akın Demiralay",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Plastik ve Rekonstrüktif Cerrahi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Yakup Afshari",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Plastik ve Rekonstrüktif Cerrahi Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2001-01-01",
+    "volume": 18,
+    "issue": "2",
+    "pages": "101-109",
+    "views": 5570,
+    "downloads": 1865,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1127",
+    "sourceArticleId": "1564",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1564",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1564",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1564",
+    "localPdfUrl": "js/data/pdfs/1564.pdf",
+    "pdfUrl": "js/data/pdfs/1564.pdf"
+  },
+  {
+    "id": 1566,
+    "type": "Case Report",
+    "title": "Genç Yaş Akciğer Kanseri ve Yaygın Cilt Metastazı",
+    "authors": [
+      {
+        "name": "Şahin Kılıçlı",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göğüs Hastalıkları ve Tüberküloz A. D.",
+        "orcid": ""
+      },
+      {
+        "name": "Celal Karlıkaya",
+        "affiliation": "Department of Chest Diseases, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Osman Hatipoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göğüs Hatalıkları ve Tübekülos Anabilim Dalı",
+        "orcid": ""
+      },
+      {
+        "name": "Latife Candan",
+        "affiliation": "T. Ü. Tıp Fakültesi Patoloji Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Adıgüzel",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları A. D.",
+        "orcid": ""
+      },
+      {
+        "name": "Erhan Tabakoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Göğüs Hastalıkları Anabilim Dalı, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2001-01-01",
+    "volume": 18,
+    "issue": "2",
+    "pages": "119-123",
+    "views": 5820,
+    "downloads": 1737,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1127",
+    "sourceArticleId": "1566",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1566",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1566",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1566",
+    "localPdfUrl": "js/data/pdfs/1566.pdf",
+    "pdfUrl": "js/data/pdfs/1566.pdf"
+  },
+  {
+    "id": 1567,
+    "type": "Case Report",
+    "title": "Skleroderma ve Anestezi",
+    "authors": [
+      {
+        "name": "Beyhan Karamanoğlu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anestezi ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Cavidan Arar",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anestezi ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Fatma Kavak",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anestezi ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Cüneyt Güreler",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anestezi ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Zafer Pamukçu",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anestezi ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2001-01-01",
+    "volume": 18,
+    "issue": "2",
+    "pages": "125-128",
+    "views": 5576,
+    "downloads": 1716,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1127",
+    "sourceArticleId": "1567",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1567",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1567",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1567",
+    "localPdfUrl": "js/data/pdfs/1567.pdf",
+    "pdfUrl": "js/data/pdfs/1567.pdf"
+  },
+  {
+    "id": 1568,
+    "type": "Case Report",
+    "title": "1829-1914 Yılları Arasında Edirne",
+    "authors": [
+      {
+        "name": "Nilüfer Gökçe",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıp Tarihi ve Deontoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Esin Karlıkaya",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıp Tarihi ve Deontoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2001-01-01",
+    "volume": 18,
+    "issue": "2",
+    "pages": "131-141",
+    "views": 5611,
+    "downloads": 1841,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1127",
+    "sourceArticleId": "1568",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1568",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1568",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1568",
+    "localPdfUrl": "js/data/pdfs/1568.pdf",
+    "pdfUrl": "js/data/pdfs/1568.pdf"
+  },
+  {
+    "id": 1569,
+    "type": "Case Report",
+    "title": "Edirne Merkez Asker Hastanesi",
+    "authors": [
+      {
+        "name": "Nilüfer Gökçe",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıp Tarihi ve Deontoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Esin Karlıkaya",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıp Tarihi ve Deontoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2001-01-01",
+    "volume": 18,
+    "issue": "2",
+    "pages": "143-148",
+    "views": 5406,
+    "downloads": 1823,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1127",
+    "sourceArticleId": "1569",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1569",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1569",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1569",
+    "localPdfUrl": "js/data/pdfs/1569.pdf",
+    "pdfUrl": "js/data/pdfs/1569.pdf"
+  },
+  {
+    "id": 1570,
+    "type": "Case Report",
+    "title": "Modern Türk Psikiyatri Biliminin Kurucusu Mazhar OSMAN UZMAN",
+    "authors": [
+      {
+        "name": "Esin Karlıkaya",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıp Tarihi ve Deontoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Nilüfer Gökçe",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıp Tarihi ve Deontoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2001-01-01",
+    "volume": 18,
+    "issue": "2",
+    "pages": "149-157",
+    "views": 5679,
+    "downloads": 1807,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1127",
+    "sourceArticleId": "1570",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1570",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1570",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1570",
+    "localPdfUrl": "js/data/pdfs/1570.pdf",
+    "pdfUrl": "js/data/pdfs/1570.pdf"
+  },
+  {
+    "id": 1565,
+    "type": "Review",
+    "title": "Larenks Kanseri Etiyolojisinde İmmünogenetik Faktörlerin Rolü",
+    "authors": [
+      {
+        "name": "Özlem Dalgıç",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıbbi Biyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Gökay Bozkurt",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıbbi Biyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Nuran Ekici",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıbbi Biyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Çetin Algüneş",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Tıbbi Biyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2001-01-01",
+    "volume": 18,
+    "issue": "2",
+    "pages": "111-116",
+    "views": 5465,
+    "downloads": 1705,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1127",
+    "sourceArticleId": "1565",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1565",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1565",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1565",
+    "localPdfUrl": "js/data/pdfs/1565.pdf",
+    "pdfUrl": "js/data/pdfs/1565.pdf"
+  }
+]

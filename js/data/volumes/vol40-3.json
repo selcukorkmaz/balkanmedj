@@ -1,0 +1,967 @@
+[
+  {
+    "id": 2500,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2500",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2500",
+    "localPdfUrl": "js/data/pdfs/2500.pdf",
+    "pdfUrl": "js/data/pdfs/2500.pdf"
+  },
+  {
+    "id": 2491,
+    "type": "Editorial",
+    "title": "Balkan Medical Journal Policy on the Use of Chatbots in Scientific Publications",
+    "authors": [
+      {
+        "name": "Zafer Koçak",
+        "affiliation": "Department of Radiation Oncology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Servet Altay",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "The use of artificial intelligence (AI) in scientific publishing is not new. In 2005, three students at MIT developed SCIgen, a computer program that automatically generates nonsense computer science articles to get rid of spam emails and take revenge on predatory publishers. Just 9 years later, the scientific world was shaken by the shocking news that the I",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.17042023",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "149-150",
+    "views": 5616,
+    "downloads": 2773,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2491",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2491",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2491",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2491",
+    "localPdfUrl": "js/data/pdfs/2491.pdf",
+    "pdfUrl": "js/data/pdfs/2491.pdf"
+  },
+  {
+    "id": 2490,
+    "type": "Editorial",
+    "title": "The Role of Artificial Intelligence in Coronary Artery Disease and Atrial Fibrillation",
+    "authors": [
+      {
+        "name": "Mert İlker Hayıroğlu",
+        "affiliation": "Clinic of Cardiology, Dr. Siyami Ersek Thoracic and Cardiovascular Surgery Center, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Servet Altay[[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Cardiovascular disease is the primary cause of morbidity and mortality worldwide. Cardiologists face challenges in clinical decision-making because of the demands for better treatment and the translation of the most recent scientific discoveries into executable strategies. On the contrary, the development of artificial intelligence (AI) and machine learning ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.06042023",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "151-152",
+    "views": 7471,
+    "downloads": 6088,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2490",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2490",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2490",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2490",
+    "localPdfUrl": "js/data/pdfs/2490.pdf",
+    "pdfUrl": "js/data/pdfs/2490.pdf"
+  },
+  {
+    "id": 2497,
+    "type": "Invited Review",
+    "title": "Effects of COVID-19 Infection and Vaccination on the Female Reproductive System: A Narrative Review",
+    "authors": [
+      {
+        "name": "Soheila Pourmasumi",
+        "affiliation": "Social Determinants of Health Research Center, Rafsanjan University of Medical Sciences, Rafsanjan, Iran; Clinical Research Development Unit, Ali-Ibn Abi-Talib Hospital, Rafsanjan University of Medical Sciences, Rafsanjan, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Nicholas G. Kounis",
+        "affiliation": "Department of Internal Medicine, Division of Cardiology, University of Patras Medical School, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Monavar Naderi",
+        "affiliation": "Knowledge and Information Science, Vice Chancellor for Science and Technology, Rafsanjan University of Medical Sciences, Rafsanjan, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Robabe Hosseinisadat",
+        "affiliation": "Department of Obstetrics and Gynecology, Faculty of Medicine, Kerman University of Medical Sciences, Kerman, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Arezoo Khoradmehr",
+        "affiliation": "The Persian Gulf Marine Biotechnology Research Center, The Persian Gulf Biomedical Sciences Research Institute, Bushehr University of Medical Sciences, Bushehr, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Niloofar Fagheirelahee",
+        "affiliation": "Department of Anatomy, Faculty of Medicine, Kurdistan University of Medical Sciences, Sanandaj, Iran",
+        "orcid": ""
+      },
+      {
+        "name": "Sophia N. Kouni",
+        "affiliation": "Speech Therapy Practice, Queen Olgas Square, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Cesare de Gregorio",
+        "affiliation": "Department of Clinical and Experimental Medicine, University of Messina Medical School, Messina, Italy",
+        "orcid": ""
+      },
+      {
+        "name": "Periklis Dousdampanis",
+        "affiliation": "Department of Nephrology, Saint Andrews State General Hospital, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Virginia Mplani",
+        "affiliation": "Intensive Care Unit, Patras University Hospital, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Marina A. Michalaki",
+        "affiliation": "Department of Internal Medicine, Division of Endocrinology, Fculty of Health Sciences, University of Patras, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Panagiotis Plotas",
+        "affiliation": "Department of Speech Therapy, University of Patras, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Stelios Assimakopoulos",
+        "affiliation": "Department of Internal Medicine, Division of Infectious Diseases, University of Patras Medical School, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Christos Gogos",
+        "affiliation": "COVID-19 Unit, Papageorgiou General Hospital, Thessaloniki, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Georgios Aidonidis",
+        "affiliation": "Interbalkan Medical Center, Thessaloniki, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Pavlos Roditis",
+        "affiliation": "Department of Cardiology, Mamatsio Kozanis General Hospital, Kozani, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Nikos Matsas",
+        "affiliation": "Cardiology Private Practice, Agrinion, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Dimitrios Velissaris",
+        "affiliation": "Department of Internal Medicine, University of Patras, Patras, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Gianfranco Calogiuri",
+        "affiliation": "Pneumonology Department, Civil Hospital “Ninetto Melli”, Pietro Vernoti, Brindisi, Italy; Department of Internal Medicine, Immunology and Infectious Diseases, Section of Allergology and Clinical Immunology, University of Bari Medical School, Bari, Italy",
+        "orcid": ""
+      },
+      {
+        "name": "Ming-Yow Hung",
+        "affiliation": "Division of Cardiology, Department of Internal Medicine, Shuang Ho Hospital, Taipei Medical University, New Taipei City, Taiwan; Division of Cardiology, Department of Internal Medicine, School of Medicine, College of Medicine, Taipei Medical University, Taipei, Taiwan; Taipei Heart Institute, Taipei Medical University, Taipei, Taiwan",
+        "orcid": ""
+      },
+      {
+        "name": "Ioanna Koniari",
+        "affiliation": "Departmentof Cardiology, Liverpool Heart and Chest Hospital, Liverpool, UK",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Several studies and research papers have been published to elucidate and understand the mechanism of the coronavirus disease 2019 (COVID-19) pandemic and its long-term effects on the human body. COVID-19 affects a number of organs, including the female reproductive system. However, less attention has been given to the effects of COVID-19 on the female reproductive system due to their low morbidity. The results of studies investigating the relationship between COVID-19 infection and ovarian function in women of reproductive age have shown the harmless involvement of COVID-19 infection. Several studies have reported the involvement of COVID-19 infection in oocyte quality, ovarian function, and dysfunctions in the uterine endometrium and the menstrual cycle. The findings of these studies indicate that COVID-19 infection negatively affects the follicular microenvironment and dysregulate ovarian function. Although the COVID-19 pandemic and female reproductive health have been studied in humans and animals, very few studies have examined how COVID-19 affects the female reproductive system. The objective of this review is to summarize the current literature and categorize the effects of COVID-19 on the female reproductive system, including the ovaries, uterus, and hormonal profiles. The effects on oocyte maturation, oxidative stress, which causes chromosomal instability and apoptosis in ovaries, in vitro fertilization cycle, high-quality embryos, premature ovarian insufficiency, ovarian vein thrombosis, hypercoagulable state, women’s menstrual cycle, the hypothalamus-pituitary-ovary axis, and sex hormones, including estrogen, progesterone, and the anti-Müllerian hormone, are discussed in particular.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Several studies and research papers have been published to elucidate and understand the mechanism of the coronavirus disease 2019 (COVID-19) pandemic and its long-term effects on the human body. COVID-19 affects a number of organs, including the female reproductive system. However, less attention has been given to the effects of COVID-19 on the female reproductive system due to their low morbidity. The results of studies investigating the relationship between COVID-19 infection and ovarian function in women of reproductive age have shown the harmless involvement of COVID-19 infection. Several studies have reported the involvement of COVID-19 infection in oocyte quality, ovarian function, and dysfunctions in the uterine endometrium and the menstrual cycle. The findings of these studies indicate that COVID-19 infection negatively affects the follicular microenvironment and dysregulate ovarian function. Although the COVID-19 pandemic and female reproductive health have been studied in humans and animals, very few studies have examined how COVID-19 affects the female reproductive system. The objective of this review is to summarize the current literature and categorize the effects of COVID-19 on the female reproductive system, including the ovaries, uterus, and hormonal profiles. The effects on oocyte maturation, oxidative stress, which causes chromosomal instability and apoptosis in ovaries, in vitro fertilization cycle, high-quality embryos, premature ovarian insufficiency, ovarian vein thrombosis, hypercoagulable state, women&rsquo;s menstrual cycle, the hypothalamus-pituitary-ovary axis, and sex hormones, including estrogen, progesterone, and the anti-M&uuml;llerian hormone, are discussed in particular.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Several studies and research papers have been published to elucidate and understand the mechanism of the coronavirus disease 2019 (COVID-19) pandemic and its long-term effects on the human body. COVID-19 affects a number of organs, including the female reproductive system. However, less attention has been given to the effects of COVID-19 on the female reproductive system due to their low morbidity. The results of studies investigating the relationship between COVID-19 infection and ovarian function in women of reproductive age have shown the harmless involvement of COVID-19 infection. Several studies have reported the involvement of COVID-19 infection in oocyte quality, ovarian function, and dysfunctions in the uterine endometrium and the menstrual cycle. The findings of these studies indicate that COVID-19 infection negatively affects the follicular microenvironment and dysregulate ovarian function. Although the COVID-19 pandemic and female reproductive health have been studied in humans and animals, very few studies have examined how COVID-19 affects the female reproductive system. The objective of this review is to summarize the current literature and categorize the effects of COVID-19 on the female reproductive system, including the ovaries, uterus, and hormonal profiles. The effects on oocyte maturation, oxidative stress, which causes chromosomal instability and apoptosis in ovaries, in vitro fertilization cycle, high-quality embryos, premature ovarian insufficiency, ovarian vein thrombosis, hypercoagulable state, women’s menstrual cycle, the hypothalamus-pituitary-ovary axis, and sex hormones, including estrogen, progesterone, and the anti-Müllerian hormone, are discussed in particular.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-3-4",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "153-164",
+    "views": 7241,
+    "downloads": 5269,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2497",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2497",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2497",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2497",
+    "localPdfUrl": "js/data/pdfs/2497.pdf",
+    "pdfUrl": "js/data/pdfs/2497.pdf"
+  },
+  {
+    "id": 2501,
+    "type": "Invited Review",
+    "title": "Type I Interferonopathies in Childhood",
+    "authors": [
+      {
+        "name": "Fatih Haşlak",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Elif Kılıç Könte",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Esma Aslan",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sezgin Şahin",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özgür Kasapçopur",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Type 1 interferonopathy is a novel context reflecting a group of inborn disorders sharing common pathway disturbances. This group of diseases is characterized by autoimmunity and autoinflammation caused by an upregulation of type 1 interferons (IFN)s due to certain genetic mutations. Several features are common in most of the diseases in this group, such as vasculitic skin changes, including chilblains, panniculitis, interstitial lung disease, basal ganglion calcifications, neuromotor impairments, epilepsy, stroke, and recurrent fever. Family history and consanguineous marriage are also common. IFN signature is a useful diagnostic tool and is positive in almost all patients with type 1 interferonopathies. Although IFN signature is a sensitive test, its specificity is relatively low. It can also be positive in viral infections and several connective tissue diseases. Therefore, next-generation sequence methods, whole exome sequencing (WES) in particular, are required for the ultimate diagnosis. The optimal treatment regime is still under debate due to a lack of clinical trials. Although high-dose steroids, anti-IL-1 and anti-IL-6 treatments, and reverse transcriptase inhibitors are used, JAK inhibitors are highly promising. Additionally, monoclonal antibodies against IFN-alpha and interferon-α receptor (IFNAR) are currently underway.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Type 1 interferonopathy is a novel context reflecting a group of inborn disorders sharing common pathway disturbances. This group of diseases is characterized by autoimmunity and autoinflammation caused by an upregulation of type 1 interferons (IFN)s due to certain genetic mutations. Several features are common in most of the diseases in this group, such as vasculitic skin changes, including chilblains, panniculitis, interstitial lung disease, basal ganglion calcifications, neuromotor impairments, epilepsy, stroke, and recurrent fever. Family history and consanguineous marriage are also common. IFN signature is a useful diagnostic tool and is positive in almost all patients with type 1 interferonopathies. Although IFN signature is a sensitive test, its specificity is relatively low. It can also be positive in viral infections and several connective tissue diseases. Therefore, next-generation sequence methods, whole exome sequencing (WES) in particular, are required for the ultimate diagnosis. The optimal treatment regime is still under debate due to a lack of clinical trials. Although high-dose steroids, anti-IL-1 and anti-IL-6 treatments, and reverse transcriptase inhibitors are used, JAK inhibitors are highly promising. Additionally, monoclonal antibodies against IFN-alpha and interferon-&alpha; receptor (IFNAR) are currently underway.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Type 1 interferonopathy is a novel context reflecting a group of inborn disorders sharing common pathway disturbances. This group of diseases is characterized by autoimmunity and autoinflammation caused by an upregulation of type 1 interferons (IFN)s due to certain genetic mutations. Several features are common in most of the diseases in this group, such as vasculitic skin changes, including chilblains, panniculitis, interstitial lung disease, basal ganglion calcifications, neuromotor impairments, epilepsy, stroke, and recurrent fever. Family history and consanguineous marriage are also common. IFN signature is a useful diagnostic tool and is positive in almost all patients with type 1 interferonopathies. Although IFN signature is a sensitive test, its specificity is relatively low. It can also be positive in viral infections and several connective tissue diseases. Therefore, next-generation sequence methods, whole exome sequencing (WES) in particular, are required for the ultimate diagnosis. The optimal treatment regime is still under debate due to a lack of clinical trials. Although high-dose steroids, anti-IL-1 and anti-IL-6 treatments, and reverse transcriptase inhibitors are used, JAK inhibitors are highly promising. Additionally, monoclonal antibodies against IFN-alpha and interferon-α receptor (IFNAR) are currently underway.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-4-78",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "165-174",
+    "views": 7264,
+    "downloads": 4114,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2501",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2501",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2501",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2501",
+    "localPdfUrl": "js/data/pdfs/2501.pdf",
+    "pdfUrl": "js/data/pdfs/2501.pdf"
+  },
+  {
+    "id": 2484,
+    "type": "Original Article",
+    "title": "TDAG51 Attenuates Impaired Lipid Metabolism and Insulin Resistance in Gestational Diabetes Mellitus Through SREBP-1/ANGPTL8 Pathway",
+    "authors": [
+      {
+        "name": "Xiaozhi Wu",
+        "affiliation": "Department of Obstetrics, The First People’s Hospital of Zunyi (The Third Affiliated Hospital of Zunyi Medical University), Zunyi, China",
+        "orcid": ""
+      },
+      {
+        "name": "Biru Xiao",
+        "affiliation": "Department of Obstetrics, The First Affiliated Hospital of Wenzhou Medical University, Wenzhou, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: T-cell death-associated gene 51 (TDAG51) belongs to the transcription factor family and is involved in the energy homeostasis of the liver through the regulation of lipogenesis.Aims: To evaluate the role of T-cell death-associated gene 51 in gestational diabetes mellitus.Study Design: Experimental animal and human-sample study.Methods: A total of 30 patients with GDM were enrolled in the study. TDAG51 expression in patients with gestational diabetes mellitus was assessed by Western blotting and quantitative reverse-transcription polymerase chain reaction. A high-fat and high-sugar diet was used to establish a gestational diabetes mellitus model. Mice with gestational diabetes were injected with lentivirus-mediated overexpression of TDAG51. Blood glucose was measured using a glucometer, and glucose and insulin tolerance tests were performed to detect insulin resistance. Liver and adipose tissues were subjected to hematoxylin-eosin staining. Cell apoptosis was detected by TUNEL staining. Human villous trophoblast cells (HTR-8/SVneo) were treated with a high-glucose medium to induce gestational diabetes mellitus.Results: TDAG51 was downregulated in gestational diabetes mellitus and high glucose-induced HTR-8/SVneo. TDAG51 overexpression reduced the level of blood glucose, enhanced serum insulin, and attenuated glucose and insulin tolerance in gestational diabetes mellitus mice. TDAG51 overexpression also ameliorated impaired lipid metabolism and alleviated adipocyte hypertrophy and hepatic lipid droplets in gestational diabetes mellitus mice. The expressions of SREBP-1 and ANGPTL8 were upregulated in gestational diabetes mellitus and showed a negative correlation with TDAG51 in patients with gestational diabetes mellitus. TDAG51 increased the expressions of SREBP-1 and ANGPTL8 in gestational diabetes mellitus mice. TDAG51 overexpression reduced cell apoptosis and enhanced cell viability of high glucose-induced HTR-8/SVneo. Ectopic expression of ANGPTL8 attenuated the TDAG51-induced increase in cell viability and decrease in apoptosis in high glucose-induced HTR-8/SVneo.Conclusion: TDAG51 alleviated impaired lipid metabolism and insulin resistance in gestational diabetes mellitus via downregulation of SREBP 1/ANGPTL8 pathway.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> T-cell death-associated gene 51 (TDAG51) belongs to the transcription factor family and is involved in the energy homeostasis of the liver through the regulation of lipogenesis.<br /><strong>Aims:</strong> To evaluate the role of T-cell death-associated gene 51 in gestational diabetes mellitus.<br /><strong>Study Design:</strong> Experimental animal and human-sample study.<br /><strong>Methods:</strong> A total of 30 patients with GDM were enrolled in the study.&nbsp; TDAG51 expression in patients with gestational diabetes mellitus was assessed by Western blotting and quantitative reverse-transcription polymerase chain reaction. A high-fat and high-sugar diet was used to establish a gestational diabetes mellitus model. Mice with gestational diabetes were injected with lentivirus-mediated overexpression of TDAG51. Blood glucose was measured using a glucometer, and glucose and insulin tolerance tests were performed to detect insulin resistance. Liver and adipose tissues were subjected to hematoxylin-eosin staining. Cell apoptosis was detected by TUNEL staining. Human villous trophoblast cells (HTR-8/SVneo) were treated with a high-glucose medium to induce gestational diabetes mellitus.<br /><strong>Results:</strong> TDAG51 was downregulated in gestational diabetes mellitus and high glucose-induced HTR-8/SVneo. TDAG51 overexpression reduced the level of blood glucose, enhanced serum insulin, and attenuated glucose and insulin tolerance in gestational diabetes mellitus mice. TDAG51 overexpression also ameliorated impaired lipid metabolism and alleviated adipocyte hypertrophy and hepatic lipid droplets in gestational diabetes mellitus mice. The expressions of SREBP-1 and ANGPTL8 were upregulated in gestational diabetes mellitus and showed a negative correlation with TDAG51 in patients with gestational diabetes mellitus. TDAG51 increased the expressions of SREBP-1 and ANGPTL8 in gestational diabetes mellitus mice. TDAG51 overexpression reduced cell apoptosis and enhanced cell viability of high glucose-induced HTR-8/SVneo. Ectopic expression of ANGPTL8 attenuated the TDAG51-induced increase in cell viability and decrease in apoptosis in high glucose-induced HTR-8/SVneo.<br /><strong>Conclusion:</strong> TDAG51 alleviated impaired lipid metabolism and insulin resistance in gestational diabetes mellitus via downregulation of SREBP 1/ANGPTL8 pathway.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: T-cell death-associated gene 51 (TDAG51) belongs to the transcription factor family and is involved in the energy homeostasis of the liver through the regulation of lipogenesis.Aims: To evaluate the role of T-cell death-associated gene 51 in gestational diabetes mellitus.Study Design: Experimental animal and human-sample study.Methods: A total of 30 patients with GDM were enrolled in the study. TDAG51 expression in patients with gestational diabetes mellitus was assessed by Western blotting and quantitative reverse-transcription polymerase chain reaction. A high-fat and high-sugar diet was used to establish a gestational diabetes mellitus model. Mice with gestational diabetes were injected with lentivirus-mediated overexpression of TDAG51. Blood glucose was measured using a glucometer, and glucose and insulin tolerance tests were performed to detect insulin resistance. Liver and adipose tissues were subjected to hematoxylin-eosin staining. Cell apoptosis was detected by TUNEL staining. Human villous trophoblast cells (HTR-8/SVneo) were treated with a high-glucose medium to induce gestational diabetes mellitus.Results: TDAG51 was downregulated in gestational diabetes mellitus and high glucose-induced HTR-8/SVneo. TDAG51 overexpression reduced the level of blood glucose, enhanced serum insulin, and attenuated glucose and insulin tolerance in gestational diabetes mellitus mice. TDAG51 overexpression also ameliorated impaired lipid metabolism and alleviated adipocyte hypertrophy and hepatic lipid droplets in gestational diabetes mellitus mice. The expressions of SREBP-1 and ANGPTL8 were upregulated in gestational diabetes mellitus and showed a negative correlation with TDAG51 in patients with gestational diabetes mellitus. TDAG51 increased the expressions of SREBP-1 and ANGPTL8 in gestational diabetes mellitus mice. TDAG51 overexpression reduced cell apoptosis and enhanced cell viability of high glucose-induced HTR-8/SVneo. Ectopic expression of ANGPTL8 attenuated the TDAG51-induced increase in cell viability and decrease in apoptosis in high glucose-induced HTR-8/SVneo.Conclusion: TDAG51 alleviated impaired lipid metabolism and insulin resistance in gestational diabetes mellitus via downregulation of SREBP 1/ANGPTL8 pathway.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2022-8-61",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "175-181",
+    "views": 6939,
+    "downloads": 4324,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2484",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2484",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2484",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2484",
+    "localPdfUrl": "js/data/pdfs/2484.pdf",
+    "pdfUrl": "js/data/pdfs/2484.pdf"
+  },
+  {
+    "id": 2483,
+    "type": "Original Article",
+    "title": "Efficacy and Safety of Sofosbuvir and Ledipasvir for Hepatitis C in Kidney Transplant Recipients: A Single-center Retrospective Observational Study",
+    "authors": [
+      {
+        "name": "Ayşe Serra Artan",
+        "affiliation": "Division of Nephrology, Department of Internal Medicine, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şafak Mirioğlu",
+        "affiliation": "Division of Nephrology, Department of Internal Medicine, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey; Division of Nephrology, Department of Internal Medicine, Bezmialem Vakıf University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zulal İstemihan",
+        "affiliation": "Division of Gastroenterohepatology, Department of Internal Medicine, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Elif Aksoy",
+        "affiliation": "Division of Nephrology, Department of Internal Medicine, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Burak Dirim",
+        "affiliation": "Division of Nephrology, Department of Internal Medicine, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bilger Çavuş",
+        "affiliation": "Division of Gastroenterohepatology, Department of Internal Medicine, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özgür Akın Oto",
+        "affiliation": "Division of Nephrology, Department of Internal Medicine, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aslı Çifçibaşı-Örmeci",
+        "affiliation": "Division of Gastroenterohepatology, Department of Internal Medicine, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Beşışık",
+        "affiliation": "Division of Gastroenterohepatology, Department of Internal Medicine, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yaşar Çalışkan",
+        "affiliation": "Division of Nephrology, Department of Internal Medicine, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey; Center for Abdominal Transplantation, Saint Louis University Faculty of Medicine, Saint Louis, MO, USA",
+        "orcid": ""
+      },
+      {
+        "name": "Savaş Öztürk",
+        "affiliation": "Division of Nephrology, Department of Internal Medicine, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Halil Yazıcı",
+        "affiliation": "Division of Nephrology, Department of Internal Medicine, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sabahattin Kaymakoğlu",
+        "affiliation": "Division of Gastroenterohepatology, Department of Internal Medicine, İstanbul University, İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aydın Türkmen[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Treatment using direct-acting antivirals provides high rates of sustained virologic response and a favorable safety profile for patients with chronic hepatitis C virus infection. However, data on the efficacy of direct-acting antivirals in kidney transplant recipients are still limited.Aims: To evaluate the safety and efficacy of fixed-dose sofosbuvir/ledipasvir combination in kidney transplant recipients.Study Design: Retrospective, observational, single-center study.Methods: Data of 29 kidney transplant recipients who received a fixed-dose safety and efficacy of fixed-dose sofosbuvir/ledipasvir combination for 12 or 24 weeks with or without ribavirin were analyzed. The primary outcome was SVR12, which was defined as undetectable HCV-RNA levels 12 weeks after the treatment. Secondary outcomes were graft function, proteinuria, and calcineurin inhibitor trough level variability.Results: The predominant hepatitis C virus genotype was 1b (n = 19, 65.6%). All patients achieved SVR12. No graft failures nor deaths were reported during the study period. Throughout and after the treatment, the levels of aspartate aminotransferase [21 (range: 18-29.5) to 16 (range: 14-20) U/l, p < 0.001] and alanine aminotransferase [22 (range: 15-34) to 14 (range: 12-17.5) U/l, p < 0.001] improved significantly, unlike bilirubin, hemoglobin, and platelet levels. Renal function remained stable. Dose adjustments for calcineurin inhibitors were required. Serious adverse events were not observed.Conclusion: Safety and efficacy of fixed-dose sofosbuvir/ledipasvir combination was effective and safe in kidney transplant recipients with hepatitis C virus. However, cautious monitoring of trough levels of calcineurin inhibitorss is needed due to potential drug-drug interactions during the treatment episode.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Treatment using direct-acting antivirals provides high rates of sustained virologic response and a favorable safety profile for patients with chronic hepatitis C virus infection. However, data on the efficacy of direct-acting antivirals &nbsp;in kidney transplant recipients are still limited.<br /><strong>Aims:</strong> To evaluate the safety and efficacy of fixed-dose sofosbuvir/ledipasvir combination in kidney transplant recipients.<br /><strong>Study Design:</strong> Retrospective, observational, single-center study.<br /><strong>Methods:</strong> Data of 29 kidney transplant recipients who received a fixed-dose safety and efficacy of fixed-dose sofosbuvir/ledipasvir combination for 12 or 24 weeks with or without ribavirin were analyzed. The primary outcome was SVR12, which was defined as undetectable HCV-RNA levels 12 weeks after the treatment. Secondary outcomes were graft function, proteinuria, and calcineurin inhibitor trough level variability.<br /><strong>Results:</strong> The predominant hepatitis C virus&nbsp; genotype was 1b (n = 19, 65.6%). All patients achieved SVR12. No graft failures nor deaths were reported during the study period. Throughout and after the treatment, the levels of aspartate aminotransferase [21 (range: 18-29.5) to 16 (range: 14-20) U/l, <em>p</em> &lt; 0.001] and alanine aminotransferase [22 (range: 15-34) to 14 (range: 12-17.5) U/l, <em>p</em> &lt; 0.001] improved significantly, unlike bilirubin, hemoglobin, and platelet levels. Renal function remained stable. Dose adjustments for calcineurin inhibitors were required. Serious adverse events were not observed.<br /><strong>Conclusion:</strong> Safety and efficacy of fixed-dose sofosbuvir/ledipasvir&nbsp; combination was effective and safe in kidney transplant recipients with hepatitis C virus. However, cautious monitoring of trough levels of calcineurin inhibitorss is needed due to potential drug-drug interactions during the treatment episode.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Treatment using direct-acting antivirals provides high rates of sustained virologic response and a favorable safety profile for patients with chronic hepatitis C virus infection. However, data on the efficacy of direct-acting antivirals in kidney transplant recipients are still limited.Aims: To evaluate the safety and efficacy of fixed-dose sofosbuvir/ledipasvir combination in kidney transplant recipients.Study Design: Retrospective, observational, single-center study.Methods: Data of 29 kidney transplant recipients who received a fixed-dose safety and efficacy of fixed-dose sofosbuvir/ledipasvir combination for 12 or 24 weeks with or without ribavirin were analyzed. The primary outcome was SVR12, which was defined as undetectable HCV-RNA levels 12 weeks after the treatment. Secondary outcomes were graft function, proteinuria, and calcineurin inhibitor trough level variability.Results: The predominant hepatitis C virus genotype was 1b (n = 19, 65.6%). All patients achieved SVR12. No graft failures nor deaths were reported during the study period. Throughout and after the treatment, the levels of aspartate aminotransferase [21 (range: 18-29.5) to 16 (range: 14-20) U/l, p < 0.001] and alanine aminotransferase [22 (range: 15-34) to 14 (range: 12-17.5) U/l, p < 0.001] improved significantly, unlike bilirubin, hemoglobin, and platelet levels. Renal function remained stable. Dose adjustments for calcineurin inhibitors were required. Serious adverse events were not observed.Conclusion: Safety and efficacy of fixed-dose sofosbuvir/ledipasvir combination was effective and safe in kidney transplant recipients with hepatitis C virus. However, cautious monitoring of trough levels of calcineurin inhibitorss is needed due to potential drug-drug interactions during the treatment episode.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2022-10-13",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "182-187",
+    "views": 7224,
+    "downloads": 3713,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2483",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2483",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2483",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2483",
+    "localPdfUrl": "js/data/pdfs/2483.pdf",
+    "pdfUrl": "js/data/pdfs/2483.pdf"
+  },
+  {
+    "id": 2489,
+    "type": "Original Article",
+    "title": "Are Guideline-recommended Risk Classification Schemes in Pulmonary Hypertension Adequately Robust to Guide the Real-world Setting?",
+    "authors": [
+      {
+        "name": "Dursun Akaslan",
+        "affiliation": "Clinic of Cardiology, Pendik Training and Research Hospital, Marmara University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emre Aslanger",
+        "affiliation": "Clinic of Cardiology, Pendik Training and Research Hospital, Marmara University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Halil Ataş",
+        "affiliation": "Clinic of Cardiology, Pendik Training and Research Hospital, Marmara University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Derya Kocakaya",
+        "affiliation": "Clinic of Pulmonology, Pendik Training and Research Hospital, Marmara University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bedrettin Yıldızeli",
+        "affiliation": "Clinic of Thoracic Surgery, Pendik Training and Research Hospital, Marmara University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Mutlu",
+        "affiliation": "Clinic of Cardiology, Pendik Training and Research Hospital, Marmara University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Pulmonary hypertension is a complex syndrome that encompasses a diverse group of pathophysiologies predisposed by different environmental and genetic factors. It is not clear to which extent the universal risk classification schemes can be applied to cohorts in individual pulmonary hypertension centers with differing environmental backgrounds, genetic pools, referral networks.Aims: To explore whether the recommended risk classification schemes could reliably be used for mortality prediction in an unselected pulmonary hypertension population of a tertiary pulmonary hypertension center.Study Design: A retrospective cross-sectional study.Methods: We retrospectively screened our hospital database for the patients with pulmonary hypertension between 2015 and 2022. The grouping of pulmonary hypertension was made as follows in accordance with current guidelines: Group 1: patients with pulmonary arterial hypertension, Group 2: patients with pulmonary hypertension associated with left heart disease, Group 3: patients with pulmonary hypertension associated with lung disease and/or hypoxia, and Group 4: patients with pulmonary hypertension associated with pulmonary artery obstructions. Then, we compared the predicted and observed mortality rates of four different risk classification schemes (REVEAL, REVEAL-Lite, ESC/ERS and COMPERA).Results: We identified 723 cases in our pulmonary hypertension database, the final study population consisted of 549 patients. The REVEAL, REVEAL-Lite and European Society of Cardiology/European Respiratory Society risk scores significantly underestimated the mortality risk in the low-risk stratum (5.3% vs. 1.9%, P < 0.001; 5.3% vs. 2.9%, P = 0.015 and 6.3% vs. 1%, P < 0.001, respectively) and overestimated the mortality risk in the high-risk stratum (11.8% vs. 25.8%, P < 0.001; 10.4% vs. 25.1%, P < 0.001 and 13.2% vs. 30%, P < 0.001, respectively). Although the COMPERA 4-strata model significantly underestimated the risk in low- and intermediate-low risk strata (4.9% vs. 1.5%, P < 0.001 and 6.8% vs. 2.8%, P = 0.001, respectively), it was accurate in intermediate-high and high-risk groups (10.1% vs. 8.7%, P = 0.592 and 15.6% vs. 22%, P = 0.384, respectively). The analyses limited only to group 1 pulmonary hypertension patients gave similar results.Conclusion: The established risk classification schemes may not perform as good as expected in unselected pulmonary hypertension populations and this may have important implications on management decisions. Tertiary centers should not uncritically accept the published risk prediction models and consider modifying current risk scores according to their own patient characteristics.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Pulmonary hypertension is a complex syndrome that encompasses a diverse group of pathophysiologies predisposed by different environmental and genetic factors. It is not clear to which extent the universal risk classification schemes can be applied to cohorts in individual pulmonary hypertension centers with differing environmental backgrounds, genetic pools, referral networks.<br /><strong>Aims:</strong> To explore whether the recommended risk classification schemes could reliably be used for mortality prediction in an unselected pulmonary hypertension population of a tertiary pulmonary hypertension center.<br /><strong>Study Design:</strong> A retrospective cross-sectional study.<br /><strong>Methods:</strong> We retrospectively screened our hospital database for the patients with pulmonary hypertension between 2015 and 2022. The grouping of pulmonary hypertension was made as follows in accordance with current guidelines: Group 1: patients with pulmonary arterial hypertension, Group 2: patients with pulmonary hypertension associated with left heart disease, Group 3: patients with pulmonary hypertension associated with lung disease and/or hypoxia, and Group 4: patients with pulmonary hypertension associated with pulmonary artery obstructions. Then, we compared the predicted and observed mortality rates of four different risk classification schemes (REVEAL, REVEAL-Lite, ESC/ERS and COMPERA).<br /><strong>Results:</strong> We identified 723 cases in our pulmonary hypertension database, the final study population consisted of 549 patients. The REVEAL, REVEAL-Lite and European Society of Cardiology/European Respiratory Society risk scores significantly underestimated the mortality risk in the low-risk stratum (5.3% vs. 1.9%, <em>P</em> &lt; 0.001; 5.3% vs. 2.9%, <em>P</em> = 0.015 and 6.3% vs. 1%, <em>P</em> &lt; 0.001, respectively) and overestimated the mortality risk in the high-risk stratum (11.8% vs. 25.8%, <em>P</em> &lt; 0.001; 10.4% vs. 25.1%, <em>P</em> &lt; 0.001 and 13.2% vs. 30%, <em>P</em> &lt; 0.001, respectively). Although the COMPERA 4-strata model significantly underestimated the risk in low- and intermediate-low risk strata (4.9% vs. 1.5%, <em>P</em> &lt; 0.001 and 6.8% vs. 2.8%, <em>P</em> = 0.001, respectively), it was accurate in intermediate-high and high-risk groups (10.1% vs. 8.7%, <em>P</em> = 0.592 and 15.6% vs. 22%, <em>P</em> = 0.384, respectively). The analyses limited only to group 1 pulmonary hypertension patients gave similar results.<br /><strong>Conclusion:</strong> The established risk classification schemes may not perform as good as expected in unselected pulmonary hypertension populations and this may have important implications on management decisions. Tertiary centers should not uncritically accept the published risk prediction models and consider modifying current risk scores according to their own patient characteristics.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Pulmonary hypertension is a complex syndrome that encompasses a diverse group of pathophysiologies predisposed by different environmental and genetic factors. It is not clear to which extent the universal risk classification schemes can be applied to cohorts in individual pulmonary hypertension centers with differing environmental backgrounds, genetic pools, referral networks.Aims: To explore whether the recommended risk classification schemes could reliably be used for mortality prediction in an unselected pulmonary hypertension population of a tertiary pulmonary hypertension center.Study Design: A retrospective cross-sectional study.Methods: We retrospectively screened our hospital database for the patients with pulmonary hypertension between 2015 and 2022. The grouping of pulmonary hypertension was made as follows in accordance with current guidelines: Group 1: patients with pulmonary arterial hypertension, Group 2: patients with pulmonary hypertension associated with left heart disease, Group 3: patients with pulmonary hypertension associated with lung disease and/or hypoxia, and Group 4: patients with pulmonary hypertension associated with pulmonary artery obstructions. Then, we compared the predicted and observed mortality rates of four different risk classification schemes (REVEAL, REVEAL-Lite, ESC/ERS and COMPERA).Results: We identified 723 cases in our pulmonary hypertension database, the final study population consisted of 549 patients. The REVEAL, REVEAL-Lite and European Society of Cardiology/European Respiratory Society risk scores significantly underestimated the mortality risk in the low-risk stratum (5.3% vs. 1.9%, P < 0.001; 5.3% vs. 2.9%, P = 0.015 and 6.3% vs. 1%, P < 0.001, respectively) and overestimated the mortality risk in the high-risk stratum (11.8% vs. 25.8%, P < 0.001; 10.4% vs. 25.1%, P < 0.001 and 13.2% vs. 30%, P < 0.001, respectively). Although the COMPERA 4-strata model significantly underestimated the risk in low- and intermediate-low risk strata (4.9% vs. 1.5%, P < 0.001 and 6.8% vs. 2.8%, P = 0.001, respectively), it was accurate in intermediate-high and high-risk groups (10.1% vs. 8.7%, P = 0.592 and 15.6% vs. 22%, P = 0.384, respectively). The analyses limited only to group 1 pulmonary hypertension patients gave similar results.Conclusion: The established risk classification schemes may not perform as good as expected in unselected pulmonary hypertension populations and this may have important implications on management decisions. Tertiary centers should not uncritically accept the published risk prediction models and consider modifying current risk scores according to their own patient characteristics.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-2-22",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "188-196",
+    "views": 7060,
+    "downloads": 3926,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2489",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2489",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2489",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2489",
+    "localPdfUrl": "js/data/pdfs/2489.pdf",
+    "pdfUrl": "js/data/pdfs/2489.pdf"
+  },
+  {
+    "id": 2482,
+    "type": "Original Article",
+    "title": "Allogeneic Hematopoietic Stem Cell Transplantation for Primary Myelofibrosis: A 20-year Experience in a Single Center",
+    "authors": [
+      {
+        "name": "Guldane Cengiz Seval",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sinem Civriz Bozdag",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Selami Kocak Toprak",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Meltem Kurt Yuksel",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pervin Topcuoglu",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Onder Arslan",
+        "affiliation": "",
+        "orcid": ""
+      },
+      {
+        "name": "Taner Demirer",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gunhan Gurman",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Meral Beksac",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Osman Ilhan",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Muhit Ozcan",
+        "affiliation": "Department of Hematology, Ankara University Faculty of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Allogeneic hematopoietic stem cell transplantation is a well-established approach for patients diagnosed with primary myelofibrosis and remains the only potentially curative treatment.Aims: To present the overall outcome of patients with myelofibrosis treated with allogeneic hematopoietic stem cell transplantation.Study Design: A retrospective cross-sectional studyMethods: This study is a retrospective analysis of 26 consecutive patients with primary myelofibrosis who underwent transplantation at our center between January 2002 and January 2022. Disease and transplant variables contributing to outcomes were analyzed.Results: The median age at the time of transplantation was 52.5 (range, 32-63) years and the median time from diagnosis to allogeneic hematopoietic stem cell transplantation was 25 (range, 3.1-156.8) months. Myeloablative conditioning and reduced-intensity conditioning regimens were used in 8 (30.8%) and 18 (69.2%) transplantations, respectively. Neutrophil and platelet engraftment was achieved in 23 patients at a median follow-up of 21.2 months (range, 12 days to 234.8 months). Primary graft failure occurred in 1 of 23 patients (4.3%). Neutrophil and platelet engraftment occurred at a median of 16 (range, 12-39) days and 20 (range, 11-78) days, respectively. Acute graft-versus-host disease was seen in 11 of 22 patients engrafted allografts, of which 7 (31.8%) were grade 3-4 acute graft-versus-host disease. Eight patients (36.4%) developed chronic graft-versus-host disease, and three cases were extensive. Four patients (19%) relapsed after a median of 5.5 months, and three patients received donor lymphocyte infusion. The 3-year overall survival rate of the entire study population was 46.2%. The median overall survival was not reached in the myeloablative conditioning group; however, it was 11.9 months in the reduced-intensity conditioning group (p =0.3). According to the donor graft source, the median overall survival was 0.73 months in mismatched unrelated graft recipients, 12 months in matched sibling donors, and not reached in matched unrelated graft recipients (p = 0.03). The 3-year progression-free survival rate of patients who survived > 100 days was 74.7%. The effect of JAK-2 status, graft source, conditioning regimen or dynamic international prognostic scoring system on progression-free survival was not statistically significant.Conclusion: Given the poor prognosis of non-transplant recipients and the lack of non-transplant curative approaches, our results support the consideration of allogeneic hematopoietic stem cell transplantation for eligible patients with primary myelofibrosis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Allogeneic hematopoietic stem cell transplantation is a well-established approach for patients diagnosed with primary myelofibrosis and remains the only potentially curative treatment.<br /><strong>Aims:</strong> To present the overall outcome of patients with myelofibrosis treated with allogeneic hematopoietic stem cell transplantation.<br /><strong>Study Design:</strong> A retrospective cross-sectional study<br /><strong>Methods:</strong> This study is a retrospective analysis of 26 consecutive patients with primary myelofibrosis who underwent transplantation at our center between January 2002 and January 2022. Disease and transplant variables contributing to outcomes were analyzed.<br /><strong>Results:</strong> The median age at the time of transplantation was 52.5 (range, 32-63) years and the median time from diagnosis to allogeneic hematopoietic stem cell transplantation was 25 (range, 3.1-156.8) months. Myeloablative conditioning and reduced-intensity conditioning regimens were used in 8 (30.8%) and 18 (69.2%) transplantations, respectively. Neutrophil and platelet engraftment was achieved in 23 patients at a median follow-up of 21.2 months (range, 12 days to 234.8 months). Primary graft failure occurred in 1 of 23 patients (4.3%). Neutrophil and platelet engraftment occurred at a median of 16 (range, 12-39) days and 20 (range, 11-78) days, respectively. Acute graft-versus-host disease was seen in 11 of 22 patients engrafted allografts, of which 7 (31.8%) were grade 3-4 acute graft-versus-host disease. Eight patients (36.4%) developed chronic graft-versus-host disease, and three cases were extensive. Four patients (19%) relapsed after a median of 5.5 months, and three patients received donor lymphocyte infusion. The 3-year overall survival rate of the entire study population was 46.2%. The median overall survival was not reached in the myeloablative conditioning group; however, it was 11.9 months in the reduced-intensity conditioning group (p =0.3). According to the donor graft source, the median overall survival was 0.73 months in mismatched unrelated graft recipients, 12 months in matched sibling donors, and not reached in matched unrelated graft recipients (p = 0.03). The 3-year progression-free survival rate of patients who survived &gt; 100 days was 74.7%. The effect of JAK-2 status, graft source, conditioning regimen or dynamic international prognostic scoring system on progression-free survival was not statistically significant.<br /><strong>Conclusion:</strong> Given the poor prognosis of non-transplant recipients and the lack of non-transplant curative approaches, our results support the consideration of allogeneic hematopoietic stem cell transplantation for eligible patients with primary myelofibrosis.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Allogeneic hematopoietic stem cell transplantation is a well-established approach for patients diagnosed with primary myelofibrosis and remains the only potentially curative treatment.Aims: To present the overall outcome of patients with myelofibrosis treated with allogeneic hematopoietic stem cell transplantation.Study Design: A retrospective cross-sectional studyMethods: This study is a retrospective analysis of 26 consecutive patients with primary myelofibrosis who underwent transplantation at our center between January 2002 and January 2022. Disease and transplant variables contributing to outcomes were analyzed.Results: The median age at the time of transplantation was 52.5 (range, 32-63) years and the median time from diagnosis to allogeneic hematopoietic stem cell transplantation was 25 (range, 3.1-156.8) months. Myeloablative conditioning and reduced-intensity conditioning regimens were used in 8 (30.8%) and 18 (69.2%) transplantations, respectively. Neutrophil and platelet engraftment was achieved in 23 patients at a median follow-up of 21.2 months (range, 12 days to 234.8 months). Primary graft failure occurred in 1 of 23 patients (4.3%). Neutrophil and platelet engraftment occurred at a median of 16 (range, 12-39) days and 20 (range, 11-78) days, respectively. Acute graft-versus-host disease was seen in 11 of 22 patients engrafted allografts, of which 7 (31.8%) were grade 3-4 acute graft-versus-host disease. Eight patients (36.4%) developed chronic graft-versus-host disease, and three cases were extensive. Four patients (19%) relapsed after a median of 5.5 months, and three patients received donor lymphocyte infusion. The 3-year overall survival rate of the entire study population was 46.2%. The median overall survival was not reached in the myeloablative conditioning group; however, it was 11.9 months in the reduced-intensity conditioning group (p =0.3). According to the donor graft source, the median overall survival was 0.73 months in mismatched unrelated graft recipients, 12 months in matched sibling donors, and not reached in matched unrelated graft recipients (p = 0.03). The 3-year progression-free survival rate of patients who survived > 100 days was 74.7%. The effect of JAK-2 status, graft source, conditioning regimen or dynamic international prognostic scoring system on progression-free survival was not statistically significant.Conclusion: Given the poor prognosis of non-transplant recipients and the lack of non-transplant curative approaches, our results support the consideration of allogeneic hematopoietic stem cell transplantation for eligible patients with primary myelofibrosis.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2022-2-32",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "197-204",
+    "views": 7281,
+    "downloads": 3138,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2482",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2482",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2482",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2482",
+    "localPdfUrl": "js/data/pdfs/2482.pdf",
+    "pdfUrl": "js/data/pdfs/2482.pdf"
+  },
+  {
+    "id": 2488,
+    "type": "Original Article",
+    "title": "Ubiquitin-specific protease 11 Aggravates Ischemia-reperfusion-induced Cardiomyocyte Pyroptosis and Injury by Promoting TRAF3 Deubiquitination",
+    "authors": [
+      {
+        "name": "Yunfei Zhang",
+        "affiliation": "Department of General Cardiology, The First Affiliated Hospital of Xinjiang Medical University, Urumqi, China",
+        "orcid": ""
+      },
+      {
+        "name": "Juledezi Hailati",
+        "affiliation": "Department of General Cardiology, The First Affiliated Hospital of Xinjiang Medical University, Urumqi, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiaoyun Ma",
+        "affiliation": "Centre of Cadre Health, The First Affiliated Hospital of Xinjiang Medical University, Urumqi, China",
+        "orcid": ""
+      },
+      {
+        "name": "Hasidaer Midilibieke",
+        "affiliation": "Department of General Cardiology, The First Affiliated Hospital of Xinjiang Medical University, Urumqi, China",
+        "orcid": ""
+      },
+      {
+        "name": "Zhiqiang Liu",
+        "affiliation": "Department of General Cardiology, The First Affiliated Hospital of Xinjiang Medical University, Urumqi, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: In myocardial ischemia-reperfusion injury, myocardial damage is aggravated when blood perfusion is restored in myocardial infarction. Ubiquitin-specific protease 11 (USP11), a deubiquitinating enzyme, could remove the ubiquitination of substrate proteins and regulate protein stability, thereby affecting multiple pathological processes.Aims: To investigate the potential function of USP11 in myocardial ischemia-reperfusion injury and its underlying mechanisms.Study Design: In vivo and in vitro experimental study.Methods: The ischemia-reperfusion rat model in vivo was evolved, wherein the left anterior descending coronary artery was ligated for 30 min, followed by ligature release for 120 min. Meanwhile, H9C2 cells were brought to hypoxia for 6 h and then reoxygenated for 18 h to establish a cell hypoxia-reoxygenation (H/R) injury in vitro. Then, the loss-of-function experiments of USP11 were performed. Triphenyltetrazolium chloride and hematoxylin and eosin staining were performed to observe myocardial injury. The MTT assay was utilized to detect H9C2 cell viability. Pyroptosis was analyzed by TUNEL staining and flow cytometry. Pyroptosis-related protein expression and TRAF3 were analyzed via Western blot. The content of inflammatory factors was examined by enzyme-linked immunoassay. Co-immunoprecipitation and ubiquitination assays were performed to analyze for USP11 interacting with TRAF3.Results: USP11 was upregulated in the ischemic heart tissue. Ischemia-reperfusion and H/R injuries increased USP11 expression. USP11 loss-of-function assays showed that USP11 knockdown alleviated ischemia-reperfusion- and H/R-induced myocardial cell damage, pyroptosis, pro-inflammatory factor secretion, and IKKβ/NF-κB pathway activation. In H9C2 cells, USP11 stabilized TRAF3 by deubiquitination. Furthermore, rescue experiments revealed that TRAF3 overexpression reversed the protection of silencing USP11 on H/R-induced H9C2 cell injury.Conclusion: This study confirmed that USP11 knockdown ameliorated myocardial ischemia-reperfusion injury by downregulating TRAF3, suggesting that USP11 silencing can be a novel target of myocardial infarction.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> In myocardial ischemia-reperfusion injury, myocardial damage is aggravated when blood perfusion is restored in myocardial infarction. Ubiquitin-specific protease 11 (USP11), a deubiquitinating enzyme, could remove the ubiquitination of substrate proteins and regulate protein stability, thereby affecting multiple pathological processes.<br /><strong>Aims:</strong> To investigate the potential function of USP11 in myocardial ischemia-reperfusion injury and its underlying mechanisms.<br /><strong>Study Design:</strong> In vivo and in vitro experimental study.<br /><strong>Methods:</strong> The ischemia-reperfusion rat model in vivo was evolved, wherein the left anterior descending coronary artery was ligated for 30 min, followed by ligature release for 120 min. Meanwhile, H9C2 cells were brought to hypoxia for 6 h and then reoxygenated for 18 h to establish a cell hypoxia-reoxygenation (H/R) injury in vitro. Then, the loss-of-function experiments of USP11 were performed. Triphenyltetrazolium chloride and hematoxylin and eosin staining were performed to observe myocardial injury. The MTT assay was utilized to detect H9C2 cell viability. Pyroptosis was analyzed by TUNEL staining and flow cytometry. Pyroptosis-related protein expression and TRAF3 were analyzed via Western blot. The content of inflammatory factors was examined by enzyme-linked immunoassay. Co-immunoprecipitation and ubiquitination assays were performed to analyze for USP11 interacting with TRAF3.<br /><strong>Results:</strong> USP11 was upregulated in the ischemic heart tissue. Ischemia-reperfusion and H/R injuries increased USP11 expression. USP11 loss-of-function assays showed that USP11 knockdown alleviated ischemia-reperfusion- and H/R-induced myocardial cell damage, pyroptosis, pro-inflammatory factor secretion, and IKK&beta;/NF-&kappa;B pathway activation. In H9C2 cells, USP11 stabilized TRAF3 by deubiquitination. Furthermore, rescue experiments revealed that TRAF3 overexpression reversed the protection of silencing USP11 on H/R-induced H9C2 cell injury.<br /><strong>Conclusion:</strong> This study confirmed that USP11 knockdown ameliorated myocardial ischemia-reperfusion injury by downregulating TRAF3, suggesting that USP11 silencing can be a novel target of myocardial infarction.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: In myocardial ischemia-reperfusion injury, myocardial damage is aggravated when blood perfusion is restored in myocardial infarction. Ubiquitin-specific protease 11 (USP11), a deubiquitinating enzyme, could remove the ubiquitination of substrate proteins and regulate protein stability, thereby affecting multiple pathological processes.Aims: To investigate the potential function of USP11 in myocardial ischemia-reperfusion injury and its underlying mechanisms.Study Design: In vivo and in vitro experimental study.Methods: The ischemia-reperfusion rat model in vivo was evolved, wherein the left anterior descending coronary artery was ligated for 30 min, followed by ligature release for 120 min. Meanwhile, H9C2 cells were brought to hypoxia for 6 h and then reoxygenated for 18 h to establish a cell hypoxia-reoxygenation (H/R) injury in vitro. Then, the loss-of-function experiments of USP11 were performed. Triphenyltetrazolium chloride and hematoxylin and eosin staining were performed to observe myocardial injury. The MTT assay was utilized to detect H9C2 cell viability. Pyroptosis was analyzed by TUNEL staining and flow cytometry. Pyroptosis-related protein expression and TRAF3 were analyzed via Western blot. The content of inflammatory factors was examined by enzyme-linked immunoassay. Co-immunoprecipitation and ubiquitination assays were performed to analyze for USP11 interacting with TRAF3.Results: USP11 was upregulated in the ischemic heart tissue. Ischemia-reperfusion and H/R injuries increased USP11 expression. USP11 loss-of-function assays showed that USP11 knockdown alleviated ischemia-reperfusion- and H/R-induced myocardial cell damage, pyroptosis, pro-inflammatory factor secretion, and IKKβ/NF-κB pathway activation. In H9C2 cells, USP11 stabilized TRAF3 by deubiquitination. Furthermore, rescue experiments revealed that TRAF3 overexpression reversed the protection of silencing USP11 on H/R-induced H9C2 cell injury.Conclusion: This study confirmed that USP11 knockdown ameliorated myocardial ischemia-reperfusion injury by downregulating TRAF3, suggesting that USP11 silencing can be a novel target of myocardial infarction.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2022-12-15",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "205-214",
+    "views": 7440,
+    "downloads": 5134,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2488",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2488",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2488",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2488",
+    "localPdfUrl": "js/data/pdfs/2488.pdf",
+    "pdfUrl": "js/data/pdfs/2488.pdf"
+  },
+  {
+    "id": 2496,
+    "type": "Special Communication / Health Policy",
+    "title": "A Digital Opportunity for Patients to Manage Their Health: Turkey National Personal Health Record System (The e-Nabız)",
+    "authors": [
+      {
+        "name": "Şuayıp Birinci",
+        "affiliation": "Digital Health, Public Health, Turkey Ministry of Health",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Health records changed over time in the countries, and also Türkiye passed from paper versions to personal health records (PHR) and put patients at the center of the system by allowing them to become the master of their health data.Aims: Presenting the current state of the e-Nabız application nationwide in Turkey, and to evaluate the benefits of patients’ online access to electronic health records and the system’s interoperability.Study Design: A descriptive observational studyMethods: In the Turkish PHR system (e-Nabız), services to patients to manage their health are categorized and analyzed within the scope of national digital health services. In addition, the data validation in the e-Nabız within itself has been systematically expressed.Results: The Turkish PHR system allows users to use 30 different services for treatment, prevention, health promotion, and health-related and interrelated areas. Moreover, some statistics regarding the categories specified in the e-Nabız system are included. Today, data is flowing from 28,608 system-integrated health facilities and 39 e-Nabız integrated public institutions. In addition, 4.5 billion transactions are done by people by 2023 and 220 million users are queried by physicians to reach patients’ labs and results. Plus, the e-Nabız is adopted by 82% of the Türkiye population.Conclusion: There is no universal model for the content of the PHR. Given its importance to the patient, the content evolved and will continue to grow over the years. With the advent of coronavirus disease 2019, the system is equipped with three new services. The importance of these services over time and in the future has been demonstrated with increasing momentum.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Health records changed over time in the countries, and also T&uuml;rkiye passed from paper versions to personal health records (PHR) and put patients at the center of the system by allowing them to become the master of their health data.<br /><strong>Aims:</strong> Presenting the current state of the e-Nabız application nationwide in Turkey, and to evaluate the benefits of patients&rsquo; online access to electronic health records and the system&rsquo;s interoperability.<br /><strong>Study Design:</strong> A descriptive observational study<br /><strong>Methods:</strong> In the Turkish PHR system (e-Nabız), services to patients to manage their health are categorized and analyzed within the scope of national digital health services.&nbsp; In addition, the data validation in the e-Nabız within itself has been systematically expressed.<br /><strong>Results:</strong> The Turkish PHR system allows users to use 30 different services for treatment, prevention, health promotion, and health-related and interrelated areas. Moreover, some statistics regarding the categories specified in the e-Nabız system are included. Today, data is flowing from 28,608 system-integrated health facilities and 39 e-Nabız integrated public institutions. In addition, 4.5 billion transactions are done by people by 2023 and 220 million users are queried by physicians to reach patients&rsquo; labs and results. Plus, the e-Nabız is adopted by 82% of the T&uuml;rkiye population.<br /><strong>Conclusion:</strong> There is no universal model for the content of the PHR. Given its importance to the patient, the content evolved and will continue to grow over the years. With the advent of coronavirus disease 2019, the system is equipped with three new services. The importance of these services over time and in the future has been demonstrated with increasing momentum.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Health records changed over time in the countries, and also Türkiye passed from paper versions to personal health records (PHR) and put patients at the center of the system by allowing them to become the master of their health data.Aims: Presenting the current state of the e-Nabız application nationwide in Turkey, and to evaluate the benefits of patients’ online access to electronic health records and the system’s interoperability.Study Design: A descriptive observational studyMethods: In the Turkish PHR system (e-Nabız), services to patients to manage their health are categorized and analyzed within the scope of national digital health services. In addition, the data validation in the e-Nabız within itself has been systematically expressed.Results: The Turkish PHR system allows users to use 30 different services for treatment, prevention, health promotion, and health-related and interrelated areas. Moreover, some statistics regarding the categories specified in the e-Nabız system are included. Today, data is flowing from 28,608 system-integrated health facilities and 39 e-Nabız integrated public institutions. In addition, 4.5 billion transactions are done by people by 2023 and 220 million users are queried by physicians to reach patients’ labs and results. Plus, the e-Nabız is adopted by 82% of the Türkiye population.Conclusion: There is no universal model for the content of the PHR. Given its importance to the patient, the content evolved and will continue to grow over the years. With the advent of coronavirus disease 2019, the system is equipped with three new services. The importance of these services over time and in the future has been demonstrated with increasing momentum.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-2-77",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "215-221",
+    "views": 14883,
+    "downloads": 16452,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2496",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2496",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2496",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2496",
+    "localPdfUrl": "js/data/pdfs/2496.pdf",
+    "pdfUrl": "js/data/pdfs/2496.pdf"
+  },
+  {
+    "id": 2486,
+    "type": "Clinical Image",
+    "title": "Why is Nerve Ultrasound Scan Necessary for Peripheral Nerve Lesions?",
+    "authors": [
+      {
+        "name": "Deniz Palamar",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuğçe Özekli Mısırlıoğlu",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Rana Terlemez",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Özçelik",
+        "affiliation": "Clinic of Hand and Upper Extremity Surgery, Gaziosmanpaşa Hospital, Yeni Yüzyıl University, Medical Faculty, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kenan Akgün",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "CASE 1 A 22-year-old man presented with an inability to extend his left-hand fingers that started 1 year earlier. He had no history of trauma. Neurological examination revealed weakness of the extensor muscles of his left finger (1/5). Previously, cervical magnetic resonance imaging (MRI), brachial plexus MRI, and electroneuromyography (ENMG) were performed.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-1-84",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "222-223",
+    "views": 5635,
+    "downloads": 2466,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2486",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2486",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2486",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2486",
+    "localPdfUrl": "js/data/pdfs/2486.pdf",
+    "pdfUrl": "js/data/pdfs/2486.pdf"
+  },
+  {
+    "id": 2485,
+    "type": "Clinical Image",
+    "title": "Non-coronary Aortic Cusp Rupture in a Child with Ventricular Septal Defect and Aortic Valve Prolapse",
+    "authors": [
+      {
+        "name": "Betül Çınar",
+        "affiliation": "Clinic of Pediatric Cardiology, University of Health Sciences Turkey, İstanbul Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Center and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatma Sevinç Şengül",
+        "affiliation": "Clinic of Pediatric Cardiology, University of Health Sciences Turkey, İstanbul Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Center and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pelin Ayyıldız",
+        "affiliation": "Clinic of Pediatric Cardiology, University of Health Sciences Turkey, İstanbul Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Center and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Alper Güzeltaş",
+        "affiliation": "Clinic of Pediatric Cardiology, University of Health Sciences Turkey, İstanbul Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Center and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sertaç Haydin",
+        "affiliation": "Clinic of Pediatric Cardiology, University of Health Sciences Turkey, İstanbul Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Center and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 12-year-old female patient with a large ventricular septal defect (VSD), aortic valve prolapse, and aortic regurgitation was referred to our clinic. She was asymptomatic at admission, which is why her parents delayed follow-up. Her weight and height percentiles were below the normal range (-4 SDS for weight and -3.5 SDS for height). She had a loud, continu",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-1-75",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "224-225",
+    "views": 5667,
+    "downloads": 2519,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2485",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2485",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2485",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2485",
+    "localPdfUrl": "js/data/pdfs/2485.pdf",
+    "pdfUrl": "js/data/pdfs/2485.pdf"
+  },
+  {
+    "id": 2495,
+    "type": "Clinical Image",
+    "title": "Total or Partial? Rare Cases of Partial Anomalous Pulmonary Venous Return: Three Pulmonary Veins Connected to the Coronary Sinus",
+    "authors": [
+      {
+        "name": "Fatma Sevinç Şengül",
+        "affiliation": "Clinic of Pediatric Cardiology, University of Health Sciences Turkey, İstanbul Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pelin Ayyıldız",
+        "affiliation": "Clinic of Pediatric Cardiology, University of Health Sciences Turkey, İstanbul Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aysel Türkvatan",
+        "affiliation": "Clinic of Radiology, University of Health Sciences Turkey, İstanbul Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Okan Yıldız",
+        "affiliation": "Clinic of Pediatric Cardiac Surgery, University of Health Sciences Turkey, İstanbul Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Alper Güzeltaş",
+        "affiliation": "Clinic of Pediatric Cardiology, University of Health Sciences Turkey, İstanbul Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Case 1 was a 7.5-month-old male patient weighing 7.3 kg, who had been hospitalized three times due to bronchiolitis/pneumonia. On physical examination, a 3/6 systolic ejection murmur was heard at the left upper sternal border, and his oxygen saturation (SpO2) was 98%. Transthoracic echocardiography (TTE) revealed a patent foramen ovale with left-to-right shu",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-2-65",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "226-227",
+    "views": 5329,
+    "downloads": 2612,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2495",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2495",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2495",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2495",
+    "localPdfUrl": "js/data/pdfs/2495.pdf",
+    "pdfUrl": "js/data/pdfs/2495.pdf"
+  },
+  {
+    "id": 2481,
+    "type": "Letter to the Editor",
+    "title": "Is There a Relationship Between Olfactory Dysfunction and Decreased Thromboembolic Events After the First Wave of the COVID-19 Pandemic?",
+    "authors": [
+      {
+        "name": "Ercan Akşit",
+        "affiliation": "Department of Cardiology, Çanakkale Onsekiz Mart University, Faculty of Medicine, Çanakkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Köder",
+        "affiliation": "Department of Otorhinolaryngology, Trakya University, Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, The Coronavirus disease-2019 (COVID-19) has caused a global pandemic.1 A recent study suggested that the prevalence of cardiomyocyte injury and microvascular thrombogenicity was lower in the second wave of the COVID-19 pandemic compared with the first wave.2 The importance of agents such as ticagrelor for reducing thromboembolic events in COVI",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-3-15",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "228",
+    "views": 5287,
+    "downloads": 2510,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2481",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2481",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2481",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2481",
+    "localPdfUrl": "js/data/pdfs/2481.pdf",
+    "pdfUrl": "js/data/pdfs/2481.pdf"
+  },
+  {
+    "id": 2487,
+    "type": "Letter to the Editor",
+    "title": "The Influence of Hemochromatosis Gene (HFE) Mutations on SARS-CoV- 2 Susceptibility and COVID-19 Severity",
+    "authors": [
+      {
+        "name": "Smiljana Ristić",
+        "affiliation": "Department of Medical Biology and Genetics, Faculty of Medicine, University of Rijeka, Rijeka, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Sandra Milić",
+        "affiliation": "Department of Gastroenterology, Clinical Hospital Centre Rijeka, Faculty of Medicine, University of Rijeka, Rijeka, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Tanja Tatalović",
+        "affiliation": "Department of Rheumatology and Clinical Immunology, Clinical Hospital Centre Rijeka, Faculty of Medicine, University of Rijeka, Rijeka, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Matea Bilobrk",
+        "affiliation": "Department of Epidemiology, Teaching Institute of Public Health of Primorje-Gorski Kotar County, Faculty of Health Studies, University of Rijeka, Rijeka, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Dobrica Rončević",
+        "affiliation": "Department of Epidemiology, Teaching Institute of Public Health of Primorje-Gorski Kotar County, Faculty of Health Studies, University of Rijeka, Rijeka, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Božena Ćurko-Cofek",
+        "affiliation": "Department of Physiology, Immunology and Pathophysiology, Faculty of Medicine, University of Rijeka, Rijeka, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Vesna Barac-Latas",
+        "affiliation": "Department of Physiology, Immunology and Pathophysiology, Faculty of Medicine, University of Rijeka, Rijeka, Croatia",
+        "orcid": ""
+      },
+      {
+        "name": "Nada Starčević Čizmarević",
+        "affiliation": "Department of Medical Biology and Genetics, Faculty of Medicine, University of Rijeka, Rijeka, Croatia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, Coronavirus disease-2019 (COVID-19) is an extremely complex disease wherein numerous genetic and epigenetic factors determine the variable phenotypic manifestations. Owing to the wide range of symptoms, ranging from an asymptomatic condition to a mild, severe, or critical disease state, host genetics have been hypothesized to influence suscept",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2023.2023-1-39",
+    "received": "",
+    "accepted": "",
+    "published": "2023-01-01",
+    "volume": 40,
+    "issue": "3",
+    "pages": "229-231",
+    "views": 6108,
+    "downloads": 2603,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1284",
+    "sourceArticleId": "2487",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2487",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2487",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2487",
+    "localPdfUrl": "js/data/pdfs/2487.pdf",
+    "pdfUrl": "js/data/pdfs/2487.pdf"
+  }
+]

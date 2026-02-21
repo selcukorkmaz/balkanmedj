@@ -1,0 +1,1046 @@
+[
+  {
+    "id": 1946,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1946",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1946",
+    "localPdfUrl": "js/data/pdfs/1946.pdf",
+    "pdfUrl": "js/data/pdfs/1946.pdf"
+  },
+  {
+    "id": 1060,
+    "type": "Original Article",
+    "title": "Effects Of Darbepoetin Alpha on Brain Tissue Oxidative Stress in Experimental Ethanol Administration",
+    "authors": [
+      {
+        "name": "PINAR SEYMEN",
+        "affiliation": "Department of Nephrology, Haydarpaşa Numune Training and Research Hospital, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Erman Aytaç",
+        "affiliation": "Departments of General Surgery, Cerrahpaşa Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "FERAY BÖLÜKBAŞI",
+        "affiliation": "Departments of Neurology, Cerrahpaşa Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "FATİH DEMİR",
+        "affiliation": "Departments of Physiology, Cerrahpaşa Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "HABİBE GENÇ",
+        "affiliation": "Departments of Biochemistry, Cerrahpaşa Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "HAFİZE UZUN",
+        "affiliation": "Departments of Biochemistry, Cerrahpaşa Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "TUNCAY ALTUĞ",
+        "affiliation": "Department of Medical Biology and Genetics, Medical Faculty of İstanbul Bilim University, all in İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "HAKKI OKTAY SEYMEN [[4]] </di",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: The hyperglycosylated erythropoietin analogue darbepoetin alpha (α) has longer half-life and higher in vivo activity. There is no data about the effects of darbepoetin-α on ethanol-induced oxidative stress. In this study, we investigated the effects of darbepoetin-α on brain tissue oxidant/antioxidant status and nitric oxide levels in experimental ethanol administration. Patients and Methods: Forty-four adult male Wistar albino rats were randomly divided into groups: salinetreated group (S) (n=10), saline and darbepoetintreated group (D) (10 μg/kg) (n=10), experimental ethanol-administered [2.5 g/kg (2.6 ml/kg) twice at 2-hr intervals] group (E) (n=12), ethanol-administered and darbepoetin-treated group (ED) (n=12). Results: Malondialdehyde (MDA) levels of ED group were significantly lower than E group (p<0.05). Glutathione (GSH) levels of ED group were significantly higher than E group (p<0.001). NO levels of ED group were significantly lower than E group (p<0.001). Conclusion: We have observed that darbepoetin-α decreases oxidants and increases antioxidants against ethanol-induced oxidative stress. Darbepoetin-α is protective in ethanol-induced organism via its antioxidant activity. Turkish Amaç: Eritropoetin analoğu darbepoetin alfa, yarı ömrü uzun ve in vivo yüksek aktiviteye sahip bir moleküldür. Alkolün etkili olduğu organizmada darbepoetinin etkisi henüz ortaya konulmamıştır. Bu çalışmada, deneysel etanol uygulamasında darbepoetin alfanın beyin dokusu oksidan/antioksidan denge ve nitrik oksit seviyesi üzerine etkilerini araştırdık. Hastalar ve Yöntemler: Kırk dört erişkin erkek Wistar Albino sıçan raslantısal olarak gruplara ayrıldı: %0.9 NaCl uygulanan grup (S) (n=10), %0.9 NaCl ve darbepoetin verilen grup (D) (10 μg /kg) (n=10), deneysel etanol uygulaması yapılan [2.5 g/kg (2.6 ml/kg) 2-saatlik aralıklar ile iki defa] grup (E) (n=12), etanol uygulanan ve darbepoetin verilen grup (ED) (n=12). Bulgular: ED grubu malondialdehit (MDA) değerleri E grubundan anlamlı olarak düşüktü (p<0.05). ED grubu glutatyon (GSH) değeri E grubundan anlamlı olarak yüksekti (p<0.001). ED grubu NO değerleri E grubundan anlamlı olarak düşüktü (p<0.001). Sonuç: Deneysel etanol uygulaması modelinde darbepoetin alfanın oksidanları düşürdüğünü, antioksidanları ise artırdığını gözlemledik. Darbepoetin alfa antioksidan aktivitesi ile alkol uygulanan organizmada koruyucu etkilere sahiptir.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: The hyperglycosylated erythropoietin analogue darbepoetin alpha (&alpha;) has longer half-life and higher in vivo activity. There is no data about the effects of darbepoetin-&alpha; on ethanol-induced oxidative stress. In this study, we investigated the effects of darbepoetin-&alpha; on brain tissue oxidant/antioxidant status and nitric oxide levels in experimental ethanol administration.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: Forty-four adult male Wistar albino rats were randomly divided into groups: salinetreated group (S) (n=10), saline and darbepoetintreated group (D) (10 &mu;g/kg) (n=10), experimental ethanol-administered [2.5 g/kg (2.6 ml/kg) twice at 2-hr intervals] group (E) (n=12), ethanol-administered and darbepoetin-treated group (ED) (n=12).</p>\r\n<p>\r\n\t<strong>Results</strong>: Malondialdehyde (MDA) levels of ED group were significantly lower than E group (p&lt;0.05). Glutathione (GSH) levels of ED group were significantly higher than E group (p&lt;0.001). NO levels of ED group were significantly lower than E group (p&lt;0.001).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: We have observed that darbepoetin-&alpha; decreases oxidants and increases antioxidants against ethanol-induced oxidative stress. Darbepoetin-&alpha; is protective in ethanol-induced organism via its antioxidant activity.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\t<strong>Ama&ccedil;</strong>: Eritropoetin analoğu darbepoetin alfa, yarı &ouml;mr&uuml; uzun ve in vivo y&uuml;ksek aktiviteye sahip bir molek&uuml;ld&uuml;r. Alkol&uuml;n etkili olduğu organizmada darbepoetinin etkisi hen&uuml;z ortaya konulmamıştır. Bu &ccedil;alışmada, deneysel etanol uygulamasında darbepoetin alfanın beyin dokusu oksidan/antioksidan denge ve nitrik oksit seviyesi &uuml;zerine etkilerini araştırdık.</p>\r\n<p>\r\n\t<strong>Hastalar ve Y&ouml;ntemler</strong>: Kırk d&ouml;rt erişkin erkek Wistar Albino sı&ccedil;an raslantısal olarak gruplara ayrıldı: %0.9 NaCl uygulanan grup (S) (n=10), %0.9 NaCl ve darbepoetin verilen grup (D) (10 &mu;g /kg) (n=10), deneysel etanol uygulaması yapılan [2.5 g/kg (2.6 ml/kg) 2-saatlik aralıklar ile iki defa] grup (E) (n=12), etanol uygulanan ve darbepoetin verilen grup (ED) (n=12).</p>\r\n<p>\r\n\t<strong>Bulgular</strong>: ED grubu malondialdehit (MDA) değerleri E grubundan anlamlı olarak d&uuml;ş&uuml;kt&uuml; (p&lt;0.05). ED grubu glutatyon (GSH) değeri E grubundan anlamlı olarak y&uuml;ksekti (p&lt;0.001). ED grubu NO değerleri E grubundan anlamlı olarak d&uuml;ş&uuml;kt&uuml; (p&lt;0.001).</p>\r\n<p>\r\n\t<strong>Sonu&ccedil;</strong>: Deneysel etanol uygulaması modelinde darbepoetin alfanın oksidanları d&uuml;ş&uuml;rd&uuml;ğ&uuml;n&uuml;, antioksidanları ise artırdığını g&ouml;zlemledik. Darbepoetin alfa antioksidan aktivitesi ile alkol uygulanan organizmada koruyucu etkilere sahiptir.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: The hyperglycosylated erythropoietin analogue darbepoetin alpha (α) has longer half-life and higher in vivo activity. There is no data about the effects of darbepoetin-α on ethanol-induced oxidative stress. In this study, we investigated the effects of darbepoetin-α on brain tissue oxidant/antioxidant status and nitric oxide levels in experimental ethanol administration. Patients and Methods: Forty-four adult male Wistar albino rats were randomly divided into groups: salinetreated group (S) (n=10), saline and darbepoetintreated group (D) (10 μg/kg) (n=10), experimental ethanol-administered [2.5 g/kg (2.6 ml/kg) twice at 2-hr intervals] group (E) (n=12), ethanol-administered and darbepoetin-treated group (ED) (n=12). Results: Malondialdehyde (MDA) levels of ED group were significantly lower than E group (p<0.05). Glutathione (GSH) levels of ED group were significantly higher than E group (p<0.001). NO levels of ED group were significantly lower than E group (p<0.001). Conclusion: We have observed that darbepoetin-α decreases oxidants and increases antioxidants against ethanol-induced oxidative stress. Darbepoetin-α is protective in ethanol-induced organism via its antioxidant activity. Turkish Amaç: Eritropoetin analoğu darbepoetin alfa, yarı ömrü uzun ve in vivo yüksek aktiviteye sahip bir moleküldür. Alkolün etkili olduğu organizmada darbepoetinin etkisi henüz ortaya konulmamıştır. Bu çalışmada, deneysel etanol uygulamasında darbepoetin alfanın beyin dokusu oksidan/antioksidan denge ve nitrik oksit seviyesi üzerine etkilerini araştırdık. Hastalar ve Yöntemler: Kırk dört erişkin erkek Wistar Albino sıçan raslantısal olarak gruplara ayrıldı: %0.9 NaCl uygulanan grup (S) (n=10), %0.9 NaCl ve darbepoetin verilen grup (D) (10 μg /kg) (n=10), deneysel etanol uygulaması yapılan [2.5 g/kg (2.6 ml/kg) 2-saatlik aralıklar ile iki defa] grup (E) (n=12), etanol uygulanan ve darbepoetin verilen grup (ED) (n=12). Bulgular: ED grubu malondialdehit (MDA) değerleri E grubundan anlamlı olarak düşüktü (p<0.05). ED grubu glutatyon (GSH) değeri E grubundan anlamlı olarak yüksekti (p<0.001). ED grubu NO değerleri E grubundan anlamlı olarak düşüktü (p<0.001). Sonuç: Deneysel etanol uygulaması modelinde darbepoetin alfanın oksidanları düşürdüğünü, antioksidanları ise artırdığını gözlemledik. Darbepoetin alfa antioksidan aktivitesi ile alkol uygulanan organizmada koruyucu etkilere sahiptir.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "95-99",
+    "views": 6624,
+    "downloads": 1995,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1060",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1060",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1060",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1060",
+    "localPdfUrl": "js/data/pdfs/1060.pdf",
+    "pdfUrl": "js/data/pdfs/1060.pdf"
+  },
+  {
+    "id": 1065,
+    "type": "Original Article",
+    "title": "Growth of Escherichia Coli in Atracurium, Rocuronium, Mivacurium, Cisatracurium, Pancuronium, and Vecuronium",
+    "authors": [
+      {
+        "name": "Dilek Memiş",
+        "affiliation": "Departments of Anesthesiology, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "MÜŞERREF OTKUN",
+        "affiliation": "Department of Microbiology, Medical Faculty of 19 Mart University, Çanakkale",
+        "orcid": ""
+      },
+      {
+        "name": "MERAL BAHAR",
+        "affiliation": "Departments of Anesthesiology, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Necdet Süt",
+        "affiliation": "Departments of Biostatistics, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: We studied in vivo growth of Escherichia coli in atracurium, rocuronium, mivacurium, cisatracurium, pancuronium, and vecuronium. Patients and Methods: The pathogen was exposed to atracurium, rocuronium, mivacurium, cisatracurium, pancuronium and vecuronium for 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, and 24 h at room temperature, respectively. Results: The mean colony counts of Escherichia coli after exposure to rocuronium was significantly lower than the counts after exposure to atracurium, mivacurium, cisatracurium, pancuronium and vecuronium (p=0.002, 0.000, 0.000, 0.001, and 0.002, respectively). No significant difference was found with respect to the mean colony counts with atracurium, mivacurium, cisatracurium, pancuronium and vecuronium (p<0.05). Conclusion: Rocuronium had more powerful antimicrobial effects than the other neuromuscular agents. Turkish Amaç: Biz çalışmamızda atrakuryum, rokuronyum, mivakuryum, sisatrakuryum, pankuronyum ve vekuronyumun Escherichia coli üremesi üzerine olan etkinliğini araştırdık. Hastalar ve Yöntemler: Patojen bakteri, atrakuryum, rokuronyum, mivakuryum, sisatrakuryum, pankuronyum ve vekuronyum ile 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, ve 24 saat oda sıcaklığında temas ettirildi. Bulgular: Escherichia coli ortalama koloni sayısı rokuronyumda istatiksel anlamlı olarak atrakuryum, mivakuryum, sisatrakuryum, pankuronyum ve vekuronyumdan daha düşük saptandı (sırasıyla p=0.002, 0.000, 0.000, 0.001, ve 0.002). Atrakuryum, mivakuryum, sisatrakuryum, pankuronyum ve vekuronyumda ortalama koloni sayısı açısından anlamlı fark saptanmadı (p<0.05). Sonuç: Rokuronyum, diğer nöromusküler kas gevşetici ajanlardan daha kuvvetli antimikrobiyal etki gösterdi.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: We studied in vivo growth of Escherichia coli in atracurium, rocuronium, mivacurium, cisatracurium, pancuronium, and vecuronium.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: The pathogen was exposed to atracurium, rocuronium, mivacurium, cisatracurium, pancuronium and vecuronium for 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, and 24 h at room temperature, respectively.</p>\r\n<p>\r\n\t<strong>Results</strong>: The mean colony counts of Escherichia coli after exposure to rocuronium was significantly lower than the counts after exposure to atracurium, mivacurium, cisatracurium, pancuronium and vecuronium (p=0.002, 0.000, 0.000, 0.001, and 0.002, respectively). No significant difference was found with respect to the mean colony counts with atracurium, mivacurium, cisatracurium, pancuronium and vecuronium (p&lt;0.05).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Rocuronium had more powerful antimicrobial effects than the other neuromuscular agents.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\t<strong>Ama&ccedil;</strong>: Biz &ccedil;alışmamızda atrakuryum, rokuronyum, mivakuryum, sisatrakuryum, pankuronyum ve vekuronyumun Escherichia coli &uuml;remesi &uuml;zerine olan etkinliğini araştırdık.</p>\r\n<p>\r\n\t<strong>Hastalar ve Y&ouml;ntemler</strong>: Patojen bakteri, atrakuryum, rokuronyum, mivakuryum, sisatrakuryum, pankuronyum ve vekuronyum ile 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, ve 24 saat oda sıcaklığında temas ettirildi.</p>\r\n<p>\r\n\t<strong>Bulgular</strong>: Escherichia coli ortalama koloni sayısı rokuronyumda istatiksel anlamlı olarak atrakuryum, mivakuryum, sisatrakuryum, pankuronyum ve vekuronyumdan daha d&uuml;ş&uuml;k saptandı (sırasıyla p=0.002, 0.000, 0.000, 0.001, ve 0.002). Atrakuryum, mivakuryum, sisatrakuryum, pankuronyum ve vekuronyumda ortalama koloni sayısı a&ccedil;ısından anlamlı fark saptanmadı (p&lt;0.05).</p>\r\n<p>\r\n\t<strong>Sonu&ccedil;</strong>: Rokuronyum, diğer n&ouml;romusk&uuml;ler kas gevşetici ajanlardan daha kuvvetli antimikrobiyal etki g&ouml;sterdi.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: We studied in vivo growth of Escherichia coli in atracurium, rocuronium, mivacurium, cisatracurium, pancuronium, and vecuronium. Patients and Methods: The pathogen was exposed to atracurium, rocuronium, mivacurium, cisatracurium, pancuronium and vecuronium for 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, and 24 h at room temperature, respectively. Results: The mean colony counts of Escherichia coli after exposure to rocuronium was significantly lower than the counts after exposure to atracurium, mivacurium, cisatracurium, pancuronium and vecuronium (p=0.002, 0.000, 0.000, 0.001, and 0.002, respectively). No significant difference was found with respect to the mean colony counts with atracurium, mivacurium, cisatracurium, pancuronium and vecuronium (p<0.05). Conclusion: Rocuronium had more powerful antimicrobial effects than the other neuromuscular agents. Turkish Amaç: Biz çalışmamızda atrakuryum, rokuronyum, mivakuryum, sisatrakuryum, pankuronyum ve vekuronyumun Escherichia coli üremesi üzerine olan etkinliğini araştırdık. Hastalar ve Yöntemler: Patojen bakteri, atrakuryum, rokuronyum, mivakuryum, sisatrakuryum, pankuronyum ve vekuronyum ile 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, ve 24 saat oda sıcaklığında temas ettirildi. Bulgular: Escherichia coli ortalama koloni sayısı rokuronyumda istatiksel anlamlı olarak atrakuryum, mivakuryum, sisatrakuryum, pankuronyum ve vekuronyumdan daha düşük saptandı (sırasıyla p=0.002, 0.000, 0.000, 0.001, ve 0.002). Atrakuryum, mivakuryum, sisatrakuryum, pankuronyum ve vekuronyumda ortalama koloni sayısı açısından anlamlı fark saptanmadı (p<0.05). Sonuç: Rokuronyum, diğer nöromusküler kas gevşetici ajanlardan daha kuvvetli antimikrobiyal etki gösterdi.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "100-104",
+    "views": 6381,
+    "downloads": 21,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1065",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1065",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1065",
+    "sourcePdfUrl": "",
+    "localPdfUrl": "",
+    "pdfUrl": ""
+  },
+  {
+    "id": 1069,
+    "type": "Original Article",
+    "title": "Levosimendan in Asphyxia-Induced Cardiac Arrest Model",
+    "authors": [
+      {
+        "name": "MURAT AKSUN",
+        "affiliation": "Departments of Anesthesia and Reanimation, İzmir Atatürk Training and Research Hospital, İzmir",
+        "orcid": ""
+      },
+      {
+        "name": "GÖKHAN İLHAN",
+        "affiliation": "Departments of Cardiovascular Surgery, İzmir Atatürk Training and Research Hospital, İzmir",
+        "orcid": ""
+      },
+      {
+        "name": "BİLGİN EMRECAN [[3]] </d",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: We hypothesized in this study that levosimendan could be used as a single agent in asphyxiarelated cardiac arrest resuscitation in experimental rabbit model. Patients and Methods: Fourteen New Zealand white rabbits were intubated with 3F intubation tube. Pancuronium bromide (0.2 mg/kg) was administered intravenously. The lungs were ventilated with tidal volume 8 ml/kg, frequency 38 /min; PEEP 1 cmH2O, FiO2 0.21. Cardiopulmonary resuscitation (CPR) was carried out after four minutes of cardiac arrest. Animals were randomized to either control or levosimendan groups. Baseline arterial blood gases, heart rates, systolic and diastolic arterial pressures, and post-resuscitation heart rates, systolic and diastolic arterial pressures, blood gas analysis and troponin I levels after 30 minutes of return of spontaneous circulation were recorded. Results: Baseline data was similar in the groups. There were five animals which responded to CPR in both groups. Blood gas analysis, heart rates in the 30th minute and CPR times of the animals were similar in the groups. Blood pressures were significantly higher in levosimendan- treated group (p<0.05). Myocardial injury demonstrated by troponin I levels was similar in the groups. Conclusion: Levosimendan alone may not be used as a resuscitation agent in asphyxia-induced cardiac arrest, but it has positive effects on maintenance of arterial pressures. Turkish Amaç: Bu çalışmada asfiksiye bağlı oluşan kardiyak arrestin deneysel tavşan modelinde resüsitasyonunda levosimendanın tek başına kullanılabileceği hipotezi öne sürülmüştür. Hastalar ve Yöntemler: On dört Yeni Zelanda türü beyaz tavşan 3F entübasyon tüpüyle entübe edildi. İntravenöz pankuronyum bromid (0.2 mg/kg) uygulandı. Akciğerler tidal volüm 8 ml/kg, frekans 38 /min; PEEP 1 cmH2O, FiO2 0.21 ile ventile edildi. Dört dakikalık kardiyak arresti takiben kardiyopulmoner resüsitasyona (KPR) başlandı. Hayvanlar kontrol ve levosimendan tedavi gruplarına randomize edildi. Arteriyel kan gazı, kalp hızı, sistolik ve diyastolik kan basınçları ve resüsitasyon sonrası spontan dolaşımın dönmesinden 30 dakika sonrası kalp hızı, sistolik ve diyastolik kan basınçları, arteriyel kan gazı ve troponin I düzeyleri ölçüldü. Bulgular: Baz değerler gruplarda benzerdi. Her iki grupta resüsitasyona cevap veren beş hayvan vardı. Arteriyel kan gazları, kalp hızları ve KPR süreleri iki grupta benzerdi. Kan basınçları levosimendan tedavisi uygulanan grupta belirgin olarak fazlaydı (p<0.05). Troponin I ile gösterilen miyokardiyal hasar her iki grupta benzerdi. Sonuç: Levosimendan asfiksiye bağlı oluşan kardiyak arrestin resüsitasyonunda tek başına kullanılamaz, ancak arteriyel basınçların idamesinde olumlu etkileri mevcuttur. <",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: We hypothesized in this study that levosimendan could be used as a single agent in asphyxiarelated cardiac arrest resuscitation in experimental rabbit model.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: Fourteen New Zealand white rabbits were intubated with 3F intubation tube. Pancuronium bromide (0.2 mg/kg) was administered intravenously. The lungs were ventilated with tidal volume 8 ml/kg, frequency 38 /min; PEEP 1 cmH2O, FiO2 0.21. Cardiopulmonary resuscitation (CPR) was carried out after four minutes of cardiac arrest. Animals were randomized to either control or levosimendan groups. Baseline arterial blood gases, heart rates, systolic and diastolic arterial pressures, and post-resuscitation heart rates, systolic and diastolic arterial pressures, blood gas analysis and troponin I levels after 30 minutes of return of spontaneous circulation were recorded.</p>\r\n<p>\r\n\t<strong>Results</strong>: Baseline data was similar in the groups. There were five animals which responded to CPR in both groups. Blood gas analysis, heart rates in the 30th minute and CPR times of the animals were similar in the groups. Blood pressures were significantly higher in levosimendan- treated group (p&lt;0.05). Myocardial injury demonstrated by troponin I levels was similar in the groups.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Levosimendan alone may not be used as a resuscitation agent in asphyxia-induced cardiac arrest, but it has positive effects on maintenance of arterial pressures.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\t<strong>Ama&ccedil;</strong>: Bu &ccedil;alışmada asfiksiye bağlı oluşan kardiyak arrestin deneysel tavşan modelinde res&uuml;sitasyonunda levosimendanın tek başına kullanılabileceği hipotezi &ouml;ne s&uuml;r&uuml;lm&uuml;şt&uuml;r.</p>\r\n<p>\r\n\t<strong>Hastalar ve Y&ouml;ntemler</strong>: On d&ouml;rt Yeni Zelanda t&uuml;r&uuml; beyaz tavşan 3F ent&uuml;basyon t&uuml;p&uuml;yle ent&uuml;be edildi. İntraven&ouml;z pankuronyum bromid (0.2 mg/kg) uygulandı. Akciğerler tidal vol&uuml;m 8 ml/kg, frekans 38 /min; PEEP 1 cmH2O, FiO2 0.21 ile ventile edildi. D&ouml;rt dakikalık kardiyak arresti takiben kardiyopulmoner res&uuml;sitasyona (KPR) başlandı. Hayvanlar kontrol ve levosimendan tedavi gruplarına randomize edildi. Arteriyel kan gazı, kalp hızı, sistolik ve diyastolik kan basın&ccedil;ları ve res&uuml;sitasyon sonrası spontan dolaşımın d&ouml;nmesinden 30 dakika sonrası kalp hızı, sistolik ve diyastolik kan basın&ccedil;ları, arteriyel kan gazı ve troponin I d&uuml;zeyleri &ouml;l&ccedil;&uuml;ld&uuml;.</p>\r\n<p>\r\n\t<strong>Bulgular</strong>: Baz değerler gruplarda benzerdi. Her iki grupta res&uuml;sitasyona cevap veren beş hayvan vardı. Arteriyel kan gazları, kalp hızları ve KPR s&uuml;releri iki grupta benzerdi. Kan basın&ccedil;ları levosimendan tedavisi uygulanan grupta belirgin olarak fazlaydı (p&lt;0.05). Troponin I ile g&ouml;sterilen miyokardiyal hasar her iki grupta benzerdi.</p>\r\n<p>\r\n\t<strong>Sonu&ccedil;</strong>: Levosimendan asfiksiye bağlı oluşan kardiyak arrestin res&uuml;sitasyonunda tek başına kullanılamaz, ancak arteriyel basın&ccedil;ların idamesinde olumlu etkileri mevcuttur.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>\n\t\t<",
+    "previewText": "Abstract Objectives: We hypothesized in this study that levosimendan could be used as a single agent in asphyxiarelated cardiac arrest resuscitation in experimental rabbit model. Patients and Methods: Fourteen New Zealand white rabbits were intubated with 3F intubation tube. Pancuronium bromide (0.2 mg/kg) was administered intravenously. The lungs were ventilated with tidal volume 8 ml/kg, frequency 38 /min; PEEP 1 cmH2O, FiO2 0.21. Cardiopulmonary resuscitation (CPR) was carried out after four minutes of cardiac arrest. Animals were randomized to either control or levosimendan groups. Baseline arterial blood gases, heart rates, systolic and diastolic arterial pressures, and post-resuscitation heart rates, systolic and diastolic arterial pressures, blood gas analysis and troponin I levels after 30 minutes of return of spontaneous circulation were recorded. Results: Baseline data was similar in the groups. There were five animals which responded to CPR in both groups. Blood gas analysis, heart rates in the 30th minute and CPR times of the animals were similar in the groups. Blood pressures were significantly higher in levosimendan- treated group (p<0.05). Myocardial injury demonstrated by troponin I levels was similar in the groups. Conclusion: Levosimendan alone may not be used as a resuscitation agent in asphyxia-induced cardiac arrest, but it has positive effects on maintenance of arterial pressures. Turkish Amaç: Bu çalışmada asfiksiye bağlı oluşan kardiyak arrestin deneysel tavşan modelinde resüsitasyonunda levosimendanın tek başına kullanılabileceği hipotezi öne sürülmüştür. Hastalar ve Yöntemler: On dört Yeni Zelanda türü beyaz tavşan 3F entübasyon tüpüyle entübe edildi. İntravenöz pankuronyum bromid (0.2 mg/kg) uygulandı. Akciğerler tidal volüm 8 ml/kg, frekans 38 /min; PEEP 1 cmH2O, FiO2 0.21 ile ventile edildi. Dört dakikalık kardiyak arresti takiben kardiyopulmoner resüsitasyona (KPR) başlandı. Hayvanlar kontrol ve levosimendan tedavi gruplarına randomize edildi. Arteriyel kan gazı, kalp hızı, sistolik ve diyastolik kan basınçları ve resüsitasyon sonrası spontan dolaşımın dönmesinden 30 dakika sonrası kalp hızı, sistolik ve diyastolik kan basınçları, arteriyel kan gazı ve troponin I düzeyleri ölçüldü. Bulgular: Baz değerler gruplarda benzerdi. Her iki grupta resüsitasyona cevap veren beş hayvan vardı. Arteriyel kan gazları, kalp hızları ve KPR süreleri iki grupta benzerdi. Kan basınçları levosimendan tedavisi uygulanan grupta belirgin olarak fazlaydı (p<0.05). Troponin I ile gösterilen miyokardiyal hasar her iki grupta benzerdi. Sonuç: Levosimendan asfiksiye bağlı oluşan kardiyak arrestin resüsitasyonunda tek başına kullanılamaz, ancak arteriyel basınçların idamesinde olumlu etkileri mevcuttur. <",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "105-108",
+    "views": 6322,
+    "downloads": 1996,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1069",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1069",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1069",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1069",
+    "localPdfUrl": "js/data/pdfs/1069.pdf",
+    "pdfUrl": "js/data/pdfs/1069.pdf"
+  },
+  {
+    "id": 1073,
+    "type": "Original Article",
+    "title": "An Investigation on the Feasibility of Neurotization of Posterior Division of Median Nerve with Brachialis Branch of Musculocutaneous Nerve: Cadaver Study",
+    "authors": [
+      {
+        "name": "Atakan AYDIN",
+        "affiliation": "Departments of Plastic and Reconstructive Surgery, İstanbul Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "HASAN UTKAN AYDIN",
+        "affiliation": "İstanbul Üniversitesi İstanbul Tıp Fakültesi Plastik, Rekonstrüktif ve Estetik Cerrahi Anabilim Dalı, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "NURETTİN OĞUZ [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: The problems encountered during recovery of traumatic brachial plexus injuries despite adequate treatment has important socioeconomic impacts. Neurotization of median nerve with brachialis muscle branch of musculocutaneous nerve has become popular recently. Whether it is superior to transfer of brachialis muscle to finger flexors is still unclear. Our research on human cadavers is aimed at examining the possibility of this nerve transfer by quantitatively describing the courses of related nerves. Patients and Methods: Ten upper extremities of 5 fresh cadavers (4 males, 1 female; mean age 46.3 years) were dissected and measurements were made on related nerves. Results: The neurotization of median nerve with brachialis muscle branch of musculocutaneous nerve is not possible in every case due to the distance between posterior fascicular group of median nerve and the brachialis branch, and the size discrepancy between these two nerves. Conclusion: Frequent variations of the anatomic structure originating from interracial differences decrease the applicability of the neurotization of median nerve with brachialis muscle branch of musculocutaneous nerve. Turkish Amaç: Travmatik brakiyal pleksus lezyonlarında el fonksiyonlarının tedaviye rağmen elde edilememesi önemli sosyoekonomik sorunlara yol açmaktadır. Medyan sinirin muskülokütan sinirin brakiyalise giden dalıyla nörotizasyonu son zamanlarda popülerlik kazanmış bir onarım yöntemidir. Bu yöntemin parmak fleksörlerine brakiyalis kasının transferine üstün olup olmadığı netlik kazanmamıştır. İnsan kadavralarında yürüttüğümüz çalışmamız transferi önerilen sinirlerde yapılacak ölçümlerle bu yöntemin olanaklılığını araştırmayı hedeflemektedir. Hastalar ve Yöntemler: Beş taze kadavra (4 erkek, 1 kadın; ort. yaş 46.3) üzerinde 10 üst ekstremite diseke edilmiş ve ilgili sinirler üzerinde ölçüm yapılmıştır. Bulgular: Medyan sinirin muskülokütan sinirin brakiyalise giden dalıyla nörotizasyonu her olguda olanaklı olamamaktadır. Bunun nedeni medyan sinirin posterior fasiküler grubu ve brakiyalis dalı arasındaki çap uyumsuzluğu ve aralarında direkt koaptasyona izin vermeyecek uzaklık olarak görülmektedir. Sonuç: Anatomik yapıda toplumlar arası farklılıklara bağlı olduğu düşünülen varyasyonlar medyan sinirin muskülokütan sinirin brakiyalis dalı ile nörotizasyonunun genel uygulanabilirliğini azaltmaktadır. <",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: The problems encountered during recovery of traumatic brachial plexus injuries despite adequate treatment has important socioeconomic impacts. Neurotization of median nerve with brachialis muscle branch of musculocutaneous nerve has become popular recently. Whether it is superior to transfer of brachialis muscle to finger flexors is still unclear. Our research on human cadavers is aimed at examining the possibility of this nerve transfer by quantitatively describing the courses of related nerves.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: Ten upper extremities of 5 fresh cadavers (4 males, 1 female; mean age 46.3 years) were dissected and measurements were made on related nerves.</p>\r\n<p>\r\n\t<strong>Results</strong>: The neurotization of median nerve with brachialis muscle branch of musculocutaneous nerve is not possible in every case due to the distance between posterior fascicular group of median nerve and the brachialis branch, and the size discrepancy between these two nerves.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Frequent variations of the anatomic structure originating from interracial differences decrease the applicability of the neurotization of median nerve with brachialis muscle branch of musculocutaneous nerve.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\t<strong>Ama&ccedil;</strong>: Travmatik brakiyal pleksus lezyonlarında el fonksiyonlarının tedaviye rağmen elde edilememesi &ouml;nemli sosyoekonomik sorunlara yol a&ccedil;maktadır. Medyan sinirin musk&uuml;lok&uuml;tan sinirin brakiyalise giden dalıyla n&ouml;rotizasyonu son zamanlarda pop&uuml;lerlik kazanmış bir onarım y&ouml;ntemidir. Bu y&ouml;ntemin parmak fleks&ouml;rlerine brakiyalis kasının transferine &uuml;st&uuml;n olup olmadığı netlik kazanmamıştır. İnsan kadavralarında y&uuml;r&uuml;tt&uuml;ğ&uuml;m&uuml;z &ccedil;alışmamız transferi &ouml;nerilen sinirlerde yapılacak &ouml;l&ccedil;&uuml;mlerle bu y&ouml;ntemin olanaklılığını araştırmayı hedeflemektedir.</p>\r\n<p>\r\n\t<strong>Hastalar ve Y&ouml;ntemler</strong>: Beş taze kadavra (4 erkek, 1 kadın; ort. yaş 46.3) &uuml;zerinde 10 &uuml;st ekstremite diseke edilmiş ve ilgili sinirler &uuml;zerinde &ouml;l&ccedil;&uuml;m yapılmıştır.</p>\r\n<p>\r\n\t<strong>Bulgular</strong>: Medyan sinirin musk&uuml;lok&uuml;tan sinirin brakiyalise giden dalıyla n&ouml;rotizasyonu her olguda olanaklı olamamaktadır. Bunun nedeni medyan sinirin posterior fasik&uuml;ler grubu ve brakiyalis dalı arasındaki &ccedil;ap uyumsuzluğu ve aralarında direkt koaptasyona izin vermeyecek uzaklık olarak g&ouml;r&uuml;lmektedir.</p>\r\n<p>\r\n\t<strong>Sonu&ccedil;</strong>: Anatomik yapıda toplumlar arası farklılıklara bağlı olduğu d&uuml;ş&uuml;n&uuml;len varyasyonlar medyan sinirin musk&uuml;lok&uuml;tan sinirin brakiyalis dalı ile n&ouml;rotizasyonunun genel uygulanabilirliğini azaltmaktadır.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>\n\t\t<",
+    "previewText": "Abstract Objectives: The problems encountered during recovery of traumatic brachial plexus injuries despite adequate treatment has important socioeconomic impacts. Neurotization of median nerve with brachialis muscle branch of musculocutaneous nerve has become popular recently. Whether it is superior to transfer of brachialis muscle to finger flexors is still unclear. Our research on human cadavers is aimed at examining the possibility of this nerve transfer by quantitatively describing the courses of related nerves. Patients and Methods: Ten upper extremities of 5 fresh cadavers (4 males, 1 female; mean age 46.3 years) were dissected and measurements were made on related nerves. Results: The neurotization of median nerve with brachialis muscle branch of musculocutaneous nerve is not possible in every case due to the distance between posterior fascicular group of median nerve and the brachialis branch, and the size discrepancy between these two nerves. Conclusion: Frequent variations of the anatomic structure originating from interracial differences decrease the applicability of the neurotization of median nerve with brachialis muscle branch of musculocutaneous nerve. Turkish Amaç: Travmatik brakiyal pleksus lezyonlarında el fonksiyonlarının tedaviye rağmen elde edilememesi önemli sosyoekonomik sorunlara yol açmaktadır. Medyan sinirin muskülokütan sinirin brakiyalise giden dalıyla nörotizasyonu son zamanlarda popülerlik kazanmış bir onarım yöntemidir. Bu yöntemin parmak fleksörlerine brakiyalis kasının transferine üstün olup olmadığı netlik kazanmamıştır. İnsan kadavralarında yürüttüğümüz çalışmamız transferi önerilen sinirlerde yapılacak ölçümlerle bu yöntemin olanaklılığını araştırmayı hedeflemektedir. Hastalar ve Yöntemler: Beş taze kadavra (4 erkek, 1 kadın; ort. yaş 46.3) üzerinde 10 üst ekstremite diseke edilmiş ve ilgili sinirler üzerinde ölçüm yapılmıştır. Bulgular: Medyan sinirin muskülokütan sinirin brakiyalise giden dalıyla nörotizasyonu her olguda olanaklı olamamaktadır. Bunun nedeni medyan sinirin posterior fasiküler grubu ve brakiyalis dalı arasındaki çap uyumsuzluğu ve aralarında direkt koaptasyona izin vermeyecek uzaklık olarak görülmektedir. Sonuç: Anatomik yapıda toplumlar arası farklılıklara bağlı olduğu düşünülen varyasyonlar medyan sinirin muskülokütan sinirin brakiyalis dalı ile nörotizasyonunun genel uygulanabilirliğini azaltmaktadır. <",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "109-114",
+    "views": 5974,
+    "downloads": 2017,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1073",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1073",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1073",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1073",
+    "localPdfUrl": "js/data/pdfs/1073.pdf",
+    "pdfUrl": "js/data/pdfs/1073.pdf"
+  },
+  {
+    "id": 1078,
+    "type": "Original Article",
+    "title": "Histopathological and Biochemical Examinations of the Effects of Bipolar Electrocauter and Quantum Energy Surgical Device Both of Which are Thermal Affected Surgical Devices on Rabbit Liver",
+    "authors": [
+      {
+        "name": "RAMAZAN KAYAPINAR",
+        "affiliation": "Vocational College of Health Services, Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "MUSTAFA YÖNTEM",
+        "affiliation": "Department of Biology, Science Faculty of Dumlupınar University, Kütahya",
+        "orcid": ""
+      },
+      {
+        "name": "CEM PERK",
+        "affiliation": "Department of Surgery, Veterinary Medicine Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "SEVİNÇ ÇELİK",
+        "affiliation": "Department of Biology, Science Faculty of Dumlupınar University, Kütahya",
+        "orcid": ""
+      },
+      {
+        "name": "GÜLARA HÜSEYİN",
+        "affiliation": "Departments of Pathology, Medicine Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "ŞENTÜRK ÇİFTÇİ",
+        "affiliation": "Departments of Biochemistry, Medicine Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "NESRİN TURAN",
+        "affiliation": "Departments of Biostatistics, Medicine Faculty of Trakya University, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: Quantum Energy Surgical Device (QESD) is a recent thermal working surgical device which works with the principle of tissue application of highly quantum-energized argon gas atoms that are transformed into plasma by employing kinetic energy. In this study, we aimed to examine the operation periods, hemostasis and histological changes on the cutting surface, and the free radicals that can be formed during this period in the partial hepatectomies performed with QESD and bipolar electrocautery (BEC). Patients and Methods: Partial hepatectomies were performed with BEC and with QESD on 10 rabbits each. Obtained materials during the operation (acute-term group) and 7 days after the operation (short-term group) were prepared for light microscopy, electron microscopy and measurements of free radicals. Results: In the operations with QESD, hemorrhage was found to be much less and the operation procedures were determined to be accomplished in a much shorter time in comparison with BEC. In the histopathological examinations, while various changes were determined on the cutting surfaces of both groups with regard to thermal trauma, the superiority of QESD drew attention regarding hemostasis activities, damage formed and amelioration periods. Free radicals were determined to be formed less in QESD operations. Conclusion: The conclusions indicate that QESD method is superior to BEC method with respect to total operation period, hemostasis efficiency and wound amelioration. It is revealed that the free radicals are within acceptable levels in both devices. Turkish Amaç: Quantum Energy Surgical Device (QESD) kinetik enerji verilerek plazma haline dönüştürülen yüksek kuantum enerjili argon gazı atomlarının dokulara uygulanması prensibi ile çalışan yeni bir termal cerrahi cihazdır. Bu çalışmada tavşan karaciğerinde QESD ve bipolar elektrokoter (BEC) ile yapılan kısmi hepatektomilerde toplam ameliyat süresi, hemostaz, kesit yüzeyindeki histolojik değişimler ve bu süreçte oluşabilecek serbest radikallerin incelenmesi amaçlandı. Hastalar ve Yöntemler: Onar tavşanda BEC ve QESD ile kısmi hepatektomi yapıldı. Ameliyat anında (akut grup) ve ameliyattan 7 gün sonrası (kısa süre grup) elde edilen materyaller ışık mikroskopisi ve elektron mikroskopisi için ve serbest radikallerin ölçümleri için hazırlandı. Bulgular: QESD ile yapılan uygulamalarda BEC'e kıyasla kanamanın çok daha az olduğu ve operatif prosedürlerin daha kısa sürede tamamlandığı saptanmıştır. Histopatolojik incelemelerde kesit yüzeylerinde her iki grupta da termal travmayla ilişkin farklı değişiklikler saptanmakla birlikte, hemostaz etkinliği yönünden ve oluşan hasar bakımından ve yara iyileşmesi bakımından QESD'in üstünlüğü ortaya çıkmıştır. Serbest radikallerin QESD'de daha az oluştuğu görülmüştür. Sonuç: Bu sonuçlar QESD'in operasyon süresi, hemostaz etkinliği ve yara iyileşmesi bakımından BEC'e kıyasla daha üstün olduğunu ortaya koymuştur. Serbest radikallerin her iki cihazda da kabul edilebilir düzeyde olduğu görülmüştür.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: Quantum Energy Surgical Device (QESD) is a recent thermal working surgical device which works with the principle of tissue application of highly quantum-energized argon gas atoms that are transformed into plasma by employing kinetic energy. In this study, we aimed to examine the operation periods, hemostasis and histological changes on the cutting surface, and the free radicals that can be formed during this period in the partial hepatectomies performed with QESD and bipolar electrocautery (BEC).</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: Partial hepatectomies were performed with BEC and with QESD on 10 rabbits each. Obtained materials during the operation (acute-term group) and 7 days after the operation (short-term group) were prepared for light microscopy, electron microscopy and measurements of free radicals.</p>\r\n<p>\r\n\t<strong>Results</strong>: In the operations with QESD, hemorrhage was found to be much less and the operation procedures were determined to be accomplished in a much shorter time in comparison with BEC. In the histopathological examinations, while various changes were determined on the cutting surfaces of both groups with regard to thermal trauma, the superiority of QESD drew attention regarding hemostasis activities, damage formed and amelioration periods. Free radicals were determined to be formed less in QESD operations.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The conclusions indicate that QESD method is superior to BEC method with respect to total operation period, hemostasis efficiency and wound amelioration. It is revealed that the free radicals are within acceptable levels in both devices.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\t<strong>Ama&ccedil;</strong>: Quantum Energy Surgical Device (QESD) kinetik enerji verilerek plazma haline d&ouml;n&uuml;şt&uuml;r&uuml;len y&uuml;ksek kuantum enerjili argon gazı atomlarının dokulara uygulanması prensibi ile &ccedil;alışan yeni bir termal cerrahi cihazdır. Bu &ccedil;alışmada tavşan karaciğerinde QESD ve bipolar elektrokoter (BEC) ile yapılan kısmi hepatektomilerde toplam ameliyat s&uuml;resi, hemostaz, kesit y&uuml;zeyindeki histolojik değişimler ve bu s&uuml;re&ccedil;te oluşabilecek serbest radikallerin incelenmesi ama&ccedil;landı.</p>\r\n<p>\r\n\t<strong>Hastalar ve Y&ouml;ntemler</strong>: Onar tavşanda BEC ve QESD ile kısmi hepatektomi yapıldı. Ameliyat anında (akut grup) ve ameliyattan 7 g&uuml;n sonrası (kısa s&uuml;re grup) elde edilen materyaller ışık mikroskopisi ve elektron mikroskopisi i&ccedil;in ve serbest radikallerin &ouml;l&ccedil;&uuml;mleri i&ccedil;in hazırlandı.</p>\r\n<p>\r\n\t<strong>Bulgular</strong>: QESD ile yapılan uygulamalarda BEC&#39;e kıyasla kanamanın &ccedil;ok daha az olduğu ve operatif prosed&uuml;rlerin daha kısa s&uuml;rede tamamlandığı saptanmıştır. Histopatolojik incelemelerde kesit y&uuml;zeylerinde her iki grupta da termal travmayla ilişkin farklı değişiklikler saptanmakla birlikte, hemostaz etkinliği y&ouml;n&uuml;nden ve oluşan hasar bakımından ve yara iyileşmesi bakımından QESD&#39;in &uuml;st&uuml;nl&uuml;ğ&uuml; ortaya &ccedil;ıkmıştır. Serbest radikallerin QESD&#39;de daha az oluştuğu g&ouml;r&uuml;lm&uuml;şt&uuml;r.</p>\r\n<p>\r\n\t<strong>Sonu&ccedil;</strong>: Bu sonu&ccedil;lar QESD&#39;in operasyon s&uuml;resi, hemostaz etkinliği ve yara iyileşmesi bakımından BEC&#39;e kıyasla daha &uuml;st&uuml;n olduğunu ortaya koymuştur. Serbest radikallerin her iki cihazda da kabul edilebilir d&uuml;zeyde olduğu g&ouml;r&uuml;lm&uuml;şt&uuml;r.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: Quantum Energy Surgical Device (QESD) is a recent thermal working surgical device which works with the principle of tissue application of highly quantum-energized argon gas atoms that are transformed into plasma by employing kinetic energy. In this study, we aimed to examine the operation periods, hemostasis and histological changes on the cutting surface, and the free radicals that can be formed during this period in the partial hepatectomies performed with QESD and bipolar electrocautery (BEC). Patients and Methods: Partial hepatectomies were performed with BEC and with QESD on 10 rabbits each. Obtained materials during the operation (acute-term group) and 7 days after the operation (short-term group) were prepared for light microscopy, electron microscopy and measurements of free radicals. Results: In the operations with QESD, hemorrhage was found to be much less and the operation procedures were determined to be accomplished in a much shorter time in comparison with BEC. In the histopathological examinations, while various changes were determined on the cutting surfaces of both groups with regard to thermal trauma, the superiority of QESD drew attention regarding hemostasis activities, damage formed and amelioration periods. Free radicals were determined to be formed less in QESD operations. Conclusion: The conclusions indicate that QESD method is superior to BEC method with respect to total operation period, hemostasis efficiency and wound amelioration. It is revealed that the free radicals are within acceptable levels in both devices. Turkish Amaç: Quantum Energy Surgical Device (QESD) kinetik enerji verilerek plazma haline dönüştürülen yüksek kuantum enerjili argon gazı atomlarının dokulara uygulanması prensibi ile çalışan yeni bir termal cerrahi cihazdır. Bu çalışmada tavşan karaciğerinde QESD ve bipolar elektrokoter (BEC) ile yapılan kısmi hepatektomilerde toplam ameliyat süresi, hemostaz, kesit yüzeyindeki histolojik değişimler ve bu süreçte oluşabilecek serbest radikallerin incelenmesi amaçlandı. Hastalar ve Yöntemler: Onar tavşanda BEC ve QESD ile kısmi hepatektomi yapıldı. Ameliyat anında (akut grup) ve ameliyattan 7 gün sonrası (kısa süre grup) elde edilen materyaller ışık mikroskopisi ve elektron mikroskopisi için ve serbest radikallerin ölçümleri için hazırlandı. Bulgular: QESD ile yapılan uygulamalarda BEC'e kıyasla kanamanın çok daha az olduğu ve operatif prosedürlerin daha kısa sürede tamamlandığı saptanmıştır. Histopatolojik incelemelerde kesit yüzeylerinde her iki grupta da termal travmayla ilişkin farklı değişiklikler saptanmakla birlikte, hemostaz etkinliği yönünden ve oluşan hasar bakımından ve yara iyileşmesi bakımından QESD'in üstünlüğü ortaya çıkmıştır. Serbest radikallerin QESD'de daha az oluştuğu görülmüştür. Sonuç: Bu sonuçlar QESD'in operasyon süresi, hemostaz etkinliği ve yara iyileşmesi bakımından BEC'e kıyasla daha üstün olduğunu ortaya koymuştur. Serbest radikallerin her iki cihazda da kabul edilebilir düzeyde olduğu görülmüştür.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "115-124",
+    "views": 6163,
+    "downloads": 2029,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1078",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1078",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1078",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1078",
+    "localPdfUrl": "js/data/pdfs/1078.pdf",
+    "pdfUrl": "js/data/pdfs/1078.pdf"
+  },
+  {
+    "id": 1085,
+    "type": "Original Article",
+    "title": "Intrathoracic Extrapulmonary Hydatid Cysts: Review of 33 Cases",
+    "authors": [
+      {
+        "name": "Mehmet DAKAK",
+        "affiliation": "Departments of Thoracic Surgery, Gülhane Military Medical School, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Orhan YÜCEL",
+        "affiliation": "Departments of Thoracic Surgery, Gülhane Military Medical School, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Hasan ÇAYLAK",
+        "affiliation": "Departments of Thoracic Surgery, Gülhane Military Medical School, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "ALPER GÖZÜBÜYÜK",
+        "affiliation": "Departments of Thoracic Surgery, Gülhane Military Medical School, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Ersin SAPMAZ",
+        "affiliation": "Departments of Thoracic Surgery, Gülhane Military Medical School, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Sezai ÇUBUK",
+        "affiliation": "Departments of Thoracic Surgery, Gülhane Military Medical School, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Sedat GÜRKÖK",
+        "affiliation": "Departments of Thoracic Surgery, Gülhane Military Medical School, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "MEHMET ALİ ŞAHİN",
+        "affiliation": "Departments of Cardiovascular Surgery, Gülhane Military Medical School, Ankara",
+        "orcid": ""
+      },
+      {
+        "name": "Onur GENÇ [[1]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: In this study, we aimed to present our clinical and surgical experience in intrathoracic extrapulmonary hydatid cysts, a complicated form of hydatid disease. Patients and Methods: The age, sex, history, symptoms, localization of hydatid cysts and surgical treatment methods, complication, hospitalization time, recurrence, morbidity and mortality were recorded for 33 patients (28 females, 5 males; mean age 26.9 years; range 22 to 64 years) who had intrathoracic extrapulmonary cysts. Results: The most common symptoms were cough and chest pain. The localization of the hydatid cysts were pleural space, chest wall, extrapleural region, mediastinum and diaphragm. The hydatid cysts were removed by the extirpation technique via thoracotomy in 29 patients and via sternotomy in four patients. The mean time of hospitalization was 7.2 days (3-17 days). The most common postoperative complication was pulmonary atelectasis. There was no mortality. Conclusion: It should be considered that hydatid cysts may occur in many different sites as well as intrathoracic but extrapulmonary. Turkish Amaç: Bu çalışmada amacımız kist hidatiklerin komplike bir formu olan intratorasik ekstrapulmoner kist hidatiklerle ilgili klinik ve cerrahi tecrübelerimizi sunmaktır. Hastalar ve Yöntemler: İntratorasik ekstrapulmoner yerleşimli hidatik kistli 33 hastanın (28 kadın, 5 erkek; ort. yaş 26.9; dağılım 22-64) yaş, cinsiyet, semptom, kistlerin yerleşimi ve uygulanan cerrahi yöntem, komplikasyon, hastanede kalış süresi, rekürrens olup olmadığı, morbidite ve mortalite ile ilgili verileri kaydedildi. Bulgular: En sık görülen semptomlar öksürük ve göğüs ağrısıydı. Hidatik kistlerin yerleşim yerleri plevral boşluk, göğüs duvarı, ekstraplevral bölge, mediasten ve diafragmaydı. Hidatik kistler ekstirpasyon tekniği ile 29 hastada torakatomi aracılığıyla, dört hastada ise sternotomi aracılığıyla çıkarıldı. Ortalama hastanede kalış süresi 7.2 gündü (3-17 gün). En sık izlenen ameliyat sonrası komplikasyon pulmoner atelektaziydi. Mortalite izlenmedi. Sonuç: Hidatik kistlerin intratorasik ancak ekstrapulmoner gibi birçok farklı bölgede oluşabileceği akılda bulundurulmalıdır. <",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: In this study, we aimed to present our clinical and surgical experience in intrathoracic extrapulmonary hydatid cysts, a complicated form of hydatid disease.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: The age, sex, history, symptoms, localization of hydatid cysts and surgical treatment methods, complication, hospitalization time, recurrence, morbidity and mortality were recorded for 33 patients (28 females, 5 males; mean age 26.9 years; range 22 to 64 years) who had intrathoracic extrapulmonary cysts.</p>\r\n<p>\r\n\t<strong>Results</strong>: The most common symptoms were cough and chest pain. The localization of the hydatid cysts were pleural space, chest wall, extrapleural region, mediastinum and diaphragm. The hydatid cysts were removed by the extirpation technique via thoracotomy in 29 patients and via sternotomy in four patients. The mean time of hospitalization was 7.2 days (3-17 days). The most common postoperative complication was pulmonary atelectasis. There was no mortality.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: It should be considered that hydatid cysts may occur in many different sites as well as intrathoracic but extrapulmonary.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\t<strong>Ama&ccedil;</strong>: Bu &ccedil;alışmada amacımız kist hidatiklerin komplike bir formu olan intratorasik ekstrapulmoner kist hidatiklerle ilgili klinik ve cerrahi tecr&uuml;belerimizi sunmaktır.</p>\r\n<p>\r\n\t<strong>Hastalar ve Y&ouml;ntemler</strong>: İntratorasik ekstrapulmoner yerleşimli hidatik kistli 33 hastanın (28 kadın, 5 erkek; ort. yaş 26.9; dağılım 22-64) yaş, cinsiyet, semptom, kistlerin yerleşimi ve uygulanan cerrahi y&ouml;ntem, komplikasyon, hastanede kalış s&uuml;resi, rek&uuml;rrens olup olmadığı, morbidite ve mortalite ile ilgili verileri kaydedildi.</p>\r\n<p>\r\n\t<strong>Bulgular</strong>: En sık g&ouml;r&uuml;len semptomlar &ouml;ks&uuml;r&uuml;k ve g&ouml;ğ&uuml;s ağrısıydı. Hidatik kistlerin yerleşim yerleri plevral boşluk, g&ouml;ğ&uuml;s duvarı, ekstraplevral b&ouml;lge, mediasten ve diafragmaydı. Hidatik kistler ekstirpasyon tekniği ile 29 hastada torakatomi aracılığıyla, d&ouml;rt hastada ise sternotomi aracılığıyla &ccedil;ıkarıldı. Ortalama hastanede kalış s&uuml;resi 7.2 g&uuml;nd&uuml; (3-17 g&uuml;n). En sık izlenen ameliyat sonrası komplikasyon pulmoner atelektaziydi. Mortalite izlenmedi.</p>\r\n<p>\r\n\t<strong>Sonu&ccedil;</strong>: Hidatik kistlerin intratorasik ancak ekstrapulmoner gibi bir&ccedil;ok farklı b&ouml;lgede oluşabileceği akılda bulundurulmalıdır.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>\n\t\t<",
+    "previewText": "Abstract Objectives: In this study, we aimed to present our clinical and surgical experience in intrathoracic extrapulmonary hydatid cysts, a complicated form of hydatid disease. Patients and Methods: The age, sex, history, symptoms, localization of hydatid cysts and surgical treatment methods, complication, hospitalization time, recurrence, morbidity and mortality were recorded for 33 patients (28 females, 5 males; mean age 26.9 years; range 22 to 64 years) who had intrathoracic extrapulmonary cysts. Results: The most common symptoms were cough and chest pain. The localization of the hydatid cysts were pleural space, chest wall, extrapleural region, mediastinum and diaphragm. The hydatid cysts were removed by the extirpation technique via thoracotomy in 29 patients and via sternotomy in four patients. The mean time of hospitalization was 7.2 days (3-17 days). The most common postoperative complication was pulmonary atelectasis. There was no mortality. Conclusion: It should be considered that hydatid cysts may occur in many different sites as well as intrathoracic but extrapulmonary. Turkish Amaç: Bu çalışmada amacımız kist hidatiklerin komplike bir formu olan intratorasik ekstrapulmoner kist hidatiklerle ilgili klinik ve cerrahi tecrübelerimizi sunmaktır. Hastalar ve Yöntemler: İntratorasik ekstrapulmoner yerleşimli hidatik kistli 33 hastanın (28 kadın, 5 erkek; ort. yaş 26.9; dağılım 22-64) yaş, cinsiyet, semptom, kistlerin yerleşimi ve uygulanan cerrahi yöntem, komplikasyon, hastanede kalış süresi, rekürrens olup olmadığı, morbidite ve mortalite ile ilgili verileri kaydedildi. Bulgular: En sık görülen semptomlar öksürük ve göğüs ağrısıydı. Hidatik kistlerin yerleşim yerleri plevral boşluk, göğüs duvarı, ekstraplevral bölge, mediasten ve diafragmaydı. Hidatik kistler ekstirpasyon tekniği ile 29 hastada torakatomi aracılığıyla, dört hastada ise sternotomi aracılığıyla çıkarıldı. Ortalama hastanede kalış süresi 7.2 gündü (3-17 gün). En sık izlenen ameliyat sonrası komplikasyon pulmoner atelektaziydi. Mortalite izlenmedi. Sonuç: Hidatik kistlerin intratorasik ancak ekstrapulmoner gibi birçok farklı bölgede oluşabileceği akılda bulundurulmalıdır. <",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "125-129",
+    "views": 6255,
+    "downloads": 1920,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1085",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1085",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1085",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1085",
+    "localPdfUrl": "js/data/pdfs/1085.pdf",
+    "pdfUrl": "js/data/pdfs/1085.pdf"
+  },
+  {
+    "id": 1089,
+    "type": "Original Article",
+    "title": "Reconstruction of the Chest Wall Defects with Mammary Dermoglandular Advancement Flaps in Female Complicated Cases",
+    "authors": [
+      {
+        "name": "Atakan AYDIN",
+        "affiliation": "Departments of Plastic and Reconstructive Surgery, İstanbul Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "ERDEM GÜVEN",
+        "affiliation": "Departments of Plastic and Reconstructive Surgery, İstanbul Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Barış KEKLİK",
+        "affiliation": "Departments of Plastic and Reconstructive Surgery, İstanbul Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Karaca BAŞARAN",
+        "affiliation": "Departments of Plastic and Reconstructive Surgery, İstanbul Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "BERKER ÖZKAN [[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: There are several myocutaneous flaps used for chest wall reconstruction. However, in some cases, usage of these flaps is not suitable. If the patient is female, we aimed to show that use of the breast tissue while saving its lateral and medial pedicles is an option for the reconstruction. Patients and Methods: Our study included four female patients who presented with recurrence of cancer (50-year-old with malign thymoma, 60-year-old with left lung cancer, 41-year-old with chondrosarcoma, and 49-year-old with a history of intraductal carcinoma). Mammary tissue can be elevated either to its lateral or medial pedicles and used as an advancement flap. Results: Breast tissue was used for the reconstruction as an advancement flap on either its lateral or medial pedicles on all patients. In the follow-up of the patients, there was no circulatory problem of the flaps or necrosis. The first three patients have died due to their primary diseases. The fourth patient is being followed up by the oncology department with no local recurrence yet. Conclusion: In selected female patients, breast tissue is a good choice for reconstruction due to its rich blood supply and easy accessibility. Turkish Amaç: Toraks duvarı defektlerinin rekonstrüksiyonunda miyokütan flepler kullanılmaktadır. Fakat bazı hastalarda bu fleplerin kullanımı uygun olmayabilir. Eğer hasta bayansa, meme dokusunun lateral veya medial pedikülleri korunarak ilerletme flebi şeklinde rekonstrüksiyon amaçlı kullanılabileceğini göstermek amacındayız. Hastalar ve Yöntemler: Çalışmamıza göğüs cerrahisine kanser nüksü nedeniyle başvurmuş dört kadın hasta dahil edildi (50 yaşında malin timoma, 60 yaşında sol akciğer kanseri, 41 yaşında kondrosarkom, 49 yaşında intraduktal karsinom nüksü). Meme dokusu lateral veya medial pediküllerine baze ilerletme flebi olarak kullanılabilmektedir. Bulgular: Tüm hastalarda rekonstrüksiyon meme dokusunun medial veya lateral pediküllerine baze ilerletme flebi şeklinde kullanımıyla yapılmıştır. Takiplerinde flep dolaşımıyla ilgili bir soruna veya nekroza rastlanmamıştır. İlk üç hasta primer hastalıkları nedeniyle kaybedilmiştir, dördüncü hasta onkoloji tarafından takiptedir ve lokal nüks yoktur. Sonuç: Seçilmiş kadın olgularda zengin kanlanması ve kolay ulaşılabilir olması nedeniyle meme dokusu rekonstrüksiyon için iyi bir seçenek olabilmektedir. <",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: There are several myocutaneous flaps used for chest wall reconstruction. However, in some cases, usage of these flaps is not suitable. If the patient is female, we aimed to show that use of the breast tissue while saving its lateral and medial pedicles is an option for the reconstruction.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: Our study included four female patients who presented with recurrence of cancer (50-year-old with malign thymoma, 60-year-old with left lung cancer, 41-year-old with chondrosarcoma, and 49-year-old with a history of intraductal carcinoma). Mammary tissue can be elevated either to its lateral or medial pedicles and used as an advancement flap.</p>\r\n<p>\r\n\t<strong>Results</strong>: Breast tissue was used for the reconstruction as an advancement flap on either its lateral or medial pedicles on all patients. In the follow-up of the patients, there was no circulatory problem of the flaps or necrosis. The first three patients have died due to their primary diseases. The fourth patient is being followed up by the oncology department with no local recurrence yet.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: In selected female patients, breast tissue is a good choice for reconstruction due to its rich blood supply and easy accessibility.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\t<strong>Ama&ccedil;</strong>: Toraks duvarı defektlerinin rekonstr&uuml;ksiyonunda miyok&uuml;tan flepler kullanılmaktadır. Fakat bazı hastalarda bu fleplerin kullanımı uygun olmayabilir. Eğer hasta bayansa, meme dokusunun lateral veya medial pedik&uuml;lleri korunarak ilerletme flebi şeklinde rekonstr&uuml;ksiyon ama&ccedil;lı kullanılabileceğini g&ouml;stermek amacındayız.</p>\r\n<p>\r\n\t<strong>Hastalar ve Y&ouml;ntemler</strong>: &Ccedil;alışmamıza g&ouml;ğ&uuml;s cerrahisine kanser n&uuml;ks&uuml; nedeniyle başvurmuş d&ouml;rt kadın hasta dahil edildi (50 yaşında malin timoma, 60 yaşında sol akciğer kanseri, 41 yaşında kondrosarkom, 49 yaşında intraduktal karsinom n&uuml;ks&uuml;). Meme dokusu lateral veya medial pedik&uuml;llerine baze ilerletme flebi olarak kullanılabilmektedir.</p>\r\n<p>\r\n\t<strong>Bulgular</strong>: T&uuml;m hastalarda rekonstr&uuml;ksiyon meme dokusunun medial veya lateral pedik&uuml;llerine baze ilerletme flebi şeklinde kullanımıyla yapılmıştır. Takiplerinde flep dolaşımıyla ilgili bir soruna veya nekroza rastlanmamıştır. İlk &uuml;&ccedil; hasta primer hastalıkları nedeniyle kaybedilmiştir, d&ouml;rd&uuml;nc&uuml; hasta onkoloji tarafından takiptedir ve lokal n&uuml;ks yoktur.</p>\r\n<p>\r\n\t<strong>Sonu&ccedil;</strong>: Se&ccedil;ilmiş kadın olgularda zengin kanlanması ve kolay ulaşılabilir olması nedeniyle meme dokusu rekonstr&uuml;ksiyon i&ccedil;in iyi bir se&ccedil;enek olabilmektedir.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>\n\t\t<",
+    "previewText": "Abstract Objectives: There are several myocutaneous flaps used for chest wall reconstruction. However, in some cases, usage of these flaps is not suitable. If the patient is female, we aimed to show that use of the breast tissue while saving its lateral and medial pedicles is an option for the reconstruction. Patients and Methods: Our study included four female patients who presented with recurrence of cancer (50-year-old with malign thymoma, 60-year-old with left lung cancer, 41-year-old with chondrosarcoma, and 49-year-old with a history of intraductal carcinoma). Mammary tissue can be elevated either to its lateral or medial pedicles and used as an advancement flap. Results: Breast tissue was used for the reconstruction as an advancement flap on either its lateral or medial pedicles on all patients. In the follow-up of the patients, there was no circulatory problem of the flaps or necrosis. The first three patients have died due to their primary diseases. The fourth patient is being followed up by the oncology department with no local recurrence yet. Conclusion: In selected female patients, breast tissue is a good choice for reconstruction due to its rich blood supply and easy accessibility. Turkish Amaç: Toraks duvarı defektlerinin rekonstrüksiyonunda miyokütan flepler kullanılmaktadır. Fakat bazı hastalarda bu fleplerin kullanımı uygun olmayabilir. Eğer hasta bayansa, meme dokusunun lateral veya medial pedikülleri korunarak ilerletme flebi şeklinde rekonstrüksiyon amaçlı kullanılabileceğini göstermek amacındayız. Hastalar ve Yöntemler: Çalışmamıza göğüs cerrahisine kanser nüksü nedeniyle başvurmuş dört kadın hasta dahil edildi (50 yaşında malin timoma, 60 yaşında sol akciğer kanseri, 41 yaşında kondrosarkom, 49 yaşında intraduktal karsinom nüksü). Meme dokusu lateral veya medial pediküllerine baze ilerletme flebi olarak kullanılabilmektedir. Bulgular: Tüm hastalarda rekonstrüksiyon meme dokusunun medial veya lateral pediküllerine baze ilerletme flebi şeklinde kullanımıyla yapılmıştır. Takiplerinde flep dolaşımıyla ilgili bir soruna veya nekroza rastlanmamıştır. İlk üç hasta primer hastalıkları nedeniyle kaybedilmiştir, dördüncü hasta onkoloji tarafından takiptedir ve lokal nüks yoktur. Sonuç: Seçilmiş kadın olgularda zengin kanlanması ve kolay ulaşılabilir olması nedeniyle meme dokusu rekonstrüksiyon için iyi bir seçenek olabilmektedir. <",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "130-133",
+    "views": 6037,
+    "downloads": 1872,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1089",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1089",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1089",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1089",
+    "localPdfUrl": "js/data/pdfs/1089.pdf",
+    "pdfUrl": "js/data/pdfs/1089.pdf"
+  },
+  {
+    "id": 1131,
+    "type": "Original Article",
+    "title": "How Reliable is the Safe Zone of Hardinge Approach for Superior Gluteal Nerve?",
+    "authors": [
+      {
+        "name": "Murat BÜLBÜL",
+        "affiliation": "Bezm-i Alem Valide Sultan Vakıf Gureba Eğitim ve Araştırma Hastanesi Ortopedi ve Travmatoloji Kliniği, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Semih AYANOĞLU",
+        "affiliation": "Bezm-i Alem Valide Sultan Vakıf Gureba Eğitim ve Araştırma Hastanesi Ortopedi ve Travmatoloji Kliniği, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Kahraman ÖZTÜRK",
+        "affiliation": "Department of Orthopedics and Traumatology, Vakıf Gureba Training and Research Hospital, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "YUNUS İMREN",
+        "affiliation": "Bezm-i Alem Valide Sultan Vakıf Gureba Eğitim ve Araştırma Hastanesi Ortopedi ve Travmatoloji Kliniği, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "CEM ESENYEL",
+        "affiliation": "Department of Orthopedics and Traumatology, Vakıf Gureba Training and Research Hospital, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "RIDVAN YEŞİLTEPE",
+        "affiliation": "Department of Orthopedics and Traumatology, Vakıf Gureba Training and Research Hospital, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "HAKAM GÜRBÜZ [[2]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: Anterolateral Hardinge approach is one of the most common approaches used for total hip arthroplasty. Superior gluteal nerve is the main motor nerve of abductor mechanism of gluteus medius and tensor fascia lata muscles, where the injury to this nerve manifests itself as Trendelenburg's sign. In order to prevent the occurrence of this sign, a concept was developed called as “safe zone”, where no superior gluteal nerve exists. Our aim was to evaluate the reliability of the concept of safe zone as previously described by many authors in Hardinge approach. Patients and Methods: Nineteen hips of 10 fresh cadavers were evaluated in this study. We measured the distance between 1/3 anterior of greater trochanter of femur and superior gluteal nerve. Results: We detected the distance between 1/3 anterior of greater trochanter of femur and superior gluteal nerve to be 4.4 cm. The mean value of distance we observed in our study was smaller than that reported in literature by various authors. Conclusion: We have detected that in cases where total hip arthroplasty will be performed through Hardinge incision, the area defined as safe zone was shorter than that described by various authors as 5 cm. We concluded that safe zone concept of 5 cm should not be relied on in cases where Hardinge approach is used. Turkish Amaç: Anterolateral Hardinge yaklaşımı kalça artroplastisinde en sık kullanılan yaklaşımlardan biridir. Superior gluteal sinir, gluteus medius ve tensor fasya lata'nın abduktor mekanizmasının esas motor siniridir. Bu sinirin hasarlanması durumunda Trendelenburg belirtisi saptanmaktadır. Trendelenburg belirtisine maruz kalınmaması için \"safe zone\" denen kavram geliştirilmiştir. Safe zone diye adlandırılan bölgenin içinde superior gluteal sinir yoktur. Hardinge yaklaşımında çeşitli yazarlarca tariflenen safe zone kavramının güvenilirliğini değerlendirmeyi amaçladık. Hastalar ve Yöntemler: Çalışmamızı 10 taze kadavranın 19 kalçasında yaptık. Trokanter major'un (1/3 ön tarafındaki noktadan) superior gluteal sinire olan uzaklıklarını değerlendirdik. Bulgular: Trochanter major'ün 1/3 ön bölümüyle superior gluteal sinir arasındaki mesafeyi ortalama 4.4 mm olarak tespit ettik. Çalışmamızda bulduğumuz ortalama değer, daha önce değişik yazarlarca bildirilen değerlerden daha küçük olarak bulundu. Sonuç: Hardinge insizyonu ile total kalça artroplastisi yapılacak olgularda, safe zone olarak tanımlanan alanın çeşitli yazarlarca bildirilen 5 cm'nin altında olduğunu tespit ettik. Bu yaklaşımın kullanıldığı olgularda 5 cm'lik safe zone kavramına çok fazla güvenmememiz gerektiği sonucuna vardık.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: Anterolateral Hardinge approach is one of the most common approaches used for total hip arthroplasty. Superior gluteal nerve is the main motor nerve of abductor mechanism of gluteus medius and tensor fascia lata muscles, where the injury to this nerve manifests itself as Trendelenburg&#39;s sign. In order to prevent the occurrence of this sign, a concept was developed called as &ldquo;safe zone&rdquo;, where no superior gluteal nerve exists. Our aim was to evaluate the reliability of the concept of safe zone as previously described by many authors in Hardinge approach.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: Nineteen hips of 10 fresh cadavers were evaluated in this study. We measured the distance between 1/3 anterior of greater trochanter of femur and superior gluteal nerve.</p>\r\n<p>\r\n\t<strong>Results</strong>: We detected the distance between 1/3 anterior of greater trochanter of femur and superior gluteal nerve to be 4.4 cm. The mean value of distance we observed in our study was smaller than that reported in literature by various authors.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: We have detected that in cases where total hip arthroplasty will be performed through Hardinge incision, the area defined as safe zone was shorter than that described by various authors as 5 cm. We concluded that safe zone concept of 5 cm should not be relied on in cases where Hardinge approach is used.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\t<strong>Ama&ccedil;</strong>: Anterolateral Hardinge yaklaşımı kal&ccedil;a artroplastisinde en sık kullanılan yaklaşımlardan biridir. Superior gluteal sinir, gluteus medius ve tensor fasya lata&#39;nın abduktor mekanizmasının esas motor siniridir. Bu sinirin hasarlanması durumunda Trendelenburg belirtisi saptanmaktadır. Trendelenburg belirtisine maruz kalınmaması i&ccedil;in &quot;safe zone&quot; denen kavram geliştirilmiştir. Safe zone diye adlandırılan b&ouml;lgenin i&ccedil;inde superior gluteal sinir yoktur. Hardinge yaklaşımında &ccedil;eşitli yazarlarca tariflenen safe zone kavramının g&uuml;venilirliğini değerlendirmeyi ama&ccedil;ladık.</p>\r\n<p>\r\n\t<strong>Hastalar ve Y&ouml;ntemler</strong>: &Ccedil;alışmamızı 10 taze kadavranın 19 kal&ccedil;asında yaptık. Trokanter major&#39;un (1/3 &ouml;n tarafındaki noktadan) superior gluteal sinire olan uzaklıklarını değerlendirdik.</p>\r\n<p>\r\n\t<strong>Bulgular</strong>: Trochanter major&#39;&uuml;n 1/3 &ouml;n b&ouml;l&uuml;m&uuml;yle superior gluteal sinir arasındaki mesafeyi ortalama 4.4 mm olarak tespit ettik. &Ccedil;alışmamızda bulduğumuz ortalama değer, daha &ouml;nce değişik yazarlarca bildirilen değerlerden daha k&uuml;&ccedil;&uuml;k olarak bulundu.</p>\r\n<p>\r\n\t<strong>Sonu&ccedil;</strong>: Hardinge insizyonu ile total kal&ccedil;a artroplastisi yapılacak olgularda, safe zone olarak tanımlanan alanın &ccedil;eşitli yazarlarca bildirilen 5 cm&#39;nin altında olduğunu tespit ettik. Bu yaklaşımın kullanıldığı olgularda 5 cm&#39;lik safe zone kavramına &ccedil;ok fazla g&uuml;venmememiz gerektiği sonucuna vardık.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: Anterolateral Hardinge approach is one of the most common approaches used for total hip arthroplasty. Superior gluteal nerve is the main motor nerve of abductor mechanism of gluteus medius and tensor fascia lata muscles, where the injury to this nerve manifests itself as Trendelenburg's sign. In order to prevent the occurrence of this sign, a concept was developed called as “safe zone”, where no superior gluteal nerve exists. Our aim was to evaluate the reliability of the concept of safe zone as previously described by many authors in Hardinge approach. Patients and Methods: Nineteen hips of 10 fresh cadavers were evaluated in this study. We measured the distance between 1/3 anterior of greater trochanter of femur and superior gluteal nerve. Results: We detected the distance between 1/3 anterior of greater trochanter of femur and superior gluteal nerve to be 4.4 cm. The mean value of distance we observed in our study was smaller than that reported in literature by various authors. Conclusion: We have detected that in cases where total hip arthroplasty will be performed through Hardinge incision, the area defined as safe zone was shorter than that described by various authors as 5 cm. We concluded that safe zone concept of 5 cm should not be relied on in cases where Hardinge approach is used. Turkish Amaç: Anterolateral Hardinge yaklaşımı kalça artroplastisinde en sık kullanılan yaklaşımlardan biridir. Superior gluteal sinir, gluteus medius ve tensor fasya lata'nın abduktor mekanizmasının esas motor siniridir. Bu sinirin hasarlanması durumunda Trendelenburg belirtisi saptanmaktadır. Trendelenburg belirtisine maruz kalınmaması için \"safe zone\" denen kavram geliştirilmiştir. Safe zone diye adlandırılan bölgenin içinde superior gluteal sinir yoktur. Hardinge yaklaşımında çeşitli yazarlarca tariflenen safe zone kavramının güvenilirliğini değerlendirmeyi amaçladık. Hastalar ve Yöntemler: Çalışmamızı 10 taze kadavranın 19 kalçasında yaptık. Trokanter major'un (1/3 ön tarafındaki noktadan) superior gluteal sinire olan uzaklıklarını değerlendirdik. Bulgular: Trochanter major'ün 1/3 ön bölümüyle superior gluteal sinir arasındaki mesafeyi ortalama 4.4 mm olarak tespit ettik. Çalışmamızda bulduğumuz ortalama değer, daha önce değişik yazarlarca bildirilen değerlerden daha küçük olarak bulundu. Sonuç: Hardinge insizyonu ile total kalça artroplastisi yapılacak olgularda, safe zone olarak tanımlanan alanın çeşitli yazarlarca bildirilen 5 cm'nin altında olduğunu tespit ettik. Bu yaklaşımın kullanıldığı olgularda 5 cm'lik safe zone kavramına çok fazla güvenmememiz gerektiği sonucuna vardık.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "134-136",
+    "views": 5846,
+    "downloads": 2553,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1131",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1131",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1131",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1131",
+    "localPdfUrl": "js/data/pdfs/1131.pdf",
+    "pdfUrl": "js/data/pdfs/1131.pdf"
+  },
+  {
+    "id": 1135,
+    "type": "Original Article",
+    "title": "The Prevalence of Pruritus in Mustafa Kemal University Dermatology Outpatient Clinic During July 2008",
+    "authors": [
+      {
+        "name": "GAMZE SERARSLAN",
+        "affiliation": "Department of Dermatology, Medical Faculty of Mustafa Kemal University, Hatay",
+        "orcid": ""
+      },
+      {
+        "name": "Asena Çiğdem Doğramacı",
+        "affiliation": "Department of Dermatology, Medical Faculty of Mustafa Kemal University, Hatay",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: The aim of the present study was to examine the prevalence of pruritus in patients who presented to the outpatient dermatology clinic with skin diseases. Patients and Methods: A total of 521 patients (mean age 35.7±18.3 years; range 7 to 96 years) over the age of seven who presented to our outpatient clinic during July 2008 were enrolled in the study. All participants completed a specially designed questionnaire on demographic and clinical data. All patients who had felt itchy more or less over the area of their lesions within the past week were determined to be pruritic. The diagnoses were made based on the International Classification of Diseases. Results: Of all patients, 324 (62.2%) agreed to participate in our project. 194 (59.9%) patients reported pruritus within the past seven days. Of these, 29 (14.9%) had a diagnosis of dermatitis/eczema, 26 (13.4%) had urticaria, 21 (10.8%) had tinea infections, 15 (7.7%) had acne, 14 (7.2%) had psoriasis, 31 (16%) had pruritus of unknown origin and 32 (16.5%) had another diagnosis. Conclusion: In this study, the prevalence of pruritus of unknown origin was found to be high. Clinicians should be encouraged to carefully assess pruritus of unknown origin because of underlying systemic diseases. Turkish Amaç: Bu çalışmanın amacı, dermatoloji kliniğine başvuran hastalar arasında pruritus prevalansının değerlendirilmesidir. Hastalar ve Yöntemler: Çalışmaya 2008 Temmuz ayı boyunca dermatoloji polikliniğine başvuran yedi yaşından büyük toplam 521 hasta (ort. yaş 35.7±18.3; dağılım 7-96) alındı. Hastaların tümüne demografik ve klinik verilerle ilgili anket formu dolduruldu. Son bir hafta sürecinde mevcut deri hastalıklarında az ya da çok kaşıntısı olanlar pruritik olarak kabul edildi. Dermatolojik tanılar Uluslararası Hastalık Sınıflandırması'na uygun olarak kaydedildi. Bulgular: Hastalardan 324'ü (%62.2) çalışmaya katılmayı kabul etti. 324 hastanın 194'ü (%59.9) son bir hafta içerisinde kaşıntı tariflemekteydi. Bu hastaların 29'unda (%14.9) dermatit/egzama, 26'sında (%13.4) ürtiker, 21'inde (%10.8) tinea infeksiyonu, 15'inde (%7.7) akne, 14'ünde (%7.2) psoriasis, 31'inde (%16) nedeni bilinmeyen kaşıntı ve 32'sinde (16.5%) diğer dermatolojik hastalıklar saptandı. Sonuç: Çalışmamızda nedeni bilinmeyen pruritus prevalansı yüksek olarak saptanmıştır. Özellikle bu olgular altta yatabilecek sistemik hastalıklar açısından dikkatlice değerlendirilmelidir.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: The aim of the present study was to examine the prevalence of pruritus in patients who presented to the outpatient dermatology clinic with skin diseases.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: A total of 521 patients (mean age 35.7&plusmn;18.3 years; range 7 to 96 years) over the age of seven who presented to our outpatient clinic during July 2008 were enrolled in the study. All participants completed a specially designed questionnaire on demographic and clinical data. All patients who had felt itchy more or less over the area of their lesions within the past week were determined to be pruritic. The diagnoses were made based on the International Classification of Diseases.</p>\r\n<p>\r\n\t<strong>Results</strong>: Of all patients, 324 (62.2%) agreed to participate in our project. 194 (59.9%) patients reported pruritus within the past seven days. Of these, 29 (14.9%) had a diagnosis of dermatitis/eczema, 26 (13.4%) had urticaria, 21 (10.8%) had tinea infections, 15 (7.7%) had acne, 14 (7.2%) had psoriasis, 31 (16%) had pruritus of unknown origin and 32 (16.5%) had another diagnosis.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: In this study, the prevalence of pruritus of unknown origin was found to be high. Clinicians should be encouraged to carefully assess pruritus of unknown origin because of underlying systemic diseases.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\t<strong>Ama&ccedil;</strong>: Bu &ccedil;alışmanın amacı, dermatoloji kliniğine başvuran hastalar arasında pruritus prevalansının değerlendirilmesidir.</p>\r\n<p>\r\n\t<strong>Hastalar ve Y&ouml;ntemler</strong>: &Ccedil;alışmaya 2008 Temmuz ayı boyunca dermatoloji polikliniğine başvuran yedi yaşından b&uuml;y&uuml;k toplam 521 hasta (ort. yaş 35.7&plusmn;18.3; dağılım 7-96) alındı. Hastaların t&uuml;m&uuml;ne demografik ve klinik verilerle ilgili anket formu dolduruldu. Son bir hafta s&uuml;recinde mevcut deri hastalıklarında az ya da &ccedil;ok kaşıntısı olanlar pruritik olarak kabul edildi. Dermatolojik tanılar Uluslararası Hastalık Sınıflandırması&#39;na uygun olarak kaydedildi.</p>\r\n<p>\r\n\t<strong>Bulgular</strong>: Hastalardan 324&#39;&uuml; (%62.2) &ccedil;alışmaya katılmayı kabul etti. 324 hastanın 194&#39;&uuml; (%59.9) son bir hafta i&ccedil;erisinde kaşıntı tariflemekteydi. Bu hastaların 29&#39;unda (%14.9) dermatit/egzama, 26&#39;sında (%13.4) &uuml;rtiker, 21&#39;inde (%10.8) tinea infeksiyonu, 15&#39;inde (%7.7) akne, 14&#39;&uuml;nde (%7.2) psoriasis, 31&#39;inde (%16) nedeni bilinmeyen kaşıntı ve 32&#39;sinde (16.5%) diğer dermatolojik hastalıklar saptandı.</p>\r\n<p>\r\n\t<strong>Sonu&ccedil;</strong>: &Ccedil;alışmamızda nedeni bilinmeyen pruritus prevalansı y&uuml;ksek olarak saptanmıştır. &Ouml;zellikle bu olgular altta yatabilecek sistemik hastalıklar a&ccedil;ısından dikkatlice değerlendirilmelidir.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: The aim of the present study was to examine the prevalence of pruritus in patients who presented to the outpatient dermatology clinic with skin diseases. Patients and Methods: A total of 521 patients (mean age 35.7±18.3 years; range 7 to 96 years) over the age of seven who presented to our outpatient clinic during July 2008 were enrolled in the study. All participants completed a specially designed questionnaire on demographic and clinical data. All patients who had felt itchy more or less over the area of their lesions within the past week were determined to be pruritic. The diagnoses were made based on the International Classification of Diseases. Results: Of all patients, 324 (62.2%) agreed to participate in our project. 194 (59.9%) patients reported pruritus within the past seven days. Of these, 29 (14.9%) had a diagnosis of dermatitis/eczema, 26 (13.4%) had urticaria, 21 (10.8%) had tinea infections, 15 (7.7%) had acne, 14 (7.2%) had psoriasis, 31 (16%) had pruritus of unknown origin and 32 (16.5%) had another diagnosis. Conclusion: In this study, the prevalence of pruritus of unknown origin was found to be high. Clinicians should be encouraged to carefully assess pruritus of unknown origin because of underlying systemic diseases. Turkish Amaç: Bu çalışmanın amacı, dermatoloji kliniğine başvuran hastalar arasında pruritus prevalansının değerlendirilmesidir. Hastalar ve Yöntemler: Çalışmaya 2008 Temmuz ayı boyunca dermatoloji polikliniğine başvuran yedi yaşından büyük toplam 521 hasta (ort. yaş 35.7±18.3; dağılım 7-96) alındı. Hastaların tümüne demografik ve klinik verilerle ilgili anket formu dolduruldu. Son bir hafta sürecinde mevcut deri hastalıklarında az ya da çok kaşıntısı olanlar pruritik olarak kabul edildi. Dermatolojik tanılar Uluslararası Hastalık Sınıflandırması'na uygun olarak kaydedildi. Bulgular: Hastalardan 324'ü (%62.2) çalışmaya katılmayı kabul etti. 324 hastanın 194'ü (%59.9) son bir hafta içerisinde kaşıntı tariflemekteydi. Bu hastaların 29'unda (%14.9) dermatit/egzama, 26'sında (%13.4) ürtiker, 21'inde (%10.8) tinea infeksiyonu, 15'inde (%7.7) akne, 14'ünde (%7.2) psoriasis, 31'inde (%16) nedeni bilinmeyen kaşıntı ve 32'sinde (16.5%) diğer dermatolojik hastalıklar saptandı. Sonuç: Çalışmamızda nedeni bilinmeyen pruritus prevalansı yüksek olarak saptanmıştır. Özellikle bu olgular altta yatabilecek sistemik hastalıklar açısından dikkatlice değerlendirilmelidir.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "137-140",
+    "views": 6386,
+    "downloads": 2226,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1135",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1135",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1135",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1135",
+    "localPdfUrl": "js/data/pdfs/1135.pdf",
+    "pdfUrl": "js/data/pdfs/1135.pdf"
+  },
+  {
+    "id": 1141,
+    "type": "Original Article",
+    "title": "Frequency Of Thyroid Diseases in Type 2 Diabetic Patients",
+    "authors": [
+      {
+        "name": "BENGÜR TAŞKIRAN",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Endokrinoloji ve Metabolizma Hastalıkları Bilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Sibel GÜLDİKEN",
+        "affiliation": "Department of Internal Medicine, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "HANDE PEYNİRCİ",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Betül Uğur ALTUN",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Endokrinoloji ve Metabolizma Hastalıkları Bilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "ARMAĞAN TUĞRUL [[2]] </d",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: Thyroid diseases and type 2 diabetes mellitus are two abundant diseases in general population. In this study, we evaluated the frequency of thyroid diseases in type 2 diabetic patients. Patients and Methods: The study included 306 type 2 diabetic patients, who were followed up in Trakya University Department of Endocrinology and Metabolism Disorders. All patients had thyroid function tests, antithyroglobulin antibody values, antithyroid peroxidase values, and thyroid imaging (scintigraphy and/or ultrasonography). Results: A total of 38 (12.4%) patients had thyroid diseases with the following distribution: 29 (9.5%) Hashimoto thyroiditis, five (1.7%) multinodular goitre, three (%1) Graves' disease, and one toxic solitary adenoma (0.3%). Conclusion: We found that thyroid diseases in type 2 diabetics were seen as frequent as in general population. We suggest that there is no need to screen type 2 diabetics for thyroid diseases, hypothyroid in particular, that increase the risk for cardiovascular diseases, in addition to the recommended screening of the general population in guidelines. Turkish Amaç: Tiroid hastalıkları ve tip 2 diabetes mellitus (DM) toplumda sık görülen iki hastalıktır. Bu çalışmada, tip 2 diyabetik olgularda tiroid hastalıklarının sıklığını inceledik. Hastalar ve Yöntemler: Trakya Üniversitesi Endokrinoloji Bilim Dalında takip edilen tip 2 DM hastalarından tiroid fonksiyon testleri, anti-tiroglobulin antikoru, anti-tiroid peroksidaz antikoru ve tiroid ultrasonografi ve/veya sintigrafi sonuçları bulunan 306'sı retrospektif olarak incelendi. Bulgular: Yirmi dokuz (%9.5) olguda Hashimoto tiroiditi, beşinde (%1.7) multinodüler guatr, üçünde (Graves hastalığı (%1) ve bir olguda (%0.3) toksik soliter adenom olmak üzere toplam 38 (%12.4) olguda tiroid hastalığı belirlendi. Sonuç: Yapılan inceleme sonucunda tip 2 DM olgularında tiroid hastalıklarına genel popülasyondakine benzer sıklıkla rastlandığını tespit ettik. Tip 2 DM'li hastaların, kardiyovasküler hastalık eğilimi yaratan başta hipotiroidi olmak üzere tiroid hastalıkları açısından genel popülasyon için geçerli olan öneriler dışında ayrıca taranmasına gerek olmadığı sonucuna vardık.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: Thyroid diseases and type 2 diabetes mellitus are two abundant diseases in general population. In this study, we evaluated the frequency of thyroid diseases in type 2 diabetic patients.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: The study included 306 type 2 diabetic patients, who were followed up in Trakya University Department of Endocrinology and Metabolism Disorders. All patients had thyroid function tests, antithyroglobulin antibody values, antithyroid peroxidase values, and thyroid imaging (scintigraphy and/or ultrasonography).</p>\r\n<p>\r\n\t<strong>Results</strong>: A total of 38 (12.4%) patients had thyroid diseases with the following distribution: 29 (9.5%) Hashimoto thyroiditis, five (1.7%) multinodular goitre, three (%1) Graves&#39; disease, and one toxic solitary adenoma (0.3%).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: We found that thyroid diseases in type 2 diabetics were seen as frequent as in general population. We suggest that there is no need to screen type 2 diabetics for thyroid diseases, hypothyroid in particular, that increase the risk for cardiovascular diseases, in addition to the recommended screening of the general population in guidelines.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\t<strong>Ama&ccedil;</strong>: Tiroid hastalıkları ve tip 2 diabetes mellitus (DM) toplumda sık g&ouml;r&uuml;len iki hastalıktır. Bu &ccedil;alışmada, tip 2 diyabetik olgularda tiroid hastalıklarının sıklığını inceledik.</p>\r\n<p>\r\n\t<strong>Hastalar ve Y&ouml;ntemler</strong>: Trakya &Uuml;niversitesi Endokrinoloji Bilim Dalında takip edilen tip 2 DM hastalarından tiroid fonksiyon testleri, anti-tiroglobulin antikoru, anti-tiroid peroksidaz antikoru ve tiroid ultrasonografi ve/veya sintigrafi sonu&ccedil;ları bulunan 306&#39;sı retrospektif olarak incelendi.</p>\r\n<p>\r\n\t<strong>Bulgular</strong>: Yirmi dokuz (%9.5) olguda Hashimoto tiroiditi, beşinde (%1.7) multinod&uuml;ler guatr, &uuml;&ccedil;&uuml;nde (Graves hastalığı (%1) ve bir olguda (%0.3) toksik soliter adenom olmak &uuml;zere toplam 38 (%12.4) olguda tiroid hastalığı belirlendi.</p>\r\n<p>\r\n\t<strong>Sonu&ccedil;</strong>: Yapılan inceleme sonucunda tip 2 DM olgularında tiroid hastalıklarına genel pop&uuml;lasyondakine benzer sıklıkla rastlandığını tespit ettik. Tip 2 DM&#39;li hastaların, kardiyovask&uuml;ler hastalık eğilimi yaratan başta hipotiroidi olmak &uuml;zere tiroid hastalıkları a&ccedil;ısından genel pop&uuml;lasyon i&ccedil;in ge&ccedil;erli olan &ouml;neriler dışında ayrıca taranmasına gerek olmadığı sonucuna vardık.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: Thyroid diseases and type 2 diabetes mellitus are two abundant diseases in general population. In this study, we evaluated the frequency of thyroid diseases in type 2 diabetic patients. Patients and Methods: The study included 306 type 2 diabetic patients, who were followed up in Trakya University Department of Endocrinology and Metabolism Disorders. All patients had thyroid function tests, antithyroglobulin antibody values, antithyroid peroxidase values, and thyroid imaging (scintigraphy and/or ultrasonography). Results: A total of 38 (12.4%) patients had thyroid diseases with the following distribution: 29 (9.5%) Hashimoto thyroiditis, five (1.7%) multinodular goitre, three (%1) Graves' disease, and one toxic solitary adenoma (0.3%). Conclusion: We found that thyroid diseases in type 2 diabetics were seen as frequent as in general population. We suggest that there is no need to screen type 2 diabetics for thyroid diseases, hypothyroid in particular, that increase the risk for cardiovascular diseases, in addition to the recommended screening of the general population in guidelines. Turkish Amaç: Tiroid hastalıkları ve tip 2 diabetes mellitus (DM) toplumda sık görülen iki hastalıktır. Bu çalışmada, tip 2 diyabetik olgularda tiroid hastalıklarının sıklığını inceledik. Hastalar ve Yöntemler: Trakya Üniversitesi Endokrinoloji Bilim Dalında takip edilen tip 2 DM hastalarından tiroid fonksiyon testleri, anti-tiroglobulin antikoru, anti-tiroid peroksidaz antikoru ve tiroid ultrasonografi ve/veya sintigrafi sonuçları bulunan 306'sı retrospektif olarak incelendi. Bulgular: Yirmi dokuz (%9.5) olguda Hashimoto tiroiditi, beşinde (%1.7) multinodüler guatr, üçünde (Graves hastalığı (%1) ve bir olguda (%0.3) toksik soliter adenom olmak üzere toplam 38 (%12.4) olguda tiroid hastalığı belirlendi. Sonuç: Yapılan inceleme sonucunda tip 2 DM olgularında tiroid hastalıklarına genel popülasyondakine benzer sıklıkla rastlandığını tespit ettik. Tip 2 DM'li hastaların, kardiyovasküler hastalık eğilimi yaratan başta hipotiroidi olmak üzere tiroid hastalıkları açısından genel popülasyon için geçerli olan öneriler dışında ayrıca taranmasına gerek olmadığı sonucuna vardık.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "141-144",
+    "views": 6481,
+    "downloads": 2145,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1141",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1141",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1141",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1141",
+    "localPdfUrl": "js/data/pdfs/1141.pdf",
+    "pdfUrl": "js/data/pdfs/1141.pdf"
+  },
+  {
+    "id": 1146,
+    "type": "Original Article",
+    "title": "Use of Portfolios in Undergraduate Medical Training: First Meeting With a Patient",
+    "authors": [
+      {
+        "name": "NİLGÜN ÖZÇAKAR",
+        "affiliation": "Department of Family Medicine, Medical Faculty of Dokuz Eylül University, İzmir",
+        "orcid": ""
+      },
+      {
+        "name": "VİLDAN MEVSİM",
+        "affiliation": "Department of Family Medicine, Medical Faculty of Dokuz Eylül University, İzmir",
+        "orcid": ""
+      },
+      {
+        "name": "DİLEK GÜLDAL [[1]] </di",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: Portfolios, as learning tools, are becoming increasingly important in medical education. Our aim was to evaluate the contents of portfolios used in medical education. Patients and Methods: We designed a portfolio that was aimed at making reflection in early undergraduate medical education. Conditions for portfolio use were identified through interviews with six trainers who were experienced in mentoring students in the process of developing their portfolios. Analysis of writings was performed using qualitative content analysis. Results: The conditions for successful reflective use of portfolios that emerged from the interviews fell into categories: practice evaluation, patient perspective and primary prevention/health promotion. According to the students, working with a portfolio designed to meet these conditions is very useful and will stimulate students' abilities. The students shared the same opinion that analyzing one's competences in a portfolio was instructive and meaningful. Conclusion: According to our students, portfolios are a potentially valuable method of developing students' skills in undergraduate medical education, provided that certain conditions for effective portfolios are recognized and met. The portfolio is a worthwhile addition to existing assessment and learning tools. Turkish Amaç: Eğitim araçlarından portfolyoların tıp eğitiminde önemi giderek artmaktadır. Bu çalışmanın amacı tıp eğitiminde kullanılan portfolyoların içeriğinin değerlendirilmesidir. Hastalar ve Yöntemler: Tıp eğitiminde erken dönemde refleksiyon yapmak üzere bir portfolyo düzenlenmiştir. Hasta ile görüşme sırasında portfolyoların kullanımı portfolyo hazırlama konusunda danışmanlık yapmış altı deneyimli eğitici tarafından öğrencilere açıklanmıştır. Tamamlanmış portfolyoların değerlendirilmesi niteliksel içerik analizi ile yapılmıştır. Bulgular: Portfolyo kullanımının başarılı refleksiyonu için portfolyolar, uygulamanın değerlendirilmesi, hasta perspektifi ve birincil koruma/sağlığı geliştirme bölümlerine ayrılmıştır. Öğrencilere göre bu koşulları karşılayan portfolyoları kullanmak oldukça yararlıdır ve becerilerini geliştirmektedir. Öğrenciler bireyin yeterliliğini analiz etmede portfolyoları eğitici ve anlamlı bulmaktadır. Sonuç: Öğrencilerimize göre, etkin portfolyolar için gerekli durumların fark edilmesi ve karşılanması durumunda portfolyolar mezuniyet öncesi tıp eğitiminde öğrencilerin becerilerini geliştirmek için kullanılabilecek oldukça yararlı bir yöntemdir. Mevcut değerlendirme ve öğrenme araçlarına ek olarak portfolyoların kullanımı harcanacak emeğe değecektir.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: Portfolios, as learning tools, are becoming increasingly important in medical education. Our aim was to evaluate the contents of portfolios used in medical education.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: We designed a portfolio that was aimed at making reflection in early undergraduate medical education. Conditions for portfolio use were identified through interviews with six trainers who were experienced in mentoring students in the process of developing their portfolios. Analysis of writings was performed using qualitative content analysis.</p>\r\n<p>\r\n\t<strong>Results</strong>: The conditions for successful reflective use of portfolios that emerged from the interviews fell into categories: practice evaluation, patient perspective and primary prevention/health promotion. According to the students, working with a portfolio designed to meet these conditions is very useful and will stimulate students&#39; abilities. The students shared the same opinion that analyzing one&#39;s competences in a portfolio was instructive and meaningful.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: According to our students, portfolios are a potentially valuable method of developing students&#39; skills in undergraduate medical education, provided that certain conditions for effective portfolios are recognized and met. The portfolio is a worthwhile addition to existing assessment and learning tools.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\t<strong>Ama&ccedil;</strong>: Eğitim ara&ccedil;larından portfolyoların tıp eğitiminde &ouml;nemi giderek artmaktadır. Bu &ccedil;alışmanın amacı tıp eğitiminde kullanılan portfolyoların i&ccedil;eriğinin değerlendirilmesidir.</p>\r\n<p>\r\n\t<strong>Hastalar ve Y&ouml;ntemler</strong>: Tıp eğitiminde erken d&ouml;nemde refleksiyon yapmak &uuml;zere bir portfolyo d&uuml;zenlenmiştir. Hasta ile g&ouml;r&uuml;şme sırasında portfolyoların kullanımı portfolyo hazırlama konusunda danışmanlık yapmış altı deneyimli eğitici tarafından &ouml;ğrencilere a&ccedil;ıklanmıştır. Tamamlanmış portfolyoların değerlendirilmesi niteliksel i&ccedil;erik analizi ile yapılmıştır.</p>\r\n<p>\r\n\t<strong>Bulgular</strong>: Portfolyo kullanımının başarılı refleksiyonu i&ccedil;in portfolyolar, uygulamanın değerlendirilmesi, hasta perspektifi ve birincil koruma/sağlığı geliştirme b&ouml;l&uuml;mlerine ayrılmıştır. &Ouml;ğrencilere g&ouml;re bu koşulları karşılayan portfolyoları kullanmak olduk&ccedil;a yararlıdır ve becerilerini geliştirmektedir. &Ouml;ğrenciler bireyin yeterliliğini analiz etmede portfolyoları eğitici ve anlamlı bulmaktadır.</p>\r\n<p>\r\n\t<strong>Sonu&ccedil;</strong>: &Ouml;ğrencilerimize g&ouml;re, etkin portfolyolar i&ccedil;in gerekli durumların fark edilmesi ve karşılanması durumunda portfolyolar mezuniyet &ouml;ncesi tıp eğitiminde &ouml;ğrencilerin becerilerini geliştirmek i&ccedil;in kullanılabilecek olduk&ccedil;a yararlı bir y&ouml;ntemdir. Mevcut değerlendirme ve &ouml;ğrenme ara&ccedil;larına ek olarak portfolyoların kullanımı harcanacak emeğe değecektir.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objectives: Portfolios, as learning tools, are becoming increasingly important in medical education. Our aim was to evaluate the contents of portfolios used in medical education. Patients and Methods: We designed a portfolio that was aimed at making reflection in early undergraduate medical education. Conditions for portfolio use were identified through interviews with six trainers who were experienced in mentoring students in the process of developing their portfolios. Analysis of writings was performed using qualitative content analysis. Results: The conditions for successful reflective use of portfolios that emerged from the interviews fell into categories: practice evaluation, patient perspective and primary prevention/health promotion. According to the students, working with a portfolio designed to meet these conditions is very useful and will stimulate students' abilities. The students shared the same opinion that analyzing one's competences in a portfolio was instructive and meaningful. Conclusion: According to our students, portfolios are a potentially valuable method of developing students' skills in undergraduate medical education, provided that certain conditions for effective portfolios are recognized and met. The portfolio is a worthwhile addition to existing assessment and learning tools. Turkish Amaç: Eğitim araçlarından portfolyoların tıp eğitiminde önemi giderek artmaktadır. Bu çalışmanın amacı tıp eğitiminde kullanılan portfolyoların içeriğinin değerlendirilmesidir. Hastalar ve Yöntemler: Tıp eğitiminde erken dönemde refleksiyon yapmak üzere bir portfolyo düzenlenmiştir. Hasta ile görüşme sırasında portfolyoların kullanımı portfolyo hazırlama konusunda danışmanlık yapmış altı deneyimli eğitici tarafından öğrencilere açıklanmıştır. Tamamlanmış portfolyoların değerlendirilmesi niteliksel içerik analizi ile yapılmıştır. Bulgular: Portfolyo kullanımının başarılı refleksiyonu için portfolyolar, uygulamanın değerlendirilmesi, hasta perspektifi ve birincil koruma/sağlığı geliştirme bölümlerine ayrılmıştır. Öğrencilere göre bu koşulları karşılayan portfolyoları kullanmak oldukça yararlıdır ve becerilerini geliştirmektedir. Öğrenciler bireyin yeterliliğini analiz etmede portfolyoları eğitici ve anlamlı bulmaktadır. Sonuç: Öğrencilerimize göre, etkin portfolyolar için gerekli durumların fark edilmesi ve karşılanması durumunda portfolyolar mezuniyet öncesi tıp eğitiminde öğrencilerin becerilerini geliştirmek için kullanılabilecek oldukça yararlı bir yöntemdir. Mevcut değerlendirme ve öğrenme araçlarına ek olarak portfolyoların kullanımı harcanacak emeğe değecektir.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "145-150",
+    "views": 6298,
+    "downloads": 2022,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1146",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1146",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1146",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1146",
+    "localPdfUrl": "js/data/pdfs/1146.pdf",
+    "pdfUrl": "js/data/pdfs/1146.pdf"
+  },
+  {
+    "id": 1150,
+    "type": "Original Article",
+    "title": "The Assessment of Sexual Knowledge, Marital Characteristics, Sexual Function and Satisfaction in Women with Lifelong Vaginismus",
+    "authors": [
+      {
+        "name": "SULTAN DOĞAN",
+        "affiliation": "Namık Kemal Üniversitesi Tıp Fakültesi Psikiyatri Anabilim Dalı, Tekirdağ",
+        "orcid": ""
+      },
+      {
+        "name": "GAMZE VAROL SARAÇOĞLU",
+        "affiliation": "Namık Kemal Üniversitesi Tıp Fakültesi Halk Sağlığı Anabilim Dalı, Tekirdağ",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objectives: The aim of this study is to compare the sexual history traits, marital characteristics, sexual function and satisfaction level in women with and without vaginismus. Patients and Methods: The study included 36 female patients with lifelong vaginismus who presented at the psychiatry department and 36 control subjects without vaginismus or painful sexual activity. All 72 subjects were evaluated by a structured questionnaire. The questionnaire was developed by researchers for assessing sexually dysfunctional patients and included detailed questions with regard to socio-demoghraphic variables, general medical and sexual history. All participant also received the Golombok Rust Inventory of Sexual Satisfaction (GRISS). Results: Women with vaginismus more frequently reported a history of arranged marriage, partners' sexual dysfunction, lack of sexual knowledge, less premarital sexual experience, lower levels of sexual functioning and satisfaction (p<0.05). Interestingly, frequency of weekly sexual activity (intercourse or attempted intercourse) comparisons revealed that the vaginismus group reported more attempts. Conclusion: Several variables including partners' sexual dysfunction are associated with lifelong vaginismus. These patients tend to overcome this problem by increasing the frequency of intercourse attempt. Turkish Amaç: Bu çalışmanın amacı vajinismusu olan ve olmayan kadınlarda cinsel öykü, evlilik özellikleri, cinsel işlev ve doyum düzeyini karşılaştırmaktır. Hastalar ve Yöntemler: Çalışma psikiyatri bölümüne başvuran ve yaşam boyu vajinismus tanısı alan 36 kadın hasta ve vajinismusu ve ağrılı cinsel aktivite öyküsü olmayan 36 kişilik kontrol grubunu içermektedir. Toplam 72 katılımcı yapılandırılmış bir soru formu ile değerlendirilmiştir. Bu form araştırmacılar tarafından cinsel sorunu olan hastaları değerlendirmek amacıyla hazırlanmıştır ve sosyodemografik verileri, tıbbi ve cinsel öyküyü ayrıntılı olarak sorgulayan soruları içermektedir. Bütün katılımcılar ayrıca Golombok Rust Cinsel Doyum Ölçeği (GRCDÖ) ile de değerlendirilmiştir. Bulgular: Vajinismuslu kadınlar daha fazla görücü usulü evlenme, cinsel bilgi yetersizliği, eşlerinde cinsel işlev bozukluğu, evlilik öncesi cinsel deneyimsizlik, cinsel işlevsellik sorunları ve cinsel doyumda azalma bildirmişlerdir (p<0.05). İlginç olarak, haftalık cinsel aktivite girişimi sayısı açısından yapılan karşılaştırma, vajinismuslu grubun anlamlı olarak daha fazla cinsel ilişki girişiminde bulunduğunu ortaya çıkarmıştır. Sonuç: Eşte cinsel işlev bozukluğu varlığı dahil olmak üzere pek çok değişken yaşam boyu vajinismusla ilişkilidir. Hastalar cinsel birleşme girişimi sayısını artırarak vajinismus sorununun üstesinden gelme eğilimindedir. <",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objectives</strong>: The aim of this study is to compare the sexual history traits, marital characteristics, sexual function and satisfaction level in women with and without vaginismus.</p>\r\n<p>\r\n\t<strong>Patients and Methods</strong>: The study included 36 female patients with lifelong vaginismus who presented at the psychiatry department and 36 control subjects without vaginismus or painful sexual activity. All 72 subjects were evaluated by a structured questionnaire. The questionnaire was developed by researchers for assessing sexually dysfunctional patients and included detailed questions with regard to socio-demoghraphic variables, general medical and sexual history. All participant also received the Golombok Rust Inventory of Sexual Satisfaction (GRISS).</p>\r\n<p>\r\n\t<strong>Results</strong>: Women with vaginismus more frequently reported a history of arranged marriage, partners&#39; sexual dysfunction, lack of sexual knowledge, less premarital sexual experience, lower levels of sexual functioning and satisfaction (p&lt;0.05). Interestingly, frequency of weekly sexual activity (intercourse or attempted intercourse) comparisons revealed that the vaginismus group reported more attempts.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Several variables including partners&#39; sexual dysfunction are associated with lifelong vaginismus. These patients tend to overcome this problem by increasing the frequency of intercourse attempt.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\t<strong>Ama&ccedil;</strong>: Bu &ccedil;alışmanın amacı vajinismusu olan ve olmayan kadınlarda cinsel &ouml;yk&uuml;, evlilik &ouml;zellikleri, cinsel işlev ve doyum d&uuml;zeyini karşılaştırmaktır.</p>\r\n<p>\r\n\t<strong>Hastalar ve Y&ouml;ntemler</strong>: &Ccedil;alışma psikiyatri b&ouml;l&uuml;m&uuml;ne başvuran ve yaşam boyu vajinismus tanısı alan 36 kadın hasta ve vajinismusu ve ağrılı cinsel aktivite &ouml;yk&uuml;s&uuml; olmayan 36 kişilik kontrol grubunu i&ccedil;ermektedir. Toplam 72 katılımcı yapılandırılmış bir soru formu ile değerlendirilmiştir. Bu form araştırmacılar tarafından cinsel sorunu olan hastaları değerlendirmek amacıyla hazırlanmıştır ve sosyodemografik verileri, tıbbi ve cinsel &ouml;yk&uuml;y&uuml; ayrıntılı olarak sorgulayan soruları i&ccedil;ermektedir. B&uuml;t&uuml;n katılımcılar ayrıca Golombok Rust Cinsel Doyum &Ouml;l&ccedil;eği (GRCD&Ouml;) ile de değerlendirilmiştir.</p>\r\n<p>\r\n\t<strong>Bulgular</strong>: Vajinismuslu kadınlar daha fazla g&ouml;r&uuml;c&uuml; usul&uuml; evlenme, cinsel bilgi yetersizliği, eşlerinde cinsel işlev bozukluğu, evlilik &ouml;ncesi cinsel deneyimsizlik, cinsel işlevsellik sorunları ve cinsel doyumda azalma bildirmişlerdir (p&lt;0.05). İlgin&ccedil; olarak, haftalık cinsel aktivite girişimi sayısı a&ccedil;ısından yapılan karşılaştırma, vajinismuslu grubun anlamlı olarak daha fazla cinsel ilişki girişiminde bulunduğunu ortaya &ccedil;ıkarmıştır.</p>\r\n<p>\r\n\t<strong>Sonu&ccedil;</strong>: Eşte cinsel işlev bozukluğu varlığı dahil olmak &uuml;zere pek &ccedil;ok değişken yaşam boyu vajinismusla ilişkilidir. Hastalar cinsel birleşme girişimi sayısını artırarak vajinismus sorununun &uuml;stesinden gelme eğilimindedir.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>\n\t\t<",
+    "previewText": "Abstract Objectives: The aim of this study is to compare the sexual history traits, marital characteristics, sexual function and satisfaction level in women with and without vaginismus. Patients and Methods: The study included 36 female patients with lifelong vaginismus who presented at the psychiatry department and 36 control subjects without vaginismus or painful sexual activity. All 72 subjects were evaluated by a structured questionnaire. The questionnaire was developed by researchers for assessing sexually dysfunctional patients and included detailed questions with regard to socio-demoghraphic variables, general medical and sexual history. All participant also received the Golombok Rust Inventory of Sexual Satisfaction (GRISS). Results: Women with vaginismus more frequently reported a history of arranged marriage, partners' sexual dysfunction, lack of sexual knowledge, less premarital sexual experience, lower levels of sexual functioning and satisfaction (p<0.05). Interestingly, frequency of weekly sexual activity (intercourse or attempted intercourse) comparisons revealed that the vaginismus group reported more attempts. Conclusion: Several variables including partners' sexual dysfunction are associated with lifelong vaginismus. These patients tend to overcome this problem by increasing the frequency of intercourse attempt. Turkish Amaç: Bu çalışmanın amacı vajinismusu olan ve olmayan kadınlarda cinsel öykü, evlilik özellikleri, cinsel işlev ve doyum düzeyini karşılaştırmaktır. Hastalar ve Yöntemler: Çalışma psikiyatri bölümüne başvuran ve yaşam boyu vajinismus tanısı alan 36 kadın hasta ve vajinismusu ve ağrılı cinsel aktivite öyküsü olmayan 36 kişilik kontrol grubunu içermektedir. Toplam 72 katılımcı yapılandırılmış bir soru formu ile değerlendirilmiştir. Bu form araştırmacılar tarafından cinsel sorunu olan hastaları değerlendirmek amacıyla hazırlanmıştır ve sosyodemografik verileri, tıbbi ve cinsel öyküyü ayrıntılı olarak sorgulayan soruları içermektedir. Bütün katılımcılar ayrıca Golombok Rust Cinsel Doyum Ölçeği (GRCDÖ) ile de değerlendirilmiştir. Bulgular: Vajinismuslu kadınlar daha fazla görücü usulü evlenme, cinsel bilgi yetersizliği, eşlerinde cinsel işlev bozukluğu, evlilik öncesi cinsel deneyimsizlik, cinsel işlevsellik sorunları ve cinsel doyumda azalma bildirmişlerdir (p<0.05). İlginç olarak, haftalık cinsel aktivite girişimi sayısı açısından yapılan karşılaştırma, vajinismuslu grubun anlamlı olarak daha fazla cinsel ilişki girişiminde bulunduğunu ortaya çıkarmıştır. Sonuç: Eşte cinsel işlev bozukluğu varlığı dahil olmak üzere pek çok değişken yaşam boyu vajinismusla ilişkilidir. Hastalar cinsel birleşme girişimi sayısını artırarak vajinismus sorununun üstesinden gelme eğilimindedir. <",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "151-158",
+    "views": 6436,
+    "downloads": 2120,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1150",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1150",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1150",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1150",
+    "localPdfUrl": "js/data/pdfs/1150.pdf",
+    "pdfUrl": "js/data/pdfs/1150.pdf"
+  },
+  {
+    "id": 1153,
+    "type": "Case Report",
+    "title": "The Translabyrinthine Approach of Tos and Thomsen for the Treatment of Acoustic Neuroma and Traumatic Facial Nerve Paralysis: Case Reports",
+    "authors": [
+      {
+        "name": "Cem Uzun",
+        "affiliation": "Department of Otolaryngology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract The translabyrinthine approach recommended by Tos and Thomsen has several different aspects compared to the standard method of the translabyrinthine approach recommended by House. Especially, the dissection of facial nerve in the meatus and porus is safer in the Tos and Thomsen's technique. In this report, results of the translabyrinthine approach of Tos and Thomsen in a 50-year-old patient with a 30 mm acoustic tumor (SRT: 70dB) and a 19-year-old patient with traumatic total facial nerve paralysis and hearing loss are presented. The examination over two years of follow-up revealed that both of the patients had no complications without any restrictions in their life. Both of the patients have normal facial nerve function and there is no recurrence in the MRI scan of the acoustic neuroma patient. Turkish Tos ve Thomsen'in translabirenter yaklaşımı House'ın standart translabirenter yaklaşımından bazı farklılıklar içerir. Özellikle meatus ve porusta fasyal sinirin diseksiyonu Tos ve Thomsen'in tekniğinde daha güvenlidir. Bu raporda Tos ve Thomsen'in translabirenter yaklaşımının uygulandığı 30 mm'lik akustik tümörü olan ve konuşmayı algılama eşği 70 dB olan 50 yaşındaki bir hasta ile travmatik total fasyal paralizili ve total işitme kaybı olan 19 yaşındaki bir hastanın cerrahi tedavi sonuçları sunulmuştur. İki yıldan uzun takip sonucunda her iki hastada da herhangi bir komplikasyon olmadığı ve yaşamlarında herhangi bir kısıtlama gerekmediği görüldü. Her iki hastada da normal fasyal sinir fonksiyonu vardı ve akustik nörinomlu hastada da en son MRG'de rekürrens saptanmadı. <",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tThe translabyrinthine approach recommended by Tos and Thomsen has several different aspects compared to the standard method of the translabyrinthine approach recommended by House. Especially, the dissection of facial nerve in the meatus and porus is safer in the Tos and Thomsen&#39;s technique. In this report, results of the translabyrinthine approach of Tos and Thomsen in a 50-year-old patient with a 30 mm acoustic tumor (SRT: 70dB) and a 19-year-old patient with traumatic total facial nerve paralysis and hearing loss are presented. The examination over two years of follow-up revealed that both of the patients had no complications without any restrictions in their life. Both of the patients have normal facial nerve function and there is no recurrence in the MRI scan of the acoustic neuroma patient.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\tTos ve Thomsen&#39;in translabirenter yaklaşımı House&#39;ın standart translabirenter yaklaşımından bazı farklılıklar i&ccedil;erir. &Ouml;zellikle meatus ve porusta fasyal sinirin diseksiyonu Tos ve Thomsen&#39;in tekniğinde daha g&uuml;venlidir. Bu raporda Tos ve Thomsen&#39;in translabirenter yaklaşımının uygulandığı 30 mm&#39;lik akustik t&uuml;m&ouml;r&uuml; olan ve konuşmayı algılama eşği 70 dB olan 50 yaşındaki bir hasta ile travmatik total fasyal paralizili ve total işitme kaybı olan 19 yaşındaki bir hastanın cerrahi tedavi sonu&ccedil;ları sunulmuştur. İki yıldan uzun takip sonucunda her iki hastada da herhangi bir komplikasyon olmadığı ve yaşamlarında herhangi bir kısıtlama gerekmediği g&ouml;r&uuml;ld&uuml;. Her iki hastada da normal fasyal sinir fonksiyonu vardı ve akustik n&ouml;rinomlu hastada da en son MRG&#39;de rek&uuml;rrens saptanmadı.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>\n\t\t<",
+    "previewText": "Abstract The translabyrinthine approach recommended by Tos and Thomsen has several different aspects compared to the standard method of the translabyrinthine approach recommended by House. Especially, the dissection of facial nerve in the meatus and porus is safer in the Tos and Thomsen's technique. In this report, results of the translabyrinthine approach of Tos and Thomsen in a 50-year-old patient with a 30 mm acoustic tumor (SRT: 70dB) and a 19-year-old patient with traumatic total facial nerve paralysis and hearing loss are presented. The examination over two years of follow-up revealed that both of the patients had no complications without any restrictions in their life. Both of the patients have normal facial nerve function and there is no recurrence in the MRI scan of the acoustic neuroma patient. Turkish Tos ve Thomsen'in translabirenter yaklaşımı House'ın standart translabirenter yaklaşımından bazı farklılıklar içerir. Özellikle meatus ve porusta fasyal sinirin diseksiyonu Tos ve Thomsen'in tekniğinde daha güvenlidir. Bu raporda Tos ve Thomsen'in translabirenter yaklaşımının uygulandığı 30 mm'lik akustik tümörü olan ve konuşmayı algılama eşği 70 dB olan 50 yaşındaki bir hasta ile travmatik total fasyal paralizili ve total işitme kaybı olan 19 yaşındaki bir hastanın cerrahi tedavi sonuçları sunulmuştur. İki yıldan uzun takip sonucunda her iki hastada da herhangi bir komplikasyon olmadığı ve yaşamlarında herhangi bir kısıtlama gerekmediği görüldü. Her iki hastada da normal fasyal sinir fonksiyonu vardı ve akustik nörinomlu hastada da en son MRG'de rekürrens saptanmadı. <",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "159-162",
+    "views": 5853,
+    "downloads": 1851,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1153",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1153",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1153",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1153",
+    "localPdfUrl": "js/data/pdfs/1153.pdf",
+    "pdfUrl": "js/data/pdfs/1153.pdf"
+  },
+  {
+    "id": 1154,
+    "type": "Case Report",
+    "title": "Retroperitoneal Ganglioneuroma",
+    "authors": [
+      {
+        "name": "Tevfik Aktoz",
+        "affiliation": "Departments of Urology, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa KAPLAN",
+        "affiliation": "Departments of Urology, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ufuk Usta",
+        "affiliation": "Departments of Pathology, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "İrfan Hüseyin Atakan",
+        "affiliation": "Departments of Urology, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "OSMAN İNCİ [[1]] </d",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Neuroblastoma, ganglioneuroblastoma and ganglioneuroma are tumors of varying maturity derived from the primordial neural crest cells that form the sympathetic nervous system. A primary extraadrenal retroperitoneal ganglioneuroma was found incidentally in a 12-year-old boy during a series of examinations for abdominal distension, left upper quadrant pain and diarrhoea. Turkish Nöroblastom, ganglionöroblastom ve ganglionörom sempatik sinir sistemini oluşturan, değişik derecelerde olgunlaşmış, primordial nöral krest hücrelerinden köken alan heterojen bir grup tümördür. Abdominal distansiyon, sol üst kadran ağrısı ve daire şikayetleriyle başvuran 12 yaşındaki erkek hastaya yapılan tetkikler sonucu rastlantısal olarak primer retroperitoneal ganglionörom saptanmıştır.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tNeuroblastoma, ganglioneuroblastoma and ganglioneuroma are tumors of varying maturity derived from the primordial neural crest cells that form the sympathetic nervous system. A primary extraadrenal retroperitoneal ganglioneuroma was found incidentally in a 12-year-old boy during a series of examinations for abdominal distension, left upper quadrant pain and diarrhoea.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\tN&ouml;roblastom, ganglion&ouml;roblastom ve ganglion&ouml;rom sempatik sinir sistemini oluşturan, değişik derecelerde olgunlaşmış, primordial n&ouml;ral krest h&uuml;crelerinden k&ouml;ken alan heterojen bir grup t&uuml;m&ouml;rd&uuml;r. Abdominal distansiyon, sol &uuml;st kadran ağrısı ve daire şikayetleriyle başvuran 12 yaşındaki erkek hastaya yapılan tetkikler sonucu rastlantısal olarak primer retroperitoneal ganglion&ouml;rom saptanmıştır.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Neuroblastoma, ganglioneuroblastoma and ganglioneuroma are tumors of varying maturity derived from the primordial neural crest cells that form the sympathetic nervous system. A primary extraadrenal retroperitoneal ganglioneuroma was found incidentally in a 12-year-old boy during a series of examinations for abdominal distension, left upper quadrant pain and diarrhoea. Turkish Nöroblastom, ganglionöroblastom ve ganglionörom sempatik sinir sistemini oluşturan, değişik derecelerde olgunlaşmış, primordial nöral krest hücrelerinden köken alan heterojen bir grup tümördür. Abdominal distansiyon, sol üst kadran ağrısı ve daire şikayetleriyle başvuran 12 yaşındaki erkek hastaya yapılan tetkikler sonucu rastlantısal olarak primer retroperitoneal ganglionörom saptanmıştır.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "163-165",
+    "views": 5549,
+    "downloads": 2045,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1154",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1154",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1154",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1154",
+    "localPdfUrl": "js/data/pdfs/1154.pdf",
+    "pdfUrl": "js/data/pdfs/1154.pdf"
+  },
+  {
+    "id": 1158,
+    "type": "Case Report",
+    "title": "Is Fondaparinux an Effective Alternative Anticoagulant in Patients With Heparin-Induced Thrombocytopenia Type II? A Case Report and Review of the Literature",
+    "authors": [
+      {
+        "name": "Emre Tekgündüz",
+        "affiliation": "Department of Hematology, Haydarpaşa Training Hospital, Gülhane Military Medical School, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "SEVAL AKPINAR",
+        "affiliation": "Departments of Internal Medicine, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "ERMAN ÖZTÜRK",
+        "affiliation": "Departments of Hematology, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "GÜLSÜM EMEL PAMUK",
+        "affiliation": "Departments of Hematology, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Burhan TURGUT",
+        "affiliation": "Departments of Hematology, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Muzaffer DEMİR [[4]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Although rare, heparin-induced thrombocytopenia (HIT) is one of the most feared complications of heparin therapy. It is an antibody-mediated, acquired and transient thrombotic disorder following exposure to heparin. Unfractionated heparin is the standard anticoagulation used in hemodialysis sessions and hemodialysis patients who are continually exposed to heparin are at increased risk for HIT. We report a 75-year-old male patient with acute-on-chronic renal failure who subsequently developed HIT while on hemodialysis. The patient was presented with deep vein thrombosis and successfully treated with fondaparinux. In this report we also review the off-label use of fondaparinux for the treatment and prophylaxis of thrombosis in patients with HIT. As fondaparinux is too small to be recognized by the majority of heparin-reactive antibodies it could be a reasonable alternative anticoagulant for symptomatic HIT patients where licensed drugs like lepirudin and danaparoid are not available. Turkish Heparine bağlı trombositopeni (HIT) nadir olmasına karşın heparin tedavisinin en çok korkulan komplikasyonlarından biridir. Heparine bağlı trombositopeni heparin ile temas sonrası oluşan, antikor aracılı edinsel ve geçici bir trombotik bozukluktur. Fraksiyone olmayan heparin hemodiyaliz sırasında kullanılan standart antikoagülandır ve heparin ile sürekli temas eden hemodiyaliz hastalarında HIT riski artmıştır. Burada kronik zeminde akut böbrek yetersizliği olan ve hemodiyaliz sonrasında HIT gelişen 75 yaşında bir erkek hastayı bildiriyoruz. Hastada derin ven trombozu saptandı ve fondaparinuks ile başarıyla tedavi edildi. Bu yazımızda ayrıca HIT hastalarında gelişen trombozun profilaksi ve tedavisinde fondaparinuksun endikasyon dışı kullanımını derledik. Fondaparinuks heparin ile reaksiyon veren antikorların çoğunluğunca tanınmayacak kadar küçük olduğundan lepirudin ve danaparoid gibi lisanslı ilaçların bulunmadığı durumlarda, semptomatik HIT hastaları için mantıklı bir alternatif antikoagülan olabilir.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tAlthough rare, heparin-induced thrombocytopenia (HIT) is one of the most feared complications of heparin therapy. It is an antibody-mediated, acquired and transient thrombotic disorder following exposure to heparin. Unfractionated heparin is the standard anticoagulation used in hemodialysis sessions and hemodialysis patients who are continually exposed to heparin are at increased risk for HIT. We report a 75-year-old male patient with acute-on-chronic renal failure who subsequently developed HIT while on hemodialysis. The patient was presented with deep vein thrombosis and successfully treated with fondaparinux. In this report we also review the off-label use of fondaparinux for the treatment and prophylaxis of thrombosis in patients with HIT. As fondaparinux is too small to be recognized by the majority of heparin-reactive antibodies it could be a reasonable alternative anticoagulant for symptomatic HIT patients where licensed drugs like lepirudin and danaparoid are not available.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\tHeparine bağlı trombositopeni (HIT) nadir olmasına karşın heparin tedavisinin en &ccedil;ok korkulan komplikasyonlarından biridir. Heparine bağlı trombositopeni heparin ile temas sonrası oluşan, antikor aracılı edinsel ve ge&ccedil;ici bir trombotik bozukluktur. Fraksiyone olmayan heparin hemodiyaliz sırasında kullanılan standart antikoag&uuml;landır ve heparin ile s&uuml;rekli temas eden hemodiyaliz hastalarında HIT riski artmıştır. Burada kronik zeminde akut b&ouml;brek yetersizliği olan ve hemodiyaliz sonrasında HIT gelişen 75 yaşında bir erkek hastayı bildiriyoruz. Hastada derin ven trombozu saptandı ve fondaparinuks ile başarıyla tedavi edildi. Bu yazımızda ayrıca HIT hastalarında gelişen trombozun profilaksi ve tedavisinde fondaparinuksun endikasyon dışı kullanımını derledik. Fondaparinuks heparin ile reaksiyon veren antikorların &ccedil;oğunluğunca tanınmayacak kadar k&uuml;&ccedil;&uuml;k olduğundan lepirudin ve danaparoid gibi lisanslı ila&ccedil;ların bulunmadığı durumlarda, semptomatik HIT hastaları i&ccedil;in mantıklı bir alternatif antikoag&uuml;lan olabilir.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Although rare, heparin-induced thrombocytopenia (HIT) is one of the most feared complications of heparin therapy. It is an antibody-mediated, acquired and transient thrombotic disorder following exposure to heparin. Unfractionated heparin is the standard anticoagulation used in hemodialysis sessions and hemodialysis patients who are continually exposed to heparin are at increased risk for HIT. We report a 75-year-old male patient with acute-on-chronic renal failure who subsequently developed HIT while on hemodialysis. The patient was presented with deep vein thrombosis and successfully treated with fondaparinux. In this report we also review the off-label use of fondaparinux for the treatment and prophylaxis of thrombosis in patients with HIT. As fondaparinux is too small to be recognized by the majority of heparin-reactive antibodies it could be a reasonable alternative anticoagulant for symptomatic HIT patients where licensed drugs like lepirudin and danaparoid are not available. Turkish Heparine bağlı trombositopeni (HIT) nadir olmasına karşın heparin tedavisinin en çok korkulan komplikasyonlarından biridir. Heparine bağlı trombositopeni heparin ile temas sonrası oluşan, antikor aracılı edinsel ve geçici bir trombotik bozukluktur. Fraksiyone olmayan heparin hemodiyaliz sırasında kullanılan standart antikoagülandır ve heparin ile sürekli temas eden hemodiyaliz hastalarında HIT riski artmıştır. Burada kronik zeminde akut böbrek yetersizliği olan ve hemodiyaliz sonrasında HIT gelişen 75 yaşında bir erkek hastayı bildiriyoruz. Hastada derin ven trombozu saptandı ve fondaparinuks ile başarıyla tedavi edildi. Bu yazımızda ayrıca HIT hastalarında gelişen trombozun profilaksi ve tedavisinde fondaparinuksun endikasyon dışı kullanımını derledik. Fondaparinuks heparin ile reaksiyon veren antikorların çoğunluğunca tanınmayacak kadar küçük olduğundan lepirudin ve danaparoid gibi lisanslı ilaçların bulunmadığı durumlarda, semptomatik HIT hastaları için mantıklı bir alternatif antikoagülan olabilir.",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "166-172",
+    "views": 6459,
+    "downloads": 1998,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1158",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1158",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1158",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1158",
+    "localPdfUrl": "js/data/pdfs/1158.pdf",
+    "pdfUrl": "js/data/pdfs/1158.pdf"
+  },
+  {
+    "id": 1162,
+    "type": "Case Report",
+    "title": "A Rare Case of Schwannoma Arising From a Diverticulum in the First Portion of Duodenum",
+    "authors": [
+      {
+        "name": "Atakan SEZER",
+        "affiliation": "Departments of General Surgery, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "AHMET HATİPOĞLU",
+        "affiliation": "Departments of General Surgey, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ufuk Usta [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract A case of duodenal schwannoma, a rare tumor arising from schwannian cells of peripheral nerves is presented. A 57-year-old woman was admitted with abdominal pain and fever during investigation of anemia. Physical examination revealed tenderness in the right side of the upper abdomen. Laboratory tests showed no abnormality except for leucocytosis of 15 300/l. All tumor markers were negative. Ultrasonography revealed a hypoechoic mass adjacent to the duodenum. Computed tomography and magnetic resonance imaging showed a 4x3 cm mass in the same region and an abscess with dimensions of 8x11x12 cm in the right lobe of liver. Hepatic abscess drainage and duodenal diverticulectomy was performed. Histopathological examination revealed a tumorous mass composed of interlacing bundles of spindle cells, showing mild variations in nuclear shape and size. Immunohistochemically tumor cells were positive for S100 protein, thus, schwannoma of the duodenum was diagnosed. The postoperative course was uneventful and the patient was discharged on the eighth day of operation. Turkish Bu yazıda periferal sinir schwann hücrelerinden köken alan nadir bir duodenal schwannoma olgusu sunulmuştur. 57 yaşında bayan hasta anemi tetkiki sırasında ateş ve karın ağrısı şikayeti ile başvurdu. Fizik muayenesinde karın sağ üst kadranda hassasiyet tespit edildi. Laboratuar değerlerinde 15 300/l olan lökositoz haricinde anormallik yoktu. Tüm tümör belirteçleri normal değerlerdeydi. Ultrasonografide duodenuma yapışık hipoekoik kitle tespit edildi. Bilgisayarlı tomografi ve manyetik rezonans incelemede aynı lokalizasyonda 4x3 cm'lik kitle ve 8x11x12 cm'lik karaciğer sağ lobda abse bulundu. Hepatik abse drenajı ve duodenal divertikülektomi yapıldı. Histopatolojik incelemede şekil ve büyüklükte hafif derecede değişiklikler gösteren kesişen iğsi hücre kümeleri içeren tümöral kitle görüldü. İmmünohistokimyasal olarak tümör hücrelerinin S100 protein ile kuvvetli pozitiflik vermesi nedeni ile duodenal schwannoma tanısı kondu. Ameliyat sonrası dönemi sorunsuz geçen hasta 8. gün taburcu oldu. <",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tA case of duodenal schwannoma, a rare tumor arising from schwannian cells of peripheral nerves is presented. A 57-year-old woman was admitted with abdominal pain and fever during investigation of anemia. Physical examination revealed tenderness in the right side of the upper abdomen. Laboratory tests showed no abnormality except for leucocytosis of 15 300/l. All tumor markers were negative. Ultrasonography revealed a hypoechoic mass adjacent to the duodenum. Computed tomography and magnetic resonance imaging showed a 4x3 cm mass in the same region and an abscess with dimensions of 8x11x12 cm in the right lobe of liver. Hepatic abscess drainage and duodenal diverticulectomy was performed. Histopathological examination revealed a tumorous mass composed of interlacing bundles of spindle cells, showing mild variations in nuclear shape and size. Immunohistochemically tumor cells were positive for S100 protein, thus, schwannoma of the duodenum was diagnosed. The postoperative course was uneventful and the patient was discharged on the eighth day of operation.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\tBu yazıda periferal sinir schwann h&uuml;crelerinden k&ouml;ken alan nadir bir duodenal schwannoma olgusu sunulmuştur. 57 yaşında bayan hasta anemi tetkiki sırasında ateş ve karın ağrısı şikayeti ile başvurdu. Fizik muayenesinde karın sağ &uuml;st kadranda hassasiyet tespit edildi. Laboratuar değerlerinde 15 300/l olan l&ouml;kositoz haricinde anormallik yoktu. T&uuml;m t&uuml;m&ouml;r belirte&ccedil;leri normal değerlerdeydi. Ultrasonografide duodenuma yapışık hipoekoik kitle tespit edildi. Bilgisayarlı tomografi ve manyetik rezonans incelemede aynı lokalizasyonda 4x3 cm&#39;lik kitle ve 8x11x12 cm&#39;lik karaciğer sağ lobda abse bulundu. Hepatik abse drenajı ve duodenal divertik&uuml;lektomi yapıldı. Histopatolojik incelemede şekil ve b&uuml;y&uuml;kl&uuml;kte hafif derecede değişiklikler g&ouml;steren kesişen iğsi h&uuml;cre k&uuml;meleri i&ccedil;eren t&uuml;m&ouml;ral kitle g&ouml;r&uuml;ld&uuml;. İmm&uuml;nohistokimyasal olarak t&uuml;m&ouml;r h&uuml;crelerinin S100 protein ile kuvvetli pozitiflik vermesi nedeni ile duodenal schwannoma tanısı kondu. Ameliyat sonrası d&ouml;nemi sorunsuz ge&ccedil;en hasta 8. g&uuml;n taburcu oldu.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>\n\t\t<",
+    "previewText": "Abstract A case of duodenal schwannoma, a rare tumor arising from schwannian cells of peripheral nerves is presented. A 57-year-old woman was admitted with abdominal pain and fever during investigation of anemia. Physical examination revealed tenderness in the right side of the upper abdomen. Laboratory tests showed no abnormality except for leucocytosis of 15 300/l. All tumor markers were negative. Ultrasonography revealed a hypoechoic mass adjacent to the duodenum. Computed tomography and magnetic resonance imaging showed a 4x3 cm mass in the same region and an abscess with dimensions of 8x11x12 cm in the right lobe of liver. Hepatic abscess drainage and duodenal diverticulectomy was performed. Histopathological examination revealed a tumorous mass composed of interlacing bundles of spindle cells, showing mild variations in nuclear shape and size. Immunohistochemically tumor cells were positive for S100 protein, thus, schwannoma of the duodenum was diagnosed. The postoperative course was uneventful and the patient was discharged on the eighth day of operation. Turkish Bu yazıda periferal sinir schwann hücrelerinden köken alan nadir bir duodenal schwannoma olgusu sunulmuştur. 57 yaşında bayan hasta anemi tetkiki sırasında ateş ve karın ağrısı şikayeti ile başvurdu. Fizik muayenesinde karın sağ üst kadranda hassasiyet tespit edildi. Laboratuar değerlerinde 15 300/l olan lökositoz haricinde anormallik yoktu. Tüm tümör belirteçleri normal değerlerdeydi. Ultrasonografide duodenuma yapışık hipoekoik kitle tespit edildi. Bilgisayarlı tomografi ve manyetik rezonans incelemede aynı lokalizasyonda 4x3 cm'lik kitle ve 8x11x12 cm'lik karaciğer sağ lobda abse bulundu. Hepatik abse drenajı ve duodenal divertikülektomi yapıldı. Histopatolojik incelemede şekil ve büyüklükte hafif derecede değişiklikler gösteren kesişen iğsi hücre kümeleri içeren tümöral kitle görüldü. İmmünohistokimyasal olarak tümör hücrelerinin S100 protein ile kuvvetli pozitiflik vermesi nedeni ile duodenal schwannoma tanısı kondu. Ameliyat sonrası dönemi sorunsuz geçen hasta 8. gün taburcu oldu. <",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "173-177",
+    "views": 5967,
+    "downloads": 1902,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1162",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1162",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1162",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1162",
+    "localPdfUrl": "js/data/pdfs/1162.pdf",
+    "pdfUrl": "js/data/pdfs/1162.pdf"
+  },
+  {
+    "id": 1165,
+    "type": "Case Report",
+    "title": "A Case of Total Knee Arthroplasty in which Aeromonas Hydrophila Was Isolated in Perioperative Culture",
+    "authors": [
+      {
+        "name": "VİLDAN AVKAN OĞUZ",
+        "affiliation": "Departments of Infectious Diseases, Orthopedics and Traumatology, Medical Faculty of Dokuz Eylül University, İzmir",
+        "orcid": ""
+      },
+      {
+        "name": "BENGİSU AY",
+        "affiliation": "Departments of Infectious Diseases, Orthopedics and Traumatology, Medical Faculty of Dokuz Eylül University, İzmir",
+        "orcid": ""
+      },
+      {
+        "name": "VASFİ KARATOSUN",
+        "affiliation": "Departments of Infectious Diseases, Orthopedics and Traumatology, Medical Faculty of Dokuz Eylül University, İzmir",
+        "orcid": ""
+      },
+      {
+        "name": "ZEYNEP GÜLAY [[2]] </d",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Aeromonas hydrophila is a bacterium, which is found in ambient water and primarily causes gastroenteritis in humans. In recent years, Aeromonas strains have been reported to cause a variety of extraintesinal infections such as ocular, respiratory, urinary tract infections. The extraintestinal infections are usually rare. However, it is pointed that these bacteria can also be a cause of prosthesis infection after a total knee prosthesis operation in the represented case. In this report, a 73-year-old female patient was represented who had been operated twice because of prosthesis infection in another hospital and still has knee ache and purulent discharge at the incision site. In the perioperative bone and soft tissue cultures, A. hydrophila was isolated and it was shown that these bacteria could be the cause of prosthesis infection except known rare causes. In this case, it was emphasized that more than one perioperative bone and soft tissue cultures should be obtained to increase the chance for definitive diagnosis in prosthesis infection. Turkish Aeromonas hydrophila insanlarda çoğunlukla gastroenterit yapan ve sularda bulunan bir bakteridir. Son yıllarda Aeromonas türlerinin oküler, deri ve yumuşak doku, solunum sistemi ve üriner sistem infeksiyonu gibi çeşitli intestinal sistem dışı infeksiyonlara neden olduğu bildirilmektedir. İntestinal sistem dışı infeksiyonlar nadirdir. Bununla birlikte sunulan olguda bu bakterinin total diz protez ameliyatı sonrası protez infeksiyonu nedeni olabileceği gösterildi. Bu bildiride başka bir hastanede iki kez protez ameliyatı geçiren, hala ağrı ve pürülan akıntısı olan 73 yaşında bir bayan hasta sunuldu. Ameliyat sırasında alınan kemik ve yumuşak doku kültürlerinde A. hydrophila izole edilen olguda, bu bakterinin protez infeksiyonunun bilinen nadir etkenleri dışında protez infeksiyonu nedeni olabileceği gösterildi. Bu olguda protez infeksiyonlarında kesin tanı şansını artırmak için ameliyat sırasında birden fazla kemik ve yumuşak doku kültürünün alınması gerektiği vurgulandı. <",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tAeromonas hydrophila is a bacterium, which is found in ambient water and primarily causes gastroenteritis in humans. In recent years, Aeromonas strains have been reported to cause a variety of extraintesinal infections such as ocular, respiratory, urinary tract infections. The extraintestinal infections are usually rare. However, it is pointed that these bacteria can also be a cause of prosthesis infection after a total knee prosthesis operation in the represented case. In this report, a 73-year-old female patient was represented who had been operated twice because of prosthesis infection in another hospital and still has knee ache and purulent discharge at the incision site. In the perioperative bone and soft tissue cultures, A. hydrophila was isolated and it was shown that these bacteria could be the cause of prosthesis infection except known rare causes. In this case, it was emphasized that more than one perioperative bone and soft tissue cultures should be obtained to increase the chance for definitive diagnosis in prosthesis infection.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\tAeromonas hydrophila insanlarda &ccedil;oğunlukla gastroenterit yapan ve sularda bulunan bir bakteridir. Son yıllarda Aeromonas t&uuml;rlerinin ok&uuml;ler, deri ve yumuşak doku, solunum sistemi ve &uuml;riner sistem infeksiyonu gibi &ccedil;eşitli intestinal sistem dışı infeksiyonlara neden olduğu bildirilmektedir. İntestinal sistem dışı infeksiyonlar nadirdir. Bununla birlikte sunulan olguda bu bakterinin total diz protez ameliyatı sonrası protez infeksiyonu nedeni olabileceği g&ouml;sterildi. Bu bildiride başka bir hastanede iki kez protez ameliyatı ge&ccedil;iren, hala ağrı ve p&uuml;r&uuml;lan akıntısı olan 73 yaşında bir bayan hasta sunuldu. Ameliyat sırasında alınan kemik ve yumuşak doku k&uuml;lt&uuml;rlerinde A. hydrophila izole edilen olguda, bu bakterinin protez infeksiyonunun bilinen nadir etkenleri dışında protez infeksiyonu nedeni olabileceği g&ouml;sterildi. Bu olguda protez infeksiyonlarında kesin tanı şansını artırmak i&ccedil;in ameliyat sırasında birden fazla kemik ve yumuşak doku k&uuml;lt&uuml;r&uuml;n&uuml;n alınması gerektiği vurgulandı.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>\n\t\t<",
+    "previewText": "Abstract Aeromonas hydrophila is a bacterium, which is found in ambient water and primarily causes gastroenteritis in humans. In recent years, Aeromonas strains have been reported to cause a variety of extraintesinal infections such as ocular, respiratory, urinary tract infections. The extraintestinal infections are usually rare. However, it is pointed that these bacteria can also be a cause of prosthesis infection after a total knee prosthesis operation in the represented case. In this report, a 73-year-old female patient was represented who had been operated twice because of prosthesis infection in another hospital and still has knee ache and purulent discharge at the incision site. In the perioperative bone and soft tissue cultures, A. hydrophila was isolated and it was shown that these bacteria could be the cause of prosthesis infection except known rare causes. In this case, it was emphasized that more than one perioperative bone and soft tissue cultures should be obtained to increase the chance for definitive diagnosis in prosthesis infection. Turkish Aeromonas hydrophila insanlarda çoğunlukla gastroenterit yapan ve sularda bulunan bir bakteridir. Son yıllarda Aeromonas türlerinin oküler, deri ve yumuşak doku, solunum sistemi ve üriner sistem infeksiyonu gibi çeşitli intestinal sistem dışı infeksiyonlara neden olduğu bildirilmektedir. İntestinal sistem dışı infeksiyonlar nadirdir. Bununla birlikte sunulan olguda bu bakterinin total diz protez ameliyatı sonrası protez infeksiyonu nedeni olabileceği gösterildi. Bu bildiride başka bir hastanede iki kez protez ameliyatı geçiren, hala ağrı ve pürülan akıntısı olan 73 yaşında bir bayan hasta sunuldu. Ameliyat sırasında alınan kemik ve yumuşak doku kültürlerinde A. hydrophila izole edilen olguda, bu bakterinin protez infeksiyonunun bilinen nadir etkenleri dışında protez infeksiyonu nedeni olabileceği gösterildi. Bu olguda protez infeksiyonlarında kesin tanı şansını artırmak için ameliyat sırasında birden fazla kemik ve yumuşak doku kültürünün alınması gerektiği vurgulandı. <",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "178-181",
+    "views": 6628,
+    "downloads": 2036,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1165",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1165",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1165",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1165",
+    "localPdfUrl": "js/data/pdfs/1165.pdf",
+    "pdfUrl": "js/data/pdfs/1165.pdf"
+  },
+  {
+    "id": 1168,
+    "type": "Case Report",
+    "title": "Intraosseous Lipoma of the Ilium",
+    "authors": [
+      {
+        "name": "HALİL ÜNALAN",
+        "affiliation": "Department of Physical Therapy and Rehabilitation, Cerrahpaşa Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "HİLAL SEVER",
+        "affiliation": "Department of Physical Therapy and Rehabilitation, Cerrahpaşa Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "JAVID MAJLESI",
+        "affiliation": "Department of Medicana Hospital, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "PINAR IŞIKÇI",
+        "affiliation": "Department of Physical Therapy and Rehabilitation, Cerrahpaşa Medical Faculty of İstanbul University, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "CENGİZ BAHADIR [[3]] </d",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract We report a case of intraosseous lipoma of the ilium which to the best of our knowledge, has a very rare incidence. Intraosseous lipoma of bone itself has an incidence of approximately 1/1000 among all bone tumors. The most commonly involved sites are metaphyseal or epiphyseal regions of long bones such as femur, tibia, fibula, and calcaneus. First case of intraosseous lipoma involving the ilium was reported in 1988 and although the exact incidence is not known, based on the literature survey, we can suggest that this bone still seems to be among the least commonly involved bones by this tumor in humans. Turkish Bu makalede bildiğimiz kadarıyla çok nadir görülen iliumda intraosseöz lipom olgusu sunulmuştur. İntraosseöz lipom tüm kemik tümörleri arasında 1/1000 oranında görülmektedir. En çok tutulan bölgeler femur, tibia, fibula ve kalkaneus gibi uzun kemiklerin metafiz ya da epifiz bölümleridir. İliumda intraosseöz lipom olgusu ilk olarak 1988'de bildirilmiştir. İnsidansı tam olarak bilinemese de, literatür taramasına dayanarak insanlarda iliak kemiğin bu tümör tarafından tutulumunun günümüzde de son derece nadir görüldüğünü söyleyebiliriz. </d",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tWe report a case of intraosseous lipoma of the ilium which to the best of our knowledge, has a very rare incidence. Intraosseous lipoma of bone itself has an incidence of approximately 1/1000 among all bone tumors. The most commonly involved sites are metaphyseal or epiphyseal regions of long bones such as femur, tibia, fibula, and calcaneus. First case of intraosseous lipoma involving the ilium was reported in 1988 and although the exact incidence is not known, based on the literature survey, we can suggest that this bone still seems to be among the least commonly involved bones by this tumor in humans.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\tBu makalede bildiğimiz kadarıyla &ccedil;ok nadir g&ouml;r&uuml;len iliumda intraosse&ouml;z lipom olgusu sunulmuştur. İntraosse&ouml;z lipom t&uuml;m kemik t&uuml;m&ouml;rleri arasında 1/1000 oranında g&ouml;r&uuml;lmektedir. En &ccedil;ok tutulan b&ouml;lgeler femur, tibia, fibula ve kalkaneus gibi uzun kemiklerin metafiz ya da epifiz b&ouml;l&uuml;mleridir. İliumda intraosse&ouml;z lipom olgusu ilk olarak 1988&#39;de bildirilmiştir. İnsidansı tam olarak bilinemese de, literat&uuml;r taramasına dayanarak insanlarda iliak kemiğin bu t&uuml;m&ouml;r tarafından tutulumunun g&uuml;n&uuml;m&uuml;zde de son derece nadir g&ouml;r&uuml;ld&uuml;ğ&uuml;n&uuml; s&ouml;yleyebiliriz.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>\n\t\t</d",
+    "previewText": "Abstract We report a case of intraosseous lipoma of the ilium which to the best of our knowledge, has a very rare incidence. Intraosseous lipoma of bone itself has an incidence of approximately 1/1000 among all bone tumors. The most commonly involved sites are metaphyseal or epiphyseal regions of long bones such as femur, tibia, fibula, and calcaneus. First case of intraosseous lipoma involving the ilium was reported in 1988 and although the exact incidence is not known, based on the literature survey, we can suggest that this bone still seems to be among the least commonly involved bones by this tumor in humans. Turkish Bu makalede bildiğimiz kadarıyla çok nadir görülen iliumda intraosseöz lipom olgusu sunulmuştur. İntraosseöz lipom tüm kemik tümörleri arasında 1/1000 oranında görülmektedir. En çok tutulan bölgeler femur, tibia, fibula ve kalkaneus gibi uzun kemiklerin metafiz ya da epifiz bölümleridir. İliumda intraosseöz lipom olgusu ilk olarak 1988'de bildirilmiştir. İnsidansı tam olarak bilinemese de, literatür taramasına dayanarak insanlarda iliak kemiğin bu tümör tarafından tutulumunun günümüzde de son derece nadir görüldüğünü söyleyebiliriz. </d",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "182-185",
+    "views": 6125,
+    "downloads": 2213,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1168",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1168",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1168",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1168",
+    "localPdfUrl": "js/data/pdfs/1168.pdf",
+    "pdfUrl": "js/data/pdfs/1168.pdf"
+  },
+  {
+    "id": 1172,
+    "type": "Case Report",
+    "title": "Amifostine Treatment of a Patient with Refractory Acute Myeloid Leukemia",
+    "authors": [
+      {
+        "name": "Emre Tekgündüz",
+        "affiliation": "Department of Hematology, Haydarpaşa Training Hospital, Gülhane Military Medical School, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "ALEV AKYOL ERİKÇİ",
+        "affiliation": "Department of Hematology, Haydarpaşa Training Hospital, Gülhane Military Medical School, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Öztürk [[2]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract The prognosis for the majority of acute myeloid leukemia (AML) patients without a donor is dismal whether conventional salvage chemotherapy regimens or investigational strategies are used, and most of these patients will eventually die of their disease. There is no standard chemotherapy regimen that provides durable complete remission in patients with refractory AML. Beneficial effects of amifostine, either alone or in combination with conventional chemotherapy, was demonstrated in patients with myelodysplastic syndrome and poor prognosis AML. Here we report our second experience with AML patients who were successfully treated with an amifostine containing noncytotoxic drug combination. The beneficial effects of amifostine are not limited to cytoprotectivity which enables doseescalation for many chemotherapeutic agents, at least in some refractory AML it can also be used as a bridge to hematopoietic stem cell transplantation. Turkish regiİster konvansiyonel kurtarma kemoterapileri isterse araştırma temelli stratejiler kullanılsın, vericisi olmayan çoğu akut myeloid lösemi (AML) hastasının prognozu kötüdür ve bu hastaların çoğu hastalıkları nedeniyle kaybedilir. Dirençli AML hastalarında kalıcı tam yanıt sağlayan standart bir kemoterapi rejimi yoktur. Amifostinin tek başına ve konvansiyonel kemoterapiler ile birlikte kullanımının myelodisplastik sendrom ve kötü prognozlu AML hastalarında yararlı etkileri gösterilmiştir. Burada amifostin içeren sitotoksik olmayan ilaç kombinasyonu ile başarıyla tedavi edilen AML hastalarındaki ikinci deneyimimizi bildiriyoruz. Amifostinin yararlı etkileri birçok kemoterapi ilacının doz artımına olanak sağlayan hücre koruyuculuğu ile sınırlı değildir ve en azından bazı dirençli AML hastalarında kök hücre nakli için bir köprü olarak kullanılabilir. <",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tThe prognosis for the majority of acute myeloid leukemia (AML) patients without a donor is dismal whether conventional salvage chemotherapy regimens or investigational strategies are used, and most of these patients will eventually die of their disease. There is no standard chemotherapy regimen that provides durable complete remission in patients with refractory AML. Beneficial effects of amifostine, either alone or in combination with conventional chemotherapy, was demonstrated in patients with myelodysplastic syndrome and poor prognosis AML. Here we report our second experience with AML patients who were successfully treated with an amifostine containing noncytotoxic drug combination. The beneficial effects of amifostine are not limited to cytoprotectivity which enables doseescalation for many chemotherapeutic agents, at least in some refractory AML it can also be used as a bridge to hematopoietic stem cell transplantation.</p>\r\n<h3>\r\n\tTurkish</h3>\r\n<p>\r\n\tregiİster konvansiyonel kurtarma kemoterapileri isterse araştırma temelli stratejiler kullanılsın, vericisi olmayan &ccedil;oğu akut myeloid l&ouml;semi (AML) hastasının prognozu k&ouml;t&uuml;d&uuml;r ve bu hastaların &ccedil;oğu hastalıkları nedeniyle kaybedilir. Diren&ccedil;li AML hastalarında kalıcı tam yanıt sağlayan standart bir kemoterapi rejimi yoktur. Amifostinin tek başına ve konvansiyonel kemoterapiler ile birlikte kullanımının myelodisplastik sendrom ve k&ouml;t&uuml; prognozlu AML hastalarında yararlı etkileri g&ouml;sterilmiştir. Burada amifostin i&ccedil;eren sitotoksik olmayan ila&ccedil; kombinasyonu ile başarıyla tedavi edilen AML hastalarındaki ikinci deneyimimizi bildiriyoruz. Amifostinin yararlı etkileri bir&ccedil;ok kemoterapi ilacının doz artımına olanak sağlayan h&uuml;cre koruyuculuğu ile sınırlı değildir ve en azından bazı diren&ccedil;li AML hastalarında k&ouml;k h&uuml;cre nakli i&ccedil;in bir k&ouml;pr&uuml; olarak kullanılabilir.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>\n\t\t<",
+    "previewText": "Abstract The prognosis for the majority of acute myeloid leukemia (AML) patients without a donor is dismal whether conventional salvage chemotherapy regimens or investigational strategies are used, and most of these patients will eventually die of their disease. There is no standard chemotherapy regimen that provides durable complete remission in patients with refractory AML. Beneficial effects of amifostine, either alone or in combination with conventional chemotherapy, was demonstrated in patients with myelodysplastic syndrome and poor prognosis AML. Here we report our second experience with AML patients who were successfully treated with an amifostine containing noncytotoxic drug combination. The beneficial effects of amifostine are not limited to cytoprotectivity which enables doseescalation for many chemotherapeutic agents, at least in some refractory AML it can also be used as a bridge to hematopoietic stem cell transplantation. Turkish regiİster konvansiyonel kurtarma kemoterapileri isterse araştırma temelli stratejiler kullanılsın, vericisi olmayan çoğu akut myeloid lösemi (AML) hastasının prognozu kötüdür ve bu hastaların çoğu hastalıkları nedeniyle kaybedilir. Dirençli AML hastalarında kalıcı tam yanıt sağlayan standart bir kemoterapi rejimi yoktur. Amifostinin tek başına ve konvansiyonel kemoterapiler ile birlikte kullanımının myelodisplastik sendrom ve kötü prognozlu AML hastalarında yararlı etkileri gösterilmiştir. Burada amifostin içeren sitotoksik olmayan ilaç kombinasyonu ile başarıyla tedavi edilen AML hastalarındaki ikinci deneyimimizi bildiriyoruz. Amifostinin yararlı etkileri birçok kemoterapi ilacının doz artımına olanak sağlayan hücre koruyuculuğu ile sınırlı değildir ve en azından bazı dirençli AML hastalarında kök hücre nakli için bir köprü olarak kullanılabilir. <",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2009-01-01",
+    "volume": 26,
+    "issue": "2",
+    "pages": "186-188",
+    "views": 6883,
+    "downloads": 1954,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1148",
+    "sourceArticleId": "1172",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1172",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1172",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1172",
+    "localPdfUrl": "js/data/pdfs/1172.pdf",
+    "pdfUrl": "js/data/pdfs/1172.pdf"
+  }
+]

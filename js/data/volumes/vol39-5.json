@@ -1,0 +1,782 @@
+[
+  {
+    "id": 2433,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2433",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2433",
+    "localPdfUrl": "js/data/pdfs/2433.pdf",
+    "pdfUrl": "js/data/pdfs/2433.pdf"
+  },
+  {
+    "id": 2427,
+    "type": "Editorial",
+    "title": "Are We Acting Responsibly Against Multiple Submission?",
+    "authors": [
+      {
+        "name": "Zafer Koçak",
+        "affiliation": "Department of Radiation Oncology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A few months ago, we sent an article back to the author for revision after peer review. However, not getting a response from the author made us suspicious. When we searched the article title and author name on the internet, we saw that the article was just published in another journal. When we examined the submission process in the journal in which the artic",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.12082022",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "307-308",
+    "views": 7212,
+    "downloads": 4515,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2427",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2427",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2427",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2427",
+    "localPdfUrl": "js/data/pdfs/2427.pdf",
+    "pdfUrl": "js/data/pdfs/2427.pdf"
+  },
+  {
+    "id": 2423,
+    "type": "Invited Review",
+    "title": "Hemophagocytic Lymphohistiocytosis",
+    "authors": [
+      {
+        "name": "Ayşe Gonca Kaçar",
+        "affiliation": "Clinic of Pediatric Hematology and Oncology Adıyaman University Training and Research Hospital, Adıyaman, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tiraje Tülin Celkan",
+        "affiliation": "Division of Pediatric Hematology-Oncology, İstinye Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Hemophagocytic lymphohistiocytosis (HLH) is an aggressive life-threatening disease that consists of uncontrolled activated lymphocytes and macrophages that secrete excessive cytokines. Symptoms and laboratory findings of HLH include prolonged fever, cytopenia, hepatosplenomegaly, liver dysfunction, hypertriglyceridemia, hyperferritinemia, increased soluble interleukin-2 receptor, low fibrinogen, and neurological problems. HLH has two forms: primary (familial autosomal recessive) or secondary (related to infections, malignancy, autoimmune and metabolic disorders, transplantations, chimeric antigen receptor T-cell therapies, etc.) form. As underlying conditions in HLH varied, clinical findings are nonspecific and disease diagnosis is challenging. Furthermore, patients diagnosed with primary HLH can have a secondary triggering agent, such as infection. Thus, there is no clear-cut distinction between these two forms. Abnormal immune response and a low number or absence of natural killer cells and cytotoxic T-lymphocytes are hallmarks of HLH. Despite the early and aggressive treatment, HLH is a deadly disease. Urgent immunosuppressive therapy is necessary to control hyperinflammation. Hematopoietic stem cell transplantation is a curative treatment in familial forms. Targeted therapy with emapalumab was also recently reported to be effective.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Hemophagocytic lymphohistiocytosis (HLH) is an aggressive life-threatening disease that consists of uncontrolled activated lymphocytes and macrophages that secrete excessive cytokines. Symptoms and laboratory findings of HLH include prolonged fever, cytopenia, hepatosplenomegaly, liver dysfunction, hypertriglyceridemia, hyperferritinemia, increased soluble interleukin-2 receptor, low fibrinogen, and neurological problems. HLH has two forms: primary (familial autosomal recessive) or secondary (related to infections, malignancy, autoimmune and metabolic disorders, transplantations, chimeric antigen receptor T-cell therapies, etc.) form. As underlying conditions in HLH varied, clinical findings are nonspecific and disease diagnosis is challenging. Furthermore, patients diagnosed with primary HLH can have a secondary triggering agent, such as infection. Thus, there is no clear-cut distinction between these two forms. Abnormal immune response and a low number or absence of natural killer cells and cytotoxic T-lymphocytes are hallmarks of HLH. Despite the early and aggressive treatment, HLH is a deadly disease. Urgent immunosuppressive therapy is necessary to control hyperinflammation. Hematopoietic stem cell transplantation is a curative treatment in familial forms. Targeted therapy with emapalumab was also recently reported to be effective.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Hemophagocytic lymphohistiocytosis (HLH) is an aggressive life-threatening disease that consists of uncontrolled activated lymphocytes and macrophages that secrete excessive cytokines. Symptoms and laboratory findings of HLH include prolonged fever, cytopenia, hepatosplenomegaly, liver dysfunction, hypertriglyceridemia, hyperferritinemia, increased soluble interleukin-2 receptor, low fibrinogen, and neurological problems. HLH has two forms: primary (familial autosomal recessive) or secondary (related to infections, malignancy, autoimmune and metabolic disorders, transplantations, chimeric antigen receptor T-cell therapies, etc.) form. As underlying conditions in HLH varied, clinical findings are nonspecific and disease diagnosis is challenging. Furthermore, patients diagnosed with primary HLH can have a secondary triggering agent, such as infection. Thus, there is no clear-cut distinction between these two forms. Abnormal immune response and a low number or absence of natural killer cells and cytotoxic T-lymphocytes are hallmarks of HLH. Despite the early and aggressive treatment, HLH is a deadly disease. Urgent immunosuppressive therapy is necessary to control hyperinflammation. Hematopoietic stem cell transplantation is a curative treatment in familial forms. Targeted therapy with emapalumab was also recently reported to be effective.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-4-83",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "309-317",
+    "views": 9388,
+    "downloads": 8347,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2423",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2423",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2423",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2423",
+    "localPdfUrl": "js/data/pdfs/2423.pdf",
+    "pdfUrl": "js/data/pdfs/2423.pdf"
+  },
+  {
+    "id": 2430,
+    "type": "Invited Review",
+    "title": "Neuroinflammation in Parkinson",
+    "authors": [
+      {
+        "name": "Elif Çınar",
+        "affiliation": "Department of Pharmacology, Faculty of Medicine Zonguldak Bulent Ecevit University, Zonguldak, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Banu Cahide Tel",
+        "affiliation": "Department of Pharmacology, Faculty of Medicine Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gürdal Şahin",
+        "affiliation": "Lund University, Department of Clinical Sciences of Malmö and Lund, Lund, Sweden; Skåneuro Neurology Clinic, Lund, Sweden",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Parkinson’s disease (PD) is a complex, chronic, and progressive neurodegenerative disease that is characterized by irreversible dopaminergic neuronal loss in the substantia nigra. Alpha-synuclein is normally a synaptic protein that plays a key role in PD due to pathological accumulation as oligomers or fibrils. Clustered alpha-synuclein binds to the Toll-like receptors and activates the microglia, which initiates a process that continues with pro-inflammatory cytokine production and secretion. Pro-inflammatory cytokine overproduction and secretion induce cell death and accelerate PD progression. Microglia are found in a resting state in physiological conditions. Microglia became activated by stimulating Toll-like receptors on it under pathological conditions, such as alpha-synuclein aggregation, environmental toxins, or oxidative stress. The interaction between Toll-like receptors and its downstream pathway triggers an activation series, leads to nuclear factor-kappa B activation, initiates the inflammasome formation, and increases cytokine levels. This consecutive inflammatory process leads to dopaminergic cell damage and cell death. Microglia become overactive in response to chronic inflammation, which is observed in PD and causes excessive cytotoxic factor production, such as reactive oxidase, nitric oxide, and tumor necrosis factor-alpha. This inflammatory process contributes to the exacerbation of pathology by triggering neuronal damage or death. Current treatments, such as dopaminergic agonists, anticholinergics, or monoamine oxidase inhibitors alleviate PD symptoms, but they can not stop the disease progression. Finding a radical treatment option or stopping the progression is essential when considering that PD is the second most reported neurodegenerative disorder. Many cytokines are released during inflammation, and they can start the phagocytic process, which caused the degradation of infected cells along with healthy ones. Therefore, targeting the pathological mechanisms, such as microglial activation, mitochondrial dysfunction, and oxidative stress, that should be involved in the treatment program is important. Neuroinflammation is one of the key factors involved in PD pathogenesis as well as alpha-synuclein accumulation, synaptic dysfunction, or dopaminergic neuronal loss, especially in the substantia nigra. Therefore, evaluating the therapeutic efficiency of the mechanisms is important, such as microglial activation and nuclear factor-kappa B pathway or inflammasome formation inhibition, and cytokine release interruption against neuroinflammation may create new treatment possibilities for PD. This study examined the pathological relation between PD and neuroinflammation, and targeting neuroinflammation as an opportunity for PD treatments, such as Toll-like receptor antagonists, NOD-like receptor family pyrin domain containing-3 inflammasome inhibitors, cytokine inhibitors, peroxisome proliferator-activated receptor-γ agonists, reactive oxygen species inhibitors, and nonsteroidal anti-inflammatory drugs.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Parkinson&rsquo;s disease (PD) is a complex, chronic, and progressive neurodegenerative disease that is characterized by irreversible dopaminergic neuronal loss in the substantia nigra. Alpha-synuclein is normally a synaptic protein that plays a key role in PD due to pathological accumulation as oligomers or fibrils. Clustered alpha-synuclein binds to the Toll-like receptors and activates the microglia, which initiates a process that continues with pro-inflammatory cytokine production and secretion. Pro-inflammatory cytokine overproduction and secretion induce cell death and accelerate PD progression. Microglia are found in a resting state in physiological conditions. Microglia became activated by stimulating Toll-like receptors on it under pathological conditions, such as alpha-synuclein aggregation, environmental toxins, or oxidative stress. The interaction between Toll-like receptors and its downstream pathway triggers an activation series, leads to nuclear factor-kappa B activation, initiates the inflammasome formation, and increases cytokine levels. This consecutive inflammatory process leads to dopaminergic cell damage and cell death. Microglia become overactive in response to chronic inflammation, which is observed in PD and causes excessive cytotoxic factor production, such as reactive oxidase, nitric oxide, and tumor necrosis factor-alpha. This inflammatory process contributes to the exacerbation of pathology by triggering neuronal damage or death. Current treatments, such as dopaminergic agonists, anticholinergics, or monoamine oxidase inhibitors alleviate PD symptoms, but they can not stop the disease progression. Finding a radical treatment option or stopping the progression is essential when considering that PD is the second most reported neurodegenerative disorder. Many cytokines are released during inflammation, and they can start the phagocytic process, which caused the degradation of infected cells along with healthy ones. Therefore, targeting the pathological mechanisms, such as microglial activation, mitochondrial dysfunction, and oxidative stress, that should be involved in the treatment program is important. Neuroinflammation is one of the key factors involved in PD pathogenesis as well as alpha-synuclein accumulation, synaptic dysfunction, or dopaminergic neuronal loss, especially in the substantia nigra. Therefore, evaluating the therapeutic efficiency of the mechanisms is important, such as microglial activation and nuclear factor-kappa B pathway or inflammasome formation inhibition, and cytokine release interruption against neuroinflammation may create new treatment possibilities for PD. This study examined the pathological relation between PD and neuroinflammation, and targeting neuroinflammation as an opportunity for PD treatments, such as Toll-like receptor antagonists, NOD-like receptor family pyrin domain containing-3 inflammasome inhibitors, cytokine inhibitors, peroxisome proliferator-activated receptor-&gamma; agonists, reactive oxygen species inhibitors, and nonsteroidal anti-inflammatory drugs.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Parkinson’s disease (PD) is a complex, chronic, and progressive neurodegenerative disease that is characterized by irreversible dopaminergic neuronal loss in the substantia nigra. Alpha-synuclein is normally a synaptic protein that plays a key role in PD due to pathological accumulation as oligomers or fibrils. Clustered alpha-synuclein binds to the Toll-like receptors and activates the microglia, which initiates a process that continues with pro-inflammatory cytokine production and secretion. Pro-inflammatory cytokine overproduction and secretion induce cell death and accelerate PD progression. Microglia are found in a resting state in physiological conditions. Microglia became activated by stimulating Toll-like receptors on it under pathological conditions, such as alpha-synuclein aggregation, environmental toxins, or oxidative stress. The interaction between Toll-like receptors and its downstream pathway triggers an activation series, leads to nuclear factor-kappa B activation, initiates the inflammasome formation, and increases cytokine levels. This consecutive inflammatory process leads to dopaminergic cell damage and cell death. Microglia become overactive in response to chronic inflammation, which is observed in PD and causes excessive cytotoxic factor production, such as reactive oxidase, nitric oxide, and tumor necrosis factor-alpha. This inflammatory process contributes to the exacerbation of pathology by triggering neuronal damage or death. Current treatments, such as dopaminergic agonists, anticholinergics, or monoamine oxidase inhibitors alleviate PD symptoms, but they can not stop the disease progression. Finding a radical treatment option or stopping the progression is essential when considering that PD is the second most reported neurodegenerative disorder. Many cytokines are released during inflammation, and they can start the phagocytic process, which caused the degradation of infected cells along with healthy ones. Therefore, targeting the pathological mechanisms, such as microglial activation, mitochondrial dysfunction, and oxidative stress, that should be involved in the treatment program is important. Neuroinflammation is one of the key factors involved in PD pathogenesis as well as alpha-synuclein accumulation, synaptic dysfunction, or dopaminergic neuronal loss, especially in the substantia nigra. Therefore, evaluating the therapeutic efficiency of the mechanisms is important, such as microglial activation and nuclear factor-kappa B pathway or inflammasome formation inhibition, and cytokine release interruption against neuroinflammation may create new treatment possibilities for PD. This study examined the pathological relation between PD and neuroinflammation, and targeting neuroinflammation as an opportunity for PD treatments, such as Toll-like receptor antagonists, NOD-like receptor family pyrin domain containing-3 inflammasome inhibitors, cytokine inhibitors, peroxisome proliferator-activated receptor-γ agonists, reactive oxygen species inhibitors, and nonsteroidal anti-inflammatory drugs.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-7-100",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "318-333",
+    "views": 8352,
+    "downloads": 8310,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2430",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2430",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2430",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2430",
+    "localPdfUrl": "js/data/pdfs/2430.pdf",
+    "pdfUrl": "js/data/pdfs/2430.pdf"
+  },
+  {
+    "id": 2432,
+    "type": "Invited Review",
+    "title": "Podcasting as a Learning Tool in Medical Education: Prior to and During the Pandemic Period",
+    "authors": [
+      {
+        "name": "Ryan Okonski",
+        "affiliation": "Medicine Sinai Hospital of Baltimore, New York, United States",
+        "orcid": ""
+      },
+      {
+        "name": "Serkan Toy",
+        "affiliation": "Basic Science Education Virginia Tech Carilion School of Medicine, Roanake, United States",
+        "orcid": ""
+      },
+      {
+        "name": "Jed Wolpaw",
+        "affiliation": "Anesthesiology and Critical Care Medicine Johns Hopkins University School of Medicine, Baltimore, United States",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Podcasting as a Learning Tool in Medical Education: Before and During the Pandemic Period Podcasts have seen significant growth as a medium for medical education over the last 15 years. The COVID-19 pandemic altered the way in which medical education is delivered to learners, including medical students, resident physicians, fellows, and practicing clinicians in the form of continuing medical education. A literature search using Google Scholar, PubMed, and NCBI was conducted to analyze and discuss how podcasts are utilized in medical education-both before and during the pandemic-and how this form of asynchronous education may influence clinical decision-making and patient outcomes. Finally, this review discusses how learners’ habits while using podcasts may affect the way in which the information is internalized and the future of using podcasts to supplement medical education.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p>Podcasting as a Learning Tool in Medical Education: Before and During the Pandemic Period Podcasts have seen significant growth as a medium for medical education over the last 15 years. The COVID-19 pandemic altered the way in which medical education is delivered to learners, including medical students, resident physicians, fellows, and practicing clinicians in the form of continuing medical education. A literature search using Google Scholar, PubMed, and NCBI was conducted to analyze and discuss how podcasts are utilized in medical education-both before and during the pandemic-and how this form of asynchronous education may influence clinical decision-making and patient outcomes. Finally, this review discusses how learners&rsquo; habits while using podcasts may affect the way in which the information is internalized and the future of using podcasts to supplement medical education.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Podcasting as a Learning Tool in Medical Education: Before and During the Pandemic Period Podcasts have seen significant growth as a medium for medical education over the last 15 years. The COVID-19 pandemic altered the way in which medical education is delivered to learners, including medical students, resident physicians, fellows, and practicing clinicians in the form of continuing medical education. A literature search using Google Scholar, PubMed, and NCBI was conducted to analyze and discuss how podcasts are utilized in medical education-both before and during the pandemic-and how this form of asynchronous education may influence clinical decision-making and patient outcomes. Finally, this review discusses how learners’ habits while using podcasts may affect the way in which the information is internalized and the future of using podcasts to supplement medical education.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-7-81",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "334-339",
+    "views": 8850,
+    "downloads": 8626,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2432",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2432",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2432",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2432",
+    "localPdfUrl": "js/data/pdfs/2432.pdf",
+    "pdfUrl": "js/data/pdfs/2432.pdf"
+  },
+  {
+    "id": 2408,
+    "type": "Original Article",
+    "title": "Is Seizure an Adverse Effect of Salbutamol in the Pediatric Population?",
+    "authors": [
+      {
+        "name": "Metin Uysalol",
+        "affiliation": "Department of Pediatric Emergency, İstanbul Faculty of Medicine İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Raif Yıldız",
+        "affiliation": "Department of Pediatric Emergency, İstanbul Faculty of Medicine İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zeynep Güneş Özünal",
+        "affiliation": "Department of Medical Pharmacology, Faculty of Medicine Maltepe University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Although studies on epileptic seizures occurring during acute asthma attacks are limited, there is widespread belief among families and physicians that salbutamol causes seizures.Aims: To investigate whether salbutamol triggers seizures in patients with epilepsy and asthma.Study Design: A retrospective cohort study.Methods: Epilepsy and asthma in patients aged 2-18 years who were admitted to the pediatric emergency department because of asthma attacks between January 2016 and December 2016 in a university hospital were evaluated retrospectively. The inclusion criteria were age 2–18 years, previous diagnosis of epilepsy and asthma, and admission to the pediatric emergency department due to asthma attacks.Results: 276 medical records were evaluated. The seizure group had a longer period of diagnosis for epilepsy than the seizure absent group in the pediatric emergency department (5.4 years and 3.1, respectively). According to the logistic regression analysis, the duration of seizures in the emergency department, duration of asthma diagnosis, duration of epilepsy diagnosis, uncontrolled asthma, and severity of asthma attack in the pediatric emergency department have significantly increased the possibility of having a seizure during an asthma attack in our study population.Conclusion: This study shows that patients using salbutamol have a lower risk of epileptic seizures than those who do not use salbutamol. This result should be verified by studies containing a large number of patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Although studies on epileptic seizures occurring during acute asthma attacks are limited, there is widespread belief among families and physicians that salbutamol causes seizures.<br /><strong>Aims:</strong> To investigate whether salbutamol triggers seizures in patients with epilepsy and asthma.<br /><strong>Study Design:</strong> A retrospective cohort study.<br /><strong>Methods:</strong> Epilepsy and asthma in patients aged 2-18 years who were admitted to the pediatric emergency department because of asthma attacks between January 2016 and December 2016 in a university hospital were evaluated retrospectively. The inclusion criteria were age 2&ndash;18 years, previous diagnosis of epilepsy and asthma, and admission to the pediatric emergency department due to asthma attacks.<br /><strong>Results:</strong> 276 medical records were evaluated. The seizure group had a longer period of diagnosis for epilepsy than the seizure absent group in the pediatric emergency department (5.4 years and 3.1, respectively). According to the logistic regression analysis, the duration of seizures in the emergency department, duration of asthma diagnosis, duration of epilepsy diagnosis, uncontrolled asthma, and severity of asthma attack in the pediatric emergency department have significantly increased the possibility of having a seizure during an asthma attack in our study population.<br /><strong>Conclusion:</strong> This study shows that patients using salbutamol have a lower risk of epileptic seizures than those who do not use salbutamol. This result should be verified by studies containing a large number of patients.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Although studies on epileptic seizures occurring during acute asthma attacks are limited, there is widespread belief among families and physicians that salbutamol causes seizures.Aims: To investigate whether salbutamol triggers seizures in patients with epilepsy and asthma.Study Design: A retrospective cohort study.Methods: Epilepsy and asthma in patients aged 2-18 years who were admitted to the pediatric emergency department because of asthma attacks between January 2016 and December 2016 in a university hospital were evaluated retrospectively. The inclusion criteria were age 2–18 years, previous diagnosis of epilepsy and asthma, and admission to the pediatric emergency department due to asthma attacks.Results: 276 medical records were evaluated. The seizure group had a longer period of diagnosis for epilepsy than the seizure absent group in the pediatric emergency department (5.4 years and 3.1, respectively). According to the logistic regression analysis, the duration of seizures in the emergency department, duration of asthma diagnosis, duration of epilepsy diagnosis, uncontrolled asthma, and severity of asthma attack in the pediatric emergency department have significantly increased the possibility of having a seizure during an asthma attack in our study population.Conclusion: This study shows that patients using salbutamol have a lower risk of epileptic seizures than those who do not use salbutamol. This result should be verified by studies containing a large number of patients.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-3-103",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "340-344",
+    "views": 8347,
+    "downloads": 4934,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2408",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2408",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2408",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2408",
+    "localPdfUrl": "js/data/pdfs/2408.pdf",
+    "pdfUrl": "js/data/pdfs/2408.pdf"
+  },
+  {
+    "id": 2422,
+    "type": "Original Article",
+    "title": "Single Institutional Experience with GM1 Gangliosidosis: Clinical and Laboratory Results of 14 Patients",
+    "authors": [
+      {
+        "name": "Halil Tuna Akar",
+        "affiliation": "Department of Pediatrics, Pediatric Metabolism Unit, Faculty of Medicine, Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yılmaz Yıldız",
+        "affiliation": "Department of Pediatrics, Pediatric Metabolism Unit, Faculty of Medicine, Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gökhan Güvenkaya",
+        "affiliation": "Department of Pediatrics, Faculty of Medicine, Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kısmet Çıkı",
+        "affiliation": "Department of Pediatrics, Pediatric Metabolism Unit, Faculty of Medicine, Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayça Burcu Kahraman",
+        "affiliation": "Department of Pediatrics, Pediatric Metabolism Unit, Faculty of Medicine, Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İzzet Erdal",
+        "affiliation": "Department of Pediatrics, Pediatric Metabolism Unit, Faculty of Medicine, Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Turgay Coşkun",
+        "affiliation": "Department of Pediatrics, Pediatric Metabolism Unit, Faculty of Medicine, Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Dursun",
+        "affiliation": "Department of Pediatrics, Pediatric Metabolism Unit, Faculty of Medicine, Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hatice Serap Sivri",
+        "affiliation": "Department of Pediatrics, Pediatric Metabolism Unit, Faculty of Medicine, Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşegül Tokatlı[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: GM1 gangliosidosis is an autosomal recessive lysosomal storage disease caused by biallelic mutations in the GLB1 gene. Neurodegeneration, hypotonia, visceromegaly, macular cherry-red spots, skeletal dysplasia, and coarse and dysmorphic face are the major clinical features.Aims: To evaluate the demographic and clinical data of patients with GM1 gangliosidosis in a single center.Study Design: A retrospective clinical study.Methods: This study included patients followed at Hacettepe University İhsan Doğramacı Children’s Hospital Pediatric Metabolism Unit with the diagnosis of GM1 gangliosidosis between 1988 and 2021. Hospital records of the patients were reviewed for demographic, clinical, and laboratory findings.Results: Fourteen patients were included in the study and 10 (71.4%) were male. The age at onset of clinical symptoms was between 0 and 5 months, and the median time to diagnosis after the first symptom was 4.3 (0-13) months. Motor delay (54%) was the most common initial symptom. The median follow-up period was 14.8 (0.4-92.2) months. Twelve patients (85.7%) died, and all deaths occurred before the age of 24 months. The median survival was 21.3 (95% confidence interval, 15.5-24.9) months. Higher leukocyte beta-galactosidase activity correlated with later age at onset (ρ = 0.575), later age at diagnosis (ρ = 0.618), and longer diagnostic delay (ρ = 0.702) (ρ < 0.05).Conclusion: Median survival in patients with GM1 gangliosidosis is less than 24 months. Beta-galactosidase enzyme activity may be associated with clinical onset and time of diagnosis in these patients. <",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> GM1 gangliosidosis is an autosomal recessive lysosomal storage disease caused by biallelic mutations in the <em>GLB1 </em>gene. Neurodegeneration, hypotonia, visceromegaly, macular cherry-red spots, skeletal dysplasia, and coarse and dysmorphic face are the major clinical features.<br /><strong>Aims:</strong> To evaluate the demographic and clinical data of patients with GM1 gangliosidosis in a single center.<br /><strong>Study Design:</strong> A retrospective clinical study.<br /><strong>Methods:</strong> This study included patients followed at Hacettepe University İhsan Doğramacı Children&rsquo;s Hospital Pediatric Metabolism Unit with the diagnosis of GM1 gangliosidosis between 1988 and 2021. Hospital records of the patients were reviewed for demographic, clinical, and laboratory findings.<br /><strong>Results:</strong> Fourteen patients were included in the study and 10 (71.4%) were male. The age at onset of clinical symptoms was between 0 and 5 months, and the median time to diagnosis after the first symptom was 4.3 (0-13) months. Motor delay (54%) was the most common initial symptom. The median follow-up period was 14.8 (0.4-92.2) months. Twelve patients (85.7%) died, and all deaths occurred before the age of 24 months. The median survival was 21.3 (95% confidence interval, 15.5-24.9) months. Higher leukocyte beta-galactosidase activity correlated with later age at onset (<em>&rho;</em> = 0.575), later age at diagnosis (<em>&rho;</em> = 0.618), and longer diagnostic delay (<em>&rho;</em> = 0.702) (<em>&rho;</em> &lt; 0.05).<br /><strong>Conclusion:</strong> Median survival in patients with GM1 gangliosidosis is less than 24 months. Beta-galactosidase enzyme activity may be associated with clinical onset and time of diagnosis in these patients.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>\n\t\t<",
+    "previewText": "Abstract Background: GM1 gangliosidosis is an autosomal recessive lysosomal storage disease caused by biallelic mutations in the GLB1 gene. Neurodegeneration, hypotonia, visceromegaly, macular cherry-red spots, skeletal dysplasia, and coarse and dysmorphic face are the major clinical features.Aims: To evaluate the demographic and clinical data of patients with GM1 gangliosidosis in a single center.Study Design: A retrospective clinical study.Methods: This study included patients followed at Hacettepe University İhsan Doğramacı Children’s Hospital Pediatric Metabolism Unit with the diagnosis of GM1 gangliosidosis between 1988 and 2021. Hospital records of the patients were reviewed for demographic, clinical, and laboratory findings.Results: Fourteen patients were included in the study and 10 (71.4%) were male. The age at onset of clinical symptoms was between 0 and 5 months, and the median time to diagnosis after the first symptom was 4.3 (0-13) months. Motor delay (54%) was the most common initial symptom. The median follow-up period was 14.8 (0.4-92.2) months. Twelve patients (85.7%) died, and all deaths occurred before the age of 24 months. The median survival was 21.3 (95% confidence interval, 15.5-24.9) months. Higher leukocyte beta-galactosidase activity correlated with later age at onset (ρ = 0.575), later age at diagnosis (ρ = 0.618), and longer diagnostic delay (ρ = 0.702) (ρ < 0.05).Conclusion: Median survival in patients with GM1 gangliosidosis is less than 24 months. Beta-galactosidase enzyme activity may be associated with clinical onset and time of diagnosis in these patients. <",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-3-75",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "345-350",
+    "views": 7204,
+    "downloads": 4514,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2422",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2422",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2422",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2422",
+    "localPdfUrl": "js/data/pdfs/2422.pdf",
+    "pdfUrl": "js/data/pdfs/2422.pdf"
+  },
+  {
+    "id": 2424,
+    "type": "Original Article",
+    "title": "Comparison of Stroke Volume Variation-based goal-directed Therapy Versus Standard Fluid Therapy in Patients Undergoing Head and Neck Surgery: A Randomized Controlled Study",
+    "authors": [
+      {
+        "name": "Nuray Turkut",
+        "affiliation": "Department of Anesthesiology, İstanbul Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Demet Altun",
+        "affiliation": "Department of Anesthesiology, İstanbul Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nur Canbolat",
+        "affiliation": "Department of Anesthesiology, İstanbul Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cansu Uzuntürk",
+        "affiliation": "Department of Anesthesiology, İstanbul Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cömert Şen",
+        "affiliation": "Department of Otolaryngology, İstanbul Faculty of Medicine İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Emre Çamcı",
+        "affiliation": "Department of Anesthesiology, İstanbul Faculty of Medicine, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Perioperative fluid therapy is used to avoid dehydration and hypovolemia. Optimum perioperative fluid administration may improve postoperative outcomes after major surgery, and the optimal strategy remains controversial and uncertain.Aims: The primary outcome was the total amount of intraoperative fluids given between perioperative goal-directed fluid therapy (GDFT) guided by a hemodynamic monitoring system and standard fluid therapy based on “mean arterial pressure-diuresis” data in patients undergoing head and neck surgery. The secondary outcomes were the hemodynamics and laboratory variables, postoperative complications, length of mechanical ventilation, intensive care unit and hospital stay.Study Design: A randomized controlled studyMethods: Sixty patients were scheduled and randomized into two groups of 30 patients each: in the study group, an arterial pressure catheter was inserted and connected to the FloTrac system, whereas in the control group, an arterial pressure catheter was inserted and integrated into the hemodynamic monitoring system with a special transducer. The control group had fluids administered at the discretion of the anesthesiologist according to the mean arterial pressure >65 mmHg and diuresis >0.5 ml/kg/h. In the study group, fluid management was administered to achieve a target value of ≤13% through the stroke volume variation.Results: The total amounts of fluid in the intraoperative period were different between the groups, with the study group receiving significantly more fluids (P = 0.0455). The length of hospital stay was significantly longer in the study group than in the control group (P = 0.012), but prolonged oxygen demand was significantly more frequent in the control group than in the study group (P = 0.017). No difference was found in hemodynamics, lactate kinetics, and vasoactive agent requirements.Conclusion: The standard fluid therapy guided by conventional circulatory parameters appears sufficient for patients with low-to-moderate risk during head and neck surgery.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Perioperative fluid therapy is used to avoid dehydration and hypovolemia. Optimum perioperative fluid administration may improve postoperative outcomes after major surgery, and the optimal strategy remains controversial and uncertain.<br /><strong>Aims:</strong> The primary outcome was the total amount of intraoperative fluids given between perioperative goal-directed fluid therapy (GDFT) guided by a hemodynamic monitoring system and standard fluid therapy based on &ldquo;mean arterial pressure-diuresis&rdquo; data in patients undergoing head and neck surgery. The secondary outcomes were the hemodynamics and laboratory variables, postoperative complications, length of mechanical ventilation, intensive care unit and hospital stay.<br /><strong>Study Design:</strong> A randomized controlled study<br /><strong>Methods:</strong> Sixty patients were scheduled and randomized into two groups of 30 patients each: in the study group, an arterial pressure catheter was inserted and connected to the FloTrac system, whereas in the control group, an arterial pressure catheter was inserted and integrated into the hemodynamic monitoring system with a special transducer. The control group had fluids administered at the discretion of the anesthesiologist according to the mean arterial pressure &gt;65 mmHg and diuresis &gt;0.5 ml/kg/h. In the study group, fluid management was administered to achieve a target value of &le;13% through the stroke volume variation.<br /><strong>Results:</strong> The total amounts of fluid in the intraoperative period were different between the groups, with the study group receiving significantly more fluids (<em>P</em> = 0.0455). The length of hospital stay was significantly longer in the study group than in the control group (<em>P</em> = 0.012), but prolonged oxygen demand was significantly more frequent in the control group than in the study group (<em>P</em> = 0.017). No difference was found in hemodynamics, lactate kinetics, and vasoactive agent requirements.<br /><strong>Conclusion:</strong> The standard fluid therapy guided by conventional circulatory parameters appears sufficient for patients with low-to-moderate risk during head and neck surgery.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Perioperative fluid therapy is used to avoid dehydration and hypovolemia. Optimum perioperative fluid administration may improve postoperative outcomes after major surgery, and the optimal strategy remains controversial and uncertain.Aims: The primary outcome was the total amount of intraoperative fluids given between perioperative goal-directed fluid therapy (GDFT) guided by a hemodynamic monitoring system and standard fluid therapy based on “mean arterial pressure-diuresis” data in patients undergoing head and neck surgery. The secondary outcomes were the hemodynamics and laboratory variables, postoperative complications, length of mechanical ventilation, intensive care unit and hospital stay.Study Design: A randomized controlled studyMethods: Sixty patients were scheduled and randomized into two groups of 30 patients each: in the study group, an arterial pressure catheter was inserted and connected to the FloTrac system, whereas in the control group, an arterial pressure catheter was inserted and integrated into the hemodynamic monitoring system with a special transducer. The control group had fluids administered at the discretion of the anesthesiologist according to the mean arterial pressure >65 mmHg and diuresis >0.5 ml/kg/h. In the study group, fluid management was administered to achieve a target value of ≤13% through the stroke volume variation.Results: The total amounts of fluid in the intraoperative period were different between the groups, with the study group receiving significantly more fluids (P = 0.0455). The length of hospital stay was significantly longer in the study group than in the control group (P = 0.012), but prolonged oxygen demand was significantly more frequent in the control group than in the study group (P = 0.017). No difference was found in hemodynamics, lactate kinetics, and vasoactive agent requirements.Conclusion: The standard fluid therapy guided by conventional circulatory parameters appears sufficient for patients with low-to-moderate risk during head and neck surgery.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-1-88",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "351-357",
+    "views": 7765,
+    "downloads": 4803,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2424",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2424",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2424",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2424",
+    "localPdfUrl": "js/data/pdfs/2424.pdf",
+    "pdfUrl": "js/data/pdfs/2424.pdf"
+  },
+  {
+    "id": 2429,
+    "type": "Original Article",
+    "title": "Can Hypotension Episodes that were not Identified in the Non-Invasive Blood Pressure be Detected during Cesarean Section? A Randomized Controlled Trial",
+    "authors": [
+      {
+        "name": "Asude Ayhan",
+        "affiliation": "Department of Anaesthesiology and Reanimation, Faculty of Medicine Başkent University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nükhet Akovalı",
+        "affiliation": "Department of Anaesthesiology and Reanimation, Faculty of Medicine Başkent University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aynur Camkıran Fırat",
+        "affiliation": "Department of Anaesthesiology and Reanimation, Faculty of Medicine İstinye University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Neuraxial anesthesia is a commonly used technique for cesarean section (C/S) because of its simplicity, rapid onset of action, and the requirement of lower doses of anesthetic agents with the lack of uteroplacental transfer. However, this type of anesthesia often causes sudden onset of hypotension, and its pathogenesis is not yet clearly understood.Aims: To evaluate the efficacy and necessity of continuous non-invasive arterial pressure (CNAP) by comparing it with non-invasive blood pressure (NIBP) in order to understand whether it has advantages over oscillometric technique for detection of hypotensive episodes in healthy pregnant women who underwent C/S under neuraxial anesthesia.Study Design: A randomized controlled study.Methods: This prospective study evaluated healthy pregnant women at term who were scheduled for elective C/S under spinal anesthesia. Subjects were randomly assigned into two groups to receive either CNAP and NIBP, or only NIBP. A 30% decrease in systolic blood pressure from either baseline or the measured values in the first two minutes, or if the systolic blood pressure was less than 90 mmHg, is considered hypotension. Pre-, peri-, and postoperative specifications; newborn characteristics; and complications were recorded and compared.Results: A total of 106 individuals were enrolled in the study, with 53 parturients in each group. They were equally distributed in both groups (P > 0.05). The oscillometric method failed to detect hypotension in 8 out of 29 pregnant women who were noted to be hypotensive with CNAP. The number of hypotension events detected was higher, and the time to detection of the first episode of hypotension was shorter in the CNAP group (P > 0.05). A total of four newborns required intensive care unit treatment, one of whom needed mechanical ventilator support, all born to mothers in the CNAP group (P > 0.05).Conclusion: Continuous non-invasive arterial pressure in detecting hypotensive episodes does not provide an additional advantage to healthy pregnant women undergoing elective cesarean section.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Neuraxial anesthesia is a commonly used technique for cesarean section (C/S) because of its simplicity, rapid onset of action, and the requirement of lower doses of anesthetic agents with the lack of uteroplacental transfer. However, this type of anesthesia often causes sudden onset of hypotension, and its pathogenesis is not yet clearly understood.<br /><strong>Aims:</strong> To evaluate the efficacy and necessity of continuous non-invasive arterial pressure (CNAP) by comparing it with non-invasive blood pressure (NIBP) in order to understand whether it has advantages over oscillometric technique for detection of hypotensive episodes in healthy pregnant women who underwent C/S under neuraxial anesthesia.<br /><strong>Study Design:</strong> A randomized controlled study.<br /><strong>Methods:</strong> This prospective study evaluated healthy pregnant women at term who were scheduled for elective C/S under spinal anesthesia. Subjects were randomly assigned into two groups to receive either CNAP and NIBP, or only NIBP. A 30% decrease in systolic blood pressure from either baseline or the measured values in the first two minutes, or if the systolic blood pressure was less than 90 mmHg, is considered hypotension. Pre-, peri-, and postoperative specifications; newborn characteristics; and complications were recorded and compared.<br /><strong>Results:</strong> A total of 106 individuals were enrolled in the study, with 53 parturients in each group. They were equally distributed in both groups (<em>P</em> &gt; 0.05). The oscillometric method failed to detect hypotension in 8 out of 29 pregnant women who were noted to be hypotensive with CNAP. The number of hypotension events detected was higher, and the time to detection of the first episode of hypotension was shorter in the CNAP group (<em>P</em> &gt; 0.05). A total of four newborns required intensive care unit treatment, one of whom needed mechanical ventilator support, all born to mothers in the CNAP group (<em>P</em> &gt; 0.05).<br /><strong>Conclusion:</strong> Continuous non-invasive arterial pressure in detecting hypotensive episodes does not provide an additional advantage to healthy pregnant women undergoing elective cesarean section.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Neuraxial anesthesia is a commonly used technique for cesarean section (C/S) because of its simplicity, rapid onset of action, and the requirement of lower doses of anesthetic agents with the lack of uteroplacental transfer. However, this type of anesthesia often causes sudden onset of hypotension, and its pathogenesis is not yet clearly understood.Aims: To evaluate the efficacy and necessity of continuous non-invasive arterial pressure (CNAP) by comparing it with non-invasive blood pressure (NIBP) in order to understand whether it has advantages over oscillometric technique for detection of hypotensive episodes in healthy pregnant women who underwent C/S under neuraxial anesthesia.Study Design: A randomized controlled study.Methods: This prospective study evaluated healthy pregnant women at term who were scheduled for elective C/S under spinal anesthesia. Subjects were randomly assigned into two groups to receive either CNAP and NIBP, or only NIBP. A 30% decrease in systolic blood pressure from either baseline or the measured values in the first two minutes, or if the systolic blood pressure was less than 90 mmHg, is considered hypotension. Pre-, peri-, and postoperative specifications; newborn characteristics; and complications were recorded and compared.Results: A total of 106 individuals were enrolled in the study, with 53 parturients in each group. They were equally distributed in both groups (P > 0.05). The oscillometric method failed to detect hypotension in 8 out of 29 pregnant women who were noted to be hypotensive with CNAP. The number of hypotension events detected was higher, and the time to detection of the first episode of hypotension was shorter in the CNAP group (P > 0.05). A total of four newborns required intensive care unit treatment, one of whom needed mechanical ventilator support, all born to mothers in the CNAP group (P > 0.05).Conclusion: Continuous non-invasive arterial pressure in detecting hypotensive episodes does not provide an additional advantage to healthy pregnant women undergoing elective cesarean section.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-3-130",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "358-365",
+    "views": 7069,
+    "downloads": 4689,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2429",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2429",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2429",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2429",
+    "localPdfUrl": "js/data/pdfs/2429.pdf",
+    "pdfUrl": "js/data/pdfs/2429.pdf"
+  },
+  {
+    "id": 2434,
+    "type": "Original Article",
+    "title": "Pulmonary Embolism in Childhood: A Multicenter Experience from Turkey",
+    "authors": [
+      {
+        "name": "Melih Hangül",
+        "affiliation": "Department of Pediatric Pulmonology, Faculty of Medicine Erciyes University, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Köse",
+        "affiliation": "Department of Pediatric Pulmonology, Faculty of Medicine Erciyes University, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sevgi Pekcan",
+        "affiliation": "Department of Pediatric Pulmonology, Meram Medical School Necmettin Erbakan University, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ümran Çalışkan",
+        "affiliation": "Department of Pediatric Hematology, Meram Medical School Necmettin Erbakan University, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hüseyin Tokgöz",
+        "affiliation": "Department of Child Health and Diseases, Meram Medical School Necmettin Erbakan University, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşe Tana Aslan",
+        "affiliation": "Department of Pediatric Chest Diseases, Faculty of Medicine Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuğba Şişmanlar Eyüboğlu",
+        "affiliation": "Department of Pediatric Pulmonology, Faculty of Medicine Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuğba Ramaslı Gürsoy",
+        "affiliation": "Department of Pediatric Pulmonology, Faculty of Medicine Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nihan Kırçıl",
+        "affiliation": "Department of Child Health and Diseases, Faculty of Medicine Erciyes University, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Ersoy",
+        "affiliation": "Department of Pediatric Pulmonology, Faculty of Medicine Erciyes University, Kayseri, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tahir Tok",
+        "affiliation": "Department of Child Health and Diseases, Meram Medical School Necmettin Erbakan University, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aslı İmran Yılmaz[[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Pulmonary embolism is a clinical condition caused by the obstruction of the pulmonary artery and its branches with endogenous, exogenous embolism, or local thrombus formation. It is a rare but potentially life-threatening event in the pediatric population. Pediatric pulmonary embolism has many unknown characteristics.Aims: To evaluate clinical features, genetic and acquired risk factors, diagnostic imaging, and treatment strategies with long-term results in children with pulmonary embolism.Study Design: A retrospective multicenter clinical trialMethods: Patients aged 0-18 years who were diagnosed with pulmonary embolism with computed tomography pulmonary angiography (CTPA) findings (intraluminal filling defect in the lobar or main pulmonary artery) in 3 university hospitals between 2006 and 2021 were included in the study. A form was created for data standardization, and variables were collected retrospectively through medical record review. In addition to the features given above, we also evaluated in situ pulmonary artery thrombosis (ISPAT) and patients’ Wells scores. Follow-up CTPA results were evaluated for patient response to treatment. Complete recovery means that there were no lesions, incomplete recovery if there was still embolism, and no response if there was no change.Results: Twenty-four patients (female:13, male:11) were included in the study. The mean age was 13.5 years. All patients but one had at least one or more genetic or acquired risk factors. Factor V Leiden mutation (16.6%) was the most common genetic risk factor. Six of 16 patients with Doppler ultrasonography were diagnosed with ISPAT because there was no sign of thromboembolic thrombosis. Nine (41.6%) patients had a Wells score of >4 (pulmonary embolism clinically strong), and 15 (58.4%) patients scored <4 (pulmonary embolism clinically likely weak), indicating that an alternative diagnosis was more likely than pulmonary embolism (sensitivity %37.5). The mean follow-up period was 23 (±17) months. Complete and incomplete recovery was observed in 15 (62.5%) and 7 (29.1%) patients, respectively, among the patients who underwent follow-up evaluation. No response was obtained in 2 patients (8.3%) who died.Conclusion: The Wells scoring system seems insufficient to diagnose pulmonary embolism in children and should be improved by adding new parameters. ISPAT may be more common in children with congenital heart disease and systemic disease.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Pulmonary embolism is a clinical condition caused by the obstruction of the pulmonary artery and its branches with endogenous, exogenous embolism, or local thrombus formation. It is a rare but potentially life-threatening event in the pediatric population. Pediatric pulmonary embolism has many unknown characteristics.<br /><strong>Aims:</strong> To evaluate clinical features, genetic and acquired risk factors, diagnostic imaging, and treatment strategies with long-term results in children with pulmonary embolism.<br /><strong>Study Design:</strong> A retrospective multicenter clinical trial<br /><strong>Methods:</strong> Patients aged 0-18 years who were diagnosed with pulmonary embolism with computed tomography pulmonary angiography (CTPA) findings (intraluminal filling defect in the lobar or main pulmonary artery) in 3 university hospitals between 2006 and 2021 were included in the study. A form was created for data standardization, and variables were collected retrospectively through medical record review. In addition to the features given above, we also evaluated in situ pulmonary artery thrombosis (ISPAT) and patients&rsquo; Wells scores. Follow-up CTPA results were evaluated for patient response to treatment. Complete recovery means that there were no lesions, incomplete recovery if there was still embolism, and no response if there was no change.<br /><strong>Results:</strong> Twenty-four patients (female:13, male:11) were included in the study. The mean age was 13.5 years. All patients but one had at least one or more genetic or acquired risk factors. Factor V Leiden mutation (16.6%) was the most common genetic risk factor. Six of 16 patients with Doppler ultrasonography were diagnosed with ISPAT because there was no sign of thromboembolic thrombosis. Nine (41.6%) patients had a Wells score of &gt;4 (pulmonary embolism clinically strong), and 15 (58.4%) patients scored &lt;4 (pulmonary embolism clinically likely weak), indicating that an alternative diagnosis was more likely than pulmonary embolism (sensitivity %37.5). The mean follow-up period was 23 (&plusmn;17) months. Complete and incomplete recovery was observed in 15 (62.5%) and 7 (29.1%) patients, respectively, among the patients who underwent follow-up evaluation. No response was obtained in 2 patients (8.3%) who died.<br /><strong>Conclusion:</strong> The Wells scoring system seems insufficient to diagnose pulmonary embolism in children and should be improved by adding new parameters. ISPAT may be more common in children with congenital heart disease and systemic disease.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Pulmonary embolism is a clinical condition caused by the obstruction of the pulmonary artery and its branches with endogenous, exogenous embolism, or local thrombus formation. It is a rare but potentially life-threatening event in the pediatric population. Pediatric pulmonary embolism has many unknown characteristics.Aims: To evaluate clinical features, genetic and acquired risk factors, diagnostic imaging, and treatment strategies with long-term results in children with pulmonary embolism.Study Design: A retrospective multicenter clinical trialMethods: Patients aged 0-18 years who were diagnosed with pulmonary embolism with computed tomography pulmonary angiography (CTPA) findings (intraluminal filling defect in the lobar or main pulmonary artery) in 3 university hospitals between 2006 and 2021 were included in the study. A form was created for data standardization, and variables were collected retrospectively through medical record review. In addition to the features given above, we also evaluated in situ pulmonary artery thrombosis (ISPAT) and patients’ Wells scores. Follow-up CTPA results were evaluated for patient response to treatment. Complete recovery means that there were no lesions, incomplete recovery if there was still embolism, and no response if there was no change.Results: Twenty-four patients (female:13, male:11) were included in the study. The mean age was 13.5 years. All patients but one had at least one or more genetic or acquired risk factors. Factor V Leiden mutation (16.6%) was the most common genetic risk factor. Six of 16 patients with Doppler ultrasonography were diagnosed with ISPAT because there was no sign of thromboembolic thrombosis. Nine (41.6%) patients had a Wells score of >4 (pulmonary embolism clinically strong), and 15 (58.4%) patients scored <4 (pulmonary embolism clinically likely weak), indicating that an alternative diagnosis was more likely than pulmonary embolism (sensitivity %37.5). The mean follow-up period was 23 (±17) months. Complete and incomplete recovery was observed in 15 (62.5%) and 7 (29.1%) patients, respectively, among the patients who underwent follow-up evaluation. No response was obtained in 2 patients (8.3%) who died.Conclusion: The Wells scoring system seems insufficient to diagnose pulmonary embolism in children and should be improved by adding new parameters. ISPAT may be more common in children with congenital heart disease and systemic disease.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-3-46",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "366-373",
+    "views": 6204,
+    "downloads": 4681,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2434",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2434",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2434",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2434",
+    "localPdfUrl": "js/data/pdfs/2434.pdf",
+    "pdfUrl": "js/data/pdfs/2434.pdf"
+  },
+  {
+    "id": 2425,
+    "type": "Clinical Image",
+    "title": "Acalculous Cholecystitis Secondary to Epstein-Barr Virus Infection",
+    "authors": [
+      {
+        "name": "Toshimasa Yamaguchi",
+        "affiliation": "Primary Care and Advanced Triage Section Osaka City General Hospital, Osaka, Japan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 58-year-old woman with hypertension was referred to our hospital because of a 10-day history of a slight fever and elevated liver enzymes. Her body temperature was 37.6 °C. Physical examination revealed icteric conjunctiva, left posterior cervical lymphadenopathy (2 cm in length with tenderness), abdominal tenderness in the right upper quadrant, and a posi",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-5-46",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "374-375",
+    "views": 6291,
+    "downloads": 3136,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2425",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2425",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2425",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2425",
+    "localPdfUrl": "js/data/pdfs/2425.pdf",
+    "pdfUrl": "js/data/pdfs/2425.pdf"
+  },
+  {
+    "id": 2435,
+    "type": "Clinical Image",
+    "title": "Phlebosclerotic Colitis Associated with Long-term Use of a Chinese Herbal Medicine Containing Gardenia Fruit",
+    "authors": [
+      {
+        "name": "Yusaku Kajihara",
+        "affiliation": "Department of Gastroenterology, Fuyoukai Murakami Hospital, Aomori, Japan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "An 84-year-old Japanese woman presented to the emergency department with a 1-day history of vomiting and right lower quadrant abdominal pain. She had been taking furosemide 80 mg/day and spironolactone 50 mg/day for generalized edema secondary to nephrotic syndrome. She had also received therapy for Alzheimer’s dementia. Two days earlier, medication dosage w",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-7-15",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "376-377",
+    "views": 5900,
+    "downloads": 3080,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2435",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2435",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2435",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2435",
+    "localPdfUrl": "js/data/pdfs/2435.pdf",
+    "pdfUrl": "js/data/pdfs/2435.pdf"
+  },
+  {
+    "id": 2409,
+    "type": "Letter to the Editor",
+    "title": "A Rare Cause of Acute Abdomen: Torsion of Subserous Uterine Fibroid in a Postmenopausal Woman",
+    "authors": [
+      {
+        "name": "So Yamashita",
+        "affiliation": "Department of Obstetrics and Gynecology, Suwa Central Hospital, Nagano, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Hirohisa Fujikawa",
+        "affiliation": "Department of Medical Education Studies, International Research Center for Medical Education, Graduate School of Medicine The University of Tokyo, Tokyo, Japan; Department of Internal Medicine, Suwa Central Hospital, Chino, Nagano, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Toru Yoshizawa",
+        "affiliation": "Department of Obstetrics and Gynecology, Suwa Central Hospital, Nagano, Japan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, Uterine fibroids, the most common tumors in reproductive-aged women, are found in 20%-30% of women aged ≥ 30 years.1 However, they rarely become symptomatic after menopause, and emergency operation is usually unnecessary.2 Herein, we report a rare case of uterine fibroid torsion in a 60-year-old postmenopausal woman.The patient presented to an",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-4-98",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "378-379",
+    "views": 6749,
+    "downloads": 3221,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2409",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2409",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2409",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2409",
+    "localPdfUrl": "js/data/pdfs/2409.pdf",
+    "pdfUrl": "js/data/pdfs/2409.pdf"
+  },
+  {
+    "id": 2426,
+    "type": "Letter to the Editor",
+    "title": "Is the New Medical Malpractice Law Sufficient to Prevent Physicians from Practicing Defensive Medicine in Turkey?",
+    "authors": [
+      {
+        "name": "Ömer Kurtaş",
+        "affiliation": "Department of Forensic Medicine, Faculty of Medicine Kocaeli University, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Rıza Yılmaz",
+        "affiliation": "Department of Forensic Medicine, Faculty of Medicine Kocaeli University, Kocaeli, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, In recent years, the explosion in complaints against physicians and the large amounts of compensations paid to patients have strained the doctor-patient relationship, which has increased “defensive medicine (DM).” In 1978 in the USA, Tancredi and Barondess2 found that approximately 70% of doctors are engaged in DM practices due to the fear of ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-6-81",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "380-380",
+    "views": 5706,
+    "downloads": 2878,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2426",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2426",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2426",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2426",
+    "localPdfUrl": "js/data/pdfs/2426.pdf",
+    "pdfUrl": "js/data/pdfs/2426.pdf"
+  },
+  {
+    "id": 2428,
+    "type": "Letter to the Editor",
+    "title": "Do Severe Acute Respiratory Syndrome Coronavirus 2 Vaccines Change Creutzfeldt-Jakob Disease Prognosis?",
+    "authors": [
+      {
+        "name": "Yüce Doğru",
+        "affiliation": "Clinic of Neurology, Arnavutköy State Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sezgin Kehaya",
+        "affiliation": "Department of Neurology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, Creutzfeldt-Jakob disease (CJD) is a rare and fatal neurodegenerative disease. It is caused due to misfolding of prion proteins, which cannot be proteolyzed and continue to accumulate in the neurons, leading to degeneration and inflammation. Genetic, sporadic, and acquired forms of this disease have been described. The sporadic form accounts f",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-6-83",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "381-382",
+    "views": 7417,
+    "downloads": 4647,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2428",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2428",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2428",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2428",
+    "localPdfUrl": "js/data/pdfs/2428.pdf",
+    "pdfUrl": "js/data/pdfs/2428.pdf"
+  },
+  {
+    "id": 2431,
+    "type": "Letter to the Editor",
+    "title": "First Experience of Cardiac Device Implantation with Remote Cardiac Support System in Turkey",
+    "authors": [
+      {
+        "name": "Gökay Taylan",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Gök",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Uğur Özkan",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Servet Altay",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kenan Yalta",
+        "affiliation": "Department of Cardiology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, A remote cardiac support system (RCSS) has been recently suggested as a novel technology primarily used in cardiac device implantation and electrophysiological study.1 In this system, an encrypted connection over the internet is established between the health staff using smart glasses and a technician in the pacemaker company center. Implantat",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-7-16",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "5",
+    "pages": "383-383",
+    "views": 5634,
+    "downloads": 3287,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1280",
+    "sourceArticleId": "2431",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2431",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2431",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2431",
+    "localPdfUrl": "js/data/pdfs/2431.pdf",
+    "pdfUrl": "js/data/pdfs/2431.pdf"
+  }
+]

@@ -1,101 +1,139 @@
 [
   {
-    "id": 2819,
+    "id": 2786,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "6",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2786",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2786",
+    "localPdfUrl": "js/data/pdfs/2786.pdf",
+    "pdfUrl": "js/data/pdfs/2786.pdf"
+  },
+  {
+    "id": 2783,
     "type": "Editorial",
     "title": "Cannabinoids: Medicine or Poison",
     "authors": [
       {
         "name": "Yasemin Karal",
-        "affiliation": "Department of Pediatrics, Trakya University School of Medicine, Edirne, Türkiye",
+        "affiliation": "Department of Pediatric Neurology, Trakya University Faculty of Medicine, Edirne, Türkiye",
         "orcid": ""
       }
     ],
     "abstract": "",
-    "keywords": [
-      "cannabinoids",
-      "medicine",
-      "toxicology"
-    ],
+    "abstractHtml": "",
+    "previewText": "The hemp plant [Cannabis sativa (C. sativa)] commonly known as Indian hemp belongs to the Cannabinaceae family and is also referred to as marijuana, ganja, pot, hemp or cannabis. It comprises three recognized subspecies: C. sativa subspecies sativa (longer and more fibrous, primarily cultivated as industrial hemp), C. sativa subspecies indica (shorter and mo",
+    "keywords": [],
     "doi": "10.4274/balkanmedj.galenos.2025.2025.290925",
     "received": "",
     "accepted": "",
-    "published": "2025-10-31",
+    "published": "2025-01-01",
     "volume": 42,
-    "issue": 6,
+    "issue": "6",
     "pages": "491-492",
-    "views": 0,
-    "downloads": 0,
+    "views": 1875,
+    "downloads": 554,
     "citations": 0,
     "featured": false,
     "imageCorner": false,
     "hasFullText": true,
-    "previewText": "Cannabinoids have emerged as one of the most debated topics in contemporary medicine, occupying a unique position at the intersection of therapeutic promise and toxicological concern."
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2783",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2783",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2783",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2783",
+    "localPdfUrl": "js/data/pdfs/2783.pdf",
+    "pdfUrl": "js/data/pdfs/2783.pdf"
   },
   {
-    "id": 2820,
+    "id": 2784,
     "type": "Editorial",
     "title": "Factor XI/XIa Inhibitors: Promising Agents for the Secondary Prevention of Ischemic Stroke",
     "authors": [
       {
         "name": "Murat Mert Atmaca",
-        "affiliation": "Clinic of Neurology, Sultan 2. Abdülhamid Han Training and Research Hospital, İstanbul, Türkiye",
+        "affiliation": "Clinic of Neurology, University of Health Sciences Türkiye, Sultan II. Abdulhamid Han Training and Research Hospital, İstanbul, Türkiye",
         "orcid": ""
       }
     ],
     "abstract": "",
-    "keywords": [
-      "factor XI",
-      "ischemic stroke",
-      "anticoagulation"
-    ],
+    "abstractHtml": "",
+    "previewText": "Globally, stroke remains the second leading cause of death among non-communicable diseases and the third leading cause of death and disability combined (as measured by disability-adjusted life-years lost).1 Ischemic strokes (IS) constitute 85% of all strokes, while the remaining 15% are hemorrhagic strokes. The etiologic subtypes of IS include large artery a",
+    "keywords": [],
     "doi": "10.4274/balkanmedj.galenos.2025.2025.160925",
     "received": "",
     "accepted": "",
-    "published": "2025-10-31",
+    "published": "2025-01-01",
     "volume": 42,
-    "issue": 6,
+    "issue": "6",
     "pages": "493-494",
-    "views": 0,
-    "downloads": 0,
+    "views": 1571,
+    "downloads": 477,
     "citations": 0,
     "featured": false,
     "imageCorner": false,
     "hasFullText": true,
-    "previewText": "Ischemic stroke remains a leading cause of disability and death worldwide, with recurrent stroke representing a particularly devastating complication affecting approximately 25% of survivors."
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2784",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2784",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2784",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2784",
+    "localPdfUrl": "js/data/pdfs/2784.pdf",
+    "pdfUrl": "js/data/pdfs/2784.pdf"
   },
   {
-    "id": 2821,
+    "id": 2785,
     "type": "Original Article",
     "title": "Uric Acid-Lowering Therapy with Febuxostat in Patients with Chronic Heart Failure and Hyperuricemia: A Prospective and Observational Cohort Study",
     "authors": [
       {
         "name": "Jiahan Ke",
-        "affiliation": "Department of Cardiology, Shanghai Ninth People's Hospital, Shanghai Jiaotong University, Shanghai, China",
+        "affiliation": "Department of Cardiology, Shanghai Ninth People’s Hospital, Shanghai Jiaotong University School of Medicine, Shanghai, China",
         "orcid": ""
       },
       {
         "name": "Xiaohan Qiu",
-        "affiliation": "Department of Cardiology, Shanghai Ninth People's Hospital, Shanghai, China",
+        "affiliation": "Department of Cardiology, Shanghai Ninth People’s Hospital, Shanghai Jiaotong University School of Medicine, Shanghai, China",
         "orcid": ""
       },
       {
         "name": "Min Wang",
-        "affiliation": "Department of Cardiology, Shanghai Ninth People's Hospital, Shanghai, China",
+        "affiliation": "Department of Cardiology, Shanghai Ninth People’s Hospital, Shanghai Jiaotong University School of Medicine, Shanghai, China",
         "orcid": ""
       },
       {
         "name": "Huasu Zeng",
-        "affiliation": "Department of Cardiology, Shanghai Ninth People's Hospital, Shanghai, China",
+        "affiliation": "Department of Cardiology, Shanghai Ninth People’s Hospital, Shanghai Jiaotong University School of Medicine, Shanghai, China",
         "orcid": ""
       },
       {
         "name": "Changqian Wang",
-        "affiliation": "Department of Cardiology, Shanghai Ninth People's Hospital, Shanghai, China",
+        "affiliation": "Department of Cardiology, Shanghai Ninth People’s Hospital, Shanghai Jiaotong University School of Medicine, Shanghai, China",
         "orcid": ""
       },
       {
         "name": "Junfeng Zhang",
-        "affiliation": "Department of Cardiology, Shanghai Ninth People's Hospital, Shanghai, China",
+        "affiliation": "Department of Cardiology, Shanghai Ninth People’s Hospital, Shanghai Jiaotong University School of Medicine, Shanghai, China",
         "orcid": ""
       },
       {
@@ -105,35 +143,38 @@
       },
       {
         "name": "Jun Gu",
-        "affiliation": "Department of Cardiology, Shanghai Ninth People's Hospital, Shanghai, China",
+        "affiliation": "Department of Cardiology, Shanghai Ninth People’s Hospital, Shanghai Jiaotong University School of Medicine, Shanghai, China",
         "orcid": ""
       }
     ],
-    "abstract": "Hyperuricemia is associated with poor clinical outcomes in several cardiovascular diseases, including heart failure. This prospective observational cohort study followed 2,005 patients for five years. Febuxostat significantly reduced primary endpoints in HFpEF patients (HR 0.744; 95% CI 0.589-0.939), but showed no benefit in HFrEF/HFmrEF cohorts. Greatest benefits appeared in HFpEF patients with elevated BNP and serum uric acid levels.",
-    "keywords": [
-      "febuxostat",
-      "uric acid",
-      "heart failure",
-      "HFpEF",
-      "hyperuricemia"
-    ],
+    "abstract": "Abstract Background: Hyperuricemia is associated with poor clinical outcomes in several cardiovascular diseases, including heart failure (HF). However, whether lowering serum uric acid (SUA) levels improves the prognosis of HF remains insufficiently studied. Aims: To evaluate whether urate-lowering therapy (ULT) with febuxostat confers clinical benefits in patients with HF and concomitant hyperuricemia. Study Design: Prospective, observational cohort study. Methods: Patients with chronic HF and hyperuricemia were enrolled and assigned either to a febuxostat group or to a non-ULT group and were followed prospectively for 5 years. The primary endpoint was all-cause mortality or rehospitalization for HF. Results: Among 2005 patients, those with higher SUA levels experienced more endpoint events. After propensity score matching, we found that febuxostat therapy significantly reduced the incidence of primary endpoints in patients with HF with preserved ejection fraction (HFpEF) [p = 0.012; hazard ratios (HR), 0.744; 95% confidence intervals (CI), 0.589-0.939], but not in those with HF with reduced ejection fraction (HFrEF) or mildly reduced ejection fraction (HFmrEF) (p = 0.234; HR, 0.894; 95% CI, 0.742-1.077). The benefits of febuxostat in HFpEF were most evident in patients within the highest tertiles of B-type natriuretic peptide (BNP) (p = 0.021; HR, 0.647; 95% CI, 0.436-0.960) and SUA (p = 0.025; HR, 0.651; 95% CI, 0.441-0.963). Conclusion: High SUA levels are associated with increased all-cause mortality and rehospitalization for HF. Febuxostat-mediated SUA reduction significantly improved clinical outcomes in patients with HFpEF, particularly those with elevated SUA and BNP levels.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Hyperuricemia is associated with poor clinical outcomes in several cardiovascular diseases, including heart failure (HF). However, whether lowering serum uric acid (SUA) levels improves the prognosis of HF remains insufficiently studied.</p>\r\n<p><strong>Aims:</strong> To evaluate whether urate-lowering therapy (ULT) with febuxostat confers clinical benefits in patients with HF and concomitant hyperuricemia.</p>\r\n<p><strong>Study Design:</strong> Prospective, observational cohort study.</p>\r\n<p><strong>Methods:</strong> Patients with chronic HF and hyperuricemia were enrolled and assigned either to a febuxostat group or to a non-ULT group and were followed prospectively for 5 years. The primary endpoint was all-cause mortality or rehospitalization for HF.</p>\r\n<p><strong>Results:</strong> Among 2005 patients, those with higher SUA levels experienced more endpoint events. After propensity score matching, we found that febuxostat therapy significantly reduced the incidence of primary endpoints in patients with HF with preserved ejection fraction (HFpEF) [<em>p </em>= 0.012; hazard ratios (HR), 0.744; 95% confidence intervals (CI), 0.589-0.939], but not in those with HF with reduced ejection fraction (HFrEF) or mildly reduced ejection fraction (HFmrEF) (<em>p</em> = 0.234; HR, 0.894; 95% CI, 0.742-1.077). The benefits of febuxostat in HFpEF were most evident in patients within the highest tertiles of B-type natriuretic peptide (BNP) (<em>p </em>= 0.021; HR, 0.647; 95% CI, 0.436-0.960) and SUA (<em>p</em> = 0.025; HR, 0.651; 95% CI, 0.441-0.963).</p>\r\n<p><strong>Conclusion:</strong> High SUA levels are associated with increased all-cause mortality and rehospitalization for HF. Febuxostat-mediated SUA reduction significantly improved clinical outcomes in patients with HFpEF, particularly those with elevated SUA and BNP levels.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Hyperuricemia is associated with poor clinical outcomes in several cardiovascular diseases, including heart failure (HF). However, whether lowering serum uric acid (SUA) levels improves the prognosis of HF remains insufficiently studied. Aims: To evaluate whether urate-lowering therapy (ULT) with febuxostat confers clinical benefits in patients with HF and concomitant hyperuricemia. Study Design: Prospective, observational cohort study. Methods: Patients with chronic HF and hyperuricemia were enrolled and assigned either to a febuxostat group or to a non-ULT group and were followed prospectively for 5 years. The primary endpoint was all-cause mortality or rehospitalization for HF. Results: Among 2005 patients, those with higher SUA levels experienced more endpoint events. After propensity score matching, we found that febuxostat therapy significantly reduced the incidence of primary endpoints in patients with HF with preserved ejection fraction (HFpEF) [p = 0.012; hazard ratios (HR), 0.744; 95% confidence intervals (CI), 0.589-0.939], but not in those with HF with reduced ejection fraction (HFrEF) or mildly reduced ejection fraction (HFmrEF) (p = 0.234; HR, 0.894; 95% CI, 0.742-1.077). The benefits of febuxostat in HFpEF were most evident in patients within the highest tertiles of B-type natriuretic peptide (BNP) (p = 0.021; HR, 0.647; 95% CI, 0.436-0.960) and SUA (p = 0.025; HR, 0.651; 95% CI, 0.441-0.963). Conclusion: High SUA levels are associated with increased all-cause mortality and rehospitalization for HF. Febuxostat-mediated SUA reduction significantly improved clinical outcomes in patients with HFpEF, particularly those with elevated SUA and BNP levels.",
+    "keywords": [],
     "doi": "10.4274/balkanmedj.galenos.2025.2025-6-168",
-    "received": "2025-08-23",
-    "accepted": "2025-10-23",
-    "published": "2025-10-31",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
     "volume": 42,
-    "issue": 6,
+    "issue": "6",
     "pages": "495-505",
-    "views": 0,
-    "downloads": 0,
+    "views": 3142,
+    "downloads": 1036,
     "citations": 0,
-    "featured": true,
+    "featured": false,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2785",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2785",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2785",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2785",
+    "localPdfUrl": "js/data/pdfs/2785.pdf",
+    "pdfUrl": "js/data/pdfs/2785.pdf"
   },
   {
-    "id": 2822,
-    "type": "Systematic Review",
+    "id": 2787,
+    "type": "Original Article",
     "title": "Epidemiological and Clinical Characteristics of Urogenital System Cystic Echinococcosis: A Systematic Review",
     "authors": [
       {
@@ -157,40 +198,95 @@
         "orcid": ""
       }
     ],
-    "abstract": "Echinococcus granulosus sensu lato is globally distributed and highly prevalent in parts of South America, the Mediterranean, Eastern Europe, the Middle East, Africa, China, and Australia. This systematic review following PRISMA guidelines analyzed 490 studies comprising 698 confirmed cases. Of the cases examined, 80.4% involved the urinary system, 15.8% the female genital system, and 3.9% the male genital system. The kidney was most commonly affected (68.5%), followed by the adrenal gland (9.2%), ovary (7.3%), and uterus (3.4%). Radiological imaging, especially ultrasonography, was the primary diagnostic method. Notably, 134 of 155 surgical patients were initially misdiagnosed with either malignant or benign tumors.",
-    "keywords": [
-      "cystic echinococcosis",
-      "urogenital system",
-      "systematic review",
-      "parasitology"
-    ],
+    "abstract": "Abstract Background: Echinococcus granulosus sensu lato (E. granulosus s.l.) is globally distributed and highly prevalent in parts of South America, the Mediterranean, Eastern Europe, the Middle East, Africa, China, and Australia. This systematic review explores the epidemiological and clinical features of urogenital system-cystic echinococcosis (UGS-CE). Aims: To systematically review and synthesize available evidence on the epidemiological patterns, clinical presentations, diagnostic methods, and treatment approaches for UGS-CE. Study Design: Systematic review. Methods: The study followed the Preferred Reporting Items for Systematic Reviews and Meta-Analyses Guidelines and was registered in PROSPERO (CRD42024613418). A comprehensive literature search was conducted in the PubMed, Scopus, and Web of Science databases for articles published between 1990 and 2024. Studies based on individual data were included if the UGS-CE diagnosis was confirmed by imaging or laboratory methods. Results: After screening 1976 records, 490 studies were finally included to comprise the following 698 UGS-CE cases: 561 (80.4%) involved the urinary system; 110 (15.8%) involved the female genital system; and 27 (3.9%) involved the male genital system. The kidney (478, 68.5%) was the most commonly affected organ, followed by the adrenal gland (64, 9.2%), the ovary (51, 7.3%), and the uterus (24, 3.4%). Radiological imaging, especially ultrasonography, was the primary diagnostic method used, which is often supported by computed tomography (CT). Treatment was mainly surgical and in combination with antiparasitic therapy. Among the 155 patients who underwent surgical treatment, 134 were initially misdiagnosed with either malignant or benign tumors. Conclusion: Though rare and often non-specific, UGS-CE must be considered in patients with abdominopelvic or flank pain, hydatiduria, urinary symptoms, infertility, or dysmenorrhea, especially in endemic areas. Early detection and appropriate management are crucial to improving the outcomes. A radiological assessment is the primary diagnostic method, with ultrasonography as the most effective, often supported by CT. Treatment is mainly surgical and complemented by antiparasitic therapy to reduce the recurrence/relaps risk.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> <em>Echinococcus granulosus sensu lato (E. granulosus s.l.) </em>is globally distributed and highly prevalent in parts of South America, the Mediterranean, Eastern Europe, the Middle East, Africa, China, and Australia. This systematic review explores the epidemiological and clinical features of urogenital system-cystic echinococcosis (UGS-CE).</p>\r\n<p><strong>Aims:</strong> To systematically review and synthesize available evidence on the epidemiological patterns, clinical presentations, diagnostic methods, and treatment approaches for UGS-CE.</p>\r\n<p><strong>Study Design:</strong> Systematic review.</p>\r\n<p><strong>Methods:</strong> The study followed the Preferred Reporting Items for Systematic Reviews and Meta-Analyses Guidelines and was registered in PROSPERO (CRD42024613418). A comprehensive literature search was conducted in the PubMed, Scopus, and Web of Science databases for articles published between 1990 and 2024. Studies based on individual data were included if the UGS-CE diagnosis was confirmed by imaging or laboratory methods.</p>\r\n<p><strong>Results:</strong> After screening 1976 records, 490 studies were finally included to comprise the following 698 UGS-CE cases: 561 (80.4%) involved the urinary system; 110 (15.8%) involved the female genital system; and 27 (3.9%) involved the male genital system. The kidney (478, 68.5%) was the most commonly affected organ, followed by the adrenal gland (64, 9.2%), the ovary (51, 7.3%), and the uterus (24, 3.4%). Radiological imaging, especially ultrasonography, was the primary diagnostic method used, which is often supported by computed tomography (CT). Treatment was mainly surgical and in combination with antiparasitic therapy. Among the 155 patients who underwent surgical treatment, 134 were initially misdiagnosed with either malignant or benign tumors.</p>\r\n<p><strong>Conclusion:</strong> Though rare and often non-specific, UGS-CE must be considered in patients with abdominopelvic or flank pain, hydatiduria, urinary symptoms, infertility, or dysmenorrhea, especially in endemic areas. Early detection and appropriate management are crucial to improving the outcomes. A radiological assessment is the primary diagnostic method, with ultrasonography as the most effective, often supported by CT. Treatment is mainly surgical and complemented by antiparasitic therapy to reduce the recurrence/relaps risk.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Echinococcus granulosus sensu lato (E. granulosus s.l.) is globally distributed and highly prevalent in parts of South America, the Mediterranean, Eastern Europe, the Middle East, Africa, China, and Australia. This systematic review explores the epidemiological and clinical features of urogenital system-cystic echinococcosis (UGS-CE). Aims: To systematically review and synthesize available evidence on the epidemiological patterns, clinical presentations, diagnostic methods, and treatment approaches for UGS-CE. Study Design: Systematic review. Methods: The study followed the Preferred Reporting Items for Systematic Reviews and Meta-Analyses Guidelines and was registered in PROSPERO (CRD42024613418). A comprehensive literature search was conducted in the PubMed, Scopus, and Web of Science databases for articles published between 1990 and 2024. Studies based on individual data were included if the UGS-CE diagnosis was confirmed by imaging or laboratory methods. Results: After screening 1976 records, 490 studies were finally included to comprise the following 698 UGS-CE cases: 561 (80.4%) involved the urinary system; 110 (15.8%) involved the female genital system; and 27 (3.9%) involved the male genital system. The kidney (478, 68.5%) was the most commonly affected organ, followed by the adrenal gland (64, 9.2%), the ovary (51, 7.3%), and the uterus (24, 3.4%). Radiological imaging, especially ultrasonography, was the primary diagnostic method used, which is often supported by computed tomography (CT). Treatment was mainly surgical and in combination with antiparasitic therapy. Among the 155 patients who underwent surgical treatment, 134 were initially misdiagnosed with either malignant or benign tumors. Conclusion: Though rare and often non-specific, UGS-CE must be considered in patients with abdominopelvic or flank pain, hydatiduria, urinary symptoms, infertility, or dysmenorrhea, especially in endemic areas. Early detection and appropriate management are crucial to improving the outcomes. A radiological assessment is the primary diagnostic method, with ultrasonography as the most effective, often supported by CT. Treatment is mainly surgical and complemented by antiparasitic therapy to reduce the recurrence/relaps risk.",
+    "keywords": [],
     "doi": "10.4274/balkanmedj.galenos.2025.2025-7-81",
-    "received": "2025-09-10",
-    "accepted": "2025-10-25",
-    "published": "2025-10-31",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
     "volume": 42,
-    "issue": 6,
+    "issue": "6",
     "pages": "506-515",
-    "views": 0,
-    "downloads": 0,
+    "views": 2441,
+    "downloads": 1928,
     "citations": 0,
     "featured": false,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2787",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2787",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2787",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2787",
+    "localPdfUrl": "js/data/pdfs/2787.pdf",
+    "pdfUrl": "js/data/pdfs/2787.pdf"
   },
   {
-    "id": 2823,
+    "id": 2756,
+    "type": "Original Article",
+    "title": "miR-17-5p Inhibits BNIP3-Mediated Mitochondrial Autophagy to Attenuate Pathological Cardiac Fibrosis",
+    "authors": [
+      {
+        "name": "Derong Huang",
+        "affiliation": "Department of Cardiovascular Surgery, Affiliated Hospital of Zunyi Medical University, Guizhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Qing Wen",
+        "affiliation": "Department of Cardiovascular Surgery, Affiliated Hospital of Zunyi Medical University, Guizhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yuchen Su",
+        "affiliation": "Department of Cardiovascular Surgery, Affiliated Hospital of Zunyi Medical University, Guizhou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiumao Li",
+        "affiliation": "Department of Cardiovascular Surgery, Affiliated Hospital of Zunyi Medical University, Guizhou, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Cardiac fibrosis plays a critical role in the progression of chronic cardiovascular conditions, with mitochondrial dysfunction acting as a central mechanism underlying pathological myocardial fibrosis. Increasing research shows that microRNAs may modulate the fibrotic process by regulating mitochondrial function via various pathways. Aims: To examine the involvement of miR-17-5p in modulating mitochondrial autophagy and alleviating pathological cardiac fibrosis. Study Design: Combined in vivo and in vitro study. Methods: Expression levels of miR-17-5P and BCL2/adenovirus E1B 19 kDa protein-interacting protein 3 (BNIP3) were measured in a mouse model of myocardial fibrosis induced by abdominal aortic constriction, as well as in cardiac fibroblasts (CFs) treated with angiotensin II. CFs were transiently transfected with a miR-17-5p mimic, the pcDNA3.1-BNIP3 plasmid, or both. Cell viability was evaluated using the CCK-8 colorimetric assay. The expression of fibrotic and autophagy-related markers was determined via quantitative real-time reverse transcription polymerase chain reaction and immunoblotting. Intracellular levels of reactive oxygen species (ROS) and adenosine triphosphate (ATP) were also assessed. Results: Reduced myocardial miR-17-5p expression was associated with diminished left ventricular systolic function and increased collagen accumulation in heart tissue. In vitro, angiotensin II treatment led to decreased miR-17-5p expression, upregulated BNIP3, and excessive mitochondrial autophagy-evidenced by increased ROS, lowered ATP production, and elevated fibrosis-related markers. Rescue experiments demonstrated that miR-17-5p overexpression directly targeted the 3’ untranslated region (3’-UTR) of BNIP3, significantly downregulating its expression, restoring mitochondrial balance, and decreasing collagen production. Conversely, BNIP3 overexpression counteracted the anti-fibrotic and mitochondrial-protective effects of miR-17-5p. Conclusion: The miR-17-5p/BNIP3 signaling pathway modulates mitochondrial autophagy in CFs and plays a key role in fibrotic remodeling. This axis may serve as a promising therapeutic target for reducing cardiac fibrosis and slowing the progression of heart failure.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Cardiac fibrosis plays a critical role in the progression of chronic cardiovascular conditions, with mitochondrial dysfunction acting as a central mechanism underlying pathological myocardial fibrosis. Increasing research shows that microRNAs may modulate the fibrotic process by regulating mitochondrial function via various pathways.</p>\r\n<p><strong>Aims:</strong> To examine the involvement of miR-17-5p in modulating mitochondrial autophagy and alleviating pathological cardiac fibrosis.</p>\r\n<p><strong>Study Design:</strong> Combined <em>in vivo </em>and <em>in vitro</em> study.</p>\r\n<p><strong>Methods:</strong> Expression levels of miR-17-5P and BCL2/adenovirus E1B 19 kDa protein-interacting protein 3 (BNIP3) were measured in a mouse model of myocardial fibrosis induced by abdominal aortic constriction, as well as in cardiac fibroblasts (CFs) treated with angiotensin II. CFs were transiently transfected with a miR-17-5p mimic, the pcDNA3.1-BNIP3 plasmid, or both. Cell viability was evaluated using the CCK-8 colorimetric assay. The expression of fibrotic and autophagy-related markers was determined via quantitative real-time reverse transcription polymerase chain reaction and immunoblotting. Intracellular levels of reactive oxygen species (ROS) and adenosine triphosphate (ATP) were also assessed.</p>\r\n<p><strong>Results:</strong> Reduced myocardial miR-17-5p expression was associated with diminished left ventricular systolic function and increased collagen accumulation in heart tissue. <em>In vitro</em>, angiotensin II treatment led to decreased miR-17-5p expression, upregulated BNIP3, and excessive mitochondrial autophagy-evidenced by increased ROS, lowered ATP production, and elevated fibrosis-related markers. Rescue experiments demonstrated that miR-17-5p overexpression directly targeted the 3&rsquo; untranslated region (3&rsquo;-UTR) of BNIP3, significantly downregulating its expression, restoring mitochondrial balance, and decreasing collagen production. Conversely, BNIP3 overexpression counteracted the anti-fibrotic and mitochondrial-protective effects of miR-17-5p.</p>\r\n<p><strong>Conclusion:</strong> The miR-17-5p/BNIP3 signaling pathway modulates mitochondrial autophagy in CFs and plays a key role in fibrotic remodeling. This axis may serve as a promising therapeutic target for reducing cardiac fibrosis and slowing the progression of heart failure.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Cardiac fibrosis plays a critical role in the progression of chronic cardiovascular conditions, with mitochondrial dysfunction acting as a central mechanism underlying pathological myocardial fibrosis. Increasing research shows that microRNAs may modulate the fibrotic process by regulating mitochondrial function via various pathways. Aims: To examine the involvement of miR-17-5p in modulating mitochondrial autophagy and alleviating pathological cardiac fibrosis. Study Design: Combined in vivo and in vitro study. Methods: Expression levels of miR-17-5P and BCL2/adenovirus E1B 19 kDa protein-interacting protein 3 (BNIP3) were measured in a mouse model of myocardial fibrosis induced by abdominal aortic constriction, as well as in cardiac fibroblasts (CFs) treated with angiotensin II. CFs were transiently transfected with a miR-17-5p mimic, the pcDNA3.1-BNIP3 plasmid, or both. Cell viability was evaluated using the CCK-8 colorimetric assay. The expression of fibrotic and autophagy-related markers was determined via quantitative real-time reverse transcription polymerase chain reaction and immunoblotting. Intracellular levels of reactive oxygen species (ROS) and adenosine triphosphate (ATP) were also assessed. Results: Reduced myocardial miR-17-5p expression was associated with diminished left ventricular systolic function and increased collagen accumulation in heart tissue. In vitro, angiotensin II treatment led to decreased miR-17-5p expression, upregulated BNIP3, and excessive mitochondrial autophagy-evidenced by increased ROS, lowered ATP production, and elevated fibrosis-related markers. Rescue experiments demonstrated that miR-17-5p overexpression directly targeted the 3’ untranslated region (3’-UTR) of BNIP3, significantly downregulating its expression, restoring mitochondrial balance, and decreasing collagen production. Conversely, BNIP3 overexpression counteracted the anti-fibrotic and mitochondrial-protective effects of miR-17-5p. Conclusion: The miR-17-5p/BNIP3 signaling pathway modulates mitochondrial autophagy in CFs and plays a key role in fibrotic remodeling. This axis may serve as a promising therapeutic target for reducing cardiac fibrosis and slowing the progression of heart failure.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-6-25",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "6",
+    "pages": "516-525",
+    "views": 3574,
+    "downloads": 2211,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2756",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2756",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2756",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2756",
+    "localPdfUrl": "js/data/pdfs/2756.pdf",
+    "pdfUrl": "js/data/pdfs/2756.pdf"
+  },
+  {
+    "id": 2780,
     "type": "Original Article",
     "title": "Enhancing Diagnostic Accuracy in Bethesda III Thyroid Nodules: The Predictive Value of Serum IL-17A and Calprotectin",
     "authors": [
       {
         "name": "Muzaffer Serdar Deniz",
-        "affiliation": "Department of Endocrinology, Karabük University Training and Research Hospital, Karabük, Türkiye",
+        "affiliation": "Department of Endocrinology, Karabük University Traning and Research Hospital, Karabük, Türkiye",
         "orcid": ""
       },
       {
         "name": "Fatih Karataş",
-        "affiliation": "Department of Medical Oncology, Karabük University Training and Research Hospital, Karabük, Türkiye",
+        "affiliation": "Department of Medical Oncology, Karabük University Traning and Research Hospital, Karabük, Türkiye",
         "orcid": ""
       },
       {
@@ -199,73 +295,79 @@
         "orcid": ""
       }
     ],
-    "abstract": "Thyroid nodules are common in clinical practice, with malignancy detected in about 5% of cases. This study evaluated preoperative serum IL-17A and calprotectin as biomarkers in 76 patients with Bethesda III nodules. Results showed significantly elevated IL-17A and calprotectin in malignant cases (p < 0.001 and p = 0.038). ROC analysis demonstrated IL-17A AUC of 0.733 and calprotectin AUC of 0.639.",
-    "keywords": [
-      "thyroid nodules",
-      "Bethesda III",
-      "IL-17A",
-      "calprotectin",
-      "biomarkers"
-    ],
+    "abstract": "Abstract Background: Thyroid nodules are common in clinical practice, with malignancy detected in about 5% of cases. Current risk-stratification approaches, which rely on sonographic features and cytopathological assessment, have notable limitations, especially for indeterminate nodules categorized as Bethesda III. Aims: To address these diagnostic challenges, this study evaluated the utility of preoperative serum interleukin (IL)-17A and calprotectin levels as potential biomarkers for distinguishing malignant from benign Bethesda III thyroid nodules. Study Design: This single-center prospective methodological study. Methods: In this prospective study, 76 patients with Bethesda III nodules scheduled for thyroidectomy were enrolled. Based on histopathological findings, nodules were classified as benign (n = 41) or malignant (n = 35). Comprehensive patient information was collected, including demographics, medical history, and detailed clinical parameters related to nodule characteristics and laboratory results. Circulating biomarkers measured included thyroid-stimulating hormone, free T3, free T4, thyroglobulin (TG), anti-TG, anti-thyroid peroxidase, calcitonin, IL-17A, and calprotectin. Results: Patients with malignant nodules (n = 35) exhibited significantly higher preoperative IL-17A and calprotectin levels compared with those with benign nodules (n = 41) (p < 0.001 and p = 0.038, respectively). Receiver operating characteristic analysis demonstrated promising diagnostic performance for IL-17A [area under the curve (AUC) = 0.733] and calprotectin (AUC = 0.639). Conclusion: IL-17A and calprotectin emerge as promising biomarkers for refining Bethesda III nodule stratification. Incorporating these inflammatory markers into existing diagnostic protocols may substantially reduce unnecessary surgical interventions, thereby alleviating patient anxiety, surgical risks, and healthcare costs.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Thyroid nodules are common in clinical practice, with malignancy detected in about 5% of cases. Current risk-stratification approaches, which rely on sonographic features and cytopathological assessment, have notable limitations, especially for indeterminate nodules categorized as Bethesda III.</p>\r\n<p><strong>Aims:</strong> To address these diagnostic challenges, this study evaluated the utility of preoperative serum interleukin (IL)-17A and calprotectin levels as potential biomarkers for distinguishing malignant from benign Bethesda III thyroid nodules.</p>\r\n<p><strong>Study Design:</strong> This single-center prospective methodological study.</p>\r\n<p><strong>Methods:</strong> In this prospective study, 76 patients with Bethesda III nodules scheduled for thyroidectomy were enrolled. Based on histopathological findings, nodules were classified as benign (n = 41) or malignant (n = 35). Comprehensive patient information was collected, including demographics, medical history, and detailed clinical parameters related to nodule characteristics and laboratory results. Circulating biomarkers measured included thyroid-stimulating hormone, free T3, free T4, thyroglobulin (TG), anti-TG, anti-thyroid peroxidase, calcitonin, IL-17A, and calprotectin.</p>\r\n<p><strong>Results:</strong> Patients with malignant nodules (n = 35) exhibited significantly higher preoperative IL-17A and calprotectin levels compared with those with benign nodules (n = 41) (<em>p</em> &lt; 0.001 and <em>p</em> = 0.038, respectively). Receiver operating characteristic analysis demonstrated promising diagnostic performance for IL-17A [area under the curve (AUC) = 0.733] and calprotectin (AUC = 0.639).</p>\r\n<p><strong>Conclusion:</strong> IL-17A and calprotectin emerge as promising biomarkers for refining Bethesda III nodule stratification. Incorporating these inflammatory markers into existing diagnostic protocols may substantially reduce unnecessary surgical interventions, thereby alleviating patient anxiety, surgical risks, and healthcare costs.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Thyroid nodules are common in clinical practice, with malignancy detected in about 5% of cases. Current risk-stratification approaches, which rely on sonographic features and cytopathological assessment, have notable limitations, especially for indeterminate nodules categorized as Bethesda III. Aims: To address these diagnostic challenges, this study evaluated the utility of preoperative serum interleukin (IL)-17A and calprotectin levels as potential biomarkers for distinguishing malignant from benign Bethesda III thyroid nodules. Study Design: This single-center prospective methodological study. Methods: In this prospective study, 76 patients with Bethesda III nodules scheduled for thyroidectomy were enrolled. Based on histopathological findings, nodules were classified as benign (n = 41) or malignant (n = 35). Comprehensive patient information was collected, including demographics, medical history, and detailed clinical parameters related to nodule characteristics and laboratory results. Circulating biomarkers measured included thyroid-stimulating hormone, free T3, free T4, thyroglobulin (TG), anti-TG, anti-thyroid peroxidase, calcitonin, IL-17A, and calprotectin. Results: Patients with malignant nodules (n = 35) exhibited significantly higher preoperative IL-17A and calprotectin levels compared with those with benign nodules (n = 41) (p < 0.001 and p = 0.038, respectively). Receiver operating characteristic analysis demonstrated promising diagnostic performance for IL-17A [area under the curve (AUC) = 0.733] and calprotectin (AUC = 0.639). Conclusion: IL-17A and calprotectin emerge as promising biomarkers for refining Bethesda III nodule stratification. Incorporating these inflammatory markers into existing diagnostic protocols may substantially reduce unnecessary surgical interventions, thereby alleviating patient anxiety, surgical risks, and healthcare costs.",
+    "keywords": [],
     "doi": "10.4274/balkanmedj.galenos.2025.2025-7-125",
-    "received": "2025-09-04",
-    "accepted": "2025-10-20",
-    "published": "2025-10-31",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
     "volume": 42,
-    "issue": 6,
+    "issue": "6",
     "pages": "526-537",
-    "views": 0,
-    "downloads": 0,
-    "citations": 0,
-    "featured": false,
-    "imageCorner": false,
-    "hasFullText": true
-  },
-  {
-    "id": 2824,
-    "type": "Original Article",
-    "title": "Fat Mass and Obesity-Associated Protein-Mediated Adipogenic Differentiation of Bone Marrow Mesenchymal Stem Cells Promotes Chemotherapy Resistance in Acute Myeloid Leukemia",
-    "authors": [
-      {
-        "name": "Peng Zhipeng",
-        "affiliation": "",
-        "orcid": ""
-      },
-      {
-        "name": "Kong Lixia",
-        "affiliation": "",
-        "orcid": ""
-      },
-      {
-        "name": "Cai Ling",
-        "affiliation": "",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "keywords": [
-      "acute myeloid leukemia",
-      "FTO protein",
-      "chemotherapy resistance",
-      "bone marrow mesenchymal stem cells"
-    ],
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-7-150",
-    "received": "2025-08-20",
-    "accepted": "2025-10-21",
-    "published": "2025-10-31",
-    "volume": 42,
-    "issue": 6,
-    "pages": "538-546",
-    "views": 0,
-    "downloads": 0,
+    "views": 1913,
+    "downloads": 998,
     "citations": 0,
     "featured": false,
     "imageCorner": false,
     "hasFullText": true,
-    "previewText": "Acute myeloid leukemia (AML) is a heterogeneous group of hematopoietic malignancies characterized by clonal expansion of abnormally differentiated myeloid precursor cells in the bone marrow."
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2780",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2780",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2780",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2780",
+    "localPdfUrl": "js/data/pdfs/2780.pdf",
+    "pdfUrl": "js/data/pdfs/2780.pdf"
   },
   {
-    "id": 2825,
+    "id": 2777,
+    "type": "Original Article",
+    "title": "Fat Mass and Obesity-Associated Protein-Mediated Adipogenic Differentiation of Bone Marrow Mesenchymal Stem Cells Promotes Chemotherapy Resistance in Acute Myeloid Leukemia",
+    "authors": [
+      {
+        "name": "Pan Zhipeng",
+        "affiliation": "School of Medical Technology and Engineering of Fujian Medical University, Fujian, China; Key Laboratory of Clinical Laboratory Technology for Precision Medicine Fujian Province University, Fujian, China",
+        "orcid": ""
+      },
+      {
+        "name": "Kang Lixia",
+        "affiliation": "Department of Clinical Laboratory, Fujian Medical University Union Hospital, Fujian, China",
+        "orcid": ""
+      },
+      {
+        "name": "Chen Ling",
+        "affiliation": "Fuzhou Second General Hospital, Fujian, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Chemotherapy resistance and relapse in acute myeloid leukemia (AML) are associated with poor prognosis. Bone marrow mesenchymal stem cells (MSCs) show enhanced adipogenic differentiation in AML, which may contribute to chemoresistance; however, the underlying mechanisms remain incompletely understood. Aims: To investigate how adipogenic differentiation of MSCs from chemotherapy-resistant AML patients (CR-AML-MSCs) promotes chemoresistance, focusing on the roles of the fat mass and obesity-associated protein (FTO) and the mTORC1 pathway. Study Design: Experimental study. Methods: This study compared bone marrow MSCs from chemotherapy-sensitive (CS) and CR AML patients. Adipogenic differentiation was assessed using Oil Red O staining. RNA sequencing, Quantitative real-time PCR (qPCR), and western blotting were employed to analyze expression of FTO, Raptor, and PPARγ. Global N6-methyladenosin (m6A) levels were measured, and co-culture models with AML cell lines (U937, HL-60, THP-1) were established to evaluate chemoresistance. Gain- and loss-of-function experiments for FTO were performed using lentiviral overexpression and shRNA knockdown. mTORC1 pathway involvement was tested using rapamycin. Statistical analyses included t-tests and ANOVA, with significance set at (p < 0.05). MSCs from CS and resistant AML patients were compared. Adipogenic differentiation was induced and assessed by Oil Red O staining. RNA sequencing, qPCR, and western blotting were used to analyze the expression of FTO, Raptor, and PPARγ. Global m6A levels were measured, and co-culture models with AML cell lines (U937, HL-60, THP-1) were established to evaluate chemoresistance. Gain- and loss-of-function experiments for FTO were performed. Results: CR-AML-MSCs exhibited significantly enhanced adipogenic differentiation (p < 0.01) and elevated PPARγ expression. Co-culture with adipocyte-differentiated CR-AML-MSCs markedly increased resistance to daunorubicin and cytarabine in AML cells (p < 0.01). RNA-Seq analysis revealed enrichment of the mTORC1 signaling pathway and upregulation of raptor. Inhibition of mTORC1 with rapamycin suppressed adipogenic differentiation. Total m6A levels were reduced in CR-AML-MSCs, whereas FTO expression was increased. Overexpression of FTO further promoted adipogenesis, upregulated raptor and PPARγ, and enhanced chemoresistance, whereas FTO knockdown attenuated these effects. Conclusion: FTO enhances adipogenic differentiation of CR-AML-MSCs through m6A demethylation of raptor, leading to mTORC1 pathway activation and subsequent chemoresistance. These findings reveal a novel mechanism underlying AML chemoresistance and suggest potential therapeutic targets.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Chemotherapy resistance and relapse in acute myeloid leukemia (AML) are associated with poor prognosis. Bone marrow mesenchymal stem cells (MSCs) show enhanced adipogenic differentiation in AML, which may contribute to chemoresistance; however, the underlying mechanisms remain incompletely understood.</p>\r\n<p><strong>Aims:</strong> To investigate how adipogenic differentiation of MSCs from chemotherapy-resistant AML patients (CR-AML-MSCs) promotes chemoresistance, focusing on the roles of the fat mass and obesity-associated protein (FTO) and the mTORC1 pathway.</p>\r\n<p><strong>Study Design:</strong> Experimental study.</p>\r\n<p><strong>Methods:</strong> This study compared bone marrow MSCs from chemotherapy-sensitive (CS) and CR AML patients. Adipogenic differentiation was assessed using Oil Red O staining. RNA sequencing, Quantitative real-time PCR&nbsp; (qPCR), and western blotting were employed to analyze expression of FTO, Raptor, and PPAR&gamma;. Global N6-methyladenosin&nbsp; (m6A) levels were measured, and co-culture models with AML cell lines (U937, HL-60, THP-1) were established to evaluate chemoresistance. Gain- and loss-of-function experiments for FTO were performed using lentiviral overexpression and shRNA knockdown. mTORC1 pathway involvement was tested using rapamycin. Statistical analyses included t-tests and ANOVA, with significance set at (<em>p</em> &lt; 0.05). MSCs from CS and resistant AML patients were compared. Adipogenic differentiation was induced and assessed by Oil Red O staining. RNA sequencing, qPCR, and western blotting were used to analyze the expression of FTO, Raptor, and PPAR&gamma;. Global m<sup>6</sup>A levels were measured, and co-culture models with AML cell lines (U937, HL-60, THP-1) were established to evaluate chemoresistance. Gain- and loss-of-function experiments for FTO were performed.</p>\r\n<p><strong>Results:</strong> CR-AML-MSCs exhibited significantly enhanced adipogenic differentiation (<em>p</em> &lt; 0.01) and elevated PPAR&gamma; expression. Co-culture with adipocyte-differentiated CR-AML-MSCs markedly increased resistance to daunorubicin and cytarabine in AML cells (<em>p</em> &lt; 0.01). RNA-Seq analysis revealed enrichment of the mTORC1 signaling pathway and upregulation of raptor. Inhibition of mTORC1 with rapamycin suppressed adipogenic differentiation. Total m<sup>6</sup>A levels were reduced in CR-AML-MSCs, whereas FTO expression was increased. Overexpression of FTO further promoted adipogenesis, upregulated raptor and PPAR&gamma;, and enhanced chemoresistance, whereas FTO knockdown attenuated these effects.</p>\r\n<p><strong>Conclusion:</strong> FTO enhances adipogenic differentiation of CR-AML-MSCs through m<sup>6</sup>A demethylation of raptor, leading to mTORC1 pathway activation and subsequent chemoresistance. These findings reveal a novel mechanism underlying AML chemoresistance and suggest potential therapeutic targets.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Chemotherapy resistance and relapse in acute myeloid leukemia (AML) are associated with poor prognosis. Bone marrow mesenchymal stem cells (MSCs) show enhanced adipogenic differentiation in AML, which may contribute to chemoresistance; however, the underlying mechanisms remain incompletely understood. Aims: To investigate how adipogenic differentiation of MSCs from chemotherapy-resistant AML patients (CR-AML-MSCs) promotes chemoresistance, focusing on the roles of the fat mass and obesity-associated protein (FTO) and the mTORC1 pathway. Study Design: Experimental study. Methods: This study compared bone marrow MSCs from chemotherapy-sensitive (CS) and CR AML patients. Adipogenic differentiation was assessed using Oil Red O staining. RNA sequencing, Quantitative real-time PCR (qPCR), and western blotting were employed to analyze expression of FTO, Raptor, and PPARγ. Global N6-methyladenosin (m6A) levels were measured, and co-culture models with AML cell lines (U937, HL-60, THP-1) were established to evaluate chemoresistance. Gain- and loss-of-function experiments for FTO were performed using lentiviral overexpression and shRNA knockdown. mTORC1 pathway involvement was tested using rapamycin. Statistical analyses included t-tests and ANOVA, with significance set at (p < 0.05). MSCs from CS and resistant AML patients were compared. Adipogenic differentiation was induced and assessed by Oil Red O staining. RNA sequencing, qPCR, and western blotting were used to analyze the expression of FTO, Raptor, and PPARγ. Global m6A levels were measured, and co-culture models with AML cell lines (U937, HL-60, THP-1) were established to evaluate chemoresistance. Gain- and loss-of-function experiments for FTO were performed. Results: CR-AML-MSCs exhibited significantly enhanced adipogenic differentiation (p < 0.01) and elevated PPARγ expression. Co-culture with adipocyte-differentiated CR-AML-MSCs markedly increased resistance to daunorubicin and cytarabine in AML cells (p < 0.01). RNA-Seq analysis revealed enrichment of the mTORC1 signaling pathway and upregulation of raptor. Inhibition of mTORC1 with rapamycin suppressed adipogenic differentiation. Total m6A levels were reduced in CR-AML-MSCs, whereas FTO expression was increased. Overexpression of FTO further promoted adipogenesis, upregulated raptor and PPARγ, and enhanced chemoresistance, whereas FTO knockdown attenuated these effects. Conclusion: FTO enhances adipogenic differentiation of CR-AML-MSCs through m6A demethylation of raptor, leading to mTORC1 pathway activation and subsequent chemoresistance. These findings reveal a novel mechanism underlying AML chemoresistance and suggest potential therapeutic targets.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-7-150",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "6",
+    "pages": "538-546",
+    "views": 2422,
+    "downloads": 1539,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2777",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2777",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2777",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2777",
+    "localPdfUrl": "js/data/pdfs/2777.pdf",
+    "pdfUrl": "js/data/pdfs/2777.pdf"
+  },
+  {
+    "id": 2788,
     "type": "Original Article",
     "title": "Risk Prediction of Low Bone Density in Elderly Patients with Supervised Machine Learning Algorithms",
     "authors": [
@@ -280,58 +382,560 @@
         "orcid": ""
       }
     ],
-    "abstract": "Low bone mineral density is a common age-related condition elevating fracture and mortality risk. This study evaluated eleven machine learning models using NHANES data from 12,108 participants aged 50+. The Extra Trees classifier achieved the best performance with 76.7% accuracy and 0.85 AUC. The 14 most important predictors included sex, age, BMI, race, and serum uric acid.",
-    "keywords": [
-      "machine learning",
-      "bone density",
-      "osteoporosis",
-      "risk prediction",
-      "NHANES"
-    ],
+    "abstract": "Abstract Background: Low bone mineral density (BMD) is a common age-related condition that elevates the risk of fractures and mortality. Machine learning (ML) techniques offer a promising approach for early prediction using readily available clinical, biochemical, and demographic data. Aims: To evaluate the predictive performance of eleven ML models in identifying low BMD and to determine the most influential risk factors using the best-performing model. Study Design: Cross-sectional study. Methods: Data were obtained from National Health and Nutrition Examination Survey (2005-2010, 2013-2014, and 2017-2020), focusing on individuals aged ≥ 50 years with available femoral neck or total femur BMD data. After applying exclusion criteria, 12,108 participants were included. Supervised ML algorithms were trained using 57 clinical, biochemical, demographic, and behavioral features. Model performance was assessed using accuracy, area under the curve (AUC), recall, precision, and F1 score. SHAP analysis was employed to interpret model outputs and rank predictors. Results: The extra trees classifier outperformed other ML methods, achieving an accuracy of 76.7% and an AUC of 0.85. Recursive Feature Elimination with Cross-Validation identified 14 key predictors of low BMD in descending order of importance: sex, age, body mass index, race, family income-to-poverty ratio, serum uric acid, diabetes status, HDL cholesterol, urinary creatinine, alkaline phosphatase, mean cell volume, lymphocyte count, diastolic blood pressure, and glycohemoglobin. Conclusion: Tree-based ML models, particularly Extra Trees, can effectively predict low BMD. The identified risk factors include both established and lesser-studied predictors. These findings support the use of ML for personalized osteoporosis and osteopenia screening and highlight its ability to capture complex, multifactorial relationships in population health data.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Low bone mineral density (BMD) is a common age-related condition that elevates the risk of fractures and mortality. Machine learning (ML) techniques offer a promising approach for early prediction using readily available clinical, biochemical, and demographic data.</p>\r\n<p><strong>Aims:</strong> To evaluate the predictive performance of eleven ML models in identifying low BMD and to determine the most influential risk factors using the best-performing model.</p>\r\n<p><strong>Study Design:</strong> Cross-sectional study.</p>\r\n<p><strong>Methods:</strong> Data were obtained from National Health and Nutrition Examination Survey (2005-2010, 2013-2014, and 2017-2020), focusing on individuals aged &ge; 50 years with available femoral neck or total femur BMD data. After applying exclusion criteria, 12,108 participants were included. Supervised ML algorithms were trained using 57 clinical, biochemical, demographic, and behavioral features. Model performance was assessed using accuracy, area under the curve (AUC), recall, precision, and F1 score. SHAP analysis was employed to interpret model outputs and rank predictors.</p>\r\n<p><strong>Results:</strong> The extra trees classifier outperformed other ML methods, achieving an accuracy of 76.7% and an AUC of 0.85. Recursive Feature Elimination with Cross-Validation identified 14 key predictors of low BMD in descending order of importance: sex, age, body mass index, race, family income-to-poverty ratio, serum uric acid, diabetes status, HDL cholesterol, urinary creatinine, alkaline phosphatase, mean cell volume, lymphocyte count, diastolic blood pressure, and glycohemoglobin.</p>\r\n<p><strong>Conclusion:</strong> Tree-based ML models, particularly Extra Trees, can effectively predict low BMD. The identified risk factors include both established and lesser-studied predictors. These findings support the use of ML for personalized osteoporosis and osteopenia screening and highlight its ability to capture complex, multifactorial relationships in population health data.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Low bone mineral density (BMD) is a common age-related condition that elevates the risk of fractures and mortality. Machine learning (ML) techniques offer a promising approach for early prediction using readily available clinical, biochemical, and demographic data. Aims: To evaluate the predictive performance of eleven ML models in identifying low BMD and to determine the most influential risk factors using the best-performing model. Study Design: Cross-sectional study. Methods: Data were obtained from National Health and Nutrition Examination Survey (2005-2010, 2013-2014, and 2017-2020), focusing on individuals aged ≥ 50 years with available femoral neck or total femur BMD data. After applying exclusion criteria, 12,108 participants were included. Supervised ML algorithms were trained using 57 clinical, biochemical, demographic, and behavioral features. Model performance was assessed using accuracy, area under the curve (AUC), recall, precision, and F1 score. SHAP analysis was employed to interpret model outputs and rank predictors. Results: The extra trees classifier outperformed other ML methods, achieving an accuracy of 76.7% and an AUC of 0.85. Recursive Feature Elimination with Cross-Validation identified 14 key predictors of low BMD in descending order of importance: sex, age, body mass index, race, family income-to-poverty ratio, serum uric acid, diabetes status, HDL cholesterol, urinary creatinine, alkaline phosphatase, mean cell volume, lymphocyte count, diastolic blood pressure, and glycohemoglobin. Conclusion: Tree-based ML models, particularly Extra Trees, can effectively predict low BMD. The identified risk factors include both established and lesser-studied predictors. These findings support the use of ML for personalized osteoporosis and osteopenia screening and highlight its ability to capture complex, multifactorial relationships in population health data.",
+    "keywords": [],
     "doi": "10.4274/balkanmedj.galenos.2025.2025-8-125",
-    "received": "2025-08-22",
-    "accepted": "2025-10-17",
-    "published": "2025-10-31",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
     "volume": 42,
-    "issue": 6,
+    "issue": "6",
     "pages": "547-556",
-    "views": 0,
-    "downloads": 0,
+    "views": 2233,
+    "downloads": 1376,
     "citations": 0,
     "featured": false,
     "imageCorner": false,
-    "hasFullText": true
+    "hasFullText": true,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2788",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2788",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2788",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2788",
+    "localPdfUrl": "js/data/pdfs/2788.pdf",
+    "pdfUrl": "js/data/pdfs/2788.pdf"
   },
   {
-    "id": 2826,
-    "type": "Letter to the Editor",
-    "title": "Can SGLT2 Inhibitors Prevent Atrial Fibrillation in HFpEF?",
+    "id": 2745,
+    "type": "Clinical Image",
+    "title": "IgG4-Related Ophthalmic Disease with Proptosis",
     "authors": [
       {
-        "name": "Bülent Özlek",
+        "name": "Li-Qiang Zheng",
+        "affiliation": "Department of Dermatology, The Hospital of 81st Group Army PLA, Zhangjiakou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Han-Zhaohui Zheng",
+        "affiliation": "Clinical Medicine Five-year Undergraduate Program, Shanghai Jiao Tong University School of Medicine, Shanghai, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiang-Chun Han",
+        "affiliation": "Department of Pathology, Tianjin Beichen Hospital of Chinese Medicine, Tianjin, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xiu-Xiu Mao",
+        "affiliation": "Department of Dermatology, The Hospital of 81st Group Army PLA, Zhangjiakou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yin-Zhi Zhang",
+        "affiliation": "Department of Dermatology, The Hospital of 81st Group Army PLA, Zhangjiakou, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 57-year-old Chinese male presented with a 10-year history of significant swelling of bilateral eyes and complained of blurry vision for 3 months. His past medical history was extensive and included hypertension, hypergammaglobulinemia, hyperuricemia, and serum eosinophilia (2008). In addition, in 2008, he was suspected to have pancreatic cancer with liver ",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-5-34",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "6",
+    "pages": "557-559",
+    "views": 4585,
+    "downloads": 1722,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2745",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2745",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2745",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2745",
+    "localPdfUrl": "js/data/pdfs/2745.pdf",
+    "pdfUrl": "js/data/pdfs/2745.pdf"
+  },
+  {
+    "id": 2747,
+    "type": "Clinical Image",
+    "title": "Cardiac Invasion of Recurrence Esophageal Carcinoma Mimicking ST-Elevation Myocardial Infarction",
+    "authors": [
+      {
+        "name": "Cansu Öztürk",
+        "affiliation": "Department of Cardiology, University of Health Sciences Türkiye, Diyarbakir Gazi Yaşargil Education and Research Hospital, Diyarbakır, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Eren Harmancı",
+        "affiliation": "Department of Cardiology, University of Health Sciences Türkiye, Diyarbakir Gazi Yaşargil Education and Research Hospital, Diyarbakır, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Enver Kaya",
+        "affiliation": "Department of Cardiology, University of Health Sciences Türkiye, Diyarbakir Gazi Yaşargil Education and Research Hospital, Diyarbakır, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Fulya Kaya İpek",
+        "affiliation": "Department of Nuclear Medicine, University of Health Sciences Türkiye, Diyarbakir Gazi Yaşargil Education and Research Hospital, Diyarbakır, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Çap[[1]] <",
         "affiliation": "",
         "orcid": ""
       }
     ],
     "abstract": "",
-    "keywords": [
-      "SGLT2 inhibitors",
-      "atrial fibrillation",
-      "HFpEF"
-    ],
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-6-248",
-    "received": "2025-09-27",
-    "accepted": "2025-10-26",
-    "published": "2025-10-31",
+    "abstractHtml": "",
+    "previewText": "A 63-year-old man presented to the emergency department with overall decline, shortness of breath, and chest pain. His medical history included an esophageal gastrectomy and chemotherapy in 2017 for esophageal cancer, which had gone into remission. However, the cancer recurred, and he underwent chemotherapy again 10 months prior. On admission, his vital sign",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-3-165",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
     "volume": 42,
-    "issue": 6,
-    "pages": "582-583",
-    "views": 0,
-    "downloads": 0,
+    "issue": "6",
+    "pages": "560-562",
+    "views": 2814,
+    "downloads": 1558,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2747",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2747",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2747",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2747",
+    "localPdfUrl": "js/data/pdfs/2747.pdf",
+    "pdfUrl": "js/data/pdfs/2747.pdf"
+  },
+  {
+    "id": 2744,
+    "type": "Clinical Image",
+    "title": "Chronic Encapsulated Expanding Hematoma of the Calf Mimicking a Soft Tissue Tumor",
+    "authors": [
+      {
+        "name": "Haiyan Tong",
+        "affiliation": "Clinic of Neurology, Zhoukou Central Hospital, Zhoukou, China",
+        "orcid": ""
+      },
+      {
+        "name": "Haipeng Tong",
+        "affiliation": "Clinic of Neurology, Zhoukou Central Hospital, Zhoukou, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 66-year-old woman was admitted to our hospital for evaluation of a left calf mass that was locally protruding from the skin, with local pain at the site of the mass on palpation and after walking. More than 30 years ago, the patient suffered a fracture of the left knee, she found a “red date” sized lump in the anterolateral left lower leg, after the gradua",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-4-144",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "6",
+    "pages": "563-564",
+    "views": 2882,
+    "downloads": 1701,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2744",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2744",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2744",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2744",
+    "localPdfUrl": "js/data/pdfs/2744.pdf",
+    "pdfUrl": "js/data/pdfs/2744.pdf"
+  },
+  {
+    "id": 2764,
+    "type": "Clinical Image",
+    "title": "Extranodal Rosai-Dorfman Disease of the Breast Presenting as Inflammatory Breast Cancer",
+    "authors": [
+      {
+        "name": "Malek Bouhani",
+        "affiliation": "Department of Oncologic Surgery, Salah Azaiez Institute, University Tunis Elmanar Faculty of Medicine, Tunis, Tunisia",
+        "orcid": ""
+      },
+      {
+        "name": "Salma Kamoun",
+        "affiliation": "Department of Pathology, Salah Azaiez Institute, University Tunis Elmanar Faculty of Medicine, Tunis, Tunisia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 50-year-old woman presented with a left breast (LB) mass that had progressed over 10 months. Her history included a 5 pack-year smoking history. Menarche occurred at age 13, and she delivered her only child by cesarean section at age 27; she did not breastfeed. There was no personal or family history of malignancy. On examination, a poorly defined, indurat",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-8-9",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "6",
+    "pages": "565-566",
+    "views": 2563,
+    "downloads": 1512,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2764",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2764",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2764",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2764",
+    "localPdfUrl": "js/data/pdfs/2764.pdf",
+    "pdfUrl": "js/data/pdfs/2764.pdf"
+  },
+  {
+    "id": 2748,
+    "type": "Clinical Image",
+    "title": "Hemi-Abdominal Livedo in Shock: A Red Flag for Aortic Dissection",
+    "authors": [
+      {
+        "name": "Daiki Mori",
+        "affiliation": "Department of Traumatology and Acute Critical Medicine, Osaka University Graduate School of Medicine, Osaka, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Takeshi Ebihara",
+        "affiliation": "Department of Traumatology and Acute Critical Medicine, Osaka University Graduate School of Medicine, Osaka, Japan",
+        "orcid": ""
+      },
+      {
+        "name": "Jun Oda",
+        "affiliation": "Department of Traumatology and Acute Critical Medicine, Osaka University Graduate School of Medicine, Osaka, Japan",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "An 84-year-old man with a known ascending aortic aneurysm was brought to our emergency department in an unconscious condition. Upon arrival, his vital signs were heart rate of 109 beats/min, blood pressure of 92/61 mmHg, and a Glasgow Coma Scale score of 3. Physical examination revealed livedo over the right lower limb (Figure 1a) and the right lower abdomen",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-4-88",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "6",
+    "pages": "567-568",
+    "views": 2613,
+    "downloads": 1439,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2748",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2748",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2748",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2748",
+    "localPdfUrl": "js/data/pdfs/2748.pdf",
+    "pdfUrl": "js/data/pdfs/2748.pdf"
+  },
+  {
+    "id": 2751,
+    "type": "Scientific Letter",
+    "title": "Novel GMPS::ARHGEF26-AS1 Fusion Gene in Ph+ Acute Myelocytic Leukemia with Additional Chromosome Abnormalities",
+    "authors": [
+      {
+        "name": "Zhan Su",
+        "affiliation": "Department of Hematology, The Affiliated Hospital of Qingdao University, Qingdao, China",
+        "orcid": ""
+      },
+      {
+        "name": "Xin Liu",
+        "affiliation": "Department of Stem Cell Transplantation, Blood Diseases Hospital and Institute of Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, China",
+        "orcid": ""
+      },
+      {
+        "name": "Haidong Zhu",
+        "affiliation": "Department of Hematology, The Affiliated Hospital of Qingdao University, Qingdao, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Philadelphia chromosome-positive acute myeloid leukemia (Ph+ AML) is a rare condition, and its additional genetic abnormalities remain largely unclear.1,2 Here, we describe a case of Ph+ AML with extra chromosomal changes. Using RNA sequencing, we identified a novel fusion gene, GMPS::ARHGEF26-AS1. Both genes involved are related to GMP biological functions.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-4-64",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "6",
+    "pages": "569-571",
+    "views": 2629,
+    "downloads": 1444,
     "citations": 0,
     "featured": false,
     "imageCorner": false,
     "hasFullText": true,
-    "previewText": "The relationship between sodium-glucose co-transporter 2 (SGLT2) inhibitors and atrial fibrillation (AF) in patients with heart failure with preserved ejection fraction represents an evolving area."
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2751",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2751",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2751",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2751",
+    "localPdfUrl": "js/data/pdfs/2751.pdf",
+    "pdfUrl": "js/data/pdfs/2751.pdf"
+  },
+  {
+    "id": 2746,
+    "type": "Scientific Letter",
+    "title": "Ethical Challenges of the",
+    "authors": [
+      {
+        "name": "Yusuf Samet Yaraş",
+        "affiliation": "Georgia Institute of Technology, G.W. Woodruff School of Mechanical Engineering, Atlanta, United States",
+        "orcid": ""
+      },
+      {
+        "name": "Duygu İşlek[[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "The principle of “publish or perish” has long shaped the academic and clinical research environment, becoming a central benchmark for professional advancement and recognition within the scientific community.1 While its original purpose was to encourage productivity and the spread of new knowledge, this mindset has developed over time, placing substantial pre",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-6-80",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "6",
+    "pages": "572-573",
+    "views": 2787,
+    "downloads": 1818,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2746",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2746",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2746",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2746",
+    "localPdfUrl": "js/data/pdfs/2746.pdf",
+    "pdfUrl": "js/data/pdfs/2746.pdf"
+  },
+  {
+    "id": 2766,
+    "type": "Scientific Letter",
+    "title": "Misdiagnosed Lyme: A Multidisciplinary Case Series from a Non-Endemic Region",
+    "authors": [
+      {
+        "name": "Elif Er Gülbezer",
+        "affiliation": "Department of Rheumatology, Koç University Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Oğuz Usta",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Koç University Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Deniz Güllü",
+        "affiliation": "Koç University Faculty of Medicine, İstanbul, Türkiye; Koç University Graduate Faculty of Health Sciences, İstanbul, Türkiye; Koç University - Center for Infectious Diseases (KUISCID), İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Şiran Keske",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Koç University Faculty of Medicine, İstanbul, Türkiye; Koç University - Center for Infectious Diseases (KUISCID), İstanbul, Türkiye; Clinic of Infectious Diseases and Clinical Microbiology, American Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Önder Ergönül",
+        "affiliation": "Department of Infectious Diseases and Clinical Microbiology, Koç University Faculty of Medicine, İstanbul, Türkiye; Koç University - Center for Infectious Diseases (KUISCID), İstanbul, Türkiye; Clinic of Infectious Diseases and Clinical Microbiology, American Hospital, İstanbul, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Lyme disease, caused by the spirochete Borrelia burgdorferi and transmitted through Ixodes tick bites, is the most prevalent vector-borne illness in North America and Europe. Early manifestations include erythema migrans and flu-like symptoms, which typically respond well to antibiotics.1 However, non-specific symptoms such as fatigue and musculoskeletal pai",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-6-239",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "6",
+    "pages": "574-576",
+    "views": 2609,
+    "downloads": 2037,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2766",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2766",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2766",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2766",
+    "localPdfUrl": "js/data/pdfs/2766.pdf",
+    "pdfUrl": "js/data/pdfs/2766.pdf"
+  },
+  {
+    "id": 2757,
+    "type": "Scientific Letter",
+    "title": "Use of Oral Mucosal Graft for Corneal Patching in a Complicated Case of Stevens-Johnson Syndrome",
+    "authors": [
+      {
+        "name": "Bülent Yazıcı",
+        "affiliation": "Department of Ophthalmology, Uludağ University Faculty of Medicine, Bursa, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Hafize Gökben Ulutaş",
+        "affiliation": "Clinic of Ophthalmology, Health Sciences University Türkiye, Bursa City Hospital, Bursa, Türkiye",
+        "orcid": ""
+      },
+      {
+        "name": "Gamze Dereli Can",
+        "affiliation": "Clinic of Ophthalmology, Health Sciences University Türkiye, Bursa City Hospital, Bursa, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Stevens-Johnson syndrome (SJS) can cause severe ocular surface damage, manifesting as dry eye, symblepharon, eyelid abnormalities, and keratopathy. Repairing corneal perforations in such cases can be particularly challenging.1 This report describes the use of an oral mucosal graft (OMG) to repair a corneal perforation in a patient with complicated SJS-a tech",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-6-101",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "6",
+    "pages": "577-578",
+    "views": 2788,
+    "downloads": 1468,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2757",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2757",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2757",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2757",
+    "localPdfUrl": "js/data/pdfs/2757.pdf",
+    "pdfUrl": "js/data/pdfs/2757.pdf"
+  },
+  {
+    "id": 2763,
+    "type": "Scientific Letter",
+    "title": "Lipoxin A4 (LXA4) as a Potential Drug for Autoimmune Uveitis",
+    "authors": [
+      {
+        "name": "Undurti Narasimha Das",
+        "affiliation": "Department of Pharmacology, Atatürk University Faculty of Medicine, Erzurum, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Essential fatty acids (EFAs)-cis-linoleic acid (LA,18:2 n-6) and alpha-linolenic acid (ALA, 18:3 n-3)-are widely distributed in the diet and serve as precursors of several bioactive lipid molecules, including prostaglandins (PGs), leukotrienes (LTs), and thromboxanes (TXs), which exert predominantly pro-inflammatory effects. Both LA and ALA undergo enzymatic",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-7-161",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "6",
+    "pages": "579-581",
+    "views": 2559,
+    "downloads": 1467,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2763",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2763",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2763",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2763",
+    "localPdfUrl": "js/data/pdfs/2763.pdf",
+    "pdfUrl": "js/data/pdfs/2763.pdf"
+  },
+  {
+    "id": 2770,
+    "type": "Scientific Letter",
+    "title": "Can SGLT2 Inhibitors Prevent Atrial Fibrillation in HFpEF?",
+    "authors": [
+      {
+        "name": "Bülent Özlek",
+        "affiliation": "Department of Cardiology, Muğla Sıtkı Koçman University Faculty of Medicine, Muğla, Türkiye",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "Heart failure with preserved ejection fraction (HFpEF) and atrial fibrillation (AF) frequently coexist, sharing key risk factors such as aging, obesity, diabetes, and hypertension.1,2 When present together, they contribute synergistically to increased morbidity and mortality. AF is observed in 40%-60% of HFpEF patients and is associated with worsened prognos",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2025.2025-6-248",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "6",
+    "pages": "582-583",
+    "views": 2501,
+    "downloads": 1595,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2770",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2770",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2770",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2770",
+    "localPdfUrl": "js/data/pdfs/2770.pdf",
+    "pdfUrl": "js/data/pdfs/2770.pdf"
+  },
+  {
+    "id": 2789,
+    "type": "Other",
+    "title": "REVIEWER LIST",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2025-01-01",
+    "volume": 42,
+    "issue": "6",
+    "pages": "",
+    "views": 1397,
+    "downloads": 506,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1299",
+    "sourceArticleId": "2789",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2789",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2789",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2789",
+    "localPdfUrl": "js/data/pdfs/2789.pdf",
+    "pdfUrl": "js/data/pdfs/2789.pdf"
   }
 ]

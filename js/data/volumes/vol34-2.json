@@ -1,0 +1,969 @@
+[
+  {
+    "id": 1806,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1806",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1806",
+    "localPdfUrl": "js/data/pdfs/1806.pdf",
+    "pdfUrl": "js/data/pdfs/1806.pdf"
+  },
+  {
+    "id": 1665,
+    "type": "Invited Review",
+    "title": "Juvenile Idiopathic Arthritis",
+    "authors": [
+      {
+        "name": "Kenan Barut",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University Cerrahpaşa Medical School, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Amra Adrovic",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University Cerrahpaşa Medical School, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sezgin Şahin",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University Cerrahpaşa Medical School, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özgür Kasapçopur",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University Cerrahpaşa Medical School, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Juvenile idiopathic arthritis is the most common chronic rheumatic disease of unknown aetiology in childhood and predominantly presents with peripheral arthritis. The disease is divided into several subgroups, according to demographic characteristics, clinical features, treatment modalities and disease prognosis. Systemic juvenile idiopathic arthritis, which is one of the most frequent disease subtypes, is characterized by recurrent fever and rash. Oligoarticular juvenile idiopathic arthritis, common among young female patients, is usually accompanied by anti-nuclear antibodie positivity and anterior uveitis. Seropositive polyarticular juvenile idiopathic arthritis, an analogue of adult rheumatoid arthritis, is seen in less than 10% of paediatric patients. Seronegative polyarticular juvenile idiopathic arthritis, an entity more specific for childhood, appears with widespread large- and small-joint involvement. Enthesitis-related arthritis is a separate disease subtype, characterized by enthesitis and asymmetric lower-extremity arthritis. This disease subtype represents the childhood form of adult spondyloarthropathies, with human leukocyte antigen-B27 positivity and uveitis but commonly without axial skeleton involvement. Juvenile psoriatic arthritis is characterized by a psoriatic rash, accompanied by arthritis, nail pitting and dactylitis. Disease complications can vary from growth retardation and osteoporosis secondary to treatment and disease activity, to life-threatening macrophage activation syndrome with multi-organ insufficiency. With the advent of new therapeutics over the past 15 years, there has been a marked improvement in juvenile idiopathic arthritis treatment and long-term outcome, without any sequelae. The treatment of juvenile idiopathic arthritis patients involves teamwork, including an experienced paediatric rheumatologist, an ophthalmologist, an orthopaedist, a paediatric psychiatrist and a physiotherapist. The primary goals of treatment are to eliminate active disease, to normalize joint function, to preserve normal growth and to prevent long-term joint damage. Timely and aggressive treatment is important to provide early disease control. The first-line treatment includes disease-modifying anti-rheumatic drugs (methotrexate, sulphasalazine, leflunomide) in combination with corticosteroids, used in different dosages and routes (oral, intravenous, intra-articular). Intra-articular application of steroids seems to be an effective treatment modality, especially in monoarthritis. Biological agents should be added in the treatment of unresponsive patients. Anti-tumour necrosis factor agents (etanercept, infliximab, adalimumab), anti-interleukin-1 agents (anakinra, canakinumab), anti- interleukin-6 agents (tocilizumab) and T-cell regulatory agents (abatacept) have been shown to be safe and effective in childhood patients. Recent studies reported sustained reduction in joint damage with even complete clinical improvement in paediatric patients, compared to previous data. Total Times Cited: 27 (Updated on May. 10 2020 - WoS) ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\tJuvenile idiopathic arthritis is the most common chronic rheumatic disease of unknown aetiology in childhood and predominantly presents with peripheral arthritis. The disease is divided into several subgroups, according to demographic characteristics, clinical features, treatment modalities and disease prognosis. Systemic juvenile idiopathic arthritis, which is one of the most frequent disease subtypes, is characterized by recurrent fever and rash. Oligoarticular juvenile idiopathic arthritis, common among young female patients, is usually accompanied by anti-nuclear antibodie positivity and anterior uveitis. Seropositive polyarticular juvenile idiopathic arthritis, an analogue of adult rheumatoid arthritis, is seen in less than 10% of paediatric patients. Seronegative polyarticular juvenile idiopathic arthritis, an entity more specific for childhood, appears with widespread large- and small-joint involvement. Enthesitis-related arthritis is a separate disease subtype, characterized by enthesitis and asymmetric lower-extremity arthritis. This disease subtype represents the childhood form of adult spondyloarthropathies, with human leukocyte antigen-B27 positivity and uveitis but commonly without axial skeleton involvement. Juvenile psoriatic arthritis is characterized by a psoriatic rash, accompanied by arthritis, nail pitting and dactylitis. Disease complications can vary from growth retardation and osteoporosis secondary to treatment and disease activity, to life-threatening macrophage activation syndrome with multi-organ insufficiency. With the advent of new therapeutics over the past 15 years, there has been a marked improvement in juvenile idiopathic arthritis treatment and long-term outcome, without any sequelae. The treatment of juvenile idiopathic arthritis patients involves teamwork, including an experienced paediatric rheumatologist, an ophthalmologist, an orthopaedist, a paediatric psychiatrist and a physiotherapist. The primary goals of treatment are to eliminate active disease, to normalize joint function, to preserve normal growth and to prevent long-term joint damage. Timely and aggressive treatment is important to provide early disease control. The first-line treatment includes disease-modifying anti-rheumatic drugs (methotrexate, sulphasalazine, leflunomide) in combination with corticosteroids, used in different dosages and routes (oral, intravenous, intra-articular). Intra-articular application of steroids seems to be an effective treatment modality, especially in monoarthritis. Biological agents should be added in the treatment of unresponsive patients. Anti-tumour necrosis factor agents (etanercept, infliximab, adalimumab), anti-interleukin-1 agents (anakinra, canakinumab), anti- interleukin-6 agents (tocilizumab) and T-cell regulatory agents (abatacept) have been shown to be safe and effective in childhood patients. Recent studies reported sustained reduction in joint damage with even complete clinical improvement in paediatric patients, compared to previous data.</p>\r\n<p><strong>Total Times Cited: 27</strong> (Updated on May. 10 2020 - WoS)</p>\r\n<p>\r\n\t---------------------------------------------------------------------------------------------------------------------------------------------------------</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Juvenile idiopathic arthritis is the most common chronic rheumatic disease of unknown aetiology in childhood and predominantly presents with peripheral arthritis. The disease is divided into several subgroups, according to demographic characteristics, clinical features, treatment modalities and disease prognosis. Systemic juvenile idiopathic arthritis, which is one of the most frequent disease subtypes, is characterized by recurrent fever and rash. Oligoarticular juvenile idiopathic arthritis, common among young female patients, is usually accompanied by anti-nuclear antibodie positivity and anterior uveitis. Seropositive polyarticular juvenile idiopathic arthritis, an analogue of adult rheumatoid arthritis, is seen in less than 10% of paediatric patients. Seronegative polyarticular juvenile idiopathic arthritis, an entity more specific for childhood, appears with widespread large- and small-joint involvement. Enthesitis-related arthritis is a separate disease subtype, characterized by enthesitis and asymmetric lower-extremity arthritis. This disease subtype represents the childhood form of adult spondyloarthropathies, with human leukocyte antigen-B27 positivity and uveitis but commonly without axial skeleton involvement. Juvenile psoriatic arthritis is characterized by a psoriatic rash, accompanied by arthritis, nail pitting and dactylitis. Disease complications can vary from growth retardation and osteoporosis secondary to treatment and disease activity, to life-threatening macrophage activation syndrome with multi-organ insufficiency. With the advent of new therapeutics over the past 15 years, there has been a marked improvement in juvenile idiopathic arthritis treatment and long-term outcome, without any sequelae. The treatment of juvenile idiopathic arthritis patients involves teamwork, including an experienced paediatric rheumatologist, an ophthalmologist, an orthopaedist, a paediatric psychiatrist and a physiotherapist. The primary goals of treatment are to eliminate active disease, to normalize joint function, to preserve normal growth and to prevent long-term joint damage. Timely and aggressive treatment is important to provide early disease control. The first-line treatment includes disease-modifying anti-rheumatic drugs (methotrexate, sulphasalazine, leflunomide) in combination with corticosteroids, used in different dosages and routes (oral, intravenous, intra-articular). Intra-articular application of steroids seems to be an effective treatment modality, especially in monoarthritis. Biological agents should be added in the treatment of unresponsive patients. Anti-tumour necrosis factor agents (etanercept, infliximab, adalimumab), anti-interleukin-1 agents (anakinra, canakinumab), anti- interleukin-6 agents (tocilizumab) and T-cell regulatory agents (abatacept) have been shown to be safe and effective in childhood patients. Recent studies reported sustained reduction in joint damage with even complete clinical improvement in paediatric patients, compared to previous data. Total Times Cited: 27 (Updated on May. 10 2020 - WoS) ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0111",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "90-101",
+    "views": 6876,
+    "downloads": 19956,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1665",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1665",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1665",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1665",
+    "localPdfUrl": "js/data/pdfs/1665.pdf",
+    "pdfUrl": "js/data/pdfs/1665.pdf"
+  },
+  {
+    "id": 1798,
+    "type": "Original Article",
+    "title": "Evaluation of Dynamic Disulphide/Thiol Homeostasis in Silica Exposed Workers",
+    "authors": [
+      {
+        "name": "Meşide Gündüzöz",
+        "affiliation": "Clinic of Family Medicine, Ankara Occupational Diseases Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ceylan Bal",
+        "affiliation": "Department of Biochemistry, Yıldırım Beyazıt University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Büyükşekerci",
+        "affiliation": "Clinic of Pharmacology, Ankara Occupational Diseases Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Salim Neşelioğlu",
+        "affiliation": "Department of Biochemistry, Yıldırım Beyazıt University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Türkan Nadir Öziş",
+        "affiliation": "Clinic of Chest Diseases, Ankara Occupational Diseases Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Servet İritaş",
+        "affiliation": "Department of Toxicology, The Council of Forensic Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Halil Kara",
+        "affiliation": "Department of Pharmacology, Yıldırım Beyazıt University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özcan Erel[[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Oxidative stress is implicated as one of the main molecular mechanism underlying silicosis. Aims: In this study, our aim was to asses the redox status in occupationally silica-exposed workers, by evaluating the dynamic thiol-disulphide homeostasis. Study Design: Case-control study. Methods: Thirty-six male workers occupationally exposed to silica particles and 30 healthy volunteers, working as office workers were included to the study. Posteroanterior chest radiographs and pulmonary function tests of both groups were evaluated. Also serum thiol disulphide levels were measured using the spectrophotometric method described by Erel and Neşelioğlu. Results: Among the 36 workers that underwent pulmonary function tests 6 (17%) had obstructive, 7 (19%) had restrictive, 6 (17%) had obstructive and restrictive signs whereas 17 (47%) had no signs. The mean PFTs results of silica-exposed workers were significantly lower than control subjects. The serum disulphide levels of silica-exposed workers were significantly higher than control subjects (23.84±5.89 μmol/L and 21.18±3.44 μmol/L, respectively p=0.02). Conclusion: The serum disulphide levels, a biomarker of oxidative stress, are found to be higher in silica-exposed workers.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<b>Background: </b>Oxidative stress is implicated as one of the main molecular mechanism underlying silicosis.<br>\r\n<b>Aims:</b> In this study, our aim was to asses the redox status in occupationally silica-exposed workers, by evaluating the dynamic thiol-disulphide homeostasis.<br>\r\n<b>Study Design:</b> Case-control study.<br>\r\n<b>Methods: </b>Thirty-six male workers occupationally exposed to silica particles and 30 healthy volunteers, working as office workers were included to the study. Posteroanterior chest radiographs and pulmonary function tests of both groups were evaluated. Also serum thiol disulphide levels were measured using the spectrophotometric method described by Erel and Neşelioğlu. <br>\r\n<b>Results:</b> Among the 36 workers that underwent pulmonary function tests 6 (17%) had obstructive, 7 (19%) had restrictive, 6 (17%) had obstructive and restrictive signs whereas 17 (47%) had no signs. The mean PFTs results of silica-exposed workers were significantly lower than control subjects. The serum disulphide levels of silica-exposed workers were significantly higher than control subjects (23.84±5.89 μmol/L and 21.18±3.44 μmol/L, respectively p=0.02).<br>\r\n<b>Conclusion: </b>The serum disulphide levels, a biomarker of oxidative stress, are found to be higher in silica-exposed workers. \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Oxidative stress is implicated as one of the main molecular mechanism underlying silicosis. Aims: In this study, our aim was to asses the redox status in occupationally silica-exposed workers, by evaluating the dynamic thiol-disulphide homeostasis. Study Design: Case-control study. Methods: Thirty-six male workers occupationally exposed to silica particles and 30 healthy volunteers, working as office workers were included to the study. Posteroanterior chest radiographs and pulmonary function tests of both groups were evaluated. Also serum thiol disulphide levels were measured using the spectrophotometric method described by Erel and Neşelioğlu. Results: Among the 36 workers that underwent pulmonary function tests 6 (17%) had obstructive, 7 (19%) had restrictive, 6 (17%) had obstructive and restrictive signs whereas 17 (47%) had no signs. The mean PFTs results of silica-exposed workers were significantly lower than control subjects. The serum disulphide levels of silica-exposed workers were significantly higher than control subjects (23.84±5.89 μmol/L and 21.18±3.44 μmol/L, respectively p=0.02). Conclusion: The serum disulphide levels, a biomarker of oxidative stress, are found to be higher in silica-exposed workers.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1632",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "102-107",
+    "views": 6694,
+    "downloads": 9434,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1798",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1798",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1798",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1798",
+    "localPdfUrl": "js/data/pdfs/1798.pdf",
+    "pdfUrl": "js/data/pdfs/1798.pdf"
+  },
+  {
+    "id": 1666,
+    "type": "Original Article",
+    "title": "Intracranial Lesions in Children and Adolescents with Morbid Obesity",
+    "authors": [
+      {
+        "name": "Ayça Törel Ergür",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Endocrinology, Kırıkkale University Faculty of Medicine, Kırıkkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sevinç Odabaşı Güneş",
+        "affiliation": "Department of Pediatrics, Division of Pediatric Endocrinology, Kırıkkale University Faculty of Medicine, Kırıkkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sinan Tan",
+        "affiliation": "Department of Radiology, Kırıkkkale University Faculty of Medicine, Kırıkkale, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ü. Ayşe Tandırcıoğlu",
+        "affiliation": "Department of Pediatrics, Kırıkkale University Faculty of Medicine, Kırıkkale, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Intracranial lesions may affect the hypothalamo-hypophyseal axis and lead to some neuro-endocrinological dysfunctions (hyperphagia, sleep disorders and hormonal dysfunctions). There is a very limited number of studies about childhood obesity and intracranial lesions. Aims: To evaluate the incidence of intracranial lesions and its role in clinical symptoms and aetiology in cases with morbid obesity who have been admitted to the paediatric endocrinology department with this complaint. Study Design: Cross-sectional study. Methods: A total of 120 cases admitted to the paediatric endocrinology department with the complaint of morbid obesity between 2002 and 2015 were included in this study. A detailed history was taken and a physical examination was performed; biochemical, hormonal parameters were evaluated. Contrast dynamic magnetic resonance imaging was performed in order to visualize cranial pathologies. Results: An intracranial lesions was detected in 16.6% of the patients and 55% of these lesions were adenoma of the hypophysis. Prolactin levels were increased in six patients but front hypophyseal hormone levels were within normal range in the rest of the patients. Growth velocity of the patients was not affected. Conclusion: In our study, the incidence of intracranial lesions in children and adolescents with morbid obesity was much higher than in the normal population. According to this data, we are of the opinion that contrast dynamic magnetic resonance imaging is helpful in children with morbid obesity for the early detection of the mass before it causes any clinical or neurological symptoms and in the prevention of future complications.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background: </strong>Intracranial lesions may affect the hypothalamo-hypophyseal axis and lead to some neuro-endocrinological dysfunctions (hyperphagia, sleep disorders and hormonal dysfunctions). There is a very limited number of studies about childhood obesity and intracranial lesions.<br />\r\n\t<strong>Aims:</strong> To evaluate the incidence of intracranial lesions and its role in clinical symptoms and aetiology in cases with morbid obesity who have been admitted to the paediatric endocrinology department with this complaint.<br />\r\n\t<strong>Study Design:</strong> Cross-sectional study.<br />\r\n\t<strong>Methods:</strong> A total of 120 cases admitted to the paediatric endocrinology department with the complaint of morbid obesity between 2002 and 2015 were included in this study. A detailed history was taken and a physical examination was performed; biochemical, hormonal parameters were evaluated. Contrast dynamic magnetic resonance imaging was performed in order to visualize cranial pathologies.<br />\r\n\t<strong>Results:</strong> An intracranial lesions was detected in 16.6% of the patients and 55% of these lesions were adenoma of the hypophysis. Prolactin levels were increased in six patients but front hypophyseal hormone levels were within normal range in the rest of the patients. Growth velocity of the patients was not affected.<br />\r\n\t<strong>Conclusion:</strong> In our study, the incidence of intracranial lesions in children and adolescents with morbid obesity was much higher than in the normal population.&nbsp;&nbsp; According to this data, we are of the opinion that contrast dynamic magnetic resonance imaging is helpful in children with morbid obesity for the early detection of the mass before it causes any clinical or neurological symptoms and in the prevention of future complications.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Intracranial lesions may affect the hypothalamo-hypophyseal axis and lead to some neuro-endocrinological dysfunctions (hyperphagia, sleep disorders and hormonal dysfunctions). There is a very limited number of studies about childhood obesity and intracranial lesions. Aims: To evaluate the incidence of intracranial lesions and its role in clinical symptoms and aetiology in cases with morbid obesity who have been admitted to the paediatric endocrinology department with this complaint. Study Design: Cross-sectional study. Methods: A total of 120 cases admitted to the paediatric endocrinology department with the complaint of morbid obesity between 2002 and 2015 were included in this study. A detailed history was taken and a physical examination was performed; biochemical, hormonal parameters were evaluated. Contrast dynamic magnetic resonance imaging was performed in order to visualize cranial pathologies. Results: An intracranial lesions was detected in 16.6% of the patients and 55% of these lesions were adenoma of the hypophysis. Prolactin levels were increased in six patients but front hypophyseal hormone levels were within normal range in the rest of the patients. Growth velocity of the patients was not affected. Conclusion: In our study, the incidence of intracranial lesions in children and adolescents with morbid obesity was much higher than in the normal population. According to this data, we are of the opinion that contrast dynamic magnetic resonance imaging is helpful in children with morbid obesity for the early detection of the mass before it causes any clinical or neurological symptoms and in the prevention of future complications.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1541",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "108-112",
+    "views": 6866,
+    "downloads": 2862,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1666",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1666",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1666",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1666",
+    "localPdfUrl": "js/data/pdfs/1666.pdf",
+    "pdfUrl": "js/data/pdfs/1666.pdf"
+  },
+  {
+    "id": 1667,
+    "type": "Original Article",
+    "title": "A Simple Measure to Assess Hyperinflation and Air Trapping: 1-Forced Expiratory Volume in Three Second / Forced Vital Capacity",
+    "authors": [
+      {
+        "name": "Sermin Börekçi",
+        "affiliation": "Department of Pulmonology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tunçalp Demir",
+        "affiliation": "Department of Pulmonology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aslı Görek Dilektaşlı",
+        "affiliation": "Department of Pulmonology, Uludag University School of Medicine, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Melahat Uygun",
+        "affiliation": "Department of Pulmonology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nurhayat Yıldırım",
+        "affiliation": "Department of Pulmonology, İstanbul University Cerrahpaşa School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Several recent studies have suggested that 1 minus-forced expiratory volume expired in 3 seconds / forced vital capacity (1-FEV3/FVC) may be an indicator of distal airway obstruction and a promising measure to evaluate small airways dysfunction. Aims: To investigate the associations of 1-FEV3/FVC with the spirometric measures and lung volumes that assess small airways dysfunction and reflects hyperinflation and air trapping. Study Design: Retrospective cross-sectional study. Methods: Retrospective assessment of a total of 1110 cases who underwent body plethysmographic lung volume estimations between a time span from 2005 to 2012. Patients were assigned into two groups: firstly by FEV1/FVC (FEV1/FVC <70% vs. FEV1/FVC ≥70%); secondly by FEV3/FVC < lower limits of normal (LLN) (FEV3/FVC < LLN vs. FEV3/FVC ≥ LLN). Spirometric indices and lung volumes measured by whole-body plethysmography were compared in groups. Also the correlation of spirometric indices with measured lung volumes were assessed in the whole-study population and in subgroups stratified according to FEV1/FVC and FEV3/FVC. Results: Six hundred seven (54.7%) were male and 503 (45.3%) were female, with a mean age of 52.5±15.6 years. Mean FEV3/FVC and 1-FEV3/FVC were 87.05%, 12.95%, respectively. The mean 1-FEV3/FVC was 4.9% in the FEV1/FVC ≥70% group (n=644) vs. 24.1% in the FEV1/FVC <70% group (n=466). A positive correlation was found between 1-FEV3/FVC and residual volume (r=0.70; p<0.0001), functional residual capacity-pleth (r=0.61; p<0.0001), and total lung capacity (r=0.47; p<0.0001). 1-FEV3/FVC was negatively correlated with forced expiratory flow25-75 (r=−0.84; p<0.0001). The upper limit of 95% confidence interval for 1-FEV3/FVC was 13.7%. 1-FEV3/FVC showed significant correlations with parameters of air trapping and hyperinflation measured by whole-body plethysmography. Importantly, these correlations were higher in study participants with FEV1/FVC <70% or FEV3/FVC < LLN compared to those with FEV1/FVC ≥70% or FEV3/FVC ≥ LLN, respectively. Conclusion: 1-FEV3/FVC can be easily calculated from routine spirometric measurements. 1-FEV3/FVC is a promising marker of air trapping and hyperinflation. We suggest that 1-FEV3/FVC is complementary to FEV1/FVC and recommend clinicians to routinely report and evaluate together with FEV1/FVC during spirometry. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background:</strong> Several recent studies have suggested that 1 minus-forced expiratory volume expired in 3 seconds / forced vital capacity (1-FEV<sub>3</sub>/FVC) may be an indicator of distal airway obstruction and a promising measure to evaluate small airways dysfunction.<br />\r\n\t<strong>Aims:</strong> To investigate the associations of 1-FEV<sub>3</sub>/FVC with the spirometric measures and lung volumes that assess small airways dysfunction and reflects hyperinflation and air trapping.<br />\r\n\t<strong>Study Design:</strong> Retrospective cross-sectional study.<br />\r\n\t<strong>Methods: </strong>Retrospective assessment of a total of 1110 cases who underwent body plethysmographic lung volume estimations between a time span from 2005 to 2012. Patients were assigned into two groups: firstly by FEV<sub>1</sub>/FVC (FEV<sub>1</sub>/FVC &lt;70% vs. FEV1/FVC &ge;70%); secondly by FEV<sub>3</sub>/FVC &lt; lower limits of normal (LLN) (FEV<sub>3</sub>/FVC &lt; LLN vs. FEV<sub>3</sub>/FVC &ge; LLN). Spirometric indices and lung volumes measured by whole-body plethysmography were compared in groups. Also the correlation of spirometric indices with measured lung volumes were assessed in the whole-study population and in subgroups stratified according to FEV<sub>1</sub>/FVC and FEV<sub>3</sub>/FVC.<br />\r\n\t<strong>Results: </strong>Six hundred seven (54.7%) were male and 503 (45.3%) were female, with a mean age of 52.5&plusmn;15.6 years. Mean FEV<sub>3</sub>/FVC and 1-FEV<sub>3</sub>/FVC were 87.05%, 12.95%, respectively. The mean 1-FEV3/FVC was 4.9% in the FEV<sub>1</sub>/FVC &ge;70% group (n=644) vs. 24.1% in the FEV<sub>1</sub>/FVC &lt;70% group (n=466). A positive correlation was found between 1-FEV<sub>3</sub>/FVC and residual volume (r=0.70; p&lt;0.0001), functional residual capacity-pleth (r=0.61; p&lt;0.0001), and total lung capacity (r=0.47; p&lt;0.0001). 1-FEV<sub>3</sub>/FVC was negatively correlated with forced expiratory flow<sub>25-75</sub> (r=&minus;0.84; p&lt;0.0001). The upper limit of 95% confidence interval for 1-FEV<sub>3</sub>/FVC was 13.7%. 1-FEV<sub>3</sub>/FVC showed significant correlations with parameters of air trapping and hyperinflation measured by whole-body plethysmography. Importantly, these correlations were higher in study participants with FEV<sub>1</sub>/FVC &lt;70% or FEV<sub>3</sub>/FVC &lt; LLN compared to those with FEV<sub>1</sub>/FVC &ge;70% or FEV<sub>3</sub>/FVC &ge; LLN, respectively.<br />\r\n\t<strong>Conclusion: </strong>1-FEV<sub>3</sub>/FVC can be easily calculated from routine spirometric measurements. 1-FEV<sub>3</sub>/FVC is a promising marker of air trapping and hyperinflation. We suggest that 1-FEV<sub>3</sub>/FVC is complementary to FEV<sub>1</sub>/FVC and recommend clinicians to routinely report and evaluate together with FEV<sub>1</sub>/FVC during spirometry.</p>\r\n<p>\r\n\t---------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Several recent studies have suggested that 1 minus-forced expiratory volume expired in 3 seconds / forced vital capacity (1-FEV3/FVC) may be an indicator of distal airway obstruction and a promising measure to evaluate small airways dysfunction. Aims: To investigate the associations of 1-FEV3/FVC with the spirometric measures and lung volumes that assess small airways dysfunction and reflects hyperinflation and air trapping. Study Design: Retrospective cross-sectional study. Methods: Retrospective assessment of a total of 1110 cases who underwent body plethysmographic lung volume estimations between a time span from 2005 to 2012. Patients were assigned into two groups: firstly by FEV1/FVC (FEV1/FVC <70% vs. FEV1/FVC ≥70%); secondly by FEV3/FVC < lower limits of normal (LLN) (FEV3/FVC < LLN vs. FEV3/FVC ≥ LLN). Spirometric indices and lung volumes measured by whole-body plethysmography were compared in groups. Also the correlation of spirometric indices with measured lung volumes were assessed in the whole-study population and in subgroups stratified according to FEV1/FVC and FEV3/FVC. Results: Six hundred seven (54.7%) were male and 503 (45.3%) were female, with a mean age of 52.5±15.6 years. Mean FEV3/FVC and 1-FEV3/FVC were 87.05%, 12.95%, respectively. The mean 1-FEV3/FVC was 4.9% in the FEV1/FVC ≥70% group (n=644) vs. 24.1% in the FEV1/FVC <70% group (n=466). A positive correlation was found between 1-FEV3/FVC and residual volume (r=0.70; p<0.0001), functional residual capacity-pleth (r=0.61; p<0.0001), and total lung capacity (r=0.47; p<0.0001). 1-FEV3/FVC was negatively correlated with forced expiratory flow25-75 (r=−0.84; p<0.0001). The upper limit of 95% confidence interval for 1-FEV3/FVC was 13.7%. 1-FEV3/FVC showed significant correlations with parameters of air trapping and hyperinflation measured by whole-body plethysmography. Importantly, these correlations were higher in study participants with FEV1/FVC <70% or FEV3/FVC < LLN compared to those with FEV1/FVC ≥70% or FEV3/FVC ≥ LLN, respectively. Conclusion: 1-FEV3/FVC can be easily calculated from routine spirometric measurements. 1-FEV3/FVC is a promising marker of air trapping and hyperinflation. We suggest that 1-FEV3/FVC is complementary to FEV1/FVC and recommend clinicians to routinely report and evaluate together with FEV1/FVC during spirometry. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.0857",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "113-118",
+    "views": 6188,
+    "downloads": 10027,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1667",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1667",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1667",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1667",
+    "localPdfUrl": "js/data/pdfs/1667.pdf",
+    "pdfUrl": "js/data/pdfs/1667.pdf"
+  },
+  {
+    "id": 1668,
+    "type": "Original Article",
+    "title": "Diagnosis of Nipple Discharge: Value of Magnetic Resonance Imaging and Ultrasonography in Comparison with Ductoscopy",
+    "authors": [
+      {
+        "name": "Ravza Yılmaz",
+        "affiliation": "Department of Radiology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ömer Bender",
+        "affiliation": "Clinic of General Surgery, Okmeydanı Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatma Çelik Yabul",
+        "affiliation": "Department of Radiology, Bakırkoy Dr. Sadi Konuk Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Menduh Dursun",
+        "affiliation": "Department of Radiology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehtap Tunacı",
+        "affiliation": "Department of Radiology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gülden Acunas",
+        "affiliation": "Department of Radiology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Pathologic nipple discharge, which is a common reason for referral to the breast imaging service, refers to spontaneous or bloody nipple discharge that arises from a single duct. The most common cause of nipple discharge is benign breast lesions, such as solitary intraductal papilloma and papillomatosis. Nevertheless, in rare cases, a malignant cause of nipple discharge can be found. Aims: To study the diagnostic value of ultrasonography, magnetic resonance imaging, and ductoscopy in patients with pathologic nipple discharge, compare their efficacy, and investigate the importance of magnetic resonance imaging in the diagnosis of intraductal pathologies. Study Design: Diagnostic accuracy study. Methods: Fifty patients with pathologic nipple discharge were evaluated by ultrasonography and magnetic resonance imaging. Of these, 44 ductoscopic investigations were made. The patients were classified according to magnetic resonance imaging, ultrasonography, and ductoscopy findings. A total of 25 patients, whose findings were reported as intraductal masses, underwent surgery oincluding endoscopic excision for two endoscopic excision. Findings were compared with the pathology results that were accepted as the gold standard in the description of the aetiology of nipple discharge. In addition, magnetic resonance imaging, ultrasonography and ductoscopy findings were analysed comparatively in patients who had no surgery. Results: Intraductal masses were reported in 26 patients, 20 of whom operated and established accurate diagnosis of 18 patients on magnetic resonance imaging. According to the ultrasonography, intraductal masses were identified in 22 patients, 17 of whom underwent surgery. Ultrasonography established accurate diagnoses in 15 patients. Intraductal mass was identified in 22 patients and ductoscopy established accurate diagnoses based on histopathologic results in 16 patients. The sensitivities of methods were 75% in ultrasonography, 90% in magnetic resonance imaging, and 94.6% in ductoscopy. The specificities were 66.7% in ultrasonography, 66.7% in magnetic resonance imaging, and 40% in ductoscopy. Intraductal papillomas were mostly observed as oval nodules with well-circumscribed smooth margins within dilated ducts and persistant in the dynamic analysis. Lesions that protruded into the lumen of the ducts, either solitary or multiple, were characteristic ductoscopy findings of our patients who were diagnosed as having papilloma/papillomatosis. Conclusion: Magnetic resonance imaging and ductoscopy had no statistical superiority over each other, however they were superior to ultrasonography in the diagnosis of pathologic nipple discharge. Magnetic resonance imaging may be highly sensitive for diagnosing nipple discharge with new techniques and sequences and a non-invasive method that more advantageous for showing ductal tree visualization and is able to detect completely obstructed intraductal lesions. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background:</strong> Pathologic nipple discharge, which is a common reason for referral to the breast imaging service, refers to spontaneous or bloody nipple discharge that arises from a single duct. The most common cause of nipple discharge is benign breast lesions, such as solitary intraductal papilloma and papillomatosis. Nevertheless, in rare cases, a malignant cause of nipple discharge can be found.<br />\r\n\t<strong>Aims:</strong> To study the diagnostic value of ultrasonography, magnetic resonance imaging, and ductoscopy in patients with pathologic nipple discharge, compare their efficacy, and investigate the importance of magnetic resonance imaging in the diagnosis of intraductal pathologies.<br />\r\n\t<strong>Study Design:</strong> Diagnostic accuracy study.<br />\r\n\t<strong>Methods:</strong> Fifty patients with pathologic nipple discharge were evaluated by ultrasonography and magnetic resonance imaging. Of these, 44 ductoscopic investigations were made. The patients were classified according to magnetic resonance imaging, ultrasonography, and ductoscopy findings. A total of 25 patients, whose findings were reported as intraductal masses, underwent surgery oincluding endoscopic excision for two endoscopic excision. Findings were compared with the pathology results that were accepted as the gold standard in the description of the aetiology of nipple discharge. In addition, magnetic resonance imaging, ultrasonography and ductoscopy findings were analysed comparatively in patients who had no surgery.<br />\r\n\t<strong>Results:</strong> Intraductal masses were reported in 26 patients, 20 of whom operated and established accurate diagnosis of 18 patients on magnetic resonance imaging. According to the ultrasonography, intraductal masses were identified in 22 patients, 17 of whom underwent surgery. Ultrasonography established accurate diagnoses in 15 patients. Intraductal mass was identified in 22 patients and ductoscopy established accurate diagnoses based on histopathologic results in 16 patients. The sensitivities of methods were 75% in ultrasonography, 90% in magnetic resonance imaging, and 94.6% in ductoscopy. The specificities were 66.7% in ultrasonography, 66.7% in magnetic resonance imaging, and 40% in ductoscopy. Intraductal papillomas were mostly observed as oval nodules with well-circumscribed smooth margins within dilated ducts and persistant in the dynamic analysis. Lesions that protruded into the lumen of the ducts, either solitary or multiple, were characteristic ductoscopy findings of our patients who were diagnosed as having papilloma/papillomatosis.<br />\r\n\t<strong>Conclusion:</strong> Magnetic resonance imaging and ductoscopy had no statistical superiority over each other, however they were superior to ultrasonography in the diagnosis of pathologic nipple discharge. Magnetic resonance imaging may be highly sensitive for diagnosing nipple discharge with new techniques and sequences and a non-invasive method that more advantageous for showing ductal tree visualization and is able to detect completely obstructed intraductal lesions.</p>\r\n<p>\r\n\t---------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Pathologic nipple discharge, which is a common reason for referral to the breast imaging service, refers to spontaneous or bloody nipple discharge that arises from a single duct. The most common cause of nipple discharge is benign breast lesions, such as solitary intraductal papilloma and papillomatosis. Nevertheless, in rare cases, a malignant cause of nipple discharge can be found. Aims: To study the diagnostic value of ultrasonography, magnetic resonance imaging, and ductoscopy in patients with pathologic nipple discharge, compare their efficacy, and investigate the importance of magnetic resonance imaging in the diagnosis of intraductal pathologies. Study Design: Diagnostic accuracy study. Methods: Fifty patients with pathologic nipple discharge were evaluated by ultrasonography and magnetic resonance imaging. Of these, 44 ductoscopic investigations were made. The patients were classified according to magnetic resonance imaging, ultrasonography, and ductoscopy findings. A total of 25 patients, whose findings were reported as intraductal masses, underwent surgery oincluding endoscopic excision for two endoscopic excision. Findings were compared with the pathology results that were accepted as the gold standard in the description of the aetiology of nipple discharge. In addition, magnetic resonance imaging, ultrasonography and ductoscopy findings were analysed comparatively in patients who had no surgery. Results: Intraductal masses were reported in 26 patients, 20 of whom operated and established accurate diagnosis of 18 patients on magnetic resonance imaging. According to the ultrasonography, intraductal masses were identified in 22 patients, 17 of whom underwent surgery. Ultrasonography established accurate diagnoses in 15 patients. Intraductal mass was identified in 22 patients and ductoscopy established accurate diagnoses based on histopathologic results in 16 patients. The sensitivities of methods were 75% in ultrasonography, 90% in magnetic resonance imaging, and 94.6% in ductoscopy. The specificities were 66.7% in ultrasonography, 66.7% in magnetic resonance imaging, and 40% in ductoscopy. Intraductal papillomas were mostly observed as oval nodules with well-circumscribed smooth margins within dilated ducts and persistant in the dynamic analysis. Lesions that protruded into the lumen of the ducts, either solitary or multiple, were characteristic ductoscopy findings of our patients who were diagnosed as having papilloma/papillomatosis. Conclusion: Magnetic resonance imaging and ductoscopy had no statistical superiority over each other, however they were superior to ultrasonography in the diagnosis of pathologic nipple discharge. Magnetic resonance imaging may be highly sensitive for diagnosing nipple discharge with new techniques and sequences and a non-invasive method that more advantageous for showing ductal tree visualization and is able to detect completely obstructed intraductal lesions. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0184",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "119-126",
+    "views": 6846,
+    "downloads": 10047,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1668",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1668",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1668",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1668",
+    "localPdfUrl": "js/data/pdfs/1668.pdf",
+    "pdfUrl": "js/data/pdfs/1668.pdf"
+  },
+  {
+    "id": 1669,
+    "type": "Original Article",
+    "title": "Fetal Nasal Bone Length as a Novel Marker for Prediction of Adverse Perinatal Outcomes in the First-Trimester of Pregnancy",
+    "authors": [
+      {
+        "name": "Mehmet Tunç Canda",
+        "affiliation": "Clinic of Obstetrics and Gynaecology, Kent Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Namık Demir",
+        "affiliation": "Clinic of Obstetrics and Gynaecology, Kent Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Orçun Sezer",
+        "affiliation": "Clinic of Obstetrics and Gynaecology, Kent Hospital, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Adverse outcomes of pregnancy are a challenging health-care problem. Prediction of adverse pregnancy outcomes is important to prevent the morbidities of the foetus and the mother. Aims: To study the clinical interest of fetal nasal bone length in predicting adverse pregnancy outcomes in the first trimester of pregnancy. Study Design: A population-based retrospective cohort study. Methods: Data from 868 women with first-trimester fetal nasal bone length and birth records available were enrolled. Fetal nasal bone length percentiles were determined and evaluated for their ability to predict adverse pregnancy outcomes such as preterm birth, preterm labour, preterm premature rupture of membranes, early preterm birth, gestational diabetes mellitus, gestational hypertension-preeclampsia, small-for-gestational age foetuses, macrosomia, oligohydramnios, polyhydramnios and fetal distress. Results: Fetal nasal bone length >95th percentile was significantly associated with preterm labor and preterm premature rupture of membranes (p=0.02, accuracy 0.91 and p=0.001, accuracy 0.94, respectively), whereas nasal bone length >99th percentile was significantly associated with preterm labor and oligohydramnios (p=0.006, accuracy 0.95 and p=0.014, accuracy 0.97). Conclusion: Fetal nasal bone length at high percentiles in the first trimester of pregnancy may aid in the prediction of adverse outcomes such as preterm labour, preterm premature rupture of membranes and oligohydramnios. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background: </strong>Adverse outcomes of pregnancy are a challenging health-care problem. Prediction of adverse pregnancy outcomes is important to prevent the morbidities of the foetus and the mother.<br />\r\n\t<strong>Aims: </strong>To study the clinical interest of fetal nasal bone length in predicting adverse pregnancy outcomes in the first trimester of pregnancy.<br />\r\n\t<strong>Study Design:</strong> A population-based retrospective cohort study.<br />\r\n\t<strong>Methods: </strong>Data from 868 women with first-trimester fetal nasal bone length and birth records available were enrolled. Fetal nasal bone length percentiles were determined and evaluated for their ability to predict adverse pregnancy outcomes such as preterm birth, preterm labour, preterm premature rupture of membranes, early preterm birth, gestational diabetes mellitus, gestational hypertension-preeclampsia, small-for-gestational age foetuses, macrosomia, oligohydramnios, polyhydramnios and fetal distress.<br />\r\n\t<strong>Results: </strong>Fetal nasal bone length &gt;95<sup>th</sup> percentile was significantly associated with preterm labor and preterm premature rupture of membranes (p=0.02, accuracy 0.91 and p=0.001, accuracy 0.94, respectively), whereas nasal bone length &gt;99<sup>th</sup> percentile was significantly associated with preterm labor and oligohydramnios (p=0.006, accuracy 0.95 and p=0.014, accuracy 0.97).<br />\r\n\t<strong>Conclusion:</strong> Fetal nasal bone length at high percentiles in the first trimester of pregnancy may aid in the prediction of adverse outcomes such as preterm labour, preterm premature rupture of membranes and oligohydramnios.</p>\r\n<p>\r\n\t---------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Adverse outcomes of pregnancy are a challenging health-care problem. Prediction of adverse pregnancy outcomes is important to prevent the morbidities of the foetus and the mother. Aims: To study the clinical interest of fetal nasal bone length in predicting adverse pregnancy outcomes in the first trimester of pregnancy. Study Design: A population-based retrospective cohort study. Methods: Data from 868 women with first-trimester fetal nasal bone length and birth records available were enrolled. Fetal nasal bone length percentiles were determined and evaluated for their ability to predict adverse pregnancy outcomes such as preterm birth, preterm labour, preterm premature rupture of membranes, early preterm birth, gestational diabetes mellitus, gestational hypertension-preeclampsia, small-for-gestational age foetuses, macrosomia, oligohydramnios, polyhydramnios and fetal distress. Results: Fetal nasal bone length >95th percentile was significantly associated with preterm labor and preterm premature rupture of membranes (p=0.02, accuracy 0.91 and p=0.001, accuracy 0.94, respectively), whereas nasal bone length >99th percentile was significantly associated with preterm labor and oligohydramnios (p=0.006, accuracy 0.95 and p=0.014, accuracy 0.97). Conclusion: Fetal nasal bone length at high percentiles in the first trimester of pregnancy may aid in the prediction of adverse outcomes such as preterm labour, preterm premature rupture of membranes and oligohydramnios. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0133",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "127-131",
+    "views": 6655,
+    "downloads": 9871,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1669",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1669",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1669",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1669",
+    "localPdfUrl": "js/data/pdfs/1669.pdf",
+    "pdfUrl": "js/data/pdfs/1669.pdf"
+  },
+  {
+    "id": 1670,
+    "type": "Original Article",
+    "title": "Risk Adapted Management of Febrile Neutrepenia and Early Cessation of Empirical Antibiotherapy in Hematopoietic Stem Cell Transplantation Setting",
+    "authors": [
+      {
+        "name": "Ali Hakan Kaya",
+        "affiliation": "Hematology and Bone Marrow Transplant Unit, Dr. Abdurrahman Yurtaslan Oncology Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Emre Tekgündüz",
+        "affiliation": "Hematology and Bone Marrow Transplant Unit, Dr. Abdurrahman Yurtaslan Oncology Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fazilet Duygu",
+        "affiliation": "Clinic of Infectious Diseases, Dr. Abdurrahman Yurtaslan Oncology Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dicle Koca",
+        "affiliation": "Hematology and Bone Marrow Transplant Unit, Dr. Abdurrahman Yurtaslan Oncology Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Filiz Bekdemir",
+        "affiliation": "Hematology and Bone Marrow Transplant Unit, Dr. Abdurrahman Yurtaslan Oncology Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hikmetullah Batgi",
+        "affiliation": "Hematology and Bone Marrow Transplant Unit, Dr. Abdurrahman Yurtaslan Oncology Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bahar Ulu Uncu",
+        "affiliation": "Hematology and Bone Marrow Transplant Unit, Dr. Abdurrahman Yurtaslan Oncology Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuğçe Nur Yiğenoğlu",
+        "affiliation": "Hematology and Bone Marrow Transplant Unit, Dr. Abdurrahman Yurtaslan Oncology Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Sinan Dal",
+        "affiliation": "Hematology and Bone Marrow Transplant Unit, Dr. Abdurrahman Yurtaslan Oncology Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Merih Çakar Kızıl",
+        "affiliation": "Hematology and Bone Marrow Transplant Unit, Dr. Abdurrahman Yurtaslan Oncology Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fevzi Altuntaş",
+        "affiliation": "Hematology and Bone Marrow Transplant Unit, Dr. Abdurrahman Yurtaslan Oncology Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Haematopoietic stem cell transplantation is a curative treatment option for many haematological disorders. Infection following haematopoietic stem cell transplantation is one of the major causes of mortality. Aims: To investigate the outcomes of early cessation of empirical antibiotic treatment per protocol in febrile neutropenia patients who have undergone haematopoietic stem cell transplantation at our clinic. Study Design: Descriptive study. Methods: The present study retrospectively evaluated febrile neutropenia attacks in haematopoietic stem cell transplantation recipients during the period June 2014 - January 2015 at our haematopoietic stem cell transplantation clinic. Results: A total of 72 febrile neutropenia attacks were evaluated in 53 patients. In 46 febrile neutropenia attacks, microbiologic cultures revealed positive results. In culture-positive febrile neutropenia episodes a single bacterium was isolated in 32 cases and multiple strains were isolated in 14. In 15 patients, empirical antibiotic therapy was discontinued after 72 hours. These patients were clinically stable, without evident focus of infection and had negative culture results. Only 4 recurrent episodes were observed (27%) after cessation of antibiotherapy. No patient died as a result of recurrent infection. The 30-day and 100-day post-transplantation mortality rates of patients with febrile neutropenia episodes were 11.3% (6/53) and 3.8% (2/53), respectively. Infection-related 30-day and 100-day mortality rates were 7.5% (4/53) and 0% (0/53), respectively. Conclusion: The main message of our study is that early cessation of empirical antibiotherapy seems to be feasible in eligible patients without increasing febrile neutropenia mortality rates. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background: </strong>Haematopoietic stem cell transplantation is a curative treatment option for many haematological disorders. Infection following haematopoietic stem cell transplantation is one of the major causes of mortality.<br />\r\n\t<strong>Aims:</strong> To investigate the outcomes of early cessation of empirical antibiotic treatment per protocol in febrile neutropenia patients who have undergone haematopoietic stem cell transplantation at our clinic.<br />\r\n\t<strong>Study Design:</strong> Descriptive study.<br />\r\n\t<strong>Methods:</strong> The present study retrospectively evaluated febrile neutropenia attacks in haematopoietic stem cell transplantation recipients during the period June 2014 - January 2015 at our haematopoietic stem cell transplantation clinic.<br />\r\n\t<strong>Results: </strong>A total of 72 febrile neutropenia attacks were evaluated in 53 patients. In 46 febrile neutropenia attacks, microbiologic cultures revealed positive results. In culture-positive febrile neutropenia episodes a single bacterium was isolated in 32 cases and multiple strains were isolated in 14. In 15 patients, empirical antibiotic therapy was discontinued after 72 hours. These patients were clinically stable, without evident focus of infection and had negative culture results. Only 4 recurrent episodes were observed (27%) after cessation of antibiotherapy. No patient died as a result of recurrent infection. The 30-day and 100-day post-transplantation mortality rates of patients with febrile neutropenia episodes were 11.3% (6/53) and 3.8% (2/53), respectively. Infection-related 30-day and 100-day mortality rates were 7.5% (4/53) and 0% (0/53), respectively.<br />\r\n\t<strong>Conclusion:</strong> The main message of our study is that early cessation of empirical antibiotherapy seems to be feasible in eligible patients without increasing febrile neutropenia mortality rates.</p>\r\n<p>\r\n\t---------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Haematopoietic stem cell transplantation is a curative treatment option for many haematological disorders. Infection following haematopoietic stem cell transplantation is one of the major causes of mortality. Aims: To investigate the outcomes of early cessation of empirical antibiotic treatment per protocol in febrile neutropenia patients who have undergone haematopoietic stem cell transplantation at our clinic. Study Design: Descriptive study. Methods: The present study retrospectively evaluated febrile neutropenia attacks in haematopoietic stem cell transplantation recipients during the period June 2014 - January 2015 at our haematopoietic stem cell transplantation clinic. Results: A total of 72 febrile neutropenia attacks were evaluated in 53 patients. In 46 febrile neutropenia attacks, microbiologic cultures revealed positive results. In culture-positive febrile neutropenia episodes a single bacterium was isolated in 32 cases and multiple strains were isolated in 14. In 15 patients, empirical antibiotic therapy was discontinued after 72 hours. These patients were clinically stable, without evident focus of infection and had negative culture results. Only 4 recurrent episodes were observed (27%) after cessation of antibiotherapy. No patient died as a result of recurrent infection. The 30-day and 100-day post-transplantation mortality rates of patients with febrile neutropenia episodes were 11.3% (6/53) and 3.8% (2/53), respectively. Infection-related 30-day and 100-day mortality rates were 7.5% (4/53) and 0% (0/53), respectively. Conclusion: The main message of our study is that early cessation of empirical antibiotherapy seems to be feasible in eligible patients without increasing febrile neutropenia mortality rates. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0012",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "132-139",
+    "views": 6487,
+    "downloads": 9554,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1670",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1670",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1670",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1670",
+    "localPdfUrl": "js/data/pdfs/1670.pdf",
+    "pdfUrl": "js/data/pdfs/1670.pdf"
+  },
+  {
+    "id": 1671,
+    "type": "Original Article",
+    "title": "The Knowledge Level and Opinions of Physicians about the Medical and Legal Procedures Related to Physical Child Abuse",
+    "authors": [
+      {
+        "name": "Sema Demirçin",
+        "affiliation": "Department of Forensic Medicine, Akdeniz University School of Medicine, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Akın Tütüncüler",
+        "affiliation": "Office of Forensic Medicine Council, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatmagül Aslan",
+        "affiliation": "Clinic of Forensic Medicine, Antalya State Hospital, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sevtap Velipaşaoğlu Güney",
+        "affiliation": "Department of Pediatrics, Akdeniz University School of Medicine, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Atılgan",
+        "affiliation": "Department of Forensic Medicine, Akdeniz University School of Medicine, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Gülkesen",
+        "affiliation": "Department of Biostatistics, Akdeniz University School of Medicine, Antalya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: In order to diagnose child abuse, physicians need to consider the possibility of abuse in every child they encounter, have sufficient information about the topic and manage the cases according to current law. Aims: To determine the knowledge level of physicians on child abuse and to learn their opinions about the procedures when they suspect child abuse. Study Design: A questionnaire (cross-sectional) study. Methods: A detailed questionnaire was applied to 390 physicians of whom 233 were general practitioners. The first part of the questionnaire included demographic variables (age, gender, occupational experience) and the frequency of child physical abuse cases encountered, since that is the most easily diagnosed and proven form of abuse. The second part consisted of 32 questions about diagnosis of physical child abuse and procedures during the follow-up of the cases. Statistical analyses were performed using SPSS version 18.0. Results: Of the participating physicians, 47.4% (n=185) were female and only 13.1% of the physicians had some kind of postgraduate training on child abuse. The correct response rate of specialists compared to general practitioners was significantly higher. A total of 263 (72.3%) physicians thought that there was a specific law on physical child abuse in the Turkish Republic. More than two-thirds of physicians thought that reporting should only be addressed to Social Services and physicians should not be obliged to report to law enforcement. Conclusion: The results of the present study adds to the already known necessity for better training of physicians about physical child abuse and the need to refresh their knowledge through postgraduate courses. According to current regulations, it is obligatory to report abuse cases to the public prosecutor and/or police, therefore physicians also need training in respect of the legal status and medico-legal approach to these cases. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background:</strong> In order to diagnose child abuse, physicians need to consider the possibility of abuse in every child they encounter, have sufficient information about the topic and manage the cases according to current law.<br />\r\n\t<strong>Aims: </strong>To determine the knowledge level of physicians on child abuse and to learn their opinions about the procedures when they suspect child abuse.<br />\r\n\t<strong>Study Design:</strong> A questionnaire (cross-sectional) study.<br />\r\n\t<strong>Methods:</strong> A detailed questionnaire was applied to 390 physicians of whom 233 were general practitioners. The first part of the questionnaire included demographic variables (age, gender, occupational experience) and the frequency of child physical abuse cases encountered, since that is the most easily diagnosed and proven form of abuse. The second part consisted of 32 questions about diagnosis of physical child abuse and procedures during the follow-up of the cases. Statistical analyses were performed using SPSS version 18.0.<br />\r\n\t<strong>Results: </strong>Of the participating physicians, 47.4% (n=185) were female and only 13.1% of the physicians had some kind of postgraduate training on child abuse. The correct response rate of specialists compared to general practitioners was significantly higher. A total of 263 (72.3%) physicians thought that there was a specific law on physical child abuse in the Turkish Republic. More than two-thirds of physicians thought that reporting should only be addressed to Social Services and physicians should not be obliged to report to law enforcement.<br />\r\n\t<strong>Conclusion: </strong>The results of the present study adds to the already known necessity for better training of physicians about physical child abuse and the need to refresh their knowledge through postgraduate courses. According to current regulations, it is obligatory to report abuse cases to the public prosecutor and/or police, therefore physicians also need training in respect of the legal status and medico-legal approach to these cases.</p>\r\n<p>\r\n\t---------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: In order to diagnose child abuse, physicians need to consider the possibility of abuse in every child they encounter, have sufficient information about the topic and manage the cases according to current law. Aims: To determine the knowledge level of physicians on child abuse and to learn their opinions about the procedures when they suspect child abuse. Study Design: A questionnaire (cross-sectional) study. Methods: A detailed questionnaire was applied to 390 physicians of whom 233 were general practitioners. The first part of the questionnaire included demographic variables (age, gender, occupational experience) and the frequency of child physical abuse cases encountered, since that is the most easily diagnosed and proven form of abuse. The second part consisted of 32 questions about diagnosis of physical child abuse and procedures during the follow-up of the cases. Statistical analyses were performed using SPSS version 18.0. Results: Of the participating physicians, 47.4% (n=185) were female and only 13.1% of the physicians had some kind of postgraduate training on child abuse. The correct response rate of specialists compared to general practitioners was significantly higher. A total of 263 (72.3%) physicians thought that there was a specific law on physical child abuse in the Turkish Republic. More than two-thirds of physicians thought that reporting should only be addressed to Social Services and physicians should not be obliged to report to law enforcement. Conclusion: The results of the present study adds to the already known necessity for better training of physicians about physical child abuse and the need to refresh their knowledge through postgraduate courses. According to current regulations, it is obligatory to report abuse cases to the public prosecutor and/or police, therefore physicians also need training in respect of the legal status and medico-legal approach to these cases. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1195",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "140-146",
+    "views": 6454,
+    "downloads": 10028,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1671",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1671",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1671",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1671",
+    "localPdfUrl": "js/data/pdfs/1671.pdf",
+    "pdfUrl": "js/data/pdfs/1671.pdf"
+  },
+  {
+    "id": 1672,
+    "type": "Original Article",
+    "title": "Transsexual Mastectomy: Selection of Appropriate Technique According to Breast Characteristics",
+    "authors": [
+      {
+        "name": "Hüsamettin Top",
+        "affiliation": "Department of Plastic, Reconstructive and Aesthetic Surgery, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serkan Balta",
+        "affiliation": "Department of Plastic, Reconstructive and Aesthetic Surgery, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Subcutaneous mastectomy for female- to-male transsexuals is usually the first surgical pro- cedure in sexual reassignment. The main objective of subcutaneous mastectomy is to create an aesthetically pleasing male chest contour by removing all glandular tissue while minimizing chest wall scars. Aims: In this paper, we present our experience with subcutaneous mastectomy performed in female-to- male transsexual patients. The authors recommend their point of view to aid in selecting the most suitable subcutaneous mastectomy technique depending on breast characteristics. Study Design: Retrospective cross-sectional study. Methods: Between March 2011 and December 2014, 52 patients underwent bilateral subcutaneous mastec- tomies (total of 104 mastectomies), performed using the following four techniques: Webster semicircular, concentric circular, vertical, and apron flap. The tech- nique decision depended on the breast size, degree of skin excess, skin elasticity, chest width, nipple areolar complex size and position. Results: Seventeen patients (32.7%) were operated with Webster semicircular, 7 patients (13.5%) with con- centric periareolar, 12 patients with vertical (23%); and 16 patients (30.8%) with the apron flap technique. The overall postoperative complication rate was 13.4%. All patients were satisfied with the aesthetic results of their subcutaneous mastectomies within the follow-up period. Conclusion: To obtain higher patient satisfaction with aesthetic results and lower postoperative complication rates, breast characteristics are evaluated in a detailed fashion, while choosing the ideal technique of Female-to-Male (FtM) subcutaneous mastectomy. The presented surgical new algorithm facilitates the selection of the most reliable surgical technique. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background:</strong> Subcutaneous mastectomy for female- to-male transsexuals is usually the first surgical pro- cedure in sexual reassignment. The main objective of subcutaneous mastectomy is to create an aesthetically pleasing male chest contour by removing all glandular tissue while minimizing chest wall scars.<br />\r\n\t<strong>Aims:</strong> In this paper, we present our experience with subcutaneous mastectomy performed in female-to- male transsexual patients. The authors recommend their point of view to aid in selecting the most suitable subcutaneous mastectomy technique depending on breast characteristics.<br />\r\n\t<strong>Study Design: </strong>Retrospective cross-sectional study.<br />\r\n\t<strong>Methods: </strong>Between March 2011 and December 2014,<br />\r\n\t52 patients underwent bilateral subcutaneous mastec- tomies (total of 104 mastectomies), performed using the following four techniques: Webster semicircular, concentric circular, vertical, and apron flap. The tech- nique decision depended on the breast size, degree of skin excess, skin elasticity, chest width, nipple areolar complex size and position.<br />\r\n\t<strong>Results: </strong>Seventeen patients (32.7%) were operated with Webster semicircular, 7 patients (13.5%) with con- centric periareolar, 12 patients with vertical (23%); and 16 patients (30.8%) with the apron flap technique. The overall postoperative complication rate was 13.4%. All patients were satisfied with the aesthetic results of their subcutaneous mastectomies within the follow-up period.<br />\r\n\t<strong>Conclusion:</strong> To obtain higher patient satisfaction with aesthetic results and lower postoperative complication rates, breast characteristics are evaluated in a detailed fashion, while choosing the ideal technique of Female-to-Male (FtM) subcutaneous mastectomy. The presented surgical new algorithm facilitates the selection of the most reliable surgical technique.</p>\r\n<p>\r\n\t---------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Subcutaneous mastectomy for female- to-male transsexuals is usually the first surgical pro- cedure in sexual reassignment. The main objective of subcutaneous mastectomy is to create an aesthetically pleasing male chest contour by removing all glandular tissue while minimizing chest wall scars. Aims: In this paper, we present our experience with subcutaneous mastectomy performed in female-to- male transsexual patients. The authors recommend their point of view to aid in selecting the most suitable subcutaneous mastectomy technique depending on breast characteristics. Study Design: Retrospective cross-sectional study. Methods: Between March 2011 and December 2014, 52 patients underwent bilateral subcutaneous mastec- tomies (total of 104 mastectomies), performed using the following four techniques: Webster semicircular, concentric circular, vertical, and apron flap. The tech- nique decision depended on the breast size, degree of skin excess, skin elasticity, chest width, nipple areolar complex size and position. Results: Seventeen patients (32.7%) were operated with Webster semicircular, 7 patients (13.5%) with con- centric periareolar, 12 patients with vertical (23%); and 16 patients (30.8%) with the apron flap technique. The overall postoperative complication rate was 13.4%. All patients were satisfied with the aesthetic results of their subcutaneous mastectomies within the follow-up period. Conclusion: To obtain higher patient satisfaction with aesthetic results and lower postoperative complication rates, breast characteristics are evaluated in a detailed fashion, while choosing the ideal technique of Female-to-Male (FtM) subcutaneous mastectomy. The presented surgical new algorithm facilitates the selection of the most reliable surgical technique. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0093",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "147-155",
+    "views": 6553,
+    "downloads": 11089,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1672",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1672",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1672",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1672",
+    "localPdfUrl": "js/data/pdfs/1672.pdf",
+    "pdfUrl": "js/data/pdfs/1672.pdf"
+  },
+  {
+    "id": 1673,
+    "type": "Original Article",
+    "title": "The Use of Human Epididymis 4 and Cancer Antigen 125 Tumor Markers in the Benign or Malignant Differential Diagnosis of Pelvic or Adnexal Masses",
+    "authors": [
+      {
+        "name": "Zehra Nihal Dolgun",
+        "affiliation": "Clinic of Obstetrics and Gynecology, Zeynep Kamil Women and Children’s Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Canan Kabaca",
+        "affiliation": "Clinic of Obstetrics and Gynecology, Zeynep Kamil Women and Children’s Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ateş Karateke",
+        "affiliation": "Clinic of Obstetrics and Gynecology, Zeynep Kamil Women and Children’s Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cem İyibozkurt",
+        "affiliation": "Department of Obstetrics and Gynecology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cihan İnan",
+        "affiliation": "Department of Obstetrics and Gynecology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Salih Altıntaş",
+        "affiliation": "Department of Obstetrics and Gynecology, Trakya University School of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cihan Karadağ [[4]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Ovarian cancer is one of the highest mortality cancers in gynaecology. Discrimination of benign masses from malignant ones may sometimes become a challenge for the clinician since there is not a reliable tumour marker, thus some unnecessary, highly morbid operations can be performed. Aims: To explore the efficacy of human epididymis 4 (HE 4) and cancer antigen 125 (CA 125) markers in differentiating malignant and benign pelvic masses of ovarian origin and to identify the cut-off points for those markers. Study Design: Prospective study. Methods: Fifty-one patients who were diagnosed and planned to undergo surgery for ovarian mass between June 2008 and December 2008 were enrolled into this study. Preoperative venous blood samples were taken and frozen for marker investigation and final diagnoses were concluded by histopathological examination. After recruitment of all cases CA 125 and HE 4 levels were evaluated. Results: The statistical analysis did not indicate any statistically significant difference between the CA 125 levels of the patients with malignant and benign adnexal masses (p=0.105). The HE 4 levels of the patients with malignant adnexal masses were higher at a statistically significant level compared to the patients with benign adnexal masses (p=0.002). For HE 4 tumour marker and at the cut-off point of >25 pM, sensitivity was 1, specificity 0.40, positive cut-off value 0.19, negative cut-off value 1, accuracy 0.47 and positive likelihood ratio 1.65. Conclusion: Human epididymis 4 is a better diagnostic tool than CA 125 in benign-malignant discrimination of adnexal masses. The cut-off value of 25 pmol/L for human epididymis 4 will contribute to providing proper guidance to patients with adnexal masses and applying the proper treatment method. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background: </strong>Ovarian cancer is one of the highest mortality cancers in gynaecology. Discrimination of benign masses from malignant ones may sometimes become a challenge for the clinician since there is not a reliable tumour marker, thus some unnecessary, highly morbid operations can be performed.<br />\r\n\t<strong>Aims: </strong>To explore the efficacy of human epididymis 4 (HE 4) and cancer antigen 125 (CA 125) markers in differentiating malignant and benign pelvic masses of ovarian origin and to identify the cut-off points for those markers.<br />\r\n\t<strong>Study Design: </strong>Prospective study.<br />\r\n\t<strong>Methods:</strong> Fifty-one patients who were diagnosed and planned to undergo surgery for ovarian mass between June 2008 and December 2008 were enrolled into this study. Preoperative venous blood samples were taken and frozen for marker investigation and final diagnoses were concluded by histopathological examination. After recruitment of all cases CA 125 and HE 4 levels were evaluated.<br />\r\n\t<strong>Results: </strong>The statistical analysis did not indicate any statistically significant difference between the CA 125 levels of the patients with malignant and benign adnexal masses (p=0.105). The HE 4 levels of the patients with malignant adnexal masses were higher at a statistically significant level compared to the patients with benign adnexal masses (p=0.002). For HE 4 tumour marker and at the cut-off point of &gt;25 pM, sensitivity was 1, specificity 0.40, positive cut-off value 0.19, negative cut-off value 1, accuracy 0.47 and positive likelihood ratio 1.65.<br />\r\n\t<strong>Conclusion: </strong>Human epididymis 4 is a better diagnostic tool than CA 125 in benign-malignant discrimination of adnexal masses. The cut-off value of 25 pmol/L for human epididymis 4 will contribute to providing proper guidance to patients with adnexal masses and applying the proper treatment method.</p>\r\n<p>\r\n\t---------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Ovarian cancer is one of the highest mortality cancers in gynaecology. Discrimination of benign masses from malignant ones may sometimes become a challenge for the clinician since there is not a reliable tumour marker, thus some unnecessary, highly morbid operations can be performed. Aims: To explore the efficacy of human epididymis 4 (HE 4) and cancer antigen 125 (CA 125) markers in differentiating malignant and benign pelvic masses of ovarian origin and to identify the cut-off points for those markers. Study Design: Prospective study. Methods: Fifty-one patients who were diagnosed and planned to undergo surgery for ovarian mass between June 2008 and December 2008 were enrolled into this study. Preoperative venous blood samples were taken and frozen for marker investigation and final diagnoses were concluded by histopathological examination. After recruitment of all cases CA 125 and HE 4 levels were evaluated. Results: The statistical analysis did not indicate any statistically significant difference between the CA 125 levels of the patients with malignant and benign adnexal masses (p=0.105). The HE 4 levels of the patients with malignant adnexal masses were higher at a statistically significant level compared to the patients with benign adnexal masses (p=0.002). For HE 4 tumour marker and at the cut-off point of >25 pM, sensitivity was 1, specificity 0.40, positive cut-off value 0.19, negative cut-off value 1, accuracy 0.47 and positive likelihood ratio 1.65. Conclusion: Human epididymis 4 is a better diagnostic tool than CA 125 in benign-malignant discrimination of adnexal masses. The cut-off value of 25 pmol/L for human epididymis 4 will contribute to providing proper guidance to patients with adnexal masses and applying the proper treatment method. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0223",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "156-162",
+    "views": 6408,
+    "downloads": 3392,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1673",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1673",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1673",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1673",
+    "localPdfUrl": "js/data/pdfs/1673.pdf",
+    "pdfUrl": "js/data/pdfs/1673.pdf"
+  },
+  {
+    "id": 1674,
+    "type": "Case Report",
+    "title": "Rare Giant Angiokeratoma of the Vulva: A Case Report",
+    "authors": [
+      {
+        "name": "Fatih Doğan",
+        "affiliation": "Department of Plastic Surgery, Adıyaman University School of Medicine, Adıyaman, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Hakan Bucak [[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Angiokeratoma of fordyce occurring over on the vulva is a rare condition. Fordyce angiokeratoma is observed more frequently among men than women. In women, it is generally observed in later life, and appears as multiple dark purple papules, measuring 2-4 mm, on the vulva. Case Report: We present the case of a 17-year-old white teenage girl with giant Fordyce angiokeratoma on the right vulva. The angiokeratoma was removed and a V-Y advancement flap was made. Conclusion: In the literature, this is the first childhood case reported in which a reconstruction of the vulva was performed. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background:</strong> Angiokeratoma of fordyce occurring over on the vulva is a rare condition. Fordyce angiokeratoma is observed more frequently among men than women. In women, it is generally observed in later life, and appears as multiple dark purple papules, measuring 2-4 mm, on the vulva.<br />\r\n\t<strong>Case Report: </strong>We present the case of a 17-year-old white teenage girl with giant Fordyce angiokeratoma on the right vulva. The angiokeratoma was removed and a V-Y advancement flap was made.<br />\r\n\t<strong>Conclusion:</strong> In the literature, this is the first childhood case reported in which a reconstruction of the vulva was performed.</p>\r\n<p>\r\n\t---------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Angiokeratoma of fordyce occurring over on the vulva is a rare condition. Fordyce angiokeratoma is observed more frequently among men than women. In women, it is generally observed in later life, and appears as multiple dark purple papules, measuring 2-4 mm, on the vulva. Case Report: We present the case of a 17-year-old white teenage girl with giant Fordyce angiokeratoma on the right vulva. The angiokeratoma was removed and a V-Y advancement flap was made. Conclusion: In the literature, this is the first childhood case reported in which a reconstruction of the vulva was performed. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2014.0724",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "163-164",
+    "views": 6243,
+    "downloads": 3018,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1674",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1674",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1674",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1674",
+    "localPdfUrl": "js/data/pdfs/1674.pdf",
+    "pdfUrl": "js/data/pdfs/1674.pdf"
+  },
+  {
+    "id": 1675,
+    "type": "Case Report",
+    "title": "Cricotracheal Resection in a Patient with Severe Subglottic Stenosis - Advantages of a Temporary Non-Cannulated Tracheostomy",
+    "authors": [
+      {
+        "name": "Todor Miroslavov Popov",
+        "affiliation": "Department of Otolaryngology, Medical University of Sofia, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Tzvetomir Marinov",
+        "affiliation": "Department of Anesthesiology and Intensive Care, Medical University of Sofia, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Julian Rangachev",
+        "affiliation": "Department of Otolaryngology, Medical University of Sofia, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Dimitar Konov",
+        "affiliation": "Department of Otolaryngology, Medical University of Sofia, Sofia, Bulgaria",
+        "orcid": ""
+      },
+      {
+        "name": "Maya Belitova",
+        "affiliation": "Department of Anesthesiology and Intensive Care, Medical University of Sofia, Sofia, Bulgaria",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Stenosis in the area of the cricotracheal segment is still a challenging problem to be dealt with. Post-intubational cases mark an increase in recent years due to the advances in intensive care, thoracic surgery and neurosurgery departments. Case Report: This paper describes a case report of a patient with severe subglottic stenosis (grade III according to the Cotton-Myer scale), introduces a new option in cricotracheal resections - postoperative temporary non-cannulated tracheostomy and describes its advantages. Conclusion: This variation of classical operative techniques provides additional fixation of the trachea, thus relieving any transitory tension on the anastomosis; acts as a valve and decreases the air-pressure in the upper airways during coughing and sneezing in the post-operative period; and is an easy access point for video tracheoscopy of the anastomosis. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background:</strong> Stenosis in the area of the cricotracheal segment is still a challenging problem to be dealt with. Post-intubational cases mark an increase in recent years due to the advances in intensive care, thoracic surgery and neurosurgery departments.<br />\r\n\t<strong>Case Report:</strong> This paper describes a case report of a patient with severe subglottic stenosis (grade III according to the Cotton-Myer scale), introduces a new option in cricotracheal resections - postoperative temporary non-cannulated tracheostomy and describes its advantages.<br />\r\n\t<strong>Conclusion:</strong> This variation of classical operative techniques provides additional fixation of the trachea, thus relieving any transitory tension on the anastomosis; acts as a valve and decreases the air-pressure in the upper airways during coughing and sneezing in the post-operative period; and is an easy access point for video tracheoscopy of the anastomosis.</p>\r\n<p>\r\n\t---------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Stenosis in the area of the cricotracheal segment is still a challenging problem to be dealt with. Post-intubational cases mark an increase in recent years due to the advances in intensive care, thoracic surgery and neurosurgery departments. Case Report: This paper describes a case report of a patient with severe subglottic stenosis (grade III according to the Cotton-Myer scale), introduces a new option in cricotracheal resections - postoperative temporary non-cannulated tracheostomy and describes its advantages. Conclusion: This variation of classical operative techniques provides additional fixation of the trachea, thus relieving any transitory tension on the anastomosis; acts as a valve and decreases the air-pressure in the upper airways during coughing and sneezing in the post-operative period; and is an easy access point for video tracheoscopy of the anastomosis. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0108",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "165-167",
+    "views": 6214,
+    "downloads": 9445,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1675",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1675",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1675",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1675",
+    "localPdfUrl": "js/data/pdfs/1675.pdf",
+    "pdfUrl": "js/data/pdfs/1675.pdf"
+  },
+  {
+    "id": 1676,
+    "type": "Case Report",
+    "title": "Extra-Gastrointestinal Stromal Tumor of Prostate",
+    "authors": [
+      {
+        "name": "Demet Etit",
+        "affiliation": "Clinic of Pathology, Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Haldun Kar",
+        "affiliation": "Clinic of General Surgery, Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neşe Ekinci",
+        "affiliation": "Clinic of Pathology, Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Emre Yenipazar",
+        "affiliation": "Clinic of Pathology, Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fulya Çakalağaoğlu",
+        "affiliation": "Clinic of Pathology, Atatürk Training and Research Hospital, İzmir, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Extra-gastrointestinal stromal tumor is defined as a mesenchymal neoplasm arising from soft tissues outside the gastrointestinal tract. Prostatic extra-gastrointestinal stromal tumor has rarely been noted. Case Report: A 56 year-old man presented with pain in the anal region. A digital rectal examination revealed that the prostate was markedly enlarged with a smooth, bulging surface. Computerized tomography images showed a 6 cm heterogeneous, infiltrative tumor within the prostate gland extending to the trigon of the bladder, left seminal vesicle and rectum. The tru-cut biopsy of the prostate was reported as leiomyoma. It was decided to perform surgery and the masses were easily and completely removed from the adjacent structures. The case was reported as extra-gastrointestinal stromal tumor within the intermediate- risk category with free surgical margins. Four years after the surgery, a locoregional failure was observed and treated with imatinib. Conclusion: Stromal tumor, although rare, should be considered in the differential diagnosis in patients with an enlarged prostate. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background: </strong>Extra-gastrointestinal stromal tumor is defined as a mesenchymal neoplasm arising from soft tissues outside the gastrointestinal tract. Prostatic extra-gastrointestinal stromal tumor has rarely been noted.<br />\r\n\t<strong>Case Report: </strong>A 56 year-old man presented with pain in the anal region. A digital rectal examination revealed that the prostate was markedly enlarged with a smooth, bulging surface. Computerized tomography images showed a 6 cm heterogeneous, infiltrative tumor within the prostate gland extending to the trigon of the bladder, left seminal vesicle and rectum. The tru-cut biopsy of the prostate was reported as leiomyoma. It was decided to perform surgery and the masses were easily and completely removed from the adjacent structures. The case was reported as extra-gastrointestinal stromal tumor within the intermediate- risk category with free surgical margins. Four years after the surgery, a locoregional failure was observed and treated with imatinib.<br />\r\n\t<strong>Conclusion: </strong>Stromal tumor, although rare, should be considered in the differential diagnosis in patients with an enlarged prostate.</p>\r\n<p>\r\n\t---------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Extra-gastrointestinal stromal tumor is defined as a mesenchymal neoplasm arising from soft tissues outside the gastrointestinal tract. Prostatic extra-gastrointestinal stromal tumor has rarely been noted. Case Report: A 56 year-old man presented with pain in the anal region. A digital rectal examination revealed that the prostate was markedly enlarged with a smooth, bulging surface. Computerized tomography images showed a 6 cm heterogeneous, infiltrative tumor within the prostate gland extending to the trigon of the bladder, left seminal vesicle and rectum. The tru-cut biopsy of the prostate was reported as leiomyoma. It was decided to perform surgery and the masses were easily and completely removed from the adjacent structures. The case was reported as extra-gastrointestinal stromal tumor within the intermediate- risk category with free surgical margins. Four years after the surgery, a locoregional failure was observed and treated with imatinib. Conclusion: Stromal tumor, although rare, should be considered in the differential diagnosis in patients with an enlarged prostate. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1331",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "168-171",
+    "views": 5728,
+    "downloads": 9791,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1676",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1676",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1676",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1676",
+    "localPdfUrl": "js/data/pdfs/1676.pdf",
+    "pdfUrl": "js/data/pdfs/1676.pdf"
+  },
+  {
+    "id": 1677,
+    "type": "Case Report",
+    "title": "Difficult Cases of Odontogenic Deep Neck Infections: A Report of Three Patients",
+    "authors": [
+      {
+        "name": "Onur İsmi",
+        "affiliation": "Department of Otorhinolaryngology, Mersin University School of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mesut Yeşilova",
+        "affiliation": "Department of Otorhinolaryngology, Mersin University School of Medicine, Mersin, Turkeya",
+        "orcid": ""
+      },
+      {
+        "name": "Cengiz Özcan",
+        "affiliation": "Department of Otorhinolaryngology, Mersin University School of Medicine, Mersin, Turkeya",
+        "orcid": ""
+      },
+      {
+        "name": "Yusuf Vayisoğlu",
+        "affiliation": "Department of Otorhinolaryngology, Mersin University School of Medicine, Mersin, Turkeya",
+        "orcid": ""
+      },
+      {
+        "name": "Kemal Görür [[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Deep neck infections are important otolaryngologic emergencies due to serious complications and the risk of airway compromise, which can lead to mortality. Although the most common causes among pediatric patients are tonsillitis and pharyngeal infections, odontogenic infections are an important cause in adults. Case Report: We present three patients with multiple deep neck space abscess formation due to odontogenic infection. Two of them required tracheotomy due to airway compromise, and one had mediastinitis. Conclusion: An underestimated tooth infection can cause hazardous complications such as mediastinitis and respiratory distress requiring tracheotomy. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Background: </strong>Deep neck infections are important otolaryngologic emergencies due to serious complications and the risk of airway compromise, which can lead to mortality. Although the most common causes among pediatric patients are tonsillitis and pharyngeal infections, odontogenic infections are an important cause in adults.<br />\r\n\t<strong>Case Report: </strong>We present three patients with multiple deep neck space abscess formation due to odontogenic infection. Two of them required tracheotomy due to airway compromise, and one had mediastinitis.<br />\r\n\t<strong>Conclusion:</strong> An underestimated tooth infection can cause hazardous complications such as mediastinitis and respiratory distress requiring tracheotomy.</p>\r\n<p>\r\n\t---------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Deep neck infections are important otolaryngologic emergencies due to serious complications and the risk of airway compromise, which can lead to mortality. Although the most common causes among pediatric patients are tonsillitis and pharyngeal infections, odontogenic infections are an important cause in adults. Case Report: We present three patients with multiple deep neck space abscess formation due to odontogenic infection. Two of them required tracheotomy due to airway compromise, and one had mediastinitis. Conclusion: An underestimated tooth infection can cause hazardous complications such as mediastinitis and respiratory distress requiring tracheotomy. ---------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1379",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "172-179",
+    "views": 5904,
+    "downloads": 9942,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1677",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1677",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1677",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1677",
+    "localPdfUrl": "js/data/pdfs/1677.pdf",
+    "pdfUrl": "js/data/pdfs/1677.pdf"
+  },
+  {
+    "id": 1678,
+    "type": "Clinical Image",
+    "title": "Para Phimosis Leading to Glans Gangrene - A Devastating Preventable Complication",
+    "authors": [
+      {
+        "name": "Ashok Kumar Sokhal",
+        "affiliation": "Department of Urology, King George’s Medical College, Uttar Pradesh, India",
+        "orcid": ""
+      },
+      {
+        "name": "Durgesh Kumar Saini",
+        "affiliation": "Department of Urology, King George’s Medical College, Uttar Pradesh, India",
+        "orcid": ""
+      },
+      {
+        "name": "Satyanarayan Sankhwar",
+        "affiliation": "Department of Urology, King George’s Medical College, Uttar Pradesh, India",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0677",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "180-181",
+    "views": 5516,
+    "downloads": 9678,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1678",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1678",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1678",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1678",
+    "localPdfUrl": "js/data/pdfs/1678.pdf",
+    "pdfUrl": "js/data/pdfs/1678.pdf"
+  },
+  {
+    "id": 1679,
+    "type": "Clinical Image",
+    "title": "Retrograde Gastric Intussusception",
+    "authors": [
+      {
+        "name": "Ural Koç",
+        "affiliation": "Department of Radiology, Erzincan University Mengücek Gazi Training and Research Hospital, Erzincan, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pınar Karakaş",
+        "affiliation": "Clinic of Pediatric Radiology, UCSF Benioff Children’s Hospital, Oakland, California",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0828",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "182-184",
+    "views": 5604,
+    "downloads": 9544,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1679",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1679",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1679",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1679",
+    "localPdfUrl": "js/data/pdfs/1679.pdf",
+    "pdfUrl": "js/data/pdfs/1679.pdf"
+  },
+  {
+    "id": 1680,
+    "type": "Letter to the Editor",
+    "title": "Femoral Adamantinoma: A Rare Lesion in an Elderly Patient in a Rare Location",
+    "authors": [
+      {
+        "name": "Bahattin Kerem Aydın",
+        "affiliation": "Department of Orthopaedics, Selçuk University School of Medicine, Konya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zeeshan Khan",
+        "affiliation": "Clinic of Oncology, Royal Orthopaedic Hospital, Birmingham, United Kingdom",
+        "orcid": ""
+      },
+      {
+        "name": "Turgay Er",
+        "affiliation": "Department of Orthopaedics, ISOM Medical Center, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serdar Uğraş",
+        "affiliation": "Department of Pathology, Selçuk University School of Medicine, Konya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.1534",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "2",
+    "pages": "185-186",
+    "views": 5440,
+    "downloads": 9119,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1207",
+    "sourceArticleId": "1680",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1680",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1680",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1680",
+    "localPdfUrl": "js/data/pdfs/1680.pdf",
+    "pdfUrl": "js/data/pdfs/1680.pdf"
+  }
+]

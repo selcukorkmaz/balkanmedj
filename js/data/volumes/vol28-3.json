@@ -1,0 +1,1342 @@
+[
+  {
+    "id": 1831,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "1831",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1831",
+    "localPdfUrl": "js/data/pdfs/1831.pdf",
+    "pdfUrl": "js/data/pdfs/1831.pdf"
+  },
+  {
+    "id": 679,
+    "type": "Original Article",
+    "title": "Evaluation of Parameters Affecting Measurement Quality of Dynamic Contour Tonometry",
+    "authors": [
+      {
+        "name": "Baran Gencer",
+        "affiliation": "Department of Ophthalmology, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Vuslat Gürlü",
+        "affiliation": "Department of Ophthalmology, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: To evaluate factors affecting measurement quality of dynamic contour tonometry (DCT). Material and Methods: Three hundred patients took part in this prospective clinical study. For each patient, measurements for one eye were included in the study. Of the participants, 116 had ocular hypertension, 114 had glaucoma, and 70 had normal eyes. We used automatic refractokeratometry, ultrasonic pachimetry, Goldmann applanation tonometry, and DCT measurements to investigate the effects of age, corneal astigmatism, refractive error, central corneal thickness (CCT), intraocular pressures (IOP), and ocular pulse amplitude (OPA) on DCT measurement quality (Q). Logistic regression analysis was used for statistical analysis. Results: For 159 patients, the DCT Q score was 1 (group 1). For the remaining 141 patients, the Q score was 2–3 (group 2). The following values were determined for the two groups, respectively: mean age 58.9±9.9 and 61.4±10.6; mean corneal astigmatisms −0.78±0.67 and −0.92±0.77 diopter; mean spherical equivalents 0.33±1.87 and −0.01±2.02 diopter; mean CCT 547.0±35.2 and 549±38.7 μm. Measurements with DCT provided mean IOPs of 18.5±3.70 and 21.27±6.19 mm Hg and mean OPA 3.5±1.4 and 3.2±1.2 mm Hg. By logistic regression analysis, we determined that the parameters affecting measurement quality were age, DCT measurement level, and OPA (p=0.015, p=0.000, and p=0.000, respectively). Conclusion: High IOP values, advanced age, and low OPA values can lead to decreased DCT measurement quality.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: To evaluate factors affecting measurement quality of dynamic contour tonometry (DCT).</p>\r\n<p>\r\n\t<strong>Material</strong> <strong>and</strong> <strong>Methods</strong>: Three hundred patients took part in this prospective clinical study. For each patient, measurements for one eye were included in the study. Of the participants, 116 had ocular hypertension, 114 had glaucoma, and 70 had normal eyes. We used automatic refractokeratometry, ultrasonic pachimetry, Goldmann applanation tonometry, and DCT measurements to investigate the effects of age, corneal astigmatism, refractive error, central corneal thickness (CCT), intraocular pressures (IOP), and ocular pulse amplitude (OPA) on DCT measurement quality (Q). Logistic regression analysis was used for statistical analysis.</p>\r\n<p>\r\n\t<strong>Results</strong>: For 159 patients, the DCT Q score was 1 (group 1). For the remaining 141 patients, the Q score was 2&ndash;3 (group 2). The following values were determined for the two groups, respectively: mean age 58.9&plusmn;9.9 and 61.4&plusmn;10.6; mean corneal astigmatisms &minus;0.78&plusmn;0.67 and &minus;0.92&plusmn;0.77 diopter; mean spherical equivalents 0.33&plusmn;1.87 and &minus;0.01&plusmn;2.02 diopter; mean CCT 547.0&plusmn;35.2 and 549&plusmn;38.7 &mu;m. Measurements with DCT provided mean IOPs of 18.5&plusmn;3.70 and 21.27&plusmn;6.19 mm Hg and mean OPA 3.5&plusmn;1.4 and 3.2&plusmn;1.2 mm Hg. By logistic regression analysis, we determined that the parameters affecting measurement quality were age, DCT measurement level, and OPA (p=0.015, p=0.000, and p=0.000, respectively).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: High IOP values, advanced age, and low OPA values can lead to decreased DCT measurement quality.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: To evaluate factors affecting measurement quality of dynamic contour tonometry (DCT). Material and Methods: Three hundred patients took part in this prospective clinical study. For each patient, measurements for one eye were included in the study. Of the participants, 116 had ocular hypertension, 114 had glaucoma, and 70 had normal eyes. We used automatic refractokeratometry, ultrasonic pachimetry, Goldmann applanation tonometry, and DCT measurements to investigate the effects of age, corneal astigmatism, refractive error, central corneal thickness (CCT), intraocular pressures (IOP), and ocular pulse amplitude (OPA) on DCT measurement quality (Q). Logistic regression analysis was used for statistical analysis. Results: For 159 patients, the DCT Q score was 1 (group 1). For the remaining 141 patients, the Q score was 2–3 (group 2). The following values were determined for the two groups, respectively: mean age 58.9±9.9 and 61.4±10.6; mean corneal astigmatisms −0.78±0.67 and −0.92±0.77 diopter; mean spherical equivalents 0.33±1.87 and −0.01±2.02 diopter; mean CCT 547.0±35.2 and 549±38.7 μm. Measurements with DCT provided mean IOPs of 18.5±3.70 and 21.27±6.19 mm Hg and mean OPA 3.5±1.4 and 3.2±1.2 mm Hg. By logistic regression analysis, we determined that the parameters affecting measurement quality were age, DCT measurement level, and OPA (p=0.015, p=0.000, and p=0.000, respectively). Conclusion: High IOP values, advanced age, and low OPA values can lead to decreased DCT measurement quality.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03504.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "229-231",
+    "views": 6349,
+    "downloads": 3364,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "679",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=679",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=679",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=679",
+    "localPdfUrl": "js/data/pdfs/679.pdf",
+    "pdfUrl": "js/data/pdfs/679.pdf"
+  },
+  {
+    "id": 680,
+    "type": "Original Article",
+    "title": "Genotype Distribution and 5",
+    "authors": [
+      {
+        "name": "Tekin Karslıgil",
+        "affiliation": "Gaziantep Üniversitesi Tıp Fakültesi, Tıbbi Mikrobiyoloji Anabilim Dalı, Gaziantep, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Eda Savaş",
+        "affiliation": "Gaziantep Üniversitesi Tıp Fakültesi, Tıbbi Mikrobiyoloji Anabilim Dalı, Gaziantep, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "M. Cemil Savaş",
+        "affiliation": "Gaziantep Üniversitesi Tıp Fakültesi, Gastroenteroloji Bilim Dalı, Gaziantep, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: HCV is a single-stranded RNA virus which has 9500 nucleotide. On the 3' and 5' ends of the genome, there are two untranslated regions (UTR) which are highly protected and which have 92% homology among various HCV types. 5' UTR is used for the genotype detection. In this study, genotype and nucleic acid changes in this region were analyzed. Material and Methods: In 51 patients diagnosed with HCV, HCV-RNA was isolated and purified from serum samples. The 341 nucleotide-long UTR region at the 5'end of the genome was sequenced and genotypes were detected. Nucleotide changes were analyzed with on-line BLAST program. Results: In 45 (88.2%) of 51 patients, genotype-1 (78.4% of all genotypes were 1b, 9.8% were 1a) was detected. In 41 (80.4%) of the 51 sequences, nucleic acid changes were detected. These changes generally occurred as an insertion in codon 84 ; deletion in codon 43 and codon 46; transversion in codon 15, 17 and 18, and transition in codon 62. No significant relationship was found between viral load and nucleic acid changes. Conclusion: Although the 5'UTR region is a protected region, mutation can be observed, and the mutations may affect the genotype, viral load and treatment response. Therefore, further investigation is required in a large series",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: HCV is a single-stranded RNA virus which has 9500 nucleotide. On the 3&#39; and 5&#39; ends of the genome, there are two untranslated regions (UTR) which are highly protected and which have 92% homology among various HCV types. 5&#39; UTR is used for the genotype detection. In this study, genotype and nucleic acid changes in this region were analyzed.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: In 51 patients diagnosed with HCV, HCV-RNA was isolated and purified from serum samples. The 341 nucleotide-long UTR region at the 5&#39;end of the genome was sequenced and genotypes were detected. Nucleotide changes were analyzed with on-line BLAST program.</p>\r\n<p>\r\n\t<strong>Results</strong>: In 45 (88.2%) of 51 patients, genotype-1 (78.4% of all genotypes were 1b, 9.8% were 1a) was detected. In 41 (80.4%) of the 51 sequences, nucleic acid changes were detected. These changes generally occurred as an insertion in codon 84 ; deletion in codon 43 and codon 46; transversion in codon 15, 17 and 18, and transition in codon 62. No significant relationship was found between viral load and nucleic acid changes.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Although the 5&#39;UTR region is a protected region, mutation can be observed, and the mutations may affect the genotype, viral load and treatment response. Therefore, further investigation is required in a large series</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: HCV is a single-stranded RNA virus which has 9500 nucleotide. On the 3' and 5' ends of the genome, there are two untranslated regions (UTR) which are highly protected and which have 92% homology among various HCV types. 5' UTR is used for the genotype detection. In this study, genotype and nucleic acid changes in this region were analyzed. Material and Methods: In 51 patients diagnosed with HCV, HCV-RNA was isolated and purified from serum samples. The 341 nucleotide-long UTR region at the 5'end of the genome was sequenced and genotypes were detected. Nucleotide changes were analyzed with on-line BLAST program. Results: In 45 (88.2%) of 51 patients, genotype-1 (78.4% of all genotypes were 1b, 9.8% were 1a) was detected. In 41 (80.4%) of the 51 sequences, nucleic acid changes were detected. These changes generally occurred as an insertion in codon 84 ; deletion in codon 43 and codon 46; transversion in codon 15, 17 and 18, and transition in codon 62. No significant relationship was found between viral load and nucleic acid changes. Conclusion: Although the 5'UTR region is a protected region, mutation can be observed, and the mutations may affect the genotype, viral load and treatment response. Therefore, further investigation is required in a large series",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.04053.0",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "232-236",
+    "views": 7180,
+    "downloads": 2011,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "680",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=680",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=680",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=680",
+    "localPdfUrl": "js/data/pdfs/680.pdf",
+    "pdfUrl": "js/data/pdfs/680.pdf"
+  },
+  {
+    "id": 681,
+    "type": "Original Article",
+    "title": "A Retrospective Analysis of Pediatric Patients Admitted to the Pediatric Emergency Service for Carbon Monoxide Intoxication",
+    "authors": [
+      {
+        "name": "Metin Uysalol",
+        "affiliation": "Namık Kemal Üniversitesi Tıp Fakültesi, Çocuk Sağlığı ve Hastalıkları Anabilim Dalı, Tekirdağ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ezgi Paslı Uysalol",
+        "affiliation": "Şişli Etfal Eğitim ve Araştırma Hastanesi, Çocuk Klinikleri Çocuk Acil Birimi, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Semra Kayaoğlu",
+        "affiliation": "Şişli Etfal Eğitim ve Araştırma Hastanesi, Çocuk Klinikleri Çocuk Acil Birimi, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gamze Varol Saraçoğlu",
+        "affiliation": "Namık Kemal Üniversitesi Tıp Fakültesi, Halk Sağlığı Anabilim Dalı, Tekirdağ, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The aim of the study is to analyze the general aspects of cases with carbon monoxide intoxication in order to improve the approach to future patients. Material and Methods: The hospital records of 84 children (mean age 4.71±2.64 years; 48 male, 36 female) who had been admitted to Paediatric Emergency Department for carbon monoxide intoxication between October 2007 and February 2009, were retrospectively evaluated in a descriptive analysis. Results: The source of carbon monoxide intoxication was heaters, waterheaters and fi re in 82.1%, 7.1% and 6% of cases, respectively. There was a statistically signifi cant difference between the carboxyhemoglobin levels of the patients according to the clinical classifi cation (p<0.05). The intoxication caused by heaters was observed signifi cantly in November, December and January (p<0.001), between 16:00-24:00 hours (p<0.001) and among more than one member of a family (p<0.001). A medium level correlation was detected between the treatment approach and clinical classifi cation (r=0.50, p<0.001). Conclusion: Carbon monoxide intoxication, in the presented series, was found to develop accidentally; mostly in the Winter season; during night hours when the family members gathered together. The carboxyhemoglobin levels were appropriate with the developing clinical findings. Carboxyhemoglobin level solely was not enough for achieving the diagnosis and planning the treatment.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The aim of the study is to analyze the general aspects of cases with carbon monoxide intoxication in order to improve the approach to future patients.</p>\r\n<p>\r\n\t<strong>Material</strong> <strong>and</strong> <strong>Methods</strong>: The hospital records of 84 children (mean age 4.71&plusmn;2.64 years; 48 male, 36 female) who had been admitted to Paediatric Emergency Department for carbon monoxide intoxication between October 2007 and February 2009, were retrospectively evaluated in a descriptive analysis.</p>\r\n<p>\r\n\t<strong>Results</strong>: The source of carbon monoxide intoxication was heaters, waterheaters and fi re in 82.1%, 7.1% and 6% of cases, respectively. There was a statistically signifi cant difference between the carboxyhemoglobin levels of the patients according to the clinical classifi cation (p&lt;0.05). The intoxication caused by heaters was observed signifi cantly in November, December and January (p&lt;0.001), between 16:00-24:00 hours (p&lt;0.001) and among more than one member of a family (p&lt;0.001). A medium level correlation was detected between the treatment approach and clinical classifi cation (r=0.50, p&lt;0.001).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Carbon monoxide intoxication, in the presented series, was found to develop accidentally; mostly in the Winter season; during night hours when the family members gathered together. The carboxyhemoglobin levels were appropriate with the developing clinical findings. Carboxyhemoglobin level solely was not enough for achieving the diagnosis and planning the treatment.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The aim of the study is to analyze the general aspects of cases with carbon monoxide intoxication in order to improve the approach to future patients. Material and Methods: The hospital records of 84 children (mean age 4.71±2.64 years; 48 male, 36 female) who had been admitted to Paediatric Emergency Department for carbon monoxide intoxication between October 2007 and February 2009, were retrospectively evaluated in a descriptive analysis. Results: The source of carbon monoxide intoxication was heaters, waterheaters and fi re in 82.1%, 7.1% and 6% of cases, respectively. There was a statistically signifi cant difference between the carboxyhemoglobin levels of the patients according to the clinical classifi cation (p<0.05). The intoxication caused by heaters was observed signifi cantly in November, December and January (p<0.001), between 16:00-24:00 hours (p<0.001) and among more than one member of a family (p<0.001). A medium level correlation was detected between the treatment approach and clinical classifi cation (r=0.50, p<0.001). Conclusion: Carbon monoxide intoxication, in the presented series, was found to develop accidentally; mostly in the Winter season; during night hours when the family members gathered together. The carboxyhemoglobin levels were appropriate with the developing clinical findings. Carboxyhemoglobin level solely was not enough for achieving the diagnosis and planning the treatment.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03766.1",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "237-243",
+    "views": 6832,
+    "downloads": 10062,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "681",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=681",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=681",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=681",
+    "localPdfUrl": "js/data/pdfs/681.pdf",
+    "pdfUrl": "js/data/pdfs/681.pdf"
+  },
+  {
+    "id": 683,
+    "type": "Original Article",
+    "title": "Comparison of Cephalometric Variables in Non-obese and Obese Patients with Obstructive Sleep Apnea",
+    "authors": [
+      {
+        "name": "Önder Öztürk",
+        "affiliation": "Department of Chest Diseases, Sleep Disorders Center, Faculty of Medicine, Süleyman Demirel University, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Has",
+        "affiliation": "Department of Chest Diseases, Sleep Disorders Center, Faculty of Medicine, Süleyman Demirel University, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Akkaya",
+        "affiliation": "Department of Chest Diseases, Sleep Disorders Center, Faculty of Medicine, Süleyman Demirel University, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Süleyman Hakan Tuna",
+        "affiliation": "Department of Prosthodontics, Faculty of Dentistry, Süleyman Demirel University, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hüseyin Alkış",
+        "affiliation": "Department of Orthodontics, Faculty of Dentistry, Süleyman Demirel University, Isparta, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Türkkahraman",
+        "affiliation": "Department of Orthodontics, Faculty of Dentistry, Süleyman Demirel University, Isparta, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hüseyin Avni Balcıoğlu",
+        "affiliation": "Department of Anatomy, Faculty of Dentistry, İstanbul University, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: To compare the cephalometric variables of obese (body mass index (BMI) ≥30) and non-obese (BMI<30) Turkish male patients with obstructive sleep apnea syndrome (OSAS). Materials and Methods: OSAS diagnosed 85 patients who were obese [n=37; mean age (±SE), 49.41±1.54 year] and non-obese [n=48; mean age (±SE) 46.92±1.39 year] were included in the study. The cephalometric measurements and polysomnographic data of the patients were compared and a discriminatory analysis was performed. Results: The apnea-hypopnea index (AHI) was significantly higher in obese patients (p<0.01). Bimaxillary protrusion was found in obese patients (p<0.05). The non-obese patients with AHI ≥ 30 had an increased mandibular plane angle In the stepwise discriminant analysis done separately in obese and non-obese patients according to AHI; only the hyoid bone position was included in the model in obese patients and the estimated success of discrimination of AHI's level (<30 and ≥30) was 70.3%. Age, anterior face and posterior face height were included to the model in non-obese patients and the estimated success of discrimination was found as 79.2%. Conclusion: Craniofacial morphology has an effect on the severity of OSAS. If the craniofacial morphology tends toward a worsening of OSAS with obesity, the severity of the OSAS increases.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: To compare the cephalometric variables of obese (body mass index (BMI) &ge;30) and non-obese (BMI&lt;30) Turkish male patients with obstructive sleep apnea syndrome (OSAS).</p>\r\n<p>\r\n\t<strong>Materials</strong> <strong>and Methods</strong>: OSAS diagnosed 85 patients who were obese [n=37; mean age (&plusmn;SE), 49.41&plusmn;1.54 year] and non-obese [n=48; mean age (&plusmn;SE) 46.92&plusmn;1.39 year] were included in the study. The cephalometric measurements and polysomnographic data of the patients were compared and a discriminatory analysis was performed.</p>\r\n<p>\r\n\t<strong>Results</strong>: The apnea-hypopnea index (AHI) was significantly higher in obese patients (p&lt;0.01). Bimaxillary protrusion was found in obese patients (p&lt;0.05). The non-obese patients with AHI &ge; 30 had an increased mandibular plane angle In the stepwise discriminant analysis done separately in obese and non-obese patients according to AHI; only the hyoid bone position was included in the model in obese patients and the estimated success of discrimination of AHI&#39;s level (&lt;30 and &ge;30) was 70.3%. Age, anterior face and posterior face height were included to the model in non-obese patients and the estimated success of discrimination was found as 79.2%.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Craniofacial morphology has an effect on the severity of OSAS. If the craniofacial morphology tends toward a worsening of OSAS with obesity, the severity of the OSAS increases.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: To compare the cephalometric variables of obese (body mass index (BMI) ≥30) and non-obese (BMI<30) Turkish male patients with obstructive sleep apnea syndrome (OSAS). Materials and Methods: OSAS diagnosed 85 patients who were obese [n=37; mean age (±SE), 49.41±1.54 year] and non-obese [n=48; mean age (±SE) 46.92±1.39 year] were included in the study. The cephalometric measurements and polysomnographic data of the patients were compared and a discriminatory analysis was performed. Results: The apnea-hypopnea index (AHI) was significantly higher in obese patients (p<0.01). Bimaxillary protrusion was found in obese patients (p<0.05). The non-obese patients with AHI ≥ 30 had an increased mandibular plane angle In the stepwise discriminant analysis done separately in obese and non-obese patients according to AHI; only the hyoid bone position was included in the model in obese patients and the estimated success of discrimination of AHI's level (<30 and ≥30) was 70.3%. Age, anterior face and posterior face height were included to the model in non-obese patients and the estimated success of discrimination was found as 79.2%. Conclusion: Craniofacial morphology has an effect on the severity of OSAS. If the craniofacial morphology tends toward a worsening of OSAS with obesity, the severity of the OSAS increases.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.04093.1",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "244-251",
+    "views": 6843,
+    "downloads": 9449,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "683",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=683",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=683",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=683",
+    "localPdfUrl": "js/data/pdfs/683.pdf",
+    "pdfUrl": "js/data/pdfs/683.pdf"
+  },
+  {
+    "id": 710,
+    "type": "Original Article",
+    "title": "Surgical Treatment of Patients with Tracheal Rupture Following Endotracheal Intubation",
+    "authors": [
+      {
+        "name": "Gönül Sağıroğlu",
+        "affiliation": "Sağlık Bakanlığı Süreyyapaşa Göğüs Hastalıkları ve Göğüs Cerrahisi Eğitim ve Araştırma Hastanesi, Anesteziyoloji ve Reanimasyon Kliniği, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burhan Meydan",
+        "affiliation": "Sağlık Bakanlığı Süreyyapaşa Göğüs Hastalıkları ve Göğüs Cerrahisi Eğitim ve Araştırma Hastanesi, Anesteziyoloji ve Reanimasyon Kliniği, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tamer Sağıroğlu",
+        "affiliation": "Department of General Surgery, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: We aimed to present clinical features and treatment outcomes of patients who had tracheal rupture following intubation due to surgical interventions. Material and Methods: Five patients (M/F, 1/4; Mean age, 53.8±10.9 years) who were diagnosed as having tracheal rupture during or soon after surgery were included in the study and evaluated retrospectively. History, clinical features, patient characteristics, and localizations of rupture, diagnostic modalities, and treatment outcomes were reported. Results: Two of the patients were intubated with a single-lumen tube, whereas 3 patients were intubated by using a double-lumen tube. The most common symptom that led to diagnosis was subcutaneous emphysema. One patient was diagnosed during stump control before the occurrence of symptoms. It is considered that using a stylet during intubation might be a risk factor, as four of our patients were intubated with the help of a stylet. Only one patient had a difficult intubation. Conclusion: Close postoperative monitorization of patients intubated due to surgical interventions, may enable us to determine tracheal ruptute cases in the early period before symptoms occur. The most common symptom was subcutaneous emphysema in the present case series. Thus, it is considered as the most effective warning symptom. In the light of the above findings, it is suggested that difficult intubation may not add to the risk of tracheal rupture.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: We aimed to present clinical features and treatment outcomes of patients who had tracheal rupture following intubation due to surgical interventions.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Five patients (M/F, 1/4; Mean age, 53.8&plusmn;10.9 years) who were diagnosed as having tracheal rupture during or soon after surgery were included in the study and evaluated retrospectively. History, clinical features, patient characteristics, and localizations of rupture, diagnostic modalities, and treatment outcomes were reported.</p>\r\n<p>\r\n\t<strong>Results</strong>: Two of the patients were intubated with a single-lumen tube, whereas 3 patients were intubated by using a double-lumen tube. The most common symptom that led to diagnosis was subcutaneous emphysema. One patient was diagnosed during stump control before the occurrence of symptoms. It is considered that using a stylet during intubation might be a risk factor, as four of our patients were intubated with the help of a stylet. Only one patient had a difficult intubation.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Close postoperative monitorization of patients intubated due to surgical interventions, may enable us to determine tracheal ruptute cases in the early period before symptoms occur. The most common symptom was subcutaneous emphysema in the present case series. Thus, it is considered as the most effective warning symptom. In the light of the above findings, it is suggested that difficult intubation may not add to the risk of tracheal rupture.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: We aimed to present clinical features and treatment outcomes of patients who had tracheal rupture following intubation due to surgical interventions. Material and Methods: Five patients (M/F, 1/4; Mean age, 53.8±10.9 years) who were diagnosed as having tracheal rupture during or soon after surgery were included in the study and evaluated retrospectively. History, clinical features, patient characteristics, and localizations of rupture, diagnostic modalities, and treatment outcomes were reported. Results: Two of the patients were intubated with a single-lumen tube, whereas 3 patients were intubated by using a double-lumen tube. The most common symptom that led to diagnosis was subcutaneous emphysema. One patient was diagnosed during stump control before the occurrence of symptoms. It is considered that using a stylet during intubation might be a risk factor, as four of our patients were intubated with the help of a stylet. Only one patient had a difficult intubation. Conclusion: Close postoperative monitorization of patients intubated due to surgical interventions, may enable us to determine tracheal ruptute cases in the early period before symptoms occur. The most common symptom was subcutaneous emphysema in the present case series. Thus, it is considered as the most effective warning symptom. In the light of the above findings, it is suggested that difficult intubation may not add to the risk of tracheal rupture.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03725.3",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "252-255",
+    "views": 6731,
+    "downloads": 2665,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "710",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=710",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=710",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=710",
+    "localPdfUrl": "js/data/pdfs/710.pdf",
+    "pdfUrl": "js/data/pdfs/710.pdf"
+  },
+  {
+    "id": 715,
+    "type": "Original Article",
+    "title": "Evaluation of the Association of Laboratory Tests Associated with Mortality in Term Neonates with Hypoxic-Ischemic Encephalopathy",
+    "authors": [
+      {
+        "name": "Emrah Can",
+        "affiliation": "Şişli Etfal Eğitim ve Araştırma Hastanesi, Yenidoğan Kliniği, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Bülbül",
+        "affiliation": "Şişli Etfal Eğitim ve Araştırma Hastanesi, Yenidoğan Kliniği, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Asiye Nuhoğlu",
+        "affiliation": "Şişli Etfal Eğitim ve Araştırma Hastanesi, Yenidoğan Kliniği, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The evaluation of the relationships between the mortality and early period laboratory tests in the term infants diagnosed as hypoxic ischemic encephalopathy (HIE). Material and Methods: The newborns diagnosed as HIE between January 2004 and December 2008 were divided into two groups as the living and non-surviving groups. The two groups were evaluated prospectively. Results: Thirty two infants were included in the study. According to the Sarnat&Sarnat classification, 9 (28.1%), 14 (43.8%) and 9 infants (28.1%) were in stage 1, 2 and 3, respectively. Eight (25%) infants died. In the correlation evaluation of risk factors; lack of-follow-up at the antenatal period (r²=0.35) and having convulsions (r²=0.50) were positively associated with Sarnat stage. A positive relationship between Sarnat stage and the mortality rate was also determined (r²=0.57). CK-MB was strongly (r²=0.74), troponin-I moderately (r²=0.44), and pH weakly (r²=0.27) associated with mortality. In predicting mortality, the sensitivity and specificity for CK-MB was 100% and 91.6%, for Troponin I 100% and 70.8% and for pH 75% and 87.5%, respectively. Conclusion: This study demonstrates that in HIE, the relationship between the early period mortality rate and CK- MB values are strong, whereas for troponin-I and pH there is a moderate and weak association respectively.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The evaluation of the relationships between the mortality and early period laboratory tests in the term infants diagnosed as hypoxic ischemic encephalopathy (HIE).</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: The newborns diagnosed as HIE between January 2004 and December 2008 were divided into two groups as the living and non-surviving groups. The two groups were evaluated prospectively.</p>\r\n<p>\r\n\t<strong>Results</strong>: Thirty two infants were included in the study. According to the Sarnat&amp;Sarnat classification, 9 (28.1%), 14 (43.8%) and 9 infants (28.1%) were in stage 1, 2 and 3, respectively. Eight (25%) infants died. In the correlation evaluation of risk factors; lack of-follow-up at the antenatal period (r&sup2;=0.35) and having convulsions (r&sup2;=0.50) were positively associated with Sarnat stage. A positive relationship between Sarnat stage and the mortality rate was also determined (r&sup2;=0.57). CK-MB was strongly (r&sup2;=0.74), troponin-I moderately (r&sup2;=0.44), and pH weakly (r&sup2;=0.27) associated with mortality. In predicting mortality, the sensitivity and specificity for CK-MB was 100% and 91.6%, for Troponin I 100% and 70.8% and for pH 75% and 87.5%, respectively.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: This study demonstrates that in HIE, the relationship between the early period mortality rate and CK- MB values are strong, whereas for troponin-I and pH there is a moderate and weak association respectively.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The evaluation of the relationships between the mortality and early period laboratory tests in the term infants diagnosed as hypoxic ischemic encephalopathy (HIE). Material and Methods: The newborns diagnosed as HIE between January 2004 and December 2008 were divided into two groups as the living and non-surviving groups. The two groups were evaluated prospectively. Results: Thirty two infants were included in the study. According to the Sarnat&Sarnat classification, 9 (28.1%), 14 (43.8%) and 9 infants (28.1%) were in stage 1, 2 and 3, respectively. Eight (25%) infants died. In the correlation evaluation of risk factors; lack of-follow-up at the antenatal period (r²=0.35) and having convulsions (r²=0.50) were positively associated with Sarnat stage. A positive relationship between Sarnat stage and the mortality rate was also determined (r²=0.57). CK-MB was strongly (r²=0.74), troponin-I moderately (r²=0.44), and pH weakly (r²=0.27) associated with mortality. In predicting mortality, the sensitivity and specificity for CK-MB was 100% and 91.6%, for Troponin I 100% and 70.8% and for pH 75% and 87.5%, respectively. Conclusion: This study demonstrates that in HIE, the relationship between the early period mortality rate and CK- MB values are strong, whereas for troponin-I and pH there is a moderate and weak association respectively.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03824.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "256-260",
+    "views": 6576,
+    "downloads": 2603,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "715",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=715",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=715",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=715",
+    "localPdfUrl": "js/data/pdfs/715.pdf",
+    "pdfUrl": "js/data/pdfs/715.pdf"
+  },
+  {
+    "id": 717,
+    "type": "Original Article",
+    "title": "The Evaluation of In Vitro Effects of Dipyridamole on Coronary Artery Bypass Grafts",
+    "authors": [
+      {
+        "name": "Turan Ege",
+        "affiliation": "Departments of Thoracic Surgery, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Enver Duran",
+        "affiliation": "Departments of Thoracic Surgery, Medical Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Okay Güven Karaca",
+        "affiliation": "Department of Cardiovascular Surgery, Faculty of Medicine, Trakya University, Edirne, Turke",
+        "orcid": ""
+      },
+      {
+        "name": "Özcan Gür",
+        "affiliation": "Department of Cardiovascular Surgery, Faculty of Medicine, Trakya University, Edirne, Turke",
+        "orcid": ""
+      },
+      {
+        "name": "Selami Gürkan",
+        "affiliation": "Department of Cardiovascular Surgery, Faculty of Medicine, Trakya University, Edirne, Turke",
+        "orcid": ""
+      },
+      {
+        "name": "Çetin Hakan Karadağ",
+        "affiliation": "Department of Endocrinology and Metabolic Diseases, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The aim of this study is to evaluate the efficacy of dipyridamole in relieving the vasospasm of coronary artery bypass grafts. Material and Methods: Twenty two patients who underwent elective coronary artery bypass grafting (CABG) were admitted to the study (Men/Women: 14/8, mean age: 62.4±8.8 years). Ten samples from left internal mammary(LIMA), radial arterial (RA) and saphenous vein (SV) grafts were collected for each. The samples were transported to the vascular laboratory in 4°C Krebs solution. Submaximal smooth muscle contraction was achieved first by 10-7M of phenylephrine solution. Dipyridamole was then added, starting from a concentration of 10-9M to a concentration of 10-3.5M in two minutes intervals and half logarithmic dose increments. The concentration-response curves were obtained of the vasodilatation response relative to the begining. Results: In the LIMA graft samples, the vasodilation response to dipyridamole was 43.2±1.6% and 97.6±4.1% at concentrations of 10-6M and 10-3.5M respectively. In RA graft samples, the vasodilation response to dipyridamole was 36.3±1.8% and 95.3± 2.7% at concentrations of 10-6M and 10-3.5M respectively. In SV graft samples, however, the vasodilation response to dipyridamole was 43.2±1.4 % and 96.6± 2.2% at concentrations of 10-6M and 10-3.5M respectively. Conclusions: The amplitude of relaxation response to dipyridamole of all grafts samples were similar, without statistically significant difference among the IMA, RA and SV grafts in the in vitro tissue bath system. These results prove that dipyridamole has a potential use as a vasodilatatory drug in all graft types.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The aim of this study is to evaluate the efficacy of dipyridamole in relieving the vasospasm of coronary artery bypass grafts.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Twenty two patients who underwent elective coronary artery bypass grafting (CABG) were admitted to the study (Men/Women: 14/8, mean age: 62.4&plusmn;8.8 years). Ten samples from left internal mammary(LIMA), radial arterial (RA) and saphenous vein (SV) grafts were collected for each. The samples were transported to the vascular laboratory in 4&deg;C Krebs solution. Submaximal smooth muscle contraction was achieved first by 10-7M of phenylephrine solution. Dipyridamole was then added, starting from a concentration of 10-9M to a concentration of 10-3.5M in two minutes intervals and half logarithmic dose increments. The concentration-response curves were obtained of the vasodilatation response relative to the begining.</p>\r\n<p>\r\n\t<strong>Results</strong>: In the LIMA graft samples, the vasodilation response to dipyridamole was 43.2&plusmn;1.6% and 97.6&plusmn;4.1% at concentrations of 10-6M and 10-3.5M respectively. In RA graft samples, the vasodilation response to dipyridamole was 36.3&plusmn;1.8% and 95.3&plusmn; 2.7% at concentrations of 10-6M and 10-3.5M respectively. In SV graft samples, however, the vasodilation response to dipyridamole was 43.2&plusmn;1.4 % and 96.6&plusmn; 2.2% at concentrations of 10-6M and 10-3.5M respectively.</p>\r\n<p>\r\n\t<strong>Conclusions</strong>: The amplitude of relaxation response to dipyridamole of all grafts samples were similar, without statistically significant difference among the IMA, RA and SV grafts in the in vitro tissue bath system. These results prove that dipyridamole has a potential use as a vasodilatatory drug in all graft types.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The aim of this study is to evaluate the efficacy of dipyridamole in relieving the vasospasm of coronary artery bypass grafts. Material and Methods: Twenty two patients who underwent elective coronary artery bypass grafting (CABG) were admitted to the study (Men/Women: 14/8, mean age: 62.4±8.8 years). Ten samples from left internal mammary(LIMA), radial arterial (RA) and saphenous vein (SV) grafts were collected for each. The samples were transported to the vascular laboratory in 4°C Krebs solution. Submaximal smooth muscle contraction was achieved first by 10-7M of phenylephrine solution. Dipyridamole was then added, starting from a concentration of 10-9M to a concentration of 10-3.5M in two minutes intervals and half logarithmic dose increments. The concentration-response curves were obtained of the vasodilatation response relative to the begining. Results: In the LIMA graft samples, the vasodilation response to dipyridamole was 43.2±1.6% and 97.6±4.1% at concentrations of 10-6M and 10-3.5M respectively. In RA graft samples, the vasodilation response to dipyridamole was 36.3±1.8% and 95.3± 2.7% at concentrations of 10-6M and 10-3.5M respectively. In SV graft samples, however, the vasodilation response to dipyridamole was 43.2±1.4 % and 96.6± 2.2% at concentrations of 10-6M and 10-3.5M respectively. Conclusions: The amplitude of relaxation response to dipyridamole of all grafts samples were similar, without statistically significant difference among the IMA, RA and SV grafts in the in vitro tissue bath system. These results prove that dipyridamole has a potential use as a vasodilatatory drug in all graft types.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.04129.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "261-263",
+    "views": 6437,
+    "downloads": 2998,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "717",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=717",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=717",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=717",
+    "localPdfUrl": "js/data/pdfs/717.pdf",
+    "pdfUrl": "js/data/pdfs/717.pdf"
+  },
+  {
+    "id": 718,
+    "type": "Original Article",
+    "title": "General Practitioner Knowledge Levels About Circumcision",
+    "authors": [
+      {
+        "name": "Levent Cankorkmaz",
+        "affiliation": "Cumhuriyet Üniversitesi Tıp Fakültesi, Çocuk Cerrahisi Anabilim Dalı, Sivas, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gökhan Köylüoğlu",
+        "affiliation": "Cumhuriyet Üniversitesi Tıp Fakültesi, Çocuk Cerrahisi Anabilim Dalı, Sivas, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: This study was carried out to investigate knowledge levels of general practitioners and their thoughts about circumcision in Middle Anatolia. Materials and Methods: This descriptive and cross-sectional study was carried out with 247 general practitioners working in Sivas. A questionnaire was prepared by the authors using previous reports. Questionnaires were sent to subjects by post. One hundred and seventy eight general practitioners (57 women, 121 men) responded and were included in the study. For statistical analysis, Chi-square test was used and p<0.05 value was accepted as significant. Results: 42.1% of subjects believed that circumcision should be performed between 2 and 6 years of age. 2.2% of subjects declared that circumcision could be done at home and 7.3% believed that the location of the operation is not important. 9.6% of subjects believed that the person who performs the circumcision does not have to be a doctor. 21.3% of subjects believed that circumcision could be performed without anesthesia during the newborn period because of undeveloped pain sensation. Conclusion: This study demonstrated that general practitioners, who are the most easily accessible health staff for information about health, do not have updated information about the way to perform circumcision and its necessity. Therefore, it is concluded that education programs about circumcision for general practitioners must be continued and updated.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: This study was carried out to investigate knowledge levels of general practitioners and their thoughts about circumcision in Middle Anatolia.</p>\r\n<p>\r\n\t<strong>Materials</strong> <strong>and Methods</strong>: This descriptive and cross-sectional study was carried out with 247 general practitioners working in Sivas. A questionnaire was prepared by the authors using previous reports. Questionnaires were sent to subjects by post. One hundred and seventy eight general practitioners (57 women, 121 men) responded and were included in the study. For statistical analysis, Chi-square test was used and p&lt;0.05 value was accepted as significant.</p>\r\n<p>\r\n\t<strong>Results</strong>: 42.1% of subjects believed that circumcision should be performed between 2 and 6 years of age. 2.2% of subjects declared that circumcision could be done at home and 7.3% believed that the location of the operation is not important. 9.6% of subjects believed that the person who performs the circumcision does not have to be a doctor. 21.3% of subjects believed that circumcision could be performed without anesthesia during the newborn period because of undeveloped pain sensation.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: This study demonstrated that general practitioners, who are the most easily accessible health staff for information about health, do not have updated information about the way to perform circumcision and its necessity. Therefore, it is concluded that education programs about circumcision for general practitioners must be continued and updated.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: This study was carried out to investigate knowledge levels of general practitioners and their thoughts about circumcision in Middle Anatolia. Materials and Methods: This descriptive and cross-sectional study was carried out with 247 general practitioners working in Sivas. A questionnaire was prepared by the authors using previous reports. Questionnaires were sent to subjects by post. One hundred and seventy eight general practitioners (57 women, 121 men) responded and were included in the study. For statistical analysis, Chi-square test was used and p<0.05 value was accepted as significant. Results: 42.1% of subjects believed that circumcision should be performed between 2 and 6 years of age. 2.2% of subjects declared that circumcision could be done at home and 7.3% believed that the location of the operation is not important. 9.6% of subjects believed that the person who performs the circumcision does not have to be a doctor. 21.3% of subjects believed that circumcision could be performed without anesthesia during the newborn period because of undeveloped pain sensation. Conclusion: This study demonstrated that general practitioners, who are the most easily accessible health staff for information about health, do not have updated information about the way to perform circumcision and its necessity. Therefore, it is concluded that education programs about circumcision for general practitioners must be continued and updated.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03758.4",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "264-268",
+    "views": 6748,
+    "downloads": 2927,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "718",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=718",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=718",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=718",
+    "localPdfUrl": "js/data/pdfs/718.pdf",
+    "pdfUrl": "js/data/pdfs/718.pdf"
+  },
+  {
+    "id": 722,
+    "type": "Original Article",
+    "title": "Regional Differences in the Amino Acid Sequences of Fasciola hepatica Cathepsin L2 From a Turkish Isolate",
+    "authors": [
+      {
+        "name": "Serpil Başpınar",
+        "affiliation": "Vocational School of Health Services, Fırat University, Elazığ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Venhar Çelik",
+        "affiliation": "Department of Biology, Faculty of Medicine, Fırat University, Elazığ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dilek Turgut Balık",
+        "affiliation": "Department of Bioengineering, Faculty of Chemical and Metallurgical Engineering, Yıldız Technical University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Kaplan",
+        "affiliation": "Department of Medical Parasitology, Faculty of Medicine, Firat University, Elazığ, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: This study describes cloning and sequence analysis of the gene coding for the cathepsin L2 gene from a F. hepatica isolate from Turkey. Methods: The adult form of F. hepatica was collected from the infected cattle liver and cDNA was obtained following total RNA isolation. After amplification of the gene by PCR, ligation and transformation was performed. Finally, DNA sequencing and phylogenetic analysis were performed. Results: The gene consists of an open reading frame of 981 nucleotides corresponding for 327 amino acids. There are five amino acid positions where Firat F. hepatica cathepsin L2 differs from the F. hepatica cathepsin L2 Dublin strain. This sequence was the first cathepsin L2 gene from a Turkey isolate and the second cathepsin L2 sequence entered into the database. A comparative amino acid sequence analysis indicated that there is about 99% homology with the F. hepatica cathepsin L2 reported in the literature, 98% homology with the F. hepatica cathepsin L-like protease, and 85% homology with the F. hepatica cathepsin L1 isolated in the Elazığ region at the nucleotide level. Conclusion: The amino acid differences between sequences could be evaluated for further immunization and diagnosis studies.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: This study describes cloning and sequence analysis of the gene coding for the cathepsin L2 gene from a F. hepatica isolate from Turkey.</p>\r\n<p>\r\n\t<strong>Methods</strong>: The adult form of F. hepatica was collected from the infected cattle liver and cDNA was obtained following total RNA isolation. After amplification of the gene by PCR, ligation and transformation was performed. Finally, DNA sequencing and phylogenetic analysis were performed.</p>\r\n<p>\r\n\t<strong>Results</strong>: The gene consists of an open reading frame of 981 nucleotides corresponding for 327 amino acids. There are five amino acid positions where Firat F. hepatica cathepsin L2 differs from the F. hepatica cathepsin L2 Dublin strain. This sequence was the first cathepsin L2 gene from a Turkey isolate and the second cathepsin L2 sequence entered into the database. A comparative amino acid sequence analysis indicated that there is about 99% homology with the F. hepatica cathepsin L2 reported in the literature, 98% homology with the F. hepatica cathepsin L-like protease, and 85% homology with the F. hepatica cathepsin L1 isolated in the Elazığ region at the nucleotide level.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The amino acid differences between sequences could be evaluated for further immunization and diagnosis studies.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: This study describes cloning and sequence analysis of the gene coding for the cathepsin L2 gene from a F. hepatica isolate from Turkey. Methods: The adult form of F. hepatica was collected from the infected cattle liver and cDNA was obtained following total RNA isolation. After amplification of the gene by PCR, ligation and transformation was performed. Finally, DNA sequencing and phylogenetic analysis were performed. Results: The gene consists of an open reading frame of 981 nucleotides corresponding for 327 amino acids. There are five amino acid positions where Firat F. hepatica cathepsin L2 differs from the F. hepatica cathepsin L2 Dublin strain. This sequence was the first cathepsin L2 gene from a Turkey isolate and the second cathepsin L2 sequence entered into the database. A comparative amino acid sequence analysis indicated that there is about 99% homology with the F. hepatica cathepsin L2 reported in the literature, 98% homology with the F. hepatica cathepsin L-like protease, and 85% homology with the F. hepatica cathepsin L1 isolated in the Elazığ region at the nucleotide level. Conclusion: The amino acid differences between sequences could be evaluated for further immunization and diagnosis studies.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03578.1",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "269-273",
+    "views": 6678,
+    "downloads": 2061,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "722",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=722",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=722",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=722",
+    "localPdfUrl": "js/data/pdfs/722.pdf",
+    "pdfUrl": "js/data/pdfs/722.pdf"
+  },
+  {
+    "id": 726,
+    "type": "Original Article",
+    "title": "Efficiency of Magnetic Field Treatment on Pressure Sores in Bedridden Patients",
+    "authors": [
+      {
+        "name": "Ferda Özdemir",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Medical Faculty of Trakya Üniversity, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Meliha Kasapoğlu",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Medical Park Hospital, Bursa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Figen Oymak",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sadiye Murat",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Şanlıurfa Research and Training Hospital, Şanlıurfa, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Pressure sores are an important source of complications in patients who are immobilized and bedridden. We aimed to investigate the efficiency of magnetic field treatment in pressure sores. Material and Methods: This was a randomized, double blind controlled design study. 20 patients in the study group received magneto-therapy, once a day for 30 minutes and with 150G, keeping to the BTL09 magnetotherapy device's program. In the control group, 20 patients received the dressing only once a day. The surface areas of the pressure sores were evaluated at the onset of the treatment (1st day), and on the 7th and 15th days. Results: When within group comparisons were conducted, a significant difference was observed between the 1st and 7th day, 7th and 15th day, and 1st and 15th day measures in both the groups in terms of the scar area. The average healing time for the treatment group was 10.80±4.06 (6-20) days, and the average healing time for the control group was 18.85±9.75 (5-32) days. There was a statistically significant difference between the two groups (z=-2.114, p=0.034). Also, there was a significant difference in the scar area between the two groups in the 15th day measure (z=-3.818, p=0.000). Conclusion: The healing process of the tissue can be accelerated.with the use of magnetotherapy in the treatment of pressure sores of stage II and III.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Pressure sores are an important source of complications in patients who are immobilized and bedridden. We aimed to investigate the efficiency of magnetic field treatment in pressure sores.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: This was a randomized, double blind controlled design study. 20 patients in the study group received magneto-therapy, once a day for 30 minutes and with 150G, keeping to the BTL09 magnetotherapy device&#39;s program. In the control group, 20 patients received the dressing only once a day. The surface areas of the pressure sores were evaluated at the onset of the treatment (1st day), and on the 7th and 15th days.</p>\r\n<p>\r\n\t<strong>Results</strong>: When within group comparisons were conducted, a significant difference was observed between the 1st and 7th day, 7th and 15th day, and 1st and 15th day measures in both the groups in terms of the scar area. The average healing time for the treatment group was 10.80&plusmn;4.06 (6-20) days, and the average healing time for the control group was 18.85&plusmn;9.75 (5-32) days. There was a statistically significant difference between the two groups (z=-2.114, p=0.034). Also, there was a significant difference in the scar area between the two groups in the 15th day measure (z=-3.818, p=0.000).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: The healing process of the tissue can be accelerated.with the use of magnetotherapy in the treatment of pressure sores of stage II and III.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Pressure sores are an important source of complications in patients who are immobilized and bedridden. We aimed to investigate the efficiency of magnetic field treatment in pressure sores. Material and Methods: This was a randomized, double blind controlled design study. 20 patients in the study group received magneto-therapy, once a day for 30 minutes and with 150G, keeping to the BTL09 magnetotherapy device's program. In the control group, 20 patients received the dressing only once a day. The surface areas of the pressure sores were evaluated at the onset of the treatment (1st day), and on the 7th and 15th days. Results: When within group comparisons were conducted, a significant difference was observed between the 1st and 7th day, 7th and 15th day, and 1st and 15th day measures in both the groups in terms of the scar area. The average healing time for the treatment group was 10.80±4.06 (6-20) days, and the average healing time for the control group was 18.85±9.75 (5-32) days. There was a statistically significant difference between the two groups (z=-2.114, p=0.034). Also, there was a significant difference in the scar area between the two groups in the 15th day measure (z=-3.818, p=0.000). Conclusion: The healing process of the tissue can be accelerated.with the use of magnetotherapy in the treatment of pressure sores of stage II and III.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03601.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "274-278",
+    "views": 6309,
+    "downloads": 9414,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "726",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=726",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=726",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=726",
+    "localPdfUrl": "js/data/pdfs/726.pdf",
+    "pdfUrl": "js/data/pdfs/726.pdf"
+  },
+  {
+    "id": 730,
+    "type": "Original Article",
+    "title": "Efficacy of Three-Dimensional Contrast-Enhanced Magnetic Resonance Angiography (3D CE-MRA) in the Diagnosis of Thoracic Outlet Syndrome",
+    "authors": [
+      {
+        "name": "Ercüment Ünlü",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Radyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Derya Demirbağ Kabayel",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ferda Özdemir",
+        "affiliation": "Department of Physical Medicine and Rehabilitation, Medical Faculty of Trakya Üniversity, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Bekir Çağlı",
+        "affiliation": "Department of Radiology, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sedat A. Tuncel",
+        "affiliation": "Department of Radiology, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The purpose of this study is to evaluate the effect of various upper extremity positions (adduction-abduction) on vascular structures in contrast-enhanced three-dimensional MR angiographic studies performed in patients with thoracic outlet syndrome. Materials and Methods: Twenty-two consecutive patients with clinical symptoms of neurovascular thoracic outlet syndrome were examined by 1.0 T MR unit. Examinations were studied by three-dimensional contrast-enhanced MR angiography with the arms positioned in abduction and adduction in the same patients. Results: In twenty-one of 44 subclavian arteries, impingement or stenosis with different degrees were found. Majority of lesions were localized in the costoclavicular region. Venous phase sequences of contrast-enhanced MR angiography showed compression of the subclavian vein in the 17 areas. Conclusion: Thoracic outlet syndrome remains controversial in both diagnosis and treatment, particulary in patients with no muscle atrophy, hand ischemia findings or venous stasis symptoms. Three-dimensional contrast-enhanced MR angiography is noninvasive and requires neither ionizing radiation nor administration of iodinated contrast material- and may be used to diagnose early compression findings and stenosis of the subclavian vessels.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The purpose of this study is to evaluate the effect of various upper extremity positions (adduction-abduction) on vascular structures in contrast-enhanced three-dimensional MR angiographic studies performed in patients with thoracic outlet syndrome.</p>\r\n<p>\r\n\t<strong>Materials</strong> <strong>and Methods</strong>: Twenty-two consecutive patients with clinical symptoms of neurovascular thoracic outlet syndrome were examined by 1.0 T MR unit. Examinations were studied by three-dimensional contrast-enhanced MR angiography with the arms positioned in abduction and adduction in the same patients.</p>\r\n<p>\r\n\t<strong>Results</strong>: In twenty-one of 44 subclavian arteries, impingement or stenosis with different degrees were found. Majority of lesions were localized in the costoclavicular region. Venous phase sequences of contrast-enhanced MR angiography showed compression of the subclavian vein in the 17 areas.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Thoracic outlet syndrome remains controversial in both diagnosis and treatment, particulary in patients with no muscle atrophy, hand ischemia findings or venous stasis symptoms. Three-dimensional contrast-enhanced MR angiography is noninvasive and requires neither ionizing radiation nor administration of iodinated contrast material- and may be used to diagnose early compression findings and stenosis of the subclavian vessels.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The purpose of this study is to evaluate the effect of various upper extremity positions (adduction-abduction) on vascular structures in contrast-enhanced three-dimensional MR angiographic studies performed in patients with thoracic outlet syndrome. Materials and Methods: Twenty-two consecutive patients with clinical symptoms of neurovascular thoracic outlet syndrome were examined by 1.0 T MR unit. Examinations were studied by three-dimensional contrast-enhanced MR angiography with the arms positioned in abduction and adduction in the same patients. Results: In twenty-one of 44 subclavian arteries, impingement or stenosis with different degrees were found. Majority of lesions were localized in the costoclavicular region. Venous phase sequences of contrast-enhanced MR angiography showed compression of the subclavian vein in the 17 areas. Conclusion: Thoracic outlet syndrome remains controversial in both diagnosis and treatment, particulary in patients with no muscle atrophy, hand ischemia findings or venous stasis symptoms. Three-dimensional contrast-enhanced MR angiography is noninvasive and requires neither ionizing radiation nor administration of iodinated contrast material- and may be used to diagnose early compression findings and stenosis of the subclavian vessels.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03817.1",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "279-285",
+    "views": 6924,
+    "downloads": 3542,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "730",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=730",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=730",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=730",
+    "localPdfUrl": "js/data/pdfs/730.pdf",
+    "pdfUrl": "js/data/pdfs/730.pdf"
+  },
+  {
+    "id": 734,
+    "type": "Original Article",
+    "title": "Superparamagnetic Iron Oxide Enhanced Magnetic Resonance Imaging in the Detection of Malignant Liver Lesions",
+    "authors": [
+      {
+        "name": "Bekir Çağlı",
+        "affiliation": "Department of Radiology, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Gençhellaç",
+        "affiliation": "Department of Radiology, Faculty of Medicine, Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Osman Temizöz",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Alptekin Tosun",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Bilge Çakır",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Radyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: To determine the value of superparamagnetic iron oxide (SPIO)-enhanced MR imaging in malignant liver lesions. Materials and Methods: Twenty patients with various hepatic masses or metastases were investigated with 1 tesla MR. T1-weighted FLASH and double- echo TSE T2-weighted sequences were applied before and after contrast injection. “Defining statistics” were prepared according to pre and postcontrast signal intensity measurements. Results: In this study there were 11 patients with metastases, 4 patients with hemangioma, 4 patients with HCC and one patient with a hemangioma and a metastasis at the same time. In cases wheret we found only hemangiomas, in all sequences, S/N ratios (p=0.043) and T2-weighted double-echo TSE with long TE SI change (p=0.043) were significant. While in the hemangiomas in T2-weighted double-echo TSE with long TE there is an decrease in the C/N ratios; in cases with metastasis and HCC, compared to other sequences significant increase in C/N ratio in T2-weighted double-echo TSE with short TE sequences was detected. Conclusion: SPIO-enhanced MR imaging can be used as a non-invasive radiologic technique for the detection focal liver lesions, to determine the number of lesions and also has a value in differentiating the benign lesions (especially hemangiomas) from primary tumors or metastatic malignant lesions.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: To determine the value of superparamagnetic iron oxide (SPIO)-enhanced MR imaging in malignant liver lesions.</p>\r\n<p>\r\n\t<strong>Materials</strong> <strong>and Methods</strong>: Twenty patients with various hepatic masses or metastases were investigated with 1 tesla MR. T1-weighted FLASH and double- echo TSE T2-weighted sequences were applied before and after contrast injection. &ldquo;Defining statistics&rdquo; were prepared according to pre and postcontrast signal intensity measurements.</p>\r\n<p>\r\n\t<strong>Results</strong>: In this study there were 11 patients with metastases, 4 patients with hemangioma, 4 patients with HCC and one patient with a hemangioma and a metastasis at the same time. In cases wheret we found only hemangiomas, in all sequences, S/N ratios (p=0.043) and T2-weighted double-echo TSE with long TE SI change (p=0.043) were significant. While in the hemangiomas in T2-weighted double-echo TSE with long TE there is an decrease in the C/N ratios; in cases with metastasis and HCC, compared to other sequences significant increase in C/N ratio in T2-weighted double-echo TSE with short TE sequences was detected.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: SPIO-enhanced MR imaging can be used as a non-invasive radiologic technique for the detection focal liver lesions, to determine the number of lesions and also has a value in differentiating the benign lesions (especially hemangiomas) from primary tumors or metastatic malignant lesions.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: To determine the value of superparamagnetic iron oxide (SPIO)-enhanced MR imaging in malignant liver lesions. Materials and Methods: Twenty patients with various hepatic masses or metastases were investigated with 1 tesla MR. T1-weighted FLASH and double- echo TSE T2-weighted sequences were applied before and after contrast injection. “Defining statistics” were prepared according to pre and postcontrast signal intensity measurements. Results: In this study there were 11 patients with metastases, 4 patients with hemangioma, 4 patients with HCC and one patient with a hemangioma and a metastasis at the same time. In cases wheret we found only hemangiomas, in all sequences, S/N ratios (p=0.043) and T2-weighted double-echo TSE with long TE SI change (p=0.043) were significant. While in the hemangiomas in T2-weighted double-echo TSE with long TE there is an decrease in the C/N ratios; in cases with metastasis and HCC, compared to other sequences significant increase in C/N ratio in T2-weighted double-echo TSE with short TE sequences was detected. Conclusion: SPIO-enhanced MR imaging can be used as a non-invasive radiologic technique for the detection focal liver lesions, to determine the number of lesions and also has a value in differentiating the benign lesions (especially hemangiomas) from primary tumors or metastatic malignant lesions.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03880.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "286-292",
+    "views": 6713,
+    "downloads": 10718,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "734",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=734",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=734",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=734",
+    "localPdfUrl": "js/data/pdfs/734.pdf",
+    "pdfUrl": "js/data/pdfs/734.pdf"
+  },
+  {
+    "id": 739,
+    "type": "Original Article",
+    "title": "Evaluation of Effects of Quercetin (3, 3",
+    "authors": [
+      {
+        "name": "Ayşe Ak",
+        "affiliation": "Department of Biology, Faculty of Science, Anadolu University, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayşe Başaran",
+        "affiliation": "Department of Medical Biology, Faculty of Medicine, Eskişehir Osmangazi University, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İrfan Değirmenci",
+        "affiliation": "Department of Medical Biology, Faculty of Medicine, Eskişehir Osmangazi University, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hasan Veysi Güneş",
+        "affiliation": "Department of Medical Biology, Faculty of Medicine, Eskişehir Osmangazi University, Eskişehir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Miris Dikmen [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Quercetin has been shown to inhibit the proliferation of cancer cells. Tamoxifen is used for breast cancer. In this study, we have aimed to investigate the effects of quercetin and tamoxifen on telomerase enzyme activity and apoptosis in two cell lines. Methods: In this study, 10, 50 and 100 μM of quercetin and tamoxifen were used to treat MCF-7 and NIH-3T3. Apoptosis was determined by the TUNEL method (Terminal Deoxynucleotide Transferase dUTP Nick End Label) and telomerase enzyme activity was determined by ELISA (Enzyme-Linked Immunosorbent Assay). Results: In the NIH3T3 cell line, only 100 μM quercetin and tamoxifen induced significant apoptosis. In the MCF-7 cell line 10 μM and 100 μM quercetin in the 24th hour and 100 μM quercetin in the 72 hour induce apoptosis. In 24th and 48th hours, 50 μM tamoxifen and 100 μM tamoxifen in the 24th and 48th hours induce apoptosis in the MCF-7 cell line. In MCF-7 and NIH-3T3 cell lines, all doses of quercetin and tamoxifen reduced telomerase enzyme activity compared to the control group. Conclusion: In this study, it was shown that quercetin has similar effects to tamoxifen. However quercetin induces apoptosis more than decreasing telomerase enzyme activities, being different from tamoxifen. We hope that the findings will assist in developing new therapeutic pathways for preventing breast cancer. However, there should be many more studies in order to discover quercetin and other potential drugs.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Quercetin has been shown to inhibit the proliferation of cancer cells. Tamoxifen is used for breast cancer. In this study, we have aimed to investigate the effects of quercetin and tamoxifen on telomerase enzyme activity and apoptosis in two cell lines.</p>\r\n<p>\r\n\t<strong>Methods</strong>: In this study, 10, 50 and 100 &mu;M of quercetin and tamoxifen were used to treat MCF-7 and NIH-3T3. Apoptosis was determined by the TUNEL method (Terminal Deoxynucleotide Transferase dUTP Nick End Label) and telomerase enzyme activity was determined by ELISA (Enzyme-Linked Immunosorbent Assay).</p>\r\n<p>\r\n\t<strong>Results</strong>: In the NIH3T3 cell line, only 100 &mu;M quercetin and tamoxifen induced significant apoptosis. In the MCF-7 cell line 10 &mu;M and 100 &mu;M quercetin in the 24th hour and 100 &mu;M quercetin in the 72 hour induce apoptosis. In 24th and 48th hours, 50 &mu;M tamoxifen and 100 &mu;M tamoxifen in the 24th and 48th hours induce apoptosis in the MCF-7 cell line. In MCF-7 and NIH-3T3 cell lines, all doses of quercetin and tamoxifen reduced telomerase enzyme activity compared to the control group.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: In this study, it was shown that quercetin has similar effects to tamoxifen. However quercetin induces apoptosis more than decreasing telomerase enzyme activities, being different from tamoxifen. We hope that the findings will assist in developing new therapeutic pathways for preventing breast cancer. However, there should be many more studies in order to discover quercetin and other potential drugs.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Quercetin has been shown to inhibit the proliferation of cancer cells. Tamoxifen is used for breast cancer. In this study, we have aimed to investigate the effects of quercetin and tamoxifen on telomerase enzyme activity and apoptosis in two cell lines. Methods: In this study, 10, 50 and 100 μM of quercetin and tamoxifen were used to treat MCF-7 and NIH-3T3. Apoptosis was determined by the TUNEL method (Terminal Deoxynucleotide Transferase dUTP Nick End Label) and telomerase enzyme activity was determined by ELISA (Enzyme-Linked Immunosorbent Assay). Results: In the NIH3T3 cell line, only 100 μM quercetin and tamoxifen induced significant apoptosis. In the MCF-7 cell line 10 μM and 100 μM quercetin in the 24th hour and 100 μM quercetin in the 72 hour induce apoptosis. In 24th and 48th hours, 50 μM tamoxifen and 100 μM tamoxifen in the 24th and 48th hours induce apoptosis in the MCF-7 cell line. In MCF-7 and NIH-3T3 cell lines, all doses of quercetin and tamoxifen reduced telomerase enzyme activity compared to the control group. Conclusion: In this study, it was shown that quercetin has similar effects to tamoxifen. However quercetin induces apoptosis more than decreasing telomerase enzyme activities, being different from tamoxifen. We hope that the findings will assist in developing new therapeutic pathways for preventing breast cancer. However, there should be many more studies in order to discover quercetin and other potential drugs.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03372.3",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "293-299",
+    "views": 7129,
+    "downloads": 9581,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "739",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=739",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=739",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=739",
+    "localPdfUrl": "js/data/pdfs/739.pdf",
+    "pdfUrl": "js/data/pdfs/739.pdf"
+  },
+  {
+    "id": 744,
+    "type": "Original Article",
+    "title": "Oxidative Stress in Patients with Chronic Hepatitis B and C",
+    "authors": [
+      {
+        "name": "Pınar Çıragil",
+        "affiliation": "Department of Microbiology and Clinical Microbiology, BSK Metropark Hospital, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ergül Belge Kurutaş",
+        "affiliation": "Department of Medical Biochemistry, Faculty of Medicine, Kahramanmaraş Sütçü İmam University, Kahramanmaraş, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ömer Faruk Kökoğlu",
+        "affiliation": "Department of Infectious Diseases, Faculty of Medicine, Kahramanmaraş Sütçü İmam University, Kahramanmaraş, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Aral",
+        "affiliation": "Department of Microbiology and Clinical Microbiology, Faculty of Medicine, Kahramanmaraş Sütçü İmam University, Kahramanmaraş, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: Hepatitis B and hepatitis C virus infections are extensively seen throughout the world. Disturbances in the antioxidant system and oxidative stress may play a role in the pathogenesis of chronic liver diseases. The aim of this study was to evaluate the oxidant/antioxidant status in the serum of patients with chronic hepatitis B (CHB) and C (CHC). Material and Methods: Twenty patients with CHB, 20 with CHC and 30 healthy volunteers were included in this study. Catalase (CAT), superoxide dismutase (SOD) activities and malondialdehyde (MDA) levels were measured in all patients and control group specthrophotometrically. Results: While CAT and SOD activities were significantly lower in patients with CHC, these enzymes were significantly higher in patients with CHB compared to controls. However, MDA levels were increased in each patient group as compared to the control group. Also, antioxidant enzyme activities were found to be significantly lower and MDA levels were higher in patients with CHC, compared to patients with CHB. Conclusion: We considered that insufficiency of antioxidant barrier may cause oxidative stress in patients with CHB and CHC, so antioxidant treatment should be useful for these patients.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: Hepatitis B and hepatitis C virus infections are extensively seen throughout the world. Disturbances in the antioxidant system and oxidative stress may play a role in the pathogenesis of chronic liver diseases. The aim of this study was to evaluate the oxidant/antioxidant status in the serum of patients with chronic hepatitis B (CHB) and C (CHC).</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Twenty patients with CHB, 20 with CHC and 30 healthy volunteers were included in this study. Catalase (CAT), superoxide dismutase (SOD) activities and malondialdehyde (MDA) levels were measured in all patients and control group specthrophotometrically.</p>\r\n<p>\r\n\t<strong>Results</strong>: While CAT and SOD activities were significantly lower in patients with CHC, these enzymes were significantly higher in patients with CHB compared to controls. However, MDA levels were increased in each patient group as compared to the control group. Also, antioxidant enzyme activities were found to be significantly lower and MDA levels were higher in patients with CHC, compared to patients with CHB.</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: We considered that insufficiency of antioxidant barrier may cause oxidative stress in patients with CHB and CHC, so antioxidant treatment should be useful for these patients.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: Hepatitis B and hepatitis C virus infections are extensively seen throughout the world. Disturbances in the antioxidant system and oxidative stress may play a role in the pathogenesis of chronic liver diseases. The aim of this study was to evaluate the oxidant/antioxidant status in the serum of patients with chronic hepatitis B (CHB) and C (CHC). Material and Methods: Twenty patients with CHB, 20 with CHC and 30 healthy volunteers were included in this study. Catalase (CAT), superoxide dismutase (SOD) activities and malondialdehyde (MDA) levels were measured in all patients and control group specthrophotometrically. Results: While CAT and SOD activities were significantly lower in patients with CHC, these enzymes were significantly higher in patients with CHB compared to controls. However, MDA levels were increased in each patient group as compared to the control group. Also, antioxidant enzyme activities were found to be significantly lower and MDA levels were higher in patients with CHC, compared to patients with CHB. Conclusion: We considered that insufficiency of antioxidant barrier may cause oxidative stress in patients with CHB and CHC, so antioxidant treatment should be useful for these patients.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.03948.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "300-303",
+    "views": 6493,
+    "downloads": 2945,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "744",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=744",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=744",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=744",
+    "localPdfUrl": "js/data/pdfs/744.pdf",
+    "pdfUrl": "js/data/pdfs/744.pdf"
+  },
+  {
+    "id": 747,
+    "type": "Original Article",
+    "title": "The Comparison of Open and Laparoscopic Appendectomy: Is There any Outcome Difference Between Non-Complicated and Complicated Appendicitis?",
+    "authors": [
+      {
+        "name": "Ünal Bıçakcı",
+        "affiliation": "Department of Pediatric Surgery, Faculty of Medicine, Ondokuz Mayıs University, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burak Tander",
+        "affiliation": "Department of Pediatric Surgery, Faculty of Medicine, Ondokuz Mayıs University, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mithat Günaydın",
+        "affiliation": "Department of Pediatric Surgery, Faculty of Medicine, Ondokuz Mayıs University, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ender Aritürk",
+        "affiliation": "Department of Pediatric Surgery, Faculty of Medicine, Ondokuz Mayıs University, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Rıza Rızalar",
+        "affiliation": "Department of Pediatric Surgery, Faculty of Medicine, Ondokuz Mayıs University, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Suat H. Ayyıldız",
+        "affiliation": "Department of Pediatric Surgery, Faculty of Medicine, Ondokuz Mayıs University, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ferit Bernay",
+        "affiliation": "Department of Pediatric Surgery, Faculty of Medicine, Ondokuz Mayıs University, Samsun, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: The assessment of laparoscopic appendectomy (LA) and open appendectomy (OA) in patients with noncomplicated (NCA) and complicated appendicitis (CA) was aimed for. Material and Methods: Of 279 patients with appendectomy, 135 had NCA (48.3%) (49 underwent LA) (86M, 49F, median 9 years and144 had CA (51.7%) (23 underwent LA) (98M, 46F, median 11 years). Outcome measures: Wound infection (WI), intraabdominal abscess (IA), postoperative ileus (PI), requirement of reoperation (RO), time of surgery (TOS), length of stay (LOS), duration of postoperative pain (PP), nasogastric tube (NT), intraperitoneal drainage (ID) were recorded. Results: Between OA and LA groups, there was no statistical significance in WI(3/86 vs 0/49), IA(2/86 vs 0/49), RO(2/86 vs 2/49), and PI rate (1/86 vs 2/49) in NCA group (p>0.05). The LOS(3±1.4 vs 4±1.3), NT (1.2±0.9 vs 1.8±0.6 days) and PP(0.9±0.9 vs 2.3±1.1 days) were lower in LA than OA (p<0.05). There was no difference in TOS(79.5±27.3 vs 71.6±18.9 min) (p>0.05). In CA, patients with LA had less WI(0/23 vs 18/121) (p<0.05). NT (2±0.8 vs 2.7±1.5), PP (2.1±1.2 vs 3.2±1.5) and ID (3.1±2.3 vs 4.4±1.4) were lower in LA than OA (p<0.05). Conclusion: Laparoscopic appendectomy decreases wound infection, nasogastric tube duration, intraperitoneal drainage and pain in complicated appendicitis. The Laporoscopic approach is superior in complicated and noncomplicated appendicitis.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: The assessment of laparoscopic appendectomy (LA) and open appendectomy (OA) in patients with noncomplicated (NCA) and complicated appendicitis (CA) was aimed for.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Of 279 patients with appendectomy, 135 had NCA (48.3%) (49 underwent LA) (86M, 49F, median 9 years and144 had CA (51.7%) (23 underwent LA) (98M, 46F, median 11 years). Outcome measures: Wound infection (WI), intraabdominal abscess (IA), postoperative ileus (PI), requirement of reoperation (RO), time of surgery (TOS), length of stay (LOS), duration of postoperative pain (PP), nasogastric tube (NT), intraperitoneal drainage (ID) were recorded.</p>\r\n<p>\r\n\t<strong>Results</strong>: Between OA and LA groups, there was no statistical significance in WI(3/86 vs 0/49), IA(2/86 vs 0/49), RO(2/86 vs 2/49), and PI rate (1/86 vs 2/49) in NCA group (p&gt;0.05). The LOS(3&plusmn;1.4 vs 4&plusmn;1.3), NT (1.2&plusmn;0.9 vs 1.8&plusmn;0.6 days) and PP(0.9&plusmn;0.9 vs 2.3&plusmn;1.1 days) were lower in LA than OA (p&lt;0.05). There was no difference in TOS(79.5&plusmn;27.3 vs 71.6&plusmn;18.9 min) (p&gt;0.05). In CA, patients with LA had less WI(0/23 vs 18/121) (p&lt;0.05). NT (2&plusmn;0.8 vs 2.7&plusmn;1.5), PP (2.1&plusmn;1.2 vs 3.2&plusmn;1.5) and ID (3.1&plusmn;2.3 vs 4.4&plusmn;1.4) were lower in LA than OA (p&lt;0.05).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Laparoscopic appendectomy decreases wound infection, nasogastric tube duration, intraperitoneal drainage and pain in complicated appendicitis. The Laporoscopic approach is superior in complicated and noncomplicated appendicitis.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: The assessment of laparoscopic appendectomy (LA) and open appendectomy (OA) in patients with noncomplicated (NCA) and complicated appendicitis (CA) was aimed for. Material and Methods: Of 279 patients with appendectomy, 135 had NCA (48.3%) (49 underwent LA) (86M, 49F, median 9 years and144 had CA (51.7%) (23 underwent LA) (98M, 46F, median 11 years). Outcome measures: Wound infection (WI), intraabdominal abscess (IA), postoperative ileus (PI), requirement of reoperation (RO), time of surgery (TOS), length of stay (LOS), duration of postoperative pain (PP), nasogastric tube (NT), intraperitoneal drainage (ID) were recorded. Results: Between OA and LA groups, there was no statistical significance in WI(3/86 vs 0/49), IA(2/86 vs 0/49), RO(2/86 vs 2/49), and PI rate (1/86 vs 2/49) in NCA group (p>0.05). The LOS(3±1.4 vs 4±1.3), NT (1.2±0.9 vs 1.8±0.6 days) and PP(0.9±0.9 vs 2.3±1.1 days) were lower in LA than OA (p<0.05). There was no difference in TOS(79.5±27.3 vs 71.6±18.9 min) (p>0.05). In CA, patients with LA had less WI(0/23 vs 18/121) (p<0.05). NT (2±0.8 vs 2.7±1.5), PP (2.1±1.2 vs 3.2±1.5) and ID (3.1±2.3 vs 4.4±1.4) were lower in LA than OA (p<0.05). Conclusion: Laparoscopic appendectomy decreases wound infection, nasogastric tube duration, intraperitoneal drainage and pain in complicated appendicitis. The Laporoscopic approach is superior in complicated and noncomplicated appendicitis.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2010.04604.1",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "304-306",
+    "views": 7234,
+    "downloads": 9484,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "747",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=747",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=747",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=747",
+    "localPdfUrl": "js/data/pdfs/747.pdf",
+    "pdfUrl": "js/data/pdfs/747.pdf"
+  },
+  {
+    "id": 755,
+    "type": "Original Article",
+    "title": "Attention Deficit Hyperactivity Disorder and Social Anxiety in İstanbul Heavy Metal Bar Patrons",
+    "authors": [
+      {
+        "name": "Özalp Ekinci",
+        "affiliation": "Clinic of Child Psychitary, Antakya Child Care Home, Hatay, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yasin Bez",
+        "affiliation": "Department of Psychiatry, Faculty of Medicine, Dicle Universty, Diyarbakır, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Volkan Topçuoglu",
+        "affiliation": "Department of Psychiatry, Faculty of Medicine, Marmara Universty, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serdar Nurmedow",
+        "affiliation": "Department of Psychiatry, Faculty of Medicine, Marmara Universty, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Objective: We aimed to examine the heavy metal bar patrons in Istanbul by means of self-reported questionnaires for psychiatric disorder symptoms. Material and Methods: Seventy-one volunteers from 4 popular heavy metal bars were included to the study. The Beck Depression Inventory, the Liebowitz Social Anxiety Scale (LSAS), the Adult Attention Deficit Disorder/Attention Deficit and Hyperactivity Disorder (ADD/ADHD) Scale and the Michigan Alcoholism Screening Test (MAST) were administered to the participants. Results: One fourth of the participants (25.4%) were under high risk for a depressive episode (BDI>17), 22 (32.3%) reported significant social anxiety (LSAS>30), and 41 (57.7%) showed moderate ADHD symptoms (Adult ADD/ADHD scale: 20-59). According to BDI score participants who were under the risk for depression showed higher scores in Adult ADD/ADHD scale scores than that of participants who were not under a risk for depression (p=0.001 for attention deficit; p=0.003 for hyperactivity; p=0.002 for impulsivity; p=0.001 for total score). In the study group, ADD/ADHD scale attention deficit score was positively correlated with the total fear, total avoidence and the total scores of LSAS (r=.359 p<0.01; r=.332 p<0.01; r=.358 p<0.01, respectively). Conclusion: Heavy metal bar patrons appear to be a particular social group with an increased risk of psychopathology.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\t<strong>Objective</strong>: We aimed to examine the heavy metal bar patrons in Istanbul by means of self-reported questionnaires for psychiatric disorder symptoms.</p>\r\n<p>\r\n\t<strong>Material and Methods</strong>: Seventy-one volunteers from 4 popular heavy metal bars were included to the study. The Beck Depression Inventory, the Liebowitz Social Anxiety Scale (LSAS), the Adult Attention Deficit Disorder/Attention Deficit and Hyperactivity Disorder (ADD/ADHD) Scale and the Michigan Alcoholism Screening Test (MAST) were administered to the participants.</p>\r\n<p>\r\n\t<strong>Results</strong>: One fourth of the participants (25.4%) were under high risk for a depressive episode (BDI&gt;17), 22 (32.3%) reported significant social anxiety (LSAS&gt;30), and 41 (57.7%) showed moderate ADHD symptoms (Adult ADD/ADHD scale: 20-59). According to BDI score participants who were under the risk for depression showed higher scores in Adult ADD/ADHD scale scores than that of participants who were not under a risk for depression (p=0.001 for attention deficit; p=0.003 for hyperactivity; p=0.002 for impulsivity; p=0.001 for total score). In the study group, ADD/ADHD scale attention deficit score was positively correlated with the total fear, total avoidence and the total scores of LSAS (r=.359 p&lt;0.01; r=.332 p&lt;0.01; r=.358 p&lt;0.01, respectively).</p>\r\n<p>\r\n\t<strong>Conclusion</strong>: Heavy metal bar patrons appear to be a particular social group with an increased risk of psychopathology.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Objective: We aimed to examine the heavy metal bar patrons in Istanbul by means of self-reported questionnaires for psychiatric disorder symptoms. Material and Methods: Seventy-one volunteers from 4 popular heavy metal bars were included to the study. The Beck Depression Inventory, the Liebowitz Social Anxiety Scale (LSAS), the Adult Attention Deficit Disorder/Attention Deficit and Hyperactivity Disorder (ADD/ADHD) Scale and the Michigan Alcoholism Screening Test (MAST) were administered to the participants. Results: One fourth of the participants (25.4%) were under high risk for a depressive episode (BDI>17), 22 (32.3%) reported significant social anxiety (LSAS>30), and 41 (57.7%) showed moderate ADHD symptoms (Adult ADD/ADHD scale: 20-59). According to BDI score participants who were under the risk for depression showed higher scores in Adult ADD/ADHD scale scores than that of participants who were not under a risk for depression (p=0.001 for attention deficit; p=0.003 for hyperactivity; p=0.002 for impulsivity; p=0.001 for total score). In the study group, ADD/ADHD scale attention deficit score was positively correlated with the total fear, total avoidence and the total scores of LSAS (r=.359 p<0.01; r=.332 p<0.01; r=.358 p<0.01, respectively). Conclusion: Heavy metal bar patrons appear to be a particular social group with an increased risk of psychopathology.",
+    "keywords": [],
+    "doi": "10.5152/balkanmedj.2011.24",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "307-312",
+    "views": 7788,
+    "downloads": 9679,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "755",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=755",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=755",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=755",
+    "localPdfUrl": "js/data/pdfs/755.pdf",
+    "pdfUrl": "js/data/pdfs/755.pdf"
+  },
+  {
+    "id": 759,
+    "type": "Case Report",
+    "title": "Obsessive Compulsive Disorder Case Following Cerebral Ischemia",
+    "authors": [
+      {
+        "name": "Semra Bilge",
+        "affiliation": "Taksim Eğitim ve Araştırma Hastanesi, Nöroloji Kliniği, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Saffet Meral Çınar",
+        "affiliation": "Taksim Eğitim ve Araştırma Hastanesi, Nöroloji Kliniği, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Leman Erkutlu",
+        "affiliation": "Taksim Eğitim ve Araştırma Hastanesi, Nöroloji Kliniği, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuğba Eyiipgil",
+        "affiliation": "Taksim Eğitim ve Araştırma Hastanesi, Nöroloji Kliniği, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bahar Hascan",
+        "affiliation": "Bakırköy Ruh ve Sinir Hastalıkları Hastanesi, Psikiyatri Kliniği, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Obsessive compulsive disorder is characterised by recurrent, unwanted, distressing thoughts, images, impulses and associated behaviours which generally emerge in the 2nd or 3rd decades of life. Elderly onset cases are rare. A 71 year old patient was admitted to our hospital because of leftsided weakness. Neurological examination revealed left hemiparesis, mild dysphasia and anosognosia. Using cranial magnetic resonance, infarcts were found in the MCA territories, in the posterior portion of the middle temporal gyrus supplied by the cortical (inferior) branch and in the internal capsule, globus pallidus and putamen portions supplied by the lenticolostriate branch. An occlusion was also present in the right internal carotid artery (ICA). Fifteen days after presentation he developed an abnormal fear of urine contamination. He showered and handwashed excessively and exhibited insomnia and anxiety. The patient knew that his behaviour was ridiculous but could not prevent it. Formal neuropsychological testing found his simple attention to be mildly impared. His visuospatial function and construction abilities were also impaired. Obsessive compulsive disorder is usually an early onset disease. However this report seeks to draw attention to late-onset cases such as this, which are due to a cerebrovascular disorder.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tObsessive compulsive disorder is characterised by recurrent, unwanted, distressing thoughts, images, impulses and associated behaviours which generally emerge in the 2nd or 3rd decades of life. Elderly onset cases are rare. A 71 year old patient was admitted to our hospital because of leftsided weakness. Neurological examination revealed left hemiparesis, mild dysphasia and anosognosia. Using cranial magnetic resonance, infarcts were found in the MCA territories, in the posterior portion of the middle temporal gyrus supplied by the cortical (inferior) branch and in the internal capsule, globus pallidus and putamen portions supplied by the lenticolostriate branch. An occlusion was also present in the right internal carotid artery (ICA). Fifteen days after presentation he developed an abnormal fear of urine contamination. He showered and handwashed excessively and exhibited insomnia and anxiety. The patient knew that his behaviour was ridiculous but could not prevent it. Formal neuropsychological testing found his simple attention to be mildly impared. His visuospatial function and construction abilities were also impaired. Obsessive compulsive disorder is usually an early onset disease. However this report seeks to draw attention to late-onset cases such as this, which are due to a cerebrovascular disorder.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Obsessive compulsive disorder is characterised by recurrent, unwanted, distressing thoughts, images, impulses and associated behaviours which generally emerge in the 2nd or 3rd decades of life. Elderly onset cases are rare. A 71 year old patient was admitted to our hospital because of leftsided weakness. Neurological examination revealed left hemiparesis, mild dysphasia and anosognosia. Using cranial magnetic resonance, infarcts were found in the MCA territories, in the posterior portion of the middle temporal gyrus supplied by the cortical (inferior) branch and in the internal capsule, globus pallidus and putamen portions supplied by the lenticolostriate branch. An occlusion was also present in the right internal carotid artery (ICA). Fifteen days after presentation he developed an abnormal fear of urine contamination. He showered and handwashed excessively and exhibited insomnia and anxiety. The patient knew that his behaviour was ridiculous but could not prevent it. Formal neuropsychological testing found his simple attention to be mildly impared. His visuospatial function and construction abilities were also impaired. Obsessive compulsive disorder is usually an early onset disease. However this report seeks to draw attention to late-onset cases such as this, which are due to a cerebrovascular disorder.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02869.4",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "313-315",
+    "views": 6282,
+    "downloads": 2168,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "759",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=759",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=759",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=759",
+    "localPdfUrl": "js/data/pdfs/759.pdf",
+    "pdfUrl": "js/data/pdfs/759.pdf"
+  },
+  {
+    "id": 764,
+    "type": "Case Report",
+    "title": "Tubularised Incised Plate Urethroplasty is an Applicable Method for the Treatment of the Hypospadiac Type of Urethral Duplication",
+    "authors": [
+      {
+        "name": "Ömer Yılmaz",
+        "affiliation": "Department of Pediatric Surgery, Facult of Medicine, Celal Bayar University, Manisa, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cüneyt Günşar",
+        "affiliation": "Department of Pediatric Surgery, Facult of Medicine, Celal Bayar University, Manisa, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Urethral duplication is a rare congenital anomaly usually seen in males. We present a case of urethral duplication treated by a tubularised incised plate urethroplasty (TIPU) technique. A 5-year-old male boy was admitted to the clinic with the complaints of thin calibrated urinating and diurnal enuresis. We diagnosed distal penile hypospadias. During the operation, another urethral opening was found proximal to the previously seen hypospadiac meatus, localised on the coronary sulcus. We performed the TIPU procedure without excising the duplicated urethra. We only excised the common wall between the two urethras, and used the dorsal urethral plate of the duplicated urethra for tubularisation of the neourethra. The postoperative course was uneventful. A cystoscopy was done for suspected urogenital sinus. There was no further complaint at the third postoperative month. The TIPU technique can be successfully applied in such cases. The dorsal plate of the duplicated urethra can be used to form the neourethra.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tUrethral duplication is a rare congenital anomaly usually seen in males. We present a case of urethral duplication treated by a tubularised incised plate urethroplasty (TIPU) technique. A 5-year-old male boy was admitted to the clinic with the complaints of thin calibrated urinating and diurnal enuresis. We diagnosed distal penile hypospadias. During the operation, another urethral opening was found proximal to the previously seen hypospadiac meatus, localised on the coronary sulcus. We performed the TIPU procedure without excising the duplicated urethra. We only excised the common wall between the two urethras, and used the dorsal urethral plate of the duplicated urethra for tubularisation of the neourethra. The postoperative course was uneventful. A cystoscopy was done for suspected urogenital sinus. There was no further complaint at the third postoperative month. The TIPU technique can be successfully applied in such cases. The dorsal plate of the duplicated urethra can be used to form the neourethra.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Urethral duplication is a rare congenital anomaly usually seen in males. We present a case of urethral duplication treated by a tubularised incised plate urethroplasty (TIPU) technique. A 5-year-old male boy was admitted to the clinic with the complaints of thin calibrated urinating and diurnal enuresis. We diagnosed distal penile hypospadias. During the operation, another urethral opening was found proximal to the previously seen hypospadiac meatus, localised on the coronary sulcus. We performed the TIPU procedure without excising the duplicated urethra. We only excised the common wall between the two urethras, and used the dorsal urethral plate of the duplicated urethra for tubularisation of the neourethra. The postoperative course was uneventful. A cystoscopy was done for suspected urogenital sinus. There was no further complaint at the third postoperative month. The TIPU technique can be successfully applied in such cases. The dorsal plate of the duplicated urethra can be used to form the neourethra.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02877.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "316-318",
+    "views": 6408,
+    "downloads": 9355,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "764",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=764",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=764",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=764",
+    "localPdfUrl": "js/data/pdfs/764.pdf",
+    "pdfUrl": "js/data/pdfs/764.pdf"
+  },
+  {
+    "id": 766,
+    "type": "Case Report",
+    "title": "A Case of Angiolymphoid Hyperplasia with Eosinophilia Aggravated During Pregnancy",
+    "authors": [
+      {
+        "name": "Ali Murat Ceyhan",
+        "affiliation": "Department of Dermatology, Faculty of Medicine, Süleyman Demirel University, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Vahide Baysal Akkaya",
+        "affiliation": "Department of Dermatology, Faculty of Medicine, Süleyman Demirel University, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Yıldırım",
+        "affiliation": "Department of Dermatology, Faculty of Medicine, Süleyman Demirel University, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nermin Karahan",
+        "affiliation": "Department of Pathology, Faculty of Medicine, Süleyman Demirel University, Isparta, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Angiolymphoid hyperplasia with eosinophilia (ALHE) is an uncommon and benign vascular disorder characterized by angiomatous, pink-red papulonodular lesions mainly located on the scalp, neck, and periauricular region. Although the exact cause of ALHE is unknown, several etiologic factors including insect bites or parasites, trauma, hyperestrogen states, and immunologic factors have been implicated in the pathogenesis of the disease. Only a few cases of pregnancy related ALHE so far have been reported in the literature. In this article, we report a case of ALHE with postauricular location aggravated during the first trimester of pregnancy.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tAngiolymphoid hyperplasia with eosinophilia (ALHE) is an uncommon and benign vascular disorder characterized by angiomatous, pink-red papulonodular lesions mainly located on the scalp, neck, and periauricular region. Although the exact cause of ALHE is unknown, several etiologic factors including insect bites or parasites, trauma, hyperestrogen states, and immunologic factors have been implicated in the pathogenesis of the disease. Only a few cases of pregnancy related ALHE so far have been reported in the literature. In this article, we report a case of ALHE with postauricular location aggravated during the first trimester of pregnancy.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Angiolymphoid hyperplasia with eosinophilia (ALHE) is an uncommon and benign vascular disorder characterized by angiomatous, pink-red papulonodular lesions mainly located on the scalp, neck, and periauricular region. Although the exact cause of ALHE is unknown, several etiologic factors including insect bites or parasites, trauma, hyperestrogen states, and immunologic factors have been implicated in the pathogenesis of the disease. Only a few cases of pregnancy related ALHE so far have been reported in the literature. In this article, we report a case of ALHE with postauricular location aggravated during the first trimester of pregnancy.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.03208.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "319-321",
+    "views": 6898,
+    "downloads": 9635,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "766",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=766",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=766",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=766",
+    "localPdfUrl": "js/data/pdfs/766.pdf",
+    "pdfUrl": "js/data/pdfs/766.pdf"
+  },
+  {
+    "id": 772,
+    "type": "Case Report",
+    "title": "Unsuccessful Practice of Percutaneous Endoscopic Gastrostomy in an Infant with Gastric Volvulus: a Case Report",
+    "authors": [
+      {
+        "name": "Levent Duman",
+        "affiliation": "Department of Pediatric Surgery, Faculty of Medicine, Süleyman Demirel University, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Behçet İlker Büyükyavuz",
+        "affiliation": "Department of Pediatric Surgery, Faculty of Medicine, Süleyman Demirel University, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Akçam [[2]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Percutaneous endoscopic gastrostomy (PEG) is an easy and safe procedure for long-term enteral feeding in children with inadequate oral intake. Although PEG has been used for treatment of gastric volvulus in adults, there is a little relevant data for its use in children. Here, we report a 17-month-old male infant who was admitted to our hospital with a 1-month history of vomiting. Upper gastrointestinal contrast study revealed an organoaxial gastric volvulus. Then PEG was inserted for the purpose of nutritional support. Because the patient continued to vomit after feeding via gastrostomy, surgery was planned. Laparotomy revealed that the entry of the PEG tube was at the posterior wall of the stomach. The gastrostomy tube was removed, and the opening was repaired. Then the stomach was repositioned, and Nissen fundoplication and a Stamm gastrostomy at the anterior wall of the stomach were performed. The patient had no further episodes of vomiting after surgery and was discharged following an uneventful recovery period.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tPercutaneous endoscopic gastrostomy (PEG) is an easy and safe procedure for long-term enteral feeding in children with inadequate oral intake. Although PEG has been used for treatment of gastric volvulus in adults, there is a little relevant data for its use in children. Here, we report a 17-month-old male infant who was admitted to our hospital with a 1-month history of vomiting. Upper gastrointestinal contrast study revealed an organoaxial gastric volvulus. Then PEG was inserted for the purpose of nutritional support. Because the patient continued to vomit after feeding via gastrostomy, surgery was planned. Laparotomy revealed that the entry of the PEG tube was at the posterior wall of the stomach. The gastrostomy tube was removed, and the opening was repaired. Then the stomach was repositioned, and Nissen fundoplication and a Stamm gastrostomy at the anterior wall of the stomach were performed. The patient had no further episodes of vomiting after surgery and was discharged following an uneventful recovery period.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Percutaneous endoscopic gastrostomy (PEG) is an easy and safe procedure for long-term enteral feeding in children with inadequate oral intake. Although PEG has been used for treatment of gastric volvulus in adults, there is a little relevant data for its use in children. Here, we report a 17-month-old male infant who was admitted to our hospital with a 1-month history of vomiting. Upper gastrointestinal contrast study revealed an organoaxial gastric volvulus. Then PEG was inserted for the purpose of nutritional support. Because the patient continued to vomit after feeding via gastrostomy, surgery was planned. Laparotomy revealed that the entry of the PEG tube was at the posterior wall of the stomach. The gastrostomy tube was removed, and the opening was repaired. Then the stomach was repositioned, and Nissen fundoplication and a Stamm gastrostomy at the anterior wall of the stomach were performed. The patient had no further episodes of vomiting after surgery and was discharged following an uneventful recovery period.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.03097.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "322-324",
+    "views": 6656,
+    "downloads": 9450,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "772",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=772",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=772",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=772",
+    "localPdfUrl": "js/data/pdfs/772.pdf",
+    "pdfUrl": "js/data/pdfs/772.pdf"
+  },
+  {
+    "id": 775,
+    "type": "Case Report",
+    "title": "Pediatric Parapharyngeal Castleman",
+    "authors": [
+      {
+        "name": "Fatih Erbey",
+        "affiliation": "Çukurova Üniversitesi Tıp Fakültesi, Çocuk Onkoloji Bilim Dalı, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Bayram",
+        "affiliation": "Çukurova Üniversitesi Tıp Fakültesi, Çocuk Onkoloji Bilim Dalı, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Atila Tanyeli",
+        "affiliation": "Çukurova Üniversitesi Tıp Fakültesi, Çocuk Onkoloji Bilim Dalı, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ülkü Tuncer",
+        "affiliation": "Çukurova Üniversitesi Tıp Fakültesi, KBB Anabilim Dalı, Adana, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Süreyya Soyupak [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Castleman's disease is a rare lymphoproliferative disorder of unknown aetiology. It has two clinical expressions. The localized form, which usually presents as a slow growing mass and the multicentric form, where tumoural involvement is multilocated. Mediastinal involvement is the most common location of presentation. Parapharyngeal involvement is very rare and, to our knowledge, five pediatric parapharyngeal Castleman's disease have been reported. We describe the case of a 14-year-old female child who was diagnosed as having parapharyngeal Castleman's disease.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tCastleman&#39;s disease is a rare lymphoproliferative disorder of unknown aetiology. It has two clinical expressions. The localized form, which usually presents as a slow growing mass and the multicentric form, where tumoural involvement is multilocated. Mediastinal involvement is the most common location of presentation. Parapharyngeal involvement is very rare and, to our knowledge, five pediatric parapharyngeal Castleman&#39;s disease have been reported. We describe the case of a 14-year-old female child who was diagnosed as having parapharyngeal Castleman&#39;s disease.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Castleman's disease is a rare lymphoproliferative disorder of unknown aetiology. It has two clinical expressions. The localized form, which usually presents as a slow growing mass and the multicentric form, where tumoural involvement is multilocated. Mediastinal involvement is the most common location of presentation. Parapharyngeal involvement is very rare and, to our knowledge, five pediatric parapharyngeal Castleman's disease have been reported. We describe the case of a 14-year-old female child who was diagnosed as having parapharyngeal Castleman's disease.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.03070.1",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "325-327",
+    "views": 6135,
+    "downloads": 2370,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "775",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=775",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=775",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=775",
+    "localPdfUrl": "js/data/pdfs/775.pdf",
+    "pdfUrl": "js/data/pdfs/775.pdf"
+  },
+  {
+    "id": 779,
+    "type": "Case Report",
+    "title": "On-Pump Beating Heart Endoventriculoplasty Using Autologous Endocardium for Left Ventricular Aneurysm Repair",
+    "authors": [
+      {
+        "name": "Gürsel Levent Oktar",
+        "affiliation": "Department of Cardiovascular Surgery, Faculty of Medicine, Gazi University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Monica Gianoli",
+        "affiliation": "Department of Cardiothoracic Surgery, Catharina Ziekenhuis, Eindhoven, Netherlands",
+        "orcid": ""
+      },
+      {
+        "name": "Fabiano Porta",
+        "affiliation": "Department of Cardiothoracic Surgery, Thoraxcentrum Twente, Enschede, Netherlands",
+        "orcid": ""
+      },
+      {
+        "name": "Jan Grandjean",
+        "affiliation": "Department of Cardiothoracic Surgery, Thoraxcentrum Twente, Enschede, Netherlands",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract The operative goals of the repair of postinfarction left ventricular aneurysms are to correct the size and geometry of the left ventricle in order to reduce wall tension and paradoxical movement and to improve the systolic function. Endoventriculoplasty has become the gold standard, since the late 1980s when it was described by Jatene and modified by Dor et al. Endoventriculoplasty using autologous endocardium for left ventricular aneurysm was first described by Grandjean et al. We present here a case report of on-pump beating heart endoventriculoplasty using autologous endocardium for postinfarction left ventricular anterior aneurysm. This technique, as a modification of the Dor technique, restores the ventricular geometry without leaving any segment of non-contractile ventricular wall and avoids the usage of prosthetic materials.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tThe operative goals of the repair of postinfarction left ventricular aneurysms are to correct the size and geometry of the left ventricle in order to reduce wall tension and paradoxical movement and to improve the systolic function. Endoventriculoplasty has become the gold standard, since the late 1980s when it was described by Jatene and modified by Dor et al. Endoventriculoplasty using autologous endocardium for left ventricular aneurysm was first described by Grandjean et al. We present here a case report of on-pump beating heart endoventriculoplasty using autologous endocardium for postinfarction left ventricular anterior aneurysm. This technique, as a modification of the Dor technique, restores the ventricular geometry without leaving any segment of non-contractile ventricular wall and avoids the usage of prosthetic materials.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract The operative goals of the repair of postinfarction left ventricular aneurysms are to correct the size and geometry of the left ventricle in order to reduce wall tension and paradoxical movement and to improve the systolic function. Endoventriculoplasty has become the gold standard, since the late 1980s when it was described by Jatene and modified by Dor et al. Endoventriculoplasty using autologous endocardium for left ventricular aneurysm was first described by Grandjean et al. We present here a case report of on-pump beating heart endoventriculoplasty using autologous endocardium for postinfarction left ventricular anterior aneurysm. This technique, as a modification of the Dor technique, restores the ventricular geometry without leaving any segment of non-contractile ventricular wall and avoids the usage of prosthetic materials.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.02795.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "328-330",
+    "views": 6625,
+    "downloads": 2987,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "779",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=779",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=779",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=779",
+    "localPdfUrl": "js/data/pdfs/779.pdf",
+    "pdfUrl": "js/data/pdfs/779.pdf"
+  },
+  {
+    "id": 782,
+    "type": "Case Report",
+    "title": "Congenital Arterial Thrombosis in Newborn: a Case Report",
+    "authors": [
+      {
+        "name": "Özmert M. A. Özdemir",
+        "affiliation": "Pamukkale Üniversitesi Tıp Fakültesi, Çocuk Sağlığı ve Hastalıkları Anabilim Dalı, Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İlknur Kılıç",
+        "affiliation": "Pamukkale Üniversitesi Tıp Fakültesi, Çocuk Sağlığı ve Hastalıkları Anabilim Dalı, Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kazım Küçüktaşçı",
+        "affiliation": "Pamukkale Üniversitesi Tıp Fakültesi, Çocuk Sağlığı ve Hastalıkları Anabilim Dalı, Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Dolunay Gürses",
+        "affiliation": "Pamukkale Üniversitesi Tıp Fakültesi, Çocuk Sağlığı ve Hastalıkları Anabilim Dalı, Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Abdullah Karaca",
+        "affiliation": "Pamukkale Üniversitesi Tıp Fakültesi, Çocuk Sağlığı ve Hastalıkları Anabilim Dalı, Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Oto",
+        "affiliation": "Pamukkale Üniversitesi Tıp Fakültesi, Ortopedi ve Travmatoloji Anabilim Dalı Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gökhan Ozan Çetin",
+        "affiliation": "Pamukkale Üniversitesi Tıp Fakültesi, Tıbbi Biyoloji Anabilim Dalı Denizli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Vildan Caner [[3]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Neonatal thrombosis is a serious event that can cause mortality or severe morbidity. Although catheters are the most common cause of neonatal thrombosis, spontaneous events can also occur. Arterial thrombosis is very rare and accounts for approximately half of all thrombotic events in neonates. Genetic prothrombotic risk factors may affect the occurence of neonatal thrombosis. In this report, a case of left brachial, radial, and ulnar arterial thrombosis associated with methylene-tetrahydrofolate reductase (MTHFR) gene C677T and A1298C polymorphism heterozygosity is presented. Plasma homocysteine level and other prothrombotic components were normal. Standard heparin, aspirin, vitamin B12, B6 and folic acid were initiated for treatment. However, the left arm of the patient was amputated at the shoulder because its capillary stream could not be observed. We suggest that MTHFR gene C677T and A1298C polymorphism heterozygosity might be investigated in neonates with congenital arterial thrombosis in spite of normal serum homocysteine levels.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tNeonatal thrombosis is a serious event that can cause mortality or severe morbidity. Although catheters are the most common cause of neonatal thrombosis, spontaneous events can also occur. Arterial thrombosis is very rare and accounts for approximately half of all thrombotic events in neonates. Genetic prothrombotic risk factors may affect the occurence of neonatal thrombosis. In this report, a case of left brachial, radial, and ulnar arterial thrombosis associated with methylene-tetrahydrofolate reductase (MTHFR) gene C677T and A1298C polymorphism heterozygosity is presented. Plasma homocysteine level and other prothrombotic components were normal. Standard heparin, aspirin, vitamin B12, B6 and folic acid were initiated for treatment. However, the left arm of the patient was amputated at the shoulder because its capillary stream could not be observed. We suggest that MTHFR gene C677T and A1298C polymorphism heterozygosity might be investigated in neonates with congenital arterial thrombosis in spite of normal serum homocysteine levels.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Neonatal thrombosis is a serious event that can cause mortality or severe morbidity. Although catheters are the most common cause of neonatal thrombosis, spontaneous events can also occur. Arterial thrombosis is very rare and accounts for approximately half of all thrombotic events in neonates. Genetic prothrombotic risk factors may affect the occurence of neonatal thrombosis. In this report, a case of left brachial, radial, and ulnar arterial thrombosis associated with methylene-tetrahydrofolate reductase (MTHFR) gene C677T and A1298C polymorphism heterozygosity is presented. Plasma homocysteine level and other prothrombotic components were normal. Standard heparin, aspirin, vitamin B12, B6 and folic acid were initiated for treatment. However, the left arm of the patient was amputated at the shoulder because its capillary stream could not be observed. We suggest that MTHFR gene C677T and A1298C polymorphism heterozygosity might be investigated in neonates with congenital arterial thrombosis in spite of normal serum homocysteine levels.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.03229.2",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "331-334",
+    "views": 6823,
+    "downloads": 3391,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "782",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=782",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=782",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=782",
+    "localPdfUrl": "js/data/pdfs/782.pdf",
+    "pdfUrl": "js/data/pdfs/782.pdf"
+  },
+  {
+    "id": 786,
+    "type": "Case Report",
+    "title": "A Rare Cause of Acute Abdomen: Perforation of Duodenal Diverticulum Containing Ectopic Pancreatic Tissue",
+    "authors": [
+      {
+        "name": "Yavuz Özdemir",
+        "affiliation": "Gülhane Askeri Tıp Akademisi Haydarpaşa Eğitim Hastanesi, Genel Cerrahi Bölümü, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Güleç",
+        "affiliation": "Department of General Surgery, Gülhane Military Medical Academy, Haydarpaşa Training Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali İlker Filiz",
+        "affiliation": "Department of General Surgery, Gülhane Military Medical Academy, Haydarpaşa Training Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İlker Sücüllü [[3]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Perforation is a rare but serious complication of a duodenal diverticulum and often presents itself with nonspecific symptoms and signs. Ectopic pancreatic tissue within a duodenal diverticulum is another rare situation. In this article, we report a case of an 87 year-old woman who presented with spontaneous perforation of the duodenal diverticulum. Operative resection and simple closure of the duodenum was performed. Ectopic pancreatic tissue was observed within the diverticulum at histological evaluation.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tPerforation is a rare but serious complication of a duodenal diverticulum and often presents itself with nonspecific symptoms and signs. Ectopic pancreatic tissue within a duodenal diverticulum is another rare situation. In this article, we report a case of an 87 year-old woman who presented with spontaneous perforation of the duodenal diverticulum. Operative resection and simple closure of the duodenum was performed. Ectopic pancreatic tissue was observed within the diverticulum at histological evaluation.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Perforation is a rare but serious complication of a duodenal diverticulum and often presents itself with nonspecific symptoms and signs. Ectopic pancreatic tissue within a duodenal diverticulum is another rare situation. In this article, we report a case of an 87 year-old woman who presented with spontaneous perforation of the duodenal diverticulum. Operative resection and simple closure of the duodenum was performed. Ectopic pancreatic tissue was observed within the diverticulum at histological evaluation.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.03234.5",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "335-337",
+    "views": 6106,
+    "downloads": 3099,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "786",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=786",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=786",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=786",
+    "localPdfUrl": "js/data/pdfs/786.pdf",
+    "pdfUrl": "js/data/pdfs/786.pdf"
+  },
+  {
+    "id": 789,
+    "type": "Case Report",
+    "title": "Anesthetic Management of a Pediatric Patient with Arginase Deficiency",
+    "authors": [
+      {
+        "name": "Abdulkadir Atım",
+        "affiliation": "Department of Anesthesiology and Reanimation, Gülhane Military Medical Academy, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hüseyin Oğuz Yılmaz",
+        "affiliation": "Department of Anesthesiology and Reanimation, Gülhane Military Medical Academy, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Emin Orhan",
+        "affiliation": "Department of Anesthesiology and Reanimation, Gülhane Military Medical Academy, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuncer Çaycı",
+        "affiliation": "Department of Biochemistry, Gülhane Military Medical Academy, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Arginase deficiency is an autosomal recessive disorder of the urea cycle in which a defect in conversion of arginine to urea and ornithine leads to hyperammonemia. Patients with urea cycle disorders may show increased protein catabolism due to inadequate intake of energy, protein and essential amino acids; infections, fever and surgery. A 12-year-old girl with arginase deficiency, ASA II who weighed 40 kg was scheduled for bilateral adductor, quadriceps and gastrocnemius tenotomies. She had mental retardation, spasticity and flexion posture of thelower limbs. Metabolic homeostasis was restored with appropriate diet. Successful anesthetic management allowed the patient to be discharged 48 hours after surgery. Increased levels of arginine and ammonia during or after surgery may lead to serious complications such as hypotension, cerebral edema, convulsions, hypothermia and spasticity. Thus special attention must be given to metabolic homeostasis and nutrition of the patients with arginase deficiency in the perioperative period. Primary goals should be to minimize stress levels by effective anxiolysis, provide an adequate amount of protein-free energy with proper fluid management and to obtain an effective preemptive and postoperative analgesia. In addition to a high level of knowledge, successful anesthesia requires professional communication among nursing staff, dietitians, pediatric metabolism specialist, surgeon and anesthesiologist.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h3>\r\n\tAbstract</h3>\r\n<p>\r\n\tArginase deficiency is an autosomal recessive disorder of the urea cycle in which a defect in conversion of arginine to urea and ornithine leads to hyperammonemia. Patients with urea cycle disorders may show increased protein catabolism due to inadequate intake of energy, protein and essential amino acids; infections, fever and surgery. A 12-year-old girl with arginase deficiency, ASA II who weighed 40 kg was scheduled for bilateral adductor, quadriceps and gastrocnemius tenotomies. She had mental retardation, spasticity and flexion posture of thelower limbs. Metabolic homeostasis was restored with appropriate diet. Successful anesthetic management allowed the patient to be discharged 48 hours after surgery. Increased levels of arginine and ammonia during or after surgery may lead to serious complications such as hypotension, cerebral edema, convulsions, hypothermia and spasticity. Thus special attention must be given to metabolic homeostasis and nutrition of the patients with arginase deficiency in the perioperative period. Primary goals should be to minimize stress levels by effective anxiolysis, provide an adequate amount of protein-free energy with proper fluid management and to obtain an effective preemptive and postoperative analgesia. In addition to a high level of knowledge, successful anesthesia requires professional communication among nursing staff, dietitians, pediatric metabolism specialist, surgeon and anesthesiologist.</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Arginase deficiency is an autosomal recessive disorder of the urea cycle in which a defect in conversion of arginine to urea and ornithine leads to hyperammonemia. Patients with urea cycle disorders may show increased protein catabolism due to inadequate intake of energy, protein and essential amino acids; infections, fever and surgery. A 12-year-old girl with arginase deficiency, ASA II who weighed 40 kg was scheduled for bilateral adductor, quadriceps and gastrocnemius tenotomies. She had mental retardation, spasticity and flexion posture of thelower limbs. Metabolic homeostasis was restored with appropriate diet. Successful anesthetic management allowed the patient to be discharged 48 hours after surgery. Increased levels of arginine and ammonia during or after surgery may lead to serious complications such as hypotension, cerebral edema, convulsions, hypothermia and spasticity. Thus special attention must be given to metabolic homeostasis and nutrition of the patients with arginase deficiency in the perioperative period. Primary goals should be to minimize stress levels by effective anxiolysis, provide an adequate amount of protein-free energy with proper fluid management and to obtain an effective preemptive and postoperative analgesia. In addition to a high level of knowledge, successful anesthesia requires professional communication among nursing staff, dietitians, pediatric metabolism specialist, surgeon and anesthesiologist.",
+    "keywords": [],
+    "doi": "10.5174/tutfd.2009.03067.4",
+    "received": "",
+    "accepted": "",
+    "published": "2011-01-01",
+    "volume": 28,
+    "issue": "3",
+    "pages": "338-340",
+    "views": 6404,
+    "downloads": 2161,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1158",
+    "sourceArticleId": "789",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=789",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=789",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=789",
+    "localPdfUrl": "js/data/pdfs/789.pdf",
+    "pdfUrl": "js/data/pdfs/789.pdf"
+  }
+]

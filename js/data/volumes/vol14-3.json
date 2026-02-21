@@ -1,0 +1,614 @@
+[
+  {
+    "id": 1877,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "3",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1117",
+    "sourceArticleId": "1877",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1877",
+    "localPdfUrl": "js/data/pdfs/1877.pdf",
+    "pdfUrl": "js/data/pdfs/1877.pdf"
+  },
+  {
+    "id": 1355,
+    "type": "Original Article",
+    "title": "Üst Ekstremite Eklemlerinde Bilinçli Derin Duyunun İnklinometrik Yöntemle Araştırılması",
+    "authors": [
+      {
+        "name": "Mevlüt Yaprak",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Fizyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Sabri Cigalı",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Anatomi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Hakan Akdere",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Anatomi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Yahya Yıldız",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Fizyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Oğuz Taşkınalp",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Anatomi Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "3",
+    "pages": "153-156",
+    "views": 5349,
+    "downloads": 1537,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1117",
+    "sourceArticleId": "1355",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1355",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1355",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1355",
+    "localPdfUrl": "js/data/pdfs/1355.pdf",
+    "pdfUrl": "js/data/pdfs/1355.pdf"
+  },
+  {
+    "id": 1421,
+    "type": "Original Article",
+    "title": "Down Sendromlu Çocuklar İle Sağlıklı Kontrollerde Diş Sağlığı, Çürük Sıklığı ve Periodontal Durum",
+    "authors": [
+      {
+        "name": "Serap Akyüz",
+        "affiliation": "Marmara Üniversitesi Diş Hekimliği Fakültesi Pedodonti ABD. İSTANBUL",
+        "orcid": ""
+      },
+      {
+        "name": "Hülya Asan (Erdem)",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Mediko Sosyal Sağlık Merkezi, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Metin Atasu",
+        "affiliation": "Marmara Üniversitesi Diş Hekimliği Fakültesi Tıbbi Biyoloji ve Genetik Bilim Dalı İSTANBUL",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "3",
+    "pages": "157-160",
+    "views": 5639,
+    "downloads": 1523,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1117",
+    "sourceArticleId": "1421",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1421",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1421",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1421",
+    "localPdfUrl": "js/data/pdfs/1421.pdf",
+    "pdfUrl": "js/data/pdfs/1421.pdf"
+  },
+  {
+    "id": 1423,
+    "type": "Original Article",
+    "title": "Down Sendromlu 77 Çocuğun Dental Deneyimleri, Beslenmeleri ve Koruyucu Ağız - Diş Sağlığı Hizmetlerinden Yararlanmaları",
+    "authors": [
+      {
+        "name": "Serap Akyüz",
+        "affiliation": "Marmara Üniversitesi Diş Hekimliği Fakültesi Pedodonti ABD. İSTANBUL",
+        "orcid": ""
+      },
+      {
+        "name": "Hülya Asan (Erdem)",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Mediko Sosyal Sağlık Merkezi, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Metin Atasu",
+        "affiliation": "Marmara Üniversitesi Diş Hekimliği Fakültesi Tıbbi Biyoloji ve Genetik Bilim Dalı İSTANBUL",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "3",
+    "pages": "161-165",
+    "views": 6217,
+    "downloads": 1501,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1117",
+    "sourceArticleId": "1423",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1423",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1423",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1423",
+    "localPdfUrl": "js/data/pdfs/1423.pdf",
+    "pdfUrl": "js/data/pdfs/1423.pdf"
+  },
+  {
+    "id": 1424,
+    "type": "Original Article",
+    "title": "Akciğer Kanserli ve Habis Cilt Tümörlü Hastalarda Serum Vitamin A ve C Düzeyleri",
+    "authors": [
+      {
+        "name": "Şentürk Çiftçi",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Biyokimya Anabilim Dalı EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Erol Çakır",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Biyokimya Anabilim Dalı EDİRNE",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "3",
+    "pages": "167-170",
+    "views": 5386,
+    "downloads": 1643,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1117",
+    "sourceArticleId": "1424",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1424",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1424",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1424",
+    "localPdfUrl": "js/data/pdfs/1424.pdf",
+    "pdfUrl": "js/data/pdfs/1424.pdf"
+  },
+  {
+    "id": 1425,
+    "type": "Original Article",
+    "title": "Akciğer Kanserli ve Cilt Kanserli Hastalarda Serum Vitamin E Düzeyleri",
+    "authors": [
+      {
+        "name": "Erol Çakır",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Biyokimya Anabilim Dalı EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Şentürk Çiftçi",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Biyokimya Anabilim Dalı EDİRNE",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "3",
+    "pages": "171-175",
+    "views": 5535,
+    "downloads": 1531,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1117",
+    "sourceArticleId": "1425",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1425",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1425",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1425",
+    "localPdfUrl": "js/data/pdfs/1425.pdf",
+    "pdfUrl": "js/data/pdfs/1425.pdf"
+  },
+  {
+    "id": 1426,
+    "type": "Original Article",
+    "title": "Kronik Stabil Angina Pektorisli Hastalarda Nisoldipin ve İsosorbid 5 Nitratın Anti - Anginal ve Anti - İstemik Etkisinin Karşılaştırılması",
+    "authors": [
+      {
+        "name": "Fatih Özçelik",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi İç Hastalıkları Anabilim Dalı.",
+        "orcid": ""
+      },
+      {
+        "name": "Armağan Tuğrul",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kardiyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Birol Özkan",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kardiyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Turhan Kürüm",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Kardiyoloji Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Gültaç Özbay",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi, Kardiyoloji A.B.D. Prof. Dr. EDİRNE",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "3",
+    "pages": "177-181",
+    "views": 5369,
+    "downloads": 1556,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1117",
+    "sourceArticleId": "1426",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1426",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1426",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1426",
+    "localPdfUrl": "js/data/pdfs/1426.pdf",
+    "pdfUrl": "js/data/pdfs/1426.pdf"
+  },
+  {
+    "id": 1428,
+    "type": "Original Article",
+    "title": "İlkokul Öğretmenlerinde Yapılan Bir Tarama İle Ses Kullanım Bozukluğunun Araştırılması",
+    "authors": [
+      {
+        "name": "Mustafa Kemal Adalı",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi KBB Anabilim Dalı EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "İnci Adalı",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi KBB Anabilim Dalı EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Muhsin Koten",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi KBB Anabilim Dalı EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Cem Uzun",
+        "affiliation": "Department of Otolaryngology, Trakya University Faculty of Medicine, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nezih Kürkçü",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi KBB Anabilim Dalı EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Oğuz B. Şahin",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi KBB Anabilim Dalı EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Küçükuğurluoğlu [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "3",
+    "pages": "183-187",
+    "views": 5401,
+    "downloads": 1511,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1117",
+    "sourceArticleId": "1428",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1428",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1428",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1428",
+    "localPdfUrl": "js/data/pdfs/1428.pdf",
+    "pdfUrl": "js/data/pdfs/1428.pdf"
+  },
+  {
+    "id": 1430,
+    "type": "Original Article",
+    "title": "Stress Kırıklıklarında Sintigrafinin Rölü",
+    "authors": [
+      {
+        "name": "Hakan Gürbüz",
+        "affiliation": "Bezm-i Alem Valide Sultan Vakıf Gureba Eğitim ve Araştırma Hastanesi Ortopedi ve Travmatoloji Kliniği, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Halim Demiral",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Ortopedi ve Travmatoloji Anabilim Dalı Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Mahmut Yüksel",
+        "affiliation": "Department of Nuclear Medicine, Medicine Faculty of Trakya University, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "T. Fikret Çermik",
+        "affiliation": "Trakya Üniversitesi, Tıp Fakültesi, Nükleer Tıp Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "3",
+    "pages": "189-191",
+    "views": 5541,
+    "downloads": 1493,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1117",
+    "sourceArticleId": "1430",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1430",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1430",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1430",
+    "localPdfUrl": "js/data/pdfs/1430.pdf",
+    "pdfUrl": "js/data/pdfs/1430.pdf"
+  },
+  {
+    "id": 1431,
+    "type": "Original Article",
+    "title": "Uzun Kemik Kırıklıklarında İlizarov Halkasal Eksternal Fiksatörüyle Tedavi Sonuçlarımız",
+    "authors": [
+      {
+        "name": "Hakan Gürbüz",
+        "affiliation": "Bezm-i Alem Valide Sultan Vakıf Gureba Eğitim ve Araştırma Hastanesi Ortopedi ve Travmatoloji Kliniği, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Halim Demiral",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Ortopedi ve Travmatoloji Anabilim Dalı Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Ahmet Sekitmez",
+        "affiliation": "Trakya Üniv. Tıp Fak. Ortopedi ve Travmatoloji Anabilim Dalı EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Osman U. Çalpur",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Ortopedi ve Travmatoloji Anabilim Dalı, EDİRNE",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "3",
+    "pages": "193-197",
+    "views": 5306,
+    "downloads": 1450,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1117",
+    "sourceArticleId": "1431",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1431",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1431",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1431",
+    "localPdfUrl": "js/data/pdfs/1431.pdf",
+    "pdfUrl": "js/data/pdfs/1431.pdf"
+  },
+  {
+    "id": 1432,
+    "type": "Original Article",
+    "title": "Dev Akciğer Hidatik Kistleri",
+    "authors": [
+      {
+        "name": "Yener Yörük",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göğüs Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Selçuk Köse",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göğüs Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      },
+      {
+        "name": "Rüstem Mamedov",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Göğüs Cerrahisi Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "3",
+    "pages": "199-202",
+    "views": 5343,
+    "downloads": 1522,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1117",
+    "sourceArticleId": "1432",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1432",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1432",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1432",
+    "localPdfUrl": "js/data/pdfs/1432.pdf",
+    "pdfUrl": "js/data/pdfs/1432.pdf"
+  },
+  {
+    "id": 1433,
+    "type": "Case Report",
+    "title": "Aarskog Sendromu",
+    "authors": [
+      {
+        "name": "Hakan Gürbüz",
+        "affiliation": "Bezm-i Alem Valide Sultan Vakıf Gureba Eğitim ve Araştırma Hastanesi Ortopedi ve Travmatoloji Kliniği, İstanbul",
+        "orcid": ""
+      },
+      {
+        "name": "Aziz Kurtuluş",
+        "affiliation": "Araş. Görv. Trakya Üni. Tıp Fak. Ort. ve Trav. Anabilmi Dalı, EDİRNE",
+        "orcid": ""
+      },
+      {
+        "name": "Erol Yalnız",
+        "affiliation": "Yard. Doç. Dr. Trakya Üni. Tıp Fak. Ort. ve Trav. Anabilim Dalı - EDİRNE",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "3",
+    "pages": "203-205",
+    "views": 5556,
+    "downloads": 1510,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1117",
+    "sourceArticleId": "1433",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1433",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1433",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1433",
+    "localPdfUrl": "js/data/pdfs/1433.pdf",
+    "pdfUrl": "js/data/pdfs/1433.pdf"
+  },
+  {
+    "id": 1434,
+    "type": "Case Report",
+    "title": "Akupunktur ve Anestezi",
+    "authors": [
+      {
+        "name": "Işıl Günday",
+        "affiliation": "Trakya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı, Edirne",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "1997-01-01",
+    "volume": 14,
+    "issue": "3",
+    "pages": "207-209",
+    "views": 4959,
+    "downloads": 1561,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1117",
+    "sourceArticleId": "1434",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1434",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1434",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1434",
+    "localPdfUrl": "js/data/pdfs/1434.pdf",
+    "pdfUrl": "js/data/pdfs/1434.pdf"
+  }
+]

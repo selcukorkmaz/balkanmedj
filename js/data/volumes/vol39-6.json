@@ -1,0 +1,754 @@
+[
+  {
+    "id": 2450,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "6",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1281",
+    "sourceArticleId": "2450",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2450",
+    "localPdfUrl": "js/data/pdfs/2450.pdf",
+    "pdfUrl": "js/data/pdfs/2450.pdf"
+  },
+  {
+    "id": 2448,
+    "type": "Editorial",
+    "title": "Importance of Sample Size Calculation and Power Analysis in Scientific Studies: An Example from the Balkan Medical Journal",
+    "authors": [
+      {
+        "name": "Necdet Süt",
+        "affiliation": "Department of Biostatistics and Medical Informatics, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mirac Ajredini",
+        "affiliation": "Trakya University Medical Faculty Student, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zafer Koçak",
+        "affiliation": "Department of Radiation Oncology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "The main aim of all observational or experimental scientific studies is to reveal scientific reality. Samples have a direct effect on the results of scientific studies. All of the guidelines in the EQUATOR network developed for observational and experimental studies include items that state how the sample size of studies was calculated and selected.1 Since t",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.31102022",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "6",
+    "pages": "384-385",
+    "views": 8174,
+    "downloads": 5206,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1281",
+    "sourceArticleId": "2448",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2448",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2448",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2448",
+    "localPdfUrl": "js/data/pdfs/2448.pdf",
+    "pdfUrl": "js/data/pdfs/2448.pdf"
+  },
+  {
+    "id": 2442,
+    "type": "Original Article",
+    "title": "Factors Affecting the Population of Mesenchymal Stem Cells in Adipose-Derived Stromal Vascular Fraction",
+    "authors": [
+      {
+        "name": "E. Çiğdem Karadağ Sarı",
+        "affiliation": "Department of Plastic, Reconstructive and Aesthetic Surgery, Acıbadem University Faculty of Medicine, Acıbadem Altunizade Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ercüment Ovalı",
+        "affiliation": "Department of Hematology, Acıbadem University Faculty of Medicine, Acıbadem Labcell Cellular Therapy Facility, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Recently, the adipose tissue-derived stromal vascular fraction has become the most popular source for obtaining mesenchymal stem cells because it is less expensive and is easier to perform than bone marrow concentrate harvesting. However, no study has investigated the factors affecting the mesenchymal stem cell population in adipose tissue derived stromal vascular fraction. Understanding the interaction of patient factors with the mesenchymal stem cell count and cell viability in adipose tissue-derived stromal vascular fraction could provide crucial information for surgeons to improve patient selection and outcomes.Aims: To evaluate the factors affecting the mesenchymal stem cell count, total cell count, and cell viability in adipose tissue-derived stromal vascular fraction.Study Design: Retrospective cross-sectional study.Methods: This study retrospectively reviewed the medical records of 30 patients who underwent liposuction to harvest adipose tissue-derived stromal vascular fraction at our stem cell center. Operative variables, such as lipoaspirate amount and donor areas from the stromal vascular fraction harvesting site, included the entire abdomen and lower abdomen. We recorded the mesenchymal stem cell population, cell viability, and cell count of stromal vascular fraction, and we analyzed the results to determine statistical significance.Results: The factors that were found to be significantly related are as follows; between cell number and age (p=0.001) and amount of lipoaspirate (p<0.001); between cell viability and body mass index (p=0.005) and hypertension (p=0.047); and between coronary artery disease and mesenchymal stem cell counts (p = 0.028).Conclusion: The relationship of patient factors (age, body mass index, hypertension, and coronary artery disease) with cell viability and mesenchymal stem cell counts may be important for clinical applications. However, the effect of medications on these relationships should be investigated in larger studies.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background: </strong>Recently, the adipose tissue-derived stromal vascular fraction has become the most popular source for obtaining mesenchymal stem cells because it is less expensive and is easier to perform than bone marrow concentrate harvesting. However, no study has investigated the factors affecting the mesenchymal stem cell population in adipose tissue derived stromal vascular fraction. Understanding the interaction of patient factors with the mesenchymal stem cell count and cell viability in adipose tissue-derived stromal vascular fraction could provide crucial information for surgeons to improve patient selection and outcomes.<br /><strong>Aims: </strong>To evaluate the factors affecting the mesenchymal stem cell count, total cell count, and cell viability in adipose tissue-derived stromal vascular fraction.<br /><strong>Study Design: </strong>Retrospective cross-sectional study.<br /><strong>Methods: </strong>This study retrospectively reviewed the medical records of 30 patients who underwent liposuction to harvest adipose tissue-derived stromal vascular fraction at our stem cell center. Operative variables, such as lipoaspirate amount and donor areas from the stromal vascular fraction harvesting site, included the entire abdomen and lower abdomen. We recorded the mesenchymal stem cell population, cell viability, and cell count of stromal vascular fraction, and we analyzed the results to determine statistical significance.<br /><strong>Results: </strong>The factors that were found to be significantly related are as follows; between cell number and age (p=0.001) and amount of lipoaspirate (<em>p</em>&lt;0.001); between cell viability and body mass index (<em>p</em>=0.005) and hypertension (<em>p</em>=0.047); and between coronary artery disease and mesenchymal stem cell counts (<em>p </em>= 0.028).<br /><strong>Conclusion: </strong>The relationship of patient factors (age, body mass index, hypertension, and coronary artery disease) with cell viability and mesenchymal stem cell counts may be important for clinical applications. However, the effect of medications on these relationships should be investigated in larger studies.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Recently, the adipose tissue-derived stromal vascular fraction has become the most popular source for obtaining mesenchymal stem cells because it is less expensive and is easier to perform than bone marrow concentrate harvesting. However, no study has investigated the factors affecting the mesenchymal stem cell population in adipose tissue derived stromal vascular fraction. Understanding the interaction of patient factors with the mesenchymal stem cell count and cell viability in adipose tissue-derived stromal vascular fraction could provide crucial information for surgeons to improve patient selection and outcomes.Aims: To evaluate the factors affecting the mesenchymal stem cell count, total cell count, and cell viability in adipose tissue-derived stromal vascular fraction.Study Design: Retrospective cross-sectional study.Methods: This study retrospectively reviewed the medical records of 30 patients who underwent liposuction to harvest adipose tissue-derived stromal vascular fraction at our stem cell center. Operative variables, such as lipoaspirate amount and donor areas from the stromal vascular fraction harvesting site, included the entire abdomen and lower abdomen. We recorded the mesenchymal stem cell population, cell viability, and cell count of stromal vascular fraction, and we analyzed the results to determine statistical significance.Results: The factors that were found to be significantly related are as follows; between cell number and age (p=0.001) and amount of lipoaspirate (p<0.001); between cell viability and body mass index (p=0.005) and hypertension (p=0.047); and between coronary artery disease and mesenchymal stem cell counts (p = 0.028).Conclusion: The relationship of patient factors (age, body mass index, hypertension, and coronary artery disease) with cell viability and mesenchymal stem cell counts may be important for clinical applications. However, the effect of medications on these relationships should be investigated in larger studies.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-5-50",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "6",
+    "pages": "386-392",
+    "views": 7586,
+    "downloads": 5219,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1281",
+    "sourceArticleId": "2442",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2442",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2442",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2442",
+    "localPdfUrl": "js/data/pdfs/2442.pdf",
+    "pdfUrl": "js/data/pdfs/2442.pdf"
+  },
+  {
+    "id": 2436,
+    "type": "Original Article",
+    "title": "COL3A1 Overexpression Associates with Poor Prognosis and Cisplatin Resistance in Lung Cancer",
+    "authors": [
+      {
+        "name": "Lihuai Wang",
+        "affiliation": "Department of Oncology The First Affiliated Hospital of Hunan University of Traditional Chinese Medicine, Hunan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Yinhui Sun",
+        "affiliation": "Department of Pathophysiology Hunan University of Traditional Chinese Medicine, Hunan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Zhongcong Guo",
+        "affiliation": "Department of Oncology The First Affiliated Hospital of Hunan University of Traditional Chinese Medicine, Hunan, China",
+        "orcid": ""
+      },
+      {
+        "name": "Hua Liu",
+        "affiliation": "Department of Oncology The First Affiliated Hospital of Hunan University of Traditional Chinese Medicine, Hunan, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Collagen type III alpha 1 chain (COL3A1) is reported to mediate drug resistance in various cancers, and public database analysis indicated its overexpression in lung cancer.Aims: To investigate the effects of COL3A1 on modulating cisplatin (DDP) resistance in lung carcinoma.Study Design: A cell study.Methods: Gene Expression Omnibus datasets were used to determine the differentially expressed genes between H460 and H460/DDP cell lines using bioinformatics analysis. COL3A1 expression and its clinical value in lung cancer prognosis were analyzed using GEPIA and UALCAN databases. Its roles in modulating the growth, viability, apoptosis, and drug resistance were also assessed in vitro.Results: In H460/DDP cells, the CLO3A1 was among the up-regulated genes compared to H460 cells.COL3A1 overexpression and its association with poor survival in patients with adenocarcinoma were detected by public database analysis. In A549 and H1299 cells, COL3A1 overexpression was associated with increased cell growth and clone formation but decreased cell apoptosis, whereas its reduced expression led to decreased cell growth and clone formation and increased cell apoptosis.Conclusion: COL3A1 is upregulated in lung cancer cells with DDP resistance, and its downregulation sensitizes the cells to DDP.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Collagen type III alpha 1 chain (COL3A1) is reported to mediate drug resistance in various cancers, and public database analysis indicated its overexpression in lung cancer.<br /><strong>Aims: </strong>To investigate the effects of COL3A1 on modulating cisplatin (DDP) resistance in lung carcinoma.<br /><strong>Study Design: </strong>A cell study.<br /><strong>Methods: </strong>Gene Expression Omnibus datasets were used to determine the differentially expressed genes between H460 and H460/DDP cell lines using bioinformatics analysis. COL3A1 expression and its clinical value in lung cancer prognosis were analyzed using GEPIA and UALCAN databases. Its roles in modulating the growth, viability, apoptosis, and drug resistance were also assessed in vitro.<br /><strong>Results: </strong>In H460/DDP cells, the CLO3A1 was among the up-regulated genes compared to H460 cells.COL3A1 overexpression and its association with poor survival in patients with adenocarcinoma were detected by public database analysis. In A549 and H1299 cells, COL3A1 overexpression was associated with increased cell growth and clone formation but decreased cell apoptosis, whereas its reduced expression led to decreased cell growth and clone formation and increased cell apoptosis.<br /><strong>Conclusion: </strong>COL3A1 is upregulated in lung cancer cells with DDP resistance, and its downregulation sensitizes the cells to DDP.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Collagen type III alpha 1 chain (COL3A1) is reported to mediate drug resistance in various cancers, and public database analysis indicated its overexpression in lung cancer.Aims: To investigate the effects of COL3A1 on modulating cisplatin (DDP) resistance in lung carcinoma.Study Design: A cell study.Methods: Gene Expression Omnibus datasets were used to determine the differentially expressed genes between H460 and H460/DDP cell lines using bioinformatics analysis. COL3A1 expression and its clinical value in lung cancer prognosis were analyzed using GEPIA and UALCAN databases. Its roles in modulating the growth, viability, apoptosis, and drug resistance were also assessed in vitro.Results: In H460/DDP cells, the CLO3A1 was among the up-regulated genes compared to H460 cells.COL3A1 overexpression and its association with poor survival in patients with adenocarcinoma were detected by public database analysis. In A549 and H1299 cells, COL3A1 overexpression was associated with increased cell growth and clone formation but decreased cell apoptosis, whereas its reduced expression led to decreased cell growth and clone formation and increased cell apoptosis.Conclusion: COL3A1 is upregulated in lung cancer cells with DDP resistance, and its downregulation sensitizes the cells to DDP.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-6-16",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "6",
+    "pages": "393-400",
+    "views": 9683,
+    "downloads": 7431,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1281",
+    "sourceArticleId": "2436",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2436",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2436",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2436",
+    "localPdfUrl": "js/data/pdfs/2436.pdf",
+    "pdfUrl": "js/data/pdfs/2436.pdf"
+  },
+  {
+    "id": 2438,
+    "type": "Original Article",
+    "title": "Genotyping and Identification of Antigen B Gene Polymorphism of Echinococcus granulosus in Edirne, Thrace, and the First Report of Genotype G2 (Tasmanian Sheep Strain) in Turkey",
+    "authors": [
+      {
+        "name": "Taner Tarladaçalışır",
+        "affiliation": "Department of Medical Microbiology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Canan Eryıldız",
+        "affiliation": "Department of Medical Microbiology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Kıymet Tabakçıoğlu",
+        "affiliation": "Department of Medical Biology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nermin Şakru",
+        "affiliation": "Department of Medical Microbiology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Echinococcus granulosus is the causative agent of cystic echinococcosis in humans and livestock. It is common worldwide. Cystic echinococcosis is still an important public health problem in Turkey, which is an endemic region.Aims: To genotype Echinococcus granulosus isolates and investigate antigen B gene polymorphism in Thrace, Turkey.Study Design: A cross-sectional study.Methods: Seventy-five hydatid cyst materials obtained between June 2020 and May 2021 were included in the study. Hydatid cyst materials were collected from 12 humans from various hospitals in Edirne and 63 from slaughterhouse animals during the same period. Cyst materials were localized in 8 livers and 4 lungs in humans, 23 livers and 17 lungs in cattle, and 13 livers and 10 lungs in sheep. In the first step, the 12S ribosomal RNA gene was amplified by polymerase chain reaction for all samples and run on an agarose gel. Band patterns were used for strain typing. Then, the selected samples that represented each of the band patterns obtained by single-strand conformation polymorphism analysis were sequenced for AgB1, AgB2, mt-CO1, and mt-ND1 genes.Results: Three different genotypes in Edirne, Thrace, Turkey, were observed for Echinococcus granulosus: G1 (domestic sheep strain), G2 (Tasmanian sheep strain), and G3 (buffalo strain). G1 was the dominant genotype in Edirne, and G3 was the second most common. Additionally, polymorphism in AgB1 and AgB2 gene regions was found.Conclusion: This study is the first to report on Echinococcus granulosus G2 (Tasmania sheep strain) in Turkey and G3 (buffalo strain) and antigen B polymorphism in Thrace. The study results will contribute to the prevention and control programs for cystic echinococcosis in Turkey and worldwide.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background: </strong><em>Echinococcus granulosus </em>is the causative agent of cystic echinococcosis in humans and livestock. It is common worldwide. Cystic echinococcosis is still an important public health problem in Turkey, which is an endemic region.<br /><strong>Aims: </strong>To genotype <em>Echinococcus granulosus </em>isolates and investigate antigen B gene polymorphism in Thrace, Turkey.<br /><strong>Study Design: </strong>A cross-sectional study.<br /><strong>Methods: </strong>Seventy-five hydatid cyst materials obtained between June 2020 and May 2021 were included in the study. Hydatid cyst materials were collected from 12 humans from various hospitals in Edirne and 63 from slaughterhouse animals during the same period. Cyst materials were localized in 8 livers and 4 lungs in humans, 23 livers and 17 lungs in cattle, and 13 livers and 10 lungs in sheep. In the first step, the 12S ribosomal RNA gene was amplified by polymerase chain reaction for all samples and run on an agarose gel. Band patterns were used for strain typing. Then, the selected samples that represented each of the band patterns obtained by single-strand conformation polymorphism analysis were sequenced for AgB1, AgB2, mt-CO1, and mt-ND1 genes.<br /><strong>Results: </strong>Three different genotypes in Edirne, Thrace, Turkey, were observed for <em>Echinococcus granulosus</em>: G1 (domestic sheep strain), G2 (Tasmanian sheep strain), and G3 (buffalo strain). G1 was the dominant genotype in Edirne, and G3 was the second most common. Additionally, polymorphism in AgB1 and AgB2 gene regions was found.<br /><strong>Conclusion: </strong>This study is the first to report on <em>Echinococcus granulosus </em>G2 (Tasmania sheep strain) in Turkey and G3 (buffalo strain) and antigen B polymorphism in Thrace. The study results will contribute to the prevention and control programs for cystic echinococcosis in Turkey and worldwide.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Echinococcus granulosus is the causative agent of cystic echinococcosis in humans and livestock. It is common worldwide. Cystic echinococcosis is still an important public health problem in Turkey, which is an endemic region.Aims: To genotype Echinococcus granulosus isolates and investigate antigen B gene polymorphism in Thrace, Turkey.Study Design: A cross-sectional study.Methods: Seventy-five hydatid cyst materials obtained between June 2020 and May 2021 were included in the study. Hydatid cyst materials were collected from 12 humans from various hospitals in Edirne and 63 from slaughterhouse animals during the same period. Cyst materials were localized in 8 livers and 4 lungs in humans, 23 livers and 17 lungs in cattle, and 13 livers and 10 lungs in sheep. In the first step, the 12S ribosomal RNA gene was amplified by polymerase chain reaction for all samples and run on an agarose gel. Band patterns were used for strain typing. Then, the selected samples that represented each of the band patterns obtained by single-strand conformation polymorphism analysis were sequenced for AgB1, AgB2, mt-CO1, and mt-ND1 genes.Results: Three different genotypes in Edirne, Thrace, Turkey, were observed for Echinococcus granulosus: G1 (domestic sheep strain), G2 (Tasmanian sheep strain), and G3 (buffalo strain). G1 was the dominant genotype in Edirne, and G3 was the second most common. Additionally, polymorphism in AgB1 and AgB2 gene regions was found.Conclusion: This study is the first to report on Echinococcus granulosus G2 (Tasmania sheep strain) in Turkey and G3 (buffalo strain) and antigen B polymorphism in Thrace. The study results will contribute to the prevention and control programs for cystic echinococcosis in Turkey and worldwide.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-5-68",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "6",
+    "pages": "401-410",
+    "views": 7578,
+    "downloads": 4562,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1281",
+    "sourceArticleId": "2438",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2438",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2438",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2438",
+    "localPdfUrl": "js/data/pdfs/2438.pdf",
+    "pdfUrl": "js/data/pdfs/2438.pdf"
+  },
+  {
+    "id": 2437,
+    "type": "Original Article",
+    "title": "Circ_0001535 Facilitates Tumor Malignant Progression by miR-485-5p/LASP1 Axis in Colorectal Cancer",
+    "authors": [
+      {
+        "name": "Liang Bai",
+        "affiliation": "Department of General Surgery, The Second Affiliated Hospital of Xi’an Jiaotong University, Shanghai, China",
+        "orcid": ""
+      },
+      {
+        "name": "Zhifeng Gao",
+        "affiliation": "Department of General Surgery, The Second Affiliated Hospital of Xi’an Jiaotong University, Shanghai, China",
+        "orcid": ""
+      },
+      {
+        "name": "An Jiang",
+        "affiliation": "Department of General Surgery, The Second Affiliated Hospital of Xi’an Jiaotong University, Shanghai, China",
+        "orcid": ""
+      },
+      {
+        "name": "Song Ren",
+        "affiliation": "Department of General Surgery, The Second Affiliated Hospital of Xi’an Jiaotong University, Shanghai, China",
+        "orcid": ""
+      },
+      {
+        "name": "Baotai Wang",
+        "affiliation": "Department of General Surgery, The Second Affiliated Hospital of Xi’an Jiaotong University, Shanghai, China",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Increasing evidence revealed that circular RNAs (circRNAs) are involved in colorectal cancer progression. However, the potential function of circ_0001535 in colorectal cancer remains unclear.Aims: To investigate the mechanism of circ_0001535 by silencing circ_0001535 in colorectal cancer cells and nude mice.Study Design: A cell study.Methods: Expressions of circ_0001535, LIM and SH3 protein 1 (LASP1) mRNA, and miR-485-5p were detected by real-time quantitative polymerase chain reaction (RT-qPCR). Western blot analyses of LASP1, PCNA, cleaved caspase 3, snail 1, and OCT4 protein expression were performed. CCK-8, EdU, flow cytometry, transwell assays, and sphere formation were conducted to evaluate colorectal cancer cell proliferation, apoptosis, invasion, and stemness. Luciferase reporter assays, RNA pull-down, and RIP validated binding. A nude mice xenograft model was constructed.Results: Circ_0001535 was significantly upregulated in colorectal tissues and cells. Circ_0001535 knockdown suppressed the malignant behavior of colorectal cells such as proliferation, invasion, stemness, and tumor growth in vivo. This knockdown also induced apoptosis by sponging miR-485-5p and upregulating LASP1 expression.Conclusion: Circ_0001535 promotes colorectal cancer cell development by absorbing miR-485-5p and upregulating LASP1.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Increasing evidence revealed that circular RNAs (circRNAs) are involved in colorectal cancer progression. However, the potential function of circ_0001535 in colorectal cancer remains unclear.<br /><strong>Aims:</strong> To investigate the mechanism of circ_0001535 by silencing circ_0001535 in colorectal cancer cells and nude mice.<br /><strong>Study Design:</strong> A cell study.<br /><strong>Methods:</strong> Expressions of circ_0001535, LIM and SH3 protein 1 (LASP1) mRNA, and miR-485-5p were detected by real-time quantitative polymerase chain reaction (RT-qPCR). Western blot analyses of LASP1, PCNA, cleaved caspase 3, snail 1, and OCT4 protein expression were performed. CCK-8, EdU, flow cytometry, transwell assays, and sphere formation were conducted to evaluate colorectal cancer cell proliferation, apoptosis, invasion, and stemness. Luciferase reporter assays, RNA pull-down, and RIP validated binding. A nude mice xenograft model was constructed.<br /><strong>Results:</strong> Circ_0001535 was significantly upregulated in colorectal tissues and cells. Circ_0001535 knockdown suppressed the malignant behavior of colorectal cells such as proliferation, invasion, stemness, and tumor growth in vivo. This knockdown also induced apoptosis by sponging miR-485-5p and upregulating LASP1 expression.<br /><strong>Conclusion:</strong> Circ_0001535 promotes colorectal cancer cell development by absorbing miR-485-5p and upregulating LASP1.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Increasing evidence revealed that circular RNAs (circRNAs) are involved in colorectal cancer progression. However, the potential function of circ_0001535 in colorectal cancer remains unclear.Aims: To investigate the mechanism of circ_0001535 by silencing circ_0001535 in colorectal cancer cells and nude mice.Study Design: A cell study.Methods: Expressions of circ_0001535, LIM and SH3 protein 1 (LASP1) mRNA, and miR-485-5p were detected by real-time quantitative polymerase chain reaction (RT-qPCR). Western blot analyses of LASP1, PCNA, cleaved caspase 3, snail 1, and OCT4 protein expression were performed. CCK-8, EdU, flow cytometry, transwell assays, and sphere formation were conducted to evaluate colorectal cancer cell proliferation, apoptosis, invasion, and stemness. Luciferase reporter assays, RNA pull-down, and RIP validated binding. A nude mice xenograft model was constructed.Results: Circ_0001535 was significantly upregulated in colorectal tissues and cells. Circ_0001535 knockdown suppressed the malignant behavior of colorectal cells such as proliferation, invasion, stemness, and tumor growth in vivo. This knockdown also induced apoptosis by sponging miR-485-5p and upregulating LASP1 expression.Conclusion: Circ_0001535 promotes colorectal cancer cell development by absorbing miR-485-5p and upregulating LASP1.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-6-51",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "6",
+    "pages": "411-421",
+    "views": 6361,
+    "downloads": 3870,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1281",
+    "sourceArticleId": "2437",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2437",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2437",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2437",
+    "localPdfUrl": "js/data/pdfs/2437.pdf",
+    "pdfUrl": "js/data/pdfs/2437.pdf"
+  },
+  {
+    "id": 2445,
+    "type": "Original Article",
+    "title": "Genetic Analysis of RASD1 as a Candidate Gene for Schizophrenia",
+    "authors": [
+      {
+        "name": "Ceren Damla Durmaz",
+        "affiliation": "Department of Medical Genetics, School of Medicine, Ankara University, Ankara, Turkey; Department of Medical Genetics, School of Medicine, Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Halil Gürhan Karabulut",
+        "affiliation": "Department of Medical Genetics, School of Medicine, Ankara University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Meram Can Saka",
+        "affiliation": "Department of Psychiatry, School of Medicine, Ankara University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ceren Sucularlı",
+        "affiliation": "Department of Bioinformatics, Institute of Health Sciences, Hacettepe University, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Güvem Gümüş Akay",
+        "affiliation": "Department of Physiology, School of Medicine, Ankara University, Ankara, Turkey; Ankara University Brain Research Center (AUBAUM), Ankara University, Ankara, Turkey; Neuroscience and Neurotechnology Center of Excellence (NÖROM), Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cem Atbaşoğlu",
+        "affiliation": "Ankara University, School of Medicine Retired Faculty Member, Professor of Psychiatry, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hatice Ilgın Ruhi",
+        "affiliation": "Department of Medical Genetics, School of Medicine, Ankara University, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: RASD1 encodes Dexamethasone-induced Ras-related protein 1 (Dexras1), a protein with a critical role in signal transduction in neurons. There is a strong suspicion that dysfunction of Dexras1 might contribute to the pathogenesis of neuropsychiatric diseases. Related to its functions in intracellular signaling pathways, Dexras1 has a potential role in the etiology of schizophrenia because of its close interaction with NOS1, NOS1AP, and NMDAR, which have previously been associated with schizophrenia.Aims: To investigate the association of RASD1 variants with schizophrenia in a selected cohort from Turkey.Study Design: A case-control study.Methods: We performed targeted sequencing for the two exons, single intron, and untranslated regions of RASD1 gene in 200 individuals with schizophrenia and 100 healthy controls of Turkish origin.Results: Two rare variants, RASD1 (NM_016084.5): c.722A>T and c*31G>A were identified in individuals with schizophrenia but not in any controls. The c.722A>T was found in a single individual with schizophrenia and is a missense heterozygous variant in the second exon of RASD1, which is extremely rare in GnomAD. The other variant, c*31G>A, which was found in another individual from this schizophrenia cohort, has not been reported previously. Seven previously identified common single nucleotide polymorphisms were also detected; however, they were not significantly associated with schizophrenia in this study cohort.Conclusion: Our findings suggest that rare variants of RASD1 might be contributing to the etiopathogenesis of schizophrenia. Further studies are needed to elucidate the underlying mechanism of this association.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background: </strong><em>RASD1 </em>encodes Dexamethasone-induced Ras-related protein 1 (Dexras1), a protein with a critical role in signal transduction in neurons. There is a strong suspicion that dysfunction of Dexras1 might contribute to the pathogenesis of neuropsychiatric diseases. Related to its functions in intracellular signaling pathways, Dexras1 has a potential role in the etiology of schizophrenia because of its close interaction with NOS1, NOS1AP, and NMDAR, which have previously been associated with schizophrenia.<br /><strong>Aims: </strong>To investigate the association of <em>RASD1 </em>variants with schizophrenia in a selected cohort from Turkey.<br /><strong>Study Design: </strong>A case-control study.<br /><strong>Methods: </strong>We performed targeted sequencing for the two exons, single intron, and untranslated regions of <em>RASD1 </em>gene in 200 individuals with schizophrenia and 100 healthy controls of Turkish origin.<br /><strong>Results: </strong>Two rare variants, <em>RASD1 </em>(NM_016084.5): c.722A&gt;T and c*31G&gt;A were identified in individuals with schizophrenia but not in any controls. The c.722A&gt;T was found in a single individual with schizophrenia and is a missense heterozygous variant in the second exon of <em>RASD1</em>, which is extremely rare in GnomAD. The other variant, c*31G&gt;A, which was found in another individual from this schizophrenia cohort, has not been reported previously. Seven previously identified common single nucleotide polymorphisms were also detected; however, they were not significantly associated with schizophrenia in this study cohort.<br /><strong>Conclusion: </strong>Our findings suggest that rare variants of <em>RASD1 </em>might be contributing to the etiopathogenesis of schizophrenia. Further studies are needed to elucidate the underlying mechanism of this association.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: RASD1 encodes Dexamethasone-induced Ras-related protein 1 (Dexras1), a protein with a critical role in signal transduction in neurons. There is a strong suspicion that dysfunction of Dexras1 might contribute to the pathogenesis of neuropsychiatric diseases. Related to its functions in intracellular signaling pathways, Dexras1 has a potential role in the etiology of schizophrenia because of its close interaction with NOS1, NOS1AP, and NMDAR, which have previously been associated with schizophrenia.Aims: To investigate the association of RASD1 variants with schizophrenia in a selected cohort from Turkey.Study Design: A case-control study.Methods: We performed targeted sequencing for the two exons, single intron, and untranslated regions of RASD1 gene in 200 individuals with schizophrenia and 100 healthy controls of Turkish origin.Results: Two rare variants, RASD1 (NM_016084.5): c.722A>T and c*31G>A were identified in individuals with schizophrenia but not in any controls. The c.722A>T was found in a single individual with schizophrenia and is a missense heterozygous variant in the second exon of RASD1, which is extremely rare in GnomAD. The other variant, c*31G>A, which was found in another individual from this schizophrenia cohort, has not been reported previously. Seven previously identified common single nucleotide polymorphisms were also detected; however, they were not significantly associated with schizophrenia in this study cohort.Conclusion: Our findings suggest that rare variants of RASD1 might be contributing to the etiopathogenesis of schizophrenia. Further studies are needed to elucidate the underlying mechanism of this association.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-5-90",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "6",
+    "pages": "422-428",
+    "views": 7928,
+    "downloads": 5154,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1281",
+    "sourceArticleId": "2445",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2445",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2445",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2445",
+    "localPdfUrl": "js/data/pdfs/2445.pdf",
+    "pdfUrl": "js/data/pdfs/2445.pdf"
+  },
+  {
+    "id": 2443,
+    "type": "Original Article",
+    "title": "Does the Sex of the Firstborn Child Affect the Breast Cancer Risk and Survival: A Systematic Review and Meta-analysis of Over 1 Million Cases",
+    "authors": [
+      {
+        "name": "Lukman Thalib",
+        "affiliation": "Department of Biostatistics, İstanbul Aydın University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Suhail A.R. Doi",
+        "affiliation": "Department of Population Medicine, College of Medicine, QU Health, Qatar University, Doha, Qatar",
+        "orcid": ""
+      },
+      {
+        "name": "Suhad Daher-Nashif",
+        "affiliation": "Department of Population Medicine, College of Medicine, QU Health, Qatar University, Doha, Qatar",
+        "orcid": ""
+      },
+      {
+        "name": "Tanya Kane",
+        "affiliation": "Department of Population Medicine, College of Medicine, QU Health, Qatar University, Doha, Qatar",
+        "orcid": ""
+      },
+      {
+        "name": "Luis Furuya-Kanamori",
+        "affiliation": "UQ Centre for Clinical Research, Faculty of Medicine, The University of Queensland, Herston, Australia",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Reports on the risk and prognosis of breast cancer in relation to the sex of a child have been conflicting. Since medical sciences play an important role in informing sociocultural understandings of health and illness, evidence-based studies have the potential to foster or counter stigma and shape social attitudes toward a newborn’s sex.Aims: To pool all available evidence to provide the highest level of evidence on the association between the sex of the first child and breast cancer risk or prognosis.Study Design: Systematic review and meta-analyses.Methods: A comprehensive search using three databases was conducted from inception until May 2020. Titles and abstracts of all papers identified were independently screened by two authors. Data extraction and quality assessment were also performed independently by two researchers. The breast cancer risk was quantified using the odds ratio, and the prognosis (i.e., mortality) was measured using the risk ratio.Results: In the meta-analysis, 11 studies with more than 1 million participants were included. The pooled estimate from the five studies on risk and the six studies on prognosis were odds ratio 0.99 (95% confidence interval, 0.95-1.03) and risk ratio 1.00 (95% confidence interval, 0.80-1.26), respectively.Conclusion: When we pooled all available evidence, the sex of the firstborn child was neither associated with risk nor prognosis in breast cancer. Clinically, our findings are reassuring and important, especially in light of previous studies that recommended differential treatment and counseling based on the sex of the first child. Socially, our findings challenge conventional social stereotypes that regard male children as biologically superior to female children.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background: </strong>Reports on the risk and prognosis of breast cancer in relation to the sex of a child have been conflicting. Since medical sciences play an important role in informing sociocultural understandings of health and illness, evidence-based studies have the potential to foster or counter stigma and shape social attitudes toward a newborn&rsquo;s sex.<br /><strong>Aims: </strong>To pool all available evidence to provide the highest level of evidence on the association between the sex of the first child and breast cancer risk or prognosis.<br /><strong>Study Design: </strong>Systematic review and meta-analyses.<br /><strong>Methods: </strong>A comprehensive search using three databases was conducted from inception until May 2020. Titles and abstracts of all papers identified were independently screened by two authors. Data extraction and quality assessment were also performed independently by two researchers. The breast cancer risk was quantified using the odds ratio, and the prognosis (i.e., mortality) was measured using the risk ratio.<br /><strong>Results: </strong>In the meta-analysis, 11 studies with more than 1 million participants were included. The pooled estimate from the five studies on risk and the six studies on prognosis were odds ratio 0.99 (95% confidence interval, 0.95-1.03) and risk ratio 1.00 (95% confidence interval, 0.80-1.26), respectively.<br /><strong>Conclusion: </strong>When we pooled all available evidence, the sex of the firstborn child was neither associated with risk nor prognosis in breast cancer. Clinically, our findings are reassuring and important, especially in light of previous studies that recommended differential treatment and counseling based on the sex of the first child. Socially, our findings challenge conventional social stereotypes that regard male children as biologically superior to female children.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Reports on the risk and prognosis of breast cancer in relation to the sex of a child have been conflicting. Since medical sciences play an important role in informing sociocultural understandings of health and illness, evidence-based studies have the potential to foster or counter stigma and shape social attitudes toward a newborn’s sex.Aims: To pool all available evidence to provide the highest level of evidence on the association between the sex of the first child and breast cancer risk or prognosis.Study Design: Systematic review and meta-analyses.Methods: A comprehensive search using three databases was conducted from inception until May 2020. Titles and abstracts of all papers identified were independently screened by two authors. Data extraction and quality assessment were also performed independently by two researchers. The breast cancer risk was quantified using the odds ratio, and the prognosis (i.e., mortality) was measured using the risk ratio.Results: In the meta-analysis, 11 studies with more than 1 million participants were included. The pooled estimate from the five studies on risk and the six studies on prognosis were odds ratio 0.99 (95% confidence interval, 0.95-1.03) and risk ratio 1.00 (95% confidence interval, 0.80-1.26), respectively.Conclusion: When we pooled all available evidence, the sex of the firstborn child was neither associated with risk nor prognosis in breast cancer. Clinically, our findings are reassuring and important, especially in light of previous studies that recommended differential treatment and counseling based on the sex of the first child. Socially, our findings challenge conventional social stereotypes that regard male children as biologically superior to female children.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-5-54",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "6",
+    "pages": "429-435",
+    "views": 6631,
+    "downloads": 3982,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1281",
+    "sourceArticleId": "2443",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2443",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2443",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2443",
+    "localPdfUrl": "js/data/pdfs/2443.pdf",
+    "pdfUrl": "js/data/pdfs/2443.pdf"
+  },
+  {
+    "id": 2447,
+    "type": "Original Article",
+    "title": "Intramural Component of Venous, Lymphatic, and Perineural Invasion in Colon Cancer: A Threat or an Illusion?",
+    "authors": [
+      {
+        "name": "Leyla Özer",
+        "affiliation": "Department of Medical Oncology, Faculty of Medicine Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Elif Şenocak Taşçı",
+        "affiliation": "Department of Medical Oncology, Faculty of Medicine Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Arda Ulaş Mutlu",
+        "affiliation": "Faculty of Medicine Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Betül Piyade",
+        "affiliation": "Department of Internal Medicine, Faculty of Medicine Marmara University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nur Ramoğlu",
+        "affiliation": "Department of General Surgery, Faculty of Medicine Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Miraç Ajredini",
+        "affiliation": "Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Damla Gürleyik",
+        "affiliation": "Department of Pediatrics, Cerrahpaşa Faculty of Medicine İstanbul-Cerrahpaşa University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Recep Çeçen",
+        "affiliation": "Faculty of Medicine Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sena Nur Dinçer",
+        "affiliation": "Faculty of Medicine Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Turan Musevitoğlu",
+        "affiliation": "Faculty of Medicine Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Süha Göksel",
+        "affiliation": "Department of Pathology, Faculty of Medicine Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ümit İnce",
+        "affiliation": "Department of Pathology, Faculty of Medicine Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cavit Kerem Kayhan",
+        "affiliation": "Pathology Laboratory, Acıbadem Maslak Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sibel Erdamar",
+        "affiliation": "Department of Pathology, Faculty of Medicine Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İbrahim Yıldız",
+        "affiliation": "Department of Medical Oncology, Faculty of Medicine Acıbadem University, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erman Aytaç[[4]] </",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Extramural venous invasion is an independent predictor of poor outcome in colorectal cancer, whereas the significance of the intramural component of venous and lymphatic and perineural invasion is unclear.Aims: To evaluate the prognostic impact of intramural components for venous, lymphatic, and perineural invasions and the relation of these invasion patterns with clinicopathological features in patients with colon cancer.Study Design: A retrospective cross-sectional study.Methods: The analysis included 626 patients with colon cancer in stages II and III. All patients were divided into four categories (no invasion, intramural invasion only, extramural invasion only, or both intramural and extramural invasions) for vascular invasion, lymphatic invasion and perineural invasion. The primary outcomes were 5-year disease-free and overall survival.Results: Right-sided (for vascular invasion, 24.7% vs. 33.9%, p = 0.007; for perineural invasion, 34.5% vs. 41.5%, p = 0.034) and dMMR tumors (for vascular invasion, 13.5% vs. 33.5, p < 0.001; for perineural invasion, 25% vs. 41.4%, p = 0.004) exhibited less venous and perineural invasion. Compared with no invasion, presence of intramural invasion only, did not exert any effect on disease-free or overall survival for vascular invasion, lymphatic invasion, and perineural invasion. Multivariate analyses revealed that the presence of both intramural and extramural invasion was independently associated with poor disease-free and overall survival for venous (hazard ratios: 2.39, p = 0.001; hazard ratios: 2.46, p = 0.001), lymphatic (hazard ratios: 2.456, p < 0.001; hazard ratios: 2.13, p = 0.02) and perineural invasion (hazard ratios: 2.99, p < 0.001; hazard ratios: 2.68, p < 0.001), respectively.Conclusion: Our data strongly advocates the importance of reporting intramural and extramural components of invasion since the presence of intramural invasion alone may not be considered as a high-risk factor for systemic recurrence.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background: </strong>Extramural venous invasion is an independent predictor of poor outcome in colorectal cancer, whereas the significance of the intramural component of venous and lymphatic and perineural invasion is unclear.<br /><strong>Aims: </strong>To evaluate the prognostic impact of intramural components for venous, lymphatic, and perineural invasions and the relation of these invasion patterns with clinicopathological features in patients with colon cancer.<br /><strong>Study Design: </strong>A retrospective cross-sectional study.<br /><strong>Methods: </strong>The analysis included 626 patients with colon cancer in stages II and III. All patients were divided into four categories (no invasion, intramural invasion only, extramural invasion only, or both intramural and extramural invasions) for vascular invasion, lymphatic invasion and perineural invasion. The primary outcomes were 5-year disease-free and overall survival.<br /><strong>Results: </strong>Right-sided (for vascular invasion, 24.7% vs. 33.9%, p = 0.007; for perineural invasion, 34.5% vs. 41.5%, <em>p </em>= 0.034) and dMMR tumors (for vascular invasion, 13.5% vs. 33.5, <em>p </em>&lt; 0.001; for perineural invasion, 25% vs. 41.4%, <em>p </em>= 0.004) exhibited less venous and perineural invasion. Compared with no invasion, presence of intramural invasion only, did not exert any effect on disease-free or overall survival for vascular invasion, lymphatic invasion, and perineural invasion. Multivariate analyses revealed that the presence of both intramural and extramural invasion was independently associated with poor disease-free and overall survival for venous (hazard ratios: 2.39, <em>p </em>= 0.001; hazard ratios: 2.46, <em>p </em>= 0.001), lymphatic (hazard ratios: 2.456, <em>p </em>&lt; 0.001; hazard ratios: 2.13, <em>p </em>= 0.02) and perineural invasion (hazard ratios: 2.99, <em>p </em>&lt; 0.001; hazard ratios: 2.68, <em>p </em>&lt; 0.001), respectively.<br /><strong>Conclusion: </strong>Our data strongly advocates the importance of reporting intramural and extramural components of invasion since the presence of intramural invasion alone may not be considered as a high-risk factor for systemic recurrence.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Extramural venous invasion is an independent predictor of poor outcome in colorectal cancer, whereas the significance of the intramural component of venous and lymphatic and perineural invasion is unclear.Aims: To evaluate the prognostic impact of intramural components for venous, lymphatic, and perineural invasions and the relation of these invasion patterns with clinicopathological features in patients with colon cancer.Study Design: A retrospective cross-sectional study.Methods: The analysis included 626 patients with colon cancer in stages II and III. All patients were divided into four categories (no invasion, intramural invasion only, extramural invasion only, or both intramural and extramural invasions) for vascular invasion, lymphatic invasion and perineural invasion. The primary outcomes were 5-year disease-free and overall survival.Results: Right-sided (for vascular invasion, 24.7% vs. 33.9%, p = 0.007; for perineural invasion, 34.5% vs. 41.5%, p = 0.034) and dMMR tumors (for vascular invasion, 13.5% vs. 33.5, p < 0.001; for perineural invasion, 25% vs. 41.4%, p = 0.004) exhibited less venous and perineural invasion. Compared with no invasion, presence of intramural invasion only, did not exert any effect on disease-free or overall survival for vascular invasion, lymphatic invasion, and perineural invasion. Multivariate analyses revealed that the presence of both intramural and extramural invasion was independently associated with poor disease-free and overall survival for venous (hazard ratios: 2.39, p = 0.001; hazard ratios: 2.46, p = 0.001), lymphatic (hazard ratios: 2.456, p < 0.001; hazard ratios: 2.13, p = 0.02) and perineural invasion (hazard ratios: 2.99, p < 0.001; hazard ratios: 2.68, p < 0.001), respectively.Conclusion: Our data strongly advocates the importance of reporting intramural and extramural components of invasion since the presence of intramural invasion alone may not be considered as a high-risk factor for systemic recurrence.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-6-94",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "6",
+    "pages": "436-443",
+    "views": 7729,
+    "downloads": 3893,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1281",
+    "sourceArticleId": "2447",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2447",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2447",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2447",
+    "localPdfUrl": "js/data/pdfs/2447.pdf",
+    "pdfUrl": "js/data/pdfs/2447.pdf"
+  },
+  {
+    "id": 2439,
+    "type": "Clinical Image",
+    "title": "Triple Trouble of the Mitral Valve in a Patient with Hypertrophic Cardiomyopathy",
+    "authors": [
+      {
+        "name": "Özge Özden",
+        "affiliation": "Clinic of Cardiology, Memorial Bahçelievler Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Şule Göktekin",
+        "affiliation": "Department of Cardiology, University College London, London, United Kingdom",
+        "orcid": ""
+      },
+      {
+        "name": "Kardelen Ohtaroğlu Tokdil",
+        "affiliation": "Clinic of Cardiology, University of Health Sciences Turkey, Kanuni Sultan Süleyman Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gülsüm Bingöl",
+        "affiliation": "Clinic of Cardiology, Memorial Bahçelievler Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tuğrul Okay",
+        "affiliation": "Clinic of Cardiology, Bodrum Acıbadem Hospital, Muğla, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 64-year-old male patient with a diagnosis of HCM and no other comorbidities that had been followed up for the last 5 years, who gave informed consent for this publication under the condition of anonymity, was admitted to the cardiovascular imaging department of our hospital to undergo cardiac magnetic resonance imaging (CMRI) with the aim of risk stratific",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-7-109",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "6",
+    "pages": "444-445",
+    "views": 6277,
+    "downloads": 4195,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1281",
+    "sourceArticleId": "2439",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2439",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2439",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2439",
+    "localPdfUrl": "js/data/pdfs/2439.pdf",
+    "pdfUrl": "js/data/pdfs/2439.pdf"
+  },
+  {
+    "id": 2446,
+    "type": "Clinical Image",
+    "title": "Auer Rod-like Inclusions in a Patient with Multiple Myeloma",
+    "authors": [
+      {
+        "name": "Nouama Bouanani",
+        "affiliation": "Department of Hematology, Faculty of Medicine Mohammed VI University of Health Sciences, Casablanca, Morocco",
+        "orcid": ""
+      },
+      {
+        "name": "Lina Achour",
+        "affiliation": "Department of Hematology, Faculty of Medicine Mohammed VI University of Health Sciences, Casablanca, Morocco",
+        "orcid": ""
+      },
+      {
+        "name": "Anas Yahyaoui",
+        "affiliation": "Department of Biology, Faculty of Medicine Mohammed VI University of Health Sciences, Casablanca, Morocco",
+        "orcid": ""
+      },
+      {
+        "name": "Houda Youssefi",
+        "affiliation": "Department of Hematology, Faculty of Medicine Mohammed VI University of Health Sciences, Casablanca, Morocco",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 79-year-old man was admitted to the hematology department for an 11-month history of bone pain in the spine and pelvis, along with generalized fatigue and lethargy. He had no significant personal or family history. On general examination, he was afebrile and normotensive, with pale skin. Physical examination only revealed diffuse bone pain on palpation. Hi",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-8-69",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "6",
+    "pages": "446-447",
+    "views": 5951,
+    "downloads": 4179,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1281",
+    "sourceArticleId": "2446",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2446",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2446",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2446",
+    "localPdfUrl": "js/data/pdfs/2446.pdf",
+    "pdfUrl": "js/data/pdfs/2446.pdf"
+  },
+  {
+    "id": 2444,
+    "type": "Clinical Image",
+    "title": "Local Recurrence of Metatarsal Aneurysmal Bone Cyst after Percutaneous Sclerotherapy",
+    "authors": [
+      {
+        "name": "Burak Günay",
+        "affiliation": "Department of Radiology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fethi Emre Ustabaşıoğlu",
+        "affiliation": "Department of Radiology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mert Çiftdemir",
+        "affiliation": "Department of Orthopaedics and Traumatology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burak Uslu",
+        "affiliation": "Department of Radiology, Faculty of Medicine Trakya University, Edirne, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ufuk Usta",
+        "affiliation": "Department of Pathology, Faculty of Medicine Trakya University ,Edirne, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "A 23-year-old male patient applied to the orthopedic outpatient clinic with complaints of right foot swelling and pain without a trauma history. Physical examination revealed swelling and pain with palpation at the third metatarsal dorsal level of the right foot (Figure 1). The patient was examined by foot computed tomography (CT) and contrast magnetic reson",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-9-104",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "6",
+    "pages": "448-449",
+    "views": 6229,
+    "downloads": 3524,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": true,
+    "sourceIssueId": "1281",
+    "sourceArticleId": "2444",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2444",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2444",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2444",
+    "localPdfUrl": "js/data/pdfs/2444.pdf",
+    "pdfUrl": "js/data/pdfs/2444.pdf"
+  },
+  {
+    "id": 2441,
+    "type": "Letter to the Editor",
+    "title": "Effect of Cytotoxic Therapy on ALU Expression is Modulated by Hormonal Status in Patients with Breast Cancer",
+    "authors": [
+      {
+        "name": "Emre Özgür",
+        "affiliation": "Department of Basic Oncology, İstanbul University Institute of Oncology, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ferhat Ferhatoğlu",
+        "affiliation": "Department of Medical Oncology İstanbul University Institute of Oncology, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatma Şen",
+        "affiliation": "Clinic of Medical Oncology, Avrasya Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Uğur Gezer",
+        "affiliation": "Department of Basic Oncology, İstanbul University Institute of Oncology, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "To the Editor, Breast cancer (BC) is the most commonly diagnosed cancer in women globally. The incidence and mortality rates of BC have been increasing mostly in developing countries including Turkey.1 The use of cytotoxic chemotherapy in both early-stage and advanced BC has made significant progress with clear survival benefits.More than 50% of the human ge",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.galenos.2022.2022-5-18",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "6",
+    "pages": "450-451",
+    "views": 6006,
+    "downloads": 3106,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1281",
+    "sourceArticleId": "2441",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2441",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2441",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2441",
+    "localPdfUrl": "js/data/pdfs/2441.pdf",
+    "pdfUrl": "js/data/pdfs/2441.pdf"
+  },
+  {
+    "id": 2449,
+    "type": "Reviewer List",
+    "title": "REVIEWER LIST",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "39rd Volume IndexREVIEWER LISTJanuary 2022 - November 2022 Adriano Casulli Haiying Cheng Neşe Atabey Ahmet Murat Çakmak Halis Akalın Nobuhito Goda Akın Usta Halit Canatan Ok Hee Chai Akif Ayaz Heba Hafez Ola Hansson Ali Arıcan Helena C. F. Omid Rezahosseini Ali İhsan Uysal Hongbing Jiang Onur Kırkızlar Alper Akçalı Ian W. Pray Oya Kılcı Andrew H. S. İlkay Uç",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2022-01-01",
+    "volume": 39,
+    "issue": "6",
+    "pages": "",
+    "views": 5549,
+    "downloads": 1675,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1281",
+    "sourceArticleId": "2449",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2449",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2449",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2449",
+    "localPdfUrl": "js/data/pdfs/2449.pdf",
+    "pdfUrl": "js/data/pdfs/2449.pdf"
+  }
+]

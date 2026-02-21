@@ -1,21 +1,41 @@
-<section id="case">
-<h3>Case Presentation</h3>
-<p>A 72-year-old woman presented to the neurosurgery outpatient clinic with a 3-month history of progressive redness, swelling, and a pulsating sensation in the left eye. She had no history of head trauma, previous surgery, or connective tissue disorder. On examination, she had marked conjunctival chemosis and proptosis of the left eye with dilated, tortuous episcleral vessels (Figure 1a). Visual acuity was 20/40 in the left eye and 20/20 in the right eye. Intraocular pressure was elevated at 28 mmHg on the left side. A continuous bruit was audible over the left orbit on auscultation. Extraocular movements were mildly restricted in lateral gaze. The right eye examination was unremarkable.</p>
-<p>Computed tomography angiography (CTA) of the head revealed a dilated left superior ophthalmic vein and an enlarged left cavernous sinus with early venous opacification, consistent with a low-flow indirect carotid-cavernous sinus fistula (Barrow type D) (Figure 1b). No direct communication between the internal carotid artery and the cavernous sinus was identified. Magnetic resonance imaging confirmed the findings and demonstrated mild proptosis with thickening of the left lateral rectus muscle.</p>
-<p>Given the low-flow nature of the fistula and the absence of cortical venous drainage or threatened visual loss, a conservative management strategy was initially adopted. The patient was instructed to perform external manual compression of the ipsilateral carotid artery using the contralateral hand for 10-second intervals, repeated 4 to 6 times per hour during waking hours, with careful avoidance of simultaneous bilateral compression. She was educated about the rationale of the technique, which aims to reduce arterial inflow to the cavernous sinus and promote spontaneous thrombosis of the fistula.</p>
-<p>At the 6-week follow-up, the patient reported subjective improvement in the orbital symptoms. Clinical examination demonstrated significant reduction in chemosis and proptosis. The orbital bruit was no longer auscultable. Intraocular pressure had normalized to 16 mmHg. Repeat CTA at 3 months confirmed complete resolution of the fistula, with normalization of the caliber of the superior ophthalmic vein and cavernous sinus (Figure 1c). At the 6-month follow-up, the patient remained asymptomatic with stable visual acuity and no evidence of recurrence.</p>
-<p>Indirect carotid-cavernous sinus fistulas are abnormal arteriovenous communications between the meningeal branches of the carotid arteries and the cavernous sinus. They typically present with the classic triad of chemosis, proptosis, and orbital bruit. Unlike direct fistulas, which usually result from trauma and require endovascular intervention, low-flow indirect fistulas may resolve spontaneously or with conservative measures. External manual carotid compression, first described by Higashida et al., has been reported to achieve fistula closure in approximately 30% of cases of indirect carotid-cavernous fistulas. This simple, noninvasive technique should be considered as a first-line approach in patients with low-flow fistulas without cortical venous drainage, vision-threatening complications, or intolerable symptoms, reserving endovascular embolization for refractory cases.</p>
-</section>
-
-<section id="references">
-<h3>References</h3>
-<ol class="references-list">
-<li>Barrow DL, Spector RH, Braun IF, Landman JA, Tindall SC, Tindall GT. Classification and treatment of spontaneous carotid-cavernous sinus fistulas. J Neurosurg. 1985;62(2):248-256.</li>
-<li>Higashida RT, Hieshima GB, Halbach VV, Bentson JR, Goto K. Closure of carotid cavernous sinus fistulae by external compression of the carotid artery and jugular vein. Acta Radiol Suppl. 1986;369:580-583.</li>
-<li>Miller NR. Diagnosis and management of dural carotid-cavernous sinus fistulas. Neurosurg Focus. 2007;23(5):E13.</li>
-<li>Gemmete JJ, Chaudhary N, Pandey A, Ansari S. Treatment of carotid cavernous fistulas. Curr Treat Options Neurol. 2010;12(1):43-53.</li>
-<li>Henderson AD, Miller NR. Carotid-cavernous fistula: current concepts in aetiology, investigation, and management. Eye (Lond). 2018;32(2):164-172.</li>
-<li>Ringer AJ, Salud L, Tomsick TA. Carotid cavernous fistulas: anatomy, classification, and treatment. Neurosurg Clin N Am. 2005;16(2):279-295.</li>
-<li>de Keizer R. Carotid-cavernous and orbital arteriovenous fistulas: ocular features, diagnostic and hemodynamic considerations in relation to visual impairment and morbidity. Orbit. 2003;22(2):121-142.</li>
-</ol>
-</section>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+																		        				
+												        				<div  style="width:100%; float:left;  padding-bottom:0px;">
+												        					<div	style="width:100%; float:left; min-height:45px; text-align:justify">
+												        						<a href="" name="introduction"></a>
+												        						<!--<h2>Introduction</h2>-->
+												        						<p>I read with great interest the work of Zhao et al.<sup>1</sup> on the YOLOv11 model for the automatic recognition of ovarian ultrasound images in polycystic ovary syndrome (PCOS). The authors made a noteworthy contribution by conducting the first large-scale prospective study in women from East Asia, demonstrating excellent performance with an average training accuracy of 95.7% and validation accuracy of 97.6-97.8%, coupled with a remarkable processing speed nearly 50 times faster than that of clinicians.</p>
+<p>The methodological rigor of the study deserves particular recognition. The adoption of the Rotterdam criteria as the diagnostic gold standard, the randomized stratification of patients across centers, and, most importantly, the detailed analysis of image structural independence using SSIM and MI indices are quality elements that set this work apart within the literature on artificial intelligence applied to PCOS. This aspect is especially relevant given that, according to a recent systematic review, only 10 of the 31 available studies (32%) on artifical intelligence (AI)/ML in PCOS diagnosis employed standardized diagnostic criteria (NIH, Rotterdam, or Revised International)<sup>2</sup>, underscoring the robustness of the methodological framework established by the authors. However, some methodological aspects raise important concerns regarding the transition to clinical application. The exclusion rate of 46.7% of initially screened patients, though justified by the need for adequate image quality, creates a significant gap between experimental conditions and real-world clinical practice. Paradoxically, the very cases that are most challenging to diagnose ultrasonographically, precisely those where AI assistance would be most valuable, were excluded from the study. Comparable studies have addressed these limitations by employing advanced preprocessing techniques to manage suboptimal images<sup>3</sup>, suggesting that future developments could focus on strategies to broaden the applicability of the system.</p>
+<p>From a technical perspective, several fundamental details essential for reproducibility are missing. The authors do not specify which variant of YOLOv11 was used among the five available, a detail far from trivial given the different trade-offs between computational speed and diagnostic accuracy. Similarly, the absence of information on batch size, number of epochs, early stopping criteria, and hardware configuration restricts the possibility of replicating the reported results.</p>
+<p>The geographic restriction of the study to East Asian populations, while understandable, raises concerns about the generalizability of the findings. The authors themselves note that 52% of Chinese PCOS patients present O + PCOM or H + PCOM subtypes, compared to only 30.2% in Western populations<sup>1</sup>, indicating potential phenotypic differences that could affect model performance across diverse cohorts. In addition, the systematic exclusion of adolescent patients represents a notable limitation. Given that early diagnosis is critical for effective management of PCOS and its long-term complications, extending the model to younger populations could substantially enhance its clinical utility and the overall impact.</p>
+<p>In light of the Rotterdam criteria, which integrate ultrasound, laboratory, and clinical data, a logical next step would be the development of a multimodal AI agent<sup>4</sup>, a true &ldquo;Rotterdam agent.&rdquo; Such a system could combine the YOLOv11 model with LLMs trained to process anthropometric, hormonal, clinical, and anamnestic information. This architecture would enable a shift from a monomodal recognition tool to a genuine decision-support tool, capable of delivering more comprehensive and balanced assessments, including for adolescent patients and those at menarche. Moreover, the adoption of a continuous and adaptive learning strategy would help sustain high performance while improving the system&rsquo;s generalizability across diverse populations.</p>
+<p>In conclusion, despite certain methodological limitations, the work of Zhao et al.<sup>1</sup> provides a robust foundation for the advancement of AI in diagnostic gynecology. The public availability of the code on GitHub represents a valuable contribution to the scientific community, fostering transparency and reproducibility.<br />Most importantly, the potential integration of this system into real-time clinical workflows, particularly in settings with limited access to specialized expertise, highlights its promise as a transformative tool in the management of PCOS.</p>												        					</div>
+												        					<!--
+												        					<div	style="width:20%; float:left; min-height:150px; padding:10px; padding-top:40px;">
+												        									<a class="selected_menu" href="#introduction">Introduction</a><a class="menu" href="#reference">Reference</a>												        					</div>
+												        					-->
+												        				</div>
+												        				
+												        				
+												        																        				
+												        				<div  style="width:100%; float:left;  padding-bottom:0px;">
+												        					<div	style="width:100%; float:left; min-height:45px; text-align:justify">
+												        						<a href="" name="reference"></a>
+												        						<!--<h2>Reference</h2>-->
+												        						<h3>REFERENCES</h3>
+<ol>
+<li>Zhao B, Wen L, Huang Y, et al. A deep learning-based automatic recognition model for polycystic ovary ultrasound images. <em>Balkan Med J</em>. 2025;42:419-428.</li>
+<li>Barrera FJ, Brown EDL, Rojo A, et al. Application of machine learning and artificial intelligence in the diagnosis and classification of polycystic ovarian syndrome: a systematic review. <em>Front Endocrinol (Lausanne)</em>. 2023;14:1106625.</li>
+<li>Sumathi M, Chitra P, Sheela S, Ishwarya C. Study and implementation of automated system for detection of PCOS from ultrasound scan images using artificial intelligence. <em>Imaging Sci J</em>. 2024;72:828-839.</li>
+<li>Wang W, Ma Z, Wang Z, et al. A survey of LLM-based agents in medicine: how far are we from Baymax? <em>arXiv</em>. 2025.</li>
+</ol>												        					</div>
+												        					<!--
+												        					<div	style="width:20%; float:left; min-height:150px; padding:10px; padding-top:40px;">
+												        									<a class="menu" href="#introduction">Introduction</a><a class="selected_menu" href="#reference">Reference</a>												        					</div>
+												        					-->
+												        				</div>
+												        				
+												        				
+												        															        			
+		
+											        	</div>

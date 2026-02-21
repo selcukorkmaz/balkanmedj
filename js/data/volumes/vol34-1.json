@@ -1,0 +1,938 @@
+[
+  {
+    "id": 1807,
+    "type": "Cover Page",
+    "title": "Cover Page",
+    "authors": [],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "",
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": false,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "1807",
+    "sourceAbstractUrl": "",
+    "sourceTextUrl": "",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1807",
+    "localPdfUrl": "js/data/pdfs/1807.pdf",
+    "pdfUrl": "js/data/pdfs/1807.pdf"
+  },
+  {
+    "id": 1799,
+    "type": "Invited Review",
+    "title": "A Review of Myeloablative vs Reduced Intensity/Non-Myeloablative Regimens in Allogeneic Hematopoietic Stem Cell Transplantations",
+    "authors": [
+      {
+        "name": "Erden Atilla",
+        "affiliation": "Department of Hematology, Ankara University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Pınar Ataca Atilla",
+        "affiliation": "Department of Hematology, Ankara University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Taner Demirer",
+        "affiliation": "Department of Hematology, Ankara University School of Medicine, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Allogeneic hematopoietic stem cell transplantation (Allo-HSCT) is a curative treatment option for both malignant and some benign hematological diseases. During the last decade, many of the newer high-dose regimens in different intensity have been developed specifically for patients with hematologic malignancies and solid tumors. Today there are three main approaches used prior to allogeneic transplantation: Myeloablative (MA), Reduced Intensity Conditioning (RIC) and Non-MA (NMA) regimens. MA regimens cause irreversible cytopenia and there is a requirement for stem cell support. Patients who receive NMA regimen have minimal cytopenia and this type of regimen can be given without stem cell support. RIC regimens do not fit the criteria of MA and NMA: the cytopenia is reversible and the stem cell support is necessary. NMA/RIC for Allo-HSCT has opened a new era for treating elderly patients and those with comorbidities. The RIC conditioning was used for 40% of all Allo-HSCT and this trend continue to increase. In this paper, we will review these regimens in the setting of especially allogeneic HSCT and our aim is to describe the history, features and impact of these conditioning regimens on specific diseases. Total Times Cited: 19 (Updated on May. 10 2020 - WoS)",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>Allogeneic hematopoietic stem cell transplantation (Allo-HSCT) is a curative treatment option for both malignant and some benign hematological diseases. During the last decade, many of the newer high-dose regimens in different intensity have been developed specifically for patients with hematologic malignancies and solid tumors. Today there are three main approaches used prior to allogeneic transplantation: Myeloablative (MA), Reduced Intensity Conditioning (RIC) and Non-MA (NMA) regimens. MA regimens cause irreversible cytopenia and there is a requirement for stem cell support. Patients who receive NMA regimen have minimal cytopenia and this type of regimen can be given without stem cell support. RIC regimens do not fit the criteria of MA and NMA: the cytopenia is reversible and the stem cell support is necessary. NMA/RIC for Allo-HSCT has opened a new era for treating elderly patients and those with comorbidities. The RIC conditioning was used for 40% of all Allo-HSCT and this trend continue to increase. In this paper, we will review these regimens in the setting of especially allogeneic HSCT and our aim is to describe the history, features and impact of these conditioning regimens on specific diseases.</p>\r\n<p><strong>Total Times Cited: 19</strong> (Updated on May. 10 2020 - WoS)</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Allogeneic hematopoietic stem cell transplantation (Allo-HSCT) is a curative treatment option for both malignant and some benign hematological diseases. During the last decade, many of the newer high-dose regimens in different intensity have been developed specifically for patients with hematologic malignancies and solid tumors. Today there are three main approaches used prior to allogeneic transplantation: Myeloablative (MA), Reduced Intensity Conditioning (RIC) and Non-MA (NMA) regimens. MA regimens cause irreversible cytopenia and there is a requirement for stem cell support. Patients who receive NMA regimen have minimal cytopenia and this type of regimen can be given without stem cell support. RIC regimens do not fit the criteria of MA and NMA: the cytopenia is reversible and the stem cell support is necessary. NMA/RIC for Allo-HSCT has opened a new era for treating elderly patients and those with comorbidities. The RIC conditioning was used for 40% of all Allo-HSCT and this trend continue to increase. In this paper, we will review these regimens in the setting of especially allogeneic HSCT and our aim is to describe the history, features and impact of these conditioning regimens on specific diseases. Total Times Cited: 19 (Updated on May. 10 2020 - WoS)",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2017.0055",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "1-9",
+    "views": 6315,
+    "downloads": 4577,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "1799",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1799",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1799",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1799",
+    "localPdfUrl": "js/data/pdfs/1799.pdf",
+    "pdfUrl": "js/data/pdfs/1799.pdf"
+  },
+  {
+    "id": 7,
+    "type": "Invited Review",
+    "title": "Changing Trends in Gastric Cancer Surgery",
+    "authors": [
+      {
+        "name": "İlter Özer",
+        "affiliation": "Department of Gastroenterological Surgery, Türkiye Yüksek İhtisas Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erdal Birol Bostancı",
+        "affiliation": "Department of Gastroenterological Surgery, Türkiye Yüksek İhtisas Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Ulaş",
+        "affiliation": "Department of Gastroenterological Surgery, Türkiye Yüksek İhtisas Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yusuf Özoğul",
+        "affiliation": "Department of Gastroenterological Surgery, Türkiye Yüksek İhtisas Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Musa Akoğlu [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Gastric cancer is one of the most common causes of cancer-related death. It requires multimodal treatment and surgery is the most effective treatment modality. Radical surgery includes total or subtotal gastrectomy with lymph node dissection. The extent of lymphadenectomy still remains controversial. Eastern surgeons have performed D2 or more extended lymphadenectomy while their Western colleagues have performed more limited lymph node dissection. However, the trend has been changing in favour of D2 lymph node dissection in both hemispheres. Currently, D2 is the recommended type of lymphadenectomy in experienced centres in the west. In Japan, D2 lymph node dissection is the standard surgical approach. More extensive lymphadenectomy than D2 has not been found to be associated with improved survival and generally is not performed. Bursectomy and splenectomy are additional controversial issues in surgical performance, and trends regarding them will be discussed. The performance of bursectomy is controversial and there is no clear evidence of its clinical benefit. However, a trend toward better survival in patients with serosal invasion has been reported. Routine splenectomy as a part of lymph node dissection has largely been abandoned, although splenectomy is recommended in selected cases. Minimally invasive surgery has gained wide popularity and indications for minimally invasive procedures have been expanding due to increasing experience and improving technology. Neoadjuvant therapy has been shown to have beneficial effects and seems necessary to provide a survival benefit. Diagnostic laparoscopy should be kept in mind prior to treatment. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Abstract</strong></p>\r\n<p>\r\n\tGastric cancer is one of the most common causes of cancer-related death. It requires multimodal treatment and surgery is the most effective treatment modality. Radical surgery includes total or subtotal gastrectomy with lymph node dissection. The extent of lymphadenectomy still remains controversial. Eastern surgeons have performed D2 or more extended lymphadenectomy while their Western colleagues have performed more limited lymph node dissection. However, the trend has been changing in favour of D2 lymph node dissection in both hemispheres. Currently, D2 is the recommended type of lymphadenectomy in experienced centres in the west. In Japan, D2 lymph node dissection is the standard surgical approach. More extensive lymphadenectomy than D2 has not been found to be associated with improved survival and generally is not performed. Bursectomy and splenectomy are additional controversial issues in surgical performance, and trends regarding them will be discussed. The performance of bursectomy is controversial and there is no clear evidence of its clinical benefit. However, a trend toward better survival in patients with serosal invasion has been reported. Routine splenectomy as a part of lymph node dissection has largely been abandoned, although splenectomy is recommended in selected cases. Minimally invasive surgery has gained wide popularity and indications for minimally invasive procedures have been expanding due to increasing experience and improving technology. Neoadjuvant therapy has been shown to have beneficial effects and seems necessary to provide a survival benefit. Diagnostic laparoscopy should be kept in mind prior to treatment.</p>\r\n<p>\r\n\t----------------------------------------------------------------------------------------------------------------------------------------------------------</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Gastric cancer is one of the most common causes of cancer-related death. It requires multimodal treatment and surgery is the most effective treatment modality. Radical surgery includes total or subtotal gastrectomy with lymph node dissection. The extent of lymphadenectomy still remains controversial. Eastern surgeons have performed D2 or more extended lymphadenectomy while their Western colleagues have performed more limited lymph node dissection. However, the trend has been changing in favour of D2 lymph node dissection in both hemispheres. Currently, D2 is the recommended type of lymphadenectomy in experienced centres in the west. In Japan, D2 lymph node dissection is the standard surgical approach. More extensive lymphadenectomy than D2 has not been found to be associated with improved survival and generally is not performed. Bursectomy and splenectomy are additional controversial issues in surgical performance, and trends regarding them will be discussed. The performance of bursectomy is controversial and there is no clear evidence of its clinical benefit. However, a trend toward better survival in patients with serosal invasion has been reported. Routine splenectomy as a part of lymph node dissection has largely been abandoned, although splenectomy is recommended in selected cases. Minimally invasive surgery has gained wide popularity and indications for minimally invasive procedures have been expanding due to increasing experience and improving technology. Neoadjuvant therapy has been shown to have beneficial effects and seems necessary to provide a survival benefit. Diagnostic laparoscopy should be kept in mind prior to treatment. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1461",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "10-20",
+    "views": 7431,
+    "downloads": 10430,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "7",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=7",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=7",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=7",
+    "localPdfUrl": "js/data/pdfs/7.pdf",
+    "pdfUrl": "js/data/pdfs/7.pdf"
+  },
+  {
+    "id": 5,
+    "type": "Original Article",
+    "title": "The Role of Follow-up in Monitoring the Outcomes of Prematurity in a Cohort of Romanian Infants",
+    "authors": [
+      {
+        "name": "Anca Bivoleanu",
+        "affiliation": "Regional Neonatal Intensive Care Unit, Grigore T. Popa University of Medicine and Pharmacy, Cuza-Voda Clinical Hospital of Obstetrics and Gynaecology, Iasi, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Andreea Avasiloaiei",
+        "affiliation": "Regional Neonatal Intensive Care Unit, Division of Neonatology, Department of Mother and Child Care, Grigore T. Popa University of Medicine and Pharmacy, Cuza-Voda Clinical Hospital of Obstetrics and Gynaecology, Iasi, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Mihaela Moscalu",
+        "affiliation": "Department of Preventive Medicine and Interdisciplinary Sciences, Grigore T. Popa University of Medicine and Pharmacy, Iasi, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Maria Stamatin",
+        "affiliation": "Regional Neonatal Intensive Care Unit, Division of Neonatology, Department of Mother and Child Care, Grigore T. Popa University of Medicine and Pharmacy, Cuza-Voda Clinical Hospital of Obstetrics and Gynaecology, Iasi, Romania",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: The rate of preterm births in Romania is one of the highest among European countries. However, there is little information regarding the ways in which premature birth affects the outcome in Romanian preterm infants. Aims: To investigate the effects of early developmental intervention after discharge from the hospital on motor and cognitive development in preterm infants. Study Design: Longitudinal observational study Methods: We performed the Amiel-Tison neurologic evaluation at discharge and the Bayley Scales of Infant Development from 3 to 24 months. Based on these evaluations, an outcome score was formulated. Results: Between 2007 and 2010, 1157 of 2793 premature infants were included into the study. There was a negative correlation between the number of evaluations and the risk of developing neurologic sequelae (p<0.001). The correlation analysis demonstrated a significant association between the final category of risk at the end of the follow up program and the degree of compliance (p<0.01). At 24 months evaluation, there was a correlation between the low gestational age and the risk of developing severe neurologic sequelae (p<0.001). Conclusion: This study shows the importance of follow up program in decreasing the risk of developing neurologic sequelae in preterm infants. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Abstract</strong></p>\r\n<p>\r\n\t<strong>Background</strong>: The rate of preterm births in Romania is one of the highest among European countries. However, there is little information regarding the ways in which premature birth affects the outcome in Romanian preterm infants.<br />\r\n\t<strong>Aims</strong>: To investigate the effects of early developmental intervention after discharge from the hospital on motor and cognitive development in preterm infants.<br />\r\n\t<strong>Study Design</strong>: Longitudinal observational study<br />\r\n\t<strong>Methods</strong>: We performed the Amiel-Tison neurologic evaluation at discharge and the Bayley Scales of Infant Development from 3 to 24 months. Based on these evaluations, an outcome score was formulated.<br />\r\n\t<strong>Results</strong>: Between 2007 and 2010, 1157 of 2793 premature infants were included into the study. There was a negative correlation between the number of evaluations and the risk of developing neurologic sequelae (p&lt;0.001). The correlation analysis demonstrated a significant association between the final category of risk at the end of the follow up program and the degree of compliance (p&lt;0.01). At 24 months evaluation, there was a correlation between the low gestational age and the risk of developing severe neurologic sequelae (p&lt;0.001).<br />\r\n\t<strong>Conclusion</strong>: This study shows the importance of follow up program in decreasing the risk of developing neurologic sequelae in preterm infants.</p>\r\n<p>\r\n\t----------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: The rate of preterm births in Romania is one of the highest among European countries. However, there is little information regarding the ways in which premature birth affects the outcome in Romanian preterm infants. Aims: To investigate the effects of early developmental intervention after discharge from the hospital on motor and cognitive development in preterm infants. Study Design: Longitudinal observational study Methods: We performed the Amiel-Tison neurologic evaluation at discharge and the Bayley Scales of Infant Development from 3 to 24 months. Based on these evaluations, an outcome score was formulated. Results: Between 2007 and 2010, 1157 of 2793 premature infants were included into the study. There was a negative correlation between the number of evaluations and the risk of developing neurologic sequelae (p<0.001). The correlation analysis demonstrated a significant association between the final category of risk at the end of the follow up program and the degree of compliance (p<0.01). At 24 months evaluation, there was a correlation between the low gestational age and the risk of developing severe neurologic sequelae (p<0.001). Conclusion: This study shows the importance of follow up program in decreasing the risk of developing neurologic sequelae in preterm infants. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1125",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "21-27",
+    "views": 7644,
+    "downloads": 10087,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "5",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=5",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=5",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=5",
+    "localPdfUrl": "js/data/pdfs/5.pdf",
+    "pdfUrl": "js/data/pdfs/5.pdf"
+  },
+  {
+    "id": 4,
+    "type": "Original Article",
+    "title": "Regional Clinical and Biochemical Differences among Patients with Primary Hyperparathyroidism",
+    "authors": [
+      {
+        "name": "Maria Stamatin",
+        "affiliation": "Regional Neonatal Intensive Care Unit, Division of Neonatology, Department of Mother and Child Care, Grigore T. Popa University of Medicine and Pharmacy, Cuza-Voda Clinical Hospital of Obstetrics and Gynaecology, Iasi, Romania",
+        "orcid": ""
+      },
+      {
+        "name": "Özer Makay",
+        "affiliation": "Department of General Surgery, Division of Endocrine Surgery, Ege University School of Medicine, İzmir, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Beyza Özçınar",
+        "affiliation": "Department of General Surgery, Division of Endocrine Surgery, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Turgay Şimşek",
+        "affiliation": "Department of General Surgery, Kocaeli University School of Medicine, Kocaeli, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Cumhur Arıcı",
+        "affiliation": "Department of General Surgery, Division of Endocrine Surgery, Akdeniz University School of Medicine, Antalya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Güngör",
+        "affiliation": "Department of General Surgery, Ondokuz Mayıs University School of Medicine, Samsun, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serdar Özbaş",
+        "affiliation": "Department of General Surgery, Güven Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Tamer Akça",
+        "affiliation": "Department of General Surgery, Division of Endocrine Surgery, Mersin University School of Medicine, Mersin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ali Uğur Emre",
+        "affiliation": "Department of General Surgery, Bülent Ecevit University School of Medicine, Zonguldak, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Güldeniz Karadeniz Çakmak",
+        "affiliation": "Department of General Surgery, Bülent Ecevit University School of Medicine, Zonguldak, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Müfide Akçay",
+        "affiliation": "Department of General Surgery, Atatürk University School of Medicine, Erzurum, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Bülent Ünal",
+        "affiliation": "Department of General Surgery, İnönü University School of Medicine, Malatya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Girgin",
+        "affiliation": "Department of General Surgery, Fırat University School of Medicine, Elazığ, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sadullah Girgin",
+        "affiliation": "Department of General Surgery, Dicle University School of Medicine, Diyarbakır, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Semih Görgülü",
+        "affiliation": "Department of General Surgery, Gülhane Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Keywords : Hyperparathyroidism, clinocopathological features, regional differences, Turkey, Bulgaria",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<b>Keywords :</b>\t\tHyperparathyroidism, clinocopathological features, regional differences, Turkey, Bulgaria \t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Keywords : Hyperparathyroidism, clinocopathological features, regional differences, Turkey, Bulgaria",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.0865",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "28-34",
+    "views": 7569,
+    "downloads": 10887,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "4",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=4",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=4",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=4",
+    "localPdfUrl": "js/data/pdfs/4.pdf",
+    "pdfUrl": "js/data/pdfs/4.pdf"
+  },
+  {
+    "id": 1636,
+    "type": "Original Article",
+    "title": "Prevention of Intraabdominal Adhesions: An Experimental Study Using Mitomycin-C and 4% Icodextrin",
+    "authors": [
+      {
+        "name": "Murat Urkan",
+        "affiliation": "Department of Surgery, Gülhane Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İsmail Hakkı Özerhan",
+        "affiliation": "Department of Surgery, Gülhane Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Aytekin Ünlü",
+        "affiliation": "Department of Surgery, Gülhane Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mehmet Fatih Can",
+        "affiliation": "Department of Surgery, Gülhane Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Erkan Öztürk",
+        "affiliation": "Department of Surgery, Gülhane Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Armağan Günal",
+        "affiliation": "Department of Surgical Pathology, Gülhane Training and Research Hospital, Ankara, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gökhan Yağcı [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Intraabdominal adhesions remain a significant cause of morbidity and mortality. Moreover, intraabdominal adhesions can develop in more than 50% of abdominal operations. Aims: We compared the anti-adhesive effects of two different agents on postoperative adhesion formation in a cecal abrasion model. Study Design: Experimental animal study. Methods: Forty Wistar albino type female rats were anesthetized and underwent laparotomy. Study groups comprised Sham, Control, Mitomycin-C, 4% Icodextrin, and Mitomycin-C +4% Icodextrin groups. Macroscopic and histopathological evaluations of adhesions were performed. Results: The frequencies of moderate and severe adhesions were significantly higher in the control group than the other groups. The mitomycin-C and Mitomycin-C +4% Icodextrin groups were associated with significantly lower adhesion scores compared to the control group and 4% Icodextrin group scores (p=0.002 and p=0.008, respectively). The adhesion scores of the Mitomycin-C group were also significantly lower than those of the 4% Icodextrin group (p=0.008). Conclusion: Despite its potential for bone marrow toxicity, Mitomycin-C seems to effectively prevent adhesions. Further studies that prove an acceptable safety profile relating to this promising anti-adhesive agent are required before moving into clinical trials. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Abstract</strong></p>\r\n<p>\r\n\t<strong>Background</strong>: Intraabdominal adhesions remain a significant cause of morbidity and mortality. Moreover, intraabdominal adhesions can develop in more than 50% of abdominal operations.<br />\r\n\t<strong>Aims</strong>: We compared the anti-adhesive effects of two different agents on postoperative adhesion formation in a cecal abrasion model.<br />\r\n\t<strong>Study Design</strong>: Experimental animal study.<br />\r\n\t<strong>Methods</strong>: Forty Wistar albino type female rats were anesthetized and underwent laparotomy. Study groups comprised Sham, Control, Mitomycin-C, 4% Icodextrin, and Mitomycin-C +4% Icodextrin groups. Macroscopic and histopathological evaluations of adhesions were performed.<br />\r\n\t<strong>Results</strong>: The frequencies of moderate and severe adhesions were significantly higher in the control group than the other groups. The mitomycin-C and Mitomycin-C +4% Icodextrin groups were associated with significantly lower adhesion scores compared to the control group and 4% Icodextrin group scores (p=0.002 and p=0.008, respectively). The adhesion scores of the Mitomycin-C group were also significantly lower than those of the 4% Icodextrin group (p=0.008).<br />\r\n\t<strong>Conclusion</strong>: Despite its potential for bone marrow toxicity, Mitomycin-C seems to effectively prevent adhesions. Further studies that prove an acceptable safety profile relating to this promising anti-adhesive agent are required before moving into clinical trials.</p>\r\n<p>\r\n\t----------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Intraabdominal adhesions remain a significant cause of morbidity and mortality. Moreover, intraabdominal adhesions can develop in more than 50% of abdominal operations. Aims: We compared the anti-adhesive effects of two different agents on postoperative adhesion formation in a cecal abrasion model. Study Design: Experimental animal study. Methods: Forty Wistar albino type female rats were anesthetized and underwent laparotomy. Study groups comprised Sham, Control, Mitomycin-C, 4% Icodextrin, and Mitomycin-C +4% Icodextrin groups. Macroscopic and histopathological evaluations of adhesions were performed. Results: The frequencies of moderate and severe adhesions were significantly higher in the control group than the other groups. The mitomycin-C and Mitomycin-C +4% Icodextrin groups were associated with significantly lower adhesion scores compared to the control group and 4% Icodextrin group scores (p=0.002 and p=0.008, respectively). The adhesion scores of the Mitomycin-C group were also significantly lower than those of the 4% Icodextrin group (p=0.008). Conclusion: Despite its potential for bone marrow toxicity, Mitomycin-C seems to effectively prevent adhesions. Further studies that prove an acceptable safety profile relating to this promising anti-adhesive agent are required before moving into clinical trials. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1359",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "35-40",
+    "views": 6947,
+    "downloads": 4316,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "1636",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1636",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1636",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1636",
+    "localPdfUrl": "js/data/pdfs/1636.pdf",
+    "pdfUrl": "js/data/pdfs/1636.pdf"
+  },
+  {
+    "id": 1637,
+    "type": "Original Article",
+    "title": "The Predictors of Obesity Hypoventilation Syndrome in Obstructive Sleep Apnea",
+    "authors": [
+      {
+        "name": "Aylin Pıhtılı",
+        "affiliation": "Department of Pulmonary Medicine, İstanbul Haydarpaşa Numune Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Züleyha Bingöl",
+        "affiliation": "stanbul University School of Medicine, Department of Pulmonary Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Esen Kıyan",
+        "affiliation": "İstanbul University School of Medicine, Department of Pulmonary Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: As obesity increases, the frequency of obstructive sleep apnea and obesity hypoventilation syndrome increases also. However, obesity hypoventilation syndrome frequency is not known, as capnography and arterial blood gas analysis are not routinely performed in sleep laboratories. Aims: To investigate the frequency and predictors of obesity hypoventilation syndrome in obese subjects. Study Design: Retrospective clinical study Methods: Obese subjects who had arterial blood gas analysis admitted to the sleep laboratory and polysomnography were retrospectively analyzed. Subjects with restrictive (except obesity) and obstructive pulmonary pathologies were excluded. Demographics, Epworth-Sleepiness-Scale scores, polysomnographic data, arterial blood gas analysis, and spirometric measurements were recorded. Results: Of the 419 subjects, 45.1% had obesity hypoventilation syndrome. Apnea hypopnea index (p<0.001), oxygen desaturation index (p<0.001) and sleep time with SpO2<90% (p<0.001) were statistically higher in subjects with obesity hypoventilation syndrome compared to subjects with eucapnic obstructive sleep apnea. The nocturnal mean SpO2 (p<0.001) and lowest SpO2 (p<0.001) were also statistically lower in subjects with obesity hypoventilation syndrome. Logistic regression analysis showed that the lowest SpO2, oxygen desaturation index, apnea hypopnea index and sleep time with SpO2 <90% were related factors for obesity hypoventilation syndrome. Conclusion: Obesity hypoventilation syndrome should be considered when oxygen desaturation index, apnea hypopnea index and sleep time with SpO2 <90% are high. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Abstract</strong></p>\r\n<p>\r\n\t<strong>Background</strong>: As obesity increases, the frequency of obstructive sleep apnea and obesity hypoventilation syndrome increases also. However, obesity hypoventilation syndrome frequency is not known, as capnography and arterial blood gas analysis are not routinely performed in sleep laboratories.<br />\r\n\t<strong>Aims</strong>: To investigate the frequency and predictors of obesity hypoventilation syndrome in obese subjects.<br />\r\n\t<strong>Study Design</strong>: Retrospective clinical study<br />\r\n\t<strong>Methods</strong>: Obese subjects who had arterial blood gas analysis admitted to the sleep laboratory and polysomnography were retrospectively analyzed. Subjects with restrictive (except obesity) and obstructive pulmonary pathologies were excluded. Demographics, Epworth-Sleepiness-Scale scores, polysomnographic data, arterial blood gas analysis, and spirometric measurements were recorded.<br />\r\n\t<strong>Results</strong>: Of the 419 subjects, 45.1% had obesity hypoventilation syndrome. Apnea hypopnea index (p&lt;0.001), oxygen desaturation index (p&lt;0.001) and sleep time with SpO2&lt;90% (p&lt;0.001) were statistically higher in subjects with obesity hypoventilation syndrome compared to subjects with eucapnic obstructive sleep apnea. The nocturnal mean SpO2 (p&lt;0.001) and lowest SpO2 (p&lt;0.001) were also statistically lower in subjects with obesity hypoventilation syndrome. Logistic regression analysis showed that the lowest SpO2, oxygen desaturation index, apnea hypopnea index and sleep time with SpO2 &lt;90% were related factors for obesity hypoventilation syndrome.<br />\r\n\t<strong>Conclusion</strong>: Obesity hypoventilation syndrome should be considered when oxygen desaturation index, apnea hypopnea index and sleep time with SpO2 &lt;90% are high.</p>\r\n<p>\r\n\t----------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: As obesity increases, the frequency of obstructive sleep apnea and obesity hypoventilation syndrome increases also. However, obesity hypoventilation syndrome frequency is not known, as capnography and arterial blood gas analysis are not routinely performed in sleep laboratories. Aims: To investigate the frequency and predictors of obesity hypoventilation syndrome in obese subjects. Study Design: Retrospective clinical study Methods: Obese subjects who had arterial blood gas analysis admitted to the sleep laboratory and polysomnography were retrospectively analyzed. Subjects with restrictive (except obesity) and obstructive pulmonary pathologies were excluded. Demographics, Epworth-Sleepiness-Scale scores, polysomnographic data, arterial blood gas analysis, and spirometric measurements were recorded. Results: Of the 419 subjects, 45.1% had obesity hypoventilation syndrome. Apnea hypopnea index (p<0.001), oxygen desaturation index (p<0.001) and sleep time with SpO2<90% (p<0.001) were statistically higher in subjects with obesity hypoventilation syndrome compared to subjects with eucapnic obstructive sleep apnea. The nocturnal mean SpO2 (p<0.001) and lowest SpO2 (p<0.001) were also statistically lower in subjects with obesity hypoventilation syndrome. Logistic regression analysis showed that the lowest SpO2, oxygen desaturation index, apnea hypopnea index and sleep time with SpO2 <90% were related factors for obesity hypoventilation syndrome. Conclusion: Obesity hypoventilation syndrome should be considered when oxygen desaturation index, apnea hypopnea index and sleep time with SpO2 <90% are high. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1797",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "41-46",
+    "views": 7618,
+    "downloads": 10018,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "1637",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1637",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1637",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1637",
+    "localPdfUrl": "js/data/pdfs/1637.pdf",
+    "pdfUrl": "js/data/pdfs/1637.pdf"
+  },
+  {
+    "id": 1638,
+    "type": "Original Article",
+    "title": "Determination of Seroprevalence of Borrelia burgdorferi IgG in Adult Population Living in Trabzon",
+    "authors": [
+      {
+        "name": "Merve Cora",
+        "affiliation": "Department of Medical Microbiology, Karadeniz Technical University School of Medicine, Trabzon, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Neşe Kaklıkkaya",
+        "affiliation": "Department of Medical Microbiology, Karadeniz Technical University School of Medicine, Trabzon, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Topbaş",
+        "affiliation": "Department of Public Health, Karadeniz Technical University School of Medicine, Trabzon, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Gamze Çan",
+        "affiliation": "Department of Public Health, Karadeniz Technical University School of Medicine, Trabzon, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Asuman Yavuzyılmaz",
+        "affiliation": "Trabzon Provincial Health Directorate, Trabzon, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İlknur Tosun",
+        "affiliation": "Department of Medical Microbiology, Karadeniz Technical University School of Medicine, Trabzon, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Faruk Aydın [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Lyme borreliosis is a tick-borne, multi-systemic infectious disease that is thought to be wide spread in Turkey even though studies on its seroprevalence are limited. Aims: To determine the seroprevalence of Lyme borreliosis in part of north-eastern Tur-key (in the city of Trabzon), and to identify possible relationships between seropositivity and various factors such as location, gender, age group, occupation, income, and educational level. Study Design: Retrospective cross-sectional study. Methods: A total of 884 blood samples collected from provincial and district health centers serving a population of about 800,000 were included in this study. ELISA was used to determine the anti-Borrelia IgG antibody levels in the samples. Samples that yielded positive results by ELISA were further subjected to western blot (WB). Results: IgG antibodies were found in 128 samples (14.5%). Statistical analysis revealed significant differences between age groups and educational levels in terms of the incidence of seropositivity, whereas location, gender, occupational group and income level had no effect (p<0.001, p<0.001, p=0.948, p=0.645, p=0.131, p=0.080 respectively). Conclusions: The risk of contracting Lyme borreliosis in Trabzon is high, and necessary measures need to be taken to avoid the spread of disease. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Abstract</strong></p>\r\n<p>\r\n\t<strong>Background</strong>: Lyme borreliosis is a tick-borne, multi-systemic infectious disease that is thought to be wide spread in Turkey even though studies on its seroprevalence are limited.<br />\r\n\t<strong>Aims</strong>: To determine the seroprevalence of Lyme borreliosis in part of north-eastern Tur-key (in the city of Trabzon), and to identify possible relationships between seropositivity and various factors such as location, gender, age group, occupation, income, and educational level.<br />\r\n\t<strong>Study Design</strong>: Retrospective cross-sectional study.<br />\r\n\t<strong>Methods</strong>: A total of 884 blood samples collected from provincial and district health centers serving a population of about 800,000 were included in this study. ELISA was used to determine the anti-Borrelia IgG antibody levels in the samples. Samples that yielded positive results by ELISA were further subjected to western blot (WB).<br />\r\n\t<strong>Results</strong>: IgG antibodies were found in 128 samples (14.5%). Statistical analysis revealed significant differences between age groups and educational levels in terms of the incidence of seropositivity, whereas location, gender, occupational group and income level had no effect (p&lt;0.001, p&lt;0.001, p=0.948, p=0.645, p=0.131, p=0.080 respectively).<br />\r\n\t<strong>Conclusions</strong>: The risk of contracting Lyme borreliosis in Trabzon is high, and necessary measures need to be taken to avoid the spread of disease.</p>\r\n<p>\r\n\t----------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Lyme borreliosis is a tick-borne, multi-systemic infectious disease that is thought to be wide spread in Turkey even though studies on its seroprevalence are limited. Aims: To determine the seroprevalence of Lyme borreliosis in part of north-eastern Tur-key (in the city of Trabzon), and to identify possible relationships between seropositivity and various factors such as location, gender, age group, occupation, income, and educational level. Study Design: Retrospective cross-sectional study. Methods: A total of 884 blood samples collected from provincial and district health centers serving a population of about 800,000 were included in this study. ELISA was used to determine the anti-Borrelia IgG antibody levels in the samples. Samples that yielded positive results by ELISA were further subjected to western blot (WB). Results: IgG antibodies were found in 128 samples (14.5%). Statistical analysis revealed significant differences between age groups and educational levels in terms of the incidence of seropositivity, whereas location, gender, occupational group and income level had no effect (p<0.001, p<0.001, p=0.948, p=0.645, p=0.131, p=0.080 respectively). Conclusions: The risk of contracting Lyme borreliosis in Trabzon is high, and necessary measures need to be taken to avoid the spread of disease. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.0478",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "47-52",
+    "views": 6289,
+    "downloads": 9901,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "1638",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1638",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1638",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1638",
+    "localPdfUrl": "js/data/pdfs/1638.pdf",
+    "pdfUrl": "js/data/pdfs/1638.pdf"
+  },
+  {
+    "id": 1639,
+    "type": "Original Article",
+    "title": "Petroselinum Crispum is Effective in Reducing Stress-Induced Gastric Oxidative Damage",
+    "authors": [
+      {
+        "name": "Ayşin Akıncı",
+        "affiliation": "Doğu Fertil IVF Center, Malatya, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mukaddes Eşrefoğlu",
+        "affiliation": "Department of Histology and Embryology, Bezmialem Vakıf University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Elif Taşlıdere",
+        "affiliation": "Department of Histology and Embryology, Bezmialem Vakıf University Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Burhan Ateş",
+        "affiliation": "Department of Chemistry, İnönü University Faculty of Science and Art, Malatya, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Oxidative stress has been shown to play a principal role in the pathogenesis of stress-induced gastric injury. Parsley (Petroselinum crispum) contains many antioxidants such as flavanoids, carotenoids and ascorbic acid. Aims: In this study, the histopathological and biochemical results of nutrition with a parsley-rich diet in terms of eliminating stress-induced oxidative gastric injury were evaluated. Study Design: Animal experimentation. Methods: Forty male Wistar albino rats were divided into five groups: control, stress, stress + standard diet, stress + parsley-added diet and stress + lansoprazole (LPZ) groups. Subjects were exposed to 72 hours of fasting and later immobilized and exposed to the cold at +4 degrees for 8 hours to create a severe stress condition. Samples from the animals’ stomachs were arranged for microscopic and biochemical examinations. Results: Gastric mucosal injury was obvious in rats exposed to stress. The histopathologic damage score of the stress group (7.00±0.57) was higher than that of the control group (1.50±0.22) (p<0.05). Significant differences in histopathologic damage score were found between the stress and stress + parsley-added diet groups (p<0.05), the stress and stress + standard diet groups (p<0.05), and the stress and stress + LPZ groups (p<0.05). The mean tissue malondialdehyde levels of the stress + parsley-added group and the stress + LPZ group were lower than that of the stress group (p<0.05). Parsley supported the cellular antioxidant system by increasing the mean tissue glutathione level (53.31±9.50) and superoxide dismutase (15.18±1.05) and catalase (16.68±2.29) activities. Conclusion: Oral administration of parsley is effective in reducing stress-induced gastric injury by supporting the cellular antioxidant defence system. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Abstract</strong></p>\r\n<p>\r\n\t<strong>Background</strong>: Oxidative stress has been shown to play a principal role in the pathogenesis of stress-induced gastric injury. Parsley (Petroselinum crispum) contains many antioxidants such as flavanoids, carotenoids and ascorbic acid.<br />\r\n\t<strong>Aims</strong>: In this study, the histopathological and biochemical results of nutrition with a parsley-rich diet in terms of eliminating stress-induced oxidative gastric injury were evaluated.<br />\r\n\t<strong>Study Design</strong>: Animal experimentation.<br />\r\n\t<strong>Methods</strong>: Forty male Wistar albino rats were divided into five groups: control, stress, stress + standard diet, stress + parsley-added diet and stress + lansoprazole (LPZ) groups. Subjects were exposed to 72 hours of fasting and later immobilized and exposed to the cold at +4 degrees for 8 hours to create a severe stress condition. Samples from the animals&rsquo; stomachs were arranged for microscopic and biochemical examinations.<br />\r\n\t<strong>Results</strong>: Gastric mucosal injury was obvious in rats exposed to stress. The histopathologic damage score of the stress group (7.00&plusmn;0.57) was higher than that of the control group (1.50&plusmn;0.22) (p&lt;0.05). Significant differences in histopathologic damage score were found between the stress and stress + parsley-added diet groups (p&lt;0.05), the stress and stress + standard diet groups (p&lt;0.05), and the stress and stress + LPZ groups (p&lt;0.05). The mean tissue malondialdehyde levels of the stress + parsley-added group and the stress + LPZ group were lower than that of the stress group (p&lt;0.05). Parsley supported the cellular antioxidant system by increasing the mean tissue glutathione level (53.31&plusmn;9.50) and superoxide dismutase (15.18&plusmn;1.05) and catalase (16.68&plusmn;2.29) activities.<br />\r\n\t<strong>Conclusion</strong>: Oral administration of parsley is effective in reducing stress-induced gastric injury by supporting the cellular antioxidant defence system.</p>\r\n<p>\r\n\t----------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Oxidative stress has been shown to play a principal role in the pathogenesis of stress-induced gastric injury. Parsley (Petroselinum crispum) contains many antioxidants such as flavanoids, carotenoids and ascorbic acid. Aims: In this study, the histopathological and biochemical results of nutrition with a parsley-rich diet in terms of eliminating stress-induced oxidative gastric injury were evaluated. Study Design: Animal experimentation. Methods: Forty male Wistar albino rats were divided into five groups: control, stress, stress + standard diet, stress + parsley-added diet and stress + lansoprazole (LPZ) groups. Subjects were exposed to 72 hours of fasting and later immobilized and exposed to the cold at +4 degrees for 8 hours to create a severe stress condition. Samples from the animals’ stomachs were arranged for microscopic and biochemical examinations. Results: Gastric mucosal injury was obvious in rats exposed to stress. The histopathologic damage score of the stress group (7.00±0.57) was higher than that of the control group (1.50±0.22) (p<0.05). Significant differences in histopathologic damage score were found between the stress and stress + parsley-added diet groups (p<0.05), the stress and stress + standard diet groups (p<0.05), and the stress and stress + LPZ groups (p<0.05). The mean tissue malondialdehyde levels of the stress + parsley-added group and the stress + LPZ group were lower than that of the stress group (p<0.05). Parsley supported the cellular antioxidant system by increasing the mean tissue glutathione level (53.31±9.50) and superoxide dismutase (15.18±1.05) and catalase (16.68±2.29) activities. Conclusion: Oral administration of parsley is effective in reducing stress-induced gastric injury by supporting the cellular antioxidant defence system. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1411",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "53-59",
+    "views": 7201,
+    "downloads": 10751,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "1639",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1639",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1639",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1639",
+    "localPdfUrl": "js/data/pdfs/1639.pdf",
+    "pdfUrl": "js/data/pdfs/1639.pdf"
+  },
+  {
+    "id": 2034,
+    "type": "Original Article",
+    "title": "The Relations Between HSG Proven Tubal Occlusion, Stimulated Intrauterine Insemination and Pregnancy Rate",
+    "authors": [
+      {
+        "name": "Gonca Yetkin Yıldırım",
+        "affiliation": "Department of Obstetrics and Gynaecology, Kanuni Sultan Süleyman Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ahu Orta Korkut",
+        "affiliation": "Department of Obstetrics and Gynaecology, Mardin Women and Children Hospital, Mardin, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nadiye Köroğlu",
+        "affiliation": "Department of Obstetrics and Gynaecology, Kanuni Sultan Süleyman Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Lale Susan Türkgeldi",
+        "affiliation": "Department of Obstetrics and Gynaecology, Kanuni Sultan Süleyman Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Background: Tubal factor infertility is one of the main causes of female infertility. Although its sensitivity is low, hysterosalpingography (HSG) is remains the firstline method for evaluating tubal patency. Aims: To compare pregnancy rates in patients with HSG proven proximal or distal unilateral tubal occlusion,and unexplained infertility undergoing both controlled ovarian stimulation (COS) and intrauterine insemination(IUI). Study Design: Case control study. Methods: In total, 237 patients undergoing ovulation induction (OI) with gonadotropins and IUI were divided into two groups and evaluated. Study group consisted 59 patients with HSG proven unilateral tubal pathology, and 178 patients with unexplained infertility taken as control subjects. Cumulative pregnancy rate was the primary endpoint. Results: Cumulative pregnancy rates after three cycles of OI and IUI were 15.25% in study group and 20.79% in control group. Pregnancy rates between two groups were not statistically significant. Although, pregnancy rates in patients with proximal tubal occlusion (21.8%) were higher than in those with distal tubal occlusion (7.4%), the difference was not statistically significant. Conclusion: Our study data shows that, regardless of the HCG proven occlusion area, COS and IUI might be a preferred treatment modality in patient with unilateral tubal occlusion.",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p><strong>Background</strong>: Tubal factor infertility is one of the main causes of female infertility. Although its sensitivity is low, hysterosalpingography (HSG) is remains the firstline method for evaluating tubal patency.</p>\r\n<p><strong>Aims</strong>: To compare pregnancy rates in patients with HSG proven proximal or distal unilateral tubal occlusion,<br />and unexplained infertility undergoing both controlled ovarian stimulation (COS) and intrauterine insemination<br />(IUI).</p>\r\n<p><strong>Study Design</strong>: Case control study.</p>\r\n<p><strong>Methods</strong>: In total, 237 patients undergoing ovulation induction (OI) with gonadotropins and IUI were divided into two groups and evaluated. Study group consisted 59 patients with HSG proven unilateral tubal pathology, and 178 patients with unexplained infertility taken as control subjects. Cumulative pregnancy rate was the primary endpoint.</p>\r\n<p><strong>Results</strong>: Cumulative pregnancy rates after three cycles of OI and IUI were 15.25% in study group and 20.79% in control group. Pregnancy rates between two groups were not statistically significant. Although, pregnancy rates in patients with proximal tubal occlusion (21.8%) were higher than in those with distal tubal occlusion (7.4%), the difference was not statistically significant.</p>\r\n<p><strong>Conclusion</strong>: Our study data shows that, regardless of the HCG proven occlusion area, COS and IUI might be a preferred treatment modality in patient with unilateral tubal occlusion.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Background: Tubal factor infertility is one of the main causes of female infertility. Although its sensitivity is low, hysterosalpingography (HSG) is remains the firstline method for evaluating tubal patency. Aims: To compare pregnancy rates in patients with HSG proven proximal or distal unilateral tubal occlusion,and unexplained infertility undergoing both controlled ovarian stimulation (COS) and intrauterine insemination(IUI). Study Design: Case control study. Methods: In total, 237 patients undergoing ovulation induction (OI) with gonadotropins and IUI were divided into two groups and evaluated. Study group consisted 59 patients with HSG proven unilateral tubal pathology, and 178 patients with unexplained infertility taken as control subjects. Cumulative pregnancy rate was the primary endpoint. Results: Cumulative pregnancy rates after three cycles of OI and IUI were 15.25% in study group and 20.79% in control group. Pregnancy rates between two groups were not statistically significant. Although, pregnancy rates in patients with proximal tubal occlusion (21.8%) were higher than in those with distal tubal occlusion (7.4%), the difference was not statistically significant. Conclusion: Our study data shows that, regardless of the HCG proven occlusion area, COS and IUI might be a preferred treatment modality in patient with unilateral tubal occlusion.",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0289",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "60-63",
+    "views": 6792,
+    "downloads": 9763,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "2034",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2034",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2034",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2034",
+    "localPdfUrl": "js/data/pdfs/2034.pdf",
+    "pdfUrl": "js/data/pdfs/2034.pdf"
+  },
+  {
+    "id": 1640,
+    "type": "Original Article",
+    "title": "Publication Rates and Inconsistencies of the Abstracts Presented at the\r\nNational Anatomy Congresses in 2007 and 2008",
+    "authors": [
+      {
+        "name": "İlke Ali Gürses",
+        "affiliation": "Department of Anatomy, İstanbul University İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Özcan Gayretli",
+        "affiliation": "Department of Anatomy, İstanbul University İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Başak Gürtekin",
+        "affiliation": "Department of Biostatistics and Medical Informatics, İstanbul University İstanbul Faculty of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Adnan Öztürk [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Despite significant efforts made for, most abstracts presented during a meeting do not proceed and publish as a manuscript in scientific journals. Aims: To investigate publication rates of national anatomy congresses. Study Design: Descriptive study. Methods: All abstracts presented at two annual meetings in 2007 and 2008 were extracted. PubMed and Google Scholar database search used for publication history. Presentation and study types, publication rates and mean publishing times were evaluated. Inconsistency rates between meeting abstract and final published article were also considered. Results: Among 342 abstracts, 195 (57%) were followed by a full-text article. Publication rates for oral and poster presentations were 75% and 52.2%, respectively. The mean publication time was 23.7±23 months. Overall, 89.2% of the articles were published within 5 years. There were no inconsistencies in 50 (25.6%) articles, while 145 (74.4%) had inconsistencies compared to the abstracts presented at the congress. Getting adequate information for 45 (23.1%) articles was not possible. There was no standard reporting format for the abstracts. Conclusion: Our study shows that, overall publication rates for abstracts presented at national anatomy meetings were higher than those presented at national meetings for clinical specialties. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Abstract</strong></p>\r\n<p>\r\n\t<strong>Background</strong>: Despite significant efforts made for, most abstracts presented during a meeting do not proceed and publish as a manuscript in scientific journals.<br />\r\n\t<strong>Aims</strong>: To investigate publication rates of national anatomy congresses.<br />\r\n\t<strong>Study Design</strong>: Descriptive study.<br />\r\n\t<strong>Methods</strong>: All abstracts presented at two annual meetings in 2007 and 2008 were extracted. PubMed and Google Scholar database search used for publication history. Presentation and study types, publication rates and mean publishing times were evaluated. Inconsistency rates between meeting abstract and final published article were also considered.<br />\r\n\t<strong>Results</strong>: Among 342 abstracts, 195 (57%) were followed by a full-text article. Publication rates for oral and poster presentations were 75% and 52.2%, respectively. The mean publication time was 23.7&plusmn;23 months. Overall, 89.2% of the articles were published within 5 years. There were no inconsistencies in 50 (25.6%) articles, while 145 (74.4%) had inconsistencies compared to the abstracts presented at the congress. Getting adequate information for 45 (23.1%) articles was not possible. There was no standard reporting format for the abstracts.<br />\r\n\t<strong>Conclusion</strong>: Our study shows that, overall publication rates for abstracts presented at national anatomy meetings were higher than those presented at national meetings for clinical specialties.</p>\r\n<p>\r\n\t----------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Despite significant efforts made for, most abstracts presented during a meeting do not proceed and publish as a manuscript in scientific journals. Aims: To investigate publication rates of national anatomy congresses. Study Design: Descriptive study. Methods: All abstracts presented at two annual meetings in 2007 and 2008 were extracted. PubMed and Google Scholar database search used for publication history. Presentation and study types, publication rates and mean publishing times were evaluated. Inconsistency rates between meeting abstract and final published article were also considered. Results: Among 342 abstracts, 195 (57%) were followed by a full-text article. Publication rates for oral and poster presentations were 75% and 52.2%, respectively. The mean publication time was 23.7±23 months. Overall, 89.2% of the articles were published within 5 years. There were no inconsistencies in 50 (25.6%) articles, while 145 (74.4%) had inconsistencies compared to the abstracts presented at the congress. Getting adequate information for 45 (23.1%) articles was not possible. There was no standard reporting format for the abstracts. Conclusion: Our study shows that, overall publication rates for abstracts presented at national anatomy meetings were higher than those presented at national meetings for clinical specialties. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0360",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "64-70",
+    "views": 5991,
+    "downloads": 9497,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "1640",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1640",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1640",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1640",
+    "localPdfUrl": "js/data/pdfs/1640.pdf",
+    "pdfUrl": "js/data/pdfs/1640.pdf"
+  },
+  {
+    "id": 1641,
+    "type": "Case Report",
+    "title": "Spontaneous Remission of Congenital Complete Atrioventricular Block in Anti-Ro/La Antibody-Negative Monozygotic Twins: Case Report",
+    "authors": [
+      {
+        "name": "Taner Kasar",
+        "affiliation": "Department of Pediatric Cardiology, İstanbul Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Center and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Saygı",
+        "affiliation": "Department of Pediatric Cardiology, İstanbul Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Center and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "İsa Özyılmaz",
+        "affiliation": "Department of Pediatric Cardiology, İstanbul Mehmet Akif Ersoy Thoracic and Cardiovascular Surgery Center and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Yakup Ergül [[1]] <",
+        "affiliation": "",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Congenital complete atrioventricular block without any structural heart disease and anti-Ro/La negativity is very rare. Discordant complete atrioventricular block, which is more frequently defined in the literature as an autoimmune mechanism, is much more rare in monozygotic twins. Case Report: The 26-year-old healthy mother had given birth in her first spontaneous, uneventful pregnancy to monozygotic twins at week 35. While the first twin’s physical examination proved her to be normal with a pulse rate consistent with her age, the second twin had a pulse rate of approximately 40 beats/minute.The patient was confirmed to have congenital complete atrioventricular block. Conclusion: Despite this case appears to be an isolated one, a discordant complete atrioventricular block regression without any autoimmune evidence should be included in the differential diagnosis of bradycardia in infants. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Abstract</strong></p>\r\n<p>\r\n\t<strong>Background</strong>: Congenital complete atrioventricular block without any structural heart disease and anti-Ro/La negativity is very rare. Discordant complete atrioventricular block, which is more frequently defined in the literature as an autoimmune mechanism, is much more rare in monozygotic twins.<br />\r\n\t<strong>Case Report</strong>: The 26-year-old healthy mother had given birth in her first spontaneous, uneventful pregnancy to monozygotic twins at week 35. While the first twin&rsquo;s physical examination proved her to be normal with a pulse rate consistent with her age, the second twin had a pulse rate of approximately 40 beats/minute.The patient was confirmed to have congenital complete atrioventricular block.<br />\r\n\t<strong>Conclusion</strong>: Despite this case appears to be an isolated one, a discordant complete atrioventricular block regression without any autoimmune evidence should be included in the differential diagnosis of bradycardia in infants.</p>\r\n<p>\r\n\t----------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Congenital complete atrioventricular block without any structural heart disease and anti-Ro/La negativity is very rare. Discordant complete atrioventricular block, which is more frequently defined in the literature as an autoimmune mechanism, is much more rare in monozygotic twins. Case Report: The 26-year-old healthy mother had given birth in her first spontaneous, uneventful pregnancy to monozygotic twins at week 35. While the first twin’s physical examination proved her to be normal with a pulse rate consistent with her age, the second twin had a pulse rate of approximately 40 beats/minute.The patient was confirmed to have congenital complete atrioventricular block. Conclusion: Despite this case appears to be an isolated one, a discordant complete atrioventricular block regression without any autoimmune evidence should be included in the differential diagnosis of bradycardia in infants. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.0535",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "71-73",
+    "views": 6552,
+    "downloads": 9817,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "1641",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1641",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1641",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1641",
+    "localPdfUrl": "js/data/pdfs/1641.pdf",
+    "pdfUrl": "js/data/pdfs/1641.pdf"
+  },
+  {
+    "id": 1642,
+    "type": "Case Report",
+    "title": "Empyema due to Streptococcus Pneumoniae Serotype 9V in a Child Immunized with 13-Valent Conjugated Pneumococcal Vaccine",
+    "authors": [
+      {
+        "name": "Murat Sütçü",
+        "affiliation": "Department of Pediatric Infectious Diseases, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Hacer Aktürk",
+        "affiliation": "Department of Pediatric Infectious Diseases, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Fatih Karagözlü",
+        "affiliation": "Department of Pediatric Infectious Diseases, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Ayper Somer",
+        "affiliation": "Department of Pediatric Infectious Diseases, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nezahat Gürler",
+        "affiliation": "Department of Clinical Microbiology, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Nuran Salman",
+        "affiliation": "Department of Pediatric Infectious Diseases, İstanbul University İstanbul School of Medicine, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Clinical vaccine failure is the occurence of the specific vaccine-preventable disease in an appropriately and fully vaccinated person after enough time has elapsed for protection against the antigens of the vaccine to develop. Fully immunized cases with pneumoccal vaccine may sometimes develop a complicated pneumonia with empyema caused by a vaccine serotype. Case Report: A 2 year-old male patient was admitted with the complaints of fever. On the basis of findings and laboratory results, the patient was diagnosed as having empyema. He was successfully treated with parenteral antibiotics and chest tube drainage. The pleural fluid culture and hemoculture of the patient yielded penicillin-susceptible pneumococci and the isolate was identified as serotype 9V. The patient had been vaccinated with a 13-valent pneumococcal conjugate vaccine according to the Turkish national immunization schedule at 2, 4, 6 and 12 months of age. His medical history and basic immunological profile were inconsistent with a primary immunodeficiency. Conclusion: The failure of the PCV13 vaccine may results in a complicated pneumonia with empyema. It is important to investigate serotypes of pneumococci in these cases to determine other possible vaccine failures due to PCV13 and to study the underlying mechanisms. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Abstract</strong></p>\r\n<p>\r\n\t<strong>Background</strong>: Clinical vaccine failure is the occurence of the specific vaccine-preventable disease in an appropriately and fully vaccinated person after enough time has elapsed for protection against the antigens of the vaccine to develop. Fully immunized cases with pneumoccal vaccine may sometimes develop a complicated pneumonia with empyema caused by a vaccine serotype.<br />\r\n\t<strong>Case Report</strong>: A 2 year-old male patient was admitted with the complaints of fever. On the basis of findings and laboratory results, the patient was diagnosed as having empyema. He was successfully treated with parenteral antibiotics and chest tube drainage. The pleural fluid culture and hemoculture of the patient yielded penicillin-susceptible pneumococci and the isolate was identified as serotype 9V. The patient had been vaccinated with a 13-valent pneumococcal conjugate vaccine according to the Turkish national immunization schedule at 2, 4, 6 and 12 months of age. His medical history and basic immunological profile were inconsistent with a primary immunodeficiency.<br />\r\n\t<strong>Conclusion</strong>: The failure of the PCV13 vaccine may results in a complicated pneumonia with empyema. It is important to investigate serotypes of pneumococci in these cases to determine other possible vaccine failures due to PCV13 and to study the underlying mechanisms.</p>\r\n<p>\r\n\t----------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Clinical vaccine failure is the occurence of the specific vaccine-preventable disease in an appropriately and fully vaccinated person after enough time has elapsed for protection against the antigens of the vaccine to develop. Fully immunized cases with pneumoccal vaccine may sometimes develop a complicated pneumonia with empyema caused by a vaccine serotype. Case Report: A 2 year-old male patient was admitted with the complaints of fever. On the basis of findings and laboratory results, the patient was diagnosed as having empyema. He was successfully treated with parenteral antibiotics and chest tube drainage. The pleural fluid culture and hemoculture of the patient yielded penicillin-susceptible pneumococci and the isolate was identified as serotype 9V. The patient had been vaccinated with a 13-valent pneumococcal conjugate vaccine according to the Turkish national immunization schedule at 2, 4, 6 and 12 months of age. His medical history and basic immunological profile were inconsistent with a primary immunodeficiency. Conclusion: The failure of the PCV13 vaccine may results in a complicated pneumonia with empyema. It is important to investigate serotypes of pneumococci in these cases to determine other possible vaccine failures due to PCV13 and to study the underlying mechanisms. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.0937",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "74-77",
+    "views": 6681,
+    "downloads": 9822,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "1642",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1642",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1642",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1642",
+    "localPdfUrl": "js/data/pdfs/1642.pdf",
+    "pdfUrl": "js/data/pdfs/1642.pdf"
+  },
+  {
+    "id": 1643,
+    "type": "Case Report",
+    "title": "Brucella Melitensis As Causative Agent for Neck Abscess in an Endemic Area",
+    "authors": [
+      {
+        "name": "Styliani Sarrou",
+        "affiliation": "Department of Microbiology, University Hospital of Larissa, Larissa, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Charalampos Skoulakis",
+        "affiliation": "Department of Otorhinolaryngology, University Hospital of Larissa, Larissa, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Jiannis Hajiioannou",
+        "affiliation": "Department of Otorhinolaryngology, University Hospital of Larissa, Larissa, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Efi Petinaki",
+        "affiliation": "Department of Microbiology, University Hospital of Larissa, Larissa, Greece",
+        "orcid": ""
+      },
+      {
+        "name": "Ioannis Bizakis",
+        "affiliation": "Department of Otorhinolaryngology, University Hospital of Larissa, Larissa, Greece",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Brucellosis, a zoonotic disease, is very common in the Mediterranean basin and a major concern in livestock areas. We present a rare case of a Brucella-caused abscess in the neck of a stock-breeder in an endemic Greek area. Case Report: A 39-year-old male, living in the rural area of Thessaly, presented with a mass in the left area of his neck. Clinical examination and imaging tests revealed an abscess in the left sternocleidomastoid muscle. Sampling of the abscess by fine-needle aspiration yielded inflammatory fluid (17x103 cells/μL). Molecular sequencing (16S rRNA polymerase chain reaction) performed directly in the clinical sample identified the presence of Brucella melitensis within 24 hours after material sampling. The microorganism was isolated in agar media four days later. The Rose-Bengal test was negative, while the Brucellacapt test showed titer 1/320. Given the results obtained with these molecular techniques, the patient was offered treatment with streptomycin (1 g for 3 weeks) and oral doxycycline (100 mg twice daily for 6 weeks), concurrently. Conclusion: In areas endemic for brucellosis, the investigation of a patient with a neck abscess should include Brucella spp. among possible causative agents. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Abstract</strong></p>\r\n<p>\r\n\t<strong>Background</strong>: Brucellosis, a zoonotic disease, is very common in the Mediterranean basin and a major concern in livestock areas. We present a rare case of a Brucella-caused abscess in the neck of a stock-breeder in an endemic Greek area.<br />\r\n\t<strong>Case Report</strong>: A 39-year-old male, living in the rural area of Thessaly, presented with a mass in the left area of his neck. Clinical examination and imaging tests revealed an abscess in the left sternocleidomastoid muscle. Sampling of the abscess by fine-needle aspiration yielded inflammatory fluid (17x103 cells/&mu;L). Molecular sequencing (16S rRNA polymerase chain reaction) performed directly in the clinical sample identified the presence of Brucella melitensis within 24 hours after material sampling. The microorganism was isolated in agar media four days later. The Rose-Bengal test was negative, while the Brucellacapt test showed titer 1/320. Given the results obtained with these molecular techniques, the patient was offered treatment with streptomycin (1 g for 3 weeks) and oral doxycycline (100 mg twice daily for 6 weeks), concurrently.<br />\r\n\t<strong>Conclusion</strong>: In areas endemic for brucellosis, the investigation of a patient with a neck abscess should include Brucella spp. among possible causative agents.</p>\r\n<p>\r\n\t----------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Brucellosis, a zoonotic disease, is very common in the Mediterranean basin and a major concern in livestock areas. We present a rare case of a Brucella-caused abscess in the neck of a stock-breeder in an endemic Greek area. Case Report: A 39-year-old male, living in the rural area of Thessaly, presented with a mass in the left area of his neck. Clinical examination and imaging tests revealed an abscess in the left sternocleidomastoid muscle. Sampling of the abscess by fine-needle aspiration yielded inflammatory fluid (17x103 cells/μL). Molecular sequencing (16S rRNA polymerase chain reaction) performed directly in the clinical sample identified the presence of Brucella melitensis within 24 hours after material sampling. The microorganism was isolated in agar media four days later. The Rose-Bengal test was negative, while the Brucellacapt test showed titer 1/320. Given the results obtained with these molecular techniques, the patient was offered treatment with streptomycin (1 g for 3 weeks) and oral doxycycline (100 mg twice daily for 6 weeks), concurrently. Conclusion: In areas endemic for brucellosis, the investigation of a patient with a neck abscess should include Brucella spp. among possible causative agents. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1143",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "78-80",
+    "views": 6100,
+    "downloads": 9611,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "1643",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1643",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1643",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1643",
+    "localPdfUrl": "js/data/pdfs/1643.pdf",
+    "pdfUrl": "js/data/pdfs/1643.pdf"
+  },
+  {
+    "id": 1644,
+    "type": "Case Report",
+    "title": "Giant J (Osborn) Wave due to Bonsai Abuse: Comments on Clinical Practice",
+    "authors": [
+      {
+        "name": "Murat Yalçın",
+        "affiliation": "Department of Cardiology, Sultan Abdülhamid Han Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Mustafa Aparcı",
+        "affiliation": "Department of Cardiology, Kasımpaşa Military Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Murat Eroğlu",
+        "affiliation": "Department of Emergency Medicine, Sultan Abdülhamid Han Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Zafer Işılak",
+        "affiliation": "Department of Cardiology, Sultan Abdülhamid Han Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Namık Özmen",
+        "affiliation": "Department of Cardiology, Sultan Abdülhamid Han Training and Research Hospital, İstanbul, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Osborn wave, typically associated with hypothermia, is currently referred to as one of the J wave syndromes due to its clinical potential to develop lethal cardiac arrhythmia; it may rarely be observed in a non-hypothermic setting such as cannabis abuse. Case Report: In this paper, we presented two young cases who presented to the emergency services with unconsciousness, drowsiness, and hypoxia, and also J wave on electrocardiography (ECG) due to Bonsai abuse. Conclusion: Osborn wave may be a significant criterion to initiate close monitoring in a coronary care unit, with supportive treatment and mechanical ventilation as necessary in those patients who abuse Bonsai. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Abstract</strong></p>\r\n<p>\r\n\t<strong>Background</strong>: Osborn wave, typically associated with hypothermia, is currently referred to as one of the J wave syndromes due to its clinical potential to develop lethal cardiac arrhythmia; it may rarely be observed in a non-hypothermic setting such as cannabis abuse.<br />\r\n\t<strong>Case Report</strong>: In this paper, we presented two young cases who presented to the emergency services with unconsciousness, drowsiness, and hypoxia, and also J wave on electrocardiography (ECG) due to Bonsai abuse.<br />\r\n\t<strong>Conclusion</strong>: Osborn wave may be a significant criterion to initiate close monitoring in a coronary care unit, with supportive treatment and mechanical ventilation as necessary in those patients who abuse Bonsai.</p>\r\n<p>\r\n\t----------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Osborn wave, typically associated with hypothermia, is currently referred to as one of the J wave syndromes due to its clinical potential to develop lethal cardiac arrhythmia; it may rarely be observed in a non-hypothermic setting such as cannabis abuse. Case Report: In this paper, we presented two young cases who presented to the emergency services with unconsciousness, drowsiness, and hypoxia, and also J wave on electrocardiography (ECG) due to Bonsai abuse. Conclusion: Osborn wave may be a significant criterion to initiate close monitoring in a coronary care unit, with supportive treatment and mechanical ventilation as necessary in those patients who abuse Bonsai. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1233",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "81-84",
+    "views": 5785,
+    "downloads": 9662,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "1644",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1644",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1644",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1644",
+    "localPdfUrl": "js/data/pdfs/1644.pdf",
+    "pdfUrl": "js/data/pdfs/1644.pdf"
+  },
+  {
+    "id": 1645,
+    "type": "Case Report",
+    "title": "Olanzapine-induced Priapism in a Child with Asperger’s Syndrome",
+    "authors": [
+      {
+        "name": "Hasan Bozkurt",
+        "affiliation": "Department of Child and Adolescent Psychiatry, Gaziosmanpaşa University Hospital, Tokat, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Serkan Şahin",
+        "affiliation": "Department of Child and Adolescent Psychiatry, Gaziosmanpaşa University Hospital, Tokat, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "Abstract Background: Priapism is a potentially painful and prolonged erection that occurs in the absence of any stimulation. Olanzapine has been reported to induce priapism in several adult cases with schizophrenia and/or mood disorders but very rarely reported in children. Case Report: 9-year-old male with Asperger’s Syndrome (AS) referred to our clinic with the complaints of inattention, hyperactivity and impulsivity. He was diagnosed with attention deficit hyperactivity disorder (ADHD) and given methylphenidate treatment which ameliorated his ADHD symptoms. He started to have severe loss of appetite after methylphenidate treatment so olanzapine 2.5 mg/day was added to cope with severe inappetence. However he experienced priapism after olanzapine and priapism resolved after ceasing the drug. His mother restarted olanzapine because he benefited from olanzapine. But the same episodes occurred soon after olanzapine again and his mother had to stop the medication. Conclusion: Because atypical antipsychotics are now widely used in children, unusual side effects such as priapism should be taken into consideration for the differential diagnosis. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<p>\r\n\t<strong>Abstract</strong></p>\r\n<p>\r\n\tBackground: Priapism is a potentially painful and prolonged erection that occurs in the absence of any stimulation. Olanzapine has been reported to induce priapism in several adult cases with schizophrenia and/or mood disorders but very rarely reported in children.<br />\r\n\tCase Report: 9-year-old male with Asperger&rsquo;s Syndrome (AS) referred to our clinic with the complaints of inattention, hyperactivity and impulsivity. He was diagnosed with attention deficit hyperactivity disorder (ADHD) and given methylphenidate treatment which ameliorated his ADHD symptoms. He started to have severe loss of appetite after methylphenidate treatment so olanzapine 2.5 mg/day was added to cope with severe inappetence. However he experienced priapism after olanzapine and priapism resolved after ceasing the drug. His mother restarted olanzapine because he benefited from olanzapine. But the same episodes occurred soon after olanzapine again and his mother had to stop the medication.<br />\r\n\tConclusion: Because atypical antipsychotics are now widely used in children, unusual side effects such as priapism should be taken into consideration for the differential diagnosis.</p>\r\n<p>\r\n\t----------------------------------------------------------------------------------------------------------------------------------------------------------</p>\r\n \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
+    "previewText": "Abstract Background: Priapism is a potentially painful and prolonged erection that occurs in the absence of any stimulation. Olanzapine has been reported to induce priapism in several adult cases with schizophrenia and/or mood disorders but very rarely reported in children. Case Report: 9-year-old male with Asperger’s Syndrome (AS) referred to our clinic with the complaints of inattention, hyperactivity and impulsivity. He was diagnosed with attention deficit hyperactivity disorder (ADHD) and given methylphenidate treatment which ameliorated his ADHD symptoms. He started to have severe loss of appetite after methylphenidate treatment so olanzapine 2.5 mg/day was added to cope with severe inappetence. However he experienced priapism after olanzapine and priapism resolved after ceasing the drug. His mother restarted olanzapine because he benefited from olanzapine. But the same episodes occurred soon after olanzapine again and his mother had to stop the medication. Conclusion: Because atypical antipsychotics are now widely used in children, unusual side effects such as priapism should be taken into consideration for the differential diagnosis. ----------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2015.1300",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "85-87",
+    "views": 6258,
+    "downloads": 3446,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": false,
+    "hasFullText": true,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "1645",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1645",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1645",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1645",
+    "localPdfUrl": "js/data/pdfs/1645.pdf",
+    "pdfUrl": "js/data/pdfs/1645.pdf"
+  },
+  {
+    "id": 1646,
+    "type": "Clinical Image",
+    "title": "Successful Surgical Management of Congenital Prepubic Sinus",
+    "authors": [
+      {
+        "name": "Levent Duman",
+        "affiliation": "Department of Pediatric Surgery, Süleyman Demirel University Medical School, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Çağrı Savaş",
+        "affiliation": "Department of Pediatric Surgery, Süleyman Demirel University Medical School, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Coşkun Özbiçer",
+        "affiliation": "Department of Pediatric Surgery, Süleyman Demirel University Medical School, Isparta, Turkey",
+        "orcid": ""
+      },
+      {
+        "name": "Sema Bircan",
+        "affiliation": "Department of Pathology, Süleyman Demirel University Medical School, Isparta, Turkey",
+        "orcid": ""
+      }
+    ],
+    "abstract": "",
+    "abstractHtml": "",
+    "previewText": "",
+    "keywords": [],
+    "doi": "10.4274/balkanmedj.2016.0538",
+    "received": "",
+    "accepted": "",
+    "published": "2017-01-01",
+    "volume": 34,
+    "issue": "1",
+    "pages": "88-89",
+    "views": 5272,
+    "downloads": 9441,
+    "citations": 0,
+    "featured": false,
+    "imageCorner": true,
+    "hasFullText": false,
+    "sourceIssueId": "1193",
+    "sourceArticleId": "1646",
+    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=1646",
+    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=1646",
+    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=1646",
+    "localPdfUrl": "js/data/pdfs/1646.pdf",
+    "pdfUrl": "js/data/pdfs/1646.pdf"
+  }
+]
