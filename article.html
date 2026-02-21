@@ -1404,8 +1404,9 @@
         var plumxWrap = document.getElementById('plumx-wrapper');
         var altBadge = document.getElementById('altmetric-badge');
         var plumxBadge = document.getElementById('plumx-badge');
-        var emptyNote = document.getElementById('attention-unavailable');
         var doi = normalizeDoi(article.doi);
+        var altmetricScriptFailed = false;
+        var plumxScriptFailed = false;
 
         function hideAttentionPanel() {
           if (!attentionPanel) return;
@@ -1422,7 +1423,6 @@
           if (!attentionGrid) return;
           var altHidden = !altmetricWrap || altmetricWrap.classList.contains('hidden');
           var plumHidden = !plumxWrap || plumxWrap.classList.contains('hidden');
-          var oneVisible = altHidden !== plumHidden;
           var noneVisible = altHidden && plumHidden;
 
           attentionGrid.classList.remove('grid-cols-1');
@@ -1432,46 +1432,39 @@
           if (altmetricWrap) altmetricWrap.style.gridColumn = '';
           if (plumxWrap) plumxWrap.style.gridColumn = '';
 
-          if (oneVisible) {
-            if (!altHidden && altmetricWrap) altmetricWrap.style.gridColumn = '2 / 3';
-            if (!plumHidden && plumxWrap) plumxWrap.style.gridColumn = '2 / 3';
-          }
+          // Rule: Altmetric left, PlumX right; if only PlumX remains, it moves to the left.
+          if (!altHidden && altmetricWrap) altmetricWrap.style.gridColumn = '1 / 2';
+          if (!plumHidden && plumxWrap) plumxWrap.style.gridColumn = altHidden ? '1 / 2' : '2 / 3';
         }
 
-        function hasRenderableBadge(wrapper, badge) {
-          if (!wrapper || !badge) return false;
-          var wrapperStyle = window.getComputedStyle(wrapper);
+        function isProviderHidden(badge) {
+          if (!badge) return true;
           var badgeStyle = window.getComputedStyle(badge);
-          var hiddenByUi = wrapper.getAttribute('data-attention-hidden-by-ui') === '1';
+          if (badgeStyle.display === 'none' || badgeStyle.visibility === 'hidden' || badge.getAttribute('aria-hidden') === 'true') {
+            return true;
+          }
+          return false;
+        }
 
+        function hasBadgePayload(badge) {
+          if (!badge) return false;
           var badgeText = String(badge.textContent || '').replace(/\s+/g, '').trim();
           var hasChildMarkup = !!badge.querySelector('*');
           var rect = badge.getBoundingClientRect();
-          var hasBadgeSize = rect.width > 8 && rect.height > 8;
-
-          if (!hiddenByUi && (wrapperStyle.display === 'none' || wrapperStyle.visibility === 'hidden')) {
-            return false;
-          }
-          if (!hiddenByUi && (badgeStyle.display === 'none' || badgeStyle.visibility === 'hidden' || badge.getAttribute('aria-hidden') === 'true')) {
-            return false;
-          }
+          var hasBadgeSize = rect.width > 14 && rect.height > 14;
           return hasChildMarkup || badgeText.length > 0 || hasBadgeSize;
         }
 
-        function evaluateAttentionPanelVisibility() {
-          var altAvailable = hasRenderableBadge(altmetricWrap, altBadge);
-          var plumAvailable = hasRenderableBadge(plumxWrap, plumxBadge);
+        function resolveBadgeAvailable(badge, scriptFailed) {
+          if (scriptFailed || !badge) return false;
+          if (hasBadgePayload(badge)) return true;
+          // If provider does not explicitly hide the element, keep it available.
+          return !isProviderHidden(badge);
+        }
 
-          if (altmetricWrap) {
-            altmetricWrap.classList.toggle('hidden', !altAvailable);
-            if (altAvailable) altmetricWrap.removeAttribute('data-attention-hidden-by-ui');
-            else altmetricWrap.setAttribute('data-attention-hidden-by-ui', '1');
-          }
-          if (plumxWrap) {
-            plumxWrap.classList.toggle('hidden', !plumAvailable);
-            if (plumAvailable) plumxWrap.removeAttribute('data-attention-hidden-by-ui');
-            else plumxWrap.setAttribute('data-attention-hidden-by-ui', '1');
-          }
+        function applyAttentionVisibility(altAvailable, plumAvailable) {
+          if (altmetricWrap) altmetricWrap.classList.toggle('hidden', !altAvailable);
+          if (plumxWrap) plumxWrap.classList.toggle('hidden', !plumAvailable);
           syncAttentionLayout();
 
           if (!altAvailable && !plumAvailable) {
@@ -1480,7 +1473,32 @@
           }
 
           showAttentionPanel();
-          if (emptyNote) emptyNote.classList.add('hidden');
+        }
+
+        function settleAttentionVisibility() {
+          var attempts = 0;
+          var maxAttempts = 30;
+
+          function check() {
+            attempts += 1;
+
+            var altAvailableNow = resolveBadgeAvailable(altBadge, altmetricScriptFailed);
+            var plumAvailableNow = resolveBadgeAvailable(plumxBadge, plumxScriptFailed);
+
+            if (attempts >= maxAttempts) {
+              applyAttentionVisibility(altAvailableNow, plumAvailableNow);
+              return;
+            }
+
+            if (altmetricWrap) altmetricWrap.classList.toggle('hidden', altmetricScriptFailed);
+            if (plumxWrap) plumxWrap.classList.toggle('hidden', plumxScriptFailed);
+            syncAttentionLayout();
+
+            var delay = attempts < 4 ? 450 : 600;
+            window.setTimeout(check, delay);
+          }
+
+          check();
         }
 
         if (!doi) {
@@ -1495,6 +1513,11 @@
 
         if (plumxBadge) plumxBadge.href = 'https://plu.mx/plum/a/?doi=' + encodeURIComponent(doi);
 
+        if (altmetricWrap) altmetricWrap.classList.remove('hidden');
+        if (plumxWrap) plumxWrap.classList.remove('hidden');
+        showAttentionPanel();
+        syncAttentionLayout();
+
         var altmetricLoad = loadScriptOnce('altmetric-embed-script', 'https://embed.altmetric.com/assets/embed.js')
           .then(function () {
             if (typeof window._altmetric_embed_init === 'function') {
@@ -1502,18 +1525,16 @@
             }
           })
           .catch(function () {
-            if (altmetricWrap) altmetricWrap.classList.add('hidden');
+            altmetricScriptFailed = true;
           });
 
         var plumxLoad = loadScriptOnce('plumx-widget-script', 'https://cdn.plu.mx/widget-popup.js')
           .catch(function () {
-            if (plumxWrap) plumxWrap.classList.add('hidden');
+            plumxScriptFailed = true;
           });
 
         Promise.all([altmetricLoad, plumxLoad]).then(function () {
-          evaluateAttentionPanelVisibility();
-          setTimeout(evaluateAttentionPanelVisibility, 800);
-          setTimeout(evaluateAttentionPanelVisibility, 2200);
+          settleAttentionVisibility();
         });
       }
 
