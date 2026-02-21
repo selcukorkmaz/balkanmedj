@@ -452,6 +452,16 @@
       background: linear-gradient(170deg, #ffffff 0%, #f7fbff 100%);
       min-height: 6rem;
     }
+    .PlumX-Popup .ppp-pop {
+      max-width: min(92vw, 360px) !important;
+      box-sizing: border-box;
+      z-index: 80 !important;
+    }
+    @media (max-width: 640px) {
+      .PlumX-Popup .ppp-pop {
+        max-width: calc(100vw - 16px) !important;
+      }
+    }
     .journal-side-card {
       border: 1px solid #e4e7eb;
       border-radius: 0.95rem;
@@ -525,6 +535,11 @@
       }
       .impact-metric-tile--citations {
         grid-column: 1 / -1;
+      }
+    }
+    @media (max-width: 859px) {
+      #article-secondary-cards details[data-tool-panel="related"] {
+        display: none !important;
       }
     }
     .author-corresponding-icon:hover {
@@ -1437,29 +1452,27 @@
           if (!plumHidden && plumxWrap) plumxWrap.style.gridColumn = altHidden ? '1 / 2' : '2 / 3';
         }
 
-        function isProviderHidden(badge) {
-          if (!badge) return true;
-          var badgeStyle = window.getComputedStyle(badge);
-          if (badgeStyle.display === 'none' || badgeStyle.visibility === 'hidden' || badge.getAttribute('aria-hidden') === 'true') {
-            return true;
+        function isAltmetricAvailable() {
+          if (altmetricScriptFailed || !altBadge) return false;
+          var badgeStyle = window.getComputedStyle(altBadge);
+          if (badgeStyle.display === 'none' || badgeStyle.visibility === 'hidden' || altBadge.getAttribute('aria-hidden') === 'true') {
+            return false;
           }
+          var badgeText = String(altBadge.textContent || '').replace(/\s+/g, '').trim();
+          var hasRenderedBadge = !!altBadge.querySelector('a, img, iframe, svg, canvas, [class*="altmetric"] > *');
+          return hasRenderedBadge || badgeText.length > 0;
+        }
+
+        function isPlumxAvailable() {
+          if (plumxScriptFailed || !plumxWrap) return false;
+          if (plumxWrap.classList.contains('hidden')) return false;
+          var popupNode = plumxWrap.querySelector('.PlumX-Popup, .ppp-container, .plx-print, .plx-wrapping-print-link');
+          if (popupNode) return true;
+
+          var renderedImage = plumxWrap.querySelector('img[src*="print.plu.mx"], img[src*="plu.mx/widget"]');
+          if (renderedImage) return true;
+
           return false;
-        }
-
-        function hasBadgePayload(badge) {
-          if (!badge) return false;
-          var badgeText = String(badge.textContent || '').replace(/\s+/g, '').trim();
-          var hasChildMarkup = !!badge.querySelector('*');
-          var rect = badge.getBoundingClientRect();
-          var hasBadgeSize = rect.width > 14 && rect.height > 14;
-          return hasChildMarkup || badgeText.length > 0 || hasBadgeSize;
-        }
-
-        function resolveBadgeAvailable(badge, scriptFailed) {
-          if (scriptFailed || !badge) return false;
-          if (hasBadgePayload(badge)) return true;
-          // If provider does not explicitly hide the element, keep it available.
-          return !isProviderHidden(badge);
         }
 
         function applyAttentionVisibility(altAvailable, plumAvailable) {
@@ -1482,8 +1495,8 @@
           function check() {
             attempts += 1;
 
-            var altAvailableNow = resolveBadgeAvailable(altBadge, altmetricScriptFailed);
-            var plumAvailableNow = resolveBadgeAvailable(plumxBadge, plumxScriptFailed);
+            var altAvailableNow = isAltmetricAvailable();
+            var plumAvailableNow = isPlumxAvailable();
 
             if (attempts >= maxAttempts) {
               applyAttentionVisibility(altAvailableNow, plumAvailableNow);
@@ -1534,8 +1547,68 @@
           });
 
         Promise.all([altmetricLoad, plumxLoad]).then(function () {
+          initPlumxPopupViewportGuard();
           settleAttentionVisibility();
         });
+      }
+
+      function initPlumxPopupViewportGuard() {
+        if (window.__plumxViewportGuardBound) return;
+        window.__plumxViewportGuardBound = true;
+
+        function clampPlumxPopups() {
+          var popups = document.querySelectorAll('.PlumX-Popup .ppp-pop');
+          if (!popups || !popups.length) return;
+
+          var minPad = 8;
+          var maxX = window.innerWidth - minPad;
+          var maxY = window.innerHeight - minPad;
+
+          Array.prototype.forEach.call(popups, function (popup) {
+            if (!popup) return;
+            var style = window.getComputedStyle(popup);
+            if (style.display === 'none' || style.visibility === 'hidden') return;
+
+            var rect = popup.getBoundingClientRect();
+            var dx = 0;
+            var dy = 0;
+            if (rect.left < minPad) dx = minPad - rect.left;
+            if (rect.right > maxX) dx = maxX - rect.right;
+            if (rect.top < minPad) dy = minPad - rect.top;
+            if (rect.bottom > maxY) dy = maxY - rect.bottom;
+            if (!dx && !dy) return;
+
+            var currentLeft = parseFloat(popup.style.left);
+            var currentTop = parseFloat(popup.style.top);
+            if (isNaN(currentLeft)) currentLeft = popup.offsetLeft || 0;
+            if (isNaN(currentTop)) currentTop = popup.offsetTop || 0;
+
+            popup.style.left = (currentLeft + dx) + 'px';
+            popup.style.top = (currentTop + dy) + 'px';
+          });
+        }
+
+        function scheduleClamp(delay) {
+          window.setTimeout(function () {
+            window.requestAnimationFrame(clampPlumxPopups);
+          }, delay || 0);
+        }
+
+        document.addEventListener('mouseenter', function (event) {
+          var target = event.target;
+          if (!target || !target.closest) return;
+          if (!target.closest('.plumx-plum-print-popup, .PlumX-Popup, .plx-print, .plx-wrapping-print-link')) return;
+          scheduleClamp(20);
+          scheduleClamp(180);
+          scheduleClamp(420);
+        }, true);
+
+        window.addEventListener('resize', function () {
+          scheduleClamp(40);
+        });
+        window.addEventListener('scroll', function () {
+          scheduleClamp(40);
+        }, true);
       }
 
       function stripDuplicateAbstractLabel(rawHtml) {
@@ -2646,7 +2719,7 @@
                     '<div id="altmetric-badge" class="altmetric-embed" data-badge-type="donut" data-badge-popover="right" data-hide-no-mentions="true" data-link-target="_blank"></div>' +
                   '</div>' +
                   '<div id="plumx-wrapper" class="flex items-center justify-center h-24">' +
-                    '<a id="plumx-badge" class="plumx-plum-print-popup inline-block" data-popup="right" data-size="large" data-hide-when-empty="true" data-site="plumx" style="transform:scale(1.1);transform-origin:center;" href="#"></a>' +
+                    '<a id="plumx-badge" class="plumx-plum-print-popup inline-block" data-popup="right" data-popover="true" data-size="large" data-hide-when-empty="true" data-site="plumx" style="transform:scale(1.1);transform-origin:center;" href="#"></a>' +
                   '</div>' +
                 '</div>' +
                 '<p id="attention-unavailable" class="hidden text-xs text-gray-400 mt-3">Attention metrics are unavailable for this article.</p>' +
