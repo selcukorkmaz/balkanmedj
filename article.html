@@ -1114,6 +1114,55 @@
         return;
       }
 
+      function stripLegacyAuthorArtifacts(value) {
+        var text = String(value || '').replace(/\u00a0/g, ' ').trim();
+        if (!text) return '';
+        text = text
+          .replace(/<[^>]*>/g, ' ')
+          .replace(/\[\[[^\]]*\]\]/g, ' ')
+          .replace(/\[(?:\s*\d+\s*(?:,\s*\d+\s*)*)\]/g, ' ')
+          .replace(/(?:<\/?[a-z]{0,12})?\s*[<>/]+\s*$/gi, ' ')
+          .replace(/\s+/g, ' ')
+          .replace(/^[,;:|]+|[,;:|]+$/g, '')
+          .trim();
+        return text;
+      }
+
+      function sanitizeAuthorName(name) {
+        return stripLegacyAuthorArtifacts(name).trim();
+      }
+
+      function sanitizeAffiliation(affiliation) {
+        return stripLegacyAuthorArtifacts(affiliation);
+      }
+
+      function isPlaceholderAuthorName(name) {
+        var normalized = String(name || '').toLowerCase().replace(/\./g, '').replace(/\s+/g, ' ').trim();
+        return normalized === 'et al';
+      }
+
+      function sanitizeArticleAuthorPayload(articleItem) {
+        if (!articleItem || !Array.isArray(articleItem.authors)) return;
+        var sanitizedAuthors = [];
+        for (var i = 0; i < articleItem.authors.length; i++) {
+          var author = articleItem.authors[i] || {};
+          var cleanName = sanitizeAuthorName(author.name);
+          if (!cleanName || isPlaceholderAuthorName(cleanName)) continue;
+          var nextAuthor = {};
+          for (var key in author) {
+            if (Object.prototype.hasOwnProperty.call(author, key)) {
+              nextAuthor[key] = author[key];
+            }
+          }
+          nextAuthor.name = cleanName;
+          nextAuthor.affiliation = sanitizeAffiliation(author.affiliation);
+          sanitizedAuthors.push(nextAuthor);
+        }
+        articleItem.authors = sanitizedAuthors;
+      }
+
+      sanitizeArticleAuthorPayload(article);
+
       function inferSourceContextFromArticle(articleItem) {
         if (!articleItem) return '';
         if (articleItem.aheadOfPrint) return 'aip';
@@ -3040,7 +3089,8 @@
       // Related articles
       var related = window.ARTICLES.filter(function (a) { return a.id !== article.id && a.type === article.type; }).slice(0, 3);
       var relatedHtml = related.map(function (r) {
-        var relatedAuthor = (r.authors && r.authors.length) ? r.authors[0].name : 'Balkan Medical Journal';
+        var relatedAuthor = (r.authors && r.authors.length) ? sanitizeAuthorName(r.authors[0].name) : 'Balkan Medical Journal';
+        if (!relatedAuthor || isPlaceholderAuthorName(relatedAuthor)) relatedAuthor = 'Balkan Medical Journal';
         var relatedAuthorSuffix = (r.authors && r.authors.length > 1) ? ' et al.' : '';
         return '<a href="' + buildArticleUrl(r.id) + '" class="related-entry">' +
           '<div class="related-entry-title">' + r.title + '</div>' +
@@ -3344,7 +3394,7 @@
               (isCoverPage ? '' :
                 '<div class="article-meta-card">' +
                   '<div class="flex flex-wrap items-center gap-x-6 gap-y-2">' +
-                    '<div><span class="text-gray-500">DOI:</span> <a href="https://doi.org/' + article.doi + '" target="_blank" rel="noopener" class="text-teal-700 hover:underline">' + article.doi + '</a></div>' +
+                    '<div><span class="text-gray-500">DOI:</span> <span class="text-teal-700">' + escapeHtml(normalizeDoi(article.doi) || article.doi) + '</span></div>' +
                     publicationHeaderHtml +
                   '</div>' +
                   publicationHistoryPanelHtml +
