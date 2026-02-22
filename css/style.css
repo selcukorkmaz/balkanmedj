@@ -109,9 +109,12 @@
 
   /* Slide 1: reserve lower area for metrics and keep controls clear */
   .hero-slide#hero-slide-1 .hero-slide-copy{gap:.58rem}
-  .hero-slide#hero-slide-1 .hero-subtitle{max-width:34ch}
+  .hero-slide#hero-slide-1 .hero-subtitle{
+    max-width:34ch;
+    margin-bottom:auto;
+  }
   .hero-slide#hero-slide-1 .hero-actions{
-    margin-top:.45rem;
+    margin-top:.35rem;
     gap:.5rem;
   }
   .hero-slide#hero-slide-1 .hero-actions .hero-btn{
@@ -120,7 +123,7 @@
     justify-content:center;
   }
   .hero-slide#hero-slide-1 .hero-metrics{
-    margin-top:auto;
+    margin-top:.45rem;
     gap:.68rem;
   }
 
@@ -130,9 +133,13 @@
   .hero-slide:not(#hero-slide-1) .hero-slide-copy{gap:.58rem}
   .hero-slide:not(#hero-slide-1) .hero-meta-chip{font-size:.68rem;padding:.27rem .58rem;letter-spacing:.045em}
   .hero-slide:not(#hero-slide-1) .hero-slide-title{margin:0;font-size:clamp(1.35rem,6.1vw,1.62rem);line-height:1.2}
-  .hero-slide:not(#hero-slide-1) .hero-slide-text{font-size:.99rem;line-height:1.45}
-  .hero-slide:not(#hero-slide-1) .hero-slide-caption{margin:.05rem 0 0;font-size:1.03rem;line-height:1.25}
-  .hero-slide:not(#hero-slide-1) .hero-actions{margin-top:auto;gap:.5rem}
+  .hero-slide:not(#hero-slide-1) .hero-slide-text{
+    font-size:.99rem;
+    line-height:1.45;
+    margin-bottom:auto;
+  }
+  .hero-slide:not(#hero-slide-1) .hero-slide-caption{margin:.05rem 0 .24rem;font-size:1.03rem;line-height:1.25}
+  .hero-slide:not(#hero-slide-1) .hero-actions{margin-top:.1rem;gap:.5rem}
   .hero-slide:not(#hero-slide-1) .hero-actions .hero-btn{flex:1 1 calc(50% - .25rem);min-height:2.55rem;padding:.58rem .72rem;font-size:.84rem;justify-content:center}
 }
 @media (prefers-reduced-motion:reduce){
