@@ -73,18 +73,29 @@
 @media (max-width:47.99rem){
   .hero-carousel{border-radius:18px}
   .hero-carousel-track{height:400px}
-  .hero-slide-shell{padding:.92rem .85rem 2.35rem}
+  .hero-slide-shell{padding:.92rem .85rem 2.35rem;align-items:stretch}
+  .hero-slide-inner{height:100%;align-content:stretch}
+  .hero-slide-copy{
+    display:flex;
+    flex-direction:column;
+    gap:.52rem;
+    min-height:0;
+    height:100%;
+    max-width:none;
+  }
   .hero-kicker{font-size:.72rem}
+  .hero-kicker,.hero-meta-chip{width:max-content}
   .hero-title{
     font-size:clamp(1.28rem,6.5vw,1.82rem);
     line-height:1.1;
     letter-spacing:-.008em;
     white-space:nowrap;
+    margin:.2rem 0 .05rem;
   }
-  .hero-subtitle{font-size:1.02rem}
+  .hero-subtitle{font-size:1.02rem;margin:0;line-height:1.42}
   .hero-slide-title{font-size:1.5rem}
-  .hero-slide-text{font-size:1rem;line-height:1.5}
-  .hero-actions{gap:.55rem}
+  .hero-slide-text{font-size:1rem;line-height:1.45;margin:0;max-width:none}
+  .hero-actions{gap:.55rem;margin-top:auto}
   .hero-btn{padding:.58rem .82rem;font-size:.86rem}
   .hero-cover-figure{display:none}
   .hero-mini-card{max-width:none;padding:.85rem .9rem}
@@ -96,15 +107,32 @@
   .hero-carousel-indicators{bottom:.22rem}
   .hero-carousel-indicator{width:1.55rem;height:.28rem}
 
+  /* Slide 1: reserve lower area for metrics and keep controls clear */
+  .hero-slide#hero-slide-1 .hero-slide-copy{gap:.58rem}
+  .hero-slide#hero-slide-1 .hero-subtitle{max-width:34ch}
+  .hero-slide#hero-slide-1 .hero-actions{
+    margin-top:.45rem;
+    gap:.5rem;
+  }
+  .hero-slide#hero-slide-1 .hero-actions .hero-btn{
+    flex:1 1 calc(50% - .25rem);
+    min-height:2.55rem;
+    justify-content:center;
+  }
+  .hero-slide#hero-slide-1 .hero-metrics{
+    margin-top:auto;
+    gap:.68rem;
+  }
+
   /* Mobile refinements for slides 2-5 */
   .hero-slide:not(#hero-slide-1) .hero-slide-shell{padding:1rem .85rem 2.3rem}
   .hero-slide:not(#hero-slide-1) .hero-slide-inner{gap:.7rem}
-  .hero-slide:not(#hero-slide-1) .hero-slide-copy{display:grid;gap:.58rem;max-width:none}
+  .hero-slide:not(#hero-slide-1) .hero-slide-copy{gap:.58rem}
   .hero-slide:not(#hero-slide-1) .hero-meta-chip{font-size:.68rem;padding:.27rem .58rem;letter-spacing:.045em}
   .hero-slide:not(#hero-slide-1) .hero-slide-title{margin:0;font-size:clamp(1.35rem,6.1vw,1.62rem);line-height:1.2}
-  .hero-slide:not(#hero-slide-1) .hero-slide-text{font-size:.99rem;line-height:1.45;max-width:none}
+  .hero-slide:not(#hero-slide-1) .hero-slide-text{font-size:.99rem;line-height:1.45}
   .hero-slide:not(#hero-slide-1) .hero-slide-caption{margin:.05rem 0 0;font-size:1.03rem;line-height:1.25}
-  .hero-slide:not(#hero-slide-1) .hero-actions{margin-top:.2rem;gap:.5rem}
+  .hero-slide:not(#hero-slide-1) .hero-actions{margin-top:auto;gap:.5rem}
   .hero-slide:not(#hero-slide-1) .hero-actions .hero-btn{flex:1 1 calc(50% - .25rem);min-height:2.55rem;padding:.58rem .72rem;font-size:.84rem;justify-content:center}
 }
 @media (prefers-reduced-motion:reduce){
