@@ -75,7 +75,12 @@
   .hero-carousel-track{height:400px}
   .hero-slide-shell{padding:.92rem .85rem 2.35rem}
   .hero-kicker{font-size:.72rem}
-  .hero-title{font-size:clamp(1.9rem,9.2vw,2.45rem)}
+  .hero-title{
+    font-size:clamp(1.28rem,6.5vw,1.82rem);
+    line-height:1.1;
+    letter-spacing:-.008em;
+    white-space:nowrap;
+  }
   .hero-subtitle{font-size:1.02rem}
   .hero-slide-title{font-size:1.5rem}
   .hero-slide-text{font-size:1rem;line-height:1.5}
