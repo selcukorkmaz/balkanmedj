@@ -92,7 +92,7 @@
     white-space:nowrap;
     margin:.2rem 0 .05rem;
   }
-  .hero-subtitle{font-size:1.02rem;margin:0;line-height:1.42}
+  .hero-subtitle{font-size:1.08rem;margin:0;line-height:1.44}
   .hero-slide-title{font-size:1.5rem}
   .hero-slide-text{font-size:1rem;line-height:1.45;margin:0;max-width:none}
   .hero-actions{gap:.55rem;margin-top:auto}
@@ -134,9 +134,15 @@
   .hero-slide:not(#hero-slide-1) .hero-meta-chip{font-size:.68rem;padding:.27rem .58rem;letter-spacing:.045em}
   .hero-slide:not(#hero-slide-1) .hero-slide-title{margin:0;font-size:clamp(1.35rem,6.1vw,1.62rem);line-height:1.2}
   .hero-slide:not(#hero-slide-1) .hero-slide-text{
-    font-size:.99rem;
+    font-size:1rem;
     line-height:1.45;
     margin-bottom:auto;
+  }
+  .hero-slide#hero-slide-2 .hero-slide-text,
+  .hero-slide#hero-slide-3 .hero-slide-text,
+  .hero-slide#hero-slide-4 .hero-slide-text{
+    font-size:1.04rem;
+    line-height:1.47;
   }
   .hero-slide:not(#hero-slide-1) .hero-slide-caption{margin:.05rem 0 .24rem;font-size:1.03rem;line-height:1.25}
   .hero-slide:not(#hero-slide-1) .hero-actions{margin-top:.1rem;gap:.5rem}
