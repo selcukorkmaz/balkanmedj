@@ -273,6 +273,13 @@
     }
     .article-abstract {
       color: #334155;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    .article-abstract p,
+    .article-abstract li {
+      text-align: justify;
+      text-justify: inter-word;
     }
     .article-body {
       font-size: 1.2rem;
@@ -2822,6 +2829,7 @@
           var mediaTitle = normalizeMediaLabel(label, mediaKind) || mediaKind;
           var mediaBadgeLabel = mediaTitle;
           var mediaDownloadName = buildMediaDownloadFilename(src, mediaTitle, mediaKind);
+          var showDownloadAction = supportsDirectMediaDownload(src);
           var cardKey = src.toLowerCase();
 
           link.setAttribute('href', src);
@@ -2859,10 +2867,12 @@
               '<p class="article-inline-media-caption">' + sourceCaption + '</p>' +
               '<span class="article-inline-media-actions">' +
                 '<a class="article-inline-media-open" href="' + escapeAttr(src) + '" target="_blank" rel="noopener">Open full size</a>' +
-                '<a class="article-inline-media-download" href="' + escapeAttr(src) + '" download="' + escapeAttr(mediaDownloadName) + '" data-media-download="true" data-media-src="' + escapeAttr(src) + '" data-media-filename="' + escapeAttr(mediaDownloadName) + '">' +
-                  '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v12m0 0l4-4m-4 4l-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>' +
-                  'Download' +
-                '</a>' +
+                (showDownloadAction
+                  ? '<a class="article-inline-media-download" href="' + escapeAttr(src) + '" download="' + escapeAttr(mediaDownloadName) + '" data-media-download="true" data-media-src="' + escapeAttr(src) + '" data-media-filename="' + escapeAttr(mediaDownloadName) + '">' +
+                      '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v12m0 0l4-4m-4 4l-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>' +
+                      'Download' +
+                    '</a>'
+                  : '') +
               '</span>' +
             '</figcaption>';
 
@@ -2896,6 +2906,29 @@
         });
 
         return root.innerHTML;
+      }
+
+      function resolveAbsoluteUrl(url) {
+        var value = String(url || '').trim();
+        if (!value) return '';
+        try {
+          return new URL(value, window.location.href).href;
+        } catch (error) {
+          return value;
+        }
+      }
+
+      function supportsDirectMediaDownload(url) {
+        var absoluteUrl = resolveAbsoluteUrl(url);
+        if (!absoluteUrl) return false;
+        if (window.location.protocol === 'file:') return false;
+        if (/^(data|blob):/i.test(absoluteUrl)) return true;
+        try {
+          var parsed = new URL(absoluteUrl);
+          return parsed.origin === window.location.origin;
+        } catch (error) {
+          return false;
+        }
       }
 
       function getStickyHeaderOffset() {
@@ -4368,6 +4401,7 @@
           var title = String(label || 'Figure').replace(/\s+/g, ' ').trim();
           var inferredKind = /^\s*table\b/i.test(title) ? 'Table' : 'Figure';
           var downloadName = buildMediaDownloadFilename(src, title, inferredKind);
+          var canDownload = supportsDirectMediaDownload(src);
           var image = modal.querySelector('.fulltext-media-modal-image');
           var titleNode = modal.querySelector('#fulltext-media-modal-title');
           var openLink = modal.querySelector('.fulltext-media-modal-open');
@@ -4379,10 +4413,21 @@
           }
           if (openLink) openLink.href = String(src || '#');
           if (downloadLink) {
-            downloadLink.href = String(src || '#');
-            downloadLink.setAttribute('download', downloadName);
-            downloadLink.setAttribute('data-media-src', String(src || ''));
-            downloadLink.setAttribute('data-media-filename', downloadName);
+            if (canDownload) {
+              downloadLink.href = String(src || '#');
+              downloadLink.setAttribute('download', downloadName);
+              downloadLink.setAttribute('data-media-src', String(src || ''));
+              downloadLink.setAttribute('data-media-filename', downloadName);
+              downloadLink.style.display = '';
+              downloadLink.removeAttribute('aria-hidden');
+            } else {
+              downloadLink.href = '#';
+              downloadLink.removeAttribute('download');
+              downloadLink.removeAttribute('data-media-src');
+              downloadLink.removeAttribute('data-media-filename');
+              downloadLink.style.display = 'none';
+              downloadLink.setAttribute('aria-hidden', 'true');
+            }
           }
           modal.classList.add('is-open');
           modal.setAttribute('aria-hidden', 'false');
@@ -4424,34 +4469,26 @@
           var href = String(url || '').trim();
           if (!href) return;
           var name = String(filename || '').trim() || 'balkanmedj-media';
+          var resolvedHref = resolveAbsoluteUrl(href);
 
-          function iframeFallbackDownload() {
-            var frame = document.getElementById('media-download-frame');
-            if (!frame) {
-              frame = document.createElement('iframe');
-              frame.id = 'media-download-frame';
-              frame.name = 'media-download-frame';
-              frame.style.display = 'none';
-              frame.setAttribute('aria-hidden', 'true');
-              document.body.appendChild(frame);
-            }
+          function clickDownloadLink(openInNewTab) {
             var link = document.createElement('a');
-            link.href = href;
+            link.href = resolvedHref;
             link.setAttribute('download', name);
-            link.setAttribute('target', 'media-download-frame');
             link.rel = 'noopener';
+            if (openInNewTab) link.target = '_blank';
             document.body.appendChild(link);
             link.click();
             link.remove();
-            showDownloadToast('Download started.');
           }
 
           if (window.location.protocol === 'file:') {
-            iframeFallbackDownload();
+            clickDownloadLink(true);
+            showDownloadToast('Download requested. If the browser blocks direct download, save from the opened tab.', true);
             return;
           }
 
-          fetch(href).then(function (res) {
+          fetch(resolvedHref).then(function (res) {
             if (!res.ok) throw new Error('download-failed');
             return res.blob();
           }).then(function (blob) {
@@ -4465,8 +4502,7 @@
             window.setTimeout(function () { URL.revokeObjectURL(objectUrl); }, 1200);
             showDownloadToast('Download started.');
           }).catch(function () {
-            // Keep users on the same page while attempting direct browser download semantics.
-            iframeFallbackDownload();
+            clickDownloadLink(true);
             showDownloadToast('Download requested. If blocked by browser policy, use Open full size and save manually.', true);
           });
         }

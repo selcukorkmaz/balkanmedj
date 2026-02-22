@@ -228,3 +228,19 @@ footer.bg-teal-900.text-white[aria-label="Site footer"] .border-teal-800{
 .article-tab.active{
   border-bottom-color:var(--color-teal-700);
 }
+
+/* Image Corner thumbnails: show only visual figure area and crop legend/caption zones */
+.image-corner-cover-media{
+  object-fit:cover;
+  object-position:50% 14%;
+  transform:scale(1.08);
+  transform-origin:50% 24%;
+}
+
+@media (max-width:47.99rem){
+  .image-corner-cover-media{
+    object-position:50% 12%;
+    transform:scale(1.1);
+    transform-origin:50% 20%;
+  }
+}

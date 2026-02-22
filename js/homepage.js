@@ -80,6 +80,20 @@
   }
 
   var imageCornerFigureCache = {};
+  var imageCornerCropPresetMap = {
+    // Clinical Image: Left Ventricular Cardiac Hydatid Cyst Presenting with Angina Pectoris
+    '2820': {
+      position: '50% 8%',
+      scale: '1.27',
+      origin: '50% 14%'
+    },
+    // Clinical Image: External Manual Carotid Compression for Cavernous Sinus Fistula
+    '2771': {
+      position: '50% 7%',
+      scale: '1.24',
+      origin: '50% 14%'
+    }
+  };
 
   function toAbsoluteImageUrl(path) {
     var raw = String(path || '').trim();
@@ -93,6 +107,18 @@
     return raw;
   }
 
+  function getImageCornerCropStyle(article) {
+    var id = String(article && article.id || '').trim();
+    var preset = imageCornerCropPresetMap[id];
+    if (!preset) return '';
+
+    var styleParts = [];
+    if (preset.position) styleParts.push('--ic-object-position:' + String(preset.position));
+    if (preset.scale) styleParts.push('--ic-scale:' + String(preset.scale));
+    if (preset.origin) styleParts.push('--ic-origin:' + String(preset.origin));
+    return styleParts.length ? (' style="' + escapeHtml(styleParts.join(';')) + '"') : '';
+  }
+
   function extractFigureUrlFromArticleMarkup(markup) {
     var html = String(markup || '');
     if (!html) return '';
@@ -102,12 +128,34 @@
       return toAbsoluteImageUrl(openWinMatch[1]);
     }
 
+    // Supports escaped payloads inside JS files, e.g. openWin(\'uploads/grafik/figure_BMJ_2771_0.jpg\', ...)
+    var escapedOpenWinMatch = html.match(/openWin\(\s*\\['"]([^\\'"]+\.(?:jpe?g|png|webp|gif))\\['"]/i);
+    if (escapedOpenWinMatch && escapedOpenWinMatch[1]) {
+      return toAbsoluteImageUrl(escapedOpenWinMatch[1]);
+    }
+
     var imgMatch = html.match(/<img[^>]+src=['"]([^'"]+\.(?:jpe?g|png|webp|gif))['"][^>]*>/i);
     if (imgMatch && imgMatch[1]) {
       return toAbsoluteImageUrl(imgMatch[1]);
     }
 
+    var escapedImgMatch = html.match(/<img[^>]+src=\\['"]([^\\'"]+\.(?:jpe?g|png|webp|gif))\\['"][^>]*>/i);
+    if (escapedImgMatch && escapedImgMatch[1]) {
+      return toAbsoluteImageUrl(escapedImgMatch[1]);
+    }
+
     return '';
+  }
+
+  function buildImageCornerFigureFallback(article) {
+    var sourceId = String(
+      (article && article.sourceArticleId) ||
+      (article && article.id) ||
+      ''
+    ).trim();
+    if (!sourceId) return '';
+    // Mirrors source storage naming for most Clinical Image figures.
+    return 'https://balkanmedicaljournal.org/uploads/grafik/figure_BMJ_' + sourceId + '_0.jpg';
   }
 
   function resolveImageCornerFigureUrl(article) {
@@ -121,22 +169,43 @@
       return Promise.resolve(imageCornerFigureCache[id]);
     }
 
-    if (typeof fetch !== 'function') return Promise.resolve('');
+    var deterministicFallback = buildImageCornerFigureFallback(article);
 
-    return fetch('js/data/articles/' + encodeURIComponent(id) + '.html')
-      .then(function (response) {
-        if (!response.ok) return '';
-        return response.text();
-      })
-      .then(function (markup) {
-        var figureUrl = extractFigureUrlFromArticleMarkup(markup);
-        imageCornerFigureCache[id] = figureUrl || '';
-        return imageCornerFigureCache[id];
-      })
-      .catch(function () {
-        imageCornerFigureCache[id] = '';
-        return '';
-      });
+    if (typeof fetch !== 'function') {
+      imageCornerFigureCache[id] = deterministicFallback || '';
+      return Promise.resolve(imageCornerFigureCache[id]);
+    }
+
+    var candidateFiles = [
+      'js/data/articles/' + encodeURIComponent(id) + '.html',
+      'js/data/articles/' + encodeURIComponent(id) + '.js'
+    ];
+
+    function tryFetchAt(index) {
+      if (index >= candidateFiles.length) {
+        imageCornerFigureCache[id] = deterministicFallback || '';
+        return Promise.resolve(imageCornerFigureCache[id]);
+      }
+
+      return fetch(candidateFiles[index])
+        .then(function (response) {
+          if (!response.ok) return '';
+          return response.text();
+        })
+        .then(function (markup) {
+          var figureUrl = extractFigureUrlFromArticleMarkup(markup);
+          if (figureUrl) {
+            imageCornerFigureCache[id] = figureUrl;
+            return imageCornerFigureCache[id];
+          }
+          return tryFetchAt(index + 1);
+        })
+        .catch(function () {
+          return tryFetchAt(index + 1);
+        });
+    }
+
+    return tryFetchAt(0);
   }
 
   function hydrateImageCornerImages(articles) {
@@ -152,6 +221,9 @@
         var img = document.querySelector('[data-image-corner-img="' + articleId + '"]');
         var fallback = document.querySelector('[data-image-corner-fallback="' + articleId + '"]');
         if (!img) return;
+
+        img.loading = 'eager';
+        img.decoding = 'async';
 
         if (img.getAttribute('src') !== figureUrl) {
           img.setAttribute('src', figureUrl);
@@ -276,9 +348,10 @@
       var title = escapeHtml(stripTags(article.title || 'Untitled'));
       var authors = escapeHtml(formatAuthors(article.authors));
       var imageSrc = toAbsoluteImageUrl(String(article.image || '').trim());
+      var cropStyle = getImageCornerCropStyle(article);
       var imageHtml = imageSrc
-        ? '<img src="' + escapeHtml(imageSrc) + '" alt="' + title + '" class="w-full h-full object-cover" loading="lazy" data-image-corner-img="' + articleId + '">'
-        : '<img alt="' + title + '" class="w-full h-full object-cover hidden" loading="lazy" data-image-corner-img="' + articleId + '">' +
+        ? '<img src="' + escapeHtml(imageSrc) + '" alt="' + title + '" class="w-full h-full object-cover image-corner-cover-media" loading="lazy" data-image-corner-img="' + articleId + '"' + cropStyle + '>'
+        : '<img alt="' + title + '" class="w-full h-full object-cover image-corner-cover-media hidden" loading="eager" data-image-corner-img="' + articleId + '"' + cropStyle + '>' +
           '<div class="text-center p-8" data-image-corner-fallback="' + articleId + '">' +
             '<svg class="w-16 h-16 mx-auto text-teal-300 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>' +
             '<span class="text-sm text-teal-500">Image Corner</span>' +

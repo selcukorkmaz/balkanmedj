@@ -1,15 +1,12 @@
 /**
  * Balkan Medical Journal — Email Subscription + GDPR
  *
- * FORMSPREE SETUP:
- * 1. Create a form at https://formspree.io
- * 2. Copy your form endpoint URL (e.g., https://formspree.io/f/xyzabcde)
- * 3. Replace the FORM_ENDPOINT value below with your URL
- * 4. The form will then send real submissions to your Formspree inbox
- *
- * While FORM_ENDPOINT is empty, the form shows an informational message.
+ * Default delivery:
+ * - POST to configured endpoint (FormSubmit-compatible)
+ * - Fallback to mailto flow when endpoint is unavailable (or local file mode)
  */
-var FORM_ENDPOINT = ''; // <-- Paste your Formspree endpoint URL here
+var FORM_ENDPOINT = 'https://formsubmit.co/ajax/info@balkanmedicaljournal.org';
+var FALLBACK_RECIPIENT = 'info@balkanmedicaljournal.org';
 
 (function () {
   'use strict';
@@ -29,18 +26,21 @@ var FORM_ENDPOINT = ''; // <-- Paste your Formspree endpoint URL here
     FORM_ENDPOINT ||
     ''
   ).trim();
-  var canSubmit = !!configuredEndpoint;
+  var isFileProtocol = String(window.location.protocol || '').toLowerCase() === 'file:';
+  var mode = configuredEndpoint && !isFileProtocol ? 'endpoint' : 'mailto';
+  var canSubmit = true;
 
-  if (!canSubmit) {
-    if (submitBtn) {
-      submitBtn.disabled = true;
-      submitBtn.setAttribute('aria-disabled', 'true');
-      submitBtn.classList.add('opacity-70');
-      submitBtn.classList.remove('hover:bg-teal-800');
-    }
-    if (infoEl) {
-      infoEl.textContent = 'Email subscription is temporarily unavailable.';
+  if (submitBtn) {
+    submitBtn.disabled = false;
+    submitBtn.removeAttribute('aria-disabled');
+    submitBtn.classList.remove('opacity-70');
+  }
+  if (infoEl) {
+    if (mode === 'mailto') {
+      infoEl.textContent = 'Subscription opens your email client to send the request.';
       infoEl.classList.remove('hidden');
+    } else {
+      infoEl.classList.add('hidden');
     }
   }
 
@@ -49,7 +49,7 @@ var FORM_ENDPOINT = ''; // <-- Paste your Formspree endpoint URL here
     hideMessages();
 
     if (!canSubmit) {
-      showError('Email subscription is temporarily unavailable. Please try again later.');
+      showError('Email subscription is currently unavailable. Please try again later.');
       return;
     }
 
@@ -82,10 +82,23 @@ var FORM_ENDPOINT = ''; // <-- Paste your Formspree endpoint URL here
     btn.innerHTML = '<span class="spinner"></span>';
     btn.disabled = true;
 
+    if (mode === 'mailto') {
+      btn.textContent = originalText;
+      btn.disabled = false;
+      openMailtoFallback(email);
+      if (successEl) {
+        successEl.textContent = 'Your email client has been opened to complete subscription.';
+        successEl.classList.remove('hidden');
+      }
+      return;
+    }
+
     // Submit via fetch
     var formData = new FormData();
     formData.append('email', email);
     formData.append('_subject', 'New Journal Subscription');
+    formData.append('_captcha', 'false');
+    formData.append('_template', 'table');
 
     fetch(configuredEndpoint, {
       method: 'POST',
@@ -96,31 +109,48 @@ var FORM_ENDPOINT = ''; // <-- Paste your Formspree endpoint URL here
       btn.textContent = originalText;
       btn.disabled = false;
 
-      if (response.ok) {
-        emailInput.value = '';
-        if (gdprCheckbox) gdprCheckbox.checked = false;
+      return response.json().then(function (data) {
+        var ok = response.ok && !/false/i.test(String(data && data.success || ''));
+        if (ok) {
+          emailInput.value = '';
+          if (gdprCheckbox) gdprCheckbox.checked = false;
 
-        if (successEl) {
-          successEl.textContent = 'Thank you for subscribing! You will receive updates about new issues and journal news.';
-          successEl.classList.remove('hidden');
+          if (successEl) {
+            successEl.textContent = 'Thank you for subscribing! You will receive updates about new issues and journal news.';
+            successEl.classList.remove('hidden');
+          }
+
+          if (window.showToast) {
+            window.showToast('Successfully subscribed!');
+          }
+          return;
         }
 
-        if (window.showToast) {
-          window.showToast('Successfully subscribed!');
+        var msg = (data && data.errors && data.errors.length > 0)
+          ? data.errors.map(function (err) { return err.message; }).join(', ')
+          : (data && data.message ? String(data.message) : 'Subscription request could not be processed.');
+
+        // Some providers reject local file:// context; fall back to email client.
+        if (/open this page through a web server/i.test(msg)) {
+          openMailtoFallback(email);
+          if (successEl) {
+            successEl.textContent = 'Your email client has been opened to complete subscription.';
+            successEl.classList.remove('hidden');
+          }
+          return;
         }
-      } else {
-        return response.json().then(function (data) {
-          var msg = (data && data.errors && data.errors.length > 0)
-            ? data.errors.map(function (err) { return err.message; }).join(', ')
-            : 'Subscription failed. Please try again later.';
-          showError(msg);
-        });
-      }
+
+        showError(msg);
+      });
     })
     .catch(function () {
       btn.textContent = originalText;
       btn.disabled = false;
-      showError('Network error. Please check your connection and try again.');
+      openMailtoFallback(email);
+      if (successEl) {
+        successEl.textContent = 'Your email client has been opened to complete subscription.';
+        successEl.classList.remove('hidden');
+      }
     });
   });
 
@@ -134,6 +164,21 @@ var FORM_ENDPOINT = ''; // <-- Paste your Formspree endpoint URL here
   function hideMessages() {
     if (errorEl) errorEl.classList.add('hidden');
     if (successEl) successEl.classList.add('hidden');
-    if (infoEl && !canSubmit) infoEl.classList.remove('hidden');
+    if (infoEl) infoEl.classList.toggle('hidden', mode !== 'mailto');
+  }
+
+  function openMailtoFallback(email) {
+    var address = FALLBACK_RECIPIENT;
+    var subject = 'Journal Newsletter Subscription';
+    var bodyLines = [
+      'Please subscribe this email address to Balkan Medical Journal updates.',
+      '',
+      'Email: ' + String(email || '').trim(),
+      'GDPR consent: Yes'
+    ];
+    var href = 'mailto:' + address +
+      '?subject=' + encodeURIComponent(subject) +
+      '&body=' + encodeURIComponent(bodyLines.join('\n'));
+    window.location.href = href;
   }
 })();
