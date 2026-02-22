@@ -282,6 +282,307 @@
     .article-body p {
       margin-bottom: 1.05rem;
     }
+    .article-body .article-media-ref-link {
+      color: var(--color-teal-700);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in oklab, var(--color-teal-700) 45%, transparent);
+      transition: color 0.18s ease, border-color 0.18s ease;
+    }
+    .article-body .article-media-ref-link:hover {
+      color: var(--color-teal-800);
+      border-bottom-color: var(--color-teal-800);
+    }
+    .article-inline-media {
+      margin: 1.35rem 0 1.55rem;
+      border: 1px solid #d6e2ec;
+      border-radius: 0.95rem;
+      background: linear-gradient(180deg, #f8fbff 0%, #f3f7fc 100%);
+      box-shadow: 0 14px 30px -28px rgba(15, 23, 42, 0.62);
+      overflow: hidden;
+    }
+    .article-inline-media-head {
+      display: flex;
+      align-items: baseline;
+      gap: 0.55rem;
+      padding: 0.72rem 0.88rem 0.68rem;
+      border-bottom: 1px solid #e2e8f0;
+      background: linear-gradient(180deg, #fdfefe 0%, #f6fbff 100%);
+    }
+    .article-inline-media-kind {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 4.25rem;
+      padding: 0.2rem 0.52rem;
+      border-radius: 9999px;
+      background: #e7f5f2;
+      color: #0f766e;
+      border: 1px solid #b7dfd8;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      line-height: 1.2;
+      flex-shrink: 0;
+    }
+    .article-inline-media-trigger {
+      display: block;
+      width: 100%;
+      border: 0;
+      background: transparent;
+      padding: 0;
+      cursor: zoom-in;
+      text-align: left;
+    }
+    .article-inline-media-thumb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 12rem;
+      max-height: min(60vh, 28rem);
+      overflow: hidden;
+      background: radial-gradient(circle at 22% 16%, rgba(77, 173, 204, 0.14) 0%, rgba(2, 132, 199, 0.05) 34%, rgba(15, 23, 42, 0) 62%), linear-gradient(180deg, #ffffff 0%, #f3f8ff 100%);
+    }
+    .article-inline-media-thumb img {
+      width: 100%;
+      height: 100%;
+      max-height: min(60vh, 28rem);
+      object-fit: contain;
+      display: block;
+    }
+    .article-inline-media-placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      min-height: 12rem;
+      color: #0f6a81;
+      font-size: 1.02rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .article-inline-media-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.85rem;
+      padding: 0.58rem 0.88rem 0.72rem;
+      border-top: 1px solid #e2e8f0;
+    }
+    .article-inline-media-caption {
+      font-size: 0.76rem;
+      color: #64748b;
+      line-height: 1.35;
+      margin: 0;
+    }
+    .article-inline-media-open {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.34rem;
+      color: var(--color-teal-700);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-decoration: none;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+    .article-inline-media-open:hover {
+      color: var(--color-teal-800);
+      text-decoration: underline;
+    }
+    .article-inline-media-actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.64rem;
+      flex-wrap: wrap;
+    }
+    .article-inline-media-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.34rem;
+      color: #0f172a;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-decoration: none;
+      line-height: 1.2;
+      white-space: nowrap;
+      padding: 0.23rem 0.52rem;
+      border-radius: 9999px;
+      border: 1px solid #d2dbe7;
+      background: #ffffff;
+    }
+    .article-inline-media-download svg {
+      width: 0.84rem;
+      height: 0.84rem;
+      flex-shrink: 0;
+    }
+    .article-inline-media-download:hover {
+      color: #0f172a;
+      border-color: #b6c5d9;
+      background: #f8fafc;
+    }
+    .fulltext-media-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 150;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.2rem;
+    }
+    .fulltext-media-modal.is-open {
+      display: flex;
+    }
+    .fulltext-media-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      border: 0;
+      background: rgba(15, 23, 42, 0.82);
+      cursor: zoom-out;
+    }
+    .fulltext-media-modal-dialog {
+      position: relative;
+      width: min(100%, 72rem);
+      max-height: calc(100vh - 2.4rem);
+      background: #020817;
+      border: 1px solid rgba(148, 163, 184, 0.34);
+      border-radius: 0.9rem;
+      box-shadow: 0 24px 52px -28px rgba(15, 23, 42, 0.9);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+    .fulltext-media-modal-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      padding: 0.65rem 0.9rem;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.33);
+      background: rgba(15, 23, 42, 0.92);
+      color: #e2e8f0;
+    }
+    .fulltext-media-modal-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin: 0;
+      color: #f8fafc;
+    }
+    .fulltext-media-modal-close {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: rgba(2, 6, 23, 0.8);
+      color: #e2e8f0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .fulltext-media-modal-close:hover {
+      background: rgba(30, 41, 59, 0.95);
+      color: #ffffff;
+    }
+    .fulltext-media-modal-body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 10rem;
+      max-height: calc(100vh - 10.5rem);
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      background: linear-gradient(180deg, #070f1f 0%, #020817 100%);
+    }
+    .fulltext-media-modal-image {
+      max-width: 100%;
+      max-height: calc(100vh - 12rem);
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+    .fulltext-media-modal-foot {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.65rem 0.9rem;
+      border-top: 1px solid rgba(148, 163, 184, 0.33);
+      background: rgba(15, 23, 42, 0.92);
+    }
+    .fulltext-media-modal-open {
+      color: #7dd3fc;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .fulltext-media-modal-open:hover {
+      color: #bae6fd;
+      text-decoration: underline;
+    }
+    .fulltext-media-modal-download {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.34rem;
+      height: 2rem;
+      padding: 0 0.72rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(186, 230, 253, 0.65);
+      background: rgba(12, 74, 110, 0.4);
+      color: #dbeafe;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .fulltext-media-modal-download svg {
+      width: 0.84rem;
+      height: 0.84rem;
+      flex-shrink: 0;
+    }
+    .fulltext-media-modal-download:hover {
+      color: #ffffff;
+      border-color: rgba(186, 230, 253, 0.9);
+      background: rgba(14, 116, 144, 0.42);
+    }
+    body.fulltext-media-open {
+      overflow: hidden;
+    }
+    .media-download-toast {
+      position: fixed;
+      right: 0.95rem;
+      bottom: 0.95rem;
+      z-index: 170;
+      max-width: min(92vw, 24rem);
+      padding: 0.55rem 0.78rem;
+      border-radius: 0.65rem;
+      border: 1px solid #c8d5e4;
+      background: rgba(255, 255, 255, 0.97);
+      color: #0f172a;
+      font-size: 0.78rem;
+      line-height: 1.35;
+      box-shadow: 0 14px 26px -20px rgba(15, 23, 42, 0.55);
+      opacity: 0;
+      transform: translateY(4px);
+      pointer-events: none;
+      transition: opacity 0.18s ease, transform 0.18s ease;
+    }
+    .media-download-toast.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .media-download-toast--warning {
+      border-color: #f5d7a1;
+      background: #fffbf2;
+      color: #7c2d12;
+    }
     /* Legacy mirrored content sometimes carries right-edge border artifacts. */
     .article-body div[style*="text-align:justify"],
     .article-body div[style*="text-align: justify"],
@@ -714,6 +1015,61 @@
       .article-body pre {
         max-width: 100%;
         overflow-x: auto;
+      }
+      .article-inline-media {
+        margin: 1.05rem 0 1.2rem;
+        border-radius: 0.8rem;
+      }
+      .article-inline-media-head {
+        padding: 0.58rem 0.68rem 0.54rem;
+        align-items: baseline;
+      }
+      .article-inline-media-kind {
+        min-width: 3.9rem;
+        font-size: 0.62rem;
+      }
+      .article-inline-media-thumb {
+        min-height: 9.2rem;
+        max-height: min(54vh, 18rem);
+      }
+      .article-inline-media-thumb img {
+        max-height: min(54vh, 18rem);
+      }
+      .article-inline-media-placeholder {
+        min-height: 9.2rem;
+        font-size: 0.86rem;
+      }
+      .article-inline-media-footer {
+        padding: 0.5rem 0.68rem 0.6rem;
+        flex-wrap: wrap;
+      }
+      .article-inline-media-open {
+        font-size: 0.74rem;
+      }
+      .article-inline-media-download {
+        font-size: 0.72rem;
+      }
+      .fulltext-media-modal {
+        padding: 0.55rem;
+      }
+      .fulltext-media-modal-dialog {
+        max-height: calc(100vh - 1.1rem);
+        border-radius: 0.75rem;
+      }
+      .fulltext-media-modal-head {
+        padding: 0.54rem 0.68rem;
+      }
+      .fulltext-media-modal-title {
+        font-size: 0.8rem;
+      }
+      .fulltext-media-modal-body {
+        max-height: calc(100vh - 8.8rem);
+      }
+      .fulltext-media-modal-image {
+        max-height: calc(100vh - 10rem);
+      }
+      .fulltext-media-modal-foot {
+        padding: 0.54rem 0.68rem;
       }
       .article-meta-card {
         margin-bottom: 1rem;
@@ -1432,6 +1788,28 @@
         if (/^https?:\/\//i.test(value)) return value;
         var match = value.match(/W\d+/i);
         return match ? ('https://openalex.org/' + match[0].toUpperCase()) : '';
+      }
+
+      function buildMediaDownloadFilename(src, label, kindHint) {
+        var kind = String(kindHint || '').toLowerCase().indexOf('tab') === 0 ? 'table' : 'figure';
+        var cleanLabel = String(label || '').replace(/\s+/g, ' ').trim();
+        var numMatch = cleanLabel.match(/\b(S?\d+)\b/i);
+        var stem = kind + (numMatch ? ('-' + String(numMatch[1]).toLowerCase()) : '');
+        stem = stem
+          .replace(/[^a-z0-9-]+/g, '-')
+          .replace(/-+/g, '-')
+          .replace(/^-|-$/g, '');
+        if (!stem) stem = kind;
+
+        var path = String(src || '').split('#')[0].split('?')[0];
+        var extMatch = path.match(/\.([a-z0-9]{2,5})$/i);
+        var ext = extMatch ? String(extMatch[1]).toLowerCase() : 'jpg';
+        if (ext === 'jpeg') ext = 'jpg';
+        if (['jpg', 'png', 'gif', 'webp', 'svg', 'pdf', 'tif', 'tiff'].indexOf(ext) === -1) {
+          ext = 'jpg';
+        }
+
+        return 'balkanmedj-' + stem + '.' + ext;
       }
 
       function extractOpenAlexWorkId(idOrUrl) {
@@ -2321,6 +2699,202 @@
           if (normalized !== label) heading.textContent = normalized;
         });
 
+        function parseLegacyOpenWinSource(href) {
+          var raw = String(href || '').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+          if (!raw) return '';
+          var match = raw.match(/openWin\(\s*['"]([^'"]+)['"]/i);
+          if (!match || !match[1]) return '';
+          var src = String(match[1]).trim();
+          if (!src) return '';
+          if (/^https?:\/\//i.test(src)) return src;
+          return 'https://balkanmedicaljournal.org/' + src.replace(/^\/+/, '');
+        }
+
+        function normalizeMediaLabel(value, kindHint) {
+          var cleaned = String(value || '').replace(/\s+/g, ' ').trim();
+          if (!cleaned) return '';
+
+          // Normalize panel-style labels:
+          // "Figure 8a", "Figures 8a-f", "Fig. 8a-b", "Tables S2a-c" -> "Figure 8"/"Table S2"
+          var labelMatch = cleaned.match(/\b(fig(?:ure)?s?|figs?|table?s?)\s*\.?\s*(S?\d+)(?:\s*[a-z](?:\s*[-–—,]\s*[a-z])*)?\b/i);
+          if (!labelMatch) {
+            var compact = cleaned
+              .replace(/\s+/g, '')
+              .replace(/^[^A-Za-z0-9]+|[^A-Za-z0-9]+$/g, '');
+            var looseNumberMatch = compact.match(/^(S?\d+)(?:[a-z](?:[-–—,][a-z])*)?$/i);
+            if (looseNumberMatch && (kindHint === 'Table' || kindHint === 'Figure')) {
+              return kindHint + ' ' + String(looseNumberMatch[1] || '').toUpperCase();
+            }
+            return cleaned;
+          }
+
+          var rawKind = String(labelMatch[1] || '').toLowerCase();
+          var canonicalKind = rawKind.indexOf('tab') === 0 ? 'Table' : 'Figure';
+          var normalizedKind = kindHint === 'Table' || kindHint === 'Figure' ? kindHint : canonicalKind;
+          var numberToken = String(labelMatch[2] || '').toUpperCase();
+          return normalizedKind + ' ' + numberToken;
+        }
+
+        function getMediaKind(label, src) {
+          var probe = (String(label || '') + ' ' + String(src || '')).toLowerCase();
+          if (probe.indexOf('table') !== -1 || probe.indexOf('/table_') !== -1) return 'Table';
+          return 'Figure';
+        }
+
+        function isImageSource(src) {
+          return /\.(?:png|jpe?g|gif|webp|svg)(?:[?#].*)?$/i.test(String(src || ''));
+        }
+
+        function parseMediaNumberToken(mediaTitle) {
+          var match = String(mediaTitle || '').match(/^(?:Figure|Table)\s+(S?\d+)/i);
+          return match && match[1] ? String(match[1]).toUpperCase() : '';
+        }
+
+        function getMediaNumberRank(numberToken) {
+          if (!numberToken) return Number.MAX_SAFE_INTEGER;
+          var isSupplement = /^S/i.test(numberToken);
+          var parsed = parseInt(String(numberToken).replace(/^S/i, ''), 10);
+          if (!Number.isFinite(parsed)) return Number.MAX_SAFE_INTEGER;
+          return (isSupplement ? 100000 : 0) + parsed;
+        }
+
+        function escapeRegexToken(value) {
+          return String(value || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+
+        function buildCitationRegex(mediaKind, numberToken) {
+          if (!numberToken) return null;
+          var kindPattern = mediaKind === 'Table' ? 'table(?:s)?' : 'fig(?:ure)?s?';
+          var numberPattern = escapeRegexToken(numberToken);
+          return new RegExp('\\b' + kindPattern + '\\s*\\.?\\s*' + numberPattern + '(?:\\s*[a-z](?:\\s*[-–—,]\\s*[a-z])*)?\\b', 'i');
+        }
+
+        function getDefaultInsertionAnchor(link) {
+          if (!link) return null;
+          return link.closest('p, li, blockquote, h1, h2, h3, h4, h5, h6') || link.closest('div') || link;
+        }
+
+        function findFirstCitationAnchor(mediaKind, numberToken, fallbackLink) {
+          var fallbackAnchor = getDefaultInsertionAnchor(fallbackLink);
+          var citationRegex = buildCitationRegex(mediaKind, numberToken);
+          if (!citationRegex) {
+            return { anchor: fallbackAnchor, matchIndex: Number.MAX_SAFE_INTEGER };
+          }
+
+          var citationContainers = root.querySelectorAll('p, li, blockquote, h1, h2, h3, h4, h5, h6, td, th');
+          for (var i = 0; i < citationContainers.length; i += 1) {
+            var container = citationContainers[i];
+            if (!container || container.closest('[data-media-card="true"]')) continue;
+            var text = String(container.textContent || '').replace(/\s+/g, ' ').trim();
+            if (!text) continue;
+            var match = text.match(citationRegex);
+            if (!match) continue;
+            return { anchor: container, matchIndex: typeof match.index === 'number' ? match.index : 0 };
+          }
+
+          return { anchor: fallbackAnchor, matchIndex: Number.MAX_SAFE_INTEGER };
+        }
+
+        var elementOrderMap = new Map();
+        var elementOrderIndex = 0;
+        var orderWalker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT, null);
+        var currentOrderNode;
+        while ((currentOrderNode = orderWalker.nextNode())) {
+          elementOrderMap.set(currentOrderNode, elementOrderIndex);
+          elementOrderIndex += 1;
+        }
+
+        function getElementOrder(node) {
+          if (!node || !elementOrderMap.has(node)) return Number.MAX_SAFE_INTEGER;
+          return elementOrderMap.get(node);
+        }
+
+        var insertedMediaCards = {};
+        var pendingMediaCards = [];
+        var mediaLinks = root.querySelectorAll('a[href*="openWin("]');
+        Array.prototype.forEach.call(mediaLinks, function (link) {
+          if (!link) return;
+          var src = parseLegacyOpenWinSource(link.getAttribute('href'));
+          if (!src) return;
+
+          var label = normalizeMediaLabel(link.textContent || '');
+          var mediaKind = getMediaKind(label, src);
+          var mediaTitle = normalizeMediaLabel(label, mediaKind) || mediaKind;
+          var mediaBadgeLabel = mediaTitle;
+          var mediaDownloadName = buildMediaDownloadFilename(src, mediaTitle, mediaKind);
+          var cardKey = src.toLowerCase();
+
+          link.setAttribute('href', src);
+          link.setAttribute('target', '_blank');
+          link.setAttribute('rel', 'noopener');
+          link.setAttribute('data-media-preview', 'true');
+          link.setAttribute('data-media-src', src);
+          link.setAttribute('data-media-label', mediaTitle);
+          link.classList.add('article-media-ref-link');
+
+          if (insertedMediaCards[cardKey]) return;
+          insertedMediaCards[cardKey] = true;
+
+          var card = document.createElement('figure');
+          card.className = 'article-inline-media';
+          card.setAttribute('data-media-card', 'true');
+          card.setAttribute('data-media-src', src);
+          card.setAttribute('data-media-label', mediaTitle);
+
+          var thumbnailHtml = isImageSource(src)
+            ? '<span class="article-inline-media-thumb"><img src="' + escapeAttr(src) + '" loading="lazy" decoding="async" alt="' + escapeAttr(mediaTitle) + '"></span>'
+            : '<span class="article-inline-media-thumb"><span class="article-inline-media-placeholder">' + escapeHtml(mediaKind) + ' Preview</span></span>';
+          var sourceCaption = mediaKind === 'Table'
+            ? 'Source table from original publication.'
+            : 'Source figure from original publication.';
+
+          card.innerHTML =
+            '<div class="article-inline-media-head">' +
+              '<span class="article-inline-media-kind">' + escapeHtml(mediaBadgeLabel) + '</span>' +
+            '</div>' +
+            '<button type="button" class="article-inline-media-trigger" data-media-preview="true" data-media-src="' + escapeAttr(src) + '" data-media-label="' + escapeAttr(mediaTitle) + '" aria-label="Open ' + escapeAttr(mediaTitle) + '">' +
+              thumbnailHtml +
+            '</button>' +
+            '<figcaption class="article-inline-media-footer">' +
+              '<p class="article-inline-media-caption">' + sourceCaption + '</p>' +
+              '<span class="article-inline-media-actions">' +
+                '<a class="article-inline-media-open" href="' + escapeAttr(src) + '" target="_blank" rel="noopener">Open full size</a>' +
+                '<a class="article-inline-media-download" href="' + escapeAttr(src) + '" download="' + escapeAttr(mediaDownloadName) + '" data-media-download="true" data-media-src="' + escapeAttr(src) + '" data-media-filename="' + escapeAttr(mediaDownloadName) + '">' +
+                  '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v12m0 0l4-4m-4 4l-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>' +
+                  'Download' +
+                '</a>' +
+              '</span>' +
+            '</figcaption>';
+
+          var numberToken = parseMediaNumberToken(mediaTitle);
+          var placement = findFirstCitationAnchor(mediaKind, numberToken, link);
+          pendingMediaCards.push({
+            card: card,
+            anchor: placement.anchor,
+            anchorOrder: getElementOrder(placement.anchor),
+            matchIndex: placement.matchIndex,
+            kindRank: mediaKind === 'Table' ? 0 : 1,
+            numberRank: getMediaNumberRank(numberToken)
+          });
+        });
+
+        pendingMediaCards.sort(function (a, b) {
+          if (a.anchorOrder !== b.anchorOrder) return a.anchorOrder - b.anchorOrder;
+          if (a.matchIndex !== b.matchIndex) return a.matchIndex - b.matchIndex;
+          if (a.kindRank !== b.kindRank) return a.kindRank - b.kindRank;
+          if (a.numberRank !== b.numberRank) return a.numberRank - b.numberRank;
+          return 0;
+        });
+
+        var lastInsertedAfterAnchor = new Map();
+        pendingMediaCards.forEach(function (item) {
+          if (!item || !item.anchor || !item.anchor.parentNode) return;
+          var insertAfter = lastInsertedAfterAnchor.get(item.anchor) || item.anchor;
+          if (!insertAfter || !insertAfter.parentNode) return;
+          insertAfter.parentNode.insertBefore(item.card, insertAfter.nextSibling);
+          lastInsertedAfterAnchor.set(item.anchor, item.card);
+        });
+
         return root.innerHTML;
       }
 
@@ -3123,7 +3697,7 @@
       var mobilePdfActionHtml = '';
       if (pdfHref) {
         mobilePdfActionHtml =
-          '<a href="' + escapeAttr(pdfHref) + '" target="_blank" rel="noopener" class="mobile-meta-action mobile-pdf-inline-link" aria-label="Download PDF" title="Download PDF">' +
+          '<a href="' + escapeAttr(pdfHref) + '" target="_blank" rel="noopener" class="mobile-meta-action mobile-pdf-inline-link" data-track-download="pdf" aria-label="Download PDF" title="Download PDF">' +
             '<svg viewBox="0 0 24 28" aria-hidden="true">' +
               '<path d="M3.2 1.5h11.1l6.2 6.1v16.1a2.8 2.8 0 0 1-2.8 2.8H3.2a2.8 2.8 0 0 1-2.8-2.8V4.3a2.8 2.8 0 0 1 2.8-2.8z" fill="#ffffff" stroke="#ef2a2a" stroke-width="2"></path>' +
               '<path d="M14.3 1.5v5a2.2 2.2 0 0 0 2.2 2.2h4" fill="none" stroke="#ef2a2a" stroke-width="2"></path>' +
@@ -3232,7 +3806,7 @@
         '<div class="desktop-access-card journal-side-card">' +
           '<span class="side-card-label">Access</span>' +
           (pdfHref
-            ? '<a href="' + escapeAttr(pdfHref) + '" target="_blank" rel="noopener" class="access-cta w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-teal-700 text-white rounded-lg hover:bg-teal-800 transition-colors">' +
+            ? '<a href="' + escapeAttr(pdfHref) + '" target="_blank" rel="noopener" class="access-cta w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-teal-700 text-white rounded-lg hover:bg-teal-800 transition-colors" data-track-download="pdf">' +
                 '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>' +
                 'Download PDF' +
               '</a>'
@@ -3257,11 +3831,11 @@
                 '<div class="impact-metric-grid">' +
                   '<div class="impact-metric-tile">' +
                     '<span class="impact-metric-label">Views</span>' +
-                    '<span class="impact-metric-value">' + (article.views || 0).toLocaleString() + '</span>' +
+                    '<span id="metric-views" class="impact-metric-value">' + (article.views || 0).toLocaleString() + '</span>' +
                   '</div>' +
                   '<div class="impact-metric-tile">' +
                     '<span class="impact-metric-label">Downloads</span>' +
-                    '<span class="impact-metric-value">' + (article.downloads || 0).toLocaleString() + '</span>' +
+                    '<span id="metric-downloads" class="impact-metric-value">' + (article.downloads || 0).toLocaleString() + '</span>' +
                   '</div>' +
                   '<div class="impact-metric-tile impact-metric-tile--citations">' +
                     '<span class="impact-metric-label">Citations</span>' +
@@ -3420,6 +3994,135 @@
             '</div>' +
           '</div>' +
         '</div>';
+
+      function initImpactMetricsTracking() {
+        if (isCoverPage) return null;
+
+        var STORAGE_KEY = 'bmj-impact-metrics-v1';
+        var metricViewsEl = document.getElementById('metric-views');
+        var metricDownloadsEl = document.getElementById('metric-downloads');
+        if (!metricViewsEl && !metricDownloadsEl) return null;
+
+        function toSafeNonNegativeNumber(value) {
+          var num;
+          if (typeof value === 'string') {
+            var cleaned = value.trim();
+            if (!cleaned) return 0;
+            var normalizedDigits = cleaned.replace(/[^\d-]/g, '');
+            num = normalizedDigits ? Number(normalizedDigits) : Number(cleaned);
+          } else {
+            num = Number(value);
+          }
+          if (!Number.isFinite(num) || num < 0) return 0;
+          return Math.round(num);
+        }
+
+        function buildMetricKey() {
+          var doi = normalizeDoi(article.doi);
+          if (doi) return 'doi:' + doi.toLowerCase();
+          var sourceArticleId = String(article.sourceArticleId || '').trim();
+          if (sourceArticleId) return 'source:' + sourceArticleId;
+          return 'id:' + String(article.id || id || 'unknown');
+        }
+
+        function readStore() {
+          try {
+            var raw = window.localStorage.getItem(STORAGE_KEY);
+            if (!raw) return {};
+            var parsed = JSON.parse(raw);
+            return parsed && typeof parsed === 'object' ? parsed : {};
+          } catch (_error) {
+            return {};
+          }
+        }
+
+        function writeStore(store) {
+          try {
+            window.localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+          } catch (_error) {
+            // Ignore storage write errors (private mode/quota).
+          }
+        }
+
+        var metricKey = buildMetricKey();
+        var baseViews = toSafeNonNegativeNumber(article.views || 0);
+        var baseDownloads = toSafeNonNegativeNumber(article.downloads || 0);
+        var store = readStore();
+        var entry = store[metricKey];
+        if (!entry || typeof entry !== 'object') entry = {};
+
+        entry.baseViews = Math.max(toSafeNonNegativeNumber(entry.baseViews), baseViews);
+        entry.baseDownloads = Math.max(toSafeNonNegativeNumber(entry.baseDownloads), baseDownloads);
+        entry.viewsDelta = toSafeNonNegativeNumber(entry.viewsDelta);
+        entry.downloadsDelta = toSafeNonNegativeNumber(entry.downloadsDelta);
+
+        function getViewsTotal() {
+          return entry.baseViews + entry.viewsDelta;
+        }
+
+        function getDownloadsTotal() {
+          return entry.baseDownloads + entry.downloadsDelta;
+        }
+
+        function persist() {
+          entry.updatedAt = new Date().toISOString();
+          store[metricKey] = entry;
+          writeStore(store);
+        }
+
+        function render() {
+          var viewsTotal = getViewsTotal();
+          var downloadsTotal = getDownloadsTotal();
+          article.views = viewsTotal;
+          article.downloads = downloadsTotal;
+          if (metricViewsEl) metricViewsEl.textContent = viewsTotal.toLocaleString();
+          if (metricDownloadsEl) metricDownloadsEl.textContent = downloadsTotal.toLocaleString();
+        }
+
+        function increment(kind, amount) {
+          var delta = toSafeNonNegativeNumber(amount);
+          if (!delta) return;
+          if (kind === 'views') entry.viewsDelta += delta;
+          if (kind === 'downloads') entry.downloadsDelta += delta;
+          persist();
+          render();
+        }
+
+        function incrementViewOncePerSession() {
+          var sessionKey = 'bmj-impact-view-hit:' + encodeURIComponent(metricKey);
+          try {
+            if (window.sessionStorage.getItem(sessionKey) === '1') return;
+            window.sessionStorage.setItem(sessionKey, '1');
+          } catch (_error) {
+            // Session storage not available; continue and count.
+          }
+          increment('views', 1);
+        }
+
+        function bindPdfDownloadTracking() {
+          var links = document.querySelectorAll('[data-track-download="pdf"]');
+          Array.prototype.forEach.call(links, function (link) {
+            if (!link || link.getAttribute('data-impact-download-bound') === 'true') return;
+            link.setAttribute('data-impact-download-bound', 'true');
+            link.addEventListener('click', function () {
+              increment('downloads', 1);
+            });
+          });
+        }
+
+        persist();
+        render();
+        bindPdfDownloadTracking();
+        incrementViewOncePerSession();
+
+        return {
+          render: render,
+          increment: increment,
+          bindPdfDownloadTracking: bindPdfDownloadTracking
+        };
+      }
+
+      var impactMetricsController = initImpactMetricsTracking();
 
       (function initPublicationHistoryToggle() {
         var toggle = document.getElementById('publication-history-toggle');
@@ -3585,6 +4288,9 @@
         if (typeof mq.addEventListener === 'function') mq.addEventListener('change', placeCards);
         else if (typeof mq.addListener === 'function') mq.addListener(placeCards);
       })();
+      if (impactMetricsController && typeof impactMetricsController.bindPdfDownloadTracking === 'function') {
+        impactMetricsController.bindPdfDownloadTracking();
+      }
 
       (function initUtilityPanels() {
         var panelNodes = Array.prototype.slice.call(document.querySelectorAll('#article-secondary-cards details.journal-tool-panel'));
@@ -3606,6 +4312,210 @@
       initCitationIntelligence();
       initAttentionWidgets();
       enrichAuthorsFromOriginalSources();
+
+      function ensureFullTextMediaModal() {
+        var modal = document.getElementById('fulltext-media-modal');
+        if (modal) return modal;
+
+        modal = document.createElement('div');
+        modal.id = 'fulltext-media-modal';
+        modal.className = 'fulltext-media-modal';
+        modal.setAttribute('aria-hidden', 'true');
+        modal.innerHTML =
+          '<button type="button" class="fulltext-media-modal-backdrop" aria-label="Close media viewer"></button>' +
+          '<section class="fulltext-media-modal-dialog" role="dialog" aria-modal="true" aria-label="Figure viewer">' +
+            '<header class="fulltext-media-modal-head">' +
+              '<h3 class="fulltext-media-modal-title" id="fulltext-media-modal-title"></h3>' +
+              '<button type="button" class="fulltext-media-modal-close" aria-label="Close">' +
+                '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 18 6M6 6l12 12"></path></svg>' +
+              '</button>' +
+            '</header>' +
+            '<div class="fulltext-media-modal-body">' +
+              '<img class="fulltext-media-modal-image" alt="">' +
+            '</div>' +
+            '<footer class="fulltext-media-modal-foot">' +
+              '<a class="fulltext-media-modal-open" href="#" target="_blank" rel="noopener">Open in new tab</a>' +
+              '<a class="fulltext-media-modal-download" href="#" download data-media-download="true" data-media-src="" data-media-filename="">' +
+                '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v12m0 0l4-4m-4 4l-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>' +
+                'Download' +
+              '</a>' +
+            '</footer>' +
+          '</section>';
+
+        document.body.appendChild(modal);
+
+        function closeModal() {
+          modal.classList.remove('is-open');
+          modal.setAttribute('aria-hidden', 'true');
+          document.body.classList.remove('fulltext-media-open');
+          var image = modal.querySelector('.fulltext-media-modal-image');
+          if (image) image.removeAttribute('src');
+        }
+
+        modal.querySelector('.fulltext-media-modal-backdrop').addEventListener('click', closeModal);
+        modal.querySelector('.fulltext-media-modal-close').addEventListener('click', closeModal);
+        modal.addEventListener('click', function (event) {
+          if (!event.target.closest('.fulltext-media-modal-dialog')) closeModal();
+        });
+
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+            closeModal();
+          }
+        });
+
+        modal._openMedia = function (src, label) {
+          var title = String(label || 'Figure').replace(/\s+/g, ' ').trim();
+          var inferredKind = /^\s*table\b/i.test(title) ? 'Table' : 'Figure';
+          var downloadName = buildMediaDownloadFilename(src, title, inferredKind);
+          var image = modal.querySelector('.fulltext-media-modal-image');
+          var titleNode = modal.querySelector('#fulltext-media-modal-title');
+          var openLink = modal.querySelector('.fulltext-media-modal-open');
+          var downloadLink = modal.querySelector('.fulltext-media-modal-download');
+          if (titleNode) titleNode.textContent = title;
+          if (image) {
+            image.src = String(src || '');
+            image.alt = title;
+          }
+          if (openLink) openLink.href = String(src || '#');
+          if (downloadLink) {
+            downloadLink.href = String(src || '#');
+            downloadLink.setAttribute('download', downloadName);
+            downloadLink.setAttribute('data-media-src', String(src || ''));
+            downloadLink.setAttribute('data-media-filename', downloadName);
+          }
+          modal.classList.add('is-open');
+          modal.setAttribute('aria-hidden', 'false');
+          document.body.classList.add('fulltext-media-open');
+        };
+
+        return modal;
+      }
+
+      function initFullTextMediaInteractions(bodyNode) {
+        if (!bodyNode || !bodyNode.querySelectorAll) return;
+        if (bodyNode.getAttribute('data-media-interactions-ready') === 'true') return;
+        var previewTriggers = bodyNode.querySelectorAll('[data-media-preview="true"]');
+        if (!previewTriggers.length) return;
+        bodyNode.setAttribute('data-media-interactions-ready', 'true');
+
+        var modal = ensureFullTextMediaModal();
+
+        function showDownloadToast(message, isWarning) {
+          var toast = document.getElementById('media-download-toast');
+          if (!toast) {
+            toast = document.createElement('div');
+            toast.id = 'media-download-toast';
+            toast.className = 'media-download-toast';
+            toast.setAttribute('role', 'status');
+            toast.setAttribute('aria-live', 'polite');
+            document.body.appendChild(toast);
+          }
+          toast.textContent = String(message || '').trim();
+          toast.classList.toggle('media-download-toast--warning', !!isWarning);
+          toast.classList.add('is-visible');
+          if (toast._hideTimer) window.clearTimeout(toast._hideTimer);
+          toast._hideTimer = window.setTimeout(function () {
+            toast.classList.remove('is-visible');
+          }, isWarning ? 3600 : 1800);
+        }
+
+        function triggerDownload(url, filename) {
+          var href = String(url || '').trim();
+          if (!href) return;
+          var name = String(filename || '').trim() || 'balkanmedj-media';
+
+          function iframeFallbackDownload() {
+            var frame = document.getElementById('media-download-frame');
+            if (!frame) {
+              frame = document.createElement('iframe');
+              frame.id = 'media-download-frame';
+              frame.name = 'media-download-frame';
+              frame.style.display = 'none';
+              frame.setAttribute('aria-hidden', 'true');
+              document.body.appendChild(frame);
+            }
+            var link = document.createElement('a');
+            link.href = href;
+            link.setAttribute('download', name);
+            link.setAttribute('target', 'media-download-frame');
+            link.rel = 'noopener';
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+            showDownloadToast('Download started.');
+          }
+
+          if (window.location.protocol === 'file:') {
+            iframeFallbackDownload();
+            return;
+          }
+
+          fetch(href).then(function (res) {
+            if (!res.ok) throw new Error('download-failed');
+            return res.blob();
+          }).then(function (blob) {
+            var objectUrl = URL.createObjectURL(blob);
+            var link = document.createElement('a');
+            link.href = objectUrl;
+            link.download = name;
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+            window.setTimeout(function () { URL.revokeObjectURL(objectUrl); }, 1200);
+            showDownloadToast('Download started.');
+          }).catch(function () {
+            // Keep users on the same page while attempting direct browser download semantics.
+            iframeFallbackDownload();
+            showDownloadToast('Download requested. If blocked by browser policy, use Open full size and save manually.', true);
+          });
+        }
+
+        var inlineImages = bodyNode.querySelectorAll('.article-inline-media-thumb img');
+        Array.prototype.forEach.call(inlineImages, function (img) {
+          img.addEventListener('error', function () {
+            var wrapper = img.closest('.article-inline-media-thumb');
+            if (!wrapper) return;
+            wrapper.innerHTML = '<span class="article-inline-media-placeholder">Preview unavailable</span>';
+          }, { once: true });
+        });
+
+        bodyNode.addEventListener('click', function (event) {
+          var downloadAction = event.target.closest('[data-media-download="true"]');
+          if (downloadAction && bodyNode.contains(downloadAction)) {
+            event.preventDefault();
+            triggerDownload(
+              downloadAction.getAttribute('data-media-src') || downloadAction.getAttribute('href'),
+              downloadAction.getAttribute('data-media-filename') || downloadAction.getAttribute('download')
+            );
+            return;
+          }
+
+          var trigger = event.target.closest('[data-media-preview="true"]');
+          if (!trigger || !bodyNode.contains(trigger)) return;
+
+          var src = trigger.getAttribute('data-media-src') || trigger.getAttribute('href') || '';
+          if (!src) return;
+          var label = trigger.getAttribute('data-media-label') || trigger.textContent || 'Figure';
+
+          event.preventDefault();
+          modal._openMedia(src, label);
+        });
+
+        var modalNode = document.getElementById('fulltext-media-modal');
+        if (modalNode && !modalNode.getAttribute('data-download-handler-ready')) {
+          modalNode.setAttribute('data-download-handler-ready', 'true');
+          modalNode.addEventListener('click', function (event) {
+            var downloadAction = event.target.closest('[data-media-download="true"]');
+            if (!downloadAction || !modalNode.contains(downloadAction)) return;
+            event.preventDefault();
+            triggerDownload(
+              downloadAction.getAttribute('data-media-src') || downloadAction.getAttribute('href'),
+              downloadAction.getAttribute('data-media-filename') || downloadAction.getAttribute('download')
+            );
+          });
+        }
+      }
 
       // ── Full-text load + hash navigation ──
       if (hasFullText) {
@@ -3656,6 +4566,7 @@
             }
 
             container.innerHTML = '<div class="article-body">' + cleanedFullTextHtml + '</div>';
+            initFullTextMediaInteractions(container.querySelector('.article-body'));
             buildTOC();
           }).catch(function () {
             var container = document.getElementById('fulltext-content');
