@@ -149,6 +149,79 @@
     .publication-history-toggle[aria-expanded="true"] .publication-history-chevron {
       transform: rotate(180deg);
     }
+    .publication-header-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.42rem;
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+    .mobile-meta-actions {
+      display: none;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .mobile-meta-action {
+      display: none;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.35rem;
+      border: 0;
+      background: transparent;
+      color: var(--color-teal-700);
+      text-decoration: none;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: transform 0.16s ease, opacity 0.16s ease;
+    }
+    .mobile-meta-action svg {
+      width: 1.2rem;
+      height: 1.2rem;
+      display: block;
+    }
+    .mobile-pdf-inline-link svg {
+      width: 1.62rem;
+      height: 1.86rem;
+    }
+    .mobile-meta-action:hover {
+      transform: translateY(-1px);
+      opacity: 0.92;
+    }
+    .mobile-meta-action:focus-visible {
+      outline: 2px solid color-mix(in oklab, var(--color-teal-600) 65%, transparent);
+      outline-offset: 2px;
+    }
+    .mobile-meta-tooltip {
+      position: absolute;
+      left: 50%;
+      bottom: calc(100% + 6px);
+      transform: translateX(-50%);
+      padding: 0.22rem 0.5rem;
+      border-radius: 0.4rem;
+      background: rgba(15, 23, 42, 0.96);
+      color: #f8fafc;
+      font-size: 0.7rem;
+      line-height: 1.25;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.16s ease, visibility 0.16s ease;
+      z-index: 30;
+    }
+    .mobile-meta-action:hover .mobile-meta-tooltip,
+    .mobile-meta-action:focus-visible .mobile-meta-tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+    @media (hover: none), (pointer: coarse) {
+      .mobile-meta-tooltip {
+        display: none !important;
+      }
+    }
     .article-reading-column {
       max-width: 76ch;
     }
@@ -282,6 +355,73 @@
       padding: 1.02rem 1.08rem 1.1rem;
       background: linear-gradient(180deg, #ffffff 0%, #fcfdff 100%);
       border-top: 1px solid #e6ebf1;
+    }
+    .mobile-icon-panel-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.42);
+      z-index: 110;
+    }
+    .mobile-icon-panel-backdrop.is-open {
+      display: block;
+    }
+    .mobile-icon-panel {
+      display: none;
+      position: fixed;
+      left: 0.5rem;
+      right: 0.5rem;
+      bottom: 0.5rem;
+      max-height: min(78vh, calc(100vh - 1rem));
+      border: 1px solid #d7dee8;
+      border-radius: 1rem;
+      background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+      box-shadow: 0 22px 34px -24px rgba(15, 23, 42, 0.7);
+      z-index: 111;
+      overflow: hidden;
+    }
+    .mobile-icon-panel.is-open {
+      display: block;
+    }
+    .mobile-icon-panel-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.6rem;
+      padding: 0.9rem 1rem;
+      border-bottom: 1px solid #e6ebf1;
+      background: linear-gradient(180deg, #f8fbff 0%, #f4f8fc 100%);
+    }
+    .mobile-icon-panel-title {
+      font-size: 0.97rem;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: 0.01em;
+    }
+    .mobile-icon-panel-close {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.9rem;
+      height: 1.9rem;
+      border: 1px solid #d6deea;
+      border-radius: 9999px;
+      background: #ffffff;
+      color: #475569;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .mobile-icon-panel-close:hover {
+      background: #f8fafc;
+      color: #0f172a;
+    }
+    .mobile-icon-panel-body {
+      max-height: calc(min(78vh, calc(100vh - 1rem)) - 3.9rem);
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .mobile-icon-panel-body .journal-tool-body {
+      border-top: 0;
     }
     .impact-metric-grid {
       display: grid;
@@ -575,8 +715,49 @@
         max-width: 100%;
         overflow-x: auto;
       }
+      .article-meta-card {
+        margin-bottom: 1rem;
+      }
+      #article-secondary-slot-mobile {
+        display: none !important;
+        margin: 0 !important;
+      }
       #article-secondary-cards details[data-tool-panel="related"] {
         display: none !important;
+      }
+      #article-secondary-cards details[data-tool-panel="impact"],
+      #article-secondary-cards details[data-tool-panel="attention"],
+      #article-secondary-cards details[data-tool-panel="cite"] {
+        display: none !important;
+      }
+      .mobile-meta-actions {
+        display: inline-flex;
+      }
+      .mobile-meta-action {
+        display: inline-flex;
+      }
+      .article-tools-mobile .desktop-access-card {
+        display: none !important;
+      }
+    }
+    @media (max-width: 380px) {
+      .publication-header-row {
+        gap: 0.28rem;
+      }
+      .mobile-meta-actions {
+        gap: 0.22rem;
+      }
+      .mobile-meta-action {
+        width: 1.75rem;
+        height: 1.75rem;
+      }
+      .mobile-meta-action svg {
+        width: 1rem;
+        height: 1rem;
+      }
+      .mobile-pdf-inline-link svg {
+        width: 1.38rem;
+        height: 1.58rem;
       }
     }
     .author-corresponding-icon:hover {
@@ -848,10 +1029,6 @@
     </div>
   </footer>
 
-  <button id="scroll-top" class="scroll-top-btn fixed bottom-6 right-6 w-12 h-12 bg-teal-700 text-white rounded-full shadow-lg hover:bg-teal-800 transition-colors hidden md:flex items-center justify-center z-40 no-print" aria-label="Scroll to top">
-    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
-  </button>
-
   <script src="js/data/articles.js"></script>
   <script src="js/data/author-metadata.js"></script>
   <script src="js/data/articles-in-press.js"></script>
@@ -1111,6 +1288,64 @@
           .replace(/&/g, '&amp;')
           .replace(/</g, '&lt;')
           .replace(/>/g, '&gt;');
+      }
+
+      function toDisplayTitleCase(value) {
+        var raw = String(value || '');
+        if (!raw.trim()) return raw;
+
+        var lettersOnly = raw.replace(/[^A-Za-z]/g, '');
+        if (!lettersOnly) return raw;
+        if (raw !== raw.toUpperCase()) return raw;
+
+        var minorWords = {
+          'a': true, 'an': true, 'and': true, 'as': true, 'at': true, 'but': true, 'by': true,
+          'for': true, 'from': true, 'in': true, 'nor': true, 'of': true, 'on': true,
+          'or': true, 'the': true, 'to': true, 'via': true, 'vs': true, 'with': true
+        };
+
+        var tokens = raw.split(/(\s+)/);
+        var wordIndexes = [];
+        var i;
+        for (i = 0; i < tokens.length; i++) {
+          if (tokens[i] && !/^\s+$/.test(tokens[i])) wordIndexes.push(i);
+        }
+        if (wordIndexes.length === 0) return raw;
+
+        function titleizeWord(word, isFirst, isLast) {
+          var match = String(word || '').match(/^([^A-Za-z0-9]*)([A-Za-z0-9][A-Za-z0-9'.:-]*)([^A-Za-z0-9]*)$/);
+          if (!match) return word;
+
+          var prefix = match[1];
+          var core = match[2];
+          var suffix = match[3];
+          var lowerCore = core.toLowerCase();
+
+          if (!isFirst && !isLast && minorWords[lowerCore]) {
+            return prefix + lowerCore + suffix;
+          }
+
+          if (/^[IVXLCDM]+$/.test(core)) {
+            return prefix + core + suffix;
+          }
+
+          var coreAlphaNum = core.replace(/[^A-Z0-9]/g, '');
+          if (coreAlphaNum.length <= 4 && coreAlphaNum.length > 0 && core === core.toUpperCase() && !minorWords[lowerCore]) {
+            return prefix + core + suffix;
+          }
+
+          return prefix + core.charAt(0).toUpperCase() + core.slice(1).toLowerCase() + suffix;
+        }
+
+        wordIndexes.forEach(function (tokenIndex, rank) {
+          tokens[tokenIndex] = titleizeWord(
+            tokens[tokenIndex],
+            rank === 0,
+            rank === wordIndexes.length - 1
+          );
+        });
+
+        return tokens.join('');
       }
 
       function normalizeDoi(value) {
@@ -1520,6 +1755,7 @@
         var plumxWrap = document.getElementById('plumx-wrapper');
         var altBadge = document.getElementById('altmetric-badge');
         var plumxBadge = document.getElementById('plumx-badge');
+        var quickAttentionAction = document.querySelector('[data-mobile-panel-target="attention"]');
         var doi = normalizeDoi(article.doi);
         var altmetricScriptFailed = false;
         var plumxScriptFailed = false;
@@ -1579,6 +1815,7 @@
         function applyAttentionVisibility(altAvailable, plumAvailable) {
           if (altmetricWrap) altmetricWrap.classList.toggle('hidden', !altAvailable);
           if (plumxWrap) plumxWrap.classList.toggle('hidden', !plumAvailable);
+          if (quickAttentionAction) quickAttentionAction.classList.toggle('hidden', !altAvailable && !plumAvailable);
           syncAttentionLayout();
 
           if (!altAvailable && !plumAvailable) {
@@ -1618,6 +1855,7 @@
         if (!doi) {
           if (altmetricWrap) altmetricWrap.classList.add('hidden');
           if (plumxWrap) plumxWrap.classList.add('hidden');
+          if (quickAttentionAction) quickAttentionAction.classList.add('hidden');
           syncAttentionLayout();
           hideAttentionPanel();
           return;
@@ -2026,6 +2264,14 @@
           if (token === '<' || token === '>') el.remove();
         });
 
+        var headings = root.querySelectorAll('h1, h2, h3, h4, h5, h6');
+        Array.prototype.forEach.call(headings, function (heading) {
+          if (!heading) return;
+          var label = String(heading.textContent || '');
+          var normalized = toDisplayTitleCase(label);
+          if (normalized !== label) heading.textContent = normalized;
+        });
+
         return root.innerHTML;
       }
 
@@ -2042,8 +2288,9 @@
       }
 
       // Update page title
-      document.title = article.title + ' — Balkan Medical Journal';
-      if (breadcrumbTitle) breadcrumbTitle.textContent = article.title;
+      var displayArticleTitle = toDisplayTitleCase(article.title);
+      document.title = displayArticleTitle + ' — Balkan Medical Journal';
+      if (breadcrumbTitle) breadcrumbTitle.textContent = displayArticleTitle;
       if (breadcrumbSectionLink) {
         if (sourceContext === 'archive') {
           breadcrumbSectionLink.textContent = 'Archive';
@@ -2823,11 +3070,64 @@
           '</div>';
       }
 
+      var mobilePdfActionHtml = '';
+      if (pdfHref) {
+        mobilePdfActionHtml =
+          '<a href="' + escapeAttr(pdfHref) + '" target="_blank" rel="noopener" class="mobile-meta-action mobile-pdf-inline-link" aria-label="Download PDF" title="Download PDF">' +
+            '<svg viewBox="0 0 24 28" aria-hidden="true">' +
+              '<path d="M3.2 1.5h11.1l6.2 6.1v16.1a2.8 2.8 0 0 1-2.8 2.8H3.2a2.8 2.8 0 0 1-2.8-2.8V4.3a2.8 2.8 0 0 1 2.8-2.8z" fill="#ffffff" stroke="#ef2a2a" stroke-width="2"></path>' +
+              '<path d="M14.3 1.5v5a2.2 2.2 0 0 0 2.2 2.2h4" fill="none" stroke="#ef2a2a" stroke-width="2"></path>' +
+              '<path d="M4.3 11.2h12.8M4.3 13.8h12.8M4.3 16.4h9.8" fill="none" stroke="#95a0aa" stroke-width="1.1" stroke-linecap="round"></path>' +
+              '<rect x="0.7" y="17.6" width="13.5" height="6.6" rx="1.2" fill="#ef2a2a"></rect>' +
+              '<text x="7.45" y="22.3" text-anchor="middle" font-size="4.7" font-family="Arial,sans-serif" font-weight="700" fill="#ffffff">PDF</text>' +
+            '</svg>' +
+            '<span class="mobile-meta-tooltip">Download PDF</span>' +
+          '</a>';
+      }
+      var mobileImpactActionHtml = isCoverPage ? '' :
+        '<button type="button" class="mobile-meta-action" data-mobile-panel-target="impact" aria-label="Impact" title="Impact">' +
+          '<svg fill="none" stroke="#0f6a81" viewBox="0 0 24 24" aria-hidden="true">' +
+            '<rect x="3" y="12" width="3.5" height="8" rx="1.1" fill="#d8ecf2" stroke="#0f6a81" stroke-width="1.4"></rect>' +
+            '<rect x="10.25" y="8" width="3.5" height="12" rx="1.1" fill="#c4e4ee" stroke="#0f6a81" stroke-width="1.4"></rect>' +
+            '<rect x="17.5" y="5" width="3.5" height="15" rx="1.1" fill="#a8d7e6" stroke="#0f6a81" stroke-width="1.4"></rect>' +
+          '</svg>' +
+          '<span class="mobile-meta-tooltip">Impact</span>' +
+        '</button>';
+      var mobileAttentionActionHtml = isCoverPage ? '' :
+        '<button type="button" class="mobile-meta-action" data-mobile-panel-target="attention" aria-label="Research Attention" title="Research Attention">' +
+          '<svg fill="none" stroke="#0f6a81" viewBox="0 0 24 24" aria-hidden="true">' +
+            '<circle cx="12" cy="12" r="8" fill="#eef7fa" stroke-width="1.4"></circle>' +
+            '<circle cx="12" cy="12" r="4.2" fill="#d7edf4" stroke-width="1.4"></circle>' +
+            '<circle cx="12" cy="12" r="1.8" fill="#0f6a81" stroke-width="1.2"></circle>' +
+          '</svg>' +
+          '<span class="mobile-meta-tooltip">Research Attention</span>' +
+        '</button>';
+      var mobileCiteActionHtml = isCoverPage ? '' :
+        '<button type="button" class="mobile-meta-action" data-mobile-panel-target="cite" aria-label="Cite This Article" title="Cite This Article">' +
+          '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">' +
+            '<circle cx="12" cy="12" r="8.2" stroke-width="1.5"></circle>' +
+            '<path d="M7.4 10.1h2.1v2H8.4c-.02.8-.4 1.45-1.2 2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>' +
+            '<path d="M13.2 10.1h2.1v2h-1.1c-.02.8-.4 1.45-1.2 2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>' +
+          '</svg>' +
+          '<span class="mobile-meta-tooltip">Cite This Article</span>' +
+        '</button>';
+      var mobileMetaActionsHtml = (mobilePdfActionHtml || mobileImpactActionHtml || mobileAttentionActionHtml || mobileCiteActionHtml)
+        ? ('<span class="mobile-meta-actions">' + mobilePdfActionHtml + mobileImpactActionHtml + mobileAttentionActionHtml + mobileCiteActionHtml + '</span>')
+        : '';
+
       var publicationHeaderHtml = '';
       if (pubDate && publicationHistoryRows.length) {
-        publicationHeaderHtml = '<button id="publication-history-toggle" type="button" class="publication-history-toggle" aria-expanded="false"><span class="text-gray-400">Published</span> ' + pubDate + '<svg class="publication-history-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 15l-7-7-7 7"></path></svg></button>';
+        publicationHeaderHtml =
+          '<div class="publication-header-row">' +
+            '<button id="publication-history-toggle" type="button" class="publication-history-toggle" aria-expanded="false"><span class="text-gray-400">Published</span> ' + pubDate + '<svg class="publication-history-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 15l-7-7-7 7"></path></svg></button>' +
+            mobileMetaActionsHtml +
+          '</div>';
       } else if (pubDate) {
-        publicationHeaderHtml = '<div><span class="text-gray-400">Published</span> ' + pubDate + '</div>';
+        publicationHeaderHtml =
+          '<div class="publication-header-row">' +
+            '<div><span class="text-gray-400">Published</span> ' + pubDate + '</div>' +
+            mobileMetaActionsHtml +
+          '</div>';
       }
 
       // Abstract panel content
@@ -3033,7 +3333,7 @@
                 (showAheadOfPrintBadge ? '<span class="badge bg-orange-100 text-orange-700">Ahead of Print</span>' : '') +
                 '<span class="text-sm text-gray-400">Volume ' + article.volume + ', Issue ' + article.issue + ', pp. ' + article.pages + '</span>' +
               '</div>' +
-              '<h1 class="article-title font-bold text-gray-900">' + article.title + '</h1>' +
+              '<h1 class="article-title font-bold text-gray-900">' + escapeHtml(displayArticleTitle) + '</h1>' +
 
               // Authors summary
               '<div class="mb-6" id="article-authors-inline">' +
@@ -3080,6 +3380,135 @@
           toggle.setAttribute('aria-expanded', expanded ? 'false' : 'true');
           panel.classList.toggle('hidden', expanded);
         });
+      })();
+      (function initMobileMetaQuickActions() {
+        var quickActions = document.querySelectorAll('[data-mobile-panel-target]');
+        if (!quickActions.length) return;
+        var mobileMq = window.matchMedia('(max-width: 859px)');
+        var mountedPanelBody = null;
+        var mountedPanelOwner = null;
+
+        function getPanelLabel(key) {
+          if (key === 'impact') return 'Impact';
+          if (key === 'attention') return 'Research Attention';
+          if (key === 'cite') return 'Cite This Article';
+          return 'Details';
+        }
+
+        function ensureMobileIconPanel() {
+          var backdrop = document.getElementById('mobile-icon-panel-backdrop');
+          var panel = document.getElementById('mobile-icon-panel');
+          var body = document.getElementById('mobile-icon-panel-body');
+          var title = document.getElementById('mobile-icon-panel-title');
+          var closeBtn = document.getElementById('mobile-icon-panel-close');
+          if (backdrop && panel && body && title && closeBtn) {
+            return { backdrop: backdrop, panel: panel, body: body, title: title, closeBtn: closeBtn };
+          }
+
+          backdrop = document.createElement('button');
+          backdrop.type = 'button';
+          backdrop.id = 'mobile-icon-panel-backdrop';
+          backdrop.className = 'mobile-icon-panel-backdrop';
+          backdrop.setAttribute('aria-label', 'Close panel');
+
+          panel = document.createElement('section');
+          panel.id = 'mobile-icon-panel';
+          panel.className = 'mobile-icon-panel';
+          panel.setAttribute('role', 'dialog');
+          panel.setAttribute('aria-modal', 'true');
+          panel.setAttribute('aria-label', 'Mobile quick panel');
+
+          panel.innerHTML =
+            '<div class="mobile-icon-panel-head">' +
+              '<h3 id="mobile-icon-panel-title" class="mobile-icon-panel-title"></h3>' +
+              '<button type="button" id="mobile-icon-panel-close" class="mobile-icon-panel-close" aria-label="Close panel">' +
+                '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 18 6M6 6l12 12"/></svg>' +
+              '</button>' +
+            '</div>' +
+            '<div id="mobile-icon-panel-body" class="mobile-icon-panel-body"></div>';
+
+          document.body.appendChild(backdrop);
+          document.body.appendChild(panel);
+
+          body = document.getElementById('mobile-icon-panel-body');
+          title = document.getElementById('mobile-icon-panel-title');
+          closeBtn = document.getElementById('mobile-icon-panel-close');
+
+          return { backdrop: backdrop, panel: panel, body: body, title: title, closeBtn: closeBtn };
+        }
+
+        function closeMobileIconPanel() {
+          var shell = ensureMobileIconPanel();
+          shell.backdrop.classList.remove('is-open');
+          shell.panel.classList.remove('is-open');
+
+          if (mountedPanelBody && mountedPanelOwner) {
+            mountedPanelOwner.appendChild(mountedPanelBody);
+          }
+          mountedPanelBody = null;
+          mountedPanelOwner = null;
+
+          document.body.style.overflow = '';
+        }
+
+        function openMobileIconPanel(targetPanel) {
+          if (!mobileMq.matches) return false;
+          if (targetPanel !== 'impact' && targetPanel !== 'attention' && targetPanel !== 'cite') return false;
+
+          var stack = document.getElementById('article-secondary-cards');
+          if (!stack) return false;
+          var ownerPanel = stack.querySelector('details[data-tool-panel="' + targetPanel + '"]');
+          if (!ownerPanel) return false;
+          var bodyNode = ownerPanel.querySelector('.journal-tool-body');
+          if (!bodyNode) return false;
+
+          var shell = ensureMobileIconPanel();
+          closeMobileIconPanel();
+
+          mountedPanelBody = bodyNode;
+          mountedPanelOwner = ownerPanel;
+          shell.title.textContent = getPanelLabel(targetPanel);
+          shell.body.appendChild(bodyNode);
+          shell.backdrop.classList.add('is-open');
+          shell.panel.classList.add('is-open');
+          document.body.style.overflow = 'hidden';
+          return true;
+        }
+
+        var shellRefs = ensureMobileIconPanel();
+        shellRefs.backdrop.addEventListener('click', closeMobileIconPanel);
+        shellRefs.closeBtn.addEventListener('click', closeMobileIconPanel);
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape') closeMobileIconPanel();
+        });
+
+        quickActions.forEach(function (actionBtn) {
+          actionBtn.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            var targetPanel = String(actionBtn.getAttribute('data-mobile-panel-target') || '').trim();
+            if (!targetPanel) return;
+
+            if (openMobileIconPanel(targetPanel)) return;
+
+            var stack = document.getElementById('article-secondary-cards');
+            if (!stack) return;
+
+            var panel = stack.querySelector('details[data-tool-panel="' + targetPanel + '"]');
+            if (!panel || panel.classList.contains('hidden')) return;
+
+            panel.open = true;
+            panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+        });
+
+        function handleViewportChange() {
+          if (!mobileMq.matches) {
+            closeMobileIconPanel();
+          }
+        }
+        if (typeof mobileMq.addEventListener === 'function') mobileMq.addEventListener('change', handleViewportChange);
+        else if (typeof mobileMq.addListener === 'function') mobileMq.addListener(handleViewportChange);
       })();
       initAuthorPopoverViewportGuard();
 

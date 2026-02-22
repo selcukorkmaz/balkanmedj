@@ -91,20 +91,9 @@
     });
   }
 
-  // ─── Scroll to Top ────────────────────────────────────────
-  const scrollBtn = document.getElementById('scroll-top');
-  if (scrollBtn) {
-    window.addEventListener('scroll', function () {
-      if (window.scrollY > 400) {
-        scrollBtn.classList.add('visible');
-      } else {
-        scrollBtn.classList.remove('visible');
-      }
-    });
-    scrollBtn.addEventListener('click', function () {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
+  // ─── Remove Legacy Scroll-To-Top Buttons ─────────────────
+  var legacyScrollButtons = document.querySelectorAll('#scroll-top, .scroll-top-btn');
+  legacyScrollButtons.forEach(function (btn) { btn.remove(); });
 
   // ─── Nav Active State ─────────────────────────────────────
   var currentPage = window.location.pathname.split('/').pop() || 'index.html';
