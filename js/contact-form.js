@@ -1,15 +1,12 @@
 /**
  * Balkan Medical Journal — Contact Form Validation & Submission
  *
- * FORMSPREE SETUP:
- * 1. Create a form at https://formspree.io
- * 2. Copy your form endpoint URL (e.g., https://formspree.io/f/xyzabcde)
- * 3. Replace the CONTACT_FORM_ENDPOINT value below with your URL
- * 4. The form will then send real messages to your Formspree inbox
- *
- * While CONTACT_FORM_ENDPOINT is empty, the form shows an informational message.
+ * Delivery:
+ * - POST to configured endpoint (FormSubmit-compatible)
+ * - Fallback to mailto flow when endpoint is unavailable (or local file mode)
  */
-var CONTACT_FORM_ENDPOINT = ''; // <-- Paste your Formspree endpoint URL here
+var CONTACT_FORM_ENDPOINT = 'https://formsubmit.co/ajax/info@balkanmedicaljournal.org';
+var CONTACT_FORM_RECIPIENT = 'info@balkanmedicaljournal.org';
 
 (function () {
   'use strict';
@@ -25,6 +22,14 @@ var CONTACT_FORM_ENDPOINT = ''; // <-- Paste your Formspree endpoint URL here
   };
 
   var successMsg = document.getElementById('contact-success');
+  var configuredEndpoint = String(
+    (window.BMJ_CONFIG && window.BMJ_CONFIG.contactEndpoint) ||
+    form.getAttribute('data-endpoint') ||
+    CONTACT_FORM_ENDPOINT ||
+    ''
+  ).trim();
+  var isFileProtocol = String(window.location.protocol || '').toLowerCase() === 'file:';
+  var mode = configuredEndpoint && !isFileProtocol ? 'endpoint' : 'mailto';
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -80,24 +85,31 @@ var CONTACT_FORM_ENDPOINT = ''; // <-- Paste your Formspree endpoint URL here
     btn.innerHTML = '<span class="spinner"></span> Sending...';
     btn.disabled = true;
 
-    // Check if endpoint is configured
-    if (!CONTACT_FORM_ENDPOINT) {
-      setTimeout(function () {
-        btn.textContent = originalText;
-        btn.disabled = false;
-        showFieldError(fields.message, 'Contact form endpoint not configured. Please email info@balkanmedicaljournal.org directly.');
-      }, 500);
+    if (mode === 'mailto') {
+      btn.textContent = originalText;
+      btn.disabled = false;
+      openMailtoFallback();
+      if (successMsg) {
+        successMsg.textContent = 'Your email client has been opened to complete your message.';
+        successMsg.classList.remove('hidden');
+        successMsg.focus();
+      }
       return;
     }
 
-    // Submit via fetch
+    var subjectLabel = getSelectedSubjectLabel();
+
     var formData = new FormData();
     formData.append('name', fields.name.el.value.trim());
     formData.append('email', fields.email.el.value.trim());
-    formData.append('_subject', 'Contact Form: ' + fields.subject.el.value.trim());
+    formData.append('subject', subjectLabel);
     formData.append('message', fields.message.el.value.trim());
+    formData.append('_subject', 'Contact Form: ' + subjectLabel);
+    formData.append('_captcha', 'false');
+    formData.append('_template', 'table');
+    formData.append('_honey', '');
 
-    fetch(CONTACT_FORM_ENDPOINT, {
+    fetch(configuredEndpoint, {
       method: 'POST',
       body: formData,
       headers: { 'Accept': 'application/json' }
@@ -106,30 +118,50 @@ var CONTACT_FORM_ENDPOINT = ''; // <-- Paste your Formspree endpoint URL here
       btn.textContent = originalText;
       btn.disabled = false;
 
-      if (response.ok) {
-        form.reset();
+      return response.json().then(function (data) {
+        var ok = response.ok && !/false/i.test(String(data && data.success || ''));
+        if (ok) {
+          form.reset();
 
-        if (successMsg) {
-          successMsg.classList.remove('hidden');
-          successMsg.focus();
+          if (successMsg) {
+            successMsg.textContent = 'Your message has been sent successfully. We will get back to you within 2-3 business days.';
+            successMsg.classList.remove('hidden');
+            successMsg.focus();
+          }
+
+          if (window.showToast) {
+            window.showToast('Message sent successfully!');
+          }
+          return;
         }
 
-        if (window.showToast) {
-          window.showToast('Message sent successfully!');
+        var msg = (data && data.errors && data.errors.length > 0)
+          ? data.errors.map(function (err) { return err.message; }).join(', ')
+          : (data && data.message ? String(data.message) : 'Failed to send message. Please try again later.');
+
+        // Local mirror context/provider issues: gracefully fall back to mail client.
+        if (/open this page through a web server/i.test(msg)) {
+          openMailtoFallback();
+          if (successMsg) {
+            successMsg.textContent = 'Your email client has been opened to complete your message.';
+            successMsg.classList.remove('hidden');
+            successMsg.focus();
+          }
+          return;
         }
-      } else {
-        return response.json().then(function (data) {
-          var msg = (data && data.errors && data.errors.length > 0)
-            ? data.errors.map(function (err) { return err.message; }).join(', ')
-            : 'Failed to send message. Please try again later.';
-          showFieldError(fields.message, msg);
-        });
-      }
+
+        showFieldError(fields.message, msg);
+      });
     })
     .catch(function () {
       btn.textContent = originalText;
       btn.disabled = false;
-      showFieldError(fields.message, 'Network error. Please check your connection and try again.');
+      openMailtoFallback();
+      if (successMsg) {
+        successMsg.textContent = 'Network issue detected. Your email client has been opened to complete your message.';
+        successMsg.classList.remove('hidden');
+        successMsg.focus();
+      }
     });
   });
 
@@ -168,5 +200,32 @@ var CONTACT_FORM_ENDPOINT = ''; // <-- Paste your Formspree endpoint URL here
       }
     }
     if (successMsg) successMsg.classList.add('hidden');
+  }
+
+  function getSelectedSubjectLabel() {
+    var subjectSelect = fields.subject && fields.subject.el;
+    if (!subjectSelect) return '';
+    var option = subjectSelect.options[subjectSelect.selectedIndex];
+    var label = option ? String(option.textContent || '') : '';
+    return label.replace(/\s+/g, ' ').trim() || String(subjectSelect.value || '').trim();
+  }
+
+  function openMailtoFallback() {
+    var name = String(fields.name.el.value || '').trim();
+    var email = String(fields.email.el.value || '').trim();
+    var subjectLabel = getSelectedSubjectLabel();
+    var message = String(fields.message.el.value || '').trim();
+    var bodyLines = [
+      'Name: ' + name,
+      'Email: ' + email,
+      'Subject: ' + subjectLabel,
+      '',
+      'Message:',
+      message
+    ];
+    var href = 'mailto:' + CONTACT_FORM_RECIPIENT +
+      '?subject=' + encodeURIComponent('Contact Form: ' + subjectLabel) +
+      '&body=' + encodeURIComponent(bodyLines.join('\n'));
+    window.location.href = href;
   }
 })();
