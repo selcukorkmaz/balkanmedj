@@ -180,56 +180,150 @@
   <main id="main-content">
 
     <!-- ── Hero Section ─────────────────────────────────────── -->
-    <section class="bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 text-white relative overflow-hidden">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-9 md:py-16 relative">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          <!-- Left: Text content -->
-          <div class="lg:col-span-7">
-            <div class="inline-flex items-center px-3 py-1 bg-teal-700/60 rounded-full text-xs sm:text-sm font-medium text-teal-200 mb-4 md:mb-6 border border-teal-600/40">
-              <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2"></span>
-              Diamond Open Access — No Fees, No Charges
-            </div>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 md:mb-6 font-serif">
-              Balkan Medical Journal
-            </h1>
-            <p class="text-xl text-teal-100/90 mb-6 md:mb-8 leading-relaxed max-w-xl font-serif">
-              An international, peer-reviewed medical journal publishing clinically relevant research across all areas of medicine since 1979.
-            </p>
-            <div class="flex flex-row gap-3 mb-8 md:mb-10">
-              <a href="current-issue.html" class="inline-flex items-center px-4 sm:px-6 py-2.5 sm:py-3 bg-white text-teal-800 text-sm sm:text-base font-semibold rounded-lg hover:bg-gray-100 transition-colors shadow-lg">
-                Current Issue
-                <svg class="ml-2 w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-              </a>
-              <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="inline-flex items-center px-4 sm:px-6 py-2.5 sm:py-3 bg-red-700 text-white text-sm sm:text-base font-semibold rounded-lg hover:bg-red-800 transition-colors shadow-lg">
-                Submit Manuscript
-                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-              </a>
-            </div>
+    <section class="hero-carousel-section" aria-label="Journal highlights">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-8">
+        <div id="home-hero-carousel" class="hero-carousel" role="region" aria-roledescription="carousel" aria-label="Homepage highlights carousel" tabindex="0" data-autoplay="true" data-interval="6000">
+          <div class="hero-carousel-track">
+            <article id="hero-slide-1" class="hero-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 5">
+              <div class="hero-slide-shell">
+                <div class="hero-slide-inner hero-slide-inner-split">
+                  <div class="hero-slide-copy">
+                    <p class="hero-kicker">Diamond Open Access - No Fees, No Charges</p>
+                    <h1 class="hero-title">Balkan Medical Journal</h1>
+                    <p class="hero-subtitle">
+                      An international, peer-reviewed medical journal publishing clinically relevant research across all areas of medicine since 1979.
+                    </p>
+                    <div class="hero-actions">
+                      <a href="current-issue.html" class="hero-btn hero-btn-secondary">
+                        Current Issue
+                        <svg class="hero-btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                      </a>
+                      <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="hero-btn hero-btn-primary">
+                        Submit Manuscript
+                        <svg class="hero-btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                      </a>
+                    </div>
+                    <dl class="hero-metrics" aria-label="Journal impact metrics">
+                      <div class="hero-metric">
+                        <dd>3.8</dd>
+                        <dt>Impact Factor</dt>
+                      </div>
+                      <div class="hero-metric">
+                        <dd>3.7</dd>
+                        <dt>CiteScore</dt>
+                      </div>
+                      <div class="hero-metric">
+                        <dd>Q1</dd>
+                        <dt>WoS and Scopus</dt>
+                      </div>
+                    </dl>
+                  </div>
+                  <figure class="hero-cover-figure" aria-hidden="true">
+                    <img src="images/cover/cover1.jpeg" alt="Balkan Medical Journal current issue cover" class="hero-cover-image" loading="eager" fetchpriority="high" decoding="async">
+                  </figure>
+                </div>
+              </div>
+            </article>
 
-            <!-- Metrics row -->
-            <div class="grid grid-cols-3 gap-4 sm:flex sm:flex-wrap sm:gap-x-8 sm:gap-y-3">
-              <div>
-                <div class="text-2xl sm:text-3xl font-bold text-white font-serif">3.8</div>
-                <div class="text-sm sm:text-base text-teal-300 font-serif">Impact Factor</div>
+            <article id="hero-slide-2" class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 5" aria-hidden="true">
+              <div class="hero-slide-shell">
+                <div class="hero-slide-inner hero-slide-inner-featured">
+                  <div class="hero-slide-copy">
+                    <p class="hero-meta-chip">Latest Issue</p>
+                    <h2 class="hero-slide-title">Current Issue Highlights</h2>
+                    <p class="hero-slide-text">
+                      Explore the most recent issue including original articles, invited reviews, and brief reports selected for clinical relevance and scientific rigor.
+                    </p>
+                    <p class="hero-slide-caption" data-hero-issue-label>Volume 43, Issue 2 (2026)</p>
+                    <div class="hero-actions">
+                      <a href="current-issue.html" class="hero-btn hero-btn-secondary">Read Current Issue</a>
+                      <a href="archive.html" class="hero-btn hero-btn-ghost">Browse Archive</a>
+                    </div>
+                  </div>
+                  <div class="hero-mini-card">
+                    <span class="hero-mini-card-label">Featured in this issue</span>
+                    <a href="article.html?id=2791" class="hero-mini-card-title" data-hero-featured-link>
+                      <span data-hero-featured-title>Single-Cell Analysis, Spatial Transcriptomics and Molecular Docking Unveil Potential Therapeutic Targets for Carotid Atherosclerosis</span>
+                    </a>
+                    <p class="hero-mini-card-text" data-hero-featured-authors">Rongxing Qin, Hongyu Xu, Qingchun Qin, Wei Xu, Xinyu Lai, Li Chen</p>
+                  </div>
+                </div>
               </div>
-              <div class="sm:border-l sm:border-teal-600 sm:pl-8">
-                <div class="text-2xl sm:text-3xl font-bold text-white font-serif">3.7</div>
-                <div class="text-sm sm:text-base text-teal-300 font-serif">CiteScore</div>
+            </article>
+
+            <article id="hero-slide-3" class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 5" aria-hidden="true">
+              <div class="hero-slide-shell">
+                <div class="hero-slide-inner">
+                  <div class="hero-slide-copy">
+                    <p class="hero-meta-chip">News Announcements</p>
+                    <h2 class="hero-slide-title" data-hero-news-title>Balkan Medical Journal Achieves Record Impact Factor of 3.8</h2>
+                    <p class="hero-slide-text" data-hero-news-excerpt>
+                      We are proud to announce the latest journal milestones and editorial developments that continue to strengthen our international standing.
+                    </p>
+                    <div class="hero-actions">
+                      <a href="news-article.html?id=1" class="hero-btn hero-btn-secondary" data-hero-news-link>Read Announcement</a>
+                      <a href="news.html" class="hero-btn hero-btn-ghost">All News</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="sm:border-l sm:border-teal-600 sm:pl-8">
-                <div class="text-2xl sm:text-3xl font-bold text-white font-serif">Q1</div>
-                <div class="text-sm sm:text-base text-teal-300 font-serif">WoS &amp; Scopus</div>
+            </article>
+
+            <article id="hero-slide-4" class="hero-slide" role="group" aria-roledescription="slide" aria-label="4 of 5" aria-hidden="true">
+              <div class="hero-slide-shell">
+                <div class="hero-slide-inner">
+                  <div class="hero-slide-copy">
+                    <p class="hero-meta-chip">Editorial Updates</p>
+                    <h2 class="hero-slide-title">Strengthening Editorial Leadership and Review Quality</h2>
+                    <p class="hero-slide-text">
+                      Meet our editorial board members and explore reviewer resources that support methodological quality, transparent reporting, and ethical publishing.
+                    </p>
+                    <div class="hero-actions">
+                      <a href="editorial-board.html" class="hero-btn hero-btn-secondary">Editorial Board</a>
+                      <a href="for-reviewers.html" class="hero-btn hero-btn-ghost">For Reviewers</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
+            </article>
+
+            <article id="hero-slide-5" class="hero-slide" role="group" aria-roledescription="slide" aria-label="5 of 5" aria-hidden="true">
+              <div class="hero-slide-shell">
+                <div class="hero-slide-inner">
+                  <div class="hero-slide-copy">
+                    <p class="hero-meta-chip">Call for Papers</p>
+                    <h2 class="hero-slide-title">Submit Original Research and Evidence-Based Reviews</h2>
+                    <p class="hero-slide-text">
+                      We welcome methodologically robust submissions across all fields of medicine. Manuscripts receive rigorous peer review and are published in diamond open access.
+                    </p>
+                    <div class="hero-actions">
+                      <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="hero-btn hero-btn-primary">Start Submission</a>
+                      <a href="for-authors.html" class="hero-btn hero-btn-ghost">Author Guidelines</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
 
-          <!-- Right: Cover image -->
-          <div class="lg:col-span-5 hidden lg:flex justify-center">
-            <div class="relative">
-              <div class="absolute -inset-4 bg-white/5 rounded-2xl blur-xl"></div>
-              <img src="images/cover/cover1.jpeg" alt="Balkan Medical Journal — Current Issue Cover" class="relative w-72 rounded-xl shadow-2xl border border-white/10">
-            </div>
+          <div class="hero-carousel-controls" aria-label="Slide controls">
+            <button type="button" class="hero-carousel-control" data-hero-prev aria-label="Previous slide">
+              <svg class="hero-control-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button type="button" class="hero-carousel-control" data-hero-next aria-label="Next slide">
+              <svg class="hero-control-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25" d="M9 5l7 7-7 7"/></svg>
+            </button>
           </div>
+
+          <div class="hero-carousel-indicators" aria-label="Slide navigation">
+            <button type="button" class="hero-carousel-indicator is-active" data-hero-indicator="0" aria-label="Go to slide 1" aria-current="true"></button>
+            <button type="button" class="hero-carousel-indicator" data-hero-indicator="1" aria-label="Go to slide 2"></button>
+            <button type="button" class="hero-carousel-indicator" data-hero-indicator="2" aria-label="Go to slide 3"></button>
+            <button type="button" class="hero-carousel-indicator" data-hero-indicator="3" aria-label="Go to slide 4"></button>
+            <button type="button" class="hero-carousel-indicator" data-hero-indicator="4" aria-label="Go to slide 5"></button>
+          </div>
+
+          <p id="hero-carousel-status" class="sr-only" aria-live="polite" aria-atomic="true"></p>
         </div>
       </div>
     </section>
@@ -267,6 +361,9 @@
             </a>
           </div>
         </div>
+        <p id="journal-metrics-provenance" class="mt-3 text-xs text-gray-500 font-serif">
+          Metrics shown for quick reference. Detailed sources and update cycle are available in Journal Metrics.
+        </p>
       </div>
     </section>
 
@@ -296,7 +393,7 @@
     </section>
 
     <!-- ── Image Corner Spotlight ───────────────────────────── -->
-    <section class="py-16 bg-gray-50">
+    <section id="image-corner-section" class="py-16 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between mb-10">
           <div>
@@ -325,6 +422,12 @@
         </div>
         <div id="latest-news" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Populated by JS -->
+        </div>
+        <div class="mt-8 text-center sm:hidden">
+          <a href="news.html" class="inline-flex items-center text-teal-700 font-semibold hover:text-teal-800">
+            All news
+            <svg class="ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
         </div>
       </div>
     </section>
@@ -376,7 +479,7 @@
         <div class="max-w-2xl mx-auto text-center">
           <h2 class="text-3xl font-bold text-gray-900 mb-4 font-serif">Stay Updated</h2>
           <p class="text-gray-500 mb-8 font-serif">Get notified about new issues, featured articles, and journal news.</p>
-          <form id="subscription-form" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" novalidate>
+          <form id="subscription-form" data-endpoint="" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" novalidate>
             <div class="flex-1">
               <label for="sub-email" class="sr-only">Email address</label>
               <input type="email" id="sub-email" name="email" placeholder="Enter your email" required
@@ -387,6 +490,7 @@
               Subscribe
             </button>
           </form>
+          <p id="sub-info" class="hidden text-sm text-gray-500 mt-3" role="status"></p>
           <div class="mt-4 flex items-start justify-center gap-2">
             <input type="checkbox" id="gdpr-consent" class="mt-1 rounded border-gray-300 text-teal-700 focus:ring-teal-500" required>
             <label for="gdpr-consent" class="text-sm text-gray-500 text-left">
@@ -485,90 +589,12 @@
   </button>
 
   <!-- Scripts -->
-  <script src="js/data/articles.js"></script>
+  <script src="js/data/homepage-articles.js"></script>
   <script src="js/data/news.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/homepage.js"></script>
   <script src="js/search.js"></script>
   <script src="js/subscription.js"></script>
-  <script>
-    // Render featured articles
-    (function() {
-      var container = document.getElementById('featured-articles');
-      if (!container || !window.ARTICLES) return;
-      var featured = window.ARTICLES.filter(function(a) { return a.featured; }).slice(0, 6);
-      featured.forEach(function(article) {
-        var typeColor = article.type === 'Review' || article.type === 'Invited Review' ? 'bg-purple-100 text-purple-700' :
-                        article.type === 'Editorial' ? 'bg-blue-100 text-blue-700' :
-                        article.type === 'Systematic Review' ? 'bg-indigo-100 text-indigo-700' :
-                        'bg-teal-100 text-teal-700';
-        container.innerHTML += '<article class="article-card bg-white rounded-xl border border-gray-200 p-6 flex flex-col">' +
-          '<div class="flex items-center gap-2 mb-3">' +
-            '<span class="badge ' + typeColor + '">' + article.type + '</span>' +
-            '<span class="text-xs text-gray-400">Vol. ' + article.volume + ', Issue ' + article.issue + '</span>' +
-          '</div>' +
-          '<h3 class="text-lg font-semibold text-gray-900 mb-3 leading-snug flex-1">' +
-            '<a href="article.html?id=' + article.id + '" class="hover:text-teal-700 transition-colors">' + article.title + '</a>' +
-          '</h3>' +
-          '<p class="text-sm text-gray-500 mb-4">' + article.authors.map(function(a) { return a.name; }).join(', ') + '</p>' +
-          '<div class="flex items-center gap-4 text-xs text-gray-400 mt-auto pt-4 border-t border-gray-100">' +
-            '<span title="Views"><svg class="inline w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>' + article.views.toLocaleString() + '</span>' +
-            '<span title="Downloads"><svg class="inline w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>' + article.downloads.toLocaleString() + '</span>' +
-            '<span title="Citations"><svg class="inline w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>' + article.citations + '</span>' +
-          '</div>' +
-        '</article>';
-      });
-    })();
-
-    // Render Image Corner
-    (function() {
-      var container = document.getElementById('image-corner');
-      if (!container || !window.ARTICLES) return;
-      var images = window.ARTICLES.filter(function(a) { return a.imageCorner || a.type === 'Image Corner'; }).slice(0, 2);
-      if (images.length === 0) return;
-      images.forEach(function(article) {
-        var imageHtml = article.image
-          ? '<img src="' + article.image + '" alt="' + article.title + '" class="w-full h-full object-cover">'
-          : '<div class="text-center p-8">' +
-              '<svg class="w-16 h-16 mx-auto text-teal-300 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>' +
-              '<span class="text-sm text-teal-500">Image Corner</span>' +
-            '</div>';
-        container.innerHTML += '<a href="article.html?id=' + article.id + '" class="article-card group block bg-white rounded-xl border border-gray-200 overflow-hidden">' +
-          '<div class="aspect-video bg-gray-900 flex items-center justify-center overflow-hidden">' +
-            imageHtml +
-          '</div>' +
-          '<div class="p-6">' +
-            '<span class="inline-block px-2 py-0.5 text-xs font-semibold bg-teal-100 text-teal-700 rounded-full mb-2">Image Corner</span>' +
-            '<h3 class="text-lg font-semibold text-gray-900 group-hover:text-teal-700 transition-colors mb-2">' + article.title + '</h3>' +
-            '<p class="text-sm text-gray-500">' + article.authors.map(function(a) { return a.name; }).join(', ') + '</p>' +
-          '</div>' +
-        '</a>';
-      });
-    })();
-
-    // Render latest news
-    (function() {
-      var container = document.getElementById('latest-news');
-      if (!container || !window.NEWS) return;
-      var latest = window.NEWS.slice(0, 3);
-      latest.forEach(function(item) {
-        var catColor = item.category === 'Announcement' ? 'bg-blue-100 text-blue-700' :
-                       item.category === 'Award' ? 'bg-amber-100 text-amber-700' :
-                       item.category === 'Indexing' ? 'bg-green-100 text-green-700' :
-                       item.category === 'Event' ? 'bg-purple-100 text-purple-700' :
-                       'bg-gray-100 text-gray-700';
-        container.innerHTML += '<article class="article-card bg-white rounded-xl border border-gray-200 p-6 flex flex-col">' +
-          '<div class="flex items-center gap-2 mb-3">' +
-            '<span class="badge ' + catColor + '">' + item.category + '</span>' +
-            '<time class="text-xs text-gray-400" datetime="' + item.date + '">' + new Date(item.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}) + '</time>' +
-          '</div>' +
-          '<h3 class="text-lg font-semibold text-gray-900 mb-3 flex-1">' +
-            '<a href="news-article.html?id=' + item.id + '" class="hover:text-teal-700 transition-colors">' + item.title + '</a>' +
-          '</h3>' +
-          '<p class="text-sm text-gray-500 leading-relaxed">' + item.excerpt + '</p>' +
-        '</article>';
-      });
-    })();
-  </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","logo":"https://balkanmedicaljournal.org/images/logo.png","publisher":{"@type":"Organization","name":"Trakya University"},"address":{"@type":"PostalAddress","addressLocality":"Edirne","addressCountry":"TR","streetAddress":"Trakya University Faculty of Medicine, Balkan Yerleşkesi, 22030"}},{"@type":"WebSite","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","potentialAction":{"@type":"SearchAction","target":"https://balkanmedicaljournal.org/search-results.html?q={search_term_string}","query-input":"required name=search_term_string"}}]}
 </script>

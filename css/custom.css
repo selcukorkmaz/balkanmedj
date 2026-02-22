@@ -14,7 +14,7 @@ body {
 
 /* Focus Visible Outlines (Accessibility) */
 *:focus-visible {
-  outline: 2px solid #0F766E;
+  outline: 2px solid var(--color-teal-700, #0f6a81);
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -26,7 +26,7 @@ body {
   left: 16px;
   z-index: 100;
   padding: 8px 16px;
-  background: #0F766E;
+  background: var(--color-teal-700, #0f6a81);
   color: #fff;
   font-weight: 600;
   border-radius: 0 0 8px 8px;
@@ -90,8 +90,8 @@ body {
 
 /* Tab indicator */
 .tab-active {
-  border-bottom: 3px solid #0F766E;
-  color: #0F766E;
+  border-bottom: 3px solid var(--color-teal-700, #0f6a81);
+  color: var(--color-teal-700, #0f6a81);
   font-weight: 600;
 }
 
@@ -126,7 +126,7 @@ body {
   right: 24px;
   z-index: 60;
   padding: 12px 24px;
-  background: #0F766E;
+  background: var(--color-teal-700, #0f6a81);
   color: #fff;
   border-radius: 8px;
   font-weight: 500;
@@ -188,4 +188,18 @@ body {
 
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+
+/* Brand palette harmonization */
+:root {
+  --color-teal-50: #eff7fa;
+  --color-teal-100: #d8ecf2;
+  --color-teal-200: #b8dce7;
+  --color-teal-300: #90c6d6;
+  --color-teal-400: #62a9bf;
+  --color-teal-500: #3d8ca6;
+  --color-teal-600: #25738f;
+  --color-teal-700: #0f6a81;
+  --color-teal-800: #0b556c;
+  --color-teal-900: #05384d;
 }

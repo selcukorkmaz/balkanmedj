@@ -6,6 +6,34 @@
 (function () {
   'use strict';
 
+  // ─── Article Type Badge Palette (shared across site) ──────
+  var ARTICLE_TYPE_BADGE_CLASS_MAP = {
+    'cover page': 'bg-gray-100 text-gray-700',
+    'editorial': 'bg-blue-100 text-blue-700',
+    'invited review': 'bg-purple-100 text-purple-700',
+    'original article': 'bg-teal-100 text-teal-700',
+    'clinical image': 'bg-amber-100 text-amber-700',
+    'scientific letter': 'bg-orange-100 text-orange-700',
+    'brief report': 'bg-cyan-100 text-cyan-700',
+    'letter to the editor': 'bg-pink-100 text-pink-700',
+    'review': 'bg-indigo-100 text-indigo-700',
+    'systematic review': 'bg-indigo-100 text-indigo-700',
+    'case report': 'bg-green-100 text-green-700',
+    'image corner': 'bg-indigo-100 text-indigo-700'
+  };
+
+  function getArticleTypeBadgeClass(articleType) {
+    var normalizedType = String(articleType || '').trim().toLowerCase();
+    if (ARTICLE_TYPE_BADGE_CLASS_MAP[normalizedType]) {
+      return ARTICLE_TYPE_BADGE_CLASS_MAP[normalizedType];
+    }
+    return 'bg-teal-100 text-teal-700';
+  }
+
+  window.BMJArticleTypes = window.BMJArticleTypes || {};
+  window.BMJArticleTypes.getBadgeClass = getArticleTypeBadgeClass;
+  window.BMJArticleTypes.badgeClassMap = ARTICLE_TYPE_BADGE_CLASS_MAP;
+
   // ─── Mobile Menu ───────────────────────────────────────────
   const menuBtn = document.getElementById('mobile-menu-btn');
   const closeBtn = document.getElementById('mobile-menu-close');

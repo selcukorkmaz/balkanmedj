@@ -21,10 +21,37 @@ var FORM_ENDPOINT = ''; // <-- Paste your Formspree endpoint URL here
   var gdprCheckbox = document.getElementById('gdpr-consent');
   var errorEl = document.getElementById('sub-error');
   var successEl = document.getElementById('sub-success');
+  var infoEl = document.getElementById('sub-info');
+  var submitBtn = form.querySelector('button[type="submit"]');
+  var configuredEndpoint = String(
+    (window.BMJ_CONFIG && window.BMJ_CONFIG.subscriptionEndpoint) ||
+    form.getAttribute('data-endpoint') ||
+    FORM_ENDPOINT ||
+    ''
+  ).trim();
+  var canSubmit = !!configuredEndpoint;
+
+  if (!canSubmit) {
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.setAttribute('aria-disabled', 'true');
+      submitBtn.classList.add('opacity-70');
+      submitBtn.classList.remove('hover:bg-teal-800');
+    }
+    if (infoEl) {
+      infoEl.textContent = 'Email subscription is temporarily unavailable.';
+      infoEl.classList.remove('hidden');
+    }
+  }
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     hideMessages();
+
+    if (!canSubmit) {
+      showError('Email subscription is temporarily unavailable. Please try again later.');
+      return;
+    }
 
     var email = emailInput.value.trim();
 
@@ -50,27 +77,17 @@ var FORM_ENDPOINT = ''; // <-- Paste your Formspree endpoint URL here
     }
 
     // Show loading state
-    var btn = form.querySelector('button[type="submit"]');
+    var btn = submitBtn || form.querySelector('button[type="submit"]');
     var originalText = btn.textContent;
     btn.innerHTML = '<span class="spinner"></span>';
     btn.disabled = true;
-
-    // Check if endpoint is configured
-    if (!FORM_ENDPOINT) {
-      setTimeout(function () {
-        btn.textContent = originalText;
-        btn.disabled = false;
-        showError('Subscription endpoint not configured. Please contact the site administrator.');
-      }, 500);
-      return;
-    }
 
     // Submit via fetch
     var formData = new FormData();
     formData.append('email', email);
     formData.append('_subject', 'New Journal Subscription');
 
-    fetch(FORM_ENDPOINT, {
+    fetch(configuredEndpoint, {
       method: 'POST',
       body: formData,
       headers: { 'Accept': 'application/json' }
@@ -117,5 +134,6 @@ var FORM_ENDPOINT = ''; // <-- Paste your Formspree endpoint URL here
   function hideMessages() {
     if (errorEl) errorEl.classList.add('hidden');
     if (successEl) successEl.classList.add('hidden');
+    if (infoEl && !canSubmit) infoEl.classList.remove('hidden');
   }
 })();

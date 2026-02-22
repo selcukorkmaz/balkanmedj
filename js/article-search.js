@@ -30,6 +30,13 @@
   var isArchiveContext = Boolean(queryLabel || queryYear || querySourceId);
   var issueContext = String(container.getAttribute('data-issue-context') || '').toLowerCase();
 
+  function getArticleTypeBadgeClass(articleType) {
+    if (window.BMJArticleTypes && typeof window.BMJArticleTypes.getBadgeClass === 'function') {
+      return window.BMJArticleTypes.getBadgeClass(articleType);
+    }
+    return 'bg-teal-100 text-teal-700';
+  }
+
   function isCoverPageArticle(article) {
     return String((article && article.type) || '').trim().toLowerCase() === 'cover page';
   }
@@ -671,14 +678,7 @@
   }
 
   function createArticleCard(article) {
-    var typeColor = article.type === 'Review' || article.type === 'Invited Review' ? 'bg-purple-100 text-purple-700' :
-                    article.type === 'Editorial' ? 'bg-blue-100 text-blue-700' :
-                    article.type === 'Systematic Review' ? 'bg-indigo-100 text-indigo-700' :
-                    article.type === 'Brief Report' ? 'bg-cyan-100 text-cyan-700' :
-                    article.type === 'Letter to the Editor' ? 'bg-pink-100 text-pink-700' :
-                    article.type === 'Clinical Image' ? 'bg-amber-100 text-amber-700' :
-                    article.type === 'Scientific Letter' ? 'bg-orange-100 text-orange-700' :
-                    'bg-teal-100 text-teal-700';
+    var typeColor = getArticleTypeBadgeClass(article.type);
 
     var card = document.createElement('article');
     card.className = 'article-card bg-white rounded-xl border border-gray-200 p-6';

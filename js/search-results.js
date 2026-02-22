@@ -47,6 +47,13 @@
     return (str || '').toString().trim().toLowerCase();
   }
 
+  function getArticleTypeBadgeClass(articleType) {
+    if (window.BMJArticleTypes && typeof window.BMJArticleTypes.getBadgeClass === 'function') {
+      return window.BMJArticleTypes.getBadgeClass(articleType);
+    }
+    return 'bg-teal-100 text-teal-700';
+  }
+
   function syncAdvancedColumnWidth() {
     if (!searchSubmitBtn || !document.body) return;
     if (!window.matchMedia('(min-width: 640px)').matches) {
@@ -509,7 +516,7 @@
 
     var html = '<article class="article-card bg-white rounded-xl border border-gray-200 p-6">';
     html += '<div class="flex items-center gap-2 mb-3">';
-    html += '<span class="badge bg-teal-100 text-teal-700">' + escape(article.type || 'Article') + '</span>';
+    html += '<span class="badge ' + getArticleTypeBadgeClass(article.type) + '">' + escape(article.type || 'Article') + '</span>';
     html += '<span class="text-xs text-gray-400">Vol. ' + escape(String(article.volume || '')) + ', Issue ' + escape(String(article.issue || '')) + '</span>';
     html += '</div>';
     html += '<h2 class="text-lg font-semibold text-gray-900 mb-2 leading-snug">';

@@ -24,6 +24,9 @@
     { title: 'Submit Manuscript', url: 'https://balkanmedj.manuscriptmanager.net', desc: 'Online manuscript submission system' }
   ];
 
+  var articlesLoadPromise = null;
+  var renderRequestToken = 0;
+
   // ─── Helpers ───────────────────────────────────────────────────
 
   function escapeHtml(str) {
@@ -49,6 +52,37 @@
     var clean = (query || '').trim();
     if (!clean) return 'search-results.html';
     return 'search-results.html?q=' + encodeURIComponent(clean);
+  }
+
+  function getArticleTypeBadgeClass(articleType) {
+    if (window.BMJArticleTypes && typeof window.BMJArticleTypes.getBadgeClass === 'function') {
+      return window.BMJArticleTypes.getBadgeClass(articleType);
+    }
+    return 'bg-teal-100 text-teal-700';
+  }
+
+  function ensureArticlesLoaded() {
+    if (Array.isArray(window.ARTICLES) && window.ARTICLES.length > 0) {
+      return Promise.resolve();
+    }
+
+    var loader = window.BMJLazyData && window.BMJLazyData.loadArticles;
+    if (typeof loader !== 'function') {
+      return Promise.resolve();
+    }
+
+    if (articlesLoadPromise) {
+      return articlesLoadPromise;
+    }
+
+    articlesLoadPromise = Promise.resolve().then(function () {
+      return loader();
+    }).catch(function () {
+      // Keep search usable even if article payload fails to load.
+      return null;
+    });
+
+    return articlesLoadPromise;
   }
 
   // ─── Search functions ──────────────────────────────────────────
@@ -161,7 +195,7 @@
     var year = a.published ? a.published.substring(0, 4) : '';
 
     var html = '<a href="article.html?id=' + a.id + '" class="block p-3 rounded-lg hover:bg-gray-50 border border-gray-100 transition-colors group">';
-    html += '<span class="inline-block text-xs font-medium px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 mb-1">' + escapeHtml(a.type || '') + '</span>';
+    html += '<span class="inline-block text-xs font-medium px-2 py-0.5 rounded-full mb-1 ' + getArticleTypeBadgeClass(a.type || '') + '">' + escapeHtml(a.type || '') + '</span>';
     html += '<h3 class="text-sm font-semibold text-gray-900 group-hover:text-teal-700 leading-snug">' + highlightMatch(escapeHtml(a.title || ''), query) + '</h3>';
     if (authors) {
       html += '<p class="text-xs text-gray-500 mt-1 truncate">' + highlightMatch(escapeHtml(authors), query) + '</p>';
@@ -362,13 +396,36 @@
     resultsContainer.innerHTML = html;
   }
 
+  function renderResultsAsync(query) {
+    var normalized = (query || '').trim();
+    var token = ++renderRequestToken;
+
+    if (normalized.length < 2) {
+      renderResults(normalized);
+      return;
+    }
+
+    var needsArticlePayload = !(Array.isArray(window.ARTICLES) && window.ARTICLES.length > 0) &&
+      window.BMJLazyData && typeof window.BMJLazyData.loadArticles === 'function';
+
+    if (needsArticlePayload) {
+      // Show immediate page/news matches, then enrich with article hits once loaded.
+      renderResults(normalized);
+    }
+
+    ensureArticlesLoaded().then(function () {
+      if (token !== renderRequestToken) return;
+      renderResults(normalized);
+    });
+  }
+
   // ─── Input handling ────────────────────────────────────────────
 
   input.addEventListener('input', function () {
     clearTimeout(debounceTimer);
     var query = input.value.trim();
     debounceTimer = setTimeout(function () {
-      renderResults(query);
+      renderResultsAsync(query);
     }, 200);
   });
 
