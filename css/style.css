@@ -115,12 +115,25 @@
   }
   .hero-slide#hero-slide-1 .hero-actions{
     margin-top:.35rem;
-    gap:.5rem;
+    gap:.45rem;
+    display:grid;
+    grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
   }
   .hero-slide#hero-slide-1 .hero-actions .hero-btn{
-    flex:1 1 calc(50% - .25rem);
+    min-width:0;
+    width:100%;
     min-height:2.55rem;
     justify-content:center;
+    white-space:nowrap;
+    padding:.56rem .62rem;
+    font-size:clamp(.78rem,3.55vw,.92rem);
+    line-height:1.1;
+    gap:.36rem;
+  }
+  .hero-slide#hero-slide-1 .hero-actions .hero-btn .hero-btn-icon{
+    width:.9rem;
+    height:.9rem;
+    flex-shrink:0;
   }
   .hero-slide#hero-slide-1 .hero-metrics{
     margin-top:.45rem;
