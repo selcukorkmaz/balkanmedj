@@ -2347,6 +2347,7 @@
 
             if (isMobileViewport) {
               // Force third-party popup to stay inside viewport and never expand page width.
+              popup.setAttribute('data-plumx-viewport-guard', '1');
               popup.style.position = 'fixed';
               popup.style.right = 'auto';
               popup.style.bottom = 'auto';
@@ -2355,7 +2356,8 @@
               popup.style.maxHeight = Math.max(160, viewportH - (minPad * 2)) + 'px';
               popup.style.overflow = 'auto';
               popup.style.boxSizing = 'border-box';
-            } else {
+            } else if (popup.getAttribute('data-plumx-viewport-guard') === '1') {
+              popup.removeAttribute('data-plumx-viewport-guard');
               popup.style.position = '';
               popup.style.left = '';
               popup.style.top = '';
