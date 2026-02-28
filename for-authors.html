@@ -19,9 +19,197 @@
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    /* Force all accordion content text to 18px. */
+    :root {
+      --authors-ink: #1e2b37;
+      --authors-muted: #536272;
+      --authors-line: #d7dde5;
+      --authors-paper: #fcfbf8;
+      --authors-accent: #114c67;
+      --authors-accent-2: #2b6f8f;
+      --authors-gold: #b28b59;
+      --authors-shadow: 0 24px 46px -32px rgba(24, 42, 62, 0.45);
+    }
+
+    body {
+      background:
+        radial-gradient(1200px 420px at 50% -120px, #dbe5ef 0%, transparent 72%),
+        linear-gradient(180deg, #eef2f6 0%, #f5f4f0 54%, #f2f5f8 100%);
+    }
+
+    .authors-content {
+      background: transparent !important;
+    }
+
+    .authors-main > .bg-white {
+      position: relative;
+      background: var(--authors-paper) !important;
+      border: 1px solid var(--authors-line) !important;
+      border-radius: 16px !important;
+      box-shadow: var(--authors-shadow);
+      overflow: hidden;
+    }
+
+    .authors-main > .bg-white::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--authors-accent-2) 0%, var(--authors-gold) 50%, var(--authors-accent-2) 100%);
+      opacity: 0.45;
+      pointer-events: none;
+    }
+
+    .authors-main .accordion-btn {
+      background: linear-gradient(180deg, #ffffff 0%, #f6f8fa 100%);
+      border-bottom: 1px solid var(--authors-line);
+    }
+
+    .authors-main .accordion-btn[aria-expanded="true"] {
+      background: linear-gradient(180deg, #fdfefe 0%, #eef4f8 100%);
+    }
+
+    .authors-main .accordion-btn span {
+      color: var(--authors-ink) !important;
+      font-family: "Crimson Pro", Georgia, "Times New Roman", serif;
+      letter-spacing: 0.01em;
+    }
+
     .authors-accordion-uniform .accordion-content * {
-      font-size: 18px !important;
+      font-size: 17px !important;
+      line-height: 1.72 !important;
+    }
+
+    .authors-accordion-uniform .accordion-content p,
+    .authors-accordion-uniform .accordion-content li,
+    .authors-accordion-uniform .accordion-content td {
+      color: var(--authors-muted) !important;
+    }
+
+    .authors-accordion-uniform .accordion-content h3 {
+      color: var(--authors-ink) !important;
+      font-family: Inter, system-ui, sans-serif;
+      font-weight: 700 !important;
+      font-size: 0.98rem !important;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 1.35rem;
+      padding-top: 0.45rem;
+      border-top: 1px solid var(--authors-line);
+    }
+
+    .authors-accordion-uniform .accordion-content a {
+      color: var(--authors-accent) !important;
+      text-decoration: none !important;
+      border-bottom: 1px solid rgba(17, 76, 103, 0.32);
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .authors-accordion-uniform .accordion-content a:hover {
+      color: #0a3349 !important;
+      border-color: rgba(10, 51, 73, 0.6);
+    }
+
+    .authors-accordion-uniform .accordion-content ul {
+      padding-left: 0.55rem;
+    }
+
+    .authors-accordion-uniform .accordion-content li {
+      margin-bottom: 0.28rem;
+    }
+
+    .authors-accordion-uniform .accordion-content table {
+      border-collapse: separate !important;
+      border-spacing: 0;
+      border: 1px solid var(--authors-line);
+      border-radius: 14px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 10px 26px -22px rgba(18, 43, 65, 0.45);
+    }
+
+    .authors-accordion-uniform .accordion-content table thead tr {
+      background: linear-gradient(180deg, #f2f6f9 0%, #e9eef4 100%) !important;
+    }
+
+    .authors-accordion-uniform .accordion-content table thead th {
+      color: var(--authors-ink) !important;
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 0.82rem !important;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 700 !important;
+    }
+
+    .authors-accordion-uniform .accordion-content table tbody tr:nth-child(even) {
+      background: #f7f9fb !important;
+    }
+
+    .authors-accordion-uniform .accordion-content table tbody tr:hover {
+      background: #edf5fa !important;
+    }
+
+    .authors-accordion-uniform .accordion-content table tbody td:first-child {
+      color: var(--authors-ink) !important;
+      font-weight: 600 !important;
+    }
+
+    .authors-accordion-uniform figure {
+      background: #f8fafc !important;
+      border: 1px solid var(--authors-line) !important;
+      border-radius: 12px;
+    }
+
+    .authors-sidebar .bg-white {
+      background: var(--authors-paper) !important;
+      border: 1px solid var(--authors-line) !important;
+      border-radius: 16px !important;
+      box-shadow: var(--authors-shadow);
+    }
+
+    .authors-sidebar .bg-white h2 {
+      color: var(--authors-ink) !important;
+      font-family: "Crimson Pro", Georgia, "Times New Roman", serif;
+      font-size: 1.38rem;
+      letter-spacing: 0.01em;
+      margin-bottom: 1.05rem !important;
+    }
+
+    .authors-sidebar .bg-gradient-to-br {
+      border-radius: 16px !important;
+      border: 1px solid rgba(169, 197, 214, 0.35);
+      box-shadow: 0 26px 46px -32px rgba(7, 39, 56, 0.55);
+      background: linear-gradient(145deg, #0a3348 0%, #0f4f67 56%, #176282 100%) !important;
+    }
+
+    .authors-sidebar .bg-gradient-to-br a {
+      background: #f7fbff !important;
+      color: #8d1d27 !important;
+      border: 1px solid rgba(247, 251, 255, 0.7);
+    }
+
+    .authors-sidebar .bg-gradient-to-br a:hover {
+      background: #ffffff !important;
+      border-color: #ffffff;
+    }
+
+    .authors-accordion-uniform .accordion-content.open {
+      max-height: 50000px !important;
+    }
+
+    @media (max-width: 1024px) {
+      .authors-main > .bg-white,
+      .authors-sidebar .bg-white,
+      .authors-sidebar .bg-gradient-to-br {
+        border-radius: 14px !important;
+      }
+      .authors-accordion-uniform .accordion-content * {
+        font-size: 16px !important;
+      }
+      .authors-accordion-uniform .accordion-content table thead th {
+        font-size: 0.78rem !important;
+      }
     }
   </style>
 </head>
@@ -203,331 +391,404 @@
     </section>
 
     <!-- ── Content Section ──────────────────────────────────── -->
-    <section class="py-12 md:py-16 bg-gray-50">
+    <section class="authors-content py-12 md:py-16 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col lg:flex-row gap-10">
 
           <!-- Main Column (2/3) -->
-          <div class="lg:w-2/3 authors-accordion-uniform">
+          <div class="lg:w-2/3 authors-main authors-accordion-uniform">
 
-            <!-- Accordion 1: Manuscript Types -->
+            <!-- Accordion 1 -->
             <div class="bg-white rounded-xl border border-gray-200 mb-4 overflow-hidden">
               <button id="acc-btn-1" class="accordion-btn w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors" aria-expanded="true" aria-controls="acc-panel-1">
-                <span class="text-lg font-semibold text-gray-900">Manuscript Types</span>
+                <span class="text-lg font-semibold text-gray-900">Before You Start: Formatting, Article Type, and Reporting</span>
                 <svg class="accordion-chevron w-5 h-5 text-gray-500 transition-transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </button>
               <div id="acc-panel-1" class="accordion-content open" role="region" aria-labelledby="acc-btn-1">
                 <div class="px-6 pb-6 text-gray-600 leading-relaxed space-y-4">
-                  <p>Balkan Medical Journal accepts the following manuscript types. Please ensure your submission conforms to the word limits, reference counts, and figure/table allowances specified below.</p>
+                  <div class="bg-gray-50 rounded-lg p-4">
+                    <h3 class="text-base font-semibold text-gray-900 mt-0 pt-0 border-0">Quick Start Checklist</h3>
+                    <ul class="list-disc list-inside space-y-1 text-sm">
+                      <li>Select article type first; limits and structure depend on type.</li>
+                      <li>Balkan Medical Journal does not accept case reports (submit as Letter to the Editor or Clinical Image when appropriate).</li>
+                      <li>Follow ICMJE manuscript format rules before upload.</li>
+                      <li>Prepare five separate upload components in required order (Section 2).</li>
+                      <li>Register eligible clinical trials and include registry details in the abstract.</li>
+                      <li>Use this page's tables as the operational summary of limits and reporting requirements.</li>
+                    </ul>
+                  </div>
+
+                  <p>Manuscript format must be in accordance with the <a href="http://www.icmje.org/icmje-recommendations.pdf" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">ICMJE-Recommendations for the Conduct, Reporting, Editing and Publication of Scholarly Work in Medical Journals</a> (updated in December 2015). Papers that do not comply with the journal format may be returned without external review.</p>
+
+                  <h3 class="text-base font-semibold text-gray-900">1.1 General Format</h3>
+                  <ul class="list-disc list-inside space-y-1 text-sm">
+                    <li>Microsoft Word file, single-column, double-spaced, 2.5 cm margins, 11-point Times New Roman.</li>
+                    <li>Define abbreviations at first use in abstract and main text; limit abbreviations to accepted AMA Manual of Style terms.</li>
+                    <li>Use decimal points consistently and SI units throughout.</li>
+                    <li>For drugs, software, hardware, or products, include product name, manufacturer, city, and country in parentheses.</li>
+                  </ul>
+                  <p class="text-sm">
+                    SI references:
+                    <a href="https://www.ibiblio.org/units/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">ibiblio.org/units</a>
+                    and
+                    <a href="https://web.archive.org/web/20160306073225/http://www.amamanualofstyle.com/page/si-conversion-calculator" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">AMA SI conversion table (archived)</a>.
+                  </p>
+
+                  <h3 class="text-base font-semibold text-gray-900">1.2 Article Type</h3>
+                  <p>Article type defines formatting, abstract structure, and manuscript limits. Choose article type before drafting your final submission files.</p>
+                  <p><strong>Article type summaries:</strong></p>
+                  <ul class="list-disc list-inside space-y-1 text-sm">
+                    <li><strong>Original Article:</strong> Substantial novel clinical/experimental research; structured abstract and IMRAD-style full text; typically 4000 words (main text), 500-word abstract, and 50 references; ethics approval required except cell studies.</li>
+                    <li><strong>Brief Reports:</strong> Short peer-reviewed reports (including preliminary or negative findings); structured abstract; no more than 3 display items; ethics approval required.</li>
+                    <li><strong>Invited Review Article:</strong> Invitation-based comprehensive topic review; peer reviewed before acceptance; typically 5000 words, 500-word abstract, 150 references, and up to 7 authors.</li>
+                    <li><strong>Consensus Report:</strong> Position or guidance statements from international organizations; pre-submission inquiry is recommended; up to 9000 words, 500-word abstract, and 300 references.</li>
+                    <li><strong>Clinical Image:</strong> Educational image-focused manuscript; no abstract; 700 words including figure legend, legend up to 100 words, 10 references, up to 5 authors, and 1 figure/table; patient consent required.</li>
+                    <li><strong>Letter to the Editor:</strong> Commentary on published work or overlooked points; no abstract; 700 words (excluding references), up to 10 references, up to 4 authors, and 1 figure/table; reply may be requested.</li>
+                    <li><strong>Scientific Letter:</strong> Concise report of a research project's progress/findings; no abstract; 1250 words (excluding references), up to 15 references, up to 5 authors, and 1 figure/table.</li>
+                    <li><strong>Editorial Comment:</strong> Brief expert comment, usually invited; no abstract; 1250 words (excluding references), up to 15 references, and 1 figure/table.</li>
+                    <li><strong>Health Policy:</strong> Submit in Original Research or Review format to address policy impact on patients, institutions, or populations; main text up to 3000 words with up to 50 references and 4 figures/tables.</li>
+                    <li><strong>Other:</strong> Editorials, book reviews, and publication/research ethics reports are commissioned by the Editorial Board.</li>
+                  </ul>
+                  <p><strong>Case reports are not accepted.</strong> Suitable cases may be adapted to Letter to the Editor or Clinical Image formats.</p>
 
                   <div class="overflow-x-auto">
-                    <table class="w-full text-sm border-collapse">
+                    <table class="w-full border-collapse">
                       <thead>
                         <tr class="bg-gray-50 text-left">
-                          <th class="px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Type</th>
+                          <th class="px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Type of Manuscript</th>
                           <th class="px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Word Limit</th>
-                          <th class="px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Tables/Figures</th>
-                          <th class="px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">References</th>
+                          <th class="px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Abstract Word Limit</th>
+                          <th class="px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Reference Limit</th>
+                          <th class="px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Author Limit</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr class="border-b border-gray-100">
                           <td class="px-4 py-3 font-medium text-gray-900">Original Article</td>
-                          <td class="px-4 py-3">4,000</td>
-                          <td class="px-4 py-3">6</td>
+                          <td class="px-4 py-3">4000<sup>1</sup></td>
+                          <td class="px-4 py-3">500<sup>4</sup></td>
                           <td class="px-4 py-3">50</td>
+                          <td class="px-4 py-3">None</td>
                         </tr>
                         <tr class="border-b border-gray-100 bg-gray-50/50">
-                          <td class="px-4 py-3 font-medium text-gray-900">Review</td>
-                          <td class="px-4 py-3">5,000</td>
-                          <td class="px-4 py-3">8</td>
-                          <td class="px-4 py-3">100</td>
+                          <td class="px-4 py-3 font-medium text-gray-900">Brief Reports</td>
+                          <td class="px-4 py-3">2000<sup>1</sup></td>
+                          <td class="px-4 py-3">300</td>
+                          <td class="px-4 py-3">30</td>
+                          <td class="px-4 py-3">None</td>
                         </tr>
                         <tr class="border-b border-gray-100">
-                          <td class="px-4 py-3 font-medium text-gray-900">Brief Report</td>
-                          <td class="px-4 py-3">2,000</td>
-                          <td class="px-4 py-3">3</td>
-                          <td class="px-4 py-3">20</td>
-                        </tr>
-                        <tr class="border-b border-gray-100 bg-gray-50/50">
-                          <td class="px-4 py-3 font-medium text-gray-900">Case Report</td>
-                          <td class="px-4 py-3">2,000</td>
-                          <td class="px-4 py-3">3</td>
-                          <td class="px-4 py-3">20</td>
-                        </tr>
-                        <tr class="border-b border-gray-100">
-                          <td class="px-4 py-3 font-medium text-gray-900">Letter to the Editor</td>
-                          <td class="px-4 py-3">1,000</td>
-                          <td class="px-4 py-3">1</td>
-                          <td class="px-4 py-3">10</td>
-                        </tr>
-                        <tr class="border-b border-gray-100 bg-gray-50/50">
-                          <td class="px-4 py-3 font-medium text-gray-900">Image Corner</td>
+                          <td class="px-4 py-3 font-medium text-gray-900">Invited Review</td>
+                          <td class="px-4 py-3">5000<sup>1</sup></td>
                           <td class="px-4 py-3">500</td>
-                          <td class="px-4 py-3">3 images</td>
+                          <td class="px-4 py-3">150</td>
+                          <td class="px-4 py-3">7</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 bg-gray-50/50">
+                          <td class="px-4 py-3 font-medium text-gray-900">Clinical Image</td>
+                          <td class="px-4 py-3">700<sup>2</sup></td>
+                          <td class="px-4 py-3">N/A</td>
+                          <td class="px-4 py-3">10</td>
                           <td class="px-4 py-3">5</td>
                         </tr>
+                        <tr class="border-b border-gray-100">
+                          <td class="px-4 py-3 font-medium text-gray-900">Letter to Editor</td>
+                          <td class="px-4 py-3">700<sup>3</sup></td>
+                          <td class="px-4 py-3">N/A</td>
+                          <td class="px-4 py-3">10</td>
+                          <td class="px-4 py-3">4</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 bg-gray-50/50">
+                          <td class="px-4 py-3 font-medium text-gray-900">Scientific Letter</td>
+                          <td class="px-4 py-3">1250</td>
+                          <td class="px-4 py-3">N/A</td>
+                          <td class="px-4 py-3">15</td>
+                          <td class="px-4 py-3">5</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                          <td class="px-4 py-3 font-medium text-gray-900">Editorial Comment</td>
+                          <td class="px-4 py-3">1250</td>
+                          <td class="px-4 py-3">N/A</td>
+                          <td class="px-4 py-3">15</td>
+                          <td class="px-4 py-3">4</td>
+                        </tr>
                         <tr>
-                          <td class="px-4 py-3 font-medium text-gray-900">Editorial</td>
-                          <td class="px-4 py-3">2,000</td>
-                          <td class="px-4 py-3">2</td>
-                          <td class="px-4 py-3">20</td>
+                          <td class="px-4 py-3 font-medium text-gray-900">Consensus Report</td>
+                          <td class="px-4 py-3">9000</td>
+                          <td class="px-4 py-3">500</td>
+                          <td class="px-4 py-3">300</td>
+                          <td class="px-4 py-3">None</td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
 
-                  <ul class="list-disc list-inside space-y-2 text-sm">
-                    <li><strong>Original Article:</strong> Reports of original clinical or experimental research. Maximum 4,000 words (excluding abstract, references, tables, and figure legends), up to 6 tables/figures combined, and 50 references.</li>
-                    <li><strong>Review:</strong> Comprehensive reviews of a specific topic. May be invited or submitted. Maximum 5,000 words with up to 100 references. Systematic reviews and meta-analyses are strongly encouraged.</li>
-                    <li><strong>Brief Report:</strong> Concise reports of preliminary or novel findings. Maximum 2,000 words, 3 tables/figures, and 20 references.</li>
-                    <li><strong>Case Report:</strong> Descriptions of unusual or instructive clinical cases. Maximum 2,000 words, up to 3 figures, and 20 references. Must include a clear take-home message.</li>
-                    <li><strong>Letter to the Editor:</strong> Comments on recently published articles or brief observations. Maximum 1,000 words and 10 references.</li>
-                    <li><strong>Image Corner:</strong> Striking clinical or diagnostic images with a brief explanation. Maximum 500 words, up to 3 images, and 5 references.</li>
-                    <li><strong>Editorial:</strong> Invited commentaries on topics of current interest or on articles published in the journal. By invitation only.</li>
+                  <ul class="list-disc list-inside space-y-1 text-sm">
+                    <li><sup>1</sup>Does not include abstract, references, tables, or figure legends.</li>
+                    <li><sup>2</sup>Includes figure legends.</li>
+                    <li><sup>3</sup>Does not include references.</li>
+                    <li><sup>4</sup>Use subheadings: Background, Aims, Study Design, Methods, Results, and Conclusion.</li>
+                    <li>The Editorial Board may allow exceptions to author and manuscript limits when justified.</li>
                   </ul>
+
+                  <h3 class="text-base font-semibold text-gray-900">1.3 Clinical Trials and Reporting Guidelines</h3>
+                  <p>The journal encourages registration of all clinical trials at ClinicalTrials.gov or a WHO ICTRP registry. Phase 3 trials should be registered at or before first patient enrollment. Include registry name, registration number, and funding information at the end of the abstract.</p>
+                  <p>Authors should also follow reporting guidelines matched to study design:</p>
+                  <div class="overflow-x-auto">
+                    <table class="w-full border-collapse">
+                      <thead>
+                        <tr class="bg-gray-50 text-left">
+                          <th class="px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Type of Study</th>
+                          <th class="px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Guideline</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="border-b border-gray-100">
+                          <td class="px-4 py-3">Randomized controlled studies</td>
+                          <td class="px-4 py-3">
+                            CONSORT (<a href="http://www.consort-statement.org/home/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">consort-statement.org/home</a>)<br>
+                            CONSORT translations (<a href="http://www.consort-statement.org/consort-statement/translations/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">consort-statement.org/consort-statement/translations</a>)<br>
+                            SPIRIT (<a href="http://www.spirit-statement.org/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">spirit-statement.org</a>)
+                          </td>
+                        </tr>
+                        <tr class="border-b border-gray-100 bg-gray-50/50">
+                          <td class="px-4 py-3">Observational research: cohort, case-control, and cross-sectional studies</td>
+                          <td class="px-4 py-3">STROBE (<a href="http://www.strobe-statement.org/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">strobe-statement.org</a>)</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                          <td class="px-4 py-3">Diagnostic accuracy studies</td>
+                          <td class="px-4 py-3">STARD (<a href="http://www.stard-statement.org/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">stard-statement.org</a>)</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 bg-gray-50/50">
+                          <td class="px-4 py-3">Genetic association studies</td>
+                          <td class="px-4 py-3">STREGA (<a href="http://www.equator-network.org/reporting-guidelines/strobe-strega/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">equator-network.org/reporting-guidelines/strobe-strega</a>)</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                          <td class="px-4 py-3">Systematic reviews and meta-analyses</td>
+                          <td class="px-4 py-3">PRISMA (<a href="http://www.prisma-statement.org/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">prisma-statement.org</a>)</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 bg-gray-50/50">
+                          <td class="px-4 py-3">Non-randomized behavioral and public health intervention studies</td>
+                          <td class="px-4 py-3">TREND (<a href="http://www.cdc.gov/trendstatement/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">cdc.gov/trendstatement</a>)</td>
+                        </tr>
+                        <tr>
+                          <td class="px-4 py-3">Experimental animal studies</td>
+                          <td class="px-4 py-3">ARRIVE (<a href="http://www.nc3rs.org.uk/arrive/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">nc3rs.org.uk/arrive</a>)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="text-sm">
+                    <a href="https://www.clinicaltrials.gov" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">clinicaltrials.gov</a> |
+                    <a href="http://www.who.int/ictrp/network/primary/en/index.html" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">WHO ICTRP</a> |
+                    <a href="http://www.equator-network.org/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">EQUATOR Network</a>
+                  </p>
+                  <p>For additional reporting guidance across study designs, consult the EQUATOR network.</p>
+                  <p><strong>1.4 Data Sharing:</strong> Please see the editorial policy.</p>
+                  <p><strong>1.5 Reporting Sex/Gender:</strong> Please see the editorial policy.</p>
+                  <p><strong>1.6 Preprint:</strong> Please see the editorial policy.</p>
                 </div>
               </div>
             </div>
 
-            <!-- Accordion 2: Manuscript Preparation -->
+            <!-- Accordion 2 -->
             <div class="bg-white rounded-xl border border-gray-200 mb-4 overflow-hidden">
               <button id="acc-btn-2" class="accordion-btn w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors" aria-expanded="false" aria-controls="acc-panel-2">
-                <span class="text-lg font-semibold text-gray-900">Manuscript Preparation</span>
+                <span class="text-lg font-semibold text-gray-900">Submission Package and File Preparation</span>
                 <svg class="accordion-chevron w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </button>
               <div id="acc-panel-2" class="accordion-content" role="region" aria-labelledby="acc-btn-2">
                 <div class="px-6 pb-6 text-gray-600 leading-relaxed space-y-4">
-                  <h3 class="text-base font-semibold text-gray-900">Title Page</h3>
-                  <p>The title page must be submitted as a separate file and should include:</p>
-                  <ul class="list-disc list-inside space-y-1 text-sm">
-                    <li>Full title of the manuscript (concise and informative)</li>
-                    <li>A short running title (no more than 50 characters)</li>
-                    <li>Full names, academic degrees, ORCID identifiers, and institutional affiliations of all authors</li>
-                    <li>Name, address, phone, fax, and e-mail of the corresponding author</li>
-                    <li>Acknowledgments, funding sources, and conflict of interest disclosures</li>
-                    <li>Word count for the abstract and main text separately</li>
-                  </ul>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">Abstract</h3>
-                  <p>For Original Articles, the abstract must be structured with the following headings:</p>
-                  <ul class="list-disc list-inside space-y-1 text-sm">
-                    <li><strong>Objective:</strong> State the primary aim of the study.</li>
-                    <li><strong>Methods:</strong> Describe the study design, setting, participants, interventions, and main outcome measures.</li>
-                    <li><strong>Results:</strong> Present the main findings with specific data and statistical significance.</li>
-                    <li><strong>Conclusion:</strong> State the primary conclusions and their clinical implications.</li>
-                  </ul>
-                  <p class="text-sm">The abstract should not exceed 250 words. Reviews, case reports, and brief reports should include unstructured abstracts of no more than 200 words.</p>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">Keywords</h3>
-                  <p class="text-sm">Provide 3 to 6 keywords. Keywords should be selected from the Medical Subject Headings (MeSH) list of the U.S. National Library of Medicine (<a href="https://meshb.nlm.nih.gov/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">meshb.nlm.nih.gov</a>).</p>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">Text Formatting</h3>
-                  <ul class="list-disc list-inside space-y-1 text-sm">
-                    <li>Manuscripts should be prepared in Microsoft Word format (.doc or .docx).</li>
-                    <li>Use 12-point Times New Roman font, double-spaced throughout.</li>
-                    <li>Number all pages consecutively, starting with the title page.</li>
-                    <li>Use SI (International System) units for measurements.</li>
-                    <li>Abbreviations should be defined at first mention in the abstract and the main text separately.</li>
-                  </ul>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">References</h3>
-                  <p class="text-sm">References should be formatted according to the Vancouver style (Uniform Requirements for Manuscripts Submitted to Biomedical Journals). Number references consecutively in the order in which they first appear in the text. Identify references in the text with superscript Arabic numerals. Example:</p>
-                  <div class="bg-gray-50 rounded-lg p-3 text-sm font-mono">
-                    1. Sahin A, Yilmaz B, Ozdemir C. Effect of treatment on clinical outcomes in patients with diabetes. Balkan Med J. 2024;41(2):123-130.
+                  <p>All submissions are completed online at <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">balkanmedj.manuscriptmanager.net</a>. During submission, authors are asked to suggest two potential reviewers.</p>
+                  <div class="bg-gray-50 rounded-lg p-4">
+                    <h3 class="text-base font-semibold text-gray-900 mt-0 pt-0 border-0">Required Upload Order</h3>
+                    <ol class="list-decimal list-inside space-y-1 text-sm">
+                      <li>Cover Letter</li>
+                      <li>Title Page</li>
+                      <li>Main Document (main text, references, tables, figure legends; abstract is entered in system fields)</li>
+                      <li>Figures (separate files)</li>
+                      <li>ICMJE Conflict of Interest Form and Data-sharing Statement Form</li>
+                    </ol>
                   </div>
 
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">Tables</h3>
-                  <p class="text-sm">Each table should be on a separate page, numbered consecutively with Arabic numerals, and have a descriptive title. Do not use vertical lines. Explain all abbreviations in footnotes.</p>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">Figures</h3>
+                  <h3 class="text-base font-semibold text-gray-900">2.1 Cover Letter</h3>
                   <ul class="list-disc list-inside space-y-1 text-sm">
-                    <li>Figures must be submitted as separate files in TIFF or JPEG format.</li>
-                    <li>Minimum resolution: 300 dpi for all figures.</li>
-                    <li>Color figures should be in CMYK mode for print.</li>
-                    <li>Each figure must have a legend/caption that makes it comprehensible without reference to the text.</li>
-                    <li>Patients shown in photographs must have their identity concealed, or written consent for publication must be obtained.</li>
+                    <li>Article title, article type, and corresponding author full name.</li>
+                    <li>Brief statement of novelty and scientific value.</li>
+                    <li>Conflict of interest declaration (present or absent).</li>
+                    <li>Originality declaration: not published, accepted, or under simultaneous review elsewhere.</li>
+                    <li>For conference-presented work, include date and location of oral/poster presentation.</li>
+                    <li>Multiple and duplicate submissions are not accepted, including prior publication in another language.</li>
                   </ul>
+                  <p class="text-sm">
+                    <a href="https://balkanmedicaljournal.org/img/files/1-BMJ_COVER_LETTER.pdf" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">Cover letter example/template</a> |
+                    <a href="http://www.icmje.org/recommendations/browse/publishing-and-editorial-issues/overlapping-publications.html" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">ICMJE overlapping publications</a>
+                  </p>
+
+                  <h3 class="text-base font-semibold text-gray-900">2.2 Title Page</h3>
+                  <ul class="list-disc list-inside space-y-1 text-sm">
+                    <li>Complete manuscript title and running head.</li>
+                    <li>Word counts for abstract and text (text count excludes references, tables, and figure legends).</li>
+                    <li>Total number of references, figures, and tables.</li>
+                    <li>All authors' full names, ORCIDs, affiliations, and e-mail addresses.</li>
+                    <li>Corresponding author address, telephone, fax, and e-mail.</li>
+                    <li>Keywords (3-6 MeSH terms).</li>
+                    <li>Presentation history (if previously presented).</li>
+                    <li>Acknowledgements, funding, and conflict of interest declarations.</li>
+                  </ul>
+                  <p><strong>Note:</strong> Author-identifying title-page details should be uploaded separately in the submission system.</p>
+
+                  <h3 class="text-base font-semibold text-gray-900">Abstracts by Article Type</h3>
+                  <ul class="list-disc list-inside space-y-1 text-sm">
+                    <li><strong>Original Article:</strong> Structured abstract (Background, Aims, Study Design, Methods, Results, Conclusion).</li>
+                    <li><strong>Invited Review:</strong> Abstract required (unstructured).</li>
+                    <li><strong>Clinical Image, Editorial, Letter to the Editor, Commentary:</strong> No abstract.</li>
+                    <li>For all other types, follow the specific article-type guidance in Section 1.2.</li>
+                  </ul>
+
+                  <h3 class="text-base font-semibold text-gray-900">2.3 Main Document</h3>
+                  <p>Main document order: main text, references, tables, then figure legends. Remove all information that could identify authors or institutions to preserve blinded review.</p>
+
+                  <h3 class="text-base font-semibold text-gray-900">References</h3>
+                  <ul class="list-disc list-inside space-y-1 text-sm">
+                    <li>Cite primary studies whenever possible.</li>
+                    <li>Use ICMJE style and number references in order of citation.</li>
+                    <li>Prefer current literature; include DOI for ahead-of-print items.</li>
+                    <li>Abbreviate journal names according to Index Medicus/Medline/PubMed.</li>
+                    <li>If more than 6 authors, list first 3 followed by "et al."</li>
+                    <li>Cite references in text using Arabic numbers in parentheses.</li>
+                  </ul>
+                  <div class="bg-gray-50 rounded-lg p-3 text-sm space-y-2">
+                    <p><strong>Journal article:</strong> Korytina G, Kochetova O, Akhmadishina L, Viktorova E, Victorova T. Polymorphisms of cytochrome P450 genes in three ethnic groups from Russia. <em>Balkan Med J.</em> 2012;29:252-260.</p>
+                    <p><strong>Book:</strong> Tos M. Cartilage tympanoplasty. 1st ed. Stuttgart-New York: Georg Thieme Verlag; 2009.</p>
+                    <p><strong>Book chapter:</strong> Tos M, Stangerup SE. The relationship between secretory otitis and cholesteatoma. In: Tos M, Thomsen J, Peitersen E, editors. Cholesteatoma and mastoid surgery. Amsterdam: Kugler &amp; Ghedini; 1989:325-330.</p>
+                    <p><strong>Abstract:</strong> Gurakar A, Elsahwi K, Akdogan M, Wright H, Nour B, Sebastian T, et al. Asplenia and primary sclerosing cholangitis (PSC): A mere coincidence? <em>Hepatology.</em> 2002;36:673a (abstract).</p>
+                    <p><strong>Electronic format:</strong> Morse SS. Factors in the emergence of infectious diseases. Emerg Infect Dis (serial online) 1995 Jan-Mar (cited 1996 June 5): 1(1): (24 screens). Available from: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2626828/pdf/8903148.pdf" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">NCBI PDF</a>.</p>
+                    <p><a href="https://www.nlm.nih.gov/bsd/uniform_requirements.html" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">ICMJE Sample References</a></p>
+                  </div>
+
+                  <h3 class="text-base font-semibold text-gray-900">Tables</h3>
+                  <p>Place tables after references in the main document. Number in citation order, provide titles above tables, and define abbreviations below tables (even if already defined in text). Use the word processor's insert-table function.</p>
+
+                  <h3 class="text-base font-semibold text-gray-900">2.4 Figures and Figure Legends</h3>
+                  <ul class="list-disc list-inside space-y-1 text-sm">
+                    <li>Upload figures as separate TIFF/JPEG files; do not embed in Word.</li>
+                    <li>Submit figure subunits separately; do not merge into one file.</li>
+                    <li>Do not place a/b/c labels directly on images.</li>
+                    <li>Figures must be blinded and free of author/institution identifiers.</li>
+                    <li>Minimum image quality: 300 DPI and at least 100x100 mm.</li>
+                  </ul>
+                  <p>Figure legends should be listed at the end of the main document. Example: Figure 1. a-c. Primary culture of choroid plexuses on day 2 after seeding of dissociated cells (×400). Nestin staining in green (a). GFAP staining in red (b). Nuclear labelling in blue and merged images (c).</p>
+
+                  <h3 class="text-base font-semibold text-gray-900">2.4.1 Graphical Abstracts</h3>
+                  <p>When submitting your manuscript, also upload a graphical abstract. It should summarize your study with clear visual elements (tables, figures, or key statistical outputs).</p>
+                  <figure class="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                    <img src="https://balkanmedicaljournal.org/img/images/2342.jpg" alt="Sample graphical abstracts" class="w-full h-auto rounded-md" loading="lazy">
+                  </figure>
+
+                  <h3 class="text-base font-semibold text-gray-900">2.5 Copyright Agreement and Acknowledgement of Authorship Form</h3>
+                  <p>This form documents scientific contribution and responsibility for each author.</p>
+                  <p><a href="https://balkanmedicaljournal.org/img/files/Copyright%20Agreement%20Form-BMJ(2).pdf" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">Copyright Agreement and Acknowledgement of Authorship Form</a></p>
+                  <p>ICMJE authorship requires all four criteria:</p>
+                  <ol class="list-decimal list-inside space-y-1 text-sm">
+                    <li>Substantial contribution to conception/design or data acquisition/analysis/interpretation.</li>
+                    <li>Drafting or critically revising intellectual content.</li>
+                    <li>Final approval of the version to be published.</li>
+                    <li>Accountability for all parts of the work and integrity of the record.</li>
+                  </ol>
+                  <p>Contributors not meeting all criteria should be listed in acknowledgements, not as authors.</p>
+                  <p><a href="http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">ICMJE authorship details</a></p>
+
+                  <h3 class="text-base font-semibold text-gray-900">2.6 ICMJE Conflict of Interest Form and Data-sharing Statement Form</h3>
+                  <ul class="list-disc list-inside space-y-1 text-sm">
+                    <li>Submit ICMJE Conflict of Interest form with every manuscript submission.</li>
+                    <li>Data-sharing Statement form is required for clinical trials.</li>
+                    <li>For clinical trials registered on or after January 1, 2019, a data-sharing plan must be registered.</li>
+                  </ul>
+                  <p><strong>Creative Commons License Agreement Form:</strong> After acceptance, the corresponding author must sign and return the Creative Commons License Agreement form according to the open access policy.</p>
                 </div>
               </div>
             </div>
 
-            <!-- Accordion 3: Submission Process -->
+            <!-- Accordion 3 -->
             <div class="bg-white rounded-xl border border-gray-200 mb-4 overflow-hidden">
               <button id="acc-btn-3" class="accordion-btn w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors" aria-expanded="false" aria-controls="acc-panel-3">
-                <span class="text-lg font-semibold text-gray-900">Submission Process</span>
+                <span class="text-lg font-semibold text-gray-900">Checklist</span>
                 <svg class="accordion-chevron w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </button>
               <div id="acc-panel-3" class="accordion-content" role="region" aria-labelledby="acc-btn-3">
                 <div class="px-6 pb-6 text-gray-600 leading-relaxed space-y-4">
-                  <p>All manuscripts must be submitted online through the journal's manuscript management system:</p>
-                  <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                    <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="text-teal-700 font-semibold hover:text-teal-800 underline text-lg">balkanmedj.manuscriptmanager.net</a>
-                    <p class="text-sm text-teal-700 mt-1">You will need to create an account if you are a first-time user.</p>
-                  </div>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">Required Files</h3>
-                  <p class="text-sm">The following files must be uploaded during submission:</p>
-                  <ol class="list-decimal list-inside space-y-2 text-sm">
-                    <li><strong>Cover Letter:</strong> Address to the Editor-in-Chief. State the manuscript type, confirm originality, and disclose any prior or dual publication or submission.</li>
-                    <li><strong>Title Page:</strong> A separate document containing all author information, affiliations, ORCID IDs, and corresponding author details.</li>
-                    <li><strong>Main Document:</strong> The blinded manuscript file containing the abstract, keywords, main text, references, table titles, and figure legends. Do not include any author-identifying information.</li>
-                    <li><strong>Figures:</strong> Each figure as a separate high-resolution file (TIFF or JPEG, minimum 300 dpi).</li>
-                    <li><strong>Tables:</strong> Included at the end of the main document or as separate files.</li>
-                    <li><strong>Supplementary Material:</strong> Any additional data, appendices, or multimedia files that support the manuscript (optional).</li>
-                  </ol>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">ORCID Requirement</h3>
-                  <p class="text-sm">All authors must provide their ORCID (Open Researcher and Contributor ID) at the time of submission. If you do not have an ORCID, you can register for free at <a href="https://orcid.org/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">orcid.org</a>. ORCID identifiers will be published alongside author names in the final article.</p>
-
-                  <div class="bg-amber-100 border border-gray-200 rounded-lg p-4 text-sm">
-                    <div class="flex items-start gap-2">
-                      <svg class="w-5 h-5 text-amber-700 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
-                      <p class="text-amber-700"><strong>Important:</strong> Manuscripts that do not comply with the submission guidelines will be returned to the authors before being sent for peer review. Please ensure all required files are included and properly formatted.</p>
-                    </div>
-                  </div>
+                  <p>To finalize submission, the corresponding author should ensure that all files mentioned below have been uploaded:</p>
+                  <ul class="list-disc list-inside space-y-1 text-sm">
+                    <li>A cover letter containing the article title/type, corresponding author name, novelty/importance statement, conflict/ethics/consent/funding/data availability statements, and originality declaration.</li>
+                    <li>A title page including affiliations and e-mail addresses, corresponding author details, date/place of presentation if applicable, and acknowledgements.</li>
+                    <li>Structured abstract and text.</li>
+                    <li>All figures uploaded and displayed correctly.</li>
+                    <li>Author contribution and conflict of interest statement forms (ICMJE).</li>
+                    <li>Permission for reprinted figures, tables, materials, or photographs.</li>
+                  </ul>
+                  <p>When submitting a revised version, the author must submit a detailed Response to Reviewers (point-by-point) and an annotated copy of the main document.</p>
+                  <p>Revised manuscripts must be submitted within 45 days of the decision letter. Extension requests must be made before the initial 45-day period ends.</p>
                 </div>
               </div>
             </div>
 
-            <!-- Accordion 4: Ethical Requirements -->
+            <!-- Accordion 4 -->
             <div class="bg-white rounded-xl border border-gray-200 mb-4 overflow-hidden">
               <button id="acc-btn-4" class="accordion-btn w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors" aria-expanded="false" aria-controls="acc-panel-4">
-                <span class="text-lg font-semibold text-gray-900">Ethical Requirements</span>
+                <span class="text-lg font-semibold text-gray-900">Proofs and DOI Number</span>
                 <svg class="accordion-chevron w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </button>
               <div id="acc-panel-4" class="accordion-content" role="region" aria-labelledby="acc-btn-4">
                 <div class="px-6 pb-6 text-gray-600 leading-relaxed space-y-4">
-                  <h3 class="text-base font-semibold text-gray-900">Ethics Committee Approval</h3>
-                  <p class="text-sm">All studies involving human participants or animal subjects must have ethics committee approval. The approval number and the name of the ethics committee must be stated in the Methods section of the manuscript. Balkan Medical Journal adheres to the principles of the Declaration of Helsinki.</p>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">Informed Consent</h3>
-                  <p class="text-sm">Written informed consent must be obtained from all participants (or their legal guardians) in studies involving human subjects. For case reports and image submissions, a signed patient consent form must be submitted. Patient confidentiality must be maintained at all times.</p>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">ICMJE Disclosure Forms</h3>
-                  <p class="text-sm">Each author must complete an ICMJE Conflict of Interest Disclosure Form. These forms should be uploaded during the submission process. The ICMJE form is available for download on our <a href="forms.html" class="text-teal-700 underline hover:text-teal-800">Forms page</a>.</p>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">Clinical Trial Registration</h3>
-                  <p class="text-sm">All clinical trials must be registered in a public trials registry (e.g., ClinicalTrials.gov, WHO International Clinical Trials Registry Platform) before enrollment of the first participant. The registration number must be provided in the abstract and Methods section.</p>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">Reporting Guidelines</h3>
-                  <p class="text-sm">Authors are required to follow the appropriate reporting guidelines for their study design. Completed checklists must be submitted with the manuscript:</p>
-                  <ul class="list-disc list-inside space-y-1 text-sm">
-                    <li><strong>CONSORT</strong> -- for randomized controlled trials</li>
-                    <li><strong>STROBE</strong> -- for observational studies</li>
-                    <li><strong>PRISMA</strong> -- for systematic reviews and meta-analyses</li>
-                    <li><strong>STARD</strong> -- for diagnostic accuracy studies</li>
-                    <li><strong>CARE</strong> -- for case reports</li>
-                    <li><strong>ARRIVE</strong> -- for animal studies</li>
-                  </ul>
-                  <p class="text-sm mt-2">For a complete list of reporting guidelines, visit the <a href="https://www.equator-network.org/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">EQUATOR Network</a>.</p>
+                  <p>Accepted manuscripts are assigned a DOI immediately after acceptance. Manuscripts are copyedited for grammar, punctuation, and format, then published online ahead of print before scheduled issue publication.</p>
+                  <p>A PDF proof is sent to the corresponding author and publication approval is requested within 2 days of receipt.</p>
                 </div>
               </div>
             </div>
 
-            <!-- Accordion 5: Peer Review Process -->
+            <!-- Accordion 5 -->
             <div class="bg-white rounded-xl border border-gray-200 mb-4 overflow-hidden">
               <button id="acc-btn-5" class="accordion-btn w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors" aria-expanded="false" aria-controls="acc-panel-5">
-                <span class="text-lg font-semibold text-gray-900">Peer Review Process</span>
+                <span class="text-lg font-semibold text-gray-900">Appeals and Complaints</span>
                 <svg class="accordion-chevron w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </button>
               <div id="acc-panel-5" class="accordion-content" role="region" aria-labelledby="acc-btn-5">
                 <div class="px-6 pb-6 text-gray-600 leading-relaxed space-y-4">
-                  <h3 class="text-base font-semibold text-gray-900">Double-Blind Review</h3>
-                  <p class="text-sm">Balkan Medical Journal employs a double-blind peer review process. Neither the authors nor the reviewers are aware of each other's identities during the evaluation. This ensures objectivity and fairness in the review process.</p>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">Typical Timeline</h3>
-                  <div class="bg-gray-50 rounded-lg p-4 text-sm space-y-3">
-                    <div class="flex items-center gap-3">
-                      <div class="w-8 h-8 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center font-semibold text-xs flex-shrink-0">1</div>
-                      <div><strong>Initial Screening:</strong> 3-5 business days after submission</div>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <div class="w-8 h-8 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center font-semibold text-xs flex-shrink-0">2</div>
-                      <div><strong>Peer Review:</strong> 4-6 weeks for the initial decision</div>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <div class="w-8 h-8 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center font-semibold text-xs flex-shrink-0">3</div>
-                      <div><strong>Revision Period:</strong> Authors are typically given 30 days for major revisions, 14 days for minor revisions</div>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <div class="w-8 h-8 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center font-semibold text-xs flex-shrink-0">4</div>
-                      <div><strong>Final Decision:</strong> Usually within 2 weeks after revised manuscript submission</div>
-                    </div>
-                  </div>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">Revision Requirements</h3>
-                  <p class="text-sm">When revisions are requested, authors must submit a detailed point-by-point response to each reviewer comment. Changes in the manuscript should be highlighted or tracked. Failure to address reviewer comments adequately may result in rejection.</p>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">Appeal Process</h3>
-                  <p class="text-sm">Authors who believe their manuscript was incorrectly rejected may submit a written appeal to the Editor-in-Chief within 30 days of the decision. The appeal should provide a detailed, evidence-based rebuttal of the reviewers' concerns. Appeal decisions are final.</p>
+                  <p>Please see the editorial policy.</p>
+                  <p><a href="https://balkanmedicaljournal.org/static.php?id=10" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">Appeals and Complaints Policy</a></p>
                 </div>
               </div>
             </div>
 
-            <!-- Accordion 6: Post-Acceptance -->
+            <!-- Accordion 6 -->
             <div class="bg-white rounded-xl border border-gray-200 mb-4 overflow-hidden">
               <button id="acc-btn-6" class="accordion-btn w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors" aria-expanded="false" aria-controls="acc-panel-6">
-                <span class="text-lg font-semibold text-gray-900">Post-Acceptance</span>
+                <span class="text-lg font-semibold text-gray-900">Documents to Download</span>
                 <svg class="accordion-chevron w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </button>
               <div id="acc-panel-6" class="accordion-content" role="region" aria-labelledby="acc-btn-6">
                 <div class="px-6 pb-6 text-gray-600 leading-relaxed space-y-4">
-                  <h3 class="text-base font-semibold text-gray-900">Copyediting</h3>
-                  <p class="text-sm">After acceptance, manuscripts undergo professional copyediting for grammar, style, and consistency. Authors may be contacted for clarification during this process. The copyedited version will be sent to the corresponding author for approval.</p>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">Proof Review</h3>
-                  <p class="text-sm">Page proofs will be sent to the corresponding author in PDF format. Authors must review proofs carefully and return corrections within 48 hours. Only minor corrections and typographical errors may be corrected at the proof stage. Substantial changes to the content are not permitted.</p>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">Online-First Publication</h3>
-                  <p class="text-sm">Accepted articles are published online ahead of print as "Articles in Press" on the journal website. Online-first articles are citable using their DOI and are fully indexed. This allows rapid dissemination of research findings before the formal issue publication.</p>
-
-                  <h3 class="text-base font-semibold text-gray-900 pt-2">DOI Assignment</h3>
-                  <p class="text-sm">Each article is assigned a unique Digital Object Identifier (DOI) upon online-first publication. The DOI provides a permanent link to the article and should be used for citation purposes. DOIs are registered with CrossRef and are indexed across all major databases.</p>
+                  <ul class="list-disc list-inside space-y-1 text-sm">
+                    <li><a href="https://balkanmedicaljournal.org/img/files/1-BMJ_COVER_LETTER.pdf" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">Cover Letter</a></li>
+                    <li><a href="https://balkanmedicaljournal.org/img/files/Copyright%20Agreement%20Form-BMJ(2).pdf" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">Copyright Transfer and Acknowledgement of Authorship Form</a></li>
+                    <li><a href="https://balkanmedicaljournal.org/img/files/Data-sharing%20statement%20form(1)-1.docx" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">Data-sharing Statement Form</a></li>
+                    <li><a href="https://icmje.org/conflicts-of-interest/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">ICMJE Conflict of Interest Form</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
 
-            <!-- Accordion 7: Downloadable Forms -->
+            <!-- Accordion 7 -->
             <div class="bg-white rounded-xl border border-gray-200 mb-4 overflow-hidden">
               <button id="acc-btn-7" class="accordion-btn w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors" aria-expanded="false" aria-controls="acc-panel-7">
-                <span class="text-lg font-semibold text-gray-900">Downloadable Forms</span>
+                <span class="text-lg font-semibold text-gray-900">Editorial Contacts</span>
                 <svg class="accordion-chevron w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </button>
               <div id="acc-panel-7" class="accordion-content" role="region" aria-labelledby="acc-btn-7">
                 <div class="px-6 pb-6 text-gray-600 leading-relaxed space-y-4">
-                  <p>The following forms are required during or after manuscript submission. All forms are available for download on the <a href="forms.html" class="text-teal-700 underline hover:text-teal-800 font-medium">Forms page</a>.</p>
-
-                  <div class="grid sm:grid-cols-2 gap-3">
-                    <a href="forms.html" class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-50 border border-gray-200 hover:border-gray-200 transition-colors group">
-                      <svg class="w-8 h-8 text-red-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-                      <div>
-                        <div class="font-medium text-gray-900 group-hover:text-teal-700 text-sm">Copyright Transfer Form</div>
-                        <div class="text-xs text-gray-500">Required at acceptance</div>
-                      </div>
-                    </a>
-                    <a href="forms.html" class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-50 border border-gray-200 hover:border-gray-200 transition-colors group">
-                      <svg class="w-8 h-8 text-red-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-                      <div>
-                        <div class="font-medium text-gray-900 group-hover:text-teal-700 text-sm">Conflict of Interest Form</div>
-                        <div class="text-xs text-gray-500">Required at submission</div>
-                      </div>
-                    </a>
-                    <a href="forms.html" class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-50 border border-gray-200 hover:border-gray-200 transition-colors group">
-                      <svg class="w-8 h-8 text-red-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-                      <div>
-                        <div class="font-medium text-gray-900 group-hover:text-teal-700 text-sm">Patient Consent Form</div>
-                        <div class="text-xs text-gray-500">Required for case reports</div>
-                      </div>
-                    </a>
-                    <a href="forms.html" class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-50 border border-gray-200 hover:border-gray-200 transition-colors group">
-                      <svg class="w-8 h-8 text-red-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-                      <div>
-                        <div class="font-medium text-gray-900 group-hover:text-teal-700 text-sm">ICMJE Disclosure Form</div>
-                        <div class="text-xs text-gray-500">Required for all authors</div>
-                      </div>
-                    </a>
-                  </div>
+                  <p><strong>Editor-in-Chief:</strong> Prof. Servet ALTAY<br>Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye.<br><strong>Phone:</strong> +90 284 235 76 41 / 4217-4315 (internal)<br><strong>E-mail:</strong> <a href="mailto:drservetaltay@gmail.com" class="text-teal-700 underline hover:text-teal-800">drservetaltay@gmail.com</a></p>
+                  <p><strong>Editorial Office:</strong> Balkan Medical Journal, Balkan Campus of Trakya University, Medical Faculty, 22030 Edirne, Türkiye.<br><strong>Phone:</strong> +90 284 235 76 41 / 1430 (internal)<br><strong>Fax:</strong> +90 284 235 76 52<br><strong>E-mail:</strong> <a href="mailto:info@balkanmedicaljournal.org" class="text-teal-700 underline hover:text-teal-800">info@balkanmedicaljournal.org</a></p>
                 </div>
               </div>
             </div>
@@ -535,78 +796,25 @@
           </div>
 
           <!-- Sidebar (1/3) -->
-          <aside class="lg:w-1/3">
+          <aside class="lg:w-1/3 authors-sidebar">
             <div class="lg:sticky lg:top-24 space-y-6">
 
-              <!-- Quick Reference Card -->
               <div class="bg-white rounded-xl border border-gray-200 p-6">
-                <h2 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-                  <svg class="w-5 h-5 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
-                  Quick Reference
-                </h2>
-                <div class="space-y-3 text-sm">
-                  <div class="flex justify-between py-2 border-b border-gray-100">
-                    <span class="text-gray-500">Original Article</span>
-                    <span class="font-semibold text-gray-900">4,000 words / 50 refs</span>
-                  </div>
-                  <div class="flex justify-between py-2 border-b border-gray-100">
-                    <span class="text-gray-500">Review</span>
-                    <span class="font-semibold text-gray-900">5,000 words / 100 refs</span>
-                  </div>
-                  <div class="flex justify-between py-2 border-b border-gray-100">
-                    <span class="text-gray-500">Brief Report</span>
-                    <span class="font-semibold text-gray-900">2,000 words / 20 refs</span>
-                  </div>
-                  <div class="flex justify-between py-2 border-b border-gray-100">
-                    <span class="text-gray-500">Case Report</span>
-                    <span class="font-semibold text-gray-900">2,000 words / 20 refs</span>
-                  </div>
-                  <div class="flex justify-between py-2 border-b border-gray-100">
-                    <span class="text-gray-500">Letter to the Editor</span>
-                    <span class="font-semibold text-gray-900">1,000 words / 10 refs</span>
-                  </div>
-                  <div class="flex justify-between py-2 border-b border-gray-100">
-                    <span class="text-gray-500">Image Corner</span>
-                    <span class="font-semibold text-gray-900">500 words / 5 refs</span>
-                  </div>
-                  <div class="flex justify-between py-2">
-                    <span class="text-gray-500">Editorial</span>
-                    <span class="font-semibold text-gray-900">2,000 words / 20 refs</span>
-                  </div>
-                </div>
-                <div class="mt-4 pt-4 border-t border-gray-200 text-xs text-gray-400">
-                  Word limits exclude abstract, references, tables, and figure legends.
-                </div>
+                <h2 class="text-lg font-bold text-gray-900 mb-4">Quick Links</h2>
+                <ul class="space-y-2 text-sm text-gray-600">
+                  <li><a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">Manuscript Submission System</a></li>
+                  <li><a href="https://balkanmedicaljournal.org/static.php?id=10" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">Appeals and Complaints Policy</a></li>
+                  <li><a href="https://balkanmedicaljournal.org/img/files/1-BMJ_COVER_LETTER.pdf" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">Cover Letter Template</a></li>
+                  <li><a href="https://balkanmedicaljournal.org/img/files/Copyright%20Agreement%20Form-BMJ(2).pdf" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">Copyright and Authorship Form</a></li>
+                  <li><a href="https://balkanmedicaljournal.org/img/files/Data-sharing%20statement%20form(1)-1.docx" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">Data-sharing Statement Form</a></li>
+                  <li><a href="https://icmje.org/conflicts-of-interest/" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">ICMJE Conflict of Interest Form</a></li>
+                </ul>
               </div>
 
-              <!-- Submit CTA -->
               <div class="bg-gradient-to-br from-teal-700 to-teal-800 rounded-xl p-6 text-white text-center">
-                <svg class="w-12 h-12 mx-auto mb-3 opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
                 <h2 class="text-xl font-bold mb-2">Ready to Submit?</h2>
-                <p class="text-teal-100 text-sm mb-4">Submit your manuscript through our online system. No submission fees or article processing charges.</p>
-                <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="inline-flex items-center px-6 py-3 bg-white text-red-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors shadow-sm">
-                  Submit Manuscript
-                  <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                </a>
-              </div>
-
-              <!-- Contact Info Card -->
-              <div class="bg-white rounded-xl border border-gray-200 p-6">
-                <h2 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-                  <svg class="w-5 h-5 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                  Editorial Contact
-                </h2>
-                <div class="space-y-3 text-sm text-gray-600">
-                  <p>For questions about submission or the review process, please contact the editorial office:</p>
-                  <div class="flex items-center gap-2">
-                    <svg class="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                    <a href="mailto:info@balkanmedicaljournal.org" class="text-teal-700 hover:text-teal-800 underline">info@balkanmedicaljournal.org</a>
-                  </div>
-                  <div class="flex items-start gap-2">
-                    <svg class="w-4 h-4 text-gray-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                    <span>Balkan Medical Journal<br>Trakya University Faculty of Medicine<br>Balkan Yerleskesi, 22030<br>Edirne, Türkiye</span>
-                  </div>
-                </div>
+                <p class="text-teal-100 text-sm mb-4">Use the journal's online submission system.</p>
+                <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="inline-flex items-center px-6 py-3 bg-white text-red-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors shadow-sm">Submit Manuscript</a>
               </div>
 
             </div>

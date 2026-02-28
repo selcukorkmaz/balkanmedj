@@ -242,16 +242,72 @@
       document.title = item.title + ' — Balkan Medical Journal';
       if (breadcrumbTitle) breadcrumbTitle.textContent = item.title;
 
-      var catColor = item.category === 'Announcement' ? 'bg-blue-100 text-blue-700' :
-                     item.category === 'Award' ? 'bg-amber-100 text-amber-700' :
-                     item.category === 'Indexing' ? 'bg-green-100 text-green-700' :
-                     item.category === 'Event' ? 'bg-purple-100 text-purple-700' :
+      function parseNewsDate(value) {
+        if (!value) return NaN;
+        var ts = Date.parse(value);
+        return Number.isNaN(ts) ? NaN : ts;
+      }
+
+      function normalizeCategory(category) {
+        return category || 'News';
+      }
+
+      function escapeAttr(value) {
+        return String(value || '')
+          .replace(/&/g, '&amp;')
+          .replace(/"/g, '&quot;');
+      }
+
+      function normalizeThumbnail(url) {
+        if (!url) return '';
+        if (/^https?:\/\//i.test(url)) return url;
+        if (url.indexOf('//') === 0) return 'https:' + url;
+        return 'https://balkanmedicaljournal.org/' + String(url).replace(/^\/+/, '');
+      }
+
+      function getRealThumbnail(newsItem) {
+        var image = newsItem && newsItem.image ? String(newsItem.image).trim() : '';
+        if (image && image !== 'images/placeholder-news.jpg') {
+          return normalizeThumbnail(image);
+        }
+
+        var content = newsItem && newsItem.content ? String(newsItem.content) : '';
+        var match = content.match(/<img[^>]+src=["']([^"']+)["']/i);
+        return match ? normalizeThumbnail(match[1]) : '';
+      }
+
+      var displayCategory = normalizeCategory(item.category);
+      var catColor = displayCategory === 'News' ? 'bg-teal-100 text-teal-700' :
+                     displayCategory === 'Announcement' ? 'bg-blue-100 text-blue-700' :
+                     displayCategory === 'Award' ? 'bg-amber-100 text-amber-700' :
+                     displayCategory === 'Indexing' ? 'bg-green-100 text-green-700' :
+                     displayCategory === 'Event' ? 'bg-purple-100 text-purple-700' :
                      'bg-gray-100 text-gray-700';
 
-      var pubDate = new Date(item.date).toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
+      var parsedDate = parseNewsDate(item.date);
+      var hasDate = !Number.isNaN(parsedDate);
+      var pubDate = hasDate ? new Date(parsedDate).toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'}) : '';
+      var dateMeta = hasDate ? '<time class="text-sm text-gray-400" datetime="' + item.date + '">' + pubDate + '</time>' : '';
+      var thumbnail = getRealThumbnail(item);
+      var thumbnailHtml = thumbnail
+        ? '<figure class="mb-8 overflow-hidden rounded-xl border border-gray-200 bg-gray-50">' +
+            '<img src="' + escapeAttr(thumbnail) + '" alt="' + escapeAttr(item.title) + '" class="block w-full h-auto object-cover" loading="lazy">' +
+          '</figure>'
+        : '';
+      var contentWithoutImages = String(item.content || '').replace(/<img\b[^>]*>/gi, '');
 
       // Find prev/next
-      var sorted = window.NEWS.slice().sort(function (a, b) { return new Date(b.date) - new Date(a.date); });
+      var sorted = window.NEWS.slice().sort(function (a, b) {
+        var dateA = parseNewsDate(a.date);
+        var dateB = parseNewsDate(b.date);
+        var hasA = !Number.isNaN(dateA);
+        var hasB = !Number.isNaN(dateB);
+
+        if (hasA && hasB) return dateB - dateA;
+        if (hasA) return -1;
+        if (hasB) return 1;
+        return (b.id || 0) - (a.id || 0);
+      });
       var idx = sorted.findIndex(function (n) { return n.id === id; });
       var prev = idx < sorted.length - 1 ? sorted[idx + 1] : null;
       var next = idx > 0 ? sorted[idx - 1] : null;
@@ -259,14 +315,12 @@
       contentEl.innerHTML =
         '<article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">' +
           '<div class="flex items-center gap-3 mb-4">' +
-            '<span class="badge ' + catColor + '">' + item.category + '</span>' +
-            '<time class="text-sm text-gray-400" datetime="' + item.date + '">' + pubDate + '</time>' +
+            '<span class="badge ' + catColor + '">' + displayCategory + '</span>' +
+            dateMeta +
           '</div>' +
           '<h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-8">' + item.title + '</h1>' +
-          '<div class="aspect-video bg-gradient-to-br from-teal-700 to-teal-800 rounded-xl mb-8 flex items-center justify-center">' +
-            '<svg class="w-16 h-16 text-teal-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>' +
-          '</div>' +
-          '<div class="prose max-w-none text-gray-700 leading-relaxed text-lg">' + item.content + '</div>' +
+          thumbnailHtml +
+          '<div class="prose max-w-none text-gray-700 leading-relaxed text-lg">' + contentWithoutImages + '</div>' +
 
           // Prev/Next navigation
           '<div class="mt-12 pt-8 border-t border-gray-200 flex items-center justify-between gap-4">' +

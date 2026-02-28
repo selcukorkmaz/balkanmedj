@@ -7,10 +7,53 @@
   var container = document.getElementById('news-container');
   var filterContainer = document.getElementById('news-filters');
   var loadMoreBtn = document.getElementById('news-load-more');
+  var DEFAULT_THUMBNAIL = 'https://balkanmedicaljournal.org/style/images/trial-image-1.png';
   if (!container || !window.NEWS) return;
 
+  function parseNewsDate(value) {
+    if (!value) return NaN;
+    var ts = Date.parse(value);
+    return Number.isNaN(ts) ? NaN : ts;
+  }
+
+  function normalizeCategory(category) {
+    return category || 'News';
+  }
+
+  function escapeAttr(value) {
+    return String(value || '')
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function normalizeThumbnail(url) {
+    if (!url) return '';
+    if (/^https?:\/\//i.test(url)) return url;
+    if (url.indexOf('//') === 0) return 'https:' + url;
+    return 'https://balkanmedicaljournal.org/' + String(url).replace(/^\/+/, '');
+  }
+
+  function getThumbnail(item) {
+    var image = item && item.image ? String(item.image).trim() : '';
+    if (image && image !== 'images/placeholder-news.jpg') {
+      return normalizeThumbnail(image);
+    }
+
+    var content = item && item.content ? String(item.content) : '';
+    var match = content.match(/<img[^>]+src=["']([^"']+)["']/i);
+    return match ? normalizeThumbnail(match[1]) : DEFAULT_THUMBNAIL;
+  }
+
   var news = window.NEWS.slice().sort(function (a, b) {
-    return new Date(b.date) - new Date(a.date);
+    var dateA = parseNewsDate(a.date);
+    var dateB = parseNewsDate(b.date);
+    var hasA = !Number.isNaN(dateA);
+    var hasB = !Number.isNaN(dateB);
+
+    if (hasA && hasB) return dateB - dateA;
+    if (hasA) return -1;
+    if (hasB) return 1;
+    return (b.id || 0) - (a.id || 0);
   });
 
   var activeCategory = 'All';
@@ -19,7 +62,8 @@
   // Get unique categories
   var categories = ['All'];
   news.forEach(function (n) {
-    if (categories.indexOf(n.category) === -1) categories.push(n.category);
+    var category = normalizeCategory(n.category);
+    if (categories.indexOf(category) === -1) categories.push(category);
   });
 
   function renderFilters() {
@@ -44,7 +88,9 @@
 
   function getFiltered() {
     if (activeCategory === 'All') return news;
-    return news.filter(function (n) { return n.category === activeCategory; });
+    return news.filter(function (n) {
+      return normalizeCategory(n.category) === activeCategory;
+    });
   }
 
   function renderNews() {
@@ -59,22 +105,30 @@
     }
 
     visible.forEach(function (item) {
-      var catColor = item.category === 'Announcement' ? 'bg-blue-100 text-blue-700' :
-                     item.category === 'Award' ? 'bg-amber-100 text-amber-700' :
-                     item.category === 'Indexing' ? 'bg-green-100 text-green-700' :
-                     item.category === 'Event' ? 'bg-purple-100 text-purple-700' :
+      var displayCategory = normalizeCategory(item.category);
+      var catColor = displayCategory === 'News' ? 'bg-teal-100 text-teal-700' :
+                     displayCategory === 'Announcement' ? 'bg-blue-100 text-blue-700' :
+                     displayCategory === 'Award' ? 'bg-amber-100 text-amber-700' :
+                     displayCategory === 'Indexing' ? 'bg-green-100 text-green-700' :
+                     displayCategory === 'Event' ? 'bg-purple-100 text-purple-700' :
                      'bg-gray-100 text-gray-700';
+      var parsedDate = parseNewsDate(item.date);
+      var dateHtml = Number.isNaN(parsedDate)
+        ? ''
+        : '<time class="text-xs text-gray-400" datetime="' + item.date + '">' + new Date(parsedDate).toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'}) + '</time>';
+      var thumbnail = getThumbnail(item);
+      var mediaHtml = '<img src="' + escapeAttr(thumbnail) + '" alt="' + escapeAttr(item.title) + '" class="news-thumb-image" loading="lazy" onerror="this.onerror=null;this.src=\'' + escapeAttr(DEFAULT_THUMBNAIL) + '\';">';
 
       var card = document.createElement('article');
       card.className = 'article-card bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col';
       card.innerHTML =
-        '<div class="aspect-video bg-gradient-to-br from-teal-50 to-gray-100 flex items-center justify-center">' +
-          '<svg class="w-12 h-12 text-teal-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>' +
+        '<div class="news-thumb">' +
+          '<div class="news-thumb-media">' + mediaHtml + '</div>' +
         '</div>' +
         '<div class="p-6 flex flex-col flex-1">' +
           '<div class="flex items-center gap-2 mb-3">' +
-            '<span class="badge ' + catColor + '">' + item.category + '</span>' +
-            '<time class="text-xs text-gray-400" datetime="' + item.date + '">' + new Date(item.date).toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'}) + '</time>' +
+            '<span class="badge ' + catColor + '">' + displayCategory + '</span>' +
+            dateHtml +
           '</div>' +
           '<h3 class="text-lg font-semibold text-gray-900 mb-3 flex-1">' +
             '<a href="news-article.html?id=' + item.id + '" class="hover:text-teal-700 transition-colors">' + item.title + '</a>' +

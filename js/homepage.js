@@ -44,6 +44,7 @@
   }
 
   function newsBadgeClass(category) {
+    if (category === 'News') return 'bg-teal-100 text-teal-700';
     if (category === 'Announcement') return 'bg-blue-100 text-blue-700';
     if (category === 'Award') return 'bg-amber-100 text-amber-700';
     if (category === 'Indexing') return 'bg-green-100 text-green-700';
