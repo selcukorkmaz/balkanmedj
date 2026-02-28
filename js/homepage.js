@@ -311,6 +311,39 @@
     return isNaN(ms) ? 0 : ms;
   }
 
+  function articlePublishedTimestamp(article) {
+    if (!article) return 0;
+
+    // Derive publication month from issue number (bimonthly schedule):
+    // Issue 1→Jan, 2→Mar, 3→May, 4→Jul, 5→Sep, 6→Nov
+    var issueNum = parseInt(String(article.issue || ''), 10);
+    if (issueNum >= 1 && issueNum <= 6) {
+      var yearSource = String(article.published || article.publicationDate || article.publishDate || article.date || '').trim();
+      var yearMatch = yearSource.match(/^(\d{4})/);
+      if (yearMatch) {
+        var year = parseInt(yearMatch[1], 10);
+        var month = issueNum * 2 - 2; // 0-indexed: 1→0(Jan), 2→2(Mar), …, 6→10(Nov)
+        var ts = new Date(year, month, 1).getTime();
+        if (!isNaN(ts) && ts > 0) return ts;
+      }
+    }
+
+    var candidates = [
+      article.published,
+      article.publicationDate,
+      article.publishDate,
+      article.onlineFirstDate,
+      article.date
+    ];
+
+    for (var i = 0; i < candidates.length; i += 1) {
+      var ts = toTimestamp(candidates[i]);
+      if (ts > 0) return ts;
+    }
+
+    return 0;
+  }
+
   function numericValue(value) {
     if (value == null) return 0;
     if (typeof value === 'number') return isNaN(value) ? 0 : value;
@@ -318,6 +351,17 @@
     if (!normalized) return 0;
     var n = Number(normalized);
     return isNaN(n) ? 0 : n;
+  }
+
+  var liveUsageMetricPromiseCache = {};
+  var liveUsageMetricValueCache = {};
+
+  function effectiveArticleDownloads(article) {
+    var articleKey = String(article && article.id || '').trim();
+    if (articleKey && Object.prototype.hasOwnProperty.call(liveUsageMetricValueCache, articleKey)) {
+      return numericValue(liveUsageMetricValueCache[articleKey] && liveUsageMetricValueCache[articleKey].downloads);
+    }
+    return numericValue(article && article.downloads);
   }
 
   function normalizeDoi(value) {
@@ -345,10 +389,11 @@
       return liveCitationPromiseCache[doi];
     }
 
-    var url = 'https://api.openalex.org/works?filter=doi:https://doi.org/' + encodeURIComponent(doi) + '&select=doi,cited_by_count&per-page=1';
-    liveCitationPromiseCache[doi] = fetch(url)
+    // OpenAlex first, Crossref fallback
+    var oaUrl = 'https://api.openalex.org/works?mailto=info@balkanmedicaljournal.org&filter=doi:https://doi.org/' + encodeURIComponent(doi) + '&select=doi,cited_by_count&per-page=1';
+    liveCitationPromiseCache[doi] = fetch(oaUrl)
       .then(function (response) {
-        if (!response.ok) throw new Error('OpenAlex request failed');
+        if (!response.ok) throw new Error('OpenAlex unavailable');
         return response.json();
       })
       .then(function (payload) {
@@ -358,8 +403,22 @@
         return citedBy;
       })
       .catch(function () {
-        liveCitationValueCache[doi] = fallback;
-        return fallback;
+        var crUrl = 'https://api.crossref.org/works/' + encodeURIComponent(doi);
+        return fetch(crUrl)
+          .then(function (response) {
+            if (!response.ok) throw new Error('Crossref unavailable');
+            return response.json();
+          })
+          .then(function (payload) {
+            var work = payload && payload.message ? payload.message : null;
+            var citedBy = numericValue(work && work['is-referenced-by-count']);
+            liveCitationValueCache[doi] = citedBy;
+            return citedBy;
+          })
+          .catch(function () {
+            liveCitationValueCache[doi] = fallback;
+            return fallback;
+          });
       });
 
     return liveCitationPromiseCache[doi];
@@ -377,10 +436,15 @@
     if (topJournalCitationMapPromise) return topJournalCitationMapPromise;
     if (typeof fetch !== 'function') return Promise.resolve({});
 
-    var url = 'https://api.openalex.org/works?filter=primary_location.source.issn:2146-3131&sort=cited_by_count:desc&per-page=200&select=doi,cited_by_count';
-    topJournalCitationMapPromise = fetch(url)
+    var cutoff = new Date();
+    cutoff.setMonth(cutoff.getMonth() - 24);
+    var fromDate = cutoff.getFullYear() + '-' + String(cutoff.getMonth() + 1).replace(/^(\d)$/, '0$1');
+
+    // OpenAlex first, Crossref fallback
+    var oaUrl = 'https://api.openalex.org/works?mailto=info@balkanmedicaljournal.org&filter=primary_location.source.issn:2146-3131,from_publication_date:' + fromDate + '-01&sort=cited_by_count:desc&per-page=200&select=doi,cited_by_count';
+    topJournalCitationMapPromise = fetch(oaUrl)
       .then(function (response) {
-        if (!response.ok) throw new Error('OpenAlex top cited request failed');
+        if (!response.ok) throw new Error('OpenAlex unavailable');
         return response.json();
       })
       .then(function (payload) {
@@ -394,7 +458,25 @@
         return map;
       })
       .catch(function () {
-        return {};
+        var crUrl = 'https://api.crossref.org/journals/2146-3131/works?sort=is-referenced-by-count&order=desc&rows=200&select=DOI,is-referenced-by-count&filter=from-pub-date:' + fromDate;
+        return fetch(crUrl)
+          .then(function (response) {
+            if (!response.ok) throw new Error('Crossref unavailable');
+            return response.json();
+          })
+          .then(function (payload) {
+            var map = {};
+            var items = payload && payload.message && Array.isArray(payload.message.items) ? payload.message.items : [];
+            items.forEach(function (work) {
+              var doi = normalizeDoi(work && work.DOI);
+              if (!doi) return;
+              map[doi] = numericValue(work && work['is-referenced-by-count']);
+            });
+            return map;
+          })
+          .catch(function () {
+            return {};
+          });
       });
 
     return topJournalCitationMapPromise;
@@ -408,8 +490,8 @@
   }
 
   function compareByDownloadsDesc(a, b) {
-    var aDownloads = numericValue(a && a.downloads);
-    var bDownloads = numericValue(b && b.downloads);
+    var aDownloads = effectiveArticleDownloads(a);
+    var bDownloads = effectiveArticleDownloads(b);
     if (bDownloads !== aDownloads) return bDownloads - aDownloads;
     return numericValue(b && b.views) - numericValue(a && a.views);
   }
@@ -446,13 +528,21 @@
   function getArticleCollections(data, citationMap) {
     var articles = Array.isArray(window.ARTICLES) ? window.ARTICLES.slice() : [];
     var articlesInPress = Array.isArray(window.ARTICLES_IN_PRESS) ? window.ARTICLES_IN_PRESS.slice() : [];
+    var nowTs = Date.now();
+    var cutoffDate = new Date(nowTs);
+    cutoffDate.setMonth(cutoffDate.getMonth() - 24);
+    var cutoffTs = cutoffDate.getTime();
 
     var regular = articles.filter(function (article) {
       return article && String(article.type || '').trim() !== 'Cover Page';
     });
+    var mostDownloadedRecentPool = regular.filter(function (article) {
+      var publishedTs = articlePublishedTimestamp(article);
+      return publishedTs > 0 && publishedTs >= cutoffTs;
+    });
 
     var latestPublishedPool = getCurrentIssueArticles(data, regular).slice().sort(compareByPublishedDesc);
-    var topCitedPool = regular.slice().sort(function (a, b) {
+    var topCitedPool = mostDownloadedRecentPool.slice().sort(function (a, b) {
       var aCitations = getCitationValue(a, citationMap);
       var bCitations = getCitationValue(b, citationMap);
       if (bCitations !== aCitations) return bCitations - aCitations;
@@ -468,11 +558,10 @@
         return compareByViewsDesc(a, b);
       }).slice(0, 6),
       'top-cited': topCitedPool.slice(0, 6),
-      'most-downloaded': regular.slice().sort(compareByDownloadsDesc).slice(0, 6)
+      'most-downloaded': mostDownloadedRecentPool.slice().sort(compareByDownloadsDesc).slice(0, 6),
+      'most-downloaded-candidates': mostDownloadedRecentPool.slice()
     };
   }
-
-  var liveUsageMetricPromiseCache = {};
 
   function parseMetricCount(rawValue) {
     if (rawValue == null) return null;
@@ -513,6 +602,9 @@
     };
 
     var articleKey = String(article && article.id || '').trim();
+    if (articleKey && Object.prototype.hasOwnProperty.call(liveUsageMetricValueCache, articleKey)) {
+      return Promise.resolve(liveUsageMetricValueCache[articleKey]);
+    }
     if (!articleKey || typeof fetch !== 'function') return Promise.resolve(defaultMetrics);
 
     if (liveUsageMetricPromiseCache[articleKey]) {
@@ -520,7 +612,10 @@
     }
 
     var url = metricSourceUrl(article);
-    if (!url) return Promise.resolve(defaultMetrics);
+    if (!url) {
+      liveUsageMetricValueCache[articleKey] = defaultMetrics;
+      return Promise.resolve(defaultMetrics);
+    }
 
     liveUsageMetricPromiseCache[articleKey] = fetch(url)
       .then(function (response) {
@@ -529,16 +624,34 @@
       })
       .then(function (html) {
         var parsed = parseLiveUsageMetrics(html);
-        return {
+        var resolvedMetrics = {
           views: parsed.views == null ? defaultMetrics.views : parsed.views,
           downloads: parsed.downloads == null ? defaultMetrics.downloads : parsed.downloads
         };
+        liveUsageMetricValueCache[articleKey] = resolvedMetrics;
+        return resolvedMetrics;
       })
       .catch(function () {
+        liveUsageMetricValueCache[articleKey] = defaultMetrics;
         return defaultMetrics;
       });
 
     return liveUsageMetricPromiseCache[articleKey];
+  }
+
+  function warmMostDownloadedLiveMetrics(candidates) {
+    if (!Array.isArray(candidates) || !candidates.length) return Promise.resolve(false);
+
+    var pending = candidates.filter(function (article) {
+      var articleKey = String(article && article.id || '').trim();
+      if (!articleKey) return false;
+      return !Object.prototype.hasOwnProperty.call(liveUsageMetricValueCache, articleKey);
+    });
+
+    if (!pending.length) return Promise.resolve(false);
+    return Promise.all(pending.map(fetchLiveUsageMetrics))
+      .then(function () { return true; })
+      .catch(function () { return false; });
   }
 
   function hydrateLiveArticleMetrics(cardsRoot, items) {
@@ -698,11 +811,11 @@
       },
       'top-cited': {
         label: 'Top cited',
-        description: 'The most cited articles based on OpenAlex citation counts.'
+        description: 'The most cited articles from the last 24 months.'
       },
       'most-downloaded': {
         label: 'Most downloaded',
-        description: 'The most downloaded articles in the last 90 days.'
+        description: 'The most downloaded articles in the last 24 months.'
       }
     };
     var activeKey = 'latest-published';
@@ -791,6 +904,14 @@
         renderDesktopCollections(collections);
       }
 
+      if (activeKey === 'most-downloaded') {
+        warmMostDownloadedLiveMetrics(collections['most-downloaded-candidates']).then(function (updated) {
+          if (updated && activeKey === 'most-downloaded') {
+            applyTab('most-downloaded');
+          }
+        });
+      }
+
       if (activeKey === 'top-cited' && !topCitedRankReady && !topCitedRankLoading) {
         topCitedRankLoading = true;
         fetchTopJournalCitationMap()
@@ -827,15 +948,30 @@
       }
     }
 
+    // Eagerly fetch citation map in parallel with article data
+    topCitedRankLoading = true;
+    var citationMapReady = fetchTopJournalCitationMap()
+      .then(function (map) {
+        citationMap = Object.assign({}, citationMap, map || {});
+        topCitedRankReady = true;
+      })
+      .catch(function () {
+        topCitedRankReady = true;
+      })
+      .then(function () {
+        topCitedRankLoading = false;
+      });
+
     return Promise.all([
       window.BMJLazyData && typeof window.BMJLazyData.loadArticles === 'function'
         ? window.BMJLazyData.loadArticles()
         : Promise.resolve(),
-      ensureArticlesInPressData()
+      ensureArticlesInPressData(),
+      citationMapReady
     ]).catch(function () {
       // Keep UI functional with whichever data is already available.
     }).then(function () {
-      applyTab('latest-published');
+      applyTab(activeKey);
     });
   }
 
@@ -1165,7 +1301,7 @@
     if (!el) return;
     var refreshDate = formatDate(data.generatedAt || '');
     if (!refreshDate) return;
-    el.textContent = 'Metrics shown for quick reference. Last homepage data refresh: ' + refreshDate + '. Detailed sources are available in Journal Metrics.';
+    el.textContent = 'Metrics shown for quick reference. Detailed sources are available in Journal Metrics.';
   }
 
   function init() {

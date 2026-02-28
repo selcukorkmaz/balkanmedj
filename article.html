@@ -255,6 +255,14 @@
       font-size: 1.04rem;
       line-height: 1.75;
     }
+    .author-overflow { display: none; }
+    .author-overflow.is-expanded { display: inline; }
+    .author-toggle-btn {
+      background: none; border: none; padding: 0; margin: 0;
+      color: #0d9488; cursor: pointer; font: inherit;
+      text-decoration: none;
+    }
+    .author-toggle-btn:hover { text-decoration: underline; }
     .article-meta-card {
       background: linear-gradient(145deg, #f8fbfb 0%, #f1f6f8 100%);
       border: 1px solid #e2e8f0;
@@ -1022,6 +1030,9 @@
       .article-body pre {
         max-width: 100%;
         overflow-x: auto;
+      }
+      .article-body ol {
+        padding-left: 2.5rem;
       }
       .article-inline-media {
         margin: 1.05rem 0 1.2rem;
@@ -1956,7 +1967,7 @@
       }
 
       function fetchOpenAlexWorkByDoi(doi) {
-        var url = 'https://api.openalex.org/works?filter=doi:' + encodeURIComponent(doi) + '&per-page=1&select=id,cited_by_count,counts_by_year,concepts';
+        var url = 'https://api.openalex.org/works?mailto=info@balkanmedicaljournal.org&filter=doi:' + encodeURIComponent(doi) + '&per-page=1&select=id,cited_by_count,counts_by_year,concepts';
         return fetch(url).then(function (res) {
           if (!res.ok) throw new Error('OpenAlex response ' + res.status);
           return res.json();
@@ -1969,7 +1980,7 @@
 
       function fetchTopCitingWorks(openAlexWorkId) {
         if (!openAlexWorkId) return Promise.resolve([]);
-        var url = 'https://api.openalex.org/works?filter=cites:' + encodeURIComponent(openAlexWorkId) + '&per-page=25&sort=cited_by_count:desc&select=id,display_name,publication_year,primary_location,primary_topic,cited_by_count';
+        var url = 'https://api.openalex.org/works?mailto=info@balkanmedicaljournal.org&filter=cites:' + encodeURIComponent(openAlexWorkId) + '&per-page=25&sort=cited_by_count:desc&select=id,display_name,publication_year,primary_location,primary_topic,cited_by_count';
         return fetch(url).then(function (res) {
           if (!res.ok) throw new Error('OpenAlex citing-works response ' + res.status);
           return res.json();
@@ -2021,15 +2032,21 @@
         if (isCoverPage) return;
         var localCount = Number(article.citations || 0);
         var doi = normalizeDoi(article.doi);
-        setCitationMetric(localCount, doi ? 'Source: OpenAlex' : 'Source: local dataset');
+        setCitationMetric(localCount, doi ? 'Loading...' : 'Source: local dataset');
 
         if (!doi || typeof fetch !== 'function') return;
 
+        // OpenAlex first, Crossref fallback
         fetchOpenAlexCitationCount(doi).then(function (count) {
           article.citations = count;
           setCitationMetric(count, 'Source: OpenAlex');
         }).catch(function () {
-          setCitationMetric(localCount, 'Source: OpenAlex unavailable');
+          return fetchCrossrefCitationCount(doi).then(function (count) {
+            article.citations = count;
+            setCitationMetric(count, 'Source: Crossref');
+          });
+        }).catch(function () {
+          setCitationMetric(localCount, 'Source: unavailable');
         });
       }
 
@@ -2101,6 +2118,10 @@
 
         showLoading('Loading citation intelligence...');
 
+        // Preload Crossref as fallback (non-blocking)
+        var crossrefCount = fetchCrossrefCitationCount(doi).catch(function () { return null; });
+
+        // OpenAlex first — provides count + enrichment
         getOpenAlexWork(doi).then(function (work) {
           var total = Number(work && work.cited_by_count || 0);
           var noCitingFieldsMessage = 'No citing field data available.';
@@ -2176,7 +2197,15 @@
             return null;
           });
         }).catch(function () {
-          showEmpty('Citation intelligence is currently unavailable for this DOI.');
+          // OpenAlex failed — use Crossref for the citation count, hide enrichment
+          return crossrefCount.then(function (crCount) {
+            if (typeof crCount === 'number') {
+              setCitationMetric(crCount, 'Source: Crossref');
+            }
+            // Hide the Citation Intelligence section entirely
+            var shell = loadingEl && loadingEl.closest('.citation-intel-shell');
+            if (shell) shell.classList.add('hidden');
+          });
         });
       }
 
@@ -3367,10 +3396,7 @@
         '</div>';
       }
 
-      function buildInlineAuthorSummaryHtml(entries) {
-        if (!entries.length) return '<span class="text-gray-500">Balkan Medical Journal</span>';
-        return entries.map(function (entry, index) {
-          var hasNextAuthor = index < entries.length - 1;
+      function buildSingleAuthorPopoverHtml(entry, hasNextAuthor) {
           var popupAffiliationsHtml = entry.affiliations.length
             ? entry.affiliations.map(function (aff) {
                 return '<p class="author-popover-line">' + escapeHtml(aff) + '</p>';
@@ -3400,7 +3426,27 @@
               '<a href="' + escapeAttr(moreByUrl) + '" class="author-popover-more">More by ' + escapeHtml(entry.name) + '</a>' +
             '</div>' +
           '</div>';
+      }
+
+      function buildInlineAuthorSummaryHtml(entries) {
+        if (!entries.length) return '<span class="text-gray-500">Balkan Medical Journal</span>';
+        var VISIBLE_COUNT = 3;
+        var COLLAPSE_THRESHOLD = 5;
+        if (entries.length <= COLLAPSE_THRESHOLD) {
+          return entries.map(function (entry, index) {
+            return buildSingleAuthorPopoverHtml(entry, index < entries.length - 1);
+          }).join('');
+        }
+        var visibleHtml = entries.slice(0, VISIBLE_COUNT).map(function (entry) {
+          return buildSingleAuthorPopoverHtml(entry, true);
         }).join('');
+        var hiddenHtml = entries.slice(VISIBLE_COUNT).map(function (entry, i) {
+          return buildSingleAuthorPopoverHtml(entry, i < entries.length - VISIBLE_COUNT - 1);
+        }).join('');
+        var remaining = entries.length - VISIBLE_COUNT;
+        return visibleHtml +
+          '<button type="button" class="author-toggle-btn" onclick="var ov=this.nextElementSibling;ov.classList.add(\'is-expanded\');this.style.display=\'none\';" aria-expanded="false">\u2026 +' + remaining + ' more authors</button>' +
+          '<span class="author-overflow">' + hiddenHtml + '</span>';
       }
 
       function refreshAuthorPopoverContent() {

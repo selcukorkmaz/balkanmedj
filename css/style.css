@@ -305,13 +305,10 @@ footer.bg-teal-900.text-white[aria-label="Site footer"] .border-teal-800{
     gap:1.5rem;
   }
   #home-articles-mobile-accordion [data-article-id] > .flex.items-center{
-    font-size:.92rem;
-    line-height:1.35;
     margin-bottom:.45rem;
   }
   #home-articles-mobile-accordion [data-article-id] > .flex.items-center .italic{
-    font-size:.875rem;
-    line-height:1.25rem;
+    font-size:.70rem;
   }
   #home-articles-mobile-accordion [data-article-id] h3{
     font-size:1.18rem;
@@ -328,7 +325,7 @@ footer.bg-teal-900.text-white[aria-label="Site footer"] .border-teal-800{
     display:flex;
     flex-wrap:wrap;
     gap:.35rem .75rem;
-    font-size:.9rem;
+    font-size:.70rem;
     line-height:1.3;
     min-width:0;
   }

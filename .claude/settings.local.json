@@ -43,7 +43,17 @@
       "WebFetch(domain:web.archive.org)",
       "WebFetch(domain:www.thinslices.com)",
       "WebFetch(domain:marius.systems)",
-      "WebFetch(domain:www.kwglobal.com)"
+      "WebFetch(domain:www.kwglobal.com)",
+      "Bash(git checkout:*)",
+      "Bash(md5:*)",
+      "Bash(sort -k2)",
+      "Bash(uniq -f1 -D)",
+      "Bash(sort -k1)",
+      "Bash(echo === Art $id ===:*)",
+      "Bash(do:*)",
+      "Bash(brew install:*)",
+      "Bash(pdftoppm:*)",
+      "WebFetch(domain:api.openalex.org)"
     ]
   }
 }
