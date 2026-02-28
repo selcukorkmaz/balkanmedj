@@ -664,7 +664,8 @@
             (hideCitations ? '' : '<span title="' + citationLabel + '" data-metric="citations">' + citationLabel + ': ' + citations + '</span>') +
           '</div>' +
           (pdfUrl ? '<a href="' + pdfUrl + '" target="_blank" rel="noopener" aria-label="View PDF" title="View PDF" class="inline-flex items-center justify-center text-red-600 hover:text-red-700 transition-colors sm:ml-auto">' +
-            '<svg class="w-4 h-5" viewBox="0 0 24 28" aria-hidden="true">' +
+            '<svg class="w-4 h-5" viewBox="0 0 24 28" role="img" aria-label="View PDF" title="View PDF">' +
+              '<title>View PDF</title>' +
               '<path d="M3.2 1.5h11.1l6.2 6.1v16.1a2.8 2.8 0 0 1-2.8 2.8H3.2a2.8 2.8 0 0 1-2.8-2.8V4.3a2.8 2.8 0 0 1 2.8-2.8z" fill="#ffffff" stroke="#ef2a2a" stroke-width="2"></path>' +
               '<path d="M14.3 1.5v5a2.2 2.2 0 0 0 2.2 2.2h4" fill="none" stroke="#ef2a2a" stroke-width="2"></path>' +
               '<path d="M4.3 11.2h12.8M4.3 13.8h12.8M4.3 16.4h9.8" fill="none" stroke="#95a0aa" stroke-width="1.1" stroke-linecap="round"></path>' +
