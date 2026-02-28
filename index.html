@@ -17,7 +17,7 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=20260228c">
+  <link rel="stylesheet" href="css/style.css?v=20260228j">
 </head>
 <body class="bg-white text-gray-900 font-sans">
 
@@ -382,25 +382,31 @@
           <h2 class="text-3xl font-bold text-gray-900">Articles</h2>
         </div>
 
-        <div id="home-articles-tabs" class="flex items-center gap-2 overflow-x-auto pb-2 border-b border-gray-300" role="tablist" aria-label="Article collections">
-          <button type="button" role="tab" aria-selected="true" aria-controls="home-articles-panel" id="home-articles-tab-latest-published" data-articles-tab="latest-published" class="shrink-0 px-3 py-2 text-base font-medium transition-colors duration-150">
-            Latest Published
-          </button>
-          <button type="button" role="tab" aria-selected="false" aria-controls="home-articles-panel" id="home-articles-tab-articles-in-press" data-articles-tab="articles-in-press" class="shrink-0 px-3 py-2 text-base font-medium transition-colors duration-150">
-            Articles in Press
-          </button>
-          <button type="button" role="tab" aria-selected="false" aria-controls="home-articles-panel" id="home-articles-tab-top-cited" data-articles-tab="top-cited" class="shrink-0 px-3 py-2 text-base font-medium transition-colors duration-150">
-            Top Cited
-          </button>
-          <button type="button" role="tab" aria-selected="false" aria-controls="home-articles-panel" id="home-articles-tab-most-downloaded" data-articles-tab="most-downloaded" class="shrink-0 px-3 py-2 text-base font-medium transition-colors duration-150">
-            Most Downloaded
-          </button>
+        <div id="home-articles-desktop">
+          <div id="home-articles-tabs" class="flex items-center gap-2 overflow-x-auto pb-2 border-b border-gray-300" role="tablist" aria-label="Article collections">
+            <button type="button" role="tab" aria-selected="true" aria-controls="home-articles-panel" id="home-articles-tab-latest-published" data-articles-tab="latest-published" class="shrink-0 px-3 py-2 text-base font-medium transition-colors duration-150">
+              Latest Published
+            </button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="home-articles-panel" id="home-articles-tab-articles-in-press" data-articles-tab="articles-in-press" class="shrink-0 px-3 py-2 text-base font-medium transition-colors duration-150">
+              Articles in Press
+            </button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="home-articles-panel" id="home-articles-tab-top-cited" data-articles-tab="top-cited" class="shrink-0 px-3 py-2 text-base font-medium transition-colors duration-150">
+              Top Cited
+            </button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="home-articles-panel" id="home-articles-tab-most-downloaded" data-articles-tab="most-downloaded" class="shrink-0 px-3 py-2 text-base font-medium transition-colors duration-150">
+              Most Downloaded
+            </button>
+          </div>
+
+          <div id="home-articles-panel" role="tabpanel" aria-labelledby="home-articles-tab-latest-published" class="pt-7" style="padding-top:1.875rem;">
+            <div id="home-articles-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Populated by JS -->
+            </div>
+          </div>
         </div>
 
-        <div id="home-articles-panel" role="tabpanel" aria-labelledby="home-articles-tab-latest-published" class="pt-7" style="padding-top:1.875rem;">
-          <div id="home-articles-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Populated by JS -->
-          </div>
+        <div id="home-articles-mobile-accordion" aria-label="Article collections accordion">
+          <!-- Populated by JS -->
         </div>
       </div>
     </section>
@@ -599,7 +605,7 @@
   <script src="js/data/homepage-articles.js"></script>
   <script src="js/data/news.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/homepage.js?v=20260228r"></script>
+  <script src="js/homepage.js?v=20260228t"></script>
   <script src="js/search.js?v=20260228a"></script>
   <script src="js/subscription.js?v=20260222"></script>
 <script type="application/ld+json">

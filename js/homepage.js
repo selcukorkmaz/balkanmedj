@@ -682,18 +682,97 @@
     var tabsRoot = document.getElementById('home-articles-tabs');
     var cardsRoot = document.getElementById('home-articles-grid');
     var panelRoot = document.getElementById('home-articles-panel');
+    var mobileAccordionRoot = document.getElementById('home-articles-mobile-accordion');
     if (!tabsRoot || !cardsRoot || !panelRoot) return Promise.resolve();
 
     var tabs = Array.prototype.slice.call(tabsRoot.querySelectorAll('[data-articles-tab]'));
     if (!tabs.length) return Promise.resolve();
+    var mobileCollectionMeta = {
+      'latest-published': {
+        label: 'Latest published',
+        description: 'Latest published articles from the current issue.'
+      },
+      'articles-in-press': {
+        label: 'Articles in press',
+        description: 'Articles accepted and published online ahead of issue assignment.'
+      },
+      'top-cited': {
+        label: 'Top cited',
+        description: 'The most cited articles based on OpenAlex citation counts.'
+      },
+      'most-downloaded': {
+        label: 'Most downloaded',
+        description: 'The most downloaded articles in the last 90 days.'
+      }
+    };
     var activeKey = 'latest-published';
     var citationMap = {};
     var topCitedRankReady = false;
     var topCitedRankLoading = false;
+    var mobileQuery = window.matchMedia ? window.matchMedia('(max-width: 47.99rem)') : null;
 
-    function applyTab(key) {
+    function isMobileAccordionMode() {
+      return !!(mobileAccordionRoot && mobileQuery && mobileQuery.matches);
+    }
+
+    function renderDesktopCollections(collections) {
+      var items = collections[activeKey] || [];
+      cardsRoot.innerHTML = renderArticleCollectionCards(items, activeKey, citationMap);
+      hydrateLiveArticleMetrics(cardsRoot, items);
+      hydrateLiveCitationMetrics(cardsRoot, items, citationMap);
+    }
+
+    function renderMobileAccordion(collections) {
+      if (!mobileAccordionRoot) return;
+
+      var orderedKeys = tabs.map(function (tab) {
+        return tab.getAttribute('data-articles-tab');
+      }).filter(Boolean);
+
+      mobileAccordionRoot.innerHTML = orderedKeys.map(function (key) {
+        var meta = mobileCollectionMeta[key] || {};
+        var label = escapeHtml(meta.label || key);
+        var description = escapeHtml(meta.description || '');
+        var isOpen = key === activeKey;
+        var triggerId = 'home-articles-mobile-trigger-' + key;
+        var panelId = 'home-articles-mobile-panel-' + key;
+        var items = collections[key] || [];
+
+        return '<section class="home-articles-accordion-item" data-mobile-articles-key="' + key + '">' +
+          '<h3>' +
+            '<button type="button" id="' + triggerId + '" class="home-articles-accordion-trigger" data-mobile-articles-trigger="' + key + '" aria-controls="' + panelId + '" aria-expanded="' + (isOpen ? 'true' : 'false') + '">' + label + '</button>' +
+          '</h3>' +
+          '<div id="' + panelId + '" class="home-articles-accordion-panel' + (isOpen ? ' open' : '') + '" role="region" aria-labelledby="' + triggerId + '"' + (isOpen ? '' : ' hidden') + '>' +
+            (description ? '<p class="home-articles-accordion-intro">' + description + '</p>' : '') +
+            '<div class="home-articles-cards" data-mobile-cards-for="' + key + '">' + renderArticleCollectionCards(items, key, citationMap) + '</div>' +
+          '</div>' +
+        '</section>';
+      }).join('');
+
+      Array.prototype.slice.call(mobileAccordionRoot.querySelectorAll('[data-mobile-articles-trigger]')).forEach(function (trigger) {
+        trigger.addEventListener('click', function () {
+          applyTab(trigger.getAttribute('data-mobile-articles-trigger'), true);
+        });
+      });
+
+      var openPanel = mobileAccordionRoot.querySelector('.home-articles-accordion-panel.open');
+      if (openPanel) {
+        var openItems = collections[activeKey] || [];
+        var openCardsRoot = openPanel.querySelector('.home-articles-cards');
+        if (openCardsRoot) {
+          hydrateLiveArticleMetrics(openCardsRoot, openItems);
+          hydrateLiveCitationMetrics(openCardsRoot, openItems, citationMap);
+        }
+      }
+    }
+
+    function applyTab(key, toggleMobile) {
       var tabExists = tabs.some(function (t) { return t.getAttribute('data-articles-tab') === key; });
-      activeKey = tabExists ? key : 'latest-published';
+      if (toggleMobile && isMobileAccordionMode()) {
+        activeKey = (activeKey === key) ? '' : key;
+      } else {
+        activeKey = tabExists ? key : 'latest-published';
+      }
 
       tabs.forEach(function (tab) {
         var isActive = tab.getAttribute('data-articles-tab') === activeKey;
@@ -706,10 +785,11 @@
       }
 
       var collections = getArticleCollections(data, citationMap);
-      var items = collections[activeKey] || [];
-      cardsRoot.innerHTML = renderArticleCollectionCards(items, activeKey, citationMap);
-      hydrateLiveArticleMetrics(cardsRoot, items);
-      hydrateLiveCitationMetrics(cardsRoot, items, citationMap);
+      if (isMobileAccordionMode()) {
+        renderMobileAccordion(collections);
+      } else {
+        renderDesktopCollections(collections);
+      }
 
       if (activeKey === 'top-cited' && !topCitedRankReady && !topCitedRankLoading) {
         topCitedRankLoading = true;
@@ -735,6 +815,17 @@
         applyTab(tab.getAttribute('data-articles-tab'));
       });
     });
+
+    if (mobileQuery) {
+      var onViewportChange = function () {
+        applyTab(activeKey);
+      };
+      if (typeof mobileQuery.addEventListener === 'function') {
+        mobileQuery.addEventListener('change', onViewportChange);
+      } else if (typeof mobileQuery.addListener === 'function') {
+        mobileQuery.addListener(onViewportChange);
+      }
+    }
 
     return Promise.all([
       window.BMJLazyData && typeof window.BMJLazyData.loadArticles === 'function'
