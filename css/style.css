@@ -229,6 +229,23 @@ footer.bg-teal-900.text-white[aria-label="Site footer"] .border-teal-800{
   border-bottom-color:var(--color-teal-700);
 }
 
+/* Homepage article collection tabs */
+#home-articles-tabs [role=tab]{
+  color:var(--color-gray-700);
+  border-bottom:3px solid transparent;
+}
+#home-articles-tabs [role=tab]:hover{
+  color:var(--color-gray-900);
+  border-bottom-color:var(--color-teal-700);
+}
+#home-articles-tabs [role=tab][aria-selected=true]{
+  color:var(--color-gray-900);
+  border-bottom-color:var(--color-gray-900);
+}
+#home-articles-tabs [role=tab][aria-selected=true]:hover{
+  border-bottom-color:var(--color-teal-700);
+}
+
 /* Image Corner thumbnails: show only visual figure area and crop legend/caption zones */
 .image-corner-cover-media{
   object-fit:cover;

@@ -17,7 +17,7 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=20260222b">
+  <link rel="stylesheet" href="css/style.css?v=20260228b">
 </head>
 <body class="bg-white text-gray-900 font-sans">
 
@@ -258,7 +258,7 @@
                     <p class="hero-meta-chip">Call for Papers</p>
                     <h2 class="hero-slide-title">Submit Your Research</h2>
                     <p class="hero-slide-text">
-                      We welcome methodologically robust original research submissions across all fields of medicine. Review articles are commissioned by editorial invitation. Manuscripts receive rigorous peer review and are published in diamond open access.
+                      We welcome methodologically robust original research submissions across all fields of medicine. Manuscripts receive rigorous peer review and are published in diamond open access.
                     </p>
                     <div class="hero-actions">
                       <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="hero-btn hero-btn-primary">Start Submission</a>
@@ -375,33 +375,38 @@
       </div>
     </section>
 
-    <!-- ── Featured Articles ────────────────────────────────── -->
-    <section class="pt-8 pb-12 md:pt-8 md:pb-16 bg-white">
+    <!-- ── Articles Discovery ───────────────────────────────── -->
+    <section class="py-10 md:py-12 bg-gray-50 border-b border-gray-200" aria-label="Article collections">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between mb-10">
-          <div>
-            <h2 class="text-3xl font-bold text-gray-900">Featured Articles</h2>
-            <p class="mt-2 text-gray-500 font-serif">Editor's picks from the current issue</p>
+        <div class="mb-6">
+          <h2 class="text-3xl font-bold text-gray-900">Articles</h2>
+        </div>
+
+        <div id="home-articles-tabs" class="flex items-center gap-2 overflow-x-auto pb-2 border-b border-gray-300" role="tablist" aria-label="Article collections">
+          <button type="button" role="tab" aria-selected="true" aria-controls="home-articles-panel" id="home-articles-tab-latest-published" data-articles-tab="latest-published" class="shrink-0 px-3 py-2 text-base font-medium transition-colors duration-150">
+            Latest Published
+          </button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="home-articles-panel" id="home-articles-tab-articles-in-press" data-articles-tab="articles-in-press" class="shrink-0 px-3 py-2 text-base font-medium transition-colors duration-150">
+            Articles in Press
+          </button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="home-articles-panel" id="home-articles-tab-top-cited" data-articles-tab="top-cited" class="shrink-0 px-3 py-2 text-base font-medium transition-colors duration-150">
+            Top Cited
+          </button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="home-articles-panel" id="home-articles-tab-most-downloaded" data-articles-tab="most-downloaded" class="shrink-0 px-3 py-2 text-base font-medium transition-colors duration-150">
+            Most Downloaded
+          </button>
+        </div>
+
+        <div id="home-articles-panel" role="tabpanel" aria-labelledby="home-articles-tab-latest-published" class="pt-7" style="padding-top:1.875rem;">
+          <div id="home-articles-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Populated by JS -->
           </div>
-          <a href="current-issue.html" class="hidden sm:inline-flex items-center text-teal-700 font-semibold hover:text-teal-800 transition-colors">
-            View all articles
-            <svg class="ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
-        </div>
-        <div id="featured-articles" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Populated by JS -->
-        </div>
-        <div class="mt-8 text-center sm:hidden">
-          <a href="current-issue.html" class="inline-flex items-center text-teal-700 font-semibold hover:text-teal-800">
-            View all articles
-            <svg class="ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
         </div>
       </div>
     </section>
 
     <!-- ── Image Corner Spotlight ───────────────────────────── -->
-    <section id="image-corner-section" class="py-16 bg-gray-50">
+    <section id="image-corner-section" class="py-16 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between mb-10">
           <div>
@@ -416,7 +421,7 @@
     </section>
 
     <!-- ── Latest News ──────────────────────────────────────── -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between mb-10">
           <div>
@@ -594,8 +599,8 @@
   <script src="js/data/homepage-articles.js"></script>
   <script src="js/data/news.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/homepage.js?v=20260222c"></script>
-  <script src="js/search.js"></script>
+  <script src="js/homepage.js?v=20260228q"></script>
+  <script src="js/search.js?v=20260228a"></script>
   <script src="js/subscription.js?v=20260222"></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","logo":"https://balkanmedicaljournal.org/images/logo.png","publisher":{"@type":"Organization","name":"Trakya University"},"address":{"@type":"PostalAddress","addressLocality":"Edirne","addressCountry":"TR","streetAddress":"Trakya University Faculty of Medicine, Balkan Yerleşkesi, 22030"}},{"@type":"WebSite","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","potentialAction":{"@type":"SearchAction","target":"https://balkanmedicaljournal.org/search-results.html?q={search_term_string}","query-input":"required name=search_term_string"}}]}

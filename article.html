@@ -1398,7 +1398,7 @@
   <script src="js/data-loader.js"></script>
   <script src="js/data/news.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/search.js"></script>
+  <script src="js/search.js?v=20260228a"></script>
   <script src="js/citation.js"></script>
   <script>
     (function () {
@@ -3700,7 +3700,7 @@
       var relatedHtml = related.map(function (r) {
         var relatedAuthor = (r.authors && r.authors.length) ? sanitizeAuthorName(r.authors[0].name) : 'Balkan Medical Journal';
         if (!relatedAuthor || isPlaceholderAuthorName(relatedAuthor)) relatedAuthor = 'Balkan Medical Journal';
-        var relatedAuthorSuffix = (r.authors && r.authors.length > 1) ? ' et al.' : '';
+        var relatedAuthorSuffix = (r.authors && r.authors.length > 2) ? ' et al.' : '';
         return '<a href="' + buildArticleUrl(r.id) + '" class="related-entry">' +
           '<div class="related-entry-title">' + r.title + '</div>' +
           '<div class="related-entry-meta">' + relatedAuthor + relatedAuthorSuffix + '</div>' +

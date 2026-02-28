@@ -115,7 +115,7 @@ window.HOMEPAGE_DATA = {
           "name": "Gökay Bozkurt"
         },
         {
-          "name": "Hilmi Bolat[[17]] </"
+          "name": "Hilmi Bolat"
         }
       ],
       "volume": 43,

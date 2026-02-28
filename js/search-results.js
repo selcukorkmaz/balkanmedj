@@ -489,6 +489,18 @@
     return 'bg-gray-100 text-gray-700';
   }
 
+  function formatAuthorsForDisplay(authors) {
+    if (searchApi && typeof searchApi.formatAuthorsForDisplay === 'function') {
+      return searchApi.formatAuthorsForDisplay(authors);
+    }
+    var names = (authors || []).map(function (author) {
+      return (author && author.name ? String(author.name) : '').trim();
+    }).filter(Boolean);
+    if (!names.length) return '';
+    if (names.length <= 2) return names.join(', ');
+    return names[0] + ' et al.';
+  }
+
   function renderSummary(total, articleCount, newsCount, pageCount) {
     summaryContainer.innerHTML =
       '<div class="bg-white rounded-xl border border-gray-200 p-4">' +
@@ -510,7 +522,7 @@
   }
 
   function renderArticleResult(article, query) {
-    var authors = (article.authors || []).map(function (author) { return author.name; }).join(', ');
+    var authors = formatAuthorsForDisplay(article.authors);
     var summary = article.abstract || article.previewText || '';
     summary = truncateText(summary, 280);
 

@@ -61,6 +61,15 @@
     return 'bg-teal-100 text-teal-700';
   }
 
+  function formatAuthorsForDisplay(authors) {
+    var names = (authors || []).map(function (author) {
+      return (author && author.name ? String(author.name) : '').trim();
+    }).filter(Boolean);
+    if (!names.length) return '';
+    if (names.length <= 2) return names.join(', ');
+    return names[0] + ' et al.';
+  }
+
   function ensureArticlesLoaded() {
     if (Array.isArray(window.ARTICLES) && window.ARTICLES.length > 0) {
       return Promise.resolve();
@@ -191,7 +200,7 @@
   // ─── Result cards (shared with full results page) ─────────────
 
   function renderArticleCard(a, query) {
-    var authors = (a.authors || []).map(function (au) { return au.name; }).join(', ');
+    var authors = formatAuthorsForDisplay(a.authors);
     var year = a.published ? a.published.substring(0, 4) : '';
 
     var html = '<a href="article.html?id=' + a.id + '" class="block p-3 rounded-lg hover:bg-gray-50 border border-gray-100 transition-colors group">';
@@ -244,6 +253,7 @@
     highlightMatch: highlightMatch,
     stripHtml: stripHtml,
     getViewAllUrl: getViewAllUrl,
+    formatAuthorsForDisplay: formatAuthorsForDisplay,
     searchAll: searchAll,
     renderArticleCard: renderArticleCard,
     renderNewsCard: renderNewsCard,
