@@ -18,8 +18,397 @@
   <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .editor-avatar {
+      width: 80px;
+      height: 80px;
+      flex-shrink: 0;
+      border-radius: 9999px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      background: #0f766e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .editor-avatar-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 9999px;
+    }
+
+    .editor-avatar-fallback {
+      display: none;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      background: #0f766e;
+    }
+
+    .editor-profile-link {
+      color: inherit;
+      background: none;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      font: inherit;
+      text-align: left;
+      cursor: pointer;
+      text-decoration: underline;
+      text-decoration-color: rgba(15, 118, 110, 0.35);
+      text-underline-offset: 2px;
+    }
+
+    .editor-profile-link:hover {
+      color: #0f6a81;
+      text-decoration-color: rgba(15, 106, 129, 0.8);
+    }
+
+    .profile-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.72);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 90;
+      padding: 1rem;
+    }
+
+    .profile-modal.open {
+      display: flex;
+    }
+
+    .profile-modal-dialog {
+      position: relative;
+      max-width: min(96vw, 1100px);
+      max-height: 92vh;
+      background: #ffffff;
+      border-radius: 0.75rem;
+      padding: 0.75rem;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+    }
+
+    .profile-modal-close {
+      position: absolute;
+      top: -0.65rem;
+      right: -0.65rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 9999px;
+      border: 1px solid #d1d5db;
+      background: #ffffff;
+      color: #374151;
+      font-size: 1.2rem;
+      line-height: 1;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+    }
+
+    .profile-modal-image {
+      display: block;
+      max-width: min(92vw, 1080px);
+      max-height: calc(92vh - 1.5rem);
+      width: auto;
+      height: auto;
+      border-radius: 0.5rem;
+      object-fit: contain;
+    }
+
+    .editorial-board-page .editorial-board-shell {
+      position: relative;
+      background:
+        radial-gradient(circle at 8% 8%, rgba(15, 106, 129, 0.06), rgba(15, 106, 129, 0) 44%),
+        radial-gradient(circle at 92% 0%, rgba(10, 90, 114, 0.08), rgba(10, 90, 114, 0) 38%),
+        linear-gradient(180deg, #f8fbfc 0%, #ffffff 14rem);
+    }
+
+    .editorial-board-page .editorial-tab-rail {
+      margin-bottom: 1.85rem;
+      display: flex;
+      gap: 0.1rem;
+      border: 0;
+      border-bottom: 1px solid #d7e3e8;
+      border-radius: 0;
+      padding: 0 0 0.55rem;
+      background: transparent;
+      box-shadow: none;
+      overflow-x: auto;
+      overflow-y: hidden;
+      flex-wrap: nowrap;
+      align-items: flex-end;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .editorial-board-page .editorial-tab-rail::-webkit-scrollbar {
+      display: none;
+    }
+
+    .editorial-board-page .editorial-tab-rail .tab-btn {
+      border: 0;
+      border-radius: 0.45rem;
+      color: #5c6f78;
+      background: transparent;
+      font-size: 0.9rem;
+      line-height: 1.18;
+      padding: 0.55rem 0.72rem;
+      transition: color 0.18s ease, background-color 0.18s ease;
+      white-space: nowrap;
+      flex: 0 0 auto;
+      position: relative;
+      font-weight: 500;
+    }
+
+    .editorial-board-page .editorial-tab-rail .tab-btn:hover {
+      color: #0f6a81;
+      background: #f3f8fb;
+    }
+
+    .editorial-board-page .editorial-tab-rail .tab-btn.tab-active {
+      color: #0f4f67;
+      font-weight: 600;
+      background: #f6fbfe;
+    }
+
+    .editorial-board-page .editorial-tab-rail .tab-btn.tab-active::after {
+      content: "";
+      position: absolute;
+      left: 0.9rem;
+      right: 0.9rem;
+      bottom: -0.56rem;
+      height: 2.5px;
+      border-radius: 999px;
+      background: #0f6a81;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+      .editorial-board-page .editorial-tab-rail .tab-btn {
+        font-size: 0.82rem;
+        padding: 0.48rem 0.54rem;
+      }
+    }
+
+    .editorial-board-page [role="tabpanel"] {
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 1rem;
+      line-height: 1.55;
+    }
+
+    .editorial-board-page .board-grid {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .editorial-board-page .board-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.15rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .editorial-board-page .board-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .editorial-board-page .board-card-wrap {
+      min-width: 0;
+    }
+
+    .editorial-board-page .board-card {
+      border-radius: 1rem;
+      border: 1px solid #d6e5ea;
+      background: linear-gradient(180deg, #ffffff 0%, #fcfdfe 100%);
+      box-shadow: 0 10px 24px rgba(7, 42, 55, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      height: 100%;
+    }
+
+    .editorial-board-page .board-card:hover {
+      transform: translateY(-2px);
+      border-color: #b9d6df;
+      box-shadow: 0 18px 36px rgba(7, 42, 55, 0.12);
+    }
+
+    .editorial-board-page .board-card-featured {
+      position: relative;
+      overflow: hidden;
+      border-color: #bed9e1;
+      background: linear-gradient(180deg, #f7fcfe 0%, #ffffff 100%);
+      box-shadow: 0 20px 38px rgba(8, 52, 67, 0.15);
+    }
+
+    .editorial-board-page .board-card-featured::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #1f7f99, #6ec2d1, #1f7f99);
+    }
+
+    .editorial-board-page .board-member-name {
+      font-family: "Crimson Pro", Georgia, "Times New Roman", serif;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+      color: #1f2937;
+    }
+
+    .editorial-board-page .board-member-title {
+      color: #0f6a81;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    .editorial-board-page .board-member-affiliation,
+    .editorial-board-page .board-member-email {
+      color: #5b6b73;
+      line-height: 1.55;
+    }
+
+    .editorial-board-page .board-subsection-title {
+      font-family: "Crimson Pro", Georgia, "Times New Roman", serif;
+      font-size: 1.2rem;
+      letter-spacing: 0.01em;
+      color: #1f2937;
+    }
+
+    .editorial-board-page .reviewer-header {
+      border: 1px solid #d2e2e8;
+      border-radius: 1rem;
+      padding: 1.15rem 1.25rem;
+      background: linear-gradient(180deg, #fbfdfe 0%, #f5fafc 100%);
+      box-shadow: 0 10px 24px rgba(7, 42, 55, 0.06);
+      margin-bottom: 1rem;
+    }
+
+    .editorial-board-page .reviewer-header h2 {
+      font-family: "Crimson Pro", Georgia, "Times New Roman", serif;
+      color: #1f2937;
+      font-size: 1.42rem;
+      line-height: 1.2;
+      margin-bottom: 0.35rem;
+    }
+
+    .editorial-board-page .reviewer-header p {
+      color: #5b6b73;
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+
+    .editorial-board-page .reviewer-list {
+      border: 1px solid #d6e5ea;
+      border-radius: 1rem;
+      background: #ffffff;
+      box-shadow: 0 10px 24px rgba(7, 42, 55, 0.06);
+      padding: 1rem 1.1rem;
+      columns: 1;
+      column-gap: 1.2rem;
+    }
+
+    .editorial-board-page .reviewer-list li {
+      break-inside: avoid;
+      color: #33434b;
+      font-size: 0.93rem;
+      line-height: 1.5;
+      margin-bottom: 0.4rem;
+      padding-left: 0.95rem;
+      position: relative;
+    }
+
+    .editorial-board-page .reviewer-list li::before {
+      content: "";
+      width: 0.35rem;
+      height: 0.35rem;
+      border-radius: 9999px;
+      background: #5ea8bb;
+      position: absolute;
+      left: 0;
+      top: 0.56rem;
+    }
+
+    .editorial-board-page .former-grid {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .editorial-board-page .former-card {
+      text-align: center;
+      border: 1px solid #d6e5ea;
+      border-radius: 1rem;
+      background: linear-gradient(180deg, #ffffff 0%, #fcfdfe 100%);
+      box-shadow: 0 10px 24px rgba(7, 42, 55, 0.06);
+      padding: 1rem;
+    }
+
+    .editorial-board-page .former-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 9999px;
+      object-fit: cover;
+      object-position: center;
+      border: 2px solid #d4e5eb;
+      margin: 0 auto 0.7rem;
+    }
+
+    .editorial-board-page .former-card h3 {
+      font-family: "Crimson Pro", Georgia, "Times New Roman", serif;
+      color: #1f2937;
+      font-size: 1.2rem;
+      line-height: 1.2;
+      margin-bottom: 0.25rem;
+    }
+
+    .editorial-board-page .former-card p {
+      color: #5b6b73;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 767.98px) {
+      .editorial-board-page .editorial-tab-rail {
+        margin-bottom: 1.1rem;
+        padding: 0 0 0.35rem;
+      }
+
+      .editorial-board-page .editorial-tab-rail .tab-btn {
+        padding: 0.48rem 0.72rem;
+        font-size: 0.86rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .editorial-board-page .former-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .editorial-board-page .reviewer-list {
+        columns: 2;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .editorial-board-page .reviewer-list {
+        columns: 3;
+      }
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-900 font-sans">
+<body class="bg-white text-gray-900 font-sans editorial-board-page">
 
   <!-- Skip to Content -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -194,34 +583,43 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 relative">
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">Editorial Board</h1>
         <p class="mt-4 text-xl text-teal-100 max-w-2xl leading-relaxed font-serif">
-          Our editorial team comprises leading researchers and clinicians from across the Balkans and beyond, dedicated to advancing medical science through rigorous peer review.
+          Our editorial team comprises leading researchers and clinicians from around the world, dedicated to advancing medical science through rigorous peer review.
         </p>
       </div>
     </section>
 
     <!-- ── Tabbed Editorial Board ─────────────────────────────── -->
-    <section class="py-12 md:py-16 bg-white">
+    <section class="py-12 md:py-16 bg-white editorial-board-shell">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Tab Buttons -->
-        <div role="tablist" aria-label="Editorial Board sections" class="flex flex-wrap gap-1 border-b border-gray-200 mb-10">
-          <button role="tab" id="tab-eic" aria-selected="true" aria-controls="panel-eic" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap tab-active" tabindex="0">
+        <div role="tablist" aria-label="Editorial Board sections" class="editorial-tab-rail mb-10">
+          <button role="tab" id="tab-eic" aria-selected="true" aria-controls="panel-eic" class="tab-btn whitespace-nowrap tab-active" tabindex="0">
             Editor-in-Chief
           </button>
-          <button role="tab" id="tab-honorary" aria-selected="false" aria-controls="panel-honorary" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap" tabindex="-1">
+          <button role="tab" id="tab-honorary" aria-selected="false" aria-controls="panel-honorary" class="tab-btn whitespace-nowrap" tabindex="-1">
             Honorary Editors
           </button>
-          <button role="tab" id="tab-deputy" aria-selected="false" aria-controls="panel-deputy" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap" tabindex="-1">
+          <button role="tab" id="tab-deputy" aria-selected="false" aria-controls="panel-deputy" class="tab-btn whitespace-nowrap" tabindex="-1">
             Deputy Editors
           </button>
-          <button role="tab" id="tab-assoc" aria-selected="false" aria-controls="panel-assoc" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap" tabindex="-1">
+          <button role="tab" id="tab-assoc" aria-selected="false" aria-controls="panel-assoc" class="tab-btn whitespace-nowrap" tabindex="-1">
             Associate Editors
           </button>
-          <button role="tab" id="tab-assistant" aria-selected="false" aria-controls="panel-assistant" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap" tabindex="-1">
-            Assistant Associate Editors
+          <button role="tab" id="tab-assistant" aria-selected="false" aria-controls="panel-assistant" class="tab-btn whitespace-nowrap" tabindex="-1" aria-label="Assistant Associate Editors">
+            <span class="xl:hidden">Assistant Assoc.</span><span class="hidden xl:inline">Assistant Associate Editors</span>
           </button>
-          <button role="tab" id="tab-other" aria-selected="false" aria-controls="panel-other" class="tab-btn px-4 py-3 text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors whitespace-nowrap" tabindex="-1">
+          <button role="tab" id="tab-other" aria-selected="false" aria-controls="panel-other" class="tab-btn whitespace-nowrap" tabindex="-1">
             Other Editors
+          </button>
+          <button role="tab" id="tab-advisory" aria-selected="false" aria-controls="panel-advisory" class="tab-btn whitespace-nowrap" tabindex="-1" aria-label="Editorial Advisory Board">
+            <span class="xl:hidden">Advisory Board</span><span class="hidden xl:inline">Editorial Advisory Board</span>
+          </button>
+          <button role="tab" id="tab-reviewers" aria-selected="false" aria-controls="panel-reviewers" class="tab-btn whitespace-nowrap" tabindex="-1">
+            Board of Reviewers
+          </button>
+          <button role="tab" id="tab-former" aria-selected="false" aria-controls="panel-former" class="tab-btn whitespace-nowrap" tabindex="-1" aria-label="Former Editor in Chief">
+            <span class="xl:hidden">Former EiC</span><span class="hidden xl:inline">Former Editor in Chief</span>
           </button>
         </div>
 
@@ -247,6 +645,18 @@
         </div>
 
         <div id="panel-other" role="tabpanel" aria-labelledby="tab-other" class="hidden" tabindex="0">
+          <!-- Populated by JS -->
+        </div>
+
+        <div id="panel-advisory" role="tabpanel" aria-labelledby="tab-advisory" class="hidden" tabindex="0">
+          <!-- Populated by JS -->
+        </div>
+
+        <div id="panel-reviewers" role="tabpanel" aria-labelledby="tab-reviewers" class="hidden" tabindex="0">
+          <!-- Populated by JS -->
+        </div>
+
+        <div id="panel-former" role="tabpanel" aria-labelledby="tab-former" class="hidden" tabindex="0">
           <!-- Populated by JS -->
         </div>
 
@@ -333,8 +743,18 @@
       </div>
     </div>
   </footer>
+
+  <!-- Editor Profile Modal -->
+  <div id="profile-modal" class="profile-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Editor profile image">
+    <div class="profile-modal-dialog">
+      <button id="profile-modal-close" type="button" class="profile-modal-close" aria-label="Close profile image">&times;</button>
+      <img id="profile-modal-image" class="profile-modal-image" src="" alt="">
+    </div>
+  </div>
+
   <!-- Scripts -->
   <script src="js/data/editorial-board.js"></script>
+  <script src="js/data/editorial-extended.js"></script>
   <script src="js/data/articles.js"></script>
   <script src="js/data/news.js"></script>
   <script src="js/main.js"></script>
@@ -342,33 +762,105 @@
   <script>
     (function() {
       var data = window.EDITORIAL_BOARD;
+      var extended = window.EDITORIAL_EXTENDED || {};
       if (!data) return;
+
+      function getProfileUrl(member) {
+        if (!member || !member.name) return '';
+        if (member.profileUrl) return member.profileUrl;
+        return (data.profileLinks && data.profileLinks[member.name]) || '';
+      }
+
+      function renderMemberName(member, className) {
+        var profileUrl = getProfileUrl(member);
+        if (profileUrl) {
+          return '<button type="button" class="editor-profile-link ' + className + '" data-profile-url="' + profileUrl + '" data-profile-name="' + member.name + '">' + member.name + '</button>';
+        }
+        return '<span class="' + className + '">' + member.name + '</span>';
+      }
+
+      function buildAdvisoryCard(member) {
+        var html = '<div class="board-card-wrap">' +
+          '<div class="board-card bg-white border-gray-200 rounded-xl border p-5">' +
+            '<h3 class="board-member-name text-lg font-bold text-gray-900">' + member.name + '</h3>' +
+            '<p class="board-member-affiliation text-sm mt-2">' + member.affiliation + '</p>' +
+          '</div>' +
+        '</div>';
+        return html;
+      }
+
+      function renderAdvisoryBoard(container, members) {
+        if (!container || !members || members.length === 0) return;
+        var html = '<div class="board-grid">';
+        members.forEach(function(member) {
+          html += buildAdvisoryCard(member);
+        });
+        html += '</div>';
+        container.innerHTML = html;
+      }
+
+      function renderReviewers(container, reviewersData) {
+        if (!container || !reviewersData || !reviewersData.names || reviewersData.names.length === 0) return;
+        var html = '<div class="reviewer-header">' +
+          '<h2>' + (reviewersData.heading || 'Reviewer List') + '</h2>' +
+          '<p>' + (reviewersData.period || '') + ' &middot; ' + reviewersData.names.length + ' reviewers</p>' +
+          '</div>';
+        html += '<ol class="reviewer-list">';
+        reviewersData.names.forEach(function(name) {
+          html += '<li>' + name + '</li>';
+        });
+        html += '</ol>';
+        container.innerHTML = html;
+      }
+
+      function renderFormerEditors(container, formerEditors) {
+        if (!container || !formerEditors || formerEditors.length === 0) return;
+        var html = '<div class="former-grid">';
+        formerEditors.forEach(function(editor) {
+          html += '<article class="former-card">' +
+            (editor.image ? '<img src="' + editor.image + '" alt="' + editor.name + '" loading="lazy" decoding="async">' : '') +
+            '<h3>' + editor.name + '</h3>' +
+            '<p>' + (editor.period || '') + '</p>' +
+          '</article>';
+        });
+        html += '</div>';
+        container.innerHTML = html;
+      }
 
       // ── Helper: build a single member card ──────────────────
       function buildCard(member, featured) {
-        var bgClass = featured ? 'bg-gray-50 border-gray-200' : 'bg-white border-gray-200';
-        var sizeClass = featured ? 'md:col-span-2 lg:col-span-3' : '';
+        var bgClass = featured ? 'bg-gray-50 border-gray-200 board-card board-card-featured' : 'bg-white border-gray-200 board-card';
+        var sizeClass = featured ? 'md:col-span-2 lg:col-span-3 board-card-wrap' : 'board-card-wrap';
+        var initials = member.name.split(' ').map(function(n) { return n[0]; }).join('');
 
         var html = '<div class="' + sizeClass + '">' +
           '<div class="' + bgClass + ' rounded-xl border p-5">';
 
         if (featured) {
+          var avatarHtml = '';
+          if (member.photo) {
+            avatarHtml += '<img src="' + member.photo + '" alt="' + member.name + '" class="editor-avatar-image" loading="lazy" decoding="async" onerror="this.remove(); var fallback=this.parentElement.querySelector(\'.editor-avatar-fallback\'); if (fallback) fallback.style.display=\'flex\';">';
+            avatarHtml += '<span class="editor-avatar-fallback">' + initials + '</span>';
+          } else {
+            avatarHtml = '<span class="editor-avatar-fallback" style="display:flex;">' + initials + '</span>';
+          }
+
           html += '<div class="flex flex-col sm:flex-row sm:items-center gap-4">' +
-            '<div class="flex-shrink-0 w-16 h-16 bg-teal-700 rounded-full flex items-center justify-center">' +
-              '<span class="text-2xl font-bold text-white">' + member.name.split(' ').map(function(n) { return n[0]; }).join('') + '</span>' +
+            '<div class="editor-avatar">' +
+              avatarHtml +
             '</div>' +
             '<div class="flex-1">' +
-              '<h3 class="text-xl font-bold text-gray-900">' + member.name + '</h3>' +
-              '<p class="text-sm text-teal-700 font-medium">' + member.title + '</p>' +
-              '<p class="text-sm text-gray-500 mt-1">' + member.affiliation + '</p>' +
-              (member.email ? '<p class="text-sm text-gray-500 mt-1"><a href="mailto:' + member.email + '" class="text-teal-700 hover:text-teal-800 transition-colors">' + member.email + '</a></p>' : '') +
+              '<h3 class="board-member-name text-2xl font-bold text-gray-900">' + renderMemberName(member, '') + '</h3>' +
+              '<p class="board-member-title text-sm font-medium">' + member.title + '</p>' +
+              '<p class="board-member-affiliation text-sm mt-1">' + member.affiliation + '</p>' +
+              (member.email ? '<p class="board-member-email text-sm mt-1"><a href="mailto:' + member.email + '" class="text-teal-700 hover:text-teal-800 transition-colors">' + member.email + '</a></p>' : '') +
             '</div>' +
           '</div>';
         } else {
-          html += '<h3 class="text-base font-bold text-gray-900">' + member.name + '</h3>' +
-            '<p class="text-sm text-teal-700 font-medium mt-1">' + member.title + '</p>' +
-            '<p class="text-sm text-gray-500 mt-1">' + member.affiliation + '</p>' +
-            (member.email ? '<p class="text-sm text-gray-500 mt-1"><a href="mailto:' + member.email + '" class="text-teal-700 hover:text-teal-800 transition-colors">' + member.email + '</a></p>' : '');
+          html += '<h3 class="board-member-name text-lg font-bold text-gray-900">' + renderMemberName(member, '') + '</h3>' +
+            '<p class="board-member-title text-sm mt-1">' + member.title + '</p>' +
+            '<p class="board-member-affiliation text-sm mt-1">' + member.affiliation + '</p>' +
+            (member.email ? '<p class="board-member-email text-sm mt-1"><a href="mailto:' + member.email + '" class="text-teal-700 hover:text-teal-800 transition-colors">' + member.email + '</a></p>' : '');
         }
 
         html += '</div></div>';
@@ -379,7 +871,7 @@
       function renderGrid(container, members, featured) {
         if (!members || members.length === 0) return;
 
-        var gridClass = featured ? '' : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6';
+        var gridClass = featured ? '' : 'board-grid';
         var html = '<div class="' + gridClass + '">';
 
         if (Array.isArray(members)) {
@@ -432,29 +924,47 @@
         var otherHtml = '';
 
         if (data.biostatisticsEditor) {
-          otherHtml += '<h2 class="text-lg font-semibold text-gray-900 mb-4">Biostatistics Editor</h2>';
-          otherHtml += '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">';
+          otherHtml += '<h2 class="board-subsection-title text-lg font-semibold text-gray-900 mb-4">Biostatistics Editor</h2>';
+          otherHtml += '<div class="board-grid mb-10">';
           otherHtml += buildCard(data.biostatisticsEditor, false);
           otherHtml += '</div>';
         }
 
         if (data.ethicsEditor) {
-          otherHtml += '<h2 class="text-lg font-semibold text-gray-900 mb-4">Ethics Editor</h2>';
-          otherHtml += '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">';
+          otherHtml += '<h2 class="board-subsection-title text-lg font-semibold text-gray-900 mb-4">Ethics Editor</h2>';
+          otherHtml += '<div class="board-grid mb-10">';
           otherHtml += buildCard(data.ethicsEditor, false);
           otherHtml += '</div>';
         }
 
         if (data.languageEditing) {
-          otherHtml += '<h2 class="text-lg font-semibold text-gray-900 mb-4">Language Editing</h2>';
-          otherHtml += '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">';
-          otherHtml += '<div><div class="bg-white border-gray-200 rounded-xl border p-5">' +
-            '<h3 class="text-base font-bold text-gray-900">' + data.languageEditing.name + '</h3>' +
+          otherHtml += '<h2 class="board-subsection-title text-lg font-semibold text-gray-900 mb-4">Language Editing</h2>';
+          otherHtml += '<div class="board-grid">';
+          otherHtml += '<div class="board-card-wrap"><div class="board-card bg-white border-gray-200 rounded-xl border p-5">' +
+            '<h3 class="board-member-name text-lg font-bold text-gray-900">' + renderMemberName(data.languageEditing, '') + '</h3>' +
             '</div></div>';
           otherHtml += '</div>';
         }
 
         panelOther.innerHTML = otherHtml;
+      }
+
+      // Editorial Advisory Board
+      var panelAdvisory = document.getElementById('panel-advisory');
+      if (panelAdvisory && extended.advisoryBoard) {
+        renderAdvisoryBoard(panelAdvisory, extended.advisoryBoard);
+      }
+
+      // Board of Reviewers
+      var panelReviewers = document.getElementById('panel-reviewers');
+      if (panelReviewers && extended.reviewersBoard) {
+        renderReviewers(panelReviewers, extended.reviewersBoard);
+      }
+
+      // Former Editor in Chief
+      var panelFormer = document.getElementById('panel-former');
+      if (panelFormer && extended.formerEditorsInChief) {
+        renderFormerEditors(panelFormer, extended.formerEditorsInChief);
       }
 
       // ── Tab switching logic ─────────────────────────────────
@@ -514,6 +1024,61 @@
             activateTab(tabArray[tabArray.length - 1]);
           }
         });
+      });
+
+      // ── Profile modal logic ─────────────────────────────────
+      var profileModal = document.getElementById('profile-modal');
+      var profileModalImage = document.getElementById('profile-modal-image');
+      var profileModalClose = document.getElementById('profile-modal-close');
+      var previousActiveElement = null;
+
+      function openProfileModal(imageUrl, name) {
+        if (!profileModal || !profileModalImage || !imageUrl) return;
+        previousActiveElement = document.activeElement;
+        profileModalImage.src = imageUrl;
+        profileModalImage.alt = name + ' CV image';
+        profileModal.classList.add('open');
+        profileModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        if (profileModalClose) profileModalClose.focus();
+      }
+
+      function closeProfileModal() {
+        if (!profileModal || !profileModalImage) return;
+        profileModal.classList.remove('open');
+        profileModal.setAttribute('aria-hidden', 'true');
+        profileModalImage.src = '';
+        profileModalImage.alt = '';
+        document.body.style.overflow = '';
+        if (previousActiveElement && typeof previousActiveElement.focus === 'function') {
+          previousActiveElement.focus();
+        }
+      }
+
+      document.addEventListener('click', function(event) {
+        var trigger = event.target.closest('.editor-profile-link');
+        if (trigger) {
+          event.preventDefault();
+          openProfileModal(
+            trigger.getAttribute('data-profile-url'),
+            trigger.getAttribute('data-profile-name') || 'Editor'
+          );
+          return;
+        }
+
+        if (profileModal && profileModal.classList.contains('open') && event.target === profileModal) {
+          closeProfileModal();
+        }
+      });
+
+      if (profileModalClose) {
+        profileModalClose.addEventListener('click', closeProfileModal);
+      }
+
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && profileModal && profileModal.classList.contains('open')) {
+          closeProfileModal();
+        }
       });
 
     })();

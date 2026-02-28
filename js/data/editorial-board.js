@@ -4,7 +4,8 @@ window.EDITORIAL_BOARD = {
     name: "Servet ALTAY",
     title: "MD",
     affiliation: "Department of Cardiology, Trakya University School of Medicine, Edirne, Türkiye",
-    email: "drservetaltay@gmail.com"
+    email: "drservetaltay@gmail.com",
+    photo: "images/editorial-board/servet-altay.webp"
   },
 
   honoraryEditors: [
@@ -283,6 +284,61 @@ window.EDITORIAL_BOARD = {
 
   languageEditing: {
     name: "ENAGO"
+  },
+
+  profileLinks: {
+    "Servet ALTAY": "images/editorial-board/cv/BALKAN-CV1.jpg",
+    "Ahmet ULUGÖL": "images/editorial-board/cv/BALKAN-CV3.jpg",
+    "Zafer KOÇAK": "images/editorial-board/cv/BALKAN-CV2(2).jpg",
+    "Suat ERDOĞAN": "images/editorial-board/cv/BALKAN-CV4.jpg",
+    "Selçuk KORKMAZ": "images/editorial-board/cv/BALKAN-CV5.jpg",
+    "Ufuk USTA": "images/editorial-board/cv/BALKAN-CV6.jpg",
+    "Fethi Emre USTABAŞIOĞLU": "images/editorial-board/cv/BALKAN-CV7.jpg",
+    "Alperen VURAL": "images/editorial-board/cv/BALKAN-CV8.jpg",
+    "Naziye AK": "images/editorial-board/cv/BALKAN-CV9.jpg",
+    "Mutlu ARAT": "images/editorial-board/cv/BALKAN-CV10.jpg",
+    "Murat Mert ATMACA": "images/editorial-board/cv/BALKAN-CV11.jpg",
+    "Mehmet ÇELİK": "images/editorial-board/cv/BALKAN-CV12.jpg",
+    "Mustafa ÇIKIRIKÇIOĞLU": "images/editorial-board/cv/BALKAN-CV13.jpg",
+    "Nihat Demirhan DEMİRKIRAN": "images/editorial-board/cv/BALKAN-CV14.jpg",
+    "Hüseyin GÜDÜCÜOĞLU": "images/editorial-board/cv/BALKAN-CV15.jpg",
+    "Fethi GÜL": "images/editorial-board/cv/BALKAN-CV16.jpg",
+    "Hakan GÜRKAN": "images/editorial-board/cv/BALKAN-CV17.jpg",
+    "Muhammet Bekir HACIOĞLU": "images/editorial-board/cv/BALKAN-CV18.jpg",
+    "Mert İlker HAYIROĞLU": "images/editorial-board/cv/BALKAN-CV19.jpg",
+    "Edin HUSARIC": "images/editorial-board/cv/BALKAN-CV20.jpg",
+    "Cihan İNAN": "images/editorial-board/cv/BALKAN-CV21.jpg",
+    "Alexandros KALLIFATIDIS": "images/editorial-board/cv/BALKAN-CV(3).jpg",
+    "Yasemin KARAL": "images/editorial-board/cv/BALKAN-CV22.jpg",
+    "Şiran KESKE": "images/editorial-board/cv/BALKAN-CV23.jpg",
+    "Ayça KIYKIM": "images/editorial-board/cv/BALKAN-CV24.jpg",
+    "Deniz PALAMAR KADIOĞLU": "images/editorial-board/cv/BALKAN-CV25.jpg",
+    "Berrin PAPİLA": "images/editorial-board/cv/BALKAN-CV26.jpg",
+    "Sezgi SARIKAYA SOLAK": "images/editorial-board/cv/BALKAN-CV28.jpg",
+    "Milan STANKOVIC": "images/editorial-board/cv/BALKAN-CV29.jpg",
+    "Eda TAHİR TURANLI": "images/editorial-board/cv/BALKAN-CV30.jpg",
+    "Alparslan TURAN": "images/editorial-board/cv/BALKAN-CV.jpg",
+    "İsmail Barış TÜRKBEY": "images/editorial-board/cv/BALKAN-CV31.jpg",
+    "Serdal UĞURLU": "images/editorial-board/cv/BALKAN-CV32.jpg",
+    "Yeşim Hülya UZ": "images/editorial-board/cv/BALKAN-CV33.jpg",
+    "Irena VELCHEVA": "images/editorial-board/cv/BALKAN-CV41.jpg",
+    "Marco FIORE": "images/editorial-board/cv/BALKAN-CV42.jpg",
+    "Marko HAWLINA": "images/editorial-board/cv/BALKAN-CV43.jpg",
+    "Darko KASTELAN": "images/editorial-board/cv/BALKAN-CV44.jpg",
+    "Shima MEHRABIAN": "images/editorial-board/cv/BALKAN-CV45.jpg",
+    "Pavle MIKLIC": "images/editorial-board/cv/BALKAN-CV46.jpg",
+    "Stanislav YANEV": "images/editorial-board/cv/BALKAN-CV47.jpg",
+    "Dragoslava DJERIC": "images/editorial-board/cv/2BALKAN-CV.jpg",
+    "Irena HOCEVAR-BOLTEZAR": "images/editorial-board/cv/1BALKAN-CV2.jpg",
+    "Ozan AKÇA": "images/editorial-board/cv/BALKAN-CV(4).jpg",
+    "Berna ARDA": "images/editorial-board/cv/BALKAN-CV34.jpg",
+    "Gözde AKTÜRK": "images/editorial-board/cv/BALKAN-CV35.jpg",
+    "Gökhan ÇEVİK": "images/editorial-board/cv/BALKAN-CV36.jpg",
+    "Tuğcan Alp KIRKIZLAR": "images/editorial-board/cv/BALKAN-CV37.jpg",
+    "İdris KURT": "images/editorial-board/cv/BALKAN-CV38.jpg",
+    "Ethem YILDIZ": "images/editorial-board/cv/BALKAN-CV39.jpg",
+    "Sinemis Çetin DAĞLI": "images/editorial-board/cv/BALKAN-CV40.jpg",
+    "Ulviye KIVRAK": "images/editorial-board/cv/BALKAN-CV(5).jpg"
   }
 
 };
