@@ -1065,7 +1065,9 @@
       var articleId = escapeHtml(String(article.id || ''));
       var title = escapeHtml(stripTags(article.title || 'Untitled'));
       var authors = escapeHtml(formatAuthors(article.authors));
-      var preview = escapeHtml(stripTags(article.previewText || '').trim());
+      var rawPreview = stripTags(article.previewText || '').trim();
+      var firstSentenceMatch = rawPreview.match(/^[^.!?]*[.!?]/);
+      var preview = escapeHtml(firstSentenceMatch && firstSentenceMatch[0].length < rawPreview.length ? firstSentenceMatch[0] + '..' : rawPreview);
       var imageSrc = toAbsoluteImageUrl(String(article.image || '').trim());
       var cropStyle = getImageCornerCropStyle(article);
       var imageHtml = imageSrc
