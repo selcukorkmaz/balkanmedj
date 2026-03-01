@@ -437,7 +437,7 @@
     if (typeof fetch !== 'function') return Promise.resolve({});
 
     var cutoff = new Date();
-    cutoff.setMonth(cutoff.getMonth() - 24);
+    cutoff.setMonth(cutoff.getMonth() - 27); // 3-month buffer: actual pub dates can precede issue dates
     var fromDate = cutoff.getFullYear() + '-' + String(cutoff.getMonth() + 1).replace(/^(\d)$/, '0$1');
 
     // OpenAlex first, Crossref fallback
@@ -528,9 +528,8 @@
   function getArticleCollections(data, citationMap) {
     var articles = Array.isArray(window.ARTICLES) ? window.ARTICLES.slice() : [];
     var articlesInPress = Array.isArray(window.ARTICLES_IN_PRESS) ? window.ARTICLES_IN_PRESS.slice() : [];
-    var nowTs = Date.now();
-    var cutoffDate = new Date(nowTs);
-    cutoffDate.setMonth(cutoffDate.getMonth() - 24);
+    var now = new Date();
+    var cutoffDate = new Date(now.getFullYear(), now.getMonth() - 24, 1); // midnight on 1st
     var cutoffTs = cutoffDate.getTime();
 
     var regular = articles.filter(function (article) {

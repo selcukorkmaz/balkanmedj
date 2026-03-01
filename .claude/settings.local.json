@@ -53,7 +53,8 @@
       "Bash(do:*)",
       "Bash(brew install:*)",
       "Bash(pdftoppm:*)",
-      "WebFetch(domain:api.openalex.org)"
+      "WebFetch(domain:api.openalex.org)",
+      "Bash(node:*)"
     ]
   }
 }
