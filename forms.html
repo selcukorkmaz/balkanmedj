@@ -193,82 +193,69 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          <!-- Copyright Transfer Form -->
-          <div class="article-card bg-white rounded-xl border border-gray-200 p-6 flex flex-col">
-            <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-6 h-6 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Copyright Transfer Form</h3>
-            <p class="text-sm text-gray-500 mb-4 flex-1 font-serif">Required upon acceptance. All authors must sign to transfer copyright under CC BY-NC-ND 4.0 license.</p>
-            <button onclick="showToast('This is a demo. In production, this would download the actual form.')" class="inline-flex items-center px-4 py-2 bg-teal-700 text-white font-medium rounded-lg hover:bg-teal-800 transition-colors text-sm">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-              Download PDF
-            </button>
-          </div>
-
-          <!-- Conflict of Interest Form -->
-          <div class="article-card bg-white rounded-xl border border-gray-200 p-6 flex flex-col">
-            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-6 h-6 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Conflict of Interest Disclosure</h3>
-            <p class="text-sm text-gray-500 mb-4 flex-1 font-serif">Each author must disclose any potential conflicts of interest. Required at submission.</p>
-            <button onclick="showToast('This is a demo. In production, this would download the actual form.')" class="inline-flex items-center px-4 py-2 bg-teal-700 text-white font-medium rounded-lg hover:bg-teal-800 transition-colors text-sm">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-              Download PDF
-            </button>
-          </div>
-
-          <!-- Patient Consent Form -->
-          <div class="article-card bg-white rounded-xl border border-gray-200 p-6 flex flex-col">
-            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Patient Consent Form</h3>
-            <p class="text-sm text-gray-500 mb-4 flex-1 font-serif">Required for case reports and any study involving identifiable patient data or images.</p>
-            <button onclick="showToast('This is a demo. In production, this would download the actual form.')" class="inline-flex items-center px-4 py-2 bg-teal-700 text-white font-medium rounded-lg hover:bg-teal-800 transition-colors text-sm">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-              Download PDF
-            </button>
-          </div>
-
-          <!-- ICMJE Form -->
-          <div class="article-card bg-white rounded-xl border border-gray-200 p-6 flex flex-col">
-            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-6 h-6 text-purple-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">ICMJE Disclosure Form</h3>
-            <p class="text-sm text-gray-500 mb-4 flex-1 font-serif">ICMJE Uniform Disclosure Form for Potential Conflicts of Interest. Required for all authors.</p>
-            <button onclick="showToast('This is a demo. In production, this would download the actual form.')" class="inline-flex items-center px-4 py-2 bg-teal-700 text-white font-medium rounded-lg hover:bg-teal-800 transition-colors text-sm">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-              Download PDF
-            </button>
-          </div>
-
-          <!-- Cover Letter Template -->
+          <!-- Cover Letter -->
           <div class="article-card bg-white rounded-xl border border-gray-200 p-6 flex flex-col">
             <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Cover Letter Template</h3>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Cover Letter</h3>
             <p class="text-sm text-gray-500 mb-4 flex-1 font-serif">Template for the cover letter that must accompany every manuscript submission.</p>
-            <button onclick="showToast('This is a demo. In production, this would download the actual form.')" class="inline-flex items-center px-4 py-2 bg-teal-700 text-white font-medium rounded-lg hover:bg-teal-800 transition-colors text-sm">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-              Download DOCX
-            </button>
-          </div>
-
-          <!-- Checklist -->
-          <div class="article-card bg-white rounded-xl border border-gray-200 p-6 flex flex-col">
-            <div class="w-12 h-12 bg-red-700 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Submission Checklist</h3>
-            <p class="text-sm text-gray-500 mb-4 flex-1 font-serif">Pre-submission checklist to ensure your manuscript meets all requirements before submission.</p>
-            <button onclick="showToast('This is a demo. In production, this would download the actual form.')" class="inline-flex items-center px-4 py-2 bg-teal-700 text-white font-medium rounded-lg hover:bg-teal-800 transition-colors text-sm">
+            <a href="forms/BMJ_Cover_Letter.pdf" download class="inline-flex items-center px-4 py-2 bg-teal-700 text-white font-medium rounded-lg hover:bg-teal-800 transition-colors text-sm">
               <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
               Download PDF
-            </button>
+            </a>
+          </div>
+
+          <!-- Copyright Transfer and Acknowledgement of Authorship Form -->
+          <div class="article-card bg-white rounded-xl border border-gray-200 p-6 flex flex-col">
+            <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Copyright Transfer and Acknowledgement of Authorship Form</h3>
+            <p class="text-sm text-gray-500 mb-4 flex-1 font-serif">Required upon acceptance. All authors must sign to transfer copyright and acknowledge authorship.</p>
+            <a href="forms/BMJ_Copyright_Agreement_Form.pdf" download class="inline-flex items-center px-4 py-2 bg-teal-700 text-white font-medium rounded-lg hover:bg-teal-800 transition-colors text-sm">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              Download PDF
+            </a>
+          </div>
+
+          <!-- Data-sharing Statement Form -->
+          <div class="article-card bg-white rounded-xl border border-gray-200 p-6 flex flex-col">
+            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Data-sharing Statement Form</h3>
+            <p class="text-sm text-gray-500 mb-4 flex-1 font-serif">Authors must declare data availability and sharing policies for their study.</p>
+            <a href="forms/BMJ_Data_Sharing_Statement_Form.docx" download class="inline-flex items-center px-4 py-2 bg-teal-700 text-white font-medium rounded-lg hover:bg-teal-800 transition-colors text-sm">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              Download DOCX
+            </a>
+          </div>
+
+          <!-- ICMJE Conflict of Interest Form -->
+          <div class="article-card bg-white rounded-xl border border-gray-200 p-6 flex flex-col">
+            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-purple-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">ICMJE Conflict of Interest Form</h3>
+            <p class="text-sm text-gray-500 mb-4 flex-1 font-serif">ICMJE Uniform Disclosure Form for Potential Conflicts of Interest. Required for all authors.</p>
+            <a href="forms/ICMJE_COI_Disclosure.docx" download class="inline-flex items-center px-4 py-2 bg-teal-700 text-white font-medium rounded-lg hover:bg-teal-800 transition-colors text-sm">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              Download DOCX
+            </a>
+          </div>
+
+          <!-- EndNote Style -->
+          <div class="article-card bg-white rounded-xl border border-gray-200 p-6 flex flex-col">
+            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">EndNote Style</h3>
+            <p class="text-sm text-gray-500 mb-4 flex-1 font-serif">EndNote citation style file for Balkan Medical Journal. Import into your reference manager.</p>
+            <a href="forms/Balkan_Medical_J.ens" download class="inline-flex items-center px-4 py-2 bg-teal-700 text-white font-medium rounded-lg hover:bg-teal-800 transition-colors text-sm">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              Download ENS
+            </a>
           </div>
         </div>
 

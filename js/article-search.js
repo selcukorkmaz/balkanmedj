@@ -145,6 +145,50 @@
   var introPreviewCache = {};
   var introPreviewPending = {};
 
+  // Published-online date helpers
+  var MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var publishedOnlineDateMap = {};
+  var publishedOnlineDateMapPromise = null;
+
+  function normalizeDoi(value) {
+    var raw = String(value || '').trim().toLowerCase();
+    return raw.replace(/^https?:\/\/doi\.org\//i, '');
+  }
+
+  function fetchPublishedOnlineDateMap() {
+    if (publishedOnlineDateMapPromise) return publishedOnlineDateMapPromise;
+    if (typeof fetch !== 'function') { publishedOnlineDateMapPromise = Promise.resolve({}); return publishedOnlineDateMapPromise; }
+    var cutoff = new Date();
+    cutoff.setMonth(cutoff.getMonth() - 27);
+    var fromDate = cutoff.getFullYear() + '-' + String(cutoff.getMonth() + 1).replace(/^(\d)$/, '0$1');
+    var crUrl = 'https://api.crossref.org/journals/2146-3131/works?sort=published&order=desc&rows=200&select=DOI,published-online&filter=from-pub-date:' + fromDate;
+    publishedOnlineDateMapPromise = fetch(crUrl)
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (payload) {
+        var items = payload && payload.message && payload.message.items;
+        if (!Array.isArray(items)) return {};
+        var map = {};
+        items.forEach(function (work) {
+          var doi = normalizeDoi(work && work.DOI);
+          var parts = work['published-online'] && work['published-online']['date-parts'] && work['published-online']['date-parts'][0];
+          if (!parts || parts.length < 3 || !doi) return;
+          map[doi] = MONTH_NAMES[parts[1] - 1] + ' ' + parts[2] + ', ' + parts[0];
+        });
+        return map;
+      }).catch(function () { return {}; });
+    return publishedOnlineDateMapPromise;
+  }
+
+  function getPublishedOnlineDate(article) {
+    var doi = normalizeDoi(article && article.doi);
+    if (doi && publishedOnlineDateMap[doi]) return publishedOnlineDateMap[doi];
+    return '';
+  }
+
+  function getArticlePdfUrl(article) {
+    return article.pdfUrl || article.localPdfUrl || article.sourcePdfUrl || '';
+  }
+
   // Render filter pills
   function renderFilters() {
     if (!filterContainer) return;
@@ -694,6 +738,11 @@
         container.appendChild(createArticleCard(article));
       });
     }
+
+    // Hydrate published dates if map already loaded
+    if (Object.keys(publishedOnlineDateMap).length) {
+      hydratePublishedDates();
+    }
   }
 
   function createArticleCard(article) {
@@ -720,17 +769,34 @@
         '<span class="text-xs text-gray-400">' + article.pages + '</span>' +
       '</div>' +
       '<h3 class="text-lg font-semibold text-gray-900 mb-2 leading-snug">' +
-        '<a href="' + articleUrl + '"' + externalAttrs + ' class="hover:text-teal-700 transition-colors">' + article.title + '</a>' +
+        (isCoverPageArticle(article) ?
+          (getArticlePdfUrl(article) ? '<a href="' + escapeHtml(getArticlePdfUrl(article)) + '" target="_blank" rel="noopener" class="hover:text-teal-700 transition-colors">' + article.title + '</a>' : article.title) :
+          '<a href="' + articleUrl + '"' + externalAttrs + ' class="hover:text-teal-700 transition-colors">' + article.title + '</a>') +
       '</h3>' +
-      '<p class="text-sm text-gray-500 mb-3">' + formatAuthorsHtml(article.authors) + '</p>' +
-      previewHtml +
-      '<div class="flex items-center justify-between text-xs text-gray-400 pt-4 border-t border-gray-100">' +
-        '<div class="flex gap-4">' +
-          '<span title="Views"><svg class="inline w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>' + (article.views || 0).toLocaleString() + '</span>' +
-          '<span title="Downloads"><svg class="inline w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>' + (article.downloads || 0).toLocaleString() + '</span>' +
-        '</div>' +
-        '<a href="' + articleUrl + '"' + externalAttrs + ' class="text-teal-700 font-medium hover:text-teal-800">Read more &rarr;</a>' +
-      '</div>';
+      (isCoverPageArticle(article) ? '' :
+        '<p class="text-sm text-gray-500 mb-3">' + formatAuthorsHtml(article.authors) + '</p>' +
+        previewHtml) +
+      (isCoverPageArticle(article) ? '' :
+        '<p class="text-xs text-gray-400 mb-3' + (getPublishedOnlineDate(article) ? '' : ' hidden') + '" data-pub-date="' + escapeHtml(normalizeDoi(article.doi)) + '">Published online: ' + escapeHtml(getPublishedOnlineDate(article)) + '</p>' +
+        '<div class="flex items-center justify-between text-xs text-gray-400 pt-4 border-t border-gray-100">' +
+          '<div class="flex gap-4">' +
+            '<span title="Views"><svg class="inline w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>' + (article.views || 0).toLocaleString() + '</span>' +
+            '<span title="Downloads"><svg class="inline w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>' + (article.downloads || 0).toLocaleString() + '</span>' +
+          '</div>' +
+          '<div class="flex items-center gap-3">' +
+            (getArticlePdfUrl(article) ? '<a href="' + escapeHtml(getArticlePdfUrl(article)) + '" target="_blank" rel="noopener" aria-label="View PDF" title="View PDF" class="inline-flex items-center justify-center text-red-600 hover:text-red-700 transition-colors">' +
+              '<svg class="w-4 h-5" viewBox="0 0 24 28" aria-hidden="true">' +
+                '<path d="M3.2 1.5h11.1l6.2 6.1v16.1a2.8 2.8 0 0 1-2.8 2.8H3.2a2.8 2.8 0 0 1-2.8-2.8V4.3a2.8 2.8 0 0 1 2.8-2.8z" fill="#ffffff" stroke="#ef2a2a" stroke-width="2"></path>' +
+                '<path d="M14.3 1.5v5a2.2 2.2 0 0 0 2.2 2.2h4" fill="none" stroke="#ef2a2a" stroke-width="2"></path>' +
+                '<path d="M4.3 11.2h12.8M4.3 13.8h12.8M4.3 16.4h9.8" fill="none" stroke="#95a0aa" stroke-width="1.1" stroke-linecap="round"></path>' +
+                '<rect x="0.7" y="17.6" width="13.5" height="6.6" rx="1.2" fill="#ef2a2a"></rect>' +
+                '<text x="7.45" y="22.3" text-anchor="middle" font-size="4.7" font-family="Arial,sans-serif" font-weight="700" fill="#ffffff">PDF</text>' +
+              '</svg>' +
+            '</a>' : '') +
+            '<a href="' + articleUrl + '"' + externalAttrs + ' class="text-teal-700 font-medium hover:text-teal-800">Read more &rarr;</a>' +
+          '</div>' +
+        '</div>'
+      );
 
     if (introPreviewEnabled) {
       hydrateIntroPreview(card, article);
@@ -751,8 +817,25 @@
     });
   }
 
+  function hydratePublishedDates() {
+    var els = container.querySelectorAll('[data-pub-date]');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      var doi = el.getAttribute('data-pub-date');
+      if (doi && publishedOnlineDateMap[doi]) {
+        el.textContent = 'Published online: ' + publishedOnlineDateMap[doi];
+        el.classList.remove('hidden');
+      }
+    }
+  }
+
   // Initialize
   renderFilters();
   buildAdvancedFilters();
   renderArticles();
+
+  fetchPublishedOnlineDateMap().then(function (map) {
+    publishedOnlineDateMap = map;
+    hydratePublishedDates();
+  });
 })();

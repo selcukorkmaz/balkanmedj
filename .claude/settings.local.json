@@ -54,7 +54,9 @@
       "Bash(brew install:*)",
       "Bash(pdftoppm:*)",
       "WebFetch(domain:api.openalex.org)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "WebFetch(domain:www.icmje.org)",
+      "WebFetch(domain:api.crossref.org)"
     ]
   }
 }

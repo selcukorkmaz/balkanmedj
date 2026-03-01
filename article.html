@@ -2050,6 +2050,78 @@
         });
       }
 
+      function fetchCrossrefPublishedOnlineDate(doi) {
+        if (!doi || typeof fetch !== 'function') return;
+        var url = 'https://api.crossref.org/works/' + encodeURIComponent(doi);
+        fetch(url).then(function (res) {
+          if (!res.ok) throw new Error('Crossref response ' + res.status);
+          return res.json();
+        }).then(function (json) {
+          var msg = json && json.message;
+          if (!msg) return;
+          var history = {};
+          var onlineParts = msg['published-online'] && msg['published-online']['date-parts'] && msg['published-online']['date-parts'][0];
+          if (onlineParts && onlineParts.length >= 3) {
+            history.publishedOnline = onlineParts[0] + '-' + String(onlineParts[1]).replace(/^(\d)$/, '0$1') + '-' + String(onlineParts[2]).replace(/^(\d)$/, '0$1');
+          }
+          var issueParts = msg['published-print'] && msg['published-print']['date-parts'] && msg['published-print']['date-parts'][0];
+          if (issueParts && issueParts.length >= 3) {
+            history.publishedInIssue = issueParts[0] + '-' + String(issueParts[1]).replace(/^(\d)$/, '0$1') + '-' + String(issueParts[2]).replace(/^(\d)$/, '0$1');
+          }
+          if (history.publishedOnline || history.publishedInIssue) {
+            if (mergePublicationHistory(history)) {
+              refreshPublicationHistoryDisplay();
+            }
+          }
+        }).catch(function () { /* ignore */ });
+      }
+
+      function refreshPublicationHistoryDisplay() {
+        var headlineRaw = publicationHistoryState.publishedInIssue || computeIssueDateFromArticle() || publicationHistoryState.published;
+        var headlineFormatted = formatDateForDisplay(headlineRaw);
+
+        // Update headline "Published" date
+        var toggleBtn = document.getElementById('publication-history-toggle');
+        if (toggleBtn) {
+          var chevronSvg = toggleBtn.querySelector('svg');
+          toggleBtn.innerHTML = '';
+          var span = document.createElement('span');
+          span.className = 'text-gray-400';
+          span.textContent = 'Published';
+          toggleBtn.appendChild(span);
+          toggleBtn.appendChild(document.createTextNode(' ' + headlineFormatted));
+          if (chevronSvg) toggleBtn.appendChild(chevronSvg);
+        }
+
+        // Update publication history panel rows
+        var panel = document.getElementById('publication-history-panel');
+        if (!panel) return;
+        var rows = [];
+        var recDisplay = formatDateForDisplay(publicationHistoryState.received);
+        var accDisplay = formatDateForDisplay(publicationHistoryState.accepted);
+        var onlineDisplay = formatDateForDisplay(publicationHistoryState.publishedOnline || publicationHistoryState.availableOnlineDate);
+        var issueDisplay = formatDateForDisplay(publicationHistoryState.publishedInIssue);
+        if (recDisplay) rows.push({ label: 'Received', value: recDisplay });
+        if (accDisplay) rows.push({ label: 'Accepted', value: accDisplay });
+        if (onlineDisplay) rows.push({ label: 'Published online', value: onlineDisplay });
+        if (issueDisplay) rows.push({ label: 'Published in issue', value: issueDisplay });
+
+        if (rows.length) {
+          panel.innerHTML =
+            '<h3 class="text-lg font-bold text-gray-900 mb-3">Publication History</h3>' +
+            rows.map(function (row) {
+              return '<div class="flex items-center gap-3 py-1.5 text-gray-800">' +
+                '<svg class="w-5 h-5 text-blue-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" stroke-width="2"></rect><path stroke-width="2" stroke-linecap="round" d="M8 2v4M16 2v4M3 10h18"></path></svg>' +
+                '<span><strong>' + row.label + '</strong> ' + row.value + '</span>' +
+              '</div>';
+            }).join('');
+          // Keep panel hidden/shown based on current toggle state
+          var toggle = document.getElementById('publication-history-toggle');
+          var isExpanded = toggle && toggle.getAttribute('aria-expanded') === 'true';
+          panel.classList.toggle('hidden', !isExpanded);
+        }
+      }
+
       function initCitationIntelligence() {
         if (isCoverPage) return;
 
@@ -3111,9 +3183,20 @@
         mergePublicationHistory(initialPrecomputedMeta.publicationHistory);
       }
 
+      function computeIssueDateFromArticle() {
+        var issueNum = parseInt(article.issue, 10);
+        if (!issueNum || issueNum < 1 || issueNum > 6) return '';
+        var issueMonths = [0, 0, 2, 4, 6, 8, 10]; // 1→Jan, 2→Mar, 3→May, 4→Jul, 5→Sep, 6→Nov
+        var month = issueMonths[issueNum];
+        var year = article.volume ? (1983 + parseInt(article.volume, 10)) : parseInt(article.published, 10);
+        if (!year) return '';
+        var d = new Date(year, month, 1);
+        return d.getFullYear() + '-' + String(d.getMonth() + 1).replace(/^(\d)$/, '0$1') + '-01';
+      }
+
       var recDate = formatDateForDisplay(publicationHistoryState.received);
       var accDate = formatDateForDisplay(publicationHistoryState.accepted);
-      var headlinePublishedRaw = publicationHistoryState.publishedInIssue || publicationHistoryState.publishedOnline || publicationHistoryState.availableOnlineDate || publicationHistoryState.published;
+      var headlinePublishedRaw = publicationHistoryState.publishedInIssue || computeIssueDateFromArticle() || publicationHistoryState.published;
       var pubDate = formatDateForDisplay(headlinePublishedRaw);
 
       // Build author-affiliation map so each unique affiliation gets a number.
@@ -3722,6 +3805,7 @@
           }
           if (changed) {
             refreshAuthorPopoverContent();
+            refreshPublicationHistoryDisplay();
           }
         });
       }
@@ -3756,7 +3840,7 @@
       var publicationHistoryRows = [];
       if (recDate) publicationHistoryRows.push({ label: 'Received', value: recDate });
       if (accDate) publicationHistoryRows.push({ label: 'Accepted', value: accDate });
-      var availableOnlineDisplay = formatDateForDisplay(publicationHistoryState.availableOnlineDate);
+      var availableOnlineDisplay = formatDateForDisplay(publicationHistoryState.publishedOnline || publicationHistoryState.availableOnlineDate);
       if (availableOnlineDisplay) publicationHistoryRows.push({ label: 'Published online', value: availableOnlineDisplay });
       var issuePublishedDisplay = formatDateForDisplay(publicationHistoryState.publishedInIssue);
       if (issuePublishedDisplay) publicationHistoryRows.push({ label: 'Published in issue', value: issuePublishedDisplay });
@@ -4347,6 +4431,7 @@
       initAuthorPopoverViewportGuard();
 
       syncCitationMetric();
+      fetchCrossrefPublishedOnlineDate(normalizeDoi(article.doi));
 
       (function initSecondaryCardsPlacement() {
         var cards = document.getElementById('article-secondary-cards');

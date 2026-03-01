@@ -287,14 +287,29 @@
     return pool.slice(0, 6);
   }
 
-  function getImageCornerArticles(data) {
-    var items = Array.isArray(data.imageCornerArticles) ? data.imageCornerArticles.slice() : [];
-    if (items.length) return items.slice(0, 2);
-
+  function getImageCornerArticles(data, citationMap) {
     if (!Array.isArray(window.ARTICLES) || window.ARTICLES.length === 0) return [];
-    return window.ARTICLES.filter(function (article) {
-      return article && (article.imageCorner || String(article.type || '') === 'Image Corner');
-    }).slice(0, 2);
+
+    var now = new Date();
+    var cutoffDate = new Date(now.getFullYear(), now.getMonth() - 24, 1);
+    var cutoffTs = cutoffDate.getTime();
+
+    var pool = window.ARTICLES.filter(function (article) {
+      if (!article) return false;
+      var type = String(article.type || '').trim();
+      if (type !== 'Clinical Image') return false;
+      var pubTs = articlePublishedTimestamp(article);
+      return pubTs > 0 && pubTs >= cutoffTs;
+    });
+
+    pool.sort(function (a, b) {
+      var aCitations = getCitationValue(a, citationMap || {});
+      var bCitations = getCitationValue(b, citationMap || {});
+      if (bCitations !== aCitations) return bCitations - aCitations;
+      return articlePublishedTimestamp(b) - articlePublishedTimestamp(a);
+    });
+
+    return pool.slice(0, 2);
   }
 
   function ensureArticlesInPressData() {
@@ -342,6 +357,20 @@
     }
 
     return 0;
+  }
+
+  var MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'];
+
+  function formatPublishedDate(article) {
+    var doi = normalizeDoi(article && article.doi);
+    if (doi && Object.prototype.hasOwnProperty.call(publishedOnlineDateMap, doi)) {
+      return publishedOnlineDateMap[doi];
+    }
+    var ts = articlePublishedTimestamp(article);
+    if (!ts) return '';
+    var d = new Date(ts);
+    return MONTH_NAMES[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
   }
 
   function numericValue(value) {
@@ -480,6 +509,42 @@
       });
 
     return topJournalCitationMapPromise;
+  }
+
+  var publishedOnlineDateMap = {};
+  var publishedOnlineDateMapPromise = null;
+
+  function fetchPublishedOnlineDateMap() {
+    if (publishedOnlineDateMapPromise) return publishedOnlineDateMapPromise;
+    if (typeof fetch !== 'function') return Promise.resolve({});
+
+    var cutoff = new Date();
+    cutoff.setMonth(cutoff.getMonth() - 27);
+    var fromDate = cutoff.getFullYear() + '-' + String(cutoff.getMonth() + 1).replace(/^(\d)$/, '0$1');
+
+    var crUrl = 'https://api.crossref.org/journals/2146-3131/works?sort=published&order=desc&rows=200&select=DOI,published-online&filter=from-pub-date:' + fromDate;
+    publishedOnlineDateMapPromise = fetch(crUrl)
+      .then(function (response) {
+        if (!response.ok) throw new Error('Crossref unavailable');
+        return response.json();
+      })
+      .then(function (payload) {
+        var map = {};
+        var items = payload && payload.message && Array.isArray(payload.message.items) ? payload.message.items : [];
+        items.forEach(function (work) {
+          var doi = normalizeDoi(work && work.DOI);
+          if (!doi) return;
+          var parts = work['published-online'] && work['published-online']['date-parts'] && work['published-online']['date-parts'][0];
+          if (!parts || parts.length < 3) return;
+          map[doi] = MONTH_NAMES[parts[1] - 1] + ' ' + parts[2] + ', ' + parts[0];
+        });
+        return map;
+      })
+      .catch(function () {
+        return {};
+      });
+
+    return publishedOnlineDateMapPromise;
   }
 
   function compareByPublishedDesc(a, b) {
@@ -758,6 +823,7 @@
       var citations = getCitationValue(article, citationMap).toLocaleString('en-US');
       var citationLabel = 'Citations';
       var hideCitations = tabKey === 'latest-published' || tabKey === 'articles-in-press';
+      var pubDate = formatPublishedDate(article);
 
       return '<article class="min-w-0" data-article-id="' + articleId + '">' +
         '<div class="flex items-center gap-2 text-sm text-gray-500 mb-2">' +
@@ -769,6 +835,7 @@
           '<a href="' + url + '" class="hover:text-teal-700 transition-colors">' + title + '</a>' +
         '</h3>' +
         (authors ? '<p class="mt-2 text-base text-gray-500 font-serif leading-relaxed">' + authors + '</p>' : '') +
+        (pubDate ? '<p class="mt-1 text-xs text-gray-400" data-pub-date>Published online: ' + pubDate + '</p>' : '') +
         '<div class="mt-3 pt-3 border-t border-gray-200 flex flex-wrap items-center gap-3">' +
           '<div class="flex flex-wrap items-center gap-4 text-xs text-gray-400">' +
             '<span title="Views" data-metric="views">Views: ' + views + '</span>' +
@@ -947,7 +1014,7 @@
       }
     }
 
-    // Eagerly fetch citation map in parallel with article data
+    // Eagerly fetch citation map and published-online dates in parallel with article data
     topCitedRankLoading = true;
     var citationMapReady = fetchTopJournalCitationMap()
       .then(function (map) {
@@ -961,25 +1028,33 @@
         topCitedRankLoading = false;
       });
 
+    var dateMapReady = fetchPublishedOnlineDateMap()
+      .then(function (map) {
+        publishedOnlineDateMap = Object.assign({}, publishedOnlineDateMap, map || {});
+      })
+      .catch(function () {});
+
     return Promise.all([
       window.BMJLazyData && typeof window.BMJLazyData.loadArticles === 'function'
         ? window.BMJLazyData.loadArticles()
         : Promise.resolve(),
       ensureArticlesInPressData(),
-      citationMapReady
+      citationMapReady,
+      dateMapReady
     ]).catch(function () {
       // Keep UI functional with whichever data is already available.
     }).then(function () {
       applyTab(activeKey);
+      return citationMap;
     });
   }
 
-  function renderImageCorner(data) {
+  function renderImageCorner(data, citationMap) {
     var section = document.getElementById('image-corner-section');
     var container = document.getElementById('image-corner');
     if (!section || !container) return;
 
-    var images = getImageCornerArticles(data);
+    var images = getImageCornerArticles(data, citationMap);
     if (!images.length) {
       section.classList.add('hidden');
       return;
@@ -990,6 +1065,7 @@
       var articleId = escapeHtml(String(article.id || ''));
       var title = escapeHtml(stripTags(article.title || 'Untitled'));
       var authors = escapeHtml(formatAuthors(article.authors));
+      var preview = escapeHtml(stripTags(article.previewText || '').trim());
       var imageSrc = toAbsoluteImageUrl(String(article.image || '').trim());
       var cropStyle = getImageCornerCropStyle(article);
       var imageHtml = imageSrc
@@ -1007,7 +1083,9 @@
         '<div class="p-6">' +
           '<span class="inline-block px-2 py-0.5 text-xs font-semibold rounded-full mb-2 ' + imageCornerBadgeClass + '">Image Corner</span>' +
           '<h3 class="text-lg font-semibold text-gray-900 group-hover:text-teal-700 transition-colors mb-2">' + title + '</h3>' +
-          (authors ? '<p class="text-sm text-gray-500">' + authors + '</p>' : '') +
+          (preview ? '<p class="text-sm text-gray-500 font-serif mb-2">' + preview + '</p>' : '') +
+          (authors ? '<p class="text-sm text-gray-400">' + authors + '</p>' : '') +
+          (function () { var d = formatPublishedDate(article); return d ? '<p class="mt-1 text-xs text-gray-400" data-pub-date>Published online: ' + d + '</p>' : ''; })() +
         '</div>' +
       '</a>';
     }).join('');
@@ -1307,8 +1385,14 @@
     var data = window.HOMEPAGE_DATA || {};
     initHeroCarousel(data);
     setupLazyArticleLoader();
-    renderArticlesDiscovery(data);
-    renderImageCorner(data);
+    var articlesReady = renderArticlesDiscovery(data);
+    if (articlesReady && typeof articlesReady.then === 'function') {
+      articlesReady.then(function (citationMap) {
+        renderImageCorner(data, citationMap || {});
+      });
+    } else {
+      renderImageCorner(data, {});
+    }
     renderNews();
     renderMetricsProvenance(data);
   }

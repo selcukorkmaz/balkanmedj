@@ -318,6 +318,10 @@ footer.bg-teal-900.text-white[aria-label="Site footer"] .border-teal-800{
     font-size:1rem;
     line-height:1.45;
   }
+  #home-articles-mobile-accordion [data-article-id] > [data-pub-date]{
+    font-size:.70rem;
+    line-height:1.3;
+  }
   #home-articles-mobile-accordion [data-article-id] > div:last-child{
     gap:.55rem;
   }
