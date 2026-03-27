@@ -3103,6 +3103,17 @@
         addMeta('citation_language', 'en');
         addMeta('citation_publisher', 'Trakya University');
         addMeta('citation_fulltext_html_url', window.location.href);
+
+        if (article.pdfUrl) {
+          var pdfAbsUrl = article.pdfUrl.indexOf('http') === 0
+            ? article.pdfUrl
+            : window.location.origin + '/' + article.pdfUrl.replace(/^\//, '');
+          addMeta('citation_pdf_url', pdfAbsUrl);
+        }
+
+        if (article.pmid) {
+          addMeta('citation_pmid', article.pmid);
+        }
       })();
 
       // Inject JSON-LD ScholarlyArticle structured data
@@ -3981,6 +3992,12 @@
               '</button>'
           ) +
           '<div class="access-meta">Open Access — Free to Read</div>' +
+          (article.pmid
+            ? '<a href="https://pubmed.ncbi.nlm.nih.gov/' + escapeAttr(article.pmid) + '/" target="_blank" rel="noopener" class="w-full flex items-center justify-center gap-2 px-4 py-2.5 mt-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors text-sm font-medium">' +
+                '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>' +
+                'View on PubMed' +
+              '</a>'
+            : '') +
         '</div>';
 
       var utilityCardsHtml =
@@ -4134,6 +4151,9 @@
                 '<div class="article-meta-card">' +
                   '<div class="flex flex-wrap items-center gap-x-6 gap-y-2">' +
                     '<div><span class="text-gray-500">DOI:</span> <span class="text-teal-700">' + escapeHtml(normalizeDoi(article.doi) || article.doi) + '</span></div>' +
+                    (article.pmid
+                      ? '<div><a href="https://pubmed.ncbi.nlm.nih.gov/' + escapeAttr(article.pmid) + '/" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-teal-700 hover:text-teal-800 font-medium"><span class="text-gray-500">PMID:</span> ' + escapeHtml(article.pmid) + ' <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></div>'
+                      : '') +
                     publicationHeaderHtml +
                   '</div>' +
                   publicationHistoryPanelHtml +

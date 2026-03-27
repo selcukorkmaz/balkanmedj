@@ -27,7 +27,8 @@
     "sourceTextUrl": "",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2822",
     "localPdfUrl": "js/data/pdfs/2822.pdf",
-    "pdfUrl": "js/data/pdfs/2822.pdf"
+    "pdfUrl": "js/data/pdfs/2822.pdf",
+    "pmid": ""
   },
   {
     "id": 2818,
@@ -63,7 +64,8 @@
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2818",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2818",
     "localPdfUrl": "js/data/pdfs/2818.pdf",
-    "pdfUrl": "js/data/pdfs/2818.pdf"
+    "pdfUrl": "js/data/pdfs/2818.pdf",
+    "pmid": "41562227"
   },
   {
     "id": 2819,
@@ -124,7 +126,8 @@
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2819",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2819",
     "localPdfUrl": "js/data/pdfs/2819.pdf",
-    "pdfUrl": "js/data/pdfs/2819.pdf"
+    "pdfUrl": "js/data/pdfs/2819.pdf",
+    "pmid": "41562242"
   },
   {
     "id": 2791,
@@ -185,7 +188,8 @@
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2791",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2791",
     "localPdfUrl": "js/data/pdfs/2791.pdf",
-    "pdfUrl": "js/data/pdfs/2791.pdf"
+    "pdfUrl": "js/data/pdfs/2791.pdf",
+    "pmid": "41186127"
   },
   {
     "id": 2795,
@@ -241,7 +245,8 @@
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2795",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2795",
     "localPdfUrl": "js/data/pdfs/2795.pdf",
-    "pdfUrl": "js/data/pdfs/2795.pdf"
+    "pdfUrl": "js/data/pdfs/2795.pdf",
+    "pmid": "41320917"
   },
   {
     "id": 2794,
@@ -360,7 +365,7 @@
       },
       {
         "name": "Hilmi Bolat",
-        "affiliation": "",
+        "affiliation": "Department of Medical Genetics, Balıkesir University Faculty of Medicine, Balıkesir, Türkiye",
         "orcid": ""
       }
     ],
@@ -387,7 +392,8 @@
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2794",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2794",
     "localPdfUrl": "js/data/pdfs/2794.pdf",
-    "pdfUrl": "js/data/pdfs/2794.pdf"
+    "pdfUrl": "js/data/pdfs/2794.pdf",
+    "pmid": "41320952"
   },
   {
     "id": 2771,
@@ -433,7 +439,8 @@
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2771",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2771",
     "localPdfUrl": "js/data/pdfs/2771.pdf",
-    "pdfUrl": "js/data/pdfs/2771.pdf"
+    "pdfUrl": "js/data/pdfs/2771.pdf",
+    "pmid": "40919854"
   },
   {
     "id": 2820,
@@ -484,7 +491,8 @@
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2820",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2820",
     "localPdfUrl": "js/data/pdfs/2820.pdf",
-    "pdfUrl": "js/data/pdfs/2820.pdf"
+    "pdfUrl": "js/data/pdfs/2820.pdf",
+    "pmid": "41562244"
   },
   {
     "id": 2778,
@@ -530,7 +538,8 @@
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2778",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2778",
     "localPdfUrl": "js/data/pdfs/2778.pdf",
-    "pdfUrl": "js/data/pdfs/2778.pdf"
+    "pdfUrl": "js/data/pdfs/2778.pdf",
+    "pmid": "41037006"
   },
   {
     "id": 2772,
@@ -586,7 +595,8 @@
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2772",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2772",
     "localPdfUrl": "js/data/pdfs/2772.pdf",
-    "pdfUrl": "js/data/pdfs/2772.pdf"
+    "pdfUrl": "js/data/pdfs/2772.pdf",
+    "pmid": "40936298"
   },
   {
     "id": 2821,
@@ -632,6 +642,7 @@
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2821",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2821",
     "localPdfUrl": "js/data/pdfs/2821.pdf",
-    "pdfUrl": "js/data/pdfs/2821.pdf"
+    "pdfUrl": "js/data/pdfs/2821.pdf",
+    "pmid": "41562245"
   }
 ]

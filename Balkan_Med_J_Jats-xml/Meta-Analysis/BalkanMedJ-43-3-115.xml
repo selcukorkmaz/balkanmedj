@@ -1,0 +1,3191 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.3 20210610//EN" "https://jats.nlm.nih.gov/archiving/1.3/JATS-archivearticle1-3.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="other" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="pmc">101571817</journal-id>
+      <journal-title-group>
+        <journal-title>Balkan Medical Journal</journal-title>
+        <abbrev-journal-title>Balkan Med J</abbrev-journal-title>
+      </journal-title-group>
+      <issn publication-format="print">2146-3123</issn>
+      <issn publication-format="electronic">2146-3131</issn>
+      <publisher>
+        <publisher-name>Galenos Publishing</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.4274/balkanmedj.galenos.2025.2025-10-205</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Meta-analysis</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Comparison of Tocolytic Agents for Successful External Cephalic Version: A Bayesian Network Meta-Analysis of Sixteen Randomized Controlled Trials</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0000-0002-3824-3716</contrib-id>
+          <name>
+            <surname>Xiao</surname>
+            <given-names>Yunyun</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0009-0003-7082-9180</contrib-id>
+          <name>
+            <surname>Shi</surname>
+            <given-names>Jinhe</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">2</xref>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid">0000-0002-7358-7899</contrib-id>
+          <name>
+            <surname>Dong</surname>
+            <given-names>Yan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">1</xref>
+          <email>dlfcdy@126.com</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid">0000-0003-4715-5512</contrib-id>
+          <name>
+            <surname>Han</surname>
+            <given-names>Lu</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">1</xref>
+          <email>13940801858@163.com</email>
+        </contrib>
+        <aff id="aff1"><label>1</label>Department of Gynecology and Obstetrics,  Dalian Maternal and Children’s Medical Group, Liaoning, China</aff>
+        <aff id="aff2"><label>2</label>Graduate School of Dalian Medical University,  Liaoning, China</aff>
+      </contrib-group>
+      <pub-date publication-format="electronic" date-type="collection">
+        <month>3</month>
+        <year>2026</year>
+      </pub-date>
+      <pub-date publication-format="electronic" date-type="pub">
+        <day>02</day>
+        <month>03</month>
+        <year>2026</year>
+      </pub-date>
+      <volume>43</volume>
+      <issue>3</issue>
+      <fpage>115</fpage>
+      <lpage>124</lpage>
+      <history>
+        <date date-type="received">
+          <day>28</day>
+          <month>10</month>
+          <year>2025</year>
+        </date>
+        <date date-type="accepted">
+          <day>18</day>
+          <month>12</month>
+          <year>2025</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright@Author(s) - Available online at http://balkanmedicaljournal.org/</copyright-statement>
+        <copyright-year>2026</copyright-year>
+        <copyright-holder>Balkan Medical Journal</copyright-holder>
+        <license license-type="open-access" xlink:href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">
+          <license-p>Content of this journal is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.</license-p>
+        </license>
+      </permissions>
+      <abstract abstract-type="section">
+        <sec>
+          <title>Background</title>
+          <p>Cesarean section is frequently performed for breech presentation; however, external cephalic version (ECV) is recommended as an alternative strategy to increase the likelihood of vaginal birth. Tocolytic agents are commonly administrated to improve ECV success, yet the comparative effectiveness of different regimens remains inadequately characterized.</p>
+        </sec>
+        <sec>
+          <title>Aims</title>
+          <p>To systematically evaluate and compare the efficacy and safety of various tocolytic agents in facilitating successful ECV through a Bayesian network meta-analysis.</p>
+        </sec>
+        <sec>
+          <title>Study Design</title>
+          <p>Bayesian network meta-analysis.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>Bayesian network meta-analysis was performed using the “gemtc” package in R 4.1.1. Treatment effects were quantified by calculating odds ratios (ORs) with corresponding 95% credible intervals (CrIs). Surface under the cumulative ranking curve values were used to rank tocolytic agents according to ECV success rates, maternal outcomes, and adverse events.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>A total of sixteen RCTs encompassing 2,817 participants and six distinct tocolytic agents met the inclusion criteria. Compared with placebo, terbutaline (OR: 2.7, 95% CrI: 1.1–6.4) and ritodrine (OR: 2.2, 95% CrI: 1.4–3.9) were associated with significantly higher ECV success rates. Additionally, terbutaline was linked to an increased likelihood of vaginal delivery (OR: 2.0, 95% CrI: 1.0–2.9). Maternal adverse effects, including tachycardia, palpitations, hypotension, nausea, dizziness, and flushing, were more frequently reported with terbutaline, nifedipine, and nitroglycerin than with placebo. No statistically significant differences in fetal heart rate abnormalities were detected among the elevated interventions.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>Terbutaline and ritodrine appear to offer superior efficacy in improving ECV success compared with alternative tocolytic agents, albeit with a higher incidence of maternal side effects. Consequently, clinical decision-making regarding tocolytic use should be informed by a comprehensive assessment of the associated benefits and potential risks.</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="introduction">
+      <title>INTRODUCTION</title>
+      <p>Breech presentation occurs in approximately 3–4% of term pregnancies<sup><xref ref-type="bibr" rid="ref-1">1</xref></sup> and constitutes the third most common indication for cesarean section (CS). In some regions, CS rates for breech delivery exceeds 93%.<sup><xref ref-type="bibr" rid="ref-2">2</xref>, <xref ref-type="bibr" rid="ref-3">3</xref>, <xref ref-type="bibr" rid="ref-4">4</xref>, <xref ref-type="bibr" rid="ref-5">5</xref></sup> Worldwide, the prevalence of CS increased markedly between 1990 and 2014, rising by 12.4% from 6.7% to 19.1%, with an average annual growth rate of 4.4% across 121 countries. This upward trend has been particularly pronounced in China.<sup><xref ref-type="bibr" rid="ref-6">6</xref>, <xref ref-type="bibr" rid="ref-7">7</xref></sup> The growing reliance on CS is concerning because it is associated with significant risks, including uterine injury, severe maternal morbidity, adverse perinatal outcomes, and an increased probability of repeat CS in subsequent pregnancies.<sup><xref ref-type="bibr" rid="ref-5">5</xref>, <xref ref-type="bibr" rid="ref-6">6</xref>, <xref ref-type="bibr" rid="ref-7">7</xref>, <xref ref-type="bibr" rid="ref-8">8</xref></sup></p>
+      <p>External cephalic version (ECV) is a manual obstetric procedure in which the fetus is rotated from a breech to a cephalic presentation through transabdominal manipulation. Evidence indicates that ECV can reduce cesarean delivery rates by approximately 40% while substantially increasing the likelihood of vaginal birth.<sup><xref ref-type="bibr" rid="ref-8">8</xref>, <xref ref-type="bibr" rid="ref-9">9</xref></sup> Consequently, major obstetrical organizations—including the American College of Obstetricians and Gynecologists (ACOG), the Society for Maternal-Fetal Medicine, the Royal College of Obstetricians and Gynecologists (RCOG), and the Royal Australian and New Zealand College of Obstetricians and Gynecologists, recommend the use of ECV for uncomplicated term breech pregnancies.<sup><xref ref-type="bibr" rid="ref-5">5</xref>, <xref ref-type="bibr" rid="ref-10">10</xref>, <xref ref-type="bibr" rid="ref-11">11</xref></sup> Economic evaluations further support its implementation, demonstrating that ECV is cost-effective when the probability of success exceeds 32% compared with planned cesarean delivery.<sup><xref ref-type="bibr" rid="ref-12">12</xref></sup></p>
+      <p>Several adjunctive strategies have been investigated to improve ECV success rates, including the use of tocolytic agents, neuraxial anesthesia, vibroacoustic stimulation, moxibustion, and amnioinfusion.<sup><xref ref-type="bibr" rid="ref-13">13</xref>, <xref ref-type="bibr" rid="ref-14">14</xref>, <xref ref-type="bibr" rid="ref-15">15</xref>, <xref ref-type="bibr" rid="ref-16">16</xref>, <xref ref-type="bibr" rid="ref-17">17</xref>, <xref ref-type="bibr" rid="ref-18">18</xref></sup> A meta-analysis by Cluver et al.<sup><xref ref-type="bibr" rid="ref-9">9</xref></sup> demonstrated the effectiveness of β-adrenergic agonists in facilitating ECV; however, evidence supporting other adjunctive interventions remains limited. Current guidelines from ACOG and RCOG recommend the use of tocolytics during ECV, with RCOG specifically endorsing β-adrenergic agonists.<sup><xref ref-type="bibr" rid="ref-11">11</xref></sup> Despite these recommendations, direct comparative evidence regarding the relative efficacy and safety profiles of different tocolytic agents remains insufficient.<sup><xref ref-type="bibr" rid="ref-9">9</xref></sup> To address this knowledge gap, the present Bayesian network meta-analysis systematically evaluates the effects of six tocolytic agents on ECV success rates and maternal adverse outcomes.</p>
+    </sec>
+    <sec sec-type="materials|methods">
+      <title>MATERIALS AND METHODS</title>
+      <sec>
+        <title>
+          <italic>Ethical approval</italic>
+        </title>
+        <p>All data used in this study were derived from previously published research. Therefore, ethical approval and written informed consent were not required.</p>
+      </sec>
+      <sec>
+        <title>
+          <italic>Search strategy</italic>
+        </title>
+        <p>A Bayesian network meta-analysis was conducted to compare the success rates and adverse effects of commonly used tocolytic agents during ECV based on eligible randomized controlled trials (RCTs). This study was prospectively registered in the International Prospective Register of Systematic Reviews under registration number CRD 42022217842. A comprehensive literature search was performed in PubMed (http://www.ncbi.nlm.nih.gov/pubmed), the Cochrane Library (http://www.cochranelibrary.com), Embase (http://www.embase.com), and Web of Science (http://isiknowledge.com/) to identify relevant studies published up to October 31, 2024. No restrictions were imposed on the start date. The search strategy incorporated both MeSH terms and free-text words, including “Breech presentation,” “Breech,” “External cephalic version,” “ECV,” “Version fetal,” “Tocolytic agent,” “Tocolysis,” “Tocolytic,” “Uterine relaxation.”</p>
+      </sec>
+      <sec>
+        <title>
+          <italic>Selection criteria and data extraction</italic>
+        </title>
+        <p>Studies were considered eligible if they met the following inclusion criteria: (1) Participants had a breech presentation and underwent ECV at or near term (gestational age ≥ 36 weeks). (2) Interventions involved the use of different tocolytic agents, with or without placebo. (3) Reasons for exclusion of patients in the study were almost consistent with the ACOGs recommendations on ECV. (ACOG practice bulletin 2021) (4) The study should at least provide the success rate of ECV. 5) The study design was a RCT. (6) The published language was English. Studies were excluded if: (1) More than one type of tocolytic agent was administered during a single ECV procedure. (2) Patients received anesthesia. (3) The study was incomplete. (4) Full-text articles or duplicate studies were identified. The following data were extracted from each included study: author, year of publication, sample size, type of tocolytic agent used, number of successful ECVs, vaginal delivery outcomes, and reported maternal side effects associated with tocolysis. The primary outcome was the ECV success rate, defined as confirmation of cephalic presentation by ultrasound at the conclusion of the procedure.</p>
+      </sec>
+      <sec>
+        <title>
+          <italic>Risk of bias assessment</italic>
+        </title>
+        <p>The methodologically quality of the included RCTs was independently assessed using the Cochrane Collaboration’s risk-of-bias tool. The following domains were evaluated as potential sources of bias: (1) Random sequence generation (selection bias); (2) Allocation concealment (selection bias); (3) Blinding of participants and personnel (performance bias); (4) Blinding of outcome assessment (detection bias); (5) Incomplete outcome data (attrition bias); (6) Selective reporting (reporting bias); (7) Other potential sources of bias. Each trial received a total score out of 12 points. Studies scoring 10–12 points were classified as having a low-risk of bias, whereas those scoring 6 points or fewer were considered to have a high-risk of bias. Data extraction and quality assessment were performed independently by two investigators, with disagreements resolved through consultation with a third investigator.</p>
+      </sec>
+      <sec>
+        <title>
+          <italic>Statistical analysis</italic>
+        </title>
+        <p>The network meta-analysis was conducted within a Bayesian framework using the “gemtc” package in R software (version 4.1.1; R Foundation, https://www.r-project.org), which interfaces with JAGS (Version 4.3.0). Odds ratios (ORs) and corresponding 95% credible intervals (CrIs) were calculated to compare the efficacy and safety of different tocolytic agents. The mtc.run function was used to generate posterior samples, with a “burn-in” period of 20,000 iterations per chain followed by 50,000 sampling iterations across four simultaneously run Markov chain Monte Carlo chains. Model convergence was assessed using the Brooks–Gelman–Rubin diagnostic by calculating the potential scale reduction factor (R-hat), along with visual inspection of trace plots and density plots. Treatment ranking probabilities were estimated, and the surface under the cumulative ranking curve (SUCRA) was calculated to facilitate comparative evaluation of tocolytic efficacy. Consistency between direct and indirect evidence was examined using the node-splitting method. Inconsistency was assessed using a Bayesian <italic>p </italic>value, with values below 0.05 indicating statistically significant inconsistency. This Bayesian <italic>p </italic>value represents a posterior predictive check, assessing whether discrepancies between direct and indirect evidence are plausible under the assumption of consistency, and differs conceptually from frequentist <italic>p </italic>values, which estimates the probability of observing the data (or more extreme data) assuming the null hypothesis is true. Statistical heterogeneity was evaluated using the mtc.anohe command based on the I<sup>2</sup> statistic. An I<sup>2</sup> value greater than 50% was considered indicative of substantial heterogeneity, prompting subgroup analyses to explore potential sources. Risk-of-bias summary graphs were generated using RevMan software (version 5.30).</p>
+      </sec>
+    </sec>
+    <sec sec-type="results">
+      <title>RESULTS</title>
+      <sec>
+        <title>
+          <italic>Basic information</italic>
+        </title>
+        <p>The descriptive literature search initially identified 559 records. After screening titles and abstracts, 480 studies were excluded due to irrelevant content, case reports, reviews, meta-analysis, or duplicates publications. Full-text review of the remaining articles led to the exclusion of an additional 49 studies because they were case-control studies, cohort studies, or did not involve comparisons of tocolytic agents during the ECV procedure. Furthermore, 13 studies were excluded because multiple tocolytic agents were administered to the same patient during a single procedure. Ultimately, 16 RCTs,<sup><xref ref-type="bibr" rid="ref-19">19</xref>, <xref ref-type="bibr" rid="ref-20">20</xref>, <xref ref-type="bibr" rid="ref-21">21</xref>, <xref ref-type="bibr" rid="ref-22">22</xref>, <xref ref-type="bibr" rid="ref-23">23</xref>, <xref ref-type="bibr" rid="ref-24">24</xref>, <xref ref-type="bibr" rid="ref-25">25</xref>, <xref ref-type="bibr" rid="ref-26">26</xref>, <xref ref-type="bibr" rid="ref-27">27</xref>, <xref ref-type="bibr" rid="ref-28">28</xref>, <xref ref-type="bibr" rid="ref-29">29</xref>, <xref ref-type="bibr" rid="ref-30">30</xref>, <xref ref-type="bibr" rid="ref-31">31</xref>, <xref ref-type="bibr" rid="ref-32">32</xref>, <xref ref-type="bibr" rid="ref-33">33</xref>, <xref ref-type="bibr" rid="ref-34">34</xref></sup> encompassing a total of 2,817 patients, met the inclusion criteria and were included in the analysis. The study selection process is illustrated in <xref ref-type="fig" rid="figure-1">Figure 1</xref>, key characteristics of the included trials are summarized in <xref ref-type="table" rid="table-1">Table 1</xref>. All eligible studies were RCTs. Methodological quality was evaluated using the Cochrane Handbook risk-of-bias tool, and potential sources of bias were classified as low, high, or unclear. The detailed results of the risk-of-bias assessment are presented in <xref ref-type="fig" rid="figure-2">Figure 2a</xref> and <xref ref-type="fig" rid="figure-2">Figure 2b</xref>. Network meta-analyses were performed for ECV success rates, vaginal delivery outcomes, common maternal adverse effects, and abnormal fetal heart rate. The incidence of adverse effects and fetal heart rate abnormalities associated with each tocolytic agent is summarized in <xref ref-type="table" rid="table-2">Table 2</xref>.</p>
+        <p>The 16 included trials evaluated four major classes of tocolytic agents: β-adrenergic agonists (terbutaline, fenoterol, and ritodrine), selective oxytocin receptor antagonists (atosiban), calcium channel blockers (nifedipine), and nitric oxide donors (nitroglycerine). These agents were compared either directly with one another or against placebo. Network plots were generated according to the specific outcomes assessed, as shown in <xref ref-type="fig" rid="figure-3">Figure 3</xref>. The thickness of the connecting lines reflect the number of direct comparisons, with corresponding numerical values displayed on each link.</p>
+      </sec>
+      <sec>
+        <title>
+          <italic>Success rate of ECV</italic>
+        </title>
+        <p>All 16 included studies reported both successful and failed ECV attempts (<xref ref-type="table" rid="table-1">Table 1</xref>), with observed success rates ranging from 8.1% to 68%. Compared with placebo, terbutaline (OR = 2.7, 95% CrI: 1.1 to 6.4) and ritodrine (OR = 2.2, 95% CrI: 1.4 to 3.9) demonstrated statistically significant positive improvements in ECV success. In contrast, no significant benefit was observed for fenoterol (OR = 2.5, 95% CrI: 0.63 to 11), atosiban (OR = 1.9, 95% CrI: 0.68 to 6.0), nifedipine (OR = 1.2, 95% CrI: 0.5 to 2.6), or nitroglycerin (OR = 0.86, 95% CrI: 0.44 to 1.7) when compared with placebo (<xref ref-type="fig" rid="figure-4">Figure 4a</xref>). Based on SUCRA values, treatment were ranked in descending order of effectiveness as follows: terbutaline (0.809), fenoterol (0.766), ritodrine (0.721), atosiban (0.582), nifedipine (0.306), placebo (0.198), and nitroglycerin (0.117) (<xref ref-type="fig" rid="figure-5">Figure 5a</xref>). Model convergence was confirmed using the Brooks–Gelman–Rubin diagnostic. The potential scale reduction factor (R-hat) for all parameters, including treatment comparisons and the heterogeneity parameter (sd.d), ranged from 1.000 to 1.003 for both point estimates and 97.5% upper confidence limits (<xref ref-type="link" rid="supplementlink-1">Supplementary Table 1</xref>, <xref ref-type="link" rid="supplementlink-1">Supplementary Figure 1</xref>), well below the predefined threshold of 1.05. These results indicate excellent chain mixing and convergence, supporting the reliability of the posterior estimates. Trace plots further demonstrated satisfactory convergence after 50,000 iterations (<xref ref-type="link" rid="supplementlink-1">Supplementary Figure 2</xref>). Heterogeneity testing identified substantial inconsistency (I² &gt; 50%) for the nitroglycerin versus placebo comparison between the studies by Hilton et al.<sup><xref ref-type="bibr" rid="ref-21">21</xref></sup> and Bujold et al.<sup><xref ref-type="bibr" rid="ref-28">28</xref></sup> (<xref ref-type="link" rid="supplementlink-1">Supplementary Figure 3</xref>). Consequently, a subgroup analysis stratified by route of administration was conducted. The resulting ORs and CrIs are presented in <xref ref-type="fig" rid="figure-4">Figure 4c</xref>. SUCRA rankings in this subgroup analysis were as follows: subcutaneous terbutaline (0.842), intravenous terbutaline (0.720), intravenous fenoterol (0.712), intravenous ritodrine (0.670), intravenous atosiban (0.548), intravenous nitroglycerin (0.389), oral nifedipine (0.334), placebo (0.216), and oral nitroglycerin (0.067) (<xref ref-type="fig" rid="figure-5">Figure 5c</xref>). No statistically significant inconsistency or qualitative differences (<italic>p</italic> &gt; 0.05) were detected across studies (<xref ref-type="link" rid="supplementlink-1">Supplementary Figures 4-6</xref>).</p>
+      </sec>
+      <sec>
+        <title>
+          <italic>Vaginal delivery rate</italic>
+        </title>
+        <p>Fourteen studies reported delivery outcomes, with vaginal delivery rates ranging from 14.57% to 82.14%. Compared with placebo, terbutaline was associated with a significantly higher rate of vaginal delivery (OR = 2.0, 95% CrI: 1.0 to 2.9). No statistically significant differences were observed for fenoterol (OR = 1.4, 95% CrI: 0.44 to 4.9), ritodrine (OR = 1.4, 95% CrI: 0.89 to 2.2), atosiban (OR = 1.2, 95% CrI: 0.48 to 3.1), nifedipine (OR = 0.85, 95% CrI: 0.44 to 1.6), or nitroglycerin (OR = 1.4, 95% CrI: 0.83 to 2.6) (<xref ref-type="fig" rid="figure-4">Figure 4b</xref>). According to SUCRA values, treatments were ranked as follows: terbutaline (0.870), nitroglycerin (0.615), fenoterol (0.608), ritodrine (0.602), atosiban (0.424), placebo (0.243), and nifedipine (0.138) (<xref ref-type="fig" rid="figure-5">Figure 5b</xref>). The potential scale reduction factor (R-hat) for all parameters ranged from 1.000 to 1.003 (point estimate and 97.5% upper confidence interval), falling below the 1.05 threshold (<xref ref-type="link" rid="supplementlink-1">Supplementary Table 1</xref>, <xref ref-type="link" rid="supplementlink-1">Supplementary Figure 7</xref>), which confirms excellent chain mixing and supports the reliability of the posterior estimates. The trace plot was shown in <xref ref-type="link" rid="supplementlink-1">Supplementary Figure 8</xref>, also showed satisfactory convergence after 50,000 iterations. Significant heterogeneity (I² &gt; 50%) was detected for the nitroglycerin versus placebo comparison between the Hilton et al.<sup><xref ref-type="bibr" rid="ref-21">21</xref></sup> and Bujold et al.<sup><xref ref-type="bibr" rid="ref-28">28</xref></sup> studies (<xref ref-type="link" rid="supplementlink-1">Supplementary Figure 9</xref>). Subgroup analysis by administration route was therefore conducted. ORs are shown in <xref ref-type="fig" rid="figure-4">Figure 4d</xref>, with corresponding SUCRA rankings as follows: subcutaneous terbutaline (0.804), intravenous terbutaline (0.778), intravenous nitroglycerin (0.730), intravenous fenoterol (0.594), intravenous ritodrine (0.581), intravenous atosiban (0.437), placebo (0.262), oral nifedipine (0.179), and oral nitroglycerin (0.136) (<xref ref-type="fig" rid="figure-5">Figure 5d</xref>). No significant inconsistency was identified in either the overall analysis or subgroup analyses (<italic>p</italic> &gt; 0.05) (<xref ref-type="link" rid="supplementlink-1">Supplementary Figures 10-12</xref>).</p>
+      </sec>
+      <sec>
+        <title>
+          <italic>Side effects of tocolytic agents</italic>
+        </title>
+        <p>Seven studies reported data on common maternal adverse effects associated with tocolysis (<xref ref-type="table" rid="table-2">Table 2</xref>). Six of these studies were included in the network meta-analysis, while Velzel et al.<sup><xref ref-type="bibr" rid="ref-20">20</xref></sup> was excluded due to the absence of a shared active comparator. Abnormal fetal heart rate outcomes were reported in seven studies. The estimated ORs and corresponding CrIs are presented in <xref ref-type="fig" rid="figure-4">Figure 4e</xref> (maternal adverse effects) and <xref ref-type="fig" rid="figure-4">Figure 4f</xref> (fetal heart rate abnormalities). Compare with placebo, significantly higher odds of maternal adverse effects were observed for terbutaline (OR: 11, 95% CrI: 1.7 to 71), nifedipine (OR: 5.1, 95% CrI: 1.0 to 29), and nitroglycerin (OR: 4.1, 95% CrI: 1.1 to 16). Ritodrine showed a non-significant trend toward adverse effects (OR: 4.3, 95% CrI: 0.38 to 54) (<xref ref-type="fig" rid="figure-4">Figure 4e</xref>). No statistically significant differences in abnormal fetal heart rate were detected for ant tocolytic agent compared with placebo (<xref ref-type="fig" rid="figure-4">Figure 4f</xref>). Analyses of these outcomes revealed no substantial inconsistency or heterogeneity actross studies (<xref ref-type="link" rid="supplementlink-1">Supplementary Figures 13-16</xref>).</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion">
+      <title>DISCUSSION</title>
+      <p>ECV has been practiced since the time of Hippocrates.<sup><xref ref-type="bibr" rid="ref-37">37</xref>, <xref ref-type="bibr" rid="ref-38">38</xref></sup> Prior to the mid-1970s, ECV was commonly attempted before term, based on the prevailing belief that the procedure was rarely successful at term gestation.<sup><xref ref-type="bibr" rid="ref-39">39</xref>, <xref ref-type="bibr" rid="ref-40">40</xref>, <xref ref-type="bibr" rid="ref-41">41</xref></sup> However, the use of preterm ECV declined after the mid-1970s because of concerns regarding perinatal complications, including preterm rupture of membranes, preterm labor, placental abruption, and fetomaternal transfusion.<sup><xref ref-type="bibr" rid="ref-39">39</xref></sup> Since the 1980s, accumulating evidence has demonstrated that ECV can be safely and effectively performed in term breech pregnancies, with a relatively low incidence of complications.<sup><xref ref-type="bibr" rid="ref-36">36</xref>, <xref ref-type="bibr" rid="ref-42">42</xref>, <xref ref-type="bibr" rid="ref-43">43</xref></sup> Subsequent RCTs further confirmed that ECV performed at or near term significantly reduces the rate of non-cephalic presentation at birth and cesarean delivery attributable to malpresentation.<sup><xref ref-type="bibr" rid="ref-40">40</xref>, <xref ref-type="bibr" rid="ref-41">41</xref></sup> In line with this evidence, contemporary clinical practice guidelines recommend ECV at or near term.<sup><xref ref-type="bibr" rid="ref-6">6</xref>, <xref ref-type="bibr" rid="ref-41">41</xref></sup> Accordingly, all participants included in the present study underwent ECV at a gestational age beyond 36 weeks.</p>
+      <p>Although tocolysis is widely recommended to facilitate ECV, direct comparisons among different tocolytic agents remain limited, particularly with respect to safety profiles. The most recent meta-analysis by Cluver et al.<sup><xref ref-type="bibr" rid="ref-9">9</xref></sup> evaluated tocolytics as a broad category rather than comparing individual agents. Moreover, methodological heterogeneity across previous studies, such as repeated administration of multiple tocolytic,<sup><xref ref-type="bibr" rid="ref-36">36</xref></sup> inclusion of pregnancies before 36 weeks’ gestation.<sup><xref ref-type="bibr" rid="ref-35">35</xref></sup> or the use of anesthesia<sup><xref ref-type="bibr" rid="ref-44">44</xref></sup> has further complicated interpretation of the evidence. To address these gaps, we conducted a Bayesian network meta-analysis of 16 RCTs to compare the effects of six commonly used tocolytic agents on ECV success, vaginal delivery rates, and associated complications. Although SUCRA rankings suggested that all tocolytics agents except nitroglycerin ranked higher than placebo in terms of ECV success, only terbutaline and ritodrine demonstrated statistically significantly improvements when ORs and CrIs were considered. Fenoterol, atosiban, nifedipine, and nitroglycerin did not show a significant advantage over placebo.</p>
+      <p>Because substantial heterogeneity was identified between the Hilton et al.<sup><xref ref-type="bibr" rid="ref-21">21</xref></sup> and Bujold et al.<sup><xref ref-type="bibr" rid="ref-28">28</xref></sup> studies for the comparison of nitroglycerin vs. placebo, a subgroup analysis stratified by route of administration was performed. This analysis demonstrated that subcutaneous terbutaline and intravenous ritodrine significantly improved ECV success rates. In contrast, intravenous terbutaline, intravenous fenoterol, intravenous atosiban, oral nifedipine were not associated with a significant benefit over placebo. Importantly, these subgroup findings were consistent with the primary analysis and did not alter the overall conclusions. Subcutaneous administration of terbutaline was associated with improvement in the ECV success rate. Based on SUCRA rankings, only orally administered nitroglycerin demonstrated a lower relative efficacy than placebo, although this difference did not reach statistical significance.</p>
+      <p>With respect to vaginal delivery outcomes, SUCRA rankings indicated that nitroglycerin, fenoterol, ritodrine, and atosiban ranked higher than placebo, whereas nifedipine ranked lowest. However, terbutaline was the only agent that demonstrated a statistically significant increase in vaginal delivery rates. The low SUCRA value observed for nifedipine in relation to successful ECV may be attributable to dosage differences across studies. Specifically, the Collaris and Tan<sup><xref ref-type="bibr" rid="ref-22">22</xref></sup> trial employed a 10 mg dose, yielding a vaginal delivery rate of 22.7%, whereas other studies used a 20 mg dose and reported higher rates (48.7% and 86.0%). Although this difference did not reach statistical significance, it suggests a potential dose-response relationship and does not negate a possible beneficial effect of nifedipine. Subgroup analysis further reinforced the superior performance of subcutaneously administered terbutaline compared with other agents. Commonly reported maternal adverse effects associated with tocolytic use included tachycardia, palpitations, hypotension, nausea, dizziness, and flushing. Terbutaline, nifedipine, and nitroglycerin were consistently associated with higher incidences of these adverse events, whereas ritodrine did not demonstrate this pattern. In the study by Velzel et al.<sup><xref ref-type="bibr" rid="ref-20">20</xref></sup> palpitations occurred significantly more frequently in the fenoterol group than in the atosiban group; however, no other adverse events differed significantly between these two agents. Importantly, none of the evaluated tocolytics were associated with abnormal fetal heart rate patterns. Given the limited amount of studies and substantial variability in reporting, these safety findings should be interpreted cautiously and regarded as exploratory and potentially underpowered.</p>
+      <p>Overall, our results indicate that tocolytic agents can facilitate ECV, with terbutaline and ritodrine showing the most consistent and statistically significant improvements in success rate. Terbutaline was also associated with an increased likelihood of vaginal delivery. However, with the exception of ritodrine, most tocolytics were linked to higher incidence of maternal adverse effects. Importantly, no agent was associated with clinically significant fetal heart rate abnormalities.</p>
+      <p>Based on the available evidence, terbutaline and ritodrine appear to be the most effective agents for improving ECV success. When considering their use, clinicians must carefully evaluate the potential benefits against the risk of maternal side effects, a trade-off that should be discussed with patients as part of shared decision-making.<sup><xref ref-type="bibr" rid="ref-45">45</xref></sup> Whether uterine relaxants should be used routinely during ECV remains a matter of debate.<sup><xref ref-type="bibr" rid="ref-9">9</xref>, <xref ref-type="bibr" rid="ref-45">45</xref></sup> Given that ECV success is strongly influenced by fetal head palpability and uterine relaxation, the decision to administer tocolysis should be individualized and guided by the operator’s clinical assessment.<sup><xref ref-type="bibr" rid="ref-46">46</xref>, <xref ref-type="bibr" rid="ref-47">47</xref>, <xref ref-type="bibr" rid="ref-48">48</xref>, <xref ref-type="bibr" rid="ref-49">49</xref>, <xref ref-type="bibr" rid="ref-50">50</xref>, <xref ref-type="bibr" rid="ref-51">51</xref></sup> Thus, uterine relaxants are not universally required but may be particularly beneficial in cases where excessive uterine tension limits effective manipulation.</p>
+      <p>Several limitations warrant consideration. First, the included studies span more than three decades (1987–2020), during which clinical practice has evolved substantially. This temporal variation may partly explain the wide ranges observed in ECV success (8.1–68%) and vaginal birth rates (14.57–82.14%). Second, dosage regimens and routes of administration for the same tocolytic agent were not uniform across studies. Third, other β-receptor agonists, such as salbutamol and hexoprenaline, were not included due to the absence of eligible RCTs. However, given their infrequent use in contemporary ECV practice within our clinical setting, their exclusion is unlikely to have materially influenced the results. Despite these limitations, none are considered to compromise the validity of the primary findings.</p>
+      <p>In conclusion, this network meta-analysis demonstrates that terbutaline is associated with a significant increase in cephalic presentation at delivery, while both terbutaline and ritodrine improve the likelihood of successful ECV. With the exception of ritodrine, most tocolytic agents were associated with increased maternal adverse effects, although none were linked to abnormal fetal heart rate outcomes. The route of administration may represent an important determinant of tocolytic efficacy and warrant further focused investigation.</p>
+    </sec>
+    <sec>
+      <title>Supplementary Materials</title>
+      <supplementary-material id="supplementlink-1">
+        <label>Supplementary</label>
+        <caption>
+          <p>
+            <ext-link ext-link-type="uri" xlink:href="https://balkanmedicaljournal.org/img/files/2025.2025-10-205-suppl-r.pdf">https://balkanmedicaljournal.org/img/files/2025.2025-10-205-suppl-r.pdf</ext-link>
+          </p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn id="fn-0" fn-type="ethics">
+        <p><bold>Ethics Committee Approval:</bold> Not applicable.</p>
+      </fn>
+      <fn id="fn-1" fn-type="consent">
+        <p><bold>Informed Consent:</bold> Not applicable.</p>
+      </fn>
+      <fn id="fn-2" fn-type="data-sharing">
+        <p><bold>Data Sharing Statement:</bold> The data that support the findings of this study are available from the corresponding author upon reasonable request.</p>
+      </fn>
+      <fn id="fn-3" fn-type="authorship-contributions">
+        <p><bold>Authorship Contributions:</bold> Concept- Y.X., Y.D., L.H.; Design- Y.X., Y.D., L.H.; Supervision- Y.D., L.H.; Funding- Y.D.; Materials- H Y.X., J.S.; Data Collection or Processing- Y.X., J.S., Y.D.; Analysis and/or Interpretation- Y.X., J.S., Y.D.; Literature Review- Y.X., J.S., L.H.; Writing- Y.X.; Critical Review- Y.D., L.H.</p>
+      </fn>
+      <fn id="fn-4" fn-type="coi-statement">
+        <p><bold>Conflict of Interest:</bold> The authors declare that they have no conflict of interest.</p>
+      </fn>
+      <fn id="fn-5" fn-type="funding">
+        <p><bold>Funding:</bold> This work was supported by Dalian Science and Technology Innovation Fund (2020JJ27SN084).</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="ref-1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hutton</surname>
+              <given-names>EK</given-names>
+            </name>
+            <name>
+              <surname>Hofmeyr</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Dowswell</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>External cephalic version for breech presentation before term.</article-title>
+          <source>Cochrane Database Syst Rev</source>
+          <year iso-8601-date="2015">2015</year>
+          <volume>2015</volume>
+          <issue>7</issue>
+          <fpage>CD000084</fpage>
+          <pub-id pub-id-type="doi">10.1002/14651858.CD000084.pub3</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rietberg</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Elferink-Stinkens</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Visser</surname>
+              <given-names>GH</given-names>
+            </name>
+          </person-group>
+          <article-title>the effect of the term breech trial on medical intervention behaviour and neonatal outcome in The Netherlands: an analysis of 35,453 term breech infants.</article-title>
+          <source>BJOG</source>
+          <year iso-8601-date="2005">2005</year>
+          <volume>112</volume>
+          <issue>2</issue>
+          <fpage>205</fpage>
+          <lpage>209</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1471-0528.2004.00317.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-3">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sullivan</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name>
+              <surname>Moran</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Chapman</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Term breech singletons and caesarean section: a population study, Australia 1991-2005.</article-title>
+          <source>Aust N Z J Obstet Gynaecol</source>
+          <year iso-8601-date="2009">2009</year>
+          <volume>49</volume>
+          <fpage>456</fpage>
+          <lpage>460</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hannah</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Hannah</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Hewson</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Hodnett</surname>
+              <given-names>ED</given-names>
+            </name>
+            <name>
+              <surname>Saigal</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Willan</surname>
+              <given-names>AR</given-names>
+            </name>
+          </person-group>
+          <article-title>Planned caesarean section versus planned vaginal birth for breech presentation at term: a randomised multicentre trial. Term Breech Trial Collaborative Group.</article-title>
+          <source>Lancet</source>
+          <year iso-8601-date="2000">2000</year>
+          <volume>356</volume>
+          <fpage>1375</fpage>
+          <lpage>1383</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author"/>
+          <article-title>20a.</article-title>
+          <source>BJOG</source>
+          <year iso-8601-date="2017">2017</year>
+          <volume>124</volume>
+          <issue>7</issue>
+          <fpage>e178</fpage>
+          <lpage>e192</lpage>
+          <pub-id pub-id-type="doi">10.1111/1471-0528.14466</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>HT</given-names>
+            </name>
+            <name>
+              <surname>Luo</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Trasande</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Geographic variations and temporal trends in cesarean delivery rates in China, 2008-2014.</article-title>
+          <source>JAMA</source>
+          <year iso-8601-date="2017">2017</year>
+          <volume>317</volume>
+          <issue>1</issue>
+          <fpage>69</fpage>
+          <lpage>76</lpage>
+          <pub-id pub-id-type="doi">10.1001/jama.2016.18663</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hukkelhoven</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Modest rise in caesarean section from 2000-2010: the dutch experience.</article-title>
+          <source>PLoS One</source>
+          <year iso-8601-date="2016">2016</year>
+          <volume>11</volume>
+          <issue>5</issue>
+          <fpage>e0155565</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0155565</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Melo</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Georgiou</surname>
+              <given-names>EX</given-names>
+            </name>
+            <name>
+              <surname>Hedditch</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Ellaway</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Impey</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>External cephalic version at term: a cohort study of 18 years’ experience.</article-title>
+          <source>BJOG</source>
+          <year iso-8601-date="2019">2019</year>
+          <volume>126</volume>
+          <issue>4</issue>
+          <fpage>493</fpage>
+          <lpage>499</lpage>
+          <pub-id pub-id-type="doi">10.1111/1471-0528.15475</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cluver</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Gyte</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Sinclair</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Dowswell</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hofmeyr</surname>
+              <given-names>GJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Interventions for helping to turn term breech babies to head first presentation when using external cephalic version.</article-title>
+          <source>Cochrane Database Syst Rev</source>
+          <year iso-8601-date="2015">2015</year>
+          <volume>2015</volume>
+          <issue>2</issue>
+          <fpage>CD000184</fpage>
+          <pub-id pub-id-type="doi">10.1002/14651858.CD000184.pub4</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>American</surname>
+              <given-names>College of Obstetricians and Gynecologists’ Committee on Practice Bulletins—Gynecology</given-names>
+            </name>
+          </person-group>
+          <article-title>Am J Obstet Gynecol.</article-title>
+          <source> </source>
+          <year iso-8601-date="2014">2014</year>
+          <volume>210</volume>
+          <issue>5</issue>
+          <fpage>179</fpage>
+          <lpage>193</lpage>
+          <publisher-name>Caughey AB, Cahill AG, Guise JM, Rouse DJ. Safe prevention of the primary cesarean delivery</publisher-name>
+          <pub-id pub-id-type="doi">10.1097/AOG.0000000000001768</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tsakiridis</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Mamopoulos</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Athanasiadis</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Dagklis</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Management of breech presentation: a comparison of four national evidence-based guidelines.</article-title>
+          <source>Am J Perinatol</source>
+          <year iso-8601-date="2020">2020</year>
+          <volume>37</volume>
+          <issue>11</issue>
+          <fpage>1102</fpage>
+          <lpage>1109</lpage>
+          <pub-id pub-id-type="doi">10.1055/s-0039-1692391</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tan</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Macario</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Carvalho</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Druzin</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>El-Sayed</surname>
+              <given-names>YY</given-names>
+            </name>
+          </person-group>
+          <article-title>Cost-effectiveness of external cephalic version for term breech presentation.</article-title>
+          <source>BMC Pregnancy Childbirth</source>
+          <year iso-8601-date="2010">2010</year>
+          <volume>10</volume>
+          <issue/>
+          <fpage>3</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2393-10-3</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Diguisto</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Winer</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Descriaud</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Amnioinfusion for women with a singleton breech presentation and a previous failed external cephalic version: a randomized controlled trial.</article-title>
+          <source>J Matern Fetal Neonatal Med</source>
+          <year iso-8601-date="2018">2018</year>
+          <volume>31</volume>
+          <issue>8</issue>
+          <fpage>993</fpage>
+          <lpage>999</lpage>
+          <pub-id pub-id-type="doi">10.1080/14767058.2017.1304909</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>ZH</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>GP</given-names>
+            </name>
+          </person-group>
+          <article-title>Remifentanil analgesia during external cephalic version for breech presentation in nulliparous women at term: a randomized controlled trial.</article-title>
+          <source>Medicine (Baltimore)</source>
+          <year iso-8601-date="2017">2017</year>
+          <volume>96</volume>
+          <fpage>e6256</fpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lim</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lucero</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Obstetric and anesthetic approaches to external cephalic version.</article-title>
+          <source>Anesthesiol Clin</source>
+          <year iso-8601-date="2017">2017</year>
+          <volume>35</volume>
+          <issue>1</issue>
+          <fpage>81</fpage>
+          <lpage>94</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.anclin.2016.09.008</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vaz</surname>
+              <given-names>de Macedo C</given-names>
+            </name>
+            <name>
+              <surname>Clode</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Mendes</surname>
+              <given-names>da Graça L</given-names>
+            </name>
+          </person-group>
+          <article-title>Prediction of success in external cephalic version under tocolysis: still a challenge.</article-title>
+          <source>Acta Med Port</source>
+          <year iso-8601-date="2015">2015</year>
+          <volume>28</volume>
+          <issue>5</issue>
+          <fpage>554</fpage>
+          <lpage>558</lpage>
+          <pub-id pub-id-type="doi">10.20344/amp.6179</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Annapoorna</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Arulkumaran</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Anandakumar</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Chua</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Montan</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ratnam</surname>
+              <given-names>SS</given-names>
+            </name>
+          </person-group>
+          <article-title>External cephalic version at term with tocolysis and vibroacoustic stimulation.</article-title>
+          <source>Int J Gynaecol Obstet</source>
+          <year iso-8601-date="1997">1997</year>
+          <volume>59</volume>
+          <issue>1</issue>
+          <fpage>13</fpage>
+          <lpage>18</lpage>
+          <pub-id pub-id-type="doi">10.1016/s0020-7292(97)00178-1</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author"/>
+          <article-title>Obstet Gynecol.</article-title>
+          <source> </source>
+          <year iso-8601-date="2020">2020</year>
+          <volume>135</volume>
+          <issue>5</issue>
+          <fpage>e203</fpage>
+          <lpage>e212</lpage>
+          <pub-id pub-id-type="doi">10.1097/AOG.0000000000003837</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-19">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Couceiro</surname>
+              <given-names>Naveira E</given-names>
+            </name>
+            <name>
+              <surname>López</surname>
+              <given-names>Ramón Y Cajal C</given-names>
+            </name>
+          </person-group>
+          <article-title>Atosiban versus ritodrine as tocolytics in external cephalic version.</article-title>
+          <source>J Matern Fetal Neonatal Med</source>
+          <year iso-8601-date="2022">2022</year>
+          <volume>35</volume>
+          <issue>1</issue>
+          <fpage>80</fpage>
+          <lpage>85</lpage>
+          <pub-id pub-id-type="doi">10.1080/14767058.2020.1712702</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Velzel</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Vlemmix</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Opmeer</surname>
+              <given-names>BC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Atosiban versus fenoterol as a uterine relaxant for external cephalic version: randomised controlled trial.</article-title>
+          <source>BMJ</source>
+          <year iso-8601-date="2017">2017</year>
+          <volume>356</volume>
+          <fpage>i6773</fpage>
+          <pub-id pub-id-type="doi">10.1136/bmj.i6773</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-21">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hilton</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Allan</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Swaby</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Intravenous nitroglycerin for external cephalic version: a randomized controlled trial.</article-title>
+          <source>Obstet Gynecol</source>
+          <year iso-8601-date="2009">2009</year>
+          <volume>114</volume>
+          <fpage>560</fpage>
+          <lpage>567</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-22">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Collaris</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Tan</surname>
+              <given-names>PC</given-names>
+            </name>
+          </person-group>
+          <article-title>Oral nifepidine versus subcutaneous terbutaline tocolysis for external cephalic version: a double-blind randomised trial.</article-title>
+          <source>BJOG</source>
+          <year iso-8601-date="2009">2009</year>
+          <volume>116</volume>
+          <issue>1</issue>
+          <fpage>74</fpage>
+          <lpage>80</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1471-0528.2008.01991.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-23">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mohamed</surname>
+              <given-names>Ismail NA</given-names>
+            </name>
+            <name>
+              <surname>Ibrahim</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Mohd</surname>
+              <given-names>Naim N</given-names>
+            </name>
+            <name>
+              <surname>Mahdy</surname>
+              <given-names>ZA</given-names>
+            </name>
+            <name>
+              <surname>Jamil</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Mohd</surname>
+              <given-names>Razi ZR</given-names>
+            </name>
+          </person-group>
+          <article-title>Nifedipine versus terbutaline for tocolysis in external cephalic version.</article-title>
+          <source>Int J Gynaecol Obstet</source>
+          <year iso-8601-date="2008">2008</year>
+          <volume>102</volume>
+          <issue>3</issue>
+          <fpage>263</fpage>
+          <lpage>266</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ijgo.2008.04.010</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-24">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kok</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bais</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>van</surname>
+              <given-names>Lith JM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Nifedipine as a uterine relaxant for external cephalic version: a randomized controlled trial.</article-title>
+          <source>Obstet Gynecol</source>
+          <year iso-8601-date="2008">2008</year>
+          <volume>112</volume>
+          <fpage>271</fpage>
+          <lpage>276</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-25">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nor</surname>
+              <given-names>Azlin MI</given-names>
+            </name>
+            <name>
+              <surname>Haliza</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Mahdy</surname>
+              <given-names>ZA</given-names>
+            </name>
+            <name>
+              <surname>Anson</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Fahya</surname>
+              <given-names>MN</given-names>
+            </name>
+            <name>
+              <surname>Jamil</surname>
+              <given-names>MA</given-names>
+            </name>
+          </person-group>
+          <article-title>Tocolysis in term breech external cephalic version.</article-title>
+          <source>Int J Gynaecol Obstet</source>
+          <year iso-8601-date="2005">2005</year>
+          <volume>88</volume>
+          <issue>1</issue>
+          <fpage>5</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ijgo.2004.09.014</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-26">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Impey</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Pandit</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Tocolysis for repeat external cephalic version in breech presentation at term: a randomised, double-blinded, placebo-controlled trial.</article-title>
+          <source>BJOG</source>
+          <year iso-8601-date="2005">2005</year>
+          <volume>112</volume>
+          <issue>5</issue>
+          <fpage>627</fpage>
+          <lpage>631</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1471-0528.2004.00518.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-27">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>El-Sayed</surname>
+              <given-names>YY</given-names>
+            </name>
+            <name>
+              <surname>Pullen</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Riley</surname>
+              <given-names>ET</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Randomized comparison of intravenous nitroglycerin and subcutaneous terbutaline for external cephalic version under tocolysis.</article-title>
+          <source>Am J Obstet Gynecol</source>
+          <year iso-8601-date="2004">2004</year>
+          <volume>191</volume>
+          <fpage>2051</fpage>
+          <lpage>2055</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-28">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bujold</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Marquette</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name>
+              <surname>Ferreira</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Gauthier</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Boucher</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Sublingual nitroglycerin versus intravenous ritodrine as tocolytic for external cephalic version: a double-blinded randomized trial.</article-title>
+          <source>Am J Obstet Gynecol</source>
+          <year iso-8601-date="2003">2003</year>
+          <volume>188</volume>
+          <issue>6</issue>
+          <fpage>1454</fpage>
+          <lpage>1457</lpage>
+          <pub-id pub-id-type="doi">10.1067/mob.2003.368</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-29">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bujold</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Boucher</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Rinfret</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Berman</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ferreira</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Marquette</surname>
+              <given-names>GP</given-names>
+            </name>
+          </person-group>
+          <article-title>Sublingual nitroglycerin versus placebo as a tocolytic for external cephalic version: a randomized controlled trial in parous women.</article-title>
+          <source>Am J Obstet Gynecol</source>
+          <year iso-8601-date="2003">2003</year>
+          <volume>189</volume>
+          <issue>4</issue>
+          <fpage>1070</fpage>
+          <lpage>1073</lpage>
+          <pub-id pub-id-type="doi">10.1067/s0002-9378(03)00850-0</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-30">
+        <label>30</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fernandez</surname>
+              <given-names>CO</given-names>
+            </name>
+            <name>
+              <surname>Bloom</surname>
+              <given-names>SL</given-names>
+            </name>
+            <name>
+              <surname>Smulian</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Ananth</surname>
+              <given-names>CV</given-names>
+            </name>
+            <name>
+              <surname>Wendel</surname>
+              <given-names>GD Jr</given-names>
+            </name>
+          </person-group>
+          <article-title>A randomized placebo-controlled evaluation of terbutaline for external cephalic version.</article-title>
+          <source>Obstet Gynecol</source>
+          <year iso-8601-date="1997">1997</year>
+          <volume>90</volume>
+          <issue>5</issue>
+          <fpage>775</fpage>
+          <lpage>779</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0029-7844(97)00440-7</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-31">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marquette</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name>
+              <surname>Boucher</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Thériault</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Rinfret</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Does the use of a tocolytic agent affect the success rate of external cephalic version?</article-title>
+          <source>Am J Obstet Gynecol</source>
+          <year iso-8601-date="1996">1996</year>
+          <volume>175</volume>
+          <issue>4 Pt 1</issue>
+          <fpage>859</fpage>
+          <lpage>861</lpage>
+          <pub-id pub-id-type="doi">10.1016/s0002-9378(96)80013-5</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-32">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chung</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Neale</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Lau</surname>
+              <given-names>TK</given-names>
+            </name>
+            <name>
+              <surname>Rogers</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>A randomized, double blind, controlled trial of tocolysis to assist external cephalic version in late pregnancy.</article-title>
+          <source>Acta Obstet Gynecol Scand</source>
+          <year iso-8601-date="1996">1996</year>
+          <volume>75</volume>
+          <issue>8</issue>
+          <fpage>720</fpage>
+          <lpage>724</lpage>
+          <pub-id pub-id-type="doi">10.3109/00016349609065734</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-33">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stock</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Chung</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Rogers</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ming</surname>
+              <given-names>WW</given-names>
+            </name>
+          </person-group>
+          <article-title>Randomized, double blind, placebo controlled comparison of ritodrine and hexoprenaline for tocolysis prior to external cephalic version at term.</article-title>
+          <source>Aust N Z J Obstet Gynaecol</source>
+          <year iso-8601-date="1993">1993</year>
+          <volume>33</volume>
+          <issue>3</issue>
+          <fpage>265</fpage>
+          <lpage>268</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1479-828x.1993.tb02082.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-34">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Robertson</surname>
+              <given-names>AW</given-names>
+            </name>
+            <name>
+              <surname>Kopelman</surname>
+              <given-names>JN</given-names>
+            </name>
+            <name>
+              <surname>Read</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Duff</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Magelssen</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Dashow</surname>
+              <given-names>EE</given-names>
+            </name>
+          </person-group>
+          <article-title>External cephalic version at term: is a tocolytic necessary?</article-title>
+          <source>Obstet Gynecol</source>
+          <year iso-8601-date="1987">1987</year>
+          <volume>70</volume>
+          <issue>6</issue>
+          <fpage>896</fpage>
+          <lpage>899</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-35">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vani</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lau</surname>
+              <given-names>SY</given-names>
+            </name>
+            <name>
+              <surname>Lim</surname>
+              <given-names>BK</given-names>
+            </name>
+            <name>
+              <surname>Omar</surname>
+              <given-names>SZ</given-names>
+            </name>
+            <name>
+              <surname>Tan</surname>
+              <given-names>PC</given-names>
+            </name>
+          </person-group>
+          <article-title>Intravenous salbutamol for external cephalic version.</article-title>
+          <source>Int J Gynaecol Obstet</source>
+          <year iso-8601-date="2009">2009</year>
+          <volume>104</volume>
+          <issue>1</issue>
+          <fpage>28</fpage>
+          <lpage>31</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ijgo.2008.08.014</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-36">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tan</surname>
+              <given-names>GW</given-names>
+            </name>
+            <name>
+              <surname>Jen</surname>
+              <given-names>SW</given-names>
+            </name>
+            <name>
+              <surname>Tan</surname>
+              <given-names>SL</given-names>
+            </name>
+            <name>
+              <surname>Salmon</surname>
+              <given-names>YM</given-names>
+            </name>
+          </person-group>
+          <article-title>A prospective randomised controlled trial of external cephalic version comparing two methods of uterine tocolysis with a non-tocolysis group.</article-title>
+          <source>Singapore Med J</source>
+          <year iso-8601-date="1989">1989</year>
+          <volume>30</volume>
+          <issue>2</issue>
+          <fpage>155</fpage>
+          <lpage>158</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-37">
+        <label>37</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stock</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Rogers</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>WM</given-names>
+            </name>
+          </person-group>
+          <article-title>External cephalic version–a cautionary tale.</article-title>
+          <source>Aust N Z J Obstet Gynaecol</source>
+          <year iso-8601-date="1992">1992</year>
+          <volume>32</volume>
+          <issue>4</issue>
+          <fpage>378</fpage>
+          <lpage>379</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1479-828x.1992.tb02859.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-38">
+        <label>38</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kornman</surname>
+              <given-names>MT</given-names>
+            </name>
+            <name>
+              <surname>Kimball</surname>
+              <given-names>KT</given-names>
+            </name>
+            <name>
+              <surname>Reeves</surname>
+              <given-names>KO</given-names>
+            </name>
+          </person-group>
+          <article-title>Preterm external cephalic version in an outpatient environment.</article-title>
+          <source>Am J Obstet Gynecol</source>
+          <year iso-8601-date="1995">1995</year>
+          <volume>172</volume>
+          <fpage>1734</fpage>
+          <lpage>1738</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-39">
+        <label>39</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Laros</surname>
+              <given-names>RK Jr</given-names>
+            </name>
+            <name>
+              <surname>Flanagan</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Kilpatrick</surname>
+              <given-names>SJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Management of term breech presentation: a protocol of external cephalic version and selective trial of labor.</article-title>
+          <source>Am J Obstet Gynecol</source>
+          <year iso-8601-date="1995">1995</year>
+          <volume>172</volume>
+          <issue>6</issue>
+          <fpage>1916</fpage>
+          <lpage>1923</lpage>
+          <pub-id pub-id-type="doi">10.1016/0002-9378(95)91432-3</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-40">
+        <label>40</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Teoh</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Outcome of external cephalic version: our experience.</article-title>
+          <source>J Obstet Gynaecol Res</source>
+          <year iso-8601-date="1996">1996</year>
+          <volume>22</volume>
+          <issue>4</issue>
+          <fpage>389</fpage>
+          <lpage>394</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1447-0756.1996.tb00995.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-41">
+        <label>41</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lavie</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Reicher</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Avraham</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ram</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Maslovitz</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Success rates of early versus late initiation of external cephalic version.</article-title>
+          <source>Int J Gynaecol Obstet</source>
+          <year iso-8601-date="2019">2019</year>
+          <volume>145</volume>
+          <issue>1</issue>
+          <fpage>116</fpage>
+          <lpage>121</lpage>
+          <pub-id pub-id-type="doi">10.1002/ijgo.12774</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-42">
+        <label>42</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Beuckens</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Rijnders</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Verburgt-Doeleman</surname>
+              <given-names>GH</given-names>
+            </name>
+            <name>
+              <surname>Rijninks-van</surname>
+              <given-names>Driel GC</given-names>
+            </name>
+            <name>
+              <surname>Thorpe</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hutton</surname>
+              <given-names>EK</given-names>
+            </name>
+          </person-group>
+          <article-title>An observational study of the success and complications of 2546 external cephalic versions in low-risk pregnant women performed by trained midwives.</article-title>
+          <source>BJOG</source>
+          <year iso-8601-date="2016">2016</year>
+          <volume>123</volume>
+          <issue>3</issue>
+          <fpage>415</fpage>
+          <lpage>423</lpage>
+          <pub-id pub-id-type="doi">10.1111/1471-0528.13234</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-43">
+        <label>43</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yanny</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Johanson</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Balwin</surname>
+              <given-names>KJ</given-names>
+            </name>
+            <name>
+              <surname>Lucking</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Fitzpatrick</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Double-blind randomised controlled trial of glyceryl trinitrate spray for external cephalic version.</article-title>
+          <source>BJOG</source>
+          <year iso-8601-date="2000">2000</year>
+          <volume>107</volume>
+          <issue>4</issue>
+          <fpage>562</fpage>
+          <lpage>564</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1471-0528.2000.tb13280.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-44">
+        <label>44</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vlemmix</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Kuitert</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bais</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Patient’s willingness to opt for external cephalic version.</article-title>
+          <source>J Psychosom Obstet Gynaecol</source>
+          <year iso-8601-date="2013">2013</year>
+          <volume>34</volume>
+          <fpage>15</fpage>
+          <lpage>21</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-45">
+        <label>45</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kim</surname>
+              <given-names>MY</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>MY</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>GJ</given-names>
+            </name>
+          </person-group>
+          <article-title>External cephalic version experiences in Korea.</article-title>
+          <source>Obstet Gynecol Sci</source>
+          <year iso-8601-date="2016">2016</year>
+          <volume>59</volume>
+          <issue>2</issue>
+          <fpage>85</fpage>
+          <lpage>90</lpage>
+          <pub-id pub-id-type="doi">10.5468/ogs.2016.59.2.85</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-46">
+        <label>46</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Isakov</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Reicher</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Lavie</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Yogev</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Maslovitz</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Prediction of success in external cephalic version for breech presentation at term.</article-title>
+          <source>Obstet Gynecol</source>
+          <year iso-8601-date="2019">2019</year>
+          <volume>133</volume>
+          <issue>5</issue>
+          <fpage>857</fpage>
+          <lpage>866</lpage>
+          <pub-id pub-id-type="doi">10.1097/AOG.0000000000003196</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-47">
+        <label>47</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Morgan</surname>
+              <given-names>ER</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Brezak</surname>
+              <given-names>AMV</given-names>
+            </name>
+            <name>
+              <surname>Rowley</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Littman</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Hawes</surname>
+              <given-names>SE</given-names>
+            </name>
+          </person-group>
+          <article-title>Predictors of a successful external cephalic version: a population-based study of Washington state births.</article-title>
+          <source>Women Birth</source>
+          <year iso-8601-date="2019">2019</year>
+          <volume>32</volume>
+          <issue>3</issue>
+          <fpage>e421</fpage>
+          <lpage>e426</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.wombi.2018.08.001</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-48">
+        <label>48</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kew</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>DuPlessis</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>La</surname>
+              <given-names>Paglia D</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Predictors of cephalic vaginal delivery following external cephalic version: an eight-year single-centre study of 447 cases.</article-title>
+          <source>Obstet Gynecol Int</source>
+          <year iso-8601-date="2017">2017</year>
+          <volume>2017</volume>
+          <issue/>
+          <fpage>3028398</fpage>
+          <pub-id pub-id-type="doi">10.1155/2017/3028398</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-49">
+        <label>49</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Harendarczyk</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Riche</surname>
+              <given-names>VP</given-names>
+            </name>
+            <name>
+              <surname>Arthuis</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Management of external cephalic version in France: a national practice survey.</article-title>
+          <source>J Gynecol Obstet Hum Reprod</source>
+          <year iso-8601-date="2022">2022</year>
+          <volume>51</volume>
+          <fpage>102239</fpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-50">
+        <label>50</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Devold</surname>
+              <given-names>Pay AS</given-names>
+            </name>
+            <name>
+              <surname>Johansen</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Staff</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Laine</surname>
+              <given-names>KH</given-names>
+            </name>
+            <name>
+              <surname>Blix</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Økland</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <article-title>Effects of external cephalic version for breech presentation at or near term in high-resource settings: a systematic review of randomized and non-randomized studies.</article-title>
+          <source>Eur J Midwifery</source>
+          <year iso-8601-date="2020">2020</year>
+          <volume>4</volume>
+          <issue/>
+          <fpage>44</fpage>
+          <pub-id pub-id-type="doi">10.18332/ejm/128364</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-51">
+        <label>51</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kohls</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Gebauer</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Flentje</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Brodowski</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>von</surname>
+              <given-names>Kaisenberg CS</given-names>
+            </name>
+            <name>
+              <surname>Jentschke</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Current approach for external cephalic version in Germany.</article-title>
+          <source>Geburtshilfe Frauenheilkd</source>
+          <year iso-8601-date="2020">2020</year>
+          <volume>80</volume>
+          <issue>10</issue>
+          <fpage>1041</fpage>
+          <lpage>1047</lpage>
+          <pub-id pub-id-type="doi">10.1055/a-1127-8646</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="figure-1">
+      <label>FIGURE 1</label>
+      <caption>
+        <p>Workflow of the research inclusion.</p>
+        <p>
+          <italic>ECV, external cephalic version; RCTs, randomized controlled trials.</italic>
+        </p>
+      </caption>
+      <graphic xlink:href="BalkanMedJ-43-3-115-figure-1.png"/>
+    </fig>
+    <fig id="figure-2">
+      <label>FIGURE 2</label>
+      <caption>
+        <p>Risk-of-bias summary. (a) Review the author’s judgement for each risk-of-bias item for the included studies. (b) Review author’s judgement for each risk-of-bias item presented as percentages of all included studies.</p>
+      </caption>
+      <graphic xlink:href="BalkanMedJ-43-3-115-figure-2.png"/>
+    </fig>
+    <fig id="figure-3">
+      <label>FIGURE 3</label>
+      <caption>
+        <p>Network structure diagrams. (a) Success rate of external cephalic version (ECV) under various tocolytic agents. (b) Vaginal delivery rate of patients with different tocolytic agents. (c) Success rate of ECV according to administration of tocolytic agents. (d) Vaginal delivery rate of patients according to administration of tocolytic agents. (e) Incidence of common adverse effects of tocolytic agents. (f) Abnormal condition of the fetal heart rate under various tocolytic agents. The thicknesses of the connected lines were proportional to the number of comparisons.</p>
+        <p>
+          <italic>iv, intravenously; sc, subcutaneously; po, peros.</italic>
+        </p>
+      </caption>
+      <graphic xlink:href="BalkanMedJ-43-3-115-figure-3.png"/>
+    </fig>
+    <fig id="figure-4">
+      <label>FIGURE 4</label>
+      <caption>
+        <p>The efficacy of different tocolytics. (a) The effectiveness of tocolysis compared with placebo on the success rate of external cephalic version (ECV). (b) The effectiveness of tocolysis compared with placebo on vaginal delivery of ECV. (c) The efficiency of tocolysis according to different administrations compared with placebo on success rate of ECV. (d) The efficiency of tocolysis according to different administrations compared with placebo on vaginal delivery of ECV. (e) The incidence of common adverse effects of tocolysis compared with placebo. (f) The incidence of abnormal fetal heart rate of different tocolysis compared with placebo.</p>
+        <p>
+          <italic>iv, intravenously; sc, subcutaneously; po, peros; CrI, credible interval.</italic>
+        </p>
+      </caption>
+      <graphic xlink:href="BalkanMedJ-43-3-115-figure-4.png"/>
+    </fig>
+    <fig id="figure-5">
+      <label>FIGURE 5</label>
+      <caption>
+        <p>The surface under the cumulative probability ranking (SUCRA) value of different tocolytics. (a) SUCRA of different tocolytic agents and placebo on success rate of external cephalic version (ECV). (b) SUCRA of tocolysis and placebo on vaginal delivery of ECV. (c) SUCRA of tocolysis according to different administration and placebo on success rate of ECV. (d) SUCRA of tocolysis according to different administration and placebo on vaginal delivery of ECV. (e) SUCRA of tocolysis and placebo on the incidence of common adverse effects. (f) SUCRA of different tocolysis and placebo on the incidence of abnormal fetal heart rate.</p>
+        <p>
+          <italic>iv, intravenously; sc, subcutaneously; po, peros.</italic>
+        </p>
+      </caption>
+      <graphic xlink:href="BalkanMedJ-43-3-115-figure-5.png"/>
+    </fig>
+    <table-wrap id="table-1">
+      <label>TABLE 1. Major Characteristics of Eligible Studies Included in the Network Meta-Analysis.</label>
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="1" rowspan="2">
+              <p>Study</p>
+            </td>
+            <td colspan="1" rowspan="2">
+              <p>Country</p>
+            </td>
+            <td colspan="1" rowspan="2">
+              <p>Year</p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p>Treatment allocation</p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p>ECV success rate</p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p>Vaginal delivery rate</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Treatment</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Control</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Treatment</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Control</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Treatment</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Control</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Couceiro Naveiraet al.<sup><xref ref-type="bibr" rid="ref-19">19</xref></sup> </p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Spain</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2020</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Atosiban(6.75 mg, intravenously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Ritodrine (0.05 mg/min, intravenously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>99/215 (46.0%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>107/215 (50.0%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>75/215 (34.9%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>82/215 (38.1%)</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Velzelet al.<sup><xref ref-type="bibr" rid="ref-20">20</xref></sup> </p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Netherlands</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2017</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Atosiban(6.75 mg, intravenouly)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Fenoterol (40 ug, intravenously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>140/416 (33.7%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>166/414 (40.1%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>163/416 (39.2%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>180/416 (43.3%)</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Hiltonet al.<sup><xref ref-type="bibr" rid="ref-21">21</xref></sup> </p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Canada</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2009</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Nitroglycerin(1 mg, intravenously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Placebo</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>20/65 (31.0%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>12/61 (19.7%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>21/65 (32.3%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>12/61 (19.7%)</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Collaris and Tan<sup><xref ref-type="bibr" rid="ref-22">22</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Malaysia</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2009</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Nifedipine(10 mg, orally)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Terbutaline (0.25 mg, subcutaneously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>15/44 (34.1%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>24/46 (52.2%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>10/44 (22.7%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>20/46 (43.4%)</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Mohamed Ismailet al.<sup><xref ref-type="bibr" rid="ref-23">23</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Malaysia</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2008</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Nifedipine(20 mg, orally)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Terbutaline (0.05 mg, intravenously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>17/43 (39.5%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>25/43 (58.1%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>37/43 (86.0%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>38/42 (90.5%)</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Kok et al.<sup><xref ref-type="bibr" rid="ref-24">24</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Netherlands</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2008</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Nifedipine(20 mg, orally)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Placebo</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>64/154 (41.6%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>58/156 (37.2%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>75/154 (48.7%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>84/156 (53.8%)</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Nor Azlin et al.<sup><xref ref-type="bibr" rid="ref-25">25</xref></sup> </p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Malaysia</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2005</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Ritodrine(0.4 mg/mL, intravenously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Placebo</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>15/30 (50.0%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>7/30 (23.3%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>13/30 (43.3%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>7/30 (23.3%)</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Impey and Pandit<sup><xref ref-type="bibr" rid="ref-26">26</xref></sup> </p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>United Kingdom</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2005</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Ritodrine (3 mg/mL,1mL/h, intravenously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Placebo</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>17/62 (27.4%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>5/62 (8.1%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>21/62 (33.9%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>9/62 (14.5%)</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>El-Sayedet al.<sup><xref ref-type="bibr" rid="ref-27">27</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>United States</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2004</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Nitroglycerin(0.2 mg, introvenously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Terbutaline (0.25 mg, subcutaneously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>7/30 (23.3%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>16/29 (55.2%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>10/30 (33.3%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>11/29 (37.9%)</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Bujoldet al.<sup><xref ref-type="bibr" rid="ref-28">28</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>United States</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2003</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Nitroglycerin(0.4 mg, sublingually)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Placebo</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>24/50 (48.0%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>31/49 (63.3%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>19/50 (38%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>24/49 (49.0%)</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Bujoldet al.<sup><xref ref-type="bibr" rid="ref-29">29</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Canada</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2003</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Ritodrine(111 ug/min, intravenously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Nitroglycerin (0.4 mg, sublingually)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>17/38 (44.7%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>9/36 (25%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>11/38 (28.9%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>7/36 (19.4%)</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Fernandez et al.<sup><xref ref-type="bibr" rid="ref-30">30</xref></sup> </p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>New Jersey</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>1997</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Terbutaline(0.25 mg, subcutaneously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Placebo</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>27/52 (51.9%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>14/51 (27.5%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>22/52 (42.3%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>12/51 (23.5%)</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Marquette et al.<sup><xref ref-type="bibr" rid="ref-31">31</xref></sup> </p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Canada</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>1996</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Ritodrine(111 ug/min, intravenously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Placebo</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>72/138</p>
+              <p>(52.2%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>61/145 (42.1%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>62/138 (44.9%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>51/145 (35.2%)</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Chunget al.<sup><xref ref-type="bibr" rid="ref-32">32</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Hong Kong</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>1996</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Ritodrine(0.4 mg/mL, intravenously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Placebo</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>17/25 (68.0%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>7/25 (28%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Stocket al.<sup><xref ref-type="bibr" rid="ref-33">33</xref></sup> </p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Hong Kong</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>1993</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Ritodrine(0.3 mg/min, intravenously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Placebo</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>14/21 (66.7%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>9/21 (42.9%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Robertson et al.<sup><xref ref-type="bibr" rid="ref-34">34</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>United States</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>1987</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Ritodrine(0.2 mg/min, intravenously)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Placebo</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>20/30 (66.7%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>19/28 (67.9%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>22/30 (73.3%)</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>23/28 (82.1%)</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <p>NR, not reached; ECV, external cephalic version.</p>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap id="table-2">
+      <label>TABLE 2. Common Side Effects of the Applied Tocolytic Agents.</label>
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="1" rowspan="2">
+              <p>Study</p>
+            </td>
+            <td colspan="1" rowspan="2">
+              <p>year</p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p>Tachycardia</p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p>Palpitations</p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p>Hypotension</p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p>Nausea/dizziness</p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p>Flushes</p>
+            </td>
+            <td colspan="2" rowspan="1">
+              <p>Abnormal FHR</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Treatment</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Control</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Treatment</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Control</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Treatment</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Control</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Treatment</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Control</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Treatment</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Control</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Treatment</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Control</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Couceiro Naveira et al.<sup><xref ref-type="bibr" rid="ref-19">19</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2020</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>35</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>28</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Velzel et al.<sup><xref ref-type="bibr" rid="ref-20">20</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2017</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>15</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>209</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>25</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>55</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>17</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>99</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Vani et al.<sup><xref ref-type="bibr" rid="ref-35">35</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2009</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>3</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Hilton et al.<sup><xref ref-type="bibr" rid="ref-21">21</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2009</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>4</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>1</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>3</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>16</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>8</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>12</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>4</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>3</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>4</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Collaris and Tan<sup><xref ref-type="bibr" rid="ref-22">22</xref></sup> </p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2009</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Mohamed Ismail et al.<sup><xref ref-type="bibr" rid="ref-23">23</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2008</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>4</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>5</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Kok et al.<sup><xref ref-type="bibr" rid="ref-24">24</xref></sup> </p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2008</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>5</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>5</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>11</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>12</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>11</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Nor Azlin et al.<sup><xref ref-type="bibr" rid="ref-25">25</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2005</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Impey and Pandit<sup><xref ref-type="bibr" rid="ref-26">26</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2005</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>El-Sayed et al.<sup><xref ref-type="bibr" rid="ref-27">27</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2004</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>5</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>1</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>3</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>6</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>8</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>3</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Bujold et al.<sup><xref ref-type="bibr" rid="ref-28">28</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2003a</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>0</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>6</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>1</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>5</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Bujold et al.<sup><xref ref-type="bibr" rid="ref-29">29</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2003b</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>4</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>1</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>3</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Fernandez et al.<sup><xref ref-type="bibr" rid="ref-30">30</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>1997</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Marquette et al.<sup><xref ref-type="bibr" rid="ref-31">31</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>1996</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Chung et al.<sup><xref ref-type="bibr" rid="ref-32">32</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>1996</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Stock et al.<sup><xref ref-type="bibr" rid="ref-33">33</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>1993</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Tan et al.<sup><xref ref-type="bibr" rid="ref-36">36</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>1989</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Robertson et al.<sup><xref ref-type="bibr" rid="ref-34">34</xref></sup></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>1987</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>NR</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>2</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>5</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <p>NR, not reached; ECV, external cephalic version; FHR, fetal heart rate.</p>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>

@@ -56,7 +56,17 @@
       "WebFetch(domain:api.openalex.org)",
       "Bash(node:*)",
       "WebFetch(domain:www.icmje.org)",
-      "WebFetch(domain:api.crossref.org)"
+      "WebFetch(domain:api.crossref.org)",
+      "Bash(sed 's/^    \"\"pdfUrl\"\": \"\"\\\\\\(.*\\\\\\)\"\"$/    \"\"pdfUrl\"\": \"\"\\\\1\"\",\\\\n    \"\"pmid\"\": \"\"\"\"/' js/data/articles.js)",
+      "Bash(mv js/data/articles_tmp.js js/data/articles.js)",
+      "Bash(where python3:*)",
+      "Bash(where python:*)",
+      "Bash(where py:*)",
+      "Bash(python3 -c \":*)",
+      "Bash(\"C:\\\\Users\\\\Selçuk\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\python3.exe\" --version)",
+      "Bash(node -e \":*)",
+      "Bash(cd:*)",
+      "Bash(python scripts/build_from_jats.py)"
     ]
   }
 }

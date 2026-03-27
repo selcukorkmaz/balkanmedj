@@ -1,7 +1,6 @@
 /**
- * Balkan Medical Journal — Archive Issues Data
- * Source sync from https://balkanmedicaljournal.org/archive.php
- * Snapshot date: 2026-02-21
+ * Balkan Medical Journal — Archive Issues
+ * Last updated: 2026-03-27
  */
 window.ARCHIVE_ISSUES = [
   {

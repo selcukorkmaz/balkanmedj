@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.3 20210610//EN" "https://jats.nlm.nih.gov/archiving/1.3/JATS-archivearticle1-3.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="letter" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="pmc">101571817</journal-id>
+      <journal-title-group>
+        <journal-title>Balkan Medical Journal</journal-title>
+        <abbrev-journal-title>Balkan Med J</abbrev-journal-title>
+      </journal-title-group>
+      <issn publication-format="print">2146-3123</issn>
+      <issn publication-format="electronic">2146-3131</issn>
+      <publisher>
+        <publisher-name>Galenos Publishing</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.4274/balkanmedj.galenos.2026.2025-12-198</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Letter to the Editor</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Clinical Impact of Febuxostat in HFpEF Versus HFrEF: Insights from a Prospective Cohort</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid">0009-0009-2529-0191</contrib-id>
+          <name>
+            <surname>Ahsaan</surname>
+            <given-names>Faisal</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">1</xref>
+          <email>faisalahsaan.654@gmail.com</email>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0009-0000-8719-0086</contrib-id>
+          <name>
+            <surname>Latif</surname>
+            <given-names>Bakhtawar</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0009-0008-6970-3528</contrib-id>
+          <name>
+            <surname>Rehman</surname>
+            <given-names>Zoya</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">1</xref>
+        </contrib>
+        <aff id="aff1"><label>1</label>Shaikh Khalifa Bin Zayed Al-Nahyan Medical College  Shaikh Zayed Postgraduate Medical Institute (SZPGMI), Lahore, Pakistan</aff>
+      </contrib-group>
+      <pub-date publication-format="electronic" date-type="collection">
+        <month>2</month>
+        <year>2026</year>
+      </pub-date>
+      <pub-date publication-format="electronic" date-type="pub">
+        <day>02</day>
+        <month>02</month>
+        <year>2026</year>
+      </pub-date>
+      <volume>43</volume>
+      <issue>2</issue>
+      <fpage>111</fpage>
+      <lpage>122</lpage>
+      <history>
+        <date date-type="received">
+          <day>23</day>
+          <month>12</month>
+          <year>2025</year>
+        </date>
+        <date date-type="accepted">
+          <day>07</day>
+          <month>01</month>
+          <year>2026</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright@Author(s) - Available online at http://balkanmedicaljournal.org/</copyright-statement>
+        <copyright-year>2026</copyright-year>
+        <copyright-holder>Balkan Medical Journal</copyright-holder>
+        <license license-type="open-access" xlink:href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">
+          <license-p>Content of this journal is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.</license-p>
+        </license>
+      </permissions>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <p>Ke et al.<sup><xref ref-type="bibr" rid="ref-1">1</xref></sup> present a prospective observational cohort study suggesting that febuxostat may reduce the combined risk of all-cause mortality and rehospitalization for heart failure (HF) in patients with HF with preserved ejection fraction (HFpEF), but not in those with reduced or mildly reduced ejection fraction. The major strengths of the study include its large sample size, extended 5-year follow-up period, and the application of propensity score matching. The authors’ hypothesis—that uric acid–mediated oxidative and inflammatory pathways might play a more prominent role in HFpEF—is biologically plausible and clinically relevant.</p>
+      <p>Despite the compelling observational findings, three key considerations merit attention when interpreting the results and identifying future research directions.</p>
+      <p>The observed benefit of febuxostat in HFpEF appears to be most pronounced among patients in the highest tertiles of B-type natriuretic peptide (BNP) and serum uric acid (SUA). This pattern suggests that the therapeutic effect may be confined to a biologically defined subgroup rather than representing a universal benefit across the entire HFpEF population. Consequently, prospective studies are needed to define clinically meaningful BNP and SUA thresholds for patient selection before broad clinical implementation can be recommended.<sup><xref ref-type="bibr" rid="ref-1">1</xref></sup></p>
+      <p>Although advanced matching techniques were used, the observational design cannot fully account for residual confounding. The reported outcomes may partly reflect unmeasured or insufficiently adjusted factors, including longitudinal changes in diuretic dosing, adherence to and titration of background guideline-directed medical therapy (GDMT), and subtle differences in comorbidity burden. These limitations reinforce that the current findings should be viewed as hypothesis-generating rather than establishing causality.<sup><xref ref-type="bibr" rid="ref-1">1</xref>, <xref ref-type="bibr" rid="ref-2">2</xref></sup></p>
+      <p>The cardiovascular safety profile of febuxostat remains controversial, with conflicting findings from randomized controlled trials. The Cardiovascular Safety of Febuxostat and Allopurinol in Patients with Gout and Cardiovascular Morbidities trial reported higher cardiovascular mortality among patients treated with febuxostat compared with those receiving allopurinol, whereas this signal was not observed in the Febuxostat versus Allopurinol Streamlined trial. This unresolved discrepancy necessitates a cautious appraisal of any potential benefit of febuxostat in patients with HFpEF, a population that is already at heightened cardiovascular risk.<sup><xref ref-type="bibr" rid="ref-3">3</xref>, <xref ref-type="bibr" rid="ref-4">4</xref></sup></p>
+      <p>Targeting xanthine oxidase to mitigate oxidative stress represents a biologically rational therapeutic strategy in HFpEF, a condition wherein systemic inflammation and endothelial dysfunction are central to disease progression. Prior observational and mechanistic studies have demonstrated an association between hyperuricemia and the incidence of HF and adverse clinical outcomes, thereby providing a plausible biological rationale for urate-lowering interventions in this phenotype.<sup><xref ref-type="bibr" rid="ref-5">5</xref>, <xref ref-type="bibr" rid="ref-6">6</xref></sup> However, translating these associations into effective and safe therapies requires randomized evidence specifically focused on HFpEF patients with elevated BNP and SUA levels.</p>
+      <p>To advance this promising yet unresolved therapeutic concept, we propose a structured research agenda. First, multicenter randomized controlled trials evaluating febuxostat or other xanthine oxidase inhibitors in HFpEF patients stratified by baseline SUA and BNP levels are needed to confirm efficacy and rigorously assess safety. Second, cardiovascular outcomes should be systematically adjudicated, with standardized documentation of diuretic dosing and background GDMT. Third, predefined biomarker-driven and mechanistic substudies should be incorporated to determine whether reductions in SUA or xanthine oxidase activity correlate with improvements in endothelial function, myocardial fibrosis, or exercise capacity.</p>
+      <p>In summary, Ke et al.<sup><xref ref-type="bibr" rid="ref-1">1</xref></sup> provide compelling observational evidence suggesting that febuxostat may improve outcomes in a select subgroup of HFpEF patients with elevated SUA and BNP levels. Nevertheless, these findings warrant cautious interpretation and should serve primarily as a catalyst for randomized, mechanism-oriented trials before any modification of standard clinical practice is contemplated.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn id="fn-0" fn-type="ethics">
+        <p><bold>Ethics Committee Approval:</bold> Not applicable.</p>
+      </fn>
+      <fn id="fn-1" fn-type="authorship-contributions">
+        <p><bold>Authorship Contributions:</bold> Concept- F.A.; Design- F.A.; Analysis or Interpretation- B.L.; Critical Review- Z.R.</p>
+      </fn>
+      <fn id="fn-2" fn-type="coi-statement">
+        <p><bold>Conflict of Interest:</bold> No conflict of interest was declared by the authors.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="ref-1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ke</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Qiu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Uric acid-lowering therapy with febuxostat in patients with chronic heart failure and hyperuricemia: a prospective and observational cohort study.</article-title>
+          <source>Balkan Med J</source>
+          <year iso-8601-date="2025">2025</year>
+          <volume>42</volume>
+          <fpage>495</fpage>
+          <lpage>505</lpage>
+          <pub-id pub-id-type="doi">10.4274/balkanmedj.galenos.2025.2025-6-168</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McDonagh</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Metra</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Adamo</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Corrigendum to: 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure: Developed by the Task Force for the diagnosis and treatment of acute and chronic heart failure of the European Society of Cardiology (ESC) With the special contribution of the Heart Failure Association (HFA) of the ESC.</article-title>
+          <source>Eur Heart J</source>
+          <year iso-8601-date="2021">2021</year>
+          <volume>42</volume>
+          <issue>48</issue>
+          <fpage>4901</fpage>
+          <pub-id pub-id-type="doi">10.1093/eurheartj/ehab670</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-3">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>White</surname>
+              <given-names>WB</given-names>
+            </name>
+            <name>
+              <surname>Saag</surname>
+              <given-names>KG</given-names>
+            </name>
+            <name>
+              <surname>Becker</surname>
+              <given-names>MA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>; CARES investigators. Cardiovascular safety of febuxostat or allopurinol in patients with gout.</article-title>
+          <source>N Engl J Med</source>
+          <year iso-8601-date="2018">2018</year>
+          <volume>378</volume>
+          <fpage>1200</fpage>
+          <lpage>1210</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mackenzie</surname>
+              <given-names>IS</given-names>
+            </name>
+            <name>
+              <surname>Ford</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Nuki</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>; FAST Study Group. Long-term cardiovascular safety of febuxostat compared with allopurinol in patients with gout (FAST): a multicentre, prospective, randomised, open-label, non-inferiority trial.</article-title>
+          <source>Lancet</source>
+          <year iso-8601-date="2020">2020</year>
+          <volume>396</volume>
+          <issue>10264</issue>
+          <fpage>1745</fpage>
+          <lpage>1757</lpage>
+          <pub-id pub-id-type="doi">10.1016/s0140-6736(20)32234-0</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Krishnan</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Hyperuricemia and incident heart failure.</article-title>
+          <source>Circ Heart Fail</source>
+          <year iso-8601-date="2009">2009</year>
+          <volume>2</volume>
+          <issue>6</issue>
+          <fpage>556</fpage>
+          <lpage>562</lpage>
+          <pub-id pub-id-type="doi">10.1161/CIRCHEARTFAILURE.108.797662</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nishino</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Egami</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kawanami</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>; Osaka cardiovascular conference (OCVC)‐heart failure investigators*. Lowering uric acid may improve prognosis in patients with hyperuricemia and heart failure with preserved ejection fraction.</article-title>
+          <source>J Am Heart Assoc</source>
+          <year iso-8601-date="2022">2022</year>
+          <volume>11</volume>
+          <issue>19</issue>
+          <fpage>e026301</fpage>
+          <pub-id pub-id-type="doi">10.1161/jaha.122.026301</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group/>
+</article>
