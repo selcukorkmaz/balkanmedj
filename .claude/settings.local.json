@@ -66,7 +66,8 @@
       "Bash(\"C:\\\\Users\\\\Selçuk\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\python3.exe\" --version)",
       "Bash(node -e \":*)",
       "Bash(cd:*)",
-      "Bash(python scripts/build_from_jats.py)"
+      "Bash(python scripts/build_from_jats.py)",
+      "Read(//tmp/**)"
     ]
   }
 }

@@ -20,6 +20,8 @@ const PATHS = {
   articlesDir: path.join(ROOT, 'js/data/articles'),
   pdfsDir: path.join(ROOT, 'js/data/pdfs'),
   imagesDir: path.join(ROOT, 'images'),
+  articleImagesDir: path.join(ROOT, 'images/articles'),
+  supplementaryDir: path.join(ROOT, 'js/data/supplementary'),
 };
 
 const VAR_NAMES = {
@@ -99,6 +101,7 @@ function readArticles() {
 }
 function writeArticles(data) {
   writeJsData(PATHS.articles, VAR_NAMES.articles, data, 'Articles Data');
+  rebuildArticleIndex(data);
 }
 
 function readArticlesInPress() {
@@ -144,7 +147,9 @@ function writeHomepageData(data) {
 }
 
 function readAuthorMetadata() {
-  return readJsData(PATHS.authorMetadata, VAR_NAMES.authorMetadata);
+  const data = readJsData(PATHS.authorMetadata, VAR_NAMES.authorMetadata);
+  // Ensure object (readJsData returns [] for missing files, but metadata is an object)
+  return Array.isArray(data) ? {} : data;
 }
 function writeAuthorMetadata(data) {
   writeJsData(PATHS.authorMetadata, VAR_NAMES.authorMetadata, data, 'Author Metadata');
@@ -167,14 +172,45 @@ function writeVolumeJson(volume, issue, data) {
 }
 
 /**
- * Rebuild a volume JSON from the main articles array.
+ * Rebuild a volume JSON (and companion JS wrapper) from the main articles array.
  */
 function rebuildVolumeJson(volume, issue, articles) {
   const filtered = (articles || readArticles()).filter(
     (a) => a.volume === Number(volume) && String(a.issue) === String(issue)
   );
   writeVolumeJson(volume, issue, filtered);
+  writeVolumeJs(volume, issue, filtered);
   return filtered.length;
+}
+
+/**
+ * Write a volume JS wrapper: window.PAGE_ARTICLES = [...];
+ * Enables file:// compatible loading without the monolithic articles.js.
+ */
+function writeVolumeJs(volume, issue, data) {
+  const jsPath = path.join(PATHS.volumesDir, `vol${volume}-${issue}.js`);
+  const body = JSON.stringify(data, null, 2);
+  const tmpPath = jsPath + '.tmp';
+  fs.writeFileSync(tmpPath, `window.PAGE_ARTICLES = ${body};\n`, 'utf-8');
+  fs.renameSync(tmpPath, jsPath);
+}
+
+/**
+ * Rebuild the lightweight article index (ID → [volume, issue]).
+ * Used by article.html to load the correct volume JS without the monolithic articles.js.
+ */
+function rebuildArticleIndex(articles) {
+  const data = articles || readArticles();
+  const index = {};
+  for (const a of data) {
+    if (a.id && a.volume && a.issue) {
+      index[a.id] = [a.volume, String(a.issue)];
+    }
+  }
+  const indexPath = path.join(ROOT, 'js/data/article-index.js');
+  const tmpPath = indexPath + '.tmp';
+  fs.writeFileSync(tmpPath, 'window.ARTICLE_INDEX = ' + JSON.stringify(index) + ';\n', 'utf-8');
+  fs.renameSync(tmpPath, indexPath);
 }
 
 // --- Article full text helpers ---
@@ -199,7 +235,7 @@ function writeFullText(articleId, html) {
   fs.writeFileSync(htmlTmp, html, 'utf-8');
   fs.renameSync(htmlTmp, htmlPath);
   // Atomic write for JS
-  const escaped = html.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n');
+  const escaped = html.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\r\n/g, '\\n').replace(/\r/g, '\\n').replace(/\n/g, '\\n');
   const jsContent = `window._articleFullText = window._articleFullText || {};\nwindow._articleFullText[${articleId}] = "${escaped}";\n`;
   const jsTmp = jsPath + '.tmp';
   fs.writeFileSync(jsTmp, jsContent, 'utf-8');
@@ -250,7 +286,9 @@ module.exports = {
   writeAuthorMetadata,
   readVolumeJson,
   writeVolumeJson,
+  writeVolumeJs,
   rebuildVolumeJson,
+  rebuildArticleIndex,
   volumeJsonPath,
   readFullText,
   writeFullText,

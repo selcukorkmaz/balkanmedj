@@ -25,6 +25,8 @@ async function parseJatsXml(xmlString) {
     mergeAttrs: false,
     normalizeTags: false,
     preserveChildrenOrder: true,
+    explicitChildren: true,
+    charsAsChildren: true,
     trim: true,
   });
 
@@ -55,6 +57,12 @@ async function parseJatsXml(xmlString) {
   );
   const doi = doiEl ? textContent(doiEl) : '';
 
+  // --- PMID ---
+  const pmidEl = (articleMeta['article-id'] || []).find(
+    (el) => el?.$?.['pub-id-type'] === 'pmid'
+  );
+  const pmid = pmidEl ? textContent(pmidEl) : '';
+
   // --- Authors & Affiliations ---
   const contribGroup = articleMeta['contrib-group']?.[0] || {};
   const { authors, correspondingAuthor, authorMetadata } = parseAuthors(contribGroup);
@@ -70,7 +78,8 @@ async function parseJatsXml(xmlString) {
   const issue = textContent(articleMeta.issue?.[0]) || '';
   const fpage = textContent(articleMeta.fpage?.[0]) || '';
   const lpage = textContent(articleMeta.lpage?.[0]) || '';
-  const pages = fpage && lpage ? `${fpage}-${lpage}` : fpage || '';
+  const elocationId = textContent(articleMeta['elocation-id']?.[0]) || '';
+  const pages = fpage && lpage ? `${fpage}-${lpage}` : fpage || elocationId || '';
 
   // --- Abstract ---
   const { abstract, abstractHtml } = parseAbstract(articleMeta.abstract?.[0]);
@@ -89,11 +98,20 @@ async function parseJatsXml(xmlString) {
   // --- Tables ---
   const tables = parseTables(floatsGroup);
 
-  // --- Back matter (fn-group, references) ---
+  // --- Supplementary materials ---
+  const supplementary = parseSupplementary(articleMeta, back, floatsGroup);
+
+  // --- Funding ---
+  const funding = parseFunding(articleMeta);
+
+  // --- Permissions (license/copyright) ---
+  const permissions = parsePermissions(articleMeta);
+
+  // --- Back matter (fn-group, references, acknowledgments) ---
   const backMatter = parseBackMatter(back);
 
   // --- Full text (body + figures + tables + back) ---
-  const fullTextHtml = buildFullTextHtml(bodyHtml, figures, tables, backMatter);
+  const fullTextHtml = buildFullTextHtml(bodyHtml, figures, tables, backMatter, supplementary, funding);
 
   // --- Related articles (erratum/retraction links) ---
   const relatedArticles = parseRelatedArticles(body, articleMeta);
@@ -111,6 +129,7 @@ async function parseJatsXml(xmlString) {
     type,
     title,
     doi,
+    pmid,
     authors,
     abstract,
     abstractHtml,
@@ -122,8 +141,12 @@ async function parseJatsXml(xmlString) {
     volume,
     issue,
     pages,
+    elocationId,
     fullTextHtml,
-    figures: figures.map((f) => ({ id: f.id, label: f.label, imageFile: f.imageFile })),
+    figures: figures.map((f) => ({ id: f.id, label: f.label, caption: f.caption, imageFile: f.imageFile })),
+    supplementary,
+    funding,
+    permissions,
     relatedArticles,
     replyArticle,
     authorMetadata: {
@@ -142,13 +165,20 @@ async function parseJatsXml(xmlString) {
 function textContent(el) {
   if (!el) return '';
   if (typeof el === 'string') return el;
-  if (el._) return el._;
   if (Array.isArray(el)) return el.map(textContent).join('');
   if (typeof el === 'object') {
-    // Recurse into child elements
+    // Use $$ for ordered mixed content (text + elements interleaved)
+    if (el.$$) {
+      return el.$$.map((child) => {
+        if (child['#name'] === '__text__') return child._ || '';
+        return textContent(child);
+      }).join('');
+    }
+    // Fallback: plain text or recurse into children
+    if (el._) return el._;
     let text = '';
     for (const key of Object.keys(el)) {
-      if (key === '$') continue;
+      if (key === '$' || key === '$$' || key === '#name') continue;
       const val = el[key];
       if (Array.isArray(val)) text += val.map(textContent).join('');
       else text += textContent(val);
@@ -288,11 +318,6 @@ function inlineToHtml(el) {
   if (!el) return '';
   if (typeof el === 'string') return escapeHtml(el);
 
-  let html = '';
-
-  // Handle mixed content (text + child elements)
-  if (el._) html += escapeHtml(el._);
-
   const tagMap = {
     italic: 'em',
     bold: 'strong',
@@ -301,20 +326,21 @@ function inlineToHtml(el) {
     'ext-link': 'a',
   };
 
-  for (const key of Object.keys(el)) {
-    if (key === '$' || key === '_') continue;
-    const children = Array.isArray(el[key]) ? el[key] : [el[key]];
-
-    for (const child of children) {
-      const htmlTag = tagMap[key];
-      if (htmlTag) {
-        if (key === 'ext-link') {
+  // Use $$ array for correct mixed content ordering (text + elements interleaved)
+  if (el.$$) {
+    let html = '';
+    for (const child of el.$$) {
+      const tag = child['#name'];
+      if (tag === '__text__') {
+        html += escapeHtml(child._);
+      } else if (tagMap[tag]) {
+        if (tag === 'ext-link') {
           const href = child.$?.['xlink:href'] || '#';
           html += `<a href="${escapeHtml(href)}" target="_blank">${inlineToHtml(child)}</a>`;
         } else {
-          html += `<${htmlTag}>${inlineToHtml(child)}</${htmlTag}>`;
+          html += `<${tagMap[tag]}>${inlineToHtml(child)}</${tagMap[tag]}>`;
         }
-      } else if (key === 'xref') {
+      } else if (tag === 'xref') {
         const refType = child.$?.['ref-type'];
         if (refType === 'bibr') {
           html += `<sup>${textContent(child)}</sup>`;
@@ -325,13 +351,20 @@ function inlineToHtml(el) {
         } else {
           html += textContent(child);
         }
+      } else if (tag === 'list') {
+        html += convertListToHtml(child);
+      } else if (tag === 'def-list') {
+        html += convertDefListToHtml(child);
       } else {
         html += inlineToHtml(child);
       }
     }
+    return html;
   }
 
-  return html;
+  // Fallback for simple elements without $$
+  if (el._) return escapeHtml(el._);
+  return '';
 }
 
 function escapeHtml(str) {
@@ -352,16 +385,57 @@ function convertSectionToHtml(sec, headingTag) {
   const title = textContent(sec.title?.[0]);
   if (title) html += `<${headingTag}>${escapeHtml(title)}</${headingTag}>\n`;
 
-  for (const p of sec.p || []) {
-    html += `<p>${inlineToHtml(p)}</p>\n`;
+  const nextTag = headingTag === 'h3' ? 'h4' : 'h5';
+
+  // Use $$ array for correct document order (explicitChildren: true)
+  if (sec.$$) {
+    for (const child of sec.$$) {
+      const tag = child['#name'];
+      if (tag === 'title') continue; // already handled above
+      if (tag === 'p') html += `<p>${inlineToHtml(child)}</p>\n`;
+      else if (tag === 'sec') html += convertSectionToHtml(child, nextTag);
+      else if (tag === 'list') html += convertListToHtml(child) + '\n';
+      else if (tag === 'def-list') html += convertDefListToHtml(child) + '\n';
+      else if (tag === 'fig') { /* figures handled separately */ }
+      else if (tag === 'table-wrap') { /* tables handled separately */ }
+    }
+  } else {
+    // Fallback for objects without $$ (shouldn't happen with explicitChildren)
+    for (const p of sec.p || []) html += `<p>${inlineToHtml(p)}</p>\n`;
+    for (const list of sec.list || []) html += convertListToHtml(list) + '\n';
+    for (const dl of sec['def-list'] || []) html += convertDefListToHtml(dl) + '\n';
+    for (const subsec of sec.sec || []) html += convertSectionToHtml(subsec, nextTag);
   }
 
-  // Nested subsections
-  for (const subsec of sec.sec || []) {
-    const nextTag = headingTag === 'h3' ? 'h4' : 'h5';
-    html += convertSectionToHtml(subsec, nextTag);
-  }
+  return html;
+}
 
+function convertListToHtml(list) {
+  const listType = list.$?.['list-type'] || 'bullet';
+  const tag = listType === 'order' ? 'ol' : 'ul';
+  let html = `<${tag}>`;
+  for (const item of list['list-item'] || []) {
+    const parts = (item.p || []).map((p) => inlineToHtml(p));
+    let content = parts.join(' ');
+    // Nested lists inside list-item
+    for (const nested of item.list || []) {
+      content += convertListToHtml(nested);
+    }
+    html += `<li>${content}</li>`;
+  }
+  html += `</${tag}>`;
+  return html;
+}
+
+function convertDefListToHtml(defList) {
+  let html = '<dl>';
+  for (const item of defList['def-item'] || []) {
+    const term = inlineToHtml(item.term?.[0]);
+    const defs = (item.def?.[0]?.p || []).map((p) => inlineToHtml(p));
+    html += `<dt>${term}</dt>`;
+    html += `<dd>${defs.join(' ')}</dd>`;
+  }
+  html += '</dl>';
   return html;
 }
 
@@ -422,8 +496,61 @@ function convertTableToHtml(tableEl) {
   return html;
 }
 
+// --- Supplementary materials ---
+function parseSupplementary(articleMeta, back, floatsGroup) {
+  const materials = [];
+  const sources = [
+    ...(articleMeta['supplementary-material'] || []),
+    ...(back['supplementary-material'] || []),
+    ...(floatsGroup['supplementary-material'] || []),
+  ];
+  for (const sm of sources) {
+    const id = sm.$?.id || '';
+    const label = textContent(sm.label?.[0]) || '';
+    const caption = (sm.caption?.[0]?.p || []).map((p) => textContent(p)).join(' ');
+    const mediaEl = sm.media?.[0] || sm['inline-supplementary-material']?.[0];
+    const href = mediaEl?.$?.['xlink:href'] || sm.$?.['xlink:href'] || '';
+    const mimeType = mediaEl?.$?.['mime-subtype'] || mediaEl?.$?.['mimetype'] || '';
+    materials.push({ id, label, caption, href, mimeType });
+  }
+  return materials;
+}
+
+// --- Funding info ---
+function parseFunding(articleMeta) {
+  const fundingGroup = articleMeta['funding-group']?.[0];
+  if (!fundingGroup) return [];
+  const awards = fundingGroup['award-group'] || [];
+  return awards.map((ag) => {
+    const source = textContent(ag['funding-source']?.[0]) || '';
+    const awardIds = (ag['award-id'] || []).map((a) => textContent(a));
+    return { source, awardIds };
+  });
+}
+
+// --- Permissions (copyright/license) ---
+function parsePermissions(articleMeta) {
+  const perm = articleMeta.permissions?.[0];
+  if (!perm) return null;
+  const copyrightStatement = textContent(perm['copyright-statement']?.[0]) || '';
+  const copyrightYear = textContent(perm['copyright-year']?.[0]) || '';
+  const copyrightHolder = textContent(perm['copyright-holder']?.[0]) || '';
+  const licenseEl = perm.license?.[0];
+  const licenseType = licenseEl?.$?.['license-type'] || '';
+  const licenseUrl = licenseEl?.$?.['xlink:href'] || '';
+  const licenseText = (licenseEl?.['license-p'] || licenseEl?.p || []).map((p) => textContent(p)).join(' ');
+  return { copyrightStatement, copyrightYear, copyrightHolder, licenseType, licenseUrl, licenseText };
+}
+
 function parseBackMatter(back) {
-  const result = { footnotes: [], references: [] };
+  const result = { footnotes: [], references: [], acknowledgments: '' };
+
+  // Acknowledgments
+  const ack = back.ack?.[0];
+  if (ack) {
+    const parts = (ack.p || []).map((p) => inlineToHtml(p));
+    result.acknowledgments = parts.join('\n');
+  }
 
   // Footnotes (fn-group)
   for (const fnGroup of back['fn-group'] || []) {
@@ -557,7 +684,7 @@ function parseResponse(response) {
   return { title, bodyHtml, backMatter };
 }
 
-function buildFullTextHtml(bodyHtml, figures, tables, backMatter) {
+function buildFullTextHtml(bodyHtml, figures, tables, backMatter, supplementary, funding) {
   let html = bodyHtml;
 
   // Add figures
@@ -578,6 +705,43 @@ function buildFullTextHtml(bodyHtml, figures, tables, backMatter) {
     html += `  ${tbl.tableHtml}\n`;
     if (tbl.footnote) html += `  <p class="table-footnote">${tbl.footnote}</p>\n`;
     html += '</div>\n';
+  }
+
+  // Add acknowledgments
+  if (backMatter.acknowledgments) {
+    html += '\n<div class="article-acknowledgments">\n';
+    html += '  <h3>Acknowledgments</h3>\n';
+    for (const part of backMatter.acknowledgments.split('\n')) {
+      if (part.trim()) html += `  <p>${part}</p>\n`;
+    }
+    html += '</div>\n';
+  }
+
+  // Add funding information
+  if (funding && funding.length) {
+    html += '\n<div class="article-funding">\n';
+    html += '  <h3>Funding</h3>\n  <ul>\n';
+    for (const f of funding) {
+      const ids = f.awardIds.length ? ` (${escapeHtml(f.awardIds.join(', '))})` : '';
+      html += `    <li>${escapeHtml(f.source)}${ids}</li>\n`;
+    }
+    html += '  </ul>\n</div>\n';
+  }
+
+  // Add supplementary materials
+  if (supplementary && supplementary.length) {
+    html += '\n<div class="article-supplementary">\n';
+    html += '  <h3>Supplementary Materials</h3>\n  <ul>\n';
+    for (const sm of supplementary) {
+      const label = sm.label ? escapeHtml(sm.label) : 'Supplementary Material';
+      const caption = sm.caption ? ` — ${escapeHtml(sm.caption)}` : '';
+      if (sm.href) {
+        html += `    <li><a href="${escapeHtml(sm.href)}" target="_blank">${label}</a>${caption}</li>\n`;
+      } else {
+        html += `    <li>${label}${caption}</li>\n`;
+      }
+    }
+    html += '  </ul>\n</div>\n';
   }
 
   // Add footnotes

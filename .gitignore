@@ -1,3 +1,7 @@
 node_modules/
 .DS_Store
 tailwindcss
+admin/backups/
+admin/uploads/
+admin/imports/
+admin/auth-config.json

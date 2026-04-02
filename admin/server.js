@@ -5,16 +5,107 @@
 
 const express = require('express');
 const multer = require('multer');
+const cookieSession = require('cookie-session');
+const bcrypt = require('bcryptjs');
 const path = require('path');
 const fs = require('fs');
 const dio = require('./lib/data-io');
 const { createBackup, listBackups } = require('./lib/backup');
 const { parseJatsXml } = require('./lib/jats-parser');
+const zipImporter = require('./lib/zip-importer');
 
 const app = express();
 const PORT = 3000;
 
+// --- Auth config ---
+const AUTH_CONFIG_PATH = path.join(__dirname, 'auth-config.json');
+function loadAuthConfig() {
+  if (!fs.existsSync(AUTH_CONFIG_PATH)) {
+    return { username: 'admin', passwordHash: '', sessionSecret: 'change-me' };
+  }
+  return JSON.parse(fs.readFileSync(AUTH_CONFIG_PATH, 'utf-8'));
+}
+const authConfig = loadAuthConfig();
+
 app.use(express.json({ limit: '50mb' }));
+
+// --- Session ---
+app.use(cookieSession({
+  name: 'bmj_session',
+  secret: authConfig.sessionSecret,
+  maxAge: 24 * 60 * 60 * 1000, // 24 hours
+  httpOnly: true,
+  sameSite: 'lax',
+}));
+
+// --- Auth endpoints (before auth middleware) ---
+app.post('/api/auth/login', (req, res) => {
+  const { username, password } = req.body;
+  if (!username || !password) return res.status(400).json({ error: 'Kullanıcı adı ve şifre gerekli' });
+
+  if (username !== authConfig.username) {
+    return res.status(401).json({ error: 'Kullanıcı adı veya şifre hatalı' });
+  }
+
+  if (!bcrypt.compareSync(password, authConfig.passwordHash)) {
+    return res.status(401).json({ error: 'Kullanıcı adı veya şifre hatalı' });
+  }
+
+  req.session.user = username;
+  res.json({ ok: true, user: username });
+});
+
+app.post('/api/auth/logout', (req, res) => {
+  req.session = null;
+  res.json({ ok: true });
+});
+
+app.get('/api/auth/me', (req, res) => {
+  if (req.session?.user) {
+    res.json({ user: req.session.user });
+  } else {
+    res.status(401).json({ error: 'Not authenticated' });
+  }
+});
+
+app.post('/api/auth/change-password', (req, res) => {
+  if (!req.session?.user) return res.status(401).json({ error: 'Not authenticated' });
+  const { currentPassword, newPassword } = req.body;
+  if (!currentPassword || !newPassword) return res.status(400).json({ error: 'Mevcut ve yeni şifre gerekli' });
+  if (newPassword.length < 6) return res.status(400).json({ error: 'Yeni şifre en az 6 karakter olmalı' });
+
+  if (!bcrypt.compareSync(currentPassword, authConfig.passwordHash)) {
+    return res.status(401).json({ error: 'Mevcut şifre hatalı' });
+  }
+
+  authConfig.passwordHash = bcrypt.hashSync(newPassword, 10);
+  fs.writeFileSync(AUTH_CONFIG_PATH, JSON.stringify(authConfig, null, 2), 'utf-8');
+  res.json({ ok: true });
+});
+
+// --- Serve login page (before auth middleware) ---
+app.get('/login', (_req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'login.html'));
+});
+
+// --- Auth middleware ---
+function requireAuth(req, res, next) {
+  // Allow login page and its assets
+  if (req.path === '/login' || req.path === '/login.html' || req.path.startsWith('/api/auth/')) {
+    return next();
+  }
+  // Check session
+  if (req.session?.user) {
+    return next();
+  }
+  // Redirect HTML requests to login, reject API requests
+  if (req.path.startsWith('/api/')) {
+    return res.status(401).json({ error: 'Oturum süresi doldu. Lütfen tekrar giriş yapın.' });
+  }
+  res.redirect('/login');
+}
+
+app.use(requireAuth);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // File upload setup
@@ -491,6 +582,70 @@ app.post('/api/issues/:volume/:issue/rebuild', (req, res) => {
   }
 });
 
+app.get('/api/issues/:volume/:issue/articles', (req, res) => {
+  try {
+    const { volume, issue } = req.params;
+    const articles = dio.readArticles().filter(
+      (a) => a.volume === Number(volume) && String(a.issue) === String(issue)
+    );
+    articles.sort((a, b) => {
+      const pa = parseInt(a.pages) || 9999;
+      const pb = parseInt(b.pages) || 9999;
+      return pa - pb;
+    });
+    res.json(articles);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.post('/api/issues/:volume/:issue/set-current', (req, res) => {
+  try {
+    createBackup();
+    const { volume, issue } = req.params;
+    const vol = Number(volume);
+    const articles = dio.readArticles().filter(
+      (a) => a.volume === vol && String(a.issue) === String(issue)
+    );
+
+    // Find year from archive
+    const archive = dio.readArchiveIssues();
+    let year = '';
+    for (const y of archive) {
+      const iss = y.issues.find((i) => i.volume === vol && String(i.issue) === String(issue));
+      if (iss) { year = y.year; break; }
+    }
+
+    // Build homepage data
+    const featured = articles.filter((a) => a.featured);
+    const imageCorner = articles.filter((a) => a.imageCorner);
+    const mostCited = [...articles].sort((a, b) => (b.citations || 0) - (a.citations || 0)).slice(0, 5);
+
+    const mapArticle = (a) => ({
+      id: a.id, type: a.type, title: a.title,
+      authors: (a.authors || []).map((au) => ({ name: au.name })),
+      doi: a.doi, volume: a.volume, issue: a.issue,
+      pages: a.pages, published: a.published,
+      previewText: a.previewText || '',
+      imageUrl: a.imageUrl || '',
+    });
+
+    const homepageData = {
+      generatedAt: new Date().toISOString().slice(0, 10),
+      currentIssue: { volume: vol, issue: String(issue), year },
+      featuredArticles: featured.map(mapArticle),
+      imageCornerArticles: imageCorner.map(mapArticle),
+      mostCitedArticles: mostCited.map(mapArticle),
+      latestArticles: articles.slice(0, 10).map(mapArticle),
+    };
+
+    dio.writeHomepageData(homepageData);
+    res.json({ updated: true, articleCount: articles.length });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 app.delete('/api/issues/:year/:volume/:issue', (req, res) => {
   try {
     createBackup();
@@ -561,6 +716,17 @@ app.put('/api/editorial/extended', (req, res) => {
 app.get('/api/news', (_req, res) => {
   try {
     res.json(dio.readNews());
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.get('/api/news/:id', (req, res) => {
+  try {
+    const news = dio.readNews();
+    const item = news.find((n) => n.id === Number(req.params.id));
+    if (!item) return res.status(404).json({ error: 'Not found' });
+    res.json(item);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -737,7 +903,11 @@ app.post('/api/jats/import', async (req, res) => {
       sourcePdfUrl: '',
       localPdfUrl: '',
       pdfUrl: '',
-      pmid: '',
+      pmid: parsedArticle.pmid || '',
+      elocationId: parsedArticle.elocationId || '',
+      supplementary: parsedArticle.supplementary || [],
+      funding: parsedArticle.funding || [],
+      permissions: parsedArticle.permissions || null,
       relatedArticles: parsedArticle.relatedArticles || [],
     };
 
@@ -748,6 +918,13 @@ app.post('/api/jats/import', async (req, res) => {
     const ftHtml = fullTextHtml || parsedArticle.fullTextHtml || '';
     if (ftHtml) {
       dio.writeFullText(id, ftHtml);
+    }
+
+    // Write author metadata (ORCID, corresponding author)
+    if (parsedArticle.authorMetadata) {
+      const allMeta = dio.readAuthorMetadata();
+      allMeta[id] = parsedArticle.authorMetadata;
+      dio.writeAuthorMetadata(allMeta);
     }
 
     // Rebuild volume JSON
@@ -784,6 +961,219 @@ app.post('/api/jats/parse-batch', upload.array('xml', 100), async (req, res) => 
     }
 
     res.json(results);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.post('/api/jats/import-batch', async (req, res) => {
+  try {
+    createBackup();
+    const { parsedArticles, targetVolume, targetIssue } = req.body;
+    if (!Array.isArray(parsedArticles) || !parsedArticles.length) {
+      return res.status(400).json({ error: 'parsedArticles array required' });
+    }
+
+    const articles = dio.readArticles();
+    const allMeta = dio.readAuthorMetadata();
+    const imported = [];
+    const errors = [];
+
+    for (const pa of parsedArticles) {
+      try {
+        // Check duplicate DOI
+        if (pa.doi && articles.find((a) => a.doi === pa.doi)) {
+          errors.push({ title: pa.title, error: `DOI zaten mevcut: ${pa.doi}` });
+          continue;
+        }
+
+        const id = dio.nextArticleId(articles);
+        const article = {
+          id,
+          type: pa.type || '',
+          title: pa.title || '',
+          authors: pa.authors || [],
+          abstract: pa.abstract || '',
+          abstractHtml: pa.abstractHtml || '',
+          previewText: pa.previewText || '',
+          keywords: pa.keywords || [],
+          doi: pa.doi || '',
+          received: pa.received || '',
+          accepted: pa.accepted || '',
+          published: pa.published || '',
+          volume: targetVolume != null ? Number(targetVolume) : (pa.volume || null),
+          issue: targetIssue != null ? String(targetIssue) : (pa.issue || ''),
+          pages: pa.pages || '',
+          views: 0, downloads: 0, citations: 0,
+          featured: false, imageCorner: false,
+          hasFullText: !!pa.fullTextHtml,
+          sourceIssueId: '', sourceArticleId: '', sourceAbstractUrl: '',
+          sourceTextUrl: '', sourcePdfUrl: '', localPdfUrl: '', pdfUrl: '',
+          pmid: pa.pmid || '',
+          elocationId: pa.elocationId || '',
+          supplementary: pa.supplementary || [],
+          funding: pa.funding || [],
+          permissions: pa.permissions || null,
+          relatedArticles: pa.relatedArticles || [],
+        };
+
+        articles.unshift(article);
+
+        // Write full text
+        if (pa.fullTextHtml) {
+          dio.writeFullText(id, pa.fullTextHtml);
+        }
+
+        // Author metadata
+        if (pa.authorMetadata) {
+          allMeta[id] = pa.authorMetadata;
+        }
+
+        imported.push({ id, title: pa.title, doi: pa.doi });
+      } catch (err) {
+        errors.push({ title: pa.title, error: err.message });
+      }
+    }
+
+    // Write all at once
+    dio.writeArticles(articles);
+    if (Object.keys(allMeta).length) {
+      dio.writeAuthorMetadata(allMeta);
+    }
+
+    // Rebuild volume JSON for target issue
+    const vol = targetVolume != null ? Number(targetVolume) : null;
+    const iss = targetIssue != null ? String(targetIssue) : null;
+    if (vol && iss) {
+      const count = dio.rebuildVolumeJson(vol, iss, articles);
+      // Update archive articleCount
+      const archive = dio.readArchiveIssues();
+      for (const y of archive) {
+        const issObj = y.issues.find((i) => i.volume === vol && String(i.issue) === iss);
+        if (issObj) { issObj.articleCount = count; issObj.hasLocalData = true; break; }
+      }
+      dio.writeArchiveIssues(archive);
+    }
+
+    // Handle related article links
+    for (const imp of imported) {
+      const article = articles.find((a) => a.id === imp.id);
+      if (article?.relatedArticles?.length) {
+        handleRelatedArticleLinks(articles, article);
+      }
+    }
+    if (imported.some((imp) => articles.find((a) => a.id === imp.id)?.relatedArticles?.length)) {
+      dio.writeArticles(articles);
+    }
+
+    res.status(201).json({ imported, errors, totalImported: imported.length, totalErrors: errors.length });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Import JATS as articles-in-press
+app.post('/api/jats/import-in-press', async (req, res) => {
+  try {
+    createBackup();
+    const { parsedArticles } = req.body;
+    if (!Array.isArray(parsedArticles) || !parsedArticles.length) {
+      return res.status(400).json({ error: 'parsedArticles array required' });
+    }
+
+    const aip = dio.readArticlesInPress();
+    const mainArticles = dio.readArticles();
+    const imported = [];
+    const errors = [];
+
+    for (const pa of parsedArticles) {
+      try {
+        if (pa.doi) {
+          const dupMain = mainArticles.find((a) => a.doi === pa.doi);
+          const dupAip = aip.find((a) => a.doi === pa.doi);
+          if (dupMain || dupAip) {
+            errors.push({ title: pa.title, error: `DOI zaten mevcut: ${pa.doi}` });
+            continue;
+          }
+        }
+
+        const id = dio.nextArticleId(mainArticles.concat(aip));
+        const article = {
+          id,
+          type: pa.type || '',
+          title: pa.title || '',
+          authors: pa.authors || [],
+          abstract: pa.abstract || '',
+          abstractHtml: pa.abstractHtml || '',
+          previewText: pa.previewText || '',
+          keywords: pa.keywords || [],
+          doi: pa.doi || '',
+          received: pa.received || '',
+          accepted: pa.accepted || '',
+          published: pa.published || '',
+          volume: null, issue: '',
+          pages: pa.pages || '',
+          pmid: pa.pmid || '',
+          elocationId: pa.elocationId || '',
+          hasFullText: !!pa.fullTextHtml,
+        };
+
+        aip.unshift(article);
+
+        if (pa.fullTextHtml) {
+          dio.writeFullText(id, pa.fullTextHtml);
+        }
+
+        imported.push({ id, title: pa.title, doi: pa.doi });
+      } catch (err) {
+        errors.push({ title: pa.title, error: err.message });
+      }
+    }
+
+    dio.writeArticlesInPress(aip);
+    res.status(201).json({ imported, errors, totalImported: imported.length });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Move articles from in-press to a specific issue
+app.post('/api/articles-in-press/publish', (req, res) => {
+  try {
+    createBackup();
+    const { articleIds, volume, issue } = req.body;
+    if (!articleIds?.length || !volume || !issue) {
+      return res.status(400).json({ error: 'articleIds, volume, issue required' });
+    }
+
+    const aip = dio.readArticlesInPress();
+    const articles = dio.readArticles();
+    const moved = [];
+
+    for (const id of articleIds) {
+      const idx = aip.findIndex((a) => a.id === id);
+      if (idx === -1) continue;
+
+      const article = aip.splice(idx, 1)[0];
+      article.volume = Number(volume);
+      article.issue = String(issue);
+      articles.unshift(article);
+      moved.push(article.id);
+    }
+
+    dio.writeArticlesInPress(aip);
+    dio.writeArticles(articles);
+
+    // Rebuild volume JSON
+    const count = dio.rebuildVolumeJson(volume, issue, articles);
+    const archive = dio.readArchiveIssues();
+    for (const y of archive) {
+      const issObj = y.issues.find((i) => i.volume === Number(volume) && String(i.issue) === String(issue));
+      if (issObj) { issObj.articleCount = count; issObj.hasLocalData = true; break; }
+    }
+    dio.writeArchiveIssues(archive);
+
+    res.json({ moved, count: moved.length });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -840,13 +1230,122 @@ function handleRelatedArticleLinks(articles, source) {
 }
 
 // ===========================================================================
+//  ZIP IMPORT
+// ===========================================================================
+
+// Scan imports directory for available ZIPs (FTP watch)
+app.get('/api/imports/scan', (_req, res) => {
+  try {
+    const files = zipImporter.scanImportsDir();
+    res.json(files);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Upload a ZIP file to the imports directory
+app.post('/api/imports/upload', upload.single('zip'), (req, res) => {
+  try {
+    if (!req.file) return res.status(400).json({ error: 'No ZIP file' });
+    const safeName = path.basename(req.file.originalname).replace(/[^a-zA-Z0-9._-]/g, '_');
+    const dest = path.join(zipImporter.IMPORTS_DIR, safeName);
+    fs.renameSync(req.file.path, dest);
+    res.json({ filename: safeName, path: dest });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Preview/analyze a ZIP without importing
+app.get('/api/imports/preview/:filename', async (req, res) => {
+  try {
+    const safeName = path.basename(req.params.filename);
+    const zipPath = path.join(zipImporter.IMPORTS_DIR, safeName);
+    if (!fs.existsSync(zipPath)) return res.status(404).json({ error: 'ZIP dosyası bulunamadı' });
+
+    const preview = await zipImporter.previewZip(zipPath);
+    // Strip full parsed data to reduce response size
+    preview.articles = preview.articles.map(({ parsed, ...rest }) => rest);
+    res.json(preview);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Import a ZIP: parse all XMLs, save PDFs/images/supplementary, create articles
+app.post('/api/imports/process/:filename', async (req, res) => {
+  try {
+    createBackup();
+    const safeName = path.basename(req.params.filename);
+    const zipPath = path.join(zipImporter.IMPORTS_DIR, safeName);
+    if (!fs.existsSync(zipPath)) return res.status(404).json({ error: 'ZIP dosyası bulunamadı' });
+
+    const { targetVolume, targetIssue, setAsCurrent, createIssue: shouldCreate } = req.body || {};
+
+    // Optionally create the issue if it doesn't exist
+    if (shouldCreate && targetVolume && targetIssue) {
+      const archive = dio.readArchiveIssues();
+      let found = false;
+      for (const y of archive) {
+        if (y.issues.some((i) => i.volume === Number(targetVolume) && String(i.issue) === String(targetIssue))) {
+          found = true;
+          break;
+        }
+      }
+      if (!found) {
+        const year = req.body.year || String(new Date().getFullYear());
+        let yearGroup = archive.find((y) => y.year === year);
+        if (!yearGroup) {
+          yearGroup = { year, volume: Number(targetVolume), issues: [] };
+          archive.unshift(yearGroup);
+          archive.sort((a, b) => Number(b.year) - Number(a.year));
+        }
+        yearGroup.issues.unshift({
+          label: `Volume ${targetVolume}, Issue ${targetIssue}`,
+          sourceId: '', sourceUrl: '',
+          volume: Number(targetVolume),
+          issue: String(targetIssue),
+          articleCount: 0,
+          hasLocalData: true,
+        });
+        dio.writeArchiveIssues(archive);
+        dio.writeVolumeJson(targetVolume, targetIssue, []);
+      }
+    }
+
+    const result = await zipImporter.importZip(zipPath, {
+      targetVolume: targetVolume != null ? Number(targetVolume) : null,
+      targetIssue: targetIssue != null ? String(targetIssue) : null,
+      setAsCurrent: !!setAsCurrent,
+    });
+
+    res.status(201).json(result);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Delete a ZIP from imports
+app.delete('/api/imports/:filename', (req, res) => {
+  try {
+    const safeName = path.basename(req.params.filename);
+    const zipPath = path.join(zipImporter.IMPORTS_DIR, safeName);
+    if (fs.existsSync(zipPath)) fs.unlinkSync(zipPath);
+    res.json({ deleted: true });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// ===========================================================================
 //  MEDIA UPLOAD
 // ===========================================================================
 
 app.post('/api/media/upload/pdf', upload.single('pdf'), (req, res) => {
   try {
     if (!req.file) return res.status(400).json({ error: 'No file' });
-    const articleId = req.body.articleId || path.parse(req.file.originalname).name;
+    const rawId = req.body.articleId || path.parse(req.file.originalname).name;
+    const articleId = String(rawId).replace(/[^a-zA-Z0-9._-]/g, '_');
     const dest = path.join(dio.PATHS.pdfsDir, `${articleId}.pdf`);
     fs.renameSync(req.file.path, dest);
 
@@ -865,6 +1364,170 @@ app.post('/api/media/upload/image', upload.single('image'), (req, res) => {
     const dest = path.join(dio.PATHS.imagesDir, safeName);
     fs.renameSync(req.file.path, dest);
     res.json({ url: `images/${safeName}`, path: dest });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Batch PDF upload — match to articles by filename (e.g., 2805.pdf → article #2805)
+app.post('/api/media/upload/pdf-batch', upload.array('pdf', 200), (req, res) => {
+  try {
+    if (!req.files?.length) return res.status(400).json({ error: 'No files' });
+
+    const articles = dio.readArticles();
+    const matched = [];
+    const unmatched = [];
+
+    for (const file of req.files) {
+      const baseName = path.parse(file.originalname).name.replace(/[^a-zA-Z0-9._-]/g, '_');
+      const articleId = parseInt(baseName);
+      const dest = path.join(dio.PATHS.pdfsDir, `${baseName}.pdf`);
+      fs.renameSync(file.path, dest);
+
+      const pdfUrl = `js/data/pdfs/${baseName}.pdf`;
+
+      // Try to match to an article by ID
+      const article = articleId ? articles.find((a) => a.id === articleId) : null;
+      if (article) {
+        article.pdfUrl = pdfUrl;
+        article.localPdfUrl = pdfUrl;
+        matched.push({ id: article.id, title: article.title, pdfUrl });
+      } else {
+        unmatched.push({ filename: file.originalname, pdfUrl });
+      }
+    }
+
+    if (matched.length) {
+      dio.writeArticles(articles);
+    }
+
+    res.json({ matched, unmatched, totalMatched: matched.length, totalUnmatched: unmatched.length });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Upload figures for an article
+app.post('/api/media/upload/figures/:articleId', upload.array('figures', 50), (req, res) => {
+  try {
+    if (!req.files?.length) return res.status(400).json({ error: 'No files' });
+    const articleId = String(req.params.articleId).replace(/[^a-zA-Z0-9._-]/g, '_');
+
+    // Create article images directory
+    const articleDir = path.join(dio.PATHS.articleImagesDir, articleId);
+    if (!fs.existsSync(articleDir)) fs.mkdirSync(articleDir, { recursive: true });
+
+    const uploaded = [];
+    for (const file of req.files) {
+      const safeName = path.basename(file.originalname).replace(/[^a-zA-Z0-9._-]/g, '_');
+      const dest = path.join(articleDir, safeName);
+      fs.renameSync(file.path, dest);
+      uploaded.push({ filename: safeName, url: `images/articles/${articleId}/${safeName}` });
+    }
+
+    res.json({ articleId, uploaded });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Update article full text HTML to use uploaded figure paths
+app.post('/api/media/figures/:articleId/apply', (req, res) => {
+  try {
+    const articleId = req.params.articleId;
+    const { mappings } = req.body; // [{originalHref: "fig1.tif", newUrl: "images/articles/123/fig1.jpg"}, ...]
+    if (!mappings?.length) return res.status(400).json({ error: 'mappings required' });
+
+    let html = dio.readFullText(articleId);
+    if (!html) return res.status(404).json({ error: 'Full text not found' });
+
+    let replaced = 0;
+    for (const m of mappings) {
+      const escaped = m.originalHref.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`src="${escaped}"`, 'g');
+      const newSrc = `src="${m.newUrl}"`;
+      if (html.includes(`src="${m.originalHref}"`)) {
+        html = html.replace(regex, newSrc);
+        replaced++;
+      }
+    }
+
+    dio.writeFullText(articleId, html);
+    res.json({ replaced, articleId });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Upload supplementary files for an article
+app.post('/api/media/upload/supplementary/:articleId', upload.array('files', 20), (req, res) => {
+  try {
+    if (!req.files?.length) return res.status(400).json({ error: 'No files' });
+    const articleId = String(req.params.articleId).replace(/[^a-zA-Z0-9._-]/g, '_');
+
+    const suppDir = path.join(dio.PATHS.supplementaryDir, articleId);
+    if (!fs.existsSync(suppDir)) fs.mkdirSync(suppDir, { recursive: true });
+
+    const uploaded = [];
+    for (const file of req.files) {
+      const safeName = path.basename(file.originalname).replace(/[^a-zA-Z0-9._-]/g, '_');
+      const dest = path.join(suppDir, safeName);
+      fs.renameSync(file.path, dest);
+      uploaded.push({ filename: safeName, url: `js/data/supplementary/${articleId}/${safeName}` });
+    }
+
+    res.json({ articleId, uploaded });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Media stats
+app.get('/api/media/stats', (_req, res) => {
+  try {
+    const pdfCount = fs.existsSync(dio.PATHS.pdfsDir)
+      ? fs.readdirSync(dio.PATHS.pdfsDir).filter((f) => f.endsWith('.pdf')).length : 0;
+
+    const articles = dio.readArticles();
+    const withPdf = articles.filter((a) => a.pdfUrl).length;
+    const withoutPdf = articles.length - withPdf;
+
+    let figureCount = 0;
+    if (fs.existsSync(dio.PATHS.articleImagesDir)) {
+      const dirs = fs.readdirSync(dio.PATHS.articleImagesDir);
+      for (const d of dirs) {
+        const p = path.join(dio.PATHS.articleImagesDir, d);
+        if (fs.statSync(p).isDirectory()) {
+          figureCount += fs.readdirSync(p).length;
+        }
+      }
+    }
+
+    let suppCount = 0;
+    if (fs.existsSync(dio.PATHS.supplementaryDir)) {
+      const dirs = fs.readdirSync(dio.PATHS.supplementaryDir);
+      for (const d of dirs) {
+        const p = path.join(dio.PATHS.supplementaryDir, d);
+        if (fs.statSync(p).isDirectory()) {
+          suppCount += fs.readdirSync(p).length;
+        }
+      }
+    }
+
+    res.json({ pdfCount, withPdf, withoutPdf, figureCount, suppCount, totalArticles: articles.length });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// List articles missing PDFs
+app.get('/api/media/missing-pdfs', (_req, res) => {
+  try {
+    const articles = dio.readArticles();
+    const missing = articles
+      .filter((a) => !a.pdfUrl)
+      .map((a) => ({ id: a.id, title: a.title, volume: a.volume, issue: a.issue, doi: a.doi }));
+    res.json(missing);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -947,6 +1610,7 @@ app.get('/api/nav-footer', (_req, res) => {
 
 app.put('/api/nav-footer', (req, res) => {
   try {
+    createBackup();
     fs.writeFileSync(NAV_FOOTER_PATH, JSON.stringify(req.body, null, 2), 'utf-8');
     res.json({ saved: true });
   } catch (err) {

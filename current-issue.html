@@ -309,8 +309,16 @@
     </div>
   </footer>
 
-  <script src="js/data/articles.js"></script>
   <script src="js/data-loader.js"></script>
+  <script>
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var c = document.getElementById('articles-container');
+      var vol = params.get('volume') || (c && c.getAttribute('data-volume')) || '43';
+      var iss = params.get('issue') || (c && c.getAttribute('data-issue')) || '2';
+      document.write('<script src="js/data/volumes/vol' + vol + '-' + iss + '.js"><\/script>');
+    })();
+  </script>
   <script src="js/data/news.js"></script>
   <script src="js/main.js"></script>
   <script src="js/search.js?v=20260228a"></script>
