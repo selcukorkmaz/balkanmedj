@@ -1488,6 +1488,8 @@
         return;
       }
 
+      try {
+
       function stripLegacyAuthorArtifacts(value) {
         var text = String(value || '').replace(/\u00a0/g, ' ').trim();
         if (!text) return '';
@@ -4948,6 +4950,12 @@
           CitationHelper.downloadFile(enw, firstAuthor + '_' + year + '.enw', 'application/x-endnote-refer');
           if (window.showToast) window.showToast('EndNote file downloaded');
         });
+      }
+
+      } catch (err) {
+        console.error('Article render failed:', err);
+        contentEl.classList.add('hidden');
+        notFoundEl.classList.remove('hidden');
       }
     })();
   </script>
