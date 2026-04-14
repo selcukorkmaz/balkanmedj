@@ -7,6 +7,7 @@ const express = require('express');
 const multer = require('multer');
 const cookieSession = require('cookie-session');
 const bcrypt = require('bcryptjs');
+const rateLimit = require('express-rate-limit');
 const path = require('path');
 const fs = require('fs');
 const dio = require('./lib/data-io');
@@ -15,15 +16,24 @@ const { parseJatsXml } = require('./lib/jats-parser');
 const zipImporter = require('./lib/zip-importer');
 
 const app = express();
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
+const IS_PROD = process.env.NODE_ENV === 'production';
+// Trust the first proxy (Cloudflare Tunnel / nginx) so req.secure + rate-limit IPs work.
+app.set('trust proxy', 1);
 
 // --- Auth config ---
 const AUTH_CONFIG_PATH = path.join(__dirname, 'auth-config.json');
 function loadAuthConfig() {
   if (!fs.existsSync(AUTH_CONFIG_PATH)) {
-    return { username: 'admin', passwordHash: '', sessionSecret: 'change-me' };
+    console.error('[fatal] auth-config.json not found. Run the setup command to create it.');
+    process.exit(1);
   }
-  return JSON.parse(fs.readFileSync(AUTH_CONFIG_PATH, 'utf-8'));
+  const cfg = JSON.parse(fs.readFileSync(AUTH_CONFIG_PATH, 'utf-8'));
+  if (!cfg.passwordHash || !cfg.sessionSecret || cfg.sessionSecret === 'change-me') {
+    console.error('[fatal] auth-config.json is missing passwordHash or has a default sessionSecret. Regenerate it.');
+    process.exit(1);
+  }
+  return cfg;
 }
 const authConfig = loadAuthConfig();
 
@@ -35,11 +45,21 @@ app.use(cookieSession({
   secret: authConfig.sessionSecret,
   maxAge: 24 * 60 * 60 * 1000, // 24 hours
   httpOnly: true,
-  sameSite: 'lax',
+  sameSite: 'strict',
+  secure: IS_PROD,
 }));
 
+// --- Rate limit login to blunt brute-force attempts ---
+const loginLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 10,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: 'Çok fazla giriş denemesi. 15 dakika sonra tekrar deneyin.' },
+});
+
 // --- Auth endpoints (before auth middleware) ---
-app.post('/api/auth/login', (req, res) => {
+app.post('/api/auth/login', loginLimiter, (req, res) => {
   const { username, password } = req.body;
   if (!username || !password) return res.status(400).json({ error: 'Kullanıcı adı ve şifre gerekli' });
 
@@ -109,10 +129,49 @@ app.use(requireAuth);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // File upload setup
-const upload = multer({
-  dest: path.join(__dirname, 'uploads'),
-  limits: { fileSize: 100 * 1024 * 1024 },
-});
+const ALLOWED_MIME = {
+  pdf: new Set(['application/pdf']),
+  image: new Set(['image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/svg+xml']),
+  xml: new Set(['application/xml', 'text/xml']),
+  zip: new Set(['application/zip', 'application/x-zip-compressed', 'application/octet-stream']),
+  // figures = images + pdf; supplementary = broadly allowed (video/audio/doc/csv/zip)
+  figure: new Set(['image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/svg+xml', 'application/pdf']),
+  supplementary: new Set([
+    'application/pdf', 'application/zip', 'application/x-zip-compressed',
+    'image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/svg+xml',
+    'video/mp4', 'video/quicktime', 'video/webm',
+    'audio/mpeg', 'audio/wav', 'audio/ogg',
+    'text/csv', 'text/plain',
+    'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+    'application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+  ]),
+};
+const ALLOWED_EXT = {
+  pdf: /\.pdf$/i,
+  image: /\.(jpe?g|png|webp|gif|svg)$/i,
+  xml: /\.xml$/i,
+  zip: /\.zip$/i,
+  figure: /\.(jpe?g|png|webp|gif|svg|pdf)$/i,
+  supplementary: /\.(pdf|zip|jpe?g|png|webp|gif|svg|mp4|mov|webm|mp3|wav|ogg|csv|txt|docx?|xlsx?)$/i,
+};
+function makeUploader(kind) {
+  return multer({
+    dest: path.join(__dirname, 'uploads'),
+    limits: { fileSize: 100 * 1024 * 1024 },
+    fileFilter(_req, file, cb) {
+      const mimeOk = ALLOWED_MIME[kind] && ALLOWED_MIME[kind].has(file.mimetype);
+      const extOk = ALLOWED_EXT[kind] && ALLOWED_EXT[kind].test(file.originalname || '');
+      if (mimeOk && extOk) return cb(null, true);
+      cb(new Error(`Desteklenmeyen dosya türü: ${file.originalname} (${file.mimetype})`));
+    },
+  });
+}
+const uploadPdf = makeUploader('pdf');
+const uploadImage = makeUploader('image');
+const uploadXml = makeUploader('xml');
+const uploadZip = makeUploader('zip');
+const uploadFigure = makeUploader('figure');
+const uploadSupp = makeUploader('supplementary');
 
 // ===========================================================================
 //  UTILITY
@@ -840,7 +899,7 @@ app.put('/api/article-types/rename', (req, res) => {
 //  JATS XML IMPORT
 // ===========================================================================
 
-app.post('/api/jats/parse', upload.single('xml'), async (req, res) => {
+app.post('/api/jats/parse', uploadXml.single('xml'), async (req, res) => {
   try {
     if (!req.file) return res.status(400).json({ error: 'No XML file uploaded' });
     const xmlContent = fs.readFileSync(req.file.path, 'utf-8');
@@ -944,7 +1003,7 @@ app.post('/api/jats/import', async (req, res) => {
   }
 });
 
-app.post('/api/jats/parse-batch', upload.array('xml', 100), async (req, res) => {
+app.post('/api/jats/parse-batch', uploadXml.array('xml', 100), async (req, res) => {
   try {
     if (!req.files?.length) return res.status(400).json({ error: 'No XML files uploaded' });
 
@@ -1244,7 +1303,7 @@ app.get('/api/imports/scan', (_req, res) => {
 });
 
 // Upload a ZIP file to the imports directory
-app.post('/api/imports/upload', upload.single('zip'), (req, res) => {
+app.post('/api/imports/upload', uploadZip.single('zip'), (req, res) => {
   try {
     if (!req.file) return res.status(400).json({ error: 'No ZIP file' });
     const safeName = path.basename(req.file.originalname).replace(/[^a-zA-Z0-9._-]/g, '_');
@@ -1341,7 +1400,7 @@ app.delete('/api/imports/:filename', (req, res) => {
 //  MEDIA UPLOAD
 // ===========================================================================
 
-app.post('/api/media/upload/pdf', upload.single('pdf'), (req, res) => {
+app.post('/api/media/upload/pdf', uploadPdf.single('pdf'), (req, res) => {
   try {
     if (!req.file) return res.status(400).json({ error: 'No file' });
     const rawId = req.body.articleId || path.parse(req.file.originalname).name;
@@ -1356,7 +1415,7 @@ app.post('/api/media/upload/pdf', upload.single('pdf'), (req, res) => {
   }
 });
 
-app.post('/api/media/upload/image', upload.single('image'), (req, res) => {
+app.post('/api/media/upload/image', uploadImage.single('image'), (req, res) => {
   try {
     if (!req.file) return res.status(400).json({ error: 'No file' });
     // Sanitize filename: only allow alphanumeric, dash, underscore, dot
@@ -1370,7 +1429,7 @@ app.post('/api/media/upload/image', upload.single('image'), (req, res) => {
 });
 
 // Batch PDF upload — match to articles by filename (e.g., 2805.pdf → article #2805)
-app.post('/api/media/upload/pdf-batch', upload.array('pdf', 200), (req, res) => {
+app.post('/api/media/upload/pdf-batch', uploadPdf.array('pdf', 200), (req, res) => {
   try {
     if (!req.files?.length) return res.status(400).json({ error: 'No files' });
 
@@ -1408,7 +1467,7 @@ app.post('/api/media/upload/pdf-batch', upload.array('pdf', 200), (req, res) => 
 });
 
 // Upload figures for an article
-app.post('/api/media/upload/figures/:articleId', upload.array('figures', 50), (req, res) => {
+app.post('/api/media/upload/figures/:articleId', uploadFigure.array('figures', 50), (req, res) => {
   try {
     if (!req.files?.length) return res.status(400).json({ error: 'No files' });
     const articleId = String(req.params.articleId).replace(/[^a-zA-Z0-9._-]/g, '_');
@@ -1434,7 +1493,7 @@ app.post('/api/media/upload/figures/:articleId', upload.array('figures', 50), (r
 // Update article full text HTML to use uploaded figure paths
 app.post('/api/media/figures/:articleId/apply', (req, res) => {
   try {
-    const articleId = req.params.articleId;
+    const articleId = String(req.params.articleId).replace(/[^a-zA-Z0-9._-]/g, '_');
     const { mappings } = req.body; // [{originalHref: "fig1.tif", newUrl: "images/articles/123/fig1.jpg"}, ...]
     if (!mappings?.length) return res.status(400).json({ error: 'mappings required' });
 
@@ -1460,7 +1519,7 @@ app.post('/api/media/figures/:articleId/apply', (req, res) => {
 });
 
 // Upload supplementary files for an article
-app.post('/api/media/upload/supplementary/:articleId', upload.array('files', 20), (req, res) => {
+app.post('/api/media/upload/supplementary/:articleId', uploadSupp.array('files', 20), (req, res) => {
   try {
     if (!req.files?.length) return res.status(400).json({ error: 'No files' });
     const articleId = String(req.params.articleId).replace(/[^a-zA-Z0-9._-]/g, '_');
@@ -1627,6 +1686,26 @@ app.post('/api/nav-footer/sync', (req, res) => {
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
+});
+
+// ===========================================================================
+//  ERROR HANDLER
+// ===========================================================================
+// Catches multer MulterError / fileFilter rejections and any thrown errors
+// from route handlers so we return clean JSON instead of stack traces.
+// eslint-disable-next-line no-unused-vars
+app.use((err, req, res, _next) => {
+  if (!err) return res.status(500).json({ error: 'Sunucu hatası' });
+  if (err instanceof multer.MulterError) {
+    return res.status(400).json({ error: err.message });
+  }
+  // Known-safe messages (from our fileFilter) pass through; everything else is generic in prod.
+  const safe = typeof err.message === 'string' && err.message.startsWith('Desteklenmeyen dosya');
+  if (IS_PROD && !safe) {
+    console.error('[err]', err);
+    return res.status(500).json({ error: 'Sunucu hatası' });
+  }
+  res.status(400).json({ error: err.message || 'Hata' });
 });
 
 // ===========================================================================

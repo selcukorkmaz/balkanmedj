@@ -215,13 +215,13 @@ route('/articles', async (el, params) => {
     }
     const result = await API.get(`/articles?search=${encodeURIComponent(q)}&limit=50`);
     tbody.innerHTML = result.articles.map((a) => `
-      <tr class="border-t hover:bg-gray-50 cursor-pointer" onclick="navigate('#/articles/${a.id}')">
-        <td class="px-4 py-3 text-gray-400">${a.id}</td>
+      <tr class="border-t hover:bg-gray-50 cursor-pointer" onclick="navigate('#/articles/${Number(a.id)}')">
+        <td class="px-4 py-3 text-gray-400">${Number(a.id)}</td>
         <td class="px-4 py-3 max-w-md truncate">${esc(a.title)}</td>
         <td class="px-4 py-3"><span class="px-2 py-0.5 bg-gray-100 rounded text-xs">${esc(a.type)}</span></td>
-        <td class="px-4 py-3 text-gray-500">${a.volume || '-'}/${a.issue || '-'}</td>
-        <td class="px-4 py-3 text-gray-500">${a.published || '-'}</td>
-        <td class="px-4 py-3"><button class="text-red-500 hover:text-red-700 text-xs" onclick="event.stopPropagation(); deleteArticle(${a.id})">Sil</button></td>
+        <td class="px-4 py-3 text-gray-500">${esc(a.volume) || '-'}/${esc(a.issue) || '-'}</td>
+        <td class="px-4 py-3 text-gray-500">${esc(a.published) || '-'}</td>
+        <td class="px-4 py-3"><button class="text-red-500 hover:text-red-700 text-xs" onclick="event.stopPropagation(); deleteArticle(${Number(a.id)})">Sil</button></td>
       </tr>`).join('');
   }, 300));
 });
@@ -811,7 +811,7 @@ async function processZipImport(filename) {
       html += `<h3 class="font-semibold text-gray-700 mb-2">Aktarılan Makaleler</h3>
         <div class="space-y-1 mb-4">${result.imported.map((a) => `
           <div class="flex items-center gap-2 text-sm p-2 rounded hover:bg-gray-50">
-            <a href="#/articles/${a.id}" class="text-teal-600 hover:underline font-medium">#${a.id}</a>
+            <a href="#/articles/${Number(a.id)}" class="text-teal-600 hover:underline font-medium">#${Number(a.id)}</a>
             <span class="flex-1 truncate">${esc(a.title)}</span>
             ${a.hasPdf ? '<span class="text-green-500 text-xs">PDF &#10003;</span>' : '<span class="text-amber-500 text-xs">PDF &#10007;</span>'}
           </div>`).join('')}
@@ -826,7 +826,7 @@ async function processZipImport(filename) {
     }
 
     html += `<div class="mt-6 flex gap-3">
-      ${result.volume ? `<a href="#/issues/${result.volume}/${result.issue}" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Sayıyı Görüntüle</a>` : ''}
+      ${result.volume ? `<a href="#/issues/${encodeURIComponent(result.volume)}/${encodeURIComponent(result.issue)}" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Sayıyı Görüntüle</a>` : ''}
       <a href="#/zip-import" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm">Başka ZIP Aktar</a>
     </div></div>`;
 
@@ -924,7 +924,7 @@ async function handleXmlFiles(files) {
           <div class="text-sm text-gray-600 mb-2">${(a.authors || []).map((au) => esc(au.name)).join(', ')}</div>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs text-gray-500">
             <div><strong>DOI:</strong> ${esc(a.doi)}</div>
-            <div><strong>Cilt:</strong> ${a.volume || '-'} / ${esc(a.issue) || '-'}</div>
+            <div><strong>Cilt:</strong> ${esc(a.volume) || '-'} / ${esc(a.issue) || '-'}</div>
             <div><strong>Sayfa:</strong> ${esc(a.pages)}</div>
             <div><strong>Tarih:</strong> ${esc(a.published)}</div>
           </div>

@@ -215,10 +215,17 @@ function rebuildArticleIndex(articles) {
 
 // --- Article full text helpers ---
 
+function safeArticleId(id) {
+  const s = String(id).replace(/[^a-zA-Z0-9._-]/g, '_');
+  if (!s || s === '.' || s === '..') throw new Error('Invalid articleId');
+  return s;
+}
+
 function readFullText(articleId) {
-  const htmlPath = path.join(PATHS.articlesDir, `${articleId}.html`);
+  const id = safeArticleId(articleId);
+  const htmlPath = path.join(PATHS.articlesDir, `${id}.html`);
   if (fs.existsSync(htmlPath)) return fs.readFileSync(htmlPath, 'utf-8');
-  const jsPath = path.join(PATHS.articlesDir, `${articleId}.js`);
+  const jsPath = path.join(PATHS.articlesDir, `${id}.js`);
   if (fs.existsSync(jsPath)) {
     const text = fs.readFileSync(jsPath, 'utf-8');
     const match = text.match(/window\._articleFullText\[\d+\]\s*=\s*"([\s\S]*)"\s*;?\s*$/);
@@ -228,15 +235,16 @@ function readFullText(articleId) {
 }
 
 function writeFullText(articleId, html) {
-  const htmlPath = path.join(PATHS.articlesDir, `${articleId}.html`);
-  const jsPath = path.join(PATHS.articlesDir, `${articleId}.js`);
+  const id = safeArticleId(articleId);
+  const htmlPath = path.join(PATHS.articlesDir, `${id}.html`);
+  const jsPath = path.join(PATHS.articlesDir, `${id}.js`);
   // Atomic write for HTML
   const htmlTmp = htmlPath + '.tmp';
   fs.writeFileSync(htmlTmp, html, 'utf-8');
   fs.renameSync(htmlTmp, htmlPath);
   // Atomic write for JS
   const escaped = html.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\r\n/g, '\\n').replace(/\r/g, '\\n').replace(/\n/g, '\\n');
-  const jsContent = `window._articleFullText = window._articleFullText || {};\nwindow._articleFullText[${articleId}] = "${escaped}";\n`;
+  const jsContent = `window._articleFullText = window._articleFullText || {};\nwindow._articleFullText[${id}] = "${escaped}";\n`;
   const jsTmp = jsPath + '.tmp';
   fs.writeFileSync(jsTmp, jsContent, 'utf-8');
   fs.renameSync(jsTmp, jsPath);

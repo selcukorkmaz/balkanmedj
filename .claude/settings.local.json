@@ -67,7 +67,8 @@
       "Bash(node -e \":*)",
       "Bash(cd:*)",
       "Bash(python scripts/build_from_jats.py)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(PORT=3999 node -e \"require\\('./server.js'\\); setTimeout\\(\\(\\)=>process.exit\\(0\\), 600\\);\")"
     ]
   }
 }
