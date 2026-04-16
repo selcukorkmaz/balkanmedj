@@ -21,6 +21,78 @@ function debounce(fn, ms) {
   return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); };
 }
 
+// --- Byte formatter ---
+function formatBytes(bytes) {
+  if (bytes == null || isNaN(bytes)) return '';
+  if (bytes < 1024) return bytes + ' B';
+  if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+  if (bytes < 1024 * 1024 * 1024) return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+  return (bytes / (1024 * 1024 * 1024)).toFixed(2) + ' GB';
+}
+
+// --- Classify a FileList into {pdf, figure, other} with totals ---
+function classifyFiles(files) {
+  const IMG_RE = /\.(jpe?g|png|webp|gif|svg|tiff?)$/i;
+  const PDF_RE = /\.pdf$/i;
+  const out = { pdf: [], figure: [], other: [], totalBytes: 0, totalCount: 0 };
+  for (const f of files) {
+    if (PDF_RE.test(f.name)) out.pdf.push(f);
+    else if (IMG_RE.test(f.name)) out.figure.push(f);
+    else out.other.push(f);
+    out.totalBytes += f.size || 0;
+    out.totalCount += 1;
+  }
+  return out;
+}
+
+// --- Shared upload progress UI ---
+// Renders a progress card into `container` (element or id) and returns an updater
+// object with `update(pct, loaded, total)`, `complete(successHtml)`, and `fail(msg)`.
+function renderUploadProgress(container, files, label = 'Yükleniyor') {
+  const el = typeof container === 'string' ? document.getElementById(container) : container;
+  if (!el) return { update() {}, complete() {}, fail() {} };
+  const info = classifyFiles(files);
+  const counts = [
+    info.pdf.length ? `${info.pdf.length} PDF` : '',
+    info.figure.length ? `${info.figure.length} figür` : '',
+    info.other.length ? `${info.other.length} diğer` : '',
+  ].filter(Boolean).join(' · ') || `${info.totalCount} dosya`;
+  const totalHuman = formatBytes(info.totalBytes);
+  const uid = 'up-' + Math.random().toString(36).slice(2, 8);
+  el.innerHTML = `
+    <div id="${uid}" class="bg-white border rounded-xl p-4">
+      <div class="flex items-center justify-between mb-2">
+        <div class="min-w-0">
+          <div class="font-medium text-gray-900 text-sm truncate">${esc(label)} — ${esc(counts)}</div>
+          <div class="text-xs text-gray-500 mt-0.5" data-role="label">Yükleniyor... 0%</div>
+        </div>
+        <div class="text-xs text-gray-500 flex-shrink-0 ml-3" data-role="bytes">0 B / ${esc(totalHuman)}</div>
+      </div>
+      <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+        <div data-role="bar" class="h-full bg-teal-600 transition-all duration-150" style="width: 0%"></div>
+      </div>
+    </div>`;
+  const root = document.getElementById(uid);
+  const bar = root.querySelector('[data-role="bar"]');
+  const lbl = root.querySelector('[data-role="label"]');
+  const byt = root.querySelector('[data-role="bytes"]');
+  return {
+    info,
+    update(pct, loaded, total) {
+      if (bar) bar.style.width = pct + '%';
+      if (byt) byt.textContent = `${formatBytes(loaded)} / ${formatBytes(total)}`;
+      if (lbl) lbl.textContent = pct < 100 ? `Yükleniyor... ${pct}%` : 'Sunucu dosyaları işliyor...';
+    },
+    // Replace progress card with a success block (caller supplies HTML).
+    complete(successHtml) {
+      el.innerHTML = successHtml;
+    },
+    fail(msg) {
+      el.innerHTML = `<div class="bg-red-50 border border-red-200 text-red-700 p-3 rounded-lg text-sm">${esc(msg)}</div>`;
+    },
+  };
+}
+
 // --- Modal ---
 function modal(title, bodyHtml, actions = []) {
   return new Promise((resolve) => {
@@ -77,6 +149,21 @@ function matchRoute(hash) {
 async function handleRoute() {
   const hash = window.location.hash || '#/';
   const main = document.getElementById('main-content');
+
+  // Unsaved changes guard: if form is dirty, confirm before leaving
+  if (_formDirty && _lastHash && _lastHash !== hash) {
+    const prev = _lastHash;
+    _formDirty = false; // avoid re-entry while confirm is open
+    const ok = await confirmAction('Kaydedilmemiş değişiklikler var. Sayfadan ayrılmak istediğinizden emin misiniz?');
+    if (!ok) {
+      _formDirty = true;
+      _updateDirtyIndicator();
+      // revert URL without re-triggering handleRoute
+      history.replaceState(null, '', prev);
+      return;
+    }
+  }
+
   const match = matchRoute(hash);
   clearDirty();
 
@@ -111,8 +198,19 @@ function esc(str) {
 
 // --- Unsaved changes tracking ---
 let _formDirty = false;
-function markDirty() { _formDirty = true; }
-function clearDirty() { _formDirty = false; }
+let _lastHash = window.location.hash;
+function _updateDirtyIndicator() {
+  document.querySelectorAll('[data-dirty-indicator]').forEach((el) => {
+    el.textContent = _formDirty ? ' •' : '';
+  });
+}
+function markDirty() {
+  if (!_formDirty) { _formDirty = true; _updateDirtyIndicator(); }
+}
+function clearDirty() {
+  if (_formDirty) { _formDirty = false; _updateDirtyIndicator(); }
+  _lastHash = window.location.hash;
+}
 window.addEventListener('beforeunload', (e) => {
   if (_formDirty) { e.preventDefault(); e.returnValue = ''; }
 });
@@ -121,7 +219,11 @@ window.addEventListener('beforeunload', (e) => {
 
 // Dashboard
 route('/', async (el) => {
-  const stats = await API.get('/stats');
+  const [stats, homepage] = await Promise.all([
+    API.get('/stats'),
+    API.get('/homepage').catch(() => ({})),
+  ]);
+  const cur = homepage?.currentIssue || {};
   const typeRows = Object.entries(stats.typeCounts || {})
     .sort((a, b) => b[1] - a[1])
     .map(([t, c]) => `<tr><td class="py-1.5 text-gray-600">${esc(t)}</td><td class="py-1.5 text-right font-medium">${c}</td></tr>`)
@@ -129,6 +231,22 @@ route('/', async (el) => {
 
   el.innerHTML = `
     <h1 class="text-2xl font-bold text-gray-900 mb-6">Dashboard</h1>
+
+    <!-- Current Issue widget -->
+    <div class="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-xl p-5 mb-6 flex items-center justify-between flex-wrap gap-3">
+      <div>
+        <div class="text-xs font-medium text-amber-700 uppercase tracking-wide">Güncel Sayı</div>
+        ${cur.volume
+          ? `<div class="text-lg font-bold text-gray-900 mt-1">Volume ${esc(cur.volume)}, Issue ${esc(cur.issue)}${cur.year ? ` <span class="text-sm font-normal text-gray-500">(${esc(cur.year)})</span>` : ''}</div>
+             <div class="text-xs text-gray-500">${(homepage.featuredArticles || []).length} öne çıkan · ${(homepage.imageCornerArticles || []).length} görsel köşesi · ${(homepage.latestArticles || []).length} son makale${homepage.generatedAt ? ` · ${esc(homepage.generatedAt)}` : ''}</div>`
+          : '<div class="text-base text-gray-700 mt-1">Henüz güncel sayı atanmamış.</div>'}
+      </div>
+      <div class="flex gap-2">
+        ${cur.volume ? `<a href="#/issues/${esc(cur.volume)}/${encodeURIComponent(cur.issue)}" class="px-3 py-1.5 bg-white border border-amber-300 text-amber-700 rounded text-xs font-medium hover:bg-amber-100">Yönet</a>` : ''}
+        <a href="#/issues" class="px-3 py-1.5 bg-amber-600 text-white rounded text-xs font-medium hover:bg-amber-700">Tüm Sayılar</a>
+      </div>
+    </div>
+
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
       <div class="bg-white rounded-xl border p-5"><div class="text-3xl font-bold text-teal-700">${stats.articleCount}</div><div class="text-sm text-gray-500 mt-1">Makale</div></div>
       <div class="bg-white rounded-xl border p-5"><div class="text-3xl font-bold text-amber-600">${stats.articlesInPressCount}</div><div class="text-sm text-gray-500 mt-1">Baskıda</div></div>
@@ -191,7 +309,10 @@ route('/articles', async (el, params) => {
               <td class="px-4 py-3"><span class="px-2 py-0.5 bg-gray-100 rounded text-xs">${esc(a.type)}</span></td>
               <td class="px-4 py-3 text-gray-500">${a.volume || '-'}/${a.issue || '-'}</td>
               <td class="px-4 py-3 text-gray-500">${a.published || '-'}</td>
-              <td class="px-4 py-3"><button class="text-red-500 hover:text-red-700 text-xs" onclick="event.stopPropagation(); deleteArticle(${a.id})">Sil</button></td>
+              <td class="px-4 py-3 whitespace-nowrap">
+                <a href="/site/article.html?id=${a.id}" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 text-xs mr-3" onclick="event.stopPropagation()">Önizle</a>
+                <button class="text-red-500 hover:text-red-700 text-xs" onclick="event.stopPropagation(); deleteArticle(${a.id})">Sil</button>
+              </td>
             </tr>`).join('')}
         </tbody>
       </table>
@@ -221,7 +342,10 @@ route('/articles', async (el, params) => {
         <td class="px-4 py-3"><span class="px-2 py-0.5 bg-gray-100 rounded text-xs">${esc(a.type)}</span></td>
         <td class="px-4 py-3 text-gray-500">${esc(a.volume) || '-'}/${esc(a.issue) || '-'}</td>
         <td class="px-4 py-3 text-gray-500">${esc(a.published) || '-'}</td>
-        <td class="px-4 py-3"><button class="text-red-500 hover:text-red-700 text-xs" onclick="event.stopPropagation(); deleteArticle(${Number(a.id)})">Sil</button></td>
+        <td class="px-4 py-3 whitespace-nowrap">
+          <a href="/site/article.html?id=${Number(a.id)}" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 text-xs mr-3" onclick="event.stopPropagation()">Önizle</a>
+          <button class="text-red-500 hover:text-red-700 text-xs" onclick="event.stopPropagation(); deleteArticle(${Number(a.id)})">Sil</button>
+        </td>
       </tr>`).join('');
   }, 300));
 });
@@ -251,7 +375,8 @@ async function renderArticleForm(el, article) {
       <h1 class="text-2xl font-bold text-gray-900">${isNew ? 'Yeni Makale' : `Makale #${a.id}`}</h1>
       <div class="flex gap-2">
         <a href="#/articles" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm">Geri</a>
-        <button onclick="saveArticle(${isNew ? 'true' : 'false'})" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet</button>
+        ${!isNew ? `<a href="/site/article.html?id=${a.id}" target="_blank" rel="noopener" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 text-sm font-medium">Önizle</a>` : ''}
+        <button onclick="saveArticle(${isNew ? 'true' : 'false'})" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet<span data-dirty-indicator class="text-amber-200"></span></button>
       </div>
     </div>
 
@@ -262,6 +387,7 @@ async function renderArticleForm(el, article) {
         <button class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="authors">Yazarlar</button>
         <button class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="abstract">Özet</button>
         <button class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="issue">Sayı</button>
+        ${!isNew ? `<button class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="fulltext">Tam Metin</button>` : ''}
         <button class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="media">Medya</button>
         <button class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="links">Bağlantılar</button>
       </div>
@@ -308,13 +434,31 @@ async function renderArticleForm(el, article) {
 
       <!-- Abstract tab -->
       <div class="tab-panel p-6 hidden" data-tab="abstract">
-        <div><label class="block text-sm font-medium text-gray-700 mb-1">Özet (HTML)</label>
-          <textarea id="f-abstractHtml" rows="8" class="w-full px-3 py-2 border rounded-lg text-sm font-mono">${esc(a.abstractHtml)}</textarea>
+        <div><label class="block text-sm font-medium text-gray-700 mb-1">Özet</label>
+          <textarea id="f-abstractHtml" rows="8" class="w-full px-3 py-2 border rounded-lg text-sm" placeholder="Özet metnini doğrudan yapıştırın. İsterseniz <p>, <strong>, <em> gibi HTML etiketleri kullanabilirsiniz.">${esc(a.abstractHtml)}</textarea>
+          <p class="text-xs text-gray-500 mt-1">Düz metin yapıştırırsanız satır araları otomatik paragraflara dönüştürülür.</p>
         </div>
         <div class="mt-4"><label class="block text-sm font-medium text-gray-700 mb-1">Anahtar Kelimeler (virgül ile)</label>
           <input id="f-keywords" value="${esc((a.keywords || []).join(', '))}" class="w-full px-3 py-2 border rounded-lg text-sm">
         </div>
       </div>
+
+      <!-- Full Text tab -->
+      ${!isNew ? `
+      <div class="tab-panel p-6 hidden" data-tab="fulltext">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-sm font-semibold text-gray-700">Tam Metin (HTML)</h3>
+          <div class="flex gap-2">
+            <label class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded hover:bg-gray-200 text-xs cursor-pointer">
+              HTML Dosyadan Yükle <input id="f-fulltext-file" type="file" accept=".html,.htm" class="hidden">
+            </label>
+            <button type="button" onclick="saveArticleFullText(${a.id})" class="px-4 py-1.5 bg-teal-600 text-white rounded hover:bg-teal-700 text-xs font-medium">Tam Metni Kaydet</button>
+          </div>
+        </div>
+        <p class="text-xs text-gray-500 mb-2">Makalenin tam metni HTML olarak saklanır. Yüklediğiniz figürler <code>src="fig1"</code> gibi placeholder'lar içerirse, "Medya → Tam Metne Uygula" ile gerçek görsel URL'leri ile eşlenir.</p>
+        <textarea id="f-fulltextHtml" rows="20" class="w-full px-3 py-2 border rounded-lg text-xs font-mono" placeholder="Tam metin henüz yüklü değil. Doğrudan HTML yapıştırın veya yukarıdaki 'HTML Dosyadan Yükle' ile bir .html dosyası seçin."></textarea>
+        <div id="f-fulltext-status" class="text-xs text-gray-500 mt-2"></div>
+      </div>` : ''}
 
       <!-- Issue tab -->
       <div class="tab-panel p-6 hidden" data-tab="issue">
@@ -329,6 +473,13 @@ async function renderArticleForm(el, article) {
       <div class="tab-panel p-6 hidden" data-tab="media">
         ${!isNew ? `
         <div class="space-y-6">
+          <!-- Asset summary (populated after load) -->
+          <div id="f-asset-summary" class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
+            <div class="bg-gray-50 rounded-lg p-3"><div class="text-xs text-gray-500">PDF</div><div id="f-pdf-count" class="font-medium text-gray-900">—</div></div>
+            <div class="bg-blue-50 rounded-lg p-3"><div class="text-xs text-blue-600">Yüklü figür</div><div id="f-fig-count" class="font-medium text-blue-900">—</div></div>
+            <div class="bg-purple-50 rounded-lg p-3"><div class="text-xs text-purple-600">Ek materyal dosyası</div><div id="f-supp-count" class="font-medium text-purple-900">—</div></div>
+          </div>
+
           <!-- PDF -->
           <div>
             <h3 class="text-sm font-semibold text-gray-700 mb-2">PDF</h3>
@@ -336,10 +487,23 @@ async function renderArticleForm(el, article) {
             <label class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm cursor-pointer inline-block">
               PDF Yükle <input id="f-pdf-file" type="file" accept=".pdf" class="hidden">
             </label>
+            <div id="f-pdf-results" class="mt-2"></div>
           </div>
           <!-- Figures -->
           <div>
-            <h3 class="text-sm font-semibold text-gray-700 mb-2">Figürler</h3>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-sm font-semibold text-gray-700">Figürler</h3>
+              <button type="button" onclick="applyExistingFigures(${a.id})" class="text-xs px-3 py-1.5 bg-teal-600 text-white rounded hover:bg-teal-700" title="Yüklü tüm figürleri tam metindeki placeholder'lar ile eşler">Tam Metne Uygula</button>
+            </div>
+            <div class="bg-blue-50 border border-blue-100 text-blue-800 text-xs p-3 rounded-lg mb-3">
+              <div class="font-medium mb-1">Nasıl çalışır?</div>
+              <ol class="list-decimal pl-4 space-y-0.5">
+                <li>Figür dosyalarını yükleyin (dosya adı = placeholder adı, ör. <code>fig1.jpg</code>)</li>
+                <li>"Tam Metne Uygula" butonu ile tam metin içindeki <code>src="fig1"</code> referansları gerçek URL'ye dönüştürülür.</li>
+                <li>Mevcut figür listesini aşağıda görebilirsiniz.</li>
+              </ol>
+            </div>
+            <div id="f-fig-list" class="text-xs text-gray-500 mb-2"></div>
             <label class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 text-sm cursor-pointer inline-block">
               Figür Yükle <input id="f-fig-files" type="file" accept="image/*,.tif,.tiff" multiple class="hidden">
             </label>
@@ -352,6 +516,18 @@ async function renderArticleForm(el, article) {
               Ek Materyal Yükle <input id="f-supp-files" type="file" multiple class="hidden">
             </label>
             <div id="f-supp-results" class="mt-2"></div>
+          </div>
+
+          <!-- Supplementary Links -->
+          <div class="border-t pt-6">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-sm font-semibold text-gray-700">Ek Materyal Linkleri</h3>
+              <button type="button" onclick="addSuppLinkRow()" class="text-xs px-3 py-1.5 bg-purple-600 text-white rounded hover:bg-purple-700">+ Link Ekle</button>
+            </div>
+            <p class="text-xs text-gray-500 mb-3">Dosya yüklemek yerine harici bağlantı (URL) tanımlayın.</p>
+            <div id="f-supp-links" class="space-y-2">
+              ${(a.supplementary || []).map((sm) => suppLinkRow(sm)).join('')}
+            </div>
           </div>
         </div>
         ` : '<p class="text-gray-400 text-sm">Makaleyi kaydettikten sonra medya yükleyebilirsiniz.</p>'}
@@ -382,6 +558,18 @@ async function renderArticleForm(el, article) {
             <button onclick="addLink(${a.id})" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm">Ekle</button>
           </div>
         </div>` : ''}
+
+        <!-- External URL links -->
+        <div class="border-t pt-6 mt-6">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-sm font-semibold text-gray-700">Harici Bağlantılar</h3>
+            <button type="button" onclick="addExternalLinkRow()" class="text-xs px-3 py-1.5 bg-teal-600 text-white rounded hover:bg-teal-700">+ URL Ekle</button>
+          </div>
+          <p class="text-xs text-gray-500 mb-3">Veri seti, kod deposu, preprint veya diğer dış kaynak bağlantıları.</p>
+          <div id="f-external-links" class="space-y-2">
+            ${(a.externalLinks || []).map((l) => externalLinkRow(l)).join('')}
+          </div>
+        </div>
       </div>
     </div>`;
 
@@ -416,13 +604,18 @@ async function renderArticleForm(el, article) {
     if (pdfInput) {
       pdfInput.addEventListener('change', async () => {
         if (!pdfInput.files[0]) return;
+        const file = pdfInput.files[0];
+        const prog = renderUploadProgress('f-pdf-results', [file], 'PDF yükleniyor');
         try {
-          const result = await API.uploadFile('/media/upload/pdf', pdfInput.files[0], 'pdf', { articleId: String(a.id) });
+          const result = await API.uploadFileWithProgress('/media/upload/pdf', file, 'pdf', { articleId: String(a.id) }, prog.update);
+          prog.complete(`<div class="bg-green-50 border border-green-200 text-green-700 p-3 rounded-lg text-sm">PDF yüklendi: <code>${esc(result.pdfUrl || '')}</code></div>`);
           toast('PDF yüklendi');
-          // Update article pdfUrl
           await API.put(`/articles/${a.id}`, { pdfUrl: result.pdfUrl, localPdfUrl: result.pdfUrl });
           handleRoute();
-        } catch (err) { toast(err.message, 'error'); }
+        } catch (err) {
+          prog.fail(err.message);
+          toast(err.message, 'error');
+        }
       });
     }
 
@@ -430,14 +623,22 @@ async function renderArticleForm(el, article) {
     if (figInput) {
       figInput.addEventListener('change', async () => {
         if (!figInput.files.length) return;
+        const figResults = document.getElementById('f-fig-results');
+        const prog = renderUploadProgress(figResults, figInput.files, 'Figürler yükleniyor');
         try {
-          const result = await API.uploadFiles(`/media/upload/figures/${a.id}`, figInput.files, 'figures');
-          const figResults = document.getElementById('f-fig-results');
-          figResults.innerHTML = `<div class="text-sm text-green-600">${result.uploaded.length} figür yüklendi</div>
-            ${result.uploaded.map((f) => `<div class="text-xs text-gray-500 mt-1"><code>${esc(f.url)}</code></div>`).join('')}
-            <button onclick="applyArticleFigures(${a.id})" class="mt-2 px-3 py-1.5 bg-teal-600 text-white rounded text-xs font-medium hover:bg-teal-700">Tam Metne Uygula</button>`;
+          const result = await API.uploadFilesWithProgress(`/media/upload/figures/${a.id}`, figInput.files, 'figures', {}, prog.update);
+          prog.complete(`
+            <div class="bg-green-50 border border-green-200 rounded-lg p-3">
+              <div class="text-sm font-medium text-green-700">${result.uploaded.length} figür yüklendi</div>
+              ${result.uploaded.map((f) => `<div class="text-xs text-gray-500 mt-1"><code>${esc(f.url)}</code></div>`).join('')}
+              <button onclick="applyArticleFigures(${a.id})" class="mt-2 px-3 py-1.5 bg-teal-600 text-white rounded text-xs font-medium hover:bg-teal-700">Tam Metne Uygula</button>
+            </div>`);
           window._articleFigureUpload = result;
-        } catch (err) { toast(err.message, 'error'); }
+          loadArticleAssets(a.id, a);
+        } catch (err) {
+          prog.fail(err.message);
+          toast(err.message, 'error');
+        }
       });
     }
 
@@ -445,14 +646,46 @@ async function renderArticleForm(el, article) {
     if (suppInput) {
       suppInput.addEventListener('change', async () => {
         if (!suppInput.files.length) return;
+        const suppResults = document.getElementById('f-supp-results');
+        const prog = renderUploadProgress(suppResults, suppInput.files, 'Ek materyaller yükleniyor');
         try {
-          const result = await API.uploadFiles(`/media/upload/supplementary/${a.id}`, suppInput.files, 'files');
-          const suppResults = document.getElementById('f-supp-results');
-          suppResults.innerHTML = `<div class="text-sm text-green-600">${result.uploaded.length} dosya yüklendi</div>
-            ${result.uploaded.map((f) => `<div class="text-xs text-gray-500 mt-1"><code>${esc(f.url)}</code></div>`).join('')}`;
-        } catch (err) { toast(err.message, 'error'); }
+          const result = await API.uploadFilesWithProgress(`/media/upload/supplementary/${a.id}`, suppInput.files, 'files', {}, prog.update);
+          prog.complete(`
+            <div class="bg-green-50 border border-green-200 rounded-lg p-3">
+              <div class="text-sm font-medium text-green-700">${result.uploaded.length} dosya yüklendi</div>
+              ${result.uploaded.map((f) => `<div class="text-xs text-gray-500 mt-1"><code>${esc(f.url)}</code></div>`).join('')}
+            </div>`);
+          loadArticleAssets(a.id, a);
+        } catch (err) {
+          prog.fail(err.message);
+          toast(err.message, 'error');
+        }
       });
     }
+
+    // Full-text: read from local .html file into textarea
+    const ftFileInput = document.getElementById('f-fulltext-file');
+    if (ftFileInput) {
+      ftFileInput.addEventListener('change', async () => {
+        const f = ftFileInput.files?.[0];
+        if (!f) return;
+        try {
+          const text = await f.text();
+          const ta = document.getElementById('f-fulltextHtml');
+          if (ta) {
+            ta.value = text;
+            markDirty();
+            const status = document.getElementById('f-fulltext-status');
+            if (status) status.textContent = `"${f.name}" yüklendi (${text.length.toLocaleString('tr-TR')} karakter). Kaydetmeyi unutmayın.`;
+            toast('Tam metin dosyadan okundu. Lütfen "Tam Metni Kaydet" butonuna basın.');
+          }
+        } catch (err) { toast(`Dosya okunamadı: ${err.message}`, 'error'); }
+      });
+    }
+
+    // Initial load: asset summary + existing full text
+    loadArticleAssets(a.id, a);
+    loadFullTextIntoEditor(a.id);
   }
 
   // Load article types from API
@@ -464,6 +697,37 @@ async function renderArticleForm(el, article) {
   // Track unsaved changes
   clearDirty();
   el.addEventListener('input', markDirty);
+}
+
+// --- Supplementary link rows ---
+function suppLinkRow(sm = {}) {
+  return `<div class="supp-link-row grid grid-cols-1 md:grid-cols-12 gap-2 p-2 bg-purple-50 rounded-lg">
+    <input class="sl-label md:col-span-3 px-2 py-1.5 border rounded text-sm" placeholder="Etiket (ör. Tablo S1)" value="${esc(sm.label || '')}">
+    <input class="sl-href md:col-span-5 px-2 py-1.5 border rounded text-sm" placeholder="URL veya dosya yolu" value="${esc(sm.href || '')}">
+    <input class="sl-caption md:col-span-3 px-2 py-1.5 border rounded text-sm" placeholder="Açıklama (opsiyonel)" value="${esc(sm.caption || '')}">
+    <button type="button" onclick="this.closest('.supp-link-row').remove(); markDirty();" class="md:col-span-1 text-red-500 hover:text-red-700 text-lg">&times;</button>
+  </div>`;
+}
+function addSuppLinkRow() {
+  const list = document.getElementById('f-supp-links');
+  if (!list) return;
+  list.insertAdjacentHTML('beforeend', suppLinkRow());
+  markDirty();
+}
+
+// --- External link rows ---
+function externalLinkRow(l = {}) {
+  return `<div class="external-link-row grid grid-cols-1 md:grid-cols-12 gap-2 p-2 bg-gray-50 rounded-lg">
+    <input class="el-label md:col-span-3 px-2 py-1.5 border rounded text-sm" placeholder="Etiket" value="${esc(l.label || '')}">
+    <input class="el-url md:col-span-8 px-2 py-1.5 border rounded text-sm" placeholder="https://..." value="${esc(l.url || '')}">
+    <button type="button" onclick="this.closest('.external-link-row').remove(); markDirty();" class="md:col-span-1 text-red-500 hover:text-red-700 text-lg">&times;</button>
+  </div>`;
+}
+function addExternalLinkRow() {
+  const list = document.getElementById('f-external-links');
+  if (!list) return;
+  list.insertAdjacentHTML('beforeend', externalLinkRow());
+  markDirty();
 }
 
 function authorRow(au, idx) {
@@ -493,6 +757,25 @@ async function saveArticle(isNew) {
     });
   });
 
+  // Collect supplementary URL entries
+  const supplementary = [];
+  document.querySelectorAll('.supp-link-row').forEach((row, i) => {
+    const label = row.querySelector('.sl-label').value.trim();
+    const href = row.querySelector('.sl-href').value.trim();
+    const caption = row.querySelector('.sl-caption').value.trim();
+    if (!label && !href) return;
+    supplementary.push({ id: `supp${i + 1}`, label, href, caption, mimeType: '' });
+  });
+
+  // Collect external link entries
+  const externalLinks = [];
+  document.querySelectorAll('.external-link-row').forEach((row) => {
+    const label = row.querySelector('.el-label').value.trim();
+    const url = row.querySelector('.el-url').value.trim();
+    if (!label && !url) return;
+    externalLinks.push({ label, url });
+  });
+
   const data = {
     type: getVal('f-type'),
     title: getVal('f-title'),
@@ -511,6 +794,8 @@ async function saveArticle(isNew) {
     pages: getVal('f-pages'),
     imageUrl: getVal('f-imageUrl'),
     authors,
+    supplementary,
+    externalLinks,
   };
 
   data.previewText = data.abstract.slice(0, 360);
@@ -629,15 +914,51 @@ async function uploadAndPreviewZip(file) {
   }
 
   const area = document.getElementById('zip-preview-area');
-  area.innerHTML = '<div class="flex items-center justify-center py-8"><div class="animate-spin w-6 h-6 border-3 border-teal-600 border-t-transparent rounded-full mr-3"></div><span class="text-gray-500">ZIP yükleniyor ve analiz ediliyor...</span></div>';
+  const totalHuman = formatBytes(file.size);
+  area.innerHTML = `
+    <div class="bg-white rounded-xl border p-5 mb-6">
+      <div class="flex items-center justify-between mb-2">
+        <div class="min-w-0">
+          <div class="font-medium text-gray-900 truncate">${esc(file.name)}</div>
+          <div class="text-xs text-gray-500 mt-0.5" id="zip-progress-label">Yükleniyor... 0%</div>
+        </div>
+        <div class="text-sm text-gray-500 flex-shrink-0 ml-3" id="zip-progress-bytes">0 B / ${esc(totalHuman)}</div>
+      </div>
+      <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+        <div id="zip-progress-bar" class="h-full bg-teal-600 transition-all duration-150" style="width: 0%"></div>
+      </div>
+    </div>`;
 
   try {
-    // Upload ZIP
-    const uploadResult = await API.uploadFile('/imports/upload', file, 'zip');
-    // Preview it
+    const uploadResult = await API.uploadFileWithProgress('/imports/upload', file, 'zip', {}, (pct, loaded, total) => {
+      const bar = document.getElementById('zip-progress-bar');
+      const label = document.getElementById('zip-progress-label');
+      const bytes = document.getElementById('zip-progress-bytes');
+      if (bar) bar.style.width = pct + '%';
+      if (bytes) bytes.textContent = `${formatBytes(loaded)} / ${formatBytes(total)}`;
+      if (label) {
+        label.textContent = pct < 100 ? `Yükleniyor... ${pct}%` : 'Sunucu ZIP\'i alıyor...';
+      }
+    });
+
+    // Upload complete — now analysing on the server (no byte progress available).
+    const label = document.getElementById('zip-progress-label');
+    const bar = document.getElementById('zip-progress-bar');
+    if (bar) { bar.classList.remove('bg-teal-600'); bar.classList.add('bg-teal-500', 'animate-pulse'); bar.style.width = '100%'; }
+    if (label) label.textContent = 'ZIP analiz ediliyor...';
+
+    if (!uploadResult || !uploadResult.filename) {
+      throw new Error('Yükleme tamamlandı fakat sunucu dosya adı döndürmedi');
+    }
     await showZipPreview(uploadResult.filename);
   } catch (err) {
-    area.innerHTML = `<div class="bg-red-50 text-red-700 p-4 rounded-xl">${esc(err.message)}</div>`;
+    console.error('[uploadAndPreviewZip] failed:', err);
+    area.innerHTML = `
+      <div class="bg-red-50 border border-red-200 text-red-700 p-4 rounded-xl">
+        <div class="font-semibold mb-1">ZIP yükleme/analiz hatası</div>
+        <div class="text-sm">${esc(err.message || String(err))}</div>
+        <div class="text-xs text-red-500 mt-2">Ayrıntılar için tarayıcı konsolunu (F12) kontrol edin.</div>
+      </div>`;
   }
 }
 
@@ -649,14 +970,31 @@ async function previewServerZip(filename) {
 
 async function showZipPreview(filename) {
   const area = document.getElementById('zip-preview-area');
+  // Always show an explicit analyzing state so users know the server is working.
+  area.innerHTML = `
+    <div class="bg-white rounded-xl border p-6 mb-6 flex items-center justify-center gap-3">
+      <div class="animate-spin w-6 h-6 border-4 border-teal-600 border-t-transparent rounded-full"></div>
+      <div>
+        <div class="font-medium text-gray-900">ZIP analiz ediliyor...</div>
+        <div class="text-xs text-gray-500 mt-0.5">${esc(filename)} — XML'ler ayrıştırılıyor</div>
+      </div>
+    </div>`;
   try {
     const preview = await API.get(`/imports/preview/${encodeURIComponent(filename)}`);
+    if (!preview || !Array.isArray(preview.articles)) {
+      throw new Error('Sunucudan geçersiz yanıt alındı');
+    }
     const issueOptions = window._zipIssueOptions || [];
 
     // Detect volume/issue from first article
     const firstArticle = preview.articles[0];
     const detectedVol = firstArticle?.volume || '';
     const detectedIss = firstArticle?.issue || '';
+
+    if (preview.articles.length === 0 && preview.errors.length === 0) {
+      area.innerHTML = `<div class="bg-amber-50 border border-amber-200 text-amber-800 p-4 rounded-xl">ZIP içinde XML dosyası bulunamadı. (${preview.analysis.pdfFiles.length} PDF, ${preview.analysis.imageFiles.length} görsel, ${preview.analysis.otherFiles.length} diğer)</div>`;
+      return;
+    }
 
     area.innerHTML = `
       <div class="bg-white rounded-xl border mb-6">
@@ -754,7 +1092,13 @@ async function showZipPreview(filename) {
     });
 
   } catch (err) {
-    area.innerHTML = `<div class="bg-red-50 text-red-700 p-4 rounded-xl">${esc(err.message)}</div>`;
+    console.error('[showZipPreview] failed:', err);
+    area.innerHTML = `
+      <div class="bg-red-50 border border-red-200 text-red-700 p-4 rounded-xl">
+        <div class="font-semibold mb-1">ZIP önizleme başarısız</div>
+        <div class="text-sm">${esc(err.message || String(err))}</div>
+        <div class="text-xs text-red-500 mt-2">Ayrıntılar için tarayıcı konsolunu (F12) kontrol edin.</div>
+      </div>`;
   }
 }
 
@@ -859,16 +1203,28 @@ route('/jats-import', async (el) => {
   el.innerHTML = `
     <h1 class="text-2xl font-bold text-gray-900 mb-6">JATS XML Aktar</h1>
     <div class="bg-white rounded-xl border p-6 mb-6">
-      <div class="mb-4">
-        <label class="block text-sm font-medium text-gray-700 mb-2">Hedef</label>
-        <div class="flex gap-3 items-center">
-          <select id="import-target" class="px-3 py-2 border rounded-lg text-sm">
+      <div class="mb-4 grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">Hedef</label>
+          <select id="import-target" class="w-full px-3 py-2 border rounded-lg text-sm">
             <option value="auto">XML'den oku (otomatik)</option>
             <option value="in-press">Baskıda olarak ekle</option>
             ${issueOptions.map((o) => `<option value="${o.volume}|${o.issue}">Vol ${o.volume}, Issue ${o.issue} (${esc(o.label.split(' — ')[0])})</option>`).join('')}
           </select>
         </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">Sayı yoksa</label>
+          <label class="flex items-center gap-2 text-sm h-9 px-3 border rounded-lg bg-gray-50">
+            <input id="import-create-issue" type="checkbox" checked class="rounded">
+            <span>Otomatik oluştur</span>
+          </label>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">Yeni sayı yılı</label>
+          <input id="import-year" type="number" value="${new Date().getFullYear()}" class="w-full px-3 py-2 border rounded-lg text-sm">
+        </div>
       </div>
+      <p class="text-xs text-gray-500 mb-4">Otomatik modda makaleler XML'deki cilt/sayı bilgisine atanır. Eğer arşivde bu sayı yoksa ve "Otomatik oluştur" işaretliyse arşive yeni bir kayıt eklenir.</p>
       <div id="drop-zone" class="border-2 border-dashed border-gray-300 rounded-xl p-10 text-center hover:border-teal-400 transition-colors cursor-pointer">
         <svg class="w-12 h-12 mx-auto text-gray-400 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
         <p class="text-gray-600 font-medium">XML dosyalarını buraya sürükleyin veya tıklayın</p>
@@ -939,11 +1295,19 @@ async function handleXmlFiles(files) {
   }
 }
 
+function getJatsImportOptions() {
+  return {
+    createIssue: document.getElementById('import-create-issue')?.checked !== false,
+    year: document.getElementById('import-year')?.value || String(new Date().getFullYear()),
+  };
+}
+
 async function importParsed(index) {
   const parsed = window._parsedArticles?.[index];
   if (!parsed?.success) return;
 
   const target = document.getElementById('import-target')?.value || 'auto';
+  const opts = getJatsImportOptions();
 
   try {
     if (target === 'in-press') {
@@ -955,12 +1319,14 @@ async function importParsed(index) {
         parsedArticles: [parsed.article],
         targetVolume: Number(vol),
         targetIssue: iss,
+        ...opts,
       });
       toast(`Makale aktarıldı: Vol ${vol}, Issue ${iss}`);
     } else {
       const result = await API.post('/jats/import', {
         parsedArticle: parsed.article,
         fullTextHtml: parsed.article.fullTextHtml || '',
+        ...opts,
       });
       toast(`Makale aktarıldı: #${result.id}`);
     }
@@ -978,6 +1344,7 @@ async function importAllParsed() {
   if (!toImport.length) return;
 
   const target = document.getElementById('import-target')?.value || 'auto';
+  const opts = getJatsImportOptions();
 
   try {
     if (target === 'in-press') {
@@ -989,11 +1356,12 @@ async function importAllParsed() {
         parsedArticles: toImport,
         targetVolume: Number(vol),
         targetIssue: iss,
+        ...opts,
       });
       if (result.totalImported) toast(`${result.totalImported} makale aktarıldı (Vol ${vol}, Issue ${iss})`);
       if (result.totalErrors) toast(`${result.totalErrors} hata`, 'warning');
     } else {
-      const result = await API.post('/jats/import-batch', { parsedArticles: toImport });
+      const result = await API.post('/jats/import-batch', { parsedArticles: toImport, ...opts });
       if (result.totalImported) toast(`${result.totalImported} makale aktarıldı`);
       if (result.totalErrors) toast(`${result.totalErrors} hata`, 'warning');
     }
@@ -1012,13 +1380,52 @@ async function importAllParsed() {
 
 // Issues
 route('/issues', async (el) => {
-  const archive = await API.get('/issues');
+  const [archive, homepage] = await Promise.all([
+    API.get('/issues'),
+    API.get('/homepage').catch(() => ({})),
+  ]);
+  const cur = homepage?.currentIssue || {};
+  const isCurrent = (vol, iss) => Number(cur.volume) === Number(vol) && String(cur.issue) === String(iss);
+  const featuredCount = (homepage?.featuredArticles || []).length;
+  const imageCornerCount = (homepage?.imageCornerArticles || []).length;
+  const latestCount = (homepage?.latestArticles || []).length;
+
   el.innerHTML = `
     <div class="flex items-center justify-between mb-6">
       <h1 class="text-2xl font-bold text-gray-900">Sayılar</h1>
-      <button onclick="checkServerImports()" class="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 text-sm font-medium">Sunucudan Kontrol Et</button>
-      <button onclick="showNewIssueForm()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Yeni Sayı</button>
+      <div class="flex gap-2">
+        <button onclick="checkServerImports()" class="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 text-sm font-medium">Sunucudan Kontrol Et</button>
+        <button onclick="showNewIssueForm()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Yeni Sayı</button>
+      </div>
     </div>
+
+    <!-- Current issue control panel -->
+    <div class="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-xl p-5 mb-6">
+      <div class="flex items-start justify-between gap-4 flex-wrap">
+        <div>
+          <div class="text-xs font-medium text-amber-700 uppercase tracking-wide">Güncel Sayı</div>
+          ${cur.volume ? `
+            <div class="text-xl font-bold text-gray-900 mt-1">Volume ${esc(cur.volume)}, Issue ${esc(cur.issue)}${cur.year ? ` <span class="text-base font-normal text-gray-500">(${esc(cur.year)})</span>` : ''}</div>
+            <div class="flex gap-4 mt-2 text-xs text-gray-600">
+              <span>${featuredCount} öne çıkan</span>
+              <span>${imageCornerCount} görsel köşesi</span>
+              <span>${latestCount} son makale</span>
+              ${homepage.generatedAt ? `<span class="text-gray-400">Son güncelleme: ${esc(homepage.generatedAt)}</span>` : ''}
+            </div>
+          ` : `
+            <div class="text-base text-gray-700 mt-1">Henüz güncel sayı atanmamış.</div>
+            <div class="text-xs text-gray-500 mt-1">Aşağıdaki listeden bir sayıyı seçip "Güncel Yap" butonuna basın.</div>
+          `}
+        </div>
+        ${cur.volume ? `
+        <div class="flex gap-2">
+          <a href="#/issues/${esc(cur.volume)}/${encodeURIComponent(cur.issue)}" class="px-3 py-1.5 bg-white border border-amber-300 text-amber-700 rounded text-xs font-medium hover:bg-amber-100">Sayıyı Düzenle</a>
+          <a href="/site/current-issue.html?volume=${encodeURIComponent(cur.volume)}&issue=${encodeURIComponent(cur.issue)}" target="_blank" rel="noopener" class="px-3 py-1.5 bg-white border border-blue-300 text-blue-700 rounded text-xs font-medium hover:bg-blue-50">Sitede Önizle</a>
+          <button onclick="rebuildCurrentHomepage()" class="px-3 py-1.5 bg-amber-600 text-white rounded text-xs font-medium hover:bg-amber-700" title="Anasayfa verisini güncel sayıdan yeniden oluştur">Anasayfayı Yenile</button>
+        </div>` : ''}
+      </div>
+    </div>
+
     <div id="new-issue-form" class="hidden bg-white rounded-xl border p-5 mb-6">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
         <input id="ni-year" type="number" placeholder="Yil (2026)" class="px-3 py-2 border rounded-lg text-sm">
@@ -1032,18 +1439,43 @@ route('/issues', async (el) => {
         <div class="bg-white rounded-xl border">
           <div class="px-5 py-3 bg-gray-50 rounded-t-xl font-semibold text-gray-700">${esc(y.year)} — Volume ${y.volume}</div>
           <div class="divide-y">
-            ${y.issues.map((iss) => `
-              <div class="flex items-center justify-between px-5 py-3 hover:bg-gray-50 cursor-pointer" onclick="navigate('#/issues/${iss.volume}/${iss.issue}')">
-                <div><span class="font-medium">${esc(iss.label)}</span> <span class="text-sm text-gray-400 ml-2">${iss.articleCount} makale</span></div>
-                <div class="flex gap-2">
+            ${y.issues.map((iss) => {
+              const cur_ = isCurrent(iss.volume, iss.issue);
+              return `
+              <div class="flex items-center justify-between px-5 py-3 hover:bg-gray-50 cursor-pointer ${cur_ ? 'bg-amber-50' : ''}" onclick="navigate('#/issues/${iss.volume}/${iss.issue}')">
+                <div class="flex items-center gap-3">
+                  <span class="font-medium">${esc(iss.label)}</span>
+                  <span class="text-sm text-gray-400">${iss.articleCount} makale</span>
+                  ${cur_ ? '<span class="px-2 py-0.5 bg-amber-500 text-white rounded text-xs font-semibold">GÜNCEL</span>' : ''}
+                </div>
+                <div class="flex gap-3 items-center">
+                  <a href="/site/current-issue.html?year=${encodeURIComponent(y.year)}&volume=${iss.volume}&issue=${encodeURIComponent(iss.issue)}" target="_blank" rel="noopener" class="text-xs text-blue-600 hover:text-blue-800" onclick="event.stopPropagation()">Önizle</a>
+                  ${cur_
+                    ? '<span class="text-xs text-amber-600 font-medium" title="Bu sayı şu anda güncel olarak ayarlı">✓ Güncel</span>'
+                    : `<button onclick="event.stopPropagation(); setCurrentIssue(${iss.volume}, '${iss.issue}')" class="text-xs px-2 py-1 bg-amber-500 text-white rounded hover:bg-amber-600">Güncel Yap</button>`}
                   <button onclick="event.stopPropagation(); rebuildIssue(${iss.volume}, '${iss.issue}')" class="text-xs text-teal-600 hover:text-teal-800">Yeniden Oluştur</button>
                   <button onclick="event.stopPropagation(); deleteIssue('${y.year}', ${iss.volume}, '${iss.issue}')" class="text-xs text-red-500 hover:text-red-700">Sil</button>
                 </div>
-              </div>`).join('')}
+              </div>`;
+            }).join('')}
           </div>
         </div>`).join('')}
     </div>`;
 });
+
+async function rebuildCurrentHomepage() {
+  try {
+    const homepage = await API.get('/homepage');
+    const cur = homepage?.currentIssue;
+    if (!cur?.volume) {
+      toast('Önce bir güncel sayı atayın', 'warning');
+      return;
+    }
+    const result = await API.post(`/issues/${cur.volume}/${encodeURIComponent(cur.issue)}/set-current`);
+    toast(`Anasayfa yenilendi (${result.articleCount} makale)`);
+    handleRoute();
+  } catch (err) { toast(err.message, 'error'); }
+}
 
 async function checkServerImports() {
   try {
@@ -1088,20 +1520,40 @@ async function deleteIssue(year, volume, issue) {
 
 // Issue detail
 route('/issues/:volume/:issue', async (el, { volume, issue }) => {
-  const articles = await API.get(`/issues/${volume}/${issue}/articles`);
+  const [articles, homepage] = await Promise.all([
+    API.get(`/issues/${volume}/${issue}/articles`),
+    API.get('/homepage').catch(() => ({})),
+  ]);
+  const cur = homepage?.currentIssue || {};
+  const isCurrent = Number(cur.volume) === Number(volume) && String(cur.issue) === String(issue);
+  const featuredCount = articles.filter((a) => a.featured).length;
+  const imageCornerCount = articles.filter((a) => a.imageCorner).length;
+  const pdfCount = articles.filter((a) => a.pdfUrl).length;
 
   el.innerHTML = `
     <div class="flex items-center justify-between mb-6">
       <div>
         <a href="#/issues" class="text-sm text-teal-600 hover:text-teal-800">&larr; Tüm Sayılar</a>
-        <h1 class="text-2xl font-bold text-gray-900 mt-1">Volume ${esc(volume)}, Issue ${esc(issue)}</h1>
-        <p class="text-sm text-gray-500">${articles.length} makale</p>
+        <div class="flex items-center gap-3 mt-1">
+          <h1 class="text-2xl font-bold text-gray-900">Volume ${esc(volume)}, Issue ${esc(issue)}</h1>
+          ${isCurrent ? '<span class="px-2 py-1 bg-amber-500 text-white rounded text-xs font-semibold">GÜNCEL SAYI</span>' : ''}
+        </div>
+        <p class="text-sm text-gray-500">${articles.length} makale · ${pdfCount} PDF · ${featuredCount} öne çıkan · ${imageCornerCount} görsel köşesi</p>
       </div>
       <div class="flex gap-2">
-        <button onclick="setCurrentIssue(${volume}, '${issue}')" class="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 text-sm font-medium">Güncel Sayı Yap</button>
+        <a href="/site/current-issue.html?volume=${encodeURIComponent(volume)}&issue=${encodeURIComponent(issue)}" target="_blank" rel="noopener" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 text-sm font-medium">Önizle</a>
+        ${isCurrent
+          ? `<button onclick="setCurrentIssue(${volume}, '${issue}')" class="px-4 py-2 bg-amber-100 text-amber-800 border border-amber-300 rounded-lg hover:bg-amber-200 text-sm font-medium" title="Anasayfa verisini bu sayıdan yeniden hesaplar">Anasayfayı Yenile</button>`
+          : `<button onclick="setCurrentIssue(${volume}, '${issue}')" class="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 text-sm font-medium">Güncel Sayı Yap</button>`}
         <button onclick="rebuildIssue(${volume}, '${issue}')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm">Yeniden Oluştur</button>
       </div>
     </div>
+
+    ${isCurrent ? `
+    <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-6 text-sm text-amber-800">
+      <div class="font-medium mb-1">Bu sayı şu anda anasayfada "Güncel Sayı" olarak görünüyor.</div>
+      <div class="text-xs">Öne çıkan makaleleri (${featuredCount}) ve görsel köşesi (${imageCornerCount}) ayarlamak için aşağıdaki makale satırlarındaki "Düzenle" → "Genel" sekmesini kullanın. Değişikliklerden sonra "Anasayfayı Yenile" butonuna basın.</div>
+    </div>` : ''}
 
     <!-- Batch JATS upload for this issue -->
     <div class="bg-white rounded-xl border p-5 mb-6">
@@ -1144,7 +1596,10 @@ route('/issues/:volume/:issue', async (el, { volume, issue }) => {
             <td class="px-4 py-3"><span class="px-2 py-0.5 bg-gray-100 rounded text-xs">${esc(a.type)}</span></td>
             <td class="px-4 py-3 text-xs text-gray-400">${esc(a.doi || '-')}</td>
             <td class="px-4 py-3 text-center">${a.pdfUrl ? '<span class="text-green-500" title="PDF mevcut">&#10003;</span>' : '<span class="text-gray-300" title="PDF yok">&#8212;</span>'}</td>
-            <td class="px-4 py-3"><button class="text-red-500 hover:text-red-700 text-xs" onclick="event.stopPropagation(); deleteArticle(${a.id})">Sil</button></td>
+            <td class="px-4 py-3 whitespace-nowrap">
+              <a href="/site/article.html?id=${a.id}" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 text-xs mr-3" onclick="event.stopPropagation()">Önizle</a>
+              <button class="text-red-500 hover:text-red-700 text-xs" onclick="event.stopPropagation(); deleteArticle(${a.id})">Sil</button>
+            </td>
           </tr>`).join('')}</tbody>
       </table>
       ${!articles.length ? '<div class="text-center py-8 text-gray-400">Bu sayıda henüz makale yok.</div>' : ''}
@@ -1170,16 +1625,17 @@ route('/issues/:volume/:issue', async (el, { volume, issue }) => {
 });
 
 async function handleIssuePdfUpload(files) {
-  const results = document.getElementById('issue-pdf-results');
-  results.innerHTML = '<div class="text-sm text-gray-500">Yükleniyor...</div>';
+  if (!files || !files.length) return;
+  const prog = renderUploadProgress('issue-pdf-results', files, 'PDF\'ler yükleniyor');
   try {
-    const result = await API.uploadFiles('/media/upload/pdf-batch', files, 'pdf');
+    const result = await API.uploadFilesWithProgress('/media/upload/pdf-batch', files, 'pdf', {}, prog.update);
     let html = '';
-    if (result.totalMatched) html += `<div class="text-sm text-green-600">${result.totalMatched} PDF eşleştirildi</div>`;
-    if (result.totalUnmatched) html += `<div class="text-sm text-amber-600">${result.totalUnmatched} PDF eşleştirilemedi</div>`;
-    results.innerHTML = html;
+    if (result.totalMatched) html += `<div class="bg-green-50 border border-green-200 rounded-lg p-3 text-sm text-green-700 mb-2">${result.totalMatched} PDF eşleştirildi</div>`;
+    if (result.totalUnmatched) html += `<div class="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-amber-700">${result.totalUnmatched} PDF eşleştirilemedi (yine de yüklendi)</div>`;
+    if (!html) html = '<div class="bg-gray-50 border text-gray-700 p-3 rounded-lg text-sm">Yükleme tamamlandı.</div>';
+    prog.complete(html);
   } catch (err) {
-    results.innerHTML = `<div class="text-sm text-red-600">${esc(err.message)}</div>`;
+    prog.fail(err.message);
   }
 }
 
@@ -1246,10 +1702,11 @@ async function importBatchToIssue(volume, issue) {
 }
 
 async function setCurrentIssue(volume, issue) {
-  if (!await confirmAction(`Volume ${volume}, Issue ${issue} güncel sayı olarak ayarlanacak. Devam?`)) return;
+  if (!await confirmAction(`Volume ${volume}, Issue ${issue} güncel sayı olarak ayarlanacak ve anasayfa verisi bu sayıdan yeniden oluşturulacak. Devam?`)) return;
   try {
-    const result = await API.post(`/issues/${volume}/${issue}/set-current`);
+    const result = await API.post(`/issues/${volume}/${encodeURIComponent(issue)}/set-current`);
     toast(`Güncel sayı ayarlandı (${result.articleCount} makale)`);
+    handleRoute();
   } catch (err) { toast(err.message, 'error'); }
 }
 
@@ -1488,7 +1945,7 @@ function renderNewsForm(el, item) {
       <h1 class="text-2xl font-bold text-gray-900">${isNew ? 'Yeni Haber' : `Haber #${n.id}`}</h1>
       <div class="flex gap-2">
         <a href="#/news" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm">Geri</a>
-        <button onclick="saveNews(${isNew ? 'null' : n.id})" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet</button>
+        <button onclick="saveNews(${isNew ? 'null' : n.id})" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet<span data-dirty-indicator class="text-amber-200"></span></button>
       </div>
     </div>
     <div class="bg-white rounded-xl border p-6 space-y-4">
@@ -1630,12 +2087,10 @@ route('/media', async (el) => {
     if (!articleId) return toast('Makale ID giriniz', 'warning');
     if (!this.files.length) return;
 
-    const resultsEl = document.getElementById('fig-upload-results');
-    resultsEl.innerHTML = '<div class="text-sm text-gray-500">Yükleniyor...</div>';
-
+    const prog = renderUploadProgress('fig-upload-results', this.files, 'Figürler yükleniyor');
     try {
-      const result = await API.uploadFiles(`/media/upload/figures/${articleId}`, this.files, 'figures');
-      resultsEl.innerHTML = `
+      const result = await API.uploadFilesWithProgress(`/media/upload/figures/${articleId}`, this.files, 'figures', {}, prog.update);
+      prog.complete(`
         <div class="bg-green-50 border border-green-200 rounded-lg p-3">
           <p class="text-sm font-medium text-green-700">${result.uploaded.length} figür yüklendi</p>
           <div class="mt-2 space-y-1">${result.uploaded.map((f) => `
@@ -1645,10 +2100,10 @@ route('/media', async (el) => {
             </div>`).join('')}
           </div>
           <button onclick="applyFigureMappings(${articleId})" class="mt-2 px-3 py-1.5 bg-teal-600 text-white rounded text-xs font-medium hover:bg-teal-700">Tam Metne Uygula</button>
-        </div>`;
+        </div>`);
       window._lastFigureUpload = result;
     } catch (err) {
-      resultsEl.innerHTML = `<div class="text-sm text-red-600">${esc(err.message)}</div>`;
+      prog.fail(err.message);
     }
   };
 
@@ -1658,30 +2113,28 @@ route('/media', async (el) => {
     if (!articleId) return toast('Makale ID giriniz', 'warning');
     if (!this.files.length) return;
 
-    const resultsEl = document.getElementById('supp-upload-results');
-    resultsEl.innerHTML = '<div class="text-sm text-gray-500">Yükleniyor...</div>';
-
+    const prog = renderUploadProgress('supp-upload-results', this.files, 'Ek materyaller yükleniyor');
     try {
-      const result = await API.uploadFiles(`/media/upload/supplementary/${articleId}`, this.files, 'files');
-      resultsEl.innerHTML = `
+      const result = await API.uploadFilesWithProgress(`/media/upload/supplementary/${articleId}`, this.files, 'files', {}, prog.update);
+      prog.complete(`
         <div class="bg-green-50 border border-green-200 rounded-lg p-3">
           <p class="text-sm font-medium text-green-700">${result.uploaded.length} dosya yüklendi</p>
           <div class="mt-1 space-y-1">${result.uploaded.map((f) => `
             <div class="text-xs text-gray-600"><code>${esc(f.url)}</code></div>`).join('')}
           </div>
-        </div>`;
+        </div>`);
     } catch (err) {
-      resultsEl.innerHTML = `<div class="text-sm text-red-600">${esc(err.message)}</div>`;
+      prog.fail(err.message);
     }
   };
 });
 
 async function handleBatchPdfUpload(files) {
-  const results = document.getElementById('pdf-batch-results');
-  results.innerHTML = '<div class="text-sm text-gray-500">Yükleniyor...</div>';
+  if (!files || !files.length) return;
+  const prog = renderUploadProgress('pdf-batch-results', files, 'PDF\'ler yükleniyor');
 
   try {
-    const result = await API.uploadFiles('/media/upload/pdf-batch', files, 'pdf');
+    const result = await API.uploadFilesWithProgress('/media/upload/pdf-batch', files, 'pdf', {}, prog.update);
     let html = '';
     if (result.totalMatched) {
       html += `<div class="bg-green-50 border border-green-200 rounded-lg p-3 mb-2">
@@ -1695,9 +2148,10 @@ async function handleBatchPdfUpload(files) {
         <div class="mt-1 text-xs text-gray-600">${result.unmatched.map((u) => esc(u.filename)).join('<br>')}</div>
       </div>`;
     }
-    results.innerHTML = html;
+    if (!html) html = '<div class="bg-gray-50 border text-gray-700 p-3 rounded-lg text-sm">Yükleme tamamlandı.</div>';
+    prog.complete(html);
   } catch (err) {
-    results.innerHTML = `<div class="text-sm text-red-600">${esc(err.message)}</div>`;
+    prog.fail(err.message);
   }
 }
 
@@ -1754,67 +2208,280 @@ async function applyFigureMappings(articleId) {
   } catch (err) { toast(err.message, 'error'); }
 }
 
+// Load asset summary (PDF / figures / supplementary) for an article into the Media tab
+async function loadArticleAssets(articleId, article) {
+  const pdfEl = document.getElementById('f-pdf-count');
+  const figEl = document.getElementById('f-fig-count');
+  const suppEl = document.getElementById('f-supp-count');
+  const figList = document.getElementById('f-fig-list');
+  if (!pdfEl && !figEl && !suppEl) return;
+  try {
+    const data = await API.get(`/media/article/${articleId}/assets`);
+    window._articleAssets = data;
+    if (pdfEl) pdfEl.textContent = article?.pdfUrl ? '1 dosya' : '0';
+    if (figEl) figEl.textContent = `${data.figures.length} dosya`;
+    if (suppEl) suppEl.textContent = `${data.supplementary.length} dosya`;
+    if (figList) {
+      if (!data.figures.length) {
+        figList.innerHTML = '<span class="text-gray-400">Henüz figür yüklenmedi.</span>';
+      } else {
+        figList.innerHTML = `<div class="bg-white border rounded p-2">
+          <div class="text-gray-600 mb-1">Yüklü figürler (${data.figures.length}):</div>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-1">
+            ${data.figures.map((f) => `<li class="truncate"><code class="text-xs">${esc(f.filename)}</code></li>`).join('')}
+          </ul>
+        </div>`;
+      }
+    }
+  } catch (err) {
+    if (pdfEl) pdfEl.textContent = '?';
+    if (figEl) figEl.textContent = '?';
+    if (suppEl) suppEl.textContent = '?';
+    if (figList) figList.innerHTML = `<span class="text-red-500">Varlıklar yüklenemedi: ${esc(err.message)}</span>`;
+  }
+}
+
+// Load existing full-text HTML into the #f-fulltextHtml textarea
+async function loadFullTextIntoEditor(articleId) {
+  const ta = document.getElementById('f-fulltextHtml');
+  const status = document.getElementById('f-fulltext-status');
+  if (!ta) return;
+  try {
+    const data = await API.get(`/articles/${articleId}/fulltext`);
+    ta.value = data.html || '';
+    if (status) {
+      status.textContent = data.html
+        ? `Yüklü tam metin uzunluğu: ${data.html.length.toLocaleString('tr-TR')} karakter.`
+        : 'Tam metin henüz mevcut değil.';
+    }
+  } catch (err) {
+    if (status) status.textContent = `Tam metin okunamadı: ${err.message}`;
+  }
+}
+
+// Save the full-text HTML textarea contents
+async function saveArticleFullText(articleId) {
+  const ta = document.getElementById('f-fulltextHtml');
+  const status = document.getElementById('f-fulltext-status');
+  if (!ta) return;
+  const html = ta.value || '';
+  if (!html.trim()) {
+    if (!await confirmAction('Tam metin boş. Yine de kaydetmek istiyor musunuz?')) return;
+  }
+  try {
+    await API.put(`/articles/${articleId}/fulltext`, { html });
+    clearDirty();
+    if (status) status.textContent = `Kaydedildi (${html.length.toLocaleString('tr-TR')} karakter).`;
+    toast('Tam metin kaydedildi');
+  } catch (err) {
+    if (status) status.textContent = `Kaydetme hatası: ${err.message}`;
+    toast(err.message, 'error');
+  }
+}
+
+// Apply all existing uploaded figures to the article full text by filename → placeholder match
+async function applyExistingFigures(articleId) {
+  try {
+    const data = window._articleAssets || await API.get(`/media/article/${articleId}/assets`);
+    if (!data.figures?.length) {
+      toast('Önce figür yükleyin', 'warning');
+      return;
+    }
+    const mappings = data.figures.map((f) => {
+      const baseName = f.filename.replace(/\.[^.]+$/, '');
+      return { originalHref: baseName, newUrl: f.url };
+    });
+    const result = await API.post(`/media/figures/${articleId}/apply`, { mappings });
+    toast(`${result.replaced || 0} figür referansı güncellendi`);
+  } catch (err) {
+    toast(err.message, 'error');
+  }
+}
+
 // Editorial Board
+function edMemberRow(m = {}) {
+  return `<div class="ed-row border rounded-lg p-3 bg-gray-50">
+    <div class="flex items-start gap-3">
+      <div class="flex flex-col gap-1 pt-2">
+        <button type="button" onclick="moveEdRow(this, -1)" title="Yukarı taşı" class="text-gray-400 hover:text-gray-700 leading-none">&#9650;</button>
+        <button type="button" onclick="moveEdRow(this, 1)" title="Aşağı taşı" class="text-gray-400 hover:text-gray-700 leading-none">&#9660;</button>
+      </div>
+      <div class="ed-photo-wrap flex-shrink-0">
+        <img class="ed-photo-preview w-14 h-14 rounded-full object-cover border bg-white" src="${m.photo ? '../' + esc(m.photo) : ''}" onerror="this.style.visibility='hidden'" alt="">
+      </div>
+      <div class="flex-1 grid grid-cols-1 md:grid-cols-12 gap-2">
+        <input class="ed-name md:col-span-4 px-2 py-1.5 border rounded text-sm" value="${esc(m.name || '')}" placeholder="Ad Soyad">
+        <input class="ed-title md:col-span-1 px-2 py-1.5 border rounded text-sm" value="${esc(m.title || '')}" placeholder="MD/PhD">
+        <input class="ed-aff md:col-span-7 px-2 py-1.5 border rounded text-sm" value="${esc(m.affiliation || '')}" placeholder="Kurum">
+        <input class="ed-photo md:col-span-7 px-2 py-1.5 border rounded text-xs" value="${esc(m.photo || '')}" placeholder="images/editorial-board/...">
+        <label class="md:col-span-2 px-2 py-1.5 bg-blue-50 text-blue-700 rounded text-xs text-center cursor-pointer hover:bg-blue-100">
+          Fotoğraf <input type="file" accept="image/*" class="ed-photo-file hidden">
+        </label>
+        <input class="ed-link md:col-span-3 px-2 py-1.5 border rounded text-xs" value="${esc(m.link || '')}" placeholder="Harici Link (https://...)">
+      </div>
+      <button type="button" onclick="this.closest('.ed-row').remove(); markDirty();" class="text-red-400 hover:text-red-600 text-lg" title="Sil">&times;</button>
+    </div>
+  </div>`;
+}
+
 route('/editorial', async (el) => {
   const board = await API.get('/editorial');
+  window._editorialBoardSnapshot = board;
+  const eic = board.editorInChief || {};
   el.innerHTML = `
     <div class="flex items-center justify-between mb-6">
       <h1 class="text-2xl font-bold text-gray-900">Yayın Kurulu</h1>
-      <button onclick="saveEditorial()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet</button>
+      <button onclick="saveEditorial()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet<span data-dirty-indicator class="text-amber-200"></span></button>
+    </div>
+    <div class="bg-blue-50 border border-blue-100 text-blue-800 text-xs p-3 rounded-lg mb-4">
+      Üyeleri sıralamak için ▲ ▼ butonlarını kullanın. Fotoğraf eklemek için "Fotoğraf" düğmesine tıklayın (otomatik olarak <code>images/editorial-board/</code> klasörüne kaydedilir). Profil URL alanı sayfada üyenin adını tıklanabilir bir bağlantıya dönüştürür.
     </div>
     <div class="space-y-6">
       <div class="bg-white rounded-xl border p-5">
         <h2 class="font-semibold text-gray-900 mb-3">Baş Editör</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <input id="eic-name" value="${esc(board.editorInChief?.name)}" placeholder="Ad" class="px-3 py-2 border rounded-lg text-sm">
-          <input id="eic-title" value="${esc(board.editorInChief?.title)}" placeholder="Ünvan" class="px-3 py-2 border rounded-lg text-sm">
-          <input id="eic-aff" value="${esc(board.editorInChief?.affiliation)}" placeholder="Kurum" class="px-3 py-2 border rounded-lg text-sm">
-          <input id="eic-email" value="${esc(board.editorInChief?.email)}" placeholder="Email" class="px-3 py-2 border rounded-lg text-sm">
+        <div class="flex items-start gap-3">
+          <img id="eic-photo-preview" class="w-20 h-20 rounded-full object-cover border bg-gray-100" src="${eic.photo ? '../' + esc(eic.photo) : ''}" onerror="this.style.visibility='hidden'" alt="">
+          <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-3">
+            <input id="eic-name" value="${esc(eic.name || '')}" placeholder="Ad" class="px-3 py-2 border rounded-lg text-sm">
+            <input id="eic-title" value="${esc(eic.title || '')}" placeholder="Ünvan" class="px-3 py-2 border rounded-lg text-sm">
+            <input id="eic-aff" value="${esc(eic.affiliation || '')}" placeholder="Kurum" class="px-3 py-2 border rounded-lg text-sm md:col-span-2">
+            <input id="eic-email" value="${esc(eic.email || '')}" placeholder="Email" class="px-3 py-2 border rounded-lg text-sm">
+            <input id="eic-link" value="${esc(eic.link || '')}" placeholder="Harici Link (https://...)" class="px-3 py-2 border rounded-lg text-sm">
+            <input id="eic-photo" value="${esc(eic.photo || '')}" placeholder="images/editorial-board/..." class="px-3 py-2 border rounded-lg text-sm md:col-span-2">
+            <label class="md:col-span-2 inline-flex items-center justify-center px-3 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm cursor-pointer hover:bg-blue-100">
+              Fotoğraf Yükle <input id="eic-photo-file" type="file" accept="image/*" class="hidden">
+            </label>
+          </div>
         </div>
       </div>
       ${['honoraryEditors', 'deputyEditors', 'associateEditors'].map((key) => {
         const label = key === 'honoraryEditors' ? 'Onursal Editörler' : key === 'deputyEditors' ? 'Yardımcı Editörler' : 'Yardımcı Editörler (Geniş)';
         return `<div class="bg-white rounded-xl border p-5">
-          <h2 class="font-semibold text-gray-900 mb-3">${label}</h2>
-          <div id="ed-${key}" class="space-y-2">${(board[key] || []).map((m) => `
-            <div class="flex gap-2 ed-row"><input class="ed-name flex-1 px-2 py-1.5 border rounded text-sm" value="${esc(m.name)}" placeholder="Ad"><input class="ed-title w-20 px-2 py-1.5 border rounded text-sm" value="${esc(m.title || '')}" placeholder="Ünvan"><input class="ed-aff flex-1 px-2 py-1.5 border rounded text-sm" value="${esc(m.affiliation)}" placeholder="Kurum"><button onclick="this.closest('.ed-row').remove()" class="text-red-400 hover:text-red-600">&times;</button></div>
-          `).join('')}</div>
-          <button onclick="addEdMember('ed-${key}')" class="mt-2 text-sm text-blue-600 hover:text-blue-800">+ Ekle</button>
+          <h2 class="font-semibold text-gray-900 mb-3">${label} <span class="text-sm font-normal text-gray-400">(${(board[key] || []).length})</span></h2>
+          <div id="ed-${key}" class="space-y-2">${(board[key] || []).map(edMemberRow).join('')}</div>
+          <button type="button" onclick="addEdMember('ed-${key}')" class="mt-3 text-sm text-blue-600 hover:text-blue-800">+ Üye Ekle</button>
         </div>`;
       }).join('')}
     </div>`;
+
+  // Wire EIC photo upload + URL sync
+  const eicFile = document.getElementById('eic-photo-file');
+  const eicPhotoInput = document.getElementById('eic-photo');
+  const eicPreview = document.getElementById('eic-photo-preview');
+  if (eicFile) {
+    eicFile.addEventListener('change', async () => {
+      if (!eicFile.files[0]) return;
+      try {
+        const result = await API.uploadFile('/media/upload/editorial-photo', eicFile.files[0], 'image');
+        if (eicPhotoInput) eicPhotoInput.value = result.url;
+        if (eicPreview) { eicPreview.src = '../' + result.url; eicPreview.style.visibility = 'visible'; }
+        markDirty();
+        toast('Fotoğraf yüklendi');
+      } catch (err) { toast(err.message, 'error'); }
+    });
+  }
+  if (eicPhotoInput && eicPreview) {
+    eicPhotoInput.addEventListener('input', () => {
+      eicPreview.src = eicPhotoInput.value ? '../' + eicPhotoInput.value : '';
+      eicPreview.style.visibility = eicPhotoInput.value ? 'visible' : 'hidden';
+    });
+  }
+
+  // Wire each member row's photo upload + URL sync
+  el.querySelectorAll('.ed-row').forEach(wireEdRow);
+
+  clearDirty();
+  el.addEventListener('input', markDirty);
 });
 
+function wireEdRow(row) {
+  if (row._wired) return;
+  row._wired = true;
+  const fileInput = row.querySelector('.ed-photo-file');
+  const urlInput = row.querySelector('.ed-photo');
+  const preview = row.querySelector('.ed-photo-preview');
+  if (fileInput) {
+    fileInput.addEventListener('change', async () => {
+      if (!fileInput.files[0]) return;
+      try {
+        const result = await API.uploadFile('/media/upload/editorial-photo', fileInput.files[0], 'image');
+        if (urlInput) urlInput.value = result.url;
+        if (preview) { preview.src = '../' + result.url; preview.style.visibility = 'visible'; }
+        markDirty();
+        toast('Fotoğraf yüklendi');
+      } catch (err) { toast(err.message, 'error'); }
+    });
+  }
+  if (urlInput && preview) {
+    urlInput.addEventListener('input', () => {
+      preview.src = urlInput.value ? '../' + urlInput.value : '';
+      preview.style.visibility = urlInput.value ? 'visible' : 'hidden';
+    });
+  }
+}
+
+function moveEdRow(btn, dir) {
+  const row = btn.closest('.ed-row');
+  if (!row) return;
+  if (dir < 0 && row.previousElementSibling) {
+    row.parentNode.insertBefore(row, row.previousElementSibling);
+    markDirty();
+  } else if (dir > 0 && row.nextElementSibling) {
+    row.parentNode.insertBefore(row.nextElementSibling, row);
+    markDirty();
+  }
+}
+
 function addEdMember(containerId) {
-  document.getElementById(containerId).insertAdjacentHTML('beforeend',
-    `<div class="flex gap-2 ed-row"><input class="ed-name flex-1 px-2 py-1.5 border rounded text-sm" placeholder="Ad"><input class="ed-title w-20 px-2 py-1.5 border rounded text-sm" placeholder="Ünvan"><input class="ed-aff flex-1 px-2 py-1.5 border rounded text-sm" placeholder="Kurum"><button onclick="this.closest('.ed-row').remove()" class="text-red-400 hover:text-red-600">&times;</button></div>`
-  );
+  const list = document.getElementById(containerId);
+  if (!list) return;
+  list.insertAdjacentHTML('beforeend', edMemberRow());
+  const newRow = list.lastElementChild;
+  if (newRow) wireEdRow(newRow);
+  markDirty();
 }
 
 async function saveEditorial() {
   const getMembers = (id) => {
-    return [...document.querySelectorAll(`#${id} .ed-row`)].map((r) => ({
-      name: r.querySelector('.ed-name').value.trim(),
-      title: r.querySelector('.ed-title').value.trim(),
-      affiliation: r.querySelector('.ed-aff').value.trim(),
-    })).filter((m) => m.name);
+    return [...document.querySelectorAll(`#${id} .ed-row`)].map((r) => {
+      const m = {
+        name: r.querySelector('.ed-name').value.trim(),
+        title: r.querySelector('.ed-title').value.trim(),
+        affiliation: r.querySelector('.ed-aff').value.trim(),
+      };
+      const photo = r.querySelector('.ed-photo')?.value.trim();
+      const link = r.querySelector('.ed-link')?.value.trim();
+      if (photo) m.photo = photo;
+      if (link) m.link = link;
+      return m;
+    }).filter((m) => m.name);
   };
 
+  // Preserve fields we don't manage in the admin UI (biostatisticsEditor,
+  // ethicsEditor, assistantAssociateEditors, languageEditing, profileLinks, etc.)
+  const previous = window._editorialBoardSnapshot || {};
+  const editorInChief = {
+    name: document.getElementById('eic-name').value.trim(),
+    title: document.getElementById('eic-title').value.trim(),
+    affiliation: document.getElementById('eic-aff').value.trim(),
+    email: document.getElementById('eic-email').value.trim(),
+    photo: document.getElementById('eic-photo').value.trim(),
+    link: document.getElementById('eic-link').value.trim(),
+  };
+  if (!editorInChief.link) delete editorInChief.link;
+  if (!editorInChief.photo) delete editorInChief.photo;
+
   const board = {
-    editorInChief: {
-      name: document.getElementById('eic-name').value.trim(),
-      title: document.getElementById('eic-title').value.trim(),
-      affiliation: document.getElementById('eic-aff').value.trim(),
-      email: document.getElementById('eic-email').value.trim(),
-      photo: '',
-    },
+    ...previous,
+    editorInChief,
     honoraryEditors: getMembers('ed-honoraryEditors'),
     deputyEditors: getMembers('ed-deputyEditors'),
     associateEditors: getMembers('ed-associateEditors'),
   };
   try {
     await API.put('/editorial', board);
-    toast('Yayın kurulu güncellendi');
+    clearDirty();
+    toast('Yayın kurulu kaydedildi');
   } catch (err) { toast(err.message, 'error'); }
 }
 
@@ -1927,6 +2594,69 @@ async function syncNavFooter() {
     const result = await API.post('/nav-footer/sync');
     const updated = result.results.filter((r) => r.status === 'updated').length;
     toast(`${updated} sayfa güncellendi`);
+  } catch (err) { toast(err.message, 'error'); }
+}
+
+// Social Media
+const SOCIAL_PLATFORMS = [
+  { key: 'instagram', label: 'Instagram', placeholder: 'https://www.instagram.com/balkanmedj/' },
+  { key: 'twitter', label: 'X (Twitter)', placeholder: 'https://x.com/balkanmedj' },
+  { key: 'linkedin', label: 'LinkedIn', placeholder: 'https://www.linkedin.com/company/balkan-med-j/' },
+  { key: 'facebook', label: 'Facebook', placeholder: 'https://www.facebook.com/balkanmedj' },
+  { key: 'youtube', label: 'YouTube', placeholder: 'https://www.youtube.com/@balkanmedj' },
+];
+
+route('/social-media', async (el) => {
+  el.innerHTML = `
+    <div class="flex items-center justify-between mb-6">
+      <h1 class="text-2xl font-bold text-gray-900">Sosyal Medya</h1>
+      <div class="flex gap-2">
+        <button onclick="saveSocialMedia()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet</button>
+        <button onclick="syncSocialMedia()" class="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 text-sm font-medium">Tüm Sayfalara Uygula</button>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border p-6 max-w-2xl">
+      <p class="text-sm text-gray-600 mb-5">Footer'da görünen sosyal medya bağlantıları. Boş bırakılan platform footer'dan kaldırılır. <strong>Kaydet</strong> URL'leri saklar; <strong>Tüm Sayfalara Uygula</strong> 16 HTML dosyasındaki footer ikonlarını günceller.</p>
+      <div class="space-y-4">
+        ${SOCIAL_PLATFORMS.map((p) => `
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">${p.label}</label>
+            <input id="sm-${p.key}" type="url" placeholder="${p.placeholder}" class="w-full px-3 py-2 border rounded-lg text-sm">
+          </div>
+        `).join('')}
+      </div>
+    </div>`;
+
+  try {
+    const data = await API.get('/social-media');
+    SOCIAL_PLATFORMS.forEach((p) => {
+      const input = document.getElementById(`sm-${p.key}`);
+      if (input) input.value = data[p.key] || '';
+    });
+  } catch { /* first run, no data yet */ }
+});
+
+async function saveSocialMedia() {
+  try {
+    const payload = {};
+    SOCIAL_PLATFORMS.forEach((p) => {
+      payload[p.key] = (document.getElementById(`sm-${p.key}`)?.value || '').trim();
+    });
+    await API.put('/social-media', payload);
+    toast('Kaydedildi');
+  } catch (err) { toast(err.message, 'error'); }
+}
+
+async function syncSocialMedia() {
+  if (!await confirmAction('Sosyal medya bağlantıları tüm sayfalara uygulanacak. Devam etmek istiyor musunuz?')) return;
+  try {
+    await saveSocialMedia();
+    const result = await API.post('/social-media/sync');
+    const updated = result.results.filter((r) => r.status === 'updated').length;
+    const noBlock = result.results.filter((r) => r.status === 'no-block').length;
+    let msg = `${updated} sayfa güncellendi`;
+    if (noBlock) msg += `, ${noBlock} sayfada sosyal blok bulunamadı`;
+    toast(msg);
   } catch (err) { toast(err.message, 'error'); }
 }
 

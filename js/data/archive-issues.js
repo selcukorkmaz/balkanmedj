@@ -1,12 +1,21 @@
 /**
  * Balkan Medical Journal — Archive Issues
- * Last updated: 2026-03-27
+ * Last updated: 2026-04-16
  */
 window.ARCHIVE_ISSUES = [
   {
     "year": "2026",
     "volume": 43,
     "issues": [
+      {
+        "label": "Volume 43, Issue 4",
+        "sourceId": "",
+        "sourceUrl": "",
+        "volume": 43,
+        "issue": "4",
+        "articleCount": 10,
+        "hasLocalData": true
+      },
       {
         "label": "Volume 43, Issue 2",
         "sourceId": "1301",

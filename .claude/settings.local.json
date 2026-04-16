@@ -69,7 +69,10 @@
       "Bash(python scripts/build_from_jats.py)",
       "Read(//tmp/**)",
       "Bash(PORT=3999 node -e \"require\\('./server.js'\\); setTimeout\\(\\(\\)=>process.exit\\(0\\), 600\\);\")",
-      "Bash(awk '/<script>$/{flag=1;next}/<\\\\/script>/{flag=0}flag' /Users/selcuk/Documents/GitHub/balkanmedj/article.html)"
+      "Bash(awk '/<script>$/{flag=1;next}/<\\\\/script>/{flag=0}flag' /Users/selcuk/Documents/GitHub/balkanmedj/article.html)",
+      "Bash(unzip -l \"imports/processed/2026-04-14T08-52-14_Balkan-Medical-Journal-2026-43-4.zip\")",
+      "Bash(unzip -p \"imports/processed/2026-04-14T08-52-14_Balkan-Medical-Journal-2026-43-4.zip\" \"BalkanMedJ-43-4-212.xml\")",
+      "Bash(rm test_one.xml)"
     ]
   }
 }

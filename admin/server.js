@@ -127,6 +127,9 @@ function requireAuth(req, res, next) {
 
 app.use(requireAuth);
 app.use(express.static(path.join(__dirname, 'public')));
+// Mount the main site read-only under /site/ so the admin can preview articles
+// (article.html, js/data/**, images/**, css/**) without leaving the authed panel.
+app.use('/site', express.static(dio.ROOT));
 
 // File upload setup
 const ALLOWED_MIME = {
@@ -915,7 +918,7 @@ app.post('/api/jats/parse', uploadXml.single('xml'), async (req, res) => {
 app.post('/api/jats/import', async (req, res) => {
   try {
     createBackup();
-    const { parsedArticle, fullTextHtml } = req.body;
+    const { parsedArticle, fullTextHtml, createIssue: shouldCreate, year } = req.body;
     if (!parsedArticle) return res.status(400).json({ error: 'parsedArticle required' });
 
     const articles = dio.readArticles();
@@ -986,9 +989,13 @@ app.post('/api/jats/import', async (req, res) => {
       dio.writeAuthorMetadata(allMeta);
     }
 
-    // Rebuild volume JSON
+    // Rebuild volume JSON + sync archive
     if (article.volume && article.issue) {
-      dio.rebuildVolumeJson(article.volume, article.issue, articles);
+      const archive = dio.readArchiveIssues();
+      ensureArchiveEntry(archive, article.volume, article.issue, year, shouldCreate);
+      const count = dio.rebuildVolumeJson(article.volume, article.issue, articles);
+      updateArchiveArticleCount(archive, article.volume, article.issue, count);
+      dio.writeArchiveIssues(archive);
     }
 
     // Handle erratum bidirectional links
@@ -1028,7 +1035,7 @@ app.post('/api/jats/parse-batch', uploadXml.array('xml', 100), async (req, res) 
 app.post('/api/jats/import-batch', async (req, res) => {
   try {
     createBackup();
-    const { parsedArticles, targetVolume, targetIssue } = req.body;
+    const { parsedArticles, targetVolume, targetIssue, createIssue: shouldCreate, year } = req.body;
     if (!Array.isArray(parsedArticles) || !parsedArticles.length) {
       return res.status(400).json({ error: 'parsedArticles array required' });
     }
@@ -1037,6 +1044,9 @@ app.post('/api/jats/import-batch', async (req, res) => {
     const allMeta = dio.readAuthorMetadata();
     const imported = [];
     const errors = [];
+    // Track every (volume, issue) pair that received articles so we can rebuild
+    // each one — even if articles came from different XMLs with different metadata.
+    const touchedIssues = new Map(); // key: `${vol}|${iss}` → { volume, issue }
 
     for (const pa of parsedArticles) {
       try {
@@ -1088,6 +1098,15 @@ app.post('/api/jats/import-batch', async (req, res) => {
           allMeta[id] = pa.authorMetadata;
         }
 
+        // Track every (vol, iss) we touched so volume.json + archive stay in sync
+        // even when target is "auto" and articles come from multiple issues.
+        if (article.volume && article.issue) {
+          touchedIssues.set(`${article.volume}|${article.issue}`, {
+            volume: article.volume,
+            issue: String(article.issue),
+          });
+        }
+
         imported.push({ id, title: pa.title, doi: pa.doi });
       } catch (err) {
         errors.push({ title: pa.title, error: err.message });
@@ -1100,16 +1119,15 @@ app.post('/api/jats/import-batch', async (req, res) => {
       dio.writeAuthorMetadata(allMeta);
     }
 
-    // Rebuild volume JSON for target issue
-    const vol = targetVolume != null ? Number(targetVolume) : null;
-    const iss = targetIssue != null ? String(targetIssue) : null;
-    if (vol && iss) {
-      const count = dio.rebuildVolumeJson(vol, iss, articles);
-      // Update archive articleCount
+    // Rebuild volume JSON + archive for every touched issue. Previously only the
+    // explicit targetVolume/targetIssue case was synced, so "auto" mode imports
+    // (and mixed-issue batches) silently left volume JSONs and archive counts stale.
+    if (touchedIssues.size) {
       const archive = dio.readArchiveIssues();
-      for (const y of archive) {
-        const issObj = y.issues.find((i) => i.volume === vol && String(i.issue) === iss);
-        if (issObj) { issObj.articleCount = count; issObj.hasLocalData = true; break; }
+      for (const { volume, issue } of touchedIssues.values()) {
+        ensureArchiveEntry(archive, volume, issue, year, shouldCreate);
+        const count = dio.rebuildVolumeJson(volume, issue, articles);
+        updateArchiveArticleCount(archive, volume, issue, count);
       }
       dio.writeArchiveIssues(archive);
     }
@@ -1237,6 +1255,56 @@ app.post('/api/articles-in-press/publish', (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
+
+// Find an archive issue entry across all years.
+function findArchiveIssue(archive, volume, issue) {
+  const vol = Number(volume);
+  const iss = String(issue);
+  for (const y of archive) {
+    const found = y.issues.find((i) => i.volume === vol && String(i.issue) === iss);
+    if (found) return { yearGroup: y, issue: found };
+  }
+  return null;
+}
+
+// Update articleCount on the archive entry for (volume, issue) if it exists.
+function updateArchiveArticleCount(archive, volume, issue, count) {
+  const found = findArchiveIssue(archive, volume, issue);
+  if (found) {
+    found.issue.articleCount = count;
+    found.issue.hasLocalData = true;
+  }
+}
+
+// Make sure an archive entry exists for (volume, issue). When missing AND
+// shouldCreate is truthy (or auto mode), inserts a new entry under the given
+// year (defaults to current year). Mutates `archive` in place.
+function ensureArchiveEntry(archive, volume, issue, year, shouldCreate) {
+  if (findArchiveIssue(archive, volume, issue)) return;
+  if (!shouldCreate) return;
+  const vol = Number(volume);
+  const iss = String(issue);
+  const yr = String(year || new Date().getFullYear());
+  let yearGroup = archive.find((y) => y.year === yr);
+  if (!yearGroup) {
+    yearGroup = { year: yr, volume: vol, issues: [] };
+    archive.unshift(yearGroup);
+    archive.sort((a, b) => Number(b.year) - Number(a.year));
+  }
+  yearGroup.issues.unshift({
+    label: `Volume ${vol}, Issue ${iss}`,
+    sourceId: '',
+    sourceUrl: '',
+    volume: vol,
+    issue: iss,
+    articleCount: 0,
+    hasLocalData: true,
+  });
+  // Initialize an empty volume JSON so the archive page can navigate to it.
+  if (!fs.existsSync(dio.volumeJsonPath(vol, iss))) {
+    dio.writeVolumeJson(vol, iss, []);
+  }
+}
 
 function handleRelatedArticleLinks(articles, source) {
   const reverseMap = {
@@ -1428,6 +1496,21 @@ app.post('/api/media/upload/image', uploadImage.single('image'), (req, res) => {
   }
 });
 
+// Upload editorial board member photo into images/editorial-board/
+app.post('/api/media/upload/editorial-photo', uploadImage.single('image'), (req, res) => {
+  try {
+    if (!req.file) return res.status(400).json({ error: 'No file' });
+    const editorialDir = path.join(dio.PATHS.imagesDir, 'editorial-board');
+    if (!fs.existsSync(editorialDir)) fs.mkdirSync(editorialDir, { recursive: true });
+    const safeName = path.basename(req.file.originalname).replace(/[^a-zA-Z0-9._-]/g, '_');
+    const dest = path.join(editorialDir, safeName);
+    fs.renameSync(req.file.path, dest);
+    res.json({ url: `images/editorial-board/${safeName}`, path: dest });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Batch PDF upload — match to articles by filename (e.g., 2805.pdf → article #2805)
 app.post('/api/media/upload/pdf-batch', uploadPdf.array('pdf', 200), (req, res) => {
   try {
@@ -1461,6 +1544,24 @@ app.post('/api/media/upload/pdf-batch', uploadPdf.array('pdf', 200), (req, res) 
     }
 
     res.json({ matched, unmatched, totalMatched: matched.length, totalUnmatched: unmatched.length });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// List existing figures and supplementary files for an article
+app.get('/api/media/article/:articleId/assets', (req, res) => {
+  try {
+    const articleId = String(req.params.articleId).replace(/[^a-zA-Z0-9._-]/g, '_');
+    const articleDir = path.join(dio.PATHS.articleImagesDir, articleId);
+    const suppDir = path.join(dio.PATHS.supplementaryDir, articleId);
+    const figures = fs.existsSync(articleDir)
+      ? fs.readdirSync(articleDir).filter((f) => !f.startsWith('.')).map((f) => ({ filename: f, url: `images/articles/${articleId}/${f}` }))
+      : [];
+    const supplementary = fs.existsSync(suppDir)
+      ? fs.readdirSync(suppDir).filter((f) => !f.startsWith('.')).map((f) => ({ filename: f, url: `js/data/supplementary/${articleId}/${f}` }))
+      : [];
+    res.json({ articleId, figures, supplementary });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1682,6 +1783,59 @@ app.post('/api/nav-footer/sync', (req, res) => {
     createBackup();
     const htmlSync = require('./lib/html-sync');
     const result = htmlSync.syncAllPages();
+    res.json(result);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// ===========================================================================
+//  SOCIAL MEDIA
+// ===========================================================================
+
+const SOCIAL_MEDIA_PATH = path.join(__dirname, 'data', 'social-media.json');
+const SOCIAL_MEDIA_DEFAULTS = {
+  instagram: 'https://www.instagram.com/balkanmedj/',
+  twitter: 'https://x.com/balkanmedj',
+  linkedin: 'https://www.linkedin.com/company/balkan-med-j/',
+  facebook: '',
+  youtube: '',
+};
+
+app.get('/api/social-media', (_req, res) => {
+  try {
+    if (!fs.existsSync(SOCIAL_MEDIA_PATH)) return res.json(SOCIAL_MEDIA_DEFAULTS);
+    const data = JSON.parse(fs.readFileSync(SOCIAL_MEDIA_PATH, 'utf-8'));
+    res.json({ ...SOCIAL_MEDIA_DEFAULTS, ...data });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.put('/api/social-media', (req, res) => {
+  try {
+    const allowed = ['instagram', 'twitter', 'linkedin', 'facebook', 'youtube'];
+    const payload = {};
+    for (const key of allowed) {
+      payload[key] = typeof req.body[key] === 'string' ? req.body[key].trim() : '';
+    }
+    fs.mkdirSync(path.dirname(SOCIAL_MEDIA_PATH), { recursive: true });
+    fs.writeFileSync(SOCIAL_MEDIA_PATH, JSON.stringify(payload, null, 2), 'utf-8');
+    res.json({ saved: true });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.post('/api/social-media/sync', (_req, res) => {
+  try {
+    if (!fs.existsSync(SOCIAL_MEDIA_PATH)) {
+      return res.status(400).json({ error: 'Önce sosyal medya bağlantılarını kaydedin.' });
+    }
+    createBackup();
+    const data = JSON.parse(fs.readFileSync(SOCIAL_MEDIA_PATH, 'utf-8'));
+    const socialSync = require('./lib/social-media-sync');
+    const result = socialSync.syncSocialMedia(data);
     res.json(result);
   } catch (err) {
     res.status(500).json({ error: err.message });

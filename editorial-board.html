@@ -840,10 +840,16 @@
 
       function renderMemberName(member, className) {
         var profileUrl = getProfileUrl(member);
+        var nameHtml;
         if (profileUrl) {
-          return '<button type="button" class="editor-profile-link ' + className + '" data-profile-url="' + profileUrl + '" data-profile-name="' + member.name + '">' + member.name + '</button>';
+          nameHtml = '<button type="button" class="editor-profile-link ' + className + '" data-profile-url="' + profileUrl + '" data-profile-name="' + member.name + '">' + member.name + '</button>';
+        } else {
+          nameHtml = '<span class="' + className + '">' + member.name + '</span>';
         }
-        return '<span class="' + className + '">' + member.name + '</span>';
+        if (member.link) {
+          nameHtml += ' <a href="' + member.link + '" target="_blank" rel="noopener" class="editor-external-link inline-flex items-center text-teal-600 hover:text-teal-800 align-middle ml-1" aria-label="' + member.name + ' harici bağlantı" title="Harici bağlantı"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a>';
+        }
+        return nameHtml;
       }
 
       function buildAdvisoryCard(member) {
@@ -924,7 +930,12 @@
             '</div>' +
           '</div>';
         } else {
-          html += '<h3 class="board-member-name text-lg font-bold text-gray-900">' + renderMemberName(member, '') + '</h3>' +
+          var memberAvatar = '';
+          if (member.photo) {
+            memberAvatar = '<div class="board-member-avatar mb-2"><img src="' + member.photo + '" alt="' + member.name + '" class="w-16 h-16 rounded-full object-cover border" loading="lazy" decoding="async" onerror="this.style.display=\'none\';"></div>';
+          }
+          html += memberAvatar +
+            '<h3 class="board-member-name text-lg font-bold text-gray-900">' + renderMemberName(member, '') + '</h3>' +
             '<p class="board-member-title text-sm mt-1">' + member.title + '</p>' +
             '<p class="board-member-affiliation text-sm mt-1">' + member.affiliation + '</p>' +
             (member.email ? '<p class="board-member-email text-sm mt-1"><a href="mailto:' + member.email + '" class="text-teal-700 hover:text-teal-800 transition-colors">' + member.email + '</a></p>' : '');
