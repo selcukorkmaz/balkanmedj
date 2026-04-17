@@ -219,15 +219,26 @@ window.addEventListener('beforeunload', (e) => {
 
 // Dashboard
 route('/', async (el) => {
-  const [stats, homepage] = await Promise.all([
+  const [stats, homepage, topArticles] = await Promise.all([
     API.get('/stats'),
     API.get('/homepage').catch(() => ({})),
+    API.get('/stats/top-articles?limit=5').catch(() => ({ topViewed: [], topDownloaded: [], totals: { views: 0, downloads: 0 } })),
   ]);
   const cur = homepage?.currentIssue || {};
   const typeRows = Object.entries(stats.typeCounts || {})
     .sort((a, b) => b[1] - a[1])
     .map(([t, c]) => `<tr><td class="py-1.5 text-gray-600">${esc(t)}</td><td class="py-1.5 text-right font-medium">${c}</td></tr>`)
     .join('');
+
+  function dashTopList(items, field) {
+    if (!items.length) return '<p class="text-xs text-gray-400 py-2">Veri yok</p>';
+    return items.map((a, i) => `
+      <div class="flex items-center gap-2 py-1.5 ${i ? 'border-t' : ''} cursor-pointer hover:bg-gray-50 -mx-2 px-2 rounded" onclick="navigate('#/articles/${a.id}')">
+        <span class="text-xs font-bold text-gray-300 w-4">${i + 1}</span>
+        <span class="flex-1 text-sm text-gray-700 truncate">${esc(a.title)}</span>
+        <span class="text-sm font-semibold tabular-nums ${field === 'views' ? 'text-teal-700' : 'text-blue-600'}">${(a[field] || 0).toLocaleString()}</span>
+      </div>`).join('');
+  }
 
   el.innerHTML = `
     <h1 class="text-2xl font-bold text-gray-900 mb-6">Dashboard</h1>
@@ -253,6 +264,25 @@ route('/', async (el) => {
       <div class="bg-white rounded-xl border p-5"><div class="text-3xl font-bold text-blue-600">${stats.issueCount}</div><div class="text-sm text-gray-500 mt-1">Sayı</div></div>
       <div class="bg-white rounded-xl border p-5"><div class="text-3xl font-bold text-purple-600">${stats.newsCount}</div><div class="text-sm text-gray-500 mt-1">Haber</div></div>
     </div>
+
+    <!-- Top Articles Summary -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+      <div class="bg-white rounded-xl border p-5">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="font-semibold text-gray-900">En Çok Görüntülenen</h2>
+          <a href="#/article-stats" class="text-xs text-teal-600 hover:text-teal-800 font-medium">Tümünü Gör &rarr;</a>
+        </div>
+        ${dashTopList(topArticles.topViewed, 'views')}
+      </div>
+      <div class="bg-white rounded-xl border p-5">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="font-semibold text-gray-900">En Çok İndirilen</h2>
+          <a href="#/article-stats" class="text-xs text-teal-600 hover:text-teal-800 font-medium">Tümünü Gör &rarr;</a>
+        </div>
+        ${dashTopList(topArticles.topDownloaded, 'downloads')}
+      </div>
+    </div>
+
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <div class="bg-white rounded-xl border p-5">
         <h2 class="font-semibold text-gray-900 mb-3">Makale Türleri</h2>
@@ -424,6 +454,12 @@ async function renderArticleForm(el, article) {
           </div>
           ${a.imageUrl ? `<img src="../${esc(a.imageUrl)}" class="mt-2 h-20 rounded border object-cover" onerror="this.style.display='none'">` : ''}
         </div>
+        ${!isNew ? `
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+          <div><label class="block text-sm font-medium text-gray-700 mb-1">Görüntülenme</label><input id="f-views" type="number" min="0" value="${a.views || 0}" class="w-full px-3 py-2 border rounded-lg text-sm" oninput="markDirty()"></div>
+          <div><label class="block text-sm font-medium text-gray-700 mb-1">İndirme</label><input id="f-downloads" type="number" min="0" value="${a.downloads || 0}" class="w-full px-3 py-2 border rounded-lg text-sm" oninput="markDirty()"></div>
+          <div><label class="block text-sm font-medium text-gray-700 mb-1">Atıf</label><input id="f-citations" type="number" min="0" value="${a.citations || 0}" class="w-full px-3 py-2 border rounded-lg text-sm" oninput="markDirty()"></div>
+        </div>` : ''}
       </div>
 
       <!-- Authors tab -->
@@ -434,9 +470,22 @@ async function renderArticleForm(el, article) {
 
       <!-- Abstract tab -->
       <div class="tab-panel p-6 hidden" data-tab="abstract">
-        <div><label class="block text-sm font-medium text-gray-700 mb-1">Özet</label>
-          <textarea id="f-abstractHtml" rows="8" class="w-full px-3 py-2 border rounded-lg text-sm" placeholder="Özet metnini doğrudan yapıştırın. İsterseniz <p>, <strong>, <em> gibi HTML etiketleri kullanabilirsiniz.">${esc(a.abstractHtml)}</textarea>
-          <p class="text-xs text-gray-500 mt-1">Düz metin yapıştırırsanız satır araları otomatik paragraflara dönüştürülür.</p>
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <label class="block text-sm font-medium text-gray-700">Özet</label>
+            <button type="button" id="f-abstract-toggle" onclick="toggleAbstractEditor()" class="text-xs text-gray-500 hover:text-gray-700 px-2 py-1 rounded hover:bg-gray-100">HTML Kaynağı</button>
+          </div>
+          <div id="f-abstract-toolbar" class="flex flex-wrap gap-0.5 border border-b-0 rounded-t-lg bg-gray-50 px-2 py-1.5">
+            <button type="button" onclick="abstractCmd('bold')" title="Kalın" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 4h8a4 4 0 014 4 4 4 0 01-4 4H6z"/><path d="M6 12h9a4 4 0 014 4 4 4 0 01-4 4H6z"/></svg></button>
+            <button type="button" onclick="abstractCmd('italic')" title="İtalik" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 4h4m-2 0l-4 16m0 0h4"/></svg></button>
+            <button type="button" onclick="abstractCmd('underline')" title="Altı Çizili" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 3v7a6 6 0 0012 0V3M3.5 21h17"/></svg></button>
+            <div class="w-px bg-gray-300 mx-1"></div>
+            <button type="button" onclick="abstractCmd('formatBlock','<p>')" title="Paragraf" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-bold">P</button>
+            <button type="button" onclick="abstractCmd('insertUnorderedList')" title="Liste" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></button>
+            <button type="button" onclick="abstractCmd('removeFormat')" title="Formatı Temizle" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17 10L3 3m0 0l7 14 2-5 5-2M3 3l18 18"/></svg></button>
+          </div>
+          <div id="f-abstractHtml-visual" contenteditable="true" class="w-full px-4 py-3 border rounded-b-lg text-sm min-h-[160px] focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 max-w-none overflow-auto bg-white">${a.abstractHtml || ''}</div>
+          <textarea id="f-abstractHtml" rows="8" class="w-full px-3 py-2 border rounded-b-lg text-sm font-mono hidden">${esc(a.abstractHtml)}</textarea>
         </div>
         <div class="mt-4"><label class="block text-sm font-medium text-gray-700 mb-1">Anahtar Kelimeler (virgül ile)</label>
           <input id="f-keywords" value="${esc((a.keywords || []).join(', '))}" class="w-full px-3 py-2 border rounded-lg text-sm">
@@ -694,6 +743,9 @@ async function renderArticleForm(el, article) {
     if (dl) dl.innerHTML = types.map((t) => `<option value="${esc(t.name)}">`).join('');
   }).catch(() => {});
 
+  // Reset abstract editor mode
+  _abstractEditorMode = 'visual';
+
   // Track unsaved changes
   clearDirty();
   el.addEventListener('input', markDirty);
@@ -786,8 +838,8 @@ async function saveArticle(isNew) {
     pmid: getVal('f-pmid'),
     featured: document.getElementById('f-featured')?.checked || false,
     imageCorner: document.getElementById('f-imageCorner')?.checked || false,
-    abstractHtml: getVal('f-abstractHtml'),
-    abstract: getVal('f-abstractHtml').replace(/<[^>]+>/g, '').trim(),
+    abstractHtml: getAbstractContent(),
+    abstract: getAbstractContent().replace(/<[^>]+>/g, '').trim(),
     keywords: getVal('f-keywords').split(',').map((k) => k.trim()).filter(Boolean),
     volume: parseInt(getVal('f-volume')) || null,
     issue: getVal('f-issue'),
@@ -797,6 +849,13 @@ async function saveArticle(isNew) {
     supplementary,
     externalLinks,
   };
+
+  // Include metrics if editing an existing article
+  if (!isNew) {
+    data.views = parseInt(document.getElementById('f-views')?.value) || 0;
+    data.downloads = parseInt(document.getElementById('f-downloads')?.value) || 0;
+    data.citations = parseInt(document.getElementById('f-citations')?.value) || 0;
+  }
 
   data.previewText = data.abstract.slice(0, 360);
 
@@ -1576,10 +1635,22 @@ route('/issues/:volume/:issue', async (el, { volume, issue }) => {
       <div id="issue-pdf-results" class="mt-3"></div>
     </div>
 
+    <!-- Move toolbar (hidden until selection) -->
+    <div id="move-toolbar" class="hidden bg-blue-50 border border-blue-200 rounded-xl p-4 mb-4 flex items-center gap-3 flex-wrap">
+      <span class="text-sm font-medium text-blue-800"><span id="move-count">0</span> makale secildi</span>
+      <span class="text-gray-300">|</span>
+      <span class="text-sm text-gray-600">Hedef:</span>
+      <input id="move-vol" type="number" placeholder="Cilt" class="w-20 px-2 py-1.5 border rounded-lg text-sm">
+      <input id="move-iss" placeholder="Sayı" class="w-20 px-2 py-1.5 border rounded-lg text-sm">
+      <button onclick="moveSelectedArticles()" class="px-4 py-1.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm font-medium">Taşı</button>
+      <button onclick="clearMoveSelection()" class="px-3 py-1.5 text-gray-500 hover:text-gray-700 text-sm">Vazgeç</button>
+    </div>
+
     <!-- Articles in this issue -->
     <div class="bg-white rounded-xl border overflow-hidden">
       <table class="w-full text-sm">
         <thead class="bg-gray-50"><tr>
+          <th class="px-3 py-3 w-8"><input type="checkbox" id="move-select-all" class="rounded" onchange="toggleAllMoveCheckboxes(this.checked)"></th>
           <th class="text-left px-4 py-3 font-medium text-gray-500">ID</th>
           <th class="text-left px-4 py-3 font-medium text-gray-500">Sayfa</th>
           <th class="text-left px-4 py-3 font-medium text-gray-500">Başlık</th>
@@ -1590,6 +1661,7 @@ route('/issues/:volume/:issue', async (el, { volume, issue }) => {
         </tr></thead>
         <tbody>${articles.map((a) => `
           <tr class="border-t hover:bg-gray-50 cursor-pointer" onclick="navigate('#/articles/${a.id}')">
+            <td class="px-3 py-3" onclick="event.stopPropagation()"><input type="checkbox" class="move-cb rounded" value="${a.id}" onchange="updateMoveToolbar()"></td>
             <td class="px-4 py-3 text-gray-400">${a.id}</td>
             <td class="px-4 py-3 text-gray-500">${esc(a.pages || '-')}</td>
             <td class="px-4 py-3 max-w-sm truncate">${esc(a.title)}</td>
@@ -1623,6 +1695,49 @@ route('/issues/:volume/:issue', async (el, { volume, issue }) => {
   pdfDrop.ondrop = (e) => { e.preventDefault(); pdfDrop.classList.remove('border-teal-400', 'bg-teal-50'); handleIssuePdfUpload(e.dataTransfer.files); };
   pdfInput.onchange = () => handleIssuePdfUpload(pdfInput.files);
 });
+
+// --- Article move functions ---
+function toggleAllMoveCheckboxes(checked) {
+  document.querySelectorAll('.move-cb').forEach((cb) => { cb.checked = checked; });
+  updateMoveToolbar();
+}
+
+function updateMoveToolbar() {
+  const checked = document.querySelectorAll('.move-cb:checked');
+  const toolbar = document.getElementById('move-toolbar');
+  const countEl = document.getElementById('move-count');
+  if (checked.length > 0) {
+    toolbar.classList.remove('hidden');
+    countEl.textContent = checked.length;
+  } else {
+    toolbar.classList.add('hidden');
+  }
+}
+
+function clearMoveSelection() {
+  document.querySelectorAll('.move-cb').forEach((cb) => { cb.checked = false; });
+  const selectAll = document.getElementById('move-select-all');
+  if (selectAll) selectAll.checked = false;
+  updateMoveToolbar();
+}
+
+async function moveSelectedArticles() {
+  const checked = document.querySelectorAll('.move-cb:checked');
+  if (!checked.length) { toast('Makale seçin', 'warning'); return; }
+
+  const targetVolume = parseInt(document.getElementById('move-vol')?.value);
+  const targetIssue = document.getElementById('move-iss')?.value?.trim();
+  if (!targetVolume || !targetIssue) { toast('Hedef cilt ve sayı girin', 'error'); return; }
+
+  const ids = Array.from(checked).map((cb) => Number(cb.value));
+  if (!await confirmAction(`${ids.length} makale Volume ${targetVolume}, Issue ${targetIssue} sayısına taşınacak. Devam?`)) return;
+
+  try {
+    const result = await API.post('/articles/move', { articleIds: ids, targetVolume, targetIssue });
+    toast(`${result.moved} makale taşındı → Vol ${result.targetVolume}, Issue ${result.targetIssue}`);
+    handleRoute();
+  } catch (err) { toast(err.message, 'error'); }
+}
 
 async function handleIssuePdfUpload(files) {
   if (!files || !files.length) return;
@@ -1945,33 +2060,216 @@ function renderNewsForm(el, item) {
       <h1 class="text-2xl font-bold text-gray-900">${isNew ? 'Yeni Haber' : `Haber #${n.id}`}</h1>
       <div class="flex gap-2">
         <a href="#/news" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm">Geri</a>
+        ${!isNew ? `<a href="/site/news-article.html?id=${n.id}" target="_blank" rel="noopener" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 text-sm font-medium">Önizle</a>` : ''}
         <button onclick="saveNews(${isNew ? 'null' : n.id})" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet<span data-dirty-indicator class="text-amber-200"></span></button>
       </div>
     </div>
-    <div class="bg-white rounded-xl border p-6 space-y-4">
-      <div><label class="block text-sm font-medium text-gray-700 mb-1">Başlık</label><input id="fn-title" value="${esc(n.title)}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
-      <div><label class="block text-sm font-medium text-gray-700 mb-1">Özet</label><textarea id="fn-excerpt" rows="3" class="w-full px-3 py-2 border rounded-lg text-sm">${esc(n.excerpt)}</textarea></div>
-      <div><label class="block text-sm font-medium text-gray-700 mb-1">İçerik (HTML)</label><textarea id="fn-content" rows="10" class="w-full px-3 py-2 border rounded-lg text-sm font-mono">${esc(n.content)}</textarea></div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div><label class="block text-sm font-medium text-gray-700 mb-1">Kategori</label><input id="fn-category" value="${esc(n.category)}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
-        <div><label class="block text-sm font-medium text-gray-700 mb-1">Tarih</label><input id="fn-date" type="date" value="${n.date}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
-        <div class="flex items-end"><label class="flex items-center gap-2 text-sm"><input id="fn-featured" type="checkbox" ${n.featured ? 'checked' : ''} class="rounded"> Öne Çıkan</label></div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- Main form -->
+      <div class="lg:col-span-2 space-y-4">
+        <div class="bg-white rounded-xl border p-6 space-y-4">
+          <div><label class="block text-sm font-medium text-gray-700 mb-1">Başlık</label><input id="fn-title" value="${esc(n.title)}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+          <div><label class="block text-sm font-medium text-gray-700 mb-1">Özet</label><textarea id="fn-excerpt" rows="3" class="w-full px-3 py-2 border rounded-lg text-sm">${esc(n.excerpt)}</textarea></div>
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <label class="block text-sm font-medium text-gray-700">İçerik</label>
+              <button type="button" id="fn-content-toggle" onclick="toggleNewsEditor()" class="text-xs text-gray-500 hover:text-gray-700 px-2 py-1 rounded hover:bg-gray-100">HTML Kaynağı</button>
+            </div>
+            <!-- Toolbar -->
+            <div id="fn-content-toolbar" class="flex flex-wrap gap-0.5 border border-b-0 rounded-t-lg bg-gray-50 px-2 py-1.5">
+              <button type="button" onclick="newsEditorCmd('bold')" title="Kalın" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 4h8a4 4 0 014 4 4 4 0 01-4 4H6z"/><path d="M6 12h9a4 4 0 014 4 4 4 0 01-4 4H6z"/></svg></button>
+              <button type="button" onclick="newsEditorCmd('italic')" title="İtalik" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 4h4m-2 0l-4 16m0 0h4"/></svg></button>
+              <button type="button" onclick="newsEditorCmd('underline')" title="Altı Çizili" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 3v7a6 6 0 0012 0V3M3.5 21h17"/></svg></button>
+              <div class="w-px bg-gray-300 mx-1"></div>
+              <button type="button" onclick="newsEditorCmd('formatBlock','<h2>')" title="Başlık 2" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-bold">H2</button>
+              <button type="button" onclick="newsEditorCmd('formatBlock','<h3>')" title="Başlık 3" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-bold">H3</button>
+              <button type="button" onclick="newsEditorCmd('formatBlock','<p>')" title="Paragraf" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-bold">P</button>
+              <div class="w-px bg-gray-300 mx-1"></div>
+              <button type="button" onclick="newsEditorCmd('insertUnorderedList')" title="Madde Listesi" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></button>
+              <button type="button" onclick="newsEditorCmd('insertOrderedList')" title="Numaralı Liste" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 6h11M10 12h11M10 18h11"/><text x="3" y="8" font-size="7" fill="currentColor" stroke="none" font-family="sans-serif">1</text><text x="3" y="14" font-size="7" fill="currentColor" stroke="none" font-family="sans-serif">2</text><text x="3" y="20" font-size="7" fill="currentColor" stroke="none" font-family="sans-serif">3</text></svg></button>
+              <div class="w-px bg-gray-300 mx-1"></div>
+              <button type="button" onclick="newsEditorLink()" title="Link Ekle" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></button>
+              <button type="button" onclick="newsEditorCmd('removeFormat')" title="Formatı Temizle" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17 10L3 3m0 0l7 14 2-5 5-2M3 3l18 18"/></svg></button>
+            </div>
+            <!-- Visual editor -->
+            <div id="fn-content-visual" contenteditable="true" class="w-full px-4 py-3 border rounded-b-lg text-sm min-h-[240px] focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 prose prose-sm max-w-none overflow-auto bg-white">${n.content}</div>
+            <!-- HTML source (hidden by default) -->
+            <textarea id="fn-content-source" rows="12" class="w-full px-3 py-2 border rounded-b-lg text-sm font-mono hidden">${esc(n.content)}</textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar: image + meta -->
+      <div class="space-y-4">
+        <!-- Image -->
+        <div class="bg-white rounded-xl border p-5">
+          <label class="block text-sm font-medium text-gray-700 mb-2">Görsel</label>
+          <div id="fn-image-preview" class="mb-3 rounded-lg overflow-hidden bg-gray-100 ${n.image ? '' : 'hidden'}">
+            <img id="fn-image-preview-img" src="${n.image ? '../' + esc(n.image) : ''}" alt="" class="w-full h-40 object-cover" onerror="this.closest('#fn-image-preview').classList.add('hidden')">
+          </div>
+          <div class="flex items-center gap-2">
+            <input id="fn-image" value="${esc(n.image || '')}" placeholder="images/..." class="flex-1 px-3 py-2 border rounded-lg text-sm" oninput="updateNewsImagePreview()">
+            <label class="px-3 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm cursor-pointer whitespace-nowrap">
+              Yükle <input id="fn-image-file" type="file" accept="image/*" class="hidden">
+            </label>
+          </div>
+          <button id="fn-image-remove" onclick="document.getElementById('fn-image').value=''; updateNewsImagePreview(); markDirty();" class="mt-2 text-xs text-red-500 hover:text-red-700 ${n.image ? '' : 'hidden'}">Görseli Kaldır</button>
+        </div>
+
+        <!-- Meta -->
+        <div class="bg-white rounded-xl border p-5 space-y-4">
+          <div><label class="block text-sm font-medium text-gray-700 mb-1">Kategori</label><input id="fn-category" value="${esc(n.category)}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+          <div><label class="block text-sm font-medium text-gray-700 mb-1">Tarih</label><input id="fn-date" type="date" value="${n.date}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+          <div><label class="flex items-center gap-2 text-sm"><input id="fn-featured" type="checkbox" ${n.featured ? 'checked' : ''} class="rounded"> Öne Çıkan</label></div>
+        </div>
       </div>
     </div>`;
+
+  // Reset editor mode
+  _newsEditorMode = 'visual';
+
+  // Image file upload handler
+  const fileInput = document.getElementById('fn-image-file');
+  if (fileInput) {
+    fileInput.addEventListener('change', async () => {
+      const file = fileInput.files[0];
+      if (!file) return;
+      try {
+        const result = await API.uploadFile('/media/upload/image', file, 'image');
+        document.getElementById('fn-image').value = result.url;
+        updateNewsImagePreview();
+        markDirty();
+        toast('Görsel yüklendi');
+      } catch (err) { toast(err.message, 'error'); }
+    });
+  }
 
   // Track unsaved changes
   clearDirty();
   el.addEventListener('input', markDirty);
 }
 
+// ── Abstract WYSIWYG editor helpers ──
+let _abstractEditorMode = 'visual';
+
+function abstractCmd(command, value) {
+  document.getElementById('f-abstractHtml-visual').focus();
+  document.execCommand(command, false, value || null);
+  markDirty();
+}
+
+function toggleAbstractEditor() {
+  const visual = document.getElementById('f-abstractHtml-visual');
+  const source = document.getElementById('f-abstractHtml');
+  const toolbar = document.getElementById('f-abstract-toolbar');
+  const toggle = document.getElementById('f-abstract-toggle');
+  if (_abstractEditorMode === 'visual') {
+    source.value = visual.innerHTML;
+    visual.classList.add('hidden');
+    toolbar.classList.add('hidden');
+    source.classList.remove('hidden');
+    source.classList.remove('rounded-b-lg');
+    source.classList.add('rounded-lg');
+    toggle.textContent = 'Görsel Editör';
+    _abstractEditorMode = 'source';
+  } else {
+    visual.innerHTML = source.value;
+    source.classList.add('hidden');
+    visual.classList.remove('hidden');
+    toolbar.classList.remove('hidden');
+    source.classList.add('rounded-b-lg');
+    source.classList.remove('rounded-lg');
+    toggle.textContent = 'HTML Kaynağı';
+    _abstractEditorMode = 'visual';
+  }
+}
+
+function getAbstractContent() {
+  if (_abstractEditorMode === 'visual') {
+    return (document.getElementById('f-abstractHtml-visual')?.innerHTML || '').trim();
+  }
+  return (document.getElementById('f-abstractHtml')?.value || '').trim();
+}
+
+// ── News WYSIWYG editor helpers ──
+let _newsEditorMode = 'visual'; // 'visual' | 'source'
+
+function newsEditorCmd(command, value) {
+  document.getElementById('fn-content-visual').focus();
+  document.execCommand(command, false, value || null);
+  markDirty();
+}
+
+function newsEditorLink() {
+  const url = prompt('Link URL:');
+  if (url) {
+    document.getElementById('fn-content-visual').focus();
+    document.execCommand('createLink', false, url);
+    markDirty();
+  }
+}
+
+function toggleNewsEditor() {
+  const visual = document.getElementById('fn-content-visual');
+  const source = document.getElementById('fn-content-source');
+  const toolbar = document.getElementById('fn-content-toolbar');
+  const toggle = document.getElementById('fn-content-toggle');
+  if (_newsEditorMode === 'visual') {
+    source.value = visual.innerHTML;
+    visual.classList.add('hidden');
+    toolbar.classList.add('hidden');
+    source.classList.remove('hidden');
+    source.classList.remove('rounded-b-lg');
+    source.classList.add('rounded-lg');
+    toggle.textContent = 'Görsel Editör';
+    _newsEditorMode = 'source';
+  } else {
+    visual.innerHTML = source.value;
+    source.classList.add('hidden');
+    visual.classList.remove('hidden');
+    toolbar.classList.remove('hidden');
+    source.classList.add('rounded-b-lg');
+    source.classList.remove('rounded-lg');
+    toggle.textContent = 'HTML Kaynağı';
+    _newsEditorMode = 'visual';
+  }
+}
+
+function getNewsContent() {
+  const visual = document.getElementById('fn-content-visual');
+  const source = document.getElementById('fn-content-source');
+  if (_newsEditorMode === 'visual') {
+    return (visual ? visual.innerHTML : '').trim();
+  }
+  return (source ? source.value : '').trim();
+}
+
+function updateNewsImagePreview() {
+  const url = (document.getElementById('fn-image')?.value || '').trim();
+  const preview = document.getElementById('fn-image-preview');
+  const img = document.getElementById('fn-image-preview-img');
+  const removeBtn = document.getElementById('fn-image-remove');
+  if (!preview || !img) return;
+  if (url) {
+    img.src = '../' + url;
+    preview.classList.remove('hidden');
+    if (removeBtn) removeBtn.classList.remove('hidden');
+  } else {
+    preview.classList.add('hidden');
+    img.src = '';
+    if (removeBtn) removeBtn.classList.add('hidden');
+  }
+}
+
 async function saveNews(id) {
   const data = {
     title: document.getElementById('fn-title').value.trim(),
     excerpt: document.getElementById('fn-excerpt').value.trim(),
-    content: document.getElementById('fn-content').value.trim(),
+    content: getNewsContent(),
     category: document.getElementById('fn-category').value.trim(),
     date: document.getElementById('fn-date').value,
     featured: document.getElementById('fn-featured').checked,
+    image: document.getElementById('fn-image').value.trim(),
   };
   if (!data.title) { toast('Başlık zorunludur', 'error'); return; }
   try {
@@ -1993,34 +2291,61 @@ route('/media', async (el) => {
   const stats = await API.get('/media/stats');
 
   el.innerHTML = `
-    <h1 class="text-2xl font-bold text-gray-900 mb-6">Medya Yönetimi</h1>
+    <div class="flex items-center justify-between mb-2">
+      <h1 class="text-2xl font-bold text-gray-900">Medya Yönetimi</h1>
+    </div>
+    <p class="text-sm text-gray-500 mb-6">Makalelere ait PDF, figür ve ek materyal dosyalarını bu sayfadan yönetebilirsiniz. Dosyalar makale ID'si üzerinden ilgili makaleye bağlanır ve sitede otomatik olarak sunulur.</p>
 
     <!-- Stats -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
       <div class="bg-white rounded-xl border p-5">
-        <div class="text-3xl font-bold text-teal-700">${stats.pdfCount}</div>
-        <div class="text-sm text-gray-500 mt-1">PDF Dosyası</div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-teal-50 flex items-center justify-center"><svg class="w-5 h-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></div>
+          <div><div class="text-2xl font-bold text-teal-700">${stats.pdfCount}</div><div class="text-xs text-gray-500">PDF Dosyası</div></div>
+        </div>
       </div>
       <div class="bg-white rounded-xl border p-5">
-        <div class="text-3xl font-bold ${stats.withoutPdf ? 'text-red-600' : 'text-green-600'}">${stats.withoutPdf}</div>
-        <div class="text-sm text-gray-500 mt-1">PDF'siz Makale</div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg ${stats.withoutPdf ? 'bg-red-50' : 'bg-green-50'} flex items-center justify-center"><svg class="w-5 h-5 ${stats.withoutPdf ? 'text-red-500' : 'text-green-500'}" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="${stats.withoutPdf ? 'M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z' : 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'}"/></svg></div>
+          <div><div class="text-2xl font-bold ${stats.withoutPdf ? 'text-red-600' : 'text-green-600'}">${stats.withoutPdf}</div><div class="text-xs text-gray-500">PDF'siz Makale</div></div>
+        </div>
       </div>
       <div class="bg-white rounded-xl border p-5">
-        <div class="text-3xl font-bold text-blue-600">${stats.figureCount}</div>
-        <div class="text-sm text-gray-500 mt-1">Figür Dosyası</div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center"><svg class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
+          <div><div class="text-2xl font-bold text-blue-600">${stats.figureCount}</div><div class="text-xs text-gray-500">Figür Dosyası</div></div>
+        </div>
       </div>
       <div class="bg-white rounded-xl border p-5">
-        <div class="text-3xl font-bold text-purple-600">${stats.suppCount}</div>
-        <div class="text-sm text-gray-500 mt-1">Ek Materyal</div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-purple-50 flex items-center justify-center"><svg class="w-5 h-5 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/></svg></div>
+          <div><div class="text-2xl font-bold text-purple-600">${stats.suppCount}</div><div class="text-xs text-gray-500">Ek Materyal</div></div>
+        </div>
       </div>
     </div>
 
     <!-- Batch PDF Upload -->
     <div class="bg-white rounded-xl border p-5 mb-6">
-      <h2 class="font-semibold text-gray-900 mb-3">Toplu PDF Yükle</h2>
-      <p class="text-sm text-gray-500 mb-3">Dosya adı makale ID'si ile eşleştirilir (ör. 2805.pdf → Makale #2805)</p>
-      <div id="pdf-drop-zone" class="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center hover:border-teal-400 transition-colors cursor-pointer">
-        <p class="text-gray-600 font-medium">PDF dosyalarını sürükleyin veya tıklayın</p>
+      <div class="flex items-start gap-3 mb-4">
+        <div class="w-9 h-9 rounded-lg bg-teal-50 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-5 h-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></div>
+        <div>
+          <h2 class="font-semibold text-gray-900">Toplu PDF Yükle</h2>
+          <p class="text-sm text-gray-500 mt-1">Makale PDF dosyalarını toplu olarak yükleyin. Sistem dosya adındaki sayıyı makale ID'si olarak tanır ve otomatik eşleştirir.</p>
+        </div>
+      </div>
+      <div class="bg-gray-50 rounded-lg p-3 mb-4">
+        <p class="text-xs font-medium text-gray-600 mb-1.5">Nasıl Çalışır?</p>
+        <ol class="text-xs text-gray-500 space-y-1 list-decimal list-inside">
+          <li>PDF dosyalarını makale ID'si ile adlandırın (ör. <code class="bg-gray-200 px-1 rounded">2805.pdf</code>, <code class="bg-gray-200 px-1 rounded">2810.pdf</code>)</li>
+          <li>Dosyaları aşağıdaki alana sürükleyin veya tıklayarak seçin</li>
+          <li>Sistem her dosyayı ilgili makale ile eşleştirir ve <code class="bg-gray-200 px-1 rounded">pdfs/</code> klasörüne kaydeder</li>
+          <li>Eşleşen makalelerde "PDF İndir" butonu otomatik olarak aktif olur</li>
+        </ol>
+      </div>
+      <div id="pdf-drop-zone" class="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center hover:border-teal-400 transition-colors cursor-pointer">
+        <svg class="w-10 h-10 text-gray-300 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+        <p class="text-gray-600 font-medium">PDF dosyalarını sürükleyin veya tıklayarak seçin</p>
+        <p class="text-xs text-gray-400 mt-1">Birden fazla dosya aynı anda yüklenebilir</p>
         <input id="pdf-batch-input" type="file" accept=".pdf" multiple class="hidden">
       </div>
       <div id="pdf-batch-results" class="mt-4"></div>
@@ -2029,16 +2354,37 @@ route('/media', async (el) => {
     <!-- Missing PDFs -->
     ${stats.withoutPdf > 0 ? `
     <div class="bg-white rounded-xl border p-5 mb-6">
-      <div class="flex items-center justify-between mb-3">
-        <h2 class="font-semibold text-gray-900">PDF'siz Makaleler</h2>
-        <button onclick="loadMissingPdfs()" class="text-sm text-teal-600 hover:text-teal-800 font-medium">Listele</button>
+      <div class="flex items-start gap-3 mb-3">
+        <div class="w-9 h-9 rounded-lg bg-red-50 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-5 h-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg></div>
+        <div class="flex-1">
+          <div class="flex items-center justify-between">
+            <h2 class="font-semibold text-gray-900">PDF'siz Makaleler</h2>
+            <button onclick="loadMissingPdfs()" class="text-sm text-teal-600 hover:text-teal-800 font-medium">Listele</button>
+          </div>
+          <p class="text-sm text-gray-500 mt-1">PDF dosyası henüz yüklenmemiş makalelerin listesi. Bu makaleler için yukarıdaki toplu yükleme alanını kullanarak eksik PDF'leri tamamlayabilirsiniz.</p>
+        </div>
       </div>
       <div id="missing-pdfs-list"></div>
     </div>` : ''}
 
     <!-- Batch Figure Upload -->
     <div class="bg-white rounded-xl border p-5 mb-6">
-      <h2 class="font-semibold text-gray-900 mb-3">Makale Figür Yükle</h2>
+      <div class="flex items-start gap-3 mb-4">
+        <div class="w-9 h-9 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
+        <div>
+          <h2 class="font-semibold text-gray-900">Makale Figür Yükle</h2>
+          <p class="text-sm text-gray-500 mt-1">Makalelerde kullanılan şekil, grafik ve tablo görsellerini yükleyin. Figürler makaleye ait klasöre kaydedilir.</p>
+        </div>
+      </div>
+      <div class="bg-gray-50 rounded-lg p-3 mb-4">
+        <p class="text-xs font-medium text-gray-600 mb-1.5">Nasıl Çalışır?</p>
+        <ol class="text-xs text-gray-500 space-y-1 list-decimal list-inside">
+          <li>Figür yüklemek istediğiniz makalenin ID'sini girin</li>
+          <li>Figür dosyalarını seçin (PNG, JPG, TIFF vb.)</li>
+          <li>Dosyalar <code class="bg-gray-200 px-1 rounded">figures/[makaleID]/</code> klasörüne kaydedilir</li>
+          <li>"Tam Metne Uygula" butonuyla figür referansları makalenin HTML tam metnine otomatik yerleştirilir</li>
+        </ol>
+      </div>
       <div class="flex gap-3 items-end mb-3">
         <div class="flex-1">
           <label class="block text-sm font-medium text-gray-700 mb-1">Makale ID</label>
@@ -2056,7 +2402,22 @@ route('/media', async (el) => {
 
     <!-- Supplementary Upload -->
     <div class="bg-white rounded-xl border p-5">
-      <h2 class="font-semibold text-gray-900 mb-3">Ek Materyal Yükle</h2>
+      <div class="flex items-start gap-3 mb-4">
+        <div class="w-9 h-9 rounded-lg bg-purple-50 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-5 h-5 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/></svg></div>
+        <div>
+          <h2 class="font-semibold text-gray-900">Ek Materyal Yükle</h2>
+          <p class="text-sm text-gray-500 mt-1">Makalelere ait ek veri dosyaları, tablolar, videolar veya diğer destekleyici materyalleri yükleyin. Bu dosyalar makale sayfasında "Supplementary" bölümünde listelenir.</p>
+        </div>
+      </div>
+      <div class="bg-gray-50 rounded-lg p-3 mb-4">
+        <p class="text-xs font-medium text-gray-600 mb-1.5">Nasıl Çalışır?</p>
+        <ol class="text-xs text-gray-500 space-y-1 list-decimal list-inside">
+          <li>Ek materyal yüklemek istediğiniz makalenin ID'sini girin</li>
+          <li>Destekleyici dosyaları seçin (Excel, Word, video, veri seti vb.)</li>
+          <li>Dosyalar <code class="bg-gray-200 px-1 rounded">supplementary/[makaleID]/</code> klasörüne kaydedilir</li>
+          <li>Makale sayfasında "Ek Materyaller" bölümünde indirme linkleri otomatik görünür</li>
+        </ol>
+      </div>
       <div class="flex gap-3 items-end mb-3">
         <div class="flex-1">
           <label class="block text-sm font-medium text-gray-700 mb-1">Makale ID</label>
@@ -2501,22 +2862,148 @@ route('/pages', async (el) => {
 
 route('/pages/:slug', async (el, { slug }) => {
   const page = await API.get(`/pages/${slug}`);
+  const hasSections = page.sections && page.sections.length > 0;
+
   el.innerHTML = `
     <div class="flex items-center justify-between mb-6">
       <h1 class="text-2xl font-bold text-gray-900">${esc(page.title)}</h1>
       <div class="flex gap-2">
         <a href="#/pages" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm">Geri</a>
+        <a href="/site/${esc(page.file)}" target="_blank" rel="noopener" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 text-sm font-medium">Önizle</a>
+        <button id="toggle-editor-mode" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm" title="Düzenleme modunu değiştir">HTML</button>
         <button onclick="savePage('${slug}')" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet</button>
       </div>
     </div>
-    <div class="bg-white rounded-xl border p-6">
-      <textarea id="page-content" rows="30" class="w-full px-3 py-2 border rounded-lg text-sm font-mono">${esc(page.content)}</textarea>
+
+    <!-- Visual editor (section-based) -->
+    <div id="page-visual-editor" ${hasSections ? '' : 'class="hidden"'}>
+      <p class="text-sm text-gray-500 mb-4">Her bölümü ayrı ayrı düzenleyebilirsiniz. Araç çubuğundaki butonlarla metni biçimlendirebilirsiniz.</p>
+      <div id="page-sections" class="space-y-4">
+        ${(page.sections || []).map((s, i) => pageSectionBlock(s, i)).join('')}
+      </div>
+      <button onclick="addPageSection()" class="mt-4 px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 text-sm font-medium">+ Bölüm Ekle</button>
+    </div>
+
+    <!-- Raw HTML editor (fallback) -->
+    <div id="page-html-editor" ${hasSections ? 'class="hidden"' : ''}>
+      <p class="text-sm text-gray-500 mb-4">Ham HTML düzenleme modu. Tüm &lt;main&gt; içeriği burada görünür.</p>
+      <div class="bg-white rounded-xl border p-6">
+        <textarea id="page-content" rows="30" class="w-full px-3 py-2 border rounded-lg text-sm font-mono">${esc(page.content)}</textarea>
+      </div>
     </div>`;
+
+  // Toggle mode button
+  let visualMode = hasSections;
+  document.getElementById('toggle-editor-mode').addEventListener('click', () => {
+    visualMode = !visualMode;
+    document.getElementById('page-visual-editor').classList.toggle('hidden', !visualMode);
+    document.getElementById('page-html-editor').classList.toggle('hidden', visualMode);
+    document.getElementById('toggle-editor-mode').textContent = visualMode ? 'HTML' : 'Görsel';
+    if (!visualMode) {
+      // Sync sections -> raw HTML
+      document.getElementById('page-content').value = buildPageHtmlFromSections();
+    }
+  });
 });
+
+function pageSectionBlock(section, index) {
+  return `
+    <div class="page-section bg-white rounded-xl border" data-section-idx="${index}">
+      <div class="flex items-center justify-between px-4 py-3 bg-gray-50 rounded-t-xl border-b">
+        <div class="flex items-center gap-2 flex-1">
+          <svg class="w-4 h-4 text-gray-400 cursor-grab" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/></svg>
+          <input class="ps-heading flex-1 px-2 py-1 border rounded text-sm font-semibold text-gray-900" value="${esc(section.heading)}" placeholder="Bölüm başlığı" oninput="markDirty()">
+        </div>
+        <div class="flex items-center gap-1 ml-2">
+          <button onclick="movePageSection(this, -1)" class="text-gray-400 hover:text-gray-700 p-1" title="Yukarı">&#9650;</button>
+          <button onclick="movePageSection(this, 1)" class="text-gray-400 hover:text-gray-700 p-1" title="Aşağı">&#9660;</button>
+          <button onclick="toggleSectionCollapse(this)" class="text-gray-400 hover:text-gray-700 p-1" title="Daralt/Genişlet">&#9660;</button>
+          <button onclick="removePageSection(this)" class="text-red-400 hover:text-red-600 p-1" title="Sil">&times;</button>
+        </div>
+      </div>
+      <div class="ps-body p-4">
+        <div class="flex flex-wrap gap-0.5 border border-b-0 rounded-t-lg bg-gray-50 px-2 py-1.5">
+          <button type="button" onclick="sectionCmd(this,'bold')" title="Kalın" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 4h8a4 4 0 014 4 4 4 0 01-4 4H6z"/><path d="M6 12h9a4 4 0 014 4 4 4 0 01-4 4H6z"/></svg></button>
+          <button type="button" onclick="sectionCmd(this,'italic')" title="İtalik" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 4h4m-2 0l-4 16m0 0h4"/></svg></button>
+          <button type="button" onclick="sectionCmd(this,'underline')" title="Altı Çizili" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 3v7a6 6 0 0012 0V3M3.5 21h17"/></svg></button>
+          <div class="w-px bg-gray-300 mx-1"></div>
+          <button type="button" onclick="sectionCmd(this,'formatBlock','<h3>')" title="Başlık 3" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-bold">H3</button>
+          <button type="button" onclick="sectionCmd(this,'formatBlock','<p>')" title="Paragraf" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-bold">P</button>
+          <button type="button" onclick="sectionCmd(this,'insertUnorderedList')" title="Liste" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></button>
+          <button type="button" onclick="sectionLink(this)" title="Link Ekle" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></button>
+          <button type="button" onclick="sectionCmd(this,'removeFormat')" title="Formatı Temizle" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17 10L3 3m0 0l7 14 2-5 5-2M3 3l18 18"/></svg></button>
+        </div>
+        <div class="ps-content w-full px-4 py-3 border rounded-b-lg text-sm min-h-[120px] focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 max-w-none overflow-auto bg-white" contenteditable="true" oninput="markDirty()">${section.body}</div>
+      </div>
+    </div>`;
+}
+
+function addPageSection() {
+  const container = document.getElementById('page-sections');
+  const idx = container.querySelectorAll('.page-section').length;
+  container.insertAdjacentHTML('beforeend', pageSectionBlock({ heading: '', body: '' }, idx));
+  markDirty();
+}
+
+function removePageSection(btn) {
+  btn.closest('.page-section').remove();
+  markDirty();
+}
+
+function movePageSection(btn, dir) {
+  const section = btn.closest('.page-section');
+  const container = section.parentElement;
+  const sibling = dir === -1 ? section.previousElementSibling : section.nextElementSibling;
+  if (!sibling || !sibling.classList.contains('page-section')) return;
+  if (dir === -1) container.insertBefore(section, sibling);
+  else container.insertBefore(sibling, section);
+  markDirty();
+}
+
+function toggleSectionCollapse(btn) {
+  const body = btn.closest('.page-section').querySelector('.ps-body');
+  body.classList.toggle('hidden');
+  btn.innerHTML = body.classList.contains('hidden') ? '&#9654;' : '&#9660;';
+}
+
+function sectionCmd(btn, command, value) {
+  const section = btn.closest('.page-section');
+  const editor = section.querySelector('.ps-content[contenteditable]');
+  if (editor) { editor.focus(); document.execCommand(command, false, value || null); markDirty(); }
+}
+
+function sectionLink(btn) {
+  const url = prompt('Link URL:');
+  if (url) {
+    const section = btn.closest('.page-section');
+    const editor = section.querySelector('.ps-content[contenteditable]');
+    if (editor) { editor.focus(); document.execCommand('createLink', false, url); markDirty(); }
+  }
+}
+
+function buildPageHtmlFromSections() {
+  const sections = document.querySelectorAll('.page-section');
+  if (!sections.length) return document.getElementById('page-content')?.value || '';
+  return Array.from(sections).map((sec) => {
+    const heading = sec.querySelector('.ps-heading').value.trim();
+    const contentEl = sec.querySelector('.ps-content');
+    const content = (contentEl.tagName === 'TEXTAREA' ? contentEl.value : contentEl.innerHTML).trim();
+    if (!heading && !content) return '';
+    return `            <section>\n              <h2 class="text-2xl font-bold text-gray-900 mb-4">${heading}</h2>\n              <div class="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-4">\n                ${content}\n              </div>\n            </section>`;
+  }).filter(Boolean).join('\n\n');
+}
 
 async function savePage(slug) {
   try {
-    await API.put(`/pages/${slug}`, { content: document.getElementById('page-content').value });
+    const visualEditor = document.getElementById('page-visual-editor');
+    let content;
+    if (visualEditor && !visualEditor.classList.contains('hidden')) {
+      content = buildPageHtmlFromSections();
+    } else {
+      content = document.getElementById('page-content').value;
+    }
+    await API.put(`/pages/${slug}`, { content });
+    clearDirty();
     toast('Sayfa güncellendi');
   } catch (err) { toast(err.message, 'error'); }
 }
@@ -2525,17 +3012,17 @@ async function savePage(slug) {
 route('/article-types', async (el) => {
   const types = await API.get('/article-types');
   el.innerHTML = `
-    <h1 class="text-2xl font-bold text-gray-900 mb-6">Makale Türleri</h1>
-    <div class="bg-white rounded-xl border overflow-hidden">
+    <h1 class="text-2xl font-bold text-gray-900 mb-6">Makale Türleri <span class="text-lg font-normal text-gray-400">(${types.length})</span></h1>
+    <div class="bg-white rounded-xl border overflow-hidden max-w-xl">
       <table class="w-full text-sm">
         <thead class="bg-gray-50"><tr>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">Tür</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">Makale Sayısi</th>
-          <th class="px-4 py-3"></th>
+          <th class="text-left px-3 py-2 font-medium text-gray-500">Tür</th>
+          <th class="text-right px-3 py-2 font-medium text-gray-500 w-16">Adet</th>
+          <th class="px-3 py-2 w-20"></th>
         </tr></thead>
         <tbody>${types.map((t) => `
-          <tr class="border-t"><td class="px-4 py-3 font-medium">${esc(t.name)}</td><td class="px-4 py-3">${t.count}</td>
-          <td class="px-4 py-3"><button onclick="renameType('${esc(t.name)}')" class="text-teal-600 text-xs hover:text-teal-800">Yeniden Adlandır</button></td></tr>`).join('')}</tbody>
+          <tr class="border-t hover:bg-gray-50"><td class="px-3 py-1.5 font-medium">${esc(t.name)}</td><td class="px-3 py-1.5 text-right tabular-nums text-gray-600">${t.count}</td>
+          <td class="px-3 py-1.5 text-right"><button onclick="renameType('${esc(t.name)}')" class="text-teal-600 text-xs hover:text-teal-800">Adlandır</button></td></tr>`).join('')}</tbody>
       </table>
     </div>`;
 });
@@ -2595,6 +3082,158 @@ async function syncNavFooter() {
     const updated = result.results.filter((r) => r.status === 'updated').length;
     toast(`${updated} sayfa güncellendi`);
   } catch (err) { toast(err.message, 'error'); }
+}
+
+// Article Statistics
+route('/article-stats', async (el) => {
+  const data = await API.get('/stats/top-articles?limit=20');
+  const t = data.totals;
+
+  function statTable(rows, highlightCol) {
+    if (!rows.length) return '<p class="text-sm text-gray-500 py-4">Henüz veri bulunmuyor.</p>';
+    return `
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead class="bg-gray-50"><tr>
+            <th class="text-left px-4 py-2.5 font-medium text-gray-500 w-10">#</th>
+            <th class="text-left px-4 py-2.5 font-medium text-gray-500">Makale</th>
+            <th class="text-right px-4 py-2.5 font-medium text-gray-500">Görüntülenme</th>
+            <th class="text-right px-4 py-2.5 font-medium text-gray-500">İndirme</th>
+            <th class="text-right px-4 py-2.5 font-medium text-gray-500">Atıf</th>
+          </tr></thead>
+          <tbody>${rows.map((a, i) => `
+            <tr class="border-t hover:bg-gray-50 cursor-pointer" onclick="navigate('#/articles/${a.id}')">
+              <td class="px-4 py-2.5 text-gray-400">${i + 1}</td>
+              <td class="px-4 py-2.5">
+                <div class="font-medium text-gray-900 line-clamp-2">${esc(a.title)}</div>
+                <div class="text-xs text-gray-400 mt-0.5">${esc(a.type || '')}${a.volume ? ' · Vol ' + a.volume : ''}${a.issue ? ', Issue ' + esc(a.issue) : ''}</div>
+              </td>
+              <td class="px-4 py-2.5 text-right tabular-nums ${highlightCol === 'views' ? 'font-bold text-teal-700' : 'text-gray-600'}">${(a.views || 0).toLocaleString()}</td>
+              <td class="px-4 py-2.5 text-right tabular-nums ${highlightCol === 'downloads' ? 'font-bold text-blue-700' : 'text-gray-600'}">${(a.downloads || 0).toLocaleString()}</td>
+              <td class="px-4 py-2.5 text-right tabular-nums ${highlightCol === 'citations' ? 'font-bold text-purple-700' : 'text-gray-600'}">${(a.citations || 0).toLocaleString()}</td>
+            </tr>`).join('')}
+          </tbody>
+        </table>
+      </div>`;
+  }
+
+  el.innerHTML = `
+    <div class="flex items-center justify-between mb-6">
+      <h1 class="text-2xl font-bold text-gray-900">Makale İstatistikleri</h1>
+      <button onclick="showMetricEditor()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Metrik Düzenle</button>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div class="bg-white rounded-xl border p-5">
+        <div class="text-3xl font-bold text-gray-800">${t.articles.toLocaleString()}</div>
+        <div class="text-sm text-gray-500 mt-1">Toplam Makale</div>
+      </div>
+      <div class="bg-white rounded-xl border p-5">
+        <div class="text-3xl font-bold text-teal-700">${t.views.toLocaleString()}</div>
+        <div class="text-sm text-gray-500 mt-1">Toplam Görüntülenme</div>
+      </div>
+      <div class="bg-white rounded-xl border p-5">
+        <div class="text-3xl font-bold text-blue-600">${t.downloads.toLocaleString()}</div>
+        <div class="text-sm text-gray-500 mt-1">Toplam İndirme</div>
+      </div>
+      <div class="bg-white rounded-xl border p-5">
+        <div class="text-3xl font-bold text-purple-600">${t.citations.toLocaleString()}</div>
+        <div class="text-sm text-gray-500 mt-1">Toplam Atıf</div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="bg-white rounded-xl border overflow-hidden">
+      <div class="flex border-b">
+        <button class="stat-tab-btn px-5 py-3 text-sm font-medium border-b-2 border-teal-600 text-teal-700" data-stab="viewed">En Çok Görüntülenen</button>
+        <button class="stat-tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-stab="downloaded">En Çok İndirilen</button>
+        <button class="stat-tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-stab="cited">En Çok Atıf Alan</button>
+      </div>
+      <div class="stat-tab-panel" data-stab="viewed">${statTable(data.topViewed, 'views')}</div>
+      <div class="stat-tab-panel hidden" data-stab="downloaded">${statTable(data.topDownloaded, 'downloads')}</div>
+      <div class="stat-tab-panel hidden" data-stab="cited">${statTable(data.topCited, 'citations')}</div>
+    </div>`;
+
+  // Tab switching
+  el.querySelectorAll('.stat-tab-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      el.querySelectorAll('.stat-tab-btn').forEach((b) => { b.classList.remove('border-teal-600', 'text-teal-700'); b.classList.add('border-transparent', 'text-gray-500'); });
+      btn.classList.remove('border-transparent', 'text-gray-500'); btn.classList.add('border-teal-600', 'text-teal-700');
+      el.querySelectorAll('.stat-tab-panel').forEach((p) => p.classList.add('hidden'));
+      el.querySelector(`.stat-tab-panel[data-stab="${btn.dataset.stab}"]`).classList.remove('hidden');
+    });
+  });
+});
+
+// Metric editor modal — search for an article and edit its views/downloads/citations
+async function showMetricEditor() {
+  const result = await modal('Metrik Düzenle', `
+    <div class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Makale Ara (ID veya başlık)</label>
+        <input id="me-search" type="text" placeholder="Makale ID veya başlığının bir kısmı..." class="w-full px-3 py-2 border rounded-lg text-sm">
+      </div>
+      <div id="me-results" class="max-h-48 overflow-y-auto border rounded-lg hidden"></div>
+      <div id="me-fields" class="hidden space-y-3">
+        <div class="text-sm font-medium text-gray-900" id="me-title"></div>
+        <input type="hidden" id="me-id">
+        <div class="grid grid-cols-3 gap-3">
+          <div><label class="block text-xs font-medium text-gray-600 mb-1">Görüntülenme</label><input id="me-views" type="number" min="0" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+          <div><label class="block text-xs font-medium text-gray-600 mb-1">İndirme</label><input id="me-downloads" type="number" min="0" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+          <div><label class="block text-xs font-medium text-gray-600 mb-1">Atıf</label><input id="me-citations" type="number" min="0" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+        </div>
+      </div>
+    </div>`, [{ label: 'Kaydet', action: 'save' }]);
+
+  if (result === 'save') {
+    const id = document.getElementById('me-id')?.value;
+    if (!id) { toast('Makale seçilmedi', 'error'); return; }
+    try {
+      await API.put(`/articles/${id}/metrics`, {
+        views: parseInt(document.getElementById('me-views').value) || 0,
+        downloads: parseInt(document.getElementById('me-downloads').value) || 0,
+        citations: parseInt(document.getElementById('me-citations').value) || 0,
+      });
+      toast('Metrikler güncellendi');
+      handleRoute(); // refresh the page
+    } catch (err) { toast(err.message, 'error'); }
+  }
+}
+
+// Wire up the metric editor search after modal renders
+const _meSearchObserver = new MutationObserver(() => {
+  const searchInput = document.getElementById('me-search');
+  if (!searchInput) return;
+  let allArticles = null;
+  searchInput.addEventListener('input', debounce(async () => {
+    const query = searchInput.value.trim().toLowerCase();
+    if (!query) { document.getElementById('me-results').classList.add('hidden'); return; }
+    if (!allArticles) {
+      try { const d = await API.get('/articles?page=1&limit=9999'); allArticles = d.articles || d; } catch { allArticles = []; }
+    }
+    const matches = allArticles.filter((a) => {
+      if (String(a.id) === query) return true;
+      return (a.title || '').toLowerCase().includes(query);
+    }).slice(0, 10);
+    const resultsEl = document.getElementById('me-results');
+    if (!matches.length) { resultsEl.innerHTML = '<div class="p-3 text-sm text-gray-500">Sonuç bulunamadı.</div>'; resultsEl.classList.remove('hidden'); return; }
+    resultsEl.innerHTML = matches.map((a) => `
+      <div class="px-3 py-2 hover:bg-gray-50 cursor-pointer border-b last:border-0 text-sm" onclick="selectMetricArticle(${a.id}, '${esc(a.title).replace(/'/g, "\\'")}', ${a.views || 0}, ${a.downloads || 0}, ${a.citations || 0})">
+        <span class="text-gray-400 mr-1">#${a.id}</span> ${esc(a.title)}
+      </div>`).join('');
+    resultsEl.classList.remove('hidden');
+  }, 300));
+});
+_meSearchObserver.observe(document.body, { childList: true, subtree: true });
+
+function selectMetricArticle(id, title, views, downloads, citations) {
+  document.getElementById('me-id').value = id;
+  document.getElementById('me-title').textContent = '#' + id + ' — ' + title;
+  document.getElementById('me-views').value = views;
+  document.getElementById('me-downloads').value = downloads;
+  document.getElementById('me-citations').value = citations;
+  document.getElementById('me-fields').classList.remove('hidden');
+  document.getElementById('me-results').classList.add('hidden');
 }
 
 // Social Media

@@ -16,6 +16,15 @@
     body { font-family: 'Inter', system-ui, sans-serif; }
     .sidebar-link { transition: all 0.15s; }
     .sidebar-link:hover { background-color: rgb(240 253 250); }
+    /* WYSIWYG editor styling */
+    [contenteditable] h2 { font-size: 1.25rem; font-weight: 600; margin: 0.75em 0 0.25em; }
+    [contenteditable] h3 { font-size: 1.1rem; font-weight: 600; margin: 0.75em 0 0.25em; }
+    [contenteditable] p  { margin: 0.5em 0; }
+    [contenteditable] ul { list-style: disc; padding-left: 1.5em; margin: 0.5em 0; }
+    [contenteditable] ol { list-style: decimal; padding-left: 1.5em; margin: 0.5em 0; }
+    [contenteditable] a  { color: #0d9488; text-decoration: underline; }
+    [contenteditable] strong, [contenteditable] b { font-weight: 600; }
+    [contenteditable] em, [contenteditable] i { font-style: italic; }
   </style>
 </head>
 <body class="bg-gray-100 min-h-screen">
@@ -72,6 +81,10 @@
         <a href="#/media" data-nav="#/media" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600">
           <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
           Medya
+        </a>
+        <a href="#/article-stats" data-nav="#/article-stats" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          İstatistikler
         </a>
 
         <div class="pt-3 mt-3 border-t">

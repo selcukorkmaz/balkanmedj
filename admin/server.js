@@ -209,6 +209,56 @@ app.get('/api/stats', (_req, res) => {
   }
 });
 
+// Top articles by views/downloads
+app.get('/api/stats/top-articles', (req, res) => {
+  try {
+    const limit = Math.min(Math.max(parseInt(req.query.limit) || 20, 1), 100);
+    const articles = dio.readArticles();
+
+    const topViewed = [...articles]
+      .sort((a, b) => (b.views || 0) - (a.views || 0))
+      .slice(0, limit)
+      .map((a) => ({ id: a.id, title: a.title, type: a.type, doi: a.doi, volume: a.volume, issue: a.issue, views: a.views || 0, downloads: a.downloads || 0, citations: a.citations || 0 }));
+
+    const topDownloaded = [...articles]
+      .sort((a, b) => (b.downloads || 0) - (a.downloads || 0))
+      .slice(0, limit)
+      .map((a) => ({ id: a.id, title: a.title, type: a.type, doi: a.doi, volume: a.volume, issue: a.issue, views: a.views || 0, downloads: a.downloads || 0, citations: a.citations || 0 }));
+
+    const topCited = [...articles]
+      .sort((a, b) => (b.citations || 0) - (a.citations || 0))
+      .slice(0, limit)
+      .map((a) => ({ id: a.id, title: a.title, type: a.type, doi: a.doi, volume: a.volume, issue: a.issue, views: a.views || 0, downloads: a.downloads || 0, citations: a.citations || 0 }));
+
+    const totalViews = articles.reduce((s, a) => s + (a.views || 0), 0);
+    const totalDownloads = articles.reduce((s, a) => s + (a.downloads || 0), 0);
+    const totalCitations = articles.reduce((s, a) => s + (a.citations || 0), 0);
+
+    res.json({ topViewed, topDownloaded, topCited, totals: { views: totalViews, downloads: totalDownloads, citations: totalCitations, articles: articles.length } });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Update article metrics (views/downloads/citations)
+app.put('/api/articles/:id/metrics', (req, res) => {
+  try {
+    const articles = dio.readArticles();
+    const idx = articles.findIndex((a) => a.id === Number(req.params.id));
+    if (idx === -1) return res.status(404).json({ error: 'Article not found' });
+
+    const { views, downloads, citations } = req.body;
+    if (views != null) articles[idx].views = Math.max(0, parseInt(views) || 0);
+    if (downloads != null) articles[idx].downloads = Math.max(0, parseInt(downloads) || 0);
+    if (citations != null) articles[idx].citations = Math.max(0, parseInt(citations) || 0);
+
+    dio.writeArticles(articles);
+    res.json({ id: articles[idx].id, views: articles[idx].views, downloads: articles[idx].downloads, citations: articles[idx].citations });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 app.post('/api/backup', (_req, res) => {
   try {
     const result = createBackup();
@@ -338,6 +388,43 @@ app.put('/api/articles/:id', (req, res) => {
     }
 
     res.json(articles[idx]);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Move articles to a different issue
+app.post('/api/articles/move', (req, res) => {
+  try {
+    const { articleIds, targetVolume, targetIssue } = req.body;
+    if (!Array.isArray(articleIds) || !articleIds.length) return res.status(400).json({ error: 'articleIds gerekli' });
+    if (targetVolume == null || !targetIssue) return res.status(400).json({ error: 'Hedef cilt ve sayı gerekli' });
+
+    createBackup();
+    const articles = dio.readArticles();
+    const vol = Number(targetVolume);
+    const iss = String(targetIssue);
+    const rebuildSet = new Set();
+    let moved = 0;
+
+    for (const id of articleIds) {
+      const idx = articles.findIndex((a) => a.id === Number(id));
+      if (idx === -1) continue;
+      const old = articles[idx];
+      if (old.volume && old.issue) rebuildSet.add(`${old.volume}|${old.issue}`);
+      articles[idx].volume = vol;
+      articles[idx].issue = iss;
+      moved++;
+    }
+
+    rebuildSet.add(`${vol}|${iss}`);
+    dio.writeArticles(articles);
+    for (const key of rebuildSet) {
+      const [v, i] = key.split('|');
+      dio.rebuildVolumeJson(Number(v), i, articles);
+    }
+
+    res.json({ moved, targetVolume: vol, targetIssue: iss });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1723,7 +1810,21 @@ app.get('/api/pages/:slug', (req, res) => {
     const mainMatch = html.match(/<main\s+id="main-content"[^>]*>([\s\S]*?)<\/main>/);
     const content = mainMatch ? mainMatch[1].trim() : '';
 
-    res.json({ ...page, content });
+    // Parse sections: find each <section> with an <h2> heading and prose content
+    const sections = [];
+    const sectionRegex = /<section[^>]*>([\s\S]*?)<\/section>/g;
+    let m;
+    while ((m = sectionRegex.exec(content)) !== null) {
+      const block = m[1];
+      const headingMatch = block.match(/<h2[^>]*>([\s\S]*?)<\/h2>/);
+      const heading = headingMatch ? headingMatch[1].replace(/<[^>]+>/g, '').trim() : '';
+      // Extract prose div content, or everything after the h2
+      const proseMatch = block.match(/<div[^>]*class="[^"]*prose[^"]*"[^>]*>([\s\S]*)<\/div>\s*$/);
+      const body = proseMatch ? proseMatch[1].trim() : (headingMatch ? block.slice(block.indexOf('</h2>') + 5).trim() : block.trim());
+      sections.push({ heading, body });
+    }
+
+    res.json({ ...page, content, sections });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
