@@ -1,6 +1,6 @@
 /**
  * Balkan Medical Journal — Author Metadata
- * Last updated: 2026-04-14
+ * Last updated: 2026-04-20
  */
 window.AUTHOR_METADATA = {
   "3": {
@@ -31006,6 +31006,113 @@ window.AUTHOR_METADATA = {
       "Xi Song": "0000-0001-5147-7683",
       "Yi-Tao Zhou": "0009-0001-9071-5434",
       "Ying-Yi Hu": "0009-0001-9749-2878"
+    }
+  },
+  "2851": {
+    "correspondingName": "Fangfang Huang",
+    "correspondingAffiliation": "Zhejiang Ocean University School of Food and Pharmacy  Zhejiang Provincial Technology Research Center of Marine Biomedical Products, Zhoushan, China",
+    "email": "gracegang@126.com",
+    "orcidByName": {
+      "Ke Xu": "0009-0003-5873-2298",
+      "Xiangyu Ren": "0000-0001-9434-4151",
+      "Hongjie Cao": "0000-0001-9845-1413",
+      "Tiantian Lyu": "0009-0004-0745-378X",
+      "Zuisu Yang": "0009-0008-0667-6104",
+      "Fangfang Huang": "0009-0004-3490-7986"
+    }
+  },
+  "2852": {
+    "correspondingName": "Suat Erdoğan",
+    "correspondingAffiliation": "Department of Medical Biology,  Trakya University Faculty of Medicine, Edirne, Türkiye",
+    "email": "suaterdogan@trakya.edu.tr",
+    "orcidByName": {
+      "Yeşim Hülya Uz": "0000-0002-0381-4590",
+      "Suat Erdoğan": "0000-0002-6823-6293"
+    }
+  },
+  "2853": {
+    "correspondingName": "Esra Eraslan Aydemir",
+    "correspondingAffiliation": "Department of Endocrinology and Metabolism  Ankara University Faculty of Medicine, Ankara, Türkiye",
+    "email": "esraeraslan91@gmail.com",
+    "orcidByName": {
+      "Esra Eraslan Aydemir": "0000-0003-2718-3081",
+      "Feride Özkara Akkuş": "0000-0001-7255-9995",
+      "Murat Faik Erdoğan": "0000-0002-0867-6393"
+    }
+  },
+  "2854": {
+    "correspondingName": "Yan Zhang",
+    "correspondingAffiliation": "Department of Rehabilitation Medicine,  Beijing Chest Hospital, Beijing, China",
+    "email": "n15853776810@hotmail.com",
+    "orcidByName": {
+      "Yanfu Wang": "0009-0007-5866-9531",
+      "Chong Wang": "0009-0001-7202-404X",
+      "Wei Li": "0009-0000-3815-1646",
+      "Xinyu Ren": "0009-0004-4968-5191",
+      "Yubo Peng": "0000-0002-1447-1351",
+      "Yan Zhang": "0009-0000-5322-3206"
+    }
+  },
+  "2855": {
+    "correspondingName": "Hao-Bin Zeng",
+    "correspondingAffiliation": "Department of Orthopedic,  Zhuhai Hospital, Guangdong Provincial Hospital of Traditional Chinese Medicine, Zhuhai, China",
+    "email": "Drzenghb@163.com",
+    "orcidByName": {
+      "Yu-Cong Zou": "0000-0001-8678-2012",
+      "Yong-Sheng Wu": "0009-0007-6532-3491",
+      "Ting Hu": "0009-0000-8233-0166",
+      "Hao-Bin Zeng": "0009-0002-4440-5360"
+    }
+  },
+  "2856": {
+    "correspondingName": "Fethi Gül",
+    "correspondingAffiliation": "Division of Critical Care Medicine,  Department of Anesthesiology and Reanimation, Marmara University Faculty of Medicine, İstanbul, Türkiye",
+    "email": "gulfethi@gmail.com",
+    "orcidByName": {
+      "Fethi Gül": "0000-0002-6426-6436",
+      "Damla Öztürk Efe": "0000-0001-9102-7548"
+    }
+  },
+  "2857": {
+    "correspondingName": "Mihalache Georgeta",
+    "correspondingAffiliation": "Nicolae Testemițanu State University of Medicine and Pharmacy,  Chisinau, Moldova",
+    "email": "mihalachegeorgete@yahoo.com",
+    "orcidByName": {
+      "Mihalache Georgeta": "0000-0002-9385-9994",
+      "Spatari Anastasia": "0009-0003-3261-7961",
+      "Chiriac Snejana": "0009-0009-2601-2687",
+      "Lefter Oxana": "0009-0006-7139-2971",
+      "Barcaru Dumitrița": "0009-0001-3819-554X"
+    }
+  },
+  "2858": {
+    "correspondingName": "Junjie Ning",
+    "correspondingAffiliation": "Clinic of Scientific Research,  First People’s Hospital of Zigong City, Zigong, China",
+    "email": "196425984@qq.com",
+    "orcidByName": {
+      "Limei Wen": "0009-0002-2758-8353",
+      "Li Huang": "0009-0001-3502-6601",
+      "Junjie Ning": "0000-0002-8555-5480"
+    }
+  },
+  "2859": {
+    "correspondingName": "Zafer Koçak",
+    "correspondingAffiliation": "Department of Radiation Oncology,  Trakya University Faculty of Medicine, Edirne, Türkiye",
+    "email": "zaferkocak12@gmail.com",
+    "orcidByName": {
+      "Yusuf Kavuzlu": "0000-0003-3651-2510",
+      "Serdar Solak": "0000-0002-9252-6151",
+      "Zafer Koçak": "0000-0003-1918-7795"
+    }
+  },
+  "2860": {
+    "correspondingName": "Ting Li",
+    "correspondingAffiliation": "Department of Neurology  Tianjin Neurological Institute, Tianjin Medical University General Hospital, Tianjin, China",
+    "email": "liting200401@tmu.edu.cn",
+    "orcidByName": {
+      "Ning Zhao": "0000-0002-7299-1742",
+      "Li Yang": "0000-0003-2716-3793",
+      "Ting Li": "0009-0004-5677-9882"
     }
   }
 };

@@ -1,9 +1,9 @@
 /**
  * Balkan Medical Journal — Homepage Data
- * Last updated: 2026-04-14
+ * Last updated: 2026-04-20
  */
 window.HOMEPAGE_DATA = {
-  "generatedAt": "2026-04-14",
+  "generatedAt": "2026-04-20",
   "currentIssue": {
     "volume": 43,
     "issue": "4",

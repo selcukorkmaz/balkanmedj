@@ -294,7 +294,7 @@ route('/', async (el) => {
           <a href="#/zip-import" class="block px-4 py-3 bg-teal-50 text-teal-700 rounded-lg hover:bg-teal-100 font-medium">Sayı Aktar (ZIP)</a>
           <a href="#/jats-import" class="block px-4 py-3 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 font-medium">JATS XML Aktar</a>
           <a href="#/issues" class="block px-4 py-3 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 font-medium">Sayı Oluştur</a>
-          <button onclick="doBackup()" class="w-full text-left px-4 py-3 bg-gray-50 text-gray-700 rounded-lg hover:bg-gray-100 font-medium">Yedek Al</button>
+          <button onclick="showBackupPanel()" class="w-full text-left px-4 py-3 bg-gray-50 text-gray-700 rounded-lg hover:bg-gray-100 font-medium">Yedekleme</button>
         </div>
       </div>
     </div>`;
@@ -304,7 +304,108 @@ async function doBackup() {
   try {
     const result = await API.post('/backup');
     toast(`Yedek alındı: ${result.fileCount} dosya`);
+    // If backup panel is open, refresh it
+    if (document.getElementById('backup-history')) showBackupPanel();
   } catch (err) { toast(err.message, 'error'); }
+}
+
+const BACKUP_FILE_LABELS = {
+  'articles.js': { label: 'Makaleler', desc: 'Tüm makale verileri (başlık, yazar, DOI, özet vb.)' },
+  'articles-in-press.js': { label: 'Baskıda Makaleler', desc: 'Henüz sayıya atanmamış kabul edilmiş makaleler' },
+  'archive-issues.js': { label: 'Arşiv / Sayılar', desc: 'Tüm cilt ve sayı tanımları' },
+  'editorial-board.js': { label: 'Yayın Kurulu', desc: 'Editör ve kurul üyeleri listesi' },
+  'editorial-extended.js': { label: 'Yayın Kurulu (Detay)', desc: 'Kurul üyelerinin detaylı bilgileri' },
+  'news.js': { label: 'Haberler', desc: 'Site haberleri ve duyuruları' },
+  'homepage-articles.js': { label: 'Anasayfa Makaleleri', desc: 'Anasayfada öne çıkan makaleler' },
+  'author-metadata.js': { label: 'Yazar Metadata', desc: 'Yazar bilgileri ve ORCID verileri' },
+};
+
+async function showBackupPanel() {
+  let backups = [];
+  try { backups = await API.get('/backups'); } catch {}
+
+  const mainContent = document.getElementById('main-content');
+  const existing = document.getElementById('backup-panel-overlay');
+  if (existing) existing.remove();
+
+  const overlay = document.createElement('div');
+  overlay.id = 'backup-panel-overlay';
+  overlay.className = 'fixed inset-0 z-50 flex items-center justify-center bg-black/40';
+  overlay.onclick = (e) => { if (e.target === overlay) overlay.remove(); };
+
+  const fileList = Object.entries(BACKUP_FILE_LABELS).map(([file, info]) =>
+    `<div class="flex items-start gap-3 py-2 ${file !== 'author-metadata.js' ? 'border-b border-gray-100' : ''}">
+      <div class="w-8 h-8 rounded bg-teal-50 flex items-center justify-center flex-shrink-0 mt-0.5">
+        <svg class="w-4 h-4 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      </div>
+      <div class="flex-1 min-w-0">
+        <div class="text-sm font-medium text-gray-900">${info.label}</div>
+        <div class="text-xs text-gray-500">${info.desc}</div>
+        <div class="text-xs text-gray-400 font-mono mt-0.5">${file}</div>
+      </div>
+    </div>`
+  ).join('');
+
+  const historyRows = backups.length > 0
+    ? backups.map((b, i) => {
+        const d = b.name.replace(/T/, ' ').replace(/-/g, (m, offset) => offset > 9 ? ':' : '-').slice(0, 19);
+        return `<div class="flex items-center justify-between py-2.5 ${i < backups.length - 1 ? 'border-b border-gray-100' : ''}">
+          <div>
+            <div class="text-sm text-gray-900">${d}</div>
+            <div class="text-xs text-gray-500">${b.fileCount} dosya yedeklendi</div>
+          </div>
+          <span class="text-xs px-2 py-0.5 rounded-full ${i === 0 ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-500'}">${i === 0 ? 'En son' : '#' + (i + 1)}</span>
+        </div>`;
+      }).join('')
+    : '<p class="text-sm text-gray-400 py-4 text-center">Henüz yedek alınmamış</p>';
+
+  overlay.innerHTML = `
+    <div class="bg-white rounded-2xl shadow-xl max-w-2xl w-full mx-4 max-h-[85vh] overflow-y-auto">
+      <div class="sticky top-0 bg-white border-b px-6 py-4 rounded-t-2xl flex items-center justify-between">
+        <h2 class="text-lg font-bold text-gray-900">Yedekleme</h2>
+        <button onclick="this.closest('#backup-panel-overlay').remove()" class="text-gray-400 hover:text-gray-700 p-1">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="px-6 py-5 space-y-6">
+        <!-- How it works -->
+        <div>
+          <h3 class="text-sm font-semibold text-gray-900 mb-2">Yedekleme Nasıl Çalışır?</h3>
+          <div class="bg-blue-50 rounded-lg p-4 text-sm text-blue-800 space-y-2">
+            <p>Yedekleme sistemi, sitenin tüm veri dosyalarının anlık bir kopyasını <code class="bg-blue-100 px-1 rounded text-xs">admin/backups/</code> klasörüne zaman damgalı bir alt klasör olarak kaydeder.</p>
+            <ul class="text-xs space-y-1 ml-4 list-disc">
+              <li>Her değişiklik yapıldığında (makale ekleme, silme, düzenleme vb.) sistem otomatik olarak yedek alır</li>
+              <li>Ayrıca "Yedek Al" butonuyla istediğiniz zaman manuel yedek oluşturabilirsiniz</li>
+              <li>En fazla <strong>10 yedek</strong> saklanır; eski yedekler otomatik silinir</li>
+              <li>Yedekler yalnızca veri dosyalarını içerir (PDF, görsel gibi büyük dosyalar dahil değildir)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- What gets backed up -->
+        <div>
+          <h3 class="text-sm font-semibold text-gray-900 mb-2">Yedeklenen Dosyalar (${Object.keys(BACKUP_FILE_LABELS).length} dosya)</h3>
+          <div class="bg-white border rounded-lg px-4 py-2">
+            ${fileList}
+          </div>
+        </div>
+
+        <!-- Backup history -->
+        <div id="backup-history">
+          <h3 class="text-sm font-semibold text-gray-900 mb-2">Yedek Geçmişi</h3>
+          <div class="bg-white border rounded-lg px-4 py-1">
+            ${historyRows}
+          </div>
+        </div>
+      </div>
+
+      <div class="sticky bottom-0 bg-gray-50 border-t px-6 py-4 rounded-b-2xl flex justify-between items-center">
+        <p class="text-xs text-gray-400">Yedek konumu: <code class="bg-gray-200 px-1 rounded">admin/backups/</code></p>
+        <button onclick="doBackup()" class="px-5 py-2.5 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Şimdi Yedek Al</button>
+      </div>
+    </div>`;
+
+  document.body.appendChild(overlay);
 }
 
 // Articles list
@@ -1842,6 +1943,7 @@ route('/articles-in-press', async (el) => {
     <div class="flex items-center justify-between mb-6">
       <h1 class="text-2xl font-bold text-gray-900">Baskıda Makaleler <span class="text-gray-400 text-lg font-normal">(${aip.length})</span></h1>
       <div class="flex gap-2">
+        <a href="#/articles-in-press/new" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm font-medium">+ Manuel Ekle</a>
         <button onclick="showAipImport()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">JATS XML Aktar</button>
         ${aip.length ? `<button onclick="publishSelectedAip()" class="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 text-sm font-medium">Seçilenleri Yayınla</button>` : ''}
       </div>
@@ -1885,10 +1987,11 @@ route('/articles-in-press', async (el) => {
           <tr class="border-t hover:bg-gray-50">
             <td class="px-4 py-3"><input type="checkbox" class="aip-check rounded" data-id="${a.id}"></td>
             <td class="px-4 py-3 text-gray-400">${a.id}</td>
-            <td class="px-4 py-3 max-w-sm truncate">${esc(a.title)}</td>
+            <td class="px-4 py-3 max-w-sm truncate"><a href="#/articles-in-press/${a.id}/edit" class="text-teal-700 hover:underline">${esc(a.title)}</a></td>
             <td class="px-4 py-3"><span class="px-2 py-0.5 bg-gray-100 rounded text-xs">${esc(a.type)}</span></td>
             <td class="px-4 py-3 text-xs text-gray-400">${esc(a.doi || '-')}</td>
-            <td class="px-4 py-3">
+            <td class="px-4 py-3 text-right">
+              <a href="#/articles-in-press/${a.id}/edit" class="text-blue-600 hover:text-blue-800 text-xs mr-3">Düzenle</a>
               <button class="text-red-500 hover:text-red-700 text-xs" onclick="deleteAip(${a.id})">Sil</button>
             </td>
           </tr>`).join('')}</tbody>
@@ -2003,6 +2106,174 @@ async function deleteAip(id) {
     await API.del(`/articles-in-press/${id}`);
     toast('Makale silindi');
     handleRoute();
+  } catch (err) { toast(err.message, 'error'); }
+}
+
+// --- Manuel AIP (baskıda makale) ekleme/düzenleme ---
+route('/articles-in-press/new', (el) => renderAipForm(el, null));
+route('/articles-in-press/:id/edit', async (el, { id }) => {
+  try {
+    const article = await API.get(`/articles-in-press/${id}`);
+    renderAipForm(el, article);
+  } catch (err) {
+    el.innerHTML = `<div class="bg-red-50 text-red-700 p-4 rounded-lg">${esc(err.message)}</div>`;
+  }
+});
+
+function renderAipForm(el, article) {
+  const isNew = !article;
+  const a = article || { id: '', type: '', title: '', authors: [], abstract: '', abstractHtml: '', keywords: [], doi: '', received: '', accepted: '', pmid: '', pdfUrl: '' };
+
+  el.innerHTML = `
+    <div class="flex items-center justify-between mb-6">
+      <h1 class="text-2xl font-bold text-gray-900">${isNew ? 'Baskıda Yeni Makale (Manuel)' : `Baskıda Makale #${a.id}`}</h1>
+      <div class="flex gap-2">
+        <a href="#/articles-in-press" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm">Geri</a>
+        <button onclick="saveAip(${isNew ? 'true' : 'false'})" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet<span data-dirty-indicator class="text-amber-200"></span></button>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl border p-6 space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div><label class="block text-sm font-medium text-gray-700 mb-1">Tür <span class="text-red-500">*</span></label>
+          <input id="aipf-type" value="${esc(a.type)}" class="w-full px-3 py-2 border rounded-lg text-sm" list="aipf-type-list">
+          <datalist id="aipf-type-list"></datalist>
+        </div>
+        <div><label class="block text-sm font-medium text-gray-700 mb-1">DOI</label>
+          <input id="aipf-doi" value="${esc(a.doi)}" class="w-full px-3 py-2 border rounded-lg text-sm">
+        </div>
+      </div>
+      <div><label class="block text-sm font-medium text-gray-700 mb-1">Başlık <span class="text-red-500">*</span></label>
+        <input id="aipf-title" value="${esc(a.title)}" class="w-full px-3 py-2 border rounded-lg text-sm">
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div><label class="block text-sm font-medium text-gray-700 mb-1">Alındığı Tarih</label>
+          <input id="aipf-received" type="date" value="${a.received || ''}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+        <div><label class="block text-sm font-medium text-gray-700 mb-1">Kabul Tarihi</label>
+          <input id="aipf-accepted" type="date" value="${a.accepted || ''}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+        <div><label class="block text-sm font-medium text-gray-700 mb-1">PMID</label>
+          <input id="aipf-pmid" value="${esc(a.pmid || '')}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+      </div>
+
+      <div>
+        <div class="flex items-center justify-between mb-2">
+          <label class="block text-sm font-medium text-gray-700">Yazarlar</label>
+          <button type="button" onclick="addAipAuthor()" class="text-xs px-3 py-1.5 bg-blue-50 text-blue-700 rounded hover:bg-blue-100">+ Yazar Ekle</button>
+        </div>
+        <div id="aipf-authors" class="space-y-2">${(a.authors || []).map((au) => aipAuthorRow(au)).join('')}</div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Özet (HTML destekli)</label>
+        <textarea id="aipf-abstractHtml" rows="8" class="w-full px-3 py-2 border rounded-lg text-sm font-mono">${esc(a.abstractHtml || a.abstract || '')}</textarea>
+      </div>
+
+      <div><label class="block text-sm font-medium text-gray-700 mb-1">Anahtar Kelimeler (virgül ile)</label>
+        <input id="aipf-keywords" value="${esc((a.keywords || []).join(', '))}" class="w-full px-3 py-2 border rounded-lg text-sm">
+      </div>
+
+      ${!isNew ? `
+      <div class="border-t pt-4">
+        <h3 class="text-sm font-semibold text-gray-700 mb-2">PDF</h3>
+        ${a.pdfUrl ? `<div class="mb-2 text-sm text-green-600">Mevcut: <code class="text-xs bg-gray-100 px-2 py-1 rounded">${esc(a.pdfUrl)}</code></div>` : '<p class="text-sm text-amber-600 mb-2">PDF yüklenmemiş</p>'}
+        <label class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm cursor-pointer inline-block">
+          PDF Yükle <input id="aipf-pdf-file" type="file" accept=".pdf" class="hidden">
+        </label>
+        <div id="aipf-pdf-results" class="mt-2"></div>
+      </div>` : '<p class="text-xs text-gray-500 border-t pt-4">Makale kaydedildikten sonra PDF yükleyebilirsiniz.</p>'}
+    </div>`;
+
+  API.get('/article-types').then((types) => {
+    const dl = document.getElementById('aipf-type-list');
+    if (dl) dl.innerHTML = types.map((t) => `<option value="${esc(t.name)}">`).join('');
+  }).catch(() => {});
+
+  if (!isNew) {
+    const pdfInput = document.getElementById('aipf-pdf-file');
+    if (pdfInput) {
+      pdfInput.addEventListener('change', async () => {
+        if (!pdfInput.files[0]) return;
+        const file = pdfInput.files[0];
+        const prog = renderUploadProgress('aipf-pdf-results', [file], 'PDF yükleniyor');
+        try {
+          const result = await API.uploadFileWithProgress('/media/upload/pdf', file, 'pdf', { articleId: String(a.id) }, prog.update);
+          prog.complete(`<div class="bg-green-50 border border-green-200 text-green-700 p-3 rounded-lg text-sm">PDF yüklendi: <code>${esc(result.pdfUrl || '')}</code></div>`);
+          toast('PDF yüklendi');
+          await API.put(`/articles-in-press/${a.id}`, { pdfUrl: result.pdfUrl, localPdfUrl: result.pdfUrl });
+          handleRoute();
+        } catch (err) {
+          prog.fail(err.message);
+          toast(err.message, 'error');
+        }
+      });
+    }
+  }
+
+  clearDirty();
+  el.addEventListener('input', markDirty);
+}
+
+function aipAuthorRow(au = {}) {
+  return `<div class="aipf-author-row flex gap-2 items-start p-2 bg-gray-50 rounded-lg">
+    <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-2">
+      <input class="aipf-au-name px-2 py-1.5 border rounded text-sm" placeholder="Ad Soyad" value="${esc(au.name || '')}">
+      <input class="aipf-au-aff px-2 py-1.5 border rounded text-sm" placeholder="Kurum" value="${esc(au.affiliation || '')}">
+      <input class="aipf-au-orcid px-2 py-1.5 border rounded text-sm" placeholder="ORCID" value="${esc(au.orcid || '')}">
+    </div>
+    <button type="button" onclick="this.closest('.aipf-author-row').remove(); markDirty();" class="text-red-400 hover:text-red-600 text-lg px-1">&times;</button>
+  </div>`;
+}
+
+function addAipAuthor() {
+  const list = document.getElementById('aipf-authors');
+  if (!list) return;
+  list.insertAdjacentHTML('beforeend', aipAuthorRow());
+  markDirty();
+}
+
+async function saveAip(isNew) {
+  const getVal = (id) => document.getElementById(id)?.value?.trim() || '';
+  const authors = [];
+  document.querySelectorAll('.aipf-author-row').forEach((row) => {
+    const name = row.querySelector('.aipf-au-name').value.trim();
+    const affiliation = row.querySelector('.aipf-au-aff').value.trim();
+    const orcid = row.querySelector('.aipf-au-orcid').value.trim();
+    if (!name && !affiliation && !orcid) return;
+    authors.push({ name, affiliation, orcid });
+  });
+
+  const abstractHtml = getVal('aipf-abstractHtml');
+  const abstract = abstractHtml.replace(/<[^>]+>/g, '').trim();
+
+  const data = {
+    type: getVal('aipf-type'),
+    title: getVal('aipf-title'),
+    doi: getVal('aipf-doi'),
+    received: getVal('aipf-received'),
+    accepted: getVal('aipf-accepted'),
+    pmid: getVal('aipf-pmid'),
+    abstractHtml,
+    abstract,
+    previewText: abstract.slice(0, 360),
+    keywords: getVal('aipf-keywords').split(',').map((k) => k.trim()).filter(Boolean),
+    authors,
+  };
+
+  if (!data.title) { toast('Başlık zorunludur', 'error'); return; }
+  if (!data.type) { toast('Makale türü zorunludur', 'error'); return; }
+
+  try {
+    if (isNew) {
+      const result = await API.post('/articles-in-press', data);
+      clearDirty();
+      toast('Baskıda makale oluşturuldu');
+      navigate(`#/articles-in-press/${result.id}/edit`);
+    } else {
+      const id = window.location.hash.match(/#\/articles-in-press\/(\d+)\/edit/)?.[1];
+      await API.put(`/articles-in-press/${id}`, data);
+      clearDirty();
+      toast('Baskıda makale güncellendi');
+    }
   } catch (err) { toast(err.message, 'error'); }
 }
 
@@ -2850,15 +3121,121 @@ async function saveEditorial() {
 route('/pages', async (el) => {
   const pages = await API.get('/pages');
   el.innerHTML = `
-    <h1 class="text-2xl font-bold text-gray-900 mb-6">Sayfalar</h1>
+    <div class="flex items-center justify-between mb-6">
+      <h1 class="text-2xl font-bold text-gray-900">Sayfalar</h1>
+      <button onclick="showNewPageModal()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">+ Yeni Sayfa</button>
+    </div>
     <div class="bg-white rounded-xl border divide-y">
       ${pages.map((p) => `
-        <a href="#/pages/${p.slug}" class="flex items-center justify-between px-5 py-4 hover:bg-gray-50">
-          <div><span class="font-medium text-gray-900">${esc(p.title)}</span><span class="text-sm text-gray-400 ml-2">${esc(p.file)}</span></div>
-          <svg class="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-        </a>`).join('')}
+        <div class="flex items-center justify-between px-5 py-4 hover:bg-gray-50">
+          <a href="#/pages/${p.slug}" class="flex-1 flex items-center min-w-0">
+            <span class="font-medium text-gray-900">${esc(p.title)}</span>
+            <span class="text-sm text-gray-400 ml-2">${esc(p.file)}</span>
+            ${p.custom ? '<span class="ml-2 text-xs px-2 py-0.5 bg-teal-50 text-teal-700 rounded-full">Özel</span>' : ''}
+          </a>
+          <div class="flex items-center gap-2 ml-4">
+            ${p.custom ? `<button onclick="deleteCustomPage('${p.slug}', '${esc(p.title).replace(/'/g, "\\'")}')" class="text-red-500 hover:text-red-700 text-sm px-2 py-1" title="Sil">Sil</button>` : ''}
+            <a href="#/pages/${p.slug}" class="text-gray-400 hover:text-gray-600">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>`).join('')}
     </div>`;
 });
+
+function showNewPageModal() {
+  const existing = document.getElementById('new-page-overlay');
+  if (existing) existing.remove();
+
+  const overlay = document.createElement('div');
+  overlay.id = 'new-page-overlay';
+  overlay.className = 'fixed inset-0 z-50 flex items-center justify-center bg-black/40';
+  overlay.onclick = (e) => { if (e.target === overlay) overlay.remove(); };
+
+  overlay.innerHTML = `
+    <div class="bg-white rounded-2xl shadow-xl max-w-lg w-full mx-4">
+      <div class="border-b px-6 py-4 flex items-center justify-between">
+        <h2 class="text-lg font-bold text-gray-900">Yeni Sayfa Oluştur</h2>
+        <button onclick="this.closest('#new-page-overlay').remove()" class="text-gray-400 hover:text-gray-700 p-1">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="px-6 py-5 space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Başlık <span class="text-red-500">*</span></label>
+          <input id="np-title" type="text" placeholder="Örn: Open Access" class="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Slug (URL) <span class="text-red-500">*</span></label>
+          <div class="flex items-center">
+            <input id="np-slug" type="text" placeholder="open-access" class="flex-1 px-3 py-2 border rounded-lg text-sm font-mono focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500">
+            <span class="text-sm text-gray-400 ml-2">.html</span>
+          </div>
+          <p class="text-xs text-gray-500 mt-1">Yalnızca küçük harf, rakam ve tire (-). Başlıktan otomatik oluşturulur.</p>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">SEO Açıklaması</label>
+          <textarea id="np-description" rows="2" placeholder="Arama motorları ve sosyal medyada görünecek kısa açıklama" class="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"></textarea>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-3 text-xs text-blue-800">
+          <strong>Not:</strong> Yeni sayfa nav/footer ile birlikte oluşturulur. Ancak menü bağlantısını eklemek için <em>Nav & Footer</em> bölümünden sayfayı manuel eklemeniz gerekir.
+        </div>
+      </div>
+      <div class="bg-gray-50 border-t px-6 py-4 rounded-b-2xl flex justify-end gap-2">
+        <button onclick="this.closest('#new-page-overlay').remove()" class="px-4 py-2 bg-white border text-gray-700 rounded-lg hover:bg-gray-50 text-sm">İptal</button>
+        <button onclick="submitNewPage()" class="px-5 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Oluştur</button>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+
+  // Auto-generate slug from title
+  const titleEl = document.getElementById('np-title');
+  const slugEl = document.getElementById('np-slug');
+  let slugEdited = false;
+  slugEl.addEventListener('input', () => { slugEdited = true; });
+  titleEl.addEventListener('input', () => {
+    if (!slugEdited) {
+      slugEl.value = titleEl.value
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '');
+    }
+  });
+  setTimeout(() => titleEl.focus(), 50);
+}
+
+async function submitNewPage() {
+  const title = document.getElementById('np-title').value.trim();
+  const slug = document.getElementById('np-slug').value.trim();
+  const description = document.getElementById('np-description').value.trim();
+
+  if (!title) { toast('Başlık gerekli', 'error'); return; }
+  if (!slug) { toast('Slug gerekli', 'error'); return; }
+
+  try {
+    const result = await API.post('/pages', { title, slug, description });
+    toast(`"${result.title}" sayfası oluşturuldu`);
+    document.getElementById('new-page-overlay')?.remove();
+    location.hash = `#/pages/${result.slug}`;
+  } catch (err) {
+    toast(err.message, 'error');
+  }
+}
+
+async function deleteCustomPage(slug, title) {
+  if (!await confirmAction(`"${title}" sayfası ve HTML dosyası silinecek. Bu işlem geri alınamaz. Devam?`)) return;
+  try {
+    await API.del(`/pages/${slug}`);
+    toast('Sayfa silindi');
+    if (location.hash !== '#/pages') location.hash = '#/pages';
+    else handleRoute();
+  } catch (err) {
+    toast(err.message, 'error');
+  }
+}
 
 route('/pages/:slug', async (el, { slug }) => {
   const page = await API.get(`/pages/${slug}`);

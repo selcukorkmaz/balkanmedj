@@ -1,8 +1,18 @@
 /**
  * Balkan Medical Journal — News & Announcements
- * Last updated: 2026-04-14
+ * Last updated: 2026-04-20
  */
 window.NEWS = [
+  {
+    "id": 166,
+    "featured": true,
+    "title": "111",
+    "excerpt": "1111",
+    "content": "11111",
+    "category": "News",
+    "date": "2026-04-03",
+    "image": "images/171-173-f1.jpg"
+  },
   {
     "sourceUrl": "https://balkanmedicaljournal.org/news.php?id=165",
     "category": "News",

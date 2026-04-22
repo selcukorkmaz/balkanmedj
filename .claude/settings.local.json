@@ -73,7 +73,11 @@
       "Bash(unzip -l \"imports/processed/2026-04-14T08-52-14_Balkan-Medical-Journal-2026-43-4.zip\")",
       "Bash(unzip -p \"imports/processed/2026-04-14T08-52-14_Balkan-Medical-Journal-2026-43-4.zip\" \"BalkanMedJ-43-4-212.xml\")",
       "Bash(rm test_one.xml)",
-      "Bash(taskkill //F //IM node.exe)"
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(echo \"started, pid=$!\" sleep 2 cat /tmp/admin-server.log)",
+      "Bash(netstat -ano)",
+      "Bash(\"C:/Users/Selçuk/Documents/GitHub/balkanmedj/admin/ngrok.exe\" version *)",
+      "Bash(C:/Users/Selçuk/Documents/GitHub/balkanmedj/admin/ngrok.exe config *)"
     ]
   }
 }

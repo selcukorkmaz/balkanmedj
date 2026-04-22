@@ -1,8 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 const { ROOT } = require('./data-io');
+const { getAllHtmlFiles } = require('./page-template');
 
-const HTML_FILES = [
+const BUILTIN_HTML_FILES = [
   'index.html', 'about.html', 'editorial-board.html', 'current-issue.html',
   'articles-in-press.html', 'archive.html', 'article.html', 'for-authors.html',
   'for-reviewers.html', 'policies.html', 'news.html', 'news-article.html',
@@ -66,6 +67,7 @@ function syncSocialMedia(socialUrls) {
   const replacement = blockHtml || '';
 
   const results = [];
+  const HTML_FILES = getAllHtmlFiles(BUILTIN_HTML_FILES);
   for (const file of HTML_FILES) {
     const filePath = path.join(ROOT, file);
     if (!fs.existsSync(filePath)) {

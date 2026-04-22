@@ -14,6 +14,7 @@ const dio = require('./lib/data-io');
 const { createBackup, listBackups } = require('./lib/backup');
 const { parseJatsXml } = require('./lib/jats-parser');
 const zipImporter = require('./lib/zip-importer');
+const pageTpl = require('./lib/page-template');
 
 const app = express();
 const PORT = Number(process.env.PORT) || 3000;
@@ -577,6 +578,17 @@ app.delete('/api/articles/:id/link/:targetId', (req, res) => {
 app.get('/api/articles-in-press', (_req, res) => {
   try {
     res.json(dio.readArticlesInPress());
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.get('/api/articles-in-press/:id', (req, res) => {
+  try {
+    const aip = dio.readArticlesInPress();
+    const art = aip.find((a) => a.id === Number(req.params.id));
+    if (!art) return res.status(404).json({ error: 'Not found' });
+    res.json(art);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1784,7 +1796,7 @@ app.get('/api/media/missing-pdfs', (_req, res) => {
 //  PAGES (content editing)
 // ===========================================================================
 
-const EDITABLE_PAGES = [
+const BUILTIN_PAGES = [
   { slug: 'about', file: 'about.html', title: 'About the Journal' },
   { slug: 'for-authors', file: 'for-authors.html', title: 'For Authors' },
   { slug: 'for-reviewers', file: 'for-reviewers.html', title: 'For Reviewers' },
@@ -1794,13 +1806,30 @@ const EDITABLE_PAGES = [
   { slug: 'journal-metrics', file: 'journal-metrics.html', title: 'Journal Metrics' },
 ];
 
+function listAllPages() {
+  const builtins = BUILTIN_PAGES.map((p) => ({ ...p, custom: false }));
+  const customs = pageTpl.readCustomPages().map((p) => ({
+    slug: p.slug,
+    file: p.file,
+    title: p.title,
+    description: p.description,
+    createdAt: p.createdAt,
+    custom: true,
+  }));
+  return [...builtins, ...customs];
+}
+
+function findPage(slug) {
+  return listAllPages().find((p) => p.slug === slug);
+}
+
 app.get('/api/pages', (_req, res) => {
-  res.json(EDITABLE_PAGES);
+  res.json(listAllPages());
 });
 
 app.get('/api/pages/:slug', (req, res) => {
   try {
-    const page = EDITABLE_PAGES.find((p) => p.slug === req.params.slug);
+    const page = findPage(req.params.slug);
     if (!page) return res.status(404).json({ error: 'Page not found' });
 
     const filePath = path.join(dio.ROOT, page.file);
@@ -1833,7 +1862,7 @@ app.get('/api/pages/:slug', (req, res) => {
 app.put('/api/pages/:slug', (req, res) => {
   try {
     createBackup();
-    const page = EDITABLE_PAGES.find((p) => p.slug === req.params.slug);
+    const page = findPage(req.params.slug);
     if (!page) return res.status(404).json({ error: 'Page not found' });
 
     const filePath = path.join(dio.ROOT, page.file);
@@ -1847,6 +1876,63 @@ app.put('/api/pages/:slug', (req, res) => {
 
     fs.writeFileSync(filePath, html, 'utf-8');
     res.json({ saved: true, slug: page.slug });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.post('/api/pages', (req, res) => {
+  try {
+    const title = String(req.body.title || '').trim();
+    const description = String(req.body.description || '').trim();
+    const rawSlug = req.body.slug ? String(req.body.slug) : title;
+    const slug = pageTpl.normalizeSlug(rawSlug);
+
+    if (!title) return res.status(400).json({ error: 'Başlık gerekli' });
+    const slugError = pageTpl.validateSlug(slug);
+    if (slugError) return res.status(400).json({ error: slugError });
+
+    const existing = listAllPages().find((p) => p.slug === slug);
+    if (existing) return res.status(409).json({ error: 'Bu slug zaten kullanılıyor' });
+
+    const file = `${slug}.html`;
+    const filePath = path.join(dio.ROOT, file);
+    if (fs.existsSync(filePath)) {
+      return res.status(409).json({ error: 'Aynı isimde bir HTML dosyası zaten var' });
+    }
+
+    createBackup();
+    const html = pageTpl.createPageHtml({ slug, title, description });
+    fs.writeFileSync(filePath, html, 'utf-8');
+
+    const pages = pageTpl.readCustomPages();
+    pages.push({ slug, file, title, description, createdAt: new Date().toISOString() });
+    pageTpl.writeCustomPages(pages);
+
+    res.json({ created: true, slug, file, title });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.delete('/api/pages/:slug', (req, res) => {
+  try {
+    const slug = req.params.slug;
+    const pages = pageTpl.readCustomPages();
+    const idx = pages.findIndex((p) => p.slug === slug);
+    if (idx === -1) {
+      return res.status(404).json({ error: 'Özel sayfa bulunamadı (sistem sayfaları silinemez)' });
+    }
+
+    createBackup();
+    const page = pages[idx];
+    const filePath = path.join(dio.ROOT, page.file);
+    if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
+
+    pages.splice(idx, 1);
+    pageTpl.writeCustomPages(pages);
+
+    res.json({ deleted: true, slug });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
