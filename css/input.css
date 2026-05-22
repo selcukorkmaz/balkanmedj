@@ -260,6 +260,84 @@ h1, h2, h3, h4 {
   text-align: left;
 }
 
+/* Figure captions: only the "FIG. N." label should be bold. Defensively force
+   normal weight on the surrounding text so accidental <b>/<strong> wrappers
+   (e.g. content pasted from a bold heading) don't bleed into the caption. */
+.article-body .article-figure > p,
+.article-body .article-figure > figcaption,
+.article-body .article-table-wrap > p {
+  font-weight: 400;
+  font-style: normal;
+}
+.article-body .article-figure > p strong,
+.article-body .article-figure > figcaption strong,
+.article-body .article-table-wrap > p.table-label strong {
+  font-weight: 700;
+}
+
+/* Figure/Table size variants — controlled by data-size attribute set in the
+   admin's "Figür Ekle" dialog. The block stays centered (margin: auto) and
+   its inner <img> follows via max-width:100%. "full" removes the padding/
+   border so it can run edge-to-edge in the column.
+   Selectors include both the live site (.article-body) AND the admin
+   contenteditable editors ([id$="-visual"]) so the editor preview matches. */
+.article-body .article-figure[data-size="small"],
+.article-body .article-table-wrap[data-size="small"],
+[id$="-visual"] .article-figure[data-size="small"],
+[id$="-visual"] .article-table-wrap[data-size="small"] {
+  max-width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-body .article-figure[data-size="medium"],
+.article-body .article-table-wrap[data-size="medium"],
+[id$="-visual"] .article-figure[data-size="medium"],
+[id$="-visual"] .article-table-wrap[data-size="medium"] {
+  max-width: 72%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-body .article-figure[data-size="large"],
+.article-body .article-table-wrap[data-size="large"],
+[id$="-visual"] .article-figure[data-size="large"],
+[id$="-visual"] .article-table-wrap[data-size="large"] {
+  max-width: 100%;
+}
+.article-body .article-figure[data-size="full"],
+.article-body .article-table-wrap[data-size="full"],
+[id$="-visual"] .article-figure[data-size="full"],
+[id$="-visual"] .article-table-wrap[data-size="full"] {
+  max-width: 100%;
+  padding: 0.5rem 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+}
+@media (max-width: 47.99rem) {
+  /* On narrow screens, treat small/medium as readable widths (≥60%) so the
+     figure doesn't shrink to a thumbnail on phones. */
+  .article-body .article-figure[data-size="small"],
+  .article-body .article-table-wrap[data-size="small"],
+  [id$="-visual"] .article-figure[data-size="small"],
+  [id$="-visual"] .article-table-wrap[data-size="small"] {
+    max-width: 80%;
+  }
+  .article-body .article-figure[data-size="medium"],
+  .article-body .article-table-wrap[data-size="medium"],
+  [id$="-visual"] .article-figure[data-size="medium"],
+  [id$="-visual"] .article-table-wrap[data-size="medium"] {
+    max-width: 100%;
+  }
+}
+
+.article-body figcaption .figure-source {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #9CA3AF;
+}
+
 .article-body table {
   font-family: 'Inter', system-ui, sans-serif; /* tables stay sans-serif for data clarity */
   width: 100%;

@@ -1200,6 +1200,202 @@
         margin-left: 2px;
         color: #c2410c;
       }
+
+      /* --------------------------------------------------------------------
+         Reference citation popover — opens when a reader clicks a [N] in the
+         body. Modern journals (Nature, eLife, Cell, NEJM) show the citation
+         inline as a card with the bibliographic entry plus quick links to
+         DOI / PubMed / Google Scholar, sparing the reader a long scroll to
+         the bottom and back. Keyboard-accessible: ESC closes, focus is
+         trapped only loosely (close button + action links).
+         -------------------------------------------------------------------- */
+      .ref-popover {
+        position: absolute;
+        z-index: 70;
+        width: 420px;
+        max-width: calc(100vw - 32px);
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        box-shadow: 0 18px 38px rgba(15, 23, 42, 0.18), 0 4px 10px rgba(15, 23, 42, 0.08);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(6px);
+        transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s ease;
+        pointer-events: none;
+      }
+      .ref-popover.is-visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+      .ref-popover-arrow {
+        position: absolute;
+        top: -7px;
+        left: 50%;
+        margin-left: -7px;
+        width: 14px;
+        height: 14px;
+        background: #ffffff;
+        border-left: 1px solid #e5e7eb;
+        border-top: 1px solid #e5e7eb;
+        transform: rotate(45deg);
+      }
+      .ref-popover[data-placement="top"] .ref-popover-arrow {
+        top: auto;
+        bottom: -7px;
+        border-left: 0;
+        border-top: 0;
+        border-right: 1px solid #e5e7eb;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .ref-popover-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+        padding: 0.7rem 0.95rem 0.5rem;
+        border-bottom: 1px solid #f1f5f9;
+      }
+      .ref-popover-eyebrow {
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #0f766e;
+      }
+      .ref-popover-close {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        margin: -4px -6px -4px 0;
+        border: 0;
+        border-radius: 6px;
+        background: transparent;
+        color: #6b7280;
+        cursor: pointer;
+        transition: background 0.12s ease, color 0.12s ease;
+      }
+      .ref-popover-close:hover,
+      .ref-popover-close:focus-visible {
+        background: #f3f4f6;
+        color: #111827;
+        outline: none;
+      }
+      .ref-popover-body {
+        padding: 0.85rem 0.95rem 0.6rem;
+        max-height: 260px;
+        overflow-y: auto;
+      }
+      .ref-popover-citation {
+        margin: 0;
+        font-size: 0.875rem;
+        line-height: 1.55;
+        color: #1f2937;
+      }
+      .ref-popover-citation a {
+        color: #0f766e;
+        text-decoration: underline;
+        text-decoration-color: rgba(15, 118, 110, 0.35);
+        text-underline-offset: 2px;
+      }
+      .ref-popover-citation a:hover {
+        text-decoration-color: currentColor;
+      }
+      .ref-popover-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        padding: 0.55rem 0.95rem 0.85rem;
+        border-top: 1px solid #f1f5f9;
+        background: #fafbfd;
+        border-radius: 0 0 12px 12px;
+      }
+      .ref-popover-action {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.32rem 0.6rem;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        font-size: 0.76rem;
+        font-weight: 600;
+        color: #374151;
+        background: #ffffff;
+        text-decoration: none;
+        transition: background 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+      }
+      .ref-popover-action:hover,
+      .ref-popover-action:focus-visible {
+        background: #f9fafb;
+        border-color: #9ca3af;
+        color: #111827;
+        outline: none;
+      }
+      .ref-popover-action--primary {
+        background: #0f766e;
+        border-color: #0f766e;
+        color: #ffffff;
+      }
+      .ref-popover-action--primary:hover,
+      .ref-popover-action--primary:focus-visible {
+        background: #115e59;
+        border-color: #115e59;
+        color: #ffffff;
+      }
+      .ref-popover-action--ghost {
+        margin-left: auto;
+        border-color: transparent;
+        color: #6b7280;
+        background: transparent;
+      }
+      .ref-popover-action--ghost:hover,
+      .ref-popover-action--ghost:focus-visible {
+        background: #f3f4f6;
+        color: #111827;
+      }
+      .ref-popover-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(15, 23, 42, 0.32);
+        z-index: 69;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.18s ease, visibility 0.18s ease;
+      }
+      .ref-popover-backdrop.is-visible {
+        opacity: 1;
+        visibility: visible;
+      }
+      /* Mobile: render as a slide-up bottom sheet so the popover is large
+         enough to read and isn't cut off by tiny viewports. */
+      @media (max-width: 640px) {
+        .ref-popover.is-mobile {
+          position: fixed;
+          top: auto !important;
+          left: 0 !important;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          max-width: 100%;
+          border-radius: 16px 16px 0 0;
+          transform: translateY(8px);
+          box-shadow: 0 -10px 30px rgba(15, 23, 42, 0.22);
+        }
+        .ref-popover.is-mobile.is-visible {
+          transform: translateY(0);
+        }
+        .ref-popover.is-mobile .ref-popover-arrow {
+          display: none;
+        }
+        .ref-popover.is-mobile .ref-popover-body {
+          max-height: 50vh;
+        }
+      }
+
       .article-inline-media {
         margin: 1.05rem 0 1.2rem;
         border-radius: 0.8rem;
@@ -1668,10 +1864,16 @@
         article = window.ARTICLES.find(function (a) { return a.id === id; }) || null;
       }
 
-      // Fallback for AIP entries that are not yet present in local ARTICLES index.
-      if (!article && sourceContext === 'aip' && Array.isArray(window.ARTICLES_IN_PRESS)) {
+      // Fallback for AIP entries that aren't (or aren't yet) in ARTICLES.
+      // Previously this branch only triggered when source=aip was explicitly
+      // passed in the URL; sharing a bare ?id=2799 link landed on "not found"
+      // even though the article exists in window.ARTICLES_IN_PRESS. Now we
+      // always probe the AIP index when the main lookup fails — and treat the
+      // article as AIP-context once we find it there.
+      if (!article && Array.isArray(window.ARTICLES_IN_PRESS)) {
         var aipArticle = window.ARTICLES_IN_PRESS.find(function (a) { return Number(a.id) === id; });
         if (aipArticle) {
+          sourceContext = 'aip';
           article = {
             id: Number(aipArticle.id),
             type: aipArticle.type || 'Article',
@@ -1682,9 +1884,16 @@
             previewText: aipArticle.previewText || aipArticle.abstract || '',
             keywords: Array.isArray(aipArticle.keywords) ? aipArticle.keywords : [],
             doi: aipArticle.doi || '',
-            received: '',
-            accepted: '',
-            published: aipArticle.published || new Date().toISOString().slice(0, 10),
+            // Pass the real editorial-history dates through. Previously these
+            // were hardcoded to '' which threw away valid data from the AIP
+            // record and made the article header look incomplete.
+            received: aipArticle.received || '',
+            accepted: aipArticle.accepted || '',
+            // For AIP articles "published" is intentionally empty — they
+            // haven't been assigned to an issue yet. Don't fabricate today's
+            // date here; the renderer uses aheadOfPrint to show the right
+            // badge instead of a fake publication date.
+            published: aipArticle.published || '',
             volume: aipArticle.volume || '',
             issue: aipArticle.issue || '',
             pages: aipArticle.pages || '',
@@ -1694,7 +1903,10 @@
             featured: false,
             imageCorner: false,
             hasFullText: Boolean(aipArticle.hasFullText),
-            sourceIssueId: '46',
+            // No real issue assignment yet — leave empty so the breadcrumb
+            // and "previous issue" navigation don't misroute the reader. The
+            // legacy hardcoded '46' pointed at an unrelated archive issue.
+            sourceIssueId: '',
             sourceArticleId: String(aipArticle.id),
             sourceAbstractUrl: aipArticle.sourceAbstractUrl || '',
             sourceTextUrl: aipArticle.sourceTextUrl || '',
@@ -4987,6 +5199,88 @@
       // global object and assigning the existing function is a no-op pointer.
       try { window.normalizeMsoReferenceList = normalizeMsoReferenceList; } catch (_) {}
 
+      // Convert heading text to Title Case, keeping short function words lowercase
+      // unless they open the heading. Handles Turkish conjunctions too.
+      function toTitleCase(str) {
+        var small = {'a':1,'an':1,'the':1,'and':1,'but':1,'or':1,'for':1,'nor':1,
+          'on':1,'at':1,'to':1,'by':1,'of':1,'in':1,'up':1,'as':1,'if':1,'so':1,
+          'vs':1,'ve':1,'ile':1,'da':1,'de':1,'ya':1,'ki':1};
+        return str.split(/\s+/).map(function(word, i) {
+          if (!word) return word;
+          var lower = word.toLowerCase();
+          if (i > 0 && small[lower]) return lower;
+          return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+        }).join(' ');
+      }
+
+      // Promote Word-style "section headings" — short, fully-bold paragraphs
+      // like <p class="MsoNormal"><b>INTRODUCTION</b></p> — into proper <h3>
+      // elements so the table-of-contents builder picks them up. Without this
+      // promotion, articles imported from Word (especially AIPs) show no
+      // "In This Article" sidebar at all because buildTOC() looks for h2/h3
+      // and bullets headings sit invisibly in a paragraph.
+      function promoteMsoHeadings(bodyNode) {
+        if (!bodyNode || !bodyNode.querySelectorAll) return;
+        var pars = bodyNode.querySelectorAll('p');
+        Array.prototype.forEach.call(pars, function (p) {
+          if (p.closest('.article-references, .article-acknowledgments, .article-footnotes, .article-supplementary, figure, .article-figure, .article-table-wrap, table')) return;
+
+          // Top-level child must be the bold wrapper for the entire paragraph
+          var first = p.firstElementChild;
+          if (!first || (first.tagName !== 'B' && first.tagName !== 'STRONG')) return;
+
+          // Visible text content must be reasonable length for a heading
+          var text = (p.textContent || '').replace(/\s+/g, ' ').trim();
+          if (!text || text.length > 100) return;
+
+          // The bold element's text should account for the whole paragraph
+          // (otherwise the bold is just emphasis on a phrase, not a heading)
+          var boldText = (first.textContent || '').replace(/\s+/g, ' ').trim();
+          if (boldText !== text) return;
+
+          // Heading-like content: mostly uppercase OR Title Case starting with letter
+          var isUpper = text === text.toUpperCase() && /[A-ZÇĞİŞÜÖ]/.test(text);
+          var isTitleCase = /^[A-ZÇĞİŞÜÖ]/.test(text) && text.length < 50;
+          if (!isUpper && !isTitleCase) return;
+
+          // References has its own handling — leave the heading alone so the
+          // normalizer's _findRefHeading can still detect it via the regex.
+          if (/^(references?|bibliography|kaynaklar|kaynakça|referanslar|kaynak\s*listesi)$/i.test(text)) return;
+
+          // Promote: build an <h3> with Title Case text.
+          var h3 = document.createElement('h3');
+          h3.textContent = toTitleCase(text);
+          p.parentNode.replaceChild(h3, p);
+        });
+      }
+      try { window.promoteMsoHeadings = promoteMsoHeadings; } catch (_) {}
+
+      // Strip the redundant inline "N." prefix from each <li> in the reference
+      // list. Articles imported earlier (especially Word-pasted ones) often
+      // carry the literal number inside the <li>'s innerHTML; combined with
+      // the <ol>'s native auto-numbering this produces a visible
+      // "1.  1. Author…" duplicate on the rendered page.
+      function cleanupReferenceListItems(bodyNode) {
+        if (!bodyNode || !bodyNode.querySelectorAll) return;
+        var ol = bodyNode.querySelector('.article-references ol, ol.article-references-ol');
+        if (!ol) return;
+        Array.prototype.forEach.call(ol.querySelectorAll(':scope > li'), function (li) {
+          var html = li.innerHTML;
+          var before = html;
+          // (a) leading <span> whose visible text is just "N." plus spacers
+          html = html.replace(/^\s*<span\b[^>]*>\s*\d+\.\s*(?:&nbsp;|\s)*<\/span>\s*/i, '');
+          // (b) bare leading "N." text with optional nbsp/whitespace
+          html = html.replace(/^(?:\s|&nbsp;)*\d+\.(?:\s|&nbsp;)*/, '');
+          // (c) leftover whitespace-only span (Word's spacer)
+          html = html.replace(/^\s*<span\b[^>]*>(?:\s|&nbsp;|<br\s*\/?>)*<\/span>\s*/i, '');
+          // (d) repeat the bare-number strip in case the number lived inside
+          //     a span we just removed
+          html = html.replace(/^(?:\s|&nbsp;)*\d+\.(?:\s|&nbsp;)*/, '');
+          if (html !== before) li.innerHTML = html;
+        });
+      }
+      try { window.cleanupReferenceListItems = cleanupReferenceListItems; } catch (_) {}
+
       // Mark anchors whose target doesn't exist on the rendered page. The
       // enhancer chain populates IDs first, so by the time we run this all
       // legitimate targets are addressable; anything missing is a real
@@ -5061,26 +5355,12 @@
         });
 
         bodyNode.setAttribute('data-ref-citations-ready', 'true');
-        bodyNode.addEventListener('click', function (event) {
-          var link = event.target.closest('.article-ref-citation');
-          if (!link || !bodyNode.contains(link)) return;
-          var n = link.getAttribute('data-ref');
-          if (!n) return;
-          var target = document.getElementById('ref-' + n);
-          if (!target) return;
-          event.preventDefault();
-          try {
-            target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          } catch (err) {
-            target.scrollIntoView();
-          }
-          target.classList.remove('article-ref-highlighted');
-          void target.offsetWidth;
-          target.classList.add('article-ref-highlighted');
-          window.setTimeout(function () {
-            target.classList.remove('article-ref-highlighted');
-          }, 2200);
-        });
+        // Click on an in-text citation → open the reference popover (modern
+        // journal pattern). We wire the listener once on `document` instead
+        // of on bodyNode — earlier the listener vanished whenever something
+        // re-rendered `.article-body` via innerHTML, which made the popover
+        // silently stop working after certain full-text reloads.
+        wireGlobalRefPopoverHandler();
 
         // Bidirectional links — give each in-text citation a unique id so
         // the reference list can backlink to it. The <li> in the References
@@ -5142,6 +5422,461 @@
             tgt.classList.remove('article-ref-cite-highlighted');
           }, 2200);
         });
+      }
+
+      // -----------------------------------------------------------------
+      // Reference popover — modern bilimsel dergi tarzı (Nature / Cell /
+      // eLife pattern). When the reader clicks [N] in the body, instead of
+      // scrolling to the bottom and back, an in-place card shows the full
+      // bibliographic entry plus quick external lookups (DOI, PubMed,
+      // Google Scholar). On mobile (<640px) it slides up as a bottom sheet.
+      // -----------------------------------------------------------------
+
+      // Wire a single document-level click handler that intercepts every
+      // in-text citation anchor on the page. Document-level (instead of
+      // bodyNode-level) makes the wiring survive any re-render of the
+      // .article-body container, and lets us match both legacy anchors
+      // (raw <a href="#ref-N">) and modernised anchors (.article-ref-citation
+      // with data-ref). Called from enhanceReferenceCitations after the
+      // first full-text injection.
+      function wireGlobalRefPopoverHandler() {
+        if (document.body && document.body.dataset && document.body.dataset.refPopoverWired === 'true') return;
+        if (document.body && document.body.dataset) document.body.dataset.refPopoverWired = 'true';
+        console.log('[ref-popover] global handler wired @', new Date().toISOString());
+        // Capture phase (true) so we run BEFORE any browser extension that
+        // might be stopping propagation on anchor clicks.
+        document.addEventListener('click', function (event) {
+          var link = event.target.closest('.article-ref-citation, a[href^="#ref-"]');
+          if (!link) {
+            // For diagnostic purposes only — log when a click on an <a href="#...">
+            // anchor was NOT matched. Helps spot CSS that overlays the link.
+            var anyAnchor = event.target.closest('a[href]');
+            if (anyAnchor && /^#ref-/.test(anyAnchor.getAttribute('href') || '')) {
+              console.log('[ref-popover] click did not match selector; anchor=', anyAnchor);
+            }
+            return;
+          }
+          console.log('[ref-popover] click matched', link.getAttribute('href'), 'class=', link.className);
+          // Skip the references list itself — the backlink ↩ has its own
+          // handler and the list entry's own id="ref-N" must remain a plain
+          // scroll target (clicking inside the list shouldn't reopen the
+          // popover the reader just navigated away from).
+          if (link.classList && link.classList.contains('article-ref-backlink')) return;
+          if (link.closest('.article-references')) return;
+          var n = link.getAttribute('data-ref');
+          if (!n) {
+            var hrefMatch = (link.getAttribute('href') || '').match(/^#ref-(\d+)$/);
+            if (hrefMatch) n = hrefMatch[1];
+          }
+          if (!n) return;
+          var target = document.getElementById('ref-' + n);
+          if (!target) return;
+          event.preventDefault();
+          event.stopPropagation();
+          try {
+            showReferencePopover(link, n, target);
+            // Diagnostic: report the final rendered state so we can tell
+            // why the popover is invisible even though the show path ran.
+            var _diag = document.getElementById('ref-popover');
+            if (_diag) {
+              var _rect = _diag.getBoundingClientRect();
+              var _cs = window.getComputedStyle(_diag);
+              console.log('[ref-popover] shown for ref', n, {
+                left: _diag.style.left,
+                top: _diag.style.top,
+                rect: { x: Math.round(_rect.left), y: Math.round(_rect.top), w: Math.round(_rect.width), h: Math.round(_rect.height) },
+                visibility: _cs.visibility,
+                opacity: _cs.opacity,
+                display: _cs.display,
+                zIndex: _cs.zIndex,
+                hasIsVisible: _diag.classList.contains('is-visible'),
+                ariaHidden: _diag.getAttribute('aria-hidden')
+              });
+            }
+          } catch (popErr) {
+            console.error('[ref-popover] failed to show:', popErr);
+            // Last-resort fallback: smooth-scroll to the reference like the
+            // pre-popover behaviour, so the reader isn't stranded on a dead
+            // click when something inside the popover code path breaks.
+            try { target.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+            catch (_) { target.scrollIntoView(); }
+            target.classList.remove('article-ref-highlighted');
+            void target.offsetWidth;
+            target.classList.add('article-ref-highlighted');
+            window.setTimeout(function () {
+              target.classList.remove('article-ref-highlighted');
+            }, 2200);
+          }
+        }, true);
+      }
+
+      function getOrCreateRefPopover() {
+        var existing = document.getElementById('ref-popover');
+        if (existing) return existing;
+
+        var backdrop = document.createElement('div');
+        backdrop.className = 'ref-popover-backdrop';
+        backdrop.id = 'ref-popover-backdrop';
+        // Critical styles inline so the popover doesn't depend on the page's
+        // <style> block — earlier we observed that some browser extensions
+        // (SES, ad-blockers) strip class-based rules on dynamically added
+        // elements, leaving the popover with computed style display:block,
+        // width:1157px, z-index:auto and therefore invisible behind page
+        // content. Inline styles cannot be stripped by classlist-based
+        // selectors and survive any such sanitisation.
+        backdrop.setAttribute('style',
+          'position:fixed;inset:0;background:rgba(15,23,42,0.32);' +
+          'z-index:69;opacity:0;visibility:hidden;' +
+          'transition:opacity 0.18s ease, visibility 0.18s ease;');
+        backdrop.addEventListener('click', hideReferencePopover);
+        document.body.appendChild(backdrop);
+
+        var pop = document.createElement('div');
+        pop.id = 'ref-popover';
+        pop.className = 'ref-popover';
+        pop.setAttribute('role', 'dialog');
+        pop.setAttribute('aria-modal', 'false');
+        pop.setAttribute('aria-hidden', 'true');
+        pop.setAttribute('style',
+          // position:fixed (viewport-relative) sidesteps the scroll-context
+          // confusion we hit with position:absolute — the diagnostic showed
+          // rect.y=16329 vs style.top=2347, meaning the scrolling element is
+          // not <html>/<body> for this page. Fixed positioning is immune
+          // to that.
+          'position:fixed;z-index:9999;width:420px;max-width:calc(100vw - 32px);' +
+          'background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;' +
+          'box-shadow:0 18px 38px rgba(15,23,42,0.18), 0 4px 10px rgba(15,23,42,0.08);' +
+          'opacity:0;visibility:hidden;pointer-events:none;' +
+          'transition:opacity 0.16s ease, transform 0.16s ease, visibility 0.16s ease;' +
+          'transform:translateY(6px);font-family:inherit;color:#1f2937;');
+        // Inline styles on every child too — same reason as the parent.
+        var arrowStyle = 'position:absolute;top:-7px;left:50%;margin-left:-7px;width:14px;height:14px;background:#ffffff;border-left:1px solid #e5e7eb;border-top:1px solid #e5e7eb;transform:rotate(45deg);';
+        var headerStyle = 'display:flex;align-items:center;justify-content:space-between;gap:0.5rem;padding:0.7rem 0.95rem 0.5rem;border-bottom:1px solid #f1f5f9;';
+        var eyebrowStyle = 'font-size:0.72rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:#0f766e;';
+        var closeStyle = 'display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;margin:-4px -6px -4px 0;border:0;border-radius:6px;background:transparent;color:#6b7280;cursor:pointer;';
+        var bodyStyle = 'padding:0.85rem 0.95rem 0.6rem;max-height:260px;overflow-y:auto;';
+        var actionsStyle = 'display:flex;flex-wrap:wrap;gap:0.4rem;padding:0.55rem 0.95rem 0.85rem;border-top:1px solid #f1f5f9;background:#fafbfd;border-radius:0 0 12px 12px;';
+        pop.innerHTML =
+          '<div class="ref-popover-arrow" aria-hidden="true" style="' + arrowStyle + '"></div>' +
+          '<div class="ref-popover-header" style="' + headerStyle + '">' +
+            '<span class="ref-popover-eyebrow" id="ref-popover-eyebrow" style="' + eyebrowStyle + '">Reference</span>' +
+            '<button type="button" class="ref-popover-close" aria-label="Kapat" style="' + closeStyle + '">' +
+              '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>' +
+            '</button>' +
+          '</div>' +
+          '<div class="ref-popover-body" id="ref-popover-body" style="' + bodyStyle + '"></div>' +
+          '<div class="ref-popover-actions" id="ref-popover-actions" style="' + actionsStyle + '"></div>';
+        document.body.appendChild(pop);
+
+        pop.querySelector('.ref-popover-close').addEventListener('click', hideReferencePopover);
+
+        // Close on outside click (excluding the citation that opened it),
+        // and on ESC. Reposition / hide on scroll + resize so the card
+        // stays anchored to its citation as the user scrolls.
+        document.addEventListener('click', function (e) {
+          if (pop.getAttribute('aria-hidden') === 'true') return;
+          if (e.target.closest('#ref-popover')) return;
+          if (e.target.closest('.article-ref-citation')) return;
+          hideReferencePopover();
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && pop.getAttribute('aria-hidden') === 'false') {
+            hideReferencePopover();
+          }
+        });
+        window.addEventListener('scroll', function () {
+          if (pop.getAttribute('aria-hidden') === 'true') return;
+          if (pop.classList.contains('is-mobile')) return;
+          // Cheap reposition: hide if the anchor scrolls offscreen.
+          var anchor = pop._anchor;
+          if (!anchor) return;
+          var rect = anchor.getBoundingClientRect();
+          if (rect.bottom < 0 || rect.top > window.innerHeight) hideReferencePopover();
+          else positionReferencePopover(anchor);
+        }, { passive: true });
+        window.addEventListener('resize', function () {
+          if (pop.getAttribute('aria-hidden') === 'true') return;
+          if (pop._anchor) positionReferencePopover(pop._anchor);
+        });
+
+        // Inside the popover, intercept the "Listede gör" jump so it
+        // closes the card and falls back to the original scroll behaviour.
+        pop.addEventListener('click', function (e) {
+          var jump = e.target.closest('[data-ref-jump]');
+          if (!jump) return;
+          var refNum = jump.getAttribute('data-ref-jump');
+          var tgt = document.getElementById('ref-' + refNum);
+          if (!tgt) return;
+          e.preventDefault();
+          hideReferencePopover();
+          try { tgt.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+          catch (err) { tgt.scrollIntoView(); }
+          tgt.classList.remove('article-ref-highlighted');
+          void tgt.offsetWidth;
+          tgt.classList.add('article-ref-highlighted');
+          window.setTimeout(function () {
+            tgt.classList.remove('article-ref-highlighted');
+          }, 2200);
+        });
+
+        return pop;
+      }
+
+      function extractReferenceLinks(li) {
+        var out = { doi: '', pmid: '', urls: [] };
+        if (!li) return out;
+        // Walk anchors first — these are the most reliable.
+        var anchors = li.querySelectorAll('a[href]');
+        Array.prototype.forEach.call(anchors, function (a) {
+          if (a.classList && a.classList.contains('article-ref-backlink')) return;
+          var href = a.getAttribute('href') || '';
+          var doiMatch = href.match(/^https?:\/\/(?:dx\.)?doi\.org\/(.+)$/i);
+          if (doiMatch && !out.doi) {
+            out.doi = doiMatch[1].replace(/\/+$/, '');
+            return;
+          }
+          var pmMatch = href.match(/^https?:\/\/(?:www\.)?(?:pubmed\.ncbi\.nlm\.nih\.gov|ncbi\.nlm\.nih\.gov\/pubmed)\/(\d+)/i);
+          if (pmMatch && !out.pmid) {
+            out.pmid = pmMatch[1];
+            return;
+          }
+          if (/^https?:\/\//i.test(href)) out.urls.push(href);
+        });
+        // Fallback: scan the plain text for a DOI / PMID pattern.
+        var text = li.textContent || '';
+        if (!out.doi) {
+          var doiInText = text.match(/\b10\.\d{4,9}\/[^\s,;<>"\)\]]+/);
+          if (doiInText) out.doi = doiInText[0].replace(/[.,;)\]]+$/, '');
+        }
+        if (!out.pmid) {
+          var pmInText = text.match(/\b(?:PMID|PubMed\s*ID)\s*[:\-]?\s*(\d{4,9})\b/i);
+          if (pmInText) out.pmid = pmInText[1];
+        }
+        return out;
+      }
+
+      function buildReferenceSearchQuery(li) {
+        // Crude but effective: take up to ~280 chars of the reference text
+        // for the external search query. Strip backlinks first.
+        if (!li) return '';
+        var clone = li.cloneNode(true);
+        Array.prototype.forEach.call(clone.querySelectorAll('.article-ref-backlinks'), function (b) {
+          b.remove();
+        });
+        var text = (clone.textContent || '').replace(/\s+/g, ' ').trim();
+        return text.length > 280 ? text.slice(0, 280) : text;
+      }
+
+      function positionReferencePopover(anchor) {
+        var pop = document.getElementById('ref-popover');
+        if (!pop || !anchor) return;
+        // Mobile bottom-sheet — pin to the bottom of the viewport.
+        if (window.innerWidth <= 640) {
+          pop.classList.add('is-mobile');
+          pop.style.left = '0px';
+          pop.style.right = '0px';
+          pop.style.bottom = '0px';
+          pop.style.top = 'auto';
+          pop.style.width = '100%';
+          pop.style.maxWidth = '100%';
+          pop.style.borderRadius = '16px 16px 0 0';
+          pop.removeAttribute('data-placement');
+          return;
+        }
+        pop.classList.remove('is-mobile');
+        // Reset any mobile overrides
+        pop.style.right = '';
+        pop.style.bottom = '';
+        pop.style.width = '420px';
+        pop.style.maxWidth = 'calc(100vw - 32px)';
+        pop.style.borderRadius = '12px';
+
+        // position:fixed → viewport-relative math, no scrollX/scrollY needed.
+        var rect = anchor.getBoundingClientRect();
+        var vw = document.documentElement.clientWidth;
+        var vh = document.documentElement.clientHeight;
+        var popW = pop.offsetWidth || 420;
+        var popH = pop.offsetHeight || 200;
+        var anchorCenter = rect.left + rect.width / 2;
+        var left = anchorCenter - popW / 2;
+        // Clamp horizontally to viewport with 16px margin.
+        left = Math.max(16, Math.min(left, vw - popW - 16));
+        var placeBelow = (rect.bottom + popH + 12) <= vh || rect.top < popH + 12;
+        var top;
+        if (placeBelow) {
+          top = rect.bottom + 8;
+          pop.setAttribute('data-placement', 'bottom');
+        } else {
+          top = rect.top - popH - 8;
+          pop.setAttribute('data-placement', 'top');
+        }
+        pop.style.left = left + 'px';
+        pop.style.top = top + 'px';
+        // Move the arrow so it points at the anchor centre.
+        var arrow = pop.querySelector('.ref-popover-arrow');
+        if (arrow) {
+          var arrowLeft = anchorCenter - left;
+          arrow.style.left = Math.max(14, Math.min(arrowLeft, popW - 14)) + 'px';
+          arrow.style.marginLeft = '-7px';
+        }
+      }
+
+      function hideReferencePopover() {
+        var pop = document.getElementById('ref-popover');
+        var bd = document.getElementById('ref-popover-backdrop');
+        if (pop) {
+          pop.setAttribute('aria-hidden', 'true');
+          pop.classList.remove('is-visible');
+          pop.style.opacity = '0';
+          pop.style.visibility = 'hidden';
+          pop.style.pointerEvents = 'none';
+          pop.style.transform = 'translateY(6px)';
+          pop._anchor = null;
+        }
+        if (bd) {
+          bd.classList.remove('is-visible');
+          bd.style.opacity = '0';
+          bd.style.visibility = 'hidden';
+        }
+      }
+
+      function showReferencePopover(anchor, refNum, target) {
+        var li = target.closest('li') || target;
+        var pop = getOrCreateRefPopover();
+        var bd = document.getElementById('ref-popover-backdrop');
+        pop._anchor = anchor;
+
+        // Bibliographic entry — keep inline formatting (italics, links) but
+        // drop the backlink arrows that only make sense inside the list.
+        var clone = li.cloneNode(true);
+        Array.prototype.forEach.call(clone.querySelectorAll('.article-ref-backlinks'), function (b) {
+          b.remove();
+        });
+        // Drop any leading "N." that the list ::before counter draws and
+        // that some imported entries also carry inline.
+        var citationHtml = clone.innerHTML.replace(/^\s*\d+\.\s*(?:&nbsp;|\s)*/, '');
+
+        var links = extractReferenceLinks(li);
+        var searchQuery = buildReferenceSearchQuery(li);
+        var encodedQuery = encodeURIComponent(searchQuery);
+
+        document.getElementById('ref-popover-eyebrow').textContent = 'Reference ' + refNum;
+        document.getElementById('ref-popover-body').innerHTML =
+          '<p class="ref-popover-citation">' + citationHtml + '</p>';
+
+        // Inline button styles — class-based rules from the global <style>
+        // are unreliable on dynamically injected nodes (browser extensions
+        // can strip them). Each action button is a self-contained pill with
+        // a brand-coloured icon and label.
+        var isMobile = window.innerWidth <= 640;
+        var btnBase =
+          'display:inline-flex;align-items:center;gap:0.4rem;' +
+          'padding:' + (isMobile ? '0.6rem 0.85rem' : '0.45rem 0.75rem') + ';' +
+          'border-radius:8px;' +
+          'font-size:' + (isMobile ? '0.85rem' : '0.78rem') + ';' +
+          'font-weight:600;line-height:1;' +
+          'text-decoration:none;white-space:nowrap;' +
+          'transition:transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;' +
+          'min-height:' + (isMobile ? '40px' : '32px') + ';';
+        var openIcon = '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:0.8"><path d="M7 17L17 7"/><polyline points="7 7 17 7 17 17"/></svg>';
+        // Brand-flavoured leading icons (inline SVG so no network dependency)
+        var doiIcon =
+          '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0">' +
+          '<path d="M10 13a5 5 0 007.07 0l3-3a5 5 0 00-7.07-7.07L11 5"/>' +
+          '<path d="M14 11a5 5 0 00-7.07 0l-3 3a5 5 0 007.07 7.07L13 19"/>' +
+          '</svg>';
+        var pubmedIcon =
+          '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0">' +
+          '<circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>' +
+          '</svg>';
+        var scholarIcon =
+          '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">' +
+          '<path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>' +
+          '</svg>';
+
+        var actions = [];
+        if (links.doi) {
+          // Primary teal pill — DOI is the authoritative deep link
+          actions.push(
+            '<a href="https://doi.org/' + encodeURI(links.doi) + '" target="_blank" rel="noopener" ' +
+            'title="DOI: ' + escapeAttribute(links.doi) + '" ' +
+            'style="' + btnBase + 'background:#0f766e;color:#ffffff;border:1px solid #0f766e;box-shadow:0 1px 2px rgba(15,118,110,0.25);" ' +
+            'onmouseover="this.style.background=\'#115e59\';this.style.borderColor=\'#115e59\';" ' +
+            'onmouseout="this.style.background=\'#0f766e\';this.style.borderColor=\'#0f766e\';">' +
+            doiIcon + '<span>DOI</span>' + openIcon + '</a>'
+          );
+        }
+        if (links.pmid) {
+          // PubMed NCBI blue
+          actions.push(
+            '<a href="https://pubmed.ncbi.nlm.nih.gov/' + encodeURIComponent(links.pmid) + '/" ' +
+            'target="_blank" rel="noopener" title="PubMed ID: ' + escapeAttribute(links.pmid) + '" ' +
+            'style="' + btnBase + 'background:#ffffff;color:#205493;border:1px solid #c7d8ee;" ' +
+            'onmouseover="this.style.background=\'#eef4fb\';this.style.borderColor=\'#205493\';" ' +
+            'onmouseout="this.style.background=\'#ffffff\';this.style.borderColor=\'#c7d8ee\';">' +
+            pubmedIcon + '<span>PubMed</span>' + openIcon + '</a>'
+          );
+        } else if (searchQuery) {
+          actions.push(
+            '<a href="https://pubmed.ncbi.nlm.nih.gov/?term=' + encodedQuery + '" ' +
+            'target="_blank" rel="noopener" title="Bu referansı PubMed\'de ara" ' +
+            'style="' + btnBase + 'background:#ffffff;color:#205493;border:1px solid #c7d8ee;" ' +
+            'onmouseover="this.style.background=\'#eef4fb\';this.style.borderColor=\'#205493\';" ' +
+            'onmouseout="this.style.background=\'#ffffff\';this.style.borderColor=\'#c7d8ee\';">' +
+            pubmedIcon + '<span>PubMed</span>' + openIcon + '</a>'
+          );
+        }
+        if (searchQuery) {
+          // Google Scholar — Google's "scholar" blue tone
+          actions.push(
+            '<a href="https://scholar.google.com/scholar?q=' + encodedQuery + '" ' +
+            'target="_blank" rel="noopener" title="Bu referansı Google Scholar\'da ara" ' +
+            'style="' + btnBase + 'background:#ffffff;color:#4285f4;border:1px solid #c6d9fb;" ' +
+            'onmouseover="this.style.background=\'#f0f5ff\';this.style.borderColor=\'#4285f4\';" ' +
+            'onmouseout="this.style.background=\'#ffffff\';this.style.borderColor=\'#c6d9fb\';">' +
+            scholarIcon + '<span>Google Scholar</span>' + openIcon + '</a>'
+          );
+        }
+
+        document.getElementById('ref-popover-actions').innerHTML = actions.join('');
+
+        // Show, then position. We render once at (0,0) so offsetWidth/Height
+        // are accurate before computing the final coordinates. Inline opacity
+        // / visibility / transform are toggled directly because the inline
+        // style attribute on the popover root carries the hidden defaults
+        // and class-based rules from <style> aren't reliably applied
+        // (browser extensions like SES strip class rules on injected nodes).
+        pop.style.left = '-9999px';
+        pop.style.top = '0px';
+        pop.setAttribute('aria-hidden', 'false');
+        pop.classList.add('is-visible');
+        pop.style.opacity = '1';
+        pop.style.visibility = 'visible';
+        pop.style.pointerEvents = 'auto';
+        pop.style.transform = 'translateY(0)';
+        // The backdrop is only meaningful in mobile bottom-sheet mode so
+        // the reader can dismiss by tapping outside the card.
+        if (bd) {
+          if (window.innerWidth <= 640) {
+            bd.classList.add('is-visible');
+            bd.style.opacity = '1';
+            bd.style.visibility = 'visible';
+          } else {
+            bd.classList.remove('is-visible');
+            bd.style.opacity = '0';
+            bd.style.visibility = 'hidden';
+          }
+        }
+        positionReferencePopover(anchor);
+      }
+
+      function escapeAttribute(str) {
+        return String(str == null ? '' : str)
+          .replace(/&/g, '&amp;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
       }
 
       // Figure/table reference styling — these <a href="#figure-N"> anchors
@@ -5586,6 +6321,11 @@
             // the rest of the chain (citation linking, ref ID assignment)
             // has structured data to bind to.
             normalizeMsoReferenceList(articleBodyNode);
+            // Articles imported / migrated earlier kept the literal "1.",
+            // "2." numbers at the start of each <li>. The <ol> already
+            // auto-numbers them, so we end up with "1.  1. Author…" rendered.
+            // Strip the inline number (plus its sibling whitespace span) here.
+            cleanupReferenceListItems(articleBodyNode);
             enhanceReferenceCitations(articleBodyNode);
             normalizeFigureCaptions(articleBodyNode);
             enhanceFigureTableLinks(articleBodyNode);
@@ -5596,6 +6336,10 @@
             // surface any anchors whose target still doesn't exist (silent
             // dead-links are easy to miss otherwise).
             flagBrokenCrossRefs(articleBodyNode);
+            // Promote Word-style "<p><b>INTRODUCTION</b></p>" into <h3> so
+            // buildTOC() can populate the "In This Article" sidebar for AIPs
+            // and other articles whose source HTML never had real headings.
+            promoteMsoHeadings(articleBodyNode);
             buildTOC();
           }).catch(function () {
             var container = document.getElementById('fulltext-content');

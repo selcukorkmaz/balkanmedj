@@ -1,6 +1,6 @@
 /**
  * Balkan Medical Journal — Articles in Press
- * Last updated: 2026-05-21
+ * Last updated: 2026-05-22
  */
 window.ARTICLES_IN_PRESS = [
   {
@@ -630,7 +630,7 @@ window.ARTICLES_IN_PRESS = [
   },
   {
     "id": 2812,
-    "order": 11,
+    "order": 9,
     "type": "Clinical Image",
     "title": "Occult Childhood Interstitial Lung Disease",
     "authors": [
@@ -665,7 +665,7 @@ window.ARTICLES_IN_PRESS = [
   },
   {
     "id": 2816,
-    "order": 12,
+    "order": 10,
     "type": "Clinical Image",
     "title": "Direct Choledochoscopic Visualization of Living Clonorchis sinensis in the Biliary Tract",
     "authors": [
@@ -715,7 +715,7 @@ window.ARTICLES_IN_PRESS = [
   },
   {
     "id": 2774,
-    "order": 14,
+    "order": 11,
     "type": "Scientific Letter",
     "title": "An Important Feature of Gastric Adenocarcinoma: Heterogeneous Microsatellite Status",
     "authors": [
@@ -770,7 +770,7 @@ window.ARTICLES_IN_PRESS = [
   },
   {
     "id": 2782,
-    "order": 15,
+    "order": 12,
     "type": "Scientific Letter",
     "title": "Effects of 40 Hz Auditory Stimulation on Postoperative Delirium: A Prospective Single-Arm Study",
     "authors": [
@@ -810,7 +810,7 @@ window.ARTICLES_IN_PRESS = [
   },
   {
     "id": 2793,
-    "order": 16,
+    "order": 13,
     "type": "Scientific Letter",
     "title": "Novel SHOX Variant in Léri-Weill Dyschondrosteosis with Madelung Deformity",
     "authors": [
@@ -845,7 +845,7 @@ window.ARTICLES_IN_PRESS = [
   },
   {
     "id": 2796,
-    "order": 17,
+    "order": 14,
     "type": "Scientific Letter",
     "title": "Cerebral Slow Flow: An Emerging Phenomenon in Vascular Dementia Pathogenesis",
     "authors": [
@@ -890,7 +890,7 @@ window.ARTICLES_IN_PRESS = [
   },
   {
     "id": 2797,
-    "order": 18,
+    "order": 15,
     "type": "Scientific Letter",
     "title": "Cold Contrast-Induced Coronary Slow Flow: A Preventable Pitfall in the Cath Lab",
     "authors": [
@@ -930,7 +930,7 @@ window.ARTICLES_IN_PRESS = [
   },
   {
     "id": 2798,
-    "order": 19,
+    "order": 16,
     "type": "Scientific Letter",
     "title": "Clinical, Radiologic, and Genetic Spectrum of Schimke Immuno-Osseous Dysplasia",
     "authors": [
@@ -975,7 +975,7 @@ window.ARTICLES_IN_PRESS = [
   },
   {
     "id": 2800,
-    "order": 20,
+    "order": 17,
     "type": "Scientific Letter",
     "title": "Clinical Features, Laboratory and Radiological Findings, and Outcomes of Pneumocystis jirovecii Pneumonia in Immunocompetent Children",
     "authors": [
@@ -1017,7 +1017,7 @@ window.ARTICLES_IN_PRESS = [
   },
   {
     "id": 2801,
-    "order": 21,
+    "order": 18,
     "type": "Scientific Letter",
     "title": "Treatment of Steroid-Resistant Radiation-Induced Cerebral Edema with Boswellia serrata",
     "authors": [
@@ -1057,7 +1057,7 @@ window.ARTICLES_IN_PRESS = [
   },
   {
     "id": 2814,
-    "order": 22,
+    "order": 19,
     "type": "Scientific Letter",
     "title": "Thymopentin-Induced Myasthenia Gravis: A Case Report Highlighting Clinical Vigilance",
     "authors": [
@@ -1097,19 +1097,19 @@ window.ARTICLES_IN_PRESS = [
   },
   {
     "id": 2867,
-    "order": 21,
+    "order": 20,
     "aheadOfPrint": true,
     "volume": null,
     "issue": "",
     "pages": "",
     "published": "",
     "type": "Invited Review",
-    "title": "Contrast Media Side Effects and Kounis Syndrome: Timeo Danaos et  Dona Ferentes",
+    "title": "Contrast Media Side Effects and Kounis Syndrome: Timeo Danaos et Dona Ferentes",
     "doi": "10.4274/deneme.galenos.2026.2026-3-89",
     "received": "2026-04-01",
     "accepted": "2026-05-05",
     "pmid": "",
-    "abstractHtml": "<!--StartFragment-->\n\n<p class=\"MsoNormal\"><b>Abstract</b><o:p></o:p></p>\n\n<p class=\"MsoNormal\"><span lang=\"EN-US\">Kounis\nsyndrome is defined as the occurrence of acute coronary events in the setting\nof allergic, hypersensitivity, or anaphylactic reactions. It is mediated by\nmast cell activation and the interaction of inflammatory cells, including T\nlymphocytes and macrophages. This process leads to the release of multiple\ninflammatory mediators, such as platelet-activating factor, histamine, neutral\nproteases (tryptase and chymase), arachidonic acid metabolites, cytokines, and\nchemokines. Kounis syndrome represents a unique form of acute vascular disorder\nthat may involve not only the coronary arteries but also peripheral, cerebral,\nand mesenteric vessels as well as the venous system. Contrast media are widely\nused in diagnostic imaging to enhance visualization and characterization of\npathological conditions. These agents can be administered via several routes,\nincluding oral, intravenous, intra-arterial, or rectal administration. Although\nmost hypersensitivity reactions to contrast media are mild to moderate, severe\ncomplications such as anaphylaxis, cardiac arrest, and Kounis syndrome may\noccur. In particular, contrast media-induced Kounis syndrome has been\nassociated with significant clinical consequences, including an increased risk\nof life-threatening cardiac events.<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><span lang=\"EN-US\">This\nnarrative review aims to summarize current evidence regarding contrast\nmedia-related adverse effects, with a focus on hypersensitivity reactions,\nKounis syndrome, and associated cardiovascular complications. Emphasis is also\nplaced on preventive strategies, including the importance of obtaining a\ndetailed patient history of prior hypersensitivity reactions prior to contrast\nadministration, to reduce the risk of recurrence and severe outcomes.<o:p></o:p></span></p>\n\n<!--EndFragment-->",
+    "abstractHtml": "<!--StartFragment-->\n\n<p class=\"MsoNormal\">Abstract<o:p></o:p></p>\n\n<p class=\"MsoNormal\"><span lang=\"EN-US\">Kounis\nsyndrome is defined as the occurrence of acute coronary events in the setting\nof allergic, hypersensitivity, or anaphylactic reactions. It is mediated by\nmast cell activation and the interaction of inflammatory cells, including T\nlymphocytes and macrophages. This process leads to the release of multiple\ninflammatory mediators, such as platelet-activating factor, histamine, neutral\nproteases (tryptase and chymase), arachidonic acid metabolites, cytokines, and\nchemokines. Kounis syndrome represents a unique form of acute vascular disorder\nthat may involve not only the coronary arteries but also peripheral, cerebral,\nand mesenteric vessels as well as the venous system. Contrast media are widely\nused in diagnostic imaging to enhance visualization and characterization of\npathological conditions. These agents can be administered via several routes,\nincluding oral, intravenous, intra-arterial, or rectal administration. Although\nmost hypersensitivity reactions to contrast media are mild to moderate, severe\ncomplications such as anaphylaxis, cardiac arrest, and Kounis syndrome may\noccur. In particular, contrast media-induced Kounis syndrome has been\nassociated with significant clinical consequences, including an increased risk\nof life-threatening cardiac events.<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><span lang=\"EN-US\">This\nnarrative review aims to summarize current evidence regarding contrast\nmedia-related adverse effects, with a focus on hypersensitivity reactions,\nKounis syndrome, and associated cardiovascular complications. Emphasis is also\nplaced on preventive strategies, including the importance of obtaining a\ndetailed patient history of prior hypersensitivity reactions prior to contrast\nadministration, to reduce the risk of recurrence and severe outcomes.<o:p></o:p></span></p>\n\n<!--EndFragment-->",
     "abstract": "Abstract\n\nKounis\nsyndrome is defined as the occurrence of acute coronary events in the setting\nof allergic, hypersensitivity, or anaphylactic reactions. It is mediated by\nmast cell activation and the interaction of inflammatory cells, including T\nlymphocytes and macrophages. This process leads to the release of multiple\ninflammatory mediators, such as platelet-activating factor, histamine, neutral\nproteases (tryptase and chymase), arachidonic acid metabolites, cytokines, and\nchemokines. Kounis syndrome represents a unique form of acute vascular disorder\nthat may involve not only the coronary arteries but also peripheral, cerebral,\nand mesenteric vessels as well as the venous system. Contrast media are widely\nused in diagnostic imaging to enhance visualization and characterization of\npathological conditions. These agents can be administered via several routes,\nincluding oral, intravenous, intra-arterial, or rectal administration. Although\nmost hypersensitivity reactions to contrast media are mild to moderate, severe\ncomplications such as anaphylaxis, cardiac arrest, and Kounis syndrome may\noccur. In particular, contrast media-induced Kounis syndrome has been\nassociated with significant clinical consequences, including an increased risk\nof life-threatening cardiac events.\n\nThis\nnarrative review aims to summarize current evidence regarding contrast\nmedia-related adverse effects, with a focus on hypersensitivity reactions,\nKounis syndrome, and associated cardiovascular complications. Emphasis is also\nplaced on preventive strategies, including the importance of obtaining a\ndetailed patient history of prior hypersensitivity reactions prior to contrast\nadministration, to reduce the risk of recurrence and severe outcomes.",
     "previewText": "Abstract\n\nKounis\nsyndrome is defined as the occurrence of acute coronary events in the setting\nof allergic, hypersensitivity, or anaphylactic reactions. It is mediated by\nmast cell activation and the interaction of inflammatory cells, including T\nlymphocytes and macrophages. This process leads to the release of multiple\ninflammatory mediators, such as platel",
     "keywords": [],
@@ -1120,40 +1120,15 @@ window.ARTICLES_IN_PRESS = [
         "orcid": "0000-0002-9751-6710"
       },
       {
-        "name": "Ming-Yow Hung2",
+        "name": "Ming-Yow Hung",
         "affiliation": "Division of Cardiology, Department of Internal Medicine, Taipei Medical University, Shuang Ho Hospital, New Taipei City, Taiwan",
         "orcid": "0000-0002-6912-7523"
-      },
-      {
-        "name": "Alexandr Ceasovschih3",
-        "affiliation": "Department of Internal Medicine, Grigore T. Popa University of Medicine and Pharmacy, Iaşi, Romania",
-        "orcid": "0000-0002-0043-9051"
-      },
-      {
-        "name": "Cesare de Gregorio4",
-        "affiliation": "Department of Clinical and Experimental Medicine, University of Messina, Messina, Italy",
-        "orcid": "0000-0003-3022-266X"
-      },
-      {
-        "name": "Anastasia Mavromati1",
-        "affiliation": "Department of Cardiology, University of Patras Faculty of Medicine, Patras, Greece",
-        "orcid": "0009-0009-0391-5218"
-      },
-      {
-        "name": "Marta Bernaola5",
-        "affiliation": "Clinic of Allergy Hospital, Central de la Defensa “Gómez Ulla”, Madrid, Spain",
-        "orcid": "0000-0003-4199-573X"
-      },
-      {
-        "name": "Ioanna Koniari6",
-        "affiliation": "Department of Electrophysiology and Device, University of Patras, Patras, Greece",
-        "orcid": "0000-0002-1033-5299"
       }
     ],
     "supplementary": [
       {
         "id": "supp1",
-        "label": "deneme",
+        "label": "Supplementary 1",
         "href": "js/data/supplementary/2867/BalkanMedJ-43-6-343.pdf",
         "caption": "",
         "mimeType": ""

@@ -145,7 +145,14 @@
       "Bash(BMJ_TEST_BYPASS_AUTH=1 node _test_crossref_picker.js)",
       "Bash(BMJ_TEST_BYPASS_AUTH=1 node _test_auto_arrange.js)",
       "Bash(BMJ_TEST_BYPASS_AUTH=1 node _test_author_dnd.js)",
-      "PowerShell(Get-NetTCPConnection *)"
+      "PowerShell(Get-NetTCPConnection *)",
+      "Bash(Select-String \"^[+-]\")",
+      "Bash(Measure-Object -Line)",
+      "PowerShell(\\(git show 81411ac:for-authors.html | Measure-Object -Line\\).Lines; \\(git show HEAD~2:for-authors.html | Measure-Object -Line\\).Lines; \\(git show HEAD:for-authors.html | Measure-Object -Line\\).Lines)",
+      "Bash(npm run *)",
+      "Bash(taskkill /F /PID 15488)",
+      "Bash(cmd.exe /c \"taskkill /F /PID 15488\")",
+      "mcp__Claude_Preview__preview_start"
     ]
   }
 }

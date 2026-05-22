@@ -777,6 +777,7 @@
         '<p class="text-sm text-gray-500 mb-3">' + formatAuthorsHtml(article.authors) + '</p>' +
         previewHtml) +
       (isCoverPageArticle(article) ? '' :
+        (issueContext === 'aip' && article.accepted ? '<p class="text-xs text-orange-700 mb-3 font-medium">Accepted: ' + escapeHtml(article.accepted) + '</p>' : '') +
         '<p class="text-xs text-gray-400 mb-3' + (getPublishedOnlineDate(article) ? '' : ' hidden') + '" data-pub-date="' + escapeHtml(normalizeDoi(article.doi)) + '">Published online: ' + escapeHtml(getPublishedOnlineDate(article)) + '</p>' +
         '<div class="flex items-center justify-between text-xs text-gray-400 pt-4 border-t border-gray-100">' +
           '<div class="flex gap-4">' +

@@ -321,7 +321,7 @@ const ROW_GRIP_SVG = '<svg viewBox="0 0 10 16" width="10" height="16" aria-hidde
 
 // Document-level delegated DnD: works for any current/future rows whose class
 // is registered in ROW_DND_SELECTORS. Saves rewiring per-render.
-const ROW_DND_SELECTORS = ['.author-row', '.aipf-author-row', '.ed-mrow'];
+const ROW_DND_SELECTORS = ['.author-row', '.aipf-author-row', '.ed-mrow', '.aff-row', '.aipf-aff-row'];
 let _dndSrc = null;
 
 function _dndRowFromEvent(e) {
@@ -372,6 +372,10 @@ document.addEventListener('drop', (e) => {
       // instead of touching the DOM directly (the re-render restores the
       // #N badges and disabled states on the ↑/↓ buttons).
       _edReorderMemberByDrop(_dndSrc, row, above);
+    } else if (_dndSrc.classList.contains('aff-row') || _dndSrc.classList.contains('aipf-aff-row')) {
+      // Affiliations: re-order + renumber badges + remap author index inputs
+      // so that authors keep pointing to the right institution after the move.
+      _reorderAffiliationByDrop(_dndSrc, row, above);
     } else {
       row.parentNode.insertBefore(_dndSrc, above ? row : row.nextSibling);
       markDirty();
@@ -384,6 +388,145 @@ document.addEventListener('drop', (e) => {
   }
   _dndSrc = null;
 });
+
+// --- Affiliation helpers (shared by Article + AIP editors) --------------
+// Build a deduplicated affiliations list from authors[] (each `.affiliation`
+// is a free-text string optionally containing "; "-separated institutions).
+// Returns the unique list (insertion order, case-insensitive dedup) plus a
+// parallel `authorIdx` array with each author's "1" / "1,2" index string.
+function buildAffiliationsFromAuthors(authors) {
+  const list = [];
+  const indexByKey = {};
+  const authorIdx = [];
+  (authors || []).forEach((au) => {
+    const raw = String((au && au.affiliation) || '').trim();
+    if (!raw) { authorIdx.push(''); return; }
+    const parts = raw.split(/\s*;\s*/).map((p) => p.trim()).filter(Boolean);
+    const idxs = [];
+    parts.forEach((p) => {
+      const key = p.toLowerCase();
+      if (!indexByKey[key]) {
+        list.push(p);
+        indexByKey[key] = list.length;
+      }
+      idxs.push(indexByKey[key]);
+    });
+    authorIdx.push(idxs.join(','));
+  });
+  return { affiliations: list, authorIdx };
+}
+
+// Look up "1,2" against affList and return "Text1; Text2". Drops out-of-range
+// or empty-text references silently — validation is the caller's job.
+function joinAffiliationsByIdx(idxStr, affList) {
+  return String(idxStr || '')
+    .split(/[,\s]+/)
+    .map((s) => parseInt(s, 10))
+    .filter((n) => Number.isFinite(n) && n >= 1 && n <= affList.length)
+    .map((n) => affList[n - 1])
+    .filter((t) => t && t.trim())
+    .join('; ');
+}
+
+// Rewrite an author-row index string like "1,3" through a mapping object
+// `{1:2, 3:1, ...}` (old position -> new position; missing keys are dropped).
+function remapAffIndices(str, mapping) {
+  const seen = {};
+  return String(str || '')
+    .split(/[,\s]+/)
+    .map((s) => parseInt(s, 10))
+    .filter((n) => Number.isFinite(n) && mapping[n] != null)
+    .map((n) => mapping[n])
+    .filter((n) => { if (seen[n]) return false; seen[n] = true; return true; })
+    .join(',');
+}
+
+function affRow(text, num) {
+  return `<div class="flex gap-2 items-center p-2 bg-white border border-gray-200 rounded-lg aff-row" ondragend="this.removeAttribute('draggable')">
+    <span class="row-grip" title="Sıralamak için tutup sürükleyin" aria-label="Sürükle" onmousedown="this.closest('.aff-row').setAttribute('draggable','true')">${ROW_GRIP_SVG}</span>
+    <span class="aff-num inline-flex items-center justify-center w-7 h-7 rounded-full bg-teal-50 text-teal-700 text-xs font-semibold flex-shrink-0">${num}</span>
+    <input class="aff-text flex-1 px-2 py-1.5 border rounded text-sm" placeholder="Kurum adı (ör. Department of X, Y University, City, Country)" value="${esc(text || '')}" oninput="markDirty()">
+    <button onclick="removeAffiliationRow(this); markDirty();" class="text-red-400 hover:text-red-600 text-lg px-1" title="Bu kurumu sil">&times;</button>
+  </div>`;
+}
+
+function aipfAffRow(text, num) {
+  return `<div class="flex gap-2 items-center p-2 bg-white border border-gray-200 rounded-lg aipf-aff-row" ondragend="this.removeAttribute('draggable')">
+    <span class="row-grip" title="Sıralamak için tutup sürükleyin" aria-label="Sürükle" onmousedown="this.closest('.aipf-aff-row').setAttribute('draggable','true')">${ROW_GRIP_SVG}</span>
+    <span class="aff-num inline-flex items-center justify-center w-7 h-7 rounded-full bg-teal-50 text-teal-700 text-xs font-semibold flex-shrink-0">${num}</span>
+    <input class="aipf-aff-text flex-1 px-2 py-1.5 border rounded text-sm" placeholder="Kurum adı (ör. Department of X, Y University, City, Country)" value="${esc(text || '')}" oninput="markDirty()">
+    <button onclick="removeAffiliationRow(this); markDirty();" class="text-red-400 hover:text-red-600 text-lg px-1" title="Bu kurumu sil">&times;</button>
+  </div>`;
+}
+
+function addAffiliation() {
+  const list = document.getElementById('affiliations-list');
+  if (!list) return;
+  list.insertAdjacentHTML('beforeend', affRow('', list.children.length + 1));
+  markDirty();
+}
+
+function addAipAffiliation() {
+  const list = document.getElementById('aipf-affiliations-list');
+  if (!list) return;
+  list.insertAdjacentHTML('beforeend', aipfAffRow('', list.children.length + 1));
+  markDirty();
+}
+
+// Renumber the badges in an affiliations list and rewrite every author row's
+// affiliation-index input through the supplied mapping (old pos -> new pos).
+function _applyAffMapping(listEl, mapping) {
+  Array.from(listEl.children).forEach((r, i) => {
+    const badge = r.querySelector('.aff-num');
+    if (badge) badge.textContent = String(i + 1);
+  });
+  const isAip = listEl.id === 'aipf-affiliations-list';
+  const inputSel = isAip ? '.aipf-au-aff-idx' : '.au-aff-idx';
+  document.querySelectorAll(inputSel).forEach((inp) => {
+    inp.value = remapAffIndices(inp.value, mapping);
+  });
+}
+
+function removeAffiliationRow(btn) {
+  const row = btn.closest('.aff-row, .aipf-aff-row');
+  if (!row) return;
+  const list = row.parentNode;
+  const rows = Array.from(list.children);
+  const deletedPos = rows.indexOf(row) + 1;
+  const mapping = {};
+  rows.forEach((_, i) => {
+    const oldPos = i + 1;
+    if (oldPos === deletedPos) return; // dropped
+    mapping[oldPos] = oldPos < deletedPos ? oldPos : oldPos - 1;
+  });
+  row.remove();
+  _applyAffMapping(list, mapping);
+}
+
+function _reorderAffiliationByDrop(srcRow, tgtRow, above) {
+  const list = srcRow.parentNode;
+  // Tag current positions so we can compute new ones after the DOM move.
+  Array.from(list.children).forEach((r, i) => { r.dataset.oldPos = String(i + 1); });
+  list.insertBefore(srcRow, above ? tgtRow : tgtRow.nextSibling);
+  const mapping = {};
+  Array.from(list.children).forEach((r, i) => {
+    const oldPos = parseInt(r.dataset.oldPos, 10);
+    if (Number.isFinite(oldPos)) mapping[oldPos] = i + 1;
+    delete r.dataset.oldPos;
+  });
+  _applyAffMapping(list, mapping);
+  markDirty();
+}
+
+// Read affiliation texts from a list element, preserving order. Trailing
+// empties are trimmed so a fresh blank "+ Kurum Ekle" row doesn't leave a
+// stray "; " on the saved string.
+function _collectAffList(listEl, textSel) {
+  if (!listEl) return [];
+  const arr = Array.from(listEl.querySelectorAll(textSel)).map((i) => i.value.trim());
+  while (arr.length && !arr[arr.length - 1]) arr.pop();
+  return arr;
+}
 
 function _edReorderMemberByDrop(srcRow, tgtRow, above) {
   const si = Number(srcRow.dataset.sec);
@@ -415,7 +558,7 @@ document.addEventListener('dragend', () => {
 // the row instead of selecting text. Clean any stray flags on mouseup.
 document.addEventListener('mouseup', () => {
   if (_dndSrc) return; // active drag, dragend will handle cleanup
-  document.querySelectorAll('.author-row[draggable="true"], .aipf-author-row[draggable="true"], .ed-mrow[draggable="true"]').forEach((r) => {
+  document.querySelectorAll('.author-row[draggable="true"], .aipf-author-row[draggable="true"], .ed-mrow[draggable="true"], .aff-row[draggable="true"], .aipf-aff-row[draggable="true"]').forEach((r) => {
     r.removeAttribute('draggable');
   });
 });
@@ -959,8 +1102,24 @@ async function renderArticleForm(el, article) {
 
       <!-- Authors tab -->
       <div class="tab-panel p-6 hidden" data-tab="authors">
-        <div id="authors-list" class="space-y-3">${(a.authors || []).map((au, i) => authorRow(au, i)).join('')}</div>
+        ${(() => {
+          const { affiliations: _affList, authorIdx: _authorIdx } = buildAffiliationsFromAuthors(a.authors);
+          const _authorsWithIdx = (a.authors || []).map((au, i) => Object.assign({}, au, { _affIdx: _authorIdx[i] }));
+          return `
+        <div class="mb-6 p-4 bg-gray-50 border border-gray-200 rounded-lg">
+          <div class="flex items-baseline justify-between mb-3">
+            <label class="text-sm font-semibold text-gray-700">Kurumlar</label>
+            <span class="text-xs text-gray-500">Yazar satırına ilgili numarayı yazın (ör. <code class="bg-white px-1 rounded">1</code> veya <code class="bg-white px-1 rounded">1,2</code>)</span>
+          </div>
+          <div id="affiliations-list" class="space-y-2">${_affList.map((t, i) => affRow(t, i + 1)).join('')}</div>
+          <button onclick="addAffiliation()" class="mt-2 px-3 py-1.5 bg-white border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 text-xs font-medium">+ Kurum Ekle</button>
+        </div>
+
+        <label class="text-sm font-semibold text-gray-700 block mb-2">Yazarlar</label>
+        <div id="authors-list" class="space-y-3">${_authorsWithIdx.map((au, i) => authorRow(au, i)).join('')}</div>
         <button onclick="addAuthor()" class="mt-3 px-4 py-2 bg-slate-50 text-slate-700 rounded-lg hover:bg-slate-100 text-sm font-medium">+ Yazar Ekle</button>
+        `;
+        })()}
       </div>
 
       <!-- Abstract tab -->
@@ -1274,7 +1433,12 @@ async function renderArticleForm(el, article) {
 
 // --- Supplementary link rows ---
 function suppLinkRow(sm = {}) {
-  return `<div class="supp-link-row grid grid-cols-1 md:grid-cols-12 gap-2 items-center" style="padding:8px;background:var(--bg-page);border:1px solid var(--border-soft);border-radius:8px">
+  // Carry the existing id through data-supp-id so saveArticle / saveAip can
+  // preserve it. Previously every save renumbered supp1, supp2, … from the
+  // row order — deleting a middle row shifted the IDs and silently broke
+  // any in-text "#supp2" anchors that pointed at the original IDs.
+  const existingId = sm.id ? String(sm.id) : '';
+  return `<div class="supp-link-row grid grid-cols-1 md:grid-cols-12 gap-2 items-center" data-supp-id="${esc(existingId)}" style="padding:8px;background:var(--bg-page);border:1px solid var(--border-soft);border-radius:8px">
     <input class="sl-label input md:col-span-3" style="padding:6px 10px;font-size:12.5px" placeholder="Etiket (ör. Tablo S1)" value="${esc(sm.label || '')}">
     <div class="md:col-span-4 flex gap-1">
       <input class="sl-href input flex-1" style="padding:6px 10px;font-size:12.5px;min-width:0" placeholder="URL veya dosya yolu" value="${esc(sm.href || '')}">
@@ -1376,10 +1540,10 @@ function addExternalLinkRow() {
 function authorRow(au, idx) {
   return `<div class="flex gap-2 items-start p-3 bg-gray-50 rounded-lg author-row" ondragend="this.removeAttribute('draggable')">
     <span class="row-grip" title="Sıralamak için tutup sürükleyin" aria-label="Sürükle" onmousedown="this.closest('.author-row').setAttribute('draggable','true')">${ROW_GRIP_SVG}</span>
-    <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-2">
-      <input class="au-name px-2 py-1.5 border rounded text-sm" placeholder="Ad Soyad" value="${esc(au.name)}">
-      <input class="au-aff px-2 py-1.5 border rounded text-sm" placeholder="Kurum" value="${esc(au.affiliation)}">
-      <input class="au-orcid px-2 py-1.5 border rounded text-sm" placeholder="ORCID" value="${esc(au.orcid)}">
+    <div class="flex-1 grid grid-cols-1 md:grid-cols-5 gap-2">
+      <input class="au-name md:col-span-2 px-2 py-1.5 border rounded text-sm" placeholder="Ad Soyad" value="${esc(au.name)}" oninput="markDirty()">
+      <input class="au-aff-idx px-2 py-1.5 border rounded text-sm" placeholder="Kurum no (1 veya 1,2)" value="${esc(au._affIdx || '')}" oninput="markDirty()">
+      <input class="au-orcid md:col-span-2 px-2 py-1.5 border rounded text-sm" placeholder="ORCID" value="${esc(au.orcid)}" oninput="markDirty()">
     </div>
     <button onclick="this.closest('.author-row').remove(); markDirty();" class="text-red-400 hover:text-red-600 text-lg px-1">&times;</button>
   </div>`;
@@ -1387,28 +1551,51 @@ function authorRow(au, idx) {
 
 function addAuthor() {
   const list = document.getElementById('authors-list');
-  list.insertAdjacentHTML('beforeend', authorRow({ name: '', affiliation: '', orcid: '' }, list.children.length));
+  list.insertAdjacentHTML('beforeend', authorRow({ name: '', _affIdx: '', orcid: '' }, list.children.length));
+  markDirty();
 }
 
 async function saveArticle(isNew) {
   const getVal = (id) => document.getElementById(id)?.value?.trim() || '';
+  const affList = _collectAffList(document.getElementById('affiliations-list'), '.aff-text');
   const authors = [];
   document.querySelectorAll('.author-row').forEach((row) => {
     authors.push({
       name: row.querySelector('.au-name').value.trim(),
-      affiliation: row.querySelector('.au-aff').value.trim(),
+      affiliation: joinAffiliationsByIdx(row.querySelector('.au-aff-idx').value, affList),
       orcid: row.querySelector('.au-orcid').value.trim(),
     });
   });
 
-  // Collect supplementary URL entries
+  // Collect supplementary URL entries. Preserve each row's original id (carried
+  // via data-supp-id) so in-text anchors keep resolving — only assign fresh
+  // supp{N} ids to rows that don't already have one.
   const supplementary = [];
-  document.querySelectorAll('.supp-link-row').forEach((row, i) => {
+  const _suppUsedIds = new Set();
+  document.querySelectorAll('.supp-link-row').forEach((row) => {
+    const existing = (row.getAttribute('data-supp-id') || '').trim();
+    if (existing) _suppUsedIds.add(existing);
+  });
+  let _suppCounter = 0;
+  const _suppNextId = () => {
+    while (true) {
+      _suppCounter += 1;
+      const candidate = `supp${_suppCounter}`;
+      if (!_suppUsedIds.has(candidate)) {
+        _suppUsedIds.add(candidate);
+        return candidate;
+      }
+    }
+  };
+  document.querySelectorAll('.supp-link-row').forEach((row) => {
     const label = row.querySelector('.sl-label').value.trim();
     const href = row.querySelector('.sl-href').value.trim();
     const caption = row.querySelector('.sl-caption').value.trim();
     if (!label && !href) return;
-    supplementary.push({ id: `supp${i + 1}`, label, href, caption, mimeType: '' });
+    const existing = (row.getAttribute('data-supp-id') || '').trim();
+    const id = existing || _suppNextId();
+    if (!existing) row.setAttribute('data-supp-id', id);
+    supplementary.push({ id, label, href, caption, mimeType: '' });
   });
 
   // Collect external link entries
@@ -2633,17 +2820,20 @@ async function renderAipArticles(el) {
         <thead><tr>
           <th class="px-4 py-3 w-8"><input type="checkbox" id="aip-select-all" class="rounded"></th>
           <th>ID</th>
-          <th>Başlık</th>
+          <th>Başlık / Kabul Tarihi</th>
           <th>Tür</th>
           <th>Durum</th>
           <th>DOI</th>
           <th class="px-4 py-3"></th>
         </tr></thead>
-        <tbody>${aip.map((a) => `
+        <tbody>${aip.map((a, _aipIdx) => `
           <tr>
             <td class="px-4 py-3"><input type="checkbox" class="aip-check rounded" data-id="${a.id}"></td>
             <td class="px-4 py-3 tabular" style="color:var(--text-faint)">${a.id}</td>
-            <td class="px-4 py-3 max-w-sm truncate"><a href="#/articles-in-press/${a.id}/edit" class="hover:underline" style="color:var(--brand-strong);font-weight:500">${esc(a.title)}</a></td>
+            <td class="px-4 py-3 max-w-sm">
+              <a href="#/articles-in-press/${a.id}/edit" class="hover:underline block" style="color:var(--brand-strong);font-weight:500;white-space:normal;line-height:1.35" title="${esc(a.title)}">${esc(a.title)}</a>
+              ${a.accepted ? `<span class="text-xs mt-0.5 block" style="color:var(--text-faint)">Kabul: ${esc(a.accepted)}</span>` : ''}
+            </td>
             <td class="px-4 py-3">${typeBadge(a.type)}</td>
             <td class="px-4 py-3">
               <div class="flex flex-wrap gap-1">
@@ -2655,8 +2845,14 @@ async function renderAipArticles(el) {
                   : '<span class="badge badge-warning" title="Tam metin yüklenmemiş — Tam Metin sekmesinden ekleyin"><span class="badge-dot"></span>Tam metin yok</span>'}
               </div>
             </td>
-            <td class="px-4 py-3 text-xs" style="color:var(--text-faint)">${esc(a.doi || '—')}</td>
+            <td class="px-4 py-3 text-xs">
+              ${a.doi
+                ? `<a href="https://doi.org/${esc(a.doi)}" target="_blank" class="hover:underline break-all" style="color:var(--brand)" title="${esc(a.doi)}">${esc(a.doi)}</a>`
+                : `<span style="color:var(--text-faint)">—</span>`}
+            </td>
             <td class="px-4 py-3 text-right whitespace-nowrap">
+              ${_aipIdx > 0 ? `<button class="btn btn-ghost btn-sm" title="Yukarı taşı" onclick="moveAip(${a.id},'up')">↑</button>` : `<span class="btn btn-ghost btn-sm invisible">↑</span>`}
+              ${_aipIdx < aip.length - 1 ? `<button class="btn btn-ghost btn-sm" title="Aşağı taşı" onclick="moveAip(${a.id},'down')">↓</button>` : `<span class="btn btn-ghost btn-sm invisible">↓</span>`}
               <a href="#/articles-in-press/${a.id}/edit?tab=fulltext" class="btn btn-ghost btn-sm" title="Doğrudan Tam Metin sekmesini aç">Tam Metin</a>
               <a href="#/articles-in-press/${a.id}/edit" class="btn btn-ghost btn-sm">Düzenle</a>
               <button class="btn btn-ghost btn-sm" style="color:var(--danger)" onclick="deleteAip(${a.id})">Sil</button>
@@ -2719,6 +2915,22 @@ async function deleteAip(id) {
   } catch (err) { toast(err.message, 'error'); }
 }
 
+// Move an AIP article up or down in the display order
+async function moveAip(id, direction) {
+  try {
+    const aip = await API.get('/articles-in-press');
+    const idx = aip.findIndex((a) => a.id === id);
+    if (idx === -1) return;
+    if (direction === 'up' && idx === 0) return;
+    if (direction === 'down' && idx === aip.length - 1) return;
+    const swapIdx = direction === 'up' ? idx - 1 : idx + 1;
+    const ids = aip.map((a) => a.id);
+    [ids[idx], ids[swapIdx]] = [ids[swapIdx], ids[idx]];
+    await API.post('/articles-in-press/reorder', { ids });
+    handleRoute();
+  } catch (err) { toast(err.message, 'error'); }
+}
+
 // --- Manuel AIP (baskıda makale) ekleme/düzenleme ---
 route('/articles-in-press/new', (el, { query } = {}) => renderAipForm(el, null, { defaultTab: query?.get('tab') }));
 route('/articles-in-press/:id/edit', async (el, { id, query }) => {
@@ -2742,6 +2954,12 @@ function renderAipForm(el, article, opts = {}) {
       subtitle: isNew ? 'Manuel olarak ekleniyor — yayına alındığında ana listeye geçecek.' : (a.title ? esc(a.title) : ''),
       actions: `
         <a href="#/articles-in-press" class="btn btn-secondary">Geri</a>
+        ${isNew ? `
+          <label class="btn btn-secondary cursor-pointer" title="Galenos şablonundaki Word dosyasından metadata yükle">
+            Word'den İçe Aktar
+            <input type="file" accept=".docx" id="aipf-import-docx" class="hidden">
+          </label>
+        ` : ''}
         ${!isNew ? `<a href="/site/article.html?id=${a.id}&source=aip" target="_blank" rel="noopener" class="btn btn-secondary" title="Public sitedeki halini yeni sekmede aç">Önizleme ↗</a>` : ''}
         <button onclick="saveAip(${isNew ? 'true' : 'false'})" class="btn btn-primary">Kaydet<span data-dirty-indicator class="text-amber-200"></span></button>
       `,
@@ -2786,8 +3004,24 @@ function renderAipForm(el, article, opts = {}) {
 
       <!-- Authors -->
       <div class="aip-tab-panel p-6 hidden" data-tab="authors">
-        <div id="aipf-authors" class="space-y-2">${(a.authors || []).map((au) => aipAuthorRow(au)).join('')}</div>
+        ${(() => {
+          const { affiliations: _affList, authorIdx: _authorIdx } = buildAffiliationsFromAuthors(a.authors);
+          const _authorsWithIdx = (a.authors || []).map((au, i) => Object.assign({}, au, { _affIdx: _authorIdx[i] }));
+          return `
+        <div class="mb-6 p-4 bg-gray-50 border border-gray-200 rounded-lg">
+          <div class="flex items-baseline justify-between mb-3">
+            <label class="text-sm font-semibold text-gray-700">Kurumlar</label>
+            <span class="text-xs text-gray-500">Yazar satırına ilgili numarayı yazın (ör. <code class="bg-white px-1 rounded">1</code> veya <code class="bg-white px-1 rounded">1,2</code>)</span>
+          </div>
+          <div id="aipf-affiliations-list" class="space-y-2">${_affList.map((t, i) => aipfAffRow(t, i + 1)).join('')}</div>
+          <button type="button" onclick="addAipAffiliation()" class="mt-2 px-3 py-1.5 bg-white border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 text-xs font-medium">+ Kurum Ekle</button>
+        </div>
+
+        <label class="text-sm font-semibold text-gray-700 block mb-2">Yazarlar</label>
+        <div id="aipf-authors" class="space-y-2">${_authorsWithIdx.map((au) => aipAuthorRow(au)).join('')}</div>
         <button type="button" onclick="addAipAuthor()" class="btn btn-secondary btn-sm mt-3">+ Yazar Ekle</button>
+        `;
+        })()}
       </div>
 
       <!-- Abstract -->
@@ -2798,15 +3032,21 @@ function renderAipForm(el, article, opts = {}) {
 
       <!-- Full Text -->
       <div class="aip-tab-panel p-6 hidden" data-tab="fulltext">
-        <div class="flex items-center justify-between mb-3">
+        <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
           <div>
             <h3 class="text-sm font-semibold" style="color:var(--text-strong)">Tam Metin</h3>
             <p class="text-xs mt-0.5" style="color:var(--text-muted)">Makale yayınlandığında aynı ID ile ana listeye aktarılır.</p>
+            ${!isNew ? `<label class="text-xs mt-2 inline-flex items-center gap-1.5 cursor-pointer" style="color:var(--text-muted)">
+              <input type="checkbox" id="aipf-has-fulltext" class="rounded" ${a.hasFullText ? 'checked' : ''} onchange="markDirty()">
+              <span>Tam metin görünür</span>
+              <span class="text-xs" style="color:var(--text-faint)">(işaretlenmezse makale sayfasında sadece özet gösterilir)</span>
+            </label>` : ''}
           </div>
-          <div class="flex gap-2">
+          <div class="flex gap-2 flex-wrap">
             <label class="btn btn-secondary btn-sm cursor-pointer">
               HTML Dosyadan Yükle <input id="aipf-fulltext-file" type="file" accept=".html,.htm" class="hidden">
             </label>
+            ${!isNew ? `<a href="/site/article.html?id=${a.id}&source=aip" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" title="Tam metnin canlı sitedeki halini yeni sekmede aç">Önizleme ↗</a>` : ''}
             ${!isNew ? `<button type="button" onclick="saveAipFullText(${a.id})" class="btn btn-primary btn-sm">Tam Metni Kaydet</button>` : ''}
           </div>
         </div>
@@ -3003,8 +3243,79 @@ function renderAipForm(el, article, opts = {}) {
     });
   }
 
+  // ── Word'den İçe Aktar (Galenos şablonu) ──
+  // Only rendered on new AIPs. Uploads the .docx to /api/articles-in-press/
+  // parse-docx and pre-fills General/Authors/Abstract form fields. Tam Metin
+  // and Dosyalar sekmeleri kapsam dışı — kullanıcının zaten ayrı bir akışı var.
+  const importInput = document.getElementById('aipf-import-docx');
+  if (importInput) {
+    importInput.addEventListener('change', async () => {
+      const file = importInput.files && importInput.files[0];
+      if (!file) return;
+      // Manual entries on the form take precedence: warn before clobbering.
+      const hasManualData = ['aipf-type', 'aipf-doi', 'aipf-title'].some((id) => {
+        const v = document.getElementById(id)?.value || '';
+        return v.trim().length > 0;
+      });
+      if (hasManualData) {
+        const ok = await confirmAction('Form alanları dolu. Word\'den İçe Aktar mevcut verilerin üzerine yazacak. Devam edilsin mi?');
+        if (!ok) { importInput.value = ''; return; }
+      }
+      try {
+        const fd = new FormData();
+        fd.append('file', file);
+        const res = await fetch('/api/articles-in-press/parse-docx', { method: 'POST', body: fd });
+        const meta = await res.json();
+        if (!res.ok) throw new Error(meta.error || 'Word dosyası ayrıştırılamadı');
+        _applyAipDocxMetadata(meta);
+        const warn = (meta.warnings || []).filter(Boolean);
+        toast(warn.length
+          ? `Word içe aktarıldı. ${warn.length} uyarı: ${warn.join('; ')}`
+          : 'Word dosyası başarıyla içe aktarıldı.', warn.length ? 'warning' : 'success');
+        markDirty();
+      } catch (err) {
+        toast(`İçe aktarma hatası: ${err.message}`, 'error');
+      } finally {
+        importInput.value = ''; // allow re-selecting the same file
+      }
+    });
+  }
+
   clearDirty();
   el.addEventListener('input', markDirty);
+}
+
+// Replace AIP form values with metadata extracted from a Word submission.
+// Re-renders the Yazarlar lists from scratch (using the same helpers the
+// initial form render uses) so the Kurumlar editor stays in sync.
+function _applyAipDocxMetadata(meta) {
+  const setVal = (id, v) => { const el = document.getElementById(id); if (el) el.value = v == null ? '' : String(v); };
+  setVal('aipf-type', meta.type);
+  setVal('aipf-doi', meta.doi);
+  setVal('aipf-title', meta.title);
+  setVal('aipf-received', meta.received);
+  setVal('aipf-accepted', meta.accepted);
+  // The AIP form has no "published" date field — that's a journal-system
+  // decision, not in the manuscript — so meta.published is ignored.
+  setVal('aipf-keywords', (meta.keywords || []).join(', '));
+
+  // Authors + Kurumlar: rebuild both lists from the parsed authors.
+  const affList = document.getElementById('aipf-affiliations-list');
+  const authorsList = document.getElementById('aipf-authors');
+  if (affList && authorsList) {
+    const { affiliations, authorIdx } = buildAffiliationsFromAuthors(meta.authors || []);
+    affList.innerHTML = affiliations.map((t, i) => aipfAffRow(t, i + 1)).join('');
+    authorsList.innerHTML = (meta.authors || []).map((au, i) => aipAuthorRow(Object.assign({}, au, { _affIdx: authorIdx[i] }))).join('');
+  }
+
+  // Abstract — feed plain paragraphs into the WYSIWYG editor as <p>...</p>.
+  const abstractHtml = String(meta.abstract || '')
+    .split(/\n\s*\n+/)
+    .map((p) => p.trim())
+    .filter(Boolean)
+    .map((p) => `<p>${esc(p)}</p>`)
+    .join('');
+  if (abstractHtml) setHtmlEditorContent('aip-abs', abstractHtml);
 }
 
 // Load existing full-text HTML into the AIP editor (prefix 'aip-ft')
@@ -3026,6 +3337,7 @@ async function loadAipFullTextIntoEditor(articleId) {
       _suppressDirty = true;
       try {
         _normalizeMsoReferenceList(visual);
+        _promoteMsoHeadings(visual);
         _ensureMediaIds(visual);
         _autoLinkInEditor(visual);
       } finally {
@@ -3065,10 +3377,10 @@ async function saveAipFullText(articleId) {
 function aipAuthorRow(au = {}) {
   return `<div class="aipf-author-row flex gap-2 items-start p-2 bg-gray-50 rounded-lg" ondragend="this.removeAttribute('draggable')">
     <span class="row-grip" title="Sıralamak için tutup sürükleyin" aria-label="Sürükle" onmousedown="this.closest('.aipf-author-row').setAttribute('draggable','true')">${ROW_GRIP_SVG}</span>
-    <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-2">
-      <input class="aipf-au-name px-2 py-1.5 border rounded text-sm" placeholder="Ad Soyad" value="${esc(au.name || '')}">
-      <input class="aipf-au-aff px-2 py-1.5 border rounded text-sm" placeholder="Kurum" value="${esc(au.affiliation || '')}">
-      <input class="aipf-au-orcid px-2 py-1.5 border rounded text-sm" placeholder="ORCID" value="${esc(au.orcid || '')}">
+    <div class="flex-1 grid grid-cols-1 md:grid-cols-5 gap-2">
+      <input class="aipf-au-name md:col-span-2 px-2 py-1.5 border rounded text-sm" placeholder="Ad Soyad" value="${esc(au.name || '')}" oninput="markDirty()">
+      <input class="aipf-au-aff-idx px-2 py-1.5 border rounded text-sm" placeholder="Kurum no (1 veya 1,2)" value="${esc(au._affIdx || '')}" oninput="markDirty()">
+      <input class="aipf-au-orcid md:col-span-2 px-2 py-1.5 border rounded text-sm" placeholder="ORCID" value="${esc(au.orcid || '')}" oninput="markDirty()">
     </div>
     <button type="button" onclick="this.closest('.aipf-author-row').remove(); markDirty();" class="text-red-400 hover:text-red-600 text-lg px-1">&times;</button>
   </div>`;
@@ -3083,11 +3395,13 @@ function addAipAuthor() {
 
 async function saveAip(isNew) {
   const getVal = (id) => document.getElementById(id)?.value?.trim() || '';
+  const affList = _collectAffList(document.getElementById('aipf-affiliations-list'), '.aipf-aff-text');
   const authors = [];
   document.querySelectorAll('.aipf-author-row').forEach((row) => {
     const name = row.querySelector('.aipf-au-name').value.trim();
-    const affiliation = row.querySelector('.aipf-au-aff').value.trim();
+    const affIdx = row.querySelector('.aipf-au-aff-idx').value.trim();
     const orcid = row.querySelector('.aipf-au-orcid').value.trim();
+    const affiliation = joinAffiliationsByIdx(affIdx, affList);
     if (!name && !affiliation && !orcid) return;
     authors.push({ name, affiliation, orcid });
   });
@@ -3095,14 +3409,35 @@ async function saveAip(isNew) {
   const abstractHtml = getHtmlEditorContent('aip-abs');
   const abstract = abstractHtml.replace(/<[^>]+>/g, '').trim();
 
-  // Collect supplementary URL entries from the Files tab (same as Article Edit)
+  // Collect supplementary URL entries from the Files tab (same as Article Edit).
+  // Preserve each row's existing id (carried via data-supp-id) so in-text anchors
+  // (#supp2, etc.) keep pointing at the right file when a middle row gets deleted.
   const supplementary = [];
-  document.querySelectorAll('.supp-link-row').forEach((row, i) => {
+  const _suppUsedIds = new Set();
+  document.querySelectorAll('.supp-link-row').forEach((row) => {
+    const existing = (row.getAttribute('data-supp-id') || '').trim();
+    if (existing) _suppUsedIds.add(existing);
+  });
+  let _suppCounter = 0;
+  const _suppNextId = () => {
+    while (true) {
+      _suppCounter += 1;
+      const candidate = `supp${_suppCounter}`;
+      if (!_suppUsedIds.has(candidate)) {
+        _suppUsedIds.add(candidate);
+        return candidate;
+      }
+    }
+  };
+  document.querySelectorAll('.supp-link-row').forEach((row) => {
     const label = row.querySelector('.sl-label').value.trim();
     const href = row.querySelector('.sl-href').value.trim();
     const caption = row.querySelector('.sl-caption').value.trim();
     if (!label && !href) return;
-    supplementary.push({ id: `supp${i + 1}`, label, href, caption, mimeType: '' });
+    const existing = (row.getAttribute('data-supp-id') || '').trim();
+    const id = existing || _suppNextId();
+    if (!existing) row.setAttribute('data-supp-id', id);
+    supplementary.push({ id, label, href, caption, mimeType: '' });
   });
 
   const data = {
@@ -3120,8 +3455,21 @@ async function saveAip(isNew) {
     supplementary,
   };
 
+  // Honour the user's "Tam metin görünür" toggle. Without this, the checkbox
+  // would only affect the inline indicator and reset to whatever the server
+  // last knew on the next save. The toggle is absent in the "new article"
+  // form (there's nothing to toggle yet), so we only read it when present.
+  const ftToggle = document.getElementById('aipf-has-fulltext');
+  if (ftToggle) data.hasFullText = ftToggle.checked;
+
   if (!data.title) { toast('Başlık zorunludur', 'error'); return; }
   if (!data.type) { toast('Makale türü zorunludur', 'error'); return; }
+  // Authors aren't strictly required by the data model, but an article with
+  // zero authors is almost always an oversight — warn before silently saving
+  // a record that will display "by (no authors)" on the public page.
+  if (!authors.length) {
+    if (!await confirmAction('Bu makalede hiç yazar yok. Yine de kaydetmek istiyor musunuz?')) return;
+  }
 
   try {
     if (isNew) {
@@ -3141,15 +3489,21 @@ async function saveAip(isNew) {
     } else {
       const id = window.location.hash.match(/#\/articles-in-press\/(\d+)\/edit/)?.[1];
       await API.put(`/articles-in-press/${id}`, data);
-      // Also persist full text via shared endpoint
+      // Also persist full text via shared endpoint — but ONLY if the editor
+      // actually has content. Skipping when empty prevents the race condition
+      // where loadAipFullTextIntoEditor() hasn't resolved yet by the time the
+      // user clicks Kaydet on the Genel/Yazarlar tab, which would otherwise
+      // overwrite the stored HTML with an empty string.
       if (document.getElementById('aip-ft-visual') && id) {
         const ftHtml = getHtmlEditorContent('aip-ft');
-        try {
-          await API.put(`/articles/${id}/fulltext`, { html: ftHtml });
-          const status = document.getElementById('aipf-fulltext-status');
-          if (status) status.textContent = `Kaydedildi (${ftHtml.length.toLocaleString('tr-TR')} karakter).`;
-        } catch (ftErr) {
-          toast(`Genel veriler kaydedildi ama tam metin kaydedilemedi: ${ftErr.message}`, 'error');
+        if (ftHtml.trim()) {
+          try {
+            await API.put(`/articles/${id}/fulltext`, { html: ftHtml });
+            const status = document.getElementById('aipf-fulltext-status');
+            if (status) status.textContent = `Kaydedildi (${ftHtml.length.toLocaleString('tr-TR')} karakter).`;
+          } catch (ftErr) {
+            toast(`Genel veriler kaydedildi ama tam metin kaydedilemedi: ${ftErr.message}`, 'error');
+          }
         }
       }
       clearDirty();
@@ -3430,13 +3784,18 @@ function htmlEditorModeSwitch(prefix) {
 function htmlEditor({ prefix, initialHtml = '', rows = 12, placeholder = '', variant = 'full', minHeight = '160px', visualClass = '' }) {
   _htmlEditorModes[prefix] = 'visual';
   const safePlaceholder = (placeholder || '').replace(/"/g, '&quot;');
+  // For the full-variant editor (Tam Metin), constrain the height so the
+  // editor scrolls internally. The toolbar (rendered above this div) stays
+  // visible in the same position regardless of how long the article is.
+  // calc() leaves room for the page header, tabs, toolbar, and bottom margin.
+  const visualMaxHeight = variant === 'full' ? 'max-height:calc(100vh - 320px);' : '';
   return `
     <div class="html-editor" data-html-editor="${prefix}">
       <div class="flex items-center justify-end mb-2">
         ${htmlEditorModeSwitch(prefix)}
       </div>
       ${htmlEditorToolbar(prefix, variant)}
-      <div id="${prefix}-visual" contenteditable="true" class="w-full px-4 py-3 border rounded-b-lg text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 max-w-none overflow-auto bg-white ${visualClass}" style="min-height:${minHeight}" data-placeholder="${safePlaceholder}">${initialHtml || ''}</div>
+      <div id="${prefix}-visual" contenteditable="true" class="w-full px-4 py-3 border rounded-b-lg text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 max-w-none overflow-y-auto bg-white ${visualClass}" style="min-height:${minHeight};${visualMaxHeight}" data-placeholder="${safePlaceholder}">${initialHtml || ''}</div>
       <textarea id="${prefix}-source" rows="${rows}" class="w-full px-3 py-2 border rounded-lg text-xs font-mono hidden" placeholder="${safePlaceholder}">${esc(initialHtml || '')}</textarea>
     </div>`;
 }
@@ -3612,8 +3971,276 @@ async function openFigurePicker(prefix) {
   overlay.querySelectorAll('.fig-pick').forEach((btn) => {
     btn.onclick = () => {
       close();
-      insertFigureIntoFullText(btn.dataset.url, btn.dataset.name);
+      openFigureInsertDialog(btn.dataset.url, btn.dataset.name);
     };
+  });
+}
+
+// ── Helper: convert plain text caption (with optional [N] tokens) to HTML ──
+// [N] becomes a linked superscript citation showing the bare number (no
+// brackets), matching the rest of the site's citation style. Everything else
+// is HTML-escaped.
+function _captionToHtml(rawCaption) {
+  if (!rawCaption) return '';
+  return esc(rawCaption).replace(/\[(\d+)\]/g, (_, n) =>
+    `<sup><a href="#ref-${n}" class="article-ref-citation">${n}</a></sup>`
+  );
+}
+
+// ── Figure insert dialog: single caption field that supports inline [N] refs ──
+async function openFigureInsertDialog(url, filename) {
+  const prefix = document.getElementById('ft-visual') ? 'ft'
+               : document.getElementById('aip-ft-visual') ? 'aip-ft'
+               : null;
+
+  let refCount = 0;
+  if (prefix) {
+    try { refCount = _scanCrossRefTargets(prefix).refCount || 0; } catch { /* ignore */ }
+  }
+
+  // Extract article ID from url — handles both "images/articles/ID/file" and "/images/articles/ID/file"
+  const articleIdMatch = (url || '').match(/images\/articles\/([^/]+)\//i);
+  const articleId = articleIdMatch ? articleIdMatch[1] : null;
+  if (!articleId) console.warn('[figureDialog] articleId could not be extracted from url:', url);
+
+  // Load previously saved caption (and migrate legacy source field into it)
+  let savedMeta = {};
+  if (articleId) {
+    try {
+      const allMeta = await API.get(`/media/article/${articleId}/figure-meta`);
+      savedMeta = allMeta[filename] || {};
+    } catch { /* ignore — first time or no metadata yet */ }
+  }
+
+  // Legacy migration: older saved entries stored "source" separately. Merge it
+  // back into the caption so the user sees everything in one place.
+  let defaultCaption;
+  if (savedMeta.caption || savedMeta.source) {
+    const c = (savedMeta.caption || '').trim();
+    const s = (savedMeta.source  || '').trim();
+    defaultCaption = c && s ? `${c} ${s}` : (c || s);
+  } else {
+    defaultCaption = (filename || '').replace(/\.[^.]+$/, '');
+  }
+
+  // Size preference: 'auto' (system decides at insert time from image natural
+  // dimensions), 'small' / 'medium' / 'large' / 'full' (manual override).
+  // The dialog UI keeps live state in `currentSize` and surfaces what 'auto'
+  // resolves to once the preview image loads.
+  let currentSize = savedMeta.size || 'auto';
+  let autoResolvedSize = 'medium'; // updated when the preview image loads
+
+  // Build chip grid — all refs in a scrollable container
+  const chipRows = refCount > 0
+    ? `<div style="display:flex;flex-wrap:wrap;gap:4px;max-height:96px;overflow-y:auto;padding:2px">
+        ${Array.from({ length: refCount }, (_, i) => i + 1)
+          .map((n) => `<button type="button" class="fig-ref-chip" data-num="${n}"
+            style="min-width:36px;padding:3px 7px;border-radius:5px;border:1px solid var(--border);background:#fff;color:var(--text-strong);font-size:11.5px;font-weight:500;cursor:pointer;line-height:1.4">[${n}]</button>`)
+          .join('')}
+       </div>`
+    : `<p class="text-xs py-2" style="color:var(--text-faint)">Tam metinde henüz kaynakça yok. Kaynak numarasını aşağıdan elle ekleyin.</p>`;
+
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.innerHTML = `
+    <div class="modal-dialog" style="max-width:520px">
+      <div class="flex items-center justify-between px-6 py-4" style="border-bottom:1px solid var(--border-soft)">
+        <div>
+          <h3 class="text-base font-semibold" style="color:var(--text-strong);letter-spacing:-0.01em">Figür Ekle</h3>
+          <p class="text-xs mt-0.5" style="color:var(--text-muted)">${esc(filename)}</p>
+        </div>
+        <button class="modal-close p-1.5 rounded-md" style="color:var(--text-muted)" aria-label="Kapat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="px-6 py-5 space-y-4">
+        <!-- Thumbnail + caption textarea -->
+        <div style="display:flex;gap:14px;align-items:flex-start">
+          <div style="flex-shrink:0;width:96px;height:80px;background:#f4f3f0;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center">
+            <img src="/site/${esc(url)}" alt="" style="max-width:100%;max-height:100%;object-fit:contain" onerror="this.parentNode.style.background='var(--bg-subtle)'">
+          </div>
+          <div style="flex:1;min-width:0">
+            <label class="block text-xs font-semibold mb-1.5" style="color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em">Figür Açıklaması</label>
+            <textarea id="fig-dlg-caption" class="input w-full" rows="3" style="resize:vertical;font-family:inherit" placeholder="Figure 1. Açıklama metni. Kaynak atıfı için [3] gibi yazın veya aşağıdaki butonları kullanın." autocomplete="off">${esc(defaultCaption)}</textarea>
+            <p class="text-xs mt-1" style="color:var(--text-faint)">Kaynak atıflarını <strong>[3]</strong>, <strong>[5,7]</strong> biçiminde yazın — kaydedildiğinde tıklanabilir bağlantıya dönüşür.</p>
+          </div>
+        </div>
+
+        <!-- Reference chips block (appends [N] into caption) -->
+        <div style="background:var(--bg-subtle);border:1px solid var(--border-soft);border-radius:8px;padding:10px 12px">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-medium" style="color:var(--text-muted)">
+              ${refCount > 0 ? `Kaynakçadan atıf ekle (${refCount} kaynak)` : 'Kaynakça (boş)'}
+            </span>
+            <div class="flex items-center gap-1.5">
+              <input id="fig-dlg-manual-n" type="number" min="1" class="input" placeholder="N"
+                style="width:60px;font-size:12px;padding:3px 8px;text-align:center">
+              <button type="button" id="fig-dlg-manual-add" class="btn btn-secondary btn-sm" style="font-size:12px;padding:4px 10px">Ekle</button>
+            </div>
+          </div>
+          ${chipRows}
+        </div>
+
+        <!-- Figure size selector -->
+        <div>
+          <label class="block text-xs font-semibold mb-1.5" style="color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em">
+            Görsel Boyutu
+            <span id="fig-dlg-auto-hint" style="font-weight:400;text-transform:none;color:var(--text-faint);margin-left:6px"></span>
+          </label>
+          <div id="fig-dlg-size-group" style="display:flex;gap:6px;flex-wrap:wrap">
+            <button type="button" class="fig-size-btn" data-size="auto"   style="flex:1;min-width:80px;padding:6px 10px;font-size:12px;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--text-strong);cursor:pointer;transition:all .12s">Otomatik</button>
+            <button type="button" class="fig-size-btn" data-size="small"  style="flex:1;min-width:60px;padding:6px 10px;font-size:12px;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--text-strong);cursor:pointer;transition:all .12s">Küçük</button>
+            <button type="button" class="fig-size-btn" data-size="medium" style="flex:1;min-width:60px;padding:6px 10px;font-size:12px;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--text-strong);cursor:pointer;transition:all .12s">Orta</button>
+            <button type="button" class="fig-size-btn" data-size="large"  style="flex:1;min-width:60px;padding:6px 10px;font-size:12px;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--text-strong);cursor:pointer;transition:all .12s">Büyük</button>
+            <button type="button" class="fig-size-btn" data-size="full"   style="flex:1;min-width:80px;padding:6px 10px;font-size:12px;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--text-strong);cursor:pointer;transition:all .12s">Tam Genişlik</button>
+          </div>
+          <p class="text-xs mt-1" style="color:var(--text-faint)"><strong>Otomatik</strong>: görselin doğal boyutuna göre sistem karar verir. Diğer seçenekler boyutu sabitler.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between px-6 py-4" style="border-top:1px solid var(--border-soft);background:var(--bg-subtle);border-radius:0 0 var(--radius-lg) var(--radius-lg)">
+        <button data-action="cancel" class="btn btn-secondary">İptal</button>
+        <div class="flex gap-2">
+          <button data-action="save" class="btn btn-secondary" title="Açıklamayı kaydet (tam metne eklemez). Otomatik Düzenle ile metne yansır.">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+            Kaydet
+          </button>
+          <button data-action="insert" class="btn btn-primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Tam Metne Ekle
+          </button>
+        </div>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+
+  const captionInput = overlay.querySelector('#fig-dlg-caption');
+  const manualN      = overlay.querySelector('#fig-dlg-manual-n');
+
+  // Helper: insert [N] at cursor in caption field
+  function insertRefTag(n) {
+    const tag = `[${n}]`;
+    const start = captionInput.selectionStart ?? captionInput.value.length;
+    const end   = captionInput.selectionEnd   ?? start;
+    captionInput.value = captionInput.value.slice(0, start) + tag + captionInput.value.slice(end);
+    captionInput.setSelectionRange(start + tag.length, start + tag.length);
+    captionInput.focus();
+  }
+
+  overlay.querySelectorAll('.fig-ref-chip').forEach((btn) => {
+    btn.onclick = () => insertRefTag(btn.dataset.num);
+  });
+
+  overlay.querySelector('#fig-dlg-manual-add').onclick = () => {
+    const n = parseInt(manualN.value, 10);
+    if (!n || n < 1) { manualN.focus(); manualN.select(); return; }
+    insertRefTag(n);
+    manualN.value = '';
+    captionInput.focus();
+  };
+  manualN.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); overlay.querySelector('#fig-dlg-manual-add').click(); }
+  });
+
+  // ── Size selector ──
+  const sizeButtons = overlay.querySelectorAll('.fig-size-btn');
+  const autoHint    = overlay.querySelector('#fig-dlg-auto-hint');
+  const previewImg  = overlay.querySelector('.modal-dialog > div:nth-child(2) img');
+
+  function paintSizeButtons() {
+    sizeButtons.forEach((b) => {
+      const isActive = b.dataset.size === currentSize;
+      b.style.background = isActive ? 'var(--brand)' : '#fff';
+      b.style.color      = isActive ? '#fff'         : 'var(--text-strong)';
+      b.style.borderColor = isActive ? 'var(--brand)' : 'var(--border)';
+      b.style.fontWeight  = isActive ? '600'          : '400';
+    });
+  }
+  sizeButtons.forEach((b) => {
+    b.onclick = () => { currentSize = b.dataset.size; paintSizeButtons(); };
+  });
+  paintSizeButtons();
+
+  // Auto-detect size from the preview image's natural width once it loads.
+  //   <600px  → small  (icon-like, fits a column)
+  //   600-1200 → medium (default for typical illustrations)
+  //   >1200   → large  (wide diagrams / multi-panel)
+  function _computeAutoSize(naturalW) {
+    if (!naturalW || naturalW <= 0) return 'medium';
+    if (naturalW < 600)  return 'small';
+    if (naturalW < 1200) return 'medium';
+    return 'large';
+  }
+  if (previewImg) {
+    const applyAuto = () => {
+      autoResolvedSize = _computeAutoSize(previewImg.naturalWidth);
+      const label = { small: 'Küçük', medium: 'Orta', large: 'Büyük' }[autoResolvedSize] || 'Orta';
+      if (autoHint) autoHint.textContent = `(otomatik → ${label}, ${previewImg.naturalWidth || '?'}px)`;
+    };
+    if (previewImg.complete && previewImg.naturalWidth) applyAuto();
+    else previewImg.addEventListener('load', applyAuto, { once: true });
+  }
+
+  return new Promise((resolve) => {
+    const close = async (action) => {
+      // Read value BEFORE removing the overlay (detached inputs may clear)
+      const captionVal = captionInput.value.trim();
+
+      if (action !== 'cancel') {
+        const btn = overlay.querySelector(`[data-action="${action}"]`);
+        if (btn) { btn.disabled = true; btn.style.opacity = '0.6'; }
+      }
+
+      overlay.remove();
+      document.removeEventListener('keydown', onKey);
+
+      if (action === 'cancel') { resolve(false); return; }
+
+      // Resolve "auto" to the concrete size detected from the image's natural
+      // dimensions. Stored as the literal selection ("auto" / "small" / …) so
+      // the dialog can show the user's intent on next open; the resolved
+      // concrete size is passed into the editor for rendering.
+      const concreteSize = currentSize === 'auto' ? autoResolvedSize : currentSize;
+
+      // Persist metadata — source is empty now (merged into caption)
+      if (articleId) {
+        try {
+          await API.put(`/media/article/${articleId}/figure-meta`, {
+            filename,
+            caption: captionVal,
+            source:  '',
+            size:    currentSize,
+          });
+        } catch (err) {
+          toast(`Kayıt hatası: ${err.message}`, 'error');
+          if (action === 'save') { resolve(false); return; }
+        }
+      } else if (action === 'save') {
+        toast('Makale ID bulunamadı — açıklama kaydedilemedi', 'warning');
+        resolve(false);
+        return;
+      }
+
+      if (action === 'save') {
+        toast('Figür açıklaması kaydedildi. Tam Metin sekmesinden "Otomatik Düzenle" ile metne yansıtın.');
+        resolve('saved');
+        return;
+      }
+
+      // action === 'insert'
+      insertFigureIntoFullText(url, filename, captionVal, concreteSize);
+      resolve(true);
+    };
+
+    const onKey = (e) => { if (e.key === 'Escape') close('cancel'); };
+    document.addEventListener('keydown', onKey);
+    overlay.querySelector('.modal-close').onclick           = () => close('cancel');
+    overlay.querySelector('[data-action="cancel"]').onclick = () => close('cancel');
+    overlay.querySelector('[data-action="save"]').onclick   = () => close('save');
+    overlay.querySelector('[data-action="insert"]').onclick = () => close('insert');
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) close('cancel'); });
+    setTimeout(() => { captionInput.focus(); captionInput.select(); }, 50);
   });
 }
 
@@ -3643,6 +4270,35 @@ function saveCrossRefSelection(prefix) {
 function _ensureMediaIds(visualEl) {
   if (!visualEl) return false;
   let mutated = false;
+
+  // ── Step 0: clean up "fake figures" ──
+  // Word paste / accidental insertion can produce a <figure> element that has
+  // NO <img>, just bold heading text inside (e.g. <figure><b>INTRODUCTION</b></figure>).
+  // The site renders these as bordered cards, breaking the layout. Detect them
+  // and unwrap to a plain bold paragraph so they look like normal section
+  // headings ("MATERIALS AND METHODS", etc.).
+  visualEl.querySelectorAll('figure').forEach((f) => {
+    if (f.querySelector('img, picture, svg, video, iframe')) return; // real figure
+    const text = (f.textContent || '').replace(/\s+/g, ' ').trim();
+    if (!text) {
+      // Empty figure — drop it entirely
+      f.remove();
+      mutated = true;
+      return;
+    }
+    // Short, heading-like content (no real paragraphs): convert to bold <p>
+    const hasParagraph = f.querySelector('p, ol, ul');
+    if (!hasParagraph && text.length < 120) {
+      const p = document.createElement('p');
+      p.className = 'MsoNormal';
+      const b = document.createElement('b');
+      b.textContent = text;
+      p.appendChild(b);
+      f.replaceWith(p);
+      mutated = true;
+    }
+  });
+
   // Figures
   const figs = visualEl.querySelectorAll('figure');
   const usedFig = new Set();
@@ -3724,8 +4380,96 @@ function _findRefHeading(visualEl) {
   return null;
 }
 
+// Promote Word-style "<p class='MsoNormal'><b>INTRODUCTION</b></p>" into a
+// Convert a heading string to Title Case, keeping short function words lowercase
+// unless they start the heading. Handles Turkish conjunctions too.
+function _toTitleCase(str) {
+  const small = new Set(['a','an','the','and','but','or','for','nor','on','at',
+    'to','by','of','in','up','as','if','so','vs','ve','ile','da','de','ya','ki']);
+  return str.split(/\s+/).map(function(word, i) {
+    if (!word) return word;
+    const lower = word.toLowerCase();
+    if (i > 0 && small.has(lower)) return lower;
+    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+  }).join(' ');
+}
+
+// proper <h3>INTRODUCTION</h3> so the editor preview, the saved HTML, and the
+// public-site TOC ("In This Article") all see real headings — matching the
+// look-and-feel of articles whose source HTML was migrated to clean <h3>s.
+// Mirrors the runtime promoter in article.html (cleanupReferenceListItems'
+// sibling) so the editor and reader views never disagree.
+function _promoteMsoHeadings(visualEl) {
+  if (!visualEl) return false;
+  let mutated = false;
+  visualEl.querySelectorAll('p').forEach((p) => {
+    if (p.closest('.article-references, .article-acknowledgments, .article-footnotes, .article-supplementary, figure, .article-figure, .article-table-wrap, table')) return;
+
+    // Top-level child must be the bold wrapper for the whole paragraph
+    const first = p.firstElementChild;
+    if (!first || (first.tagName !== 'B' && first.tagName !== 'STRONG')) return;
+
+    const text = (p.textContent || '').replace(/\s+/g, ' ').trim();
+    if (!text || text.length > 100) return;
+
+    // The bold element must cover the paragraph's full visible text
+    const boldText = (first.textContent || '').replace(/\s+/g, ' ').trim();
+    if (boldText !== text) return;
+
+    // Heading-like: mostly UPPERCASE, or short Title Case starting with capital
+    const isUpper = text === text.toUpperCase() && /[A-ZÇĞİŞÜÖ]/.test(text);
+    const isTitleCase = /^[A-ZÇĞİŞÜÖ]/.test(text) && text.length < 50;
+    if (!isUpper && !isTitleCase) return;
+
+    // "References" has its own handling (_normalizeMsoReferenceList relies on
+    // _findRefHeading which accepts <p>/<b> too) — leave it alone.
+    if (/^(references?|bibliography|kaynaklar|kaynakça|referanslar|kaynak\s*listesi)$/i.test(text)) return;
+
+    const h3 = document.createElement('h3');
+    h3.textContent = _toTitleCase(text);
+    p.parentNode.replaceChild(h3, p);
+    mutated = true;
+  });
+  if (mutated && typeof markDirty === 'function') markDirty();
+  return mutated;
+}
+
+// Strip the redundant inline "N." prefix from each <li> inside the references
+// list. Word exports embed the literal "1.", "2." numbers as text at the
+// start of each MsoListParagraph; once those become <li>s, the <ol> already
+// auto-numbers them, so the inline numbers create the duplicate "1.  1. ..."
+// effect seen in the editor and on the live site.
+function _cleanupReferenceListItems(visualEl) {
+  if (!visualEl) return false;
+  const ol = visualEl.querySelector('.article-references ol, ol.article-references-ol');
+  if (!ol) return false;
+  let mutated = false;
+  ol.querySelectorAll(':scope > li').forEach((li) => {
+    const before = li.innerHTML;
+    let html = before;
+    // Number-containing leading span (Word's "<span>1.&nbsp;&nbsp;</span>Author…"):
+    // remove the whole span if its visible text is just "N." plus whitespace.
+    html = html.replace(/^\s*<span\b[^>]*>\s*\d+\.\s*(?:&nbsp;|\s)*<\/span>\s*/i, '');
+    // Bare leading "N." text optionally followed by nbsp/whitespace.
+    html = html.replace(/^(?:\s|&nbsp;)*\d+\.(?:\s|&nbsp;)*/, '');
+    // Leading whitespace-only span (the spacer left over from Word).
+    html = html.replace(/^\s*<span\b[^>]*>(?:\s|&nbsp;|<br\s*\/?>)*<\/span>\s*/i, '');
+    // Repeat once in case the number sat inside a span we just removed.
+    html = html.replace(/^(?:\s|&nbsp;)*\d+\.(?:\s|&nbsp;)*/, '');
+    if (html !== before) {
+      li.innerHTML = html;
+      mutated = true;
+    }
+  });
+  if (mutated && typeof markDirty === 'function') markDirty();
+  return mutated;
+}
+
 function _normalizeMsoReferenceList(visualEl) {
   if (!visualEl) return false;
+  // Always clean up any existing reference <li>s — this catches articles where
+  // a previous run wrapped the list in <ol> but left the inline numbers behind.
+  _cleanupReferenceListItems(visualEl);
   const h = _findRefHeading(visualEl);
   if (!h) return false;
   const items = [];
@@ -4111,6 +4855,7 @@ function _scanCrossRefTargets(prefix) {
   // turn into clickable refs in the editor preview too.
   _ensureMediaIds(visual);
   _normalizeMsoReferenceList(visual);
+  _promoteMsoHeadings(visual);
   _autoLinkInEditor(visual);
   // Re-validate any previously-inserted cross-refs: a link that was
   // "broken" because the target hadn't been created yet should now light
@@ -4779,8 +5524,8 @@ function _buildMentionMap(visualEl, kind) {
 // places many blocks at once).
 function _buildMediaBlock(kind, num, panelsOrUrl) {
   // Accepts either a single URL string (legacy single-image block) or an
-  // array of `{ panel, url }` so multi-panel figures (1A, 1B, 1C) render
-  // as one labelled <figure> with stacked <img>s.
+  // array of `{ panel, url, caption?, source? }` so multi-panel figures
+  // (1A, 1B, 1C) render as one labelled <figure> with stacked <img>s.
   let panels;
   if (typeof panelsOrUrl === 'string' || panelsOrUrl == null) {
     panels = [{ panel: null, url: panelsOrUrl || '' }];
@@ -4800,36 +5545,113 @@ function _buildMediaBlock(kind, num, panelsOrUrl) {
            `</div>`;
   };
 
+  // Caption resolution: prefer the no-panel entry (main file); fall back to
+  // first entry that has any caption text. Source is the legacy storage field,
+  // merged into the caption for forward-compat with older saved metadata.
+  const pickCaption = (arr) => {
+    const noPanel = arr.find((p) => !p.panel && (p.caption || p.source));
+    const pick    = noPanel || arr.find((p) => p.caption || p.source);
+    if (!pick) return '';
+    const c = (pick.caption || '').trim();
+    const s = (pick.source  || '').trim();
+    return c && s ? `${c} ${s}` : (c || s);
+  };
+  const rawCap = pickCaption(panels);
+  // Strip a leading "Figure N." / "Şekil N." / "Tablo N." so we don't double
+  // up next to the auto-added "FIG. N." / "TABLE N." label.
+  const stripped = rawCap.replace(new RegExp(`^\\s*(?:figure|fig\\.?|şekil|sekil|tablo|table)\\s*${num}[a-z]?\\s*[\\.:\\-—–]?\\s*`, 'i'), '').trim();
+  const captionInner = _captionToHtml(stripped);
+
+  // Size: prefer the entry that has a non-default size; fall back to 'medium'.
+  // Multi-panel figures always go full width regardless of stored hint.
+  const sizePick = panels.find((p) => p.size && p.size !== 'auto') || panels[0];
+  let blockSize = (sizePick && sizePick.size) || 'medium';
+  if (blockSize === 'auto') blockSize = 'medium';
+  if (isMulti) blockSize = 'large';
+
   if (kind === 'figure') {
     const fig = document.createElement('figure');
     fig.id = `figure-${num}`;
     fig.className = 'article-figure';
+    fig.setAttribute('data-size', blockSize);
+    const captionP = `<p><strong>FIG. ${num}.</strong> ${captionInner}</p>`;
     if (!isMulti) {
       const safeUrl = String(panels[0].url || '').replace(/^\//, '');
       fig.innerHTML =
-        `<img src="${esc(safeUrl)}" alt="Figure ${num}" loading="lazy">` +
-        `<p><strong>FIG. ${num}.</strong> </p>`;
+        `<img src="${esc(safeUrl)}" alt="Figure ${num}" loading="lazy">` + captionP;
     } else {
       fig.innerHTML =
-        panels.map((p, i) => panelHtml('figure', num, p, i)).join('') +
-        `<p><strong>FIG. ${num}.</strong> </p>`;
+        panels.map((p, i) => panelHtml('figure', num, p, i)).join('') + captionP;
     }
     return fig;
   }
   const wrap = document.createElement('div');
   wrap.id = `table-${num}`;
   wrap.className = 'article-table-wrap';
+  wrap.setAttribute('data-size', blockSize);
+  const tableCaption = `<p class="table-label"><strong>TABLE ${num}.</strong> ${captionInner}</p>`;
   if (!isMulti) {
     const safeUrl = String(panels[0].url || '').replace(/^\//, '');
-    wrap.innerHTML =
-      `<p class="table-label"><strong>TABLE ${num}.</strong> </p>` +
-      `<img src="${esc(safeUrl)}" alt="Table ${num}" loading="lazy">`;
+    wrap.innerHTML = tableCaption + `<img src="${esc(safeUrl)}" alt="Table ${num}" loading="lazy">`;
   } else {
-    wrap.innerHTML =
-      `<p class="table-label"><strong>TABLE ${num}.</strong> </p>` +
-      panels.map((p, i) => panelHtml('table', num, p, i)).join('');
+    wrap.innerHTML = tableCaption + panels.map((p, i) => panelHtml('table', num, p, i)).join('');
   }
   return wrap;
+}
+
+// Update an existing figure/table block's caption in-place without replacing
+// the whole block (so images, sub-panels, IDs, and document position are kept).
+// Used by Otomatik Düzenle when re-running over a full text where the block
+// already exists but its caption metadata has been edited.
+function _updateExistingMediaCaption(block, kind, num, captionInnerHtml, size) {
+  // Refresh data-size attribute too so users can change a figure's display
+  // size via the dialog → "Otomatik Düzenle" path without re-inserting.
+  if (size && size !== 'auto') block.setAttribute('data-size', size);
+  if (kind === 'figure') {
+    // Modern dialog-inserted figures use <figcaption>
+    const fc = block.querySelector(':scope > figcaption');
+    if (fc) {
+      fc.innerHTML = captionInnerHtml
+        ? `<strong>Figure ${num}.</strong> ${captionInnerHtml}`
+        : `<strong>Figure ${num}</strong>`;
+      return true;
+    }
+    // Auto-arranged figures use <p><strong>FIG. N.</strong>...</p>
+    const ps = block.querySelectorAll(':scope > p');
+    for (const p of ps) {
+      const t = (p.querySelector(':scope > strong, :scope > b')?.textContent || '').trim();
+      if (/^(?:FIG\.?|Figure|Şekil|Sekil)\b/i.test(t)) {
+        p.innerHTML = `<strong>FIG. ${num}.</strong> ${captionInnerHtml}`;
+        return true;
+      }
+    }
+    // No caption element found — append one
+    const newP = document.createElement('p');
+    newP.innerHTML = `<strong>FIG. ${num}.</strong> ${captionInnerHtml}`;
+    block.appendChild(newP);
+    return true;
+  }
+
+  // Tables
+  const labelP = block.querySelector(':scope > p.table-label');
+  if (labelP) {
+    labelP.innerHTML = `<strong>TABLE ${num}.</strong> ${captionInnerHtml}`;
+    return true;
+  }
+  const ps = block.querySelectorAll(':scope > p');
+  for (const p of ps) {
+    const t = (p.querySelector(':scope > strong, :scope > b')?.textContent || '').trim();
+    if (/^(?:TABLE|Tablo|Tab\.?)\b/i.test(t)) {
+      p.classList.add('table-label');
+      p.innerHTML = `<strong>TABLE ${num}.</strong> ${captionInnerHtml}`;
+      return true;
+    }
+  }
+  const newP = document.createElement('p');
+  newP.className = 'table-label';
+  newP.innerHTML = `<strong>TABLE ${num}.</strong> ${captionInnerHtml}`;
+  block.insertBefore(newP, block.firstChild);
+  return true;
 }
 
 // One-shot "Otomatik Düzenle": fetches every uploaded figure / table from
@@ -4854,6 +5676,8 @@ async function _autoArrangeFullText(prefix) {
   // Map each uploaded file to its detected number AND panel letter. Two
   // files for the same N (e.g. figure-1a.png + figure-1b.png) collapse
   // into one composite <figure id="figure-1"> with labelled panels.
+  // Each entry also carries caption + source (saved via Figür Ekle dialog)
+  // so _buildMediaBlock can render them into the caption.
   const buckets = { figure: new Map(), table: new Map() };
   (assets.figures || []).forEach((f) => {
     const isTable = /(?:^|[-_])tab(?:le)?[-_]?\d+/i.test(f.filename || '');
@@ -4861,7 +5685,14 @@ async function _autoArrangeFullText(prefix) {
     const meta = _extractMediaNum(f.filename, kind);
     if (!meta || !meta.num) return;
     if (!buckets[kind].has(meta.num)) buckets[kind].set(meta.num, []);
-    buckets[kind].get(meta.num).push({ panel: meta.panel, url: f.url, filename: f.filename });
+    buckets[kind].get(meta.num).push({
+      panel: meta.panel,
+      url: f.url,
+      filename: f.filename,
+      caption: f.caption || '',
+      source:  f.source  || '',
+      size:    f.size    || 'auto',
+    });
   });
   // Sort panels A → B → C inside each bucket; null-panel entries come first
   // so a "figure-1.png" + "figure-1a.png" pair keeps the bare version on top.
@@ -4874,6 +5705,7 @@ async function _autoArrangeFullText(prefix) {
   buckets.table.forEach((arr) => arr.sort(sortPanels));
 
   let placed = 0;
+  let updated = 0;
   _suppressDirty = true;
   try {
     for (const kind of ['figure', 'table']) {
@@ -4887,7 +5719,33 @@ async function _autoArrangeFullText(prefix) {
       // calls (same trick as relocateFiguresAndTables).
       for (const [num, panels] of sorted.reverse()) {
         const id = `${kind}-${num}`;
-        if (visual.querySelector('#' + CSS.escape(id))) continue; // already there
+        const existing = visual.querySelector('#' + CSS.escape(id));
+
+        // Resolve the latest caption (with embedded [N] citations) so we can
+        // either insert a fresh block or refresh an existing one in-place.
+        const pick = panels.find((p) => !p.panel && (p.caption || p.source))
+                  || panels.find((p) => p.caption || p.source);
+        const rawCap = pick
+          ? (() => {
+              const c = (pick.caption || '').trim();
+              const s = (pick.source  || '').trim();
+              return c && s ? `${c} ${s}` : (c || s);
+            })()
+          : '';
+        const stripped = rawCap.replace(new RegExp(`^\\s*(?:figure|fig\\.?|şekil|sekil|tablo|table)\\s*${num}[a-z]?\\s*[\\.:\\-—–]?\\s*`, 'i'), '').trim();
+        const captionInner = _captionToHtml(stripped);
+
+        if (existing) {
+          // Refresh the caption AND the data-size — keep image src and
+          // document position intact.
+          const sizePick = panels.find((p) => p.size && p.size !== 'auto') || panels[0];
+          const blockSize = (sizePick && sizePick.size && sizePick.size !== 'auto') ? sizePick.size : null;
+          _updateExistingMediaCaption(existing, kind, num, captionInner, blockSize);
+          updated += 1;
+          continue;
+        }
+
+        // Insert a brand-new block under the most relevant mention.
         const host = mentionMap.get(num) || null;
         const block = _buildMediaBlock(kind, num, panels);
         if (host && host.parentNode) {
@@ -4900,8 +5758,10 @@ async function _autoArrangeFullText(prefix) {
     }
 
     // Now run the standard normalisation chain so anchors, IDs, caption
-    // prefixes, and references all line up.
+    // prefixes, and references all line up. _autoLinkInEditor also re-wires
+    // any plain-text citations the user may have typed into captions.
     _normalizeMsoReferenceList(visual);
+    _promoteMsoHeadings(visual);
     _ensureMediaIds(visual);
     _autoLinkInEditor(visual);
     _validateCrossRefAnchors(visual);
@@ -4916,13 +5776,23 @@ async function _autoArrangeFullText(prefix) {
 
   markDirty();
   const msgParts = [];
-  if (placed) msgParts.push(`${placed} figür/tablo yerleştirildi`);
+  if (placed)  msgParts.push(`${placed} figür/tablo yerleştirildi`);
+  if (updated) msgParts.push(`${updated} açıklama güncellendi`);
   if (linkedFigTab) msgParts.push(`${linkedFigTab} figür/tablo atfı bağlandı`);
-  if (linkedRefs) msgParts.push(`${linkedRefs} kaynak atfı bağlandı`);
-  if (refCount) msgParts.push(`${refCount} kaynakça maddesi tanındı`);
+  if (linkedRefs)   msgParts.push(`${linkedRefs} kaynak atfı bağlandı`);
+  if (refCount)     msgParts.push(`${refCount} kaynakça maddesi tanındı`);
   if (!msgParts.length) msgParts.push('Düzenlenecek bir şey bulunamadı');
   if (status) status.textContent = msgParts.join(' · ');
-  toast(msgParts.join(', '), placed || linkedFigTab || linkedRefs ? 'success' : 'info');
+  // Use 'warning' tone when figures already in the text were refreshed instead
+  // of inserted — surfaces the "Tam Metne Ekle ile zaten eklenmişti" case so
+  // the user knows updates (not duplicates) happened.
+  let tone = 'info';
+  if (placed || linkedFigTab || linkedRefs) tone = 'success';
+  if (updated && !placed) tone = 'warning';
+  toast(msgParts.join(', '), tone);
+  if (updated) {
+    toast(`Uyarı: ${updated} figür/tablo zaten tam metindeydi — yeni kopya eklenmedi, sadece açıklamaları güncellendi.`, 'warning');
+  }
 }
 
 async function _uploadInlineMedia(prefix, kind, file) {
@@ -5087,15 +5957,31 @@ async function openSupplementaryPicker(prefix) {
   // Build the candidate list from two sources:
   // 1) Uploaded files on disk (GET /api/media/article/:id/assets)
   // 2) URL rows added in the "Ek Materyaller" panel (live DOM state)
+  //
+  // The user-defined title for a supplement lives in the "Ek Materyaller"
+  // panel rows, not on disk. Pre-build a URL→{label,caption} map from those
+  // rows so the file-based candidates inherit the user's title (e.g.
+  // "Supplement 3") instead of falling back to the raw filename.
+  const userMeta = {};
+  document.querySelectorAll('.supp-link-row').forEach((r) => {
+    const url = (r.querySelector('.sl-href')?.value || '').trim();
+    if (!url) return;
+    userMeta[url.toLowerCase()] = {
+      label: (r.querySelector('.sl-label')?.value || '').trim(),
+      caption: (r.querySelector('.sl-caption')?.value || '').trim(),
+    };
+  });
+
   const candidates = [];
   try {
     const assets = await API.get(`/media/article/${articleId}/assets`);
     for (const f of (assets.supplementary || [])) {
+      const meta = userMeta[String(f.url || '').toLowerCase()] || {};
       candidates.push({
         source: 'file',
         url: f.url,
-        label: f.filename,
-        caption: '',
+        label: meta.label || f.filename,
+        caption: meta.caption || '',
         kind: detectSuppKind(f.filename),
       });
     }
@@ -5900,16 +6786,24 @@ function wizFigureThumb(f, articleId) {
   const matched = f.matchedTo;
   const fileEsc = String(f.filename).replace(/'/g, "\\'");
   const urlEsc  = String(f.url).replace(/'/g, "\\'");
-  return `<div class="card-flat overflow-hidden" style="background:var(--bg-card)">
+  return `<div class="card-flat overflow-hidden" style="background:var(--bg-card);position:relative">
+    <!-- Delete button: top-right corner, visible on hover -->
+    <button type="button" class="wiz-thumb-delete"
+            onclick="event.stopPropagation(); deleteUploadedFigure(${articleId}, '${fileEsc}')"
+            title="Bu figürü sil"
+            style="position:absolute;top:6px;right:6px;z-index:2;width:26px;height:26px;border-radius:50%;border:none;background:rgba(0,0,0,.55);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .15s,background .15s"
+            onmouseover="this.style.background='#dc2626'" onmouseout="this.style.background='rgba(0,0,0,.55)'">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-2 14a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+    </button>
     <!-- Thumbnail container is the hover trigger -->
     <div class="wiz-thumb" style="background:#f4f3f0;aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden"
-         onclick="insertFigureIntoFullText('${urlEsc}','${fileEsc}')"
+         onclick="openFigureInsertDialog('${urlEsc}','${fileEsc}')"
          title="Tam metne ekle">
       <img src="/site/${esc(f.url)}" alt="${esc(f.filename)}" style="max-width:100%;max-height:100%;object-fit:contain;pointer-events:none" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
       <div style="display:none;color:var(--text-faint);font-size:11px;align-items:center;justify-content:center;width:100%;height:100%;pointer-events:none">önizleme yok</div>
       <!-- Hover overlay (toggled by .wiz-thumb:hover in CSS) -->
       <button type="button" class="wiz-thumb-overlay"
-              onclick="event.stopPropagation(); insertFigureIntoFullText('${urlEsc}','${fileEsc}')"
+              onclick="event.stopPropagation(); openFigureInsertDialog('${urlEsc}','${fileEsc}')"
               aria-label="Tam metne ekle">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         Metne Ekle
@@ -5917,29 +6811,89 @@ function wizFigureThumb(f, articleId) {
     </div>
     <div style="padding:6px 8px">
       <div class="truncate text-xs font-medium" style="color:var(--text-strong)" title="${esc(f.filename)}">${esc(f.filename)}</div>
+      ${f.caption ? `<div class="truncate text-xs mt-0.5" style="color:var(--text-muted)" title="${esc(f.caption)}">${esc(f.caption)}</div>` : ''}
       ${matched
         ? `<div class="text-xs mt-0.5" style="color:var(--info-text)">→ <code>${esc(matched)}</code> ile bağlı</div>`
         : `<div class="text-xs mt-0.5 flex items-center justify-between gap-2">
             <span style="color:var(--text-faint)">tam metinde yok</span>
-            <button type="button" onclick="insertFigureIntoFullText('${urlEsc}','${fileEsc}')"
+            <button type="button" onclick="openFigureInsertDialog('${urlEsc}','${fileEsc}')"
               class="btn btn-secondary btn-sm" style="padding:2px 8px;font-size:11px">+ Ekle</button>
           </div>`}
     </div>
   </div>`;
 }
 
-// Insert an <img> for an uploaded figure into the full-text WYSIWYG / source editor.
-// - Switches to the "fulltext" tab if it isn't open.
-// - If a selection sits inside the contenteditable visual editor, inserts at that
-//   caret position. Otherwise appends to the end of the article body.
-// - Source mode: inserts the raw HTML at the textarea caret position.
-function insertFigureIntoFullText(url, filename) {
-  // Switch to the Tam Metin tab (article form uses .tab-btn[data-tab="fulltext"])
+// Delete an uploaded figure file (and its caption metadata). Shows a confirm
+// dialog, hits DELETE on the server, then refreshes the wizard.
+async function deleteUploadedFigure(articleId, filename) {
+  const ok = await confirmAction(`"${filename}" figürünü silmek istediğinize emin misiniz? Bu işlem geri alınamaz.`);
+  if (!ok) return;
+  try {
+    await API.del(`/media/article/${articleId}/figures/${encodeURIComponent(filename)}`);
+    toast(`${filename} silindi`);
+    // Refresh the wizard / file listing
+    if (typeof loadArticleAssets === 'function') {
+      loadArticleAssets(articleId);
+    } else {
+      handleRoute();
+    }
+  } catch (err) {
+    toast(`Silme hatası: ${err.message}`, 'error');
+  }
+}
+
+// Persistent cursor tracker per editor. Without this, switching to the
+// "Dosyalar" tab and back loses the user's editor cursor — figures would
+// silently land at the end of the article.
+const _lastEditorRange = {}; // prefix → cloned Range
+(function _installEditorCursorTracker() {
+  if (window._editorCursorTrackerInstalled) return;
+  window._editorCursorTrackerInstalled = true;
+  document.addEventListener('selectionchange', () => {
+    const sel = window.getSelection();
+    if (!sel || !sel.rangeCount) return;
+    const range = sel.getRangeAt(0);
+    // Walk up from the range's anchor to find an "<id>-visual" contenteditable.
+    let n = range.commonAncestorContainer;
+    if (n && n.nodeType === 3) n = n.parentNode;
+    while (n && n.nodeType === 1) {
+      if (n.id && /-visual$/.test(n.id) && n.contentEditable === 'true') {
+        const prefix = n.id.replace(/-visual$/, '');
+        _lastEditorRange[prefix] = range.cloneRange();
+        return;
+      }
+      n = n.parentNode;
+    }
+  });
+})();
+
+// Find the block-level ancestor of `node` that is a direct child of `visual`.
+// Used so figure insertion happens BETWEEN top-level blocks instead of inside
+// inline formatting (which would cause the figure caption to inherit the
+// parent's <b>/<strong> styling).
+function _topLevelBlockOf(node, visual) {
+  while (node && node !== visual && node.parentNode !== visual) {
+    node = node.parentNode;
+  }
+  return (node && node !== visual && node.parentNode === visual) ? node : null;
+}
+
+// Insert a figure/table block into the full text editor. Produces the SAME
+// HTML structure as Otomatik Düzenle (_buildMediaBlock) so manually inserted
+// and auto-arranged figures render identically:
+//   <figure id="figure-N" class="article-figure">
+//     <img src="..." alt="Figure N" loading="lazy">
+//     <p><strong>FIG. N.</strong> caption…</p>
+//   </figure>
+// If a block with the same ID already exists in the editor (e.g. previously
+// placed by Otomatik Düzenle or a manual insert), the user is asked whether
+// to refresh the caption or cancel — preventing silent duplicate inserts.
+async function insertFigureIntoFullText(url, filename, caption, size) {
+  // Switch to the Tam Metin tab
   const ftBtn = document.querySelector('.tab-btn[data-tab="fulltext"]') ||
                 document.querySelector('.aip-tab-btn[data-tab="fulltext"]');
   if (ftBtn) ftBtn.click();
 
-  // Pick the right editor prefix based on which form is open
   const prefix = document.getElementById('ft-visual') ? 'ft'
                : document.getElementById('aip-ft-visual') ? 'aip-ft'
                : null;
@@ -5947,45 +6901,138 @@ function insertFigureIntoFullText(url, filename) {
     toast('Tam metin editörü bulunamadı', 'warning');
     return;
   }
+  const visual = document.getElementById(`${prefix}-visual`);
 
-  const alt = (filename || '').replace(/\.[^.]+$/, '');
-  const imgHtml = `<figure class="article-figure"><img src="${url}" alt="${esc(alt)}"><figcaption>${esc(alt)}</figcaption></figure>`;
+  // Classify the file as figure or table from filename. Matches the same
+  // detection auto-arrange uses, so a "table-1.png" goes through as a table.
+  const isTable = /(?:^|[-_])tab(?:le)?[-_]?\d+/i.test(filename || '');
+  const kind = isTable ? 'table' : 'figure';
+
+  // Determine the figure/table number. Prefer the number embedded in the
+  // filename (so 297-308-f1.png → 1, BalkanMedJ-43-2-figure-3B.png → 3).
+  // Fall back to "next available" derived from existing IDs in the editor.
+  let num = null;
+  const meta = _extractMediaNum(filename, kind);
+  if (meta && meta.num) num = meta.num;
+  if (!num) {
+    const targets = _scanCrossRefTargets(prefix);
+    const existing = (kind === 'figure' ? targets.figures : targets.tables) || [];
+    num = existing.length ? Math.max(...existing.map((x) => x.num)) + 1 : 1;
+  }
+
+  // Caption inherits the same [N] → <sup><a> conversion as auto-arrange,
+  // plus the same "Figure N." prefix stripping (so user-typed "Figure 1. Foo"
+  // doesn't double up with the auto-added "FIG. 1." label). Size becomes a
+  // `data-size` attribute on the figure block so CSS can scale it.
+  const panels = [{ panel: meta?.panel || null, url, filename, caption: caption || '', source: '', size: size || 'medium' }];
+  const block = _buildMediaBlock(kind, num, panels);
 
   const mode = _htmlEditorModes[prefix] || 'visual';
 
   if (mode === 'visual') {
-    const visual = document.getElementById(`${prefix}-visual`);
     if (!visual) return;
-    visual.focus();
-    const sel = window.getSelection();
-    // If the caret is inside the editor, insertHTML at that position.
-    // Otherwise move caret to end of visual and insert there.
-    const range = sel.rangeCount ? sel.getRangeAt(0) : null;
-    const inside = range && visual.contains(range.commonAncestorContainer);
-    if (!inside) {
-      // Move caret to end of editor
-      const r = document.createRange();
-      r.selectNodeContents(visual);
-      r.collapse(false);
-      sel.removeAllRanges();
-      sel.addRange(r);
+
+    // If a block with this ID already exists, warn the user — they may have
+    // run Otomatik Düzenle earlier (or manually inserted) and forgotten.
+    // Offer to refresh the existing caption instead of silently duplicating.
+    const existing = visual.querySelector('#' + CSS.escape(`${kind}-${num}`));
+    if (existing) {
+      const label = kind === 'figure' ? `Figür ${num}` : `Tablo ${num}`;
+      const ok = await confirmAction(
+        `${label} zaten tam metinde mevcut — daha önce "Otomatik Düzenle" ile veya elle eklenmiş olabilir.\n\n` +
+        `Onaylarsanız mevcut bloğun açıklaması yeni metinle güncellenir. Yeni bir kopya EKLENMEZ.`
+      );
+      if (!ok) {
+        toast(`${label} zaten metinde — ekleme iptal edildi`, 'warning');
+        return;
+      }
+      // Pull the caption inner HTML from the freshly-built block so we keep
+      // the EXACT same formatting rules as Otomatik Düzenle.
+      const newCap = block.querySelector(kind === 'figure' ? 'p, figcaption' : 'p.table-label, p');
+      const inner = newCap ? newCap.innerHTML.replace(/^<strong>[^<]+<\/strong>\s*/i, '') : '';
+      // block carries the latest data-size from _buildMediaBlock — push it
+      // through so changing the size in the dialog updates the existing block.
+      _updateExistingMediaCaption(existing, kind, num, inner, block.getAttribute('data-size'));
+      // Scroll the updated block into view so the user can see what changed
+      try { existing.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch {}
+      markDirty();
+      toast(`${label} açıklaması güncellendi`);
+      _autoLinkInEditor(visual);
+      _validateCrossRefAnchors(visual);
+      return;
     }
-    document.execCommand('insertHTML', false, imgHtml);
+
+    // Fresh insert. Pick a range in this priority order:
+    //   1) The cursor position last saved while the user was editing (this
+    //      survives tab switches to Dosyalar and back).
+    //   2) The current selection, if it happens to still be inside the editor.
+    //   3) None — append to the end.
+    let range = _lastEditorRange[prefix] || null;
+    if (range && !visual.contains(range.commonAncestorContainer)) range = null;
+    if (!range) {
+      const sel = window.getSelection();
+      const r = sel.rangeCount ? sel.getRangeAt(0) : null;
+      if (r && visual.contains(r.commonAncestorContainer)) range = r;
+    }
+
+    if (range) {
+      // Insert AFTER the cursor's block-level ancestor so the figure isn't
+      // nested inside <strong>/<b> (which would make the caption inherit bold).
+      const blockParent = _topLevelBlockOf(range.startContainer, visual);
+      if (blockParent) {
+        blockParent.parentNode.insertBefore(block, blockParent.nextSibling);
+      } else {
+        // Cursor is directly in visual root with no wrapping block — insert at
+        // the range and let the browser handle it.
+        range.insertNode(block);
+      }
+    } else {
+      visual.appendChild(block);
+    }
+
+    // Move cursor to just after the inserted block so subsequent typing
+    // continues below the figure, not before it.
+    try {
+      const sel = window.getSelection();
+      const after = document.createRange();
+      after.setStartAfter(block);
+      after.collapse(true);
+      sel.removeAllRanges();
+      sel.addRange(after);
+      _lastEditorRange[prefix] = after.cloneRange();
+    } catch { /* non-fatal */ }
+
     markDirty();
-    toast(`Figür tam metne eklendi: ${alt}`);
+    toast(`${kind === 'figure' ? 'Figür' : 'Tablo'} ${num} tam metne eklendi`);
+    // Re-link plain-text mentions and validate cross-refs now that this block exists.
+    _autoLinkInEditor(visual);
+    _validateCrossRefAnchors(visual);
   } else {
-    // Source mode → textarea
+    // Source mode → insert outerHTML at textarea caret
     const ta = document.getElementById(`${prefix}-source`);
     if (!ta) return;
+    const label = kind === 'figure' ? `Figür ${num}` : `Tablo ${num}`;
+    // Detect duplicate by searching for the same id="figure-N" / id="table-N"
+    // in the raw source. Same warning UX as visual mode.
+    const idRegex = new RegExp(`id\\s*=\\s*["']${kind}-${num}["']`, 'i');
+    if (idRegex.test(ta.value)) {
+      const ok = await confirmAction(
+        `${label} zaten tam metinde mevcut — daha önce "Otomatik Düzenle" ile veya elle eklenmiş olabilir.\n\n` +
+        `Source modda mevcut bloğun otomatik olarak güncellenmesi desteklenmiyor; lütfen önce Görsel moda geçin veya ekleme işlemini iptal edin.`
+      );
+      if (!ok) {
+        toast(`${label} zaten metinde — ekleme iptal edildi`, 'warning');
+        return;
+      }
+    }
+    const html = block.outerHTML;
     ta.focus();
     const start = ta.selectionStart;
     const end = ta.selectionEnd;
-    const before = ta.value.slice(0, start);
-    const after = ta.value.slice(end);
-    ta.value = before + imgHtml + after;
-    ta.selectionStart = ta.selectionEnd = start + imgHtml.length;
+    ta.value = ta.value.slice(0, start) + html + ta.value.slice(end);
+    ta.selectionStart = ta.selectionEnd = start + html.length;
     markDirty();
-    toast(`Figür tam metne eklendi: ${alt}`);
+    toast(`${label} tam metne eklendi`);
   }
 }
 
@@ -6029,6 +7076,7 @@ async function loadFullTextIntoEditor(articleId) {
       _suppressDirty = true;
       try {
         _normalizeMsoReferenceList(visual);
+        _promoteMsoHeadings(visual);
         _ensureMediaIds(visual);
         _autoLinkInEditor(visual);
       } finally {

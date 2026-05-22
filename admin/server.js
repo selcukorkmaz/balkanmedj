@@ -146,6 +146,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Mount the main site read-only under /site/ so the admin can preview articles
 // (article.html, js/data/**, images/**, css/**) without leaving the authed panel.
 app.use('/site', express.static(dio.ROOT));
+// Also expose /images and /js/data/supplementary directly so the contenteditable
+// full-text editor can resolve <img src="images/articles/..."> previews against
+// the main site (matching what the saved HTML will see on the public site).
+app.use('/images', express.static(path.join(dio.ROOT, 'images')));
+app.use('/js/data/supplementary', express.static(path.join(dio.ROOT, 'js/data/supplementary')));
 
 // File upload setup
 const ALLOWED_MIME = {
@@ -164,6 +169,10 @@ const ALLOWED_MIME = {
     'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
     'application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
   ]),
+  docx: new Set([
+    'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+    'application/octet-stream',
+  ]),
 };
 const ALLOWED_EXT = {
   pdf: /\.pdf$/i,
@@ -172,6 +181,7 @@ const ALLOWED_EXT = {
   zip: /\.zip$/i,
   figure: /\.(jpe?g|png|webp|gif|svg|tiff?|pdf)$/i,
   supplementary: /\.(pdf|zip|jpe?g|png|webp|gif|svg|mp4|mov|webm|mp3|wav|ogg|csv|txt|docx?|xlsx?)$/i,
+  docx: /\.docx$/i,
 };
 function makeUploader(kind) {
   return multer({
@@ -191,6 +201,7 @@ const uploadXml = makeUploader('xml');
 const uploadZip = makeUploader('zip');
 const uploadFigure = makeUploader('figure');
 const uploadSupp = makeUploader('supplementary');
+const uploadDocx = makeUploader('docx');
 
 // ===========================================================================
 //  UTILITY
@@ -635,6 +646,28 @@ app.post('/api/articles-in-press', (req, res) => {
   try {
     createBackup();
     const aip = dio.readArticlesInPress();
+
+    // Required-field validation. Earlier the endpoint accepted records with
+    // empty title or type silently; those records showed up as blank rows in
+    // both the admin list and the public page, with no way to tell what was
+    // wrong without diving into the JSON.
+    const title = String(req.body?.title || '').trim();
+    const type = String(req.body?.type || '').trim();
+    if (!title) return res.status(400).json({ error: 'Başlık zorunludur' });
+    if (!type) return res.status(400).json({ error: 'Makale türü zorunludur' });
+
+    // DOI uniqueness check across BOTH lists. JATS import path already does
+    // this but the manual endpoint did not — leading to duplicate DOIs when
+    // a paper was added by hand after the AIP version was imported earlier.
+    const doi = String(req.body?.doi || '').trim();
+    if (doi) {
+      const dupAip = aip.find((a) => String(a.doi || '').trim().toLowerCase() === doi.toLowerCase());
+      if (dupAip) return res.status(409).json({ error: `Bu DOI baskıda makalede zaten kayıtlı (#${dupAip.id})` });
+      const mainArticles = dio.readArticles();
+      const dupMain = mainArticles.find((a) => String(a.doi || '').trim().toLowerCase() === doi.toLowerCase());
+      if (dupMain) return res.status(409).json({ error: `Bu DOI yayınlanmış makalede zaten kayıtlı (#${dupMain.id})` });
+    }
+
     const newId = dio.nextArticleId();
     // Wipe any orphan files for this ID before creating the record. Without
     // this, manual AIP creation can inherit leftover figures / PDF / full
@@ -650,6 +683,9 @@ app.post('/api/articles-in-press', (req, res) => {
       pages: '',
       published: '',
       ...req.body,
+      title,
+      type,
+      doi,
     };
     aip.push(newArt);
     dio.writeArticlesInPress(aip);
@@ -665,11 +701,56 @@ app.put('/api/articles-in-press/:id', (req, res) => {
   try {
     createBackup();
     const aip = dio.readArticlesInPress();
-    const idx = aip.findIndex((a) => a.id === Number(req.params.id));
+    const id = Number(req.params.id);
+    const idx = aip.findIndex((a) => a.id === id);
     if (idx === -1) return res.status(404).json({ error: 'Not found' });
+
+    // Validate the same fields that POST does, but only for the keys actually
+    // present in the request body — partial updates remain supported.
+    if (Object.prototype.hasOwnProperty.call(req.body, 'title')) {
+      const title = String(req.body.title || '').trim();
+      if (!title) return res.status(400).json({ error: 'Başlık boş olamaz' });
+    }
+    if (Object.prototype.hasOwnProperty.call(req.body, 'type')) {
+      const type = String(req.body.type || '').trim();
+      if (!type) return res.status(400).json({ error: 'Makale türü boş olamaz' });
+    }
+    if (Object.prototype.hasOwnProperty.call(req.body, 'doi')) {
+      const doi = String(req.body.doi || '').trim();
+      if (doi) {
+        const lowerDoi = doi.toLowerCase();
+        const dupAip = aip.find((a) => a.id !== id && String(a.doi || '').trim().toLowerCase() === lowerDoi);
+        if (dupAip) return res.status(409).json({ error: `Bu DOI baskıda makalede zaten kayıtlı (#${dupAip.id})` });
+        const mainArticles = dio.readArticles();
+        const dupMain = mainArticles.find((a) => String(a.doi || '').trim().toLowerCase() === lowerDoi);
+        if (dupMain) return res.status(409).json({ error: `Bu DOI yayınlanmış makalede zaten kayıtlı (#${dupMain.id})` });
+      }
+    }
+
     aip[idx] = { ...aip[idx], ...req.body, id: aip[idx].id };
     dio.writeArticlesInPress(aip);
     res.json(aip[idx]);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Reorder the AIP array by providing a full ordered list of IDs.
+// Any IDs not in the provided list are appended at the end (no silent drops).
+app.post('/api/articles-in-press/reorder', (req, res) => {
+  try {
+    createBackup();
+    const { ids } = req.body;
+    if (!Array.isArray(ids)) return res.status(400).json({ error: 'ids array required' });
+    const aip = dio.readArticlesInPress();
+    const indexed = {};
+    aip.forEach((a) => { indexed[a.id] = a; });
+    const reordered = ids.map((id) => indexed[id]).filter(Boolean);
+    // Append any articles missing from the provided ids list (defensive)
+    const idSet = new Set(ids);
+    aip.forEach((a) => { if (!idSet.has(a.id)) reordered.push(a); });
+    dio.writeArticlesInPress(reordered);
+    res.json({ ok: true, count: reordered.length });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -718,6 +799,26 @@ app.post('/api/articles-in-press/:id/publish', (req, res) => {
     res.json(article);
   } catch (err) {
     res.status(500).json({ error: err.message });
+  }
+});
+
+// Extract AIP metadata from a Galenos-template Word submission. Returns
+// parsed fields (type, doi, title, authors[], abstract, keywords, dates,
+// correspondingEmail, warnings[]) for the admin client to pre-fill the
+// "Yeni Baskıda Makale" form. The file lands in /uploads but is removed
+// right after parsing — we only need the extracted metadata.
+const docxParser = require('./lib/docx-parser');
+app.post('/api/articles-in-press/parse-docx', uploadDocx.single('file'), (req, res) => {
+  const tmpPath = req.file?.path;
+  try {
+    if (!tmpPath) return res.status(400).json({ error: 'Dosya yüklenmedi' });
+    const buffer = fs.readFileSync(tmpPath);
+    const meta = docxParser.parseAipDocx(buffer);
+    res.json(meta);
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  } finally {
+    if (tmpPath) { try { fs.unlinkSync(tmpPath); } catch { /* ignore */ } }
   }
 });
 
@@ -1443,7 +1544,7 @@ app.post('/api/jats/import-in-press', async (req, res) => {
 app.post('/api/articles-in-press/publish', (req, res) => {
   try {
     createBackup();
-    const { articleIds, volume, issue } = req.body;
+    const { articleIds, volume, issue, pages, published } = req.body;
     if (!articleIds?.length || !volume || !issue) {
       return res.status(400).json({ error: 'articleIds, volume, issue required' });
     }
@@ -1452,6 +1553,11 @@ app.post('/api/articles-in-press/publish', (req, res) => {
     const articles = dio.readArticles();
     const moved = [];
 
+    // Shared published date for the batch (defaults to today). Use the same
+    // contract as the single-article publish endpoint (:725) so AIP records
+    // moved through either path leave the "Ahead of Print" state cleanly.
+    const publishedDate = published || new Date().toISOString().slice(0, 10);
+
     for (const id of articleIds) {
       const idx = aip.findIndex((a) => a.id === id);
       if (idx === -1) continue;
@@ -1459,6 +1565,10 @@ app.post('/api/articles-in-press/publish', (req, res) => {
       const article = aip.splice(idx, 1)[0];
       article.volume = Number(volume);
       article.issue = String(issue);
+      article.pages = article.pages || pages || '';
+      article.published = article.published || publishedDate;
+      article.aheadOfPrint = false;
+      delete article.order; // AIP-specific ordering hint, no longer relevant
       articles.unshift(article);
       moved.push(article.id);
     }
@@ -1752,14 +1862,20 @@ app.post('/api/media/upload/editorial-cv', uploadFigure.single('file'), (req, re
   }
 });
 
-// Batch PDF upload — match to articles by filename (e.g., 2805.pdf → article #2805)
+// Batch PDF upload — match to articles by filename (e.g., 2805.pdf → article #2805).
+// Searches BOTH the main articles list and the AIP list; previously only the main
+// articles list was checked, so AIP-id PDFs always ended up in "unmatched" even
+// though the upload itself succeeded.
 app.post('/api/media/upload/pdf-batch', uploadPdf.array('pdf', 200), (req, res) => {
   try {
     if (!req.files?.length) return res.status(400).json({ error: 'No files' });
 
     const articles = dio.readArticles();
+    const aip = dio.readArticlesInPress();
     const matched = [];
     const unmatched = [];
+    let articlesDirty = false;
+    let aipDirty = false;
 
     for (const file of req.files) {
       const baseName = path.parse(file.originalname).name.replace(/[^a-zA-Z0-9._-]/g, '_');
@@ -1769,22 +1885,111 @@ app.post('/api/media/upload/pdf-batch', uploadPdf.array('pdf', 200), (req, res) 
 
       const pdfUrl = `js/data/pdfs/${baseName}.pdf`;
 
-      // Try to match to an article by ID
+      // Try to match to a main article by ID first, then AIP
       const article = articleId ? articles.find((a) => a.id === articleId) : null;
+      const aipArticle = !article && articleId ? aip.find((a) => a.id === articleId) : null;
+
       if (article) {
         article.pdfUrl = pdfUrl;
         article.localPdfUrl = pdfUrl;
-        matched.push({ id: article.id, title: article.title, pdfUrl });
+        articlesDirty = true;
+        matched.push({ id: article.id, title: article.title, pdfUrl, list: 'articles' });
+      } else if (aipArticle) {
+        aipArticle.pdfUrl = pdfUrl;
+        aipArticle.localPdfUrl = pdfUrl;
+        aipDirty = true;
+        matched.push({ id: aipArticle.id, title: aipArticle.title, pdfUrl, list: 'aip' });
       } else {
         unmatched.push({ filename: file.originalname, pdfUrl });
       }
     }
 
-    if (matched.length) {
-      dio.writeArticles(articles);
-    }
+    if (articlesDirty) dio.writeArticles(articles);
+    if (aipDirty) dio.writeArticlesInPress(aip);
 
     res.json({ matched, unmatched, totalMatched: matched.length, totalUnmatched: unmatched.length });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Figure caption/source metadata: stored as _figure-meta.json alongside the
+// image files so captions survive page reloads and are pre-filled next open.
+const FIGURE_META_FILE = '_figure-meta.json';
+
+app.get('/api/media/article/:articleId/figure-meta', requireAuth, (req, res) => {
+  try {
+    const articleId = String(req.params.articleId).replace(/[^a-zA-Z0-9._-]/g, '_');
+    const metaPath = path.join(dio.PATHS.articleImagesDir, articleId, FIGURE_META_FILE);
+    if (!fs.existsSync(metaPath)) return res.json({});
+    res.json(JSON.parse(fs.readFileSync(metaPath, 'utf8')));
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Delete a single uploaded figure file (and its metadata entry, if any).
+app.delete('/api/media/article/:articleId/figures/:filename', requireAuth, (req, res) => {
+  try {
+    const articleId = String(req.params.articleId).replace(/[^a-zA-Z0-9._-]/g, '_');
+    const filename  = path.basename(req.params.filename).replace(/[^a-zA-Z0-9._-]/g, '_');
+    if (!filename || filename === FIGURE_META_FILE) {
+      return res.status(400).json({ error: 'Invalid filename' });
+    }
+    const articleDir = path.join(dio.PATHS.articleImagesDir, articleId);
+    const filePath = path.join(articleDir, filename);
+    // Defense in depth: make sure the resolved path is inside the article dir
+    if (!filePath.startsWith(articleDir + path.sep)) {
+      return res.status(400).json({ error: 'Invalid filename' });
+    }
+    if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
+
+    // Remove matching metadata entry too so the meta file doesn't accumulate
+    // orphan caption records for files that no longer exist.
+    const metaPath = path.join(articleDir, FIGURE_META_FILE);
+    if (fs.existsSync(metaPath)) {
+      try {
+        const meta = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
+        if (meta && Object.prototype.hasOwnProperty.call(meta, filename)) {
+          delete meta[filename];
+          if (Object.keys(meta).length === 0) fs.unlinkSync(metaPath);
+          else fs.writeFileSync(metaPath, JSON.stringify(meta, null, 2));
+        }
+      } catch { /* ignore */ }
+    }
+    res.json({ ok: true, deleted: filename });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Allowed size values for figure/table presentation. Anything else is coerced
+// to 'auto' so the metadata file stays clean.
+const FIGURE_SIZE_VALUES = new Set(['auto', 'small', 'medium', 'large', 'full']);
+
+app.put('/api/media/article/:articleId/figure-meta', requireAuth, (req, res) => {
+  try {
+    const articleId = String(req.params.articleId).replace(/[^a-zA-Z0-9._-]/g, '_');
+    const { filename, caption, source, size } = req.body || {};
+    if (!filename) return res.status(400).json({ error: 'filename required' });
+    const safeSize = FIGURE_SIZE_VALUES.has(size) ? size : 'auto';
+
+    const articleDir = path.join(dio.PATHS.articleImagesDir, articleId);
+    if (!fs.existsSync(articleDir)) fs.mkdirSync(articleDir, { recursive: true });
+    const metaPath = path.join(articleDir, FIGURE_META_FILE);
+
+    let meta = {};
+    if (fs.existsSync(metaPath)) {
+      try { meta = JSON.parse(fs.readFileSync(metaPath, 'utf8')); } catch { /* start fresh */ }
+    }
+    meta[filename] = {
+      caption: caption || '',
+      source:  source  || '',
+      size:    safeSize,
+      updatedAt: new Date().toISOString(),
+    };
+    fs.writeFileSync(metaPath, JSON.stringify(meta, null, 2));
+    res.json({ ok: true });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1796,8 +2001,20 @@ app.get('/api/media/article/:articleId/assets', (req, res) => {
     const articleId = String(req.params.articleId).replace(/[^a-zA-Z0-9._-]/g, '_');
     const articleDir = path.join(dio.PATHS.articleImagesDir, articleId);
     const suppDir = path.join(dio.PATHS.supplementaryDir, articleId);
+    // Load saved figure captions/sources to include in each figure entry
+    let figureMeta = {};
+    const metaPath = path.join(articleDir, FIGURE_META_FILE);
+    if (fs.existsSync(metaPath)) {
+      try { figureMeta = JSON.parse(fs.readFileSync(metaPath, 'utf8')); } catch { /* ignore */ }
+    }
     const figures = fs.existsSync(articleDir)
-      ? fs.readdirSync(articleDir).filter((f) => !f.startsWith('.')).map((f) => ({ filename: f, url: `images/articles/${articleId}/${f}` }))
+      ? fs.readdirSync(articleDir).filter((f) => !f.startsWith('.') && f !== FIGURE_META_FILE).map((f) => ({
+          filename: f,
+          url: `images/articles/${articleId}/${f}`,
+          caption: (figureMeta[f] || {}).caption || '',
+          source:  (figureMeta[f] || {}).source  || '',
+          size:    (figureMeta[f] || {}).size    || 'auto',
+        }))
       : [];
     const supplementary = fs.existsSync(suppDir)
       ? fs.readdirSync(suppDir).filter((f) => !f.startsWith('.')).map((f) => ({ filename: f, url: `js/data/supplementary/${articleId}/${f}` }))
@@ -1821,7 +2038,7 @@ app.get('/api/media/article/:articleId/figure-status', (req, res) => {
     const html = dio.readFullText(articleId) || '';
     const articleDir = path.join(dio.PATHS.articleImagesDir, articleId);
     const uploaded = fs.existsSync(articleDir)
-      ? fs.readdirSync(articleDir).filter((f) => !f.startsWith('.')).map((f) => ({
+      ? fs.readdirSync(articleDir).filter((f) => !f.startsWith('.') && f !== FIGURE_META_FILE).map((f) => ({
           filename: f,
           url: `images/articles/${articleId}/${f}`,
           key: normalizeFigureKey(f),
@@ -1853,7 +2070,17 @@ app.get('/api/media/article/:articleId/figure-status', (req, res) => {
       seen.add(dedupeKey);
       const isResolvedPath = /^(images\/|\/|https?:\/\/|data:)/.test(ref);
       const key = normalizeFigureKey(ref);
-      const match = !isResolvedPath ? (uploadedByKey.get(key) || uploadedByName.get(ref.toLowerCase())) : null;
+      // Identify which uploaded file this src points to (for both unresolved
+      // placeholders AND resolved paths like "images/articles/2867/foo.png" —
+      // matching the basename lets the wizard mark this file as "in full text").
+      let match = null;
+      if (!isResolvedPath) {
+        match = uploadedByKey.get(key) || uploadedByName.get(ref.toLowerCase());
+      } else {
+        // Resolved path: extract basename and look it up against uploads.
+        const baseName = ref.split('/').pop() || '';
+        match = uploadedByName.get(baseName.toLowerCase());
+      }
       placeholders.push({
         ref,
         format: 'modern',
@@ -1972,7 +2199,7 @@ app.post('/api/media/figures/:articleId/apply', (req, res) => {
     const articleDir = path.join(dio.PATHS.articleImagesDir, articleId);
     if (fs.existsSync(articleDir)) {
       const uploaded = fs.readdirSync(articleDir)
-        .filter((f) => !f.startsWith('.'))
+        .filter((f) => !f.startsWith('.') && f !== FIGURE_META_FILE)
         .map((f) => ({ filename: f, url: `images/articles/${articleId}/${f}`, key: normalizeFigureKey(f) }));
 
       // Index uploaded by key and by basename

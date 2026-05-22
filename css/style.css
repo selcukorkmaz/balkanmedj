@@ -366,3 +366,14 @@ footer.bg-teal-900.text-white[aria-label="Site footer"] .border-teal-800{
     transform-origin:50% 20%;
   }
 }
+
+/* Figure/Table captions: only "FIG. N." / "TABLE N." label is bold */
+.article-body .article-figure>p,.article-body .article-figure>figcaption,.article-body .article-table-wrap>p{font-weight:400;font-style:normal}
+.article-body .article-figure>p strong,.article-body .article-figure>figcaption strong,.article-body .article-table-wrap>p.table-label strong{font-weight:700}
+
+/* Figure/Table size variants */
+.article-body .article-figure[data-size="small"],.article-body .article-table-wrap[data-size="small"]{max-width:45%;margin-left:auto;margin-right:auto}
+.article-body .article-figure[data-size="medium"],.article-body .article-table-wrap[data-size="medium"]{max-width:72%;margin-left:auto;margin-right:auto}
+.article-body .article-figure[data-size="large"],.article-body .article-table-wrap[data-size="large"]{max-width:100%}
+.article-body .article-figure[data-size="full"],.article-body .article-table-wrap[data-size="full"]{max-width:100%;padding:.5rem 0;background:transparent;border:none;border-radius:0}
+@media (max-width:47.99rem){.article-body .article-figure[data-size="small"],.article-body .article-table-wrap[data-size="small"]{max-width:80%}.article-body .article-figure[data-size="medium"],.article-body .article-table-wrap[data-size="medium"]{max-width:100%}}

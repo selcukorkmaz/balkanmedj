@@ -503,6 +503,47 @@
       margin-top: 4px;
       font-style: italic;
     }
+    /* Figure/table size variants — mirror the live-site sizing so the editor
+       preview matches what the reader will see after publishing. */
+    [contenteditable] .article-figure[data-size="small"],
+    [contenteditable] .article-table-wrap[data-size="small"] {
+      max-width: 45%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    [contenteditable] .article-figure[data-size="medium"],
+    [contenteditable] .article-table-wrap[data-size="medium"] {
+      max-width: 72%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    [contenteditable] .article-figure[data-size="large"],
+    [contenteditable] .article-table-wrap[data-size="large"] {
+      max-width: 100%;
+    }
+    [contenteditable] .article-figure[data-size="full"],
+    [contenteditable] .article-table-wrap[data-size="full"] {
+      max-width: 100%;
+      padding: 0;
+      background: transparent;
+      border: none;
+      border-radius: 0;
+    }
+    /* Captions inside figures/tables: only the FIG./TABLE label is bold,
+       and the body text uses normal weight + non-italic (overrides the
+       generic figcaption italic rule above for caption paragraphs). */
+    [contenteditable] .article-figure > p,
+    [contenteditable] .article-figure > figcaption,
+    [contenteditable] .article-table-wrap > p {
+      font-weight: 400;
+      font-style: normal;
+      text-align: left;
+    }
+    [contenteditable] .article-figure > p strong,
+    [contenteditable] .article-figure > figcaption strong,
+    [contenteditable] .article-table-wrap > p.table-label strong {
+      font-weight: 700;
+    }
     /* Tables — imported from JATS XML, uploaded, or pasted. Without these rules
        an imported <table> renders borderless and looks like jumbled text. */
     [contenteditable] .article-table-wrap { margin: 1em 0; overflow-x: auto; }
@@ -1065,6 +1106,12 @@
     .wiz-thumb-overlay:hover,
     .wiz-thumb-overlay:focus {
       opacity: 1;
+    }
+    /* Reveal the delete button when the parent card is hovered/focused */
+    .card-flat:hover .wiz-thumb-delete,
+    .card-flat:focus-within .wiz-thumb-delete,
+    .wiz-thumb-delete:focus {
+      opacity: 1 !important;
     }
   </style>
 </head>
