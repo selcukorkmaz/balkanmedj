@@ -2297,7 +2297,39 @@ async function handleXmlFiles(files) {
             <div><strong>Sayfa:</strong> ${esc(a.pages)}</div>
             <div><strong>Tarih:</strong> ${esc(a.published)}</div>
           </div>
-          ${a.relatedArticles?.length ? `<div class="mt-2"><span class="badge badge-info">Bağlantı · ${a.relatedArticles.map((r) => esc(r.type)).join(', ')}</span></div>` : ''}
+          <div class="mt-3 flex flex-wrap gap-1.5">
+            ${(() => {
+              // Surface what's actually inside this XML so the operator can
+              // spot abstract-only payloads (a known gotcha for AIP imports —
+              // see project_aip_fulltext_abstract.md). The badges turn
+              // amber/red when something is missing so issues don't sneak
+              // through unnoticed.
+              const ftLen = (a.fullTextHtml || '').length;
+              const figureCount = (a.figures || []).length;
+              const suppCount = (a.supplementary || []).length;
+              const ftBadge = ftLen > 2000
+                ? `<span class="badge badge-success" title="${ftLen.toLocaleString('tr-TR')} karakter"><span class="badge-dot"></span>Tam metin</span>`
+                : ftLen > 0
+                  ? `<span class="badge badge-warning" title="Sadece ${ftLen.toLocaleString('tr-TR')} karakter — büyük olasılıkla yalnız özet"><span class="badge-dot"></span>Kısa metin (${ftLen} kr)</span>`
+                  : `<span class="badge" style="background:#fee2e2;color:#991b1b" title="XML'de hiç tam metin yok"><span class="badge-dot" style="background:#991b1b"></span>Tam metin yok</span>`;
+              const figBadge = figureCount > 0
+                ? `<span class="badge badge-info"><span class="badge-dot"></span>${figureCount} figür</span>`
+                : '';
+              const suppBadge = suppCount > 0
+                ? `<span class="badge badge-info"><span class="badge-dot"></span>${suppCount} ek materyal</span>`
+                : '';
+              const pmidBadge = a.pmid
+                ? `<span class="badge badge-neutral" title="PMID: ${esc(a.pmid)}">PMID</span>`
+                : '';
+              return [ftBadge, figBadge, suppBadge, pmidBadge].filter(Boolean).join('');
+            })()}
+            ${a.relatedArticles?.length ? `<span class="badge badge-info">Bağlantı · ${a.relatedArticles.map((r) => esc(r.type)).join(', ')}</span>` : ''}
+          </div>
+          ${(a.figures || []).length > 0 ? `
+            <div class="mt-2 text-xs" style="color:var(--text-faint)">
+              <span style="color:var(--warning, #b45309)">⚠</span>
+              "Baskıda olarak ekle" seçilirse JATS figürleri diske yazılmaz — yalnız ZIP içe aktarımı figür dosyalarını taşır. Bu makaleyi figürlerle birlikte yayınlamak için ZIP import kullanın veya figürleri manuel yükleyin.
+            </div>` : ''}
         </div>`;
     }).join('');
 

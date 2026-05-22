@@ -20,6 +20,28 @@ for (const dir of [IMPORTS_DIR, PROCESSED_DIR]) {
 const IMAGE_EXTS = new Set(['.jpg', '.jpeg', '.png', '.gif', '.tif', '.tiff', '.svg', '.webp']);
 const PDF_EXT = '.pdf';
 
+// Canonical DOI comparison key. JATS exports occasionally tack a stray
+// newline, leading whitespace or trailing slash onto the DOI; comparing
+// with raw .toLowerCase() then silently misses duplicates. Centralising
+// the normalisation also fixes the asymmetry between the ZIP importer
+// and the JATS import endpoints — both should agree on what "same DOI"
+// means.
+function normalizeDoi(value) {
+  if (value == null) return '';
+  return String(value).trim().replace(/\/+$/, '').toLowerCase();
+}
+
+// Cap the total uncompressed size of a ZIP we're willing to extract. multer
+// limits the compressed upload (currently 100 MB) but adm-zip will happily
+// decompress something well above that — a malformed ZIP can claim a tiny
+// compressed payload that expands to gigabytes of disk usage ("zip bomb").
+// 2 GB is comfortably above any realistic legitimate issue (text + images +
+// PDFs) but small enough to keep an attacker from filling the disk.
+const MAX_UNCOMPRESSED_BYTES = 2 * 1024 * 1024 * 1024;
+// Per-entry sanity cap so a single 1.9 GB file inside an otherwise normal ZIP
+// still gets rejected (uncommon but cheap to defend against).
+const MAX_ENTRY_UNCOMPRESSED_BYTES = 500 * 1024 * 1024;
+
 /**
  * Normalize a figure/file basename so that fig1, figure1, Fig_1, Figure 1, fig01
  * all collapse to the same key 'fig1'. Used for fuzzy matching of figure refs
@@ -209,14 +231,38 @@ function analyzeZip(zipPath) {
   const pdfFiles = [];
   const imageFiles = [];
   const otherFiles = [];
+  let totalUncompressed = 0;
 
   for (const entry of entries) {
     if (entry.isDirectory) continue;
+    // __MACOSX traversal: filter both by the basename ("._foo.jpg") and the
+    // full entry path ("__MACOSX/foo/.bar") so resource forks never sneak
+    // through the basename check.
+    if (entry.entryName.includes('__MACOSX/')) continue;
     const name = path.basename(entry.entryName);
     if (name.startsWith('.') || name.startsWith('__MACOSX')) continue;
 
+    const entrySize = entry.header.size || 0;
+    if (entrySize > MAX_ENTRY_UNCOMPRESSED_BYTES) {
+      const err = new Error(
+        'ZIP bomb koruması: tek dosya bekleneninden büyük (' +
+        Math.round(entrySize / (1024 * 1024)) + ' MB): ' + name
+      );
+      err.code = 'ZIP_BOMB';
+      throw err;
+    }
+    totalUncompressed += entrySize;
+    if (totalUncompressed > MAX_UNCOMPRESSED_BYTES) {
+      const err = new Error(
+        'ZIP bomb koruması: toplam içerik 2 GB sınırını aşıyor. ' +
+        'Lütfen ZIP\'i parçalara bölün veya gereksiz dosyaları çıkarın.'
+      );
+      err.code = 'ZIP_BOMB';
+      throw err;
+    }
+
     const ext = path.extname(name).toLowerCase();
-    const info = { name, entryName: entry.entryName, size: entry.header.size };
+    const info = { name, entryName: entry.entryName, size: entrySize };
 
     if (ext === '.xml') xmlFiles.push(info);
     else if (ext === PDF_EXT) pdfFiles.push(info);
@@ -224,7 +270,7 @@ function analyzeZip(zipPath) {
     else otherFiles.push(info);
   }
 
-  return { xmlFiles, pdfFiles, imageFiles, otherFiles, totalEntries: entries.length };
+  return { xmlFiles, pdfFiles, imageFiles, otherFiles, totalEntries: entries.length, totalUncompressed };
 }
 
 /**
@@ -249,12 +295,17 @@ async function previewZip(zipPath) {
   const aipArticles = dio.readArticlesInPress();
   const aipByDoi = new Map();
   for (const a of aipArticles) {
-    if (a.doi) aipByDoi.set(String(a.doi).toLowerCase(), a);
+    if (a.doi) aipByDoi.set(normalizeDoi(a.doi), a);
   }
   const publishedByDoi = new Map();
   for (const a of publishedArticles) {
-    if (a.doi) publishedByDoi.set(String(a.doi).toLowerCase(), a);
+    if (a.doi) publishedByDoi.set(normalizeDoi(a.doi), a);
   }
+  // Track DOIs we've already seen IN THIS ZIP, so we can flag duplicates
+  // *inside* the same archive — two XMLs that share a DOI would otherwise
+  // both be marked "new" in the preview and the importer would import the
+  // first while the second got a confusing "duplicate" error after submit.
+  const doisInZip = new Map();
 
   for (const xmlInfo of analysis.xmlFiles) {
     try {
@@ -285,12 +336,19 @@ async function previewZip(zipPath) {
         .map((f) => ({ figureId: f.id, figureLabel: f.label, originalRef: f.originalRef, file: f.matchedFile }));
 
       // Classify against existing data.
-      const doiKey = parsed.doi ? String(parsed.doi).toLowerCase() : '';
+      const doiKey = normalizeDoi(parsed.doi);
       const aipMatch = doiKey ? aipByDoi.get(doiKey) : null;
       const publishedMatch = doiKey ? publishedByDoi.get(doiKey) : null;
+      // Intra-zip duplicate detection — first occurrence wins, the rest are
+      // flagged in the preview so the operator can decide which XML to keep.
+      const intraZipDuplicate = doiKey && doisInZip.has(doiKey) ? doisInZip.get(doiKey) : null;
+      if (doiKey && !intraZipDuplicate) {
+        doisInZip.set(doiKey, xmlInfo.name);
+      }
       let importStatus = 'new';
       if (publishedMatch) importStatus = 'duplicate';
       else if (aipMatch) importStatus = 'promote';
+      else if (intraZipDuplicate) importStatus = 'duplicate-in-zip';
 
       // Surface "you are about to overwrite stale files" so the operator can
       // see what import will wipe. We only know the target ID up front when
@@ -325,6 +383,7 @@ async function previewZip(zipPath) {
         importStatus,
         aipMatch: aipMatch ? { id: aipMatch.id, title: aipMatch.title } : null,
         publishedMatch: publishedMatch ? { id: publishedMatch.id, title: publishedMatch.title } : null,
+        intraZipDuplicateOf: intraZipDuplicate || null,
         existingAssets, // null when nothing on disk, or { figures:[], supplementary:[], fullText: bool }
         parsed, // keep full parsed data for import
       });
@@ -355,6 +414,7 @@ async function previewZip(zipPath) {
       newArticles: articles.filter((a) => a.importStatus === 'new').length,
       promotedFromAip: articles.filter((a) => a.importStatus === 'promote').length,
       duplicates: articles.filter((a) => a.importStatus === 'duplicate').length,
+      duplicatesInZip: articles.filter((a) => a.importStatus === 'duplicate-in-zip').length,
     },
   };
 }
@@ -378,7 +438,7 @@ async function importZip(zipPath, options = {}) {
   const aipList = dio.readArticlesInPress();
   const aipByDoi = new Map();
   for (const a of aipList) {
-    if (a.doi) aipByDoi.set(String(a.doi).toLowerCase(), a);
+    if (a.doi) aipByDoi.set(normalizeDoi(a.doi), a);
   }
   const promotedAipIds = new Set();
   const imported = [];
@@ -397,13 +457,24 @@ async function importZip(zipPath, options = {}) {
     }
   }
 
+  // Track DOIs we've already imported in THIS run so two XMLs in the same
+  // ZIP that share a DOI don't both win.
+  const doisInThisRun = new Set();
+
   // Import each parsed article
   for (const { xmlInfo, parsed, baseName } of parsedArticles) {
     try {
-      const doiKey = parsed.doi ? String(parsed.doi).toLowerCase() : '';
+      const doiKey = normalizeDoi(parsed.doi);
+
+      // Same DOI seen earlier in this ZIP — skip with a clear error so the
+      // operator can decide which XML to keep next time.
+      if (doiKey && doisInThisRun.has(doiKey)) {
+        errors.push({ file: xmlInfo.name, error: `Aynı DOI ZIP içinde başka bir XML'de zaten işlendi: ${parsed.doi}` });
+        continue;
+      }
 
       // Check duplicate DOI in published articles (true duplicate, skip)
-      if (doiKey && articles.find((a) => String(a.doi || '').toLowerCase() === doiKey)) {
+      if (doiKey && articles.find((a) => normalizeDoi(a.doi) === doiKey)) {
         errors.push({ file: xmlInfo.name, error: `DOI zaten yayınlanmış makalelerde mevcut: ${parsed.doi}` });
         continue;
       }
@@ -465,6 +536,13 @@ async function importZip(zipPath, options = {}) {
         fs.writeFileSync(pdfDest, pdfData);
         article.pdfUrl = `js/data/pdfs/${id}.pdf`;
         article.localPdfUrl = article.pdfUrl;
+      } else if (aipMatch) {
+        // ZIP doesn't carry a PDF for this article, but we're promoting an
+        // AIP entry that may already have one uploaded via the admin panel.
+        // Preserve those URLs so the reader still sees the PDF — wiping
+        // them would silently destroy work the editorial team already did.
+        if (aipMatch.pdfUrl) article.pdfUrl = aipMatch.pdfUrl;
+        if (aipMatch.localPdfUrl) article.localPdfUrl = aipMatch.localPdfUrl;
       }
 
       // --- Match & save figures ---
@@ -483,16 +561,25 @@ async function importZip(zipPath, options = {}) {
           if (match) {
             const imgData = zip.readFile(match.entryName);
             const ext = path.extname(match.name).toLowerCase();
-            const destName = `${figBase}${ext}`;
+            // Sanitise the figure filename — JATS exports occasionally ship
+            // Turkish characters, spaces, parentheses, etc. that survive the
+            // file write but break the URL when the article page later
+            // requests the image (Türkçe karakter → %-encoded mismatch).
+            // Mirrors the supplementary-file sanitiser below.
+            const safeBase = figBase.replace(/[^a-zA-Z0-9._-]/g, '_');
+            const destName = `${safeBase}${ext}`;
             const destPath = path.join(articleImgDir, destName);
             fs.writeFileSync(destPath, imgData);
 
             const newUrl = `images/articles/${id}/${destName}`;
-            // Replace in full text HTML
+            // Replace in full text HTML — match both quote styles and any
+            // attribute the upstream JATS may have used (src, data-src,
+            // xlink:href). The original code only handled double-quoted
+            // src="…" which silently skipped the rest.
             const escaped = fig.imageFile.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
             fullTextHtml = fullTextHtml.replace(
-              new RegExp(`src="${escaped}"`, 'g'),
-              `src="${newUrl}"`
+              new RegExp('(src|data-src|xlink:href)=(["\\\'])' + escaped + '\\2', 'gi'),
+              '$1=$2' + newUrl + '$2'
             );
           }
         }
@@ -527,9 +614,13 @@ async function importZip(zipPath, options = {}) {
         }
       }
 
-      // Write full text
+      // Write full text. If the XML didn't ship a body but we're promoting
+      // an AIP that already had one stored, leave the existing file in
+      // place — `hasFullText` reflects what's actually on disk now.
       if (fullTextHtml) {
         dio.writeFullText(id, fullTextHtml);
+      } else if (aipMatch && aipMatch.hasFullText) {
+        article.hasFullText = true;
       }
 
       // Author metadata
@@ -538,6 +629,7 @@ async function importZip(zipPath, options = {}) {
       }
 
       articles.unshift(article);
+      if (doiKey) doisInThisRun.add(doiKey);
       const cleanedCount = (cleanup.figures.length + cleanup.supplementary.length);
       const record = {
         id,
@@ -557,17 +649,19 @@ async function importZip(zipPath, options = {}) {
     }
   }
 
-  // Remove the promoted records from articles-in-press so they don't appear
-  // in both lists. Done in a single write to keep the operation atomic.
-  if (promotedAipIds.size) {
-    const remaining = aipList.filter((a) => !promotedAipIds.has(a.id));
-    dio.writeArticlesInPress(remaining);
-  }
-
-  // Write all data
+  // Persist in the right order: published articles FIRST, AIP removal
+  // SECOND. If writeArticles failed before AIP removal (used to be the
+  // other way around), we would have ended up with promoted records
+  // dropped from the AIP list but never landing in the published list —
+  // i.e. silent data loss. With this order, a write failure in the
+  // published list still preserves the original AIP record.
   dio.writeArticles(articles);
   if (Object.keys(allMeta).length) {
     dio.writeAuthorMetadata(allMeta);
+  }
+  if (promotedAipIds.size) {
+    const remaining = aipList.filter((a) => !promotedAipIds.has(a.id));
+    dio.writeArticlesInPress(remaining);
   }
 
   // Register / refresh the archive-issues entry for every (volume, issue) the
@@ -716,6 +810,7 @@ module.exports = {
   previewZip,
   importZip,
   normalizeFigureKey,
+  normalizeDoi,
   findImageMatch,
   cleanArticleAssets,
   listExistingArticleAssets,

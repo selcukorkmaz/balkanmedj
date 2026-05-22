@@ -152,7 +152,8 @@
       "Bash(npm run *)",
       "Bash(taskkill /F /PID 15488)",
       "Bash(cmd.exe /c \"taskkill /F /PID 15488\")",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(cmd.exe /c \"taskkill /F /PID 19592\")"
     ]
   }
 }

@@ -1242,20 +1242,42 @@ app.post('/api/jats/parse', uploadXml.single('xml'), async (req, res) => {
 });
 
 app.post('/api/jats/import', async (req, res) => {
+  if (!_acquireImportLock('jats:import')) {
+    const status = _importLockStatus();
+    return res.status(409).json({
+      error: 'Başka bir içe aktarma devam ediyor: ' + status.label +
+             ' (' + status.elapsedSeconds + ' sn).',
+    });
+  }
   try {
     createBackup();
     const { parsedArticle, fullTextHtml, createIssue: shouldCreate, year } = req.body;
-    if (!parsedArticle) return res.status(400).json({ error: 'parsedArticle required' });
+    if (!parsedArticle) {
+      _releaseImportLock();
+      return res.status(400).json({ error: 'parsedArticle required' });
+    }
 
     const articles = dio.readArticles();
 
-    // Check for duplicate DOI
-    if (parsedArticle.doi) {
-      const existing = articles.find((a) => a.doi === parsedArticle.doi);
+    // DOI duplicate check across BOTH the published list and the AIP list.
+    // Previously this endpoint only looked at `articles`, so an XML whose DOI
+    // already existed in articles-in-press silently created a second copy in
+    // the published list — leaving the same DOI in two places at once.
+    const incomingDoi = zipImporter.normalizeDoi(parsedArticle.doi);
+    if (incomingDoi) {
+      const existing = articles.find((a) => zipImporter.normalizeDoi(a.doi) === incomingDoi);
       if (existing) {
         return res.status(409).json({
-          error: `Bu DOI zaten mevcut: #${existing.id} "${existing.title?.slice(0, 60)}"`,
+          error: `Bu DOI zaten yayınlanmış makalelerde mevcut: #${existing.id} "${existing.title?.slice(0, 60)}"`,
           existingId: existing.id,
+        });
+      }
+      const aipList = dio.readArticlesInPress();
+      const aipExisting = aipList.find((a) => zipImporter.normalizeDoi(a.doi) === incomingDoi);
+      if (aipExisting) {
+        return res.status(409).json({
+          error: `Bu DOI baskıda makalelerde mevcut: #${aipExisting.id} "${aipExisting.title?.slice(0, 60)}" — önce baskıdan yayına geçirin veya ZIP içe aktarımı kullanın`,
+          existingId: aipExisting.id,
         });
       }
     }
@@ -1333,6 +1355,8 @@ app.post('/api/jats/import', async (req, res) => {
     res.status(201).json(article);
   } catch (err) {
     res.status(500).json({ error: err.message });
+  } finally {
+    _releaseImportLock();
   }
 });
 
@@ -1359,27 +1383,51 @@ app.post('/api/jats/parse-batch', uploadXml.array('xml', 100), async (req, res) 
 });
 
 app.post('/api/jats/import-batch', async (req, res) => {
+  if (!_acquireImportLock('jats:import-batch')) {
+    const status = _importLockStatus();
+    return res.status(409).json({
+      error: 'Başka bir içe aktarma devam ediyor: ' + status.label +
+             ' (' + status.elapsedSeconds + ' sn).',
+    });
+  }
   try {
     createBackup();
     const { parsedArticles, targetVolume, targetIssue, createIssue: shouldCreate, year } = req.body;
     if (!Array.isArray(parsedArticles) || !parsedArticles.length) {
+      _releaseImportLock();
       return res.status(400).json({ error: 'parsedArticles array required' });
     }
 
     const articles = dio.readArticles();
+    const aipList = dio.readArticlesInPress();
     const allMeta = dio.readAuthorMetadata();
     const imported = [];
     const errors = [];
     // Track every (volume, issue) pair that received articles so we can rebuild
     // each one — even if articles came from different XMLs with different metadata.
     const touchedIssues = new Map(); // key: `${vol}|${iss}` → { volume, issue }
+    // Catch duplicate DOIs inside the SAME batch — without this, two XMLs that
+    // share a DOI would both be imported and the second would silently win.
+    const seenDoisInBatch = new Set();
 
     for (const pa of parsedArticles) {
       try {
-        // Check duplicate DOI
-        if (pa.doi && articles.find((a) => a.doi === pa.doi)) {
-          errors.push({ title: pa.title, error: `DOI zaten mevcut: ${pa.doi}` });
-          continue;
+        // Check duplicate DOI — published, AIP, and same-batch all in one go.
+        const incomingDoi = zipImporter.normalizeDoi(pa.doi);
+        if (incomingDoi) {
+          if (seenDoisInBatch.has(incomingDoi)) {
+            errors.push({ title: pa.title, error: `Aynı DOI bu batch içinde birden fazla XML'de mevcut: ${pa.doi}` });
+            continue;
+          }
+          if (articles.find((a) => zipImporter.normalizeDoi(a.doi) === incomingDoi)) {
+            errors.push({ title: pa.title, error: `DOI zaten yayınlanmış makalelerde mevcut: ${pa.doi}` });
+            continue;
+          }
+          if (aipList.find((a) => zipImporter.normalizeDoi(a.doi) === incomingDoi)) {
+            errors.push({ title: pa.title, error: `DOI baskıda makalelerde mevcut: ${pa.doi} — ZIP içe aktarımı promote eder, JATS batch etmez` });
+            continue;
+          }
+          seenDoisInBatch.add(incomingDoi);
         }
 
         const id = dio.nextArticleId(articles);
@@ -1472,15 +1520,25 @@ app.post('/api/jats/import-batch', async (req, res) => {
     res.status(201).json({ imported, errors, totalImported: imported.length, totalErrors: errors.length });
   } catch (err) {
     res.status(500).json({ error: err.message });
+  } finally {
+    _releaseImportLock();
   }
 });
 
 // Import JATS as articles-in-press
 app.post('/api/jats/import-in-press', async (req, res) => {
+  if (!_acquireImportLock('jats:import-in-press')) {
+    const status = _importLockStatus();
+    return res.status(409).json({
+      error: 'Başka bir içe aktarma devam ediyor: ' + status.label +
+             ' (' + status.elapsedSeconds + ' sn).',
+    });
+  }
   try {
     createBackup();
     const { parsedArticles } = req.body;
     if (!Array.isArray(parsedArticles) || !parsedArticles.length) {
+      _releaseImportLock();
       return res.status(400).json({ error: 'parsedArticles array required' });
     }
 
@@ -1488,16 +1546,25 @@ app.post('/api/jats/import-in-press', async (req, res) => {
     const mainArticles = dio.readArticles();
     const imported = [];
     const errors = [];
+    const seenDoisInBatch = new Set();
 
     for (const pa of parsedArticles) {
       try {
-        if (pa.doi) {
-          const dupMain = mainArticles.find((a) => a.doi === pa.doi);
-          const dupAip = aip.find((a) => a.doi === pa.doi);
+        // DOI duplicate check via normalised key — catches stray whitespace,
+        // case differences and trailing slashes that older comparisons missed.
+        const incomingDoi = zipImporter.normalizeDoi(pa.doi);
+        if (incomingDoi) {
+          if (seenDoisInBatch.has(incomingDoi)) {
+            errors.push({ title: pa.title, error: `Aynı DOI bu batch içinde birden fazla XML'de mevcut: ${pa.doi}` });
+            continue;
+          }
+          const dupMain = mainArticles.find((a) => zipImporter.normalizeDoi(a.doi) === incomingDoi);
+          const dupAip = aip.find((a) => zipImporter.normalizeDoi(a.doi) === incomingDoi);
           if (dupMain || dupAip) {
             errors.push({ title: pa.title, error: `DOI zaten mevcut: ${pa.doi}` });
             continue;
           }
+          seenDoisInBatch.add(incomingDoi);
         }
 
         const id = dio.nextArticleId(mainArticles.concat(aip));
@@ -1537,6 +1604,8 @@ app.post('/api/jats/import-in-press', async (req, res) => {
     res.status(201).json({ imported, errors, totalImported: imported.length });
   } catch (err) {
     res.status(500).json({ error: err.message });
+  } finally {
+    _releaseImportLock();
   }
 });
 
@@ -1734,13 +1803,45 @@ app.get('/api/imports/preview/:filename', async (req, res) => {
   }
 });
 
+// Module-level lock for write-heavy import operations. Without this, two
+// administrators running ZIP / JATS imports simultaneously could both read
+// `articles.json`, both mutate it in memory, and the slower write would
+// silently overwrite the faster one — leading to lost articles in the
+// published list. The lock is intentionally coarse (one importer at a
+// time across all endpoints) because each import is short-lived and the
+// real-world admin workload is single-user.
+let _importLockHolder = null;
+function _acquireImportLock(label) {
+  if (_importLockHolder) return false;
+  _importLockHolder = { label, since: Date.now() };
+  return true;
+}
+function _releaseImportLock() { _importLockHolder = null; }
+function _importLockStatus() {
+  if (!_importLockHolder) return null;
+  return {
+    label: _importLockHolder.label,
+    elapsedSeconds: Math.round((Date.now() - _importLockHolder.since) / 1000),
+  };
+}
+
 // Import a ZIP: parse all XMLs, save PDFs/images/supplementary, create articles
 app.post('/api/imports/process/:filename', async (req, res) => {
+  if (!_acquireImportLock('zip:' + req.params.filename)) {
+    const status = _importLockStatus();
+    return res.status(409).json({
+      error: 'Başka bir içe aktarma işlemi devam ediyor: ' + status.label +
+             ' (' + status.elapsedSeconds + ' sn). Lütfen bitmesini bekleyin.',
+    });
+  }
   try {
     createBackup();
     const safeName = path.basename(req.params.filename);
     const zipPath = path.join(zipImporter.IMPORTS_DIR, safeName);
-    if (!fs.existsSync(zipPath)) return res.status(404).json({ error: 'ZIP dosyası bulunamadı' });
+    if (!fs.existsSync(zipPath)) {
+      _releaseImportLock();
+      return res.status(404).json({ error: 'ZIP dosyası bulunamadı' });
+    }
 
     const { targetVolume, targetIssue, setAsCurrent, createIssue: shouldCreate } = req.body || {};
 
@@ -1784,6 +1885,8 @@ app.post('/api/imports/process/:filename', async (req, res) => {
     res.status(201).json(result);
   } catch (err) {
     res.status(500).json({ error: err.message });
+  } finally {
+    _releaseImportLock();
   }
 });
 

@@ -16,10 +16,54 @@ const ARTICLE_TYPE_MAP = {
   'retraction': 'Retraction Notice',
 };
 
+// Reject XML payloads that look like they could trigger an XML external-entity
+// (XXE) attack or a billion-laughs entity-expansion DoS. xml2js / sax-js does
+// not resolve external entities by default, but it will happily multiply
+// internal entity references at parse time, which is the same family of
+// vulnerability we want to keep out of the importer entirely.
+// 200 KB is a generous ceiling for a well-formed JATS article's <!DOCTYPE>
+// (none usually exceeds a couple of KB).
+const MAX_DOCTYPE_BYTES = 200 * 1024;
+const MAX_ENTITY_DECLARATIONS = 8;
+
+function guardAgainstXxe(xmlString) {
+  if (typeof xmlString !== 'string') return;
+  // Strip the BOM and any leading whitespace so the DOCTYPE detector works
+  // on payloads saved by Windows tools.
+  const head = xmlString.replace(/^﻿/, '').slice(0, 8192);
+  if (!/<!DOCTYPE\b/i.test(head)) return; // no DTD declared → safe
+
+  // Walk the full prolog to find the DOCTYPE's matching closing ']>' / '>'.
+  // Anything inside is the internal subset where ENTITY declarations live.
+  const start = xmlString.search(/<!DOCTYPE\b/i);
+  const subsetStart = xmlString.indexOf('[', start);
+  const subsetEnd = subsetStart >= 0 ? xmlString.indexOf(']>', subsetStart) : -1;
+  // Refuse documents whose DOCTYPE declaration block is implausibly large —
+  // a common shape of nested-entity attacks.
+  if (subsetEnd > 0 && (subsetEnd - subsetStart) > MAX_DOCTYPE_BYTES) {
+    throw new Error('XML DOCTYPE block too large — refusing to parse (possible entity-expansion attack)');
+  }
+  // Count <!ENTITY ...> declarations. A few are harmless (HTML named entities
+  // get redefined inside some JATS exports), but more than a handful is a red
+  // flag — billion-laughs starts with 9 entities referencing each other.
+  const subset = subsetStart >= 0
+    ? xmlString.slice(subsetStart, subsetEnd > 0 ? subsetEnd : xmlString.length)
+    : '';
+  const entityCount = (subset.match(/<!ENTITY\b/gi) || []).length;
+  if (entityCount > MAX_ENTITY_DECLARATIONS) {
+    throw new Error('XML contains too many entity declarations (' + entityCount + ') — refusing to parse');
+  }
+  // Refuse SYSTEM/PUBLIC external entity references outright.
+  if (/<!ENTITY[^>]*\b(SYSTEM|PUBLIC)\b/i.test(subset)) {
+    throw new Error('XML declares an external entity (SYSTEM/PUBLIC) — refusing to parse for security reasons');
+  }
+}
+
 /**
  * Parse a JATS XML string and return a structured article object.
  */
 async function parseJatsXml(xmlString) {
+  guardAgainstXxe(xmlString);
   const result = await parseStringPromise(xmlString, {
     explicitArray: true,
     mergeAttrs: false,
