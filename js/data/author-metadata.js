@@ -1,6 +1,6 @@
 /**
  * Balkan Medical Journal — Author Metadata
- * Last updated: 2026-04-20
+ * Last updated: 2026-05-20
  */
 window.AUTHOR_METADATA = {
   "3": {
@@ -30706,6 +30706,12 @@ window.AUTHOR_METADATA = {
       "published": ""
     }
   },
+  "2799": {
+    "correspondingName": "",
+    "correspondingAffiliation": "",
+    "email": "",
+    "orcidByName": {}
+  },
   "2804": {
     "correspondingName": "Servet Altay",
     "correspondingAffiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
@@ -30815,6 +30821,22 @@ window.AUTHOR_METADATA = {
       "published": ""
     }
   },
+  "2811": {
+    "correspondingName": "Seçkin Dereli",
+    "correspondingAffiliation": "Deparment of Cardiology,  Ordu University Faculty of Medicine, Ordu, Türkiye",
+    "email": "drseckindereli@gmail.com",
+    "orcidByName": {
+      "Seçkin Dereli": "0000-0003-0090-3835",
+      "Onur Osman Şeker": "0000-0002-5164-8312",
+      "Nihan Bahadır": "0000-0001-6130-1884"
+    }
+  },
+  "2813": {
+    "correspondingName": "",
+    "correspondingAffiliation": "",
+    "email": "",
+    "orcidByName": {}
+  },
   "2818": {
     "correspondingName": "Deniz Palamar",
     "correspondingAffiliation": "Department of Physical Medicine and Rehabilitation, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
@@ -30895,6 +30917,38 @@ window.AUTHOR_METADATA = {
       "publishedOnline": "",
       "publishedInIssue": "",
       "published": ""
+    }
+  },
+  "2827": {
+    "correspondingName": "Yingqi Xing",
+    "correspondingAffiliation": "Department of Vascular Ultrasonography,  Xuanwu Hospital, Capital Medical University, Beijing, China",
+    "email": "xingyq@sina.com",
+    "orcidByName": {
+      "Fubo Zhou": "0000-0001-8211-325X",
+      "Ruili Li": "0000-0003-4396-2034",
+      "Yingqi Xing": "0000-0002-7403-5789"
+    }
+  },
+  "2828": {
+    "correspondingName": "Liangyu Gan",
+    "correspondingAffiliation": "Department of Thyroid Surgery,  The First Affiliated Hospital of Anhui Medical University, Hefei, China",
+    "email": "drganliangyu@fy.ahmu.edu.cn",
+    "orcidByName": {
+      "Wei Yang": "0009-0004-6976-7813",
+      "Yusheng Ye": "0009-0005-8410-1777",
+      "Liangyu Gan": "0000-0002-5313-2571"
+    }
+  },
+  "2839": {
+    "correspondingName": "Jacek C. Szepietowski",
+    "correspondingAffiliation": "Division of Dermatology,  Venereology and Clinical Immunology, Faculty of Medicine, Wroclaw University of Science and Technology, Wroclaw, Poland; Department of Dermato-Venereology,  4th Military Hospital, Wroclaw, Poland",
+    "email": "jacek.szepietowski@pwr.edu.pl",
+    "orcidByName": {
+      "Marta Szepietowska": "0009-0005-6900-1903",
+      "Bartosz Lisicki": "0000-0002-7779-2785",
+      "Andrzej K. Jaworek": "0000-0002-2632-2409",
+      "Magdalena Krajewska": "0000-0003-0766-6342",
+      "Jacek C. Szepietowski": "0000-0002-4843-4073"
     }
   },
   "2841": {
@@ -31113,6 +31167,79 @@ window.AUTHOR_METADATA = {
       "Ning Zhao": "0000-0002-7299-1742",
       "Li Yang": "0000-0003-2716-3793",
       "Ting Li": "0009-0004-5677-9882"
+    }
+  },
+  "2861": {
+    "correspondingName": "Selçuk Korkmaz",
+    "correspondingAffiliation": "Department of Biostatistics and Medical Informatics,  Trakya University Faculty of Medicine, Edirne, Türkiye",
+    "email": "selcukorkmaz@gmail.com",
+    "orcidByName": {
+      "Selçuk Korkmaz": "0000-0003-4632-6850",
+      "Servet Altay": "0000-0001-7112-3970"
+    }
+  },
+  "2862": {
+    "correspondingName": "Nicholas G. Kounis",
+    "correspondingAffiliation": "Department of Cardiology,  University of Patras Faculty of Medicine, Patras, Greece",
+    "email": "ngkounis@otenet.gr",
+    "orcidByName": {
+      "Nicholas G. Kounis": "0000-0002-9751-6710",
+      "Ming-Yow Hung": "0000-0002-6912-7523",
+      "Alexandr Ceasovschih": "0000-0002-0043-9051",
+      "Cesare de Gregorio": "0000-0003-3022-266X",
+      "Anastasia Mavromati": "0009-0009-0391-5218",
+      "Marta Bernaola": "0000-0003-4199-573X",
+      "Ioanna Koniari": "0000-0002-1033-5299"
+    }
+  },
+  "2863": {
+    "correspondingName": "Qingwei Chen",
+    "correspondingAffiliation": "Department of General Practice,  The Second Affiliated Hospital of Chongqing Medical University, Chongqing, China",
+    "email": "chenqwcq@163.com",
+    "orcidByName": {
+      "Li He": "0000-0001-5509-6298",
+      "Pengcheng Yan": "0009-0002-7268-0909",
+      "Cheng Liu": "0009-0005-5285-925X",
+      "Xiangde Zheng": "0009-0001-2741-2545",
+      "Minming Zheng": "0009-0000-4019-5111",
+      "Qingwei Chen": "0000-0003-2865-9889"
+    }
+  },
+  "2864": {
+    "correspondingName": "Pingmin Wei",
+    "correspondingAffiliation": "Department of Epidemiology and Health Statistics,  Southeast University School of Public Health, Jiangsu, China",
+    "email": "13261556373@163.com",
+    "orcidByName": {
+      "Meng Zhao": "0000-0002-8771-7834",
+      "Jing Shi": "0000-0002-9753-9357",
+      "Xiaohui Sun": "0000-0001-8188-2006",
+      "Hongfei Ma": "0000-0003-4663-2161",
+      "Huimin Yin": "0009-0000-3262-3809",
+      "Yangyang Liu": "0000-0003-4344-4034",
+      "Pingmin Wei": "0009-0007-3334-2372"
+    }
+  },
+  "2865": {
+    "correspondingName": "Dinçer Göksülük",
+    "correspondingAffiliation": "Department of Biostatistics,  Sakarya University Faculty of Medicine, Sakarya, Türkiye",
+    "email": "dincergoksuluk@sakarya.edu.tr",
+    "orcidByName": {
+      "Merve Başol Göksülük": "0000-0002-2223-7856",
+      "Ebru Öztürk": "0000-0001-9206-6856",
+      "Ünal Erkorkmaz": "0000-0002-8497-4704",
+      "Asuman Deveci Özkan": "0000-0002-3248-4279",
+      "Hamdi Furkan Kepenek": "0009-0003-6339-4203",
+      "Dinçer Göksülük": "0000-0002-2752-7668"
+    }
+  },
+  "2866": {
+    "correspondingName": "Ulvi Mirzoyev",
+    "correspondingAffiliation": "Melhem International Hospital,  Baku, Azerbaijan",
+    "email": "ulvi.mirzoyev@adam.az",
+    "orcidByName": {
+      "Ulvi Mirzoyev": "0009-0009-0421-2581",
+      "Cecilia Linde": "0000-0002-9039-6023",
+      "Thomas F. Lüscher": "0000-0002-5259-538X"
     }
   }
 };

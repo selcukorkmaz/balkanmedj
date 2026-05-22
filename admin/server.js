@@ -11,7 +11,7 @@ const rateLimit = require('express-rate-limit');
 const path = require('path');
 const fs = require('fs');
 const dio = require('./lib/data-io');
-const { createBackup, listBackups } = require('./lib/backup');
+const { createBackup, listBackups, zipBackup } = require('./lib/backup');
 const { parseJatsXml } = require('./lib/jats-parser');
 const zipImporter = require('./lib/zip-importer');
 const pageTpl = require('./lib/page-template');
@@ -109,8 +109,23 @@ app.get('/login', (_req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'login.html'));
 });
 
+// Test-only auth bypass. Active only when BMJ_TEST_BYPASS_AUTH=1 is set in the
+// environment. Used by the headless browser test harness so it doesn't need the
+// real admin password. Refuses to activate when NODE_ENV=production.
+const TEST_BYPASS_AUTH = process.env.BMJ_TEST_BYPASS_AUTH === '1' && !IS_PROD;
+if (TEST_BYPASS_AUTH) {
+  console.warn('[bypass] BMJ_TEST_BYPASS_AUTH is set — all requests are auto-authenticated as "test"');
+}
+
 // --- Auth middleware ---
 function requireAuth(req, res, next) {
+  // Test bypass — populate a fake session so downstream code that checks
+  // req.session.user keeps working.
+  if (TEST_BYPASS_AUTH) {
+    req.session = req.session || {};
+    req.session.user = req.session.user || 'test';
+    return next();
+  }
   // Allow login page and its assets
   if (req.path === '/login' || req.path === '/login.html' || req.path.startsWith('/api/auth/')) {
     return next();
@@ -139,7 +154,7 @@ const ALLOWED_MIME = {
   xml: new Set(['application/xml', 'text/xml']),
   zip: new Set(['application/zip', 'application/x-zip-compressed', 'application/octet-stream']),
   // figures = images + pdf; supplementary = broadly allowed (video/audio/doc/csv/zip)
-  figure: new Set(['image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/svg+xml', 'application/pdf']),
+  figure: new Set(['image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/svg+xml', 'image/tiff', 'application/pdf']),
   supplementary: new Set([
     'application/pdf', 'application/zip', 'application/x-zip-compressed',
     'image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/svg+xml',
@@ -155,7 +170,7 @@ const ALLOWED_EXT = {
   image: /\.(jpe?g|png|webp|gif|svg)$/i,
   xml: /\.xml$/i,
   zip: /\.zip$/i,
-  figure: /\.(jpe?g|png|webp|gif|svg|pdf)$/i,
+  figure: /\.(jpe?g|png|webp|gif|svg|tiff?|pdf)$/i,
   supplementary: /\.(pdf|zip|jpe?g|png|webp|gif|svg|mp4|mov|webm|mp3|wav|ogg|csv|txt|docx?|xlsx?)$/i,
 };
 function makeUploader(kind) {
@@ -271,6 +286,19 @@ app.post('/api/backup', (_req, res) => {
 
 app.get('/api/backups', (_req, res) => {
   res.json(listBackups());
+});
+
+// Download a stored backup as a ZIP archive (includes a README.txt manifest
+// describing exactly what the archive contains and what is out of scope).
+app.get('/api/backups/:name/download', (req, res) => {
+  try {
+    const { buffer, filename } = zipBackup(req.params.name);
+    res.setHeader('Content-Type', 'application/zip');
+    res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+    res.send(buffer);
+  } catch (err) {
+    res.status(404).json({ error: err.message });
+  }
 });
 
 // ===========================================================================
@@ -468,12 +496,21 @@ app.put('/api/articles/:id/fulltext', (req, res) => {
     const id = Number(req.params.id);
     dio.writeFullText(id, req.body.html || '');
 
-    // Mark hasFullText
+    // Mark hasFullText on whichever list contains this id (main articles or in-press)
     const articles = dio.readArticles();
     const idx = articles.findIndex((a) => a.id === id);
-    if (idx !== -1 && !articles[idx].hasFullText) {
-      articles[idx].hasFullText = true;
-      dio.writeArticles(articles);
+    if (idx !== -1) {
+      if (!articles[idx].hasFullText) {
+        articles[idx].hasFullText = true;
+        dio.writeArticles(articles);
+      }
+    } else {
+      const aip = dio.readArticlesInPress();
+      const aipIdx = aip.findIndex((a) => a.id === id);
+      if (aipIdx !== -1 && !aip[aipIdx].hasFullText) {
+        aip[aipIdx].hasFullText = true;
+        dio.writeArticlesInPress(aip);
+      }
     }
 
     res.json({ id, saved: true });
@@ -598,8 +635,14 @@ app.post('/api/articles-in-press', (req, res) => {
   try {
     createBackup();
     const aip = dio.readArticlesInPress();
+    const newId = dio.nextArticleId();
+    // Wipe any orphan files for this ID before creating the record. Without
+    // this, manual AIP creation can inherit leftover figures / PDF / full
+    // text from a previously-deleted article that lived at the same ID —
+    // the user sees Tam Metin and Dosyalar mysteriously pre-populated.
+    const wiped = zipImporter.cleanArticleAssets(newId, { wipePdf: true, wipeFullText: true });
     const newArt = {
-      id: dio.nextArticleId(),
+      id: newId,
       order: aip.length + 1,
       aheadOfPrint: true,
       volume: null,
@@ -610,7 +653,9 @@ app.post('/api/articles-in-press', (req, res) => {
     };
     aip.push(newArt);
     dio.writeArticlesInPress(aip);
-    res.status(201).json(newArt);
+    // Include cleanup report so the front-end can show a notice if any
+    // leftover files were found and removed (helps diagnose mysteries).
+    res.status(201).json({ ...newArt, _cleanedOrphans: wiped });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -634,11 +679,17 @@ app.delete('/api/articles-in-press/:id', (req, res) => {
   try {
     createBackup();
     const aip = dio.readArticlesInPress();
-    const idx = aip.findIndex((a) => a.id === Number(req.params.id));
+    const id = Number(req.params.id);
+    const idx = aip.findIndex((a) => a.id === id);
     if (idx === -1) return res.status(404).json({ error: 'Not found' });
     aip.splice(idx, 1);
     dio.writeArticlesInPress(aip);
-    res.json({ deleted: true });
+    // Also remove on-disk artefacts so the next ID re-use doesn't inherit
+    // figures / PDF / full text. Without this, deleting AIP #2867 leaves
+    // js/data/articles/2867.html + images/articles/2867/ + the PDF behind,
+    // and they get auto-loaded when a brand-new AIP gets ID 2867 next.
+    const wiped = zipImporter.cleanArticleAssets(id, { wipePdf: true, wipeFullText: true });
+    res.json({ deleted: true, _cleanedOrphans: wiped });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -960,17 +1011,79 @@ app.put('/api/homepage', (req, res) => {
 //  ARTICLE TYPES
 // ===========================================================================
 
+// Manual type list (types the user wants available even if no article uses them yet).
+// Stored alongside other admin data so backups pick it up automatically.
+const TYPES_PATH = path.join(__dirname, 'data', 'article-types.json');
+function readManualTypes() {
+  if (!fs.existsSync(TYPES_PATH)) return [];
+  try {
+    const text = fs.readFileSync(TYPES_PATH, 'utf-8');
+    const parsed = JSON.parse(text);
+    return Array.isArray(parsed) ? parsed.filter(Boolean) : [];
+  } catch { return []; }
+}
+function writeManualTypes(list) {
+  const dir = path.dirname(TYPES_PATH);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  const tmp = TYPES_PATH + '.tmp';
+  fs.writeFileSync(tmp, JSON.stringify(list, null, 2), 'utf-8');
+  fs.renameSync(tmp, TYPES_PATH);
+}
+
 app.get('/api/article-types', (_req, res) => {
   try {
     const articles = dio.readArticles();
+    const aip = dio.readArticlesInPress();
     const typeCounts = {};
-    for (const a of articles) {
-      typeCounts[a.type || 'Unknown'] = (typeCounts[a.type || 'Unknown'] || 0) + 1;
+    for (const a of articles) typeCounts[a.type || 'Unknown'] = (typeCounts[a.type || 'Unknown'] || 0) + 1;
+    for (const a of aip) {
+      if (a.type) typeCounts[a.type] = (typeCounts[a.type] || 0) + 1;
     }
+    // Merge manually-defined types (count 0 if no article uses them yet)
+    const manual = readManualTypes();
+    for (const name of manual) {
+      if (!typeCounts.hasOwnProperty(name)) typeCounts[name] = 0;
+    }
+    const manualSet = new Set(manual);
     const types = Object.entries(typeCounts)
-      .map(([name, count]) => ({ name, count }))
-      .sort((a, b) => b.count - a.count);
+      .map(([name, count]) => ({ name, count, manual: manualSet.has(name) }))
+      .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
     res.json(types);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Add a new (manual) type. Idempotent — adding an existing name is a no-op.
+app.post('/api/article-types', (req, res) => {
+  try {
+    const name = String(req.body?.name || '').trim();
+    if (!name) return res.status(400).json({ error: 'Tür adı gerekli' });
+    if (name.length > 80) return res.status(400).json({ error: 'Tür adı çok uzun (maks 80)' });
+    const manual = readManualTypes();
+    if (!manual.includes(name)) {
+      manual.push(name);
+      writeManualTypes(manual);
+    }
+    res.json({ name, ok: true });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Remove a type. Only allowed if no article currently uses it (count = 0).
+app.delete('/api/article-types/:name', (req, res) => {
+  try {
+    const name = String(req.params.name || '').trim();
+    if (!name) return res.status(400).json({ error: 'Tür adı gerekli' });
+    const articles = dio.readArticles();
+    const aip = dio.readArticlesInPress();
+    const inUse = articles.some(a => a.type === name) || aip.some(a => a.type === name);
+    if (inUse) return res.status(409).json({ error: 'Bu tür şu anda en az bir makalede kullanılıyor — önce makaleleri başka bir türe taşıyın veya yeniden adlandırın.' });
+    const manual = readManualTypes();
+    const next = manual.filter(t => t !== name);
+    if (next.length !== manual.length) writeManualTypes(next);
+    res.json({ removed: true });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -981,17 +1094,30 @@ app.put('/api/article-types/rename', (req, res) => {
     createBackup();
     const { oldName, newName } = req.body;
     if (!oldName || !newName) return res.status(400).json({ error: 'oldName and newName required' });
+    const trimmed = String(newName).trim();
+    if (!trimmed) return res.status(400).json({ error: 'Yeni ad boş olamaz' });
 
     const articles = dio.readArticles();
     let count = 0;
     for (const a of articles) {
-      if (a.type === oldName) {
-        a.type = newName;
-        count++;
-      }
+      if (a.type === oldName) { a.type = trimmed; count++; }
     }
     dio.writeArticles(articles);
-    res.json({ renamed: count });
+    // Rename in AIP too
+    const aip = dio.readArticlesInPress();
+    let aipCount = 0;
+    for (const a of aip) {
+      if (a.type === oldName) { a.type = trimmed; aipCount++; }
+    }
+    if (aipCount) dio.writeArticlesInPress(aip);
+    // Update manual list if old name was manual
+    const manual = readManualTypes();
+    if (manual.includes(oldName)) {
+      const next = manual.filter(t => t !== oldName);
+      if (!next.includes(trimmed)) next.push(trimmed);
+      writeManualTypes(next);
+    }
+    res.json({ renamed: count + aipCount });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1610,6 +1736,22 @@ app.post('/api/media/upload/editorial-photo', uploadImage.single('image'), (req,
   }
 });
 
+// Upload editorial board member CV / document (PDF, JPG, PNG…) into
+// images/editorial-board/cv/. Used by the per-member link rows.
+app.post('/api/media/upload/editorial-cv', uploadFigure.single('file'), (req, res) => {
+  try {
+    if (!req.file) return res.status(400).json({ error: 'No file' });
+    const cvDir = path.join(dio.PATHS.imagesDir, 'editorial-board', 'cv');
+    if (!fs.existsSync(cvDir)) fs.mkdirSync(cvDir, { recursive: true });
+    const safeName = path.basename(req.file.originalname).replace(/[^a-zA-Z0-9._-]/g, '_');
+    const dest = path.join(cvDir, safeName);
+    fs.renameSync(req.file.path, dest);
+    res.json({ url: `images/editorial-board/cv/${safeName}`, path: dest });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Batch PDF upload — match to articles by filename (e.g., 2805.pdf → article #2805)
 app.post('/api/media/upload/pdf-batch', uploadPdf.array('pdf', 200), (req, res) => {
   try {
@@ -1666,6 +1808,111 @@ app.get('/api/media/article/:articleId/assets', (req, res) => {
   }
 });
 
+// Figure placeholder status: parse full text, extract figure refs, match against uploaded files.
+// Supports two formats found in this corpus:
+//   - Modern:  <img src="fig1">  or  <img src="images/articles/123/fig1.png">
+//   - Legacy:  <a href="javascript:openWin('uploads/grafik/figure_BMJ_2780_0.jpg', 640, 480)">Figure 1</a>
+app.get('/api/media/article/:articleId/figure-status', (req, res) => {
+  try {
+    const articleIdRaw = req.params.articleId;
+    const articleId = String(articleIdRaw).replace(/[^a-zA-Z0-9._-]/g, '_');
+    const { normalizeFigureKey } = require('./lib/zip-importer');
+
+    const html = dio.readFullText(articleId) || '';
+    const articleDir = path.join(dio.PATHS.articleImagesDir, articleId);
+    const uploaded = fs.existsSync(articleDir)
+      ? fs.readdirSync(articleDir).filter((f) => !f.startsWith('.')).map((f) => ({
+          filename: f,
+          url: `images/articles/${articleId}/${f}`,
+          key: normalizeFigureKey(f),
+        }))
+      : [];
+
+    // Index uploaded files by both normalized key and exact basename, so legacy
+    // refs like "figure_BMJ_2780_0.jpg" still match when the user uploads a file
+    // with the same name.
+    const uploadedByKey = new Map();
+    const uploadedByName = new Map();
+    for (const u of uploaded) {
+      if (u.key && !uploadedByKey.has(u.key)) uploadedByKey.set(u.key, u);
+      uploadedByName.set(u.filename.toLowerCase(), u);
+      const base = u.filename.replace(/\.[^.]+$/, '').toLowerCase();
+      if (!uploadedByName.has(base)) uploadedByName.set(base, u);
+    }
+
+    const placeholders = [];
+    const seen = new Set();
+
+    // 1) Modern: src="..." values
+    const srcRegex = /src="([^"]+)"/g;
+    let m;
+    while ((m = srcRegex.exec(html)) !== null) {
+      const ref = m[1];
+      const dedupeKey = 'src:' + ref;
+      if (seen.has(dedupeKey)) continue;
+      seen.add(dedupeKey);
+      const isResolvedPath = /^(images\/|\/|https?:\/\/|data:)/.test(ref);
+      const key = normalizeFigureKey(ref);
+      const match = !isResolvedPath ? (uploadedByKey.get(key) || uploadedByName.get(ref.toLowerCase())) : null;
+      placeholders.push({
+        ref,
+        format: 'modern',
+        key,
+        status: isResolvedPath ? 'resolved' : (match ? 'fuzzy-match' : 'missing'),
+        resolvedUrl: isResolvedPath ? ref : (match ? match.url : null),
+        suggestedFile: match ? match.filename : null,
+      });
+    }
+
+    // 2) Legacy: javascript:openWin('path/to/file.jpg', ...) inside href values
+    const legacyRegex = /openWin\(\s*['"]([^'"]+)['"]/g;
+    while ((m = legacyRegex.exec(html)) !== null) {
+      const ref = m[1];
+      const dedupeKey = 'legacy:' + ref;
+      if (seen.has(dedupeKey)) continue;
+      seen.add(dedupeKey);
+      const baseName = path.basename(ref);
+      const baseNoExt = baseName.replace(/\.[^.]+$/, '').toLowerCase();
+      const key = normalizeFigureKey(baseName);
+      const match = uploadedByName.get(baseName.toLowerCase()) || uploadedByName.get(baseNoExt) || (key ? uploadedByKey.get(key) : null);
+      placeholders.push({
+        ref,
+        format: 'legacy',
+        key,
+        suggestedName: baseName,
+        status: match ? 'fuzzy-match' : 'missing',
+        resolvedUrl: match ? match.url : null,
+        suggestedFile: match ? match.filename : null,
+      });
+    }
+
+    // For each uploaded file, indicate whether it's matched to *any* placeholder
+    const matchedFilenames = new Set(placeholders.filter((p) => p.suggestedFile).map((p) => p.suggestedFile));
+    const figures = uploaded.map((u) => ({
+      filename: u.filename,
+      url: u.url,
+      key: u.key,
+      matchedTo: matchedFilenames.has(u.filename) ? u.key || u.filename : null,
+    }));
+
+    res.json({
+      articleId,
+      hasFullText: !!html,
+      placeholders,
+      figures,
+      stats: {
+        totalPlaceholders: placeholders.length,
+        resolved: placeholders.filter((p) => p.status === 'resolved').length,
+        fuzzyMatch: placeholders.filter((p) => p.status === 'fuzzy-match').length,
+        missing: placeholders.filter((p) => p.status === 'missing').length,
+        legacyCount: placeholders.filter((p) => p.format === 'legacy').length,
+      },
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Upload figures for an article
 app.post('/api/media/upload/figures/:articleId', uploadFigure.array('figures', 50), (req, res) => {
   try {
@@ -1684,35 +1931,97 @@ app.post('/api/media/upload/figures/:articleId', uploadFigure.array('figures', 5
       uploaded.push({ filename: safeName, url: `images/articles/${articleId}/${safeName}` });
     }
 
-    res.json({ articleId, uploaded });
+    const articleKnown = dio.readArticles().some((a) => String(a.id) === articleId)
+      || dio.readArticlesInPress().some((a) => String(a.id) === articleId);
+    res.json({ articleId, uploaded, articleKnown });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 });
 
-// Update article full text HTML to use uploaded figure paths
+// Update article full text HTML to use uploaded figure paths.
+// Two modes:
+//   1) Legacy: client supplies explicit { mappings: [{originalHref, newUrl}] }
+//   2) Auto:   client omits mappings — server scans uploaded figures + full text,
+//              normalizes filenames (fig1 ~ figure1 ~ fig_01 ~ Figure 1) and replaces.
 app.post('/api/media/figures/:articleId/apply', (req, res) => {
   try {
+    const { normalizeFigureKey } = require('./lib/zip-importer');
     const articleId = String(req.params.articleId).replace(/[^a-zA-Z0-9._-]/g, '_');
-    const { mappings } = req.body; // [{originalHref: "fig1.tif", newUrl: "images/articles/123/fig1.jpg"}, ...]
-    if (!mappings?.length) return res.status(400).json({ error: 'mappings required' });
 
     let html = dio.readFullText(articleId);
     if (!html) return res.status(404).json({ error: 'Full text not found' });
 
     let replaced = 0;
-    for (const m of mappings) {
-      const escaped = m.originalHref.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const regex = new RegExp(`src="${escaped}"`, 'g');
-      const newSrc = `src="${m.newUrl}"`;
-      if (html.includes(`src="${m.originalHref}"`)) {
-        html = html.replace(regex, newSrc);
-        replaced++;
+    const replacements = [];
+
+    if (req.body?.mappings?.length) {
+      // Legacy explicit mode
+      for (const m of req.body.mappings) {
+        const escaped = m.originalHref.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(`src="${escaped}"`, 'g');
+        if (html.includes(`src="${m.originalHref}"`)) {
+          html = html.replace(regex, `src="${m.newUrl}"`);
+          replaced++;
+          replacements.push({ from: m.originalHref, to: m.newUrl });
+        }
       }
     }
 
+    // Auto mode: walk uploaded figures, find matching unresolved placeholders by normalized key.
+    const articleDir = path.join(dio.PATHS.articleImagesDir, articleId);
+    if (fs.existsSync(articleDir)) {
+      const uploaded = fs.readdirSync(articleDir)
+        .filter((f) => !f.startsWith('.'))
+        .map((f) => ({ filename: f, url: `images/articles/${articleId}/${f}`, key: normalizeFigureKey(f) }));
+
+      // Index uploaded by key and by basename
+      const byKey = new Map();
+      const byName = new Map();
+      for (const u of uploaded) {
+        if (u.key && !byKey.has(u.key)) byKey.set(u.key, u);
+        byName.set(u.filename.toLowerCase(), u);
+        const base = u.filename.replace(/\.[^.]+$/, '').toLowerCase();
+        if (!byName.has(base)) byName.set(base, u);
+      }
+
+      // 1) Modern src="..." replacements
+      const modernRefs = new Set();
+      const reSrc = /src="([^"]+)"/g;
+      let mm;
+      while ((mm = reSrc.exec(html)) !== null) {
+        const ref = mm[1];
+        if (!/^(images\/|\/|https?:\/\/|data:)/.test(ref)) modernRefs.add(ref);
+      }
+      for (const ref of modernRefs) {
+        const refKey = normalizeFigureKey(ref);
+        const match = byKey.get(refKey) || byName.get(ref.toLowerCase());
+        if (match) {
+          const escaped = ref.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+          html = html.replace(new RegExp(`src="${escaped}"`, 'g'), `src="${match.url}"`);
+          replaced++;
+          replacements.push({ from: ref, to: match.url, format: 'modern' });
+        }
+      }
+
+      // 2) Legacy <a href="javascript:openWin('path/file.jpg', ...)">label</a>
+      //    → replace the whole anchor with a real <img>+caption block. We pull
+      //    label text from inside the anchor for the figcaption.
+      const legacyAnchor = /<a[^>]*href="javascript:openWin\(\s*['"]([^'"]+)['"][^)]*\)"[^>]*>([\s\S]*?)<\/a>/gi;
+      html = html.replace(legacyAnchor, (full, refPath, inner) => {
+        const baseName = path.basename(refPath);
+        const baseNoExt = baseName.replace(/\.[^.]+$/, '').toLowerCase();
+        const match = byName.get(baseName.toLowerCase()) || byName.get(baseNoExt) || byKey.get(normalizeFigureKey(baseName));
+        if (!match) return full; // leave unresolved legacy untouched
+        const label = String(inner).replace(/<[^>]+>/g, '').trim() || baseName;
+        replaced++;
+        replacements.push({ from: refPath, to: match.url, format: 'legacy' });
+        return `<figure class="article-figure"><img src="${match.url}" alt="${label.replace(/"/g, '&quot;')}"><figcaption>${label}</figcaption></figure>`;
+      });
+    }
+
     dio.writeFullText(articleId, html);
-    res.json({ replaced, articleId });
+    res.json({ replaced, replacements, articleId });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1735,7 +2044,230 @@ app.post('/api/media/upload/supplementary/:articleId', uploadSupp.array('files',
       uploaded.push({ filename: safeName, url: `js/data/supplementary/${articleId}/${safeName}` });
     }
 
-    res.json({ articleId, uploaded });
+    // Auto-link uploaded files into the article's supplementary[] list so they
+    // render on the public site ("Supplementary Materials") with no extra step.
+    const articles = dio.readArticles();
+    const aips = dio.readArticlesInPress();
+    let target = articles.find((a) => String(a.id) === articleId);
+    let inAip = false;
+    if (!target) { target = aips.find((a) => String(a.id) === articleId); inAip = !!target; }
+    const articleKnown = !!target;
+    const added = [];
+    let supplementary = [];
+    if (target) {
+      target.supplementary = Array.isArray(target.supplementary) ? target.supplementary : [];
+      const seen = new Set(target.supplementary.map((s) => s && s.href));
+      for (const u of uploaded) {
+        if (seen.has(u.url)) continue;
+        const entry = { id: `supp${target.supplementary.length + 1}`, label: u.filename, href: u.url, caption: '', mimeType: '' };
+        target.supplementary.push(entry);
+        seen.add(u.url);
+        added.push(entry);
+      }
+      if (added.length) (inAip ? dio.writeArticlesInPress(aips) : dio.writeArticles(articles));
+      supplementary = target.supplementary;
+    }
+    res.json({ articleId, uploaded, articleKnown, added, supplementary });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Supplementary Library — standalone, permanent-URL supplementary materials.
+//
+// Use case: graphic designers send a supplementary PDF without telling us
+// which article it belongs to and need a stable URL they can embed into the
+// final PDF. The URL is the file name: /img/files/<name>. Updating the file
+// content (Replace) preserves the URL; renaming breaks it (warn loudly).
+// ─────────────────────────────────────────────────────────────────────────────
+const SUPP_LIB_DIR = path.join(dio.ROOT, 'img', 'files');
+function ensureSuppLibDir() {
+  if (!fs.existsSync(SUPP_LIB_DIR)) fs.mkdirSync(SUPP_LIB_DIR, { recursive: true });
+}
+// Strip path separators and characters URLs can't carry cleanly. Preserve dots
+// (extension) and dashes; collapse whitespace and any other char to '-'.
+function suppLibSafeName(raw) {
+  const base = path.basename(String(raw || '')).trim();
+  if (!base) return '';
+  const cleaned = base.replace(/\s+/g, '-').replace(/[^A-Za-z0-9._-]/g, '-').replace(/-+/g, '-');
+  // Disallow names that traverse or hide. Also reject if it would be empty
+  // or only an extension (".pdf"). The leading dot check covers ".." too.
+  if (!cleaned || cleaned.startsWith('.') || cleaned === '-' || cleaned.length > 200) return '';
+  return cleaned;
+}
+function suppLibStat(name) {
+  const safe = suppLibSafeName(name);
+  if (!safe) return null;
+  const p = path.join(SUPP_LIB_DIR, safe);
+  if (!fs.existsSync(p)) return null;
+  const st = fs.statSync(p);
+  if (!st.isFile()) return null;
+  return { name: safe, size: st.size, mtime: st.mtime.toISOString(), url: `/img/files/${safe}` };
+}
+
+// Build a Map<filename, [{ articleId, title, isAip }]> by scanning every
+// article and AIP for supplementary entries whose href points at /img/files/.
+// Used to split the library list into "standalone" vs "linked" scopes and to
+// show users which article a file belongs to.
+function suppLibBuildRefMap() {
+  const map = new Map();
+  const scan = (list, isAip) => {
+    for (const a of list) {
+      const supps = Array.isArray(a.supplementary) ? a.supplementary : [];
+      for (const s of supps) {
+        if (!s || !s.href) continue;
+        const m = String(s.href).match(/(?:^|\/)img\/files\/([^/?#]+)$/);
+        if (!m) continue;
+        const name = decodeURIComponent(m[1]);
+        if (!map.has(name)) map.set(name, []);
+        map.get(name).push({ articleId: String(a.id), title: a.title || '', isAip });
+      }
+    }
+  };
+  try { scan(dio.readArticles(), false); } catch (_) {}
+  try { scan(dio.readArticlesInPress(), true); } catch (_) {}
+  return map;
+}
+
+app.get('/api/supp-library', (req, res) => {
+  try {
+    ensureSuppLibDir();
+    const scope = String(req.query.scope || 'all');
+    const refMap = suppLibBuildRefMap();
+    const names = fs.readdirSync(SUPP_LIB_DIR).filter((n) => !n.startsWith('.'));
+    let files = names.map((n) => {
+      const stat = suppLibStat(n);
+      if (!stat) return null;
+      stat.references = refMap.get(n) || [];
+      return stat;
+    }).filter(Boolean);
+    if (scope === 'standalone') files = files.filter((f) => !f.references.length);
+    else if (scope === 'linked') files = files.filter((f) => f.references.length);
+    files.sort((a, b) => (b.mtime || '').localeCompare(a.mtime || ''));
+    res.json({ files, scope, baseUrl: '/img/files' });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Upload one or more files. Optional query: ?overwrite=true to replace
+// same-named files (otherwise duplicates are reported in `conflicts`).
+// Optional `rename` field per-file (multer puts non-file fields into req.body):
+//   send rename for a single-file upload to override the stored name.
+app.post('/api/supp-library/upload', uploadSupp.array('files', 20), (req, res) => {
+  try {
+    if (!req.files?.length) return res.status(400).json({ error: 'No files' });
+    ensureSuppLibDir();
+    const overwrite = String(req.query.overwrite || req.body.overwrite || '') === 'true';
+    const renameSingle = req.files.length === 1 ? suppLibSafeName(req.body.rename || '') : '';
+    const uploaded = [];
+    const conflicts = [];
+    for (const file of req.files) {
+      const safe = renameSingle || suppLibSafeName(file.originalname);
+      if (!safe) { try { fs.unlinkSync(file.path); } catch (_) {} continue; }
+      const dest = path.join(SUPP_LIB_DIR, safe);
+      if (fs.existsSync(dest) && !overwrite) {
+        conflicts.push({ name: safe, reason: 'exists' });
+        try { fs.unlinkSync(file.path); } catch (_) {}
+        continue;
+      }
+      // Move temp upload into the library directory. fs.renameSync fails across
+      // volumes; fall back to copy + unlink in that case.
+      try { fs.renameSync(file.path, dest); }
+      catch (e) { fs.copyFileSync(file.path, dest); try { fs.unlinkSync(file.path); } catch (_) {} }
+      uploaded.push(suppLibStat(safe));
+    }
+
+    // If an articleId is given, additionally register each uploaded file as a
+    // supplementary entry on that article (or AIP). The on-disk file still
+    // lives at the permanent /img/files/ URL — we only append to the article's
+    // supplementary[] so it shows up in the public Supplementary Materials list.
+    let articleLinked = null;
+    const articleId = String(req.body.articleId || '').trim();
+    if (articleId && uploaded.length) {
+      const articles = dio.readArticles();
+      const aips = dio.readArticlesInPress();
+      let target = articles.find((a) => String(a.id) === articleId);
+      let inAip = false;
+      if (!target) { target = aips.find((a) => String(a.id) === articleId); inAip = !!target; }
+      if (!target) {
+        articleLinked = { articleId, error: 'Article not found' };
+      } else {
+        target.supplementary = Array.isArray(target.supplementary) ? target.supplementary : [];
+        const seen = new Set(target.supplementary.map((s) => s && s.href).filter(Boolean));
+        const added = [];
+        for (const u of uploaded) {
+          const href = `img/files/${u.name}`; // relative, public site serves it
+          if (seen.has(href) || seen.has('/' + href)) continue;
+          const entry = {
+            id: `supp${target.supplementary.length + 1}`,
+            label: u.name,
+            href,
+            caption: '',
+            mimeType: '',
+          };
+          target.supplementary.push(entry);
+          seen.add(href);
+          added.push(entry);
+        }
+        if (added.length) (inAip ? dio.writeArticlesInPress(aips) : dio.writeArticles(articles));
+        articleLinked = { articleId, title: target.title, isAip: inAip, added };
+      }
+    }
+
+    res.json({ uploaded, conflicts, articleLinked });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Replace a single file's content while keeping its name (and therefore URL).
+app.post('/api/supp-library/:name/replace', uploadSupp.single('file'), (req, res) => {
+  try {
+    const safe = suppLibSafeName(req.params.name);
+    if (!safe) return res.status(400).json({ error: 'Bad filename' });
+    const dest = path.join(SUPP_LIB_DIR, safe);
+    if (!fs.existsSync(dest)) {
+      if (req.file) { try { fs.unlinkSync(req.file.path); } catch (_) {} }
+      return res.status(404).json({ error: 'Not found' });
+    }
+    if (!req.file) return res.status(400).json({ error: 'No file' });
+    fs.copyFileSync(req.file.path, dest); // overwrite in place
+    try { fs.unlinkSync(req.file.path); } catch (_) {}
+    res.json({ file: suppLibStat(safe) });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Rename — explicitly breaks any link that already points at the old name.
+// The client is expected to confirm with the user before calling this.
+app.post('/api/supp-library/:name/rename', express.json(), (req, res) => {
+  try {
+    const from = suppLibSafeName(req.params.name);
+    const to = suppLibSafeName(req.body && req.body.to);
+    if (!from || !to) return res.status(400).json({ error: 'Bad filename' });
+    if (from === to) return res.json({ file: suppLibStat(from) });
+    const src = path.join(SUPP_LIB_DIR, from);
+    const dst = path.join(SUPP_LIB_DIR, to);
+    if (!fs.existsSync(src)) return res.status(404).json({ error: 'Not found' });
+    if (fs.existsSync(dst)) return res.status(409).json({ error: 'Target name already exists' });
+    fs.renameSync(src, dst);
+    res.json({ file: suppLibStat(to), oldName: from });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.delete('/api/supp-library/:name', (req, res) => {
+  try {
+    const safe = suppLibSafeName(req.params.name);
+    if (!safe) return res.status(400).json({ error: 'Bad filename' });
+    const p = path.join(SUPP_LIB_DIR, safe);
+    if (!fs.existsSync(p)) return res.status(404).json({ error: 'Not found' });
+    fs.unlinkSync(p);
+    res.json({ deleted: safe });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1806,6 +2338,15 @@ const BUILTIN_PAGES = [
   { slug: 'journal-metrics', file: 'journal-metrics.html', title: 'Journal Metrics' },
 ];
 
+const shortLinks = require('./lib/short-links');
+// Reconcile redirect files with store at startup (handles manual edits).
+try { shortLinks.rebuildAll(); } catch (e) { console.warn('[short-links] rebuild on startup failed:', e.message); }
+
+function attachShortCode(page) {
+  const entry = shortLinks.getBySlug(page.slug);
+  return entry ? { ...page, shortCode: entry.code } : { ...page, shortCode: null };
+}
+
 function listAllPages() {
   const builtins = BUILTIN_PAGES.map((p) => ({ ...p, custom: false }));
   const customs = pageTpl.readCustomPages().map((p) => ({
@@ -1816,7 +2357,7 @@ function listAllPages() {
     createdAt: p.createdAt,
     custom: true,
   }));
-  return [...builtins, ...customs];
+  return [...builtins, ...customs].map(attachShortCode);
 }
 
 function findPage(slug) {
@@ -1825,6 +2366,40 @@ function findPage(slug) {
 
 app.get('/api/pages', (_req, res) => {
   res.json(listAllPages());
+});
+
+// Set or update the short link code for a page.
+app.put('/api/pages/:slug/short-code', (req, res) => {
+  try {
+    const page = findPage(req.params.slug);
+    if (!page) return res.status(404).json({ error: 'Sayfa bulunamadı' });
+    const code = String(req.body?.code || '').trim();
+    const entry = shortLinks.setCode(page.slug, code, page.file, page.title);
+    res.json({ shortCode: entry.code, targetFile: entry.targetFile });
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+});
+
+// Remove the short link for a page.
+app.delete('/api/pages/:slug/short-code', (req, res) => {
+  try {
+    const ok = shortLinks.removeBySlug(req.params.slug);
+    res.json({ removed: ok });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// List all short codes (used by an admin overview).
+// NOTE: distinct path (not /api/pages/short-codes) to avoid being swallowed by
+// the GET /api/pages/:slug route that already exists below.
+app.get('/api/short-links', (_req, res) => {
+  try {
+    res.json(shortLinks.listAll());
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
 });
 
 app.get('/api/pages/:slug', (req, res) => {
@@ -1932,6 +2507,10 @@ app.delete('/api/pages/:slug', (req, res) => {
     pages.splice(idx, 1);
     pageTpl.writeCustomPages(pages);
 
+    // Clean up any short link pointing at this page so /s/{code}.html
+    // doesn't dangle as a broken redirect.
+    try { shortLinks.removeBySlug(slug); } catch { /* non-fatal */ }
+
     res.json({ deleted: true, slug });
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -1946,10 +2525,16 @@ const NAV_FOOTER_PATH = path.join(__dirname, 'data', 'nav-footer.json');
 
 app.get('/api/nav-footer', (_req, res) => {
   try {
-    if (!fs.existsSync(NAV_FOOTER_PATH)) {
-      return res.json({ nav: { items: [] }, footer: { columns: [], social: [] } });
+    let data = null;
+    if (fs.existsSync(NAV_FOOTER_PATH)) {
+      data = JSON.parse(fs.readFileSync(NAV_FOOTER_PATH, 'utf-8'));
     }
-    res.json(JSON.parse(fs.readFileSync(NAV_FOOTER_PATH, 'utf-8')));
+    // Bootstrap (or upgrade an old HTML-only file) so the form editor always
+    // receives a structured model (data.nav / data.footer) to work with.
+    if (!data || !data.nav || !data.footer) {
+      data = require('./lib/html-sync').bootstrapNavFooterData();
+    }
+    res.json(data);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1958,8 +2543,40 @@ app.get('/api/nav-footer', (_req, res) => {
 app.put('/api/nav-footer', (req, res) => {
   try {
     createBackup();
-    fs.writeFileSync(NAV_FOOTER_PATH, JSON.stringify(req.body, null, 2), 'utf-8');
+    const body = req.body || {};
+    const tpl = require('./lib/nav-footer-template');
+    let data;
+    if (body.nav && body.footer) {
+      // Form editor: regenerate navHtml/footerHtml from the structured model.
+      data = tpl.buildNavFooterData({ nav: body.nav, footer: body.footer });
+    } else {
+      // Advanced HTML tab: store raw HTML, keep the existing model untouched.
+      const existing = fs.existsSync(NAV_FOOTER_PATH)
+        ? JSON.parse(fs.readFileSync(NAV_FOOTER_PATH, 'utf-8')) : {};
+      data = {
+        ...existing,
+        navHtml: body.navHtml != null ? body.navHtml : existing.navHtml,
+        footerHtml: body.footerHtml != null ? body.footerHtml : existing.footerHtml,
+      };
+    }
+    fs.writeFileSync(NAV_FOOTER_PATH, JSON.stringify(data, null, 2), 'utf-8');
     res.json({ saved: true });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Re-extract nav/footer from the live index.html. Used by the "Mevcut sayfadan
+// yeniden içe aktar" button when the user wants to discard their edits and
+// start from the canonical source.
+app.post('/api/nav-footer/reset', (_req, res) => {
+  try {
+    createBackup();
+    const htmlSync = require('./lib/html-sync');
+    // Force re-extract by deleting the saved file first, then bootstrapping.
+    if (fs.existsSync(NAV_FOOTER_PATH)) fs.unlinkSync(NAV_FOOTER_PATH);
+    const data = htmlSync.bootstrapNavFooterData();
+    res.json(data);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1981,13 +2598,31 @@ app.post('/api/nav-footer/sync', (req, res) => {
 // ===========================================================================
 
 const SOCIAL_MEDIA_PATH = path.join(__dirname, 'data', 'social-media.json');
-const SOCIAL_MEDIA_DEFAULTS = {
+// Single source of truth: derive defaults and the allowed-keys list from the
+// PLATFORMS table inside social-media-sync.js. Adding a new platform there
+// now automatically flows through the API.
+const socialSync = require('./lib/social-media-sync');
+const SOCIAL_KEYS = socialSync.PLATFORMS.map(p => p.key);
+const SOCIAL_MEDIA_DEFAULTS = Object.fromEntries(SOCIAL_KEYS.map(k => [k, '']));
+// Seed the most common ones if no file exists yet (matches what the live
+// footer already links to).
+Object.assign(SOCIAL_MEDIA_DEFAULTS, {
   instagram: 'https://www.instagram.com/balkanmedj/',
   twitter: 'https://x.com/balkanmedj',
   linkedin: 'https://www.linkedin.com/company/balkan-med-j/',
-  facebook: '',
-  youtube: '',
-};
+});
+
+// Expose the platform catalog (key + label + svg + color) so the admin UI can
+// render icons and labels without duplicating the platform list client-side.
+app.get('/api/social-media/platforms', (_req, res) => {
+  try {
+    res.json(socialSync.PLATFORMS.map(p => ({
+      key: p.key, label: p.label, color: p.color, svgPath: p.svgPath, placeholder: p.placeholder,
+    })));
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
 
 app.get('/api/social-media', (_req, res) => {
   try {
@@ -2001,9 +2636,8 @@ app.get('/api/social-media', (_req, res) => {
 
 app.put('/api/social-media', (req, res) => {
   try {
-    const allowed = ['instagram', 'twitter', 'linkedin', 'facebook', 'youtube'];
     const payload = {};
-    for (const key of allowed) {
+    for (const key of SOCIAL_KEYS) {
       payload[key] = typeof req.body[key] === 'string' ? req.body[key].trim() : '';
     }
     fs.mkdirSync(path.dirname(SOCIAL_MEDIA_PATH), { recursive: true });

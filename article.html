@@ -1119,6 +1119,87 @@
       .article-body ol {
         padding-left: 2.5rem;
       }
+      /* Reference list (Word "MsoListParagraph" sequences normalised into
+         <ol class="article-references-ol">). The native ::marker sits in the
+         padding-left area, which is fine on a wide page but the column-style
+         layout the public site uses clips its left edge — numbers then look
+         cut off. Render the number ourselves with a counter inside the <li>
+         so it can never overflow. */
+      .article-body .article-references-ol {
+        list-style: none;
+        padding-left: 0;
+        margin: 1rem 0 0;
+        counter-reset: ref-num;
+      }
+      .article-body .article-references-ol > li {
+        position: relative;
+        padding-left: 2.9rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.55;
+        counter-increment: ref-num;
+      }
+      .article-body .article-references-ol > li::before {
+        content: counter(ref-num) ".";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2.4rem;
+        text-align: left;
+        font-weight: 600;
+        color: var(--color-slate-800, #1f2937);
+      }
+      .article-body .article-references-ol > li:target,
+      .article-body .article-references-ol > li.article-ref-highlighted {
+        background-color: #fef3c7;
+        border-radius: 4px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+      /* Backlink ↩ inside each ref list item — small, teal, no underline
+         until hover. Multiply-cited refs render as "↩¹ ↩² ↩³" so each
+         in-text occurrence has its own jump target. */
+      .article-body .article-ref-backlinks {
+        margin-left: 6px;
+        display: inline;
+        white-space: nowrap;
+      }
+      .article-body .article-ref-backlink {
+        display: inline-block;
+        color: var(--color-teal-700, #0f766e);
+        text-decoration: none;
+        font-size: 0.92em;
+        margin: 0 1px;
+        padding: 0 2px;
+        border-radius: 2px;
+      }
+      .article-body .article-ref-backlink:hover,
+      .article-body .article-ref-backlink:focus-visible {
+        background: rgba(15, 118, 110, 0.12);
+        text-decoration: underline;
+        outline: none;
+      }
+      /* Brief highlight on the in-text citation when arrived at via backlink. */
+      .article-body .article-ref-cite-highlighted {
+        background-color: #fef3c7;
+        outline: 2px solid #f59e0b;
+        outline-offset: 1px;
+        border-radius: 3px;
+        transition: background-color 0.3s ease;
+      }
+      /* Broken cross-reference (target missing) — wavy red underline +
+         small ⚠ marker so readers see it isn't actually clickable. */
+      .article-body .article-ref-broken {
+        text-decoration: underline wavy #c2410c;
+        text-decoration-skip-ink: none;
+        cursor: help;
+      }
+      .article-body .article-ref-broken::after {
+        content: '⚠';
+        font-size: 0.78em;
+        vertical-align: super;
+        margin-left: 2px;
+        color: #c2410c;
+      }
       .article-inline-media {
         margin: 1.05rem 0 1.2rem;
         border-radius: 0.8rem;
@@ -1295,11 +1376,11 @@
 
         <!-- Desktop Nav -->
         <div class="hidden lg:flex items-center space-x-1">
-          <a href="index.html" data-nav-page="index.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Home</a>
+          <a href="index.html" data-nav-page="index.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">Home</a>
 
           <!-- About Dropdown -->
           <div class="relative group">
-            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center">
+            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center whitespace-nowrap">
               About
               <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
@@ -1312,7 +1393,7 @@
 
           <!-- Issues & Articles Dropdown -->
           <div class="relative group">
-            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center">
+            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center whitespace-nowrap">
               Issues &amp; Articles
               <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
@@ -1323,10 +1404,10 @@
             </div>
           </div>
 
-          <a href="for-authors.html" data-nav-page="for-authors.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">For Authors</a>
-          <a href="for-reviewers.html" data-nav-page="for-reviewers.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">For Reviewers</a>
-          <a href="policies.html" data-nav-page="policies.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Policies</a>
-          <a href="contact.html" data-nav-page="contact.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Contact</a>
+          <a href="for-authors.html" data-nav-page="for-authors.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">For Authors</a>
+          <a href="for-reviewers.html" data-nav-page="for-reviewers.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">For Reviewers</a>
+          <a href="policies.html" data-nav-page="policies.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">Policies</a>
+          <a href="contact.html" data-nav-page="contact.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">Contact</a>
         </div>
 
         <!-- Submit CTA + Mobile toggle -->
@@ -1338,7 +1419,7 @@
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
             <span>Search</span>
           </button>
-          <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center px-4 py-2 bg-red-700 text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors shadow-sm">
+          <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center px-4 py-2 bg-red-700 text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors shadow-sm whitespace-nowrap">
             Submit Manuscript
             <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
           </a>
@@ -1473,21 +1554,76 @@
   <footer class="bg-teal-900 text-white" aria-label="Site footer">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Brand -->
         <div>
           <div class="flex items-center space-x-2 mb-4">
-            <div class="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden"><img src="images/logo.png" alt="Balkan Medical Journal" class="h-12 w-12 object-contain"></div>
-            <div class="font-bold text-lg">Balkan Medical Journal</div>
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden">
+              <img src="images/logo.png" alt="Balkan Medical Journal" class="h-12 w-12 object-contain">
+            </div>
+            <div>
+              <div class="font-bold text-lg">Balkan Medical Journal</div>
+            </div>
           </div>
-          <p class="text-teal-300 text-sm leading-relaxed">Published by Trakya University, Edirne, Türkiye.<br>E-ISSN: 2146-3131</p>
+          <p class="text-teal-300 text-sm leading-relaxed">
+            Published by Trakya University, Edirne, Türkiye.<br>
+            E-ISSN: 2146-3131<br>
+            Publisher: Galenos Publishing House
+          </p>
         </div>
-        <div><h3 class="font-semibold text-lg mb-4">Quick Links</h3><ul class="space-y-2 text-teal-300 text-sm"><li><a href="current-issue.html" class="hover:text-white transition-colors">Current Issue</a></li><li><a href="archive.html" class="hover:text-white transition-colors">Archive</a></li><li><a href="for-authors.html" class="hover:text-white transition-colors">For Authors</a></li></ul></div>
-        <div><h3 class="font-semibold text-lg mb-4">About</h3><ul class="space-y-2 text-teal-300 text-sm"><li><a href="about.html" class="hover:text-white transition-colors">About the Journal</a></li><li><a href="editorial-board.html" class="hover:text-white transition-colors">Editorial Board</a></li><li><a href="journal-metrics.html" class="hover:text-white transition-colors">Journal Metrics</a></li><li><a href="policies.html" class="hover:text-white transition-colors">Policies</a></li></ul></div>
-        <div><h3 class="font-semibold text-lg mb-4">Contact</h3><div class="text-teal-300 text-sm space-y-2"><p>Trakya University Faculty of Medicine<br>Edirne, Türkiye</p><p><a href="mailto:info@balkanmedicaljournal.org" class="hover:text-white transition-colors">info@balkanmedicaljournal.org</a></p><div class="flex items-center gap-4 mt-3"><a href="https://www.instagram.com/balkanmedj/" target="_blank" rel="noopener" aria-label="Instagram" class="text-teal-300 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-teal-300 text-sm">
+            <li><a href="current-issue.html" class="hover:text-white transition-colors">Current Issue</a></li>
+            <li><a href="archive.html" class="hover:text-white transition-colors">Archive</a></li>
+            <li><a href="articles-in-press.html" class="hover:text-white transition-colors">Articles in Press</a></li>
+            <li><a href="for-authors.html" class="hover:text-white transition-colors">For Authors</a></li>
+            <li><a href="for-reviewers.html" class="hover:text-white transition-colors">For Reviewers</a></li>
+            <li><a href="forms.html" class="hover:text-white transition-colors">Forms</a></li>
+          </ul>
+        </div>
+
+        <!-- About -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4">About</h3>
+          <ul class="space-y-2 text-teal-300 text-sm">
+            <li><a href="about.html" class="hover:text-white transition-colors">About the Journal</a></li>
+            <li><a href="editorial-board.html" class="hover:text-white transition-colors">Editorial Board</a></li>
+            <li><a href="journal-metrics.html" class="hover:text-white transition-colors">Journal Metrics</a></li>
+            <li><a href="policies.html" class="hover:text-white transition-colors">Policies</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+            <li><a href="news.html" class="hover:text-white transition-colors">News</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Contact</h3>
+          <div class="text-teal-300 text-sm space-y-2">
+            <p>Balkan Medical Journal<br>Trakya University Faculty of Medicine</p>
+            <p>Balkan Yerleşkesi, 22030<br>Edirne, Türkiye</p>
+            <p>
+              <a href="mailto:info@balkanmedicaljournal.org" class="hover:text-white transition-colors">info@balkanmedicaljournal.org</a>
+            </p>
+            <div class="flex items-center gap-4 mt-3">
+              <a href="https://www.instagram.com/balkanmedj/" target="_blank" rel="noopener" aria-label="Instagram" class="text-teal-300 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
               <a href="https://x.com/balkanmedj" target="_blank" rel="noopener" aria-label="X (Twitter)" class="text-teal-300 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
               <a href="https://www.linkedin.com/company/balkan-med-j/" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-teal-300 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-              <a href="https://www.youtube.com/@kleanin" target="_blank" rel="noopener" aria-label="YouTube" class="text-teal-300 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a></div></div></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="border-t border-teal-800 mt-10 pt-8 text-center text-teal-400 text-sm"><p>&copy; 2026 Balkan Medical Journal. Licensed under CC BY-NC-ND 4.0</p></div>
+
+      <div class="border-t border-teal-800 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-teal-400 text-sm">&copy; 2026 Balkan Medical Journal. All rights reserved.</p>
+        <div class="flex items-center gap-6 text-teal-400 text-sm">
+          <span>Licensed under CC BY-NC-ND 4.0</span>
+          <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener" class="hover:text-white transition-colors" aria-label="Creative Commons License">
+            <img src="images/icons/cc-by-nc-nd.svg" alt="CC BY-NC-ND 4.0" class="h-6 w-auto opacity-70 hover:opacity-100 transition-opacity">
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 
@@ -1563,8 +1699,13 @@
             sourceAbstractUrl: aipArticle.sourceAbstractUrl || '',
             sourceTextUrl: aipArticle.sourceTextUrl || '',
             sourcePdfUrl: aipArticle.sourcePdfUrl || '',
-            localPdfUrl: '',
-            pdfUrl: aipArticle.sourcePdfUrl || '',
+            // Honor the AIP record's own pdfUrl / localPdfUrl if the admin
+            // uploaded a local PDF for this article. Falling back to
+            // sourcePdfUrl alone (the pre-admin-upload behaviour) caused
+            // "PDF unavailable" on AIPs that have a fresh local PDF but
+            // were never imported from the live BMJ source.
+            localPdfUrl: aipArticle.localPdfUrl || '',
+            pdfUrl: aipArticle.pdfUrl || aipArticle.localPdfUrl || aipArticle.sourcePdfUrl || '',
             aheadOfPrint: true
           };
         }
@@ -3070,12 +3211,20 @@
             '</figcaption>';
 
           var numberToken = parseMediaNumberToken(mediaTitle);
-          var placement = findFirstCitationAnchor(mediaKind, numberToken, link);
+          // Anchor the card to the paragraph that actually contains the
+          // openWin link — that's the spot where the author explicitly
+          // referenced this figure/table. Regex-walking the prose for "Table N"
+          // mis-fires when the article mentions things like "Supplementary
+          // Tables 1-3" (separate PDF, not inline tables); the regex grabs the
+          // first textual hit and shuffles cards out of order. Using the
+          // link's own host paragraph is unambiguous and matches the
+          // author-chosen placement.
+          var hostAnchor = getDefaultInsertionAnchor(link);
           pendingMediaCards.push({
             card: card,
-            anchor: placement.anchor,
-            anchorOrder: getElementOrder(placement.anchor),
-            matchIndex: placement.matchIndex,
+            anchor: hostAnchor,
+            anchorOrder: getElementOrder(hostAnchor),
+            matchIndex: 0,
             kindRank: mediaKind === 'Table' ? 0 : 1,
             numberRank: getMediaNumberRank(numberToken)
           });
@@ -4743,20 +4892,129 @@
         return modal;
       }
 
+      // Word "Save as HTML" exports each reference as a separate
+      // <p class="MsoListParagraphCxSpFirst|Middle|Last"> with the number
+      // baked in as literal text inside a <span style="mso-list:Ignore">.
+      // That makes the citation/jump links unusable because the paragraphs
+      // have no IDs — and the bibliography looks messy. Convert the
+      // sequence into a proper <ol><li id="ref-N"> so the rest of the
+      // enhancer chain (and the Atıf picker) can wire everything up.
+      // Locate the REFERENCES heading. Real <h*> first, then a bold <p>
+      // fallback for Word-paste articles whose REFERENCES line ships as
+      // <p class="MsoNormal"><b>REFERENCES</b></p> rather than a proper
+      // heading element. Also accepts a short standalone <p>REFERENCES</p>
+      // with no bold styling — textually unambiguous.
+      var _refHeadRe = /^\s*(references?|bibliography|kaynaklar|kaynakça|referanslar|kaynak\s*listesi)\s*$/i;
+      function findRefHeading(bodyNode) {
+        if (!bodyNode || !bodyNode.querySelectorAll) return null;
+        var hs = bodyNode.querySelectorAll('h1, h2, h3, h4, h5, h6');
+        for (var i = 0; i < hs.length; i += 1) {
+          if (_refHeadRe.test(hs[i].textContent || '')) return hs[i];
+        }
+        var ps = bodyNode.querySelectorAll('p, div');
+        for (var j = 0; j < ps.length; j += 1) {
+          var p = ps[j];
+          var t = (p.textContent || '').replace(/\s+/g, ' ').trim();
+          if (!t || !_refHeadRe.test(t)) continue;
+          if (p.querySelector('b, strong')) return p;
+          var sty = (p.getAttribute('style') || '');
+          var styledKids = p.querySelectorAll('[style]');
+          for (var k = 0; k < styledKids.length; k += 1) {
+            sty += ' ' + (styledKids[k].getAttribute('style') || '');
+          }
+          if (/font-weight\s*:\s*(bold|[6-9]\d\d)/i.test(sty)) return p;
+          if (t.length <= 16) return p;
+        }
+        return null;
+      }
+      try { window.findRefHeading = findRefHeading; } catch (_) {}
+
+      function normalizeMsoReferenceList(bodyNode) {
+        if (!bodyNode || !bodyNode.querySelectorAll) return false;
+        var h = findRefHeading(bodyNode);
+        if (!h) return false;
+        const items = [];
+        let n = h.nextElementSibling;
+        let skipped = 0;
+        while (n) {
+          if (n.tagName === 'P' && /MsoListParagraph/.test(n.className || '')) {
+            items.push(n); skipped = 0;
+            n = n.nextElementSibling;
+          } else if (skipped < 2 && (
+            // Tolerate filler Word sometimes inserts between Mso paragraphs:
+            // empty <p>, <br>, <o:p>.
+            (n.tagName === 'P' && !(n.textContent || '').trim()) ||
+            n.tagName === 'BR' ||
+            n.tagName.toLowerCase() === 'o:p'
+          )) {
+            skipped += 1;
+            n = n.nextElementSibling;
+          } else { break; }
+        }
+        if (items.length < 2) return false; // not a list
+        const ol = document.createElement('ol');
+        ol.className = 'article-references-ol';
+        items.forEach((p, i) => {
+          const li = document.createElement('li');
+          li.id = 'ref-' + (i + 1);
+          // Strip Word's literal "N." span + the supporting conditional-
+          // comment wrappers; leftover &nbsp; padding is collapsed too.
+          const clone = p.cloneNode(true);
+          clone.querySelectorAll('span[style*="mso-list"], o\\:p').forEach((s) => s.remove());
+          let html = clone.innerHTML
+            .replace(/^[\s ]*\d+\.[\s ]+/, '')   // leading "N."
+            .replace(/<!--[\s\S]*?-->/g, '')                // Word conditionals
+            .trim();
+          li.innerHTML = html;
+          ol.appendChild(li);
+        });
+        // Wrap the heading + new <ol> in .article-references so existing
+        // selectors keep working.
+        let wrapper = h.parentNode && h.parentNode.classList && h.parentNode.classList.contains('article-references')
+          ? h.parentNode : null;
+        if (!wrapper) {
+          wrapper = document.createElement('div');
+          wrapper.className = 'article-references';
+          h.parentNode.insertBefore(wrapper, h);
+          wrapper.appendChild(h);
+        }
+        wrapper.appendChild(ol);
+        items.forEach((p) => p.remove());
+        return true;
+      }
+      // Expose for E2E tests that build a synthetic Word-export fixture
+      // and call this directly. Harmless for production — `window` is the
+      // global object and assigning the existing function is a no-op pointer.
+      try { window.normalizeMsoReferenceList = normalizeMsoReferenceList; } catch (_) {}
+
+      // Mark anchors whose target doesn't exist on the rendered page. The
+      // enhancer chain populates IDs first, so by the time we run this all
+      // legitimate targets are addressable; anything missing is a real
+      // dead-link the editorial team should fix.
+      function flagBrokenCrossRefs(bodyNode) {
+        if (!bodyNode || !bodyNode.querySelectorAll) return;
+        var sels = ['a[href^="#figure-"]', 'a[href^="#fig-"]', 'a[href^="#table-"]', 'a[href^="#tab-"]', 'a[href^="#ref-"]'];
+        Array.prototype.forEach.call(bodyNode.querySelectorAll(sels.join(',')), function (a) {
+          var href = (a.getAttribute('href') || '').replace(/^#/, '');
+          if (!href) return;
+          var t = document.getElementById(href);
+          if (!t) {
+            a.classList.add('article-ref-broken');
+            if (!a.title) a.title = 'Bu hedef bulunamadı: ' + href;
+          }
+        });
+      }
+
       function enhanceReferenceCitations(bodyNode) {
         if (!bodyNode || !bodyNode.querySelectorAll) return;
         if (bodyNode.getAttribute('data-ref-citations-ready') === 'true') return;
 
         var refBlock = null;
-        var refHeading = null;
-        var headings = bodyNode.querySelectorAll('h1, h2, h3, h4');
-        for (var i = 0; i < headings.length; i += 1) {
-          if (/^\s*references?\s*$/i.test(headings[i].textContent || '')) {
-            refHeading = headings[i];
-            var next = headings[i].nextElementSibling;
-            while (next && !/^(OL|UL|P|DIV)$/.test(next.tagName)) next = next.nextElementSibling;
-            if (next) { refBlock = next; break; }
-          }
+        var refHeading = (typeof findRefHeading === 'function') ? findRefHeading(bodyNode) : null;
+        if (refHeading) {
+          var next = refHeading.nextElementSibling;
+          while (next && !/^(OL|UL|P|DIV)$/.test(next.tagName)) next = next.nextElementSibling;
+          if (next) refBlock = next;
         }
         if (!refBlock) refBlock = bodyNode.querySelector('.article-references ol, .article-references p');
         if (!refBlock) return;
@@ -4823,6 +5081,317 @@
             target.classList.remove('article-ref-highlighted');
           }, 2200);
         });
+
+        // Bidirectional links — give each in-text citation a unique id so
+        // the reference list can backlink to it. The <li> in the References
+        // section ends with a small "↩" arrow pointing to the first
+        // citation; multiply-cited refs get "↩¹ ↩² ↩³" Wikipedia-style.
+        var supDigit = function (n) {
+          return String(n).split('').map(function (d) {
+            return '⁰¹²³⁴⁵⁶⁷⁸⁹'[Number(d)] || d;
+          }).join('');
+        };
+        var citCounts = {};
+        var allCitations = bodyNode.querySelectorAll('a.article-ref-citation[href^="#ref-"]');
+        Array.prototype.forEach.call(allCitations, function (a) {
+          var m = (a.getAttribute('href') || '').match(/^#ref-(\d+)$/);
+          if (!m) return;
+          var n = Number(m[1]);
+          citCounts[n] = (citCounts[n] || 0) + 1;
+          if (!a.id) a.id = 'cite-ref-' + n + '-' + citCounts[n];
+        });
+        var refLis = refRoot && refRoot.tagName === 'OL'
+          ? refRoot.querySelectorAll(':scope > li')
+          : (refRoot ? refRoot.querySelectorAll('li') : []);
+        Array.prototype.forEach.call(refLis, function (li, i) {
+          var n = i + 1;
+          if (!li.id) li.id = 'ref-' + n;
+          // Idempotent — drop any stale backlink container first.
+          var stale = li.querySelector(':scope > .article-ref-backlinks');
+          if (stale) stale.remove();
+          var total = citCounts[n] || 0;
+          if (!total) return;
+          var span = document.createElement('span');
+          span.className = 'article-ref-backlinks';
+          if (total === 1) {
+            span.innerHTML = ' <a href="#cite-ref-' + n + '-1" class="article-ref-backlink" title="Metne dön" aria-label="Metne dön">↩</a>';
+          } else {
+            var parts = [];
+            for (var j = 1; j <= total; j += 1) {
+              parts.push('<a href="#cite-ref-' + n + '-' + j + '" class="article-ref-backlink" title="Atıf ' + j + ' konumuna dön" aria-label="Atıf ' + j + ' konumuna dön">↩' + supDigit(j) + '</a>');
+            }
+            span.innerHTML = ' ' + parts.join(' ');
+          }
+          li.appendChild(span);
+        });
+        // Backlink click → smooth scroll + brief highlight on the citation.
+        bodyNode.addEventListener('click', function (event) {
+          var back = event.target.closest('.article-ref-backlink');
+          if (!back || !bodyNode.contains(back)) return;
+          var href = (back.getAttribute('href') || '').replace(/^#/, '');
+          if (!href) return;
+          var tgt = document.getElementById(href);
+          if (!tgt) return;
+          event.preventDefault();
+          try { tgt.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+          catch (err) { tgt.scrollIntoView(); }
+          tgt.classList.remove('article-ref-cite-highlighted');
+          void tgt.offsetWidth;
+          tgt.classList.add('article-ref-cite-highlighted');
+          window.setTimeout(function () {
+            tgt.classList.remove('article-ref-cite-highlighted');
+          }, 2200);
+        });
+      }
+
+      // Figure/table reference styling — these <a href="#figure-N"> anchors
+      // are emitted by the JATS importer and the manual editor, but they
+      // don't carry the article-media-ref-link class yet. Adding it here lights
+      // them up in teal so readers can spot the cross-references in long text.
+      // Also: if the editor typed plain text like "Figure 1" or "Tablo 2" and
+      // a matching block exists, auto-wrap the mention in an anchor — this is
+      // the "auto-detect plain references" the editorial team asked for.
+      function enhanceFigureTableLinks(bodyNode) {
+        if (!bodyNode || !bodyNode.querySelectorAll) return;
+        // 1) Add the highlight class to existing anchors.
+        var anchors = bodyNode.querySelectorAll('a[href^="#figure-"], a[href^="#table-"], a[href^="#fig-"], a[href^="#tab-"]');
+        Array.prototype.forEach.call(anchors, function (a) {
+          if (a.classList.contains('article-media-ref-link')) return;
+          if (a.closest && a.closest('figure, .article-table-wrap, .article-references')) return;
+          a.classList.add('article-media-ref-link');
+        });
+        // 2) Auto-link plain-text mentions whose target exists.
+        autoLinkPlainMediaMentions(bodyNode);
+      }
+
+      function autoLinkPlainMediaMentions(bodyNode) {
+        if (bodyNode.getAttribute('data-media-autolinked') === 'true') return;
+        // Build a quick set of which figure/table targets exist on the page.
+        var available = {};
+        var blocks = bodyNode.querySelectorAll('figure[id], [id^="table-"], [id^="tab-"], [id^="figure-"], [id^="fig-"]');
+        Array.prototype.forEach.call(blocks, function (b) {
+          if (b.tagName === 'A') return;
+          var m = b.id.match(/^(figure|fig|table|tab)-(\d+)$/i);
+          if (!m) return;
+          var kind = /^(figure|fig)$/i.test(m[1]) ? 'figure' : 'table';
+          available[kind + '-' + m[2]] = b.id; // normalized → actual id
+        });
+        if (!Object.keys(available).length) return;
+
+        // Walk text nodes outside <a>, <figure>, headings, and trailing sections.
+        var walker = document.createTreeWalker(bodyNode, NodeFilter.SHOW_TEXT, {
+          acceptNode: function (n) {
+            if (!n.nodeValue || !/\S/.test(n.nodeValue)) return NodeFilter.FILTER_REJECT;
+            var p = n.parentNode;
+            while (p && p !== bodyNode) {
+              var tag = p.tagName;
+              if (tag === 'A' || tag === 'FIGURE' || tag === 'FIGCAPTION') return NodeFilter.FILTER_REJECT;
+              if (p.classList && (p.classList.contains('article-references')
+                || p.classList.contains('article-acknowledgments')
+                || p.classList.contains('article-footnotes')
+                || p.classList.contains('article-supplementary')
+                || p.classList.contains('article-table-wrap')
+                || p.classList.contains('article-figure')
+                || p.classList.contains('table-label')
+                || p.classList.contains('table-footnote'))) return NodeFilter.FILTER_REJECT;
+              p = p.parentNode;
+            }
+            // Pre-filter: text node must contain something that LOOKS like a
+            // figure/table mention. Avoid \b — Turkish letters aren't word
+            // chars in ASCII JS regex, so a space-prefixed "Şekil" would slip
+            // through. Lookbehind catches all the real cases.
+            // Must mirror seqPattern's alternations or plural forms get
+            // rejected here and the multi-number splitter never runs.
+            return /(?<![A-Za-z])(figures?|figs?\.?|şekiller?|şekil|sekil|tables?|tablolar?|tablo)\s+\d+/i.test(n.nodeValue)
+              ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+          },
+        });
+        // Collect first (mutating during walk is unsafe).
+        var hits = [];
+        for (var node = walker.nextNode(); node; node = walker.nextNode()) hits.push(node);
+        // Pattern captures kind-word + a number SEQUENCE (each number can carry
+        // a subfigure letter, joined by , - – "and" "ve"). Every individual
+        // number in the sequence becomes its own clickable anchor.
+        var seqPattern = /(?<![A-Za-z])(figures?|figs?\.?|şekiller?|şekil|sekil|tables?|tablolar?|tablo)(\s+)((?:\d+[a-z]?)(?:\s*(?:,|-|–|\sand\s|\sve\s)\s*\d+[a-z]?)*)/gi;
+        var isFigWord = function (w) { return /^(fig|figure|şekil|sekil|şekiller)/i.test(w); };
+        hits.forEach(function (textNode) {
+          var raw = textNode.nodeValue;
+          seqPattern.lastIndex = 0;
+          var match, lastIdx = 0, frag = document.createDocumentFragment();
+          var didWrap = false;
+          while ((match = seqPattern.exec(raw)) !== null) {
+            var kindWord = match[1];
+            var ws = match[2];
+            var numSeq = match[3];
+            var kind = isFigWord(kindWord) ? 'figure' : 'table';
+            // Tokenise numSeq into alternating num / separator chunks.
+            var tokens = [];
+            var tokenRe = /(\d+[a-z]?)|(\s*(?:,|-|–|\sand\s|\sve\s)\s*)/gi;
+            var t;
+            while ((t = tokenRe.exec(numSeq)) !== null) {
+              tokens.push(t[1] ? { kind: 'num', val: t[1] } : { kind: 'sep', val: t[2] });
+            }
+            var firstNumToken = null;
+            for (var i = 0; i < tokens.length; i += 1) if (tokens[i].kind === 'num') { firstNumToken = tokens[i]; break; }
+            if (!firstNumToken) continue;
+            var baseNum = parseInt(firstNumToken.val, 10);
+            var baseId = available[kind + '-' + baseNum];
+            if (!baseId) continue;
+            if (match.index > lastIdx) frag.appendChild(document.createTextNode(raw.slice(lastIdx, match.index)));
+            var firstSeen = false;
+            tokens.forEach(function (tk) {
+              if (tk.kind === 'sep') {
+                frag.appendChild(document.createTextNode(tk.val));
+                return;
+              }
+              if (!firstSeen) {
+                firstSeen = true;
+                var a = document.createElement('a');
+                a.href = '#' + baseId;
+                a.className = 'article-media-ref-link';
+                a.textContent = kindWord + ws + tk.val;
+                frag.appendChild(a);
+                return;
+              }
+              var n = parseInt(tk.val, 10);
+              var subId = available[kind + '-' + n];
+              if (subId) {
+                var a2 = document.createElement('a');
+                a2.href = '#' + subId;
+                a2.className = 'article-media-ref-link';
+                a2.textContent = tk.val;
+                frag.appendChild(a2);
+              } else {
+                frag.appendChild(document.createTextNode(tk.val));
+              }
+            });
+            lastIdx = match.index + match[0].length;
+            didWrap = true;
+          }
+          if (!didWrap) return;
+          if (lastIdx < raw.length) frag.appendChild(document.createTextNode(raw.slice(lastIdx)));
+          textNode.parentNode.replaceChild(frag, textNode);
+        });
+        bodyNode.setAttribute('data-media-autolinked', 'true');
+      }
+      // Expose for tests + future extension points. Harmless in production.
+      try { window.autoLinkPlainMediaMentions = autoLinkPlainMediaMentions; } catch (_) {}
+
+      // Reorder figures and tables so each one sits immediately after the first
+      // paragraph that cross-references it. Older JATS imports park everything
+      // at the bottom of the article body, which breaks the visual flow —
+      // moving each block under its first <a href="#figure-N"> mention makes
+      // long articles much easier to read. Idempotent: if the block is already
+      // right after the referencing paragraph (or there is no reference at
+      // all), the function is a no-op.
+      function relocateFiguresAndTables(bodyNode) {
+        if (!bodyNode || !bodyNode.querySelectorAll) return;
+        if (bodyNode.getAttribute('data-media-relocated') === 'true') return;
+        // Iterate in REVERSE DOM order. When several media blocks share the
+        // same host paragraph (e.g. "Figures 2, 3, 4" all live in one
+        // paragraph), inserting each one directly after the host would push
+        // earlier insertions further away, ending up as ...host, fig 4,
+        // fig 3, fig 2... Walking in reverse means the highest-numbered block
+        // is placed first, and each earlier block then lands just before it,
+        // preserving the original numerical order: ...host, fig 2, fig 3, fig 4.
+        var blockList = bodyNode.querySelectorAll('figure[id^="figure-"], figure[id^="fig-"], [id^="table-"], [id^="tab-"]');
+        var blocks = Array.prototype.slice.call(blockList).reverse();
+        blocks.forEach(function (block) {
+          if (block.tagName === 'A') return; // ignore bare anchor targets
+          if (block.closest('.article-references, .article-acknowledgments, .article-footnotes')) return;
+          var id = block.id;
+          if (!id) return;
+          // Find the first paragraph (or list item) that contains a link to this block.
+          // Skip anchors inside the block itself and inside reference/footnote sections.
+          var anchors = bodyNode.querySelectorAll('a[href="#' + id + '"]');
+          var hostParagraph = null;
+          for (var i = 0; i < anchors.length; i += 1) {
+            var a = anchors[i];
+            if (block.contains(a)) continue;
+            var host = a.closest('p, li, td, h1, h2, h3, h4, h5, h6');
+            if (!host) continue;
+            if (host.closest('.article-references, .article-acknowledgments, .article-footnotes')) continue;
+            hostParagraph = host;
+            break;
+          }
+          if (!hostParagraph) return;
+          if (hostParagraph.nextElementSibling === block) return; // already adjacent
+          if (hostParagraph.parentNode !== block.parentNode) return; // foreign container
+
+          // Decide "JATS-baked at the bottom" vs "manually placed inline":
+          //   • If the block sits AFTER the last regular text element at the
+          //     top level (i.e. there are no <p>/<ul>/<ol>/heading children
+          //     after it apart from trailing ack/footnote/reference sections),
+          //     it was dumped at the bottom — relocate it under the host.
+          //   • If a text element appears after the block, the editor placed
+          //     it inline on purpose. Leave it.
+          var siblings = hostParagraph.parentNode.children;
+          var blockIdx = -1, lastTextIdx = -1;
+          for (var s = 0; s < siblings.length; s += 1) {
+            var el = siblings[s];
+            if (el === block) blockIdx = s;
+            // Trailing sections are bottom-of-article structure, not body text.
+            if (el.classList.contains('article-references')
+              || el.classList.contains('article-acknowledgments')
+              || el.classList.contains('article-footnotes')
+              || el.classList.contains('article-supplementary')) continue;
+            // Other media blocks aren't "text" for this check either —
+            // they're the very things we're relocating.
+            if (el.tagName === 'FIGURE') continue;
+            if (el.id && /^(figure|fig|table|tab)-/.test(el.id)) continue;
+            if (el.classList.contains('article-table-wrap') || el.classList.contains('article-figure')) continue;
+            if (/^(P|UL|OL|BLOCKQUOTE|H[1-6]|DL|PRE)$/.test(el.tagName)) lastTextIdx = s;
+          }
+          if (blockIdx < 0) return;
+          if (blockIdx <= lastTextIdx) return; // text appears after the block → manual placement
+          hostParagraph.parentNode.insertBefore(block, hostParagraph.nextSibling);
+        });
+        bodyNode.setAttribute('data-media-relocated', 'true');
+      }
+
+      // Figure caption normalisation — make every figure's caption read the
+      // way the editorial team expects it: drop the redundant top-left
+      // "Figure 1" label that JATS emits as a <figcaption>, and prepend
+      // "FIG. N." (matching the "TABLE N." pattern already in use for tables)
+      // to the descriptive paragraph that sits under the image. Idempotent.
+      function normalizeFigureCaptions(bodyNode) {
+        if (!bodyNode || !bodyNode.querySelectorAll) return;
+        if (bodyNode.getAttribute('data-fig-captions-normalized') === 'true') return;
+        var figures = bodyNode.querySelectorAll('figure[id^="figure-"], figure[id^="fig-"]');
+        Array.prototype.forEach.call(figures, function (fig) {
+          var m = fig.id.match(/^(?:figure|fig)-(\d+)$/i);
+          if (!m) return;
+          var num = m[1];
+
+          // 1) Remove the top label <figcaption> that just says "Figure N".
+          var directCaps = [];
+          for (var c = fig.firstElementChild; c; c = c.nextElementSibling) {
+            if (c.tagName === 'FIGCAPTION') directCaps.push(c);
+          }
+          directCaps.forEach(function (cap) {
+            var t = (cap.textContent || '').replace(/\s+/g, ' ').trim();
+            if (/^(figure|fig\.?|şekil|sekil)\s*\d+\.?$/i.test(t)) cap.remove();
+          });
+
+          // 2) Find the descriptive paragraph (first <p> that isn't empty)
+          //    and prepend "FIG. N. " in bold if it isn't already prefixed.
+          var captionP = null;
+          for (var k = fig.firstElementChild; k; k = k.nextElementSibling) {
+            if (k.tagName !== 'P') continue;
+            if (!(k.textContent || '').replace(/\s+/g, '').length) continue;
+            captionP = k;
+            break;
+          }
+          if (!captionP) return;
+          var existing = (captionP.textContent || '').replace(/\s+/g, ' ').trim();
+          if (/^(?:FIG\.?|FIGURE|ŞEKİL|SEKIL)\s*\d+\.?\s/i.test(existing)) return; // already prefixed
+          var prefix = document.createElement('strong');
+          prefix.textContent = 'FIG. ' + num + '. ';
+          // Insert a space after the prefix if the caption text doesn't start
+          // with whitespace itself.
+          captionP.insertBefore(prefix, captionP.firstChild);
+        });
+        bodyNode.setAttribute('data-fig-captions-normalized', 'true');
       }
 
       function enhanceSupplementaryCitations(bodyNode) {
@@ -5013,9 +5582,20 @@
               if (bakedSupp) bakedSupp.remove();
             }
             var articleBodyNode = container.querySelector('.article-body');
+            // Convert Word's MsoListParagraph references into a real <ol> so
+            // the rest of the chain (citation linking, ref ID assignment)
+            // has structured data to bind to.
+            normalizeMsoReferenceList(articleBodyNode);
             enhanceReferenceCitations(articleBodyNode);
+            normalizeFigureCaptions(articleBodyNode);
+            enhanceFigureTableLinks(articleBodyNode);
+            relocateFiguresAndTables(articleBodyNode);
             enhanceSupplementaryCitations(articleBodyNode);
             initFullTextMediaInteractions(articleBodyNode);
+            // After everything else has wired up IDs and cross-references,
+            // surface any anchors whose target still doesn't exist (silent
+            // dead-links are easy to miss otherwise).
+            flagBrokenCrossRefs(articleBodyNode);
             buildTOC();
           }).catch(function () {
             var container = document.getElementById('fulltext-content');

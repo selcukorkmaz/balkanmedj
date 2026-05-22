@@ -473,11 +473,11 @@
 
         <!-- Desktop Nav -->
         <div class="hidden lg:flex items-center space-x-1">
-          <a href="index.html" data-nav-page="index.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Home</a>
+          <a href="index.html" data-nav-page="index.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">Home</a>
 
           <!-- About Dropdown -->
           <div class="relative group">
-            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center">
+            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center whitespace-nowrap">
               About
               <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
@@ -490,7 +490,7 @@
 
           <!-- Issues & Articles Dropdown -->
           <div class="relative group">
-            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center">
+            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center whitespace-nowrap">
               Issues &amp; Articles
               <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
@@ -501,10 +501,10 @@
             </div>
           </div>
 
-          <a href="for-authors.html" data-nav-page="for-authors.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">For Authors</a>
-          <a href="for-reviewers.html" data-nav-page="for-reviewers.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">For Reviewers</a>
-          <a href="policies.html" data-nav-page="policies.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Policies</a>
-          <a href="contact.html" data-nav-page="contact.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors">Contact</a>
+          <a href="for-authors.html" data-nav-page="for-authors.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">For Authors</a>
+          <a href="for-reviewers.html" data-nav-page="for-reviewers.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">For Reviewers</a>
+          <a href="policies.html" data-nav-page="policies.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">Policies</a>
+          <a href="contact.html" data-nav-page="contact.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">Contact</a>
         </div>
 
         <!-- Submit CTA + Mobile toggle -->
@@ -516,7 +516,7 @@
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
             <span>Search</span>
           </button>
-          <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center px-4 py-2 bg-red-700 text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors shadow-sm">
+          <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center px-4 py-2 bg-red-700 text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors shadow-sm whitespace-nowrap">
             Submit Manuscript
             <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
           </a>
@@ -644,15 +644,7 @@
           <label for="editorial-tab-select" class="editorial-tab-mobile-label">Jump to section</label>
           <div class="editorial-tab-mobile-wrap">
             <select id="editorial-tab-select" class="editorial-tab-mobile-select" aria-label="Select editorial board section">
-              <option value="tab-eic">Editor-in-Chief</option>
-              <option value="tab-honorary">Honorary Editors</option>
-              <option value="tab-deputy">Deputy Editors</option>
-              <option value="tab-assoc">Associate Editors</option>
-              <option value="tab-assistant">Assistant Associate Editors</option>
-              <option value="tab-other">Other Editors</option>
-              <option value="tab-advisory">Editorial Advisory Board</option>
-              <option value="tab-reviewers">Board of Reviewers</option>
-              <option value="tab-former">Former Editor in Chief</option>
+              <!-- options generated from EDITORIAL_BOARD.sections -->
             </select>
             <svg class="editorial-tab-mobile-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -660,73 +652,11 @@
           </div>
         </div>
 
-        <!-- Tab Buttons -->
-        <div role="tablist" aria-label="Editorial Board sections" class="editorial-tab-rail mb-10">
-          <button role="tab" id="tab-eic" aria-selected="true" aria-controls="panel-eic" class="tab-btn whitespace-nowrap tab-active" tabindex="0">
-            Editor-in-Chief
-          </button>
-          <button role="tab" id="tab-honorary" aria-selected="false" aria-controls="panel-honorary" class="tab-btn whitespace-nowrap" tabindex="-1">
-            Honorary Editors
-          </button>
-          <button role="tab" id="tab-deputy" aria-selected="false" aria-controls="panel-deputy" class="tab-btn whitespace-nowrap" tabindex="-1">
-            Deputy Editors
-          </button>
-          <button role="tab" id="tab-assoc" aria-selected="false" aria-controls="panel-assoc" class="tab-btn whitespace-nowrap" tabindex="-1">
-            Associate Editors
-          </button>
-          <button role="tab" id="tab-assistant" aria-selected="false" aria-controls="panel-assistant" class="tab-btn whitespace-nowrap" tabindex="-1" aria-label="Assistant Associate Editors">
-            <span class="xl:hidden">Assistant Assoc.</span><span class="hidden xl:inline">Assistant Associate Editors</span>
-          </button>
-          <button role="tab" id="tab-other" aria-selected="false" aria-controls="panel-other" class="tab-btn whitespace-nowrap" tabindex="-1">
-            Other Editors
-          </button>
-          <button role="tab" id="tab-advisory" aria-selected="false" aria-controls="panel-advisory" class="tab-btn whitespace-nowrap" tabindex="-1" aria-label="Editorial Advisory Board">
-            <span class="xl:hidden">Advisory Board</span><span class="hidden xl:inline">Editorial Advisory Board</span>
-          </button>
-          <button role="tab" id="tab-reviewers" aria-selected="false" aria-controls="panel-reviewers" class="tab-btn whitespace-nowrap" tabindex="-1">
-            Board of Reviewers
-          </button>
-          <button role="tab" id="tab-former" aria-selected="false" aria-controls="panel-former" class="tab-btn whitespace-nowrap" tabindex="-1" aria-label="Former Editor in Chief">
-            <span class="xl:hidden">Former EiC</span><span class="hidden xl:inline">Former Editor in Chief</span>
-          </button>
-        </div>
+        <!-- Tab Buttons — generated from EDITORIAL_BOARD.sections -->
+        <div id="editorial-tablist" role="tablist" aria-label="Editorial Board sections" class="editorial-tab-rail mb-10"></div>
 
-        <!-- Tab Panels -->
-        <div id="panel-eic" role="tabpanel" aria-labelledby="tab-eic" tabindex="0">
-          <!-- Populated by JS -->
-        </div>
-
-        <div id="panel-honorary" role="tabpanel" aria-labelledby="tab-honorary" class="hidden" tabindex="0">
-          <!-- Populated by JS -->
-        </div>
-
-        <div id="panel-deputy" role="tabpanel" aria-labelledby="tab-deputy" class="hidden" tabindex="0">
-          <!-- Populated by JS -->
-        </div>
-
-        <div id="panel-assoc" role="tabpanel" aria-labelledby="tab-assoc" class="hidden" tabindex="0">
-          <!-- Populated by JS -->
-        </div>
-
-        <div id="panel-assistant" role="tabpanel" aria-labelledby="tab-assistant" class="hidden" tabindex="0">
-          <!-- Populated by JS -->
-        </div>
-
-        <div id="panel-other" role="tabpanel" aria-labelledby="tab-other" class="hidden" tabindex="0">
-          <!-- Populated by JS -->
-        </div>
-
-        <div id="panel-advisory" role="tabpanel" aria-labelledby="tab-advisory" class="hidden" tabindex="0">
-          <!-- Populated by JS -->
-        </div>
-
-        <div id="panel-reviewers" role="tabpanel" aria-labelledby="tab-reviewers" class="hidden" tabindex="0">
-          <!-- Populated by JS -->
-        </div>
-
-        <div id="panel-former" role="tabpanel" aria-labelledby="tab-former" class="hidden" tabindex="0">
-          <!-- Populated by JS -->
-        </div>
+        <!-- Tab Panels — generated from EDITORIAL_BOARD.sections -->
+        <div id="editorial-panels"></div>
 
       </div>
     </section>
@@ -795,7 +725,6 @@
               <a href="https://www.instagram.com/balkanmedj/" target="_blank" rel="noopener" aria-label="Instagram" class="text-teal-300 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
               <a href="https://x.com/balkanmedj" target="_blank" rel="noopener" aria-label="X (Twitter)" class="text-teal-300 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
               <a href="https://www.linkedin.com/company/balkan-med-j/" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-teal-300 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-              <a href="https://www.youtube.com/@kleanin" target="_blank" rel="noopener" aria-label="YouTube" class="text-teal-300 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
             </div>
           </div>
         </div>
@@ -823,228 +752,107 @@
 
   <!-- Scripts -->
   <script src="js/data/editorial-board.js"></script>
-  <script src="js/data/editorial-extended.js"></script>
   <script src="js/data/news.js"></script>
   <script src="js/main.js"></script>
   <script src="js/search.js?v=20260228a"></script>
   <script>
     (function() {
       var data = window.EDITORIAL_BOARD;
-      var extended = window.EDITORIAL_EXTENDED || {};
-      if (!data) return;
+      if (!data || !Array.isArray(data.sections)) return;
+      var sections = data.sections;
 
-      function getProfileUrl(member) {
-        if (!member || !member.name) return '';
-        if (member.profileUrl) return member.profileUrl;
-        return (data.profileLinks && data.profileLinks[member.name]) || '';
+      function esc(s) {
+        return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      }
+      function slug(s) {
+        return String(s || '').toLowerCase()
+          .replace(/[ğ]/g, 'g').replace(/[ü]/g, 'u').replace(/[ş]/g, 's').replace(/[ı]/g, 'i').replace(/[ö]/g, 'o').replace(/[ç]/g, 'c')
+          .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'x';
       }
 
-      function renderMemberName(member, className) {
-        var profileUrl = getProfileUrl(member);
-        var nameHtml;
-        if (profileUrl) {
-          nameHtml = '<button type="button" class="editor-profile-link ' + className + '" data-profile-url="' + profileUrl + '" data-profile-name="' + member.name + '">' + member.name + '</button>';
-        } else {
-          nameHtml = '<span class="' + className + '">' + member.name + '</span>';
-        }
-        if (member.link) {
-          nameHtml += ' <a href="' + member.link + '" target="_blank" rel="noopener" class="editor-external-link inline-flex items-center text-teal-600 hover:text-teal-800 align-middle ml-1" aria-label="' + member.name + ' harici bağlantı" title="Harici bağlantı"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a>';
-        }
-        return nameHtml;
-      }
-
-      function buildAdvisoryCard(member) {
-        var html = '<div class="board-card-wrap">' +
-          '<div class="board-card bg-white border-gray-200 rounded-xl border p-5">' +
-            '<h3 class="board-member-name text-lg font-bold text-gray-900">' + member.name + '</h3>' +
-            '<p class="board-member-affiliation text-sm mt-2">' + member.affiliation + '</p>' +
-          '</div>' +
-        '</div>';
-        return html;
-      }
-
-      function renderAdvisoryBoard(container, members) {
-        if (!container || !members || members.length === 0) return;
-        var html = '<div class="board-grid">';
-        members.forEach(function(member) {
-          html += buildAdvisoryCard(member);
+      // Member links (ORCID, CV, profile…) rendered as small chips. Image
+      // links (e.g. scanned CV) open in the profile modal; others in a new tab.
+      function memberLinksHtml(member) {
+        if (!member.links || !member.links.length) return '';
+        var chip = 'display:inline-block;font-size:11px;font-weight:600;color:#0f766e;background:#f0fdfa;border:1px solid #99f6e4;border-radius:6px;padding:1px 8px;margin:6px 5px 0 0;text-decoration:none;cursor:pointer';
+        var html = '<div class="editor-member-links">';
+        member.links.forEach(function(l) {
+          if (!l || !l.url) return;
+          var isImg = /\.(jpe?g|png|webp|gif|svg)$/i.test(l.url);
+          if (isImg) {
+            html += '<button type="button" class="editor-profile-link" style="' + chip + '" data-profile-url="' + esc(l.url) + '" data-profile-name="' + esc(member.name) + '">' + esc(l.label || 'CV') + '</button>';
+          } else {
+            html += '<a href="' + esc(l.url) + '" target="_blank" rel="noopener" style="' + chip + '">' + esc(l.label || 'Bağlantı') + '</a>';
+          }
         });
-        html += '</div>';
-        container.innerHTML = html;
+        return html + '</div>';
       }
 
-      function renderReviewers(container, reviewersData) {
-        if (!container || !reviewersData || !reviewersData.names || reviewersData.names.length === 0) return;
-        var html = '<div class="reviewer-header">' +
-          '<h2>' + (reviewersData.heading || 'Reviewer List') + '</h2>' +
-          '<p>' + (reviewersData.period || '') + ' &middot; ' + reviewersData.names.length + ' reviewers</p>' +
-          '</div>';
-        html += '<ol class="reviewer-list">';
-        reviewersData.names.forEach(function(name) {
-          html += '<li>' + name + '</li>';
-        });
-        html += '</ol>';
-        container.innerHTML = html;
-      }
-
-      function renderFormerEditors(container, formerEditors) {
-        if (!container || !formerEditors || formerEditors.length === 0) return;
-        var html = '<div class="former-grid">';
-        formerEditors.forEach(function(editor) {
-          html += '<article class="former-card">' +
-            (editor.image ? '<img src="' + editor.image + '" alt="' + editor.name + '" loading="lazy" decoding="async">' : '') +
-            '<h3>' + editor.name + '</h3>' +
-            '<p>' + (editor.period || '') + '</p>' +
-          '</article>';
-        });
-        html += '</div>';
-        container.innerHTML = html;
-      }
-
-      // ── Helper: build a single member card ──────────────────
       function buildCard(member, featured) {
+        var initials = (member.name || '').split(' ').map(function(n) { return n[0] || ''; }).join('').slice(0, 3);
         var bgClass = featured ? 'bg-gray-50 border-gray-200 board-card board-card-featured' : 'bg-white border-gray-200 board-card';
         var sizeClass = featured ? 'md:col-span-2 lg:col-span-3 board-card-wrap' : 'board-card-wrap';
-        var initials = member.name.split(' ').map(function(n) { return n[0]; }).join('');
-
-        var html = '<div class="' + sizeClass + '">' +
-          '<div class="' + bgClass + ' rounded-xl border p-5">';
-
+        var html = '<div class="' + sizeClass + '"><div class="' + bgClass + ' rounded-xl border p-5">';
         if (featured) {
-          var avatarHtml = '';
-          if (member.photo) {
-            avatarHtml += '<img src="' + member.photo + '" alt="' + member.name + '" class="editor-avatar-image" loading="lazy" decoding="async" onerror="this.remove(); var fallback=this.parentElement.querySelector(\'.editor-avatar-fallback\'); if (fallback) fallback.style.display=\'flex\';">';
-            avatarHtml += '<span class="editor-avatar-fallback">' + initials + '</span>';
-          } else {
-            avatarHtml = '<span class="editor-avatar-fallback" style="display:flex;">' + initials + '</span>';
-          }
-
-          html += '<div class="flex flex-col sm:flex-row sm:items-center gap-4">' +
-            '<div class="editor-avatar">' +
-              avatarHtml +
-            '</div>' +
-            '<div class="flex-1">' +
-              '<h3 class="board-member-name text-2xl font-bold text-gray-900">' + renderMemberName(member, '') + '</h3>' +
-              '<p class="board-member-title text-sm font-medium">' + member.title + '</p>' +
-              '<p class="board-member-affiliation text-sm mt-1">' + member.affiliation + '</p>' +
-              (member.email ? '<p class="board-member-email text-sm mt-1"><a href="mailto:' + member.email + '" class="text-teal-700 hover:text-teal-800 transition-colors">' + member.email + '</a></p>' : '') +
-            '</div>' +
-          '</div>';
+          var av = member.photo
+            ? '<img src="' + esc(member.photo) + '" alt="' + esc(member.name) + '" class="editor-avatar-image" loading="lazy" decoding="async" onerror="this.remove();var f=this.parentElement.querySelector(\'.editor-avatar-fallback\');if(f)f.style.display=\'flex\';"><span class="editor-avatar-fallback">' + esc(initials) + '</span>'
+            : '<span class="editor-avatar-fallback" style="display:flex;">' + esc(initials) + '</span>';
+          html += '<div class="flex flex-col sm:flex-row sm:items-center gap-4">'
+            + '<div class="editor-avatar">' + av + '</div>'
+            + '<div class="flex-1">'
+            + '<h3 class="board-member-name text-2xl font-bold text-gray-900">' + esc(member.name) + '</h3>'
+            + (member.title ? '<p class="board-member-title text-sm font-medium">' + esc(member.title) + '</p>' : '')
+            + (member.period ? '<p class="board-member-title text-sm font-medium">' + esc(member.period) + '</p>' : '')
+            + (member.affiliation ? '<p class="board-member-affiliation text-sm mt-1">' + esc(member.affiliation) + '</p>' : '')
+            + (member.email ? '<p class="board-member-email text-sm mt-1"><a href="mailto:' + esc(member.email) + '" class="text-teal-700 hover:text-teal-800 transition-colors">' + esc(member.email) + '</a></p>' : '')
+            + memberLinksHtml(member)
+            + '</div></div>';
         } else {
-          var memberAvatar = '';
-          if (member.photo) {
-            memberAvatar = '<div class="board-member-avatar mb-2"><img src="' + member.photo + '" alt="' + member.name + '" class="w-16 h-16 rounded-full object-cover border" loading="lazy" decoding="async" onerror="this.style.display=\'none\';"></div>';
-          }
-          html += memberAvatar +
-            '<h3 class="board-member-name text-lg font-bold text-gray-900">' + renderMemberName(member, '') + '</h3>' +
-            '<p class="board-member-title text-sm mt-1">' + member.title + '</p>' +
-            '<p class="board-member-affiliation text-sm mt-1">' + member.affiliation + '</p>' +
-            (member.email ? '<p class="board-member-email text-sm mt-1"><a href="mailto:' + member.email + '" class="text-teal-700 hover:text-teal-800 transition-colors">' + member.email + '</a></p>' : '');
+          var av2 = member.photo
+            ? '<div class="board-member-avatar mb-2"><img src="' + esc(member.photo) + '" alt="' + esc(member.name) + '" class="w-16 h-16 rounded-full object-cover border" loading="lazy" decoding="async" onerror="this.style.display=\'none\';"></div>'
+            : '';
+          html += av2
+            + '<h3 class="board-member-name text-lg font-bold text-gray-900">' + esc(member.name) + '</h3>'
+            + (member.title ? '<p class="board-member-title text-sm mt-1">' + esc(member.title) + '</p>' : '')
+            + (member.period ? '<p class="board-member-title text-sm mt-1">' + esc(member.period) + '</p>' : '')
+            + (member.affiliation ? '<p class="board-member-affiliation text-sm mt-1">' + esc(member.affiliation) + '</p>' : '')
+            + (member.email ? '<p class="board-member-email text-sm mt-1"><a href="mailto:' + esc(member.email) + '" class="text-teal-700 hover:text-teal-800 transition-colors">' + esc(member.email) + '</a></p>' : '')
+            + memberLinksHtml(member);
         }
-
-        html += '</div></div>';
-        return html;
+        return html + '</div></div>';
       }
 
-      // ── Helper: render a list of members into a grid ────────
-      function renderGrid(container, members, featured) {
-        if (!members || members.length === 0) return;
-
-        var gridClass = featured ? '' : 'board-grid';
-        var html = '<div class="' + gridClass + '">';
-
-        if (Array.isArray(members)) {
-          members.forEach(function(member) {
-            html += buildCard(member, false);
-          });
-        } else {
-          html += buildCard(members, featured);
+      function sectionPanelHtml(sec) {
+        if (sec.layout === 'names') {
+          var names = (sec.names || []);
+          var h = '<div class="reviewer-header"><h2>' + esc(sec.label) + '</h2><p>' + names.length + ' kişi</p></div><ol class="reviewer-list">';
+          names.forEach(function(n) { h += '<li>' + esc(n) + '</li>'; });
+          return h + '</ol>';
         }
-
-        html += '</div>';
-        container.innerHTML = html;
-      }
-
-      // ── Render each panel ───────────────────────────────────
-
-      // Editor-in-Chief (featured)
-      var panelEic = document.getElementById('panel-eic');
-      if (panelEic && data.editorInChief) {
-        renderGrid(panelEic, data.editorInChief, true);
-      }
-
-      // Honorary Editors
-      var panelHonorary = document.getElementById('panel-honorary');
-      if (panelHonorary && data.honoraryEditors) {
-        renderGrid(panelHonorary, data.honoraryEditors, false);
-      }
-
-      // Deputy Editors
-      var panelDeputy = document.getElementById('panel-deputy');
-      if (panelDeputy && data.deputyEditors) {
-        renderGrid(panelDeputy, data.deputyEditors, false);
-      }
-
-      // Associate Editors
-      var panelAssoc = document.getElementById('panel-assoc');
-      if (panelAssoc && data.associateEditors) {
-        renderGrid(panelAssoc, data.associateEditors, false);
-      }
-
-      // Assistant Associate Editors
-      var panelAssistant = document.getElementById('panel-assistant');
-      if (panelAssistant && data.assistantAssociateEditors) {
-        renderGrid(panelAssistant, data.assistantAssociateEditors, false);
-      }
-
-      // Other Editors (biostatistics + ethics + language)
-      var panelOther = document.getElementById('panel-other');
-      if (panelOther) {
-        var otherHtml = '';
-
-        if (data.biostatisticsEditor) {
-          otherHtml += '<h2 class="board-subsection-title text-lg font-semibold text-gray-900 mb-4">Biostatistics Editor</h2>';
-          otherHtml += '<div class="board-grid mb-10">';
-          otherHtml += buildCard(data.biostatisticsEditor, false);
-          otherHtml += '</div>';
+        var members = (sec.members || []);
+        if (!members.length) return '<p class="text-gray-400 text-sm py-8 text-center">Bu bölümde kayıt bulunmuyor.</p>';
+        if (sec.layout === 'featured') {
+          return members.map(function(m) { return buildCard(m, true); }).join('');
         }
-
-        if (data.ethicsEditor) {
-          otherHtml += '<h2 class="board-subsection-title text-lg font-semibold text-gray-900 mb-4">Ethics Editor</h2>';
-          otherHtml += '<div class="board-grid mb-10">';
-          otherHtml += buildCard(data.ethicsEditor, false);
-          otherHtml += '</div>';
-        }
-
-        if (data.languageEditing) {
-          otherHtml += '<h2 class="board-subsection-title text-lg font-semibold text-gray-900 mb-4">Language Editing</h2>';
-          otherHtml += '<div class="board-grid">';
-          otherHtml += '<div class="board-card-wrap"><div class="board-card bg-white border-gray-200 rounded-xl border p-5">' +
-            '<h3 class="board-member-name text-lg font-bold text-gray-900">' + renderMemberName(data.languageEditing, '') + '</h3>' +
-            '</div></div>';
-          otherHtml += '</div>';
-        }
-
-        panelOther.innerHTML = otherHtml;
+        return '<div class="board-grid">' + members.map(function(m) { return buildCard(m, false); }).join('') + '</div>';
       }
 
-      // Editorial Advisory Board
-      var panelAdvisory = document.getElementById('panel-advisory');
-      if (panelAdvisory && extended.advisoryBoard) {
-        renderAdvisoryBoard(panelAdvisory, extended.advisoryBoard);
-      }
-
-      // Board of Reviewers
-      var panelReviewers = document.getElementById('panel-reviewers');
-      if (panelReviewers && extended.reviewersBoard) {
-        renderReviewers(panelReviewers, extended.reviewersBoard);
-      }
-
-      // Former Editor in Chief
-      var panelFormer = document.getElementById('panel-former');
-      if (panelFormer && extended.formerEditorsInChief) {
-        renderFormerEditors(panelFormer, extended.formerEditorsInChief);
-      }
+      // Generate tabs, mobile select options and panels from the sections list.
+      var tablistEl = document.getElementById('editorial-tablist');
+      var panelsHostEl = document.getElementById('editorial-panels');
+      var selEl = document.getElementById('editorial-tab-select');
+      var tabsHtml = '', panelsHtml = '', optsHtml = '';
+      sections.forEach(function(sec, i) {
+        var sid = slug(sec.id || sec.label || ('s' + i));
+        var tabId = 'tab-' + sid, panelId = 'panel-' + sid;
+        var active = i === 0;
+        tabsHtml += '<button role="tab" id="' + tabId + '" aria-selected="' + (active ? 'true' : 'false') + '" aria-controls="' + panelId + '" class="tab-btn whitespace-nowrap' + (active ? ' tab-active' : '') + '" tabindex="' + (active ? '0' : '-1') + '">' + esc(sec.label) + '</button>';
+        optsHtml += '<option value="' + tabId + '">' + esc(sec.label) + '</option>';
+        panelsHtml += '<div id="' + panelId + '" role="tabpanel" aria-labelledby="' + tabId + '"' + (active ? '' : ' class="hidden"') + ' tabindex="0">' + sectionPanelHtml(sec) + '</div>';
+      });
+      if (tablistEl) tablistEl.innerHTML = tabsHtml;
+      if (panelsHostEl) panelsHostEl.innerHTML = panelsHtml;
+      if (selEl) selEl.innerHTML = optsHtml;
 
       // ── Tab switching logic ─────────────────────────────────
       var tabs = document.querySelectorAll('[role="tab"]');

@@ -22,26 +22,13 @@ function readNavFooterData() {
 }
 
 /**
- * Extract current nav/footer from a reference HTML file and save as JSON.
+ * Seed the nav/footer data file with the default structured model and the
+ * HTML generated from it. The form-based editor works on the model; the
+ * generated navHtml/footerHtml are what syncAllPages writes into the pages.
  */
 function bootstrapNavFooterData() {
-  const refFile = path.join(ROOT, 'index.html');
-  const html = fs.readFileSync(refFile, 'utf-8');
-
-  // Extract nav HTML
-  const navMatch = html.match(/<nav\s[^>]*class="[^"]*bg-white[^"]*border-b[^"]*"[^>]*>([\s\S]*?)<\/nav>/);
-  const navHtml = navMatch ? navMatch[0] : '';
-
-  // Extract footer HTML
-  const footerMatch = html.match(/<footer\s[^>]*class="[^"]*bg-teal-900[^"]*"[^>]*>([\s\S]*?)<\/footer>/);
-  const footerHtml = footerMatch ? footerMatch[0] : '';
-
-  const data = {
-    _note: 'Auto-extracted from index.html. Edit via admin panel.',
-    navHtml,
-    footerHtml,
-  };
-
+  const tpl = require('./nav-footer-template');
+  const data = tpl.buildNavFooterData(tpl.DEFAULT_MODEL);
   fs.mkdirSync(path.dirname(NAV_FOOTER_PATH), { recursive: true });
   fs.writeFileSync(NAV_FOOTER_PATH, JSON.stringify(data, null, 2), 'utf-8');
   return data;
@@ -67,28 +54,24 @@ function syncAllPages() {
     }
 
     try {
-      let html = fs.readFileSync(filePath, 'utf-8');
-      let changed = false;
+      const original = fs.readFileSync(filePath, 'utf-8');
+      let html = original;
 
       // Replace nav
       if (data.navHtml) {
         const navRegex = /<nav\s[^>]*class="[^"]*bg-white[^"]*border-b[^"]*"[^>]*>[\s\S]*?<\/nav>/;
-        if (navRegex.test(html)) {
-          html = html.replace(navRegex, data.navHtml);
-          changed = true;
-        }
+        if (navRegex.test(html)) html = html.replace(navRegex, data.navHtml);
       }
 
       // Replace footer
       if (data.footerHtml) {
         const footerRegex = /<footer\s[^>]*class="[^"]*bg-teal-900[^"]*"[^>]*>[\s\S]*?<\/footer>/;
-        if (footerRegex.test(html)) {
-          html = html.replace(footerRegex, data.footerHtml);
-          changed = true;
-        }
+        if (footerRegex.test(html)) html = html.replace(footerRegex, data.footerHtml);
       }
 
-      if (changed) {
+      // Only write if content actually changed — keeps the sync idempotent and
+      // gives the UI an accurate "unchanged" count on subsequent runs.
+      if (html !== original) {
         fs.writeFileSync(filePath, html, 'utf-8');
         results.push({ file, status: 'updated' });
       } else {

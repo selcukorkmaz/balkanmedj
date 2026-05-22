@@ -2,17 +2,59 @@
  * Admin Panel — SPA Router & Shell
  */
 
-// --- Toast ---
+// --- Categorical badge color mapper ---
+// We previously rendered every article type in a different hue (violet, rose,
+// sky, fuchsia, …), which produced a busy, eye-tiring table. Now categories
+// render in a single neutral tone so the table stays calm. The few badges
+// that *do* carry meaning (success/warning/info) keep their semantic colors.
+function badgeColorFor() { return 'badge-neutral'; }
+function typeBadge(type) {
+  if (!type) return '<span class="badge badge-neutral">—</span>';
+  return `<span class="badge badge-neutral">${esc(type)}</span>`;
+}
+
+// --- Page header helper ---
+// Renders a consistent page header: eyebrow + title + subtitle on the left, actions on the right.
+// `title` is always escaped (plain text). `subtitle` is treated as HTML so callers
+// can use <strong>, <code>, etc. — callers are responsible for escaping any
+// untrusted user content inside subtitle themselves.
+// Usage:
+//   pageHeader({ title: 'Makaleler', subtitle: '127 toplam', eyebrow: 'İçerik' })
+//   pageHeader({ title: 'Dashboard', subtitle: 'Toplu işlem <strong>açık</strong>' })
+function pageHeader({ title, subtitle, eyebrow, actions } = {}) {
+  return `
+    <header class="page-header">
+      <div class="min-w-0">
+        ${eyebrow ? `<div class="page-eyebrow">${esc(eyebrow)}</div>` : ''}
+        <h1 class="page-title">${esc(title || '')}</h1>
+        ${subtitle ? `<div class="page-subtitle">${subtitle}</div>` : ''}
+      </div>
+      ${actions ? `<div class="flex items-center gap-2 flex-shrink-0">${actions}</div>` : ''}
+    </header>`;
+}
+
+// --- Toast (premium: with icon, slide-in animation, stacked) ---
 let _toastCount = 0;
 function toast(msg, type = 'success') {
   const offset = _toastCount * 56;
   _toastCount++;
   const el = document.createElement('div');
-  el.className = `fixed right-4 z-50 px-5 py-3 rounded-lg shadow-lg text-white text-sm font-medium transition-all duration-300 ${type === 'error' ? 'bg-red-600' : type === 'warning' ? 'bg-amber-500' : 'bg-teal-600'}`;
+  el.className = `toast toast-${type}`;
   el.style.top = `${16 + offset}px`;
-  el.textContent = msg;
+  const icons = {
+    success: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>',
+    error:   '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>',
+    warning: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>',
+  };
+  el.innerHTML = `${icons[type] || icons.success}<span>${esc(msg)}</span>`;
   document.body.appendChild(el);
-  setTimeout(() => { el.style.opacity = '0'; _toastCount = Math.max(0, _toastCount - 1); setTimeout(() => el.remove(), 300); }, 3000);
+  // trigger entrance animation on next frame
+  requestAnimationFrame(() => el.classList.add('is-visible'));
+  setTimeout(() => {
+    el.classList.remove('is-visible');
+    _toastCount = Math.max(0, _toastCount - 1);
+    setTimeout(() => el.remove(), 220);
+  }, 3000);
 }
 
 // --- Debounce ---
@@ -93,20 +135,22 @@ function renderUploadProgress(container, files, label = 'Yükleniyor') {
   };
 }
 
-// --- Modal ---
+// --- Modal (premium: backdrop blur, soft shadow, scale-in animation) ---
 function modal(title, bodyHtml, actions = []) {
   return new Promise((resolve) => {
     const overlay = document.createElement('div');
-    overlay.className = 'fixed inset-0 bg-black/50 z-40 flex items-center justify-center p-4';
+    overlay.className = 'modal-overlay';
     overlay.innerHTML = `
-      <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[80vh] flex flex-col">
-        <div class="flex items-center justify-between px-6 py-4 border-b">
-          <h3 class="text-lg font-semibold text-gray-900">${title}</h3>
-          <button class="modal-close text-gray-400 hover:text-gray-600 text-xl">&times;</button>
+      <div class="modal-dialog">
+        <div class="flex items-center justify-between px-6 py-4" style="border-bottom:1px solid var(--border-soft)">
+          <h3 class="text-base font-semibold" style="color:var(--text-strong);letter-spacing:-0.01em">${title}</h3>
+          <button class="modal-close p-1.5 rounded-md transition-colors" style="color:var(--text-muted)" onmouseover="this.style.background='var(--bg-subtle)'" onmouseout="this.style.background='transparent'" aria-label="Kapat">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
         </div>
-        <div class="px-6 py-4 overflow-y-auto flex-1">${bodyHtml}</div>
-        <div class="flex justify-end gap-3 px-6 py-4 border-t">
-          ${actions.map((a) => `<button class="modal-action px-4 py-2 rounded-lg text-sm font-medium ${a.class || 'bg-gray-100 text-gray-700 hover:bg-gray-200'}" data-action="${a.value || ''}">${a.label}</button>`).join('')}
+        <div class="px-6 py-5 overflow-y-auto flex-1">${bodyHtml}</div>
+        <div class="flex justify-end gap-2 px-6 py-4" style="border-top:1px solid var(--border-soft);background:var(--bg-subtle);border-radius:0 0 var(--radius-lg) var(--radius-lg)">
+          ${actions.map((a) => `<button class="modal-action btn ${a.class || 'btn-secondary'}" data-action="${a.value || ''}">${a.label}</button>`).join('')}
         </div>
       </div>`;
     document.body.appendChild(overlay);
@@ -116,14 +160,19 @@ function modal(title, bodyHtml, actions = []) {
     overlay.querySelectorAll('.modal-action').forEach((btn) => {
       btn.onclick = () => close(btn.dataset.action);
     });
+    // Click outside to dismiss
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) close(null); });
+    // Esc to dismiss
+    const onKey = (e) => { if (e.key === 'Escape') { document.removeEventListener('keydown', onKey); close(null); } };
+    document.addEventListener('keydown', onKey);
   });
 }
 
-// --- Confirm ---
+// --- Confirm (premium: clearer typography + danger styling) ---
 async function confirmAction(msg) {
-  const result = await modal('Onay', `<p class="text-gray-600">${msg}</p>`, [
-    { label: 'İptal', value: 'cancel' },
-    { label: 'Evet', value: 'confirm', class: 'bg-red-600 text-white hover:bg-red-700' },
+  const result = await modal('Onay', `<p style="color:var(--text)">${esc(msg)}</p>`, [
+    { label: 'İptal', value: 'cancel', class: 'btn-secondary' },
+    { label: 'Evet, onaylıyorum', value: 'confirm', class: 'btn-danger-solid' },
   ]);
   return result === 'confirm';
 }
@@ -137,11 +186,15 @@ function navigate(hash) {
 }
 
 function matchRoute(hash) {
-  const path = hash.replace(/^#\/?/, '/');
+  // Split off the query string so '#/foo/bar?tab=x' still matches '/foo/bar'.
+  // Query params are exposed to handlers via params.query (URLSearchParams).
+  const rawPath = hash.replace(/^#\/?/, '/');
+  const [path, queryString = ''] = rawPath.split('?');
+  const query = new URLSearchParams(queryString);
   for (const [pattern, handler] of Object.entries(routes)) {
     const regex = new RegExp('^' + pattern.replace(/:(\w+)/g, '(?<$1>[^/]+)') + '$');
     const match = path.match(regex);
-    if (match) return { handler, params: match.groups || {} };
+    if (match) return { handler, params: { ...(match.groups || {}), query } };
   }
   return null;
 }
@@ -167,23 +220,62 @@ async function handleRoute() {
   const match = matchRoute(hash);
   clearDirty();
 
-  // Update active sidebar link
-  document.querySelectorAll('[data-nav]').forEach((el) => {
-    const isActive = hash.startsWith(el.dataset.nav);
-    el.classList.toggle('bg-teal-50', isActive);
-    el.classList.toggle('text-teal-700', isActive);
-    el.classList.toggle('text-gray-600', !isActive);
+  // Update active sidebar link — use the .is-active class hooked by stylesheet
+  const navItems = document.querySelectorAll('[data-nav]');
+  // Map article-edit (/articles/:id) and AIP-edit (/articles-in-press/:id/edit)
+  // to their browsing sections so the right sidebar entry stays highlighted.
+  let navHash = hash;
+  if (/^#\/articles\/\d+/.test(hash)) navHash = '#/issues';            // article edit → Sayılar
+  else if (/^#\/articles-in-press\//.test(hash)) navHash = '#/articles-in-press'; // AIP edit → e-Pub
+  // Find the most specific (longest matching prefix) nav target.
+  let bestMatch = null; let bestLen = 0;
+  navItems.forEach((el) => {
+    const target = el.dataset.nav;
+    if (navHash === target || navHash.startsWith(target + '/') || (target === '#/' && navHash === '#/')) {
+      if (target.length > bestLen) { bestMatch = el; bestLen = target.length; }
+    }
   });
+  navItems.forEach((el) => el.classList.toggle('is-active', el === bestMatch));
 
   if (match) {
     try {
-      main.innerHTML = '<div class="flex items-center justify-center py-20"><div class="animate-spin w-8 h-8 border-4 border-teal-600 border-t-transparent rounded-full"></div></div>';
+      // Premium skeleton loader: page header + cards
+      main.innerHTML = `
+        <div style="opacity:.7">
+          <div class="page-header">
+            <div class="min-w-0" style="width:60%">
+              <div class="skeleton" style="height:11px;width:90px;margin-bottom:8px"></div>
+              <div class="skeleton" style="height:24px;width:60%;margin-bottom:6px"></div>
+              <div class="skeleton" style="height:12px;width:40%"></div>
+            </div>
+            <div class="flex gap-2"><div class="skeleton" style="height:34px;width:100px"></div></div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            ${Array(4).fill('<div class="card card-padded"><div class="skeleton" style="height:11px;width:50%;margin-bottom:14px"></div><div class="skeleton" style="height:28px;width:35%;margin-bottom:6px"></div><div class="skeleton" style="height:10px;width:60%"></div></div>').join('')}
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            ${Array(2).fill('<div class="card card-padded"><div class="skeleton" style="height:14px;width:30%;margin-bottom:18px"></div><div class="space-y-3">' + Array(5).fill('<div class="flex items-center gap-3"><div class="skeleton" style="height:24px;width:24px;border-radius:6px"></div><div class="skeleton" style="height:12px;flex:1"></div><div class="skeleton" style="height:12px;width:40px"></div></div>').join('') + '</div></div>').join('')}
+          </div>
+        </div>`;
       await match.handler(main, match.params);
+      // After the route renders, wire up WYSIWYG paste interception on every
+      // visual editor that now exists in the DOM. Idempotent — same editor
+      // won't be wired twice (see _pasteAttached flag).
+      wireAllWysiwygPasteHandlers();
     } catch (err) {
-      main.innerHTML = `<div class="bg-red-50 text-red-700 p-6 rounded-xl"><strong>Hata:</strong> ${esc(err.message)}</div>`;
+      main.innerHTML = `
+        <div class="card card-padded" style="border-color:#fecaca;background:#fef2f2">
+          <div class="flex items-start gap-3">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <div>
+              <div class="font-semibold" style="color:#991b1b">Bir şeyler ters gitti</div>
+              <div class="text-sm mt-1" style="color:#b91c1c">${esc(err.message)}</div>
+            </div>
+          </div>
+        </div>`;
     }
   } else {
-    main.innerHTML = '<div class="text-center py-20 text-gray-500">Sayfa bulunamadı.</div>';
+    main.innerHTML = '<div class="text-center py-20" style="color:var(--text-muted)">Sayfa bulunamadı.</div>';
   }
 }
 
@@ -204,7 +296,15 @@ function _updateDirtyIndicator() {
     el.textContent = _formDirty ? ' •' : '';
   });
 }
+// When `true`, markDirty() calls are silently dropped. We flip this on
+// while the full-text loader runs initial DOM normalisations (assigning
+// figure IDs, collapsing Word reference lists, auto-linking plain text)
+// — those mutations come from the system, not the editor, so they
+// shouldn't trigger the "unsaved changes" indicator or the navigation
+// confirm prompt. The flag is reset right after the load completes.
+let _suppressDirty = false;
 function markDirty() {
+  if (_suppressDirty) return;
   if (!_formDirty) { _formDirty = true; _updateDirtyIndicator(); }
 }
 function clearDirty() {
@@ -215,86 +315,338 @@ window.addEventListener('beforeunload', (e) => {
   if (_formDirty) { e.preventDefault(); e.returnValue = ''; }
 });
 
+// --- Row drag-and-drop (used by author/AIP author rows) -----------------
+// A six-dot grip glyph users can grab to reorder rows.
+const ROW_GRIP_SVG = '<svg viewBox="0 0 10 16" width="10" height="16" aria-hidden="true" focusable="false"><circle cx="2" cy="3"  r="1.2"/><circle cx="8" cy="3"  r="1.2"/><circle cx="2" cy="8"  r="1.2"/><circle cx="8" cy="8"  r="1.2"/><circle cx="2" cy="13" r="1.2"/><circle cx="8" cy="13" r="1.2"/></svg>';
+
+// Document-level delegated DnD: works for any current/future rows whose class
+// is registered in ROW_DND_SELECTORS. Saves rewiring per-render.
+const ROW_DND_SELECTORS = ['.author-row', '.aipf-author-row', '.ed-mrow'];
+let _dndSrc = null;
+
+function _dndRowFromEvent(e) {
+  for (const sel of ROW_DND_SELECTORS) {
+    const r = e.target.closest(sel);
+    if (r) return r;
+  }
+  return null;
+}
+function _dndClearIndicators() {
+  document.querySelectorAll('.drop-above, .drop-below').forEach((r) => {
+    r.classList.remove('drop-above', 'drop-below');
+  });
+}
+
+document.addEventListener('dragstart', (e) => {
+  const row = _dndRowFromEvent(e);
+  if (!row || row.getAttribute('draggable') !== 'true') return;
+  _dndSrc = row;
+  row.classList.add('row-dragging');
+  try {
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', 'row');
+  } catch (_) { /* Safari quirks */ }
+});
+document.addEventListener('dragover', (e) => {
+  if (!_dndSrc) return;
+  const row = _dndRowFromEvent(e);
+  if (!row || row === _dndSrc) return;
+  // Only react when hovering a row from the same list as the source.
+  if (row.parentNode !== _dndSrc.parentNode) return;
+  e.preventDefault();
+  if (e.dataTransfer) e.dataTransfer.dropEffect = 'move';
+  _dndClearIndicators();
+  const rect = row.getBoundingClientRect();
+  const above = (e.clientY - rect.top) < rect.height / 2;
+  row.classList.add(above ? 'drop-above' : 'drop-below');
+});
+document.addEventListener('drop', (e) => {
+  if (!_dndSrc) return;
+  const row = _dndRowFromEvent(e);
+  if (row && row !== _dndSrc && row.parentNode === _dndSrc.parentNode) {
+    e.preventDefault();
+    const rect = row.getBoundingClientRect();
+    const above = (e.clientY - rect.top) < rect.height / 2;
+    if (_dndSrc.classList.contains('ed-mrow')) {
+      // Editorial Board is model-driven: mutate _edModel and re-render
+      // instead of touching the DOM directly (the re-render restores the
+      // #N badges and disabled states on the ↑/↓ buttons).
+      _edReorderMemberByDrop(_dndSrc, row, above);
+    } else {
+      row.parentNode.insertBefore(_dndSrc, above ? row : row.nextSibling);
+      markDirty();
+    }
+  }
+  _dndClearIndicators();
+  if (_dndSrc) {
+    _dndSrc.classList.remove('row-dragging');
+    _dndSrc.removeAttribute('draggable');
+  }
+  _dndSrc = null;
+});
+
+function _edReorderMemberByDrop(srcRow, tgtRow, above) {
+  const si = Number(srcRow.dataset.sec);
+  if (si !== Number(tgtRow.dataset.sec)) return;
+  if (typeof _edModel === 'undefined' || !_edModel || !_edModel.sections[si]) return;
+  edSyncModel();
+  const arr = _edModel.sections[si].members || [];
+  const from = Number(srcRow.dataset.mem);
+  let to = Number(tgtRow.dataset.mem);
+  if (!Number.isFinite(from) || !Number.isFinite(to) || from === to) return;
+  const [item] = arr.splice(from, 1);
+  // After splice, indices above `from` shift down by one.
+  if (to > from) to -= 1;
+  if (!above) to += 1;
+  arr.splice(to, 0, item);
+  renderEditorialForm();
+  markDirty();
+}
+document.addEventListener('dragend', () => {
+  _dndClearIndicators();
+  if (_dndSrc) {
+    _dndSrc.classList.remove('row-dragging');
+    _dndSrc.removeAttribute('draggable');
+  }
+  _dndSrc = null;
+});
+// If the user mousedowns on the grip but releases without dragging, the
+// row keeps draggable=true; later, dragging inside an <input> would move
+// the row instead of selecting text. Clean any stray flags on mouseup.
+document.addEventListener('mouseup', () => {
+  if (_dndSrc) return; // active drag, dragend will handle cleanup
+  document.querySelectorAll('.author-row[draggable="true"], .aipf-author-row[draggable="true"], .ed-mrow[draggable="true"]').forEach((r) => {
+    r.removeAttribute('draggable');
+  });
+});
+
 // --- Register routes ---
 
 // Dashboard
 route('/', async (el) => {
-  const [stats, homepage, topArticles] = await Promise.all([
+  const [stats, homepage, topArticles, mediaStats, aipList] = await Promise.all([
     API.get('/stats'),
     API.get('/homepage').catch(() => ({})),
     API.get('/stats/top-articles?limit=5').catch(() => ({ topViewed: [], topDownloaded: [], totals: { views: 0, downloads: 0 } })),
+    API.get('/media/stats').catch(() => ({ pdfCount: 0, withoutPdf: 0 })),
+    API.get('/articles-in-press').catch(() => []),
   ]);
-  const cur = homepage?.currentIssue || {};
-  const typeRows = Object.entries(stats.typeCounts || {})
-    .sort((a, b) => b[1] - a[1])
-    .map(([t, c]) => `<tr><td class="py-1.5 text-gray-600">${esc(t)}</td><td class="py-1.5 text-right font-medium">${c}</td></tr>`)
-    .join('');
+  // System health derived after cur is computed below
+  const aipWithoutPdf = aipList.filter(a => !a.pdfUrl).length;
+  const aipWithoutFullText = aipList.filter(a => !a.hasFullText).length;
 
-  function dashTopList(items, field) {
-    if (!items.length) return '<p class="text-xs text-gray-400 py-2">Veri yok</p>';
+  const cur = homepage?.currentIssue || {};
+
+  // Build the "Yapılacaklar" health checklist
+  const todoItems = [];
+  if (!cur.volume) {
+    todoItems.push({ tone: 'warning', title: 'Henüz güncel sayı atanmamış', hint: 'Bir sayıyı güncel olarak işaretleyin', hash: '#/issues' });
+  }
+  if ((mediaStats.withoutPdf || 0) > 0) {
+    todoItems.push({ tone: 'warning', title: `${mediaStats.withoutPdf} makalede PDF eksik`, hint: 'Dosya Yönetimi → Toplu PDF Yükle', hash: '#/media' });
+  }
+  if (aipWithoutPdf > 0) {
+    todoItems.push({ tone: 'info', title: `${aipWithoutPdf} baskıda makalede PDF eksik`, hint: 'AIP listesinde durum sütununu kontrol edin', hash: '#/articles-in-press' });
+  }
+  if (aipWithoutFullText > 0) {
+    todoItems.push({ tone: 'info', title: `${aipWithoutFullText} baskıda makalede tam metin yok`, hint: 'Tam metin yükleyin veya manuel girin', hash: '#/articles-in-press' });
+  }
+  if (todoItems.length === 0) {
+    todoItems.push({ tone: 'success', title: 'Sistem tamam', hint: 'Tüm temel kontroller geçti', hash: null });
+  }
+  function todoRow(t) {
+    const palette = {
+      warning: { bg: 'var(--warning-soft)', border: 'var(--warning-soft-2)', fg: 'var(--warning-text)' },
+      info:    { bg: 'var(--info-soft)',    border: 'var(--info-soft-2)',    fg: 'var(--info-text)' },
+      success: { bg: 'var(--success-soft)', border: 'var(--success-soft-2)', fg: 'var(--success-text)' },
+    };
+    const c = palette[t.tone] || palette.info;
+    const dotSvg = t.tone === 'success'
+      ? '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>'
+      : '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>';
+    const Tag = t.hash ? 'a' : 'div';
+    const hrefAttr = t.hash ? `href="${t.hash}"` : '';
+    return `<${Tag} ${hrefAttr} class="flex items-start gap-3 px-3 py-2.5 rounded-md transition-colors" style="background:${c.bg};border:1px solid ${c.border};text-decoration:none">
+      <span style="color:${c.fg};flex-shrink:0;margin-top:1px">${dotSvg}</span>
+      <div class="flex-1 min-w-0">
+        <div class="text-sm font-medium" style="color:${c.fg}">${esc(t.title)}</div>
+        <div class="text-xs mt-0.5" style="color:${c.fg};opacity:.85">${esc(t.hint)}</div>
+      </div>
+      ${t.hash ? `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:${c.fg};opacity:.6;flex-shrink:0;margin-top:3px"><polyline points="9 18 15 12 9 6" stroke-linecap="round" stroke-linejoin="round"/></svg>` : ''}
+    </${Tag}>`;
+  }
+
+  const typeEntries = Object.entries(stats.typeCounts || {}).sort((a, b) => b[1] - a[1]);
+  const maxTypeCount = typeEntries.length ? typeEntries[0][1] : 1;
+  const typeRows = typeEntries.map(([t, c]) => {
+    const pct = Math.round((c / maxTypeCount) * 100);
+    return `<tr>
+      <td class="py-2.5 pr-3" style="color:var(--text)">${esc(t)}</td>
+      <td class="py-2.5 w-1/2">
+        <div class="h-1.5 rounded-full overflow-hidden" style="background:var(--bg-subtle)">
+          <div style="width:${pct}%;height:100%;background:var(--brand);border-radius:999px"></div>
+        </div>
+      </td>
+      <td class="py-2.5 pl-3 text-right tabular-nums font-semibold" style="color:var(--text-strong)">${c}</td>
+    </tr>`;
+  }).join('');
+
+  function _topRankChip(i, accent) {
+    const colors = {
+      view: ['var(--info-soft)', 'var(--info-text)'],
+      dl:   ['var(--success-soft)', 'var(--success-text)'],
+    };
+    const [bg, fg] = colors[accent] || colors.view;
+    return `<span class="flex items-center justify-center w-6 h-6 rounded-md text-[11px] font-bold flex-shrink-0 tabular" style="background:${bg};color:${fg}">${i + 1}</span>`;
+  }
+  function dashTopList(items) {
+    if (!items.length) return '<div class="py-8 text-center text-sm" style="color:var(--text-faint)">Henüz veri yok</div>';
     return items.map((a, i) => `
-      <div class="flex items-center gap-2 py-1.5 ${i ? 'border-t' : ''} cursor-pointer hover:bg-gray-50 -mx-2 px-2 rounded" onclick="navigate('#/articles/${a.id}')">
-        <span class="text-xs font-bold text-gray-300 w-4">${i + 1}</span>
-        <span class="flex-1 text-sm text-gray-700 truncate">${esc(a.title)}</span>
-        <span class="text-sm font-semibold tabular-nums ${field === 'views' ? 'text-teal-700' : 'text-blue-600'}">${(a[field] || 0).toLocaleString()}</span>
-      </div>`).join('');
+      <button type="button" onclick="navigate('#/articles/${a.id}')" class="w-full flex items-center gap-3 py-2.5 px-2 -mx-2 rounded-md text-left hover:bg-slate-50 transition-colors">
+        ${_topRankChip(i, 'view')}
+        <span class="flex-1 text-sm truncate" style="color:var(--text-strong)">${esc(a.title)}</span>
+        <span class="text-sm font-semibold tabular" style="color:var(--info)">${(a.views || 0).toLocaleString()}</span>
+      </button>`).join('');
+  }
+  function dashTopListDownloads(items) {
+    if (!items.length) return '<div class="py-8 text-center text-sm" style="color:var(--text-faint)">Henüz veri yok</div>';
+    return items.map((a, i) => `
+      <button type="button" onclick="navigate('#/articles/${a.id}')" class="w-full flex items-center gap-3 py-2.5 px-2 -mx-2 rounded-md text-left hover:bg-slate-50 transition-colors">
+        ${_topRankChip(i, 'dl')}
+        <span class="flex-1 text-sm truncate" style="color:var(--text-strong)">${esc(a.title)}</span>
+        <span class="text-sm font-semibold tabular" style="color:var(--success)">${(a.downloads || 0).toLocaleString()}</span>
+      </button>`).join('');
+  }
+
+  // Stat card builder — subtle colored accent strip (top border) per category
+  function statCard(label, value, hint, accent = 'brand') {
+    const colors = {
+      brand:   ['var(--brand)',          'var(--brand-soft)'],
+      info:    ['var(--info)',           'var(--info-soft)'],
+      success: ['var(--success)',        'var(--success-soft)'],
+      warning: ['var(--warning)',        'var(--warning-soft)'],
+      violet:  ['var(--accent-violet)',  'var(--accent-violet-soft)'],
+      sky:     ['var(--accent-sky)',     'var(--accent-sky-soft)'],
+    };
+    const [fg, bg] = colors[accent] || colors.brand;
+    return `
+      <div class="card card-padded relative overflow-hidden">
+        <div style="position:absolute;left:0;top:0;bottom:0;width:3px;background:${fg}"></div>
+        <div class="flex items-center gap-2">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:8px;background:${bg};color:${fg};font-weight:700;font-size:13px">${esc(label.charAt(0))}</span>
+          <div class="text-xs font-semibold" style="color:var(--text-muted);text-transform:uppercase;letter-spacing:.07em">${esc(label)}</div>
+        </div>
+        <div class="text-3xl font-bold mt-3 tabular" style="color:var(--text-strong);letter-spacing:-0.025em">${value.toLocaleString()}</div>
+        ${hint ? `<div class="text-xs mt-0.5" style="color:var(--text-faint)">${esc(hint)}</div>` : ''}
+      </div>`;
+  }
+
+  // Quick action tile with subtle category accent
+  function actionTile(href, icon, label, hint, onclick, accent = 'brand') {
+    const colors = {
+      brand:   ['var(--brand-soft)',          'var(--brand)'],
+      info:    ['var(--info-soft)',           'var(--info)'],
+      success: ['var(--success-soft)',        'var(--success)'],
+      violet:  ['var(--accent-violet-soft)',  'var(--accent-violet)'],
+      sky:     ['var(--accent-sky-soft)',     'var(--accent-sky)'],
+    };
+    const [bg, fg] = colors[accent] || colors.brand;
+    const open = href ? `<a href="${href}"` : `<button type="button" onclick="${onclick}"`;
+    const close = href ? `</a>` : `</button>`;
+    return `${open} class="card card-padded text-left transition-all hover:-translate-y-0.5 hover:shadow-md" style="text-decoration:none">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background:${bg};color:${fg}">${icon}</div>
+        <div class="font-semibold text-sm" style="color:var(--text-strong)">${esc(label)}</div>
+      </div>
+      <div class="text-xs leading-relaxed" style="color:var(--text-muted)">${esc(hint)}</div>
+    ${close}`;
   }
 
   el.innerHTML = `
-    <h1 class="text-2xl font-bold text-gray-900 mb-6">Dashboard</h1>
+    ${pageHeader({ eyebrow: 'Genel Bakış', title: 'Dashboard', subtitle: 'Sitenin güncel durumu ve hızlı erişim' })}
 
-    <!-- Current Issue widget -->
-    <div class="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-xl p-5 mb-6 flex items-center justify-between flex-wrap gap-3">
+    <!-- Current Issue hero -->
+    <div class="card-hero card-padded mb-6 flex items-center justify-between flex-wrap gap-3">
       <div>
-        <div class="text-xs font-medium text-amber-700 uppercase tracking-wide">Güncel Sayı</div>
+        <div class="text-xs font-semibold tracking-wider uppercase" style="color:var(--brand)">Güncel Sayı</div>
         ${cur.volume
-          ? `<div class="text-lg font-bold text-gray-900 mt-1">Volume ${esc(cur.volume)}, Issue ${esc(cur.issue)}${cur.year ? ` <span class="text-sm font-normal text-gray-500">(${esc(cur.year)})</span>` : ''}</div>
-             <div class="text-xs text-gray-500">${(homepage.featuredArticles || []).length} öne çıkan · ${(homepage.imageCornerArticles || []).length} görsel köşesi · ${(homepage.latestArticles || []).length} son makale${homepage.generatedAt ? ` · ${esc(homepage.generatedAt)}` : ''}</div>`
-          : '<div class="text-base text-gray-700 mt-1">Henüz güncel sayı atanmamış.</div>'}
+          ? `<div class="text-xl font-semibold mt-1.5" style="color:var(--text-strong);letter-spacing:-0.02em">Volume ${esc(cur.volume)}, Issue ${esc(cur.issue)}${cur.year ? ` <span class="text-base font-normal" style="color:var(--text-muted)">(${esc(cur.year)})</span>` : ''}</div>
+             <div class="text-xs mt-1" style="color:var(--text-muted)">${(homepage.featuredArticles || []).length} öne çıkan · ${(homepage.imageCornerArticles || []).length} görsel köşesi · ${(homepage.latestArticles || []).length} son makale${homepage.generatedAt ? ` · ${esc(homepage.generatedAt)}` : ''}</div>`
+          : '<div class="text-base mt-1.5" style="color:var(--text-strong)">Henüz güncel sayı atanmamış.</div>'}
       </div>
       <div class="flex gap-2">
-        ${cur.volume ? `<a href="#/issues/${esc(cur.volume)}/${encodeURIComponent(cur.issue)}" class="px-3 py-1.5 bg-white border border-amber-300 text-amber-700 rounded text-xs font-medium hover:bg-amber-100">Yönet</a>` : ''}
-        <a href="#/issues" class="px-3 py-1.5 bg-amber-600 text-white rounded text-xs font-medium hover:bg-amber-700">Tüm Sayılar</a>
+        ${cur.volume ? `<a href="#/issues/${esc(cur.volume)}/${encodeURIComponent(cur.issue)}" class="btn btn-secondary">Yönet</a>` : ''}
+        <a href="#/issues" class="btn btn-primary">Tüm Sayılar</a>
       </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-      <div class="bg-white rounded-xl border p-5"><div class="text-3xl font-bold text-teal-700">${stats.articleCount}</div><div class="text-sm text-gray-500 mt-1">Makale</div></div>
-      <div class="bg-white rounded-xl border p-5"><div class="text-3xl font-bold text-amber-600">${stats.articlesInPressCount}</div><div class="text-sm text-gray-500 mt-1">Baskıda</div></div>
-      <div class="bg-white rounded-xl border p-5"><div class="text-3xl font-bold text-blue-600">${stats.issueCount}</div><div class="text-sm text-gray-500 mt-1">Sayı</div></div>
-      <div class="bg-white rounded-xl border p-5"><div class="text-3xl font-bold text-purple-600">${stats.newsCount}</div><div class="text-sm text-gray-500 mt-1">Haber</div></div>
+    <!-- KPI cards (unified style — single brand accent, no rainbow) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+      ${statCard('Makale', stats.articleCount, 'Yayınlanmış', 'brand')}
+      ${statCard('Baskıda', stats.articlesInPressCount, 'Yayını bekleyen', 'brand')}
+      ${statCard('Sayı', stats.issueCount, 'Tüm zaman', 'brand')}
+      ${statCard('Haber', stats.newsCount, 'Yayınlanmış', 'brand')}
     </div>
 
-    <!-- Top Articles Summary -->
+    <!-- System health / Yapılacaklar -->
+    <div class="card card-padded mb-6">
+      <div class="flex items-center justify-between mb-3">
+        <div>
+          <h2 class="text-base font-semibold" style="color:var(--text-strong)">Yapılacaklar</h2>
+          <div class="text-xs" style="color:var(--text-muted)">Sistem sağlığı ve önerilen ilk adımlar</div>
+        </div>
+        <span class="badge ${todoItems[0].tone === 'success' ? 'badge-success' : 'badge-warning'}">${todoItems.filter(t => t.tone !== 'success').length || 'tamam'}</span>
+      </div>
+      <div class="space-y-2">
+        ${todoItems.map(todoRow).join('')}
+      </div>
+    </div>
+
+    <!-- Top articles -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-      <div class="bg-white rounded-xl border p-5">
+      <div class="card card-padded">
         <div class="flex items-center justify-between mb-3">
-          <h2 class="font-semibold text-gray-900">En Çok Görüntülenen</h2>
-          <a href="#/article-stats" class="text-xs text-teal-600 hover:text-teal-800 font-medium">Tümünü Gör &rarr;</a>
+          <div>
+            <h2 class="text-base font-semibold" style="color:var(--text-strong)">En Çok Görüntülenen</h2>
+            <div class="text-xs" style="color:var(--text-muted)">Son 30 günde toplam görüntülenmeye göre</div>
+          </div>
+          <a href="#/article-stats" class="text-xs font-medium" style="color:var(--brand)">Tümü &rarr;</a>
         </div>
-        ${dashTopList(topArticles.topViewed, 'views')}
+        ${dashTopList(topArticles.topViewed)}
       </div>
-      <div class="bg-white rounded-xl border p-5">
+      <div class="card card-padded">
         <div class="flex items-center justify-between mb-3">
-          <h2 class="font-semibold text-gray-900">En Çok İndirilen</h2>
-          <a href="#/article-stats" class="text-xs text-teal-600 hover:text-teal-800 font-medium">Tümünü Gör &rarr;</a>
+          <div>
+            <h2 class="text-base font-semibold" style="color:var(--text-strong)">En Çok İndirilen</h2>
+            <div class="text-xs" style="color:var(--text-muted)">PDF indirme sayısına göre</div>
+          </div>
+          <a href="#/article-stats" class="text-xs font-medium" style="color:var(--brand)">Tümü &rarr;</a>
         </div>
-        ${dashTopList(topArticles.topDownloaded, 'downloads')}
+        ${dashTopListDownloads(topArticles.topDownloaded)}
       </div>
     </div>
 
+    <!-- Lower split: article types + quick actions -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      <div class="bg-white rounded-xl border p-5">
-        <h2 class="font-semibold text-gray-900 mb-3">Makale Türleri</h2>
+      <div class="card card-padded">
+        <h2 class="text-base font-semibold mb-3" style="color:var(--text-strong)">Makale Türleri</h2>
         <table class="w-full text-sm">${typeRows}</table>
       </div>
-      <div class="bg-white rounded-xl border p-5">
-        <h2 class="font-semibold text-gray-900 mb-3">Hızlı İşlemler</h2>
-        <div class="space-y-2">
-          <a href="#/zip-import" class="block px-4 py-3 bg-teal-50 text-teal-700 rounded-lg hover:bg-teal-100 font-medium">Sayı Aktar (ZIP)</a>
-          <a href="#/jats-import" class="block px-4 py-3 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 font-medium">JATS XML Aktar</a>
-          <a href="#/issues" class="block px-4 py-3 bg-amber-50 text-amber-700 rounded-lg hover:bg-amber-100 font-medium">Sayı Oluştur</a>
-          <button onclick="showBackupPanel()" class="w-full text-left px-4 py-3 bg-gray-50 text-gray-700 rounded-lg hover:bg-gray-100 font-medium">Yedekleme</button>
+      <div>
+        <h2 class="text-base font-semibold mb-3" style="color:var(--text-strong)">Hızlı İşlemler</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          ${actionTile('#/zip-import',
+            '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>',
+            'ZIP Aktar', 'Tüm sayıyı tek seferde içe aktar', null, 'brand')}
+          ${actionTile('#/jats-import',
+            '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>',
+            'JATS XML', 'Tek makale XML\'inden aktar', null, 'brand')}
+          ${actionTile('#/issues',
+            '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>',
+            'Yeni Sayı', 'Boş sayı oluştur', null, 'brand')}
+          ${actionTile(null,
+            '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>',
+            'Yedek Al', 'Tüm verileri yedekle', 'showBackupPanel()', 'brand')}
         </div>
       </div>
     </div>`;
@@ -307,6 +659,18 @@ async function doBackup() {
     // If backup panel is open, refresh it
     if (document.getElementById('backup-history')) showBackupPanel();
   } catch (err) { toast(err.message, 'error'); }
+}
+
+// Download a stored backup as a ZIP (the server bundles the data files plus a
+// README.txt manifest describing the archive's contents and scope).
+function downloadBackup(name) {
+  const a = document.createElement('a');
+  a.href = `/api/backups/${encodeURIComponent(name)}/download`;
+  a.download = `bmj-backup-${name}.zip`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  toast('Yedek indiriliyor…');
 }
 
 const BACKUP_FILE_LABELS = {
@@ -349,12 +713,18 @@ async function showBackupPanel() {
   const historyRows = backups.length > 0
     ? backups.map((b, i) => {
         const d = b.name.replace(/T/, ' ').replace(/-/g, (m, offset) => offset > 9 ? ':' : '-').slice(0, 19);
-        return `<div class="flex items-center justify-between py-2.5 ${i < backups.length - 1 ? 'border-b border-gray-100' : ''}">
-          <div>
+        return `<div class="flex items-center justify-between gap-3 py-2.5 ${i < backups.length - 1 ? 'border-b border-gray-100' : ''}">
+          <div class="min-w-0">
             <div class="text-sm text-gray-900">${d}</div>
-            <div class="text-xs text-gray-500">${b.fileCount} dosya yedeklendi</div>
+            <div class="text-xs text-gray-500">${b.fileCount} veri dosyası</div>
           </div>
-          <span class="text-xs px-2 py-0.5 rounded-full ${i === 0 ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-500'}">${i === 0 ? 'En son' : '#' + (i + 1)}</span>
+          <div class="flex items-center gap-2 flex-shrink-0">
+            <span class="text-xs px-2 py-0.5 rounded-full ${i === 0 ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-500'}">${i === 0 ? 'En son' : '#' + (i + 1)}</span>
+            <button onclick="downloadBackup('${b.name}')" title="Bu yedeği ZIP olarak indir" class="px-3 py-1.5 text-xs font-medium rounded-lg border border-teal-200 text-teal-700 hover:bg-teal-50 inline-flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
+              İndir
+            </button>
+          </div>
         </div>`;
       }).join('')
     : '<p class="text-sm text-gray-400 py-4 text-center">Henüz yedek alınmamış</p>';
@@ -371,11 +741,12 @@ async function showBackupPanel() {
         <!-- How it works -->
         <div>
           <h3 class="text-sm font-semibold text-gray-900 mb-2">Yedekleme Nasıl Çalışır?</h3>
-          <div class="bg-blue-50 rounded-lg p-4 text-sm text-blue-800 space-y-2">
-            <p>Yedekleme sistemi, sitenin tüm veri dosyalarının anlık bir kopyasını <code class="bg-blue-100 px-1 rounded text-xs">admin/backups/</code> klasörüne zaman damgalı bir alt klasör olarak kaydeder.</p>
+          <div class="bg-slate-50 rounded-lg p-4 text-sm text-slate-800 space-y-2">
+            <p>Yedekleme sistemi, sitenin tüm veri dosyalarının anlık bir kopyasını <code class="bg-slate-100 px-1 rounded text-xs">admin/backups/</code> klasörüne zaman damgalı bir alt klasör olarak kaydeder.</p>
             <ul class="text-xs space-y-1 ml-4 list-disc">
               <li>Her değişiklik yapıldığında (makale ekleme, silme, düzenleme vb.) sistem otomatik olarak yedek alır</li>
               <li>Ayrıca "Yedek Al" butonuyla istediğiniz zaman manuel yedek oluşturabilirsiniz</li>
+              <li>Her yedek <strong>ZIP olarak indirilebilir</strong> — arşivin içinde hangi dosyaların bulunduğunu ve neyin kapsam dışı olduğunu açıklayan bir <code class="bg-slate-100 px-1 rounded">README.txt</code> yer alır</li>
               <li>En fazla <strong>10 yedek</strong> saklanır; eski yedekler otomatik silinir</li>
               <li>Yedekler yalnızca veri dosyalarını içerir (PDF, görsel gibi büyük dosyalar dahil değildir)</li>
             </ul>
@@ -388,6 +759,7 @@ async function showBackupPanel() {
           <div class="bg-white border rounded-lg px-4 py-2">
             ${fileList}
           </div>
+          <p class="text-xs text-gray-400 mt-2">İndirdiğiniz ZIP bu ${Object.keys(BACKUP_FILE_LABELS).length} dosyayı ve içeriklerini açıklayan bir <code class="bg-gray-100 px-1 rounded">README.txt</code> dosyasını içerir.</p>
         </div>
 
         <!-- Backup history -->
@@ -401,7 +773,7 @@ async function showBackupPanel() {
 
       <div class="sticky bottom-0 bg-gray-50 border-t px-6 py-4 rounded-b-2xl flex justify-between items-center">
         <p class="text-xs text-gray-400">Yedek konumu: <code class="bg-gray-200 px-1 rounded">admin/backups/</code></p>
-        <button onclick="doBackup()" class="px-5 py-2.5 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Şimdi Yedek Al</button>
+        <button onclick="doBackup()" class="px-5 py-2.5 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Şimdi Yedek Al</button>
       </div>
     </div>`;
 
@@ -409,40 +781,40 @@ async function showBackupPanel() {
 }
 
 // Articles list
-route('/articles', async (el, params) => {
+async function renderPublishedArticles(el) {
   const page = parseInt(new URLSearchParams(window.location.hash.split('?')[1]).get('page')) || 1;
   const data = await API.get(`/articles?page=${page}&limit=50`);
 
   el.innerHTML = `
-    <div class="flex items-center justify-between mb-6">
-      <h1 class="text-2xl font-bold text-gray-900">Makaleler <span class="text-gray-400 text-lg font-normal">(${data.total})</span></h1>
-      <div class="flex gap-2">
-        <a href="#/jats-import" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">XML Aktar</a>
-        <a href="#/articles/new" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm font-medium">Yeni Makale</a>
-      </div>
+    <div class="flex items-center gap-3 mb-4">
+      <input id="article-search" type="text" placeholder="Ara (başlık, DOI, yazar)..." class="input flex-1">
+      <span class="text-sm whitespace-nowrap" style="color:var(--text-muted)">${data.total} makale</span>
+      <a href="#/articles/new" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium whitespace-nowrap">Yeni Makale</a>
     </div>
-    <div class="mb-4"><input id="article-search" type="text" placeholder="Ara (başlık, DOI, yazar)..." class="w-full px-4 py-2.5 border rounded-lg text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500"></div>
-    <div class="bg-white rounded-xl border overflow-hidden">
-      <table class="w-full text-sm">
-        <thead class="bg-gray-50"><tr>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">ID</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">Başlık</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">Tür</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">Cilt/Sayı</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">Tarih</th>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th>ID</th>
+          <th>Başlık</th>
+          <th>Tür</th>
+          <th>Cilt/Sayı</th>
+          <th>Tarih</th>
           <th class="px-4 py-3"></th>
         </tr></thead>
         <tbody id="articles-tbody">
           ${data.articles.map((a) => `
-            <tr class="border-t hover:bg-gray-50 cursor-pointer" onclick="navigate('#/articles/${a.id}')">
-              <td class="px-4 py-3 text-gray-400">${a.id}</td>
-              <td class="px-4 py-3 max-w-md truncate">${esc(a.title)}</td>
-              <td class="px-4 py-3"><span class="px-2 py-0.5 bg-gray-100 rounded text-xs">${esc(a.type)}</span></td>
-              <td class="px-4 py-3 text-gray-500">${a.volume || '-'}/${a.issue || '-'}</td>
-              <td class="px-4 py-3 text-gray-500">${a.published || '-'}</td>
-              <td class="px-4 py-3 whitespace-nowrap">
-                <a href="/site/article.html?id=${a.id}" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 text-xs mr-3" onclick="event.stopPropagation()">Önizle</a>
-                <button class="text-red-500 hover:text-red-700 text-xs" onclick="event.stopPropagation(); deleteArticle(${a.id})">Sil</button>
+            <tr class="cursor-pointer" onclick="navigate('#/articles/${a.id}')">
+              <td class="px-4 py-3 tabular" style="color:var(--text-faint)">${a.id}</td>
+              <td class="px-4 py-3 max-w-md">
+                <div class="truncate" style="color:var(--text-strong);font-weight:500">${esc(a.title)}</div>
+                ${a.featured || a.imageCorner ? `<div class="mt-1 flex gap-1">${a.featured ? '<span class="badge badge-brand"><span class="badge-dot"></span>Öne çıkan</span>' : ''}${a.imageCorner ? '<span class="badge badge-sky"><span class="badge-dot"></span>Görsel köşesi</span>' : ''}</div>` : ''}
+              </td>
+              <td class="px-4 py-3">${typeBadge(a.type)}</td>
+              <td class="px-4 py-3 tabular" style="color:var(--text-muted)">${a.volume || '—'} / ${a.issue || '—'}</td>
+              <td class="px-4 py-3 tabular" style="color:var(--text-muted)">${a.published || '—'}</td>
+              <td class="px-4 py-3 whitespace-nowrap text-right">
+                <a href="/site/article.html?id=${a.id}" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" onclick="event.stopPropagation()">Önizle</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)" onclick="event.stopPropagation(); deleteArticle(${a.id})">Sil</button>
               </td>
             </tr>`).join('')}
         </tbody>
@@ -451,8 +823,8 @@ route('/articles', async (el, params) => {
     <div class="flex justify-between items-center mt-4 text-sm text-gray-500">
       <span>Sayfa ${data.page} / ${Math.ceil(data.total / data.limit)}</span>
       <div class="flex gap-2">
-        ${data.page > 1 ? `<a href="#/articles?page=${data.page - 1}" class="px-3 py-1.5 bg-white border rounded hover:bg-gray-50">Önceki</a>` : ''}
-        ${data.page * data.limit < data.total ? `<a href="#/articles?page=${data.page + 1}" class="px-3 py-1.5 bg-white border rounded hover:bg-gray-50">Sonraki</a>` : ''}
+        ${data.page > 1 ? `<a href="#/articles?page=${data.page - 1}" class="btn btn-secondary btn-sm">Önceki</a>` : ''}
+        ${data.page * data.limit < data.total ? `<a href="#/articles?page=${data.page + 1}" class="btn btn-secondary btn-sm">Sonraki</a>` : ''}
       </div>
     </div>`;
 
@@ -467,18 +839,40 @@ route('/articles', async (el, params) => {
     }
     const result = await API.get(`/articles?search=${encodeURIComponent(q)}&limit=50`);
     tbody.innerHTML = result.articles.map((a) => `
-      <tr class="border-t hover:bg-gray-50 cursor-pointer" onclick="navigate('#/articles/${Number(a.id)}')">
-        <td class="px-4 py-3 text-gray-400">${Number(a.id)}</td>
-        <td class="px-4 py-3 max-w-md truncate">${esc(a.title)}</td>
-        <td class="px-4 py-3"><span class="px-2 py-0.5 bg-gray-100 rounded text-xs">${esc(a.type)}</span></td>
-        <td class="px-4 py-3 text-gray-500">${esc(a.volume) || '-'}/${esc(a.issue) || '-'}</td>
-        <td class="px-4 py-3 text-gray-500">${esc(a.published) || '-'}</td>
-        <td class="px-4 py-3 whitespace-nowrap">
-          <a href="/site/article.html?id=${Number(a.id)}" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 text-xs mr-3" onclick="event.stopPropagation()">Önizle</a>
-          <button class="text-red-500 hover:text-red-700 text-xs" onclick="event.stopPropagation(); deleteArticle(${Number(a.id)})">Sil</button>
+      <tr class="cursor-pointer" onclick="navigate('#/articles/${Number(a.id)}')">
+        <td class="px-4 py-3 tabular" style="color:var(--text-faint)">${Number(a.id)}</td>
+        <td class="px-4 py-3 max-w-md">
+          <div class="truncate" style="color:var(--text-strong);font-weight:500">${esc(a.title)}</div>
+          ${a.featured || a.imageCorner ? `<div class="mt-1 flex gap-1">${a.featured ? '<span class="badge badge-brand"><span class="badge-dot"></span>Öne çıkan</span>' : ''}${a.imageCorner ? '<span class="badge badge-sky"><span class="badge-dot"></span>Görsel köşesi</span>' : ''}</div>` : ''}
+        </td>
+        <td class="px-4 py-3">${typeBadge(a.type)}</td>
+        <td class="px-4 py-3 tabular" style="color:var(--text-muted)">${esc(a.volume) || '—'} / ${esc(a.issue) || '—'}</td>
+        <td class="px-4 py-3 tabular" style="color:var(--text-muted)">${esc(a.published) || '—'}</td>
+        <td class="px-4 py-3 whitespace-nowrap text-right">
+          <a href="/site/article.html?id=${Number(a.id)}" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" onclick="event.stopPropagation()">Önizle</a>
+          <button class="btn btn-ghost btn-sm" style="color:var(--danger)" onclick="event.stopPropagation(); deleteArticle(${Number(a.id)})">Sil</button>
         </td>
       </tr>`).join('');
   }, 300));
+}
+
+// Article browsing is split into two independent top-level areas: Sayılar (the
+// archive — years → issues → articles, with the current issue highlighted) and
+// e-Pub Makaleler (articles not yet assigned to an issue). JATS XML import has
+// its own page. The legacy #/articles entry redirects to Sayılar so existing
+// links keep working.
+route('/articles', () => { window.location.hash = '#/issues'; });
+
+route('/articles-in-press', async (el) => {
+  el.innerHTML = `<div class="page-header"><h1 class="page-title">e-Pub Makaleler</h1></div><div id="aip-host"></div>`;
+  try { await renderAipArticles(document.getElementById('aip-host')); }
+  catch (err) { document.getElementById('aip-host').innerHTML = `<div class="banner banner-danger">Yüklenemedi: ${esc(err.message)}</div>`; }
+});
+
+route('/jats-import', async (el) => {
+  el.innerHTML = `<div class="page-header"><h1 class="page-title">JATS XML Aktar</h1></div><div id="jats-host"></div>`;
+  try { await renderJatsImport(document.getElementById('jats-host')); }
+  catch (err) { document.getElementById('jats-host').innerHTML = `<div class="banner banner-danger">Yüklenemedi: ${esc(err.message)}</div>`; }
 });
 
 async function deleteArticle(id) {
@@ -502,79 +896,90 @@ async function renderArticleForm(el, article) {
   const a = article || { id: '', type: '', title: '', authors: [], abstract: '', abstractHtml: '', previewText: '', keywords: [], doi: '', received: '', accepted: '', published: '', volume: '', issue: '', pages: '', pmid: '', featured: false, imageCorner: false, relatedArticles: [] };
 
   el.innerHTML = `
-    <div class="flex items-center justify-between mb-6">
-      <h1 class="text-2xl font-bold text-gray-900">${isNew ? 'Yeni Makale' : `Makale #${a.id}`}</h1>
+    <div class="page-header">
+      <h1 class="page-title">${isNew ? 'Yeni Makale' : `Makale #${a.id}`}</h1>
       <div class="flex gap-2">
-        <a href="#/articles" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm">Geri</a>
-        ${!isNew ? `<a href="/site/article.html?id=${a.id}" target="_blank" rel="noopener" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 text-sm font-medium">Önizle</a>` : ''}
-        <button onclick="saveArticle(${isNew ? 'true' : 'false'})" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet<span data-dirty-indicator class="text-amber-200"></span></button>
+        <a href="#/articles" class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm">Geri</a>
+        ${!isNew ? `<a href="/site/article.html?id=${a.id}" target="_blank" rel="noopener" class="px-4 py-2 bg-slate-50 text-slate-700 rounded-lg hover:bg-slate-100 text-sm font-medium">Önizle</a>` : ''}
+        <button onclick="saveArticle(${isNew ? 'true' : 'false'})" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Kaydet<span data-dirty-indicator class="text-amber-200"></span></button>
       </div>
     </div>
 
-    <div class="bg-white rounded-xl border">
+    <div class="card">
       <!-- Tabs -->
       <div class="flex border-b overflow-x-auto">
         <button class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-teal-600 text-teal-700" data-tab="general">Genel</button>
         <button class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="authors">Yazarlar</button>
         <button class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="abstract">Özet</button>
         <button class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="issue">Sayı</button>
-        ${!isNew ? `<button class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="fulltext">Tam Metin</button>` : ''}
-        <button class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="media">Medya</button>
+        <button class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="fulltext">Tam Metin</button>
+        <button class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="media">Dosyalar</button>
         <button class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="links">Bağlantılar</button>
       </div>
 
       <!-- General tab -->
       <div class="tab-panel p-6" data-tab="general">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">Tür</label>
-            <input id="f-type" value="${esc(a.type)}" class="w-full px-3 py-2 border rounded-lg text-sm" list="type-list">
+          <div><label class="label">Tür</label>
+            <input id="f-type" value="${esc(a.type)}" class="input" list="type-list">
             <datalist id="type-list"></datalist>
           </div>
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">DOI</label><input id="f-doi" value="${esc(a.doi)}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+          <div><label class="label">DOI</label><input id="f-doi" value="${esc(a.doi)}" class="input"></div>
         </div>
-        <div class="mt-4"><label class="block text-sm font-medium text-gray-700 mb-1">Başlık</label><input id="f-title" value="${esc(a.title)}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+        <div class="mt-4"><label class="label">Başlık</label><input id="f-title" value="${esc(a.title)}" class="input"></div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">Alındığı Tarih</label><input id="f-received" type="date" value="${a.received}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">Kabul Tarihi</label><input id="f-accepted" type="date" value="${a.accepted}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">Yayın Tarihi</label><input id="f-published" type="date" value="${a.published}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+          <div><label class="label">Alındığı Tarih</label><input id="f-received" type="date" value="${a.received}" class="input"></div>
+          <div><label class="label">Kabul Tarihi</label><input id="f-accepted" type="date" value="${a.accepted}" class="input"></div>
+          <div><label class="label">Yayın Tarihi</label><input id="f-published" type="date" value="${a.published}" class="input"></div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">PMID</label><input id="f-pmid" value="${esc(a.pmid || '')}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+          <div><label class="label">PMID</label><input id="f-pmid" value="${esc(a.pmid || '')}" class="input"></div>
           <div class="flex items-end gap-4">
             <label class="flex items-center gap-2 text-sm"><input id="f-featured" type="checkbox" ${a.featured ? 'checked' : ''} class="rounded"> Öne Çıkan</label>
             <label class="flex items-center gap-2 text-sm"><input id="f-imageCorner" type="checkbox" ${a.imageCorner ? 'checked' : ''} class="rounded"> Görsel Köşesi</label>
           </div>
         </div>
         <div class="mt-4">
-          <label class="block text-sm font-medium text-gray-700 mb-1">Görsel</label>
+          <label class="label">Görsel</label>
           <div class="flex items-center gap-3">
             <input id="f-imageUrl" value="${esc(a.imageUrl || '')}" placeholder="images/... veya dosya yükleyin" class="flex-1 px-3 py-2 border rounded-lg text-sm">
-            <label class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm cursor-pointer">
+            <label class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm cursor-pointer">
               Yükle <input id="f-imageFile" type="file" accept="image/*" class="hidden">
             </label>
           </div>
-          ${a.imageUrl ? `<img src="../${esc(a.imageUrl)}" class="mt-2 h-20 rounded border object-cover" onerror="this.style.display='none'">` : ''}
+          ${a.imageUrl ? `<img src="/site/${esc(a.imageUrl)}" class="mt-2 h-20 rounded border object-cover" onerror="this.style.display='none'">` : ''}
         </div>
         ${!isNew ? `
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">Görüntülenme</label><input id="f-views" type="number" min="0" value="${a.views || 0}" class="w-full px-3 py-2 border rounded-lg text-sm" oninput="markDirty()"></div>
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">İndirme</label><input id="f-downloads" type="number" min="0" value="${a.downloads || 0}" class="w-full px-3 py-2 border rounded-lg text-sm" oninput="markDirty()"></div>
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">Atıf</label><input id="f-citations" type="number" min="0" value="${a.citations || 0}" class="w-full px-3 py-2 border rounded-lg text-sm" oninput="markDirty()"></div>
+          <div><label class="label">Görüntülenme</label><input id="f-views" type="number" min="0" value="${a.views || 0}" class="input" oninput="markDirty()"></div>
+          <div><label class="label">İndirme</label><input id="f-downloads" type="number" min="0" value="${a.downloads || 0}" class="input" oninput="markDirty()"></div>
+          <div><label class="label">Atıf</label><input id="f-citations" type="number" min="0" value="${a.citations || 0}" class="input" oninput="markDirty()"></div>
         </div>` : ''}
       </div>
 
       <!-- Authors tab -->
       <div class="tab-panel p-6 hidden" data-tab="authors">
         <div id="authors-list" class="space-y-3">${(a.authors || []).map((au, i) => authorRow(au, i)).join('')}</div>
-        <button onclick="addAuthor()" class="mt-3 px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 text-sm font-medium">+ Yazar Ekle</button>
+        <button onclick="addAuthor()" class="mt-3 px-4 py-2 bg-slate-50 text-slate-700 rounded-lg hover:bg-slate-100 text-sm font-medium">+ Yazar Ekle</button>
       </div>
 
       <!-- Abstract tab -->
       <div class="tab-panel p-6 hidden" data-tab="abstract">
         <div>
-          <div class="flex items-center justify-between mb-1">
+          <div class="flex items-center justify-between mb-2">
             <label class="block text-sm font-medium text-gray-700">Özet</label>
-            <button type="button" id="f-abstract-toggle" onclick="toggleAbstractEditor()" class="text-xs text-gray-500 hover:text-gray-700 px-2 py-1 rounded hover:bg-gray-100">HTML Kaynağı</button>
+            <div id="f-abstract-modeswitch" class="inline-flex items-center bg-gray-100 rounded-lg p-0.5 text-xs font-medium select-none" role="tablist" aria-label="Düzenleme modu">
+              <button type="button" data-mode="visual" onclick="setAbstractEditorMode('visual')" role="tab" aria-selected="true"
+                class="mode-btn mode-visual px-3 py-1.5 rounded-md flex items-center gap-1.5 transition-all bg-white shadow-sm text-teal-700">
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h10M4 18h16"/></svg>
+                <span>Görsel</span>
+              </button>
+              <button type="button" data-mode="source" onclick="setAbstractEditorMode('source')" role="tab" aria-selected="false"
+                class="mode-btn mode-source px-3 py-1.5 rounded-md flex items-center gap-1.5 transition-all text-gray-500 hover:text-gray-800">
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l-4-4 4-4M14 4l4 4-4 4"/></svg>
+                <span>HTML</span>
+              </button>
+            </div>
           </div>
           <div id="f-abstract-toolbar" class="flex flex-wrap gap-0.5 border border-b-0 rounded-t-lg bg-gray-50 px-2 py-1.5">
             <button type="button" onclick="abstractCmd('bold')" title="Kalın" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 4h8a4 4 0 014 4 4 4 0 01-4 4H6z"/><path d="M6 12h9a4 4 0 014 4 4 4 0 01-4 4H6z"/></svg></button>
@@ -588,99 +993,114 @@ async function renderArticleForm(el, article) {
           <div id="f-abstractHtml-visual" contenteditable="true" class="w-full px-4 py-3 border rounded-b-lg text-sm min-h-[160px] focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 max-w-none overflow-auto bg-white">${a.abstractHtml || ''}</div>
           <textarea id="f-abstractHtml" rows="8" class="w-full px-3 py-2 border rounded-b-lg text-sm font-mono hidden">${esc(a.abstractHtml)}</textarea>
         </div>
-        <div class="mt-4"><label class="block text-sm font-medium text-gray-700 mb-1">Anahtar Kelimeler (virgül ile)</label>
-          <input id="f-keywords" value="${esc((a.keywords || []).join(', '))}" class="w-full px-3 py-2 border rounded-lg text-sm">
+        <div class="mt-4"><label class="label">Anahtar Kelimeler (virgül ile)</label>
+          <input id="f-keywords" value="${esc((a.keywords || []).join(', '))}" class="input">
         </div>
       </div>
 
       <!-- Full Text tab -->
-      ${!isNew ? `
       <div class="tab-panel p-6 hidden" data-tab="fulltext">
         <div class="flex items-center justify-between mb-3">
-          <h3 class="text-sm font-semibold text-gray-700">Tam Metin (HTML)</h3>
+          <h3 class="text-sm font-semibold text-gray-700">Tam Metin</h3>
           <div class="flex gap-2">
             <label class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded hover:bg-gray-200 text-xs cursor-pointer">
               HTML Dosyadan Yükle <input id="f-fulltext-file" type="file" accept=".html,.htm" class="hidden">
             </label>
-            <button type="button" onclick="saveArticleFullText(${a.id})" class="px-4 py-1.5 bg-teal-600 text-white rounded hover:bg-teal-700 text-xs font-medium">Tam Metni Kaydet</button>
+            ${!isNew ? `<button type="button" onclick="saveArticleFullText(${a.id})" class="px-4 py-1.5 bg-teal-600 text-white rounded hover:bg-teal-700 text-xs font-medium">Tam Metni Kaydet</button>` : ''}
           </div>
         </div>
-        <p class="text-xs text-gray-500 mb-2">Makalenin tam metni HTML olarak saklanır. Yüklediğiniz figürler <code>src="fig1"</code> gibi placeholder'lar içerirse, "Medya → Tam Metne Uygula" ile gerçek görsel URL'leri ile eşlenir.</p>
-        <textarea id="f-fulltextHtml" rows="20" class="w-full px-3 py-2 border rounded-lg text-xs font-mono" placeholder="Tam metin henüz yüklü değil. Doğrudan HTML yapıştırın veya yukarıdaki 'HTML Dosyadan Yükle' ile bir .html dosyası seçin."></textarea>
+        ${isNew ? `<div class="banner banner-info mb-2">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div class="banner-body" style="margin-top:0">Yeni makale oluşturulurken tam metin de buradan yüklenebilir. Sayfa üstündeki <strong>Kaydet</strong> butonuna basıldığında makale ile birlikte otomatik kaydedilir.</div>
+        </div>` : ''}
+        <p class="text-xs text-gray-500 mb-2">Makalenin tam metnini görsel olarak düzenleyin. İleri kullanım için sağ üstteki "HTML" sekmesine geçin. Figür placeholder'lar (<code>src="fig1"</code>) "Dosyalar → Tam Metne Uygula" ile gerçek görsel URL'leri ile eşlenir.</p>
+        ${htmlEditor({ prefix: 'ft', initialHtml: '', rows: 20, placeholder: 'Tam metin henüz yüklü değil. Doğrudan yazın, yapıştırın veya yukarıdaki "HTML Dosyadan Yükle" ile bir .html dosyası seçin.', variant: 'full', minHeight: '400px' })}
         <div id="f-fulltext-status" class="text-xs text-gray-500 mt-2"></div>
-      </div>` : ''}
+      </div>
 
       <!-- Issue tab -->
       <div class="tab-panel p-6 hidden" data-tab="issue">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">Cilt</label><input id="f-volume" type="number" value="${a.volume || ''}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">Sayı</label><input id="f-issue" value="${esc(a.issue)}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">Sayfalar</label><input id="f-pages" value="${esc(a.pages)}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+          <div><label class="label">Cilt</label><input id="f-volume" type="number" value="${a.volume || ''}" class="input"></div>
+          <div><label class="label">Sayı</label><input id="f-issue" value="${esc(a.issue)}" class="input"></div>
+          <div><label class="label">Sayfalar</label><input id="f-pages" value="${esc(a.pages)}" class="input"></div>
         </div>
       </div>
 
-      <!-- Media tab -->
+      <!-- Media tab (compact + premium) -->
       <div class="tab-panel p-6 hidden" data-tab="media">
         ${!isNew ? `
-        <div class="space-y-6">
-          <!-- Asset summary (populated after load) -->
-          <div id="f-asset-summary" class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
-            <div class="bg-gray-50 rounded-lg p-3"><div class="text-xs text-gray-500">PDF</div><div id="f-pdf-count" class="font-medium text-gray-900">—</div></div>
-            <div class="bg-blue-50 rounded-lg p-3"><div class="text-xs text-blue-600">Yüklü figür</div><div id="f-fig-count" class="font-medium text-blue-900">—</div></div>
-            <div class="bg-purple-50 rounded-lg p-3"><div class="text-xs text-purple-600">Ek materyal dosyası</div><div id="f-supp-count" class="font-medium text-purple-900">—</div></div>
-          </div>
+        <div class="space-y-5">
 
-          <!-- PDF -->
-          <div>
-            <h3 class="text-sm font-semibold text-gray-700 mb-2">PDF</h3>
-            ${a.pdfUrl ? `<div class="flex items-center gap-3 mb-2"><span class="text-sm text-green-600">Mevcut:</span><code class="text-xs bg-gray-100 px-2 py-1 rounded">${esc(a.pdfUrl)}</code></div>` : '<p class="text-sm text-amber-600 mb-2">PDF yüklenmemiş</p>'}
-            <label class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm cursor-pointer inline-block">
-              PDF Yükle <input id="f-pdf-file" type="file" accept=".pdf" class="hidden">
+          <!-- PDF: single-line row -->
+          <section class="flex items-center gap-3 flex-wrap" style="padding:10px 12px;background:var(--bg-page);border:1px solid var(--border-soft);border-radius:var(--radius)">
+            <div class="text-sm font-semibold" style="color:var(--text-strong);min-width:32px">PDF</div>
+            ${a.pdfUrl
+              ? `<span class="badge badge-success"><span class="badge-dot"></span>Mevcut</span>
+                 <code class="text-xs px-2 py-1 rounded truncate" style="background:var(--bg-card);color:var(--text-muted);flex:1;min-width:0">${esc(a.pdfUrl)}</code>`
+              : `<span class="badge badge-warning"><span class="badge-dot"></span>Yüklenmemiş</span>
+                 <span class="text-xs" style="color:var(--text-muted);flex:1">PDF dosyası eklenmemiş.</span>`}
+            <label class="btn btn-secondary btn-sm cursor-pointer flex-shrink-0">
+              ${a.pdfUrl ? 'Değiştir' : 'PDF Yükle'} <input id="f-pdf-file" type="file" accept=".pdf" class="hidden">
             </label>
-            <div id="f-pdf-results" class="mt-2"></div>
-          </div>
-          <!-- Figures -->
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <h3 class="text-sm font-semibold text-gray-700">Figürler</h3>
-              <button type="button" onclick="applyExistingFigures(${a.id})" class="text-xs px-3 py-1.5 bg-teal-600 text-white rounded hover:bg-teal-700" title="Yüklü tüm figürleri tam metindeki placeholder'lar ile eşler">Tam Metne Uygula</button>
-            </div>
-            <div class="bg-blue-50 border border-blue-100 text-blue-800 text-xs p-3 rounded-lg mb-3">
-              <div class="font-medium mb-1">Nasıl çalışır?</div>
-              <ol class="list-decimal pl-4 space-y-0.5">
-                <li>Figür dosyalarını yükleyin (dosya adı = placeholder adı, ör. <code>fig1.jpg</code>)</li>
-                <li>"Tam Metne Uygula" butonu ile tam metin içindeki <code>src="fig1"</code> referansları gerçek URL'ye dönüştürülür.</li>
-                <li>Mevcut figür listesini aşağıda görebilirsiniz.</li>
-              </ol>
-            </div>
-            <div id="f-fig-list" class="text-xs text-gray-500 mb-2"></div>
-            <label class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 text-sm cursor-pointer inline-block">
-              Figür Yükle <input id="f-fig-files" type="file" accept="image/*,.tif,.tiff" multiple class="hidden">
-            </label>
-            <div id="f-fig-results" class="mt-2"></div>
-          </div>
-          <!-- Supplementary -->
-          <div>
-            <h3 class="text-sm font-semibold text-gray-700 mb-2">Ek Materyaller</h3>
-            <label class="px-4 py-2 bg-purple-50 text-purple-700 rounded-lg hover:bg-purple-100 text-sm cursor-pointer inline-block">
-              Ek Materyal Yükle <input id="f-supp-files" type="file" multiple class="hidden">
-            </label>
-            <div id="f-supp-results" class="mt-2"></div>
-          </div>
+          </section>
+          <div id="f-pdf-results"></div>
+          <!-- Hidden legacy counter targets (kept for backwards-compat with loadArticleAssets) -->
+          <span id="f-pdf-count" class="hidden"></span>
+          <span id="f-fig-count" class="hidden"></span>
+          <span id="f-supp-count" class="hidden"></span>
 
-          <!-- Supplementary Links -->
-          <div class="border-t pt-6">
-            <div class="flex items-center justify-between mb-2">
-              <h3 class="text-sm font-semibold text-gray-700">Ek Materyal Linkleri</h3>
-              <button type="button" onclick="addSuppLinkRow()" class="text-xs px-3 py-1.5 bg-purple-600 text-white rounded hover:bg-purple-700">+ Link Ekle</button>
+          <!-- Figures: title row with inline stats, then wizard grid -->
+          <section>
+            <div class="flex items-center justify-between gap-3 mb-2 flex-wrap">
+              <div class="flex items-baseline gap-3">
+                <h3 class="text-sm font-semibold" style="color:var(--text-strong)">Figürler</h3>
+                <span id="f-fig-inline-stats" class="text-xs" style="color:var(--text-muted)">yükleniyor…</span>
+              </div>
+              <div class="flex gap-2 flex-shrink-0">
+                <label class="btn btn-secondary btn-sm cursor-pointer">
+                  Çoklu Yükle <input id="f-fig-files" type="file" accept="image/*,.tif,.tiff" multiple class="hidden">
+                </label>
+                <button type="button" onclick="applyExistingFigures(${a.id})" class="btn btn-primary btn-sm" title="Yüklü figürleri tam metindeki placeholder'lar ile eşler">Tam Metne Uygula</button>
+              </div>
             </div>
-            <p class="text-xs text-gray-500 mb-3">Dosya yüklemek yerine harici bağlantı (URL) tanımlayın.</p>
+            <div id="f-fig-results" class="mb-2"></div>
+            <div id="f-fig-wizard">
+              <div class="flex items-center justify-center py-6" style="color:var(--text-faint)">
+                <svg class="w-4 h-4 mr-2 animate-spin" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" opacity="0.25"/><path fill="currentColor" d="M4 12a8 8 0 018-8V0C5.4 0 0 5.4 0 12h4z"/></svg>
+                <span class="text-xs">Figür durumu yükleniyor…</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Ek Materyaller (Dosyalar + Linkler tek panelde) -->
+          <section>
+            <div class="flex items-center justify-between gap-3 mb-2 flex-wrap">
+              <h3 class="text-sm font-semibold" style="color:var(--text-strong)">Ek Materyaller (Supplementary Materials)</h3>
+              <div class="flex gap-2 flex-shrink-0">
+                <label class="btn btn-secondary btn-sm cursor-pointer">
+                  Dosya Yükle <input id="f-supp-files" type="file" multiple class="hidden">
+                </label>
+                <button type="button" onclick="addSuppLinkRow()" class="btn btn-secondary btn-sm">+ URL Ekle</button>
+              </div>
+            </div>
+            <div class="banner banner-info mb-2" style="padding:8px 10px;font-size:12px">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <div class="banner-body" style="margin-top:0;line-height:1.5">
+                Bu makaleye ait ek materyalleri (tablolar, veri setleri, ek PDF'ler vb.) buradan yönetin.
+                <strong>Dosya Yükle</strong> ile sunucuya yükleyin veya <strong>+ URL Ekle</strong> ile harici bir bağlantı ekleyin.
+                Her satırın yanındaki <strong>kopyala</strong> ikonuyla dosyanın paylaşılabilir tam URL'sini panoya alıp grafik ekibine iletebilirsiniz.
+                Eklenen materyaller makalenin sitedeki "Supplementary Materials" bölümünde otomatik listelenir.
+              </div>
+            </div>
+            <div id="f-supp-results" class="mb-2"></div>
             <div id="f-supp-links" class="space-y-2">
               ${(a.supplementary || []).map((sm) => suppLinkRow(sm)).join('')}
             </div>
-          </div>
+            ${!(a.supplementary || []).length ? `<div id="f-supp-empty" class="text-xs text-center py-3" style="color:var(--text-faint)">Henüz ek materyal yok. Dosya yükleyin veya harici bir URL ekleyin.</div>` : ''}
+          </section>
         </div>
-        ` : '<p class="text-gray-400 text-sm">Makaleyi kaydettikten sonra medya yükleyebilirsiniz.</p>'}
+        ` : '<p class="text-gray-400 text-sm">Makaleyi kaydettikten sonra dosya yükleyebilirsiniz.</p>'}
       </div>
 
       <!-- Links tab -->
@@ -688,7 +1108,7 @@ async function renderArticleForm(el, article) {
         <div id="links-list" class="space-y-2 mb-4">
           ${(a.relatedArticles || []).map((r) => `
             <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-              <div><span class="px-2 py-0.5 bg-amber-100 text-amber-800 rounded text-xs font-medium">${esc(r.type)}</span>
+              <div><span class="badge badge-info">${esc(r.type)}</span>
               <a href="#/articles/${r.targetId}" class="ml-2 text-sm text-teal-700 hover:underline">#${r.targetId} — ${esc(r.label || '').slice(0, 60)}</a></div>
               ${!isNew ? `<button onclick="removeLink(${a.id}, ${r.targetId})" class="text-red-500 text-xs hover:text-red-700">Kaldır</button>` : ''}
             </div>`).join('') || '<p class="text-gray-400 text-sm">Bağlantı yok.</p>'}
@@ -777,13 +1197,10 @@ async function renderArticleForm(el, article) {
         const prog = renderUploadProgress(figResults, figInput.files, 'Figürler yükleniyor');
         try {
           const result = await API.uploadFilesWithProgress(`/media/upload/figures/${a.id}`, figInput.files, 'figures', {}, prog.update);
-          prog.complete(`
-            <div class="bg-green-50 border border-green-200 rounded-lg p-3">
-              <div class="text-sm font-medium text-green-700">${result.uploaded.length} figür yüklendi</div>
-              ${result.uploaded.map((f) => `<div class="text-xs text-gray-500 mt-1"><code>${esc(f.url)}</code></div>`).join('')}
-              <button onclick="applyArticleFigures(${a.id})" class="mt-2 px-3 py-1.5 bg-teal-600 text-white rounded text-xs font-medium hover:bg-teal-700">Tam Metne Uygula</button>
-            </div>`);
+          prog.complete(`<div class="banner banner-success" style="padding:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><div class="banner-title">${result.uploaded.length} figür yüklendi</div><div class="banner-body">Otomatik eşleştirme deneniyor…</div></div></div>`);
           window._articleFigureUpload = result;
+          // Auto-apply + refresh wizard
+          await applyExistingFigures(a.id);
           loadArticleAssets(a.id, a);
         } catch (err) {
           prog.fail(err.message);
@@ -802,9 +1219,10 @@ async function renderArticleForm(el, article) {
           const result = await API.uploadFilesWithProgress(`/media/upload/supplementary/${a.id}`, suppInput.files, 'files', {}, prog.update);
           prog.complete(`
             <div class="bg-green-50 border border-green-200 rounded-lg p-3">
-              <div class="text-sm font-medium text-green-700">${result.uploaded.length} dosya yüklendi</div>
+              <div class="text-sm font-medium text-green-700">${result.uploaded.length} dosya yüklendi${(result.added || []).length ? ' ve ek materyal listesine eklendi' : ''}</div>
               ${result.uploaded.map((f) => `<div class="text-xs text-gray-500 mt-1"><code>${esc(f.url)}</code></div>`).join('')}
             </div>`);
+          appendSuppRows(result.added);
           loadArticleAssets(a.id, a);
         } catch (err) {
           prog.fail(err.message);
@@ -813,29 +1231,31 @@ async function renderArticleForm(el, article) {
       });
     }
 
-    // Full-text: read from local .html file into textarea
-    const ftFileInput = document.getElementById('f-fulltext-file');
-    if (ftFileInput) {
-      ftFileInput.addEventListener('change', async () => {
-        const f = ftFileInput.files?.[0];
-        if (!f) return;
-        try {
-          const text = await f.text();
-          const ta = document.getElementById('f-fulltextHtml');
-          if (ta) {
-            ta.value = text;
-            markDirty();
-            const status = document.getElementById('f-fulltext-status');
-            if (status) status.textContent = `"${f.name}" yüklendi (${text.length.toLocaleString('tr-TR')} karakter). Kaydetmeyi unutmayın.`;
-            toast('Tam metin dosyadan okundu. Lütfen "Tam Metni Kaydet" butonuna basın.');
-          }
-        } catch (err) { toast(`Dosya okunamadı: ${err.message}`, 'error'); }
-      });
-    }
-
-    // Initial load: asset summary + existing full text
+    // Initial load: asset summary + existing full text (existing articles only)
     loadArticleAssets(a.id, a);
     loadFullTextIntoEditor(a.id);
+  }
+
+  // Full-text: read from local .html file into editor (works for both new & existing)
+  const ftFileInput = document.getElementById('f-fulltext-file');
+  if (ftFileInput) {
+    ftFileInput.addEventListener('change', async () => {
+      const f = ftFileInput.files?.[0];
+      if (!f) return;
+      try {
+        const text = await f.text();
+        const cleaned = sanitizeUploadedHtml(text);
+        // Force visual mode so the user sees rendered content, not raw HTML
+        setHtmlEditorMode('ft', 'visual');
+        setHtmlEditorContent('ft', cleaned);
+        markDirty();
+        const status = document.getElementById('f-fulltext-status');
+        if (status) status.textContent = `"${f.name}" yüklendi (${cleaned.length.toLocaleString('tr-TR')} karakter). Kaydetmeyi unutmayın.`;
+        toast(isNew
+          ? 'Tam metin okundu. Sayfa üstündeki "Kaydet" butonuna basın.'
+          : 'Tam metin dosyadan okundu. Lütfen "Tam Metni Kaydet" butonuna basın.');
+      } catch (err) { toast(`Dosya okunamadı: ${err.message}`, 'error'); }
+    });
   }
 
   // Load article types from API
@@ -854,18 +1274,88 @@ async function renderArticleForm(el, article) {
 
 // --- Supplementary link rows ---
 function suppLinkRow(sm = {}) {
-  return `<div class="supp-link-row grid grid-cols-1 md:grid-cols-12 gap-2 p-2 bg-purple-50 rounded-lg">
-    <input class="sl-label md:col-span-3 px-2 py-1.5 border rounded text-sm" placeholder="Etiket (ör. Tablo S1)" value="${esc(sm.label || '')}">
-    <input class="sl-href md:col-span-5 px-2 py-1.5 border rounded text-sm" placeholder="URL veya dosya yolu" value="${esc(sm.href || '')}">
-    <input class="sl-caption md:col-span-3 px-2 py-1.5 border rounded text-sm" placeholder="Açıklama (opsiyonel)" value="${esc(sm.caption || '')}">
-    <button type="button" onclick="this.closest('.supp-link-row').remove(); markDirty();" class="md:col-span-1 text-red-500 hover:text-red-700 text-lg">&times;</button>
+  return `<div class="supp-link-row grid grid-cols-1 md:grid-cols-12 gap-2 items-center" style="padding:8px;background:var(--bg-page);border:1px solid var(--border-soft);border-radius:8px">
+    <input class="sl-label input md:col-span-3" style="padding:6px 10px;font-size:12.5px" placeholder="Etiket (ör. Tablo S1)" value="${esc(sm.label || '')}">
+    <div class="md:col-span-4 flex gap-1">
+      <input class="sl-href input flex-1" style="padding:6px 10px;font-size:12.5px;min-width:0" placeholder="URL veya dosya yolu" value="${esc(sm.href || '')}">
+      <button type="button" onclick="copySuppUrl(this)" class="btn btn-ghost btn-sm" style="color:var(--brand);padding:4px 8px;flex-shrink:0" title="Paylaşılabilir tam URL'yi panoya kopyala (grafik ekibine iletmek için)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+      </button>
+    </div>
+    <input class="sl-caption input md:col-span-3" style="padding:6px 10px;font-size:12.5px" placeholder="Açıklama (opsiyonel)" value="${esc(sm.caption || '')}">
+    <button type="button" onclick="insertSuppRowIntoFullText(this)" class="md:col-span-1 btn btn-ghost btn-sm" style="color:var(--brand);padding:4px" title="Tam metne ekle">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="12" x2="12" y2="18"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+    </button>
+    <button type="button" onclick="this.closest('.supp-link-row').remove(); markDirty();" class="md:col-span-1 btn btn-ghost btn-sm" style="color:var(--danger);padding:4px;font-size:18px;line-height:1" title="Sil">&times;</button>
   </div>`;
+}
+
+// Copy the supplementary material's public, shareable URL to the clipboard so
+// it can be sent to the graphic team (who embeds the link inside the article PDF).
+function copySuppUrl(btn) {
+  const row = btn.closest('.supp-link-row');
+  if (!row) return;
+  let url = (row.querySelector('.sl-href')?.value || '').trim();
+  if (!url) { toast('Önce dosya yükleyin veya URL girin', 'warning'); return; }
+  // Relative paths → prepend current origin to produce a full shareable URL.
+  if (!/^https?:\/\//i.test(url)) {
+    url = location.origin.replace(/\/+$/, '') + '/' + url.replace(/^\/+/, '');
+  }
+  const fallback = () => {
+    const ta = document.createElement('textarea');
+    ta.value = url; ta.style.position = 'fixed'; ta.style.left = '-9999px';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); toast('URL panoya kopyalandı'); }
+    catch { toast('Kopyalanamadı', 'error'); }
+    document.body.removeChild(ta);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(() => toast('URL panoya kopyalandı: ' + url)).catch(fallback);
+  } else {
+    fallback();
+  }
+}
+
+// One-click insert of a supplementary row's file into the full-text editor —
+// no need to open the toolbar picker. Media (image/video/audio) is embedded,
+// everything else is inserted as a download link.
+function insertSuppRowIntoFullText(btn) {
+  const row = btn.closest('.supp-link-row');
+  if (!row) return;
+  const url = (row.querySelector('.sl-href')?.value || '').trim();
+  if (!url) { toast('Önce bu satıra dosya yolu / URL girin', 'warning'); return; }
+  const label = (row.querySelector('.sl-label')?.value || '').trim() || url.split('/').pop();
+  const caption = (row.querySelector('.sl-caption')?.value || '').trim();
+  // Switch to the Tam Metin tab so the result is visible (article or AIP form)
+  const ftBtn = document.querySelector('.tab-btn[data-tab="fulltext"]')
+             || document.querySelector('.aip-tab-btn[data-tab="fulltext"]');
+  if (ftBtn) ftBtn.click();
+  const prefix = document.getElementById('ft-visual') ? 'ft'
+               : document.getElementById('aip-ft-visual') ? 'aip-ft' : null;
+  if (!prefix) { toast('Tam metin editörü bulunamadı', 'warning'); return; }
+  const kind = detectSuppKind(url);
+  const mode = (kind === 'image' || kind === 'video' || kind === 'audio') ? 'embed' : 'link';
+  const html = buildSupplementaryInsertHtml({ url, label, caption, kind }, mode, label);
+  htmlEditorInsertHtml(prefix, html);
+  toast(`"${label}" tam metne eklendi`);
 }
 function addSuppLinkRow() {
   const list = document.getElementById('f-supp-links');
   if (!list) return;
+  const empty = document.getElementById('f-supp-empty');
+  if (empty) empty.remove();
   list.insertAdjacentHTML('beforeend', suppLinkRow());
   markDirty();
+}
+
+// Insert auto-linked supplementary rows into the edit form after an upload, so
+// the form's DOM stays in sync with the supplementary[] the server just persisted.
+function appendSuppRows(added) {
+  const list = document.getElementById('f-supp-links');
+  if (!list || !added || !added.length) return;
+  const empty = document.getElementById('f-supp-empty');
+  if (empty) empty.remove();
+  added.forEach((sm) => list.insertAdjacentHTML('beforeend', suppLinkRow(sm)));
 }
 
 // --- External link rows ---
@@ -884,13 +1374,14 @@ function addExternalLinkRow() {
 }
 
 function authorRow(au, idx) {
-  return `<div class="flex gap-2 items-start p-3 bg-gray-50 rounded-lg author-row">
+  return `<div class="flex gap-2 items-start p-3 bg-gray-50 rounded-lg author-row" ondragend="this.removeAttribute('draggable')">
+    <span class="row-grip" title="Sıralamak için tutup sürükleyin" aria-label="Sürükle" onmousedown="this.closest('.author-row').setAttribute('draggable','true')">${ROW_GRIP_SVG}</span>
     <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-2">
       <input class="au-name px-2 py-1.5 border rounded text-sm" placeholder="Ad Soyad" value="${esc(au.name)}">
       <input class="au-aff px-2 py-1.5 border rounded text-sm" placeholder="Kurum" value="${esc(au.affiliation)}">
       <input class="au-orcid px-2 py-1.5 border rounded text-sm" placeholder="ORCID" value="${esc(au.orcid)}">
     </div>
-    <button onclick="this.closest('.author-row').remove()" class="text-red-400 hover:text-red-600 text-lg px-1">&times;</button>
+    <button onclick="this.closest('.author-row').remove(); markDirty();" class="text-red-400 hover:text-red-600 text-lg px-1">&times;</button>
   </div>`;
 }
 
@@ -966,12 +1457,32 @@ async function saveArticle(isNew) {
   try {
     if (isNew) {
       const result = await API.post('/articles', data);
+      // If a Full Text was entered while creating, persist it under the new ID
+      const ftHtml = document.getElementById('ft-visual') ? getHtmlEditorContent('ft') : '';
+      if (result?.id && ftHtml) {
+        try {
+          await API.put(`/articles/${result.id}/fulltext`, { html: ftHtml });
+        } catch (ftErr) {
+          toast(`Makale oluşturuldu ama tam metin kaydedilemedi: ${ftErr.message}`, 'error');
+        }
+      }
       clearDirty();
       toast('Makale oluşturuldu');
       navigate(`#/articles/${result.id}`);
     } else {
       const id = window.location.hash.match(/#\/articles\/(\d+)/)?.[1];
       await API.put(`/articles/${id}`, data);
+      // Also persist full-text if the editor exists on this form
+      if (document.getElementById('ft-visual') && id) {
+        const ftHtml = getHtmlEditorContent('ft');
+        try {
+          await API.put(`/articles/${id}/fulltext`, { html: ftHtml });
+          const status = document.getElementById('f-fulltext-status');
+          if (status) status.textContent = `Kaydedildi (${ftHtml.length.toLocaleString('tr-TR')} karakter).`;
+        } catch (ftErr) {
+          toast(`Genel veriler kaydedildi ama tam metin kaydedilemedi: ${ftErr.message}`, 'error');
+        }
+      }
       clearDirty();
       toast('Makale güncellendi');
     }
@@ -1016,21 +1527,24 @@ route('/zip-import', async (el) => {
 
     <!-- Server files (FTP) -->
     ${serverFiles.length ? `
-    <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-6">
+    <div class="card card-padded mb-6">
       <div class="flex items-center justify-between mb-3">
-        <h2 class="font-semibold text-amber-800">Sunucudaki ZIP Dosyaları</h2>
-        <button onclick="handleRoute()" class="text-sm text-amber-700 hover:text-amber-900 font-medium">Yenile</button>
+        <div>
+          <h2 class="text-base font-semibold" style="color:var(--text-strong)">Sunucudaki ZIP Dosyaları</h2>
+          <div class="text-xs" style="color:var(--text-muted)">FTP ile <code>admin/imports/</code> altına yüklenmiş paketler</div>
+        </div>
+        <button onclick="handleRoute()" class="btn btn-ghost btn-sm">Yenile</button>
       </div>
-      <div class="space-y-2">
+      <div class="divide-y" style="border-color:var(--border-soft)">
         ${serverFiles.map((f) => `
-          <div class="flex items-center justify-between bg-white rounded-lg px-4 py-3 border border-amber-100">
-            <div>
-              <span class="font-medium text-gray-900">${esc(f.filename)}</span>
-              <span class="text-xs text-gray-400 ml-2">${esc(f.sizeHuman)} — ${esc(f.modified.slice(0, 10))}</span>
+          <div class="flex items-center justify-between py-3">
+            <div class="min-w-0">
+              <div class="font-medium text-sm" style="color:var(--text-strong)">${esc(f.filename)}</div>
+              <div class="text-xs mt-0.5" style="color:var(--text-faint)">${esc(f.sizeHuman)} · ${esc(f.modified.slice(0, 10))}</div>
             </div>
-            <div class="flex gap-2">
-              <button onclick="previewServerZip('${esc(f.filename)}')" class="px-3 py-1.5 bg-amber-100 text-amber-800 rounded text-xs font-medium hover:bg-amber-200">Önizle</button>
-              <button onclick="deleteServerZip('${esc(f.filename)}')" class="px-3 py-1.5 text-red-500 rounded text-xs hover:text-red-700">Sil</button>
+            <div class="flex gap-2 flex-shrink-0">
+              <button onclick="previewServerZip('${esc(f.filename)}')" class="btn btn-secondary btn-sm">Önizle</button>
+              <button onclick="deleteServerZip('${esc(f.filename)}')" class="btn btn-ghost btn-sm" style="color:var(--danger)">Sil</button>
             </div>
           </div>`).join('')}
       </div>
@@ -1041,7 +1555,7 @@ route('/zip-import', async (el) => {
     </div>`}
 
     <!-- Upload ZIP -->
-    <div class="bg-white rounded-xl border p-6 mb-6">
+    <div class="card mb-6" style="padding:24px">
       <h2 class="font-semibold text-gray-900 mb-3">ZIP Dosyası Yükle</h2>
       <p class="text-sm text-gray-500 mb-4">ZIP içindeki XML, PDF ve görsel dosyaları otomatik olarak eşleştirilir ve aktarılır.</p>
       <div id="zip-drop-zone" class="border-2 border-dashed border-gray-300 rounded-xl p-10 text-center hover:border-teal-400 transition-colors cursor-pointer">
@@ -1068,6 +1582,130 @@ route('/zip-import', async (el) => {
   window._zipIssueOptions = issueOptions;
 });
 
+// Small stat tile used in the ZIP preview summary strip.
+function zipStat(label, value, tone) {
+  const palette = {
+    success: { fg: 'var(--success-text)', bg: 'var(--success-soft)' },
+    warning: { fg: 'var(--warning-text)', bg: 'var(--warning-soft)' },
+    info:    { fg: 'var(--info-text)',    bg: 'var(--info-soft)' },
+    neutral: { fg: 'var(--text)',         bg: 'var(--bg-card)' },
+  };
+  const c = palette[tone] || palette.neutral;
+  return `<div style="background:${c.bg};padding:12px 14px;text-align:center">
+    <div class="text-xl font-bold tabular" style="color:${c.fg};line-height:1.1">${esc(String(value))}</div>
+    <div class="text-xs font-medium mt-0.5" style="color:${c.fg};opacity:.85">${esc(label)}</div>
+  </div>`;
+}
+
+// Render a single article row in the ZIP preview, with an expandable figure-match section.
+function renderZipPreviewArticle(a, index) {
+  const figureBadge = a.figureCount === 0
+    ? '<span class="badge badge-neutral">Figür yok</span>'
+    : (a.figuresMissing === 0
+      ? `<span class="badge badge-success"><span class="badge-dot"></span>${a.figuresMatched}/${a.figureCount} figür</span>`
+      : `<span class="badge badge-warning"><span class="badge-dot"></span>${a.figuresMatched}/${a.figureCount} figür</span>`);
+  const pdfBadge = a.matchedPdf
+    ? '<span class="badge badge-success"><span class="badge-dot"></span>PDF</span>'
+    : '<span class="badge badge-warning"><span class="badge-dot"></span>PDF yok</span>';
+
+  // Import-status badge: classify each XML against existing data so the user
+  // can see at a glance whether it's a new article, an AIP entry that will
+  // be promoted (moved from "in press" into the issue), or a true duplicate.
+  let statusBadge = '';
+  if (a.importStatus === 'promote' && a.aipMatch) {
+    statusBadge = `<span class="badge" style="background:#fef3c7;color:#92400e;border:1px solid #fde68a" title="Baskıda #${a.aipMatch.id} olarak mevcut — bu sayıya geçirilecek"><span class="badge-dot" style="background:#92400e"></span>Baskıdan geçecek (#${a.aipMatch.id})</span>`;
+  } else if (a.importStatus === 'duplicate' && a.publishedMatch) {
+    statusBadge = `<span class="badge" style="background:#fee2e2;color:#b91c1c;border:1px solid #fecaca" title="Yayınlanmış #${a.publishedMatch.id} ile aynı DOI — atlanacak"><span class="badge-dot" style="background:#b91c1c"></span>Duplicate (#${a.publishedMatch.id})</span>`;
+  } else {
+    statusBadge = '<span class="badge" style="background:#dcfce7;color:#15803d;border:1px solid #bbf7d0"><span class="badge-dot" style="background:#15803d"></span>Yeni</span>';
+  }
+
+  const hasMissing = a.figuresMissing > 0;
+  const detailId = `zip-detail-${index}`;
+
+  return `
+    <div class="card-flat" data-zip-article="${index}">
+      <button type="button" onclick="toggleZipDetail('${detailId}', this)"
+        class="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-slate-50 transition-colors"
+        style="background:transparent;border:0">
+        <svg class="w-4 h-4 transition-transform flex-shrink-0" data-chev fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="color:var(--text-faint)"><polyline points="9 18 15 12 9 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="flex-1 min-w-0">
+          <div class="font-medium truncate" style="color:var(--text-strong)">${esc(a.title)}</div>
+          <div class="text-xs mt-0.5" style="color:var(--text-muted)">
+            ${esc(a.authors.slice(0, 3).join(', '))}${a.authors.length > 3 ? ' et al.' : ''}
+          </div>
+        </div>
+        <div class="flex gap-1.5 flex-shrink-0 items-center">
+          ${statusBadge}
+          ${typeBadge(a.type)}
+          ${pdfBadge}
+          ${figureBadge}
+        </div>
+      </button>
+      <div id="${detailId}" class="hidden px-4 pb-4 pt-1" style="border-top:1px solid var(--border-soft)">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+          <div>
+            <div class="text-xs font-semibold mb-2" style="color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em">Genel Bilgi</div>
+            <dl class="text-xs space-y-1" style="color:var(--text)">
+              <div class="flex gap-2"><dt style="color:var(--text-muted);min-width:60px">XML</dt><dd><code>${esc(a.xmlFile)}</code></dd></div>
+              ${a.doi ? `<div class="flex gap-2"><dt style="color:var(--text-muted);min-width:60px">DOI</dt><dd>${esc(a.doi)}</dd></div>` : ''}
+              ${a.aipMatch ? `<div class="flex gap-2"><dt style="color:var(--text-muted);min-width:60px">Baskıda</dt><dd><a href="#/articles-in-press/${a.aipMatch.id}" style="color:#92400e">#${a.aipMatch.id}</a> — bu sayıya taşınacak</dd></div>` : ''}
+              ${a.publishedMatch ? `<div class="flex gap-2"><dt style="color:var(--text-muted);min-width:60px">Mevcut</dt><dd><a href="#/articles/${a.publishedMatch.id}" style="color:#b91c1c">#${a.publishedMatch.id}</a> — duplicate, atlanacak</dd></div>` : ''}
+              ${a.pages ? `<div class="flex gap-2"><dt style="color:var(--text-muted);min-width:60px">Sayfa</dt><dd>${esc(a.pages)}</dd></div>` : ''}
+              <div class="flex gap-2"><dt style="color:var(--text-muted);min-width:60px">PDF</dt><dd>${a.matchedPdf ? `<code style="color:var(--success-text)">${esc(a.matchedPdf)}</code>` : '<span style="color:var(--warning-text)">eşleşmedi</span>'}</dd></div>
+            </dl>
+          </div>
+          <div>
+            <div class="text-xs font-semibold mb-2" style="color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em">Figür Eşleşmesi (${a.figuresMatched}/${a.figureCount})</div>
+            ${a.figureCount === 0
+              ? '<div class="text-xs" style="color:var(--text-faint)">Bu makalede figür yok.</div>'
+              : `<div class="space-y-1">${(a.figures || []).map((f) => zipFigureRow(f)).join('')}</div>`}
+            ${hasMissing ? `<div class="banner banner-warning mt-3" style="padding:8px 10px">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              <div class="banner-body" style="margin-top:0;font-size:11.5px">Aktarımdan sonra eksik figürleri "Makale → Dosyalar → Figürler" sekmesinden tek tek yükleyebilirsiniz.</div>
+            </div>` : ''}
+            ${a.existingAssets ? `<div class="banner banner-warning mt-3" style="padding:8px 10px;background:#fef3c7;border-color:#fde68a">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#92400e"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-2 14H7L5 6"/><path d="M10 11v6M14 11v6"/></svg>
+              <div class="banner-body" style="margin-top:0;font-size:11.5px;color:#78350f">
+                <strong>Önceki import'tan kalan dosyalar temizlenecek</strong> (#${a.aipMatch ? a.aipMatch.id : a.publishedMatch && a.publishedMatch.id}):
+                ${a.existingAssets.figures.length ? a.existingAssets.figures.length + ' figür' : ''}${a.existingAssets.figures.length && (a.existingAssets.supplementary.length || a.existingAssets.fullText) ? ', ' : ''}${a.existingAssets.supplementary.length ? a.existingAssets.supplementary.length + ' ek materyal' : ''}${(a.existingAssets.figures.length || a.existingAssets.supplementary.length) && a.existingAssets.fullText ? ', ' : ''}${a.existingAssets.fullText ? 'tam metin' : ''} silinip yenisiyle değiştirilecek.
+              </div>
+            </div>` : ''}
+          </div>
+        </div>
+      </div>
+    </div>`;
+}
+
+function zipFigureRow(f) {
+  if (f.status === 'matched') {
+    return `<div class="flex items-center gap-2 text-xs py-1">
+      <span class="badge badge-success" style="min-width:48px;justify-content:center">${esc(f.label || f.id || 'fig')}</span>
+      <code style="color:var(--text-muted);flex-shrink:0">${esc(f.originalRef)}</code>
+      <span style="color:var(--text-faint)">→</span>
+      <code style="color:var(--success-text)">${esc(f.matchedFile)}</code>
+    </div>`;
+  }
+  if (f.status === 'missing') {
+    return `<div class="flex items-center gap-2 text-xs py-1">
+      <span class="badge badge-warning" style="min-width:48px;justify-content:center">${esc(f.label || f.id || 'fig')}</span>
+      <code style="color:var(--warning-text)">${esc(f.originalRef)}</code>
+      <span style="color:var(--text-faint)">→ eşleşmedi</span>
+    </div>`;
+  }
+  return `<div class="text-xs py-1" style="color:var(--text-faint)">
+    <span class="badge badge-neutral">${esc(f.label || f.id || 'fig')}</span> JATS'te dosya referansı yok
+  </div>`;
+}
+
+function toggleZipDetail(detailId, btn) {
+  const el = document.getElementById(detailId);
+  if (!el) return;
+  el.classList.toggle('hidden');
+  const chev = btn.querySelector('[data-chev]');
+  if (chev) chev.style.transform = el.classList.contains('hidden') ? '' : 'rotate(90deg)';
+}
+
 async function uploadAndPreviewZip(file) {
   if (!file || !file.name.toLowerCase().endsWith('.zip')) {
     return toast('Lütfen ZIP dosyası seçin', 'warning');
@@ -1076,7 +1714,7 @@ async function uploadAndPreviewZip(file) {
   const area = document.getElementById('zip-preview-area');
   const totalHuman = formatBytes(file.size);
   area.innerHTML = `
-    <div class="bg-white rounded-xl border p-5 mb-6">
+    <div class="card card-padded mb-6">
       <div class="flex items-center justify-between mb-2">
         <div class="min-w-0">
           <div class="font-medium text-gray-900 truncate">${esc(file.name)}</div>
@@ -1132,7 +1770,7 @@ async function showZipPreview(filename) {
   const area = document.getElementById('zip-preview-area');
   // Always show an explicit analyzing state so users know the server is working.
   area.innerHTML = `
-    <div class="bg-white rounded-xl border p-6 mb-6 flex items-center justify-center gap-3">
+    <div class="card mb-6 flex items-center justify-center gap-3" style="padding:24px">
       <div class="animate-spin w-6 h-6 border-4 border-teal-600 border-t-transparent rounded-full"></div>
       <div>
         <div class="font-medium text-gray-900">ZIP analiz ediliyor...</div>
@@ -1156,25 +1794,57 @@ async function showZipPreview(filename) {
       return;
     }
 
+    const allOk = preview.summary.parsedOk === preview.summary.totalXml
+      && preview.summary.pdfsMatched === preview.summary.parsedOk
+      && preview.summary.imagesMissing === 0;
+
     area.innerHTML = `
-      <div class="bg-white rounded-xl border mb-6">
-        <div class="px-6 py-4 border-b bg-gray-50 rounded-t-xl">
-          <h2 class="font-semibold text-gray-900">${esc(filename)}</h2>
-          <div class="flex gap-4 mt-2 text-sm text-gray-500">
-            <span>${preview.summary.totalXml} XML</span>
-            <span>${preview.analysis.pdfFiles.length} PDF</span>
-            <span>${preview.analysis.imageFiles.length} Görsel</span>
-            <span>${preview.analysis.otherFiles.length} Diğer</span>
+      <div class="card mb-6">
+        <div class="px-6 py-4" style="border-bottom:1px solid var(--border-soft);background:var(--bg-page);border-radius:var(--radius) var(--radius) 0 0">
+          <div class="flex items-center justify-between gap-3 flex-wrap">
+            <div class="min-w-0">
+              <h2 class="text-base font-semibold truncate" style="color:var(--text-strong)">${esc(filename)}</h2>
+              <div class="flex gap-3 mt-1 text-xs" style="color:var(--text-muted)">
+                <span><strong style="color:var(--text-strong)">${preview.summary.totalXml}</strong> XML</span>
+                <span>·</span>
+                <span><strong style="color:var(--text-strong)">${preview.analysis.pdfFiles.length}</strong> PDF</span>
+                <span>·</span>
+                <span><strong style="color:var(--text-strong)">${preview.analysis.imageFiles.length}</strong> Görsel</span>
+                <span>·</span>
+                <span><strong style="color:var(--text-strong)">${preview.analysis.otherFiles.length}</strong> Diğer</span>
+              </div>
+            </div>
+            ${allOk
+              ? '<div class="badge badge-success"><span class="badge-dot"></span>Tüm eşleşmeler tamam</div>'
+              : '<div class="badge badge-warning"><span class="badge-dot"></span>Eksik eşleşmeler var</div>'}
           </div>
         </div>
 
+        <!-- Summary stat strip -->
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-px" style="background:var(--border-soft)">
+          ${zipStat('Yeni', preview.summary.newArticles ?? preview.summary.parsedOk, 'success')}
+          ${zipStat('Baskıdan', preview.summary.promotedFromAip ?? 0, (preview.summary.promotedFromAip ?? 0) > 0 ? 'warning' : 'neutral')}
+          ${zipStat('Duplicate', preview.summary.duplicates ?? 0, (preview.summary.duplicates ?? 0) > 0 ? 'warning' : 'neutral')}
+          ${zipStat('PDF', preview.summary.pdfsMatched + '/' + preview.summary.parsedOk, preview.summary.pdfsMatched === preview.summary.parsedOk ? 'success' : 'warning')}
+          ${zipStat('Figür', preview.summary.imagesMatched + '/' + (preview.summary.imagesMatched + preview.summary.imagesMissing), preview.summary.imagesMissing === 0 ? 'success' : 'warning')}
+          ${zipStat('Orphan', preview.summary.orphanImages || 0, (preview.summary.orphanImages || 0) === 0 ? 'neutral' : 'info')}
+        </div>
+        ${(preview.summary.promotedFromAip ?? 0) > 0 ? `
+        <div class="px-6 py-3" style="background:#fffbeb;border-bottom:1px solid #fde68a;color:#92400e;font-size:13px;line-height:1.5">
+          <strong>ℹ Baskıdan geçecek makaleler:</strong> ${preview.summary.promotedFromAip} makale şu anda <em>Baskıda</em> statüsünde — aktarım sırasında bu sayıya taşınacak ve "Baskıda" listesinden otomatik kaldırılacak. Görüntüleme/indirme sayıları korunur.
+        </div>` : ''}
+        ${(preview.summary.duplicates ?? 0) > 0 ? `
+        <div class="px-6 py-3" style="background:#fee2e2;border-bottom:1px solid #fecaca;color:#b91c1c;font-size:13px;line-height:1.5">
+          <strong>⚠ Duplicate makaleler:</strong> ${preview.summary.duplicates} makalenin DOI'si zaten yayınlanmış. Bunlar atlanacak.
+        </div>` : ''}
+
         <!-- Import settings -->
-        <div class="px-6 py-4 border-b bg-blue-50">
-          <h3 class="text-sm font-semibold text-gray-700 mb-3">Aktarma Ayarları</h3>
+        <div class="px-6 py-4" style="border-bottom:1px solid var(--border-soft);background:var(--bg-page)">
+          <h3 class="section-title mb-3">Aktarma Ayarları</h3>
           <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
             <div>
-              <label class="block text-xs text-gray-500 mb-1">Hedef Sayı</label>
-              <select id="zip-target" class="w-full px-3 py-2 border rounded-lg text-sm bg-white">
+              <label class="label" style="font-size:11px">Hedef Sayı</label>
+              <select id="zip-target" class="input">
                 <option value="auto">XML'den oku</option>
                 ${issueOptions.map((o) => `<option value="${o.volume}|${o.issue}|${o.year}" ${o.volume == detectedVol && String(o.issue) === String(detectedIss) ? 'selected' : ''}>${esc(o.label)}</option>`).join('')}
                 <option value="new">Yeni sayı oluştur</option>
@@ -1182,67 +1852,49 @@ async function showZipPreview(filename) {
             </div>
             <div id="zip-new-issue-fields" class="hidden col-span-2">
               <div class="grid grid-cols-3 gap-2">
-                <div><label class="block text-xs text-gray-500 mb-1">Yıl</label><input id="zip-year" type="number" value="${new Date().getFullYear()}" class="w-full px-2 py-2 border rounded-lg text-sm"></div>
-                <div><label class="block text-xs text-gray-500 mb-1">Cilt</label><input id="zip-vol" type="number" value="${detectedVol}" class="w-full px-2 py-2 border rounded-lg text-sm"></div>
-                <div><label class="block text-xs text-gray-500 mb-1">Sayı</label><input id="zip-iss" value="${detectedIss}" class="w-full px-2 py-2 border rounded-lg text-sm"></div>
+                <div><label class="label" style="font-size:11px">Yıl</label><input id="zip-year" type="number" value="${new Date().getFullYear()}" class="input"></div>
+                <div><label class="label" style="font-size:11px">Cilt</label><input id="zip-vol" type="number" value="${detectedVol}" class="input"></div>
+                <div><label class="label" style="font-size:11px">Sayı</label><input id="zip-iss" value="${detectedIss}" class="input"></div>
               </div>
             </div>
             <div class="flex items-end">
-              <label class="flex items-center gap-2 text-sm"><input id="zip-set-current" type="checkbox" class="rounded"> Güncel sayı yap</label>
+              <label class="flex items-center gap-2 text-sm cursor-pointer" style="color:var(--text)"><input id="zip-set-current" type="checkbox" class="rounded"> Güncel sayı yap</label>
             </div>
           </div>
         </div>
 
-        <!-- Parsed articles -->
+        <!-- Articles list -->
         <div class="px-6 py-4">
           <div class="flex items-center justify-between mb-3">
-            <h3 class="text-sm font-semibold text-gray-700">Makaleler (${preview.summary.parsedOk})</h3>
-            <button onclick="processZipImport('${esc(filename)}')" class="px-5 py-2.5 bg-teal-600 text-white rounded-lg hover:bg-teal-700 font-medium text-sm">Tümünü Aktar</button>
+            <div>
+              <h3 class="section-title">Makaleler · ${preview.summary.parsedOk}</h3>
+              <div class="text-xs mt-0.5" style="color:var(--text-muted)">Satıra tıklayın → figür eşleşme detaylarını gör</div>
+            </div>
+            <button onclick="processZipImport('${esc(filename)}')" class="btn btn-primary">Tümünü Aktar</button>
           </div>
 
           ${preview.errors.length ? `
-          <div class="bg-red-50 border border-red-200 rounded-lg p-3 mb-3">
-            <p class="text-sm font-medium text-red-700">${preview.errors.length} XML parse edilemedi</p>
-            ${preview.errors.map((e) => `<div class="text-xs text-red-600 mt-1">${esc(e.xmlFile)}: ${esc(e.error)}</div>`).join('')}
+          <div class="banner banner-danger mb-3">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+            <div>
+              <div class="banner-title">${preview.errors.length} XML parse edilemedi</div>
+              <div class="banner-body">${preview.errors.map((e) => `${esc(e.xmlFile)}: ${esc(e.error)}`).join('<br>')}</div>
+            </div>
           </div>` : ''}
 
           <div class="space-y-2">
-            ${preview.articles.map((a, i) => `
-              <div class="flex items-center gap-3 p-3 rounded-lg border text-sm ${a.matchedPdf ? 'bg-white' : 'bg-amber-50 border-amber-200'}">
-                <div class="flex-1 min-w-0">
-                  <div class="font-medium text-gray-900 truncate">${esc(a.title)}</div>
-                  <div class="text-xs text-gray-500 mt-0.5">
-                    ${esc(a.authors.slice(0, 3).join(', '))}${a.authors.length > 3 ? ' et al.' : ''}
-                  </div>
-                </div>
-                <div class="flex gap-2 flex-shrink-0 text-xs">
-                  <span class="px-2 py-0.5 bg-gray-100 rounded">${esc(a.type)}</span>
-                  <span class="text-gray-400">${esc(a.pages || '-')}</span>
-                  ${a.matchedPdf ? '<span class="text-green-600" title="PDF eşleşti">PDF &#10003;</span>' : '<span class="text-amber-600" title="PDF bulunamadı">PDF &#10007;</span>'}
-                  ${a.matchedImages.length ? `<span class="text-green-600" title="${a.matchedImages.length} figür eşleşti">IMG ${a.matchedImages.length}/${a.figureCount}</span>` : (a.figureCount ? `<span class="text-amber-600">IMG 0/${a.figureCount}</span>` : '')}
-                </div>
-              </div>`).join('')}
+            ${preview.articles.map((a, i) => renderZipPreviewArticle(a, i)).join('')}
           </div>
 
-          <!-- File summary -->
-          <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
-            <div class="bg-green-50 rounded-lg p-3 text-center">
-              <div class="text-lg font-bold text-green-700">${preview.summary.parsedOk}</div>
-              <div class="text-green-600">Makale</div>
+          ${(preview.orphanImages || []).length ? `
+          <details class="mt-4">
+            <summary class="cursor-pointer text-sm font-medium" style="color:var(--info)">
+              ${preview.orphanImages.length} görsel ZIP'te var ama hiçbir makale referans vermiyor →
+            </summary>
+            <div class="mt-2 grid grid-cols-2 md:grid-cols-4 gap-2 text-xs">
+              ${preview.orphanImages.map((img) => `<div class="card-flat" style="padding:6px 10px"><code>${esc(img.name)}</code><div style="color:var(--text-faint);font-size:11px">${esc(img.sizeHuman)}</div></div>`).join('')}
             </div>
-            <div class="bg-${preview.summary.pdfsMatched === preview.summary.parsedOk ? 'green' : 'amber'}-50 rounded-lg p-3 text-center">
-              <div class="text-lg font-bold text-${preview.summary.pdfsMatched === preview.summary.parsedOk ? 'green' : 'amber'}-700">${preview.summary.pdfsMatched}/${preview.summary.parsedOk}</div>
-              <div class="text-${preview.summary.pdfsMatched === preview.summary.parsedOk ? 'green' : 'amber'}-600">PDF Eşleşme</div>
-            </div>
-            <div class="bg-blue-50 rounded-lg p-3 text-center">
-              <div class="text-lg font-bold text-blue-700">${preview.summary.imagesMatched}</div>
-              <div class="text-blue-600">Figür Eşleşme</div>
-            </div>
-            <div class="bg-gray-50 rounded-lg p-3 text-center">
-              <div class="text-lg font-bold text-gray-700">${preview.analysis.otherFiles.length}</div>
-              <div class="text-gray-600">Ek Dosya</div>
-            </div>
-          </div>
+          </details>` : ''}
         </div>
       </div>`;
 
@@ -1295,21 +1947,34 @@ async function processZipImport(filename) {
       year,
     });
 
-    let html = `<div class="bg-white rounded-xl border p-6">
+    const totalPromoted = result.totalPromoted || 0;
+    const totalNew = result.totalImported - totalPromoted;
+    let html = `<div class="card" style="padding:24px">
       <h2 class="text-xl font-bold text-green-700 mb-4">Import Tamamlandı</h2>
-      <div class="grid grid-cols-2 gap-4 mb-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         <div class="bg-green-50 rounded-lg p-4 text-center">
           <div class="text-3xl font-bold text-green-700">${result.totalImported}</div>
-          <div class="text-sm text-green-600">Makale Aktarıldı</div>
+          <div class="text-sm text-green-600">Toplam Aktarılan</div>
+        </div>
+        <div class="rounded-lg p-4 text-center" style="background:#dcfce7">
+          <div class="text-3xl font-bold" style="color:#15803d">${totalNew}</div>
+          <div class="text-sm" style="color:#166534">Yeni Makale</div>
+        </div>
+        <div class="rounded-lg p-4 text-center" style="background:${totalPromoted > 0 ? '#fef3c7' : '#f3f4f6'}">
+          <div class="text-3xl font-bold" style="color:${totalPromoted > 0 ? '#92400e' : '#6b7280'}">${totalPromoted}</div>
+          <div class="text-sm" style="color:${totalPromoted > 0 ? '#854d0e' : '#6b7280'}">Baskıdan Geçti</div>
         </div>
         ${result.totalErrors ? `<div class="bg-red-50 rounded-lg p-4 text-center">
           <div class="text-3xl font-bold text-red-700">${result.totalErrors}</div>
           <div class="text-sm text-red-600">Hata</div>
-        </div>` : `<div class="bg-green-50 rounded-lg p-4 text-center">
-          <div class="text-3xl font-bold text-green-700">0</div>
-          <div class="text-sm text-green-600">Hata</div>
+        </div>` : `<div class="bg-gray-50 rounded-lg p-4 text-center">
+          <div class="text-3xl font-bold text-gray-700">0</div>
+          <div class="text-sm text-gray-600">Hata</div>
         </div>`}
-      </div>`;
+      </div>
+      ${totalPromoted > 0 ? `<div class="mb-4 p-3 rounded-lg" style="background:#fffbeb;border:1px solid #fde68a;color:#92400e;font-size:13px;line-height:1.5">
+        <strong>✓ ${totalPromoted} makale Baskıdan bu sayıya geçirildi</strong> — "Baskıda" listesinden otomatik kaldırıldı; görüntüleme/indirme sayıları korundu.
+      </div>` : ''}`;
 
     if (result.imported.length) {
       html += `<h3 class="font-semibold text-gray-700 mb-2">Aktarılan Makaleler</h3>
@@ -1317,6 +1982,8 @@ async function processZipImport(filename) {
           <div class="flex items-center gap-2 text-sm p-2 rounded hover:bg-gray-50">
             <a href="#/articles/${Number(a.id)}" class="text-teal-600 hover:underline font-medium">#${Number(a.id)}</a>
             <span class="flex-1 truncate">${esc(a.title)}</span>
+            ${a.promotedFromAip ? '<span class="badge" style="background:#fef3c7;color:#92400e;font-size:11px;padding:2px 6px">Baskıdan</span>' : ''}
+            ${a.cleanedStaleFiles ? `<span class="badge" style="background:#e0f2fe;color:#075985;font-size:11px;padding:2px 6px" title="${esc(a.cleanedStaleFiles.figures.concat(a.cleanedStaleFiles.supplementary).join(', '))}">${a.cleanedStaleFiles.count} eski dosya temizlendi</span>` : ''}
             ${a.hasPdf ? '<span class="text-green-500 text-xs">PDF &#10003;</span>' : '<span class="text-amber-500 text-xs">PDF &#10007;</span>'}
           </div>`).join('')}
         </div>`;
@@ -1330,8 +1997,8 @@ async function processZipImport(filename) {
     }
 
     html += `<div class="mt-6 flex gap-3">
-      ${result.volume ? `<a href="#/issues/${encodeURIComponent(result.volume)}/${encodeURIComponent(result.issue)}" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Sayıyı Görüntüle</a>` : ''}
-      <a href="#/zip-import" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm">Başka ZIP Aktar</a>
+      ${result.volume ? `<a href="#/issues/${encodeURIComponent(result.volume)}/${encodeURIComponent(result.issue)}" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Sayıyı Görüntüle</a>` : ''}
+      <a href="#/zip-import" class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm">Başka ZIP Aktar</a>
     </div></div>`;
 
     area.innerHTML = html;
@@ -1351,7 +2018,7 @@ async function deleteServerZip(filename) {
 }
 
 // JATS Import
-route('/jats-import', async (el) => {
+async function renderJatsImport(el) {
   const archive = await API.get('/issues');
   const issueOptions = [];
   for (const y of archive) {
@@ -1361,12 +2028,11 @@ route('/jats-import', async (el) => {
   }
 
   el.innerHTML = `
-    <h1 class="text-2xl font-bold text-gray-900 mb-6">JATS XML Aktar</h1>
-    <div class="bg-white rounded-xl border p-6 mb-6">
+    <div class="card mb-6" style="padding:24px">
       <div class="mb-4 grid grid-cols-1 md:grid-cols-3 gap-3">
         <div>
           <label class="block text-sm font-medium text-gray-700 mb-2">Hedef</label>
-          <select id="import-target" class="w-full px-3 py-2 border rounded-lg text-sm">
+          <select id="import-target" class="input">
             <option value="auto">XML'den oku (otomatik)</option>
             <option value="in-press">Baskıda olarak ekle</option>
             ${issueOptions.map((o) => `<option value="${o.volume}|${o.issue}">Vol ${o.volume}, Issue ${o.issue} (${esc(o.label.split(' — ')[0])})</option>`).join('')}
@@ -1381,7 +2047,7 @@ route('/jats-import', async (el) => {
         </div>
         <div>
           <label class="block text-sm font-medium text-gray-700 mb-2">Yeni sayı yılı</label>
-          <input id="import-year" type="number" value="${new Date().getFullYear()}" class="w-full px-3 py-2 border rounded-lg text-sm">
+          <input id="import-year" type="number" value="${new Date().getFullYear()}" class="input">
         </div>
       </div>
       <p class="text-xs text-gray-500 mb-4">Otomatik modda makaleler XML'deki cilt/sayı bilgisine atanır. Eğer arşivde bu sayı yoksa ve "Otomatik oluştur" işaretliyse arşive yeni bir kayıt eklenir.</p>
@@ -1402,7 +2068,7 @@ route('/jats-import', async (el) => {
   dropZone.ondragleave = () => dropZone.classList.remove('border-teal-400', 'bg-teal-50');
   dropZone.ondrop = (e) => { e.preventDefault(); dropZone.classList.remove('border-teal-400', 'bg-teal-50'); handleXmlFiles(e.dataTransfer.files); };
   input.onchange = () => handleXmlFiles(input.files);
-});
+}
 
 async function handleXmlFiles(files) {
   const results = document.getElementById('parsed-results');
@@ -1418,7 +2084,7 @@ async function handleXmlFiles(files) {
     if (successful.length > 1) {
       html += `<div class="flex items-center justify-between bg-teal-50 border border-teal-200 rounded-xl p-4 mb-4">
         <span class="font-medium text-teal-800">${successful.length} makale başarıyla parse edildi</span>
-        <button onclick="importAllParsed()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Tümünü Aktar</button>
+        <button onclick="importAllParsed()" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Tümünü Aktar</button>
       </div>`;
     }
 
@@ -1428,13 +2094,13 @@ async function handleXmlFiles(files) {
       }
       const a = r.article;
       return `
-        <div class="bg-white rounded-xl border p-5" id="parsed-${i}">
+        <div class="card card-padded" id="parsed-${i}">
           <div class="flex items-start justify-between mb-3">
             <div>
-              <span class="px-2 py-0.5 bg-gray-100 rounded text-xs font-medium">${esc(a.type)}</span>
+              ${typeBadge(a.type)}
               <span class="text-xs text-gray-400 ml-2">${esc(r.filename)}</span>
             </div>
-            <button onclick="importParsed(${i})" class="px-4 py-1.5 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Aktar</button>
+            <button onclick="importParsed(${i})" class="px-4 py-1.5 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Aktar</button>
           </div>
           <h3 class="font-semibold text-gray-900 mb-2">${esc(a.title)}</h3>
           <div class="text-sm text-gray-600 mb-2">${(a.authors || []).map((au) => esc(au.name)).join(', ')}</div>
@@ -1444,7 +2110,7 @@ async function handleXmlFiles(files) {
             <div><strong>Sayfa:</strong> ${esc(a.pages)}</div>
             <div><strong>Tarih:</strong> ${esc(a.published)}</div>
           </div>
-          ${a.relatedArticles?.length ? `<div class="mt-2 text-xs text-amber-700 bg-amber-50 px-3 py-1.5 rounded">Bağlantı: ${a.relatedArticles.map((r) => esc(r.type)).join(', ')}</div>` : ''}
+          ${a.relatedArticles?.length ? `<div class="mt-2"><span class="badge badge-info">Bağlantı · ${a.relatedArticles.map((r) => esc(r.type)).join(', ')}</span></div>` : ''}
         </div>`;
     }).join('');
 
@@ -1551,19 +2217,19 @@ route('/issues', async (el) => {
   const latestCount = (homepage?.latestArticles || []).length;
 
   el.innerHTML = `
-    <div class="flex items-center justify-between mb-6">
-      <h1 class="text-2xl font-bold text-gray-900">Sayılar</h1>
+    <div class="page-header">
+      <h1 class="page-title">Sayılar</h1>
       <div class="flex gap-2">
-        <button onclick="checkServerImports()" class="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 text-sm font-medium">Sunucudan Kontrol Et</button>
-        <button onclick="showNewIssueForm()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Yeni Sayı</button>
+        <button onclick="checkServerImports()" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Sunucudan Kontrol Et</button>
+        <button onclick="showNewIssueForm()" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Yeni Sayı</button>
       </div>
     </div>
 
     <!-- Current issue control panel -->
-    <div class="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-xl p-5 mb-6">
+    <div class="card-hero card-padded mb-6">
       <div class="flex items-start justify-between gap-4 flex-wrap">
         <div>
-          <div class="text-xs font-medium text-amber-700 uppercase tracking-wide">Güncel Sayı</div>
+          <div class="text-xs font-semibold uppercase tracking-wider" style="color:var(--brand)">Güncel Sayı</div>
           ${cur.volume ? `
             <div class="text-xl font-bold text-gray-900 mt-1">Volume ${esc(cur.volume)}, Issue ${esc(cur.issue)}${cur.year ? ` <span class="text-base font-normal text-gray-500">(${esc(cur.year)})</span>` : ''}</div>
             <div class="flex gap-4 mt-2 text-xs text-gray-600">
@@ -1579,42 +2245,42 @@ route('/issues', async (el) => {
         </div>
         ${cur.volume ? `
         <div class="flex gap-2">
-          <a href="#/issues/${esc(cur.volume)}/${encodeURIComponent(cur.issue)}" class="px-3 py-1.5 bg-white border border-amber-300 text-amber-700 rounded text-xs font-medium hover:bg-amber-100">Sayıyı Düzenle</a>
-          <a href="/site/current-issue.html?volume=${encodeURIComponent(cur.volume)}&issue=${encodeURIComponent(cur.issue)}" target="_blank" rel="noopener" class="px-3 py-1.5 bg-white border border-blue-300 text-blue-700 rounded text-xs font-medium hover:bg-blue-50">Sitede Önizle</a>
-          <button onclick="rebuildCurrentHomepage()" class="px-3 py-1.5 bg-amber-600 text-white rounded text-xs font-medium hover:bg-amber-700" title="Anasayfa verisini güncel sayıdan yeniden oluştur">Anasayfayı Yenile</button>
+          <a href="#/issues/${esc(cur.volume)}/${encodeURIComponent(cur.issue)}" class="btn btn-secondary btn-sm">Sayıyı Düzenle</a>
+          <a href="/site/current-issue.html?volume=${encodeURIComponent(cur.volume)}&issue=${encodeURIComponent(cur.issue)}" target="_blank" rel="noopener" class="px-3 py-1.5 bg-white border border-slate-300 text-slate-700 rounded text-xs font-medium hover:bg-slate-50">Sitede Önizle</a>
+          <button onclick="rebuildCurrentHomepage()" class="px-3 py-1.5 bg-teal-700 text-white rounded text-xs font-medium hover:bg-teal-800" title="Anasayfa verisini güncel sayıdan yeniden oluştur">Anasayfayı Yenile</button>
         </div>` : ''}
       </div>
     </div>
 
-    <div id="new-issue-form" class="hidden bg-white rounded-xl border p-5 mb-6">
+    <div id="new-issue-form" class="hidden card card-padded mb-6">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
         <input id="ni-year" type="number" placeholder="Yil (2026)" class="px-3 py-2 border rounded-lg text-sm">
         <input id="ni-volume" type="number" placeholder="Cilt (43)" class="px-3 py-2 border rounded-lg text-sm">
         <input id="ni-issue" placeholder="Sayı (3)" class="px-3 py-2 border rounded-lg text-sm">
-        <button onclick="createIssue()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Oluştur</button>
+        <button onclick="createIssue()" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Oluştur</button>
       </div>
     </div>
     <div class="space-y-4">
       ${archive.map((y) => `
-        <div class="bg-white rounded-xl border">
-          <div class="px-5 py-3 bg-gray-50 rounded-t-xl font-semibold text-gray-700">${esc(y.year)} — Volume ${y.volume}</div>
+        <div class="card">
+          <div class="px-5 py-3 rounded-t-xl font-semibold" style="background:var(--bg-page);color:var(--text-strong);border-bottom:1px solid var(--border-soft)">${esc(y.year)} — Volume ${y.volume}</div>
           <div class="divide-y">
             ${y.issues.map((iss) => {
               const cur_ = isCurrent(iss.volume, iss.issue);
               return `
-              <div class="flex items-center justify-between px-5 py-3 hover:bg-gray-50 cursor-pointer ${cur_ ? 'bg-amber-50' : ''}" onclick="navigate('#/issues/${iss.volume}/${iss.issue}')">
+              <div class="flex items-center justify-between px-5 py-3 hover:bg-slate-50 cursor-pointer ${cur_ ? 'bg-teal-50/40' : ''}" onclick="navigate('#/issues/${iss.volume}/${iss.issue}')">
                 <div class="flex items-center gap-3">
-                  <span class="font-medium">${esc(iss.label)}</span>
-                  <span class="text-sm text-gray-400">${iss.articleCount} makale</span>
-                  ${cur_ ? '<span class="px-2 py-0.5 bg-amber-500 text-white rounded text-xs font-semibold">GÜNCEL</span>' : ''}
+                  <span class="font-medium" style="color:var(--text-strong)">${esc(iss.label)}</span>
+                  <span class="text-sm" style="color:var(--text-faint)">${iss.articleCount} makale</span>
+                  ${cur_ ? '<span class="badge badge-info">GÜNCEL</span>' : ''}
                 </div>
-                <div class="flex gap-3 items-center">
-                  <a href="/site/current-issue.html?year=${encodeURIComponent(y.year)}&volume=${iss.volume}&issue=${encodeURIComponent(iss.issue)}" target="_blank" rel="noopener" class="text-xs text-blue-600 hover:text-blue-800" onclick="event.stopPropagation()">Önizle</a>
+                <div class="flex gap-2 items-center">
+                  <a href="/site/current-issue.html?year=${encodeURIComponent(y.year)}&volume=${iss.volume}&issue=${encodeURIComponent(iss.issue)}" target="_blank" rel="noopener" class="text-xs font-medium" style="color:var(--text-muted)" onclick="event.stopPropagation()" onmouseover="this.style.color='var(--text-strong)'" onmouseout="this.style.color='var(--text-muted)'">Önizle</a>
                   ${cur_
-                    ? '<span class="text-xs text-amber-600 font-medium" title="Bu sayı şu anda güncel olarak ayarlı">✓ Güncel</span>'
-                    : `<button onclick="event.stopPropagation(); setCurrentIssue(${iss.volume}, '${iss.issue}')" class="text-xs px-2 py-1 bg-amber-500 text-white rounded hover:bg-amber-600">Güncel Yap</button>`}
-                  <button onclick="event.stopPropagation(); rebuildIssue(${iss.volume}, '${iss.issue}')" class="text-xs text-teal-600 hover:text-teal-800">Yeniden Oluştur</button>
-                  <button onclick="event.stopPropagation(); deleteIssue('${y.year}', ${iss.volume}, '${iss.issue}')" class="text-xs text-red-500 hover:text-red-700">Sil</button>
+                    ? ''
+                    : `<button onclick="event.stopPropagation(); setCurrentIssue(${iss.volume}, '${iss.issue}')" class="btn btn-secondary btn-sm">Güncel Yap</button>`}
+                  <button onclick="event.stopPropagation(); rebuildIssue(${iss.volume}, '${iss.issue}')" class="btn btn-ghost btn-sm">Yeniden Oluştur</button>
+                  <button onclick="event.stopPropagation(); deleteIssue('${y.year}', ${iss.volume}, '${iss.issue}')" class="btn btn-ghost btn-sm" style="color:var(--danger)">Sil</button>
                 </div>
               </div>`;
             }).join('')}
@@ -1691,32 +2357,35 @@ route('/issues/:volume/:issue', async (el, { volume, issue }) => {
   const pdfCount = articles.filter((a) => a.pdfUrl).length;
 
   el.innerHTML = `
-    <div class="flex items-center justify-between mb-6">
+    <div class="page-header">
       <div>
         <a href="#/issues" class="text-sm text-teal-600 hover:text-teal-800">&larr; Tüm Sayılar</a>
         <div class="flex items-center gap-3 mt-1">
-          <h1 class="text-2xl font-bold text-gray-900">Volume ${esc(volume)}, Issue ${esc(issue)}</h1>
-          ${isCurrent ? '<span class="px-2 py-1 bg-amber-500 text-white rounded text-xs font-semibold">GÜNCEL SAYI</span>' : ''}
+          <h1 class="page-title">Volume ${esc(volume)}, Issue ${esc(issue)}</h1>
+          ${isCurrent ? '<span class="badge badge-info">GÜNCEL SAYI</span>' : ''}
         </div>
         <p class="text-sm text-gray-500">${articles.length} makale · ${pdfCount} PDF · ${featuredCount} öne çıkan · ${imageCornerCount} görsel köşesi</p>
       </div>
       <div class="flex gap-2">
-        <a href="/site/current-issue.html?volume=${encodeURIComponent(volume)}&issue=${encodeURIComponent(issue)}" target="_blank" rel="noopener" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 text-sm font-medium">Önizle</a>
+        <a href="/site/current-issue.html?volume=${encodeURIComponent(volume)}&issue=${encodeURIComponent(issue)}" target="_blank" rel="noopener" class="px-4 py-2 bg-slate-50 text-slate-700 rounded-lg hover:bg-slate-100 text-sm font-medium">Önizle</a>
         ${isCurrent
-          ? `<button onclick="setCurrentIssue(${volume}, '${issue}')" class="px-4 py-2 bg-amber-100 text-amber-800 border border-amber-300 rounded-lg hover:bg-amber-200 text-sm font-medium" title="Anasayfa verisini bu sayıdan yeniden hesaplar">Anasayfayı Yenile</button>`
-          : `<button onclick="setCurrentIssue(${volume}, '${issue}')" class="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 text-sm font-medium">Güncel Sayı Yap</button>`}
-        <button onclick="rebuildIssue(${volume}, '${issue}')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm">Yeniden Oluştur</button>
+          ? `<button onclick="setCurrentIssue(${volume}, '${issue}')" class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 shadow-sm text-sm font-medium" title="Anasayfa verisini bu sayıdan yeniden hesaplar">Anasayfayı Yenile</button>`
+          : `<button onclick="setCurrentIssue(${volume}, '${issue}')" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Güncel Sayı Yap</button>`}
+        <button onclick="rebuildIssue(${volume}, '${issue}')" class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm">Yeniden Oluştur</button>
       </div>
     </div>
 
     ${isCurrent ? `
-    <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-6 text-sm text-amber-800">
-      <div class="font-medium mb-1">Bu sayı şu anda anasayfada "Güncel Sayı" olarak görünüyor.</div>
-      <div class="text-xs">Öne çıkan makaleleri (${featuredCount}) ve görsel köşesi (${imageCornerCount}) ayarlamak için aşağıdaki makale satırlarındaki "Düzenle" → "Genel" sekmesini kullanın. Değişikliklerden sonra "Anasayfayı Yenile" butonuna basın.</div>
+    <div class="card card-padded mb-6 flex items-start gap-3" style="background:var(--brand-soft);border-color:var(--brand-soft-2)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--brand);flex-shrink:0;margin-top:2px"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+      <div>
+        <div class="font-semibold text-sm" style="color:var(--brand)">Bu sayı şu anda anasayfada "Güncel Sayı" olarak görünüyor.</div>
+        <div class="text-xs mt-1" style="color:var(--text-muted)">Öne çıkan makaleleri (${featuredCount}) ve görsel köşesi (${imageCornerCount}) ayarlamak için aşağıdaki makale satırlarındaki "Düzenle" → "Genel" sekmesini kullanın. Değişikliklerden sonra "Anasayfayı Yenile" butonuna basın.</div>
+      </div>
     </div>` : ''}
 
     <!-- Batch JATS upload for this issue -->
-    <div class="bg-white rounded-xl border p-5 mb-6">
+    <div class="card card-padded mb-6">
       <h2 class="font-semibold text-gray-900 mb-3">Bu Sayıya JATS XML Aktar</h2>
       <div id="issue-drop-zone" class="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center hover:border-teal-400 transition-colors cursor-pointer">
         <p class="text-gray-600 font-medium">XML dosyalarını sürükleyin veya tıklayın</p>
@@ -1727,7 +2396,7 @@ route('/issues/:volume/:issue', async (el, { volume, issue }) => {
     </div>
 
     <!-- Batch PDF upload for this issue -->
-    <div class="bg-white rounded-xl border p-5 mb-6">
+    <div class="card card-padded mb-6">
       <h2 class="font-semibold text-gray-900 mb-3">Bu Sayıya Toplu PDF Yükle</h2>
       <div id="issue-pdf-drop" class="border-2 border-dashed border-gray-300 rounded-xl p-4 text-center hover:border-teal-400 transition-colors cursor-pointer">
         <p class="text-gray-600 text-sm">PDF dosyalarını sürükleyin (dosya adı = makale ID)</p>
@@ -1737,40 +2406,40 @@ route('/issues/:volume/:issue', async (el, { volume, issue }) => {
     </div>
 
     <!-- Move toolbar (hidden until selection) -->
-    <div id="move-toolbar" class="hidden bg-blue-50 border border-blue-200 rounded-xl p-4 mb-4 flex items-center gap-3 flex-wrap">
-      <span class="text-sm font-medium text-blue-800"><span id="move-count">0</span> makale secildi</span>
+    <div id="move-toolbar" class="hidden bg-slate-50 border border-slate-200 rounded-xl p-4 mb-4 flex items-center gap-3 flex-wrap">
+      <span class="text-sm font-medium text-slate-800"><span id="move-count">0</span> makale secildi</span>
       <span class="text-gray-300">|</span>
       <span class="text-sm text-gray-600">Hedef:</span>
       <input id="move-vol" type="number" placeholder="Cilt" class="w-20 px-2 py-1.5 border rounded-lg text-sm">
       <input id="move-iss" placeholder="Sayı" class="w-20 px-2 py-1.5 border rounded-lg text-sm">
-      <button onclick="moveSelectedArticles()" class="px-4 py-1.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm font-medium">Taşı</button>
+      <button onclick="moveSelectedArticles()" class="px-4 py-1.5 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Taşı</button>
       <button onclick="clearMoveSelection()" class="px-3 py-1.5 text-gray-500 hover:text-gray-700 text-sm">Vazgeç</button>
     </div>
 
     <!-- Articles in this issue -->
-    <div class="bg-white rounded-xl border overflow-hidden">
-      <table class="w-full text-sm">
-        <thead class="bg-gray-50"><tr>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
           <th class="px-3 py-3 w-8"><input type="checkbox" id="move-select-all" class="rounded" onchange="toggleAllMoveCheckboxes(this.checked)"></th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">ID</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">Sayfa</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">Başlık</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">Tür</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">DOI</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">PDF</th>
+          <th>ID</th>
+          <th>Sayfa</th>
+          <th>Başlık</th>
+          <th>Tür</th>
+          <th>DOI</th>
+          <th>PDF</th>
           <th class="px-4 py-3"></th>
         </tr></thead>
         <tbody>${articles.map((a) => `
-          <tr class="border-t hover:bg-gray-50 cursor-pointer" onclick="navigate('#/articles/${a.id}')">
+          <tr class="cursor-pointer" onclick="navigate('#/articles/${a.id}')">
             <td class="px-3 py-3" onclick="event.stopPropagation()"><input type="checkbox" class="move-cb rounded" value="${a.id}" onchange="updateMoveToolbar()"></td>
             <td class="px-4 py-3 text-gray-400">${a.id}</td>
             <td class="px-4 py-3 text-gray-500">${esc(a.pages || '-')}</td>
             <td class="px-4 py-3 max-w-sm truncate">${esc(a.title)}</td>
-            <td class="px-4 py-3"><span class="px-2 py-0.5 bg-gray-100 rounded text-xs">${esc(a.type)}</span></td>
+            <td class="px-4 py-3">${typeBadge(a.type)}</td>
             <td class="px-4 py-3 text-xs text-gray-400">${esc(a.doi || '-')}</td>
             <td class="px-4 py-3 text-center">${a.pdfUrl ? '<span class="text-green-500" title="PDF mevcut">&#10003;</span>' : '<span class="text-gray-300" title="PDF yok">&#8212;</span>'}</td>
             <td class="px-4 py-3 whitespace-nowrap">
-              <a href="/site/article.html?id=${a.id}" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 text-xs mr-3" onclick="event.stopPropagation()">Önizle</a>
+              <a href="/site/article.html?id=${a.id}" target="_blank" rel="noopener" class="text-slate-600 hover:text-slate-800 text-xs mr-3" onclick="event.stopPropagation()">Önizle</a>
               <button class="text-red-500 hover:text-red-700 text-xs" onclick="event.stopPropagation(); deleteArticle(${a.id})">Sil</button>
             </td>
           </tr>`).join('')}</tbody>
@@ -1873,7 +2542,7 @@ async function handleIssueXmlFiles(files, volume, issue) {
       html += `<div class="bg-gray-50 rounded-lg p-4">
         <div class="flex items-center justify-between mb-3">
           <span class="font-medium text-gray-700">${successful.length} makale başarıyla parse edildi</span>
-          <button onclick="importBatchToIssue(${volume}, '${issue}')" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Tümünü Aktar</button>
+          <button onclick="importBatchToIssue(${volume}, '${issue}')" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Tümünü Aktar</button>
         </div>
         <div class="space-y-2">${successful.map((r, i) => `
           <div class="flex items-center gap-3 text-sm" id="issue-parsed-${i}">
@@ -1927,7 +2596,7 @@ async function setCurrentIssue(volume, issue) {
 }
 
 // Articles in Press
-route('/articles-in-press', async (el) => {
+async function renderAipArticles(el) {
   const aip = await API.get('/articles-in-press');
   const archive = await API.get('/issues');
 
@@ -1940,59 +2609,57 @@ route('/articles-in-press', async (el) => {
   }
 
   el.innerHTML = `
-    <div class="flex items-center justify-between mb-6">
-      <h1 class="text-2xl font-bold text-gray-900">Baskıda Makaleler <span class="text-gray-400 text-lg font-normal">(${aip.length})</span></h1>
-      <div class="flex gap-2">
-        <a href="#/articles-in-press/new" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm font-medium">+ Manuel Ekle</a>
-        <button onclick="showAipImport()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">JATS XML Aktar</button>
-        ${aip.length ? `<button onclick="publishSelectedAip()" class="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 text-sm font-medium">Seçilenleri Yayınla</button>` : ''}
-      </div>
-    </div>
-
-    <!-- JATS upload for in-press -->
-    <div id="aip-import-zone" class="hidden bg-white rounded-xl border p-5 mb-6">
-      <h2 class="font-semibold text-gray-900 mb-3">Baskıda Makale Olarak JATS XML Aktar</h2>
-      <div id="aip-drop-zone" class="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center hover:border-teal-400 transition-colors cursor-pointer">
-        <p class="text-gray-600 font-medium">XML dosyalarını sürükleyin veya tıklayın</p>
-        <p class="text-xs text-gray-400 mt-1">Cilt/sayı atanmadan baskıda olarak eklenir</p>
-        <input id="aip-xml-input" type="file" accept=".xml" multiple class="hidden">
-      </div>
-      <div id="aip-parsed-results" class="mt-4 space-y-3"></div>
+    <div class="flex items-center gap-3 mb-4">
+      <span class="text-sm flex-1" style="color:var(--text-muted)">${aip.length} baskıda makale</span>
+      <a href="#/articles-in-press/new" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium whitespace-nowrap">+ Manuel Ekle</a>
+      ${aip.length ? `<button onclick="publishSelectedAip()" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium whitespace-nowrap">Seçilenleri Yayınla</button>` : ''}
     </div>
 
     ${aip.length ? `
     <!-- Publish controls -->
-    <div id="aip-publish-bar" class="hidden bg-amber-50 rounded-xl border border-amber-200 p-4 mb-6">
-      <div class="flex items-center gap-4">
-        <span class="text-sm font-medium text-amber-800" id="aip-selected-count">0 makale seçili</span>
-        <select id="aip-target-issue" class="px-3 py-2 border rounded-lg text-sm flex-1">
+    <div id="aip-publish-bar" class="hidden card card-padded mb-6" style="background:var(--brand-soft);border-color:var(--brand-soft-2)">
+      <div class="flex items-center gap-3 flex-wrap">
+        <span class="text-sm font-semibold" style="color:var(--brand)" id="aip-selected-count">0 makale seçili</span>
+        <select id="aip-target-issue" class="input flex-1" style="min-width:200px">
           <option value="">Hedef sayı seçin...</option>
           ${issueOptions.map((o) => `<option value="${o.volume}|${o.issue}">${esc(o.label)}</option>`).join('')}
         </select>
-        <button onclick="doPublishAip()" class="px-4 py-2 bg-amber-600 text-white rounded-lg hover:bg-amber-700 text-sm font-medium">Yayınla</button>
+        <button onclick="doPublishAip()" class="btn btn-primary">Yayınla</button>
       </div>
     </div>` : ''}
 
-    <div class="bg-white rounded-xl border overflow-hidden">
-      <table class="w-full text-sm">
-        <thead class="bg-gray-50"><tr>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
           <th class="px-4 py-3 w-8"><input type="checkbox" id="aip-select-all" class="rounded"></th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">ID</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">Başlık</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">Tür</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">DOI</th>
+          <th>ID</th>
+          <th>Başlık</th>
+          <th>Tür</th>
+          <th>Durum</th>
+          <th>DOI</th>
           <th class="px-4 py-3"></th>
         </tr></thead>
         <tbody>${aip.map((a) => `
-          <tr class="border-t hover:bg-gray-50">
+          <tr>
             <td class="px-4 py-3"><input type="checkbox" class="aip-check rounded" data-id="${a.id}"></td>
-            <td class="px-4 py-3 text-gray-400">${a.id}</td>
-            <td class="px-4 py-3 max-w-sm truncate"><a href="#/articles-in-press/${a.id}/edit" class="text-teal-700 hover:underline">${esc(a.title)}</a></td>
-            <td class="px-4 py-3"><span class="px-2 py-0.5 bg-gray-100 rounded text-xs">${esc(a.type)}</span></td>
-            <td class="px-4 py-3 text-xs text-gray-400">${esc(a.doi || '-')}</td>
-            <td class="px-4 py-3 text-right">
-              <a href="#/articles-in-press/${a.id}/edit" class="text-blue-600 hover:text-blue-800 text-xs mr-3">Düzenle</a>
-              <button class="text-red-500 hover:text-red-700 text-xs" onclick="deleteAip(${a.id})">Sil</button>
+            <td class="px-4 py-3 tabular" style="color:var(--text-faint)">${a.id}</td>
+            <td class="px-4 py-3 max-w-sm truncate"><a href="#/articles-in-press/${a.id}/edit" class="hover:underline" style="color:var(--brand-strong);font-weight:500">${esc(a.title)}</a></td>
+            <td class="px-4 py-3">${typeBadge(a.type)}</td>
+            <td class="px-4 py-3">
+              <div class="flex flex-wrap gap-1">
+                ${a.pdfUrl
+                  ? '<span class="badge badge-success" title="PDF dosyası yüklü"><span class="badge-dot"></span>PDF</span>'
+                  : '<span class="badge badge-warning" title="PDF yüklenmemiş"><span class="badge-dot"></span>PDF yok</span>'}
+                ${a.hasFullText
+                  ? '<span class="badge badge-info" title="HTML tam metin yüklü"><span class="badge-dot"></span>Tam metin</span>'
+                  : '<span class="badge badge-warning" title="Tam metin yüklenmemiş — Tam Metin sekmesinden ekleyin"><span class="badge-dot"></span>Tam metin yok</span>'}
+              </div>
+            </td>
+            <td class="px-4 py-3 text-xs" style="color:var(--text-faint)">${esc(a.doi || '—')}</td>
+            <td class="px-4 py-3 text-right whitespace-nowrap">
+              <a href="#/articles-in-press/${a.id}/edit?tab=fulltext" class="btn btn-ghost btn-sm" title="Doğrudan Tam Metin sekmesini aç">Tam Metin</a>
+              <a href="#/articles-in-press/${a.id}/edit" class="btn btn-ghost btn-sm">Düzenle</a>
+              <button class="btn btn-ghost btn-sm" style="color:var(--danger)" onclick="deleteAip(${a.id})">Sil</button>
             </td>
           </tr>`).join('')}</tbody>
       </table>
@@ -2010,21 +2677,6 @@ route('/articles-in-press', async (el) => {
       c.addEventListener('change', updateAipSelection);
     });
   }
-
-  // Drop zone for in-press import
-  const dropZone = document.getElementById('aip-drop-zone');
-  const input = document.getElementById('aip-xml-input');
-  if (dropZone && input) {
-    dropZone.onclick = () => input.click();
-    dropZone.ondragover = (e) => { e.preventDefault(); dropZone.classList.add('border-teal-400', 'bg-teal-50'); };
-    dropZone.ondragleave = () => dropZone.classList.remove('border-teal-400', 'bg-teal-50');
-    dropZone.ondrop = (e) => { e.preventDefault(); dropZone.classList.remove('border-teal-400', 'bg-teal-50'); handleAipXmlFiles(e.dataTransfer.files); };
-    input.onchange = () => handleAipXmlFiles(input.files);
-  }
-});
-
-function showAipImport() {
-  document.getElementById('aip-import-zone').classList.toggle('hidden');
 }
 
 function updateAipSelection() {
@@ -2058,48 +2710,6 @@ async function doPublishAip() {
   } catch (err) { toast(err.message, 'error'); }
 }
 
-async function handleAipXmlFiles(files) {
-  const results = document.getElementById('aip-parsed-results');
-  results.innerHTML = '<div class="text-center py-4 text-gray-500">İşleniyor...</div>';
-
-  try {
-    const parsed = await API.uploadFiles('/jats/parse-batch', files, 'xml');
-    const successful = parsed.filter((r) => r.success);
-    const failed = parsed.filter((r) => !r.success);
-
-    let html = '';
-    if (failed.length) {
-      html += failed.map((r) => `<div class="bg-red-50 border border-red-200 rounded-lg p-3 text-sm"><strong class="text-red-700">${esc(r.filename)}</strong>: ${esc(r.error)}</div>`).join('');
-    }
-    if (successful.length) {
-      html += `<div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-        <span class="text-sm font-medium text-gray-700">${successful.length} makale parse edildi</span>
-        <button onclick="importAipBatch()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Baskıda Olarak Aktar</button>
-      </div>`;
-      html += `<div class="space-y-1">${successful.map((r) => `
-        <div class="text-sm px-3 py-1.5"><span class="px-2 py-0.5 bg-gray-200 rounded text-xs">${esc(r.article.type)}</span> <span class="ml-1">${esc(r.article.title)}</span></div>`).join('')}
-      </div>`;
-    }
-    results.innerHTML = html;
-    window._aipParsedArticles = parsed;
-  } catch (err) {
-    results.innerHTML = `<div class="bg-red-50 text-red-700 p-4 rounded-lg">${esc(err.message)}</div>`;
-  }
-}
-
-async function importAipBatch() {
-  const parsed = window._aipParsedArticles;
-  if (!parsed) return;
-  const toImport = parsed.filter((r) => r.success).map((r) => r.article);
-  if (!toImport.length) return;
-
-  try {
-    const result = await API.post('/jats/import-in-press', { parsedArticles: toImport });
-    if (result.totalImported) toast(`${result.totalImported} makale baskıda olarak eklendi`);
-    handleRoute();
-  } catch (err) { toast(err.message, 'error'); }
-}
-
 async function deleteAip(id) {
   if (!await confirmAction('Bu baskıda makaleyi silmek istediğinizden emin misiniz?')) return;
   try {
@@ -2110,78 +2720,194 @@ async function deleteAip(id) {
 }
 
 // --- Manuel AIP (baskıda makale) ekleme/düzenleme ---
-route('/articles-in-press/new', (el) => renderAipForm(el, null));
-route('/articles-in-press/:id/edit', async (el, { id }) => {
+route('/articles-in-press/new', (el, { query } = {}) => renderAipForm(el, null, { defaultTab: query?.get('tab') }));
+route('/articles-in-press/:id/edit', async (el, { id, query }) => {
   try {
     const article = await API.get(`/articles-in-press/${id}`);
-    renderAipForm(el, article);
+    renderAipForm(el, article, { defaultTab: query?.get('tab') });
   } catch (err) {
     el.innerHTML = `<div class="bg-red-50 text-red-700 p-4 rounded-lg">${esc(err.message)}</div>`;
   }
 });
 
-function renderAipForm(el, article) {
+function renderAipForm(el, article, opts = {}) {
+  const defaultTab = ['general', 'authors', 'abstract', 'fulltext', 'media'].includes(opts.defaultTab) ? opts.defaultTab : 'general';
   const isNew = !article;
   const a = article || { id: '', type: '', title: '', authors: [], abstract: '', abstractHtml: '', keywords: [], doi: '', received: '', accepted: '', pmid: '', pdfUrl: '' };
 
   el.innerHTML = `
-    <div class="flex items-center justify-between mb-6">
-      <h1 class="text-2xl font-bold text-gray-900">${isNew ? 'Baskıda Yeni Makale (Manuel)' : `Baskıda Makale #${a.id}`}</h1>
-      <div class="flex gap-2">
-        <a href="#/articles-in-press" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm">Geri</a>
-        <button onclick="saveAip(${isNew ? 'true' : 'false'})" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet<span data-dirty-indicator class="text-amber-200"></span></button>
-      </div>
-    </div>
+    ${pageHeader({
+      eyebrow: 'Baskıda Makaleler',
+      title: isNew ? 'Yeni Baskıda Makale' : `Baskıda Makale #${a.id}`,
+      subtitle: isNew ? 'Manuel olarak ekleniyor — yayına alındığında ana listeye geçecek.' : (a.title ? esc(a.title) : ''),
+      actions: `
+        <a href="#/articles-in-press" class="btn btn-secondary">Geri</a>
+        ${!isNew ? `<a href="/site/article.html?id=${a.id}&source=aip" target="_blank" rel="noopener" class="btn btn-secondary" title="Public sitedeki halini yeni sekmede aç">Önizleme ↗</a>` : ''}
+        <button onclick="saveAip(${isNew ? 'true' : 'false'})" class="btn btn-primary">Kaydet<span data-dirty-indicator class="text-amber-200"></span></button>
+      `,
+    })}
 
-    <div class="bg-white rounded-xl border p-6 space-y-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div><label class="block text-sm font-medium text-gray-700 mb-1">Tür <span class="text-red-500">*</span></label>
-          <input id="aipf-type" value="${esc(a.type)}" class="w-full px-3 py-2 border rounded-lg text-sm" list="aipf-type-list">
-          <datalist id="aipf-type-list"></datalist>
-        </div>
-        <div><label class="block text-sm font-medium text-gray-700 mb-1">DOI</label>
-          <input id="aipf-doi" value="${esc(a.doi)}" class="w-full px-3 py-2 border rounded-lg text-sm">
-        </div>
-      </div>
-      <div><label class="block text-sm font-medium text-gray-700 mb-1">Başlık <span class="text-red-500">*</span></label>
-        <input id="aipf-title" value="${esc(a.title)}" class="w-full px-3 py-2 border rounded-lg text-sm">
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div><label class="block text-sm font-medium text-gray-700 mb-1">Alındığı Tarih</label>
-          <input id="aipf-received" type="date" value="${a.received || ''}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
-        <div><label class="block text-sm font-medium text-gray-700 mb-1">Kabul Tarihi</label>
-          <input id="aipf-accepted" type="date" value="${a.accepted || ''}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
-        <div><label class="block text-sm font-medium text-gray-700 mb-1">PMID</label>
-          <input id="aipf-pmid" value="${esc(a.pmid || '')}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+    <div class="card">
+      <!-- Tabs -->
+      <div class="flex border-b overflow-x-auto" style="border-color:var(--border-soft)">
+        <button class="aip-tab-btn px-5 py-3 text-sm font-medium border-b-2 transition-colors" data-tab="general">Genel</button>
+        <button class="aip-tab-btn px-5 py-3 text-sm font-medium border-b-2 transition-colors" data-tab="authors">Yazarlar</button>
+        <button class="aip-tab-btn px-5 py-3 text-sm font-medium border-b-2 transition-colors" data-tab="abstract">Özet</button>
+        <button class="aip-tab-btn px-5 py-3 text-sm font-medium border-b-2 transition-colors" data-tab="fulltext">Tam Metin</button>
+        ${!isNew ? `<button class="aip-tab-btn px-5 py-3 text-sm font-medium border-b-2 transition-colors" data-tab="media">Dosyalar</button>` : ''}
       </div>
 
-      <div>
-        <div class="flex items-center justify-between mb-2">
-          <label class="block text-sm font-medium text-gray-700">Yazarlar</label>
-          <button type="button" onclick="addAipAuthor()" class="text-xs px-3 py-1.5 bg-blue-50 text-blue-700 rounded hover:bg-blue-100">+ Yazar Ekle</button>
+      <!-- General -->
+      <div class="aip-tab-panel p-6" data-tab="general">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><label class="label">Tür <span style="color:var(--danger)">*</span></label>
+            <input id="aipf-type" value="${esc(a.type)}" class="input" list="aipf-type-list">
+            <datalist id="aipf-type-list"></datalist>
+          </div>
+          <div><label class="label">DOI</label>
+            <input id="aipf-doi" value="${esc(a.doi)}" class="input">
+          </div>
         </div>
+        <div class="mt-4"><label class="label">Başlık <span style="color:var(--danger)">*</span></label>
+          <input id="aipf-title" value="${esc(a.title)}" class="input">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+          <div><label class="label">Alındığı Tarih</label>
+            <input id="aipf-received" type="date" value="${a.received || ''}" class="input"></div>
+          <div><label class="label">Kabul Tarihi</label>
+            <input id="aipf-accepted" type="date" value="${a.accepted || ''}" class="input"></div>
+          <div><label class="label">PMID</label>
+            <input id="aipf-pmid" value="${esc(a.pmid || '')}" class="input"></div>
+        </div>
+        <div class="mt-4"><label class="label">Anahtar Kelimeler <span class="font-normal" style="color:var(--text-faint)">(virgül ile)</span></label>
+          <input id="aipf-keywords" value="${esc((a.keywords || []).join(', '))}" class="input">
+        </div>
+      </div>
+
+      <!-- Authors -->
+      <div class="aip-tab-panel p-6 hidden" data-tab="authors">
         <div id="aipf-authors" class="space-y-2">${(a.authors || []).map((au) => aipAuthorRow(au)).join('')}</div>
+        <button type="button" onclick="addAipAuthor()" class="btn btn-secondary btn-sm mt-3">+ Yazar Ekle</button>
       </div>
 
-      <div>
-        <label class="block text-sm font-medium text-gray-700 mb-1">Özet (HTML destekli)</label>
-        <textarea id="aipf-abstractHtml" rows="8" class="w-full px-3 py-2 border rounded-lg text-sm font-mono">${esc(a.abstractHtml || a.abstract || '')}</textarea>
+      <!-- Abstract -->
+      <div class="aip-tab-panel p-6 hidden" data-tab="abstract">
+        <label class="label">Özet</label>
+        ${htmlEditor({ prefix: 'aip-abs', initialHtml: a.abstractHtml || a.abstract || '', rows: 8, placeholder: 'Özet metnini buraya girin', variant: 'compact', minHeight: '180px' })}
       </div>
 
-      <div><label class="block text-sm font-medium text-gray-700 mb-1">Anahtar Kelimeler (virgül ile)</label>
-        <input id="aipf-keywords" value="${esc((a.keywords || []).join(', '))}" class="w-full px-3 py-2 border rounded-lg text-sm">
+      <!-- Full Text -->
+      <div class="aip-tab-panel p-6 hidden" data-tab="fulltext">
+        <div class="flex items-center justify-between mb-3">
+          <div>
+            <h3 class="text-sm font-semibold" style="color:var(--text-strong)">Tam Metin</h3>
+            <p class="text-xs mt-0.5" style="color:var(--text-muted)">Makale yayınlandığında aynı ID ile ana listeye aktarılır.</p>
+          </div>
+          <div class="flex gap-2">
+            <label class="btn btn-secondary btn-sm cursor-pointer">
+              HTML Dosyadan Yükle <input id="aipf-fulltext-file" type="file" accept=".html,.htm" class="hidden">
+            </label>
+            ${!isNew ? `<button type="button" onclick="saveAipFullText(${a.id})" class="btn btn-primary btn-sm">Tam Metni Kaydet</button>` : ''}
+          </div>
+        </div>
+        ${isNew ? `<div class="card card-padded mb-3 flex items-start gap-2" style="background:var(--brand-soft);border-color:var(--brand-soft-2)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--brand);flex-shrink:0;margin-top:2px"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+          <div class="text-xs" style="color:var(--text-strong)">Yeni makale oluşturulurken tam metin de buradan yüklenebilir. Sayfa üstündeki <strong>Kaydet</strong> butonuna basıldığında makale ile birlikte otomatik kaydedilir.</div>
+        </div>` : ''}
+        ${htmlEditor({ prefix: 'aip-ft', initialHtml: '', rows: 20, placeholder: 'Tam metin henüz yüklü değil. Doğrudan yazın, yapıştırın veya yukarıdaki "HTML Dosyadan Yükle" ile bir .html dosyası seçin.', variant: 'full', minHeight: '400px' })}
+        <div id="aipf-fulltext-status" class="text-xs mt-2" style="color:var(--text-muted)"></div>
       </div>
 
       ${!isNew ? `
-      <div class="border-t pt-4">
-        <h3 class="text-sm font-semibold text-gray-700 mb-2">PDF</h3>
-        ${a.pdfUrl ? `<div class="mb-2 text-sm text-green-600">Mevcut: <code class="text-xs bg-gray-100 px-2 py-1 rounded">${esc(a.pdfUrl)}</code></div>` : '<p class="text-sm text-amber-600 mb-2">PDF yüklenmemiş</p>'}
-        <label class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm cursor-pointer inline-block">
-          PDF Yükle <input id="aipf-pdf-file" type="file" accept=".pdf" class="hidden">
-        </label>
-        <div id="aipf-pdf-results" class="mt-2"></div>
-      </div>` : '<p class="text-xs text-gray-500 border-t pt-4">Makale kaydedildikten sonra PDF yükleyebilirsiniz.</p>'}
+      <!-- Files tab (compact + premium, mirrors Article Edit Files tab) -->
+      <div class="aip-tab-panel p-6 hidden" data-tab="media">
+        <div class="space-y-5">
+
+          <!-- PDF: single-line row -->
+          <section class="flex items-center gap-3 flex-wrap" style="padding:10px 12px;background:var(--bg-page);border:1px solid var(--border-soft);border-radius:var(--radius)">
+            <div class="text-sm font-semibold" style="color:var(--text-strong);min-width:32px">PDF</div>
+            ${a.pdfUrl
+              ? `<span class="badge badge-success"><span class="badge-dot"></span>Mevcut</span>
+                 <code class="text-xs px-2 py-1 rounded truncate" style="background:var(--bg-card);color:var(--text-muted);flex:1;min-width:0">${esc(a.pdfUrl)}</code>`
+              : `<span class="badge badge-warning"><span class="badge-dot"></span>Yüklenmemiş</span>
+                 <span class="text-xs" style="color:var(--text-muted);flex:1">PDF dosyası eklenmemiş.</span>`}
+            <label class="btn btn-secondary btn-sm cursor-pointer flex-shrink-0">
+              ${a.pdfUrl ? 'Değiştir' : 'PDF Yükle'} <input id="f-pdf-file" type="file" accept=".pdf" class="hidden">
+            </label>
+          </section>
+          <div id="f-pdf-results"></div>
+          <span id="f-pdf-count" class="hidden"></span>
+          <span id="f-fig-count" class="hidden"></span>
+          <span id="f-supp-count" class="hidden"></span>
+
+          <!-- Figures wizard -->
+          <section>
+            <div class="flex items-center justify-between gap-3 mb-2 flex-wrap">
+              <div class="flex items-baseline gap-3">
+                <h3 class="text-sm font-semibold" style="color:var(--text-strong)">Figürler</h3>
+                <span id="f-fig-inline-stats" class="text-xs" style="color:var(--text-muted)">yükleniyor…</span>
+              </div>
+              <div class="flex gap-2 flex-shrink-0">
+                <label class="btn btn-secondary btn-sm cursor-pointer">
+                  Çoklu Yükle <input id="f-fig-files" type="file" accept="image/*,.tif,.tiff" multiple class="hidden">
+                </label>
+                <button type="button" onclick="applyExistingFigures(${a.id})" class="btn btn-primary btn-sm" title="Yüklü figürleri tam metindeki placeholder'lar ile eşler">Tam Metne Uygula</button>
+              </div>
+            </div>
+            <div id="f-fig-results" class="mb-2"></div>
+            <div id="f-fig-wizard">
+              <div class="flex items-center justify-center py-6" style="color:var(--text-faint)">
+                <svg class="w-4 h-4 mr-2 animate-spin" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" opacity="0.25"/><path fill="currentColor" d="M4 12a8 8 0 018-8V0C5.4 0 0 5.4 0 12h4z"/></svg>
+                <span class="text-xs">Figür durumu yükleniyor…</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Ek Materyaller (Dosyalar + Linkler tek panelde) -->
+          <section>
+            <div class="flex items-center justify-between gap-3 mb-2 flex-wrap">
+              <h3 class="text-sm font-semibold" style="color:var(--text-strong)">Ek Materyaller (Supplementary Materials)</h3>
+              <div class="flex gap-2 flex-shrink-0">
+                <label class="btn btn-secondary btn-sm cursor-pointer">
+                  Dosya Yükle <input id="f-supp-files" type="file" multiple class="hidden">
+                </label>
+                <button type="button" onclick="addSuppLinkRow()" class="btn btn-secondary btn-sm">+ URL Ekle</button>
+              </div>
+            </div>
+            <div class="banner banner-info mb-2" style="padding:8px 10px;font-size:12px">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <div class="banner-body" style="margin-top:0;line-height:1.5">
+                Bu makaleye ait ek materyalleri (tablolar, veri setleri, ek PDF'ler vb.) buradan yönetin.
+                <strong>Dosya Yükle</strong> ile sunucuya yükleyin veya <strong>+ URL Ekle</strong> ile harici bir bağlantı ekleyin.
+                Her satırın yanındaki <strong>kopyala</strong> ikonuyla dosyanın paylaşılabilir tam URL'sini panoya alıp grafik ekibine iletebilirsiniz.
+                Eklenen materyaller makalenin sitedeki "Supplementary Materials" bölümünde otomatik listelenir.
+              </div>
+            </div>
+            <div id="f-supp-results" class="mb-2"></div>
+            <div id="f-supp-links" class="space-y-2">
+              ${(a.supplementary || []).map((sm) => suppLinkRow(sm)).join('')}
+            </div>
+            ${!(a.supplementary || []).length ? `<div id="f-supp-empty" class="text-xs text-center py-3" style="color:var(--text-faint)">Henüz ek materyal yok. Dosya yükleyin veya harici bir URL ekleyin.</div>` : ''}
+          </section>
+        </div>
+      </div>` : ''}
     </div>`;
+
+  // AIP tabs interaction (scoped — does not conflict with article tabs)
+  const aipTabBtns = el.querySelectorAll('.aip-tab-btn');
+  function setActiveTab(name) {
+    aipTabBtns.forEach((btn) => {
+      const active = btn.dataset.tab === name;
+      btn.style.borderColor = active ? 'var(--brand)' : 'transparent';
+      btn.style.color = active ? 'var(--brand)' : 'var(--text-muted)';
+    });
+    el.querySelectorAll('.aip-tab-panel').forEach((p) => p.classList.toggle('hidden', p.dataset.tab !== name));
+  }
+  aipTabBtns.forEach((btn) => btn.addEventListener('click', () => setActiveTab(btn.dataset.tab)));
+  // Fall back to 'general' if the requested tab doesn't exist on this form (e.g. 'media' is not
+  // rendered for new AIPs)
+  const tabExists = !!el.querySelector(`.aip-tab-btn[data-tab="${defaultTab}"]`);
+  setActiveTab(tabExists ? defaultTab : 'general');
 
   API.get('/article-types').then((types) => {
     const dl = document.getElementById('aipf-type-list');
@@ -2189,15 +2915,16 @@ function renderAipForm(el, article) {
   }).catch(() => {});
 
   if (!isNew) {
-    const pdfInput = document.getElementById('aipf-pdf-file');
+    // ── PDF upload (Files tab) ──
+    const pdfInput = document.getElementById('f-pdf-file');
     if (pdfInput) {
       pdfInput.addEventListener('change', async () => {
         if (!pdfInput.files[0]) return;
         const file = pdfInput.files[0];
-        const prog = renderUploadProgress('aipf-pdf-results', [file], 'PDF yükleniyor');
+        const prog = renderUploadProgress('f-pdf-results', [file], 'PDF yükleniyor');
         try {
           const result = await API.uploadFileWithProgress('/media/upload/pdf', file, 'pdf', { articleId: String(a.id) }, prog.update);
-          prog.complete(`<div class="bg-green-50 border border-green-200 text-green-700 p-3 rounded-lg text-sm">PDF yüklendi: <code>${esc(result.pdfUrl || '')}</code></div>`);
+          prog.complete(`<div class="banner banner-success" style="padding:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div class="banner-body" style="margin-top:0">PDF yüklendi: <code>${esc(result.pdfUrl || '')}</code></div></div>`);
           toast('PDF yüklendi');
           await API.put(`/articles-in-press/${a.id}`, { pdfUrl: result.pdfUrl, localPdfUrl: result.pdfUrl });
           handleRoute();
@@ -2207,14 +2934,137 @@ function renderAipForm(el, article) {
         }
       });
     }
+
+    // ── Figure batch upload (auto-apply after upload) ──
+    const figInput = document.getElementById('f-fig-files');
+    if (figInput) {
+      figInput.addEventListener('change', async () => {
+        if (!figInput.files.length) return;
+        const figResults = document.getElementById('f-fig-results');
+        const prog = renderUploadProgress(figResults, figInput.files, 'Figürler yükleniyor');
+        try {
+          const result = await API.uploadFilesWithProgress(`/media/upload/figures/${a.id}`, figInput.files, 'figures', {}, prog.update);
+          prog.complete(`<div class="banner banner-success" style="padding:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><div class="banner-title">${result.uploaded.length} figür yüklendi</div><div class="banner-body">Otomatik eşleştirme deneniyor…</div></div></div>`);
+          window._articleFigureUpload = result;
+          await applyExistingFigures(a.id);
+          loadArticleAssets(a.id, a);
+        } catch (err) {
+          prog.fail(err.message);
+          toast(err.message, 'error');
+        }
+      });
+    }
+
+    // ── Per-placeholder single-file upload (called by wizard "Dosya seç" buttons) ──
+    // Uses same global uploadFigureForPlaceholder function as Article Edit
+
+    // ── Supplementary upload ──
+    const suppInput = document.getElementById('f-supp-files');
+    if (suppInput) {
+      suppInput.addEventListener('change', async () => {
+        if (!suppInput.files.length) return;
+        const suppResults = document.getElementById('f-supp-results');
+        const prog = renderUploadProgress(suppResults, suppInput.files, 'Ek materyaller yükleniyor');
+        try {
+          const result = await API.uploadFilesWithProgress(`/media/upload/supplementary/${a.id}`, suppInput.files, 'files', {}, prog.update);
+          prog.complete(`<div class="banner banner-success" style="padding:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><div class="banner-title">${result.uploaded.length} dosya yüklendi${(result.added || []).length ? ' ve ek materyal listesine eklendi' : ''}</div><div class="banner-body">${result.uploaded.map((f) => `<code>${esc(f.url)}</code>`).join('<br>')}</div></div></div>`);
+          appendSuppRows(result.added);
+          loadArticleAssets(a.id, a);
+        } catch (err) {
+          prog.fail(err.message);
+          toast(err.message, 'error');
+        }
+      });
+    }
+
+    // Load asset summary + full text + figure wizard
+    loadArticleAssets(a.id, a);
+    loadAipFullTextIntoEditor(a.id);
+  }
+
+  // Full-text: read from local .html file into AIP editor (works for new & existing)
+  const ftFileInput = document.getElementById('aipf-fulltext-file');
+  if (ftFileInput) {
+    ftFileInput.addEventListener('change', async () => {
+      const f = ftFileInput.files?.[0];
+      if (!f) return;
+      try {
+        const text = await f.text();
+        const cleaned = sanitizeUploadedHtml(text);
+        setHtmlEditorMode('aip-ft', 'visual');
+        setHtmlEditorContent('aip-ft', cleaned);
+        markDirty();
+        const status = document.getElementById('aipf-fulltext-status');
+        if (status) status.textContent = `"${f.name}" yüklendi (${cleaned.length.toLocaleString('tr-TR')} karakter). Kaydetmeyi unutmayın.`;
+        toast(isNew
+          ? 'Tam metin okundu. Sayfa üstündeki "Kaydet" butonuna basın.'
+          : 'Tam metin dosyadan okundu. Lütfen "Tam Metni Kaydet" butonuna basın.');
+      } catch (err) { toast(`Dosya okunamadı: ${err.message}`, 'error'); }
+    });
   }
 
   clearDirty();
   el.addEventListener('input', markDirty);
 }
 
+// Load existing full-text HTML into the AIP editor (prefix 'aip-ft')
+async function loadAipFullTextIntoEditor(articleId) {
+  const visual = document.getElementById('aip-ft-visual');
+  const status = document.getElementById('aipf-fulltext-status');
+  if (!visual) return;
+  try {
+    const data = await API.get(`/articles/${articleId}/fulltext`);
+    setHtmlEditorContent('aip-ft', data.html || '');
+    // Normalise Word-export references and stamp media IDs RIGHT after the
+    // content lands in the editor — otherwise the user has to open the
+    // Atıf picker before the bubble's lazy normalisation runs, and the
+    // references look like clipped MsoListParagraph junk in the meantime.
+    // We suppress dirty marking during this phase because the user hasn't
+    // edited anything yet; only their own edits should produce "unsaved
+    // changes" prompts.
+    if (data.html) {
+      _suppressDirty = true;
+      try {
+        _normalizeMsoReferenceList(visual);
+        _ensureMediaIds(visual);
+        _autoLinkInEditor(visual);
+      } finally {
+        _suppressDirty = false;
+      }
+    }
+    if (status) {
+      status.textContent = data.html
+        ? `Yüklü tam metin uzunluğu: ${data.html.length.toLocaleString('tr-TR')} karakter.`
+        : 'Tam metin henüz mevcut değil.';
+    }
+  } catch (err) {
+    if (status) status.textContent = `Tam metin okunamadı: ${err.message}`;
+  }
+}
+
+// Manual save for AIP full text (uses shared /articles/:id/fulltext endpoint)
+async function saveAipFullText(articleId) {
+  const visual = document.getElementById('aip-ft-visual');
+  const status = document.getElementById('aipf-fulltext-status');
+  if (!visual) return;
+  const html = getHtmlEditorContent('aip-ft');
+  if (!html.trim()) {
+    if (!await confirmAction('Tam metin boş. Yine de kaydetmek istiyor musunuz?')) return;
+  }
+  try {
+    await API.put(`/articles/${articleId}/fulltext`, { html });
+    clearDirty();
+    if (status) status.textContent = `Kaydedildi (${html.length.toLocaleString('tr-TR')} karakter).`;
+    toast('Tam metin kaydedildi');
+  } catch (err) {
+    if (status) status.textContent = `Kaydetme hatası: ${err.message}`;
+    toast(err.message, 'error');
+  }
+}
+
 function aipAuthorRow(au = {}) {
-  return `<div class="aipf-author-row flex gap-2 items-start p-2 bg-gray-50 rounded-lg">
+  return `<div class="aipf-author-row flex gap-2 items-start p-2 bg-gray-50 rounded-lg" ondragend="this.removeAttribute('draggable')">
+    <span class="row-grip" title="Sıralamak için tutup sürükleyin" aria-label="Sürükle" onmousedown="this.closest('.aipf-author-row').setAttribute('draggable','true')">${ROW_GRIP_SVG}</span>
     <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-2">
       <input class="aipf-au-name px-2 py-1.5 border rounded text-sm" placeholder="Ad Soyad" value="${esc(au.name || '')}">
       <input class="aipf-au-aff px-2 py-1.5 border rounded text-sm" placeholder="Kurum" value="${esc(au.affiliation || '')}">
@@ -2242,8 +3092,18 @@ async function saveAip(isNew) {
     authors.push({ name, affiliation, orcid });
   });
 
-  const abstractHtml = getVal('aipf-abstractHtml');
+  const abstractHtml = getHtmlEditorContent('aip-abs');
   const abstract = abstractHtml.replace(/<[^>]+>/g, '').trim();
+
+  // Collect supplementary URL entries from the Files tab (same as Article Edit)
+  const supplementary = [];
+  document.querySelectorAll('.supp-link-row').forEach((row, i) => {
+    const label = row.querySelector('.sl-label').value.trim();
+    const href = row.querySelector('.sl-href').value.trim();
+    const caption = row.querySelector('.sl-caption').value.trim();
+    if (!label && !href) return;
+    supplementary.push({ id: `supp${i + 1}`, label, href, caption, mimeType: '' });
+  });
 
   const data = {
     type: getVal('aipf-type'),
@@ -2257,6 +3117,7 @@ async function saveAip(isNew) {
     previewText: abstract.slice(0, 360),
     keywords: getVal('aipf-keywords').split(',').map((k) => k.trim()).filter(Boolean),
     authors,
+    supplementary,
   };
 
   if (!data.title) { toast('Başlık zorunludur', 'error'); return; }
@@ -2265,12 +3126,32 @@ async function saveAip(isNew) {
   try {
     if (isNew) {
       const result = await API.post('/articles-in-press', data);
+      // Persist full text under the new AIP id if entered
+      const ftHtml = document.getElementById('aip-ft-visual') ? getHtmlEditorContent('aip-ft') : '';
+      if (result?.id && ftHtml) {
+        try {
+          await API.put(`/articles/${result.id}/fulltext`, { html: ftHtml });
+        } catch (ftErr) {
+          toast(`Makale oluşturuldu ama tam metin kaydedilemedi: ${ftErr.message}`, 'error');
+        }
+      }
       clearDirty();
       toast('Baskıda makale oluşturuldu');
       navigate(`#/articles-in-press/${result.id}/edit`);
     } else {
       const id = window.location.hash.match(/#\/articles-in-press\/(\d+)\/edit/)?.[1];
       await API.put(`/articles-in-press/${id}`, data);
+      // Also persist full text via shared endpoint
+      if (document.getElementById('aip-ft-visual') && id) {
+        const ftHtml = getHtmlEditorContent('aip-ft');
+        try {
+          await API.put(`/articles/${id}/fulltext`, { html: ftHtml });
+          const status = document.getElementById('aipf-fulltext-status');
+          if (status) status.textContent = `Kaydedildi (${ftHtml.length.toLocaleString('tr-TR')} karakter).`;
+        } catch (ftErr) {
+          toast(`Genel veriler kaydedildi ama tam metin kaydedilemedi: ${ftErr.message}`, 'error');
+        }
+      }
       clearDirty();
       toast('Baskıda makale güncellendi');
     }
@@ -2281,24 +3162,24 @@ async function saveAip(isNew) {
 route('/news', async (el) => {
   const news = await API.get('/news');
   el.innerHTML = `
-    <div class="flex items-center justify-between mb-6">
-      <h1 class="text-2xl font-bold text-gray-900">Haberler <span class="text-gray-400 text-lg font-normal">(${news.length})</span></h1>
-      <a href="#/news/new" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Yeni Haber</a>
+    <div class="page-header">
+      <h1 class="page-title">Haberler <span class="text-gray-400 text-lg font-normal">(${news.length})</span></h1>
+      <a href="#/news/new" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Yeni Haber</a>
     </div>
-    <div class="bg-white rounded-xl border overflow-hidden">
-      <table class="w-full text-sm">
-        <thead class="bg-gray-50"><tr>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">ID</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">Başlık</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">Kategori</th>
-          <th class="text-left px-4 py-3 font-medium text-gray-500">Öne Çıkan</th>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th>ID</th>
+          <th>Başlık</th>
+          <th>Kategori</th>
+          <th>Öne Çıkan</th>
           <th class="px-4 py-3"></th>
         </tr></thead>
         <tbody>${news.map((n) => `
-          <tr class="border-t hover:bg-gray-50 cursor-pointer" onclick="navigate('#/news/${n.id}')">
+          <tr class="cursor-pointer" onclick="navigate('#/news/${n.id}')">
             <td class="px-4 py-3 text-gray-400">${n.id}</td>
             <td class="px-4 py-3 max-w-md truncate">${esc(n.title)}</td>
-            <td class="px-4 py-3"><span class="px-2 py-0.5 bg-gray-100 rounded text-xs">${esc(n.category || '')}</span></td>
+            <td class="px-4 py-3">${n.category ? `<span class="badge ${badgeColorFor(n.category)}">${esc(n.category)}</span>` : '<span class="text-xs" style="color:var(--text-faint)">—</span>'}</td>
             <td class="px-4 py-3">${n.featured ? '<span class="text-teal-600">Evet</span>' : '-'}</td>
             <td class="px-4 py-3"><button class="text-red-500 hover:text-red-700 text-xs" onclick="event.stopPropagation(); deleteNews(${n.id})">Sil</button></td>
           </tr>`).join('')}</tbody>
@@ -2324,27 +3205,42 @@ route('/news/:id', async (el, { id }) => {
 
 function renderNewsForm(el, item) {
   const isNew = !item;
-  const n = item || { title: '', excerpt: '', content: '', category: 'News', image: '', date: '', featured: false };
+  // Default new news to today's date so it ends up at the top of homepage/news list
+  // (renderNews falls back to id-desc only when date is missing — but real dates
+  // sort properly across items, so we set a sensible default).
+  const todayIso = new Date().toISOString().slice(0, 10);
+  const n = item || { title: '', excerpt: '', content: '', category: 'News', image: '', date: todayIso, featured: false };
 
   el.innerHTML = `
-    <div class="flex items-center justify-between mb-6">
-      <h1 class="text-2xl font-bold text-gray-900">${isNew ? 'Yeni Haber' : `Haber #${n.id}`}</h1>
+    <div class="page-header">
+      <h1 class="page-title">${isNew ? 'Yeni Haber' : `Haber #${n.id}`}</h1>
       <div class="flex gap-2">
-        <a href="#/news" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm">Geri</a>
-        ${!isNew ? `<a href="/site/news-article.html?id=${n.id}" target="_blank" rel="noopener" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 text-sm font-medium">Önizle</a>` : ''}
-        <button onclick="saveNews(${isNew ? 'null' : n.id})" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet<span data-dirty-indicator class="text-amber-200"></span></button>
+        <a href="#/news" class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm">Geri</a>
+        ${!isNew ? `<a href="/site/news-article.html?id=${n.id}" target="_blank" rel="noopener" class="px-4 py-2 bg-slate-50 text-slate-700 rounded-lg hover:bg-slate-100 text-sm font-medium">Önizle</a>` : ''}
+        <button onclick="saveNews(${isNew ? 'null' : n.id})" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Kaydet<span data-dirty-indicator class="text-amber-200"></span></button>
       </div>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <!-- Main form -->
       <div class="lg:col-span-2 space-y-4">
-        <div class="bg-white rounded-xl border p-6 space-y-4">
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">Başlık</label><input id="fn-title" value="${esc(n.title)}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">Özet</label><textarea id="fn-excerpt" rows="3" class="w-full px-3 py-2 border rounded-lg text-sm">${esc(n.excerpt)}</textarea></div>
+        <div class="card space-y-4" style="padding:24px">
+          <div><label class="label">Başlık</label><input id="fn-title" value="${esc(n.title)}" class="input"></div>
+          <div><label class="label">Özet</label><textarea id="fn-excerpt" rows="3" class="input">${esc(n.excerpt)}</textarea></div>
           <div>
-            <div class="flex items-center justify-between mb-1">
+            <div class="flex items-center justify-between mb-2">
               <label class="block text-sm font-medium text-gray-700">İçerik</label>
-              <button type="button" id="fn-content-toggle" onclick="toggleNewsEditor()" class="text-xs text-gray-500 hover:text-gray-700 px-2 py-1 rounded hover:bg-gray-100">HTML Kaynağı</button>
+              <div id="fn-content-modeswitch" class="inline-flex items-center bg-gray-100 rounded-lg p-0.5 text-xs font-medium select-none" role="tablist" aria-label="Düzenleme modu">
+                <button type="button" data-mode="visual" onclick="setNewsEditorMode('visual')" role="tab" aria-selected="true"
+                  class="mode-btn mode-visual px-3 py-1.5 rounded-md flex items-center gap-1.5 transition-all bg-white shadow-sm text-teal-700">
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h10M4 18h16"/></svg>
+                  <span>Görsel</span>
+                </button>
+                <button type="button" data-mode="source" onclick="setNewsEditorMode('source')" role="tab" aria-selected="false"
+                  class="mode-btn mode-source px-3 py-1.5 rounded-md flex items-center gap-1.5 transition-all text-gray-500 hover:text-gray-800">
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l-4-4 4-4M14 4l4 4-4 4"/></svg>
+                  <span>HTML</span>
+                </button>
+              </div>
             </div>
             <!-- Toolbar -->
             <div id="fn-content-toolbar" class="flex flex-wrap gap-0.5 border border-b-0 rounded-t-lg bg-gray-50 px-2 py-1.5">
@@ -2373,14 +3269,14 @@ function renderNewsForm(el, item) {
       <!-- Sidebar: image + meta -->
       <div class="space-y-4">
         <!-- Image -->
-        <div class="bg-white rounded-xl border p-5">
+        <div class="card card-padded">
           <label class="block text-sm font-medium text-gray-700 mb-2">Görsel</label>
           <div id="fn-image-preview" class="mb-3 rounded-lg overflow-hidden bg-gray-100 ${n.image ? '' : 'hidden'}">
             <img id="fn-image-preview-img" src="${n.image ? '../' + esc(n.image) : ''}" alt="" class="w-full h-40 object-cover" onerror="this.closest('#fn-image-preview').classList.add('hidden')">
           </div>
           <div class="flex items-center gap-2">
             <input id="fn-image" value="${esc(n.image || '')}" placeholder="images/..." class="flex-1 px-3 py-2 border rounded-lg text-sm" oninput="updateNewsImagePreview()">
-            <label class="px-3 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm cursor-pointer whitespace-nowrap">
+            <label class="px-3 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm cursor-pointer whitespace-nowrap">
               Yükle <input id="fn-image-file" type="file" accept="image/*" class="hidden">
             </label>
           </div>
@@ -2388,9 +3284,9 @@ function renderNewsForm(el, item) {
         </div>
 
         <!-- Meta -->
-        <div class="bg-white rounded-xl border p-5 space-y-4">
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">Kategori</label><input id="fn-category" value="${esc(n.category)}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
-          <div><label class="block text-sm font-medium text-gray-700 mb-1">Tarih</label><input id="fn-date" type="date" value="${n.date}" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+        <div class="card card-padded space-y-4">
+          <div><label class="label">Kategori</label><input id="fn-category" value="${esc(n.category)}" class="input"></div>
+          <div><label class="label">Tarih</label><input id="fn-date" type="date" value="${n.date}" class="input"></div>
           <div><label class="flex items-center gap-2 text-sm"><input id="fn-featured" type="checkbox" ${n.featured ? 'checked' : ''} class="rounded"> Öne Çıkan</label></div>
         </div>
       </div>
@@ -2420,6 +3316,2045 @@ function renderNewsForm(el, item) {
   el.addEventListener('input', markDirty);
 }
 
+// Clean a raw HTML file/clipboard payload before it is fed into a WYSIWYG editor.
+// Handles three common shapes:
+//   1) Full document <!DOCTYPE><html>…<body>X</body></html> → keep only X
+//   2) Escaped HTML (&lt;p&gt;Lorem&lt;/p&gt;) → decoded to real tags
+//   3) <script>/<style>/<link>/<meta>/<base> tags or onXxx attributes → stripped
+function sanitizeUploadedHtml(raw) {
+  if (!raw) return '';
+  let s = String(raw).trim();
+
+  // (2) If the text is entity-escaped HTML (looks like &lt;tag&gt; with no real angle brackets),
+  // decode it once via a textarea.
+  const hasRealTags = /<[a-z!\/][\s\S]*?>/i.test(s);
+  const hasEntities = /&(lt|gt|amp|quot|#x?\d+);/i.test(s);
+  if (!hasRealTags && hasEntities) {
+    const ta = document.createElement('textarea');
+    ta.innerHTML = s;
+    s = ta.value;
+  }
+
+  // (1) If a full document, extract just <body>…</body> content.
+  const bodyMatch = s.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
+  if (bodyMatch) s = bodyMatch[1];
+  // Also strip leading DOCTYPE/html/head leftovers if there's no <body>.
+  s = s.replace(/<!DOCTYPE[\s\S]*?>/gi, '');
+  s = s.replace(/<\/?(html|head|body|meta|link|base|title)[^>]*>/gi, '');
+
+  // (3) Strip dangerous tags
+  s = s.replace(/<script[\s\S]*?<\/script>/gi, '');
+  s = s.replace(/<style[\s\S]*?<\/style>/gi, '');
+  s = s.replace(/<noscript[\s\S]*?<\/noscript>/gi, '');
+  // Strip on* event handlers and javascript: URLs from any tag
+  s = s.replace(/\s+on[a-z]+\s*=\s*"[^"]*"/gi, '');
+  s = s.replace(/\s+on[a-z]+\s*=\s*'[^']*'/gi, '');
+  s = s.replace(/(href|src)\s*=\s*"javascript:[^"]*"/gi, '$1="#"');
+  s = s.replace(/(href|src)\s*=\s*'javascript:[^']*'/gi, "$1='#'");
+
+  return s.trim();
+}
+
+// ── Generic WYSIWYG HTML editor helpers ──
+// Renders an HTML editor with: toolbar + contenteditable visual + hidden textarea source + toggle button.
+// IDs: {prefix}-toolbar, {prefix}-visual, {prefix}-source, {prefix}-toggle
+// Modes are tracked per-prefix so multiple editors can coexist.
+const _htmlEditorModes = {};
+
+function htmlEditorToolbar(prefix, variant = 'full') {
+  const cmd = (c, v, label, title, body) =>
+    `<button type="button" onclick="htmlEditorCmd('${prefix}','${c}'${v ? `,'${v.replace(/'/g, "\\'")}'` : ''})" title="${title}" class="${label ? 'px-2 py-1' : 'p-1.5'} rounded hover:bg-gray-200 text-gray-600 ${label ? 'text-xs font-bold' : ''}">${body}</button>`;
+  const sep = '<div class="w-px bg-gray-300 mx-1"></div>';
+  const boldIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 4h8a4 4 0 014 4 4 4 0 01-4 4H6z"/><path d="M6 12h9a4 4 0 014 4 4 4 0 01-4 4H6z"/></svg>';
+  const italicIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 4h4m-2 0l-4 16m0 0h4"/></svg>';
+  const underlineIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 3v7a6 6 0 0012 0V3M3.5 21h17"/></svg>';
+  const ulIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>';
+  const olIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 6h11M10 12h11M10 18h11M4 4v4h2v1H3v1h3v1H4v1h3M4 14h3v1H5v1h2v1H4M5 19h2"/></svg>';
+  const linkIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>';
+  const clearIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17 10L3 3m0 0l7 14 2-5 5-2M3 3l18 18"/></svg>';
+
+  const parts = [
+    cmd('bold', null, false, 'Kalın', boldIcon),
+    cmd('italic', null, false, 'İtalik', italicIcon),
+    cmd('underline', null, false, 'Altı Çizili', underlineIcon),
+    sep,
+  ];
+  if (variant === 'full') {
+    parts.push(cmd('formatBlock', '<h2>', true, 'Başlık 2', 'H2'));
+    parts.push(cmd('formatBlock', '<h3>', true, 'Başlık 3', 'H3'));
+  }
+  parts.push(cmd('formatBlock', '<p>', true, 'Paragraf', 'P'));
+  parts.push(cmd('insertUnorderedList', null, false, 'Madde Listesi', ulIcon));
+  if (variant === 'full') parts.push(cmd('insertOrderedList', null, false, 'Numaralı Liste', olIcon));
+  parts.push(`<button type="button" onclick="htmlEditorLink('${prefix}')" title="Link Ekle" class="p-1.5 rounded hover:bg-gray-200 text-gray-600">${linkIcon}</button>`);
+
+  // Article full-text editors get a one-click "Ek Materyal" picker so the
+  // user can drop a link or embed for an uploaded supplementary file into
+  // the prose without writing HTML by hand. Other editors (sections,
+  // abstracts) don't need it.
+  if (prefix === 'ft' || prefix === 'aip-ft') {
+    const suppIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/></svg>';
+    const tableIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3zM3 10h18M3 15h18M9 5v14M15 5v14"/></svg>';
+    const figIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 15l-5-5L5 21"/></svg>';
+    parts.push(sep);
+    parts.push(`<button type="button" onclick="htmlEditorInsertTable('${prefix}')" title="Tablo ekle (kod yazmadan satır/sütun seç)" class="px-2 py-1 rounded hover:bg-teal-50 text-teal-700 text-xs font-medium flex items-center gap-1.5">${tableIcon}<span>Tablo Ekle</span></button>`);
+    parts.push(`<button type="button" onclick="openFigurePicker('${prefix}')" title="Yüklü figürlerden tam metne ekle" class="px-2 py-1 rounded hover:bg-teal-50 text-teal-700 text-xs font-medium flex items-center gap-1.5">${figIcon}<span>Figür</span></button>`);
+    parts.push(`<button type="button" onclick="openSupplementaryPicker('${prefix}')" title="Ek materyal ekle (yüklü dosyalardan seç)" class="px-2 py-1 rounded hover:bg-teal-50 text-teal-700 text-xs font-medium flex items-center gap-1.5">${suppIcon}<span>Ek Materyal</span></button>`);
+    const autoIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>';
+    parts.push(`<button type="button" onclick="_autoArrangeFullText('${prefix}')" title="Dosyalar bölümündeki figür/tabloları metin içine yerleştir, kaynak atıflarını otomatik bağla" class="px-2 py-1 rounded hover:bg-amber-50 text-amber-700 text-xs font-semibold flex items-center gap-1.5" style="border:1px solid color-mix(in oklab, #f59e0b 30%, transparent);background:color-mix(in oklab, #f59e0b 8%, transparent)">${autoIcon}<span>Otomatik Düzenle</span></button>`);
+  }
+
+  parts.push(sep);
+  parts.push(cmd('removeFormat', null, false, 'Formatı Temizle', clearIcon));
+
+  return `<div id="${prefix}-toolbar" class="flex flex-wrap gap-0.5 border border-b-0 rounded-t-lg bg-gray-50 px-2 py-1.5">${parts.join('')}</div>`;
+}
+
+function htmlEditorModeSwitch(prefix) {
+  // Segmented control: Görsel | HTML  (active option has white bg + shadow + teal text)
+  const visualIcon = '<svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h10M4 18h16"/></svg>';
+  const codeIcon = '<svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l-4-4 4-4M14 4l4 4-4 4"/></svg>';
+  return `
+    <div id="${prefix}-modeswitch" class="inline-flex items-center bg-gray-100 rounded-lg p-0.5 text-xs font-medium select-none" role="tablist" aria-label="Düzenleme modu">
+      <button type="button" data-mode="visual" onclick="setHtmlEditorMode('${prefix}','visual')" role="tab" aria-selected="true"
+        class="mode-btn mode-visual px-3 py-1.5 rounded-md flex items-center gap-1.5 transition-all bg-white shadow-sm text-teal-700">
+        ${visualIcon}<span>Görsel</span>
+      </button>
+      <button type="button" data-mode="source" onclick="setHtmlEditorMode('${prefix}','source')" role="tab" aria-selected="false"
+        class="mode-btn mode-source px-3 py-1.5 rounded-md flex items-center gap-1.5 transition-all text-gray-500 hover:text-gray-800">
+        ${codeIcon}<span>HTML</span>
+      </button>
+    </div>`;
+}
+
+function htmlEditor({ prefix, initialHtml = '', rows = 12, placeholder = '', variant = 'full', minHeight = '160px', visualClass = '' }) {
+  _htmlEditorModes[prefix] = 'visual';
+  const safePlaceholder = (placeholder || '').replace(/"/g, '&quot;');
+  return `
+    <div class="html-editor" data-html-editor="${prefix}">
+      <div class="flex items-center justify-end mb-2">
+        ${htmlEditorModeSwitch(prefix)}
+      </div>
+      ${htmlEditorToolbar(prefix, variant)}
+      <div id="${prefix}-visual" contenteditable="true" class="w-full px-4 py-3 border rounded-b-lg text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 max-w-none overflow-auto bg-white ${visualClass}" style="min-height:${minHeight}" data-placeholder="${safePlaceholder}">${initialHtml || ''}</div>
+      <textarea id="${prefix}-source" rows="${rows}" class="w-full px-3 py-2 border rounded-lg text-xs font-mono hidden" placeholder="${safePlaceholder}">${esc(initialHtml || '')}</textarea>
+    </div>`;
+}
+
+function htmlEditorCmd(prefix, command, value) {
+  const visual = document.getElementById(`${prefix}-visual`);
+  if (!visual) return;
+  visual.focus();
+  document.execCommand(command, false, value || null);
+  markDirty();
+}
+
+function htmlEditorLink(prefix) {
+  const url = prompt('Link URL:');
+  if (!url) return;
+  htmlEditorCmd(prefix, 'createLink', url);
+}
+
+// ── Insert a table into the full-text editor without writing HTML by hand ──
+function buildEditorTableHtml(rows, cols, hasHeader) {
+  const R = Math.max(1, Math.min(30, Number(rows) || 1));
+  const C = Math.max(1, Math.min(12, Number(cols) || 1));
+  const cellRow = (tag) => `<tr>${Array.from({ length: C }, () => `<${tag}><br></${tag}>`).join('')}</tr>`;
+  let html = '<table class="article-table">';
+  let bodyRows = R;
+  if (hasHeader) { html += `<thead>${cellRow('th')}</thead>`; bodyRows = R - 1; }
+  html += '<tbody>';
+  for (let i = 0; i < Math.max(bodyRows, hasHeader ? 0 : 1); i++) html += cellRow('td');
+  html += '</tbody></table>';
+  return html;
+}
+
+function htmlEditorInsertTable(prefix) {
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.innerHTML = `
+    <div class="modal-dialog" style="max-width:380px">
+      <div class="flex items-center justify-between px-6 py-4" style="border-bottom:1px solid var(--border-soft)">
+        <h3 class="text-base font-semibold" style="color:var(--text-strong);letter-spacing:-0.01em">Tablo Ekle</h3>
+        <button class="modal-close p-1.5 rounded-md" style="color:var(--text-muted)" aria-label="Kapat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="px-6 py-4 space-y-3">
+        <p class="text-xs" style="color:var(--text-muted)">Satır ve sütun sayısını seçin; tablo imlecin bulunduğu yere eklenir. Hücreleri doğrudan tıklayarak düzenleyebilirsiniz.</p>
+        <div class="flex gap-3">
+          <div class="flex-1"><label class="label">Satır</label><input id="tbl-rows" type="number" min="1" max="30" value="3" class="input"></div>
+          <div class="flex-1"><label class="label">Sütun</label><input id="tbl-cols" type="number" min="1" max="12" value="3" class="input"></div>
+        </div>
+        <label class="flex items-center gap-2 text-sm" style="color:var(--text)"><input id="tbl-header" type="checkbox" checked class="rounded"> İlk satır başlık satırı olsun</label>
+      </div>
+      <div class="flex justify-end gap-2 px-6 py-4" style="border-top:1px solid var(--border-soft);background:var(--bg-subtle);border-radius:0 0 var(--radius-lg) var(--radius-lg)">
+        <button data-action="cancel" class="btn btn-secondary">İptal</button>
+        <button data-action="insert" class="btn btn-primary">Ekle</button>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+
+  const close = () => { overlay.remove(); document.removeEventListener('keydown', onKey); };
+  const onKey = (e) => { if (e.key === 'Escape') close(); };
+  document.addEventListener('keydown', onKey);
+  overlay.querySelector('.modal-close').onclick = close;
+  overlay.querySelector('[data-action="cancel"]').onclick = close;
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+  overlay.querySelector('[data-action="insert"]').onclick = () => {
+    const rows = Number(overlay.querySelector('#tbl-rows').value) || 3;
+    const cols = Number(overlay.querySelector('#tbl-cols').value) || 3;
+    const hasHeader = overlay.querySelector('#tbl-header').checked;
+    close();
+    htmlEditorInsertHtml(prefix, buildEditorTableHtml(rows, cols, hasHeader));
+    toast('Tablo eklendi');
+  };
+}
+
+// ── Supplementary picker — insert uploaded/linked supplementary materials
+//    into the full-text editor without writing HTML. ──
+
+const SUPP_IMAGE_EXT = /\.(jpe?g|png|gif|webp|svg|tiff?|bmp)$/i;
+const SUPP_VIDEO_EXT = /\.(mp4|webm|mov|m4v|ogv)$/i;
+const SUPP_AUDIO_EXT = /\.(mp3|wav|ogg|m4a)$/i;
+const SUPP_PDF_EXT   = /\.pdf$/i;
+
+function detectSuppKind(url) {
+  const u = String(url || '');
+  if (SUPP_IMAGE_EXT.test(u)) return 'image';
+  if (SUPP_VIDEO_EXT.test(u)) return 'video';
+  if (SUPP_AUDIO_EXT.test(u)) return 'audio';
+  if (SUPP_PDF_EXT.test(u))   return 'pdf';
+  return 'file';
+}
+
+function suppKindIcon(kind) {
+  const stroke = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">';
+  switch (kind) {
+    case 'image': return stroke + '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>';
+    case 'video': return stroke + '<polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>';
+    case 'audio': return stroke + '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>';
+    case 'pdf':   return stroke + '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>';
+    default:      return stroke + '<path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>';
+  }
+}
+
+function suppKindLabel(kind) {
+  return { image: 'Görsel', video: 'Video', audio: 'Ses', pdf: 'PDF', file: 'Dosya' }[kind] || 'Dosya';
+}
+
+// Read the article id from the current URL hash. Works for /articles/:id and
+// /articles-in-press/:id. Returns null when called from a context that has no
+// article (e.g. new-article form where the article hasn't been saved yet).
+function currentArticleIdFromHash() {
+  const h = window.location.hash || '';
+  const m = h.match(/^#\/(?:articles|articles-in-press)\/(\d+)/);
+  return m ? Number(m[1]) : null;
+}
+
+// Figure picker — insert an already-uploaded figure into the full-text editor
+// without leaving the Tam Metin tab.
+async function openFigurePicker(prefix) {
+  const articleId = currentArticleIdFromHash();
+  if (!articleId) {
+    toast('Makaleyi önce kaydedin — kayıtlı bir makale için figür eklenebilir.', 'warning');
+    return;
+  }
+  let figures = [];
+  try {
+    const assets = await API.get(`/media/article/${articleId}/assets`);
+    figures = assets.figures || [];
+  } catch { /* ignore — empty state shown */ }
+
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.innerHTML = `
+    <div class="modal-dialog" style="max-width:680px">
+      <div class="flex items-center justify-between px-6 py-4" style="border-bottom:1px solid var(--border-soft)">
+        <h3 class="text-base font-semibold" style="color:var(--text-strong);letter-spacing:-0.01em">Figür Ekle</h3>
+        <button class="modal-close p-1.5 rounded-md" style="color:var(--text-muted)" aria-label="Kapat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="px-6 py-4">
+        <p class="text-sm mb-3" style="color:var(--text)">Bu makaleye yüklü figürler. Birine tıklayın — tam metinde imlecinizin olduğu yere otomatik eklenir.</p>
+        ${figures.length === 0 ? `
+          <div class="text-center py-8" style="color:var(--text-muted)">
+            <p class="text-sm">Bu makale için yüklü figür yok.</p>
+            <p class="text-xs mt-1"><strong>Dosyalar</strong> sekmesinden figür yükleyin.</p>
+          </div>
+        ` : `
+          <div class="grid grid-cols-3 gap-3" style="max-height:380px;overflow-y:auto;padding:2px">
+            ${figures.map((f) => `
+              <button type="button" class="fig-pick" data-url="${esc(f.url)}" data-name="${esc(f.filename)}"
+                style="border:1px solid var(--border-soft);border-radius:8px;overflow:hidden;background:#f4f3f0;cursor:pointer;text-align:left">
+                <div style="aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden">
+                  <img src="/site/${esc(f.url)}" alt="${esc(f.filename)}" style="max-width:100%;max-height:100%;object-fit:contain" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <div style="display:none;color:var(--text-faint);font-size:11px;width:100%;height:100%;align-items:center;justify-content:center">önizleme yok</div>
+                </div>
+                <div class="truncate text-xs px-2 py-1.5" style="color:var(--text-strong)" title="${esc(f.filename)}">${esc(f.filename)}</div>
+              </button>`).join('')}
+          </div>
+        `}
+      </div>
+      <div class="flex justify-end px-6 py-4" style="border-top:1px solid var(--border-soft);background:var(--bg-subtle);border-radius:0 0 var(--radius-lg) var(--radius-lg)">
+        <button data-action="cancel" class="btn btn-secondary">Kapat</button>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+
+  const close = () => { overlay.remove(); document.removeEventListener('keydown', onKey); };
+  const onKey = (e) => { if (e.key === 'Escape') close(); };
+  document.addEventListener('keydown', onKey);
+  overlay.querySelector('.modal-close').onclick = close;
+  overlay.querySelector('[data-action="cancel"]').onclick = close;
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+  overlay.querySelectorAll('.fig-pick').forEach((btn) => {
+    btn.onclick = () => {
+      close();
+      insertFigureIntoFullText(btn.dataset.url, btn.dataset.name);
+    };
+  });
+}
+
+// ── Cross-reference picker: wrap selected text in <a href="#figure-N"> etc. ──
+//
+// The visual editor uses contenteditable; opening a modal moves focus out of
+// it and the user's selection is lost. We stash the live range on mousedown
+// (which fires BEFORE focus moves to the toolbar button) so the eventual
+// insert command can place the anchor exactly where the editor cursor was.
+const _crossRefSelection = {}; // prefix → { range, text }
+
+function saveCrossRefSelection(prefix) {
+  const sel = window.getSelection();
+  const visual = document.getElementById(prefix + '-visual');
+  if (!sel || !sel.rangeCount || !visual) { _crossRefSelection[prefix] = null; return; }
+  const range = sel.getRangeAt(0);
+  if (!visual.contains(range.commonAncestorContainer)) { _crossRefSelection[prefix] = null; return; }
+  _crossRefSelection[prefix] = { range: range.cloneRange(), text: range.toString() };
+}
+
+// Many legacy / mirrored articles (e.g. content imported from balkanmedicaljournal.org
+// HTML rather than JATS) ship <figure class="article-figure"> blocks WITHOUT
+// id="figure-N" anchors — so the bubble scanner, the runtime relocator and
+// the auto-linker all fail to bind references. Walk the editor DOM once and
+// stamp sequential figure-N / table-N IDs on every untagged block. Cheap to
+// run repeatedly because tagged blocks are skipped.
+function _ensureMediaIds(visualEl) {
+  if (!visualEl) return false;
+  let mutated = false;
+  // Figures
+  const figs = visualEl.querySelectorAll('figure');
+  const usedFig = new Set();
+  figs.forEach((f) => {
+    const m = (f.id || '').match(/^(?:figure|fig)-(\d+)$/i);
+    if (m) usedFig.add(Number(m[1]));
+  });
+  let fn = 1;
+  figs.forEach((f) => {
+    if (f.id && /^(?:figure|fig)-\d+$/i.test(f.id)) return;
+    while (usedFig.has(fn)) fn++;
+    f.id = 'figure-' + fn;
+    usedFig.add(fn);
+    fn++;
+    mutated = true;
+  });
+  // Tables: explicit table-wraps OR bare <table class="article-table">
+  const tabs = visualEl.querySelectorAll('.article-table-wrap, .article-table');
+  const usedTab = new Set();
+  tabs.forEach((t) => {
+    const m = (t.id || '').match(/^(?:table|tab)-(\d+)$/i);
+    if (m) usedTab.add(Number(m[1]));
+  });
+  let tn = 1;
+  tabs.forEach((t) => {
+    if (t.id && /^(?:table|tab)-\d+$/i.test(t.id)) return;
+    // Skip <table> elements that live inside an .article-table-wrap whose
+    // wrap already has the ID — the outer wrap is the canonical anchor.
+    if (t.tagName === 'TABLE' && t.closest('.article-table-wrap')) return;
+    while (usedTab.has(tn)) tn++;
+    t.id = 'table-' + tn;
+    usedTab.add(tn);
+    tn++;
+    mutated = true;
+  });
+  // Mark the editor dirty so the Save button is enabled — without this the
+  // newly-stamped IDs would silently vanish when the user navigates away.
+  if (mutated && typeof markDirty === 'function') markDirty();
+  return mutated;
+}
+
+// Word "Save as HTML" exports references as a sequence of <p class="MsoListParagraph…">
+// elements, each with the number baked in as literal text inside a
+// <span style="mso-list:Ignore">. The Atıf picker can't see them as a list
+// and the citation anchors don't work. Convert the whole sequence to a
+// proper <ol><li id="ref-N">.
+// Heading text variants we accept as a "references" header. Covers English,
+// Turkish, and ALL CAPS / mixed-case forms commonly produced by Word exports.
+const _REF_HEADING_RE = /^\s*(references?|bibliography|kaynaklar|kaynakça|referanslar|kaynak\s*listesi)\s*$/i;
+
+// Locate the "REFERENCES" heading in the visual editor. Word-pasted articles
+// frequently style this as a plain bold <p> rather than a real <h*>, so we
+// fall back to any <p>/<div> whose normalised text matches the heading
+// regex — preferring bold paragraphs but accepting short standalone matches
+// too (a <p>REFERENCES</p> with no other content is unambiguous).
+function _findRefHeading(visualEl) {
+  if (!visualEl) return null;
+  // 1) Real heading elements first.
+  for (const h of visualEl.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+    if (_REF_HEADING_RE.test(h.textContent || '')) return h;
+  }
+  // 2) Bold-paragraph fallback for Word-paste / plain-html articles.
+  const candidates = visualEl.querySelectorAll('p, div');
+  for (const p of candidates) {
+    const text = (p.textContent || '').replace(/\s+/g, ' ').trim();
+    if (!text || !_REF_HEADING_RE.test(text)) continue;
+    // Inline bold marker — Word's pasted REFERENCES line is <b>/<strong>.
+    if (p.querySelector('b, strong')) return p;
+    // Inline-style fallback: font-weight via attribute.
+    const sty = (p.getAttribute('style') || '') + ' ' +
+                Array.from(p.querySelectorAll('[style]'))
+                  .map((s) => s.getAttribute('style') || '').join(' ');
+    if (/font-weight\s*:\s*(bold|[6-9]\d\d)/i.test(sty)) return p;
+    // Final fallback: a short standalone "REFERENCES" paragraph is also
+    // unambiguous even without bold styling (textually it can't be anything
+    // else, and false positives are rare given the strict regex).
+    if (text.length <= 16) return p;
+  }
+  return null;
+}
+
+function _normalizeMsoReferenceList(visualEl) {
+  if (!visualEl) return false;
+  const h = _findRefHeading(visualEl);
+  if (!h) return false;
+  const items = [];
+  // Walk past Word's stray empty paragraphs / spacers and pick up consecutive
+  // MsoListParagraph siblings even if a non-Mso filler sits between them.
+  // We tolerate up to a few non-Mso elements before giving up — Word exports
+  // sometimes wedge a <br>, an empty <p>, or an <o:p> tag between refs.
+  let n = h.nextElementSibling;
+  let skipped = 0;
+  while (n) {
+    if (n.tagName === 'P' && /MsoListParagraph/.test(n.className || '')) {
+      items.push(n);
+      skipped = 0;
+      n = n.nextElementSibling;
+    } else if (skipped < 2 && (
+      // Tolerable filler: empty <p>, <br>, <o:p>, comments
+      (n.tagName === 'P' && !(n.textContent || '').trim()) ||
+      n.tagName === 'BR' ||
+      n.tagName.toLowerCase() === 'o:p'
+    )) {
+      skipped += 1;
+      n = n.nextElementSibling;
+    } else {
+      break;
+    }
+  }
+  if (items.length < 2) return false;
+  const ol = document.createElement('ol');
+  ol.className = 'article-references-ol';
+  items.forEach((p, i) => {
+    const li = document.createElement('li');
+    li.id = 'ref-' + (i + 1);
+    const clone = p.cloneNode(true);
+    clone.querySelectorAll('span[style*="mso-list"], o\\:p').forEach((s) => s.remove());
+    let html = clone.innerHTML
+      .replace(/^[\s ]*\d+\.[\s ]+/, '')
+      .replace(/<!--[\s\S]*?-->/g, '')
+      .trim();
+    li.innerHTML = html;
+    ol.appendChild(li);
+  });
+  let wrapper = h.parentNode && h.parentNode.classList && h.parentNode.classList.contains('article-references')
+    ? h.parentNode : null;
+  if (!wrapper) {
+    wrapper = document.createElement('div');
+    wrapper.className = 'article-references';
+    h.parentNode.insertBefore(wrapper, h);
+    wrapper.appendChild(h);
+  }
+  wrapper.appendChild(ol);
+  items.forEach((p) => p.remove());
+  if (typeof markDirty === 'function') markDirty();
+  return true;
+}
+
+// Walk the editor body and auto-link any plain-text mentions of figures,
+// tables, or references that aren't already wrapped in anchors. Mirrors the
+// public-site enhancers (autoLinkPlainMediaMentions + enhanceReferenceCitations)
+// so the editor preview shows the same teal cross-references the reader will
+// see. Idempotent: re-running finds nothing new to wrap.
+function _autoLinkInEditor(visualEl) {
+  if (!visualEl) return false;
+  let mutated = false;
+
+  // Build a set of available figure / table IDs (already stamped by
+  // _ensureMediaIds). Counter for refs comes from the <ol> length.
+  const figIds = new Set();
+  visualEl.querySelectorAll('figure[id^="figure-"], figure[id^="fig-"]').forEach((f) => {
+    const m = f.id.match(/^(?:figure|fig)-(\d+)$/i);
+    if (m) figIds.add(Number(m[1]));
+  });
+  const tabIds = new Set();
+  visualEl.querySelectorAll('[id^="table-"], [id^="tab-"]').forEach((t) => {
+    if (t.tagName === 'A') return;
+    const m = t.id.match(/^(?:table|tab)-(\d+)$/i);
+    if (m) tabIds.add(Number(m[1]));
+  });
+  let refOl = visualEl.querySelector('.article-references ol');
+  if (!refOl) {
+    // Heading-then-list fallback for articles that didn't go through Mso
+    // normalisation (e.g. plain `<p><b>REFERENCES</b></p><ol>…</ol>` typed
+    // by the editor directly). Uses the same broad heading detector so a
+    // bold paragraph is recognised, not just real <h*> elements.
+    const h = _findRefHeading(visualEl);
+    if (h) {
+      let n = h.nextElementSibling;
+      while (n && !/^(OL|UL)$/.test(n.tagName)) n = n.nextElementSibling;
+      if (n) refOl = n;
+    }
+  }
+  const refCount = refOl ? refOl.querySelectorAll(':scope > li').length : 0;
+
+  // Pass 1 — auto-link plain-text "Figure N" / "Table N" / "Şekil N" / "Tablo N"
+  // including multi-number sequences ("Figures 1, 2, and 3", "Figs. 4-6") and
+  // subfigure letters ("Figure 1A", "Fig. 2b").
+  const insideSkip = (node) => {
+    let p = node.parentNode;
+    while (p && p !== visualEl) {
+      if (p.tagName === 'A') return true;
+      if (p.tagName === 'FIGURE' || p.tagName === 'FIGCAPTION') return true;
+      if (p.classList && (
+        p.classList.contains('article-references') ||
+        p.classList.contains('article-acknowledgments') ||
+        p.classList.contains('article-footnotes') ||
+        p.classList.contains('article-supplementary') ||
+        p.classList.contains('article-table-wrap') ||
+        p.classList.contains('article-figure') ||
+        p.classList.contains('table-label') ||
+        p.classList.contains('table-footnote')
+      )) return true;
+      p = p.parentNode;
+    }
+    return false;
+  };
+
+  // Single regex captures: kind-word + whitespace + a sequence of numbers
+  // (each optionally with a subfigure letter, joined by , - – "and" "ve").
+  // We then walk the sequence and wrap each number with its own anchor so
+  // every individual reference is clickable.
+  const seqPattern = /(?<![A-Za-z])(figures?|figs?\.?|şekiller?|şekil|sekil|tables?|tablolar?|tablo)(\s+)((?:\d+[a-z]?)(?:\s*(?:,|-|–|\sand\s|\sve\s)\s*\d+[a-z]?)*)/gi;
+  const isFigWord = (w) => /^(fig|figure|şekil|sekil|şekiller)/i.test(w);
+
+  const textNodes = [];
+  const walker = document.createTreeWalker(visualEl, NodeFilter.SHOW_TEXT, {
+    acceptNode: (n) => {
+      if (!n.nodeValue || !/\S/.test(n.nodeValue)) return NodeFilter.FILTER_REJECT;
+      if (insideSkip(n)) return NodeFilter.FILTER_REJECT;
+      // Pre-filter MUST match the same alternations as seqPattern below —
+      // otherwise plural forms ("Figures") fail the gate and the
+      // multi-number splitter never runs.
+      return /(?<![A-Za-z])(figures?|figs?\.?|şekiller?|şekil|sekil|tables?|tablolar?|tablo)\s+\d+/i.test(n.nodeValue)
+        ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+    },
+  });
+  for (let n = walker.nextNode(); n; n = walker.nextNode()) textNodes.push(n);
+
+  textNodes.forEach((textNode) => {
+    const raw = textNode.nodeValue;
+    seqPattern.lastIndex = 0;
+    let match, lastIdx = 0;
+    const frag = document.createDocumentFragment();
+    let wrappedAny = false;
+    while ((match = seqPattern.exec(raw)) !== null) {
+      const kindWord = match[1];
+      const ws = match[2];
+      const numSeq = match[3];
+      const kind = isFigWord(kindWord) ? 'figure' : 'table';
+      const ids = kind === 'figure' ? figIds : tabIds;
+
+      // Tokenise the number sequence into alternating num / sep tokens so we
+      // can wrap each numeric span with its own anchor while preserving the
+      // original separators ("," " and " " ve " etc).
+      const tokens = [];
+      const tokenRe = /(\d+[a-z]?)|(\s*(?:,|-|–|\sand\s|\sve\s)\s*)/gi;
+      let t;
+      while ((t = tokenRe.exec(numSeq)) !== null) {
+        tokens.push(t[1] ? { kind: 'num', val: t[1] } : { kind: 'sep', val: t[2] });
+      }
+      const baseNum = parseInt((tokens.find((x) => x.kind === 'num') || {}).val || '0', 10);
+      if (!ids.has(baseNum)) continue;
+
+      // Emit pre-text first.
+      if (match.index > lastIdx) frag.appendChild(document.createTextNode(raw.slice(lastIdx, match.index)));
+      // First number gets wrapped along with the kind word ("Figure 1");
+      // subsequent numbers are wrapped individually.
+      let firstSeen = false;
+      tokens.forEach((tk) => {
+        if (tk.kind === 'sep') {
+          frag.appendChild(document.createTextNode(tk.val));
+          return;
+        }
+        const numericPart = parseInt(tk.val, 10);
+        if (!firstSeen) {
+          firstSeen = true;
+          const a = document.createElement('a');
+          a.href = '#' + kind + '-' + baseNum;
+          a.className = 'article-media-ref-link';
+          a.textContent = kindWord + ws + tk.val;
+          frag.appendChild(a);
+          return;
+        }
+        if (ids.has(numericPart)) {
+          const a = document.createElement('a');
+          a.href = '#' + kind + '-' + numericPart;
+          a.className = 'article-media-ref-link';
+          a.textContent = tk.val;
+          frag.appendChild(a);
+        } else {
+          // Target doesn't exist — keep as plain text so the link doesn't
+          // dead-end. The first one (baseNum) already passed the ids.has check.
+          frag.appendChild(document.createTextNode(tk.val));
+        }
+      });
+      lastIdx = match.index + match[0].length;
+      wrappedAny = true;
+    }
+    if (!wrappedAny) return;
+    if (lastIdx < raw.length) frag.appendChild(document.createTextNode(raw.slice(lastIdx)));
+    textNode.parentNode.replaceChild(frag, textNode);
+    mutated = true;
+  });
+
+  // Pass 2 — wrap bare-digit <sup>N</sup> citations in ref-N anchors.
+  if (refCount) {
+    // Make sure each <li> has an id so the anchor target exists.
+    refOl.querySelectorAll(':scope > li').forEach((li, i) => {
+      if (!li.id) li.id = 'ref-' + (i + 1);
+    });
+    const citationPattern = /^[\s\d,\-–— ]+$/;
+    visualEl.querySelectorAll('sup').forEach((sup) => {
+      if (sup.closest('.article-references, .article-footnotes, .article-acknowledgments')) return;
+      if (sup.querySelector('a')) return;
+      const text = (sup.textContent || '').trim();
+      if (!text || !citationPattern.test(text) || !/\d/.test(text)) return;
+      // Rebuild from textContent so Word's <span lang=…> wrappers inside
+      // sup don't hide digits from the digit replacer. Vancouver-style sup
+      // contents are just numbers + separators — losing inner styling is
+      // an upgrade, not a regression.
+      const rebuilt = text.replace(/(\d+)/g, (m, n) => {
+        const idx = parseInt(n, 10);
+        if (!idx || idx > refCount) return m;
+        return `<a href="#ref-${idx}" class="article-ref-citation">${m}</a>`;
+      });
+      if (/article-ref-citation/.test(rebuilt) && rebuilt !== sup.innerHTML) {
+        sup.innerHTML = rebuilt;
+        mutated = true;
+      }
+    });
+
+    // Pass 2b — bracketed plain-text citations: [1], [1,2], [1-5], [1, 2, 3].
+    // IEEE / on-baseline citation style. Walk text nodes outside skip
+    // regions and wrap each digit inside the brackets (brackets stay).
+    const refSkip = (node) => {
+      let p = node.parentNode;
+      while (p && p !== visualEl) {
+        if (p.tagName === 'A') return true;
+        if (p.classList && (
+          p.classList.contains('article-references') ||
+          p.classList.contains('article-footnotes') ||
+          p.classList.contains('article-acknowledgments')
+        )) return true;
+        p = p.parentNode;
+      }
+      return false;
+    };
+    const bracketPattern = /\[\s*(\d+(?:\s*(?:,|-|–|;)\s*\d+)*)\s*\]/g;
+    const refTextNodes = [];
+    const refWalker = document.createTreeWalker(visualEl, NodeFilter.SHOW_TEXT, {
+      acceptNode: (n) => {
+        if (!n.nodeValue || !/\[\s*\d/.test(n.nodeValue)) return NodeFilter.FILTER_REJECT;
+        if (refSkip(n)) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      },
+    });
+    for (let n = refWalker.nextNode(); n; n = refWalker.nextNode()) refTextNodes.push(n);
+
+    refTextNodes.forEach((textNode) => {
+      const raw = textNode.nodeValue;
+      bracketPattern.lastIndex = 0;
+      let match, lastIdx = 0;
+      const frag = document.createDocumentFragment();
+      let wrappedAny = false;
+      while ((match = bracketPattern.exec(raw)) !== null) {
+        const inside = match[1];
+        // Plausibility gate: every cited number must be in range. A digit
+        // out of range usually means this is a measurement, not a citation
+        // (e.g. "[10 mg]" when refCount=8) — skip wholesale.
+        const nums = (inside.match(/\d+/g) || []).map(Number);
+        if (!nums.length || nums.some((n) => n < 1 || n > refCount)) continue;
+
+        if (match.index > lastIdx) frag.appendChild(document.createTextNode(raw.slice(lastIdx, match.index)));
+        // Reconstruct the bracketed payload with each digit wrapped. Use a
+        // detached span as a parser sandbox, then move children into frag.
+        const sandbox = document.createElement('span');
+        sandbox.innerHTML = match[0].replace(/(\d+)/g, (m, n) => {
+          const idx = parseInt(n, 10);
+          return `<a href="#ref-${idx}" class="article-ref-citation">${m}</a>`;
+        });
+        while (sandbox.firstChild) frag.appendChild(sandbox.firstChild);
+        lastIdx = match.index + match[0].length;
+        wrappedAny = true;
+      }
+      if (!wrappedAny) return;
+      if (lastIdx < raw.length) frag.appendChild(document.createTextNode(raw.slice(lastIdx)));
+      textNode.parentNode.replaceChild(frag, textNode);
+      mutated = true;
+    });
+
+    // Pass 3 — bidirectional links: each <li id="ref-N"> gets a back-arrow
+    // pointing at the in-text citations of that reference, so readers in
+    // the References section can jump back to where it was cited.
+    // Citations get unique IDs (`cite-ref-N-i`) so multiple citations of
+    // the same reference each get their own back-arrow ("↩¹ ↩² ↩³").
+    if (refOl) {
+      const supDigit = (n) => String(n).split('').map((d) => '⁰¹²³⁴⁵⁶⁷⁸⁹'[Number(d)]).join('');
+      const citCounts = {};
+      visualEl.querySelectorAll('a.article-ref-citation[href^="#ref-"]').forEach((a) => {
+        const m = (a.getAttribute('href') || '').match(/^#ref-(\d+)$/);
+        if (!m) return;
+        const n = Number(m[1]);
+        citCounts[n] = (citCounts[n] || 0) + 1;
+        a.id = `cite-ref-${n}-${citCounts[n]}`;
+      });
+      refOl.querySelectorAll(':scope > li').forEach((li, i) => {
+        const n = i + 1;
+        if (!li.id) li.id = 'ref-' + n;
+        // Idempotent re-run: drop stale backlink container first.
+        const stale = li.querySelector(':scope > .article-ref-backlinks');
+        if (stale) stale.remove();
+        const total = citCounts[n] || 0;
+        if (!total) return; // ref never cited inline → no back-arrow needed
+        const span = document.createElement('span');
+        span.className = 'article-ref-backlinks';
+        if (total === 1) {
+          span.innerHTML = ` <a href="#cite-ref-${n}-1" class="article-ref-backlink" title="Metne dön" aria-label="Metne dön">↩</a>`;
+        } else {
+          const links = [];
+          for (let j = 1; j <= total; j += 1) {
+            links.push(`<a href="#cite-ref-${n}-${j}" class="article-ref-backlink" title="Atıf ${j}'e dön" aria-label="Atıf ${j}'e dön">↩${supDigit(j)}</a>`);
+          }
+          span.innerHTML = ' ' + links.join(' ');
+        }
+        li.appendChild(span);
+        mutated = true;
+      });
+    }
+  }
+
+  if (mutated && typeof markDirty === 'function') markDirty();
+  return mutated;
+}
+
+// Walk every cross-ref anchor in the editor and refresh its broken/healthy
+// state. Called after each insert / upload / Yeni Kaynak so that links that
+// pointed at a not-yet-existing target light up correctly the moment the
+// target is added.
+function _validateCrossRefAnchors(visualEl) {
+  if (!visualEl) return { total: 0, broken: 0 };
+  const targets = new Set();
+  visualEl.querySelectorAll('figure[id^="figure-"], figure[id^="fig-"], [id^="table-"], [id^="tab-"]').forEach((el) => {
+    if (el.id) targets.add(el.id);
+  });
+  // Build the set of valid #ref-N anchors from the ol > li sequence.
+  const refOl = visualEl.querySelector('.article-references ol, ol.article-references-ol');
+  if (refOl) {
+    refOl.querySelectorAll(':scope > li').forEach((li, i) => {
+      if (!li.id) li.id = 'ref-' + (i + 1);
+      targets.add(li.id);
+    });
+  }
+  let broken = 0, total = 0;
+  visualEl.querySelectorAll('a[href^="#figure-"], a[href^="#fig-"], a[href^="#table-"], a[href^="#tab-"], a[href^="#ref-"]').forEach((a) => {
+    total += 1;
+    const href = (a.getAttribute('href') || '').replace(/^#/, '');
+    if (!href) return;
+    const ok = targets.has(href);
+    if (ok) {
+      a.classList.remove('article-ref-broken');
+      a.removeAttribute('data-broken-ref');
+      if (a.title === 'Bu hedef henüz makalede yok') a.removeAttribute('title');
+    } else {
+      broken += 1;
+      a.classList.add('article-ref-broken');
+      a.setAttribute('data-broken-ref', href);
+      if (!a.title) a.title = 'Bu hedef henüz makalede yok';
+    }
+  });
+  return { total, broken };
+}
+
+function _scanCrossRefTargets(prefix) {
+  // Inspect the visual editor's current DOM to find existing figure / table
+  // anchors and the references list. The Galenos-style picker shows the
+  // actual figure thumbnail + caption (not just a number) so the editor
+  // can pick the right one without remembering which #N maps to what.
+  const visual = document.getElementById(prefix + '-visual');
+  // First-time visit might find figures without IDs (legacy / mirrored
+  // content). Auto-stamp sequential IDs so the rest of the scanner — and
+  // every inserted cross-reference — has a real anchor to point at.
+  // Also collapse Word's MsoListParagraph references into a real <ol> so
+  // the bubble can show a chip per ref and citation anchors work.
+  // Finally run the auto-linker so plain-text "Figure 1" / "[2]" mentions
+  // turn into clickable refs in the editor preview too.
+  _ensureMediaIds(visual);
+  _normalizeMsoReferenceList(visual);
+  _autoLinkInEditor(visual);
+  // Re-validate any previously-inserted cross-refs: a link that was
+  // "broken" because the target hadn't been created yet should now light
+  // up if the user just added the matching figure/table/ref.
+  _validateCrossRefAnchors(visual);
+  const root = visual ? visual : document.createElement('div');
+
+  // ── Figures: collect num, thumbnail URL, caption snippet ──
+  const figMap = new Map();
+  root.querySelectorAll('figure[id^="figure-"], figure[id^="fig-"]').forEach((el) => {
+    const m = el.id.match(/^(?:figure|fig)-(\d+)$/i);
+    if (!m) return;
+    const num = Number(m[1]);
+    if (figMap.has(num)) return;
+    const img = el.querySelector('img');
+    // Caption is the first non-empty <p> or <figcaption>; we trim hard since
+    // the bubble is constrained.
+    let caption = '';
+    const capCandidates = el.querySelectorAll(':scope > p, :scope > figcaption');
+    for (const c of capCandidates) {
+      const t = (c.textContent || '').replace(/\s+/g, ' ').trim();
+      if (t) { caption = t; break; }
+    }
+    figMap.set(num, {
+      num,
+      id: el.id,
+      thumbnail: img ? img.getAttribute('src') : '',
+      caption,
+    });
+  });
+
+  // ── Tables: collect num + label (no usable thumbnail) ──
+  const tabMap = new Map();
+  root.querySelectorAll('[id^="table-"], [id^="tab-"]').forEach((el) => {
+    if (el.tagName === 'A') return;
+    const m = el.id.match(/^(?:table|tab)-(\d+)$/i);
+    if (!m) return;
+    const num = Number(m[1]);
+    if (tabMap.has(num)) return;
+    // Prefer an explicit .table-label, fall back to first <p> with bold text.
+    let label = '';
+    const lblEl = el.querySelector('.table-label, caption');
+    if (lblEl) label = (lblEl.textContent || '').replace(/\s+/g, ' ').trim();
+    if (!label) {
+      const firstP = el.querySelector(':scope > p');
+      if (firstP) label = (firstP.textContent || '').replace(/\s+/g, ' ').trim();
+    }
+    tabMap.set(num, { num, id: el.id, label });
+  });
+
+  // ── References: collect count + per-item text snippet for hover tooltip ──
+  const refs = [];
+  let refOl = root.querySelector('.article-references ol');
+  if (!refOl) {
+    // Same broad heading detector as the editor's auto-link/normaliser —
+    // a bold <p>REFERENCES</p> counts even when it isn't a real <h*>.
+    const h = (typeof _findRefHeading === 'function') ? _findRefHeading(root) : null;
+    if (h) {
+      let n = h.nextElementSibling;
+      while (n && !/^(OL|UL)$/.test(n.tagName)) n = n.nextElementSibling;
+      if (n) refOl = n;
+    }
+  }
+  if (refOl) {
+    refOl.querySelectorAll(':scope > li').forEach((li, i) => {
+      refs.push({
+        num: i + 1,
+        snippet: (li.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 120),
+      });
+    });
+  }
+
+  // ── Merge in disk-uploaded assets that aren't yet in the body ─────────
+  // The Dosyalar tab uploads figure/table files to images/articles/<id>/
+  // before they're placed in the editor body. The editor should still see
+  // them as cross-ref targets (the picker shows them with a "pending" hint
+  // and the inserted anchor remains valid — the file already exists at the
+  // referenced URL once Otomatik Düzenle places the block). This way the
+  // bubble reflects "what's available", not just "what's been placed".
+  const cached = (typeof window !== 'undefined') ? window._articleAssets : null;
+  if (cached && Array.isArray(cached.figures)) {
+    cached.figures.forEach((f) => {
+      const isTable = /(?:^|[-_])tab(?:le)?[-_]?\d+/i.test(f.filename || '');
+      const kind = isTable ? 'table' : 'figure';
+      const meta = (typeof _extractMediaNum === 'function') ? _extractMediaNum(f.filename, kind) : null;
+      if (!meta || !meta.num) return;
+      const num = meta.num;
+      // Show one tile per N — sub-panels (1A, 1B) collapse into a single
+      // bubble entry; the inserted anchor still points at #figure-N.
+      const captionExtra = meta.panel ? ` (panel ${meta.panel.toUpperCase()})` : '';
+      if (kind === 'figure') {
+        if (figMap.has(num)) return; // already in body
+        figMap.set(num, { num, id: `figure-${num}`, thumbnail: f.url, caption: (f.filename || '') + captionExtra, pending: true });
+      } else {
+        if (tabMap.has(num)) return;
+        tabMap.set(num, { num, id: `table-${num}`, label: (f.filename || '') + captionExtra, pending: true });
+      }
+    });
+  }
+
+  return {
+    figures: [...figMap.values()].sort((a, b) => a.num - b.num),
+    tables: [...tabMap.values()].sort((a, b) => a.num - b.num),
+    refs,
+    refCount: refs.length,
+  };
+}
+
+function openCrossRefPicker(prefix) {
+  // saveCrossRefSelection was already invoked on the button's mousedown.
+  const stash = _crossRefSelection[prefix] || null;
+  const targets = _scanCrossRefTargets(prefix);
+  const selText = stash && stash.text ? stash.text.trim() : '';
+
+  const chip = (kind, num) => `<button type="button" class="cr-pick px-3 py-1.5 rounded border text-sm font-medium" style="background:#fff;border-color:var(--border);color:var(--text-strong);min-width:64px"
+    data-kind="${kind}" data-num="${num}">${kind === 'ref' ? num : kind === 'figure' ? 'Figür ' + num : 'Tablo ' + num}</button>`;
+
+  const list = (label, kind, nums) => `
+    <div class="mb-4">
+      <div class="text-xs font-semibold mb-2" style="color:var(--text-muted);text-transform:uppercase;letter-spacing:0.04em">${label}</div>
+      ${nums.length
+        ? `<div class="flex flex-wrap gap-1.5">${nums.map((n) => chip(kind, n)).join('')}</div>`
+        : `<p class="text-xs" style="color:var(--text-faint)">Bu makalede henüz ${kind === 'figure' ? 'figür' : kind === 'table' ? 'tablo' : 'kaynak'} yok.</p>`}
+      <div class="flex items-center gap-2 mt-2">
+        <span class="text-xs" style="color:var(--text-muted)">Veya numara gir:</span>
+        <input type="number" min="1" class="input cr-manual" data-kind="${kind}" style="width:80px;font-size:13px;padding:4px 8px" placeholder="N">
+        <button type="button" class="cr-manual-go btn btn-secondary btn-sm" data-kind="${kind}">Ekle</button>
+      </div>
+    </div>`;
+
+  const refList = targets.refCount
+    ? list('Kaynakça (#ref-N)', 'ref', Array.from({ length: targets.refCount }, (_, i) => i + 1).slice(0, 25))
+    : list('Kaynakça (#ref-N)', 'ref', []);
+
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.innerHTML = `
+    <div class="modal-dialog" style="max-width:580px">
+      <div class="flex items-center justify-between px-6 py-4" style="border-bottom:1px solid var(--border-soft)">
+        <div>
+          <h3 class="text-base font-semibold" style="color:var(--text-strong);letter-spacing:-0.01em">Atıf / Bağlantı Ekle</h3>
+          <p class="text-xs mt-0.5" style="color:var(--text-muted)">
+            ${selText ? `Seçili metin: <strong style="color:var(--text-strong)">"${esc(selText.length > 40 ? selText.slice(0, 40) + '…' : selText)}"</strong> → bağlantıya dönüştürülecek` : 'Metin seçili değil — varsayılan etiket eklenecek ("Figure N" / "Table N" / "[N]")'}
+          </p>
+        </div>
+        <button class="modal-close p-1.5 rounded-md" style="color:var(--text-muted)" aria-label="Kapat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="px-6 py-4">
+        ${list('Figürler', 'figure', targets.figures)}
+        ${list('Tablolar', 'table', targets.tables)}
+        ${refList}
+        <div class="banner banner-info" style="padding:8px 10px;font-size:11.5px;margin-top:8px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div class="banner-body" style="margin-top:0">Eklenen bağlantılar <code>article-media-ref-link</code> / <code>article-ref-citation</code> sınıfını taşır — sitede teal renkli ve tıklanabilir görünür. Hedef bloğun henüz yok olması sorun değil; sonradan eklediğinizde aynı link çalışmaya başlar.</div>
+        </div>
+      </div>
+      <div class="flex justify-end px-6 py-4" style="border-top:1px solid var(--border-soft);background:var(--bg-subtle);border-radius:0 0 var(--radius-lg) var(--radius-lg)">
+        <button data-action="cancel" class="btn btn-secondary">Kapat</button>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+
+  const close = () => { overlay.remove(); document.removeEventListener('keydown', onKey); };
+  const onKey = (e) => { if (e.key === 'Escape') close(); };
+  document.addEventListener('keydown', onKey);
+  overlay.querySelector('.modal-close').onclick = close;
+  overlay.querySelector('[data-action="cancel"]').onclick = close;
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+
+  overlay.querySelectorAll('.cr-pick').forEach((btn) => {
+    btn.onclick = () => { insertCrossRef(prefix, btn.dataset.kind, Number(btn.dataset.num)); close(); };
+  });
+  overlay.querySelectorAll('.cr-manual-go').forEach((btn) => {
+    btn.onclick = () => {
+      const kind = btn.dataset.kind;
+      const input = overlay.querySelector(`.cr-manual[data-kind="${kind}"]`);
+      const num = Number(input && input.value);
+      if (!Number.isInteger(num) || num <= 0) {
+        toast('Geçerli bir numara girin', 'warning');
+        return;
+      }
+      insertCrossRef(prefix, kind, num);
+      close();
+    };
+  });
+  // Enter on manual input → submit
+  overlay.querySelectorAll('.cr-manual').forEach((input) => {
+    input.onkeydown = (e) => {
+      if (e.key === 'Enter') overlay.querySelector(`.cr-manual-go[data-kind="${input.dataset.kind}"]`).click();
+    };
+  });
+}
+
+function insertCrossRef(prefix, kind, num) {
+  const stash = _crossRefSelection[prefix];
+  const sel = window.getSelection();
+  // Restore saved range so insertHTML lands where the cursor was, not at
+  // the end of the editor (where focus drifted while the modal was open).
+  const visual = document.getElementById(prefix + '-visual');
+  if (visual) {
+    visual.focus();
+    if (stash && stash.range) {
+      sel.removeAllRanges();
+      sel.addRange(stash.range);
+    }
+  }
+  const selectedText = stash && stash.text ? stash.text : '';
+  // Check whether the target actually exists in the editor right now — if
+  // not, we tag the anchor as "broken" so the editor sees a visual warning
+  // (red dashed underline) and a tooltip rather than a silent dead link.
+  let exists = false;
+  if (visual) {
+    if (kind === 'ref') {
+      const refOl = visual.querySelector('.article-references ol, ol.article-references-ol');
+      exists = !!(refOl && refOl.querySelectorAll(':scope > li').length >= num);
+    } else {
+      exists = !!visual.querySelector('#' + kind + '-' + num);
+    }
+  }
+  const brokenAttrs = exists
+    ? ''
+    : ` data-broken-ref="${kind}-${num}" title="Bu hedef henüz makalede yok"`;
+  let html;
+  if (kind === 'ref') {
+    const inner = selectedText.trim() || String(num);
+    html = `<sup><a href="#ref-${num}" class="article-ref-citation${exists ? '' : ' article-ref-broken'}"${brokenAttrs}>${inner}</a></sup>`;
+  } else {
+    const targetId = kind === 'figure' ? `figure-${num}` : `table-${num}`;
+    const defaultLabel = kind === 'figure' ? `Figure ${num}` : `Table ${num}`;
+    const inner = selectedText.trim() || defaultLabel;
+    html = `<a href="#${targetId}" class="article-media-ref-link${exists ? '' : ' article-ref-broken'}"${brokenAttrs}>${inner}</a>`;
+  }
+  // execCommand insertHTML replaces the selection (or inserts at cursor).
+  // It's the simplest cross-browser way to inject HTML into contenteditable.
+  document.execCommand('insertHTML', false, html);
+  markDirty();
+  _crossRefSelection[prefix] = null;
+  hideCrossRefBubble();
+}
+
+// ── Floating bubble: Galenos-style inline picker that appears right above
+// the user's text selection so they don't have to scroll back up to the
+// toolbar. Triggered automatically by selectionchange whenever a non-empty
+// selection lives inside a full-text visual editor.
+
+function ensureCrossRefBubble() {
+  let bubble = document.getElementById('cr-bubble');
+  if (bubble) return bubble;
+  bubble = document.createElement('div');
+  bubble.id = 'cr-bubble';
+  bubble.className = 'cr-bubble hidden';
+  // Prevent the bubble from stealing the editor's selection on mousedown —
+  // otherwise clicking a chip would collapse the saved range before insert.
+  // EXCEPTION: form controls and their labels need their native click flow
+  // so manual-input typing and the "Yeni Figür/Tablo" file picker both work.
+  // The saved range survives any focus shift because insertCrossRef
+  // restores it before insertHTML.
+  bubble.addEventListener('mousedown', (e) => {
+    if (e.target.closest('input, textarea, select, label')) return;
+    e.preventDefault();
+  });
+  document.body.appendChild(bubble);
+  return bubble;
+}
+
+function hideCrossRefBubble() {
+  const bubble = document.getElementById('cr-bubble');
+  if (bubble) {
+    bubble.classList.add('hidden');
+    bubble.removeAttribute('data-prefix');
+  }
+}
+
+function _renderCrossRefBubble(prefix) {
+  const bubble = ensureCrossRefBubble();
+  const targets = _scanCrossRefTargets(prefix);
+  bubble.dataset.prefix = prefix;
+
+  // Thumbnails come from the public-site mount (`/site/`) so relative paths
+  // like `images/articles/2849/figure-1.png` resolve through the admin server.
+  const thumbUrl = (raw) => {
+    if (!raw) return '';
+    if (/^(https?:|data:|blob:)/i.test(raw)) return raw;
+    return '/site/' + String(raw).replace(/^\//, '');
+  };
+  const truncate = (s, n) => {
+    s = (s || '').replace(/\s+/g, ' ').trim();
+    if (s.length <= n) return s;
+    return s.slice(0, n - 1) + '…';
+  };
+
+  // Figure tile = thumbnail + #N badge + truncated caption (Galenos-style).
+  // `pending` items live on disk (Dosyalar tab) but haven't been placed in
+  // the body yet — show them with a small "diskte" badge so the editor
+  // knows the cross-ref will only become live after Otomatik Düzenle.
+  const pendingBadge = '<span class="cr-pending-badge" title="Dosya yüklü ama metne henüz yerleştirilmedi — Otomatik Düzenle çalıştırın">diskte</span>';
+  const figTile = (f) => `
+    <button type="button" class="cr-fig-tile${f.pending ? ' cr-tile-pending' : ''}" data-kind="figure" data-num="${f.num}"
+      title="Figure ${f.num}${f.caption ? ' — ' + esc(f.caption) : ''}${f.pending ? ' (henüz metne yerleştirilmedi)' : ''}">
+      <span class="cr-fig-thumb">
+        ${f.thumbnail
+          ? `<img src="${esc(thumbUrl(f.thumbnail))}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+             <span class="cr-fig-placeholder" style="display:none">no preview</span>`
+          : `<span class="cr-fig-placeholder">no preview</span>`}
+        <span class="cr-fig-num">#${f.num}</span>
+        ${f.pending ? pendingBadge : ''}
+      </span>
+      <span class="cr-fig-caption">${esc(truncate(f.caption, 36) || 'Figure ' + f.num)}</span>
+    </button>`;
+
+  // Tables don't have a usable thumbnail; show an icon + label.
+  const tabTile = (t) => `
+    <button type="button" class="cr-tab-tile${t.pending ? ' cr-tile-pending' : ''}" data-kind="table" data-num="${t.num}"
+      title="Table ${t.num}${t.label ? ' — ' + esc(t.label) : ''}${t.pending ? ' (henüz metne yerleştirilmedi)' : ''}">
+      <span class="cr-tab-icon">▦</span>
+      <span class="cr-tab-text">
+        <span class="cr-tab-num">Table ${t.num}${t.pending ? ' ' + pendingBadge : ''}</span>
+        <span class="cr-tab-label">${esc(truncate(t.label || '—', 56))}</span>
+      </span>
+    </button>`;
+
+  // References get a searchable row list instead of chips — with 50+ refs
+  // common in review articles, a chip strip overflows the bubble. Each row
+  // shows "N. <text snippet>" and is clickable; the search input filters
+  // by number or any text in the citation.
+  const refRow = (r) => `
+    <button type="button" class="cr-ref-row" data-kind="ref" data-num="${r.num}">
+      <span class="cr-ref-row-num">${r.num}.</span>
+      <span class="cr-ref-row-text">${esc(r.snippet || 'Reference ' + r.num)}</span>
+    </button>`;
+
+  // Header action varies by kind. All three are "+ Yeni X" buttons now,
+  // matching the Galenos layout: figure/table upload an image, ref opens
+  // a small inline form to type the citation text. The actual file input
+  // sits outside the visible button (display:none) and gets click()ed
+  // programmatically — wrapping it inside a <label> was unreliable when the
+  // bubble's mousedown handler interfered.
+  const sectionAction = (manualKind) => {
+    if (manualKind === 'figure') {
+      return `<button type="button" class="cr-upload-btn" data-upload-kind="figure">+ Yeni Figür</button>
+        <input type="file" accept="image/*,.tif,.tiff" data-upload-input="figure" style="display:none">`;
+    }
+    if (manualKind === 'table') {
+      return `<button type="button" class="cr-upload-btn" data-upload-kind="table">+ Yeni Tablo</button>
+        <input type="file" accept="image/*,.tif,.tiff" data-upload-input="table" style="display:none">`;
+    }
+    // ref → "+ Yeni Kaynak" opens the inline form below.
+    return `<button type="button" class="cr-upload-btn" data-newref-toggle>+ Yeni Kaynak</button>`;
+  };
+  const section = (label, body, manualKind) => `
+    <div class="cr-bubble-section">
+      <div class="cr-bubble-section-head">
+        <span class="cr-bubble-label">${label}</span>
+        ${sectionAction(manualKind)}
+      </div>
+      <div class="cr-bubble-section-body">${body}</div>
+    </div>`;
+
+  const figBody = targets.figures.length
+    ? `<div class="cr-fig-grid">${targets.figures.map(figTile).join('')}</div>`
+    : `<span class="cr-bubble-empty">Bu makalede henüz figür yok — manuel numara girip yine de bağlantı verebilirsiniz.</span>`;
+  const tabBody = targets.tables.length
+    ? `<div class="cr-tab-list">${targets.tables.map(tabTile).join('')}</div>`
+    : `<span class="cr-bubble-empty">Bu makalede henüz tablo yok.</span>`;
+  const refBody = ((targets.refs || []).length
+    ? `<div class="cr-ref-search-wrap">
+         <input type="text" class="cr-ref-search" placeholder="Numara veya kaynak metni ara…">
+         <span class="cr-ref-count">${targets.refCount} kaynak</span>
+       </div>
+       <div class="cr-ref-list" data-ref-list>
+         ${targets.refs.map(refRow).join('')}
+       </div>`
+    : `<span class="cr-bubble-empty">Bu makalede henüz kaynakça yok.</span>`) +
+    // Inline form for "+ Yeni Kaynak". Hidden by default — toggled by the
+    // header button. Lets the editor add a new reference and link to it in
+    // one shot, paralleling the figure/table upload UX.
+    `<div class="cr-newref-form" data-newref-form hidden>
+      <textarea class="cr-newref-text" rows="2" placeholder="Kaynak metni — örn. Smith J, Doe R, et al. Title… JAMA. 2026;1:1-10."></textarea>
+      <div class="cr-newref-actions">
+        <button type="button" class="cr-newref-cancel">İptal</button>
+        <button type="button" class="cr-newref-go">Ekle</button>
+      </div>
+    </div>`;
+
+  bubble.innerHTML =
+    '<button type="button" class="cr-bubble-close" aria-label="Kapat" title="Kapat">×</button>' +
+    section('Figürler', figBody, 'figure') +
+    section('Tablolar', tabBody, 'table') +
+    section('Kaynaklar', refBody, 'ref');
+
+  // Does the requested target actually exist in the article? Used both for
+  // live input hints and post-insert toasts so the operator gets clear
+  // feedback ("Figure 3 henüz yok — link şimdi açılmaz, eklendiğinde otomatik
+  // çalışır") instead of silent underline.
+  const targetExists = (kind, num) => {
+    if (!Number.isInteger(num) || num <= 0) return false;
+    if (kind === 'figure') return targets.figures.some((f) => f.num === num);
+    if (kind === 'table')  return targets.tables.some((t) => t.num === num);
+    if (kind === 'ref')    return num <= targets.refCount;
+    return false;
+  };
+  const kindLabel = (kind) => kind === 'figure' ? 'Figure' : kind === 'table' ? 'Table' : 'Reference';
+  const announceInsert = (kind, num) => {
+    const label = `${kindLabel(kind)} ${num}`;
+    if (targetExists(kind, num)) {
+      toast(`${label} bağlandı`, 'success');
+    } else {
+      toast(`${label} henüz makalede yok — link eklendi. ${kindLabel(kind).toLowerCase()} eklenince otomatik çalışacak.`, 'warning');
+    }
+  };
+
+  // Wire chip + figure-tile + table-tile + manual handlers. Each click reads
+  // the saved range out of _crossRefSelection (filled by the selectionchange
+  // listener) before execCommand, so the anchor lands exactly on the
+  // highlighted text.
+  bubble.querySelectorAll('[data-kind][data-num]').forEach((b) => {
+    b.onclick = () => {
+      const kind = b.dataset.kind;
+      const num = Number(b.dataset.num);
+      insertCrossRef(prefix, kind, num);
+      announceInsert(kind, num);
+    };
+  });
+  bubble.querySelectorAll('[data-manual-go]').forEach((b) => {
+    b.onclick = () => {
+      const kind = b.dataset.manualGo;
+      const input = bubble.querySelector(`[data-manual-kind="${kind}"]`);
+      const n = Number(input && input.value);
+      if (!Number.isInteger(n) || n <= 0) { toast('Geçerli bir numara girin', 'warning'); return; }
+      insertCrossRef(prefix, kind, n);
+      announceInsert(kind, n);
+    };
+  });
+  // Live input hint — as the user types, indicate whether that number maps
+  // to an existing block ("✓ var" green) or not ("⚠ yok" amber). Saves the
+  // editor from inserting a dead link by mistake.
+  bubble.querySelectorAll('[data-manual-kind]').forEach((input) => {
+    const updateHint = () => {
+      const kind = input.dataset.manualKind;
+      const hint = bubble.querySelector(`[data-hint-kind="${kind}"]`);
+      if (!hint) return;
+      const n = Number(input.value);
+      if (!input.value || !Number.isInteger(n) || n <= 0) {
+        hint.textContent = '';
+        hint.className = 'cr-manual-hint';
+        return;
+      }
+      if (targetExists(kind, n)) {
+        hint.textContent = '✓ var';
+        hint.className = 'cr-manual-hint is-ok';
+      } else {
+        hint.textContent = '⚠ yok';
+        hint.className = 'cr-manual-hint is-warn';
+      }
+    };
+    input.oninput = updateHint;
+    input.onkeydown = (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        bubble.querySelector(`[data-manual-go="${input.dataset.manualKind}"]`).click();
+      }
+    };
+  });
+  // Reference search filter — hides rows whose number or text doesn't
+  // match. Lets the editor find ref #57 by typing "Yopes" or "2024" or
+  // "Circ Cardiovasc Imaging" instead of scrolling through 76 entries.
+  const refSearch = bubble.querySelector('.cr-ref-search');
+  const refList = bubble.querySelector('[data-ref-list]');
+  if (refSearch && refList) {
+    refSearch.oninput = () => {
+      const q = (refSearch.value || '').toLowerCase().trim();
+      let shown = 0;
+      refList.querySelectorAll('.cr-ref-row').forEach((row) => {
+        if (!q) { row.style.display = ''; shown++; return; }
+        const num = row.dataset.num;
+        const text = (row.textContent || '').toLowerCase();
+        const match = num === q || text.includes(q);
+        row.style.display = match ? '' : 'none';
+        if (match) shown++;
+      });
+      // Hint when nothing matches.
+      let empty = refList.querySelector('.cr-ref-empty');
+      if (!shown && !empty) {
+        empty = document.createElement('div');
+        empty.className = 'cr-ref-empty cr-bubble-empty';
+        empty.textContent = 'Eşleşen kaynak yok';
+        refList.appendChild(empty);
+      } else if (shown && empty) {
+        empty.remove();
+      }
+    };
+  }
+
+  // "Yeni Figür / Yeni Tablo" buttons → trigger the hidden <input type="file">
+  // programmatically. We avoid the <label><input></label> pattern because
+  // the bubble's mousedown preventDefault sometimes raced the label click
+  // and the file picker simply never opened.
+  bubble.querySelectorAll('[data-upload-kind]').forEach((btn) => {
+    btn.onclick = (e) => {
+      e.preventDefault();
+      const kind = btn.dataset.uploadKind;
+      const fileInput = bubble.querySelector(`[data-upload-input="${kind}"]`);
+      if (fileInput) fileInput.click();
+    };
+  });
+  bubble.querySelectorAll('[data-upload-input]').forEach((input) => {
+    input.onchange = () => {
+      const file = input.files && input.files[0];
+      if (!file) return;
+      _uploadInlineMedia(prefix, input.dataset.uploadInput, file);
+      input.value = ''; // allow re-picking the same file
+    };
+  });
+
+  // "+ Yeni Kaynak" — toggles the inline form that captures a single
+  // reference's text + appends it to the article's <ol> + inserts ref-N.
+  const newRefBtn = bubble.querySelector('[data-newref-toggle]');
+  const newRefForm = bubble.querySelector('[data-newref-form]');
+  if (newRefBtn && newRefForm) {
+    newRefBtn.onclick = () => {
+      newRefForm.hidden = !newRefForm.hidden;
+      if (!newRefForm.hidden) {
+        const ta = newRefForm.querySelector('.cr-newref-text');
+        if (ta) ta.focus();
+      }
+    };
+    newRefForm.querySelector('.cr-newref-cancel').onclick = () => {
+      newRefForm.hidden = true;
+      newRefForm.querySelector('.cr-newref-text').value = '';
+    };
+    newRefForm.querySelector('.cr-newref-go').onclick = () => {
+      const ta = newRefForm.querySelector('.cr-newref-text');
+      const text = (ta.value || '').trim();
+      if (!text) { toast('Kaynak metni boş olamaz', 'warning'); return; }
+      _addInlineReference(prefix, text);
+      ta.value = '';
+      newRefForm.hidden = true;
+    };
+    newRefForm.querySelector('.cr-newref-text').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) {
+        e.preventDefault();
+        newRefForm.querySelector('.cr-newref-go').click();
+      }
+    });
+  }
+
+  bubble.querySelector('.cr-bubble-close').onclick = hideCrossRefBubble;
+}
+
+// Append a reference to the article's <ol> of references, creating the
+// <div class="article-references"><h3>References</h3><ol> wrapper if it
+// doesn't exist yet. Then insert a <sup><a href="#ref-N"> cross-reference
+// at the saved selection.
+function _addInlineReference(prefix, text) {
+  const visual = document.getElementById(prefix + '-visual');
+  if (!visual) return;
+  // Find or create the references list.
+  let refsDiv = visual.querySelector('.article-references');
+  let ol;
+  if (refsDiv) {
+    ol = refsDiv.querySelector('ol');
+    if (!ol) {
+      ol = document.createElement('ol');
+      refsDiv.appendChild(ol);
+    }
+  } else {
+    refsDiv = document.createElement('div');
+    refsDiv.className = 'article-references';
+    refsDiv.innerHTML = '<h3>References</h3><ol></ol>';
+    visual.appendChild(refsDiv);
+    ol = refsDiv.querySelector('ol');
+  }
+  const nextNum = ol.querySelectorAll(':scope > li').length + 1;
+  const li = document.createElement('li');
+  li.id = `ref-${nextNum}`;
+  li.textContent = text;
+  ol.appendChild(li);
+
+  // Insert cross-ref at saved selection.
+  insertCrossRef(prefix, 'ref', nextNum);
+  markDirty();
+  toast(`Kaynak ${nextNum} eklendi ve bağlandı`, 'success');
+  // Newly-added ref can heal any previously broken citation anchors.
+  _validateCrossRefAnchors(visual);
+  // Re-link bare <sup>N</sup> in the body now that ref-N exists as a target.
+  _autoLinkInEditor(visual);
+  _renderCrossRefBubble(prefix);
+}
+
+// Parse a figure/table number out of a media filename. Handles BMJ-style
+// "BalkanMedJ-43-4-196-figure-1.png", manuscript-style "297-308-f1.png",
+// generic "figure-1.png" / "Fig_01.jpg" / "fig1.tiff", and "table-2.png".
+// Returns the integer or null when nothing matches.
+function _extractMediaNum(filename, kind) {
+  // Returns `{ num, panel }` so `figure-1.png`, `figure-1a.png`, `t2b.png`,
+  // `BalkanMedJ-43-2-figure-3B.png` all carry their panel letter forward.
+  // Sub-panels (1a, 1b, 1c) belong to the same parent figure-N block — the
+  // auto-arrange flow stacks them as labelled panels under one <figure>.
+  if (!filename) return null;
+  const lower = String(filename).toLowerCase().replace(/\.[a-z0-9]+$/, '');
+  // The trailing (?![\da-z]) guard makes sure we don't half-match "figure-12"
+  // out of "figure-12abc"; we want a clean "N" or "N<letter>" capture.
+  if (kind === 'table') {
+    let m = lower.match(/(?:^|[-_])table[-_]?(\d+)([a-z])?(?![\da-z])/);
+    if (m) return { num: Number(m[1]), panel: m[2] || null };
+    m = lower.match(/(?:^|[-_])t[-_]?(\d+)([a-z])?(?:$|[-_])/);
+    if (m) return { num: Number(m[1]), panel: m[2] || null };
+    return null;
+  }
+  let m = lower.match(/(?:^|[-_])figure[-_]?(\d+)([a-z])?(?![\da-z])/);
+  if (m) return { num: Number(m[1]), panel: m[2] || null };
+  m = lower.match(/(?:^|[-_])fig[-_]?(\d+)([a-z])?(?![\da-z])/);
+  if (m) return { num: Number(m[1]), panel: m[2] || null };
+  m = lower.match(/(?:^|[-_])f[-_]?(\d+)([a-z])?(?:$|[-_])/);
+  if (m) return { num: Number(m[1]), panel: m[2] || null };
+  return null;
+}
+
+// Build a map  num → first paragraph element  that mentions a given figure
+// or table. Crucially it understands multi-number sequences like
+// "Figures 2, 3 and 4" / "Figs. 2-4" / "Şekiller 1 ve 2" — every number
+// inside a sequence is treated as mentioned by the SAME paragraph, which is
+// the natural reading layout. Ranges ("2-4") are expanded to fill the gap.
+function _buildMentionMap(visualEl, kind) {
+  const map = new Map();
+  if (!visualEl) return map;
+  const wordAlt = kind === 'table'
+    ? 'tables?|tablolar?|tablo'
+    : 'figures?|figs?\\.?|şekiller?|şekil|sekil';
+  const seqPattern = new RegExp(
+    `(?<![A-Za-z])(${wordAlt})\\s+((?:\\d+[a-z]?)(?:\\s*(?:,|-|–|\\sand\\s|\\sve\\s)\\s*\\d+[a-z]?)*)`,
+    'gi'
+  );
+  const candidates = visualEl.querySelectorAll('p, li, blockquote, td, h1, h2, h3, h4');
+  for (const el of candidates) {
+    if (el.closest('.article-references, .article-acknowledgments, .article-footnotes, .article-supplementary, .article-figure, .article-table-wrap, figure')) continue;
+    const text = el.textContent || '';
+    let m;
+    seqPattern.lastIndex = 0;
+    while ((m = seqPattern.exec(text)) !== null) {
+      const seq = m[2];
+      // 1) Each explicit number in the sequence gets mapped here.
+      const explicit = (seq.match(/\d+/g) || []).map(Number);
+      for (const n of explicit) {
+        if (!map.has(n)) map.set(n, el);
+      }
+      // 2) A bare "A-B" / "A–B" range expands the gap: "Figs. 2-4" → 2,3,4.
+      const rangeMatch = seq.match(/^\s*(\d+)\s*[-–]\s*(\d+)\s*$/);
+      if (rangeMatch) {
+        const lo = Number(rangeMatch[1]);
+        const hi = Number(rangeMatch[2]);
+        if (lo <= hi && hi - lo < 30) {
+          for (let i = lo + 1; i < hi; i += 1) if (!map.has(i)) map.set(i, el);
+        }
+      }
+    }
+  }
+  return map;
+}
+
+// Build a fresh figure / table block matching the modern JATS structure,
+// styled the same way the public site renders. Reused by Yeni Figür/Tablo
+// upload (which produces a single block) and the auto-arrange flow (which
+// places many blocks at once).
+function _buildMediaBlock(kind, num, panelsOrUrl) {
+  // Accepts either a single URL string (legacy single-image block) or an
+  // array of `{ panel, url }` so multi-panel figures (1A, 1B, 1C) render
+  // as one labelled <figure> with stacked <img>s.
+  let panels;
+  if (typeof panelsOrUrl === 'string' || panelsOrUrl == null) {
+    panels = [{ panel: null, url: panelsOrUrl || '' }];
+  } else if (Array.isArray(panelsOrUrl)) {
+    panels = panelsOrUrl.length ? panelsOrUrl : [{ panel: null, url: '' }];
+  } else {
+    panels = [{ panel: null, url: '' }];
+  }
+  const isMulti = panels.length > 1 || (panels[0] && panels[0].panel);
+  const panelHtml = (kind, num, p, i) => {
+    const letter = (p.panel || String.fromCharCode(97 + i)).toUpperCase();
+    const safeUrl = String(p.url || '').replace(/^\//, '');
+    const altLabel = kind === 'figure' ? `Figure ${num}${letter}` : `Table ${num}${letter}`;
+    return `<div class="article-${kind}-panel" data-panel="${letter}">` +
+           `<img src="${esc(safeUrl)}" alt="${altLabel}" loading="lazy">` +
+           `<span class="article-${kind}-panel-label">(${letter})</span>` +
+           `</div>`;
+  };
+
+  if (kind === 'figure') {
+    const fig = document.createElement('figure');
+    fig.id = `figure-${num}`;
+    fig.className = 'article-figure';
+    if (!isMulti) {
+      const safeUrl = String(panels[0].url || '').replace(/^\//, '');
+      fig.innerHTML =
+        `<img src="${esc(safeUrl)}" alt="Figure ${num}" loading="lazy">` +
+        `<p><strong>FIG. ${num}.</strong> </p>`;
+    } else {
+      fig.innerHTML =
+        panels.map((p, i) => panelHtml('figure', num, p, i)).join('') +
+        `<p><strong>FIG. ${num}.</strong> </p>`;
+    }
+    return fig;
+  }
+  const wrap = document.createElement('div');
+  wrap.id = `table-${num}`;
+  wrap.className = 'article-table-wrap';
+  if (!isMulti) {
+    const safeUrl = String(panels[0].url || '').replace(/^\//, '');
+    wrap.innerHTML =
+      `<p class="table-label"><strong>TABLE ${num}.</strong> </p>` +
+      `<img src="${esc(safeUrl)}" alt="Table ${num}" loading="lazy">`;
+  } else {
+    wrap.innerHTML =
+      `<p class="table-label"><strong>TABLE ${num}.</strong> </p>` +
+      panels.map((p, i) => panelHtml('table', num, p, i)).join('');
+  }
+  return wrap;
+}
+
+// One-shot "Otomatik Düzenle": fetches every uploaded figure / table from
+// Dosyalar, drops each one under the paragraph that mentions it, then runs
+// the full normalisation chain so references and inline mentions get wired
+// up. If the article has no figures/tables, only the reference auto-linking
+// runs — which is exactly what the editor asks for ("varsa figür/tablo, yoksa
+// sadece kaynaklar bağlansın").
+async function _autoArrangeFullText(prefix) {
+  const articleId = currentArticleIdFromHash();
+  if (!articleId) { toast('Makaleyi önce kaydedin — otomatik düzenleme için makale ID gerekir.', 'warning'); return; }
+  const visual = document.getElementById(prefix + '-visual');
+  if (!visual) return;
+  const status = document.getElementById(prefix === 'aip-ft' ? 'aipf-fulltext-status' : 'f-fulltext-status');
+  if (status) status.textContent = 'Otomatik düzenleme çalışıyor…';
+
+  let assets = { figures: [], supplementary: [] };
+  try {
+    assets = await API.get(`/media/article/${articleId}/assets`);
+  } catch (_) { /* if endpoint fails, proceed with empty assets — refs still get linked */ }
+
+  // Map each uploaded file to its detected number AND panel letter. Two
+  // files for the same N (e.g. figure-1a.png + figure-1b.png) collapse
+  // into one composite <figure id="figure-1"> with labelled panels.
+  const buckets = { figure: new Map(), table: new Map() };
+  (assets.figures || []).forEach((f) => {
+    const isTable = /(?:^|[-_])tab(?:le)?[-_]?\d+/i.test(f.filename || '');
+    const kind = isTable ? 'table' : 'figure';
+    const meta = _extractMediaNum(f.filename, kind);
+    if (!meta || !meta.num) return;
+    if (!buckets[kind].has(meta.num)) buckets[kind].set(meta.num, []);
+    buckets[kind].get(meta.num).push({ panel: meta.panel, url: f.url, filename: f.filename });
+  });
+  // Sort panels A → B → C inside each bucket; null-panel entries come first
+  // so a "figure-1.png" + "figure-1a.png" pair keeps the bare version on top.
+  const sortPanels = (a, b) => {
+    if (!a.panel && b.panel) return -1;
+    if (a.panel && !b.panel) return 1;
+    return (a.panel || '').localeCompare(b.panel || '');
+  };
+  buckets.figure.forEach((arr) => arr.sort(sortPanels));
+  buckets.table.forEach((arr) => arr.sort(sortPanels));
+
+  let placed = 0;
+  _suppressDirty = true;
+  try {
+    for (const kind of ['figure', 'table']) {
+      // Pre-build a mention map that understands multi-number sequences so
+      // "Figures 2, 3 and 4" puts every one of those numbers under the same
+      // host paragraph (instead of only figure-2 landing there).
+      const mentionMap = _buildMentionMap(visual, kind);
+      const sorted = [...buckets[kind].entries()].sort((a, b) => a[0] - b[0]);
+      // Walk in REVERSE numerical order so multiple blocks sharing one host
+      // paragraph end up in ascending order after consecutive insertBefore
+      // calls (same trick as relocateFiguresAndTables).
+      for (const [num, panels] of sorted.reverse()) {
+        const id = `${kind}-${num}`;
+        if (visual.querySelector('#' + CSS.escape(id))) continue; // already there
+        const host = mentionMap.get(num) || null;
+        const block = _buildMediaBlock(kind, num, panels);
+        if (host && host.parentNode) {
+          host.parentNode.insertBefore(block, host.nextSibling);
+        } else {
+          visual.appendChild(block); // no mention found — append to end
+        }
+        placed += 1;
+      }
+    }
+
+    // Now run the standard normalisation chain so anchors, IDs, caption
+    // prefixes, and references all line up.
+    _normalizeMsoReferenceList(visual);
+    _ensureMediaIds(visual);
+    _autoLinkInEditor(visual);
+    _validateCrossRefAnchors(visual);
+  } finally {
+    _suppressDirty = false;
+  }
+
+  // Count what got wired so the user sees a meaningful summary.
+  const linkedFigTab = visual.querySelectorAll('a.article-media-ref-link').length;
+  const linkedRefs = visual.querySelectorAll('a.article-ref-citation').length;
+  const refCount = (visual.querySelector('.article-references ol, ol.article-references-ol') || { children: [] }).children.length;
+
+  markDirty();
+  const msgParts = [];
+  if (placed) msgParts.push(`${placed} figür/tablo yerleştirildi`);
+  if (linkedFigTab) msgParts.push(`${linkedFigTab} figür/tablo atfı bağlandı`);
+  if (linkedRefs) msgParts.push(`${linkedRefs} kaynak atfı bağlandı`);
+  if (refCount) msgParts.push(`${refCount} kaynakça maddesi tanındı`);
+  if (!msgParts.length) msgParts.push('Düzenlenecek bir şey bulunamadı');
+  if (status) status.textContent = msgParts.join(' · ');
+  toast(msgParts.join(', '), placed || linkedFigTab || linkedRefs ? 'success' : 'info');
+}
+
+async function _uploadInlineMedia(prefix, kind, file) {
+  const articleId = currentArticleIdFromHash();
+  if (!articleId) {
+    toast('Makaleyi önce kaydedin; ondan sonra figür/tablo yüklenebilir.', 'warning');
+    return;
+  }
+  const visual = document.getElementById(prefix + '-visual');
+  if (!visual) return;
+
+  // Determine the next free number from existing blocks IN THE EDITOR. This
+  // is critical because we want consecutive numbering (figure-1, figure-2,
+  // figure-3, …) regardless of what's already on disk in /images/articles/.
+  const targets = _scanCrossRefTargets(prefix);
+  const existing = (kind === 'figure' ? targets.figures : targets.tables) || [];
+  const nextNum = existing.length
+    ? (Math.max(...existing.map((x) => x.num)) + 1)
+    : 1;
+
+  toast(`${file.name} yükleniyor…`, 'info');
+  try {
+    const fd = new FormData();
+    fd.append('figures', file, file.name);
+    const res = await fetch(`/api/media/upload/figures/${articleId}`, { method: 'POST', body: fd });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Yükleme hatası');
+    const uploaded = data.uploaded && data.uploaded[0];
+    if (!uploaded || !uploaded.url) throw new Error('Sunucu URL döndürmedi');
+
+    // Build the inline block matching the modern JATS structure so the
+    // public-site enhancers (caption normalize, relocate, link styling)
+    // pick it up automatically once saved.
+    let block;
+    if (kind === 'figure') {
+      block = document.createElement('figure');
+      block.id = `figure-${nextNum}`;
+      block.className = 'article-figure';
+      block.innerHTML =
+        `<img src="${esc(uploaded.url)}" alt="Figure ${nextNum}" loading="lazy">` +
+        `<p><strong>FIG. ${nextNum}.</strong> </p>`;
+    } else {
+      block = document.createElement('div');
+      block.id = `table-${nextNum}`;
+      block.className = 'article-table-wrap';
+      block.innerHTML =
+        `<p class="table-label"><strong>TABLE ${nextNum}.</strong> </p>` +
+        `<img src="${esc(uploaded.url)}" alt="Table ${nextNum}" loading="lazy">`;
+    }
+    visual.appendChild(block);
+
+    // Insert the cross-reference at the user's saved selection AND announce.
+    insertCrossRef(prefix, kind, nextNum);
+    markDirty();
+    toast(`${kind === 'figure' ? 'Figure' : 'Table'} ${nextNum} eklendi ve bağlandı`, 'success');
+    // Newly-added block can heal any previously broken anchors that pointed
+    // at this ID — re-validate so the red dashed underline disappears.
+    _validateCrossRefAnchors(visual);
+    // Also re-run plain-text auto-link so existing "Figure N" mentions to
+    // this new figure become clickable now that the target exists.
+    _autoLinkInEditor(visual);
+    // Re-render the bubble so the newly-uploaded block appears as a chip
+    // even before the user saves the article.
+    _renderCrossRefBubble(prefix);
+  } catch (err) {
+    toast('Yükleme başarısız: ' + (err.message || err), 'error');
+  }
+}
+
+function _positionCrossRefBubble(range) {
+  const bubble = ensureCrossRefBubble();
+  bubble.classList.remove('hidden');
+  // Measure after render so we know the bubble's height.
+  const rect = range.getBoundingClientRect();
+  const bubbleRect = bubble.getBoundingClientRect();
+  const margin = 8;
+  const viewportTop = window.scrollY;
+  // Default: place above the selection.
+  let top = rect.top + window.scrollY - bubbleRect.height - margin;
+  let flip = '';
+  if (top < viewportTop + 4) {
+    // Not enough room above → flip to below.
+    top = rect.bottom + window.scrollY + margin;
+    flip = 'below';
+  }
+  let left = rect.left + window.scrollX + (rect.width / 2) - (bubbleRect.width / 2);
+  // Keep inside viewport horizontally.
+  const minLeft = window.scrollX + 8;
+  const maxLeft = window.scrollX + window.innerWidth - bubbleRect.width - 8;
+  if (left < minLeft) left = minLeft;
+  if (left > maxLeft) left = maxLeft;
+  bubble.style.top = top + 'px';
+  bubble.style.left = left + 'px';
+  if (flip) bubble.dataset.flip = flip;
+  else bubble.removeAttribute('data-flip');
+}
+
+// Global selectionchange listener — one per page, finds whichever FT visual
+// editor (article or AIP) currently has the user's selection and shows the
+// bubble. Hides the bubble when selection collapses or moves elsewhere.
+let _crossRefBubbleWired = false;
+function _wireCrossRefBubbleOnce() {
+  if (_crossRefBubbleWired) return;
+  _crossRefBubbleWired = true;
+
+  document.addEventListener('selectionchange', () => {
+    // While the user is typing into the bubble's manual number input, focus
+    // (and therefore window.getSelection()) is inside the bubble — don't
+    // dismiss the bubble it lives in.
+    const bubbleEl = document.getElementById('cr-bubble');
+    if (bubbleEl && !bubbleEl.classList.contains('hidden')
+        && document.activeElement && bubbleEl.contains(document.activeElement)) {
+      return;
+    }
+    const sel = window.getSelection();
+    if (!sel || !sel.rangeCount || sel.isCollapsed) { hideCrossRefBubble(); return; }
+    const range = sel.getRangeAt(0);
+    // Detect which FT editor (if any) contains the selection.
+    let node = range.commonAncestorContainer;
+    if (node && node.nodeType !== 1) node = node.parentNode;
+    let prefix = null;
+    while (node) {
+      if (node.id === 'ft-visual') { prefix = 'ft'; break; }
+      if (node.id === 'aip-ft-visual') { prefix = 'aip-ft'; break; }
+      node = node.parentNode;
+    }
+    if (!prefix) { hideCrossRefBubble(); return; }
+    if (!range.toString().trim()) { hideCrossRefBubble(); return; }
+    // Save selection so chip clicks restore the exact range.
+    _crossRefSelection[prefix] = { range: range.cloneRange(), text: range.toString() };
+    _renderCrossRefBubble(prefix);
+    // Re-position twice: once immediately (best guess) and once after a
+    // layout tick (now that the bubble has its real height).
+    _positionCrossRefBubble(range);
+    requestAnimationFrame(() => _positionCrossRefBubble(range));
+  });
+
+  // Hide on outside click (but not on bubble clicks — those would have
+  // already inserted via the chip handler).
+  document.addEventListener('mousedown', (e) => {
+    const bubble = document.getElementById('cr-bubble');
+    if (!bubble || bubble.classList.contains('hidden')) return;
+    if (bubble.contains(e.target)) return;
+    const visual = document.getElementById('ft-visual') || document.getElementById('aip-ft-visual');
+    if (visual && visual.contains(e.target)) return;
+    hideCrossRefBubble();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') hideCrossRefBubble();
+  });
+}
+// Wire on first script load so the bubble works before any editor renders.
+_wireCrossRefBubbleOnce();
+
+async function openSupplementaryPicker(prefix) {
+  const articleId = currentArticleIdFromHash();
+  if (!articleId) {
+    toast('Makaleyi önce kaydedin — kayıtlı bir makale için ek materyal eklenebilir.', 'warning');
+    return;
+  }
+
+  // Build the candidate list from two sources:
+  // 1) Uploaded files on disk (GET /api/media/article/:id/assets)
+  // 2) URL rows added in the "Ek Materyaller" panel (live DOM state)
+  const candidates = [];
+  try {
+    const assets = await API.get(`/media/article/${articleId}/assets`);
+    for (const f of (assets.supplementary || [])) {
+      candidates.push({
+        source: 'file',
+        url: f.url,
+        label: f.filename,
+        caption: '',
+        kind: detectSuppKind(f.filename),
+      });
+    }
+  } catch { /* ignore — section just stays empty */ }
+
+  // Live URL rows
+  const rows = document.querySelectorAll('.supp-link-row');
+  for (const r of rows) {
+    const url = (r.querySelector('.sl-href')?.value || '').trim();
+    if (!url) continue;
+    const label = (r.querySelector('.sl-label')?.value || '').trim() || url.split('/').pop();
+    const caption = (r.querySelector('.sl-caption')?.value || '').trim();
+    candidates.push({ source: 'url', url, label, caption, kind: detectSuppKind(url) });
+  }
+
+  // De-duplicate by URL — uploaded file may also be referenced as a URL row
+  const seen = new Set();
+  const items = [];
+  for (const c of candidates) {
+    const key = c.url.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    items.push(c);
+  }
+
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.innerHTML = `
+    <div class="modal-dialog" style="max-width:680px">
+      <div class="flex items-center justify-between px-6 py-4" style="border-bottom:1px solid var(--border-soft)">
+        <h3 class="text-base font-semibold" style="color:var(--text-strong);letter-spacing:-0.01em">Ek Materyal Ekle</h3>
+        <button class="modal-close p-1.5 rounded-md" style="color:var(--text-muted)" aria-label="Kapat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="px-6 py-4">
+        <p class="text-sm mb-3" style="color:var(--text)">
+          Yüklediğiniz ek materyaller. Bir dosya seçin, ne şekilde ekleneceğini belirleyin ve <strong>Ekle</strong> butonuna basın — tam metin imlecinizin olduğu yere otomatik yerleşir.
+        </p>
+        ${items.length === 0 ? `
+          <div class="text-center py-8" style="color:var(--text-muted)">
+            <p class="text-sm">Bu makale için yüklü ek materyal yok.</p>
+            <p class="text-xs mt-1">Önce <strong>Dosyalar</strong> sekmesinden dosya yükleyin veya URL ekleyin.</p>
+          </div>
+        ` : `
+          <div class="space-y-2" style="max-height:360px;overflow-y:auto;border:1px solid var(--border-soft);border-radius:var(--radius-md);padding:8px">
+            ${items.map((it, i) => `
+              <label class="flex items-center gap-3 p-2 rounded-lg cursor-pointer hover:bg-gray-50" style="border:1px solid transparent" data-supp-row="${i}">
+                <input type="radio" name="supp-pick" value="${i}" class="text-teal-600" ${i === 0 ? 'checked' : ''}>
+                <span style="flex-shrink:0;width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;background:#f0fdfa;color:#0f766e">
+                  ${suppKindIcon(it.kind)}
+                </span>
+                <div class="flex-1 min-w-0">
+                  <div class="text-sm font-medium truncate" style="color:var(--text-strong)">${esc(it.label)}</div>
+                  <div class="text-xs flex items-center gap-2 mt-0.5">
+                    <span class="badge" style="background:#f3f4f6;color:#6b7280;font-size:10px;padding:1px 6px">${suppKindLabel(it.kind)}</span>
+                    <code style="color:var(--text-muted);font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(it.url)}</code>
+                  </div>
+                </div>
+              </label>
+            `).join('')}
+          </div>
+
+          <div class="mt-4 pt-3" style="border-top:1px solid var(--border-soft)">
+            <div class="flex items-center justify-between gap-3 flex-wrap">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-medium" style="color:var(--text-strong)">Nasıl eklensin?</span>
+                <div class="inline-flex items-center bg-gray-100 rounded-lg p-0.5 text-xs font-medium select-none" id="supp-mode">
+                  <button type="button" data-mode="link"  class="mode-btn px-3 py-1.5 rounded-md bg-white shadow-sm text-teal-700">Link</button>
+                  <button type="button" data-mode="embed" class="mode-btn px-3 py-1.5 rounded-md text-gray-500 hover:text-gray-800">Göm (görsel/video)</button>
+                </div>
+              </div>
+              <div class="flex-1 min-w-[200px]">
+                <input id="supp-custom-label" type="text" placeholder="Görünen metin (boşsa dosya adı)" class="w-full px-3 py-1.5 text-sm rounded-lg" style="border:1px solid var(--border)">
+              </div>
+            </div>
+          </div>
+        `}
+      </div>
+      <div class="flex justify-end gap-2 px-6 py-4" style="border-top:1px solid var(--border-soft);background:var(--bg-subtle);border-radius:0 0 var(--radius-lg) var(--radius-lg)">
+        <button data-action="cancel" class="btn btn-secondary">İptal</button>
+        ${items.length > 0 ? '<button data-action="insert" class="btn btn-primary">Editöre Ekle</button>' : ''}
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+
+  // Mode switch
+  let mode = 'link';
+  overlay.querySelectorAll('#supp-mode .mode-btn').forEach(btn => {
+    btn.onclick = () => {
+      mode = btn.dataset.mode;
+      overlay.querySelectorAll('#supp-mode .mode-btn').forEach(b => {
+        b.classList.toggle('bg-white', b === btn);
+        b.classList.toggle('shadow-sm', b === btn);
+        b.classList.toggle('text-teal-700', b === btn);
+        b.classList.toggle('text-gray-500', b !== btn);
+      });
+    };
+  });
+
+  const close = () => { overlay.remove(); document.removeEventListener('keydown', onKey); };
+  overlay.querySelector('.modal-close').onclick = close;
+  overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+  const onKey = (e) => { if (e.key === 'Escape') close(); };
+  document.addEventListener('keydown', onKey);
+
+  overlay.querySelectorAll('[data-action]').forEach(btn => {
+    btn.onclick = () => {
+      if (btn.dataset.action !== 'insert') { close(); return; }
+      const picked = overlay.querySelector('input[name="supp-pick"]:checked');
+      if (!picked) { toast('Bir dosya seçin', 'warning'); return; }
+      const it = items[Number(picked.value)];
+      const customLabel = overlay.querySelector('#supp-custom-label')?.value.trim() || it.label;
+      const html = buildSupplementaryInsertHtml(it, mode, customLabel);
+      close();
+      htmlEditorInsertHtml(prefix, html);
+      toast(`"${customLabel}" tam metne eklendi`);
+    };
+  });
+}
+
+function buildSupplementaryInsertHtml(item, mode, label) {
+  const url = item.url;
+  const safeLabel = esc(label || item.label || 'Ek Materyal');
+  const caption = item.caption ? `<figcaption style="font-size:0.875rem;color:#6b7280;margin-top:0.5rem">${esc(item.caption)}</figcaption>` : '';
+  // Image / video embed only valid for the matching kind
+  if (mode === 'embed' && item.kind === 'image') {
+    return `<figure><img src="${esc(url)}" alt="${safeLabel}" style="max-width:100%;height:auto" />${caption}</figure>`;
+  }
+  if (mode === 'embed' && item.kind === 'video') {
+    return `<figure><video controls preload="metadata" style="max-width:100%"><source src="${esc(url)}"></video>${caption}</figure>`;
+  }
+  if (mode === 'embed' && item.kind === 'audio') {
+    return `<figure><audio controls preload="metadata" style="width:100%"><source src="${esc(url)}"></audio>${caption}</figure>`;
+  }
+  // Default → link (also fallback when "embed" requested on non-media)
+  const kindHint = item.kind !== 'file' ? ` <span style="color:#6b7280;font-size:0.85em">(${suppKindLabel(item.kind)})</span>` : '';
+  return `<p><a href="${esc(url)}" target="_blank" rel="noopener">${safeLabel}</a>${kindHint}</p>`;
+}
+
+function htmlEditorInsertHtml(prefix, html) {
+  const visual = document.getElementById(`${prefix}-visual`);
+  if (!visual) return;
+  // If user is in source mode, append to textarea instead
+  const mode = _htmlEditorModes[prefix];
+  if (mode === 'source') {
+    const source = document.getElementById(`${prefix}-source`);
+    if (source) { source.value += (source.value.endsWith('\n') ? '' : '\n') + html + '\n'; markDirty(); }
+    return;
+  }
+  visual.focus();
+  // Restore cursor to end if there's no selection inside the editor
+  const sel = window.getSelection();
+  if (!sel || sel.rangeCount === 0 || !visual.contains(sel.anchorNode)) {
+    const range = document.createRange();
+    range.selectNodeContents(visual);
+    range.collapse(false);
+    sel.removeAllRanges();
+    sel.addRange(range);
+  }
+  document.execCommand('insertHTML', false, html);
+  markDirty();
+}
+
+function setHtmlEditorMode(prefix, mode) {
+  const visual = document.getElementById(`${prefix}-visual`);
+  const source = document.getElementById(`${prefix}-source`);
+  const toolbar = document.getElementById(`${prefix}-toolbar`);
+  const sw = document.getElementById(`${prefix}-modeswitch`);
+  if (!visual || !source) return;
+  if (mode === _htmlEditorModes[prefix]) return; // no-op
+  if (mode === 'source') {
+    // Visual → Source: sync innerHTML into textarea
+    source.value = visual.innerHTML;
+    visual.classList.add('hidden');
+    if (toolbar) toolbar.classList.add('hidden');
+    source.classList.remove('hidden');
+  } else {
+    // Source → Visual: sync textarea into innerHTML
+    visual.innerHTML = source.value;
+    source.classList.add('hidden');
+    visual.classList.remove('hidden');
+    if (toolbar) toolbar.classList.remove('hidden');
+  }
+  _htmlEditorModes[prefix] = mode;
+  // Update segmented-control active styles
+  if (sw) {
+    sw.querySelectorAll('.mode-btn').forEach((btn) => {
+      const isActive = btn.dataset.mode === mode;
+      btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      if (isActive) {
+        btn.classList.add('bg-white', 'shadow-sm', mode === 'visual' ? 'text-teal-700' : 'text-gray-900');
+        btn.classList.remove('text-gray-500', 'hover:text-gray-800');
+      } else {
+        btn.classList.remove('bg-white', 'shadow-sm', 'text-teal-700', 'text-gray-900');
+        btn.classList.add('text-gray-500', 'hover:text-gray-800');
+      }
+    });
+  }
+}
+
+// Backwards-compatible toggle (kept in case any caller still references it)
+function toggleHtmlEditor(prefix) {
+  const next = _htmlEditorModes[prefix] === 'visual' ? 'source' : 'visual';
+  setHtmlEditorMode(prefix, next);
+}
+
+function getHtmlEditorContent(prefix) {
+  const mode = _htmlEditorModes[prefix] || 'visual';
+  if (mode === 'visual') {
+    return (document.getElementById(`${prefix}-visual`)?.innerHTML || '').trim();
+  }
+  return (document.getElementById(`${prefix}-source`)?.value || '').trim();
+}
+
+function setHtmlEditorContent(prefix, html) {
+  const visual = document.getElementById(`${prefix}-visual`);
+  const source = document.getElementById(`${prefix}-source`);
+  if (visual) visual.innerHTML = html || '';
+  if (source) source.value = html || '';
+}
+
+// Attach a paste handler to all WYSIWYG visual editors so pasted content is
+// always interpreted as HTML (clipboard HTML if available, else plain text
+// promoted to <p> blocks). This prevents the case where a user pastes raw HTML
+// markup and sees the tags as literal text.
+function attachWysiwygPasteHandler(visualEl) {
+  if (!visualEl || visualEl._pasteAttached) return;
+  visualEl._pasteAttached = true;
+  visualEl.addEventListener('paste', (e) => {
+    if (!e.clipboardData) return;
+    const html = e.clipboardData.getData('text/html');
+    const text = e.clipboardData.getData('text/plain');
+    // If the clipboard has rich HTML, sanitize and insert it directly.
+    if (html && html.trim()) {
+      e.preventDefault();
+      const cleaned = sanitizeUploadedHtml(html);
+      document.execCommand('insertHTML', false, cleaned);
+      return;
+    }
+    // If only plain text, check whether the user pasted *raw HTML markup*
+    // (typical case for users who copy from a code editor). Detect tags and
+    // insert as HTML instead of literal text. Otherwise let the browser do
+    // its default plain-text paste.
+    if (text && /<[a-z][\s\S]*?>/i.test(text)) {
+      e.preventDefault();
+      const cleaned = sanitizeUploadedHtml(text);
+      document.execCommand('insertHTML', false, cleaned);
+    }
+    // else: fall through, default plain-text paste
+  });
+}
+
+// Wire up paste handlers on all existing visual editors on the page.
+// Called from setHtmlEditorMode and after route changes.
+function wireAllWysiwygPasteHandlers() {
+  document.querySelectorAll('[id$="-visual"][contenteditable="true"]').forEach(attachWysiwygPasteHandler);
+}
+
 // ── Abstract WYSIWYG editor helpers ──
 let _abstractEditorMode = 'visual';
 
@@ -2429,30 +5364,46 @@ function abstractCmd(command, value) {
   markDirty();
 }
 
-function toggleAbstractEditor() {
+function setAbstractEditorMode(mode) {
   const visual = document.getElementById('f-abstractHtml-visual');
   const source = document.getElementById('f-abstractHtml');
   const toolbar = document.getElementById('f-abstract-toolbar');
-  const toggle = document.getElementById('f-abstract-toggle');
-  if (_abstractEditorMode === 'visual') {
+  const sw = document.getElementById('f-abstract-modeswitch');
+  if (!visual || !source) return;
+  if (mode === _abstractEditorMode) return;
+  if (mode === 'source') {
     source.value = visual.innerHTML;
     visual.classList.add('hidden');
-    toolbar.classList.add('hidden');
+    if (toolbar) toolbar.classList.add('hidden');
     source.classList.remove('hidden');
     source.classList.remove('rounded-b-lg');
     source.classList.add('rounded-lg');
-    toggle.textContent = 'Görsel Editör';
-    _abstractEditorMode = 'source';
   } else {
     visual.innerHTML = source.value;
     source.classList.add('hidden');
     visual.classList.remove('hidden');
-    toolbar.classList.remove('hidden');
+    if (toolbar) toolbar.classList.remove('hidden');
     source.classList.add('rounded-b-lg');
     source.classList.remove('rounded-lg');
-    toggle.textContent = 'HTML Kaynağı';
-    _abstractEditorMode = 'visual';
   }
+  _abstractEditorMode = mode;
+  if (sw) {
+    sw.querySelectorAll('.mode-btn').forEach((btn) => {
+      const isActive = btn.dataset.mode === mode;
+      btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      if (isActive) {
+        btn.classList.add('bg-white', 'shadow-sm', mode === 'visual' ? 'text-teal-700' : 'text-gray-900');
+        btn.classList.remove('text-gray-500', 'hover:text-gray-800');
+      } else {
+        btn.classList.remove('bg-white', 'shadow-sm', 'text-teal-700', 'text-gray-900');
+        btn.classList.add('text-gray-500', 'hover:text-gray-800');
+      }
+    });
+  }
+}
+
+function toggleAbstractEditor() {
+  setAbstractEditorMode(_abstractEditorMode === 'visual' ? 'source' : 'visual');
 }
 
 function getAbstractContent() {
@@ -2480,30 +5431,46 @@ function newsEditorLink() {
   }
 }
 
-function toggleNewsEditor() {
+function setNewsEditorMode(mode) {
   const visual = document.getElementById('fn-content-visual');
   const source = document.getElementById('fn-content-source');
   const toolbar = document.getElementById('fn-content-toolbar');
-  const toggle = document.getElementById('fn-content-toggle');
-  if (_newsEditorMode === 'visual') {
+  const sw = document.getElementById('fn-content-modeswitch');
+  if (!visual || !source) return;
+  if (mode === _newsEditorMode) return;
+  if (mode === 'source') {
     source.value = visual.innerHTML;
     visual.classList.add('hidden');
-    toolbar.classList.add('hidden');
+    if (toolbar) toolbar.classList.add('hidden');
     source.classList.remove('hidden');
     source.classList.remove('rounded-b-lg');
     source.classList.add('rounded-lg');
-    toggle.textContent = 'Görsel Editör';
-    _newsEditorMode = 'source';
   } else {
     visual.innerHTML = source.value;
     source.classList.add('hidden');
     visual.classList.remove('hidden');
-    toolbar.classList.remove('hidden');
+    if (toolbar) toolbar.classList.remove('hidden');
     source.classList.add('rounded-b-lg');
     source.classList.remove('rounded-lg');
-    toggle.textContent = 'HTML Kaynağı';
-    _newsEditorMode = 'visual';
   }
+  _newsEditorMode = mode;
+  if (sw) {
+    sw.querySelectorAll('.mode-btn').forEach((btn) => {
+      const isActive = btn.dataset.mode === mode;
+      btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      if (isActive) {
+        btn.classList.add('bg-white', 'shadow-sm', mode === 'visual' ? 'text-teal-700' : 'text-gray-900');
+        btn.classList.remove('text-gray-500', 'hover:text-gray-800');
+      } else {
+        btn.classList.remove('bg-white', 'shadow-sm', 'text-teal-700', 'text-gray-900');
+        btn.classList.add('text-gray-500', 'hover:text-gray-800');
+      }
+    });
+  }
+}
+
+function toggleNewsEditor() {
+  setNewsEditorMode(_newsEditorMode === 'visual' ? 'source' : 'visual');
 }
 
 function getNewsContent() {
@@ -2562,57 +5529,66 @@ route('/media', async (el) => {
   const stats = await API.get('/media/stats');
 
   el.innerHTML = `
-    <div class="flex items-center justify-between mb-2">
-      <h1 class="text-2xl font-bold text-gray-900">Medya Yönetimi</h1>
-    </div>
-    <p class="text-sm text-gray-500 mb-6">Makalelere ait PDF, figür ve ek materyal dosyalarını bu sayfadan yönetebilirsiniz. Dosyalar makale ID'si üzerinden ilgili makaleye bağlanır ve sitede otomatik olarak sunulur.</p>
+    ${pageHeader({
+      eyebrow: 'Yayın',
+      title: 'Dosya Yönetimi',
+      subtitle: 'Dergi geneli toplu PDF yüklemesi ve eksik PDF tespiti için. Tek makaleye ait figür/ek materyal yüklemek için makale içindeki Dosyalar sekmesini kullanın.',
+      actions: `<a href="#/articles" class="btn btn-secondary btn-sm">Makaleler →</a>`,
+    })}
 
     <!-- Stats -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-      <div class="bg-white rounded-xl border p-5">
+      <div class="card card-padded">
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 rounded-lg bg-teal-50 flex items-center justify-center"><svg class="w-5 h-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></div>
           <div><div class="text-2xl font-bold text-teal-700">${stats.pdfCount}</div><div class="text-xs text-gray-500">PDF Dosyası</div></div>
         </div>
       </div>
-      <div class="bg-white rounded-xl border p-5">
+      <div class="card card-padded">
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 rounded-lg ${stats.withoutPdf ? 'bg-red-50' : 'bg-green-50'} flex items-center justify-center"><svg class="w-5 h-5 ${stats.withoutPdf ? 'text-red-500' : 'text-green-500'}" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="${stats.withoutPdf ? 'M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z' : 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'}"/></svg></div>
           <div><div class="text-2xl font-bold ${stats.withoutPdf ? 'text-red-600' : 'text-green-600'}">${stats.withoutPdf}</div><div class="text-xs text-gray-500">PDF'siz Makale</div></div>
         </div>
       </div>
-      <div class="bg-white rounded-xl border p-5">
+      <div class="card card-padded">
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center"><svg class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
-          <div><div class="text-2xl font-bold text-blue-600">${stats.figureCount}</div><div class="text-xs text-gray-500">Figür Dosyası</div></div>
+          <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center"><svg class="w-5 h-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
+          <div><div class="text-2xl font-bold text-slate-600">${stats.figureCount}</div><div class="text-xs text-gray-500">Figür Dosyası</div></div>
         </div>
       </div>
-      <div class="bg-white rounded-xl border p-5">
+      <div class="card card-padded">
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-lg bg-purple-50 flex items-center justify-center"><svg class="w-5 h-5 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/></svg></div>
-          <div><div class="text-2xl font-bold text-purple-600">${stats.suppCount}</div><div class="text-xs text-gray-500">Ek Materyal</div></div>
+          <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center"><svg class="w-5 h-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/></svg></div>
+          <div><div class="text-2xl font-bold text-slate-600">${stats.suppCount}</div><div class="text-xs text-gray-500">Ek Materyal</div></div>
         </div>
       </div>
     </div>
 
     <!-- Batch PDF Upload -->
-    <div class="bg-white rounded-xl border p-5 mb-6">
-      <div class="flex items-start gap-3 mb-4">
-        <div class="w-9 h-9 rounded-lg bg-teal-50 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-5 h-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></div>
-        <div>
-          <h2 class="font-semibold text-gray-900">Toplu PDF Yükle</h2>
-          <p class="text-sm text-gray-500 mt-1">Makale PDF dosyalarını toplu olarak yükleyin. Sistem dosya adındaki sayıyı makale ID'si olarak tanır ve otomatik eşleştirir.</p>
+    <div class="card card-padded mb-6">
+      <div class="flex items-start gap-3 mb-3">
+        <div class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0" style="background:var(--brand-soft);color:var(--brand)"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-baseline gap-2 flex-wrap">
+            <h2 class="text-base font-semibold" style="color:var(--text-strong)">Toplu PDF Yükle</h2>
+            <span class="badge badge-neutral" style="font-size:10px">Otomatik eşleştirme</span>
+          </div>
+          <p class="text-xs mt-0.5" style="color:var(--text-muted)">Dosya adındaki sayı (ör. <code>2805.pdf</code>) makale ID olarak tanınır, tüm PDF'ler tek seferde bağlanır. <a href="#" class="media-help" data-target="pdf-help" style="color:var(--info);font-weight:500">Detaylar →</a></p>
         </div>
       </div>
-      <div class="bg-gray-50 rounded-lg p-3 mb-4">
-        <p class="text-xs font-medium text-gray-600 mb-1.5">Nasıl Çalışır?</p>
-        <ol class="text-xs text-gray-500 space-y-1 list-decimal list-inside">
-          <li>PDF dosyalarını makale ID'si ile adlandırın (ör. <code class="bg-gray-200 px-1 rounded">2805.pdf</code>, <code class="bg-gray-200 px-1 rounded">2810.pdf</code>)</li>
-          <li>Dosyaları aşağıdaki alana sürükleyin veya tıklayarak seçin</li>
-          <li>Sistem her dosyayı ilgili makale ile eşleştirir ve <code class="bg-gray-200 px-1 rounded">pdfs/</code> klasörüne kaydeder</li>
-          <li>Eşleşen makalelerde "PDF İndir" butonu otomatik olarak aktif olur</li>
-        </ol>
-      </div>
+      <details id="pdf-help" class="mb-3" style="background:var(--bg-page);border-radius:8px">
+        <summary style="padding:8px 12px;cursor:pointer;font-size:12px;font-weight:600;color:var(--text-strong);user-select:none">Ne zaman & nasıl çalışır?</summary>
+        <div style="padding:0 12px 12px;font-size:12px;color:var(--text-muted);line-height:1.55">
+          <p class="mb-2"><strong>Ne zaman:</strong> Bir sayı yayınlandıktan sonra PDF üretici sistemden gelen tüm dosyaları tek hamlede yüklemek için. Eksik PDF'leri "PDF'siz Makaleler" listesinden takip edin.</p>
+          <ol class="list-decimal list-inside space-y-0.5">
+            <li>PDF'leri makale ID'si ile adlandırın (ör. <code style="background:var(--bg-card);padding:1px 6px;border-radius:4px;color:var(--text-strong)">2805.pdf</code>)</li>
+            <li>Alana sürükleyin veya tıklayarak seçin</li>
+            <li>Sistem <code style="background:var(--bg-card);padding:1px 6px;border-radius:4px;color:var(--text-strong)">js/data/pdfs/{id}.pdf</code> olarak kaydeder</li>
+            <li>Sitede "PDF İndir" butonu otomatik aktif olur</li>
+          </ol>
+          <p class="mt-2" style="font-size:11.5px"><strong>Not:</strong> Dosya adı bir makale ID'si değilse dosya yine yüklenir, ancak hiçbir makaleye bağlanmaz — sonuç ekranında "eşleştirilemedi" olarak listelenir.</p>
+        </div>
+      </details>
       <div id="pdf-drop-zone" class="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center hover:border-teal-400 transition-colors cursor-pointer">
         <svg class="w-10 h-10 text-gray-300 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
         <p class="text-gray-600 font-medium">PDF dosyalarını sürükleyin veya tıklayarak seçin</p>
@@ -2622,87 +5598,51 @@ route('/media', async (el) => {
       <div id="pdf-batch-results" class="mt-4"></div>
     </div>
 
-    <!-- Missing PDFs -->
+    <!-- Missing PDFs (compact one-liner) -->
     ${stats.withoutPdf > 0 ? `
-    <div class="bg-white rounded-xl border p-5 mb-6">
-      <div class="flex items-start gap-3 mb-3">
-        <div class="w-9 h-9 rounded-lg bg-red-50 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-5 h-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg></div>
-        <div class="flex-1">
-          <div class="flex items-center justify-between">
-            <h2 class="font-semibold text-gray-900">PDF'siz Makaleler</h2>
-            <button onclick="loadMissingPdfs()" class="text-sm text-teal-600 hover:text-teal-800 font-medium">Listele</button>
-          </div>
-          <p class="text-sm text-gray-500 mt-1">PDF dosyası henüz yüklenmemiş makalelerin listesi. Bu makaleler için yukarıdaki toplu yükleme alanını kullanarak eksik PDF'leri tamamlayabilirsiniz.</p>
+    <div class="card mb-6" style="padding:12px 16px">
+      <div class="flex items-center gap-3 flex-wrap">
+        <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style="background:var(--warning-soft);color:var(--warning)">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
         </div>
+        <div class="flex items-baseline gap-2 flex-1 min-w-0">
+          <span class="text-sm font-semibold" style="color:var(--text-strong)">PDF'siz Makaleler</span>
+          <span class="badge badge-warning">${stats.withoutPdf}</span>
+          <span class="text-xs hidden sm:inline" style="color:var(--text-muted)">— eksik dosya denetim listesi</span>
+        </div>
+        <button onclick="loadMissingPdfs()" class="btn btn-secondary btn-sm flex-shrink-0">Listele</button>
       </div>
-      <div id="missing-pdfs-list"></div>
+      <div id="missing-pdfs-list" class="mt-3"></div>
     </div>` : ''}
 
-    <!-- Batch Figure Upload -->
-    <div class="bg-white rounded-xl border p-5 mb-6">
-      <div class="flex items-start gap-3 mb-4">
-        <div class="w-9 h-9 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
-        <div>
-          <h2 class="font-semibold text-gray-900">Makale Figür Yükle</h2>
-          <p class="text-sm text-gray-500 mt-1">Makalelerde kullanılan şekil, grafik ve tablo görsellerini yükleyin. Figürler makaleye ait klasöre kaydedilir.</p>
+    <!-- Where to go for per-article uploads -->
+    <div class="card card-padded" style="background:var(--bg-page)">
+      <div class="flex items-start gap-3">
+        <div style="color:var(--text-muted);font-size:18px;line-height:1">ℹ︎</div>
+        <div class="text-sm" style="color:var(--text-muted);line-height:1.6">
+          <strong style="color:var(--text-strong)">Tek bir makaleye figür / ek materyal yüklemek için bu sayfayı kullanmayın.</strong>
+          Daha pratik iki yol var:
+          <ul style="margin-top:6px;padding-left:18px;list-style:disc">
+            <li><a href="#/articles" style="color:var(--brand);font-weight:500">Makaleler</a> → ilgili makaleyi düzenle → <strong>Dosyalar</strong> sekmesi (manuel yükleme)</li>
+            <li><a href="#/zip-import" style="color:var(--brand);font-weight:500">ZIP Aktar</a> veya <a href="#/jats-import" style="color:var(--brand);font-weight:500">JATS XML Aktar</a> — makale ve dosyaları tek hamlede import eder</li>
+            <li>Hangi makaleye ait olduğu bilinmeyen ek materyal için <a href="#/supp-library" style="color:var(--brand);font-weight:500">Ek Materyal (Bağımsız)</a> sayfası</li>
+          </ul>
+          Bu sayfa yalnızca <strong>tüm dergi geneli</strong> toplu PDF yüklemesi ve eksik PDF tespiti için kullanılır.
         </div>
       </div>
-      <div class="bg-gray-50 rounded-lg p-3 mb-4">
-        <p class="text-xs font-medium text-gray-600 mb-1.5">Nasıl Çalışır?</p>
-        <ol class="text-xs text-gray-500 space-y-1 list-decimal list-inside">
-          <li>Figür yüklemek istediğiniz makalenin ID'sini girin</li>
-          <li>Figür dosyalarını seçin (PNG, JPG, TIFF vb.)</li>
-          <li>Dosyalar <code class="bg-gray-200 px-1 rounded">figures/[makaleID]/</code> klasörüne kaydedilir</li>
-          <li>"Tam Metne Uygula" butonuyla figür referansları makalenin HTML tam metnine otomatik yerleştirilir</li>
-        </ol>
-      </div>
-      <div class="flex gap-3 items-end mb-3">
-        <div class="flex-1">
-          <label class="block text-sm font-medium text-gray-700 mb-1">Makale ID</label>
-          <input id="fig-article-id" type="number" placeholder="ör. 2805" class="w-full px-3 py-2 border rounded-lg text-sm">
-        </div>
-        <div>
-          <label class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 text-sm font-medium cursor-pointer">
-            Figür Dosyaları Seç
-            <input id="fig-files-input" type="file" accept="image/*,.tif,.tiff" multiple class="hidden">
-          </label>
-        </div>
-      </div>
-      <div id="fig-upload-results" class="mt-3"></div>
-    </div>
-
-    <!-- Supplementary Upload -->
-    <div class="bg-white rounded-xl border p-5">
-      <div class="flex items-start gap-3 mb-4">
-        <div class="w-9 h-9 rounded-lg bg-purple-50 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-5 h-5 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/></svg></div>
-        <div>
-          <h2 class="font-semibold text-gray-900">Ek Materyal Yükle</h2>
-          <p class="text-sm text-gray-500 mt-1">Makalelere ait ek veri dosyaları, tablolar, videolar veya diğer destekleyici materyalleri yükleyin. Bu dosyalar makale sayfasında "Supplementary" bölümünde listelenir.</p>
-        </div>
-      </div>
-      <div class="bg-gray-50 rounded-lg p-3 mb-4">
-        <p class="text-xs font-medium text-gray-600 mb-1.5">Nasıl Çalışır?</p>
-        <ol class="text-xs text-gray-500 space-y-1 list-decimal list-inside">
-          <li>Ek materyal yüklemek istediğiniz makalenin ID'sini girin</li>
-          <li>Destekleyici dosyaları seçin (Excel, Word, video, veri seti vb.)</li>
-          <li>Dosyalar <code class="bg-gray-200 px-1 rounded">supplementary/[makaleID]/</code> klasörüne kaydedilir</li>
-          <li>Makale sayfasında "Ek Materyaller" bölümünde indirme linkleri otomatik görünür</li>
-        </ol>
-      </div>
-      <div class="flex gap-3 items-end mb-3">
-        <div class="flex-1">
-          <label class="block text-sm font-medium text-gray-700 mb-1">Makale ID</label>
-          <input id="supp-article-id" type="number" placeholder="ör. 2805" class="w-full px-3 py-2 border rounded-lg text-sm">
-        </div>
-        <div>
-          <label class="px-4 py-2 bg-purple-50 text-purple-700 rounded-lg hover:bg-purple-100 text-sm font-medium cursor-pointer">
-            Dosyaları Seç
-            <input id="supp-files-input" type="file" multiple class="hidden">
-          </label>
-        </div>
-      </div>
-      <div id="supp-upload-results" class="mt-3"></div>
     </div>`;
+
+  // Wire "Detaylar →" inline links to toggle their corresponding <details> panel
+  el.querySelectorAll('.media-help').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.getElementById(a.dataset.target);
+      if (target) {
+        target.open = !target.open;
+        if (target.open) target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  });
 
   // PDF batch upload
   const pdfDrop = document.getElementById('pdf-drop-zone');
@@ -2713,52 +5653,12 @@ route('/media', async (el) => {
   pdfDrop.ondrop = (e) => { e.preventDefault(); pdfDrop.classList.remove('border-teal-400', 'bg-teal-50'); handleBatchPdfUpload(e.dataTransfer.files); };
   pdfInput.onchange = () => handleBatchPdfUpload(pdfInput.files);
 
-  // Figure upload
-  document.getElementById('fig-files-input').onchange = async function () {
-    const articleId = document.getElementById('fig-article-id').value.trim();
-    if (!articleId) return toast('Makale ID giriniz', 'warning');
-    if (!this.files.length) return;
-
-    const prog = renderUploadProgress('fig-upload-results', this.files, 'Figürler yükleniyor');
-    try {
-      const result = await API.uploadFilesWithProgress(`/media/upload/figures/${articleId}`, this.files, 'figures', {}, prog.update);
-      prog.complete(`
-        <div class="bg-green-50 border border-green-200 rounded-lg p-3">
-          <p class="text-sm font-medium text-green-700">${result.uploaded.length} figür yüklendi</p>
-          <div class="mt-2 space-y-1">${result.uploaded.map((f) => `
-            <div class="text-xs text-gray-600 flex items-center gap-2">
-              <img src="../${esc(f.url)}" class="h-8 w-8 object-cover rounded border" onerror="this.style.display='none'">
-              <code>${esc(f.url)}</code>
-            </div>`).join('')}
-          </div>
-          <button onclick="applyFigureMappings(${articleId})" class="mt-2 px-3 py-1.5 bg-teal-600 text-white rounded text-xs font-medium hover:bg-teal-700">Tam Metne Uygula</button>
-        </div>`);
-      window._lastFigureUpload = result;
-    } catch (err) {
-      prog.fail(err.message);
-    }
-  };
-
-  // Supplementary upload
-  document.getElementById('supp-files-input').onchange = async function () {
-    const articleId = document.getElementById('supp-article-id').value.trim();
-    if (!articleId) return toast('Makale ID giriniz', 'warning');
-    if (!this.files.length) return;
-
-    const prog = renderUploadProgress('supp-upload-results', this.files, 'Ek materyaller yükleniyor');
-    try {
-      const result = await API.uploadFilesWithProgress(`/media/upload/supplementary/${articleId}`, this.files, 'files', {}, prog.update);
-      prog.complete(`
-        <div class="bg-green-50 border border-green-200 rounded-lg p-3">
-          <p class="text-sm font-medium text-green-700">${result.uploaded.length} dosya yüklendi</p>
-          <div class="mt-1 space-y-1">${result.uploaded.map((f) => `
-            <div class="text-xs text-gray-600"><code>${esc(f.url)}</code></div>`).join('')}
-          </div>
-        </div>`);
-    } catch (err) {
-      prog.fail(err.message);
-    }
-  };
+  // Figure & supplementary uploads were previously offered here behind a
+  // manual "Makale ID" input — removed (2026-05-21) because per-article
+  // upload happens via the article-edit "Dosyalar" tab and ZIP/JATS imports
+  // already attach files automatically. The /api/media/upload/figures/:id
+  // and /api/media/upload/supplementary/:id endpoints remain and are still
+  // used by the article/AIP edit forms and the figure wizard.
 });
 
 async function handleBatchPdfUpload(files) {
@@ -2845,42 +5745,296 @@ async function loadArticleAssets(articleId, article) {
   const pdfEl = document.getElementById('f-pdf-count');
   const figEl = document.getElementById('f-fig-count');
   const suppEl = document.getElementById('f-supp-count');
-  const figList = document.getElementById('f-fig-list');
-  if (!pdfEl && !figEl && !suppEl) return;
+  // Even when none of the Dosyalar UI is mounted (e.g. the user is on the
+  // Tam Metin tab), still prefetch the asset list so the cross-ref bubble
+  // can show disk-uploaded figures/tables without first visiting Dosyalar.
+  const hasDosyaUi = pdfEl || figEl || suppEl || document.getElementById('f-fig-wizard');
   try {
     const data = await API.get(`/media/article/${articleId}/assets`);
     window._articleAssets = data;
+    if (!hasDosyaUi) return; // cache populated — nothing else to render
     if (pdfEl) pdfEl.textContent = article?.pdfUrl ? '1 dosya' : '0';
     if (figEl) figEl.textContent = `${data.figures.length} dosya`;
     if (suppEl) suppEl.textContent = `${data.supplementary.length} dosya`;
-    if (figList) {
-      if (!data.figures.length) {
-        figList.innerHTML = '<span class="text-gray-400">Henüz figür yüklenmedi.</span>';
-      } else {
-        figList.innerHTML = `<div class="bg-white border rounded p-2">
-          <div class="text-gray-600 mb-1">Yüklü figürler (${data.figures.length}):</div>
-          <ul class="grid grid-cols-1 md:grid-cols-2 gap-1">
-            ${data.figures.map((f) => `<li class="truncate"><code class="text-xs">${esc(f.filename)}</code></li>`).join('')}
-          </ul>
-        </div>`;
-      }
-    }
+    // Render the figure-match wizard
+    renderFigureWizard(articleId).catch(() => {});
   } catch (err) {
     if (pdfEl) pdfEl.textContent = '?';
     if (figEl) figEl.textContent = '?';
     if (suppEl) suppEl.textContent = '?';
-    if (figList) figList.innerHTML = `<span class="text-red-500">Varlıklar yüklenemedi: ${esc(err.message)}</span>`;
+    const wiz = document.getElementById('f-fig-wizard');
+    if (wiz) wiz.innerHTML = `<div class="banner banner-danger">Varlıklar yüklenemedi: ${esc(err.message)}</div>`;
   }
 }
 
-// Load existing full-text HTML into the #f-fulltextHtml textarea
+// Build the figure-match wizard: shows full-text placeholders and uploaded figure thumbnails side by side
+async function renderFigureWizard(articleId) {
+  const wiz = document.getElementById('f-fig-wizard');
+  if (!wiz) return;
+  let status;
+  try {
+    status = await API.get(`/media/article/${articleId}/figure-status`);
+  } catch (err) {
+    wiz.innerHTML = `<div class="banner banner-danger" style="padding:10px"><div class="banner-body" style="margin-top:0">Durum okunamadı: ${esc(err.message)}</div></div>`;
+    return;
+  }
+  window._articleFigureStatus = status;
+
+  const { placeholders, figures, stats, hasFullText } = status;
+  if (!hasFullText && figures.length === 0) {
+    wiz.innerHTML = `<div class="banner banner-info" style="padding:10px"><div class="banner-body" style="margin-top:0">Henüz tam metin veya figür yok. Tam Metin sekmesinden HTML yükleyin, ardından figür dosyalarını buradan yükleyin.</div></div>`;
+    return;
+  }
+
+  // Inline stats — written into the header's inline span (next to "Figürler" title)
+  const inlineStats = document.getElementById('f-fig-inline-stats');
+  if (inlineStats) {
+    const parts = [];
+    parts.push(`<span style="color:var(--text-strong);font-weight:600">${placeholders.length}</span> placeholder`);
+    if (stats.resolved + stats.fuzzyMatch > 0) parts.push(`<span style="color:var(--success-text);font-weight:600">${stats.resolved + stats.fuzzyMatch}</span> eşlendi`);
+    if (stats.missing > 0) parts.push(`<span style="color:var(--warning-text);font-weight:600">${stats.missing}</span> bekliyor`);
+    parts.push(`<span style="color:var(--text-strong);font-weight:600">${figures.length}</span> yüklü figür`);
+    if ((stats.legacyCount || 0) > 0) parts.push(`<span style="color:var(--info-text);font-weight:600">${stats.legacyCount}</span> eski format`);
+    inlineStats.innerHTML = parts.join(' · ');
+  }
+
+  // Compact legacy notice (one line)
+  const summary = (stats.legacyCount || 0) > 0
+    ? `<div class="banner banner-info mb-3" style="padding:8px 12px">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        <div class="banner-body" style="margin-top:0;font-size:12px">Bu makale eski sistemden geliyor — "eski" rozetli satırlardaki dosyaları yükleyin, sonra <strong>Tam Metne Uygula</strong> ile modern <code>&lt;img&gt;</code> etiketlerine dönüşür.</div>
+      </div>`
+    : '';
+
+  // Placeholders panel
+  const placeholdersHtml = !hasFullText
+    ? `<div class="text-xs" style="color:var(--text-faint);padding:12px;text-align:center">Tam metin yok — placeholder listesi gösterilemiyor.</div>`
+    : placeholders.length === 0
+      ? `<div class="text-xs" style="color:var(--text-faint);padding:12px;text-align:center">Tam metinde figür referansı yok.</div>`
+      : placeholders.map((p) => wizPlaceholderRow(p, articleId)).join('');
+
+  // Figures: thumbnail grid OR an empty hint embedded at bottom (no separate column)
+  if (figures.length === 0) {
+    // Single-column layout when no figures — placeholders take full width
+    wiz.innerHTML = `
+      ${summary}
+      <div class="card-flat" style="padding:4px">${placeholdersHtml}</div>
+      ${hasFullText && placeholders.length > 0 ? `
+        <div class="text-xs text-center mt-3" style="color:var(--text-faint)">
+          Henüz figür yüklenmedi. Yukarıdaki <strong>Çoklu Yükle</strong> veya satırlardaki <strong>Dosya seç</strong> butonunu kullanın.
+        </div>` : ''}`;
+  } else {
+    // Two-column layout when there are uploaded figures
+    wiz.innerHTML = `
+      ${summary}
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div>
+          <div class="text-xs font-semibold mb-2" style="color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em">Placeholder'lar</div>
+          <div class="card-flat" style="padding:4px">${placeholdersHtml}</div>
+        </div>
+        <div>
+          <div class="text-xs font-semibold mb-2" style="color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em">Yüklü Figürler (${figures.length})</div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">${figures.map((f) => wizFigureThumb(f, articleId)).join('')}</div>
+        </div>
+      </div>`;
+  }
+}
+
+function wizStat(label, value, tone, tooltip) {
+  const palette = {
+    success: { fg: 'var(--success-text)', bg: 'var(--success-soft)' },
+    warning: { fg: 'var(--warning-text)', bg: 'var(--warning-soft)' },
+    info:    { fg: 'var(--info-text)',    bg: 'var(--info-soft)' },
+    neutral: { fg: 'var(--text)',         bg: 'var(--bg-subtle)' },
+  };
+  const c = palette[tone] || palette.neutral;
+  const tip = tooltip ? ` title="${esc(tooltip)}"` : '';
+  return `<div${tip} style="background:${c.bg};border-radius:8px;padding:8px 12px;text-align:center;cursor:${tooltip ? 'help' : 'default'}">
+    <div class="text-lg font-bold tabular" style="color:${c.fg};line-height:1.1">${esc(String(value))}</div>
+    <div class="text-xs" style="color:${c.fg};opacity:.85">${esc(label)}</div>
+  </div>`;
+}
+
+function wizPlaceholderRow(p, articleId) {
+  const isLegacy = p.format === 'legacy';
+  const displayRef = isLegacy ? (p.suggestedName || p.ref) : p.ref;
+  const targetName = isLegacy ? (p.suggestedName || displayRef) : p.ref;
+  const targetEsc = String(targetName).replace(/'/g, "\\'").replace(/"/g, '&quot;');
+
+  // Two-badge approach: format badge (left) + status badge (right). Avoids the
+  // earlier confusion where a single "eski" badge looked like it conflicted with
+  // the "Eksik" counter at the top.
+  const fmtBadge = isLegacy
+    ? '<span class="badge badge-neutral" title="Eski sistemden gelen javascript:openWin() formatı" style="min-width:46px;justify-content:center">eski</span>'
+    : '<span class="badge badge-neutral" title="Modern <img src=…> formatı" style="min-width:46px;justify-content:center">yeni</span>';
+
+  if (p.status === 'resolved') {
+    return `<div class="flex items-center gap-2 px-2 py-1.5 text-xs">
+      ${fmtBadge}
+      <span class="badge badge-success" title="Bu placeholder yayınlanmış URL'ye işaret ediyor" style="min-width:64px;justify-content:center">tamam</span>
+      <code class="truncate" style="flex:1;min-width:0;color:var(--text-muted)">${esc(displayRef)}</code>
+    </div>`;
+  }
+  if (p.status === 'fuzzy-match') {
+    return `<div class="flex items-center gap-2 px-2 py-1.5 text-xs">
+      ${fmtBadge}
+      <span class="badge badge-info" title="Yüklü bir figürle eşleşti — 'Tam Metne Uygula' ile yaz" style="min-width:64px;justify-content:center">eşlendi</span>
+      <code style="color:var(--text-strong);flex-shrink:0;min-width:0;overflow:hidden;text-overflow:ellipsis;max-width:50%">${esc(displayRef)}</code>
+      <span style="color:var(--text-faint)">→</span>
+      <code class="truncate" style="color:var(--info-text);flex:1;min-width:0">${esc(p.suggestedFile)}</code>
+    </div>`;
+  }
+  // missing — dosya henüz yüklenmemiş, "Dosya seç" göster
+  return `<div class="flex items-center gap-2 px-2 py-1.5 text-xs" style="background:var(--warning-soft);border-radius:6px;margin:2px 0">
+    ${fmtBadge}
+    <span class="badge badge-warning" title="Bu placeholder için dosya henüz yüklenmedi" style="min-width:64px;justify-content:center">bekliyor</span>
+    <code style="color:var(--warning-text);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis">${esc(displayRef)}</code>
+    <label class="btn btn-secondary btn-sm cursor-pointer" style="flex-shrink:0;padding:3px 8px;font-size:11px">
+      Dosya seç
+      <input type="file" accept="image/*,.tif,.tiff" class="hidden" onchange="uploadFigureForPlaceholder(${articleId}, '${targetEsc}', this.files[0])">
+    </label>
+  </div>`;
+}
+
+function wizFigureThumb(f, articleId) {
+  const matched = f.matchedTo;
+  const fileEsc = String(f.filename).replace(/'/g, "\\'");
+  const urlEsc  = String(f.url).replace(/'/g, "\\'");
+  return `<div class="card-flat overflow-hidden" style="background:var(--bg-card)">
+    <!-- Thumbnail container is the hover trigger -->
+    <div class="wiz-thumb" style="background:#f4f3f0;aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden"
+         onclick="insertFigureIntoFullText('${urlEsc}','${fileEsc}')"
+         title="Tam metne ekle">
+      <img src="/site/${esc(f.url)}" alt="${esc(f.filename)}" style="max-width:100%;max-height:100%;object-fit:contain;pointer-events:none" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div style="display:none;color:var(--text-faint);font-size:11px;align-items:center;justify-content:center;width:100%;height:100%;pointer-events:none">önizleme yok</div>
+      <!-- Hover overlay (toggled by .wiz-thumb:hover in CSS) -->
+      <button type="button" class="wiz-thumb-overlay"
+              onclick="event.stopPropagation(); insertFigureIntoFullText('${urlEsc}','${fileEsc}')"
+              aria-label="Tam metne ekle">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Metne Ekle
+      </button>
+    </div>
+    <div style="padding:6px 8px">
+      <div class="truncate text-xs font-medium" style="color:var(--text-strong)" title="${esc(f.filename)}">${esc(f.filename)}</div>
+      ${matched
+        ? `<div class="text-xs mt-0.5" style="color:var(--info-text)">→ <code>${esc(matched)}</code> ile bağlı</div>`
+        : `<div class="text-xs mt-0.5 flex items-center justify-between gap-2">
+            <span style="color:var(--text-faint)">tam metinde yok</span>
+            <button type="button" onclick="insertFigureIntoFullText('${urlEsc}','${fileEsc}')"
+              class="btn btn-secondary btn-sm" style="padding:2px 8px;font-size:11px">+ Ekle</button>
+          </div>`}
+    </div>
+  </div>`;
+}
+
+// Insert an <img> for an uploaded figure into the full-text WYSIWYG / source editor.
+// - Switches to the "fulltext" tab if it isn't open.
+// - If a selection sits inside the contenteditable visual editor, inserts at that
+//   caret position. Otherwise appends to the end of the article body.
+// - Source mode: inserts the raw HTML at the textarea caret position.
+function insertFigureIntoFullText(url, filename) {
+  // Switch to the Tam Metin tab (article form uses .tab-btn[data-tab="fulltext"])
+  const ftBtn = document.querySelector('.tab-btn[data-tab="fulltext"]') ||
+                document.querySelector('.aip-tab-btn[data-tab="fulltext"]');
+  if (ftBtn) ftBtn.click();
+
+  // Pick the right editor prefix based on which form is open
+  const prefix = document.getElementById('ft-visual') ? 'ft'
+               : document.getElementById('aip-ft-visual') ? 'aip-ft'
+               : null;
+  if (!prefix) {
+    toast('Tam metin editörü bulunamadı', 'warning');
+    return;
+  }
+
+  const alt = (filename || '').replace(/\.[^.]+$/, '');
+  const imgHtml = `<figure class="article-figure"><img src="${url}" alt="${esc(alt)}"><figcaption>${esc(alt)}</figcaption></figure>`;
+
+  const mode = _htmlEditorModes[prefix] || 'visual';
+
+  if (mode === 'visual') {
+    const visual = document.getElementById(`${prefix}-visual`);
+    if (!visual) return;
+    visual.focus();
+    const sel = window.getSelection();
+    // If the caret is inside the editor, insertHTML at that position.
+    // Otherwise move caret to end of visual and insert there.
+    const range = sel.rangeCount ? sel.getRangeAt(0) : null;
+    const inside = range && visual.contains(range.commonAncestorContainer);
+    if (!inside) {
+      // Move caret to end of editor
+      const r = document.createRange();
+      r.selectNodeContents(visual);
+      r.collapse(false);
+      sel.removeAllRanges();
+      sel.addRange(r);
+    }
+    document.execCommand('insertHTML', false, imgHtml);
+    markDirty();
+    toast(`Figür tam metne eklendi: ${alt}`);
+  } else {
+    // Source mode → textarea
+    const ta = document.getElementById(`${prefix}-source`);
+    if (!ta) return;
+    ta.focus();
+    const start = ta.selectionStart;
+    const end = ta.selectionEnd;
+    const before = ta.value.slice(0, start);
+    const after = ta.value.slice(end);
+    ta.value = before + imgHtml + after;
+    ta.selectionStart = ta.selectionEnd = start + imgHtml.length;
+    markDirty();
+    toast(`Figür tam metne eklendi: ${alt}`);
+  }
+}
+
+// Upload a single figure file targeted at a specific placeholder. The file is renamed
+// to match the placeholder ref so the normalize-and-apply step picks it up.
+async function uploadFigureForPlaceholder(articleId, placeholderRef, file) {
+  if (!file) return;
+  try {
+    // Compute the target filename.
+    // - If placeholderRef already has an extension (legacy: "figure_BMJ_2780_0.jpg"),
+    //   use it verbatim so basename-based matching works.
+    // - Otherwise append the original file's extension (modern bare ref: "fig1" → "fig1.png").
+    const hasExt = /\.[a-z0-9]{2,5}$/i.test(placeholderRef);
+    const ext = file.name.match(/\.[^.]+$/)?.[0] || '';
+    const targetName = hasExt ? placeholderRef : (placeholderRef + ext);
+    const renamed = new File([file], targetName, { type: file.type });
+    const result = await API.uploadFiles(`/media/upload/figures/${articleId}`, [renamed], 'figures');
+    toast(`${result.uploaded.length} figür yüklendi`);
+    // Auto-apply (handles both modern and legacy refs) + refresh
+    await applyExistingFigures(articleId);
+    await renderFigureWizard(articleId);
+  } catch (err) {
+    toast(err.message, 'error');
+  }
+}
+
+// Load existing full-text HTML into the article full-text editor (prefix 'ft')
 async function loadFullTextIntoEditor(articleId) {
-  const ta = document.getElementById('f-fulltextHtml');
+  const visual = document.getElementById('ft-visual');
   const status = document.getElementById('f-fulltext-status');
-  if (!ta) return;
+  if (!visual) return;
   try {
     const data = await API.get(`/articles/${articleId}/fulltext`);
-    ta.value = data.html || '';
+    setHtmlEditorContent('ft', data.html || '');
+    // Same as the AIP loader: collapse Word's MsoListParagraph refs into
+    // <ol>, stamp figure/table IDs, and auto-link plain mentions so the
+    // editor preview matches what readers will see on the public site.
+    // Suppress dirty marking — these mutations come from the system, not
+    // the user, so they shouldn't trip the "unsaved changes" prompt.
+    if (data.html) {
+      _suppressDirty = true;
+      try {
+        _normalizeMsoReferenceList(visual);
+        _ensureMediaIds(visual);
+        _autoLinkInEditor(visual);
+      } finally {
+        _suppressDirty = false;
+      }
+    }
     if (status) {
       status.textContent = data.html
         ? `Yüklü tam metin uzunluğu: ${data.html.length.toLocaleString('tr-TR')} karakter.`
@@ -2891,12 +6045,12 @@ async function loadFullTextIntoEditor(articleId) {
   }
 }
 
-// Save the full-text HTML textarea contents
+// Save the full-text editor contents
 async function saveArticleFullText(articleId) {
-  const ta = document.getElementById('f-fulltextHtml');
+  const visual = document.getElementById('ft-visual');
   const status = document.getElementById('f-fulltext-status');
-  if (!ta) return;
-  const html = ta.value || '';
+  if (!visual) return;
+  const html = getHtmlEditorContent('ft');
   if (!html.trim()) {
     if (!await confirmAction('Tam metin boş. Yine de kaydetmek istiyor musunuz?')) return;
   }
@@ -2912,6 +6066,8 @@ async function saveArticleFullText(articleId) {
 }
 
 // Apply all existing uploaded figures to the article full text by filename → placeholder match
+// Apply uploaded figures to the full text. Server uses fuzzy match (fig1 ~ figure1
+// ~ fig_01 ~ Figure 1), so the client just triggers the run with an empty body.
 async function applyExistingFigures(articleId) {
   try {
     const data = window._articleAssets || await API.get(`/media/article/${articleId}/assets`);
@@ -2919,199 +6075,655 @@ async function applyExistingFigures(articleId) {
       toast('Önce figür yükleyin', 'warning');
       return;
     }
-    const mappings = data.figures.map((f) => {
-      const baseName = f.filename.replace(/\.[^.]+$/, '');
-      return { originalHref: baseName, newUrl: f.url };
-    });
-    const result = await API.post(`/media/figures/${articleId}/apply`, { mappings });
-    toast(`${result.replaced || 0} figür referansı güncellendi`);
+    const result = await API.post(`/media/figures/${articleId}/apply`, {});
+    if (result.replaced > 0) {
+      toast(`${result.replaced} figür referansı eşlendi`);
+    } else {
+      toast('Eşleşen placeholder bulunamadı', 'warning');
+    }
+    // Refresh the wizard so the new resolved placeholders show up
+    await renderFigureWizard(articleId).catch(() => {});
   } catch (err) {
     toast(err.message, 'error');
   }
 }
 
-// Editorial Board
-function edMemberRow(m = {}) {
-  return `<div class="ed-row border rounded-lg p-3 bg-gray-50">
-    <div class="flex items-start gap-3">
-      <div class="flex flex-col gap-1 pt-2">
-        <button type="button" onclick="moveEdRow(this, -1)" title="Yukarı taşı" class="text-gray-400 hover:text-gray-700 leading-none">&#9650;</button>
-        <button type="button" onclick="moveEdRow(this, 1)" title="Aşağı taşı" class="text-gray-400 hover:text-gray-700 leading-none">&#9660;</button>
+// ── Editorial Board — data-driven section editor ──
+let _edModel = null;
+let _edActiveTab = null;
+
+function edSectionBadge(layout) {
+  return layout === 'featured' ? 'Öne çıkan' : layout === 'names' ? 'İsim listesi' : 'Liste';
+}
+
+function edLinkRow(si, mi, li, lk) {
+  return `<div class="flex gap-2 items-center" style="margin-bottom:4px">
+    <input data-sec="${si}" data-mem="${mi}" data-link="${li}" data-f="linklabel" class="input" style="flex:1;padding:5px 8px;font-size:12px" placeholder="Etiket (ör. ORCID, CV)" value="${esc(lk.label || '')}">
+    <input data-sec="${si}" data-mem="${mi}" data-link="${li}" data-f="linkurl" class="input" style="flex:2;padding:5px 8px;font-size:12px;min-width:0" placeholder="https://... veya dosya yükleyin" value="${esc(lk.url || '')}">
+    <label class="btn btn-ghost btn-sm" style="cursor:pointer;color:var(--brand);padding:3px 8px;font-size:11px;font-weight:500;white-space:nowrap;flex-shrink:0" title="Dosya yükle (PDF, JPG, PNG, WebP)">
+      Dosya
+      <input type="file" accept=".pdf,.jpg,.jpeg,.png,.webp,.gif" class="ed-cv-file hidden" data-sec="${si}" data-mem="${mi}" data-link="${li}">
+    </label>
+    <button type="button" onclick="edRemoveLink(${si},${mi},${li})" class="nf-iconbtn nf-del" title="Bağlantıyı sil">${NF_ICONS.x}</button>
+  </div>`;
+}
+
+function edMemberRow(si, mi, mem, total) {
+  const links = (mem.links || []).map((lk, li) => edLinkRow(si, mi, li, lk)).join('');
+  return `<div class="ed-mrow" data-sec="${si}" data-mem="${mi}" ondragend="this.removeAttribute('draggable')">
+    <div class="ed-mrow-num">#${mi + 1}</div>
+    <div class="flex gap-3">
+      <div class="flex flex-col items-center gap-1" style="flex-shrink:0">
+        <span class="row-grip ed-mrow-grip" title="Sıralamak için tutup sürükleyin" aria-label="Sürükle" onmousedown="this.closest('.ed-mrow').setAttribute('draggable','true')">${ROW_GRIP_SVG}</span>
+        <img src="${mem.photo ? '/site/' + esc(mem.photo) : ''}" onerror="this.style.visibility='hidden'" style="width:46px;height:46px;border-radius:50%;object-fit:cover;border:1px solid var(--border);background:#fff" alt="">
+        <div class="flex">
+          <button type="button" onclick="edMoveMember(${si},${mi},-1)" ${mi === 0 ? 'disabled' : ''} class="nf-iconbtn" title="Yukarı">${NF_ICONS.up}</button>
+          <button type="button" onclick="edMoveMember(${si},${mi},1)" ${mi === total - 1 ? 'disabled' : ''} class="nf-iconbtn" title="Aşağı">${NF_ICONS.down}</button>
+        </div>
       </div>
-      <div class="ed-photo-wrap flex-shrink-0">
-        <img class="ed-photo-preview w-14 h-14 rounded-full object-cover border bg-white" src="${m.photo ? '../' + esc(m.photo) : ''}" onerror="this.style.visibility='hidden'" alt="">
+      <div class="flex-1" style="min-width:0">
+        <div class="flex gap-2 mb-2">
+          <input data-sec="${si}" data-mem="${mi}" data-f="name" class="input" style="flex:2" placeholder="Ad Soyad" value="${esc(mem.name || '')}">
+          <input data-sec="${si}" data-mem="${mi}" data-f="title" class="input" style="flex:1" placeholder="Ünvan (MD/PhD)" value="${esc(mem.title || '')}">
+          <button type="button" onclick="edRemoveMember(${si},${mi})" class="nf-iconbtn nf-del" title="Üyeyi sil">${NF_ICONS.x}</button>
+        </div>
+        <input data-sec="${si}" data-mem="${mi}" data-f="aff" class="input" style="width:100%;margin-bottom:8px" placeholder="Kurum / Bölüm" value="${esc(mem.affiliation || '')}">
+        <div class="flex gap-2 mb-2">
+          <input data-sec="${si}" data-mem="${mi}" data-f="email" class="input" style="flex:1" placeholder="E-posta (opsiyonel)" value="${esc(mem.email || '')}">
+          <input data-sec="${si}" data-mem="${mi}" data-f="photo" class="input" style="flex:1" placeholder="images/editorial-board/..." value="${esc(mem.photo || '')}">
+          <label class="btn btn-secondary btn-sm" style="cursor:pointer;white-space:nowrap">Fotoğraf<input type="file" accept="image/*" class="ed-photo-file hidden" data-sec="${si}" data-mem="${mi}"></label>
+        </div>
+        <div style="border-left:2px solid var(--border-soft);padding-left:10px">
+          <div class="text-xs" style="color:var(--text-muted);margin-bottom:3px">Bağlantılar — ORCID, CV, profil vb.</div>
+          ${links}
+          <button type="button" onclick="edAddLink(${si},${mi})" class="nf-addlink">+ Bağlantı</button>
+        </div>
       </div>
-      <div class="flex-1 grid grid-cols-1 md:grid-cols-12 gap-2">
-        <input class="ed-name md:col-span-4 px-2 py-1.5 border rounded text-sm" value="${esc(m.name || '')}" placeholder="Ad Soyad">
-        <input class="ed-title md:col-span-1 px-2 py-1.5 border rounded text-sm" value="${esc(m.title || '')}" placeholder="MD/PhD">
-        <input class="ed-aff md:col-span-7 px-2 py-1.5 border rounded text-sm" value="${esc(m.affiliation || '')}" placeholder="Kurum">
-        <input class="ed-photo md:col-span-7 px-2 py-1.5 border rounded text-xs" value="${esc(m.photo || '')}" placeholder="images/editorial-board/...">
-        <label class="md:col-span-2 px-2 py-1.5 bg-blue-50 text-blue-700 rounded text-xs text-center cursor-pointer hover:bg-blue-100">
-          Fotoğraf <input type="file" accept="image/*" class="ed-photo-file hidden">
-        </label>
-        <input class="ed-link md:col-span-3 px-2 py-1.5 border rounded text-xs" value="${esc(m.link || '')}" placeholder="Harici Link (https://...)">
-      </div>
-      <button type="button" onclick="this.closest('.ed-row').remove(); markDirty();" class="text-red-400 hover:text-red-600 text-lg" title="Sil">&times;</button>
     </div>
   </div>`;
 }
 
-route('/editorial', async (el) => {
-  const board = await API.get('/editorial');
-  window._editorialBoardSnapshot = board;
-  const eic = board.editorInChief || {};
-  el.innerHTML = `
-    <div class="flex items-center justify-between mb-6">
-      <h1 class="text-2xl font-bold text-gray-900">Yayın Kurulu</h1>
-      <button onclick="saveEditorial()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet<span data-dirty-indicator class="text-amber-200"></span></button>
+function edSectionCard(sec, si, total) {
+  let body;
+  if (sec.layout === 'names') {
+    body = `<textarea data-sec="${si}" data-f="names" rows="10" class="input" style="width:100%;font-size:13px" placeholder="Her satıra bir isim">${esc((sec.names || []).join('\n'))}</textarea>
+      <p class="text-xs mt-1" style="color:var(--text-faint)">Her satıra bir isim yazın. Şu an ${(sec.names || []).length} isim.</p>`;
+  } else {
+    const members = sec.members || [];
+    body = `<div>${members.map((mem, mi) => edMemberRow(si, mi, mem, members.length)).join('')}</div>
+      <button type="button" onclick="edAddMember(${si})" class="btn btn-secondary btn-sm mt-2">+ Üye Ekle</button>`;
+  }
+  const count = sec.layout === 'names' ? (sec.names || []).length : (sec.members || []).length;
+  return `<div class="card card-padded">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="badge badge-neutral" style="font-size:10px">${edSectionBadge(sec.layout)}</span>
+      <input data-sec="${si}" data-f="seclabel" class="input" style="flex:1;font-weight:600" value="${esc(sec.label || '')}" placeholder="Bölüm adı">
+      <span class="text-sm" style="color:var(--text-faint)">(${count})</span>
+      <button type="button" onclick="edMoveSection(${si},-1)" ${si === 0 ? 'disabled' : ''} class="nf-iconbtn" title="Yukarı">${NF_ICONS.up}</button>
+      <button type="button" onclick="edMoveSection(${si},1)" ${si === total - 1 ? 'disabled' : ''} class="nf-iconbtn" title="Aşağı">${NF_ICONS.down}</button>
+      <button type="button" onclick="edRemoveSection(${si})" class="nf-iconbtn nf-del" title="Bölümü sil">${NF_ICONS.x}</button>
     </div>
-    <div class="bg-blue-50 border border-blue-100 text-blue-800 text-xs p-3 rounded-lg mb-4">
-      Üyeleri sıralamak için ▲ ▼ butonlarını kullanın. Fotoğraf eklemek için "Fotoğraf" düğmesine tıklayın (otomatik olarak <code>images/editorial-board/</code> klasörüne kaydedilir). Profil URL alanı sayfada üyenin adını tıklanabilir bir bağlantıya dönüştürür.
-    </div>
-    <div class="space-y-6">
-      <div class="bg-white rounded-xl border p-5">
-        <h2 class="font-semibold text-gray-900 mb-3">Baş Editör</h2>
-        <div class="flex items-start gap-3">
-          <img id="eic-photo-preview" class="w-20 h-20 rounded-full object-cover border bg-gray-100" src="${eic.photo ? '../' + esc(eic.photo) : ''}" onerror="this.style.visibility='hidden'" alt="">
-          <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-3">
-            <input id="eic-name" value="${esc(eic.name || '')}" placeholder="Ad" class="px-3 py-2 border rounded-lg text-sm">
-            <input id="eic-title" value="${esc(eic.title || '')}" placeholder="Ünvan" class="px-3 py-2 border rounded-lg text-sm">
-            <input id="eic-aff" value="${esc(eic.affiliation || '')}" placeholder="Kurum" class="px-3 py-2 border rounded-lg text-sm md:col-span-2">
-            <input id="eic-email" value="${esc(eic.email || '')}" placeholder="Email" class="px-3 py-2 border rounded-lg text-sm">
-            <input id="eic-link" value="${esc(eic.link || '')}" placeholder="Harici Link (https://...)" class="px-3 py-2 border rounded-lg text-sm">
-            <input id="eic-photo" value="${esc(eic.photo || '')}" placeholder="images/editorial-board/..." class="px-3 py-2 border rounded-lg text-sm md:col-span-2">
-            <label class="md:col-span-2 inline-flex items-center justify-center px-3 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm cursor-pointer hover:bg-blue-100">
-              Fotoğraf Yükle <input id="eic-photo-file" type="file" accept="image/*" class="hidden">
-            </label>
-          </div>
-        </div>
-      </div>
-      ${['honoraryEditors', 'deputyEditors', 'associateEditors'].map((key) => {
-        const label = key === 'honoraryEditors' ? 'Onursal Editörler' : key === 'deputyEditors' ? 'Yardımcı Editörler' : 'Yardımcı Editörler (Geniş)';
-        return `<div class="bg-white rounded-xl border p-5">
-          <h2 class="font-semibold text-gray-900 mb-3">${label} <span class="text-sm font-normal text-gray-400">(${(board[key] || []).length})</span></h2>
-          <div id="ed-${key}" class="space-y-2">${(board[key] || []).map(edMemberRow).join('')}</div>
-          <button type="button" onclick="addEdMember('ed-${key}')" class="mt-3 text-sm text-blue-600 hover:text-blue-800">+ Üye Ekle</button>
-        </div>`;
-      }).join('')}
-    </div>`;
-
-  // Wire EIC photo upload + URL sync
-  const eicFile = document.getElementById('eic-photo-file');
-  const eicPhotoInput = document.getElementById('eic-photo');
-  const eicPreview = document.getElementById('eic-photo-preview');
-  if (eicFile) {
-    eicFile.addEventListener('change', async () => {
-      if (!eicFile.files[0]) return;
-      try {
-        const result = await API.uploadFile('/media/upload/editorial-photo', eicFile.files[0], 'image');
-        if (eicPhotoInput) eicPhotoInput.value = result.url;
-        if (eicPreview) { eicPreview.src = '../' + result.url; eicPreview.style.visibility = 'visible'; }
-        markDirty();
-        toast('Fotoğraf yüklendi');
-      } catch (err) { toast(err.message, 'error'); }
-    });
-  }
-  if (eicPhotoInput && eicPreview) {
-    eicPhotoInput.addEventListener('input', () => {
-      eicPreview.src = eicPhotoInput.value ? '../' + eicPhotoInput.value : '';
-      eicPreview.style.visibility = eicPhotoInput.value ? 'visible' : 'hidden';
-    });
-  }
-
-  // Wire each member row's photo upload + URL sync
-  el.querySelectorAll('.ed-row').forEach(wireEdRow);
-
-  clearDirty();
-  el.addEventListener('input', markDirty);
-});
-
-function wireEdRow(row) {
-  if (row._wired) return;
-  row._wired = true;
-  const fileInput = row.querySelector('.ed-photo-file');
-  const urlInput = row.querySelector('.ed-photo');
-  const preview = row.querySelector('.ed-photo-preview');
-  if (fileInput) {
-    fileInput.addEventListener('change', async () => {
-      if (!fileInput.files[0]) return;
-      try {
-        const result = await API.uploadFile('/media/upload/editorial-photo', fileInput.files[0], 'image');
-        if (urlInput) urlInput.value = result.url;
-        if (preview) { preview.src = '../' + result.url; preview.style.visibility = 'visible'; }
-        markDirty();
-        toast('Fotoğraf yüklendi');
-      } catch (err) { toast(err.message, 'error'); }
-    });
-  }
-  if (urlInput && preview) {
-    urlInput.addEventListener('input', () => {
-      preview.src = urlInput.value ? '../' + urlInput.value : '';
-      preview.style.visibility = urlInput.value ? 'visible' : 'hidden';
-    });
-  }
+    ${body}
+  </div>`;
 }
 
-function moveEdRow(btn, dir) {
-  const row = btn.closest('.ed-row');
-  if (!row) return;
-  if (dir < 0 && row.previousElementSibling) {
-    row.parentNode.insertBefore(row, row.previousElementSibling);
-    markDirty();
-  } else if (dir > 0 && row.nextElementSibling) {
-    row.parentNode.insertBefore(row.nextElementSibling, row);
-    markDirty();
+function renderEditorialForm() {
+  const c = document.getElementById('ed-sections');
+  if (!c || !_edModel) return;
+  // Keep the active tab valid; default to the first section.
+  if (!_edActiveTab || !_edModel.sections.find((s) => s.id === _edActiveTab)) {
+    _edActiveTab = (_edModel.sections[0] || {}).id || null;
   }
+  const tabs = _edModel.sections.map((s) => {
+    const count = s.layout === 'names' ? (s.names || []).length : (s.members || []).length;
+    const active = s.id === _edActiveTab;
+    return `<button type="button" onclick="edSelectTab('${esc(s.id)}')" class="ed-tab-btn ${active ? 'ed-tab-active' : ''}" data-ed-tab="${esc(s.id)}">${esc(s.label || 'Adsız')}<span class="ed-tab-count">${count}</span></button>`;
+  }).join('');
+  const sections = _edModel.sections.map((s, i) => {
+    const display = s.id === _edActiveTab ? '' : 'display:none;';
+    return `<div data-ed-section="${esc(s.id)}" style="${display}">${edSectionCard(s, i, _edModel.sections.length)}</div>`;
+  }).join('');
+  c.innerHTML = `
+    <div class="ed-tabs flex flex-wrap items-center gap-1 mb-4" style="border-bottom:1px solid var(--border-soft)">
+      ${tabs}
+      <button type="button" onclick="edAddSection()" class="btn btn-primary btn-sm" style="margin-left:auto;margin-bottom:6px;white-space:nowrap">+ Yeni Bölüm Ekle</button>
+    </div>
+    ${sections}`;
 }
 
-function addEdMember(containerId) {
-  const list = document.getElementById(containerId);
-  if (!list) return;
-  list.insertAdjacentHTML('beforeend', edMemberRow());
-  const newRow = list.lastElementChild;
-  if (newRow) wireEdRow(newRow);
+function edSelectTab(id) {
+  edSyncModel();
+  _edActiveTab = id;
+  renderEditorialForm();
+}
+
+// Read every form input back into the in-memory model.
+function edSyncModel() {
+  if (!_edModel) return;
+  _edModel.sections.forEach((sec, si) => {
+    const lbl = document.querySelector(`[data-sec="${si}"][data-f="seclabel"]`);
+    if (lbl) sec.label = lbl.value;
+    if (sec.layout === 'names') {
+      const ta = document.querySelector(`[data-sec="${si}"][data-f="names"]`);
+      if (ta) sec.names = ta.value.split('\n').map((s) => s.trim()).filter(Boolean);
+      return;
+    }
+    (sec.members || []).forEach((mem, mi) => {
+      const g = (f) => document.querySelector(`[data-sec="${si}"][data-mem="${mi}"][data-f="${f}"]`);
+      let e;
+      if ((e = g('name'))) mem.name = e.value;
+      if ((e = g('title'))) mem.title = e.value;
+      if ((e = g('aff'))) mem.affiliation = e.value;
+      if ((e = g('email'))) mem.email = e.value;
+      if ((e = g('photo'))) mem.photo = e.value;
+      (mem.links || []).forEach((lk, li) => {
+        const ll = document.querySelector(`[data-sec="${si}"][data-mem="${mi}"][data-link="${li}"][data-f="linklabel"]`);
+        const lu = document.querySelector(`[data-sec="${si}"][data-mem="${mi}"][data-link="${li}"][data-f="linkurl"]`);
+        if (ll) lk.label = ll.value;
+        if (lu) lk.url = lu.value;
+      });
+    });
+  });
+}
+
+// Mutation handlers — sync form → model, mutate, re-render.
+function edAddSection() {
+  edSyncModel();
+  const newSec = { id: 'section-' + Date.now(), label: 'Yeni Bölüm', layout: 'grid', members: [{ name: '', title: '', affiliation: '', links: [] }] };
+  _edModel.sections.push(newSec);
+  _edActiveTab = newSec.id; // switch focus to the new section so the user sees it immediately
+  renderEditorialForm();
   markDirty();
 }
+async function edRemoveSection(si) {
+  edSyncModel();
+  const sec = _edModel.sections[si];
+  if (!sec) return;
+  const count = sec.layout === 'names' ? (sec.names || []).length : (sec.members || []).length;
+  const label = sec.label || 'Bu bölüm';
+  const detail = count > 0
+    ? `"${label}" bölümünü ve içindeki ${count} kayıt da silinecek. Bu işlem geri alınamaz. Devam edilsin mi?`
+    : `"${label}" bölümü silinecek. Devam edilsin mi?`;
+  if (!await confirmAction(detail)) return;
+  _edModel.sections.splice(si, 1);
+  if (_edActiveTab === sec.id) {
+    _edActiveTab = (_edModel.sections[Math.max(0, si - 1)] || {}).id || null;
+  }
+  renderEditorialForm();
+  markDirty();
+}
+function edMoveSection(si, d) { edSyncModel(); const a = _edModel.sections, j = si + d; if (j < 0 || j >= a.length) return; const t = a[si]; a[si] = a[j]; a[j] = t; renderEditorialForm(); markDirty(); }
+function edAddMember(si) { edSyncModel(); const s = _edModel.sections[si]; s.members = s.members || []; s.members.push({ name: '', title: '', affiliation: '', links: [] }); renderEditorialForm(); markDirty(); }
+async function edRemoveMember(si, mi) {
+  edSyncModel();
+  const m = _edModel.sections[si] && _edModel.sections[si].members && _edModel.sections[si].members[mi];
+  if (!m) return;
+  // Only ask if the row has any content worth losing.
+  const hasData = (m.name && m.name.trim()) || (m.affiliation && m.affiliation.trim()) || (m.photo) || (m.links && m.links.some((l) => l && (l.url || l.label)));
+  if (hasData) {
+    const who = (m.name || '').trim() || `#${mi + 1}`;
+    if (!await confirmAction(`"${who}" satırı silinecek. Devam edilsin mi?`)) return;
+  }
+  _edModel.sections[si].members.splice(mi, 1);
+  renderEditorialForm();
+  markDirty();
+}
+function edMoveMember(si, mi, d) { edSyncModel(); const a = _edModel.sections[si].members, j = mi + d; if (j < 0 || j >= a.length) return; const t = a[mi]; a[mi] = a[j]; a[j] = t; renderEditorialForm(); markDirty(); }
+function edAddLink(si, mi) { edSyncModel(); const m = _edModel.sections[si].members[mi]; m.links = m.links || []; m.links.push({ label: '', url: '' }); renderEditorialForm(); markDirty(); }
+function edRemoveLink(si, mi, li) { edSyncModel(); _edModel.sections[si].members[mi].links.splice(li, 1); renderEditorialForm(); markDirty(); }
+
+async function edEditorialPhotoUpload(input) {
+  if (!input.files || !input.files[0]) return;
+  const si = Number(input.dataset.sec), mi = Number(input.dataset.mem);
+  try {
+    edSyncModel();
+    const result = await API.uploadFile('/media/upload/editorial-photo', input.files[0], 'image');
+    _edModel.sections[si].members[mi].photo = result.url;
+    renderEditorialForm();
+    markDirty();
+    toast('Fotoğraf yüklendi');
+  } catch (err) { toast(err.message, 'error'); }
+}
+
+// Upload a member's CV (PDF/JPG/PNG…) and set it as the link URL. If the
+// link has no label yet, default to "CV". The link row's URL field is the
+// public path under images/editorial-board/cv/ — site renders an image-CV
+// link in a modal, a PDF link opens in a new tab.
+async function edEditorialCvUpload(input) {
+  if (!input.files || !input.files[0]) return;
+  const si = Number(input.dataset.sec);
+  const mi = Number(input.dataset.mem);
+  const li = Number(input.dataset.link);
+  try {
+    edSyncModel();
+    const result = await API.uploadFile('/media/upload/editorial-cv', input.files[0], 'file');
+    const mem = _edModel.sections[si].members[mi];
+    mem.links = mem.links || [];
+    const lk = mem.links[li];
+    if (!lk) return;
+    lk.url = result.url;
+    if (!lk.label || !lk.label.trim()) lk.label = 'CV';
+    renderEditorialForm();
+    markDirty();
+    toast('Dosya yüklendi: ' + result.url);
+  } catch (err) { toast(err.message, 'error'); }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Supplementary Library — standalone supplementary uploader that produces a
+// permanent public URL for each file. The URL stays the same when content is
+// replaced; renaming or deleting breaks any link already embedded in a PDF.
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Build the public (production) URL for a supp-library file. When running
+// against localhost we still want to display the production link, since that
+// is what gets pasted into the article PDF.
+function suppLibPublicUrl(filename) {
+  const origin = window.location.origin.replace(/^http:\/\/localhost(?::\d+)?\/?$/, 'https://balkanmedicaljournal.org');
+  return `${origin}/img/files/${encodeURIComponent(filename)}`;
+}
+function suppLibFmtSize(bytes) {
+  if (!Number.isFinite(bytes)) return '—';
+  if (bytes < 1024) return `${bytes} B`;
+  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+  return `${(bytes / 1024 / 1024).toFixed(2)} MB`;
+}
+function suppLibFmtDate(iso) {
+  if (!iso) return '—';
+  try { return new Date(iso).toLocaleString('tr-TR', { dateStyle: 'medium', timeStyle: 'short' }); }
+  catch (_) { return iso; }
+}
+
+// Track which scope ("standalone" | "linked") the current page is showing so
+// reloadTable knows what to fetch. Set by each route handler on entry.
+let _suppLibScope = 'standalone';
+
+async function suppLibReloadTable() {
+  try {
+    const data = await API.get('/supp-library?scope=' + encodeURIComponent(_suppLibScope));
+    const tbody = document.getElementById('supp-lib-tbody');
+    if (!tbody) return;
+    const files = Array.isArray(data.files) ? data.files : [];
+    const countEl = document.getElementById('supp-lib-count');
+    if (countEl) countEl.textContent = String(files.length);
+    const isLinked = _suppLibScope === 'linked';
+    const colCount = isLinked ? 4 : 3;
+    if (!files.length) {
+      const emptyMsg = isLinked
+        ? 'Henüz bir makaleye bağlı ek materyal yok. Yukarıdaki alandan bir makale ID girip dosya yükleyebilirsiniz.'
+        : 'Henüz bağımsız ek materyal yok. Yukarıdaki alandan PDF veya başka bir dosya yükleyin.';
+      tbody.innerHTML = `<tr><td colspan="${colCount}" class="text-center" style="padding:32px;color:var(--text-faint)">${emptyMsg}</td></tr>`;
+      return;
+    }
+    tbody.innerHTML = files.map((f) => {
+      const pubUrl = suppLibPublicUrl(f.name);
+      // Build the "Bağlı Makale" cell only on the linked page.
+      const refsCell = isLinked ? `
+        <td style="padding:10px 12px;vertical-align:top">
+          ${(f.references || []).map((r) => {
+            const route = r.isAip ? '#/articles-in-press/' + esc(r.articleId) + '/edit' : '#/articles/' + esc(r.articleId);
+            const tag = r.isAip ? 'AIP' : '';
+            return `<div style="margin-bottom:4px"><a href="${route}" style="color:var(--brand);font-weight:500">#${esc(r.articleId)}</a> ${tag ? `<span class="badge badge-neutral" style="font-size:10px;margin-left:4px">${tag}</span>` : ''}<div class="text-xs" style="color:var(--text-muted);max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc(r.title)}">${esc(r.title)}</div></div>`;
+          }).join('')}
+        </td>` : '';
+      return `<tr data-file="${esc(f.name)}">
+        <td style="padding:10px 12px;vertical-align:top">
+          <div style="font-weight:500;color:var(--text-strong);word-break:break-all">${esc(f.name)}</div>
+          <div class="text-xs mt-1" style="color:var(--text-muted)">${suppLibFmtSize(f.size)} • ${suppLibFmtDate(f.mtime)}</div>
+        </td>
+        ${refsCell}
+        <td style="padding:10px 12px;vertical-align:top">
+          <div class="flex items-center gap-1.5">
+            <input readonly value="${esc(pubUrl)}" class="input" style="font-size:12px;flex:1;background:var(--bg-page);font-family:ui-monospace,monospace" onclick="this.select()">
+            <button type="button" onclick="suppLibCopyUrl('${esc(f.name)}', this)" class="btn btn-secondary btn-sm" title="URL'yi kopyala">Kopyala</button>
+            <a href="/site${esc(f.url)}" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" title="Yüklenen dosyayı yerel olarak aç">Önizle</a>
+          </div>
+        </td>
+        <td style="padding:10px 12px;vertical-align:top;white-space:nowrap">
+          <label class="btn btn-ghost btn-sm" style="cursor:pointer" title="Aynı URL'yi koru, sadece dosyanın içeriğini güncelle">
+            İçeriği Değiştir
+            <input type="file" class="hidden" onchange="suppLibReplaceContent('${esc(f.name)}', this)">
+          </label>
+          <button type="button" onclick="suppLibRename('${esc(f.name)}')" class="btn btn-ghost btn-sm" title="Dosya adını değiştir — bu, mevcut linki bozar!">Yeniden Adlandır</button>
+          <button type="button" onclick="suppLibDelete('${esc(f.name)}')" class="btn btn-ghost btn-sm" style="color:var(--danger)" title="Dosyayı sil — mevcut linki bozar!">Sil</button>
+        </td>
+      </tr>`;
+    }).join('');
+  } catch (err) {
+    toast('Liste yüklenemedi: ' + err.message, 'error');
+  }
+}
+
+async function suppLibCopyUrl(name, btn) {
+  const url = suppLibPublicUrl(name);
+  try {
+    await navigator.clipboard.writeText(url);
+    if (btn) {
+      const original = btn.textContent;
+      btn.textContent = '✓ Kopyalandı';
+      setTimeout(() => { btn.textContent = original; }, 1200);
+    }
+  } catch (_) {
+    // Older browsers / non-secure contexts: fall back to a transient textarea.
+    const ta = document.createElement('textarea');
+    ta.value = url; document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch (_) {}
+    ta.remove();
+    toast('URL kopyalandı', 'success');
+  }
+}
+
+async function suppLibUploadFiles(files, opts = {}) {
+  if (!files || !files.length) return;
+  const status = document.getElementById('supp-lib-upload-status');
+  const renameInput = document.getElementById('supp-lib-rename');
+  const fd = new FormData();
+  for (const f of files) fd.append('files', f);
+  if (files.length === 1 && renameInput && renameInput.value.trim()) {
+    fd.append('rename', renameInput.value.trim());
+  }
+  if (opts.articleId) fd.append('articleId', String(opts.articleId).trim());
+  const q = opts.overwrite ? '?overwrite=true' : '';
+  if (status) status.textContent = `${files.length} dosya yükleniyor…`;
+  try {
+    const res = await fetch('/api/supp-library/upload' + q, { method: 'POST', body: fd });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Yükleme hatası');
+    if (data.conflicts && data.conflicts.length) {
+      const names = data.conflicts.map((c) => c.name).join(', ');
+      const ok = await confirmAction(`Bu dosyalar zaten var ve aynı linki koruyarak içerikleri değiştirilecek:\n\n${names}\n\nDevam edilsin mi?`);
+      if (ok) {
+        // Re-send with overwrite, but only the conflicting files this time.
+        const conflictSet = new Set(data.conflicts.map((c) => c.name));
+        const toReupload = Array.from(files).filter((f) => {
+          const safe = (renameInput && renameInput.value.trim()) || f.name;
+          return conflictSet.has(safe.replace(/\s+/g, '-').replace(/[^A-Za-z0-9._-]/g, '-'));
+        });
+        if (toReupload.length) await suppLibUploadFiles(toReupload, { overwrite: true, articleId: opts.articleId });
+      }
+    }
+    if (status) status.textContent = `${(data.uploaded || []).length} dosya yüklendi.`;
+    if (renameInput) renameInput.value = '';
+    await suppLibReloadTable();
+    if ((data.uploaded || []).length) {
+      toast(`${data.uploaded.length} dosya yüklendi`, 'success');
+    }
+    // Surface what happened on the article side, if any.
+    if (data.articleLinked) {
+      if (data.articleLinked.error) {
+        toast(`Makale bulunamadı (ID: ${opts.articleId}). Dosya bağımsız olarak yüklendi; linki manuel olarak makaleye eklemeniz gerekir.`, 'error');
+      } else if (data.articleLinked.added && data.articleLinked.added.length) {
+        const tag = data.articleLinked.isAip ? 'AIP' : 'makale';
+        toast(`${data.articleLinked.added.length} dosya ${tag} #${opts.articleId} listesine eklendi`, 'success');
+      }
+    }
+  } catch (err) {
+    if (status) status.textContent = 'Hata: ' + err.message;
+    toast(err.message, 'error');
+  }
+}
+
+async function suppLibReplaceContent(name, input) {
+  const file = input && input.files && input.files[0];
+  if (!file) return;
+  const ok = await confirmAction(`"${name}" dosyasının içeriği güncellenecek. URL aynı kalır, sadece içerik değişir. Devam edilsin mi?`);
+  if (!ok) { input.value = ''; return; }
+  const fd = new FormData(); fd.append('file', file);
+  try {
+    const res = await fetch(`/api/supp-library/${encodeURIComponent(name)}/replace`, { method: 'POST', body: fd });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Hata');
+    toast(`İçerik güncellendi: ${name}`, 'success');
+    await suppLibReloadTable();
+  } catch (err) {
+    toast(err.message, 'error');
+  } finally { input.value = ''; }
+}
+
+async function suppLibRename(name) {
+  const ok = await confirmAction(`Dikkat: Yeniden adlandırma, "${name}" için daha önce verilmiş olan tüm linkleri bozar. Yalnızca link henüz hiçbir PDF'e gömülmediyse güvenlidir.\n\nDevam edilsin mi?`);
+  if (!ok) return;
+  const to = window.prompt('Yeni dosya adı (uzantı dahil):', name);
+  if (!to || to === name) return;
+  try {
+    const res = await fetch(`/api/supp-library/${encodeURIComponent(name)}/rename`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ to }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Hata');
+    toast(`Yeniden adlandırıldı: ${name} → ${data.file && data.file.name}`, 'success');
+    await suppLibReloadTable();
+  } catch (err) { toast(err.message, 'error'); }
+}
+
+async function suppLibDelete(name) {
+  const ok = await confirmAction(`"${name}" silinecek. Bu linki kullanan mevcut PDF'lerin bağlantıları kırılır. Devam edilsin mi?`);
+  if (!ok) return;
+  try {
+    const res = await fetch(`/api/supp-library/${encodeURIComponent(name)}`, { method: 'DELETE' });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Hata');
+    toast(`Silindi: ${name}`, 'success');
+    await suppLibReloadTable();
+  } catch (err) { toast(err.message, 'error'); }
+}
+
+// Shared upload-card wiring used by both supp-library routes. The opts builder
+// returns either the options object for suppLibUploadFiles, or null if a
+// validation step (like "you must enter an article ID") failed.
+function suppLibWireUploadCard(dropId, inputId, getOpts) {
+  const drop = document.getElementById(dropId);
+  const input = document.getElementById(inputId);
+  if (!drop || !input) return;
+  input.addEventListener('change', () => {
+    if (!input.files || !input.files.length) return;
+    const opts = getOpts();
+    if (opts === null) { input.value = ''; return; }
+    suppLibUploadFiles(Array.from(input.files), opts || {});
+    input.value = '';
+  });
+  ['dragenter', 'dragover'].forEach((t) => drop.addEventListener(t, (e) => {
+    e.preventDefault(); drop.style.borderColor = 'var(--brand)'; drop.style.background = 'var(--brand-soft)';
+  }));
+  ['dragleave', 'drop'].forEach((t) => drop.addEventListener(t, (e) => {
+    e.preventDefault(); drop.style.borderColor = ''; drop.style.background = 'var(--bg-page)';
+  }));
+  drop.addEventListener('drop', (e) => {
+    const files = e.dataTransfer && e.dataTransfer.files;
+    if (!files || !files.length) return;
+    const opts = getOpts();
+    if (opts === null) return;
+    suppLibUploadFiles(Array.from(files), opts || {});
+  });
+}
+
+function suppLibTableSection(scope) {
+  const isLinked = scope === 'linked';
+  const refCol = isLinked
+    ? '<th style="padding:8px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:0.04em;color:var(--text-muted);font-weight:600;width:25%">Bağlı Makale</th>'
+    : '';
+  return `
+    <div class="card">
+      <div class="card-padded" style="border-bottom:1px solid var(--border-soft);padding-bottom:12px">
+        <div class="flex items-baseline justify-between gap-2">
+          <h2 class="text-base font-semibold" style="color:var(--text-strong)">${isLinked ? 'Makaleye Bağlı Dosyalar' : 'Bağımsız Dosyalar'} (<span id="supp-lib-count">0</span>)</h2>
+          <button type="button" onclick="suppLibReloadTable()" class="btn btn-ghost btn-sm">Listeyi Yenile</button>
+        </div>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="w-full" style="border-collapse:separate;border-spacing:0">
+          <thead>
+            <tr style="background:var(--bg-page)">
+              <th style="padding:8px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:0.04em;color:var(--text-muted);font-weight:600;width:${isLinked ? '25' : '30'}%">Dosya</th>
+              ${refCol}
+              <th style="padding:8px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:0.04em;color:var(--text-muted);font-weight:600">Kalıcı URL</th>
+              <th style="padding:8px 12px;text-align:right;font-size:11px;text-transform:uppercase;letter-spacing:0.04em;color:var(--text-muted);font-weight:600;white-space:nowrap">İşlemler</th>
+            </tr>
+          </thead>
+          <tbody id="supp-lib-tbody" style="font-size:13px"></tbody>
+        </table>
+      </div>
+    </div>`;
+}
+
+// ── Page 1: standalone supplementary files (no article context) ──────────────
+route('/supp-library', async (el) => {
+  _suppLibScope = 'standalone';
+  el.innerHTML = `
+    ${pageHeader({
+      eyebrow: 'Yayın',
+      title: 'Ek Materyal — Bağımsız',
+      subtitle: 'Henüz hangi makaleye ait olduğu bilinmeyen ek materyal dosyaları. Sadece kalıcı bir URL üretilir; sisteme makale bilgisi girmenize gerek yoktur.',
+      actions: '<a href="#/supp-library-linked" class="btn btn-secondary btn-sm">Makaleye Bağlı Dosyalar →</a>',
+    })}
+
+    <div class="card card-padded mb-4" style="background:#fffbeb;border-color:#fbd38d">
+      <div class="flex items-start gap-3">
+        <div style="color:#b45309;font-size:18px;line-height:1">ℹ︎</div>
+        <div class="text-sm" style="color:#78350f;line-height:1.6">
+          Üretilen link <code style="background:#fef3c7;padding:1px 4px;border-radius:3px">https://balkanmedicaljournal.org/img/files/<em>dosyaadı</em></code> formatındadır ve dosya adı değişmedikçe sabit kalır.
+          Daha sonra dosya güncellenirse <strong>İçeriği Değiştir</strong> kullanın — link aynı kalır, PDF'lere gömülü bağlantılar bozulmaz.
+          Bir dosyanın aslında bir makaleye ait olduğu sonradan anlaşılırsa <a href="#/supp-library-linked" style="color:#92400e;text-decoration:underline">Makaleye Bağlı sayfasına</a> geçip aynı isimle makale ID'si ile yeniden yükleyin — link değişmez, makale Supplementary listesine eklenir.
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-padded mb-6">
+      <div class="flex items-baseline gap-2 mb-3">
+        <h2 class="text-base font-semibold" style="color:var(--text-strong)">Yeni Bağımsız Dosya Yükle</h2>
+        <span class="text-xs" style="color:var(--text-faint)">PDF, ZIP, görsel, video, ses, ofis dosyaları</span>
+      </div>
+      <div class="flex items-center gap-2 mb-3 text-xs" style="color:var(--text-muted)">
+        <label for="supp-lib-rename" style="white-space:nowrap">Tercih edilen dosya adı (opsiyonel, tek dosya için):</label>
+        <input id="supp-lib-rename" class="input" style="flex:1;max-width:520px;font-size:12px" placeholder="ör. BalkanMedJ-2026.2026-3-213-supplement-tables.pdf">
+      </div>
+      <div id="supp-lib-drop-standalone" class="rounded-lg" style="border:2px dashed var(--border);padding:24px;text-align:center;background:var(--bg-page)">
+        <p class="text-sm mb-2" style="color:var(--text-muted)">Dosyaları buraya sürükleyin <span style="color:var(--text-faint)">veya</span></p>
+        <label class="btn btn-primary btn-sm" style="cursor:pointer">
+          📄 Dosya Seç
+          <input type="file" id="supp-lib-file-input" multiple class="hidden">
+        </label>
+      </div>
+      <div id="supp-lib-upload-status" class="mt-3 text-xs" style="color:var(--text-faint)"></div>
+    </div>
+
+    ${suppLibTableSection('standalone')}
+  `;
+
+  suppLibWireUploadCard('supp-lib-drop-standalone', 'supp-lib-file-input', () => ({}));
+  await suppLibReloadTable();
+});
+
+// ── Page 2: article-attached supplementary files ─────────────────────────────
+route('/supp-library-linked', async (el) => {
+  _suppLibScope = 'linked';
+  el.innerHTML = `
+    ${pageHeader({
+      eyebrow: 'Yayın',
+      title: 'Ek Materyal — Makaleye Bağlı',
+      subtitle: 'Belirli bir makaleye ait olduğu bilinen ek materyaller. Kalıcı bir link üretilir ve dosya, seçilen makalenin Supplementary Materials listesine otomatik eklenir.',
+      actions: '<a href="#/supp-library" class="btn btn-secondary btn-sm">Bağımsız Dosyalar →</a>',
+    })}
+
+    <div class="card card-padded mb-4" style="background:#fffbeb;border-color:#fbd38d">
+      <div class="flex items-start gap-3">
+        <div style="color:#b45309;font-size:18px;line-height:1">ℹ︎</div>
+        <div class="text-sm" style="color:#78350f;line-height:1.6">
+          Üretilen link <code style="background:#fef3c7;padding:1px 4px;border-radius:3px">https://balkanmedicaljournal.org/img/files/<em>dosyaadı</em></code> formatındadır ve dosya adı değişmedikçe sabit kalır.
+          Yükleme sırasında girdiğiniz <strong>Makale ID</strong>'nin Supplementary Materials listesine bu dosya otomatik eklenir.
+          İçerik güncellemek için <strong>İçeriği Değiştir</strong> kullanın — link aynı kalır, PDF'lere gömülü bağlantılar bozulmaz.
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-padded mb-6">
+      <div class="flex items-baseline gap-2 mb-3">
+        <h2 class="text-base font-semibold" style="color:var(--text-strong)">Bir Makaleye Bağlı Yeni Dosya Yükle</h2>
+        <span class="text-xs" style="color:var(--text-faint)">PDF, ZIP, görsel, video, ses, ofis dosyaları</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mb-3 text-xs" style="color:var(--text-muted)">
+        <div>
+          <label for="supp-lib-article-id" style="white-space:nowrap;font-weight:500;color:var(--text-strong);display:block;margin-bottom:4px">Makale ID <span style="color:var(--danger)">*</span></label>
+          <input id="supp-lib-article-id" class="input" style="width:100%;font-size:12px" placeholder="ör. 2811">
+        </div>
+        <div class="md:col-span-2">
+          <label for="supp-lib-rename" style="white-space:nowrap;font-weight:500;color:var(--text-strong);display:block;margin-bottom:4px">Tercih edilen dosya adı (opsiyonel)</label>
+          <input id="supp-lib-rename" class="input" style="width:100%;font-size:12px" placeholder="ör. BalkanMedJ-2026.2026-3-213-supplement-tables.pdf">
+        </div>
+      </div>
+      <div id="supp-lib-drop-article" class="rounded-lg" style="border:2px dashed var(--border);padding:24px;text-align:center;background:var(--bg-page)">
+        <p class="text-sm mb-2" style="color:var(--text-muted)">Dosyaları buraya sürükleyin <span style="color:var(--text-faint)">veya</span></p>
+        <label class="btn btn-primary btn-sm" style="cursor:pointer">
+          📄 Dosya Seç ve Makaleye Bağla
+          <input type="file" id="supp-lib-file-input-article" multiple class="hidden">
+        </label>
+      </div>
+      <div id="supp-lib-upload-status" class="mt-3 text-xs" style="color:var(--text-faint)"></div>
+    </div>
+
+    ${suppLibTableSection('linked')}
+  `;
+
+  suppLibWireUploadCard('supp-lib-drop-article', 'supp-lib-file-input-article', () => {
+    const idEl = document.getElementById('supp-lib-article-id');
+    const articleId = (idEl && idEl.value || '').trim();
+    if (!articleId) {
+      toast("Önce yukarıdaki kutuya makale ID'sini girin.", 'error');
+      return null;
+    }
+    return { articleId };
+  });
+  await suppLibReloadTable();
+});
+
+route('/editorial', async (el) => {
+  const board = await API.get('/editorial');
+  _edModel = { sections: Array.isArray(board.sections) ? board.sections : [] };
+  _edModel.sections.forEach((s) => {
+    if (s.layout === 'names') { s.names = s.names || []; }
+    else { s.members = (s.members || []).map((m) => ({ ...m, links: m.links || [] })); }
+  });
+  el.innerHTML = `
+    <div class="page-header">
+      <h1 class="page-title">Yayın Kurulu</h1>
+      <button onclick="saveEditorial()" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Kaydet</button>
+    </div>
+    <div class="banner banner-info mb-4">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      <div class="banner-body" style="margin-top:0">Her bölüm bağımsız düzenlenir. <strong>+ Yeni Bölüm Ekle</strong> ile yeni başlık (ör. Konu Editörü) açabilir, ▲▼ ile sıralayabilir, her kişiye ORCID/CV gibi birden çok bağlantı ekleyebilirsiniz. Değişiklikler <strong>Kaydet</strong> ile sitenin yayın kurulu sayfasına yansır.</div>
+    </div>
+    <div id="ed-sections" class="space-y-5"></div>`;
+  renderEditorialForm();
+  el.addEventListener('input', markDirty);
+  el.addEventListener('change', (e) => {
+    if (e.target && e.target.classList) {
+      if (e.target.classList.contains('ed-photo-file')) edEditorialPhotoUpload(e.target);
+      else if (e.target.classList.contains('ed-cv-file')) edEditorialCvUpload(e.target);
+    }
+  });
+  clearDirty();
+});
 
 async function saveEditorial() {
-  const getMembers = (id) => {
-    return [...document.querySelectorAll(`#${id} .ed-row`)].map((r) => {
-      const m = {
-        name: r.querySelector('.ed-name').value.trim(),
-        title: r.querySelector('.ed-title').value.trim(),
-        affiliation: r.querySelector('.ed-aff').value.trim(),
-      };
-      const photo = r.querySelector('.ed-photo')?.value.trim();
-      const link = r.querySelector('.ed-link')?.value.trim();
-      if (photo) m.photo = photo;
-      if (link) m.link = link;
-      return m;
-    }).filter((m) => m.name);
-  };
-
-  // Preserve fields we don't manage in the admin UI (biostatisticsEditor,
-  // ethicsEditor, assistantAssociateEditors, languageEditing, profileLinks, etc.)
-  const previous = window._editorialBoardSnapshot || {};
-  const editorInChief = {
-    name: document.getElementById('eic-name').value.trim(),
-    title: document.getElementById('eic-title').value.trim(),
-    affiliation: document.getElementById('eic-aff').value.trim(),
-    email: document.getElementById('eic-email').value.trim(),
-    photo: document.getElementById('eic-photo').value.trim(),
-    link: document.getElementById('eic-link').value.trim(),
-  };
-  if (!editorInChief.link) delete editorInChief.link;
-  if (!editorInChief.photo) delete editorInChief.photo;
-
-  const board = {
-    ...previous,
-    editorInChief,
-    honoraryEditors: getMembers('ed-honoraryEditors'),
-    deputyEditors: getMembers('ed-deputyEditors'),
-    associateEditors: getMembers('ed-associateEditors'),
-  };
+  edSyncModel();
+  const sections = _edModel.sections.map((s) => {
+    if (s.layout === 'names') {
+      return { id: s.id, label: (s.label || '').trim(), layout: 'names', names: (s.names || []).filter(Boolean) };
+    }
+    const members = (s.members || []).filter((m) => (m.name || '').trim()).map((m) => {
+      const o = { name: m.name.trim(), title: (m.title || '').trim(), affiliation: (m.affiliation || '').trim() };
+      if ((m.email || '').trim()) o.email = m.email.trim();
+      if ((m.photo || '').trim()) o.photo = m.photo.trim();
+      if (m.period) o.period = m.period;
+      o.links = (m.links || []).filter((l) => (l.url || '').trim())
+        .map((l) => ({ label: (l.label || '').trim() || 'Bağlantı', url: l.url.trim() }));
+      return o;
+    });
+    return { id: s.id, label: (s.label || '').trim(), layout: s.layout || 'grid', members };
+  });
   try {
-    await API.put('/editorial', board);
+    await API.put('/editorial', { sections });
     clearDirty();
     toast('Yayın kurulu kaydedildi');
   } catch (err) { toast(err.message, 'error'); }
@@ -3120,28 +6732,161 @@ async function saveEditorial() {
 // Pages
 route('/pages', async (el) => {
   const pages = await API.get('/pages');
+  const withShort = pages.filter(p => p.shortCode).length;
   el.innerHTML = `
-    <div class="flex items-center justify-between mb-6">
-      <h1 class="text-2xl font-bold text-gray-900">Sayfalar</h1>
-      <button onclick="showNewPageModal()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">+ Yeni Sayfa</button>
+    <div class="page-header">
+      <div class="min-w-0">
+        <h1 class="page-title">Sayfalar <span style="font-weight:400;color:var(--text-muted);font-size:18px">(${pages.length})</span></h1>
+        <p class="page-subtitle">Sistem ve özel sayfaları yönetin. Her sayfaya akılda kalıcı bir <strong>kısa link</strong> atayabilirsiniz — paylaşılabilir, otomatik olarak asıl sayfaya yönlendirir.</p>
+      </div>
+      <button onclick="showNewPageModal()" class="btn btn-primary text-sm">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Yeni Sayfa
+      </button>
     </div>
-    <div class="bg-white rounded-xl border divide-y">
-      ${pages.map((p) => `
-        <div class="flex items-center justify-between px-5 py-4 hover:bg-gray-50">
-          <a href="#/pages/${p.slug}" class="flex-1 flex items-center min-w-0">
-            <span class="font-medium text-gray-900">${esc(p.title)}</span>
-            <span class="text-sm text-gray-400 ml-2">${esc(p.file)}</span>
-            ${p.custom ? '<span class="ml-2 text-xs px-2 py-0.5 bg-teal-50 text-teal-700 rounded-full">Özel</span>' : ''}
-          </a>
-          <div class="flex items-center gap-2 ml-4">
-            ${p.custom ? `<button onclick="deleteCustomPage('${p.slug}', '${esc(p.title).replace(/'/g, "\\'")}')" class="text-red-500 hover:text-red-700 text-sm px-2 py-1" title="Sil">Sil</button>` : ''}
-            <a href="#/pages/${p.slug}" class="text-gray-400 hover:text-gray-600">
-              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+
+    <div class="card card-padded mb-5" style="background:#f0f9ff;border-color:#bae6fd;padding:14px 16px">
+      <div class="flex items-start gap-3">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0369a1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        <div class="text-sm" style="color:#0c4a6e;line-height:1.55">
+          <strong>Kısa link nasıl çalışır?</strong> Bir sayfaya kısa link kodu atadığınızda <code>balkanmedicaljournal.org/s/<em>kod</em></code> URL'si oluşturulur ve otomatik olarak asıl sayfaya yönlendirir. ${withShort} sayfa için kısa link tanımlı.
+        </div>
+      </div>
+    </div>
+
+    <div class="card overflow-hidden">
+      <div class="divide-y" style="border-color:var(--border-soft)">
+        ${pages.map((p) => `
+          <div class="flex items-center justify-between gap-3 px-5 py-3.5 hover:bg-gray-50" style="border-bottom:1px solid var(--border-soft)">
+            <a href="#/pages/${p.slug}" class="flex-1 min-w-0 flex items-center gap-3">
+              <div class="min-w-0">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-medium" style="color:var(--text-strong)">${esc(p.title)}</span>
+                  <code class="text-xs" style="color:var(--text-muted)">${esc(p.file)}</code>
+                  ${p.custom ? '<span class="badge" style="background:#ccfbf1;color:#0f766e;font-size:11px;padding:2px 6px">Özel</span>' : ''}
+                </div>
+              </div>
             </a>
-          </div>
-        </div>`).join('')}
+            <div class="flex items-center gap-2 flex-shrink-0" style="min-width:0">
+              ${p.shortCode
+                ? `<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg" style="background:#f0fdfa;border:1px solid #99f6e4">
+                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                     <code class="text-xs font-medium" style="color:#0f766e">/s/${esc(p.shortCode)}</code>
+                     <button onclick="event.stopPropagation(); copyShortLink('${esc(p.shortCode)}', this)" title="Kopyala" style="background:transparent;border:0;padding:0 2px;cursor:pointer;color:#0f766e">
+                       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                     </button>
+                     <button onclick="event.stopPropagation(); editShortLink('${p.slug}', '${esc(p.title).replace(/'/g, "\\'")}', '${esc(p.shortCode)}')" title="Düzenle" style="background:transparent;border:0;padding:0 2px;cursor:pointer;color:#0f766e">
+                       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                     </button>
+                     <button onclick="event.stopPropagation(); removeShortLink('${p.slug}', '${esc(p.shortCode)}')" title="Kaldır" style="background:transparent;border:0;padding:0 2px;cursor:pointer;color:#b91c1c">
+                       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                     </button>
+                   </div>`
+                : `<button onclick="event.stopPropagation(); editShortLink('${p.slug}', '${esc(p.title).replace(/'/g, "\\'")}', '')" class="text-xs font-medium" style="color:var(--text-muted);padding:5px 10px;border:1px dashed var(--border);border-radius:8px" onmouseover="this.style.color='var(--brand)'; this.style.borderColor='var(--brand)'" onmouseout="this.style.color='var(--text-muted)'; this.style.borderColor='var(--border)'">
+                     + Kısa link ekle
+                   </button>`}
+              ${p.custom ? `<button onclick="event.stopPropagation(); deleteCustomPage('${p.slug}', '${esc(p.title).replace(/'/g, "\\'")}')" class="text-red-500 hover:text-red-700 text-xs px-2 py-1" title="Sil">Sil</button>` : ''}
+              <a href="#/pages/${p.slug}" class="text-gray-400 hover:text-gray-600">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>`).join('')}
+      </div>
     </div>`;
 });
+
+function copyShortLink(code, btn) {
+  // Build the full URL using the current site origin
+  const origin = window.location.origin.replace(/^http:\/\/localhost(?::\d+)?\/?$/, 'https://balkanmedicaljournal.org');
+  const url = `${origin}/s/${code}`;
+  navigator.clipboard?.writeText(url).then(() => {
+    toast(`Kopyalandı: ${url}`);
+    if (btn) {
+      const orig = btn.innerHTML;
+      btn.innerHTML = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+      setTimeout(() => { btn.innerHTML = orig; }, 1200);
+    }
+  }).catch(() => toast(url));
+}
+
+async function editShortLink(slug, title, currentCode) {
+  return new Promise((resolve) => {
+    const overlay = document.createElement('div');
+    overlay.className = 'modal-overlay';
+    overlay.innerHTML = `
+      <div class="modal-dialog">
+        <div class="flex items-center justify-between px-6 py-4" style="border-bottom:1px solid var(--border-soft)">
+          <h3 class="text-base font-semibold" style="color:var(--text-strong);letter-spacing:-0.01em">${currentCode ? 'Kısa Linki Düzenle' : 'Kısa Link Ekle'}</h3>
+          <button class="modal-close p-1.5 rounded-md" style="color:var(--text-muted)" aria-label="Kapat">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <div class="px-6 py-5">
+          <p class="text-sm mb-3" style="color:var(--text)">Sayfa: <strong>${esc(title)}</strong></p>
+          <label class="label" for="sl-code">Kısa link kodu</label>
+          <div class="flex items-center gap-2">
+            <span class="text-sm font-mono" style="color:var(--text-muted);white-space:nowrap">…/s/</span>
+            <input id="sl-code" type="text" class="flex-1 px-3 py-2 rounded-lg text-sm font-mono" style="border:1px solid var(--border)" maxlength="30" autocomplete="off" value="${esc(currentCode)}" placeholder="örn. auth">
+          </div>
+          <p class="text-xs mt-2" style="color:var(--text-muted)">Yalnızca küçük harf, rakam ve tire (2-30 karakter). Örnek: <code>auth</code>, <code>guidelines-2026</code></p>
+          <div id="sl-preview" class="mt-3 text-xs"></div>
+        </div>
+        <div class="flex justify-end gap-2 px-6 py-4" style="border-top:1px solid var(--border-soft);background:var(--bg-subtle);border-radius:0 0 var(--radius-lg) var(--radius-lg)">
+          <button data-action="cancel" class="btn btn-secondary">İptal</button>
+          <button data-action="save" class="btn btn-primary">Kaydet</button>
+        </div>
+      </div>`;
+    document.body.appendChild(overlay);
+    const input = overlay.querySelector('#sl-code');
+    const previewEl = overlay.querySelector('#sl-preview');
+
+    function updatePreview() {
+      const v = (input.value || '').toLowerCase().trim().replace(/[^a-z0-9-]/g, '');
+      if (input.value !== v) input.value = v;
+      const origin = 'balkanmedicaljournal.org';
+      previewEl.innerHTML = v ? `Önizleme: <code style="color:var(--brand);background:#f0fdfa;padding:2px 6px;border-radius:4px">${origin}/s/${v}</code>` : '';
+    }
+    input.addEventListener('input', updatePreview);
+    updatePreview();
+    setTimeout(() => { input.focus(); input.select(); }, 50);
+
+    const finish = async (action) => {
+      const code = (input.value || '').trim();
+      if (action === 'save') {
+        if (!code) { toast('Kısa link kodu boş olamaz', 'error'); return; }
+        overlay.remove();
+        document.removeEventListener('keydown', onKey);
+        try {
+          await API.put(`/pages/${slug}/short-code`, { code });
+          toast(`Kısa link kaydedildi: /s/${code}`);
+          handleRoute();
+        } catch (err) { toast(err.message, 'error'); }
+        resolve();
+      } else {
+        overlay.remove();
+        document.removeEventListener('keydown', onKey);
+        resolve();
+      }
+    };
+    overlay.querySelector('.modal-close').onclick = () => finish('cancel');
+    overlay.querySelectorAll('[data-action]').forEach(b => b.onclick = () => finish(b.dataset.action));
+    overlay.addEventListener('click', e => { if (e.target === overlay) finish('cancel'); });
+    const onKey = (e) => {
+      if (e.key === 'Escape') finish('cancel');
+      else if (e.key === 'Enter' && document.activeElement === input) finish('save');
+    };
+    document.addEventListener('keydown', onKey);
+  });
+}
+
+async function removeShortLink(slug, code) {
+  if (!await confirmAction(`/s/${code} kısa linki kaldırılacak — bu URL'yi paylaşan içeriklerden bağlantı koparılacak. Devam edilsin mi?`)) return;
+  try {
+    await API.del(`/pages/${slug}/short-code`);
+    toast('Kısa link kaldırıldı');
+    handleRoute();
+  } catch (err) { toast(err.message, 'error'); }
+}
 
 function showNewPageModal() {
   const existing = document.getElementById('new-page-overlay');
@@ -3162,11 +6907,11 @@ function showNewPageModal() {
       </div>
       <div class="px-6 py-5 space-y-4">
         <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">Başlık <span class="text-red-500">*</span></label>
+          <label class="label">Başlık <span class="text-red-500">*</span></label>
           <input id="np-title" type="text" placeholder="Örn: Open Access" class="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500">
         </div>
         <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">Slug (URL) <span class="text-red-500">*</span></label>
+          <label class="label">Slug (URL) <span class="text-red-500">*</span></label>
           <div class="flex items-center">
             <input id="np-slug" type="text" placeholder="open-access" class="flex-1 px-3 py-2 border rounded-lg text-sm font-mono focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500">
             <span class="text-sm text-gray-400 ml-2">.html</span>
@@ -3174,16 +6919,24 @@ function showNewPageModal() {
           <p class="text-xs text-gray-500 mt-1">Yalnızca küçük harf, rakam ve tire (-). Başlıktan otomatik oluşturulur.</p>
         </div>
         <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">SEO Açıklaması</label>
+          <label class="label">SEO Açıklaması</label>
           <textarea id="np-description" rows="2" placeholder="Arama motorları ve sosyal medyada görünecek kısa açıklama" class="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"></textarea>
         </div>
-        <div class="bg-blue-50 rounded-lg p-3 text-xs text-blue-800">
+        <div>
+          <label class="label">Kısa link kodu <span class="text-gray-400 font-normal">(opsiyonel)</span></label>
+          <div class="flex items-center gap-2">
+            <span class="text-sm font-mono text-gray-500" style="white-space:nowrap">…/s/</span>
+            <input id="np-short-code" type="text" placeholder="örn. auth" maxlength="30" class="flex-1 px-3 py-2 border rounded-lg text-sm font-mono focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500">
+          </div>
+          <p class="text-xs text-gray-500 mt-1">Akılda kalıcı kısa bir URL. Boş bırakırsanız sonra ekleyebilirsiniz.</p>
+        </div>
+        <div class="bg-slate-50 rounded-lg p-3 text-xs text-slate-800">
           <strong>Not:</strong> Yeni sayfa nav/footer ile birlikte oluşturulur. Ancak menü bağlantısını eklemek için <em>Nav & Footer</em> bölümünden sayfayı manuel eklemeniz gerekir.
         </div>
       </div>
       <div class="bg-gray-50 border-t px-6 py-4 rounded-b-2xl flex justify-end gap-2">
         <button onclick="this.closest('#new-page-overlay').remove()" class="px-4 py-2 bg-white border text-gray-700 rounded-lg hover:bg-gray-50 text-sm">İptal</button>
-        <button onclick="submitNewPage()" class="px-5 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Oluştur</button>
+        <button onclick="submitNewPage()" class="px-5 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Oluştur</button>
       </div>
     </div>`;
   document.body.appendChild(overlay);
@@ -3211,13 +6964,20 @@ async function submitNewPage() {
   const title = document.getElementById('np-title').value.trim();
   const slug = document.getElementById('np-slug').value.trim();
   const description = document.getElementById('np-description').value.trim();
+  const shortCode = document.getElementById('np-short-code').value.trim();
 
   if (!title) { toast('Başlık gerekli', 'error'); return; }
   if (!slug) { toast('Slug gerekli', 'error'); return; }
 
   try {
     const result = await API.post('/pages', { title, slug, description });
-    toast(`"${result.title}" sayfası oluşturuldu`);
+    // If user provided a short code, set it as a follow-up call (page must
+    // exist before the short-code endpoint can attach to it).
+    if (shortCode) {
+      try { await API.put(`/pages/${result.slug}/short-code`, { code: shortCode }); }
+      catch (err) { toast(`Sayfa oluşturuldu fakat kısa link atanamadı: ${err.message}`, 'warning'); }
+    }
+    toast(`"${result.title}" sayfası oluşturuldu${shortCode ? ' (/s/' + shortCode + ')' : ''}`);
     document.getElementById('new-page-overlay')?.remove();
     location.hash = `#/pages/${result.slug}`;
   } catch (err) {
@@ -3242,13 +7002,13 @@ route('/pages/:slug', async (el, { slug }) => {
   const hasSections = page.sections && page.sections.length > 0;
 
   el.innerHTML = `
-    <div class="flex items-center justify-between mb-6">
-      <h1 class="text-2xl font-bold text-gray-900">${esc(page.title)}</h1>
+    <div class="page-header">
+      <h1 class="page-title">${esc(page.title)}</h1>
       <div class="flex gap-2">
-        <a href="#/pages" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm">Geri</a>
-        <a href="/site/${esc(page.file)}" target="_blank" rel="noopener" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 text-sm font-medium">Önizle</a>
-        <button id="toggle-editor-mode" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 text-sm" title="Düzenleme modunu değiştir">HTML</button>
-        <button onclick="savePage('${slug}')" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet</button>
+        <a href="#/pages" class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm">Geri</a>
+        <a href="/site/${esc(page.file)}" target="_blank" rel="noopener" class="px-4 py-2 bg-slate-50 text-slate-700 rounded-lg hover:bg-slate-100 text-sm font-medium">Önizle</a>
+        <button id="toggle-editor-mode" class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm" title="Düzenleme modunu değiştir">HTML</button>
+        <button onclick="savePage('${slug}')" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Kaydet</button>
       </div>
     </div>
 
@@ -3258,14 +7018,14 @@ route('/pages/:slug', async (el, { slug }) => {
       <div id="page-sections" class="space-y-4">
         ${(page.sections || []).map((s, i) => pageSectionBlock(s, i)).join('')}
       </div>
-      <button onclick="addPageSection()" class="mt-4 px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 text-sm font-medium">+ Bölüm Ekle</button>
+      <button onclick="addPageSection()" class="mt-4 px-4 py-2 bg-slate-50 text-slate-700 rounded-lg hover:bg-slate-100 text-sm font-medium">+ Bölüm Ekle</button>
     </div>
 
     <!-- Raw HTML editor (fallback) -->
     <div id="page-html-editor" ${hasSections ? 'class="hidden"' : ''}>
-      <p class="text-sm text-gray-500 mb-4">Ham HTML düzenleme modu. Tüm &lt;main&gt; içeriği burada görünür.</p>
-      <div class="bg-white rounded-xl border p-6">
-        <textarea id="page-content" rows="30" class="w-full px-3 py-2 border rounded-lg text-sm font-mono">${esc(page.content)}</textarea>
+      <p class="text-sm text-gray-500 mb-4">Tüm sayfa içeriğini görsel olarak düzenleyin. İleri kullanım için sağ üstteki "HTML" sekmesine geçin.</p>
+      <div class="card" style="padding:24px">
+        ${htmlEditor({ prefix: 'pg-content', initialHtml: page.content || '', rows: 30, placeholder: 'Sayfa içeriği', variant: 'full', minHeight: '500px' })}
       </div>
     </div>`;
 
@@ -3277,15 +7037,15 @@ route('/pages/:slug', async (el, { slug }) => {
     document.getElementById('page-html-editor').classList.toggle('hidden', visualMode);
     document.getElementById('toggle-editor-mode').textContent = visualMode ? 'HTML' : 'Görsel';
     if (!visualMode) {
-      // Sync sections -> raw HTML
-      document.getElementById('page-content').value = buildPageHtmlFromSections();
+      // Sync sections -> page HTML editor
+      setHtmlEditorContent('pg-content', buildPageHtmlFromSections());
     }
   });
 });
 
 function pageSectionBlock(section, index) {
   return `
-    <div class="page-section bg-white rounded-xl border" data-section-idx="${index}">
+    <div class="page-section card" data-section-idx="${index}">
       <div class="flex items-center justify-between px-4 py-3 bg-gray-50 rounded-t-xl border-b">
         <div class="flex items-center gap-2 flex-1">
           <svg class="w-4 h-4 text-gray-400 cursor-grab" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/></svg>
@@ -3310,7 +7070,7 @@ function pageSectionBlock(section, index) {
           <button type="button" onclick="sectionLink(this)" title="Link Ekle" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></button>
           <button type="button" onclick="sectionCmd(this,'removeFormat')" title="Formatı Temizle" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17 10L3 3m0 0l7 14 2-5 5-2M3 3l18 18"/></svg></button>
         </div>
-        <div class="ps-content w-full px-4 py-3 border rounded-b-lg text-sm min-h-[120px] focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 max-w-none overflow-auto bg-white" contenteditable="true" oninput="markDirty()">${section.body}</div>
+        <div class="ps-content w-full px-4 py-3 border rounded-b-lg text-sm min-h-[120px] focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 max-w-none overflow-auto bg-white" contenteditable="true" oninput="markDirty()" onfocus="try{document.execCommand('defaultParagraphSeparator',false,'p')}catch(e){}">${section.body || '<p><br></p>'}</div>
       </div>
     </div>`;
 }
@@ -3358,13 +7118,87 @@ function sectionLink(btn) {
   }
 }
 
+// Normalize a contenteditable section body so plain-text input still renders
+// correctly inside the public site's `.prose space-y-4` container.
+// Wraps bare text nodes and top-level <div>s in <p>, splits <br>-separated
+// runs into separate <p>s, and removes empty elements.
+function normalizeSectionBodyHtml(html) {
+  if (!html || !html.trim()) return '';
+  // Already wrapped in block elements? Leave it alone except for empty cleanup.
+  const wrapper = document.createElement('div');
+  wrapper.innerHTML = html;
+
+  const BLOCK_TAGS = new Set(['P', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'UL', 'OL', 'BLOCKQUOTE', 'PRE', 'TABLE', 'FIGURE', 'HR']);
+
+  // Pass 1: split <br><br>... runs in inline contexts into separate paragraphs
+  // First, normalize top-level. Walk children; collect inline runs.
+  const out = document.createElement('div');
+  let currentP = null;
+  const flush = () => {
+    if (currentP && currentP.innerHTML.trim()) {
+      // Trim leading/trailing <br>s
+      currentP.innerHTML = currentP.innerHTML.replace(/^(\s*<br\s*\/?>\s*)+/i, '').replace(/(\s*<br\s*\/?>\s*)+$/i, '').trim();
+      if (currentP.innerHTML.trim()) out.appendChild(currentP);
+    }
+    currentP = null;
+  };
+
+  const childNodes = [...wrapper.childNodes];
+  for (const node of childNodes) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      const text = node.textContent;
+      if (!text.trim()) continue;
+      if (!currentP) currentP = document.createElement('p');
+      currentP.appendChild(node.cloneNode(true));
+      continue;
+    }
+    if (node.nodeType !== Node.ELEMENT_NODE) continue;
+    const tag = node.tagName;
+    // Top-level block element — flush current paragraph, append as-is
+    if (BLOCK_TAGS.has(tag)) {
+      flush();
+      // Convert <div> wrappers (browser-inserted) to <p>; keep real blocks.
+      if (tag === 'DIV' && !node.querySelector('p, h1, h2, h3, h4, h5, h6, ul, ol, blockquote, pre, table, figure')) {
+        const p = document.createElement('p');
+        p.innerHTML = node.innerHTML;
+        if (p.innerHTML.trim()) out.appendChild(p);
+      } else {
+        out.appendChild(node.cloneNode(true));
+      }
+      continue;
+    }
+    if (tag === 'DIV') {
+      // Browser-inserted <div> on Enter — convert to <p>
+      flush();
+      const inner = (node.innerHTML || '').trim();
+      if (!inner) continue;
+      const p = document.createElement('p');
+      p.innerHTML = inner;
+      out.appendChild(p);
+      continue;
+    }
+    if (tag === 'BR') {
+      // Treat <br><br> as paragraph break: flush current
+      flush();
+      continue;
+    }
+    // Inline elements (SPAN/STRONG/EM/A/CODE/SUP/SUB/IMG) — accumulate into currentP
+    if (!currentP) currentP = document.createElement('p');
+    currentP.appendChild(node.cloneNode(true));
+  }
+  flush();
+
+  return out.innerHTML;
+}
+
 function buildPageHtmlFromSections() {
   const sections = document.querySelectorAll('.page-section');
-  if (!sections.length) return document.getElementById('page-content')?.value || '';
+  if (!sections.length) return document.getElementById('pg-content-visual') ? getHtmlEditorContent('pg-content') : '';
   return Array.from(sections).map((sec) => {
     const heading = sec.querySelector('.ps-heading').value.trim();
     const contentEl = sec.querySelector('.ps-content');
-    const content = (contentEl.tagName === 'TEXTAREA' ? contentEl.value : contentEl.innerHTML).trim();
+    const rawContent = (contentEl.tagName === 'TEXTAREA' ? contentEl.value : contentEl.innerHTML).trim();
+    const content = normalizeSectionBodyHtml(rawContent);
     if (!heading && !content) return '';
     return `            <section>\n              <h2 class="text-2xl font-bold text-gray-900 mb-4">${heading}</h2>\n              <div class="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-4">\n                ${content}\n              </div>\n            </section>`;
   }).filter(Boolean).join('\n\n');
@@ -3377,7 +7211,7 @@ async function savePage(slug) {
     if (visualEditor && !visualEditor.classList.contains('hidden')) {
       content = buildPageHtmlFromSections();
     } else {
-      content = document.getElementById('page-content').value;
+      content = getHtmlEditorContent('pg-content');
     }
     await API.put(`/pages/${slug}`, { content });
     clearDirty();
@@ -3388,76 +7222,543 @@ async function savePage(slug) {
 // Article types
 route('/article-types', async (el) => {
   const types = await API.get('/article-types');
+  const inUseCount = types.filter(t => t.count > 0).length;
   el.innerHTML = `
-    <h1 class="text-2xl font-bold text-gray-900 mb-6">Makale Türleri <span class="text-lg font-normal text-gray-400">(${types.length})</span></h1>
-    <div class="bg-white rounded-xl border overflow-hidden max-w-xl">
+    <div class="page-header">
+      <div class="min-w-0">
+        <h1 class="page-title">Makale Türleri <span style="font-weight:400;color:var(--text-muted);font-size:18px">(${types.length})</span></h1>
+        <p class="page-subtitle">Dergide kullanılan makale türlerini yönetin. Yeni bir tür eklediğinizde, makale ekleme/düzenleme formundaki <em>Tür</em> alanında öneri olarak görünür.</p>
+      </div>
+      <div class="flex gap-2">
+        <button onclick="addArticleType()" class="btn btn-primary text-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Yeni Tür Ekle
+        </button>
+      </div>
+    </div>
+
+    <div class="card card-padded mb-5" style="background:#f0f9ff;border-color:#bae6fd;padding:14px 16px">
+      <div class="flex items-start gap-3">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0369a1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        <div class="text-sm" style="color:#0c4a6e;line-height:1.55">
+          <strong>Tür ekleme nasıl çalışır?</strong> Burada eklediğiniz tür adları, makale formundaki <em>Tür</em> alanının açılır öneri listesine eklenir. Bir tür herhangi bir makalede kullanıldığı sürece otomatik olarak listede görünür — silmek için önce o türü kullanan makaleleri başka bir türe taşıyın.
+        </div>
+      </div>
+    </div>
+
+    <div class="card overflow-hidden" style="max-width:720px">
       <table class="w-full text-sm">
-        <thead class="bg-gray-50"><tr>
-          <th class="text-left px-3 py-2 font-medium text-gray-500">Tür</th>
-          <th class="text-right px-3 py-2 font-medium text-gray-500 w-16">Adet</th>
-          <th class="px-3 py-2 w-20"></th>
+        <thead style="background:var(--bg-subtle)"><tr>
+          <th class="text-left px-4 py-2.5 font-medium" style="color:var(--text-muted);font-size:12px;text-transform:uppercase;letter-spacing:0.04em">Tür Adı</th>
+          <th class="text-right px-4 py-2.5 font-medium w-24" style="color:var(--text-muted);font-size:12px;text-transform:uppercase;letter-spacing:0.04em">Kullanım</th>
+          <th class="text-right px-4 py-2.5 font-medium w-40" style="color:var(--text-muted);font-size:12px;text-transform:uppercase;letter-spacing:0.04em">İşlem</th>
         </tr></thead>
-        <tbody>${types.map((t) => `
-          <tr class="border-t hover:bg-gray-50"><td class="px-3 py-1.5 font-medium">${esc(t.name)}</td><td class="px-3 py-1.5 text-right tabular-nums text-gray-600">${t.count}</td>
-          <td class="px-3 py-1.5 text-right"><button onclick="renameType('${esc(t.name)}')" class="text-teal-600 text-xs hover:text-teal-800">Adlandır</button></td></tr>`).join('')}</tbody>
+        <tbody>${types.length === 0 ? `
+          <tr><td colspan="3" class="px-4 py-8 text-center" style="color:var(--text-muted)">Henüz tür yok. Yukarıdaki <strong>Yeni Tür Ekle</strong> ile başlayın.</td></tr>` : types.map((t) => `
+          <tr style="border-top:1px solid var(--border-soft)">
+            <td class="px-4 py-2.5 font-medium" style="color:var(--text-strong)">
+              ${esc(t.name)}
+              ${t.manual && t.count === 0 ? '<span class="badge bg-gray-100 text-gray-600" style="margin-left:8px;font-size:11px;padding:2px 6px">manuel</span>' : ''}
+            </td>
+            <td class="px-4 py-2.5 text-right tabular-nums" style="color:var(--text-muted)">
+              ${t.count === 0 ? '<span style="color:var(--text-muted);font-style:italic">kullanılmıyor</span>' : `${t.count} makale`}
+            </td>
+            <td class="px-4 py-2.5 text-right">
+              <button onclick="renameType('${esc(t.name).replace(/'/g, "\\'")}')" class="text-xs font-medium" style="color:var(--brand);margin-right:12px" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Adlandır</button>
+              ${t.count === 0 ? `<button onclick="deleteArticleType('${esc(t.name).replace(/'/g, "\\'")}')" class="text-xs font-medium" style="color:#b91c1c" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Sil</button>` : '<span class="text-xs" style="color:var(--text-muted-soft, #d1d5db)">Sil</span>'}
+            </td>
+          </tr>`).join('')}</tbody>
       </table>
-    </div>`;
+    </div>
+
+    <p class="text-xs mt-4" style="color:var(--text-muted)">${inUseCount} tür aktif olarak kullanılıyor · ${types.length - inUseCount} kullanılmıyor</p>
+  `;
 });
 
+async function addArticleType() {
+  return new Promise((resolve) => {
+    const overlay = document.createElement('div');
+    overlay.className = 'modal-overlay';
+    overlay.innerHTML = `
+      <div class="modal-dialog">
+        <div class="flex items-center justify-between px-6 py-4" style="border-bottom:1px solid var(--border-soft)">
+          <h3 class="text-base font-semibold" style="color:var(--text-strong);letter-spacing:-0.01em">Yeni Makale Türü Ekle</h3>
+          <button class="modal-close p-1.5 rounded-md" style="color:var(--text-muted)" aria-label="Kapat">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <div class="px-6 py-5">
+          <label class="label" for="new-type-input">Tür adı</label>
+          <input id="new-type-input" type="text" class="w-full px-3 py-2 border rounded-lg text-sm" placeholder="örn. Editorial, Brief Report" maxlength="80" autocomplete="off" />
+          <p class="text-xs mt-2" style="color:var(--text-muted)">Eklediğiniz tür, makale formundaki <em>Tür</em> alanında öneri olarak görünecektir.</p>
+        </div>
+        <div class="flex justify-end gap-2 px-6 py-4" style="border-top:1px solid var(--border-soft);background:var(--bg-subtle);border-radius:0 0 var(--radius-lg) var(--radius-lg)">
+          <button data-action="cancel" class="btn btn-secondary">İptal</button>
+          <button data-action="add" class="btn btn-primary">Ekle</button>
+        </div>
+      </div>`;
+    document.body.appendChild(overlay);
+    const input = overlay.querySelector('#new-type-input');
+    setTimeout(() => input?.focus(), 50);
+
+    const finish = async (action) => {
+      const name = (input?.value || '').trim();
+      if (action === 'add') {
+        if (!name) { toast('Tür adı boş olamaz', 'error'); return; }
+        overlay.remove();
+        document.removeEventListener('keydown', onKey);
+        try {
+          await API.post('/article-types', { name });
+          toast(`"${name}" türü eklendi`);
+          handleRoute();
+        } catch (err) { toast(err.message, 'error'); }
+        resolve();
+      } else {
+        overlay.remove();
+        document.removeEventListener('keydown', onKey);
+        resolve();
+      }
+    };
+
+    overlay.querySelector('.modal-close').onclick = () => finish('cancel');
+    overlay.querySelectorAll('[data-action]').forEach(btn => { btn.onclick = () => finish(btn.dataset.action); });
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) finish('cancel'); });
+    const onKey = (e) => {
+      if (e.key === 'Escape') finish('cancel');
+      else if (e.key === 'Enter' && document.activeElement === input) finish('add');
+    };
+    document.addEventListener('keydown', onKey);
+  });
+}
+
 async function renameType(oldName) {
-  const newName = prompt(`"${oldName}" için yeni ad:`);
-  if (!newName || newName === oldName) return;
+  return new Promise((resolve) => {
+    const overlay = document.createElement('div');
+    overlay.className = 'modal-overlay';
+    overlay.innerHTML = `
+      <div class="modal-dialog">
+        <div class="flex items-center justify-between px-6 py-4" style="border-bottom:1px solid var(--border-soft)">
+          <h3 class="text-base font-semibold" style="color:var(--text-strong);letter-spacing:-0.01em">Türü Yeniden Adlandır</h3>
+          <button class="modal-close p-1.5 rounded-md" style="color:var(--text-muted)" aria-label="Kapat">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <div class="px-6 py-5">
+          <p class="text-sm mb-3" style="color:var(--text)">Şu anki ad: <strong>${esc(oldName)}</strong></p>
+          <label class="label" for="rename-type-input">Yeni ad</label>
+          <input id="rename-type-input" type="text" class="w-full px-3 py-2 border rounded-lg text-sm" maxlength="80" autocomplete="off" value="${esc(oldName)}" />
+          <p class="text-xs mt-2" style="color:var(--text-muted)">Bu türü kullanan tüm makaleler ve baskıdaki makaleler güncellenecek.</p>
+        </div>
+        <div class="flex justify-end gap-2 px-6 py-4" style="border-top:1px solid var(--border-soft);background:var(--bg-subtle);border-radius:0 0 var(--radius-lg) var(--radius-lg)">
+          <button data-action="cancel" class="btn btn-secondary">İptal</button>
+          <button data-action="save" class="btn btn-primary">Kaydet</button>
+        </div>
+      </div>`;
+    document.body.appendChild(overlay);
+    const input = overlay.querySelector('#rename-type-input');
+    setTimeout(() => { input?.focus(); input?.select(); }, 50);
+
+    const finish = async (action) => {
+      const newName = (input?.value || '').trim();
+      if (action === 'save') {
+        if (!newName) { toast('Yeni ad boş olamaz', 'error'); return; }
+        if (newName === oldName) { overlay.remove(); document.removeEventListener('keydown', onKey); resolve(); return; }
+        overlay.remove();
+        document.removeEventListener('keydown', onKey);
+        try {
+          const result = await API.put('/article-types/rename', { oldName, newName });
+          toast(`${result.renamed} makale güncellendi`);
+          handleRoute();
+        } catch (err) { toast(err.message, 'error'); }
+        resolve();
+      } else {
+        overlay.remove();
+        document.removeEventListener('keydown', onKey);
+        resolve();
+      }
+    };
+
+    overlay.querySelector('.modal-close').onclick = () => finish('cancel');
+    overlay.querySelectorAll('[data-action]').forEach(btn => { btn.onclick = () => finish(btn.dataset.action); });
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) finish('cancel'); });
+    const onKey = (e) => {
+      if (e.key === 'Escape') finish('cancel');
+      else if (e.key === 'Enter' && document.activeElement === input) finish('save');
+    };
+    document.addEventListener('keydown', onKey);
+  });
+}
+
+async function deleteArticleType(name) {
+  const ok = await confirmAction(`"${name}" türünü silmek istediğinizden emin misiniz? Bu işlem sadece kullanılmayan türler için geçerlidir.`);
+  if (!ok) return;
   try {
-    const result = await API.put('/article-types/rename', { oldName, newName });
-    toast(`${result.renamed} makale güncellendi`);
+    await API.del(`/article-types/${encodeURIComponent(name)}`);
+    toast(`"${name}" türü silindi`);
     handleRoute();
   } catch (err) { toast(err.message, 'error'); }
 }
 
 // Nav/Footer
+let _nfModel = null;   // { nav, footer } structured model
+let _nfHtml = null;    // { navHtml, footerHtml } last saved/generated HTML
+let _nfTab = 'form';
+
+function nfVal(id) { const e = document.getElementById(id); return e ? e.value : ''; }
+
 route('/nav-footer', async (el) => {
   el.innerHTML = `
-    <div class="flex items-center justify-between mb-6">
-      <h1 class="text-2xl font-bold text-gray-900">Menu & Footer</h1>
-      <div class="flex gap-2">
-        <button onclick="saveNavFooter()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet</button>
-        <button onclick="syncNavFooter()" class="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 text-sm font-medium">Tüm Sayfalara Uygula</button>
+    <div class="page-header">
+      <div class="min-w-0">
+        <h1 class="page-title">Menü & Footer</h1>
+        <p class="page-subtitle">Sitenin tüm sayfalarında ortak görünen üst menü ve alt bilgiyi kod yazmadan, form alanlarıyla düzenleyin. Değişiklikler yalnızca <strong>Tüm Sayfalara Uygula</strong> ile sayfalara yazılır.</p>
+      </div>
+      <div class="flex gap-2 flex-shrink-0">
+        <button onclick="previewNavFooter()" class="btn btn-secondary text-sm">Önizle</button>
+        <button onclick="saveNavFooter()" class="btn btn-secondary text-sm" id="nf-save-btn">Kaydet</button>
+        <button onclick="syncNavFooter()" class="btn btn-primary text-sm">Tüm Sayfalara Uygula</button>
       </div>
     </div>
-    <div class="bg-white rounded-xl border p-6">
-      <div class="mb-4">
-        <label class="block text-sm font-medium text-gray-700 mb-1">Nav HTML</label>
-        <textarea id="nf-nav" rows="15" class="w-full px-3 py-2 border rounded-lg text-sm font-mono"></textarea>
-      </div>
-      <div>
-        <label class="block text-sm font-medium text-gray-700 mb-1">Footer HTML</label>
-        <textarea id="nf-footer" rows="15" class="w-full px-3 py-2 border rounded-lg text-sm font-mono"></textarea>
-      </div>
-    </div>`;
 
+    <div class="card card-padded mb-5" style="background:#f0f9ff;border-color:#bae6fd;padding:14px 16px">
+      <div class="flex items-start gap-3">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0369a1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        <div class="text-sm" style="color:#0c4a6e;line-height:1.55">
+          <strong>Nasıl çalışır?</strong> Aşağıdaki form alanlarını doldurun. <strong>Kaydet</strong> yaptığınızda panel saklar — siteye henüz yansıtmaz. <strong>Tüm Sayfalara Uygula</strong> 16+ statik sayfaya yazar (otomatik yedek alınır). Sosyal medya ikonları ayrı <em>Sosyal Medya</em> sayfasından yönetilir.
+        </div>
+      </div>
+    </div>
+
+    <div class="flex gap-1 border-b border-gray-200 mb-5">
+      <button id="nf-tab-form" onclick="nfTab('form')" class="px-4 py-2 text-sm font-medium border-b-2 -mb-px transition-colors border-teal-600 text-teal-700">Form Düzenleyici</button>
+      <button id="nf-tab-html" onclick="nfTab('html')" class="px-4 py-2 text-sm font-medium border-b-2 -mb-px transition-colors border-transparent text-gray-500 hover:text-gray-700">HTML (gelişmiş)</button>
+    </div>
+    <div id="nf-form-tab"></div>
+    <div id="nf-html-tab" class="hidden"></div>
+  `;
+
+  _nfTab = 'form';
   try {
     const data = await API.get('/nav-footer');
-    document.getElementById('nf-nav').value = data.navHtml || '';
-    document.getElementById('nf-footer').value = data.footerHtml || '';
-  } catch { /* first run, no data yet */ }
+    _nfModel = { nav: data.nav, footer: data.footer };
+    _nfHtml = { navHtml: data.navHtml || '', footerHtml: data.footerHtml || '' };
+    renderNavFooterForm();
+    renderNavFooterHtmlTab();
+  } catch (err) {
+    toast('Menü/footer yüklenemedi: ' + err.message, 'error');
+  }
+  el.addEventListener('input', markDirty);
+  clearDirty();
 });
+
+function nfTab(which) {
+  _nfTab = which;
+  document.getElementById('nf-form-tab').classList.toggle('hidden', which !== 'form');
+  document.getElementById('nf-html-tab').classList.toggle('hidden', which !== 'html');
+  [['form', 'nf-tab-form'], ['html', 'nf-tab-html']].forEach(([k, id]) => {
+    const btn = document.getElementById(id);
+    const active = k === which;
+    btn.classList.toggle('border-teal-600', active);
+    btn.classList.toggle('text-teal-700', active);
+    btn.classList.toggle('border-transparent', !active);
+    btn.classList.toggle('text-gray-500', !active);
+  });
+}
+
+// --- Form rendering ---
+const NF_ICONS = {
+  up: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>',
+  down: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>',
+  x: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>',
+  link: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>',
+  dropdown: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>',
+  column: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>',
+};
+
+function nfItemRow(it, i, total) {
+  const actions = `<div class="flex items-center" style="gap:1px">
+      <button type="button" onclick="nfMoveItem(${i},-1)" ${i === 0 ? 'disabled' : ''} class="nf-iconbtn" title="Yukarı taşı">${NF_ICONS.up}</button>
+      <button type="button" onclick="nfMoveItem(${i},1)" ${i === total - 1 ? 'disabled' : ''} class="nf-iconbtn" title="Aşağı taşı">${NF_ICONS.down}</button>
+      <button type="button" onclick="nfRemoveItem(${i})" class="nf-iconbtn nf-del" title="Sil">${NF_ICONS.x}</button>
+    </div>`;
+  if (it.type === 'dropdown') {
+    const kids = (it.children || []).map((c, j) => `
+        <div class="nf-item flex items-center gap-2" style="padding:7px 0">
+          <input data-nav-item="${i}" data-child="${j}" data-field="label" class="input" style="flex:1" placeholder="Alt bağlantı adı" value="${esc(c.label)}">
+          <input data-nav-item="${i}" data-child="${j}" data-field="url" class="input" style="flex:1" placeholder="Adres (ör. about.html)" value="${esc(c.url)}">
+          <button type="button" onclick="nfRemoveChild(${i},${j})" class="nf-iconbtn nf-del" title="Sil">${NF_ICONS.x}</button>
+        </div>`).join('');
+    return `<div class="nf-item" style="padding:10px 0">
+      <div class="flex items-center gap-2">
+        <span class="nf-type" title="Açılır menü">${NF_ICONS.dropdown}</span>
+        <input data-nav-item="${i}" data-field="label" class="input" style="flex:1;font-weight:500" placeholder="Menü başlığı (ör. Hakkında)" value="${esc(it.label)}">
+        ${actions}
+      </div>
+      <div class="nf-children" style="margin-top:6px">${kids}
+        <button type="button" onclick="nfAddChild(${i})" class="nf-addlink">+ Alt bağlantı</button>
+      </div>
+    </div>`;
+  }
+  return `<div class="nf-item flex items-center gap-2" style="padding:10px 0">
+    <span class="nf-type" title="Bağlantı">${NF_ICONS.link}</span>
+    <input data-nav-item="${i}" data-field="label" class="input" style="flex:1" placeholder="Etiket (ör. Ana Sayfa)" value="${esc(it.label)}">
+    <input data-nav-item="${i}" data-field="url" class="input" style="flex:1" placeholder="Adres (ör. about.html)" value="${esc(it.url)}">
+    ${actions}
+  </div>`;
+}
+
+function nfColRow(c, ci) {
+  const links = (c.links || []).map((l, j) => `
+        <div class="nf-item flex items-center gap-2" style="padding:7px 0">
+          <input data-col="${ci}" data-link="${j}" data-field="label" class="input" style="flex:1" placeholder="Bağlantı adı" value="${esc(l.label)}">
+          <input data-col="${ci}" data-link="${j}" data-field="url" class="input" style="flex:1" placeholder="Adres" value="${esc(l.url)}">
+          <button type="button" onclick="nfRemoveColLink(${ci},${j})" class="nf-iconbtn nf-del" title="Sil">${NF_ICONS.x}</button>
+        </div>`).join('');
+  return `<div class="nf-item" style="padding:10px 0">
+    <div class="flex items-center gap-2">
+      <span class="nf-type" title="Bağlantı sütunu">${NF_ICONS.column}</span>
+      <input data-col="${ci}" data-field="title" class="input" style="flex:1;font-weight:500" placeholder="Sütun başlığı (ör. Hızlı Bağlantılar)" value="${esc(c.title)}">
+      <button type="button" onclick="nfRemoveCol(${ci})" class="nf-iconbtn nf-del" title="Sütunu sil">${NF_ICONS.x}</button>
+    </div>
+    <div class="nf-children" style="margin-top:6px">${links}
+      <button type="button" onclick="nfAddColLink(${ci})" class="nf-addlink">+ Bağlantı</button>
+    </div>
+  </div>`;
+}
+
+function renderNavFooterForm() {
+  const m = _nfModel;
+  if (!m) return;
+  const navItems = m.nav.items.map((it, i) => nfItemRow(it, i, m.nav.items.length)).join('');
+  const cols = (m.footer.columns || []).map((c, i) => nfColRow(c, i)).join('');
+  document.getElementById('nf-form-tab').innerHTML = `
+    <div class="card overflow-hidden mb-5">
+      <div class="px-5 py-3" style="border-bottom:1px solid var(--border-soft);background:var(--bg-subtle)">
+        <h3 class="font-semibold text-sm" style="color:var(--text-strong)">Üst Menü</h3>
+        <span class="text-xs" style="color:var(--text-muted)">Sitenin üstünde görünen menü bağlantıları</span>
+      </div>
+      <div style="padding:6px 16px 16px">
+        <div>${navItems}</div>
+        <div class="flex gap-2 mt-3">
+          <button type="button" onclick="nfAddLink()" class="btn btn-secondary btn-sm">+ Bağlantı Ekle</button>
+          <button type="button" onclick="nfAddDropdown()" class="btn btn-secondary btn-sm">+ Açılır Menü Ekle</button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4 pt-4" style="border-top:1px solid var(--border-soft)">
+          <div><label class="label">"Makale Gönder" buton metni</label><input id="nf-submit-label" class="input" value="${esc(m.nav.submitLabel || '')}"></div>
+          <div><label class="label">"Makale Gönder" buton adresi</label><input id="nf-submit-url" class="input" value="${esc(m.nav.submitUrl || '')}"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card overflow-hidden">
+      <div class="px-5 py-3" style="border-bottom:1px solid var(--border-soft);background:var(--bg-subtle)">
+        <h3 class="font-semibold text-sm" style="color:var(--text-strong)">Alt Bilgi (Footer)</h3>
+        <span class="text-xs" style="color:var(--text-muted)">Sitenin altında görünen bilgi ve bağlantılar</span>
+      </div>
+      <div style="padding:16px" class="space-y-5">
+        <div>
+          <label class="label">Dergi adı</label>
+          <input id="nf-brand-title" class="input" value="${esc(m.footer.brandTitle || '')}">
+          <label class="label" style="margin-top:8px">Açıklama metni</label>
+          <textarea id="nf-brand-text" rows="3" class="input">${esc(m.footer.brandText || '')}</textarea>
+        </div>
+        <div>
+          <label class="label">Bağlantı sütunları</label>
+          <div>${cols}</div>
+          <button type="button" onclick="nfAddCol()" class="btn btn-secondary btn-sm mt-2">+ Sütun Ekle</button>
+        </div>
+        <div>
+          <label class="label">İletişim başlığı</label>
+          <input id="nf-contact-title" class="input" value="${esc(m.footer.contactTitle || '')}">
+          <label class="label" style="margin-top:8px">İletişim metni / adres</label>
+          <textarea id="nf-contact-text" rows="4" class="input">${esc(m.footer.contactText || '')}</textarea>
+          <p class="text-xs mt-1" style="color:var(--text-faint)">Boş satır yeni paragraf, tek satır alt satır olur.</p>
+          <label class="label" style="margin-top:8px">E-posta</label>
+          <input id="nf-contact-email" class="input" value="${esc(m.footer.contactEmail || '')}">
+        </div>
+        <div class="grid grid-cols-1 gap-2 pt-4" style="border-top:1px solid var(--border-soft)">
+          <div><label class="label">Telif (copyright) metni</label><input id="nf-copyright" class="input" value="${esc(m.footer.copyright || '')}"></div>
+          <div><label class="label">Lisans metni</label><input id="nf-license" class="input" value="${esc(m.footer.licenseText || '')}"></div>
+        </div>
+        <p class="text-xs" style="color:var(--text-muted)">Sosyal medya ikonları (Instagram, X, LinkedIn …) ayrı <strong>Sosyal Medya</strong> sayfasından yönetilir.</p>
+      </div>
+    </div>
+    <div class="mt-4 text-center">
+      <button type="button" onclick="resetNavFooterFromSource()" class="text-xs" style="color:var(--text-muted)">Varsayılan menü/footer içeriğine sıfırla</button>
+    </div>
+  `;
+}
+
+function renderNavFooterHtmlTab() {
+  if (!_nfHtml) return;
+  document.getElementById('nf-html-tab').innerHTML = `
+    <div class="card card-padded mb-4" style="background:#fffbeb;border-color:#fde68a;padding:10px 14px">
+      <p class="text-xs" style="color:#92400e">Gelişmiş: Bu sekme son <strong>kaydedilen</strong> HTML'i gösterir. Buradan elle düzenleyip kaydederseniz, Form sekmesindeki alanlarla eşleşmeyebilir. Çoğu durumda Form sekmesi yeterlidir.</p>
+    </div>
+    <div class="card overflow-hidden mb-4">
+      <div class="px-5 py-3" style="border-bottom:1px solid var(--border-soft);background:var(--bg-subtle)"><h3 class="font-semibold text-sm" style="color:var(--text-strong)">Üst Menü HTML</h3></div>
+      <div style="padding:12px"><textarea id="nf-nav-html" rows="12" class="w-full px-3 py-2 rounded-lg text-xs font-mono" style="border:1px solid var(--border);background:#fafbfc" spellcheck="false">${esc(_nfHtml.navHtml)}</textarea></div>
+    </div>
+    <div class="card overflow-hidden">
+      <div class="px-5 py-3" style="border-bottom:1px solid var(--border-soft);background:var(--bg-subtle)"><h3 class="font-semibold text-sm" style="color:var(--text-strong)">Footer HTML</h3></div>
+      <div style="padding:12px"><textarea id="nf-footer-html" rows="12" class="w-full px-3 py-2 rounded-lg text-xs font-mono" style="border:1px solid var(--border);background:#fafbfc" spellcheck="false">${esc(_nfHtml.footerHtml)}</textarea></div>
+    </div>
+  `;
+}
+
+// --- Read the form inputs back into the in-memory model ---
+function nfSyncModel() {
+  const m = _nfModel;
+  if (!m) return;
+  m.nav.items.forEach((it, i) => {
+    const lbl = document.querySelector(`[data-nav-item="${i}"][data-field="label"]:not([data-child])`);
+    if (lbl) it.label = lbl.value;
+    if (it.type === 'dropdown') {
+      (it.children || []).forEach((c, j) => {
+        const cl = document.querySelector(`[data-nav-item="${i}"][data-child="${j}"][data-field="label"]`);
+        const cu = document.querySelector(`[data-nav-item="${i}"][data-child="${j}"][data-field="url"]`);
+        if (cl) c.label = cl.value;
+        if (cu) c.url = cu.value;
+      });
+    } else {
+      const u = document.querySelector(`[data-nav-item="${i}"][data-field="url"]:not([data-child])`);
+      if (u) it.url = u.value;
+    }
+  });
+  m.nav.submitLabel = nfVal('nf-submit-label');
+  m.nav.submitUrl = nfVal('nf-submit-url');
+  m.footer.brandTitle = nfVal('nf-brand-title');
+  m.footer.brandText = nfVal('nf-brand-text');
+  (m.footer.columns || []).forEach((col, c) => {
+    const t = document.querySelector(`[data-col="${c}"][data-field="title"]`);
+    if (t) col.title = t.value;
+    (col.links || []).forEach((l, j) => {
+      const ll = document.querySelector(`[data-col="${c}"][data-link="${j}"][data-field="label"]`);
+      const lu = document.querySelector(`[data-col="${c}"][data-link="${j}"][data-field="url"]`);
+      if (ll) l.label = ll.value;
+      if (lu) l.url = lu.value;
+    });
+  });
+  m.footer.contactTitle = nfVal('nf-contact-title');
+  m.footer.contactText = nfVal('nf-contact-text');
+  m.footer.contactEmail = nfVal('nf-contact-email');
+  m.footer.copyright = nfVal('nf-copyright');
+  m.footer.licenseText = nfVal('nf-license');
+}
+
+// --- Mutation handlers (sync form -> model, mutate, re-render) ---
+function nfAddLink() { nfSyncModel(); _nfModel.nav.items.push({ type: 'link', label: 'Yeni Bağlantı', url: '#' }); renderNavFooterForm(); markDirty(); }
+function nfAddDropdown() { nfSyncModel(); _nfModel.nav.items.push({ type: 'dropdown', label: 'Yeni Menü', children: [{ label: 'Alt bağlantı', url: '#' }] }); renderNavFooterForm(); markDirty(); }
+function nfRemoveItem(i) { nfSyncModel(); _nfModel.nav.items.splice(i, 1); renderNavFooterForm(); markDirty(); }
+function nfMoveItem(i, d) { nfSyncModel(); const a = _nfModel.nav.items, j = i + d; if (j < 0 || j >= a.length) return; const t = a[i]; a[i] = a[j]; a[j] = t; renderNavFooterForm(); markDirty(); }
+function nfAddChild(i) { nfSyncModel(); const it = _nfModel.nav.items[i]; it.children = it.children || []; it.children.push({ label: 'Alt bağlantı', url: '#' }); renderNavFooterForm(); markDirty(); }
+function nfRemoveChild(i, j) { nfSyncModel(); _nfModel.nav.items[i].children.splice(j, 1); renderNavFooterForm(); markDirty(); }
+function nfAddCol() { nfSyncModel(); (_nfModel.footer.columns = _nfModel.footer.columns || []).push({ title: 'Yeni Sütun', links: [{ label: 'Bağlantı', url: '#' }] }); renderNavFooterForm(); markDirty(); }
+function nfRemoveCol(c) { nfSyncModel(); _nfModel.footer.columns.splice(c, 1); renderNavFooterForm(); markDirty(); }
+function nfAddColLink(c) { nfSyncModel(); const col = _nfModel.footer.columns[c]; col.links = col.links || []; col.links.push({ label: 'Bağlantı', url: '#' }); renderNavFooterForm(); markDirty(); }
+function nfRemoveColLink(c, j) { nfSyncModel(); _nfModel.footer.columns[c].links.splice(j, 1); renderNavFooterForm(); markDirty(); }
+
+// Persist current editor state (form model or raw HTML, depending on tab).
+async function nfPersist() {
+  if (_nfTab === 'html') {
+    await API.put('/nav-footer', { navHtml: nfVal('nf-nav-html'), footerHtml: nfVal('nf-footer-html') });
+  } else {
+    nfSyncModel();
+    await API.put('/nav-footer', { nav: _nfModel.nav, footer: _nfModel.footer });
+  }
+}
 
 async function saveNavFooter() {
   try {
-    await API.put('/nav-footer', {
-      navHtml: document.getElementById('nf-nav').value,
-      footerHtml: document.getElementById('nf-footer').value,
-    });
-    toast('Kaydedildi');
+    await nfPersist();
+    // refresh the HTML-tab cache from the freshly generated server output
+    const d = await API.get('/nav-footer');
+    _nfHtml = { navHtml: d.navHtml || '', footerHtml: d.footerHtml || '' };
+    renderNavFooterHtmlTab();
+    clearDirty();
+    toast('Kaydedildi. Siteye uygulamak için "Tüm Sayfalara Uygula" butonunu kullanın.');
+  } catch (err) { toast(err.message, 'error'); }
+}
+
+async function previewNavFooter() {
+  try {
+    await nfPersist();
+    clearDirty();
+    const d = await API.get('/nav-footer');
+    _nfHtml = { navHtml: d.navHtml || '', footerHtml: d.footerHtml || '' };
+    if (_nfTab === 'html') renderNavFooterHtmlTab();
+    const win = window.open('', '_blank');
+    if (!win) { toast('Popup engellendi — tarayıcı ayarlarını kontrol edin', 'error'); return; }
+    win.document.write(`<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Menü & Footer Önizleme</title>
+      <script src="https://cdn.tailwindcss.com"><\/script>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <style>body{font-family:Inter,system-ui,sans-serif;margin:0;background:#f9fafb}.preview-note{padding:10px 20px;background:#fef3c7;color:#92400e;font-size:13px;border-bottom:1px solid #fde68a}</style>
+      </head><body>
+      <div class="preview-note">⚠️ Önizleme — Tailwind CDN ile gösterilir; gerçek sitede ek stiller olabilir.</div>
+      ${d.navHtml || ''}
+      <div style="min-height:45vh;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:14px">(sayfa içeriği burada görünür)</div>
+      ${d.footerHtml || ''}
+      </body></html>`);
+    win.document.close();
+  } catch (err) { toast(err.message, 'error'); }
+}
+
+async function resetNavFooterFromSource() {
+  const ok = await confirmAction('Form, sitenin varsayılan menü ve footer içeriğine sıfırlanacak. Kaydedilmemiş değişiklikleriniz kaybolur. Devam edilsin mi?');
+  if (!ok) return;
+  try {
+    const data = await API.post('/nav-footer/reset');
+    _nfModel = { nav: data.nav, footer: data.footer };
+    _nfHtml = { navHtml: data.navHtml || '', footerHtml: data.footerHtml || '' };
+    renderNavFooterForm();
+    renderNavFooterHtmlTab();
+    clearDirty();
+    toast('Varsayılan içeriğe sıfırlandı');
   } catch (err) { toast(err.message, 'error'); }
 }
 
 async function syncNavFooter() {
-  if (!await confirmAction('Nav ve footer tüm sayfalara uygulanacak. Devam etmek istiyor musunuz?')) return;
+  const ok = await confirmAction('Menü ve footer 16+ statik sayfaya yazılacak ve mevcut bloklarının yerini alacak. Otomatik yedek alınır. Devam edilsin mi?');
+  if (!ok) return;
+  try {
+    await nfPersist();
+    clearDirty();
+  } catch (err) { toast('Kaydetme başarısız: ' + err.message, 'error'); return; }
   try {
     const result = await API.post('/nav-footer/sync');
-    const updated = result.results.filter((r) => r.status === 'updated').length;
-    toast(`${updated} sayfa güncellendi`);
+    const updated = result.results.filter(r => r.status === 'updated');
+    const unchanged = result.results.filter(r => r.status === 'unchanged');
+    const skipped = result.results.filter(r => r.status === 'skipped');
+    const errors = result.results.filter(r => r.status === 'error');
+
+    const rowHtml = (r) => {
+      const color = r.status === 'updated' ? '#15803d' : r.status === 'error' ? '#b91c1c' : r.status === 'skipped' ? '#92400e' : 'var(--text-muted)';
+      const label = r.status === 'updated' ? 'Güncellendi' : r.status === 'unchanged' ? 'Değişiklik yok' : r.status === 'skipped' ? 'Atlandı' : 'Hata';
+      return `<tr style="border-top:1px solid var(--border-soft)"><td class="px-3 py-1.5 font-mono text-xs" style="color:var(--text)">${esc(r.file)}</td><td class="px-3 py-1.5 text-xs font-medium" style="color:${color}">${label}${r.reason ? ` — ${esc(r.reason)}` : ''}</td></tr>`;
+    };
+
+    const summary = `
+      <div class="flex items-center gap-3 mb-4 pb-3" style="border-bottom:1px solid var(--border-soft)">
+        ${updated.length ? `<span class="badge" style="background:#dcfce7;color:#15803d">${updated.length} güncellendi</span>` : ''}
+        ${unchanged.length ? `<span class="badge bg-gray-100 text-gray-600">${unchanged.length} değişmedi</span>` : ''}
+        ${skipped.length ? `<span class="badge" style="background:#fef3c7;color:#92400e">${skipped.length} atlandı</span>` : ''}
+        ${errors.length ? `<span class="badge" style="background:#fee2e2;color:#b91c1c">${errors.length} hata</span>` : ''}
+      </div>
+      <div style="max-height:360px;overflow-y:auto;border:1px solid var(--border-soft);border-radius:var(--radius-md)">
+        <table class="w-full text-sm">
+          <thead style="background:var(--bg-subtle);position:sticky;top:0">
+            <tr>
+              <th class="text-left px-3 py-2 font-medium" style="color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:0.04em">Dosya</th>
+              <th class="text-left px-3 py-2 font-medium" style="color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:0.04em">Durum</th>
+            </tr>
+          </thead>
+          <tbody>${result.results.map(rowHtml).join('')}</tbody>
+        </table>
+      </div>
+      <p class="text-xs mt-3" style="color:var(--text-muted)">Yedek otomatik alındı: <code>admin/backups/</code> dizinine bakabilirsiniz.</p>
+    `;
+    await modal(`Senkronizasyon Sonucu`, summary, [{ label: 'Tamam', value: 'ok', class: 'btn-primary' }]);
+    toast(`${updated.length} sayfa güncellendi${errors.length ? `, ${errors.length} hata` : ''}`);
   } catch (err) { toast(err.message, 'error'); }
 }
 
@@ -3479,15 +7780,15 @@ route('/article-stats', async (el) => {
             <th class="text-right px-4 py-2.5 font-medium text-gray-500">Atıf</th>
           </tr></thead>
           <tbody>${rows.map((a, i) => `
-            <tr class="border-t hover:bg-gray-50 cursor-pointer" onclick="navigate('#/articles/${a.id}')">
+            <tr class="cursor-pointer" onclick="navigate('#/articles/${a.id}')">
               <td class="px-4 py-2.5 text-gray-400">${i + 1}</td>
               <td class="px-4 py-2.5">
                 <div class="font-medium text-gray-900 line-clamp-2">${esc(a.title)}</div>
                 <div class="text-xs text-gray-400 mt-0.5">${esc(a.type || '')}${a.volume ? ' · Vol ' + a.volume : ''}${a.issue ? ', Issue ' + esc(a.issue) : ''}</div>
               </td>
               <td class="px-4 py-2.5 text-right tabular-nums ${highlightCol === 'views' ? 'font-bold text-teal-700' : 'text-gray-600'}">${(a.views || 0).toLocaleString()}</td>
-              <td class="px-4 py-2.5 text-right tabular-nums ${highlightCol === 'downloads' ? 'font-bold text-blue-700' : 'text-gray-600'}">${(a.downloads || 0).toLocaleString()}</td>
-              <td class="px-4 py-2.5 text-right tabular-nums ${highlightCol === 'citations' ? 'font-bold text-purple-700' : 'text-gray-600'}">${(a.citations || 0).toLocaleString()}</td>
+              <td class="px-4 py-2.5 text-right tabular-nums ${highlightCol === 'downloads' ? 'font-bold text-slate-700' : 'text-gray-600'}">${(a.downloads || 0).toLocaleString()}</td>
+              <td class="px-4 py-2.5 text-right tabular-nums ${highlightCol === 'citations' ? 'font-bold text-slate-700' : 'text-gray-600'}">${(a.citations || 0).toLocaleString()}</td>
             </tr>`).join('')}
           </tbody>
         </table>
@@ -3495,32 +7796,32 @@ route('/article-stats', async (el) => {
   }
 
   el.innerHTML = `
-    <div class="flex items-center justify-between mb-6">
-      <h1 class="text-2xl font-bold text-gray-900">Makale İstatistikleri</h1>
-      <button onclick="showMetricEditor()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Metrik Düzenle</button>
+    <div class="page-header">
+      <h1 class="page-title">Makale İstatistikleri</h1>
+      <button onclick="showMetricEditor()" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Metrik Düzenle</button>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-      <div class="bg-white rounded-xl border p-5">
+      <div class="card card-padded">
         <div class="text-3xl font-bold text-gray-800">${t.articles.toLocaleString()}</div>
         <div class="text-sm text-gray-500 mt-1">Toplam Makale</div>
       </div>
-      <div class="bg-white rounded-xl border p-5">
+      <div class="card card-padded">
         <div class="text-3xl font-bold text-teal-700">${t.views.toLocaleString()}</div>
         <div class="text-sm text-gray-500 mt-1">Toplam Görüntülenme</div>
       </div>
-      <div class="bg-white rounded-xl border p-5">
-        <div class="text-3xl font-bold text-blue-600">${t.downloads.toLocaleString()}</div>
+      <div class="card card-padded">
+        <div class="text-3xl font-bold text-slate-600">${t.downloads.toLocaleString()}</div>
         <div class="text-sm text-gray-500 mt-1">Toplam İndirme</div>
       </div>
-      <div class="bg-white rounded-xl border p-5">
-        <div class="text-3xl font-bold text-purple-600">${t.citations.toLocaleString()}</div>
+      <div class="card card-padded">
+        <div class="text-3xl font-bold text-slate-600">${t.citations.toLocaleString()}</div>
         <div class="text-sm text-gray-500 mt-1">Toplam Atıf</div>
       </div>
     </div>
 
     <!-- Tabs -->
-    <div class="bg-white rounded-xl border overflow-hidden">
+    <div class="card overflow-hidden">
       <div class="flex border-b">
         <button class="stat-tab-btn px-5 py-3 text-sm font-medium border-b-2 border-teal-600 text-teal-700" data-stab="viewed">En Çok Görüntülenen</button>
         <button class="stat-tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-stab="downloaded">En Çok İndirilen</button>
@@ -3547,17 +7848,17 @@ async function showMetricEditor() {
   const result = await modal('Metrik Düzenle', `
     <div class="space-y-4">
       <div>
-        <label class="block text-sm font-medium text-gray-700 mb-1">Makale Ara (ID veya başlık)</label>
-        <input id="me-search" type="text" placeholder="Makale ID veya başlığının bir kısmı..." class="w-full px-3 py-2 border rounded-lg text-sm">
+        <label class="label">Makale Ara (ID veya başlık)</label>
+        <input id="me-search" type="text" placeholder="Makale ID veya başlığının bir kısmı..." class="input">
       </div>
       <div id="me-results" class="max-h-48 overflow-y-auto border rounded-lg hidden"></div>
       <div id="me-fields" class="hidden space-y-3">
         <div class="text-sm font-medium text-gray-900" id="me-title"></div>
         <input type="hidden" id="me-id">
         <div class="grid grid-cols-3 gap-3">
-          <div><label class="block text-xs font-medium text-gray-600 mb-1">Görüntülenme</label><input id="me-views" type="number" min="0" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
-          <div><label class="block text-xs font-medium text-gray-600 mb-1">İndirme</label><input id="me-downloads" type="number" min="0" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
-          <div><label class="block text-xs font-medium text-gray-600 mb-1">Atıf</label><input id="me-citations" type="number" min="0" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+          <div><label class="block text-xs font-medium text-gray-600 mb-1">Görüntülenme</label><input id="me-views" type="number" min="0" class="input"></div>
+          <div><label class="block text-xs font-medium text-gray-600 mb-1">İndirme</label><input id="me-downloads" type="number" min="0" class="input"></div>
+          <div><label class="block text-xs font-medium text-gray-600 mb-1">Atıf</label><input id="me-citations" type="number" min="0" class="input"></div>
         </div>
       </div>
     </div>`, [{ label: 'Kaydet', action: 'save' }]);
@@ -3613,66 +7914,218 @@ function selectMetricArticle(id, title, views, downloads, citations) {
   document.getElementById('me-results').classList.add('hidden');
 }
 
-// Social Media
-const SOCIAL_PLATFORMS = [
-  { key: 'instagram', label: 'Instagram', placeholder: 'https://www.instagram.com/balkanmedj/' },
-  { key: 'twitter', label: 'X (Twitter)', placeholder: 'https://x.com/balkanmedj' },
-  { key: 'linkedin', label: 'LinkedIn', placeholder: 'https://www.linkedin.com/company/balkan-med-j/' },
-  { key: 'facebook', label: 'Facebook', placeholder: 'https://www.facebook.com/balkanmedj' },
-  { key: 'youtube', label: 'YouTube', placeholder: 'https://www.youtube.com/@balkanmedj' },
-];
+// Social Media — platform catalog is fetched from the server so adding a new
+// platform in social-media-sync.js automatically appears here.
+let SOCIAL_PLATFORMS = [];
+
+function smIconHtml(platform, sizePx = 18) {
+  return `<svg width="${sizePx}" height="${sizePx}" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="${platform.svgPath}"/></svg>`;
+}
+
+function smValidateUrl(url) {
+  if (!url) return { ok: true, empty: true };
+  try {
+    const u = new URL(url);
+    if (u.protocol !== 'http:' && u.protocol !== 'https:') return { ok: false, reason: 'Yalnızca http:// veya https:// destekleniyor' };
+    return { ok: true };
+  } catch { return { ok: false, reason: 'Geçersiz URL' }; }
+}
+
+function smRenderPreview() {
+  const previewEl = document.getElementById('sm-preview');
+  if (!previewEl) return;
+  const used = SOCIAL_PLATFORMS.filter(p => {
+    const v = (document.getElementById(`sm-${p.key}`)?.value || '').trim();
+    return v && smValidateUrl(v).ok;
+  });
+  if (!used.length) {
+    previewEl.innerHTML = '<span class="text-xs italic" style="color:rgba(255,255,255,0.5)">Henüz hiçbir bağlantı eklenmedi</span>';
+    return;
+  }
+  previewEl.innerHTML = used.map(p => `
+    <a href="#" onclick="return false" aria-label="${esc(p.label)}" class="transition-colors" style="color:#5eead4" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#5eead4'" title="${esc(p.label)}">
+      ${smIconHtml(p, 20)}
+    </a>
+  `).join('');
+}
+
+function smRefreshRow(key) {
+  const input = document.getElementById(`sm-${key}`);
+  const status = document.getElementById(`sm-${key}-status`);
+  if (!input || !status) return;
+  const v = input.value.trim();
+  const res = smValidateUrl(v);
+  if (!v) {
+    status.innerHTML = '<span class="text-xs" style="color:var(--text-muted)">— footer\'dan kaldırılır</span>';
+  } else if (!res.ok) {
+    status.innerHTML = `<span class="text-xs" style="color:#b91c1c">⚠ ${esc(res.reason)}</span>`;
+  } else {
+    status.innerHTML = '<span class="text-xs" style="color:#15803d">✓ Geçerli</span>';
+  }
+  smRenderPreview();
+}
 
 route('/social-media', async (el) => {
+  // Fetch platform catalog from server (single source of truth).
+  try {
+    SOCIAL_PLATFORMS = await API.get('/social-media/platforms');
+  } catch (err) {
+    el.innerHTML = `<div class="card card-padded" style="border-color:#fecaca;background:#fef2f2"><p>Platform listesi yüklenemedi: ${esc(err.message)}</p></div>`;
+    return;
+  }
+
   el.innerHTML = `
-    <div class="flex items-center justify-between mb-6">
-      <h1 class="text-2xl font-bold text-gray-900">Sosyal Medya</h1>
-      <div class="flex gap-2">
-        <button onclick="saveSocialMedia()" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm font-medium">Kaydet</button>
-        <button onclick="syncSocialMedia()" class="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 text-sm font-medium">Tüm Sayfalara Uygula</button>
+    <div class="page-header">
+      <div class="min-w-0">
+        <h1 class="page-title">Sosyal Medya</h1>
+        <p class="page-subtitle">Sitenin footer'ında ikon olarak görünen sosyal medya bağlantılarını buradan yönetin. Boş bırakılan platformlar footer'dan kaldırılır. Yeni platformlar eklendikçe burada otomatik görünür.</p>
+      </div>
+      <div class="flex gap-2 flex-shrink-0">
+        <button onclick="saveSocialMedia()" class="btn btn-secondary text-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+          Kaydet
+        </button>
+        <button onclick="syncSocialMedia()" class="btn btn-primary text-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          Tüm Sayfalara Uygula
+        </button>
       </div>
     </div>
-    <div class="bg-white rounded-xl border p-6 max-w-2xl">
-      <p class="text-sm text-gray-600 mb-5">Footer'da görünen sosyal medya bağlantıları. Boş bırakılan platform footer'dan kaldırılır. <strong>Kaydet</strong> URL'leri saklar; <strong>Tüm Sayfalara Uygula</strong> 16 HTML dosyasındaki footer ikonlarını günceller.</p>
-      <div class="space-y-4">
-        ${SOCIAL_PLATFORMS.map((p) => `
-          <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1">${p.label}</label>
-            <input id="sm-${p.key}" type="url" placeholder="${p.placeholder}" class="w-full px-3 py-2 border rounded-lg text-sm">
-          </div>
-        `).join('')}
+
+    <div class="card card-padded mb-5" style="background:#f0f9ff;border-color:#bae6fd;padding:14px 16px">
+      <div class="flex items-start gap-3">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0369a1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        <div class="text-sm" style="color:#0c4a6e;line-height:1.55">
+          <strong>İki adımlı işleyiş:</strong> <strong>Kaydet</strong> URL'leri admin panelinde saklar — site değişmez. <strong>Tüm Sayfalara Uygula</strong> ise kayıtlı URL'lerden footer ikonlarını üretip 16 HTML sayfasına yazar. Boş URL'li platformlar footer'dan otomatik kaldırılır. Sayfalarda sosyal blok bulunamazsa modal'da raporlanır.
+        </div>
       </div>
-    </div>`;
+    </div>
+
+    <div class="grid gap-5" style="grid-template-columns:minmax(0,1fr) minmax(280px, 360px)">
+      <!-- LEFT: Platform inputs -->
+      <div class="card overflow-hidden">
+        <div class="flex items-center justify-between px-5 py-3" style="border-bottom:1px solid var(--border-soft);background:var(--bg-subtle)">
+          <h3 class="font-semibold text-sm" style="color:var(--text-strong)">Platformlar <span style="font-weight:400;color:var(--text-muted)">(${SOCIAL_PLATFORMS.length})</span></h3>
+          <span class="text-xs" style="color:var(--text-muted)">Yalnızca dolu olanlar footer'a yansır</span>
+        </div>
+        <div class="divide-y" style="border-color:var(--border-soft)">
+          ${SOCIAL_PLATFORMS.map((p) => `
+            <div class="px-5 py-3 flex items-center gap-3" style="border-bottom:1px solid var(--border-soft)">
+              <span style="flex-shrink:0;width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;background:${p.color}15;color:${p.color}">
+                ${smIconHtml(p, 20)}
+              </span>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-baseline justify-between gap-2 mb-1">
+                  <label for="sm-${p.key}" class="text-sm font-medium" style="color:var(--text-strong)">${esc(p.label)}</label>
+                  <span id="sm-${p.key}-status"></span>
+                </div>
+                <input id="sm-${p.key}" type="url" placeholder="${esc(p.placeholder)}" class="w-full px-3 py-1.5 text-sm rounded-lg" style="border:1px solid var(--border);background:#fafbfc" oninput="smRefreshRow('${p.key}'); markDirty();" autocomplete="off">
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+
+      <!-- RIGHT: Live preview -->
+      <div class="card overflow-hidden" style="position:sticky;top:24px;align-self:start">
+        <div class="px-5 py-3" style="border-bottom:1px solid var(--border-soft);background:var(--bg-subtle)">
+          <h3 class="font-semibold text-sm" style="color:var(--text-strong)">Footer Önizleme</h3>
+          <p class="text-xs mt-0.5" style="color:var(--text-muted)">Site footer'ında bu şekilde görünecek</p>
+        </div>
+        <div style="padding:24px 20px;background:#134e4a">
+          <p class="text-xs mb-3" style="color:#5eead4">Bizi takip edin</p>
+          <div id="sm-preview" class="flex items-center gap-4" style="min-height:28px"></div>
+        </div>
+        <div style="padding:12px 16px;background:var(--bg-subtle);border-top:1px solid var(--border-soft)">
+          <p class="text-xs" style="color:var(--text-muted);line-height:1.5">Önizlemedeki ikonlara tıklamak gerçek bağlantıyı açmaz — yalnızca görsel öndizlemedir.</p>
+        </div>
+      </div>
+    </div>
+  `;
 
   try {
     const data = await API.get('/social-media');
     SOCIAL_PLATFORMS.forEach((p) => {
       const input = document.getElementById(`sm-${p.key}`);
       if (input) input.value = data[p.key] || '';
+      smRefreshRow(p.key);
     });
-  } catch { /* first run, no data yet */ }
+  } catch (err) { toast(err.message, 'error'); }
 });
 
-async function saveSocialMedia() {
+async function saveSocialMedia(silent) {
+  // Validate first
+  const errors = [];
+  const payload = {};
+  for (const p of SOCIAL_PLATFORMS) {
+    const v = (document.getElementById(`sm-${p.key}`)?.value || '').trim();
+    payload[p.key] = v;
+    const res = smValidateUrl(v);
+    if (!res.ok) errors.push(`${p.label}: ${res.reason}`);
+  }
+  if (errors.length) {
+    toast('Geçersiz URL: ' + errors[0] + (errors.length > 1 ? ` (+${errors.length - 1} daha)` : ''), 'error');
+    return false;
+  }
   try {
-    const payload = {};
-    SOCIAL_PLATFORMS.forEach((p) => {
-      payload[p.key] = (document.getElementById(`sm-${p.key}`)?.value || '').trim();
-    });
     await API.put('/social-media', payload);
-    toast('Kaydedildi');
-  } catch (err) { toast(err.message, 'error'); }
+    clearDirty();
+    if (!silent) toast('Kaydedildi. Siteye yansıtmak için "Tüm Sayfalara Uygula" butonunu kullanın.');
+    return true;
+  } catch (err) { toast(err.message, 'error'); return false; }
 }
 
 async function syncSocialMedia() {
-  if (!await confirmAction('Sosyal medya bağlantıları tüm sayfalara uygulanacak. Devam etmek istiyor musunuz?')) return;
+  if (!await confirmAction('Sosyal medya ikonları 16 HTML sayfasının footer\'ına yazılacak ve mevcut sosyal blokların yerini alacak. Otomatik yedek alınır. Devam edilsin mi?')) return;
+  // Save current input values first
+  const saved = await saveSocialMedia(true);
+  if (!saved) return;
   try {
-    await saveSocialMedia();
     const result = await API.post('/social-media/sync');
-    const updated = result.results.filter((r) => r.status === 'updated').length;
-    const noBlock = result.results.filter((r) => r.status === 'no-block').length;
-    let msg = `${updated} sayfa güncellendi`;
-    if (noBlock) msg += `, ${noBlock} sayfada sosyal blok bulunamadı`;
-    toast(msg);
+    const updated = result.results.filter(r => r.status === 'updated');
+    const unchanged = result.results.filter(r => r.status === 'unchanged');
+    const noBlock = result.results.filter(r => r.status === 'no-block');
+    const errors = result.results.filter(r => r.status === 'error');
+    const skipped = result.results.filter(r => r.status === 'skipped');
+
+    const rowHtml = (r) => {
+      const map = {
+        updated:   { label: 'Güncellendi',        color: '#15803d' },
+        unchanged: { label: 'Değişiklik yok',     color: 'var(--text-muted)' },
+        'no-block':{ label: 'Sosyal blok bulunamadı', color: '#92400e' },
+        skipped:   { label: 'Atlandı',            color: '#92400e' },
+        error:     { label: 'Hata',               color: '#b91c1c' },
+      };
+      const m = map[r.status] || { label: r.status, color: 'var(--text)' };
+      return `<tr style="border-top:1px solid var(--border-soft)"><td class="px-3 py-1.5 font-mono text-xs" style="color:var(--text)">${esc(r.file)}</td><td class="px-3 py-1.5 text-xs font-medium" style="color:${m.color}">${m.label}${r.reason ? ` — ${esc(r.reason)}` : ''}</td></tr>`;
+    };
+
+    const summary = `
+      <div class="flex items-center gap-2 flex-wrap mb-4 pb-3" style="border-bottom:1px solid var(--border-soft)">
+        ${updated.length ? `<span class="badge" style="background:#dcfce7;color:#15803d">${updated.length} güncellendi</span>` : ''}
+        ${unchanged.length ? `<span class="badge bg-gray-100 text-gray-600">${unchanged.length} değişmedi</span>` : ''}
+        ${noBlock.length ? `<span class="badge" style="background:#fef3c7;color:#92400e">${noBlock.length} sosyal blok yok</span>` : ''}
+        ${skipped.length ? `<span class="badge" style="background:#fef3c7;color:#92400e">${skipped.length} atlandı</span>` : ''}
+        ${errors.length ? `<span class="badge" style="background:#fee2e2;color:#b91c1c">${errors.length} hata</span>` : ''}
+      </div>
+      ${noBlock.length ? `
+        <div class="mb-4 p-3 rounded-lg text-xs" style="background:#fffbeb;border:1px solid #fde68a;color:#92400e;line-height:1.5">
+          <strong>⚠ Dikkat:</strong> ${noBlock.length} sayfada sosyal medya bloğu bulunamadı (eski bir şablona sahip olabilir). Bu sayfalarda bağlantılar yansımayacak. Bu sayfaların footer'ını "Menü &amp; Footer" sayfasından "Tüm Sayfalara Uygula" ile güncelleyebilirsiniz.
+        </div>` : ''}
+      <div style="max-height:360px;overflow-y:auto;border:1px solid var(--border-soft);border-radius:var(--radius-md)">
+        <table class="w-full text-sm">
+          <thead style="background:var(--bg-subtle);position:sticky;top:0">
+            <tr>
+              <th class="text-left px-3 py-2 font-medium" style="color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:0.04em">Dosya</th>
+              <th class="text-left px-3 py-2 font-medium" style="color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:0.04em">Durum</th>
+            </tr>
+          </thead>
+          <tbody>${result.results.map(rowHtml).join('')}</tbody>
+        </table>
+      </div>
+    `;
+    await modal('Senkronizasyon Sonucu', summary, [{ label: 'Tamam', value: 'ok', class: 'btn-primary' }]);
+    toast(`${updated.length} sayfa güncellendi${noBlock.length ? `, ${noBlock.length} sayfada blok yok` : ''}${errors.length ? `, ${errors.length} hata` : ''}`);
   } catch (err) { toast(err.message, 'error'); }
 }
 
@@ -3688,12 +8141,12 @@ async function doLogout() {
 async function showChangePassword() {
   const result = await modal('Şifre Değiştir', `
     <div class="space-y-3">
-      <div><label class="block text-sm font-medium text-gray-700 mb-1">Mevcut Şifre</label>
-        <input id="cp-current" type="password" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
-      <div><label class="block text-sm font-medium text-gray-700 mb-1">Yeni Şifre</label>
-        <input id="cp-new" type="password" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
-      <div><label class="block text-sm font-medium text-gray-700 mb-1">Yeni Şifre (Tekrar)</label>
-        <input id="cp-confirm" type="password" class="w-full px-3 py-2 border rounded-lg text-sm"></div>
+      <div><label class="label">Mevcut Şifre</label>
+        <input id="cp-current" type="password" class="input"></div>
+      <div><label class="label">Yeni Şifre</label>
+        <input id="cp-new" type="password" class="input"></div>
+      <div><label class="label">Yeni Şifre (Tekrar)</label>
+        <input id="cp-confirm" type="password" class="input"></div>
     </div>`, [
     { label: 'İptal', value: 'cancel' },
     { label: 'Değiştir', value: 'change', class: 'bg-teal-600 text-white hover:bg-teal-700' },
@@ -3715,5 +8168,284 @@ async function showChangePassword() {
   } catch (err) { toast(err.message, 'error'); }
 }
 
+// ── Command Palette (Ctrl+K / Cmd+K) ──
+// A modal that lets the user jump anywhere in the panel by typing — pages,
+// articles, news, AIP items. Fuzzy substring match. Arrow keys + Enter to act.
+const COMMAND_ITEMS = [
+  // Section: navigation (always available)
+  { kind: 'nav', section: 'Sayfalar', title: 'Dashboard',          hash: '#/' },
+  { kind: 'nav', section: 'Sayfalar', title: 'e-Pub Makaleler',    hash: '#/articles-in-press' },
+  { kind: 'nav', section: 'Sayfalar', title: 'Haberler',           hash: '#/news' },
+  { kind: 'nav', section: 'Sayfalar', title: 'Sayfalar',           hash: '#/pages' },
+  { kind: 'nav', section: 'Sayfalar', title: 'Sayılar',            hash: '#/issues' },
+  { kind: 'nav', section: 'Sayfalar', title: 'Sayı Aktar (ZIP)',   hash: '#/zip-import' },
+  { kind: 'nav', section: 'Sayfalar', title: 'JATS XML Aktar',     hash: '#/jats-import' },
+  { kind: 'nav', section: 'Sayfalar', title: 'Yayın Kurulu',       hash: '#/editorial' },
+  { kind: 'nav', section: 'Sayfalar', title: 'Dosyalar',           hash: '#/media' },
+  { kind: 'nav', section: 'Sayfalar', title: 'İstatistikler',      hash: '#/article-stats' },
+  { kind: 'nav', section: 'Sayfalar', title: 'Makale Türleri',     hash: '#/article-types' },
+  { kind: 'nav', section: 'Sayfalar', title: 'Menü & Footer',      hash: '#/nav-footer' },
+  { kind: 'nav', section: 'Sayfalar', title: 'Sosyal Medya',       hash: '#/social-media' },
+  // Section: quick actions
+  { kind: 'action', section: 'Eylem', title: 'Yeni Makale',                    hash: '#/articles/new' },
+  { kind: 'action', section: 'Eylem', title: 'Yeni Baskıda Makale (Manuel)',  hash: '#/articles-in-press/new' },
+  { kind: 'action', section: 'Eylem', title: 'Yeni Haber',                    hash: '#/news/new' },
+  { kind: 'action', section: 'Eylem', title: 'Yedek Al',                      onSelect: () => showBackupPanel() },
+  { kind: 'action', section: 'Eylem', title: 'Şifre Değiştir',                onSelect: () => showChangePassword() },
+];
+
+let _cmdData = null; // cache for /articles, /news, /pages lookups
+
+async function ensureCommandData() {
+  if (_cmdData) return _cmdData;
+  // Load lightweight lists in parallel
+  const [arts, aip, news, pages] = await Promise.all([
+    API.get('/articles?limit=200').catch(() => ({ articles: [] })),
+    API.get('/articles-in-press').catch(() => []),
+    API.get('/news').catch(() => []),
+    API.get('/pages').catch(() => []),
+  ]);
+  _cmdData = {
+    articles: (arts.articles || []).map(a => ({
+      kind: 'article', section: 'Makale', title: a.title || `#${a.id}`,
+      subtitle: `#${a.id}` + (a.doi ? ' · ' + a.doi : ''),
+      hash: `#/articles/${a.id}`,
+    })),
+    aip: (aip || []).map(a => ({
+      kind: 'aip', section: 'Baskıda Makale', title: a.title || `#${a.id}`,
+      subtitle: `#${a.id}` + (a.doi ? ' · ' + a.doi : ''),
+      hash: `#/articles-in-press/${a.id}/edit`,
+    })),
+    news: (news || []).map(n => ({
+      kind: 'news', section: 'Haber', title: n.title || `#${n.id}`,
+      subtitle: `#${n.id}` + (n.date ? ' · ' + n.date : ''),
+      hash: `#/news/${n.id}`,
+    })),
+    pages: (pages || []).map(p => ({
+      kind: 'page', section: 'Sayfa', title: p.title || p.slug,
+      subtitle: p.slug,
+      hash: `#/pages/${p.slug}`,
+    })),
+  };
+  return _cmdData;
+}
+
+// Returns a numeric score (0 = no match, higher = better).
+// 100  = exact substring match, hit earlier in haystack ranks higher
+// 50   = in-order character match
+// 0    = no match
+function fuzzyScore(needle, haystack) {
+  if (!needle) return 1;
+  const n = needle.toLowerCase().trim();
+  const h = (haystack || '').toLowerCase();
+  if (!n) return 1;
+  // Exact substring (priority by how early the match starts)
+  const idx = h.indexOf(n);
+  if (idx !== -1) return 100 - Math.min(idx, 50);
+  // Fall back to in-order char match
+  let hi = 0;
+  for (const c of n) {
+    const found = h.indexOf(c, hi);
+    if (found === -1) return 0;
+    hi = found + 1;
+  }
+  return 50;
+}
+function fuzzyMatch(needle, haystack) {
+  return fuzzyScore(needle, haystack) > 0;
+}
+
+function commandIcon(kind) {
+  const icons = {
+    nav:     '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>',
+    action:  '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14"/></svg>',
+    article: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>',
+    aip:     '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>',
+    news:    '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2"/></svg>',
+    page:    '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v14a2 2 0 01-2 2z"/></svg>',
+  };
+  return icons[kind] || icons.nav;
+}
+
+let _cmdActiveIndex = 0;
+let _cmdItems = [];
+
+async function openCommandPalette() {
+  // Already open?
+  if (document.getElementById('cmd-overlay')) return;
+
+  // Build overlay scaffold
+  const overlay = document.createElement('div');
+  overlay.id = 'cmd-overlay';
+  overlay.className = 'cmd-overlay';
+  overlay.innerHTML = `
+    <div class="cmd-dialog" role="dialog" aria-modal="true" aria-label="Komut paleti">
+      <div style="position:relative">
+        <svg class="cmd-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="cmd-input" class="cmd-search" type="text" placeholder="Aramak için yazın… (sayfa, makale, haber)" autocomplete="off" autofocus>
+      </div>
+      <div id="cmd-results" class="cmd-results"><div class="cmd-empty">Yükleniyor…</div></div>
+      <div class="cmd-footer">
+        <div class="flex items-center gap-2"><span class="cmd-kbd">↑↓</span> gezin · <span class="cmd-kbd">↵</span> aç · <span class="cmd-kbd">esc</span> kapat</div>
+        <div>${COMMAND_ITEMS.length}+ konum</div>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+
+  const input = document.getElementById('cmd-input');
+  const resultsEl = document.getElementById('cmd-results');
+
+  // Click outside to close
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) closeCommandPalette(); });
+
+  // Load data (cached)
+  await ensureCommandData();
+  renderCommandResults('');
+
+  input.addEventListener('input', () => renderCommandResults(input.value));
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { e.preventDefault(); closeCommandPalette(); return; }
+    if (e.key === 'ArrowDown') { e.preventDefault(); setCmdActive(_cmdActiveIndex + 1); return; }
+    if (e.key === 'ArrowUp')   { e.preventDefault(); setCmdActive(_cmdActiveIndex - 1); return; }
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      const item = _cmdItems[_cmdActiveIndex];
+      if (item) selectCommandItem(item);
+    }
+  });
+}
+
+function closeCommandPalette() {
+  const el = document.getElementById('cmd-overlay');
+  if (el) el.remove();
+}
+
+function setCmdActive(idx) {
+  if (!_cmdItems.length) return;
+  _cmdActiveIndex = ((idx % _cmdItems.length) + _cmdItems.length) % _cmdItems.length;
+  document.querySelectorAll('.cmd-item').forEach((el, i) => {
+    el.classList.toggle('is-active', i === _cmdActiveIndex);
+    if (i === _cmdActiveIndex) el.scrollIntoView({ block: 'nearest' });
+  });
+}
+
+function selectCommandItem(item) {
+  closeCommandPalette();
+  if (item.onSelect) { item.onSelect(); return; }
+  if (item.hash) navigate(item.hash);
+}
+
+function renderCommandResults(query) {
+  const resultsEl = document.getElementById('cmd-results');
+  if (!resultsEl) return;
+  const all = [
+    ...COMMAND_ITEMS,
+    ...(_cmdData ? [..._cmdData.articles, ..._cmdData.aip, ..._cmdData.news, ..._cmdData.pages] : []),
+  ];
+  const q = query.trim();
+  let filtered;
+  if (q) {
+    // Score every item, then sort by score (desc). This ranks exact substring
+    // matches above in-order fuzzy matches, and earlier matches above later ones.
+    filtered = all
+      .map(i => ({
+        item: i,
+        score: Math.max(fuzzyScore(q, i.title), fuzzyScore(q, i.subtitle || '') * 0.9),
+      }))
+      .filter(x => x.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .map(x => x.item);
+  } else {
+    filtered = all.filter(i => i.kind === 'nav' || i.kind === 'action');
+  }
+  // Cap to 50 results for snappy UX
+  _cmdItems = filtered.slice(0, 50);
+  _cmdActiveIndex = 0;
+
+  if (_cmdItems.length === 0) {
+    resultsEl.innerHTML = '<div class="cmd-empty">Eşleşen sonuç yok</div>';
+    return;
+  }
+
+  // Group by section
+  const groups = {};
+  for (const item of _cmdItems) {
+    if (!groups[item.section]) groups[item.section] = [];
+    groups[item.section].push(item);
+  }
+  let html = '';
+  for (const [section, items] of Object.entries(groups)) {
+    html += `<div class="cmd-section-title">${esc(section)}</div>`;
+    for (const item of items) {
+      const idx = _cmdItems.indexOf(item);
+      html += `<div class="cmd-item${idx === 0 ? ' is-active' : ''}" data-idx="${idx}">
+        <span class="cmd-item-icon">${commandIcon(item.kind)}</span>
+        <div class="cmd-item-text">
+          <div class="cmd-item-title">${esc(item.title)}</div>
+          ${item.subtitle ? `<div class="cmd-item-sub">${esc(item.subtitle)}</div>` : ''}
+        </div>
+        <span class="cmd-kbd">${esc(item.hash || '')}</span>
+      </div>`;
+    }
+  }
+  resultsEl.innerHTML = html;
+  resultsEl.querySelectorAll('.cmd-item').forEach((el) => {
+    el.addEventListener('mouseenter', () => setCmdActive(Number(el.dataset.idx)));
+    el.addEventListener('click', () => selectCommandItem(_cmdItems[Number(el.dataset.idx)]));
+  });
+}
+
+// Global keyboard listener: Ctrl+K / Cmd+K opens palette, Ctrl+B toggles sidebar
+document.addEventListener('keydown', (e) => {
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+    e.preventDefault();
+    openCommandPalette();
+  }
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'b') {
+    e.preventDefault();
+    toggleSidebarCollapsed();
+  }
+});
+
+// Sidebar collapse: save preference in localStorage so the choice persists
+const SIDEBAR_KEY = 'bmj-admin-sidebar-collapsed';
+function toggleSidebarCollapsed() {
+  const collapsed = document.body.classList.toggle('sidebar-collapsed');
+  try { localStorage.setItem(SIDEBAR_KEY, collapsed ? '1' : '0'); } catch {}
+}
+// On first paint, restore preference + wrap link text nodes in a tagged span
+// (so CSS can hide them in collapsed mode) + populate data-label for tooltip.
+function initSidebarCollapseState() {
+  try {
+    if (localStorage.getItem(SIDEBAR_KEY) === '1') document.body.classList.add('sidebar-collapsed');
+  } catch {}
+  document.querySelectorAll('.app-sidebar .sidebar-link').forEach((el) => {
+    if (el.dataset.label) return; // already processed
+    // Wrap raw text nodes in <span class="sidebar-link-label"> so we can hide them
+    const labelParts = [];
+    [...el.childNodes].forEach((node) => {
+      if (node.nodeType === Node.TEXT_NODE) {
+        const text = node.textContent.trim();
+        if (text) {
+          labelParts.push(text);
+          const span = document.createElement('span');
+          span.className = 'sidebar-link-label';
+          span.textContent = text;
+          node.parentNode.replaceChild(span, node);
+        } else {
+          node.remove();
+        }
+      }
+    });
+    if (labelParts.length) el.dataset.label = labelParts.join(' ').replace(/\s+/g, ' ');
+  });
+}
+
+// Invalidate command palette cache after data mutations (best-effort)
+function invalidateCommandCache() { _cmdData = null; }
+
 // Init
-document.addEventListener('DOMContentLoaded', handleRoute);
+document.addEventListener('DOMContentLoaded', () => {
+  initSidebarCollapseState();
+  handleRoute();
+});

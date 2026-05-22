@@ -1,6 +1,6 @@
 /**
  * Balkan Medical Journal — Articles in Press
- * Last updated: 2026-04-20
+ * Last updated: 2026-05-21
  */
 window.ARTICLES_IN_PRESS = [
   {
@@ -107,7 +107,16 @@ window.ARTICLES_IN_PRESS = [
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2813",
     "localArticleAvailable": false,
     "localArticleUrl": "",
-    "aheadOfPrint": true
+    "aheadOfPrint": true,
+    "supplementary": [
+      {
+        "id": "supp1",
+        "label": "174-182-f2.jpg",
+        "href": "js/data/supplementary/2813/174-182-f2.jpg",
+        "caption": "",
+        "mimeType": ""
+      }
+    ]
   },
   {
     "id": 2803,
@@ -620,106 +629,6 @@ window.ARTICLES_IN_PRESS = [
     "aheadOfPrint": true
   },
   {
-    "id": 2817,
-    "order": 9,
-    "type": "Clinical Image",
-    "title": "Triple-Valve Infective Endocarditis",
-    "authors": [
-      {
-        "name": "Mihalache Georgeta",
-        "affiliation": "Nicolae Testemițanu State University of Medicine and Pharmacy, Chisinau, Republic of Moldova",
-        "orcid": ""
-      },
-      {
-        "name": "Spatari Anastasia",
-        "affiliation": "Institute of Cardiology, Chisinau, Republic of Moldova",
-        "orcid": ""
-      },
-      {
-        "name": "Chiriac Snejana",
-        "affiliation": "Institute of Cardiology, Chisinau, Republic of Moldova",
-        "orcid": ""
-      },
-      {
-        "name": "Lefter Oxana",
-        "affiliation": "Institute of Cardiology, Chisinau, Republic of Moldova",
-        "orcid": ""
-      },
-      {
-        "name": "Barcaru Dumitrița",
-        "affiliation": "Institute of Cardiology, Chisinau, Republic of Moldova",
-        "orcid": ""
-      },
-      {
-        "name": "Oprea Catalina",
-        "affiliation": "Institute of Cardiology, Chisinau, Republic of Moldova",
-        "orcid": ""
-      },
-      {
-        "name": "Ureche Andrei",
-        "affiliation": "Institute of Cardiology, Chisinau, Republic of Moldova",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2026.2025-11-1",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 431,
-    "downloads": 273,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2817",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2817",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2817",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2827,
-    "order": 10,
-    "type": "Clinical Image",
-    "title": "Massive Resting Shunt on c-TCD: A Clue to Pulmonary Arteriovenous Malformation in a Young Stroke Patient",
-    "authors": [
-      {
-        "name": "Fubo Zhou",
-        "affiliation": "Department of Vascular Ultrasonography, Xuanwu Hospital, Capital Medical University, Beijing, China",
-        "orcid": ""
-      },
-      {
-        "name": "Ruili Li",
-        "affiliation": "Department of Radiology and Nuclear Medicine, Xuanwu Hospital, Capital Medical University, Beijing, China",
-        "orcid": ""
-      },
-      {
-        "name": "Yingqi Xing",
-        "affiliation": "Department of Vascular Ultrasonography, Xuanwu Hospital, Capital Medical University, Beijing, China",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2026.2025-12-181",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 180,
-    "downloads": 73,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2827",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2827",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2827",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
     "id": 2812,
     "order": 11,
     "type": "Clinical Image",
@@ -800,56 +709,6 @@ window.ARTICLES_IN_PRESS = [
     "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2816",
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2816",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2816",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2839,
-    "order": 13,
-    "type": "Clinical Image",
-    "title": "Half-and-Half Nails and Terry's Nails: Distinct Nail Manifestations of the Same Underlying Chronic Kidney Disease",
-    "authors": [
-      {
-        "name": "Marta Szepietowska",
-        "affiliation": "Department of Dermatology, Jagiellonian University Medical College, Cracow, Poland; Doctoral School of Medical and Health Sciences, Jagiellonian University Medical College, Cracow, Poland",
-        "orcid": ""
-      },
-      {
-        "name": "Bartosz Lisicki",
-        "affiliation": "Lower Silesia Oncology, Pulmonology and Hematology Center, Wroclaw, Poland",
-        "orcid": ""
-      },
-      {
-        "name": "Andrzej K. Jaworek",
-        "affiliation": "Department of Dermatology, Jagiellonian University Medical College, Cracow, Poland",
-        "orcid": ""
-      },
-      {
-        "name": "Magdalena Krajewska",
-        "affiliation": "Division of Nephrology, Transplantation Medicine and Clinical Immunology, Faculty of Medicine, Wroclaw University of Science and Technology, Wroclaw, Poland; Clinical Department of Transplant Surgery and Liver Surgery, 4th Military Hospital, Wroclaw, Poland",
-        "orcid": ""
-      },
-      {
-        "name": "Jacek C. Szepietowski",
-        "affiliation": "Division of Dermatology, Venereology and Clinical Immunology, Faculty of Medicine, Wroclaw University of Science and Technology, Wroclaw, Poland; Department of Dermato-Venereology, 4th Military Hospital, Wroclaw, Poland",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2026.2026-1-208",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 84,
-    "downloads": 68,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2839",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2839",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2839",
     "localArticleAvailable": false,
     "localArticleUrl": "",
     "aheadOfPrint": true
@@ -1152,7 +1011,9 @@ window.ARTICLES_IN_PRESS = [
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2800",
     "localArticleAvailable": false,
     "localArticleUrl": "",
-    "aheadOfPrint": true
+    "aheadOfPrint": true,
+    "pdfUrl": "js/data/pdfs/2800.pdf",
+    "localPdfUrl": "js/data/pdfs/2800.pdf"
   },
   {
     "id": 2801,
@@ -1235,83 +1096,71 @@ window.ARTICLES_IN_PRESS = [
     "aheadOfPrint": true
   },
   {
-    "id": 2828,
-    "order": 23,
-    "type": "Scientific Letter",
-    "title": "A Case of Submandibular Ectopic Parathyroid Adenoma: Diagnostic Challenges and Clinical Insights",
-    "authors": [
-      {
-        "name": "Wei Yang",
-        "affiliation": "Department of Thoracic Surgery, The First Affiliated Hospital of Anhui Medical University, Hefei, China",
-        "orcid": ""
-      },
-      {
-        "name": "Yusheng Ye",
-        "affiliation": "Department of Thyroid Surgery, The First Affiliated Hospital of Anhui Medical University, Hefei, China",
-        "orcid": ""
-      },
-      {
-        "name": "Liangyu Gan",
-        "affiliation": "Department of Thyroid Surgery, The First Affiliated Hospital of Anhui Medical University, Hefei, China",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2026.2025-12-248",
-    "published": "",
+    "id": 2867,
+    "order": 21,
+    "aheadOfPrint": true,
     "volume": null,
     "issue": "",
     "pages": "",
-    "views": 158,
-    "downloads": 112,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2828",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2828",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2828",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2811,
-    "order": 24,
-    "type": "Scientific Letter",
-    "title": "Real-World Diagnostic and Therapeutic Insights in Transthyretin Cardiac Amyloidosis: Experience from the Black Sea Region of Türkiye",
+    "published": "",
+    "type": "Invited Review",
+    "title": "Contrast Media Side Effects and Kounis Syndrome: Timeo Danaos et  Dona Ferentes",
+    "doi": "10.4274/deneme.galenos.2026.2026-3-89",
+    "received": "2026-04-01",
+    "accepted": "2026-05-05",
+    "pmid": "",
+    "abstractHtml": "<!--StartFragment-->\n\n<p class=\"MsoNormal\"><b>Abstract</b><o:p></o:p></p>\n\n<p class=\"MsoNormal\"><span lang=\"EN-US\">Kounis\nsyndrome is defined as the occurrence of acute coronary events in the setting\nof allergic, hypersensitivity, or anaphylactic reactions. It is mediated by\nmast cell activation and the interaction of inflammatory cells, including T\nlymphocytes and macrophages. This process leads to the release of multiple\ninflammatory mediators, such as platelet-activating factor, histamine, neutral\nproteases (tryptase and chymase), arachidonic acid metabolites, cytokines, and\nchemokines. Kounis syndrome represents a unique form of acute vascular disorder\nthat may involve not only the coronary arteries but also peripheral, cerebral,\nand mesenteric vessels as well as the venous system. Contrast media are widely\nused in diagnostic imaging to enhance visualization and characterization of\npathological conditions. These agents can be administered via several routes,\nincluding oral, intravenous, intra-arterial, or rectal administration. Although\nmost hypersensitivity reactions to contrast media are mild to moderate, severe\ncomplications such as anaphylaxis, cardiac arrest, and Kounis syndrome may\noccur. In particular, contrast media-induced Kounis syndrome has been\nassociated with significant clinical consequences, including an increased risk\nof life-threatening cardiac events.<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><span lang=\"EN-US\">This\nnarrative review aims to summarize current evidence regarding contrast\nmedia-related adverse effects, with a focus on hypersensitivity reactions,\nKounis syndrome, and associated cardiovascular complications. Emphasis is also\nplaced on preventive strategies, including the importance of obtaining a\ndetailed patient history of prior hypersensitivity reactions prior to contrast\nadministration, to reduce the risk of recurrence and severe outcomes.<o:p></o:p></span></p>\n\n<!--EndFragment-->",
+    "abstract": "Abstract\n\nKounis\nsyndrome is defined as the occurrence of acute coronary events in the setting\nof allergic, hypersensitivity, or anaphylactic reactions. It is mediated by\nmast cell activation and the interaction of inflammatory cells, including T\nlymphocytes and macrophages. This process leads to the release of multiple\ninflammatory mediators, such as platelet-activating factor, histamine, neutral\nproteases (tryptase and chymase), arachidonic acid metabolites, cytokines, and\nchemokines. Kounis syndrome represents a unique form of acute vascular disorder\nthat may involve not only the coronary arteries but also peripheral, cerebral,\nand mesenteric vessels as well as the venous system. Contrast media are widely\nused in diagnostic imaging to enhance visualization and characterization of\npathological conditions. These agents can be administered via several routes,\nincluding oral, intravenous, intra-arterial, or rectal administration. Although\nmost hypersensitivity reactions to contrast media are mild to moderate, severe\ncomplications such as anaphylaxis, cardiac arrest, and Kounis syndrome may\noccur. In particular, contrast media-induced Kounis syndrome has been\nassociated with significant clinical consequences, including an increased risk\nof life-threatening cardiac events.\n\nThis\nnarrative review aims to summarize current evidence regarding contrast\nmedia-related adverse effects, with a focus on hypersensitivity reactions,\nKounis syndrome, and associated cardiovascular complications. Emphasis is also\nplaced on preventive strategies, including the importance of obtaining a\ndetailed patient history of prior hypersensitivity reactions prior to contrast\nadministration, to reduce the risk of recurrence and severe outcomes.",
+    "previewText": "Abstract\n\nKounis\nsyndrome is defined as the occurrence of acute coronary events in the setting\nof allergic, hypersensitivity, or anaphylactic reactions. It is mediated by\nmast cell activation and the interaction of inflammatory cells, including T\nlymphocytes and macrophages. This process leads to the release of multiple\ninflammatory mediators, such as platel",
+    "keywords": [],
     "authors": [
       {
-        "name": "Seçkin Dereli",
-        "affiliation": "Deparment of Cardiology, Ordu University Faculty of Medicine, Ordu, Türkiye",
-        "orcid": ""
+        "name": "Nicholas G. Kounis",
+        "affiliation": "Department of Cardiology, University of Patras Faculty of Medicine, Patras, Greece",
+        "orcid": "0000-0002-9751-6710"
       },
       {
-        "name": "Onur Osman Şeker",
-        "affiliation": "Clinic of Cardiology, University of Health Sciences Türkiye, Samsun Training and Research Hospital, Samsun, Türkiye",
-        "orcid": ""
+        "name": "Ming-Yow Hung2",
+        "affiliation": "Division of Cardiology, Department of Internal Medicine, Taipei Medical University, Shuang Ho Hospital, New Taipei City, Taiwan",
+        "orcid": "0000-0002-6912-7523"
       },
       {
-        "name": "Nihan Bahadır",
-        "affiliation": "Deparment of Cardiology, Ordu University Faculty of Medicine, Ordu, Türkiye",
-        "orcid": ""
+        "name": "Alexandr Ceasovschih3",
+        "affiliation": "Department of Internal Medicine, Grigore T. Popa University of Medicine and Pharmacy, Iaşi, Romania",
+        "orcid": "0000-0002-0043-9051"
+      },
+      {
+        "name": "Cesare de Gregorio4",
+        "affiliation": "Department of Clinical and Experimental Medicine, University of Messina, Messina, Italy",
+        "orcid": "0000-0003-3022-266X"
+      },
+      {
+        "name": "Anastasia Mavromati1",
+        "affiliation": "Department of Cardiology, University of Patras Faculty of Medicine, Patras, Greece",
+        "orcid": "0009-0009-0391-5218"
+      },
+      {
+        "name": "Marta Bernaola5",
+        "affiliation": "Clinic of Allergy Hospital, Central de la Defensa “Gómez Ulla”, Madrid, Spain",
+        "orcid": "0000-0003-4199-573X"
+      },
+      {
+        "name": "Ioanna Koniari6",
+        "affiliation": "Department of Electrophysiology and Device, University of Patras, Patras, Greece",
+        "orcid": "0000-0002-1033-5299"
       }
     ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-11-77",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 606,
-    "downloads": 221,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2811",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2811",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2811",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
+    "supplementary": [
+      {
+        "id": "supp1",
+        "label": "deneme",
+        "href": "js/data/supplementary/2867/BalkanMedJ-43-6-343.pdf",
+        "caption": "",
+        "mimeType": ""
+      }
+    ],
+    "hasFullText": true,
+    "pdfUrl": "js/data/pdfs/2867.pdf",
+    "localPdfUrl": "js/data/pdfs/2867.pdf"
   }
 ];

@@ -100,11 +100,13 @@
     var raw = String(path || '').trim();
     if (!raw) return '';
     if (/^https?:\/\//i.test(raw)) return raw;
+    if (raw.indexOf('//') === 0) return 'https:' + raw;
     raw = raw.replace(/^['"]|['"]$/g, '').replace(/^\/+/, '');
     if (!raw) return '';
-    if (raw.indexOf('uploads/') === 0 || raw.indexOf('images/') === 0) {
-      return 'https://balkanmedicaljournal.org/' + raw;
-    }
+    // Keep relative so it resolves against the current page origin — works both
+    // locally (admin preview at /site/...) and on the live site. The old
+    // implementation forcibly prefixed https://balkanmedicaljournal.org/ which
+    // broke local previews.
     return raw;
   }
 
@@ -1110,10 +1112,14 @@
     var latest = window.NEWS.slice().sort(function (a, b) {
       var da = new Date(a.date || '').getTime();
       var db = new Date(b.date || '').getTime();
-      if (isNaN(da) && isNaN(db)) return 0;
-      if (isNaN(da)) return 1;
-      if (isNaN(db)) return -1;
-      return db - da;
+      var aHasDate = !isNaN(da);
+      var bHasDate = !isNaN(db);
+      // Items with valid dates come first, in descending date order
+      if (aHasDate && bHasDate && da !== db) return db - da;
+      if (aHasDate && !bHasDate) return -1;
+      if (!aHasDate && bHasDate) return 1;
+      // Tie-breaker (same date or both missing): higher id = newer
+      return (Number(b.id) || 0) - (Number(a.id) || 0);
     }).slice(0, 3);
 
     container.innerHTML = latest.map(function (item) {
@@ -1140,10 +1146,12 @@
     var sorted = window.NEWS.slice().sort(function (a, b) {
       var da = new Date(a.date || '').getTime();
       var db = new Date(b.date || '').getTime();
-      if (isNaN(da) && isNaN(db)) return 0;
-      if (isNaN(da)) return 1;
-      if (isNaN(db)) return -1;
-      return db - da;
+      var aHasDate = !isNaN(da);
+      var bHasDate = !isNaN(db);
+      if (aHasDate && bHasDate && da !== db) return db - da;
+      if (aHasDate && !bHasDate) return -1;
+      if (!aHasDate && bHasDate) return 1;
+      return (Number(b.id) || 0) - (Number(a.id) || 0);
     });
     return sorted[0] || null;
   }

@@ -7,7 +7,9 @@
   var container = document.getElementById('news-container');
   var filterContainer = document.getElementById('news-filters');
   var loadMoreBtn = document.getElementById('news-load-more');
-  var DEFAULT_THUMBNAIL = 'https://balkanmedicaljournal.org/style/images/trial-image-1.png';
+  // Local fallback for news cards without an image. Uses the journal cover so
+  // localhost previews work; on the live site the same path resolves to the same image.
+  var DEFAULT_THUMBNAIL = 'images/cover/cover1.jpeg';
   if (!container || !window.NEWS) return;
 
   function parseNewsDate(value) {
@@ -30,7 +32,8 @@
     if (!url) return '';
     if (/^https?:\/\//i.test(url)) return url;
     if (url.indexOf('//') === 0) return 'https:' + url;
-    return 'https://balkanmedicaljournal.org/' + String(url).replace(/^\/+/, '');
+    // Relative URL — leave it as-is so it resolves against the current page origin.
+    return String(url).replace(/^\/+/, '');
   }
 
   function getThumbnail(item) {

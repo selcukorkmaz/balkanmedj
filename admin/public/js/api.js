@@ -8,12 +8,51 @@ function handleAuthError(res) {
   }
 }
 
+// Safely parse a response that the server promised would be JSON. If the
+// body is not JSON (e.g. server returned a 404 HTML page because the request
+// hit a route that doesn't exist on this build, or the user has a stale
+// app.js cached and is calling an old endpoint), give the caller a clear,
+// actionable error instead of the cryptic native JSON.parse message.
+async function parseJsonResponse(res, url) {
+  const ct = (res.headers.get('content-type') || '').toLowerCase();
+  const text = await res.text();
+  if (ct.includes('application/json')) {
+    try { return JSON.parse(text); }
+    catch (err) {
+      throw new Error(`Sunucu bozuk JSON döndürdü (${url}). Detay: ${err.message}`);
+    }
+  }
+  // Non-JSON response. Most common cause: 404 HTML because the endpoint was
+  // removed/renamed and the browser is running a cached older app.js — a
+  // hard refresh (Ctrl+Shift+R) usually fixes it.
+  const hint = text.trimStart().startsWith('<')
+    ? 'Sunucu beklenmeyen HTML yanıtı döndürdü. Tarayıcınız büyük olasılıkla eski bir admin paneli sürümünü kullanıyor — Ctrl+Shift+R ile sayfayı yenileyin.'
+    : `Sunucu beklenmeyen yanıt döndürdü (HTTP ${res.status}).`;
+  // Surface the first bit of the body for diagnostics but keep it short.
+  const preview = text.slice(0, 120).replace(/\s+/g, ' ').trim();
+  throw new Error(`${hint}${preview ? ` [${preview}${text.length > 120 ? '…' : ''}]` : ''}`);
+}
+
+async function readErrorMessage(res, url) {
+  // For !res.ok responses, try to extract a meaningful message even if the
+  // body isn't JSON. Never let JSON.parse blow up here.
+  const ct = (res.headers.get('content-type') || '').toLowerCase();
+  const text = await res.text();
+  if (ct.includes('application/json')) {
+    try { return JSON.parse(text).error || res.statusText; } catch { /* fall through */ }
+  }
+  if (text.trimStart().startsWith('<')) {
+    return `Sunucu HTML yanıtı döndürdü (HTTP ${res.status}, ${url}). Tarayıcı önbelleğini temizleyip yeniden deneyin (Ctrl+Shift+R).`;
+  }
+  return text.slice(0, 200) || res.statusText;
+}
+
 const API = {
   async get(url) {
     const res = await fetch(`/api${url}`);
     handleAuthError(res);
-    if (!res.ok) throw new Error((await res.json()).error || res.statusText);
-    return res.json();
+    if (!res.ok) throw new Error(await readErrorMessage(res, url));
+    return parseJsonResponse(res, url);
   },
 
   async post(url, data) {
@@ -23,8 +62,8 @@ const API = {
       body: JSON.stringify(data),
     });
     handleAuthError(res);
-    if (!res.ok) throw new Error((await res.json()).error || res.statusText);
-    return res.json();
+    if (!res.ok) throw new Error(await readErrorMessage(res, url));
+    return parseJsonResponse(res, url);
   },
 
   async put(url, data) {
@@ -34,15 +73,15 @@ const API = {
       body: JSON.stringify(data),
     });
     handleAuthError(res);
-    if (!res.ok) throw new Error((await res.json()).error || res.statusText);
-    return res.json();
+    if (!res.ok) throw new Error(await readErrorMessage(res, url));
+    return parseJsonResponse(res, url);
   },
 
   async del(url) {
     const res = await fetch(`/api${url}`, { method: 'DELETE' });
     handleAuthError(res);
-    if (!res.ok) throw new Error((await res.json()).error || res.statusText);
-    return res.json();
+    if (!res.ok) throw new Error(await readErrorMessage(res, url));
+    return parseJsonResponse(res, url);
   },
 
   async uploadFile(url, file, fieldName = 'xml', extraFields = {}) {

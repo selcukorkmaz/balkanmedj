@@ -1,0 +1,1 @@
+window.PAGE_ARTICLES = [];

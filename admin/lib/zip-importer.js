@@ -21,6 +21,165 @@ const IMAGE_EXTS = new Set(['.jpg', '.jpeg', '.png', '.gif', '.tif', '.tiff', '.
 const PDF_EXT = '.pdf';
 
 /**
+ * Normalize a figure/file basename so that fig1, figure1, Fig_1, Figure 1, fig01
+ * all collapse to the same key 'fig1'. Used for fuzzy matching of figure refs
+ * to image files inside a ZIP.
+ *   "Figure 1"        → "figure1"
+ *   "fig_01"          → "figure1"   (the optional leading 0s after "fig"/"figure")
+ *   "f1"              → "figure1"
+ *   "scheme2"         → "scheme2"
+ *   "table_1"         → "table1"
+ *   "graphical-abstract" → "graphicalabstract"
+ */
+function normalizeFigureKey(name) {
+  if (!name) return '';
+  let s = String(name).toLowerCase();
+  s = s.replace(/\.[a-z0-9]+$/, '');           // drop extension
+  s = s.replace(/[\s_.\-]+/g, '');              // strip separators
+  // Map common figure-word prefixes to 'fig' so 'figure1' ~ 'fig1' ~ 'f1'.
+  s = s.replace(/^figure(?=\d)/, 'fig');
+  s = s.replace(/^fig(?=\d)/, 'fig');
+  s = s.replace(/^f(?=\d)/, 'fig');
+  // Strip leading zeros after the prefix (fig01 → fig1)
+  s = s.replace(/^(fig|table|scheme|equation|chart|plate)0+(\d+)/, '$1$2');
+  // Bare 01-style filenames (just digits like '01.jpg') get a 'fig' prefix.
+  if (/^\d+$/.test(s)) s = 'fig' + s.replace(/^0+/, '');
+  return s;
+}
+
+/**
+ * Build a map: normalized-key → ZIP image file entry.
+ * Used by both preview and import paths.
+ */
+function buildImageIndex(imageFiles) {
+  const idx = new Map();
+  for (const img of imageFiles) {
+    const key = normalizeFigureKey(img.name);
+    if (key && !idx.has(key)) idx.set(key, img);
+  }
+  return idx;
+}
+
+/**
+ * Match a figure reference (from JATS) to an image file in the ZIP.
+ * Tries: exact basename → exact lowercase → normalized key.
+ */
+function findImageMatch(figRef, imageFiles, imageIndex) {
+  if (!figRef) return null;
+  const figBase = path.parse(figRef).name;
+  // 1. Exact basename
+  let m = imageFiles.find((img) => path.parse(img.name).name === figBase);
+  if (m) return m;
+  // 2. Case-insensitive
+  const figLower = figBase.toLowerCase();
+  m = imageFiles.find((img) => path.parse(img.name).name.toLowerCase() === figLower);
+  if (m) return m;
+  // 3. Normalized fuzzy
+  const key = normalizeFigureKey(figRef);
+  if (key && imageIndex.has(key)) return imageIndex.get(key);
+  return null;
+}
+
+/**
+ * List existing on-disk assets for an article ID. Used by previewZip to
+ * warn the user "you're about to re-import #N; these files will be wiped".
+ * Returns empty arrays when the article has no prior files.
+ */
+function listExistingArticleAssets(id) {
+  const result = { figures: [], supplementary: [], fullText: false };
+  const numericId = Number(id);
+  if (!Number.isInteger(numericId) || numericId <= 0) return result;
+  const figDir = path.join(dio.PATHS.articleImagesDir, String(numericId));
+  if (fs.existsSync(figDir)) {
+    try {
+      for (const f of fs.readdirSync(figDir)) {
+        if (fs.statSync(path.join(figDir, f)).isFile()) result.figures.push(f);
+      }
+    } catch (_) { /* unreadable dir — skip */ }
+  }
+  const suppDir = path.join(dio.PATHS.supplementaryDir, String(numericId));
+  if (fs.existsSync(suppDir)) {
+    try {
+      for (const f of fs.readdirSync(suppDir)) {
+        if (fs.statSync(path.join(suppDir, f)).isFile()) result.supplementary.push(f);
+      }
+    } catch (_) {}
+  }
+  const ftHtml = path.join(dio.PATHS.articlesDir, String(numericId) + '.html');
+  result.fullText = fs.existsSync(ftHtml);
+  return result;
+}
+
+/**
+ * Wipe all per-article media files for the given ID so a fresh import
+ * doesn't inherit leftover figures/supplementaries from an earlier import
+ * or test. The DIRECTORIES are preserved (importZip recreates them
+ * via mkdirSync anyway) but every file inside is removed.
+ *
+ * Intentionally NOT touched:
+ *   - js/data/pdfs/<id>.pdf      — overwritten in place by importZip
+ *   - js/data/articles/<id>.html — overwritten in place by writeFullText
+ *   - js/data/articles/<id>.js   — same
+ *   - img/files/*                — global library, not keyed by article id
+ *
+ * Returns the list of file names actually removed (for the audit trail
+ * exposed in the importZip response).
+ */
+function cleanArticleAssets(id, opts = {}) {
+  // opts.wipePdf      → also delete js/data/pdfs/<id>.pdf
+  // opts.wipeFullText → also delete js/data/articles/<id>.html and <id>.js
+  // ZIP import uses defaults (figures + supp only) since it overwrites PDF
+  // and full text by hand. Manual AIP create and DELETE use wipeAll to
+  // prevent orphaned files from being inherited by the next ID reassignment.
+  const removed = { figures: [], supplementary: [], pdf: false, fullText: false };
+  const numericId = Number(id);
+  if (!Number.isInteger(numericId) || numericId <= 0) return removed;
+  const figDir = path.join(dio.PATHS.articleImagesDir, String(numericId));
+  if (fs.existsSync(figDir)) {
+    try {
+      for (const f of fs.readdirSync(figDir)) {
+        const p = path.join(figDir, f);
+        try {
+          if (fs.statSync(p).isFile()) {
+            fs.unlinkSync(p);
+            removed.figures.push(f);
+          }
+        } catch (_) {}
+      }
+    } catch (_) {}
+  }
+  const suppDir = path.join(dio.PATHS.supplementaryDir, String(numericId));
+  if (fs.existsSync(suppDir)) {
+    try {
+      for (const f of fs.readdirSync(suppDir)) {
+        const p = path.join(suppDir, f);
+        try {
+          if (fs.statSync(p).isFile()) {
+            fs.unlinkSync(p);
+            removed.supplementary.push(f);
+          }
+        } catch (_) {}
+      }
+    } catch (_) {}
+  }
+  if (opts.wipePdf) {
+    const pdfPath = path.join(dio.PATHS.pdfsDir, String(numericId) + '.pdf');
+    if (fs.existsSync(pdfPath)) {
+      try { fs.unlinkSync(pdfPath); removed.pdf = true; } catch (_) {}
+    }
+  }
+  if (opts.wipeFullText) {
+    for (const ext of ['.html', '.js']) {
+      const ftPath = path.join(dio.PATHS.articlesDir, String(numericId) + ext);
+      if (fs.existsSync(ftPath)) {
+        try { fs.unlinkSync(ftPath); removed.fullText = true; } catch (_) {}
+      }
+    }
+  }
+  return removed;
+}
+
+/**
  * Scan the imports directory for unprocessed ZIP files.
  */
 function scanImportsDir() {
@@ -70,12 +229,32 @@ function analyzeZip(zipPath) {
 
 /**
  * Preview: parse all XMLs in the ZIP without importing.
+ * Returns rich per-figure detail so the UI can show a clear match report.
  */
 async function previewZip(zipPath) {
   const zip = new AdmZip(zipPath);
   const analysis = analyzeZip(zipPath);
+  const imageIndex = buildImageIndex(analysis.imageFiles);
   const articles = [];
   const errors = [];
+
+  // Track every image file we end up consuming — leftover = orphan.
+  const consumedImages = new Set();
+
+  // Load existing published + AIP records once, so each XML's DOI can be
+  // classified in the preview as "new" / "duplicate (already published)" /
+  // "promote (in press → published)". Previously the importer only looked at
+  // published articles, so AIP entries silently turned into duplicates.
+  const publishedArticles = dio.readArticles();
+  const aipArticles = dio.readArticlesInPress();
+  const aipByDoi = new Map();
+  for (const a of aipArticles) {
+    if (a.doi) aipByDoi.set(String(a.doi).toLowerCase(), a);
+  }
+  const publishedByDoi = new Map();
+  for (const a of publishedArticles) {
+    if (a.doi) publishedByDoi.set(String(a.doi).toLowerCase(), a);
+  }
 
   for (const xmlInfo of analysis.xmlFiles) {
     try {
@@ -83,23 +262,47 @@ async function previewZip(zipPath) {
       const parsed = await parseJatsXml(xmlContent);
       const baseName = path.parse(xmlInfo.name).name;
 
-      // Find matching PDF
       const matchedPdf = analysis.pdfFiles.find((p) =>
         path.parse(p.name).name === baseName
       );
 
-      // Find matching images (by figure references in parsed data)
-      const matchedImages = [];
-      for (const fig of parsed.figures || []) {
-        if (fig.imageFile) {
-          const figBase = path.parse(fig.imageFile).name;
-          const match = analysis.imageFiles.find((img) => {
-            const imgBase = path.parse(img.name).name;
-            return imgBase === figBase || imgBase.toLowerCase() === figBase.toLowerCase();
-          });
-          if (match) {
-            matchedImages.push({ figureId: fig.id, figureLabel: fig.label, originalRef: fig.imageFile, file: match.name });
-          }
+      // Per-figure detail: every figure from JATS, with its match status.
+      const figures = (parsed.figures || []).map((fig) => {
+        const match = findImageMatch(fig.imageFile, analysis.imageFiles, imageIndex);
+        if (match) consumedImages.add(match.entryName);
+        return {
+          id: fig.id || '',
+          label: fig.label || '',
+          originalRef: fig.imageFile || '',
+          matchedFile: match ? match.name : null,
+          status: match ? 'matched' : (fig.imageFile ? 'missing' : 'no-ref'),
+        };
+      });
+
+      // Legacy shape for backwards compatibility (some UI still reads these).
+      const matchedImages = figures
+        .filter((f) => f.status === 'matched')
+        .map((f) => ({ figureId: f.id, figureLabel: f.label, originalRef: f.originalRef, file: f.matchedFile }));
+
+      // Classify against existing data.
+      const doiKey = parsed.doi ? String(parsed.doi).toLowerCase() : '';
+      const aipMatch = doiKey ? aipByDoi.get(doiKey) : null;
+      const publishedMatch = doiKey ? publishedByDoi.get(doiKey) : null;
+      let importStatus = 'new';
+      if (publishedMatch) importStatus = 'duplicate';
+      else if (aipMatch) importStatus = 'promote';
+
+      // Surface "you are about to overwrite stale files" so the operator can
+      // see what import will wipe. We only know the target ID up front when
+      // promoting an existing AIP / duplicate; for brand-new IDs the cleanup
+      // runs anyway during import but there's nothing to preview.
+      const previewTargetId = (publishedMatch && publishedMatch.id)
+        || (aipMatch && aipMatch.id) || null;
+      let existingAssets = null;
+      if (previewTargetId) {
+        const probe = listExistingArticleAssets(previewTargetId);
+        if (probe.figures.length || probe.supplementary.length || probe.fullText) {
+          existingAssets = probe;
         }
       }
 
@@ -114,8 +317,15 @@ async function previewZip(zipPath) {
         pages: parsed.pages,
         authors: (parsed.authors || []).map((a) => a.name),
         matchedPdf: matchedPdf?.name || null,
-        matchedImages,
-        figureCount: (parsed.figures || []).length,
+        figures,
+        figureCount: figures.length,
+        figuresMatched: figures.filter((f) => f.status === 'matched').length,
+        figuresMissing: figures.filter((f) => f.status === 'missing').length,
+        matchedImages, // legacy
+        importStatus,
+        aipMatch: aipMatch ? { id: aipMatch.id, title: aipMatch.title } : null,
+        publishedMatch: publishedMatch ? { id: publishedMatch.id, title: publishedMatch.title } : null,
+        existingAssets, // null when nothing on disk, or { figures:[], supplementary:[], fullText: bool }
         parsed, // keep full parsed data for import
       });
     } catch (err) {
@@ -123,17 +333,28 @@ async function previewZip(zipPath) {
     }
   }
 
+  // Orphan images: in ZIP but no JATS figure refers to them.
+  const orphanImages = analysis.imageFiles
+    .filter((img) => !consumedImages.has(img.entryName))
+    .map((img) => ({ name: img.name, size: img.size, sizeHuman: formatBytes(img.size) }));
+
   return {
     zipFile: path.basename(zipPath),
     analysis,
     articles,
     errors,
+    orphanImages,
     summary: {
       totalXml: analysis.xmlFiles.length,
       parsedOk: articles.length,
       parsedFail: errors.length,
       pdfsMatched: articles.filter((a) => a.matchedPdf).length,
-      imagesMatched: articles.reduce((sum, a) => sum + a.matchedImages.length, 0),
+      imagesMatched: articles.reduce((sum, a) => sum + a.figuresMatched, 0),
+      imagesMissing: articles.reduce((sum, a) => sum + a.figuresMissing, 0),
+      orphanImages: orphanImages.length,
+      newArticles: articles.filter((a) => a.importStatus === 'new').length,
+      promotedFromAip: articles.filter((a) => a.importStatus === 'promote').length,
+      duplicates: articles.filter((a) => a.importStatus === 'duplicate').length,
     },
   };
 }
@@ -147,10 +368,21 @@ async function importZip(zipPath, options = {}) {
   const { targetVolume, targetIssue, setAsCurrent } = options;
   const zip = new AdmZip(zipPath);
   const analysis = analyzeZip(zipPath);
+  const imageIndex = buildImageIndex(analysis.imageFiles);
 
   const articles = dio.readArticles();
   const allMeta = dio.readAuthorMetadata();
+  // Load AIP list so DOI-matched articles can be "promoted" (moved from
+  // articles-in-press to articles) atomically as part of the same import,
+  // instead of silently creating duplicates.
+  const aipList = dio.readArticlesInPress();
+  const aipByDoi = new Map();
+  for (const a of aipList) {
+    if (a.doi) aipByDoi.set(String(a.doi).toLowerCase(), a);
+  }
+  const promotedAipIds = new Set();
   const imported = [];
+  const promoted = [];
   const errors = [];
 
   // Parse all XMLs first
@@ -168,13 +400,25 @@ async function importZip(zipPath, options = {}) {
   // Import each parsed article
   for (const { xmlInfo, parsed, baseName } of parsedArticles) {
     try {
-      // Check duplicate DOI
-      if (parsed.doi && articles.find((a) => a.doi === parsed.doi)) {
-        errors.push({ file: xmlInfo.name, error: `DOI zaten mevcut: ${parsed.doi}` });
+      const doiKey = parsed.doi ? String(parsed.doi).toLowerCase() : '';
+
+      // Check duplicate DOI in published articles (true duplicate, skip)
+      if (doiKey && articles.find((a) => String(a.doi || '').toLowerCase() === doiKey)) {
+        errors.push({ file: xmlInfo.name, error: `DOI zaten yayınlanmış makalelerde mevcut: ${parsed.doi}` });
         continue;
       }
 
-      const id = dio.nextArticleId(articles);
+      // Check AIP: if matched, this is a promotion — preserve the AIP id and
+      // any preserved stats (views/downloads) so existing links/citations stay valid.
+      const aipMatch = doiKey ? aipByDoi.get(doiKey) : null;
+      const id = aipMatch ? aipMatch.id : dio.nextArticleId(articles);
+      if (aipMatch) promotedAipIds.add(aipMatch.id);
+
+      // Wipe any leftover figures/supplementaries from a previous import of
+      // the same ID (re-import or AIP promotion) so the panel doesn't show
+      // ghost files the current XML doesn't reference. PDF / full-text are
+      // overwritten in place a few lines below and don't need cleaning.
+      const cleanup = cleanArticleAssets(id);
 
       const article = {
         id,
@@ -189,10 +433,16 @@ async function importZip(zipPath, options = {}) {
         received: parsed.received || '',
         accepted: parsed.accepted || '',
         published: parsed.published || '',
-        volume: targetVolume != null ? Number(targetVolume) : (parsed.volume || null),
+        volume: targetVolume != null ? Number(targetVolume)
+          : (parsed.volume != null && parsed.volume !== '' ? Number(parsed.volume) : null),
         issue: targetIssue != null ? String(targetIssue) : (parsed.issue || ''),
         pages: parsed.pages || '',
-        views: 0, downloads: 0, citations: 0,
+        // Preserve view/download counts when promoting from AIP — these are
+        // accumulated user metrics and should not reset to zero just because
+        // the article transitioned from "in press" to "published".
+        views: aipMatch?.views || 0,
+        downloads: aipMatch?.downloads || 0,
+        citations: aipMatch?.citations || 0,
         featured: false, imageCorner: false,
         hasFullText: !!parsed.fullTextHtml,
         sourceIssueId: '', sourceArticleId: '', sourceAbstractUrl: '',
@@ -227,11 +477,8 @@ async function importZip(zipPath, options = {}) {
           if (!fig.imageFile) continue;
           const figBase = path.parse(fig.imageFile).name;
 
-          // Find matching image in ZIP (try exact name, then case-insensitive)
-          const match = analysis.imageFiles.find((img) => {
-            const imgBase = path.parse(img.name).name;
-            return imgBase === figBase || imgBase.toLowerCase() === figBase.toLowerCase();
-          });
+          // Use shared fuzzy matcher (exact → case-insensitive → normalized key)
+          const match = findImageMatch(fig.imageFile, analysis.imageFiles, imageIndex);
 
           if (match) {
             const imgData = zip.readFile(match.entryName);
@@ -291,16 +538,30 @@ async function importZip(zipPath, options = {}) {
       }
 
       articles.unshift(article);
-      imported.push({
+      const cleanedCount = (cleanup.figures.length + cleanup.supplementary.length);
+      const record = {
         id,
         title: parsed.title,
         doi: parsed.doi,
         hasPdf: !!article.pdfUrl,
         figureCount: parsed.figures?.length || 0,
-      });
+        promotedFromAip: !!aipMatch,
+        cleanedStaleFiles: cleanedCount > 0
+          ? { count: cleanedCount, figures: cleanup.figures, supplementary: cleanup.supplementary }
+          : null,
+      };
+      imported.push(record);
+      if (aipMatch) promoted.push(record);
     } catch (err) {
       errors.push({ file: xmlInfo.name, error: err.message });
     }
+  }
+
+  // Remove the promoted records from articles-in-press so they don't appear
+  // in both lists. Done in a single write to keep the operation atomic.
+  if (promotedAipIds.size) {
+    const remaining = aipList.filter((a) => !promotedAipIds.has(a.id));
+    dio.writeArticlesInPress(remaining);
   }
 
   // Write all data
@@ -309,17 +570,65 @@ async function importZip(zipPath, options = {}) {
     dio.writeAuthorMetadata(allMeta);
   }
 
-  // Rebuild volume JSON
-  const vol = targetVolume != null ? Number(targetVolume) : null;
-  const iss = targetIssue != null ? String(targetIssue) : null;
-  if (vol && iss) {
-    const count = dio.rebuildVolumeJson(vol, iss, articles);
+  // Register / refresh the archive-issues entry for every (volume, issue) the
+  // imported articles belong to. This must CREATE a missing issue — not just
+  // update an existing one — otherwise a ZIP-imported issue never appears in
+  // the "Sayılar" list (especially in auto mode, where no targetVolume/Issue
+  // was supplied and volume/issue come straight from the parsed XML).
+  const importedIssues = new Map(); // "vol|iss" -> { volume, issue, year }
+  for (const rec of imported) {
+    const art = articles.find((a) => a.id === rec.id);
+    if (!art || !art.volume || !art.issue) continue;
+    const v = Number(art.volume);
+    const i = String(art.issue);
+    if (!v || !i) continue;
+    const key = `${v}|${i}`;
+    if (!importedIssues.has(key)) {
+      const year = (String(art.published || '').match(/(?:19|20)\d{2}/) || [])[0]
+        || String(new Date().getFullYear());
+      importedIssues.set(key, { volume: v, issue: i, year: String(year) });
+    }
+  }
+
+  if (importedIssues.size) {
     const archive = dio.readArchiveIssues();
-    for (const y of archive) {
-      const issObj = y.issues.find((i) => i.volume === vol && String(i.issue) === iss);
-      if (issObj) { issObj.articleCount = count; issObj.hasLocalData = true; break; }
+    for (const { volume, issue, year } of importedIssues.values()) {
+      const count = dio.rebuildVolumeJson(volume, issue, articles);
+      let issObj = null;
+      for (const y of archive) {
+        const found = y.issues.find((i) => i.volume === volume && String(i.issue) === issue);
+        if (found) { issObj = found; break; }
+      }
+      if (issObj) {
+        issObj.articleCount = count;
+        issObj.hasLocalData = true;
+      } else {
+        let yearGroup = archive.find((y) => y.year === year);
+        if (!yearGroup) {
+          yearGroup = { year, volume, issues: [] };
+          archive.unshift(yearGroup);
+          archive.sort((a, b) => Number(b.year) - Number(a.year));
+        }
+        yearGroup.issues.unshift({
+          label: `Volume ${volume}, Issue ${issue}`,
+          sourceId: '', sourceUrl: '',
+          volume, issue,
+          articleCount: count,
+          hasLocalData: true,
+        });
+      }
     }
     dio.writeArchiveIssues(archive);
+  }
+
+  // Resolve the primary (volume, issue) for the return value / homepage: the
+  // explicit target if given, otherwise the issue the articles were imported into.
+  let vol = targetVolume != null ? Number(targetVolume) : null;
+  let iss = targetIssue != null ? String(targetIssue) : null;
+  if ((!vol || !iss) && importedIssues.size) {
+    const first = importedIssues.values().next().value;
+    if (!vol) vol = first.volume;
+    if (!iss) iss = first.issue;
   }
 
   // Set as current issue if requested
@@ -342,8 +651,10 @@ async function importZip(zipPath, options = {}) {
 
   return {
     imported,
+    promoted,
     errors,
     totalImported: imported.length,
+    totalPromoted: promoted.length,
     totalErrors: errors.length,
     volume: vol,
     issue: iss,
@@ -404,4 +715,8 @@ module.exports = {
   analyzeZip,
   previewZip,
   importZip,
+  normalizeFigureKey,
+  findImageMatch,
+  cleanArticleAssets,
+  listExistingArticleAssets,
 };

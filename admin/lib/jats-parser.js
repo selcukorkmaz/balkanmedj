@@ -396,14 +396,18 @@ function convertSectionToHtml(sec, headingTag) {
       else if (tag === 'sec') html += convertSectionToHtml(child, nextTag);
       else if (tag === 'list') html += convertListToHtml(child) + '\n';
       else if (tag === 'def-list') html += convertDefListToHtml(child) + '\n';
-      else if (tag === 'fig') { /* figures handled separately */ }
-      else if (tag === 'table-wrap') { /* tables handled separately */ }
+      else if (tag === 'fig') { /* figures handled separately (floats-group) */ }
+      // A <table-wrap> placed inline inside a body <sec> (rather than in
+      // <floats-group>) would otherwise be dropped — emit it in place so the
+      // table is not lost.
+      else if (tag === 'table-wrap') html += tableWrapToHtml(child) + '\n';
     }
   } else {
     // Fallback for objects without $$ (shouldn't happen with explicitChildren)
     for (const p of sec.p || []) html += `<p>${inlineToHtml(p)}</p>\n`;
     for (const list of sec.list || []) html += convertListToHtml(list) + '\n';
     for (const dl of sec['def-list'] || []) html += convertDefListToHtml(dl) + '\n';
+    for (const tw of sec['table-wrap'] || []) html += tableWrapToHtml(tw) + '\n';
     for (const subsec of sec.sec || []) html += convertSectionToHtml(subsec, nextTag);
   }
 
@@ -465,6 +469,26 @@ function parseTables(floatsGroup) {
 
     return { id, label, tableHtml, footnote };
   });
+}
+
+// Render a single <table-wrap> element to the same labelled block that
+// buildFullTextHtml uses for floats-group tables. Used for tables embedded
+// inline within body <sec>s so they survive instead of being dropped.
+function tableWrapToHtml(tw) {
+  if (!tw) return '';
+  const id = tw.$?.id || '';
+  const label = textContent(tw.label?.[0]);
+  const tableEl = tw.table?.[0];
+  const tableHtml = tableEl ? convertTableToHtml(tableEl) : '';
+  if (!tableHtml) return '';
+  const footParts = (tw['table-wrap-foot']?.[0]?.p || []).map((p) => inlineToHtml(p));
+  const footnote = footParts.join('<br>');
+  let html = `<div${id ? ` id="${escapeHtml(id)}"` : ''} class="article-table-wrap">`;
+  if (label) html += `<p class="table-label"><strong>${escapeHtml(label)}</strong></p>`;
+  html += tableHtml;
+  if (footnote) html += `<p class="table-footnote">${footnote}</p>`;
+  html += '</div>';
+  return html;
 }
 
 function convertTableToHtml(tableEl) {
