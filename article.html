@@ -370,6 +370,17 @@
       border-radius: 3px;
       transition: background-color 0.15s ease, color 0.15s ease;
     }
+    /* Sup wrapping is applied at runtime by enhanceReferenceCitations so
+       every [N] in the body renders at the same superscript size. The
+       wrapped `<sup>` itself already shrinks the digit via the browser
+       default — we just make sure consecutive citations like "4, 5" stay
+       tightly grouped (no awkward gap between the sup and the comma). */
+    .article-body sup .article-ref-citation {
+      padding: 0 0.18em;
+    }
+    .article-body sup + sup {
+      margin-left: 0;
+    }
     .article-body .article-ref-citation:hover,
     .article-body .article-ref-citation:focus-visible {
       background-color: color-mix(in oklab, var(--color-teal-700) 14%, transparent);
@@ -5303,6 +5314,30 @@
         if (!bodyNode || !bodyNode.querySelectorAll) return;
         if (bodyNode.getAttribute('data-ref-citations-ready') === 'true') return;
 
+        // Some imports (article #2853 is the canonical example) ship
+        // double-wrapped citations: <sup><sup>1</sup></sup>. The browser
+        // applies the super-shift twice, so the digit ends up noticeably
+        // higher and smaller than a normal <sup> in articles that have
+        // only a single wrap (#2867). Flatten any nested <sup>s by
+        // unwrapping the inner ones — keeps a single <sup> per citation
+        // and makes the typography match across the corpus.
+        var nestedSups = bodyNode.querySelectorAll('sup sup');
+        var flattened = 0;
+        Array.prototype.forEach.call(nestedSups, function (innerSup) {
+          var p = innerSup.parentNode;
+          if (!p) return;
+          // Move every child of the inner sup up to the parent sup, in
+          // place, then drop the now-empty inner sup.
+          while (innerSup.firstChild) {
+            p.insertBefore(innerSup.firstChild, innerSup);
+          }
+          p.removeChild(innerSup);
+          flattened += 1;
+        });
+        if (flattened > 0) {
+          console.log('[ref-citations] flattened', flattened, 'nested <sup><sup>...</sup></sup> wrappers');
+        }
+
         var refBlock = null;
         var refHeading = (typeof findRefHeading === 'function') ? findRefHeading(bodyNode) : null;
         if (refHeading) {
@@ -5355,6 +5390,77 @@
         });
 
         bodyNode.setAttribute('data-ref-citations-ready', 'true');
+
+        // Normalise citation typography across imports. Some source HTML
+        // (older JATS exports, Word paste, etc.) emits citations as a plain
+        // inline `<a class="article-ref-citation">N</a>` rendered at full
+        // body font size; modernised imports wrap the same anchor in
+        // `<sup>` and the browser shrinks the digit naturally.
+        //
+        // To make every [N] in the body render identically (and to match
+        // the look of articles like #2867 that already ship a real <sup>),
+        // we wrap any unwrapped citation anchor in an actual <sup> element
+        // instead of fiddling with inline font-size / vertical-align —
+        // those two together stacked too high above the baseline.
+        // Consecutive citations + their separators ("4, 5", "1–3") are
+        // pulled into a single <sup> so the punctuation stays superscript
+        // too.
+        var _refCitations = bodyNode.querySelectorAll('a.article-ref-citation, a[href^="#ref-"]');
+        var _normCount = 0;
+        Array.prototype.forEach.call(_refCitations, function (a) {
+          if (a.classList && a.classList.contains('article-ref-backlink')) return;
+          if (a.closest('.article-references')) return;
+          // Make sure the class is present even on raw JATS-style anchors
+          // — the rest of the system (popover handler, hover colour, etc.)
+          // keys off it.
+          if (a.classList && !a.classList.contains('article-ref-citation')) {
+            a.classList.add('article-ref-citation');
+          }
+          // Clear any leftover inline typography from a prior pass — we
+          // are switching back to real <sup> wrapping and don't want the
+          // two strategies to compound on top of each other.
+          a.style.fontSize = '';
+          a.style.verticalAlign = '';
+          a.style.lineHeight = '';
+          a.style.position = '';
+
+          var parent = a.parentNode;
+          if (!parent) return;
+          if (parent.tagName === 'SUP') return; // already wrapped — done
+          if (a.dataset && a.dataset.refWrapped === 'true') return;
+
+          var sup = document.createElement('sup');
+          parent.insertBefore(sup, a);
+          // Pull the anchor and any immediately-following separator text
+          // ("," / ";" / "-" / whitespace) plus subsequent citation
+          // anchors into the same <sup>.
+          var node = a;
+          while (node) {
+            var next = node.nextSibling;
+            sup.appendChild(node);
+            if (node.nodeType === 1 && node.tagName === 'A' &&
+                node.classList && node.classList.contains('article-ref-citation')) {
+              node.dataset.refWrapped = 'true';
+            }
+            if (!next) break;
+            if (next.nodeType === 3 && /^[\s,;–—\-]+$/.test(next.nodeValue || '')) {
+              node = next;
+              continue;
+            }
+            if (next.nodeType === 1 && next.tagName === 'A' &&
+                next.classList && next.classList.contains('article-ref-citation') &&
+                next.parentNode === parent) {
+              node = next;
+              continue;
+            }
+            break;
+          }
+          _normCount += 1;
+        });
+        if (_normCount > 0) {
+          console.log('[ref-citations] wrapped', _normCount, 'unwrapped citation anchors in <sup>');
+        }
+
         // Click on an in-text citation → open the reference popover (modern
         // journal pattern). We wire the listener once on `document` instead
         // of on bodyNode — earlier the listener vanished whenever something
@@ -5550,12 +5656,35 @@
           'transition:opacity 0.16s ease, transform 0.16s ease, visibility 0.16s ease;' +
           'transform:translateY(6px);font-family:inherit;color:#1f2937;');
         // Inline styles on every child too — same reason as the parent.
+        // We respect the current viewport width to make tap targets and
+        // text comfortable on mobile without breaking the desktop card.
+        var isMobileInit = window.innerWidth <= 640;
         var arrowStyle = 'position:absolute;top:-7px;left:50%;margin-left:-7px;width:14px;height:14px;background:#ffffff;border-left:1px solid #e5e7eb;border-top:1px solid #e5e7eb;transform:rotate(45deg);';
-        var headerStyle = 'display:flex;align-items:center;justify-content:space-between;gap:0.5rem;padding:0.7rem 0.95rem 0.5rem;border-bottom:1px solid #f1f5f9;';
-        var eyebrowStyle = 'font-size:0.72rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:#0f766e;';
-        var closeStyle = 'display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;margin:-4px -6px -4px 0;border:0;border-radius:6px;background:transparent;color:#6b7280;cursor:pointer;';
-        var bodyStyle = 'padding:0.85rem 0.95rem 0.6rem;max-height:260px;overflow-y:auto;';
-        var actionsStyle = 'display:flex;flex-wrap:wrap;gap:0.4rem;padding:0.55rem 0.95rem 0.85rem;border-top:1px solid #f1f5f9;background:#fafbfd;border-radius:0 0 12px 12px;';
+        var headerStyle =
+          'display:flex;align-items:center;justify-content:space-between;gap:0.5rem;' +
+          'padding:' + (isMobileInit ? '0.9rem 1.1rem 0.7rem' : '0.7rem 0.95rem 0.5rem') + ';' +
+          'border-bottom:1px solid #f1f5f9;';
+        var eyebrowStyle =
+          'font-size:' + (isMobileInit ? '0.78rem' : '0.72rem') + ';' +
+          'font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#0f766e;';
+        var closeStyle =
+          'display:inline-flex;align-items:center;justify-content:center;' +
+          'width:' + (isMobileInit ? '36px' : '30px') + ';' +
+          'height:' + (isMobileInit ? '36px' : '30px') + ';' +
+          'margin:-4px -6px -4px 0;border:0;border-radius:8px;' +
+          'background:transparent;color:#6b7280;cursor:pointer;flex-shrink:0;' +
+          'transition:background 0.12s ease, color 0.12s ease;';
+        var bodyStyle =
+          'padding:' + (isMobileInit ? '1rem 1.1rem 0.85rem' : '0.85rem 0.95rem 0.7rem') + ';' +
+          'max-height:' + (isMobileInit ? '55vh' : '320px') + ';' +
+          'overflow-y:auto;-webkit-overflow-scrolling:touch;' +
+          'font-size:' + (isMobileInit ? '0.95rem' : '0.875rem') + ';' +
+          'line-height:1.55;color:#1f2937;';
+        var actionsStyle =
+          'display:flex;flex-wrap:wrap;gap:' + (isMobileInit ? '0.5rem' : '0.4rem') + ';' +
+          'padding:' + (isMobileInit ? '0.85rem 1.1rem calc(0.85rem + env(safe-area-inset-bottom, 0px))' : '0.6rem 0.95rem 0.85rem') + ';' +
+          'border-top:1px solid #f1f5f9;background:#fafbfd;' +
+          'border-radius:' + (isMobileInit ? '0' : '0 0 12px 12px') + ';';
         pop.innerHTML =
           '<div class="ref-popover-arrow" aria-hidden="true" style="' + arrowStyle + '"></div>' +
           '<div class="ref-popover-header" style="' + headerStyle + '">' +
@@ -5670,6 +5799,7 @@
       function positionReferencePopover(anchor) {
         var pop = document.getElementById('ref-popover');
         if (!pop || !anchor) return;
+        var arrowEl = pop.querySelector('.ref-popover-arrow');
         // Mobile bottom-sheet — pin to the bottom of the viewport.
         if (window.innerWidth <= 640) {
           pop.classList.add('is-mobile');
@@ -5680,6 +5810,10 @@
           pop.style.width = '100%';
           pop.style.maxWidth = '100%';
           pop.style.borderRadius = '16px 16px 0 0';
+          pop.style.boxShadow = '0 -8px 32px rgba(15,23,42,0.18)';
+          // The little arrow only makes sense pointing at an inline anchor
+          // — on mobile bottom sheet there's nothing to point at.
+          if (arrowEl) arrowEl.style.display = 'none';
           pop.removeAttribute('data-placement');
           return;
         }
@@ -5690,6 +5824,8 @@
         pop.style.width = '420px';
         pop.style.maxWidth = 'calc(100vw - 32px)';
         pop.style.borderRadius = '12px';
+        pop.style.boxShadow = '0 18px 38px rgba(15,23,42,0.18), 0 4px 10px rgba(15,23,42,0.08)';
+        if (arrowEl) arrowEl.style.display = '';
 
         // position:fixed → viewport-relative math, no scrollX/scrollY needed.
         var rect = anchor.getBoundingClientRect();
@@ -5762,7 +5898,8 @@
 
         document.getElementById('ref-popover-eyebrow').textContent = 'Reference ' + refNum;
         document.getElementById('ref-popover-body').innerHTML =
-          '<p class="ref-popover-citation">' + citationHtml + '</p>';
+          '<p class="ref-popover-citation" style="margin:0;font-size:inherit;line-height:1.55;color:#1f2937;">' +
+          citationHtml + '</p>';
 
         // Inline button styles — class-based rules from the global <style>
         // are unreliable on dynamically injected nodes (browser extensions
