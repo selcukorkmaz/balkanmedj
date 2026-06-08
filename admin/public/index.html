@@ -547,7 +547,17 @@
     /* Tables — imported from JATS XML, uploaded, or pasted. Without these rules
        an imported <table> renders borderless and looks like jumbled text. */
     [contenteditable] .article-table-wrap { margin: 1em 0; overflow-x: auto; }
-    [contenteditable] .table-label { font-weight: 600; font-size: 0.9rem; margin: 0 0 0.35em; }
+    /* Table caption: styled IDENTICALLY to the article's figure captions, which
+       render as a <p><strong>FIG. N.</strong> …</p> at BODY size/colour/font
+       (only the prefix bold; see the font-weight rules above). So the table
+       label inherits the body text size/colour/family too — NOT a small grey
+       figcaption. The prefix must read as plain text, never a teal/underlined link. */
+    [contenteditable] .table-label { font-size: inherit; color: inherit; font-family: inherit; margin: 0 0 0.35em; text-align: left; }
+    [contenteditable] .table-label a,
+    [contenteditable] figure.article-figure > figcaption a[href^="#figure-"],
+    [contenteditable] figure.article-figure > figcaption a[href^="#fig-"] {
+      color: inherit; text-decoration: none; border-bottom: 0; cursor: text; pointer-events: none;
+    }
     [contenteditable] table {
       border-collapse: collapse;
       width: 100%;
@@ -835,6 +845,8 @@
       display: flex; flex-direction: column; gap: 4px;
       width: 100%;
     }
+    .cr-tab-row { display: flex; align-items: stretch; gap: 4px; width: 100%; }
+    .cr-tab-row .cr-tab-tile { flex: 1; min-width: 0; }
     .cr-tab-tile {
       display: flex; align-items: center; gap: 8px;
       padding: 6px 8px;
@@ -846,6 +858,52 @@
       transition: border-color .12s, background .12s;
     }
     .cr-tab-tile:hover { border-color: var(--brand); background: var(--brand-soft); }
+    /* Trash button for deleting an in-body table from the bubble. */
+    .cr-tab-delete {
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; width: 30px;
+      background: var(--bg-page);
+      border: 1px solid var(--border-soft);
+      border-radius: 5px;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: border-color .12s, background .12s, color .12s;
+    }
+    .cr-tab-delete:hover { border-color: #dc2626; background: #fef2f2; color: #dc2626; }
+    /* Edit (pencil) button for re-editing an in-body table from the bubble. */
+    .cr-tab-edit {
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; width: 30px;
+      background: var(--bg-page);
+      border: 1px solid var(--border-soft);
+      border-radius: 5px;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: border-color .12s, background .12s, color .12s;
+    }
+    .cr-tab-edit:hover { border-color: var(--brand); background: var(--brand-soft); color: var(--brand); }
+    /* Floating toolbar over a hovered figure/table block in the editor:
+       move up / move down / edit / delete. */
+    .media-block-ctl {
+      position: absolute; z-index: 60;
+      display: flex; gap: 2px;
+      padding: 3px;
+      background: #fff;
+      border: 1px solid var(--border-soft);
+      border-radius: 7px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.14);
+    }
+    .media-block-ctl.hidden { display: none; }
+    .media-block-ctl button {
+      display: flex; align-items: center; justify-content: center;
+      width: 26px; height: 26px;
+      border: 1px solid transparent; border-radius: 5px;
+      background: transparent; color: var(--text-muted);
+      font-size: 13px; line-height: 1; cursor: pointer;
+      transition: background .12s, color .12s, border-color .12s;
+    }
+    .media-block-ctl button:hover { background: var(--brand-soft); color: var(--brand); border-color: var(--brand); }
+    .media-block-ctl button[data-mbc="delete"]:hover { background: #fef2f2; color: #dc2626; border-color: #dc2626; }
     .cr-tab-icon {
       font-size: 16px; line-height: 1;
       color: var(--text-muted);

@@ -1538,12 +1538,23 @@ function addExternalLinkRow() {
 }
 
 function authorRow(au, idx) {
+  const isCorr = !!(au.corresponding || au.isCorresponding || au.correspondence);
+  const email = au.email || au.mail || '';
   return `<div class="flex gap-2 items-start p-3 bg-gray-50 rounded-lg author-row" ondragend="this.removeAttribute('draggable')">
     <span class="row-grip" title="Sıralamak için tutup sürükleyin" aria-label="Sürükle" onmousedown="this.closest('.author-row').setAttribute('draggable','true')">${ROW_GRIP_SVG}</span>
-    <div class="flex-1 grid grid-cols-1 md:grid-cols-5 gap-2">
-      <input class="au-name md:col-span-2 px-2 py-1.5 border rounded text-sm" placeholder="Ad Soyad" value="${esc(au.name)}" oninput="markDirty()">
-      <input class="au-aff-idx px-2 py-1.5 border rounded text-sm" placeholder="Kurum no (1 veya 1,2)" value="${esc(au._affIdx || '')}" oninput="markDirty()">
-      <input class="au-orcid md:col-span-2 px-2 py-1.5 border rounded text-sm" placeholder="ORCID" value="${esc(au.orcid)}" oninput="markDirty()">
+    <div class="flex-1 space-y-2">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-2">
+        <input class="au-name md:col-span-2 px-2 py-1.5 border rounded text-sm" placeholder="Ad Soyad" value="${esc(au.name)}" oninput="markDirty()">
+        <input class="au-aff-idx px-2 py-1.5 border rounded text-sm" placeholder="Kurum no (1 veya 1,2)" value="${esc(au._affIdx || '')}" oninput="markDirty()">
+        <input class="au-orcid md:col-span-2 px-2 py-1.5 border rounded text-sm" placeholder="ORCID" value="${esc(au.orcid)}" oninput="markDirty()">
+      </div>
+      <div class="corr-wrap flex items-center gap-2 flex-wrap">
+        <label class="inline-flex items-center gap-1.5 text-xs text-gray-600 cursor-pointer select-none" title="Birden fazla sorumlu yazar seçilebilir">
+          <input type="checkbox" class="au-corr" ${isCorr ? 'checked' : ''} onchange="_toggleCorrEmail(this)">
+          Sorumlu yazar ise tıklayınız
+        </label>
+        <input class="au-email js-corr-email flex-1 px-2 py-1.5 border rounded text-sm" type="email" placeholder="Sorumlu yazar e-posta adresi" value="${esc(email)}" style="min-width:200px;${isCorr ? '' : 'display:none'}" oninput="markDirty()">
+      </div>
     </div>
     <button onclick="this.closest('.author-row').remove(); markDirty();" class="text-red-400 hover:text-red-600 text-lg px-1">&times;</button>
   </div>`;
@@ -1560,11 +1571,16 @@ async function saveArticle(isNew) {
   const affList = _collectAffList(document.getElementById('affiliations-list'), '.aff-text');
   const authors = [];
   document.querySelectorAll('.author-row').forEach((row) => {
-    authors.push({
+    const corresponding = !!row.querySelector('.au-corr')?.checked;
+    const email = corresponding ? (row.querySelector('.au-email')?.value.trim() || '') : '';
+    const author = {
       name: row.querySelector('.au-name').value.trim(),
       affiliation: joinAffiliationsByIdx(row.querySelector('.au-aff-idx').value, affList),
       orcid: row.querySelector('.au-orcid').value.trim(),
-    });
+    };
+    if (corresponding) author.corresponding = true;
+    if (email) author.email = email;
+    authors.push(author);
   });
 
   // Collect supplementary URL entries. Preserve each row's original id (carried
@@ -2977,7 +2993,7 @@ route('/articles-in-press/:id/edit', async (el, { id, query }) => {
 function renderAipForm(el, article, opts = {}) {
   const defaultTab = ['general', 'authors', 'abstract', 'fulltext', 'media'].includes(opts.defaultTab) ? opts.defaultTab : 'general';
   const isNew = !article;
-  const a = article || { id: '', type: '', title: '', authors: [], abstract: '', abstractHtml: '', keywords: [], doi: '', received: '', accepted: '', pmid: '', pdfUrl: '' };
+  const a = article || { id: '', type: '', title: '', authors: [], abstract: '', abstractHtml: '', keywords: [], doi: '', received: '', accepted: '', publishedOnline: '', published: '', pmid: '', pdfUrl: '' };
 
   el.innerHTML = `
     ${pageHeader({
@@ -3001,8 +3017,8 @@ function renderAipForm(el, article, opts = {}) {
       <!-- Tabs -->
       <div class="flex border-b overflow-x-auto" style="border-color:var(--border-soft)">
         <button class="aip-tab-btn px-5 py-3 text-sm font-medium border-b-2 transition-colors" data-tab="general">Genel</button>
-        <button class="aip-tab-btn px-5 py-3 text-sm font-medium border-b-2 transition-colors" data-tab="authors">Yazarlar</button>
         <button class="aip-tab-btn px-5 py-3 text-sm font-medium border-b-2 transition-colors" data-tab="abstract">Özet</button>
+        <button class="aip-tab-btn px-5 py-3 text-sm font-medium border-b-2 transition-colors" data-tab="authors">Yazarlar</button>
         <button class="aip-tab-btn px-5 py-3 text-sm font-medium border-b-2 transition-colors" data-tab="fulltext">Tam Metin</button>
         ${!isNew ? `<button class="aip-tab-btn px-5 py-3 text-sm font-medium border-b-2 transition-colors" data-tab="media">Dosyalar</button>` : ''}
       </div>
@@ -3029,8 +3045,11 @@ function renderAipForm(el, article, opts = {}) {
           <div><label class="label">PMID</label>
             <input id="aipf-pmid" value="${esc(a.pmid || '')}" class="input"></div>
         </div>
-        <div class="mt-4"><label class="label">Anahtar Kelimeler <span class="font-normal" style="color:var(--text-faint)">(virgül ile)</span></label>
-          <input id="aipf-keywords" value="${esc((a.keywords || []).join(', '))}" class="input">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div><label class="label">Epub Tarihi <span class="font-normal" style="color:var(--text-faint)">(çevrimiçi yayın)</span></label>
+            <input id="aipf-published-online" type="date" value="${a.publishedOnline || ''}" class="input"></div>
+          <div><label class="label">Makale Yayın Tarihi</label>
+            <input id="aipf-published" type="date" value="${a.published || ''}" class="input"></div>
         </div>
       </div>
 
@@ -3060,6 +3079,9 @@ function renderAipForm(el, article, opts = {}) {
       <div class="aip-tab-panel p-6 hidden" data-tab="abstract">
         <label class="label">Özet</label>
         ${htmlEditor({ prefix: 'aip-abs', initialHtml: a.abstractHtml || a.abstract || '', rows: 8, placeholder: 'Özet metnini buraya girin', variant: 'compact', minHeight: '180px' })}
+        <div class="mt-4"><label class="label">Anahtar Kelimeler <span class="font-normal" style="color:var(--text-faint)">(virgül ile)</span></label>
+          <input id="aipf-keywords" value="${esc((a.keywords || []).join(', '))}" class="input">
+        </div>
       </div>
 
       <!-- Full Text -->
@@ -3350,6 +3372,39 @@ function _applyAipDocxMetadata(meta) {
   if (abstractHtml) setHtmlEditorContent('aip-abs', abstractHtml);
 }
 
+// Remove placed figure/table blocks whose backing image file no longer exists
+// on disk — orphans left behind when a figure was deleted from Dosyalar before
+// the server learned to strip the block (older data), or via any path that
+// didn't reach the editor. Only touches <img> living under THIS article's image
+// dir whose basename is absent from a freshly-fetched asset list, so external
+// images and live figures are never removed. Marks dirty (not auto-saved) so
+// the user persists the cleanup with the normal "Tam Metni Kaydet". Returns the
+// number of orphan blocks removed.
+async function _pruneOrphanArticleMedia(visual, articleId) {
+  if (!visual || !articleId) return 0;
+  let known;
+  try {
+    const data = await API.get(`/media/article/${articleId}/assets`);
+    known = new Set((data.figures || []).map((f) => String(f.filename || '').toLowerCase()));
+  } catch (_) {
+    return 0; // couldn't verify what's on disk → never remove anything
+  }
+  const marker = (`images/articles/${articleId}/`).toLowerCase();
+  let removed = 0;
+  visual.querySelectorAll('img').forEach((img) => {
+    const src = img.getAttribute('src') || '';
+    if (src.toLowerCase().indexOf(marker) === -1) return; // not this article's figure dir
+    const base = src.split('/').pop().toLowerCase();
+    if (!base || known.has(base)) return; // file still exists → keep
+    const block = img.closest('figure, .article-figure, .article-table-wrap, [id^="figure-"], [id^="table-"], [id^="fig-"], [id^="tab-"]');
+    if (block) { img.remove(); if (!block.querySelector('img')) block.remove(); }
+    else img.remove();
+    removed += 1;
+  });
+  if (removed && typeof _validateCrossRefAnchors === 'function') _validateCrossRefAnchors(visual);
+  return removed;
+}
+
 // Load existing full-text HTML into the AIP editor (prefix 'aip-ft')
 async function loadAipFullTextIntoEditor(articleId) {
   const visual = document.getElementById('aip-ft-visual');
@@ -3371,16 +3426,25 @@ async function loadAipFullTextIntoEditor(articleId) {
         _normalizeMsoReferenceList(visual);
         _promoteMsoHeadings(visual);
         _ensureMediaIds(visual);
+        _normalizeMediaCaptions(visual);
         _autoLinkInEditor(visual);
+        _initMediaBlockControls();
       } finally {
         _suppressDirty = false;
       }
     }
+    let prunedNote = '';
+    if (data.html) {
+      const pruned = await _pruneOrphanArticleMedia(visual, articleId);
+      if (pruned) { markDirty(); prunedNote = ` — ${pruned} kullanılmayan (silinmiş) figür kaldırıldı, kaydedin`; }
+    }
     if (status) {
       status.textContent = data.html
-        ? `Yüklü tam metin uzunluğu: ${data.html.length.toLocaleString('tr-TR')} karakter.`
+        ? `Yüklü tam metin uzunluğu: ${data.html.length.toLocaleString('tr-TR')} karakter.${prunedNote}`
         : 'Tam metin henüz mevcut değil.';
     }
+    _setupFtAutosave('aip-ft', articleId);
+    await _maybeOfferDraftRecovery('aip-ft', articleId, data.html || '');
   } catch (err) {
     if (status) status.textContent = `Tam metin okunamadı: ${err.message}`;
   }
@@ -3398,6 +3462,7 @@ async function saveAipFullText(articleId) {
   try {
     await API.put(`/articles/${articleId}/fulltext`, { html });
     clearDirty();
+    _clearFtDraft('aip-ft', articleId);
     if (status) status.textContent = `Kaydedildi (${html.length.toLocaleString('tr-TR')} karakter).`;
     toast('Tam metin kaydedildi');
   } catch (err) {
@@ -3406,13 +3471,39 @@ async function saveAipFullText(articleId) {
   }
 }
 
+// Toggle the corresponding-author email field on/off when its checkbox flips.
+// Shared by both the published-article and AIP author rows. Each author can be
+// flagged independently, so more than one corresponding author is supported.
+function _toggleCorrEmail(cb) {
+  const wrap = cb.closest('.corr-wrap');
+  if (wrap) {
+    const email = wrap.querySelector('.js-corr-email');
+    if (email) {
+      email.style.display = cb.checked ? '' : 'none';
+      if (cb.checked) { try { email.focus(); } catch (_) {} }
+    }
+  }
+  markDirty();
+}
+
 function aipAuthorRow(au = {}) {
+  const isCorr = !!(au.corresponding || au.isCorresponding || au.correspondence);
+  const email = au.email || au.mail || '';
   return `<div class="aipf-author-row flex gap-2 items-start p-2 bg-gray-50 rounded-lg" ondragend="this.removeAttribute('draggable')">
     <span class="row-grip" title="Sıralamak için tutup sürükleyin" aria-label="Sürükle" onmousedown="this.closest('.aipf-author-row').setAttribute('draggable','true')">${ROW_GRIP_SVG}</span>
-    <div class="flex-1 grid grid-cols-1 md:grid-cols-5 gap-2">
-      <input class="aipf-au-name md:col-span-2 px-2 py-1.5 border rounded text-sm" placeholder="Ad Soyad" value="${esc(au.name || '')}" oninput="markDirty()">
-      <input class="aipf-au-aff-idx px-2 py-1.5 border rounded text-sm" placeholder="Kurum no (1 veya 1,2)" value="${esc(au._affIdx || '')}" oninput="markDirty()">
-      <input class="aipf-au-orcid md:col-span-2 px-2 py-1.5 border rounded text-sm" placeholder="ORCID" value="${esc(au.orcid || '')}" oninput="markDirty()">
+    <div class="flex-1 space-y-2">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-2">
+        <input class="aipf-au-name md:col-span-2 px-2 py-1.5 border rounded text-sm" placeholder="Ad Soyad" value="${esc(au.name || '')}" oninput="markDirty()">
+        <input class="aipf-au-aff-idx px-2 py-1.5 border rounded text-sm" placeholder="Kurum no (1 veya 1,2)" value="${esc(au._affIdx || '')}" oninput="markDirty()">
+        <input class="aipf-au-orcid md:col-span-2 px-2 py-1.5 border rounded text-sm" placeholder="ORCID" value="${esc(au.orcid || '')}" oninput="markDirty()">
+      </div>
+      <div class="corr-wrap flex items-center gap-2 flex-wrap">
+        <label class="inline-flex items-center gap-1.5 text-xs text-gray-600 cursor-pointer select-none" title="Birden fazla sorumlu yazar seçilebilir">
+          <input type="checkbox" class="aipf-au-corr" ${isCorr ? 'checked' : ''} onchange="_toggleCorrEmail(this)">
+          Sorumlu yazar ise tıklayınız
+        </label>
+        <input class="aipf-au-email js-corr-email flex-1 px-2 py-1.5 border rounded text-sm" type="email" placeholder="Sorumlu yazar e-posta adresi" value="${esc(email)}" style="min-width:200px;${isCorr ? '' : 'display:none'}" oninput="markDirty()">
+      </div>
     </div>
     <button type="button" onclick="this.closest('.aipf-author-row').remove(); markDirty();" class="text-red-400 hover:text-red-600 text-lg px-1">&times;</button>
   </div>`;
@@ -3433,9 +3524,17 @@ async function saveAip(isNew) {
     const name = row.querySelector('.aipf-au-name').value.trim();
     const affIdx = row.querySelector('.aipf-au-aff-idx').value.trim();
     const orcid = row.querySelector('.aipf-au-orcid').value.trim();
+    const corresponding = !!row.querySelector('.aipf-au-corr')?.checked;
+    const email = corresponding ? (row.querySelector('.aipf-au-email')?.value.trim() || '') : '';
     const affiliation = joinAffiliationsByIdx(affIdx, affList);
     if (!name && !affiliation && !orcid) return;
-    authors.push({ name, affiliation, orcid });
+    const author = { name, affiliation, orcid };
+    // Only persist the corresponding flag / email when set, so non-corresponding
+    // authors stay clean and the public site (which reads a.corresponding /
+    // a.email and supports multiple) renders the * + mailto only where intended.
+    if (corresponding) author.corresponding = true;
+    if (email) author.email = email;
+    authors.push(author);
   });
 
   const abstractHtml = getHtmlEditorContent('aip-abs');
@@ -3478,6 +3577,8 @@ async function saveAip(isNew) {
     doi: getVal('aipf-doi'),
     received: getVal('aipf-received'),
     accepted: getVal('aipf-accepted'),
+    publishedOnline: getVal('aipf-published-online'),
+    published: getVal('aipf-published'),
     pmid: getVal('aipf-pmid'),
     abstractHtml,
     abstract,
@@ -3786,8 +3887,17 @@ function htmlEditorToolbar(prefix, variant = 'full') {
     parts.push(`<button type="button" onclick="htmlEditorInsertTable('${prefix}')" title="Tablo ekle (kod yazmadan satır/sütun seç)" class="px-2 py-1 rounded hover:bg-teal-50 text-teal-700 text-xs font-medium flex items-center gap-1.5">${tableIcon}<span>Tablo Ekle</span></button>`);
     parts.push(`<button type="button" onclick="openFigurePicker('${prefix}')" title="Yüklü figürlerden tam metne ekle" class="px-2 py-1 rounded hover:bg-teal-50 text-teal-700 text-xs font-medium flex items-center gap-1.5">${figIcon}<span>Figür</span></button>`);
     parts.push(`<button type="button" onclick="openSupplementaryPicker('${prefix}')" title="Ek materyal ekle (yüklü dosyalardan seç)" class="px-2 py-1 rounded hover:bg-teal-50 text-teal-700 text-xs font-medium flex items-center gap-1.5">${suppIcon}<span>Ek Materyal</span></button>`);
+    const crIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path stroke-linecap="round" stroke-linejoin="round" d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>';
+    parts.push(`<button type="button" onmousedown="event.preventDefault()" onclick="openCrossRefMenu('${prefix}')" title="Atıf/bağlantı ekle — figür, tablo veya kaynak ekle/bağla (metin seçince de açılır)" class="px-2 py-1 rounded hover:bg-teal-50 text-teal-700 text-xs font-medium flex items-center gap-1.5">${crIcon}<span>Atıf / Bağlantı</span></button>`);
     const autoIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>';
     parts.push(`<button type="button" onclick="_autoArrangeFullText('${prefix}')" title="Dosyalar bölümündeki figür/tabloları metin içine yerleştir, kaynak atıflarını otomatik bağla" class="px-2 py-1 rounded hover:bg-amber-50 text-amber-700 text-xs font-semibold flex items-center gap-1.5" style="border:1px solid color-mix(in oklab, #f59e0b 30%, transparent);background:color-mix(in oklab, #f59e0b 8%, transparent)">${autoIcon}<span>Otomatik Düzenle</span></button>`);
+    parts.push(sep);
+    const mediaIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path stroke-linecap="round" stroke-linejoin="round" d="M3 9h18"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 4v16"/></svg>';
+    parts.push(`<button type="button" onclick="_openMediaManager('${prefix}')" title="Tüm figür/tabloları tek ekranda yönet: etiket, başlık, durum" class="px-2 py-1 rounded hover:bg-teal-50 text-teal-700 text-xs font-medium flex items-center gap-1.5">${mediaIcon}<span>Medya</span></button>`);
+    const checkIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>';
+    parts.push(`<button type="button" onclick="_runPreflight('${prefix}')" title="Yayın öncesi kontrol: kırık atıf, yerleştirilmemiş/atıfsız figür, atıfsız kaynak, boş başlık" class="px-2 py-1 rounded hover:bg-teal-50 text-teal-700 text-xs font-medium flex items-center gap-1.5">${checkIcon}<span>Kontrol</span></button>`);
+    const eyeIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>';
+    parts.push(`<button type="button" onclick="_openReaderPreview('${prefix}')" title="Okuyucu önizlemesi — yayındaki görünümü göster" class="px-2 py-1 rounded hover:bg-teal-50 text-teal-700 text-xs font-medium flex items-center gap-1.5">${eyeIcon}<span>Önizleme</span></button>`);
   }
 
   parts.push(sep);
@@ -3861,6 +3971,25 @@ function buildEditorTableHtml(rows, cols, hasHeader) {
 }
 
 function htmlEditorInsertTable(prefix) {
+  const visual = document.getElementById(prefix + '-visual');
+  // Capture the editor caret NOW — opening the dialog moves focus and would
+  // otherwise lose the insertion point.
+  let stashRange = null;
+  const sel0 = window.getSelection();
+  if (visual && sel0 && sel0.rangeCount) {
+    const r0 = sel0.getRangeAt(0);
+    if (visual.contains(r0.commonAncestorContainer)) stashRange = r0.cloneRange();
+  }
+
+  // Pre-compute the AUTO default label ("Table N") from existing tables so the
+  // Etiket field shows the number this table would get automatically.
+  let dlgNextNum = 1;
+  try {
+    const t0 = _scanCrossRefTargets(prefix);
+    dlgNextNum = (t0.tables && t0.tables.length) ? Math.max(...t0.tables.map((t) => t.num)) + 1 : 1;
+  } catch { dlgNextNum = 1; }
+  const tblAutoDefault = `Table ${dlgNextNum}`;
+
   const overlay = document.createElement('div');
   overlay.className = 'modal-overlay';
   overlay.innerHTML = `
@@ -3873,6 +4002,11 @@ function htmlEditorInsertTable(prefix) {
       </div>
       <div class="px-6 py-4 space-y-3">
         <p class="text-xs" style="color:var(--text-muted)">Satır ve sütun sayısını seçin; tablo imlecin bulunduğu yere eklenir. Hücreleri doğrudan tıklayarak düzenleyebilirsiniz.</p>
+        <div><label class="label">Etiket</label>
+          <input id="tbl-label" class="input" placeholder="Table 1" value="${esc(tblAutoDefault)}" data-auto-default="${esc(tblAutoDefault)}">
+          <p class="text-xs mt-1" style="color:var(--text-faint)">Başlığın başında <strong>kalın</strong> görünür (ör. <strong>Tablo 1a</strong>). Değiştirmezseniz otomatik numaralanır.</p></div>
+        <div><label class="label">Tablo başlığı <span class="font-normal" style="color:var(--text-faint)">(opsiyonel)</span></label>
+          <input id="tbl-caption" class="input" placeholder="Örn. Hastaların temel özellikleri"></div>
         <div class="flex gap-3">
           <div class="flex-1"><label class="label">Satır</label><input id="tbl-rows" type="number" min="1" max="30" value="3" class="input"></div>
           <div class="flex-1"><label class="label">Sütun</label><input id="tbl-cols" type="number" min="1" max="12" value="3" class="input"></div>
@@ -3896,8 +4030,53 @@ function htmlEditorInsertTable(prefix) {
     const rows = Number(overlay.querySelector('#tbl-rows').value) || 3;
     const cols = Number(overlay.querySelector('#tbl-cols').value) || 3;
     const hasHeader = overlay.querySelector('#tbl-header').checked;
+    const caption = (overlay.querySelector('#tbl-caption').value || '').trim();
+    // B rule: lock the label only if changed from the auto default.
+    const labelEl = overlay.querySelector('#tbl-label');
+    const labelVal = labelEl ? labelEl.value.trim() : '';
+    const autoDef  = labelEl ? (labelEl.dataset.autoDefault || '') : '';
+    const manualLabel = (labelVal && labelVal !== autoDef) ? labelVal : '';
+    // Re-derive the number at insert time (the editor may have changed).
+    let nextNum = dlgNextNum;
+    try {
+      const t = _scanCrossRefTargets(prefix);
+      nextNum = (t.tables && t.tables.length) ? Math.max(...t.tables.map((x) => x.num)) + 1 : 1;
+    } catch { /* keep dlgNextNum */ }
     close();
-    htmlEditorInsertHtml(prefix, buildEditorTableHtml(rows, cols, hasHeader));
+    // Wrap the empty grid as a numbered #table-N block so it participates in
+    // cross-referencing/numbering like every other table (the bare-table output
+    // had no wrap/label and was invisible to cross-refs). Build it as a DOM node
+    // and insert it directly — execCommand('insertHTML') mangles a wrap <div>
+    // with a nested <p> + <table> (it drops the <p class="table-label">).
+    const blockNode = document.createElement('div');
+    blockNode.className = 'article-table-wrap';
+    blockNode.id = `table-${nextNum}`;
+    if (manualLabel) blockNode.setAttribute('data-label', manualLabel.replace(/[.\s]+$/, ''));
+    blockNode.innerHTML =
+      `<p class="table-label" contenteditable="false">${_tableLabelHtml(nextNum, esc(caption), manualLabel)}</p>` +
+      buildEditorTableHtml(rows, cols, hasHeader);
+
+    if (!visual) { toast('Editör bulunamadı', 'warning'); return; }
+    visual.focus();
+    let hostBlock = null;
+    if (stashRange) {
+      let node = stashRange.startContainer;
+      if (node && node.nodeType === 3) node = node.parentNode;
+      hostBlock = node && node.closest ? node.closest('p, div, li, h1, h2, h3, h4, h5, h6, blockquote, figure, table') : null;
+      while (hostBlock && hostBlock.parentNode && hostBlock.parentNode !== visual) hostBlock = hostBlock.parentNode;
+    }
+    if (hostBlock && hostBlock.parentNode === visual) {
+      const isEmptyHost = /^(P|DIV)$/.test(hostBlock.tagName)
+        && !(hostBlock.textContent || '').trim()
+        && !hostBlock.querySelector('img, table');
+      if (isEmptyHost) hostBlock.parentNode.replaceChild(blockNode, hostBlock);
+      else hostBlock.parentNode.insertBefore(blockNode, hostBlock.nextSibling);
+    } else {
+      visual.appendChild(blockNode);
+    }
+    markDirty();
+    if (typeof _validateCrossRefAnchors === 'function') _validateCrossRefAnchors(visual);
+    if (typeof _autoLinkInEditor === 'function') _autoLinkInEditor(visual);
     toast('Tablo eklendi');
   };
 }
@@ -4055,6 +4234,34 @@ async function openFigureInsertDialog(url, filename) {
     defaultCaption = (filename || '').replace(/\.[^.]+$/, '');
   }
 
+  // Manual label support: pre-compute the AUTO default ("Figure N" / "Table N")
+  // exactly as insertFigureIntoFullText would derive the number, so the Etiket
+  // field shows the same value the block would get automatically. The user can
+  // overwrite it ("Figür 2a", "Graphic 3") — that locks the label (B rule).
+  const isTableFile = /(?:^|[-_])tab(?:le)?[-_]?\d+/i.test(filename || '');
+  const labelKind = isTableFile ? 'table' : 'figure';
+  let autoNum = null;
+  // If this figure/table is ALREADY placed in the editor, use that block's
+  // number for the default label (we're editing it, not adding a new one).
+  if (prefix) {
+    const ftV = document.getElementById(prefix + '-visual');
+    const placed = ftV ? _findMediaBlockByFilename(ftV, filename) : null;
+    if (placed) { const pm = placed.id.match(/-(\d+)$/); if (pm) autoNum = Number(pm[1]); }
+  }
+  const numMeta = _extractMediaNum(filename, labelKind);
+  if (!autoNum && numMeta && numMeta.num) autoNum = numMeta.num;
+  if (!autoNum && prefix) {
+    try {
+      const t = _scanCrossRefTargets(prefix);
+      const ex = (labelKind === 'figure' ? t.figures : t.tables) || [];
+      autoNum = ex.length ? Math.max(...ex.map((x) => x.num)) + 1 : 1;
+    } catch { autoNum = 1; }
+  }
+  if (!autoNum) autoNum = 1;
+  const autoDefaultLabel = (isTableFile ? 'Table ' : 'FIG. ') + autoNum;
+  const hadSavedLabel = typeof savedMeta.label === 'string' && savedMeta.label.trim() !== '';
+  const defaultLabel = hadSavedLabel ? savedMeta.label.trim() : autoDefaultLabel;
+
   // Size preference: 'auto' (system decides at insert time from image natural
   // dimensions), 'small' / 'medium' / 'large' / 'full' (manual override).
   // The dialog UI keeps live state in `currentSize` and surfaces what 'auto'
@@ -4093,8 +4300,12 @@ async function openFigureInsertDialog(url, filename) {
             <img src="/site/${esc(url)}" alt="" style="max-width:100%;max-height:100%;object-fit:contain" onerror="this.parentNode.style.background='var(--bg-subtle)'">
           </div>
           <div style="flex:1;min-width:0">
+            <label class="block text-xs font-semibold mb-1.5" style="color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em">Etiket</label>
+            <input id="fig-dlg-label" class="input w-full" style="font-family:inherit" placeholder="Figure 1" autocomplete="off"
+              value="${esc(defaultLabel)}" data-auto-default="${esc(autoDefaultLabel)}">
+            <p class="text-xs mt-1 mb-2.5" style="color:var(--text-faint)">Açıklamanın başında <strong>kalın</strong> görünecek etiket (ör. <strong>Figür 2a</strong>, <strong>Graphic 3</strong>). Değiştirmezseniz otomatik numaralanır.</p>
             <label class="block text-xs font-semibold mb-1.5" style="color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em">Figür Açıklaması</label>
-            <textarea id="fig-dlg-caption" class="input w-full" rows="3" style="resize:vertical;font-family:inherit" placeholder="Figure 1. Açıklama metni. Kaynak atıfı için [3] gibi yazın veya aşağıdaki butonları kullanın." autocomplete="off">${esc(defaultCaption)}</textarea>
+            <textarea id="fig-dlg-caption" class="input w-full" rows="3" style="resize:vertical;font-family:inherit" placeholder="Açıklama metni (etiketi yukarıdaki kutuya yazın). Kaynak atıfı için [3] gibi yazın veya aşağıdaki butonları kullanın." autocomplete="off">${esc(defaultCaption)}</textarea>
             <p class="text-xs mt-1" style="color:var(--text-faint)">Kaynak atıflarını <strong>[3]</strong>, <strong>[5,7]</strong> biçiminde yazın — kaydedildiğinde tıklanabilir bağlantıya dönüşür.</p>
           </div>
         </div>
@@ -4148,6 +4359,7 @@ async function openFigureInsertDialog(url, filename) {
   document.body.appendChild(overlay);
 
   const captionInput = overlay.querySelector('#fig-dlg-caption');
+  const labelInput   = overlay.querySelector('#fig-dlg-label');
   const manualN      = overlay.querySelector('#fig-dlg-manual-n');
 
   // Helper: insert [N] at cursor in caption field
@@ -4216,8 +4428,15 @@ async function openFigureInsertDialog(url, filename) {
 
   return new Promise((resolve) => {
     const close = async (action) => {
-      // Read value BEFORE removing the overlay (detached inputs may clear)
+      // Read values BEFORE removing the overlay (detached inputs may clear)
       const captionVal = captionInput.value.trim();
+      // B rule: treat the label as LOCKED (manual) only when the user changed it
+      // from the prefilled auto default — OR when a manual label was already saved
+      // before (so re-opening and re-saving keeps the lock). Empty / unchanged
+      // default ⇒ AUTO (sent as '' to clear any previous lock).
+      const labelVal = labelInput ? labelInput.value.trim() : '';
+      const autoDef  = labelInput ? (labelInput.dataset.autoDefault || '') : '';
+      const manualLabel = (labelVal && (labelVal !== autoDef || hadSavedLabel)) ? labelVal : '';
 
       if (action !== 'cancel') {
         const btn = overlay.querySelector(`[data-action="${action}"]`);
@@ -4243,6 +4462,7 @@ async function openFigureInsertDialog(url, filename) {
             caption: captionVal,
             source:  '',
             size:    currentSize,
+            label:   manualLabel,
           });
         } catch (err) {
           toast(`Kayıt hatası: ${err.message}`, 'error');
@@ -4255,13 +4475,40 @@ async function openFigureInsertDialog(url, filename) {
       }
 
       if (action === 'save') {
-        toast('Figür açıklaması kaydedildi. Tam Metin sekmesinden "Otomatik Düzenle" ile metne yansıtın.');
+        // Auto-sync: if this figure/table is ALREADY placed in the full-text
+        // editor, update its label/caption/size in place right away so the user
+        // doesn't have to run "Otomatik Düzenle" for an edit. Only the block's
+        // caption is touched (image + position kept).
+        let synced = false;
+        const ftVisual = document.getElementById('ft-visual') || document.getElementById('aip-ft-visual');
+        const block = ftVisual ? _findMediaBlockByFilename(ftVisual, filename) : null;
+        if (block) {
+          const bKind = block.tagName === 'FIGURE' ? 'figure' : 'table';
+          const bm = block.id.match(/-(\d+)$/);
+          const bNum = bm ? Number(bm[1]) : (autoNum || 1);
+          if (manualLabel) block.setAttribute('data-label', manualLabel.replace(/[.\s]+$/, ''));
+          else block.removeAttribute('data-label');
+          const stripped = captionVal.replace(
+            new RegExp(`^\\s*(?:figure|fig\\.?|şekil|sekil|tablo|table)\\s*${bNum}[a-z]?\\s*[.:\\-—–]?\\s*`, 'i'),
+            ''
+          ).trim();
+          const inner = _captionToHtml(stripped);
+          const concrete = (currentSize === 'auto') ? autoResolvedSize : currentSize;
+          _updateExistingMediaCaption(block, bKind, bNum, inner, concrete);
+          if (typeof _autoLinkInEditor === 'function') _autoLinkInEditor(ftVisual);
+          if (typeof _validateCrossRefAnchors === 'function') _validateCrossRefAnchors(ftVisual);
+          markDirty();
+          synced = true;
+        }
+        toast(synced
+          ? 'Figür kaydedildi ve tam metindeki başlık/açıklama otomatik güncellendi.'
+          : 'Figür açıklaması kaydedildi. Tam Metin sekmesinden "Otomatik Düzenle" ile metne yansıtın.');
         resolve('saved');
         return;
       }
 
       // action === 'insert'
-      insertFigureIntoFullText(url, filename, captionVal, concreteSize);
+      insertFigureIntoFullText(url, filename, captionVal, concreteSize, manualLabel);
       resolve(true);
     };
 
@@ -4457,6 +4704,13 @@ function _promoteMsoHeadings(visualEl) {
     // _findRefHeading which accepts <p>/<b> too) — leave it alone.
     if (/^(references?|bibliography|kaynaklar|kaynakça|referanslar|kaynak\s*listesi)$/i.test(text)) return;
 
+    // Table/figure captions are bold + short + Title Case so they look
+    // heading-like, but they must stay caption paragraphs — never promote a
+    // "Table N." / "Figure N." / "Şekil N." line to an <h3> (it would render
+    // oversized and get a self-referential cross-ref link). _normalizeMediaCaptions
+    // adopts these into their media block as the canonical bold label instead.
+    if (/^\s*(?:tables?|tablolar?|tablo|tab|figures?|figs?|şekiller?|şekil|sekil|fig)\b\s*\.?\s*\d+/i.test(text)) return;
+
     const h3 = document.createElement('h3');
     h3.textContent = _toTitleCase(text);
     p.parentNode.replaceChild(h3, p);
@@ -4555,6 +4809,30 @@ function _normalizeMsoReferenceList(visualEl) {
   items.forEach((p) => p.remove());
   if (typeof markDirty === 'function') markDirty();
   return true;
+}
+
+// Heal partially-linked sub-figure references: an <a class="article-media-ref-link">
+// whose text ends in a digit (e.g. "Table 1"), immediately followed by a plain-text
+// node beginning with a single sub-figure letter that is NOT part of a word
+// ("a)", "b,", "c " — but never "are"), gets that letter absorbed into the anchor
+// → "Table 1a". Fixes manually-inserted refs and links made before the block got
+// its sub-letter. Idempotent (anchors already ending in a letter are skipped).
+function _extendMediaRefSubletters(root) {
+  if (!root || !root.querySelectorAll) return false;
+  let changed = false;
+  root.querySelectorAll('a.article-media-ref-link').forEach((a) => {
+    const txt = a.textContent || '';
+    if (!/\d$/.test(txt)) return;                 // anchor must end in a digit
+    const sib = a.nextSibling;
+    if (!sib || sib.nodeType !== 3) return;       // next node must be plain text
+    const val = sib.nodeValue || '';
+    const m = val.match(/^([A-Za-z])(?![A-Za-z])/); // single letter, not a word start
+    if (!m) return;
+    a.textContent = txt + m[1];
+    sib.nodeValue = val.slice(1);
+    changed = true;
+  });
+  return changed;
 }
 
 // Walk the editor body and auto-link any plain-text mentions of figures,
@@ -4703,6 +4981,13 @@ function _autoLinkInEditor(visualEl) {
     textNode.parentNode.replaceChild(frag, textNode);
     mutated = true;
   });
+
+  // Pass 1b — heal PARTIAL media links: an anchor whose text ends in a digit
+  // ("Table 1") immediately followed by a stray sub-figure letter in plain text
+  // ("a)" → the "a" wasn't linked). Absorb the trailing letter into the anchor
+  // so the whole "Table 1a" is clickable. Covers manually-inserted refs and
+  // links created before a table/figure gained its sub-letter.
+  if (_extendMediaRefSubletters(visualEl)) mutated = true;
 
   // Pass 2 — wrap bare-digit <sup>N</sup> citations in ref-N anchors.
   if (refCount) {
@@ -4888,6 +5173,7 @@ function _scanCrossRefTargets(prefix) {
   _ensureMediaIds(visual);
   _normalizeMsoReferenceList(visual);
   _promoteMsoHeadings(visual);
+  _normalizeMediaCaptions(visual);
   _autoLinkInEditor(visual);
   // Re-validate any previously-inserted cross-refs: a link that was
   // "broken" because the target hadn't been created yet should now light
@@ -4925,6 +5211,10 @@ function _scanCrossRefTargets(prefix) {
     if (el.tagName === 'A') return;
     const m = el.id.match(/^(?:table|tab)-(\d+)$/i);
     if (!m) return;
+    // Skip phantom wraps with no actual <table>/<img>: they're usually a section
+    // heading absorbed into a table-wrap and must NOT inflate the next-table
+    // number or appear in the cross-ref picker.
+    if (!el.querySelector('table, img')) return;
     const num = Number(m[1]);
     if (tabMap.has(num)) return;
     // Prefer an explicit .table-label, fall back to first <p> with bold text.
@@ -4969,22 +5259,52 @@ function _scanCrossRefTargets(prefix) {
   // bubble reflects "what's available", not just "what's been placed".
   const cached = (typeof window !== 'undefined') ? window._articleAssets : null;
   if (cached && Array.isArray(cached.figures)) {
-    cached.figures.forEach((f) => {
-      const isTable = /(?:^|[-_])tab(?:le)?[-_]?\d+/i.test(f.filename || '');
-      const kind = isTable ? 'table' : 'figure';
-      const meta = (typeof _extractMediaNum === 'function') ? _extractMediaNum(f.filename, kind) : null;
-      if (!meta || !meta.num) return;
-      const num = meta.num;
-      // Show one tile per N — sub-panels (1A, 1B) collapse into a single
-      // bubble entry; the inserted anchor still points at #figure-N.
-      const captionExtra = meta.panel ? ` (panel ${meta.panel.toUpperCase()})` : '';
-      if (kind === 'figure') {
-        if (figMap.has(num)) return; // already in body
-        figMap.set(num, { num, id: `figure-${num}`, thumbnail: f.url, caption: (f.filename || '') + captionExtra, pending: true });
-      } else {
-        if (tabMap.has(num)) return;
-        tabMap.set(num, { num, id: `table-${num}`, label: (f.filename || '') + captionExtra, pending: true });
-      }
+    // Resolve the uploaded files into ordered, distinctly-numbered blocks using
+    // the SAME logic Otomatik Düzenle uses — so every uploaded figure shows up,
+    // in upload order, and the number shown here matches the block that will be
+    // placed. (Previously this parsed numbers straight from filenames, which
+    // silently dropped unparseable files and collided same-numbered ones — the
+    // "only the first figure shows / wrong order" bug.)
+    // Basenames of images already rendered by a body figure/table block — so a
+    // disk file that is ALREADY placed (possibly under a different number, e.g.
+    // via the inline "Yeni Figür" upload which numbers by editor position while
+    // the resolver numbers by disk upload order) is never surfaced a second
+    // time as a ghost chip.
+    const placedSrcs = new Set();
+    root.querySelectorAll('figure img, [id^="table-"] img, [id^="tab-"] img').forEach((img) => {
+      const base = (img.getAttribute('src') || '').split('/').pop();
+      if (base) placedSrcs.add(base.toLowerCase());
+    });
+    const anyPanelPlaced = (blk) => (blk.panels || []).some((p) => {
+      const base = (p.filename || '').toLowerCase();
+      return base && placedSrcs.has(base);
+    });
+
+    const resolved = _resolveMediaSequence(cached.figures);
+    resolved.figure.forEach((blk) => {
+      if (figMap.has(blk.num)) return; // already placed in the body (by number)
+      if (anyPanelPlaced(blk)) return; // already placed in the body (by file)
+      const first = blk.panels[0] || {};
+      const captionExtra = blk.panels.length > 1 ? ` (${blk.panels.length} panel)` : '';
+      figMap.set(blk.num, {
+        num: blk.num,
+        id: `figure-${blk.num}`,
+        thumbnail: first.url || '',
+        caption: (first.filename || '') + captionExtra,
+        pending: true,
+      });
+    });
+    resolved.table.forEach((blk) => {
+      if (tabMap.has(blk.num)) return;
+      if (anyPanelPlaced(blk)) return;
+      const first = blk.panels[0] || {};
+      const captionExtra = blk.panels.length > 1 ? ` (${blk.panels.length} panel)` : '';
+      tabMap.set(blk.num, {
+        num: blk.num,
+        id: `table-${blk.num}`,
+        label: (first.filename || '') + captionExtra,
+        pending: true,
+      });
     });
   }
 
@@ -5038,8 +5358,8 @@ function openCrossRefPicker(prefix) {
         </button>
       </div>
       <div class="px-6 py-4">
-        ${list('Figürler', 'figure', targets.figures)}
-        ${list('Tablolar', 'table', targets.tables)}
+        ${list('Figürler', 'figure', targets.figures.map((f) => f.num))}
+        ${list('Tablolar', 'table', targets.tables.map((t) => t.num))}
         ${refList}
         <div class="banner banner-info" style="padding:8px 10px;font-size:11.5px;margin-top:8px">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
@@ -5118,7 +5438,12 @@ function insertCrossRef(prefix, kind, num) {
     html = `<sup><a href="#ref-${num}" class="article-ref-citation${exists ? '' : ' article-ref-broken'}"${brokenAttrs}>${inner}</a></sup>`;
   } else {
     const targetId = kind === 'figure' ? `figure-${num}` : `table-${num}`;
-    const defaultLabel = kind === 'figure' ? `Figure ${num}` : `Table ${num}`;
+    // Default reference text mirrors the TARGET's visible label so a sub-lettered
+    // block ("Table 1a", "Graphic 3") inserts as the full label, not "Table 1".
+    let defaultLabel = kind === 'figure' ? `FIG. ${num}` : `Table ${num}`;
+    const targetBlock = visual ? visual.querySelector('#' + (kind === 'figure' ? 'figure-' : 'table-') + num) : null;
+    const targetManual = _blockManualLabel(targetBlock);
+    if (targetManual) defaultLabel = targetManual;
     const inner = selectedText.trim() || defaultLabel;
     html = `<a href="#${targetId}" class="article-media-ref-link${exists ? '' : ' article-ref-broken'}"${brokenAttrs}>${inner}</a>`;
   }
@@ -5155,12 +5480,95 @@ function ensureCrossRefBubble() {
   return bubble;
 }
 
+// When the cross-ref bubble is opened from the toolbar button (not from a text
+// selection) we "pin" it so the selectionchange listener's collapsed-selection
+// auto-hide doesn't immediately close it. Any real dismiss clears the pin.
+let _crossRefBubblePinned = false;
+
 function hideCrossRefBubble() {
+  _crossRefBubblePinned = false;
   const bubble = document.getElementById('cr-bubble');
   if (bubble) {
     bubble.classList.add('hidden');
     bubble.removeAttribute('data-prefix');
   }
+}
+
+// ── Manual figure/table label support ──
+// The visible caption prefix ("Figure N." / "Table N.") is normally auto-built
+// from the integer index. When the editor types a custom label in the dialog
+// (e.g. "Figür 2a", "Graphic 3") the block is marked LOCKED via a `data-label`
+// attribute and the prefix is rendered verbatim instead of auto-numbered.
+//   • data-label PRESENT  ⇒ LOCKED (manual): use the verbatim text, never renumber.
+//   • data-label ABSENT   ⇒ AUTO: keep the dynamic "Figure N." / "Table N." behavior.
+
+// Render a verbatim manual label as the bold caption prefix. Strips any trailing
+// dots/spaces and adds exactly one "." so "Graphic 3" and "Graphic 3." both yield
+// "Graphic 3." (idempotent — no "3.." on re-render).
+function _renderLabelPrefix(rawLabel) {
+  const t = String(rawLabel || '').trim().replace(/[.\s]+$/, '');
+  return t ? `<strong>${esc(t)}.</strong>` : '';
+}
+
+// Return a block's locked manual label, or null when the block is AUTO.
+function _blockManualLabel(block) {
+  if (!block || !block.hasAttribute || !block.hasAttribute('data-label')) return null;
+  const v = (block.getAttribute('data-label') || '').trim();
+  return v || null;
+}
+
+// Find the placed figure/table block in an editor whose image matches a given
+// uploaded filename (by basename) — used to auto-sync the full text when a
+// figure's label/caption is edited in the Dosyalar pop-up.
+function _findMediaBlockByFilename(visual, filename) {
+  if (!visual || !filename) return null;
+  const base = String(filename).split('/').pop().toLowerCase();
+  if (!base) return null;
+  const imgs = visual.querySelectorAll(
+    'figure[id^="figure-"] img, figure[id^="fig-"] img, ' +
+    '.article-table-wrap[id^="table-"] img, .article-table-wrap[id^="tab-"] img'
+  );
+  for (const img of imgs) {
+    const src = (img.getAttribute('src') || '').split('/').pop().toLowerCase();
+    if (src === base) return img.closest('figure, .article-table-wrap');
+  }
+  return null;
+}
+
+// Build the "Table N." caption label shared by every table block creator.
+// Matches the FIGURE caption convention: ONLY the "Table N." prefix is bold
+// (wrapped in <strong>), the caption text after it stays normal weight — and the
+// .table-label CSS gives it the same small/grey, sans-serif size+style as figure
+// captions. The prefix is plain text (never an anchor) so it isn't a link.
+// When `manualLabel` is supplied (a LOCKED table) its verbatim text replaces the
+// auto "Table N." prefix; the redundant-prefix strip on `cap` still runs.
+function _tableLabelHtml(num, captionInnerHtml, manualLabel) {
+  let cap = (captionInnerHtml == null ? '' : String(captionInnerHtml)).trim();
+  // Defensively strip any leading "Table N." the caption ALREADY carries so the
+  // prefix is never doubled ("Table 1. Table 1. …"). This happens when a caption
+  // that already includes its label is passed in — e.g. the user typed it into
+  // the popup, or Otomatik Düzenle re-labels a block whose text starts with the
+  // number. Tolerates an optional leading <strong>/<b>/<span> wrapper.
+  cap = cap.replace(
+    /^\s*(?:<(?:strong|b|span)\b[^>]*>\s*)?(?:tables?|tablolar?|tablo|tab)\b\s*\.?\s*\d+[a-z]?\s*[.:\-–—]?\s*(?:<\/(?:strong|b|span)>\s*)?/i,
+    ''
+  ).trim();
+  const manual = (manualLabel != null && String(manualLabel).trim()) ? String(manualLabel).trim().replace(/[.\s]+$/, '') : '';
+  // For a LOCKED table also strip a leading copy of the verbatim manual label
+  // (e.g. "Çizelge 5.") the caption may already carry — otherwise re-processing
+  // a locked block (normalize / refresh) doubles the prefix. The auto "Table N."
+  // strip above only matches recognised keywords, not free-form labels.
+  if (manual) {
+    const reManual = new RegExp(
+      '^\\s*(?:<(?:strong|b|span)\\b[^>]*>\\s*)?' +
+      manual.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') +
+      '\\s*[.:\\-–—]?\\s*(?:<\\/(?:strong|b|span)>\\s*)?',
+      'i'
+    );
+    cap = cap.replace(reManual, '').trim();
+  }
+  const prefix = manual ? _renderLabelPrefix(manual) : `<strong>Table ${num}.</strong>`;
+  return cap ? `${prefix} ${cap}` : prefix;
 }
 
 function _renderCrossRefBubble(prefix) {
@@ -5200,16 +5608,25 @@ function _renderCrossRefBubble(prefix) {
       <span class="cr-fig-caption">${esc(truncate(f.caption, 36) || 'Figure ' + f.num)}</span>
     </button>`;
 
-  // Tables don't have a usable thumbnail; show an icon + label.
+  // Tables don't have a usable thumbnail; show an icon + label. In-body tables
+  // (not "pending" disk uploads) also get a trash button to delete the block.
   const tabTile = (t) => `
-    <button type="button" class="cr-tab-tile${t.pending ? ' cr-tile-pending' : ''}" data-kind="table" data-num="${t.num}"
-      title="Table ${t.num}${t.label ? ' — ' + esc(t.label) : ''}${t.pending ? ' (henüz metne yerleştirilmedi)' : ''}">
-      <span class="cr-tab-icon">▦</span>
-      <span class="cr-tab-text">
-        <span class="cr-tab-num">Table ${t.num}${t.pending ? ' ' + pendingBadge : ''}</span>
-        <span class="cr-tab-label">${esc(truncate(t.label || '—', 56))}</span>
-      </span>
-    </button>`;
+    <div class="cr-tab-row">
+      <button type="button" class="cr-tab-tile${t.pending ? ' cr-tile-pending' : ''}" data-kind="table" data-num="${t.num}"
+        title="Table ${t.num}${t.label ? ' — ' + esc(t.label) : ''}${t.pending ? ' (henüz metne yerleştirilmedi)' : ''}">
+        <span class="cr-tab-icon">▦</span>
+        <span class="cr-tab-text">
+          <span class="cr-tab-num">Table ${t.num}${t.pending ? ' ' + pendingBadge : ''}</span>
+          <span class="cr-tab-label">${esc(truncate(t.label || '—', 56))}</span>
+        </span>
+      </button>
+      ${t.pending ? '' : `<button type="button" class="cr-tab-edit" data-edit-table="${t.num}" title="Bu tabloyu düzenle" aria-label="Tablo ${t.num} düzenle">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+      </button>
+      <button type="button" class="cr-tab-delete" data-delete-table="${t.num}" title="Bu tabloyu sil" aria-label="Tablo ${t.num} sil">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+      </button>`}
+    </div>`;
 
   // References get a searchable row list instead of chips — with 50+ refs
   // common in review articles, a chip strip overflows the bubble. Each row
@@ -5233,8 +5650,10 @@ function _renderCrossRefBubble(prefix) {
         <input type="file" accept="image/*,.tif,.tiff" data-upload-input="figure" style="display:none">`;
     }
     if (manualKind === 'table') {
-      return `<button type="button" class="cr-upload-btn" data-upload-kind="table">+ Yeni Tablo</button>
-        <input type="file" accept="image/*,.tif,.tiff" data-upload-input="table" style="display:none">`;
+      // Tables are tabular data — open a paste dialog (Word/Excel → real
+      // <table>) rather than a file picker. Image upload remains available as a
+      // fallback inside that dialog.
+      return `<button type="button" class="cr-upload-btn" data-insert-table>+ Yeni Tablo</button>`;
     }
     // ref → "+ Yeni Kaynak" opens the inline form below.
     return `<button type="button" class="cr-upload-btn" data-newref-toggle>+ Yeni Kaynak</button>`;
@@ -5267,7 +5686,11 @@ function _renderCrossRefBubble(prefix) {
     // header button. Lets the editor add a new reference and link to it in
     // one shot, paralleling the figure/table upload UX.
     `<div class="cr-newref-form" data-newref-form hidden>
-      <textarea class="cr-newref-text" rows="2" placeholder="Kaynak metni — örn. Smith J, Doe R, et al. Title… JAMA. 2026;1:1-10."></textarea>
+      <div style="display:flex;gap:6px;margin-bottom:6px">
+        <input type="text" class="cr-newref-doi" placeholder="DOI yapıştırın (ör. 10.4274/...) — otomatik doldur" style="flex:1;min-width:0;font-size:12px;padding:4px 8px;border:1px solid var(--border-soft);border-radius:5px">
+        <button type="button" class="cr-newref-fetch" style="font-size:12px;padding:4px 10px;white-space:nowrap">DOI'den getir</button>
+      </div>
+      <textarea class="cr-newref-text" rows="2" placeholder="Kaynak metni — örn. Smith J, Doe R, et al. Title… JAMA. 2026;1:1-10. (veya yukarıya DOI yapıştırın)"></textarea>
       <div class="cr-newref-actions">
         <button type="button" class="cr-newref-cancel">İptal</button>
         <button type="button" class="cr-newref-go">Ekle</button>
@@ -5311,6 +5734,42 @@ function _renderCrossRefBubble(prefix) {
       const num = Number(b.dataset.num);
       insertCrossRef(prefix, kind, num);
       announceInsert(kind, num);
+    };
+  });
+  // Trash button on each in-body table tile → confirm, then remove the block,
+  // renumber the rest, and refresh the bubble. Stops propagation so it doesn't
+  // also trigger the tile's "insert cross-ref" click.
+  // Pencil button on each in-body table tile → open the table dialog in EDIT
+  // mode (pre-filled label + caption + current table) so the block can be
+  // re-arranged in place. Stops propagation so it doesn't also fire the tile's
+  // "insert cross-ref" click.
+  bubble.querySelectorAll('[data-edit-table]').forEach((b) => {
+    b.onclick = (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const num = Number(b.dataset.editTable);
+      _insertInlineTable(prefix, num);
+    };
+  });
+  bubble.querySelectorAll('[data-delete-table]').forEach((b) => {
+    b.onclick = async (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const num = Number(b.dataset.deleteTable);
+      const visual = document.getElementById(prefix + '-visual');
+      const block = visual ? visual.querySelector('#table-' + num) : null;
+      if (!block) { toast('Tablo bulunamadı', 'warning'); return; }
+      const ok = await confirmAction(`Tablo ${num} silinecek. Emin misiniz?`);
+      if (!ok) return;
+      block.remove();
+      // Renumber remaining tables + their in-text references so there's no gap,
+      // then re-validate/auto-link and rebuild the bubble.
+      if (typeof _renumberTablesByMention === 'function') _renumberTablesByMention(visual);
+      if (typeof _validateCrossRefAnchors === 'function') _validateCrossRefAnchors(visual);
+      if (typeof _autoLinkInEditor === 'function') _autoLinkInEditor(visual);
+      markDirty();
+      _renderCrossRefBubble(prefix);
+      toast(`Tablo ${num} silindi`, 'success');
     };
   });
   bubble.querySelectorAll('[data-manual-go]').forEach((b) => {
@@ -5404,6 +5863,15 @@ function _renderCrossRefBubble(prefix) {
     };
   });
 
+  // "+ Yeni Tablo" → paste-a-table dialog (not a file picker).
+  const insertTableBtn = bubble.querySelector('[data-insert-table]');
+  if (insertTableBtn) {
+    insertTableBtn.onclick = (e) => {
+      e.preventDefault();
+      _insertInlineTable(prefix);
+    };
+  }
+
   // "+ Yeni Kaynak" — toggles the inline form that captures a single
   // reference's text + appends it to the article's <ol> + inserts ref-N.
   const newRefBtn = bubble.querySelector('[data-newref-toggle]');
@@ -5434,9 +5902,83 @@ function _renderCrossRefBubble(prefix) {
         newRefForm.querySelector('.cr-newref-go').click();
       }
     });
+    // DOI → auto-fill the reference text from Crossref.
+    const fetchBtn = newRefForm.querySelector('.cr-newref-fetch');
+    const doiInput = newRefForm.querySelector('.cr-newref-doi');
+    if (fetchBtn && doiInput) {
+      const doFetch = async () => {
+        const doi = (doiInput.value || '').trim();
+        if (!doi) { toast('Önce DOI girin', 'warning'); return; }
+        fetchBtn.disabled = true; const old = fetchBtn.textContent; fetchBtn.textContent = '...';
+        try {
+          const cite = await _fetchCrossrefCitation(doi);
+          newRefForm.querySelector('.cr-newref-text').value = cite;
+          toast('Kaynak DOI\'den dolduruldu — kontrol edip "Ekle" deyin');
+        } catch (err) {
+          toast('DOI bulunamadı: ' + (err.message || err), 'error');
+        } finally {
+          fetchBtn.disabled = false; fetchBtn.textContent = old;
+        }
+      };
+      fetchBtn.onclick = doFetch;
+      doiInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); doFetch(); } });
+    }
   }
 
   bubble.querySelector('.cr-bubble-close').onclick = hideCrossRefBubble;
+}
+
+// Fetch a work's metadata from Crossref (CORS-enabled public API) and format a
+// Vancouver-style reference string. Used by the "+ Yeni Kaynak" DOI auto-fill.
+async function _fetchCrossrefCitation(rawDoi) {
+  const doi = String(rawDoi).trim().replace(/^https?:\/\/(dx\.)?doi\.org\//i, '').replace(/^doi:\s*/i, '');
+  if (!/^10\.\d{3,}\//.test(doi)) throw new Error('Geçersiz DOI biçimi');
+  const res = await fetch('https://api.crossref.org/works/' + encodeURIComponent(doi), {
+    headers: { Accept: 'application/json' },
+  });
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  const data = await res.json();
+  const w = data && data.message;
+  if (!w) throw new Error('Boş yanıt');
+  return _formatVancouver(w, doi);
+}
+
+// Format a Crossref work object into a Vancouver-style citation.
+function _formatVancouver(w, doi) {
+  const authorsArr = Array.isArray(w.author) ? w.author : [];
+  const names = authorsArr.map((a) => {
+    const family = (a.family || '').trim();
+    const given = (a.given || '').trim();
+    if (!family) return (a.name || '').trim();
+    const initials = given.split(/[\s.\-]+/).filter(Boolean).map((p) => p[0].toUpperCase()).join('');
+    return initials ? `${family} ${initials}` : family;
+  }).filter(Boolean);
+  let authorStr = '';
+  if (names.length === 0) authorStr = '';
+  else if (names.length <= 6) authorStr = names.join(', ');
+  else authorStr = names.slice(0, 6).join(', ') + ', et al';
+
+  const title = (Array.isArray(w.title) && w.title[0] ? w.title[0] : '').replace(/\s+/g, ' ').trim();
+  const journal = (Array.isArray(w['container-title']) && w['container-title'][0]) ? w['container-title'][0] : (w.publisher || '');
+  const dateParts = (w.issued && w.issued['date-parts'] && w.issued['date-parts'][0]) || [];
+  const year = dateParts[0] || '';
+  const vol = w.volume || '';
+  const issue = w.issue || '';
+  const pages = w.page || '';
+
+  let out = '';
+  if (authorStr) out += authorStr + '. ';
+  if (title) out += title.replace(/\.+$/, '') + '. ';
+  if (journal) out += journal + '. ';
+  if (year) {
+    out += year;
+    if (vol) out += ';' + vol;
+    if (issue) out += '(' + issue + ')';
+    if (pages) out += ':' + pages;
+    out += '. ';
+  }
+  out += 'doi:' + doi + '.';
+  return out.replace(/\s+/g, ' ').trim();
 }
 
 // Append a reference to the article's <ol> of references, creating the
@@ -5506,6 +6048,112 @@ function _extractMediaNum(filename, kind) {
   m = lower.match(/(?:^|[-_])f[-_]?(\d+)([a-z])?(?:$|[-_])/);
   if (m) return { num: Number(m[1]), panel: m[2] || null };
   return null;
+}
+
+// Resolve an uploaded asset list (the `figures` array from
+// GET /media/article/:id/assets, already in upload order) into ORDERED blocks
+// with STABLE, DISTINCT numbers — one block per figure / table, panels (1a,1b)
+// collapsed onto their parent number.
+//
+// Numbering rule (the heart of the fix): a filename-encoded number is honoured
+// only when it's unambiguous (exactly one block claims it). Files with no
+// parseable number, or whose number collides with another file's, fall back to
+// the next free integer assigned in upload order. This guarantees:
+//   • every uploaded figure shows up (no silent drop on collision),
+//   • the order matches the order they were uploaded / appear in Dosyalar,
+//   • well-named JATS sets (figure-1, figure-2, …) keep their exact numbers.
+//
+// BOTH the cross-ref picker and Otomatik Düzenle call this, so the #figure-N
+// anchor the picker inserts always points at the block auto-arrange builds.
+// Files that live in the article images dir but are NOT article figures —
+// covers, logos, test artifacts. They're excluded ONLY when their name doesn't
+// also carry a figure/table number, so a legitimately-named figure is never
+// dropped (e.g. "covering-membrane" won't match, "cover.jpg" will).
+const _NON_FIGURE_FILE = /^(cover|kapak|logo|banner|favicon|thumbnail|thumb|inline-upload-test)\b/i;
+
+function _resolveMediaSequence(figures) {
+  const out = { figure: [], table: [] };
+  if (!Array.isArray(figures)) return out;
+
+  const items = [];
+  figures.forEach((f, idx) => {
+    const name = String(f.filename || '');
+    const isTable = /(?:^|[-_])tab(?:le)?[-_]?\d+/i.test(name);
+    const kind = isTable ? 'table' : 'figure';
+    const meta = _extractMediaNum(name, kind) || {};
+    const parsedNum = Number.isFinite(meta.num) ? meta.num : null;
+    // Unparseable AND on the non-figure denylist → genuinely not a figure.
+    if (parsedNum == null && _NON_FIGURE_FILE.test(name)) return;
+    items.push({ idx, kind, parsedNum, panel: meta.panel || null, f });
+  });
+
+  for (const kind of ['figure', 'table']) {
+    const group = items.filter((it) => it.kind === kind);
+
+    // Group into parent blocks. Files that share a parsed number are panels of
+    // the same block ONLY when they occupy different panel slots (1a, 1b, …).
+    // Two files claiming the same number AND the same slot (e.g. both bare
+    // "figure-1" with no panel letter, or "fig1.png" + "fig1_alt.png") cannot
+    // be panels of one figure — that's a collision, so the second one spills
+    // out as its own block and gets the next free number. Unparseable files
+    // each get their own block too (keyed by idx so they never merge).
+    const byNum = new Map();      // parsed number → parent block
+    const orphans = [];           // own-block files (unparseable OR collided)
+    for (const it of group) {
+      if (it.parsedNum == null) { orphans.push(it); continue; }
+      let parent = byNum.get(it.parsedNum);
+      if (!parent) {
+        parent = { parsedNum: it.parsedNum, firstIdx: it.idx, panels: [], slots: new Set() };
+        byNum.set(it.parsedNum, parent);
+      }
+      const slot = it.panel || '∅';
+      if (parent.slots.has(slot)) { orphans.push(it); continue; } // collision → own block
+      parent.slots.add(slot);
+      parent.panels.push(it);
+    }
+    for (const it of orphans) {
+      byNum.set(`u${it.idx}`, { parsedNum: null, firstIdx: it.idx, panels: [it], slots: new Set() });
+    }
+
+    const parents = [...byNum.values()].sort((a, b) => a.firstIdx - b.firstIdx);
+
+    // How many parent blocks claim each parsed number — a number is only
+    // trustworthy if exactly one block claims it.
+    const claims = {};
+    parents.forEach((p) => { if (p.parsedNum != null) claims[p.parsedNum] = (claims[p.parsedNum] || 0) + 1; });
+
+    const used = new Set();
+    parents.forEach((p) => {
+      if (p.parsedNum != null && claims[p.parsedNum] === 1) {
+        p.finalNum = p.parsedNum;
+        used.add(p.parsedNum);
+      }
+    });
+    let next = 1;
+    parents.forEach((p) => {
+      if (p.finalNum != null) return;
+      while (used.has(next)) next += 1;
+      p.finalNum = next;
+      used.add(next);
+    });
+
+    out[kind] = parents
+      .map((p) => ({
+        num: p.finalNum,
+        firstIdx: p.firstIdx,
+        panels: p.panels.map((it) => ({
+          panel: it.panel,
+          url: it.f.url,
+          filename: it.f.filename,
+          caption: it.f.caption || '',
+          source: it.f.source || '',
+          size: it.f.size || 'auto',
+          label: it.f.label || '',
+        })),
+      }))
+      .sort((a, b) => a.num - b.num);
+  }
+  return out;
 }
 
 // Build a map  num → first paragraph element  that mentions a given figure
@@ -5594,6 +6242,12 @@ function _buildMediaBlock(kind, num, panelsOrUrl) {
   const stripped = rawCap.replace(new RegExp(`^\\s*(?:figure|fig\\.?|şekil|sekil|tablo|table)\\s*${num}[a-z]?\\s*[\\.:\\-—–]?\\s*`, 'i'), '').trim();
   const captionInner = _captionToHtml(stripped);
 
+  // Manual label (LOCKED): the editor typed a custom prefix in the dialog. When
+  // present it is rendered verbatim and the block is marked with data-label so
+  // auto-arrange / normalization never renumber or re-prefix it.
+  const manualPick = panels.find((p) => p.label != null && String(p.label).trim() !== '');
+  const manualLabel = manualPick ? String(manualPick.label).trim() : null;
+
   // Size: prefer the entry that has a non-default size; fall back to 'medium'.
   // Multi-panel figures always go full width regardless of stored hint.
   const sizePick = panels.find((p) => p.size && p.size !== 'auto') || panels[0];
@@ -5606,7 +6260,13 @@ function _buildMediaBlock(kind, num, panelsOrUrl) {
     fig.id = `figure-${num}`;
     fig.className = 'article-figure';
     fig.setAttribute('data-size', blockSize);
-    const captionP = `<p><strong>FIG. ${num}.</strong> ${captionInner}</p>`;
+    if (manualLabel) fig.setAttribute('data-label', manualLabel.replace(/[.\s]+$/, ''));
+    else fig.removeAttribute('data-label');
+    // AUTO label renders as "FIG. N." — matching the Etiket field default
+    // ("FIG. N"). The caption is locked (contenteditable="false") so the label
+    // can't be edited inline; all changes go through the dialogs.
+    const figPrefix = manualLabel ? _renderLabelPrefix(manualLabel) : `<strong>FIG. ${num}.</strong>`;
+    const captionP = `<p contenteditable="false">${figPrefix} ${captionInner}</p>`;
     if (!isMulti) {
       const safeUrl = String(panels[0].url || '').replace(/^\//, '');
       fig.innerHTML =
@@ -5621,7 +6281,9 @@ function _buildMediaBlock(kind, num, panelsOrUrl) {
   wrap.id = `table-${num}`;
   wrap.className = 'article-table-wrap';
   wrap.setAttribute('data-size', blockSize);
-  const tableCaption = `<p class="table-label"><strong>TABLE ${num}.</strong> ${captionInner}</p>`;
+  if (manualLabel) wrap.setAttribute('data-label', manualLabel.replace(/[.\s]+$/, ''));
+  else wrap.removeAttribute('data-label');
+  const tableCaption = `<p class="table-label" contenteditable="false">${_tableLabelHtml(num, captionInner, manualLabel)}</p>`;
   if (!isMulti) {
     const safeUrl = String(panels[0].url || '').replace(/^\//, '');
     wrap.innerHTML = tableCaption + `<img src="${esc(safeUrl)}" alt="Table ${num}" loading="lazy">`;
@@ -5639,27 +6301,39 @@ function _updateExistingMediaCaption(block, kind, num, captionInnerHtml, size) {
   // Refresh data-size attribute too so users can change a figure's display
   // size via the dialog → "Otomatik Düzenle" path without re-inserting.
   if (size && size !== 'auto') block.setAttribute('data-size', size);
+  // LOCKED label: render the verbatim manual prefix instead of "FIG. N."/"Table N.".
+  const manual = _blockManualLabel(block);
   if (kind === 'figure') {
+    // AUTO label renders as "FIG. N." (matches the Etiket field default).
+    const figPrefix = manual ? _renderLabelPrefix(manual) : `<strong>FIG. ${num}.</strong>`;
     // Modern dialog-inserted figures use <figcaption>
     const fc = block.querySelector(':scope > figcaption');
     if (fc) {
+      fc.setAttribute('contenteditable', 'false');
       fc.innerHTML = captionInnerHtml
-        ? `<strong>Figure ${num}.</strong> ${captionInnerHtml}`
-        : `<strong>Figure ${num}</strong>`;
+        ? `${figPrefix} ${captionInnerHtml}`
+        : (manual ? _renderLabelPrefix(manual) : `<strong>FIG. ${num}</strong>`);
       return true;
     }
-    // Auto-arranged figures use <p><strong>FIG. N.</strong>...</p>
+    // Auto-arranged figures use <p><strong>FIG. N.</strong>...</p>. A LOCKED
+    // figure's prefix is a free-form word ("Graphic 3") that won't match the
+    // FIG/Figure keyword test, so for manual blocks accept any <p> that simply
+    // begins with a <strong>/<b> label — otherwise we'd append a duplicate.
     const ps = block.querySelectorAll(':scope > p');
     for (const p of ps) {
-      const t = (p.querySelector(':scope > strong, :scope > b')?.textContent || '').trim();
-      if (/^(?:FIG\.?|Figure|Şekil|Sekil)\b/i.test(t)) {
-        p.innerHTML = `<strong>FIG. ${num}.</strong> ${captionInnerHtml}`;
+      const strongEl = p.querySelector(':scope > strong, :scope > b');
+      const t = (strongEl?.textContent || '').trim();
+      const leadsWithStrong = !!(p.firstElementChild && /^(?:STRONG|B)$/.test(p.firstElementChild.tagName));
+      if ((manual && leadsWithStrong) || /^(?:FIG\.?|Figure|Şekil|Sekil)\b/i.test(t)) {
+        p.setAttribute('contenteditable', 'false');
+        p.innerHTML = `${figPrefix} ${captionInnerHtml}`;
         return true;
       }
     }
     // No caption element found — append one
     const newP = document.createElement('p');
-    newP.innerHTML = `<strong>FIG. ${num}.</strong> ${captionInnerHtml}`;
+    newP.setAttribute('contenteditable', 'false');
+    newP.innerHTML = `${figPrefix} ${captionInnerHtml}`;
     block.appendChild(newP);
     return true;
   }
@@ -5667,7 +6341,8 @@ function _updateExistingMediaCaption(block, kind, num, captionInnerHtml, size) {
   // Tables
   const labelP = block.querySelector(':scope > p.table-label');
   if (labelP) {
-    labelP.innerHTML = `<strong>TABLE ${num}.</strong> ${captionInnerHtml}`;
+    labelP.setAttribute('contenteditable', 'false');
+    labelP.innerHTML = _tableLabelHtml(num, captionInnerHtml, manual);
     return true;
   }
   const ps = block.querySelectorAll(':scope > p');
@@ -5675,15 +6350,925 @@ function _updateExistingMediaCaption(block, kind, num, captionInnerHtml, size) {
     const t = (p.querySelector(':scope > strong, :scope > b')?.textContent || '').trim();
     if (/^(?:TABLE|Tablo|Tab\.?)\b/i.test(t)) {
       p.classList.add('table-label');
-      p.innerHTML = `<strong>TABLE ${num}.</strong> ${captionInnerHtml}`;
+      p.setAttribute('contenteditable', 'false');
+      p.innerHTML = _tableLabelHtml(num, captionInnerHtml, manual);
       return true;
     }
   }
   const newP = document.createElement('p');
   newP.className = 'table-label';
-  newP.innerHTML = `<strong>TABLE ${num}.</strong> ${captionInnerHtml}`;
+  newP.setAttribute('contenteditable', 'false');
+  newP.innerHTML = _tableLabelHtml(num, captionInnerHtml, manual);
   block.insertBefore(newP, block.firstChild);
   return true;
+}
+
+// Refresh a table block's label to the canonical bold "Table N." form, keeping
+// any caption text (and citation links) after the prefix. Normalises legacy
+// "TABLE N." all-caps labels too.
+function _refreshTableLabel(block, num) {
+  const labelP = block.querySelector(':scope > p.table-label')
+    || Array.from(block.querySelectorAll(':scope > p')).find((p) => {
+      const t = (p.querySelector(':scope > strong, :scope > b')?.textContent || p.textContent || '').trim();
+      return /^(?:TABLE|Tablo|Tab\.?)\b/i.test(t);
+    });
+  if (!labelP) return;
+  labelP.classList.add('table-label');
+  // Strip existing <strong> wrappers (whole label is re-bolded) then drop the
+  // leading "Table/TABLE/Tablo N." prefix, preserving the caption HTML.
+  let inner = labelP.innerHTML.replace(/<\/?strong>/gi, '').trim();
+  inner = inner.replace(/^\s*(?:tables?|tablolar?|tablo|tab\.?)\s*\d+[a-z]?\s*[.:\-–—]?\s*/i, '').trim();
+  // LOCKED tables keep their verbatim manual prefix even as the integer id renumbers.
+  labelP.innerHTML = _tableLabelHtml(num, inner, _blockManualLabel(block));
+}
+
+// Unwrap any figure/table self-reference links (<a href="#table-N">…</a>) inside
+// a caption fragment, keeping their inner text. Captions must never link to
+// themselves — that's what makes "Table 1" render teal + underlined like a
+// cross-reference when it's actually the title. Returns cleaned innerHTML.
+function _stripSelfMediaLinks(html) {
+  const tmp = document.createElement('div');
+  tmp.innerHTML = html == null ? '' : String(html);
+  tmp.querySelectorAll('a[href^="#table-"], a[href^="#tab-"], a[href^="#figure-"], a[href^="#fig-"]').forEach((a) => {
+    while (a.firstChild) a.parentNode.insertBefore(a.firstChild, a);
+    a.remove();
+  });
+  return tmp.innerHTML;
+}
+
+// Normalise table/figure captions so the "Table N." / "Figure N." title renders
+// as plain bold body-sized text — never an oversized <h3> heading, never a
+// self-referential teal link. Handles two cases per media block:
+//   1) An adjacent heading/paragraph caption (e.g. a Word-pasted "Table 1. …"
+//      that slipped through as <h3> or <p>) sitting right before/after the block
+//      → adopted INTO the block as the canonical label.
+//   2) A caption already inside the block that still carries a self-link or a
+//      non-canonical prefix → de-linked and re-bolded.
+// Tables become <p class="table-label"><strong>Table N. …</strong></p>; figures
+// keep their small/grey <figcaption> design, just de-linked + de-headinged.
+// Idempotent: re-running finds nothing left to change.
+function _normalizeMediaCaptions(visualEl) {
+  if (!visualEl) return false;
+  let mutated = false;
+  const blocks = visualEl.querySelectorAll(
+    '.article-table-wrap[id^="table-"], figure[id^="figure-"], figure[id^="fig-"]'
+  );
+  blocks.forEach((block) => {
+    const m = block.id.match(/^(table|tab|figure|fig)-(\d+)$/i);
+    if (!m) return;
+    const isTable = /^(table|tab)$/i.test(m[1]);
+    const num = Number(m[2]);
+    const labelRe = isTable
+      ? /^\s*(?:tables?|tablolar?|tablo|tab)\b\s*\.?\s*0*(\d+)\b/i
+      : /^\s*(?:figures?|figs?|şekiller?|şekil|sekil|fig)\b\s*\.?\s*0*(\d+)\b/i;
+    const prefixRe = isTable
+      ? /^\s*(?:tables?|tablolar?|tablo|tab)\b\s*\.?\s*\d+[a-z]?\s*[.:\-–—]?\s*/i
+      : /^\s*(?:figures?|figs?|şekiller?|şekil|sekil|fig)\b\s*\.?\s*\d+[a-z]?\s*[.:\-–—]?\s*/i;
+
+    // 0) Heal a PHANTOM media wrap: a table-wrap with no <table>/<img> (or a
+    //    figure with no <img>) is not a real media block — it's typically a
+    //    section heading that got wrapped by a botched paste/normalise. Such a
+    //    phantom shows up as a bogus "Table N. <heading>" (the labeller prepends
+    //    the number to the heading text) AND inflates the next real table to N+1.
+    //    Unwrap it: restore the inner text as a heading/paragraph before the wrap
+    //    and drop the empty wrap so numbering and headings are correct again.
+    const hasRealContent = isTable
+      ? !!block.querySelector('table, img')
+      : !!block.querySelector('img');
+    if (!hasRealContent) {
+      const cap = block.querySelector(
+        ':scope > p.table-label, :scope > figcaption, :scope > p, :scope > h1, :scope > h2, :scope > h3, :scope > h4, :scope > h5, :scope > h6'
+      );
+      let html = cap ? _stripSelfMediaLinks(cap.innerHTML) : '';
+      html = html.replace(/<\/?(?:strong|b)>/gi, '').replace(prefixRe, '').trim();
+      const tmp = document.createElement('div');
+      tmp.innerHTML = html;
+      const text = (tmp.textContent || '').trim();
+      if (text) {
+        // A single bold/large inline wrapper (the inlined styles of a former
+        // <h3>) means it was a heading — restore it as one; else a paragraph.
+        const onlyChild = (tmp.children.length === 1 && tmp.childNodes.length === 1) ? tmp.children[0] : null;
+        const looksHeading = !!onlyChild && /font-weight:\s*(?:[6-9]\d\d|bold)/i.test(onlyChild.getAttribute('style') || '');
+        const restored = document.createElement(looksHeading ? 'h3' : 'p');
+        restored.textContent = text;
+        block.parentNode.insertBefore(restored, block);
+      }
+      block.remove();
+      mutated = true;
+      return;
+    }
+
+    // 1) Adopt a heading/paragraph caption sitting next to the block — TOLERATING
+    //    Word's empty filler elements (<p>&nbsp;</p>, <br>, <o:p>) that paste
+    //    between a caption line and its table. Without this tolerance the caption
+    //    stays a stray <p> outside the skip-zone, and _autoLinkInEditor turns its
+    //    "Table N" into a self-referential teal/underlined link (and an oversized
+    //    <h3> if it was promoted). We scan up to 3 filler hops in each direction.
+    const isFiller = (el) => !!el && (
+      (el.tagName === 'P' && !(el.textContent || '').replace(/ /g, ' ').trim() && !el.querySelector('img,table')) ||
+      el.tagName === 'BR' ||
+      (el.tagName && el.tagName.toLowerCase() === 'o:p')
+    );
+    const findCaptionSibling = (dir) => {
+      const fillers = [];
+      let el = dir === 'prev' ? block.previousElementSibling : block.nextElementSibling;
+      let hops = 0;
+      while (el && isFiller(el) && hops < 3) {
+        fillers.push(el);
+        el = dir === 'prev' ? el.previousElementSibling : el.nextElementSibling;
+        hops += 1;
+      }
+      if (!el || !/^(H[1-6]|P)$/.test(el.tagName)) return null;
+      if (el.classList && el.classList.contains('table-label')) return null;
+      if (el.closest && el.closest(
+        '.article-references, .article-acknowledgments, .article-footnotes, .article-supplementary'
+      )) return null;
+      const t = (el.textContent || '').replace(/\s+/g, ' ').trim();
+      const mm = t.match(labelRe);
+      if (!mm || Number(mm[1]) !== num) return null;
+      return { el, fillers };
+    };
+    const found = findCaptionSibling('prev') || findCaptionSibling('next');
+    if (found) {
+      const innerHtml = _stripSelfMediaLinks(found.el.innerHTML);
+      if (isTable) {
+        const p = document.createElement('p');
+        p.className = 'table-label';
+        p.innerHTML = innerHtml; // _refreshTableLabel below re-bolds + strips prefix
+        block.insertBefore(p, block.firstChild);
+      } else {
+        const inner = innerHtml.replace(prefixRe, '').trim();
+        let fc = block.querySelector(':scope > figcaption');
+        if (!fc) { fc = document.createElement('figcaption'); block.appendChild(fc); }
+        // LOCKED figures keep their verbatim manual prefix.
+        const manual = _blockManualLabel(block);
+        const figPrefix = manual ? _renderLabelPrefix(manual) : `<strong>Figure ${num}.</strong>`;
+        fc.innerHTML = inner ? `${figPrefix} ${inner}` : figPrefix;
+      }
+      found.el.remove();
+      found.fillers.forEach((f) => f.remove());
+      mutated = true;
+    }
+
+    // 1b) Collapse duplicate table labels (an adopted caption stacked on top of an
+    //     empty popup "Table N." label): keep the one with the most caption text.
+    if (isTable) {
+      const labels = Array.from(block.querySelectorAll(':scope > p.table-label'));
+      if (labels.length > 1) {
+        labels.sort((a, b) => (b.textContent || '').trim().length - (a.textContent || '').trim().length);
+        labels.slice(1).forEach((l) => l.remove());
+        mutated = true;
+      }
+    }
+
+    // 2) Canonicalise the in-block caption (strip self-links, fix prefix/bold/size).
+    if (isTable) {
+      const lbl = block.querySelector(':scope > p.table-label')
+        || Array.from(block.querySelectorAll(':scope > p')).find((p) => {
+          const t = (p.querySelector(':scope > strong, :scope > b')?.textContent || p.textContent || '').trim();
+          return /^(?:tables?|tablolar?|tablo|tab)\b/i.test(t);
+        });
+      if (lbl) {
+        const before = lbl.innerHTML;
+        const delinked = _stripSelfMediaLinks(before);
+        if (delinked !== before) lbl.innerHTML = delinked;
+        _refreshTableLabel(block, num);
+        if (lbl.innerHTML !== before) mutated = true;
+      }
+    } else {
+      const fc = block.querySelector(':scope > figcaption');
+      if (fc && /href=["']#(?:figure|fig|table|tab)-/i.test(fc.innerHTML)) {
+        fc.innerHTML = _stripSelfMediaLinks(fc.innerHTML);
+        mutated = true;
+      }
+    }
+
+    // 3) Drop an empty spacer paragraph (<p><br></p>, <p>&nbsp;</p>, <o:p>)
+    //    sitting IMMEDIATELY before/after the block — it renders as an ugly
+    //    extra blank line between the prose and the caption. Word paste + the
+    //    old "insert below the caret" behaviour left these behind.
+    const isSpacer = (el) => !!el && (
+      (el.tagName === 'P' && !(el.textContent || '').trim() && !el.querySelector('img,table')) ||
+      el.tagName === 'BR' ||
+      (el.tagName && el.tagName.toLowerCase() === 'o:p')
+    );
+    while (isSpacer(block.previousElementSibling)) { block.previousElementSibling.remove(); mutated = true; }
+    while (isSpacer(block.nextElementSibling)) { block.nextElementSibling.remove(); mutated = true; }
+  });
+  // Lock every media caption label against inline editing — figure/table names
+  // (and captions) must ONLY be changed via the table dialogs / figure (Dosyalar)
+  // pop-up. Done as a stamping pass (no `mutated`/dirty) so merely opening an
+  // article doesn't flag unsaved changes; the attribute serialises on next save.
+  _lockMediaCaptionEditing(visualEl);
+  if (mutated && typeof markDirty === 'function') markDirty();
+  return mutated;
+}
+
+// Stamp contenteditable="false" on every figure/table caption label so the
+// names/titles can't be altered by typing in the body. Idempotent.
+function _lockMediaCaptionEditing(visualEl) {
+  if (!visualEl || !visualEl.querySelectorAll) return;
+  visualEl.querySelectorAll(
+    '.article-table-wrap[id^="table-"] > p.table-label, ' +
+    '.article-table-wrap[id^="tab-"] > p.table-label, ' +
+    'figure[id^="figure-"] > figcaption, figure[id^="figure-"] > p, ' +
+    'figure[id^="fig-"] > figcaption, figure[id^="fig-"] > p'
+  ).forEach((el) => {
+    if (el.getAttribute('contenteditable') !== 'false') el.setAttribute('contenteditable', 'false');
+  });
+}
+
+// ── In-editor media block controls ───────────────────────────────────────────
+// Because figure/table captions are now non-editable, the editor needs an
+// explicit, reliable way to MOVE, DELETE, or EDIT a placed figure/table block.
+// A small floating toolbar appears at the top-right of whichever media block the
+// cursor hovers, with: move up / move down / edit / delete. Bound once at the
+// document level so it works for any editor (ft / aip-ft) and survives re-renders.
+let _mediaCtl = null;          // the toolbar element
+let _mediaCtlTarget = null;    // the block it currently acts on
+let _mediaCtlPrefix = null;    // owning editor prefix ('ft' / 'aip-ft')
+let _mediaCtlHideTimer = null;
+let _mediaCtlBound = false;
+
+function _initMediaBlockControls() {
+  if (_mediaCtlBound) return;
+  _mediaCtlBound = true;
+  const MEDIA_SEL = 'figure[id^="figure-"], figure[id^="fig-"], .article-table-wrap[id^="table-"], .article-table-wrap[id^="tab-"]';
+  document.addEventListener('mouseover', (e) => {
+    const t = e.target;
+    if (!t || !t.closest) return;
+    const visual = t.closest('[id$="-visual"][contenteditable="true"]');
+    if (!visual) return;
+    const block = t.closest(MEDIA_SEL);
+    if (!block || !visual.contains(block)) return;
+    _showMediaCtl(block, visual);
+  });
+  document.addEventListener('mouseout', (e) => {
+    if (!_mediaCtlTarget) return;
+    const to = e.relatedTarget;
+    if (to && to.nodeType === 1 && (_mediaCtlTarget.contains(to) || (_mediaCtl && _mediaCtl.contains(to)))) return;
+    _scheduleHideMediaCtl();
+  });
+  window.addEventListener('scroll', () => { if (_mediaCtlTarget) _positionMediaCtl(); }, true);
+  window.addEventListener('resize', () => { if (_mediaCtlTarget) _positionMediaCtl(); });
+}
+
+function _ensureMediaCtlEl() {
+  if (_mediaCtl) return _mediaCtl;
+  const tb = document.createElement('div');
+  tb.id = 'media-block-ctl';
+  tb.className = 'media-block-ctl hidden';
+  tb.innerHTML =
+    '<button type="button" data-mbc="up" title="Yukarı taşı" aria-label="Yukarı taşı">▲</button>' +
+    '<button type="button" data-mbc="down" title="Aşağı taşı" aria-label="Aşağı taşı">▼</button>' +
+    '<button type="button" data-mbc="edit" title="Düzenle" aria-label="Düzenle">✎</button>' +
+    '<button type="button" data-mbc="delete" title="Sil" aria-label="Sil">🗑</button>';
+  tb.addEventListener('mouseenter', () => clearTimeout(_mediaCtlHideTimer));
+  tb.addEventListener('mouseleave', () => _scheduleHideMediaCtl());
+  tb.addEventListener('mousedown', (e) => e.preventDefault()); // keep editor selection/caret
+  tb.addEventListener('click', _onMediaCtlClick);
+  document.body.appendChild(tb);
+  _mediaCtl = tb;
+  return tb;
+}
+
+function _showMediaCtl(block, visual) {
+  clearTimeout(_mediaCtlHideTimer);
+  _mediaCtlTarget = block;
+  _mediaCtlPrefix = (visual.id || '').replace(/-visual$/, '');
+  _ensureMediaCtlEl().classList.remove('hidden');
+  _positionMediaCtl();
+}
+
+function _positionMediaCtl() {
+  if (!_mediaCtl || !_mediaCtlTarget) return;
+  const r = _mediaCtlTarget.getBoundingClientRect();
+  const top = r.top + window.scrollY + 6;
+  const left = r.right + window.scrollX - _mediaCtl.offsetWidth - 6;
+  _mediaCtl.style.top = top + 'px';
+  _mediaCtl.style.left = Math.max(8, left) + 'px';
+}
+
+function _scheduleHideMediaCtl() {
+  clearTimeout(_mediaCtlHideTimer);
+  _mediaCtlHideTimer = setTimeout(() => {
+    if (_mediaCtl) _mediaCtl.classList.add('hidden');
+    _mediaCtlTarget = null;
+  }, 220);
+}
+
+async function _onMediaCtlClick(e) {
+  const btn = e.target.closest('[data-mbc]');
+  if (!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  const action = btn.dataset.mbc;
+  const block = _mediaCtlTarget;
+  const prefix = _mediaCtlPrefix;
+  if (!block) return;
+  const visual = document.getElementById(prefix + '-visual');
+  if (!visual || !visual.contains(block)) return;
+  const isFigure = block.tagName === 'FIGURE';
+  const m = block.id.match(/-(\d+)$/);
+  const num = m ? Number(m[1]) : null;
+
+  if (action === 'up') {
+    const prev = block.previousElementSibling;
+    if (prev) { block.parentNode.insertBefore(block, prev); markDirty(); _positionMediaCtl(); }
+    return;
+  }
+  if (action === 'down') {
+    const next = block.nextElementSibling;
+    if (next) { block.parentNode.insertBefore(next, block); markDirty(); _positionMediaCtl(); }
+    return;
+  }
+  if (action === 'edit') {
+    if (isFigure) {
+      const img = block.querySelector('img');
+      const src = img ? img.getAttribute('src') : '';
+      if (src) openFigureInsertDialog(src, src.split('/').pop());
+      else toast('Bu figür bir görsel içermiyor — Dosyalar sekmesinden düzenleyin', 'warning');
+    } else if (num != null) {
+      _insertInlineTable(prefix, num);
+    }
+    return;
+  }
+  if (action === 'delete') {
+    const label = isFigure ? `Figür ${num}` : `Tablo ${num}`;
+    const ok = await confirmAction(`${label} silinecek. Emin misiniz?`);
+    if (!ok) return;
+    block.remove();
+    if (!isFigure && typeof _renumberTablesByMention === 'function') _renumberTablesByMention(visual);
+    if (typeof _validateCrossRefAnchors === 'function') _validateCrossRefAnchors(visual);
+    if (typeof _autoLinkInEditor === 'function') _autoLinkInEditor(visual);
+    markDirty();
+    if (_mediaCtl) _mediaCtl.classList.add('hidden');
+    _mediaCtlTarget = null;
+    toast(`${label} silindi`, 'success');
+  }
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// SMART EDITOR TOOLS — autosave/recovery, preflight check, reader preview
+// ════════════════════════════════════════════════════════════════════════════
+
+// ── Autosave / draft recovery ────────────────────────────────────────────────
+// Periodically mirror the full-text editor to localStorage so a crash / closed
+// tab doesn't lose work. On load we offer to restore a newer unsaved draft.
+function _ftDraftKey(prefix, articleId) { return `bmj_ftdraft_${prefix}_${articleId}`; }
+
+function _setupFtAutosave(prefix, articleId) {
+  const visual = document.getElementById(prefix + '-visual');
+  if (!visual || !articleId) return;
+  visual.dataset.articleId = String(articleId);
+  if (visual.dataset.autosaveBound === '1') return;
+  visual.dataset.autosaveBound = '1';
+  let timer = null;
+  // 'input' fires only on real user edits, not programmatic innerHTML changes,
+  // so system normalisation passes never pollute the draft.
+  visual.addEventListener('input', () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      try {
+        localStorage.setItem(
+          _ftDraftKey(prefix, visual.dataset.articleId),
+          JSON.stringify({ html: visual.innerHTML, ts: Date.now() })
+        );
+        const st = document.getElementById(prefix === 'aip-ft' ? 'aipf-fulltext-status' : 'f-fulltext-status');
+        if (st) {
+          let badge = st.querySelector('.ft-autosave-badge');
+          if (!badge) { badge = document.createElement('span'); badge.className = 'ft-autosave-badge'; badge.style.cssText = 'margin-left:8px;color:var(--text-faint)'; st.appendChild(badge); }
+          try { badge.textContent = '• taslak kaydedildi ' + new Date().toLocaleTimeString('tr-TR'); } catch { badge.textContent = '• taslak kaydedildi'; }
+        }
+      } catch (_) { /* storage full / disabled — non-fatal */ }
+    }, 1500);
+  });
+}
+
+function _clearFtDraft(prefix, articleId) {
+  try { localStorage.removeItem(_ftDraftKey(prefix, articleId)); } catch (_) {}
+}
+
+// Offer to restore a saved draft that differs from the just-loaded server copy.
+async function _maybeOfferDraftRecovery(prefix, articleId, serverHtml) {
+  let raw;
+  try { raw = localStorage.getItem(_ftDraftKey(prefix, articleId)); } catch (_) { return; }
+  if (!raw) return;
+  let draft;
+  try { draft = JSON.parse(raw); } catch (_) { _clearFtDraft(prefix, articleId); return; }
+  if (!draft || typeof draft.html !== 'string') { _clearFtDraft(prefix, articleId); return; }
+  if (draft.html.trim() === (serverHtml || '').trim()) { _clearFtDraft(prefix, articleId); return; }
+  let when = '';
+  try { when = new Date(draft.ts).toLocaleString('tr-TR'); } catch (_) {}
+  const ok = await confirmAction(
+    `Bu makale için kaydedilmemiş bir taslak bulundu${when ? ' (' + when + ')' : ''}.\n\n` +
+    `Tarayıcı kapanmış veya kaydedilmemiş olabilir. Taslağı editöre geri yüklemek ister misiniz?\n\n` +
+    `Evet: taslağı yükler (henüz sunucuya KAYDETMEZ — kontrol edip kaydedin).\n` +
+    `İptal: taslağı yok sayar ve siler.`
+  );
+  if (!ok) { _clearFtDraft(prefix, articleId); return; }
+  setHtmlEditorContent(prefix, draft.html);
+  const visual = document.getElementById(prefix + '-visual');
+  if (visual) {
+    _suppressDirty = true;
+    try { _ensureMediaIds(visual); _normalizeMediaCaptions(visual); _autoLinkInEditor(visual); } finally { _suppressDirty = false; }
+  }
+  markDirty();
+  toast('Taslak geri yüklendi — kontrol edip "Kaydet" deyin');
+}
+
+// ── Preflight: pre-publish check ─────────────────────────────────────────────
+// Scans the full text for the errors that most often slip into a published
+// article: broken cross-refs, figures/tables uploaded-but-unplaced or
+// defined-but-never-referenced, dead/uncited references, empty captions.
+function _collectPreflightIssues(visual) {
+  const issues = [];
+  if (!visual) return issues;
+  const add = (level, msg, el) => issues.push({ level, msg, el: el || null });
+
+  const figIds = new Set(), tabIds = new Set();
+  visual.querySelectorAll('figure[id^="figure-"], figure[id^="fig-"]').forEach((f) => { const m = f.id.match(/-(\d+)$/); if (m) figIds.add(Number(m[1])); });
+  visual.querySelectorAll('.article-table-wrap[id^="table-"], .article-table-wrap[id^="tab-"]').forEach((t) => { const m = t.id.match(/-(\d+)$/); if (m) tabIds.add(Number(m[1])); });
+
+  const refOl = visual.querySelector('.article-references ol, ol.article-references-ol');
+  const refCount = refOl ? refOl.querySelectorAll(':scope > li').length : 0;
+
+  // 1) Broken cross-references (anchor target missing).
+  visual.querySelectorAll('a[href^="#figure-"],a[href^="#fig-"],a[href^="#table-"],a[href^="#tab-"],a[href^="#ref-"]').forEach((a) => {
+    const id = (a.getAttribute('href') || '').slice(1);
+    let exists;
+    if (/^ref-/.test(id)) { const n = Number(id.replace('ref-', '')); exists = n >= 1 && n <= refCount; }
+    else { try { exists = !!visual.querySelector('#' + CSS.escape(id)); } catch { exists = false; } }
+    if (!exists) add('error', `Kırık atıf: "${(a.textContent || '').trim().slice(0, 40)}" → #${id} (hedef yok)`, a);
+  });
+
+  // 2) Defined media never referenced in the prose.
+  const refFig = new Set(), refTab = new Set();
+  visual.querySelectorAll('a.article-media-ref-link[href]').forEach((a) => {
+    const m = (a.getAttribute('href') || '').match(/^#(figure|fig|table|tab)-(\d+)$/i);
+    if (!m) return;
+    if (/fig/i.test(m[1])) refFig.add(Number(m[2])); else refTab.add(Number(m[2]));
+  });
+  figIds.forEach((n) => { if (!refFig.has(n)) add('warn', `Figür ${n} tanımlı ama metinde hiç atıf yok`, visual.querySelector('#figure-' + n)); });
+  tabIds.forEach((n) => { if (!refTab.has(n)) add('warn', `Tablo ${n} tanımlı ama metinde hiç atıf yok`, visual.querySelector('#table-' + n)); });
+
+  // 3) Uploaded but not placed in the body.
+  try {
+    const cached = window._articleAssets;
+    if (cached && Array.isArray(cached.figures)) {
+      const resolved = _resolveMediaSequence(cached.figures);
+      ['figure', 'table'].forEach((kind) => {
+        (resolved[kind] || []).forEach((blk) => {
+          if (!visual.querySelector('#' + kind + '-' + blk.num)) {
+            add('warn', `${kind === 'figure' ? 'Figür' : 'Tablo'} ${blk.num} yüklü ama metne yerleştirilmemiş ("Otomatik Düzenle")`, null);
+          }
+        });
+      });
+    }
+  } catch (_) {}
+
+  // 4) References in the list that are never cited.
+  if (refCount) {
+    const cited = new Set();
+    visual.querySelectorAll('a[href^="#ref-"]').forEach((a) => { const n = Number((a.getAttribute('href') || '').replace('#ref-', '')); if (n) cited.add(n); });
+    for (let i = 1; i <= refCount; i += 1) {
+      if (!cited.has(i)) add('warn', `Kaynak ${i} listede var ama metinde atıf yok`, refOl ? refOl.querySelector(':scope > li:nth-child(' + i + ')') : null);
+    }
+  }
+
+  // 5) Empty captions / labels.
+  visual.querySelectorAll('figure[id^="figure-"], figure[id^="fig-"]').forEach((f) => {
+    const cap = f.querySelector(':scope > figcaption, :scope > p');
+    const txt = cap ? (cap.textContent || '').replace(/^\s*(FIG\.?|Figure|Şekil|Sekil)\s*\d+[a-z]?\.?\s*/i, '').trim() : '';
+    if (!txt) add('warn', `${f.id} açıklaması boş`, f);
+  });
+  visual.querySelectorAll('.article-table-wrap[id^="table-"], .article-table-wrap[id^="tab-"]').forEach((t) => {
+    const cap = t.querySelector(':scope > p.table-label');
+    const txt = cap ? (cap.textContent || '').replace(/^\s*(Table|Tablo|Tab\.?|[^\s.]+)\s*\d+[a-z]?\.?\s*/i, '').trim() : '';
+    if (!txt) add('warn', `${t.id} başlığı boş`, t);
+  });
+
+  return issues;
+}
+
+// Publish-readiness checks on the article METADATA form (title, DOI, authors,
+// ORCID/affiliation, abstract, keywords, and — for published articles — volume/
+// issue/pages/date). Reads the live edit-form fields; skips any field/form not
+// currently in the DOM so it never false-flags a form that isn't open.
+function _collectMetadataIssues(prefix) {
+  const issues = [];
+  const fp = prefix === 'aip-ft' ? 'aipf' : 'f';
+  const isAip = prefix === 'aip-ft';
+  const titleEl = document.getElementById(fp + '-title');
+  if (!titleEl) return issues; // metadata form not present — skip
+  const add = (level, msg) => issues.push({ level, msg: 'Künye: ' + msg, el: null });
+  const chk = (id, level, msg) => { const el = document.getElementById(id); if (el && !(el.value || '').trim()) add(level, msg); };
+
+  chk(fp + '-title', 'error', 'Başlık boş');
+  chk(fp + '-doi', 'warn', 'DOI girilmemiş');
+  const abs = document.getElementById(fp + '-abstractHtml-visual') || document.getElementById(fp + '-abstractHtml');
+  if (abs && !((abs.textContent || abs.value || '').trim())) add('warn', 'Öz (abstract) boş');
+  chk(fp + '-keywords', 'warn', 'Anahtar kelimeler boş');
+
+  const rows = Array.from(document.querySelectorAll(isAip ? '.aipf-author-row' : '.author-row'));
+  const named = rows.filter((r) => ((r.querySelector('.au-name') || {}).value || '').trim());
+  if (rows.length && named.length === 0) add('error', 'Hiç yazar adı girilmemiş');
+  let noOrcid = 0, noAff = 0;
+  named.forEach((r) => {
+    if (!(((r.querySelector('.au-orcid') || {}).value || '').trim())) noOrcid += 1;
+    if (!(((r.querySelector('.au-aff-idx') || {}).value || '').trim())) noAff += 1;
+  });
+  if (noOrcid) add('warn', `${noOrcid} yazarın ORCID'i yok`);
+  if (noAff) add('warn', `${noAff} yazarın kurum numarası yok`);
+
+  if (!isAip) {
+    chk(fp + '-published', 'warn', 'Yayın tarihi boş');
+    chk(fp + '-volume', 'warn', 'Cilt (volume) boş');
+    chk(fp + '-issue', 'warn', 'Sayı (issue) boş');
+    const pagesEl = document.getElementById(fp + '-pages');
+    if (pagesEl) {
+      const pages = (pagesEl.value || '').trim();
+      if (!pages) add('warn', 'Sayfa aralığı boş');
+      else if (!/^\d+\s*[-–]?\s*\d*$/.test(pages)) add('warn', 'Sayfa aralığı biçimi olağandışı (ör. 351-354)');
+    }
+  }
+  return issues;
+}
+
+function _runPreflight(prefix) {
+  const visual = document.getElementById(prefix + '-visual');
+  if (!visual) { toast('Editör bulunamadı', 'warning'); return; }
+  const issues = _collectPreflightIssues(visual).concat(_collectMetadataIssues(prefix));
+  const errors = issues.filter((i) => i.level === 'error');
+  const warns = issues.filter((i) => i.level === 'warn');
+
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.innerHTML = `
+    <div class="modal-dialog" style="max-width:620px">
+      <div class="flex items-center justify-between px-6 py-4" style="border-bottom:1px solid var(--border-soft)">
+        <h3 class="text-base font-semibold" style="color:var(--text-strong)">Yayın Öncesi Kontrol</h3>
+        <button class="modal-close p-1.5 rounded-md" style="color:var(--text-muted)" aria-label="Kapat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="px-6 py-4" style="max-height:60vh;overflow:auto">
+        <div class="text-sm mb-3" style="color:var(--text-muted)">
+          ${issues.length === 0
+            ? '✓ Sorun bulunamadı — figür/tablo atıfları, kaynaklar ve başlıklar tutarlı görünüyor.'
+            : `<strong style="color:#dc2626">${errors.length}</strong> hata, <strong style="color:#b45309">${warns.length}</strong> uyarı bulundu. Bir satıra tıklayınca ilgili yere gider.`}
+        </div>
+        <div id="pf-list" class="space-y-1.5"></div>
+      </div>
+      <div class="flex justify-end gap-2 px-6 py-4" style="border-top:1px solid var(--border-soft);background:var(--bg-subtle);border-radius:0 0 var(--radius-lg) var(--radius-lg)">
+        <button data-action="reload" class="btn btn-secondary">Yeniden Tara</button>
+        <button data-action="close" class="btn btn-primary">Kapat</button>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+  const close = () => { overlay.remove(); document.removeEventListener('keydown', onKey); };
+  const onKey = (e) => { if (e.key === 'Escape') close(); };
+  document.addEventListener('keydown', onKey);
+  overlay.querySelector('.modal-close').onclick = close;
+  overlay.querySelector('[data-action="close"]').onclick = close;
+  overlay.querySelector('[data-action="reload"]').onclick = () => { close(); _runPreflight(prefix); };
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+
+  const list = overlay.querySelector('#pf-list');
+  issues.forEach((iss) => {
+    const row = document.createElement('div');
+    const isErr = iss.level === 'error';
+    row.style.cssText = `display:flex;gap:8px;align-items:flex-start;padding:7px 10px;border-radius:7px;border:1px solid ${isErr ? '#fecaca' : '#fde68a'};background:${isErr ? '#fef2f2' : '#fffbeb'};font-size:12.5px;${iss.el ? 'cursor:pointer' : ''}`;
+    row.innerHTML = `<span style="flex-shrink:0">${isErr ? '⛔' : '⚠️'}</span><span style="color:var(--text-strong)">${esc(iss.msg)}</span>`;
+    if (iss.el) {
+      row.addEventListener('click', () => {
+        close();
+        try {
+          iss.el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          const prev = iss.el.style.outline;
+          iss.el.style.outline = '2px solid #f59e0b';
+          iss.el.style.outlineOffset = '2px';
+          setTimeout(() => { iss.el.style.outline = prev; iss.el.style.outlineOffset = ''; }, 2200);
+        } catch (_) {}
+      });
+    }
+    list.appendChild(row);
+  });
+}
+
+// ── Reader preview: render the draft with the public article's own styles ────
+let _readerPreviewCss = null;
+async function _openReaderPreview(prefix) {
+  const html = getHtmlEditorContent(prefix);
+  if (_readerPreviewCss === null) {
+    // Borrow the public article page's inline <style> blocks (the .article-body
+    // typography/figure/table rules live there, not in style.css) so the preview
+    // matches the reader's view. Cached after first fetch.
+    try {
+      const txt = await (await fetch('/site/article.html')).text();
+      _readerPreviewCss = (txt.match(/<style[\s\S]*?<\/style>/gi) || []).join('\n');
+    } catch (_) { _readerPreviewCss = ''; }
+  }
+  const srcdoc = '<!doctype html><html lang="tr"><head><meta charset="utf-8">' +
+    '<meta name="viewport" content="width=device-width, initial-scale=1">' +
+    '<link rel="stylesheet" href="/site/css/style.css">' +
+    _readerPreviewCss +
+    '<style>html,body{margin:0;background:#eef0f2}.bmj-pv{max-width:860px;margin:0 auto;padding:36px 28px;background:#fff;min-height:100vh;box-shadow:0 0 0 1px rgba(0,0,0,.06)}</style>' +
+    '</head><body><div class="bmj-pv"><div class="article-body">' + html + '</div></div></body></html>';
+
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.innerHTML = `
+    <div class="modal-dialog" style="max-width:920px;width:94vw;height:88vh;display:flex;flex-direction:column">
+      <div class="flex items-center justify-between px-6 py-3" style="border-bottom:1px solid var(--border-soft)">
+        <h3 class="text-base font-semibold" style="color:var(--text-strong)">Okuyucu Önizlemesi <span class="text-xs font-normal" style="color:var(--text-faint)">— yayındaki görünüm</span></h3>
+        <button class="modal-close p-1.5 rounded-md" style="color:var(--text-muted)" aria-label="Kapat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <iframe id="reader-pv-frame" style="flex:1;width:100%;border:0;background:#fff"></iframe>
+    </div>`;
+  document.body.appendChild(overlay);
+  const close = () => { overlay.remove(); document.removeEventListener('keydown', onKey); };
+  const onKey = (e) => { if (e.key === 'Escape') close(); };
+  document.addEventListener('keydown', onKey);
+  overlay.querySelector('.modal-close').onclick = close;
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+  overlay.querySelector('#reader-pv-frame').srcdoc = srcdoc;
+}
+
+// ── Media manager: edit every figure/table label + caption in one place ──────
+// Plain-text caption of a figure block (label prefix stripped). Mirrors
+// _tableCaptionText for the table side.
+function _figureCaptionText(fig) {
+  const cap = fig.querySelector(':scope > figcaption, :scope > p');
+  if (!cap) return '';
+  const clone = cap.cloneNode(true);
+  const s = clone.querySelector(':scope > strong, :scope > b');
+  if (s) s.remove();
+  let t = (clone.textContent || '').replace(/\s+/g, ' ').trim();
+  if (!s) t = t.replace(/^\s*(FIG\.?|Figure|Şekil|Sekil)\s*\d+[a-z]?\s*[.:\-–—]?\s*/i, '').trim();
+  return t.replace(/^\s*[.:\-–—]\s*/, '').trim();
+}
+
+function _openMediaManager(prefix) {
+  const visual = document.getElementById(prefix + '-visual');
+  if (!visual) { toast('Editör bulunamadı', 'warning'); return; }
+  const articleId = visual.dataset.articleId || null;
+
+  // Collect placed blocks.
+  const rows = [];
+  visual.querySelectorAll('figure[id^="figure-"], figure[id^="fig-"]').forEach((f) => {
+    const m = f.id.match(/-(\d+)$/); if (!m) return;
+    const num = Number(m[1]);
+    const img = f.querySelector('img');
+    rows.push({ kind: 'figure', num, el: f, placed: true,
+      label: _blockManualLabel(f) || ('FIG. ' + num),
+      caption: _figureCaptionText(f),
+      thumb: img ? img.getAttribute('src') : '',
+      filename: img ? (img.getAttribute('src') || '').split('/').pop() : '' });
+  });
+  visual.querySelectorAll('.article-table-wrap[id^="table-"], .article-table-wrap[id^="tab-"]').forEach((t) => {
+    const m = t.id.match(/-(\d+)$/); if (!m) return;
+    const num = Number(m[1]);
+    rows.push({ kind: 'table', num, el: t, placed: true,
+      label: _blockManualLabel(t) || ('Table ' + num),
+      caption: _tableCaptionText(t), thumb: '', filename: '' });
+  });
+
+  // Collect uploaded-but-unplaced assets.
+  try {
+    const cached = window._articleAssets;
+    if (cached && Array.isArray(cached.figures)) {
+      const resolved = _resolveMediaSequence(cached.figures);
+      ['figure', 'table'].forEach((kind) => {
+        (resolved[kind] || []).forEach((blk) => {
+          if (visual.querySelector('#' + kind + '-' + blk.num)) return;
+          const first = blk.panels[0] || {};
+          rows.push({ kind, num: blk.num, el: null, placed: false,
+            label: first.label || ((kind === 'figure' ? 'FIG. ' : 'Table ') + blk.num),
+            caption: first.caption || '', thumb: first.url || '', filename: first.filename || '' });
+        });
+      });
+    }
+  } catch (_) {}
+
+  rows.sort((a, b) => (a.kind === b.kind ? a.num - b.num : (a.kind < b.kind ? -1 : 1)));
+
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.innerHTML = `
+    <div class="modal-dialog" style="max-width:880px;width:94vw;display:flex;flex-direction:column;max-height:88vh">
+      <div class="flex items-center justify-between px-6 py-4" style="border-bottom:1px solid var(--border-soft)">
+        <h3 class="text-base font-semibold" style="color:var(--text-strong)">Medya Yöneticisi <span class="text-xs font-normal" style="color:var(--text-faint)">— figür & tablo etiketleri/başlıkları</span></h3>
+        <button class="modal-close p-1.5 rounded-md" style="color:var(--text-muted)" aria-label="Kapat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="px-5 py-3" style="overflow:auto">
+        ${rows.length === 0 ? '<p class="text-sm py-6 text-center" style="color:var(--text-faint)">Henüz figür/tablo yok.</p>' : `<div id="mm-rows" class="space-y-2"></div>`}
+      </div>
+      <div class="flex justify-end gap-2 px-6 py-3" style="border-top:1px solid var(--border-soft);background:var(--bg-subtle)">
+        <button data-action="close" class="btn btn-primary">Kapat</button>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+  const close = () => { overlay.remove(); document.removeEventListener('keydown', onKey); };
+  const onKey = (e) => { if (e.key === 'Escape') close(); };
+  document.addEventListener('keydown', onKey);
+  overlay.querySelector('.modal-close').onclick = close;
+  overlay.querySelector('[data-action="close"]').onclick = close;
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+
+  const host = overlay.querySelector('#mm-rows');
+  if (!host) return;
+  rows.forEach((r, i) => {
+    const kindLabel = r.kind === 'figure' ? 'Figür' : 'Tablo';
+    const statusBadge = r.placed
+      ? '<span style="font-size:10.5px;padding:2px 7px;border-radius:999px;background:#dcfce7;color:#166534">yerleştirildi</span>'
+      : '<span style="font-size:10.5px;padding:2px 7px;border-radius:999px;background:#fef3c7;color:#92400e">diskte</span>';
+    const row = document.createElement('div');
+    row.style.cssText = 'display:flex;gap:10px;align-items:flex-start;padding:9px 10px;border:1px solid var(--border-soft);border-radius:9px;background:#fff';
+    row.innerHTML = `
+      <div style="flex-shrink:0;width:56px;height:46px;border-radius:6px;overflow:hidden;background:#f4f3f0;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--text-faint)">
+        ${r.thumb ? `<img src="/site/${esc(String(r.thumb).replace(/^\//, ''))}" alt="" style="max-width:100%;max-height:100%;object-fit:contain" onerror="this.style.display='none';this.parentNode.textContent='${r.kind === 'table' ? 'tablo' : '—'}'">` : (r.kind === 'table' ? 'tablo' : '—')}
+      </div>
+      <div style="flex:1;min-width:0">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:5px">
+          <span style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">${kindLabel} ${r.num}</span>
+          ${statusBadge}
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <input class="input mm-label" data-idx="${i}" placeholder="Etiket" value="${esc(r.label)}" style="flex:0 0 150px;font-size:12.5px;padding:5px 8px">
+          <input class="input mm-caption" data-idx="${i}" placeholder="Başlık / açıklama" value="${esc(r.caption)}" style="flex:1;min-width:160px;font-size:12.5px;padding:5px 8px">
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:4px;flex-shrink:0">
+        ${r.placed
+          ? `<button class="btn btn-primary btn-sm mm-apply" data-idx="${i}" style="font-size:11.5px;padding:4px 10px">Uygula</button>
+             <div style="display:flex;gap:4px">
+               <button class="btn btn-secondary btn-sm mm-go" data-idx="${i}" style="font-size:11.5px;padding:4px 8px" title="Metinde göster">Git</button>
+               <button class="btn btn-secondary btn-sm mm-del" data-idx="${i}" style="font-size:11.5px;padding:4px 8px" title="Sil">Sil</button>
+             </div>`
+          : `<button class="btn btn-primary btn-sm mm-place" data-idx="${i}" style="font-size:11.5px;padding:4px 10px" title="Metne yerleştir">Yerleştir</button>`}
+      </div>`;
+    host.appendChild(row);
+  });
+
+  const idx = (e) => Number(e.currentTarget.dataset.idx);
+  const readRow = (i) => ({
+    label: overlay.querySelector(`.mm-label[data-idx="${i}"]`).value.trim(),
+    caption: overlay.querySelector(`.mm-caption[data-idx="${i}"]`).value.trim(),
+  });
+
+  host.querySelectorAll('.mm-apply').forEach((b) => b.onclick = async (e) => {
+    const r = rows[idx(e)];
+    const { label, caption } = readRow(idx(e));
+    const autoDef = (r.kind === 'figure' ? 'FIG. ' : 'Table ') + r.num;
+    const manual = (label && label !== autoDef) ? label : '';
+    if (manual) r.el.setAttribute('data-label', manual.replace(/[.\s]+$/, '')); else r.el.removeAttribute('data-label');
+    _updateExistingMediaCaption(r.el, r.kind, r.num, _captionToHtml(caption), null);
+    if (typeof _autoLinkInEditor === 'function') _autoLinkInEditor(visual);
+    if (typeof _validateCrossRefAnchors === 'function') _validateCrossRefAnchors(visual);
+    markDirty();
+    // Persist figure caption/label so it survives Otomatik Düzenle re-runs.
+    if (r.kind === 'figure' && articleId && r.filename) {
+      try {
+        const all = await API.get(`/media/article/${articleId}/figure-meta`).catch(() => ({}));
+        const prev = (all && all[r.filename]) || {};
+        await API.put(`/media/article/${articleId}/figure-meta`, {
+          filename: r.filename, caption, source: '', size: prev.size || 'auto', label: manual,
+        });
+      } catch (_) { /* non-fatal */ }
+    }
+    toast(`${r.kind === 'figure' ? 'Figür' : 'Tablo'} ${r.num} güncellendi`);
+  });
+
+  host.querySelectorAll('.mm-go').forEach((b) => b.onclick = (e) => {
+    const r = rows[idx(e)];
+    close();
+    try {
+      r.el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const prev = r.el.style.outline;
+      r.el.style.outline = '2px solid #0d9488'; r.el.style.outlineOffset = '2px';
+      setTimeout(() => { r.el.style.outline = prev; r.el.style.outlineOffset = ''; }, 2200);
+    } catch (_) {}
+  });
+
+  host.querySelectorAll('.mm-del').forEach((b) => b.onclick = async (e) => {
+    const r = rows[idx(e)];
+    const lbl = (r.kind === 'figure' ? 'Figür ' : 'Tablo ') + r.num;
+    if (!await confirmAction(`${lbl} metinden silinecek. Emin misiniz? (Dosya diskte kalır.)`)) return;
+    r.el.remove();
+    if (r.kind === 'table' && typeof _renumberTablesByMention === 'function') _renumberTablesByMention(visual);
+    if (typeof _validateCrossRefAnchors === 'function') _validateCrossRefAnchors(visual);
+    if (typeof _autoLinkInEditor === 'function') _autoLinkInEditor(visual);
+    markDirty();
+    close();
+    toast(`${lbl} silindi`, 'success');
+  });
+
+  host.querySelectorAll('.mm-place').forEach((b) => b.onclick = (e) => {
+    const r = rows[idx(e)];
+    const { label, caption } = readRow(idx(e));
+    const autoDef = (r.kind === 'figure' ? 'FIG. ' : 'Table ') + r.num;
+    const manual = (label && label !== autoDef) ? label : '';
+    close();
+    if (r.url || r.thumb) insertFigureIntoFullText(r.thumb || r.url, r.filename, caption, 'medium', manual);
+    else toast('Bu öğenin dosya yolu bulunamadı', 'warning');
+  });
+}
+
+// Renumber table blocks so they read Table 1, Table 2, … in the order each is
+// FIRST mentioned in the prose, updating block ids + bold labels AND every
+// in-text reference (linked anchors and plain text) to match. Tables that are
+// never mentioned keep trailing numbers in document order. Labels are always
+// normalised to the bold "Table N." form even when the number is unchanged.
+// Returns the count of tables whose number changed.
+function _renumberTablesByMention(visual) {
+  if (!visual) return 0;
+  const blocks = Array.from(visual.querySelectorAll('[id^="table-"]'))
+    // Real tables only — a wrap with no <table>/<img> is a phantom (e.g. a
+    // section heading wrapped by a botched paste); counting it would mis-number
+    // the real tables. _normalizeMediaCaptions unwraps such phantoms separately.
+    .filter((el) => el.tagName !== 'A' && /^table-\d+$/i.test(el.id) && el.querySelector('table, img'));
+  if (!blocks.length) return 0;
+  const oldNums = blocks.map((b) => Number(b.id.replace(/^table-/i, '')));
+  // Ambiguous if duplicate ids exist — only normalise labels, don't remap.
+  if (new Set(oldNums).size !== oldNums.length) {
+    blocks.forEach((b, i) => _refreshTableLabel(b, oldNums[i]));
+    return 0;
+  }
+
+  const skipZone = (el) => !!(el && el.closest && el.closest(
+    '.article-references, .article-acknowledgments, .article-footnotes, .article-supplementary, .article-figure, .article-table-wrap, figure'
+  ));
+
+  // First-mention order: walk the editor in document order, recording table
+  // numbers from linked anchors (href) and plain-text "Table N" mentions.
+  const seen = new Set();
+  const mentionOrder = [];
+  const push = (n) => { if (oldNums.includes(n) && !seen.has(n)) { seen.add(n); mentionOrder.push(n); } };
+  const walker = document.createTreeWalker(visual, NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT, null);
+  for (let node = walker.nextNode(); node; node = walker.nextNode()) {
+    if (node.nodeType === 1) {
+      if (node.tagName === 'A' && !skipZone(node)) {
+        const m = (node.getAttribute('href') || '').match(/^#table-(\d+)$/i);
+        if (m) push(Number(m[1]));
+      }
+      continue;
+    }
+    if (skipZone(node.parentNode)) continue;
+    if (node.parentNode && node.parentNode.closest && node.parentNode.closest('a')) continue;
+    const re = /(?<![A-Za-z])(?:tables?|tablolar?|tablo)\s+(\d+)/gi;
+    let mm;
+    while ((mm = re.exec(node.nodeValue)) !== null) push(Number(mm[1]));
+  }
+
+  const finalOrder = mentionOrder.concat(oldNums.filter((n) => !seen.has(n)));
+  const map = {};
+  finalOrder.forEach((oldN, i) => { map[oldN] = i + 1; });
+  const changed = oldNums.filter((n) => map[n] !== n).length;
+
+  // Apply: renumber + (re)normalise every table block's label.
+  blocks.forEach((b) => {
+    const oldN = Number(b.id.replace(/^table-/i, ''));
+    const newN = map[oldN];
+    if (newN !== oldN) b.id = `table-${newN}`;
+    _refreshTableLabel(b, newN);
+  });
+
+  if (changed) {
+    // Remap linked references.
+    visual.querySelectorAll('a[href^="#table-"]').forEach((a) => {
+      if (skipZone(a)) return;
+      const m = (a.getAttribute('href') || '').match(/^#table-(\d+)$/i);
+      if (!m) return;
+      const newN = map[Number(m[1])];
+      if (!newN) return;
+      a.setAttribute('href', `#table-${newN}`);
+      a.textContent = a.textContent.replace(/\d+/, String(newN));
+    });
+    // Remap plain-text mentions (single-pass replace per node → each occurrence
+    // maps exactly once, so swaps like 1↔2 don't cancel out).
+    const tWalker = document.createTreeWalker(visual, NodeFilter.SHOW_TEXT, {
+      acceptNode: (n) => {
+        if (!n.nodeValue || !/(?:table|tablo)\s+\d/i.test(n.nodeValue)) return NodeFilter.FILTER_REJECT;
+        if (skipZone(n.parentNode)) return NodeFilter.FILTER_REJECT;
+        if (n.parentNode && n.parentNode.closest && n.parentNode.closest('a')) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      },
+    });
+    const tNodes = [];
+    for (let n = tWalker.nextNode(); n; n = tWalker.nextNode()) tNodes.push(n);
+    tNodes.forEach((n) => {
+      n.nodeValue = n.nodeValue.replace(/((?:tables?|tablolar?|tablo)\s+)(\d+)/gi, (full, w, d) => {
+        const newN = map[Number(d)];
+        return newN ? w + newN : full;
+      });
+    });
+  }
+  return changed;
 }
 
 // One-shot "Otomatik Düzenle": fetches every uploaded figure / table from
@@ -5710,22 +7295,25 @@ async function _autoArrangeFullText(prefix) {
   // into one composite <figure id="figure-1"> with labelled panels.
   // Each entry also carries caption + source (saved via Figür Ekle dialog)
   // so _buildMediaBlock can render them into the caption.
+  // Resolve uploaded files into ordered, distinctly-numbered blocks. This is
+  // the SAME resolver the cross-ref picker uses, so the #figure-N anchor a user
+  // inserted from the picker always lands on the block we build here — even for
+  // arbitrarily-named or same-numbered uploads.
   const buckets = { figure: new Map(), table: new Map() };
-  (assets.figures || []).forEach((f) => {
-    const isTable = /(?:^|[-_])tab(?:le)?[-_]?\d+/i.test(f.filename || '');
-    const kind = isTable ? 'table' : 'figure';
-    const meta = _extractMediaNum(f.filename, kind);
-    if (!meta || !meta.num) return;
-    if (!buckets[kind].has(meta.num)) buckets[kind].set(meta.num, []);
-    buckets[kind].get(meta.num).push({
-      panel: meta.panel,
-      url: f.url,
-      filename: f.filename,
-      caption: f.caption || '',
-      source:  f.source  || '',
-      size:    f.size    || 'auto',
+  const resolvedSeq = _resolveMediaSequence(assets.figures || []);
+  for (const kind of ['figure', 'table']) {
+    resolvedSeq[kind].forEach((blk) => {
+      buckets[kind].set(blk.num, blk.panels.map((p) => ({
+        panel: p.panel,
+        url: p.url,
+        filename: p.filename,
+        caption: p.caption || '',
+        source:  p.source  || '',
+        size:    p.size    || 'auto',
+        label:   p.label   || '',
+      })));
     });
-  });
+  }
   // Sort panels A → B → C inside each bucket; null-panel entries come first
   // so a "figure-1.png" + "figure-1a.png" pair keeps the bare version on top.
   const sortPanels = (a, b) => {
@@ -5767,9 +7355,16 @@ async function _autoArrangeFullText(prefix) {
         const stripped = rawCap.replace(new RegExp(`^\\s*(?:figure|fig\\.?|şekil|sekil|tablo|table)\\s*${num}[a-z]?\\s*[\\.:\\-—–]?\\s*`, 'i'), '').trim();
         const captionInner = _captionToHtml(stripped);
 
+        // Sync the saved manual-label LOCK from figure-meta onto the block so a
+        // label set/cleared AFTER first insertion takes effect on re-arrange.
+        const manualPick = panels.find((p) => p.label != null && String(p.label).trim() !== '');
+        const manualLabel = manualPick ? String(manualPick.label).trim() : '';
+
         if (existing) {
           // Refresh the caption AND the data-size — keep image src and
           // document position intact.
+          if (manualLabel) existing.setAttribute('data-label', manualLabel.replace(/[.\s]+$/, ''));
+          else existing.removeAttribute('data-label');
           const sizePick = panels.find((p) => p.size && p.size !== 'auto') || panels[0];
           const blockSize = (sizePick && sizePick.size && sizePick.size !== 'auto') ? sizePick.size : null;
           _updateExistingMediaCaption(existing, kind, num, captionInner, blockSize);
@@ -5795,6 +7390,11 @@ async function _autoArrangeFullText(prefix) {
     _normalizeMsoReferenceList(visual);
     _promoteMsoHeadings(visual);
     _ensureMediaIds(visual);
+    // Renumber tables by first-mention order (Table 1, Table 2, …) and rewrite
+    // their labels + in-text references to match — BEFORE auto-linking so plain
+    // mentions get linked against the final numbers.
+    _renumberTablesByMention(visual);
+    _normalizeMediaCaptions(visual);
     _autoLinkInEditor(visual);
     _validateCrossRefAnchors(visual);
   } finally {
@@ -5865,13 +7465,13 @@ async function _uploadInlineMedia(prefix, kind, file) {
       block.className = 'article-figure';
       block.innerHTML =
         `<img src="${esc(uploaded.url)}" alt="Figure ${nextNum}" loading="lazy">` +
-        `<p><strong>FIG. ${nextNum}.</strong> </p>`;
+        `<p contenteditable="false"><strong>FIG. ${nextNum}.</strong> </p>`;
     } else {
       block = document.createElement('div');
       block.id = `table-${nextNum}`;
       block.className = 'article-table-wrap';
       block.innerHTML =
-        `<p class="table-label"><strong>TABLE ${nextNum}.</strong> </p>` +
+        `<p class="table-label" contenteditable="false">${_tableLabelHtml(nextNum, '')}</p>` +
         `<img src="${esc(uploaded.url)}" alt="Table ${nextNum}" loading="lazy">`;
     }
     visual.appendChild(block);
@@ -5894,6 +7494,275 @@ async function _uploadInlineMedia(prefix, kind, file) {
   }
 }
 
+// Sanitize a table pasted from Word/Excel into clean, portable HTML: drop
+// Word's mso namespaced tags (o:p…), unwrap styled <span>/<font> wrappers, and
+// strip every presentational attribute except the structural colspan/rowspan/
+// scope. Returns an <table class="article-table"> string matching the editor's
+// own tables so the public-site styling applies uniformly.
+function _cleanPastedTable(srcTable) {
+  const table = srcTable.cloneNode(true);
+  // 1) Remove namespaced junk elements (e.g. <o:p>, <w:…>).
+  table.querySelectorAll('*').forEach((el) => {
+    if (el.tagName && el.tagName.indexOf(':') !== -1) el.remove();
+  });
+  // 2) Unwrap span/font wrappers (Word wraps cell text in styled spans). Loop
+  //    until none remain so nested wrappers collapse too.
+  let wrap;
+  let guard = 0;
+  while ((wrap = table.querySelector('span, font')) && guard++ < 5000) {
+    const parent = wrap.parentNode;
+    while (wrap.firstChild) parent.insertBefore(wrap.firstChild, wrap);
+    parent.removeChild(wrap);
+  }
+  // 3) Strip presentational attributes; keep table structure semantics.
+  //    querySelectorAll('*') only returns DESCENDANTS, so clean the root
+  //    <table>'s own Word attributes (border/cellspacing/style/mso…) separately.
+  const stripAttrs = (el) => {
+    Array.from(el.attributes).forEach((a) => {
+      const n = a.name.toLowerCase();
+      if (n !== 'colspan' && n !== 'rowspan' && n !== 'scope') el.removeAttribute(a.name);
+    });
+  };
+  stripAttrs(table);
+  table.querySelectorAll('*').forEach(stripAttrs);
+  // 4) Drop Word width hints.
+  table.querySelectorAll('colgroup, col').forEach((e) => e.remove());
+  table.className = 'article-table';
+  return table.outerHTML;
+}
+
+// Derive the plain-text caption of a table block (the label text after the bold
+// "Table N." / manual prefix). Used to pre-fill the edit dialog.
+function _tableCaptionText(block) {
+  if (!block) return '';
+  const lp = block.querySelector(':scope > p.table-label') || block.querySelector(':scope > p');
+  if (!lp) return '';
+  const clone = lp.cloneNode(true);
+  const s = clone.querySelector(':scope > strong, :scope > b');
+  if (s) s.remove(); // drop the bold "Table N." / manual prefix
+  let txt = (clone.textContent || '').replace(/\s+/g, ' ').trim();
+  // If there was no bold wrapper, defensively strip a leading "Table N." prefix.
+  if (!s) txt = txt.replace(/^\s*(?:tables?|tablolar?|tablo|tab\.?)\s*\d+[a-z]?\s*[.:\-–—]?\s*/i, '').trim();
+  return txt.replace(/^\s*[.:\-–—]\s*/, '').trim();
+}
+
+// Bubble action: add a NEW table — or, when `editNum` is given, EDIT the existing
+// `#table-${editNum}` block in place — by PASTING Word/Excel content (not by
+// uploading an image). Opens a dialog with a paste target + label + optional
+// caption. In INSERT mode it wraps the pasted <table> as a numbered `#table-N`
+// block at the cursor; in EDIT mode it updates the existing block's label,
+// caption, and (if a table is pasted/edited) its content, keeping the same id
+// and document position. Falls back to image upload (insert mode only).
+function _insertInlineTable(prefix, editNum) {
+  const visual = document.getElementById(prefix + '-visual');
+  if (!visual) return;
+  const editing = Number.isInteger(editNum) && editNum > 0;
+  const editBlock = editing ? visual.querySelector('#table-' + editNum) : null;
+  if (editing && !editBlock) { toast('Düzenlenecek tablo bulunamadı', 'warning'); return; }
+
+  // Capture the editor caret NOW — interacting with the dialog's paste area
+  // moves the document selection and would otherwise lose the insertion point.
+  const stashRange = (_crossRefSelection[prefix] && _crossRefSelection[prefix].range)
+    ? _crossRefSelection[prefix].range.cloneRange() : null;
+
+  // Pre-compute the AUTO default label so the Etiket field shows the number the
+  // table would get automatically. Editing it locks the label (B rule). In edit
+  // mode the number is fixed to the block being edited.
+  let dlgNextNum;
+  if (editing) {
+    dlgNextNum = editNum;
+  } else {
+    try {
+      const t0 = _scanCrossRefTargets(prefix);
+      dlgNextNum = (t0.tables && t0.tables.length) ? Math.max(...t0.tables.map((t) => t.num)) + 1 : 1;
+    } catch { dlgNextNum = 1; }
+  }
+  const tblAutoDefault = `Table ${dlgNextNum}`;
+  // Edit-mode prefills: existing manual label (or auto default), caption text,
+  // and the current <table> HTML so the user sees what they're editing.
+  const prefillLabel = editing ? (_blockManualLabel(editBlock) || tblAutoDefault) : tblAutoDefault;
+  const prefillCaption = editing ? _tableCaptionText(editBlock) : '';
+  const prefillTableHtml = editing ? (editBlock.querySelector('table') ? editBlock.querySelector('table').outerHTML : '') : '';
+  const isImageTable = editing && !editBlock.querySelector('table') && !!editBlock.querySelector('img');
+
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.innerHTML = `
+    <div class="modal-dialog" style="max-width:640px">
+      <div class="flex items-center justify-between px-6 py-4" style="border-bottom:1px solid var(--border-soft)">
+        <div>
+          <h3 class="text-base font-semibold" style="color:var(--text-strong);letter-spacing:-0.01em">${editing ? 'Tabloyu Düzenle' : "Yeni Tablo (Word'den yapıştır)"}</h3>
+          <p class="text-xs mt-0.5" style="color:var(--text-muted)">${editing
+            ? 'Etiketi/başlığı değiştirin; tablo içeriğini aşağıdaki alanda doğrudan düzenleyebilir veya Word/Excel\'den yeniden yapıştırabilirsiniz.'
+            : "Word/Excel'deki tabloyu seçip kopyalayın, aşağıdaki alana <strong>Ctrl+V</strong> ile yapıştırın. Tablo gerçek bir tablo olarak (resim değil) eklenir."}</p>
+        </div>
+        <button class="modal-close p-1.5 rounded-md" style="color:var(--text-muted)" aria-label="Kapat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="px-6 py-4 space-y-3">
+        <div><label class="label">Etiket</label>
+          <input id="itbl-label" class="input" placeholder="Table 1" value="${esc(prefillLabel)}" data-auto-default="${esc(tblAutoDefault)}">
+          <p class="text-xs mt-1" style="color:var(--text-faint)">Başlığın başında <strong>kalın</strong> görünür (ör. <strong>Tablo 1a</strong>). Değiştirmezseniz otomatik numaralanır.</p></div>
+        <div><label class="label">Tablo başlığı <span class="font-normal" style="color:var(--text-faint)">(opsiyonel)</span></label>
+          <input id="itbl-caption" class="input" placeholder="Örn. Hastaların temel özellikleri" value="${esc(prefillCaption)}"></div>
+        <div${isImageTable ? ' style="display:none"' : ''}>
+          <label class="label">${editing ? 'Tablo içeriği (düzenleyin veya yeniden yapıştırın)' : 'Tabloyu buraya yapıştırın'}</label>
+          <div id="itbl-paste" contenteditable="true" class="input" style="min-height:140px;max-height:300px;overflow:auto;background:#fff" data-placeholder="Word/Excel tablosunu buraya yapıştırın (Ctrl+V)…">${prefillTableHtml}</div>
+          <p id="itbl-hint" class="text-xs mt-1" style="color:var(--text-faint)">${editing ? 'Hücreleri doğrudan tıklayıp düzenleyebilirsiniz.' : 'Yapıştırdıktan sonra önizleme burada görünür.'}</p>
+        </div>
+        ${isImageTable ? '<p class="text-xs" style="color:var(--text-faint)">Bu tablo bir görsel olarak eklenmiş — burada yalnızca etiket ve başlığı düzenleyebilirsiniz.</p>' : ''}
+      </div>
+      <div class="flex items-center justify-between gap-2 px-6 py-4" style="border-top:1px solid var(--border-soft);background:var(--bg-subtle);border-radius:0 0 var(--radius-lg) var(--radius-lg)">
+        ${editing ? '<span></span>' : `<label class="btn btn-secondary btn-sm cursor-pointer" title="Tablo bir resimse, görsel olarak yükleyin">
+          Bunun yerine görsel yükle
+          <input id="itbl-img" type="file" accept="image/*,.tif,.tiff" class="hidden">
+        </label>`}
+        <div class="flex gap-2">
+          <button data-action="cancel" class="btn btn-secondary">İptal</button>
+          <button data-action="insert" class="btn btn-primary">${editing ? 'Kaydet' : 'Tabloyu Ekle'}</button>
+        </div>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+
+  const pasteEl = overlay.querySelector('#itbl-paste');
+  const hintEl = overlay.querySelector('#itbl-hint');
+  const close = () => { overlay.remove(); document.removeEventListener('keydown', onKey); };
+  const onKey = (e) => { if (e.key === 'Escape') close(); };
+  document.addEventListener('keydown', onKey);
+  overlay.querySelector('.modal-close').onclick = close;
+  overlay.querySelector('[data-action="cancel"]').onclick = close;
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+  setTimeout(() => { try { pasteEl.focus(); } catch (_) {} }, 30);
+
+  // Live feedback: show how many rows/cols were detected after a paste.
+  pasteEl.addEventListener('input', () => {
+    const t = pasteEl.querySelector('table');
+    if (t) {
+      const rows = t.querySelectorAll('tr').length;
+      const cols = t.querySelector('tr') ? t.querySelector('tr').children.length : 0;
+      hintEl.textContent = `Tablo algılandı: ${rows} satır × ${cols} sütun.`;
+      hintEl.style.color = 'var(--success-text)';
+    } else if ((pasteEl.textContent || '').trim()) {
+      hintEl.textContent = 'Henüz tablo algılanmadı — Word/Excel\'den bir tablo seçip kopyaladığınızdan emin olun.';
+      hintEl.style.color = 'var(--warning-text)';
+    }
+  });
+
+  // Fallback: upload a table image instead (insert mode only — the input is not
+  // rendered in edit mode).
+  const imgInput = overlay.querySelector('#itbl-img');
+  if (imgInput) {
+    imgInput.onchange = (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      close();
+      _crossRefSelection[prefix] = stashRange ? { range: stashRange, text: '' } : null;
+      _uploadInlineMedia(prefix, 'table', file);
+    };
+  }
+
+  overlay.querySelector('[data-action="insert"]').onclick = () => {
+    const tableEl = pasteEl ? pasteEl.querySelector('table') : null;
+    // A table is required when CREATING, and when editing a real (non-image)
+    // table. An image-based table can be saved with only label/caption changes.
+    if (!tableEl && !(editing && isImageTable)) {
+      toast('Yapıştırılan içerikte tablo bulunamadı. Word/Excel\'de tabloyu seçip kopyalayın.', 'warning');
+      return;
+    }
+    const caption = (overlay.querySelector('#itbl-caption').value || '').trim();
+    // B rule: lock the label only if the user changed it from the auto default.
+    const labelEl = overlay.querySelector('#itbl-label');
+    const labelVal = labelEl ? labelEl.value.trim() : '';
+    const autoDef  = labelEl ? (labelEl.dataset.autoDefault || '') : '';
+    const manualLabel = (labelVal && labelVal !== autoDef) ? labelVal : '';
+
+    // ── EDIT MODE: update the existing block in place (keep id + position) ──
+    if (editing) {
+      const block = visual.querySelector('#table-' + editNum);
+      if (!block) { toast('Tablo bulunamadı', 'warning'); close(); return; }
+      if (manualLabel) block.setAttribute('data-label', manualLabel.replace(/[.\s]+$/, ''));
+      else block.removeAttribute('data-label');
+      // Refresh the label line.
+      let labelP = block.querySelector(':scope > p.table-label');
+      if (!labelP) {
+        labelP = document.createElement('p');
+        labelP.className = 'table-label';
+        block.insertBefore(labelP, block.firstChild);
+      }
+      labelP.setAttribute('contenteditable', 'false');
+      labelP.innerHTML = _tableLabelHtml(editNum, esc(caption), manualLabel);
+      // Replace the table content if the user pasted/edited one.
+      if (tableEl) {
+        const tmp = document.createElement('div');
+        tmp.innerHTML = _cleanPastedTable(tableEl);
+        const newTable = tmp.firstElementChild;
+        const oldTable = block.querySelector(':scope > table');
+        if (oldTable && newTable) oldTable.replaceWith(newTable);
+        else if (newTable) block.appendChild(newTable);
+      }
+      close();
+      markDirty();
+      if (typeof _validateCrossRefAnchors === 'function') _validateCrossRefAnchors(visual);
+      if (typeof _autoLinkInEditor === 'function') _autoLinkInEditor(visual);
+      _renderCrossRefBubble(prefix);
+      toast(`Tablo ${editNum} güncellendi`, 'success');
+      return;
+    }
+
+    // ── INSERT MODE ──
+    const targets = _scanCrossRefTargets(prefix);
+    const nextNum = (targets.tables && targets.tables.length)
+      ? Math.max(...targets.tables.map((t) => t.num)) + 1 : 1;
+    const cleanTable = _cleanPastedTable(tableEl);
+    close();
+
+    // Build the block as a DOM node and insert it as a direct child of the
+    // editor, right AFTER the paragraph holding the caret. We avoid
+    // execCommand('insertHTML') here because it mangles a block (<div> with a
+    // nested <p> + <table>) when the caret sits inside a <p> — it was dropping
+    // the <p class="table-label"> caption line.
+    const blockNode = document.createElement('div');
+    blockNode.className = 'article-table-wrap';
+    blockNode.id = `table-${nextNum}`;
+    if (manualLabel) blockNode.setAttribute('data-label', manualLabel.replace(/[.\s]+$/, ''));
+    blockNode.innerHTML =
+      `<p class="table-label" contenteditable="false">${_tableLabelHtml(nextNum, esc(caption), manualLabel)}</p>` + cleanTable;
+
+    visual.focus();
+    let hostBlock = null;
+    if (stashRange) {
+      let node = stashRange.startContainer;
+      if (node && node.nodeType === 3) node = node.parentNode;
+      hostBlock = node && node.closest ? node.closest('p, div, li, h1, h2, h3, h4, h5, h6, blockquote, figure, table') : null;
+      while (hostBlock && hostBlock.parentNode && hostBlock.parentNode !== visual) hostBlock = hostBlock.parentNode;
+    }
+    if (hostBlock && hostBlock.parentNode === visual) {
+      // If the caret sits on an EMPTY line (a blank <p> the user made to place
+      // the table), insert the table IN PLACE of it — replacing the empty line
+      // rather than dropping the table one row BELOW it, which would leave an
+      // extra blank line. Otherwise (caret inside a real paragraph) insert right
+      // after that block, since a table can't live inside a text paragraph.
+      const isEmptyHost = /^(P|DIV)$/.test(hostBlock.tagName)
+        && !(hostBlock.textContent || '').trim()
+        && !hostBlock.querySelector('img, table');
+      if (isEmptyHost) {
+        hostBlock.parentNode.replaceChild(blockNode, hostBlock);
+      } else {
+        hostBlock.parentNode.insertBefore(blockNode, hostBlock.nextSibling);
+      }
+    } else {
+      visual.appendChild(blockNode);
+    }
+    markDirty();
+    if (typeof _validateCrossRefAnchors === 'function') _validateCrossRefAnchors(visual);
+    if (typeof _autoLinkInEditor === 'function') _autoLinkInEditor(visual);
+    _renderCrossRefBubble(prefix);
+    toast(`Tablo ${nextNum} eklendi`, 'success');
+  };
+}
+
 function _positionCrossRefBubble(range) {
   const bubble = ensureCrossRefBubble();
   bubble.classList.remove('hidden');
@@ -5901,15 +7770,10 @@ function _positionCrossRefBubble(range) {
   const rect = range.getBoundingClientRect();
   const bubbleRect = bubble.getBoundingClientRect();
   const margin = 8;
-  const viewportTop = window.scrollY;
-  // Default: place above the selection.
-  let top = rect.top + window.scrollY - bubbleRect.height - margin;
-  let flip = '';
-  if (top < viewportTop + 4) {
-    // Not enough room above → flip to below.
-    top = rect.bottom + window.scrollY + margin;
-    flip = 'below';
-  }
+  // Always place the bubble BELOW the selection — never above. (Requested:
+  // the pop-up should consistently appear under the selected text.)
+  const top = rect.bottom + window.scrollY + margin;
+  const flip = 'below';
   let left = rect.left + window.scrollX + (rect.width / 2) - (bubbleRect.width / 2);
   // Keep inside viewport horizontally.
   const minLeft = window.scrollX + 8;
@@ -5920,6 +7784,49 @@ function _positionCrossRefBubble(range) {
   bubble.style.left = left + 'px';
   if (flip) bubble.dataset.flip = flip;
   else bubble.removeAttribute('data-flip');
+}
+
+// Toolbar entry point for the cross-ref pop-up. Opens the SAME bubble that
+// appears on text selection, anchored to the current caret/selection — so the
+// user can add/link a figure, table (incl. paste-a-table) or reference without
+// first selecting text. Pinned so the collapsed-selection auto-hide doesn't
+// close it immediately; dismissed by outside click, Escape, or a chip insert.
+function openCrossRefMenu(prefix) {
+  const visual = document.getElementById(prefix + '-visual');
+  if (!visual) { toast('Önce Tam Metin sekmesini açın.', 'warning'); return; }
+  // Capture the user's caret/selection BEFORE focus(): calling focus() on a
+  // contenteditable that has no current caret moves it to the START, which would
+  // make a "+ Yeni Tablo" insert land at the TOP instead of where the user is.
+  // The toolbar button's onmousedown→preventDefault keeps the live selection
+  // intact, so reading it here gives the real caret.
+  const sel = window.getSelection();
+  let range = null;
+  if (sel && sel.rangeCount && visual.contains(sel.anchorNode)) {
+    range = sel.getRangeAt(0).cloneRange();
+  }
+  visual.focus();
+  if (!range) {
+    // No caret in the editor → default to the END of the document (a sensible
+    // place to append a new table/figure), never the start.
+    range = document.createRange();
+    range.selectNodeContents(visual);
+    range.collapse(false);
+    try { sel.removeAllRanges(); sel.addRange(range); } catch (_) { /* ignore */ }
+  }
+  _crossRefSelection[prefix] = { range: range.cloneRange(), text: range.toString() };
+  _crossRefBubblePinned = true;
+  _renderCrossRefBubble(prefix);
+  // Anchor to the caret rect; fall back to the editor's top-left when the rect
+  // is degenerate (e.g. caret in an empty block reports a 0×0 rect at 0,0).
+  const r = range.getBoundingClientRect();
+  const anchor = (r && (r.height || r.width || r.top || r.left))
+    ? range
+    : { getBoundingClientRect: () => {
+        const v = visual.getBoundingClientRect();
+        return { top: v.top + 8, bottom: v.top + 32, left: v.left + 16, right: v.left + 40, width: 24, height: 24 };
+      } };
+  _positionCrossRefBubble(anchor);
+  requestAnimationFrame(() => _positionCrossRefBubble(anchor));
 }
 
 // Global selectionchange listener — one per page, finds whichever FT visual
@@ -5940,7 +7847,7 @@ function _wireCrossRefBubbleOnce() {
       return;
     }
     const sel = window.getSelection();
-    if (!sel || !sel.rangeCount || sel.isCollapsed) { hideCrossRefBubble(); return; }
+    if (!sel || !sel.rangeCount || sel.isCollapsed) { if (!_crossRefBubblePinned) hideCrossRefBubble(); return; }
     const range = sel.getRangeAt(0);
     // Detect which FT editor (if any) contains the selection.
     let node = range.commonAncestorContainer;
@@ -6670,6 +8577,16 @@ async function loadArticleAssets(articleId, article) {
   try {
     const data = await API.get(`/media/article/${articleId}/assets`);
     window._articleAssets = data;
+    // Keep the cross-ref bubble in sync with Dosyalar add/delete: if it's
+    // currently open, re-render it from the fresh cache + live editor DOM so
+    // uploaded figures appear and deleted ones disappear 1:1, with no stale
+    // tiles. (Hidden bubbles re-render on the next selection anyway.)
+    const _bubble = document.getElementById('cr-bubble');
+    if (_bubble && !_bubble.classList.contains('hidden') && typeof _renderCrossRefBubble === 'function') {
+      const _pfx = document.getElementById('ft-visual') ? 'ft'
+        : document.getElementById('aip-ft-visual') ? 'aip-ft' : null;
+      if (_pfx) _renderCrossRefBubble(_pfx);
+    }
     if (!hasDosyaUi) return; // cache populated — nothing else to render
     if (pdfEl) pdfEl.textContent = article?.pdfUrl ? '1 dosya' : '0';
     if (figEl) figEl.textContent = `${data.figures.length} dosya`;
@@ -6855,17 +8772,65 @@ function wizFigureThumb(f, articleId) {
   </div>`;
 }
 
+// Remove any figure/table block placed in the full-text editor(s) whose image
+// points at `filename`. Deleting a file from the Dosyalar tab must also pull
+// its placed block out of the body — otherwise the block (and its caption)
+// lingers with a broken image and keeps showing up in the cross-ref picker /
+// bubble. Returns the number of blocks/images removed. Also handles multi-panel
+// figures: a panel image is removed, and the parent <figure> is dropped only
+// once it has no images left.
+function _removePlacedMediaByFile(filename) {
+  const base = String(filename || '').split('/').pop().toLowerCase();
+  if (!base) return 0;
+  let removed = 0;
+  ['ft-visual', 'aip-ft-visual'].forEach((vid) => {
+    const visual = document.getElementById(vid);
+    if (!visual) return;
+    let touched = false;
+    visual.querySelectorAll('img').forEach((img) => {
+      const src = (img.getAttribute('src') || '').split('/').pop().toLowerCase();
+      if (src !== base) return;
+      const block = img.closest('figure, .article-figure, .article-table-wrap, [id^="figure-"], [id^="table-"], [id^="fig-"], [id^="tab-"]');
+      if (block) {
+        img.remove();
+        // Drop the whole block only when no images remain (keeps multi-panel
+        // figures intact when just one panel file is deleted).
+        if (!block.querySelector('img')) block.remove();
+      } else {
+        img.remove();
+      }
+      removed += 1;
+      touched = true;
+    });
+    // A removed target turns its in-text cross-refs into broken links — flag
+    // them so the editor shows the red "hedef yok" state instead of a dead anchor.
+    if (touched && typeof _validateCrossRefAnchors === 'function') _validateCrossRefAnchors(visual);
+  });
+  return removed;
+}
+
 // Delete an uploaded figure file (and its caption metadata). Shows a confirm
-// dialog, hits DELETE on the server, then refreshes the wizard.
+// dialog, hits DELETE on the server, removes the placed block from the full
+// text, then refreshes the wizard, asset cache and cross-ref bubble so the
+// Dosyalar deletion is reflected 1:1 in the Tam Metin picker.
 async function deleteUploadedFigure(articleId, filename) {
-  const ok = await confirmAction(`"${filename}" figürünü silmek istediğinize emin misiniz? Bu işlem geri alınamaz.`);
+  const ok = await confirmAction(`"${filename}" figürünü silmek istediğinize emin misiniz? Tam metinde yerleştirilmişse oradan da kaldırılır. Bu işlem geri alınamaz.`);
   if (!ok) return;
   try {
     await API.del(`/media/article/${articleId}/figures/${encodeURIComponent(filename)}`);
-    toast(`${filename} silindi`);
-    // Refresh the wizard / file listing
+    // Pull the placed block out of the full-text editor (if any).
+    const removedFromBody = _removePlacedMediaByFile(filename);
+    if (removedFromBody) {
+      if (typeof markDirty === 'function') markDirty();
+      toast(`${filename} silindi — tam metinden de ${removedFromBody} blok kaldırıldı (kaydetmeyi unutmayın)`);
+    } else {
+      toast(`${filename} silindi`);
+    }
+    // Refresh the asset cache + Dosyalar wizard. loadArticleAssets also
+    // re-renders an open cross-ref bubble from the fresh cache + live DOM, so
+    // the deleted figure disappears from the Tam Metin pop-up immediately.
     if (typeof loadArticleAssets === 'function') {
-      loadArticleAssets(articleId);
+      await loadArticleAssets(articleId);
     } else {
       handleRoute();
     }
@@ -6920,7 +8885,7 @@ function _topLevelBlockOf(node, visual) {
 // If a block with the same ID already exists in the editor (e.g. previously
 // placed by Otomatik Düzenle or a manual insert), the user is asked whether
 // to refresh the caption or cancel — preventing silent duplicate inserts.
-async function insertFigureIntoFullText(url, filename, caption, size) {
+async function insertFigureIntoFullText(url, filename, caption, size, label) {
   // Switch to the Tam Metin tab
   const ftBtn = document.querySelector('.tab-btn[data-tab="fulltext"]') ||
                 document.querySelector('.aip-tab-btn[data-tab="fulltext"]');
@@ -6956,7 +8921,8 @@ async function insertFigureIntoFullText(url, filename, caption, size) {
   // plus the same "Figure N." prefix stripping (so user-typed "Figure 1. Foo"
   // doesn't double up with the auto-added "FIG. 1." label). Size becomes a
   // `data-size` attribute on the figure block so CSS can scale it.
-  const panels = [{ panel: meta?.panel || null, url, filename, caption: caption || '', source: '', size: size || 'medium' }];
+  const manualLabel = typeof label === 'string' ? label.trim() : '';
+  const panels = [{ panel: meta?.panel || null, url, filename, caption: caption || '', source: '', size: size || 'medium', label: manualLabel }];
   const block = _buildMediaBlock(kind, num, panels);
 
   const mode = _htmlEditorModes[prefix] || 'visual';
@@ -6982,6 +8948,10 @@ async function insertFigureIntoFullText(url, filename, caption, size) {
       // the EXACT same formatting rules as Otomatik Düzenle.
       const newCap = block.querySelector(kind === 'figure' ? 'p, figcaption' : 'p.table-label, p');
       const inner = newCap ? newCap.innerHTML.replace(/^<strong>[^<]+<\/strong>\s*/i, '') : '';
+      // Sync the manual-label LOCK state onto the existing block so the in-place
+      // caption refresh below renders the locked label (or reverts to AUTO).
+      if (block.hasAttribute('data-label')) existing.setAttribute('data-label', block.getAttribute('data-label'));
+      else existing.removeAttribute('data-label');
       // block carries the latest data-size from _buildMediaBlock — push it
       // through so changing the size in the dialog updates the existing block.
       _updateExistingMediaCaption(existing, kind, num, inner, block.getAttribute('data-size'));
@@ -7110,16 +9080,25 @@ async function loadFullTextIntoEditor(articleId) {
         _normalizeMsoReferenceList(visual);
         _promoteMsoHeadings(visual);
         _ensureMediaIds(visual);
+        _normalizeMediaCaptions(visual);
         _autoLinkInEditor(visual);
+        _initMediaBlockControls();
       } finally {
         _suppressDirty = false;
       }
     }
+    let prunedNote = '';
+    if (data.html) {
+      const pruned = await _pruneOrphanArticleMedia(visual, articleId);
+      if (pruned) { markDirty(); prunedNote = ` — ${pruned} kullanılmayan (silinmiş) figür kaldırıldı, kaydedin`; }
+    }
     if (status) {
       status.textContent = data.html
-        ? `Yüklü tam metin uzunluğu: ${data.html.length.toLocaleString('tr-TR')} karakter.`
+        ? `Yüklü tam metin uzunluğu: ${data.html.length.toLocaleString('tr-TR')} karakter.${prunedNote}`
         : 'Tam metin henüz mevcut değil.';
     }
+    _setupFtAutosave('ft', articleId);
+    await _maybeOfferDraftRecovery('ft', articleId, data.html || '');
   } catch (err) {
     if (status) status.textContent = `Tam metin okunamadı: ${err.message}`;
   }
@@ -7137,6 +9116,7 @@ async function saveArticleFullText(articleId) {
   try {
     await API.put(`/articles/${articleId}/fulltext`, { html });
     clearDirty();
+    _clearFtDraft('ft', articleId);
     if (status) status.textContent = `Kaydedildi (${html.length.toLocaleString('tr-TR')} karakter).`;
     toast('Tam metin kaydedildi');
   } catch (err) {

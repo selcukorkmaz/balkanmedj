@@ -1,6 +1,6 @@
 /**
  * Balkan Medical Journal — Articles in Press
- * Last updated: 2026-05-22
+ * Last updated: 2026-06-08
  */
 window.ARTICLES_IN_PRESS = [
   {
@@ -62,7 +62,8 @@ window.ARTICLES_IN_PRESS = [
     "received": "",
     "accepted": "",
     "pmid": "",
-    "keywords": []
+    "keywords": [],
+    "publishedOnline": ""
   },
   {
     "id": 2813,
@@ -1136,6 +1137,45 @@ window.ARTICLES_IN_PRESS = [
     ],
     "hasFullText": true,
     "pdfUrl": "js/data/pdfs/2867.pdf",
-    "localPdfUrl": "js/data/pdfs/2867.pdf"
+    "localPdfUrl": "js/data/pdfs/2867.pdf",
+    "publishedOnline": ""
+  },
+  {
+    "id": 2868,
+    "order": 22,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Research Article",
+    "title": "Real-World Evaluation of APRI and FIB-4 Scores in Patients with Chronic Hepatitis C Treated with Direct-Acting Antivirals",
+    "doi": "10.4274/vhd.galenos.2026.2026-2-1",
+    "received": "2026-06-06",
+    "accepted": "2026-05-30",
+    "pmid": "",
+    "abstractHtml": "<!--StartFragment-->\n\n<p class=\"MsoNormal\"><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">ABSTRACT<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">Objectives:</span></b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\"> This study aimed to evaluate\nbiochemical response, sustained virological response (SVR) rates, and changes\nin non-invasive fibrosis markers [aspartate aminotransferase (AST) to platelet\nratio index (APRI) and fibrosis-4 index (FIB-4)] using real-world data in\npatients with chronic hepatitis C virus (HCV) treated with direct-acting\nantivirals (DAAs).<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">Materials\nand Methods:</span></b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">\nPatients aged ≥18 years with chronic HCV who were followed between January 2018\nand December 2024 and treated with glecaprevir/pibrentasvir,\nsofosbuvir/velpatasvir/voxilaprevir, or ledipasvir/sofosbuvir were\nretrospectively analyzed. Alanine aminotransferase (ALT), AST, platelet count,\nand HCV-RNA levels were recorded at baseline, at treatment week 4, at end of\ntreatment, and at 12 and 24 weeks after treatment completion. APRI and FIB-4\nscores were calculated at each time point.<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">Results:</span></b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\"> A total of 43 patients were\nincluded; the median age was 57 years (interquartile range: 43-65), and 58%\nwere male. ALT and AST levels decreased significantly from treatment week 4\nonward (p&lt;0.001). APRI scores showed a significant early decline that persisted\nthroughout the follow-up period (p&lt;0.001). FIB-4 scores decreased\nsignificantly at week 4; however, this reduction was not sustained during\nfollow-up. A strong correlation was observed between changes in APRI and ALT,\nwhereas the association between FIB-4 and ALT was weak and limited. SVR12 and\nSVR24 rates were 100% among patients with available HCV-RNA data.<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">Conclusion:</span></b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\"> In real-world settings, DAA therapy\nachieves high SVR rates and rapid biochemical improvement. The early and\npersistent decline in APRI reflects regression of inflammatory activity, while\nthe limited change in FIB-4 suggests that longer follow-up may be required to\nadequately assess fibrosis regression.<o:p></o:p></span></p>\n\n<!--EndFragment-->",
+    "abstract": "ABSTRACT\n\nObjectives: This study aimed to evaluate\nbiochemical response, sustained virological response (SVR) rates, and changes\nin non-invasive fibrosis markers [aspartate aminotransferase (AST) to platelet\nratio index (APRI) and fibrosis-4 index (FIB-4)] using real-world data in\npatients with chronic hepatitis C virus (HCV) treated with direct-acting\nantivirals (DAAs).\n\nMaterials\nand Methods:\nPatients aged ≥18 years with chronic HCV who were followed between January 2018\nand December 2024 and treated with glecaprevir/pibrentasvir,\nsofosbuvir/velpatasvir/voxilaprevir, or ledipasvir/sofosbuvir were\nretrospectively analyzed. Alanine aminotransferase (ALT), AST, platelet count,\nand HCV-RNA levels were recorded at baseline, at treatment week 4, at end of\ntreatment, and at 12 and 24 weeks after treatment completion. APRI and FIB-4\nscores were calculated at each time point.\n\nResults: A total of 43 patients were\nincluded; the median age was 57 years (interquartile range: 43-65), and 58%\nwere male. ALT and AST levels decreased significantly from treatment week 4\nonward (p&lt;0.001). APRI scores showed a significant early decline that persisted\nthroughout the follow-up period (p&lt;0.001). FIB-4 scores decreased\nsignificantly at week 4; however, this reduction was not sustained during\nfollow-up. A strong correlation was observed between changes in APRI and ALT,\nwhereas the association between FIB-4 and ALT was weak and limited. SVR12 and\nSVR24 rates were 100% among patients with available HCV-RNA data.\n\nConclusion: In real-world settings, DAA therapy\nachieves high SVR rates and rapid biochemical improvement. The early and\npersistent decline in APRI reflects regression of inflammatory activity, while\nthe limited change in FIB-4 suggests that longer follow-up may be required to\nadequately assess fibrosis regression.",
+    "previewText": "ABSTRACT\n\nObjectives: This study aimed to evaluate\nbiochemical response, sustained virological response (SVR) rates, and changes\nin non-invasive fibrosis markers [aspartate aminotransferase (AST) to platelet\nratio index (APRI) and fibrosis-4 index (FIB-4)] using real-world data in\npatients with chronic hepatitis C virus (HCV) treated with direct-acting\nantiv",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Özlem Gül",
+        "affiliation": "University of Health Sciences Türkiye, Şişli Hamidiye Etfal Training and Research Hospital, Clinic of Infectious Diseases and Clinical Microbiology, İstanbul, Türkiye",
+        "orcid": "0000-0002-1668-0157"
+      }
+    ],
+    "supplementary": [
+      {
+        "id": "supp1",
+        "label": "14-18.pdf",
+        "href": "js/data/supplementary/2868/14-18.pdf",
+        "caption": "",
+        "mimeType": ""
+      }
+    ],
+    "hasFullText": true,
+    "pdfUrl": "js/data/pdfs/2868.pdf",
+    "localPdfUrl": "js/data/pdfs/2868.pdf"
   }
 ];

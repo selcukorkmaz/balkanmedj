@@ -350,6 +350,15 @@
     .article-body p {
       margin-bottom: 1.05rem;
     }
+    /* Sticky-navbar offset for in-article anchor jumps. Clicking a figure/table/
+       reference cross-ref triggers a NATIVE hash jump, which otherwise parks the
+       target flush at viewport top — hidden under the sticky header. This margin
+       (kept in sync with getStickyHeaderOffset() via the JS-set CSS variable)
+       leaves the header's worth of space above any anchored target. */
+    .article-body [id],
+    #fulltext-content [id] {
+      scroll-margin-top: var(--article-anchor-offset, 100px);
+    }
     .article-body .article-media-ref-link {
       color: var(--color-teal-700);
       font-weight: 600;
@@ -360,6 +369,20 @@
     .article-body .article-media-ref-link:hover {
       color: var(--color-teal-800);
       border-bottom-color: var(--color-teal-800);
+    }
+    /* A table/figure caption is the title itself — its leading "Table N." /
+       "Figure N." must read as plain bold text, never a self-referential teal
+       cross-ref link. Neutralise any such anchor that lives inside a caption. */
+    .article-body .article-table-wrap > p.table-label a,
+    .article-body .article-figure > figcaption a[href^="#figure-"],
+    .article-body .article-figure > figcaption a[href^="#fig-"],
+    .article-body .article-figure > figcaption a[href^="#table-"] {
+      color: inherit;
+      font-weight: inherit;
+      text-decoration: none;
+      border-bottom: 0;
+      cursor: text;
+      pointer-events: none;
     }
     .article-body .article-ref-citation {
       color: var(--color-teal-700);
@@ -3508,6 +3531,18 @@
         window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
       }
 
+      // Publish the sticky-header height as a CSS variable so native anchor jumps
+      // (figure/table/reference cross-refs use plain <a href="#id"> navigation,
+      // no JS handler) land below the header via scroll-margin-top. Re-run on
+      // resize since the nav height changes across breakpoints.
+      function updateArticleAnchorOffset() {
+        try {
+          document.documentElement.style.setProperty('--article-anchor-offset', getStickyHeaderOffset() + 'px');
+        } catch (_) {}
+      }
+      updateArticleAnchorOffset();
+      window.addEventListener('resize', updateArticleAnchorOffset, { passive: true });
+
       // Update page title
       var displayArticleTitle = toDisplayTitleCase(article.title);
       document.title = displayArticleTitle + ' — Balkan Medical Journal';
@@ -3566,7 +3601,14 @@
         }
 
         addMeta('citation_title', article.title);
-        article.authors.forEach(function (a) { addMeta('citation_author', a.name); });
+        // Google Scholar pairs each citation_author with the citation_author_institution
+        // / citation_author_orcid tags that immediately FOLLOW it, so emit them
+        // per-author in order (institution + orcid right after each name).
+        (article.authors || []).forEach(function (a) {
+          addMeta('citation_author', a.name);
+          if (a.affiliation) addMeta('citation_author_institution', a.affiliation);
+          if (a.orcid) addMeta('citation_author_orcid', 'https://orcid.org/' + String(a.orcid).replace(/^https?:\/\/orcid\.org\//i, ''));
+        });
         addMeta('citation_doi', article.doi);
         addMeta('citation_journal_title', 'Balkan Medical Journal');
         addMeta('citation_journal_abbrev', 'Balkan Med J');
@@ -3654,9 +3696,9 @@
       var publicationHistoryState = {
         received: String(article.received || '').trim(),
         accepted: String(article.accepted || '').trim(),
-        availableOnlineDate: '',
-        publishedOnline: '',
-        publishedInIssue: '',
+        availableOnlineDate: String(article.availableOnlineDate || '').trim(),
+        publishedOnline: String(article.publishedOnline || '').trim(),
+        publishedInIssue: String(article.publishedInIssue || '').trim(),
         published: String(article.published || '').trim()
       };
 
@@ -6144,6 +6186,22 @@
           if (lastIdx < raw.length) frag.appendChild(document.createTextNode(raw.slice(lastIdx)));
           textNode.parentNode.replaceChild(frag, textNode);
         });
+        // Heal PARTIAL links: an anchor ending in a digit ("Table 1") followed by
+        // a stray sub-figure letter in plain text ("a)") absorbs that letter so the
+        // whole "Table 1a" is clickable. Covers refs inserted before the block got
+        // its sub-letter or wrapped only as "Table 1".
+        var refLinks = bodyNode.querySelectorAll('a.article-media-ref-link');
+        Array.prototype.forEach.call(refLinks, function (a) {
+          var txt = a.textContent || '';
+          if (!/\d$/.test(txt)) return;
+          var sib = a.nextSibling;
+          if (!sib || sib.nodeType !== 3) return;
+          var val = sib.nodeValue || '';
+          var mm = val.match(/^([A-Za-z])(?![A-Za-z])/);
+          if (!mm) return;
+          a.textContent = txt + mm[1];
+          sib.nodeValue = val.slice(1);
+        });
         bodyNode.setAttribute('data-media-autolinked', 'true');
       }
       // Expose for tests + future extension points. Harmless in production.
@@ -6218,8 +6276,29 @@
           if (blockIdx <= lastTextIdx) return; // text appears after the block → manual placement
           hostParagraph.parentNode.insertBefore(block, hostParagraph.nextSibling);
         });
+
+        // Drop empty spacer paragraphs (<p><br></p>, <p>&nbsp;</p>, <o:p>)
+        // immediately adjacent to a media block — they render as an extra blank
+        // line between the prose and the table/figure caption.
+        var isSpacer = function (el) {
+          return !!el && (
+            (el.tagName === 'P' && !(el.textContent || '').trim() && !el.querySelector('img,table')) ||
+            el.tagName === 'BR' ||
+            (el.tagName && el.tagName.toLowerCase() === 'o:p')
+          );
+        };
+        Array.prototype.forEach.call(
+          bodyNode.querySelectorAll('figure[id^="figure-"], figure[id^="fig-"], [id^="table-"], [id^="tab-"]'),
+          function (block) {
+            if (block.tagName === 'A') return;
+            while (isSpacer(block.previousElementSibling)) block.previousElementSibling.remove();
+            while (isSpacer(block.nextElementSibling)) block.nextElementSibling.remove();
+          }
+        );
         bodyNode.setAttribute('data-media-relocated', 'true');
       }
+      // Expose for tests + future extension points. Harmless in production.
+      try { window.relocateFiguresAndTables = relocateFiguresAndTables; } catch (_) {}
 
       // Figure caption normalisation — make every figure's caption read the
       // way the editorial team expects it: drop the redundant top-left
@@ -6234,6 +6313,12 @@
           var m = fig.id.match(/^(?:figure|fig)-(\d+)$/i);
           if (!m) return;
           var num = m[1];
+
+          // LOCKED label: the editor typed a custom caption label (e.g. "Graphic 3",
+          // "Figür 2a") and the admin already baked "<strong>Graphic 3.</strong> …"
+          // into the saved caption. Leave it untouched — auto-prefixing here would
+          // double it ("FIG. 3. Graphic 3. …").
+          if (fig.getAttribute('data-label')) return;
 
           // 1) Remove the top label <figcaption> that just says "Figure N".
           var directCaps = [];
@@ -6257,6 +6342,8 @@
           if (!captionP) return;
           var existing = (captionP.textContent || '').replace(/\s+/g, ' ').trim();
           if (/^(?:FIG\.?|FIGURE|ŞEKİL|SEKIL)\s*\d+\.?\s/i.test(existing)) return; // already prefixed
+          // Render the auto label as "FIG. N." (matches the admin Etiket field
+          // default for figures).
           var prefix = document.createElement('strong');
           prefix.textContent = 'FIG. ' + num + '. ';
           // Insert a space after the prefix if the caption text doesn't start

@@ -11,10 +11,30 @@ const rateLimit = require('express-rate-limit');
 const path = require('path');
 const fs = require('fs');
 const dio = require('./lib/data-io');
+const seo = require('./lib/seo');
 const { createBackup, listBackups, zipBackup } = require('./lib/backup');
 const { parseJatsXml } = require('./lib/jats-parser');
 const zipImporter = require('./lib/zip-importer');
 const pageTpl = require('./lib/page-template');
+
+// Auto-regenerate sitemap.xml + rss.xml whenever published or in-press articles
+// are written — wrapping the two dio writers catches every create/update/delete/
+// publish/import call site at once. Debounced so a batch (many writes in a row)
+// regenerates only once, and never blocks the request that triggered it.
+(function wrapDioForSeo() {
+  let timer = null;
+  const schedule = () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      try { seo.regenerateSeoFiles(); }
+      catch (e) { console.warn('[seo] regen failed:', e.message); }
+    }, 500);
+  };
+  ['writeArticles', 'writeArticlesInPress'].forEach((fn) => {
+    const orig = dio[fn].bind(dio);
+    dio[fn] = function (...args) { const r = orig(...args); schedule(); return r; };
+  });
+})();
 
 const app = express();
 const PORT = Number(process.env.PORT) || 3000;
@@ -151,6 +171,17 @@ app.use('/site', express.static(dio.ROOT));
 // the main site (matching what the saved HTML will see on the public site).
 app.use('/images', express.static(path.join(dio.ROOT, 'images')));
 app.use('/js/data/supplementary', express.static(path.join(dio.ROOT, 'js/data/supplementary')));
+
+// Manual SEO regeneration (sitemap.xml + rss.xml). Normally automatic on every
+// article save; this lets the editor force a refresh on demand.
+app.post('/api/seo/regenerate', requireAuth, (req, res) => {
+  try {
+    const r = seo.regenerateSeoFiles();
+    res.json({ ok: true, ...r });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
 
 // File upload setup
 const ALLOWED_MIME = {
@@ -2020,6 +2051,62 @@ app.post('/api/media/upload/pdf-batch', uploadPdf.array('pdf', 200), (req, res) 
 // image files so captions survive page reloads and are pre-filled next open.
 const FIGURE_META_FILE = '_figure-meta.json';
 
+// Natural, numeric-aware filename compare so "figure-2" sorts before
+// "figure-10" (plain alphabetical inverts them, which is one source of the
+// figures-appear-in-the-wrong-order bug).
+function naturalCompare(a, b) {
+  return String(a).localeCompare(String(b), undefined, { numeric: true, sensitivity: 'base' });
+}
+
+// Order figure filenames deterministically: by the explicit upload-order index
+// recorded in the meta file when present, then by natural filename order. This
+// is what lets the cross-ref picker and Otomatik Düzenle see figures in the
+// order the user actually uploaded them — independent of the OS readdir order
+// (which is alphabetical, mis-sorts "figure-10" vs "figure-2", and never
+// reflects upload order for arbitrarily-named files like "graph.png").
+function sortFigureFilenames(names, meta) {
+  meta = meta || {};
+  return names.slice().sort((a, b) => {
+    const ma = meta[a];
+    const mb = meta[b];
+    const oa = ma && Number.isFinite(ma.order) ? ma.order : Infinity;
+    const ob = mb && Number.isFinite(mb.order) ? mb.order : Infinity;
+    if (oa !== ob) return oa - ob;
+    return naturalCompare(a, b);
+  });
+}
+
+// Assign a stable upload-order index to every figure file in `articleDir` that
+// doesn't already have one, mutating `meta` in place. Pre-existing files (no
+// recorded order) are backfilled first in natural order so they keep their
+// historical sequence; freshly-uploaded names then receive the next indices in
+// the exact order they are passed in. Returns the highest order assigned.
+function assignFigureOrder(meta, existingNames, newNamesInUploadOrder) {
+  let maxOrder = -1;
+  for (const k of Object.keys(meta)) {
+    if (meta[k] && Number.isFinite(meta[k].order) && meta[k].order > maxOrder) maxOrder = meta[k].order;
+  }
+  // Backfill any pre-existing on-disk files that predate order tracking.
+  const lacking = existingNames
+    .filter((f) => !(meta[f] && Number.isFinite(meta[f].order)) && !newNamesInUploadOrder.includes(f))
+    .sort(naturalCompare);
+  for (const f of lacking) {
+    maxOrder += 1;
+    if (!meta[f]) meta[f] = { caption: '', source: '', size: 'auto' };
+    meta[f].order = maxOrder;
+  }
+  // New uploads get appended in upload order. A re-uploaded file keeps its
+  // existing slot (so replacing a figure never reshuffles the sequence).
+  for (const f of newNamesInUploadOrder) {
+    if (!meta[f]) meta[f] = { caption: '', source: '', size: 'auto' };
+    if (!Number.isFinite(meta[f].order)) {
+      maxOrder += 1;
+      meta[f].order = maxOrder;
+    }
+  }
+  return maxOrder;
+}
+
 app.get('/api/media/article/:articleId/figure-meta', requireAuth, (req, res) => {
   try {
     const articleId = String(req.params.articleId).replace(/[^a-zA-Z0-9._-]/g, '_');
@@ -2030,6 +2117,45 @@ app.get('/api/media/article/:articleId/figure-meta', requireAuth, (req, res) => 
     res.status(500).json({ error: err.message });
   }
 });
+
+// Strip any placed figure / table / image block that references `filename`
+// from a full-text HTML string. Figure blocks in this corpus are flat
+// (`<figure …><img …><p>…</p></figure>`), so a non-greedy match is safe;
+// table wrappers are only removed when they contain no nested <div>. Returns
+// the new HTML plus how many blocks were removed. Used so that deleting a
+// figure from the Dosyalar tab also pulls it out of the saved article body —
+// otherwise the orphan block lingers (broken image) and keeps showing up in
+// the Tam Metin cross-ref picker.
+function stripMediaFromFullText(html, filename) {
+  if (!html || !filename) return { html: html || '', removed: 0 };
+  const base = String(filename).split('/').pop();
+  if (!base) return { html, removed: 0 };
+  const escd = base.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const refRe = new RegExp('(?:src|href)\\s*=\\s*["\'][^"\']*' + escd + '["\']', 'i');
+  let removed = 0;
+  let out = html;
+
+  // 1) Whole <figure>…</figure> blocks.
+  out = out.replace(/<figure\b[^>]*>[\s\S]*?<\/figure>/gi, (block) => {
+    if (refRe.test(block)) { removed += 1; return ''; }
+    return block;
+  });
+
+  // 2) Flat table wrappers (skip if they contain a nested <div> — too risky to
+  //    balance with a non-greedy match).
+  out = out.replace(/<div\b[^>]*class\s*=\s*["'][^"']*article-table-wrap[^"']*["'][^>]*>[\s\S]*?<\/div>/gi, (block) => {
+    if (refRe.test(block) && !/<div\b/i.test(block.replace(/^<div\b[^>]*>/i, ''))) { removed += 1; return ''; }
+    return block;
+  });
+
+  // 3) Any remaining standalone <img …filename…>.
+  out = out.replace(/<img\b[^>]*>/gi, (tag) => {
+    if (refRe.test(tag)) { removed += 1; return ''; }
+    return tag;
+  });
+
+  return { html: out, removed };
+}
 
 // Delete a single uploaded figure file (and its metadata entry, if any).
 app.delete('/api/media/article/:articleId/figures/:filename', requireAuth, (req, res) => {
@@ -2060,7 +2186,23 @@ app.delete('/api/media/article/:articleId/figures/:filename', requireAuth, (req,
         }
       } catch { /* ignore */ }
     }
-    res.json({ ok: true, deleted: filename });
+    // Also strip the figure/table block from the saved full-text HTML so the
+    // deletion is reflected everywhere (public page + Tam Metin cross-ref
+    // picker), not just on disk. Best-effort: a full-text read/write failure
+    // must not fail the file deletion that already succeeded.
+    let fullTextRemoved = 0;
+    try {
+      const html = dio.readFullText(articleId);
+      if (html) {
+        const result = stripMediaFromFullText(html, filename);
+        if (result.removed > 0) {
+          dio.writeFullText(articleId, result.html);
+          fullTextRemoved = result.removed;
+        }
+      }
+    } catch { /* leave full text untouched on error */ }
+
+    res.json({ ok: true, deleted: filename, fullTextRemoved });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -2073,7 +2215,7 @@ const FIGURE_SIZE_VALUES = new Set(['auto', 'small', 'medium', 'large', 'full'])
 app.put('/api/media/article/:articleId/figure-meta', requireAuth, (req, res) => {
   try {
     const articleId = String(req.params.articleId).replace(/[^a-zA-Z0-9._-]/g, '_');
-    const { filename, caption, source, size } = req.body || {};
+    const { filename, caption, source, size, label } = req.body || {};
     if (!filename) return res.status(400).json({ error: 'filename required' });
     const safeSize = FIGURE_SIZE_VALUES.has(size) ? size : 'auto';
 
@@ -2085,12 +2227,19 @@ app.put('/api/media/article/:articleId/figure-meta', requireAuth, (req, res) => 
     if (fs.existsSync(metaPath)) {
       try { meta = JSON.parse(fs.readFileSync(metaPath, 'utf8')); } catch { /* start fresh */ }
     }
+    // Preserve the upload-order index across caption/source/size edits — wiping
+    // it here would scramble figure ordering the next time assets are read.
+    const prevOrder = meta[filename] && Number.isFinite(meta[filename].order) ? meta[filename].order : undefined;
     meta[filename] = {
       caption: caption || '',
       source:  source  || '',
       size:    safeSize,
+      // Manual caption label ("Figür 2a", "Graphic 3"). Empty string = AUTO
+      // (clears any previous lock so dynamic numbering resumes).
+      label:   typeof label === 'string' ? label : '',
       updatedAt: new Date().toISOString(),
     };
+    if (prevOrder !== undefined) meta[filename].order = prevOrder;
     fs.writeFileSync(metaPath, JSON.stringify(meta, null, 2));
     res.json({ ok: true });
   } catch (err) {
@@ -2110,15 +2259,18 @@ app.get('/api/media/article/:articleId/assets', (req, res) => {
     if (fs.existsSync(metaPath)) {
       try { figureMeta = JSON.parse(fs.readFileSync(metaPath, 'utf8')); } catch { /* ignore */ }
     }
-    const figures = fs.existsSync(articleDir)
-      ? fs.readdirSync(articleDir).filter((f) => !f.startsWith('.') && f !== FIGURE_META_FILE).map((f) => ({
-          filename: f,
-          url: `images/articles/${articleId}/${f}`,
-          caption: (figureMeta[f] || {}).caption || '',
-          source:  (figureMeta[f] || {}).source  || '',
-          size:    (figureMeta[f] || {}).size    || 'auto',
-        }))
+    const figureNames = fs.existsSync(articleDir)
+      ? fs.readdirSync(articleDir).filter((f) => !f.startsWith('.') && f !== FIGURE_META_FILE)
       : [];
+    const figures = sortFigureFilenames(figureNames, figureMeta).map((f) => ({
+      filename: f,
+      url: `images/articles/${articleId}/${f}`,
+      caption: (figureMeta[f] || {}).caption || '',
+      source:  (figureMeta[f] || {}).source  || '',
+      size:    (figureMeta[f] || {}).size    || 'auto',
+      label:   (figureMeta[f] || {}).label   || '',
+      order:   (figureMeta[f] && Number.isFinite(figureMeta[f].order)) ? figureMeta[f].order : null,
+    }));
     const supplementary = fs.existsSync(suppDir)
       ? fs.readdirSync(suppDir).filter((f) => !f.startsWith('.')).map((f) => ({ filename: f, url: `js/data/supplementary/${articleId}/${f}` }))
       : [];
@@ -2253,13 +2405,33 @@ app.post('/api/media/upload/figures/:articleId', uploadFigure.array('figures', 5
     const articleDir = path.join(dio.PATHS.articleImagesDir, articleId);
     if (!fs.existsSync(articleDir)) fs.mkdirSync(articleDir, { recursive: true });
 
+    // Snapshot files already on disk BEFORE adding the new ones, so we can
+    // backfill their upload-order index and keep new uploads appended after.
+    const preExisting = fs.readdirSync(articleDir)
+      .filter((f) => !f.startsWith('.') && f !== FIGURE_META_FILE);
+
     const uploaded = [];
+    const newNames = [];
     for (const file of req.files) {
       const safeName = path.basename(file.originalname).replace(/[^a-zA-Z0-9._-]/g, '_');
       const dest = path.join(articleDir, safeName);
       fs.renameSync(file.path, dest);
+      newNames.push(safeName);
       uploaded.push({ filename: safeName, url: `images/articles/${articleId}/${safeName}` });
     }
+
+    // Persist a stable upload-order index for every figure. This is what the
+    // cross-ref picker / Otomatik Düzenle rely on to number and order figures
+    // deterministically instead of guessing from (often arbitrary) filenames.
+    try {
+      const metaPath = path.join(articleDir, FIGURE_META_FILE);
+      let meta = {};
+      if (fs.existsSync(metaPath)) {
+        try { meta = JSON.parse(fs.readFileSync(metaPath, 'utf8')); } catch { meta = {}; }
+      }
+      assignFigureOrder(meta, preExisting, newNames);
+      fs.writeFileSync(metaPath, JSON.stringify(meta, null, 2));
+    } catch { /* order is best-effort; upload still succeeds without it */ }
 
     const articleKnown = dio.readArticles().some((a) => String(a.id) === articleId)
       || dio.readArticlesInPress().some((a) => String(a.id) === articleId);

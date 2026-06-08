@@ -484,9 +484,12 @@ async function pickCrossRef(page, kind, num, selectText) {
       const btns = Array.from(b.querySelectorAll('.cr-upload-btn'));
       return {
         figureBtn: btns.find((bt) => bt.dataset.uploadKind === 'figure') ? true : false,
-        tableBtn: btns.find((bt) => bt.dataset.uploadKind === 'table') ? true : false,
+        // Tables now open a paste dialog (data-insert-table) instead of a file
+        // picker — Word/Excel content is inserted as a real <table>.
+        tableBtn: !!b.querySelector('[data-insert-table]'),
         refBtn: !!b.querySelector('[data-newref-toggle]'),
         figureFileInput: !!b.querySelector('[data-upload-input="figure"]'),
+        // The table file input intentionally no longer exists in the bubble.
         tableFileInput: !!b.querySelector('[data-upload-input="table"]'),
         newrefForm: !!b.querySelector('[data-newref-form]'),
         // Old manual N+Ekle markers should be gone everywhere
@@ -495,13 +498,16 @@ async function pickCrossRef(page, kind, num, selectText) {
     });
     if (headerActions && headerActions.figureBtn) pass('"+ Yeni Figür" button present');
     else fail('figure button missing', JSON.stringify(headerActions));
-    if (headerActions && headerActions.tableBtn) pass('"+ Yeni Tablo" button present');
+    if (headerActions && headerActions.tableBtn) pass('"+ Yeni Tablo" button present (paste dialog)');
     else fail('table button missing', JSON.stringify(headerActions));
     if (headerActions && headerActions.refBtn) pass('"+ Yeni Kaynak" button present');
     else fail('ref button missing', JSON.stringify(headerActions));
-    if (headerActions && headerActions.figureFileInput && headerActions.tableFileInput) {
-      pass('hidden file inputs present for figure/table');
-    } else fail('file inputs missing', JSON.stringify(headerActions));
+    if (headerActions && headerActions.figureFileInput) {
+      pass('hidden figure file input present');
+    } else fail('figure file input missing', JSON.stringify(headerActions));
+    if (headerActions && !headerActions.tableFileInput) {
+      pass('table no longer uses a file input (uses paste dialog)');
+    } else fail('table still has a file input', JSON.stringify(headerActions));
     if (headerActions && headerActions.newrefForm) pass('"+ Yeni Kaynak" inline form present');
     else fail('newref form missing', JSON.stringify(headerActions));
     if (headerActions && !headerActions.anyManualInput) pass('legacy manual N+Ekle removed from all sections');

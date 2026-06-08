@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Balkan Medical Journal</title>
+    <link>https://balkanmedicaljournal.org/</link>
+    <description>Balkan Medical Journal — latest published articles</description>
+    <language>en</language>
+    <atom:link href="https://balkanmedicaljournal.org/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Jun 2026 13:35:36 GMT</lastBuildDate>
+    <item>
+      <title>Real-World Diagnostic and Therapeutic Insights in Transthyretin Cardiac Amyloidosis: Experience from the Black Sea Region of Türkiye</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2811</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-11-77</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-11-77</dc:identifier>
+      <dc:creator>Seçkin Dereli, Onur Osman Şeker, Nihan Bahadır</dc:creator>
+      <category>Scientific Letter</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Digital Health and Remote Patient Monitoring in Heart Failure: From Pathophysiology to Value-Based Care in Emerging Health Systems</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2866</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2026-1-250</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2026-1-250</dc:identifier>
+      <dc:creator>Ulvi Mirzoyev, Cecilia Linde, Thomas F. Lüscher</dc:creator>
+      <category>Scientific Letter</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Massive Resting Shunt on c-TCD: A Clue to Pulmonary Arteriovenous Malformation in a Young Stroke Patient</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2827</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2025-12-181</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2025-12-181</dc:identifier>
+      <dc:creator>Fubo Zhou, Ruili Li, Yingqi Xing</dc:creator>
+      <category>Clinical Image</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Half-and-Half Nails and Terry’s Nails: Distinct Nail Manifestations of the Same Underlying Chronic Kidney Disease</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2839</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2026-1-208</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2026-1-208</dc:identifier>
+      <dc:creator>Marta Szepietowska, Bartosz Lisicki, Andrzej K. Jaworek, Magdalena Krajewska, Jacek C. Szepietowski</dc:creator>
+      <category>Clinical Image</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Complementary ROC-Derived Indices for Screening Improper Expression Profiles in RNA-Seq Differential Expression Analysis</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2865</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2026-1-309</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2026-1-309</dc:identifier>
+      <dc:creator>Merve Başol Göksülük, Ebru Öztürk, Ünal Erkorkmaz, Asuman Deveci Özkan, Hamdi Furkan Kepenek, Dinçer Göksülük</dc:creator>
+      <category>Original Article</category>
+      <description>Background: Differential expression (DE) analysis of RNA sequencing (RNA-Seq) data are cornerstone of transcriptomic research. Widely used statistical frameworks are primarily optimized to detect monotonic mean shifts between conditions and may therefore overlook genes or microRNAs whose disease association arises at both low and high expression levels. Such non-monotonic patterns, referred to here as improper expression profiles, may reflect biologically relevant heterogeneity but remain difficult to identify using standard tools. Aims: To evaluated whether receiver operating characteristic (</description>
+    </item>
+    <item>
+      <title>Rheumatoid Arthritis Burden in Middle-Aged Adults (40–59 Years): Evidence from the Global Burden of Disease 2021</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2864</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2025-12-228</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2025-12-228</dc:identifier>
+      <dc:creator>Meng Zhao, Jing Shi, Xiaohui Sun, Hongfei Ma, Huimin Yin, Yangyang Liu, Pingmin Wei</dc:creator>
+      <category>Original Article</category>
+      <description>Background: Rheumatoid arthritis (RA) is a leading cause of disability worldwide. Although global assessments of RA have been reported, age-specific estimates focusing on middle-aged adults [(MAA); 40–59 years] remain limited. Aims: To quantify the global, regional, and temporal burden of RA among MAA from 1990 to 2021 and project age-standardized trends through 2050. Study Design: A population-based descriptive epidemiological study using Global Burden of Disease (GBD) 2021 estimates. Methods: GBD 2021 data (1990–2021) were used to estimate age-standardized incidence (ASIR), prevalence (ASPR)</description>
+    </item>
+    <item>
+      <title>The Global Burden of Chronic Kidney Disease Attributable to Hypertension in Young Adults From 1990 to 2021 and Projections to 2050</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2863</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2026-1-54</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2026-1-54</dc:identifier>
+      <dc:creator>Li He, Pengcheng Yan, Cheng Liu, Xiangde Zheng, Minming Zheng, Qingwei Chen</dc:creator>
+      <category>Original Article</category>
+      <description>Background: Chronic kidney disease (CKD) attributable to hypertension represents a major global public health challenge. This study evaluates the global burden of CKD statistically attributable to high systolic blood pressure (SBP), with a focus on young adults aged 25–49 years. Aims: To analyze trends in mortality and disability-adjusted life years (DALYs) attributable to high SBP among individuals with CKD aged 25–49 years from 1990 to 2021 and to project the future attributable burden through 2050. Study Design: Observational study. Methods: Data were obtained from the Global Burden of Dise</description>
+    </item>
+    <item>
+      <title>Contrast Media Side Effects and Kounis Syndrome: Timeo Danaos et Dona Ferentes</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2862</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2026-3-89</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2026-3-89</dc:identifier>
+      <dc:creator>Nicholas G. Kounis, Ming-Yow Hung, Alexandr Ceasovschih, Cesare de Gregorio, Anastasia Mavromati, Marta Bernaola, Ioanna Koniari</dc:creator>
+      <category>Invited Review</category>
+      <description>Kounis syndrome is defined as the occurrence of acute coronary events in the setting of allergic, hypersensitivity, or anaphylactic reactions. It is mediated by mast cell activation and the interaction of inflammatory cells, including T lymphocytes and macrophages. This process leads to the release of multiple inflammatory mediators, such as platelet-activating factor, histamine, neutral proteases (tryptase and chymase), arachidonic acid metabolites, cytokines, and chemokines. Kounis syndrome represents a unique form of acute vascular disorder that may involve not only the coronary arteries bu</description>
+    </item>
+    <item>
+      <title>A Case of Submandibular Ectopic Parathyroid Adenoma: Diagnostic Challenges and Clinical Insights</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2828</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2025-12-248</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2025-12-248</dc:identifier>
+      <dc:creator>Wei Yang, Yusheng Ye, Liangyu Gan</dc:creator>
+      <category>Scientific Letter</category>
+      <description></description>
+    </item>
+    <item>
+      <title>The Strong Get Stronger: The Matthew Effect in Academic Publishing</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2861</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2026.150426</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2026.150426</dc:identifier>
+      <dc:creator>Selçuk Korkmaz, Servet Altay</dc:creator>
+      <category>Editorial</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Thymopentin-Induced Myasthenia Gravis: A Case Report Highlighting Clinical Vigilance</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2860</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-10-197</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-10-197</dc:identifier>
+      <dc:creator>Ning Zhao, Li Yang, Ting Li</dc:creator>
+      <category>Scientific Letter</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Treatment of Steroid-Resistant Radiation-Induced Cerebral Edema with Boswellia serrata</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2859</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-11-168</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-11-168</dc:identifier>
+      <dc:creator>Yusuf Kavuzlu, Serdar Solak, Zafer Koçak</dc:creator>
+      <category>Scientific Letter</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Clinical Features, Laboratory and Radiological Findings, and Outcomes of Pneumocystis jirovecii Pneumonia in Immunocompetent Children</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2858</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.10.40</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.10.40</dc:identifier>
+      <dc:creator>Limei Wen, Li Huang, Junjie Ning</dc:creator>
+      <category>Scientific Letter</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Triple-Valve Infective Endocarditis</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2857</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2025-11-1</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2025-11-1</dc:identifier>
+      <dc:creator>Mihalache Georgeta, Spatari Anastasia, Chiriac Snejana, Lefter Oxana, Barcaru Dumitrița, Oprea Catalina, Ureche Andrei</dc:creator>
+      <category>Clinical Image</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Papillary Muscle Calcification as a Rare Cardiac Manifestation of β-Thalassemia–Related Pseudoxanthoma Elasticum–Like Syndrome</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2856</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2025-12-275</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2025-12-275</dc:identifier>
+      <dc:creator>Fethi Gül, Damla Öztürk Efe</dc:creator>
+      <category>Clinical Image</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Overexpression of Circ_0004496 is Associated with Pathological Bone Formation in Ankylosing Spondylitis via the miR-145/ACTG1 Axis</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2855</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2025-12-249</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2025-12-249</dc:identifier>
+      <dc:creator>Yu-Cong Zou, Yong-Sheng Wu, Ting Hu, Hao-Bin Zeng</dc:creator>
+      <category>Original Article</category>
+      <description>Background: The functional role of circular ribonucleic acids in ankylosing spondylitis (AS) remains poorly understood. In our previous study, circ_0004496 and actin gamma 1 (ACTG1) were found to be upregulated in ossified tissues from patients with AS. Aims: To investiagate the regulatory role of circ_0004496 in pathological bone formation through the miR-145/ACTG1 axis. Study Design: Combined in vitro and in vivo experimental study. Methods: Tissue samples were obtained from 15 patients with AS and hip ankylosis and 15 control patients with femoral neck fractures. Quantitative real-time poly</description>
+    </item>
+    <item>
+      <title>Ginkgetin Alleviates Doxorubicin-Induced Heart Failure by Regulating Mitochondrial Dysfunction Through the AMPK/Sirt1/NF-κB Signaling Pathway</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2854</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2025-11-113</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2025-11-113</dc:identifier>
+      <dc:creator>Yanfu Wang, Chong Wang, Wei Li, Xinyu Ren, Yubo Peng, Yan Zhang</dc:creator>
+      <category>Original Article</category>
+      <description>Background: Heart failure (HF) represents the terminal stage of many cardiovascular diseases. Doxorubicin (DOX) can induce HF through oxidative stress (OS), inflammation, and apoptosis. Ginkgetin (GK) has potential cardioprotective effects, but its underlying mechanisms remain unclear. Aims: To investigate of GK against DOX-induced HF and explored its mechanisms, focusing on mitochondrial function and related signaling pathways. Study Design: In vivo and in vitro experimental models. Methods: HF was induced by DOX in mice and H9c2 cardiomyocytes. Cardiac function, myocardial injury, OS, inflam</description>
+    </item>
+    <item>
+      <title>Anti-Thyroglobulin Antibodies as a Surrogate Tumor Marker for the Follow-Up of the Differentiated Thyroid Carcinoma: Clinical Implications and Pitfalls</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2853</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2026-3-145</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2026-3-145</dc:identifier>
+      <dc:creator>Esra Eraslan Aydemir, Feride Özkara Akkuş, Murat Faik Erdoğan</dc:creator>
+      <category>Invited Review</category>
+      <description>Antithyroglobulin antibodies (TgAb) are present in 10–25% of patients with differentiated thyroid cancer (DTC) and significantly affect the reliability of serum thyroglobulin (Tg) measurements during follow-up. Beyond causing assay interference, TgAb have emerged as independent surrogate tumor markers with prognostic implications. This review summarizes the current evidence on antithyroglobulin antibody biology, measurement methodologies, interference dynamics, and clinical utility as surrogate tumor markers in DTC surveillance. A narrative synthesis of the relevant English-language literature</description>
+    </item>
+    <item>
+      <title>Enhancing the Therapeutic Index of Bioactive Compounds Through Novel Delivery Systems</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2852</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2026.270326</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2026.270326</dc:identifier>
+      <dc:creator>Yeşim Hülya Uz, Suat Erdoğan</dc:creator>
+      <category>Editorial</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Fucoxanthin Attenuates Bisphenol A-Induced Testicular Injury via NF-κB-Mediated Pyroptosis Inhibition</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2851</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2025-11-268</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2025-11-268</dc:identifier>
+      <dc:creator>Ke Xu, Xiangyu Ren, Hongjie Cao, Tiantian Lyu, Zuisu Yang, Fangfang Huang</dc:creator>
+      <category>Original Article</category>
+      <description>Background: Bisphenol A (BPA), a widely used industrial chemical, is a well-known endocrine disruptor linked to testicular damage and impaired male reproductive function. Fucoxanthin (Fx), a marine carotenoid with potent antioxidant properties, has not been extensively studied for its potential to mitigate BPA-induced testicular injury. Aims: To evaluate the protective effects of Fx against BPA-induced testicular injury and explored the underlying signaling mechanisms. Study Design: Experimental study. Methods: A mouse model of BPA-induced testicular injury was established. Transcriptomic anal</description>
+    </item>
+    <item>
+      <title>A Novel Pathogenic Haplotype in CDH23 Causing DFNB12: The Combined Effect of Two Individually Benign Variants</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2850</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2025-11-226</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2025-11-226</dc:identifier>
+      <dc:creator>Zi-Xin Tian, Jun Zhang, Zi-Xuan Wang, Xi Song, Yi-Tao Zhou, Ying-Yi Hu</dc:creator>
+      <category>Brief Report</category>
+      <description>Background: Aberrations in cadherin-related 23 (CDH23) account for a significant proportion of familial autosomal recessive non-syndromic hearing loss (DFNB12), a common subtype of hereditary hearing loss worldwide. Aims: To elucidate the molecular basis and pathogenic mechanism of DFNB12 in an affected girl from a nine-member pedigree. Study Design: Family-based genetic study with pedigree analysis. Methods: Clinical whole-exome sequencing combined with pedigree analysis was used to identify disease-causing mutations. The potential functional consequences of these mutations were investigated </description>
+    </item>
+    <item>
+      <title>Significance of LEF1, ROR2, Cyclin D1, and DNA Methylation Profiling in the Molecular Classification and Prognosis Prediction of Pediatric Medulloblastoma</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2849</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-10-51</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-10-51</dc:identifier>
+      <dc:creator>Mehmet Fatih Tekin, Dilek Gül, Nurşah Eker, Adnan Dağçınar, Yaşar Bayri, Fatih Bayraklı, Beste Melek Atasoy, Süheyla Uyar Bozkurt</dc:creator>
+      <category>Original Article</category>
+      <description>Background: Accurate identification of medulloblastoma molecular subgroups is essential, particularly in settings lacking advanced genomic tools. Conventional markers, such as β-catenin, present significant challenges in reliably detecting the WNT-activated subgroup (WNT-AG). Aims: To evaluate the utility of lymphoid enhancer-binding factor 1 (LEF1), Cyclin D1, and receptor tyrosine kinase-like orphan receptor 2 (ROR2) as immunohistochemical (IHC) markers for molecular subgroup classification and to assess their prognostic significance. Study Design: Retrospective cohort study. Methods: IHC an</description>
+    </item>
+    <item>
+      <title>ARID4B Promotes Lung Adenocarcinoma Malignancy by Activating GPRC5C transcription via Histone H1 Displacement</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2848</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2025-10-260</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2025-10-260</dc:identifier>
+      <dc:creator>Guangnan Huang, Lei Gao, Shu Fang, Likun Xu, Xiaowei Zhao</dc:creator>
+      <category>Original Article</category>
+      <description>Background: Epithelial–mesenchymal transition and cancer cell stemness (CSC) are critical processes that driving the invasion and lethality of lung adenocarcinoma (LUAD). The chromatin remodeler ARID4B has been implicated in other cancers; however, its specific role and underlying mechanism in LUAD progression remain unclear. Aims: To elucidate the function of ARID4B in LUAD. Study Design: This study integrated bioinformatics analysis, in vitro cellular functional assays, and in vivo orthotopic lung cancer models to investigate the oncogenic role of ARID4B . Methods: ARID4B expression and its </description>
+    </item>
+    <item>
+      <title>Genetic Influences on Disease-Modifying Therapy Response in Multiple Sclerosis: Current Insights and Future Directions</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2847</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2026-1-153</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2026-1-153</dc:identifier>
+      <dc:creator>Meziyet Dilara Reda, Aksel Siva, Eda Tahir Turanlı</dc:creator>
+      <category>Invited Review</category>
+      <description>Multiple sclerosis (MS) is a clinically and biologically heterogeneous, immune-mediated disease of the central nervous system, with substantial interindividual variability in disease course and response to disease-modifying therapies (DMTs). Over the past three decades, the MS therapeutic landscape has expanded considerably; however, treatment selection and switching remain guided primarily by clinical phenotype and imaging findings rather than molecular predictors of response. Despite extensive clinical trial evidence, prospectively identifying responders and non-responders to specific DMTs r</description>
+    </item>
+    <item>
+      <title>Cardio-Oncology in 2025: From Molecular Mechanisms to Clinical Practice</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2846</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2026-1-183</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2026-1-183</dc:identifier>
+      <dc:creator>Kalliopi Keramida</dc:creator>
+      <category>Editorial</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Cerebral Slow Flow: An Emerging Phenomenon in Vascular Dementia Pathogenesis</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2845</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-10-189</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-10-189</dc:identifier>
+      <dc:creator>Uğur Özkan, Fatih Kardaş, Umutcan Vurucu, Kenan Yalta</dc:creator>
+      <category>Scientific Letter</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Clinical, Radiologic, and Genetic Spectrum of Schimke Immuno-Osseous Dysplasia</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2844</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-10-27</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-10-27</dc:identifier>
+      <dc:creator>Mehtap Akbalık Kara, Beltinge Demircioğlu Kılıç, Mithat Büyükçelik, Ayşe Balat</dc:creator>
+      <category>Scientific Letter</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Cold Contrast-Induced Coronary Slow Flow: A Preventable Pitfall in the Cath Lab</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2843</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-10-198</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-10-198</dc:identifier>
+      <dc:creator>Uzeyir Rahimov, Jamil Babayev</dc:creator>
+      <category>Scientific Letter</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Direct Choledochoscopic Visualization of Living Clonorchis sinensis in the Biliary Tract</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2842</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-10-236</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-10-236</dc:identifier>
+      <dc:creator>Ma Zhili, Yuan Lei, Yang Xiaohong, Fan Ning, Wang Genshu</dc:creator>
+      <category>Clinical Image</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Cystic Bronchiectasis due to AIDS: Case and References</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2841</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-8-80</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-8-80</dc:identifier>
+      <dc:creator>Songyang Pan, Miao Chen, Tianyang Dai</dc:creator>
+      <category>Clinical Image</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Cover Page</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2822</link>
+      <guid isPermaLink="true">https://balkanmedicaljournal.org/article.html?id=2822</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <category>Cover Page</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Musculoskeletal Ultrasound: From Diagnosis to Rehabilitation</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2818</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2026.060126</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2026.060126</dc:identifier>
+      <dc:creator>Deniz Palamar</dc:creator>
+      <category>Editorial</category>
+      <description>Ultrasonographic imaging has become an increasingly valuable modality across nearly all medical specialties. Its integration into routine clinical practice often as an extension of the physical examination underscores its substantial diagnostic and practical utility. In the field of physical medicine and rehabilitation, musculoskeletal ultrasonography (US) h</description>
+    </item>
+    <item>
+      <title>Transabdominal Surgical Management for Pouch Failure</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2819</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2025-11-230</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2025-11-230</dc:identifier>
+      <dc:creator>Mirac Ajredini, Arman Erkan, Amishi Desai, David Schwartzberg, Mehmet Gülmez, Feza H. Remzi</dc:creator>
+      <category>Invited Review</category>
+      <description>Abstract Restorative proctocolectomy with ileal pouch-anal anastomosis restores intestinal continuity and generally provides excellent long-term functional outcomes. However, 5–15% of patients experience pouch failure, most commonly due to septic, mechanical, or inflammatory complications. Surgical management of pouch failure is technically demanding and requires a multidisciplinary approach in high-volume, specialized centers. This narrative review synthesizes contemporary evidence on the transabdominal surgical management of pouch failure, with an emphasis on standardized preoperative evalua</description>
+    </item>
+    <item>
+      <title>Single-Cell Analysis, Spatial Transcriptomics and Molecular Docking Unveil Potential Therapeutic Targets for Carotid Atherosclerosis</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2791</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-8-151</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-8-151</dc:identifier>
+      <dc:creator>Rongxing Qin, Hongyu Xu, Qingchun Qin, Wei Xu, Xinyu Lai, Li Chen</dc:creator>
+      <category>Original Article</category>
+      <description>Abstract Background: Carotid atherosclerosis (CAS) is a key cause of ischemic stroke that is strongly associated with increased risks of cardiovascular disease and vascular death, hence the urgent need to develop therapeutic strategies targeting carotid atherosclerotic plaques that would reduce the overall risk of cerebrovascular events. Aims: This study performs single-cell sequencing to dissect the cellular subpopulations in CAS. Molecular docking is used to uncover the potential therapeutic targets, consequently providing a theoretical basis for the CAS treatment strategies. Study Design: I</description>
+    </item>
+    <item>
+      <title>Social Determinants of Health and Risk of Mortality in Adults with Gout or Hyperuricemia: Insights from the 1999-2018 NHANES</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2795</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-6-149</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-6-149</dc:identifier>
+      <dc:creator>Chongze Lin, Sisi Shao, Qianjia Wu, Yongfu Zhu, Sisi Lin</dc:creator>
+      <category>Original Article</category>
+      <description>Abstract Background: Hyperuricemia and gout are common metabolic disorders that show substantial disparities in prevalence and management across different socioeconomic status. Aims: To investigate the association between social determinants of health (SDOH) and mortality risk in adults with hyperuricemia and/or gout, to assess whether the interaction between SDOH and gout/hyperuricemia status influences mortality risk. Study Design: A retrospective cohort study. Methods: We analyzed 6,560 United States (US) adults (mean age 58 years, 60.02% men) with hyperuricemia and/or gout from the 1999&amp;nd</description>
+    </item>
+    <item>
+      <title>Revisiting Wiedemann-Steiner Syndrome: Novel KMT2A Variants and Broadened Clinical Spectrum</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2794</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-9-81</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-9-81</dc:identifier>
+      <dc:creator>Zehra Manav Yiğit, Aydan Mengübaş Erbaş, Ayberk Türkyılmaz, İsmihan Merve Tekin, Elif Yılmaz Güleç, Gülsüm Kayhan, Aydeniz Aydın Gümüş, Esra Arslan Ateş, Eyyüp Üçtepe, Kübra Ateş, Elvin Kazancıoğlu, Bülent Uyanık, Sena Çetin, Sahra Acır, Elif Sobu, İbrahim Kamer, Ahmet Yeşilyurt, Alperhan Çebi, Ahmet Anık, Müge Ayanoğlu, Gül Ünsel Bolat, Gökay Bozkurt, Hilmi Bolat</dc:creator>
+      <category>Original Article</category>
+      <description>Abstract Background: Wiedemann-Steiner syndrome (WDSTS) is a rare autosomal dominant neurodevelopmental disorder caused by heterozygous pathogenic variants in KMT2A . Although several large international cohorts have helped define its broad clinical spectrum, data from underrepresented populations remain limited. Aims: To characterize the molecular and phenotypic spectrum of Turkish patients with WDSTS and compare these findings with previously published cohorts. Study Design: Multicenter retrospective cohort study. Methods: Sixteen individuals from 15 unrelated families were recruited across </description>
+    </item>
+    <item>
+      <title>External Manual Carotid Compression for Cavernous Sinus Fistula</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2771</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-5-157</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-5-157</dc:identifier>
+      <dc:creator>Xiaoxin Ji, Wei Su, Shancheng Si</dc:creator>
+      <category>Clinical Image</category>
+      <description>Cavernous sinus dural arteriovenous fistula (CS-DAVF) typically occurs spontaneously, with several treatment options available, including endovascular embolization1, external manual carotid compression (EMCC)2, ophthalmic vein compression3, and pharmacotherapy4 in carefully selected cases. However, traditional methods, particularly EMCC, have long been negle</description>
+    </item>
+    <item>
+      <title>Left Ventricular Cardiac Hydatid Cyst Presenting with Angina Pectoris</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2820</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-7-265</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-7-265</dc:identifier>
+      <dc:creator>Furkan Karahan, Cemil Turan, Murat Gök, Adem Reyhancan</dc:creator>
+      <category>Clinical Image</category>
+      <description>Echinococcus is a parasitic infection in humans that is endemic in livestock-raising regions. Cardiac echinococcosis accounts for 0.5%-2% of all hydatid disease cases.1 Since no effective medical treatment for cardiac cysts is currently available, surgical removal remains the standard treatment.2 A 58-year-old male patient was admitted to our clinic with che</description>
+    </item>
+    <item>
+      <title>Secukinumab-Induced Interstitial Pneumonia in a Patient with Psoriasis</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2778</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-8-43</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-8-43</dc:identifier>
+      <dc:creator>Siqi Li, Ru Dai, Qunye Xu</dc:creator>
+      <category>Scientific Letter</category>
+      <description>Psoriasis is a chronic, relapsing, immune-mediated inflammatory skin disorder characterized by scaly, erythematous plaques. It significantly affects patients’ physical and psychological well-being. Advances in medical research have led to the widespread use of biologic therapies targeting specific immune pathways, including tumor necrosis factor-alpha inhibi</description>
+    </item>
+    <item>
+      <title>Lung Metastatic Ameloblastoma: A Hidden Cause of Pulmonary Nodules</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2772</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-8-6</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-8-6</dc:identifier>
+      <dc:creator>İrem Karaman, Barış Hekimoğlu, Mürüvvet Akçay Çelik, Dilek Erdem, Şevket Özkaya</dc:creator>
+      <category>Scientific Letter</category>
+      <description>Ameloblastoma is a locally aggressive odontogenic tumor that appears benign microscopically but can metastasize to distant organs long after initial treatment. Metastasis occurs in fewer than 2% of cases, most commonly affecting the lungs, with a mean latency of 15-18 years.1 We report the case of a 57-year-old man who had an impacted left mandibular third m</description>
+    </item>
+    <item>
+      <title>Clinical Impact of Febuxostat in HFpEF Versus HFrEF: Insights from a Prospective Cohort</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2821</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2026.2025-12-198</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2026.2025-12-198</dc:identifier>
+      <dc:creator>Faisal Ahsaan, Bakhtawar Latif, Zoya Rehman</dc:creator>
+      <category>Letter to the Editor</category>
+      <description>Ke et al.1 present a prospective observational cohort study suggesting that febuxostat may reduce the combined risk of all-cause mortality and rehospitalization for heart failure (HF) in patients with HF with preserved ejection fraction (HFpEF), but not in those with reduced or mildly reduced ejection fraction. The major strengths of the study include its la</description>
+    </item>
+    <item>
+      <title>Cover Page</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2810</link>
+      <guid isPermaLink="true">https://balkanmedicaljournal.org/article.html?id=2810</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <category>Cover Page</category>
+      <description></description>
+    </item>
+    <item>
+      <title>News from the Balkan Medical Journal: Moving to Monthly Publication</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2804</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025.111125</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025.111125</dc:identifier>
+      <dc:creator>Servet Altay</dc:creator>
+      <category>Editorial</category>
+      <description>According to the Journal Citation Reports 2024 data released on June 18, 2025, the Balkan Medical Journal achieved an impact factor of 3.8, the highest in its 46-year history.1 Having entered the SCI-Expanded index in 2008, the Balkan Medical Journal was ranked Q4 between 2007 and 2015, Q3 between 2016 and 2020, and became Türkiye’s first Q2 general medicine</description>
+    </item>
+    <item>
+      <title>Familial Mediterranean Fever: A Comprehensive Review of Pathogenesis, Genetics, and Epigenetic Regulation</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2805</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-11-133</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-11-133</dc:identifier>
+      <dc:creator>Serdal Ugurlu, Ozgur Can Kilinc, Ilker Karacan, Kerem Parlar</dc:creator>
+      <category>Invited Review</category>
+      <description>Abstract Familial Mediterranean Fever (FMF) is the first described and most prevalent monogenic autoinflammatory periodic fever syndrome worldwide. The disease is caused by pathogenic variants in the MEFV (Mediterranean fever) gene, which lead to dysregulated innate immune responses and a persistent hyperinflammatory state. Despite extensive genetic characterization, the molecular mechanisms linking MEFV mutations to aberrant inflammation remain incompletely understood. Moreover, substantial clinical heterogeneity&amp;mdash;manifested as incomplete penetrance, variable expressivity, and modulation</description>
+    </item>
+    <item>
+      <title>Depressive Symptoms and Risk of Hearing Loss Among Adults Aged 55 Years and Older: A Population-Based Study</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2779</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-6-78</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-6-78</dc:identifier>
+      <dc:creator>Erjie Xie, Yuedi Tang</dc:creator>
+      <category>Original Article</category>
+      <description>Abstract Background: Depression and hearing loss (HL) commonly occur in the aging population and may arise from shared mechanisms. Aims: To investigate the observational associations between depression and HL. Study Design: Observational study. Methods: Adults aged &amp;ge; 55 years from three nationally representative study cohorts were included: the National Health and Nutrition Examination Survey, the Health and Retirement Study, and the English Longitudinal Study of Ageing. Multiple linear regression was applied to examine the association between depressive severity and audiometric thresholds.</description>
+    </item>
+    <item>
+      <title>A Multimodular AI Algorithm for Automated Assessment of Left Ventricular Function in Ischemic Heart Disease: Ejection Fraction, Wall Motion, and Regional Myocardial Segmentation</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2790</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-8-160</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-8-160</dc:identifier>
+      <dc:creator>Sidem Gül, Reşit Taşdemir, Beyza Açıkgöz, Hakan Duman, Hamza Hodzic, Sena Köker, Nazlı Erdemir, Mehmet Kıvrak</dc:creator>
+      <category>Original Article</category>
+      <description>Abstract Background: Ischemic heart damage reduces the pumping efficiency of the heart by affecting the left ventricular ejection fraction (LVEF) and causing wall motion abnormality (WMA). In daily clinical practice, these parameters are interpreted by physicians using two dimensional transthoracic echocardiography (2D-TTE). Because 2D-TTE reports rely on visual evaluations, they are subject to experience-based limitations and exhibit low reproducibility. Aims: To develop an artificial intelligence algorithm composed of two modules that enable automatic LVEF calculation and WMA detection for a</description>
+    </item>
+    <item>
+      <title>Association Between Hemoglobin Glycation Index and Delirium Risk in Sepsis Patients in the Intensive Care Unit</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2792</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-8-211</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-8-211</dc:identifier>
+      <dc:creator>Miao Shi, Hu Sun, Yong Ma, Cheng Chi</dc:creator>
+      <category>Original Article</category>
+      <description>Abstract Background: Sepsis-associated encephalopathy is a prevalent complication in the sepsis population, especially in patients in the intensive care unit (ICU). The relationship between the hemoglobin glycation index (HGI) and delirium in sepsis patients in the ICU is not yet clearly established. Aims: To investigate the relationship between HGI and delirium risk in sepsis patients admitted to the ICU. Study Design: Retrospective cohort study. Methods: The data were extracted from the Medical Information Mart for Intensive Care IV 3.1 for the sepsis population in the ICU. The primary outco</description>
+    </item>
+    <item>
+      <title>Gorlin-Goltz Syndrome with PTCH1 Gene Mutation in a Family Presenting with Odontogenic Keratocysts</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2758</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-7-88</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-7-88</dc:identifier>
+      <dc:creator>Muharrem Ergün Dudak, Mert Kırdemir, Burak Borlu</dc:creator>
+      <category>Clinical Image</category>
+      <description>A 19-year-old female presented with mandibular swelling and mild spontaneous pain. Panoramic radiography revealed cystic lesions extending from the right mandibular ramus to tooth 36, as well as an additional lesion at tooth 28 (Figure 1a). Cone-beam computed tomography (CBCT) showed multilocular radiolucencies with cortical destruction and internal septa in</description>
+    </item>
+    <item>
+      <title>Rare but Critical: Indomethacin-Responsive Headache with Long- Lasting Autonomic Symptoms</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2762</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-7-40</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-7-40</dc:identifier>
+      <dc:creator>Tural Talibov, Meltem İnci, Esme Ekizoğlu, Betül Baykan</dc:creator>
+      <category>Scientific Letter</category>
+      <description>Hemicrania with long-lasting autonomic symptoms (LASH), first described in by Rozen1, is an extremely rare headache disorder thought to be part of the trigeminal autonomic cephalalgia (TAC) spectrum. However, it is not included in the current International Classification of Headache Disorders, 3rd Edition (ICHD-3).2 Notably, patients with LASH typically resp</description>
+    </item>
+    <item>
+      <title>YOLOv11 Model for PCOS Diagnosis: A Significant Contribution with Clinical Insights</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2806</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-8-295</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-8-295</dc:identifier>
+      <dc:creator>Gianluca Mondillo</dc:creator>
+      <category>Letter to the Editor</category>
+      <description>I read with great interest the work of Zhao et al.1 on the YOLOv11 model for the automatic recognition of ovarian ultrasound images in polycystic ovary syndrome (PCOS). The authors made a noteworthy contribution by conducting the first large-scale prospective study in women from East Asia, demonstrating excellent performance with an average training accuracy</description>
+    </item>
+    <item>
+      <title>In Response to: YOLOv11 Model for PCOS Diagnosis: A Significant Contribution with Clinical Insights</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2807</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-8-295.answer</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-8-295.answer</dc:identifier>
+      <dc:creator>Baihua Zhao</dc:creator>
+      <category>Letter to the Editor</category>
+      <description>We thank the author for recognizing our research. We appreciate the opportunity to engage in scholarly dialogue regarding the questions and suggestions raised by the author. First, we would like to emphasize that our inclusion and exclusion criteria reflect the thoroughness of sample processing in our study.1 We established five exclusion criteria and strict</description>
+    </item>
+    <item>
+      <title>Not All Emboli are Thrombotic: The Silent Cement to the Lungs</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2808</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-10-141</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-10-141</dc:identifier>
+      <dc:creator>Çağlar Kaya</dc:creator>
+      <category>Letter to the Editor</category>
+      <description>I read with great interest the article by Ufuk et al.1 titled, “Postoperative Pulmonary Complications: Clinical and Imaging Insights”. The review provides a detailed overview of postoperative pulmonary complications and emphasizes the key role of imaging. However, one important entity, that is, pulmonary cement embolism (PCE), was not mentioned among the vas</description>
+    </item>
+    <item>
+      <title>Erratum</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2809</link>
+      <guid isPermaLink="false">https://doi.org/10.4274//balkanmedj.galenos.2026.e001</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274//balkanmedj.galenos.2026.e001</dc:identifier>
+      <category>Erratum</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Cover Page</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2786</link>
+      <guid isPermaLink="true">https://balkanmedicaljournal.org/article.html?id=2786</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <category>Cover Page</category>
+      <description></description>
+    </item>
+    <item>
+      <title>Cannabinoids: Medicine or Poison</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2783</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025.290925</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025.290925</dc:identifier>
+      <dc:creator>Yasemin Karal</dc:creator>
+      <category>Editorial</category>
+      <description>The hemp plant [Cannabis sativa (C. sativa)] commonly known as Indian hemp belongs to the Cannabinaceae family and is also referred to as marijuana, ganja, pot, hemp or cannabis. It comprises three recognized subspecies: C. sativa subspecies sativa (longer and more fibrous, primarily cultivated as industrial hemp), C. sativa subspecies indica (shorter and mo</description>
+    </item>
+    <item>
+      <title>Factor XI/XIa Inhibitors: Promising Agents for the Secondary Prevention of Ischemic Stroke</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2784</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025.160925</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025.160925</dc:identifier>
+      <dc:creator>Murat Mert Atmaca</dc:creator>
+      <category>Editorial</category>
+      <description>Globally, stroke remains the second leading cause of death among non-communicable diseases and the third leading cause of death and disability combined (as measured by disability-adjusted life-years lost).1 Ischemic strokes (IS) constitute 85% of all strokes, while the remaining 15% are hemorrhagic strokes. The etiologic subtypes of IS include large artery a</description>
+    </item>
+    <item>
+      <title>Uric Acid-Lowering Therapy with Febuxostat in Patients with Chronic Heart Failure and Hyperuricemia: A Prospective and Observational Cohort Study</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2785</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-6-168</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-6-168</dc:identifier>
+      <dc:creator>Jiahan Ke, Xiaohan Qiu, Min Wang, Huasu Zeng, Changqian Wang, Junfeng Zhang, Huafang Zhu, Jun Gu</dc:creator>
+      <category>Original Article</category>
+      <description>Abstract Background: Hyperuricemia is associated with poor clinical outcomes in several cardiovascular diseases, including heart failure (HF). However, whether lowering serum uric acid (SUA) levels improves the prognosis of HF remains insufficiently studied. Aims: To evaluate whether urate-lowering therapy (ULT) with febuxostat confers clinical benefits in patients with HF and concomitant hyperuricemia. Study Design: Prospective, observational cohort study. Methods: Patients with chronic HF and hyperuricemia were enrolled and assigned either to a febuxostat group or to a non-ULT group and were</description>
+    </item>
+    <item>
+      <title>Epidemiological and Clinical Characteristics of Urogenital System Cystic Echinococcosis: A Systematic Review</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2787</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-7-81</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-7-81</dc:identifier>
+      <dc:creator>Habibe Tülin Elmaslar Mert, Mehmet Solak, Pelin Sarı Serin, Nermin Şakru</dc:creator>
+      <category>Original Article</category>
+      <description>Abstract Background: Echinococcus granulosus sensu lato (E. granulosus s.l.) is globally distributed and highly prevalent in parts of South America, the Mediterranean, Eastern Europe, the Middle East, Africa, China, and Australia. This systematic review explores the epidemiological and clinical features of urogenital system-cystic echinococcosis (UGS-CE). Aims: To systematically review and synthesize available evidence on the epidemiological patterns, clinical presentations, diagnostic methods, and treatment approaches for UGS-CE. Study Design: Systematic review. Methods: The study followed th</description>
+    </item>
+    <item>
+      <title>miR-17-5p Inhibits BNIP3-Mediated Mitochondrial Autophagy to Attenuate Pathological Cardiac Fibrosis</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2756</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-6-25</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-6-25</dc:identifier>
+      <dc:creator>Derong Huang, Qing Wen, Yuchen Su, Xiumao Li</dc:creator>
+      <category>Original Article</category>
+      <description>Abstract Background: Cardiac fibrosis plays a critical role in the progression of chronic cardiovascular conditions, with mitochondrial dysfunction acting as a central mechanism underlying pathological myocardial fibrosis. Increasing research shows that microRNAs may modulate the fibrotic process by regulating mitochondrial function via various pathways. Aims: To examine the involvement of miR-17-5p in modulating mitochondrial autophagy and alleviating pathological cardiac fibrosis. Study Design: Combined in vivo and in vitro study. Methods: Expression levels of miR-17-5P and BCL2/adenovirus E</description>
+    </item>
+    <item>
+      <title>Enhancing Diagnostic Accuracy in Bethesda III Thyroid Nodules: The Predictive Value of Serum IL-17A and Calprotectin</title>
+      <link>https://balkanmedicaljournal.org/article.html?id=2780</link>
+      <guid isPermaLink="false">https://doi.org/10.4274/balkanmedj.galenos.2025.2025-7-125</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:identifier>doi:10.4274/balkanmedj.galenos.2025.2025-7-125</dc:identifier>
+      <dc:creator>Muzaffer Serdar Deniz, Fatih Karataş, Öykü Uludağ</dc:creator>
+      <category>Original Article</category>
+      <description>Abstract Background: Thyroid nodules are common in clinical practice, with malignancy detected in about 5% of cases. Current risk-stratification approaches, which rely on sonographic features and cytopathological assessment, have notable limitations, especially for indeterminate nodules categorized as Bethesda III. Aims: To address these diagnostic challenges, this study evaluated the utility of preoperative serum interleukin (IL)-17A and calprotectin levels as potential biomarkers for distinguishing malignant from benign Bethesda III thyroid nodules. Study Design: This single-center prospecti</description>
+    </item>
+  </channel>
+</rss>
