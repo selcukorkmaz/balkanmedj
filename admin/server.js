@@ -187,6 +187,7 @@ app.post('/api/seo/regenerate', requireAuth, (req, res) => {
 const ALLOWED_MIME = {
   pdf: new Set(['application/pdf']),
   image: new Set(['image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/svg+xml']),
+  video: new Set(['video/mp4', 'video/webm', 'video/ogg', 'video/quicktime']),
   xml: new Set(['application/xml', 'text/xml']),
   zip: new Set(['application/zip', 'application/x-zip-compressed', 'application/octet-stream']),
   // figures = images + pdf; supplementary = broadly allowed (video/audio/doc/csv/zip)
@@ -208,6 +209,7 @@ const ALLOWED_MIME = {
 const ALLOWED_EXT = {
   pdf: /\.pdf$/i,
   image: /\.(jpe?g|png|webp|gif|svg)$/i,
+  video: /\.(mp4|webm|ogv|mov)$/i,
   xml: /\.xml$/i,
   zip: /\.zip$/i,
   figure: /\.(jpe?g|png|webp|gif|svg|tiff?|pdf)$/i,
@@ -228,6 +230,7 @@ function makeUploader(kind) {
 }
 const uploadPdf = makeUploader('pdf');
 const uploadImage = makeUploader('image');
+const uploadVideo = makeUploader('video');
 const uploadXml = makeUploader('xml');
 const uploadZip = makeUploader('zip');
 const uploadFigure = makeUploader('figure');
@@ -974,6 +977,10 @@ app.post('/api/issues/:volume/:issue/set-current', (req, res) => {
       imageUrl: a.imageUrl || '',
     });
 
+    // Preserve any manual section curation across a homepage rebuild.
+    let prevSections = {};
+    try { prevSections = (dio.readHomepageData() || {}).sections || {}; } catch (_) { /* ignore */ }
+
     const homepageData = {
       generatedAt: new Date().toISOString().slice(0, 10),
       currentIssue: { volume: vol, issue: String(issue), year },
@@ -981,6 +988,7 @@ app.post('/api/issues/:volume/:issue/set-current', (req, res) => {
       imageCornerArticles: imageCorner.map(mapArticle),
       mostCitedArticles: mostCited.map(mapArticle),
       latestArticles: articles.slice(0, 10).map(mapArticle),
+      sections: prevSections,
     };
 
     dio.writeHomepageData(homepageData);
@@ -1134,6 +1142,129 @@ app.put('/api/homepage', (req, res) => {
     createBackup();
     dio.writeHomepageData(req.body);
     res.json({ saved: true });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// --- Homepage discovery sections (Latest / In Press / Top Cited / Most Downloaded) ---
+// These four homepage tabs are auto-computed on the public site from article
+// metrics; this lets an editor curate each one manually. The curated list (an
+// ordered array of article IDs per section) is stored in HOMEPAGE_DATA.sections
+// and honoured by homepage.js when present (else it auto-computes).
+const HOMEPAGE_SECTION_KEYS = ['latest-published', 'articles-in-press', 'top-cited', 'most-downloaded', 'image-corner', 'latest-news'];
+
+function slimNews(n) {
+  return {
+    id: n.id,
+    title: n.title || '',
+    category: n.category || 'News',
+    date: n.date || '',
+    excerpt: String(n.excerpt || '').slice(0, 200),
+  };
+}
+
+function slimArticle(a) {
+  return {
+    id: a.id,
+    title: a.title || '',
+    type: a.type || '',
+    authors: (a.authors || []).map((x) => (x && x.name) ? x.name : String(x || '')).filter(Boolean).slice(0, 5),
+    published: a.published || '',
+    volume: a.volume != null ? a.volume : '',
+    issue: a.issue != null ? a.issue : '',
+    pages: a.pages || '',
+    citations: Number(a.citations) || 0,
+    downloads: Number(a.downloads) || 0,
+    views: Number(a.views) || 0,
+    order: a.order != null ? Number(a.order) : null,
+  };
+}
+
+// Mirror homepage.js's base ranking (uses stored metrics; the public page may
+// further refine top-cited/most-downloaded from live sources, but stored values
+// are the right preview for the admin).
+function computeHomepageAuto(articles, aip, home) {
+  const cur = (home && home.currentIssue) || {};
+  const regular = articles.filter((a) => a && String(a.type || '').trim() !== 'Cover Page');
+  const ts = (a) => { const t = new Date(a && (a.published || a.date) || 0).getTime(); return isNaN(t) ? 0 : t; };
+  const now = new Date();
+  const cutoff = new Date(now.getFullYear(), now.getMonth() - 24, 1).getTime();
+  const recent = regular.filter((a) => { const t = ts(a); return t > 0 && t >= cutoff; });
+  const curVol = String(cur.volume || '');
+  const curIssue = String(cur.issue || '');
+  const latest = regular
+    .filter((a) => String(a.volume || '') === curVol && String(a.issue || '') === curIssue)
+    .sort((a, b) => ts(b) - ts(a)).slice(0, 6);
+  const inPress = aip.slice().sort((a, b) => (Number(a.order) || 9999) - (Number(b.order) || 9999)).slice(0, 6);
+  const topCited = recent.slice().sort((a, b) => (Number(b.citations) || 0) - (Number(a.citations) || 0)).slice(0, 6);
+  const mostDl = recent.slice().sort((a, b) => (Number(b.downloads) || 0) - (Number(a.downloads) || 0)).slice(0, 6);
+  // Image Corner = recent "Clinical Image" articles, by citations (top 2).
+  const imageCorner = regular
+    .filter((a) => String(a.type || '').trim() === 'Clinical Image')
+    .filter((a) => { const t = ts(a); return t > 0 && t >= cutoff; })
+    .sort((a, b) => (Number(b.citations) || 0) - (Number(a.citations) || 0)).slice(0, 2);
+  return {
+    'latest-published': latest.map(slimArticle),
+    'articles-in-press': inPress.map(slimArticle),
+    'top-cited': topCited.map(slimArticle),
+    'most-downloaded': mostDl.map(slimArticle),
+    'image-corner': imageCorner.map(slimArticle),
+  };
+}
+
+// Latest News auto preview: newest 3 by date (id tiebreaker), mirrors homepage.js.
+function computeLatestNewsAuto(news) {
+  return news.slice().sort((a, b) => {
+    const da = new Date(a.date || '').getTime();
+    const db = new Date(b.date || '').getTime();
+    const aH = !isNaN(da); const bH = !isNaN(db);
+    if (aH && bH && da !== db) return db - da;
+    if (aH && !bH) return -1;
+    if (!aH && bH) return 1;
+    return (Number(b.id) || 0) - (Number(a.id) || 0);
+  }).slice(0, 3).map(slimNews);
+}
+
+app.get('/api/homepage/sections', (_req, res) => {
+  try {
+    const home = dio.readHomepageData() || {};
+    const articles = dio.readArticles();
+    const aip = dio.readArticlesInPress();
+    const news = dio.readNews();
+    const auto = computeHomepageAuto(articles, aip, home);
+    auto['latest-news'] = computeLatestNewsAuto(news);
+    res.json({
+      sections: home.sections || {},
+      auto,
+      candidates: {
+        articles: articles.filter((a) => String(a.type || '').trim() !== 'Cover Page').map(slimArticle),
+        aip: aip.map(slimArticle),
+        news: news.map(slimNews),
+      },
+      currentIssue: home.currentIssue || {},
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.put('/api/homepage/sections', (req, res) => {
+  try {
+    createBackup();
+    const home = dio.readHomepageData() || {};
+    const incoming = (req.body && req.body.sections) || {};
+    const clean = {};
+    HOMEPAGE_SECTION_KEYS.forEach((k) => {
+      const v = incoming[k];
+      if (Array.isArray(v)) {
+        // Keep IDs as-is (numbers/strings), drop empties, cap to 6 (homepage layout).
+        clean[k] = v.filter((x) => x != null && x !== '').slice(0, 6);
+      }
+    });
+    home.sections = clean;
+    dio.writeHomepageData(home);
+    res.json({ saved: true, sections: clean });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1960,6 +2091,23 @@ app.post('/api/media/upload/image', uploadImage.single('image'), (req, res) => {
     const dest = path.join(dio.PATHS.imagesDir, safeName);
     fs.renameSync(req.file.path, dest);
     res.json({ url: `images/${safeName}`, path: dest });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Upload a video file (mp4/webm/ogg/mov) for embedding in pages. Stored under
+// images/videos/ — a directory the public site already serves statically — and
+// returned as a root-relative URL so pages can reference it directly.
+app.post('/api/media/upload/video', uploadVideo.single('video'), (req, res) => {
+  try {
+    if (!req.file) return res.status(400).json({ error: 'No file' });
+    const videoDir = path.join(dio.PATHS.imagesDir, 'videos');
+    if (!fs.existsSync(videoDir)) fs.mkdirSync(videoDir, { recursive: true });
+    const safeName = path.basename(req.file.originalname).replace(/[^a-zA-Z0-9._-]/g, '_');
+    const dest = path.join(videoDir, safeName);
+    fs.renameSync(req.file.path, dest);
+    res.json({ url: `images/videos/${safeName}`, path: dest });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -2831,6 +2979,7 @@ app.get('/api/media/missing-pdfs', (_req, res) => {
 // ===========================================================================
 
 const BUILTIN_PAGES = [
+  { slug: 'index', file: 'index.html', title: 'Ana Sayfa' },
   { slug: 'about', file: 'about.html', title: 'About the Journal' },
   { slug: 'for-authors', file: 'for-authors.html', title: 'For Authors' },
   { slug: 'for-reviewers', file: 'for-reviewers.html', title: 'For Reviewers' },

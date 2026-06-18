@@ -1,17 +1,17 @@
 /**
  * Balkan Medical Journal — News & Announcements
- * Last updated: 2026-05-15
+ * Last updated: 2026-06-18
  */
 window.NEWS = [
   {
     "id": 166,
     "featured": true,
-    "title": "111",
-    "excerpt": "1111",
-    "content": "11111",
+    "title": "Balkan Medical Journal Continues Its Rise in the Q1 Position",
+    "excerpt": "Balkan Medical Journal’s 2025 Journal Impact Factor has been announced as 4.5, with a JCR ranking of 49/336. The journal continues to maintain its Q1 position while expanding its international visibility and scientific impact.",
+    "content": "<!--StartFragment--><p data-start=\"74\" data-end=\"206\">Balkan Medical Journal’s 2025 Journal Impact Factor has been announced as <strong data-start=\"164\" data-end=\"171\">4.5</strong>, with a <strong data-start=\"180\" data-end=\"205\">JCR ranking of 49/336</strong>.</p><p data-start=\"208\" data-end=\"545\">As the official journal of Trakya University School of Medicine, Balkan Medical Journal continues to strengthen its position among internationally recognized medical journals. With its sustained Q1 status, the journal demonstrates increasing international visibility, scientific impact, and contribution to the global medical literature.</p><p data-start=\"547\" data-end=\"752\">This achievement reflects the growing recognition of the high-quality scientific articles published in Balkan Medical Journal and the continued efforts of its editors, reviewers, authors, and contributors.</p><p data-start=\"117\" data-end=\"378\"><!--StartFragment-->\n\n\n<!--EndFragment--></p><p data-start=\"754\" data-end=\"930\">Balkan Medical Journal will continue to support rigorous peer-reviewed research and contribute to the dissemination of reliable scientific knowledge at the international level.</p><!--EndFragment-->",
     "category": "News",
-    "date": "2026-04-03",
-    "image": "images/171-173-f1.jpg"
+    "date": "2026-06-18",
+    "image": "images/31d27100-56cc-4cd5-a202-a7432982450e.JPG"
   },
   {
     "sourceUrl": "https://balkanmedicaljournal.org/news.php?id=165",

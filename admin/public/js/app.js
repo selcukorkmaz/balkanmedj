@@ -321,7 +321,7 @@ const ROW_GRIP_SVG = '<svg viewBox="0 0 10 16" width="10" height="16" aria-hidde
 
 // Document-level delegated DnD: works for any current/future rows whose class
 // is registered in ROW_DND_SELECTORS. Saves rewiring per-render.
-const ROW_DND_SELECTORS = ['.author-row', '.aipf-author-row', '.ed-mrow', '.aff-row', '.aipf-aff-row'];
+const ROW_DND_SELECTORS = ['.author-row', '.aipf-author-row', '.ed-mrow', '.aff-row', '.aipf-aff-row', '.hs-row', '.banner-row'];
 let _dndSrc = null;
 
 function _dndRowFromEvent(e) {
@@ -367,7 +367,13 @@ document.addEventListener('drop', (e) => {
     e.preventDefault();
     const rect = row.getBoundingClientRect();
     const above = (e.clientY - rect.top) < rect.height / 2;
-    if (_dndSrc.classList.contains('ed-mrow')) {
+    if (_dndSrc.classList.contains('hs-row')) {
+      // Homepage section (manual): reorder the _hsState.ids[key] array + re-render.
+      _hsReorderByDrop(_dndSrc, row, above);
+    } else if (_dndSrc.classList.contains('banner-row')) {
+      // Hero banners: reorder the iframe slides + keep the carousel in sync.
+      _bannerReorderByDrop(_dndSrc, row, above);
+    } else if (_dndSrc.classList.contains('ed-mrow')) {
       // Editorial Board is model-driven: mutate _edModel and re-render
       // instead of touching the DOM directly (the re-render restores the
       // #N badges and disabled states on the ↑/↓ buttons).
@@ -1028,15 +1034,19 @@ async function deleteArticle(id) {
 }
 
 // Article edit / new
-route('/articles/new', (el) => renderArticleForm(el, null));
+route('/articles/new', (el, { query } = {}) => renderArticleForm(el, null, {
+  // Pre-fill Cilt/Sayı when launched from an issue's "Manuel Makale Ekle".
+  volume: query?.get('volume') || '',
+  issue: query?.get('issue') || '',
+}));
 route('/articles/:id', async (el, { id }) => {
   const article = await API.get(`/articles/${id}`);
   renderArticleForm(el, article);
 });
 
-async function renderArticleForm(el, article) {
+async function renderArticleForm(el, article, prefill = {}) {
   const isNew = !article;
-  const a = article || { id: '', type: '', title: '', authors: [], abstract: '', abstractHtml: '', previewText: '', keywords: [], doi: '', received: '', accepted: '', published: '', volume: '', issue: '', pages: '', pmid: '', featured: false, imageCorner: false, relatedArticles: [] };
+  const a = article || { id: '', type: '', title: '', authors: [], abstract: '', abstractHtml: '', previewText: '', keywords: [], doi: '', received: '', accepted: '', published: '', volume: prefill.volume || '', issue: prefill.issue || '', pages: '', pmid: '', featured: false, imageCorner: false, relatedArticles: [] };
 
   el.innerHTML = `
     <div class="page-header">
@@ -2640,6 +2650,17 @@ route('/issues/:volume/:issue', async (el, { volume, issue }) => {
       <div id="issue-pdf-results" class="mt-3"></div>
     </div>
 
+    <!-- Manual article entry for this issue (for articles that don't arrive as ePub/XML) -->
+    <div class="card card-padded mb-6">
+      <div class="flex items-center justify-between gap-3 flex-wrap">
+        <div>
+          <h2 class="font-semibold text-gray-900">Manuel Makale Ekle</h2>
+          <p class="text-xs text-gray-400 mt-1">ePub/XML olarak gelmeyen makaleler için boş bir makale formu açar — Cilt ${esc(volume)}, Sayı ${esc(issue)} otomatik atanır. Kaydedince makale bu sayıya eklenir.</p>
+        </div>
+        <a href="#/articles/new?volume=${encodeURIComponent(volume)}&issue=${encodeURIComponent(issue)}" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium whitespace-nowrap">+ Manuel Makale</a>
+      </div>
+    </div>
+
     <!-- Move toolbar (hidden until selection) -->
     <div id="move-toolbar" class="hidden bg-slate-50 border border-slate-200 rounded-xl p-4 mb-4 flex items-center gap-3 flex-wrap">
       <span class="text-sm font-medium text-slate-800"><span id="move-count">0</span> makale secildi</span>
@@ -3299,8 +3320,9 @@ function renderAipForm(el, article, opts = {}) {
 
   // ── Word'den İçe Aktar (Galenos şablonu) ──
   // Only rendered on new AIPs. Uploads the .docx to /api/articles-in-press/
-  // parse-docx and pre-fills General/Authors/Abstract form fields. Tam Metin
-  // and Dosyalar sekmeleri kapsam dışı — kullanıcının zaten ayrı bir akışı var.
+  // parse-docx and pre-fills General/Authors/Abstract fields AND the Tam Metin
+  // editor (section headings, paragraphs with sup/bold/italic, reference list).
+  // Dosyalar (figür/tablo) sekmesi kapsam dışı — gömülü görsel ayrı yüklenir.
   const importInput = document.getElementById('aipf-import-docx');
   if (importInput) {
     importInput.addEventListener('change', async () => {
@@ -3323,9 +3345,14 @@ function renderAipForm(el, article, opts = {}) {
         if (!res.ok) throw new Error(meta.error || 'Word dosyası ayrıştırılamadı');
         _applyAipDocxMetadata(meta);
         const warn = (meta.warnings || []).filter(Boolean);
+        const ftNote = meta.fullTextHtml ? ' Tam Metin sekmesi dolduruldu.' : '';
         toast(warn.length
-          ? `Word içe aktarıldı. ${warn.length} uyarı: ${warn.join('; ')}`
-          : 'Word dosyası başarıyla içe aktarıldı.', warn.length ? 'warning' : 'success');
+          ? `Word içe aktarıldı.${ftNote} ${warn.length} uyarı: ${warn.join('; ')}`
+          : `Word dosyası başarıyla içe aktarıldı.${ftNote}`, warn.length ? 'warning' : 'success');
+        // Heading levels are an automated first pass — nudge the editor to verify.
+        if (meta.headingCheckReminder) {
+          toast('Başlık seviyeleri otomatik belirlendi (H3 ana / H4 alt bölüm). Tam Metin sekmesinde "Başlıklar" aracıyla kontrol edin.', 'warning');
+        }
         markDirty();
       } catch (err) {
         toast(`İçe aktarma hatası: ${err.message}`, 'error');
@@ -3370,6 +3397,23 @@ function _applyAipDocxMetadata(meta) {
     .map((p) => `<p>${esc(p)}</p>`)
     .join('');
   if (abstractHtml) setHtmlEditorContent('aip-abs', abstractHtml);
+
+  // Tam Metin — load the extracted body HTML into the full-text editor, then run
+  // the same cross-linking pass used when opening an existing article so the
+  // <sup>N</sup> markers become #ref-N citations with bidirectional backlinks.
+  if (meta.fullTextHtml) {
+    setHtmlEditorContent('aip-ft', meta.fullTextHtml);
+    const ftVisual = document.getElementById('aip-ft-visual');
+    if (ftVisual && typeof _autoLinkInEditor === 'function') {
+      try { _autoLinkInEditor(ftVisual); } catch (_) { /* non-fatal */ }
+    }
+    const ftStatus = document.getElementById('aipf-fulltext-status');
+    if (ftStatus) {
+      ftStatus.textContent = meta.headingCheckReminder
+        ? 'Tam metin içe aktarıldı. Başlık seviyeleri (H3 ana bölüm / H4 alt bölüm) otomatik belirlendi — araç çubuğundaki "Başlıklar" ile kontrol edip "Tam Metni Kaydet" ile kaydedin.'
+        : 'Tam metin Word\'den içe aktarıldı — gözden geçirip "Tam Metni Kaydet" ile kaydedin.';
+    }
+  }
 }
 
 // Remove placed figure/table blocks whose backing image file no longer exists
@@ -3429,6 +3473,7 @@ async function loadAipFullTextIntoEditor(articleId) {
         _normalizeMediaCaptions(visual);
         _autoLinkInEditor(visual);
         _initMediaBlockControls();
+        _initToolbarStateSync();
       } finally {
         _suppressDirty = false;
       }
@@ -3850,7 +3895,7 @@ const _htmlEditorModes = {};
 
 function htmlEditorToolbar(prefix, variant = 'full') {
   const cmd = (c, v, label, title, body) =>
-    `<button type="button" onclick="htmlEditorCmd('${prefix}','${c}'${v ? `,'${v.replace(/'/g, "\\'")}'` : ''})" title="${title}" class="${label ? 'px-2 py-1' : 'p-1.5'} rounded hover:bg-gray-200 text-gray-600 ${label ? 'text-xs font-bold' : ''}">${body}</button>`;
+    `<button type="button" data-cmd="${c}" data-val="${v ? esc(v) : ''}" onclick="htmlEditorCmd('${prefix}','${c}'${v ? `,'${v.replace(/'/g, "\\'")}'` : ''})" title="${title}" class="${label ? 'px-2 py-1' : 'p-1.5'} rounded hover:bg-gray-200 text-gray-600 ${label ? 'text-xs font-bold' : ''}">${body}</button>`;
   const sep = '<div class="w-px bg-gray-300 mx-1"></div>';
   const boldIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 4h8a4 4 0 014 4 4 4 0 01-4 4H6z"/><path d="M6 12h9a4 4 0 014 4 4 4 0 01-4 4H6z"/></svg>';
   const italicIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 4h4m-2 0l-4 16m0 0h4"/></svg>';
@@ -3859,16 +3904,55 @@ function htmlEditorToolbar(prefix, variant = 'full') {
   const olIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 6h11M10 12h11M10 18h11M4 4v4h2v1H3v1h3v1H4v1h3M4 14h3v1H5v1h2v1H4M5 19h2"/></svg>';
   const linkIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>';
   const clearIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17 10L3 3m0 0l7 14 2-5 5-2M3 3l18 18"/></svg>';
+  const undoIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"/></svg>';
+  const redoIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 15l6-6m0 0l-6-6m6 6H9a6 6 0 000 12h3"/></svg>';
+  const headingIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 5v14M18 5v14M6 12h12"/></svg>';
 
+  // ── Simplified, fully-labelled toolbar for non-technical editors (Sayfalar) ──
+  // Icon + Turkish word on every button; only the essentials; no underline,
+  // no H4, no ordered list. Raw HTML is reachable via the separate "Gelişmiş
+  // (HTML)" toggle rendered by htmlEditor(), not from this toolbar.
+  if (variant === 'simple') {
+    const dis = 'disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-transparent';
+    const lbl = 'px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-medium flex items-center gap-1.5';
+    const sBtn = (onclick, title, icon, label, extra = '') =>
+      `<button type="button" onclick="${onclick}" title="${title}" class="${lbl} ${extra}">${icon}<span>${label}</span></button>`;
+    const simpleParts = [
+      `<button type="button" id="${prefix}-undo" onclick="htmlEditorUndo('${prefix}')" title="Geri Al (Ctrl+Z)" class="${lbl} ${dis}" disabled>${undoIcon}<span>Geri Al</span></button>`,
+      `<button type="button" id="${prefix}-redo" onclick="htmlEditorRedo('${prefix}')" title="İleri Al (Ctrl+Shift+Z)" class="${lbl} ${dis}" disabled>${redoIcon}<span>İleri Al</span></button>`,
+      sep,
+      sBtn(`htmlEditorCmd('${prefix}','bold')`, 'Kalın (Ctrl+B)', boldIcon, 'Kalın'),
+      sBtn(`htmlEditorCmd('${prefix}','italic')`, 'İtalik (Ctrl+I)', italicIcon, 'İtalik'),
+      sep,
+      sBtn(`htmlEditorHeadingToggle('${prefix}')`, 'Seçili satırı başlık yap / başlığı kaldır', headingIcon, 'Başlık'),
+      sBtn(`htmlEditorCmd('${prefix}','insertUnorderedList')`, 'Madde işaretli liste', ulIcon, 'Liste'),
+      sBtn(`htmlEditorLink('${prefix}')`, 'Bağlantı (link) ekle', linkIcon, 'Bağlantı'),
+      sep,
+      sBtn(`htmlEditorInsertImage('${prefix}')`, 'Resim ekle (bilgisayardan yükle veya URL)', _mediaImageIcon, 'Resim'),
+      sBtn(`htmlEditorInsertVideo('${prefix}')`, 'Video ekle (bilgisayardan yükle veya URL)', _mediaVideoIcon, 'Video'),
+      sBtn(`htmlEditorInsertYouTube('${prefix}')`, 'YouTube videosu ekle (bağlantı yapıştır)', _mediaYouTubeIcon, 'YouTube'),
+      sep,
+      sBtn(`htmlEditorCmd('${prefix}','removeFormat')`, 'Seçili metnin biçimini temizle', clearIcon, 'Biçimi Temizle'),
+    ];
+    return `<div id="${prefix}-toolbar" class="flex flex-wrap items-center gap-1 border border-b-0 rounded-t-lg bg-gray-50 px-2 py-1.5">${simpleParts.join('')}</div>`;
+  }
+
+  const btnCls = 'rounded hover:bg-gray-200 text-gray-600 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-transparent';
   const parts = [
-    cmd('bold', null, false, 'Kalın', boldIcon),
-    cmd('italic', null, false, 'İtalik', italicIcon),
-    cmd('underline', null, false, 'Altı Çizili', underlineIcon),
+    `<button type="button" id="${prefix}-undo" onclick="htmlEditorUndo('${prefix}')" title="Geri Al (Ctrl+Z)" class="px-2 py-1 ${btnCls} text-xs font-medium flex items-center gap-1.5" disabled>${undoIcon}<span>Geri Al</span></button>`,
+    `<button type="button" id="${prefix}-redo" onclick="htmlEditorRedo('${prefix}')" title="İleri Al (Ctrl+Shift+Z)" class="p-1.5 ${btnCls}" disabled>${redoIcon}</button>`,
+    sep,
+    cmd('bold', null, false, 'Kalın (Ctrl+B)', boldIcon),
+    cmd('italic', null, false, 'İtalik (Ctrl+I)', italicIcon),
+    cmd('underline', null, false, 'Altı Çizili (Ctrl+U)', underlineIcon),
     sep,
   ];
   if (variant === 'full') {
-    parts.push(cmd('formatBlock', '<h2>', true, 'Başlık 2', 'H2'));
-    parts.push(cmd('formatBlock', '<h3>', true, 'Başlık 3', 'H3'));
+    // This site styles .article-body h3 (main section) + h4 (subsection); h2 is
+    // NOT styled (renders as body text on the public page), so the heading
+    // buttons map to h3/h4 — the levels that actually render.
+    parts.push(cmd('formatBlock', '<h3>', true, 'Ana başlık (bölüm)', 'H3'));
+    parts.push(cmd('formatBlock', '<h4>', true, 'Alt başlık', 'H4'));
   }
   parts.push(cmd('formatBlock', '<p>', true, 'Paragraf', 'P'));
   parts.push(cmd('insertUnorderedList', null, false, 'Madde Listesi', ulIcon));
@@ -3892,6 +3976,8 @@ function htmlEditorToolbar(prefix, variant = 'full') {
     const autoIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>';
     parts.push(`<button type="button" onclick="_autoArrangeFullText('${prefix}')" title="Dosyalar bölümündeki figür/tabloları metin içine yerleştir, kaynak atıflarını otomatik bağla" class="px-2 py-1 rounded hover:bg-amber-50 text-amber-700 text-xs font-semibold flex items-center gap-1.5" style="border:1px solid color-mix(in oklab, #f59e0b 30%, transparent);background:color-mix(in oklab, #f59e0b 8%, transparent)">${autoIcon}<span>Otomatik Düzenle</span></button>`);
     parts.push(sep);
+    const outlineIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h10M4 12h7M4 18h13"/><circle cx="19" cy="6" r="1.4"/><circle cx="16" cy="12" r="1.4"/></svg>';
+    parts.push(`<button type="button" onclick="_toggleHeadingOutline('${prefix}')" title="Başlık taslağı: başlıkları izle, H3/H4 doğruluğunu kontrol et, tıkla→editörde vurgula, seviyeyi düzelt" class="px-2 py-1 rounded hover:bg-teal-50 text-teal-700 text-xs font-medium flex items-center gap-1.5">${outlineIcon}<span>Başlıklar</span></button>`);
     const mediaIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path stroke-linecap="round" stroke-linejoin="round" d="M3 9h18"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 4v16"/></svg>';
     parts.push(`<button type="button" onclick="_openMediaManager('${prefix}')" title="Tüm figür/tabloları tek ekranda yönet: etiket, başlık, durum" class="px-2 py-1 rounded hover:bg-teal-50 text-teal-700 text-xs font-medium flex items-center gap-1.5">${mediaIcon}<span>Medya</span></button>`);
     const checkIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>';
@@ -3931,10 +4017,18 @@ function htmlEditor({ prefix, initialHtml = '', rows = 12, placeholder = '', var
   // visible in the same position regardless of how long the article is.
   // calc() leaves room for the page header, tabs, toolbar, and bottom margin.
   const visualMaxHeight = variant === 'full' ? 'max-height:calc(100vh - 320px);' : '';
+  // Simple variant (Sayfalar): hide the Görsel|HTML segmented switch and offer a
+  // single, subtle "Gelişmiş (HTML)" toggle instead — raw HTML stays reachable
+  // but out of the way for non-technical editors.
+  const modeControl = variant === 'simple'
+    ? `<button type="button" id="${prefix}-advanced" onclick="htmlEditorToggleSource('${prefix}', this)" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-medium text-gray-400 hover:text-gray-700 hover:bg-gray-100" title="Sayfanın HTML kodunu düzenle (ileri düzey — gerekmedikçe kullanmayın)">
+         <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l-4-4 4-4M14 4l4 4-4 4"/></svg><span>Gelişmiş (HTML)</span>
+       </button>`
+    : htmlEditorModeSwitch(prefix);
   return `
     <div class="html-editor" data-html-editor="${prefix}">
       <div class="flex items-center justify-end mb-2">
-        ${htmlEditorModeSwitch(prefix)}
+        ${modeControl}
       </div>
       ${htmlEditorToolbar(prefix, variant)}
       <div id="${prefix}-visual" contenteditable="true" class="w-full px-4 py-3 border rounded-b-lg text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 max-w-none overflow-y-auto bg-white ${visualClass}" style="min-height:${minHeight};${visualMaxHeight}" data-placeholder="${safePlaceholder}">${initialHtml || ''}</div>
@@ -3947,7 +4041,228 @@ function htmlEditorCmd(prefix, command, value) {
   if (!visual) return;
   visual.focus();
   document.execCommand(command, false, value || null);
+  // formatBlock (H2/H3/P) on Word-pasted text leaves the original inline font
+  // styling (font-size/weight/family/color, mso-*) baked onto the block and its
+  // inner <span>/<b>, which OVERRIDES the semantic tag's CSS — so the heading
+  // looks identical no matter which level you pick. Strip those conflicting
+  // declarations from the blocks the selection just converted so H2/H3/P render
+  // at their real level.
+  if (command === 'formatBlock' && value) {
+    try { _cleanFormattedBlocks(visual, value); } catch (_) { /* non-fatal */ }
+  }
+  _updateHtmlEditorToolbarState(visual);
   markDirty();
+}
+
+// The block-level tag the caret currently sits in (p/h3/li/…), or '' if none.
+function _selectionBlockTag(root) {
+  const sel = window.getSelection();
+  if (!sel || !sel.rangeCount) return '';
+  let n = sel.getRangeAt(0).startContainer;
+  if (n && n.nodeType === 3) n = n.parentNode;
+  while (n && n !== root && n.nodeType === 1) {
+    if (/^(P|H1|H2|H3|H4|H5|H6|LI|BLOCKQUOTE)$/.test(n.tagName)) return n.tagName.toLowerCase();
+    n = n.parentNode;
+  }
+  return '';
+}
+
+// Simple-toolbar "Başlık" button: toggle the caret's line between a heading
+// (h3 — the level the public pages actually style) and a normal paragraph, so
+// a non-technical editor turns headings on/off without picking a level.
+function htmlEditorHeadingToggle(prefix) {
+  const visual = document.getElementById(`${prefix}-visual`);
+  if (!visual) return;
+  visual.focus();
+  const tag = _selectionBlockTag(visual) === 'h3' ? '<p>' : '<h3>';
+  document.execCommand('formatBlock', false, tag);
+  try { _cleanFormattedBlocks(visual, tag); } catch (_) { /* non-fatal */ }
+  _updateHtmlEditorToolbarState(visual);
+  markDirty();
+}
+
+// "Gelişmiş (HTML)" toggle for the simple-variant editor: flip between the
+// visual editor and the raw-HTML source, relabelling the button. The button
+// lives OUTSIDE the toolbar (htmlEditor renders it), so it stays reachable even
+// while the formatting toolbar is hidden in source mode.
+function htmlEditorToggleSource(prefix, btn) {
+  const cur = _htmlEditorModes[prefix] || 'visual';
+  const next = cur === 'visual' ? 'source' : 'visual';
+  setHtmlEditorMode(prefix, next);
+  const span = btn && btn.querySelector('span');
+  if (span) span.textContent = next === 'source' ? 'Görsel düzenleyiciye dön' : 'Gelişmiş (HTML)';
+}
+
+// Reflect the current selection's formatting in the toolbar: highlight B/I/U
+// when the selection is bold/italic/underlined, and highlight the H3/H4/P button
+// matching the block the caret sits in — so the editor sees the active style.
+function _updateHtmlEditorToolbarState(visual) {
+  if (!visual) return;
+  const prefix = (visual.id || '').replace(/-visual$/, '');
+  const toolbar = document.getElementById(prefix + '-toolbar');
+  if (!toolbar) return;
+  const inline = {};
+  ['bold', 'italic', 'underline'].forEach((c) => { try { inline[c] = document.queryCommandState(c); } catch (_) { inline[c] = false; } });
+  // Block tag the caret/selection is inside.
+  let blockTag = '';
+  const sel = window.getSelection();
+  if (sel && sel.rangeCount) {
+    let n = sel.getRangeAt(0).startContainer;
+    if (n && n.nodeType === 3) n = n.parentNode;
+    while (n && n !== visual && n.nodeType === 1) {
+      if (/^(P|H1|H2|H3|H4|H5|H6|LI|BLOCKQUOTE)$/.test(n.tagName)) { blockTag = n.tagName.toLowerCase(); break; }
+      n = n.parentNode;
+    }
+  }
+  toolbar.querySelectorAll('button[data-cmd]').forEach((b) => {
+    const c = b.dataset.cmd;
+    let active = false;
+    if (c === 'bold' || c === 'italic' || c === 'underline') active = !!inline[c];
+    else if (c === 'formatBlock') active = (b.dataset.val || '').replace(/[<>]/g, '').toLowerCase() === blockTag;
+    b.classList.toggle('is-active', active);
+  });
+}
+
+// Bind once: keep every full-text/abstract editor's toolbar in sync with the
+// current selection's formatting.
+let _toolbarStateBound = false;
+function _initToolbarStateSync() {
+  if (_toolbarStateBound) return;
+  _toolbarStateBound = true;
+  document.addEventListener('selectionchange', () => {
+    const sel = window.getSelection();
+    if (!sel || !sel.rangeCount) return;
+    let n = sel.anchorNode;
+    if (n && n.nodeType === 3) n = n.parentNode;
+    const visual = (n && n.closest) ? n.closest('[id$="-visual"][contenteditable="true"]') : null;
+    if (visual) _updateHtmlEditorToolbarState(visual);
+  });
+}
+
+// Parse a human-typed/pasted date string into the `yyyy-mm-dd` value that a
+// native <input type="date"> requires. Day-first (Turkish gg.aa.yyyy) is the
+// default for ambiguous separators; ISO yyyy-mm-dd is recognised explicitly.
+// Returns null when the text can't be read as a date.
+function _parsePastedDateToISO(raw) {
+  if (!raw) return null;
+  // Normalise: drop bidi marks, collapse inner whitespace, strip surrounding
+  // punctuation (e.g. a trailing "." when the date ended a sentence).
+  let s = String(raw).replace(/[‎‏]/g, '').trim();
+  s = s.replace(/^[\s.,;:]+|[\s.,;:]+$/g, '').replace(/\s+/g, ' ');
+  if (!s) return null;
+  const iso = (y, mo, d) => {
+    y = Number(y); mo = Number(mo); d = Number(d);
+    if (!y || mo < 1 || mo > 12 || d < 1 || d > 31) return null;
+    if (y < 100) y += 2000; // 2-digit year → 20yy
+    return String(y).padStart(4, '0') + '-' + String(mo).padStart(2, '0') + '-' + String(d).padStart(2, '0');
+  };
+  let m;
+  // ISO-ish: yyyy-mm-dd / yyyy.mm.dd / yyyy/mm/dd (spaces around separators OK)
+  m = s.match(/^(\d{4})\s*[.\-/]\s*(\d{1,2})\s*[.\-/]\s*(\d{1,2})$/);
+  if (m) return iso(m[1], m[2], m[3]);
+  // Day-first: dd.mm.yyyy / dd-mm-yyyy / dd/mm/yyyy (also 2-digit year)
+  m = s.match(/^(\d{1,2})\s*[.\-/]\s*(\d{1,2})\s*[.\-/]\s*(\d{2,4})$/);
+  if (m) return iso(m[3], m[2], m[1]);
+  // Month names — English + Turkish — matched on an ASCII-folded 3-letter prefix
+  // so case and Turkish diacritics (ş/ğ/ı/İ/ö/ü/ç) don't matter:
+  // "1 Haziran 2026", "Haziran 1, 2026", "1 June 2026", "June 1, 2026".
+  const fold = (t) => t
+    .replace(/[çÇ]/g, 'c').replace(/[ğĞ]/g, 'g').replace(/[ıİ]/g, 'i')
+    .replace(/[öÖ]/g, 'o').replace(/[şŞ]/g, 's').replace(/[üÜ]/g, 'u')
+    .toLowerCase();
+  const MON = {
+    jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12,
+    oca: 1, sub: 2, nis: 4, haz: 6, tem: 7, agu: 8, eyl: 9, eki: 10, kas: 11, ara: 12,
+  };
+  const sf = fold(s);
+  m = sf.match(/^(\d{1,2})\s+([a-z]{3,})\.?\s*,?\s*(\d{4})$/);
+  if (m && MON[m[2].slice(0, 3)]) return iso(m[3], MON[m[2].slice(0, 3)], m[1]);
+  m = sf.match(/^([a-z]{3,})\.?\s+(\d{1,2})\s*,?\s*(\d{4})$/);
+  if (m && MON[m[1].slice(0, 3)]) return iso(m[3], MON[m[1].slice(0, 3)], m[2]);
+  // Bare yyyymmdd
+  m = s.match(/^(\d{4})(\d{2})(\d{2})$/);
+  if (m) return iso(m[1], m[2], m[3]);
+  return null;
+}
+
+// Let editors copy-paste dates into native date inputs (which otherwise reject
+// arbitrary text). One delegated capture-phase listener covers every current
+// and future <input type="date"> on the page; we parse the clipboard text and
+// set the ISO value ourselves. No-op (native behaviour) when the paste isn't a
+// recognisable date, so nothing regresses.
+let _datePasteBound = false;
+function _initDatePasteSupport() {
+  if (_datePasteBound) return;
+  _datePasteBound = true;
+  document.addEventListener('paste', (e) => {
+    const el = e.target;
+    if (!el || el.tagName !== 'INPUT' || (el.type !== 'date' && el.type !== 'datetime-local')) return;
+    const cd = e.clipboardData || window.clipboardData;
+    if (!cd) return;
+    const text = cd.getData('text');
+    if (!text) return;
+    const isoVal = _parsePastedDateToISO(text);
+    if (!isoVal) {
+      e.preventDefault();
+      if (typeof toast === 'function') toast('Tarih anlaşılamadı. Örn: 01.06.2026 veya 2026-06-01', 'warn');
+      return;
+    }
+    e.preventDefault();
+    el.value = isoVal;
+    el.dispatchEvent(new Event('input', { bubbles: true }));
+    el.dispatchEvent(new Event('change', { bubbles: true }));
+  }, true);
+}
+
+// Remove inline font declarations that fight a semantic block tag, from a style
+// attribute string. Keeps non-font declarations (e.g. text-align) intact.
+function _stripFontDecls(el) {
+  if (!el || !el.getAttribute) return;
+  const s = el.getAttribute('style');
+  if (!s) return;
+  const kept = s.split(';').map((d) => d.trim()).filter((d) => {
+    if (!d) return false;
+    const prop = d.split(':')[0].trim().toLowerCase();
+    return !/^(font|font-size|font-weight|font-family|font-style|line-height|color|mso-[\w-]*)$/.test(prop);
+  });
+  if (kept.length) el.setAttribute('style', kept.join('; '));
+  else el.removeAttribute('style');
+}
+
+// After formatBlock, clean every block of the new tag that the current selection
+// touches: drop conflicting inline font styling and unwrap now-style-less Word
+// <span>/<font> wrappers so the tag's own CSS governs the look.
+function _cleanFormattedBlocks(visual, tagValue) {
+  const tagName = String(tagValue).replace(/[<>]/g, '').toUpperCase();
+  if (!/^(H[1-6]|P|DIV)$/.test(tagName)) return;
+  const sel = window.getSelection();
+  if (!sel || !sel.rangeCount) return;
+  const range = sel.getRangeAt(0);
+  const blocks = [];
+  const walker = document.createTreeWalker(visual, NodeFilter.SHOW_ELEMENT, {
+    acceptNode: (el) => (el.tagName === tagName && range.intersectsNode(el))
+      ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP,
+  });
+  for (let n = walker.nextNode(); n; n = walker.nextNode()) blocks.push(n);
+  // Fallback: if the walker found nothing (collapsed caret edge cases), use the
+  // nearest matching-tag ancestor of the caret.
+  if (!blocks.length) {
+    let e = range.startContainer;
+    if (e && e.nodeType === 3) e = e.parentNode;
+    while (e && e !== visual) { if (e.tagName === tagName) { blocks.push(e); break; } e = e.parentNode; }
+  }
+  blocks.forEach((block) => {
+    _stripFontDecls(block);
+    block.removeAttribute('align');
+    block.querySelectorAll('[style]').forEach(_stripFontDecls);
+    // Unwrap leftover styling-only <span>/<font> (no attributes after the strip).
+    block.querySelectorAll('span, font').forEach((sp) => {
+      if (!sp.attributes.length) {
+        while (sp.firstChild) sp.parentNode.insertBefore(sp.firstChild, sp);
+        sp.remove();
+      }
+    });
+  });
 }
 
 function htmlEditorLink(prefix) {
@@ -4187,15 +4502,20 @@ async function openFigurePicker(prefix) {
   });
 }
 
-// ── Helper: convert plain text caption (with optional [N] tokens) to HTML ──
-// [N] becomes a linked superscript citation showing the bare number (no
-// brackets), matching the rest of the site's citation style. Everything else
-// is HTML-escaped.
+// ── Helper: convert a caption's citation tokens to HTML ──
+// ONLY the [[N]] token (double brackets) — inserted exclusively by the
+// "Kaynakçadan atıf ekle" picker — becomes a linked superscript citation
+// (rendered as the bare number, Vancouver style). A single-bracket [N] that the
+// user TYPES by hand is intentionally left as literal text and is NEVER turned
+// into a citation, here or by the auto-link pass. Multi-number tokens
+// ([[5,7]], [[5-9]]) link each number. Everything else is HTML-escaped.
 function _captionToHtml(rawCaption) {
   if (!rawCaption) return '';
-  return esc(rawCaption).replace(/\[(\d+)\]/g, (_, n) =>
-    `<sup><a href="#ref-${n}" class="article-ref-citation">${n}</a></sup>`
-  );
+  return esc(rawCaption).replace(/\[\[\s*(\d+(?:\s*[,\-–]\s*\d+)*)\s*\]\]/g, (_, inside) => {
+    const links = inside.replace(/\d+/g, (n) =>
+      `<a href="#ref-${n}" class="article-ref-citation">${n}</a>`);
+    return `<sup>${links}</sup>`;
+  });
 }
 
 // ── Figure insert dialog: single caption field that supports inline [N] refs ──
@@ -4305,12 +4625,12 @@ async function openFigureInsertDialog(url, filename) {
               value="${esc(defaultLabel)}" data-auto-default="${esc(autoDefaultLabel)}">
             <p class="text-xs mt-1 mb-2.5" style="color:var(--text-faint)">Açıklamanın başında <strong>kalın</strong> görünecek etiket (ör. <strong>Figür 2a</strong>, <strong>Graphic 3</strong>). Değiştirmezseniz otomatik numaralanır.</p>
             <label class="block text-xs font-semibold mb-1.5" style="color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em">Figür Açıklaması</label>
-            <textarea id="fig-dlg-caption" class="input w-full" rows="3" style="resize:vertical;font-family:inherit" placeholder="Açıklama metni (etiketi yukarıdaki kutuya yazın). Kaynak atıfı için [3] gibi yazın veya aşağıdaki butonları kullanın." autocomplete="off">${esc(defaultCaption)}</textarea>
-            <p class="text-xs mt-1" style="color:var(--text-faint)">Kaynak atıflarını <strong>[3]</strong>, <strong>[5,7]</strong> biçiminde yazın — kaydedildiğinde tıklanabilir bağlantıya dönüşür.</p>
+            <textarea id="fig-dlg-caption" class="input w-full" rows="3" style="resize:vertical;font-family:inherit" placeholder="Açıklama metni (etiketi yukarıdaki kutuya yazın). Kaynak eklemek için aşağıdaki “Kaynakçadan atıf ekle” bölümünü kullanın." autocomplete="off">${esc(defaultCaption)}</textarea>
+            <p class="text-xs mt-1" style="color:var(--text-faint)">Kaynak atfı <strong>yalnızca</strong> aşağıdaki “Kaynakçadan atıf ekle” bölümünden eklendiğinde bağlanır (<strong>[[3]]</strong> olarak görünür). Elle yazdığınız <strong>[3]</strong> düz metin olarak kalır, atıf olmaz.</p>
           </div>
         </div>
 
-        <!-- Reference chips block (appends [N] into caption) -->
+        <!-- Reference chips block (appends the [[N]] citation token into caption) -->
         <div style="background:var(--bg-subtle);border:1px solid var(--border-soft);border-radius:8px;padding:10px 12px">
           <div class="flex items-center justify-between mb-2">
             <span class="text-xs font-medium" style="color:var(--text-muted)">
@@ -4362,9 +4682,11 @@ async function openFigureInsertDialog(url, filename) {
   const labelInput   = overlay.querySelector('#fig-dlg-label');
   const manualN      = overlay.querySelector('#fig-dlg-manual-n');
 
-  // Helper: insert [N] at cursor in caption field
+  // Helper: insert the picker citation token [[N]] at the cursor. The double
+  // brackets are what make it a REAL citation (see _captionToHtml) — typing a
+  // single-bracket [N] by hand stays literal text and is never linked.
   function insertRefTag(n) {
-    const tag = `[${n}]`;
+    const tag = `[[${n}]]`;
     const start = captionInput.selectionStart ?? captionInput.value.length;
     const end   = captionInput.selectionEnd   ?? start;
     captionInput.value = captionInput.value.slice(0, start) + tag + captionInput.value.slice(end);
@@ -4500,6 +4822,10 @@ async function openFigureInsertDialog(url, filename) {
           markDirty();
           synced = true;
         }
+        // Refresh the asset cache + Dosyalar "Yüklü Figürler" thumbnails so the
+        // new caption/label shows everywhere (incl. the Medya manager, which
+        // reads this cache for unplaced figures). Non-blocking.
+        if (articleId && typeof loadArticleAssets === 'function') { loadArticleAssets(articleId).catch(() => {}); }
         toast(synced
           ? 'Figür kaydedildi ve tam metindeki başlık/açıklama otomatik güncellendi.'
           : 'Figür açıklaması kaydedildi. Tam Metin sekmesinden "Otomatik Düzenle" ile metne yansıtın.');
@@ -4678,42 +5004,81 @@ function _toTitleCase(str) {
 // look-and-feel of articles whose source HTML was migrated to clean <h3>s.
 // Mirrors the runtime promoter in article.html (cleanupReferenceListItems'
 // sibling) so the editor and reader views never disagree.
+// Largest inline font-size (in pt; px converted ≈ ×0.75) found on a heading
+// paragraph or its bold/span children — Word's heading STYLES carry this, which
+// lets us tell main sections (bigger) from subsections (smaller).
+function _headingFontPt(p) {
+  let max = null;
+  const check = (el) => {
+    if (!el || !el.getAttribute) return;
+    const m = (el.getAttribute('style') || '').match(/font-size\s*:\s*([\d.]+)\s*(pt|px)/i);
+    if (!m) return;
+    let v = parseFloat(m[1]);
+    if (m[2].toLowerCase() === 'px') v *= 0.75;
+    if (max == null || v > max) max = v;
+  };
+  check(p);
+  check(p.firstElementChild);
+  p.querySelectorAll('[style]').forEach(check);
+  return max;
+}
+
 function _promoteMsoHeadings(visualEl) {
   if (!visualEl) return false;
-  let mutated = false;
+
+  // ── Pass 1: collect heading-like paragraphs (same strict gating as before) ──
+  const cands = [];
   visualEl.querySelectorAll('p').forEach((p) => {
     if (p.closest('.article-references, .article-acknowledgments, .article-footnotes, .article-supplementary, figure, .article-figure, .article-table-wrap, table')) return;
-
-    // Top-level child must be the bold wrapper for the whole paragraph
     const first = p.firstElementChild;
     if (!first || (first.tagName !== 'B' && first.tagName !== 'STRONG')) return;
-
     const text = (p.textContent || '').replace(/\s+/g, ' ').trim();
     if (!text || text.length > 100) return;
-
-    // The bold element must cover the paragraph's full visible text
     const boldText = (first.textContent || '').replace(/\s+/g, ' ').trim();
     if (boldText !== text) return;
-
-    // Heading-like: mostly UPPERCASE, or short Title Case starting with capital
     const isUpper = text === text.toUpperCase() && /[A-ZÇĞİŞÜÖ]/.test(text);
     const isTitleCase = /^[A-ZÇĞİŞÜÖ]/.test(text) && text.length < 50;
     if (!isUpper && !isTitleCase) return;
-
-    // "References" has its own handling (_normalizeMsoReferenceList relies on
-    // _findRefHeading which accepts <p>/<b> too) — leave it alone.
     if (/^(references?|bibliography|kaynaklar|kaynakça|referanslar|kaynak\s*listesi)$/i.test(text)) return;
-
-    // Table/figure captions are bold + short + Title Case so they look
-    // heading-like, but they must stay caption paragraphs — never promote a
-    // "Table N." / "Figure N." / "Şekil N." line to an <h3> (it would render
-    // oversized and get a self-referential cross-ref link). _normalizeMediaCaptions
-    // adopts these into their media block as the canonical bold label instead.
     if (/^\s*(?:tables?|tablolar?|tablo|tab|figures?|figs?|şekiller?|şekil|sekil|fig)\b\s*\.?\s*\d+/i.test(text)) return;
+    cands.push({ p, text, isUpper, sizePt: _headingFontPt(p) });
+  });
+  if (!cands.length) return false;
 
-    const h3 = document.createElement('h3');
-    h3.textContent = _toTitleCase(text);
-    p.parentNode.replaceChild(h3, p);
+  // ── Pass 2: assign H3 (main) → H4 (sub) → H5 → H6 by depth ──
+  // This site styles .article-body h3–h6 (progressively smaller); h1/h2 are NOT
+  // styled, so we never emit them. Signal priority: (1) inline font-size — the
+  // distinct sizes are ranked biggest→smallest and mapped to H3,H4,H5,H6 so a
+  // 3rd/4th heading level is honored, not flattened; (2) UPPERCASE-vs-TitleCase
+  // split when there is no size signal; (3) uniform set with no signal → all H3.
+  const sizes = cands.map((c) => c.sizePt).filter((v) => v != null);
+  const distinctDesc = Array.from(new Set(sizes)).sort((a, b) => b - a);
+  const hasSizeSignal = distinctDesc.length >= 2;
+  const upperCount = cands.filter((c) => c.isUpper).length;
+  const capsSplit = upperCount > 0 && upperCount < cands.length;
+
+  // size → level: rank among distinct sizes (≤0.5pt tolerance), H3 + rank, cap H6.
+  const tierOf = (sz) => {
+    if (sz == null) return null;
+    let idx = distinctDesc.findIndex((s) => Math.abs(s - sz) <= 0.5);
+    if (idx < 0) idx = distinctDesc.length - 1;
+    return Math.min(3 + idx, 6);
+  };
+
+  const levelFor = (c) => {
+    if (hasSizeSignal) {
+      if (c.sizePt != null) return tierOf(c.sizePt);
+      return c.isUpper ? 3 : 4; // no size on this one — fall back to caps
+    }
+    if (capsSplit) return c.isUpper ? 3 : 4;
+    return 3; // uniform set, no signal → legacy main-heading behavior
+  };
+
+  let mutated = false;
+  cands.forEach((c) => {
+    const h = document.createElement('h' + levelFor(c));
+    h.textContent = _toTitleCase(c.text);
+    c.p.parentNode.replaceChild(h, c.p);
     mutated = true;
   });
   if (mutated && typeof markDirty === 'function') markDirty();
@@ -4725,6 +5090,45 @@ function _promoteMsoHeadings(visualEl) {
 // start of each MsoListParagraph; once those become <li>s, the <ol> already
 // auto-numbers them, so the inline numbers create the duplicate "1.  1. ..."
 // effect seen in the editor and on the live site.
+// Strip only the font-IDENTITY declarations (family/size/line-height + the
+// `font` shorthand + mso-*) from a reference element, KEEPING font-weight,
+// font-style and color so a journal name's italic/bold emphasis survives.
+// References must render in one fixed list font (CSS), regardless of whether
+// they were pasted from Word (carry inline fonts) or typed in by hand (plain).
+function _stripRefFontDecls(el) {
+  if (!el || !el.getAttribute) return;
+  const s = el.getAttribute('style');
+  if (!s) return;
+  const kept = s.split(';').map((d) => d.trim()).filter((d) => {
+    if (!d) return false;
+    const prop = d.split(':')[0].trim().toLowerCase();
+    return !/^(font|font-size|font-family|line-height|mso-[\w-]*)$/.test(prop);
+  });
+  if (kept.length) el.setAttribute('style', kept.join('; '));
+  else el.removeAttribute('style');
+}
+
+// Make every reference list item share the list's CSS font: drop inline
+// font-family/size from each <li> and its descendants, then unwrap any
+// <span>/<font> left with no attributes. Idempotent.
+function _normalizeReferenceFonts(ol) {
+  if (!ol) return false;
+  let mutated = false;
+  ol.querySelectorAll(':scope > li').forEach((li) => {
+    const before = (li.getAttribute('style') || '') + '|' + li.innerHTML;
+    _stripRefFontDecls(li);
+    li.querySelectorAll('[style]').forEach(_stripRefFontDecls);
+    li.querySelectorAll('span, font').forEach((sp) => {
+      if (!sp.attributes.length) {
+        while (sp.firstChild) sp.parentNode.insertBefore(sp.firstChild, sp);
+        sp.remove();
+      }
+    });
+    if (((li.getAttribute('style') || '') + '|' + li.innerHTML) !== before) mutated = true;
+  });
+  return mutated;
+}
+
 function _cleanupReferenceListItems(visualEl) {
   if (!visualEl) return false;
   const ol = visualEl.querySelector('.article-references ol, ol.article-references-ol');
@@ -4747,6 +5151,10 @@ function _cleanupReferenceListItems(visualEl) {
       mutated = true;
     }
   });
+  // Unify the list font: Word-pasted refs carry inline font-family/size that
+  // diverges from hand-typed refs (which inherit the list CSS). Strip those so
+  // every item renders in one fixed font.
+  if (_normalizeReferenceFonts(ol)) mutated = true;
   if (mutated && typeof markDirty === 'function') markDirty();
   return mutated;
 }
@@ -4782,6 +5190,39 @@ function _normalizeMsoReferenceList(visualEl) {
       break;
     }
   }
+  // Tail-absorb: authors frequently type the LAST reference as a plain
+  // MsoNormal/normal <p> (different run formatting — e.g. a Calibri paragraph)
+  // instead of continuing the auto-numbered MsoListParagraph list, so the walk
+  // above stops one short. Pull in trailing siblings that unmistakably read as
+  // a reference (a "YEAR;volume:page" citation tail) so the final entry isn't
+  // dropped. The gate is deliberately reference-specific to avoid swallowing a
+  // following acknowledgments / conflict-of-interest paragraph; we also bail at
+  // any heading or already-structured section.
+  const _looksLikeRef = (el) => {
+    if (!el || el.tagName !== 'P') return false;
+    if (el.closest && el.closest('.article-references, .article-acknowledgments, .article-footnotes, figure, table, .article-table-wrap')) return false;
+    const t = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    if (t.length < 12 || t.length > 1000) return false;
+    // Volume;issue:page tail: "2025;42:386-387." / "2025;13:e30-e31." — very
+    // reference-specific (a year immediately followed by ";<digits|eNN>").
+    return /(?:19|20)\d\d\s*;\s*[a-z]?\d/i.test(t);
+  };
+  let tailSkipped = 0;
+  while (n) {
+    if (_looksLikeRef(n)) {
+      items.push(n);
+      tailSkipped = 0;
+      n = n.nextElementSibling;
+    } else if (tailSkipped < 2 && (
+      (n.tagName === 'P' && !(n.textContent || '').trim()) ||
+      n.tagName === 'BR' || n.tagName.toLowerCase() === 'o:p'
+    )) {
+      tailSkipped += 1;
+      n = n.nextElementSibling;
+    } else {
+      break;
+    }
+  }
   if (items.length < 2) return false;
   const ol = document.createElement('ol');
   ol.className = 'article-references-ol';
@@ -4797,6 +5238,10 @@ function _normalizeMsoReferenceList(visualEl) {
     li.innerHTML = html;
     ol.appendChild(li);
   });
+  // Unify the list font now that the <ol> exists (the cleanup pass at the top
+  // ran before any <li> existed) — strips any Calibri/Times the tail-absorbed
+  // MsoNormal paragraph carried in, so the new entry matches the rest.
+  _normalizeReferenceFonts(ol);
   let wrapper = h.parentNode && h.parentNode.classList && h.parentNode.classList.contains('article-references')
     ? h.parentNode : null;
   if (!wrapper) {
@@ -4809,6 +5254,40 @@ function _normalizeMsoReferenceList(visualEl) {
   items.forEach((p) => p.remove());
   if (typeof markDirty === 'function') markDirty();
   return true;
+}
+
+// A block-level paragraph that READS as a figure/table caption: its text starts
+// with "Figure 1.", "Table 2:", "Şekil 3 -", "Suppl. Fig. 1a)", etc. The
+// punctuation right after the number is what distinguishes a caption from a body
+// sentence that merely mentions a figure ("Figure 1 shows…", "Table 1, 2 and 3").
+const _CAPTION_PREFIX_RE = /^\s*(?:supplementary\s+|suppl\.?\s+|ek\s+|online\s+)?(?:figure|fig\.?|table|tbl\.?|şekil|sekil|tablo|graph|chart|scheme|plate|resim|grafik|görsel|gorsel)\s*\d+[a-z]?\s*[.:)–—-]/i;
+
+// Nearest block-level ancestor of a node, stopping at `root`.
+function _nearestBlockEl(node, root) {
+  let p = node && node.nodeType === 1 ? node : (node && node.parentNode);
+  while (p && p !== root) {
+    if (p.nodeType === 1 && /^(P|DIV|LI|FIGCAPTION|TD|TH|H1|H2|H3|H4|H5|H6)$/.test(p.tagName)) return p;
+    p = p.parentNode;
+  }
+  return null;
+}
+
+// True when a node lives inside a figure/table caption — either a structural
+// caption (<figcaption>, <p class="table-label">, inside a <figure>/.article-figure)
+// or a plain "Figure N. …" paragraph. Bracketed/superscript numbers there are
+// almost always values (counts, ages, ranges, panel sizes), NOT reference
+// citations, so the auto-citation passes must skip them. (Citations a user
+// deliberately added via the Figür dialog are already <a> anchors and stay.)
+function _inMediaCaption(node, root) {
+  let p = node && node.nodeType === 1 ? node : (node && node.parentNode);
+  while (p && p !== root) {
+    if (p.tagName === 'FIGURE' || p.tagName === 'FIGCAPTION') return true;
+    if (p.classList && (p.classList.contains('table-label') || p.classList.contains('article-figure'))) return true;
+    p = p.parentNode;
+  }
+  const block = _nearestBlockEl(node, root);
+  if (block && _CAPTION_PREFIX_RE.test(block.textContent || '')) return true;
+  return false;
 }
 
 // Heal partially-linked sub-figure references: an <a class="article-media-ref-link">
@@ -4998,6 +5477,7 @@ function _autoLinkInEditor(visualEl) {
     const citationPattern = /^[\s\d,\-–— ]+$/;
     visualEl.querySelectorAll('sup').forEach((sup) => {
       if (sup.closest('.article-references, .article-footnotes, .article-acknowledgments')) return;
+      if (_inMediaCaption(sup, visualEl)) return; // figure/table caption → not a citation
       if (sup.querySelector('a')) return;
       const text = (sup.textContent || '').trim();
       if (!text || !citationPattern.test(text) || !/\d/.test(text)) return;
@@ -5030,6 +5510,9 @@ function _autoLinkInEditor(visualEl) {
         )) return true;
         p = p.parentNode;
       }
+      // Figure/table captions (structural or "Figure N. …" paragraphs): bracketed
+      // numbers there are values, not citations — never auto-link them.
+      if (_inMediaCaption(node, visualEl)) return true;
       return false;
     };
     const bracketPattern = /\[\s*(\d+(?:\s*(?:,|-|–|;)\s*\d+)*)\s*\]/g;
@@ -5137,8 +5620,13 @@ function _validateCrossRefAnchors(visualEl) {
       targets.add(li.id);
     });
   }
+  // Supplementary targets live in the metadata "Ek Materyal" rows, not the body.
+  document.querySelectorAll('.supp-link-row[data-supp-id]').forEach((row) => {
+    const id = (row.getAttribute('data-supp-id') || '').trim();
+    if (id) targets.add(id);
+  });
   let broken = 0, total = 0;
-  visualEl.querySelectorAll('a[href^="#figure-"], a[href^="#fig-"], a[href^="#table-"], a[href^="#tab-"], a[href^="#ref-"]').forEach((a) => {
+  visualEl.querySelectorAll('a[href^="#figure-"], a[href^="#fig-"], a[href^="#table-"], a[href^="#tab-"], a[href^="#ref-"], a[href^="#supp"]').forEach((a) => {
     total += 1;
     const href = (a.getAttribute('href') || '').replace(/^#/, '');
     if (!href) return;
@@ -5308,11 +5796,43 @@ function _scanCrossRefTargets(prefix) {
     });
   }
 
+  // ── Supplementary materials: sourced from the metadata "Ek Materyal" rows
+  //    (.supp-link-row), NOT the body, since the supp section is rendered from
+  //    article.supplementary[]. Each row has a stable data-supp-id ("supp1"…);
+  //    assign one to id-less rows using the SAME scheme as save (so the anchor
+  //    the bubble inserts matches the id persisted on save) and write it back.
+  const supp = [];
+  const suppRows = document.querySelectorAll('.supp-link-row');
+  if (suppRows.length) {
+    const usedIds = new Set();
+    suppRows.forEach((row) => {
+      const ex = (row.getAttribute('data-supp-id') || '').trim();
+      if (ex) usedIds.add(ex);
+    });
+    let counter = 0;
+    const nextId = () => {
+      while (true) {
+        counter += 1;
+        const cand = 'supp' + counter;
+        if (!usedIds.has(cand)) { usedIds.add(cand); return cand; }
+      }
+    };
+    suppRows.forEach((row) => {
+      const label = (row.querySelector('.sl-label')?.value || '').trim();
+      const href = (row.querySelector('.sl-href')?.value || '').trim();
+      if (!label && !href) return;
+      let id = (row.getAttribute('data-supp-id') || '').trim();
+      if (!id) { id = nextId(); row.setAttribute('data-supp-id', id); }
+      supp.push({ id, label, href });
+    });
+  }
+
   return {
     figures: [...figMap.values()].sort((a, b) => a.num - b.num),
     tables: [...tabMap.values()].sort((a, b) => a.num - b.num),
     refs,
     refCount: refs.length,
+    supp,
   };
 }
 
@@ -5421,7 +5941,12 @@ function insertCrossRef(prefix, kind, num) {
   // not, we tag the anchor as "broken" so the editor sees a visual warning
   // (red dashed underline) and a tooltip rather than a silent dead link.
   let exists = false;
-  if (visual) {
+  if (kind === 'supp') {
+    // Supplementary targets live in the metadata "Ek Materyal" rows (rendered
+    // as a section on the public page), not in the editor body — so validate
+    // against the row whose data-supp-id matches.
+    exists = !!document.querySelector(`.supp-link-row[data-supp-id="${(window.CSS && CSS.escape) ? CSS.escape(String(num)) : num}"]`);
+  } else if (visual) {
     if (kind === 'ref') {
       const refOl = visual.querySelector('.article-references ol, ol.article-references-ol');
       exists = !!(refOl && refOl.querySelectorAll(':scope > li').length >= num);
@@ -5431,9 +5956,15 @@ function insertCrossRef(prefix, kind, num) {
   }
   const brokenAttrs = exists
     ? ''
-    : ` data-broken-ref="${kind}-${num}" title="Bu hedef henüz makalede yok"`;
+    : ` data-broken-ref="${kind === 'supp' ? num : kind + '-' + num}" title="Bu hedef henüz makalede yok"`;
   let html;
-  if (kind === 'ref') {
+  if (kind === 'supp') {
+    // num is the stable supp id ("supp1"); the public section renders <li id="supp1">.
+    const row = document.querySelector(`.supp-link-row[data-supp-id="${(window.CSS && CSS.escape) ? CSS.escape(String(num)) : num}"]`);
+    const rowLabel = row ? (row.querySelector('.sl-label')?.value || '').trim() : '';
+    const inner = selectedText.trim() || rowLabel || 'Ek Materyal';
+    html = `<a href="#${num}" class="article-supp-ref-link${exists ? '' : ' article-ref-broken'}"${brokenAttrs}>${inner}</a>`;
+  } else if (kind === 'ref') {
     const inner = selectedText.trim() || String(num);
     html = `<sup><a href="#ref-${num}" class="article-ref-citation${exists ? '' : ' article-ref-broken'}"${brokenAttrs}>${inner}</a></sup>`;
   } else {
@@ -5655,9 +6186,25 @@ function _renderCrossRefBubble(prefix) {
       // fallback inside that dialog.
       return `<button type="button" class="cr-upload-btn" data-insert-table>+ Yeni Tablo</button>`;
     }
+    // Supplementary materials are added on the Dosyalar/metadata tab (the
+    // "Ek Materyal" rows), so there's no inline "+ Yeni" action here.
+    if (manualKind === 'supp') return '';
     // ref → "+ Yeni Kaynak" opens the inline form below.
     return `<button type="button" class="cr-upload-btn" data-newref-toggle>+ Yeni Kaynak</button>`;
   };
+
+  // Supplementary material tile (icon + label) — clicking inserts an in-text
+  // cross-reference to the matching #suppN entry in the public Supplementary
+  // Materials section, just like figure/table cross-refs.
+  const suppTile = (s) => `
+    <button type="button" class="cr-tab-tile" data-kind="supp" data-id="${esc(s.id)}"
+      title="${esc(s.label || s.id)}${s.href ? ' — ' + esc(s.href) : ''}">
+      <span class="cr-tab-icon">📎</span>
+      <span class="cr-tab-text">
+        <span class="cr-tab-num">${esc(s.label || s.id)}</span>
+        <span class="cr-tab-label">${esc(truncate(s.href || '—', 56))}</span>
+      </span>
+    </button>`;
   const section = (label, body, manualKind) => `
     <div class="cr-bubble-section">
       <div class="cr-bubble-section-head">
@@ -5697,10 +6244,15 @@ function _renderCrossRefBubble(prefix) {
       </div>
     </div>`;
 
+  const suppBody = (targets.supp || []).length
+    ? `<div class="cr-tab-list">${targets.supp.map(suppTile).join('')}</div>`
+    : `<span class="cr-bubble-empty">Bu makalede ek materyal yok — "Dosyalar / Ek Materyal" bölümünden ekleyin.</span>`;
+
   bubble.innerHTML =
     '<button type="button" class="cr-bubble-close" aria-label="Kapat" title="Kapat">×</button>' +
     section('Figürler', figBody, 'figure') +
     section('Tablolar', tabBody, 'table') +
+    section('Ek Materyal', suppBody, 'supp') +
     section('Kaynaklar', refBody, 'ref');
 
   // Does the requested target actually exist in the article? Used both for
@@ -5734,6 +6286,14 @@ function _renderCrossRefBubble(prefix) {
       const num = Number(b.dataset.num);
       insertCrossRef(prefix, kind, num);
       announceInsert(kind, num);
+    };
+  });
+  // Supplementary tiles use a string id (data-id), not a numeric data-num.
+  bubble.querySelectorAll('[data-kind="supp"][data-id]').forEach((b) => {
+    b.onclick = () => {
+      const id = b.dataset.id;
+      insertCrossRef(prefix, 'supp', id);
+      toast('Ek materyal atfı eklendi');
     };
   });
   // Trash button on each in-body table tile → confirm, then remove the block,
@@ -6009,6 +6569,9 @@ function _addInlineReference(prefix, text) {
   li.id = `ref-${nextNum}`;
   li.textContent = text;
   ol.appendChild(li);
+  // Strip any inline font from existing (Word-pasted) items so the whole list —
+  // old refs and this new plain one — renders in one fixed list font.
+  _normalizeReferenceFonts(ol);
 
   // Insert cross-ref at saved selection.
   insertCrossRef(prefix, 'ref', nextNum);
@@ -6082,8 +6645,13 @@ function _resolveMediaSequence(figures) {
     const kind = isTable ? 'table' : 'figure';
     const meta = _extractMediaNum(name, kind) || {};
     const parsedNum = Number.isFinite(meta.num) ? meta.num : null;
-    // Unparseable AND on the non-figure denylist → genuinely not a figure.
-    if (parsedNum == null && _NON_FIGURE_FILE.test(name)) return;
+    // Unparseable AND on the non-figure denylist → drop ONLY if it was never
+    // curated as a figure. Every file the editor uploads via Dosyalar gets an
+    // upload-order index in _figure-meta, so a deliberately uploaded "cover.jpg"
+    // (order set) still shows in the picker / auto-arrange; a stray cover/logo
+    // that merely sits in the images dir (no order) is still excluded.
+    const curated = f && Number.isFinite(f.order);
+    if (parsedNum == null && _NON_FIGURE_FILE.test(name) && !curated) return;
     items.push({ idx, kind, parsedNum, panel: meta.panel || null, f });
   });
 
@@ -6619,14 +7187,30 @@ function _ensureMediaCtlEl() {
   tb.id = 'media-block-ctl';
   tb.className = 'media-block-ctl hidden';
   tb.innerHTML =
+    '<select class="mbc-size" title="Görsel boyutu (genişlik)">' +
+      '<option value="small">Küçük</option>' +
+      '<option value="medium">Orta</option>' +
+      '<option value="large">Büyük</option>' +
+      '<option value="full">Tam</option>' +
+    '</select>' +
+    '<span class="mbc-divider"></span>' +
     '<button type="button" data-mbc="up" title="Yukarı taşı" aria-label="Yukarı taşı">▲</button>' +
     '<button type="button" data-mbc="down" title="Aşağı taşı" aria-label="Aşağı taşı">▼</button>' +
     '<button type="button" data-mbc="edit" title="Düzenle" aria-label="Düzenle">✎</button>' +
     '<button type="button" data-mbc="delete" title="Sil" aria-label="Sil">🗑</button>';
   tb.addEventListener('mouseenter', () => clearTimeout(_mediaCtlHideTimer));
   tb.addEventListener('mouseleave', () => _scheduleHideMediaCtl());
-  tb.addEventListener('mousedown', (e) => e.preventDefault()); // keep editor selection/caret
+  // Keep the editor selection/caret on toolbar mousedown — EXCEPT for the size
+  // <select>, which needs its native click flow to open the dropdown.
+  tb.addEventListener('mousedown', (e) => { if (e.target.closest('select, option')) return; e.preventDefault(); });
   tb.addEventListener('click', _onMediaCtlClick);
+  // Size selector → set data-size on the hovered block (CSS scales it live).
+  tb.querySelector('.mbc-size').addEventListener('change', (e) => {
+    if (!_mediaCtlTarget) return;
+    _mediaCtlTarget.setAttribute('data-size', e.target.value);
+    markDirty();
+    _positionMediaCtl();
+  });
   document.body.appendChild(tb);
   _mediaCtl = tb;
   return tb;
@@ -6636,7 +7220,14 @@ function _showMediaCtl(block, visual) {
   clearTimeout(_mediaCtlHideTimer);
   _mediaCtlTarget = block;
   _mediaCtlPrefix = (visual.id || '').replace(/-visual$/, '');
-  _ensureMediaCtlEl().classList.remove('hidden');
+  const tb = _ensureMediaCtlEl();
+  // Reflect the block's current size in the selector (default to Orta).
+  const sel = tb.querySelector('.mbc-size');
+  if (sel) {
+    const sz = block.getAttribute('data-size');
+    sel.value = ['small', 'medium', 'large', 'full'].indexOf(sz) >= 0 ? sz : 'medium';
+  }
+  tb.classList.remove('hidden');
   _positionMediaCtl();
 }
 
@@ -7011,10 +7602,18 @@ function _figureCaptionText(fig) {
   return t.replace(/^\s*[.:\-–—]\s*/, '').trim();
 }
 
-function _openMediaManager(prefix) {
+async function _openMediaManager(prefix) {
   const visual = document.getElementById(prefix + '-visual');
   if (!visual) { toast('Editör bulunamadı', 'warning'); return; }
   const articleId = visual.dataset.articleId || null;
+
+  // Pull the latest figure-meta-backed asset list so captions/labels edited in
+  // the Dosyalar tab are reflected here as soon as the manager opens (placed
+  // blocks read their caption from the live editor DOM, which Dosyalar already
+  // syncs; this refresh covers the uploaded-but-unplaced figures).
+  if (articleId) {
+    try { window._articleAssets = await API.get(`/media/article/${articleId}/assets`); } catch (_) { /* keep cache */ }
+  }
 
   // Collect placed blocks.
   const rows = [];
@@ -7139,6 +7738,9 @@ function _openMediaManager(prefix) {
         await API.put(`/media/article/${articleId}/figure-meta`, {
           filename: r.filename, caption, source: '', size: prev.size || 'auto', label: manual,
         });
+        // Reverse sync: refresh the Dosyalar cache + "Yüklü Figürler" thumbnails
+        // so the caption/label edited here shows there too. Non-blocking.
+        if (typeof loadArticleAssets === 'function') loadArticleAssets(articleId).catch(() => {});
       } catch (_) { /* non-fatal */ }
     }
     toast(`${r.kind === 'figure' ? 'Figür' : 'Tablo'} ${r.num} güncellendi`);
@@ -7176,6 +7778,140 @@ function _openMediaManager(prefix) {
     close();
     if (r.url || r.thumb) insertFigureIntoFullText(r.thumb || r.url, r.filename, caption, 'medium', manual);
     else toast('Bu öğenin dosya yolu bulunamadı', 'warning');
+  });
+}
+
+// ── Heading outline / TOC for the full-text editor ───────────────────────────
+// A live floating panel that lists the editor's headings, shows whether each is
+// the right level (this site uses H3 = main section, H4 = subsection), lets the
+// editor click to jump+highlight the heading in the editor, and fix a wrong
+// level (e.g. after a Word paste) to H3/H4 in one click.
+let _headingOutlineObserver = null;
+let _headingOutlineHeads = [];
+
+function _toggleHeadingOutline(prefix) {
+  const panel = document.getElementById('heading-outline');
+  if (panel && !panel.classList.contains('hidden') && panel.dataset.prefix === prefix) {
+    _closeHeadingOutline();
+    return;
+  }
+  _openHeadingOutline(prefix);
+}
+
+function _ensureHeadingOutlinePanel() {
+  let panel = document.getElementById('heading-outline');
+  if (panel) return panel;
+  panel = document.createElement('div');
+  panel.id = 'heading-outline';
+  panel.className = 'heading-outline hidden';
+  document.body.appendChild(panel);
+  return panel;
+}
+
+function _closeHeadingOutline() {
+  const panel = document.getElementById('heading-outline');
+  if (panel) panel.classList.add('hidden');
+  if (_headingOutlineObserver) { _headingOutlineObserver.disconnect(); _headingOutlineObserver = null; }
+}
+
+function _openHeadingOutline(prefix) {
+  const visual = document.getElementById(prefix + '-visual');
+  if (!visual) { toast('Tam metin editörü bulunamadı', 'warning'); return; }
+  const panel = _ensureHeadingOutlinePanel();
+  panel.dataset.prefix = prefix;
+  panel.classList.remove('hidden');
+  _renderHeadingOutline(prefix);
+  // Track edits live (typing, paste, Otomatik Düzenle) so the outline stays current.
+  if (_headingOutlineObserver) _headingOutlineObserver.disconnect();
+  let t = null;
+  _headingOutlineObserver = new MutationObserver(() => {
+    clearTimeout(t);
+    t = setTimeout(() => { if (!panel.classList.contains('hidden')) _renderHeadingOutline(prefix); }, 250);
+  });
+  _headingOutlineObserver.observe(visual, { childList: true, subtree: true, characterData: true });
+}
+
+// Briefly highlight a heading inside the editor so the user sees which one a TOC
+// row maps to. Uses a transient class removed after the flash.
+function _flashHeading(visual, h) {
+  if (!h) return;
+  try { h.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch (_) {}
+  h.classList.add('outline-flash');
+  setTimeout(() => { try { h.classList.remove('outline-flash'); } catch (_) {} }, 1800);
+}
+
+// Convert a heading element to a new level (h3/h4) in place, stripping the Word
+// inline font styling that would otherwise override the semantic level.
+function _setOutlineHeadingLevel(prefix, idx, level) {
+  const visual = document.getElementById(prefix + '-visual');
+  const h = _headingOutlineHeads[idx];
+  if (!visual || !h || !visual.contains(h)) return;
+  if (h.tagName === 'H' + level) { _flashHeading(visual, h); return; }
+  const nh = document.createElement('h' + level);
+  nh.innerHTML = h.innerHTML;
+  h.replaceWith(nh);
+  _stripFontDecls(nh);
+  nh.querySelectorAll('[style]').forEach(_stripFontDecls);
+  markDirty();
+  _renderHeadingOutline(prefix);
+  _flashHeading(visual, nh);
+}
+
+function _renderHeadingOutline(prefix) {
+  const panel = document.getElementById('heading-outline');
+  const visual = document.getElementById(prefix + '-visual');
+  if (!panel || !visual) return;
+  const heads = Array.from(visual.querySelectorAll('h1,h2,h3,h4,h5,h6')).filter((h) =>
+    !h.closest('.article-references, .article-acknowledgments, .article-footnotes, .article-supplementary, figure, .article-figure, .article-table-wrap, table'));
+  _headingOutlineHeads = heads;
+
+  // Level check. Valid article heading levels are H3 (main) → H4 → H5 → H6
+  // (this site styles all four). Flag: H1/H2 (too high — use H3+), and a level
+  // that skips a step (e.g. H3 then H5 with no H4 between) so the hierarchy stays
+  // consistent. The per-row selector lets the editor set the correct level.
+  let issues = 0;
+  let prevLvl = 0;
+  const LEVELS = [3, 4, 5, 6];
+  const palette = { 3: '#0d9488', 4: '#0369a1', 5: '#7c3aed', 6: '#9d174d' };
+  const rows = heads.map((h, i) => {
+    const lvl = Number(h.tagName.slice(1));
+    const text = (h.textContent || '').replace(/\s+/g, ' ').trim() || '(boş başlık)';
+    let warn = '';
+    if (lvl < 3 || lvl > 6) warn = 'Başlıklar H3 (ana) → H6 arası olmalı (H1/H2 stillenmez)';
+    else if (prevLvl && lvl > prevLvl + 1) warn = 'Düzey atlandı — bir üst seviye (H' + (prevLvl + 1) + ') yokken H' + lvl;
+    else if (!prevLvl && lvl !== 3) warn = 'İlk başlık ana bölüm (H3) olmalı';
+    prevLvl = (lvl >= 3 && lvl <= 6) ? lvl : prevLvl;
+    if (warn) issues += 1;
+    const indent = Math.max(0, (Math.min(Math.max(lvl, 3), 6) - 3)) * 14;
+    const badgeColor = warn ? '#dc2626' : (palette[lvl] || '#dc2626');
+    const opts = LEVELS.map((L) => `<option value="${L}"${lvl === L ? ' selected' : ''}>H${L}</option>`).join('');
+    return `<div class="ho-row" data-idx="${i}" style="padding-left:${indent}px">
+      <button type="button" class="ho-go" data-idx="${i}" title="${esc(warn || 'Editörde göster')}">
+        <span class="ho-badge" style="color:${badgeColor};border-color:${badgeColor}">${esc(h.tagName)}</span>
+        <span class="ho-text">${warn ? '⚠ ' : ''}${esc(text.length > 44 ? text.slice(0, 43) + '…' : text)}</span>
+      </button>
+      <select class="ho-sel" data-idx="${i}" title="Başlık düzeyini değiştir">${opts}</select>
+    </div>`;
+  }).join('');
+
+  panel.innerHTML = `
+    <div class="ho-head">
+      <span class="ho-title">Başlıklar (${heads.length})</span>
+      <button type="button" class="ho-close" aria-label="Kapat" title="Kapat">×</button>
+    </div>
+    <div class="ho-summary">${heads.length === 0
+      ? 'Editörde başlık bulunamadı. Bir paragrafı seçip <b>H3/H4</b> ile başlık yapın.'
+      : (issues
+        ? `<span style="color:#b45309">⚠ ${issues} olası düzey sorunu</span> — H3 (ana) → H6 düzeyleri, atlamadan.`
+        : '✓ Başlık düzeyleri tutarlı (H3 → H6).')}</div>
+    <div class="ho-list">${rows}</div>`;
+
+  panel.querySelector('.ho-close').onclick = _closeHeadingOutline;
+  panel.querySelectorAll('.ho-go').forEach((b) => {
+    b.onclick = () => _flashHeading(visual, _headingOutlineHeads[Number(b.dataset.idx)]);
+  });
+  panel.querySelectorAll('.ho-sel').forEach((sel) => {
+    sel.onchange = () => _setOutlineHeadingLevel(prefix, Number(sel.dataset.idx), Number(sel.value));
   });
 }
 
@@ -8085,6 +8821,227 @@ function htmlEditorInsertHtml(prefix, html) {
   markDirty();
 }
 
+// ═══════════════════════════════════════════════════════════════════════════
+//  RICH MEDIA INSERTION — image / video / YouTube
+//  Shared by the page editor (htmlEditor 'simple' variant) and the section
+//  editor (pageSectionBlock). Each opens a small dialog (upload-or-URL) and
+//  inserts responsive, self-contained HTML at the caret. The builders below
+//  are also valid in the public site's prose (plain <figure>/<img>/<video>/
+//  <iframe>), so saved pages render with no extra CSS.
+// ═══════════════════════════════════════════════════════════════════════════
+const _mediaImageIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 15l-5-5L5 21"/></svg>';
+const _mediaVideoIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="14" height="14" rx="2"/><path stroke-linecap="round" stroke-linejoin="round" d="M16 10l6-3v10l-6-3"/></svg>';
+const _mediaYouTubeIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg>';
+
+// Extract the 11-char video id from any common YouTube URL form (watch?v=,
+// youtu.be/, /embed/, /shorts/, /v/) or accept a bare id. Returns '' if none.
+function _youTubeId(url) {
+  const s = String(url || '').trim();
+  if (!s) return '';
+  const patterns = [
+    /[?&]v=([A-Za-z0-9_-]{11})/,
+    /youtu\.be\/([A-Za-z0-9_-]{11})/,
+    /youtube\.com\/embed\/([A-Za-z0-9_-]{11})/,
+    /youtube\.com\/shorts\/([A-Za-z0-9_-]{11})/,
+    /youtube\.com\/v\/([A-Za-z0-9_-]{11})/,
+    /youtube\.com\/live\/([A-Za-z0-9_-]{11})/,
+  ];
+  for (const re of patterns) { const m = s.match(re); if (m) return m[1]; }
+  if (/^[A-Za-z0-9_-]{11}$/.test(s)) return s;
+  return '';
+}
+
+function _mediaCaptionHtml(caption) {
+  return caption ? `<figcaption style="margin-top:8px;font-size:0.875rem;color:#475569;text-align:center">${esc(caption)}</figcaption>` : '';
+}
+function _buildImageHtml(url, alt, caption, widthPct) {
+  const wp = Math.max(10, Math.min(100, Number(widthPct) || 100));
+  return `<figure class="page-media" style="margin:1.5rem auto;max-width:${wp}%">`
+    + `<img src="${esc(url)}" alt="${esc(alt || '')}" loading="lazy" style="width:100%;height:auto;display:block;border-radius:8px">`
+    + `${_mediaCaptionHtml(caption)}</figure>`;
+}
+function _buildVideoHtml(url, caption) {
+  return `<figure class="page-media" style="margin:1.5rem auto;max-width:100%">`
+    + `<video controls preload="metadata" playsinline style="width:100%;height:auto;display:block;border-radius:8px;background:#000">`
+    + `<source src="${esc(url)}">Tarayıcınız gömülü videoyu desteklemiyor.</video>`
+    + `${_mediaCaptionHtml(caption)}</figure>`;
+}
+function _buildYouTubeHtml(id, caption) {
+  const title = caption ? esc(caption) : 'YouTube video';
+  return `<figure class="page-media page-embed" style="margin:1.5rem auto;max-width:720px">`
+    + `<div style="position:relative;width:100%;padding-top:56.25%;border-radius:8px;overflow:hidden;background:#000">`
+    + `<iframe src="https://www.youtube-nocookie.com/embed/${id}" title="${title}" loading="lazy" `
+    + `allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen `
+    + `style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>`
+    + `${_mediaCaptionHtml(caption)}</figure>`;
+}
+
+// Capture the caret inside `el` NOW (before a modal steals focus) and return an
+// inserter that restores it and drops `html` at that point — falling back to the
+// end of the editor if the selection was lost. Works for any contenteditable
+// (htmlEditor visual surface or a section's .ps-content).
+function _mediaInserterForEl(el) {
+  let saved = null;
+  const sel = window.getSelection();
+  if (el && sel && sel.rangeCount) {
+    const r = sel.getRangeAt(0);
+    if (el.contains(r.commonAncestorContainer)) saved = r.cloneRange();
+  }
+  return (html) => {
+    if (!el) return;
+    el.focus();
+    const s = window.getSelection();
+    if (saved) { s.removeAllRanges(); s.addRange(saved); }
+    else if (!s.rangeCount || !el.contains(s.anchorNode)) {
+      const r = document.createRange(); r.selectNodeContents(el); r.collapse(false);
+      s.removeAllRanges(); s.addRange(r);
+    }
+    document.execCommand('insertHTML', false, html);
+    markDirty();
+  };
+}
+
+// Generic modal shell for the three media dialogs. `bodyHtml` is the form; the
+// onInsert callback receives the overlay element and an async-safe `done()` to
+// close it. Returns nothing; manages its own lifecycle.
+function _openMediaDialog(title, bodyHtml, onInsert) {
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.innerHTML = `
+    <div class="modal-dialog" style="max-width:460px">
+      <div class="flex items-center justify-between px-6 py-4" style="border-bottom:1px solid var(--border-soft)">
+        <h3 class="text-base font-semibold" style="color:var(--text-strong);letter-spacing:-0.01em">${esc(title)}</h3>
+        <button class="modal-close p-1.5 rounded-md" style="color:var(--text-muted)" aria-label="Kapat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="px-6 py-4 space-y-3">${bodyHtml}</div>
+      <div class="flex justify-end gap-2 px-6 py-4" style="border-top:1px solid var(--border-soft);background:var(--bg-subtle);border-radius:0 0 var(--radius-lg) var(--radius-lg)">
+        <button data-action="cancel" class="btn btn-secondary">İptal</button>
+        <button data-action="insert" class="btn btn-primary">Ekle</button>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+  const close = () => { overlay.remove(); document.removeEventListener('keydown', onKey); };
+  const onKey = (e) => { if (e.key === 'Escape') close(); };
+  document.addEventListener('keydown', onKey);
+  overlay.querySelector('.modal-close').onclick = close;
+  overlay.querySelector('[data-action="cancel"]').onclick = close;
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+  overlay.querySelector('[data-action="insert"]').onclick = () => onInsert(overlay, close);
+  // Convenience: a "Dosya seç" trigger button maps to a hidden file input.
+  const trigger = overlay.querySelector('[data-file-trigger]');
+  const fileInput = overlay.querySelector('input[type="file"]');
+  if (trigger && fileInput) {
+    trigger.onclick = () => fileInput.click();
+    fileInput.onchange = () => {
+      const nameEl = overlay.querySelector('[data-file-name]');
+      if (nameEl) nameEl.textContent = fileInput.files[0] ? fileInput.files[0].name : 'Dosya seçilmedi';
+    };
+  }
+  setTimeout(() => { const f = overlay.querySelector('input:not([type=file]), textarea'); if (f) f.focus(); }, 30);
+  return overlay;
+}
+
+// ── Image ───────────────────────────────────────────────────────────────────
+function openMediaImageDialog(inserter) {
+  const body = `
+    <p class="text-xs" style="color:var(--text-muted)">Bilgisayardan resim yükleyin <strong>veya</strong> bir resim URL'si yapıştırın.</p>
+    <div>
+      <input type="file" accept="image/*" class="hidden">
+      <div class="flex items-center gap-2">
+        <button type="button" data-file-trigger class="btn btn-secondary">Dosya seç</button>
+        <span data-file-name class="text-xs" style="color:var(--text-faint)">Dosya seçilmedi</span>
+      </div>
+    </div>
+    <div><label class="label">veya Resim URL'si</label><input id="md-img-url" class="input" placeholder="https://… veya images/foto.jpg"></div>
+    <div><label class="label">Alternatif metin <span class="font-normal" style="color:var(--text-faint)">(erişilebilirlik / SEO)</span></label><input id="md-img-alt" class="input" placeholder="Resmi kısaca tanımlayın"></div>
+    <div><label class="label">Açıklama <span class="font-normal" style="color:var(--text-faint)">(opsiyonel)</span></label><input id="md-img-cap" class="input" placeholder="Resmin altında görünür"></div>
+    <div><label class="label">Genişlik: <span id="md-img-wv">100</span>%</label><input id="md-img-w" type="range" min="20" max="100" value="100" step="5" class="w-full" oninput="document.getElementById('md-img-wv').textContent=this.value"></div>`;
+  _openMediaDialog('Resim Ekle', body, async (overlay, close) => {
+    const fileInput = overlay.querySelector('input[type="file"]');
+    const url = overlay.querySelector('#md-img-url').value.trim();
+    const alt = overlay.querySelector('#md-img-alt').value.trim();
+    const cap = overlay.querySelector('#md-img-cap').value.trim();
+    const w = overlay.querySelector('#md-img-w').value;
+    let finalUrl = url;
+    if (fileInput.files[0]) {
+      const btn = overlay.querySelector('[data-action="insert"]');
+      btn.disabled = true; btn.textContent = 'Yükleniyor…';
+      try {
+        const result = await API.uploadFile('/media/upload/image', fileInput.files[0], 'image');
+        finalUrl = result.url;
+      } catch (err) { toast('Resim yüklenemedi: ' + err.message, 'error'); btn.disabled = false; btn.textContent = 'Ekle'; return; }
+    }
+    if (!finalUrl) { toast('Bir dosya seçin veya URL girin', 'warning'); return; }
+    close();
+    inserter(_buildImageHtml(finalUrl, alt, cap, w));
+  });
+}
+
+// ── Video (self-hosted file or direct URL) ───────────────────────────────────
+function openMediaVideoDialog(inserter) {
+  const body = `
+    <p class="text-xs" style="color:var(--text-muted)">Bir video dosyası yükleyin (mp4/webm) <strong>veya</strong> doğrudan video URL'si girin. YouTube için "YouTube" butonunu kullanın.</p>
+    <div>
+      <input type="file" accept="video/*" class="hidden">
+      <div class="flex items-center gap-2">
+        <button type="button" data-file-trigger class="btn btn-secondary">Dosya seç</button>
+        <span data-file-name class="text-xs" style="color:var(--text-faint)">Dosya seçilmedi</span>
+      </div>
+    </div>
+    <div><label class="label">veya Video URL'si</label><input id="md-vid-url" class="input" placeholder="https://… .mp4"></div>
+    <div><label class="label">Açıklama <span class="font-normal" style="color:var(--text-faint)">(opsiyonel)</span></label><input id="md-vid-cap" class="input" placeholder="Videonun altında görünür"></div>`;
+  _openMediaDialog('Video Ekle', body, async (overlay, close) => {
+    const fileInput = overlay.querySelector('input[type="file"]');
+    const url = overlay.querySelector('#md-vid-url').value.trim();
+    const cap = overlay.querySelector('#md-vid-cap').value.trim();
+    let finalUrl = url;
+    if (fileInput.files[0]) {
+      const btn = overlay.querySelector('[data-action="insert"]');
+      btn.disabled = true; btn.textContent = 'Yükleniyor…';
+      try {
+        const result = await API.uploadFile('/media/upload/video', fileInput.files[0], 'video');
+        finalUrl = result.url;
+      } catch (err) { toast('Video yüklenemedi: ' + err.message, 'error'); btn.disabled = false; btn.textContent = 'Ekle'; return; }
+    }
+    if (!finalUrl) { toast('Bir dosya seçin veya URL girin', 'warning'); return; }
+    close();
+    inserter(_buildVideoHtml(finalUrl, cap));
+  });
+}
+
+// ── YouTube embed ────────────────────────────────────────────────────────────
+function openMediaYouTubeDialog(inserter) {
+  const body = `
+    <p class="text-xs" style="color:var(--text-muted)">YouTube video bağlantısını yapıştırın — otomatik olarak duyarlı (responsive) bir oynatıcıya dönüştürülür.</p>
+    <div><label class="label">YouTube bağlantısı</label><input id="md-yt-url" class="input" placeholder="https://www.youtube.com/watch?v=… veya https://youtu.be/…"></div>
+    <div><label class="label">Açıklama <span class="font-normal" style="color:var(--text-faint)">(opsiyonel)</span></label><input id="md-yt-cap" class="input" placeholder="Videonun altında görünür"></div>`;
+  _openMediaDialog('YouTube Videosu Ekle', body, (overlay, close) => {
+    const url = overlay.querySelector('#md-yt-url').value.trim();
+    const cap = overlay.querySelector('#md-yt-cap').value.trim();
+    const id = _youTubeId(url);
+    if (!id) { toast('Geçerli bir YouTube bağlantısı girin', 'warning'); return; }
+    close();
+    inserter(_buildYouTubeHtml(id, cap));
+  });
+}
+
+// ── Thin wrappers: page editor (htmlEditor) ──────────────────────────────────
+function htmlEditorInsertImage(prefix) { openMediaImageDialog((html) => htmlEditorInsertHtml(prefix, html)); }
+function htmlEditorInsertVideo(prefix) { openMediaVideoDialog((html) => htmlEditorInsertHtml(prefix, html)); }
+function htmlEditorInsertYouTube(prefix) { openMediaYouTubeDialog((html) => htmlEditorInsertHtml(prefix, html)); }
+
+// ── Thin wrappers: section editor (pageSectionBlock) ─────────────────────────
+function sectionInsertMedia(btn, kind) {
+  const content = btn.closest('.page-section')?.querySelector('.ps-content');
+  if (!content) return;
+  const inserter = _mediaInserterForEl(content);
+  if (kind === 'image') openMediaImageDialog(inserter);
+  else if (kind === 'video') openMediaVideoDialog(inserter);
+  else if (kind === 'youtube') openMediaYouTubeDialog(inserter);
+}
+
 function setHtmlEditorMode(prefix, mode) {
   const visual = document.getElementById(`${prefix}-visual`);
   const source = document.getElementById(`${prefix}-source`);
@@ -8141,6 +9098,10 @@ function setHtmlEditorContent(prefix, html) {
   const source = document.getElementById(`${prefix}-source`);
   if (visual) visual.innerHTML = html || '';
   if (source) source.value = html || '';
+  // Wholesale content load (initial fetch, file/ZIP import, draft recovery) is a
+  // NEW baseline, not an undoable edit — reset history so the first Ctrl+Z can't
+  // wipe freshly-loaded content back to the empty pre-load state.
+  if (visual && _editorHistory[prefix]) _initEditorHistory(prefix, visual);
 }
 
 // Attach a paste handler to all WYSIWYG visual editors so pasted content is
@@ -8159,6 +9120,7 @@ function attachWysiwygPasteHandler(visualEl) {
       e.preventDefault();
       const cleaned = sanitizeUploadedHtml(html);
       document.execCommand('insertHTML', false, cleaned);
+      _afterRichPaste(visualEl);
       return;
     }
     // If only plain text, check whether the user pasted *raw HTML markup*
@@ -8169,15 +9131,196 @@ function attachWysiwygPasteHandler(visualEl) {
       e.preventDefault();
       const cleaned = sanitizeUploadedHtml(text);
       document.execCommand('insertHTML', false, cleaned);
+      _afterRichPaste(visualEl);
     }
     // else: fall through, default plain-text paste
+  });
+}
+
+// Right after a rich (Word/HTML) paste, promote bold heading paragraphs to real
+// H2/H3 — with level detection by font size / caps — so the editor reflects the
+// final structure immediately instead of only after "Otomatik Düzenle" or reload.
+// Idempotent and gated, so a stray inline-bold paste won't become a heading.
+// Mirror of article.html's unifyBodyFont: strip inline font-family (+ the
+// `font` shorthand, line-height and mso-* leftovers) from every element in the
+// editor body so pasted Word/Office faces (Calibri, Cambria, Times New Roman…)
+// can never override the site typeface. font-SIZE, weight, style and color are
+// KEPT (sizing/emphasis untouched; the public render uses the same rule). Must
+// run AFTER _promoteMsoHeadings, which reads inline font-size to detect headings.
+function _unifyBodyFont(visualEl) {
+  if (!visualEl || !visualEl.querySelectorAll) return false;
+  const FACE = /^(font|font-family|line-height|mso-[\w-]*)$/;
+  let changed = false;
+  const strip = (el) => {
+    if (!el || !el.getAttribute) return;
+    const s = el.getAttribute('style');
+    if (!s) return;
+    const kept = s.split(';').map((d) => d.trim()).filter((d) => {
+      if (!d) return false;
+      return !FACE.test(d.split(':')[0].trim().toLowerCase());
+    });
+    const next = kept.length ? kept.join('; ') : null;
+    if (next) { if (next !== s) { el.setAttribute('style', next); changed = true; } }
+    else { el.removeAttribute('style'); changed = true; }
+  };
+  strip(visualEl);
+  visualEl.querySelectorAll('[style]').forEach(strip);
+  visualEl.querySelectorAll('span, font').forEach((sp) => {
+    if (!sp.attributes.length) {
+      while (sp.firstChild) sp.parentNode.insertBefore(sp.firstChild, sp);
+      sp.remove();
+      changed = true;
+    }
+  });
+  return changed;
+}
+
+function _afterRichPaste(visualEl) {
+  if (!visualEl) return;
+  try { _promoteMsoHeadings(visualEl); } catch (_) { /* non-fatal */ }
+  try { if (_unifyBodyFont(visualEl) && typeof markDirty === 'function') markDirty(); } catch (_) { /* non-fatal */ }
+}
+
+// ── Undo/redo history + keyboard shortcuts for htmlEditor() editors ──────────
+// The native contenteditable undo stack only covers edits the browser makes
+// itself (typing, native Ctrl+B). The full-text editor also mutates the DOM
+// programmatically (figür/tablo ekleme, Otomatik Düzenle, normalize, atıf
+// bağlama) which the browser does NOT record — and that can corrupt its native
+// undo. So we keep our own snapshot history (innerHTML strings) fed by a
+// MutationObserver, which captures BOTH typing and programmatic changes
+// uniformly. One entry per change-burst (debounced). Restores are flagged so
+// they don't record themselves.
+const _editorHistory = {};
+
+function _initEditorHistory(prefix, visual) {
+  const old = _editorHistory[prefix];
+  if (old && old._observer) { try { old._observer.disconnect(); } catch (_) {} }
+  const h = { undo: [], redo: [], last: visual.innerHTML, suppress: false, timer: null, _observer: null };
+  _editorHistory[prefix] = h;
+  const obs = new MutationObserver(() => _historyRecord(prefix));
+  // childList + characterData capture every real edit (typing, bold/italic
+  // wrapping, formatBlock, figür/tablo ekleme, removeFormat). We deliberately
+  // do NOT watch `attributes`, so transient UI flashes inside the editor
+  // (preflight outline highlight, article-ref-broken class) don't pollute undo.
+  obs.observe(visual, { childList: true, subtree: true, characterData: true });
+  h._observer = obs;
+  _updateUndoButtons(prefix);
+}
+
+// Debounced: fold the latest content into the undo stack as one step.
+function _historyRecord(prefix) {
+  const h = _editorHistory[prefix];
+  if (!h || h.suppress) return;
+  clearTimeout(h.timer);
+  h.timer = setTimeout(() => {
+    h.timer = null;
+    const visual = document.getElementById(prefix + '-visual');
+    if (!visual) return;
+    const cur = visual.innerHTML;
+    if (cur === h.last) return;
+    h.undo.push(h.last);
+    if (h.undo.length > 100) h.undo.shift();
+    h.redo = [];
+    h.last = cur;
+    _updateUndoButtons(prefix);
+  }, 350);
+}
+
+// Commit any pending (debounced) change synchronously — call before reading the
+// stack so an in-flight typing burst becomes an undoable step.
+function _historyFlush(prefix) {
+  const h = _editorHistory[prefix];
+  if (!h) return;
+  if (h.timer) { clearTimeout(h.timer); h.timer = null; }
+  const visual = document.getElementById(prefix + '-visual');
+  if (!visual) return;
+  const cur = visual.innerHTML;
+  if (cur !== h.last) {
+    h.undo.push(h.last);
+    if (h.undo.length > 100) h.undo.shift();
+    h.redo = [];
+    h.last = cur;
+  }
+}
+
+function _historyRestore(prefix, html) {
+  const h = _editorHistory[prefix];
+  const visual = document.getElementById(prefix + '-visual');
+  if (!h || !visual) return;
+  h.suppress = true; // ignore the mutations our own restore triggers
+  visual.innerHTML = html;
+  const source = document.getElementById(prefix + '-source');
+  if (source) source.value = html;
+  h.last = html;
+  // Clear suppression after the observer's microtask has drained.
+  setTimeout(() => { h.suppress = false; }, 0);
+  markDirty();
+  _updateUndoButtons(prefix);
+  try { visual.focus(); } catch (_) {}
+  try { _updateHtmlEditorToolbarState(visual); } catch (_) {}
+}
+
+function htmlEditorUndo(prefix) {
+  const h = _editorHistory[prefix];
+  if (!h) return;
+  _historyFlush(prefix);
+  if (!h.undo.length) return;
+  const prev = h.undo.pop();
+  h.redo.push(h.last);
+  _historyRestore(prefix, prev);
+}
+
+function htmlEditorRedo(prefix) {
+  const h = _editorHistory[prefix];
+  if (!h) return;
+  _historyFlush(prefix);
+  if (!h.redo.length) return;
+  const next = h.redo.pop();
+  h.undo.push(h.last);
+  _historyRestore(prefix, next);
+}
+
+function _updateUndoButtons(prefix) {
+  const h = _editorHistory[prefix];
+  if (!h) return;
+  const u = document.getElementById(prefix + '-undo');
+  const r = document.getElementById(prefix + '-redo');
+  if (u) u.disabled = h.undo.length === 0;
+  if (r) r.disabled = h.redo.length === 0;
+}
+
+// Wire keyboard shortcuts (Ctrl+B/I/U format, Ctrl+Z undo, Ctrl+Shift+Z/Ctrl+Y
+// redo) + the snapshot history onto an htmlEditor()-built visual. Scoped to
+// editors inside [data-html-editor] so hand-rolled editors keep native behaviour.
+function attachEditorShortcuts(visualEl) {
+  if (!visualEl || visualEl._editorKbAttached) return;
+  if (!visualEl.closest || !visualEl.closest('[data-html-editor]')) return;
+  visualEl._editorKbAttached = true;
+  const prefix = (visualEl.id || '').replace(/-visual$/, '');
+  _initEditorHistory(prefix, visualEl);
+  visualEl.addEventListener('keydown', (e) => {
+    if (!(e.ctrlKey || e.metaKey)) return;
+    const k = (e.key || '').toLowerCase();
+    if (k === 'b' || k === 'i' || k === 'u') {
+      // Run our command (toolbar state + markDirty stay in sync) and stop the
+      // event so the global Ctrl+B sidebar shortcut never fires.
+      e.preventDefault(); e.stopPropagation();
+      htmlEditorCmd(prefix, k === 'b' ? 'bold' : k === 'i' ? 'italic' : 'underline');
+    } else if (k === 'z' && !e.shiftKey) {
+      e.preventDefault(); e.stopPropagation(); htmlEditorUndo(prefix);
+    } else if ((k === 'z' && e.shiftKey) || k === 'y') {
+      e.preventDefault(); e.stopPropagation(); htmlEditorRedo(prefix);
+    }
   });
 }
 
 // Wire up paste handlers on all existing visual editors on the page.
 // Called from setHtmlEditorMode and after route changes.
 function wireAllWysiwygPasteHandlers() {
-  document.querySelectorAll('[id$="-visual"][contenteditable="true"]').forEach(attachWysiwygPasteHandler);
+  document.querySelectorAll('[id$="-visual"][contenteditable="true"]').forEach((v) => {
+    attachWysiwygPasteHandler(v);
+    attachEditorShortcuts(v);
+  });
 }
 
 // ── Abstract WYSIWYG editor helpers ──
@@ -9083,6 +10226,7 @@ async function loadFullTextIntoEditor(articleId) {
         _normalizeMediaCaptions(visual);
         _autoLinkInEditor(visual);
         _initMediaBlockControls();
+        _initToolbarStateSync();
       } finally {
         _suppressDirty = false;
       }
@@ -10057,8 +11201,16 @@ async function deleteCustomPage(slug, title) {
   }
 }
 
+// Pages that use the new "edit the live view" visual editor. These are the
+// design-rich static pages where editing raw HTML/sections is error-prone for
+// non-technical editors. Any other page keeps the classic editor below.
+const VISUAL_PAGE_SLUGS = new Set([
+  'index', 'about', 'for-authors', 'for-reviewers', 'policies', 'contact', 'forms', 'journal-metrics',
+]);
+
 route('/pages/:slug', async (el, { slug }) => {
   const page = await API.get(`/pages/${slug}`);
+  if (VISUAL_PAGE_SLUGS.has(slug)) { renderVisualPageEditor(el, page, slug); return; }
   const hasSections = page.sections && page.sections.length > 0;
 
   el.innerHTML = `
@@ -10067,7 +11219,7 @@ route('/pages/:slug', async (el, { slug }) => {
       <div class="flex gap-2">
         <a href="#/pages" class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm">Geri</a>
         <a href="/site/${esc(page.file)}" target="_blank" rel="noopener" class="px-4 py-2 bg-slate-50 text-slate-700 rounded-lg hover:bg-slate-100 text-sm font-medium">Önizle</a>
-        <button id="toggle-editor-mode" class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm" title="Düzenleme modunu değiştir">HTML</button>
+        <button id="toggle-editor-mode" class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm" title="Bölümlere ayrılmış düzen ile tek parça düzen arasında geçiş yapın">${hasSections ? 'Tek Parça' : 'Bölümler'}</button>
         <button onclick="savePage('${slug}')" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Kaydet</button>
       </div>
     </div>
@@ -10083,9 +11235,9 @@ route('/pages/:slug', async (el, { slug }) => {
 
     <!-- Raw HTML editor (fallback) -->
     <div id="page-html-editor" ${hasSections ? 'class="hidden"' : ''}>
-      <p class="text-sm text-gray-500 mb-4">Tüm sayfa içeriğini görsel olarak düzenleyin. İleri kullanım için sağ üstteki "HTML" sekmesine geçin.</p>
+      <p class="text-sm text-gray-500 mb-4">Tüm sayfa içeriğini görsel olarak düzenleyin. Araç çubuğundaki butonlarla metni biçimlendirebilirsiniz.</p>
       <div class="card" style="padding:24px">
-        ${htmlEditor({ prefix: 'pg-content', initialHtml: page.content || '', rows: 30, placeholder: 'Sayfa içeriği', variant: 'full', minHeight: '500px' })}
+        ${htmlEditor({ prefix: 'pg-content', initialHtml: page.content || '', rows: 30, placeholder: 'Sayfa içeriği', variant: 'simple', minHeight: '500px' })}
       </div>
     </div>`;
 
@@ -10095,13 +11247,1139 @@ route('/pages/:slug', async (el, { slug }) => {
     visualMode = !visualMode;
     document.getElementById('page-visual-editor').classList.toggle('hidden', !visualMode);
     document.getElementById('page-html-editor').classList.toggle('hidden', visualMode);
-    document.getElementById('toggle-editor-mode').textContent = visualMode ? 'HTML' : 'Görsel';
+    document.getElementById('toggle-editor-mode').textContent = visualMode ? 'Tek Parça' : 'Bölümler';
     if (!visualMode) {
       // Sync sections -> page HTML editor
       setHtmlEditorContent('pg-content', buildPageHtmlFromSections());
     }
   });
 });
+
+// ── "Edit the live view" visual page editor ─────────────────────────────────
+// Renders the page's real content (with the site's own CSS) inside a same-origin
+// iframe and makes only the TEXT editable in place — structure/layout is locked,
+// so a non-technical editor changes wording/values without breaking the design.
+// On save we serialise the (structure-identical) HTML back, so the live site is
+// preserved byte-for-byte except for the text that was actually changed.
+function renderVisualPageEditor(el, page, slug) {
+  el.innerHTML = `
+    <div class="page-header">
+      <h1 class="page-title">${esc(page.title)}</h1>
+      <div class="flex gap-2">
+        <a href="#/pages" class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm">Geri</a>
+        <a href="/site/${esc(page.file)}" target="_blank" rel="noopener" class="px-4 py-2 bg-slate-50 text-slate-700 rounded-lg hover:bg-slate-100 text-sm font-medium">Önizle</a>
+        <button id="pg-undo" onclick="_pgUndo()" disabled class="px-3 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm disabled:opacity-40 disabled:cursor-not-allowed inline-flex items-center gap-1.5" title="Geri Al (Ctrl+Z)">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"/></svg>Geri Al</button>
+        <button id="pg-redo" onclick="_pgRedo()" disabled class="px-3 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm disabled:opacity-40 disabled:cursor-not-allowed inline-flex items-center" title="İleri Al (Ctrl+Shift+Z)">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 15l6-6m0 0l-6-6m6 6H9a6 6 0 000 12h3"/></svg></button>
+        <button id="pg-advanced-toggle" onclick="toggleVisualPageRaw('${slug}')" class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm" title="Sayfanın HTML kodunu düzenle (ileri düzey — gerekmedikçe kullanmayın)">Gelişmiş (HTML)</button>
+        <button onclick="saveVisualPage('${slug}')" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Kaydet<span data-dirty-indicator class="text-amber-200"></span></button>
+      </div>
+    </div>
+
+    <div class="card card-padded mb-4 flex items-start gap-3" style="background:var(--brand-soft);border-color:var(--brand-soft-2)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--brand);flex-shrink:0;margin-top:2px"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4z"/></svg>
+      <div class="text-sm" style="color:var(--text-strong)">
+        Aşağıda sayfanın <strong>gerçek görünümü</strong> var. Değiştirmek istediğiniz <strong>herhangi bir yazıya tıklayıp</strong> yazın — başlıklar, kartlardaki sayılar, tablo değerleri, bağlantı metinleri. Yazıyı <strong>seçtiğinizde</strong> kalın/italik/başlık/renk araç çubuğu otomatik çıkar.
+        <span style="color:var(--text-muted)">Tasarım ve düzen kilitlidir; yanlışlıkla bozamazsınız. Bitince <strong>Kaydet</strong>'e basın.</span>
+      </div>
+    </div>
+
+    <div id="pg-insert-bar" class="flex flex-wrap items-center gap-1.5 mb-3 px-3 py-2 rounded-lg" style="background:var(--bg-subtle);border:1px solid var(--border-soft)">
+      <span class="text-xs font-semibold mr-1" style="color:var(--text-muted)">Ekle:</span>
+      <button type="button" onclick="pgInsertMedia('image')" title="Resim ekle — imlecin bulunduğu yerden sonra eklenir" class="px-2.5 py-1.5 rounded-md hover:bg-white border border-transparent hover:border-slate-200 text-slate-700 text-xs font-medium flex items-center gap-1.5">${_mediaImageIcon}<span>Resim</span></button>
+      <button type="button" onclick="pgInsertMedia('video')" title="Video ekle (yükle veya URL)" class="px-2.5 py-1.5 rounded-md hover:bg-white border border-transparent hover:border-slate-200 text-slate-700 text-xs font-medium flex items-center gap-1.5">${_mediaVideoIcon}<span>Video</span></button>
+      <button type="button" onclick="pgInsertMedia('youtube')" title="YouTube videosu ekle (bağlantı yapıştır)" class="px-2.5 py-1.5 rounded-md hover:bg-white border border-transparent hover:border-slate-200 text-slate-700 text-xs font-medium flex items-center gap-1.5">${_mediaYouTubeIcon}<span>YouTube</span></button>
+      <span class="text-xs ml-1" style="color:var(--text-faint)">Eklemek istediğiniz yere önce tıklayın, sonra bir düğme seçin.</span>
+    </div>
+
+    <div id="pg-banner-panel" class="hidden mb-3"></div>
+
+    <iframe id="pg-frame" title="Sayfa düzenleyici" style="width:100%;min-height:600px;border:1px solid var(--border-soft);border-radius:12px;background:#fff;display:block"></iframe>
+    <textarea id="pg-raw" class="hidden w-full px-3 py-2 border rounded-lg text-xs font-mono" style="min-height:600px;border-color:var(--border-soft)" spellcheck="false"></textarea>`;
+
+  const frame = document.getElementById('pg-frame');
+  frame.onload = () => _wireVisualPageEditor(frame);
+  frame.srcdoc = _visualPageSrcdoc(page.content || '');
+  clearDirty();
+  _visualRawMode = false;
+}
+
+let _visualRawMode = false;
+
+// Persistent "Ekle" toolbar handler for the visual page editor. Captures the
+// caret inside the iframe NOW (before the modal steals focus), opens the shared
+// media dialog, and inserts the built <figure> at that caret. Falls back to the
+// raw textarea when the editor is in "Gelişmiş (HTML)" mode.
+function pgInsertMedia(kind) {
+  if (_visualRawMode) {
+    const raw = document.getElementById('pg-raw');
+    const inserter = (html) => {
+      if (!raw) return;
+      const s = raw.selectionStart != null ? raw.selectionStart : raw.value.length;
+      raw.value = raw.value.slice(0, s) + '\n' + html + '\n' + raw.value.slice(s);
+      markDirty();
+    };
+    if (kind === 'image') openMediaImageDialog(inserter);
+    else if (kind === 'video') openMediaVideoDialog(inserter);
+    else openMediaYouTubeDialog(inserter);
+    return;
+  }
+  const frame = document.getElementById('pg-frame');
+  const doc = frame && frame.contentDocument;
+  const root = doc && doc.getElementById('pg-edit-root');
+  if (!root) { toast('Editör henüz hazır değil, sayfa yüklenince tekrar deneyin', 'warning'); return; }
+  // Snapshot the caret position inside the iframe (survives modal focus change).
+  let savedRange = null;
+  const s = doc.getSelection();
+  if (s && s.rangeCount) {
+    const r = s.getRangeAt(0);
+    if (root.contains(r.startContainer)) savedRange = r.cloneRange();
+  }
+  const inserter = (html) => _pgInsertMediaHtml(html, savedRange);
+  if (kind === 'image') openMediaImageDialog(inserter);
+  else if (kind === 'video') openMediaVideoDialog(inserter);
+  else openMediaYouTubeDialog(inserter);
+}
+
+// Insert a media <figure> into the visual editor's iframe. Placed right after the
+// caret's nearest block (so it lands in-flow within the same content column);
+// appended to the end if there is no caret. Marks the new caption editable, locks
+// the media element itself, and fires `input` so undo-history + dirty + autofit
+// all pick it up — same path the rest of the visual editor uses.
+function _pgInsertMediaHtml(html, savedRange) {
+  const frame = document.getElementById('pg-frame');
+  const doc = frame && frame.contentDocument;
+  const root = doc && doc.getElementById('pg-edit-root');
+  if (!root) return;
+  const tmp = doc.createElement('div');
+  tmp.innerHTML = html;
+  const node = tmp.firstElementChild;
+  if (!node) return;
+
+  let inserted = false;
+  const range = savedRange || ((doc.getSelection() && doc.getSelection().rangeCount) ? doc.getSelection().getRangeAt(0) : null);
+  if (range && root.contains(range.startContainer)) {
+    let ref = range.startContainer;
+    if (ref.nodeType !== 1) ref = ref.parentNode;
+    const BLOCKISH = /^(P|DIV|LI|SECTION|ARTICLE|ASIDE|H1|H2|H3|H4|H5|H6|FIGURE|UL|OL|BLOCKQUOTE|TABLE|TD|TH)$/;
+    while (ref && ref !== root && !(ref.nodeType === 1 && BLOCKISH.test(ref.tagName))) ref = ref.parentNode;
+    if (ref && ref !== root && ref.parentNode && root.contains(ref)) { ref.after(node); inserted = true; }
+  }
+  if (!inserted) root.appendChild(node);
+
+  // New caption text becomes editable; the media element itself must not be
+  // treated as deletable text.
+  try { _pgMarkEditableLeaves(node); } catch (_) {}
+  node.querySelectorAll('svg, img, iframe, video').forEach((n) => n.setAttribute('contenteditable', 'false'));
+  // Drive history/dirty/refit through the same `input` event the editor listens for.
+  try { root.dispatchEvent(new (doc.defaultView).Event('input', { bubbles: true })); } catch (_) { markDirty(); }
+  // Bring the freshly inserted media into view.
+  try { node.scrollIntoView({ block: 'center', behavior: 'smooth' }); } catch (_) {}
+}
+
+// Build the iframe document for the visual editor. Same-origin srcdoc with a
+// <base> pointing at the live site so the page's own css/style.css, images and
+// links resolve exactly as on the public site. The injected <style> is
+// EDITOR-ONLY (never saved): edit affordances, neutralised form fields, and —
+// crucially — collapsible accordion panels forced OPEN so their text is visible
+// and editable here, while the live site keeps its normal collapse behaviour.
+function _visualPageSrcdoc(content) {
+  const head = '<!doctype html><html lang="tr"><head><meta charset="utf-8">'
+    + '<base href="/site/"><link rel="stylesheet" href="css/style.css">'
+    + '<style>'
+    + 'html,body{margin:0;background:#fff}'
+    + '#pgw{padding:0}'
+    + '[data-ce="1"]{transition:outline-color .12s,background-color .12s}'
+    + '[data-ce="1"]:hover{outline:2px dashed rgba(13,148,136,.55);outline-offset:2px;cursor:text;border-radius:3px}'
+    + '[data-ce="1"]:focus{outline:2px solid #0d9488;outline-offset:2px;background:rgba(13,148,136,.05)}'
+    + '#pgw input,#pgw select,#pgw textarea,#pgw button{pointer-events:none}'
+    // Reveal collapsible accordion panels (live keeps max-height:0 + JS toggle).
+    + '#pgw .accordion-content{max-height:none !important;overflow:visible !important}'
+    + '#pgw .accordion-chevron{transform:rotate(180deg)}'
+    // Reveal ALL hero carousel banners stacked vertically. On the live site the
+    // carousel JS shows one slide at a time; that JS doesn't run in the editor,
+    // so without this only the first (is-active) banner would be visible/editable.
+    // Editor-only — the saved HTML keeps the original carousel markup untouched.
+    + '#pgw .hero-carousel-track{height:auto !important;display:flex !important;flex-direction:column;gap:18px}'
+    + '#pgw .hero-slide{position:relative !important;inset:auto !important;opacity:1 !important;visibility:visible !important;pointer-events:auto !important}'
+    + '#pgw .hero-carousel-controls,#pgw .hero-carousel-indicators{display:none !important}'
+    + '</style></head><body><div id="pgw"><div id="pg-edit-root">';
+  return head + content + '</div></div></body></html>';
+}
+
+// After the iframe loads, mark every maximal inline-only (text-bearing) element
+// editable, lock structure, and neutralise navigation/form interaction.
+function _wireVisualPageEditor(frame) {
+  const doc = frame.contentDocument;
+  if (!doc) return;
+  const root = doc.getElementById('pg-edit-root');
+  if (!root) return;
+  _pgMarkEditableLeaves(root);
+  // Icons/images inside an editable region must not be deletable as "text".
+  root.querySelectorAll('svg, img').forEach((n) => n.setAttribute('contenteditable', 'false'));
+  // In the editor, links/buttons must not navigate or submit.
+  doc.addEventListener('click', (e) => { if (e.target.closest('a, button')) e.preventDefault(); }, true);
+  // Paste as PLAIN TEXT only. The visual editor edits text inside a LOCKED
+  // structure, so pasting rich HTML (e.g. from ChatGPT, which carries
+  // <li>/<ul> + data-section-id/data-start artifacts) would inject block
+  // elements into inline text leaves and shred the layout. Inserting the
+  // clipboard's plain text keeps the design intact; formatting is added via
+  // the floating toolbar instead.
+  doc.addEventListener('paste', (e) => {
+    e.preventDefault();
+    const cd = e.clipboardData || (doc.defaultView && doc.defaultView.clipboardData);
+    const text = cd ? cd.getData('text/plain') : '';
+    if (text) doc.execCommand('insertText', false, text);
+  });
+  // Enter inserts a soft line break instead of spawning new block elements
+  // (keeps the locked structure intact); lists keep their native behaviour.
+  doc.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey && !(e.target.closest && e.target.closest('li'))) {
+      e.preventDefault();
+      doc.execCommand('insertLineBreak');
+      return;
+    }
+    if (e.ctrlKey || e.metaKey) {
+      const k = (e.key || '').toLowerCase();
+      if (k === 'z' && !e.shiftKey) { e.preventDefault(); _pgUndo(); }
+      else if ((k === 'z' && e.shiftKey) || k === 'y') { e.preventDefault(); _pgRedo(); }
+    }
+  });
+  const fit = () => { try { frame.style.height = (doc.body.scrollHeight + 24) + 'px'; } catch (_) {} };
+  doc.addEventListener('input', () => { markDirty(); fit(); });
+  fit();
+  setTimeout(fit, 400);
+  // Floating, design-system-aware formatting toolbar (appears on text selection).
+  _installFormatToolbar(doc, root, fit);
+  // Snapshot-based undo/redo. The native contenteditable undo only covers the
+  // browser's own edits; the format toolbar mutates the DOM directly
+  // (surroundContents), which native undo misses — so we keep our own history
+  // fed by a MutationObserver, and drive both the Ctrl+Z keys and the header
+  // Geri Al / İleri Al buttons from it.
+  _pgHistInit(doc, root, fit);
+  // Block-level editing: select a section/card → move, duplicate, delete,
+  // change background, or rewrite its HTML. (History observer above captures
+  // every structural change, so all of it is undoable.)
+  _installBlockEditor(doc, root, fit);
+  // Banner management panel (only when the page has the homepage hero carousel).
+  _initHeroBannerPanel(frame);
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  HERO CAROUSEL (banner) MANAGEMENT — visual page editor
+//  Pages with #home-hero-carousel (the homepage) get a "Banner Yönetimi" panel
+//  above the iframe: delete a banner, add/replace/remove its image, add a new
+//  banner. All edits mutate the iframe DOM inside #pg-edit-root, so the normal
+//  "Kaydet" persists them; the carousel's slide↔indicator count and active
+//  state are kept in sync so the live site keeps working.
+// ═══════════════════════════════════════════════════════════════════════════
+function _heroFrame() { return document.getElementById('pg-frame'); }
+function _heroDoc() { const f = _heroFrame(); return f && f.contentDocument; }
+function _heroSlides(doc) {
+  const track = doc && doc.querySelector('#home-hero-carousel .hero-carousel-track');
+  return track ? Array.from(track.querySelectorAll(':scope > .hero-slide')) : [];
+}
+
+function _initHeroBannerPanel(frame) {
+  const panel = document.getElementById('pg-banner-panel');
+  if (!panel) return;
+  const doc = frame && frame.contentDocument;
+  if (!doc || !doc.getElementById('home-hero-carousel')) { panel.classList.add('hidden'); panel.innerHTML = ''; return; }
+  panel.classList.remove('hidden');
+  _renderHeroBannerPanel();
+}
+
+function _renderHeroBannerPanel() {
+  const panel = document.getElementById('pg-banner-panel');
+  const doc = _heroDoc();
+  if (!panel || !doc) return;
+  const slides = _heroSlides(doc);
+  const btn = (onclick, label, tone) => {
+    const styles = tone === 'danger'
+      ? 'color:var(--color-red-700,#b91c1c);border-color:color-mix(in oklab,#b91c1c 30%,transparent)'
+      : tone === 'primary'
+        ? 'color:#fff;background:var(--brand);border-color:var(--brand)'
+        : 'color:var(--text-strong);border-color:var(--border-soft)';
+    return `<button type="button" onclick="${onclick}" class="px-2 py-1 rounded-md text-xs font-medium hover:opacity-90" style="border:1px solid;${styles}">${label}</button>`;
+  };
+  const moveBtn = (i, dir, disabled, label) =>
+    `<button type="button" onclick="_heroBannerMove(${i},${dir})" ${disabled ? 'disabled' : ''} title="${label}" class="px-1.5 py-1 rounded-md text-xs hover:bg-white disabled:opacity-30 disabled:cursor-not-allowed" style="border:1px solid var(--border-soft);color:var(--text-strong);line-height:1">${dir < 0 ? '▲' : '▼'}</button>`;
+  const rows = slides.map((slide, i) => {
+    const hasImg = !!slide.querySelector('img');
+    const titleEl = slide.querySelector('.hero-title, .hero-slide-title');
+    const title = (titleEl ? titleEl.textContent : '').trim().slice(0, 60) || ('Banner ' + (i + 1));
+    return `<div class="banner-row flex items-center gap-2 py-2" data-banner-idx="${i}" style="border-top:1px solid var(--border-soft)">
+        <span class="row-grip" title="Sürükleyerek sırala" aria-label="Sürükle" onmousedown="this.closest('.banner-row').setAttribute('draggable','true')">${ROW_GRIP_SVG}</span>
+        <span class="text-xs font-semibold" style="min-width:54px;color:var(--text-muted)">Banner ${i + 1}</span>
+        <span class="inline-flex gap-1">${moveBtn(i, -1, i === 0, 'Yukarı taşı')}${moveBtn(i, 1, i === slides.length - 1, 'Aşağı taşı')}</span>
+        <span class="text-xs flex-1 min-w-0 truncate" style="color:var(--text-faint)" title="${esc(title)}">${esc(title)}</span>
+        ${btn(`_heroBannerImage(${i})`, hasImg ? 'Resmi değiştir' : '＋ Resim ekle')}
+        ${hasImg ? btn(`_heroBannerRemoveImage(${i})`, 'Resmi sil', 'danger') : ''}
+        ${btn(`_heroBannerDelete(${i})`, "🗑 Banner'ı sil", 'danger')}
+      </div>`;
+  }).join('');
+  panel.innerHTML = `
+    <div class="px-3 py-2.5 rounded-lg" style="background:var(--bg-subtle);border:1px solid var(--border-soft)">
+      <div class="flex items-center justify-between gap-2 mb-1">
+        <span class="text-xs font-semibold" style="color:var(--text-muted)">🖼 Banner Yönetimi <span style="color:var(--text-faint);font-weight:400">(${slides.length} banner)</span></span>
+        ${btn('_heroBannerAdd()', '＋ Yeni Banner Ekle', 'primary')}
+      </div>
+      ${rows || '<p class="text-xs py-2" style="color:var(--text-faint)">Banner bulunamadı.</p>'}
+      <p class="text-xs mt-2" style="color:var(--text-faint)"><strong>▲ ▼</strong> ile banner sırasını değiştirin. Banner <strong>metinlerini</strong> aşağıdaki önizlemede doğrudan tıklayıp düzenleyin. Yaptığınız değişiklikleri kalıcılaştırmak için sağ üstten <strong>Kaydet</strong>'e basın.</p>
+    </div>`;
+}
+
+// Re-mark editable leaves on new content, fire input (history/dirty/refit), and
+// refresh the panel. Called after every banner/image mutation.
+function _afterHeroChange() {
+  const frame = _heroFrame();
+  const doc = frame && frame.contentDocument;
+  const root = doc && doc.getElementById('pg-edit-root');
+  if (root) {
+    try { _pgMarkEditableLeaves(root); } catch (_) {}
+    root.querySelectorAll('svg, img').forEach((n) => n.setAttribute('contenteditable', 'false'));
+    try { root.dispatchEvent(new (doc.defaultView).Event('input', { bubbles: true })); } catch (_) { markDirty(); }
+  }
+  _renderHeroBannerPanel();
+}
+
+// Keep slide↔indicator count, slide aria-labels, and active state consistent
+// after a banner is added or removed. Existing slide IDs are preserved (the live
+// CSS targets #hero-slide-1 for the main banner); only missing IDs are assigned.
+function _syncHeroCarousel(doc) {
+  const carousel = doc.getElementById('home-hero-carousel');
+  if (!carousel) return;
+  const slides = _heroSlides(doc);
+  const total = slides.length;
+  slides.forEach((s, i) => {
+    s.setAttribute('aria-label', (i + 1) + ' of ' + total);
+    if (i === 0) { s.classList.add('is-active'); s.removeAttribute('aria-hidden'); }
+    else { s.classList.remove('is-active'); s.setAttribute('aria-hidden', 'true'); }
+  });
+  const used = new Set(slides.map((s) => s.id).filter(Boolean));
+  let n = 1;
+  slides.forEach((s) => { if (!s.id) { while (used.has('hero-slide-' + n)) n++; s.id = 'hero-slide-' + n; used.add(s.id); } });
+  const ind = carousel.querySelector('.hero-carousel-indicators');
+  if (ind) {
+    let html = '';
+    for (let i = 0; i < total; i++) {
+      html += '<button type="button" class="hero-carousel-indicator' + (i === 0 ? ' is-active' : '')
+        + '" data-hero-indicator="' + i + '" aria-label="Go to slide ' + (i + 1) + '"'
+        + (i === 0 ? ' aria-current="true"' : '') + '></button>';
+    }
+    ind.innerHTML = html;
+  }
+}
+
+async function _heroBannerDelete(i) {
+  const doc = _heroDoc();
+  if (!doc) return;
+  const slides = _heroSlides(doc);
+  if (slides.length <= 1) { toast('En az bir banner kalmalı — son banner silinemez.', 'warning'); return; }
+  if (!slides[i]) return;
+  const ok = await confirmAction(`Banner ${i + 1} silinsin mi? (Kaydet'e basana kadar geri alabilirsiniz.)`);
+  if (!ok) return;
+  slides[i].remove();
+  _syncHeroCarousel(doc);
+  _afterHeroChange();
+  toast("Banner silindi. Kalıcılaştırmak için Kaydet'e basın.");
+}
+
+function _heroBannerAdd() {
+  const doc = _heroDoc();
+  if (!doc) return;
+  const track = doc.querySelector('#home-hero-carousel .hero-carousel-track');
+  if (!track) return;
+  const tmp = doc.createElement('div');
+  tmp.innerHTML = '<article class="hero-slide" role="group" aria-roledescription="slide">'
+    + '<div class="hero-slide-shell"><div class="hero-slide-inner"><div class="hero-slide-copy">'
+    + '<p class="hero-meta-chip">Yeni</p>'
+    + '<h2 class="hero-slide-title">Yeni Banner Başlığı</h2>'
+    + '<p class="hero-slide-text">Banner açıklama metnini buraya yazın.</p>'
+    + '<div class="hero-actions"><a href="#" class="hero-btn hero-btn-secondary">Buton</a></div>'
+    + '</div></div></div></article>';
+  track.appendChild(tmp.firstElementChild);
+  _syncHeroCarousel(doc);
+  _afterHeroChange();
+  toast("Yeni banner eklendi (en sona). Metinleri önizlemede düzenleyip Kaydet'e basın.");
+}
+
+// Reorder a banner one step up (dir=-1) or down (dir=+1) within the carousel.
+function _heroBannerMove(i, dir) {
+  const doc = _heroDoc();
+  if (!doc) return;
+  const slides = _heroSlides(doc);
+  const j = i + dir;
+  if (j < 0 || j >= slides.length || !slides[i] || !slides[j]) return;
+  if (dir < 0) slides[j].before(slides[i]);
+  else slides[j].after(slides[i]);
+  _syncHeroCarousel(doc);
+  _afterHeroChange();
+  toast("Banner sırası güncellendi. Kalıcılaştırmak için Kaydet'e basın.");
+}
+
+function _heroBannerImage(i) {
+  const doc = _heroDoc();
+  if (!doc) return;
+  const slide = _heroSlides(doc)[i];
+  if (!slide) return;
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = 'image/*';
+  input.onchange = async () => {
+    const file = input.files && input.files[0];
+    if (!file) return;
+    let url;
+    try { const r = await API.uploadFile('/media/upload/image', file, 'image'); url = r.url; }
+    catch (e) { toast('Resim yüklenemedi: ' + e.message, 'error'); return; }
+    _heroSetSlideImage(slide, url, file.name);
+    _afterHeroChange();
+    toast("Resim eklendi/değiştirildi. Kaydet'e basın.");
+  };
+  input.click();
+}
+
+function _heroSetSlideImage(slide, url, alt) {
+  const existing = slide.querySelector('.hero-cover-figure img') || slide.querySelector('img');
+  if (existing) { existing.setAttribute('src', url); return; }
+  const doc = slide.ownerDocument;
+  const inner = slide.querySelector('.hero-slide-inner');
+  if (inner && !/hero-slide-inner-(split|featured)/.test(inner.className)) {
+    inner.classList.add('hero-slide-inner-split');
+  }
+  const fig = doc.createElement('figure');
+  fig.className = 'hero-cover-figure';
+  fig.setAttribute('aria-hidden', 'true');
+  const img = doc.createElement('img');
+  img.setAttribute('src', url);
+  img.setAttribute('alt', (alt || '').replace(/\.[^.]+$/, ''));
+  img.className = 'hero-cover-image';
+  img.setAttribute('loading', 'lazy');
+  img.setAttribute('decoding', 'async');
+  fig.appendChild(img);
+  (inner || slide.querySelector('.hero-slide-shell') || slide).appendChild(fig);
+}
+
+function _heroBannerRemoveImage(i) {
+  const doc = _heroDoc();
+  if (!doc) return;
+  const slide = _heroSlides(doc)[i];
+  if (!slide) return;
+  const fig = slide.querySelector('.hero-cover-figure');
+  if (fig) fig.remove();
+  else { const img = slide.querySelector('img'); if (img) img.remove(); }
+  _afterHeroChange();
+  toast("Resim kaldırıldı. Kaydet'e basın.");
+}
+
+// Inline (text-level) tags: an element whose element-children are ALL inline is
+// a "text leaf" (editable in place); anything else is a structural container.
+const _PG_INLINE = new Set(['A', 'SPAN', 'STRONG', 'B', 'EM', 'I', 'U', 'S', 'SUP', 'SUB', 'SMALL', 'CODE', 'MARK', 'ABBR', 'TIME', 'BR', 'SVG', 'IMG', 'WBR', 'LABEL', 'Q', 'CITE', 'BDI', 'BDO', 'DFN', 'KBD', 'SAMP', 'VAR']);
+function _pgAllChildrenInline(node) {
+  for (const c of node.children) { if (!_PG_INLINE.has(c.tagName)) return false; }
+  return true;
+}
+// Mark each maximal inline-only, text-bearing element editable. Idempotent;
+// safe to re-run on a freshly inserted/rewritten block.
+function _pgMarkEditableLeaves(rootNode) {
+  (function walk(node) {
+    if (node.tagName === 'SVG') return;
+    if (_pgAllChildrenInline(node)) {
+      if ((node.textContent || '').trim()) {
+        node.setAttribute('data-ce', '1');
+        node.setAttribute('contenteditable', 'true');
+      }
+      return;
+    }
+    [...node.children].forEach(walk);
+  })(rootNode);
+  rootNode.querySelectorAll && rootNode.querySelectorAll('svg, img').forEach((n) => n.setAttribute('contenteditable', 'false'));
+}
+
+// ── Visual page editor undo/redo (snapshot history of #pg-edit-root) ──────────
+let _pgHist = null;
+
+function _pgHistInit(doc, root, fit) {
+  if (_pgHist && _pgHist.observer) { try { _pgHist.observer.disconnect(); } catch (_) {} }
+  _pgHist = { doc, root, fit, undo: [], redo: [], last: root.innerHTML, suppress: false, timer: null, observer: null };
+  const obs = new doc.defaultView.MutationObserver(() => _pgHistRecord());
+  obs.observe(root, { childList: true, subtree: true, characterData: true, attributes: true });
+  _pgHist.observer = obs;
+  _pgUpdateUndoButtons();
+}
+
+function _pgHistRecord() {
+  const h = _pgHist;
+  if (!h || h.suppress) return;
+  clearTimeout(h.timer);
+  h.timer = setTimeout(() => {
+    h.timer = null;
+    if (!h.root) return;
+    const cur = h.root.innerHTML;
+    if (cur === h.last) return;
+    h.undo.push(h.last);
+    if (h.undo.length > 100) h.undo.shift();
+    h.redo = [];
+    h.last = cur;
+    _pgUpdateUndoButtons();
+  }, 350);
+}
+
+function _pgHistFlush() {
+  const h = _pgHist;
+  if (!h) return;
+  if (h.timer) { clearTimeout(h.timer); h.timer = null; }
+  const cur = h.root.innerHTML;
+  if (cur !== h.last) { h.undo.push(h.last); if (h.undo.length > 100) h.undo.shift(); h.redo = []; h.last = cur; }
+}
+
+function _pgHistRestore(html) {
+  const h = _pgHist;
+  if (!h || !h.root) return;
+  h.suppress = true;
+  h.root.innerHTML = html;
+  h.last = html;
+  setTimeout(() => { h.suppress = false; }, 0); // ignore our own restore mutations
+  try { markDirty(); } catch (_) {}
+  if (h.fit) h.fit();
+  _pgUpdateUndoButtons();
+  // The floating toolbars/overlays reference now-stale nodes; hide them.
+  try { ['bmj-fmt-bar', 'bmj-link-pop'].forEach((id) => { const el = h.doc.getElementById(id); if (el) el.style.display = 'none'; }); } catch (_) {}
+  try {
+    ['bmj-blk-hover', 'bmj-blk-sel', 'bmj-blk-handle', 'bmj-blk-bar', 'bmj-blk-bgmenu'].forEach((id) => {
+      const el = h.doc.getElementById(id); if (el) el.style.display = 'none';
+    });
+    if (_pgBlock) _pgBlock.selected = null;
+  } catch (_) {}
+}
+
+function _pgUndo() {
+  const h = _pgHist;
+  if (!h) return;
+  _pgHistFlush();
+  if (!h.undo.length) return;
+  const prev = h.undo.pop();
+  h.redo.push(h.last);
+  _pgHistRestore(prev);
+}
+
+function _pgRedo() {
+  const h = _pgHist;
+  if (!h) return;
+  _pgHistFlush();
+  if (!h.redo.length) return;
+  const next = h.redo.pop();
+  h.undo.push(h.last);
+  _pgHistRestore(next);
+}
+
+function _pgUpdateUndoButtons() {
+  const h = _pgHist;
+  const u = document.getElementById('pg-undo');
+  const r = document.getElementById('pg-redo');
+  if (u) u.disabled = !h || h.undo.length === 0;
+  if (r) r.disabled = !h || h.redo.length === 0;
+}
+
+// ── Block-level structural editing ───────────────────────────────────────────
+// Hover highlights the block under the cursor; clicking its handle SELECTS it
+// and shows a block toolbar (⤴ üst blok, ↑↓ taşı, çoğalt, arka plan, HTML, sil).
+// Overlays live in the iframe <body> (outside #pg-edit-root) so they're never
+// saved; all operations mutate #pg-edit-root and are captured by the undo
+// history. Background presets are curated design-system looks (always on-brand).
+let _pgBlock = null;
+// [label, background value, lightText] — lightText=true forces white text so a
+// dark fill stays readable (curated pairing).
+const _PG_BG_PRESETS = [
+  ['Beyaz', ''],
+  ['Açık gri', '#f9fafb'],
+  ['Marka açık (teal)', '#f0fdfa'],
+  ['Teal gradyan (koyu)', 'linear-gradient(135deg,#134e4a,#0f766e)', true],
+  ['Kırmızı (CTA)', 'var(--color-red-700, #b91c1c)', true],
+];
+
+function _installBlockEditor(doc, root, fit) {
+  if (doc.getElementById('bmj-blk-bar')) return;
+  const win = doc.defaultView;
+
+  const style = doc.createElement('style');
+  style.textContent = [
+    '#bmj-blk-hover,#bmj-blk-sel{position:absolute;z-index:99990;pointer-events:none;border-radius:6px}',
+    '#bmj-blk-hover{border:2px dashed rgba(13,148,136,.55)}',
+    '#bmj-blk-sel{border:2px solid #0d9488;box-shadow:0 0 0 4px rgba(13,148,136,.12)}',
+    '#bmj-blk-handle{position:absolute;z-index:99991;display:none;background:#0d9488;color:#fff;border:0;border-radius:6px;padding:3px 7px;font:600 11px Inter,system-ui,sans-serif;cursor:pointer;box-shadow:0 2px 8px rgba(2,6,23,.3)}',
+    '#bmj-blk-bar{position:absolute;z-index:99996;display:none;background:#0f172a;border-radius:9px;padding:5px;box-shadow:0 10px 30px rgba(2,6,23,.4);white-space:nowrap}',
+    '#bmj-blk-bar button{background:transparent;border:0;color:#e2e8f0;padding:6px 9px;border-radius:6px;cursor:pointer;font:600 12.5px Inter,system-ui,sans-serif;line-height:1;vertical-align:middle}',
+    '#bmj-blk-bar button:hover{background:rgba(255,255,255,.15);color:#fff}',
+    '#bmj-blk-bar button.danger:hover{background:#dc2626;color:#fff}',
+    '#bmj-blk-bar .sep{display:inline-block;width:1px;height:18px;background:rgba(255,255,255,.22);margin:0 4px;vertical-align:middle}',
+    '#bmj-blk-bgmenu{position:absolute;z-index:99997;display:none;background:#0f172a;border-radius:9px;padding:5px;box-shadow:0 10px 30px rgba(2,6,23,.4);min-width:170px}',
+    '#bmj-blk-bgmenu button{display:block;width:100%;text-align:left;background:transparent;border:0;color:#e2e8f0;padding:8px 12px;border-radius:6px;cursor:pointer;font:500 13px Inter,system-ui,sans-serif}',
+    '#bmj-blk-bgmenu button:hover{background:rgba(255,255,255,.15);color:#fff}',
+    '#bmj-blk-bgmenu .sw{display:inline-block;width:13px;height:13px;border-radius:4px;margin-right:9px;vertical-align:-2px;border:1px solid rgba(255,255,255,.45)}',
+  ].join('');
+  doc.head.appendChild(style);
+
+  const hover = doc.createElement('div'); hover.id = 'bmj-blk-hover'; hover.style.display = 'none';
+  const selBox = doc.createElement('div'); selBox.id = 'bmj-blk-sel'; selBox.style.display = 'none';
+  const handle = doc.createElement('button'); handle.id = 'bmj-blk-handle'; handle.type = 'button'; handle.innerHTML = '⠿ Blok seç';
+  const bar = doc.createElement('div'); bar.id = 'bmj-blk-bar';
+  bar.innerHTML =
+    '<button data-act="parent" title="Üst bloğu seç">⤴ Üst</button>'
+    + '<span class="sep"></span>'
+    + '<button data-act="up" title="Yukarı taşı">↑</button>'
+    + '<button data-act="down" title="Aşağı taşı">↓</button>'
+    + '<button data-act="dup" title="Çoğalt">⧉ Çoğalt</button>'
+    + '<button data-act="bg" title="Arka plan / tema">🎨 Arka plan</button>'
+    + '<button data-act="html" title="Bu bloğu HTML olarak yeniden yaz">✎ HTML</button>'
+    + '<span class="sep"></span>'
+    + '<button data-act="del" class="danger" title="Bu bloğu sil">🗑 Sil</button>';
+  const bgmenu = doc.createElement('div'); bgmenu.id = 'bmj-blk-bgmenu';
+  bgmenu.innerHTML = _PG_BG_PRESETS.map(([label, val], i) =>
+    `<button data-bg="${i}"><span class="sw" style="background:${val || '#ffffff'}"></span>${label}</button>`).join('');
+  doc.body.appendChild(hover); doc.body.appendChild(selBox); doc.body.appendChild(handle);
+  doc.body.appendChild(bar); doc.body.appendChild(bgmenu);
+
+  _pgBlock = { doc, root, fit, hovered: null, selected: null, hover, selBox, handle, bar, bgmenu };
+
+  const isLeaf = (el) => el.nodeType === 1 && el.tagName !== 'SVG' && _pgAllChildrenInline(el);
+  // Pure inline-formatting wrappers are never a block-selection target (selecting
+  // a <strong>/<span> inside running text for move/delete is just noise).
+  const NONSELECT = new Set(['SVG', 'PATH', 'G', 'USE', 'SPAN', 'SUP', 'SUB', 'B', 'I', 'EM', 'STRONG', 'U', 'S', 'SMALL', 'MARK', 'ABBR', 'CODE', 'TIME', 'WBR', 'BDI', 'BDO', 'DFN', 'KBD', 'SAMP', 'VAR', 'Q', 'CITE', 'BR']);
+  const isBlock = (el) => {
+    if (!el || el.nodeType !== 1 || el === root || !root.contains(el)) return false;
+    if (NONSELECT.has(el.tagName)) return false;
+    // Inside the homepage hero carousel, EVERY meaningful element is selectable
+    // (heading, paragraph, <a> button, image…), so a banner's inner pieces can be
+    // moved / duplicated / deleted individually — not just the whole banner.
+    // Everywhere else, keep the container-only rule so text leaves stay edit-only
+    // and the other pages' editing experience is unchanged.
+    if (el.closest && el.closest('#home-hero-carousel')) return true;
+    return !isLeaf(el);
+  };
+  const nearestBlock = (node) => {
+    let n = node;
+    while (n && n !== root) { if (n.nodeType === 1 && isBlock(n)) return n; n = n.parentNode; }
+    return null;
+  };
+  const rectOf = (el) => {
+    const r = el.getBoundingClientRect(); const de = doc.documentElement;
+    return { left: r.left + de.scrollLeft, top: r.top + de.scrollTop, w: r.width, h: r.height };
+  };
+  const place = (box, el) => { const r = rectOf(el); box.style.left = r.left + 'px'; box.style.top = r.top + 'px'; box.style.width = r.w + 'px'; box.style.height = r.h + 'px'; box.style.display = 'block'; };
+
+  const hideHover = () => { hover.style.display = 'none'; handle.style.display = 'none'; _pgBlock.hovered = null; };
+  const hideBgMenu = () => { bgmenu.style.display = 'none'; };
+  const deselect = () => { selBox.style.display = 'none'; bar.style.display = 'none'; hideBgMenu(); _pgBlock.selected = null; };
+
+  const showHandleFor = (el) => {
+    place(hover, el); _pgBlock.hovered = el; handle._target = el; // freeze target for the click
+    const r = rectOf(el);
+    handle.style.display = 'block';
+    handle.style.left = Math.max(2, r.left) + 'px';
+    handle.style.top = Math.max(2, r.top - 24) + 'px';
+  };
+
+  const positionBar = () => {
+    const el = _pgBlock.selected; if (!el) return;
+    place(selBox, el);
+    const r = rectOf(el);
+    bar.style.display = 'block';
+    const bw = bar.offsetWidth;
+    let left = Math.max(4, Math.min(r.left, (doc.documentElement.clientWidth || 1200) - bw - 6));
+    let top = r.top - bar.offsetHeight - 8;
+    if (top < doc.documentElement.scrollTop + 2) top = r.top + 6;
+    bar.style.left = left + 'px'; bar.style.top = top + 'px';
+  };
+
+  const select = (el) => {
+    if (!el || !isBlock(el)) return;
+    _pgBlock.selected = el; hideHover();
+    positionBar();
+  };
+
+  // Hover tracking. Key rule: once a block is hovered, moving the cursor OUTWARD
+  // over its ancestors (e.g. on the way to the handle) must NOT jump the
+  // selection up a level — we keep the inner block. We only switch when the
+  // cursor enters a genuinely different block (a child to drill into, or a
+  // sibling). Climbing up to a parent is done deliberately with the ⤴ Üst button.
+  doc.addEventListener('mousemove', (e) => {
+    if (_pgBlock.selected) return; // while selected, keep the selection box stable
+    if (e.target.closest('#bmj-blk-handle, #bmj-blk-bar, #bmj-blk-bgmenu, #bmj-fmt-bar, .bmj-menu')) return;
+    const cand = nearestBlock(e.target);
+    if (!cand) return;                          // empty/gap area → keep current handle (no flicker)
+    const cur = _pgBlock.hovered;
+    if (cand === cur) return;
+    if (cur && cand.contains(cur)) return;      // moving onto an ANCESTOR → keep the inner block
+    showHandleFor(cand);
+  });
+  doc.addEventListener('mouseleave', () => { if (!_pgBlock.selected) hideHover(); });
+  handle.addEventListener('mousedown', (e) => e.preventDefault());
+  // Select the block the handle was shown for (frozen), not whatever is under the
+  // cursor at click time — so a stray mousemove can't change the target.
+  handle.addEventListener('click', (e) => { e.preventDefault(); const t = handle._target || _pgBlock.hovered; if (t && isBlock(t)) select(t); });
+  // Click on real text / empty area deselects the block (so text editing resumes)
+  doc.addEventListener('mousedown', (e) => {
+    if (e.target && e.target.closest && e.target.closest('#bmj-blk-bar, #bmj-blk-bgmenu, #bmj-blk-handle')) return;
+    if (_pgBlock.selected) deselect();
+  });
+  doc.addEventListener('scroll', () => { if (_pgBlock.selected) positionBar(); else hideHover(); }, true);
+
+  const touch = () => { try { root.dispatchEvent(new win.Event('input', { bubbles: true })); } catch (_) { markDirty(); if (fit) fit(); } };
+
+  bar.addEventListener('mousedown', (e) => e.preventDefault());
+  bgmenu.addEventListener('mousedown', (e) => e.preventDefault());
+  bar.addEventListener('click', (e) => {
+    const btn = e.target.closest('button'); if (!btn) return;
+    const el = _pgBlock.selected; if (!el) return;
+    const act = btn.dataset.act;
+    if (act === 'parent') {
+      const p = nearestBlock(el.parentNode);
+      if (p) { _pgBlock.selected = p; hideBgMenu(); positionBar(); }
+      return;
+    }
+    if (act === 'up') {
+      const prev = el.previousElementSibling;
+      if (prev) { el.parentNode.insertBefore(el, prev); touch(); positionBar(); }
+      return;
+    }
+    if (act === 'down') {
+      const next = el.nextElementSibling;
+      if (next) { el.parentNode.insertBefore(next, el); touch(); positionBar(); }
+      return;
+    }
+    if (act === 'dup') {
+      const clone = el.cloneNode(true);
+      el.parentNode.insertBefore(clone, el.nextSibling);
+      touch(); _pgBlock.selected = clone; positionBar();
+      return;
+    }
+    if (act === 'del') {
+      if (!win.confirm('Bu blok tamamen silinsin mi? (Geri Al ile geri getirebilirsiniz.)')) return;
+      el.remove(); deselect(); touch();
+      return;
+    }
+    if (act === 'bg') {
+      const open = bgmenu.style.display === 'block';
+      hideBgMenu();
+      if (open) return;
+      bgmenu.style.display = 'block';
+      bgmenu.style.left = btn.getBoundingClientRect().left + doc.documentElement.scrollLeft + 'px';
+      bgmenu.style.top = (bar.offsetTop + bar.offsetHeight + 4) + 'px';
+      return;
+    }
+    if (act === 'html') {
+      hideBgMenu();
+      _pgEditBlockHtml(el);
+      return;
+    }
+  });
+  bgmenu.addEventListener('click', (e) => {
+    const btn = e.target.closest('button'); if (!btn) return;
+    const el = _pgBlock.selected; if (!el) return;
+    const [, val, light] = _PG_BG_PRESETS[Number(btn.dataset.bg)];
+    if (!val) { el.style.removeProperty('background'); el.style.removeProperty('color'); }
+    else {
+      el.style.background = val;
+      // Dark fills (teal gradient, red CTA) → white text so it stays readable.
+      if (light) el.style.color = '#ffffff'; else el.style.removeProperty('color');
+    }
+    hideBgMenu(); touch(); positionBar();
+  });
+
+  _pgBlock.reposition = () => { if (_pgBlock.selected) positionBar(); };
+}
+
+// Edit one block's raw HTML (full rewrite). Parent-side overlay so it works even
+// though the block lives in the iframe.
+function _pgEditBlockHtml(blockEl) {
+  const overlay = document.createElement('div');
+  overlay.style.cssText = 'position:fixed;inset:0;z-index:100000;background:rgba(2,6,23,.55);display:flex;align-items:center;justify-content:center;padding:24px';
+  overlay.innerHTML = `
+    <div style="background:#fff;border-radius:14px;width:min(900px,96vw);max-height:90vh;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(2,6,23,.4)">
+      <div style="padding:16px 20px;border-bottom:1px solid #e5e7eb">
+        <h3 style="font:600 16px Inter,system-ui;color:#0f172a;margin:0">Bloğu HTML olarak düzenle</h3>
+        <p style="font:400 12.5px Inter,system-ui;color:#64748b;margin:6px 0 0">Bu bloğun tüm içeriğini istediğiniz gibi değiştirin. Tasarım sınıflarını koruyarak düzenlerseniz görünüm bozulmaz. Vazgeçerseniz <strong>Geri Al</strong> ile döndürebilirsiniz.</p>
+      </div>
+      <textarea id="bmj-blk-html" spellcheck="false" style="flex:1;min-height:340px;margin:0;padding:14px;border:0;border-bottom:1px solid #e5e7eb;font:13px ui-monospace,Menlo,Consolas,monospace;resize:none;outline:none;color:#0f172a"></textarea>
+      <div style="padding:14px 20px;display:flex;gap:10px;justify-content:flex-end">
+        <button id="bmj-blk-cancel" style="padding:9px 16px;border:1px solid #cbd5e1;background:#fff;border-radius:9px;font:600 13px Inter;cursor:pointer;color:#334155">Vazgeç</button>
+        <button id="bmj-blk-apply" style="padding:9px 16px;border:0;background:#0d9488;color:#fff;border-radius:9px;font:600 13px Inter;cursor:pointer">Uygula</button>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+  const ta = overlay.querySelector('#bmj-blk-html');
+  ta.value = _pgPrettyHtml(blockEl.outerHTML);
+  ta.focus();
+  const close = () => overlay.remove();
+  overlay.addEventListener('mousedown', (e) => { if (e.target === overlay) close(); });
+  overlay.querySelector('#bmj-blk-cancel').onclick = close;
+  overlay.querySelector('#bmj-blk-apply').onclick = () => {
+    const html = ta.value.trim();
+    if (!html) { close(); return; }
+    try {
+      const doc = blockEl.ownerDocument;
+      const tmp = doc.createElement('div');
+      tmp.innerHTML = html;
+      const replacement = tmp.firstElementChild;
+      if (!replacement) { close(); return; }
+      blockEl.replaceWith(replacement);
+      _pgMarkEditableLeaves(replacement); // make new text editable
+      if (_pgBlock) { _pgBlock.selected = null; _pgBlock.bar.style.display = 'none'; _pgBlock.selBox.style.display = 'none'; }
+      try { (blockEl.ownerDocument || document).getElementById('pg-edit-root').dispatchEvent(new (doc.defaultView).Event('input', { bubbles: true })); } catch (_) { markDirty(); }
+    } catch (err) { toast('HTML uygulanamadı: ' + err.message, 'error'); }
+    close();
+  };
+}
+
+// Light pretty-printer so block HTML is readable in the rewrite box (cosmetic).
+function _pgPrettyHtml(html) {
+  return String(html).replace(/></g, '>\n<');
+}
+
+// A curated, design-safe formatting toolbar that floats above the current text
+// selection inside the visual editor. Bold/Italic/Underline, a fixed size scale,
+// the brand colour palette and Inter↔Serif — ALL applied as inline styles that
+// reference the page's OWN CSS variables (--text-*, --color-*, --font-*). So the
+// result always renders and always matches the live design; a non-technical
+// editor can't pick an off-brand size or colour. The bar lives outside
+// #pg-edit-root, so it is never part of the saved HTML.
+function _installFormatToolbar(doc, root, fit) {
+  if (doc.getElementById('bmj-fmt-bar')) return;
+  const SIZES = [['Küçük', 'var(--text-sm)'], ['Normal', ''], ['Büyük', 'var(--text-xl)'], ['Çok Büyük', 'var(--text-2xl)']];
+  const COLORS = [['Normal', ''], ['Teal (vurgu)', 'var(--color-teal-700)'], ['Gri (ikincil)', 'var(--color-gray-500)'], ['Kırmızı (CTA)', 'var(--color-red-700)']];
+  const FONTS = [['Normal (Inter)', ''], ['Serif', 'var(--font-serif)']];
+
+  const style = doc.createElement('style');
+  style.textContent = [
+    '#bmj-fmt-bar{position:absolute;z-index:99999;display:none;background:#0f172a;border-radius:9px;padding:4px;box-shadow:0 10px 30px rgba(2,6,23,.35);white-space:nowrap;user-select:none}',
+    '#bmj-fmt-bar button{background:transparent;border:0;color:#e2e8f0;padding:5px 9px;border-radius:6px;cursor:pointer;font:600 13px Inter,system-ui,sans-serif;line-height:1;vertical-align:middle}',
+    '#bmj-fmt-bar button:hover{background:rgba(255,255,255,.15);color:#fff}',
+    '#bmj-fmt-bar .sep{display:inline-block;width:1px;height:18px;background:rgba(255,255,255,.22);margin:0 5px;vertical-align:middle}',
+    '#bmj-fmt-bar .b{font-weight:800}#bmj-fmt-bar .i{font-style:italic}#bmj-fmt-bar .u{text-decoration:underline}',
+    '.bmj-menu{position:absolute;z-index:100000;display:none;background:#0f172a;border-radius:9px;padding:5px;box-shadow:0 10px 30px rgba(2,6,23,.35);min-width:150px}',
+    '.bmj-menu button{display:block;width:100%;text-align:left;background:transparent;border:0;color:#e2e8f0;padding:8px 12px;border-radius:6px;cursor:pointer;font:500 13px Inter,system-ui,sans-serif}',
+    '.bmj-menu button:hover{background:rgba(255,255,255,.15);color:#fff}',
+    '.bmj-sw{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:9px;vertical-align:-1px;border:1px solid rgba(255,255,255,.45)}',
+    '#bmj-link-pop{position:absolute;z-index:100001;display:none;background:#0f172a;border-radius:10px;padding:10px;box-shadow:0 12px 34px rgba(2,6,23,.4);width:320px;font:13px Inter,system-ui,sans-serif}',
+    '#bmj-link-pop label{display:block;color:#94a3b8;font-size:11px;font-weight:600;margin:0 0 3px}',
+    '#bmj-link-pop input{width:100%;box-sizing:border-box;background:#1e293b;border:1px solid #334155;color:#fff;border-radius:7px;padding:7px 9px;font:13px Inter,system-ui,sans-serif;margin-bottom:8px;outline:none}',
+    '#bmj-link-pop input:focus{border-color:#0d9488}',
+    '#bmj-link-pop .row{display:flex;gap:6px;align-items:center}',
+    '#bmj-link-pop .row button{flex:0 0 auto;border:0;border-radius:7px;padding:7px 11px;font:600 12.5px Inter,system-ui,sans-serif;cursor:pointer}',
+    '#bmj-link-pop .apply{background:#0d9488;color:#fff}#bmj-link-pop .apply:hover{background:#0f766e}',
+    '#bmj-link-pop .ghost{background:transparent;color:#cbd5e1}#bmj-link-pop .ghost:hover{background:rgba(255,255,255,.12);color:#fff}',
+    '#bmj-link-pop .rm{background:transparent;color:#fca5a5;margin-left:auto}#bmj-link-pop .rm:hover{background:#dc2626;color:#fff}',
+  ].join('');
+  doc.head.appendChild(style);
+
+  const bar = doc.createElement('div');
+  bar.id = 'bmj-fmt-bar';
+  bar.innerHTML =
+    '<button data-cmd="bold" class="b" title="Kalın">B</button>'
+    + '<button data-cmd="italic" class="i" title="İtalik">I</button>'
+    + '<button data-cmd="underline" class="u" title="Altı çizili">U</button>'
+    + '<span class="sep"></span>'
+    + '<button data-menu="size" title="Yazı boyutu">Boyut ▾</button>'
+    + '<button data-menu="color" title="Renk">Renk ▾</button>'
+    + '<button data-menu="font" title="Yazı tipi">Font ▾</button>'
+    + '<span class="sep"></span>'
+    + '<button data-cmd="heading" title="Satırı başlık yap / kaldır">Başlık</button>'
+    + '<button data-cmd="link" title="Bağlantı ekle">🔗 Bağlantı</button>';
+  doc.body.appendChild(bar);
+
+  const menus = {};
+  const mkMenu = (key, items, isColor) => {
+    const m = doc.createElement('div');
+    m.className = 'bmj-menu';
+    m.innerHTML = items.map(([label, val]) =>
+      `<button data-val="${val}">${isColor && val ? `<span class="bmj-sw" style="background:${val}"></span>` : ''}${label}</button>`).join('');
+    doc.body.appendChild(m);
+    menus[key] = m;
+    return m;
+  };
+  mkMenu('size', SIZES, false);
+  mkMenu('color', COLORS, true);
+  mkMenu('font', FONTS, false);
+
+  // Link editor popover: view/change a URL, open it, remove it, or insert a brand
+  // new link (with its own text) from scratch.
+  const linkPop = doc.createElement('div');
+  linkPop.id = 'bmj-link-pop';
+  linkPop.innerHTML =
+    '<label>Bağlantı adresi (URL)</label>'
+    + '<input id="bmj-link-url" type="text" placeholder="https://… veya /sayfa.html veya #bolum">'
+    + '<label>Görünen metin</label>'
+    + '<input id="bmj-link-text" type="text" placeholder="Bağlantı yazısı">'
+    + '<div class="row"><button class="apply">Uygula</button><button class="ghost open">↗ Aç</button><button class="rm">Bağlantıyı kaldır</button></div>';
+  doc.body.appendChild(linkPop);
+
+  const win = doc.defaultView;
+  const sel = () => doc.getSelection();
+  const inEditable = (node) => {
+    while (node && node !== root) {
+      if (node.nodeType === 1 && node.getAttribute && node.getAttribute('contenteditable') === 'true') return true;
+      node = node.parentNode;
+    }
+    return false;
+  };
+  const hideMenus = () => Object.values(menus).forEach((m) => { m.style.display = 'none'; });
+  const hideBar = () => { bar.style.display = 'none'; hideMenus(); };
+  const touch = () => { try { root.dispatchEvent(new win.Event('input', { bubbles: true })); } catch (_) { markDirty(); if (fit) fit(); } };
+
+  // Keep the text selection alive while clicking the toolbar.
+  bar.addEventListener('mousedown', (e) => e.preventDefault());
+  Object.values(menus).forEach((m) => m.addEventListener('mousedown', (e) => e.preventDefault()));
+
+  const positionBar = () => {
+    if (linkPop.style.display === 'block') return; // keep the bar steady while the link editor is open
+    const s = sel();
+    if (!s || s.rangeCount === 0 || !inEditable(s.anchorNode) || !inEditable(s.focusNode)) { hideBar(); return; }
+    // Show on a real selection OR when the caret sits inside an existing link
+    // (so its 🔗 button is reachable to view/edit/remove that link).
+    const link = currentLink();
+    if (s.isCollapsed && !link) { hideBar(); return; }
+    let rect = s.getRangeAt(0).getBoundingClientRect();
+    if ((!rect || (!rect.width && !rect.height)) && link) rect = link.getBoundingClientRect();
+    if (!rect || (!rect.width && !rect.height)) { hideBar(); return; }
+    bar.style.display = 'block';
+    const de = doc.documentElement;
+    const bw = bar.offsetWidth, bh = bar.offsetHeight;
+    let left = rect.left + de.scrollLeft + rect.width / 2 - bw / 2;
+    let top = rect.top + de.scrollTop - bh - 8;
+    left = Math.max(6, Math.min(left, (de.clientWidth || 1200) - bw - 6));
+    if (top < de.scrollTop + 2) top = rect.bottom + de.scrollTop + 8; // flip below
+    bar.style.left = left + 'px';
+    bar.style.top = top + 'px';
+    // NB: do NOT hideMenus() here — a click on a menu button fires mouseup→
+    // positionBar right after the menu opens, which would close it instantly.
+    // Menus are closed explicitly by their own actions / clicking outside.
+  };
+
+  let tmr;
+  doc.addEventListener('selectionchange', () => { clearTimeout(tmr); tmr = setTimeout(positionBar, 10); });
+  doc.addEventListener('mouseup', () => setTimeout(positionBar, 0));
+  doc.addEventListener('scroll', () => { if (bar.style.display === 'block') positionBar(); }, true);
+  doc.addEventListener('mousedown', (e) => {
+    if (!bar.contains(e.target) && !e.target.closest('.bmj-menu')) hideMenus();
+    // Close the link editor when clicking away from it (but not when clicking the
+    // toolbar that owns it).
+    if (linkPop.style.display === 'block' && !linkPop.contains(e.target) && !bar.contains(e.target)) hideLinkPop();
+  });
+
+  const applyStyle = (prop, val) => {
+    const s = sel();
+    if (!s || s.rangeCount === 0 || s.isCollapsed) return;
+    const range = s.getRangeAt(0);
+    const span = doc.createElement('span');
+    span.style[prop] = val || 'inherit'; // "" (Normal) → revert to design default
+    try { range.surroundContents(span); }
+    catch (_) { const frag = range.extractContents(); span.appendChild(frag); range.insertNode(span); }
+    s.removeAllRanges();
+    const r = doc.createRange(); r.selectNodeContents(span); s.addRange(r);
+    touch();
+    positionBar();
+  };
+  const exec = (cmd) => { doc.execCommand(cmd, false, null); touch(); positionBar(); };
+  const headingToggle = () => {
+    const s = sel(); if (!s || s.rangeCount === 0) return;
+    let n = s.anchorNode; if (n && n.nodeType === 3) n = n.parentNode;
+    let isH = false, p = n;
+    while (p && p !== root) { if (/^H[1-6]$/.test(p.tagName)) { isH = true; break; } p = p.parentNode; }
+    doc.execCommand('formatBlock', false, isH ? '<p>' : '<h3>');
+    touch(); positionBar();
+  };
+  // The <a> the caret/selection currently sits inside, or null.
+  const currentLink = () => {
+    const s = sel(); if (!s || s.rangeCount === 0) return null;
+    let n = s.anchorNode; if (n && n.nodeType === 3) n = n.parentNode;
+    while (n && n !== root) { if (n.tagName === 'A') return n; n = n.parentNode; }
+    return null;
+  };
+  // Give a freshly-made link on-brand styling + safe target for external URLs.
+  // Existing links (already classed/styled by the page) are left untouched.
+  const styleLink = (a, url) => {
+    if (/^https?:\/\//i.test(url)) { a.setAttribute('target', '_blank'); a.setAttribute('rel', 'noopener'); }
+    else { a.removeAttribute('target'); a.removeAttribute('rel'); }
+    if (!a.className && !a.getAttribute('style')) {
+      a.style.color = 'var(--color-teal-700)';
+      a.style.textDecoration = 'underline';
+    }
+  };
+  let _linkRange = null, _linkEl = null;
+  const hideLinkPop = () => { linkPop.style.display = 'none'; _linkRange = null; _linkEl = null; };
+  const openLinkPopover = () => {
+    const s = sel(); if (!s || s.rangeCount === 0 || !inEditable(s.anchorNode)) return;
+    _linkEl = currentLink();
+    _linkRange = s.getRangeAt(0).cloneRange(); // survive focus moving to the input
+    const urlI = linkPop.querySelector('#bmj-link-url');
+    const txtI = linkPop.querySelector('#bmj-link-text');
+    urlI.value = _linkEl ? (_linkEl.getAttribute('href') || '') : '';
+    txtI.value = _linkEl ? _linkEl.textContent : (s.isCollapsed ? '' : s.toString());
+    linkPop.querySelector('.rm').style.display = _linkEl ? '' : 'none';
+    // position under the format bar (which is already shown — see positionBar)
+    linkPop.style.display = 'block';
+    const de = doc.documentElement;
+    let left = Math.max(6, Math.min(bar.offsetLeft, (de.clientWidth || 1200) - linkPop.offsetWidth - 6));
+    linkPop.style.left = left + 'px';
+    linkPop.style.top = (bar.offsetTop + bar.offsetHeight + 6) + 'px';
+    setTimeout(() => { urlI.focus(); urlI.select(); }, 10);
+  };
+  const applyLink = () => {
+    const url = linkPop.querySelector('#bmj-link-url').value.trim();
+    const text = linkPop.querySelector('#bmj-link-text').value;
+    if (!url) { hideLinkPop(); return; }
+    if (_linkEl) {
+      // Edit existing link in place.
+      _linkEl.setAttribute('href', url);
+      styleLink(_linkEl, url);
+      if (text && text !== _linkEl.textContent) _linkEl.textContent = text;
+    } else {
+      const s = sel();
+      s.removeAllRanges(); s.addRange(_linkRange);
+      if (!_linkRange.collapsed) {
+        // Wrap the current selection.
+        doc.execCommand('createLink', false, url);
+        const a = currentLink(); if (a) { styleLink(a, url); if (text && text !== a.textContent) a.textContent = text; }
+      } else {
+        // Insert a brand-new link with its own text at the caret.
+        const a = doc.createElement('a');
+        a.setAttribute('href', url);
+        a.textContent = text || url;
+        styleLink(a, url);
+        _linkRange.insertNode(a);
+      }
+    }
+    hideLinkPop(); touch(); positionBar();
+  };
+  const removeLink = () => {
+    if (_linkEl) {
+      const p = _linkEl.parentNode;
+      while (_linkEl.firstChild) p.insertBefore(_linkEl.firstChild, _linkEl);
+      p.removeChild(_linkEl);
+      touch();
+    }
+    hideLinkPop(); positionBar();
+  };
+  linkPop.querySelector('.apply').addEventListener('click', applyLink);
+  linkPop.querySelector('.rm').addEventListener('click', removeLink);
+  linkPop.querySelector('.open').addEventListener('click', () => {
+    const url = linkPop.querySelector('#bmj-link-url').value.trim();
+    if (url) win.open(url, '_blank', 'noopener');
+  });
+  linkPop.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); applyLink(); }
+    else if (e.key === 'Escape') { e.preventDefault(); hideLinkPop(); }
+  });
+
+  bar.querySelectorAll('button[data-cmd]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      hideMenus(); // close any open dropdown when a direct action is used
+      const c = btn.dataset.cmd;
+      if (c === 'bold' || c === 'italic' || c === 'underline') exec(c);
+      else if (c === 'heading') headingToggle();
+      else if (c === 'link') openLinkPopover();
+    });
+  });
+  bar.querySelectorAll('button[data-menu]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const m = menus[btn.dataset.menu];
+      const wasOpen = m.style.display === 'block';
+      hideMenus();
+      if (wasOpen) return;
+      m.style.display = 'block';
+      const de = doc.documentElement;
+      m.style.left = (btn.getBoundingClientRect().left + de.scrollLeft) + 'px';
+      m.style.top = (bar.offsetTop + bar.offsetHeight + 4) + 'px';
+    });
+  });
+  const PROP = { size: 'fontSize', color: 'color', font: 'fontFamily' };
+  Object.keys(menus).forEach((key) => {
+    menus[key].querySelectorAll('button').forEach((b) => {
+      b.addEventListener('click', () => { applyStyle(PROP[key], b.dataset.val); hideMenus(); });
+    });
+  });
+}
+
+// Strip rich-paste artifacts that corrupt the locked layout. ChatGPT-sourced
+// HTML carries data-section-id / data-start / data-end / data-is-*-node markers
+// and frequently nests block elements (<li>/<ul>/<p>) INSIDE inline text leaves
+// (<span>/<a>/<strong>…), which the browser then renders as broken, split rows.
+// We (1) drop those marker attributes everywhere and (2) flatten any inline
+// element that wrongly contains block content back to its plain text. Safety net
+// for the plain-text paste guard, and it also heals already-corrupted pages on
+// the next save.
+function _sanitizeVisualPaste(root) {
+  // Browser-extension junk (Grammarly et al.) that gets injected into the live
+  // DOM and would otherwise be serialised into the saved page.
+  root.querySelectorAll('grammarly-extension, grammarly-extension-vbars, [data-grammarly-shadow-root], [data-gramm], [data-gramm_editor]').forEach((n) => n.remove());
+  const ARTIFACTS = ['data-section-id', 'data-start', 'data-end', 'data-is-last-node', 'data-is-only-node'];
+  ARTIFACTS.forEach((attr) => {
+    root.querySelectorAll('[' + attr + ']').forEach((n) => n.removeAttribute(attr));
+  });
+  // Inline elements must not contain block/list/table descendants — flatten to text.
+  root.querySelectorAll('span, a, strong, b, em, i, u, sup, sub, small, mark, abbr, label, cite').forEach((el) => {
+    if (el.querySelector('li, ul, ol, p, div, table, h1, h2, h3, h4, h5, h6')) {
+      el.textContent = (el.textContent || '').replace(/ +$/, '').trim();
+    }
+  });
+}
+
+// Serialise the edited content back to clean HTML (drop editor-only attributes).
+function _readVisualPageContent() {
+  const frame = document.getElementById('pg-frame');
+  const doc = frame && frame.contentDocument;
+  const root = doc && doc.getElementById('pg-edit-root');
+  if (!root) return null;
+  const clone = root.cloneNode(true);
+  clone.querySelectorAll('[contenteditable]').forEach((n) => n.removeAttribute('contenteditable'));
+  clone.querySelectorAll('[data-ce]').forEach((n) => n.removeAttribute('data-ce'));
+  _sanitizeVisualPaste(clone);
+  return clone.innerHTML;
+}
+
+// "Gelişmiş (HTML)" escape hatch: swap the visual editor for a raw-HTML textarea
+// and back. Power users can hand-edit; non-technical users never need it.
+function toggleVisualPageRaw(slug) {
+  const frame = document.getElementById('pg-frame');
+  const raw = document.getElementById('pg-raw');
+  const btn = document.getElementById('pg-advanced-toggle');
+  if (!frame || !raw) return;
+  if (_visualRawMode) {
+    // Raw → visual: re-render the iframe from the edited HTML.
+    frame.onload = () => _wireVisualPageEditor(frame);
+    frame.srcdoc = _visualPageSrcdoc(raw.value);
+    raw.classList.add('hidden');
+    frame.classList.remove('hidden');
+    btn.textContent = 'Gelişmiş (HTML)';
+    _visualRawMode = false;
+  } else {
+    // Visual → raw: dump current edited HTML into the textarea.
+    const content = _readVisualPageContent();
+    if (content == null) { toast('Editör henüz hazır değil', 'warning'); return; }
+    raw.value = content;
+    frame.classList.add('hidden');
+    raw.classList.remove('hidden');
+    raw.oninput = () => markDirty();
+    btn.textContent = 'Görsel düzenleyiciye dön';
+    _visualRawMode = true;
+  }
+}
+
+async function saveVisualPage(slug) {
+  const content = _visualRawMode
+    ? document.getElementById('pg-raw').value
+    : _readVisualPageContent();
+  if (content == null) { toast('Editör yüklenemedi, sayfayı yenileyin', 'error'); return; }
+  try {
+    await API.put(`/pages/${slug}`, { content });
+    clearDirty();
+    toast('Sayfa kaydedildi. Canlı sitede güncellendi.');
+  } catch (err) {
+    toast(err.message, 'error');
+  }
+}
 
 function pageSectionBlock(section, index) {
   return `
@@ -10119,16 +12397,20 @@ function pageSectionBlock(section, index) {
         </div>
       </div>
       <div class="ps-body p-4">
-        <div class="flex flex-wrap gap-0.5 border border-b-0 rounded-t-lg bg-gray-50 px-2 py-1.5">
-          <button type="button" onclick="sectionCmd(this,'bold')" title="Kalın" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 4h8a4 4 0 014 4 4 4 0 01-4 4H6z"/><path d="M6 12h9a4 4 0 014 4 4 4 0 01-4 4H6z"/></svg></button>
-          <button type="button" onclick="sectionCmd(this,'italic')" title="İtalik" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 4h4m-2 0l-4 16m0 0h4"/></svg></button>
-          <button type="button" onclick="sectionCmd(this,'underline')" title="Altı Çizili" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 3v7a6 6 0 0012 0V3M3.5 21h17"/></svg></button>
-          <div class="w-px bg-gray-300 mx-1"></div>
-          <button type="button" onclick="sectionCmd(this,'formatBlock','<h3>')" title="Başlık 3" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-bold">H3</button>
-          <button type="button" onclick="sectionCmd(this,'formatBlock','<p>')" title="Paragraf" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-bold">P</button>
-          <button type="button" onclick="sectionCmd(this,'insertUnorderedList')" title="Liste" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></button>
-          <button type="button" onclick="sectionLink(this)" title="Link Ekle" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></button>
-          <button type="button" onclick="sectionCmd(this,'removeFormat')" title="Formatı Temizle" class="p-1.5 rounded hover:bg-gray-200 text-gray-600"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17 10L3 3m0 0l7 14 2-5 5-2M3 3l18 18"/></svg></button>
+        <div class="flex flex-wrap items-center gap-1 border border-b-0 rounded-t-lg bg-gray-50 px-2 py-1.5">
+          <button type="button" onclick="sectionCmd(this,'bold')" title="Kalın (Ctrl+B)" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-medium flex items-center gap-1.5"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 4h8a4 4 0 014 4 4 4 0 01-4 4H6z"/><path d="M6 12h9a4 4 0 014 4 4 4 0 01-4 4H6z"/></svg><span>Kalın</span></button>
+          <button type="button" onclick="sectionCmd(this,'italic')" title="İtalik (Ctrl+I)" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-medium flex items-center gap-1.5"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 4h4m-2 0l-4 16m0 0h4"/></svg><span>İtalik</span></button>
+          <div class="w-px bg-gray-300 mx-1 self-stretch"></div>
+          <button type="button" onclick="sectionHeadingToggle(this)" title="Seçili satırı başlık yap / başlığı kaldır" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-medium flex items-center gap-1.5"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 5v14M18 5v14M6 12h12"/></svg><span>Başlık</span></button>
+          <div class="w-px bg-gray-300 mx-1 self-stretch"></div>
+          <button type="button" onclick="sectionCmd(this,'insertUnorderedList')" title="Madde işaretli liste" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-medium flex items-center gap-1.5"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>Liste</span></button>
+          <button type="button" onclick="sectionLink(this)" title="Bağlantı (link) ekle" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-medium flex items-center gap-1.5"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><span>Bağlantı</span></button>
+          <div class="w-px bg-gray-300 mx-1 self-stretch"></div>
+          <button type="button" onclick="sectionInsertMedia(this,'image')" title="Resim ekle (bilgisayardan yükle veya URL)" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-medium flex items-center gap-1.5">${_mediaImageIcon}<span>Resim</span></button>
+          <button type="button" onclick="sectionInsertMedia(this,'video')" title="Video ekle (bilgisayardan yükle veya URL)" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-medium flex items-center gap-1.5">${_mediaVideoIcon}<span>Video</span></button>
+          <button type="button" onclick="sectionInsertMedia(this,'youtube')" title="YouTube videosu ekle (bağlantı yapıştır)" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-medium flex items-center gap-1.5">${_mediaYouTubeIcon}<span>YouTube</span></button>
+          <div class="w-px bg-gray-300 mx-1 self-stretch"></div>
+          <button type="button" onclick="sectionCmd(this,'removeFormat')" title="Seçili metnin biçimini temizle" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-medium flex items-center gap-1.5"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17 10L3 3m0 0l7 14 2-5 5-2M3 3l18 18"/></svg><span>Biçimi Temizle</span></button>
         </div>
         <div class="ps-content w-full px-4 py-3 border rounded-b-lg text-sm min-h-[120px] focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 max-w-none overflow-auto bg-white" contenteditable="true" oninput="markDirty()" onfocus="try{document.execCommand('defaultParagraphSeparator',false,'p')}catch(e){}">${section.body || '<p><br></p>'}</div>
       </div>
@@ -10176,6 +12458,18 @@ function sectionLink(btn) {
     const editor = section.querySelector('.ps-content[contenteditable]');
     if (editor) { editor.focus(); document.execCommand('createLink', false, url); markDirty(); }
   }
+}
+
+// "Başlık" button in a page section: toggle the caret's line between a heading
+// (h3) and a normal paragraph — one labelled button instead of separate H3/P.
+function sectionHeadingToggle(btn) {
+  const section = btn.closest('.page-section');
+  const editor = section && section.querySelector('.ps-content[contenteditable]');
+  if (!editor) return;
+  editor.focus();
+  const tag = _selectionBlockTag(editor) === 'h3' ? '<p>' : '<h3>';
+  document.execCommand('formatBlock', false, tag);
+  markDirty();
 }
 
 // Normalize a contenteditable section body so plain-text input still renders
@@ -11025,6 +13319,208 @@ function smRefreshRow(key) {
   smRenderPreview();
 }
 
+// ═══════════════════════════════════════════════════════════════════════════
+//  ANASAYFA BÖLÜMLERİ — Latest Published / Articles in Press / Top Cited /
+//  Most Downloaded. Her bölüm sitede otomatik hesaplanır; burada bir bölümü
+//  "Manuel"e alıp hangi makalelerin hangi sırada görüneceğini tam kontrol
+//  edebilirsiniz. HOMEPAGE_DATA.sections'a kaydedilir; homepage.js uygular.
+// ═══════════════════════════════════════════════════════════════════════════
+const _HS_META = {
+  'latest-published': { label: 'Latest Published', desc: 'Geçerli sayıdan yeni yayımlanan makaleler (yayın tarihine göre).', pool: 'articles' },
+  'articles-in-press': { label: 'Articles in Press', desc: 'e-Pub (baskıda) makaleler (sıra numarasına göre).', pool: 'aip' },
+  'top-cited': { label: 'Top Cited', desc: 'Son 24 ayın en çok atıf alan makaleleri.', pool: 'articles' },
+  'most-downloaded': { label: 'Most Downloaded', desc: 'Son 24 ayın en çok indirilen makaleleri.', pool: 'articles' },
+  'image-corner': { label: 'Image Corner', desc: 'Son 24 ayın en çok atıflı “Clinical Image” makaleleri (otomatikte 2 adet).', pool: 'articles' },
+  'latest-news': { label: 'Latest News', desc: 'En yeni haberler (tarihe göre; otomatikte 3 adet).', pool: 'news' },
+};
+let _hsState = null;
+
+route('/homepage-sections', async (el) => {
+  el.innerHTML = '<div class="page-header"><h1 class="page-title">Anasayfa Bölümleri</h1></div><p class="text-sm text-gray-500">Yükleniyor…</p>';
+  let data;
+  try { data = await API.get('/homepage/sections'); }
+  catch (e) { el.innerHTML = `<div class="page-header"><h1 class="page-title">Anasayfa Bölümleri</h1></div><p class="text-sm" style="color:#b91c1c">Yüklenemedi: ${esc(e.message)}</p>`; return; }
+  const lut = { articles: {}, aip: {}, news: {} };
+  (data.candidates.articles || []).forEach((a) => { lut.articles[String(a.id)] = a; });
+  (data.candidates.aip || []).forEach((a) => { lut.aip[String(a.id)] = a; });
+  (data.candidates.news || []).forEach((a) => { lut.news[String(a.id)] = a; });
+  const mode = {}; const ids = {};
+  Object.keys(_HS_META).forEach((k) => {
+    const cur = data.sections[k];
+    mode[k] = (Array.isArray(cur) && cur.length) ? 'manual' : 'auto';
+    ids[k] = (Array.isArray(cur) ? cur.slice() : []).map(String);
+  });
+  _hsState = { data, lut, mode, ids, el };
+  _hsRender();
+});
+
+function _hsRender() {
+  const { el } = _hsState;
+  el.innerHTML = `
+    <div class="page-header">
+      <div class="min-w-0">
+        <h1 class="page-title">Anasayfa Bölümleri</h1>
+        <p class="page-subtitle">Anasayfadaki makale sekmeleri, Image Corner ve Latest News bölümlerini buradan görüntüleyin ve yönetin. <strong>Otomatik</strong>: site metriklere/tarihe göre kendisi seçer. <strong>Manuel</strong>: içeriği siz seçip sıralarsınız (sürükle-bırak veya ▲▼).</p>
+      </div>
+      <div class="flex gap-2">
+        <button onclick="navigate('#/homepage-sections')" class="btn btn-secondary text-sm" title="Sunucudan yeniden yükle (kaydedilmemiş değişiklikler gider)">Yenile</button>
+        <button onclick="saveHomepageSections()" class="btn btn-primary text-sm">Kaydet</button>
+      </div>
+    </div>
+    <div class="space-y-4">${Object.keys(_HS_META).map(_hsCard).join('')}</div>`;
+}
+
+function _hsCard(key) {
+  const { mode, ids, data, lut } = _hsState;
+  const meta = _HS_META[key];
+  const isManual = mode[key] === 'manual';
+  const poolLut = lut[meta.pool];
+  const list = isManual
+    ? ids[key].map((id) => poolLut[String(id)]).filter(Boolean)
+    : (data.auto[key] || []);
+  const rows = list.map((a, i) => _hsArticleRow(key, a, i, isManual, list.length)).join('');
+  const seg = (m, label) => `<button onclick="hsSetMode('${key}','${m}')" class="px-3 py-1.5 rounded-md ${(mode[key] === m) ? 'bg-white shadow-sm text-teal-700' : 'text-gray-500'}">${label}</button>`;
+  return `
+    <div class="card card-padded">
+      <div class="flex items-start justify-between gap-2 mb-2">
+        <div class="min-w-0">
+          <h2 class="text-base font-semibold" style="color:var(--text-strong)">${esc(meta.label)} <span style="color:var(--text-faint);font-weight:400;font-size:13px">(${list.length})</span></h2>
+          <p class="text-xs" style="color:var(--text-muted)">${esc(meta.desc)}</p>
+        </div>
+        <div class="inline-flex items-center bg-gray-100 rounded-lg p-0.5 text-xs font-medium flex-shrink-0">${seg('auto', 'Otomatik')}${seg('manual', 'Manuel')}</div>
+      </div>
+      ${isManual ? '' : '<p class="text-xs mb-2" style="color:var(--text-faint)">⚙ Otomatik — aşağıdaki liste sitede şu an görünen sıralamanın önizlemesidir. Değiştirmek için “Manuel”e geçin.</p>'}
+      <div class="border rounded-lg overflow-hidden" style="border-color:var(--border-soft)">
+        ${rows || '<p class="text-xs px-4 py-3" style="color:var(--text-faint)">Bu bölümde gösterilecek makale yok.</p>'}
+      </div>
+      ${isManual ? _hsAddBox(key) : ''}
+    </div>`;
+}
+
+function _hsArticleRow(key, a, i, isManual, total) {
+  const isNews = _HS_META[key].pool === 'news';
+  const auth = isNews
+    ? [a.category, a.date].filter(Boolean).join(' · ')
+    : ((a.authors || []).slice(0, 3).join(', ') + (((a.authors || []).length > 3) ? ' ve diğerleri' : ''));
+  const metric = isNews ? ''
+    : key === 'top-cited' ? (a.citations + ' atıf')
+      : key === 'most-downloaded' ? (a.downloads + ' indirme')
+        : (a.volume ? ('C' + a.volume + (a.issue ? ' S' + a.issue : '')) : '');
+  const grip = isManual ? `<span class="row-grip" title="Sürükleyerek sırala" aria-label="Sürükle" onmousedown="this.closest('.hs-row').setAttribute('draggable','true')">${ROW_GRIP_SVG}</span>` : '';
+  return `
+    <div class="flex items-center gap-2 px-3 py-2 ${i > 0 ? 'border-t' : ''}${isManual ? ' hs-row' : ''}"${isManual ? ` data-hs-key="${esc(key)}" data-hs-idx="${i}"` : ''} style="border-color:var(--border-soft)">
+      ${grip}
+      <span class="text-xs font-semibold" style="min-width:18px;color:var(--text-faint)">${i + 1}</span>
+      ${isManual ? `<span class="inline-flex flex-col leading-none">
+        <button onclick="hsMove('${key}',${i},-1)" ${i === 0 ? 'disabled' : ''} class="text-[10px] disabled:opacity-30" title="Yukarı">▲</button>
+        <button onclick="hsMove('${key}',${i},1)" ${i === total - 1 ? 'disabled' : ''} class="text-[10px] disabled:opacity-30" title="Aşağı">▼</button>
+      </span>` : ''}
+      <div class="flex-1 min-w-0">
+        <div class="text-xs font-medium truncate" style="color:var(--text-strong)" title="${esc(a.title)}">${esc(a.title)}</div>
+        <div class="text-[11px] truncate" style="color:var(--text-faint)">${esc(auth)}${metric ? ' · ' + esc(metric) : ''}${a.id != null ? ' · #' + esc(String(a.id)) : ''}</div>
+      </div>
+      ${isManual ? `<button onclick="hsRemove('${key}',${i})" class="text-xs px-2 py-1 rounded hover:bg-red-50" style="color:#b91c1c" title="Listeden çıkar">✕</button>` : ''}
+    </div>`;
+}
+
+function _hsAddBox(key) {
+  const full = _hsState.ids[key].length >= 6;
+  if (full) return '<p class="text-xs mt-2" style="color:#b45309">En fazla 6 makale gösterilir. Eklemek için önce birini çıkarın.</p>';
+  return `
+    <div class="mt-2">
+      <input type="text" placeholder="Makale ara (başlık, yazar veya ID)…" oninput="hsSearch('${key}', this.value)" class="input w-full text-sm" style="margin-bottom:6px">
+      <div id="hs-results-${key}" class="border rounded-lg max-h-56 overflow-auto hidden" style="border-color:var(--border-soft)"></div>
+    </div>`;
+}
+
+function hsSetMode(key, m) {
+  if (!_hsState) return;
+  _hsState.mode[key] = m;
+  // First switch to manual with no curated list → seed from the current auto preview.
+  if (m === 'manual' && !_hsState.ids[key].length) {
+    _hsState.ids[key] = (_hsState.data.auto[key] || []).map((a) => String(a.id)).slice(0, 6);
+  }
+  _hsRender();
+}
+function hsMove(key, i, dir) {
+  const arr = _hsState.ids[key]; const j = i + dir;
+  if (j < 0 || j >= arr.length) return;
+  const t = arr[i]; arr[i] = arr[j]; arr[j] = t;
+  _hsRender();
+}
+function hsRemove(key, i) { _hsState.ids[key].splice(i, 1); _hsRender(); }
+function hsSearch(key, q) {
+  const meta = _HS_META[key];
+  const pool = meta.pool === 'aip' ? (_hsState.data.candidates.aip || [])
+    : meta.pool === 'news' ? (_hsState.data.candidates.news || [])
+      : (_hsState.data.candidates.articles || []);
+  const box = document.getElementById('hs-results-' + key);
+  if (!box) return;
+  q = (q || '').trim().toLowerCase();
+  if (!q) { box.classList.add('hidden'); box.innerHTML = ''; return; }
+  const have = new Set(_hsState.ids[key].map(String));
+  const hay = (a) => [a.title, a.id, (a.authors || []).join(' '), a.category, a.excerpt].filter(Boolean).join(' ').toLowerCase();
+  const subOf = (a) => meta.pool === 'news' ? [a.category, a.date].filter(Boolean).join(' · ') : (a.authors || []).slice(0, 3).join(', ');
+  const matches = pool.filter((a) => !have.has(String(a.id)) && hay(a).includes(q)).slice(0, 12);
+  box.classList.remove('hidden');
+  box.innerHTML = matches.length ? matches.map((a) => `
+    <button onclick="hsAdd('${key}','${esc(String(a.id))}')" class="block w-full text-left px-3 py-2 hover:bg-teal-50" style="border-bottom:1px solid var(--border-soft)">
+      <div class="text-xs font-medium truncate" style="color:var(--text-strong)">${esc(a.title)}</div>
+      <div class="text-[11px] truncate" style="color:var(--text-faint)">${esc(subOf(a))} · #${esc(String(a.id))}</div>
+    </button>`).join('') : '<p class="text-xs px-3 py-2" style="color:var(--text-faint)">Eşleşme yok.</p>';
+}
+function hsAdd(key, id) {
+  if (_hsState.ids[key].length >= 6) { toast('En fazla 6 makale gösterilir', 'warning'); return; }
+  if (!_hsState.ids[key].map(String).includes(String(id))) _hsState.ids[key].push(String(id));
+  _hsRender();
+}
+async function saveHomepageSections() {
+  if (!_hsState) return;
+  const sections = {};
+  Object.keys(_HS_META).forEach((k) => {
+    sections[k] = _hsState.mode[k] === 'manual'
+      ? _hsState.ids[k].map((x) => (x !== '' && !isNaN(Number(x))) ? Number(x) : x)
+      : [];
+  });
+  try {
+    await API.put('/homepage/sections', { sections });
+    // reflect saved state (manual sections keep their ids; auto cleared)
+    Object.keys(_HS_META).forEach((k) => { if (_hsState.mode[k] !== 'manual') _hsState.ids[k] = []; });
+    toast('Anasayfa bölümleri kaydedildi. Canlı sitede yansıyacak (gerekirse sayfayı yenileyin).');
+  } catch (e) { toast('Kaydedilemedi: ' + e.message, 'error'); }
+}
+
+// Drag-drop reorder for a homepage-section manual list (mutate _hsState.ids + re-render).
+function _hsReorderByDrop(srcRow, targetRow, above) {
+  const key = srcRow.getAttribute('data-hs-key');
+  if (!_hsState || !key || !Array.isArray(_hsState.ids[key])) return;
+  const arr = _hsState.ids[key];
+  const from = Number(srcRow.getAttribute('data-hs-idx'));
+  let target = Number(targetRow.getAttribute('data-hs-idx'));
+  if (isNaN(from) || isNaN(target) || from === target) return;
+  const item = arr.splice(from, 1)[0];
+  if (from < target) target -= 1;                 // removal shifted target left
+  const insertAt = above ? target : target + 1;
+  arr.splice(Math.max(0, Math.min(insertAt, arr.length)), 0, item);
+  _hsRender();
+}
+
+// Drag-drop reorder for the hero banners (move the iframe slide, keep carousel synced).
+function _bannerReorderByDrop(srcRow, targetRow, above) {
+  const doc = _heroDoc();
+  if (!doc) return;
+  const from = Number(srcRow.getAttribute('data-banner-idx'));
+  const target = Number(targetRow.getAttribute('data-banner-idx'));
+  if (isNaN(from) || isNaN(target) || from === target) { _renderHeroBannerPanel(); return; }
+  const slides = _heroSlides(doc);
+  const moving = slides[from];
+  const ref = slides[target];
+  if (!moving || !ref || !ref.parentNode) return;
+  ref.parentNode.insertBefore(moving, above ? ref : ref.nextSibling);
+  _syncHeroCarousel(doc);
+  _afterHeroChange();
+}
+
 route('/social-media', async (el) => {
   // Fetch platform catalog from server (single source of truth).
   try {
@@ -11462,6 +13958,10 @@ document.addEventListener('keydown', (e) => {
     openCommandPalette();
   }
   if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'b') {
+    // Don't steal Ctrl+B while the user is editing text — it must stay "bold"
+    // inside contenteditable editors (Tam Metin, özet, haber) and form inputs.
+    const t = e.target;
+    if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName || ''))) return;
     e.preventDefault();
     toggleSidebarCollapsed();
   }
@@ -11507,5 +14007,6 @@ function invalidateCommandCache() { _cmdData = null; }
 // Init
 document.addEventListener('DOMContentLoaded', () => {
   initSidebarCollapseState();
+  _initDatePasteSupport();
   handleRoute();
 });

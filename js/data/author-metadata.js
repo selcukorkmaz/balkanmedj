@@ -1,6 +1,6 @@
 /**
  * Balkan Medical Journal — Author Metadata
- * Last updated: 2026-05-20
+ * Last updated: 2026-06-11
  */
 window.AUTHOR_METADATA = {
   "3": {

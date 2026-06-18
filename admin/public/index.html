@@ -480,8 +480,13 @@
 
     /* WYSIWYG editor styling */
     [contenteditable] h2 { font-size: 1.25rem; font-weight: 600; margin: 0.75em 0 0.25em; }
-    [contenteditable] h3 { font-size: 1.1rem; font-weight: 600; margin: 0.75em 0 0.25em; }
+    [contenteditable] h3 { font-size: 1.15rem; font-weight: 700; margin: 0.85em 0 0.3em; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.15em; }
+    [contenteditable] h4 { font-size: 1.05rem; font-weight: 600; margin: 0.75em 0 0.25em; }
+    [contenteditable] h5 { font-size: 0.98rem; font-weight: 600; margin: 0.7em 0 0.2em; color: #374151; }
+    [contenteditable] h6 { font-size: 0.92rem; font-weight: 600; font-style: italic; margin: 0.6em 0 0.2em; color: #4b5563; }
     [contenteditable] p  { margin: 0.5em 0; }
+    /* Active formatting state in the editor toolbar (reflects the selection). */
+    [id$="-toolbar"] button.is-active { background: var(--brand-soft, #ccfbf1); color: var(--brand, #0d9488); box-shadow: inset 0 0 0 1px var(--brand, #0d9488); }
     [contenteditable] ul { list-style: disc; padding-left: 1.5em; margin: 0.5em 0; }
     [contenteditable] ol { list-style: decimal; padding-left: 1.5em; margin: 0.5em 0; }
     [contenteditable] a  { color: var(--brand); text-decoration: underline; }
@@ -904,6 +909,31 @@
     }
     .media-block-ctl button:hover { background: var(--brand-soft); color: var(--brand); border-color: var(--brand); }
     .media-block-ctl button[data-mbc="delete"]:hover { background: #fef2f2; color: #dc2626; border-color: #dc2626; }
+    .media-block-ctl .mbc-size { height: 26px; font-size: 11.5px; border: 1px solid var(--border-soft); border-radius: 5px; background: #fff; color: var(--text-strong); cursor: pointer; padding: 0 4px; }
+    .media-block-ctl .mbc-size:hover { border-color: var(--brand); }
+    .media-block-ctl .mbc-divider { width: 1px; align-self: stretch; background: var(--border-soft); margin: 2px 1px; }
+    /* Live heading outline / TOC panel for the full-text editor. */
+    .heading-outline {
+      position: fixed; top: 92px; right: 16px; z-index: 70;
+      width: 300px; max-height: 72vh; display: flex; flex-direction: column;
+      background: #fff; border: 1px solid var(--border-soft); border-radius: 10px;
+      box-shadow: 0 8px 28px rgba(0,0,0,.16); font-size: 12.5px;
+    }
+    .heading-outline.hidden { display: none; }
+    .heading-outline .ho-head { display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; border-bottom: 1px solid var(--border-soft); }
+    .heading-outline .ho-title { font-weight: 600; color: var(--text-strong); }
+    .heading-outline .ho-close { border: 0; background: transparent; font-size: 18px; line-height: 1; cursor: pointer; color: var(--text-muted); }
+    .heading-outline .ho-summary { padding: 7px 12px; font-size: 11.5px; color: var(--text-muted); border-bottom: 1px solid var(--border-soft); background: var(--bg-subtle); }
+    .heading-outline .ho-list { overflow: auto; padding: 4px; }
+    .heading-outline .ho-row { display: flex; align-items: center; gap: 6px; padding: 1px 0; }
+    .heading-outline .ho-go { flex: 1; min-width: 0; display: flex; align-items: center; gap: 7px; text-align: left; border: 0; background: transparent; cursor: pointer; padding: 5px 6px; border-radius: 6px; }
+    .heading-outline .ho-go:hover { background: var(--brand-soft); }
+    .heading-outline .ho-badge { flex-shrink: 0; font-size: 10px; font-weight: 700; border: 1px solid; border-radius: 4px; padding: 1px 4px; }
+    .heading-outline .ho-text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text-strong); }
+    .heading-outline .ho-sel { flex-shrink: 0; font-size: 10.5px; padding: 2px 4px; border: 1px solid var(--border-soft); border-radius: 5px; background: #fff; color: var(--text-strong); cursor: pointer; }
+    .heading-outline .ho-sel:hover { border-color: var(--brand); }
+    /* Transient highlight on a heading picked from the outline panel. */
+    .outline-flash { outline: 2px solid #f59e0b; outline-offset: 2px; background: #fffbeb; border-radius: 3px; }
     .cr-tab-icon {
       font-size: 16px; line-height: 1;
       color: var(--text-muted);
@@ -1259,6 +1289,10 @@
           <a href="#/article-stats" data-nav="#/article-stats" class="sidebar-link flex items-center gap-2.5 px-3 py-1.5 rounded-md text-[13px] font-medium">
             <svg class="w-[18px] h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
             İstatistikler
+          </a>
+          <a href="#/homepage-sections" data-nav="#/homepage-sections" class="sidebar-link flex items-center gap-2.5 px-3 py-1.5 rounded-md text-[13px] font-medium">
+            <svg class="w-[18px] h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+            Anasayfa Bölümleri
           </a>
         </div>
 

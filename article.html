@@ -356,7 +356,9 @@
        (kept in sync with getStickyHeaderOffset() via the JS-set CSS variable)
        leaves the header's worth of space above any anchored target. */
     .article-body [id],
-    #fulltext-content [id] {
+    #fulltext-content [id],
+    [id^="supp"],
+    #supplementary-materials {
       scroll-margin-top: var(--article-anchor-offset, 100px);
     }
     .article-body .article-media-ref-link {
@@ -1070,20 +1072,51 @@
       border: 0;
       border-radius: 0;
       padding: 0;
+      /* Keep a long TOC from running off the page: cap its height and let it
+         scroll internally so the sticky sidebar (and the Access card below it)
+         always stay within the viewport. */
+      max-height: min(62vh, calc(100vh - 14rem));
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      scrollbar-width: thin;
+      scrollbar-color: #cbd5e1 transparent;
+    }
+    #sidebar-toc .article-toc::-webkit-scrollbar { width: 7px; }
+    #sidebar-toc .article-toc::-webkit-scrollbar-thumb {
+      background: #cbd5e1; border-radius: 4px;
+    }
+    #sidebar-toc .article-toc::-webkit-scrollbar-track { background: transparent; }
+    /* A TOC entry: row holds the link plus an optional collapse caret. */
+    #sidebar-toc .toc-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.1rem;
+    }
+    #sidebar-toc .toc-group + .toc-group > .toc-row,
+    #sidebar-toc .article-toc > .toc-row + .toc-row {
+      border-top: 1px solid #eef2f6;
     }
     #sidebar-toc .article-toc a {
+      flex: 1 1 auto;
+      min-width: 0;
       color: #334155;
-      padding: 0.62rem 0.4rem 0.62rem 0.78rem;
+      padding: 0.5rem 0.35rem 0.5rem 0.7rem;
       margin: 0;
       border-left: 2px solid transparent;
-      font-size: 0.88rem;
+      font-size: 0.83rem;
       font-weight: 500;
-      line-height: 1.35;
+      line-height: 1.32;
       text-transform: none;
       letter-spacing: 0.01em;
+      /* Wrap long section titles instead of overflowing the card width. */
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      hyphens: auto;
     }
-    #sidebar-toc .article-toc a + a {
-      border-top: 1px solid #eef2f6;
+    #sidebar-toc .toc-children a {
+      font-size: 0.78rem;
+      padding-top: 0.42rem;
+      padding-bottom: 0.42rem;
     }
     #sidebar-toc .article-toc a:hover {
       color: var(--color-teal-700);
@@ -1095,6 +1128,35 @@
       font-weight: 600;
       background: #f4faf9;
       border-left-color: var(--color-teal-700);
+    }
+    /* Collapse caret for a main section that has sub-entries. */
+    #sidebar-toc .toc-caret {
+      flex: 0 0 auto;
+      width: 1.3rem;
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      background: transparent;
+      color: #94a3b8;
+      cursor: pointer;
+      padding: 0;
+      font-size: 0.7rem;
+      line-height: 1;
+    }
+    #sidebar-toc .toc-caret:hover { color: var(--color-teal-700); }
+    #sidebar-toc .toc-caret svg {
+      width: 0.7rem; height: 0.7rem;
+      transition: transform 0.18s ease;
+    }
+    #sidebar-toc .toc-group.collapsed .toc-caret svg { transform: rotate(-90deg); }
+    #sidebar-toc .toc-children {
+      overflow: hidden;
+      transition: max-height 0.2s ease;
+    }
+    #sidebar-toc .toc-group.collapsed .toc-children {
+      max-height: 0 !important;
     }
     .desktop-access-card {
       border: 1px solid #e5e7eb;
@@ -1952,6 +2014,11 @@
             // were never imported from the live BMJ source.
             localPdfUrl: aipArticle.localPdfUrl || '',
             pdfUrl: aipArticle.pdfUrl || aipArticle.localPdfUrl || aipArticle.sourcePdfUrl || '',
+            // Supplementary materials + external links must carry through so the
+            // "Supplementary Materials" section renders (with #suppN anchors) and
+            // in-text supplementary cross-references resolve for AIP articles too.
+            supplementary: Array.isArray(aipArticle.supplementary) ? aipArticle.supplementary : [],
+            externalLinks: Array.isArray(aipArticle.externalLinks) ? aipArticle.externalLinks : [],
             aheadOfPrint: true
           };
         }
@@ -3520,15 +3587,28 @@
       }
 
       function getStickyHeaderOffset() {
+        // Measure the actual sticky top bar (only the main nav is sticky here)
+        // and leave a comfortable gap so the target never hides under it.
         var nav = document.querySelector('nav[aria-label="Main navigation"]');
         var navHeight = nav ? nav.getBoundingClientRect().height : 0;
-        return Math.max(96, Math.round(navHeight + 16));
+        return Math.max(96, Math.round(navHeight + 24));
       }
 
       function scrollToArticleTarget(node) {
         if (!node) return;
-        var top = node.getBoundingClientRect().top + window.pageYOffset - getStickyHeaderOffset();
-        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+        var targetTop = function () {
+          return Math.max(0, node.getBoundingClientRect().top + window.pageYOffset - getStickyHeaderOffset());
+        };
+        window.scrollTo({ top: targetTop(), behavior: 'smooth' });
+        // Re-snap after the smooth scroll + any lazy-image layout shift settles,
+        // so the heading lands EXACTLY below the navbar every time (not partially
+        // hidden). Two corrective passes cover slower image loads.
+        var fix = function () {
+          var want = targetTop();
+          if (Math.abs(window.pageYOffset - want) > 3) window.scrollTo({ top: want, behavior: 'auto' });
+        };
+        setTimeout(fix, 420);
+        setTimeout(fix, 850);
       }
 
       // Publish the sticky-header height as a CSS variable so native anchor jumps
@@ -4481,16 +4561,19 @@
       // Supplementary materials (URL-based entries from admin or JATS)
       var suppSectionHtml = '';
       if (article.supplementary && article.supplementary.length) {
-        var suppItems = article.supplementary.map(function (sm) {
+        var suppItems = article.supplementary.map(function (sm, i) {
           var label = (sm.label || 'Supplementary Material').replace(/[<>]/g, '');
           var caption = sm.caption ? ' — ' + String(sm.caption).replace(/[<>]/g, '') : '';
+          // Stable anchor id so in-text cross-references (#supp1 …) resolve here.
+          var sid = (sm.id ? String(sm.id) : ('supp' + (i + 1))).replace(/[^a-zA-Z0-9_-]/g, '');
+          var idAttr = ' id="' + sid + '" class="article-supp-item"';
           if (sm.href) {
             var href = String(sm.href).replace(/"/g, '&quot;');
-            return '<li><a href="' + href + '" target="_blank" rel="noopener" class="text-blue-700 hover:underline">' + label + '</a>' + caption + '</li>';
+            return '<li' + idAttr + '><a href="' + href + '" target="_blank" rel="noopener" class="text-blue-700 hover:underline">' + label + '</a>' + caption + '</li>';
           }
-          return '<li>' + label + caption + '</li>';
+          return '<li' + idAttr + '>' + label + caption + '</li>';
         }).join('');
-        suppSectionHtml = '<section class="mb-10"><h2 class="article-section-title font-bold">Supplementary Materials</h2><ul class="list-disc pl-5 space-y-1">' + suppItems + '</ul></section>';
+        suppSectionHtml = '<section class="mb-10" id="supplementary-materials"><h2 class="article-section-title font-bold">Supplementary Materials</h2><ul class="list-disc pl-5 space-y-1">' + suppItems + '</ul></section>';
       }
 
       // External links (dataset, code, preprint, etc.)
@@ -5216,6 +5299,31 @@
             n = n.nextElementSibling;
           } else { break; }
         }
+        // Tail-absorb: the LAST reference is often typed as a plain
+        // MsoNormal/normal <p> (not part of the auto-numbered MsoListParagraph
+        // list), so the walk above stops one short. Pull in trailing siblings
+        // that unmistakably read as a reference ("YEAR;volume:page" tail) so the
+        // final entry isn't dropped; bail at any heading / structured section.
+        var looksLikeRef = function (el) {
+          if (!el || el.tagName !== 'P') return false;
+          if (el.closest && el.closest('.article-references, .article-acknowledgments, .article-footnotes, figure, table, .article-table-wrap')) return false;
+          var t = (el.textContent || '').replace(/\s+/g, ' ').trim();
+          if (t.length < 12 || t.length > 1000) return false;
+          return /(?:19|20)\d\d\s*;\s*[a-z]?\d/i.test(t);
+        };
+        var tailSkipped = 0;
+        while (n) {
+          if (looksLikeRef(n)) {
+            items.push(n); tailSkipped = 0;
+            n = n.nextElementSibling;
+          } else if (tailSkipped < 2 && (
+            (n.tagName === 'P' && !(n.textContent || '').trim()) ||
+            n.tagName === 'BR' || n.tagName.toLowerCase() === 'o:p'
+          )) {
+            tailSkipped += 1;
+            n = n.nextElementSibling;
+          } else { break; }
+        }
         if (items.length < 2) return false; // not a list
         const ol = document.createElement('ol');
         ol.className = 'article-references-ol';
@@ -5272,38 +5380,66 @@
       // promotion, articles imported from Word (especially AIPs) show no
       // "In This Article" sidebar at all because buildTOC() looks for h2/h3
       // and bullets headings sit invisibly in a paragraph.
+      function headingFontPt(p) {
+        var max = null;
+        var check = function (el) {
+          if (!el || !el.getAttribute) return;
+          var m = (el.getAttribute('style') || '').match(/font-size\s*:\s*([\d.]+)\s*(pt|px)/i);
+          if (!m) return;
+          var v = parseFloat(m[1]);
+          if (m[2].toLowerCase() === 'px') v *= 0.75;
+          if (max == null || v > max) max = v;
+        };
+        check(p); check(p.firstElementChild);
+        Array.prototype.forEach.call(p.querySelectorAll('[style]'), check);
+        return max;
+      }
       function promoteMsoHeadings(bodyNode) {
         if (!bodyNode || !bodyNode.querySelectorAll) return;
-        var pars = bodyNode.querySelectorAll('p');
-        Array.prototype.forEach.call(pars, function (p) {
+        // Pass 1: collect heading-like paragraphs.
+        var cands = [];
+        Array.prototype.forEach.call(bodyNode.querySelectorAll('p'), function (p) {
           if (p.closest('.article-references, .article-acknowledgments, .article-footnotes, .article-supplementary, figure, .article-figure, .article-table-wrap, table')) return;
-
-          // Top-level child must be the bold wrapper for the entire paragraph
           var first = p.firstElementChild;
           if (!first || (first.tagName !== 'B' && first.tagName !== 'STRONG')) return;
-
-          // Visible text content must be reasonable length for a heading
           var text = (p.textContent || '').replace(/\s+/g, ' ').trim();
           if (!text || text.length > 100) return;
-
-          // The bold element's text should account for the whole paragraph
-          // (otherwise the bold is just emphasis on a phrase, not a heading)
           var boldText = (first.textContent || '').replace(/\s+/g, ' ').trim();
           if (boldText !== text) return;
-
-          // Heading-like content: mostly uppercase OR Title Case starting with letter
           var isUpper = text === text.toUpperCase() && /[A-ZÇĞİŞÜÖ]/.test(text);
           var isTitleCase = /^[A-ZÇĞİŞÜÖ]/.test(text) && text.length < 50;
           if (!isUpper && !isTitleCase) return;
-
-          // References has its own handling — leave the heading alone so the
-          // normalizer's _findRefHeading can still detect it via the regex.
           if (/^(references?|bibliography|kaynaklar|kaynakça|referanslar|kaynak\s*listesi)$/i.test(text)) return;
-
-          // Promote: build an <h3> with Title Case text.
-          var h3 = document.createElement('h3');
-          h3.textContent = toTitleCase(text);
-          p.parentNode.replaceChild(h3, p);
+          if (/^\s*(?:tables?|tablolar?|tablo|tab|figures?|figs?|şekiller?|şekil|sekil|fig)\b\s*\.?\s*\d+/i.test(text)) return;
+          cands.push({ p: p, text: text, isUpper: isUpper, sizePt: headingFontPt(p) });
+        });
+        if (!cands.length) return;
+        // Pass 2: assign H3 (main) → H4 → H5 → H6 by depth. .article-body styles
+        // h3–h6 (progressively smaller); h1/h2 are NOT styled, so never emit them.
+        // Distinct font sizes are ranked biggest→smallest and mapped to H3..H6 so
+        // 3rd/4th heading levels are honored; else UPPERCASE/Title-Case split;
+        // else legacy all-H3 for a uniform flat set.
+        var sizes = cands.map(function (c) { return c.sizePt; }).filter(function (v) { return v != null; });
+        var distinctDesc = sizes.filter(function (v, i) { return sizes.indexOf(v) === i; }).sort(function (a, b) { return b - a; });
+        var hasSizeSignal = distinctDesc.length >= 2;
+        var upperCount = cands.filter(function (c) { return c.isUpper; }).length;
+        var capsSplit = upperCount > 0 && upperCount < cands.length;
+        var tierOf = function (sz) {
+          if (sz == null) return null;
+          var idx = -1;
+          for (var k = 0; k < distinctDesc.length; k++) { if (Math.abs(distinctDesc[k] - sz) <= 0.5) { idx = k; break; } }
+          if (idx < 0) idx = distinctDesc.length - 1;
+          return Math.min(3 + idx, 6);
+        };
+        var levelFor = function (c) {
+          if (hasSizeSignal) { return (c.sizePt != null) ? tierOf(c.sizePt) : (c.isUpper ? 3 : 4); }
+          if (capsSplit) return c.isUpper ? 3 : 4;
+          return 3;
+        };
+        cands.forEach(function (c) {
+          var h = document.createElement('h' + levelFor(c));
+          h.textContent = toTitleCase(c.text);
+          c.p.parentNode.replaceChild(h, c.p);
         });
       }
       try { window.promoteMsoHeadings = promoteMsoHeadings; } catch (_) {}
@@ -5331,8 +5467,68 @@
           html = html.replace(/^(?:\s|&nbsp;)*\d+\.(?:\s|&nbsp;)*/, '');
           if (html !== before) li.innerHTML = html;
         });
+        // Unify the list font: drop inline font-family/size/line-height (the
+        // `font` shorthand + mso-*) from each item and its descendants so
+        // Word-pasted refs and hand-typed refs render in one fixed list font.
+        // font-weight / font-style / color are kept (journal-name emphasis).
+        var FONT_ID = /^(font|font-size|font-family|line-height|mso-[\w-]*)$/;
+        var stripRefFont = function (el) {
+          if (!el || !el.getAttribute) return;
+          var s = el.getAttribute('style');
+          if (!s) return;
+          var kept = s.split(';').map(function (d) { return d.trim(); }).filter(function (d) {
+            if (!d) return false;
+            return !FONT_ID.test(d.split(':')[0].trim().toLowerCase());
+          });
+          if (kept.length) el.setAttribute('style', kept.join('; '));
+          else el.removeAttribute('style');
+        };
+        Array.prototype.forEach.call(ol.querySelectorAll(':scope > li'), function (li) {
+          stripRefFont(li);
+          Array.prototype.forEach.call(li.querySelectorAll('[style]'), stripRefFont);
+          Array.prototype.forEach.call(li.querySelectorAll('span, font'), function (sp) {
+            if (!sp.attributes.length) {
+              while (sp.firstChild) sp.parentNode.insertBefore(sp.firstChild, sp);
+              sp.remove();
+            }
+          });
+        });
       }
       try { window.cleanupReferenceListItems = cleanupReferenceListItems; } catch (_) {}
+
+      // Guarantee a single consistent TYPEFACE across the whole article body in
+      // all cases: strip inline font-family (+ the `font` shorthand, line-height
+      // and mso-* leftovers) from every element so Word/Office paste fonts
+      // (Calibri, Cambria, Times New Roman…) can never override the site face
+      // defined in CSS (.article-body = Crimson Pro; captions/tables/refs = Inter
+      // via their own selectors). font-SIZE, weight, style and color are KEPT —
+      // we normalize the face, not the emphasis or sizing. Run AFTER heading
+      // promotion (which reads inline font-size to detect headings). Idempotent.
+      function unifyBodyFont(bodyNode) {
+        if (!bodyNode || !bodyNode.querySelectorAll) return;
+        var FACE = /^(font|font-family|line-height|mso-[\w-]*)$/;
+        var strip = function (el) {
+          if (!el || !el.getAttribute) return;
+          var s = el.getAttribute('style');
+          if (!s) return;
+          var kept = s.split(';').map(function (d) { return d.trim(); }).filter(function (d) {
+            if (!d) return false;
+            return !FACE.test(d.split(':')[0].trim().toLowerCase());
+          });
+          if (kept.length) el.setAttribute('style', kept.join('; '));
+          else el.removeAttribute('style');
+        };
+        strip(bodyNode);
+        Array.prototype.forEach.call(bodyNode.querySelectorAll('[style]'), strip);
+        // Drop now-attribute-less <span>/<font> wrappers so they don't linger.
+        Array.prototype.forEach.call(bodyNode.querySelectorAll('span, font'), function (sp) {
+          if (!sp.attributes.length) {
+            while (sp.firstChild) sp.parentNode.insertBefore(sp.firstChild, sp);
+            sp.remove();
+          }
+        });
+      }
+      try { window.unifyBodyFont = unifyBodyFont; } catch (_) {}
 
       // Mark anchors whose target doesn't exist on the rendered page. The
       // enhancer chain populates IDs first, so by the time we run this all
@@ -5340,7 +5536,7 @@
       // dead-link the editorial team should fix.
       function flagBrokenCrossRefs(bodyNode) {
         if (!bodyNode || !bodyNode.querySelectorAll) return;
-        var sels = ['a[href^="#figure-"]', 'a[href^="#fig-"]', 'a[href^="#table-"]', 'a[href^="#tab-"]', 'a[href^="#ref-"]'];
+        var sels = ['a[href^="#figure-"]', 'a[href^="#fig-"]', 'a[href^="#table-"]', 'a[href^="#tab-"]', 'a[href^="#ref-"]', 'a[href^="#supp"]'];
         Array.prototype.forEach.call(bodyNode.querySelectorAll(sels.join(',')), function (a) {
           var href = (a.getAttribute('href') || '').replace(/^#/, '');
           if (!href) return;
@@ -6300,6 +6496,21 @@
       // Expose for tests + future extension points. Harmless in production.
       try { window.relocateFiguresAndTables = relocateFiguresAndTables; } catch (_) {}
 
+      // Remove empty Word-export spacer paragraphs (<p><br></p>, <p>&nbsp;</p>,
+      // <p><span><br></span></p>, <o:p>) anywhere in the body. Word piles these
+      // up and they render as large blank gaps (e.g. around the Supplementary
+      // Materials section). Paragraphs carrying any real text, media, link, or
+      // anchor target are kept.
+      function collapseEmptyParagraphs(bodyNode) {
+        if (!bodyNode || !bodyNode.querySelectorAll) return;
+        Array.prototype.forEach.call(bodyNode.querySelectorAll('p'), function (p) {
+          if (p.querySelector('[id], a[name], img, picture, svg, video, iframe, table')) return;
+          var txt = (p.textContent || '').replace(/ /g, ' ').trim();
+          if (!txt) p.remove();
+        });
+      }
+      try { window.collapseEmptyParagraphs = collapseEmptyParagraphs; } catch (_) {}
+
       // Figure caption normalisation — make every figure's caption read the
       // way the editorial team expects it: drop the redundant top-left
       // "Figure 1" label that JATS emits as a <figcaption>, and prepend
@@ -6353,15 +6564,33 @@
         bodyNode.setAttribute('data-fig-captions-normalized', 'true');
       }
 
-      function enhanceSupplementaryCitations(bodyNode) {
+      function enhanceSupplementaryCitations(bodyNode, suppMap) {
         if (!bodyNode || !bodyNode.querySelectorAll) return;
+        suppMap = suppMap || {};
         var links = bodyNode.querySelectorAll('a[href]');
         Array.prototype.forEach.call(links, function (a) {
           if (a.classList.contains('article-media-ref-link')) return;
+          var href = a.getAttribute('href') || '';
+          // In-text supplementary cross-reference (#supp1 …): resolve the stable
+          // id to the actual file URL so the link OPENS the file in a new tab
+          // (supplementary materials are downloadable files, not in-page targets).
+          // The #suppN indirection means the link keeps working even if the file
+          // URL later changes in the metadata.
+          if (/^#supp/i.test(href)) {
+            a.classList.add('article-supp-ref-link');
+            var url = suppMap[href.slice(1)];
+            if (url) {
+              a.setAttribute('href', url);
+              a.setAttribute('target', '_blank');
+              a.setAttribute('rel', 'noopener');
+              a.classList.remove('article-ref-broken');
+              a.removeAttribute('data-broken-ref');
+            }
+            return;
+          }
           if (a.classList.contains('article-supp-ref-link')) return;
           var text = (a.textContent || '').replace(/\s+/g, ' ').trim();
           if (!/\bsuppl/i.test(text)) return;
-          var href = a.getAttribute('href') || '';
           if (!href || href.charAt(0) === '#' || /^javascript:/i.test(href)) return;
           a.setAttribute('target', '_blank');
           a.setAttribute('rel', 'noopener');
@@ -6554,7 +6783,23 @@
             normalizeFigureCaptions(articleBodyNode);
             enhanceFigureTableLinks(articleBodyNode);
             relocateFiguresAndTables(articleBodyNode);
-            enhanceSupplementaryCitations(articleBodyNode);
+            collapseEmptyParagraphs(articleBodyNode);
+            // Map stable supp ids → file URLs so in-text #suppN links open the file.
+            var suppMap = {};
+            (article.supplementary || []).forEach(function (s) { if (s && s.id) suppMap[String(s.id)] = s.href || ''; });
+            enhanceSupplementaryCitations(articleBodyNode, suppMap);
+            // If the source body ALREADY contains its own "Supplementary
+            // Materials" section, drop the auto-generated panel duplicate so the
+            // reader sees only one (and the TOC isn't doubled). The in-text links
+            // were just rewritten to open the files, so no anchor target is lost.
+            var bodyHasSupp = Array.prototype.some.call(
+              articleBodyNode.querySelectorAll('h1,h2,h3,h4'),
+              function (h) { return /supplement/i.test(h.textContent || ''); }
+            );
+            if (bodyHasSupp) {
+              var autoSuppPanel = document.getElementById('supplementary-materials');
+              if (autoSuppPanel) autoSuppPanel.remove();
+            }
             initFullTextMediaInteractions(articleBodyNode);
             // After everything else has wired up IDs and cross-references,
             // surface any anchors whose target still doesn't exist (silent
@@ -6564,6 +6809,9 @@
             // buildTOC() can populate the "In This Article" sidebar for AIPs
             // and other articles whose source HTML never had real headings.
             promoteMsoHeadings(articleBodyNode);
+            // Final pass: force one consistent typeface across the whole body
+            // (strip any inline Word font-family that slipped through above).
+            unifyBodyFont(articleBodyNode);
             buildTOC();
           }).catch(function () {
             var container = document.getElementById('fulltext-content');
@@ -6624,16 +6872,18 @@
         // Prefer explicit section anchors if the source has them.
         var sections = Array.prototype.slice.call(body.querySelectorAll('section[id]'));
         sections.forEach(function (sec) {
-          var heading = sec.querySelector('h2, h3, h4');
+          var heading = sec.querySelector('h2, h3, h4, h5, h6');
           var label = heading ? normalizeLabel(heading.textContent) : '';
           if (!label) return;
           usedIds[sec.id] = true;
-          targets.push({ id: sec.id, label: label, node: sec });
+          // Clamp to ≥3: this site treats H2 as a main heading (= H3), so a mixed
+          // H2/H3 source still produces a consistent TOC hierarchy.
+          targets.push({ id: sec.id, label: label, node: sec, level: heading ? Math.max(Number(heading.tagName.slice(1)), 3) : 3 });
         });
 
         // Fallback: build TOC from headings directly (common in mirrored source HTML).
         if (targets.length === 0) {
-          var headings = Array.prototype.slice.call(body.querySelectorAll('h2, h3'));
+          var headings = Array.prototype.slice.call(body.querySelectorAll('h2, h3, h4, h5, h6'));
           headings.forEach(function (heading, idx) {
             var label = normalizeLabel(heading.textContent);
             if (!label) return;
@@ -6663,8 +6913,17 @@
               heading.id = id;
             }
             usedIds[id] = true;
-            targets.push({ id: id, label: label, node: heading });
+            targets.push({ id: id, label: label, node: heading, level: Math.max(Number(heading.tagName.slice(1)), 3) });
           });
+        }
+
+        // The auto-generated Supplementary Materials panel is rendered OUTSIDE
+        // .article-body, so add it explicitly. Match the panel <section> only —
+        // NOT a body heading that buildTOC may have slugified to the same id
+        // (which would double the entry) — and skip if already listed.
+        var suppSec = document.querySelector('section#supplementary-materials');
+        if (suppSec && targets.length && !usedIds['supplementary-materials']) {
+          targets.push({ id: 'supplementary-materials', label: 'Supplementary Materials', node: suppSec, level: null });
         }
 
         if (targets.length === 0) {
@@ -6672,19 +6931,101 @@
           return false;
         }
 
+        // Reflect heading hierarchy in the TOC: indent + shrink each entry by its
+        // depth RELATIVE to the shallowest heading present (so an article that
+        // uses H2/H3 indents the same way as one that uses H3/H4).
+        var lvlList = targets.map(function (t) { return t.level; }).filter(function (l) { return typeof l === 'number' && l >= 2; });
+        var minLevel = lvlList.length ? Math.min.apply(null, lvlList) : 2;
         var tocLinks = [];
-        targets.forEach(function (item) {
+
+        // Build a single TOC link <a>, indented + shrunk by its relative depth.
+        function makeTocLink(item, depth) {
           var link = document.createElement('a');
           link.href = '#' + item.id;
           link.textContent = item.label;
+          link.setAttribute('data-toc-depth', String(depth));
+          if (depth > 0) {
+            link.style.paddingLeft = (0.7 + depth * 0.85) + 'rem';
+            link.style.fontSize = Math.max(0.82, 1 - depth * 0.08).toFixed(3) + 'em';
+            link.style.opacity = String(Math.max(0.72, 1 - depth * 0.1));
+          } else {
+            link.style.fontWeight = '600';
+          }
           link.addEventListener('click', function (e) {
             e.preventDefault();
             scrollToArticleTarget(item.node);
             tocLinks.forEach(function (l) { l.classList.remove('active'); });
             link.classList.add('active');
           });
-          tocNav.appendChild(link);
+          return link;
+        }
+
+        // Group sub-entries under their main (depth-0) heading so each section
+        // can be collapsed — keeps a long TOC short and prevents it overflowing.
+        var groups = [];
+        var current = null;
+        targets.forEach(function (item) {
+          var depth = (item.level == null) ? 0 : Math.max(0, item.level - minLevel);
+          var link = makeTocLink(item, depth);
           tocLinks.push(link);
+          if (depth === 0 || !current) {
+            var group = document.createElement('div');
+            group.className = 'toc-group';
+            var row = document.createElement('div');
+            row.className = 'toc-row';
+            row.appendChild(link);
+            group.appendChild(row);
+            var kids = document.createElement('div');
+            kids.className = 'toc-children';
+            group.appendChild(kids);
+            group._row = row;
+            group._kids = kids;
+            tocNav.appendChild(group);
+            groups.push(group);
+            current = group;
+          } else {
+            var crow = document.createElement('div');
+            crow.className = 'toc-row';
+            crow.appendChild(link);
+            current._kids.appendChild(crow);
+          }
+        });
+
+        // Give every section that actually has sub-entries a collapse caret.
+        var setExpanded = function (group, expanded) {
+          var caret = group.querySelector('.toc-caret');
+          var kids = group._kids;
+          if (expanded) {
+            group.classList.remove('collapsed');
+            if (caret) caret.setAttribute('aria-expanded', 'true');
+            kids.style.maxHeight = kids.scrollHeight + 'px';
+            var done = function () { kids.style.maxHeight = ''; kids.removeEventListener('transitionend', done); };
+            kids.addEventListener('transitionend', done);
+          } else {
+            kids.style.maxHeight = kids.scrollHeight + 'px';
+            void kids.offsetHeight; // reflow so the collapse animates from full height
+            group.classList.add('collapsed');
+            if (caret) caret.setAttribute('aria-expanded', 'false');
+          }
+        };
+        groups.forEach(function (group) {
+          if (!group._kids.children.length) return;
+          var caret = document.createElement('button');
+          caret.type = 'button';
+          caret.className = 'toc-caret';
+          caret.setAttribute('aria-label', 'Bölümü aç / kapat');
+          caret.innerHTML = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 7.5L10 12l4.5-4.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+          caret.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            setExpanded(group, group.classList.contains('collapsed'));
+          });
+          group._row.appendChild(caret);
+          // Start collapsed by default — only main sections show; the reader
+          // expands a section on demand (and the active one auto-opens via the
+          // scroll-spy below). The CSS .collapsed rule drives max-height:0.
+          group.classList.add('collapsed');
+          caret.setAttribute('aria-expanded', 'false');
         });
 
         // Scroll spy for TOC
@@ -6696,6 +7037,10 @@
                 tocLinks.forEach(function (l) {
                   l.classList.toggle('active', l.getAttribute('href') === '#' + activeId);
                 });
+                // Reveal the active entry if the reader collapsed its section.
+                var act = tocNav.querySelector('a.active');
+                var grp = act && act.closest ? act.closest('.toc-group') : null;
+                if (grp && grp.classList.contains('collapsed')) setExpanded(grp, true);
               }
             });
           }, { rootMargin: '-80px 0px -60% 0px', threshold: 0 });

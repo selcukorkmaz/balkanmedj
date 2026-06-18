@@ -103,10 +103,13 @@
     if (raw.indexOf('//') === 0) return 'https:' + raw;
     raw = raw.replace(/^['"]|['"]$/g, '').replace(/^\/+/, '');
     if (!raw) return '';
-    // Keep relative so it resolves against the current page origin — works both
-    // locally (admin preview at /site/...) and on the live site. The old
-    // implementation forcibly prefixed https://balkanmedicaljournal.org/ which
-    // broke local previews.
+    // Legacy publisher assets — the Image Corner figures of older "Clinical Image"
+    // articles live ONLY on the production domain under uploads/ (they were never
+    // copied into this repo). A relative URL therefore 404s in local / admin
+    // (/site/...) previews. Pin those to the canonical origin so they resolve
+    // everywhere. Repo-local paths (images/..., js/data/...) stay relative so they
+    // keep working in local previews too.
+    if (/^uploads\//i.test(raw)) return 'https://balkanmedicaljournal.org/' + raw;
     return raw;
   }
 
@@ -310,6 +313,15 @@
       if (bCitations !== aCitations) return bCitations - aCitations;
       return articlePublishedTimestamp(b) - articlePublishedTimestamp(a);
     });
+
+    // Admin curation override (HOMEPAGE_DATA.sections['image-corner'] = [ids]).
+    var override = data && data.sections && data.sections['image-corner'];
+    if (Array.isArray(override) && override.length) {
+      var map = {};
+      window.ARTICLES.forEach(function (a) { if (a && a.id != null) map[String(a.id)] = a; });
+      var resolved = override.map(function (id) { return map[String(id)]; }).filter(Boolean);
+      if (resolved.length) return resolved.slice(0, 6);
+    }
 
     return pool.slice(0, 2);
   }
@@ -615,7 +627,7 @@
       return compareByPublishedDesc(a, b);
     });
 
-    return {
+    var collections = {
       'latest-published': latestPublishedPool.slice(0, 6),
       'articles-in-press': articlesInPress.slice().sort(function (a, b) {
         var aOrder = numericValue(a && a.order);
@@ -627,6 +639,32 @@
       'most-downloaded': mostDownloadedRecentPool.slice().sort(compareByDownloadsDesc).slice(0, 6),
       'most-downloaded-candidates': mostDownloadedRecentPool.slice()
     };
+
+    // Admin curation override: HOMEPAGE_DATA.sections[key] is an ordered array of
+    // article IDs. When present (and non-empty), it REPLACES the auto-computed
+    // list for that section — so editors get full manual control from the admin
+    // panel. Absent/empty → keep the automatic computation above. Article-section
+    // IDs resolve against ALL articles; the in-press section against the AIP list.
+    var overrides = data && data.sections;
+    if (overrides && typeof overrides === 'object') {
+      var resolveIds = function (ids, pool) {
+        var map = {};
+        pool.forEach(function (a) { if (a && a.id != null) map[String(a.id)] = a; });
+        return (ids || []).map(function (id) { return map[String(id)]; }).filter(Boolean);
+      };
+      var applyOverride = function (key, pool) {
+        var ids = overrides[key];
+        if (!Array.isArray(ids) || !ids.length) return;
+        var resolved = resolveIds(ids, pool);
+        if (resolved.length) collections[key] = resolved.slice(0, 6);
+      };
+      applyOverride('latest-published', articles);
+      applyOverride('articles-in-press', articlesInPress);
+      applyOverride('top-cited', articles);
+      applyOverride('most-downloaded', articles);
+    }
+
+    return collections;
   }
 
   function parseMetricCount(rawValue) {
@@ -1109,18 +1147,28 @@
       return;
     }
 
-    var latest = window.NEWS.slice().sort(function (a, b) {
-      var da = new Date(a.date || '').getTime();
-      var db = new Date(b.date || '').getTime();
-      var aHasDate = !isNaN(da);
-      var bHasDate = !isNaN(db);
-      // Items with valid dates come first, in descending date order
-      if (aHasDate && bHasDate && da !== db) return db - da;
-      if (aHasDate && !bHasDate) return -1;
-      if (!aHasDate && bHasDate) return 1;
-      // Tie-breaker (same date or both missing): higher id = newer
-      return (Number(b.id) || 0) - (Number(a.id) || 0);
-    }).slice(0, 3);
+    var latest;
+    var newsOverride = window.HOMEPAGE_DATA && window.HOMEPAGE_DATA.sections && window.HOMEPAGE_DATA.sections['latest-news'];
+    if (Array.isArray(newsOverride) && newsOverride.length) {
+      // Admin curation: show exactly these news items, in this order.
+      var newsMap = {};
+      window.NEWS.forEach(function (n) { if (n && n.id != null) newsMap[String(n.id)] = n; });
+      latest = newsOverride.map(function (id) { return newsMap[String(id)]; }).filter(Boolean).slice(0, 3);
+    }
+    if (!latest || !latest.length) {
+      latest = window.NEWS.slice().sort(function (a, b) {
+        var da = new Date(a.date || '').getTime();
+        var db = new Date(b.date || '').getTime();
+        var aHasDate = !isNaN(da);
+        var bHasDate = !isNaN(db);
+        // Items with valid dates come first, in descending date order
+        if (aHasDate && bHasDate && da !== db) return db - da;
+        if (aHasDate && !bHasDate) return -1;
+        if (!aHasDate && bHasDate) return 1;
+        // Tie-breaker (same date or both missing): higher id = newer
+        return (Number(b.id) || 0) - (Number(a.id) || 0);
+      }).slice(0, 3);
+    }
 
     container.innerHTML = latest.map(function (item) {
       var category = escapeHtml(stripTags(item.category || 'News'));
@@ -1222,10 +1270,14 @@
     var intervalMs = parseInt(root.getAttribute('data-interval'), 10);
     if (!(intervalMs >= 2000 && intervalMs <= 30000)) intervalMs = 6000;
 
+    // Autoplay follows the data-autoplay attribute only. We intentionally do NOT
+    // disable it under prefers-reduced-motion: the slide change is a gentle
+    // opacity cross-fade (no movement/parallax, which is what that setting
+    // targets), and the carousel is already pausable on hover/focus and fully
+    // navigable via the arrows/indicators — so it stays WCAG-friendly while still
+    // cycling for every visitor. (Previously reduced-motion froze it on slide 1,
+    // which read as "only the first banner shows" on systems with animations off.)
     var autoplayEnabled = root.getAttribute('data-autoplay') !== 'false';
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      autoplayEnabled = false;
-    }
 
     var activeIndex = slides.findIndex(function (slide) {
       return slide.classList.contains('is-active');

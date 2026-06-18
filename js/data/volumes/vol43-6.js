@@ -644,8 +644,8 @@ window.PAGE_ARTICLES = [
     "views": 0,
     "downloads": 0,
     "citations": 0,
-    "featured": false,
-    "imageCorner": false,
+    "featured": true,
+    "imageCorner": true,
     "hasFullText": true,
     "sourceIssueId": "",
     "sourceArticleId": "",
@@ -667,7 +667,7 @@ window.PAGE_ARTICLES = [
       "licenseText": "Content of this journal is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License."
     },
     "relatedArticles": [],
-    "imageUrl": "",
+    "imageUrl": "images/330-342-f3.png",
     "externalLinks": []
   }
 ];

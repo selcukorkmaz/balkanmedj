@@ -1,16 +1,58 @@
 /**
  * Balkan Medical Journal — Homepage Data
- * Last updated: 2026-05-20
+ * Last updated: 2026-06-18
  */
 window.HOMEPAGE_DATA = {
-  "generatedAt": "2026-05-20",
+  "generatedAt": "2026-06-11",
   "currentIssue": {
     "volume": 43,
     "issue": "6",
     "year": "2026"
   },
-  "featuredArticles": [],
-  "imageCornerArticles": [],
+  "featuredArticles": [
+    {
+      "id": 2861,
+      "type": "Editorial",
+      "title": "The Strong Get Stronger: The Matthew Effect in Academic Publishing",
+      "authors": [
+        {
+          "name": "Selçuk Korkmaz"
+        },
+        {
+          "name": "Servet Altay"
+        }
+      ],
+      "doi": "10.4274/balkanmedj.galenos.2026.2026.150426",
+      "volume": 43,
+      "issue": "6",
+      "pages": "294-296",
+      "published": "2026-06-01",
+      "previewText": "",
+      "imageUrl": "images/330-342-f3.png"
+    }
+  ],
+  "imageCornerArticles": [
+    {
+      "id": 2861,
+      "type": "Editorial",
+      "title": "The Strong Get Stronger: The Matthew Effect in Academic Publishing",
+      "authors": [
+        {
+          "name": "Selçuk Korkmaz"
+        },
+        {
+          "name": "Servet Altay"
+        }
+      ],
+      "doi": "10.4274/balkanmedj.galenos.2026.2026.150426",
+      "volume": 43,
+      "issue": "6",
+      "pages": "294-296",
+      "published": "2026-06-01",
+      "previewText": "",
+      "imageUrl": "images/330-342-f3.png"
+    }
+  ],
   "mostCitedArticles": [
     {
       "id": 2811,
@@ -417,7 +459,8 @@ window.HOMEPAGE_DATA = {
       "pages": "294-296",
       "published": "2026-06-01",
       "previewText": "",
-      "imageUrl": ""
+      "imageUrl": "images/330-342-f3.png"
     }
-  ]
+  ],
+  "sections": {}
 };

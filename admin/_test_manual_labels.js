@@ -502,6 +502,423 @@ function ok(name, cond, detail) {
     } catch (e2) {
       ok('public ORCID meta testi (sayfa yüklenemedi — atlandı)', false, e2.message);
     }
+
+    // ── 23) Curated (uploaded) deny-listed file still resolves as a figure ──
+    const dl = await page.evaluate(() => {
+      const r1 = _resolveMediaSequence([
+        { filename: '19-25-f1.png', order: 0, caption: '', url: 'images/articles/2869/19-25-f1.png' },
+        { filename: 'cover.jpg', order: 1, caption: 'cover', url: 'images/articles/2869/cover.jpg' },
+      ]);
+      const r2 = _resolveMediaSequence([
+        { filename: 'cover.jpg', order: null, caption: '', url: 'x/cover.jpg' }, // stray, never uploaded
+      ]);
+      return {
+        figCount: r1.figure.length,
+        files: r1.figure.map((b) => b.panels[0].filename),
+        nums: r1.figure.map((b) => b.num),
+        strayDropped: r2.figure.length === 0,
+      };
+    });
+    ok('yüklenmiş (order\'lı) cover.jpg figür olarak dahil', dl.figCount === 2 && dl.files.indexOf('cover.jpg') >= 0, JSON.stringify(dl));
+    ok('iki figür de numara alır (1 ve 2)', dl.nums.indexOf(1) >= 0 && dl.nums.indexOf(2) >= 0, JSON.stringify(dl.nums));
+    ok('order\'sız stray cover hâlâ atılır', dl.strayDropped);
+
+    // ── 24) formatBlock heading strips Word inline font styling so the level applies ──
+    const hf = await page.evaluate(() => {
+      const v = document.getElementById('ft-visual');
+      v.innerHTML = '<p id="hp" style="font-size:16pt;font-weight:bold;text-align:center"><b><span style="font-size:16pt;font-family:Calibri;color:#1f3864">Methods</span></b></p>';
+      const p = document.getElementById('hp');
+      const r = document.createRange(); r.selectNodeContents(p);
+      const s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      htmlEditorCmd('ft', 'formatBlock', '<h3>');
+      const h = v.querySelector('h3');
+      return {
+        isH: !!h,
+        blockFont: h ? /font-size|font-family|color|font-weight/i.test(h.getAttribute('style') || '') : null,
+        keptAlign: h ? /text-align/i.test(h.getAttribute('style') || '') : null,
+        descFont: h ? Array.from(h.querySelectorAll('[style]')).some((e) => /font-size|font-family|color/i.test(e.getAttribute('style') || '')) : null,
+        text: h ? h.textContent.trim() : null,
+      };
+    });
+    ok('formatBlock H3 uygulanır', hf.isH);
+    ok('H3 blokta çakışan inline font stili kalmaz', hf.blockFont === false, JSON.stringify(hf));
+    ok('H3 font-olmayan stil (text-align) korunur', hf.keptAlign === true);
+    ok('H3 içi span font stilleri temizlenir', hf.descFont === false);
+    ok('başlık metni korunur', hf.text === 'Methods');
+
+    // ── 25) Paste-time heading level detection (H3 main / H4 sub) ──
+    const ph = await page.evaluate(() => {
+      const v = document.getElementById('ft-visual');
+      // (a) font-size signal: 16pt → H3 (main), 13pt → H4 (sub)
+      v.innerHTML =
+        '<p><b><span style="font-size:16pt">Introduction</span></b></p>' +
+        '<p>body</p>' +
+        '<p><b><span style="font-size:13pt">Statistical Analysis</span></b></p>';
+      _promoteMsoHeadings(v);
+      const a = Array.from(v.querySelectorAll('h3,h4')).map((h) => h.tagName + ':' + h.textContent);
+      // (b) caps split, no size: ALLCAPS → H3, Title Case → H4
+      v.innerHTML = '<p><b>MATERIALS AND METHODS</b></p><p>x</p><p><b>Patient selection</b></p>';
+      _promoteMsoHeadings(v);
+      const b = Array.from(v.querySelectorAll('h3,h4')).map((h) => h.tagName + ':' + h.textContent);
+      // (c) uniform, no signal → legacy all-H3 (no regression)
+      v.innerHTML = '<p><b>RESULTS</b></p><p>x</p><p><b>DISCUSSION</b></p>';
+      _promoteMsoHeadings(v);
+      const c = Array.from(v.querySelectorAll('h3,h4')).map((h) => h.tagName);
+      // (d) THREE distinct sizes → H3 / H4 / H5 (3rd level honored)
+      v.innerHTML =
+        '<p><b><span style="font-size:16pt">Methods</span></b></p>' +
+        '<p><b><span style="font-size:13pt">Study Design</span></b></p>' +
+        '<p><b><span style="font-size:11pt">Statistics</span></b></p>';
+      _promoteMsoHeadings(v);
+      const d = Array.from(v.querySelectorAll('h3,h4,h5,h6')).map((h) => h.tagName);
+      // (e) never emits an unstyled h2
+      const noH2 = v.querySelectorAll('h2').length === 0;
+      return { a, b, c, d, noH2 };
+    });
+    ok('boyut sinyali: 16pt→H3, 13pt→H4', JSON.stringify(ph.a) === JSON.stringify(['H3:Introduction', 'H4:Statistical Analysis']), JSON.stringify(ph.a));
+    ok('caps split: ALLCAPS→H3, TitleCase→H4', ph.b[0] === 'H3:Materials and Methods' && ph.b[1] === 'H4:Patient Selection', JSON.stringify(ph.b));
+    ok('tekdüze sinyalsiz → hepsi H3 (legacy korunur)', ph.c.join(',') === 'H3,H3', JSON.stringify(ph.c));
+    ok('üç boyut → H3/H4/H5 (3. seviye onurlanır)', JSON.stringify(ph.d) === JSON.stringify(['H3', 'H4', 'H5']), JSON.stringify(ph.d));
+    ok('asla stilsiz H2 üretilmez', ph.noH2 === true);
+
+    // ── 26) Rich paste immediately promotes headings (_afterRichPaste) ──
+    const arp = await page.evaluate(() => {
+      const v = document.getElementById('ft-visual');
+      v.innerHTML =
+        '<p><b><span style="font-size:15pt">Discussion</span></b></p>' +
+        '<p>metin</p><p><b><span style="font-size:12pt">Limitations</span></b></p>';
+      _afterRichPaste(v); // simulates the post-paste hook
+      return Array.from(v.querySelectorAll('h3,h4')).map((h) => h.tagName + ':' + h.textContent);
+    });
+    ok('paste sonrası başlıklar anında promote olur (H3/H4)', JSON.stringify(arp) === JSON.stringify(['H3:Discussion', 'H4:Limitations']), JSON.stringify(arp));
+
+    // ── 27) Supplementary cross-references (scan + insert) ──
+    const supp = await page.evaluate(() => {
+      let host = document.getElementById('supp-test'); if (host) host.remove();
+      host = document.createElement('div'); host.id = 'supp-test'; document.body.appendChild(host);
+      host.innerHTML =
+        '<div class="supp-link-row" data-supp-id=""><input class="sl-label" value="Table S1"><input class="sl-href" value="img/files/s1.pdf"><input class="sl-caption" value=""></div>' +
+        '<div class="supp-link-row" data-supp-id="supp5"><input class="sl-label" value="Video S2"><input class="sl-href" value="img/files/s2.mp4"><input class="sl-caption" value=""></div>';
+      const v = document.getElementById('ft-visual');
+      v.innerHTML = '<p id="pp">yer </p>';
+      const t = _scanCrossRefTargets('ft');
+      const firstId = host.querySelector('.supp-link-row').getAttribute('data-supp-id');
+      const pp = document.getElementById('pp');
+      const r = document.createRange(); r.selectNodeContents(pp); r.collapse(false);
+      const s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      _crossRefSelection['ft'] = { range: r.cloneRange(), text: '' };
+      insertCrossRef('ft', 'supp', t.supp[0].id);
+      const a = v.querySelector('a.article-supp-ref-link');
+      const res = {
+        count: t.supp.length, ids: t.supp.map((x) => x.id), labels: t.supp.map((x) => x.label),
+        firstId, aHref: a ? a.getAttribute('href') : null, aText: a ? a.textContent : null,
+        aClass: a ? a.className : null, broken: a ? a.classList.contains('article-ref-broken') : null,
+      };
+      host.remove();
+      return res;
+    });
+    ok('scan supp hedefleri döndürür', supp.count === 2 && supp.labels.join(',') === 'Table S1,Video S2', JSON.stringify(supp));
+    ok('id-siz satıra supp1 atanır + yazılır', supp.firstId === 'supp1' && supp.ids[0] === 'supp1', JSON.stringify(supp.ids) + ' first=' + supp.firstId);
+    ok('mevcut id korunur (supp5)', supp.ids[1] === 'supp5', JSON.stringify(supp.ids));
+    ok('insertCrossRef supp → #supp1', supp.aHref === '#supp1' && supp.aText === 'Table S1', JSON.stringify({ h: supp.aHref, t: supp.aText }));
+    ok('supp link article-supp-ref-link sınıfı alır', /article-supp-ref-link/.test(supp.aClass || ''), supp.aClass);
+    ok('hedef satır mevcut → kırık değil', supp.broken === false);
+
+    // ── 30) Figure size adjustable from the editor (media toolbar size selector) ──
+    const szc = await page.evaluate(() => {
+      const v = document.getElementById('ft-visual');
+      v.innerHTML = '<figure id="figure-1" class="article-figure" data-size="medium"><img src="x.png" alt=""><p contenteditable="false"><strong>FIG. 1.</strong> cap</p></figure>';
+      _initMediaBlockControls();
+      const fig = v.querySelector('#figure-1');
+      _showMediaCtl(fig, v);
+      const tb = document.getElementById('media-block-ctl');
+      const sel = tb.querySelector('.mbc-size');
+      const reflects = sel ? sel.value === 'medium' : null;
+      sel.value = 'large'; sel.dispatchEvent(new Event('change'));
+      const after = fig.getAttribute('data-size');
+      sel.value = 'full'; sel.dispatchEvent(new Event('change'));
+      const after2 = fig.getAttribute('data-size');
+      return { hasSel: !!sel, reflects, after, after2 };
+    });
+    ok('blok araç çubuğunda boyut seçici var', szc.hasSel === true);
+    ok('seçici mevcut boyutu yansıtır (medium)', szc.reflects === true);
+    ok('editörden boyut değişir (large)', szc.after === 'large', szc.after);
+    ok('editörden boyut değişir (full)', szc.after2 === 'full', szc.after2);
+
+    // ── 31) Toolbar reflects the selection's style (active state) ──
+    const ts = await page.evaluate(() => {
+      const v = document.getElementById('ft-visual');
+      v.innerHTML = '<h3 id="hh">Methods</h3><p id="pp">body text</p>';
+      const tb = document.getElementById('ft-toolbar');
+      const hasDataCmd = tb.querySelectorAll('button[data-cmd]').length > 0;
+      const fmt = () => Array.from(tb.querySelectorAll('button[data-cmd="formatBlock"]'))
+        .map((b) => ({ v: (b.dataset.val || '').replace(/[<>]/g, ''), a: b.classList.contains('is-active') }));
+      const caretIn = (id) => { const r = document.createRange(); r.selectNodeContents(document.getElementById(id)); r.collapse(true); const s = window.getSelection(); s.removeAllRanges(); s.addRange(r); };
+      caretIn('hh'); _updateHtmlEditorToolbarState(v);
+      const inH3 = fmt();
+      caretIn('pp'); _updateHtmlEditorToolbarState(v);
+      const inP = fmt();
+      return { hasDataCmd, inH3, inP };
+    });
+    ok('toolbar butonları data-cmd taşır', ts.hasDataCmd === true);
+    ok('H3 içindeyken H3 aktif, H4/P değil', !!ts.inH3.find((x) => x.v === 'h3' && x.a) && !ts.inH3.find((x) => x.v === 'h4' && x.a) && !ts.inH3.find((x) => x.v === 'p' && x.a), JSON.stringify(ts.inH3));
+    ok('imleç P\'ye geçince P aktif, H3 pasif', !!ts.inP.find((x) => x.v === 'p' && x.a) && !ts.inP.find((x) => x.v === 'h3' && x.a), JSON.stringify(ts.inP));
+
+    // ── 28) Public page still builds (no JS error) with article.html supp edits ──
+    try {
+      const pub = await browser.newPage();
+      const errs = [];
+      pub.on('pageerror', (e) => errs.push(e.message));
+      await pub.goto(BASE + '/site/article.html?id=2811', { waitUntil: 'networkidle2', timeout: 30000 });
+      await new Promise((r) => setTimeout(r, 2000));
+      // Deterministic checks for the supplementary edits: a #suppN element gets the
+      // sticky-offset scroll-margin (my CSS rule) so in-text refs land correctly.
+      const pubChk = await pub.evaluate(() => {
+        const li = document.createElement('li'); li.id = 'supp1'; document.body.appendChild(li);
+        const sm = parseFloat(getComputedStyle(li).scrollMarginTop) || 0;
+        li.remove();
+        return { suppScrollMargin: sm, bodyHas: !!document.querySelector('.article-body') };
+      });
+      await pub.close();
+      ok('public sayfa hatasız yüklenir (article.html düzenlemeleri)', errs.length === 0, errs.join(' | '));
+      ok('public gövde render edildi', pubChk.bodyHas === true);
+      ok('supp çapasına sticky scroll-margin uygulanır', pubChk.suppScrollMargin > 0, 'sm=' + pubChk.suppScrollMargin);
+
+      // ── 29) Heading outline panel: list, level-check, flash, fix ──
+      const ho = await page.evaluate(() => {
+        const v = document.getElementById('ft-visual');
+        v.innerHTML = '<h2>Intro</h2><p>x</p><h3 style="font-size:16pt">Methods</h3><p>y</p><h4>Sub</h4>';
+        _openHeadingOutline('ft');
+        const panel = document.getElementById('heading-outline');
+        const setLvl = (idx, L) => { const s = panel.querySelector('.ho-row[data-idx="' + idx + '"] .ho-sel'); s.value = String(L); s.dispatchEvent(new Event('change')); };
+        const badges = Array.from(panel.querySelectorAll('.ho-badge')).map((b) => b.textContent);
+        const warnFirst = panel.querySelector('.ho-row[data-idx="0"] .ho-text').textContent.indexOf('⚠') >= 0;
+        const summaryIssue = /sorun/.test(panel.querySelector('.ho-summary').textContent);
+        const levelOptions = panel.querySelector('.ho-sel') ? Array.from(panel.querySelector('.ho-sel').options).map((o) => o.value) : [];
+        // flash heading idx 2 (Sub)
+        panel.querySelector('.ho-row[data-idx="2"] .ho-go').click();
+        const flashed = !!v.querySelector('.outline-flash');
+        // fix H2(idx0) → H3
+        setLvl(0, 3);
+        const firstNow = v.children[0].tagName;
+        // demote the 16pt H3(Methods, now idx1) → H5 (3rd level) + confirm font stripped
+        document.getElementById('heading-outline').querySelector('.ho-row[data-idx="1"] .ho-sel').value = '5';
+        document.getElementById('heading-outline').querySelector('.ho-row[data-idx="1"] .ho-sel').dispatchEvent(new Event('change'));
+        const methods = Array.from(v.querySelectorAll('h3,h4,h5,h6')).find((h) => /Methods/.test(h.textContent));
+        const res = {
+          badges, warnFirst, summaryIssue, flashed, firstNow, levelOptions,
+          methodsTag: methods ? methods.tagName : null,
+          methodsFont: methods ? /font-size/i.test(methods.getAttribute('style') || '') : null,
+        };
+        _closeHeadingOutline();
+        return res;
+      });
+      ok('outline başlıkları listeler (H2/H3/H4)', JSON.stringify(ho.badges) === JSON.stringify(['H2', 'H3', 'H4']), JSON.stringify(ho.badges));
+      ok('düzey seçici H3–H6 sunar', JSON.stringify(ho.levelOptions) === JSON.stringify(['3', '4', '5', '6']), JSON.stringify(ho.levelOptions));
+      ok('H2 düzey sorunu işaretlenir', ho.warnFirst === true);
+      ok('özet düzey sorunu bildirir', ho.summaryIssue === true);
+      ok('satıra tıklayınca editörde vurgulanır (outline-flash)', ho.flashed === true);
+      ok('seçiciyle H2→H3 yapılır', ho.firstNow === 'H3', ho.firstNow);
+      ok('3. seviye (H5) atanabilir + inline font silinir', ho.methodsTag === 'H5' && ho.methodsFont === false, JSON.stringify({ t: ho.methodsTag, f: ho.methodsFont }));
+
+      // ── 32) Public TOC reflects heading levels (indent + depth) ──
+      const tp = await browser.newPage();
+      const tErrs = [];
+      tp.on('pageerror', (e) => tErrs.push(e.message));
+      await tp.goto(BASE + '/site/article.html?id=2869', { waitUntil: 'networkidle2', timeout: 30000 });
+      await new Promise((r) => setTimeout(r, 2500));
+      const toc = await tp.evaluate(() => {
+        const links = Array.from(document.querySelectorAll('#toc-nav a'));
+        const depths = links.map((a) => Number(a.getAttribute('data-toc-depth')));
+        const indented = links.filter((a) => parseFloat(a.style.paddingLeft || '0') > 0).length;
+        return {
+          count: links.length,
+          firstDepth: depths[0],
+          distinct: Array.from(new Set(depths)).sort(),
+          indentedCount: indented,
+          hasScrollFn: typeof window.scrollToArticleTarget === 'undefined' ? 'n/a' : 'ok',
+        };
+      });
+      await tp.close();
+      ok('public TOC çok seviyeli (≥2 derinlik)', toc.distinct.length >= 2, JSON.stringify(toc.distinct));
+      ok('TOC ilk giriş üst düzey (depth 0)', toc.firstDepth === 0, 'first=' + toc.firstDepth);
+      ok('alt başlıklar girintili', toc.indentedCount > 0, 'indented=' + toc.indentedCount);
+      ok('TOC public hatasız', tErrs.length === 0, tErrs.join(' | '));
+
+      // ── 33) Reference list font is unified (Word inline fonts stripped,
+      //        italic/color emphasis kept) so hand-typed + pasted refs match ──
+      const rf = await page.evaluate(() => {
+        const ol = document.createElement('ol');
+        ol.className = 'article-references-ol';
+        ol.innerHTML =
+          '<li style="font-family:\'Times New Roman\';font-size:12pt;line-height:1.5;color:#222">' +
+            'A. <i style="font-family:Times;font-size:12pt">J Foo.</i> 2025.</li>' +
+          '<li><span style="font-family:Calibri;font-size:11pt">B paste.</span> ' +
+            '<em style="font-style:italic">Med J.</em> 2017.</li>' +
+          '<li>C plain. <i>Balkan Med J.</i> 2025.</li>';
+        const wrap = document.createElement('div');
+        wrap.className = 'article-references';
+        wrap.appendChild(ol);
+        document.body.appendChild(wrap);
+        const fn = typeof _normalizeReferenceFonts === 'function';
+        if (fn) _normalizeReferenceFonts(ol);
+        const out = {
+          fn,
+          leftoverFont: (ol.innerHTML.toLowerCase().match(/font-family|font-size/g) || []).length,
+          italics: ol.querySelectorAll('i, em').length,
+          colorKept: /color\s*:/.test(ol.querySelector('li').getAttribute('style') || ''),
+        };
+        wrap.remove();
+        return out;
+      });
+      ok('kaynak font normalizasyonu mevcut', rf.fn === true);
+      ok('inline font-family/size silinir (sabit liste fontu)', rf.leftoverFont === 0, 'leftover=' + rf.leftoverFont);
+      ok('italik (i/em) vurgusu korunur', rf.italics === 3, 'italics=' + rf.italics);
+      ok('renk (color) korunur', rf.colorKept === true);
+
+      // ── 34) MsoListParagraph tail-absorb: the last reference, typed as a
+      //        plain MsoNormal/Calibri <p> (not in the list), is still picked
+      //        up; a trailing non-reference paragraph is NOT swallowed ──
+      const tr = await page.evaluate(() => {
+        const d = document.createElement('div');
+        d.id = 'tmp-tail-visual';
+        d.innerHTML =
+          '<h3 class="MsoNormal"><b>REFERENCES</b></h3>' +
+          '<p class="MsoListParagraph"><span style="mso-ansi-language:EN-US">Merton RK. <i>Science</i>. 1968;159:56-63.</span></p>' +
+          '<p class="MsoListParagraph"><span style="mso-ansi-language:EN-US">Gomez CJ. <i>Nat Hum Behav</i>. 2022;6:919-929.</span></p>' +
+          '<p class="MsoNormal"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif">Korkmaz S. Statistical rigor. <i>Balkan Med J.</i> 2025;42:386-387.</span></p>' +
+          '<p class="MsoNormal">The authors declare no conflict of interest.</p>';
+        document.body.appendChild(d);
+        const ok2 = _normalizeMsoReferenceList(d);
+        const lis = Array.from(d.querySelectorAll('.article-references ol > li'));
+        const out = {
+          ok2,
+          count: lis.length,
+          lastText: (lis[lis.length - 1] ? lis[lis.length - 1].textContent : '').slice(0, 20),
+          lastHasFont: /font-family|font-size/i.test(lis[lis.length - 1] ? lis[lis.length - 1].innerHTML : ''),
+          coiAbsorbed: lis.some((li) => /conflict of interest/i.test(li.textContent || '')),
+        };
+        d.remove();
+        return out;
+      });
+      ok('MsoNormal son kaynak absorbe edilir (tail-absorb)', tr.ok2 === true && tr.count === 3, JSON.stringify({ ok: tr.ok2, n: tr.count }));
+      ok('absorbe edilen son kaynak doğru', /^Korkmaz/.test(tr.lastText), tr.lastText);
+      ok('absorbe edilen kaynağın Calibri fontu silinir', tr.lastHasFont === false);
+      ok('kaynak-olmayan paragraf absorbe edilmez', tr.coiAbsorbed === false);
+
+      // ── 35) Whole-body typeface is unified: inline font-family stripped,
+      //        font-size / weight / style / color kept ──
+      const bf = await page.evaluate(() => {
+        const fn = typeof _unifyBodyFont === 'function';
+        const d = document.createElement('div');
+        d.innerHTML =
+          '<p>Normal. <span style="font-family:Calibri;font-size:14pt;line-height:2;color:#c00"><b>Bold</b></span> tail.</p>' +
+          '<p style="font-family:&quot;Times New Roman&quot;;mso-foo:bar"><i>Para</i></p>';
+        if (fn) _unifyBodyFont(d);
+        return {
+          fn,
+          leftoverFamily: (d.innerHTML.toLowerCase().match(/font-family/g) || []).length,
+          sizeKept: /font-size\s*:\s*14pt/i.test(d.innerHTML),
+          colorKept: /color\s*:\s*#c00/i.test(d.innerHTML),
+          boldKept: d.querySelectorAll('b').length,
+          italicKept: d.querySelectorAll('i').length,
+        };
+      });
+      ok('_unifyBodyFont mevcut', bf.fn === true);
+      ok('gövde inline font-family silinir (sabit typeface)', bf.leftoverFamily === 0, 'leftover=' + bf.leftoverFamily);
+      ok('gövde font-size korunur', bf.sizeKept === true);
+      ok('gövde color/bold/italic korunur', bf.colorKept && bf.boldKept === 1 && bf.italicKept === 1, JSON.stringify(bf));
+
+      // ── 36) Date fields accept copy-paste: parser + real Ctrl+V into a
+      //        native <input type="date"> sets the yyyy-mm-dd value ──
+      const dpParse = await page.evaluate(() => {
+        const fn = typeof _parsePastedDateToISO === 'function' && _datePasteBound === true;
+        return {
+          fn,
+          ddmmyyyy: _parsePastedDateToISO('01.06.2026'),
+          iso: _parsePastedDateToISO('2026-06-01'),
+          slash: _parsePastedDateToISO('31/12/2025'),
+          twoDigit: _parsePastedDateToISO('15.03.24'),
+          monthName: _parsePastedDateToISO('1 June 2026'),
+          invalid: _parsePastedDateToISO('13.13.2026'),
+          junk: _parsePastedDateToISO('garbage'),
+        };
+      });
+      ok('tarih parser + paste handler bağlı', dpParse.fn === true);
+      ok('GG.AA.YYYY → ISO', dpParse.ddmmyyyy === '2026-06-01', dpParse.ddmmyyyy);
+      ok('ISO korunur', dpParse.iso === '2026-06-01', dpParse.iso);
+      ok('GG/AA/YYYY → ISO', dpParse.slash === '2025-12-31', dpParse.slash);
+      ok('2 haneli yıl → 20yy', dpParse.twoDigit === '2024-03-15', dpParse.twoDigit);
+      ok('ay adı çözülür', dpParse.monthName === '2026-06-01', dpParse.monthName);
+      ok('geçersiz/çöp tarih null döner', dpParse.invalid === null && dpParse.junk === null);
+      // Real keyboard paste into a native date input via clipboard copy gesture.
+      const realPaste = await page.evaluate(() => {
+        const src = document.createElement('input'); src.type = 'text'; src.id = '__dp-src'; src.value = '01.06.2026';
+        const dst = document.createElement('input'); dst.type = 'date'; dst.id = '__dp-dst';
+        document.body.appendChild(src); document.body.appendChild(dst);
+      });
+      await page.focus('#__dp-src');
+      await page.evaluate(() => document.getElementById('__dp-src').select());
+      await page.keyboard.down('Control'); await page.keyboard.press('KeyC'); await page.keyboard.up('Control');
+      await page.focus('#__dp-dst');
+      await page.keyboard.down('Control'); await page.keyboard.press('KeyV'); await page.keyboard.up('Control');
+      await new Promise((r) => setTimeout(r, 150));
+      const pastedVal = await page.evaluate(() => {
+        const v = document.getElementById('__dp-dst').value;
+        document.getElementById('__dp-src').remove(); document.getElementById('__dp-dst').remove();
+        return v;
+      });
+      ok('gerçek Ctrl+V date input değerini set eder', pastedVal === '2026-06-01', 'val=' + pastedVal);
+
+      // ── 37) TOC overflow solved: capped height + internal scroll, long
+      //        titles wrap (no horizontal overflow), sections collapse/expand ──
+      const tcp = await browser.newPage();
+      const tcErrs = [];
+      tcp.on('pageerror', (e) => tcErrs.push(e.message));
+      await tcp.setViewport({ width: 1280, height: 800 });
+      await tcp.goto(BASE + '/site/article.html?id=2869', { waitUntil: 'networkidle2', timeout: 30000 });
+      await new Promise((r) => setTimeout(r, 2500));
+      const tc = await tcp.evaluate(() => {
+        const nav = document.getElementById('toc-nav');
+        if (!nav) return { err: 'no nav' };
+        const cs = getComputedStyle(nav);
+        const links = Array.from(nav.querySelectorAll('a'));
+        const groups = Array.from(nav.querySelectorAll('.toc-group'));
+        const navRect = nav.getBoundingClientRect();
+        const overflowX = links.some((a) => a.getBoundingClientRect().right > navRect.right + 1);
+        // Pick a caret group that the scroll-spy hasn't auto-opened (avoid the
+        // currently-active first section) so we can verify the default state.
+        const g = groups.filter((x) => x.querySelector('.toc-caret')).find((x) => x.classList.contains('collapsed'))
+          || groups.find((x) => x.querySelector('.toc-caret'));
+        const defaultCollapsed = !!(g && g.classList.contains('collapsed'));
+        let expanded = null, reCollapsed = null;
+        if (g) {
+          const caret = g.querySelector('.toc-caret');
+          caret.click(); void g.offsetHeight; expanded = !g.classList.contains('collapsed');
+          caret.click(); void g.offsetHeight; reCollapsed = g.classList.contains('collapsed');
+        }
+        return {
+          maxHeightPx: parseFloat(cs.maxHeight),
+          overflowY: cs.overflowY,
+          scrollable: nav.scrollHeight > nav.clientHeight,
+          overflowX,
+          hasCaret: !!g,
+          defaultCollapsed,
+          expanded,
+          reCollapsed,
+        };
+      });
+      await tcp.close();
+      // Cap + internal-scroll mechanism is in place (actual scrolling only
+      // kicks in when expanded content exceeds the cap; default-collapsed fits).
+      ok('TOC yüksekliği sınırlı + iç kaydırma', tc.maxHeightPx > 0 && tc.overflowY === 'auto', JSON.stringify({ mh: tc.maxHeightPx, oy: tc.overflowY }));
+      ok('TOC yatay taşma yok (başlıklar sarar)', tc.overflowX === false);
+      ok('TOC bölümleri varsayılan katlanmış', tc.hasCaret === true && tc.defaultCollapsed === true, JSON.stringify(tc));
+      ok('TOC bölümleri açılır/kapanır', tc.expanded === true && tc.reCollapsed === true, JSON.stringify(tc));
+      ok('TOC katlama hatasız', tcErrs.length === 0, tcErrs.join(' | '));
+    } catch (e3) {
+      ok('public smoke testi', false, e3.message);
+    }
   } catch (e) {
     console.error('TEST ERROR:', e.stack || e.message);
     failures++;
