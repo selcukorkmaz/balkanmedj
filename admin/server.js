@@ -1129,6 +1129,41 @@ function legacyIssuePdfInfo(type, volume, issue) {
   };
 }
 
+async function renderIssueCoverImage(pdfPath, volume, issue) {
+  const puppeteer = require('puppeteer');
+  const pdfBuffer = fs.readFileSync(pdfPath);
+  const coversDir = path.join(dio.PATHS.imagesDir, 'issue-covers');
+  fs.mkdirSync(coversDir, { recursive: true });
+  const filename = `vol${safeIssueFilePart(volume)}-${safeIssueFilePart(issue)}-cover.png`;
+  const imagePath = path.join(coversDir, filename);
+  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+  try {
+    const page = await browser.newPage();
+    await page.setRequestInterception(true);
+    page.on('request', (request) => {
+      if (request.url().startsWith('http://cover.local/cover.pdf')) {
+        request.respond({ status: 200, contentType: 'application/pdf', body: pdfBuffer });
+      } else {
+        request.continue();
+      }
+    });
+    await page.setViewport({ width: 900, height: 1250, deviceScaleFactor: 1 });
+    await page.setContent(
+      '<style>html,body{margin:0;width:900px;height:1250px;overflow:hidden;background:#fff}' +
+      'iframe{display:block;border:0;width:930px;height:1250px}</style>' +
+      '<iframe src="http://cover.local/cover.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0&view=Fit"></iframe>'
+    );
+    await new Promise((resolve) => setTimeout(resolve, 2500));
+    await page.screenshot({
+      path: imagePath,
+      clip: { x: 6, y: 4, width: 894, height: 1197 },
+    });
+  } finally {
+    await browser.close();
+  }
+  return `images/issue-covers/${filename}`;
+}
+
 app.get('/api/issues/:volume/:issue/files', (req, res) => {
   try {
     const archive = dio.readArchiveIssues();
@@ -1143,7 +1178,7 @@ app.get('/api/issues/:volume/:issue/files', (req, res) => {
   }
 });
 
-app.post('/api/issues/:volume/:issue/files/:type', uploadIssuePdf.single('pdf'), (req, res) => {
+app.post('/api/issues/:volume/:issue/files/:type', uploadIssuePdf.single('pdf'), async (req, res) => {
   const tempPath = req.file?.path;
   try {
     if (!req.file) return res.status(400).json({ error: 'PDF dosyası yüklenmedi' });
@@ -1179,12 +1214,16 @@ app.post('/api/issues/:volume/:issue/files/:type', uploadIssuePdf.single('pdf'),
       fs.unlinkSync(req.file.path);
     }
 
-    issueRecord[config.field] = {
+    const fileRecord = {
       url: `js/data/issue-pdfs/${filename}`,
       originalName: path.basename(req.file.originalname || filename),
       size: req.file.size || fs.statSync(dest).size,
       uploadedAt: new Date().toISOString(),
     };
+    if (req.params.type === 'cover') {
+      fileRecord.imageUrl = await renderIssueCoverImage(dest, volume, issue);
+    }
+    issueRecord[config.field] = fileRecord;
     dio.writeArchiveIssues(archive);
     res.json({ saved: true, ...issuePdfResponse(issueRecord) });
   } catch (err) {
@@ -1217,6 +1256,14 @@ app.delete('/api/issues/:volume/:issue/files/:type', (req, res) => {
         const legacyPath = path.join(dio.PATHS.pdfsDir, path.basename(legacy.url));
         if (fs.existsSync(legacyPath)) fs.unlinkSync(legacyPath);
       }
+    }
+    if (req.params.type === 'cover') {
+      const coverImage = path.join(
+        dio.PATHS.imagesDir,
+        'issue-covers',
+        `vol${safeIssueFilePart(req.params.volume)}-${safeIssueFilePart(req.params.issue)}-cover.png`
+      );
+      if (fs.existsSync(coverImage)) fs.unlinkSync(coverImage);
     }
     delete issueRecord[config.field];
     dio.writeArchiveIssues(archive);

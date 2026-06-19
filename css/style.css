@@ -427,3 +427,27 @@ footer.bg-teal-900.text-white[aria-label="Site footer"] .border-teal-800{
 @media (prefers-reduced-motion:reduce){.bmj-home-popup-dialog,.bmj-home-popup-panel-enter{animation:none}.bmj-home-popup-cta{transition:none}}
 @media (max-width:63.99rem){.bmj-home-popup-dialog{width:min(100%,760px);max-height:92vh}.bmj-home-popup-panel.has-media.has-copy{grid-template-columns:1fr}.bmj-home-popup-media{min-height:220px}.bmj-home-popup-panel.media-only .bmj-home-popup-media{min-height:0}}
 @media (max-width:47.99rem){.bmj-home-popup-overlay{padding:.7rem}.bmj-home-popup-dialog{border-radius:20px}.bmj-home-popup-copy{padding:1.25rem 1rem 1rem;gap:.85rem}.bmj-home-popup-title{font-size:1.55rem}.bmj-home-popup-body{font-size:1rem;line-height:1.6}.bmj-home-popup-nav{gap:.6rem}.bmj-home-popup-arrow{width:2.1rem;height:2.1rem}.bmj-home-popup-media-nav{bottom:.65rem;width:calc(100% - 1.3rem);padding:.5rem .6rem}.bmj-home-popup-panel.media-only .bmj-home-popup-media img,.bmj-home-popup-panel.media-only .bmj-home-popup-media video{max-height:88vh}}
+
+/* Issue-level Cover PDF and Full PDF presentation */
+.bmj-issue-publication{display:grid;grid-template-columns:1fr;gap:1.5rem;align-items:stretch;padding:1.25rem;border:1px solid #dbe7e8;border-radius:20px;background:linear-gradient(135deg,#f7fbfa 0%,#fff 58%,#f7f3ec 100%);box-shadow:0 14px 36px -28px #163c48}
+.bmj-issue-publication.has-cover{grid-template-columns:180px minmax(0,1fr)}
+.bmj-issue-cover-frame{position:relative;height:238px;overflow:hidden;border:1px solid #d5dcdd;border-radius:10px;background:#e8eeef;box-shadow:0 14px 28px -18px #102e38}
+.bmj-issue-cover-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;background:#fff}
+.bmj-issue-publication-copy{display:flex;min-width:0;flex-direction:column;justify-content:center;padding:.35rem .5rem}
+.bmj-issue-kicker{color:#0f766e;font-size:.7rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.bmj-issue-publication h2{margin-top:.35rem;color:#162d35;font-family:Crimson Pro,Georgia,serif;font-size:clamp(1.55rem,3vw,2.15rem);line-height:1.08}
+.bmj-issue-meta{display:flex;flex-wrap:wrap;gap:.4rem .9rem;margin-top:.65rem;color:#718188;font-size:.78rem}
+.bmj-issue-meta span+span{position:relative;padding-left:.9rem}
+.bmj-issue-meta span+span::before{position:absolute;left:0;content:"•";color:#9aabae}
+.bmj-issue-publication-copy>p{max-width:650px;margin-top:.85rem;color:#53676f;font-family:Crimson Pro,Georgia,serif;font-size:1.05rem;line-height:1.55}
+.bmj-issue-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem;margin-top:1.15rem}
+.bmj-issue-full-pdf{display:flex;min-width:min(100%,430px);align-items:center;gap:.85rem;padding:.85rem 1rem;border-radius:13px;background:#0f5f66;color:#fff;box-shadow:0 10px 24px -18px #063c42;transition:background-color .2s,transform .2s}
+.bmj-issue-full-pdf:hover{color:#fff;background:#0b4d53;transform:translateY(-1px)}
+.bmj-issue-full-pdf svg{width:1.75rem;height:1.75rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.bmj-issue-full-pdf span:nth-child(2){display:flex;min-width:0;flex:1;flex-direction:column}
+.bmj-issue-full-pdf strong{font-size:.92rem}
+.bmj-issue-full-pdf small{margin-top:.08rem;color:#c7e4e4;font-size:.7rem}
+.bmj-issue-action-arrow{flex:none;font-size:.76rem;font-weight:700}
+.bmj-issue-secondary-link{padding:.7rem .85rem;color:#0f6f73;font-size:.78rem;font-weight:700}
+.bmj-issue-secondary-link:hover{color:#094f53;text-decoration:underline}
+@media (max-width:39.99rem){.bmj-issue-publication.has-cover{grid-template-columns:112px minmax(0,1fr);gap:1rem;padding:1rem}.bmj-issue-cover-frame{height:154px}.bmj-issue-publication-copy{padding:0}.bmj-issue-publication h2{font-size:1.4rem}.bmj-issue-publication-copy>p{font-size:.95rem}.bmj-issue-full-pdf{grid-column:1/-1;min-width:100%}.bmj-issue-actions{display:grid;grid-template-columns:1fr}.bmj-issue-action-arrow{display:none}}

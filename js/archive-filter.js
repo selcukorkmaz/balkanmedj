@@ -47,6 +47,11 @@
     return 'current-issue.html?' + params.toString();
   }
 
+  function issueFileUrl(value) {
+    if (!value) return '';
+    return typeof value === 'string' ? value : String(value.url || '');
+  }
+
   function resolveIssueArticleCount(issue) {
     var fallbackCount = typeof issue.articleCount === 'number' ? issue.articleCount : null;
     if (!Array.isArray(window.ARTICLES)) return fallbackCount;
@@ -127,17 +132,21 @@
     issueList.innerHTML = '';
 
     entry.issues.forEach(function (issue) {
-      var card = document.createElement('a');
-      card.href = buildIssueUrl(entry, issue);
-      card.className = 'article-card block bg-white rounded-xl border border-gray-200 p-6 hover:border-teal-200 hover:shadow-sm transition-all';
+      var card = document.createElement('article');
+      card.className = 'article-card bg-white rounded-xl border border-gray-200 p-6 hover:border-teal-200 hover:shadow-sm transition-all';
       var displayCount = resolveIssueArticleCount(issue);
+      var browseUrl = buildIssueUrl(entry, issue);
+      var fullPdfUrl = issueFileUrl(issue.fullPdf);
       card.innerHTML =
         '<div class="flex items-center justify-between mb-2">' +
-          '<h3 class="font-semibold text-gray-900">' + escapeHtml(issue.label || 'Archive Issue') + '</h3>' +
+          '<h3 class="font-semibold text-gray-900"><a class="hover:text-teal-700" href="' + escapeHtml(browseUrl) + '">' + escapeHtml(issue.label || 'Archive Issue') + '</a></h3>' +
         '</div>' +
-        '<div class="flex items-center justify-between text-sm">' +
+        '<div class="flex flex-wrap items-center justify-between gap-3 text-sm">' +
           '<span class="text-gray-400">' + (typeof displayCount === 'number' ? displayCount + ' articles' : 'Archive issue') + '</span>' +
-          '<span class="text-teal-700 font-medium">Browse →</span>' +
+          '<span class="flex items-center gap-3">' +
+            (fullPdfUrl ? '<a href="' + escapeHtml(fullPdfUrl) + '" target="_blank" rel="noopener" class="text-red-700 font-semibold hover:text-red-800">Full PDF</a>' : '') +
+            '<a href="' + escapeHtml(browseUrl) + '" class="text-teal-700 font-medium">Browse →</a>' +
+          '</span>' +
         '</div>';
       issueList.appendChild(card);
     });
