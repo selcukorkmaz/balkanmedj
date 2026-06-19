@@ -1147,7 +1147,9 @@ async function renderIssueCoverImage(pdfPath, volume, issue) {
         request.continue();
       }
     });
-    await page.setViewport({ width: 900, height: 1250, deviceScaleFactor: 1 });
+    // Render at high pixel density so small cover text stays sharp on Retina
+    // screens and when the cover is enlarged, while keeping the same layout.
+    await page.setViewport({ width: 900, height: 1250, deviceScaleFactor: 2.5 });
     await page.setContent(
       '<style>html,body{margin:0;width:900px;height:1250px;overflow:hidden;background:#fff}' +
       'iframe{display:block;border:0;width:930px;height:1250px}</style>' +

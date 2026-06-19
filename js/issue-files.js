@@ -44,7 +44,10 @@
 
   function coverImageUrl(value) {
     if (!value || typeof value === 'string') return '';
-    return String(value.imageUrl || '');
+    var url = String(value.imageUrl || '');
+    if (!url) return '';
+    var version = String(value.uploadedAt || '').replace(/[^0-9]/g, '');
+    return version ? url + '?v=' + version : url;
   }
 
   function safePart(value) {

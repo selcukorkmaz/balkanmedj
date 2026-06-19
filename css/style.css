@@ -432,7 +432,7 @@ footer.bg-teal-900.text-white[aria-label="Site footer"] .border-teal-800{
 .bmj-issue-publication{display:grid;grid-template-columns:1fr;gap:1.5rem;align-items:stretch;padding:1.25rem;border:1px solid #dbe7e8;border-radius:20px;background:linear-gradient(135deg,#f7fbfa 0%,#fff 58%,#f7f3ec 100%);box-shadow:0 14px 36px -28px #163c48}
 .bmj-issue-publication.has-cover{grid-template-columns:180px minmax(0,1fr)}
 .bmj-issue-cover-frame{position:relative;height:238px;overflow:hidden;border:1px solid #d5dcdd;border-radius:10px;background:#e8eeef;box-shadow:0 14px 28px -18px #102e38}
-.bmj-issue-cover-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;background:#fff}
+.bmj-issue-cover-frame img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;background:#fff}
 .bmj-issue-publication-copy{display:flex;min-width:0;flex-direction:column;justify-content:center;padding:.35rem .5rem}
 .bmj-issue-kicker{color:#0f766e;font-size:.7rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
 .bmj-issue-publication h2{margin-top:.35rem;color:#162d35;font-family:Crimson Pro,Georgia,serif;font-size:clamp(1.55rem,3vw,2.15rem);line-height:1.08}
