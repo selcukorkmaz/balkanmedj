@@ -17,6 +17,7 @@ window.ARCHIVE_ISSUES = [
         "hasLocalData": true,
         "coverPdf": {
           "url": "js/data/issue-pdfs/vol43-6-cover.pdf",
+          "imageUrl": "images/issue-covers/vol43-6-cover.png",
           "originalName": "all-cover.pdf",
           "size": 204652,
           "uploadedAt": "2026-06-19T13:14:25.855Z"
