@@ -72,6 +72,29 @@ function formatBytes(bytes) {
   return (bytes / (1024 * 1024 * 1024)).toFixed(2) + ' GB';
 }
 
+function dateInputValue(value) {
+  if (!value) return '';
+  return _parsePastedDateToISO(value) || '';
+}
+
+function articleDateSequenceError({ received, accepted, publishedOnline, published }) {
+  const ts = (value) => value ? new Date(value + 'T00:00:00Z').getTime() : 0;
+  const receivedTs = ts(received);
+  const acceptedTs = ts(accepted);
+  const onlineTs = ts(publishedOnline);
+  const publishedTs = ts(published);
+  if (receivedTs && acceptedTs && acceptedTs < receivedTs) {
+    return 'Kabul tarihi, alındığı tarihten önce olamaz.';
+  }
+  if (acceptedTs && onlineTs && onlineTs < acceptedTs) {
+    return 'Çevrimiçi yayın tarihi, kabul tarihinden önce olamaz.';
+  }
+  if (acceptedTs && publishedTs && publishedTs < acceptedTs) {
+    return 'Makale yayın tarihi, kabul tarihinden önce olamaz.';
+  }
+  return '';
+}
+
 // --- Classify a FileList into {pdf, figure, other} with totals ---
 function classifyFiles(files) {
   const IMG_RE = /\.(jpe?g|png|webp|gif|svg|tiff?)$/i;
@@ -1053,6 +1076,7 @@ async function renderArticleForm(el, article, prefill = {}) {
       <h1 class="page-title">${isNew ? 'Yeni Makale' : `Makale #${a.id}`}</h1>
       <div class="flex gap-2">
         <a href="#/articles" class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm shadow-sm">Geri</a>
+        ${isNew ? `<label class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 text-sm font-medium shadow-sm cursor-pointer" title="Galenos şablonundaki Word dosyasından metadata + tam metin yükle">Word'den İçe Aktar<input type="file" accept=".docx" id="f-import-docx" class="hidden"></label>` : ''}
         ${!isNew ? `<a href="/site/article.html?id=${a.id}" target="_blank" rel="noopener" class="px-4 py-2 bg-slate-50 text-slate-700 rounded-lg hover:bg-slate-100 text-sm font-medium">Önizle</a>` : ''}
         <button onclick="saveArticle(${isNew ? 'true' : 'false'})" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium">Kaydet<span data-dirty-indicator class="text-amber-200"></span></button>
       </div>
@@ -1081,14 +1105,14 @@ async function renderArticleForm(el, article, prefill = {}) {
         </div>
         <div class="mt-4"><label class="label">Başlık</label><input id="f-title" value="${esc(a.title)}" class="input"></div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-          <div><label class="label">Alındığı Tarih</label><input id="f-received" type="date" value="${a.received}" class="input"></div>
-          <div><label class="label">Kabul Tarihi</label><input id="f-accepted" type="date" value="${a.accepted}" class="input"></div>
-          <div><label class="label">Yayın Tarihi</label><input id="f-published" type="date" value="${a.published}" class="input"></div>
+          <div><label class="label">Alındığı Tarih</label><input id="f-received" type="date" value="${dateInputValue(a.received)}" class="input"></div>
+          <div><label class="label">Kabul Tarihi</label><input id="f-accepted" type="date" value="${dateInputValue(a.accepted)}" class="input"></div>
+          <div><label class="label">Yayın Tarihi</label><input id="f-published" type="date" value="${dateInputValue(a.published || a.publishedOnline)}" class="input"></div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <div><label class="label">PMID</label><input id="f-pmid" value="${esc(a.pmid || '')}" class="input"></div>
           <div class="flex items-end gap-4">
-            <label class="flex items-center gap-2 text-sm"><input id="f-featured" type="checkbox" ${a.featured ? 'checked' : ''} class="rounded"> Öne Çıkan</label>
+            <label class="flex items-center gap-2 text-sm" title="Anasayfa bannerındaki Featured in This Issue kartında gösterilir. Aynı sayıda yalnızca bir makale öne çıkabilir."><input id="f-featured" type="checkbox" ${a.featured ? 'checked' : ''} class="rounded"> Öne Çıkan</label>
             <label class="flex items-center gap-2 text-sm"><input id="f-imageCorner" type="checkbox" ${a.imageCorner ? 'checked' : ''} class="rounded"> Görsel Köşesi</label>
           </div>
         </div>
@@ -1427,6 +1451,43 @@ async function renderArticleForm(el, article, prefill = {}) {
     });
   }
 
+  // ── Word'den İçe Aktar (Galenos şablonu) — only on new manual articles ──
+  // Same flow as the AIP form: parse-docx → metadata + Tam Metin, applied to the
+  // article form's fields. Lets "Sayılar → Manuel Makale Ekle" import from Word.
+  const importDocx = document.getElementById('f-import-docx');
+  if (importDocx) {
+    importDocx.addEventListener('change', async () => {
+      const file = importDocx.files && importDocx.files[0];
+      if (!file) return;
+      const hasManualData = ['f-type', 'f-doi', 'f-title'].some((id) => (document.getElementById(id)?.value || '').trim().length > 0);
+      if (hasManualData) {
+        const ok = await confirmAction('Form alanları dolu. Word\'den İçe Aktar mevcut verilerin üzerine yazacak. Devam edilsin mi?');
+        if (!ok) { importDocx.value = ''; return; }
+      }
+      try {
+        const fd = new FormData();
+        fd.append('file', file);
+        const res = await fetch('/api/articles-in-press/parse-docx', { method: 'POST', body: fd });
+        const meta = await res.json();
+        if (!res.ok) throw new Error(meta.error || 'Word dosyası ayrıştırılamadı');
+        _applyArticleDocxMetadata(meta);
+        const warn = (meta.warnings || []).filter(Boolean);
+        const ftNote = meta.fullTextHtml ? ' Tam Metin sekmesi dolduruldu.' : '';
+        toast(warn.length
+          ? `Word içe aktarıldı.${ftNote} ${warn.length} uyarı: ${warn.join('; ')}`
+          : `Word dosyası başarıyla içe aktarıldı.${ftNote}`, warn.length ? 'warning' : 'success');
+        if (meta.headingCheckReminder) {
+          toast('Başlık seviyeleri otomatik belirlendi (H3 ana / H4 alt bölüm). Tam Metin sekmesinde "Başlıklar" aracıyla kontrol edin.', 'warning');
+        }
+        markDirty();
+      } catch (err) {
+        toast(`İçe aktarma hatası: ${err.message}`, 'error');
+      } finally {
+        importDocx.value = '';
+      }
+    });
+  }
+
   // Load article types from API
   API.get('/article-types').then((types) => {
     const dl = document.getElementById('type-list');
@@ -1439,6 +1500,55 @@ async function renderArticleForm(el, article, prefill = {}) {
   // Track unsaved changes
   clearDirty();
   el.addEventListener('input', markDirty);
+}
+
+// Apply Word-parsed metadata to the regular Article form (mirrors
+// _applyAipDocxMetadata but maps to the f-* field IDs and the article form's
+// custom abstract editor + 'ft' full-text editor).
+function _applyArticleDocxMetadata(meta) {
+  const setVal = (id, v) => { const el = document.getElementById(id); if (el) el.value = v == null ? '' : String(v); };
+  setVal('f-type', meta.type);
+  setVal('f-doi', meta.doi);
+  setVal('f-title', meta.title);
+  setVal('f-received', dateInputValue(meta.received));
+  setVal('f-accepted', dateInputValue(meta.accepted));
+  setVal('f-published', dateInputValue(meta.published || meta.publishedOnline));
+  // Keywords are intentionally NOT imported (no keyword feature) — left untouched.
+
+  // Authors + Kurumlar: rebuild both lists from the parsed authors.
+  const affList = document.getElementById('affiliations-list');
+  const authorsList = document.getElementById('authors-list');
+  if (affList && authorsList) {
+    const { affiliations, authorIdx } = buildAffiliationsFromAuthors(meta.authors || []);
+    affList.innerHTML = affiliations.map((t, i) => affRow(t, i + 1)).join('');
+    authorsList.innerHTML = (meta.authors || []).map((au, i) => authorRow(Object.assign({}, au, { _affIdx: authorIdx[i] }), i)).join('');
+  }
+
+  // Abstract → the article form's custom editor (visual div + source textarea).
+  const abstractHtml = String(meta.abstract || '')
+    .split(/\n\s*\n+/).map((p) => p.trim()).filter(Boolean)
+    .map((p) => `<p>${esc(p)}</p>`).join('');
+  if (abstractHtml) {
+    const av = document.getElementById('f-abstractHtml-visual');
+    const at = document.getElementById('f-abstractHtml');
+    if (av) av.innerHTML = abstractHtml;
+    if (at) at.value = abstractHtml;
+  }
+
+  // Full text → 'ft' editor, then cross-link <sup>N</sup> citations to refs.
+  if (meta.fullTextHtml) {
+    setHtmlEditorContent('ft', meta.fullTextHtml);
+    const ftVisual = document.getElementById('ft-visual');
+    if (ftVisual && typeof _autoLinkInEditor === 'function') {
+      try { _autoLinkInEditor(ftVisual); } catch (_) { /* non-fatal */ }
+    }
+    const st = document.getElementById('f-fulltext-status');
+    if (st) {
+      st.textContent = meta.headingCheckReminder
+        ? 'Tam metin içe aktarıldı. Başlık seviyelerini (H3 ana / H4 alt) "Başlıklar" aracıyla kontrol edip Kaydet\'e basın.'
+        : 'Tam metin Word\'den içe aktarıldı — gözden geçirip Kaydet\'e basın.';
+    }
+  }
 }
 
 // --- Supplementary link rows ---
@@ -1666,6 +1776,8 @@ async function saveArticle(isNew) {
 
   if (!data.title) { toast('Başlık zorunludur', 'error'); return; }
   if (!data.type) { toast('Makale türü zorunludur', 'error'); return; }
+  const dateError = articleDateSequenceError(data);
+  if (dateError) { toast(dateError, 'error'); return; }
 
   try {
     if (isNew) {
@@ -1680,7 +1792,7 @@ async function saveArticle(isNew) {
         }
       }
       clearDirty();
-      toast('Makale oluşturuldu');
+      toast(`Makale oluşturuldu${data.featured ? ' · Anasayfa banner güncellendi' : ''}`);
       navigate(`#/articles/${result.id}`);
     } else {
       const id = window.location.hash.match(/#\/articles\/(\d+)/)?.[1];
@@ -1697,7 +1809,7 @@ async function saveArticle(isNew) {
         }
       }
       clearDirty();
-      toast('Makale güncellendi');
+      toast(`Makale güncellendi${data.featured ? ' · Anasayfa banner güncellendi' : ''}`);
     }
   } catch (err) { toast(err.message, 'error'); }
 }
@@ -2070,8 +2182,9 @@ async function showZipPreview(filename) {
                 <div><label class="label" style="font-size:11px">Sayı</label><input id="zip-iss" value="${detectedIss}" class="input"></div>
               </div>
             </div>
-            <div class="flex items-end">
+            <div class="flex items-end gap-4 flex-wrap">
               <label class="flex items-center gap-2 text-sm cursor-pointer" style="color:var(--text)"><input id="zip-set-current" type="checkbox" class="rounded"> Güncel sayı yap</label>
+              <label class="flex items-center gap-2 text-sm cursor-pointer" title="Aynı sayıdaki mevcut makaleleri XML verileriyle güncelle (DOI eşleşmesinde silmek yerine üzerine yaz)" style="color:var(--text)"><input id="zip-overwrite" type="checkbox" class="rounded"> Mevcut makaleleri güncelle</label>
             </div>
           </div>
         </div>
@@ -2130,6 +2243,7 @@ async function showZipPreview(filename) {
 async function processZipImport(filename) {
   const target = document.getElementById('zip-target').value;
   const setCurrent = document.getElementById('zip-set-current').checked;
+  const overwrite = document.getElementById('zip-overwrite')?.checked || false;
 
   let targetVolume = null, targetIssue = null, year = null, shouldCreateIssue = false;
 
@@ -2158,6 +2272,7 @@ async function processZipImport(filename) {
       setAsCurrent: setCurrent,
       createIssue: shouldCreateIssue,
       year,
+      overwrite,
     });
 
     const totalPromoted = result.totalPromoted || 0;
@@ -2196,6 +2311,7 @@ async function processZipImport(filename) {
             <a href="#/articles/${Number(a.id)}" class="text-teal-600 hover:underline font-medium">#${Number(a.id)}</a>
             <span class="flex-1 truncate">${esc(a.title)}</span>
             ${a.promotedFromAip ? '<span class="badge" style="background:#fef3c7;color:#92400e;font-size:11px;padding:2px 6px">Baskıdan</span>' : ''}
+            ${a.overwritten ? '<span class="badge" style="background:#e0f2fe;color:#0369a1;font-size:11px;padding:2px 6px">Güncellendi</span>' : ''}
             ${a.cleanedStaleFiles ? `<span class="badge" style="background:#e0f2fe;color:#075985;font-size:11px;padding:2px 6px" title="${esc(a.cleanedStaleFiles.figures.concat(a.cleanedStaleFiles.supplementary).join(', '))}">${a.cleanedStaleFiles.count} eski dosya temizlendi</span>` : ''}
             ${a.hasPdf ? '<span class="text-green-500 text-xs">PDF &#10003;</span>' : '<span class="text-amber-500 text-xs">PDF &#10007;</span>'}
           </div>`).join('')}
@@ -2239,6 +2355,7 @@ async function renderJatsImport(el) {
       issueOptions.push({ label: `${y.year} — Vol ${iss.volume}, Issue ${iss.issue}`, volume: iss.volume, issue: iss.issue });
     }
   }
+  window._aipIssueOptions = issueOptions;
 
   el.innerHTML = `
     <div class="card mb-6" style="padding:24px">
@@ -2581,22 +2698,36 @@ async function rebuildIssue(volume, issue) {
 }
 
 async function deleteIssue(year, volume, issue) {
-  if (!await confirmAction('Bu sayıyı silmek istediğinizden emin misiniz?')) return;
+  // Fetch article count for this issue so the confirmation is informative
+  let articleCount = 0;
+  try { articleCount = (await API.get(`/issues/${volume}/${issue}/articles`)).length; } catch (_) {}
+
+  const articleNote = articleCount > 0
+    ? `Bu sayıya ait <strong>${articleCount} makale</strong> de kalıcı olarak silinecek (tam metin dosyaları dahil).`
+    : 'Bu sayıda makale yok.';
+
+  const confirmed = await confirmAction(
+    `Vol ${volume}, Issue ${issue} silinsin mi?\n\n${articleNote}\n\nBu işlem geri alınamaz.`
+  );
+  if (!confirmed) return;
+
   try {
-    await API.del(`/issues/${year}/${volume}/${issue}`);
-    toast('Sayı silindi');
+    await API.del(`/issues/${year}/${volume}/${issue}?deleteArticles=true`);
+    toast(`Sayı silindi${articleCount > 0 ? ` · ${articleCount} makale kaldırıldı` : ''}`);
     handleRoute();
   } catch (err) { toast(err.message, 'error'); }
 }
 
 // Issue detail
 route('/issues/:volume/:issue', async (el, { volume, issue }) => {
-  const [articles, homepage] = await Promise.all([
+  const [articles, homepage, issueFiles] = await Promise.all([
     API.get(`/issues/${volume}/${issue}/articles`),
     API.get('/homepage').catch(() => ({})),
+    loadIssuePdfFiles(volume, issue),
   ]);
   const cur = homepage?.currentIssue || {};
   const isCurrent = Number(cur.volume) === Number(volume) && String(cur.issue) === String(issue);
+  const featuredArticle = articles.find((a) => a.featured) || null;
   const featuredCount = articles.filter((a) => a.featured).length;
   const imageCornerCount = articles.filter((a) => a.imageCorner).length;
   const pdfCount = articles.filter((a) => a.pdfUrl).length;
@@ -2609,7 +2740,7 @@ route('/issues/:volume/:issue', async (el, { volume, issue }) => {
           <h1 class="page-title">Volume ${esc(volume)}, Issue ${esc(issue)}</h1>
           ${isCurrent ? '<span class="badge badge-info">GÜNCEL SAYI</span>' : ''}
         </div>
-        <p class="text-sm text-gray-500">${articles.length} makale · ${pdfCount} PDF · ${featuredCount} öne çıkan · ${imageCornerCount} görsel köşesi</p>
+        <p class="text-sm text-gray-500">${articles.length} makale · ${pdfCount} PDF · ${imageCornerCount} görsel köşesi</p>
       </div>
       <div class="flex gap-2">
         <a href="/site/current-issue.html?volume=${encodeURIComponent(volume)}&issue=${encodeURIComponent(issue)}" target="_blank" rel="noopener" class="px-4 py-2 bg-slate-50 text-slate-700 rounded-lg hover:bg-slate-100 text-sm font-medium">Önizle</a>
@@ -2625,9 +2756,51 @@ route('/issues/:volume/:issue', async (el, { volume, issue }) => {
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--brand);flex-shrink:0;margin-top:2px"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
       <div>
         <div class="font-semibold text-sm" style="color:var(--brand)">Bu sayı şu anda anasayfada "Güncel Sayı" olarak görünüyor.</div>
-        <div class="text-xs mt-1" style="color:var(--text-muted)">Öne çıkan makaleleri (${featuredCount}) ve görsel köşesi (${imageCornerCount}) ayarlamak için aşağıdaki makale satırlarındaki "Düzenle" → "Genel" sekmesini kullanın. Değişikliklerden sonra "Anasayfayı Yenile" butonuna basın.</div>
+        <div class="text-xs mt-1" style="color:var(--text-muted)">Öne çıkan makale kaydedildiğinde anasayfa hero banner'ı otomatik güncellenir. Her sayıda yalnızca bir makale öne çıkan olabilir.</div>
       </div>
     </div>` : ''}
+
+    <!-- Featured article banner preview -->
+    <div class="card card-padded mb-6">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="font-semibold text-gray-900">Öne Çıkan Makale <span class="text-xs font-normal text-gray-400 ml-1">— Hero Banner</span></h2>
+        ${!featuredArticle ? `<a href="#/articles/new?volume=${encodeURIComponent(volume)}&issue=${encodeURIComponent(issue)}" class="text-xs text-teal-600 hover:text-teal-800">+ Makale ekle</a>` : ''}
+      </div>
+      ${featuredArticle ? `
+        <div class="flex items-start gap-3 p-3 rounded-lg" style="background:var(--bg-subtle);border:1px solid var(--border)">
+          <div style="flex-shrink:0;width:28px;height:28px;background:var(--brand);border-radius:6px;display:flex;align-items:center;justify-content:center">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="text-sm font-medium text-gray-900 truncate">${esc(featuredArticle.title)}</div>
+            <div class="text-xs text-gray-500 mt-0.5">${(featuredArticle.authors || []).map((a) => esc(a.name)).join(', ')}</div>
+            <div class="text-xs text-gray-400 mt-0.5">ID ${featuredArticle.id} · ${esc(featuredArticle.type || '')}</div>
+          </div>
+          <a href="#/articles/${featuredArticle.id}" class="text-xs text-teal-600 hover:text-teal-800 whitespace-nowrap flex-shrink-0">Düzenle →</a>
+        </div>
+        <p class="text-xs text-gray-400 mt-2">Bu makale anasayfa hero slider'ındaki "Current Issue Highlights" kartında görünür. Değiştirmek için başka bir makalenin "Genel" sekmesinde "Öne Çıkan" kutusunu işaretleyin.</p>
+      ` : `
+        <div class="text-center py-6" style="border:1px dashed var(--border);border-radius:8px">
+          <svg class="mx-auto mb-2" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-faint)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <p class="text-sm text-gray-500">Bu sayıda öne çıkan makale seçilmemiş.</p>
+          <p class="text-xs text-gray-400 mt-1">Bir makalenin "Genel" sekmesinden "Öne Çıkan" kutusunu işaretleyin — hero banner otomatik güncellenir.</p>
+        </div>
+      `}
+    </div>
+
+    <!-- Issue-level PDFs -->
+    <div class="card card-padded mb-6">
+      <div class="flex items-start justify-between gap-4 mb-4">
+        <div>
+          <h2 class="font-semibold text-gray-900">Sayı PDF Dosyaları</h2>
+          <p class="text-xs text-gray-400 mt-1">Sayının tamamını ve kapak sayfasını ayrı PDF dosyaları olarak yönetin.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        ${issuePdfUploadCard('full', 'Full PDF', 'Sayının tüm sayfalarını içeren birleşik PDF', issueFiles.fullPdf)}
+        ${issuePdfUploadCard('cover', 'Cover PDF', 'Sayının yalnızca kapak sayfasını içeren PDF', issueFiles.coverPdf)}
+      </div>
+    </div>
 
     <!-- Batch JATS upload for this issue -->
     <div class="card card-padded mb-6">
@@ -2696,6 +2869,7 @@ route('/issues/:volume/:issue', async (el, { volume, issue }) => {
             <td class="px-4 py-3 text-center">${a.pdfUrl ? '<span class="text-green-500" title="PDF mevcut">&#10003;</span>' : '<span class="text-gray-300" title="PDF yok">&#8212;</span>'}</td>
             <td class="px-4 py-3 whitespace-nowrap">
               <a href="/site/article.html?id=${a.id}" target="_blank" rel="noopener" class="text-slate-600 hover:text-slate-800 text-xs mr-3" onclick="event.stopPropagation()">Önizle</a>
+              <button class="text-amber-700 hover:text-amber-900 text-xs mr-3" title="Makaleyi dosyalarıyla birlikte e-Pub Makaleler bölümüne geri al" onclick="event.stopPropagation(); returnArticleToAip(${a.id})">e-Pub'a Geri Al</button>
               <button class="text-red-500 hover:text-red-700 text-xs" onclick="event.stopPropagation(); deleteArticle(${a.id})">Sil</button>
             </td>
           </tr>`).join('')}</tbody>
@@ -2712,6 +2886,9 @@ route('/issues/:volume/:issue', async (el, { volume, issue }) => {
   dropZone.ondrop = (e) => { e.preventDefault(); dropZone.classList.remove('border-teal-400', 'bg-teal-50'); handleIssueXmlFiles(e.dataTransfer.files, volume, issue); };
   input.onchange = () => handleIssueXmlFiles(input.files, volume, issue);
 
+  setupIssuePdfUpload('full', volume, issue);
+  setupIssuePdfUpload('cover', volume, issue);
+
   // PDF drop zone for this issue
   const pdfDrop = document.getElementById('issue-pdf-drop');
   const pdfInput = document.getElementById('issue-pdf-input');
@@ -2721,6 +2898,148 @@ route('/issues/:volume/:issue', async (el, { volume, issue }) => {
   pdfDrop.ondrop = (e) => { e.preventDefault(); pdfDrop.classList.remove('border-teal-400', 'bg-teal-50'); handleIssuePdfUpload(e.dataTransfer.files); };
   pdfInput.onchange = () => handleIssuePdfUpload(pdfInput.files);
 });
+
+function issuePdfUploadCard(type, title, description, file) {
+  const hasFile = !!file?.url;
+  const uploadedAt = file?.uploadedAt
+    ? new Date(file.uploadedAt).toLocaleString('tr-TR')
+    : '';
+  return `
+    <section id="issue-${type}-pdf-card" class="rounded-xl p-4" style="border:1px solid var(--border);background:var(--bg-subtle)">
+      <div class="flex items-start justify-between gap-3 mb-3">
+        <div>
+          <h3 class="font-semibold text-gray-900">${esc(title)}</h3>
+          <p class="text-xs text-gray-500 mt-1">${esc(description)}</p>
+        </div>
+        <span class="badge ${hasFile ? 'badge-success' : 'badge-neutral'}">${hasFile ? 'Yüklendi' : 'Eksik'}</span>
+      </div>
+      ${hasFile ? `
+        <div class="bg-white rounded-lg p-3 mb-3" style="border:1px solid var(--border-soft)">
+          <div class="text-sm font-medium text-gray-900 truncate" title="${esc(file.originalName || '')}">${esc(file.originalName || `${title}.pdf`)}</div>
+          <div class="text-xs text-gray-400 mt-1">${esc(formatBytes(file.size || 0))}${uploadedAt ? ` · ${esc(uploadedAt)}` : ''}</div>
+          <div class="flex items-center gap-3 mt-2">
+            <a href="/site/${esc(file.url)}" target="_blank" rel="noopener" class="text-xs text-teal-700 hover:text-teal-900">Görüntüle</a>
+            <button type="button" class="text-xs text-red-500 hover:text-red-700" onclick="deleteIssuePdf('${type}')">Kaldır</button>
+          </div>
+        </div>
+      ` : ''}
+      <div id="issue-${type}-pdf-drop" class="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-teal-400 transition-colors cursor-pointer bg-white">
+        <p class="text-sm text-gray-600 font-medium">${hasFile ? 'PDF dosyasını değiştir' : 'PDF yükle'}</p>
+        <p class="text-xs text-gray-400 mt-1">Dosyayı sürükleyin veya seçmek için tıklayın</p>
+        <input id="issue-${type}-pdf-input" type="file" accept="application/pdf,.pdf" class="hidden">
+      </div>
+      <div id="issue-${type}-pdf-result" class="mt-3"></div>
+    </section>`;
+}
+
+function legacyIssuePdfId(type, volume, issue) {
+  const clean = (value) => String(value || '').replace(/[^a-zA-Z0-9._-]/g, '_');
+  return `issue-vol${clean(volume)}-${clean(issue)}-${type}`;
+}
+
+async function probeLegacyIssuePdf(type, volume, issue) {
+  const url = `js/data/pdfs/${legacyIssuePdfId(type, volume, issue)}.pdf`;
+  try {
+    const response = await fetch(`/site/${url}`, { method: 'HEAD', cache: 'no-store' });
+    if (!response.ok) return null;
+    return {
+      url,
+      originalName: type === 'full' ? 'Full PDF.pdf' : 'Cover PDF.pdf',
+      size: Number(response.headers.get('content-length')) || 0,
+      uploadedAt: '',
+      legacy: true,
+    };
+  } catch (_) {
+    return null;
+  }
+}
+
+async function loadIssuePdfFiles(volume, issue) {
+  let files = { fullPdf: null, coverPdf: null };
+  try {
+    files = await API.get(`/issues/${volume}/${issue}/files`);
+  } catch (_) {
+    // Older running server versions do not have the issue-files endpoint.
+  }
+  const [legacyFull, legacyCover] = await Promise.all([
+    files.fullPdf ? null : probeLegacyIssuePdf('full', volume, issue),
+    files.coverPdf ? null : probeLegacyIssuePdf('cover', volume, issue),
+  ]);
+  return {
+    fullPdf: files.fullPdf || legacyFull,
+    coverPdf: files.coverPdf || legacyCover,
+  };
+}
+
+function setupIssuePdfUpload(type, volume, issue) {
+  const drop = document.getElementById(`issue-${type}-pdf-drop`);
+  const input = document.getElementById(`issue-${type}-pdf-input`);
+  if (!drop || !input) return;
+
+  const upload = (files) => {
+    const file = files && files[0];
+    if (file) uploadIssuePdf(type, volume, issue, file);
+  };
+  drop.onclick = () => input.click();
+  drop.ondragover = (event) => {
+    event.preventDefault();
+    drop.classList.add('border-teal-400', 'bg-teal-50');
+  };
+  drop.ondragleave = () => drop.classList.remove('border-teal-400', 'bg-teal-50');
+  drop.ondrop = (event) => {
+    event.preventDefault();
+    drop.classList.remove('border-teal-400', 'bg-teal-50');
+    upload(event.dataTransfer.files);
+  };
+  input.onchange = () => upload(input.files);
+}
+
+async function uploadIssuePdf(type, volume, issue, file) {
+  if (!/\.pdf$/i.test(file.name || '')) {
+    toast('Yalnızca PDF dosyası yüklenebilir', 'error');
+    return;
+  }
+  const label = type === 'full' ? 'Full PDF' : 'Cover PDF';
+  const progress = renderUploadProgress(`issue-${type}-pdf-result`, [file], `${label} yükleniyor`);
+  try {
+    try {
+      await API.uploadFileWithProgress(
+        `/issues/${encodeURIComponent(volume)}/${encodeURIComponent(issue)}/files/${type}`,
+        file,
+        'pdf',
+        {},
+        progress.update
+      );
+    } catch (err) {
+      if (!/(not found|404|rotası bulunamadı)/i.test(String(err.message || ''))) throw err;
+      await API.uploadFileWithProgress(
+        '/media/upload/pdf',
+        file,
+        'pdf',
+        { articleId: legacyIssuePdfId(type, volume, issue) },
+        progress.update
+      );
+    }
+    toast(`${label} kaydedildi`);
+    handleRoute();
+  } catch (err) {
+    progress.fail(err.message);
+  }
+}
+
+async function deleteIssuePdf(type) {
+  const match = location.hash.match(/^#\/issues\/([^/]+)\/([^/]+)/);
+  if (!match) return;
+  const label = type === 'full' ? 'Full PDF' : 'Cover PDF';
+  if (!await confirmAction(`${label} kaldırılsın mı?`)) return;
+  try {
+    await API.del(`/issues/${encodeURIComponent(match[1])}/${encodeURIComponent(match[2])}/files/${type}`);
+    toast(`${label} kaldırıldı`);
+    handleRoute();
+  } catch (err) {
+    toast(err.message, 'error');
+  }
+}
 
 // --- Article move functions ---
 function toggleAllMoveCheckboxes(checked) {
@@ -2763,6 +3082,21 @@ async function moveSelectedArticles() {
     toast(`${result.moved} makale taşındı → Vol ${result.targetVolume}, Issue ${result.targetIssue}`);
     handleRoute();
   } catch (err) { toast(err.message, 'error'); }
+}
+
+async function returnArticleToAip(id) {
+  const confirmed = await confirmAction(
+    'Bu makale sayıdan çıkarılıp e-Pub Makaleler bölümüne geri alınacak. PDF, tam metin, görseller ve ek dosyalar korunacak. Devam edilsin mi?'
+  );
+  if (!confirmed) return;
+
+  try {
+    await API.post(`/articles/${id}/return-to-in-press`, {});
+    toast('Makale e-Pub Makaleler bölümüne geri alındı');
+    handleRoute();
+  } catch (err) {
+    toast(err.message, 'error');
+  }
 }
 
 async function handleIssuePdfUpload(files) {
@@ -2868,7 +3202,7 @@ async function renderAipArticles(el) {
     <div class="flex items-center gap-3 mb-4">
       <span class="text-sm flex-1" style="color:var(--text-muted)">${aip.length} baskıda makale</span>
       <a href="#/articles-in-press/new" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium whitespace-nowrap">+ Manuel Ekle</a>
-      ${aip.length ? `<button onclick="publishSelectedAip()" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium whitespace-nowrap">Seçilenleri Yayınla</button>` : ''}
+      ${aip.length ? `<button onclick="publishSelectedAip()" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium whitespace-nowrap">Seçilenleri Sayıya Taşı</button>` : ''}
     </div>
 
     ${aip.length ? `
@@ -2880,7 +3214,7 @@ async function renderAipArticles(el) {
           <option value="">Hedef sayı seçin...</option>
           ${issueOptions.map((o) => `<option value="${o.volume}|${o.issue}">${esc(o.label)}</option>`).join('')}
         </select>
-        <button onclick="doPublishAip()" class="btn btn-primary">Yayınla</button>
+        <button onclick="doPublishAip()" class="btn btn-primary">Sayıya Taşı</button>
       </div>
     </div>` : ''}
 
@@ -2922,6 +3256,7 @@ async function renderAipArticles(el) {
             <td class="px-4 py-3 text-right whitespace-nowrap">
               ${_aipIdx > 0 ? `<button class="btn btn-ghost btn-sm" title="Yukarı taşı" onclick="moveAip(${a.id},'up')">↑</button>` : `<span class="btn btn-ghost btn-sm invisible">↑</span>`}
               ${_aipIdx < aip.length - 1 ? `<button class="btn btn-ghost btn-sm" title="Aşağı taşı" onclick="moveAip(${a.id},'down')">↓</button>` : `<span class="btn btn-ghost btn-sm invisible">↓</span>`}
+              <button class="btn btn-primary btn-sm" title="Bu makaleyi seçilecek sayıya taşı" onclick="moveSingleAipToIssue(${a.id})">Sayıya Taşı</button>
               <a href="#/articles-in-press/${a.id}/edit?tab=fulltext" class="btn btn-ghost btn-sm" title="Doğrudan Tam Metin sekmesini aç">Tam Metin</a>
               <a href="#/articles-in-press/${a.id}/edit" class="btn btn-ghost btn-sm">Düzenle</a>
               <button class="btn btn-ghost btn-sm" style="color:var(--danger)" onclick="deleteAip(${a.id})">Sil</button>
@@ -2966,13 +3301,64 @@ async function doPublishAip() {
   const ids = [...document.querySelectorAll('.aip-check:checked')].map((c) => parseInt(c.dataset.id));
   if (!ids.length) return toast('Makale seçin', 'warning');
 
-  if (!await confirmAction(`${ids.length} makale Volume ${volume}, Issue ${issue} olarak yayınlanacak. Devam?`)) return;
+  if (!await confirmAction(`${ids.length} makale Volume ${volume}, Issue ${issue} sayısına taşınacak. Devam?`)) return;
 
   try {
     const result = await API.post('/articles-in-press/publish', { articleIds: ids, volume: Number(volume), issue });
-    toast(`${result.count} makale yayınlandı`);
+    toast(`${result.count} makale sayıya taşındı`);
     handleRoute();
   } catch (err) { toast(err.message, 'error'); }
+}
+
+async function moveSingleAipToIssue(id) {
+  let options = Array.isArray(window._aipIssueOptions) ? window._aipIssueOptions : [];
+  if (!options.length) {
+    const archive = await API.get('/issues');
+    options = archive.flatMap((yearGroup) =>
+      (yearGroup.issues || []).map((issue) => ({
+        label: `${yearGroup.year} — Vol ${issue.volume}, Issue ${issue.issue}`,
+        volume: issue.volume,
+        issue: issue.issue,
+      }))
+    );
+  }
+  if (!options.length) {
+    toast('Önce bir sayı oluşturun', 'warning');
+    return;
+  }
+
+  window._singleAipTarget = `${options[0].volume}|${options[0].issue}`;
+  const action = await modal('Makaleyi Sayıya Taşı', `
+    <p class="text-sm mb-4" style="color:var(--text-muted)">Makalenin taşınacağı sayıyı seçin. PDF, tam metin ve diğer dosyalar korunur.</p>
+    <label class="label" for="single-aip-target">Hedef Sayı</label>
+    <select id="single-aip-target" class="input" onchange="window._singleAipTarget=this.value">
+      ${options.map((option) => `<option value="${option.volume}|${esc(option.issue)}">${esc(option.label)}</option>`).join('')}
+    </select>
+  `, [
+    { label: 'İptal', value: 'cancel', class: 'btn-secondary' },
+    { label: 'Sayıya Taşı', value: 'move', class: 'btn-primary' },
+  ]);
+  if (action !== 'move') return;
+
+  const [volume, issue] = String(window._singleAipTarget || '').split('|');
+  if (!volume || !issue) {
+    toast('Hedef sayı seçilmedi', 'warning');
+    return;
+  }
+
+  try {
+    await API.post('/articles-in-press/publish', {
+      articleIds: [Number(id)],
+      volume: Number(volume),
+      issue,
+    });
+    toast(`Makale Volume ${volume}, Issue ${issue} sayısına taşındı`);
+    handleRoute();
+  } catch (err) {
+    toast(err.message, 'error');
+  } finally {
+    delete window._singleAipTarget;
+  }
 }
 
 async function deleteAip(id) {
@@ -3060,17 +3446,17 @@ function renderAipForm(el, article, opts = {}) {
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
           <div><label class="label">Alındığı Tarih</label>
-            <input id="aipf-received" type="date" value="${a.received || ''}" class="input"></div>
+            <input id="aipf-received" type="date" value="${dateInputValue(a.received)}" class="input"></div>
           <div><label class="label">Kabul Tarihi</label>
-            <input id="aipf-accepted" type="date" value="${a.accepted || ''}" class="input"></div>
+            <input id="aipf-accepted" type="date" value="${dateInputValue(a.accepted)}" class="input"></div>
           <div><label class="label">PMID</label>
             <input id="aipf-pmid" value="${esc(a.pmid || '')}" class="input"></div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <div><label class="label">Epub Tarihi <span class="font-normal" style="color:var(--text-faint)">(çevrimiçi yayın)</span></label>
-            <input id="aipf-published-online" type="date" value="${a.publishedOnline || ''}" class="input"></div>
+            <input id="aipf-published-online" type="date" value="${dateInputValue(a.publishedOnline)}" class="input"></div>
           <div><label class="label">Makale Yayın Tarihi</label>
-            <input id="aipf-published" type="date" value="${a.published || ''}" class="input"></div>
+            <input id="aipf-published" type="date" value="${dateInputValue(a.published)}" class="input"></div>
         </div>
       </div>
 
@@ -3374,11 +3760,12 @@ function _applyAipDocxMetadata(meta) {
   setVal('aipf-type', meta.type);
   setVal('aipf-doi', meta.doi);
   setVal('aipf-title', meta.title);
-  setVal('aipf-received', meta.received);
-  setVal('aipf-accepted', meta.accepted);
-  // The AIP form has no "published" date field — that's a journal-system
-  // decision, not in the manuscript — so meta.published is ignored.
-  setVal('aipf-keywords', (meta.keywords || []).join(', '));
+  setVal('aipf-received', dateInputValue(meta.received));
+  setVal('aipf-accepted', dateInputValue(meta.accepted));
+  setVal('aipf-published-online', dateInputValue(meta.publishedOnline));
+  setVal('aipf-published', dateInputValue(meta.published));
+  // Keywords are intentionally NOT imported (no keyword feature) — the field is
+  // left untouched.
 
   // Authors + Kurumlar: rebuild both lists from the parsed authors.
   const affList = document.getElementById('aipf-affiliations-list');
@@ -3642,6 +4029,8 @@ async function saveAip(isNew) {
 
   if (!data.title) { toast('Başlık zorunludur', 'error'); return; }
   if (!data.type) { toast('Makale türü zorunludur', 'error'); return; }
+  const dateError = articleDateSequenceError(data);
+  if (dateError) { toast(dateError, 'error'); return; }
   // Authors aren't strictly required by the data model, but an article with
   // zero authors is almost always an oversight — warn before silently saving
   // a record that will display "by (no authors)" on the public page.
@@ -4154,6 +4543,8 @@ function _parsePastedDateToISO(raw) {
     y = Number(y); mo = Number(mo); d = Number(d);
     if (!y || mo < 1 || mo > 12 || d < 1 || d > 31) return null;
     if (y < 100) y += 2000; // 2-digit year → 20yy
+    const check = new Date(Date.UTC(y, mo - 1, d));
+    if (check.getUTCFullYear() !== y || check.getUTCMonth() !== mo - 1 || check.getUTCDate() !== d) return null;
     return String(y).padStart(4, '0') + '-' + String(mo).padStart(2, '0') + '-' + String(d).padStart(2, '0');
   };
   let m;
@@ -13389,7 +13780,7 @@ function _hsCard(key) {
         </div>
         <div class="inline-flex items-center bg-gray-100 rounded-lg p-0.5 text-xs font-medium flex-shrink-0">${seg('auto', 'Otomatik')}${seg('manual', 'Manuel')}</div>
       </div>
-      ${isManual ? '' : '<p class="text-xs mb-2" style="color:var(--text-faint)">⚙ Otomatik — aşağıdaki liste sitede şu an görünen sıralamanın önizlemesidir. Değiştirmek için “Manuel”e geçin.</p>'}
+      ${isManual ? '' : `<p class="text-xs mb-2" style="color:var(--text-faint)">⚙ Otomatik — yeni sayı, e-Pub listesi ve metrik değişiklikleri kendiliğinden uygulanır.${key === 'top-cited' || key === 'most-downloaded' ? ' Canlı site güncel dış metrikleri aldığı için sıralama bu saklı veri önizlemesinden farklılaşabilir.' : ''} Değiştirmek için “Manuel”e geçin.</p>`}
       <div class="border rounded-lg overflow-hidden" style="border-color:var(--border-soft)">
         ${rows || '<p class="text-xs px-4 py-3" style="color:var(--text-faint)">Bu bölümde gösterilecek makale yok.</p>'}
       </div>
@@ -13426,9 +13817,12 @@ function _hsArticleRow(key, a, i, isManual, total) {
 function _hsAddBox(key) {
   const full = _hsState.ids[key].length >= 6;
   if (full) return '<p class="text-xs mt-2" style="color:#b45309">En fazla 6 makale gösterilir. Eklemek için önce birini çıkarın.</p>';
+  const ph = _HS_META[key].pool === 'news'
+    ? 'Haber ara (başlık, kategori veya ID)…'
+    : 'Makale ara (başlık, yazar, DOI veya ID)…';
   return `
     <div class="mt-2">
-      <input type="text" placeholder="Makale ara (başlık, yazar veya ID)…" oninput="hsSearch('${key}', this.value)" class="input w-full text-sm" style="margin-bottom:6px">
+      <input type="text" placeholder="${ph}" oninput="hsSearch('${key}', this.value)" class="input w-full text-sm" style="margin-bottom:6px">
       <div id="hs-results-${key}" class="border rounded-lg max-h-56 overflow-auto hidden" style="border-color:var(--border-soft)"></div>
     </div>`;
 }
@@ -13459,8 +13853,10 @@ function hsSearch(key, q) {
   q = (q || '').trim().toLowerCase();
   if (!q) { box.classList.add('hidden'); box.innerHTML = ''; return; }
   const have = new Set(_hsState.ids[key].map(String));
-  const hay = (a) => [a.title, a.id, (a.authors || []).join(' '), a.category, a.excerpt].filter(Boolean).join(' ').toLowerCase();
-  const subOf = (a) => meta.pool === 'news' ? [a.category, a.date].filter(Boolean).join(' · ') : (a.authors || []).slice(0, 3).join(', ');
+  const hay = (a) => [a.title, a.id, a.doi, (a.authors || []).join(' '), a.category, a.excerpt].filter(Boolean).join(' ').toLowerCase();
+  const subOf = (a) => meta.pool === 'news'
+    ? [a.category, a.date].filter(Boolean).join(' · ')
+    : [(a.authors || []).slice(0, 3).join(', '), a.doi].filter(Boolean).join(' · ');
   const matches = pool.filter((a) => !have.has(String(a.id)) && hay(a).includes(q)).slice(0, 12);
   box.classList.remove('hidden');
   box.innerHTML = matches.length ? matches.map((a) => `
@@ -13503,6 +13899,710 @@ function _hsReorderByDrop(srcRow, targetRow, above) {
   const insertAt = above ? target : target + 1;
   arr.splice(Math.max(0, Math.min(insertAt, arr.length)), 0, item);
   _hsRender();
+}
+
+const _HP_POPUP_TYPE_META = {
+  announcement: { label: 'Duyuru', desc: 'Metin, görsel ve buton içeren duyuru pop-up\'ı.' },
+  video: { label: 'Video', desc: 'Sunucuya yüklenen video dosyasını oynatır.' },
+  embed: { label: 'Embed Video', desc: 'YouTube veya Vimeo bağlantısını gömer.' },
+};
+let _hpPopupState = null;
+
+function _hpPopupDefaultItem(type = 'announcement') {
+  return {
+    id: 'popup-item-' + Date.now() + '-' + Math.random().toString(36).slice(2, 7),
+    active: true,
+    type,
+    badge: '',
+    title: '',
+    body: '',
+    imageUrl: '',
+    videoUrl: '',
+    posterUrl: '',
+    embedUrl: '',
+    buttonText: '',
+    buttonUrl: '',
+    openInNewTab: true,
+    startsAt: '',
+    endsAt: '',
+  };
+}
+
+function _hpPopupNormalize(data) {
+  const safe = data && typeof data === 'object' ? data : {};
+  return {
+    enabled: !!safe.enabled,
+    delayMs: Number.isFinite(Number(safe.delayMs)) ? Number(safe.delayMs) : 700,
+    frequency: ['always', 'session', 'cooldown'].includes(String(safe.frequency || '')) ? String(safe.frequency) : 'session',
+    dismissHours: Number.isFinite(Number(safe.dismissHours)) ? Number(safe.dismissHours) : 24,
+    updatedAt: safe.updatedAt || '',
+    items: Array.isArray(safe.items) ? safe.items.map((item) => ({
+      ..._hpPopupDefaultItem(item && item.type),
+      ...(item || {}),
+    })) : [],
+  };
+}
+
+function _hpPopupSafeUrl(value, allowRelative = true) {
+  const raw = String(value || '').trim();
+  if (!raw) return '';
+  if (allowRelative && !/^[a-z][a-z0-9+.-]*:/i.test(raw) && !raw.startsWith('//')) return raw;
+  try {
+    const parsed = new URL(raw, window.location.origin);
+    return ['http:', 'https:'].includes(parsed.protocol) ? parsed.href : '';
+  } catch {
+    return '';
+  }
+}
+
+function _hpPopupEmbedUrl(value) {
+  const raw = _hpPopupSafeUrl(value, false);
+  if (!raw) return '';
+  try {
+    const parsed = new URL(raw);
+    const host = parsed.hostname.replace(/^www\./i, '').toLowerCase();
+    if (host === 'youtu.be') {
+      const id = parsed.pathname.replace(/^\/+/, '').split('/')[0];
+      return id ? `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}` : '';
+    }
+    if (host === 'youtube.com' || host === 'm.youtube.com' || host === 'youtube-nocookie.com') {
+      if (parsed.pathname.startsWith('/embed/')) return parsed.href;
+      const id = parsed.searchParams.get('v') || (parsed.pathname.startsWith('/shorts/') ? parsed.pathname.split('/')[2] : '');
+      return id ? `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}` : '';
+    }
+    if (host === 'vimeo.com' || host === 'player.vimeo.com') {
+      if (host === 'player.vimeo.com') return parsed.href;
+      const id = parsed.pathname.replace(/^\/+/, '').split('/')[0];
+      return id ? `https://player.vimeo.com/video/${encodeURIComponent(id)}` : '';
+    }
+  } catch {
+    return '';
+  }
+  return '';
+}
+
+function _hpPopupItemHasContent(item) {
+  if (!item) return false;
+  if (item.type === 'video') return !!_hpPopupSafeUrl(item.videoUrl);
+  if (item.type === 'embed') return !!_hpPopupEmbedUrl(item.embedUrl);
+  return !!(String(item.title || '').trim() || String(item.body || '').trim() || _hpPopupSafeUrl(item.imageUrl));
+}
+
+function _hpPopupItemStatus(item) {
+  if (item.active === false) return { label: 'Pasif', tone: 'neutral' };
+  if (!_hpPopupItemHasContent(item)) return { label: 'Eksik içerik', tone: 'danger' };
+  const start = item.startsAt ? new Date(item.startsAt).getTime() : 0;
+  const end = item.endsAt ? new Date(item.endsAt).getTime() : 0;
+  if ((item.startsAt && !start) || (item.endsAt && !end) || (start && end && end <= start)) {
+    return { label: 'Tarih hatası', tone: 'danger' };
+  }
+  const now = Date.now();
+  if (start && now < start) return { label: 'Planlandı', tone: 'info' };
+  if (end && now > end) return { label: 'Süresi doldu', tone: 'warning' };
+  return { label: 'Yayına hazır', tone: 'success' };
+}
+
+function _hpPopupStatusStyle(tone) {
+  return {
+    success: 'background:#ecfdf5;color:#047857',
+    info: 'background:#eff6ff;color:#1d4ed8',
+    warning: 'background:#fffbeb;color:#b45309',
+    danger: 'background:#fef2f2;color:#b91c1c',
+    neutral: 'background:var(--bg-subtle);color:var(--text-muted)',
+  }[tone] || 'background:var(--bg-subtle);color:var(--text-muted)';
+}
+
+function _hpPopupValidation(data) {
+  const errors = [];
+  const warnings = [];
+  const activeItems = (data.items || []).filter((item) => item.active !== false);
+
+  (data.items || []).forEach((item, index) => {
+    if (item.active === false) return;
+    const label = `Pop-up ${index + 1}`;
+    if (!_hpPopupItemHasContent(item)) {
+      errors.push(`${label}: seçilen içerik türü için gerekli içerik veya medya eksik.`);
+    }
+    const start = item.startsAt ? new Date(item.startsAt).getTime() : 0;
+    const end = item.endsAt ? new Date(item.endsAt).getTime() : 0;
+    if ((item.startsAt && !start) || (item.endsAt && !end)) errors.push(`${label}: tarih formatı geçersiz.`);
+    if (start && end && end <= start) errors.push(`${label}: bitiş tarihi başlangıç tarihinden sonra olmalı.`);
+    if ((item.buttonText && !item.buttonUrl) || (!item.buttonText && item.buttonUrl)) {
+      errors.push(`${label}: buton metni ve bağlantısı birlikte girilmeli.`);
+    }
+    if (item.buttonUrl && !_hpPopupSafeUrl(item.buttonUrl)) errors.push(`${label}: buton bağlantısı geçersiz.`);
+    if (item.type === 'embed' && item.embedUrl && !_hpPopupEmbedUrl(item.embedUrl)) {
+      errors.push(`${label}: yalnızca YouTube veya Vimeo bağlantısı kullanılabilir.`);
+    }
+  });
+
+  if (data.enabled && !activeItems.length) errors.push('Pop-up aktifken en az bir aktif içerik gerekli.');
+  const eligibleNow = activeItems.filter((item) => _hpPopupItemStatus(item).label === 'Yayına hazır');
+  if (data.enabled && activeItems.length && !eligibleNow.length) {
+    warnings.push('Şu anda gösterime uygun içerik yok; pop-up planlanan başlangıç tarihine kadar görünmeyecek.');
+  }
+  return { errors, warnings };
+}
+
+route('/homepage-popup', async (el) => {
+  el.innerHTML = `${pageHeader({ title: 'Anasayfa Pop-up', subtitle: 'Yükleniyor…', eyebrow: 'Anasayfa' })}`;
+  let data;
+  try {
+    const homepage = await API.get('/homepage');
+    data = homepage && homepage.popup;
+  }
+  catch (e) {
+    el.innerHTML = `${pageHeader({ title: 'Anasayfa Pop-up', subtitle: 'Veri okunamadı', eyebrow: 'Anasayfa' })}<div class="card card-padded" style="border-color:#fecaca;background:#fef2f2;color:#b91c1c">${esc(e.message)}</div>`;
+    return;
+  }
+  _hpPopupState = { el, data: _hpPopupNormalize(data) };
+  clearDirty();
+  renderHomepagePopupAdmin();
+});
+
+function renderHomepagePopupAdmin() {
+  if (!_hpPopupState) return;
+  const { el, data } = _hpPopupState;
+  const items = data.items || [];
+  const freqLabel = data.frequency === 'always'
+    ? 'Her açılışta göster'
+    : data.frequency === 'cooldown'
+      ? `${data.dismissHours} saat gizle`
+      : 'Oturum başına bir kez göster';
+
+  el.innerHTML = `
+    ${pageHeader({
+      eyebrow: 'Anasayfa',
+      title: 'Anasayfa Pop-up',
+      subtitle: `Ana sayfadaki duyuru ve video pop-up'ını yönetin. Durum: <strong>${data.enabled ? 'aktif' : 'pasif'}</strong>. Gösterim kuralı: <strong>${esc(freqLabel)}</strong>.`,
+      actions: `
+        <button onclick="navigate('#/homepage-popup')" class="btn btn-secondary text-sm">Yenile</button>
+        <button onclick="previewHomepagePopupAdmin()" class="btn btn-secondary text-sm">Önizle</button>
+        <button onclick="saveHomepagePopupAdmin()" class="btn btn-primary text-sm">Kaydet</button>
+      `,
+    })}
+
+    <div class="grid gap-5" style="grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr)">
+      <div class="space-y-5">
+        <div class="card card-padded">
+          <div class="flex items-start justify-between gap-3 mb-4">
+            <div>
+              <h2 class="text-base font-semibold" style="color:var(--text-strong)">Genel Ayarlar</h2>
+              <p class="text-xs mt-1" style="color:var(--text-muted)">Açılış gecikmesi ve tekrar gösterim davranışı.</p>
+            </div>
+            <label class="inline-flex items-center gap-2 text-sm font-medium" style="color:var(--text-strong)">
+              <input type="checkbox" ${data.enabled ? 'checked' : ''} onchange="setHomepagePopupGlobal('enabled', this.checked, true)">
+              Aktif
+            </label>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <label class="block">
+              <span class="text-xs font-medium" style="color:var(--text-muted)">Açılış gecikmesi (ms)</span>
+              <input type="number" min="0" max="10000" value="${esc(String(data.delayMs))}" oninput="setHomepagePopupGlobal('delayMs', this.value)" class="input w-full mt-1">
+            </label>
+            <label class="block">
+              <span class="text-xs font-medium" style="color:var(--text-muted)">Tekrar gösterim</span>
+              <select onchange="setHomepagePopupGlobal('frequency', this.value, true)" class="input w-full mt-1">
+                <option value="session" ${data.frequency === 'session' ? 'selected' : ''}>Oturum başına bir kez</option>
+                <option value="always" ${data.frequency === 'always' ? 'selected' : ''}>Her açılışta</option>
+                <option value="cooldown" ${data.frequency === 'cooldown' ? 'selected' : ''}>Belirli süre gizle</option>
+              </select>
+            </label>
+            ${data.frequency === 'cooldown' ? `
+              <label class="block sm:col-span-2">
+                <span class="text-xs font-medium" style="color:var(--text-muted)">Tekrar gösterme süresi (saat)</span>
+                <input type="number" min="1" max="720" value="${esc(String(data.dismissHours))}" oninput="setHomepagePopupGlobal('dismissHours', this.value)" class="input w-full mt-1">
+              </label>` : ''}
+          </div>
+          <div class="mt-4 text-xs" style="color:var(--text-faint)">Kaydetme sonrası yeni sürüm oluşur; daha önce kapatmış kullanıcıya tekrar gösterilir.</div>
+        </div>
+
+        <div class="card card-padded">
+          <div class="flex items-start justify-between gap-3 mb-4">
+            <div>
+              <h2 class="text-base font-semibold" style="color:var(--text-strong)">Pop-up Listesi</h2>
+              <p class="text-xs mt-1" style="color:var(--text-muted)">Birden fazla aktif pop-up, ziyaretçiye belirlediğiniz sırayla tek bir akış içinde gösterilir.</p>
+            </div>
+            <button onclick="addHomepagePopupItem()" class="btn btn-primary text-sm">+ Yeni Pop-up Ekle</button>
+          </div>
+          <div class="space-y-4">
+            ${items.length ? items.map((item, idx) => renderHomepagePopupItem(item, idx, items.length)).join('') : `
+              <div class="rounded-xl border border-dashed p-7 text-center" style="border-color:var(--border-soft);background:var(--bg-subtle)">
+                <div class="text-sm font-semibold" style="color:var(--text-strong)">Henüz pop-up eklenmedi</div>
+                <p class="text-xs mt-1 mb-4" style="color:var(--text-muted)">Duyuru, görsel veya video içeren ilk pop-up'ı oluşturun.</p>
+                <button onclick="addHomepagePopupItem()" class="btn btn-primary text-sm">+ Yeni Pop-up Ekle</button>
+              </div>`}
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-5">
+        <div class="card card-padded">
+          <h2 class="text-base font-semibold mb-3" style="color:var(--text-strong)">Özet</h2>
+          <div class="space-y-2 text-sm">
+            <div class="flex items-center justify-between gap-3"><span style="color:var(--text-muted)">Durum</span><strong style="color:var(--text-strong)">${data.enabled ? 'Aktif' : 'Pasif'}</strong></div>
+            <div class="flex items-center justify-between gap-3"><span style="color:var(--text-muted)">Toplam pop-up</span><strong style="color:var(--text-strong)">${items.length}</strong></div>
+            <div class="flex items-center justify-between gap-3"><span style="color:var(--text-muted)">Aktif pop-up</span><strong style="color:var(--text-strong)">${items.filter((item) => item.active !== false).length}</strong></div>
+            <div class="flex items-center justify-between gap-3"><span style="color:var(--text-muted)">Son kaydetme</span><strong style="color:var(--text-strong)">${data.updatedAt ? esc(new Date(data.updatedAt).toLocaleString('tr-TR')) : 'Henüz yok'}</strong></div>
+          </div>
+        </div>
+
+        <div class="card card-padded">
+          <h2 class="text-base font-semibold mb-3" style="color:var(--text-strong)">Notlar</h2>
+          <div class="space-y-3 text-sm" style="color:var(--text-muted);line-height:1.6">
+            <p>Başlık, metin ve görsel alanları opsiyoneldir. Pop-up yalnız görselden veya yalnız metinden oluşabilir.</p>
+            <p>Yalnız görsel kullanıldığında görsel kırpılmaz; kendi en-boy oranı korunarak gösterilir.</p>
+            <p>Video tipi için yerel dosya yükleyin. Embed tipi için YouTube veya Vimeo bağlantısı kullanın.</p>
+            <p>Başlangıç ve bitiş tarihlerini boş bırakırsanız öğe sürekli yayında kalır.</p>
+          </div>
+        </div>
+      </div>
+    </div>`;
+}
+
+function renderHomepagePopupItem(item, idx, total) {
+  const meta = _HP_POPUP_TYPE_META[item.type] || _HP_POPUP_TYPE_META.announcement;
+  const status = _hpPopupItemStatus(item);
+  const displayTitle = String(item.title || '').trim() || `Pop-up ${idx + 1}`;
+  const mediaPreview = item.type === 'video' && item.videoUrl
+    ? `<video src="${esc(item.videoUrl)}" controls preload="metadata" ${item.posterUrl ? `poster="${esc(item.posterUrl)}"` : ''} class="w-full rounded-lg border mt-2" style="border-color:var(--border-soft);max-height:220px;background:#0f172a"></video>`
+    : item.type === 'embed' && item.embedUrl
+      ? `<div class="mt-2 rounded-lg border px-3 py-2 text-xs" style="border-color:var(--border-soft);color:var(--text-faint)">Embed URL: ${esc(item.embedUrl)}</div>`
+      : item.imageUrl
+        ? `<img src="${esc(item.imageUrl)}" alt="" class="mt-2 rounded-lg border" style="border-color:var(--border-soft);max-height:220px;object-fit:cover">`
+        : '';
+
+  return `
+    <div class="rounded-xl border p-4" data-homepage-popup-card="${idx}" style="border-color:var(--border-soft)">
+      <div class="flex items-start justify-between gap-3 mb-4">
+        <div>
+          <div class="text-xs font-semibold uppercase tracking-wide" style="color:var(--text-faint)">Gösterim sırası ${idx + 1}</div>
+          <h3 class="text-sm font-semibold mt-1" style="color:var(--text-strong)">${esc(displayTitle)}</h3>
+          <p class="text-xs mt-1" style="color:var(--text-muted)">${esc(meta.label)} · ${esc(meta.desc)}</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2 justify-end">
+          <span data-popup-item-status="${idx}" class="text-xs font-semibold px-2 py-1 rounded-full" style="${_hpPopupStatusStyle(status.tone)}">${esc(status.label)}</span>
+          <label class="inline-flex items-center gap-1.5 text-xs" style="color:var(--text-muted)">
+            <input type="checkbox" ${item.active !== false ? 'checked' : ''} onchange="setHomepagePopupItem(${idx}, 'active', this.checked)">
+            Aktif
+          </label>
+          <button onclick="previewHomepagePopupAdmin(${idx})" class="btn btn-secondary text-xs">Önizle</button>
+          <button onclick="duplicateHomepagePopupItem(${idx})" class="btn btn-secondary text-xs">Kopyala</button>
+          <button onclick="moveHomepagePopupItem(${idx}, -1)" ${idx === 0 ? 'disabled' : ''} class="btn btn-secondary text-xs disabled:opacity-40">▲</button>
+          <button onclick="moveHomepagePopupItem(${idx}, 1)" ${idx === total - 1 ? 'disabled' : ''} class="btn btn-secondary text-xs disabled:opacity-40">▼</button>
+          <button onclick="removeHomepagePopupItem(${idx})" class="btn btn-secondary text-xs" style="color:#b91c1c">Sil</button>
+        </div>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2">
+        <label class="block">
+          <span class="text-xs font-medium" style="color:var(--text-muted)">Tür</span>
+          <select onchange="setHomepagePopupItem(${idx}, 'type', this.value, true)" class="input w-full mt-1">
+            <option value="announcement" ${item.type === 'announcement' ? 'selected' : ''}>Duyuru</option>
+            <option value="video" ${item.type === 'video' ? 'selected' : ''}>Video</option>
+            <option value="embed" ${item.type === 'embed' ? 'selected' : ''}>Embed Video</option>
+          </select>
+        </label>
+        <label class="block">
+          <span class="text-xs font-medium" style="color:var(--text-muted)">Üst etiket <span style="color:var(--text-faint)">(opsiyonel)</span></span>
+          <input type="text" value="${esc(item.badge || '')}" oninput="setHomepagePopupItem(${idx}, 'badge', this.value)" class="input w-full mt-1" placeholder="Örn. Webinar">
+        </label>
+        <label class="block sm:col-span-2">
+          <span class="text-xs font-medium" style="color:var(--text-muted)">Başlık <span style="color:var(--text-faint)">(opsiyonel)</span></span>
+          <input type="text" value="${esc(item.title || '')}" oninput="setHomepagePopupItem(${idx}, 'title', this.value)" class="input w-full mt-1" placeholder="Pop-up başlığı">
+        </label>
+        <label class="block sm:col-span-2">
+          <span class="text-xs font-medium" style="color:var(--text-muted)">Metin <span style="color:var(--text-faint)">(opsiyonel)</span></span>
+          <textarea rows="4" oninput="setHomepagePopupItem(${idx}, 'body', this.value)" class="input w-full mt-1" placeholder="Satır sonları korunur.">${esc(item.body || '')}</textarea>
+        </label>
+        <label class="block">
+          <span class="text-xs font-medium" style="color:var(--text-muted)">Başlangıç tarihi</span>
+          <input type="datetime-local" value="${esc(item.startsAt || '')}" onchange="setHomepagePopupItem(${idx}, 'startsAt', this.value)" class="input w-full mt-1">
+        </label>
+        <label class="block">
+          <span class="text-xs font-medium" style="color:var(--text-muted)">Bitiş tarihi</span>
+          <input type="datetime-local" value="${esc(item.endsAt || '')}" onchange="setHomepagePopupItem(${idx}, 'endsAt', this.value)" class="input w-full mt-1">
+        </label>
+      </div>
+
+      ${renderHomepagePopupMediaFields(item, idx)}
+
+      <div class="grid gap-4 sm:grid-cols-2 mt-4">
+        <label class="block">
+          <span class="text-xs font-medium" style="color:var(--text-muted)">Buton metni</span>
+          <input type="text" value="${esc(item.buttonText || '')}" oninput="setHomepagePopupItem(${idx}, 'buttonText', this.value)" class="input w-full mt-1" placeholder="Örn. Detayı Gör">
+        </label>
+        <label class="block">
+          <span class="text-xs font-medium" style="color:var(--text-muted)">Buton bağlantısı</span>
+          <input type="text" value="${esc(item.buttonUrl || '')}" oninput="setHomepagePopupItem(${idx}, 'buttonUrl', this.value)" class="input w-full mt-1" placeholder="https://... veya relative URL">
+        </label>
+      </div>
+      <label class="inline-flex items-center gap-2 text-xs mt-3" style="color:var(--text-muted)">
+        <input type="checkbox" ${item.openInNewTab !== false ? 'checked' : ''} onchange="setHomepagePopupItem(${idx}, 'openInNewTab', this.checked)">
+        Buton yeni sekmede açılsın
+      </label>
+      ${mediaPreview}
+    </div>`;
+}
+
+function renderHomepagePopupMediaFields(item, idx) {
+  if (item.type === 'video') {
+    return `
+      <div class="grid gap-4 sm:grid-cols-2 mt-4">
+        <label class="block">
+          <span class="text-xs font-medium" style="color:var(--text-muted)">Video URL</span>
+          <div class="flex gap-2 mt-1">
+            <input type="text" value="${esc(item.videoUrl || '')}" oninput="setHomepagePopupItem(${idx}, 'videoUrl', this.value)" class="input flex-1" placeholder="images/videos/...">
+            <button onclick="uploadHomepagePopupAsset(${idx}, 'video', 'videoUrl')" class="btn btn-secondary text-xs">Yükle</button>
+          </div>
+        </label>
+        <label class="block">
+          <span class="text-xs font-medium" style="color:var(--text-muted)">Poster görseli</span>
+          <div class="flex gap-2 mt-1">
+            <input type="text" value="${esc(item.posterUrl || '')}" oninput="setHomepagePopupItem(${idx}, 'posterUrl', this.value)" class="input flex-1" placeholder="images/...">
+            <button onclick="uploadHomepagePopupAsset(${idx}, 'image', 'posterUrl')" class="btn btn-secondary text-xs">Yükle</button>
+          </div>
+        </label>
+      </div>`;
+  }
+  if (item.type === 'embed') {
+    return `
+      <div class="mt-4">
+        <label class="block">
+          <span class="text-xs font-medium" style="color:var(--text-muted)">Embed bağlantısı</span>
+          <input type="text" value="${esc(item.embedUrl || '')}" oninput="setHomepagePopupItem(${idx}, 'embedUrl', this.value)" class="input w-full mt-1" placeholder="YouTube veya Vimeo bağlantısı">
+        </label>
+      </div>`;
+  }
+  return `
+    <div class="mt-4">
+      <label class="block">
+        <span class="text-xs font-medium" style="color:var(--text-muted)">Görsel URL <span style="color:var(--text-faint)">(opsiyonel)</span></span>
+        <div class="flex gap-2 mt-1">
+          <input type="text" value="${esc(item.imageUrl || '')}" oninput="setHomepagePopupItem(${idx}, 'imageUrl', this.value)" class="input flex-1" placeholder="images/...">
+          <button onclick="uploadHomepagePopupAsset(${idx}, 'image', 'imageUrl')" class="btn btn-secondary text-xs">Yükle</button>
+        </div>
+      </label>
+    </div>`;
+}
+
+function setHomepagePopupGlobal(key, value, rerender = false) {
+  if (!_hpPopupState) return;
+  if (key === 'delayMs' || key === 'dismissHours') value = Math.max(0, Number(value) || 0);
+  _hpPopupState.data[key] = value;
+  markDirty();
+  if (rerender) renderHomepagePopupAdmin();
+}
+
+function setHomepagePopupItem(idx, key, value, rerender = false) {
+  if (!_hpPopupState || !_hpPopupState.data.items[idx]) return;
+  if (key === 'type') {
+    const next = _hpPopupDefaultItem(value);
+    _hpPopupState.data.items[idx] = { ...next, ..._hpPopupState.data.items[idx], type: value };
+  } else {
+    _hpPopupState.data.items[idx][key] = value;
+  }
+  markDirty();
+  if (rerender) {
+    renderHomepagePopupAdmin();
+  } else {
+    const status = _hpPopupItemStatus(_hpPopupState.data.items[idx]);
+    const statusEl = document.querySelector(`[data-popup-item-status="${idx}"]`);
+    if (statusEl) {
+      statusEl.textContent = status.label;
+      statusEl.setAttribute('style', _hpPopupStatusStyle(status.tone));
+    }
+  }
+}
+
+function addHomepagePopupItem(type) {
+  if (!_hpPopupState) return;
+  if (_hpPopupState.data.items.length >= 12) {
+    toast('En fazla 12 pop-up eklenebilir.', 'warning');
+    return;
+  }
+  const item = _hpPopupDefaultItem(type || 'announcement');
+  _hpPopupState.data.items.push(item);
+  const idx = _hpPopupState.data.items.length - 1;
+  renderHomepagePopupAdmin();
+  markDirty();
+  window.setTimeout(() => {
+    const card = document.querySelector(`[data-homepage-popup-card="${idx}"]`);
+    if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const titleInput = card && card.querySelector('input[placeholder="Pop-up başlığı"]');
+    if (titleInput) titleInput.focus();
+  }, 0);
+}
+
+function duplicateHomepagePopupItem(idx) {
+  if (!_hpPopupState || !_hpPopupState.data.items[idx]) return;
+  if (_hpPopupState.data.items.length >= 12) {
+    toast('En fazla 12 pop-up eklenebilir.', 'warning');
+    return;
+  }
+  const source = _hpPopupState.data.items[idx];
+  const copy = {
+    ...source,
+    id: 'popup-item-' + Date.now() + '-' + Math.random().toString(36).slice(2, 7),
+    title: source.title ? `${source.title} (Kopya)` : '',
+    active: false,
+  };
+  _hpPopupState.data.items.splice(idx + 1, 0, copy);
+  renderHomepagePopupAdmin();
+  markDirty();
+  toast('Pop-up kopyalandı ve pasif olarak eklendi.');
+  window.setTimeout(() => {
+    const card = document.querySelector(`[data-homepage-popup-card="${idx + 1}"]`);
+    if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, 0);
+}
+
+function moveHomepagePopupItem(idx, dir) {
+  if (!_hpPopupState) return;
+  const arr = _hpPopupState.data.items;
+  const next = idx + dir;
+  if (next < 0 || next >= arr.length) return;
+  const tmp = arr[idx];
+  arr[idx] = arr[next];
+  arr[next] = tmp;
+  renderHomepagePopupAdmin();
+  markDirty();
+}
+
+async function removeHomepagePopupItem(idx) {
+  if (!_hpPopupState || !_hpPopupState.data.items[idx]) return;
+  const title = _hpPopupState.data.items[idx].title || `Pop-up ${idx + 1}`;
+  const ok = await confirmAction(`"${title}" silinsin mi?`);
+  if (!ok) return;
+  _hpPopupState.data.items.splice(idx, 1);
+  renderHomepagePopupAdmin();
+  markDirty();
+}
+
+async function uploadHomepagePopupAsset(idx, kind, field) {
+  if (!_hpPopupState || !_hpPopupState.data.items[idx]) return;
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = kind === 'video' ? 'video/mp4,video/webm,video/ogg,video/quicktime,.mp4,.webm,.ogv,.mov' : 'image/*';
+  input.onchange = async () => {
+    const file = input.files && input.files[0];
+    if (!file) return;
+    try {
+      const result = await API.uploadFile(kind === 'video' ? '/media/upload/video' : '/media/upload/image', file, kind === 'video' ? 'video' : 'image');
+      _hpPopupState.data.items[idx][field] = result.url || '';
+      renderHomepagePopupAdmin();
+      markDirty();
+      toast(kind === 'video' ? 'Video yüklendi' : 'Görsel yüklendi');
+    } catch (err) {
+      toast('Yükleme hatası: ' + err.message, 'error');
+    }
+  };
+  input.click();
+}
+
+let _hpPopupPreviewOverlay = null;
+let _hpPopupPreviewItems = [];
+let _hpPopupPreviewIndex = 0;
+
+function _hpPopupPreviewMedia(item) {
+  const imageUrl = _hpPopupSafeUrl(item.imageUrl);
+  const videoUrl = _hpPopupSafeUrl(item.videoUrl);
+  const posterUrl = _hpPopupSafeUrl(item.posterUrl);
+  const embedUrl = _hpPopupEmbedUrl(item.embedUrl);
+  const title = esc(String(item.title || item.badge || 'Pop-up önizleme'));
+
+  if (item.type === 'video' && videoUrl) {
+    return `<div class="bmj-home-popup-media"><video controls playsinline preload="metadata" ${posterUrl ? `poster="${esc(posterUrl)}"` : ''} src="${esc(videoUrl)}" aria-label="${title}"></video></div>`;
+  }
+  if (item.type === 'embed' && embedUrl) {
+    return `<div class="bmj-home-popup-media"><div class="bmj-home-popup-embed-shell"><iframe src="${esc(embedUrl)}" title="${title}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>`;
+  }
+  if (imageUrl) {
+    return `<div class="bmj-home-popup-media"><img src="${esc(imageUrl)}" alt="${title}"></div>`;
+  }
+  return '';
+}
+
+function _hpPopupPreviewMarkup(item, index, total) {
+  const media = _hpPopupPreviewMedia(item);
+  const buttonUrl = _hpPopupSafeUrl(item.buttonUrl);
+  const hasCopy = !!(item.title || item.body || (buttonUrl && item.buttonText));
+  const nav = total > 1
+    ? `<div class="bmj-home-popup-nav">
+        <button type="button" class="bmj-home-popup-arrow" data-preview-prev aria-label="Önceki pop-up" ${index === 0 ? 'disabled' : ''}>&#8249;</button>
+        <div class="bmj-home-popup-nav-center">
+          <span class="bmj-home-popup-counter">${index + 1} / ${total}</span>
+          <div class="bmj-home-popup-dots">${_hpPopupPreviewItems.map((_entry, dotIndex) => `<button type="button" class="bmj-home-popup-dot${dotIndex === index ? ' is-active' : ''}" data-preview-dot="${dotIndex}" aria-label="${dotIndex + 1}. pop-up'a git" aria-current="${dotIndex === index ? 'true' : 'false'}"></button>`).join('')}</div>
+        </div>
+        <button type="button" class="bmj-home-popup-arrow" data-preview-next aria-label="Sonraki pop-up" ${index === total - 1 ? 'disabled' : ''}>&#8250;</button>
+      </div>`
+    : '';
+
+  return `<div class="bmj-home-popup-overlay" style="position:fixed">
+    <div class="bmj-home-popup-backdrop"></div>
+    <div class="bmj-home-popup-dialog" role="dialog" aria-modal="true" aria-label="Pop-up önizleme">
+      <button type="button" class="bmj-home-popup-close" data-preview-close aria-label="Önizlemeyi kapat">&times;</button>
+      <div class="bmj-home-popup-panel bmj-home-popup-panel-enter${media ? ' has-media' : ''}${hasCopy ? ' has-copy' : ''}${media && !hasCopy ? ' media-only' : ''}">
+        ${media}
+        ${hasCopy ? `<div class="bmj-home-popup-copy">
+          ${item.badge ? `<p class="bmj-home-popup-badge">${esc(item.badge)}</p>` : ''}
+          ${item.title ? `<h2 class="bmj-home-popup-title">${esc(item.title)}</h2>` : ''}
+          ${item.body ? `<div class="bmj-home-popup-body">${esc(item.body).replace(/\n/g, '<br>')}</div>` : ''}
+          ${buttonUrl && item.buttonText ? `<a class="bmj-home-popup-cta" href="${esc(buttonUrl)}" onclick="return false">${esc(item.buttonText)}</a>` : ''}
+          ${nav}
+        </div>` : (nav ? `<div class="bmj-home-popup-media-nav">${nav}</div>` : '')}
+      </div>
+    </div>
+  </div>`;
+}
+
+function _renderHomepagePopupPreview() {
+  if (!_hpPopupPreviewOverlay || !_hpPopupPreviewItems.length) return;
+  const iframe = _hpPopupPreviewOverlay.querySelector('[data-popup-preview-frame]');
+  if (!iframe || !iframe.contentDocument) return;
+  const doc = iframe.contentDocument;
+  doc.body.innerHTML = _hpPopupPreviewMarkup(
+    _hpPopupPreviewItems[_hpPopupPreviewIndex],
+    _hpPopupPreviewIndex,
+    _hpPopupPreviewItems.length
+  );
+  const closeButton = doc.querySelector('[data-preview-close]');
+  if (closeButton) closeButton.onclick = closeHomepagePopupPreview;
+  const prev = doc.querySelector('[data-preview-prev]');
+  const next = doc.querySelector('[data-preview-next]');
+  if (prev) prev.onclick = () => {
+    if (_hpPopupPreviewIndex <= 0) return;
+    _hpPopupPreviewIndex -= 1;
+    _renderHomepagePopupPreview();
+  };
+  if (next) next.onclick = () => {
+    if (_hpPopupPreviewIndex >= _hpPopupPreviewItems.length - 1) return;
+    _hpPopupPreviewIndex += 1;
+    _renderHomepagePopupPreview();
+  };
+  doc.querySelectorAll('[data-preview-dot]').forEach((button) => {
+    button.onclick = () => {
+      _hpPopupPreviewIndex = Number(button.dataset.previewDot) || 0;
+      _renderHomepagePopupPreview();
+    };
+  });
+  const dialog = doc.querySelector('.bmj-home-popup-dialog');
+  if (dialog && _hpPopupPreviewItems.length > 1) {
+    let touchStartX = 0;
+    let touchStartY = 0;
+    dialog.addEventListener('touchstart', (event) => {
+      const touch = event.changedTouches && event.changedTouches[0];
+      if (!touch) return;
+      touchStartX = touch.clientX;
+      touchStartY = touch.clientY;
+    }, { passive: true });
+    dialog.addEventListener('touchend', (event) => {
+      const touch = event.changedTouches && event.changedTouches[0];
+      if (!touch) return;
+      const deltaX = touch.clientX - touchStartX;
+      const deltaY = touch.clientY - touchStartY;
+      if (Math.abs(deltaX) < 50 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+      if (deltaX < 0 && _hpPopupPreviewIndex < _hpPopupPreviewItems.length - 1) _hpPopupPreviewIndex += 1;
+      else if (deltaX > 0 && _hpPopupPreviewIndex > 0) _hpPopupPreviewIndex -= 1;
+      else return;
+      _renderHomepagePopupPreview();
+    }, { passive: true });
+  }
+}
+
+function setHomepagePopupPreviewViewport(viewport) {
+  if (!_hpPopupPreviewOverlay) return;
+  const shell = _hpPopupPreviewOverlay.querySelector('[data-popup-preview-shell]');
+  if (!shell) return;
+  shell.style.width = viewport === 'mobile' ? '390px' : 'min(1120px, calc(100vw - 48px))';
+  _hpPopupPreviewOverlay.querySelectorAll('[data-popup-preview-viewport]').forEach((button) => {
+    const active = button.dataset.popupPreviewViewport === viewport;
+    button.classList.toggle('btn-primary', active);
+    button.classList.toggle('btn-secondary', !active);
+  });
+}
+
+function closeHomepagePopupPreview() {
+  if (_hpPopupPreviewOverlay) _hpPopupPreviewOverlay.remove();
+  _hpPopupPreviewOverlay = null;
+  _hpPopupPreviewItems = [];
+  document.removeEventListener('keydown', _hpPopupPreviewKeydown);
+}
+
+function _hpPopupPreviewKeydown(event) {
+  if (event.key === 'Escape') closeHomepagePopupPreview();
+}
+
+function previewHomepagePopupAdmin(itemIndex = null) {
+  if (!_hpPopupState) return;
+  const allItems = _hpPopupState.data.items || [];
+  const requestedItem = Number.isInteger(itemIndex) ? allItems[itemIndex] : null;
+  const items = requestedItem
+    ? (_hpPopupItemHasContent(requestedItem) ? [requestedItem] : [])
+    : allItems.filter((item) => item.active !== false && _hpPopupItemHasContent(item));
+
+  if (!items.length) {
+    toast('Önizlenecek geçerli ve aktif bir içerik bulunamadı.', 'warning');
+    return;
+  }
+
+  closeHomepagePopupPreview();
+  _hpPopupPreviewItems = items;
+  _hpPopupPreviewIndex = 0;
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.style.zIndex = '90';
+  overlay.innerHTML = `
+    <div data-popup-preview-shell style="width:min(1120px,calc(100vw - 48px));height:min(820px,calc(100vh - 48px));background:var(--bg-card);border:1px solid var(--border-soft);border-radius:18px;box-shadow:var(--shadow-lg);overflow:hidden;display:flex;flex-direction:column;transition:width .2s ease">
+      <div class="flex items-center justify-between gap-3 px-4 py-3" style="border-bottom:1px solid var(--border-soft)">
+        <div>
+          <div class="text-sm font-semibold" style="color:var(--text-strong)">Pop-up Önizleme</div>
+          <div class="text-xs mt-0.5" style="color:var(--text-muted)">Kaydedilmemiş değişiklikler dahil gösterilir.</div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="btn btn-primary text-xs" data-popup-preview-viewport="desktop" onclick="setHomepagePopupPreviewViewport('desktop')">Masaüstü</button>
+          <button class="btn btn-secondary text-xs" data-popup-preview-viewport="mobile" onclick="setHomepagePopupPreviewViewport('mobile')">Mobil</button>
+          <button class="btn btn-secondary text-xs" onclick="closeHomepagePopupPreview()">Kapat</button>
+        </div>
+      </div>
+      <iframe data-popup-preview-frame title="Pop-up önizleme" style="width:100%;height:100%;border:0;background:#eef3f5"></iframe>
+    </div>`;
+  document.body.appendChild(overlay);
+  _hpPopupPreviewOverlay = overlay;
+  overlay.addEventListener('click', (event) => {
+    if (event.target === overlay) closeHomepagePopupPreview();
+  });
+  document.addEventListener('keydown', _hpPopupPreviewKeydown);
+
+  const iframe = overlay.querySelector('[data-popup-preview-frame]');
+  iframe.onload = _renderHomepagePopupPreview;
+  iframe.srcdoc = `<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><base href="/site/"><link rel="stylesheet" href="/site/css/style.css?v=20260619-popup-media"><style>html,body{margin:0;min-height:100%;background:#eef3f5}.bmj-home-popup-overlay{position:fixed}</style></head><body></body></html>`;
+}
+
+async function saveHomepagePopupAdmin() {
+  if (!_hpPopupState) return;
+  const validation = _hpPopupValidation(_hpPopupState.data);
+  if (_hpPopupState.data.enabled && validation.errors.length) {
+    toast(validation.errors[0], 'error');
+    return;
+  }
+  try {
+    const homepage = await API.get('/homepage');
+    const popup = {
+      ..._hpPopupState.data,
+      updatedAt: new Date().toISOString(),
+    };
+    await API.put('/homepage', {
+      ...(homepage && typeof homepage === 'object' ? homepage : {}),
+      popup,
+    });
+    _hpPopupState.data = _hpPopupNormalize(popup);
+    renderHomepagePopupAdmin();
+    clearDirty();
+    toast(validation.warnings[0] || 'Anasayfa pop-up ayarları kaydedildi.', validation.warnings.length ? 'warning' : 'success');
+  } catch (err) {
+    toast('Kaydedilemedi: ' + err.message, 'error');
+  }
 }
 
 // Drag-drop reorder for the hero banners (move the iframe slide, keep carousel synced).
@@ -13739,6 +14839,7 @@ const COMMAND_ITEMS = [
   { kind: 'nav', section: 'Sayfalar', title: 'Yayın Kurulu',       hash: '#/editorial' },
   { kind: 'nav', section: 'Sayfalar', title: 'Dosyalar',           hash: '#/media' },
   { kind: 'nav', section: 'Sayfalar', title: 'İstatistikler',      hash: '#/article-stats' },
+  { kind: 'nav', section: 'Sayfalar', title: 'Anasayfa Pop-up',    hash: '#/homepage-popup' },
   { kind: 'nav', section: 'Sayfalar', title: 'Makale Türleri',     hash: '#/article-types' },
   { kind: 'nav', section: 'Sayfalar', title: 'Menü & Footer',      hash: '#/nav-footer' },
   { kind: 'nav', section: 'Sayfalar', title: 'Sosyal Medya',       hash: '#/social-media' },

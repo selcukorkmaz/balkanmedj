@@ -16,6 +16,107 @@ const { createBackup, listBackups, zipBackup } = require('./lib/backup');
 const { parseJatsXml } = require('./lib/jats-parser');
 const zipImporter = require('./lib/zip-importer');
 const pageTpl = require('./lib/page-template');
+const docxParser = require('./lib/docx-parser');
+
+const ARTICLE_DATE_FIELDS = ['received', 'accepted', 'publishedOnline', 'published'];
+
+function normalizeArticleDateFields(input) {
+  const data = input && typeof input === 'object' ? { ...input } : {};
+  ARTICLE_DATE_FIELDS.forEach((field) => {
+    if (!Object.prototype.hasOwnProperty.call(data, field)) return;
+    const raw = String(data[field] || '').trim();
+    if (!raw) {
+      data[field] = '';
+      return;
+    }
+    const normalized = docxParser.parseDate(raw);
+    if (!normalized) {
+      const err = new Error(`${field} alanında geçersiz tarih: ${raw}`);
+      err.statusCode = 400;
+      throw err;
+    }
+    data[field] = normalized;
+  });
+  return data;
+}
+
+function validateArticleDateOrder(data) {
+  const time = (field) => data[field] ? new Date(`${data[field]}T00:00:00Z`).getTime() : 0;
+  const received = time('received');
+  const accepted = time('accepted');
+  const publishedOnline = time('publishedOnline');
+  const published = time('published');
+  const fail = (message) => {
+    const err = new Error(message);
+    err.statusCode = 400;
+    throw err;
+  };
+  if (received && accepted && accepted < received) fail('Kabul tarihi, alındığı tarihten önce olamaz');
+  if (accepted && publishedOnline && publishedOnline < accepted) fail('Çevrimiçi yayın tarihi, kabul tarihinden önce olamaz');
+  if (accepted && published && published < accepted) fail('Makale yayın tarihi, kabul tarihinden önce olamaz');
+}
+
+function homepageArticleSummary(article) {
+  return {
+    id: article.id,
+    type: article.type,
+    title: article.title,
+    authors: (article.authors || []).map((author) => ({ name: author && author.name ? author.name : String(author || '') })),
+    doi: article.doi,
+    volume: article.volume,
+    issue: article.issue,
+    pages: article.pages,
+    published: article.published,
+    previewText: article.previewText || '',
+    imageUrl: article.imageUrl || '',
+  };
+}
+
+function syncCurrentIssueHomepage(articles) {
+  let home;
+  try { home = dio.readHomepageData() || {}; } catch (_) { return; }
+  const current = home.currentIssue || {};
+  const volume = String(current.volume || '');
+  const issue = String(current.issue || '');
+  if (!volume || !issue) return;
+
+  // Count featured articles in the current issue BEFORE enforcement.
+  // If more than one existed (data inconsistency), write the corrected state back to disk.
+  const featuredInIssue = articles.filter(a =>
+    a && a.featured &&
+    String(a.volume || '') === volume &&
+    String(a.issue || '') === issue
+  );
+  dio.enforceSingleFeaturedForIssue(articles, volume, issue);
+  if (featuredInIssue.length > 1) {
+    dio.writeArticles(articles);
+  }
+
+  const issueArticles = articles.filter((article) =>
+    article &&
+    String(article.volume || '') === volume &&
+    String(article.issue || '') === issue
+  );
+  const featured = issueArticles.filter((article) => article.featured);
+  const imageCorner = issueArticles.filter((article) => article.imageCorner);
+  const mostCited = issueArticles.slice()
+    .sort((a, b) => (Number(b.citations) || 0) - (Number(a.citations) || 0))
+    .slice(0, 5);
+
+  dio.writeHomepageData({
+    ...home,
+    generatedAt: new Date().toISOString().slice(0, 10),
+    featuredArticles: featured.map(homepageArticleSummary),
+    imageCornerArticles: imageCorner.map(homepageArticleSummary),
+    mostCitedArticles: mostCited.map(homepageArticleSummary),
+    latestArticles: issueArticles.slice(0, 10).map(homepageArticleSummary),
+  });
+}
+
+function enforceSingleFeaturedArticle(articles, selected) {
+  if (!selected || !selected.featured || !selected.volume || !selected.issue) return;
+  dio.enforceSingleFeaturedForIssue(articles, selected.volume, selected.issue, selected.id);
+}
 
 // Auto-regenerate sitemap.xml + rss.xml whenever published or in-press articles
 // are written — wrapping the two dio writers catches every create/update/delete/
@@ -216,10 +317,10 @@ const ALLOWED_EXT = {
   supplementary: /\.(pdf|zip|jpe?g|png|webp|gif|svg|mp4|mov|webm|mp3|wav|ogg|csv|txt|docx?|xlsx?)$/i,
   docx: /\.docx$/i,
 };
-function makeUploader(kind) {
+function makeUploader(kind, maxFileSize = 100 * 1024 * 1024) {
   return multer({
     dest: path.join(__dirname, 'uploads'),
-    limits: { fileSize: 100 * 1024 * 1024 },
+    limits: { fileSize: maxFileSize },
     fileFilter(_req, file, cb) {
       const mimeOk = ALLOWED_MIME[kind] && ALLOWED_MIME[kind].has(file.mimetype);
       const extOk = ALLOWED_EXT[kind] && ALLOWED_EXT[kind].test(file.originalname || '');
@@ -229,6 +330,7 @@ function makeUploader(kind) {
   });
 }
 const uploadPdf = makeUploader('pdf');
+const uploadIssuePdf = makeUploader('pdf', 500 * 1024 * 1024);
 const uploadImage = makeUploader('image');
 const uploadVideo = makeUploader('video');
 const uploadXml = makeUploader('xml');
@@ -394,6 +496,7 @@ app.post('/api/articles', (req, res) => {
   try {
     createBackup();
     const articles = dio.readArticles();
+    const normalizedBody = normalizeArticleDateFields(req.body);
     const newArticle = {
       id: dio.nextArticleId(articles),
       type: '',
@@ -425,11 +528,14 @@ app.post('/api/articles', (req, res) => {
       pdfUrl: '',
       pmid: '',
       relatedArticles: [],
-      ...req.body,
+      ...normalizedBody,
     };
+    validateArticleDateOrder(newArticle);
     newArticle.id = newArticle.id || dio.nextArticleId(articles);
     articles.unshift(newArticle);
+    enforceSingleFeaturedArticle(articles, newArticle);
     dio.writeArticles(articles);
+    syncCurrentIssueHomepage(articles);
 
     if (newArticle.volume && newArticle.issue) {
       dio.rebuildVolumeJson(newArticle.volume, newArticle.issue, articles);
@@ -437,7 +543,7 @@ app.post('/api/articles', (req, res) => {
 
     res.status(201).json(newArticle);
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(err.statusCode || 500).json({ error: err.message });
   }
 });
 
@@ -449,8 +555,12 @@ app.put('/api/articles/:id', (req, res) => {
     if (idx === -1) return res.status(404).json({ error: 'Article not found' });
 
     const old = articles[idx];
-    articles[idx] = { ...old, ...req.body, id: old.id };
+    const normalizedBody = normalizeArticleDateFields(req.body);
+    articles[idx] = { ...old, ...normalizedBody, id: old.id };
+    validateArticleDateOrder(articles[idx]);
+    enforceSingleFeaturedArticle(articles, articles[idx]);
     dio.writeArticles(articles);
+    syncCurrentIssueHomepage(articles);
 
     // Rebuild volume JSON if issue changed
     const updated = articles[idx];
@@ -463,7 +573,7 @@ app.put('/api/articles/:id', (req, res) => {
 
     res.json(articles[idx]);
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(err.statusCode || 500).json({ error: err.message });
   }
 });
 
@@ -479,6 +589,7 @@ app.post('/api/articles/move', (req, res) => {
     const vol = Number(targetVolume);
     const iss = String(targetIssue);
     const rebuildSet = new Set();
+    let preferredFeaturedId = null;
     let moved = 0;
 
     for (const id of articleIds) {
@@ -488,11 +599,14 @@ app.post('/api/articles/move', (req, res) => {
       if (old.volume && old.issue) rebuildSet.add(`${old.volume}|${old.issue}`);
       articles[idx].volume = vol;
       articles[idx].issue = iss;
+      if (articles[idx].featured && preferredFeaturedId == null) preferredFeaturedId = articles[idx].id;
       moved++;
     }
 
     rebuildSet.add(`${vol}|${iss}`);
+    dio.enforceSingleFeaturedForIssue(articles, vol, iss, preferredFeaturedId);
     dio.writeArticles(articles);
+    syncCurrentIssueHomepage(articles);
     for (const key of rebuildSet) {
       const [v, i] = key.split('|');
       dio.rebuildVolumeJson(Number(v), i, articles);
@@ -513,6 +627,7 @@ app.delete('/api/articles/:id', (req, res) => {
 
     const removed = articles.splice(idx, 1)[0];
     dio.writeArticles(articles);
+    syncCurrentIssueHomepage(articles);
 
     if (removed.volume && removed.issue) {
       dio.rebuildVolumeJson(removed.volume, removed.issue, articles);
@@ -680,20 +795,21 @@ app.post('/api/articles-in-press', (req, res) => {
   try {
     createBackup();
     const aip = dio.readArticlesInPress();
+    const normalizedBody = normalizeArticleDateFields(req.body);
 
     // Required-field validation. Earlier the endpoint accepted records with
     // empty title or type silently; those records showed up as blank rows in
     // both the admin list and the public page, with no way to tell what was
     // wrong without diving into the JSON.
-    const title = String(req.body?.title || '').trim();
-    const type = String(req.body?.type || '').trim();
+    const title = String(normalizedBody.title || '').trim();
+    const type = String(normalizedBody.type || '').trim();
     if (!title) return res.status(400).json({ error: 'Başlık zorunludur' });
     if (!type) return res.status(400).json({ error: 'Makale türü zorunludur' });
 
     // DOI uniqueness check across BOTH lists. JATS import path already does
     // this but the manual endpoint did not — leading to duplicate DOIs when
     // a paper was added by hand after the AIP version was imported earlier.
-    const doi = String(req.body?.doi || '').trim();
+    const doi = String(normalizedBody.doi || '').trim();
     if (doi) {
       const dupAip = aip.find((a) => String(a.doi || '').trim().toLowerCase() === doi.toLowerCase());
       if (dupAip) return res.status(409).json({ error: `Bu DOI baskıda makalede zaten kayıtlı (#${dupAip.id})` });
@@ -716,18 +832,19 @@ app.post('/api/articles-in-press', (req, res) => {
       issue: '',
       pages: '',
       published: '',
-      ...req.body,
+      ...normalizedBody,
       title,
       type,
       doi,
     };
+    validateArticleDateOrder(newArt);
     aip.push(newArt);
     dio.writeArticlesInPress(aip);
     // Include cleanup report so the front-end can show a notice if any
     // leftover files were found and removed (helps diagnose mysteries).
     res.status(201).json({ ...newArt, _cleanedOrphans: wiped });
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(err.statusCode || 500).json({ error: err.message });
   }
 });
 
@@ -761,11 +878,13 @@ app.put('/api/articles-in-press/:id', (req, res) => {
       }
     }
 
-    aip[idx] = { ...aip[idx], ...req.body, id: aip[idx].id };
+    const normalizedBody = normalizeArticleDateFields(req.body);
+    aip[idx] = { ...aip[idx], ...normalizedBody, id: aip[idx].id };
+    validateArticleDateOrder(aip[idx]);
     dio.writeArticlesInPress(aip);
     res.json(aip[idx]);
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(err.statusCode || 500).json({ error: err.message });
   }
 });
 
@@ -783,6 +902,7 @@ app.post('/api/articles-in-press/reorder', (req, res) => {
     // Append any articles missing from the provided ids list (defensive)
     const idSet = new Set(ids);
     aip.forEach((a) => { if (!idSet.has(a.id)) reordered.push(a); });
+    reordered.forEach((article, index) => { article.order = index + 1; });
     dio.writeArticlesInPress(reordered);
     res.json({ ok: true, count: reordered.length });
   } catch (err) {
@@ -821,14 +941,34 @@ app.post('/api/articles-in-press/:id/publish', (req, res) => {
     const { volume, issue, pages, published } = req.body;
     if (!volume || !issue) return res.status(400).json({ error: 'volume and issue required' });
 
-    const article = { ...aip[idx], volume: Number(volume), issue: String(issue), pages: pages || '', published: published || new Date().toISOString().slice(0, 10), aheadOfPrint: false };
+    const sourceArticle = aip[idx];
+    const article = {
+      ...sourceArticle,
+      _aipBeforeIssue: {
+        volume: sourceArticle.volume == null ? null : sourceArticle.volume,
+        issue: sourceArticle.issue || '',
+        pages: sourceArticle.pages || '',
+        published: sourceArticle.published || '',
+        sourceIssueId: sourceArticle.sourceIssueId || '',
+      },
+      volume: Number(volume),
+      issue: String(issue),
+      pages: pages || '',
+      published: published || new Date().toISOString().slice(0, 10),
+      aheadOfPrint: false,
+    };
     aip.splice(idx, 1);
     dio.writeArticlesInPress(aip);
 
     const articles = dio.readArticles();
     articles.unshift(article);
+    enforceSingleFeaturedArticle(articles, article);
     dio.writeArticles(articles);
-    dio.rebuildVolumeJson(article.volume, article.issue, articles);
+    syncCurrentIssueHomepage(articles);
+    const count = dio.rebuildVolumeJson(article.volume, article.issue, articles);
+    const archive = dio.readArchiveIssues();
+    updateArchiveArticleCount(archive, article.volume, article.issue, count);
+    dio.writeArchiveIssues(archive);
 
     res.json(article);
   } catch (err) {
@@ -841,7 +981,6 @@ app.post('/api/articles-in-press/:id/publish', (req, res) => {
 // correspondingEmail, warnings[]) for the admin client to pre-fill the
 // "Yeni Baskıda Makale" form. The file lands in /uploads but is removed
 // right after parsing — we only need the extracted metadata.
-const docxParser = require('./lib/docx-parser');
 app.post('/api/articles-in-press/parse-docx', uploadDocx.single('file'), (req, res) => {
   const tmpPath = req.file?.path;
   try {
@@ -946,12 +1085,156 @@ app.get('/api/issues/:volume/:issue/articles', (req, res) => {
   }
 });
 
+const ISSUE_PDF_TYPES = {
+  full: { field: 'fullPdf', suffix: 'full' },
+  cover: { field: 'coverPdf', suffix: 'cover' },
+};
+
+function safeIssueFilePart(value) {
+  const cleaned = String(value || '').replace(/[^a-zA-Z0-9._-]/g, '_');
+  if (!cleaned || cleaned === '.' || cleaned === '..') throw new Error('Invalid issue identifier');
+  return cleaned;
+}
+
+function findArchiveIssueRecord(archive, volume, issue) {
+  for (const yearGroup of archive) {
+    const found = (yearGroup.issues || []).find((item) =>
+      Number(item.volume) === Number(volume) && String(item.issue) === String(issue)
+    );
+    if (found) return found;
+  }
+  return null;
+}
+
+function issuePdfResponse(issueRecord) {
+  return {
+    fullPdf: issueRecord?.fullPdf || null,
+    coverPdf: issueRecord?.coverPdf || null,
+  };
+}
+
+function legacyIssuePdfInfo(type, volume, issue) {
+  const volumePart = safeIssueFilePart(volume);
+  const issuePart = safeIssueFilePart(issue);
+  const filename = `issue-vol${volumePart}-${issuePart}-${type}.pdf`;
+  const filePath = path.join(dio.PATHS.pdfsDir, filename);
+  if (!fs.existsSync(filePath)) return null;
+  const stat = fs.statSync(filePath);
+  return {
+    url: `js/data/pdfs/${filename}`,
+    originalName: type === 'full' ? 'Full PDF.pdf' : 'Cover PDF.pdf',
+    size: stat.size,
+    uploadedAt: stat.mtime.toISOString(),
+    legacy: true,
+  };
+}
+
+app.get('/api/issues/:volume/:issue/files', (req, res) => {
+  try {
+    const archive = dio.readArchiveIssues();
+    const issueRecord = findArchiveIssueRecord(archive, req.params.volume, req.params.issue);
+    if (!issueRecord) return res.status(404).json({ error: 'Sayı bulunamadı' });
+    const files = issuePdfResponse(issueRecord);
+    files.fullPdf = files.fullPdf || legacyIssuePdfInfo('full', req.params.volume, req.params.issue);
+    files.coverPdf = files.coverPdf || legacyIssuePdfInfo('cover', req.params.volume, req.params.issue);
+    res.json(files);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.post('/api/issues/:volume/:issue/files/:type', uploadIssuePdf.single('pdf'), (req, res) => {
+  const tempPath = req.file?.path;
+  try {
+    if (!req.file) return res.status(400).json({ error: 'PDF dosyası yüklenmedi' });
+    const config = ISSUE_PDF_TYPES[req.params.type];
+    if (!config) {
+      fs.unlinkSync(req.file.path);
+      return res.status(400).json({ error: 'Geçersiz sayı PDF türü' });
+    }
+
+    createBackup();
+    const archive = dio.readArchiveIssues();
+    const issueRecord = findArchiveIssueRecord(archive, req.params.volume, req.params.issue);
+    if (!issueRecord) {
+      fs.unlinkSync(req.file.path);
+      return res.status(404).json({ error: 'Sayı bulunamadı' });
+    }
+
+    fs.mkdirSync(dio.PATHS.issuePdfsDir, { recursive: true });
+    const volume = safeIssueFilePart(req.params.volume);
+    const issue = safeIssueFilePart(req.params.issue);
+    const filename = `vol${volume}-${issue}-${config.suffix}.pdf`;
+    const dest = path.join(dio.PATHS.issuePdfsDir, filename);
+    if (fs.existsSync(dest)) fs.unlinkSync(dest);
+    const legacy = legacyIssuePdfInfo(req.params.type, volume, issue);
+    if (legacy?.url) {
+      const legacyPath = path.join(dio.PATHS.pdfsDir, path.basename(legacy.url));
+      if (fs.existsSync(legacyPath)) fs.unlinkSync(legacyPath);
+    }
+    try {
+      fs.renameSync(req.file.path, dest);
+    } catch (_) {
+      fs.copyFileSync(req.file.path, dest);
+      fs.unlinkSync(req.file.path);
+    }
+
+    issueRecord[config.field] = {
+      url: `js/data/issue-pdfs/${filename}`,
+      originalName: path.basename(req.file.originalname || filename),
+      size: req.file.size || fs.statSync(dest).size,
+      uploadedAt: new Date().toISOString(),
+    };
+    dio.writeArchiveIssues(archive);
+    res.json({ saved: true, ...issuePdfResponse(issueRecord) });
+  } catch (err) {
+    if (tempPath && fs.existsSync(tempPath)) {
+      try { fs.unlinkSync(tempPath); } catch (_) { /* ignore cleanup failure */ }
+    }
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.delete('/api/issues/:volume/:issue/files/:type', (req, res) => {
+  try {
+    const config = ISSUE_PDF_TYPES[req.params.type];
+    if (!config) return res.status(400).json({ error: 'Geçersiz sayı PDF türü' });
+
+    createBackup();
+    const archive = dio.readArchiveIssues();
+    const issueRecord = findArchiveIssueRecord(archive, req.params.volume, req.params.issue);
+    if (!issueRecord) return res.status(404).json({ error: 'Sayı bulunamadı' });
+
+    const current = issueRecord[config.field];
+    if (current?.url) {
+      const filename = path.basename(current.url);
+      const baseDir = current.legacy ? dio.PATHS.pdfsDir : dio.PATHS.issuePdfsDir;
+      const filePath = path.join(baseDir, filename);
+      if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
+    } else {
+      const legacy = legacyIssuePdfInfo(req.params.type, req.params.volume, req.params.issue);
+      if (legacy?.url) {
+        const legacyPath = path.join(dio.PATHS.pdfsDir, path.basename(legacy.url));
+        if (fs.existsSync(legacyPath)) fs.unlinkSync(legacyPath);
+      }
+    }
+    delete issueRecord[config.field];
+    dio.writeArchiveIssues(archive);
+    res.json({ deleted: true, ...issuePdfResponse(issueRecord) });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 app.post('/api/issues/:volume/:issue/set-current', (req, res) => {
   try {
     createBackup();
     const { volume, issue } = req.params;
     const vol = Number(volume);
-    const articles = dio.readArticles().filter(
+    const allArticles = dio.readArticles();
+    dio.enforceSingleFeaturedForIssue(allArticles, vol, issue);
+    dio.writeArticles(allArticles);
+    const articles = allArticles.filter(
       (a) => a.volume === vol && String(a.issue) === String(issue)
     );
 
@@ -964,7 +1247,7 @@ app.post('/api/issues/:volume/:issue/set-current', (req, res) => {
     }
 
     // Build homepage data
-    const featured = articles.filter((a) => a.featured);
+    const featured = articles.filter((a) => a.featured).slice(0, 1);
     const imageCorner = articles.filter((a) => a.imageCorner);
     const mostCited = [...articles].sort((a, b) => (b.citations || 0) - (a.citations || 0)).slice(0, 5);
 
@@ -977,19 +1260,20 @@ app.post('/api/issues/:volume/:issue/set-current', (req, res) => {
       imageUrl: a.imageUrl || '',
     });
 
-    // Preserve any manual section curation across a homepage rebuild.
-    let prevSections = {};
-    try { prevSections = (dio.readHomepageData() || {}).sections || {}; } catch (_) { /* ignore */ }
+    // Preserve editor-managed homepage configuration across an issue rebuild.
+    // Generated issue fields below overwrite stale content, while sections,
+    // popup settings and future admin-managed keys remain intact.
+    let previousHomepage = {};
+    try { previousHomepage = dio.readHomepageData() || {}; } catch (_) { /* ignore */ }
 
-    const homepageData = {
+    const homepageData = dio.mergeHomepageIssueData(previousHomepage, {
       generatedAt: new Date().toISOString().slice(0, 10),
       currentIssue: { volume: vol, issue: String(issue), year },
       featuredArticles: featured.map(mapArticle),
       imageCornerArticles: imageCorner.map(mapArticle),
       mostCitedArticles: mostCited.map(mapArticle),
       latestArticles: articles.slice(0, 10).map(mapArticle),
-      sections: prevSections,
-    };
+    });
 
     dio.writeHomepageData(homepageData);
     res.json({ updated: true, articleCount: articles.length });
@@ -1001,21 +1285,82 @@ app.post('/api/issues/:volume/:issue/set-current', (req, res) => {
 app.delete('/api/issues/:year/:volume/:issue', (req, res) => {
   try {
     createBackup();
-    const archive = dio.readArchiveIssues();
-    const yearGroup = archive.find((y) => y.year === String(req.params.year));
-    if (!yearGroup) return res.status(404).json({ error: 'Year not found' });
+    const { year, volume, issue } = req.params;
+    const deleteArticles = req.query.deleteArticles === 'true';
 
+    // 1. Remove from archive
+    const archive = dio.readArchiveIssues();
+    const yearGroup = archive.find((y) => y.year === String(year));
+    if (!yearGroup) return res.status(404).json({ error: 'Year not found' });
     const idx = yearGroup.issues.findIndex(
-      (i) => i.volume === Number(req.params.volume) && String(i.issue) === String(req.params.issue)
+      (i) => i.volume === Number(volume) && String(i.issue) === String(issue)
     );
     if (idx === -1) return res.status(404).json({ error: 'Issue not found' });
-
     yearGroup.issues.splice(idx, 1);
-    if (!yearGroup.issues.length) {
-      archive.splice(archive.indexOf(yearGroup), 1);
-    }
+    if (!yearGroup.issues.length) archive.splice(archive.indexOf(yearGroup), 1);
     dio.writeArchiveIssues(archive);
-    res.json({ deleted: true });
+
+    // 2. Clear currentIssue in homepage data if it points to the deleted issue.
+    //    Must run before article deletion so syncCurrentIssueHomepage (called
+    //    below) doesn't just re-write the same stale currentIssue field.
+    try {
+      const home = dio.readHomepageData() || {};
+      const cur = home.currentIssue || {};
+      const isCurrentIssue =
+        Number(cur.volume) === Number(volume) && String(cur.issue) === String(issue);
+      if (isCurrentIssue) {
+        dio.writeHomepageData({
+          ...home,
+          currentIssue: {},
+          featuredArticles: [],
+          imageCornerArticles: [],
+          mostCitedArticles: [],
+          latestArticles: [],
+        });
+      }
+    } catch (_) { /* ignore */ }
+
+    // 3. Remove articles belonging to this issue (and their full-text files)
+    let deletedArticleCount = 0;
+    if (deleteArticles) {
+      const articles = dio.readArticles();
+      const toDelete = articles.filter((a) =>
+        Number(a.volume) === Number(volume) && String(a.issue) === String(issue)
+      );
+      deletedArticleCount = toDelete.length;
+      for (const a of toDelete) {
+        try {
+          const ftJs = path.join(dio.ROOT, 'js/data/articles', `${a.id}.js`);
+          const ftHtml = path.join(dio.ROOT, 'js/data/articles', `${a.id}.html`);
+          if (fs.existsSync(ftJs)) fs.unlinkSync(ftJs);
+          if (fs.existsSync(ftHtml)) fs.unlinkSync(ftHtml);
+        } catch (_) { /* ignore */ }
+      }
+      const remaining = articles.filter((a) =>
+        !(Number(a.volume) === Number(volume) && String(a.issue) === String(issue))
+      );
+      dio.writeArticles(remaining);
+    }
+
+    // 4. Remove volume JSON/JS files
+    try {
+      const volJson = path.join(dio.ROOT, 'js/data/volumes', `vol${volume}-${issue}.json`);
+      const volJs = path.join(dio.ROOT, 'js/data/volumes', `vol${volume}-${issue}.js`);
+      if (fs.existsSync(volJson)) fs.unlinkSync(volJson);
+      if (fs.existsSync(volJs)) fs.unlinkSync(volJs);
+    } catch (_) { /* ignore */ }
+
+    // 5. Remove issue-level Full PDF and Cover PDF files.
+    try {
+      const volumePart = safeIssueFilePart(volume);
+      const issuePart = safeIssueFilePart(issue);
+      for (const config of Object.values(ISSUE_PDF_TYPES)) {
+        const issuePdf = path.join(dio.PATHS.issuePdfsDir, `vol${volumePart}-${issuePart}-${config.suffix}.pdf`);
+        if (fs.existsSync(issuePdf)) fs.unlinkSync(issuePdf);
+      }
+    } catch (_) { /* ignore */ }
+
+    res.json({ deleted: true, deletedArticleCount });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1140,8 +1485,119 @@ app.get('/api/homepage', (_req, res) => {
 app.put('/api/homepage', (req, res) => {
   try {
     createBackup();
-    dio.writeHomepageData(req.body);
+    const homepage = req.body && typeof req.body === 'object' ? { ...req.body } : {};
+    if (Object.prototype.hasOwnProperty.call(homepage, 'popup')) {
+      homepage.popup = sanitizeHomepagePopupConfig(homepage.popup);
+    }
+    dio.writeHomepageData(homepage);
     res.json({ saved: true });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+const HOMEPAGE_POPUP_ITEM_TYPES = new Set(['announcement', 'video', 'embed']);
+const HOMEPAGE_POPUP_FREQUENCIES = new Set(['always', 'session', 'cooldown']);
+
+function clampInt(value, min, max, fallback) {
+  const n = Number(value);
+  if (!Number.isFinite(n)) return fallback;
+  return Math.max(min, Math.min(max, Math.round(n)));
+}
+
+function cleanPopupString(value, max = 2000) {
+  return String(value == null ? '' : value).trim().slice(0, max);
+}
+
+function cleanPopupMultiline(value, max = 12000) {
+  return String(value == null ? '' : value)
+    .replace(/\r\n/g, '\n')
+    .replace(/\r/g, '\n')
+    .trim()
+    .slice(0, max);
+}
+
+function cleanPopupEmbedUrl(value) {
+  const raw = cleanPopupString(value, 500);
+  if (!raw) return '';
+  try {
+    const parsed = new URL(raw);
+    const host = parsed.hostname.replace(/^www\./i, '').toLowerCase();
+    return [
+      'youtu.be',
+      'youtube.com',
+      'm.youtube.com',
+      'youtube-nocookie.com',
+      'vimeo.com',
+      'player.vimeo.com',
+    ].includes(host) ? raw : '';
+  } catch {
+    return '';
+  }
+}
+
+function sanitizeHomepagePopupItem(item, index) {
+  const safe = item && typeof item === 'object' ? item : {};
+  const type = HOMEPAGE_POPUP_ITEM_TYPES.has(String(safe.type || '').trim())
+    ? String(safe.type).trim()
+    : 'announcement';
+
+  return {
+    id: cleanPopupString(safe.id || `popup-item-${Date.now()}-${index + 1}`, 80),
+    active: safe.active !== false,
+    type,
+    badge: cleanPopupString(safe.badge, 40),
+    title: cleanPopupString(safe.title, 220),
+    body: cleanPopupMultiline(safe.body, 12000),
+    imageUrl: cleanPopupString(safe.imageUrl, 500),
+    videoUrl: cleanPopupString(safe.videoUrl, 500),
+    posterUrl: cleanPopupString(safe.posterUrl, 500),
+    embedUrl: cleanPopupEmbedUrl(safe.embedUrl),
+    buttonText: cleanPopupString(safe.buttonText, 60),
+    buttonUrl: cleanPopupString(safe.buttonUrl, 500),
+    openInNewTab: safe.openInNewTab !== false,
+    startsAt: cleanPopupString(safe.startsAt, 40),
+    endsAt: cleanPopupString(safe.endsAt, 40),
+  };
+}
+
+function sanitizeHomepagePopupConfig(input, preserveUpdatedAt = '') {
+  const safe = input && typeof input === 'object' ? input : {};
+  const frequency = HOMEPAGE_POPUP_FREQUENCIES.has(String(safe.frequency || '').trim())
+    ? String(safe.frequency).trim()
+    : 'session';
+  const items = Array.isArray(safe.items)
+    ? safe.items.map(sanitizeHomepagePopupItem).filter((item) => item.title || item.body || item.imageUrl || item.videoUrl || item.embedUrl).slice(0, 12)
+    : [];
+
+  return {
+    enabled: !!safe.enabled,
+    delayMs: clampInt(safe.delayMs, 0, 10000, 700),
+    frequency,
+    dismissHours: clampInt(safe.dismissHours, 1, 24 * 30, 24),
+    updatedAt: cleanPopupString(safe.updatedAt || preserveUpdatedAt, 80),
+    items,
+  };
+}
+
+app.get('/api/homepage/popup', (_req, res) => {
+  try {
+    const home = dio.readHomepageData() || {};
+    res.json(sanitizeHomepagePopupConfig(home.popup, home.popup && home.popup.updatedAt));
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.put('/api/homepage/popup', (req, res) => {
+  try {
+    createBackup();
+    const home = dio.readHomepageData() || {};
+    const popup = sanitizeHomepagePopupConfig(req.body);
+    popup.updatedAt = new Date().toISOString();
+    home.popup = popup;
+    dio.writeHomepageData(home);
+    res.json({ saved: true, popup });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1171,9 +1627,15 @@ function slimArticle(a) {
     type: a.type || '',
     authors: (a.authors || []).map((x) => (x && x.name) ? x.name : String(x || '')).filter(Boolean).slice(0, 5),
     published: a.published || '',
+    publishedOnline: a.publishedOnline || '',
+    publicationDate: a.publicationDate || '',
+    onlineFirstDate: a.onlineFirstDate || '',
+    year: a.year != null ? a.year : '',
+    sourceIssueId: a.sourceIssueId || '',
     volume: a.volume != null ? a.volume : '',
     issue: a.issue != null ? a.issue : '',
     pages: a.pages || '',
+    doi: a.doi || '',
     citations: Number(a.citations) || 0,
     downloads: Number(a.downloads) || 0,
     views: Number(a.views) || 0,
@@ -1187,18 +1649,45 @@ function slimArticle(a) {
 function computeHomepageAuto(articles, aip, home) {
   const cur = (home && home.currentIssue) || {};
   const regular = articles.filter((a) => a && String(a.type || '').trim() !== 'Cover Page');
-  const ts = (a) => { const t = new Date(a && (a.published || a.date) || 0).getTime(); return isNaN(t) ? 0 : t; };
+  const ts = (a) => {
+    const values = a ? [a.published, a.publishedOnline, a.publicationDate, a.publishDate, a.onlineFirstDate, a.date] : [];
+    for (const value of values) {
+      const parsed = new Date(value || 0).getTime();
+      if (!isNaN(parsed) && parsed > 0) return parsed;
+    }
+    const issueNo = Number(a && a.issue);
+    const year = Number(a && a.year);
+    if (issueNo >= 1 && issueNo <= 12 && year > 1900) return new Date(year, issueNo - 1, 1).getTime();
+    return 0;
+  };
   const now = new Date();
   const cutoff = new Date(now.getFullYear(), now.getMonth() - 24, 1).getTime();
   const recent = regular.filter((a) => { const t = ts(a); return t > 0 && t >= cutoff; });
+  const curSourceIssueId = String(cur.sourceIssueId || '');
   const curVol = String(cur.volume || '');
   const curIssue = String(cur.issue || '');
   const latest = regular
-    .filter((a) => String(a.volume || '') === curVol && String(a.issue || '') === curIssue)
-    .sort((a, b) => ts(b) - ts(a)).slice(0, 6);
-  const inPress = aip.slice().sort((a, b) => (Number(a.order) || 9999) - (Number(b.order) || 9999)).slice(0, 6);
-  const topCited = recent.slice().sort((a, b) => (Number(b.citations) || 0) - (Number(a.citations) || 0)).slice(0, 6);
-  const mostDl = recent.slice().sort((a, b) => (Number(b.downloads) || 0) - (Number(a.downloads) || 0)).slice(0, 6);
+    .filter((a) => curSourceIssueId
+      ? String(a.sourceIssueId || '') === curSourceIssueId
+      : String(a.volume || '') === curVol && String(a.issue || '') === curIssue)
+    .sort((a, b) => (ts(b) - ts(a)) || ((Number(b.views) || 0) - (Number(a.views) || 0))).slice(0, 6);
+  const inPress = aip.map((article, index) => ({ article, index }))
+    .sort((a, b) => {
+      const aOrder = Number(a.article.order) || 0;
+      const bOrder = Number(b.article.order) || 0;
+      if (aOrder > 0 && bOrder > 0 && aOrder !== bOrder) return aOrder - bOrder;
+      if ((aOrder > 0) !== (bOrder > 0)) return aOrder > 0 ? -1 : 1;
+      return a.index - b.index;
+    }).map((entry) => entry.article).slice(0, 6);
+  const topCited = recent.slice().sort((a, b) =>
+    ((Number(b.citations) || 0) - (Number(a.citations) || 0)) ||
+    (ts(b) - ts(a)) ||
+    ((Number(b.views) || 0) - (Number(a.views) || 0))
+  ).slice(0, 6);
+  const mostDl = recent.slice().sort((a, b) =>
+    ((Number(b.downloads) || 0) - (Number(a.downloads) || 0)) ||
+    ((Number(b.views) || 0) - (Number(a.views) || 0))
+  ).slice(0, 6);
   // Image Corner = recent "Clinical Image" articles, by citations (top 2).
   const imageCorner = regular
     .filter((a) => String(a.type || '').trim() === 'Clinical Image')
@@ -1783,6 +2272,7 @@ app.post('/api/articles-in-press/publish', (req, res) => {
     const aip = dio.readArticlesInPress();
     const articles = dio.readArticles();
     const moved = [];
+    let preferredFeaturedId = null;
 
     // Shared published date for the batch (defaults to today). Use the same
     // contract as the single-article publish endpoint (:725) so AIP records
@@ -1794,6 +2284,13 @@ app.post('/api/articles-in-press/publish', (req, res) => {
       if (idx === -1) continue;
 
       const article = aip.splice(idx, 1)[0];
+      article._aipBeforeIssue = {
+        volume: article.volume == null ? null : article.volume,
+        issue: article.issue || '',
+        pages: article.pages || '',
+        published: article.published || '',
+        sourceIssueId: article.sourceIssueId || '',
+      };
       article.volume = Number(volume);
       article.issue = String(issue);
       article.pages = article.pages || pages || '';
@@ -1801,11 +2298,14 @@ app.post('/api/articles-in-press/publish', (req, res) => {
       article.aheadOfPrint = false;
       delete article.order; // AIP-specific ordering hint, no longer relevant
       articles.unshift(article);
+      if (article.featured && preferredFeaturedId == null) preferredFeaturedId = article.id;
       moved.push(article.id);
     }
 
     dio.writeArticlesInPress(aip);
+    dio.enforceSingleFeaturedForIssue(articles, volume, issue, preferredFeaturedId);
     dio.writeArticles(articles);
+    syncCurrentIssueHomepage(articles);
 
     // Rebuild volume JSON
     const count = dio.rebuildVolumeJson(volume, issue, articles);
@@ -1817,6 +2317,65 @@ app.post('/api/articles-in-press/publish', (req, res) => {
     dio.writeArchiveIssues(archive);
 
     res.json({ moved, count: moved.length });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Return a published article to e-Pub / Articles in Press without deleting
+// its PDF, full text, figures, supplementary files, or article ID.
+app.post('/api/articles/:id/return-to-in-press', (req, res) => {
+  try {
+    createBackup();
+    const id = Number(req.params.id);
+    const articles = dio.readArticles();
+    const articleIndex = articles.findIndex((article) => article.id === id);
+    if (articleIndex === -1) return res.status(404).json({ error: 'Makale bulunamadı' });
+
+    const aip = dio.readArticlesInPress();
+    if (aip.some((article) => article.id === id)) {
+      return res.status(409).json({ error: 'Bu makale e-Pub Makaleler bölümünde zaten mevcut' });
+    }
+
+    const article = articles.splice(articleIndex, 1)[0];
+    const normalizedDoi = String(article.doi || '').trim().toLowerCase();
+    if (normalizedDoi && aip.some((item) => String(item.doi || '').trim().toLowerCase() === normalizedDoi)) {
+      return res.status(409).json({ error: 'Aynı DOI ile başka bir e-Pub makale zaten mevcut' });
+    }
+    const oldVolume = article.volume;
+    const oldIssue = article.issue;
+    const previous = article._aipBeforeIssue || {};
+
+    article.volume = previous.volume == null ? null : previous.volume;
+    article.issue = previous.issue || '';
+    article.pages = previous.pages || '';
+    article.published = previous.published || '';
+    article.sourceIssueId = previous.sourceIssueId || '';
+    article.aheadOfPrint = true;
+    article.featured = false;
+    article.imageCorner = false;
+    article.order = aip.length + 1;
+    delete article._aipBeforeIssue;
+
+    aip.push(article);
+    dio.writeArticles(articles);
+    dio.writeArticlesInPress(aip);
+    syncCurrentIssueHomepage(articles);
+
+    let remainingCount = 0;
+    if (oldVolume && oldIssue) {
+      remainingCount = dio.rebuildVolumeJson(oldVolume, oldIssue, articles);
+      const archive = dio.readArchiveIssues();
+      updateArchiveArticleCount(archive, oldVolume, oldIssue, remainingCount);
+      dio.writeArchiveIssues(archive);
+    }
+
+    res.json({
+      moved: true,
+      article,
+      previousIssue: oldVolume && oldIssue ? { volume: oldVolume, issue: String(oldIssue) } : null,
+      remainingCount,
+    });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -2005,7 +2564,7 @@ app.post('/api/imports/process/:filename', async (req, res) => {
       return res.status(404).json({ error: 'ZIP dosyası bulunamadı' });
     }
 
-    const { targetVolume, targetIssue, setAsCurrent, createIssue: shouldCreate } = req.body || {};
+    const { targetVolume, targetIssue, setAsCurrent, createIssue: shouldCreate, overwrite } = req.body || {};
 
     // Optionally create the issue if it doesn't exist
     if (shouldCreate && targetVolume && targetIssue) {
@@ -2042,6 +2601,7 @@ app.post('/api/imports/process/:filename', async (req, res) => {
       targetVolume: targetVolume != null ? Number(targetVolume) : null,
       targetIssue: targetIssue != null ? String(targetIssue) : null,
       setAsCurrent: !!setAsCurrent,
+      overwrite: !!overwrite,
     });
 
     res.status(201).json(result);

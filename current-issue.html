@@ -195,7 +195,7 @@
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
           <div>
             <h1 id="issue-page-title" class="text-3xl md:text-4xl font-bold text-gray-900">Current Issue</h1>
-            <p id="issue-page-subtitle" class="mt-2 text-gray-500 text-lg font-serif">Volume 43, Issue 2 — February 2026</p>
+            <p id="issue-page-subtitle" class="mt-2 text-gray-500 text-lg font-serif">Volume 43, Issue 6 — June 2026</p>
           </div>
           <div class="flex items-center gap-2">
             <span id="article-count" class="text-sm text-gray-400"></span>
@@ -249,7 +249,7 @@
             Open Official Issue
           </a>
         </div>
-        <div id="articles-container" class="grid gap-6" data-volume="43" data-issue="2"></div>
+        <div id="articles-container" class="grid gap-6" data-volume="43" data-issue="6"></div>
       </div>
     </section>
   </main>
@@ -332,12 +332,35 @@
   </footer>
 
   <script src="js/data-loader.js"></script>
+  <script src="js/data/homepage-articles.js"></script>
   <script>
     (function() {
       var params = new URLSearchParams(window.location.search);
       var c = document.getElementById('articles-container');
-      var vol = params.get('volume') || (c && c.getAttribute('data-volume')) || '43';
-      var iss = params.get('issue') || (c && c.getAttribute('data-issue')) || '2';
+
+      // Use HOMEPAGE_DATA.currentIssue when not overridden by URL params.
+      var currentIssue = (window.HOMEPAGE_DATA && window.HOMEPAGE_DATA.currentIssue) || {};
+      var vol = params.get('volume') || String(currentIssue.volume || c.getAttribute('data-volume') || '43');
+      var iss = params.get('issue') || String(currentIssue.issue || c.getAttribute('data-issue') || '6');
+
+      // Sync attributes so article-search.js filters correctly.
+      c.setAttribute('data-volume', vol);
+      c.setAttribute('data-issue', iss);
+
+      // Update subtitle for the current-issue (non-archive) view.
+      var isArchiveView = !!(params.get('label') || params.get('year') || params.get('sourceId') || params.get('volume'));
+      if (!isArchiveView) {
+        var subtitle = document.getElementById('issue-page-subtitle');
+        if (subtitle) {
+          var MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+          var issNum = parseInt(iss, 10);
+          var monthPart = (issNum >= 1 && issNum <= 12) ? MONTHS[issNum - 1] : '';
+          var yearPart = String(currentIssue.year || '');
+          var dateSuffix = (monthPart && yearPart) ? (monthPart + ' ' + yearPart) : (yearPart || monthPart);
+          subtitle.textContent = 'Volume ' + vol + ', Issue ' + iss + (dateSuffix ? ' — ' + dateSuffix : '');
+        }
+      }
+
       document.write('<script src="js/data/volumes/vol' + vol + '-' + iss + '.js"><\/script>');
     })();
   </script>

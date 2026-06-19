@@ -42,7 +42,10 @@ async function readErrorMessage(res, url) {
     try { return JSON.parse(text).error || res.statusText; } catch { /* fall through */ }
   }
   if (text.trimStart().startsWith('<')) {
-    return `Sunucu HTML yanıtı döndürdü (HTTP ${res.status}, ${url}). Tarayıcı önbelleğini temizleyip yeniden deneyin (Ctrl+Shift+R).`;
+    if (res.status === 404) {
+      return `Sunucuda bu işlem rotası bulunamadı (${url}). Admin sunucusu eski kodla çalışıyor olabilir; admin sunucusunu kapatıp yeniden başlatın.`;
+    }
+    return `Sunucu beklenmeyen HTML yanıtı döndürdü (HTTP ${res.status}, ${url}).`;
   }
   return text.slice(0, 200) || res.statusText;
 }

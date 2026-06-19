@@ -425,7 +425,7 @@ async function previewZip(zipPath) {
  * @param {object} options - { targetVolume, targetIssue, setAsCurrent }
  */
 async function importZip(zipPath, options = {}) {
-  const { targetVolume, targetIssue, setAsCurrent } = options;
+  const { targetVolume, targetIssue, setAsCurrent, overwrite } = options;
   const zip = new AdmZip(zipPath);
   const analysis = analyzeZip(zipPath);
   const imageIndex = buildImageIndex(analysis.imageFiles);
@@ -473,16 +473,32 @@ async function importZip(zipPath, options = {}) {
         continue;
       }
 
-      // Check duplicate DOI in published articles (true duplicate, skip)
-      if (doiKey && articles.find((a) => normalizeDoi(a.doi) === doiKey)) {
-        errors.push({ file: xmlInfo.name, error: `DOI zaten yayınlanmış makalelerde mevcut: ${parsed.doi}` });
-        continue;
+      // Check duplicate DOI in published articles.
+      // When overwrite=true and a target issue is specified, articles that already
+      // exist in the SAME volume/issue are updated in place instead of rejected.
+      // Articles in a different issue still generate an error.
+      let existingMainMatch = null;
+      if (doiKey) {
+        const dup = articles.find((a) => normalizeDoi(a.doi) === doiKey);
+        if (dup) {
+          const sameIssue = overwrite &&
+            targetVolume != null && targetIssue != null &&
+            Number(dup.volume) === Number(targetVolume) &&
+            String(dup.issue) === String(targetIssue);
+          if (!sameIssue) {
+            errors.push({ file: xmlInfo.name, error: `DOI zaten yayınlanmış makalelerde mevcut: ${parsed.doi}` });
+            continue;
+          }
+          existingMainMatch = dup;
+        }
       }
 
       // Check AIP: if matched, this is a promotion — preserve the AIP id and
       // any preserved stats (views/downloads) so existing links/citations stay valid.
-      const aipMatch = doiKey ? aipByDoi.get(doiKey) : null;
-      const id = aipMatch ? aipMatch.id : dio.nextArticleId(articles);
+      const aipMatch = (!existingMainMatch && doiKey) ? aipByDoi.get(doiKey) : null;
+      const id = existingMainMatch ? existingMainMatch.id
+        : aipMatch ? aipMatch.id
+        : dio.nextArticleId(articles);
       if (aipMatch) promotedAipIds.add(aipMatch.id);
 
       // Wipe any leftover figures/supplementaries from a previous import of
@@ -508,13 +524,13 @@ async function importZip(zipPath, options = {}) {
           : (parsed.volume != null && parsed.volume !== '' ? Number(parsed.volume) : null),
         issue: targetIssue != null ? String(targetIssue) : (parsed.issue || ''),
         pages: parsed.pages || '',
-        // Preserve view/download counts when promoting from AIP — these are
-        // accumulated user metrics and should not reset to zero just because
-        // the article transitioned from "in press" to "published".
-        views: aipMatch?.views || 0,
-        downloads: aipMatch?.downloads || 0,
-        citations: aipMatch?.citations || 0,
-        featured: false, imageCorner: false,
+        // Preserve view/download counts when promoting from AIP or overwriting
+        // an existing published article — these are accumulated user metrics.
+        views: (existingMainMatch || aipMatch)?.views || 0,
+        downloads: (existingMainMatch || aipMatch)?.downloads || 0,
+        citations: (existingMainMatch || aipMatch)?.citations || 0,
+        featured: existingMainMatch?.featured || false,
+        imageCorner: existingMainMatch?.imageCorner || false,
         hasFullText: !!parsed.fullTextHtml,
         sourceIssueId: '', sourceArticleId: '', sourceAbstractUrl: '',
         sourceTextUrl: '', sourcePdfUrl: '', localPdfUrl: '', pdfUrl: '',
@@ -615,11 +631,11 @@ async function importZip(zipPath, options = {}) {
       }
 
       // Write full text. If the XML didn't ship a body but we're promoting
-      // an AIP that already had one stored, leave the existing file in
-      // place — `hasFullText` reflects what's actually on disk now.
+      // an AIP or overwriting an existing article that already had one stored,
+      // leave the existing file in place — `hasFullText` reflects disk state.
       if (fullTextHtml) {
         dio.writeFullText(id, fullTextHtml);
-      } else if (aipMatch && aipMatch.hasFullText) {
+      } else if ((aipMatch || existingMainMatch) && (aipMatch || existingMainMatch).hasFullText) {
         article.hasFullText = true;
       }
 
@@ -628,7 +644,14 @@ async function importZip(zipPath, options = {}) {
         allMeta[id] = parsed.authorMetadata;
       }
 
-      articles.unshift(article);
+      // Place article: replace in-place when overwriting, otherwise prepend.
+      if (existingMainMatch) {
+        const existIdx = articles.findIndex((a) => a.id === id);
+        if (existIdx >= 0) articles[existIdx] = article;
+        else articles.unshift(article);
+      } else {
+        articles.unshift(article);
+      }
       if (doiKey) doisInThisRun.add(doiKey);
       const cleanedCount = (cleanup.figures.length + cleanup.supplementary.length);
       const record = {
@@ -638,6 +661,7 @@ async function importZip(zipPath, options = {}) {
         hasPdf: !!article.pdfUrl,
         figureCount: parsed.figures?.length || 0,
         promotedFromAip: !!aipMatch,
+        overwritten: !!existingMainMatch,
         cleanedStaleFiles: cleanedCount > 0
           ? { count: cleanedCount, figures: cleanup.figures, supplementary: cleanup.supplementary }
           : null,
@@ -760,6 +784,7 @@ async function importZip(zipPath, options = {}) {
  */
 function rebuildHomepage(volume, issue, articles) {
   const vol = Number(volume);
+  dio.enforceSingleFeaturedForIssue(articles, vol, issue);
   const issueArticles = articles.filter(
     (a) => a.volume === vol && String(a.issue) === String(issue)
   );
@@ -780,18 +805,20 @@ function rebuildHomepage(volume, issue, articles) {
     imageUrl: a.imageUrl || '',
   });
 
-  const featured = issueArticles.filter((a) => a.featured);
+  const featured = issueArticles.filter((a) => a.featured).slice(0, 1);
   const imageCorner = issueArticles.filter((a) => a.imageCorner);
   const mostCited = [...issueArticles].sort((a, b) => (b.citations || 0) - (a.citations || 0)).slice(0, 5);
+  let previousHomepage = {};
+  try { previousHomepage = dio.readHomepageData() || {}; } catch (_) { /* ignore */ }
 
-  const homepageData = {
+  const homepageData = dio.mergeHomepageIssueData(previousHomepage, {
     generatedAt: new Date().toISOString().slice(0, 10),
     currentIssue: { volume: vol, issue: String(issue), year },
     featuredArticles: featured.map(mapArticle),
     imageCornerArticles: imageCorner.map(mapArticle),
     mostCitedArticles: mostCited.map(mapArticle),
     latestArticles: issueArticles.slice(0, 10).map(mapArticle),
-  };
+  });
 
   dio.writeHomepageData(homepageData);
 }

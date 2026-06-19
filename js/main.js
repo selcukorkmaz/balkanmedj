@@ -150,6 +150,33 @@
     });
   });
 
+  // ─── Lazy Article Loader (enables search on all pages) ───
+  window.BMJLazyData = window.BMJLazyData || {};
+  if (typeof window.BMJLazyData.loadArticles !== 'function') {
+    window.BMJLazyData.loadArticles = function () {
+      var arts = window.ARTICLES;
+      if (Array.isArray(arts) && arts.length > 0 &&
+          arts.some(function (a) { return a && a.doi; })) {
+        return Promise.resolve();
+      }
+      return new Promise(function (resolve, reject) {
+        var existing = document.getElementById('bmj-articles-data');
+        if (existing) {
+          if (existing.getAttribute('data-loaded') === 'true') { resolve(); return; }
+          existing.addEventListener('load', resolve, { once: true });
+          existing.addEventListener('error', function () { reject(new Error('Failed to load articles')); }, { once: true });
+          return;
+        }
+        var script = document.createElement('script');
+        script.id = 'bmj-articles-data';
+        script.src = 'js/data/articles.js';
+        script.onload = function () { script.setAttribute('data-loaded', 'true'); resolve(); };
+        script.onerror = function () { reject(new Error('Failed to load articles')); };
+        document.head.appendChild(script);
+      });
+    };
+  }
+
   // ─── Toast Helper ─────────────────────────────────────────
   window.showToast = function (message, duration) {
     duration = duration || 3000;

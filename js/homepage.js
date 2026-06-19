@@ -80,6 +80,13 @@
     });
   }
 
+  function loadFreshHomepageData() {
+    return loadScriptOnce(
+      'bmj-homepage-data',
+      'js/data/homepage-articles.js?v=' + Date.now()
+    );
+  }
+
   var imageCornerFigureCache = {};
   var imageCornerCropPresetMap = {
     // Clinical Image: Left Ventricular Cardiac Hydatid Cyst Presenting with Angina Pectoris
@@ -275,21 +282,21 @@
   }
 
   function getFeaturedArticles(data) {
-    var featured = Array.isArray(data.featuredArticles) ? data.featuredArticles.slice() : [];
-    if (featured.length) return featured.slice(0, 6);
-
-    if (!Array.isArray(window.ARTICLES) || window.ARTICLES.length === 0) return [];
-
-    var issueId = data.currentIssue && String(data.currentIssue.sourceIssueId || '').trim();
+    // Only return featured articles from the current issue — no fallback to
+    // data.featuredArticles so that switching issues clears the banner.
+    if (!Array.isArray(window.ARTICLES) || !window.ARTICLES.length) return [];
+    var current = data && data.currentIssue ? data.currentIssue : {};
+    var issueId = String(current.sourceIssueId || '').trim();
+    var volume = String(current.volume || '').trim();
+    var issueNo = String(current.issue || '').trim();
+    if (!issueId && !(volume && issueNo)) return [];
     var pool = window.ARTICLES.filter(function (article) {
       if (!article || String(article.type || '').trim() === 'Cover Page') return false;
-      if (!issueId) return true;
-      return String(article.sourceIssueId || '').trim() === issueId;
+      if (issueId) return String(article.sourceIssueId || '').trim() === issueId;
+      return String(article.volume || '').trim() === volume &&
+        String(article.issue || '').trim() === issueNo;
     });
-
-    var explicit = pool.filter(function (article) { return !!article.featured; });
-    if (explicit.length) return explicit.slice(0, 6);
-    return pool.slice(0, 6);
+    return pool.filter(function (article) { return !!article.featured; }).slice(0, 1);
   }
 
   function getImageCornerArticles(data, citationMap) {
@@ -343,22 +350,9 @@
   function articlePublishedTimestamp(article) {
     if (!article) return 0;
 
-    // Derive publication month from issue number (bimonthly schedule):
-    // Issue 1→Jan, 2→Mar, 3→May, 4→Jul, 5→Sep, 6→Nov
-    var issueNum = parseInt(String(article.issue || ''), 10);
-    if (issueNum >= 1 && issueNum <= 6) {
-      var yearSource = String(article.published || article.publicationDate || article.publishDate || article.date || '').trim();
-      var yearMatch = yearSource.match(/^(\d{4})/);
-      if (yearMatch) {
-        var year = parseInt(yearMatch[1], 10);
-        var month = issueNum * 2 - 2; // 0-indexed: 1→0(Jan), 2→2(Mar), …, 6→10(Nov)
-        var ts = new Date(year, month, 1).getTime();
-        if (!isNaN(ts) && ts > 0) return ts;
-      }
-    }
-
     var candidates = [
       article.published,
+      article.publishedOnline,
       article.publicationDate,
       article.publishDate,
       article.onlineFirstDate,
@@ -368,6 +362,14 @@
     for (var i = 0; i < candidates.length; i += 1) {
       var ts = toTimestamp(candidates[i]);
       if (ts > 0) return ts;
+    }
+
+    // Legacy fallback when a record has no explicit publication date.
+    var issueNum = parseInt(String(article.issue || ''), 10);
+    var year = parseInt(String(article.year || ''), 10);
+    if (issueNum >= 1 && issueNum <= 12 && year > 1900) {
+      var derived = new Date(year, issueNum - 1, 1).getTime();
+      if (!isNaN(derived) && derived > 0) return derived;
     }
 
     return 0;
@@ -562,8 +564,8 @@
   }
 
   function compareByPublishedDesc(a, b) {
-    var aPublished = toTimestamp(a && a.published);
-    var bPublished = toTimestamp(b && b.published);
+    var aPublished = articlePublishedTimestamp(a);
+    var bPublished = articlePublishedTimestamp(b);
     if (bPublished !== aPublished) return bPublished - aPublished;
     return numericValue(b && b.views) - numericValue(a && a.views);
   }
@@ -629,12 +631,19 @@
 
     var collections = {
       'latest-published': latestPublishedPool.slice(0, 6),
-      'articles-in-press': articlesInPress.slice().sort(function (a, b) {
+      'articles-in-press': articlesInPress.map(function (article, index) {
+        return { article: article, index: index };
+      }).sort(function (aEntry, bEntry) {
+        var a = aEntry.article;
+        var b = bEntry.article;
         var aOrder = numericValue(a && a.order);
         var bOrder = numericValue(b && b.order);
-        if (aOrder !== bOrder) return aOrder - bOrder;
-        return compareByViewsDesc(a, b);
-      }).slice(0, 6),
+        var aHasOrder = aOrder > 0;
+        var bHasOrder = bOrder > 0;
+        if (aHasOrder && bHasOrder && aOrder !== bOrder) return aOrder - bOrder;
+        if (aHasOrder !== bHasOrder) return aHasOrder ? -1 : 1;
+        return aEntry.index - bEntry.index;
+      }).map(function (entry) { return entry.article; }).slice(0, 6),
       'top-cited': topCitedPool.slice(0, 6),
       'most-downloaded': mostDownloadedRecentPool.slice().sort(compareByDownloadsDesc).slice(0, 6),
       'most-downloaded-candidates': mostDownloadedRecentPool.slice()
@@ -1221,6 +1230,7 @@
     }
 
     var featured = getFeaturedArticles(data)[0];
+    var miniCard = document.querySelector('.hero-mini-card');
     if (featured) {
       var featuredTitle = stripTags(featured.title || '');
       var featuredAuthors = formatAuthors(featured.authors);
@@ -1234,6 +1244,10 @@
 
       var featuredLinkNode = document.querySelector('[data-hero-featured-link]');
       if (featuredLinkNode) featuredLinkNode.setAttribute('href', featuredUrl);
+
+      if (miniCard) miniCard.style.display = '';
+    } else {
+      if (miniCard) miniCard.style.display = 'none';
     }
 
     var latestNews = getLatestNewsItem();
@@ -1435,6 +1449,293 @@
     startAutoplay();
   }
 
+  function sanitizePopupUrl(value, allowRelative) {
+    var raw = String(value || '').trim();
+    if (!raw) return '';
+    if (allowRelative && !/^[a-z][a-z0-9+.-]*:/i.test(raw) && raw.indexOf('//') !== 0 && !/^javascript:/i.test(raw)) {
+      return raw;
+    }
+    try {
+      var parsed = new URL(raw, window.location.origin);
+      if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return '';
+      return parsed.href;
+    } catch (_err) {
+      return '';
+    }
+  }
+
+  function normalizeEmbedUrl(value) {
+    var raw = sanitizePopupUrl(value, false);
+    if (!raw) return '';
+    try {
+      var parsed = new URL(raw);
+      var host = parsed.hostname.replace(/^www\./i, '').toLowerCase();
+
+      if (host === 'youtu.be') {
+        var shortId = parsed.pathname.replace(/^\/+/, '').split('/')[0];
+        return shortId ? ('https://www.youtube-nocookie.com/embed/' + encodeURIComponent(shortId)) : '';
+      }
+      if (host === 'youtube.com' || host === 'm.youtube.com' || host === 'youtube-nocookie.com') {
+        if (parsed.pathname.indexOf('/embed/') === 0) return parsed.href;
+        var videoId = parsed.searchParams.get('v');
+        if (!videoId && parsed.pathname.indexOf('/shorts/') === 0) videoId = parsed.pathname.split('/')[2];
+        return videoId ? ('https://www.youtube-nocookie.com/embed/' + encodeURIComponent(videoId)) : '';
+      }
+      if (host === 'vimeo.com' || host === 'player.vimeo.com') {
+        if (host === 'player.vimeo.com') return parsed.href;
+        var parts = parsed.pathname.replace(/^\/+/, '').split('/');
+        return parts[0] ? ('https://player.vimeo.com/video/' + encodeURIComponent(parts[0])) : '';
+      }
+      return '';
+    } catch (_err) {
+      return '';
+    }
+  }
+
+  function parsePopupDate(value) {
+    var raw = String(value || '').trim();
+    if (!raw) return 0;
+    var ms = new Date(raw).getTime();
+    return isNaN(ms) ? 0 : ms;
+  }
+
+  function popupItemIsEligible(item, nowTs) {
+    if (!item || item.active === false) return false;
+    var startsAt = parsePopupDate(item.startsAt);
+    var endsAt = parsePopupDate(item.endsAt);
+    if (startsAt && nowTs < startsAt) return false;
+    if (endsAt && nowTs > endsAt) return false;
+    return !!(stripTags(item.title || '') || stripTags(item.body || '') || item.imageUrl || item.videoUrl || item.embedUrl);
+  }
+
+  function buildPopupBodyHtml(value) {
+    return escapeHtml(String(value || '')).replace(/\n/g, '<br>');
+  }
+
+  function popupDismissStorageKey(config) {
+    return 'bmj-home-popup:' + String(config && config.updatedAt || 'default');
+  }
+
+  function popupShouldShow(config) {
+    var key = popupDismissStorageKey(config);
+    try {
+      if (config.frequency === 'session') {
+        return !window.sessionStorage.getItem(key);
+      }
+      if (config.frequency === 'cooldown') {
+        var ts = Number(window.localStorage.getItem(key) || 0);
+        if (!ts) return true;
+        return (Date.now() - ts) >= ((Number(config.dismissHours) || 24) * 60 * 60 * 1000);
+      }
+    } catch (_err) {
+      return true;
+    }
+    return true;
+  }
+
+  function popupPersistDismiss(config) {
+    var key = popupDismissStorageKey(config);
+    try {
+      if (config.frequency === 'session') {
+        window.sessionStorage.setItem(key, String(Date.now()));
+      } else if (config.frequency === 'cooldown') {
+        window.localStorage.setItem(key, String(Date.now()));
+      }
+    } catch (_err) {
+      // Ignore storage errors; popup still closes for this page view.
+    }
+  }
+
+  function renderPopupMedia(item) {
+    var imageUrl = sanitizePopupUrl(item.imageUrl, true);
+    var videoUrl = sanitizePopupUrl(item.videoUrl, true);
+    var posterUrl = sanitizePopupUrl(item.posterUrl, true);
+    var embedUrl = normalizeEmbedUrl(item.embedUrl);
+    var title = escapeHtml(stripTags(item.title || item.badge || 'Homepage popup'));
+
+    if (item.type === 'video' && videoUrl) {
+      return '<div class="bmj-home-popup-media">' +
+        '<video controls playsinline preload="metadata"' +
+        (posterUrl ? ' poster="' + escapeHtml(posterUrl) + '"' : '') +
+        ' src="' + escapeHtml(videoUrl) + '" aria-label="' + title + '"></video>' +
+      '</div>';
+    }
+    if (item.type === 'embed' && embedUrl) {
+      return '<div class="bmj-home-popup-media">' +
+        '<div class="bmj-home-popup-embed-shell">' +
+          '<iframe src="' + escapeHtml(embedUrl) + '" title="' + title + '" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' +
+        '</div>' +
+      '</div>';
+    }
+    if (imageUrl) {
+      return '<div class="bmj-home-popup-media">' +
+        '<img src="' + escapeHtml(imageUrl) + '" alt="' + title + '" loading="lazy" decoding="async">' +
+      '</div>';
+    }
+    return '';
+  }
+
+  function openHomepagePopup(config, items) {
+    if (!items.length || document.getElementById('bmj-home-popup')) return;
+
+    var overlay = document.createElement('div');
+    overlay.id = 'bmj-home-popup';
+    overlay.className = 'bmj-home-popup-overlay';
+
+    var previousOverflow = document.body.style.overflow;
+    var previouslyFocused = document.activeElement;
+    var activeIndex = 0;
+
+    function render() {
+      var item = items[activeIndex];
+      var badge = stripTags(item.badge || '');
+      var title = stripTags(item.title || '');
+      var body = String(item.body || '');
+      var buttonUrl = sanitizePopupUrl(item.buttonUrl, true);
+      var buttonText = stripTags(item.buttonText || '');
+      var mediaHtml = renderPopupMedia(item);
+      var hasCopy = !!(title || body || (buttonUrl && buttonText));
+      var navHtml = items.length > 1
+        ? '<div class="bmj-home-popup-nav">' +
+            '<button type="button" class="bmj-home-popup-arrow" data-popup-prev aria-label="Previous announcement"' + (activeIndex === 0 ? ' disabled' : '') + '>&#8249;</button>' +
+            '<div class="bmj-home-popup-nav-center">' +
+              '<span class="bmj-home-popup-counter" aria-live="polite">' + (activeIndex + 1) + ' / ' + items.length + '</span>' +
+              '<div class="bmj-home-popup-dots">' + items.map(function (_entry, index) {
+                return '<button type="button" class="bmj-home-popup-dot' + (index === activeIndex ? ' is-active' : '') + '" data-popup-dot="' + index + '" aria-label="Go to announcement ' + (index + 1) + '" aria-current="' + (index === activeIndex ? 'true' : 'false') + '"></button>';
+              }).join('') + '</div>' +
+            '</div>' +
+            '<button type="button" class="bmj-home-popup-arrow" data-popup-next aria-label="Next announcement"' + (activeIndex === items.length - 1 ? ' disabled' : '') + '>&#8250;</button>' +
+          '</div>'
+        : '';
+
+      overlay.innerHTML = '<div class="bmj-home-popup-backdrop" data-popup-close></div>' +
+        '<div class="bmj-home-popup-dialog" role="dialog" aria-modal="true" aria-label="Homepage announcements">' +
+          '<button type="button" class="bmj-home-popup-close" data-popup-close aria-label="Close popup">&times;</button>' +
+          '<div class="bmj-home-popup-panel bmj-home-popup-panel-enter' + (mediaHtml ? ' has-media' : '') + (hasCopy ? ' has-copy' : '') + (mediaHtml && !hasCopy ? ' media-only' : '') + '" aria-live="polite">' +
+            mediaHtml +
+            (hasCopy ? '<div class="bmj-home-popup-copy">' +
+              (badge ? '<p class="bmj-home-popup-badge">' + escapeHtml(badge) + '</p>' : '') +
+              (title ? '<h2 class="bmj-home-popup-title">' + escapeHtml(title) + '</h2>' : '') +
+              (body ? '<div class="bmj-home-popup-body">' + buildPopupBodyHtml(body) + '</div>' : '') +
+              (buttonUrl && buttonText ? '<a class="bmj-home-popup-cta" data-popup-cta href="' + escapeHtml(buttonUrl) + '"' + (item.openInNewTab !== false ? ' target="_blank" rel="noopener"' : '') + '>' + escapeHtml(buttonText) + '</a>' : '') +
+              navHtml +
+            '</div>' : (navHtml ? '<div class="bmj-home-popup-media-nav">' + navHtml + '</div>' : '')) +
+          '</div>' +
+        '</div>';
+
+      Array.prototype.forEach.call(overlay.querySelectorAll('[data-popup-dot]'), function (button) {
+        button.addEventListener('click', function () {
+          activeIndex = Number(button.getAttribute('data-popup-dot')) || 0;
+          render();
+        });
+      });
+      var prev = overlay.querySelector('[data-popup-prev]');
+      var next = overlay.querySelector('[data-popup-next]');
+      if (prev) prev.addEventListener('click', function () {
+        if (activeIndex <= 0) return;
+        activeIndex -= 1;
+        render();
+      });
+      if (next) next.addEventListener('click', function () {
+        if (activeIndex >= items.length - 1) return;
+        activeIndex += 1;
+        render();
+      });
+      var dialog = overlay.querySelector('.bmj-home-popup-dialog');
+      if (dialog && items.length > 1) {
+        var touchStartX = 0;
+        var touchStartY = 0;
+        dialog.addEventListener('touchstart', function (event) {
+          var touch = event.changedTouches && event.changedTouches[0];
+          if (!touch) return;
+          touchStartX = touch.clientX;
+          touchStartY = touch.clientY;
+        }, { passive: true });
+        dialog.addEventListener('touchend', function (event) {
+          var touch = event.changedTouches && event.changedTouches[0];
+          if (!touch) return;
+          var deltaX = touch.clientX - touchStartX;
+          var deltaY = touch.clientY - touchStartY;
+          if (Math.abs(deltaX) < 50 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+          if (deltaX < 0 && activeIndex < items.length - 1) activeIndex += 1;
+          else if (deltaX > 0 && activeIndex > 0) activeIndex -= 1;
+          else return;
+          render();
+        }, { passive: true });
+      }
+      Array.prototype.forEach.call(overlay.querySelectorAll('[data-popup-close]'), function (button) {
+        button.addEventListener('click', close);
+      });
+      Array.prototype.forEach.call(overlay.querySelectorAll('[data-popup-cta]'), function (button) {
+        button.addEventListener('click', function () {
+          popupPersistDismiss(config);
+        });
+      });
+    }
+
+    function close() {
+      popupPersistDismiss(config);
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener('keydown', onKeyDown);
+      if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+      if (previouslyFocused && typeof previouslyFocused.focus === 'function') {
+        previouslyFocused.focus();
+      }
+    }
+
+    function onKeyDown(event) {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        close();
+      } else if (items.length > 1 && event.key === 'ArrowLeft') {
+        event.preventDefault();
+        if (activeIndex > 0) {
+          activeIndex -= 1;
+          render();
+        }
+      } else if (items.length > 1 && event.key === 'ArrowRight') {
+        event.preventDefault();
+        if (activeIndex < items.length - 1) {
+          activeIndex += 1;
+          render();
+        }
+      } else if (event.key === 'Tab') {
+        var focusable = Array.prototype.slice.call(overlay.querySelectorAll('button:not([disabled]), a[href], video[controls]'));
+        if (!focusable.length) return;
+        var first = focusable[0];
+        var last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    }
+
+    render();
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+    document.addEventListener('keydown', onKeyDown);
+    var closeButton = overlay.querySelector('.bmj-home-popup-close');
+    if (closeButton) closeButton.focus();
+  }
+
+  function initHomepagePopup(data) {
+    var config = data && data.popup ? data.popup : null;
+    if (!config || !config.enabled) return;
+    var nowTs = Date.now();
+    var items = Array.isArray(config.items) ? config.items.filter(function (item) {
+      return popupItemIsEligible(item, nowTs);
+    }) : [];
+    if (!items.length || !popupShouldShow(config)) return;
+
+    window.setTimeout(function () {
+      openHomepagePopup(config, items);
+    }, Math.max(0, Number(config.delayMs) || 0));
+  }
+
   function renderMetricsProvenance(data) {
     var el = document.getElementById('journal-metrics-provenance');
     if (!el) return;
@@ -1446,7 +1747,16 @@
   function init() {
     var data = window.HOMEPAGE_DATA || {};
     initHeroCarousel(data);
+    initHomepagePopup(data);
     setupLazyArticleLoader();
+    var heroArticlesReady = window.BMJLazyData && typeof window.BMJLazyData.loadArticles === 'function'
+      ? window.BMJLazyData.loadArticles()
+      : Promise.resolve();
+    heroArticlesReady.then(function () {
+      populateHeroSlides(data);
+    }).catch(function () {
+      // The summary stored in HOMEPAGE_DATA remains as the fallback.
+    });
     var articlesReady = renderArticlesDiscovery(data);
     if (articlesReady && typeof articlesReady.then === 'function') {
       articlesReady.then(function (citationMap) {
@@ -1459,5 +1769,8 @@
     renderMetricsProvenance(data);
   }
 
-  init();
+  loadFreshHomepageData().catch(function () {
+    // Keep the homepage usable if the fresh data request fails.
+    window.HOMEPAGE_DATA = window.HOMEPAGE_DATA || {};
+  }).then(init);
 })();

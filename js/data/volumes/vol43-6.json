@@ -245,7 +245,9 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en",
       "licenseText": "Content of this journal is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License."
     },
-    "relatedArticles": []
+    "relatedArticles": [],
+    "imageUrl": "images/343-344-f1.png",
+    "externalLinks": []
   },
   {
     "id": 2865,
@@ -529,7 +531,7 @@
     "views": 0,
     "downloads": 0,
     "citations": 0,
-    "featured": false,
+    "featured": true,
     "imageCorner": false,
     "hasFullText": true,
     "sourceIssueId": "",
@@ -644,8 +646,8 @@
     "views": 0,
     "downloads": 0,
     "citations": 0,
-    "featured": true,
-    "imageCorner": true,
+    "featured": false,
+    "imageCorner": false,
     "hasFullText": true,
     "sourceIssueId": "",
     "sourceArticleId": "",

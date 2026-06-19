@@ -287,26 +287,80 @@ function classifyHeadingLevel(p, ctx) {
   return 'h3';
 }
 
+// True for a short comma/semicolon-separated keyword list (1-6 word items) — NOT
+// a body sentence. Guards the "Keywords:" fallback so an editorial's opening
+// paragraph isn't mistaken for keywords.
+function _looksLikeKeywordList(text) {
+  const t = String(text || '').trim();
+  if (!t || t.length > 160) return false;
+  const parts = t.split(/[,;]/).map((s) => s.trim()).filter(Boolean);
+  if (!parts.length) return false;
+  return parts.every((p) => p.split(/\s+/).length <= 6);
+}
+
+// Article types that carry NO abstract per the journal guidelines (so a missing
+// abstract/keywords is normal, not a warning).
+function typeHasAbstract(type) {
+  const t = String(type || '').toLowerCase();
+  if (/editorial|letter|clinical image|scientific letter|editorial comment|commentary|\bimage\b/.test(t)) return false;
+  return true;
+}
+
+// Fallback body start: skip the recognizable top metadata block (type, citation,
+// DOI, title, authors, affiliations, corresponding, e-mail, dates, abstract,
+// keywords) and return the first real content paragraph. Used only when there is
+// neither a Keywords line nor a detectable section heading.
+function _firstNonMetadataIndex(paras) {
+  let sawDoi = false, sawTitle = false, sawAuthor = false;
+  let i = 0;
+  for (; i < paras.length; i++) {
+    const t = paras[i].plain;
+    if (!t) continue;
+    if (i === 0) continue;                                   // type line
+    if (/^balkan med j\b/i.test(t)) continue;                // citation
+    if (/^DOI[:\s]/i.test(t)) { sawDoi = true; continue; }
+    if (/orcid\.org\//i.test(t)) { sawAuthor = true; continue; }
+    if (/^Corresponding\s+author/i.test(t)) continue;
+    if (/^e-?mail\s*[:：]/i.test(t)) continue;
+    if (/^(Received|Accepted|Yay[ıi]n|Published|Online)\s*[:：]/i.test(t)) continue;
+    if (/^abstract$/i.test(t)) continue;
+    if (/^keywords?\s*[:：]/i.test(t)) continue;
+    if (/^\d+\s*\S/.test(t) && /universit|üniversite|department|b[öo]l[üu]m|hospital|hastane|clinic|klinik|institut|enstit[üu]|faculty|fak[üu]lte|laborat|cent(er|re)|college|school|division|service|unit/i.test(t)) continue; // affiliation
+    if (sawDoi && !sawTitle && !sawAuthor) { sawTitle = true; continue; } // title (line after DOI, before authors)
+    break;
+  }
+  return i;
+}
+
 // Assemble the article body HTML from rich paragraphs. Produces:
 //   <h3>/<h4> section headings, <p> paragraphs (bold/italic/sup preserved),
 //   and a <div class="article-references"><h3>…</h3><ol><li>…</ol></div> block
 //   that the editor's _autoLinkInEditor() then cross-links to the <sup> markers.
 function buildBodyHtml(paras, opts) {
   const isOriginal = isOriginalType((opts && opts.type) || '');
-  // Locate the body start: the first heading after the Abstract/Keywords block
-  // (so metadata lines never leak into the body).
+  // Locate the body start. The body begins right after the metadata block — NOT
+  // necessarily at a section heading (editorials/letters often have no headings
+  // before References, so requiring a heading would skip the whole main text).
   const idxAbstract = paras.findIndex((p) => /^abstract$/i.test(p.plain));
   let idxKeywords = -1;
   for (let i = (idxAbstract >= 0 ? idxAbstract : 0); i < paras.length; i++) {
     if (/^keywords?\s*:/i.test(paras[i].plain)) { idxKeywords = i; break; }
   }
-  const minStart = Math.max(idxKeywords, idxAbstract);
   let start = -1;
-  for (let i = 0; i < paras.length; i++) {
-    if (i <= minStart) continue;
-    if (looksLikeHeading(paras[i])) { start = i; break; }
+  if (idxKeywords >= 0) {
+    start = idxKeywords + 1;
+    const kwInline = /^keywords?\s*:\s*\S/i.test(paras[idxKeywords].plain);
+    // Skip a keyword VALUE sitting on its own line after an empty "Keywords:".
+    if (!kwInline && paras[start] && !looksLikeHeading(paras[start]) && _looksLikeKeywordList(paras[start].plain)) start += 1;
+  } else {
+    const after = idxAbstract >= 0 ? idxAbstract : 0;
+    for (let i = after + 1; i < paras.length; i++) {
+      if (looksLikeHeading(paras[i])) { start = i; break; }
+    }
+    if (start < 0) start = _firstNonMetadataIndex(paras);
   }
-  if (start < 0) start = (idxKeywords >= 0 ? idxKeywords + 1 : (idxAbstract >= 0 ? idxAbstract + 1 : 0));
+  while (start < paras.length && !(paras[start] && (paras[start].plain || (paras[start].html || '').trim()))) start++;
+  if (start < 0) start = 0;
 
   const REF_RE = /^(references|reference list|bibliography|kaynaklar|kaynakça|kaynakca)$/;
   const ctx = { isOriginal, seenMain: false };
@@ -391,13 +445,81 @@ function findIndex(paras, pred, from = 0) {
   return -1;
 }
 
-// Parse "dd.mm.yyyy" / "dd/mm/yyyy" / "dd-mm-yyyy" -> ISO "yyyy-mm-dd".
+function isoDate(year, month, day) {
+  const y = Number(year);
+  const m = Number(month);
+  const d = Number(day);
+  if (!Number.isInteger(y) || !Number.isInteger(m) || !Number.isInteger(d)) return '';
+  if (y < 1900 || y > 2200 || m < 1 || m > 12 || d < 1 || d > 31) return '';
+  const check = new Date(Date.UTC(y, m - 1, d));
+  if (check.getUTCFullYear() !== y || check.getUTCMonth() !== m - 1 || check.getUTCDate() !== d) return '';
+  return `${String(y).padStart(4, '0')}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+}
+
+function foldDateText(value) {
+  return String(value || '')
+    .replace(/[\u200e\u200f\u202a-\u202e]/g, '')
+    .replace(/[çÇ]/g, 'c').replace(/[ğĞ]/g, 'g').replace(/[ıİ]/g, 'i')
+    .replace(/[öÖ]/g, 'o').replace(/[şŞ]/g, 's').replace(/[üÜ]/g, 'u')
+    .toLowerCase();
+}
+
+// Parse numeric, English and Turkish dates into ISO yyyy-mm-dd.
 function parseDate(input) {
-  const m = String(input || '').match(/(\d{1,2})[.\-\/](\d{1,2})[.\-\/](\d{4})/);
-  if (!m) return '';
-  const dd = m[1].padStart(2, '0');
-  const mm = m[2].padStart(2, '0');
-  return `${m[3]}-${mm}-${dd}`;
+  let raw = String(input || '').replace(/[\u200e\u200f\u202a-\u202e]/g, ' ').trim();
+  if (!raw) return '';
+  raw = raw.replace(/(\d)(st|nd|rd|th)\b/gi, '$1').replace(/\s+/g, ' ');
+
+  let m = raw.match(/\b((?:19|20|21)\d{2})\s*[.\-/]\s*(\d{1,2})\s*[.\-/]\s*(\d{1,2})\b/);
+  if (m) return isoDate(m[1], m[2], m[3]);
+
+  m = raw.match(/\b(\d{1,2})\s*[.\-/]\s*(\d{1,2})\s*[.\-/]\s*((?:19|20|21)?\d{2})\b/);
+  if (m) {
+    const year = m[3].length === 2 ? 2000 + Number(m[3]) : Number(m[3]);
+    return isoDate(year, m[2], m[1]);
+  }
+
+  const months = {
+    jan: 1, january: 1, oca: 1, ocak: 1,
+    feb: 2, february: 2, sub: 2, subat: 2,
+    mar: 3, march: 3, mart: 3,
+    apr: 4, april: 4, nis: 4, nisan: 4,
+    may: 5, mayis: 5,
+    jun: 6, june: 6, haz: 6, haziran: 6,
+    jul: 7, july: 7, tem: 7, temmuz: 7,
+    aug: 8, august: 8, agu: 8, agustos: 8,
+    sep: 9, sept: 9, september: 9, eyl: 9, eylul: 9,
+    oct: 10, october: 10, eki: 10, ekim: 10,
+    nov: 11, november: 11, kas: 11, kasim: 11,
+    dec: 12, december: 12, ara: 12, aralik: 12,
+  };
+  const folded = foldDateText(raw);
+  m = folded.match(/\b(\d{1,2})\s+([a-z]+)\.?\s*,?\s*((?:19|20|21)\d{2})\b/);
+  if (m && months[m[2]]) return isoDate(m[3], months[m[2]], m[1]);
+  m = folded.match(/\b([a-z]+)\.?\s+(\d{1,2})\s*,?\s*((?:19|20|21)\d{2})\b/);
+  if (m && months[m[1]]) return isoDate(m[3], months[m[1]], m[2]);
+
+  m = raw.match(/\b((?:19|20|21)\d{2})(\d{2})(\d{2})\b/);
+  return m ? isoDate(m[1], m[2], m[3]) : '';
+}
+
+function findLabeledDate(paras, labelPatterns) {
+  for (let i = 0; i < paras.length; i++) {
+    const text = String(paras[i] && paras[i].text || '').trim();
+    if (!text) continue;
+    for (const label of labelPatterns) {
+      const match = text.match(new RegExp('(?:^|[;,|]|\\s)\\s*(?:' + label + ')\\s*(?:date|tarihi)?\\s*[:：\\-–—]?\\s*([^;|]*)', 'i'));
+      if (!match) continue;
+      const inline = parseDate(match[1]);
+      if (inline) return inline;
+      for (let next = i + 1; next < Math.min(paras.length, i + 3); next++) {
+        const adjacent = parseDate(paras[next] && paras[next].text);
+        if (adjacent) return adjacent;
+        if (String(paras[next] && paras[next].text || '').trim()) break;
+      }
+    }
+  }
+  return '';
 }
 
 function extractMetadata(paras) {
@@ -410,6 +532,7 @@ function extractMetadata(paras) {
     keywords: [],
     received: '',
     accepted: '',
+    publishedOnline: '',
     published: '',
     correspondingEmail: '',
     warnings: [],
@@ -519,13 +642,23 @@ function extractMetadata(paras) {
 
   // 8) Dates — Received / Accepted / Published. "Yayın" is the Turkish
   // template label; accept both.
-  const findLabeledDate = (label) => {
-    const p = paras.find((p) => new RegExp('^\\s*' + label + '\\s*[:：]', 'i').test(p.text));
-    return p ? parseDate(p.text) : '';
-  };
-  meta.received = findLabeledDate('Received');
-  meta.accepted = findLabeledDate('Accepted');
-  meta.published = findLabeledDate('(?:Yayın|Yayin|Published)');
+  const dateParas = paras.slice(0, 80);
+  meta.received = findLabeledDate(dateParas, [
+    'received', 'date\\s+received', 'submission\\s+date',
+    'alındığı', 'alindigi', 'alındı', 'alindi', 'geliş', 'gelis', 'başvuru', 'basvuru',
+  ]);
+  meta.accepted = findLabeledDate(dateParas, [
+    'accepted', 'acceptance', 'date\\s+accepted',
+    'kabul', 'kabul\\s+edildi',
+  ]);
+  meta.publishedOnline = findLabeledDate(dateParas, [
+    'published\\s+online', 'online\\s+publication', 'available\\s+online',
+    'online\\s+first', 'online', 'epub', 'e-pub', 'çevrimiçi\\s+yayın', 'cevrimici\\s+yayin',
+  ]);
+  meta.published = findLabeledDate(dateParas, [
+    'published(?!\\s+online)', 'publication\\s+date', 'date\\s+published',
+    'yayın', 'yayin', 'yayım', 'yayim', 'yayımlanma', 'yayinlanma',
+  ]);
 
   // 9) Abstract — paragraphs between "Abstract" and "Keywords:" / first
   // ALL-CAPS section heading (whichever comes first).
@@ -539,27 +672,14 @@ function extractMetadata(paras) {
       if (paras[i].text) parts.push(paras[i].text);
     }
     meta.abstract = parts.join('\n\n');
-  } else {
+  } else if (typeHasAbstract(meta.type)) {
     meta.warnings.push('"Abstract" başlığı bulunamadı');
   }
 
-  // 10) Keywords — comma- or semicolon-separated, on the same line after the
-  // colon or on the following paragraph.
-  if (kwIdx >= 0) {
-    const inline = paras[kwIdx].text.match(/^Keywords?\s*:\s*(.+)$/i);
-    let raw = (inline && inline[1].trim()) ? inline[1] : '';
-    if (!raw && kwIdx + 1 < paras.length) {
-      const next = paras[kwIdx + 1].text;
-      if (next && !isLikelyBodyHeading(next)) raw = next;
-    }
-    if (raw) {
-      meta.keywords = raw
-        .split(/[,;]/)
-        .map((s) => s.trim().replace(/[.;]+$/, ''))
-        .filter(Boolean);
-    }
-  }
-  if (!meta.keywords.length) meta.warnings.push('Anahtar kelime bulunamadı');
+  // 10) Keywords — NOT extracted. The journal has no keyword field, so we never
+  // pull keyword values from the Word file or warn about them. The "Keywords:"
+  // line (kwIdx) is still used above only as the abstract's stop boundary and (in
+  // buildBodyHtml) as a body-start marker. meta.keywords stays [].
 
   return meta;
 }
@@ -576,4 +696,4 @@ function isLikelyBodyHeading(text) {
   return true;
 }
 
-module.exports = { parseAipDocx, extractParagraphs, extractMetadata, extractRichParagraphs, buildBodyHtml, buildRelsMap };
+module.exports = { parseAipDocx, extractParagraphs, extractMetadata, extractRichParagraphs, buildBodyHtml, buildRelsMap, parseDate, findLabeledDate };

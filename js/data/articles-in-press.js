@@ -1,891 +1,18 @@
 /**
  * Balkan Medical Journal — Articles in Press
- * Last updated: 2026-06-17
+ * Last updated: 2026-06-19
  */
 window.ARTICLES_IN_PRESS = [
   {
-    "id": 2815,
-    "order": 3,
-    "type": "Original Article",
-    "title": "Significance of LEF1, ROR2, Cyclin D1, and DNA Methylation Profiling in the Molecular Classification and Prognosis Prediction of Pediatric Medulloblastoma",
-    "authors": [
-      {
-        "name": "Mehmet Fatih Tekin",
-        "affiliation": "Department of Pathology, Marmara University Faculty of Medicine, İstanbul, Türkiye; Department of Pathology, Marmara University Pendik Training and Research Hospital, İstanbul, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Dilek Gül",
-        "affiliation": "Deparment of Radiation Oncology, Marmara University Pendik Training and Research Hospital, İstanbul, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Nurşah Eker",
-        "affiliation": "Department of Pediatric Hematology and Oncology, Marmara University Faculty of Medicine, İstanbul, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Adnan Dağçınar",
-        "affiliation": "Department of Neurosurgery, Marmara University Faculty of Medicine, İstanbul, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Yaşar Bayri",
-        "affiliation": "Department of Neurosurgery, Marmara University Faculty of Medicine, İstanbul, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Fatih Bayraklı",
-        "affiliation": "Department of Neurosurgery, Marmara University Faculty of Medicine, İstanbul, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Beste Melek Atasoy",
-        "affiliation": "Department of Radiation Oncology, Marmara University Faculty of Medicine, İstanbul, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Süheyla Uyar Bozkurt",
-        "affiliation": "Department of Pathology, Marmara University Faculty of Medicine, İstanbul, Türkiye; Department of Pathology, İstinye University Faculty of Medicine, İstanbul, Türkiye",
-        "orcid": ""
-      }
-    ],
-    "abstract": "Abstract Background: Accurate identification of medulloblastoma molecular subgroups is essential, particularly in settings lacking advanced genomic tools. Conventional markers, such as β-catenin, present significant challenges in reliably detecting the WNT-activated subgroup (WNT-AG). Aims: To evaluate the utility of lymphoid enhancer-binding factor 1 (LEF1), Cyclin D1, and receptor tyrosine kinase-like orphan receptor 2 (ROR2) as immunohistochemical (IHC) markers for molecular subgroup classification and to assess their prognostic significance. Study Design: Retrospective cohort study. Methods: IHC analysis was performed using LEF1, Cyclin D1, and ROR2. Two distinct LEF1 staining patterns were identified: nuclear (nLEF1) and punctate (pLEF1). A subset of 29 cases, selected based on predefined criteria, underwent EPIC array Methylation analysis. Findings were correlated with recurrence and survival outcomes. Results: Among the 94 cases, 12.8% were WNT-AG, 54.3% were sonic hedgehog-activated subgroup (SHH-AG), and 33.0% were Groups 3 and 4 (G3/4). nLEF1 demonstrated higher specificity and sensitivity for WNT-AG than β-catenin, identifying it as a more reliable diagnostic marker. High pLEF1 expression was strongly associated with SHH-AG. Cyclin D1 positivity was predominantly observed in WNT-AG. While ROR2 did not identify WNT-AG effectively, its absence in Group 3 cases was notable. Prognostic analysis revealed that LEF1 expression patterns correlated with favorable survival outcomes: total LEF1 (tLEF1) and nLEF1 were associated with improved overall survival, whereas pLEF1 and tLEF1 were linked to better progression-free survival. Conclusion: Nuclear LEF1 (nLEF1) is at least as effective as β-Catenin in identifying WNT-AG and may serve as a superior diagnostic marker. Cyclin D1 can be used as a complementary marker in WNT-AG detection. ROR2 negativity may indicate G3 tumors, though further studies are warranted to confirm its prognostic value.",
-    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Accurate identification of medulloblastoma molecular subgroups is essential, particularly in settings lacking advanced genomic tools. Conventional markers, such as &beta;-catenin, present significant challenges in reliably detecting the WNT-activated subgroup (WNT-AG).</p>\r\n<p><strong>Aims:</strong> To evaluate the utility of lymphoid enhancer-binding factor 1 (LEF1), Cyclin D1, and receptor tyrosine kinase-like orphan receptor 2 (ROR2) as immunohistochemical (IHC) markers for molecular subgroup classification and to assess their prognostic significance.</p>\r\n<p><strong>Study Design:</strong> Retrospective cohort study.</p>\r\n<p><strong>Methods:</strong> IHC analysis was performed using LEF1, Cyclin D1, and ROR2. Two distinct LEF1 staining patterns were identified: nuclear (nLEF1) and punctate (pLEF1). A subset of 29 cases, selected based on predefined criteria, underwent EPIC array Methylation analysis. Findings were correlated with recurrence and survival outcomes.</p>\r\n<p><strong>Results:</strong> Among the 94 cases, 12.8% were WNT-AG, 54.3% were sonic hedgehog-activated subgroup (SHH-AG), and 33.0% were Groups 3 and 4 (G3/4). nLEF1 demonstrated higher specificity and sensitivity for WNT-AG than &beta;-catenin, identifying it as a more reliable diagnostic marker. High pLEF1 expression was strongly associated with SHH-AG. Cyclin D1 positivity was predominantly observed in WNT-AG. While ROR2 did not identify WNT-AG effectively, its absence in Group 3 cases was notable. Prognostic analysis revealed that LEF1 expression patterns correlated with favorable survival outcomes: total LEF1 (tLEF1) and nLEF1 were associated with improved overall survival, whereas pLEF1 and tLEF1 were linked to better progression-free survival.</p>\r\n<p><strong>Conclusion:</strong> Nuclear LEF1 (nLEF1) is at least as effective as &beta;-Catenin in identifying WNT-AG and may serve as a superior diagnostic marker. Cyclin D1 can be used as a complementary marker in WNT-AG detection. ROR2 negativity may indicate G3 tumors, though further studies are warranted to confirm its prognostic value.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
-    "previewText": "Abstract Background: Accurate identification of medulloblastoma molecular subgroups is essential, particularly in settings lacking advanced genomic tools. Conventional markers, such as β-catenin, present significant challenges in reliably detecting the WNT-activated subgroup (WNT-AG). Aims: To evaluate the utility of lymphoid enhancer-binding factor 1 (LEF1)",
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-10-51",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 482,
-    "downloads": 395,
-    "hasFullText": true,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2815",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2815",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2815",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2825,
-    "order": 4,
-    "type": "Original Article",
-    "title": "Overexpression of Soluble Fibrinogen-like Protein 2 in MSCs Ameliorates Renal Ischemia-Reperfusion Injury in Mice by Modulating Neutrophils",
-    "authors": [
-      {
-        "name": "Guo-Shan Chen",
-        "affiliation": "Department of General Surgery, Tianjin Medical University General Hospital, Tianjin, China; Tianjin Key Laboratory of Precise Vascular Reconstruction and Organ Function Repair, Tianjin, China",
-        "orcid": ""
-      },
-      {
-        "name": "Wen-Hao Xiong",
-        "affiliation": "Department of General Surgery, Tianjin Medical University General Hospital, Tianjin, China; Tianjin Key Laboratory of Precise Vascular Reconstruction and Organ Function Repair, Tianjin, China",
-        "orcid": ""
-      },
-      {
-        "name": "Dan-Zhou Li",
-        "affiliation": "Department of General Surgery, Tianjin Medical University General Hospital, Tianjin, China; Tianjin Key Laboratory of Precise Vascular Reconstruction and Organ Function Repair, Tianjin, China",
-        "orcid": ""
-      },
-      {
-        "name": "Peng-Hui Zhang",
-        "affiliation": "Department of General Surgery, Tianjin Medical University General Hospital, Tianjin, China; Tianjin Key Laboratory of Precise Vascular Reconstruction and Organ Function Repair, Tianjin, China",
-        "orcid": ""
-      },
-      {
-        "name": "Yi-Ting Wang",
-        "affiliation": "Department of General Surgery, Tianjin Medical University General Hospital, Tianjin, China; Tianjin Key Laboratory of Precise Vascular Reconstruction and Organ Function Repair, Tianjin, China",
-        "orcid": ""
-      },
-      {
-        "name": "Yong-Chao Zhang",
-        "affiliation": "Department of General Surgery, Tianjin Medical University General Hospital, Tianjin, China; Tianjin Key Laboratory of Precise Vascular Reconstruction and Organ Function Repair, Tianjin, China",
-        "orcid": ""
-      },
-      {
-        "name": "Feng Qi",
-        "affiliation": "Department of General Surgery, Tianjin Medical University General Hospital, Tianjin, China; Tianjin Key Laboratory of Precise Vascular Reconstruction and Organ Function Repair, Tianjin, China",
-        "orcid": ""
-      }
-    ],
-    "abstract": "Abstract Background: Renal ischemia-reperfusion (I/R) injury is a major cause of graft dysfunction and failure, driving inflammation and tissue damage. Mesenchymal stem cells (MSCs) possess therapeutic potential due to their immunomodulatory properties. Notably, neutrophils express the inhibitory receptor CD32b, which is a specific target of the immunosuppressive molecule soluble fibrinogen-like protein 2 (sFgl2). Aims: This study aimed to investigate the therapeutic efficacy and underlying mechanisms of genetically engineered MSCs expressing sFgl2 (sFgl2-MSCs) in treating renal I/R injury, with a focus on neutrophil regulation. Study Design: An in vivo renal I/R injury mouse model. Methods: Following imaging to localize MSCs, mice were randomly allocated into four treatment groups. Treatments were administered according to group assignments. Renal function was assessed using serum creatinine and blood urea nitrogen levels, while systemic inflammation was evaluated by measuring serum interleukin-1 beta (IL-1β), interleukin (IL)-6, tumor necrosis factor-alpha (TNF-α), and IL-10 via enzyme-linked immunosorbent assay (ELISA). Neutrophil proportions in the blood and kidney were analyzed by flow cytometry. At 24 h, surface expression of CD95 and CD206 was assessed; CD206 was used to define neutrophils with N2-like (CD206+) and N1-like (CD95+) phenotypic features. Histopathological scoring of renal tissue was performed at 24 h. Infiltration of Ly6G+ neutrophils and citrullinated histone H3 (CitH3) as well as myeloperoxidase/CitH3 co-localization (an indicator of neutrophil extracellular traps, NETs) were detected by immunohistochemistry and immunofluorescence. Circulating free DNA (cf-DNA) in plasma was quantified using PicoGreen dye. Furthermore, the impact of sFgl2-MSCs on bone marrow-derived neutrophil polarization and function was evaluated in vitro using flow cytometry, ELISA, and a co-culture system. Results: While unmodified MSCs exhibited a moderate therapeutic effect, sFgl2-MSCs treatment was significantly more effective. sFgl2-MSCs markedly improved renal function, reduced histopathological damage (e.g., tubular necrosis), and modulated systemic cytokine levels by decreasing pro-inflammatory (IL-1β, IL-6, TNF-α) and increasing anti-inflammatory (IL-10) cytokines. Crucially, sFgl2-MSCs regulated neutrophil responses in the kidney: they increased the proportion of N2-like neutrophils and decreased N1-like neutrophils, concurrently reducing NET-related markers, as evidenced by decreased CitH3 and cf-DNA. Mechanistically, sFgl2-MSCs enhanced neutrophil immunoregulatory function via the TGFβ-Smad2/3 signaling pathway. Conclusion: Genetically modified sFgl2-MSCs alleviate renal I/R injury. This protective effect is associated with engagement of neutrophil CD32b receptors, activation of the TGFβ-Smad2/3 pathway, promotion of a protective N2-like neutrophil phenotype, and suppression of N1-like and NET-related markers.",
-    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Renal ischemia-reperfusion (I/R) injury is a major cause of graft dysfunction and failure, driving inflammation and tissue damage. Mesenchymal stem cells (MSCs) possess therapeutic potential due to their immunomodulatory properties. Notably, neutrophils express the inhibitory receptor CD32b, which is a specific target of the immunosuppressive molecule soluble fibrinogen-like protein 2 (sFgl2).</p>\r\n<p><strong>Aims:</strong> This study aimed to investigate the therapeutic efficacy and underlying mechanisms of genetically engineered MSCs expressing sFgl2 (sFgl2-MSCs) in treating renal I/R injury, with a focus on neutrophil regulation.</p>\r\n<p><strong>Study Design:</strong> An in vivo renal I/R injury mouse model.</p>\r\n<p><strong>Methods:</strong> Following imaging to localize MSCs, mice were randomly allocated into four treatment groups. Treatments were administered according to group assignments. Renal function was assessed using serum creatinine and blood urea nitrogen levels, while systemic inflammation was evaluated by measuring serum interleukin-1 beta (IL-1&beta;), interleukin (IL)-6, tumor necrosis factor-alpha (TNF-&alpha;), and IL-10 via enzyme-linked immunosorbent assay (ELISA). Neutrophil proportions in the blood and kidney were analyzed by flow cytometry. At 24 h, surface expression of CD95 and CD206 was assessed; CD206 was used to define neutrophils with N2-like (CD206+) and N1-like (CD95+) phenotypic features. Histopathological scoring of renal tissue was performed at 24 h. Infiltration of Ly6G+ neutrophils and citrullinated histone H3 (CitH3) as well as myeloperoxidase/CitH3 co-localization (an indicator of neutrophil extracellular traps, NETs) were detected by immunohistochemistry and immunofluorescence. Circulating free DNA (cf-DNA) in plasma was quantified using PicoGreen dye. Furthermore, the impact of sFgl2-MSCs on bone marrow-derived neutrophil polarization and function was evaluated in vitro using flow cytometry, ELISA, and a co-culture system.</p>\r\n<p><strong>Results:</strong> While unmodified MSCs exhibited a moderate therapeutic effect, sFgl2-MSCs treatment was significantly more effective. sFgl2-MSCs markedly improved renal function, reduced histopathological damage (e.g., tubular necrosis), and modulated systemic cytokine levels by decreasing pro-inflammatory (IL-1&beta;, IL-6, TNF-&alpha;) and increasing anti-inflammatory (IL-10) cytokines. Crucially, sFgl2-MSCs regulated neutrophil responses in the kidney: they increased the proportion of N2-like neutrophils and decreased N1-like neutrophils, concurrently reducing NET-related markers, as evidenced by decreased CitH3 and cf-DNA. Mechanistically, sFgl2-MSCs enhanced neutrophil immunoregulatory function via the TGF&beta;-Smad2/3 signaling pathway.</p>\r\n<p><strong>Conclusion:</strong> Genetically modified sFgl2-MSCs alleviate renal I/R injury. This protective effect is associated with engagement of neutrophil CD32b receptors, activation of the TGF&beta;-Smad2/3 pathway, promotion of a protective N2-like neutrophil phenotype, and suppression of N1-like and NET-related markers.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
-    "previewText": "Abstract Background: Renal ischemia-reperfusion (I/R) injury is a major cause of graft dysfunction and failure, driving inflammation and tissue damage. Mesenchymal stem cells (MSCs) possess therapeutic potential due to their immunomodulatory properties. Notably, neutrophils express the inhibitory receptor CD32b, which is a specific target of the immunosuppre",
-    "doi": "10.4274/balkanmedj.galenos.2026.2025-12-101",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 231,
-    "downloads": 71,
-    "hasFullText": true,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2825",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2825",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2825",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2826,
-    "order": 5,
-    "type": "Original Article",
-    "title": "Ginkgetin Alleviates Doxorubicin-Induced Heart Failure by Regulating Mitochondrial Dysfunction Through the AMPK/Sirt1/NF-κB Signaling Pathway",
-    "authors": [
-      {
-        "name": "Yanfu Wang",
-        "affiliation": "Department of Cardiovascular Medicine, Aviation General Hospital, Beijing, China",
-        "orcid": ""
-      },
-      {
-        "name": "Chong Wang",
-        "affiliation": "Cardiac Center, Beijing Chest Hospital, Beijing, China",
-        "orcid": ""
-      },
-      {
-        "name": "Wei Li",
-        "affiliation": "Department of Cardiovascular Medicine, Aviation General Hospital, Beijing, China",
-        "orcid": ""
-      },
-      {
-        "name": "Xinyu Ren",
-        "affiliation": "Department of Cardiovascular Medicine, Aviation General Hospital, Beijing, China",
-        "orcid": ""
-      },
-      {
-        "name": "Yubo Peng",
-        "affiliation": "Department of Cardiovascular Medicine, Aviation General Hospital, Beijing, China",
-        "orcid": ""
-      },
-      {
-        "name": "Yan Zhang",
-        "affiliation": "Department of Rehabilitation Medicine, Beijing Chest Hospital, Beijing, China",
-        "orcid": ""
-      }
-    ],
-    "abstract": "Abstract Background: Heart failure (HF) represents the terminal stage of many cardiovascular diseases. Doxorubicin (DOX) can induce HF through oxidative stress (OS), inflammation, and apoptosis. Ginkgetin (GK) has potential cardioprotective effects, but its underlying mechanisms remain unclear. Aims: This study investigated the protective effects of GK against DOX-induced HF and explored its mechanisms, focusing on mitochondrial function and related signaling pathways.Study Design: In vivo and in vitro experimental models. Methods: HF was induced by DOX in mice and H9c2 cardiomyocytes. Cardiac function, myocardial injury, OS, inflammation, and apoptosis were assessed using echocardiography, biochemical assays, enzyme-linked immunosorbent assay, histopathology, immunofluorescence, and Western blot. Mitochondrial function was evaluated via transmission electron microscopy, RT-qPCR, and Seahorse analysis. Compound C was applied to verify the involvement of the adenosine monophosphate–activated protein kinase (AMPK)/Sirt1/nuclear factor-κB (NF-κB) pathway. Results: GK markedly improved DOX-induced cardiac dysfunction and myocardial injury, reduced cardiac injury markers and inflammatory cytokines, and alleviated fibrosis, hypertrophy, apoptosis, and reactive oxygen species accumulation. GK restored superoxide dismutase activity, decreased malondialdehyde levels, increased glutathione and ATP, and preserved mitochondrial structure and respiratory function. GK upregulated AMPK and Sirt1, inhibited NF-κB activation, and regulated apoptosis-related proteins, whereas Compound C reversed these effects. Conclusion: GK protects against DOX-induced HF by activating AMPK/Sirt1 and inhibiting NF-κB signaling, thereby mitigating OS, inflammation, apoptosis, and mitochondrial dysfunction.",
-    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Heart failure (HF) represents the terminal stage of many cardiovascular diseases. Doxorubicin (DOX) can induce HF through oxidative stress (OS), inflammation, and apoptosis. Ginkgetin (GK) has potential cardioprotective effects, but its underlying mechanisms remain unclear.</p>\r\n<p><strong>Aims:</strong> This study investigated the protective effects of GK against DOX-induced HF and explored its mechanisms, focusing on mitochondrial function and related signaling pathways.<br />Study Design: In vivo and in vitro experimental models.</p>\r\n<p><strong>Methods:</strong> HF was induced by DOX in mice and H9c2 cardiomyocytes. Cardiac function, myocardial injury, OS, inflammation, and apoptosis were assessed using echocardiography, biochemical assays, enzyme-linked immunosorbent assay, histopathology, immunofluorescence, and Western blot. Mitochondrial function was evaluated via transmission electron microscopy, RT-qPCR, and Seahorse analysis. Compound C was applied to verify the involvement of the adenosine monophosphate&ndash;activated protein kinase (AMPK)/Sirt1/nuclear factor-&kappa;B (NF-&kappa;B) pathway.</p>\r\n<p><strong>Results:</strong> GK markedly improved DOX-induced cardiac dysfunction and myocardial injury, reduced cardiac injury markers and inflammatory cytokines, and alleviated fibrosis, hypertrophy, apoptosis, and reactive oxygen species accumulation. GK restored superoxide dismutase activity, decreased malondialdehyde levels, increased glutathione and ATP, and preserved mitochondrial structure and respiratory function. GK upregulated AMPK and Sirt1, inhibited NF-&kappa;B activation, and regulated apoptosis-related proteins, whereas Compound C reversed these effects.</p>\r\n<p><strong>Conclusion:</strong> GK protects against DOX-induced HF by activating AMPK/Sirt1 and inhibiting NF-&kappa;B signaling, thereby mitigating OS, inflammation, apoptosis, and mitochondrial dysfunction.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
-    "previewText": "Abstract Background: Heart failure (HF) represents the terminal stage of many cardiovascular diseases. Doxorubicin (DOX) can induce HF through oxidative stress (OS), inflammation, and apoptosis. Ginkgetin (GK) has potential cardioprotective effects, but its underlying mechanisms remain unclear. Aims: This study investigated the protective effects of GK again",
-    "doi": "10.4274/balkanmedj.galenos.2026.2025-11-113",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 193,
-    "downloads": 68,
-    "hasFullText": true,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2826",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2826",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2826",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2824,
-    "order": 6,
-    "type": "Brief Report",
-    "title": "A Novel Pathogenic Haplotype in CDH23 Causing DFNB12: The Combined Effect of Two Individually Benign Variants",
-    "authors": [
-      {
-        "name": "Zi-Xin Tian",
-        "affiliation": "Institute of Molecular Medicine and Oncology, Chongqing Medical University, Chongqing, China",
-        "orcid": ""
-      },
-      {
-        "name": "Jun Zhang",
-        "affiliation": "Institute of Molecular Medicine and Oncology, Chongqing Medical University, Chongqing, China; Department of Cell biology and Genetics, Chongqing Medical University, Chongqing, China",
-        "orcid": ""
-      },
-      {
-        "name": "Zi-Xuan Wang",
-        "affiliation": "Institute of Molecular Medicine and Oncology, Chongqing Medical University, Chongqing, China",
-        "orcid": ""
-      },
-      {
-        "name": "Xi Song",
-        "affiliation": "Institute of Molecular Medicine and Oncology, Chongqing Medical University, Chongqing, China",
-        "orcid": ""
-      },
-      {
-        "name": "Yi-Tao Zhou",
-        "affiliation": "Institute of Molecular Medicine and Oncology, Chongqing Medical University, Chongqing, China",
-        "orcid": ""
-      },
-      {
-        "name": "Ying-Yi Hu",
-        "affiliation": "Institute of Molecular Medicine and Oncology, Chongqing Medical University, Chongqing, China",
-        "orcid": ""
-      }
-    ],
-    "abstract": "Abstract Background: Aberrations in cadherin-related 23 (CDH23) account for a significant proportion of familial autosomal recessive non-syndromic hearing loss (DFNB12), a common subtype of hereditary hearing loss worldwide. Aims: This study aimed to elucidate the molecular basis and pathogenic mechanism of DFNB12 in an affected girl from a nine-member pedigree. Study Design: Family-based genetic study with pedigree analysis. Methods: Clinical whole-exome sequencing combined with pedigree analysis was used to identify disease-causing mutations. The potential functional consequences of these mutations were investigated using structural bioinformatic approaches, including homology modeling, molecular dynamics simulations, and other relevant tools. Results: The proband carried compound heterozygous variants: a known pathogenic maternal variant (c.6049G > A) and a paternal haplotype comprising two linked variants (c.3262G > A and c.6911G > A), each individually classified as benign. Pedigree segregation analysis demonstrated that the paternal haplotype acts as a single pathogenic allele. Conclusion: Two individually benign variants can combine to form a novel pathogenic haplotype (c.3262A–c.6911A). This mechanism may be under-recognized in routine variant interpretation pipelines. Our findings underscore the importance of evaluating the combined effects of linked benign variants to ensure accurate genetic counseling.",
-    "abstractHtml": "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n\t\t\t<h4>Abstract</h4>\r\n<p><strong>Background:</strong> Aberrations in cadherin-related 23 <em>(CDH23) </em>account for a significant proportion of familial autosomal recessive non-syndromic hearing loss (DFNB12), a common subtype of hereditary hearing loss worldwide.</p>\r\n<p><strong>Aims:</strong> This study aimed to elucidate the molecular basis and pathogenic mechanism of DFNB12 in an affected girl from a nine-member pedigree.</p>\r\n<p><strong>Study Design:</strong> Family-based genetic study with pedigree analysis.</p>\r\n<p><strong>Methods:</strong> Clinical whole-exome sequencing combined with pedigree analysis was used to identify disease-causing mutations. The potential functional consequences of these mutations were investigated using structural bioinformatic approaches, including homology modeling, molecular dynamics simulations, and other relevant tools.</p>\r\n<p><strong>Results:</strong> The proband carried compound heterozygous variants: a known pathogenic maternal variant (c.6049G &gt; A) and a paternal haplotype comprising two linked variants (c.3262G &gt; A and c.6911G &gt; A), each individually classified as benign. Pedigree segregation analysis demonstrated that the paternal haplotype acts as a single pathogenic allele.</p>\r\n<p><strong>Conclusion:</strong> Two individually benign variants can combine to form a novel pathogenic haplotype (c.3262A&ndash;c.6911A). This mechanism may be under-recognized in routine variant interpretation pipelines. Our findings underscore the importance of evaluating the combined effects of linked benign variants to ensure accurate genetic counseling.</p> \t\t\t\t\t\t        \t\t\t\t\t\n\t\t\t</div>",
-    "previewText": "Abstract Background: Aberrations in cadherin-related 23 (CDH23) account for a significant proportion of familial autosomal recessive non-syndromic hearing loss (DFNB12), a common subtype of hereditary hearing loss worldwide. Aims: This study aimed to elucidate the molecular basis and pathogenic mechanism of DFNB12 in an affected girl from a nine-member pedig",
-    "doi": "10.4274/balkanmedj.galenos.2026.2025-11-226",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 447,
-    "downloads": 118,
-    "hasFullText": true,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2824",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2824",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2824",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2775,
-    "order": 7,
-    "type": "Clinical Image",
-    "title": "Cystic Bronchiectasis due to AIDS: Case, and References",
-    "authors": [
-      {
-        "name": "Songyang Pan",
-        "affiliation": "Department of Thoracic Surgery, The Affiliated Hospital of Southwest Medical University, Luzhou, China",
-        "orcid": ""
-      },
-      {
-        "name": "Miao Chen",
-        "affiliation": "Department of Respiratory Medicine, People’s Hospital of Leshan, Leshan, China",
-        "orcid": ""
-      },
-      {
-        "name": "Tianyang Dai",
-        "affiliation": "Department of Thoracic Surgery, The Affiliated Hospital of Southwest Medical University, Luzhou, China",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-8-80",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 1671,
-    "downloads": 903,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2775",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2775",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2775",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2802,
-    "order": 8,
-    "type": "Clinical Image",
-    "title": "From the Beach to the Emergency Room: Sea Anemone Sting",
-    "authors": [
-      {
-        "name": "Rocío Egido García-Comendador",
-        "affiliation": "Department of Paediatrics, Hospital Universitario de Fuenlabrada, Madrid, Spain",
-        "orcid": ""
-      },
-      {
-        "name": "Elena Sánchez Marcos",
-        "affiliation": "Department of Paediatrics, Hospital Universitario de Fuenlabrada, Madrid, Spain",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-11-24",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 638,
-    "downloads": 383,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2802",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2802",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2802",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2812,
-    "order": 9,
-    "type": "Clinical Image",
-    "title": "Occult Childhood Interstitial Lung Disease",
-    "authors": [
-      {
-        "name": "Zhong-Qiang Li",
-        "affiliation": "Deparment of Pediatrics, Linyi People’s Hospital, Linyi, China",
-        "orcid": ""
-      },
-      {
-        "name": "Xue-Jun Wu",
-        "affiliation": "Deparment of Pediatrics, Linyi People’s Hospital, Linyi, China",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-11-274",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 571,
-    "downloads": 188,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2812",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2812",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2812",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2816,
-    "order": 10,
-    "type": "Clinical Image",
-    "title": "Direct Choledochoscopic Visualization of Living Clonorchis sinensis in the Biliary Tract",
-    "authors": [
-      {
-        "name": "Ma Zhili",
-        "affiliation": "Department of Liver transplant and Surgery of Guangdong Provincial Hospital of Chinese Medicine, Guangdong Provincial Engineering Research Center of Precicion Intelligent Surgical Equipment, The Second Affiliated Hospital of Guangzhou University of Chinese Medicine, Guangzhou, China",
-        "orcid": ""
-      },
-      {
-        "name": "Yuan Lei",
-        "affiliation": "Department of Liver transplant and Surgery of Guangdong Provincial Hospital of Chinese Medicine, Guangdong Provincial Engineering Research Center of Precicion Intelligent Surgical Equipment, The Second Affiliated Hospital of Guangzhou University of Chinese Medicine, Guangzhou, China",
-        "orcid": ""
-      },
-      {
-        "name": "Yang Xiaohong",
-        "affiliation": "Department of Liver transplant and Surgery of Guangdong Provincial Hospital of Chinese Medicine, Guangdong Provincial Engineering Research Center of Precicion Intelligent Surgical Equipment, The Second Affiliated Hospital of Guangzhou University of Chinese Medicine, Guangzhou, China",
-        "orcid": ""
-      },
-      {
-        "name": "Fan Ning",
-        "affiliation": "Department of Liver transplant and Surgery of Guangdong Provincial Hospital of Chinese Medicine, Guangdong Provincial Engineering Research Center of Precicion Intelligent Surgical Equipment, The Second Affiliated Hospital of Guangzhou University of Chinese Medicine, Guangzhou, China",
-        "orcid": ""
-      },
-      {
-        "name": "Wang Genshu",
-        "affiliation": "Department of Liver transplant and Surgery of Guangdong Provincial Hospital of Chinese Medicine, Guangdong Provincial Engineering Research Center of Precicion Intelligent Surgical Equipment, The Second Affiliated Hospital of Guangzhou University of Chinese Medicine, Guangzhou, China",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-10-236",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 435,
-    "downloads": 159,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2816",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2816",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2816",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2774,
-    "order": 11,
-    "type": "Scientific Letter",
-    "title": "An Important Feature of Gastric Adenocarcinoma: Heterogeneous Microsatellite Status",
-    "authors": [
-      {
-        "name": "Mirac Ajredini",
-        "affiliation": "Department of Gastrointestinal Oncology Unit, Acıbadem University Atakent Hospital, İstanbul, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Arda Ulaş Mutlu",
-        "affiliation": "Department of Gastrointestinal Oncology Unit, Acıbadem University Atakent Hospital, İstanbul, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Sibel Erdamar Çetin",
-        "affiliation": "Department of Gastrointestinal Oncology Unit, Acıbadem University Atakent Hospital, İstanbul, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Rümeysa Atabey",
-        "affiliation": "Department of Gastrointestinal Oncology Unit, Acıbadem University Atakent Hospital, İstanbul, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Erman Aytaç",
-        "affiliation": "Department of Gastrointestinal Oncology Unit, Acıbadem University Atakent Hospital, İstanbul, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Leyla Özer",
-        "affiliation": "Department of Gastrointestinal Oncology Unit, Acıbadem University Atakent Hospital, İstanbul, Türkiye",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-7-281",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 1607,
-    "downloads": 898,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2774",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2774",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2774",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2782,
-    "order": 12,
-    "type": "Scientific Letter",
-    "title": "Effects of 40 Hz Auditory Stimulation on Postoperative Delirium: A Prospective Single-Arm Study",
-    "authors": [
-      {
-        "name": "Jiayong Hu",
-        "affiliation": "Department of Anesthesiology, Tongji Hospital School of Medicine, Tongji University, Shanghai, China; Department of Anesthesiology, Longhua Hospital, Shanghai University of Traditional Chinese Medicine, Shanghai, China",
-        "orcid": ""
-      },
-      {
-        "name": "Yuyao Zhu",
-        "affiliation": "Department of Anesthesiology, Shanghai Chest Hospital, Shanghai Jiao Tong University School of Medicine, Shanghai, China",
-        "orcid": ""
-      },
-      {
-        "name": "Jianhui Liu",
-        "affiliation": "Department of Anesthesiology, Tongji Hospital School of Medicine, Tongji University, Shanghai, China",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-8-98",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 1363,
-    "downloads": 845,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2782",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2782",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2782",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2793,
-    "order": 13,
-    "type": "Scientific Letter",
-    "title": "Novel SHOX Variant in Léri-Weill Dyschondrosteosis with Madelung Deformity",
-    "authors": [
-      {
-        "name": "Jing Luo",
-        "affiliation": "Clinic of Endocrinology and Metabolism, Tieling Central Hospital, Tieling, China",
-        "orcid": ""
-      },
-      {
-        "name": "Xiaoli Wang",
-        "affiliation": "Department of Endocrinology and Metabolism, Institute of Endocrinology, NHC Key Laboratory of Diagnosis and Treatment of Thyroid Diseases, The First Hospital of China Medical University, Shenyang, China",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-9-241",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 934,
-    "downloads": 476,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2793",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2793",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2793",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2796,
-    "order": 14,
-    "type": "Scientific Letter",
-    "title": "Cerebral Slow Flow: An Emerging Phenomenon in Vascular Dementia Pathogenesis",
-    "authors": [
-      {
-        "name": "Uğur Özkan",
-        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Fatih Kardaş",
-        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Umutcan Vurucu",
-        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Kenan Yalta",
-        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-10-189",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 746,
-    "downloads": 473,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2796",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2796",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2796",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2798,
-    "order": 16,
-    "type": "Scientific Letter",
-    "title": "Clinical, Radiologic, and Genetic Spectrum of Schimke Immuno-Osseous Dysplasia",
-    "authors": [
-      {
-        "name": "Mehtap Akbalık Kara",
-        "affiliation": "Department of Pediatric Nephrology, Gaziantep University Faculty of Medicine, Gaziantep, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Beltinge Demircioğlu Kılıç",
-        "affiliation": "Department of Pediatric Nephrology, Gaziantep University Faculty of Medicine, Gaziantep, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Mithat Büyükçelik",
-        "affiliation": "Department of Pediatric Nephrology, Gaziantep University Faculty of Medicine, Gaziantep, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Ayşe Balat",
-        "affiliation": "Department of Pediatric Nephrology, Gaziantep University Faculty of Medicine, Gaziantep, Türkiye",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-10-27",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 724,
-    "downloads": 331,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2798",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2798",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2798",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2800,
-    "order": 17,
-    "type": "Scientific Letter",
-    "title": "Clinical Features, Laboratory and Radiological Findings, and Outcomes of Pneumocystis jirovecii Pneumonia in Immunocompetent Children",
-    "authors": [
-      {
-        "name": "Limei Wen",
-        "affiliation": "Clinic of Stomatology, First People’s Hospital of Zigong City, Zigong, China",
-        "orcid": ""
-      },
-      {
-        "name": "Li Huang",
-        "affiliation": "Clinic of Scientific Research, First People’s Hospital of Zigong City, Zigong, China",
-        "orcid": ""
-      },
-      {
-        "name": "Junjie Ning",
-        "affiliation": "Clinic of Scientific Research, First People’s Hospital of Zigong City, Zigong, China",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2025.10.40",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 702,
-    "downloads": 469,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2800",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2800",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2800",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true,
-    "pdfUrl": "js/data/pdfs/2800.pdf",
-    "localPdfUrl": "js/data/pdfs/2800.pdf"
-  },
-  {
-    "id": 2801,
-    "order": 18,
-    "type": "Scientific Letter",
-    "title": "Treatment of Steroid-Resistant Radiation-Induced Cerebral Edema with Boswellia serrata",
-    "authors": [
-      {
-        "name": "Yusuf Kavuzlu",
-        "affiliation": "Department of Radiation Oncology, Trakya University Faculty of Medicine, Edirne, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Serdar Solak",
-        "affiliation": "Department of Radiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
-        "orcid": ""
-      },
-      {
-        "name": "Zafer Koçak",
-        "affiliation": "Department of Radiation Oncology, Trakya University Faculty of Medicine, Edirne, Türkiye",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-11-168",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 664,
-    "downloads": 782,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2801",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2801",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2801",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2814,
-    "order": 19,
-    "type": "Scientific Letter",
-    "title": "Thymopentin-Induced Myasthenia Gravis: A Case Report Highlighting Clinical Vigilance",
-    "authors": [
-      {
-        "name": "Ning Zhao",
-        "affiliation": "Department of Neurology, Tianjin Neurological Institute, Tianjin Medical University General Hospital, Tianjin, China",
-        "orcid": ""
-      },
-      {
-        "name": "Li Yang",
-        "affiliation": "Department of Neurology, Tianjin Neurological Institute, Tianjin Medical University General Hospital, Tianjin, China",
-        "orcid": ""
-      },
-      {
-        "name": "Ting Li",
-        "affiliation": "Department of Neurology, Tianjin Neurological Institute, Tianjin Medical University General Hospital, Tianjin, China",
-        "orcid": ""
-      }
-    ],
-    "abstract": "",
-    "abstractHtml": "",
-    "previewText": "",
-    "doi": "10.4274/balkanmedj.galenos.2025.2025-10-197",
-    "published": "",
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "views": 487,
-    "downloads": 437,
-    "hasFullText": false,
-    "sourceAbstractUrl": "https://balkanmedicaljournal.org/abstract.php?id=2814",
-    "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=2814",
-    "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=2814",
-    "localArticleAvailable": false,
-    "localArticleUrl": "",
-    "aheadOfPrint": true
-  },
-  {
-    "id": 2867,
-    "order": 20,
+    "id": 2882,
     "aheadOfPrint": true,
     "volume": null,
     "issue": "",
     "pages": "",
     "published": "",
-    "type": "Invited Review",
-    "title": "Contrast Media Side Effects and Kounis Syndrome: Timeo Danaos et Dona Ferentes",
-    "doi": "10.4274/deneme.galenos.2026.2026-3-89",
-    "received": "2026-04-01",
-    "accepted": "2026-05-05",
-    "pmid": "",
-    "abstractHtml": "<!--StartFragment-->\n\n<p class=\"MsoNormal\">Abstract<o:p></o:p></p>\n\n<p class=\"MsoNormal\"><span lang=\"EN-US\">Kounis\nsyndrome is defined as the occurrence of acute coronary events in the setting\nof allergic, hypersensitivity, or anaphylactic reactions. It is mediated by\nmast cell activation and the interaction of inflammatory cells, including T\nlymphocytes and macrophages. This process leads to the release of multiple\ninflammatory mediators, such as platelet-activating factor, histamine, neutral\nproteases (tryptase and chymase), arachidonic acid metabolites, cytokines, and\nchemokines. Kounis syndrome represents a unique form of acute vascular disorder\nthat may involve not only the coronary arteries but also peripheral, cerebral,\nand mesenteric vessels as well as the venous system. Contrast media are widely\nused in diagnostic imaging to enhance visualization and characterization of\npathological conditions. These agents can be administered via several routes,\nincluding oral, intravenous, intra-arterial, or rectal administration. Although\nmost hypersensitivity reactions to contrast media are mild to moderate, severe\ncomplications such as anaphylaxis, cardiac arrest, and Kounis syndrome may\noccur. In particular, contrast media-induced Kounis syndrome has been\nassociated with significant clinical consequences, including an increased risk\nof life-threatening cardiac events.<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><span lang=\"EN-US\">This\nnarrative review aims to summarize current evidence regarding contrast\nmedia-related adverse effects, with a focus on hypersensitivity reactions,\nKounis syndrome, and associated cardiovascular complications. Emphasis is also\nplaced on preventive strategies, including the importance of obtaining a\ndetailed patient history of prior hypersensitivity reactions prior to contrast\nadministration, to reduce the risk of recurrence and severe outcomes.<o:p></o:p></span></p>\n\n<!--EndFragment-->",
-    "abstract": "Abstract\n\nKounis\nsyndrome is defined as the occurrence of acute coronary events in the setting\nof allergic, hypersensitivity, or anaphylactic reactions. It is mediated by\nmast cell activation and the interaction of inflammatory cells, including T\nlymphocytes and macrophages. This process leads to the release of multiple\ninflammatory mediators, such as platelet-activating factor, histamine, neutral\nproteases (tryptase and chymase), arachidonic acid metabolites, cytokines, and\nchemokines. Kounis syndrome represents a unique form of acute vascular disorder\nthat may involve not only the coronary arteries but also peripheral, cerebral,\nand mesenteric vessels as well as the venous system. Contrast media are widely\nused in diagnostic imaging to enhance visualization and characterization of\npathological conditions. These agents can be administered via several routes,\nincluding oral, intravenous, intra-arterial, or rectal administration. Although\nmost hypersensitivity reactions to contrast media are mild to moderate, severe\ncomplications such as anaphylaxis, cardiac arrest, and Kounis syndrome may\noccur. In particular, contrast media-induced Kounis syndrome has been\nassociated with significant clinical consequences, including an increased risk\nof life-threatening cardiac events.\n\nThis\nnarrative review aims to summarize current evidence regarding contrast\nmedia-related adverse effects, with a focus on hypersensitivity reactions,\nKounis syndrome, and associated cardiovascular complications. Emphasis is also\nplaced on preventive strategies, including the importance of obtaining a\ndetailed patient history of prior hypersensitivity reactions prior to contrast\nadministration, to reduce the risk of recurrence and severe outcomes.",
-    "previewText": "Abstract\n\nKounis\nsyndrome is defined as the occurrence of acute coronary events in the setting\nof allergic, hypersensitivity, or anaphylactic reactions. It is mediated by\nmast cell activation and the interaction of inflammatory cells, including T\nlymphocytes and macrophages. This process leads to the release of multiple\ninflammatory mediators, such as platel",
-    "keywords": [],
-    "authors": [
-      {
-        "name": "Nicholas G. Kounis",
-        "affiliation": "Department of Cardiology, University of Patras Faculty of Medicine, Patras, Greece",
-        "orcid": "0000-0002-9751-6710"
-      },
-      {
-        "name": "Ming-Yow Hung",
-        "affiliation": "Division of Cardiology, Department of Internal Medicine, Taipei Medical University, Shuang Ho Hospital, New Taipei City, Taiwan",
-        "orcid": "0000-0002-6912-7523"
-      }
-    ],
-    "supplementary": [
-      {
-        "id": "supp1",
-        "label": "Supplementary 1",
-        "href": "js/data/supplementary/2867/BalkanMedJ-43-6-343.pdf",
-        "caption": "",
-        "mimeType": ""
-      }
-    ],
-    "hasFullText": true,
-    "pdfUrl": "js/data/pdfs/2867.pdf",
-    "localPdfUrl": "js/data/pdfs/2867.pdf",
-    "publishedOnline": ""
-  },
-  {
-    "id": 2868,
-    "order": 22,
-    "aheadOfPrint": true,
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "published": "",
-    "type": "Research Article",
-    "title": "Real-World Evaluation of APRI and FIB-4 Scores in Patients with Chronic Hepatitis C Treated with Direct-Acting Antivirals",
-    "doi": "10.4274/vhd.galenos.2026.2026-2-1",
-    "received": "2026-06-06",
-    "accepted": "2026-05-30",
-    "pmid": "",
-    "abstractHtml": "<!--StartFragment-->\n\n<p class=\"MsoNormal\"><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">ABSTRACT<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">Objectives:</span></b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\"> This study aimed to evaluate\nbiochemical response, sustained virological response (SVR) rates, and changes\nin non-invasive fibrosis markers [aspartate aminotransferase (AST) to platelet\nratio index (APRI) and fibrosis-4 index (FIB-4)] using real-world data in\npatients with chronic hepatitis C virus (HCV) treated with direct-acting\nantivirals (DAAs).<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">Materials\nand Methods:</span></b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">\nPatients aged ≥18 years with chronic HCV who were followed between January 2018\nand December 2024 and treated with glecaprevir/pibrentasvir,\nsofosbuvir/velpatasvir/voxilaprevir, or ledipasvir/sofosbuvir were\nretrospectively analyzed. Alanine aminotransferase (ALT), AST, platelet count,\nand HCV-RNA levels were recorded at baseline, at treatment week 4, at end of\ntreatment, and at 12 and 24 weeks after treatment completion. APRI and FIB-4\nscores were calculated at each time point.<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">Results:</span></b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\"> A total of 43 patients were\nincluded; the median age was 57 years (interquartile range: 43-65), and 58%\nwere male. ALT and AST levels decreased significantly from treatment week 4\nonward (p&lt;0.001). APRI scores showed a significant early decline that persisted\nthroughout the follow-up period (p&lt;0.001). FIB-4 scores decreased\nsignificantly at week 4; however, this reduction was not sustained during\nfollow-up. A strong correlation was observed between changes in APRI and ALT,\nwhereas the association between FIB-4 and ALT was weak and limited. SVR12 and\nSVR24 rates were 100% among patients with available HCV-RNA data.<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">Conclusion:</span></b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\"> In real-world settings, DAA therapy\nachieves high SVR rates and rapid biochemical improvement. The early and\npersistent decline in APRI reflects regression of inflammatory activity, while\nthe limited change in FIB-4 suggests that longer follow-up may be required to\nadequately assess fibrosis regression.<o:p></o:p></span></p>\n\n<!--EndFragment-->",
-    "abstract": "ABSTRACT\n\nObjectives: This study aimed to evaluate\nbiochemical response, sustained virological response (SVR) rates, and changes\nin non-invasive fibrosis markers [aspartate aminotransferase (AST) to platelet\nratio index (APRI) and fibrosis-4 index (FIB-4)] using real-world data in\npatients with chronic hepatitis C virus (HCV) treated with direct-acting\nantivirals (DAAs).\n\nMaterials\nand Methods:\nPatients aged ≥18 years with chronic HCV who were followed between January 2018\nand December 2024 and treated with glecaprevir/pibrentasvir,\nsofosbuvir/velpatasvir/voxilaprevir, or ledipasvir/sofosbuvir were\nretrospectively analyzed. Alanine aminotransferase (ALT), AST, platelet count,\nand HCV-RNA levels were recorded at baseline, at treatment week 4, at end of\ntreatment, and at 12 and 24 weeks after treatment completion. APRI and FIB-4\nscores were calculated at each time point.\n\nResults: A total of 43 patients were\nincluded; the median age was 57 years (interquartile range: 43-65), and 58%\nwere male. ALT and AST levels decreased significantly from treatment week 4\nonward (p&lt;0.001). APRI scores showed a significant early decline that persisted\nthroughout the follow-up period (p&lt;0.001). FIB-4 scores decreased\nsignificantly at week 4; however, this reduction was not sustained during\nfollow-up. A strong correlation was observed between changes in APRI and ALT,\nwhereas the association between FIB-4 and ALT was weak and limited. SVR12 and\nSVR24 rates were 100% among patients with available HCV-RNA data.\n\nConclusion: In real-world settings, DAA therapy\nachieves high SVR rates and rapid biochemical improvement. The early and\npersistent decline in APRI reflects regression of inflammatory activity, while\nthe limited change in FIB-4 suggests that longer follow-up may be required to\nadequately assess fibrosis regression.",
-    "previewText": "ABSTRACT\n\nObjectives: This study aimed to evaluate\nbiochemical response, sustained virological response (SVR) rates, and changes\nin non-invasive fibrosis markers [aspartate aminotransferase (AST) to platelet\nratio index (APRI) and fibrosis-4 index (FIB-4)] using real-world data in\npatients with chronic hepatitis C virus (HCV) treated with direct-acting\nantiv",
-    "keywords": [],
-    "authors": [
-      {
-        "name": "Özlem Gül",
-        "affiliation": "University of Health Sciences Türkiye, Şişli Hamidiye Etfal Training and Research Hospital, Clinic of Infectious Diseases and Clinical Microbiology, İstanbul, Türkiye",
-        "orcid": "0000-0002-1668-0157"
-      }
-    ],
-    "supplementary": [
-      {
-        "id": "supp1",
-        "label": "14-18.pdf",
-        "href": "js/data/supplementary/2868/14-18.pdf",
-        "caption": "",
-        "mimeType": ""
-      }
-    ],
-    "hasFullText": true,
-    "pdfUrl": "js/data/pdfs/2868.pdf",
-    "localPdfUrl": "js/data/pdfs/2868.pdf"
-  },
-  {
-    "id": 2869,
-    "order": 23,
-    "aheadOfPrint": true,
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "published": "2026-01-09",
-    "type": "Original Article",
-    "title": "Rheumatoid Arthritis Burden in Middle-Aged Adults (40–59 Years): Evidence from the Global Burden of Disease 2021",
-    "doi": "10.4274/balkanmedj.galenos.2026.2025-12-2281",
-    "received": "2026-01-09",
-    "accepted": "2026-01-09",
-    "publishedOnline": "2026-01-09",
-    "pmid": "",
-    "abstractHtml": "<!--StartFragment-->\n\n<p class=\"MsoNormal\">Abstract<o:p></o:p></p>\n\n<p class=\"MsoNormal\"><b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">Background:</span></b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\"> Rheumatoid arthritis (RA) is a\nleading cause of disability worldwide. Although global assessments of RA have\nbeen reported, age-specific estimates focusing on middle-aged adults [(MAA);\n40–59 years] remain limited.<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">Aims:</span></b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\"> To quantify the global, regional,\nand temporal burden of RA among MAA from 1990 to 2021 and project\nage-standardized trends through 2050.<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">Study\nDesign:</span></b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\"> A\npopulation-based descriptive epidemiological study using Global Burden of\nDisease (GBD) 2021 estimates.<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">Methods:</span></b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\"> GBD 2021 data (1990–2021) were used\nto estimate age-standardized incidence (ASIR), prevalence (ASPR), mortality\n(ASMR), and disability-adjusted life-year rates (ASDR) per 100,000 population\namong MAA. Temporal trends were assessed using joinpoint regression and\nexpressed as the average annual percentage change (AAPC). Projections to 2050\nwere generated using a Bayesian age–period–cohort model. Burden patterns were\nsummarized across sociodemographic index (SDI) quintiles and 21 GBD regions.<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">Results:</span></b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\"> In 2021, the global ASIR, ASPR,\nASMR, and ASDR among MAA were 19.53, 368.73, 0.19, and 56.74 per 100,000\npopulation, respectively. From 1990 to 2021, ASIR and ASPR increased (AAPC =\n0.24% and 0.43%), ASMR decreased (AAPC = -1.70%), and ASDR showed minimal net\nchange (AAPC = 0.05%). Substantial variation was observed across SDI quintiles\nand GBD regions; SDI was positively correlated with ASIR and ASPR and\nnegatively correlated with ASMR. Projections to 2050 indicated an ASIR of\n19.22, an ASPR of 367.47, an ASMR of 0.111, and an ASDR of 52.18 per 100,000,\nwith widening credible intervals over time.<o:p></o:p></span></p>\n\n<p class=\"MsoNormal\"><b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\">Conclusion:</span></b><span lang=\"EN-US\" style=\"mso-ansi-language:EN-US\"> Between 1990 and 2021, the RA\nburden among MAA was characterized by increasing ASIR and ASPR, declining ASMR,\nand relatively stable ASDR. Projections suggest that ASIR and ASPR will remain\nnear recent levels, whereas ASMR and ASDR will show lower median values over\ntime.</span><o:p></o:p></p>\n\n<!--EndFragment-->",
-    "abstract": "Abstract\n\nBackground: Rheumatoid arthritis (RA) is a\nleading cause of disability worldwide. Although global assessments of RA have\nbeen reported, age-specific estimates focusing on middle-aged adults [(MAA);\n40–59 years] remain limited.\n\nAims: To quantify the global, regional,\nand temporal burden of RA among MAA from 1990 to 2021 and project\nage-standardized trends through 2050.\n\nStudy\nDesign: A\npopulation-based descriptive epidemiological study using Global Burden of\nDisease (GBD) 2021 estimates.\n\nMethods: GBD 2021 data (1990–2021) were used\nto estimate age-standardized incidence (ASIR), prevalence (ASPR), mortality\n(ASMR), and disability-adjusted life-year rates (ASDR) per 100,000 population\namong MAA. Temporal trends were assessed using joinpoint regression and\nexpressed as the average annual percentage change (AAPC). Projections to 2050\nwere generated using a Bayesian age–period–cohort model. Burden patterns were\nsummarized across sociodemographic index (SDI) quintiles and 21 GBD regions.\n\nResults: In 2021, the global ASIR, ASPR,\nASMR, and ASDR among MAA were 19.53, 368.73, 0.19, and 56.74 per 100,000\npopulation, respectively. From 1990 to 2021, ASIR and ASPR increased (AAPC =\n0.24% and 0.43%), ASMR decreased (AAPC = -1.70%), and ASDR showed minimal net\nchange (AAPC = 0.05%). Substantial variation was observed across SDI quintiles\nand GBD regions; SDI was positively correlated with ASIR and ASPR and\nnegatively correlated with ASMR. Projections to 2050 indicated an ASIR of\n19.22, an ASPR of 367.47, an ASMR of 0.111, and an ASDR of 52.18 per 100,000,\nwith widening credible intervals over time.\n\nConclusion: Between 1990 and 2021, the RA\nburden among MAA was characterized by increasing ASIR and ASPR, declining ASMR,\nand relatively stable ASDR. Projections suggest that ASIR and ASPR will remain\nnear recent levels, whereas ASMR and ASDR will show lower median values over\ntime.",
-    "previewText": "Abstract\n\nBackground: Rheumatoid arthritis (RA) is a\nleading cause of disability worldwide. Although global assessments of RA have\nbeen reported, age-specific estimates focusing on middle-aged adults [(MAA);\n40–59 years] remain limited.\n\nAims: To quantify the global, regional,\nand temporal burden of RA among MAA from 1990 to 2021 and project\nage-standardized",
-    "keywords": [],
-    "authors": [
-      {
-        "name": "Meng Zhao",
-        "affiliation": "Department of Epidemiology and Health Statistics, Southeast University School of Public Health, Jiangsu, China",
-        "orcid": "0000-0002-8771-7834",
-        "corresponding": true,
-        "email": "13261556373@163.com"
-      },
-      {
-        "name": "Jing Shi",
-        "affiliation": "Department of Physics, Yunnan University School of Physics and Astronomy, Yunnan, China",
-        "orcid": "0000-0002-9753-9357"
-      }
-    ],
-    "supplementary": [
-      {
-        "id": "supp1",
-        "label": "Supplementary Table 1",
-        "href": "https://balkanmedicaljournal.org/img/files/balkan-2026.2025-12-228-supplement-1.pdf",
-        "caption": "",
-        "mimeType": ""
-      },
-      {
-        "id": "supp2",
-        "label": "Supplementary Table 2",
-        "href": "https://www.balkanmedicaljournal.org/img/files/balkan-12-228%281%29.pdf",
-        "caption": "",
-        "mimeType": ""
-      }
-    ],
-    "hasFullText": true,
-    "pdfUrl": "js/data/pdfs/2869.pdf",
-    "localPdfUrl": "js/data/pdfs/2869.pdf"
-  },
-  {
-    "id": 2870,
-    "order": 24,
-    "aheadOfPrint": true,
-    "volume": null,
-    "issue": "",
-    "pages": "",
-    "published": "2026-06-01",
     "type": "Editorial",
-    "title": "The Strong Get Stronger: The Matthew Effect in Academic Publishing",
-    "doi": "10.4274/balkanmedj.galenos.2026.2026.15042611",
+    "title": "Drivers of Inflammation; Clonal Hematopoiesis: Clinical Implications",
+    "doi": "10.4274/balkanmedj.galenos.2026.2026.240426",
     "received": "",
     "accepted": "",
     "publishedOnline": "",
@@ -896,121 +23,1041 @@ window.ARTICLES_IN_PRESS = [
     "keywords": [],
     "authors": [
       {
-        "name": "Selçuk Korkmaz",
-        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
-        "orcid": "0000-0003-4632-685",
+        "name": "Tuğcan Alp Kırkızlar",
+        "affiliation": "Department of Hematology, Trakya University Faculty of Medicine, Edirne, Türkiye",
+        "orcid": "0000-0002-1361-6213",
         "corresponding": true,
-        "email": "selcukorkmaz@gmail.com"
+        "email": "tugcanalp82@hotmail.com"
       },
       {
-        "name": "Servet Altay",
-        "affiliation": "Department of Cardiology, Trakya University Faculty of Medicine, Edirne, Türkiye",
-        "orcid": "0000-0003-4632-685"
+        "name": "Mutlu Arat",
+        "affiliation": "Clinic of Hematology, Memorial Şişli Hospital, İstanbul, Türkiye",
+        "orcid": "0000-0003-2039-8557"
       }
     ],
     "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2882.pdf",
+    "localPdfUrl": "js/data/pdfs/2882.pdf",
     "hasFullText": true,
-    "pdfUrl": "js/data/pdfs/2870.pdf",
-    "localPdfUrl": "js/data/pdfs/2870.pdf"
+    "featured": false,
+    "imageCorner": false,
+    "imageUrl": "",
+    "externalLinks": [],
+    "views": 0,
+    "downloads": 0,
+    "citations": 0,
+    "sourceIssueId": "",
+    "order": 1
   },
   {
-    "id": 2871,
-    "order": 22,
+    "id": 2883,
+    "order": 2,
     "aheadOfPrint": true,
     "volume": null,
     "issue": "",
     "pages": "",
     "published": "",
     "type": "Original Article",
-    "title": "The Global Burden of Chronic Kidney Disease Attributable to Hypertension in Young Adults From 1990 to 2021 and Projections to 2050",
-    "doi": "10.4274/balkanmedj.galenos.2026.2026-1-54111111",
-    "received": "2026-01-06",
+    "title": "Association of Time-to-Peak of Renal Blood Flow with Outcomes in Heart Failure",
+    "doi": "10.4274/balkanmedj.galenos.2026.2026-1-32",
+    "received": "2026-01-05",
     "accepted": "2026-03-06",
     "publishedOnline": "",
     "pmid": "",
-    "abstractHtml": "<p>Background: Chronic kidney disease (CKD) attributable to hypertension represents a major global public health challenge. This study evaluates the global burden of CKD statistically attributable to high systolic blood pressure (SBP), with a focus on young adults aged 25–49 years.</p><p>Aims: To analyze trends in mortality and disability-adjusted life years (DALYs) attributable to high SBP among individuals with CKD aged 25–49 years from 1990 to 2021 and to project the future attributable burden through 2050.</p><p>Study Design: Observational study.</p><p>Methods: Data were obtained from the Global Burden of Disease Study 2021. The analysis estimated the burden of CKD attributable to high SBP using a comparative risk assessment framework. Temporal trends were quantified using the estimated annual percentage change (EAPC). The association between attributable burden and the sociodemographic index (SDI) was also examined. Projections to 2050 were generated using autoregressive integrated moving average models.</p><p>Results: From 1990 to 2021, global mortality and DALY rates for CKD attributable to high SBP among young adults increased significantly (mortality EAPC, 1.75%; DALYs EAPC, 1.6%). The attributable burden remained consistently higher in males and increased with age, peaking in the 45–49-year age group. Overall, low- and low-middle-SDI regions experienced the greatest relative increases, although substantial heterogeneity was observed within SDI strata. At the national level, Ukraine showed the largest increase in mortality rate (EAPC, 13.21%), whereas the Republic of Korea exhibited the largest decline (EAPC, −4.68%). Model-based projections suggest a continued increase in both attributable mortality and DALYs through 2050, with persistent disparities by sex, age, and geographic region.</p><p>Conclusion: The burden of CKD attributable to high SBP among young adults has increased substantially over the past three decades and is projected to rise further, reflecting persistent global inequalities. These findings highlight the urgent need for strengthened and targeted strategies for hypertension prevention and management in younger populations worldwide.</p>",
-    "abstract": "Background: Chronic kidney disease (CKD) attributable to hypertension represents a major global public health challenge. This study evaluates the global burden of CKD statistically attributable to high systolic blood pressure (SBP), with a focus on young adults aged 25–49 years.Aims: To analyze trends in mortality and disability-adjusted life years (DALYs) attributable to high SBP among individuals with CKD aged 25–49 years from 1990 to 2021 and to project the future attributable burden through 2050.Study Design: Observational study.Methods: Data were obtained from the Global Burden of Disease Study 2021. The analysis estimated the burden of CKD attributable to high SBP using a comparative risk assessment framework. Temporal trends were quantified using the estimated annual percentage change (EAPC). The association between attributable burden and the sociodemographic index (SDI) was also examined. Projections to 2050 were generated using autoregressive integrated moving average models.Results: From 1990 to 2021, global mortality and DALY rates for CKD attributable to high SBP among young adults increased significantly (mortality EAPC, 1.75%; DALYs EAPC, 1.6%). The attributable burden remained consistently higher in males and increased with age, peaking in the 45–49-year age group. Overall, low- and low-middle-SDI regions experienced the greatest relative increases, although substantial heterogeneity was observed within SDI strata. At the national level, Ukraine showed the largest increase in mortality rate (EAPC, 13.21%), whereas the Republic of Korea exhibited the largest decline (EAPC, −4.68%). Model-based projections suggest a continued increase in both attributable mortality and DALYs through 2050, with persistent disparities by sex, age, and geographic region.Conclusion: The burden of CKD attributable to high SBP among young adults has increased substantially over the past three decades and is projected to rise further, reflecting persistent global inequalities. These findings highlight the urgent need for strengthened and targeted strategies for hypertension prevention and management in younger populations worldwide.",
-    "previewText": "Background: Chronic kidney disease (CKD) attributable to hypertension represents a major global public health challenge. This study evaluates the global burden of CKD statistically attributable to high systolic blood pressure (SBP), with a focus on young adults aged 25–49 years.Aims: To analyze trends in mortality and disability-adjusted life years (DALYs) a",
+    "abstractHtml": "<p><strong>Background:</strong> Time-to-peak of renal blood flow (TTPr), derived from Tc-99m diethylenetriaminepentaacetic acid (DTPA) renal scintigraphy, is a novel parameter for assessing renal perfusion.</p><p><strong>Aims:</strong> To evaluate the prognostic significance of TTPr in patients with heart failure (HF).</p><p><strong>Study Design:</strong> Retrospective, observational cohort study.</p><p><strong>Methods:</strong> We analyzed 304 patients with HF who underwent Tc-99m DTPA renal scintigraphy to assess TTPr. Cox regression analyses evaluated the prognostic value of TTPr. Model performance was assessed using the C-index, net reclassification improvement (NRI), and integrated discrimination improvement (IDI). Bootstrap internal validation (200 repetitions) and Holm–Bonferroni correction were applied.</p><p><strong>Results:</strong> During a median follow-up of 790 days, 79 patients (26.0%) died. TTPr was an independent predictor demonstrating the highest corrected C-index among individual predictors. Models incorporating TTPr showed modest but significant C-index improvements for all-cause and cardiovascular mortality.</p><p><strong>Conclusion:</strong> Time-to-peak of renal blood predicted long-term outcomes in this HF cohort, showing potential incremental value. Prospective validation in broader populations is warranted before clinical implementation.</p>",
+    "abstract": "Background: Time-to-peak of renal blood flow (TTPr), derived from Tc-99m diethylenetriaminepentaacetic acid (DTPA) renal scintigraphy, is a novel parameter for assessing renal perfusion.Aims: To evaluate the prognostic significance of TTPr in patients with heart failure (HF).Study Design: Retrospective, observational cohort study.Methods: We analyzed 304 patients with HF who underwent Tc-99m DTPA renal scintigraphy to assess TTPr. Cox regression analyses evaluated the prognostic value of TTPr. Model performance was assessed using the C-index, net reclassification improvement (NRI), and integrated discrimination improvement (IDI). Bootstrap internal validation (200 repetitions) and Holm–Bonferroni correction were applied.Results: During a median follow-up of 790 days, 79 patients (26.0%) died. TTPr was an independent predictor demonstrating the highest corrected C-index among individual predictors. Models incorporating TTPr showed modest but significant C-index improvements for all-cause and cardiovascular mortality.Conclusion: Time-to-peak of renal blood predicted long-term outcomes in this HF cohort, showing potential incremental value. Prospective validation in broader populations is warranted before clinical implementation.",
+    "previewText": "Background: Time-to-peak of renal blood flow (TTPr), derived from Tc-99m diethylenetriaminepentaacetic acid (DTPA) renal scintigraphy, is a novel parameter for assessing renal perfusion.Aims: To evaluate the prognostic significance of TTPr in patients with heart failure (HF).Study Design: Retrospective, observational cohort study.Methods: We analyzed 304 pat",
     "keywords": [],
     "authors": [
       {
-        "name": "Li He",
-        "affiliation": "Department of General Practice, The Second Affiliated Hospital of Chongqing Medical University, Chongqing, China; Clinic of Critical Care Medicine, Dazhou Central Hospital, Dazhou, China",
-        "orcid": "0000-0001-5509-6298"
+        "name": "Yue Li",
+        "affiliation": "Department of Cardiology, The Second Hospital of Hebei Medical University, Hebei, China; Heart Failure Center, The First Hospital of Hebei Medical University, Hebei, China; Cardiovascular Research Center of Hebei Medical University, Hebei, China",
+        "orcid": "0009-0006-1183-9890"
       },
       {
-        "name": "Pengcheng Yan",
-        "affiliation": "Department of General Practice, The Second Affiliated Hospital of Chongqing Medical University, Chongqing, China",
-        "orcid": "0009-0002-7268-0909"
+        "name": "Zhiqiang Yang",
+        "affiliation": "Heart Failure Center, The First Hospital of Hebei Medical University, Hebei, China; Department of Cardiology, Cangzhou Central Hospital, Hebei, China; Department of Diagnostics, Cangzhou Medical College Faculty of Medicine, Hebei, China",
+        "orcid": "0009-0005-0459-4058"
       },
       {
-        "name": "Cheng Liu",
-        "affiliation": "Clinic of Critical Care Medicine, Dazhou Central Hospital, Dazhou, China",
-        "orcid": "0009-0005-5285-925X"
+        "name": "Pei Yin",
+        "affiliation": "Division of Nuclear Medicine, The First Hospital of Hebei Medical University, Hebei, China",
+        "orcid": "0009-0005-7687-7401"
       },
       {
-        "name": "Xiangde Zheng",
-        "affiliation": "Clinic of Critical Care Medicine, Dazhou Central Hospital, Dazhou, China",
-        "orcid": "0009-0001-2741-2545"
+        "name": "Lizhuo Li",
+        "affiliation": "Heart Failure Center, The First Hospital of Hebei Medical University, Hebei, China",
+        "orcid": "0009-0009-4523-9756"
       },
       {
-        "name": "Minming Zheng",
-        "affiliation": "Department of Ophthalmology, The Second Affiliated Hospital of Chongqing Medical University, Chongqing, China",
-        "orcid": "0009-0000-4019-5111"
+        "name": "Qingzhen Zhao",
+        "affiliation": "Heart Failure Center, The First Hospital of Hebei Medical University, Hebei, China",
+        "orcid": "0009-0008-3442-8642"
       },
       {
-        "name": "Qingwei Chen",
-        "affiliation": "Department of General Practice, The Second Affiliated Hospital of Chongqing Medical University, Chongqing, China",
-        "orcid": "0000-0003-2865-9889"
+        "name": "Chao Liu",
+        "affiliation": "Heart Failure Center, The First Hospital of Hebei Medical University, Hebei, China; Cardiovascular Research Center of Hebei Medical University, Hebei, China",
+        "orcid": "0000-0002-5323-6733",
+        "corresponding": true,
+        "email": "Liuchao@hebmu.edu.cn"
       }
     ],
     "supplementary": [],
-    "hasFullText": true,
-    "pdfUrl": "js/data/pdfs/2871.pdf",
-    "localPdfUrl": "js/data/pdfs/2871.pdf"
+    "pdfUrl": "js/data/pdfs/2883.pdf",
+    "localPdfUrl": "js/data/pdfs/2883.pdf",
+    "hasFullText": true
   },
   {
-    "id": 2872,
-    "order": 23,
+    "id": 2884,
+    "order": 3,
     "aheadOfPrint": true,
     "volume": null,
     "issue": "",
     "pages": "",
     "published": "",
     "type": "Original Article",
-    "title": "denemee",
-    "doi": "wrwrwr",
-    "received": "0015-05-17",
-    "accepted": "",
+    "title": "Reduction in Albuminuria with Dapagliflozin Exhibits Substantial Interindividual Variability",
+    "doi": "10.4274/balkanmedj.galenos.2026.2025-12-261",
+    "received": "2025-12-25",
+    "accepted": "2026-03-12",
     "publishedOnline": "",
     "pmid": "",
-    "abstractHtml": "",
-    "abstract": "",
-    "previewText": "",
+    "abstractHtml": "<p><strong>Background:</strong> Differences in the albuminuria-lowering effect of dapagliflozin and the associated factors require further exploration.</p><p><strong>Aims:</strong> To evaluate interindividual variability in the albuminuria-lowering effect of dapagliflozin and identify factors associated with the albuminuria response to dapagliflozin.</p><p><strong>Study Design:</strong> Retrospective observational cohort study.</p><p><strong>Methods:</strong> This real-world study, utilizing a big data approach, included patients diagnosed with type 2 diabetic kidney disease (T2DKD) who received dapagliflozin treatment for a minimum of 3 months. Patients with UACR reduction of &gt;30% were categorized as responders.</p><p><strong>Results:</strong> Among 10,860 patients with T2DKD, 4,487 (41.32%) were classified as non-responders. Four predictive factors were identified: T2DM duration, baseline HbA1c, baseline SBP, and baseline UACR, with a combined ROC AUC of 0.646.</p><p><strong>Conclusion:</strong> Significant interindividual variability was observed in the albuminuria-lowering effect of dapagliflozin in the Chinese population, though the identified factors showed limited discriminative ability for clinical use.</p>",
+    "abstract": "Background: Differences in the albuminuria-lowering effect of dapagliflozin and the associated factors require further exploration.Aims: To evaluate interindividual variability in the albuminuria-lowering effect of dapagliflozin and identify factors associated with the albuminuria response to dapagliflozin.Study Design: Retrospective observational cohort study.Methods: This real-world study, utilizing a big data approach, included patients diagnosed with type 2 diabetic kidney disease (T2DKD) who received dapagliflozin treatment for a minimum of 3 months. Patients with UACR reduction of &gt;30% were categorized as responders.Results: Among 10,860 patients with T2DKD, 4,487 (41.32%) were classified as non-responders. Four predictive factors were identified: T2DM duration, baseline HbA1c, baseline SBP, and baseline UACR, with a combined ROC AUC of 0.646.Conclusion: Significant interindividual variability was observed in the albuminuria-lowering effect of dapagliflozin in the Chinese population, though the identified factors showed limited discriminative ability for clinical use.",
+    "previewText": "Background: Differences in the albuminuria-lowering effect of dapagliflozin and the associated factors require further exploration.Aims: To evaluate interindividual variability in the albuminuria-lowering effect of dapagliflozin and identify factors associated with the albuminuria response to dapagliflozin.Study Design: Retrospective observational cohort stu",
     "keywords": [],
-    "authors": [],
-    "supplementary": []
+    "authors": [
+      {
+        "name": "Jinfang Song",
+        "affiliation": "Department of Pharmacy, Affiliated Hospital of Jiangnan University, Jiangsu, China",
+        "orcid": "0000-0002-1138-6186"
+      },
+      {
+        "name": "Yongru Zhuang",
+        "affiliation": "Department of Pharmacy, Affiliated Hospital of Jiangnan University, Jiangsu, China",
+        "orcid": "0009-0001-2047-8322"
+      },
+      {
+        "name": "Chenling Wu",
+        "affiliation": "Department of Data Information, Nanjing Jiangbei New Area Biopharmaceutical Public Service Platform Co., Ltd, Jiangsu, China",
+        "orcid": "0009-0000-2525-9519"
+      },
+      {
+        "name": "Yi Xu",
+        "affiliation": "Phase I Clinical Trial Center, Affiliated Lianyungang Hospital of Xuzhou Medical University, Jiangsu, China",
+        "orcid": "0009-0007-8362-2364"
+      },
+      {
+        "name": "Ya Chen",
+        "affiliation": "Department of Endocrinology, Affiliated Hospital of Jiangnan University, Jiangsu, China",
+        "orcid": "0009-0002-6554-9574"
+      },
+      {
+        "name": "Tao Wang",
+        "affiliation": "Department of Pharmacy, Affiliated Hospital of Xuzhou Medical University, Jiangsu, China",
+        "orcid": "0009-0006-5162-9863"
+      },
+      {
+        "name": "Xiaoxing Yin",
+        "affiliation": "Jiangsu Key Laboratory of New Drug Research and Clinical Pharmacy, Xuzhou Medical University, Jiangsu, China",
+        "orcid": "0000-0001-5558-5534",
+        "corresponding": true,
+        "email": "xiaoxing_yin@163.com"
+      },
+      {
+        "name": "Fen Xie",
+        "affiliation": "Department of Pharmacy, Affiliated Hospital of Jiangnan University, Jiangsu, China",
+        "orcid": "0009-0006-0615-2453",
+        "corresponding": true,
+        "email": "9862022071@jiangnan.edu.cn"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2884.pdf",
+    "localPdfUrl": "js/data/pdfs/2884.pdf",
+    "hasFullText": false
   },
   {
-    "id": 2873,
-    "order": 24,
+    "id": 2885,
+    "order": 4,
     "aheadOfPrint": true,
     "volume": null,
     "issue": "",
     "pages": "",
     "published": "",
-    "type": "denemee",
-    "title": "rwrqwrqw qw qrw wqr qw",
-    "doi": "rwerwrw",
-    "received": "",
-    "accepted": "",
+    "type": "Original Article",
+    "title": "Downregulation of IL16 Expression Induces Chemotherapeutic Drug Sensitivity via Increased Degradation of Mutant TP53",
+    "doi": "10.4274/balkanmedj.galenos.2026.2025-12-245",
+    "received": "2026-01-03",
+    "accepted": "2026-03-12",
+    "publishedOnline": "",
+    "pmid": "",
+    "abstractHtml": "<p><strong>Background:</strong> Interleukin 16 (IL16) is a pleiotropic cytokine that functions as a CD4+ T-cell chemokine, a regulator of T-cell activation, and an inhibitor of HIV replication. The role of IL16 in acute myeloid leukemia (AML) remains largely unexplored.</p><p><strong>Aims:</strong> To investigate the potential role of IL16 in AML.</p><p><strong>Study Design:</strong> <em>In vitro</em> experiments.</p><p><strong>Methods:</strong> Bioinformatic analyses using online databases, transcriptome data evaluation, single-cell dataset analysis, expression assessments via Western blot and ELISA, cell line knockdown studies, and transcriptome sequencing analysis.</p><p><strong>Results:</strong> IL16 expression was significantly elevated in AML patients and correlated with poorer prognosis. IL16 knockdown significantly inhibited proliferation and promoted chemotherapy-induced apoptosis in AML cells <em>in vitro</em>. Reduced expression decreased cytarabine IC50 and induced degradation of mutant TP53.</p><p><strong>Conclusion:</strong> High IL16 expression was observed in malignant cells from AML patients. Downregulation of IL16 promotes degradation of mutant TP53 and induces apoptosis, thereby increasing chemotherapeutic sensitivity <em>in vitro</em>.</p>",
+    "abstract": "Background: Interleukin 16 (IL16) is a pleiotropic cytokine that functions as a CD4+ T-cell chemokine, a regulator of T-cell activation, and an inhibitor of HIV replication. The role of IL16 in acute myeloid leukemia (AML) remains largely unexplored.Aims: To investigate the potential role of IL16 in AML.Study Design: In vitro experiments.Methods: Bioinformatic analyses using online databases, transcriptome data evaluation, single-cell dataset analysis, expression assessments via Western blot and ELISA, cell line knockdown studies, and transcriptome sequencing analysis.Results: IL16 expression was significantly elevated in AML patients and correlated with poorer prognosis. IL16 knockdown significantly inhibited proliferation and promoted chemotherapy-induced apoptosis in AML cells in vitro. Reduced expression decreased cytarabine IC50 and induced degradation of mutant TP53.Conclusion: High IL16 expression was observed in malignant cells from AML patients. Downregulation of IL16 promotes degradation of mutant TP53 and induces apoptosis, thereby increasing chemotherapeutic sensitivity in vitro.",
+    "previewText": "Background: Interleukin 16 (IL16) is a pleiotropic cytokine that functions as a CD4+ T-cell chemokine, a regulator of T-cell activation, and an inhibitor of HIV replication. The role of IL16 in acute myeloid leukemia (AML) remains largely unexplored.Aims: To investigate the potential role of IL16 in AML.Study Design: In vitro experiments.Methods: Bioinformat",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Heng Zhang",
+        "affiliation": "Department of Hematology, The First Affiliated Hospital of Guangzhou Medical University, Guangzhou, China",
+        "orcid": "0009-0006-3372-9828"
+      },
+      {
+        "name": "Pengfei Qin",
+        "affiliation": "Department of Hematology, The First Affiliated Hospital of Guangzhou Medical University, Guangzhou, China",
+        "orcid": "0000-0002-7546-7380"
+      },
+      {
+        "name": "Anqiao Li",
+        "affiliation": "Department of Hematology, The First Affiliated Hospital of Guangzhou Medical University, Guangzhou, China",
+        "orcid": "0009-0001-8424-1543"
+      },
+      {
+        "name": "Zhenqian Huang",
+        "affiliation": "Department of Hematology, The First Affiliated Hospital of Guangzhou Medical University, Guangzhou, China",
+        "orcid": "0009-0005-1677-9340"
+      },
+      {
+        "name": "Sida Peng",
+        "affiliation": "Department of Hematology, The First Affiliated Hospital of Guangzhou Medical University, Guangzhou, China",
+        "orcid": "0009-0003-9418-4014",
+        "corresponding": true,
+        "email": "hgcore@126.com"
+      },
+      {
+        "name": "Haiming Li",
+        "affiliation": "Department of Hematology, The First Affiliated Hospital of Guangzhou Medical University, Guangzhou, China",
+        "orcid": "0009-0004-0831-313X",
+        "corresponding": true,
+        "email": "lihaiming@gzhmu.edu.cn"
+      },
+      {
+        "name": "Lihua Xu",
+        "affiliation": "Department of Hematology and Guangdong Key Laboratory of Urology, The First Affiliated Hospital of Guangzhou Medical University, Guangzhou, China",
+        "orcid": "0000-0002-3437-1286",
+        "corresponding": true,
+        "email": "xlhua@gzhmu.edu.cn"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2885.pdf",
+    "localPdfUrl": "js/data/pdfs/2885.pdf",
+    "hasFullText": true
+  },
+  {
+    "id": 2886,
+    "order": 5,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Original Article",
+    "title": "Machine Learning-Based Magnetocardiography Model Aids in Diagnosing Non-ST-Segment Elevation Acute Coronary Syndrome",
+    "doi": "10.4274/balkanmedj.galenos.2026.2026-1-319",
+    "received": "2026-02-02",
+    "accepted": "2026-04-02",
+    "publishedOnline": "",
+    "pmid": "",
+    "abstractHtml": "<p><strong>Background:</strong> Non-ST-segment elevation acute coronary syndrome (NSTE-ACS) is a leading cause of acute chest pain in clinical practice. Magnetocardiography (MCG) is a non-invasive functional imaging technique with high sensitivity to early electrophysiological changes associated with myocardial ischemia.</p><p><strong>Aims:</strong> To develop and validate a machine learning (ML)-based diagnostic model for NSTE-ACS using MCG-derived features.</p><p><strong>Study Design:</strong> Retrospective cohort study.</p><p><strong>Methods:</strong> 578 patients with acute chest pain were enrolled. A total of 13 feature categories (188 parameters) were extracted from ST segment and T wave. Three feature selection methods (Boruta, LASSO, and mRMR) and five ML algorithms were implemented within a nested cross-validation framework.</p><p><strong>Results:</strong> The SVM model achieved an AUC of 0.91 ± 0.01 in nested cross-validation and 0.89 in independent testing, with accuracy of 0.84, sensitivity of 0.89, and specificity of 0.77.</p><p><strong>Conclusion:</strong> The SVM-based MCG model showed strong potential as an auxiliary tool for identifying NSTE-ACS, with potential to improve chest pain management and reduce misdiagnoses.</p>",
+    "abstract": "Background: Non-ST-segment elevation acute coronary syndrome (NSTE-ACS) is a leading cause of acute chest pain in clinical practice. Magnetocardiography (MCG) is a non-invasive functional imaging technique with high sensitivity to early electrophysiological changes associated with myocardial ischemia.Aims: To develop and validate a machine learning (ML)-based diagnostic model for NSTE-ACS using MCG-derived features.Study Design: Retrospective cohort study.Methods: 578 patients with acute chest pain were enrolled. A total of 13 feature categories (188 parameters) were extracted from ST segment and T wave. Three feature selection methods (Boruta, LASSO, and mRMR) and five ML algorithms were implemented within a nested cross-validation framework.Results: The SVM model achieved an AUC of 0.91 ± 0.01 in nested cross-validation and 0.89 in independent testing, with accuracy of 0.84, sensitivity of 0.89, and specificity of 0.77.Conclusion: The SVM-based MCG model showed strong potential as an auxiliary tool for identifying NSTE-ACS, with potential to improve chest pain management and reduce misdiagnoses.",
+    "previewText": "Background: Non-ST-segment elevation acute coronary syndrome (NSTE-ACS) is a leading cause of acute chest pain in clinical practice. Magnetocardiography (MCG) is a non-invasive functional imaging technique with high sensitivity to early electrophysiological changes associated with myocardial ischemia.Aims: To develop and validate a machine learning (ML)-base",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Junting Li",
+        "affiliation": "Beihang University School of Instrumentation and Optoelectronic Engineering, Beijing, China; Key Laboratory of Ultra-Weak Magnetic Field Measurement Technology, Ministry of Education, Beihang University School of Instrumentation and Optoelectronic Engineering, Beijing, China; National Innovation Platform for Industry-Education Integration in Medicine-Engineering Interdisciplinary, Shandong Key Laboratory for Magnetic Field-free Medicine and Functional Imaging, Research Institute of Shandong University, Jinan, China",
+        "orcid": "0000-0001-6844-4765"
+      },
+      {
+        "name": "Yuheng Zhou",
+        "affiliation": "Beihang University School of Instrumentation and Optoelectronic Engineering, Beijing, China; Key Laboratory of Ultra-Weak Magnetic Field Measurement Technology, Ministry of Education, Beihang University School of Instrumentation and Optoelectronic Engineering, Beijing, China; National Innovation Platform for Industry-Education Integration in Medicine-Engineering Interdisciplinary, Shandong Key Laboratory for Magnetic Field-free Medicine and Functional Imaging, Research Institute of Shandong University, Jinan, China",
+        "orcid": "0009-0007-4064-1151"
+      },
+      {
+        "name": "Ruizhe Wang",
+        "affiliation": "Beihang University School of Instrumentation and Optoelectronic Engineering, Beijing, China; Key Laboratory of Ultra-Weak Magnetic Field Measurement Technology, Ministry of Education, Beihang University School of Instrumentation and Optoelectronic Engineering, Beijing, China; National Innovation Platform for Industry-Education Integration in Medicine-Engineering Interdisciplinary, Shandong Key Laboratory for Magnetic Field-free Medicine and Functional Imaging, Research Institute of Shandong University, Jinan, China",
+        "orcid": "0009-0000-7105-0249"
+      },
+      {
+        "name": "Jiaojiao Pang",
+        "affiliation": "National Innovation Platform for Industry-Education Integration in Medicine-Engineering Interdisciplinary, Shandong Key Laboratory for Magnetic Field-free Medicine and Functional Imaging, Research Institute of Shandong University, Jinan, China; Department of Emergency Medicine, Shandong Provincial Clinical Research Center for Emergency and Critical Care Medicine, Qilu Hospital of Shandong University, Jinan, China",
+        "orcid": "0009-0002-7781-518X"
+      },
+      {
+        "name": "Min Xiang",
+        "affiliation": "Key Laboratory of Ultra-Weak Magnetic Field Measurement Technology, Ministry of Education, Beihang University School of Instrumentation and Optoelectronic Engineering, Beijing, China; National Innovation Platform for Industry-Education Integration in Medicine-Engineering Interdisciplinary, Shandong Key Laboratory for Magnetic Field-free Medicine and Functional Imaging, Research Institute of Shandong University, Jinan, China; State Key Laboratory of Traditional Chinese Medicine Syndrome, National Institute of Extremely-weak Magnetic Field Infrastructure, Hangzhou, China; Zhejiang Provincial Key Laboratory of Ultra-Weak Magnetic-Field Space and Applied Technology, Hangzhou, China; Zhejiang Key Laboratory of Zero Magnetic Medicine, Hangzhou, China; Hefei National Laboratory, Hefei, China; Hangzhou Lingci Medical Equipment Co. Ltd, Hangzhou, China",
+        "orcid": "0000-0002-0239-3392",
+        "corresponding": true,
+        "email": "xiang_min@buaa.edu.cn"
+      },
+      {
+        "name": "Xiaolin Ning",
+        "affiliation": "Beihang University School of Instrumentation and Optoelectronic Engineering, Beijing, China",
+        "orcid": "0000-0003-3563-3601",
+        "corresponding": true,
+        "email": "ningxiaolin@buaa.edu.cn"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2886.pdf",
+    "localPdfUrl": "js/data/pdfs/2886.pdf",
+    "hasFullText": false
+  },
+  {
+    "id": 2887,
+    "order": 6,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Original Article",
+    "title": "SLC16A3-Induced Lactate Remodeling Drives Immune Evasion in Clear Cell Renal Cell Carcinoma",
+    "doi": "10.4274/balkanmedj.galenos.2026.2026-1-247",
+    "received": "2026-01-26",
+    "accepted": "2026-04-02",
+    "publishedOnline": "",
+    "pmid": "",
+    "abstractHtml": "<p><strong>Background:</strong> Extensive studies have implicated glycolytic reprogramming and lactate accumulation in immune evasion. However, CRISPR-based <em>in vivo</em> screens interrogating metabolic drivers of immune checkpoint blockade resistance in clear cell renal cell carcinoma (ccRCC) remain scarce.</p><p><strong>Aims:</strong> To identify key metabolic genes governing immune checkpoint blockade resistance in ccRCC via <em>in vivo</em> CRISPR screening, elucidate the mechanisms of SLC16A3-mediated lactate reprogramming, and validate the therapeutic potential of MCT4 inhibition combined with anti-PD-1 therapy.</p><p><strong>Study Design:</strong> Integrated <em>in vivo</em> CRISPR screening, functional assays, and clinical validation.</p><p><strong>Methods:</strong> Metabolic CRISPR library screening in immunocompetent ccRCC models, genomic dataset analyses, tissue microarray studies, cell line engineering, metabolic assays, flow cytometry, and molecular mechanism investigations.</p><p><strong>Results and Conclusion:</strong> SLC16A3 was identified as critical for immune evasion through lactate-mediated M2 macrophage polarization and an autocrine GPR81-ERK-c-MYC feedback mechanism. Combined MCT4 inhibition with PD-1 blockade demonstrated enhanced anti-tumor efficacy.</p>",
+    "abstract": "Background: Extensive studies have implicated glycolytic reprogramming and lactate accumulation in immune evasion. However, CRISPR-based in vivo screens interrogating metabolic drivers of immune checkpoint blockade resistance in clear cell renal cell carcinoma (ccRCC) remain scarce.Aims: To identify key metabolic genes governing immune checkpoint blockade resistance in ccRCC via in vivo CRISPR screening, elucidate the mechanisms of SLC16A3-mediated lactate reprogramming, and validate the therapeutic potential of MCT4 inhibition combined with anti-PD-1 therapy.Study Design: Integrated in vivo CRISPR screening, functional assays, and clinical validation.Methods: Metabolic CRISPR library screening in immunocompetent ccRCC models, genomic dataset analyses, tissue microarray studies, cell line engineering, metabolic assays, flow cytometry, and molecular mechanism investigations.Results and Conclusion: SLC16A3 was identified as critical for immune evasion through lactate-mediated M2 macrophage polarization and an autocrine GPR81-ERK-c-MYC feedback mechanism. Combined MCT4 inhibition with PD-1 blockade demonstrated enhanced anti-tumor efficacy.",
+    "previewText": "Background: Extensive studies have implicated glycolytic reprogramming and lactate accumulation in immune evasion. However, CRISPR-based in vivo screens interrogating metabolic drivers of immune checkpoint blockade resistance in clear cell renal cell carcinoma (ccRCC) remain scarce.Aims: To identify key metabolic genes governing immune checkpoint blockade re",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Shidong Zuo",
+        "affiliation": "Medical School of Chinese PLA: Chinese PLA General Hospital, Beijing, China; Department of Urology, The Third Medical Center, Chinese PLA General Hospital, Beijing, China",
+        "orcid": "0009-0003-0570-7099"
+      },
+      {
+        "name": "Jinkai Dong",
+        "affiliation": "Department of Urology, The Third Medical Center, Chinese PLA General Hospital, Beijing, China",
+        "orcid": "0009-0004-9486-2273"
+      },
+      {
+        "name": "Yuhao Dong",
+        "affiliation": "Medical School of Chinese PLA: Chinese PLA General Hospital, Beijing, China; Department of Urology, 982nd Hospital of the Joint Logistics Support Force, Tangshan, China",
+        "orcid": "0009-0009-2017-6314"
+      },
+      {
+        "name": "Chengwei Fu",
+        "affiliation": "Department of Urology, The Third Medical Center, Chinese PLA General Hospital, Beijing, China",
+        "orcid": "0009-0009-7994-8710"
+      },
+      {
+        "name": "Xuechao Li",
+        "affiliation": "Department of Urology, The Third Medical Center, Chinese PLA General Hospital, Beijing, China",
+        "orcid": "0009-0007-7317-1694"
+      },
+      {
+        "name": "Baobo Zhao",
+        "affiliation": "Department of Urology, The Third Medical Center, Chinese PLA General Hospital, Beijing, China",
+        "orcid": "0009-0002-4231-4123"
+      },
+      {
+        "name": "Lu Wang",
+        "affiliation": "Department of Obstetrics and Gynecology, The Seventh Medical Center, Chinese PLA General Hospital, Beijing, China",
+        "orcid": "0009-0000-3384-9594"
+      },
+      {
+        "name": "Yongjie Zhang",
+        "affiliation": "Department of Urology, Peking University People’s Hospital, Beijing, China",
+        "orcid": "0009-0006-5557-1160"
+      },
+      {
+        "name": "Lingsheng Kong",
+        "affiliation": "Department of Urology, The Third Medical Center, Chinese PLA General Hospital, Beijing, China",
+        "orcid": "0009-0008-4137-7644"
+      },
+      {
+        "name": "Tao Yang",
+        "affiliation": "Department of Urology, The Third Medical Center, Chinese PLA General Hospital, Beijing, China",
+        "orcid": "0009-0007-3572-7049"
+      },
+      {
+        "name": "Lijun Chen",
+        "affiliation": "Medical School of Chinese PLA: Chinese PLA General Hospital, Beijing, China; Department of Urology, The Third Medical Center, Chinese PLA General Hospital, Beijing, China",
+        "orcid": "0009-0008-1600-9882",
+        "corresponding": true,
+        "email": "Chenlijun301@outlook.com"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2887.pdf",
+    "localPdfUrl": "js/data/pdfs/2887.pdf",
+    "hasFullText": true
+  },
+  {
+    "id": 2888,
+    "order": 7,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Original Article",
+    "title": "Integrating the Interaction Between Extrathyroidal Extension and Tumor Size to Optimize T Stage in Differentiated Thyroid Cancer",
+    "doi": "10.4274/balkanmedj.galenos.2026.2026-1-269",
+    "received": "2026-01-27",
+    "accepted": "2026-04-16",
+    "publishedOnline": "",
+    "pmid": "",
+    "abstractHtml": "<p><strong>Background:</strong> The AJCC T stage for differentiated thyroid cancer (DTC) has limited prognostic stratification capability, and the interaction between extrathyroidal extension (ETE) and tumor size remains inadequately characterized.</p><p><strong>Aims:</strong> To investigate the interaction between ETE and tumor size and develop a modified T stage with improved prognostic stratification for DTC.</p><p><strong>Study Design:</strong> Retrospective, population-based cohort study.</p><p><strong>Methods:</strong> We analyzed 163,616 patients with DTC from the SEER database, divided into development (n = 106,516; 2004–2015) and validation (n = 57,100; 2016–2021) cohorts. Disease-specific survival was the primary outcome. A modified T stage was developed using recursive partitioning analysis.</p><p><strong>Results:</strong> Significant positive additive interactions were observed between ETE and tumor size. The modified T stage demonstrated improved discrimination (C-index: 0.775) compared with the AJCC 8th edition (C-index: 0.766).</p><p><strong>Conclusion:</strong> The modified T stage incorporating size-dependent effects of ETE was associated with improved prognostic stratification compared with the AJCC 8th edition.</p>",
+    "abstract": "Background: The AJCC T stage for differentiated thyroid cancer (DTC) has limited prognostic stratification capability, and the interaction between extrathyroidal extension (ETE) and tumor size remains inadequately characterized.Aims: To investigate the interaction between ETE and tumor size and develop a modified T stage with improved prognostic stratification for DTC.Study Design: Retrospective, population-based cohort study.Methods: We analyzed 163,616 patients with DTC from the SEER database, divided into development (n = 106,516; 2004–2015) and validation (n = 57,100; 2016–2021) cohorts. Disease-specific survival was the primary outcome. A modified T stage was developed using recursive partitioning analysis.Results: Significant positive additive interactions were observed between ETE and tumor size. The modified T stage demonstrated improved discrimination (C-index: 0.775) compared with the AJCC 8th edition (C-index: 0.766).Conclusion: The modified T stage incorporating size-dependent effects of ETE was associated with improved prognostic stratification compared with the AJCC 8th edition.",
+    "previewText": "Background: The AJCC T stage for differentiated thyroid cancer (DTC) has limited prognostic stratification capability, and the interaction between extrathyroidal extension (ETE) and tumor size remains inadequately characterized.Aims: To investigate the interaction between ETE and tumor size and develop a modified T stage with improved prognostic stratificati",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Hui Ouyang",
+        "affiliation": "Department of General Surgery, Xiangya Hospital, Central South University, Changsha, China; National Clinical Research Center for Geriatric Disorders, Xiangya Hospital, Central South University, Changsha, China",
+        "orcid": "0000-0001-7687-1185"
+      },
+      {
+        "name": "Xiaolin Dou",
+        "affiliation": "Department of General Surgery, Xiangya Hospital, Central South University, Changsha, China; National Clinical Research Center for Geriatric Disorders, Xiangya Hospital, Central South University, Changsha, China",
+        "orcid": "0009-0003-3972-4049"
+      },
+      {
+        "name": "Botao Sun",
+        "affiliation": "Department of General Surgery, Xiangya Hospital, Central South University, Changsha, China; National Clinical Research Center for Geriatric Disorders, Xiangya Hospital, Central South University, Changsha, China",
+        "orcid": "0000-0001-9068-1687"
+      },
+      {
+        "name": "Jinlong Chen",
+        "affiliation": "Department of General Surgery, Xiangya Hospital, Central South University, Changsha, China; National Clinical Research Center for Geriatric Disorders, Xiangya Hospital, Central South University, Changsha, China",
+        "orcid": "0000-0003-0799-045X"
+      },
+      {
+        "name": "Hongyan Zai",
+        "affiliation": "Department of General Surgery, Xiangya Hospital, Central South University, Changsha, China; National Clinical Research Center for Geriatric Disorders, Xiangya Hospital, Central South University, Changsha, China",
+        "orcid": "0009-0003-8964-1591"
+      },
+      {
+        "name": "Xinying Li",
+        "affiliation": "Department of General Surgery, Xiangya Hospital, Central South University, Changsha, China; National Clinical Research Center for Geriatric Disorders, Xiangya Hospital, Central South University, Changsha, China",
+        "orcid": "0000-0001-9835-2191",
+        "corresponding": true,
+        "email": "lixinyingcn@csu.edu.cn"
+      },
+      {
+        "name": "Fada Xia",
+        "affiliation": "Department of General Surgery, Xiangya Hospital, Central South University, Changsha, China; National Clinical Research Center for Geriatric Disorders, Xiangya Hospital, Central South University, Changsha, China",
+        "orcid": "0000-0002-8904-897X",
+        "corresponding": true,
+        "email": "xiafada@xiangya.com.cn"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2888.pdf",
+    "localPdfUrl": "js/data/pdfs/2888.pdf",
+    "hasFullText": true
+  },
+  {
+    "id": 2889,
+    "order": 8,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Original Article",
+    "title": "Nocturnal Hypoxemia and Incident Coronary Artery Disease in Obstructive Sleep Apnea",
+    "doi": "10.4274/balkanmedj.galenos.2026.2026-3-213",
+    "received": "2026-03-19",
+    "accepted": "2026-05-13",
+    "publishedOnline": "",
+    "pmid": "",
+    "abstractHtml": "<p><strong>Background:</strong> The relationship between obstructive sleep apnea (OSA) and coronary artery disease (CAD) remains controversial.</p><p><strong>Aims:</strong> To examine the association between nocturnal hypoxemia, assessed using the oxygen desaturation index (ODI), and incident CAD.</p><p><strong>Study Design:</strong> Prospective cohort study.</p><p><strong>Methods:</strong> Adults referred for suspected OSA evaluation were prospectively followed. Associations between nocturnal hypoxemia (ODI) and incident CAD were investigated using multivariable Cox proportional hazards regression.</p><p><strong>Results:</strong> Among 2,902 adults followed for a median of 8.7 years, 111 incident CAD events were identified. Participants in the highest ODI category (≥30 events/h) had a significantly greater risk of incident CAD (hazard ratio 1.99; 95% CI 1.08–3.65). AHI categories were not independently associated with incident CAD.</p><p><strong>Conclusion:</strong> Among adults referred for OSA evaluation, nocturnal hypoxemia assessed using ODI, rather than event-based OSA severity, was associated with incident CAD.</p>",
+    "abstract": "Background: The relationship between obstructive sleep apnea (OSA) and coronary artery disease (CAD) remains controversial.Aims: To examine the association between nocturnal hypoxemia, assessed using the oxygen desaturation index (ODI), and incident CAD.Study Design: Prospective cohort study.Methods: Adults referred for suspected OSA evaluation were prospectively followed. Associations between nocturnal hypoxemia (ODI) and incident CAD were investigated using multivariable Cox proportional hazards regression.Results: Among 2,902 adults followed for a median of 8.7 years, 111 incident CAD events were identified. Participants in the highest ODI category (≥30 events/h) had a significantly greater risk of incident CAD (hazard ratio 1.99; 95% CI 1.08–3.65). AHI categories were not independently associated with incident CAD.Conclusion: Among adults referred for OSA evaluation, nocturnal hypoxemia assessed using ODI, rather than event-based OSA severity, was associated with incident CAD.",
+    "previewText": "Background: The relationship between obstructive sleep apnea (OSA) and coronary artery disease (CAD) remains controversial.Aims: To examine the association between nocturnal hypoxemia, assessed using the oxygen desaturation index (ODI), and incident CAD.Study Design: Prospective cohort study.Methods: Adults referred for suspected OSA evaluation were prospect",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Yüksel Peker",
+        "affiliation": "Koç University Research Center for Translational Medicine (KUTTAM), Koç University Faculty of Medicine, İstanbul, Türkiye; Department of Molecular and Clinical Medicine, Institute of Medicine, Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden; Division of Pulmonary, Department of Allergy, and Critical Care Medicine, University of Pittsburgh Faculty of Medicine, Pennsylvania, United States; Department of Clinical Sciences, Respiratory Medicine and Allergology, Lund University Faculty of Medicine, Lund, Sweden",
+        "orcid": "0000-0001-9067-6538",
+        "corresponding": true,
+        "email": "yuksel.peker@lungall.gu.se"
+      },
+      {
+        "name": "Henrik Holtstrand Hjälm",
+        "affiliation": "Department of Molecular and Clinical Medicine, Institute of Medicine, Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden",
+        "orcid": "0000-0003-0129-5085"
+      },
+      {
+        "name": "Helena Glantz",
+        "affiliation": "Clinic of Internal Medicine, Skaraborg Hospital, Lidköping, Sweden",
+        "orcid": "0000-0002-3299-4754"
+      },
+      {
+        "name": "Aylin Pıhtılı",
+        "affiliation": "Department of Pulmonary Medicine, İstanbul University Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": "0000-0001-8846-048X"
+      },
+      {
+        "name": "Erik Thunström",
+        "affiliation": "Department of Molecular and Clinical Medicine, Institute of Medicine, Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden; Department of Medicine, Region Västra Götaland, Sahlgrenska University Hospital/Östra, Geriatrics and Emergency Medicine, Gothenburg, Sweden",
+        "orcid": "0000-0002-9134-2107"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2889.pdf",
+    "localPdfUrl": "js/data/pdfs/2889.pdf",
+    "hasFullText": true
+  },
+  {
+    "id": 2890,
+    "order": 9,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Brief Report",
+    "title": "ATM Variants and Breast Cancer Risk in North Macedonia",
+    "doi": "10.4274/balkanmedj.galenos.2026.2026-1-289",
+    "received": "2026-01-27",
+    "accepted": "2026-04-07",
+    "publishedOnline": "",
+    "pmid": "",
+    "abstractHtml": "<p><strong>Background:</strong> Germline pathogenic variants (PVs) in the ATM gene are established moderate-risk factors for breast cancer (BC), but population-specific variant spectra and clinical significance of many missense variants remain incompletely characterized.</p><p><strong>Aims:</strong> To evaluate the prevalence of ATM variants in a large cohort of BC patients from North Macedonia and compare it with the general population.</p><p><strong>Study Design:</strong> Retrospective case–control analysis.</p><p><strong>Methods:</strong> ATM variants were analyzed in 1,211 BC patients from North Macedonia using a targeted hereditary cancer gene panel, compared with 1,303 population-based controls.</p><p><strong>Results:</strong> Pathogenic ATM variants were identified in 1.9% of BC cases and 0.4% of controls (OR = 5.02, p = 0.0006). The p.(Leu2492Arg) variant was more frequent in cases than controls (1.9% vs. 1.1%).</p><p><strong>Conclusion:</strong> These findings confirm ATM as a clinically relevant BC susceptibility gene in North Macedonia and highlight population-specific enrichment of PVs and the p.(Leu2492Arg) missense variant.</p>",
+    "abstract": "Background: Germline pathogenic variants (PVs) in the ATM gene are established moderate-risk factors for breast cancer (BC), but population-specific variant spectra and clinical significance of many missense variants remain incompletely characterized.Aims: To evaluate the prevalence of ATM variants in a large cohort of BC patients from North Macedonia and compare it with the general population.Study Design: Retrospective case–control analysis.Methods: ATM variants were analyzed in 1,211 BC patients from North Macedonia using a targeted hereditary cancer gene panel, compared with 1,303 population-based controls.Results: Pathogenic ATM variants were identified in 1.9% of BC cases and 0.4% of controls (OR = 5.02, p = 0.0006). The p.(Leu2492Arg) variant was more frequent in cases than controls (1.9% vs. 1.1%).Conclusion: These findings confirm ATM as a clinically relevant BC susceptibility gene in North Macedonia and highlight population-specific enrichment of PVs and the p.(Leu2492Arg) missense variant.",
+    "previewText": "Background: Germline pathogenic variants (PVs) in the ATM gene are established moderate-risk factors for breast cancer (BC), but population-specific variant spectra and clinical significance of many missense variants remain incompletely characterized.Aims: To evaluate the prevalence of ATM variants in a large cohort of BC patients from North Macedonia and co",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Ivana Maleva Kostovska",
+        "affiliation": "Research Center for Genetic Engineering and Biotechnology “Georgi D. Efremov”, Macedonian Academy of Science and Arts, Skopje, North Macedonia",
+        "orcid": "0000-0001-6796-4793"
+      },
+      {
+        "name": "Sanja Kiprijanovska",
+        "affiliation": "Research Center for Genetic Engineering and Biotechnology “Georgi D. Efremov”, Macedonian Academy of Science and Arts, Skopje, North Macedonia",
+        "orcid": "0000-0003-2575-5656"
+      },
+      {
+        "name": "Predrag Noveski",
+        "affiliation": "Research Center for Genetic Engineering and Biotechnology “Georgi D. Efremov”, Macedonian Academy of Science and Arts, Skopje, North Macedonia",
+        "orcid": "0000-0002-3882-9821"
+      },
+      {
+        "name": "Marija Vujovikj",
+        "affiliation": "Research Center for Genetic Engineering and Biotechnology “Georgi D. Efremov”, Macedonian Academy of Science and Arts, Skopje, North Macedonia",
+        "orcid": "0009-0002-6588-0769"
+      },
+      {
+        "name": "Marija Terzic",
+        "affiliation": "Research Center for Genetic Engineering and Biotechnology “Georgi D. Efremov”, Macedonian Academy of Science and Arts, Skopje, North Macedonia",
+        "orcid": "0000-0001-7511-0122"
+      },
+      {
+        "name": "Dijana Plaseska-Karanfilska",
+        "affiliation": "Research Center for Genetic Engineering and Biotechnology “Georgi D. Efremov”, Macedonian Academy of Science and Arts, Skopje, North Macedonia",
+        "orcid": "0000-0001-8877-2416",
+        "corresponding": true,
+        "email": "dijana@manu.edu.mk"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2890.pdf",
+    "localPdfUrl": "js/data/pdfs/2890.pdf",
+    "hasFullText": true
+  },
+  {
+    "id": 2891,
+    "order": 10,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Clinical Image",
+    "title": "A \"Beret-Like\" Giant Congenital Melanocytic Nevus of The Scalp with Nodal Nevus on a Girl: A Surgical Challenge",
+    "doi": "10.4274/balkanmedj.galenos.2026.2025-12-224",
+    "received": "2025-12-23",
+    "accepted": "2026-01-18",
     "publishedOnline": "",
     "pmid": "",
     "abstractHtml": "",
     "abstract": "",
     "previewText": "",
     "keywords": [],
-    "authors": [],
-    "supplementary": []
+    "authors": [
+      {
+        "name": "Zequn Qiu",
+        "affiliation": "Department of Dermatologic Surgery, Hospital for Skin Diseases, Institute of Dermatology, Chinese Academy of Medical Sciences and Peking Union Medical College, Nanjing, China",
+        "orcid": "0009-0009-5943-1116"
+      },
+      {
+        "name": "Zhang Rundong",
+        "affiliation": "Department of Dermatologic Surgery, Hospital for Skin Diseases, Institute of Dermatology, Chinese Academy of Medical Sciences and Peking Union Medical College, Nanjing, China",
+        "orcid": "0000-0001-5723-675X"
+      },
+      {
+        "name": "Guocheng Zhang",
+        "affiliation": "Hospital for Skin Diseases, Institute of Dermatology, Chinese Academy of Medical Sciences and Peking Union Medical College, Nanjing, China",
+        "orcid": "0009-0004-0166-595X"
+      },
+      {
+        "name": "Hao Chen",
+        "affiliation": "Department of Pathology, Hospital for Skin Diseases, Institute of Dermatology, Chinese Academy of Medical Sciences and Peking Union Medical College, Nanjing, China",
+        "orcid": "0000-0003-0857-7405",
+        "corresponding": true,
+        "email": "ch76ch@163.com"
+      },
+      {
+        "name": "Yan Wang",
+        "affiliation": "Department of Dermatologic Surgery, Hospital for Skin Diseases, Institute of Dermatology, Chinese Academy of Medical Sciences and Peking Union Medical College, Nanjing, China",
+        "orcid": "0000-0002-3829-8792",
+        "corresponding": true,
+        "email": "wangy@pumcderm.cams.cn"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2891.pdf",
+    "localPdfUrl": "js/data/pdfs/2891.pdf",
+    "hasFullText": true
+  },
+  {
+    "id": 2892,
+    "order": 11,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Clinical Image",
+    "title": "Pulmonary Sequestration with a Descending Aorta-Sized Aberrant Artery",
+    "doi": "10.4274/balkanmedj.galenos.2026.2026-2-56",
+    "received": "2026-02-07",
+    "accepted": "2026-02-25",
+    "publishedOnline": "",
+    "pmid": "",
+    "abstractHtml": "",
+    "abstract": "",
+    "previewText": "",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Gaku Yamaguchi",
+        "affiliation": "Department of Thoracic Surgery, Ichikawa Hospital, International University of Health and Welfare, Chiba, Japan",
+        "orcid": "0000-0002-1034-5155",
+        "corresponding": true,
+        "email": "ugaku@hotmail.com"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2892.pdf",
+    "localPdfUrl": "js/data/pdfs/2892.pdf",
+    "hasFullText": true
+  },
+  {
+    "id": 2893,
+    "order": 12,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Clinical Image",
+    "title": "Asymptomatic Sight-Threatening Retinopathy in Multisystem Incontinentia Pigmenti",
+    "doi": "10.4274/balkanmedj.galenos.2026.2026-2-142",
+    "received": "2026-02-21",
+    "accepted": "2026-04-14",
+    "publishedOnline": "2026-05-06",
+    "pmid": "",
+    "abstractHtml": "",
+    "abstract": "",
+    "previewText": "",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Yizhou Yin",
+        "affiliation": "Department of Ophthalmology, Chongqing Huaxia Yuzhou Eye Hospital, Chongqing, China",
+        "orcid": "0009-0002-1262-2440"
+      },
+      {
+        "name": "Chong Tang",
+        "affiliation": "Department of Ophthalmology, The First Affiliated Hospital of Chongqing Medical University, Chongqing, China",
+        "orcid": "0000-0002-7787-2662"
+      },
+      {
+        "name": "Yanlai Zhang",
+        "affiliation": "Department of Ophthalmology, The First Affiliated Hospital of Chongqing Medical University, Chongqing, China",
+        "orcid": "0009-0003-4978-6155",
+        "corresponding": true,
+        "email": "202674@hospital.cqmu.edu.cn"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2893.pdf",
+    "localPdfUrl": "js/data/pdfs/2893.pdf",
+    "hasFullText": true
+  },
+  {
+    "id": 2894,
+    "order": 13,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Clinical Image",
+    "title": "LBBAP Unmasks Severe Aortic Stenosis and Percutaneous Closure of Post-AVR Iatrogenic VSD",
+    "doi": "10.4274/balkanmedj.galenos.2026.2026-3-200",
+    "received": "2026-03-19",
+    "accepted": "2026-05-05",
+    "publishedOnline": "",
+    "pmid": "",
+    "abstractHtml": "",
+    "abstract": "",
+    "previewText": "",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Mert Doğan",
+        "affiliation": "Clinic of Cardiology, Kozluk State Hospital, Batman, Türkiye",
+        "orcid": "0000-0002-2965-058X",
+        "corresponding": true,
+        "email": "drmertd@gmail.com"
+      },
+      {
+        "name": "Ahmet Hakan Ateş",
+        "affiliation": "Department of Cardiology, Hacettepe University Faculty of Medicine, Ankara, Türkiye",
+        "orcid": "0000-0001-5414-7268"
+      },
+      {
+        "name": "Hayrettin Hakan Aykan",
+        "affiliation": "Department of Pediatric Cardiology, Hacettepe University Faculty of Medicine, Ankara, Türkiye",
+        "orcid": "0000-0001-5136-3977"
+      },
+      {
+        "name": "Uğur Canpolat",
+        "affiliation": "Department of Cardiology, Hacettepe University Faculty of Medicine, Ankara, Türkiye",
+        "orcid": "0000-0002-4250-1706"
+      },
+      {
+        "name": "Kudret Aytemir",
+        "affiliation": "Department of Cardiology, Hacettepe University Faculty of Medicine, Ankara, Türkiye",
+        "orcid": "0000-0001-9279-8424"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2894.pdf",
+    "localPdfUrl": "js/data/pdfs/2894.pdf",
+    "hasFullText": true
+  },
+  {
+    "id": 2895,
+    "order": 14,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Clinical Image",
+    "title": "Land Leech Bite Associated Rickettsia japonica Infection in an Elderly Woman in Zhejiang, China",
+    "doi": "10.4274/balkanmedj.galenos.2026.2026-4-220",
+    "received": "2026-04-17",
+    "accepted": "2026-05-20",
+    "publishedOnline": "",
+    "pmid": "",
+    "abstractHtml": "",
+    "abstract": "",
+    "previewText": "",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Keye Xu",
+        "affiliation": "Department of Microbiology, Ningbo Municipal Center for Disease Control and Prevention, Zhejiang, China",
+        "orcid": "0000-0002-4813-2489"
+      },
+      {
+        "name": "Fanfan Yang",
+        "affiliation": "Department of Microbiology, Ningbo Municipal Center for Disease Control and Prevention, Zhejiang, China",
+        "orcid": "0000-0002-0319-9348"
+      },
+      {
+        "name": "Yuhui Liu",
+        "affiliation": "Department of Microbiology, Ningbo Municipal Center for Disease Control and Prevention, Zhejiang, China",
+        "orcid": "0009-0000-0686-0640"
+      },
+      {
+        "name": "Jiaqi Qiu",
+        "affiliation": "Department of Vector Biology, Ningbo International Travel Health Care Center (Ningbo Customs Port Outpatient), Zhejiang, China",
+        "orcid": "0009-0005-2344-6253"
+      },
+      {
+        "name": "Chenjun Zeng",
+        "affiliation": "Department of Infection, Ningbo No.2 Hospital, Zhejiang, China",
+        "orcid": "0000-0002-5052-8546",
+        "corresponding": true,
+        "email": "doctorzcj@gmail.com"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2895.pdf",
+    "localPdfUrl": "js/data/pdfs/2895.pdf",
+    "hasFullText": true
+  },
+  {
+    "id": 2896,
+    "order": 15,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Clinical Image",
+    "title": "A Rare Blood Cyst with Calcification Located in the Right Atrium",
+    "doi": "10.4274/balkanmedj.galenos.2026.2026-3-153",
+    "received": "2026-04-09",
+    "accepted": "2026-05-11",
+    "publishedOnline": "",
+    "pmid": "",
+    "abstractHtml": "",
+    "abstract": "",
+    "previewText": "",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Leizhi Ku",
+        "affiliation": "Department of Radiology, Wuhan Asia Heart Hospital Affiliated Wuhan University of Science and Technology, Wuhan, China",
+        "orcid": "0000-0002-0627-2088"
+      },
+      {
+        "name": "JiaJia Lu",
+        "affiliation": "Department of Cardiovascular Surgery, Wuhan Asia Heart Hospital Affiliated Wuhan University of Science and Technology, Wuhan, China",
+        "orcid": "0009-0002-0167-419X"
+      },
+      {
+        "name": "Xiaojing Ma",
+        "affiliation": "Department of Echocardiography, Wuhan Asia Heart Hospital Affiliated Wuhan University of Science and Technology, Wuhan, China",
+        "orcid": "0000-0002-6749-0898",
+        "corresponding": true,
+        "email": "klz1534292102@163.com"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2896.pdf",
+    "localPdfUrl": "js/data/pdfs/2896.pdf",
+    "hasFullText": true
+  },
+  {
+    "id": 2897,
+    "order": 16,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Scientific Letter",
+    "title": "Infection-Triggered Presumed Isolated Necrotizing Digital Vasculitis Presenting as Systemic Vasculitis",
+    "doi": "10.4274/balkanmedj.galenos.2026.2026-1-135",
+    "received": "2026-01-13",
+    "accepted": "2026-02-13",
+    "publishedOnline": "",
+    "pmid": "",
+    "abstractHtml": "",
+    "abstract": "",
+    "previewText": "",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Elif Kılıç Könte",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": "0000-0002-8174-5308"
+      },
+      {
+        "name": "Ece Aslan",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": "0000-0001-8976-1356"
+      },
+      {
+        "name": "Nergis Akay",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": "0000-0001-6102-4055"
+      },
+      {
+        "name": "Sezgin Şahin",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": "0000-0002-5365-3457"
+      },
+      {
+        "name": "Özgür Kasapçopur",
+        "affiliation": "Department of Pediatric Rheumatology, İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+        "orcid": "0000-0002-1125-7720",
+        "corresponding": true,
+        "email": "ozgurkasapcopur@hotmail.com"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2897.pdf",
+    "localPdfUrl": "js/data/pdfs/2897.pdf",
+    "hasFullText": true
+  },
+  {
+    "id": 2898,
+    "order": 17,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Scientific Letter",
+    "title": "Epidemiology and Clinical Characteristics of Pediatric Acute Postinfectious Glomerulonephritis in Montenegro",
+    "doi": "10.4274/balkanmedj.galenos.2026.2026-1-139",
+    "received": "2026-01-13",
+    "accepted": "2026-02-24",
+    "publishedOnline": "",
+    "pmid": "",
+    "abstractHtml": "",
+    "abstract": "",
+    "previewText": "",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Željka Rogač",
+        "affiliation": "Institute for Children's Diseases, Clinical Center of Montenegro, Podgorica, Montenegro; University of Montenegro Faculty of Medical, Podgorica, Montenegro",
+        "orcid": "0000-0001-9514-9534",
+        "corresponding": true,
+        "email": "zeljka.rogac89@gmail.com"
+      },
+      {
+        "name": "Dragana Majiċ",
+        "affiliation": "Institute for Children's Diseases, Clinical Center of Montenegro, Podgorica, Montenegro",
+        "orcid": "0009-0004-7324-5858"
+      },
+      {
+        "name": "Brankica Spasojeviċ",
+        "affiliation": "University Children’s Hospital, Belgrade, Serbia; University of Belgrade Faculty of Medicine, Belgrade, Serbia",
+        "orcid": "0000-0002-1070-8155"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2898.pdf",
+    "localPdfUrl": "js/data/pdfs/2898.pdf",
+    "hasFullText": true
+  },
+  {
+    "id": 2899,
+    "order": 18,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Scientific Letter",
+    "title": "Additional PML and RARA Rearrangements Accompanying PML::RARA in a Case of Acute Promyelocytic Leukaemia",
+    "doi": "10.4274/balkanmedj.galenos.2026.2025-12-103",
+    "received": "2025-12-15",
+    "accepted": "2026-03-25",
+    "publishedOnline": "",
+    "pmid": "",
+    "abstractHtml": "",
+    "abstract": "",
+    "previewText": "",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Zhan Su",
+        "affiliation": "Department of Hematology, The Affiliated Hospital of Qingdao University, Qingdao, China",
+        "orcid": "0000-0003-0974-9512"
+      },
+      {
+        "name": "Wei Wang",
+        "affiliation": "Department of Hematology, The Affiliated Hospital of Qingdao University, Qingdao, China",
+        "orcid": "0000-0003-3660-9945"
+      },
+      {
+        "name": "Lingjie Sun",
+        "affiliation": "Department of Hematology, The Affiliated Hospital of Qingdao University, Qingdao, China",
+        "orcid": "0000-0002-1435-9327"
+      },
+      {
+        "name": "Ying Li",
+        "affiliation": "Department of Hematology, The Affiliated Hospital of Qingdao University, Qingdao, China",
+        "orcid": "0000-0002-8195-7079"
+      },
+      {
+        "name": "Xiangcong Yin",
+        "affiliation": "Department of Hematology, The Affiliated Hospital of Qingdao University, Qingdao, China",
+        "orcid": "0000-0001-8063-000X"
+      },
+      {
+        "name": "Hongguo Zhao",
+        "affiliation": "Department of Hematology, The Affiliated Hospital of Qingdao University, Qingdao, China",
+        "orcid": "0009-0003-1082-5356",
+        "corresponding": true,
+        "email": "zhao6201@126.com"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2899.pdf",
+    "localPdfUrl": "js/data/pdfs/2899.pdf",
+    "hasFullText": true
+  },
+  {
+    "id": 2900,
+    "order": 19,
+    "aheadOfPrint": true,
+    "volume": null,
+    "issue": "",
+    "pages": "",
+    "published": "",
+    "type": "Scientific Letter",
+    "title": "Genotype-Phenotype Correlation in Tuberous Sclerosis Complex",
+    "doi": "10.4274/balkanmedj.galenos.2026.2025-12-307",
+    "received": "2025-12-31",
+    "accepted": "2026-03-27",
+    "publishedOnline": "",
+    "pmid": "",
+    "abstractHtml": "",
+    "abstract": "",
+    "previewText": "",
+    "keywords": [],
+    "authors": [
+      {
+        "name": "Marija Gjorgjievska",
+        "affiliation": "Research Centre for Genetic Engineering and Biotechnology “Georgi D. Efremov”, Macedonian Academy of Science and Arts, Skopje, North Macedonia",
+        "orcid": "0000-0003-4174-9598"
+      },
+      {
+        "name": "Gjorgji Bozhinovski",
+        "affiliation": "Research Centre for Genetic Engineering and Biotechnology “Georgi D. Efremov”, Macedonian Academy of Science and Arts, Skopje, North Macedonia",
+        "orcid": "0000-0003-3480-7542"
+      },
+      {
+        "name": "Lejla Muaremoska Kanzoski",
+        "affiliation": "University Children’s Hospital, Ss. Cyril and Methodius University Faculty of Medicine, Skopje, North Macedonia",
+        "orcid": "0000-0002-9699-6281"
+      },
+      {
+        "name": "Marija Babunovska",
+        "affiliation": "Department of Neurology, Ss. Cyril and Methodius University Faculty of Medicine, Skopje, North Macedonia",
+        "orcid": "0000-0002-0476-5049"
+      },
+      {
+        "name": "Emilija Cvetkovska",
+        "affiliation": "Department of Neurology, Ss. Cyril and Methodius University Faculty of Medicine, Skopje, North Macedonia",
+        "orcid": "0000-0001-9247-3953"
+      },
+      {
+        "name": "Irena Rambabova-Bushljetik",
+        "affiliation": "Department of Neurology, Ss. Cyril and Methodius University Faculty of Medicine, Skopje, North Macedonia",
+        "orcid": "0000-0002-6861-3992"
+      },
+      {
+        "name": "Dijana Plaseska-Karanfilska",
+        "affiliation": "Research Centre for Genetic Engineering and Biotechnology “Georgi D. Efremov”, Macedonian Academy of Science and Arts, Skopje, North Macedonia",
+        "orcid": "0000-0001-8877-2416",
+        "corresponding": true,
+        "email": "dijana@manu.edu.mk"
+      }
+    ],
+    "supplementary": [],
+    "pdfUrl": "js/data/pdfs/2900.pdf",
+    "localPdfUrl": "js/data/pdfs/2900.pdf",
+    "hasFullText": true
   }
 ];

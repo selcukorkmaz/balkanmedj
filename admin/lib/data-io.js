@@ -19,6 +19,7 @@ const PATHS = {
   volumesDir: path.join(ROOT, 'js/data/volumes'),
   articlesDir: path.join(ROOT, 'js/data/articles'),
   pdfsDir: path.join(ROOT, 'js/data/pdfs'),
+  issuePdfsDir: path.join(ROOT, 'js/data/issue-pdfs'),
   imagesDir: path.join(ROOT, 'images'),
   articleImagesDir: path.join(ROOT, 'images/articles'),
   supplementaryDir: path.join(ROOT, 'js/data/supplementary'),
@@ -99,9 +100,42 @@ function writeJsonFile(filePath, data) {
 function readArticles() {
   return readJsData(PATHS.articles, VAR_NAMES.articles);
 }
+function enforceSingleFeaturedForIssue(data, volume, issue, preferredId = null) {
+  if (!Array.isArray(data)) return null;
+  const candidates = data.filter((article) =>
+    article &&
+    article.featured &&
+    String(article.volume || '') === String(volume || '') &&
+    String(article.issue || '') === String(issue || '')
+  );
+  if (!candidates.length) return null;
+
+  const preferred = preferredId == null
+    ? null
+    : candidates.find((article) => String(article.id) === String(preferredId));
+  const selected = preferred || candidates[0];
+  candidates.forEach((article) => {
+    article.featured = String(article.id) === String(selected.id);
+  });
+  return selected;
+}
+
+function normalizeFeaturedArticles(data) {
+  if (!Array.isArray(data)) return data;
+  const seen = new Set();
+  data.forEach((article) => {
+    if (!article || !article.featured || !article.volume || !article.issue) return;
+    const key = `${article.volume}|${article.issue}`;
+    if (seen.has(key)) article.featured = false;
+    else seen.add(key);
+  });
+  return data;
+}
+
 function writeArticles(data) {
-  writeJsData(PATHS.articles, VAR_NAMES.articles, data, 'Articles Data');
-  rebuildArticleIndex(data);
+  const normalized = normalizeFeaturedArticles(data);
+  writeJsData(PATHS.articles, VAR_NAMES.articles, normalized, 'Articles Data');
+  rebuildArticleIndex(normalized);
 }
 
 function readArticlesInPress() {
@@ -144,6 +178,31 @@ function readHomepageData() {
 }
 function writeHomepageData(data) {
   writeJsData(PATHS.homepageArticles, VAR_NAMES.homepageArticles, data, 'Homepage Data');
+}
+
+function mergeHomepageIssueData(previous, generated) {
+  const safePrevious = previous && typeof previous === 'object' && !Array.isArray(previous) ? previous : {};
+  const safeGenerated = generated && typeof generated === 'object' && !Array.isArray(generated) ? generated : {};
+
+  let sections = safePrevious.sections || {};
+
+  // When the current issue changes, reset the latest-published section to auto
+  // mode (empty array) so it no longer shows articles from the previous issue.
+  const prevIssue = safePrevious.currentIssue || {};
+  const genIssue = safeGenerated.currentIssue || {};
+  const issueChanged =
+    (genIssue.volume || genIssue.issue) &&
+    (String(prevIssue.volume) !== String(genIssue.volume) ||
+      String(prevIssue.issue) !== String(genIssue.issue));
+  if (issueChanged) {
+    sections = { ...sections, 'latest-published': [] };
+  }
+
+  return {
+    ...safePrevious,
+    ...safeGenerated,
+    sections,
+  };
 }
 
 function readAuthorMetadata() {
@@ -278,6 +337,8 @@ module.exports = {
   writeJsonFile,
   readArticles,
   writeArticles,
+  enforceSingleFeaturedForIssue,
+  normalizeFeaturedArticles,
   readArticlesInPress,
   writeArticlesInPress,
   readArchiveIssues,
@@ -290,6 +351,7 @@ module.exports = {
   writeNews,
   readHomepageData,
   writeHomepageData,
+  mergeHomepageIssueData,
   readAuthorMetadata,
   writeAuthorMetadata,
   readVolumeJson,

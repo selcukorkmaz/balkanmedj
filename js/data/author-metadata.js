@@ -1,6 +1,6 @@
 /**
  * Balkan Medical Journal — Author Metadata
- * Last updated: 2026-06-11
+ * Last updated: 2026-06-19
  */
 window.AUTHOR_METADATA = {
   "3": {
@@ -30396,6 +30396,19 @@ window.AUTHOR_METADATA = {
       "published": ""
     }
   },
+  "2774": {
+    "correspondingName": "Leyla Özer",
+    "correspondingAffiliation": "Department of Gastrointestinal Oncology Unit  Acıbadem University Atakent Hospital, İstanbul, Türkiye",
+    "email": "leylahmet@gmail.com",
+    "orcidByName": {
+      "Mirac Ajredini": "0000-0002-6795-2351",
+      "Arda Ulaş Mutlu": "0000-0001-7499-7155",
+      "Sibel Erdamar Çetin": "0000-0001-7470-8835",
+      "Rümeysa Atabey": "0000-0001-8601-243X",
+      "Erman Aytaç": "0000-0002-8803-0874",
+      "Leyla Özer": "0000-0003-4092-5051"
+    }
+  },
   "2777": {
     "correspondingName": "Pan Zhipeng",
     "correspondingAffiliation": "School of Medical Technology and Engineering of Fujian Medical University; Key Laboratory of Clinical Laboratory Technology for Precision Medicine Fujian Province University, Fujian, China",
@@ -30473,6 +30486,16 @@ window.AUTHOR_METADATA = {
       "publishedOnline": "",
       "publishedInIssue": "",
       "published": ""
+    }
+  },
+  "2782": {
+    "correspondingName": "Jianhui Liu",
+    "correspondingAffiliation": "Department of Anesthesiology,  Tongji Hospital, Tongji University School of Medicine, Shanghai, China",
+    "email": "jianhuiliu_1246@163.com",
+    "orcidByName": {
+      "Jiayong Hu": "0000-0002-4199-0579",
+      "Yuyao Zhu": "0009-0004-6570-5375",
+      "Jianhui Liu": "0000-0002-8335-0078"
     }
   },
   "2783": {
@@ -30644,6 +30667,15 @@ window.AUTHOR_METADATA = {
       "published": ""
     }
   },
+  "2793": {
+    "correspondingName": "Xiaoli Wang",
+    "correspondingAffiliation": "Department of Endocrinology and Metabolism,  Institute of Endocrinology, NHC Key Laboratory of Diagnosis and Treatment of Thyroid Diseases, The First Hospital of China Medical University, Shenyang, China",
+    "email": "wlittlepear@163.com",
+    "orcidByName": {
+      "Jing Luo": "0009-0005-5443-5696",
+      "Xiaoli Wang": "0000-0002-9388-0734"
+    }
+  },
   "2794": {
     "correspondingName": "Zehra Manav Yiğit",
     "correspondingAffiliation": "Department of Medical Genetics, Aydın Adnan Menderes University Faculty of Medicine, Aydın, Türkiye",
@@ -30711,6 +30743,15 @@ window.AUTHOR_METADATA = {
     "correspondingAffiliation": "",
     "email": "",
     "orcidByName": {}
+  },
+  "2802": {
+    "correspondingName": "Elena Sánchez Marcos",
+    "correspondingAffiliation": "Department of Paediatrics  Hospital Universitario de Fuenlabrada, Madrid, Spain",
+    "email": "elenasanmar1092@gmail.com",
+    "orcidByName": {
+      "Rocío Egido García-Comendador": "0009-0006-4040-5397",
+      "Elena Sánchez Marcos": "0000-0003-4322-4154"
+    }
   },
   "2804": {
     "correspondingName": "Servet Altay",
@@ -30831,6 +30872,15 @@ window.AUTHOR_METADATA = {
       "Nihan Bahadır": "0000-0001-6130-1884"
     }
   },
+  "2812": {
+    "correspondingName": "Xue-Jun Wu",
+    "correspondingAffiliation": "Deparment of Pediatrics  Linyi People’s Hospital, Linyi, China",
+    "email": "wxj9759@163.com",
+    "orcidByName": {
+      "Zhong-Qiang Li": "0009-0000-1023-2620",
+      "Xue-Jun Wu": "0009-0006-1424-4411"
+    }
+  },
   "2813": {
     "correspondingName": "",
     "correspondingAffiliation": "",
@@ -30917,6 +30967,20 @@ window.AUTHOR_METADATA = {
       "publishedOnline": "",
       "publishedInIssue": "",
       "published": ""
+    }
+  },
+  "2825": {
+    "correspondingName": "Feng Qi",
+    "correspondingAffiliation": "Department of General Surgery,  Tianjin Medical University General Hospital, Tianjin, China; Tianjin Key Laboratory of Precise Vascular Reconstruction and Organ Function Repair,  Tianjin, China",
+    "email": "fengqi01@tmu.edu.cn",
+    "orcidByName": {
+      "Guo-Shan Chen": "0009-0002-8108-4375",
+      "Wen-Hao Xiong": "0009-0006-6506-9916",
+      "Dan-Zhou Li": "0009-0006-4184-6864",
+      "Peng-Hui Zhang": "0009-0007-0764-2793",
+      "Yi-Ting Wang": "0009-0004-6783-3362",
+      "Yong-Chao Zhang": "0009-0004-1034-6977",
+      "Feng Qi": "0000-0001-5490-0985"
     }
   },
   "2827": {
@@ -31240,6 +31304,146 @@ window.AUTHOR_METADATA = {
       "Ulvi Mirzoyev": "0009-0009-0421-2581",
       "Cecilia Linde": "0000-0002-9039-6023",
       "Thomas F. Lüscher": "0000-0002-5259-538X"
+    }
+  },
+  "2872": {
+    "correspondingName": "Tuğba Şişmanlar Eyüboğlu",
+    "correspondingAffiliation": "Department of Pediatric Pulmonology,  Gazi University Faculty of Medicine, Ankara, Türkiye",
+    "email": "sismanlar@yahoo.com/tugbaeyuboglu@gazi.edu.tr",
+    "orcidByName": {
+      "Handan Kekeç": "0000-0001-8770-0939",
+      "Tuğba Şişmanlar Eyüboğlu": "0000-0001-7284-4999",
+      "Ayşe Tana Aslan": "0000-0002-5360-8517",
+      "Volkan Medeni": "0000-0002-2544-5781",
+      "Fazılcan Zirek": "0000-0002-2146-9284",
+      "Mervenur Tekin": "0000-0003-4541-5704",
+      "Figen Gülen": "0000-0002-5431-3913",
+      "İsmail Güzelkaş": "0000-0001-7628-7253",
+      "Sanem Eryılmaz Polat": "0000-0003-2309-7952",
+      "Ayça Kıykım": "0000-0001-5821-3963",
+      "Sinem Can Oksay": "0000-0001-9801-3181",
+      "Abdurrahman Erdem Başaran": "0000-0002-9092-6936",
+      "Ali Ersoy": "0000-0002-7967-6577",
+      "Ela Erdem Eralp": "0000-0001-8829-3431",
+      "Gökçen Ünal": "0000-0002-4380-7643",
+      "Beste Özsezen": "0000-0002-0052-8361",
+      "Gökçen Kartal Öztürk": "0000-0002-0793-9710",
+      "Melih Hangül": "0000-0001-6226-0340",
+      "Mina Hızal": "0000-0002-6922-4948",
+      "Cansu Yılmaz Yeğit": "0000-0001-8239-4776",
+      "Halime Nayır Büyükşahin": "0000-0002-6909-7993",
+      "Füsün Ünal": "0000-0002-2938-6512",
+      "Tuğba Ramaslı Gürsoy": "0000-0002-7064-7585",
+      "Ayşe Ayzıt Kılınç Sakallı": "0000-0002-2879-8910",
+      "Sevgi Pekcan": "0000-0002-8059-902X",
+      "Nazan Çobanoğlu": "0000-0002-3686-2927",
+      "Güzin Cinel": "0000-0002-6209-196X",
+      "Yasemin Gökdemir": "0000-0002-0853-7932",
+      "Saniye Girit": "0000-0001-7556-6568",
+      "Ebru Yalçın": "0000-0001-9904-8001",
+      "Nagehan Emiralioğlu": "0000-0002-1405-8401",
+      "Ahmet Cevdet Ceylan": "0000-0003-4938-3420",
+      "Diclehan Orhan": "0000-0003-3637-5392",
+      "Berna Oğuz": "0000-0003-0399-3741",
+      "Nural Kiper": "0000-0003-1261-7393"
+    }
+  },
+  "2873": {
+    "correspondingName": "Feng Qi",
+    "correspondingAffiliation": "Department of General Surgery,  Tianjin Medical University General Hospital, Tianjin, China; Tianjin Key Laboratory of Precise Vascular Reconstruction and Organ Function Repair,  Tianjin, China",
+    "email": "fengqi01@tmu.edu.cn",
+    "orcidByName": {
+      "Guo-Shan Chen": "0009-0002-8108-4375",
+      "Wen-Hao Xiong": "0009-0006-6506-9916",
+      "Dan-Zhou Li": "0009-0006-4184-6864",
+      "Peng-Hui Zhang": "0009-0007-0764-2793",
+      "Yi-Ting Wang": "0009-0004-6783-3362",
+      "Yong-Chao Zhang": "0009-0004-1034-6977",
+      "Feng Qi": "0000-0001-5490-0985"
+    }
+  },
+  "2874": {
+    "correspondingName": "Rıza Madazlı",
+    "correspondingAffiliation": "Department of Obstetrics and Gynecology,  İstanbul University-Cerrahpaşa, Cerrahpaşa Faculty of Medicine, İstanbul, Türkiye",
+    "email": "riza.madazli@iuc.edu.tr",
+    "orcidByName": {
+      "Görkem Arıca": "0000-0003-1074-8197",
+      "İsmail Yılmaz": "0000-0002-5083-6987",
+      "Doğu Küçüksüleymanoğlu": "0009-0008-1240-9387",
+      "Didem Kaymak": "0000-0002-2755-1932",
+      "Ebru Alıcı Davutoğlu": "0000-0003-1634-0117",
+      "Rıza Madazlı": "0000-0002-6400-1964"
+    }
+  },
+  "2875": {
+    "correspondingName": "Elena Sánchez Marcos",
+    "correspondingAffiliation": "Department of Paediatrics  Hospital Universitario de Fuenlabrada, Madrid, Spain",
+    "email": "elenasanmar1092@gmail.com",
+    "orcidByName": {
+      "Rocío Egido García-Comendador": "0009-0006-4040-5397",
+      "Elena Sánchez Marcos": "0000-0003-4322-4154"
+    }
+  },
+  "2876": {
+    "correspondingName": "Xue-Jun Wu",
+    "correspondingAffiliation": "Deparment of Pediatrics  Linyi People’s Hospital, Linyi, China",
+    "email": "wxj9759@163.com",
+    "orcidByName": {
+      "Zhong-Qiang Li": "0009-0000-1023-2620",
+      "Xue-Jun Wu": "0009-0006-1424-4411"
+    }
+  },
+  "2877": {
+    "correspondingName": "Xiaoli Wang",
+    "correspondingAffiliation": "Department of Endocrinology and Metabolism,  Institute of Endocrinology, NHC Key Laboratory of Diagnosis and Treatment of Thyroid Diseases, The First Hospital of China Medical University, Shenyang, China",
+    "email": "wlittlepear@163.com",
+    "orcidByName": {
+      "Jing Luo": "0009-0005-5443-5696",
+      "Xiaoli Wang": "0000-0002-9388-0734"
+    }
+  },
+  "2878": {
+    "correspondingName": "Jianhui Liu",
+    "correspondingAffiliation": "Department of Anesthesiology,  Tongji Hospital, Tongji University School of Medicine, Shanghai, China",
+    "email": "jianhuiliu_1246@163.com",
+    "orcidByName": {
+      "Jiayong Hu": "0000-0002-4199-0579",
+      "Yuyao Zhu": "0009-0004-6570-5375",
+      "Jianhui Liu": "0000-0002-8335-0078"
+    }
+  },
+  "2879": {
+    "correspondingName": "Leyla Özer",
+    "correspondingAffiliation": "Department of Gastrointestinal Oncology Unit  Acıbadem University Atakent Hospital, İstanbul, Türkiye",
+    "email": "leylahmet@gmail.com",
+    "orcidByName": {
+      "Mirac Ajredini": "0000-0002-6795-2351",
+      "Arda Ulaş Mutlu": "0000-0001-7499-7155",
+      "Sibel Erdamar Çetin": "0000-0001-7470-8835",
+      "Rümeysa Atabey": "0000-0001-8601-243X",
+      "Erman Aytaç": "0000-0002-8803-0874",
+      "Leyla Özer": "0000-0003-4092-5051"
+    }
+  },
+  "2880": {
+    "correspondingName": "Ethem Yıldız",
+    "correspondingAffiliation": "Department of Chest Diseases,  Trakya University Faculty of Medicine, Edirne, Türkiye",
+    "email": "ethemyildiz84@gmail.com",
+    "orcidByName": {
+      "Ethem Yıldız": "0000-0002-4433-4278",
+      "Oğuz Kılınç": "0000-0001-8923-4476",
+      "Çağlar Çuhadaroğlu": "0000-0002-7475-9867"
+    }
+  },
+  "2881": {
+    "correspondingName": "Lu Han",
+    "correspondingAffiliation": "Department of Gynecology and Obstetrics,  Dalian Maternal and Children’s Medical Group, Liaoning, China",
+    "email": "13940801858@163.com",
+    "orcidByName": {
+      "Yunyun Xiao": "0000-0002-3824-3716",
+      "Jinhe Shi": "0009-0003-7082-9180",
+      "Yan Dong": "0000-0002-7358-7899",
+      "Lu Han": "0000-0003-4715-5512"
     }
   }
 };

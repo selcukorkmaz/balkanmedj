@@ -1,8 +1,28 @@
 /**
  * Balkan Medical Journal — News & Announcements
- * Last updated: 2026-06-18
+ * Last updated: 2026-06-19
  */
 window.NEWS = [
+  {
+    "id": 168,
+    "featured": true,
+    "title": "Balkan Medical Journal Maintains Its Q1 Position in the 2025 Journal Impact Factor Results",
+    "excerpt": "According to the 2025 Journal Impact Factor results announced in Clarivate Journal Citation Reports, Balkan Medical Journal has achieved a Journal Impact Factor of 4.5.",
+    "content": "<!--StartFragment--><div style=\"font-size: 12pt; color: rgb(0, 0, 0)\">\n\tAccording to the 2025 Journal Impact Factor results announced in \nClarivate Journal Citation Reports, Balkan Medical Journal has achieved a\n Journal Impact Factor of 4.5.</div>\n<div style=\"font-size: 12pt; color: rgb(0, 0, 0)\">\n\tThe journal ranked 49th in the Medicine, General &amp; Internal category and maintained its strong position in Q1.</div>\n<div style=\"font-size: 12pt; color: rgb(0, 0, 0)\">\n\tWe sincerely thank our Editor-in-Chief, Editorial Board members, \nreviewers, authors, readers, and all researchers who have cited the \narticles published in Balkan Medical Journal for their valuable \ncontributions to this achievement.</div>\n<div style=\"font-size: 12pt; color: rgb(0, 0, 0)\">\n\tAs Balkan Medical Journal, we will continue to strengthen our \ninternational visibility, scientific impact, and publication quality \nwith determination.</div><!--EndFragment-->",
+    "category": "News",
+    "date": "2026-06-19",
+    "image": ""
+  },
+  {
+    "id": 167,
+    "featured": true,
+    "title": "Scopus CiteScore 2025 Announcement",
+    "excerpt": "We are pleased to announce that, according to the 2025 Scopus data, Balkan Medical Journal has achieved a CiteScore of 5. This reflects the journal’s continued commitment to publishing high-quality, impactful research in the field of general medicine.",
+    "content": "We are pleased to announce that, according to the 2025 Scopus data, Balkan Medical Journal has achieved a CiteScore of 5. This reflects the journal’s continued commitment to publishing high-quality, impactful research in the field of general medicine.",
+    "category": "News",
+    "date": "2026-06-19",
+    "image": ""
+  },
   {
     "id": 166,
     "featured": true,

@@ -1,9 +1,9 @@
 /**
  * Balkan Medical Journal — Homepage Data
- * Last updated: 2026-06-18
+ * Last updated: 2026-06-19
  */
 window.HOMEPAGE_DATA = {
-  "generatedAt": "2026-06-11",
+  "generatedAt": "2026-06-19",
   "currentIssue": {
     "volume": 43,
     "issue": "6",
@@ -11,48 +11,42 @@ window.HOMEPAGE_DATA = {
   },
   "featuredArticles": [
     {
-      "id": 2861,
-      "type": "Editorial",
-      "title": "The Strong Get Stronger: The Matthew Effect in Academic Publishing",
+      "id": 2862,
+      "type": "Invited Review",
+      "title": "Contrast Media Side Effects and Kounis Syndrome: Timeo Danaos et Dona Ferentes",
       "authors": [
         {
-          "name": "Selçuk Korkmaz"
+          "name": "Nicholas G. Kounis"
         },
         {
-          "name": "Servet Altay"
-        }
-      ],
-      "doi": "10.4274/balkanmedj.galenos.2026.2026.150426",
-      "volume": 43,
-      "issue": "6",
-      "pages": "294-296",
-      "published": "2026-06-01",
-      "previewText": "",
-      "imageUrl": "images/330-342-f3.png"
-    }
-  ],
-  "imageCornerArticles": [
-    {
-      "id": 2861,
-      "type": "Editorial",
-      "title": "The Strong Get Stronger: The Matthew Effect in Academic Publishing",
-      "authors": [
-        {
-          "name": "Selçuk Korkmaz"
+          "name": "Ming-Yow Hung"
         },
         {
-          "name": "Servet Altay"
+          "name": "Alexandr Ceasovschih"
+        },
+        {
+          "name": "Cesare de Gregorio"
+        },
+        {
+          "name": "Anastasia Mavromati"
+        },
+        {
+          "name": "Marta Bernaola"
+        },
+        {
+          "name": "Ioanna Koniari"
         }
       ],
-      "doi": "10.4274/balkanmedj.galenos.2026.2026.150426",
+      "doi": "10.4274/balkanmedj.galenos.2026.2026-3-89",
       "volume": 43,
       "issue": "6",
-      "pages": "294-296",
+      "pages": "297-308",
       "published": "2026-06-01",
-      "previewText": "",
-      "imageUrl": "images/330-342-f3.png"
+      "previewText": "Kounis syndrome is defined as the occurrence of acute coronary events in the setting of allergic, hypersensitivity, or anaphylactic reactions. It is mediated by mast cell activation and the interaction of inflammatory cells, including T lymphocytes and macrophages. This process leads to the release of multiple inflammatory mediators, such as platelet-activat",
+      "imageUrl": ""
     }
   ],
+  "imageCornerArticles": [],
   "mostCitedArticles": [
     {
       "id": 2811,
@@ -150,7 +144,7 @@ window.HOMEPAGE_DATA = {
       "pages": "343-344",
       "published": "2026-06-01",
       "previewText": "",
-      "imageUrl": ""
+      "imageUrl": "images/343-344-f1.png"
     },
     {
       "id": 2865,
@@ -282,7 +276,7 @@ window.HOMEPAGE_DATA = {
       "pages": "343-344",
       "published": "2026-06-01",
       "previewText": "",
-      "imageUrl": ""
+      "imageUrl": "images/343-344-f1.png"
     },
     {
       "id": 2865,
@@ -462,5 +456,41 @@ window.HOMEPAGE_DATA = {
       "imageUrl": "images/330-342-f3.png"
     }
   ],
-  "sections": {}
+  "sections": {
+    "latest-published": [],
+    "articles-in-press": [],
+    "top-cited": [],
+    "most-downloaded": [],
+    "image-corner": [
+      2839,
+      2876
+    ],
+    "latest-news": []
+  },
+  "popup": {
+    "enabled": true,
+    "delayMs": 700,
+    "frequency": "session",
+    "dismissHours": 24,
+    "updatedAt": "2026-06-19T06:16:59.244Z",
+    "items": [
+      {
+        "id": "popup-item-1781784565149-j3d4z",
+        "active": true,
+        "type": "announcement",
+        "badge": "NEWS",
+        "title": "",
+        "body": "",
+        "imageUrl": "images/31d27100-56cc-4cd5-a202-a7432982450e.JPG",
+        "videoUrl": "",
+        "posterUrl": "",
+        "embedUrl": "",
+        "buttonText": "",
+        "buttonUrl": "",
+        "openInNewTab": true,
+        "startsAt": "",
+        "endsAt": ""
+      }
+    ]
+  }
 };

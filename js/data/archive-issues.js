@@ -1,6 +1,6 @@
 /**
  * Balkan Medical Journal — Archive Issues
- * Last updated: 2026-06-11
+ * Last updated: 2026-06-19
  */
 window.ARCHIVE_ISSUES = [
   {
@@ -14,6 +14,27 @@ window.ARCHIVE_ISSUES = [
         "volume": 43,
         "issue": "6",
         "articleCount": 10,
+        "hasLocalData": true,
+        "coverPdf": {
+          "url": "js/data/issue-pdfs/vol43-6-cover.pdf",
+          "originalName": "all-cover.pdf",
+          "size": 204652,
+          "uploadedAt": "2026-06-19T13:14:25.855Z"
+        },
+        "fullPdf": {
+          "url": "js/data/issue-pdfs/vol43-6-full.pdf",
+          "originalName": "full.pdf",
+          "size": 15801672,
+          "uploadedAt": "2026-06-19T13:14:43.290Z"
+        }
+      },
+      {
+        "label": "Volume 43, Issue 5",
+        "sourceId": "",
+        "sourceUrl": "",
+        "volume": 43,
+        "issue": "5",
+        "articleCount": 10,
         "hasLocalData": true
       },
       {
@@ -22,6 +43,15 @@ window.ARCHIVE_ISSUES = [
         "sourceUrl": "",
         "volume": 43,
         "issue": "4",
+        "articleCount": 10,
+        "hasLocalData": true
+      },
+      {
+        "label": "Volume 43, Issue 3",
+        "sourceId": "",
+        "sourceUrl": "",
+        "volume": 43,
+        "issue": "3",
         "articleCount": 10,
         "hasLocalData": true
       },

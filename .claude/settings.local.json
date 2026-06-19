@@ -222,7 +222,22 @@
       "Bash(ls node_modules/puppeteer/package.json)",
       "Bash(node -e \"console.log\\('chrome?', require\\('puppeteer'\\).executablePath?require\\('puppeteer'\\).executablePath\\(\\):'n/a'\\)\")",
       "Bash(BMJ_TEST_BYPASS_AUTH=1 PORT=3098 node server.js)",
-      "Bash(powershell -Command 'Get-NetTCPConnection -LocalPort 3098 -State Listen -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique | ForEach-Object { Stop-Process -Id $_ -Force }')"
+      "Bash(powershell -Command 'Get-NetTCPConnection -LocalPort 3098 -State Listen -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique | ForEach-Object { Stop-Process -Id $_ -Force }')",
+      "Bash(awk -F: '$1>1047 && $1<1640')",
+      "Bash(npx kill-port *)",
+      "Bash(Start-Sleep -Seconds 1)",
+      "Bash(Start-Sleep -Seconds 3)",
+      "WebFetch(domain:galenos.com.tr)",
+      "WebFetch(domain:doi.org)",
+      "PowerShell(python -c \"import sys; print\\(sys.version\\)\")",
+      "PowerShell(python -c \"import pypdf; print\\('pypdf ok'\\)\" 2>&1; python -c \"import pdfminer; print\\('pdfminer ok'\\)\" 2>&1; python -c \"import fitz; print\\('PyMuPDF ok'\\)\" 2>&1)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Selçuk\\\\Documents\\\\GitHub\\\\balkanmedj\\\\js\\\\data\\\\pdfs\" | Where-Object { $_.Name -match \"^28[89]\\\\d\\\\.pdf$\" -or $_.Name -eq \"2900.pdf\" } | Sort-Object Name | Select-Object Name, @{N=\"KB\";E={[math]::Round\\($_.Length/1KB,1\\)}})",
+      "PowerShell(python -c \"import pdfplumber; print\\('pdfplumber ok'\\)\" 2>&1)",
+      "PowerShell(python -c \"import pypdf; print\\('pypdf ok'\\)\" 2>&1)",
+      "PowerShell(python -c \"import fitz; print\\('pymupdf ok'\\)\" 2>&1)",
+      "Bash(python _extract_fulltext.py)",
+      "Bash(python)",
+      "Bash(taskkill *)"
     ]
   }
 }

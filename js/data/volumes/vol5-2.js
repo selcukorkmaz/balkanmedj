@@ -48,7 +48,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=719",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=719",
     "localPdfUrl": "js/data/pdfs/719.pdf",
-    "pdfUrl": "js/data/pdfs/719.pdf"
+    "pdfUrl": "js/data/pdfs/719.pdf",
+    "pmid": ""
   },
   {
     "id": 720,
@@ -99,7 +100,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=720",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=720",
     "localPdfUrl": "js/data/pdfs/720.pdf",
-    "pdfUrl": "js/data/pdfs/720.pdf"
+    "pdfUrl": "js/data/pdfs/720.pdf",
+    "pmid": ""
   },
   {
     "id": 721,
@@ -135,7 +137,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=721",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=721",
     "localPdfUrl": "js/data/pdfs/721.pdf",
-    "pdfUrl": "js/data/pdfs/721.pdf"
+    "pdfUrl": "js/data/pdfs/721.pdf",
+    "pmid": ""
   },
   {
     "id": 723,
@@ -186,7 +189,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=723",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=723",
     "localPdfUrl": "js/data/pdfs/723.pdf",
-    "pdfUrl": "js/data/pdfs/723.pdf"
+    "pdfUrl": "js/data/pdfs/723.pdf",
+    "pmid": ""
   },
   {
     "id": 724,
@@ -237,7 +241,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=724",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=724",
     "localPdfUrl": "js/data/pdfs/724.pdf",
-    "pdfUrl": "js/data/pdfs/724.pdf"
+    "pdfUrl": "js/data/pdfs/724.pdf",
+    "pmid": ""
   },
   {
     "id": 725,
@@ -293,7 +298,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=725",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=725",
     "localPdfUrl": "js/data/pdfs/725.pdf",
-    "pdfUrl": "js/data/pdfs/725.pdf"
+    "pdfUrl": "js/data/pdfs/725.pdf",
+    "pmid": ""
   },
   {
     "id": 727,
@@ -349,7 +355,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=727",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=727",
     "localPdfUrl": "js/data/pdfs/727.pdf",
-    "pdfUrl": "js/data/pdfs/727.pdf"
+    "pdfUrl": "js/data/pdfs/727.pdf",
+    "pmid": ""
   },
   {
     "id": 728,
@@ -405,7 +412,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=728",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=728",
     "localPdfUrl": "js/data/pdfs/728.pdf",
-    "pdfUrl": "js/data/pdfs/728.pdf"
+    "pdfUrl": "js/data/pdfs/728.pdf",
+    "pmid": ""
   },
   {
     "id": 729,
@@ -471,7 +479,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=729",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=729",
     "localPdfUrl": "js/data/pdfs/729.pdf",
-    "pdfUrl": "js/data/pdfs/729.pdf"
+    "pdfUrl": "js/data/pdfs/729.pdf",
+    "pmid": ""
   },
   {
     "id": 731,
@@ -522,7 +531,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=731",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=731",
     "localPdfUrl": "js/data/pdfs/731.pdf",
-    "pdfUrl": "js/data/pdfs/731.pdf"
+    "pdfUrl": "js/data/pdfs/731.pdf",
+    "pmid": ""
   },
   {
     "id": 732,
@@ -568,7 +578,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=732",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=732",
     "localPdfUrl": "js/data/pdfs/732.pdf",
-    "pdfUrl": "js/data/pdfs/732.pdf"
+    "pdfUrl": "js/data/pdfs/732.pdf",
+    "pmid": ""
   },
   {
     "id": 733,
@@ -629,7 +640,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=733",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=733",
     "localPdfUrl": "js/data/pdfs/733.pdf",
-    "pdfUrl": "js/data/pdfs/733.pdf"
+    "pdfUrl": "js/data/pdfs/733.pdf",
+    "pmid": ""
   },
   {
     "id": 735,
@@ -675,7 +687,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=735",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=735",
     "localPdfUrl": "js/data/pdfs/735.pdf",
-    "pdfUrl": "js/data/pdfs/735.pdf"
+    "pdfUrl": "js/data/pdfs/735.pdf",
+    "pmid": ""
   },
   {
     "id": 736,
@@ -711,7 +724,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=736",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=736",
     "localPdfUrl": "js/data/pdfs/736.pdf",
-    "pdfUrl": "js/data/pdfs/736.pdf"
+    "pdfUrl": "js/data/pdfs/736.pdf",
+    "pmid": ""
   },
   {
     "id": 737,
@@ -762,7 +776,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=737",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=737",
     "localPdfUrl": "js/data/pdfs/737.pdf",
-    "pdfUrl": "js/data/pdfs/737.pdf"
+    "pdfUrl": "js/data/pdfs/737.pdf",
+    "pmid": ""
   },
   {
     "id": 738,
@@ -813,7 +828,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=738",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=738",
     "localPdfUrl": "js/data/pdfs/738.pdf",
-    "pdfUrl": "js/data/pdfs/738.pdf"
+    "pdfUrl": "js/data/pdfs/738.pdf",
+    "pmid": ""
   },
   {
     "id": 740,
@@ -849,7 +865,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=740",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=740",
     "localPdfUrl": "js/data/pdfs/740.pdf",
-    "pdfUrl": "js/data/pdfs/740.pdf"
+    "pdfUrl": "js/data/pdfs/740.pdf",
+    "pmid": ""
   },
   {
     "id": 741,
@@ -885,7 +902,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=741",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=741",
     "localPdfUrl": "js/data/pdfs/741.pdf",
-    "pdfUrl": "js/data/pdfs/741.pdf"
+    "pdfUrl": "js/data/pdfs/741.pdf",
+    "pmid": ""
   },
   {
     "id": 742,
@@ -936,7 +954,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=742",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=742",
     "localPdfUrl": "js/data/pdfs/742.pdf",
-    "pdfUrl": "js/data/pdfs/742.pdf"
+    "pdfUrl": "js/data/pdfs/742.pdf",
+    "pmid": ""
   },
   {
     "id": 743,
@@ -997,7 +1016,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=743",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=743",
     "localPdfUrl": "js/data/pdfs/743.pdf",
-    "pdfUrl": "js/data/pdfs/743.pdf"
+    "pdfUrl": "js/data/pdfs/743.pdf",
+    "pmid": ""
   },
   {
     "id": 745,
@@ -1048,7 +1068,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=745",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=745",
     "localPdfUrl": "js/data/pdfs/745.pdf",
-    "pdfUrl": "js/data/pdfs/745.pdf"
+    "pdfUrl": "js/data/pdfs/745.pdf",
+    "pmid": ""
   },
   {
     "id": 746,
@@ -1109,7 +1130,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=746",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=746",
     "localPdfUrl": "js/data/pdfs/746.pdf",
-    "pdfUrl": "js/data/pdfs/746.pdf"
+    "pdfUrl": "js/data/pdfs/746.pdf",
+    "pmid": ""
   },
   {
     "id": 748,
@@ -1155,7 +1177,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=748",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=748",
     "localPdfUrl": "js/data/pdfs/748.pdf",
-    "pdfUrl": "js/data/pdfs/748.pdf"
+    "pdfUrl": "js/data/pdfs/748.pdf",
+    "pmid": ""
   },
   {
     "id": 749,
@@ -1201,7 +1224,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=749",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=749",
     "localPdfUrl": "js/data/pdfs/749.pdf",
-    "pdfUrl": "js/data/pdfs/749.pdf"
+    "pdfUrl": "js/data/pdfs/749.pdf",
+    "pmid": ""
   },
   {
     "id": 750,
@@ -1252,7 +1276,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=750",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=750",
     "localPdfUrl": "js/data/pdfs/750.pdf",
-    "pdfUrl": "js/data/pdfs/750.pdf"
+    "pdfUrl": "js/data/pdfs/750.pdf",
+    "pmid": ""
   },
   {
     "id": 751,
@@ -1298,7 +1323,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=751",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=751",
     "localPdfUrl": "js/data/pdfs/751.pdf",
-    "pdfUrl": "js/data/pdfs/751.pdf"
+    "pdfUrl": "js/data/pdfs/751.pdf",
+    "pmid": ""
   },
   {
     "id": 752,
@@ -1339,7 +1365,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=752",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=752",
     "localPdfUrl": "js/data/pdfs/752.pdf",
-    "pdfUrl": "js/data/pdfs/752.pdf"
+    "pdfUrl": "js/data/pdfs/752.pdf",
+    "pmid": ""
   },
   {
     "id": 753,
@@ -1395,7 +1422,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=753",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=753",
     "localPdfUrl": "js/data/pdfs/753.pdf",
-    "pdfUrl": "js/data/pdfs/753.pdf"
+    "pdfUrl": "js/data/pdfs/753.pdf",
+    "pmid": ""
   },
   {
     "id": 754,
@@ -1466,7 +1494,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=754",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=754",
     "localPdfUrl": "js/data/pdfs/754.pdf",
-    "pdfUrl": "js/data/pdfs/754.pdf"
+    "pdfUrl": "js/data/pdfs/754.pdf",
+    "pmid": ""
   },
   {
     "id": 756,
@@ -1512,7 +1541,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=756",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=756",
     "localPdfUrl": "js/data/pdfs/756.pdf",
-    "pdfUrl": "js/data/pdfs/756.pdf"
+    "pdfUrl": "js/data/pdfs/756.pdf",
+    "pmid": ""
   },
   {
     "id": 757,
@@ -1558,7 +1588,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=757",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=757",
     "localPdfUrl": "js/data/pdfs/757.pdf",
-    "pdfUrl": "js/data/pdfs/757.pdf"
+    "pdfUrl": "js/data/pdfs/757.pdf",
+    "pmid": ""
   },
   {
     "id": 758,
@@ -1614,7 +1645,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=758",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=758",
     "localPdfUrl": "js/data/pdfs/758.pdf",
-    "pdfUrl": "js/data/pdfs/758.pdf"
+    "pdfUrl": "js/data/pdfs/758.pdf",
+    "pmid": ""
   },
   {
     "id": 760,
@@ -1661,8 +1693,8 @@ window.PAGE_ARTICLES = [
     "views": 33264,
     "downloads": 1609,
     "citations": 0,
-    "featured": false,
-    "imageCorner": false,
+    "featured": true,
+    "imageCorner": true,
     "hasFullText": false,
     "sourceIssueId": "1109",
     "sourceArticleId": "760",
@@ -1670,7 +1702,11 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=760",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=760",
     "localPdfUrl": "js/data/pdfs/760.pdf",
-    "pdfUrl": "js/data/pdfs/760.pdf"
+    "pdfUrl": "js/data/pdfs/760.pdf",
+    "pmid": "",
+    "imageUrl": "images/297-308-t1.jpg",
+    "supplementary": [],
+    "externalLinks": []
   },
   {
     "id": 761,
@@ -1716,7 +1752,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=761",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=761",
     "localPdfUrl": "js/data/pdfs/761.pdf",
-    "pdfUrl": "js/data/pdfs/761.pdf"
+    "pdfUrl": "js/data/pdfs/761.pdf",
+    "pmid": ""
   },
   {
     "id": 762,
@@ -1772,7 +1809,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=762",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=762",
     "localPdfUrl": "js/data/pdfs/762.pdf",
-    "pdfUrl": "js/data/pdfs/762.pdf"
+    "pdfUrl": "js/data/pdfs/762.pdf",
+    "pmid": ""
   },
   {
     "id": 763,
@@ -1823,7 +1861,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=763",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=763",
     "localPdfUrl": "js/data/pdfs/763.pdf",
-    "pdfUrl": "js/data/pdfs/763.pdf"
+    "pdfUrl": "js/data/pdfs/763.pdf",
+    "pmid": ""
   },
   {
     "id": 765,
@@ -1879,7 +1918,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=765",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=765",
     "localPdfUrl": "js/data/pdfs/765.pdf",
-    "pdfUrl": "js/data/pdfs/765.pdf"
+    "pdfUrl": "js/data/pdfs/765.pdf",
+    "pmid": ""
   },
   {
     "id": 767,
@@ -1950,7 +1990,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=767",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=767",
     "localPdfUrl": "js/data/pdfs/767.pdf",
-    "pdfUrl": "js/data/pdfs/767.pdf"
+    "pdfUrl": "js/data/pdfs/767.pdf",
+    "pmid": ""
   },
   {
     "id": 768,
@@ -1991,7 +2032,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=768",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=768",
     "localPdfUrl": "js/data/pdfs/768.pdf",
-    "pdfUrl": "js/data/pdfs/768.pdf"
+    "pdfUrl": "js/data/pdfs/768.pdf",
+    "pmid": ""
   },
   {
     "id": 769,
@@ -2037,7 +2079,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=769",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=769",
     "localPdfUrl": "js/data/pdfs/769.pdf",
-    "pdfUrl": "js/data/pdfs/769.pdf"
+    "pdfUrl": "js/data/pdfs/769.pdf",
+    "pmid": ""
   },
   {
     "id": 770,
@@ -2088,7 +2131,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=770",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=770",
     "localPdfUrl": "js/data/pdfs/770.pdf",
-    "pdfUrl": "js/data/pdfs/770.pdf"
+    "pdfUrl": "js/data/pdfs/770.pdf",
+    "pmid": ""
   },
   {
     "id": 771,
@@ -2134,7 +2178,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=771",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=771",
     "localPdfUrl": "js/data/pdfs/771.pdf",
-    "pdfUrl": "js/data/pdfs/771.pdf"
+    "pdfUrl": "js/data/pdfs/771.pdf",
+    "pmid": ""
   },
   {
     "id": 773,
@@ -2190,7 +2235,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=773",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=773",
     "localPdfUrl": "js/data/pdfs/773.pdf",
-    "pdfUrl": "js/data/pdfs/773.pdf"
+    "pdfUrl": "js/data/pdfs/773.pdf",
+    "pmid": ""
   },
   {
     "id": 774,
@@ -2231,7 +2277,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=774",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=774",
     "localPdfUrl": "js/data/pdfs/774.pdf",
-    "pdfUrl": "js/data/pdfs/774.pdf"
+    "pdfUrl": "js/data/pdfs/774.pdf",
+    "pmid": ""
   },
   {
     "id": 776,
@@ -2272,7 +2319,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=776",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=776",
     "localPdfUrl": "js/data/pdfs/776.pdf",
-    "pdfUrl": "js/data/pdfs/776.pdf"
+    "pdfUrl": "js/data/pdfs/776.pdf",
+    "pmid": ""
   },
   {
     "id": 777,
@@ -2323,7 +2371,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=777",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=777",
     "localPdfUrl": "js/data/pdfs/777.pdf",
-    "pdfUrl": "js/data/pdfs/777.pdf"
+    "pdfUrl": "js/data/pdfs/777.pdf",
+    "pmid": ""
   },
   {
     "id": 778,
@@ -2374,7 +2423,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=778",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=778",
     "localPdfUrl": "js/data/pdfs/778.pdf",
-    "pdfUrl": "js/data/pdfs/778.pdf"
+    "pdfUrl": "js/data/pdfs/778.pdf",
+    "pmid": ""
   },
   {
     "id": 780,
@@ -2410,7 +2460,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=780",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=780",
     "localPdfUrl": "js/data/pdfs/780.pdf",
-    "pdfUrl": "js/data/pdfs/780.pdf"
+    "pdfUrl": "js/data/pdfs/780.pdf",
+    "pmid": ""
   },
   {
     "id": 781,
@@ -2451,7 +2502,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=781",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=781",
     "localPdfUrl": "js/data/pdfs/781.pdf",
-    "pdfUrl": "js/data/pdfs/781.pdf"
+    "pdfUrl": "js/data/pdfs/781.pdf",
+    "pmid": ""
   },
   {
     "id": 783,
@@ -2507,7 +2559,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=783",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=783",
     "localPdfUrl": "js/data/pdfs/783.pdf",
-    "pdfUrl": "js/data/pdfs/783.pdf"
+    "pdfUrl": "js/data/pdfs/783.pdf",
+    "pmid": ""
   },
   {
     "id": 784,
@@ -2548,7 +2601,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=784",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=784",
     "localPdfUrl": "js/data/pdfs/784.pdf",
-    "pdfUrl": "js/data/pdfs/784.pdf"
+    "pdfUrl": "js/data/pdfs/784.pdf",
+    "pmid": ""
   },
   {
     "id": 785,
@@ -2599,7 +2653,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=785",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=785",
     "localPdfUrl": "js/data/pdfs/785.pdf",
-    "pdfUrl": "js/data/pdfs/785.pdf"
+    "pdfUrl": "js/data/pdfs/785.pdf",
+    "pmid": ""
   },
   {
     "id": 787,
@@ -2640,7 +2695,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=787",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=787",
     "localPdfUrl": "js/data/pdfs/787.pdf",
-    "pdfUrl": "js/data/pdfs/787.pdf"
+    "pdfUrl": "js/data/pdfs/787.pdf",
+    "pmid": ""
   },
   {
     "id": 788,
@@ -2686,7 +2742,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=788",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=788",
     "localPdfUrl": "js/data/pdfs/788.pdf",
-    "pdfUrl": "js/data/pdfs/788.pdf"
+    "pdfUrl": "js/data/pdfs/788.pdf",
+    "pmid": ""
   },
   {
     "id": 790,
@@ -2727,7 +2784,8 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=790",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=790",
     "localPdfUrl": "js/data/pdfs/790.pdf",
-    "pdfUrl": "js/data/pdfs/790.pdf"
+    "pdfUrl": "js/data/pdfs/790.pdf",
+    "pmid": ""
   },
   {
     "id": 791,
@@ -2763,6 +2821,7 @@ window.PAGE_ARTICLES = [
     "sourceTextUrl": "https://balkanmedicaljournal.org/text.php?lang=en&id=791",
     "sourcePdfUrl": "https://balkanmedicaljournal.org/pdf.php?&id=791",
     "localPdfUrl": "js/data/pdfs/791.pdf",
-    "pdfUrl": "js/data/pdfs/791.pdf"
+    "pdfUrl": "js/data/pdfs/791.pdf",
+    "pmid": ""
   }
 ];
