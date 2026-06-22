@@ -140,6 +140,19 @@ var FALLBACK_RECIPIENT = 'info@balkanmedicaljournal.org';
           return;
         }
 
+        // FormSubmit one-time activation: the "needs Activation" notice is sent
+        // to the journal inbox (info@…), not to the visitor. Don't alarm the
+        // visitor with a red error — show a neutral notice instead. Once the
+        // owner clicks the activation link this branch never runs again.
+        if (/activat/i.test(msg)) {
+          if (errorEl) errorEl.classList.add('hidden');
+          if (infoEl) {
+            infoEl.textContent = 'Thanks! Newsletter sign-up is being finalized. Please try again shortly.';
+            infoEl.classList.remove('hidden');
+          }
+          return;
+        }
+
         showError(msg);
       });
     })

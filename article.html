@@ -16,6 +16,11 @@
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
   <style>
+    /* Opt out of the global html{scroll-padding-top} (set in style.css): this
+       page computes its own sticky-header offset in JS and applies it via
+       scroll-margin-top on anchor targets. Keeping the global padding too would
+       stack both offsets and push targets too far below the navbar. */
+    html { scroll-padding-top: 0; }
     .author-popover {
       position: relative;
       display: inline-flex;
@@ -1663,7 +1668,7 @@
       <div class="flex items-center justify-between h-24">
         <!-- Logo -->
         <a href="index.html" class="flex items-center space-x-2 flex-shrink-0" aria-label="Balkan Medical Journal Home">
-          <img src="images/logo.png" alt="Balkan Medical Journal" class="h-20 w-auto">
+          <img src="images/logo-nav.png" srcset="images/logo-nav.png 1x, images/logo-nav@2x.png 2x" alt="Balkan Medical Journal" class="h-20 w-auto" width="80" height="80">
         </a>
 
         <!-- Desktop Nav -->
@@ -1850,7 +1855,7 @@
         <div>
           <div class="flex items-center space-x-2 mb-4">
             <div class="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden">
-              <img src="images/logo.png" alt="Balkan Medical Journal" class="h-12 w-12 object-contain">
+              <img src="images/logo-footer.png" srcset="images/logo-footer.png 1x, images/logo-footer@2x.png 2x" alt="Balkan Medical Journal" class="h-12 w-12 object-contain" width="48" height="48">
             </div>
             <div>
               <div class="font-bold text-lg">Balkan Medical Journal</div>

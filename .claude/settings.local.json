@@ -238,7 +238,8 @@
       "Bash(python _extract_fulltext.py)",
       "Bash(python)",
       "Bash(taskkill *)",
-      "Bash(git check-ignore *)"
+      "Bash(git check-ignore *)",
+      "Bash(python -)"
     ]
   }
 }

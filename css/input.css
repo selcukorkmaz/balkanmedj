@@ -25,6 +25,12 @@
 /* Base Styles */
 html {
   scroll-behavior: smooth;
+  /* Sticky-nav offset: when jumping to any in-page anchor (#id), leave room for
+     the fixed/sticky top navigation so the target heading is not hidden beneath
+     it. The main nav is ~6rem tall (5rem on small screens); 7rem clears it with
+     a small breathing gap on every page. article.html opts out (it has its own
+     JS-measured offset) to avoid stacking both offsets. */
+  scroll-padding-top: 7rem;
 }
 
 body {
