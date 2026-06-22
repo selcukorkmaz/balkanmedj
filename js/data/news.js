@@ -1,6 +1,6 @@
 /**
  * Balkan Medical Journal — News & Announcements
- * Last updated: 2026-06-19
+ * Last updated: 2026-06-22
  */
 window.NEWS = [
   {
@@ -21,7 +21,7 @@ window.NEWS = [
     "content": "We are pleased to announce that, according to the 2025 Scopus data, Balkan Medical Journal has achieved a CiteScore of 5. This reflects the journal’s continued commitment to publishing high-quality, impactful research in the field of general medicine.",
     "category": "News",
     "date": "2026-06-19",
-    "image": ""
+    "image": "images/slider_28.jpg"
   },
   {
     "id": 166,
