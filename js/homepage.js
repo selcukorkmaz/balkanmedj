@@ -1083,17 +1083,29 @@
       })
       .catch(function () {});
 
-    return Promise.all([
+    // Render the article cards as soon as LOCAL data (articles + in-press) is
+    // ready. The remote citation map and published-online date map are slow
+    // external API calls (OpenAlex/Crossref) and are NOT needed for the first
+    // paint — the default "Latest published" tab hides citations and the dates
+    // are a progressive enhancement. Blocking the initial render on them left
+    // this whole section (and the Image Corner below it) visibly empty for
+    // seconds. Instead, paint now and re-render in place as each map resolves.
+    var localDataReady = Promise.all([
       window.BMJLazyData && typeof window.BMJLazyData.loadArticles === 'function'
         ? window.BMJLazyData.loadArticles()
         : Promise.resolve(),
-      ensureArticlesInPressData(),
-      citationMapReady,
-      dateMapReady
+      ensureArticlesInPressData()
     ]).catch(function () {
       // Keep UI functional with whichever data is already available.
-    }).then(function () {
+    });
+
+    return localDataReady.then(function () {
       applyTab(activeKey);
+
+      // Progressive re-render of the active tab as remote enrichment arrives.
+      dateMapReady.then(function () { applyTab(activeKey); });
+      citationMapReady.then(function () { applyTab(activeKey); });
+
       return citationMap;
     });
   }
@@ -1760,7 +1772,14 @@
     var articlesReady = renderArticlesDiscovery(data);
     if (articlesReady && typeof articlesReady.then === 'function') {
       articlesReady.then(function (citationMap) {
+        // articlesReady now resolves once LOCAL data is ready (before the remote
+        // citation map), so paint Image Corner immediately. Then refine its
+        // ordering when the live citation map arrives — fetchTopJournalCitationMap()
+        // is cached, so this reuses the in-flight request rather than issuing one.
         renderImageCorner(data, citationMap || {});
+        fetchTopJournalCitationMap().then(function (map) {
+          renderImageCorner(data, map || {});
+        }).catch(function () {});
       });
     } else {
       renderImageCorner(data, {});

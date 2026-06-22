@@ -237,7 +237,8 @@
       "PowerShell(python -c \"import fitz; print\\('pymupdf ok'\\)\" 2>&1)",
       "Bash(python _extract_fulltext.py)",
       "Bash(python)",
-      "Bash(taskkill *)"
+      "Bash(taskkill *)",
+      "Bash(git check-ignore *)"
     ]
   }
 }
