@@ -160,6 +160,7 @@
   .hero-slide:not(#hero-slide-1) .hero-slide-caption{margin:.05rem 0 .24rem;font-size:1.03rem;line-height:1.25}
   .hero-slide:not(#hero-slide-1) .hero-actions{margin-top:.1rem;gap:.5rem}
   .hero-slide:not(#hero-slide-1) .hero-actions .hero-btn{flex:1 1 calc(50% - .25rem);min-height:2.55rem;padding:.58rem .72rem;font-size:.84rem;justify-content:center}
+  .hero-slide:not(#hero-slide-1) .hero-actions .hero-btn:only-child{flex:0 0 calc(50% - .25rem);align-self:flex-start}
 }
 @media (prefers-reduced-motion:reduce){
   .hero-slide,.hero-btn,.hero-carousel-control,.hero-carousel-indicator{transition:none}
@@ -379,8 +380,8 @@ footer.bg-teal-900.text-white[aria-label="Site footer"] .border-teal-800{
 @media (max-width:47.99rem){.article-body .article-figure[data-size="small"],.article-body .article-table-wrap[data-size="small"]{max-width:80%}.article-body .article-figure[data-size="medium"],.article-body .article-table-wrap[data-size="medium"]{max-width:100%}}
 
 /* Homepage popup */
-.bmj-home-popup-overlay{position:fixed;inset:0;z-index:80;display:flex;align-items:center;justify-content:center;padding:1rem}
-.bmj-home-popup-backdrop{position:absolute;inset:0;background:#02131acc;backdrop-filter:blur(8px)}
+.bmj-home-popup-overlay{position:fixed;inset:0;z-index:80;display:flex;align-items:center;justify-content:center;padding:1rem;isolation:isolate;background:#02131acc;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.bmj-home-popup-backdrop{position:absolute;inset:0;z-index:0}
 .bmj-home-popup-dialog{position:relative;z-index:1;width:min(100%,980px);max-height:min(88vh,820px);border-radius:24px;overflow-x:hidden;overflow-y:auto;background:#fff;box-shadow:0 32px 60px #00000052;animation:bmjPopupIn .22s ease-out;overscroll-behavior:contain}
 .bmj-home-popup-close{position:absolute;top:.9rem;right:.9rem;z-index:2;width:2.5rem;height:2.5rem;border:1px solid #d7e2e7;border-radius:999px;background:#ffffffd9;color:#23404c;font-size:1.45rem;line-height:1;display:inline-flex;align-items:center;justify-content:center}
 .bmj-home-popup-close:hover{background:#fff;color:var(--color-teal-700)}
