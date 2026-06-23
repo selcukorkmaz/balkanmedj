@@ -14,8 +14,7 @@
   <meta name="twitter:title" content="Balkan Medical Journal">
   <meta name="twitter:description" content="Balkan Medical Journal is a diamond open access, peer-reviewed Q1 general medicine journal published by Trakya University. Impact Factor 4.5, CiteScore 5.0.">
   <meta name="twitter:image" content="https://balkanmedicaljournal.org/images/cover/cover1.jpeg">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" sizes="any">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="alternate" type="application/rss+xml" title="Balkan Medical Journal — Latest Articles" href="/rss.xml">
   <link rel="stylesheet" href="css/style.css?v=20260619-popup-media">
@@ -30,10 +29,10 @@
        ══════════════════════════════════════════════════════════ -->
   <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm" aria-label="Main navigation">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-24">
+      <div class="bmj-nav-shell flex items-center justify-between">
         <!-- Logo -->
         <a href="index.html" class="flex items-center space-x-2 flex-shrink-0" aria-label="Balkan Medical Journal Home">
-          <img src="images/logo-nav.png" srcset="images/logo-nav.png 1x, images/logo-nav@2x.png 2x" alt="Balkan Medical Journal" class="h-20 w-auto" width="80" height="80">
+          <img src="images/logo-nav.svg" alt="Balkan Medical Journal" class="bmj-nav-logo" width="80" height="80">
         </a>
 
         <!-- Desktop Nav -->
@@ -81,7 +80,7 @@
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
             <span>Search</span>
           </button>
-          <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center px-4 py-2 bg-red-700 text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors shadow-sm whitespace-nowrap">
+          <a href="manuscript-submission.html" class="hidden sm:inline-flex items-center px-4 py-2 bg-red-700 text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors shadow-sm whitespace-nowrap">
             Submit Manuscript
             <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
           </a>
@@ -142,7 +141,7 @@
       <a href="forms.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">Forms</a>
 
       <div class="pt-4 border-t border-gray-200 mt-4">
-        <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="flex items-center justify-center px-4 py-3 bg-red-700 text-white font-semibold rounded-lg hover:bg-red-800 transition-colors">
+        <a href="manuscript-submission.html" class="flex items-center justify-center px-4 py-3 bg-red-700 text-white font-semibold rounded-lg hover:bg-red-800 transition-colors">
           Submit Manuscript
           <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
         </a>
@@ -184,6 +183,8 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-8">
         <div id="home-hero-carousel" class="hero-carousel" role="region" aria-roledescription="carousel" aria-label="Homepage highlights carousel" tabindex="0" data-autoplay="true" data-interval="6000">
           <div class="hero-carousel-track">
+            
+
             <article id="hero-slide-1" class="hero-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 7">
               <div class="hero-slide-shell">
                 <div class="hero-slide-inner hero-slide-inner-split">
@@ -198,7 +199,7 @@
                         Current Issue
                         <svg class="hero-btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                       </a>
-                      <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="hero-btn hero-btn-primary">
+                      <a href="manuscript-submission.html" class="hero-btn hero-btn-primary">
                         Submit Manuscript
                         <svg class="hero-btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                       </a>
@@ -223,9 +224,7 @@
                   </figure>
                 </div>
               </div>
-            </article>
-
-            <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 7" aria-hidden="true" id="hero-slide-6"><div class="hero-slide-shell"><div class="hero-slide-inner hero-slide-inner-split"><div class="hero-slide-copy"><p class="hero-meta-chip">NEWS</p><h2 class="hero-slide-title">Balkan Medical Journal’s 2025 Impact Factor has been announced.</h2><p class="hero-slide-text">Balkan Medical Journal continues its rise in the Q1 position.</p><div class="hero-actions"><a href="news-article.html?id=166" class="hero-btn hero-btn-secondary">Read News</a></div></div><figure class="hero-cover-figure" aria-hidden="true"><img src="images/31d27100-56cc-4cd5-a202-a7432982450e.JPG" alt="31d27100-56cc-4cd5-a202-a7432982450e" class="hero-cover-image" loading="lazy" decoding="async"></figure></div></div></article><article class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 7" aria-hidden="true" id="hero-slide-7"><div class="hero-slide-shell"><div class="hero-slide-inner hero-slide-inner-split"><div class="hero-slide-copy"><p class="hero-meta-chip">NEWS</p><h2 class="hero-slide-title" spellcheck="false">Stronger Scientific Impact in Scopus</h2><p class="hero-slide-text">Balkan Medical Journal continues to expand its international visibility with a CiteScore of 5.</p><div class="hero-actions" spellcheck="false"><a href="news-article.html?id=167" class="hero-btn hero-btn-secondary">Read News</a></div></div><figure class="hero-cover-figure" aria-hidden="true"><img src="images/slider_28.jpg" alt="slider_28" class="hero-cover-image" loading="lazy" decoding="async"></figure></div></div></article><article id="hero-slide-2" class="hero-slide" role="group" aria-roledescription="slide" aria-label="4 of 7" aria-hidden="true">
+            </article><article class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 7" id="hero-slide-6" aria-hidden="true"><div class="hero-slide-shell"><div class="hero-slide-inner hero-slide-inner-split"><div class="hero-slide-copy"><p class="hero-meta-chip">NEWS</p><h2 class="hero-slide-title">Balkan Medical Journal’s 2025 Impact Factor has been announced.</h2><p class="hero-slide-text">Balkan Medical Journal continues its rise in the Q1 position.</p><div class="hero-actions"><a href="news-article.html?id=166" class="hero-btn hero-btn-secondary">Read News</a></div></div><figure class="hero-cover-figure" aria-hidden="true"><img src="images/31d27100-56cc-4cd5-a202-a7432982450e.JPG" alt="31d27100-56cc-4cd5-a202-a7432982450e" class="hero-cover-image" loading="lazy" decoding="async"></figure></div></div></article><article class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 7" aria-hidden="true" id="hero-slide-7"><div class="hero-slide-shell"><div class="hero-slide-inner hero-slide-inner-split"><div class="hero-slide-copy"><p class="hero-meta-chip">NEWS</p><h2 class="hero-slide-title" spellcheck="false">Scopus CiteScore 2025 Announcement</h2><p class="hero-slide-text">Balkan Medical Journal continues to expand its international visibility with a CiteScore of 5.</p><div class="hero-actions" spellcheck="false"><a href="news-article.html?id=167" class="hero-btn hero-btn-secondary">Read News</a></div></div><figure class="hero-cover-figure" aria-hidden="true"><img src="images/WhatsApp_Image_2026-06-23_at_11.33.45.jpeg" alt="WhatsApp Image 2026-06-23 at 11.33.45" class="hero-cover-image" loading="lazy" decoding="async" style="width: 240px; max-width: 100%; height: auto;"></figure></div></div></article><article id="hero-slide-2" class="hero-slide" role="group" aria-roledescription="slide" aria-label="4 of 7" aria-hidden="true">
               <div class="hero-slide-shell">
                 <div class="hero-slide-inner hero-slide-inner-featured">
                   <div class="hero-slide-copy">
@@ -261,7 +260,7 @@
                       We welcome methodologically robust original research submissions across all fields of medicine. Manuscripts receive rigorous peer review and are published in diamond open access.
                     </p>
                     <div class="hero-actions">
-                      <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="hero-btn hero-btn-primary">Start Submission</a>
+                      <a href="manuscript-submission.html" class="hero-btn hero-btn-primary">Start Submission</a>
                       <a href="for-authors.html" class="hero-btn hero-btn-ghost">Author Guidelines</a>
                     </div>
                   </div>
@@ -273,8 +272,8 @@
               <div class="hero-slide-shell">
                 <div class="hero-slide-inner hero-slide-inner-featured">
                   <div class="hero-slide-copy">
-                    <p class="hero-meta-chip">Editorial Updates</p>
-                    <h2 class="hero-slide-title">Strengthening Editorial Leadership and Review Quality</h2>
+                    <p class="hero-meta-chip">EdItorIal Updates</p>
+                    <h2 class="hero-slide-title" spellcheck="false">Strengthening Editorial Leadership and Review Quality</h2>
                     <p class="hero-slide-text">
                       Meet our editorial board members and explore reviewer resources that support methodological quality, transparent reporting, and ethical publishing.
                     </p>
@@ -296,7 +295,7 @@
               <div class="hero-slide-shell">
                 <div class="hero-slide-inner hero-slide-inner-split">
                   <div class="hero-slide-copy">
-                    <p class="hero-meta-chip">News Announcements</p>
+                    <p class="hero-meta-chip">News</p>
                     <h2 class="hero-slide-title">Welcoming the New Year with Q1 Success</h2>
                     <p class="hero-slide-text">
                       Balkan Medical Journal continues its scientific journey in the Q1 quartile, as reported by Journal Citation Reports (Clarivate).
@@ -524,8 +523,8 @@
         <!-- Brand -->
         <div>
           <div class="flex items-center space-x-2 mb-4">
-            <div class="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden">
-              <img src="images/logo-footer.png" srcset="images/logo-footer.png 1x, images/logo-footer@2x.png 2x" alt="Balkan Medical Journal" class="h-12 w-12 object-contain" width="48" height="48">
+            <div class="bmj-footer-logo-box w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden">
+              <img src="images/logo-footer.svg" alt="Balkan Medical Journal" class="h-12 w-12 object-contain" width="48" height="48">
             </div>
             <div>
               <div class="font-bold text-lg">Balkan Medical Journal</div>

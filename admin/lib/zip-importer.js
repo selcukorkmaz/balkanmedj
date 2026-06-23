@@ -444,6 +444,10 @@ async function importZip(zipPath, options = {}) {
   const imported = [];
   const promoted = [];
   const errors = [];
+  // When an overwrite moves an article to a different (volume, issue), the issue
+  // it left behind must be rebuilt too, otherwise its volume JSON keeps a ghost
+  // copy of the article. "vol|iss" -> { volume, issue, year }.
+  const staleIssues = new Map();
 
   // Parse all XMLs first
   const parsedArticles = [];
@@ -474,19 +478,16 @@ async function importZip(zipPath, options = {}) {
       }
 
       // Check duplicate DOI in published articles.
-      // When overwrite=true and a target issue is specified, articles that already
-      // exist in the SAME volume/issue are updated in place instead of rejected.
-      // Articles in a different issue still generate an error.
+      // When overwrite=true, an existing published article with the same DOI is
+      // updated in place (its id is preserved so links/citations stay valid) —
+      // regardless of which volume/issue it currently lives in. When overwrite is
+      // off the duplicate is rejected so the operator can decide explicitly.
       let existingMainMatch = null;
       if (doiKey) {
         const dup = articles.find((a) => normalizeDoi(a.doi) === doiKey);
         if (dup) {
-          const sameIssue = overwrite &&
-            targetVolume != null && targetIssue != null &&
-            Number(dup.volume) === Number(targetVolume) &&
-            String(dup.issue) === String(targetIssue);
-          if (!sameIssue) {
-            errors.push({ file: xmlInfo.name, error: `DOI zaten yayınlanmış makalelerde mevcut: ${parsed.doi}` });
+          if (!overwrite) {
+            errors.push({ file: xmlInfo.name, error: `DOI zaten yayınlanmış makalelerde mevcut: ${parsed.doi} — güncellemek için "Mevcut makaleleri güncelle" seçeneğini işaretleyin.` });
             continue;
           }
           existingMainMatch = dup;
@@ -505,7 +506,13 @@ async function importZip(zipPath, options = {}) {
       // the same ID (re-import or AIP promotion) so the panel doesn't show
       // ghost files the current XML doesn't reference. PDF / full-text are
       // overwritten in place a few lines below and don't need cleaning.
-      const cleanup = cleanArticleAssets(id);
+      // For a brand-new id (not an overwrite/promotion) that carries no full
+      // text, also wipe any orphan full-text file sitting at this id so the new
+      // article can't inherit an unrelated body left by a deleted article.
+      // Overwrite/promote keep their existing full text (writeFullText below
+      // replaces it when the import does carry one).
+      const isNewId = !existingMainMatch && !aipMatch;
+      const cleanup = cleanArticleAssets(id, { wipeFullText: isNewId && !parsed.fullTextHtml });
 
       const article = {
         id,
@@ -520,9 +527,14 @@ async function importZip(zipPath, options = {}) {
         received: parsed.received || '',
         accepted: parsed.accepted || '',
         published: parsed.published || '',
+        // When overwriting an existing article without an explicit target and
+        // without volume/issue in the XML, keep its current placement rather
+        // than wiping it to null/''.
         volume: targetVolume != null ? Number(targetVolume)
-          : (parsed.volume != null && parsed.volume !== '' ? Number(parsed.volume) : null),
-        issue: targetIssue != null ? String(targetIssue) : (parsed.issue || ''),
+          : (parsed.volume != null && parsed.volume !== '' ? Number(parsed.volume)
+          : (existingMainMatch && existingMainMatch.volume != null ? Number(existingMainMatch.volume) : null)),
+        issue: targetIssue != null ? String(targetIssue)
+          : (parsed.issue || (existingMainMatch && existingMainMatch.issue != null ? String(existingMainMatch.issue) : '')),
         pages: parsed.pages || '',
         // Preserve view/download counts when promoting from AIP or overwriting
         // an existing published article — these are accumulated user metrics.
@@ -646,6 +658,20 @@ async function importZip(zipPath, options = {}) {
 
       // Place article: replace in-place when overwriting, otherwise prepend.
       if (existingMainMatch) {
+        // If the overwrite relocates the article, remember the issue it left so
+        // that issue's volume JSON gets rebuilt (ghost removal) below.
+        const oldV = Number(existingMainMatch.volume);
+        const oldI = String(existingMainMatch.issue || '');
+        const newV = Number(article.volume);
+        const newI = String(article.issue || '');
+        if (oldV && oldI && (oldV !== newV || oldI !== newI)) {
+          const key = `${oldV}|${oldI}`;
+          if (!staleIssues.has(key)) {
+            const year = (String(existingMainMatch.published || '').match(/(?:19|20)\d{2}/) || [])[0]
+              || String(new Date().getFullYear());
+            staleIssues.set(key, { volume: oldV, issue: oldI, year: String(year) });
+          }
+        }
         const existIdx = articles.findIndex((a) => a.id === id);
         if (existIdx >= 0) articles[existIdx] = article;
         else articles.unshift(article);
@@ -706,6 +732,12 @@ async function importZip(zipPath, options = {}) {
         || String(new Date().getFullYear());
       importedIssues.set(key, { volume: v, issue: i, year: String(year) });
     }
+  }
+
+  // Fold in any issues an overwrite emptied/relocated out of, so their volume
+  // JSON is rebuilt and no longer lists the moved article.
+  for (const [key, val] of staleIssues) {
+    if (!importedIssues.has(key)) importedIssues.set(key, val);
   }
 
   if (importedIssues.size) {

@@ -452,3 +452,4 @@ footer.bg-teal-900.text-white[aria-label="Site footer"] .border-teal-800{
 .bmj-issue-secondary-link{padding:.7rem .85rem;color:#0f6f73;font-size:.78rem;font-weight:700}
 .bmj-issue-secondary-link:hover{color:#094f53;text-decoration:underline}
 @media (max-width:39.99rem){.bmj-issue-publication.has-cover{grid-template-columns:112px minmax(0,1fr);gap:1rem;padding:1rem}.bmj-issue-cover-frame{height:154px}.bmj-issue-publication-copy{padding:0}.bmj-issue-publication h2{font-size:1.4rem}.bmj-issue-publication-copy>p{font-size:.95rem}.bmj-issue-full-pdf{grid-column:1/-1;min-width:100%}.bmj-issue-actions{display:grid;grid-template-columns:1fr}.bmj-issue-action-arrow{display:none}}
+.bmj-nav-shell{height:6rem}.bmj-nav-logo{filter:contrast(1.12) saturate(1.04);width:auto;height:5rem}.bmj-footer-logo-box{background:#fff;border:1px solid #e5e7eb;padding:2px}

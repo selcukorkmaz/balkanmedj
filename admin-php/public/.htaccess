@@ -1,0 +1,17 @@
+# Admin panel web root (.../yonetim/). Front-controller routing for /api.
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Pretty login URL -> static login page
+  RewriteRule ^login/?$ login.html [L]
+
+  # All /api/* requests go through the PHP front controller
+  RewriteRule ^api(/.*)?$ api.php [QSA,L]
+</IfModule>
+
+# Never serve the raw config or source if symlinked in by mistake
+<FilesMatch "\.(sql|md)$">
+  Require all denied
+</FilesMatch>

@@ -588,3 +588,20 @@ footer.bg-teal-900.text-white[aria-label="Site footer"] {
 footer.bg-teal-900.text-white[aria-label="Site footer"] .border-teal-800 {
   border-color: color-mix(in oklab, var(--bmj-brand-700) 65%, black);
 }
+
+.bmj-footer-logo-box {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 2px;
+}
+
+/* Brand logo sizing: preserve detail in the full circular seal on desktop. */
+.bmj-nav-shell {
+  height: 6rem;
+}
+
+.bmj-nav-logo {
+  width: auto;
+  height: 5rem;
+  filter: contrast(1.12) saturate(1.04);
+}

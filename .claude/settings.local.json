@@ -239,7 +239,11 @@
       "Bash(python)",
       "Bash(taskkill *)",
       "Bash(git check-ignore *)",
-      "Bash(python -)"
+      "Bash(python -)",
+      "Bash(ngrok config *)",
+      "PowerShell(Get-Content *)",
+      "PowerShell(Invoke-WebRequest -Uri \"http://localhost:8088\" -MaximumRedirection 0 -ErrorAction SilentlyContinue | Select-Object StatusCode, Headers)",
+      "Bash(docker exec *)"
     ]
   }
 }

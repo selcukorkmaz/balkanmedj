@@ -532,6 +532,10 @@ app.post('/api/articles', (req, res) => {
     };
     validateArticleDateOrder(newArticle);
     newArticle.id = newArticle.id || dio.nextArticleId(articles);
+    // Wipe any orphan figures / full-text / PDF left at this id by a previously
+    // deleted article, so a manually created article never silently inherits an
+    // unrelated full-text body (the AIP create endpoint already does this).
+    zipImporter.cleanArticleAssets(newArticle.id, { wipePdf: true, wipeFullText: true });
     articles.unshift(newArticle);
     enforceSingleFeaturedArticle(articles, newArticle);
     dio.writeArticles(articles);
@@ -786,6 +790,42 @@ app.get('/api/articles-in-press/:id', (req, res) => {
     const art = aip.find((a) => a.id === Number(req.params.id));
     if (!art) return res.status(404).json({ error: 'Not found' });
     res.json(art);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// AIP full text must respect the AIP record's hasFullText flag. Reading through
+// /api/articles/:id/fulltext used to expose any orphan HTML file left on disk
+// for the same numeric ID, even when the AIP list correctly said "Tam metin yok".
+app.get('/api/articles-in-press/:id/fulltext', (req, res) => {
+  try {
+    const id = Number(req.params.id);
+    const aip = dio.readArticlesInPress();
+    const art = aip.find((article) => article.id === id);
+    if (!art) return res.status(404).json({ error: 'Not found' });
+
+    const html = art.hasFullText ? (dio.readFullText(id) || '') : '';
+    res.json({ id, html, hasFullText: !!art.hasFullText });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.put('/api/articles-in-press/:id/fulltext', (req, res) => {
+  try {
+    createBackup();
+    const id = Number(req.params.id);
+    const aip = dio.readArticlesInPress();
+    const idx = aip.findIndex((article) => article.id === id);
+    if (idx === -1) return res.status(404).json({ error: 'Not found' });
+
+    const html = String(req.body.html || '');
+    dio.writeFullText(id, html);
+    aip[idx].hasFullText = !!html.trim();
+    dio.writeArticlesInPress(aip);
+
+    res.json({ id, saved: true, hasFullText: aip[idx].hasFullText });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -2024,10 +2064,14 @@ app.post('/api/jats/import', async (req, res) => {
     articles.unshift(article);
     dio.writeArticles(articles);
 
-    // Write full text
+    // Write full text — or, when this import carries none, wipe any orphan
+    // full-text left at this freshly assigned id by a previously deleted
+    // article so the new one never inherits an unrelated body.
     const ftHtml = fullTextHtml || parsedArticle.fullTextHtml || '';
     if (ftHtml) {
       dio.writeFullText(id, ftHtml);
+    } else {
+      zipImporter.cleanArticleAssets(id, { wipeFullText: true });
     }
 
     // Write author metadata (ORCID, corresponding author)
@@ -2162,9 +2206,11 @@ app.post('/api/jats/import-batch', async (req, res) => {
 
         articles.unshift(article);
 
-        // Write full text
+        // Write full text — or wipe any orphan left at this fresh id.
         if (pa.fullTextHtml) {
           dio.writeFullText(id, pa.fullTextHtml);
+        } else {
+          zipImporter.cleanArticleAssets(id, { wipeFullText: true });
         }
 
         // Author metadata
@@ -2290,8 +2336,11 @@ app.post('/api/jats/import-in-press', async (req, res) => {
 
         aip.unshift(article);
 
+        // Write full text — or wipe any orphan left at this fresh id.
         if (pa.fullTextHtml) {
           dio.writeFullText(id, pa.fullTextHtml);
+        } else {
+          zipImporter.cleanArticleAssets(id, { wipeFullText: true });
         }
 
         imported.push({ id, title: pa.title, doi: pa.doi });

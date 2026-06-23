@@ -21,7 +21,7 @@
     { title: 'News', url: 'news.html', desc: 'Latest announcements, journal updates, events' },
     { title: 'Forms', url: 'forms.html', desc: 'Copyright transfer, conflict of interest, author forms, downloads' },
     { title: 'Search Results', url: 'search-results.html', desc: 'Comprehensive search across articles, news, and site pages' },
-    { title: 'Submit Manuscript', url: 'https://balkanmedj.manuscriptmanager.net', desc: 'Online manuscript submission system' }
+    { title: 'Manuscript Submission', url: 'manuscript-submission.html', desc: 'Manuscript submission guidelines and systems' }
   ];
 
   var articlesLoadPromise = null;

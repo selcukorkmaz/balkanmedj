@@ -344,7 +344,7 @@ const ROW_GRIP_SVG = '<svg viewBox="0 0 10 16" width="10" height="16" aria-hidde
 
 // Document-level delegated DnD: works for any current/future rows whose class
 // is registered in ROW_DND_SELECTORS. Saves rewiring per-render.
-const ROW_DND_SELECTORS = ['.author-row', '.aipf-author-row', '.ed-mrow', '.aff-row', '.aipf-aff-row', '.hs-row', '.banner-row'];
+const ROW_DND_SELECTORS = ['.author-row', '.aipf-author-row', '.aip-list-row', '.ed-mrow', '.aff-row', '.aipf-aff-row', '.hs-row', '.banner-row'];
 let _dndSrc = null;
 
 function _dndRowFromEvent(e) {
@@ -390,7 +390,9 @@ document.addEventListener('drop', (e) => {
     e.preventDefault();
     const rect = row.getBoundingClientRect();
     const above = (e.clientY - rect.top) < rect.height / 2;
-    if (_dndSrc.classList.contains('hs-row')) {
+    if (_dndSrc.classList.contains('aip-list-row')) {
+      _aipReorderByDrop(_dndSrc, row, above);
+    } else if (_dndSrc.classList.contains('hs-row')) {
       // Homepage section (manual): reorder the _hsState.ids[key] array + re-render.
       _hsReorderByDrop(_dndSrc, row, above);
     } else if (_dndSrc.classList.contains('banner-row')) {
@@ -587,7 +589,7 @@ document.addEventListener('dragend', () => {
 // the row instead of selecting text. Clean any stray flags on mouseup.
 document.addEventListener('mouseup', () => {
   if (_dndSrc) return; // active drag, dragend will handle cleanup
-  document.querySelectorAll('.author-row[draggable="true"], .aipf-author-row[draggable="true"], .ed-mrow[draggable="true"], .aff-row[draggable="true"], .aipf-aff-row[draggable="true"]').forEach((r) => {
+  document.querySelectorAll('.author-row[draggable="true"], .aipf-author-row[draggable="true"], .aip-list-row[draggable="true"], .ed-mrow[draggable="true"], .aff-row[draggable="true"], .aipf-aff-row[draggable="true"]').forEach((r) => {
     r.removeAttribute('draggable');
   });
 });
@@ -1940,7 +1942,7 @@ function renderZipPreviewArticle(a, index) {
   if (a.importStatus === 'promote' && a.aipMatch) {
     statusBadge = `<span class="badge" style="background:#fef3c7;color:#92400e;border:1px solid #fde68a" title="Baskıda #${a.aipMatch.id} olarak mevcut — bu sayıya geçirilecek"><span class="badge-dot" style="background:#92400e"></span>Baskıdan geçecek (#${a.aipMatch.id})</span>`;
   } else if (a.importStatus === 'duplicate' && a.publishedMatch) {
-    statusBadge = `<span class="badge" style="background:#fee2e2;color:#b91c1c;border:1px solid #fecaca" title="Yayınlanmış #${a.publishedMatch.id} ile aynı DOI — atlanacak"><span class="badge-dot" style="background:#b91c1c"></span>Duplicate (#${a.publishedMatch.id})</span>`;
+    statusBadge = `<span class="badge" style="background:#fee2e2;color:#b91c1c;border:1px solid #fecaca" title="Yayınlanmış #${a.publishedMatch.id} ile aynı DOI — &quot;Mevcut makaleleri güncelle&quot; kapalıysa atlanır, açıksa güncellenir"><span class="badge-dot" style="background:#b91c1c"></span>Duplicate (#${a.publishedMatch.id})</span>`;
   } else {
     statusBadge = '<span class="badge" style="background:#dcfce7;color:#15803d;border:1px solid #bbf7d0"><span class="badge-dot" style="background:#15803d"></span>Yeni</span>';
   }
@@ -1975,7 +1977,7 @@ function renderZipPreviewArticle(a, index) {
               <div class="flex gap-2"><dt style="color:var(--text-muted);min-width:60px">XML</dt><dd><code>${esc(a.xmlFile)}</code></dd></div>
               ${a.doi ? `<div class="flex gap-2"><dt style="color:var(--text-muted);min-width:60px">DOI</dt><dd>${esc(a.doi)}</dd></div>` : ''}
               ${a.aipMatch ? `<div class="flex gap-2"><dt style="color:var(--text-muted);min-width:60px">Baskıda</dt><dd><a href="#/articles-in-press/${a.aipMatch.id}" style="color:#92400e">#${a.aipMatch.id}</a> — bu sayıya taşınacak</dd></div>` : ''}
-              ${a.publishedMatch ? `<div class="flex gap-2"><dt style="color:var(--text-muted);min-width:60px">Mevcut</dt><dd><a href="#/articles/${a.publishedMatch.id}" style="color:#b91c1c">#${a.publishedMatch.id}</a> — duplicate, atlanacak</dd></div>` : ''}
+              ${a.publishedMatch ? `<div class="flex gap-2"><dt style="color:var(--text-muted);min-width:60px">Mevcut</dt><dd><a href="#/articles/${a.publishedMatch.id}" style="color:#b91c1c">#${a.publishedMatch.id}</a> — aynı DOI (güncelle seçili değilse atlanır)</dd></div>` : ''}
               ${a.pages ? `<div class="flex gap-2"><dt style="color:var(--text-muted);min-width:60px">Sayfa</dt><dd>${esc(a.pages)}</dd></div>` : ''}
               <div class="flex gap-2"><dt style="color:var(--text-muted);min-width:60px">PDF</dt><dd>${a.matchedPdf ? `<code style="color:var(--success-text)">${esc(a.matchedPdf)}</code>` : '<span style="color:var(--warning-text)">eşleşmedi</span>'}</dd></div>
             </dl>
@@ -2159,8 +2161,8 @@ async function showZipPreview(filename) {
           <strong>ℹ Baskıdan geçecek makaleler:</strong> ${preview.summary.promotedFromAip} makale şu anda <em>Baskıda</em> statüsünde — aktarım sırasında bu sayıya taşınacak ve "Baskıda" listesinden otomatik kaldırılacak. Görüntüleme/indirme sayıları korunur.
         </div>` : ''}
         ${(preview.summary.duplicates ?? 0) > 0 ? `
-        <div class="px-6 py-3" style="background:#fee2e2;border-bottom:1px solid #fecaca;color:#b91c1c;font-size:13px;line-height:1.5">
-          <strong>⚠ Duplicate makaleler:</strong> ${preview.summary.duplicates} makalenin DOI'si zaten yayınlanmış. Bunlar atlanacak.
+        <div id="zip-dup-banner" class="px-6 py-3" style="background:#fee2e2;border-bottom:1px solid #fecaca;color:#b91c1c;font-size:13px;line-height:1.5">
+          <strong data-dup-title>⚠ Duplicate makaleler:</strong> <span data-dup-msg>${preview.summary.duplicates} makalenin DOI'si zaten yayınlanmış. Bunlar atlanacak.</span>
         </div>` : ''}
 
         <!-- Import settings -->
@@ -2184,7 +2186,7 @@ async function showZipPreview(filename) {
             </div>
             <div class="flex items-end gap-4 flex-wrap">
               <label class="flex items-center gap-2 text-sm cursor-pointer" style="color:var(--text)"><input id="zip-set-current" type="checkbox" class="rounded"> Güncel sayı yap</label>
-              <label class="flex items-center gap-2 text-sm cursor-pointer" title="Aynı sayıdaki mevcut makaleleri XML verileriyle güncelle (DOI eşleşmesinde silmek yerine üzerine yaz)" style="color:var(--text)"><input id="zip-overwrite" type="checkbox" class="rounded"> Mevcut makaleleri güncelle</label>
+              <label class="flex items-center gap-2 text-sm cursor-pointer" title="DOI'si eşleşen mevcut makaleleri XML verileriyle güncelle — hangi cilt/sayıda olursa olsun, makale id'si korunarak üzerine yazılır (hata vermez)" style="color:var(--text)"><input id="zip-overwrite" type="checkbox" class="rounded"> Mevcut makaleleri güncelle</label>
             </div>
           </div>
         </div>
@@ -2228,6 +2230,35 @@ async function showZipPreview(filename) {
     document.getElementById('zip-target').addEventListener('change', function () {
       document.getElementById('zip-new-issue-fields').classList.toggle('hidden', this.value !== 'new');
     });
+
+    // Keep the duplicate banner truthful about what "Mevcut makaleleri güncelle"
+    // will actually do: skip (off) vs update-in-place (on). The summary is
+    // computed at preview time without knowing the checkbox, so reconcile it
+    // live whenever the toggle changes.
+    const dupCount = preview.summary.duplicates ?? 0;
+    const ovEl = document.getElementById('zip-overwrite');
+    const dupBanner = document.getElementById('zip-dup-banner');
+    if (dupCount > 0 && ovEl && dupBanner) {
+      const titleEl = dupBanner.querySelector('[data-dup-title]');
+      const msgEl = dupBanner.querySelector('[data-dup-msg]');
+      const refreshDupBanner = () => {
+        if (ovEl.checked) {
+          titleEl.textContent = '✓ Güncellenecek makaleler:';
+          msgEl.textContent = `${dupCount} makalenin DOI'si zaten yayınlanmış. "Mevcut makaleleri güncelle" seçili — bunlar atlanmayacak, mevcut kayıtlar (id korunarak) XML verileriyle güncellenecek.`;
+          dupBanner.style.background = '#ecfdf5';
+          dupBanner.style.borderBottom = '1px solid #a7f3d0';
+          dupBanner.style.color = '#065f46';
+        } else {
+          titleEl.textContent = '⚠ Duplicate makaleler:';
+          msgEl.textContent = `${dupCount} makalenin DOI'si zaten yayınlanmış. Bunlar atlanacak. (Güncellemek için "Mevcut makaleleri güncelle" seçeneğini işaretleyin.)`;
+          dupBanner.style.background = '#fee2e2';
+          dupBanner.style.borderBottom = '1px solid #fecaca';
+          dupBanner.style.color = '#b91c1c';
+        }
+      };
+      ovEl.addEventListener('change', refreshDupBanner);
+      refreshDupBanner();
+    }
 
   } catch (err) {
     console.error('[showZipPreview] failed:', err);
@@ -3204,6 +3235,7 @@ async function renderAipArticles(el) {
       <a href="#/articles-in-press/new" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium whitespace-nowrap">+ Manuel Ekle</a>
       ${aip.length ? `<button onclick="publishSelectedAip()" class="px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 text-sm font-medium whitespace-nowrap">Seçilenleri Sayıya Taşı</button>` : ''}
     </div>
+    ${aip.length > 1 ? `<p class="text-xs mb-3" style="color:var(--text-faint)">Sıralamayı değiştirmek için satırın solundaki tutamacı sürükleyip istediğiniz konuma bırakın.</p>` : ''}
 
     ${aip.length ? `
     <!-- Publish controls -->
@@ -3221,6 +3253,7 @@ async function renderAipArticles(el) {
     <div class="table-wrap">
       <table>
         <thead><tr>
+          <th class="px-2 py-3 w-10" aria-label="Sıralama"></th>
           <th class="px-4 py-3 w-8"><input type="checkbox" id="aip-select-all" class="rounded"></th>
           <th>ID</th>
           <th>Başlık / Kabul Tarihi</th>
@@ -3229,8 +3262,11 @@ async function renderAipArticles(el) {
           <th>DOI</th>
           <th class="px-4 py-3"></th>
         </tr></thead>
-        <tbody>${aip.map((a, _aipIdx) => `
-          <tr>
+        <tbody id="aip-list-body">${aip.map((a, _aipIdx) => `
+          <tr class="aip-list-row" data-id="${a.id}" ondragend="this.removeAttribute('draggable')">
+            <td class="px-2 py-3">
+              <span class="row-grip" title="Sıralamak için tutup sürükleyin" aria-label="Sürükle" onmousedown="this.closest('.aip-list-row').setAttribute('draggable','true')">${ROW_GRIP_SVG}</span>
+            </td>
             <td class="px-4 py-3"><input type="checkbox" class="aip-check rounded" data-id="${a.id}"></td>
             <td class="px-4 py-3 tabular" style="color:var(--text-faint)">${a.id}</td>
             <td class="px-4 py-3 max-w-sm">
@@ -3276,6 +3312,25 @@ async function renderAipArticles(el) {
     document.querySelectorAll('.aip-check').forEach((c) => {
       c.addEventListener('change', updateAipSelection);
     });
+  }
+}
+
+async function _aipReorderByDrop(srcRow, tgtRow, above) {
+  const body = srcRow && srcRow.parentNode;
+  if (!body || body !== tgtRow.parentNode || body.id !== 'aip-list-body') return;
+
+  body.insertBefore(srcRow, above ? tgtRow : tgtRow.nextSibling);
+  const ids = Array.from(body.querySelectorAll('.aip-list-row'))
+    .map((row) => Number(row.dataset.id))
+    .filter(Number.isFinite);
+
+  try {
+    await API.post('/articles-in-press/reorder', { ids });
+    toast('e-Pub makale sırası güncellendi');
+    handleRoute();
+  } catch (err) {
+    toast(err.message, 'error');
+    handleRoute();
   }
 }
 
@@ -3397,7 +3452,13 @@ route('/articles-in-press/:id/edit', async (el, { id, query }) => {
   }
 });
 
+let _aipFullTextLoadToken = 0;
+
 function renderAipForm(el, article, opts = {}) {
+  // Invalidate any full-text request started by the previously open AIP form.
+  // Otherwise a slow response can arrive after navigation and populate the new
+  // article's editor with the previous article's HTML.
+  _aipFullTextLoadToken += 1;
   const defaultTab = ['general', 'authors', 'abstract', 'fulltext', 'media'].includes(opts.defaultTab) ? opts.defaultTab : 'general';
   const isNew = !article;
   const a = article || { id: '', type: '', title: '', authors: [], abstract: '', abstractHtml: '', keywords: [], doi: '', received: '', accepted: '', publishedOnline: '', published: '', pmid: '', pdfUrl: '' };
@@ -3840,9 +3901,16 @@ async function _pruneOrphanArticleMedia(visual, articleId) {
 async function loadAipFullTextIntoEditor(articleId) {
   const visual = document.getElementById('aip-ft-visual');
   const status = document.getElementById('aipf-fulltext-status');
+  const loadToken = _aipFullTextLoadToken;
   if (!visual) return;
   try {
-    const data = await API.get(`/articles/${articleId}/fulltext`);
+    const data = await API.get(`/articles-in-press/${articleId}/fulltext`);
+    const activeId = window.location.hash.match(/^#\/articles-in-press\/(\d+)\/edit/)?.[1];
+    if (
+      loadToken !== _aipFullTextLoadToken ||
+      String(activeId || '') !== String(articleId) ||
+      visual !== document.getElementById('aip-ft-visual')
+    ) return;
     setHtmlEditorContent('aip-ft', data.html || '');
     // Normalise Word-export references and stamp media IDs RIGHT after the
     // content lands in the editor — otherwise the user has to open the
@@ -3882,7 +3950,8 @@ async function loadAipFullTextIntoEditor(articleId) {
   }
 }
 
-// Manual save for AIP full text (uses shared /articles/:id/fulltext endpoint)
+// Manual save for AIP full text. The dedicated endpoint validates AIP
+// membership and updates only that record's hasFullText state.
 async function saveAipFullText(articleId) {
   const visual = document.getElementById('aip-ft-visual');
   const status = document.getElementById('aipf-fulltext-status');
@@ -3892,7 +3961,7 @@ async function saveAipFullText(articleId) {
     if (!await confirmAction('Tam metin boş. Yine de kaydetmek istiyor musunuz?')) return;
   }
   try {
-    await API.put(`/articles/${articleId}/fulltext`, { html });
+    await API.put(`/articles-in-press/${articleId}/fulltext`, { html });
     clearDirty();
     _clearFtDraft('aip-ft', articleId);
     if (status) status.textContent = `Kaydedildi (${html.length.toLocaleString('tr-TR')} karakter).`;
@@ -4045,7 +4114,7 @@ async function saveAip(isNew) {
       const ftHtml = document.getElementById('aip-ft-visual') ? getHtmlEditorContent('aip-ft') : '';
       if (result?.id && ftHtml) {
         try {
-          await API.put(`/articles/${result.id}/fulltext`, { html: ftHtml });
+          await API.put(`/articles-in-press/${result.id}/fulltext`, { html: ftHtml });
         } catch (ftErr) {
           toast(`Makale oluşturuldu ama tam metin kaydedilemedi: ${ftErr.message}`, 'error');
         }
@@ -4065,7 +4134,7 @@ async function saveAip(isNew) {
         const ftHtml = getHtmlEditorContent('aip-ft');
         if (ftHtml.trim()) {
           try {
-            await API.put(`/articles/${id}/fulltext`, { html: ftHtml });
+            await API.put(`/articles-in-press/${id}/fulltext`, { html: ftHtml });
             const status = document.getElementById('aipf-fulltext-status');
             if (status) status.textContent = `Kaydedildi (${ftHtml.length.toLocaleString('tr-TR')} karakter).`;
           } catch (ftErr) {
@@ -11684,8 +11753,6 @@ function renderVisualPageEditor(el, page, slug) {
       <span class="text-xs ml-1" style="color:var(--text-faint)">Eklemek istediğiniz yere önce tıklayın, sonra bir düğme seçin.</span>
     </div>
 
-    <div id="pg-banner-panel" class="hidden mb-3"></div>
-
     <iframe id="pg-frame" title="Sayfa düzenleyici" style="width:100%;min-height:600px;border:1px solid var(--border-soft);border-radius:12px;background:#fff;display:block"></iframe>
     <textarea id="pg-raw" class="hidden w-full px-3 py-2 border rounded-lg text-xs font-mono" style="min-height:600px;border-color:var(--border-soft)" spellcheck="false"></textarea>`;
 
@@ -11853,17 +11920,16 @@ function _wireVisualPageEditor(frame) {
   // change background, or rewrite its HTML. (History observer above captures
   // every structural change, so all of it is undoable.)
   _installBlockEditor(doc, root, fit);
-  // Banner management panel (only when the page has the homepage hero carousel).
+  // Banner controls shown directly on each homepage hero slide.
   _initHeroBannerPanel(frame);
 }
 
 // ═══════════════════════════════════════════════════════════════════════════
 //  HERO CAROUSEL (banner) MANAGEMENT — visual page editor
-//  Pages with #home-hero-carousel (the homepage) get a "Banner Yönetimi" panel
-//  above the iframe: delete a banner, add/replace/remove its image, add a new
-//  banner. All edits mutate the iframe DOM inside #pg-edit-root, so the normal
-//  "Kaydet" persists them; the carousel's slide↔indicator count and active
-//  state are kept in sync so the live site keeps working.
+//  Pages with #home-hero-carousel (the homepage) get an editor-only toolbar
+//  directly on every visible banner. The controls live outside #pg-edit-root,
+//  so they are never saved into the public page. All actual edits still mutate
+//  the banner DOM inside #pg-edit-root and are persisted by the normal save.
 // ═══════════════════════════════════════════════════════════════════════════
 function _heroFrame() { return document.getElementById('pg-frame'); }
 function _heroDoc() { const f = _heroFrame(); return f && f.contentDocument; }
@@ -11873,52 +11939,154 @@ function _heroSlides(doc) {
 }
 
 function _initHeroBannerPanel(frame) {
-  const panel = document.getElementById('pg-banner-panel');
-  if (!panel) return;
   const doc = frame && frame.contentDocument;
-  if (!doc || !doc.getElementById('home-hero-carousel')) { panel.classList.add('hidden'); panel.innerHTML = ''; return; }
-  panel.classList.remove('hidden');
+  if (!doc || !doc.getElementById('home-hero-carousel')) return;
   _renderHeroBannerPanel();
+  const win = doc.defaultView;
+  if (win && !win._bmjHeroToolsResizeBound) {
+    win._bmjHeroToolsResizeBound = true;
+    let resizeTimer;
+    win.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(_renderHeroBannerPanel, 40);
+    });
+  }
 }
 
 function _renderHeroBannerPanel() {
-  const panel = document.getElementById('pg-banner-panel');
   const doc = _heroDoc();
-  if (!panel || !doc) return;
+  if (!doc) return;
+  doc.querySelectorAll('[data-bmj-hero-editor-ui]').forEach((node) => node.remove());
   const slides = _heroSlides(doc);
-  const btn = (onclick, label, tone) => {
-    const styles = tone === 'danger'
-      ? 'color:var(--color-red-700,#b91c1c);border-color:color-mix(in oklab,#b91c1c 30%,transparent)'
-      : tone === 'primary'
-        ? 'color:#fff;background:var(--brand);border-color:var(--brand)'
-        : 'color:var(--text-strong);border-color:var(--border-soft)';
-    return `<button type="button" onclick="${onclick}" class="px-2 py-1 rounded-md text-xs font-medium hover:opacity-90" style="border:1px solid;${styles}">${label}</button>`;
-  };
-  const moveBtn = (i, dir, disabled, label) =>
-    `<button type="button" onclick="_heroBannerMove(${i},${dir})" ${disabled ? 'disabled' : ''} title="${label}" class="px-1.5 py-1 rounded-md text-xs hover:bg-white disabled:opacity-30 disabled:cursor-not-allowed" style="border:1px solid var(--border-soft);color:var(--text-strong);line-height:1">${dir < 0 ? '▲' : '▼'}</button>`;
-  const rows = slides.map((slide, i) => {
-    const hasImg = !!slide.querySelector('img');
-    const titleEl = slide.querySelector('.hero-title, .hero-slide-title');
-    const title = (titleEl ? titleEl.textContent : '').trim().slice(0, 60) || ('Banner ' + (i + 1));
-    return `<div class="banner-row flex items-center gap-2 py-2" data-banner-idx="${i}" style="border-top:1px solid var(--border-soft)">
-        <span class="row-grip" title="Sürükleyerek sırala" aria-label="Sürükle" onmousedown="this.closest('.banner-row').setAttribute('draggable','true')">${ROW_GRIP_SVG}</span>
-        <span class="text-xs font-semibold" style="min-width:54px;color:var(--text-muted)">Banner ${i + 1}</span>
-        <span class="inline-flex gap-1">${moveBtn(i, -1, i === 0, 'Yukarı taşı')}${moveBtn(i, 1, i === slides.length - 1, 'Aşağı taşı')}</span>
-        <span class="text-xs flex-1 min-w-0 truncate" style="color:var(--text-faint)" title="${esc(title)}">${esc(title)}</span>
-        ${btn(`_heroBannerImage(${i})`, hasImg ? 'Resmi değiştir' : '＋ Resim ekle')}
-        ${hasImg ? btn(`_heroBannerRemoveImage(${i})`, 'Resmi sil', 'danger') : ''}
-        ${btn(`_heroBannerDelete(${i})`, "🗑 Banner'ı sil", 'danger')}
-      </div>`;
-  }).join('');
-  panel.innerHTML = `
-    <div class="px-3 py-2.5 rounded-lg" style="background:var(--bg-subtle);border:1px solid var(--border-soft)">
-      <div class="flex items-center justify-between gap-2 mb-1">
-        <span class="text-xs font-semibold" style="color:var(--text-muted)">🖼 Banner Yönetimi <span style="color:var(--text-faint);font-weight:400">(${slides.length} banner)</span></span>
-        ${btn('_heroBannerAdd()', '＋ Yeni Banner Ekle', 'primary')}
-      </div>
-      ${rows || '<p class="text-xs py-2" style="color:var(--text-faint)">Banner bulunamadı.</p>'}
-      <p class="text-xs mt-2" style="color:var(--text-faint)"><strong>▲ ▼</strong> ile banner sırasını değiştirin. Banner <strong>metinlerini</strong> aşağıdaki önizlemede doğrudan tıklayıp düzenleyin. Yaptığınız değişiklikleri kalıcılaştırmak için sağ üstten <strong>Kaydet</strong>'e basın.</p>
-    </div>`;
+
+  if (!slides.length) return;
+  if (!doc.getElementById('bmj-hero-tools-style')) {
+    const style = doc.createElement('style');
+    style.id = 'bmj-hero-tools-style';
+    style.textContent = [
+      '#pgw .hero-carousel-track{gap:0 !important}',
+      '#pgw .hero-slide[data-bmj-hero-collapsed="1"]{display:none !important}',
+      '.bmj-hero-manager{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 8px;padding:12px 14px;background:linear-gradient(135deg,#78350f,#92400e);border:1px solid #652b0b;border-radius:10px;box-shadow:0 5px 16px rgba(69,26,3,.24);font:600 12px Inter,system-ui,sans-serif;line-height:1;user-select:none;color:#fff}',
+      '.bmj-hero-manager-title{display:flex;align-items:baseline;gap:7px}',
+      '.bmj-hero-manager-count{color:#fde68a;font-size:11px;font-weight:500}',
+      '.bmj-hero-manager button{appearance:none;border:1px solid #fcd34d;border-radius:7px;background:#fbbf24;color:#451a03;padding:7px 11px;font:700 11px Inter,system-ui,sans-serif;line-height:1;cursor:pointer;white-space:nowrap;pointer-events:auto !important}',
+      '.bmj-hero-manager button:hover{background:#fcd34d;border-color:#fde68a}',
+      '.bmj-hero-editor-panel{display:flex;align-items:center;flex-wrap:wrap;gap:5px;margin:18px 0 8px;padding:9px 10px;background:linear-gradient(135deg,#fef3c7,#fde68a);border:1px solid #d97706;border-radius:10px;box-shadow:0 4px 14px rgba(146,64,14,.2);font:600 11px Inter,system-ui,sans-serif;line-height:1;user-select:none}',
+      '.bmj-hero-editor-panel:first-child{margin-top:0}',
+      '.bmj-hero-editor-panel.is-dragging{opacity:.45}',
+      '.bmj-hero-editor-panel.is-drop-target{border-color:#0d9488;box-shadow:0 0 0 3px rgba(13,148,136,.16)}',
+      '.bmj-hero-editor-grip{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;color:#92400e;border-radius:6px;cursor:grab;font-size:18px;line-height:1;pointer-events:auto !important}',
+      '.bmj-hero-editor-grip:hover{background:rgba(255,255,255,.58);color:#78350f}',
+      '.bmj-hero-editor-grip:active{cursor:grabbing}',
+      '.bmj-hero-tools-label{color:#0f172a;padding:0 4px;white-space:nowrap}',
+      '.bmj-hero-tools-state{color:#92400e;font-weight:500;margin-right:auto;white-space:nowrap}',
+      '.bmj-hero-tools-sep{width:1px;height:20px;background:#d6a93a;margin:0 2px}',
+      '.bmj-hero-editor-panel button{appearance:none;border:1px solid #cbd5e1;border-radius:6px;background:#fff;color:#334155;padding:6px 8px;font:600 11px Inter,system-ui,sans-serif;line-height:1;cursor:pointer;white-space:nowrap;pointer-events:auto !important}',
+      '.bmj-hero-editor-panel button:hover{border-color:#94a3b8;background:#f1f5f9;color:#0f172a}',
+      '.bmj-hero-editor-panel button:disabled{opacity:.35;cursor:not-allowed}',
+      '.bmj-hero-editor-panel button.is-primary{border-color:#0d9488;background:#0d9488;color:#fff}',
+      '.bmj-hero-editor-panel button.is-primary:hover{background:#0f766e}',
+      '.bmj-hero-editor-panel button.is-danger{border-color:#fecaca;color:#b91c1c}',
+      '.bmj-hero-editor-panel button.is-danger:hover{border-color:#b91c1c;background:#b91c1c;color:#fff}',
+    ].join('');
+    doc.head.appendChild(style);
+  }
+
+  const track = doc.querySelector('#home-hero-carousel .hero-carousel-track');
+  const manager = doc.createElement('div');
+  manager.className = 'bmj-hero-manager';
+  manager.setAttribute('data-bmj-hero-editor-ui', '1');
+  manager.innerHTML =
+    `<span class="bmj-hero-manager-title">Banner Yönetimi <span class="bmj-hero-manager-count">${slides.length} banner</span></span>`
+    + '<button type="button" data-act="add">＋ Yeni Banner</button>';
+  track.insertBefore(manager, slides[0]);
+  manager.querySelector('button[data-act="add"]').addEventListener('click', _heroBannerAdd);
+
+  slides.forEach((slide, i) => {
+    const image = slide.querySelector('.hero-cover-figure img') || slide.querySelector('img');
+    const hasImg = !!image;
+    const imageWidth = hasImg ? (parseInt(image.style.width, 10) || 290) : null;
+    const imageHeight = hasImg && image.style.height && image.style.height !== 'auto'
+      ? parseInt(image.style.height, 10) || null : null;
+    const imageSizeLabel = hasImg ? `${imageWidth}×${imageHeight || 'auto'}` : '';
+    const collapsed = slide.getAttribute('data-bmj-hero-collapsed') === '1';
+    const panel = doc.createElement('div');
+    panel.className = 'bmj-hero-editor-panel';
+    panel.setAttribute('data-bmj-hero-editor-ui', '1');
+    panel.innerHTML =
+      '<span class="bmj-hero-editor-grip" draggable="true" title="Sürükleyerek sırala" aria-label="Bannerı sürükle">⋮⋮</span>'
+      + `<span class="bmj-hero-tools-label">Banner ${i + 1}</span>`
+      + `<span class="bmj-hero-tools-state">${collapsed ? 'Kapalı' : 'Açık'}</span>`
+      + `<button type="button" data-act="collapse">${collapsed ? 'Genişlet' : 'Daralt'}</button>`
+      + `<span class="bmj-hero-tools-sep"></span>`
+      + `<button type="button" data-act="image">${hasImg ? 'Resmi değiştir' : '＋ Resim ekle'}</button>`
+      + (hasImg ? `<button type="button" data-act="size" title="${imageSizeLabel} px">Boyut: ${imageSizeLabel}</button>` : '')
+      + (hasImg ? '<button type="button" class="is-danger" data-act="remove-image">Resmi kaldır</button>' : '')
+      + '<span class="bmj-hero-tools-sep"></span>'
+      + '<button type="button" class="is-danger" data-act="delete">Banner’ı sil</button>';
+    track.insertBefore(panel, slide);
+    panel.addEventListener('click', (event) => {
+      const button = event.target.closest('button[data-act]');
+      if (!button || button.disabled) return;
+      const action = button.dataset.act;
+      if (action === 'collapse') {
+        if (collapsed) slide.removeAttribute('data-bmj-hero-collapsed');
+        else slide.setAttribute('data-bmj-hero-collapsed', '1');
+        _renderHeroBannerPanel();
+        _heroFitFrame();
+      }
+      else if (action === 'image') _heroBannerImage(i);
+      else if (action === 'size') _heroBannerImageSettings(i);
+      else if (action === 'remove-image') _heroBannerRemoveImage(i);
+      else if (action === 'delete') _heroBannerDelete(i);
+    });
+    const grip = panel.querySelector('.bmj-hero-editor-grip');
+    grip.addEventListener('dragstart', (event) => {
+      _heroDraggedSlide = slide;
+      panel.classList.add('is-dragging');
+      if (event.dataTransfer) {
+        event.dataTransfer.effectAllowed = 'move';
+        event.dataTransfer.setData('text/plain', String(i));
+      }
+    });
+    grip.addEventListener('dragend', () => {
+      _heroDraggedSlide = null;
+      doc.querySelectorAll('.bmj-hero-editor-panel').forEach((item) => item.classList.remove('is-dragging', 'is-drop-target'));
+    });
+    panel.addEventListener('dragover', (event) => {
+      if (!_heroDraggedSlide || _heroDraggedSlide === slide) return;
+      event.preventDefault();
+      doc.querySelectorAll('.bmj-hero-editor-panel').forEach((item) => item.classList.remove('is-drop-target'));
+      panel.classList.add('is-drop-target');
+      if (event.dataTransfer) event.dataTransfer.dropEffect = 'move';
+    });
+    panel.addEventListener('dragleave', () => panel.classList.remove('is-drop-target'));
+    panel.addEventListener('drop', (event) => {
+      event.preventDefault();
+      const source = _heroDraggedSlide;
+      if (!source || source === slide) return;
+      const targetRect = panel.getBoundingClientRect();
+      const placeAfter = event.clientY > targetRect.top + targetRect.height / 2;
+      doc.querySelectorAll('[data-bmj-hero-editor-ui]').forEach((node) => node.remove());
+      if (placeAfter) slide.after(source);
+      else slide.before(source);
+      _heroDraggedSlide = null;
+      _syncHeroCarousel(doc);
+      _afterHeroChange();
+      toast('Banner sırası güncellendi. Kalıcılaştırmak için Kaydet’e basın.');
+    });
+    if (image && !image.complete) image.addEventListener('load', _renderHeroBannerPanel, { once: true });
+  });
+  _heroFitFrame();
+}
+
+let _heroDraggedSlide = null;
+
+function _heroFitFrame() {
+  const frame = _heroFrame();
+  const doc = frame && frame.contentDocument;
+  if (!frame || !doc) return;
+  try { frame.style.height = (doc.body.scrollHeight + 24) + 'px'; } catch (_) {}
 }
 
 // Re-mark editable leaves on new content, fire input (history/dirty/refit), and
@@ -12033,7 +12201,7 @@ function _heroBannerImage(i) {
 
 function _heroSetSlideImage(slide, url, alt) {
   const existing = slide.querySelector('.hero-cover-figure img') || slide.querySelector('img');
-  if (existing) { existing.setAttribute('src', url); return; }
+  if (existing) { existing.setAttribute('src', url); existing.setAttribute('alt', (alt || '').replace(/\.[^.]+$/, '')); return; }
   const doc = slide.ownerDocument;
   const inner = slide.querySelector('.hero-slide-inner');
   if (inner && !/hero-slide-inner-(split|featured)/.test(inner.className)) {
@@ -12050,6 +12218,89 @@ function _heroSetSlideImage(slide, url, alt) {
   img.setAttribute('decoding', 'async');
   fig.appendChild(img);
   (inner || slide.querySelector('.hero-slide-shell') || slide).appendChild(fig);
+}
+
+function _heroBannerImageSettings(i) {
+  const doc = _heroDoc();
+  const slide = doc && _heroSlides(doc)[i];
+  const img = slide && (slide.querySelector('.hero-cover-figure img') || slide.querySelector('img'));
+  if (!img) { toast('Bu bannerda ayarlanacak bir resim yok', 'warning'); return; }
+
+  const currentWidth = parseInt(img.style.width, 10) || 290;
+  const currentHeight = img.style.height && img.style.height !== 'auto'
+    ? (parseInt(img.style.height, 10) || '') : '';
+  const currentFit = img.style.objectFit || 'contain';
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.innerHTML = `
+    <div class="modal-dialog" style="max-width:520px">
+      <div class="flex items-center justify-between px-6 py-4" style="border-bottom:1px solid var(--border-soft)">
+        <div>
+          <h3 class="text-base font-semibold" style="color:var(--text-strong)">Banner ${i + 1} — Resim Boyutu</h3>
+          <p class="text-xs mt-1" style="color:var(--text-faint)">Değerler masaüstü ve tablet görünümünde uygulanır.</p>
+        </div>
+        <button type="button" class="modal-close p-1.5 rounded-md" style="color:var(--text-muted)" aria-label="Kapat">&times;</button>
+      </div>
+      <div class="px-6 py-5 space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="label" for="hero-image-width">Genişlik (px)</label>
+            <input id="hero-image-width" type="number" min="100" max="600" step="10" class="input" value="${currentWidth}">
+            <p class="text-xs mt-1" style="color:var(--text-faint)">100–600 px</p>
+          </div>
+          <div>
+            <label class="label" for="hero-image-height">Yükseklik (px)</label>
+            <input id="hero-image-height" type="number" min="80" max="600" step="10" class="input" value="${currentHeight}" placeholder="Otomatik">
+            <p class="text-xs mt-1" style="color:var(--text-faint)">Boş bırakırsanız oran korunur.</p>
+          </div>
+        </div>
+        <div>
+          <label class="label" for="hero-image-fit">Resmi yerleştirme</label>
+          <select id="hero-image-fit" class="input">
+            <option value="contain" ${currentFit === 'contain' ? 'selected' : ''}>Tamamını göster</option>
+            <option value="cover" ${currentFit === 'cover' ? 'selected' : ''}>Alanı doldur (gerekirse kırp)</option>
+          </select>
+        </div>
+        <div>
+          <span class="label">Hızlı boyut</span>
+          <div class="flex flex-wrap gap-2">
+            <button type="button" class="btn btn-secondary btn-sm" data-width="180">Küçük — 180</button>
+            <button type="button" class="btn btn-secondary btn-sm" data-width="240">Orta — 240</button>
+            <button type="button" class="btn btn-secondary btn-sm" data-width="290">Standart — 290</button>
+            <button type="button" class="btn btn-secondary btn-sm" data-width="380">Büyük — 380</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-end gap-2 px-6 py-4" style="border-top:1px solid var(--border-soft);background:var(--bg-subtle)">
+        <button type="button" class="btn btn-secondary" data-action="cancel">İptal</button>
+        <button type="button" class="btn btn-primary" data-action="save">Uygula</button>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+
+  const widthInput = overlay.querySelector('#hero-image-width');
+  const heightInput = overlay.querySelector('#hero-image-height');
+  overlay.querySelectorAll('[data-width]').forEach((button) => {
+    button.onclick = () => { widthInput.value = button.dataset.width; };
+  });
+  const close = () => overlay.remove();
+  overlay.querySelector('.modal-close').onclick = close;
+  overlay.querySelector('[data-action="cancel"]').onclick = close;
+  overlay.addEventListener('click', (event) => { if (event.target === overlay) close(); });
+  overlay.querySelector('[data-action="save"]').onclick = () => {
+    const width = Math.max(100, Math.min(600, Number(widthInput.value) || 290));
+    const rawHeight = String(heightInput.value || '').trim();
+    const height = rawHeight ? Math.max(80, Math.min(600, Number(rawHeight) || 0)) : 0;
+    const fit = overlay.querySelector('#hero-image-fit').value === 'cover' ? 'cover' : 'contain';
+    img.style.width = width + 'px';
+    img.style.maxWidth = '100%';
+    img.style.height = height ? height + 'px' : 'auto';
+    img.style.objectFit = height ? fit : '';
+    close();
+    _afterHeroChange();
+    toast(`Banner ${i + 1} resim boyutu güncellendi. Kalıcılaştırmak için Kaydet'e basın.`);
+  };
+  setTimeout(() => widthInput.focus(), 30);
 }
 
 function _heroBannerRemoveImage(i) {
@@ -12091,10 +12342,30 @@ function _pgMarkEditableLeaves(rootNode) {
 // ── Visual page editor undo/redo (snapshot history of #pg-edit-root) ──────────
 let _pgHist = null;
 
+function _pgHistoryHtml(root) {
+  const clone = root.cloneNode(true);
+  clone.querySelectorAll('[data-bmj-hero-editor-ui]').forEach((node) => node.remove());
+  clone.querySelectorAll('[data-bmj-hero-collapsed]').forEach((node) => node.removeAttribute('data-bmj-hero-collapsed'));
+  return clone.innerHTML;
+}
+
 function _pgHistInit(doc, root, fit) {
   if (_pgHist && _pgHist.observer) { try { _pgHist.observer.disconnect(); } catch (_) {} }
-  _pgHist = { doc, root, fit, undo: [], redo: [], last: root.innerHTML, suppress: false, timer: null, observer: null };
-  const obs = new doc.defaultView.MutationObserver(() => _pgHistRecord());
+  _pgHist = { doc, root, fit, undo: [], redo: [], last: _pgHistoryHtml(root), suppress: false, timer: null, observer: null };
+  const obs = new doc.defaultView.MutationObserver((records) => {
+    const editorOnly = records.every((record) => {
+      if (record.type === 'attributes' && record.attributeName === 'data-bmj-hero-collapsed') return true;
+      const target = record.target.nodeType === 1 ? record.target : record.target.parentElement;
+      if (target && target.closest && target.closest('[data-bmj-hero-editor-ui]')) return true;
+      if (record.type === 'childList') {
+        const changed = [...record.addedNodes, ...record.removedNodes];
+        return changed.length > 0 && changed.every((node) =>
+          node.nodeType === 1 && node.matches && node.matches('[data-bmj-hero-editor-ui]'));
+      }
+      return false;
+    });
+    if (!editorOnly) _pgHistRecord();
+  });
   obs.observe(root, { childList: true, subtree: true, characterData: true, attributes: true });
   _pgHist.observer = obs;
   _pgUpdateUndoButtons();
@@ -12107,7 +12378,7 @@ function _pgHistRecord() {
   h.timer = setTimeout(() => {
     h.timer = null;
     if (!h.root) return;
-    const cur = h.root.innerHTML;
+    const cur = _pgHistoryHtml(h.root);
     if (cur === h.last) return;
     h.undo.push(h.last);
     if (h.undo.length > 100) h.undo.shift();
@@ -12121,7 +12392,7 @@ function _pgHistFlush() {
   const h = _pgHist;
   if (!h) return;
   if (h.timer) { clearTimeout(h.timer); h.timer = null; }
-  const cur = h.root.innerHTML;
+  const cur = _pgHistoryHtml(h.root);
   if (cur !== h.last) { h.undo.push(h.last); if (h.undo.length > 100) h.undo.shift(); h.redo = []; h.last = cur; }
 }
 
@@ -12143,6 +12414,7 @@ function _pgHistRestore(html) {
     });
     if (_pgBlock) _pgBlock.selected = null;
   } catch (_) {}
+  try { _renderHeroBannerPanel(); } catch (_) {}
 }
 
 function _pgUndo() {
@@ -12297,7 +12569,7 @@ function _installBlockEditor(doc, root, fit) {
   // sibling). Climbing up to a parent is done deliberately with the ⤴ Üst button.
   doc.addEventListener('mousemove', (e) => {
     if (_pgBlock.selected) return; // while selected, keep the selection box stable
-    if (e.target.closest('#bmj-blk-handle, #bmj-blk-bar, #bmj-blk-bgmenu, #bmj-fmt-bar, .bmj-menu')) return;
+    if (e.target.closest('#bmj-blk-handle, #bmj-blk-bar, #bmj-blk-bgmenu, #bmj-fmt-bar, .bmj-menu, .bmj-hero-tools, .bmj-hero-editor-panel')) return;
     const cand = nearestBlock(e.target);
     if (!cand) return;                          // empty/gap area → keep current handle (no flicker)
     const cur = _pgBlock.hovered;
@@ -12312,7 +12584,7 @@ function _installBlockEditor(doc, root, fit) {
   handle.addEventListener('click', (e) => { e.preventDefault(); const t = handle._target || _pgBlock.hovered; if (t && isBlock(t)) select(t); });
   // Click on real text / empty area deselects the block (so text editing resumes)
   doc.addEventListener('mousedown', (e) => {
-    if (e.target && e.target.closest && e.target.closest('#bmj-blk-bar, #bmj-blk-bgmenu, #bmj-blk-handle')) return;
+    if (e.target && e.target.closest && e.target.closest('#bmj-blk-bar, #bmj-blk-bgmenu, #bmj-blk-handle, .bmj-hero-tools, .bmj-hero-editor-panel')) return;
     if (_pgBlock.selected) deselect();
   });
   doc.addEventListener('scroll', () => { if (_pgBlock.selected) positionBar(); else hideHover(); }, true);
@@ -12702,6 +12974,8 @@ function _installFormatToolbar(doc, root, fit) {
 // for the plain-text paste guard, and it also heals already-corrupted pages on
 // the next save.
 function _sanitizeVisualPaste(root) {
+  root.querySelectorAll('[data-bmj-hero-editor-ui]').forEach((node) => node.remove());
+  root.querySelectorAll('[data-bmj-hero-collapsed]').forEach((node) => node.removeAttribute('data-bmj-hero-collapsed'));
   // Browser-extension junk (Grammarly et al.) that gets injected into the live
   // DOM and would otherwise be serialised into the saved page.
   root.querySelectorAll('grammarly-extension, grammarly-extension-vbars, [data-grammarly-shadow-root], [data-gramm], [data-gramm_editor]').forEach((n) => n.remove());

@@ -14,6 +14,7 @@ const BUILTIN_HTML_FILES = [
   'articles-in-press.html', 'archive.html', 'article.html', 'for-authors.html',
   'for-reviewers.html', 'policies.html', 'news.html', 'news-article.html',
   'contact.html', 'forms.html', 'journal-metrics.html', 'search-results.html',
+  'manuscript-submission.html',
 ];
 
 function readNavFooterData() {

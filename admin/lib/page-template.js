@@ -88,8 +88,7 @@ function createPageHtml({ slug, title, description }) {
   <meta name="twitter:title" content="${safeTitle} — Balkan Medical Journal">
   <meta name="twitter:description" content="${safeDesc}">
   <meta name="twitter:image" content="https://balkanmedicaljournal.org/images/cover/cover1.jpeg">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" sizes="any">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>`;

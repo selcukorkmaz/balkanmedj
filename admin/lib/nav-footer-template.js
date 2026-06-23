@@ -70,7 +70,7 @@ ${items}
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
             <span>Search</span>
           </button>
-          <a href="${submitUrl}" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center px-4 py-2 bg-red-700 text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors shadow-sm whitespace-nowrap">
+          <a href="${submitUrl}" class="hidden sm:inline-flex items-center px-4 py-2 bg-red-700 text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors shadow-sm whitespace-nowrap">
             ${submitLabel}
             <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
           </a>
@@ -173,7 +173,7 @@ const DEFAULT_MODEL = {
       { type: 'link', label: 'Contact', url: 'contact.html' },
     ],
     submitLabel: 'Submit Manuscript',
-    submitUrl: 'https://balkanmedj.manuscriptmanager.net',
+    submitUrl: 'manuscript-submission.html',
   },
   footer: {
     brandTitle: 'Balkan Medical Journal',
