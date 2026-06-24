@@ -1499,6 +1499,14 @@ app.put('/api/editorial/extended', (req, res) => {
 //  NEWS
 // ===========================================================================
 
+const NEWS_PLACEHOLDER_IMAGE = 'images/placeholder-news.jpg';
+
+function normalizeNewsItem(item) {
+  const out = { ...item };
+  out.image = String(out.image || '').trim() || NEWS_PLACEHOLDER_IMAGE;
+  return out;
+}
+
 app.get('/api/news', (_req, res) => {
   try {
     res.json(dio.readNews());
@@ -1522,7 +1530,7 @@ app.post('/api/news', (req, res) => {
   try {
     createBackup();
     const news = dio.readNews();
-    const item = { id: dio.nextNewsId(), featured: false, ...req.body };
+    const item = normalizeNewsItem({ id: dio.nextNewsId(), featured: false, ...req.body });
     news.unshift(item);
     dio.writeNews(news);
     res.status(201).json(item);
@@ -1537,7 +1545,7 @@ app.put('/api/news/:id', (req, res) => {
     const news = dio.readNews();
     const idx = news.findIndex((n) => n.id === Number(req.params.id));
     if (idx === -1) return res.status(404).json({ error: 'Not found' });
-    news[idx] = { ...news[idx], ...req.body, id: news[idx].id };
+    news[idx] = normalizeNewsItem({ ...news[idx], ...req.body, id: news[idx].id });
     dio.writeNews(news);
     res.json(news[idx]);
   } catch (err) {

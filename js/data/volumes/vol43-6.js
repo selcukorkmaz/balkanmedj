@@ -307,7 +307,15 @@ window.PAGE_ARTICLES = [
     "pdfUrl": "js/data/pdfs/2865.pdf",
     "pmid": "",
     "elocationId": "",
-    "supplementary": [],
+    "supplementary": [
+      {
+        "id": "supplementlink-1",
+        "label": "Supplementary Materials Section A and B:",
+        "caption": "https://balkanmedicaljournal.org/img/files/balkan-2026-1-309-supplementary.pdf",
+        "href": "https://balkanmedicaljournal.org/img/files/balkan-2026-1-309-supplementary.pdf",
+        "mimeType": "pdf"
+      }
+    ],
     "funding": [],
     "permissions": {
       "copyrightStatement": "Copyright@Author(s) - Available online at http://balkanmedicaljournal.org/",
@@ -386,7 +394,22 @@ window.PAGE_ARTICLES = [
     "pdfUrl": "js/data/pdfs/2864.pdf",
     "pmid": "",
     "elocationId": "",
-    "supplementary": [],
+    "supplementary": [
+      {
+        "id": "supplementary-table-1",
+        "label": "Supplementary Table 1:",
+        "caption": "https://balkanmedicaljournal.org/img/files/balkan-2025-12-228-supplement-1.pdf",
+        "href": "https://balkanmedicaljournal.org/img/files/balkan-2025-12-228-supplement-1.pdf",
+        "mimeType": "pdf"
+      },
+      {
+        "id": "supplementary-table-2",
+        "label": "Supplementary Table 2:",
+        "caption": "https://www.balkanmedicaljournal.org/img/files/balkan-12-228%281%29.pdf",
+        "href": "https://www.balkanmedicaljournal.org/img/files/balkan-12-228%281%29.pdf",
+        "mimeType": "pdf"
+      }
+    ],
     "funding": [],
     "permissions": {
       "copyrightStatement": "Copyright@Author(s) - Available online at http://balkanmedicaljournal.org/",
@@ -460,7 +483,22 @@ window.PAGE_ARTICLES = [
     "pdfUrl": "js/data/pdfs/2863.pdf",
     "pmid": "",
     "elocationId": "",
-    "supplementary": [],
+    "supplementary": [
+      {
+        "id": "supplementaryfigure-1a",
+        "label": "Supplementary Figure",
+        "caption": "https://balkanmedicaljournal.org/img/files/Supplemental-Figure.pdf",
+        "href": "https://balkanmedicaljournal.org/img/files/Supplemental-Figure.pdf",
+        "mimeType": "pdf"
+      },
+      {
+        "id": "supplementarytable-1",
+        "label": "Supplementary Tables",
+        "caption": "https://balkanmedicaljournal.org/img/files/Supplemental-Tables%281%29.pdf",
+        "href": "https://balkanmedicaljournal.org/img/files/Supplemental-Tables%281%29.pdf",
+        "mimeType": "pdf"
+      }
+    ],
     "funding": [],
     "permissions": {
       "copyrightStatement": "Copyright@Author(s) - Available online at http://balkanmedicaljournal.org/",

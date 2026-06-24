@@ -7,9 +7,8 @@
   var container = document.getElementById('news-container');
   var filterContainer = document.getElementById('news-filters');
   var loadMoreBtn = document.getElementById('news-load-more');
-  // Local fallback for news cards without an image. Uses the journal cover so
-  // localhost previews work; on the live site the same path resolves to the same image.
-  var DEFAULT_THUMBNAIL = 'images/cover/cover1.jpeg';
+  // Local fallback for news cards without an image.
+  var DEFAULT_THUMBNAIL = 'images/placeholder-news.jpg';
   if (!container || !window.NEWS) return;
 
   function parseNewsDate(value) {

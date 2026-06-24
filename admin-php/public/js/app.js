@@ -4148,6 +4148,8 @@ async function saveAip(isNew) {
 }
 
 // News
+const NEWS_PLACEHOLDER_IMAGE = 'images/placeholder-news.jpg';
+
 route('/news', async (el) => {
   const news = await API.get('/news');
   el.innerHTML = `
@@ -4260,8 +4262,8 @@ function renderNewsForm(el, item) {
         <!-- Image -->
         <div class="card card-padded">
           <label class="block text-sm font-medium text-gray-700 mb-2">Görsel</label>
-          <div id="fn-image-preview" class="mb-3 rounded-lg overflow-hidden bg-gray-100 ${n.image ? '' : 'hidden'}">
-            <img id="fn-image-preview-img" src="${n.image ? '../' + esc(n.image) : ''}" alt="" class="w-full h-40 object-cover" onerror="this.closest('#fn-image-preview').classList.add('hidden')">
+          <div id="fn-image-preview" class="mb-3 rounded-lg overflow-hidden bg-gray-100">
+            <img id="fn-image-preview-img" src="../${esc(n.image || NEWS_PLACEHOLDER_IMAGE)}" alt="" class="w-full h-40 object-cover" onerror="this.onerror=null;this.src='../${NEWS_PLACEHOLDER_IMAGE}'">
           </div>
           <div class="flex items-center gap-2">
             <input id="fn-image" value="${esc(n.image || '')}" placeholder="images/..." class="flex-1 px-3 py-2 border rounded-lg text-sm" oninput="updateNewsImagePreview()">
@@ -9920,8 +9922,8 @@ function updateNewsImagePreview() {
     preview.classList.remove('hidden');
     if (removeBtn) removeBtn.classList.remove('hidden');
   } else {
-    preview.classList.add('hidden');
-    img.src = '';
+    img.src = '../' + NEWS_PLACEHOLDER_IMAGE;
+    preview.classList.remove('hidden');
     if (removeBtn) removeBtn.classList.add('hidden');
   }
 }
@@ -9934,7 +9936,7 @@ async function saveNews(id) {
     category: document.getElementById('fn-category').value.trim(),
     date: document.getElementById('fn-date').value,
     featured: document.getElementById('fn-featured').checked,
-    image: document.getElementById('fn-image').value.trim(),
+    image: document.getElementById('fn-image').value.trim() || NEWS_PLACEHOLDER_IMAGE,
   };
   if (!data.title) { toast('Başlık zorunludur', 'error'); return; }
   try {
@@ -12509,15 +12511,14 @@ function _installBlockEditor(doc, root, fit) {
   // Pure inline-formatting wrappers are never a block-selection target (selecting
   // a <strong>/<span> inside running text for move/delete is just noise).
   const NONSELECT = new Set(['SVG', 'PATH', 'G', 'USE', 'SPAN', 'SUP', 'SUB', 'B', 'I', 'EM', 'STRONG', 'U', 'S', 'SMALL', 'MARK', 'ABBR', 'CODE', 'TIME', 'WBR', 'BDI', 'BDO', 'DFN', 'KBD', 'SAMP', 'VAR', 'Q', 'CITE', 'BR']);
+  const NEVER_SELECT = new Set(['PATH', 'G', 'USE', 'BR', 'WBR']);
+  const isDeepBlockZone = (el) => el.closest && (el.closest('#home-hero-carousel') || el.closest('[data-bmj-deep-blocks]'));
   const isBlock = (el) => {
     if (!el || el.nodeType !== 1 || el === root || !root.contains(el)) return false;
+    if (isDeepBlockZone(el)) return !NEVER_SELECT.has(el.tagName);
     if (NONSELECT.has(el.tagName)) return false;
-    // Inside the homepage hero carousel, EVERY meaningful element is selectable
-    // (heading, paragraph, <a> button, image…), so a banner's inner pieces can be
-    // moved / duplicated / deleted individually — not just the whole banner.
     // Everywhere else, keep the container-only rule so text leaves stay edit-only
     // and the other pages' editing experience is unchanged.
-    if (el.closest && el.closest('#home-hero-carousel')) return true;
     return !isLeaf(el);
   };
   const nearestBlock = (node) => {

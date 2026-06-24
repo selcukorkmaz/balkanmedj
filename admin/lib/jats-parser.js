@@ -143,7 +143,7 @@ async function parseJatsXml(xmlString) {
   const tables = parseTables(floatsGroup);
 
   // --- Supplementary materials ---
-  const supplementary = parseSupplementary(articleMeta, back, floatsGroup);
+  const supplementary = parseSupplementary(articleMeta, body, back, floatsGroup);
 
   // --- Funding ---
   const funding = parseFunding(articleMeta);
@@ -424,7 +424,20 @@ function convertBodyToHtml(body) {
   return body.sec.map((sec) => convertSectionToHtml(sec, 'h3')).join('\n');
 }
 
+function isSupplementaryOnlySection(sec) {
+  const title = textContent(sec.title?.[0]).trim();
+  if (!/^supplementary materials?$/i.test(title)) return false;
+  if (sec.$$) {
+    return sec.$$.every((child) => {
+      const tag = child['#name'];
+      return tag === '__text__' || tag === 'title' || tag === 'supplementary-material';
+    });
+  }
+  return !(sec.p?.length || sec.list?.length || sec['def-list']?.length || sec['table-wrap']?.length || sec.sec?.length);
+}
+
 function convertSectionToHtml(sec, headingTag) {
+  if (isSupplementaryOnlySection(sec)) return '';
   let html = '';
   const title = textContent(sec.title?.[0]);
   if (title) html += `<${headingTag}>${escapeHtml(title)}</${headingTag}>\n`;
@@ -565,10 +578,46 @@ function convertTableToHtml(tableEl) {
 }
 
 // --- Supplementary materials ---
-function parseSupplementary(articleMeta, back, floatsGroup) {
+function collectBodySupplementaryMaterials(sections, materials) {
+  for (const sec of sections || []) {
+    materials.push(...(sec['supplementary-material'] || []));
+    collectBodySupplementaryMaterials(sec.sec || [], materials);
+  }
+}
+
+function findFirstExtLinkHref(el) {
+  if (!el || typeof el !== 'object') return '';
+  if (el['#name'] === 'ext-link' && el.$?.['xlink:href']) return el.$['xlink:href'];
+  if (el['ext-link']?.[0]?.$?.['xlink:href']) return el['ext-link'][0].$['xlink:href'];
+  if (el.$$) {
+    for (const child of el.$$) {
+      const href = findFirstExtLinkHref(child);
+      if (href) return href;
+    }
+  }
+  for (const key of Object.keys(el)) {
+    if (key === '$' || key === '$$' || key === '#name') continue;
+    const val = el[key];
+    if (Array.isArray(val)) {
+      for (const item of val) {
+        const href = findFirstExtLinkHref(item);
+        if (href) return href;
+      }
+    } else if (val && typeof val === 'object') {
+      const href = findFirstExtLinkHref(val);
+      if (href) return href;
+    }
+  }
+  return '';
+}
+
+function parseSupplementary(articleMeta, body, back, floatsGroup) {
   const materials = [];
+  const bodyMaterials = [];
+  collectBodySupplementaryMaterials(body.sec || [], bodyMaterials);
   const sources = [
     ...(articleMeta['supplementary-material'] || []),
+    ...bodyMaterials,
     ...(back['supplementary-material'] || []),
     ...(floatsGroup['supplementary-material'] || []),
   ];
@@ -577,7 +626,7 @@ function parseSupplementary(articleMeta, back, floatsGroup) {
     const label = textContent(sm.label?.[0]) || '';
     const caption = (sm.caption?.[0]?.p || []).map((p) => textContent(p)).join(' ');
     const mediaEl = sm.media?.[0] || sm['inline-supplementary-material']?.[0];
-    const href = mediaEl?.$?.['xlink:href'] || sm.$?.['xlink:href'] || '';
+    const href = mediaEl?.$?.['xlink:href'] || sm.$?.['xlink:href'] || findFirstExtLinkHref(sm) || '';
     const mimeType = mediaEl?.$?.['mime-subtype'] || mediaEl?.$?.['mimetype'] || '';
     materials.push({ id, label, caption, href, mimeType });
   }
@@ -775,45 +824,66 @@ function buildFullTextHtml(bodyHtml, figures, tables, backMatter, supplementary,
     html += '</div>\n';
   }
 
-  // Add acknowledgments
-  if (backMatter.acknowledgments) {
-    html += '\n<div class="article-acknowledgments">\n';
-    html += '  <h3>Acknowledgments</h3>\n';
-    for (const part of backMatter.acknowledgments.split('\n')) {
-      if (part.trim()) html += `  <p>${part}</p>\n`;
+  // Add back-matter notes inline with the article flow. These are labels, not
+  // article section headings, so they must not populate the table of contents.
+  if (backMatter.acknowledgments || backMatter.footnotes.length || (funding && funding.length)) {
+    html += '\n<div class="article-backmatter-notes">\n';
+    if (backMatter.acknowledgments) {
+      for (const part of backMatter.acknowledgments.split('\n')) {
+        if (part.trim()) html += `  <p><strong>Acknowledgments:</strong> ${part}</p>\n`;
+      }
+    }
+    for (const fn of backMatter.footnotes) {
+      html += `  <p>${fn.html}</p>\n`;
+    }
+    if (funding && funding.length) {
+      for (const f of funding) {
+        const ids = f.awardIds.length ? ` (${escapeHtml(f.awardIds.join(', '))})` : '';
+        html += `  <p><strong>Funding:</strong> ${escapeHtml(f.source)}${ids}</p>\n`;
+      }
     }
     html += '</div>\n';
   }
 
-  // Add funding information
-  if (funding && funding.length) {
-    html += '\n<div class="article-funding">\n';
-    html += '  <h3>Funding</h3>\n  <ul>\n';
-    for (const f of funding) {
-      const ids = f.awardIds.length ? ` (${escapeHtml(f.awardIds.join(', '))})` : '';
-      html += `    <li>${escapeHtml(f.source)}${ids}</li>\n`;
+  // Add article notes and supplementary materials as one compact PDF-style block.
+  if (false && (backMatter.footnotes.length || (supplementary && supplementary.length))) {
+    html += '\n<div class="article-notes-box">\n';
+    for (const fn of backMatter.footnotes) {
+      html += `  <p>${fn.html}</p>\n`;
     }
-    html += '  </ul>\n</div>\n';
+    for (const sm of supplementary || []) {
+      const id = sm.id ? ` id="${escapeHtml(sm.id)}"` : '';
+      const label = sm.label ? escapeHtml(sm.label) : 'Supplementary Material:';
+      const href = sm.href ? escapeHtml(sm.href) : '';
+      const caption = sm.caption ? escapeHtml(sm.caption) : '';
+      html += `  <p${id} data-supplementary-note="true"><strong>${label}</strong>`;
+      if (href) html += ` <a href="${href}" target="_blank" rel="noopener">${caption || href}</a>`;
+      else if (caption) html += ` ${caption}`;
+      html += '</p>\n';
+    }
+    html += '</div>\n';
+    supplementary = [];
+    backMatter.footnotes = [];
   }
 
-  // Add supplementary materials
+  // Add supplementary materials as a real section immediately before references.
   if (supplementary && supplementary.length) {
     html += '\n<div class="article-supplementary">\n';
-    html += '  <h3>Supplementary Materials</h3>\n  <ul>\n';
+    html += '  <h3>Supplementary Materials</h3>\n';
     for (const sm of supplementary) {
       const label = sm.label ? escapeHtml(sm.label) : 'Supplementary Material';
       const caption = sm.caption ? ` — ${escapeHtml(sm.caption)}` : '';
       if (sm.href) {
-        html += `    <li><a href="${escapeHtml(sm.href)}" target="_blank">${label}</a>${caption}</li>\n`;
+        html += `    <p data-supplementary-note="true"><strong>${label}</strong> <a href="${escapeHtml(sm.href)}" target="_blank" rel="noopener">${caption || escapeHtml(sm.href)}</a></p>\n`;
       } else {
-        html += `    <li>${label}${caption}</li>\n`;
+        html += `    <p data-supplementary-note="true"><strong>${label}</strong>${caption}</p>\n`;
       }
     }
-    html += '  </ul>\n</div>\n';
+    html += '</div>\n';
   }
 
   // Add footnotes
-  if (backMatter.footnotes.length) {
+  if (false && backMatter.footnotes.length) {
     html += '\n<div class="article-footnotes">\n';
     for (const fn of backMatter.footnotes) {
       html += `  <p>${fn.html}</p>\n`;

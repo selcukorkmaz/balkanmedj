@@ -603,5 +603,24 @@ footer.bg-teal-900.text-white[aria-label="Site footer"] .border-teal-800 {
 .bmj-nav-logo {
   width: auto;
   height: 5rem;
-  filter: contrast(1.12) saturate(1.04);
 }
+
+/* Brand logo: drop the rasterizing contrast/saturate filter (it forced the SVG
+   onto a low-DPI compositing layer, which looked worse on 1x desktop displays).
+   Targeted by src so every page's nav/footer logo is covered without editing
+   each HTML file. */
+img[src$="logo-nav.svg"] {
+  height: 5rem !important;
+  width: auto !important;
+  filter: none !important;
+}
+
+/* Footer logo height; width auto so each <picture> source keeps its own ratio
+   (mobile SVG is portrait, desktop logo-footer3.png is square 1024px). The
+   per-page footer <img> is wrapped in a <picture> that swaps in the high-res
+   raster seal on desktop (>=1024px) where it downsamples sharply. */
+/* Footer logo keeps its original 48px square box (Tailwind h-12 w-12
+   object-contain). Each page wraps the <img> in a <picture> that swaps in the
+   high-res square raster seal (logo-footer3.png) on desktop (>=1024px) where it
+   downsamples sharply; mobile keeps the lighter SVG. No sizing overrides needed
+   — the square box + object-contain frames both sources cleanly. */

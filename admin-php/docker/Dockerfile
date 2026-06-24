@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libzip-dev libpng-dev libjpeg-dev libonig-dev unzip \
     && docker-php-ext-configure gd --with-jpeg \
     && docker-php-ext-install pdo_mysql zip gd mbstring \
-    && a2enmod rewrite \
+    && a2enmod rewrite headers \
     && rm -rf /var/lib/apt/lists/*
 
 # Note: dom, xml, simplexml, libxml are already bundled in the official php image.

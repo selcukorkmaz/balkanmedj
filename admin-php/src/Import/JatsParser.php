@@ -86,7 +86,7 @@ class JatsParser
         $bodyHtml = self::bodyToHtml($body);
         $figures = self::parseFigures($floats);
         $tables = self::parseTables($floats);
-        $supplementary = self::parseSupplementary($articleMeta, $back, $floats);
+        $supplementary = self::parseSupplementary($articleMeta, $body, $back, $floats);
         $funding = self::parseFunding($articleMeta);
         $permissions = self::parsePermissions($articleMeta);
         $backMatter = self::parseBackMatter($back);
@@ -326,6 +326,7 @@ class JatsParser
     }
     private static function sectionToHtml(\DOMElement $sec, string $headingTag): string
     {
+        if (self::isSupplementaryOnlySection($sec)) return '';
         $html = '';
         $title = self::text(self::child($sec, 'title'));
         if ($title !== '') $html .= "<$headingTag>" . self::esc($title) . "</$headingTag>\n";
@@ -341,6 +342,20 @@ class JatsParser
             elseif ($tag === 'table-wrap') $html .= self::tableWrapToHtml($child) . "\n";
         }
         return $html;
+    }
+    private static function isSupplementaryOnlySection(\DOMElement $sec): bool
+    {
+        $title = trim(self::text(self::child($sec, 'title')));
+        if (!preg_match('/^supplementary materials?$/i', $title)) return false;
+        foreach ($sec->childNodes as $child) {
+            if ($child->nodeType === XML_TEXT_NODE || $child->nodeType === XML_CDATA_SECTION_NODE) {
+                if (trim($child->nodeValue) !== '') return false;
+                continue;
+            }
+            if ($child->nodeType !== XML_ELEMENT_NODE) continue;
+            if ($child->nodeName !== 'title' && $child->nodeName !== 'supplementary-material') return false;
+        }
+        return true;
     }
     private static function listToHtml(\DOMElement $list): string
     {
@@ -446,11 +461,12 @@ class JatsParser
     }
 
     // ---- Supplementary / funding / permissions / back ----------------------
-    private static function parseSupplementary(?\DOMElement $meta, ?\DOMElement $back, ?\DOMElement $floats): array
+    private static function parseSupplementary(?\DOMElement $meta, ?\DOMElement $body, ?\DOMElement $back, ?\DOMElement $floats): array
     {
         $out = [];
         $sources = array_merge(
             $meta ? self::childList($meta, 'supplementary-material') : [],
+            $body ? self::bodySupplementaryMaterials($body) : [],
             $back ? self::childList($back, 'supplementary-material') : [],
             $floats ? self::childList($floats, 'supplementary-material') : []
         );
@@ -460,6 +476,7 @@ class JatsParser
             $media = self::child($sm, 'media') ?: self::child($sm, 'inline-supplementary-material');
             $href = $media ? $media->getAttribute('xlink:href') : '';
             if (!$href) $href = $sm->getAttribute('xlink:href');
+            if (!$href) $href = self::firstExtLinkHref($sm);
             $mime = $media ? ($media->getAttribute('mime-subtype') ?: $media->getAttribute('mimetype')) : '';
             $out[] = [
                 'id' => $sm->getAttribute('id'), 'label' => self::text(self::child($sm, 'label')),
@@ -467,6 +484,28 @@ class JatsParser
             ];
         }
         return $out;
+    }
+    private static function bodySupplementaryMaterials(\DOMElement $body): array
+    {
+        $out = [];
+        $walk = function (\DOMElement $sec) use (&$out, &$walk) {
+            foreach (self::childList($sec, 'supplementary-material') as $sm) $out[] = $sm;
+            foreach (self::childList($sec, 'sec') as $childSec) $walk($childSec);
+        };
+        foreach (self::childList($body, 'sec') as $sec) $walk($sec);
+        return $out;
+    }
+    private static function firstExtLinkHref(\DOMNode $node): string
+    {
+        if ($node->nodeType === XML_ELEMENT_NODE && $node->nodeName === 'ext-link') {
+            $href = $node->attributes?->getNamedItem('xlink:href')?->nodeValue ?? '';
+            if ($href) return $href;
+        }
+        foreach ($node->childNodes as $child) {
+            $href = self::firstExtLinkHref($child);
+            if ($href) return $href;
+        }
+        return '';
     }
     private static function parseFunding(?\DOMElement $meta): array
     {
@@ -591,30 +630,48 @@ class JatsParser
             if ($tbl['footnote']) $html .= "  <p class=\"table-footnote\">{$tbl['footnote']}</p>\n";
             $html .= "</div>\n";
         }
-        if (!empty($backMatter['acknowledgments'])) {
-            $html .= "\n<div class=\"article-acknowledgments\">\n  <h3>Acknowledgments</h3>\n";
-            foreach (explode("\n", $backMatter['acknowledgments']) as $part) if (trim($part)) $html .= "  <p>$part</p>\n";
+        if (!empty($backMatter['acknowledgments']) || !empty($backMatter['footnotes']) || $funding) {
+            $html .= "\n<div class=\"article-backmatter-notes\">\n";
+            if (!empty($backMatter['acknowledgments'])) {
+                foreach (explode("\n", $backMatter['acknowledgments']) as $part) if (trim($part)) $html .= "  <p><strong>Acknowledgments:</strong> $part</p>\n";
+            }
+            foreach ($backMatter['footnotes'] as $fn) $html .= "  <p>{$fn['html']}</p>\n";
+            if ($funding) {
+                foreach ($funding as $f) {
+                    $ids = $f['awardIds'] ? ' (' . self::esc(implode(', ', $f['awardIds'])) . ')' : '';
+                    $html .= '  <p><strong>Funding:</strong> ' . self::esc($f['source']) . "$ids</p>\n";
+                }
+            }
             $html .= "</div>\n";
         }
-        if ($funding) {
-            $html .= "\n<div class=\"article-funding\">\n  <h3>Funding</h3>\n  <ul>\n";
-            foreach ($funding as $f) {
-                $ids = $f['awardIds'] ? ' (' . self::esc(implode(', ', $f['awardIds'])) . ')' : '';
-                $html .= '    <li>' . self::esc($f['source']) . "$ids</li>\n";
+        if (false && (!empty($backMatter['footnotes']) || $supplementary)) {
+            $html .= "\n<div class=\"article-notes-box\">\n";
+            foreach ($backMatter['footnotes'] as $fn) $html .= "  <p>{$fn['html']}</p>\n";
+            foreach ($supplementary as $sm) {
+                $id = !empty($sm['id']) ? ' id="' . self::esc($sm['id']) . '"' : '';
+                $label = !empty($sm['label']) ? self::esc($sm['label']) : 'Supplementary Material:';
+                $href = !empty($sm['href']) ? self::esc($sm['href']) : '';
+                $caption = !empty($sm['caption']) ? self::esc($sm['caption']) : '';
+                $html .= "  <p$id data-supplementary-note=\"true\"><strong>$label</strong>";
+                if ($href) $html .= " <a href=\"$href\" target=\"_blank\" rel=\"noopener\">" . ($caption ?: $href) . "</a>";
+                elseif ($caption) $html .= " $caption";
+                $html .= "</p>\n";
             }
-            $html .= "  </ul>\n</div>\n";
+            $html .= "</div>\n";
+            $supplementary = [];
+            $backMatter['footnotes'] = [];
         }
         if ($supplementary) {
-            $html .= "\n<div class=\"article-supplementary\">\n  <h3>Supplementary Materials</h3>\n  <ul>\n";
+            $html .= "\n<div class=\"article-supplementary\">\n  <h3>Supplementary Materials</h3>\n";
             foreach ($supplementary as $sm) {
                 $label = $sm['label'] ? self::esc($sm['label']) : 'Supplementary Material';
                 $caption = $sm['caption'] ? ' — ' . self::esc($sm['caption']) : '';
-                if ($sm['href']) $html .= '    <li><a href="' . self::esc($sm['href']) . "\" target=\"_blank\">$label</a>$caption</li>\n";
-                else $html .= "    <li>$label$caption</li>\n";
+                if ($sm['href']) $html .= '    <p data-supplementary-note="true"><strong>' . $label . '</strong> <a href="' . self::esc($sm['href']) . '" target="_blank" rel="noopener">' . ($caption ?: self::esc($sm['href'])) . "</a></p>\n";
+                else $html .= "    <p data-supplementary-note=\"true\"><strong>$label</strong>$caption</p>\n";
             }
-            $html .= "  </ul>\n</div>\n";
+            $html .= "</div>\n";
         }
-        if ($backMatter['footnotes']) {
+        if (false && $backMatter['footnotes']) {
             $html .= "\n<div class=\"article-footnotes\">\n";
             foreach ($backMatter['footnotes'] as $fn) $html .= "  <p>{$fn['html']}</p>\n";
             $html .= "</div>\n";

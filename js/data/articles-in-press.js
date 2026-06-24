@@ -1059,5 +1059,43 @@ window.ARTICLES_IN_PRESS = [
         "aheadOfPrint": true,
         "supplementary": [],
         "publishedOnline": ""
+    },
+    {
+        "id": 2901,
+        "doi": "10.4274/balkanmedj.galenos.2026.2026.090626",
+        "pmid": "",
+        "type": "Editorial",
+        "issue": "",
+        "order": 20,
+        "pages": "",
+        "title": "Artificial Intelligence in Orthopaedics: The Future Through the Lens of Knee Surgery",
+        "pdfUrl": "js/data/pdfs/2901.pdf",
+        "volume": null,
+        "authors": [
+            {
+                "name": "Nihat Demirhan Demirkıran",
+                "affiliation": "",
+                "orcid": "0000-0002-0724-9672",
+                "corresponding": true,
+                "email": "drdemirhandemirkiran@gmail.com"
+            },
+            {
+                "name": "Wolf Petersen",
+                "affiliation": "",
+                "orcid": "0000-0002-6834-4438"
+            }
+        ],
+        "abstract": "",
+        "accepted": "",
+        "keywords": [],
+        "received": "",
+        "published": "",
+        "hasFullText": false,
+        "localPdfUrl": "js/data/pdfs/2901.pdf",
+        "previewText": "",
+        "abstractHtml": "",
+        "aheadOfPrint": true,
+        "supplementary": [],
+        "publishedOnline": "2026-06-23"
     }
 ];

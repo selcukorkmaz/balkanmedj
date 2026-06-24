@@ -243,7 +243,21 @@
       "Bash(ngrok config *)",
       "PowerShell(Get-Content *)",
       "PowerShell(Invoke-WebRequest -Uri \"http://localhost:8088\" -MaximumRedirection 0 -ErrorAction SilentlyContinue | Select-Object StatusCode, Headers)",
-      "Bash(docker exec *)"
+      "Bash(docker exec *)",
+      "Bash(file images/cover/cover1.jpeg)",
+      "Bash(identify images/cover/cover1.jpeg)",
+      "Bash(python -c \"import PIL; print\\('PIL', PIL.__version__\\)\")",
+      "Bash(python -c \"from PIL import Image; im=Image.open\\('images/issue-covers/vol43-6-cover.png'\\); print\\(im.size, im.mode\\)\")",
+      "Bash(python -c \"import fitz; print\\('pymupdf', fitz.__doc__\\)\")",
+      "Bash(which pdftoppm *)",
+      "Bash(python -c \"from PIL import Image; im=Image.open\\('images/vol43-6-cover_conv_0.png'\\); print\\('current:', im.size, im.mode\\)\")",
+      "Bash(cp images/vol43-6-cover_conv_0.png images/vol43-6-cover_conv_0.original-backup.png)",
+      "Bash(cd \"C:/Users/Selçuk/Documents/GitHub/balkanmedj\" && ls -la && echo \"---ZIP---\" && ls -la \"C:/Users/Selçuk/Downloads/Balkan-Medical-Journal-2026-43-6.zip\")",
+      "Bash(cd /tmp/bmj-zip && grep -i -n \"supplement\" BalkanMedJ-43-6-309.xml)",
+      "Bash(cd /tmp/bmj-zip && sed -n '228,255p' BalkanMedJ-43-6-309.xml)",
+      "Bash(cd /tmp/bmj-zip && echo \"=== 322 ===\"; grep -i -n \"supplement\" BalkanMedJ-43-6-322.xml | grep -iE \"title>|supplementary-material|label>|ext-link\"; echo \"=== 330 ===\"; grep -i -n \"supplement\" BalkanMedJ-43-6-330.xml | grep -iE \"title>|supplementary-material|label>|ext-link\")",
+      "Bash(sed -i 's#require\\('\\\\''./admin/lib/jats-parser.js'\\\\''\\)#require\\('\\\\''__TRACKED_VAR__/admin/lib/jats-parser.js'\\\\''\\)#' /tmp/patch-supp.js)",
+      "Bash(cp /tmp/patch-supp.js ./_patch-supp.js)"
     ]
   }
 }

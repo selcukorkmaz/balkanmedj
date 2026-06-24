@@ -4,6 +4,14 @@ namespace Repo;
 /** News & announcements (rows), exported to js/data/news.js. */
 class News
 {
+    private const PLACEHOLDER_IMAGE = 'images/placeholder-news.jpg';
+
+    private static function normalizeItem(array $item): array
+    {
+        $item['image'] = trim((string)($item['image'] ?? '')) ?: self::PLACEHOLDER_IMAGE;
+        return $item;
+    }
+
     public static function all(): array
     {
         $rows = \Db::all('SELECT data FROM news ORDER BY (date IS NULL), date DESC, id DESC');
@@ -46,7 +54,7 @@ class News
     {
         \Backup::snapshot();
         $news = self::all();
-        $item = array_merge(['id' => self::nextId(), 'featured' => false], \Http::body());
+        $item = self::normalizeItem(array_merge(['id' => self::nextId(), 'featured' => false], \Http::body()));
         array_unshift($news, $item);
         self::save($news);
         \Http::json($item, 201);
@@ -58,7 +66,7 @@ class News
         $news = self::all();
         foreach ($news as $i => $n) {
             if ((int)$n['id'] === (int)$p['id']) {
-                $news[$i] = array_merge($n, \Http::body(), ['id' => $n['id']]);
+                $news[$i] = self::normalizeItem(array_merge($n, \Http::body(), ['id' => $n['id']]));
                 self::save($news);
                 \Http::json($news[$i]);
             }

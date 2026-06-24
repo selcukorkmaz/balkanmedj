@@ -140,6 +140,7 @@ class ArticlesInPress
 
         $newId = Articles::nextId();
         $wiped = \Site::cleanArticleAssets($newId, true, true);
+        \Site::clearFullText($newId);
         $defaults = ['id' => $newId, 'order' => count($aip) + 1, 'aheadOfPrint' => true,
                      'volume' => null, 'issue' => '', 'pages' => '', 'published' => ''];
         $newArt = array_merge($defaults, $body, ['title' => $title, 'type' => $type, 'doi' => $doi]);
@@ -195,6 +196,7 @@ class ArticlesInPress
         array_splice($aip, $idx, 1);
         self::save($aip);
         $wiped = \Site::cleanArticleAssets($p['id'], true, true);
+        \Site::clearFullText($p['id']);
         \Http::json(['deleted' => true, '_cleanedOrphans' => $wiped]);
     }
 

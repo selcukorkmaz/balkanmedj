@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>Balkan Med J — Admin Panel</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -1346,7 +1349,11 @@
   <!-- URL base the admin is served under. Must match config.php base_path.
        Set to '' if the panel is hosted at a domain/subdomain root. -->
   <script>window.__BASE__ = '/yonetim';</script>
-  <script src="js/api.js?v=20260619-server-restart-hint"></script>
-  <script src="js/app.js?v=20260623-aip-fulltext-isolation"></script>
+  <script>
+    // Avoid stale admin assets through localhost/ngrok while iterating locally.
+    window.__ASSET_VERSION__ = String(Date.now());
+    document.write('<script src="js/api.js?v=' + window.__ASSET_VERSION__ + '"><\/script>');
+    document.write('<script src="js/app.js?v=' + window.__ASSET_VERSION__ + '"><\/script>');
+  </script>
 </body>
 </html>

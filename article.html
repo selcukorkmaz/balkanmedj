@@ -354,6 +354,33 @@
     .article-body p {
       margin-bottom: 1.05rem;
     }
+    .article-body .article-notes-box,
+    .article-body .article-backmatter-notes {
+      margin: 0 0 1.05rem;
+      padding: 0;
+      background: transparent;
+      color: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+    .article-body .article-notes-box p,
+    .article-body .article-backmatter-notes p {
+      margin-bottom: 1.05rem;
+    }
+    .article-body .article-notes-box p:last-child,
+    .article-body .article-backmatter-notes p:last-child {
+      margin-bottom: 0;
+    }
+    .article-body .article-notes-box strong,
+    .article-body .article-backmatter-notes strong {
+      color: inherit;
+      font-weight: 700;
+    }
+    .article-body .article-notes-box a,
+    .article-body .article-backmatter-notes a {
+      color: var(--color-teal-700);
+      overflow-wrap: anywhere;
+    }
     /* Sticky-navbar offset for in-article anchor jumps. Clicking a figure/table/
        reference cross-ref triggers a NATIVE hash jump, which otherwise parks the
        target flush at viewport top — hidden under the sticky header. This margin
@@ -1554,6 +1581,9 @@
       .article-meta-card {
         margin-bottom: 1rem;
       }
+      .article-meta-doi-item {
+        display: none;
+      }
       #article-secondary-slot-mobile {
         display: none !important;
         margin: 0 !important;
@@ -1854,7 +1884,7 @@
         <div>
           <div class="flex items-center space-x-2 mb-4">
             <div class="bmj-footer-logo-box w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden">
-              <img src="images/logo-footer.svg" alt="Balkan Medical Journal" class="h-12 w-12 object-contain" width="48" height="48">
+              <picture><source media="(min-width:1024px)" srcset="images/logo-footer3.png"><img src="images/logo-footer.svg" alt="Balkan Medical Journal" class="h-12 w-12 object-contain" width="48" height="48"></picture>
             </div>
             <div>
               <div class="font-bold text-lg">Balkan Medical Journal</div>
@@ -4576,8 +4606,11 @@
       var suppSectionHtml = '';
       if (article.supplementary && article.supplementary.length) {
         var suppItems = article.supplementary.map(function (sm, i) {
-          var label = (sm.label || 'Supplementary Material').replace(/[<>]/g, '');
-          var caption = sm.caption ? ' — ' + String(sm.caption).replace(/[<>]/g, '') : '';
+          var label = (sm.label || 'Supplementary Material').replace(/[<>]/g, '').replace(/\s*:\s*$/, '');
+          var rawCaption = sm.caption ? String(sm.caption).replace(/[<>]/g, '') : '';
+          // Drop captions that just repeat the file URL — the label is the link.
+          var captionIsUrl = !rawCaption || rawCaption === (sm.href || '') || /^(https?:)?\/\//i.test(rawCaption);
+          var caption = captionIsUrl ? '' : ' — ' + rawCaption;
           // Stable anchor id so in-text cross-references (#supp1 …) resolve here.
           var sid = (sm.id ? String(sm.id) : ('supp' + (i + 1))).replace(/[^a-zA-Z0-9_-]/g, '');
           var idAttr = ' id="' + sid + '" class="article-supp-item"';
@@ -4801,7 +4834,7 @@
               (isCoverPage ? '' :
                 '<div class="article-meta-card">' +
                   '<div class="article-meta-row">' +
-                    '<div class="article-meta-item">' +
+                    '<div class="article-meta-item article-meta-doi-item">' +
                       '<span class="text-gray-500">DOI:</span> ' +
                       '<span class="text-teal-700">' + escapeHtml(normalizeDoi(article.doi) || article.doi) + '</span>' +
                       (articleDoiValue
@@ -5320,7 +5353,7 @@
         // final entry isn't dropped; bail at any heading / structured section.
         var looksLikeRef = function (el) {
           if (!el || el.tagName !== 'P') return false;
-          if (el.closest && el.closest('.article-references, .article-acknowledgments, .article-footnotes, figure, table, .article-table-wrap')) return false;
+          if (el.closest && el.closest('.article-references, .article-acknowledgments, .article-footnotes, .article-notes-box, .article-backmatter-notes, figure, table, .article-table-wrap')) return false;
           var t = (el.textContent || '').replace(/\s+/g, ' ').trim();
           if (t.length < 12 || t.length > 1000) return false;
           return /(?:19|20)\d\d\s*;\s*[a-z]?\d/i.test(t);
@@ -5374,6 +5407,173 @@
       // global object and assigning the existing function is a no-op pointer.
       try { window.normalizeMsoReferenceList = normalizeMsoReferenceList; } catch (_) {}
 
+      function buildSupplementaryNote(sm) {
+        var p = document.createElement('p');
+        p.setAttribute('data-supplementary-note', 'true');
+        var sid = sm && sm.id ? String(sm.id).replace(/[^a-zA-Z0-9_-]/g, '') : '';
+        if (sid) p.id = sid;
+        var label = (sm && sm.label ? String(sm.label) : 'Supplementary Material').replace(/[<>]/g, '').replace(/\s*:\s*$/, '');
+        var href = sm && sm.href ? String(sm.href) : '';
+        var caption = sm && sm.caption ? String(sm.caption).replace(/[<>]/g, '') : '';
+        // The JATS caption is frequently just the file URL repeated — surfacing it
+        // as raw link text is noise. Treat a caption that's empty, a URL, or equal
+        // to the href as "no real caption" and let the LABEL be the clickable link.
+        var captionIsUrl = !caption || caption === href || /^(https?:)?\/\//i.test(caption);
+        if (href) {
+          var a = document.createElement('a');
+          a.href = href;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          a.className = 'text-blue-700 hover:underline';
+          if (captionIsUrl) {
+            var strongLink = document.createElement('strong');
+            strongLink.textContent = label;
+            a.appendChild(strongLink);
+            p.appendChild(a);
+          } else {
+            var strong = document.createElement('strong');
+            strong.textContent = label;
+            p.appendChild(strong);
+            p.appendChild(document.createTextNode(' '));
+            a.textContent = caption;
+            p.appendChild(a);
+          }
+        } else {
+          var strongOnly = document.createElement('strong');
+          strongOnly.textContent = label;
+          p.appendChild(strongOnly);
+          if (!captionIsUrl) p.appendChild(document.createTextNode(' ' + caption));
+        }
+        return p;
+      }
+
+      function ensureSupplementarySection(bodyNode) {
+        var existingSection = null;
+        var existingHeading = null;
+        Array.prototype.some.call(bodyNode.querySelectorAll('.article-supplementary, h1,h2,h3,h4,h5,h6'), function (el) {
+          var text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+          if (el.classList && el.classList.contains('article-supplementary')) {
+            existingSection = el;
+            return true;
+          }
+          if (/^supplementary materials?$/i.test(text)) existingHeading = el;
+          return !!existingHeading;
+        });
+        if (existingSection) return existingSection;
+        if (existingHeading) {
+          var wrapped = document.createElement('div');
+          wrapped.className = 'article-supplementary';
+          existingHeading.parentNode.insertBefore(wrapped, existingHeading);
+          var node = existingHeading;
+          while (node) {
+            var next = node.nextElementSibling;
+            // Stop before back-matter blocks AND before any figure/table: a stale
+            // standalone "Supplementary Materials" heading left over from older
+            // imports is often followed by the article's MAIN figures/tables, which
+            // must NOT be pulled into the supplementary section.
+            if (node !== existingHeading && node.matches('.article-acknowledgments, .article-footnotes, .article-notes-box, .article-backmatter-notes, .article-references, figure, .article-figure, .article-table-wrap, table')) break;
+            wrapped.appendChild(node);
+            node = next;
+          }
+          return wrapped;
+        }
+
+        var ref = bodyNode.querySelector('.article-references');
+        var section = document.createElement('div');
+        section.className = 'article-supplementary';
+        var h = document.createElement('h3');
+        h.textContent = 'Supplementary Materials';
+        section.appendChild(h);
+        if (ref && ref.parentNode) ref.parentNode.insertBefore(section, ref);
+        else bodyNode.appendChild(section);
+        return section;
+      }
+
+      function appendSupplementaryItems(section, supplementary) {
+        if (!section || !supplementary || !supplementary.length) return false;
+        var changed = false;
+        var existing = (section.textContent || '') + ' ' + Array.prototype.map.call(section.querySelectorAll('a[href]'), function (a) { return a.getAttribute('href') || ''; }).join(' ');
+        supplementary.forEach(function (sm) {
+          if (!sm) return;
+          var href = sm.href ? String(sm.href) : '';
+          var label = sm.label ? String(sm.label) : '';
+          if ((href && existing.indexOf(href) !== -1) || (label && existing.indexOf(label) !== -1 && !href)) return;
+          section.appendChild(buildSupplementaryNote(sm));
+          existing += ' ' + href + ' ' + label;
+          changed = true;
+        });
+        return changed;
+      }
+
+      function normalizeBackMatterNotes(bodyNode, supplementary) {
+        if (!bodyNode || !bodyNode.querySelectorAll) return false;
+        var changed = false;
+        Array.prototype.forEach.call(bodyNode.querySelectorAll('h1,h2,h3,h4,h5,h6'), function (h) {
+          var text = (h.textContent || '').replace(/\s+/g, ' ').trim();
+          if (!/^supplementary materials?$/i.test(text)) return;
+          var next = h.nextElementSibling;
+          // A real supplementary heading is followed by its material links. A bare
+          // heading followed by nothing, by back-matter, or by the article's MAIN
+          // figures/tables is a stale-import artifact — drop it so a clean
+          // supplementary section can be (re)built right before the references.
+          if (!next || next.matches('.article-footnotes, .article-notes-box, .article-backmatter-notes, .article-references, figure, .article-figure, .article-table-wrap, table')) {
+            h.remove();
+            changed = true;
+          }
+        });
+
+        var box = bodyNode.querySelector('.article-notes-box, .article-backmatter-notes');
+        var ack = bodyNode.querySelector('.article-acknowledgments');
+        var foot = bodyNode.querySelector('.article-footnotes');
+        var bakedSupp = bodyNode.querySelector('.article-supplementary');
+        var hasSupp = supplementary && supplementary.length;
+        if (!box && (ack || foot)) {
+          box = document.createElement('div');
+          box.className = 'article-backmatter-notes';
+          var anchor = ack || foot || bakedSupp || bodyNode.querySelector('.article-references') || null;
+          if (anchor && anchor.parentNode) anchor.parentNode.insertBefore(box, anchor);
+          else bodyNode.appendChild(box);
+          changed = true;
+        }
+
+        if (box && ack) {
+          Array.prototype.forEach.call(ack.querySelectorAll('p'), function (child) {
+            var p = document.createElement('p');
+            p.innerHTML = '<strong>Acknowledgments:</strong> ' + child.innerHTML;
+            box.appendChild(p);
+          });
+          ack.remove();
+          changed = true;
+        }
+
+        if (box && foot) {
+          Array.prototype.forEach.call(foot.children, function (child) {
+            if (child.tagName === 'P') box.appendChild(child);
+          });
+          foot.remove();
+          changed = true;
+        }
+
+        if (box && bakedSupp) {
+          Array.prototype.forEach.call(bakedSupp.querySelectorAll('li'), function (li) {
+            var section = ensureSupplementarySection(bodyNode);
+            var p = document.createElement('p');
+            p.setAttribute('data-supplementary-note', 'true');
+            if (li.id) p.id = li.id;
+            p.innerHTML = li.innerHTML;
+            section.appendChild(p);
+          });
+          if (!bakedSupp.querySelector('figure, .article-figure, .article-table-wrap, table')) bakedSupp.remove();
+          changed = true;
+        }
+
+        if (hasSupp) {
+          changed = appendSupplementaryItems(ensureSupplementarySection(bodyNode), supplementary) || changed;
+        }
+
+        return changed;
+      }
+
       // Convert heading text to Title Case, keeping short function words lowercase
       // unless they open the heading. Handles Turkish conjunctions too.
       function toTitleCase(str) {
@@ -5413,7 +5613,7 @@
         // Pass 1: collect heading-like paragraphs.
         var cands = [];
         Array.prototype.forEach.call(bodyNode.querySelectorAll('p'), function (p) {
-          if (p.closest('.article-references, .article-acknowledgments, .article-footnotes, .article-supplementary, figure, .article-figure, .article-table-wrap, table')) return;
+          if (p.closest('.article-references, .article-acknowledgments, .article-footnotes, .article-notes-box, .article-backmatter-notes, .article-supplementary, figure, .article-figure, .article-table-wrap, table')) return;
           var first = p.firstElementChild;
           if (!first || (first.tagName !== 'B' && first.tagName !== 'STRONG')) return;
           var text = (p.textContent || '').replace(/\s+/g, ' ').trim();
@@ -6313,6 +6513,8 @@
               if (p.classList && (p.classList.contains('article-references')
                 || p.classList.contains('article-acknowledgments')
                 || p.classList.contains('article-footnotes')
+                || p.classList.contains('article-notes-box')
+                || p.classList.contains('article-backmatter-notes')
                 || p.classList.contains('article-supplementary')
                 || p.classList.contains('article-table-wrap')
                 || p.classList.contains('article-figure')
@@ -6438,7 +6640,7 @@
         var blocks = Array.prototype.slice.call(blockList).reverse();
         blocks.forEach(function (block) {
           if (block.tagName === 'A') return; // ignore bare anchor targets
-          if (block.closest('.article-references, .article-acknowledgments, .article-footnotes')) return;
+          if (block.closest('.article-references, .article-acknowledgments, .article-footnotes, .article-notes-box, .article-backmatter-notes')) return;
           var id = block.id;
           if (!id) return;
           // Find the first paragraph (or list item) that contains a link to this block.
@@ -6450,7 +6652,7 @@
             if (block.contains(a)) continue;
             var host = a.closest('p, li, td, h1, h2, h3, h4, h5, h6');
             if (!host) continue;
-            if (host.closest('.article-references, .article-acknowledgments, .article-footnotes')) continue;
+            if (host.closest('.article-references, .article-acknowledgments, .article-footnotes, .article-notes-box, .article-backmatter-notes')) continue;
             hostParagraph = host;
             break;
           }
@@ -6474,6 +6676,8 @@
             if (el.classList.contains('article-references')
               || el.classList.contains('article-acknowledgments')
               || el.classList.contains('article-footnotes')
+              || el.classList.contains('article-notes-box')
+              || el.classList.contains('article-backmatter-notes')
               || el.classList.contains('article-supplementary')) continue;
             // Other media blocks aren't "text" for this check either —
             // they're the very things we're relocating.
@@ -6784,6 +6988,7 @@
               if (bakedSupp) bakedSupp.remove();
             }
             var articleBodyNode = container.querySelector('.article-body');
+            normalizeBackMatterNotes(articleBodyNode, article.supplementary || []);
             // Convert Word's MsoListParagraph references into a real <ol> so
             // the rest of the chain (citation linking, ref ID assignment)
             // has structured data to bind to.
@@ -6810,7 +7015,7 @@
               articleBodyNode.querySelectorAll('h1,h2,h3,h4'),
               function (h) { return /supplement/i.test(h.textContent || ''); }
             );
-            if (bodyHasSupp) {
+            if (bodyHasSupp || articleBodyNode.querySelector('.article-supplementary [data-supplementary-note], .article-notes-box [data-supplementary-note]')) {
               var autoSuppPanel = document.getElementById('supplementary-materials');
               if (autoSuppPanel) autoSuppPanel.remove();
             }
@@ -6880,6 +7085,18 @@
           return slug;
         }
 
+        // Back-matter notes (Acknowledgments, Ethics Committee Approval, Data
+        // Sharing Statement, Conflict of Interest, Funding, etc.) are article
+        // metadata, NOT reader-facing sections — they must never show up in the
+        // "In This Article" list. We exclude them two ways: by the container they
+        // live in, and by a label deny-list (covers stale imports that still ship
+        // these as real <h*> headings instead of the normalized notes block).
+        var BACKMATTER_TITLE_RE = /^(acknowledge?ments?|acknowledgement|ethics?(\s+committee)?\s+approval|ethical\s+approval|informed\s+consent|patient\s+consent|consent\s+for\s+publication|data\s+(sharing|availability)(\s+statement)?|conflicts?\s+of\s+interest|declaration\s+of\s+(competing\s+)?interests?|competing\s+interests?|authors?(hip)?\s+contributions?|contribution\s+of\s+authors|funding|financial\s+(support|disclosures?)|grant\s+support|peer[-\s]?review|disclosures?)\s*:?\s*$/i;
+        function isBackMatterHeading(heading, label) {
+          if (heading && heading.closest && heading.closest('.article-acknowledgments, .article-footnotes, .article-notes-box, .article-backmatter-notes')) return true;
+          return BACKMATTER_TITLE_RE.test(normalizeLabel(label));
+        }
+
         var usedIds = {};
         var targets = [];
 
@@ -6889,6 +7106,7 @@
           var heading = sec.querySelector('h2, h3, h4, h5, h6');
           var label = heading ? normalizeLabel(heading.textContent) : '';
           if (!label) return;
+          if (isBackMatterHeading(heading, label)) return;
           usedIds[sec.id] = true;
           // Clamp to ≥3: this site treats H2 as a main heading (= H3), so a mixed
           // H2/H3 source still produces a consistent TOC hierarchy.
@@ -6902,6 +7120,7 @@
             var label = normalizeLabel(heading.textContent);
             if (!label) return;
             if (label.toLowerCase().replace(/[:\-]+$/, '') === 'abstract') return;
+            if (isBackMatterHeading(heading, label)) return;
 
             var id = heading.id;
             if (!id) {
