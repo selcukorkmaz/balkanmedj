@@ -257,7 +257,18 @@
       "Bash(cd /tmp/bmj-zip && sed -n '228,255p' BalkanMedJ-43-6-309.xml)",
       "Bash(cd /tmp/bmj-zip && echo \"=== 322 ===\"; grep -i -n \"supplement\" BalkanMedJ-43-6-322.xml | grep -iE \"title>|supplementary-material|label>|ext-link\"; echo \"=== 330 ===\"; grep -i -n \"supplement\" BalkanMedJ-43-6-330.xml | grep -iE \"title>|supplementary-material|label>|ext-link\")",
       "Bash(sed -i 's#require\\('\\\\''./admin/lib/jats-parser.js'\\\\''\\)#require\\('\\\\''__TRACKED_VAR__/admin/lib/jats-parser.js'\\\\''\\)#' /tmp/patch-supp.js)",
-      "Bash(cp /tmp/patch-supp.js ./_patch-supp.js)"
+      "Bash(cp /tmp/patch-supp.js ./_patch-supp.js)",
+      "Bash(pdfinfo \"images/cover/vol43-6-cover.pdf\")",
+      "Bash(identify \"images/cover/vol43-6-cover conv 0.png\")",
+      "Bash(pdftocairo -png -r 300 -singlefile \"vol43-6-cover.pdf\" \"render_300\")",
+      "Bash(pdftocairo -png -r 600 -singlefile \"vol43-6-cover.pdf\" \"render_600\")",
+      "Bash(python -c \"from PIL import Image; [print\\(f, Image.open\\(f\\).size\\) for f in ['render_300.png','render_600.png','vol43-6-cover conv 0.png']]\")",
+      "Bash(pdfimages -list \"vol43-6-cover.pdf\")",
+      "Bash(pdffonts \"vol43-6-cover.pdf\")",
+      "Bash(tail -20 admin/_docout.log)",
+      "Bash(curl -s -o /dev/null -w \"articles=%{http_code}\\\\n\" http://localhost:3778/api/articles)",
+      "Bash(cat admin-php/public/.htaccess)",
+      "Bash(cat admin-php/.htaccess)"
     ]
   }
 }

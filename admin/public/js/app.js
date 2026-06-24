@@ -4391,6 +4391,7 @@ function htmlEditorToolbar(prefix, variant = 'full') {
       sBtn(`htmlEditorInsertImage('${prefix}')`, 'Resim ekle (bilgisayardan yükle veya URL)', _mediaImageIcon, 'Resim'),
       sBtn(`htmlEditorInsertVideo('${prefix}')`, 'Video ekle (bilgisayardan yükle veya URL)', _mediaVideoIcon, 'Video'),
       sBtn(`htmlEditorInsertYouTube('${prefix}')`, 'YouTube videosu ekle (bağlantı yapıştır)', _mediaYouTubeIcon, 'YouTube'),
+      sBtn(`htmlEditorInsertDocument('${prefix}')`, 'Belge ekle (PDF, Word, CSV, Excel, PowerPoint)', _mediaDocIcon, 'Belge'),
       sep,
       sBtn(`htmlEditorCmd('${prefix}','removeFormat')`, 'Seçili metnin biçimini temizle', clearIcon, 'Biçimi Temizle'),
     ];
@@ -9294,6 +9295,7 @@ function htmlEditorInsertHtml(prefix, html) {
 const _mediaImageIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 15l-5-5L5 21"/></svg>';
 const _mediaVideoIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="14" height="14" rx="2"/><path stroke-linecap="round" stroke-linejoin="round" d="M16 10l6-3v10l-6-3"/></svg>';
 const _mediaYouTubeIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg>';
+const _mediaDocIcon = '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path stroke-linecap="round" stroke-linejoin="round" d="M14 2v6h6M8 13h8M8 17h8"/></svg>';
 
 // Extract the 11-char video id from any common YouTube URL form (watch?v=,
 // youtu.be/, /embed/, /shorts/, /v/) or accept a bare id. Returns '' if none.
@@ -9336,6 +9338,46 @@ function _buildYouTubeHtml(id, caption) {
     + `allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen `
     + `style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>`
     + `${_mediaCaptionHtml(caption)}</figure>`;
+}
+
+// Document (PDF / Word / CSV / Excel / PowerPoint) — rendered as a download
+// card; PDFs may additionally be embedded inline as a preview iframe.
+const _DOC_TYPES = {
+  pdf:  { label: 'PDF',        color: '#dc2626' },
+  doc:  { label: 'Word',       color: '#2563eb' },
+  docx: { label: 'Word',       color: '#2563eb' },
+  csv:  { label: 'CSV',        color: '#16a34a' },
+  xls:  { label: 'Excel',      color: '#15803d' },
+  xlsx: { label: 'Excel',      color: '#15803d' },
+  ppt:  { label: 'PowerPoint', color: '#ea580c' },
+  pptx: { label: 'PowerPoint', color: '#ea580c' },
+};
+function _docExt(url) {
+  const m = String(url || '').split('#')[0].split('?')[0].match(/\.([a-z0-9]+)$/i);
+  return m ? m[1].toLowerCase() : '';
+}
+function _buildDocCardHtml(url, label, ext, topMargin) {
+  const t = _DOC_TYPES[ext] || { label: (ext || 'Dosya').toUpperCase(), color: '#475569' };
+  let fname = label;
+  if (!fname) { try { fname = decodeURIComponent(String(url).split('/').pop().split('?')[0]); } catch (_e) { fname = String(url).split('/').pop(); } }
+  const dl = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;color:#64748b"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>';
+  return `<a href="${esc(url)}" download target="_blank" rel="noopener" class="page-doc-link" `
+    + `style="display:flex;align-items:center;gap:12px;padding:12px 16px;margin-top:${topMargin ? '10px' : '0'};`
+    + `border:1px solid #e2e8f0;border-radius:8px;background:#f8fafc;text-decoration:none;color:#0f172a">`
+    + `<span style="flex:none;font-size:0.7rem;font-weight:700;letter-spacing:0.02em;color:#fff;background:${t.color};padding:3px 8px;border-radius:5px">${esc(t.label)}</span>`
+    + `<span style="flex:1;min-width:0;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(fname)}</span>`
+    + `${dl}</a>`;
+}
+function _buildDocumentHtml(url, label, caption, inline) {
+  const ext = _docExt(url);
+  let embed = '';
+  if (inline && ext === 'pdf') {
+    embed = `<div style="position:relative;width:100%;height:640px;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;background:#f1f5f9">`
+      + `<iframe src="${esc(url)}#view=FitH" title="${esc(label || 'PDF belge')}" loading="lazy" style="width:100%;height:100%;border:0"></iframe></div>`;
+  }
+  const maxW = embed ? 860 : 560;
+  return `<figure class="page-media page-document" style="margin:1.5rem auto;max-width:${maxW}px">`
+    + embed + _buildDocCardHtml(url, label, ext, !!embed) + _mediaCaptionHtml(caption) + `</figure>`;
 }
 
 // Capture the caret inside `el` NOW (before a modal steals focus) and return an
@@ -9489,10 +9531,49 @@ function openMediaYouTubeDialog(inserter) {
   });
 }
 
+// ── Document (PDF/Word/CSV/Excel/PowerPoint) ─────────────────────────────────
+function openMediaDocumentDialog(inserter) {
+  const body = `
+    <p class="text-xs" style="color:var(--text-muted)">Bir belge yükleyin (PDF, Word, CSV, Excel, PowerPoint) <strong>veya</strong> doğrudan belge URL'si girin. İndirilebilir bir bağlantı kartı olarak eklenir.</p>
+    <div>
+      <input type="file" accept=".pdf,.doc,.docx,.csv,.xls,.xlsx,.ppt,.pptx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/csv,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation" class="hidden">
+      <div class="flex items-center gap-2">
+        <button type="button" data-file-trigger class="btn btn-secondary">Dosya seç</button>
+        <span data-file-name class="text-xs" style="color:var(--text-faint)">Dosya seçilmedi</span>
+      </div>
+    </div>
+    <div><label class="label">veya Belge URL'si</label><input id="md-doc-url" class="input" placeholder="https://… .pdf  veya  images/documents/dosya.pdf"></div>
+    <div><label class="label">Görünen ad <span class="font-normal" style="color:var(--text-faint)">(opsiyonel)</span></label><input id="md-doc-label" class="input" placeholder="Boş bırakılırsa dosya adı kullanılır"></div>
+    <div><label class="label">Açıklama <span class="font-normal" style="color:var(--text-faint)">(opsiyonel)</span></label><input id="md-doc-cap" class="input" placeholder="Belgenin altında görünür"></div>
+    <label class="flex items-center gap-2 text-xs" style="color:var(--text-muted)"><input id="md-doc-inline" type="checkbox" checked> PDF ise sayfada gömülü önizleme göster (indirme bağlantısı yine eklenir)</label>`;
+  _openMediaDialog('Belge Ekle', body, async (overlay, close) => {
+    const fileInput = overlay.querySelector('input[type="file"]');
+    const url = overlay.querySelector('#md-doc-url').value.trim();
+    const label = overlay.querySelector('#md-doc-label').value.trim();
+    const cap = overlay.querySelector('#md-doc-cap').value.trim();
+    const inline = overlay.querySelector('#md-doc-inline').checked;
+    let finalUrl = url;
+    let finalLabel = label;
+    if (fileInput.files[0]) {
+      const btn = overlay.querySelector('[data-action="insert"]');
+      btn.disabled = true; btn.textContent = 'Yükleniyor…';
+      try {
+        const result = await API.uploadFile('/media/upload/document', fileInput.files[0], 'document');
+        finalUrl = result.url;
+        if (!finalLabel && result.name) finalLabel = result.name;
+      } catch (err) { toast('Belge yüklenemedi: ' + err.message, 'error'); btn.disabled = false; btn.textContent = 'Ekle'; return; }
+    }
+    if (!finalUrl) { toast('Bir dosya seçin veya URL girin', 'warning'); return; }
+    close();
+    inserter(_buildDocumentHtml(finalUrl, finalLabel, cap, inline));
+  });
+}
+
 // ── Thin wrappers: page editor (htmlEditor) ──────────────────────────────────
 function htmlEditorInsertImage(prefix) { openMediaImageDialog((html) => htmlEditorInsertHtml(prefix, html)); }
 function htmlEditorInsertVideo(prefix) { openMediaVideoDialog((html) => htmlEditorInsertHtml(prefix, html)); }
 function htmlEditorInsertYouTube(prefix) { openMediaYouTubeDialog((html) => htmlEditorInsertHtml(prefix, html)); }
+function htmlEditorInsertDocument(prefix) { openMediaDocumentDialog((html) => htmlEditorInsertHtml(prefix, html)); }
 
 // ── Thin wrappers: section editor (pageSectionBlock) ─────────────────────────
 function sectionInsertMedia(btn, kind) {
@@ -9502,6 +9583,7 @@ function sectionInsertMedia(btn, kind) {
   if (kind === 'image') openMediaImageDialog(inserter);
   else if (kind === 'video') openMediaVideoDialog(inserter);
   else if (kind === 'youtube') openMediaYouTubeDialog(inserter);
+  else if (kind === 'document') openMediaDocumentDialog(inserter);
 }
 
 function setHtmlEditorMode(prefix, mode) {
@@ -11742,17 +11824,19 @@ function renderVisualPageEditor(el, page, slug) {
     <div class="card card-padded mb-4 flex items-start gap-3" style="background:var(--brand-soft);border-color:var(--brand-soft-2)">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--brand);flex-shrink:0;margin-top:2px"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4z"/></svg>
       <div class="text-sm" style="color:var(--text-strong)">
-        Aşağıda sayfanın <strong>gerçek görünümü</strong> var. Değiştirmek istediğiniz <strong>herhangi bir yazıya tıklayıp</strong> yazın — başlıklar, kartlardaki sayılar, tablo değerleri, bağlantı metinleri. Yazıyı <strong>seçtiğinizde</strong> kalın/italik/başlık/renk araç çubuğu otomatik çıkar.
+        Aşağıda sayfanın <strong>gerçek görünümü</strong> var. Değiştirmek istediğiniz <strong>herhangi bir yazıya tıklayıp</strong> yazın — başlıklar, kartlardaki sayılar, tablo değerleri, bağlantı metinleri. Yazıyı <strong>seçtiğinizde</strong> kalın/italik/başlık/renk araç çubuğu otomatik çıkar. Resim, video veya belge eklemek için <strong>eklemek istediğiniz yere tıklayın</strong> — imlecin yanında küçük bir <strong>“Ekle”</strong> çubuğu belirir.
         <span style="color:var(--text-muted)">Tasarım ve düzen kilitlidir; yanlışlıkla bozamazsınız. Bitince <strong>Kaydet</strong>'e basın.</span>
       </div>
     </div>
 
-    <div id="pg-insert-bar" class="flex flex-wrap items-center gap-1.5 mb-3 px-3 py-2 rounded-lg" style="background:var(--bg-subtle);border:1px solid var(--border-soft)">
+    <!-- HTML (raw) mode only — in the visual editor a floating "Ekle" bar appears at the caret. -->
+    <div id="pg-insert-bar" class="hidden flex flex-wrap items-center gap-1.5 mb-3 px-3 py-2 rounded-lg" style="background:var(--bg-subtle);border:1px solid var(--border-soft)">
       <span class="text-xs font-semibold mr-1" style="color:var(--text-muted)">Ekle:</span>
       <button type="button" onclick="pgInsertMedia('image')" title="Resim ekle — imlecin bulunduğu yerden sonra eklenir" class="px-2.5 py-1.5 rounded-md hover:bg-white border border-transparent hover:border-slate-200 text-slate-700 text-xs font-medium flex items-center gap-1.5">${_mediaImageIcon}<span>Resim</span></button>
       <button type="button" onclick="pgInsertMedia('video')" title="Video ekle (yükle veya URL)" class="px-2.5 py-1.5 rounded-md hover:bg-white border border-transparent hover:border-slate-200 text-slate-700 text-xs font-medium flex items-center gap-1.5">${_mediaVideoIcon}<span>Video</span></button>
       <button type="button" onclick="pgInsertMedia('youtube')" title="YouTube videosu ekle (bağlantı yapıştır)" class="px-2.5 py-1.5 rounded-md hover:bg-white border border-transparent hover:border-slate-200 text-slate-700 text-xs font-medium flex items-center gap-1.5">${_mediaYouTubeIcon}<span>YouTube</span></button>
-      <span class="text-xs ml-1" style="color:var(--text-faint)">Eklemek istediğiniz yere önce tıklayın, sonra bir düğme seçin.</span>
+      <button type="button" onclick="pgInsertMedia('document')" title="Belge ekle (PDF, Word, CSV, Excel, PowerPoint)" class="px-2.5 py-1.5 rounded-md hover:bg-white border border-transparent hover:border-slate-200 text-slate-700 text-xs font-medium flex items-center gap-1.5">${_mediaDocIcon}<span>Belge</span></button>
+      <span class="text-xs ml-1" style="color:var(--text-faint)">İmleci HTML içinde eklemek istediğiniz yere koyun, sonra bir düğme seçin.</span>
     </div>
 
     <iframe id="pg-frame" title="Sayfa düzenleyici" style="width:100%;min-height:600px;border:1px solid var(--border-soft);border-radius:12px;background:#fff;display:block"></iframe>
@@ -11782,6 +11866,7 @@ function pgInsertMedia(kind) {
     };
     if (kind === 'image') openMediaImageDialog(inserter);
     else if (kind === 'video') openMediaVideoDialog(inserter);
+    else if (kind === 'document') openMediaDocumentDialog(inserter);
     else openMediaYouTubeDialog(inserter);
     return;
   }
@@ -11799,6 +11884,7 @@ function pgInsertMedia(kind) {
   const inserter = (html) => _pgInsertMediaHtml(html, savedRange);
   if (kind === 'image') openMediaImageDialog(inserter);
   else if (kind === 'video') openMediaVideoDialog(inserter);
+  else if (kind === 'document') openMediaDocumentDialog(inserter);
   else openMediaYouTubeDialog(inserter);
 }
 
@@ -11912,6 +11998,9 @@ function _wireVisualPageEditor(frame) {
   setTimeout(fit, 400);
   // Floating, design-system-aware formatting toolbar (appears on text selection).
   _installFormatToolbar(doc, root, fit);
+  // Floating "Ekle" (insert media) bar that appears at the caret (appears when
+  // the caret is placed, not on selection) — replaces the old pinned top bar.
+  _installInsertToolbar(doc, root, fit);
   // Snapshot-based undo/redo. The native contenteditable undo only covers the
   // browser's own edits; the format toolbar mutates the DOM directly
   // (surroundContents), which native undo misses — so we keep our own history
@@ -12709,6 +12798,87 @@ function _pgPrettyHtml(html) {
 // result always renders and always matches the live design; a non-technical
 // editor can't pick an off-brand size or colour. The bar lives outside
 // #pg-edit-root, so it is never part of the saved HTML.
+// Floating "Ekle" media-insert bar for the visual page editor. Unlike the
+// format toolbar (which appears on a text *selection*), this appears at the
+// *caret* when it's collapsed inside an editable region — so the user inserts
+// media exactly where they're pointing, instead of from a bar pinned at the top
+// of the page. Buttons reuse pgInsertMedia(); the bar lives outside #pg-edit-root
+// (appended to <body>) so it is never saved into the page.
+function _installInsertToolbar(doc, root, fit) {
+  if (doc.getElementById('bmj-insert-bar')) return;
+  const style = doc.createElement('style');
+  style.textContent = [
+    '#bmj-insert-bar{position:absolute;z-index:99998;display:none;background:#0f172a;border-radius:9px;padding:4px 5px;box-shadow:0 10px 30px rgba(2,6,23,.35);white-space:nowrap;user-select:none}',
+    '#bmj-insert-bar .ib-label{color:#94a3b8;font:700 11px Inter,system-ui,sans-serif;letter-spacing:.02em;padding:0 6px 0 4px;vertical-align:middle}',
+    '#bmj-insert-bar button{background:transparent;border:0;color:#e2e8f0;padding:5px 8px;border-radius:6px;cursor:pointer;font:600 12px Inter,system-ui,sans-serif;line-height:1;display:inline-flex;align-items:center;gap:5px;vertical-align:middle}',
+    '#bmj-insert-bar button:hover{background:rgba(255,255,255,.16);color:#fff}',
+    '#bmj-insert-bar svg{width:15px;height:15px}',
+  ].join('');
+  doc.head.appendChild(style);
+
+  const bar = doc.createElement('div');
+  bar.id = 'bmj-insert-bar';
+  bar.innerHTML =
+    '<span class="ib-label">Ekle</span>'
+    + `<button type="button" data-ins="image" title="Resim ekle (yükle veya URL)">${_mediaImageIcon}Resim</button>`
+    + `<button type="button" data-ins="video" title="Video ekle (yükle veya URL)">${_mediaVideoIcon}Video</button>`
+    + `<button type="button" data-ins="youtube" title="YouTube videosu ekle">${_mediaYouTubeIcon}YouTube</button>`
+    + `<button type="button" data-ins="document" title="Belge ekle (PDF, Word, CSV, Excel, PowerPoint)">${_mediaDocIcon}Belge</button>`;
+  doc.body.appendChild(bar);
+
+  // Don't let a click on the bar collapse/move the caret it's about to use.
+  bar.addEventListener('mousedown', (e) => e.preventDefault());
+  bar.addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-ins]');
+    if (b) pgInsertMedia(b.getAttribute('data-ins'));
+  });
+
+  const inEditable = (node) => {
+    while (node && node !== root) {
+      if (node.nodeType === 1 && node.getAttribute && node.getAttribute('contenteditable') === 'true') return true;
+      node = node.parentNode;
+    }
+    return false;
+  };
+  const inLink = (node) => {
+    while (node && node !== root) { if (node.tagName === 'A') return true; node = node.parentNode; }
+    return false;
+  };
+  const hide = () => { bar.style.display = 'none'; };
+  const place = () => {
+    const s = doc.getSelection();
+    // Only for a collapsed caret — a real selection belongs to the format bar.
+    if (!s || s.rangeCount === 0 || !s.isCollapsed) { hide(); return; }
+    const node = s.anchorNode;
+    if (!inEditable(node)) { hide(); return; }
+    const el = node && node.nodeType === 3 ? node.parentNode : node;
+    if (inLink(el)) { hide(); return; } // caret in a link → format bar owns it
+    let rect = s.getRangeAt(0).getBoundingClientRect();
+    if (!rect || (!rect.width && !rect.height && !rect.top && !rect.left)) {
+      rect = el && el.getBoundingClientRect ? el.getBoundingClientRect() : null;
+    }
+    if (!rect) { hide(); return; }
+    bar.style.display = 'block';
+    const de = doc.documentElement;
+    const bw = bar.offsetWidth;
+    let left = rect.left + de.scrollLeft;
+    let top = rect.bottom + de.scrollTop + 6; // sit just below the caret line
+    left = Math.max(6, Math.min(left, (de.clientWidth || 1200) - bw - 6));
+    bar.style.left = left + 'px';
+    bar.style.top = top + 'px';
+  };
+
+  // Stay out of the way while typing: hide on keydown, reappear once the caret
+  // settles (or immediately on a mouse click that places the caret).
+  let idle;
+  const scheduleShow = () => { clearTimeout(idle); idle = setTimeout(place, 350); };
+  doc.addEventListener('keydown', hide);
+  doc.addEventListener('keyup', scheduleShow);
+  doc.addEventListener('mouseup', () => setTimeout(place, 0));
+  doc.addEventListener('selectionchange', scheduleShow);
+  doc.addEventListener('scroll', () => { if (bar.style.display === 'block') place(); }, true);
+}
+
 function _installFormatToolbar(doc, root, fit) {
   if (doc.getElementById('bmj-fmt-bar')) return;
   const SIZES = [['Küçük', 'var(--text-sm)'], ['Normal', ''], ['Büyük', 'var(--text-xl)'], ['Çok Büyük', 'var(--text-2xl)']];
@@ -13018,6 +13188,7 @@ function toggleVisualPageRaw(slug) {
     frame.srcdoc = _visualPageSrcdoc(raw.value);
     raw.classList.add('hidden');
     frame.classList.remove('hidden');
+    document.getElementById('pg-insert-bar')?.classList.add('hidden'); // visual mode uses the floating caret bar
     btn.textContent = 'Gelişmiş (HTML)';
     _visualRawMode = false;
   } else {
@@ -13027,6 +13198,7 @@ function toggleVisualPageRaw(slug) {
     raw.value = content;
     frame.classList.add('hidden');
     raw.classList.remove('hidden');
+    document.getElementById('pg-insert-bar')?.classList.remove('hidden'); // no caret in raw mode → show the static inserter
     raw.oninput = () => markDirty();
     btn.textContent = 'Görsel düzenleyiciye dön';
     _visualRawMode = true;
@@ -13075,6 +13247,7 @@ function pageSectionBlock(section, index) {
           <button type="button" onclick="sectionInsertMedia(this,'image')" title="Resim ekle (bilgisayardan yükle veya URL)" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-medium flex items-center gap-1.5">${_mediaImageIcon}<span>Resim</span></button>
           <button type="button" onclick="sectionInsertMedia(this,'video')" title="Video ekle (bilgisayardan yükle veya URL)" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-medium flex items-center gap-1.5">${_mediaVideoIcon}<span>Video</span></button>
           <button type="button" onclick="sectionInsertMedia(this,'youtube')" title="YouTube videosu ekle (bağlantı yapıştır)" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-medium flex items-center gap-1.5">${_mediaYouTubeIcon}<span>YouTube</span></button>
+          <button type="button" onclick="sectionInsertMedia(this,'document')" title="Belge ekle (PDF, Word, CSV, Excel, PowerPoint)" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-medium flex items-center gap-1.5">${_mediaDocIcon}<span>Belge</span></button>
           <div class="w-px bg-gray-300 mx-1 self-stretch"></div>
           <button type="button" onclick="sectionCmd(this,'removeFormat')" title="Seçili metnin biçimini temizle" class="px-2 py-1 rounded hover:bg-gray-200 text-gray-600 text-xs font-medium flex items-center gap-1.5"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17 10L3 3m0 0l7 14 2-5 5-2M3 3l18 18"/></svg><span>Biçimi Temizle</span></button>
         </div>

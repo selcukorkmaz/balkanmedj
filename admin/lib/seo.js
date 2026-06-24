@@ -28,6 +28,8 @@ const STATIC_PAGES = [
   { loc: '/editorial-board.html', changefreq: 'yearly', priority: '0.5' },
   { loc: '/for-authors.html', changefreq: 'yearly', priority: '0.6' },
   { loc: '/for-reviewers.html', changefreq: 'yearly', priority: '0.5' },
+  { loc: '/manuscript-submission.html', changefreq: 'yearly', priority: '0.5' },
+  { loc: '/journal-metrics.html', changefreq: 'yearly', priority: '0.5' },
   { loc: '/policies.html', changefreq: 'yearly', priority: '0.5' },
   { loc: '/contact.html', changefreq: 'yearly', priority: '0.4' },
   { loc: '/news.html', changefreq: 'weekly', priority: '0.6' },

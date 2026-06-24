@@ -54,6 +54,10 @@
     if (issuePageSubtitle) {
       issuePageSubtitle.textContent = (queryLabel || 'Archive Issue') + (queryYear ? (' — ' + queryYear) : '');
     }
+    // Keep the browser tab title in sync with the archive issue being viewed,
+    // instead of inheriting the static "Current Issue" title from the HTML.
+    var archiveTabLabel = (queryLabel || 'Archive Issue') + (queryYear ? (' (' + queryYear + ')') : '');
+    document.title = archiveTabLabel + ' — Balkan Medical Journal';
   }
 
   // Breadcrumb context: Home > Current Issue (default) OR Home > Archive > [Issue]

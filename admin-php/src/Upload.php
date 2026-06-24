@@ -16,6 +16,7 @@ class Upload
         'figure'        => '/\.(jpe?g|png|webp|gif|svg|tiff?|pdf)$/i',
         'supplementary' => '/\.(pdf|zip|jpe?g|png|webp|gif|svg|mp4|mov|webm|mp3|wav|ogg|csv|txt|docx?|xlsx?)$/i',
         'docx'          => '/\.docx$/i',
+        'document'      => '/\.(pdf|docx?|csv|xlsx?|pptx?)$/i',
     ];
 
     public static function sanitize(string $name): string

@@ -306,6 +306,17 @@ const ALLOWED_MIME = {
     'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
     'application/octet-stream',
   ]),
+  // document = downloadable office/PDF files inserted into pages (PDF/Word/CSV/Excel/PowerPoint).
+  // octet-stream is allowed because browsers often send it for Office files; the
+  // extension allowlist below still constrains what is accepted.
+  document: new Set([
+    'application/pdf',
+    'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+    'text/csv', 'application/csv', 'text/plain',
+    'application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    'application/vnd.ms-powerpoint', 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+    'application/octet-stream',
+  ]),
 };
 const ALLOWED_EXT = {
   pdf: /\.pdf$/i,
@@ -316,6 +327,7 @@ const ALLOWED_EXT = {
   figure: /\.(jpe?g|png|webp|gif|svg|tiff?|pdf)$/i,
   supplementary: /\.(pdf|zip|jpe?g|png|webp|gif|svg|mp4|mov|webm|mp3|wav|ogg|csv|txt|docx?|xlsx?)$/i,
   docx: /\.docx$/i,
+  document: /\.(pdf|docx?|csv|xlsx?|pptx?)$/i,
 };
 function makeUploader(kind, maxFileSize = 100 * 1024 * 1024) {
   return multer({
@@ -337,6 +349,7 @@ const uploadXml = makeUploader('xml');
 const uploadZip = makeUploader('zip');
 const uploadFigure = makeUploader('figure');
 const uploadSupp = makeUploader('supplementary');
+const uploadDocument = makeUploader('document', 50 * 1024 * 1024);
 const uploadDocx = makeUploader('docx');
 
 // ===========================================================================
@@ -2779,6 +2792,23 @@ app.post('/api/media/upload/video', uploadVideo.single('video'), (req, res) => {
   }
 });
 
+// Upload a document (PDF/Word/CSV/Excel/PowerPoint) for embedding/linking in
+// pages. Stored under images/documents/ — a directory the public site serves
+// statically — and returned as a root-relative URL.
+app.post('/api/media/upload/document', uploadDocument.single('document'), (req, res) => {
+  try {
+    if (!req.file) return res.status(400).json({ error: 'No file' });
+    const docDir = path.join(dio.PATHS.imagesDir, 'documents');
+    if (!fs.existsSync(docDir)) fs.mkdirSync(docDir, { recursive: true });
+    const safeName = path.basename(req.file.originalname).replace(/[^a-zA-Z0-9._-]/g, '_');
+    const dest = path.join(docDir, safeName);
+    fs.renameSync(req.file.path, dest);
+    res.json({ url: `images/documents/${safeName}`, name: req.file.originalname, path: dest });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Upload editorial board member photo into images/editorial-board/
 app.post('/api/media/upload/editorial-photo', uploadImage.single('image'), (req, res) => {
   try {
@@ -3978,6 +4008,16 @@ app.post('/api/social-media/sync', (_req, res) => {
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
+});
+
+// ===========================================================================
+//  API 404 (JSON)
+// ===========================================================================
+// Any unmatched /api/* request returns JSON instead of Express's default HTML
+// error page. Without this, a stale server (missing a newly added route) would
+// reply with "<!DOCTYPE …" and break clients that expect JSON.
+app.use('/api', (req, res) => {
+  res.status(404).json({ error: `Bu işlem rotası bulunamadı (${req.method} ${req.originalUrl}). Admin sunucusu eski kodla çalışıyor olabilir; yeniden başlatın.` });
 });
 
 // ===========================================================================

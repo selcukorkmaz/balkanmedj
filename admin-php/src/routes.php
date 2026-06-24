@@ -92,6 +92,7 @@ $r->delete('/issues/:volume/:issue/files/:type', fn($p) => Repo\Issues::handleDe
 $r->post('/media/upload/pdf',             fn() => Repo\Media::uploadPdf());
 $r->post('/media/upload/image',           fn() => Repo\Media::uploadImage());
 $r->post('/media/upload/video',           fn() => Repo\Media::uploadVideo());
+$r->post('/media/upload/document',        fn() => Repo\Media::uploadDocument());
 $r->post('/media/upload/editorial-photo', fn() => Repo\Media::uploadEditorialPhoto());
 $r->post('/media/upload/editorial-cv',    fn() => Repo\Media::uploadEditorialCv());
 $r->post('/media/upload/pdf-batch',       fn() => Repo\Media::uploadPdfBatch());

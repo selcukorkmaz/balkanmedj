@@ -3700,6 +3700,15 @@
         setMeta('meta[property="og:description"]', 'content', pageDescription);
         setMeta('meta[property="og:type"]', 'content', 'article');
         if (pageUrl) setMeta('meta[property="og:url"]', 'content', pageUrl);
+        if (pageUrl) {
+          var canonical = document.querySelector('link[rel="canonical"]');
+          if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.setAttribute('rel', 'canonical');
+            document.head.appendChild(canonical);
+          }
+          canonical.setAttribute('href', pageUrl);
+        }
         setMeta('meta[name="twitter:title"]', 'content', pageTitle);
         setMeta('meta[name="twitter:description"]', 'content', pageDescription);
       })();

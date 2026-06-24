@@ -424,16 +424,28 @@ function convertBodyToHtml(body) {
   return body.sec.map((sec) => convertSectionToHtml(sec, 'h3')).join('\n');
 }
 
+// A section that is nothing but a container for <supplementary-material> (plus
+// its title) is dropped from the body HTML — the materials are rendered as the
+// canonical "Supplementary Materials" section from article.supplementary, so
+// keeping the raw section would duplicate it and leave a stray heading in the
+// table of contents. This is intentionally TITLE-AGNOSTIC: "Supplementary
+// Materials", "Supporting Information", "Additional Files", "Online Supplement",
+// etc. are all handled the same way. It only triggers when the section actually
+// holds supplementary material AND has no other flow content of its own.
 function isSupplementaryOnlySection(sec) {
-  const title = textContent(sec.title?.[0]).trim();
-  if (!/^supplementary materials?$/i.test(title)) return false;
   if (sec.$$) {
-    return sec.$$.every((child) => {
+    let hasSupp = false;
+    let hasOther = false;
+    for (const child of sec.$$) {
       const tag = child['#name'];
-      return tag === '__text__' || tag === 'title' || tag === 'supplementary-material';
-    });
+      if (tag === 'supplementary-material') hasSupp = true;
+      else if (tag !== '__text__' && tag !== 'title') hasOther = true;
+    }
+    return hasSupp && !hasOther;
   }
-  return !(sec.p?.length || sec.list?.length || sec['def-list']?.length || sec['table-wrap']?.length || sec.sec?.length);
+  const hasSupp = !!(sec['supplementary-material']?.length);
+  const hasOther = !!(sec.p?.length || sec.list?.length || sec['def-list']?.length || sec['table-wrap']?.length || sec.sec?.length);
+  return hasSupp && !hasOther;
 }
 
 function convertSectionToHtml(sec, headingTag) {
@@ -578,10 +590,29 @@ function convertTableToHtml(tableEl) {
 }
 
 // --- Supplementary materials ---
-function collectBodySupplementaryMaterials(sections, materials) {
-  for (const sec of sections || []) {
-    materials.push(...(sec['supplementary-material'] || []));
-    collectBodySupplementaryMaterials(sec.sec || [], materials);
+// Collect every <supplementary-material> element anywhere beneath `node`,
+// regardless of how deeply it is nested or what section/title wraps it. This
+// keeps detection structure-agnostic: body-direct, inside a <sec> (any title),
+// a sub-section, a back-matter <sec sec-type="supplementary-material">, etc.
+function collectSupplementaryDeep(node, materials) {
+  if (!node || typeof node !== 'object') return;
+  // Preferred path: ordered children array from explicitChildren.
+  if (Array.isArray(node.$$)) {
+    for (const child of node.$$) {
+      if (child && child['#name'] === 'supplementary-material') materials.push(child);
+      else collectSupplementaryDeep(child, materials);
+    }
+    return;
+  }
+  // Fallback: walk named child arrays (when $$ is unavailable).
+  for (const key of Object.keys(node)) {
+    if (key === '$' || key === '#name' || key === '_') continue;
+    const val = node[key];
+    const arr = Array.isArray(val) ? val : [val];
+    for (const item of arr) {
+      if (key === 'supplementary-material') materials.push(item);
+      else if (item && typeof item === 'object') collectSupplementaryDeep(item, materials);
+    }
   }
 }
 
@@ -612,22 +643,34 @@ function findFirstExtLinkHref(el) {
 }
 
 function parseSupplementary(articleMeta, body, back, floatsGroup) {
+  const sources = [];
+  // Deep-collect from every region a <supplementary-material> may legally live
+  // in. These subtrees are disjoint, so no element is gathered twice.
+  collectSupplementaryDeep(articleMeta, sources);
+  collectSupplementaryDeep(body, sources);
+  collectSupplementaryDeep(back, sources);
+  collectSupplementaryDeep(floatsGroup, sources);
+
   const materials = [];
-  const bodyMaterials = [];
-  collectBodySupplementaryMaterials(body.sec || [], bodyMaterials);
-  const sources = [
-    ...(articleMeta['supplementary-material'] || []),
-    ...bodyMaterials,
-    ...(back['supplementary-material'] || []),
-    ...(floatsGroup['supplementary-material'] || []),
-  ];
+  const seen = new Set();
   for (const sm of sources) {
     const id = sm.$?.id || '';
     const label = textContent(sm.label?.[0]) || '';
     const caption = (sm.caption?.[0]?.p || []).map((p) => textContent(p)).join(' ');
     const mediaEl = sm.media?.[0] || sm['inline-supplementary-material']?.[0];
-    const href = mediaEl?.$?.['xlink:href'] || sm.$?.['xlink:href'] || findFirstExtLinkHref(sm) || '';
-    const mimeType = mediaEl?.$?.['mime-subtype'] || mediaEl?.$?.['mimetype'] || '';
+    const href =
+      mediaEl?.$?.['xlink:href'] ||
+      sm['self-uri']?.[0]?.$?.['xlink:href'] ||
+      sm.$?.['xlink:href'] ||
+      findFirstExtLinkHref(sm) ||
+      '';
+    const mimeType =
+      mediaEl?.$?.['mime-subtype'] || mediaEl?.$?.['mimetype'] ||
+      sm['self-uri']?.[0]?.$?.['content-type'] || '';
+    // Guard against the rare case where the same element is reachable twice.
+    const key = id || href || label;
+    if (key && seen.has(key)) continue;
+    if (key) seen.add(key);
     materials.push({ id, label, caption, href, mimeType });
   }
   return materials;

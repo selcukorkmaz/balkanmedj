@@ -48,6 +48,14 @@ class Media
         \Http::json(['url' => "images/videos/{$name}"]);
     }
 
+    public static function uploadDocument(): void
+    {
+        $f = \Upload::single('document', 'document');
+        $name = \Upload::sanitize($f['name']);
+        \Upload::moveTo($f['tmp'], self::imagesDir() . "/documents/{$name}");
+        \Http::json(['url' => "images/documents/{$name}", 'name' => $f['name']]);
+    }
+
     public static function uploadEditorialPhoto(): void
     {
         $f = \Upload::single('image', 'image');

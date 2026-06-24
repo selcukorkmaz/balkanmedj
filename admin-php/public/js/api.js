@@ -54,6 +54,20 @@ async function readErrorMessage(res, url) {
   return text.slice(0, 200) || res.statusText;
 }
 
+// Build a clear error for an XHR upload that returned a non-2xx status. Mirrors
+// readErrorMessage but works off the already-read XHR response (sync).
+function xhrErrorMessage(xhr, data, url) {
+  if (data && data.error) return data.error;
+  const body = (xhr.responseText || '').trimStart();
+  if (body.startsWith('<')) {
+    if (xhr.status === 404) {
+      return `Sunucuda bu işlem rotası bulunamadı (${url}). Admin sunucusu eski kodla çalışıyor olabilir; admin sunucusunu kapatıp yeniden başlatın.`;
+    }
+    return `Sunucu beklenmeyen HTML yanıtı döndürdü (HTTP ${xhr.status}, ${url}).`;
+  }
+  return xhr.statusText || 'Yükleme hatası';
+}
+
 const API = {
   async get(url) {
     const res = await fetch(`${API_BASE}/api${url}`);
@@ -97,8 +111,11 @@ const API = {
     for (const [k, v] of Object.entries(extraFields)) form.append(k, v);
     const res = await fetch(`${API_BASE}/api${url}`, { method: 'POST', body: form });
     handleAuthError(res);
-    if (!res.ok) throw new Error((await res.json()).error || res.statusText);
-    return res.json();
+    // Use the HTML-safe parsers (same as get/post/put/del). A stale admin
+    // server missing this route returns a 404 HTML page; raw res.json() would
+    // throw the cryptic "Unexpected token '<'" instead of an actionable error.
+    if (!res.ok) throw new Error(await readErrorMessage(res, url));
+    return parseJsonResponse(res, url);
   },
 
   async uploadFiles(url, files, fieldName = 'xml') {
@@ -108,8 +125,8 @@ const API = {
     for (const file of files) form.append(fieldName + '[]', file);
     const res = await fetch(`${API_BASE}/api${url}`, { method: 'POST', body: form });
     handleAuthError(res);
-    if (!res.ok) throw new Error((await res.json()).error || res.statusText);
-    return res.json();
+    if (!res.ok) throw new Error(await readErrorMessage(res, url));
+    return parseJsonResponse(res, url);
   },
 
   // Like uploadFile but uses XHR so the caller can track byte-level upload progress.
@@ -132,10 +149,10 @@ const API = {
           reject(new Error('Oturum süresi doldu'));
           return;
         }
-        let data = {};
+        let data = null;
         try { data = JSON.parse(xhr.responseText); } catch { /* non-JSON */ }
-        if (xhr.status >= 200 && xhr.status < 300) resolve(data);
-        else reject(new Error(data.error || xhr.statusText || 'Yükleme hatası'));
+        if (xhr.status >= 200 && xhr.status < 300) { resolve(data || {}); return; }
+        reject(new Error(xhrErrorMessage(xhr, data, url)));
       };
       xhr.onerror = () => reject(new Error('Ağ hatası'));
       xhr.send(form);
@@ -163,10 +180,10 @@ const API = {
           reject(new Error('Oturum süresi doldu'));
           return;
         }
-        let data = {};
+        let data = null;
         try { data = JSON.parse(xhr.responseText); } catch { /* non-JSON */ }
-        if (xhr.status >= 200 && xhr.status < 300) resolve(data);
-        else reject(new Error(data.error || xhr.statusText || 'Yükleme hatası'));
+        if (xhr.status >= 200 && xhr.status < 300) { resolve(data || {}); return; }
+        reject(new Error(xhrErrorMessage(xhr, data, url)));
       };
       xhr.onerror = () => reject(new Error('Ağ hatası'));
       xhr.send(form);

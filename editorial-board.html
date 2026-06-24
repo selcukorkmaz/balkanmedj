@@ -14,6 +14,7 @@
   <meta name="twitter:title" content="Editorial Board — Balkan Medical Journal">
   <meta name="twitter:description" content="Meet the Editorial Board of Balkan Medical Journal. Our editors are leading experts across medical disciplines from the Balkans and beyond.">
   <meta name="twitter:image" content="https://balkanmedicaljournal.org/images/cover/cover1.jpeg">
+  <link rel="canonical" href="https://balkanmedicaljournal.org/editorial-board.html">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" sizes="any">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
@@ -781,14 +782,74 @@
         return html + '</div>';
       }
 
+      function memberPhoto(member) {
+        if (member && member.photo) return member.photo;
+        var cvPortraitFiles = {
+          'BALKAN-CV(3).jpg': true,
+          'BALKAN-CV(4).jpg': true,
+          'BALKAN-CV(5).jpg': true,
+          'BALKAN-CV.jpg': true,
+          'BALKAN-CV1.jpg': true,
+          'BALKAN-CV10.jpg': true,
+          'BALKAN-CV11.jpg': true,
+          'BALKAN-CV12.jpg': true,
+          'BALKAN-CV13.jpg': true,
+          'BALKAN-CV14.jpg': true,
+          'BALKAN-CV15.jpg': true,
+          'BALKAN-CV16.jpg': true,
+          'BALKAN-CV17.jpg': true,
+          'BALKAN-CV18.jpg': true,
+          'BALKAN-CV19.jpg': true,
+          'BALKAN-CV2(2).jpg': true,
+          'BALKAN-CV20.jpg': true,
+          'BALKAN-CV21.jpg': true,
+          'BALKAN-CV22.jpg': true,
+          'BALKAN-CV23.jpg': true,
+          'BALKAN-CV24.jpg': true,
+          'BALKAN-CV25.jpg': true,
+          'BALKAN-CV26.jpg': true,
+          'BALKAN-CV28.jpg': true,
+          'BALKAN-CV29.jpg': true,
+          'BALKAN-CV3.jpg': true,
+          'BALKAN-CV30.jpg': true,
+          'BALKAN-CV31.jpg': true,
+          'BALKAN-CV32.jpg': true,
+          'BALKAN-CV33.jpg': true,
+          'BALKAN-CV34.jpg': true,
+          'BALKAN-CV35.jpg': true,
+          'BALKAN-CV36.jpg': true,
+          'BALKAN-CV37.jpg': true,
+          'BALKAN-CV38.jpg': true,
+          'BALKAN-CV39.jpg': true,
+          'BALKAN-CV4.jpg': true,
+          'BALKAN-CV40.jpg': true,
+          'BALKAN-CV41.jpg': true,
+          'BALKAN-CV5.jpg': true,
+          'BALKAN-CV6.jpg': true,
+          'BALKAN-CV7.jpg': true,
+          'BALKAN-CV8.jpg': true,
+          'BALKAN-CV9.jpg': true
+        };
+        var links = (member && member.links) || [];
+        for (var i = 0; i < links.length; i += 1) {
+          var url = links[i] && links[i].url;
+          if (url && /\.(jpe?g|png)$/i.test(url)) {
+            var fileName = url.split('/').pop();
+            if (cvPortraitFiles[fileName]) return 'images/editorial-board/photos/' + fileName;
+          }
+        }
+        return '';
+      }
+
       function buildCard(member, featured) {
         var initials = (member.name || '').split(' ').map(function(n) { return n[0] || ''; }).join('').slice(0, 3);
         var bgClass = featured ? 'bg-gray-50 border-gray-200 board-card board-card-featured' : 'bg-white border-gray-200 board-card';
         var sizeClass = featured ? 'md:col-span-2 lg:col-span-3 board-card-wrap' : 'board-card-wrap';
         var html = '<div class="' + sizeClass + '"><div class="' + bgClass + ' rounded-xl border p-5">';
         if (featured) {
-          var av = member.photo
-            ? '<img src="' + esc(member.photo) + '" alt="' + esc(member.name) + '" class="editor-avatar-image" loading="lazy" decoding="async" onerror="this.remove();var f=this.parentElement.querySelector(\'.editor-avatar-fallback\');if(f)f.style.display=\'flex\';"><span class="editor-avatar-fallback">' + esc(initials) + '</span>'
+          var photo = memberPhoto(member);
+          var av = photo
+            ? '<img src="' + esc(photo) + '" alt="' + esc(member.name) + '" class="editor-avatar-image" loading="lazy" decoding="async" onerror="this.remove();var f=this.parentElement.querySelector(\'.editor-avatar-fallback\');if(f)f.style.display=\'flex\';"><span class="editor-avatar-fallback">' + esc(initials) + '</span>'
             : '<span class="editor-avatar-fallback" style="display:flex;">' + esc(initials) + '</span>';
           html += '<div class="flex flex-col sm:flex-row sm:items-center gap-4">'
             + '<div class="editor-avatar">' + av + '</div>'
@@ -801,16 +862,18 @@
             + memberLinksHtml(member)
             + '</div></div>';
         } else {
-          var av2 = member.photo
-            ? '<div class="board-member-avatar mb-2"><img src="' + esc(member.photo) + '" alt="' + esc(member.name) + '" class="w-16 h-16 rounded-full object-cover border" loading="lazy" decoding="async" onerror="this.style.display=\'none\';"></div>'
+          var photo2 = memberPhoto(member);
+          var av2 = photo2
+            ? '<div class="editor-avatar flex-shrink-0"><img src="' + esc(photo2) + '" alt="' + esc(member.name) + '" class="editor-avatar-image" loading="lazy" decoding="async" onerror="this.remove();var f=this.parentElement.querySelector(\'.editor-avatar-fallback\');if(f)f.style.display=\'flex\';"><span class="editor-avatar-fallback">' + esc(initials) + '</span></div>'
             : '';
-          html += av2
+          html += (av2 ? '<div class="flex items-start gap-4">' + av2 + '<div class="min-w-0 flex-1">' : '')
             + '<h3 class="board-member-name text-lg font-bold text-gray-900">' + esc(member.name) + '</h3>'
             + (member.title ? '<p class="board-member-title text-sm mt-1">' + esc(member.title) + '</p>' : '')
             + (member.period ? '<p class="board-member-title text-sm mt-1">' + esc(member.period) + '</p>' : '')
             + (member.affiliation ? '<p class="board-member-affiliation text-sm mt-1">' + esc(member.affiliation) + '</p>' : '')
             + (member.email ? '<p class="board-member-email text-sm mt-1"><a href="mailto:' + esc(member.email) + '" class="text-teal-700 hover:text-teal-800 transition-colors">' + esc(member.email) + '</a></p>' : '')
-            + memberLinksHtml(member);
+            + memberLinksHtml(member)
+            + (av2 ? '</div></div>' : '');
         }
         return html + '</div></div>';
       }
