@@ -881,7 +881,7 @@
       function sectionPanelHtml(sec) {
         if (sec.layout === 'names') {
           var names = (sec.names || []);
-          var h = '<div class="reviewer-header"><h2>' + esc(sec.label) + '</h2><p>' + names.length + ' kişi</p></div><ol class="reviewer-list">';
+          var h = '<div class="reviewer-header"><h2>' + esc(sec.label) + '</h2><p>' + names.length + ' members</p></div><ol class="reviewer-list">';
           names.forEach(function(n) { h += '<li>' + esc(n) + '</li>'; });
           return h + '</ol>';
         }
