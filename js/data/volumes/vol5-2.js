@@ -1704,7 +1704,7 @@ window.PAGE_ARTICLES = [
     "localPdfUrl": "js/data/pdfs/760.pdf",
     "pdfUrl": "js/data/pdfs/760.pdf",
     "pmid": "",
-    "imageUrl": "images/297-308-t1.jpg",
+    "imageUrl": "images/articles/297-308-t1.jpg",
     "supplementary": [],
     "externalLinks": []
   },

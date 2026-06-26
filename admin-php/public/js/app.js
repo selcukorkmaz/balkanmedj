@@ -4148,7 +4148,7 @@ async function saveAip(isNew) {
 }
 
 // News
-const NEWS_PLACEHOLDER_IMAGE = 'images/placeholder-news.jpg';
+const NEWS_PLACEHOLDER_IMAGE = 'images/news/placeholder-news.jpg';
 
 route('/news', async (el) => {
   const news = await API.get('/news');

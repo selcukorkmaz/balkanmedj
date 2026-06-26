@@ -4,7 +4,7 @@ namespace Repo;
 /** News & announcements (rows), exported to js/data/news.js. */
 class News
 {
-    private const PLACEHOLDER_IMAGE = 'images/placeholder-news.jpg';
+    private const PLACEHOLDER_IMAGE = 'images/news/placeholder-news.jpg';
 
     private static function normalizeItem(array $item): array
     {

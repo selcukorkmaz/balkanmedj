@@ -14,7 +14,7 @@ window.HOMEPAGE_DATA = {
                 "active": true,
                 "endsAt": "",
                 "embedUrl": "",
-                "imageUrl": "images/31d27100-56cc-4cd5-a202-a7432982450e.JPG",
+                "imageUrl": "images/news/31d27100-56cc-4cd5-a202-a7432982450e.JPG",
                 "startsAt": "",
                 "videoUrl": "",
                 "buttonUrl": "",

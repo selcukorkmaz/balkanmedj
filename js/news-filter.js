@@ -8,7 +8,7 @@
   var filterContainer = document.getElementById('news-filters');
   var loadMoreBtn = document.getElementById('news-load-more');
   // Local fallback for news cards without an image.
-  var DEFAULT_THUMBNAIL = 'images/placeholder-news.jpg';
+  var DEFAULT_THUMBNAIL = 'images/news/placeholder-news.jpg';
   if (!container || !window.NEWS) return;
 
   function parseNewsDate(value) {
@@ -37,7 +37,7 @@
 
   function getThumbnail(item) {
     var image = item && item.image ? String(item.image).trim() : '';
-    if (image && image !== 'images/placeholder-news.jpg') {
+    if (image && image !== 'images/news/placeholder-news.jpg') {
       return normalizeThumbnail(image);
     }
 

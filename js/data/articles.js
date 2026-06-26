@@ -131776,7 +131776,7 @@ window.ARTICLES = [
     "abstract": "",
     "accepted": "",
     "featured": true,
-    "imageUrl": "images/297-308-t1.jpg",
+    "imageUrl": "images/articles/297-308-t1.jpg",
     "keywords": [],
     "received": "",
     "citations": 0,

@@ -1512,7 +1512,7 @@ app.put('/api/editorial/extended', (req, res) => {
 //  NEWS
 // ===========================================================================
 
-const NEWS_PLACEHOLDER_IMAGE = 'images/placeholder-news.jpg';
+const NEWS_PLACEHOLDER_IMAGE = 'images/news/placeholder-news.jpg';
 
 function normalizeNewsItem(item) {
   const out = { ...item };

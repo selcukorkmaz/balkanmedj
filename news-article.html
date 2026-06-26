@@ -416,7 +416,7 @@
 
       function getRealThumbnail(newsItem) {
         var image = newsItem && newsItem.image ? String(newsItem.image).trim() : '';
-        if (image && image !== 'images/placeholder-news.jpg') {
+        if (image && image !== 'images/news/placeholder-news.jpg') {
           return normalizeThumbnail(image);
         }
 
