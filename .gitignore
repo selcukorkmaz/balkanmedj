@@ -5,3 +5,7 @@ admin/backups/
 admin/uploads/
 admin/imports/
 admin/auth-config.json
+admin-php/config.php
+admin-php/uploads/
+admin-php/imports/
+admin-php/backups/

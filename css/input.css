@@ -1,0 +1,626 @@
+/* Google Fonts - Inter (UI) + Crimson Pro (headings & editorial content) */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+/* Tell Tailwind v4 where to scan for classes */
+@source "../*.html";
+@source "../js/**/*.js";
+
+/* Custom theme extensions */
+@theme {
+  --font-sans: 'Inter', 'system-ui', 'sans-serif';
+  --font-serif: 'Crimson Pro', 'Georgia', 'Times New Roman', 'serif';
+}
+
+/* Hide scrollbar but keep scroll */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+  /* Sticky-nav offset: when jumping to any in-page anchor (#id), leave room for
+     the fixed/sticky top navigation so the target heading is not hidden beneath
+     it. The main nav is ~6rem tall (5rem on small screens); 7rem clears it with
+     a small breathing gap on every page. article.html opts out (it has its own
+     JS-measured offset) to avoid stacking both offsets. */
+  scroll-padding-top: 7rem;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Crimson Pro — Headings & editorial content */
+h1, h2, h3, h4 {
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+}
+
+/* Focus Visible Outlines (Accessibility) */
+*:focus-visible {
+  outline: 2px solid var(--color-teal-700, #0f6a81);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Skip to Content Link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 100;
+  padding: 8px 16px;
+  background: var(--color-teal-700, #0f6a81);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0 0 8px 8px;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Smooth Transitions */
+.transition-menu {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mobile-menu-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.mobile-menu-active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Dropdown */
+.nav-dropdown {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+.nav-dropdown.show,
+.group:hover .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Card hover effects */
+.article-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion transitions */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  font-size: 1.1875rem; /* 19px — matches article body */
+  line-height: 1.8;
+}
+
+.accordion-content table {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Tab panel prose content */
+[role="tabpanel"] {
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  font-size: 1.1875rem; /* 19px — matches article body */
+  line-height: 1.8;
+}
+
+[role="tabpanel"] table {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.accordion-content.open {
+  max-height: 2000px;
+}
+
+/* Tab indicator */
+.tab-active {
+  border-bottom: 3px solid var(--color-teal-700, #0f6a81);
+  color: var(--color-teal-700, #0f6a81);
+  font-weight: 600;
+}
+
+/* Scroll to top button */
+.scroll-top-btn {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.scroll-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Badge/Pill styles */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+/* Toast notification */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 60;
+  padding: 12px 24px;
+  background: var(--color-teal-700, #0f6a81);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Article Full Text Body */
+.article-body {
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  font-size: 1.1875rem; /* 19px — compensates for Crimson Pro's smaller x-height */
+}
+
+.article-body h3 {
+  font-size: 1.5rem; /* 24px — clear section breaks */
+  font-weight: 700;
+  color: #111827;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #E5E7EB;
+}
+
+.article-body h4 {
+  font-size: 1.3125rem; /* 21px — sub-section headings */
+  font-weight: 600;
+  color: #1F2937;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.article-body p {
+  margin-bottom: 1rem;
+  line-height: 1.8; /* slightly more generous for serif */
+  color: #374151;
+}
+
+.article-body ul,
+.article-body ol {
+  margin-bottom: 1rem;
+  padding-left: 2.25rem;
+  color: #374151;
+  line-height: 1.8;
+}
+
+.article-body ul { list-style-type: disc; }
+.article-body ol { list-style-type: decimal; }
+
+.article-body li {
+  margin-bottom: 0.25rem;
+}
+
+.article-body section {
+  margin-bottom: 1.5rem;
+  scroll-margin-top: 7rem;
+}
+
+.article-body figure {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.article-body figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+
+.article-body figcaption {
+  font-family: 'Inter', system-ui, sans-serif; /* captions stay sans-serif */
+  margin-top: 0.75rem;
+  font-size: 0.8125rem;
+  color: #6B7280;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Figure captions: only the "FIG. N." label should be bold. Defensively force
+   normal weight on the surrounding text so accidental <b>/<strong> wrappers
+   (e.g. content pasted from a bold heading) don't bleed into the caption. */
+.article-body .article-figure > p,
+.article-body .article-figure > figcaption,
+.article-body .article-table-wrap > p {
+  font-weight: 400;
+  font-style: normal;
+}
+.article-body .article-figure > p strong,
+.article-body .article-figure > figcaption strong,
+.article-body .article-table-wrap > p.table-label strong {
+  font-weight: 700;
+}
+
+/* Figure/Table size variants — controlled by data-size attribute set in the
+   admin's "Figür Ekle" dialog. The block stays centered (margin: auto) and
+   its inner <img> follows via max-width:100%. "full" removes the padding/
+   border so it can run edge-to-edge in the column.
+   Selectors include both the live site (.article-body) AND the admin
+   contenteditable editors ([id$="-visual"]) so the editor preview matches. */
+.article-body .article-figure[data-size="small"],
+.article-body .article-table-wrap[data-size="small"],
+[id$="-visual"] .article-figure[data-size="small"],
+[id$="-visual"] .article-table-wrap[data-size="small"] {
+  max-width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-body .article-figure[data-size="medium"],
+.article-body .article-table-wrap[data-size="medium"],
+[id$="-visual"] .article-figure[data-size="medium"],
+[id$="-visual"] .article-table-wrap[data-size="medium"] {
+  max-width: 72%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-body .article-figure[data-size="large"],
+.article-body .article-table-wrap[data-size="large"],
+[id$="-visual"] .article-figure[data-size="large"],
+[id$="-visual"] .article-table-wrap[data-size="large"] {
+  max-width: 100%;
+}
+.article-body .article-figure[data-size="full"],
+.article-body .article-table-wrap[data-size="full"],
+[id$="-visual"] .article-figure[data-size="full"],
+[id$="-visual"] .article-table-wrap[data-size="full"] {
+  max-width: 100%;
+  padding: 0.5rem 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+}
+@media (max-width: 47.99rem) {
+  /* On narrow screens, treat small/medium as readable widths (≥60%) so the
+     figure doesn't shrink to a thumbnail on phones. */
+  .article-body .article-figure[data-size="small"],
+  .article-body .article-table-wrap[data-size="small"],
+  [id$="-visual"] .article-figure[data-size="small"],
+  [id$="-visual"] .article-table-wrap[data-size="small"] {
+    max-width: 80%;
+  }
+  .article-body .article-figure[data-size="medium"],
+  .article-body .article-table-wrap[data-size="medium"],
+  [id$="-visual"] .article-figure[data-size="medium"],
+  [id$="-visual"] .article-table-wrap[data-size="medium"] {
+    max-width: 100%;
+  }
+}
+
+.article-body figcaption .figure-source {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #9CA3AF;
+}
+
+.article-body table {
+  font-family: 'Inter', system-ui, sans-serif; /* tables stay sans-serif for data clarity */
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.875rem;
+}
+
+.article-body table thead th {
+  background: #F3F4F6;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 2px solid #D1D5DB;
+  color: #111827;
+}
+
+.article-body table tbody td {
+  padding: 0.625rem 0.75rem;
+  border-bottom: 1px solid #E5E7EB;
+  color: #374151;
+}
+
+.article-body table tbody tr:hover {
+  background: #F9FAFB;
+}
+
+.article-body .references-list {
+  font-family: 'Inter', system-ui, sans-serif; /* references stay sans-serif for DOIs/URLs */
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  font-size: 0.8125rem;
+  color: #4B5563;
+  line-height: 1.6;
+}
+
+.article-body .references-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+/* Prose content containers use serif (about, news-article, article abstract) */
+.prose {
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.8;
+}
+
+/* Article card titles use serif */
+.article-card h3 {
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  font-size: 1.25rem; /* 20px — prominent but not overpowering in cards */
+  line-height: 1.4;
+}
+
+/* Abstract text uses serif for readability */
+.abstract-text {
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.8;
+}
+
+/* Article Table of Contents */
+.article-toc {
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+}
+
+.article-toc a {
+  display: block;
+  padding: 0.375rem 0;
+  font-size: 0.875rem;
+  color: #4B5563;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.article-toc a:hover {
+  color: var(--color-teal-700, #0f6a81);
+}
+
+.article-toc a.active {
+  color: var(--color-teal-700, #0f6a81);
+  font-weight: 600;
+}
+
+/* Article Tabs */
+.article-tab {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #6B7280;
+  border-bottom: 3px solid transparent;
+  background: none;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.article-tab:hover {
+  color: var(--color-teal-700, #0f6a81);
+}
+
+.article-tab.active {
+  color: var(--color-teal-700, #0f6a81);
+  border-bottom-color: var(--color-teal-700, #0f6a81);
+  font-weight: 600;
+}
+
+/* Print Styles */
+@media print {
+  nav, footer, .scroll-top-btn, .no-print, .mobile-menu {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #555;
+  }
+
+  .article-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  h1, h2, h3 {
+    break-after: avoid;
+  }
+
+  /* Print: show all tab panels */
+  .article-tab-panel { display: block !important; }
+  .article-tab { display: none !important; }
+
+  .article-body figure {
+    break-inside: avoid;
+  }
+
+  .article-body table {
+    break-inside: avoid;
+  }
+}
+
+/* Search overlay */
+#search-overlay {
+  animation: searchFadeIn 0.15s ease-out;
+}
+
+@keyframes searchFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#search-overlay > div {
+  animation: searchSlideIn 0.2s ease-out;
+}
+
+@keyframes searchSlideIn {
+  from { opacity: 0; transform: scale(0.96) translateY(-8px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+#search-input {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#search-input:focus,
+#search-input:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#search-results a:hover,
+#search-results a.search-focused {
+  background: #F9FAFB;
+}
+
+/* Loading spinner */
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Brand palette harmonization */
+:root {
+  --color-teal-50: #eff7fa;
+  --color-teal-100: #d8ecf2;
+  --color-teal-200: #b8dce7;
+  --color-teal-300: #90c6d6;
+  --color-teal-400: #62a9bf;
+  --color-teal-500: #3d8ca6;
+  --color-teal-600: #25738f;
+  --color-teal-700: #0f6a81;
+  --color-teal-800: #0b556c;
+  --color-teal-900: #05384d;
+  --bmj-brand-900: var(--color-teal-900);
+  --bmj-brand-800: var(--color-teal-800);
+  --bmj-brand-700: var(--color-teal-700);
+  --bmj-brand-gradient: linear-gradient(180deg, var(--bmj-brand-900) 0%, var(--bmj-brand-800) 100%);
+}
+
+[class~="bg-gradient-to-br"][class~="from-teal-900"][class~="via-teal-800"][class~="to-teal-900"] {
+  background: var(--bmj-brand-gradient);
+}
+
+[class~="bg-gradient-to-r"][class~="from-teal-700"][class~="to-teal-800"] {
+  background: var(--bmj-brand-gradient);
+}
+
+[class~="bg-gradient-to-br"][class~="from-teal-700"][class~="to-teal-800"] {
+  background: var(--bmj-brand-gradient);
+}
+
+footer.bg-teal-900.text-white[aria-label="Site footer"] {
+  background: var(--bmj-brand-gradient);
+}
+
+footer.bg-teal-900.text-white[aria-label="Site footer"] .border-teal-800 {
+  border-color: color-mix(in oklab, var(--bmj-brand-700) 65%, black);
+}
+
+.bmj-footer-logo-box {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 2px;
+}
+
+/* Brand logo sizing: preserve detail in the full circular seal on desktop. */
+.bmj-nav-shell {
+  height: 6rem;
+}
+
+.bmj-nav-logo {
+  width: auto;
+  height: 5rem;
+}
+
+/* Brand logo: drop the rasterizing contrast/saturate filter (it forced the SVG
+   onto a low-DPI compositing layer, which looked worse on 1x desktop displays).
+   Targeted by src so every page's nav/footer logo is covered without editing
+   each HTML file. */
+img[src$="logo-nav.svg"] {
+  height: 5rem !important;
+  width: auto !important;
+  filter: none !important;
+}
+
+/* Footer logo height; width auto so each <picture> source keeps its own ratio
+   (mobile SVG is portrait, desktop logo-footer3.png is square 1024px). The
+   per-page footer <img> is wrapped in a <picture> that swaps in the high-res
+   raster seal on desktop (>=1024px) where it downsamples sharply. */
+/* Footer logo keeps its original 48px square box (Tailwind h-12 w-12
+   object-contain). Each page wraps the <img> in a <picture> that swaps in the
+   high-res square raster seal (logo-footer3.png) on desktop (>=1024px) where it
+   downsamples sharply; mobile keeps the lighter SVG. No sizing overrides needed
+   — the square box + object-contain frames both sources cleanly. */

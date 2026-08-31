@@ -2,10 +2,25 @@
   "version": "0.0.1",
   "configurations": [
     {
+<<<<<<< HEAD
       "name": "static-site",
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "8099"],
       "port": 8099
+=======
+      "name": "admin",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["server.js"],
+      "cwd": "admin",
+      "port": 3000
+    },
+    {
+      "name": "site",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["-y", "http-server", "-p", "8099", "-c-1"],
+      "port": 8099,
+      "autoPort": true
+>>>>>>> a0c00439046565b11985b23d0a454bd66b351aa4
     }
   ]
 }

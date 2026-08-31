@@ -1,0 +1,38 @@
+# Local development & verification stack only (NOT for production).
+# Production runs on cPanel shared hosting (Apache + PHP 8 + MySQL), no Docker.
+services:
+  web:
+    build: ./docker
+    ports:
+      - "8088:80"
+    volumes:
+      - ..:/var/www/html        # mount the whole repo (public site + admin-php)
+    environment:
+      DB_HOST: db
+      DB_NAME: balkanmedj
+      DB_USER: balkanmedj
+      DB_PASS: balkanmedj
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: balkanmedj
+      MYSQL_USER: balkanmedj
+      MYSQL_PASSWORD: balkanmedj
+    ports:
+      - "3307:3306"
+    volumes:
+      - bmj_db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  bmj_db:

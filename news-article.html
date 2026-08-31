@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News — Balkan Medical Journal</title>
+  <meta name="description" content="News article from Balkan Medical Journal.">
+  <meta property="og:title" content="News — Balkan Medical Journal">
+  <meta property="og:image" content="https://balkanmedicaljournal.org/images/cover/cover1.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="News — Balkan Medical Journal">
+  <meta name="twitter:description" content="News article from Balkan Medical Journal.">
+  <meta name="twitter:image" content="https://balkanmedicaljournal.org/images/cover/cover1.jpeg">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .article-share-strip {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.55rem;
+      margin: 0 0 1.75rem;
+      padding: 0.7rem 0.95rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.85rem;
+      background: #ffffff;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+    }
+    .article-share-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-right: 0.2rem;
+    }
+    .article-share-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.05rem;
+      height: 2.05rem;
+      border-radius: 9999px;
+      background: #f1f5f9;
+      color: #475569;
+      border: 1px solid transparent;
+      transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+      cursor: pointer;
+      text-decoration: none;
+      padding: 0;
+    }
+    .article-share-btn:hover,
+    .article-share-btn:focus-visible {
+      background: #0f766e;
+      color: #ffffff;
+      transform: translateY(-1px);
+      outline: none;
+    }
+    .article-share-btn svg {
+      width: 0.95rem;
+      height: 0.95rem;
+      fill: currentColor;
+    }
+    .article-share-btn[data-share-state="copied"] {
+      background: #16a34a;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Skip to Content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ══════════════════════════════════════════════════════════
+       NAVIGATION
+       ══════════════════════════════════════════════════════════ -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bmj-nav-shell flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2 flex-shrink-0" aria-label="Balkan Medical Journal Home">
+          <img src="images/logo-nav.svg" alt="Balkan Medical Journal" class="bmj-nav-logo" width="80" height="80">
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center space-x-1">
+          <a href="index.html" data-nav-page="index.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">Home</a>
+
+          <!-- About Dropdown -->
+          <div class="relative group">
+            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center whitespace-nowrap">
+              About
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="nav-dropdown absolute left-0 mt-1 w-52 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+              <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-700">About the Journal</a>
+              <a href="editorial-board.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-700">Editorial Board</a>
+              <a href="journal-metrics.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-700">Journal Metrics</a>
+            </div>
+          </div>
+
+          <!-- Issues & Articles Dropdown -->
+          <div class="relative group">
+            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center whitespace-nowrap">
+              Issues &amp; Articles
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="nav-dropdown absolute left-0 mt-1 w-52 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+              <a href="current-issue.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-700">Current Issue</a>
+              <a href="articles-in-press.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-700">Articles in Press</a>
+              <a href="archive.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-700">Archive</a>
+            </div>
+          </div>
+
+          <a href="for-authors.html" data-nav-page="for-authors.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">For Authors</a>
+          <a href="for-reviewers.html" data-nav-page="for-reviewers.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">For Reviewers</a>
+          <a href="policies.html" data-nav-page="policies.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">Policies</a>
+          <a href="contact.html" data-nav-page="contact.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">Contact</a>
+        </div>
+
+        <!-- Submit CTA + Mobile toggle -->
+        <div class="flex items-center space-x-3">
+          <button data-search-toggle class="p-2 text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors lg:hidden" aria-label="Search articles" title="Search (Ctrl+K)">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </button>
+          <button data-search-toggle class="hidden lg:flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-teal-700 transition-colors shadow-sm whitespace-nowrap" aria-label="Search articles" title="Search (Ctrl+K)">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <span>Search</span>
+          </button>
+          <a href="manuscript-submission.html" class="hidden sm:inline-flex items-center px-4 py-2 bg-red-700 text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors shadow-sm whitespace-nowrap">
+            Submit Manuscript
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black/50 z-50" aria-hidden="true"></div>
+
+  <!-- Mobile Menu Panel -->
+  <div id="mobile-menu" class="fixed top-0 right-0 w-80 max-w-full h-full bg-white z-50 shadow-2xl transition-menu mobile-menu-enter overflow-y-auto" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div class="flex items-center justify-between p-4 border-b border-gray-200">
+      <span class="text-lg font-bold text-teal-700">Menu</span>
+      <button id="mobile-menu-close" class="p-2 text-gray-500 hover:text-gray-700 rounded-lg" aria-label="Close menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="p-4 space-y-1">
+      <button data-search-toggle id="mobile-search-trigger" class="w-full flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">
+        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        Search Articles
+      </button>
+      <a href="index.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">Home</a>
+
+      <!-- About Section -->
+      <button data-mobile-dropdown="mobile-about" class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium" aria-expanded="false">
+        About
+        <svg class="chevron-icon w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div id="mobile-about" class="hidden pl-4 space-y-1">
+        <a href="about.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg">About the Journal</a>
+        <a href="editorial-board.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg">Editorial Board</a>
+        <a href="journal-metrics.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg">Journal Metrics</a>
+      </div>
+
+
+      <!-- Issues Section -->
+      <button data-mobile-dropdown="mobile-issues" class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium" aria-expanded="false">
+        Issues &amp; Articles
+        <svg class="chevron-icon w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div id="mobile-issues" class="hidden pl-4 space-y-1">
+        <a href="current-issue.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg">Current Issue</a>
+        <a href="articles-in-press.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg">Articles in Press</a>
+        <a href="archive.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg">Archive</a>
+      </div>
+
+      <a href="for-authors.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">For Authors</a>
+      <a href="for-reviewers.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">For Reviewers</a>
+      <a href="policies.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">Policies</a>
+      <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">Contact</a>
+      <a href="news.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">News</a>
+      <a href="forms.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">Forms</a>
+
+      <div class="pt-4 border-t border-gray-200 mt-4">
+        <a href="manuscript-submission.html" class="flex items-center justify-center px-4 py-3 bg-red-700 text-white font-semibold rounded-lg hover:bg-red-800 transition-colors">
+          Submit Manuscript
+          <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Overlay -->
+  <div id="search-overlay" class="hidden fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm flex items-start justify-center pt-[12vh] sm:pt-[15vh] px-4" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Search articles">
+    <div class="bg-white rounded-2xl shadow-2xl w-full max-w-lg overflow-hidden ring-1 ring-gray-200">
+      <div class="flex items-center gap-3 px-5 py-3 border-b border-gray-100">
+        <svg class="w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input id="search-input" type="search" placeholder="Search articles, authors, keywords..." class="flex-1 text-base text-gray-900 placeholder-gray-400 bg-transparent border-0 p-0 focus:outline-none focus:ring-0" autocomplete="off">
+        <button id="search-close" class="flex-shrink-0 text-gray-400 hover:text-gray-600 transition-colors" aria-label="Close search">
+          <kbd class="hidden sm:inline-block px-2 py-1 text-xs font-medium text-gray-400 bg-gray-100 rounded-md border border-gray-200">ESC</kbd>
+          <svg class="sm:hidden w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div id="search-results" class="max-h-[60vh] overflow-y-auto px-3 py-3">
+        <p class="text-sm text-gray-400 text-center py-8">Search articles, authors, keywords, news, and pages...<br><span class="text-xs mt-1 inline-block">Type at least 2 characters</span></p>
+      </div>
+      <div class="flex items-center justify-between px-5 py-2.5 border-t border-gray-100 bg-gray-50/80 text-xs text-gray-400">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center gap-1"><kbd class="px-1.5 py-0.5 bg-white rounded border border-gray-200 text-[10px] font-medium">&uarr;</kbd><kbd class="px-1.5 py-0.5 bg-white rounded border border-gray-200 text-[10px] font-medium">&darr;</kbd> navigate</span>
+          <span class="inline-flex items-center gap-1"><kbd class="px-1.5 py-0.5 bg-white rounded border border-gray-200 text-[10px] font-medium">&crarr;</kbd> open</span>
+        </div>
+        <span class="inline-flex items-center gap-1"><kbd class="px-1.5 py-0.5 bg-white rounded border border-gray-200 text-[10px] font-medium">esc</kbd> close</span>
+      </div>
+    </div>
+  </div>
+
+
+  <main id="main-content">
+    <div class="bg-gray-50 border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <nav aria-label="Breadcrumb"><ol class="flex items-center space-x-2 text-sm text-gray-500">
+          <li><a href="index.html" class="hover:text-teal-700">Home</a></li>
+          <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
+          <li><a href="news.html" class="hover:text-teal-700">News</a></li>
+          <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
+          <li id="breadcrumb-title" aria-current="page" class="text-gray-900 font-medium truncate max-w-xs">Article</li>
+        </ol></nav>
+      </div>
+    </div>
+
+    <div id="news-content" class="py-10">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center py-20 text-gray-400">Loading...</div>
+      </div>
+    </div>
+
+    <div id="news-not-found" class="hidden py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl font-bold text-gray-900 mb-2">News Article Not Found</h2>
+        <p class="text-gray-500 mb-6">The news article you're looking for doesn't exist.</p>
+        <a href="news.html" class="inline-flex items-center px-5 py-3 bg-teal-700 text-white font-semibold rounded-lg hover:bg-teal-800 transition-colors">Browse All News</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-teal-900 text-white" aria-label="Site footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="bmj-footer-logo-box w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden">
+              <picture><source media="(min-width:1024px)" srcset="images/logo-footer3.png"><img src="images/logo-footer.svg" alt="Balkan Medical Journal" class="h-12 w-12 object-contain" width="48" height="48"></picture>
+            </div>
+            <div>
+              <div class="font-bold text-lg">Balkan Medical Journal</div>
+            </div>
+          </div>
+          <p class="text-teal-300 text-sm leading-relaxed">
+            Published by Trakya University, Edirne, Türkiye.<br>
+            E-ISSN: 2146-3131<br>
+            Publisher: Galenos Publishing House
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-teal-300 text-sm">
+            <li><a href="current-issue.html" class="hover:text-white transition-colors">Current Issue</a></li>
+            <li><a href="archive.html" class="hover:text-white transition-colors">Archive</a></li>
+            <li><a href="articles-in-press.html" class="hover:text-white transition-colors">Articles in Press</a></li>
+            <li><a href="for-authors.html" class="hover:text-white transition-colors">For Authors</a></li>
+            <li><a href="for-reviewers.html" class="hover:text-white transition-colors">For Reviewers</a></li>
+            <li><a href="forms.html" class="hover:text-white transition-colors">Forms</a></li>
+          </ul>
+        </div>
+
+        <!-- About -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4">About</h3>
+          <ul class="space-y-2 text-teal-300 text-sm">
+            <li><a href="about.html" class="hover:text-white transition-colors">About the Journal</a></li>
+            <li><a href="editorial-board.html" class="hover:text-white transition-colors">Editorial Board</a></li>
+            <li><a href="journal-metrics.html" class="hover:text-white transition-colors">Journal Metrics</a></li>
+            <li><a href="policies.html" class="hover:text-white transition-colors">Policies</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+            <li><a href="news.html" class="hover:text-white transition-colors">News</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Contact</h3>
+          <div class="text-teal-300 text-sm space-y-2">
+            <p>Balkan Medical Journal<br>Trakya University Faculty of Medicine</p>
+            <p>Balkan Yerleşkesi, 22030<br>Edirne, Türkiye</p>
+            <p>
+              <a href="mailto:info@balkanmedicaljournal.org" class="hover:text-white transition-colors">info@balkanmedicaljournal.org</a>
+            </p>
+            <div class="flex items-center gap-4 mt-3">
+              <a href="https://www.instagram.com/balkanmedj/" target="_blank" rel="noopener" aria-label="Instagram" class="text-teal-300 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+              <a href="https://x.com/balkanmedj" target="_blank" rel="noopener" aria-label="X (Twitter)" class="text-teal-300 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+              <a href="https://www.linkedin.com/company/balkan-med-j/" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-teal-300 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-teal-800 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-teal-400 text-sm">&copy; 2026 Balkan Medical Journal. All rights reserved.</p>
+        <div class="flex items-center gap-6 text-teal-400 text-sm">
+          <span>Licensed under CC BY-NC-ND 4.0</span>
+          <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener" class="hover:text-white transition-colors" aria-label="Creative Commons License">
+            <img src="images/icons/cc-by-nc-nd.svg" alt="CC BY-NC-ND 4.0" class="h-6 w-auto opacity-70 hover:opacity-100 transition-opacity">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data/news.js"></script>
+  <script src="js/main.js?v=20260619"></script>
+  <script src="js/search.js?v=20260228a"></script>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var id = parseInt(params.get('id'));
+      var contentEl = document.getElementById('news-content');
+      var notFoundEl = document.getElementById('news-not-found');
+      var breadcrumbTitle = document.getElementById('breadcrumb-title');
+
+      if (!id || !window.NEWS) {
+        contentEl.classList.add('hidden');
+        notFoundEl.classList.remove('hidden');
+        return;
+      }
+
+      var item = window.NEWS.find(function (n) { return n.id === id; });
+      if (!item) {
+        contentEl.classList.add('hidden');
+        notFoundEl.classList.remove('hidden');
+        return;
+      }
+
+      document.title = item.title + ' — Balkan Medical Journal';
+      if (breadcrumbTitle) breadcrumbTitle.textContent = item.title;
+
+      // Update Open Graph / Twitter Card tags so social shares preview the actual news item
+      (function updateSocialMeta() {
+        var pageUrl = (function () { try { return window.location.href.split('#')[0]; } catch (_e) { return ''; } })();
+        var pageTitle = item.title + ' — Balkan Medical Journal';
+        var rawDescription = String(item.excerpt || item.summary || item.content || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+        var pageDescription = rawDescription ? rawDescription.substring(0, 220) : 'News article from Balkan Medical Journal.';
+        function setMeta(selector, attr, value) {
+          var el = document.querySelector(selector);
+          if (!el) {
+            el = document.createElement('meta');
+            var match = selector.match(/^meta\[(name|property)="([^"]+)"\]$/);
+            if (match) el.setAttribute(match[1], match[2]);
+            document.head.appendChild(el);
+          }
+          el.setAttribute(attr, value);
+        }
+        setMeta('meta[name="description"]', 'content', pageDescription);
+        setMeta('meta[property="og:title"]', 'content', pageTitle);
+        setMeta('meta[property="og:description"]', 'content', pageDescription);
+        setMeta('meta[property="og:type"]', 'content', 'article');
+        if (pageUrl) setMeta('meta[property="og:url"]', 'content', pageUrl);
+        if (pageUrl) {
+          var canonical = document.querySelector('link[rel="canonical"]');
+          if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.setAttribute('rel', 'canonical');
+            document.head.appendChild(canonical);
+          }
+          canonical.setAttribute('href', pageUrl);
+        }
+        setMeta('meta[name="twitter:title"]', 'content', pageTitle);
+        setMeta('meta[name="twitter:description"]', 'content', pageDescription);
+      })();
+
+      function parseNewsDate(value) {
+        if (!value) return NaN;
+        var ts = Date.parse(value);
+        return Number.isNaN(ts) ? NaN : ts;
+      }
+
+      function normalizeCategory(category) {
+        return category || 'News';
+      }
+
+      function escapeAttr(value) {
+        return String(value || '')
+          .replace(/&/g, '&amp;')
+          .replace(/"/g, '&quot;');
+      }
+
+      function normalizeThumbnail(url) {
+        if (!url) return '';
+        if (/^https?:\/\//i.test(url)) return url;
+        if (url.indexOf('//') === 0) return 'https:' + url;
+        // Relative URL — keep as-is so it resolves against the page's own origin.
+        // Strip a leading slash so it stays relative even when the page sits at
+        // a sub-path (e.g. /site/news-article.html under the admin preview).
+        return String(url).replace(/^\/+/, '');
+      }
+
+      function getRealThumbnail(newsItem) {
+        var image = newsItem && newsItem.image ? String(newsItem.image).trim() : '';
+        if (image && image !== 'images/news/placeholder-news.jpg') {
+          return normalizeThumbnail(image);
+        }
+
+        var content = newsItem && newsItem.content ? String(newsItem.content) : '';
+        var match = content.match(/<img[^>]+src=["']([^"']+)["']/i);
+        return match ? normalizeThumbnail(match[1]) : '';
+      }
+
+      var displayCategory = normalizeCategory(item.category);
+      var catColor = displayCategory === 'News' ? 'bg-teal-100 text-teal-700' :
+                     displayCategory === 'Announcement' ? 'bg-blue-100 text-blue-700' :
+                     displayCategory === 'Award' ? 'bg-amber-100 text-amber-700' :
+                     displayCategory === 'Indexing' ? 'bg-green-100 text-green-700' :
+                     displayCategory === 'Event' ? 'bg-purple-100 text-purple-700' :
+                     'bg-gray-100 text-gray-700';
+
+      var parsedDate = parseNewsDate(item.date);
+      var hasDate = !Number.isNaN(parsedDate);
+      var pubDate = hasDate ? new Date(parsedDate).toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'}) : '';
+      var dateMeta = hasDate ? '<time class="text-sm text-gray-400" datetime="' + item.date + '">' + pubDate + '</time>' : '';
+      var thumbnail = getRealThumbnail(item);
+      var thumbnailHtml = thumbnail
+        ? '<figure class="mb-8 overflow-hidden rounded-xl border border-gray-200 bg-gray-50">' +
+            '<img src="' + escapeAttr(thumbnail) + '" alt="' + escapeAttr(item.title) + '" class="block w-full h-auto object-cover" loading="lazy">' +
+          '</figure>'
+        : '';
+      var contentWithoutImages = String(item.content || '').replace(/<img\b[^>]*>/gi, '');
+
+      // Find prev/next
+      var sorted = window.NEWS.slice().sort(function (a, b) {
+        var dateA = parseNewsDate(a.date);
+        var dateB = parseNewsDate(b.date);
+        var hasA = !Number.isNaN(dateA);
+        var hasB = !Number.isNaN(dateB);
+
+        if (hasA && hasB) return dateB - dateA;
+        if (hasA) return -1;
+        if (hasB) return 1;
+        return (b.id || 0) - (a.id || 0);
+      });
+      var idx = sorted.findIndex(function (n) { return n.id === id; });
+      var prev = idx < sorted.length - 1 ? sorted[idx + 1] : null;
+      var next = idx > 0 ? sorted[idx - 1] : null;
+
+      var shareLandingUrl = '';
+      try { shareLandingUrl = window.location.href.split('#')[0]; } catch (_e) { shareLandingUrl = ''; }
+      var shareEncodedUrl = encodeURIComponent(shareLandingUrl);
+      var shareEncodedTitle = encodeURIComponent(item.title || 'Balkan Medical Journal');
+      var shareTwitterUrl = 'https://twitter.com/intent/tweet?text=' + shareEncodedTitle + '&url=' + shareEncodedUrl;
+      var shareLinkedInUrl = 'https://www.linkedin.com/sharing/share-offsite/?url=' + shareEncodedUrl;
+      var shareFacebookUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + shareEncodedUrl;
+      var shareWhatsAppUrl = 'https://wa.me/?text=' + shareEncodedTitle + '%20' + shareEncodedUrl;
+      var shareEmailUrl = 'mailto:?subject=' + shareEncodedTitle + '&body=' + shareEncodedUrl;
+
+      var shareStripHtml =
+        '<div class="article-share-strip" role="group" aria-label="Bu haberi paylaş">' +
+          '<span class="article-share-label">Paylaş</span>' +
+          '<a href="' + escapeAttr(shareTwitterUrl) + '" target="_blank" rel="noopener" class="article-share-btn" aria-label="X (Twitter) üzerinde paylaş" title="X (Twitter)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25h6.83l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>' +
+          '<a href="' + escapeAttr(shareLinkedInUrl) + '" target="_blank" rel="noopener" class="article-share-btn" aria-label="LinkedIn üzerinde paylaş" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>' +
+          '<a href="' + escapeAttr(shareFacebookUrl) + '" target="_blank" rel="noopener" class="article-share-btn" aria-label="Facebook üzerinde paylaş" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg></a>' +
+          '<a href="' + escapeAttr(shareWhatsAppUrl) + '" target="_blank" rel="noopener" class="article-share-btn" aria-label="WhatsApp üzerinde paylaş" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>' +
+          '<a href="' + escapeAttr(shareEmailUrl) + '" class="article-share-btn" aria-label="E-posta ile paylaş" title="E-posta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1z"/><path d="M3 7l9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>' +
+          '<button type="button" id="news-copy-link-btn" class="article-share-btn" aria-label="Bağlantıyı kopyala" title="Bağlantıyı kopyala"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10.5 13.5a4.5 4.5 0 006.36 0l3-3a4.5 4.5 0 00-6.36-6.36l-1.5 1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 10.5a4.5 4.5 0 00-6.36 0l-3 3a4.5 4.5 0 006.36 6.36l1.5-1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>' +
+        '</div>';
+
+      contentEl.innerHTML =
+        '<article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">' +
+          '<div class="flex items-center gap-3 mb-4">' +
+            '<span class="badge ' + catColor + '">' + displayCategory + '</span>' +
+            dateMeta +
+          '</div>' +
+          '<h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-8">' + item.title + '</h1>' +
+          thumbnailHtml +
+          shareStripHtml +
+          '<div class="prose max-w-none text-gray-700 leading-relaxed text-lg">' + contentWithoutImages + '</div>' +
+
+          // Prev/Next navigation
+          '<div class="mt-12 pt-8 border-t border-gray-200 flex items-center justify-between gap-4">' +
+            (prev ? '<a href="news-article.html?id=' + prev.id + '" class="flex items-center gap-2 text-teal-700 hover:text-teal-800 font-medium"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"/></svg><span class="hidden sm:inline">' + prev.title.substring(0, 40) + '...</span><span class="sm:hidden">Previous</span></a>' : '<div></div>') +
+            (next ? '<a href="news-article.html?id=' + next.id + '" class="flex items-center gap-2 text-teal-700 hover:text-teal-800 font-medium text-right"><span class="hidden sm:inline">' + next.title.substring(0, 40) + '...</span><span class="sm:hidden">Next</span><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>' : '<div></div>') +
+          '</div>' +
+        '</article>';
+
+      var copyLinkBtn = document.getElementById('news-copy-link-btn');
+      if (copyLinkBtn) {
+        copyLinkBtn.addEventListener('click', function () {
+          var url = (function () { try { return window.location.href.split('#')[0]; } catch (_e) { return ''; } })();
+          var markCopied = function () {
+            copyLinkBtn.setAttribute('data-share-state', 'copied');
+            copyLinkBtn.setAttribute('title', 'Kopyalandı');
+            if (window.showToast) window.showToast('Bağlantı kopyalandı');
+            setTimeout(function () {
+              copyLinkBtn.removeAttribute('data-share-state');
+              copyLinkBtn.setAttribute('title', 'Bağlantıyı kopyala');
+            }, 1800);
+          };
+          var fallback = function () { try { window.prompt('Bağlantıyı kopyalayın:', url); } catch (_e) {} };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(markCopied).catch(fallback);
+          } else {
+            fallback();
+          }
+        });
+      }
+    })();
+  </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","logo":"https://balkanmedicaljournal.org/images/logo.png","publisher":{"@type":"Organization","name":"Trakya University"},"address":{"@type":"PostalAddress","addressLocality":"Edirne","addressCountry":"TR","streetAddress":"Trakya University Faculty of Medicine, Balkan Yerleşkesi, 22030"}},{"@type":"WebSite","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","potentialAction":{"@type":"SearchAction","target":"https://balkanmedicaljournal.org/search-results.html?q={search_term_string}","query-input":"required name=search_term_string"}}]}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Reviewers — Balkan Medical Journal</title>
+  <meta name="description" content="Reviewer guidelines for Balkan Medical Journal. Learn about our double-blind peer review process, evaluation criteria, and how to become a reviewer.">
+  <meta property="og:title" content="For Reviewers — Balkan Medical Journal">
+  <meta property="og:description" content="Reviewer guidelines and information for Balkan Medical Journal's double-blind peer review process.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://balkanmedicaljournal.org/for-reviewers.html">
+  <meta property="og:image" content="https://balkanmedicaljournal.org/images/cover/cover1.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="For Reviewers — Balkan Medical Journal">
+  <meta name="twitter:description" content="Reviewer guidelines for Balkan Medical Journal. Learn about our double-blind peer review process, evaluation criteria, and how to become a reviewer.">
+  <meta name="twitter:image" content="https://balkanmedicaljournal.org/images/cover/cover1.jpeg">
+  <link rel="canonical" href="https://balkanmedicaljournal.org/for-reviewers.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    :root {
+      --reviewers-ink: #1e2b37;
+      --reviewers-muted: #536272;
+      --reviewers-line: #d7dde5;
+      --reviewers-paper: #fcfbf8;
+      --reviewers-accent: #114c67;
+      --reviewers-accent-2: #2b6f8f;
+      --reviewers-gold: #b28b59;
+      --reviewers-shadow: 0 24px 46px -32px rgba(24, 42, 62, 0.45);
+    }
+
+    body {
+      background:
+        radial-gradient(1200px 420px at 50% -120px, #dbe5ef 0%, transparent 72%),
+        linear-gradient(180deg, #eef2f6 0%, #f5f4f0 54%, #f2f5f8 100%);
+    }
+
+    .reviewers-content {
+      background: transparent !important;
+    }
+
+    .reviewers-main #accordion-group > .bg-white {
+      position: relative;
+      background: var(--reviewers-paper) !important;
+      border: 1px solid var(--reviewers-line) !important;
+      border-radius: 16px !important;
+      box-shadow: var(--reviewers-shadow);
+      overflow: hidden;
+    }
+
+    .reviewers-main #accordion-group > .bg-white::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--reviewers-accent-2) 0%, var(--reviewers-gold) 50%, var(--reviewers-accent-2) 100%);
+      opacity: 0.45;
+      pointer-events: none;
+    }
+
+    .reviewers-main .accordion-trigger {
+      background: linear-gradient(180deg, #ffffff 0%, #f6f8fa 100%);
+      border-bottom: 1px solid var(--reviewers-line);
+    }
+
+    .reviewers-main .accordion-trigger[aria-expanded="true"] {
+      background: linear-gradient(180deg, #fdfefe 0%, #eef4f8 100%);
+    }
+
+    .reviewers-main .accordion-trigger span {
+      color: var(--reviewers-ink) !important;
+      font-family: "Crimson Pro", Georgia, "Times New Roman", serif;
+      letter-spacing: 0.01em;
+    }
+
+    .reviewers-accordion-uniform .accordion-content * {
+      font-size: 17px !important;
+      line-height: 1.72 !important;
+    }
+
+    .reviewers-accordion-uniform .accordion-content p,
+    .reviewers-accordion-uniform .accordion-content li,
+    .reviewers-accordion-uniform .accordion-content td {
+      color: var(--reviewers-muted) !important;
+    }
+
+    .reviewers-accordion-uniform .accordion-content strong {
+      color: var(--reviewers-ink) !important;
+    }
+
+    .reviewers-accordion-uniform .accordion-content a {
+      color: var(--reviewers-accent) !important;
+      text-decoration: none !important;
+      border-bottom: 1px solid rgba(17, 76, 103, 0.32);
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .reviewers-accordion-uniform .accordion-content a:hover {
+      color: #0a3349 !important;
+      border-color: rgba(10, 51, 73, 0.6);
+    }
+
+    .reviewers-accordion-uniform .accordion-content ul,
+    .reviewers-accordion-uniform .accordion-content ol {
+      padding-left: 0.55rem;
+    }
+
+    .reviewers-accordion-uniform .accordion-content li {
+      margin-bottom: 0.28rem;
+    }
+
+    .reviewers-accordion-uniform .accordion-content table {
+      border-collapse: separate !important;
+      border-spacing: 0;
+      border: 1px solid var(--reviewers-line);
+      border-radius: 14px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 10px 26px -22px rgba(18, 43, 65, 0.45);
+    }
+
+    .reviewers-accordion-uniform .accordion-content table thead tr {
+      background: linear-gradient(180deg, #f2f6f9 0%, #e9eef4 100%) !important;
+    }
+
+    .reviewers-accordion-uniform .accordion-content table thead th {
+      color: var(--reviewers-ink) !important;
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 0.82rem !important;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 700 !important;
+    }
+
+    .reviewers-accordion-uniform .accordion-content table tbody tr:nth-child(even) {
+      background: #f7f9fb !important;
+    }
+
+    .reviewers-accordion-uniform .accordion-content table tbody tr:hover {
+      background: #edf5fa !important;
+    }
+
+    .reviewers-accordion-uniform .accordion-content.open {
+      max-height: 50000px !important;
+    }
+
+    .reviewers-sidebar .bg-white {
+      background: var(--reviewers-paper) !important;
+      border: 1px solid var(--reviewers-line) !important;
+      border-radius: 16px !important;
+      box-shadow: var(--reviewers-shadow);
+    }
+
+    .reviewers-sidebar .bg-white h2 {
+      color: var(--reviewers-ink) !important;
+      font-family: "Crimson Pro", Georgia, "Times New Roman", serif;
+      font-size: 1.38rem;
+      letter-spacing: 0.01em;
+      margin-bottom: 1.05rem !important;
+    }
+
+    .reviewers-sidebar .bg-gradient-to-br {
+      border-radius: 16px !important;
+      border: 1px solid rgba(169, 197, 214, 0.35);
+      box-shadow: 0 26px 46px -32px rgba(7, 39, 56, 0.55);
+      background: linear-gradient(145deg, #0a3348 0%, #0f4f67 56%, #176282 100%) !important;
+    }
+
+    .reviewers-sidebar .bg-gradient-to-br a {
+      background: #f7fbff !important;
+      color: #0f4760 !important;
+      border: 1px solid rgba(247, 251, 255, 0.7);
+    }
+
+    .reviewers-sidebar .bg-gradient-to-br a:hover {
+      background: #ffffff !important;
+      border-color: #ffffff;
+    }
+
+    @media (max-width: 1024px) {
+      .reviewers-main #accordion-group > .bg-white,
+      .reviewers-sidebar .bg-white,
+      .reviewers-sidebar .bg-gradient-to-br {
+        border-radius: 14px !important;
+      }
+      .reviewers-accordion-uniform .accordion-content * {
+        font-size: 16px !important;
+      }
+      .reviewers-accordion-uniform .accordion-content table thead th {
+        font-size: 0.78rem !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Skip to Content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ══════════════════════════════════════════════════════════
+       NAVIGATION
+       ══════════════════════════════════════════════════════════ -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bmj-nav-shell flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2 flex-shrink-0" aria-label="Balkan Medical Journal Home">
+          <img src="images/logo-nav.svg" alt="Balkan Medical Journal" class="bmj-nav-logo" width="80" height="80">
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center space-x-1">
+          <a href="index.html" data-nav-page="index.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">Home</a>
+
+          <!-- About Dropdown -->
+          <div class="relative group">
+            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center whitespace-nowrap">
+              About
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="nav-dropdown absolute left-0 mt-1 w-52 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+              <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-700">About the Journal</a>
+              <a href="editorial-board.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-700">Editorial Board</a>
+              <a href="journal-metrics.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-700">Journal Metrics</a>
+            </div>
+          </div>
+
+          <!-- Issues & Articles Dropdown -->
+          <div class="relative group">
+            <button data-dropdown-trigger class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors inline-flex items-center whitespace-nowrap">
+              Issues &amp; Articles
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="nav-dropdown absolute left-0 mt-1 w-52 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+              <a href="current-issue.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-700">Current Issue</a>
+              <a href="articles-in-press.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-700">Articles in Press</a>
+              <a href="archive.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-700">Archive</a>
+            </div>
+          </div>
+
+          <a href="for-authors.html" data-nav-page="for-authors.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">For Authors</a>
+          <a href="for-reviewers.html" data-nav-page="for-reviewers.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">For Reviewers</a>
+          <a href="policies.html" data-nav-page="policies.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">Policies</a>
+          <a href="contact.html" data-nav-page="contact.html" class="px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap">Contact</a>
+        </div>
+
+        <!-- Submit CTA + Mobile toggle -->
+        <div class="flex items-center space-x-3">
+          <button data-search-toggle class="p-2 text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50 transition-colors lg:hidden" aria-label="Search articles" title="Search (Ctrl+K)">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </button>
+          <button data-search-toggle class="hidden lg:flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-teal-700 transition-colors shadow-sm whitespace-nowrap" aria-label="Search articles" title="Search (Ctrl+K)">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <span>Search</span>
+          </button>
+          <a href="manuscript-submission.html" class="hidden sm:inline-flex items-center px-4 py-2 bg-red-700 text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors shadow-sm whitespace-nowrap">
+            Submit Manuscript
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-700 hover:text-teal-700 rounded-lg hover:bg-gray-50" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black/50 z-50" aria-hidden="true"></div>
+
+  <!-- Mobile Menu Panel -->
+  <div id="mobile-menu" class="fixed top-0 right-0 w-80 max-w-full h-full bg-white z-50 shadow-2xl transition-menu mobile-menu-enter overflow-y-auto" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div class="flex items-center justify-between p-4 border-b border-gray-200">
+      <span class="text-lg font-bold text-teal-700">Menu</span>
+      <button id="mobile-menu-close" class="p-2 text-gray-500 hover:text-gray-700 rounded-lg" aria-label="Close menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="p-4 space-y-1">
+      <button data-search-toggle id="mobile-search-trigger" class="w-full flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">
+        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        Search Articles
+      </button>
+      <a href="index.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">Home</a>
+
+      <!-- About Section -->
+      <button data-mobile-dropdown="mobile-about" class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium" aria-expanded="false">
+        About
+        <svg class="chevron-icon w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div id="mobile-about" class="hidden pl-4 space-y-1">
+        <a href="about.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg">About the Journal</a>
+        <a href="editorial-board.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg">Editorial Board</a>
+        <a href="journal-metrics.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg">Journal Metrics</a>
+      </div>
+
+
+      <!-- Issues Section -->
+      <button data-mobile-dropdown="mobile-issues" class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium" aria-expanded="false">
+        Issues &amp; Articles
+        <svg class="chevron-icon w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div id="mobile-issues" class="hidden pl-4 space-y-1">
+        <a href="current-issue.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg">Current Issue</a>
+        <a href="articles-in-press.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg">Articles in Press</a>
+        <a href="archive.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg">Archive</a>
+      </div>
+
+      <a href="for-authors.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">For Authors</a>
+      <a href="for-reviewers.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">For Reviewers</a>
+      <a href="policies.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">Policies</a>
+      <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">Contact</a>
+      <a href="news.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">News</a>
+      <a href="forms.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-700 rounded-lg font-medium">Forms</a>
+
+      <div class="pt-4 border-t border-gray-200 mt-4">
+        <a href="manuscript-submission.html" class="flex items-center justify-center px-4 py-3 bg-red-700 text-white font-semibold rounded-lg hover:bg-red-800 transition-colors">
+          Submit Manuscript
+          <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Overlay -->
+  <div id="search-overlay" class="hidden fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm flex items-start justify-center pt-[12vh] sm:pt-[15vh] px-4" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Search articles">
+    <div class="bg-white rounded-2xl shadow-2xl w-full max-w-lg overflow-hidden ring-1 ring-gray-200">
+      <div class="flex items-center gap-3 px-5 py-3 border-b border-gray-100">
+        <svg class="w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input id="search-input" type="search" placeholder="Search articles, authors, keywords..." class="flex-1 text-base text-gray-900 placeholder-gray-400 bg-transparent border-0 p-0 focus:outline-none focus:ring-0" autocomplete="off">
+        <button id="search-close" class="flex-shrink-0 text-gray-400 hover:text-gray-600 transition-colors" aria-label="Close search">
+          <kbd class="hidden sm:inline-block px-2 py-1 text-xs font-medium text-gray-400 bg-gray-100 rounded-md border border-gray-200">ESC</kbd>
+          <svg class="sm:hidden w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div id="search-results" class="max-h-[60vh] overflow-y-auto px-3 py-3">
+        <p class="text-sm text-gray-400 text-center py-8">Search articles, authors, keywords, news, and pages...<br><span class="text-xs mt-1 inline-block">Type at least 2 characters</span></p>
+      </div>
+      <div class="flex items-center justify-between px-5 py-2.5 border-t border-gray-100 bg-gray-50/80 text-xs text-gray-400">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center gap-1"><kbd class="px-1.5 py-0.5 bg-white rounded border border-gray-200 text-[10px] font-medium">&uarr;</kbd><kbd class="px-1.5 py-0.5 bg-white rounded border border-gray-200 text-[10px] font-medium">&darr;</kbd> navigate</span>
+          <span class="inline-flex items-center gap-1"><kbd class="px-1.5 py-0.5 bg-white rounded border border-gray-200 text-[10px] font-medium">&crarr;</kbd> open</span>
+        </div>
+        <span class="inline-flex items-center gap-1"><kbd class="px-1.5 py-0.5 bg-white rounded border border-gray-200 text-[10px] font-medium">esc</kbd> close</span>
+      </div>
+    </div>
+  </div>
+
+
+  <main id="main-content">
+<!-- ── Page Header ────────────────────────────────────────── -->
+    <section class="bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 text-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 relative">
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-teal-200">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li aria-hidden="true">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </li>
+            <li><span class="text-white font-medium" aria-current="page">For Reviewers</span></li>
+          </ol>
+        </nav>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">Reviewer Guidelines</h1>
+        <p class="text-xl text-teal-100 max-w-3xl leading-relaxed font-serif">
+          Balkan Medical Journal depends on expert peer review to uphold scientific rigor, methodological validity, and publication ethics. This guidance outlines reviewer expectations, editorial decision architecture, and current performance standards.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Content Area ───────────────────────────────────────── -->
+    <section class="reviewers-content py-12 md:py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row gap-10">
+
+          <!-- Main Content (2/3) -->
+          <div class="lg:w-2/3 reviewers-main reviewers-accordion-uniform">
+            <div class="space-y-4" id="accordion-group">
+
+              <!-- Accordion 1: Journal Scope -->
+              <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="accordion-trigger w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors" aria-expanded="true" aria-controls="accordion-panel-1">
+                  <span class="text-lg font-semibold text-gray-900">Journal Scope and Editorial Principles</span>
+                  <svg class="chevron-icon w-5 h-5 text-gray-400 transition-transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="accordion-panel-1" class="accordion-content open" role="region">
+                  <div class="px-6 pb-6 text-gray-600 leading-relaxed space-y-4">
+                    <div class="bg-gray-50 rounded-lg p-4">
+                      <p><strong>At a glance:</strong> Balkan Medical Journal is an international, peer-reviewed, open-access medical journal published in English under an independent, unbiased, double-blind model.</p>
+                    </div>
+                    <p>The journal publishes clinical and experimental research across medicine, together with clinical images, invited reviews, editorials, letters, comments, and publication/research ethics reports. Submissions must be unpublished and not under concurrent review elsewhere.</p>
+                    <p>Its core mission is to publish original work with high scientific and ethical standards and to contribute to the advancement of medical research and healthcare in the Balkans and globally.</p>
+                    <p><strong>Indexed in:</strong> Science Citation Index Expanded (Web of Science), Journal Citation Reports, PubMed/MEDLINE, PubMed Central, Scopus, EMBASE, DOAJ, CAB Abstracts, Chemical Abstracts, CINAHL, EBSCO, Global Health, Türkiye Citation Index, and TUBITAK ULAKBIM TR Index.</p>
+                    <p>The Editorial Board and Publisher follow guidance from ICMJE, WAME, CSE, COPE, NLM, WMA, ORI, EASE, and ISMTE. The Editor-in-Chief retains full authority over editorial and scientific content and publication timing.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion 2: Workflow -->
+              <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="accordion-trigger w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors" aria-expanded="false" aria-controls="accordion-panel-2">
+                  <span class="text-lg font-semibold text-gray-900">Evaluation Workflow and Timelines</span>
+                  <svg class="chevron-icon w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="accordion-panel-2" class="accordion-content" role="region">
+                  <div class="px-6 pb-6 text-gray-600 leading-relaxed space-y-4">
+                    <p>All manuscript handling is conducted through the online editorial platform: <a href="https://balkanmedj.manuscriptmanager.net" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">balkanmedj.manuscriptmanager.net</a>. Reviewers access their personal worklists and decision forms through the same system.</p>
+                    <ul class="list-disc list-inside space-y-2 ml-2">
+                      <li>Manuscripts that pass initial editorial screening are assigned to a minimum of two independent external reviewers.</li>
+                      <li>Review reports are synthesized by the Editor-in-Chief and Editorial Board before final decisions are rendered.</li>
+                      <li>Decisions are based on scientific importance, methodological rigor, ethical compliance, and journal fit.</li>
+                      <li>For reporting and manuscript-structure standards, reviewers may consult the <a href="for-authors.html" class="text-teal-700 underline hover:text-teal-800">Instructions to Authors</a>.</li>
+                    </ul>
+                    <p><strong>Current workflow timing:</strong></p>
+                    <ul class="list-disc list-inside space-y-1 text-sm">
+                      <li>Editorial evaluation process: about 1 week.</li>
+                      <li>Editorial decision: approximately 8 days.</li>
+                      <li>Peer-review process: average 34 days.</li>
+                    </ul>
+                    <p><strong>Peer-review performance dashboard (January 01, 2025 to December 31, 2025):</strong></p>
+                    <div class="overflow-x-auto">
+                      <table class="w-full border-collapse">
+                        <thead>
+                          <tr class="bg-gray-50 text-left">
+                            <th class="px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Operational Metric</th>
+                            <th class="px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="border-b border-gray-100">
+                            <td class="px-4 py-3">Acceptance rate</td>
+                            <td class="px-4 py-3">4.0%</td>
+                          </tr>
+                          <tr class="border-b border-gray-100 bg-gray-50/50">
+                            <td class="px-4 py-3" spellcheck="false">Average time to rejection with peer review</td>
+                            <td class="px-4 py-3">25.7 days</td>
+                          </tr>
+                          <tr class="border-b border-gray-100">
+                            <td class="px-4 py-3">Average time to rejection with editorial review</td>
+                            <td class="px-4 py-3">3.8 days</td>
+                          </tr>
+                          <tr class="bg-gray-50/50">
+                            <td class="px-4 py-3">Average time to acceptance with peer review</td>
+                            <td class="px-4 py-3">45.6 days</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p class="text-sm">These indicators are reported to support transparent, benchmark-driven editorial practice.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion 3: Reviewer Duties -->
+              <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="accordion-trigger w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors" aria-expanded="false" aria-controls="accordion-panel-3">
+                  <span class="text-lg font-semibold text-gray-900">Core Reviewer Responsibilities</span>
+                  <svg class="chevron-icon w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="accordion-panel-3" class="accordion-content" role="region">
+                  <div class="px-6 pb-6 text-gray-600 leading-relaxed space-y-4">
+                    <p>Reviewer reports are expected to assess each submission across the following decision domains:</p>
+                    <ul class="list-disc list-inside space-y-1 text-sm">
+                      <li>Originality and contribution to the field</li>
+                      <li>Methodological and statistical robustness</li>
+                      <li>Scientific and clinical importance</li>
+                      <li>Overall reporting quality and clarity</li>
+                      <li>Ethical integrity</li>
+                      <li>Suitability for Balkan Medical Journal readership</li>
+                    </ul>
+                    <p><strong>Professional obligations:</strong></p>
+                    <ul class="list-disc list-inside space-y-2 ml-2">
+                      <li>Disclose any potential competing interest before accepting the invitation.</li>
+                      <li>Treat manuscripts as confidential. Do not share, discuss, or use any material until publication.</li>
+                      <li>Decline promptly if the manuscript is outside your expertise or timely review is not feasible.</li>
+                      <li>Provide clear, constructive, evidence-based comments that support editorial decisions and author revision.</li>
+                      <li>Flag suspected research/publication misconduct (for example unethical design, duplication, or plagiarism).</li>
+                      <li>The journal follows the COPE flowchart in suspected reviewer-misconduct cases and expects adherence to <a href="https://publicationethics.org/guidance/Guidelines" target="_blank" rel="noopener" class="text-teal-700 underline hover:text-teal-800">COPE ethical guidelines for peer reviewers</a>.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion 4: Ethics -->
+              <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="accordion-trigger w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors" aria-expanded="false" aria-controls="accordion-panel-4">
+                  <span class="text-lg font-semibold text-gray-900">Ethics, Misconduct, and Plagiarism Controls</span>
+                  <svg class="chevron-icon w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="accordion-panel-4" class="accordion-content" role="region">
+                  <div class="px-6 pb-6 text-gray-600 leading-relaxed space-y-4">
+                    <p>The journal applies international ethics frameworks (COPE, ICMJE, CSE White Paper, WAME, WMA, ORI) whenever misconduct is suspected.</p>
+                    <p>Plagiarism is not accepted. Submissions are screened with similarity-detection tools (including iThenticate and related systems) at least twice: during evaluation and after acceptance. Editors may share screening findings with reviewers when relevant to editorial assessment.</p>
+                    <p>For research manuscripts, ethics committee approval is required in line with Declaration of Helsinki and accepted international standards for human and animal research.</p>
+                    <ul class="list-disc list-inside space-y-2 ml-2">
+                      <li>If ethics approval is missing, the case is assessed under COPE guidance (Guidance for Editors: Research, Audit and Service Evaluations).</li>
+                      <li>If approval is required but not provided, review cannot proceed and the manuscript is rejected; institutions or relevant bodies may be informed when necessary.</li>
+                      <li>If editorial assessment indicates approval may be exempt, authors must provide either ethics approval or independent exemption documentation under local integrity standards.</li>
+                      <li>If neither approval nor exemption documentation is provided, the manuscript is rejected.</li>
+                    </ul>
+                    <p>Human studies must state informed consent procedures. Informed consent is also required for case reports. Recognizable patient images require written publication permission. Manuscripts should clearly document measures used to minimize pain, harm, and distress in human and animal research. The journal may request ethics approval documentation during review.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion 5: SAGER -->
+              <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="accordion-trigger w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors" aria-expanded="false" aria-controls="accordion-panel-5">
+                  <span class="text-lg font-semibold text-gray-900">SAGER and Reporting Expectations</span>
+                  <svg class="chevron-icon w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="accordion-panel-5" class="accordion-content" role="region">
+                  <div class="px-6 pb-6 text-gray-600 leading-relaxed space-y-4">
+                    <p>Reviewers are expected to evaluate submissions for alignment with SAGER recommendations and to encourage precise sex/gender reporting.</p>
+                    <p><strong>Minimum SAGER checks:</strong></p>
+                    <ul class="list-disc list-inside space-y-2 ml-2">
+                      <li><strong>Sex</strong> should be used for biological attributes; <strong>gender</strong> for sociocultural dimensions.</li>
+                      <li>Title and/or abstract should specify to which sex(es) the study applies, when relevant.</li>
+                      <li>Background should state whether sex/gender differences are expected.</li>
+                      <li>Methods should describe how sex/gender were incorporated in study design.</li>
+                      <li>Results should provide sex/gender-disaggregated data where appropriate.</li>
+                      <li>Discussion should interpret sex/gender findings; if analysis is not performed, the rationale should be stated.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion 6: Checklist and Recognition -->
+              <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="accordion-trigger w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors" aria-expanded="false" aria-controls="accordion-panel-6">
+                  <span class="text-lg font-semibold text-gray-900">Reviewer Checklist and Recognition</span>
+                  <svg class="chevron-icon w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="accordion-panel-6" class="accordion-content" role="region">
+                  <div class="px-6 pb-6 text-gray-600 leading-relaxed space-y-4">
+                    <p>For manuscript format and reporting standards, reviewers may consult the <a href="for-authors.html" class="text-teal-700 underline hover:text-teal-800">Instructions to Authors</a>. The following structured checklist may be used in reviewer reports:</p>
+                    <ol class="list-decimal list-inside space-y-1 text-sm">
+                      <li>Please state any conflict(s) of interest that you have in relation to the review of this manuscript (state "none" if not applicable).</li>
+                      <li>Do you suspect any research or publication misconduct? If yes, indicate details.</li>
+                      <li>Does the manuscript contain new and significant information to justify publication?</li>
+                      <li>Is the title of the article appropriate?</li>
+                      <li>Does the abstract clearly and accurately describe the content of the article?</li>
+                      <li>Is the problem significant and concisely stated?</li>
+                      <li>Are the methods described comprehensively?</li>
+                      <li>Is the results section clear and satisfactory?</li>
+                      <li>Are the interpretations and conclusions justified by the results?</li>
+                      <li>Is adequate and current reference made to other work in the field?</li>
+                      <li>Is the language acceptable?</li>
+                      <li>Please rate the priority for publishing this article (1 highest, 10 lowest).</li>
+                      <li>Is the appropriate terminology used in the text?</li>
+                      <li>Are figures and/or tables sufficient?</li>
+                      <li>Is it necessary to shorten the article?</li>
+                    </ol>
+                    <p><strong>Reviewer recognition:</strong> The journal identifies reviewers through bibliographic databases and qualified author suggestions. Reviewer names are acknowledged annually in the last issue and on the website after each issue. Performance-based reviewer awards are planned as part of ongoing reviewer development and recognition.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Sidebar (1/3) -->
+          <aside class="lg:w-1/3 space-y-6 reviewers-sidebar">
+
+            <!-- Key Information Card -->
+            <div class="bg-white rounded-xl border border-gray-200 p-6" data-bmj-deep-blocks="key-information">
+              <h2 class="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                <svg class="w-5 h-5 text-teal-700 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Key Information
+              </h2>
+              <div class="space-y-4">
+                <div class="flex items-center justify-between py-3 border-b border-gray-100">
+                  <span class="text-sm text-gray-500">Review Model</span>
+                  <span class="text-sm font-semibold text-gray-900 bg-gray-50 px-3 py-1 rounded-full">Double-Blind</span>
+                </div>
+                <div class="flex items-center justify-between py-3 border-b border-gray-100" spellcheck="false">
+                  <span class="text-sm text-gray-500">Acceptance Rate</span>
+                  <span class="text-sm font-semibold text-gray-900 bg-gray-50 px-3 py-1 rounded-full">4.0%</span>
+                </div>
+                <div class="flex items-center justify-between py-3 border-b border-gray-100">
+                  <span class="text-sm text-gray-500">Editorial Evaluation</span>
+                  <span class="text-sm font-semibold text-gray-900 bg-gray-50 px-3 py-1 rounded-full">~1 week</span>
+                </div>
+                <div class="flex items-center justify-between py-3 border-b border-gray-100">
+                  <span class="text-sm text-gray-500">First Editorial Decision</span>
+                  <span class="text-sm font-semibold text-gray-900 bg-gray-50 px-3 py-1 rounded-full">~8 days</span>
+                </div>
+                <div class="flex items-center justify-between py-3">
+                  <span class="text-sm text-gray-500">Peer-Review Cycle</span>
+                  <span class="text-sm font-semibold text-gray-900 bg-gray-50 px-3 py-1 rounded-full">Avg 34 days</span>
+                </div>
+                <div class="flex items-center justify-between py-3 border-t border-gray-100">
+                  <span class="text-sm text-gray-500">Reviewer Portal</span>
+                  <span class="text-sm font-semibold text-gray-900 bg-gray-50 px-3 py-1 rounded-full">Manuscript Manager</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Become a Reviewer CTA -->
+            <div class="bg-gradient-to-br from-teal-700 to-teal-800 rounded-xl p-6 text-white">
+              <h2 class="text-lg font-semibold mb-3 flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path></svg>
+                Reviewer Appointments
+              </h2>
+              <p class="text-teal-100 text-sm leading-relaxed mb-5">
+                The journal welcomes experienced researchers and clinicians across medical disciplines. Reviewer appointments are based on subject expertise, publication record, and review quality.
+              </p>
+              <a href="mailto:info@balkanmedicaljournal.org?subject=Reviewer%20Application" class="inline-flex items-center px-5 py-2.5 bg-white text-teal-800 text-sm font-semibold rounded-lg hover:bg-gray-100 transition-colors w-full justify-center">
+                Submit Reviewer Profile
+                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              </a>
+            </div>
+
+            <!-- COPE Reference -->
+            <div class="bg-white rounded-xl border border-gray-200 p-6">
+              <h2 class="text-lg font-semibold text-gray-900 mb-3">Publication Ethics</h2>
+              <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                Balkan Medical Journal applies COPE recommendations across all stages of editorial assessment and peer review, with additional alignment to ICMJE and CSE standards.
+              </p>
+              <a href="https://publicationethics.org" target="_blank" rel="noopener" class="inline-flex items-center text-sm text-teal-700 font-semibold hover:text-teal-800 transition-colors">
+                Explore COPE Guidance
+                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+</main>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════════════════════ -->
+  <footer class="bg-teal-900 text-white" aria-label="Site footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="bmj-footer-logo-box w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden">
+              <picture><source media="(min-width:1024px)" srcset="images/logo-footer3.png"><img src="images/logo-footer.svg" alt="Balkan Medical Journal" class="h-12 w-12 object-contain" width="48" height="48"></picture>
+            </div>
+            <div>
+              <div class="font-bold text-lg">Balkan Medical Journal</div>
+            </div>
+          </div>
+          <p class="text-teal-300 text-sm leading-relaxed">
+            Published by Trakya University, Edirne, Türkiye.<br>
+            E-ISSN: 2146-3131<br>
+            Publisher: Galenos Publishing House
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-teal-300 text-sm">
+            <li><a href="current-issue.html" class="hover:text-white transition-colors">Current Issue</a></li>
+            <li><a href="archive.html" class="hover:text-white transition-colors">Archive</a></li>
+            <li><a href="articles-in-press.html" class="hover:text-white transition-colors">Articles in Press</a></li>
+            <li><a href="for-authors.html" class="hover:text-white transition-colors">For Authors</a></li>
+            <li><a href="for-reviewers.html" class="hover:text-white transition-colors">For Reviewers</a></li>
+            <li><a href="forms.html" class="hover:text-white transition-colors">Forms</a></li>
+          </ul>
+        </div>
+
+        <!-- About -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4">About</h3>
+          <ul class="space-y-2 text-teal-300 text-sm">
+            <li><a href="about.html" class="hover:text-white transition-colors">About the Journal</a></li>
+            <li><a href="editorial-board.html" class="hover:text-white transition-colors">Editorial Board</a></li>
+            <li><a href="journal-metrics.html" class="hover:text-white transition-colors">Journal Metrics</a></li>
+            <li><a href="policies.html" class="hover:text-white transition-colors">Policies</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+            <li><a href="news.html" class="hover:text-white transition-colors">News</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Contact</h3>
+          <div class="text-teal-300 text-sm space-y-2">
+            <p>Balkan Medical Journal<br>Trakya University Faculty of Medicine</p>
+            <p>Balkan Yerleşkesi, 22030<br>Edirne, Türkiye</p>
+            <p>
+              <a href="mailto:info@balkanmedicaljournal.org" class="hover:text-white transition-colors">info@balkanmedicaljournal.org</a>
+            </p>
+            <div class="flex items-center gap-4 mt-3">
+              <a href="https://www.instagram.com/balkanmedj/" target="_blank" rel="noopener" aria-label="Instagram" class="text-teal-300 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+              <a href="https://x.com/balkanmedj" target="_blank" rel="noopener" aria-label="X (Twitter)" class="text-teal-300 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+              <a href="https://www.linkedin.com/company/balkan-med-j/" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-teal-300 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-teal-800 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-teal-400 text-sm">&copy; 2026 Balkan Medical Journal. All rights reserved.</p>
+        <div class="flex items-center gap-6 text-teal-400 text-sm">
+          <span>Licensed under CC BY-NC-ND 4.0</span>
+          <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener" class="hover:text-white transition-colors" aria-label="Creative Commons License">
+            <img src="images/icons/cc-by-nc-nd.svg" alt="CC BY-NC-ND 4.0" class="h-6 w-auto opacity-70 hover:opacity-100 transition-opacity">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="js/data/news.js"></script>
+  <script src="js/main.js?v=20260619"></script>
+  <script src="js/search.js?v=20260228a"></script>
+  <script>
+    // ─── Accordion Logic ─────────────────────────────────────
+    (function () {
+      'use strict';
+
+      var triggers = document.querySelectorAll('.accordion-trigger');
+
+      triggers.forEach(function (trigger) {
+        trigger.addEventListener('click', function () {
+          var expanded = trigger.getAttribute('aria-expanded') === 'true';
+          var panelId = trigger.getAttribute('aria-controls');
+          var panel = document.getElementById(panelId);
+          var chevron = trigger.querySelector('.chevron-icon');
+
+          if (!panel) return;
+
+          // Toggle only the clicked panel; do not auto-close others.
+          trigger.setAttribute('aria-expanded', String(!expanded));
+          panel.classList.toggle('open');
+          if (chevron) {
+            chevron.classList.toggle('rotate-180', !expanded);
+          }
+        });
+      });
+    })();
+  </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","logo":"https://balkanmedicaljournal.org/images/logo.png","publisher":{"@type":"Organization","name":"Trakya University"},"address":{"@type":"PostalAddress","addressLocality":"Edirne","addressCountry":"TR","streetAddress":"Trakya University Faculty of Medicine, Balkan Yerleşkesi, 22030"}},{"@type":"WebSite","name":"Balkan Medical Journal","url":"https://balkanmedicaljournal.org","potentialAction":{"@type":"SearchAction","target":"https://balkanmedicaljournal.org/search-results.html?q={search_term_string}","query-input":"required name=search_term_string"}}]}
+</script>
+
+</body>
+</html>
